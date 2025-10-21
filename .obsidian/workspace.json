@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0b7c22de2ef1015f",
+        "id": "ac1ede7f5a136491",
         "type": "tabs",
         "children": [
           {
-            "id": "d50d6983dd62bbe8",
+            "id": "db20a6a8a7230bc5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cronaca.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Cronaca"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -94,12 +90,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inizio/Capitoli/Scena 1 - Il risveglio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Scena 1 - Il risveglio"
+              "title": "Collegamenti in uscita"
             }
           },
           {
@@ -173,22 +168,6 @@
           }
         ],
         "currentTab": 5
-      },
-      {
-        "id": "fa05553052c07c36",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d9fab1999eb03ae2",
-            "type": "leaf",
-            "state": {
-              "type": "fantasy-statblocks-creature-pane",
-              "state": {},
-              "icon": "skull",
-              "title": "Combatant"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -203,15 +182,14 @@
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
       "bases:Create new base": false,
-      "obsidian-5e-statblocks:Open Creature pane": false,
       "audio-recorder:Avvia/ferma registrazione": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d50d6983dd62bbe8",
+  "active": "2943b494a8fdbbcd",
   "lastOpenFiles": [
-    "Giocatori.base",
     "Cronaca.md",
+    "Giocatori.base",
     "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
     "Recording 20251021124124.m4a",
     "Inizio/Immagini/Garou.png",
