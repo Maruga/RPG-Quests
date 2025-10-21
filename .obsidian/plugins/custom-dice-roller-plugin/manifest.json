@@ -1,0 +1,9 @@
+{
+    "id": "custom-dice-roller",
+    "name": "Custom Dice Roller with Dataview",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Sistema di lancio dadi personalizzato con integrazione Dataview per attributi dinamici",
+    "author": "Your Name",
+    "isDesktopOnly": false
+}
