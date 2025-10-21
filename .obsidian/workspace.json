@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Cronaca il risveglio.md",
+                "file": "Link Utili.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cronaca il risveglio"
+              "title": "Link Utili"
             }
           }
         ],
@@ -233,8 +233,8 @@
   },
   "active": "6ab7c8320ca59939",
   "lastOpenFiles": [
-    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Cronaca il risveglio.md",
+    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "index.md",
     "Giocatori.base",
     "Inizio/Materiale/Lettera rifugio.md",
