@@ -4,6 +4,8 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "For": "number",
-    "De": "number"
+    "De": "number",
+    "Prontezza": "number",
+    "Generazione": "number"
   }
 }

@@ -23,10 +23,8 @@ Non pronunciamo nomi antichi. Osserviamo soltanto come la notte, qui, è una sar
 >[!note] Nota
 >Consegnate le schede, breve introduzione sui principali valori, i PG non devono conoscere nulla in anticipo ma deve essere tutto scoperto durante il gioco, [[Guida Giocatori]]
 
-
-## Preludio – L’ultima notte da vivi
-
-
+L’ultima notte da vivi è finita.  
+E la vera storia… comincia adesso.
 
 
 ## Capitolo 1

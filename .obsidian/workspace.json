@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Cronaca il risveglio.md",
+                "file": "Inizio/Png/Anarchici Pennabilli.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cronaca il risveglio"
+              "title": "Anarchici Pennabilli"
             }
           },
           {
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inizio/Cronaca il risveglio.md",
+                "file": "Inizio/Png/Anarchici Pennabilli.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di Cronaca il risveglio"
+              "title": "Struttura di Anarchici Pennabilli"
             }
           },
           {
@@ -220,7 +220,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inizio/Cronaca il risveglio.md",
+                "file": "Inizio/Png/Anarchici Pennabilli.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -230,7 +230,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Cronaca il risveglio"
+              "title": "Riferimenti a Anarchici Pennabilli"
             }
           },
           {
@@ -286,40 +286,40 @@
   },
   "active": "731f55454c1068e0",
   "lastOpenFiles": [
-    "Inizio/Personaggi/PG Test.md",
+    "Guide/Meccaniche.md",
     "Inizio/Png/Anarchici Pennabilli.md",
+    "Inizio/Personaggi/PG.base",
+    "Strumenti.md",
+    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
+    "Inizio/Personaggi/PG Test.md",
+    "Inizio/Elenco PG.md",
+    "Guide/La schiatta de’ Montefeltro.md",
+    "Inizio/Legami PNG.md",
+    "Inizio/Orologi.md",
+    "Inizio/Cronaca il risveglio.md",
     "Inizio/Png/Bambina Segrete Tzime.md",
-    "Inizio/Materiale/Incidente Stradale.md",
+    "Guide/Tipologie di Debiti (Boons).md",
+    "Guide/Le sei tradizione della Camarilla.md",
+    "Guide/Guida Giocatori.md",
+    "Guide/Fame, Messy Critical e Bestial Failure.md",
+    "Guide/Flashback.md",
     "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
+    "index.md",
+    "Inizio/Materiale/Invito Elisio Pennabilli.md",
+    "Inizio/Materiale/Incidente Stradale.md",
     "Inizio/Capitoli/00 - Prologo",
     "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
-    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
-    "La schiatta de’ Montefeltro.md",
     "Senza nome",
-    "Inizio/Personaggi/PG.base",
     "Inizio/Personaggi/Untitled.md",
     "Giocatori.base",
-    "Guide/Meccaniche.md",
-    "index.md",
-    "Strumenti.md",
     "Inizio/Png",
     "dice.js",
     "dice.js.txt",
     "Nuovo Documento di testo.txt",
     "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
-    "Guide/Fame, Messy Critical e Bestial Failure.md",
-    "Guide/Le sei tradizione della Camarilla.md",
-    "Guide/Guida Giocatori.md",
-    "Guide/Tipologie di Debiti (Boons).md",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Capitoli/05/Scena 5.5 - Incontro Arpia.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
-    "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
-    "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
-    "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
-    "Inizio/Capitoli/05/Scena 5.3 - Villa Segrete.md",
-    "Inizio/Materiale/Invito Elisio Pennabilli.md",
-    "Inizio/Materiale/Lettera rifugio.md",
     "Inizio/Immagini/Invito Elysium del 14 marzo.png",
     "Inizio/Capitoli/04",
     "Inizio/Capitoli/03",

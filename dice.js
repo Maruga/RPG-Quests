@@ -51,4 +51,16 @@ function getProps(notePath, vaultPath) {
 // lascio anche la tua funzione esistente
 function add(a, b) { return a + b; }
 
-module.exports = { add, getProps };
+// 🎲 Tiro di dadi semplice: rollDice(num, sides, mod)
+// Esempio: rollDice(3,10,2) → tira 3d10 + 2
+function rollDice(num = 1, sides = 10, mod = 0) {
+  const n = Number(num)   || 0;
+  const s = Number(sides) || 0;
+  const m = Number(mod)   || 0;
+  if (n <= 0 || s <= 1) return { rolls: [], total: m, mod: m };
+  const rolls = Array.from({ length: n }, () => Math.floor(Math.random() * s) + 1);
+  const total = rolls.reduce((a,b) => a + b, 0) + m;
+  return { rolls, total, mod: m };
+}
+
+module.exports = { add, getProps, rollDice };
