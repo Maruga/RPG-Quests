@@ -1,6 +1,6 @@
 
 
-Mappa de palazzo, incontro con la Custode dell’Elysium (in realtà è solo un ex-ghoul) non ha questo titolo ma lei lo fregia come suo.  
+Mappa del palazzo, incontro con la Custode dell’Elysium (in realtà è solo un ex-ghoul) non ha questo titolo ma lei lo fregia come suo.  
 Trovano nelle sale anche un documento che lo rende ora un Elisio decaduto, se non viene trovato la custode lo mostra.
 
 La Custode è in grado di dare informazioni e conosce una Arpia molto amica del suo Sire che potrebbe sempre in cambio di favori presentarli al principe.
