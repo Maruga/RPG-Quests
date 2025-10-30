@@ -93,30 +93,50 @@ console.log('Destrezza+Prontezza:',mod);
 console.log('Iniziativa:', r.total, '| Dadi:', r.rolls.join(', '));
 console.log('');
 
-pugno = (Number(props.Destrezza) || 0) + (Number(props.Rissa) || 0); 
-res = dice.rollPoolV20(pugno, 10, 6, 1);
-console.log('Pugno:' , res.esito, res.successi, res.rolls);
+des_rissa = (Number(props.Destrezza) || 0) + (Number(props.Rissa) || 0); 
+pugno = dice.rollPoolV20(des_rissa, 10, 6, 1);
+console.log('Pugno:' , pugno.esito, pugno.successi, pugno.rolls);
+console.log('Danno:' , props.Forza, pugno.successi - 1);
+calcio = dice.rollPoolV20(des_rissa, 10, 7, 1);
+console.log('Calcio:' , calcio.esito, calcio.successi, calcio.rolls);
+console.log('Danno:' , props.Forza + 1, calcio.successi - 1);
+
+console.log('');
+forzavolonta = (Number(props.ForzaDiVolonta) || 0); 
+fv = dice.rollPoolV20(forzavolonta, 10, 6, 1);
+console.log('Forza Volontà:' , fv.esito, fv.successi, fv.rolls);
 ```
 
-### Pugno
 
 
-### Calcio
+- Attaccare alla spalle +2 dadi
+- Attaccare lateralmente +1 dado
 
+- Azioni Multiple, -1 dado per azione aggiuntiva partendo dal primo ammontare
 
-### Pugnale
+- Combattere alla cieca +2 difficoltà
+- Sparare alla cieca non è fattibile
+- _Eventuali poteri posso ridurre la difficolta, esempio di notte Occhi della bestia_
 
+- Imboscata
+	- Azione contrastata (A) Destrezza+Furtività -> (D) Percezione+Sesto Senso
+	- (A) attacco gratuito + successi extra aggiunti al tiro per attaccare 
+	- Se pari attaccante agisce per primo ma difensore manovra difensiva
+	- Se attaccante meno successi, tiro iniziativa normale
 
-### Bastone
+- Interrompere Azione
+	- si può modificare una azione qualsiasi in difensiva solo se non si è già mossi
+	- Tiro Forza di Volontà difficoltà 6 o usare punto forza di volontà
 
+- Mirare
+	- Medio -> Arto, borsa: Diff. +1
+	- Piccolo -> Mano, testa, computer: Diff. +2 Danno +1
+	- Preciso -> Occhio, cuore, serratura: Dif.+3 Danno +2
 
-### Artigli
+- Movimento, il pg può percorrere metà del suo movimento ed effettuare l'azione
 
+- Bloccare
 
-### Morso
+- Schivare
 
-
-### Schivata / Blocco / Parata
-
-
-### Soak - Assorbimento
+- Parare

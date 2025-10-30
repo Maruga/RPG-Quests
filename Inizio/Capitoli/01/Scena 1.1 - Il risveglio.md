@@ -2,7 +2,7 @@
 
 Introduzione alla cronaca.
 
-_Flash_ - La sera è normale. Quella normalità stanca, fatta di luci basse, odore d’asfalto e piccole abitudini. Qualcuno torna dal lavoro. Qualcuno scrolla messaggi sul telefono senza leggerli davvero. Tutto sembra al suo posto… ma qualcosa — impercettibile — è fuori ritmo.  
+_Flash_ - La sera è solita. Quella normalità stanca, fatta di luci basse, odore d’asfalto e piccole abitudini. Qualcuno torna dal lavoro. Qualcuno scrolla messaggi sul telefono senza leggerli davvero. Tutto sembra al suo posto… ma qualcosa — impercettibile — è fuori ritmo.  
 Come se il mondo trattenesse il respiro.
 
 **_Buio._**
