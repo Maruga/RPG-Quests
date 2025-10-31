@@ -9,6 +9,8 @@ Sanguis vocat saxum, signum audit.»_
 _La pietra dorme finché il sangue non parla.  
 Il sangue chiama la pietra, il marchio ascolta._
 
+[[pozzo.png]]
+
 
 #### **1. La discesa**
 
@@ -141,15 +143,13 @@ Questo serve al Sire nel caso viene intrappolato, la scritta è un promemoria. N
 
 #### **6. L’uscita**
 
-La lastra che chiudeva il pozzo non c’è più.
-L’effetto di oscurità si attenua, come nebbia sotto la luce di un’alba malata.
+> [!info]
+> La lastra che chiudeva il pozzo non c’è più.
+> L’effetto di oscurità si attenua, come nebbia sotto la luce di un’alba malata.
+> 
+> Davanti a voi, il buio è cambiato: ora è lattiginoso, uniforme, e lascia intravedere, più in basso, una serie di **scalini scavati nella roccia**.
+> 
+> Conducono a un livello inferiore.
+> 
+> Lì sotto, una luce sporca pulsa come un cuore nascosto.
 
-Davanti a voi, il buio è cambiato: ora è lattiginoso, uniforme, e lascia intravedere, più in basso, una serie di **scalini scavati nella roccia**.
-
-Conducono a un livello inferiore.
-
-Lì sotto, una luce sporca pulsa come un cuore nascosto.
-
-E per la prima volta capite che **il sangue non è una benedizione.  
-È una serratura.  
-E voi siete la chiave.**

@@ -28,24 +28,32 @@ E la vera storia… comincia adesso.
 
 
 ## Capitolo 1
-- [[Scena 1.1 - Il risveglio]] - Data 13/10/2023
-- [[Scena 1.2 - Casolare di Pennabilli]]
+[[Scena 1.1 - Il risveglio]] - Data 13/10/2023
+[[Scena 1.2 - Casolare di Pennabilli]]
+
 
 ## Capitolo 2
-- [[Scena 2.1 - Il bosco]]
+[[Scena 2.1 - Il bosco]]
+
 
 ## Capitolo 3
-- [[Scena 3.1 - Verso Elisio]] Possibile incontro Forze dell'Ordine
-- [[Scena 3.2 - Elisio e la custode]]
+[[Scena 3.1 - Verso Elisio]] Possibile incontro Forze dell'Ordine
+[[Scena 3.2 - Elisio e la custode]]
+
 
 ## Capitolo 4
-Viaggio verso Rimini - Possibile incontro Forze dell'ordine
+[[Scena 4.1 - Viaggio verso Rimini]]
+
 
 ## Capitolo 5
 [[Scena 5.1 - Arrivo Villa Siri]]
 [[Scena 5.2 - Il Pozzo]]
 [[Scena 5.3 - Villa Segrete]]
-[[Scena 5.5 - Incontro Arpia]]
+
+
+## Capitolo 6
+[[Scena 6.1 - Incontro Arpia]]
+
 
 ## Capitolo X
 Fallita la Masquerade

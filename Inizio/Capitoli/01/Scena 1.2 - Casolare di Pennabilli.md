@@ -6,7 +6,7 @@
 > I Sire sono **fuggiti di fretta**, lasciando indizi e oggetti.
 
 ---
-![[Inizio/Immagini/house_in_the_swamps.svg]]
+![[CasolareSiriPennabilli.svg]]
 
 
 ## Regole Trasversali (VtM 3a ed.)

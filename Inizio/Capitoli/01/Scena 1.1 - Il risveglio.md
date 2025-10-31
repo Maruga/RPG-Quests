@@ -44,6 +44,6 @@ Lasciate ai PG un pò di tempo per guardarsi intorno, sono nello scantinato di u
 
 **Scena del risveglio:** "I personaggi riprendono conoscenza in una vasta camera dalle pareti nude e fredde. L'orologio segna le 21:00 del 13 ottobre 2023. Una nebbia mentale li avvolge: frammenti di memoria scivolano via come sabbia tra le dita. Non ricordano chi sono, né come sono arrivati in questo luogo. Solo una certezza inquietante pulsa nelle loro vene morte: qualcosa di terribile è accaduto."
 
-![[Inizio/Immagini/house_in_the_swamps.svg]]
+![[CasolareSiriPennabilli.svg]]
 
 
