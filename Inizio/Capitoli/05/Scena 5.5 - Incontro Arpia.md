@@ -1,4 +1,4 @@
-
+#Completato #Rivedere
 
 
 Descrizione ingresso arpia e studio, nell’ingresso si trova un quadro di Michelangelo Titolo: “L’Ira di Caino” Data: circa 1506.
@@ -7,13 +7,9 @@ Se portano informazioni all’arpia in un secondo momento quando i Siri rifiutan
 
 L’Arpia se i pg ne parlano è molto interessata alla villa segreta e ai sui esperimenti, se i pg sono già stati e raccontano e danno informazioni posso sperare in una presentazione, se non ci sono ancora stati l’Arpia gli chiede di andare e prendere informazioni per poi portargliele. Se le informazioni sono buone allora non vi sarà alcune debito, Arpia accetta il cambio di presentarli al Principe, se non portano molto allora sarà richiesto un debito maggiore.
 
-L’Arpia da anche una informazione di un trasporto taxi riservato prevalentemente per i cainiti, il loro responsabile si fa chiamare Rana, si chiama il numero e Rana pensa al trasporto senza fare domande, tutti i cainiti tendenzialmente conoscono. Segretamente è un informatore dello Sceriffo, se ne fanno uso lo Sceriffo viene a conoscenza subito, orologio scatta su conoscenza e quindi indagine per capire.
+L’Arpia da anche una informazione di un trasporto taxi riservato prevalentemente per i cainiti, il loro responsabile si fa chiamare Rana, si chiama il numero e Rana pensa al trasporto senza fare domande, tutti i cainiti tendenzialmente lo conoscono. Segretamente è un informatore dello Sceriffo, se ne fanno uso lo Sceriffo viene a conoscenza subito, orologio scatta su conoscenza e quindi indagine per capire.
 
 L’arpia può parlare dei corridoi che collegano sia fisicamente e non varie zone e dove è necessario rispettare certe regole, comunica anche le principali zone rosse che sono strettamente sorvegliate. Aeroporto di rimini, tutte le stazioni dei treni, L’ospedale dismesso “Santa Chiara” (Rimini sud), I sotterranei della Stazione di Rimini, Foresta del Monte Carpegna, Le Grotte di Onferno (Gemmano), L’antico Cimitero di Covignano.
-
-
-
-
 
 
 

@@ -1,3 +1,5 @@
+#dafare
+
 ### La Bambina nelle Segrete — Tzimisce (VtM 3ª ed. / Revised)
 
 **Concetto:** Esche infantili, predatrice da laboratorio del Sire (che i PG non conoscono).  

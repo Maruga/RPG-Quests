@@ -1,3 +1,4 @@
+#Completato
 [[Villa Laboratorio.jpg]]
 
 ### Arrivo

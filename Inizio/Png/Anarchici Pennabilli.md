@@ -58,7 +58,7 @@ Auspex: 0
 Celerita: 0
 DemenTazione: 0
 DominaZione: 0
-Fortitudo: 0
+Robustezza: 1
 Ofuscazione: 0
 Potenza: 1
 Presenza: 1
@@ -89,7 +89,6 @@ const props = dice.getProps(@note_path, @vault_path);
 mod = (Number(props.Destrezza) || 0) + (Number(props.Prontezza) || 0); 
 r = dice.rollDice(1, 10, mod);
 console.log('');
-console.log('Destrezza+Prontezza:',mod);
 console.log('Iniziativa:', r.total, '| Dadi:', r.rolls.join(', '));
 console.log('');
 
@@ -100,6 +99,11 @@ console.log('Danno:' , props.Forza, pugno.successi - 1);
 calcio = dice.rollPoolV20(des_rissa, 10, 7, 1);
 console.log('Calcio:' , calcio.esito, calcio.successi, calcio.rolls);
 console.log('Danno:' , props.Forza + 1, calcio.successi - 1);
+
+console.log('');
+assorb = (Number(props.Costituzione) || 0)+(Number(props.Robustezza) || 0); 
+as = dice.rollPoolV20(assorb, 10, 6, 1);
+console.log('Assorbire Danni(R.',props.Robustezza,'):', as.esito, as.successi, as.rolls);
 
 console.log('');
 forzavolonta = (Number(props.ForzaDiVolonta) || 0); 
