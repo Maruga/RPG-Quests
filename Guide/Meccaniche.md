@@ -1,5 +1,9 @@
 # Combattimento
 
+
+## Azioni Multiple
+dichiarare il numero di azioni, sottrarre **N** dadi dal primo tiro e poi **–1** ulteriore per ogni azione successiva, con il limite che se il pool scende a 0 non puoi farla
+
 ## Iniziativa
 **Tiro:** Destrezza + Prontezza + d10  
 Chi ottiene il risultato più alto agisce per primo.  

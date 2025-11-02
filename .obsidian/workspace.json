@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+                "file": "Guide/Meccaniche.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 6.1 - Incontro Arpia"
-            }
-          },
-          {
-            "id": "e83f2d1f10fd7eae",
-            "type": "leaf",
-            "state": {
-              "type": "audio",
-              "state": {
-                "file": "Inizio/Effetti/IncidenteTelegiornale.mp3"
-              },
-              "icon": "lucide-file-audio",
-              "title": "IncidenteTelegiornale"
+              "title": "Meccaniche"
             }
           },
           {
@@ -250,11 +238,19 @@
   },
   "active": "a4b77b8dd92a6c0c",
   "lastOpenFiles": [
+    "Inizio/Png/Anarchici Pennabilli.md",
+    "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
+    "Inizio/Effetti/IncidenteTelegiornale.mp3",
+    "Inizio/Capitoli/05/Scena 5.3 - Villa Segrete.md",
+    "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
+    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
+    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
+    "Guide/Meccaniche.md",
+    "Guide/Guida Giocatori.md",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
     "Inizio/Immagini/StudioArpiaMappaTunnel.png",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
-    "Inizio/Effetti/IncidenteTelegiornale.mp3",
     "Inizio/Immagini/Arpia-CainoSuAbele.png",
-    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TabvlaSangvinis 1.png",
     "Inizio/Immagini/TabvlaSangvinis.png",
@@ -263,23 +259,14 @@
     "Inizio/Immagini/QuadroCasaPennabilli03.jpg",
     "Inizio/Immagini/QuadroCasaPennabilli02.jpg",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",
-    "Inizio/Immagini/pozzo.png",
-    "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
-    "Inizio/Capitoli/05/Scena 5.3 - Villa Segrete.md",
-    "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
-    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
     "Inizio/Materiale/Incidente Stradale.md",
     "Inizio/Materiale/Editto del Principe - Tabvla Sаngvinis.md",
     "Inizio/Effetti/Telegiornale.mp3",
     "Guide/Tipologie di Debiti (Boons).md",
     "Guide/Note di etichetta.md",
-    "Guide/Meccaniche.md",
     "Guide/Le sei tradizione della Camarilla.md",
     "Guide/La schiatta de’ Montefeltro.md",
-    "Guide/Guida Giocatori.md",
     "Inizio/Cronaca il risveglio.md",
-    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
-    "Inizio/Png/Anarchici Pennabilli.md",
     "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
     "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
     "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
