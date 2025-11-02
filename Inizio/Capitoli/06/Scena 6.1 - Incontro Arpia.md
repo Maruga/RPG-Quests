@@ -39,3 +39,5 @@ Beatrice **“La Bottonaia”** Montieri è seduta dietro la scrivania. Eleganza
 «Le cose più preziose sono quelle che **non esistono** finché qualcuno non le riconosce. Gradite sedervi?»
 
 Il ghoul rimane alle spalle dei PG — un passo fuori dal cono di luce — in attesa di un gesto.
+
+[[StudioArpiaMappaTunnel.png]]
