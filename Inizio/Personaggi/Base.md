@@ -13,7 +13,7 @@ DifettoDelClan: Rabbia incontrollata
 Soprannome: Croce
 Affiliazione: Anarchico
 EtaUmanaTrasformazione: 28 anni
-EtaVampiricaAttuale: circa 20 anni  
+EtaVampiricaAttuale: circa 20 anni
 Forza: 3
 Destrezza: 3
 Costituzione: 2
