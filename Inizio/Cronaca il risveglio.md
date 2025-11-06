@@ -57,10 +57,10 @@ E la vera storia… comincia adesso.
 
 ## Capitolo X
 Fallita la Masquerade
-Notizia incidente in macchina carbonizzati
+[[Incidente Stradale]]
 
 
-## Capitolo 6
+## Capitolo 7
 Cospetto del principe 
 Fine
 

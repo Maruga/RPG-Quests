@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
+                "file": "Inizio/Cronaca il risveglio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NPC - Angela Dietrich (Angel)"
+              "title": "Cronaca il risveglio"
+            }
+          },
+          {
+            "id": "113975ae6eebf814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scena 7.1 - Principe"
             }
           },
           {
@@ -45,7 +59,8 @@
               "title": "Villa Laboratorio"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,14 +251,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a4b77b8dd92a6c0c",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Inizio/Cronaca il risveglio.md",
+    "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
+    "Inizio/Capitoli/07",
+    "Inizio/Materiale/Incidente Stradale.md",
+    "Guide/Guida Giocatori.md",
+    "Inizio/Effetti/IncidenteTelegiornale.mp3",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+    "Inizio/Immagini/Arpia-CainoSuAbele.png",
+    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
+    "Inizio/Capitoli/05/Scena 5.3 - Villa Segrete.md",
+    "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
+    "Inizio/Immagini/pozzo.png",
+    "Inizio/Immagini/SimboloPerRimuoverePietra_pozzo.png",
+    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
+    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
+    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
+    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
+    "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
     "Inizio/Personaggi/NPC - Alfio Rossellini (Alfie).md",
     "Inizio/Personaggi/Ezechiele Coyotl.md",
     "Inizio/Personaggi/Mutaz Bechara.md",
     "Inizio/Personaggi/Levi Maccari - Macca.md",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
-    "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
     "Inizio/Personaggi/NPC - Rita Shafiqah (Rusty).md",
     "Inizio/Personaggi/NPC - Yuri Go (Go Yu-ri).md",
     "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
@@ -253,36 +285,19 @@
     "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Inizio/Personaggi/Senza nome.md",
     "Inizio/Personaggi/Base.md",
-    "Inizio/Personaggi/NPC - Tilottama.md",
-    "Inizio/Personaggi/NPC - Mascha Blumenfeld.md",
-    "Inizio/Personaggi/NPC - Mama Polari.md",
-    "Inizio/Personaggi/NPC - Alfie Rossellini.md",
-    "Inizio/Personaggi/INDEX - NPC Rimini 2024.md",
-    "Inizio/Personaggi/NPC - Rusty Shafiqah.md",
-    "Inizio/Personaggi/NPC - Mu’tazz Bechara.md",
-    "Inizio/Personaggi/NPC - Levi “Macca” MacDonald.md",
-    "Inizio/Personaggi/NPC - Go Yu-ri.md",
-    "Inizio/Personaggi/NPC - Ezequiel Coyotl.md",
-    "Inizio/Personaggi/NPC - Diarmid “Mad Dog” Dunsirn.md",
     "Inizio/Personaggi/PG.base",
-    "Inizio/Effetti/IncidenteTelegiornale.mp3",
-    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
-    "Inizio/Immagini/Arpia-CainoSuAbele.png",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TabvlaSangvinis 1.png",
     "Inizio/Immagini/TabvlaSangvinis.png",
-    "Inizio/Immagini/SimboloPerRimuoverePietra_pozzo.png",
     "Inizio/Immagini/SentenzaUltimaMorte.png",
     "Inizio/Immagini/QuadroCasaPennabilli03.jpg",
     "Inizio/Immagini/QuadroCasaPennabilli02.jpg",
-    "Inizio/Immagini/QuadroCasaPennabilli01.png",
     "Inizio/Effetti/Telegiornale.mp3",
     "Inizio/Capitoli/06",
     "Inizio/Capitoli/00 - Prologo",
     "Senza nome",
     "Giocatori.base",
     "Inizio/Png",
-    "dice.js",
-    "dice.js.txt"
+    "dice.js"
   ]
 }
