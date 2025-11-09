@@ -5,7 +5,7 @@
 **Scritta sul muro in villa**
 _«Saxum dormit nisi sanguis loquatur.  
 Sanguis vocat saxum, signum audit.»_
-[[SimboloPerRimuoverePietra_pozzo.png]]
+[[SimboloRimuoverePietraPozzo.png]]
 _La pietra dorme finché il sangue non parla.  
 Il sangue chiama la pietra, il marchio ascolta._
 
@@ -55,8 +55,6 @@ Il passaggio viene chiuso da una lastra di pietra e acciaio che cade dal soffitt
 
 Nessuna via di fuga visibile. Le pareti, lisce come vetro.
 
----
-
 #### **3. Il silenzio**
 
 Passano secondi, o forse minuti.  
@@ -77,7 +75,6 @@ Non è acqua.
 E quando tocca il pavimento, **viene assorbita**.  
 Come se la pietra l’avesse bevuta.
 
----
 
 #### **4. Il ricordo del Sire**
 

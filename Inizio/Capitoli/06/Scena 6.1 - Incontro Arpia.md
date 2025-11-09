@@ -88,3 +88,8 @@ _Beatrice da giovane, un ricordo un legame.
 
 Mappa dei tunnel sotto Santarcangelo
 ![[StudioArpiaMappaTunnel.png]]
+
+**DA DEFINIRE
+Se i PG trovano il disegno della cripta di Montebello e lo fanno vedere alla Arpia questa mostra loro una foto e chiede se hanno altre informazioni, nel caso di ritornare per prelevarle.
+
+![[CriptaMontebelloFoto.png]]

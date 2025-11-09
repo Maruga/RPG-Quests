@@ -199,3 +199,7 @@ Siete miei.”
 
 Le candele si spengono una dopo l’altra.
 E nella pietra del castello, sembra che la notte stessa trattenga il respiro.
+
+#### Per i giocatori morti fai ascoltare
+
+![[IncidenteTelegiornale.mp3]]

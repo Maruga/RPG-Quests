@@ -40,7 +40,7 @@
 
 **Oggetti & Indizi**
 - **Marchio del Sire** inciso
-	- [[SimboloPerRimuoverePietra_pozzo.png]] 
+	- [[SimboloRimuoverePietraPozzo.png]] 
 		- “La pietra dorme finché il sangue non parla.” 
 		- “Il sangue chiama la pietra, il segno ascolta.”
 	- Il PG Tremere ricorda questa frase quando lo esamina “**La prudenza è la catena dell’eternità**”.  

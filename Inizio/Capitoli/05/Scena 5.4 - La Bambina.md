@@ -1,5 +1,7 @@
 #dafare
 
+![[PrigioneBambola.png]]
+
 ### La Bambina nelle Segrete — Tzimisce (VtM 3ª ed. / Revised)
 
 **Concetto:** Esche infantili, predatrice da laboratorio del Sire (che i PG non conoscono).  
@@ -36,7 +38,7 @@ Coscienza 1, Autocontrollo 2, Coraggio 5. Tracciato Salute standard.
 
 **Debolezza Tzimisce**
 
-Ha bisogno della **terra natale** per riposare: nella cella c’è una cassetta di legno con terra scura (indizio del Sire).
+Ha bisogno della **terra natale** per riposare: nella cella c’è una cassetta di legno con terra scura.
 
 ---
 
@@ -55,9 +57,8 @@ Ha bisogno della **terra natale** per riposare: nella cella c’è una cassetta 
 
 Nota per il tono: i chiodi sono “educati”, silenziosi, chirurgici—il Sire non voleva scene, voleva **contenimento**.
 
----
 
-**Regia di Scena (con i PG convinti di essere umani)**
+### **Regia di Scena
 
 **Prima dell’apertura**
 
@@ -74,6 +75,8 @@ Nota per il tono: i chiodi sono “educati”, silenziosi, chirurgici—il Sire 
 **Combattimento-tutorial (turni indicativi)**
 
 **Turno 1 (subito dopo l’ultimo chiodo):**
+
+![[BambinanaHorridForm.png]]
 
 - Spende **2 Sangue**, inizia **Horrid Form** (trasformazione: pelle che si fende, arti che si allungano, mandibola che scatta; dura 1 turno).
 - I PG possono agire: fai loro “sentire” **riflessi impossibili** (vedi riquadro sotto).

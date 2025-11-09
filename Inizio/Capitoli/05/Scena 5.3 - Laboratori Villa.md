@@ -1,6 +1,6 @@
 **SEGRETE VILLA**
 
-**Corridoi (tono generale)**
+### **Corridoi (tono generale)**
 
 **Narrazione**  
 L’aria è umida e pesante; il cemento “suda”. Le torce aprono coni di luce troppo piccoli e oltre quel cerchio il buio sembra più denso. I vostri passi rimbombano con mezzo respiro di ritardo: l’eco non vi segue, vi **imita**.
@@ -19,9 +19,8 @@ L’aria è umida e pesante; il cemento “suda”. Le torce aprono coni di luce
 
 **Prove**: Percezione+Allerta 6–7 per rumori; Destrezza+Furtività 6 per muoversi senza echi.
 
----
 
-**Cella Superiore (prigione – porta CHIUSA, voce più nitida)**
+### **Cella Superiore (prigione – porta CHIUSA, voce più nitida)**
 
 **Narrazione**  
 La porta di ferro è serrata dall’esterno; lo spioncino è rigato. Dentro, la stanza circolare trasuda umidità, striata da colature scure. La **supplica infantile** qui è più vicina all’orecchio: «…aiutami…» Non arriva da un punto preciso: vibra **dentro** il cranio.
@@ -44,7 +43,7 @@ La porta di ferro è serrata dall’esterno; lo spioncino è rigato. Dentro, la 
 
 ---
 
-**Cella Inferiore (prigione – porta APERTA)**
+### **Cella Inferiore (prigione – porta APERTA)**
 
 **Narrazione**  
 Odore ferroso. Catene pendono dal soffitto; alcune serrate senza nulla. A terra, **ossa miste** sbiancate dall’umido. Le pareti sono piene di graffi, conti e simboli.
@@ -65,7 +64,7 @@ Odore ferroso. Catene pendono dal soffitto; alcune serrate senza nulla. A terra,
 
 ---
 
-**Laboratorio con Statua (stanza quadrata con tavoli medici)**
+### **Laboratorio con Statua (stanza quadrata con tavoli medici)**
 
 **Narrazione**  
 Tavoli in acciaio e armadietti dal vetro opaco. Fotografie di corpi e numeri fissate con spilli. Al centro, su piedistallo, **una statua** di pietra chiara; elegante, fuori luogo. L’ombra che proietta non coincide.
@@ -83,12 +82,13 @@ Tavoli in acciaio e armadietti dal vetro opaco. Fotografie di corpi e numeri fis
 - (Particolari) **Registratore a bobine** (gracchia ordini in tedesco quando mosso); **set chirurgico** completo.
 - (Comuni) Garze, siringhe in vetro, maschere antigas.
 - **Uso**: oggetto-gancio (Fiala) per tradimenti, ordini o possessioni “soft”; pugnale per ferite sinistre.
+- [[RAPPORTO TOSSICOLOGICO – Campione “Sangue Blu”]]
 
 **Prove**: Intelligenza+Medicina 6 (procedure trasfusionali); Percezione+Indagare 7 (sportello nella base della statua).
 
 ---
 
-**Corridoio lungo (verso la stanza centrale)**
+### **Corridoio lungo (verso la stanza centrale)**
 
 **Narrazione**  
 Vernice squamata, tubi che gocciolano. Sul pavimento due righe parallele nel pulviscolo: **tracce di ruote** che vanno e tornano.
@@ -107,7 +107,7 @@ Vernice squamata, tubi che gocciolano. Sul pavimento due righe parallele nel pul
 
 ---
 
-**Stanza Centrale Vuota (porta sigillata)**
+### **Stanza Centrale Vuota (porta sigillata)**
 
 **Narrazione**  
 Quadrato pulito, pareti lisce. A nord, una **porta di ferro** senza maniglia. A terra, **cerchi di cenere** e tracce di simboli consumati. Un barattolo di vetro con un **occhio** lattiginoso vi osserva.
@@ -128,7 +128,7 @@ Quadrato pulito, pareti lisce. A nord, una **porta di ferro** senza maniglia. A 
 
 ---
 
-**Corridoio finale**
+### **Corridoio finale**
 
 **Narrazione**  
 Il passaggio si stringe. Odore di carta bagnata e legno marcio. Da dietro il muro, **fruscio di pagine** sfogliate.
@@ -145,7 +145,7 @@ Il passaggio si stringe. Odore di carta bagnata e legno marcio. Da dietro il mur
 
 ---
 
-**Libreria / Archivio (rettangolare in alto)**
+### **Libreria / Archivio (rettangolare in alto)**
 
 **Narrazione**  
 Scaffali fino al soffitto; libri gonfi d’umido. Sul tavolo, carte ondulate e una **mappa** delle gallerie. L’odore di muffa è quasi dolciastro.
@@ -161,12 +161,13 @@ Scaffali fino al soffitto; libri gonfi d’umido. Sul tavolo, carte ondulate e u
 - (Particolari) **Pendolo d’ipnosi** (facilita interrogatori; il portatore sente un ritmo fantasma); **Crocifisso deformato** (fastidio ai cainiti).
 - (Rari) **Diari militari** e **registri prigionieri**; **mappa ipogei** con tre punti in rosso che “driftano” di mezzo millimetro quando non guardi.
 - **Uso**: indizi, ganci verso altri luoghi, pressione psicologica.
+- Incipit [[CriptaMontebelloDisegno.png]], sentono anche parlare nello studio dell'Arpia.
 
 **Prove**: Intelligenza+Accademiche/Occulto 7–8 per collegare nomi, luoghi e simboli.
 
 ---
 
-**Magazzino / Deposito (rettangolare in basso)**
+### **Magazzino / Deposito (rettangolare in basso)**
 
 **Narrazione**  
 Casse accatastate, barili che spandono un odore pungente di disinfettante. Le uniformi appese somigliano a corpi fermi in attesa. Un cofano metallico bullonato vibra quando dite un nome ad alta voce.

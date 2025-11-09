@@ -1,5 +1,3 @@
-
-
 Mappa del palazzo, incontro con la Custode dell’Elysium (in realtà è solo un ex-ghoul) non ha questo titolo ma lei lo fregia come suo.  
 Trovano nelle sale anche un documento che lo rende ora un Elisio decaduto, se non viene trovato la custode lo mostra. [[Elisio Pennabilli Decaduto]]
 
@@ -189,7 +187,7 @@ Si può trovare [[Editto del Principe - Tabvla Sаngvinis]]
 [[TabvlaSangvinis.png]]
 
 > [!important]
-> Imporrente perché indica come ci si presenta al Principe, la cosa sarà utile per la scena finale.
+> Importante perché indica come ci si presenta al Principe, la cosa sarà utile per la scena finale.
 
 Agnese continua a parlare di una notte memorabile
 _(L’Elysium è in silenzio. Le luci soffuse, un brusio che si spegne mentre il nuovo arrivato viene annunciato. Due passi avanti, un inchino profondo. Poi parla con voce calma, misurata.)_
