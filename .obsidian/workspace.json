@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guide/Flashback.md",
+                "file": "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flashback"
+              "title": "Scena 6.1 - Incontro Arpia"
             }
           }
         ]
@@ -214,14 +214,18 @@
   },
   "active": "113975ae6eebf814",
   "lastOpenFiles": [
+    "Inizio/Immagini/StudioArpiaBeatrice.png",
+    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+    "Inizio/Immagini/Arpia-CainoSuAbele.png",
+    "Inizio/Immagini/Beatrice.png",
+    "Guide/Flashback.md",
     "Guide/Guida Giocatori.md",
     "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
     "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
     "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
     "Musica/Sala Delle Armi San Leo.mp3",
-    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
-    "Inizio/Immagini/Arpia-CainoSuAbele.png",
     "Musica/Sinfonia.mp3",
     "Musica/emissary-of-darkness-250732.mp3",
     "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
@@ -238,7 +242,6 @@
     "Inizio/Capitoli/07",
     "Inizio/Materiale/Incidente Stradale.md",
     "Inizio/Effetti/IncidenteTelegiornale.mp3",
-    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
     "Inizio/Capitoli/05/Scena 5.3 - Villa Segrete.md",
     "Inizio/Immagini/pozzo.png",
     "Inizio/Immagini/SimboloPerRimuoverePietra_pozzo.png",
@@ -254,11 +257,7 @@
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Personaggi/NPC - Rita Shafiqah (Rusty).md",
     "Inizio/Personaggi/NPC - Yuri Go (Go Yu-ri).md",
-    "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
-    "Inizio/Personaggi/NPC - Mascia Blumenfeld.md",
     "Inizio/Immagini/Villa Laboratorio.jpg",
-    "Inizio/Immagini/TabvlaSangvinis 1.png",
-    "Inizio/Immagini/TabvlaSangvinis.png",
-    "Inizio/Immagini/SentenzaUltimaMorte.png"
+    "Inizio/Immagini/TabvlaSangvinis 1.png"
   ]
 }
