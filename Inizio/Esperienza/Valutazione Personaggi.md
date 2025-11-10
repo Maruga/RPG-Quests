@@ -9,17 +9,17 @@
 
 ## 🎲 Tabella Assegnazione
 
-|                         | PT  | ...... | ...... | ...... | ...... | ...... | ...... | ...... |
-| ----------------------- | :-: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| Voce                    |     |  0/5   |  0/5   |  0/5   |  0/5   |  0/5   |  0/5   |  0/5   |
-| **Masquerade**          |  3  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Apprendimento**       |  2  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Interpretazione**     |  3  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Atti Eroici**         |  2  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Obiettivo Raggiunto** |  3  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Sopravvivenza**       |  1  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Saggezza/Strategia**  |  3  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
-| **Personale**           |  1  |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |   ☐    |
+|                         | PT  | ........ | ........ | ........ | ........ | ........ | ........ | ........ |
+| ----------------------- | :-: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Voce                    |     |   0/5    |   0/5    |   0/5    |   0/5    |   0/5    |   0/5    |   0/5    |
+| **Masquerade**          |  3  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Apprendimento**       |  2  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Interpretazione**     |  3  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Atti Eroici**         |  2  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Obiettivo Raggiunto** |  3  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Sopravvivenza**       |  1  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Saggezza/Strategia**  |  3  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
+| **Personale**           |  1  |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |    ☐     |
 
 ---
 
@@ -68,3 +68,4 @@ Può premiare contributi fuori dal gioco (aiuto al tavolo, buona atmosfera, role
 ---
 
 > 📘 *Usa questo file come modello per ogni sessione: duplica la nota, aggiorna “Compilato da” e “Data”, e spunta i checkbox durante il gioco.*
+

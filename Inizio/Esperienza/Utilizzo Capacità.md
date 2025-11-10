@@ -1,9 +1,9 @@
-# Utilizzo di Attributi, Abilità, Discipline
+#### Utilizzo di Attributi, Abilità, Discipline
 
-**Giocatore:**
+**Giocatore:** 
 
 ---
-**Data** / **Cronaca:**   
+**Data** / **Cronaca:** 
 
 ---
 
