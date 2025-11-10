@@ -11,10 +11,14 @@
             "id": "7258d64139a9a1f3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Guide/Fame, Messy Critical e Bestial Failure.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Fame, Messy Critical e Bestial Failure"
             }
           }
         ]
@@ -210,6 +214,7 @@
   },
   "active": "7258d64139a9a1f3",
   "lastOpenFiles": [
+    "Inizio/Cronaca il risveglio.md",
     "Guide/Note di etichetta.md",
     "Guide/Fame, Messy Critical e Bestial Failure.md",
     "Guide/Cariche della CamarillaSenza nome.md",
@@ -219,7 +224,6 @@
     "Guide/La schiatta de’ Montefeltro.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
-    "Inizio/Cronaca il risveglio.md",
     "Inizio/Capitoli/07/Scena 7.2 - Il voto.md",
     "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
     "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",

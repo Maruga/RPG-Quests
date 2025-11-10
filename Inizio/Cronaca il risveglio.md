@@ -68,3 +68,10 @@ Fallita la Masquerade
 ## Capitolo 7
 [[Scena 7.1 - Principe]]
 [[Scena 7.2 - Il voto]]
+
+
+## FINE
+
+Consegnare la scheda per i punti esperienza.
+Ogni PG potrà dare punti ai suoi compagni.
+
