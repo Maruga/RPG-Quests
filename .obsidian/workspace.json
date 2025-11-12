@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Diarmid Cane Matto Dunsirn"
             }
+          },
+          {
+            "id": "7c8ab8631e070d79",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,7 +225,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7258d64139a9a1f3",
+  "active": "7c8ab8631e070d79",
   "lastOpenFiles": [
     "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_32_45.png",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
