@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Timer GdR</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: monospace;
+      text-align: center;
+      background: #1e1e1e;
+      color: #fff;
+    }
+    #display {
+      font-size: 80px;
+      font-weight: bold;
+      margin: 30px 0;
+      color: #2ecc71;
+      text-shadow: 0 0 20px currentColor;
+    }
+    input, select {
+      width: auto;
+      font-size: 18px;
+      padding: 5px;
+      background: #2d2d2d;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    select {
+      min-width: 200px;
+      margin: 10px 0;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 40px;
+      margin: 5px;
+      cursor: pointer;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .preset-btn {
+      background: #9b59b6;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .preset-btn:hover {
+      background: #8e44ad;
+    }
+    #resetBtn {
+      background: #e74c3c;
+    }
+    #resetBtn:hover {
+      background: #c0392b;
+    }
+    .preset-container {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #2d2d2d;
+      border-radius: 5px;
+    }
+    .voice-container {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #2d2d2d;
+      border-radius: 5px;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .warning {
+      animation: pulse 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="voice-container">
+    <div style="margin-bottom: 5px; font-size: 14px; color: #888;">SELEZIONA VOCE</div>
+    <select id="voiceSelect"></select>
+    <button onclick="testVoice()" style="padding: 5px 15px; font-size: 14px;">TEST VOCE</button>
+  </div>
+
+  <div class="preset-container">
+    <div style="margin-bottom: 10px; font-size: 14px; color: #888;">TEMPI RAPIDI</div>
+    <button class="preset-btn" onclick="setPreset(5, 0)">5 MIN</button>
+    <button class="preset-btn" onclick="setPreset(3, 0)">3 MIN</button>
+    <button class="preset-btn" onclick="setPreset(1, 0)">1 MIN</button>
+    <button class="preset-btn" onclick="setPreset(0, 30)">30 SEC</button>
+    <button class="preset-btn" onclick="setPreset(0, 15)">15 SEC</button>
+  </div>
+
+  <div>
+    <input type="number" id="minutes" min="0" max="5" value="1" style="width: 60px;"> minuti
+    <input type="number" id="seconds" min="0" max="59" value="0" style="width: 60px;"> secondi
+  </div>
+  
+  <div id="display">00:00</div>
+  
+  <button id="startBtn">AVVIA</button>
+  <button id="resetBtn">RESET</button>
+
+  <script>
+    // Ridimensiona finestra all'apertura
+    window.addEventListener('load', function() {
+      try {
+        window.resizeTo(300, 350);
+        // Sposta la finestra in posizione comoda (opzionale)
+        window.moveTo(100, 100);
+      } catch(e) {
+        // Alcuni browser bloccano il ridimensionamento per sicurezza
+        console.log('Impossibile ridimensionare automaticamente');
+      }
+    });
+
+    let totalSeconds = 0;
+    let remainingSeconds = 0;
+    let timerInterval = null;
+    let audioContext = null;
+    let selectedVoice = null;
+
+    // Carica voci disponibili
+    function loadVoices() {
+      const voices = speechSynthesis.getVoices();
+      const voiceSelect = document.getElementById('voiceSelect');
+      voiceSelect.innerHTML = '';
+      
+      // Filtra voci italiane
+      const italianVoices = voices.filter(v => v.lang.startsWith('it'));
+      
+      if (italianVoices.length === 0) {
+        italianVoices.push(...voices);
+      }
+      
+      italianVoices.forEach((voice, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = `${voice.name} (${voice.lang})`;
+        voiceSelect.appendChild(option);
+      });
+      
+      // Cerca Isabella Online come default
+      const isabellaIndex = italianVoices.findIndex(v => 
+        v.name.toLowerCase().includes('isabella')
+      );
+      
+      if (isabellaIndex !== -1) {
+        voiceSelect.selectedIndex = isabellaIndex;
+      } else {
+        // Fallback a voce femminile generica
+        const femaleIndex = italianVoices.findIndex(v => 
+          v.name.toLowerCase().includes('female') ||
+          v.name.toLowerCase().includes('donna') ||
+          v.name.toLowerCase().includes('alice') ||
+          v.name.toLowerCase().includes('samantha') ||
+          v.name.toLowerCase().includes('karen') ||
+          v.name.toLowerCase().includes('moira') ||
+          v.name.toLowerCase().includes('fiona')
+        );
+        
+        if (femaleIndex !== -1) {
+          voiceSelect.selectedIndex = femaleIndex;
+        }
+      }
+      
+      updateSelectedVoice();
+    }
+
+    function updateSelectedVoice() {
+      const voices = speechSynthesis.getVoices();
+      const italianVoices = voices.filter(v => v.lang.startsWith('it'));
+      if (italianVoices.length === 0) italianVoices.push(...voices);
+      
+      const voiceSelect = document.getElementById('voiceSelect');
+      selectedVoice = italianVoices[voiceSelect.value];
+    }
+
+    function testVoice() {
+      updateSelectedVoice();
+      speak('Ciao, questa è la voce selezionata per il countdown');
+    }
+
+    // Attende caricamento voci
+    speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+    
+    document.getElementById('voiceSelect').addEventListener('change', updateSelectedVoice);
+
+    function initAudio() {
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioContext.state === 'suspended') {
+        audioContext.resume();
+      }
+    }
+
+    function beep(duration = 150, frequency = 800) {
+      try {
+        initAudio();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.value = frequency;
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration / 1000);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + duration / 1000);
+      } catch (e) {
+        console.error('Errore beep:', e);
+      }
+    }
+
+    function alarmBeep() {
+      try {
+        initAudio();
+        [600, 800].forEach((freq, i) => {
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          
+          oscillator.frequency.value = freq;
+          oscillator.type = 'square';
+          
+          const startTime = audioContext.currentTime + (i * 0.15);
+          gainNode.gain.setValueAtTime(0.6, startTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, startTime + 0.1);
+          
+          oscillator.start(startTime);
+          oscillator.stop(startTime + 0.1);
+        });
+      } catch (e) {
+        console.error('Errore alarm:', e);
+      }
+    }
+
+    function dramaticFinalBeep() {
+      try {
+        initAudio();
+        
+        // Beep lungo semplice e forte
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.frequency.value = 600;
+        oscillator.type = 'sine';
+        
+        gainNode.gain.setValueAtTime(0.7, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1.5);
+        
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 1.5);
+      } catch (e) {
+        console.error('Errore beep finale:', e);
+      }
+    }
+
+    function speak(text, urgent = false) {
+      if ('speechSynthesis' in window) {
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        
+        if (selectedVoice) {
+          utterance.voice = selectedVoice;
+        }
+        
+        utterance.lang = 'it-IT';
+        utterance.rate = urgent ? 0.9 : 0.95;
+        utterance.pitch = urgent ? 0.8 : 0.85;
+        utterance.volume = 1;
+        
+        speechSynthesis.speak(utterance);
+      }
+    }
+
+    function getTimeAnnouncement(seconds) {
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      
+      if (mins > 0 && secs === 0) {
+        return mins === 1 ? '1 minuto' : `${mins} minuti`;
+      } else if (mins > 0) {
+        return `${mins} ${mins === 1 ? 'minuto' : 'minuti'} e ${secs} secondi`;
+      } else {
+        return `${secs} ${secs === 1 ? 'secondo' : 'secondi'}`;
+      }
+    }
+
+    function updateDisplay() {
+      const mins = Math.floor(remainingSeconds / 60);
+      const secs = remainingSeconds % 60;
+      const display = document.getElementById('display');
+      display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      
+      if (remainingSeconds <= 10) {
+        display.style.color = '#e74c3c';
+        display.classList.add('warning');
+      } else if (remainingSeconds <= 30) {
+        display.style.color = '#f39c12';
+        display.classList.remove('warning');
+      } else {
+        display.style.color = '#2ecc71';
+        display.classList.remove('warning');
+      }
+    }
+
+    function setPreset(minutes, seconds) {
+      initAudio();
+      document.getElementById('minutes').value = minutes;
+      document.getElementById('seconds').value = seconds;
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        document.getElementById('startBtn').textContent = 'AVVIA';
+      }
+      remainingSeconds = minutes * 60 + seconds;
+      updateDisplay();
+    }
+
+    document.getElementById('startBtn').addEventListener('click', function() {
+      initAudio();
+      updateSelectedVoice();
+      
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        this.textContent = 'AVVIA';
+        speechSynthesis.cancel();
+        return;
+      }
+      
+      const minutes = parseInt(document.getElementById('minutes').value) || 0;
+      const seconds = parseInt(document.getElementById('seconds').value) || 0;
+      totalSeconds = minutes * 60 + seconds;
+      
+      if (totalSeconds <= 0 || totalSeconds > 300) {
+        alert('Imposta un tempo tra 1 secondo e 5 minuti');
+        return;
+      }
+      
+      remainingSeconds = totalSeconds;
+      updateDisplay();
+      
+      beep(150, 800);
+      speak(getTimeAnnouncement(remainingSeconds));
+      
+      this.textContent = 'STOP';
+      
+      timerInterval = setInterval(() => {
+        remainingSeconds--;
+        updateDisplay();
+        
+        if (remainingSeconds === 3) {
+          // alarmBeep();
+          speak('3', true);
+        } else if (remainingSeconds === 2) {
+          // alarmBeep();
+          speak('2', true);
+        } else if (remainingSeconds === 1) {
+          // alarmBeep();
+          speak('1', true);
+        } else if (remainingSeconds === 0) {
+          dramaticFinalBeep();
+          speak('Tempo scaduto', true);
+          clearInterval(timerInterval);
+          timerInterval = null;
+          document.getElementById('startBtn').textContent = 'AVVIA';
+        } else if (remainingSeconds % 10 === 0) {
+          alarmBeep();
+          speak(getTimeAnnouncement(remainingSeconds));
+        }
+      }, 1000);
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', function() {
+      initAudio();
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+      speechSynthesis.cancel();
+      remainingSeconds = 0;
+      updateDisplay();
+      document.getElementById('startBtn').textContent = 'AVVIA';
+    });
+
+    updateDisplay();
+  </script>
+</body>
+</html>

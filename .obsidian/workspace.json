@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "07935202fc75320a",
+        "id": "848205757fc8b396",
         "type": "tabs",
         "children": [
           {
-            "id": "7258d64139a9a1f3",
+            "id": "cb8d5eb3cbfae533",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diarmid Cane Matto Dunsirn"
-            }
-          },
-          {
-            "id": "7c8ab8631e070d79",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,9 +190,19 @@
               "icon": "command-glyph",
               "title": "Execution Runtimes"
             }
+          },
+          {
+            "id": "a5ff25d8e8f873b8",
+            "type": "leaf",
+            "state": {
+              "type": "online.tokuhirom.obsidian-stopwatch-plugin",
+              "state": {},
+              "icon": "clock",
+              "title": "Stopwatch"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -225,10 +222,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7c8ab8631e070d79",
+  "active": "cb8d5eb3cbfae533",
   "lastOpenFiles": [
-    "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_32_45.png",
+    "Strumenti.md",
+    "Timer.md",
+    "Strumenti/timer.html",
+    "Strumenti/timer 1.html",
+    "Strumenti",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
+    "Inizio/Png/Anarchici Pennabilli.md",
+    "Inizio/Cronaca il risveglio.md",
+    "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_32_45.png",
     "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_32_52.png",
     "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_36_39.png",
     "Inizio/Personaggi/Immagini",
@@ -236,7 +240,6 @@
     "~$Strumenti.xlsx",
     "Inizio/Esperienza/Valutazione Personaggi.md",
     "Guide/Fame, Messy Critical e Bestial Failure.md",
-    "Inizio/Cronaca il risveglio.md",
     "Guide/Note di etichetta.md",
     "Guide/Cariche della CamarillaSenza nome.md",
     "Guide/Tipologie di Debiti (Boons).md",
@@ -258,8 +261,6 @@
     "Inizio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
     "Inizio/Immagini/Arpia-CainoSuAbele.png",
     "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
-    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
-    "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
     "Inizio/Immagini/CriptaMontebelloFoto.png",
     "Inizio/Immagini/CriptaMontebelloDisegno.png",
     "Inizio/Immagini/SentenzaUltimaMorte.png",
@@ -268,9 +269,6 @@
     "Inizio/Immagini/StudioArpiaMappaTunnel.png",
     "Musica/Sinfonia.mp3",
     "Inizio/Effetti/Battito.mp3",
-    "Inizio/Effetti/wolf-howling-type-04-293317.mp3",
-    "wolf-howling-type-04-293317 1.mp3",
-    "wolf-howling-type-04-293317.mp3",
-    "Inizio/Effetti/night-forest-soundscape-158701.mp3"
+    "Inizio/Effetti/wolf-howling-type-04-293317.mp3"
   ]
 }
