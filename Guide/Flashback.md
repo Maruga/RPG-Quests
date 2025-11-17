@@ -45,11 +45,11 @@ Il giocatore effettua un tiro di **Forza di Volontà** (usa il punteggio attuale
 
 ## 🩸 Interazione con il Sangue e la Volontà
 
-| Azione | Effetto |
-|---------|----------|
-| **Spesa di 1 punto Sangue** | Conferisce **1 successo automatico** (il Sangue alimenta la chiarezza del ricordo). |
-| **Spesa di 1 punto di Forza di Volontà** | Aggiunge **1 successo automatico** (sforzo mentale straordinario). |
-| **Perdita o spesa forzata di Sangue** (fame, ferite, ecc.) | Può comportare la perdita di 1 successo (a discrezione del Narratore). |
+| Azione                                                     | Effetto                                                                             |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Spesa di 1 punto Sangue**                                | Conferisce **1 successo automatico** (il Sangue alimenta la chiarezza del ricordo). |
+| **Spesa di 1 punto di Forza di Volontà**                   | Abbassa la difficolta di 1 (sforzo mentale straordinario).                          |
+| **Perdita o spesa forzata di Sangue** (fame, ferite, ecc.) | Può comportare la perdita di 1 successo (a discrezione del Narratore).              |
 
 ---
 
@@ -69,7 +69,7 @@ Il giocatore effettua un tiro di **Forza di Volontà** (usa il punteggio attuale
 > Effettua un tiro di **Forza di Volontà (Diff 4)**, si può aggiungere un Attributo (Esempio: Intelligenza):  
 > - con **1 successo**, ricorda solo alcune parole;  
 > - con **2 successi**, ricorda parole chiave e il senso;  
-> - con **3 successi**, visualizza perfettamente la scritta, come se l’avesse davanti.  
+> - con **3 successi**, visualizza perfettamente, come se l’avesse davanti.  
 >  
 > Spende 1 punto Sangue → ottiene **1 successo automatico aggiuntivo**: il ricordo diventa vivido, quasi tangibile.
 
@@ -78,7 +78,7 @@ Il giocatore effettua un tiro di **Forza di Volontà** (usa il punteggio attuale
 > [!rule] **FLASHBACK – Regola Homebrew (Volontà)**
 > Il Flashback rappresenta l’abilità dei vampiri di attingere a memorie antiche o sepolte.  
 > Si effettua un tiro di **Forza di Volontà**, con Difficoltà variabile.  
-> È possibile spendere **1 punto di Sangue o 1 punto di Forza di Volontà** per ottenere **1 successo automatico**.  
+> È possibile spendere **1 punto di Sangue o 1 punto di Forza di Volontà** per ottenere **1 successo automatico** oppure abbassare la difficoltà.  
 >  
 > I Flashback sono strumenti narrativi per approfondire la psicologia e la storia dei personaggi, non solo tiri di memoria.
 

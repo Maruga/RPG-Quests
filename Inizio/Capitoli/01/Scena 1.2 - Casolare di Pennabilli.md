@@ -6,9 +6,8 @@
 > I Sire sono **fuggiti di fretta**, lasciando indizi e oggetti.
 
 
-[[CasolareSiriPennabilli.svg]]
-![[CasolareSiriPennabilli.svg]]
-
+![[CasolareSiriPennabilli.png]]
+[[CasolareSiriPennabilli.png]]
 
 ## Regole Trasversali (VtM 3a ed.)
 
@@ -54,9 +53,10 @@ Il sangue chiama la pietra, il marchio ascolta.
 		- “Il sangue chiama la pietra, il segno ascolta.”
 	- Il PG Tremere ricorda questa frase quando lo esamina “**La prudenza è la catena dell’eternità**”.  
 	- *Intelligenza + Occulto* diff **7** per capirne la natura di “ancora mnemonica/rituale”. 
-	- **Uso futuro**: con **1 Punto Sangue del Sire** è disegnando il simbolo sulla pietra permette di distruggere la porta nella **trappola del pozzo** [[Scena 5.2 - Il Pozzo]].
+	- **Uso futuro**: con **1 Punto Sangue del Sire** (Ampolla con sangue condensato, oppure il giocatore **Tremere** ha il sangue del sire nelle vene) è disegnando il simbolo sulla pietra permette di distruggere la porta nella **trappola del pozzo** [[Scena 5.2 - Il Pozzo]].
 - **Ampolla di Vitae condensato** (cassetta metallica, semi-nascosta tra casse).  
   - Trovarla: *Percezione + Investigazione* diff **6**. Effetto: **1 Punto Sangue**; retrogusto di ferro/terrore.
+  - Sangue del vampiro che ha creato il simbolo.
 - **Libro dei Nomi** (ledger antico di **soli nomi propri** + note a margine in latino/francese antico).
   - Analisi: *Prontezza + Linguistica* diff **7** (pattern ricorrenti); *Intelligenza + Politica* diff **6** (nomi legati a cariche di corte).
 
@@ -66,13 +66,13 @@ Il sangue chiama la pietra, il marchio ascolta.
 > [!info] Per i Giocatori
 > Scaffali gonfi, corde, candele, pile, taniche ammaccate. Sacchi di juta odorano di muffa dolciastra. Una perlina di campanelli tintinna se sfiorata.
 
-> [!tip] Per il Narratore
-> - **Risorse**: 2 lampade portatili, corde, chiodi, tanica benzina mezza, spray lubrificante.  
-> - **Trappola minore**: **filo a campanelli**: rumore → allerta chi è sopra. Innocua ma crea ansia.
+> [!tip] Per il Narratore - Trovati in automatico
+> - **Risorse**: 2 pile, corde, chiodi, tanica benzina mezza, spray lubrificante.  
+> - **Trappola minore**: **filo a campanelli**: rumore, innocua.
 
 **Oggetti & Tiri**
-- **Filo a campanelli (trappola-sonaglio)**  
-  - Notare: *Percezione + Investigazione* diff **6** | Disinnescare: *Destrezza + Sicurezza* diff **6**.  
+- **Filo a campanelli (trappola-sonaglio)** per capire utilizzo
+  - Notare: *Percezione + Investigazione* diff **6** veniva usata tanto tempo addietro.  
 - **Contanti** (quota): **200–300 €** nascosti in barattolo di latta.  
   - Trovare: *Percezione + Investigazione* diff **6**.
 
@@ -85,8 +85,8 @@ Il sangue chiama la pietra, il marchio ascolta.
 
 > [!tip] Per il Narratore
 > - **Ritratti della corte** (Principe & membri) — alcune figure ricorrono attraverso i secoli. Le date indicano il passaggio da mortale a cainita. Le X rosse indicano la morte definitiva. 
->   - *Percezione + Accademiche* diff **6** (datare) | *Intelligenza + Occulto* diff **6** (X = Morte Definitiva).  
-> - **Rumore/fiammate** dal generatore mal maneggiato → possibile **Rötschreck** (Coraggio diff **6–7**).  
+>   - *Percezione + Accademiche* diff **6** (datare) | *Intelligenza + Occulto* diff **6** (X = Morte Definitiva anche se i PG è morte).  
+> - **Rumore/fiammate** dal generatore mal maneggiato → possibile **Rötschreck** (Coraggio diff 3).  
 > - **Contanti**: qui il grosso — **600–700 €** in scodella.
 
 **Oggetti & Tiri**
@@ -101,7 +101,7 @@ Il sangue chiama la pietra, il marchio ascolta.
 ## 6) Cucina (Piano Terra)
 
 > [!info] Per i Giocatori
-> Frigorifero spento, pentole con residui scuri, odore rancido ma stranamente gradevole. In un pensile, avvolto in panno, un metallo freddo e perfetto.
+> Frigorifero spento, pentole con residui scuri, odore rancido ma stranamente gradevole. In un pensile trovate qualcosa avvolto in panno. (coltello argento)
 
 > [!tip] Per il Narratore
 > - **Frenesia olfattiva** (opzionale) per PG molto affamati: **Autocontrollo diff 4**.
@@ -117,7 +117,7 @@ Il sangue chiama la pietra, il marchio ascolta.
 ## 2) Ripostiglio / Officina (Piano Terra)
 
 > [!info] Per i Giocatori
-> Attrezzi su chiodi, cassette aperte, taniche. Una linea metallica tesa brilla all’altezza della caviglia.
+> Attrezzi generici, chiodi, cassette aperte, taniche. Una corda metallica tesa brilla all’altezza della caviglia.
 
 > [!tip] Per il Narratore
  > - **Materiale** per barricare porte/finestre (utile per il giorno).
@@ -165,7 +165,7 @@ Il sangue chiama la pietra, il marchio ascolta.
 ## 4) Corridoio & Bagno (Piano Terra)
 
 > [!info] Per i Giocatori
-> Piastrelle crepate, specchio macchiato, odore di disinfettante vecchio. La vostra immagine non vi restituisce nulla… o forse un accenno distorto che svanisce.
+> Piastrelle crepate, specchio macchiato, odore di disinfettante vecchio. Vi avvicinate allo specchio… e per un istante vedete davvero voi stessi: pallidi, stravolti, gli occhi troppo scuri, troppo lucidi. Il riflesso c’è — ma qualcosa non torna.
 
 > [!tip] Per il Narratore
 > - Nessun oggetto chiave, ma ottimo per sottolineare **alienazione**.  
@@ -174,66 +174,65 @@ Il sangue chiama la pietra, il marchio ascolta.
 ## 9) Camera Matrimoniale (Primo Piano)
 
 > [!info] Per i Giocatori
-> Letto disfatto, finestra aperta alla luna. Sul comodino, uno **specchio da tasca** con cornice d’osso: per un battito vedete il vostro volto umano… poi nulla. (Armadio)
+> Il letto è disfatto, la finestra spalancata lascia entrare la luna. Sul comodino, uno **specchio da tasca** con cornice d’osso, sembra essere molto vecchio. L’armadio è aperto: dentro, abiti di epoche diverse ma tutti di qualità impeccabile — scarpe, stivali, cinture, cappelli. Un guardaroba che sembra appartenere a più vite, non a una sola.
 
 > [!tip] Per il Narratore
-> - **Botola nascosta** sotto il letto → piccolo vano di fuga (bloccato).  
-> - Momento perfetto per colpire con il tema **Umanità vs Bestia**.
+> - **Botola nascosta** sotto il letto → serve per scappare nella stanza sotto, sotto è perfettamente mascherata nel soffitto. In pratica si deve sfondare.
 
 **Oggetti & Tiri**
 - **Specchio d’osso (ricordo)**  
-  - Effetto: riflesso umano per 1 secondo.  
-  - Capire che è reliquia/eco, non magia attiva: *Intelligenza + Occulto* diff **7**.  
-  - Possibile frenesia emotiva: **Autocontrollo diff 6** per PG affamati/umanità alta.  
+	- Un semplice oggetto ma con un valore da antiquariato molto alto 
 - **Botola**  
   - Trovare: *Percezione + Investigazione* diff **7** | Forzare: *Forza + Atletica* diff **7**.  
-  - Dentro: cassa vuota, odore di sangue antico (gancio futuro).
 
-
-## 10) Stanza Piccola — della Bambina (Primo Piano)
+## 10) Stanza Piccola
 
 > [!info] Per i Giocatori
-> Una bambola a terra. Lenzuola aggrovigliate. Due respiri si interrompono quando il pavimento scricchiola.
+> La stanza è quella di una bambina: pareti rosa sbiadite, pupazzi ammucchiati sul letto, un mobile pieno di libri illustrati e disegni appesi con lo scotch. **Due donne** — sembrano madre e figlia — sono rannicchiate, terrorizzate. Tremano, parlano a bassa voce in uno spagnolo spezzato, troppo spaventate per alzare lo sguardo. La stanza sembra fatta per i sogni… ma loro portano dentro solo paura.
 
 > [!tip] Per il Narratore
-> - **Due umane**: madre e figlia, straniere; italiano stentato. Rapite alla **stazione di Torino**. Sanno solo di un “posto sicuro nel bosco” citato dai rapitori e sono sicure che questi sono scappati in questo luogo. Lota nella stanza di sotto, vetri rotti e urla e ringhi.
+> - **Due umane**: madre e figlia, straniere; italiano stentato. Rapite alla **stazione di Torino**. Sanno solo di un “posto sicuro nel bosco” citato dai rapitori e sono sicure che questi sono scappati in questo luogo. Hanno sentito la rissa nella stanza di sotto, vetri rotti, urla e ringhi.
 > - **Sociale**:  
 >   - Calmare: *Carisma + Empatia* diff **6** (–1 diff se i PG non si avvicinano troppo/attenuano i sensi).  
 >   - Intimidire: *Carisma + Intimidire* diff **6** (ma peggiora future interazioni).  
 >   - **Discipline**: Presenza (Awe, Dread Gaze), Dominazione (Comando) funzionano normalmente.  
-> - **Frenesia da fame**: alla vista/odore del sangue/panico → **Autocontrollo diff 6–7** (7 se Pool Sangue ≤3).
+> - **Frenesia da fame**: alla vista/odore del sangue/panico → **Autocontrollo diff 5** (6 se Pool Sangue ≤3).
 
 **Oggetti & Tiri**
-- **Fotografia** (madre/figlia a **Torino Porta Nuova**); indizio sul rapimento.  
-  - Notare dettagli (cartelli/ora): *Percezione + Investigazione* diff **6**.
-
+- Nessuno
 
 ## 8) Corridoio & Finestra sulla Radura (Primo Piano)
 
 > [!info] Per i Giocatori
-> Una radura circolare si apre tra gli alberi. L’erba appare pettinata dal vento, ma qui il vento non arriva. Nessun animale la attraversa.
+> Dalla finestra del primo piano vedete una radura perfettamente circolare, aperta tra gli alberi. L’erba è piegata come pettinata da un vento che qui non soffia. Sul terreno, impronte confuse di scarpe si intrecciano… alcune rivolte verso il bosco.
 
 > [!tip] Per il Narratore
 > Vari sentieri partono dalla casa in varie direzioni.
 
 **Oggetti & Tiri**
 - **Valutare il terreno**  
-  - *Intelligenza + Sopravvivenza* diff **6** (i sentieri evitano la radura).  
-  - Collegare alla lettera: *Intelligenza + Occulto/Politica* diff **6–7**.
+  - Collegare alla lettera del rifugio: *Intelligenza + Occulto/Politica* diff **6–7**.
 
 
 ## 7) Stanza dormitorio
 
+> [!Per i Giocatori]
+> Il dormitorio è una fila di brandine metalliche, troppo vicine fra loro, con lenzuola grigie macchiate e coperte militari. L’aria sa di sangue secco e disinfettante economico. Su qualche materasso ci sono catene spezzate, su altri resti di flebo improvvisate. Le luci al neon tremolano, vestiti ammassati e ciotole d’acqua ormai stagnante.
+> È un luogo pensato per chi serve, non per chi vive.
 
+**Oggetti**
+- Siringhe usate e flebo artigianali
+- Boccette vuote con tracce di sangue coagulato
+- Farmaci: analgesici, sedativi, antibiotici
+- Accendini, pacchetti di sigarette nascosti sotto i materassi
 
 
 ## Oggetti Speciali — Riepilogo
 
 - **Ampolla di Vitae condensato** *(Seminterrato)* → **1 PS**; retrogusto ferro/terrore.  
 - **Pugnale d’argento** *(Cucina)* → Letale vs Cainiti; **Aggravato** vs Garou.  
-- **Specchio d’osso** *(Camera matr.)* → riflesso umano per 1 secondo (eco).  
 - **Libro dei Nomi** *(Seminterrato)* → ledger di nomi (corte/ghoul/contatti).  
-- **Lettera ~1950** *(Semi. / Studio)* → accordo con Lupini; Eliseo sacrificato.  
+- **Lettera ~1953 *(Semi. / Studio)* → accordo con Lupini; Eliseo sacrificato.  
 - **Invito Elisio 2008** *(Studio)* → regole (neutralità, Masquerade, ospitalità).  
 - **Marchio + frase** *(Seminterrato)* → chiave rituale per **trappola del pozzo** (serve **sangue del Sire**).  
 
@@ -242,12 +241,10 @@ Il sangue chiama la pietra, il marchio ascolta.
 ## Pressioni di Scena & Conseguenze
 
 > [!danger] Giorno & Sole
-> - Restare senza rifugio all’alba = **torpore**; esposizione al sole = **Aggravati/turno**.  
-> - Suggerisci di **barricare** (Officina/Retro), spegnere spifferi di luce, preparare nascondigli.
+> - Restare nel rifugio fino la mattina, arrivo del Maresciallo, morte. [[Incidente Stradale]] 
 
 > [!failure] Rumore & Allarmi
-> - Trappole (campanelli/lama), sfondare porte, avviare generatore → **attenzione** delle umane (urla, fuga).  
-> - Rumori ripetuti notturni possono attirare **vicini/guardie forestali** (pressione narrativa / Masquerade).
+> - Rumori ripetuti notturni possono attirare **vicini/guardie forestali** (pressione narrativa / Masquerade). [[Orologi]] 
 
 > [!tldr] Linea dei Sire (ganci)
 > - Fuga precipitosa; in realtà causata da una disputa tra due Siri.

@@ -4,7 +4,7 @@
 > [[Scena 1.2 - Casolare di Pennabilli]]
 
 
-Cattolica, 12 aprile 1955
+Cattolica, 12 aprile 1953
 
 All’attenzione di **Sire Monica D’Albo**,
 
