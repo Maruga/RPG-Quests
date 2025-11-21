@@ -4,77 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "128e98a315ce3c46",
+        "id": "2edbd7b5581fd400",
         "type": "tabs",
         "children": [
           {
-            "id": "29775054de7881c3",
+            "id": "6a5a1aee80f5ab75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
+                "file": "Guide/Guida Giocatori.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 1.2 - Casolare di Pennabilli"
-            }
-          },
-          {
-            "id": "618b76819321688f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide/Tiro dei Dadi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tiro dei Dadi"
-            }
-          },
-          {
-            "id": "7eefb1c204547446",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide/Cariche della Camarilla.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cariche della Camarilla"
-            }
-          },
-          {
-            "id": "2e88e9ea4cb13f3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide/Meccaniche.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Meccaniche"
-            }
-          },
-          {
-            "id": "f05607159e668c8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide/Meccaniche.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Meccaniche"
+              "title": "Guida Giocatori"
             }
           }
         ]
@@ -278,44 +222,45 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "29775054de7881c3",
+  "active": "6a5a1aee80f5ab75",
   "lastOpenFiles": [
-    "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
-    "Inizio/Cronaca il risveglio.md",
-    "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
-    "Inizio/Capitoli/07/Scena 7.2 - Il voto.md",
-    "Musica/Sala Delle Armi San Leo.mp3",
-    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
-    "Guide/Tiro dei Dadi.md",
-    "Inizio/Immagini/PrincipeSanLeo.png",
-    "Guide/Tipologie di Debiti (Boons).md",
-    "Guide/Note di etichetta.md",
-    "Guide/Meccaniche.md",
-    "Guide/Le sei tradizione della Camarilla.md",
     "Guide/La schiatta de’ Montefeltro.md",
     "Guide/Guida Giocatori.md",
+    "Inizio/Immagini/13regole.png",
     "Guide/Cariche della Camarilla.md",
     "Guide/Flashback.md",
+    "Guide/Le sei tradizione della Camarilla.md",
+    "Guide/Meccaniche.md",
+    "Guide/Note di etichetta.md",
+    "Guide/Tipologie di Debiti (Boons).md",
+    "Guide/Tiro dei Dadi.md",
+    "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
+    "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
+    "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
+    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
+    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
+    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
+    "Inizio/Immagini/BambinanaHorridForm.png",
+    "Inizio/Immagini/Arpia-CainoSuAbele.png",
+    "Musica/Sala Delle Armi San Leo.mp3",
+    "Musica/Sinfonia.mp3",
+    "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+    "Inizio/Capitoli/07/Scena 7.2 - Il voto.md",
+    "Inizio/Cronaca il risveglio.md",
+    "Inizio/Immagini/PrincipeSanLeo.png",
     "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
     "Inizio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
-    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
     "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
     "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
-    "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
     "Inizio/Immagini/LaboratorioVilla.png",
     "Inizio/Immagini/MappaAgnese.png",
     "Inizio/Immagini/MappaRifugioForesta.png",
     "Inizio/Immagini/pozzo.png",
-    "Inizio/Immagini/PrigioneBambola.png",
-    "Inizio/Immagini/QuadroCasaPennabilli01.png",
-    "Inizio/Immagini/QuadroCasaPennabilli02.jpg",
     "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
-    "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
-    "Inizio/Orologi.md",
-    "Inizio/Materiale/Incidente Stradale.md",
     "DnD",
     "Strumenti/timer.html",
     "Strumenti/timer 1.html",
@@ -323,7 +268,6 @@
     "Inizio/Personaggi/Immagini",
     "~$Strumenti.xlsx",
     "Musica/emissary-of-darkness-250732.mp3",
-    "Musica/Sinfonia.mp3",
     "Inizio/Effetti/Battito.mp3"
   ]
 }
