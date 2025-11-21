@@ -46,7 +46,7 @@
 - **Tradizioni** – Le sei leggi base dei vampiri della Camarilla.
 - **Principe** – Il capo di una città per la Camarilla.
 - **Primogen** – Consiglio di anziani che assiste il Principe.
-- **Sceriffo** – Esecutore del Principe, si occupa della legge.
+- **Maresciallo** – Esecutore del Principe, si occupa della legge.
 - **Arpia** – Vampiro influente nella gestione di reputazioni e debiti.
 - **Elysium** – Luogo neutrale dove è vietata ogni violenza tra vampiri.
 - **Clan** – Famiglia vampirica con poteri e filosofia specifica.
@@ -61,11 +61,6 @@
 - **Anarchico** – Vampiro ribelle che rifiuta l’autorità degli anziani.
 - **Autarkis** – Vampiro solitario, che non appartiene a nessuna setta.
 - **Disciplina** – Poteri soprannaturali dei vampiri.
-- **Obfuscazione** – Potere per diventare invisibili o inosservati.
-- **Dominazione** – Potere per controllare la mente degli altri.
-- **Auspex** – Potere per percepire pensieri, emozioni, auras e il soprannaturale.
-- **Celerità** – Velocità sovrumana.
-- **Potenza** – Forza sovrumana.
 - **Obbedienza** – Quando un vampiro è soggetto a un vincolo o obbligo.
 - **Ritorno alla Terra** – Il letargo dei vampiri molto antichi.
 - **Il Silenzio di Sangue** – Un patto per mantenere un segreto pericoloso.
