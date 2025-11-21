@@ -10,7 +10,6 @@
 - **Mai usare titoli umani** (“Signore”, “Dottoressa”, ecc.) con un Principe o un Arpia — sono offese sottili.
 - In Elysium, **mai interrompere** chi parla, e **mai pronunciare il nome del Principe ad alta voce** senza permesso.
 - Non si parla mai di “sangue” in modo diretto. Si dice: _“sostentamento”_, _“la sete”_, _“la necessità”_
-
 - Tono misurato, postura composta, un leggero inchino quando si nomina il Principe.
 - Nominare Principe, Senescallo e Custode dell’Elysium quando presenti; citare le Arpie mostra rispetto.
 - Evitare dettagli superflui su debiti/boon in pubblico; limitarsi a “nessun favore pendente” o “disponibile a regolare secondo usi”.
@@ -44,14 +43,14 @@ Esempio:
 
 “Onoro il Principe Bellini, la Camarilla e questa corte; porgo i dovuti rispetti al Senescallo, alle Arpie e al Custode dell’Elysium. Mi presento: Alessandro Moretti, Neonato, del Clan Ventrue, progenie di Claudia Savelli, con precedente riconoscimento presso il dominio di Firenze. Giungo a Milano per affari e porto assicurazioni di condotta dal Primogenito Ventrue di Firenze. Non rechi minacce alla Masquerade, non porto faide aperte né favori pendenti in questo dominio; chiedo riconoscimento, ospitalità e permesso di caccia secondo le consuetudini locali. Resto a disposizione della corte per eventuali disposizioni.”
 
-## 🎭 Versione Media – Cerimoniale, diretta
+## 🎭 Versione Media – Cerimoniale presentazione
 
-> “Rendo omaggio al Principe Conte di Cagliostro, Signore del Dominio,  
-> e porgo deferenza al Senescallo Marcus Livius Umbra,  
-> al Custode dell’Elysium, e alle nobili Arpie che vegliano su questa corte.  
->  
-> Mi presento: **[Nome Cognome]**, Neonato del Clan **[Clan]**.  
-> Senza Sire, e non porto lettere di presentazione né segni di patrocinio.  
->  
-> Umilmente, chiedo riconoscimento formale e permesso di caccia,  
-> affinché possa servire il dominio secondo le leggi e le consuetudini della Camarilla.”
+“Rendo omaggio al Principe Conte di Cagliostro, Signore del Dominio,  
+e porgo deferenza al Senescallo Marcus Livius Umbra,  
+al Custode dell’Elysium, e alle nobili Arpie che vegliano su questa corte.  
+ 
+Mi presento: **[Nome Cognome]**, Neonato del Clan **[Clan]**.  
+Senza Sire, e non porto lettere di presentazione né segni di patrocinio.  
+ 
+Umilmente, chiedo riconoscimento formale e permesso di caccia,  
+affinché possa servire il dominio secondo le leggi e le consuetudini della Camarilla.”

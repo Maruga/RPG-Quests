@@ -7,6 +7,7 @@
 | **Principe**                 | *Calistratus Aelius* / Conte Alessandro Cagliostro          | Tremere   | XV secolo                        | Fortezza di San Leo                         | Enigmatico, colto, manipolatore |
 | **Maresciallo / Sceriffo**   | *Valterius de Monte Bello* / Valterius “Il Segugio” Belloni | Gangrel   | 1227                             | Bosco del Montefeltro                       | Feroce, silenzioso, spietato    |
 | **Senescallo (Consigliere)** | *Marcus Livius Umbra* / Marco Umbra                         | Ventrue   | 89 d.C. (abbraccio 117 d.C.)     | Palazzo a Santarcangelo                     | Freddo, aristocratico, preciso  |
+|                              |                                                             |           |                                  |                                             |                                 |
 | **Custode Elisio decaduto**  | *Agnes Servilia* / Agnese                                   | ex-Ghoul  | 1881                             | Palazzo del Bargello (Pennabilli)           | Nostalgica, permalosa, fedele   |
 | **Maniscalco arcano**        | *Gregor Albinus* / Gregorio Albini                          | Tremere   | 1612                             | Laboratorio a Verucchio                     | Devoto, superstizioso           |
 | **Arpia (Rimini)**           | *Helena Floriana* / Elena Floriani                          | Toreador  | 1774                             | Villa su Covignano                          | Vanitosa, raffinata             |
