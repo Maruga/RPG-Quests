@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guide/Discipline.md",
+                "file": "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Discipline"
+              "title": "Scena 1.1 - Il risveglio"
             }
           }
         ],
@@ -267,8 +267,8 @@
   },
   "active": "4d68ea8aa37e5937",
   "lastOpenFiles": [
-    "Guide/Clan.md",
     "Guide/Discipline.md",
+    "Guide/Clan.md",
     "Guide/Tiro dei Dadi.md",
     "Guide/Tipologie di Debiti (Boons).md",
     "Guide/Note di etichetta.md",
