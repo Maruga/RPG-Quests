@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Cronaca il risveglio.md",
+                "file": "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cronaca il risveglio"
+              "title": "Paolo Venturi - Mama Polari"
             }
           },
           {
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inizio/Png/Anarchici Pennabilli.md",
+                "file": "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -172,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Anarchici Pennabilli"
+              "title": "Riferimenti a Paolo Venturi - Mama Polari"
             }
           },
           {
@@ -220,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,8 +239,19 @@
   },
   "active": "4d68ea8aa37e5937",
   "lastOpenFiles": [
-    "Guide/Guida Giocatori.md",
+    "Inizio/Personaggi/Levi Maccari - Macca.md",
+    "Inizio/Personaggi/Ezechiele Coyotl.md",
+    "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
+    "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
+    "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
+    "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
+    "Inizio/Personaggi/NPC - Alfio Rossellini (Alfie).md",
+    "Inizio/Png/Anarchici Pennabilli.md",
+    "Inizio/Png/Bambina Segrete Tzime.md",
+    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
+    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Cronaca il risveglio.md",
+    "Guide/Guida Giocatori.md",
     "Guide/Meccaniche.md",
     "Guide/Discipline.md",
     "Guide/Tiro dei Dadi.md",
@@ -249,21 +261,10 @@
     "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Guide/Le sei tradizione della Camarilla.md",
     "Guide/La schiatta de’ Montefeltro.md",
-    "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Personaggi/Base.md",
-    "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Inizio/Personaggi/NPC - Yuri Go (Go Yu-ri).md",
     "Inizio/Personaggi/NPC - Tilottama (Tilo).md",
     "Inizio/Personaggi/NPC - Rita Shafiqah (Rusty).md",
-    "Inizio/Personaggi/NPC - Mascia Blumenfeld.md",
-    "Inizio/Personaggi/NPC - Enrico Chiti (Big Keith).md",
-    "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
-    "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
-    "Inizio/Personaggi/NPC - Alfio Rossellini (Alfie).md",
-    "Inizio/Personaggi/Mutaz Bechara.md",
-    "Inizio/Personaggi/Levi Maccari - Macca.md",
-    "Inizio/Personaggi/Ezechiele Coyotl.md",
-    "Inizio/Materiale/Sentenza Camarilla Romana.md",
     "Inizio/Immagini/13regole.png",
     "Inizio/Effetti/Battito.mp3",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",

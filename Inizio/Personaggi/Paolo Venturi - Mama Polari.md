@@ -4,7 +4,6 @@
 Le luci spente non sono mai davvero buie. Dal camerino di **Riccione** filtra il violetto del corridoio, le lampadine a globo fanno un ronzio sottile e il tuo specchio è un lago dove galleggiano **paillettes, colla per ciglia, rossetti**. Metti in fila gli attrezzi come una minuscola orchestra: primer, fondotinta, cipria; poi il ventaglio, la tua bacchetta magica. Il telefono vibra. Messaggi vocali:
 
 > “Mama, ho il panico, non ricordo il bridge…”
->  
 > “Mama, l’impresario mi ha detto che senza contratto firmato stasera non salgo… è normale?”
 
 Respiri, conti fino a sette, poi premi **registra**: “È normale che tu abbia paura. Non è normale che ti mettano un cappio in gola. Sali in prova con me, il bridge lo troviamo; il contratto si firma domani, **a mente fredda**.”
