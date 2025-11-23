@@ -1,8 +1,8 @@
 
-![[Pasted image 20251123044859.png]]
+![[TabelloneTempo.png]]
 
 
-![[Pasted image 20251123044943.png]]
+![[TempoRealeGiocoEventi.png]]
 
 
 
