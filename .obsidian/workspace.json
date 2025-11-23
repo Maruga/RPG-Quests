@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6ed6298702928b2a",
+        "id": "aa9cb309dbfe2fbe",
         "type": "tabs",
         "children": [
           {
-            "id": "4d68ea8aa37e5937",
+            "id": "b7be2395ace4cb64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
+                "file": "Inizio/Orologi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 1.1 - Il risveglio"
-            }
-          },
-          {
-            "id": "5445574782b565fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide/Guida Giocatori.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Guida Giocatori"
+              "title": "Orologi"
             }
           }
         ]
@@ -237,8 +223,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d68ea8aa37e5937",
+  "active": "b7be2395ace4cb64",
   "lastOpenFiles": [
+    "Pasted image 20251123044943.png",
+    "Pasted image 20251123044859.png",
+    "Guide/Guida Giocatori.md",
+    "Inizio/Materiale/OrologioGioco.png",
+    "Inizio/Orologi.md",
+    "Pasted image 20251123044407.png",
+    "Pasted image 20251123044321.png",
+    "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Inizio/Cronaca il risveglio.md",
     "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Inizio/Personaggi/Levi Maccari - Macca.md",
@@ -251,20 +245,16 @@
     "Inizio/Png/Bambina Segrete Tzime.md",
     "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
-    "Guide/Guida Giocatori.md",
     "Guide/Meccaniche.md",
     "Guide/Discipline.md",
     "Guide/Tiro dei Dadi.md",
     "Guide/Note di etichetta.md",
     "Guide/Tipologie di Debiti (Boons).md",
     "Guide/Clan.md",
-    "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Guide/Le sei tradizione della Camarilla.md",
     "Guide/La schiatta de’ Montefeltro.md",
     "Inizio/Personaggi/Base.md",
     "Inizio/Personaggi/NPC - Yuri Go (Go Yu-ri).md",
-    "Inizio/Personaggi/NPC - Tilottama (Tilo).md",
-    "Inizio/Personaggi/NPC - Rita Shafiqah (Rusty).md",
     "Inizio/Immagini/13regole.png",
     "Inizio/Effetti/Battito.mp3",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",
@@ -272,10 +262,6 @@
     "Inizio/Immagini/QuadroCasaPennabilli02.jpg",
     "Inizio/Immagini/QuadroCasaPennabilli03.jpg",
     "Inizio/Immagini/ScantinatoCasolePennabilli.png",
-    "Inizio/Immagini/SentenzaUltimaMorte.png",
-    "Inizio/Immagini/SimboloRimuoverePietraPozzo.png",
-    "Inizio/Immagini/StudioArpiaBeatrice.png",
-    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
     "Musica/Sala Delle Armi San Leo.mp3",
     "Musica/Sinfonia.mp3",
     "DnD",

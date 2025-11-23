@@ -1,4 +1,11 @@
 
+![[Pasted image 20251123044859.png]]
+
+
+![[Pasted image 20251123044943.png]]
+
+
+
 # **Azioni che fanno avanzare l’Orologio**
 
 ### **Comportamenti in pubblico**
@@ -73,3 +80,9 @@ Ordini interni: “Verifica chi sono”.
 
 **16+ → CACCIA**  
 Vampiri e ghoul li cercano attivamente per eliminarli.
+
+![[OrologioGioco.png]]
+
+
+
+
