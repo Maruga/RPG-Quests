@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
+                "file": "Inizio/Cronaca il risveglio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Paolo Venturi - Mama Polari"
+              "title": "Cronaca il risveglio"
             }
           }
         ],
@@ -240,9 +240,14 @@
   },
   "active": "bdc758f17c9b28a3",
   "lastOpenFiles": [
+    "CF09CA00",
+    "1467CA00",
+    "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
+    "Guide/Discipline Riviste.md",
+    "Guide/La schiatta de’ Montefeltro.md",
+    "7776BA00",
     "6DA24800",
     "5C514800",
-    "Guide/Discipline Riviste.md",
     "Guide/Clan.md",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "~$Strumenti.xlsx",
@@ -255,7 +260,6 @@
     "Pasted image 20251123044321.png",
     "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Inizio/Cronaca il risveglio.md",
-    "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Inizio/Personaggi/Levi Maccari - Macca.md",
     "Inizio/Personaggi/Ezechiele Coyotl.md",
     "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
@@ -270,7 +274,6 @@
     "Guide/Note di etichetta.md",
     "Guide/Tipologie di Debiti (Boons).md",
     "Guide/Le sei tradizione della Camarilla.md",
-    "Guide/La schiatta de’ Montefeltro.md",
     "Inizio/Personaggi/Base.md",
     "Inizio/Personaggi/NPC - Yuri Go (Go Yu-ri).md",
     "Inizio/Immagini/13regole.png",
@@ -282,9 +285,6 @@
     "Musica/Sala Delle Armi San Leo.mp3",
     "Musica/Sinfonia.mp3",
     "DnD",
-    "Strumenti/timer.html",
-    "Strumenti/timer 1.html",
-    "Strumenti",
-    "Inizio/Personaggi/Immagini"
+    "Strumenti/timer.html"
   ]
 }
