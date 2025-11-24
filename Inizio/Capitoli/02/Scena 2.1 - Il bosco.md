@@ -30,27 +30,25 @@ I PG possono:
 > [!important]
 > se un PG può fare danni aggraviti da fare notare e gli artigli spuntano automaticamente, i lupini quando vedono gli artigli hanno un attimo di sussulto.
 
-Il casolare si chiude alle vostre spalle, inghiottito dal buio. Davanti, il bosco vi aspetta: tronchi scuri, rami contorti, sentieri che svaniscono dopo pochi passi.
+Lasciate il casolare e vi avvicinate al bosco. Dovrebbe essere buio pesto… e invece vedete tutto con sorprendente chiarezza: gli alberi, il terreno, persino i piccoli movimenti tra le foglie.  
+Anche i suoni e gli odori sono più forti, più nitidi del normale.
 
-Per altri sarebbe un muro. Per voi no.
+È strano, quasi inquietante, ma allo stesso tempo vi fa sentire più sicuri.  
+Non sapete ancora cosa vi sta succedendo… solo che la notte non vi sembra più un ostacolo.
 
-L’oscurità vi scivola attorno senza nascondere nulla: distinguete il luccichio umido del muschio, il respiro lontano di animali piccoli, il leggero cedimento della terra sotto qualcosa che si allontana da voi in fretta.
-
-Vi muovete senza rumore, certi dei vostri passi, certi dei vostri sensi.  
-La notte è densa, minacciosa… ma vi apre la strada.  
-Come se sapesse che non siete qui per essere spaventati.
+**Chiedere ai PG se vogliono proseguire o fare qualche azione.
 
 ### Descrizione vista da un Garou
 
 ![[night-forest-soundscape-158701.mp3]]
-Il bosco trattiene il fiato.  
-Nella mente che vi osserva, avanzate in fila come **ombre deformi**, carne tirata e odore di terra chiusa. “Scarti del sepolcro”, vi chiama quel pensiero, con un disprezzo antico.
+Poi il faggio davanti a voi mostra spirali di pece e piume. Dettagli minuscoli… ma vi gelano lo stomaco.  
+Più avanti, tre sassi allineati nel muschio. Troppo perfetti per essere naturali.
 
-Vedete il faggio davanti a voi… ma nella testa che vi fissa dall’oscurità, le **spirali di pece e piume** brillano come un avviso ignorato.  
-E voi passate sotto, come se niente.
+L’aria cambia. Diventa più pesante, più tesa.  
+E all’improvviso vi rendete conto che questi segni non sono lì per caso.  
+Qualcuno ha marcato questo territorio.  
+E voi ci siete dentro.
 
-Più avanti superate **tre pietre allineate** nel muschio. A chi vi osserva da dietro i tronchi sembrano **denti pronti a chiudersi**.  
-L’aria cambia: resina, pelo, vita. E il pensiero che vi segue diventa più affilato.
 ![[wolf-howling-type-04-293317.mp3]]
 Dal buio, non una voce che sentite… ma una **parola pensata contro di voi**:  
 **«Puzzate di Wyrm.»**
@@ -79,7 +77,7 @@ I giocatori appena incontrano i Garou fanno il check di Rotshreck
 
 Due versioni da leggere ai PG se vanno in Terrore Rosso.
 
-#### **Versione 1 - La Bestia Scatenata** - Il Primo Rötschreck**
+#### **La Bestia Scatenata** - Il Primo Rötschreck**
 _"L'istante in cui i tuoi occhi incrociano quelli del lupo, qualcosa di primordiale ESPLODE dentro di te. Non è terrore - è l'istinto di sopravvivenza di un predatore che incontra il suo anatema. Il tuo corpo non è più tuo: la Bestia che dimora nel tuo sangue morto prende il comando con violenza brutale. Le tue mani si contraggono in artigli, la vista diventa un tunnel rosso sangue. Un ruggito disumano squarcia la tua gola mentre ogni fibra del tuo essere grida una sola verità: SEI PREDA. La creatura dentro di te non conosce amici, non conosce pietà - solo la necessità assoluta di fuggire o distruggere chiunque si frapponga."_
 
 ### Reazione PG 

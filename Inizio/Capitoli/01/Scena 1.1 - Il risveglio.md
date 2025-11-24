@@ -36,9 +36,9 @@ E quello che sta prendendo il vostro posto…
 > [!important] Title
 > I PG non sanno in che luogo si trovano, devono scoprirlo avventurandosi fuori dalla casa, decidere se si vuole attuare il confronto con i lupini oppure farli andare verso Pennabilli.
 > Il **13/10/2025 a Rimini** il **sole sorge alle ore 07:21** e **tramonta alle 18:29** circa.
-> 1 Ora reale = 3 ore in game.
+> 1 Ora reale = 3 ore in game, calcolato su 4 ore di gioco..
 
-#### Scena risveglio
+### Scena risveglio
 Un freddo innaturale vi scuote dal torpore.
 
 Riaprendo gli occhi, scoprite di trovarvi in una **camera ampia e silenziosa**, le cui **pareti di pietra nuda** stillano umidità come se la stanza stessa respirasse. La luce fioca di una lampada morente getta **ombre tremule**, che si allungano come artigli sulle pareti.
