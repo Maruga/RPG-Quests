@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/_Gangrel - Matteo Bechara.md",
+                "file": "Inizio/Personaggi/_Nosferatu-Rita Shafiqah (Rusty).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Gangrel - Matteo Bechara"
+              "title": "_Nosferatu-Rita Shafiqah (Rusty)"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
+                "file": "Guide/Discipline Riviste.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 5.1 - Arrivo Villa Siri"
+              "title": "Discipline Riviste"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -237,12 +238,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b7be2395ace4cb64",
+  "active": "bdc758f17c9b28a3",
   "lastOpenFiles": [
     "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
+    "Inizio/Personaggi/_Nosferatu-Rita Shafiqah (Rusty).md",
     "Inizio/Personaggi/_Gangrel - Matteo Bechara.md",
+    "A26B9110",
+    "0F589110",
     "Guide/Discipline Riviste.md",
-    "Inizio/Personaggi/_Brujah-Paolo Venturi - Mama Polari.md",
+    "Inizio/Personaggi/_Brujah-Paolo Venturi-Mama Polari.md",
     "Guide/Clan.md",
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
@@ -263,8 +267,6 @@
     "CF09CA00",
     "1467CA00",
     "Guide/La schiatta de’ Montefeltro.md",
-    "7776BA00",
-    "6DA24800",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Immagini/TempoRealeGiocoEventi.png",
     "Inizio/Immagini/TabelloneTempo.png",
@@ -281,7 +283,6 @@
     "Inizio/Png/Anarchici Pennabilli.md",
     "Inizio/Png/Bambina Segrete Tzime.md",
     "Guide/Meccaniche.md",
-    "Guide/Tiro dei Dadi.md",
     "Inizio/Immagini/13regole.png",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",
     "Inizio/Immagini/PrincipeSanLeo.png"
