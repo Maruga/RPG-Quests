@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Guide/Clan.md",
+                "file": "Inizio/Personaggi/_Gangrel - Mutaz Bechara.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clan"
+              "title": "_Gangrel - Mutaz Bechara"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Scena 5.1 - Arrivo Villa Siri"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -238,8 +237,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bdc758f17c9b28a3",
+  "active": "b7be2395ace4cb64",
   "lastOpenFiles": [
+    "Inizio/Personaggi/_Brujah-Paolo Venturi - Mama Polari.md",
+    "Inizio/Personaggi/_Gangrel - Mutaz Bechara.md",
+    "Guide/Clan.md",
+    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Immagini/TabvlaSangvinis.png",
@@ -258,12 +261,10 @@
     "097DEA00",
     "CF09CA00",
     "1467CA00",
-    "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
     "Guide/Discipline Riviste.md",
     "Guide/La schiatta de’ Montefeltro.md",
     "7776BA00",
     "6DA24800",
-    "Guide/Clan.md",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Immagini/TempoRealeGiocoEventi.png",
     "Inizio/Immagini/TabelloneTempo.png",
@@ -281,8 +282,6 @@
     "Inizio/Png/Bambina Segrete Tzime.md",
     "Guide/Meccaniche.md",
     "Guide/Tiro dei Dadi.md",
-    "Guide/Note di etichetta.md",
-    "Guide/Tipologie di Debiti (Boons).md",
     "Inizio/Immagini/13regole.png",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",
     "Inizio/Immagini/PrincipeSanLeo.png"
