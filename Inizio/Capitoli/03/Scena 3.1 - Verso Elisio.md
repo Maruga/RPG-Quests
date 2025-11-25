@@ -1,15 +1,15 @@
 
 ### Verso Pennabilli
 I PG si avvicinano a Pennabilli, devono decidere come entrare e come attraversare il paese per andare al palazzo.
+![[Pennabilli.png]]
 
 ### Incontro con anarchici
 
-> Pennabilli dorme. Solo il vento attraversa i vicoli, e il rumore dei vostri passi risuona come un’eco lontana.  
-> Poi, da un cortile laterale, arrivano voci soffocate, un accendino, una risata rauca.  
-> Un gruppo di ragazzi — o almeno così sembrano — si è radunato ai bordi della strada. Vestiario un pò anni 90, giacche di pelle, berretti e musica punk nelle cuffie.  
-> Quando vi notano, la risata si spegne. Uno di loro — un tipo alto con una giacca rossa e i canini leggermente troppo pronunciati — vi fissa con un sorriso storto.  
-> «Be’, guarda un po’… nuovi volti a quest’ora. Non siete di qui, vero?»  
-
+Pennabilli dorme. Solo il vento attraversa i vicoli, e il rumore dei vostri passi risuona come un’eco lontana.  
+Poi, da un cortile laterale, arrivano voci soffocate, un accendino, una risata rauca.  
+Un gruppo di ragazzi — o almeno così sembrano — si è radunato ai bordi della strada. Vestiario un pò anni 90, giacche di pelle, berretti e musica punk nelle cuffie.  
+Quando vi notano, la risata si spegne. Uno di loro — un tipo alto con una giacca rossa e i canini leggermente troppo pronunciati — vi fissa con un sorriso storto.  
+«Be’, guarda un po’… nuovi volti a quest’ora. Non siete di qui, vero?»  
 
 ## Descrizione degli Anarchici
 
@@ -20,8 +20,7 @@ I PG si avvicinano a Pennabilli, devono decidere come entrare e come attraversar
 | **Leo**           | Giacca militare, parla poco                          | Silenzioso e nervoso        | Ghoul al servizio di Mauro.                                      |
 | **Sacco**         | Cappuccio, volto in ombra                            | Si tiene in disparte        | È un vampiro più anziano, osserva i PG. Brujah.                  |
 
-Sono **Anarchici locali**: non ufficialmente riconosciuti, ma si muovono liberamente in Valmarecchia. Vedono i PG come potenziali reclute… o come minacce.
-
+Sono **Anarchici locali**: non ufficialmente riconosciuti, ma si muovono liberamente in Valmarecchia. Vedono i PG come potenziali reclute… li vogliono testare.
 
 ## Scena di contatto
 
