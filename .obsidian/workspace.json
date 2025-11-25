@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/_Nosferatu-Rita Shafiqah (Rusty).md",
+                "file": "Inizio/Personaggi/_Nosferatu-Sofia Rinaldi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_Nosferatu-Rita Shafiqah (Rusty)"
+              "title": "_Nosferatu-Sofia Rinaldi"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Discipline Riviste"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -238,15 +237,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bdc758f17c9b28a3",
+  "active": "b7be2395ace4cb64",
   "lastOpenFiles": [
+    "2AAAE110",
+    "C30AE110",
+    "7BEBD110",
+    "Inizio/Personaggi/_Brujah-Paolo Venturi.md",
+    "Inizio/Personaggi/_Gangrel-Matteo Bechara.md",
+    "Inizio/Personaggi/_Nosferatu-Sofia Rinaldi.md",
+    "Guide/Discipline Riviste.md",
+    "0DBDB110",
     "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
-    "Inizio/Personaggi/_Nosferatu-Rita Shafiqah (Rusty).md",
-    "Inizio/Personaggi/_Gangrel - Matteo Bechara.md",
     "A26B9110",
     "0F589110",
-    "Guide/Discipline Riviste.md",
-    "Inizio/Personaggi/_Brujah-Paolo Venturi-Mama Polari.md",
     "Guide/Clan.md",
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
@@ -263,9 +266,6 @@
     "ED81FA00",
     "68A0FA00",
     "0D9FEA00",
-    "097DEA00",
-    "CF09CA00",
-    "1467CA00",
     "Guide/La schiatta de’ Montefeltro.md",
     "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Immagini/TempoRealeGiocoEventi.png",
@@ -282,7 +282,6 @@
     "Inizio/Personaggi/NPC - Alfio Rossellini (Alfie).md",
     "Inizio/Png/Anarchici Pennabilli.md",
     "Inizio/Png/Bambina Segrete Tzime.md",
-    "Guide/Meccaniche.md",
     "Inizio/Immagini/13regole.png",
     "Inizio/Immagini/QuadroCasaPennabilli01.png",
     "Inizio/Immagini/PrincipeSanLeo.png"
