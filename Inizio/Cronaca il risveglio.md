@@ -9,6 +9,20 @@
 
 ### "Dark Souls-like"
 
+Le città dormono, ma voi no. Non più.
+Vi risvegliate in un posto che sa di pietra umida e sangue rappreso. I ricordi sono vetri rotti: tagliano quando provate a ricomporli. Voci, facce, nomi che scivolano via come fumo. Qualcuno vi ha trascinati qui. Qualcuno vi ha fatto qualcosa di irreversibile.
+Il vostro cuore batte... ma non dovrebbe. La fame che sentite non ha niente di umano. E quando guardate le vostre mani nel buio, il buio vi restituisce lo sguardo.
+Fuori, le strade di Rimini pulsano di vite che non vi appartengono più. La notte è una giungla con regole che non conoscete, predatori che non vedete, e un orologio che corre verso un'alba che potrebbe essere l'ultima cosa che vedrete.
+Nessuno vi aspetta. Nessuno vi vuole. E se non scoprite chi siete diventati e perché, la città vi inghiottirà come ha fatto con tutti quelli che non hanno imparato abbastanza in fretta.
+Benvenuti nella notte. Non c'è manuale d'istruzioni.
+
+Durata: 4 ore — Una notte, dall'oscurità all'alba
+Ambientazione: Rimini, 2025 - Gotico-Punk
+Tema: Sopravvivenza urbana, identità perduta, caccia al senso
+Sistema: Storyteller System (V20)
+Giocatori: 3/5
+
+
 ### Importante informare i giocatori o subito oppure al primo ritorno in scena quanto segue:
 "Le prime scene funzionano come un tutorial videogioco: se morite, ripartite dalla scena con quello che avete imparato. Non perdete nulla, è parte del gioco. L'obiettivo è scoprire cosa funziona."
 
