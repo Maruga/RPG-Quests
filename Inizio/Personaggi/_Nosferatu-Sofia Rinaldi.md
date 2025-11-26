@@ -1,4 +1,4 @@
-# Rita “Rusty” Shafiqah — “clack clack”
+# Sofia Rinaldi — “clack clack”
 
 Il corridoio del **Comune di Rimini** è lucidato di fresco e tu lo attraversi al tuo ritmo: **clack clack**, le stampelle che tagliano l’eco come due matite su carta. Non chiedi scusa. Non ti scusi da anni. “Buongiorno,” dici alla portineria senza fermarti. Il badge lampeggia verde; è il colore che preferisci addosso alle porte.
 
