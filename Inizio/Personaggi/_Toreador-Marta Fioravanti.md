@@ -1,4 +1,4 @@
-# Mascia Blumenfeld — “il silenzio che resta”
+# Marta Fioravanti — “il silenzio che resta”
 
 Mattina, **Biblioteca Gambalunga**. Il banco del prestito è una piccola dogana: chi entra porta con sé zaini, voci, briciole di vita. Tu scegli un tavolo vicino alla finestra grande; la luce ci arriva con calma, come un animale anziano che conosce la casa. Tiri fuori il taccuino amaranto, la penna che non tradisce, una bustina di gommini per le dita. Scrivi tre parole di apertura e le cancelli subito. Oggi devi preparare una **lettura serale** al Teatro Galli. Ti hanno pregata, l’hai rimandata, alla fine hai detto sì con la stessa faccia con cui si dice “va bene, metto l’acqua per la pasta”.
 
