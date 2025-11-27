@@ -1,6 +1,6 @@
 ### “fischio corto, campo lungo” - Enrico Vitali
 
-![[ChatGPT Image 11 nov 2025, 20_32_45.png]]
+![[EnricoVitali.png]]
 Il rumore del **Marecchia** arriva fino al campetto dell’oratorio come una radio lontana. Tu arrivi sempre prima di tutti: chiavi che tintinnano, rete che gratta l’asfalto, gesso per rifare le righe storte. Fai tre passi lenti lungo la linea laterale, poi due veloci: la gamba buona prende il tempo a quella cattiva. Il cielo ha lo stesso colore dei tuoi pensieri: **nuvola che non promette, ma non minaccia**.
 
 I ragazzi ti chiamano **Cane Matto**. Ti piace? No. Te lo sei scelto? Sì. Meglio che se lo scelgano loro, il soprannome: almeno non glielo regala nessun furbo. Quando arrivano, tu li conti come si contano i bicchieri puliti al bancone: uno, due, tre… chi manca? **Zaccaria**. Sempre lui. Gli altri fanno cerchio. “Oggi si corre,” dici. Si lamentano. “Oggi si corre,” ripeti. E allora corrono.

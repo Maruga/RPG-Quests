@@ -1,5 +1,36 @@
-# Enrico “Big” Chiti (alias “Big Keith”) — “respira e basta”
+==“respira e basta”==
 
+#### Ricordi al Risveglio Step 1
+...candele in barattoli di vetro... il mare che fa il metronomo... "Oggi non si vola. Si atterra."
+Quattro conti in su, sei in giù. Se viene l'ansia, le diamo un compito.
+
+...una ragazza si irrigidisce... il respiro le scappa via come una moneta rotolata sotto il frigo...
+"Guardami le spalle. Sono larghe."
+
+...vinili veri... schiene che scendono... qualcuno chiude finalmente il telefono...
+Da quale parte dell'oceano vieni? La voce di una madre, lontanissima.
+
+#### Un Viaggio senza meta Step 2
+**La voce della madre arriva prima del tuo nome.
+"Rico, mangi? Dormi? Ti fai rispettare?"
+
+Enrico. Enrico Chiti. Bus per quelli della spiaggia. Venivi dall'altra parte dell'oceano, ma Rimini ti aveva insegnato che la gente viene qui per ricominciare senza fare troppo rumore. I cerchi al tramonto, le candele nei barattoli, il respiro — "Quattro conti in su, sei in giù." Se viene l'ansia, le diamo un compito.
+
+Non eri un guru. Eri un facilitatore. "Se uno ti chiede di chiudere gli occhi, tu glieli fai aprire."
+
+L'ultima sera:
+Una collina. Qualcuno aveva insistito — "esperienza totale, gente facoltosa" — e tu avevi detto no. Ma poi c'era stato un altro messaggio. Un nome che conoscevi. "Vieni solo a vedere."
+
+**_Perché hai cambiato idea?_**
+
+
+---
+Note: 
+
+![[EnricoBusChiti.png]]
+
+
+### Profilo Completo
 Il tramonto **inghiotte la spiaggia libera** e tu sistemi due candele dentro barattoli di vetro. Niente scenografie, niente tappeti etnici: asciugamani stesi, cerchio largo, il mare che fa il metronomo. “Sedetevi comodi,” dici, “oggi non si vola da nessuna parte. **Si atterra**.” C’è chi sorride, chi ha gli occhi lucidi, chi finge indifferenza. Tu appoggi lo speaker a volume basso: piano, quasi niente.
 
 Sei nato lontano, dall’altra parte dell’oceano, ma **Rimini** ti ha insegnato che la gente viene qui per **ricominciare senza fare troppo rumore**. Tu gli dai strumenti semplici: respiro, postura, **parole piccole**. Tiri fuori un quaderno macchiato di sciroppo d’agave, segni presenze come all’asilo: non per controllare, per ricordarti i nomi. Ogni nome è un nodo: se sai da dove parte, sai anche come **scioglierlo**.

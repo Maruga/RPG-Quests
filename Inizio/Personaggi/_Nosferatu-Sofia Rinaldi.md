@@ -1,5 +1,37 @@
-# Sofia Rinaldi — “clack clack”
+==“clack clack”==
 
+#### Ricordi al Risveglio Step 1
+...clack clack... le stampelle che tagliano l'eco come matite su carta...
+"Il passaggio è largo 88. Ci vogliono 90. Sono un 'no' grande quanto una settimana di mare."
+
+...una cartellina spinta indietro... "La lingua segue i fatti."
+Una ragazza in sedia: "Oggi sono andata in spiaggia da sola."
+
+...le scale che non finiscono... uno-due, uno-due... ogni gradino una bestemmia educata...
+Non fai miracoli. Fai posto.
+
+#### Un Viaggio senza meta Step 2
+**Prima il suono. Poi il nome.
+
+Clack... clack...
+
+Rita. Rita Shafiqah. Rusty per chi ti conosceva. Il corridoio del Comune, il badge verde, le rampe che misuravano 88 centimetri quando dovevano essere 90. "Due centimetri sono un 'no' grande quanto una settimana di mare." Lo dicevi sempre.
+
+Non facevi miracoli. Facevi posto. E quando qualcuno ti portava una cartellina con soldi e "collaborazione al linguaggio", tu la restituivi. "La lingua segue i fatti."
+
+**L'ultima sera:
+Non eri al lavoro. Eri... a una cena? Un evento? Qualcuno aveva detto "è importante che tu venga". C'era una scala — lunga, senza corrimano — e tu l'avevi salita lo stesso, contando i gradini come si contano i nemici.
+
+**_Chi ti aveva invitato?_**
+
+
+---
+Note: 
+
+![[SofiaRinaldi.png]]
+
+
+### Profilo Completo
 Il corridoio del **Comune di Rimini** è lucidato di fresco e tu lo attraversi al tuo ritmo: **clack clack**, le stampelle che tagliano l’eco come due matite su carta. Non chiedi scusa. Non ti scusi da anni. “Buongiorno,” dici alla portineria senza fermarti. Il badge lampeggia verde; è il colore che preferisci addosso alle porte.
 
 Alle nove hai il primo tavolo con i tecnici: **rampe**, **segnaletica**, **percorsi tattili**. Hanno stampato planimetrie tutte uguali, con rettangoli bianchi dove nella realtà ci sono scalini, tombini, sdraio. Li ascolti, poi **sposti il foglio**, tiri fuori il tuo quaderno: foto scattate all’alba, misure a penna, nomi dei bagni e dei **chioschi** in colpa e in regola. “Qui,” dici, “il passaggio nomade è largo 88. Ci vogliono 90. Lo so, sembrano due centimetri. Ma sono un ‘no’ grande quanto una settimana di mare.” Non alzi la voce. La **voce la misuri**.

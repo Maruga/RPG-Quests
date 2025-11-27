@@ -1,5 +1,41 @@
-# Marta Fioravanti — “il silenzio che resta”
+==“il silenzio che resta”==
 
+#### Ricordi al Risveglio Step 1
+ ...la Biblioteca Gambalunga... luce calma, come un animale anziano che conosce la casa...
+"Non dirigo. Apro la porta."
+
+...il Ponte di Tiberio... i gabbiani fanno le virgole sull'acqua...
+Un foglio con una frase: "Dì quello che puoi dire."
+
+...il Teatro Galli... specchi che non perdonano... una giovane poetessa che trema...
+"Tutti rubiamo. La differenza è cosa restituiamo."
+
+Un plico con la parola "Genealogia"... mai aperto. Perché?
+
+#### Un Viaggio senza meta Step 2
+**Le parole tornano prima del volto.
+
+"Dì quello che puoi dire."
+
+Marta. Marta Fioravanti. Ma ti chiamavano Mascia — Mascia Blumenfeld, come tua madre. Biblioteca Gambalunga, il tavolo vicino alla finestra grande, la penna che non tradisce. Il Teatro Galli dove la sala diventava stanza e le persone venivano ammesse così come erano.
+
+Non dirigevi. Aprivi la porta. "La direzione è di chi entra, non di chi apre."
+
+Sul comodino c'era ancora il plico con scritto "Genealogia" — mai aperto. Alcuni dolori sono come il caffè di sera.
+
+**L'ultima sera:
+Una telefonata. Una voce che non sentivi da anni — di chi? — che diceva "ho trovato qualcosa che ti riguarda." Un indirizzo. Un treno della sera.
+
+**_Cosa avevano trovato?_**
+
+
+---
+Note: 
+
+![[MartaFioravanti.png]]
+
+
+### Profilo Completo
 Mattina, **Biblioteca Gambalunga**. Il banco del prestito è una piccola dogana: chi entra porta con sé zaini, voci, briciole di vita. Tu scegli un tavolo vicino alla finestra grande; la luce ci arriva con calma, come un animale anziano che conosce la casa. Tiri fuori il taccuino amaranto, la penna che non tradisce, una bustina di gommini per le dita. Scrivi tre parole di apertura e le cancelli subito. Oggi devi preparare una **lettura serale** al Teatro Galli. Ti hanno pregata, l’hai rimandata, alla fine hai detto sì con la stessa faccia con cui si dice “va bene, metto l’acqua per la pasta”.
 
 Suona il telefono. Una voce gentile e impicciona: “Signora Blumenfeld, ci farebbe piacere affidarle la direzione dello spazio **al Borgo San Giuliano**. È naturale che sia lei.” Guardi la tazza di tè ormai freddo. Sorridi in un modo che non si sente al telefono. “Non dirigo. **Apro la porta**. Ci sono ragazzi che lo fanno meglio di me.” Senti dall’altra parte un silenzio deluso. Lo reggi senza spiegarlo. Non sei una bandiera da sventolare, sei **un leggio**: qualcuno ci appoggia le parole, poi lo riprende e va.

@@ -1,5 +1,39 @@
-# Irenre Gori — "il prezzo giusto"
+=="il prezzo giusto"==
 
+#### Ricordi al Risveglio Step 1
+...una giacca gessata grigia... gemelli d'argento rubati a un conte due secoli dopo la sua morte...
+"Le illusioni ben fatte sono più care della verità."
+
+...una lettera piegata, mai spedita... "Sto bene. Penso a te. Non cercarmi."
+Un bacio in mezzo alla strada... Incheon... due occhi che ti hanno vista come nessuno mai...
+
+...un Modigliani falso che hai dipinto tu... nessuno l'ha mai riconosciuto...
+"Non traffico in carne." L'hai detto tu? A chi?
+
+Settantaquattro lettere. Nessuna spedita.
+
+#### Un Viaggio senza meta Step 2
+**Prima l'odore. Vernice fresca e bugie vecchie.
+
+Irene. Irene Gori. Mercante d'arte — o almeno così dicevi. Sapevi riconoscere un falso a tre metri, e sapevi anche venderlo a chi voleva essere ingannato. "Il mercato non premia la verità. Premia la certezza."
+
+C'erano lettere nel cassetto. Settantaquattro, mai spedite. Un bacio a Incheon che non avevi dimenticato. Un paio di gemelli d'argento che non erano tuoi — da dove venivano?
+
+Avevi sempre il controllo. Sempre.
+
+**L'ultima sera:
+Un cliente nuovo. Troppo insistente. Voleva vedere "la collezione privata" — quella che non esiste. Avevi detto no. Poi aveva nominato un nome che non doveva conoscere.
+
+**_Quale nome?_**
+
+
+---
+Note: 
+
+![[IreneGori.png]]
+
+
+### Profilo Completo
 Sera, **Galleria Malatestiana** a Santarcangelo. Le luci soffuse accarezzano le tele mentre tu sistemi il colletto della giacca a tre pezzi — gessata grigia, cravatta bordeaux, gemelli d'argento che hai rubato a un conte due secoli dopo la sua morte. Lo specchio non ti restituisce nulla, ma sai già come appari: **impeccabile**. È l'unica armatura che conta.
 
 Il telefono vibra. Una voce ansiosa dall'altra parte: "Signora Gori, il Primogenito vuole un Caravaggio per l'Elysium di venerdì." Sorridi senza aprire le labbra. "Un Caravaggio **vero** o un Caravaggio che lo faccia sentire importante?" Silenzio imbarazzato. "Quello che costa meno." "Allora costa **di più**," rispondi. "Le illusioni ben fatte sono più care della verità." Chiudi la chiamata e ti concedi una risata breve, secca, che non raggiunge gli occhi.

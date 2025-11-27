@@ -1,5 +1,32 @@
-### “regole sul tatami”
+==“regole sul tatami”==
 
+#### Ricordi al Risveglio Step 1
+...odore di detergente al limone... il metronomo pulsa piano... serve al respiro, non ai colpi...
+"Guardami. Non devi piacermi. Devi fidarti del tuo passo."
+
+...un ragazzo abbassa lo sguardo... una madre sospira...
+Il tatami racconta la verità con un suono secco. Chi mente lo sente nelle costole.
+
+...un promoter con scarpe lucide... "Borsa facile, due riprese..."
+"La forza è anche dire no." Chi l'ha detto? Una nonna? La tua?
+
+#### Un Viaggio senza meta Step 2
+**Il corpo ricorda prima della mente.**
+Matteo. _Matteo Bechara. Il dojo a Miramare, l'odore di detergente al limone, i tappetini allineati. Insegnavi a cadere — sempre, ogni lezione. _"Cadere senza rompersi."_ E poi le leve, il respiro, la regola che ripetevi: _"Non spingere forte, spingi giusto."_
+
+Avevi un codice. Niente incontri clandestini. Arbitraggio vero. Se qualcuno bara, si ferma tutto. L'uomo con le scarpe lucide continuava a tornare — _"borsa facile, Mutaz"_ — e tu continuavi a dire no.
+
+**L'ultima sera:** Non eri al dojo. Eri... _dove?_ Un parcheggio. O un capannone. Qualcuno ti aveva chiamato per "vedere se era tutto in regola". Doveva essere veloce. Non era veloce.
+
+**_Chi ti ha chiamato?_
+
+---
+Note: 
+
+![[MatteoBechara.png]]
+
+
+### Profilo Completo
 Al mattino presto **Miramare** è una riga chiara tra ferrovia e mare. Apri il dojo quando i bar stanno ancora tirando su le serrande: odore di detergente al limone, tappetini allineati, corde appese come serpenti addormentati. Premi play: un metronomo a volume basso. Il ritmo non serve ai colpi, serve al **respiro**.
 
 Hai promesso a te stesso che **qui** nessuno impara a fare male per sentirsi grande. Qui si impara a **fermarsi** un attimo prima. Il primo a entrare è Samir, quattordici anni e silenzio addosso. Gli sistemi il paradenti, gli fai annusare l’ammoniaca come fosse un rito. “Guardami,” dici piano. “Non devi piacermi. Devi **fidarti** del tuo passo.” Fa sì con la testa, e per oggi basta.

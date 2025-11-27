@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "aa9cb309dbfe2fbe",
+        "id": "6097e5543bfcc8a5",
         "type": "tabs",
         "children": [
           {
-            "id": "b7be2395ace4cb64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inizio/Personaggi/_Toreador-Marta Fioravanti.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_Toreador-Marta Fioravanti"
-            }
-          },
-          {
-            "id": "bdc758f17c9b28a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inizio/Personaggi/_Ventrue-Irenre Gori.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_Ventrue-Irenre Gori"
-            }
-          },
-          {
-            "id": "050879e9c23987c3",
+            "id": "822ef4186a3eedff",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,23 +20,8 @@
               "icon": "lucide-file",
               "title": "_Brujah-Paolo Venturi"
             }
-          },
-          {
-            "id": "550f6df83d02052f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inizio/Personaggi/_Malkavian-Enrico Chiti.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_Malkavian-Enrico Chiti"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -266,15 +223,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "050879e9c23987c3",
+  "active": "822ef4186a3eedff",
   "lastOpenFiles": [
-    "Inizio/Personaggi/Base.md",
-    "Inizio/Personaggi/_Ventrue-Irenre Gori.md",
-    "Inizio/Personaggi/_Toreador-Marta Fioravanti.md",
-    "Inizio/Personaggi/_Nosferatu-Sofia Rinaldi.md",
-    "Inizio/Personaggi/_Malkavian-Enrico Chiti.md",
-    "Inizio/Personaggi/_Gangrel-Matteo Bechara.md",
+    "Inizio/Personaggi/Levi Maccari - Macca.md",
     "Inizio/Personaggi/_Brujah-Paolo Venturi.md",
+    "Inizio/Personaggi/Base.md",
+    "Inizio/Personaggi/_Gangrel-Matteo Bechara.md",
+    "Inizio/Personaggi/_Malkavian-Enrico Chiti.md",
+    "Inizio/Personaggi/_Nosferatu-Sofia Rinaldi.md",
+    "Inizio/Personaggi/_Toreador-Marta Fioravanti.md",
+    "Inizio/Personaggi/_Ventrue-Irene Gori.md",
+    "Inizio/Personaggi/Immagini/SofiaRinaldi.png",
+    "Inizio/Personaggi/Immagini/PaoloVenturi.png",
+    "Inizio/Personaggi/Immagini/MatteoBechara.png",
+    "Inizio/Personaggi/Immagini/MartaFioravanti.png",
+    "Inizio/Personaggi/Immagini/IreneGori.png",
+    "B5E04710",
+    "2ED04710",
+    "Inizio/Personaggi/Immagini/EnricoBusChiti.png",
+    "4FD91710",
+    "Inizio/Personaggi/Immagini/EnricoVitali.png",
+    "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
+    "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_36_39.png",
+    "Inizio/Personaggi/Immagini/ChatGPT Image 11 nov 2025, 20_32_52.png",
     "Guide/Discipline Riviste.md",
     "0A73E610",
     "ACC2E610",
@@ -283,36 +254,21 @@
     "A6AF4610",
     "D8694610",
     "85284610",
-    "1F184610",
-    "E3713610",
-    "EBB42610",
     "Inizio/Cronaca il risveglio.md",
     "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
     "Inizio/Personaggi/NPC - Tilottama (Tilo).md",
     "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md",
     "Inizio/Personaggi/NPC - Angela Dietrich (Angel).md",
     "Inizio/Personaggi/NPC - Alfio Rossellini (Alfie).md",
-    "Inizio/Personaggi/Levi Maccari - Macca.md",
     "Inizio/Personaggi/Ezechiele Coyotl.md",
-    "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
     "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
     "Guide/Clan.md",
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
     "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Immagini/TabvlaSangvinis.png",
     "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
-    "Inizio/Immagini/Pennabilli.png",
     "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
     "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
-    "Strumenti.md",
-    "Guide/La schiatta de’ Montefeltro.md",
-    "Inizio/Immagini/TempoRealeGiocoEventi.png",
-    "Inizio/Immagini/TabelloneTempo.png",
-    "Inizio/Materiale/OrologioGioco.png",
-    "Pasted image 20251123044407.png",
-    "Pasted image 20251123044321.png",
-    "Inizio/Immagini/13regole.png",
-    "Inizio/Immagini/QuadroCasaPennabilli01.png",
-    "Inizio/Immagini/PrincipeSanLeo.png"
+    "Strumenti.md"
   ]
 }
