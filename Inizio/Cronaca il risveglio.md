@@ -93,3 +93,4 @@ Fallita la Masquerade
 Consegnare la scheda per i punti esperienza.
 Ogni PG potrà dare punti ai suoi compagni.
 
+<!-- SALTO PAGINA --> <div style="page-break-before: always;"></div> <!-- SALTO PAGINA -->
