@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inizio/Personaggi/__Relazioni.md",
+                "file": "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "__Relazioni"
+              "title": "Scena 3.2 - Elisio e la custode"
             }
           }
         ],
@@ -240,8 +240,15 @@
   },
   "active": "542948c1a7ec6611",
   "lastOpenFiles": [
-    "Inizio/Personaggi/_Brujah-Paolo Venturi.md",
+    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+    "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
+    "Inizio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
+    "Inizio/Capitoli/05/Scena 5.2 - Il Pozzo.md",
+    "Inizio/Capitoli/05/Scena 5.1 - Arrivo Villa Siri.md",
+    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
     "Inizio/Personaggi/__Relazioni.md",
+    "Inizio/Personaggi/_Brujah-Paolo Venturi.md",
     "Inizio/Immagini/MappaRifugioForesta.png",
     "338B0C10",
     "6BD9FB10",
@@ -275,16 +282,9 @@
     "Guide/Flashback.md",
     "Guide/Discipline Riviste.md",
     "Guide/Clan.md",
-    "Guide/Cariche della Camarilla.md",
     "4E878710",
     "17258710",
     "86407710",
-    "Inizio/Personaggi/Base.md",
-    "B5E04710",
-    "Inizio/Personaggi/Diarmid Cane Matto Dunsirn.md",
-    "Inizio/Cronaca il risveglio.md",
-    "Inizio/Capitoli/01/Scena 1.1 - Il risveglio.md",
-    "Inizio/Personaggi/NPC - Tilottama (Tilo).md",
-    "Inizio/Personaggi/NPC - D.Z. Schillinger (Di-Zi).md"
+    "B5E04710"
   ]
 }

@@ -162,40 +162,35 @@ Non ti ha detto il nome. Ma "mercante d'arte del Borgo" ti è rimasto in testa. 
 
 <!-- SALTO PAGINA --> <div style="page-break-before: always;"></div> <!-- SALTO PAGINA -->
 
-## Riepilogo Narratore — Tensioni e Legami
+### Riepilogo Narratore — Tensioni e Legami
 
-### Legami Forti (positivi)
+| Relazione Forti | Nota                                           |
+| --------------- | ---------------------------------------------- |
+| Paolo ↔ Enrico  | Amicizia vera, si fidano                       |
+| Enrico ↔ Matteo | Rispetto silenzioso, si capiscono              |
+| Sonia ↔ Irene   | Rapporto professionale solido, stima reciproca |
 
-|Relazione|Nota|
-|---|---|
-|Paolo ↔ Enrico|Amicizia vera, si fidano|
-|Enrico ↔ Matteo|Rispetto silenzioso, si capiscono|
-|Sonia ↔ Irene|Rapporto professionale solido, stima reciproca|
+| Relazione Deboli | Nota                                      |
+| ---------------- | ----------------------------------------- |
+| Paolo → Matteo   | Impressione positiva, vorrebbe conoscerlo |
+| Matteo → Paolo   | Impressione positiva, curioso             |
+| Sonia → Enrico   | L'ha visto, neutro-curioso                |
+| Enrico → Sonia   | L'ha vista, incuriosito                   |
+| Sonia → Matteo   | Sa chi è, potenziale collaborazione       |
+| Matteo → Sonia   | Sa chi è, potenziale collaborazione       |
+| Irene → Matteo   | Sa che esiste, neutro                     |
 
-### Legami Deboli (neutri o curiosità)
+#### Tensioni Attive
 
-|Relazione|Nota|
-|---|---|
-|Paolo → Matteo|Impressione positiva, vorrebbe conoscerlo|
-|Matteo → Paolo|Impressione positiva, curioso|
-|Sonia → Enrico|L'ha visto, neutro-curioso|
-|Enrico → Sonia|L'ha vista, incuriosito|
-|Sonia → Matteo|Sa chi è, potenziale collaborazione|
-|Matteo → Sonia|Sa chi è, potenziale collaborazione|
-|Irene → Matteo|Sa che esiste, neutro|
+| Relazione      | Tipo             | Nota                                                                                 |
+| -------------- | ---------------- | ------------------------------------------------------------------------------------ |
+| Enrico → Irene | Diffidenza       | Non si fida, la trova fredda e calcolata                                             |
+| Irene → Enrico | Disprezzo        | Lo considera un perditempo                                                           |
+| Paolo → Irene  | Pregiudizio      | Ha sentito che "vende fumo ai ricconi", la tiene d'occhio                            |
+| Sonia → Paolo  | Giudizio         | L'ha trovato più spettacolo che sostanza                                             |
+| Matteo → Irene | Sospetto latente | Ha sentito di un "mercante del Borgo" che ha fregato un padre. Se collega i punti... |
 
-### Tensioni Attive
-
-|Relazione|Tipo|Nota|
-|---|---|---|
-|Enrico → Irene|Diffidenza|Non si fida, la trova fredda e calcolata|
-|Irene → Enrico|Disprezzo|Lo considera un perditempo|
-|Paolo → Irene|Pregiudizio|Ha sentito che "vende fumo ai ricconi", la tiene d'occhio|
-|Sonia → Paolo|Giudizio|L'ha trovato più spettacolo che sostanza|
-|Matteo → Irene|Sospetto latente|Ha sentito di un "mercante del Borgo" che ha fregato un padre. Se collega i punti...|
-
-### Potenziali Ribaltamenti in Gioco
-
+#### Potenziali Ribaltamenti in Gioco
 - **Sonia → Paolo**: Se lo vede proteggere qualcuno di vulnerabile, potrebbe ricredersi.
 - **Paolo → Irene**: Se scopre che Irene non traffica in carne e ha dei principi, potrebbe rivalutarla.
 - **Matteo → Irene**: Bomba a orologeria. Se scopre che è lei la mercante, confronto diretto. Se scopre che non c'entra, scuse silenziose.
