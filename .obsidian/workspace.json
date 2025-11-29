@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2768849862a3c777",
+        "id": "0a334c11c0e361cc",
         "type": "tabs",
         "children": [
           {
-            "id": "a54eeff70bdf4734",
+            "id": "f348044561e22d9d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -185,6 +181,19 @@
               "state": {},
               "icon": "clock",
               "title": "Stopwatch"
+            }
+          },
+          {
+            "id": "29accd8294c2764a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita"
             }
           }
         ],
