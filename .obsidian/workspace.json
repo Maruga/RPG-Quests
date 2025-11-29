@@ -11,13 +11,46 @@
             "id": "f348044561e22d9d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Scena 6.1 - Incontro Arpia"
+            }
+          },
+          {
+            "id": "bca68118ec031120",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cripta Montebello/Idee per avventura.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Idee per avventura"
+            }
+          },
+          {
+            "id": "fba92cdecee40f80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cripta Montebello/Idee per avventura.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Idee per avventura"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -189,11 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cripta Montebello/Idee per avventura.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita"
+              "title": "Collegamenti in uscita da Idee per avventura"
             }
           }
         ],
@@ -217,8 +251,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2943b494a8fdbbcd",
+  "active": "fba92cdecee40f80",
   "lastOpenFiles": [
+    "Cripta Montebello/Doni di Teodoro di Monteferetro.md",
+    "Cripta Montebello/Idee per avventura.md",
+    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
+    "Cripta Montebello",
     "Inizio/Orologi.md",
     "conflict-files-obsidian-git.md",
     "Inizio/Cronaca il risveglio.md",
@@ -241,10 +279,7 @@
     "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
     "Inizio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
     "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
-    "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
     "Inizio/Capitoli/07/Scena 7.1 - Principe.md",
-    "Inizio/Capitoli/07/Scena 7.2 - Il voto.md",
-    "Inizio/Elenco PG.md",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TramontoAlba.png",
@@ -263,7 +298,6 @@
     "4CFABB10",
     "4E878710",
     "17258710",
-    "86407710",
-    "B5E04710"
+    "86407710"
   ]
 }
