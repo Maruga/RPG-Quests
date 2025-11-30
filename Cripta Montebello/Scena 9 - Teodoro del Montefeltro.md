@@ -1,6 +1,7 @@
-# SCENA 4: L'Incontro con Teodoro (Versione Finale)
+### SCENA 9: L'Incontro con Teodoro.
 
 ---
+![[Teodoro.jpeg]]
 
 ## La Porta Socchiusa
 
@@ -30,7 +31,7 @@ Il freddo qui è diverso. Non è temperatura. È assenza. Assenza di vita, di ca
 
 **Le candele:**
 
-Centinaia. Migliaia forse. Disposte lungo le pareti invisibili, su piedistalli di pietra nera, sul pavimento in cerchi concentrici. Tutte accese. Fiamme immobili che non tremano, non oscillano, non producono calore. La luce che emettono è sbagliata. Verdastra. Malata. Illumina senza scacciare le ombre.
+Fiamme immobili che non tremano, non oscillano, non producono calore. La luce che emettono è sbagliata. Verdastra. Malata. Illumina senza scacciare le ombre.
 
 E le ombre qui sono vive.
 

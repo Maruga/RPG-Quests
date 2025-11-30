@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
+                "file": "Cripta Montebello/Scena 1 - Prologo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 9 - Teodoro del Montefeltro"
+              "title": "Scena 1 - Prologo"
             }
           }
         ],
@@ -222,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
+                "file": "Cripta Montebello/Scena 1 - Prologo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Scena 9 - Teodoro del Montefeltro"
+              "title": "Collegamenti in uscita da Scena 1 - Prologo"
             }
           }
         ],
@@ -253,21 +253,25 @@
   },
   "active": "fba92cdecee40f80",
   "lastOpenFiles": [
+    "Cripta Montebello/Idee per avventura.md",
+    "Cripta Montebello/Scena 1 - Prologo.md",
+    "Cripta Montebello/Scena 2 - Fascicolo Nazista.md",
+    "Cripta Montebello/Trama.md",
+    "Cripta Montebello/Scheda Teodoro di Montefeltro.md",
+    "Cripta Montebello/Scheda Guardiano Scheletri.md",
+    "Cripta Montebello/Doni di Teodoro di Monteferetro.md",
     "Cripta Montebello/Scena 8 - Il Guardiano.md",
     "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
+    "Cripta Montebello/Immagini/GuardianoConGuardie.png",
+    "Cripta Montebello/Immagini/MedaglioSerpente.png",
+    "Cripta Montebello/Immagini/Teodoro.jpeg",
     "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
     "Cripta Montebello/Scena 7 - La porta della cripta.md",
-    "Cripta Montebello/Immagini/MedaglioSerpente.png",
-    "Cripta Montebello/Scena 2 - Fascicolo Nazista.md",
-    "Cripta Montebello/Scena 1 - Prologo.md",
     "Cripta Montebello/Scena 6 - Elisyum di Rimini.md",
     "Guide/La schiatta de’ Montefeltro.md",
     "Cripta Montebello/Scena 5 - Obitorio.md",
     "Cripta Montebello/Scena 4 - Capo Squadra.md",
-    "Cripta Montebello/Trama.md",
     "Cripta Montebello/Scena 3 - Chiesa di San Giovanni.md",
-    "Cripta Montebello/Idee per avventura.md",
-    "Cripta Montebello/Doni di Teodoro di Monteferetro.md",
     "Cripta Montebello/Immagini/FotoIngresso.png",
     "Cripta Montebello/Immagini/CopertinaFascicolo.png",
     "Cripta Montebello/Immagini",
@@ -281,16 +285,11 @@
     "Guide/Tiro dei Dadi.md",
     "Guide/Tipologie di Debiti (Boons).md",
     "Guide/Note di etichetta.md",
-    "Guide/Meccaniche.md",
-    "Guide/Le sei tradizione della Camarilla.md",
-    "Guide/Flashback.md",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TramontoAlba.png",
     "Inizio/Immagini/TempoRealeGiocoEventi.png",
     "Inizio/Immagini/TabvlaSangvinis.png",
-    "Inizio/Immagini/TabelloneTempo.png",
-    "Inizio/Immagini/StudioArpiaMappaTunnel.png",
     "338B0C10",
     "6BD9FB10",
     "0969FB10",

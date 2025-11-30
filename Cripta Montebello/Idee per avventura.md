@@ -7,19 +7,7 @@ Cagliostro possiede un oggetto che gli da grande potere, è un Vampiro relativam
 I PG quando entrano nelle catacombe risultano essere i mandanti di Cagliostro per uccidere Teodoro, questi userà tutti i suoi poteri e servi per ucciderli.
 
 Teodoro capisce che i PG sono ancora troppo deboli per sconfiggere Cagliostro, in più è protetto da diversi vampiri molto potenti. quindi decide che può aspettare e in cambio dona loro alcune cose. Da capire se tutti i pg accettano questa cosa.
-
-[[Doni di Teodoro di Monteferetro]]
-
-## La Promessa Maggiore (A Lungo Termine)
-
-Se i PG servono fedelmente e aiutano a recuperare il reliquiario:
-
-> "Il mio sangue è antico. Più antico di qualsiasi cosa il vostro Principe possa offrirvi. Quando sarò libero, potrei decidere di condividerlo."
-
-Teodoro allude alla possibilità di un legame di sangue diretto, o addirittura abbassare la loro generazione tramite rituali Cappadociani perduti. Non promette esplicitamente, ma lascia intendere.
-
-Questo è il premio finale: potere vero, non politico.
-
+ 
 
 
 ### Ghoul Abbandonato

@@ -1,5 +1,7 @@
 # SCENA 8: Le Catacombe e il Guardiano
 
+![[GuardianoConGuardie.png]]
+
 ## Verifica Storica
 
 Teodoro di Montefeltro è stato imprigionato nel 1444. Il periodo è il tardo Medioevo italiano, era dei condottieri e delle compagnie di ventura.
@@ -128,7 +130,7 @@ I PG li sentono. Lontani, ritmici, pesanti. Metallo su pietra.
 
 **CLANG... CLANG... CLANG...**
 
-Vengono da un corridoio laterale, nascosto nell'ombra. Non si vede nulla ancora, ma il suono è inconfondibile. Qualcuno in armatura sta camminando verso di loro.
+Vengono da un corridoio, nascosto nell'ombra. Non si vede nulla ancora, ma il suono è inconfondibile. Qualcuno in armatura sta camminando verso di loro.
 
 **Il ghoul:**
 
