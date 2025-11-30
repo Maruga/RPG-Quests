@@ -2,21 +2,22 @@
 
 ### 🧛‍♂️ PNG Principali
 
-| **Ruolo**                    | **Nome (antico / moderno)**                                 | **Clan**  | **Epoca di nascita o abbraccio** | **Dimora attuale**                          | **Carattere / Note**            |
-| ---------------------------- | ----------------------------------------------------------- | --------- | -------------------------------- | ------------------------------------------- | ------------------------------- |
-| **Principe**                 | *Calistratus Aelius* / Conte Alessandro Cagliostro          | Tremere   | XV secolo                        | Fortezza di San Leo                         | Enigmatico, colto, manipolatore |
-| **Maresciallo / Sceriffo**   | *Valterius de Monte Bello* / Valterius “Il Segugio” Belloni | Gangrel   | 1227                             | Bosco del Montefeltro                       | Feroce, silenzioso, spietato    |
-| **Senescallo (Consigliere)** | *Marcus Livius Umbra* / Marco Umbra                         | Ventrue   | 89 d.C. (abbraccio 117 d.C.)     | Palazzo a Santarcangelo                     | Freddo, aristocratico, preciso  |
-|                              |                                                             |           |                                  |                                             |                                 |
-| **Custode Elisio decaduto**  | *Agnes Servilia* / Agnese                                   | ex-Ghoul  | 1881                             | Palazzo del Bargello (Pennabilli)           | Nostalgica, permalosa, fedele   |
-| **Maniscalco arcano**        | *Gregor Albinus* / Gregorio Albini                          | Tremere   | 1612                             | Laboratorio a Verucchio                     | Devoto, superstizioso           |
-| **Arpia (Rimini)**           | *Helena Floriana* / Elena Floriani                          | Toreador  | 1774                             | Villa su Covignano                          | Vanitosa, raffinata             |
-| **Arpia (Santarcangelo)**    | *Beatrix Corvinia* / Beatrice Montieri                      | Toreador  | 1732                             | Vicino al Museo dei Bottoni (Santarcangelo) | Elegante, ossessiva, enigmatica |
-| **Arpia (informale)**        | *Silvanus Crawler* / Silvano “Vermi”                        | Nosferatu | 1943                             | Condotti sotto il Teatro Galli (Rimini)     | Ironico, servile, informato     |
-| **Conservatore del sapere**  | *Helena Marconia* / Elena Marconi                           | Tremere   | 1502                             | Abbazia di Mercatino Conca                  | Silenziosa, arcana              |
-| **Sentinella**               | *Brutus Ferranus* / Bruno Ferrani                           | Brujah    | 1906                             | Officina a Rimini                           | Impulsivo, leale                |
-| **Censore**                  | *Claudia Nerina* / Claudia Neri                             | Lasombra  | 1689                             | Villa sul mare di Misano                    | Elegante, spietata              |
-| **Custode dei cunicoli**     | *Morcar Ulcus* / Marco “Ulcera”                             | Nosferatu | 1310                             | Cunicoli di Santarcangelo                   | Devoto, cupo, invisibile        |
+| **Ruolo**                    | **Nome (antico / moderno)**                                 | **Clan**  | **Epoca di nascita o abbraccio** | **Dimora attuale**                          | **Carattere / Note**               |
+| ---------------------------- | ----------------------------------------------------------- | --------- | -------------------------------- | ------------------------------------------- | ---------------------------------- |
+| **Principe**                 | *Calistratus Aelius* / Conte Alessandro Cagliostro          | Tremere   | XV secolo                        | Fortezza di San Leo                         | Enigmatico, colto, manipolatore    |
+| **Maresciallo / Sceriffo**   | *Valterius de Monte Bello* / Valterius “Il Segugio” Belloni | Gangrel   | 1227                             | Bosco del Montefeltro                       | Feroce, silenzioso, spietato       |
+| **Senescallo (Consigliere)** | *Marcus Livius Umbra* / Marco Umbra                         | Ventrue   | 89 d.C. (abbraccio 117 d.C.)     | Palazzo a Santarcangelo                     | Freddo, aristocratico, preciso     |
+|                              |                                                             |           |                                  |                                             |                                    |
+| **Custode Elisio decaduto**  | *Agnes Servilia* / Agnese                                   | ex-Ghoul  | 1881                             | Palazzo del Bargello (Pennabilli)           | Nostalgica, permalosa, fedele      |
+| **Maniscalco arcano**        | *Gregor Albinus* / Gregorio Albini                          | Tremere   | 1612                             | Laboratorio a Verucchio                     | Devoto, superstizioso              |
+| **Arpia (Rimini)**           | *Helena Floriana* / Elena Floriani                          | Toreador  | 1774                             | Villa su Covignano                          | Vanitosa, raffinata                |
+| **Arpia (Santarcangelo)**    | *Beatrix Corvinia* / Beatrice Montieri                      | Toreador  | 1732                             | Vicino al Museo dei Bottoni (Santarcangelo) | Elegante, ossessiva, enigmatica    |
+| **Arpia (informale)**        | *Silvanus Crawler* / Silvano “Vermi”                        | Nosferatu | 1943                             | Condotti sotto il Teatro Galli (Rimini)     | Ironico, servile, informato        |
+| **Conservatore del sapere**  | *Helena Marconia* / Elena Marconi                           | Tremere   | 1502                             | Abbazia di Mercatino Conca                  | Silenziosa, arcana                 |
+| **Sentinella**               | *Brutus Ferranus* / Bruno Ferrani                           | Brujah    | 1906                             | Officina a Rimini                           | Impulsivo, leale                   |
+| **Censore**                  | *Claudia Nerina* / Claudia Neri                             | Lasombra  | 1689                             | Villa sul mare di Misano                    | Elegante, spietata                 |
+| **Custode dei cunicoli**     | *Morcar Ulcus* / Marco “Ulcera”                             | Nosferatu | 1310                             | Cunicoli di Santarcangelo                   | Devoto, cupo, invisibile           |
+| Custode dell'Elisyum         | Madama Lucrezia Orsini                                      | Toreador  | 1821                             | Biblioteca Gambalunga                       | Leale al Principe ma indipendente. |
 
 ---
 

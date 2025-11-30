@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cripta Montebello/Trama.md",
+                "file": "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trama"
+              "title": "Scena 10 - Imboscata del Sabbat"
             }
           }
         ],
@@ -222,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cripta Montebello/Trama.md",
+                "file": "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Trama"
+              "title": "Collegamenti in uscita da Scena 10 - Imboscata del Sabbat"
             }
           }
         ],
@@ -253,9 +253,23 @@
   },
   "active": "fba92cdecee40f80",
   "lastOpenFiles": [
-    "Cripta Montebello/Idee per avventura.md",
+    "Cripta Montebello/Scena 8 - Il Guardiano.md",
+    "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
+    "Cripta Montebello/Scena 7 - La porta della cripta.md",
+    "Cripta Montebello/Immagini/MedaglioSerpente.png",
+    "Cripta Montebello/Scena 2 - Fascicolo Nazista.md",
+    "Cripta Montebello/Scena 1 - Prologo.md",
+    "Cripta Montebello/Scena 6 - Elisyum di Rimini.md",
+    "Guide/La schiatta de’ Montefeltro.md",
+    "Cripta Montebello/Scena 5 - Obitorio.md",
+    "Cripta Montebello/Scena 4 - Capo Squadra.md",
     "Cripta Montebello/Trama.md",
+    "Cripta Montebello/Scena 3 - Chiesa di San Giovanni.md",
+    "Cripta Montebello/Idee per avventura.md",
     "Cripta Montebello/Doni di Teodoro di Monteferetro.md",
+    "Cripta Montebello/Immagini/FotoIngresso.png",
+    "Cripta Montebello/Immagini/CopertinaFascicolo.png",
+    "Cripta Montebello/Immagini",
     "Inizio/Capitoli/06/Scena 6.1 - Incontro Arpia.md",
     "Cripta Montebello",
     "Inizio/Orologi.md",
@@ -268,18 +282,8 @@
     "Guide/Note di etichetta.md",
     "Guide/Meccaniche.md",
     "Guide/Le sei tradizione della Camarilla.md",
-    "Guide/La schiatta de’ Montefeltro.md",
     "Guide/Flashback.md",
     "Guide/Discipline Riviste.md",
-    "Guide/Clan.md",
-    "Guide/Cariche della Camarilla.md",
-    "Inizio/Capitoli/01/Scena 1.2 - Casolare di Pennabilli.md",
-    "Inizio/Capitoli/02/Scena 2.1 - Il bosco.md",
-    "Inizio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
-    "Inizio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
-    "Inizio/Capitoli/04/Scena 4.1 - Viaggio verso Rimini.md",
-    "Inizio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
-    "Inizio/Capitoli/05/Scena 5.4 - La Bambina.md",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TramontoAlba.png",
@@ -287,9 +291,6 @@
     "Inizio/Immagini/TabvlaSangvinis.png",
     "Inizio/Immagini/TabelloneTempo.png",
     "Inizio/Immagini/StudioArpiaMappaTunnel.png",
-    "Inizio/Immagini/StudioArpiaBeatrice.png",
-    "Inizio/Immagini/SimboloRimuoverePietraPozzo.png",
-    "Inizio/Immagini/SentenzaUltimaMorte.png",
     "338B0C10",
     "6BD9FB10",
     "0969FB10",
@@ -297,7 +298,6 @@
     "~$Strumenti.xlsx",
     "4CFABB10",
     "4E878710",
-    "17258710",
-    "86407710"
+    "17258710"
   ]
 }

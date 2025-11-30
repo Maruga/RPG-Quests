@@ -1,30 +1,5 @@
 #### Sparizioni Montebello
 
-**Possibile aggancio per cronaca futura.
-
-> **Ghoul 1 (voce roca, stressata)**  
-> "Te lo giuro... la sabbia era ovunque, dentro i muri... nel sangue… anche dentro _lui_. L’operaio. Quando l’hanno aperto, sembrava un sacco di sabbia che camminava…"
-
-> **Ghoul 2 (più giovane, ansioso)**  
-> "Ma cos’è successo davvero? Dicevano che fosse solo una cripta vecchia..."
-
-> **Ghoul 1**  
-> "Vecchia sì. Ma non vuota. E non chiusa per caso. Qualcosa… _aspettava_ là sotto. Non dormiva. Si muoveva già quando loro hanno spaccato il muro."
-
-> **Ghoul 2**  
-> "Perché non l’hanno detto al Principe? Perché mandano solo i neonati a vedere?"
-
-> **Ghoul 1**  
-> (sospira, a mezza voce)  
-> "Perché se muoiono... nessuno fa domande."
-
-Poi… passi. Le voci si spengono. Silenzio.
-
-SPUNTI
-
-Antico Cappadociano
-"il Clan della Morte" o "Ladri di Tombe"
-
 Nel 1444 i Giovanni (una famiglia di necromanti italiani che i Cappadociani avevano abbracciato) tradirono e distrussero quasi completamente il clan, diablerizzando Cappadocius stesso. Questo evento è noto come "La Festa di Follia".
 
 Cagliostro possiede un oggetto che gli da grande potere, è un Vampiro relativamente giovane, del 700 ma con una potenza altissima, in pratica questo oggetto gli permette di essere alcune generazioni sotto a quella che sarebbe veramente e gli da diverse immunità. Molti infatti non capiscono questa cosa. Ovviamente Cagliostro non sa che questo oggetto vinsola il capadocia a rimanere legato alla terra in quanto l'oggetto gli è stato dato da un suo antenato. Per gli umani l'oggetto allunga la vita e da diversi benefici, mentre per i vampiri è potentissimo.
