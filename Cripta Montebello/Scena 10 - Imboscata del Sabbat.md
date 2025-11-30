@@ -1,10 +1,12 @@
-# SCENA 5: L'Imboscata del Sabbat (Rivista)
+# SCENA 5: L'Imboscata del Sabbat (Versione Finale)
 
 ---
 
 ## Contesto
 
 I PG escono dalle catacombe. Hanno incontrato Teodoro, hanno i loro doni, hanno fatto la loro scelta. L'alba si avvicina, devono tornare ai loro rifugi.
+
+Il PG che ha ricevuto il dono "Sussurro del Padrone" porta ancora il medaglione. Teodoro glielo ha restituito dopo l'apertura della porta, dicendo solo: _"Tienilo. Potrebbe servirti."_
 
 Scendono da Montebello in macchina. La strada è stretta, tortuosa, deserta.
 
@@ -148,19 +150,29 @@ Ma Isabella è troppo forte. Gli scagnozzi sono troppi. I PG vengono feriti, mes
 
 Solleva una mano. I tentacoli d'ombra si preparano a colpire.
 
-> "Ultima possibilità. Ditemi cosa avete trovato, o muorite qui."
+> "Ultima possibilità. Ditemi cosa avete trovato, o morite qui."
 
 ---
 
 ## L'Intervento di Teodoro
 
-### Il Momento
+### Il Medaglione Si Sveglia
 
-Il PG con **Sussurro del Padrone** sente qualcosa.
+Il PG con **Sussurro del Padrone** sente qualcosa. Ma non nella mente. Nel corpo.
 
 **Descrizione per il giocatore:**
 
-> Freddo. Non fuori. Dentro.
+> Il medaglione pulsa.
+> 
+> Non è immaginazione. Attraverso il tessuto della tasca, attraverso la camicia, senti il metallo vibrare. Come un cuore che batte. Come qualcosa che si sveglia.
+> 
+> Poi il calore.
+> 
+> Prima tiepido. Poi caldo. Poi bruciante.
+> 
+> Il serpente Ouroboros, inciso nell'argento, inizia a brillare. Non luce normale. Luce verdastra, malata, la stessa luce che avete visto quando la porta della cripta si è aperta.
+> 
+> E poi il freddo. Non fuori. Dentro.
 > 
 > Qualcosa si muove nella tua mente. Qualcosa che non sei tu. Non è dolore. Non è paura. È presenza. Vasta. Antica. Affamata.
 > 
@@ -180,7 +192,9 @@ Il PG con **Sussurro del Padrone** sente qualcosa.
 
 Il PG si irrigidisce. Gli occhi si spalancano, poi cambiano. L'iride scompare. Resta solo grigio. Grigio opaco, come pietra tombale, come cenere, come morte.
 
-Si alza. I movimenti sono sbagliati. Troppo fluidi. Troppo controllati. Non sono i movimenti di un neonato. Sono i movimenti di qualcosa di antico.
+Il medaglione nella sua tasca emette un bagliore verdastro che filtra attraverso il tessuto. Il serpente inciso nell'argento si muove. La testa si stacca dalla coda. Il cerchio si spezza. E attraverso quella rottura, qualcosa passa.
+
+Il PG si alza. I movimenti sono sbagliati. Troppo fluidi. Troppo controllati. Non sono i movimenti di un neonato. Sono i movimenti di qualcosa di antico.
 
 L'ombra del PG si allunga. Si distorce. Non segue più le leggi della luce. Diventa più alta, più magra. Un mantello che non esiste ondeggia in un vento che non soffia.
 
@@ -204,13 +218,23 @@ I tentacoli d'ombra esitano. Si contraggono. Come animali che sentono un predato
 
 > "Cosa...?"
 
-Guarda il PG. Guarda attraverso il PG.
+Guarda il PG. Guarda attraverso il PG. Poi nota il bagliore verdastro che pulsa dal medaglione.
+
+> "Quello... quello è un sigillo di ancoraggio. Come hai...?"
+
+La realizzazione la colpisce.
+
+> "L'hai preso dalla cripta. Hai trovato la chiave. E l'hai usata per..."
+
+Non finisce la frase. Non ne ha bisogno. Capisce.
 
 I suoi occhi neri, che non hanno mai mostrato paura, mostrano qualcosa adesso. Cautela. Riconoscimento.
 
 **Il PG/Teodoro avanza:**
 
 Un passo. L'oscurità di Isabella si ritrae. Le ombre create da Shroud of Night tremano, si assottigliano.
+
+**Il medaglione brucia più intensamente.** Il PG sente l'odore di stoffa che si consuma, ma non può reagire. Teodoro controlla il corpo.
 
 **Parla ancora:**
 
@@ -235,6 +259,8 @@ Non sanno cosa stanno vedendo. Ma la Bestia dentro di loro sa. E la Bestia vuole
 **Teodoro alza la mano del PG.**
 
 Il gesto è lento, deliberato. Le dita si aprono, puntano verso Isabella.
+
+**Il medaglione è incandescente ora.** L'argento brucia attraverso il tessuto, attraverso la camicia, marchia la pelle. Ma il PG non può urlare. Teodoro non glielo permette.
 
 **Descrizione:**
 
@@ -274,13 +300,17 @@ Indietreggia. È la prima volta che lo fa.
 
 Un sorriso forzato, che non raggiunge gli occhi.
 
+> "Sei un idiota o un folle. Hai aperto una porta che doveva restare chiusa."
+
+Ma c'è rispetto nella sua voce. O forse paura.
+
 > "Il Sabbat sarà molto interessato a questa informazione."
 
 **Teodoro:**
 
 > _"Il Sabbat può venire. Il Sabbat può morire. Come tutti quelli che hanno cercato di prendermi."_
 
-Un ultimo passo avanti.
+Un ultimo passo avanti. Il medaglione sibila. L'argento cede, si deforma. Il serpente Ouroboros si contorce nell'agonia della distruzione.
 
 > _"Ora vai, figlia delle tenebre. Vai e racconta ai tuoi padroni cosa hai visto. Racconta che la morte antica è sveglia. Racconta che Montebello non è più incustodita."_
 
@@ -302,29 +332,67 @@ Silenzio.
 
 ## Il Ritorno
 
-### Il PG Riprende il Controllo
+### Il Prezzo del Potere
 
 **Descrizione:**
 
-Il freddo se ne va. Improvvisamente, tutto in una volta, come una marea che si ritira.
+Il freddo interno scompare. Improvvisamente, tutto in una volta, come una marea che si ritira.
 
 Il PG barcolla. Le ginocchia cedono. Cade a terra, boccheggiando come se non respirasse da minuti.
 
 Gli occhi tornano normali. L'ombra torna normale. È di nuovo se stesso.
 
-Ma qualcosa è cambiato.
+Ma il dolore arriva.
+
+**Il medaglione:**
+
+> Il PG abbassa lo sguardo. Dove il medaglione premeva contro il petto - attraverso la tasca, attraverso la camicia - c'è un marchio.
+> 
+> Carne bruciata. Nera ai bordi, rossa al centro, fumante. La forma è riconoscibile anche nella rovina: un serpente che si morde la coda. L'Ouroboros, impresso nella carne come un marchio di bestiame.
+> 
+> Il medaglione stesso è irriconoscibile. Argento fuso, deformato, una massa informe che ancora fuma nella tasca carbonizzata. Il serpente è scomparso. La magia che lo animava è esaurita.
+> 
+> Era una chiave. È stata usata. Non funzionerà mai più.
 
 **Effetto meccanico:**
 
-- Il PG perde 2 punti Forza di Volontà temporanei
+- Il PG subisce **1 danno aggravato** da ustione, non assorbibile
+- Il PG perde **2 punti Forza di Volontà temporanei**
+- Il marchio dell'Ouroboros resta come **cicatrice permanente** sul petto
 - Per il resto della notte, sente freddo costante, anche se i vampiri non dovrebbero
 - Nei sogni diurni, vedrà frammenti di ciò che Teodoro ha visto: secoli di buio, solitudine, fame
 
 **Ultimo sussurro di Teodoro, solo per il PG:**
 
-> _"Hai fatto bene. Riposa ora. Ci rivedremo."_
+> _"Il prezzo è pagato. Il legame resta. Riposa ora. Ci rivedremo."_
 
 Poi silenzio. Il collegamento si chiude.
+
+---
+
+### Il Medaglione Distrutto
+
+**Conseguenze:**
+
+- Il medaglione è **inutilizzabile**, ridotto a metallo fuso
+- Non può più aprire la porta delle catacombe
+- Non può più essere usato come condotto per Teodoro
+- Per tornare da Teodoro, i PG dovranno trovare l'altro medaglione: quello di **Cagliostro**
+
+---
+
+### Il Marchio dell'Ouroboros
+
+**Aspetto:**
+
+Cicatrice circolare sul petto, diametro di una moneta grande. Il serpente è riconoscibile ma distorto, come se si fosse contorto nell'agonia mentre bruciava la pelle. La carne è sollevata, lucida, permanente.
+
+**Effetti a lungo termine (per avventure future):**
+
+- Teodoro può **percepire** il PG attraverso il marchio: direzione generale e stato emotivo, non pensieri
+- Il marchio si **scalda leggermente** in presenza di magia necrotica o spettri
+- I **Giovanni** o altri necromanti riconoscerebbero il simbolo e reagirebbero con interesse, paura, o ostilità
+- È un **segno di appartenenza**. Il PG è marchiato come proprietà di Teodoro, che lo voglia o no
 
 ---
 
@@ -332,7 +400,9 @@ Poi silenzio. Il collegamento si chiude.
 
 Gli altri PG hanno visto tutto.
 
-Il loro compagno trasformato in burattino. La voce antica che parlava attraverso di lui. Il potere che ha fatto fuggire una Lasombra.
+Il loro compagno trasformato in burattino. La voce antica che parlava attraverso di lui. Il medaglione che bruciava, il corpo che si muoveva senza volontà. Il potere che ha fatto fuggire una Lasombra.
+
+E ora vedono il loro compagno a terra, con una cicatrice fumante sul petto, il medaglione ridotto a scorie.
 
 Domande senza risposta:
 
@@ -340,6 +410,7 @@ Domande senza risposta:
 - Teodoro può farlo a tutti loro?
 - Sono alleati o strumenti?
 - Cosa hanno liberato?
+- E ora che il medaglione è distrutto, come torneranno da Teodoro? Come manterranno il patto?
 
 ---
 
@@ -351,7 +422,11 @@ Ma prima, un momento di silenzio. Di elaborazione. Di consapevolezza.
 
 Hanno trovato qualcosa sotto Montebello. Qualcosa di antico, di potente, di pericoloso.
 
-E quel qualcosa li ha reclamati.
+Quel qualcosa li ha reclamati. Li ha protetti. E ha lasciato un marchio permanente su uno di loro.
+
+Il medaglione è distrutto. La porta è chiusa. Ma il patto resta.
+
+E Cagliostro, il Principe di Rimini, ha l'unica altra chiave. Senza sapere cosa apre.
 
 ---
 
@@ -359,26 +434,54 @@ E quel qualcosa li ha reclamati.
 
 ### Tono
 
-Questa scena deve essere il climax dell'avventura. L'intervento di Teodoro non è un deus ex machina gratuito. È una dimostrazione. I PG devono capire con cosa hanno fatto un patto.
+Questa scena è il climax dell'avventura. L'intervento di Teodoro è potente ma ha un prezzo. I PG devono capire che nulla è gratuito, che il potere antico costa, e che sono legati a qualcosa di più grande di loro.
 
 ### Il PG Posseduto
 
 Parla con il giocatore prima o durante la scena. Deve sapere che:
 
 - Non ha controllo durante la possessione
-- Può descrivere cosa sente il suo personaggio dall'interno
+- Subirà danno e porterà una cicatrice permanente
 - È un momento di roleplay intenso, non una punizione
+- Il marchio è un elemento narrativo potente per il futuro del personaggio
+
+### Il Medaglione Distrutto
+
+Questo è fondamentale. Il medaglione era:
+
+1. La chiave per le catacombe
+2. Il condotto per l'intervento di Teodoro
+3. Un artefatto unico
+
+Ora è distrutto. I PG non possono più accedere facilmente alle catacombe. Per tornarci, dovranno:
+
+- Rubare il medaglione di Cagliostro (difficilissimo)
+- Trovare un altro modo (richiede ricerca, alleanze, rischi)
+- Aspettare che Teodoro trovi un modo per contattarli (il marchio potrebbe servire)
 
 ### Isabella
 
-Non è sconfitta. È ritirata. Ha visto qualcosa di prezioso e pericoloso. Tornerà, con rinforzi, con un piano. Questo è un aggancio per avventure future.
+Non è sconfitta. È ritirata. Ha visto qualcosa di prezioso e pericoloso. Tornerà, con rinforzi, con un piano. Ora sa:
+
+- C'è un Cappadociano vivo sotto Montebello
+- I PG sono suoi strumenti
+- Il medaglione era importante (ma non sa che è distrutto)
+- Cagliostro nasconde qualcosa
+
+Questo è un aggancio potente per avventure future.
 
 ### Conseguenze
 
-I PG ora sono marchiati. Il Sabbat sa di loro. Teodoro li ha reclamati pubblicamente. Il Principe non sa nulla di tutto questo.
+I PG ora sono marchiati, letteralmente e metaforicamente:
 
-Quando dovranno riferire... cosa diranno?
+- Il Sabbat sa di loro
+- Teodoro li ha reclamati pubblicamente
+- Uno di loro porta il suo segno nella carne
+- Il Principe non sa nulla di tutto questo
+- L'unico modo per tornare da Teodoro è attraverso il medaglione di Cagliostro
+
+Quando dovranno riferire al Principe... cosa diranno?
 
 ### Durata
 
-20-25 minuti. Combattimento breve, intervento di Teodoro memorabile, conclusione rapida.
+20-25 minuti. Combattimento breve, intervento di Teodoro memorabile, conseguenze permanenti.

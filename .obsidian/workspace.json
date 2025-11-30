@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
+                "file": "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scena 10 - Imboscata del Sabbat"
+              "title": "Scena 9 - Teodoro del Montefeltro"
             }
           }
         ],
@@ -222,12 +222,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
+                "file": "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Scena 10 - Imboscata del Sabbat"
+              "title": "Collegamenti in uscita da Scena 9 - Teodoro del Montefeltro"
             }
           }
         ],
@@ -254,6 +254,7 @@
   "active": "fba92cdecee40f80",
   "lastOpenFiles": [
     "Cripta Montebello/Scena 8 - Il Guardiano.md",
+    "Cripta Montebello/Scena 9 - Teodoro del Montefeltro.md",
     "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
     "Cripta Montebello/Scena 7 - La porta della cripta.md",
     "Cripta Montebello/Immagini/MedaglioSerpente.png",
@@ -283,7 +284,6 @@
     "Guide/Meccaniche.md",
     "Guide/Le sei tradizione della Camarilla.md",
     "Guide/Flashback.md",
-    "Guide/Discipline Riviste.md",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
     "Inizio/Immagini/Villa Laboratorio.jpg",
     "Inizio/Immagini/TramontoAlba.png",
