@@ -108,6 +108,7 @@ _Con la presente vi affido due cose: questa lettera e ciò che l'accompagna._
 _La lettera bruciatela dopo averla letta. Ciò che l'accompagna nascondetelo dove nessun uomo guarderà mai, ma dove Dio vede sempre._
 
 _Non chiedete cosa sia. Non apritelo. Non parlatene a nessuno._
+_Solo ora ho trovato il coraggio di liberarmi di questo peso_
 
 _La mia famiglia custodisce un segreto che non abbiamo scelto. Un giorno qualcuno verrà a cercare ciò che vi affido. Quel giorno non deve mai arrivare. Ma se arriva, che sia per mano di chi sa cosa fa, non di chi cerca potere._
 
@@ -169,33 +170,21 @@ _Che Nostro Signore ti protegga._
 
 _Don Filippo_ _Parrocchia di San Giovanni in Galilea_
 
----
-
 ## L'Indovinello
 
 **"Dove il primo uomo incontra Dio"** - Deve essere un luogo nella chiesa.
-
 **"Non dove parla con Lui"** - Non il confessionale.
-
 **"Non dove Lo mangia"** - Non l'altare (eucaristia).
-
 **"Dove Lo incontra per la prima volta"** - Il battistero. Il battesimo è il primo sacramento, il primo incontro con Dio.
-
 **"Nessuno guarda mai, perché tutti guardano avanti, mai indietro, mai in basso"** - Il battistero è spesso vicino all'ingresso, dietro ai fedeli che guardano l'altare. E il nascondiglio è in basso.
-
----
 
 ## La Soluzione
 
-**Risposta:** Il sigillo è nascosto sotto o dentro il battistero della chiesa di San Giovanni in Galilea.
-
+**Risposta:** Il sigillo è nascosto sotto il battistero della chiesa di San Giovanni in Galilea.
 Se i PG tornano alla chiesa e cercano nel battistero:
-
 **Tiro Percezione + Investigare, diff 7:**
-
 **Successo:** La base del fonte battesimale ha una pietra mobile. Dietro, una nicchia. Dentro, un sacchetto di stoffa marcia che si sbriciola al tatto.
-
-**Il sigillo:** Anello d'argento annerito dal tempo. Un serpente che si morde la coda.
+**Il medaglione:** Disco d'argento annerito dal tempo, delle dimensioni di una moneta grande. Un serpente che si morde la coda, inciso con precisione. Può essere portato al collo con una catenella o tenuto in tasca.
 
 ---
 
@@ -237,7 +226,7 @@ I PG devono capire dove cercare. "Nascosto dove solo Dio vede" è criptico.
 - Nel battistero (dove si entra nella comunità di Dio)
 - Nella sacrestia (dove si conservano gli oggetti sacri)
 
-**La risposta giusta:** Sotto l'altare maggiore. Una pietra mobile alla base.
+**La risposta giusta:** Nel battistero. Una pietra mobile alla base.
 
 ---
 
@@ -249,13 +238,13 @@ I PG devono capire dove cercare. "Nascosto dove solo Dio vede" è criptico.
 
 **Tiro per trovare il nascondiglio:** Percezione + Investigare, diff 8. È nascosto bene, non è stato toccato per secoli.
 
-**Successo:** Trovano una pietra alla base dell'altare che si muove. Dietro, una nicchia polverosa. Dentro, un sacchetto di stoffa marcia.
+**Successo:** La base del fonte battesimale ha una pietra mobile. Dietro, una nicchia polverosa. Dentro, un sacchetto di stoffa marcia.
 
-**Il sigillo:** Anello d'argento annerito dal tempo. Un serpente che si morde la coda, inciso con precisione. Piccolo, può essere indossato o tenuto in tasca.
+**Il medaglione:** Disco d'argento annerito dal tempo, delle dimensioni di una moneta grande. Un serpente che si morde la coda, inciso con precisione. Può essere portato al collo con una catenella o tenuto in tasca.
 
 ---
 
-## Il Sigillo
+## Il Medaglione
 
 ### Aspetto
 

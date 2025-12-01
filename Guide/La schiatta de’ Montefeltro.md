@@ -17,9 +17,8 @@
 | **Sentinella**               | *Brutus Ferranus* / Bruno Ferrani                           | Brujah    | 1906                             | Officina a Rimini                           | Impulsivo, leale                   |
 | **Censore**                  | *Claudia Nerina* / Claudia Neri                             | Lasombra  | 1689                             | Villa sul mare di Misano                    | Elegante, spietata                 |
 | **Custode dei cunicoli**     | *Morcar Ulcus* / Marco “Ulcera”                             | Nosferatu | 1310                             | Cunicoli di Santarcangelo                   | Devoto, cupo, invisibile           |
-| Custode dell'Elisyum         | Madama Lucrezia Orsini                                      | Toreador  | 1821                             | Biblioteca Gambalunga                       | Leale al Principe ma indipendente. |
+| **Custode dell'Elisyum**     | Madama Lucrezia Orsini                                      | Toreador  | 1821                             | Biblioteca Gambalunga                       | Leale al Principe ma indipendente. |
 
----
 
 ### 🩸 Ghoul di Rilievo
 
@@ -34,12 +33,18 @@
 
 ### 🧛 Vampiri Senza Cariche, ma Influenti
 
-| **Nome (antico / moderno)**        | **Clan**  | **Epoca** | **Ruolo / Influenza**        | **Dimora**                          | **Carattere / Note**        |
-|-----------------------------------|-----------|-----------|-------------------------------|-------------------------------------|------------------------------|
-| *Helena Gradensis* / Elena di Gradara | Toreador  | 1521      | Restauratrice, antiquaria     | Villa sconsacrata a Gradara         | Melanconica, ossessiva       |
-| *Lucius Cinereus* / Lucio “Cenere” Bravetti | Nosferatu | 1892      | Informante, mercante di resti | Fognature di Rimini                 | Cinico, sarcastico           |
-| *Adrianus Celerium* / Adriano Celieri | Ventrue   | 1645      | Banchiere ombra               | Villa moderna a Riccione            | Freddo, calcolatore          |
-| *Sara Caeca* / Sara “La Cieca” Moreschi | Malkavian | 1780      | Veggente del Principato       | Casa al Monte Carpegna              | Serena, inquietante          |
-| *Petrus Fumus* / Pietro “Fumo” Galvani | Brujah    | 1950      | Guida dei neonati, ribelle    | Capannone a Viserba                 | Carismatico, irruento        |
-| *Monica d’Albus* / Monica D’Albo        | Tremere   | 1430      | Apprendista arcanista         | Abbazia con Serenità                | Curiosa, riservata           |
-| *Corradus Benax* / Corrado Benassi      | Giovanni  | 1989      | Intermediario dei morti       | Villa a Saludecio                   | Cinico, ambiguo              |
+| **Nome (antico / moderno)**                 | **Clan**  | **Epoca** | **Ruolo / Influenza**         | **Dimora**                  | **Carattere / Note**   |
+| ------------------------------------------- | --------- | --------- | ----------------------------- | --------------------------- | ---------------------- |
+| *Helena Gradensis* / Elena di Gradara       | Toreador  | 1521      | Restauratrice, antiquaria     | Villa sconsacrata a Gradara | Melanconica, ossessiva |
+| *Lucius Cinereus* / Lucio “Cenere” Bravetti | Nosferatu | 1892      | Informante, mercante di resti | Fognature di Rimini         | Cinico, sarcastico     |
+| *Adrianus Celerium* / Adriano Celieri       | Ventrue   | 1645      | Banchiere ombra               | Villa moderna a Riccione    | Freddo, calcolatore    |
+| *Sara Caeca* / Sara “La Cieca” Moreschi     | Malkavian | 1780      | Veggente del Principato       | Casa al Monte Carpegna      | Serena, inquietante    |
+| *Petrus Fumus* / Pietro “Fumo” Galvani      | Brujah    | 1950      | Guida dei neonati, ribelle    | Capannone a Viserba         | Carismatico, irruento  |
+| *Monica d’Albus* / Monica D’Albo            | Venrue    | 1430      | Apprendista arcanista         | Abbazia con Serenità        | Curiosa, riservata     |
+| *Corradus Benax* / Corrado Benassi          | Giovanni  | 1989      | Intermediario dei morti       | Villa a Saludecio           | Cinico, ambiguo        |
+
+
+### SIRI DEI PERSONAGGI
+
+**Monica D’Albo** Ventrue
+**Roberto Valenti** Toreador

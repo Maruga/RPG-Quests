@@ -26,7 +26,7 @@ L'oscurità è più densa. Anche la vista notturna vampirica fatica. Le ombre se
 
 E il silenzio. Totale, assoluto, innaturale. Nemmeno il suono dei passi dei PG sembra propagarsi normalmente. Viene assorbito, inghiottito.
 
----
+![[catacombe.png]]
 
 ## La Sala delle Catacombe
 

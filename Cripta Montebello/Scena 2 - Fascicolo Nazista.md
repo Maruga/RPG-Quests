@@ -1,34 +1,5 @@
 ### SCENA 1: Il Fascicolo Nazista
 
-#### Contesto
-
-I PG hanno recuperato questo fascicolo durante l'esplorazione di un laboratorio nazista abbandonato nell'avventura precedente. All'epoca sembrava materiale storico interessante ma non urgente. Ora la Bottonaia di Santarcangelo, Beatrice Montieri, mostra loro una foto e tutto si collega.
-![[CriptaMontebelloDisegno.png]]
-![[CriptaMontebelloFoto.png]]
-
-Flash Bach.
-Ricordo di un discorso fatto quando erano dalla Arpia a SantArcangelo
-
-> **Ghoul 1 (voce roca, stressata)**  
-> "Te lo giuro... la sabbia era ovunque, dentro i muri... nel sangue… anche dentro _lui_. L’operaio. Quando l’hanno aperto, sembrava un sacco di sabbia che camminava…"
-
-> **Ghoul 2 (più giovane, ansioso)**  
-> "Ma cos’è successo davvero? Dicevano che fosse solo una cripta vecchia..."
-
-> **Ghoul 1**  
-> "Vecchia sì. Ma non vuota. E non chiusa per caso. Qualcosa… _aspettava_ là sotto. Non dormiva. Si muoveva già quando loro hanno spaccato il muro."
-
-> **Ghoul 2**  
-> "Perché non l’hanno detto al Principe? Perché mandano solo i neonati a vedere?"
-
-> **Ghoul 1**  
-> (sospira, a mezza voce)  
-> "Perché se muoiono... nessuno fa domande."
-
-Poi… passi. Le voci si spengono. Silenzio.
-
-
-## IL FASCICOLO
 ![[CopertinaFascicolo.png]]
 ### Aspetto Fisico
 

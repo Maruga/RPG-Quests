@@ -1,28 +1,28 @@
-### Se i PG chiedono sui Cappadociani
+Immagine nel fascicolo
+![[CriptaMontebelloDisegno.png]]
+Foto della cripta a Montebello
+![[CriptaMontebelloFoto.png]]
 
-I Cappadociani erano uno dei tredici clan originali, conosciuti come il "Clan della Morte". A differenza di altri vampiri, non cercavano potere politico o dominio territoriale. Erano studiosi, ossessionati da una sola domanda: cosa significa la morte?
+Flash Bach.
+Ricordo di un discorso fatto quando erano dalla Arpia a SantArcangelo
 
-Per secoli hanno dissezionato cadaveri, interrogato spiriti, attraversato il velo tra i mondi dei vivi e dei morti. Il loro fondatore, Cappadocius, credeva che comprendendo la morte avrebbe potuto trascenderla, forse addirittura raggiungere Dio stesso.
+> **Ghoul 1 (voce roca, stressata)**  
+> "Te lo giuro... la sabbia era ovunque, dentro i muri... nel sangue… anche dentro _lui_. L’operaio. Quando l’hanno aperto, sembrava un sacco di sabbia che camminava…"
 
-Nel XIII secolo, i Cappadociani scoprirono una famiglia di necromanti veneziani: i Giovanni. Questi mercanti avevano sviluppato tecniche di comunicazione con i morti che impressionarono il clan. Cappadocius stesso decise di abbracciarli, portandoli nella famiglia vampirica.
+> **Ghoul 2 (più giovane, ansioso)**  
+> "Ma cos’è successo davvero? Dicevano che fosse solo una cripta vecchia..."
 
-Fu un errore fatale.
+> **Ghoul 1**  
+> "Vecchia sì. Ma non vuota. E non chiusa per caso. Qualcosa… _aspettava_ là sotto. Non dormiva. Si muoveva già quando loro hanno spaccato il muro."
 
-Augustus Giovanni, il patriarca della famiglia, era ambizioso oltre ogni misura. Non voleva essere un allievo. Voleva essere un dio. Per decenni pianificò in segreto, stringendo alleanze, accumulando potere, aspettando il momento giusto.
+> **Ghoul 2**  
+> "Perché non l’hanno detto al Principe? Perché mandano solo i neonati a vedere?"
 
-Nel 1444, colpì.
+> **Ghoul 1**  
+> (sospira, a mezza voce)  
+> "Perché se muoiono... nessuno fa domande."
 
-In quella che divenne nota come la "Festa di Follia", Augustus Giovanni diablerizzò Cappadocius stesso, divorando l'anima del fondatore e rubando il suo potere. Contemporaneamente, i Giovanni lanciarono una purga sistematica contro tutti i Cappadociani. Anziani che avevano camminato per millenni furono cacciati e distrutti. Neonati furono massacrati nei loro rifugi. Intere linee di sangue furono cancellate in poche notti.
-
-I pochi sopravvissuti si nascosero. Alcuni entrarono in torpore in luoghi dimenticati. Altri fuggirono ai confini del mondo conosciuto. Alcuni, come Teodoro, furono intrappolati in circostanze peggiori della morte stessa.
-
-Oggi i Cappadociani sono considerati estinti. I Giovanni hanno preso il loro posto tra i clan, portando avanti una versione corrotta e mercantile della necromanzia che i veri studiosi della morte avrebbero disprezzato.
-
-Ma le voci persistono. Si dice che alcuni antichi dormano ancora, aspettando. Si dice che non tutti i segreti della morte siano stati rubati. Si dice che i morti non dimenticano, e che un giorno i Giovanni pagheranno per il loro tradimento.
-
-Teodoro è la prova che almeno alcune di queste voci sono vere.
-
----
+Poi… passi. Le voci si spengono. Silenzio.
 
 ## Note per la Cronaca
 
@@ -70,3 +70,27 @@ Il Narratore dovrebbe tenere a mente:
 3. **Le conseguenze sono reali** - scelte sbagliate portano a complicazioni, non a vicoli ciechi
 4. **Il tempo conta** - l'alba arriva, il Sabbat si muove, il Principe potrebbe scoprire qualcosa
 5. **Non esistono soluzioni "giuste"** - solo scelte con conseguenze diverse
+
+### Se i PG chiedono sui Cappadociani
+
+I Cappadociani erano uno dei tredici clan originali, conosciuti come il "Clan della Morte". A differenza di altri vampiri, non cercavano potere politico o dominio territoriale. Erano studiosi, ossessionati da una sola domanda: cosa significa la morte?
+
+Per secoli hanno dissezionato cadaveri, interrogato spiriti, attraversato il velo tra i mondi dei vivi e dei morti. Il loro fondatore, Cappadocius, credeva che comprendendo la morte avrebbe potuto trascenderla, forse addirittura raggiungere Dio stesso.
+
+Nel XIII secolo, i Cappadociani scoprirono una famiglia di necromanti veneziani: i Giovanni. Questi mercanti avevano sviluppato tecniche di comunicazione con i morti che impressionarono il clan. Cappadocius stesso decise di abbracciarli, portandoli nella famiglia vampirica.
+
+Fu un errore fatale.
+
+Augustus Giovanni, il patriarca della famiglia, era ambizioso oltre ogni misura. Non voleva essere un allievo. Voleva essere un dio. Per decenni pianificò in segreto, stringendo alleanze, accumulando potere, aspettando il momento giusto.
+
+Nel 1444, colpì.
+
+In quella che divenne nota come la "Festa di Follia", Augustus Giovanni diablerizzò Cappadocius stesso, divorando l'anima del fondatore e rubando il suo potere. Contemporaneamente, i Giovanni lanciarono una purga sistematica contro tutti i Cappadociani. Anziani che avevano camminato per millenni furono cacciati e distrutti. Neonati furono massacrati nei loro rifugi. Intere linee di sangue furono cancellate in poche notti.
+
+I pochi sopravvissuti si nascosero. Alcuni entrarono in torpore in luoghi dimenticati. Altri fuggirono ai confini del mondo conosciuto. Alcuni, come Teodoro, furono intrappolati in circostanze peggiori della morte stessa.
+
+Oggi i Cappadociani sono considerati estinti. I Giovanni hanno preso il loro posto tra i clan, portando avanti una versione corrotta e mercantile della necromanzia che i veri studiosi della morte avrebbero disprezzato.
+
+Ma le voci persistono. Si dice che alcuni antichi dormano ancora, aspettando. Si dice che non tutti i segreti della morte siano stati rubati. Si dice che i morti non dimenticano, e che un giorno i Giovanni pagheranno per il loro tradimento.
+
+Teodoro è la prova che almeno alcune di queste voci sono vere.

@@ -1,4 +1,4 @@
-# SCENA 5: L'Imboscata del Sabbat (Versione Finale)
+# SCENA 10: L'Imboscata del Sabbat
 
 ---
 
@@ -98,7 +98,7 @@ Viktor porta un machete. Sergei non ha armi visibili. Le sue mani bastano.
 
 Isabella si avvicina. Viktor e Sergei ai suoi lati.
 
-> "Siete stati a Montebello. Siete scesi nelle catacombe. Avete parlato con qualcosa."
+> "Siete stati a Montebello. Siete riusciti a capire il mistero della cripta? Cosa avete trovato?"
 
 Pausa. Occhi neri che studiano ogni PG.
 

@@ -207,7 +207,8 @@ Nel cassetto della scrivania di Don Emilio, se i PG chiedono o cercano.
 
 **Valore investigativo:** Le iniziali potrebbero corrispondere a "R." dei documenti nel fascicolo. Una pista per identificare chi sta indagando.
 
----
+**Nota per il Narratore - Chi è R.V.:** Le iniziali appartengono a **Roberto Visconti**, un Toreador di Rimini che lavorava segretamente per il Sabbat. Era uno dei vampiri della Camarilla locale che Isabella aveva corrotto. È stato lui a visitare la chiesa, a fotografare i documenti, e a riferire tutto al Sabbat. Se i PG indagano: - Il nome "Roberto Valenti" può emergere chiedendo in giro nell'Elisyum di Rimini (Sotterfugio o Politica diff 7) - È scomparso circa due settimane fa. È uno dei Siri dei PG, scappato la notte del Risveglio. 
+
 
 ## Cosa Trovano i PG se Cercano Bene
 
