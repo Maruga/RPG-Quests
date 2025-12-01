@@ -68,6 +68,8 @@ La statua non ha aura. È pietra, nient'altro. Ma l'aria intorno ad essa vibra d
 
 ## Il Ghoul
 
+![[Ghoul.png]]
+
 **Davanti alla statua:**
 
 Una figura inginocchiata. Di spalle ai PG. Immobile. Non si è accorta di loro, o finge di non essersi accorta.
