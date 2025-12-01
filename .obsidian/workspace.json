@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/Servitori.md",
+                "file": "DnD/Oggetti Magici.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Servitori"
+              "title": "Oggetti Magici"
             }
           },
           {
@@ -252,8 +252,19 @@
   },
   "active": "bca68118ec031120",
   "lastOpenFiles": [
-    "DnD/Link.md",
+    "DnD/Incantesimi Arcani.md",
+    "DnD/Oggetti Magici.md",
+    "DnD/Incantesimi Clericali.md",
+    "DnD/Pergamene.md",
+    "DnD/Pozioni.md",
+    "DnD/Classi.md",
     "DnD/Servitori.md",
+    "DnD/Peso Oggetti.md",
+    "DnD/Combattimento.md",
+    "DnD/Movimento.md",
+    "DnD/Ingombro.md",
+    "DnD/Link.md",
+    "DnD/Combattimento",
     "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
     "Cripta Montebello/Immagini/Isabella.png",
     "Cripta Montebello/Scena 11 - The enD.md",
@@ -277,18 +288,8 @@
     "Cripta Montebello/Scena 4 - Capo Squadra.md",
     "Cripta Montebello/Scena 2 - Fascicolo Nazista.md",
     "Cripta Montebello/Scena 1 - Prologo.md",
-    "Cripta Montebello/Scena 7 - La porta della cripta.md",
-    "Cripta Montebello/Scena 8 - Il Guardiano.md",
-    "Cripta Montebello/Trama.md",
-    "Cripta Montebello/Scheda Teodoro di Montefeltro.md",
-    "Cripta Montebello/Scheda Guardiano Scheletri.md",
-    "Cripta Montebello/Scena 5 - Obitorio.md",
     "Cripta Montebello/Immagini",
     "Cripta Montebello",
-    "Inizio/Orologi.md",
-    "conflict-files-obsidian-git.md",
-    "Inizio/Cronaca il risveglio.md",
-    "Guide/Guida Giocatori.md",
     "Inizio/Immagini/VillaLaboratorioFronte.png",
     "338B0C10",
     "6BD9FB10",
@@ -296,7 +297,6 @@
     "EB37FB10",
     "~$Strumenti.xlsx",
     "4CFABB10",
-    "4E878710",
-    "17258710"
+    "4E878710"
   ]
 }
