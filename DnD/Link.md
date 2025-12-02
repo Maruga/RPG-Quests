@@ -5,4 +5,7 @@ https://fastcharacter.com/bxdnd.htm
 https://donjon.bin.sh/fantasy/
 
 
+Negozio con oggetti molto belli
+https://www.raffoslab.com/
+
 
