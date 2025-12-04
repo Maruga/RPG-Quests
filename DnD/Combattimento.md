@@ -1,87 +1,116 @@
+## **SEQUENZA DI COMBATTIMENTO B/X 1981**
 
-Iniziativa di gruppo 1d6
-Armi danno tutte 1d6 ma qui la differenziamo per arma.
-
-### **0. Dichiarazione delle intenzioni (solo se il DM lo usa)**
+### **0. Dichiarazione delle Intenzioni (opzionale)**
 Facoltativa, ma prevista nelle regole:
-- I giocatori dichiarano **se lanceranno incantesimi**, **se fuggono**, **se cambiano arma**, ecc.   
-- Questo è importante perché il **lancio degli incantesimi può essere interrotto**.
+- I giocatori dichiarano **se lanceranno incantesimi**, **se fuggono/si ritirano**, **se cambiano arma**, ecc.
+- Importante perché il **lancio degli incantesimi può essere interrotto** se colpiti.
 
 ### **1. Tiro di Sorpresa**
 Ogni lato tira **1d6**:
-- **1–2 → Sorpreso**
-- **3–6 → Non sorpreso**
-Se un lato è sorpreso:
-- L'altro lato ottiene **un round completo gratuito**  
-    (muove, attacca, agisce liberamente).  
-- Chi è sorpreso **non può agire**, ha penalità a reazione e iniziativa.
-Se nessuno è sorpreso, si passa all'iniziativa.
+- **1–2** → Sorpreso
+- **3–6** → Non sorpreso
+**Se un lato è sorpreso:**
+- L'altro lato ottiene **un round completo gratuito** (attacchi a distanza, magia, movimento, mischia)
+- Chi è sorpreso **non può agire**
+**Se nessuno è sorpreso:** si passa all'iniziativa.
 
 ### **2. Tiro di Iniziativa**
 **1d6 per lato** (non per personaggio):
-- Chi fa **più alto agisce per primo**.   
-- In caso di **parità**, le azioni avvengono **simultaneamente**  
-    → due creature possono uccidersi a vicenda nello stesso round.
+- Chi fa **più alto agisce per primo**
+- In caso di **parità**: le azioni avvengono **simultaneamente** (due creature possono uccidersi a vicenda)
 
-### **3. Movimento**
-Il lato con l’iniziativa agisce per primo. Ogni personaggio può:
-- **Muoversi fino alla sua velocità base e attaccare**, oppure
-- **Correre fino al triplo della sua velocità** (running) ma **non può attaccare né lanciare incantesimi**, oppure
-- **Ritirarsi (B/X 1981)**
-	- Movimento massimo: **metà** del movimento base.  
-	- Movimento ordinato, senza dare aperture.  
-	- **Non provoca attacchi gratuiti**.  
-	- Non si può attaccare o lanciare magie.  
-- **Fuggire (B/X 1981)**
-	- Movimento massimo: **intero movimento base**.  
-	- Fuga precipitosa, spalle al nemico.  
-	- **Il nemico ottiene un attacco gratuito**.  
-	- Dal round successivo può correre ×3.  
-Regole importanti:
-- **Chi lancia un incantesimo non deve muoversi oltre metà della sua velocità.**
-- **Armatura e ingombro riducono la velocità.**
+### **SEQUENZA DELLE AZIONI**
+Prima agisce il **lato vincitore** (punti 3-4-5-6), poi il **lato perdente** (stessa sequenza).
 
-Dopo che il lato vincitore ha agito, **si muove il lato che ha perso l’iniziativa**.
+### **3. Attacchi a Distanza (Missile Fire)**
+**Prima il vincitore, poi il perdente.**
 
+Chi ha dichiarato attacchi con armi a distanza ora li effettua:
+- **Archi, balestre, fionde, armi da lancio** (pugnali, asce, giavellotti)
+- Tira **1d20**, consulta la tabella "To Hit" per classe/livello
+- Confronta con la **Classe Armatura (AC)** del bersaglio
+- **Colpito** → tira i danni
+- **Mancato** → fine attacco
 
-### **4. Fase Magica**
-Ordine della magia:
-1. I personaggi che hanno dichiarato un incantesimo ora tentano il lancio. 
-2. Se **il mago/chierico viene colpito** prima della fase magia →  
-    **incantesimo perso** e slot sprecato (regola chiave del B/X).
-3. Incantesimi a effetto immediato si risolvono ora.
+**Regole importanti:**
+- **Gittata**: corta/media/lunga (modificatori alla tabella)
+- **Copertura**: bonus alla CA del bersaglio
+- Se lanci un'arma (pugnale/ascia), perdi l'arma fino a recupero
 
-### **5. Attacchi**
-Ogni lato effettua gli attacchi **nel proprio turno**, nell’ordine che decide il DM.
-Per colpire:
-- Tira **1d20**, consulta la tabella “To Hit” per classe/livello.   
-- Confronta con la **Classe Armatura** del bersaglio (AC discendente).
-- Risultati:
-    - **Colpito** → tira i danni
-    - **Mancato** → fine attacco
-Se il lato è stato colpito in simultanea (iniziativa pari), entrambi i colpi vanno a segno prima dei danni finali.
-Spadone, ascia a due mani, alabarda…, attaccano alla fine del proprio turno
-Cambiare arma 
+### **4. Lancio Incantesimi (Magic)**
+**Prima il vincitore, poi il perdente.**
 
-### **6. Tiri Salvezza**
-Se un effetto lo richiede (incantesimo, veleno, soffio ecc.), il bersaglio tira un **tiro salvezza**:
-- 1d20 → deve ottenere **uguale o superiore** al valore della sua tabella.  
-Effetti comuni:
-- Veleni (morte immediata)
-- Trappole
-- Incantesimi avversari
-- Soffi dei draghi
-- Bacchette e pergamene ostili
+Chi ha dichiarato incantesimi ora li lancia:
+1. Il mago/chierico tenta il lancio
+2. **Se è stato colpito** (nella fase 3 o precedentemente) → **incantesimo perso** e slot sprecato
+3. Incantesimi a effetto immediato si risolvono ora
 
-### **7. Morale**
-Ogni volta che il DM decide (o quando un mostro scende sotto metà PF, o il leader muore…):
-- I mostri tirano **2d6**.  
-- Se il risultato < punteggio di **Morale** → **fuggono**, si arrendono o si ritirano.
-Il morale è fondamentale nello stile OSR/B/X.
+**Regole importanti:**
+- Movimento massimo per chi lancia: **metà della velocità di incontro**
+- Se interrotto da danno: slot perso ma nessun effetto
 
-### **8. Fine round → nuovo round**
+### **5. Movimento**
+**Prima il vincitore, poi il perdente.**
+
+Ogni personaggio può:
+- **Muoversi e attaccare**: fino alla velocità di incontro
+- **Doppio Movimento (house rule)**: se non sei in mischia e rinunci all'attacco, muovi il doppio della velocità di incontro
+- **Ritirarsi / Fighting Withdrawal**
+  - Dichiarato **prima dell'iniziativa**
+  - Movimento: **metà della velocità di incontro**
+  - Movimento ordinato, mantieni la guardia
+  - Nessuna penalità per il nemico
+  - Non puoi attaccare o lanciare magie
+- **Fuggire / Retreat**
+  - Dichiarato **prima dell'iniziativa**
+  - Movimento: **velocità di incontro completa**
+  - Volti le spalle, fuga precipitosa
+  - Nemico ottiene **+2 al colpire** e **ignora bonus scudo**
+  - Non puoi attaccare o lanciare magie
+
+**Regole importanti:**
+- **Velocità di incontro = velocità base ÷ 3** (es: 120'/turn = 40'/round)
+- **Armatura e ingombro** riducono la velocità
+- **Chi lancia incantesimi**: massimo metà velocità di incontro
+
+### **6. Attacchi in Mischia (Melee)**
+**Prima il vincitore, poi il perdente.**
+
+Chi è in mischia effettua gli attacchi corpo a corpo:
+- Tira **1d20**, consulta la tabella "To Hit" per classe/livello
+- Confronta con la **Classe Armatura (AC)** del bersaglio
+- **Colpito** → tira i danni
+- **Mancato** → fine attacco
+
+**Regole speciali:**
+- **Armi a due mani** (spadone, ascia bipenne, alabarda): attaccano **per ultime** nel proprio turno
+- **Iniziativa pari (simultanea)**: entrambi i colpi vanno a segno prima di applicare i danni (possibile morte reciproca)
+- **Cambiare arma**: richiede **1 round completo**, non puoi attaccare in quel round
+
+### **7. Morale (quando necessario)**
+Quando il DM decide (mostro sotto metà PF, leader morto, situazione critica):
+- I mostri tirano **2d6**
+- Se risultato **< punteggio di Morale** → fuggono, si arrendono o si ritirano
+- I PG non tirano morale (decidono i giocatori)
+**Il morale è fondamentale nello stile OSR/B/X.**
+
+### **8. Fine Round → Nuovo Round**
 Se nessun lato fugge o muore:
-- Si ripete dal punto **2: Iniziativa**. 
-- La sorpresa si usa solo all'inizio del primo round.
+- Si ripete dal punto **2: Iniziativa**
+- La sorpresa si usa **solo all'inizio del primo round**
 
+## **RIEPILOGO VELOCE**
+**Ogni Round:**
+1. Iniziativa (1d6 per lato)
+2. **Vincitore:** Missile → Magic → Movement → Melee
+3. **Perdente:** Missile → Magic → Movement → Melee
+4. Morale (se necessario)
+5. Nuovo round
 
+**Velocità:**
+- Incontro = Base ÷ 3 (120'/turn = 40'/round)
+- Ritirarsi = Metà incontro (20'/round)
+- Fuggire = Incontro completo (40'/round) + penalità
+
+**Interruzione magia:**
+- Colpito prima/durante = incantesimo perso

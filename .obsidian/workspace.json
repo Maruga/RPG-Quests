@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/Incontri Erranti.md",
+                "file": "DnD/Combattimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Incontri Erranti"
+              "title": "Combattimento"
             }
           }
         ]
@@ -224,8 +224,10 @@
   },
   "active": "590b75815eb58e57",
   "lastOpenFiles": [
-    "DnD/Link.md",
+    "DnD/Movimento.md",
+    "DnD/02 - Stanza Goblin.md",
     "DnD/Incontri Erranti.md",
+    "DnD/Link.md",
     "DnD/03 - Viaggio.md",
     "DnD/Blocco Lancio Incantesimi.md",
     "DnD/Effetti di Stato.md",
@@ -239,9 +241,7 @@
     "Cripta Montebello/Immagini/DettaglioCatacombe.png",
     "Cripta Montebello/Immagini/CopertinaFascicolo.png",
     "Cripta Montebello/Immagini/catacombe.png",
-    "DnD/Movimento.md",
     "DnD/Combattimento.md",
-    "DnD/02 - Stanza Goblin.md",
     "DnD/PG",
     "DnD/Classi.md",
     "DnD/01 - Prologo Avventura.md",
