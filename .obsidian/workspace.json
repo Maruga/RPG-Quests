@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/Combattimento.md",
+                "file": "DnD/Link.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combattimento"
+              "title": "Link"
             }
           }
         ]
@@ -224,6 +224,7 @@
   },
   "active": "590b75815eb58e57",
   "lastOpenFiles": [
+    "DnD/Combattimento.md",
     "DnD/Movimento.md",
     "DnD/02 - Stanza Goblin.md",
     "DnD/Incontri Erranti.md",
@@ -241,7 +242,6 @@
     "Cripta Montebello/Immagini/DettaglioCatacombe.png",
     "Cripta Montebello/Immagini/CopertinaFascicolo.png",
     "Cripta Montebello/Immagini/catacombe.png",
-    "DnD/Combattimento.md",
     "DnD/PG",
     "DnD/Classi.md",
     "DnD/01 - Prologo Avventura.md",
