@@ -25,7 +25,7 @@
 ## ⚔️ **Incontro - “La Sala del Massacro Goblin”**
 
 #### Composizione del gruppo nemico:
-1. **Capoguerra Goblin d’Élite (DV 4+2)**
+1. **Capo guerra Goblin d’Élite (DV 4+2)**
 2. **Bruto Goblin (DV 3, enorme clava)**
 3. **Sciamano Goblin (DV 2, 2 incantesimi)**
 4. **Lupo Crudele Maggiore (DV 4, morso devastante)**
