@@ -118,5 +118,90 @@ Diviso per 4 PG = **240 PX a testa**
 → _ottimo “riscaldamento”!_
 
 
-Pietra Maledetta.
-I goblin e tutti hanno lasciato la pietra al suo posto, si trova incastonata sulla parete in alto sulla destra. La pietra è in realtà una specie di pietra del ritorno e se trasportata dopo qualche tempo , solitamente la sera, nel raggio di alcuni metri teletrasporta tutti in una stanza buoi, da qui inzia il Dungeon per i PG per uscire e ritornare al loro mondo.
+
+## La Pietra Maledetta
+
+### Posizione
+Stanza del combattimento iniziale. Parete sinistra, in alto. Incastonata nella pietra viva.
+
+### Quando farla notare
+Dopo il combattimento, quando i PG esplorano la stanza o cercano tesori.
+
+### Da leggere:
+
+> [!NOTE]
+> Mentre perquisite la stanza, qualcosa attira il vostro sguardo.
+> In alto sulla parete destra. Una pietra. Diversa dalle altre.
+> È nera. Nero opaco con striature verdi e viola. Non riflette la luce delle torce. La assorbe.
+> Grande come un pugno. Liscia. Perfettamente ovale. Sembra... sbagliata. Come se non dovesse essere lì. Come se fosse stata messa dopo, incastonata nella roccia grezza.
+> La fissate. Per un istante, vi sembra che pulsi. Un battito. Lento.
+> Forse è solo un gioco di ombre.
+> I goblin hanno scavato tutto intorno, forse per prenderla.
+
+### Se un PG la esamina da vicino:
+
+> [!NOTE]
+> Ti avvicini. La pietra è fredda. Molto più fredda della roccia intorno. L'aria vicino è... densa. Pesante.
+> Da vicino, dentro il nero, ti sembra di vedere qualcosa. Profondità. Come guardare in un pozzo senza fondo.
+> Senti un brivido lungo la schiena. Non di freddo.
+
+### Se un PG la tocca:
+
+> [!NOTE]
+> È gelida. Liscia come vetro. Per un istante, il buio dentro sembra muoversi. Poi nulla.
+> Si stacca facilmente dalla parete. Stranamente leggera.
+> Ora è tua.
+
+### Se chiedono ai PNG sopravvissuti:
+
+> [!NOTE]
+> Il ragazzo annuisce, ancora scosso.
+> *"La pietra? Sì, siamo qui per quella."*
+> Si passa una mano sul viso.
+> *"Ci hanno chiesto di cercarla. Sembra che il suo valore sia molto alto. Non tanto come gemma... ma come componente. Per creare oggetti magici."*
+> Guarda verso la parete dove è incastonata.
+> *"Pensiamo che anche i goblin fossero qui per prenderla. Ma non l'hanno toccata. Forse non potevano. O non volevano."*
+> Si stringe nelle spalle.
+> *"Non sappiamo altro. Dobbiamo consegnarla tra qualche giorno. Nella città qui vicino."*
+
+### Se chiedono chi li ha mandati:
+
+> [!NOTE]
+> *"Un mercante. Raro. Compra e vende componenti arcane. Paga bene, non fa domande. Noi non ne facciamo a lui."*
+> Esita.
+> *"Ci ha detto solo: pietra nera, rovine del castello, parete est."*
+
+### Se chiedono quanto li paga:
+
+> [!NOTE]
+> *"800 monete d'oro. Divise tra noi."*
+> Guarda i compagni morti.
+> *"Ora... immagino di più per chi è rimasto."*
+
+**SE NESSUNA LA PRENDE DEI PG, LA PRENDE IL PNG E LA SERA ANDRÀ ALLA LOCANDE PER RINGRAZZAIARLI, LI SCATTA IL TELETRASPORTO.**
+
+
+## Note per il Master
+
+| Dettaglio                | Informazione                               |
+| ------------------------ | ------------------------------------------ |
+| **Peso**                 | Quasi nulla (inquietante)                  |
+| **Individuazione Magia** | Aura forte. Scuola: Evocazione/Necromanzia |
+| **Identificazione**      | Fallisce o dà risultati confusi            |
+| **Valore apparente**     | Sembra preziosa (gemma nera rara?)         |
+| **Valore reale**         | Maledizione                                |
+
+## Effetto Maledetto
+
+| Tempo                 | Effetto                                                   |
+| --------------------- | --------------------------------------------------------- |
+| **Durante il giorno** | Nulla. La pietra sembra inerte.                           |
+| **Al tramonto**       | La pietra diventa leggermente più fredda. Impercettibile. |
+| **Sera (dopo cena)**  | Attivazione. Tutti entro 12m vengono teletrasportati.     |
+
+### Attivazione:
+
+Nessun preavviso. Nessun tiro salvezza.
+Chi porta la pietra + tutti entro 12m → teletrasportati nella Stanza Buia.
+La pietra scompare.
+

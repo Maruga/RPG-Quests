@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/03 - Viaggio di Ritorno.md",
+                "file": "DnD/02 - Stanza Goblin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Viaggio di Ritorno"
+              "title": "02 - Stanza Goblin"
             }
           }
         ],
@@ -239,8 +239,11 @@
   },
   "active": "ebe6ea9a6ef2a5f6",
   "lastOpenFiles": [
+    "DnD/04 - Ritorno in città.md",
     "DnD/02 - Stanza Goblin.md",
     "DnD/03 - Viaggio di Ritorno.md",
+    "DnD/Riposo e Mattina.md",
+    "DnD/PG/Selwyn Greyspire - 5th Level Fighter.md",
     "DnD/Blocco Lancio Incantesimi.md",
     "DnD/01 - Prologo Avventura.md",
     "DnD/Viaggo.md",
@@ -262,7 +265,6 @@
     "DnD/Link.md",
     "Link Utili.md",
     "DnD/Incantesimi Arcani.md",
-    "DnD/PG/Selwyn Greyspire - 5th Level Fighter.md",
     "Cripta Montebello/Scena 11 - The enD.md",
     "Cripta Montebello/Immagini/Isabella.png",
     "Cripta Montebello/Immagini/GuardianoConGuardie.png",
@@ -275,8 +277,6 @@
     "DnD/Incantesimi Clericali.md",
     "DnD/Combattimento",
     "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
-    "Cripta Montebello/Scena 6 - Elisyum di Rimini.md",
-    "Cripta Montebello/Idee per avventura.md",
     "Cripta Montebello/Immagini/MedaglioSerpente.png",
     "Cripta Montebello/Immagini/Teodoro.jpeg",
     "Cripta Montebello/Immagini",
