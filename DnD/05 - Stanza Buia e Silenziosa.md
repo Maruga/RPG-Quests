@@ -53,4 +53,6 @@ Non sapete dove siete.
 Ma qualcuno vi ha portati qui. E vi sta aspettando.
 
 
-*[Qui inizia la vera avventura.]*
+CORRIDOIO PER USCIRE
+Poggiando le mani sulla grate questa cede e il pg cade per 12 metri.
+
