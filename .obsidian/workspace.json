@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/09 - Ragni.md",
+                "file": "DnD/10 - Ragni.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Ragni"
+              "title": "10 - Ragni"
             }
           }
         ],
@@ -239,12 +239,15 @@
   },
   "active": "ebe6ea9a6ef2a5f6",
   "lastOpenFiles": [
-    "DnD/08 - Cripta.md",
-    "DnD/10 - Salto sul fiume.md",
+    "DnD/09 - Scale per l'uscita.md",
+    "DnD/06 - Stanza Centrale.md",
     "DnD/07 - Stanza del Mago.md",
-    "DnD/06 - Stanza centrale.md",
+    "DnD/08c - Cripta - Stanza segreta.md",
+    "DnD/11 - Salto sul fiume.md",
+    "DnD/10 - Ragni.md",
+    "DnD/08a - Cripta - Scala.md",
+    "DnD/08b - Cripta - Scheletri.md",
     "DnD/05 - Stanza Buia e Silenziosa.md",
-    "DnD/09 - Ragni.md",
     "DnD/Link.md",
     "DnD/04 - Ritorno in città.md",
     "DnD/PG/05 - Stanza Buia e silenziosa.md",
@@ -267,9 +270,6 @@
     "Guide/Clan.md",
     "Guide/Cariche della Camarilla.md",
     "Cripta Montebello/Scheda Teodoro di Montefeltro.md",
-    "Cripta Montebello/Scheda Guardiano Scheletri.md",
-    "Cripta Montebello/Scena 11 - The enD.md",
-    "Cripta Montebello/Scena 10 - Imboscata del Sabbat.md",
     "Cripta Montebello/Immagini/Teodoro.jpeg",
     "Cripta Montebello/Immagini/MedaglioSerpente.png",
     "Cripta Montebello/Immagini/Isabella.png",
