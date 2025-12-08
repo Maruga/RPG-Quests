@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c402772ae11101aa",
+        "id": "8797f92bd099483d",
         "type": "tabs",
         "children": [
           {
-            "id": "590b75815eb58e57",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "DnD/Immagini/StanzaScalaCripta.png"
-              },
-              "icon": "lucide-image",
-              "title": "StanzaScalaCripta"
-            }
-          },
-          {
-            "id": "ebe6ea9a6ef2a5f6",
+            "id": "c032d6793c631e90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/Movimento.md",
+                "file": "Vampiri la Masquerade/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Movimento"
+              "title": "README"
             }
           }
         ]
@@ -234,19 +222,38 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "590b75815eb58e57",
+  "active": "c032d6793c631e90",
   "lastOpenFiles": [
-    "DnD/Immagini/StanzaScale.png",
-    "DnD/Immagini/StanzaUscitaTentacoli.png",
-    "DnD/Immagini/mappaPgPergamena.png",
-    "DnD/Immagini/MappaXstampa.png",
-    "DnD/Immagini/SotterraneiCastello.png",
-    "DnD/Immagini/StanzaCentrale.png",
-    "DnD/Immagini/StanzaCripta.png",
-    "DnD/Immagini/StanzaMago.png",
-    "DnD/Immagini/StanzaRagni.png",
+    "Vampiri la Masquerade/Il Risveglio/Png/Bambina Segrete Tzime.md",
+    "Vampiri la Masquerade/README.md",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Trama.md",
+    "Vampiri la Masquerade/Il Risveglio/Materiale/RAPPORTO TOSSICOLOGICO – Campione “Sangue Blu”.md",
     "DnD/Immagini/StanzaScalaCripta.png",
-    "DnD/Immagini/Mappa.png",
+    "Vampiri la Masquerade/Il Risveglio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
+    "Vampiri la Masquerade/Musica/Sinfonia.mp3",
+    "Vampiri la Masquerade/Musica/Sala Delle Armi San Leo.mp3",
+    "Vampiri la Masquerade/Musica/emissary-of-darkness-250732.mp3",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Doni di Teodoro di Montefeltro.md",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/README.md",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/Teodoro.jpeg",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/MedaglioSerpente.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/Isabella.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/GuardianoConGuardie.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/Ghoul.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/FotoIngresso.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/DettaglioCatacombe.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/CopertinaFascicolo.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Immagini/catacombe.png",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Idee per avventura.md",
+    "Vampiri la Masquerade/Il Risveglio/README.md",
+    "Vampiri la Masquerade/Il Risveglio/Orologi.md",
+    "Vampiri la Masquerade/Capitolo - Cripta Montebello/Scena 1 - Prologo.md",
+    "README.md.md",
+    "Vampiri la Masquerade/Code/Strumenti.md",
+    "Link Utili.md",
+    "Vampiri la Masquerade/Code",
+    "Vampiri la Masquerade.md",
+    "Vampiri la Masquerade",
     "DnD/Link.md",
     "DnD/05 - Stanza Buia e Silenziosa.md",
     "DnD/06 - Stanza Centrale.md",
@@ -258,29 +265,10 @@
     "DnD/Peso Oggetti.md",
     "DnD/10 - Stanza dei Ragni.md",
     "DnD/Materiale/Ragnatela Ragni.md",
-    "DnD/08c - Cripta - Stanza segreta.md",
-    "DnD/07 - Stanza del Mago.md",
-    "DnD/PG/Selwyn Greyspire - 5th Level Fighter.md",
-    "DnD/09 - Scale per l'uscita.md",
-    "DnD/08a - Cripta - Scala.md",
-    "DnD/08b - Cripta - Scheletri.md",
-    "DnD/04 - Ritorno in città.md",
-    "DnD/PG/05 - Stanza Buia e silenziosa.md",
-    "DnD/02 - Stanza Goblin.md",
-    "DnD/01 - Prologo Avventura.md",
-    "DnD/Illuminazione.md",
-    "DnD/Combattimento.md",
-    "DnD/Effetti di Stato.md",
-    "DnD/Incantesimi Arcani.md",
     "Strumenti/3860D300",
     "Strumenti/~$Strumenti.xlsx",
     "Strumenti/F9AAB300",
     "Strumenti/~$Schede_DnD_BX91.xlsx",
-    "DnD/Materiale",
-    "DnD/Immagini",
-    "DnD/PG",
-    "DnD/Combattimento",
-    "Cripta Montebello/Immagini",
-    "Cripta Montebello"
+    "DnD/Materiale"
   ]
 }
