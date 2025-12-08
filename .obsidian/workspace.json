@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "DnD/Immagini/MappaXstampa.png"
+                "file": "DnD/Immagini/StanzaScalaCripta.png"
               },
               "icon": "lucide-image",
-              "title": "MappaXstampa"
+              "title": "StanzaScalaCripta"
             }
           },
           {
@@ -236,17 +236,17 @@
   },
   "active": "590b75815eb58e57",
   "lastOpenFiles": [
-    "DnD/Immagini/StanzaUscitaTentacoli.png",
-    "DnD/Immagini/MappaXstampa.png",
     "DnD/Immagini/StanzaScale.png",
-    "DnD/Immagini/StanzaScalaCripta.png",
-    "DnD/Immagini/StanzaRagni.png",
-    "DnD/Immagini/StanzaMago.png",
-    "DnD/Immagini/StanzaCripta.png",
+    "DnD/Immagini/StanzaUscitaTentacoli.png",
+    "DnD/Immagini/mappaPgPergamena.png",
+    "DnD/Immagini/MappaXstampa.png",
+    "DnD/Immagini/SotterraneiCastello.png",
     "DnD/Immagini/StanzaCentrale.png",
-    "DnD/Immagini/mappaPgDM.player.png",
-    "DnD/Immagini/MappaPgOriginale.jpg",
-    "DnD/Immagini/mappaPgDM.png",
+    "DnD/Immagini/StanzaCripta.png",
+    "DnD/Immagini/StanzaMago.png",
+    "DnD/Immagini/StanzaRagni.png",
+    "DnD/Immagini/StanzaScalaCripta.png",
+    "DnD/Immagini/Mappa.png",
     "DnD/Link.md",
     "DnD/05 - Stanza Buia e Silenziosa.md",
     "DnD/06 - Stanza Centrale.md",
