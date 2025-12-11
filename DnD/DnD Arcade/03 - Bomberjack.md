@@ -25,15 +25,61 @@
 
 ---
 
+## Il Dono dell'Elfo — La Bomba
+
+> _Leggere appena entrati nel livello:_
+
+> Un lampo verde smeraldo. L'elfo riappare — lo stesso del primo livello. In mano tiene una sfera di metallo scuro, grande come un pugno, con rune che pulsano di luce arancione.
+> 
+> **"Prendete. Ne avrete bisogno qui dentro."**
+> 
+> Vi porge la sfera. È calda al tatto. Vibra leggermente.
+> 
+> **"Posatela a terra. Pronunciate 'Ignis'. Poi... correte."**
+> 
+> Scompare prima che possiate chiedere altro.
+
+### Meccanica Bomba
+Spiegare la dinamica della bomba ai PG.
+
+|Stat|Valore|
+|---|---|
+|Quantità|**1 per PG**|
+|Attivazione|Posare a terra + comando vocale **"Ignis"** (opzionale)|
+|Timer|**Esplode automaticamente dopo 5 round** se non attivata prima|
+|Esplosione|4 direzioni (N/S/E/O), 3 quadretti per direzione (15'/4,5m)|
+|Danni|**5d6 fuoco** (TS Incantesimi dimezza)|
+|Bersagli|Chiunque nell'area (PG, mostri, fantasmini)|
+
+### Cosa Distrugge
+
+|Elemento|Effetto|
+|---|---|
+|Lastre di Ghiaccio Antico|Distrutte|
+|Portali Sigillati|Distrutti|
+|Blocchi di Neve Compressa|Distrutti|
+|Pilastri di Tronco Ghiacciato|**Immuni**|
+|Regali|**Immuni**|
+
+### Note
+
+- **Una volta posata, non può essere raccolta**
+- L'esplosione si propaga lungo i corridoi — se esplode a un incrocio, invade tutte e 4 le vie
+- I Pilastri di Tronco Ghiacciato **bloccano** la propagazione in quella direzione
+- Il rumore è **FORTE** — tutti i fantasmini sulla mappa sentono e reagiscono
+- **I fantasmini conoscono le bombe** — se ne vedono una a terra, la evitano e non si avvicinano
+
+---
+
 ## Mappa — Legenda
 
-| Elemento                           | Nome                              | Descrizione                              |
-| ---------------------------------- | --------------------------------- | ---------------------------------------- |
-| **Lastre di Ghiaccio Antico**      | Vetrate                           | Si rompono automaticamente, rumore forte |
-| **Portali Sigillati**              | Porte                             | Scassinare o sfondare                    |
-| **Blocchi di Neve Compressa**      | Muri distruttibili (rettangolari) | CA 10, HP 1D10+2                         |
-| **Pilastri di Tronchi Ghiacciati** | Muri indistruttibili (quadrati)   | Indistruttibili                          |
-| **Regali (x6)**                    | Sparsi nella mappa                | Colori visibili, contenuto nascosto      |
+|Elemento|Nome|Descrizione|
+|---|---|---|
+|**Lastre di Ghiaccio Antico**|Vetrate|Si rompono automaticamente, rumore forte|
+|**Portali Sigillati**|Porte|Scassinare o sfondare|
+|**Blocchi di Neve Compressa**|Muri distruttibili (rettangolari)|CA 10, HP 8|
+|**Pilastri di Tronco Ghiacciato**|Muri indistruttibili (quadrati)|Indistruttibili|
+|**Regali (x6)**|Sparsi nella mappa|Colori visibili, contenuto nascosto|
 
 ---
 
@@ -63,18 +109,18 @@
 
 ### Blocchi di Neve Compressa (Muri Distruttibili)
 
-| Stat   | Valore                             |
-| ------ | ---------------------------------- |
-| CA     | 10                                 |
-| HP     | 1D10+2                             |
-| Bonus  | Armi contundenti: +2 danni         |
-| Rumore | **6 quadretti** (30'/9m) per colpo |
+|Stat|Valore|
+|---|---|
+|CA|10|
+|HP|**1d10+2** (tira quando colpito la prima volta)|
+|Bonus|Armi contundenti: +2 danni|
+|Rumore|**6 quadretti** (30'/9m) per colpo|
 
 > _Quando si colpisce:_ Ogni colpo è un tonfo sordo che vibra nell'aria gelida. Qualcuno potrebbe avvicinarsi per controllare.
 
 ---
 
-### Pilastri di Permafrost (Muri Indistruttibili)
+### Pilastri di Tronco Ghiacciato (Muri Indistruttibili)
 
 Indistruttibili. Bloccano linea di vista e movimento.
 
@@ -159,7 +205,7 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 
 **Posizione iniziale:** Angolo Nord-Est
 
-**Comportamento:** **Stalker** — si avvicina lentamente (metà movimento), si ferma ad ascoltare ogni 2 round. Paziente. Metodica. Quando ascolta percepisce anche i passi dei giocatori a 8 quadretti di distanza.
+**Comportamento:** **Stalker** — si avvicina lentamente (metà movimento), si ferma ad ascoltare ogni 2 round. Paziente. Metodica.
 
 |Attacco|Danno|Effetto|
 |---|---|---|
@@ -241,6 +287,22 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 
 ---
 
+# REGALI
+
+## Distribuzione Suggerita
+
+|Posizione|Colore|Contenuto|
+|---|---|---|
+|Alto-sinistra|🟡 Giallo|Oro|
+|Alto-centro|🟣 Rosa|Magia|
+|Centro-sinistra|🟡 Giallo|Oro|
+|Centro|⚪ Bianco|Cura|
+|Centro-destra|🟢 Verde|Utility|
+|Basso-sinistra|⚪ Bianco|Cura|
+|Basso-destra|🔴 Rosso|Arma|
+
+---
+
 # NOTE PER IL MASTER
 
 ## Ordine di Gioco (Round)
@@ -271,6 +333,14 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 
 # SCHEDA RAPIDA — STAMPA E GIOCA
 
+## Bomba (1 per PG)
+
+|Attivazione|Timer|Esplosione|Danni|
+|---|---|---|---|
+|Posare + "Ignis"|5 round auto|4 dir × 3□|5d6 fuoco (TS Incantesimi ½)|
+
+Non raccoglibile | Distrugge tutto tranne Pilastri e Regali | Fantasmini la evitano | Rumore FORTE
+
 ## Rumore
 
 |Azione|Raggio|
@@ -285,17 +355,17 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 |---|---|---|---|
 |Lastra Ghiaccio|—|0|Rumore 12□|
 |Porta|CD 13/15|—|Scassinare silenzioso|
-|Muro Neve|10|8|Contundente +2, rumore 6□|
-|Pilastro|—|∞|Indistruttibile|
+|Muro Neve|10|1d10+2|Contundente +2, rumore 6□|
+|Pilastro Tronco|—|∞|Indistruttibile|
 
 ## Fantasmini (HD 5 | HP 25 | CA 5 [14] | Mov 40'/12m/8□)
 
-| Nome         | Colore | Pos. | Attacco    | Effetto            | Comportamento                         |
-| ------------ | ------ | ---- | ---------- | ------------------ | ------------------------------------- |
-| **Taranis**  | 🔴     | NO   | 1d8        | Assordato 1 round  | Corre verso rumore                    |
-| **Angerona** | 🩷     | NE   | 1d8        | Mutismo 1 round    | Lenta, ascolta ogni 2 round           |
-| **Lemuria**  | 🩵     | SO   | 1d6        | Teleport 20'       | Nervosa, **fugge da vetri** 1d4 round |
-| **Lupercus** | 🟠     | SE   | 1d8 (+1d4) | Bonus se in coppia | Si unisce al più vicino ai PG         |
+|Nome|Colore|Pos.|Attacco|Effetto|Comportamento|
+|---|---|---|---|---|---|
+|**Taranis**|🔴|NO|1d8|Assordato 1 round|Corre verso rumore|
+|**Angerona**|🩷|NE|1d8|Mutismo 1 round|Lenta, ascolta ogni 2 round|
+|**Lemuria**|🩵|SO|1d6|Teleport 20'|Nervosa, **fugge da vetri** 1d4 round|
+|**Lupercus**|🟠|SE|1d8 (+1d4)|Bonus se in coppia|Si unisce al più vicino ai PG|
 
 **Speciale:** Incorporei — armi normali: danno dimezzato | TS G5 | Morale 9
 

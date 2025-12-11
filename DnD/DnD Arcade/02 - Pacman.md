@@ -163,26 +163,7 @@ Spiriti di festività antiche, divorate dal rancore. **Unici — se muoiono, res
 |Morale|12|
 |Speciale|Immune freddo, vulnerabile fuoco (danno x2), **se 2+ attaccano stesso bersaglio: +2 TxC**|
 
-> _Prima apparizione:_ Ossa bianche, ricoperte di brina. Si muovono a scatti, come marionette con i fili gelati. Il suono del ghiaccio che si rompe a ogni passo. Non pensano. Non temono. Avanzano.
-
----
-
-## Minion — Elfi Corrotti
-
-**Quantità:** 3 in campo **Respawn:** Nessuno — morti = morti
-
-|Stat|Valore|
-|---|---|
-|Dadi Vita|3+1|
-|Punti Ferita|16|
-|Classe Armatura|4 [15]|
-|Movimento|40'/12m/8 quadretti|
-|Attacco|Pugnale gelido 1d6+2 (mischia) / Ghiacciolo 1d4 (30'/9m/6 quadretti)|
-|Tiri Salvezza|G3|
-|Morale|8|
-|Speciale|Se colpiscono in mischia: bersaglio -10'/3m/2 quadretti movimento per 2 round|
-
-> _Prima apparizione:_ Sembravano elfi. Una volta. Ora la pelle è grigio-azzurra, gli occhi vuoti e lattiginosi. Indossano ancora i grembiuli da lavoro, macchiati di nero. Veloci, silenziosi. Non parlano. Non ridono più.
+> _Prima apparizione:_ Ossa bianche, ricoperte di brina. Ma la testa... la testa è sbagliata. Gonfia, deforme, perfettamente sferica — come una pallina di ghiaccio con due orbite vuote. Si muovono a scatti, la testa troppo pesante che oscilla. Il suono del ghiaccio che si rompe a ogni passo. Non pensano. Non temono. Avanzano.
 
 ---
 
@@ -217,7 +198,6 @@ Spiriti di festività antiche, divorate dal rancore. **Unici — se muoiono, res
 |**T**|Pattuglia|Inverte direzione, torna sui suoi passi|
 
 ## Lista Direzioni (20 passi)
-Se un movimento non è possibile, esempio tornare indietro quando si inizia, passa al prossimo.
 
 |1|2|3|4|5|6|7|8|9|10|
 |---|---|---|---|---|---|---|---|---|---|
@@ -235,9 +215,6 @@ Se un movimento non è possibile, esempio tornare indietro quando si inizia, pas
 |Scheletro 2|2|
 |Scheletro 3|3|
 |Scheletro 4|4|
-|Elfo 1|5|
-|Elfo 2|6|
-|Elfo 3|7|
 
 **Ogni round:** ogni mostro avanza al passo successivo. Finita la lista (20), ricomincia da 1.
 
@@ -298,6 +275,23 @@ Quando un PG trova il **Power-Up** (regalo speciale, a discrezione del Master):
 
 ---
 
+# REGALI
+
+## Distribuzione Suggerita
+
+|Posizione|Colore|Contenuto|
+|---|---|---|
+|Alto-sinistra|🟢 Verde|Utility|
+|Alto-centro|🟢 Verde|Utility|
+|Alto-destra|🔴 Rosso|Arma|
+|Centro (sotto spawn)|🟣 Rosa|Magia|
+|Destra-centro|⚪ Bianco|Cura|
+|Basso-sinistra|🟢 Verde|Utility|
+|Basso-centro|🟡 Giallo|Oro|
+|**Porta segreta (alto)**|⚫ Nero|Rischio|
+
+---
+
 # NOTE PER IL MASTER
 
 ## Ordine di Gioco (Round)
@@ -321,7 +315,6 @@ Quando un PG trova il **Power-Up** (regalo speciale, a discrezione del Master):
 |Mostro|Minaccia|Note|
 |---|---|---|
 |Scheletri|Media|Respawn costante, logora risorse|
-|Elfi|Media-Alta|Pochi ma pericolosi, rallentano la fuga|
 |Fantasmini|Alta|I veri nemici — gestirli è la sfida tattica|
 
 ## Totale Mostri in Campo
@@ -330,8 +323,7 @@ Quando un PG trova il **Power-Up** (regalo speciale, a discrezione del Master):
 |---|---|---|
 |Fantasmini|4|No|
 |Scheletri|4|Sì (immediato)|
-|Elfi|3|No|
-|**Totale**|**11**|—|
+|**Totale**|**8**|—|
 
 ---
 
@@ -355,16 +347,14 @@ Quando un PG trova il **Power-Up** (regalo speciale, a discrezione del Master):
 |Mostro|HD|HP|CA|Mov|Attacco|Speciale|
 |---|---|---|---|---|---|---|
 |**Scheletro**|3|14|5 [14]|30'/9m/6□|Artiglio 1d8|Immune freddo, fuoco x2, +2 TxC se 2+ su stesso bersaglio|
-|**Elfo**|3+1|16|4 [15]|40'/12m/8□|Pugnale 1d6+2 / Ghiacciolo 1d4 (30')|Mischia: -10' mov 2 round|
 
-**Scheletri:** 4 in campo, respawn immediato | TS G3 | Morale 12 **Elfi:** 3 in campo, no respawn | TS G3 | Morale 8
+**Scheletri:** 4 in campo, respawn immediato | TS G3 | Morale 12
 
 ---
 
 ## Lista Direzioni Rapida
 
 **N**=Nord | **S**=Sud | **E**=Est | **O**=Ovest | **P**=Pausa | **A**=Ascolta (30') | **T**=Pattuglia (torna indietro)
-Se un movimento non è possibile, esempio tornare indietro quando si inizia, passa al prossimo.
 
 ```
 1-N   2-E   3-A   4-S   5-O   6-P   7-N   8-T   9-E   10-S
@@ -374,7 +364,6 @@ Se un movimento non è possibile, esempio tornare indietro quando si inizia, pas
 |Mostro|Passo iniziale|
 |---|---|
 |Scheletro 1-4|1, 2, 3, 4|
-|Elfo 1-3|5, 6, 7|
 
 **Meccanica:** Prosegue dritto → gira al primo incrocio nella direzione indicata
 
