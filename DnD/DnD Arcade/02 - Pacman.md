@@ -337,22 +337,6 @@ Quando un PG trova il **Power-Up** (regalo speciale, a discrezione del Master):
 
 ---
 
-# REGALI
-
-## Distribuzione Suggerita
-
-|Posizione|Colore|Contenuto|
-|---|---|---|
-|Alto-sinistra|🟢 Verde|Utility|
-|Alto-centro|🟢 Verde|Utility|
-|Alto-destra|🔴 Rosso|Arma|
-|Centro (sotto spawn)|🟣 Rosa|Magia|
-|Destra-centro|⚪ Bianco|Cura|
-|Basso-sinistra|🟢 Verde|Utility|
-|Basso-centro|🟡 Giallo|Oro|
-|**Porta segreta (alto)**|⚫ Nero|Rischio|
-
----
 
 # NOTE PER IL MASTER
 
