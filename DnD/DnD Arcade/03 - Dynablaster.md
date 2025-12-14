@@ -167,17 +167,17 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 
 ### Statistiche Base (tutti)
 
-| Stat            | Valore                                     |
-| --------------- | ------------------------------------------ |
-| Dadi Vita       | 5                                          |
-| Punti Ferita    | 25                                         |
-| Classe Armatura | 5 [14]                                     |
-| Movimento       | 40'/12m/8 quadretti                        |
-| Attacco         | Tocco gelido                               |
-| Tiri Salvezza   | G5                                         |
-| Morale          | 9                                          |
-| Speciale        | Incorporei — armi normali: danno dimezzato |
-| Infravisione    | 60'/ 18m / 12 quadretti                    |
+| Stat            | Valore                                                                    |
+| --------------- | ------------------------------------------------------------------------- |
+| Dadi Vita       | 5                                                                         |
+| Punti Ferita    | 25                                                                        |
+| Classe Armatura | 5 [14]                                                                    |
+| Movimento       | 40'/12m/8 quadretti                                                       |
+| Attacco         | Tocco gelido                                                              |
+| Tiri Salvezza   | **TS G5:** Morte 10, Bacchette 11, Paralisi 12, Soffio 13, Incantesimi 14 |
+| Morale          | 9                                                                         |
+| Speciale        | Incorporei — armi normali: danno dimezzato                                |
+| Infravisione    | 60'/ 18m / 12 quadretti                                                   |
 
 
 ### 🔴 TARANIS — Il Rosso

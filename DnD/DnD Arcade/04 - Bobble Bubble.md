@@ -74,15 +74,15 @@ Spiriti di festività legate all'acqua e ai fiumi sacri. **Unici — se muoiono,
 
 ### Statistiche Base (tutti tranne dove specificato)
 
-|Stat|Valore|
-|---|---|
-|Dadi Vita|5|
-|Punti Ferita|25|
-|Classe Armatura|5 [14]|
-|Movimento|40'/12m/8 quadretti|
-|Tiri Salvezza|G5|
-|Morale|9|
-|Speciale|Incorporei — armi normali: danno dimezzato|
+| Stat            | Valore                                                                    |
+| --------------- | ------------------------------------------------------------------------- |
+| Dadi Vita       | 5                                                                         |
+| Punti Ferita    | 25                                                                        |
+| Classe Armatura | 5 [14]                                                                    |
+| Movimento       | 40'/12m/8 quadretti                                                       |
+| Tiri Salvezza   | **TS G5:** Morte 10, Bacchette 11, Paralisi 12, Soffio 13, Incantesimi 14 |
+| Morale          | 9                                                                         |
+| Speciale        | Incorporei — armi normali: danno dimezzato                                |
 
 
 ### 🔴 TIBERINUS — Il Rosso (ACQUA)

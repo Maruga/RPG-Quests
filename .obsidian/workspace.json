@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/DnD Arcade/04 - Bobble Bubble.md",
+                "file": "DnD/DnD Arcade/02 - Pacman.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Bobble Bubble"
+              "title": "02 - Pacman"
             }
           }
         ]
@@ -224,11 +224,12 @@
   },
   "active": "403c25d909624d1c",
   "lastOpenFiles": [
-    "DnD/DnD Arcade/03 - Dynablaster.md",
-    "DnD/DnD Arcade/02 - Pacman.md",
-    "DnD/DnD Arcade/Meccaniche.md",
-    "DnD/DnD Arcade/01 - Prologo.md",
     "DnD/DnD Arcade/05 - Lo Spirito.md",
+    "DnD/DnD Arcade/02 - Pacman.md",
+    "DnD/DnD Arcade/04 - Bobble Bubble.md",
+    "DnD/DnD Arcade/03 - Dynablaster.md",
+    "DnD/DnD Arcade/01 - Prologo.md",
+    "DnD/DnD Arcade/Meccaniche.md",
     "DnD/DnD Arcade/Immagini/CavernaDrago.png",
     "DnD/DnD Arcade/Musica/BubbleBobble/04 Secret Room.wav",
     "DnD/DnD Arcade/Musica/Dynablaster/14 Defeat.wav",
@@ -243,7 +244,6 @@
     "DnD/DnD Arcade/Immagini/02 - Pacman.player.png",
     "DnD/DnD Arcade/Immagini/03 - Dynablaster.png",
     "DnD/DnD Arcade/Immagini/03 - Dynablaster.player.png",
-    "DnD/DnD Arcade/04 - Bobble Bubble.md",
     "DnD/DnD Arcade/Immagini/04 - Bobble Bubble.png",
     "DnD/Link.md",
     "DnD/OneShot - Persi/11 - Salto sul fiume.md",

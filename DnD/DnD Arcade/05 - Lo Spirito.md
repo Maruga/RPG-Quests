@@ -57,18 +57,18 @@ vedi tabella emporio: [[Tabelle Regali]]
 
 ## Statistiche Skarn (Fase 1)
 
-| Stat            | Valore                                                    |
-| --------------- | --------------------------------------------------------- |
-| Dadi Vita       | 10**                                                      |
-| Punti Ferita    | **65**                                                    |
-| Classe Armatura | 2 [17]                                                    |
-| Movimento       | Terra 30'/9m/6quadretti - Volo 80'/24m/16 quadretti       |
-| Attacchi        | 2 artigli + 1 morso                                       |
-| Danni           | Artiglio 1d6+2 / Morso 3d8                                |
-| Soffio          | Cono di gelo 80' × 30' — **65 danni** (TS Soffio dimezza) |
-|                 | Il soffio del drago fa danni pari ai suoi **HP attuali**. |
-| Tiri Salvezza   | G10                                                       |
-| Morale          | 10 (non fugge mai)                                        |
+| Stat            | Valore                                                                 |
+| --------------- | ---------------------------------------------------------------------- |
+| Dadi Vita       | 10**                                                                   |
+| Punti Ferita    | **65**                                                                 |
+| Classe Armatura | 2 [17]                                                                 |
+| Movimento       | Terra 30'/9m/6quadretti - Volo 80'/24m/16 quadretti                    |
+| Attacchi        | 2 artigli + 1 morso                                                    |
+| Danni           | Artiglio 1d6+2 / Morso 3d8                                             |
+| Soffio          | Cono di gelo 80' × 30' /  — **65 danni** (TS Soffio dimezza)           |
+|                 | Il soffio del drago fa danni pari ai suoi **HP attuali**.              |
+| Tiri Salvezza   | **TS G10:** Morte 6, Bacchette 7, Paralisi 8, Soffio 8, Incantesimi 10 |
+| Morale          | 10 (non fugge mai)                                                     |
 
 ### Abilità Speciali Fase 1
 
@@ -137,18 +137,18 @@ vedi tabella emporio: [[Tabelle Regali]]
 
 ## Statistiche Skarn Corrotto (Fase 2)
 
-| Stat            | Valore                                                    |
-| --------------- | --------------------------------------------------------- |
-| Dadi Vita       | 10**                                                      |
-| Punti Ferita    | **55** (nuovi)                                            |
-| Classe Armatura | 0 [19] — ghiaccio corazzato                               |
-| Movimento       | 20'/6m/4quadretti — non vola più                          |
-| Attacchi        | 2 artigli + 1 morso                                       |
-| Danni           | Artiglio 1d8+2 / Morso 3d10                               |
-| Soffio          | Cono di gelo 60' × 20' — **55 danni** (TS Soffio dimezza) |
-|                 | Il soffio del drago fa danni pari ai suoi **HP attuali**. |
-| Tiri Salvezza   | G10                                                       |
-| Morale          | 12 (combatte fino alla morte finale)                      |
+| Stat            | Valore                                                                  |
+| --------------- | ----------------------------------------------------------------------- |
+| Dadi Vita       | 10**                                                                    |
+| Punti Ferita    | **55** (nuovi)                                                          |
+| Classe Armatura | 0 [19] — ghiaccio corazzato                                             |
+| Movimento       | 20'/6m/4quadretti — non vola più                                        |
+| Attacchi        | 2 artigli + 1 morso                                                     |
+| Danni           | Artiglio 1d8+2 / Morso 3d10                                             |
+| Soffio          | Cono di gelo 60' × 20' — **55 danni** (TS Soffio dimezza)               |
+|                 | Il soffio del drago fa danni pari ai suoi **HP attuali**.               |
+| Tiri Salvezza   | **TS G10:** Morte 6, Bacchette 7, Paralisi 8, Soffio 8, Incantesimi 100 |
+| Morale          | 12 (combatte fino alla morte finale)                                    |
 
 ### Abilità Speciali Fase 2
 
