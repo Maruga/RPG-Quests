@@ -20,7 +20,6 @@ I PG livello 5-6 con equipaggiamento magico eliminano un fantasmino singolo in 2
 
 **Flusso tipico:** Saturno trova i PG → scheletri convergono → Yula taglia la fuga → Modraniht appare nel caos.
 
----
 
 ## Livello 2 — Dynablaster
 
@@ -37,7 +36,6 @@ I PG livello 5-6 con equipaggiamento magico eliminano un fantasmino singolo in 2
 
 **Nota:** I PG attenti noteranno il bagliore rosso che li segue senza attaccare. Possono usare questa informazione tatticamente (attirare Taranis in una trappola, fuggire prima che arrivino gli altri).
 
----
 
 ## Livello 3 — Bubble Bobble
 
@@ -63,8 +61,6 @@ I PG livello 5-6 con equipaggiamento magico eliminano un fantasmino singolo in 2
 |1|Sempre (scheletri danno supporto)|
 |2|2+ fantasmini entro 40 ft l'uno dall'altro|
 |3|Ruoli diversi — ognuno agisce secondo il suo comportamento|
-
----
 
 ## Se i PG Isolano un Fantasmino
 

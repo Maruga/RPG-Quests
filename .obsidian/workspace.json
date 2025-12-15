@@ -11,14 +11,12 @@
             "id": "6a436a476e8616f4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DnD/OneShot - Level Up/Note Tattiche — Gestione Fantasmini.md",
-                "mode": "source",
-                "source": false
+                "file": "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade Natale.png"
               },
-              "icon": "lucide-file",
-              "title": "Note Tattiche — Gestione Fantasmini"
+              "icon": "lucide-image",
+              "title": "Dungeon & Arcade Natale"
             }
           }
         ]
@@ -224,18 +222,18 @@
   },
   "active": "6a436a476e8616f4",
   "lastOpenFiles": [
+    "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade.png",
+    "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade Natale.png",
+    "DnD/OneShot - Level Up/Immagini/TestaDragoBianco.jpeg",
+    "DnD/OneShot - Level Up/Immagini/scheletroGhiaccio.png",
+    "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg",
+    "DnD/OneShot - Level Up/Immagini/CavernaDrago.png",
+    "DnD/OneShot - Level Up/Note Tattiche.md",
     "DnD/OneShot - Level Up/03 - Dynablaster.md",
-    "DnD/OneShot - Level Up/Note Tattiche — Gestione Fantasmini.md",
     "DnD/OneShot - Level Up/02 - Pacman.md",
     "DnD/OneShot - Level Up/Immagini/02 - Pacman.player.png",
     "DnD/OneShot - Level Up/Meccaniche.md",
-    "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade Natale.png",
-    "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade.png",
-    "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg",
-    "DnD/OneShot - Level Up/Immagini/CavernaDrago.png",
     "DnD/OneShot - Escape Room/Idee.md",
-    "DnD/OneShot - Level Up/Immagini/scheletroGhiaccio.png",
-    "DnD/OneShot - Level Up/Immagini/TestaDragoBianco.jpeg",
     "DnD/OneShot - Level Up/Immagini/03 - Dynablaster.player.png",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.png",
@@ -268,7 +266,6 @@
     "DnD/Oggetti Magici.md",
     "DnD/Movimento.md",
     "DnD/Link.md",
-    "DnD/Incontri Erranti.md",
-    "DnD/Incantesimi Clericali.md"
+    "DnD/Incontri Erranti.md"
   ]
 }
