@@ -144,6 +144,7 @@ Rappresentano festività passate/corrotte.
 ## Slot Totali
 
 **Formula:** 20 + (modificatore FOR × 2)
+#definire
 
 |Forza|Mod|Slot Totali|
 |---|---|---|
