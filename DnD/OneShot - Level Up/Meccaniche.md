@@ -111,12 +111,12 @@ All'inizio di ogni mappa vedono:
 
 ### Elementi della Mappa
 
-| Elemento      | Meccanica                         | Rumore                                    |
-| ------------- | --------------------------------- | ----------------------------------------- |
-| Colonne       | Indistruttibili, copertura        | -                                         |
-| Vetri         | Si rompono automaticamente (0 HP) | Forte                                     |
-| Pareti spesse | CA 12, 15 HP                      | Moderato (ogni colpo)                     |
-| Porte         | Scassinare CD 13 / Sfondare CD 15 | Sfondare = forte, Scassinare = silenzioso |
+| Elemento                  | Meccanica                         | Rumore                                    |
+| ------------------------- | --------------------------------- | ----------------------------------------- |
+| Colonne                   | Indistruttibili, copertura        | -                                         |
+| Vetri                     | Si rompono automaticamente (0 HP) | Forte                                     |
+| Pareti spesse             | CA 12, 15 HP                      | Moderato (ogni colpo)                     |
+| Porte, se non specificato | Scassinare CD 13 / Sfondare CD 15 | Sfondare = forte, Scassinare = silenzioso |
 ### Meccanica Rumore
 
 - **Rumore forte:** Il mostro più vicino si muove immediatamente verso la fonte
@@ -138,24 +138,53 @@ Rappresentano festività passate/corrotte.
 **Meccanica speciale:** Quando esce il "tiro speciale" da un regalo, tutti i non morti scappano nella casa centrale per 1d4 round.
 **Respawn:** I mini-boss sono unici (morti restano morti). I minion respawnano dalla casa centrale.
 
+
 # PARTE IV - SISTEMA INGOMBRO
+
 **Nota per il Master:** Questa avventura usa un sistema a **slot** invece del classico sistema a monete (cn) per velocizzare il gioco. In una oneshot con timer reale, contare slot interi (0/1/2/3) è immediato; calcolare centinaia di monete rallenta il ritmo. Se preferisci il sistema cn, usalo pure — la struttura dell'avventura non cambia.
 
 ## Slot Totali
 
-**Formula:** 20 + (modificatore FOR × 2)
-#definire
+**Formula:** 20 + (modificatore FOR × 2). Esempio Forza 13, +1: 20+(1x2)=22 Slot
 
-|Forza|Mod|Slot Totali|
-|---|---|---|
-|3|-3|14|
-|6-8|-1|18|
-|9-12|0|20|
-|13-15|+1|22|
-|16-17|+2|24|
-|18|+3|26|
+|Forza|Mod|Slot Totali|Slot ½ Mov.|Fermo|
+|---|:-:|:-:|:-:|:-:|
+|3|-3|14|+4|19+|
+|6-8|-1|18|+5|24+|
+|9-12|0|20|+6|27+|
+|13-15|+1|22|+7|30+|
+|16-17|+2|24|+8|33+|
+|18|+3|26|+9|36+|
 
 **Nota:** Gli slot includono TUTTO l'equipaggiamento indossato.
+
+## Due Modi di Usare la Tabella
+
+> [!tip] Scegli il sistema che preferisci prima di iniziare
+
+### Opzione A — Slot Fissi (più semplice)
+
+Usa solo la colonna **Slot Totali**. Quando il PG supera quel numero, non può muoversi. Deve lasciare qualcosa a terra.
+
+**Pro:** Zero calcoli, immediato. **Contro:** Punitivo — un regalo di troppo blocca il PG.
+
+### Opzione B — Soglie Progressive (più tattico)
+
+Usa tutte le colonne:
+
+|Slot occupati|Effetto|
+|---|---|
+|≤ Slot Totali|Movimento normale|
+|Slot Totali +1 fino a Fermo|Movimento dimezzato|
+|≥ Fermo|Non può muoversi|
+
+**Esempio (FOR 13, Slot Totali 22):**
+
+- 0-22 slot → movimento normale
+- 23-29 slot → movimento dimezzato
+- 30+ slot → fermo
+
+**Pro:** Scelte tattiche interessanti ("mi carico di tesori ma vado piano"). **Contro:** Una regola in più da tracciare.
 
 ## Categorie Peso
 
@@ -165,6 +194,7 @@ Rappresentano festività passate/corrotte.
 | **1** | Armi piccole, torce, pozioni, corda, razioni, monete (ogni 100) |
 | **2** | Armi medie, armatura leggera, scudo                             |
 | **3** | Armi grandi, armatura pesante, scudo grande                     |
+
 
 # PARTE V - SISTEMA REGALI
 
@@ -217,26 +247,22 @@ I PG vedono i colori → quando intuiscono il colore possono scegliere strategic
 
 ## Modificatori Distanza
 
-|Condizione|Effetto|Esempio 60 ft|
-|---|---|---|
-|Porta chiusa|÷2|30 ft / 6□|
-|Porta pesante/segreta|÷4|15 ft / 3□|
-|Curva nel corridoio|−30 ft|30 ft / 6□|
-|Acqua/vento sottofondo|÷2|30 ft / 6□|
-|Pavimento con detriti|×1.5|90 ft / 18□|
-|Acqua sul pavimento|×2|120 ft / 24□|
+| Condizione             | Effetto | Esempio 60 ft |
+| ---------------------- | ------- | ------------- |
+| Porta chiusa           | ÷2      | 30 ft / 6□    |
+| Porta pesante/segreta  | ÷4      | 15 ft / 3□    |
+| Curva nel corridoio    | −30 ft  | 30 ft / 6□    |
+| Acqua/vento sottofondo | ÷2      | 30 ft / 6□    |
+| Pavimento con detriti  | ×1.5    | 90 ft / 18□   |
+| Acqua sul pavimento    | ×2      | 120 ft / 24□  |
 
 ## Tiro Ascolto (PG)
 
 > [!tip] Quando tirare Solo se la sorgente è **entro la distanza** (dopo i modificatori).
 
 **Tiro:** `1d6` → Successo su **1-2**
-
 **Elfi/Halfling:** 1-2 (alcuni DM concedono 1-3 alle porte)
-
 **Richiede:** 1 turno fermo, silenzio nel gruppo
-
----
 
 ## Ascolto dei Mostri
 
