@@ -186,7 +186,7 @@ Spiriti di festività antiche legate al suono e al silenzio. **Unici — se muoi
 
 **Posizione iniziale:** Angolo Nord-Ovest
 
-**Comportamento:** **Cacciatore** — corre verso qualsiasi rumore. Ama il fragore. Lo cerca.
+**Comportamento:** **Cacciatore Paziente** — corre verso qualsiasi rumore, ma NON attacca subito. Segue i PG a 30-40 ft di distanza, emette il richiamo ultrasonico, e aspetta che almeno 1 altro fantasmino arrivi entro 40 ft. Poi attacca.
 
 |Attacco|Danno|Effetto|
 |---|---|---|

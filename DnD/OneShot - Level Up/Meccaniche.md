@@ -192,3 +192,62 @@ I PG vedono i colori → quando intuiscono il colore possono scegliere strategic
 3. **Risolvi rumore** (se hanno fatto casino)
 4. **Fantasmini si muovono** (ognuno secondo la sua "AI")
 5. **Incontri** (se fantasmino raggiunge PG, combattimento)
+
+
+# Parte VI - Ascolto
+
+## Distanze Base
+
+|Suono|Distanza|Quadretti|
+|---|---|---|
+|Sussurri|20 ft|4□|
+|Conversazione|60 ft|12□|
+|Passi (gruppo)|90 ft|18□|
+|Passi (singolo)|30 ft|6□|
+|Combattimento|180 ft|36□|
+|Urla / Esplosioni|300 ft|60□|
+
+## Mostri dell'Oneshot
+
+|Creatura|Suono tipico|Distanza|Quadretti|
+|---|---|---|---|
+|Scheletri di Ghiaccio|Ossa e ghiaccio che scricchiola|40 ft|8□|
+|Fantasmini (tutti)|Quasi silenzioso, fruscio spettrale|15 ft|3□|
+|Skarn (Drago Bianco)|Respiro, movimento, ruggito|180 ft|36□|
+
+## Modificatori Distanza
+
+|Condizione|Effetto|Esempio 60 ft|
+|---|---|---|
+|Porta chiusa|÷2|30 ft / 6□|
+|Porta pesante/segreta|÷4|15 ft / 3□|
+|Curva nel corridoio|−30 ft|30 ft / 6□|
+|Acqua/vento sottofondo|÷2|30 ft / 6□|
+|Pavimento con detriti|×1.5|90 ft / 18□|
+|Acqua sul pavimento|×2|120 ft / 24□|
+
+## Tiro Ascolto (PG)
+
+> [!tip] Quando tirare Solo se la sorgente è **entro la distanza** (dopo i modificatori).
+
+**Tiro:** `1d6` → Successo su **1-2**
+
+**Elfi/Halfling:** 1-2 (alcuni DM concedono 1-3 alle porte)
+
+**Richiede:** 1 turno fermo, silenzio nel gruppo
+
+---
+
+## Ascolto dei Mostri
+
+> [!warning] Regola Base I mostri **sentono sempre** i PG se sono entro la distanza. Nessun tiro.
+
+Se vuoi rendere il gioco più dinamico, usa questa house rule:
+
+|Creatura|Tiro Ascolto|Note|
+|---|---|---|
+|Scheletri di Ghiaccio|1 su d6|Non-morti mindless, percepiscono ma male|
+|Fantasmini (incorporei)|1-2 su d6|Senzienti ma distratti dal rancore|
+|Skarn (Drago)|1-4 su d6|Sensi acuti, quasi sempre sente|
+
+_□ = 5 ft_
