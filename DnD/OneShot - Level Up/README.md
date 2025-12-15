@@ -1,5 +1,31 @@
 # Il Sogno dello Spirito Natalizio
 
+**Game Over, Santa**
+Lo Spirito del Natale è scomparso. Voi dovete trovarlo — attraversando livelli ispirati ai classici arcade anni '80: Pac-Man, Bomberman, Bubble Bobble. Timer reale, power-up da raccogliere, boss finale da affrontare.
+
+**Perché OSE Basic/Expert?**
+
+Perché il vecchio D&D non perdona. Niente death saves, niente miracoli dell'ultimo minuto, niente "il master ti salverà". Qui le tue scelte contano davvero — una porta sfondata invece che scassinata può significare quattro mostri addosso. Un corridoio sbagliato può essere l'ultimo.
+
+È il gioco com'era: crudo, diretto, letale. Se sopravvivi, te lo sei guadagnato.
+
+**Non è solo combat.** I nemici hanno pattern, debolezze, comportamenti. Osserva, impara, evita. A volte la mossa migliore è non combattere. A volte è capire _dove_ un mostro non può andare. La strategia batte sempre i dadi.
+
+INSERT COIN.
+
+| | |
+|---|---|
+| **Sistema** | D&D B/X (Moldvay/Cook, 1981) — OSR |
+| **Livello PG** | 5-6 |
+| **Giocatori** | 4-5 |
+| **Durata** | ~4 ore |
+| **Stile** | Old school, letale, strategico |
+| **Tema** | Arcade anni '80 + Natale |
+| **Struttura** | 3 livelli + boss finale |
+| **Meccaniche speciali** | Timer reale, power-up, pattern nemici |
+| **Difficoltà** | Alta — la morte è una possibilità concreta |
+
+
 ## Nota per il Master
 
 Questa avventura utilizza **Babbo Natale** come figura centrale, ma la struttura è volutamente modulare. Puoi sostituire lo Spirito del Natale con qualsiasi entità che rappresenti:
