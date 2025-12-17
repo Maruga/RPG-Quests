@@ -133,7 +133,7 @@ Spiriti di festività antiche, divorate dal rancore. **Unici — se muoiono, res
 
 ---
 
-## Minion — Scheletri di Ghiaccio
+## Minion — Scheletro di Ghiaccio
 
 ![[scheletroGhiaccio.png]]
 La testa ricorda le palline bianche di Pacman.
@@ -141,15 +141,17 @@ La testa ricorda le palline bianche di Pacman.
 
 | Stat            | Valore                                                                                    |
 | --------------- | ----------------------------------------------------------------------------------------- |
-| Dadi Vita       | 3                                                                                         |
-| Punti Ferita    | 14                                                                                        |
+| Dadi Vita       | 5                                                                                         |
+| Punti Ferita    | 22                                                                                        |
 | Classe Armatura | 5 [14]                                                                                    |
+| THAC0           | 15                                                                                        |
 | Movimento       | 30'/9m/6 quadretti                                                                        |
 | Attacco         | Artiglio 1d8                                                                              |
 | Tiri Salvezza   | **TS G3:** Morte 12, Bacchette 13, Paralisi 14, Soffio 15, Incantesimi 16                 |
 | Morale          | 12                                                                                        |
 | Speciale        | Immune freddo, vulnerabile fuoco (danno x2), **se 2+ attaccano stesso bersaglio: +2 TxC** |
 | Percezione      | 60'/ 18m / 12 quadretti                                                                   |
+| Scacciare       | Chierico 6°: 7+                                                                           |
 
 > _Prima apparizione:_ Ossa bianche, ricoperte di brina. Ma la testa... la testa è sbagliata. Gonfia, deforme, perfettamente sferica — come una pallina di ghiaccio con due orbite vuote. Si muovono a scatti, la testa troppo pesante che oscilla. Il suono del ghiaccio che si rompe a ogni passo. Non pensano. Non temono. Avanzano.
 
