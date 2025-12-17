@@ -46,7 +46,8 @@ Chi ha dichiarato incantesimi ora li lancia:
 3. Incantesimi a effetto immediato si risolvono ora
 
 **Regole importanti:**
-- Movimento massimo per chi lancia: **metà della velocità di incontro**
+- Movimento massimo per chi lancia: **metà della velocità di incontro** (House Rule)
+- Lancio incantesimi nessun movimento (Raw)
 - Se interrotto da danno: slot perso ma nessun effetto
 
 ### **5. Movimento**
