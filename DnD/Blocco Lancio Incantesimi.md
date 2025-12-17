@@ -1,7 +1,7 @@
 
 ## ❌ Blocca sempre il lancio dell’incantesimo (B/X Ufficiale)
 
-- Movimento oltre metà della velocità
+- Movimento oltre metà della velocità (House Rule), no movimento (RAW)
 - Essere colpito prima della fase magia (interruzione)
 - Essere addormentato
 - Essere paralizzato
@@ -31,4 +31,4 @@
 - Essere feriti nello stesso round *dopo* aver lanciato
 - Essere sotto rallentamento (Slow)
 - Essere sotto benedizione o accelerazione
-- Avere ingombro pesante (purché muova meno di metà)
+- Avere ingombro pesante (purché muova meno di metà) (vedi sopra)
