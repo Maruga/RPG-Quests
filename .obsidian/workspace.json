@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png"
+                "file": "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg"
               },
               "icon": "lucide-image",
-              "title": "04 - Bobble Bubble.player"
+              "title": "DragoCorrotto"
             }
           }
         ]
@@ -222,11 +222,14 @@
   },
   "active": "fd11c3d08f46f873",
   "lastOpenFiles": [
+    "DnD/OneShot - Level Up/Immagini/DragoBianco.png",
+    "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg",
+    "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade.png",
     "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
+    "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.png",
     "Strumenti/~$Schede_DnD_BX91.xlsx",
     "DnD/OneShot - Level Up/Meccaniche.md",
-    "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png",
     "DnD/OneShot - Level Up/Immagini/03 - Dynablaster.player.png",
     "DnD/OneShot - Level Up/Immagini/02 - Pacman.png",
     "DnD/OneShot - Level Up/02 - Pacman.md",
@@ -239,8 +242,6 @@
     "DnD/OneShot - Molto lontani/Immagini/StanzaMago.png",
     "DnD/OneShot - Molto lontani/Immagini/StanzaCripta.png",
     "DnD/OneShot - Molto lontani/Immagini/StanzaCentrale.png",
-    "DnD/OneShot - Molto lontani/Immagini/SotterraneiCastello.png",
-    "DnD/OneShot - Molto lontani/Immagini/MappaXstampa.png",
     "DnD/OneShot - Level Up/Tabelle Regali.md",
     "DnD/OneShot - Level Up/Condizioni.md",
     "Strumenti/Righelli DnD.af",
