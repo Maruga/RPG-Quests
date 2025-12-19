@@ -62,12 +62,12 @@ Ogni mappa ha un **portale di ingresso** e **portale di uscita** (fisso, visibil
 ### Recupero tra Livelli
 Quando i PG attraversano il portale verso il livello successivo:
 
-| Risorsa            | Recupero                          |
-| ------------------ | --------------------------------- |
-| Punti Ferita       | Tutti recuperano 1d3 HP           |
-| Slot Incantesimi   | Tutti recuperati (riposo completo)|
-| Condizioni negative| Terminate (eccetto maledizioni)   |
-| Pergamene/Pozioni  | Non recuperate                    |
+| Risorsa             | Recupero                           |
+| ------------------- | ---------------------------------- |
+| Punti Ferita        | Tutti recuperano 1d6 HP            |
+| Slot Incantesimi    | Tutti recuperati (riposo completo) |
+| Condizioni negative | Terminate (eccetto maledizioni)    |
+| Pergamene/Pozioni   | Non recuperate                     |
 
 **Nota:** Il passaggio tra livelli equivale a una notte di riposo per la magia, ma non per le ferite gravi.
 

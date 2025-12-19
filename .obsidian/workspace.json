@@ -11,12 +11,14 @@
             "id": "fd11c3d08f46f873",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg"
+                "file": "DnD/OneShot - Level Up/01 - Prologo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "DragoCorrotto"
+              "icon": "lucide-file",
+              "title": "01 - Prologo"
             }
           }
         ]
@@ -220,30 +222,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fd11c3d08f46f873",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "DnD/OneShot - Level Up/Immagini/DragoBianco.png",
+    "DnD/OneShot - Level Up/Immagini/Castello.png",
+    "DnD/OneShot - Level Up/Materiale/Seconda Morte.md",
+    "DnD/OneShot - Level Up/01 - Prologo.md",
+    "DnD/OneShot - Level Up/Immagini/02 - Pacman.png",
+    "DnD/OneShot - Level Up/Meccaniche.md",
+    "DnD/OneShot - Level Up/Note Tattiche.md",
+    "DnD/OneShot - Level Up/05 - Lo Spirito.md",
+    "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
+    "DnD/OneShot - Level Up/Emporio Castello.md",
+    "DnD/OneShot - Level Up/Immagini/05 - CavernaDrago.png",
+    "DnD/OneShot - Level Up/Immagini/DragoCorrottoAttacco.png",
+    "DnD/OneShot - Level Up/Immagini/DragoCorrotto.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg",
+    "DnD/OneShot - Level Up/Immagini/DragoBianco.png",
     "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade.png",
     "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.png",
     "Strumenti/~$Schede_DnD_BX91.xlsx",
-    "DnD/OneShot - Level Up/Meccaniche.md",
     "DnD/OneShot - Level Up/Immagini/03 - Dynablaster.player.png",
-    "DnD/OneShot - Level Up/Immagini/02 - Pacman.png",
     "DnD/OneShot - Level Up/02 - Pacman.md",
-    "DnD/OneShot - Level Up/Note Tattiche.md",
     "DnD/OneShot - Level Up/03 - Dynablaster.md",
-    "DnD/OneShot - Level Up/Emporio Castello.md",
     "Strumenti/FB036800",
     "Strumenti/B0484800",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaRagni.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaMago.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaCripta.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaCentrale.png",
     "DnD/OneShot - Level Up/Tabelle Regali.md",
-    "DnD/OneShot - Level Up/Condizioni.md",
     "Strumenti/Righelli DnD.af",
     "Strumenti/Token.af",
     "Strumenti/~$ccanicheGioco.docx",
@@ -251,8 +256,6 @@
     "DnD/OneShot - Level Up/Materiale/Righelli DnD.af",
     "Strumenti/BF58F700",
     "Strumenti/4E3C6700",
-    "DnD/OneShot - Level Up/01 - Prologo.md",
-    "DnD/OneShot - Level Up/05 - Lo Spirito.md",
     "DnD/Esplorare un Dungeon.md",
     "DnD/OneShot - Level Up/Tattiche in Combattimento.md",
     "DnD/Blocco Lancio Incantesimi.md",
@@ -266,7 +269,6 @@
     "DnD/OneShot - Arcade/02 - Pacman.md",
     "DnD/OneShot - Arcade/README.md",
     "DnD/OneShot - Arcade/Meccaniche.md",
-    "DnD/Viaggo.md",
-    "DnD/Servitori.md"
+    "DnD/Viaggo.md"
   ]
 }

@@ -2,7 +2,7 @@
 Prima del combattimento i giocatori possono acquistare oggetti dall'emporio oppure venderne per acquistarne altri.
 Usa la tabella emporio Regali non quella nel castello: [[Tabelle Regali]]
 
-![[CavernaDrago.png]]
+![[05 - CavernaDrago.png]]
 
 
 # Boss Finale — Lo Scontro con Skarn
@@ -42,6 +42,7 @@ Usa la tabella emporio Regali non quella nel castello: [[Tabelle Regali]]
 > **Lo Spirito. È lì dentro.**
 > Gli occhi del drago si aprono. Blu pallido. Freddi come l'oblio.
 
+![[DragoBianco.png]]
 
 ## Il Drago Parla
 
@@ -119,7 +120,8 @@ Usa la tabella emporio Regali non quella nel castello: [[Tabelle Regali]]
 
 
 # FASE 2 — IL DRAGO CORROTTO
-![[DragoCorrotto.jpeg]]
+
+![[DragoCorrottoAttacco.png]]
 
 ## Il Drago Si Rialza
 

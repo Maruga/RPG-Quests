@@ -24,6 +24,8 @@ Questo non cambia nulla meccanicamente, ma crea la base per:
 
 # Prologo
 
+![[Castello.png]]
+
 > Da settimane seguite le tracce nella tempesta — villaggi senza regali, caminetti freddi, bambini con gli occhi spenti. **Babbo Natale è scomparso.** L'essenza stessa del Natale è stata strappata dal mondo.
 > Poi lo vedete: un castello di ghiaccio e pietra, luci fioche alle finestre. Le porte si aprono prima che possiate bussare. Un'ondata di aria tiepida vi avvolge — odore di cannella e legno bruciato, ma sotto qualcosa di stantio.
 > Gli elfi vi accolgono in silenzio, volti segnati dalla preoccupazione. Ghirlande appassite, laboratori fermi, campanelli muti.
