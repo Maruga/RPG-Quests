@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "08e41e4d6be5ef54",
+        "id": "902dbbf879091539",
         "type": "tabs",
         "children": [
           {
-            "id": "b0459aa38ce79a12",
+            "id": "40a2711eb3ef64a5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Handout"
             }
           }
         ]
@@ -130,6 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -139,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti"
+              "title": "Riferimenti a Handout"
             }
           },
           {
@@ -218,21 +223,24 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "b0459aa38ce79a12",
+  "active": "40a2711eb3ef64a5",
   "lastOpenFiles": [
-    "DnD/OneShot - Level Up/README.md",
-    "DnD/OneShot - Level Up/Note Tattiche.md",
-    "DnD/OneShot - Level Up/Tattiche in Combattimento.md",
-    "DnD/OneShot - Level Up/03 - Dynablaster.md",
-    "DnD/OneShot - Level Up/Tabelle Regali.md",
-    "DnD/OneShot - Level Up/02 - Pacman.md",
-    "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Cronaca.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone",
     "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
     "DnD/OneShot - Level Up/05 - Lo Spirito.md",
     "DnD/OneShot - Level Up/Meccaniche.md",
     "DnD/OneShot - Level Up/Materiale/Seconda Morte.md",
     "DnD/OneShot - Level Up/01 - Prologo.md",
     "DnD/OneShot - Level Up/Emporio Castello.md",
+    "DnD/OneShot - Level Up/03 - Dynablaster.md",
+    "DnD/OneShot - Level Up/Tabelle Regali.md",
+    "DnD/OneShot - Level Up/02 - Pacman.md",
+    "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
+    "DnD/OneShot - Level Up/README.md",
+    "DnD/OneShot - Level Up/Note Tattiche.md",
+    "DnD/OneShot - Level Up/Tattiche in Combattimento.md",
     "DnD/OneShot - Escape Room/Idee.md",
     "Strumenti/Token.af~lock~",
     "Strumenti/BC195310",
@@ -243,7 +251,6 @@
     "Strumenti/BEC44310",
     "Strumenti/09C34310",
     "Strumenti/CF624310",
-    "Strumenti/04AB3310",
     "DnD/OneShot - Level Up/Immagini/Castello.png",
     "DnD/OneShot - Level Up/Immagini/02 - Pacman.png",
     "DnD/OneShot - Level Up/Immagini/05 - CavernaDrago.png",
@@ -263,7 +270,6 @@
     "DnD/Ingombro.md",
     "DnD/OneShot - Arcade/02 - Pacman.md",
     "DnD/OneShot - Arcade/README.md",
-    "DnD/OneShot - Arcade/Meccaniche.md",
-    "DnD/Viaggo.md"
+    "DnD/OneShot - Arcade/Meccaniche.md"
   ]
 }

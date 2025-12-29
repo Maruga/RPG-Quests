@@ -18,7 +18,7 @@
     "addHeadTag": true,
     "backlinkOptions": {
       "featureId": "backlinks",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -30,7 +30,7 @@
     },
     "tagOptions": {
       "featureId": "tags",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -44,7 +44,7 @@
     },
     "aliasOptions": {
       "featureId": "aliases",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -99,7 +99,7 @@
     },
     "outlineOptions": {
       "featureId": "outline",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -159,7 +159,7 @@
     },
     "customHeadOptions": {
       "featureId": "custom-head",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -191,7 +191,7 @@
     },
     "linkPreviewOptions": {
       "featureId": "link-preview",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": true
@@ -205,7 +205,7 @@
     "inlineFonts": true,
     "inlineOther": true,
     "combineAsSingleFile": false,
-    "offlineResources": false,
+    "offlineResources": true,
     "themeName": "",
     "slugifyPaths": false,
     "flattenExportPaths": false,

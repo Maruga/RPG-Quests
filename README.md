@@ -1,7 +1,7 @@
 
 Vampiri la Masquerade
 
-Inizio [[Vampiri la Masquerade/Il Risveglio/README]]
+Inizio [[Vampiri la Masquerade/Capitolo - Il Risveglio/README]]
 Avventura 
 
 
