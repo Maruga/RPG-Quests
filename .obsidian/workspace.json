@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9595f1272b3c29d1",
+        "id": "08e41e4d6be5ef54",
         "type": "tabs",
         "children": [
           {
-            "id": "fd11c3d08f46f873",
+            "id": "b0459aa38ce79a12",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DnD/OneShot - Level Up/README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -134,7 +130,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inizio/Personaggi/Paolo Venturi - Mama Polari.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -144,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Paolo Venturi - Mama Polari"
+              "title": "Riferimenti"
             }
           },
           {
@@ -202,7 +197,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -219,12 +214,26 @@
       "bases:Create new base": false,
       "audio-recorder:Avvia/ferma registrazione": false,
       "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "fd11c3d08f46f873",
+  "active": "b0459aa38ce79a12",
   "lastOpenFiles": [
+    "DnD/OneShot - Level Up/README.md",
+    "DnD/OneShot - Level Up/Note Tattiche.md",
+    "DnD/OneShot - Level Up/Tattiche in Combattimento.md",
+    "DnD/OneShot - Level Up/03 - Dynablaster.md",
+    "DnD/OneShot - Level Up/Tabelle Regali.md",
+    "DnD/OneShot - Level Up/02 - Pacman.md",
+    "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
+    "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
+    "DnD/OneShot - Level Up/05 - Lo Spirito.md",
+    "DnD/OneShot - Level Up/Meccaniche.md",
+    "DnD/OneShot - Level Up/Materiale/Seconda Morte.md",
+    "DnD/OneShot - Level Up/01 - Prologo.md",
     "DnD/OneShot - Level Up/Emporio Castello.md",
+    "DnD/OneShot - Escape Room/Idee.md",
     "Strumenti/Token.af~lock~",
     "Strumenti/BC195310",
     "Strumenti/22D75310",
@@ -235,36 +244,23 @@
     "Strumenti/09C34310",
     "Strumenti/CF624310",
     "Strumenti/04AB3310",
-    "DnD/OneShot - Level Up/01 - Prologo.md",
     "DnD/OneShot - Level Up/Immagini/Castello.png",
-    "DnD/OneShot - Level Up/Materiale/Seconda Morte.md",
     "DnD/OneShot - Level Up/Immagini/02 - Pacman.png",
-    "DnD/OneShot - Level Up/Meccaniche.md",
-    "DnD/OneShot - Level Up/Note Tattiche.md",
-    "DnD/OneShot - Level Up/05 - Lo Spirito.md",
-    "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
     "DnD/OneShot - Level Up/Immagini/05 - CavernaDrago.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrottoAttacco.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrotto.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrotto.jpeg",
     "DnD/OneShot - Level Up/Immagini/DragoBianco.png",
     "DnD/OneShot - Level Up/Immagini/Dungeon & Arcade.png",
-    "DnD/OneShot - Level Up/04 - Bobble Bubble.md",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.player.png",
     "DnD/OneShot - Level Up/Immagini/04 - Bobble Bubble.png",
-    "DnD/OneShot - Level Up/02 - Pacman.md",
-    "DnD/OneShot - Level Up/03 - Dynablaster.md",
-    "DnD/OneShot - Level Up/Tabelle Regali.md",
     "DnD/Esplorare un Dungeon.md",
-    "DnD/OneShot - Level Up/Tattiche in Combattimento.md",
     "DnD/Blocco Lancio Incantesimi.md",
     "DnD/Combattimento.md",
     "DnD/Armature CA.md",
     "DnD/Link.md",
     "DnD/Movimento.md",
-    "DnD/OneShot - Level Up/README.md",
     "DnD/Ingombro.md",
-    "DnD/OneShot - Escape Room/Idee.md",
     "DnD/OneShot - Arcade/02 - Pacman.md",
     "DnD/OneShot - Arcade/README.md",
     "DnD/OneShot - Arcade/Meccaniche.md",
