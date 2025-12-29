@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - Level Up/Emporio Castello.md",
+                "file": "DnD/OneShot - Level Up/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Emporio Castello"
+              "title": "README"
             }
           }
         ]
@@ -224,6 +224,7 @@
   },
   "active": "fd11c3d08f46f873",
   "lastOpenFiles": [
+    "DnD/OneShot - Level Up/Emporio Castello.md",
     "Strumenti/Token.af~lock~",
     "Strumenti/BC195310",
     "Strumenti/22D75310",
@@ -234,7 +235,6 @@
     "Strumenti/09C34310",
     "Strumenti/CF624310",
     "Strumenti/04AB3310",
-    "Strumenti/BCE92310",
     "DnD/OneShot - Level Up/01 - Prologo.md",
     "DnD/OneShot - Level Up/Immagini/Castello.png",
     "DnD/OneShot - Level Up/Materiale/Seconda Morte.md",
@@ -243,7 +243,6 @@
     "DnD/OneShot - Level Up/Note Tattiche.md",
     "DnD/OneShot - Level Up/05 - Lo Spirito.md",
     "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
-    "DnD/OneShot - Level Up/Emporio Castello.md",
     "DnD/OneShot - Level Up/Immagini/05 - CavernaDrago.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrottoAttacco.png",
     "DnD/OneShot - Level Up/Immagini/DragoCorrotto.png",
