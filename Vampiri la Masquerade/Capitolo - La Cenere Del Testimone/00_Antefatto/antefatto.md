@@ -1,5 +1,7 @@
 # Antefatto
 
+![[Mappa Italia A3_2.jpg]]
+
 ## La Verità (Solo per il Narratore)
 
 ### 40 anni fa — Siena, Autunno 1984
