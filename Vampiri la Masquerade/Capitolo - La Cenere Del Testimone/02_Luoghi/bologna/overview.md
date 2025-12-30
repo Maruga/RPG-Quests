@@ -22,6 +22,8 @@ Le Due Torri dominano il centro, inclinate come vecchi ubriachi. Il quartiere un
 
 ### Il Rifugio di Marcello
 
+![[Rifugio Marcello.png]]
+
 **Posizione:** Sotto una libreria antiquaria in Via Zamboni. L'ingresso è nascosto dietro uno scaffale scorrevole.
 
 **Stato attuale:** Parzialmente bruciato.

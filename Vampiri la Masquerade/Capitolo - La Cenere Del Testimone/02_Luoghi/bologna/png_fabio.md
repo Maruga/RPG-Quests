@@ -1,4 +1,7 @@
 # Fabio
+
+![[Fabio.png]]
+
 ## Ghoul di Marcello — Sopravvissuto
 
 ---

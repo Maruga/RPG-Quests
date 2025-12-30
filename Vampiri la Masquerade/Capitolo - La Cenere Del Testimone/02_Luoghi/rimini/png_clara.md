@@ -1,4 +1,7 @@
 # Clara
+
+![[Clara.png]]
+
 ## Ghoul di Enzo
 
 ---

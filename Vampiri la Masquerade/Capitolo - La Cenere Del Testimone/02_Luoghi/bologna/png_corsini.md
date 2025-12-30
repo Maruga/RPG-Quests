@@ -1,4 +1,7 @@
 # Principe Corsini
+
+![[Principe Corsini.png]]
+
 ## Alessandro Corsini — Principe di Bologna
 
 ---

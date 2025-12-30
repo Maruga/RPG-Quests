@@ -23,6 +23,8 @@ La Camarilla di Firenze è vecchia, ricca, spietata. Gli estranei sono tollerati
 
 ### Il Palazzo di Vittoria
 
+![[Salone di Vittoria.png]]
+
 **Posizione:** Palazzo rinascimentale in Oltrarno, vicino a Palazzo Pitti.
 
 **Descrizione:**

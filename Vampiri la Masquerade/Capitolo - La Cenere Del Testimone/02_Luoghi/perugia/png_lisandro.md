@@ -1,4 +1,7 @@
 # Giovanni Bardi / Lisandro
+
+![[Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Lisandro.png]]
+
 ## Il Testimone Chiave
 
 ---

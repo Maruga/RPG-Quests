@@ -1,4 +1,7 @@
 # Il Custode
+
+![[Custode Rimini.png]]
+
 ## Nosferatu di Rimini — Informatore
 
 ---

@@ -1,4 +1,7 @@
 # Giulia
+
+![[Giulia.png]]
+
 ## Ghoul di Vittoria — Potenziale Traditrice
 
 ---

@@ -1,4 +1,7 @@
 # Enzo Damiani
+
+![[Enzo Damiani.png]]
+
 ## Il Sicario — Brujah di Rimini
 
 ---

@@ -1,4 +1,7 @@
 # Vittoria Aldrani
+
+![[Vittoria Aldrani.png]]
+
 ## L'Antagonista Principale — Toreador di Firenze
 
 ---

@@ -11,6 +11,9 @@ Ma la Camarilla milanese vive nei palazzi antichi del centro. Strade ciottolate,
 ## PNG
 
 ### Ludovica Visconti
+
+![[Ludovica Visconti.png]]
+
 **Committente — Anziana Ventrue**
 
 ---

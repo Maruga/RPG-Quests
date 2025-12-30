@@ -1,4 +1,7 @@
 # Sofia Marini
+
+![[Sofia Marini.png]]
+
 ## Malkavian di Bologna — Amica di Marcello
 
 ---

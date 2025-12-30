@@ -1,4 +1,7 @@
 # Padre Silvestro
+
+![[Padre Silvestro.png]]
+
 ## Lasombra Antitribu — Siena
 
 ---

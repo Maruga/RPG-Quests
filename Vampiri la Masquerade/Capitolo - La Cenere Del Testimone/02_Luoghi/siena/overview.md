@@ -33,6 +33,8 @@ Silvestro vive in una cella dietro la sacrestia. Prega ogni notte, anche se bruc
 
 ### Il Rifugio di Corvo
 
+![[Rifugio di Corvo.png]]
+
 **Posizione:** Cantina sotto un casolare abbandonato, colline a sud verso Montalcino.
 
 **Come arrivarci:**

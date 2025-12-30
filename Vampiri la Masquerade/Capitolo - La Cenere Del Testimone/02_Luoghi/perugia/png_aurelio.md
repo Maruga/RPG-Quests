@@ -1,4 +1,7 @@
 # Don Aurelio Farnese
+
+![[Don Aurelio Farnese.png]]
+
 ## Ventrue di Perugia — Domitor di Lisandro
 
 ---

@@ -1,5 +1,7 @@
 # Il Diario di Corvo
 
+![[Corvo.png]]
+
 ## Descrizione Fisica
 
 Quaderno rilegato in pelle scura, logora. Copertina con simbolo inciso: artiglio (marchio personale). Pagine ingiallite, fragili. Scrittura in codice: latino, italiano antico, simboli Gangrel.
