@@ -21,6 +21,8 @@ L'università è antica, gli studenti danno vita al centro. Ma appena ci si allo
 
 ### Casa di Giovanni Bardi
 
+![[Appartamento di Lisandro.png]]
+
 **Posizione:** Palazzina anni '50, quartiere Fontivegge vicino alla stazione. Secondo piano.
 
 **Descrizione:**

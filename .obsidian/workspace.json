@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Luoghi - Descrizioni per AI Art"
             }
+          },
+          {
+            "id": "f1e696856c01909b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg"
+              },
+              "icon": "lucide-image",
+              "title": "Mappa Italia 01"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Luoghi - Descrizioni per AI Art"
+              "title": "Riferimenti a Mappa Italia 01"
             }
           },
           {
@@ -223,11 +236,19 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "40a2711eb3ef64a5",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia A3.jpg",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia.jpeg",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Palazzo Visconti - Studio.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ingresso al Palazzo Visconti.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/overview.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Appartamento di Lisandro.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/siena/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Rifugio di Corvo.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/firenze/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Salone di Vittoria.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
@@ -236,15 +257,9 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/PNG - Descrizioni per AI Art.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/05_Indizi/diario_corvo.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Corvo.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ludovica Visconti.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_aurelio.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Don Aurelio Farnese.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Principe Corsini.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Sofia Marini.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Vittoria Aldrani.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/png_riassunto.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Padre Silvestro.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/siena/png_silvestro.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/rimini/png_custode.md",
@@ -260,7 +275,6 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/README.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/07_Handout/tutti_handout.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/07_Handout/02_appunti_bruciati.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi",
