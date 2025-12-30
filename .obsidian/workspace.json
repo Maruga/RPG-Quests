@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Cronaca.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Handout"
+              "title": "Cronaca"
             }
           }
         ]
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Cronaca.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Handout"
+              "title": "Riferimenti a Cronaca"
             }
           },
           {
@@ -225,8 +225,8 @@
   },
   "active": "40a2711eb3ef64a5",
   "lastOpenFiles": [
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Cronaca.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Handout.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Cronaca.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone",
     "DnD/OneShot - Level Up/Azioni Tattiche - Condizioni.md",
     "DnD/OneShot - Level Up/05 - Lo Spirito.md",
