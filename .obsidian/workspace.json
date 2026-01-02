@@ -27,10 +27,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Palazzo Visconti - Studio.png"
+                "file": "DnD/OneShot - Molto lontani/Immagini/Taverna.png"
               },
               "icon": "lucide-image",
-              "title": "Palazzo Visconti - Studio"
+              "title": "Taverna"
             }
           }
         ],
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Palazzo Visconti - Studio.png",
+                "file": "DnD/OneShot - Molto lontani/Immagini/Taverna.png",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Palazzo Visconti - Studio"
+              "title": "Riferimenti a Taverna"
             }
           },
           {
@@ -238,18 +238,19 @@
   },
   "active": "f1e696856c01909b",
   "lastOpenFiles": [
+    "DnD/OneShot - Molto lontani/Immagini/StanzaUscitaTentacoli.png",
+    "DnD/OneShot - Molto lontani/Immagini/Taverna.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaScale.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaScalaCripta.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaRagni.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaCripta.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaMago.png",
+    "DnD/OneShot - Molto lontani/Immagini/mappaPgPergamena.png",
+    "DnD/OneShot - Molto lontani/Immagini/MappaPgOriginale.jpg",
+    "DnD/OneShot - Molto lontani/Immagini/mappaPgDM.player.png",
+    "DnD/OneShot - Molto lontani/Immagini/StanzaCentrale.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto/antefatto.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio/briefing.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Vittoria Aldrani.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Palazzo Visconti - Studio.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Padre Silvestro.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia A3.jpg",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia A3_2.jpg",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ludovica Visconti.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Lisandro.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ingresso al Palazzo Visconti.png",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Giulia.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/overview.md",
@@ -274,7 +275,6 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/rimini/png_clara.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/README.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/07_Handout/tutti_handout.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi",
