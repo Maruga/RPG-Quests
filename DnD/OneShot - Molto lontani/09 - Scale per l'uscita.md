@@ -27,6 +27,7 @@
 > [!Leggere]
 > Un click alle vostre spalle. Vi girate.
 > La porta in cima alle scale si è chiusa. Da sola.
+> *può essere scassinata dal ladro*
 
 #### Sfondare Inferriata
 
@@ -90,16 +91,16 @@ Nicchia nascosta alla base del muro, tra due inferiate.
 | Con pergamena indizio | Automatico |
 ### Contenuto Baule (quando aperto)
 
-| Oggetto                  | Valore/Effetto      |
-| ------------------------ | ------------------- |
-| Monete d'oro antiche     | 350 mo              |
-| Monete d'argento         | 800 ma (80 mo)      |
-| Gemma grezza (topazio)   | 100 mo              |
-| Anello sigillo nobile    | 75 mo               |
-| Pergamena Palla di Fuoco | 400 mo              |
-| Chiave d'argento         | Apre stanza rituale |
-| Anello Magico            | Casuale             |
-| **Totale**               | **~1005 mo**        |
+| Oggetto                  | Valore/Effetto              |
+| ------------------------ | --------------------------- |
+| Monete d'oro antiche     | 350 mo                      |
+| Monete d'argento         | 800 ma (80 mo)              |
+| Gemma grezza (topazio)   | 100 mo                      |
+| Anello sigillo nobile    | 75 mo                       |
+| Pergamena Palla di Fuoco | 400 mo                      |
+| Chiave d'argento         | Apre stanza rituale [ragni] |
+| Anello Magico            | Casuale                     |
+| **Totale**               | **~1005 mo**                |
 
 ## Baule — Anello Casuale
 

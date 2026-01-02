@@ -39,14 +39,15 @@ Iniziativa, i PG {possono essere in piedi o proni dipende come sono scesi} hanno
 | **DV**        | 2                                                                |
 | **HP**        | 9, 10, 11, 12                                                    |
 | **CA**        | 4 [15]                                                           |
+| **THAC0**     | 18                                                               |
 | **Movimento** | 20' - 4 quadretti                                                |
 | **Attacco**   | Spada lunga (1d8)                                                |
 | **Morale**    | 12                                                               |
 | **Speciale**  | Immune a Sonno, Charme. Metà danni da armi taglienti/perforanti. |
 
-| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 |
-|------|------|------|------|------|------|------|------|
-| 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
+| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|  9   |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |
 
 **PX:** 25 ciascuno
 
@@ -57,14 +58,15 @@ Iniziativa, i PG {possono essere in piedi o proni dipende come sono scesi} hanno
 | **DV**        | 6                                                                                       |
 | **HP**        | 32                                                                                      |
 | **CA**        | 2 [17]                                                                                  |
+| **THAC0**     | 15                                                                                      |
 | **Movimento** | 20' - 4 quadretti                                                                       |
 | **Attacco**   | Spadone +1 (1d10+2)                                                                     |
 | **Morale**    | 12                                                                                      |
 | **Speciale**  | Immune a Sonno, Charme, Paura, Freddo. Metà danni da armi non magiche. Aura di Terrore. |
 
-| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 |
-|------|------|------|------|------|------|------|------|
-| 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|  6   |  7   |  8   |  9   |  10  |  11  |  12  |  13  |  14  |  15  |
 
 **PX:** 500
 

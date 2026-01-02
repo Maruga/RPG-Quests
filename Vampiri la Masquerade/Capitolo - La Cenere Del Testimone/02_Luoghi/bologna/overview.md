@@ -20,6 +20,8 @@ Le Due Torri dominano il centro, inclinate come vecchi ubriachi. Il quartiere un
 
 ## Luoghi Chiave
 
+![[Marcello.png]]
+
 ### Il Rifugio di Marcello
 
 ![[Rifugio Marcello.png]]

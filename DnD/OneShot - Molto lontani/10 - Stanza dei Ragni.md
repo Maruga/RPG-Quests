@@ -85,6 +85,7 @@
 | **DV**        | 6                                                                                      |
 | **HP**        | 32                                                                                     |
 | **CA**        | 4 [15]                                                                                 |
+| **THAC0**     | 15                                                                                     |
 | **Movimento** | 30' (60' su ragnatela) - 6 quadretti                                                   |
 | **Taglia**    | 2×2 (4 caselle)                                                                        |
 | **Attacco**   | Morso (2d8 + veleno)                                                                   |
@@ -93,9 +94,9 @@
 La Matriarca è intelligente (per un ragno). Non si butta nella mischia subito.
 Ragnatela: [[Ragnatela Ragni]]
 
-| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 |
-|------|------|------|------|------|------|------|------|
-| 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|  6   |  7   |  8   |  9   |  10  |  11  |  12  |  13  |  14  |  15  |
 
 **PX:** 500
 
@@ -106,15 +107,16 @@ Ragnatela: [[Ragnatela Ragni]]
 | **DV**        | 3                                                |
 | **HP**        | 10, 12, 14                                       |
 | **CA**        | 6 [13]                                           |
+| **THAC0**     | 17                                               |
 | **Movimento** | 20' (60' su ragnatela) - 4 quadretti             |
 | **Attacco**   | Morso (2d6 + veleno)                             |
 | **Morale**    | 8                                                |
 | **Speciale**  | Veleno: vedi sopra. Ragnatele: TS o intrappolato |
 Le Vedove sono aggressive — attaccano subito in mischia.
 
-| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 |
-|------|------|------|------|------|------|------|------|
-| 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+| AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|  8   |  9   |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |
 
 **PX:** 65 ciascuna
 
@@ -190,10 +192,12 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 > Un paesaggio. Una torre su una collina verde. Quando lo fissi, ti sembra di sentire il vento. Di sentire l'erba.
 
 **Effetto:** Quadro Portatile del Rifugio
-- 1 volta al giorno, chi tocca il quadro e pronuncia la parola comando entra nel dipinto
+- 1 volta alla settimana, chi tocca il quadro e pronuncia la parola comando entra nel dipinto
 - Dentro: stanza sicura, riposo di 8 ore passa in 1 ora reale
 - Massimo 4 persone
 - Non si può usare in combattimento
+- Parola comando dentro il diario del mago sotto l'acqua, oppure
+- in biblioteca devo fare una ricerca specifica.
 
 **Valore:** 3000 mo
 
@@ -236,14 +240,14 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 
 #### Contenuto
 
-| Oggetto | Stato | Valore |
-|---------|-------|--------|
-| Monete d'oro | Intatte | 120 mo |
-| Gemma (rubino piccolo) | Intatta | 200 mo |
-| Anello del mago | Intatto | Anello Scudo (+1 CA vs attacchi a distanza) — 1500 mo |
-| Pergamena | Rovinata | Illeggibile |
-| Diario | Parzialmente leggibile | Vedi sotto |
-| Componenti magiche | Rovinate | Inutili |
+| Oggetto                | Stato                  | Valore                         |
+| ---------------------- | ---------------------- | ------------------------------ |
+| Monete d'oro           | Intatte                | 120 mo                         |
+| Gemma (rubino piccolo) | Intatta                | 200 mo                         |
+| Anello del mago        | Intatto                | Anello Scudo (+1 CA) — 1500 mo |
+| Pergamena              | Rovinata               | Illeggibile                    |
+| Diario                 | Parzialmente leggibile | Vedi sotto                     |
+| Componenti magiche     | Rovinate               | Inutili                        |
 
 #### Diario del Mago (estratto)
 

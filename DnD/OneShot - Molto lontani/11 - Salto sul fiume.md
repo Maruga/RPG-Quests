@@ -4,7 +4,7 @@
 
 > [!Leggere]
 > Scendete le scale. L'aria cambia. Umida. Salmastra.
-> Poi la vedete. Luce. Luce del giorno. Dall'altra parte della stanza.
+> Poi la vedete. Luce. Luce del giorno. Dall'altra parte della stanza/caverna.
 > Ma tra voi e la libertà — acqua. Scura. Profonda. Immobile.
 > A sinistra, una grata di ferro sul pavimento. Sotto, qualcosa di verde e viscido. Non sembra sicura.
 > A destra, bauli di legno. Una balista montata su supporto, puntata verso l'altra sponda. Niente dardi.
@@ -76,7 +76,7 @@ Corda robusta regge 250 kg
 
 #### Da Leggere (se osservano):
 
-> Sulla penisola, diversi scheletri di Goblin e animaletti vari. 
+> Sulla penisola, uno forse due scheletri di Goblin e animaletti vari. 
 > Una mano tesa verso l'altra sponda. Non ce l'ha fatta.
 > Accanto a lui, una borsa. Marcita.
 
@@ -91,16 +91,18 @@ Corda robusta regge 250 kg
 
 ### Comportamento
 
-| Situazione                     | Reazione                                  |
-| ------------------------------ | ----------------------------------------- |
-| PG lontani (4+ quadretti)      | Nessuna — immobili sotto                  |
-| PG si avvicinano a 3 quadretti | Osservano, se farsi vedere                |
-| PG si fermano a 3 quadretti    | Attaccano                                 |
-| PG si muovono senza fermarsi   | Aspettano                                 |
-| PG toccano acqua               | Attaccano in massa                        |
-| PG sulla penisola              | 2-3 tentacoli attaccano ogni round        |
-| Tanti PG si avvicinano         | Tantissimi tentacoli emergono             |
-| Oggetto lanciato in acqua      | Tentacoli vanno verso oggetto (1d4 round) |
+| Situazione                     | Reazione                                        |
+| ------------------------------ | ----------------------------------------------- |
+| PG lontani (4+ quadretti)      | Nessuna — immobili sotto                        |
+| PG si avvicinano a 3 quadretti | Osservano, se farsi vedere                      |
+| PG si fermano a 3 quadretti    | Attaccano                                       |
+| PG si muovono senza fermarsi   | Aspettano                                       |
+| PG toccano acqua               | Attaccano in massa                              |
+| PG sulla penisola              | 2-3 tentacoli attaccano ogni round              |
+| Tanti PG si avvicinano         | Tantissimi tentacoli emergono                   |
+| Oggetto lanciato in acqua      | Tentacoli vanno verso oggetto (1d4 round)       |
+| Olio lanciato                  | su 4 quadretti 2 round i tentacoli si immergono |
+| Palla di fuoco                 | 1d4+1 round i tentacoli si immergono            |
 Se un tentacolo viene colpito senza avere afferrato qualcosa si ritrae subito, altrimenti cerca di trascinare nell'acqua cosa ha afferrato.
 
 ### Portata e Precisione

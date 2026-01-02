@@ -25,12 +25,14 @@
             "id": "f1e696856c01909b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - Molto lontani/Immagini/Taverna.png"
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Taverna"
+              "icon": "lucide-file",
+              "title": "png_lisandro"
             }
           }
         ],
@@ -147,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DnD/OneShot - Molto lontani/Immagini/Taverna.png",
+                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -157,7 +159,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a Taverna"
+              "title": "Riferimenti a png_lisandro"
             }
           },
           {
@@ -215,7 +217,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -238,17 +240,33 @@
   },
   "active": "f1e696856c01909b",
   "lastOpenFiles": [
-    "DnD/OneShot - Molto lontani/Immagini/StanzaUscitaTentacoli.png",
-    "DnD/OneShot - Molto lontani/Immagini/Taverna.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaScale.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaScalaCripta.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaRagni.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaCripta.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaMago.png",
-    "DnD/OneShot - Molto lontani/Immagini/mappaPgPergamena.png",
-    "DnD/OneShot - Molto lontani/Immagini/MappaPgOriginale.jpg",
-    "DnD/OneShot - Molto lontani/Immagini/mappaPgDM.player.png",
-    "DnD/OneShot - Molto lontani/Immagini/StanzaCentrale.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_aurelio.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Custode Rimini.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Don Aurelio Farnese.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Enzo Damiani.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Fabio.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Giulia.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ingresso al Palazzo Visconti.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Lisandro.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ludovica Visconti.png",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia A3_2.jpg",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
+    "DnD/OneShot - Molto lontani/11 - Salto sul fiume.md",
+    "DnD/OneShot - Molto lontani/09 - Scale per l'uscita.md",
+    "DnD/OneShot - Molto lontani/10 - Stanza dei Ragni.md",
+    "DnD/OneShot - Molto lontani/08a - Cripta - Scala.md",
+    "DnD/OneShot - Molto lontani/07 - Stanza del Mago.md",
+    "DnD/OneShot - Molto lontani/08b - Cripta - Scheletri.md",
+    "DnD/OneShot - Molto lontani/08c - Cripta - Stanza segreta.md",
+    "DnD/OneShot - Molto lontani/Materiale/Ragnatela Ragni.md",
+    "DnD/OneShot - Molto lontani/06 - Stanza Centrale.md",
+    "DnD/OneShot - Molto lontani/PG/Selwyn Greyspire - 5th Level Fighter.md",
+    "DnD/OneShot - Molto lontani/04 - Ritorno in città.md",
+    "DnD/OneShot - Molto lontani/01 - Prologo Avventura.md",
+    "DnD/OneShot - Molto lontani/12 - Riepilogo.md",
+    "DnD/OneShot - Molto lontani/03 - Viaggio di Ritorno.md",
+    "DnD/OneShot - Molto lontani/02 - Stanza Goblin.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto/antefatto.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio/briefing.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
@@ -256,25 +274,9 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/siena/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/firenze/overview.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Mappa - Descrizione per AI Art.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/PNG - Descrizioni per AI Art.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/05_Indizi/diario_corvo.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_aurelio.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/png_riassunto.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/siena/png_silvestro.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/rimini/png_custode.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/firenze/png_vittoria.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/firenze/png_giulia.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/png_sofia.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/png_fabio.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/png_corsini.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/rimini/png_enzo.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/rimini/png_clara.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/README.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi",
