@@ -3,12 +3,21 @@
 La cronaca inizia con il Capitolo il risveglio, da questo capito possono iniziare diverse altri capitoli, i capitoli successivi possono aprire nuovi capitoli.
 
 ### Capitoli
-Capitolo iniziale - [[Vampiri la Masquerade/Capitolo - Il Risveglio/README]]
+Capitolo 1 - [[Vampiri la Masquerade/Capitolo - Il Risveglio/README]]
+Capitolo 2 - [[Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/README]]
+Capitolo 3 - [[Vampiri la Masquerade/Capitolo - Cripta Montebello/README]]
+Capitolo 4 - La droga Sangue Blu
+Capitolo 5 - Ricerca della Tzimisce
+Capitolo 6 - 
+Capitolo 7 - Operazione Sangue Corrotto
 
-Capitoli successivi al capitolo iniziale IL RISVEGLIO
-[[Vampiri la Masquerade/Capitolo - Cripta Montebello/README]]
 
+Spiegazione dei capitoli
+1. i personaggi si risvegliano e si ambianteno nel mondo dei vampiri, i loro siri li hanno abbandonati
+2. Avventura investigativa, può dargli una serie di appoggi in futuro
+3. Incontrano un semi dio che gli dona dei poteri, i siri cercano di ucciderli
+4. Una conseguenza delle sperimentazioni che fanno
+5. Altri indizi sulla scomparsa di persone e sospetti dei siri, trovano documenti ed altro
+6. da definire
+7. Ultimo capitolo, i pg con altre squadre devono andare ad uccidere i siri e distruggeere il siero
 
-### In lavorazione
-La droga “Sangue Blu”
-La bambola Tzimisce  
