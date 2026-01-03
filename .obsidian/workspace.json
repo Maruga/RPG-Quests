@@ -25,14 +25,12 @@
             "id": "f1e696856c01909b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
-                "mode": "source",
-                "source": false
+                "file": "DnD/OneShot - Escape Room/TanGram.png"
               },
-              "icon": "lucide-file",
-              "title": "png_lisandro"
+              "icon": "lucide-image",
+              "title": "TanGram"
             }
           }
         ],
@@ -238,8 +236,14 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "f1e696856c01909b",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "DnD/OneShot - Escape Room/Enigma - Tangram.md",
+    "DnD/OneShot - Escape Room/TanGram.png",
+    "DnD/OneShot - Escape Room/Idee.md",
+    "DnD/OneShot - Escape Room/Enigma 36 - Gambero.md",
+    "DnD/OneShot - Escape Room/Enigma 25 - Lupi e Pecore.md",
+    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_aurelio.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Custode Rimini.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Don Aurelio Farnese.png",
@@ -250,7 +254,6 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Lisandro.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Ludovica Visconti.png",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia 01.jpeg",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini/Mappa Italia A3_2.jpg",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
     "DnD/OneShot - Molto lontani/11 - Salto sul fiume.md",
     "DnD/OneShot - Molto lontani/09 - Scale per l'uscita.md",
@@ -270,12 +273,6 @@
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto/antefatto.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio/briefing.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/overview.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/siena/overview.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/firenze/overview.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/Mappa - Descrizione per AI Art.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/08_Riferimenti_Rapidi/PNG - Descrizioni per AI Art.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto",
