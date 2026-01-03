@@ -25,12 +25,14 @@
             "id": "f1e696856c01909b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - Escape Room/TanGram.png"
+                "file": "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "TanGram"
+              "icon": "lucide-file",
+              "title": "Enigma - Uomo nel ritratto"
             }
           }
         ],
@@ -236,10 +238,11 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "f1e696856c01909b",
   "lastOpenFiles": [
-    "DnD/OneShot - Escape Room/Enigma - Tangram.md",
     "DnD/OneShot - Escape Room/TanGram.png",
+    "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md",
+    "DnD/OneShot - Escape Room/Enigma - Tangram.md",
     "DnD/OneShot - Escape Room/Idee.md",
     "DnD/OneShot - Escape Room/Enigma 36 - Gambero.md",
     "DnD/OneShot - Escape Room/Enigma 25 - Lupi e Pecore.md",
@@ -272,7 +275,6 @@
     "DnD/OneShot - Molto lontani/02 - Stanza Goblin.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto/antefatto.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio/briefing.md",
-    "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/Immagini",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/01_Inizio",
     "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/00_Antefatto",
