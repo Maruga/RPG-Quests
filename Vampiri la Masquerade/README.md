@@ -13,7 +13,7 @@ Capitolo 7 - Operazione Sangue Corrotto
 
 
 Spiegazione dei capitoli
-1. i personaggi si risvegliano e si ambianteno nel mondo dei vampiri, i loro siri li hanno abbandonati
+1. i personaggi si risvegliano e si ambientano nel mondo dei vampiri, i loro siri li hanno abbandonati
 2. Avventura investigativa, può dargli una serie di appoggi in futuro
 3. Incontrano un semi dio che gli dona dei poteri, i siri cercano di ucciderli
 4. Una conseguenza delle sperimentazioni che fanno
