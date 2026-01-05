@@ -1,4 +1,6 @@
 
+Per poter seguire la via giusta è molto importante il punto di inizio, negli incroci ci potrebbero essere più simboli per strade diverse ai vari angoli.
+
 ### Simboli semplici
 
 1. Croce, da dove ci si trova, in senso anti orario, in base al numero di pallini presenti alle estremità indica la strada, un chiodo la prima a destra, 2 chiodi la seconda, 3 chiodi la terza, usato negli  Incroci o bivi.
