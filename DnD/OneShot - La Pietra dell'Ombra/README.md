@@ -26,6 +26,8 @@ Uscirete diversi. Se uscirete. Più ricchi, forse. Più saggi, sicuramente. Ma i
 
 # Presentazione Ironica
 
+![[Copertina3.jpg]]
+
 ## _Un Lavoretto Facile_
 
 Un amico vi chiede un favore. Suo figlio — il solito ragazzino con la testa piena di sogni e il cervello pieno d'aria — è partito a fare l'eroe. Trovatelo. Dategli due scappellotti. Riportatelo a casa. Possibilmente vivo. Preferibilmente intero.
@@ -41,7 +43,8 @@ Solo un favore a un amico, una manciata di mostri verdi, e una birra fresca che 
 
 Un'avventura semplice. Tranquilla. Rilassante.
 
-Cosa potrebbe mai andare storto?
+Cosa potrebbe mai andare storto? 
+Nulla!
 
 _Nota del DM: portate schede di riserva._
 
