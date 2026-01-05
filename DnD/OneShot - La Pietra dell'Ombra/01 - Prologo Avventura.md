@@ -20,7 +20,17 @@
 
 [[02 - Stanza Goblin]]
 [[03 - Viaggio di Ritorno]]
-
+[[04 - Ritorno in città]]
+[[05 - Stanza Buia e Silenziosa]]
+[[06 - Stanza Centrale]]
+[[07 - Stanza del Mago]]
+[[08a - Cripta - Scala]]
+[[08b - Cripta - Scheletri]]
+[[08c - Cripta - Stanza segreta]]
+[[09 - Scale per l'uscita]]
+[[10 - Stanza dei Ragni]]
+[[11 - Salto sul fiume]]
+[[12 - Riepilogo]]
 
 
 
