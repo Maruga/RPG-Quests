@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/Gabbia Arcana.png"
+                "file": "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoMenoDue.png"
               },
               "icon": "lucide-image",
-              "title": "Gabbia Arcana"
+              "title": "PianoMenoDue"
             }
           },
           {
@@ -237,10 +237,15 @@
   },
   "active": "f1e696856c01909b",
   "lastOpenFiles": [
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoMenoUno.png",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoTerra.png",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PrimoPiano.png",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoMenoDue.png",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/Gabbia Arcana.png",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/Tavolo di contenimento.png",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/GenratoreArcano.png",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/DispositivoAlchemico.png",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/Gabbia Arcana.png",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/Cryogeniche.png",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/CerrchioMagico.png",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti/centrifuga.png",
@@ -249,11 +254,8 @@
     "Strumenti/12C7E610",
     "Vampiri la Masquerade/README.md",
     "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/README.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Siri/TREMERE.png",
     "Strumenti/~$Strumenti.xlsx",
     "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Siri/Descrizione Siri.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Siri/BRUJAH.png",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Siri/GANGREL.png",
     "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Siri",
     "Strumenti/1E184610",
     "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Personaggi/_Gangrel-Matteo Bechara.md",
@@ -280,7 +282,6 @@
     "DnD/OneShot - Molto lontani/08c - Cripta - Stanza segreta.md",
     "DnD/OneShot - Molto lontani/Materiale/Ragnatela Ragni.md",
     "DnD/OneShot - Molto lontani/06 - Stanza Centrale.md",
-    "Vampiri la Masquerade/Capitolo 2 - La Cenere Del Testimone/Immagini",
-    "Vampiri la Masquerade/Capitolo 2 - La Cenere Del Testimone/01_Inizio"
+    "Vampiri la Masquerade/Capitolo 2 - La Cenere Del Testimone/Immagini"
   ]
 }
