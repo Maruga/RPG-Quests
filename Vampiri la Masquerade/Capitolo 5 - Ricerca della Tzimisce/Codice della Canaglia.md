@@ -1,7 +1,7 @@
 
 ### Simboli semplici
 
-1. Croce, da dove ci si trova, in senso anti orario, in base al numero di pallini presenti alle estremità indica la strada, un chiodo la prima, 2 chiodi la seconda, 3 chiodi la terza da dove si è, usato negli  Incroci o bivi.
+1. Croce, da dove ci si trova, in senso anti orario, in base al numero di pallini presenti alle estremità indica la strada, un chiodo la prima a destra, 2 chiodi la seconda, 3 chiodi la terza, usato negli  Incroci o bivi.
 2. Croce senza pallini indica di proseguire, la via è giusta.
 3. Pesce, strada sbagliata non porta a nulla, solitamente lungo il percorso
 4. Ancora, prendi la via che scende Incroci o bivi
@@ -13,7 +13,7 @@
 10. Rete, passaggio segreto nelle vicinanze, oppure scorciatoia
 11. Conchiglia, indica risorse/approvvigionamento
 
-### Composti
+### Composti - Simboli affiancati
 
 1. Croce + Tomba, indica la casa madre, i pallini non importano, si deve andare dritti
 2. Croce + Nave, indica alleati in zona, i pallini non importano è solo informazione
