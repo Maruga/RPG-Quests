@@ -6,6 +6,7 @@
 ## Natura del Luogo
 
 La Casa Madre non è un semplice rifugio. È un **nexus di potere magico** — un luogo dove le energie arcane si concentrano naturalmente, forse da millenni.
+Qui si trova un sigillo di ferro, acciaio e altro materiale a terra tondo, lo stesso sarà presente nel castello nell'ultimo livello.
 
 ### Caratteristiche
 

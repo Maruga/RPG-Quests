@@ -9,7 +9,7 @@
     "makeHeadersTrees": true,
     "postProcess": true,
     "displayProgress": true,
-    "inlineHTML": true,
+    "inlineHTML": false,
     "exportPath": "C:\\temp",
     "filesToExport": [],
     "useFallbackRenderer": false,
@@ -18,7 +18,7 @@
     "addHeadTag": true,
     "backlinkOptions": {
       "featureId": "backlinks",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -30,7 +30,7 @@
     },
     "tagOptions": {
       "featureId": "tags",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -44,7 +44,7 @@
     },
     "aliasOptions": {
       "featureId": "aliases",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -68,8 +68,8 @@
     },
     "fileNavigationOptions": {
       "featureId": "file-navigation",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -99,7 +99,7 @@
     },
     "outlineOptions": {
       "featureId": "outline",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -126,7 +126,7 @@
     "graphViewOptions": {
       "featureId": "graph-view",
       "enabled": false,
-      "unavailable": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -148,7 +148,7 @@
     },
     "sidebarOptions": {
       "featureId": "sidebar",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -191,12 +191,12 @@
     },
     "linkPreviewOptions": {
       "featureId": "link-preview",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": true
     },
-    "relativeHeaderLinks": false,
+    "relativeHeaderLinks": true,
     "includeJS": true,
     "includeCSS": true,
     "inlineMedia": true,
@@ -204,17 +204,19 @@
     "inlineJS": true,
     "inlineFonts": true,
     "inlineOther": true,
-    "combineAsSingleFile": false,
+    "combineAsSingleFile": true,
     "offlineResources": true,
     "themeName": "",
-    "slugifyPaths": false,
+    "slugifyPaths": true,
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
     "siteName": "Vampiri",
     "iconEmojiStyle": "Native",
-    "exportRoot": "DnD/OneShot - Level Up",
-    "includePluginCss": [],
+    "exportRoot": "",
+    "includePluginCss": [
+      "diagram-zoom-drag"
+    ],
     "includeStyleCssIds": [],
     "autoDisposeWebpages": true
   },
@@ -223,7 +225,7 @@
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "raw-documents",
+  "exportPreset": "local",
   "openAfterExport": false,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",

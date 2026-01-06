@@ -9,19 +9,15 @@
 | **Colpito** | TS Incantesimi o intrappolato |
 | **Matriarca** | TS a -1 (ragnatele potenziate) |
 
----
-
 ### Se Intrappolato
 
-| Effetto | Dettaglio |
-|---------|-----------|
-| Movimento | Impossibile |
-| Attaccare | Sì, ma -4 a colpire |
-| Lanciare incantesimi | Sì, ma TS per completare (componenti somatiche difficili) |
-| CA | -2 (più facile da colpire) |
-| Ragno attacca intrappolato | +4 a colpire |
-
----
+| Effetto                    | Dettaglio                                                             |
+| -------------------------- | --------------------------------------------------------------------- |
+| Movimento                  | Impossibile                                                           |
+| Attaccare                  | Sì, ma -4 a colpire                                                   |
+| Lanciare incantesimi       | Sì, ma TS Paralisi -2 per completare (componenti somatiche difficili) |
+| CA intrappolato            | +2 (più facile da colpire)                                            |
+| Ragno attacca intrappolato | +4 a colpire                                                          |
 
 ### Liberarsi
 
@@ -49,7 +45,5 @@
 ### Descrizione — Colpito da Ragnatela
 
 > Qualcosa ti colpisce. Appiccicoso. Si avvolge intorno a braccia e gambe.
-> 
 > Ragnatela. Ti stringe. Cerchi di muoverti ma ogni movimento ti blocca di più.
-> 
 > Sei intrappolato.

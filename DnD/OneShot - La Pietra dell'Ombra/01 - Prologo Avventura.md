@@ -27,12 +27,12 @@
 [[08a - Cripta - Scala]]
 [[08b - Cripta - Scheletri]]
 [[08c - Cripta - Stanza segreta]]
-[[09 - Scale per l'uscita]]
-[[10 - Stanza dei Ragni]]
+[[10 - Scale per l'uscita]]
+[[09 - Stanza dei Ragni]]
 [[11 - Salto sul fiume]]
 [[12 - Riepilogo]]
 
 
 
-
+![[SchemaAvventura.png]]
 

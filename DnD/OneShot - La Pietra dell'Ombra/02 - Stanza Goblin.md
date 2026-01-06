@@ -117,6 +117,7 @@ Tesoro trovato nella sala:
 365 (mostri) + 600 (tesoro) = **965 PX totali**
 
 Diviso per 4 PG = **240 PX a testa**  
+Diviso per 5 PG = **193 PX a testa**  
 → _ottimo “riscaldamento”!_
 
 
@@ -195,15 +196,43 @@ Dopo il combattimento, quando i PG esplorano la stanza o cercano tesori.
 
 ## Effetto Maledetto
 
-| Tempo                 | Effetto                                                   |
-| --------------------- | --------------------------------------------------------- |
-| **Durante il giorno** | Nulla. La pietra sembra inerte.                           |
-| **Al tramonto**       | La pietra diventa leggermente più fredda. Impercettibile. |
-| **Sera**              | Attivazione. Tutti entro 12m vengono teletrasportati.     |
+| Tempo                 | Effetto                                                       |
+| --------------------- | ------------------------------------------------------------- |
+| **Durante il giorno** | Nulla. La pietra sembra inerte.                               |
+| **Al tramonto**       | La pietra diventa leggermente più fredda. Impercettibile.     |
+| **Non definito**      | Si attiva. Tutti entro 12m di raggio vengono teletrasportati. |
+|                       | Non si attiva su un personaggio morto.                        |
 
 ### Attivazione:
 
 Nessun preavviso. Nessun tiro salvezza.
 Chi porta la pietra + tutti entro 12m → teletrasportati nella Stanza Buia.
 La pietra scompare.
+
+
+## La Pietra dell'Ombra — Funzione Originale
+
+### Scopo
+Sistema di cattura progettato dal mago per il trasporto di prigionieri. Chi porta la pietra viene "marchiato". Quando le condizioni si verificano, il portatore viene teletrasportato nella cella di massima sicurezza — la Stanza Buia.
+
+Il raggio di 12 metri garantiva che anche eventuali complici o le stesse guardie del mago venissero trasportati insieme al prigioniero. Nessuno sfuggiva.
+
+### Utilizzo
+Il mago faceva indossare la pietra ai prigionieri durante i trasferimenti. Se fuggivano, nel giro di poco tempo venivano riportati nella cella oscura. Nessuna fuga era possibile.
+
+### Perché Si Trova Qui
+Durante un trasferimento, la carovana fu attaccata. Il prigioniero ucciso. I servi del mago massacrati. La pietra — già attivata, pronta a scattare — rimase sul cadavere. Poi sepolta. Dimenticata per secoli.
+
+### Ricarica
+La pietra accumula energia durante la notte. Dopo secoli di inattività, necessita di almeno due notti per ricaricarsi completamente, il calore aumenta la velocità di carica (Taverna ad esepio).
+
+Una volta carica, scatta — ma solo se qualcuno la porta con sé. Se abbandonata, resta inerte.
+
+### Stato Attuale
+La pietra è attiva. Il mago l'aveva innescata secoli fa per riportare indietro il prigioniero. Ma tutti morirono prima che scattasse.
+
+Ora attende solo due cose: essere toccata e ricaricarsi.
+
+Il primo a portarla con sé dopo tutto questo tempo completerà il ciclo.
+
 

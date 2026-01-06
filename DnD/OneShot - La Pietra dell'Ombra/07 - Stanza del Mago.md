@@ -101,10 +101,11 @@ Nulla. Polvere.
 | Oggetto                           | Dettaglio                                                                                                               |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Tomo di Evocazione                | +1 a imparare incantesimi evocazione (se usato 1 settimana)                                                             |
-| Bestiario dei Non-Morti           | Info su vampiri, ghoul, wraith                                                                                          |
+| Bestiario dei Non-Morti           | Info su scheletri, ghoul, wraith                                                                                        |
 | Grammatica Draconico              | Permette di imparare la lingua (1 mese studio)                                                                          |
 | Libro Bianco                      | Pagine vuote, ottimo per libro incantesimi                                                                              |
 | Libro Sigillato (cassetto chiuso) | Richiede chiave. Libro degli Incantesimi: Luce, Scudo, Individuazione Magia, Levitazione. Chiave cassetto tavolo vuoto. |
+| Documento sulla pietra nera       | Vedi nota in fondo, Estratto sulle Pietre dell'Ombra                                                                    |
 
 ### Pianta e Ragnatele (angolo)
 
@@ -218,6 +219,35 @@ Le gemme brillano. Una dopo l'altra. Viola, bianco, verde, rosso, blu.
 Il piedistallo vibra. Un rombo basso attraversa la stanza.
 La porta inferiore — le rune blu lampeggiano e svaniscono. Un altro click, metallico.
 La porta si apre. Lentamente. Un varco verso il buio sotto.
+
+
+
+## Documento — Estratto sulle Pietre dell'Ombra
+
+> [!NOTE]
+> Trovate un quaderno dalla copertina di cuoio scuro. Le pagine sono ingiallite, l'inchiostro sbiadito in molti punti. Alcune annotazioni sono ancora leggibili.
+
+*"...completata la terza Pietra dell'Ombra. Il legame con la cella è stabile. Il raggio di cattura resta fissato a 40 piedi (~12mt) — sufficiente per prendere anche le guardie, se necessario..."*
+
+*"Trasferimento del prigioniero Varek. Pietra consegnata alle guardie di scorta. Tre giorni di viaggio fino a Thornwick.*
+*Risultato: successo. Al quarto tramonto, Varek e due guardie sono apparsi nella cella. La pietra si è dissolta — come previsto. Una pietra, un uso. Devo crearne altre."*
+
+*"Trasferimento della strega di Millford. Due notti di viaggio.*
+*Risultato: successo. È apparsa sola — le guardie erano oltre il raggio. Meglio così. Meno bocche da sfamare."*
+
+*"Prigioniero senza nome, catturato a sud. Pietra affidata al sergente Brynn.*
+*Risultato: la pietra non è tornata. Brynn e i suoi uomini non sono mai arrivati. Presumo un'imboscata. Se il portatore muore, il ciclo si interrompe. La pietra resta dove cade.*
+*Nota: inviare qualcuno a cercarla? No. Troppo rischioso. Ne creerò un'altra."*
+
+*"La Pietra IV è stata persa. Nessuna notizia della carovana. Banditi? Mostri? Non importa. Se nessuno la tocca, resterà inerte per sempre.*
+*Ne restano due attive. Sufficienti."*
+
+*"Nota: le pietre si ricaricano con l'oscurità o con il calore. Due notti piene dopo il contatto. Poi scattano al tramonto. Se abbandonate prima della ricarica, tornano dormienti.*
+*Non toccatele se non sapete cosa fate."*
+
+Il resto delle pagine è illeggibile. Macchie di umidità e muffa hanno cancellato tutto.
+
+_Il mago poteva attivarle a piacere, la sua creazione è persa i documenti non sono leggibili_
 
 
 ## Tesoro Totale — Stanza del Mago

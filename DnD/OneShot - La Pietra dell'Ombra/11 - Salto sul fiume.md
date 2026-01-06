@@ -26,14 +26,14 @@
 
 ## Trappola — Grata con Melma
 
-| Dettaglio | Valore |
-|-----------|--------|
-| Trigger | PG cammina sopra |
-| Effetto | Grata cede, cade 6m |
-| Sotto | Melma verde, nessun appiglio |
-| TS | Destrezza per aggrapparsi al bordo |
-| Se cade | Affoga nella melma — morte |
-| Salvataggio | Corda da sopra, entro 2 round |
+| Dettaglio   | Valore                                  |
+| ----------- | --------------------------------------- |
+| Trigger     | PG cammina sopra                        |
+| Effetto     | Grata cede, cade 6m                     |
+| Sotto       | Melma verde, nessun appiglio            |
+| TS          | Destrezza per aggrapparsi al bordo      |
+| Se cade     | Affoga nella melma — morte dopo 2 round |
+| Salvataggio | Corda da sopra, entro 2 round           |
 
 #### Da Leggere (se cade):
 

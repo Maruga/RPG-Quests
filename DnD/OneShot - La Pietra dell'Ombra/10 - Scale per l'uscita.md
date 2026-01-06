@@ -14,7 +14,100 @@
 > Non sembra facile da aprire.
 
 
-### Porta Superiore
+## Portone Rinforzato — Verso la Stanza dei Ragni
+
+### Descrizione
+
+> [!Leggere]
+> Un portone di ferro battuto. Massiccio. Pesante. Piastre ribattute, borchie grosse come pugni.
+> Nessuna maniglia visibile. Nessuna serratura. Solo metallo freddo e silenzioso.
+> I cardini sono nascosti — interni, protetti. Questo portone non si smonta.
+> Sul telaio, segni sbiaditi. Rune, forse. O semplici graffi del tempo.
+> È stato costruito per non essere aperto.
+
+### Statistiche
+
+| Elemento          | Dettaglio                              |
+| ----------------- | -------------------------------------- |
+| **Materiale**     | Ferro battuto, piastre rinforzate      |
+| **CA**            | 0 [19]                                 |
+| **HP**            | 60                                     |
+| **Durezza**       | 10 (ignora i primi 10 danni per colpo) |
+| **Tempra Arcana** | Si                                     |
+| **Serratura**     | Nessuna (meccanismo nascosto)          |
+| **Cardini**       | Interni, non accessibili               |
+| **Sfondare**      | Quasi impossibile, rumore assordante   |
+#### Tempra arcana
+Il portone è stato trattato con magia protettiva. Effetti: 
+- Acido: durezza raddoppiata (20) 
+- Fuoco magico: durezza raddoppiata (20) 
+- Fuoco normale: nessun effetto 
+- Fulmine: danni dimezzati, poi applica durezza 
+- Armi magiche: non ignorano la durezza (serve +3 o superiore)
+
+### Meccanismo di Apertura
+
+| Posizione | Dettaglio |
+|-----------|-----------|
+| **Dove** | Nicchia nascosta alla base del muro, tra le due inferriate |
+| **Aspetto** | Pietra leggermente sporgente, stessa tonalità del muro |
+| **Azione** | Premere la pietra + spingere il portone |
+
+### Trovare il Meccanismo
+
+| Metodo                              | Tiro       |
+| ----------------------------------- | ---------- |
+| Cercare attivamente                 | 1-2 su d6  |
+| Nano                                | 1-3 su d6  |
+| Pergamena dalla stanza segreta (8C) | Automatico |
+| Ladro (cerca trappole)              | % -30%     |
+
+### Aprire
+
+| Metodo | Risultato |
+|--------|-----------|
+| Meccanismo + spingere | Si apre |
+| Sfondare | CA 0, 60 HP, rumore enorme, armi rischiano rottura |
+| Scassinare | Impossibile (nessuna serratura) |
+| Bussare (incantesimo) | Funziona |
+| Dissolvi Magie | Non funziona (meccanico, non magico) |
+| Acido | 5 fiale, 5 turni, corrode i cardini |
+
+## Portone d'Ingresso — Scale verso l'Uscita (11)
+
+### Descrizione
+
+> [!Leggere]
+> Un portone massiccio. Legno scuro, spesso come un braccio, rinforzato con bande di ferro annerito. I cardini sono interni — non visibili, non smontabili.
+> Una serratura elaborata, ottone scurito dal tempo. Sotto, un catenaccio pesante — chiuso dall'interno.
+> Questo portone è stato costruito per tenere fuori chiunque.
+
+### Statistiche
+
+| Elemento       | Dettaglio                                       |
+| -------------- | ----------------------------------------------- |
+| **Materiale**  | Quercia rinforzata con ferro                    |
+| **CA**         | 2 [17]                                          |
+| **HP**         | 45                                              |
+| **Serratura**  | Scassinare -20%                                 |
+| **Catenaccio** | Non scassinabile, solo rimovibile dall'interno. |
+| **Sfondare**   | Possibile, rumore enorme                        |
+
+### Aprire
+
+| Metodo                | Risultato                                                                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Chiave                | Apre serratura, catenaccio resta, la chiave non è presente nella casa, andata persa quando il mago è morto. |
+| Scassinare            | -20%, apre solo serratura                                                                                   |
+| Catenaccio            | Deve essere tolto a mano (dall'interno)                                                                     |
+| Sfondare              | CA 2, 45 HP, sveglia tutto il dungeon                                                                       |
+| Bussare (incantesimo) | Apre serratura E catenaccio                                                                                 |
+
+### Nota
+I PG arrivano dall'interno. Catenaccio e serratura non sono un problema per uscire — basta aprirli. Il portone è un ostacolo per chi entra, non per chi esce.
+
+
+## Porta Superiore - Porta alla stanza del Mago
 
 | Stato        | Dettaglio                                |
 | ------------ | ---------------------------------------- |
@@ -29,7 +122,7 @@
 > La porta in cima alle scale si è chiusa. Da sola.
 > *può essere scassinata dal ladro*
 
-#### Sfondare Inferriata
+## Sfondare Inferriata
 
 | Metodo          | Possibile? | Note                      |
 | --------------- | ---------- | ------------------------- |
@@ -61,7 +154,7 @@ il secondo danno l'arma si rompe.
 | ------------------------- | ---------- | ------------------------------------------------- |
 | **Chiave**                | Sì         | Automatico (chiave nella stanza ragni)            |
 | **Scassinare**            | Sì         | -30% al tiro, richiede grimaldelli                |
-| **Sfondare**              | Si         | CA 2, HP 1110, come porta ma +1 a rompere armi    |
+| **Sfondare**              | Si         | CA 2, HP 111, come porta ma +1 a rompere armi     |
 | **Bussare (incantesimo)** | Sì         | Funziona                                          |
 | **Dissolvi Magie**        | No         | Non magicamente chiuso                            |
 | **Acido**                 | Sì         | 3 fiale, 3 turni, rovina parte del contenuto      |

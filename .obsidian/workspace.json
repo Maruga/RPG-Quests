@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Indizi.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Indizi"
+              "title": "01 - Prologo Avventura"
+            }
+          },
+          {
+            "id": "d977ff93975717ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DnD/OneShot - La Pietra dell'Ombra/06 - Stanza Centrale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "06 - Stanza Centrale"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vampiri la Masquerade/Capitolo - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/06 - Stanza Centrale.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -159,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a png_lisandro"
+              "title": "Riferimenti a 06 - Stanza Centrale"
             }
           },
           {
@@ -208,16 +222,16 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DnD/OneShot - Level Up/Meccaniche.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/06 - Stanza Centrale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Meccaniche"
+              "title": "Collegamenti in uscita da 06 - Stanza Centrale"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -235,48 +249,49 @@
       "audio-recorder:Avvia/ferma registrazione": false,
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "webpage-html-export:Export as HTML": false
+      "webpage-html-export:Export as HTML": false,
+      "publish:Pubblica modifiche": false
     }
   },
-  "active": "2db0f0549de638cd",
+  "active": "d977ff93975717ac",
   "lastOpenFiles": [
-    "Vampiri la Masquerade/README.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/README.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/README.md",
-    "Vampiri la Masquerade/Guide/Flashback.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Casa Madre.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Indizi.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Codice della Canaglia.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Capitoli/03/Scena 3.2 - Elisio e la custode.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Capitoli/05/Scena 5.3 - Laboratori Villa.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Labirinto.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/Poesia per trovare incrocio.md",
-    "Pasted image 20260106013010.png",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce",
-    "Link Utili.md",
-    "Vampiri la Masquerade/Siri/Coterie del Sangue Corrotto.md",
-    "Vampiri la Masquerade/Siri/Descrizione Siri.md",
-    "Vampiri la Masquerade/Siri/VENTRUE.png",
-    "Vampiri la Masquerade/Siri/TREMERE.png",
-    "Vampiri la Masquerade/Siri/TOREADOR.png",
-    "Vampiri la Masquerade/Siri/NOSFERATU.png",
-    "Vampiri la Masquerade/Siri/MALKAVIAN.png",
-    "Vampiri la Masquerade/Siri/GANGREL.png",
-    "Vampiri la Masquerade/Siri/BRUJAH.png",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Capitoli/03/Scena 3.1 - Verso Elisio.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Png/Anarchici Pennabilli.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Capitoli/05/Scena 5.4 - La Bambina.md",
-    "Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Png/Bambina Segrete Tzime.md",
-    "Vampiri la Masquerade/Code/Strumenti.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Cronaca_Operazione_Sangue_Corrotto.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/05_Meccaniche_Struttura.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Bestiario.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/00_Indice_Maniero.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoMenoUno.png",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello/PianoMenoDue.png",
-    "DnD/OneShot - La Pietra dell'Ombra/README.md",
-    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
+    "DnD/OneShot - La Pietra dell'Ombra/08c - Cripta - Stanza segreta.md",
     "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
+    "DnD/OneShot - La Pietra dell'Ombra/08b - Cripta - Scheletri.md",
+    "DnD/OneShot - La Pietra dell'Ombra/09 - Stanza dei Ragni.md",
+    "DnD/OneShot - La Pietra dell'Ombra/README.md",
+    "DnD/OneShot - La Pietra dell'Ombra/11 - Salto sul fiume.md",
+    "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
+    "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
+    "DnD/OneShot - La Pietra dell'Ombra/10 - Scale per l'uscita.md",
+    "DnD/OneShot - La Pietra dell'Ombra/05 - Stanza Buia e Silenziosa.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Ragnatela Ragni.md",
+    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SchemaAvventura.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Flusso.png",
+    "DnD/OneShot - Escape Room/Flusso.png",
+    "Flusso.svg",
+    "DnD/Blocco Lancio Incantesimi.md",
+    "DnD/Armature CA.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Oggetti presenti nelle due città.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScale.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.player.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaXstampa.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScalaCripta.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SotterraneiCastello.png",
+    "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
+    "DnD/OneShot - La Pietra dell'Ombra/03 - Viaggio di Ritorno.md",
+    "DnD/OneShot - La Pietra dell'Ombra/PG/Selwyn Greyspire - 5th Level Fighter.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Cronaca_Operazione_Sangue_Corrotto.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Bestiario.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/05_Meccaniche_Struttura.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/04_Piano_Meno_Due.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/03_Piano_Meno_Uno.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/02_Piano_Terra.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/01_Primo_Piano.md",
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/00_Indice_Maniero.md",
+    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/cronaca_v2 1.docx",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/bestiario 1.docx",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/magnus_valdris 1.docx",

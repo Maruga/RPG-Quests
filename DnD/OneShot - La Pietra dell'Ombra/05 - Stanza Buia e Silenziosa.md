@@ -1,3 +1,10 @@
+Inizio del dungeon nella casa del mago.
+
+> [!important]
+> Tutta la casa, se non diversamente indicato è buia.
+> Nella casa non ci sono incontri erranti. Solo se dormono dentro sono attacchi dai ragni. 2/3 ragni a discrezione del DM, statistiche nella stanza dei ragni.
+> I ragni sono in grado di muoversi praticamente ovunque nella casa. 
+> Le uniche stanze che evitano sono la stanza buia se ancora attiva e la stanza degli scheletri.
 
 ## La Scena — Tutto Scompare
 
