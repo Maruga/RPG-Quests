@@ -4,60 +4,182 @@
 
 ---
 
-## 📍 Mappa degli Indizi
+## 🎭 Prologo — L'Incarico dell'Arpia
 
-```mermaid
-flowchart TD
-    A[Combattimento presso Antares - Nodo 184] --> B[Nodo 2 - Rifugio vampiri]
-    B --> C[Riferimenti al poeta Villon]
-    D[Tana del Sire] --> E[Lettera cifrata + Percorso Codice Canaglie]
-    E --> F[Nodo 108 - Eltanin]
-    F --> G[Nodo 41 - Magazzino dei Siri]
-    G --> H[Libro delle Costellazioni]
-    C --> I[Professor Fabbri - Biblioteca Malatestiana]
-    I --> J[Informazioni su Villon + Avvertimento]
-    J --> K[Cimitero Sconsacrato - Bosco di Montefeltro]
-    H --> K
-    K --> L[Poesia di Villon]
-    L --> M[Tracciare le linee sulla mappa]
-    M --> N[Casa Madre del Sabbat]
-```
+### La Chiamata
+
+L'**Arpia di Santarcangelo**, Sire dei PG, li convoca con un incarico apparentemente semplice:
+
+> _"Il Principe vuole risposte. Ci sono state sparizioni nella zona di San Vito — mortali che scompaiono di notte. La Masquerade è a rischio. Indagate. Scoprite chi o cosa è responsabile."_
+> Alcuni testimoni descrivono una persona deforme, sembra una bambina. (questa è la Tzmisce che i PG hanno incontrato nella prima avventura.)
+
+Nient'altro. Nessun dettaglio in più. L'Arpia non sa cosa si nasconde dietro le sparizioni.
+
+I PG che hanno comunicato precedentemente che una Tzimisce è riuscita a scappare dai laboratori dei siri a Villa Verucchio, potrebbe essere la causa. In realtà la Tzimisce scappata non centra null, ma comunque la ritrovano insieme ad altri del suo clan nei cunicoli.
+
+### Il Collegamento — Il Quadro
+
+I PG hanno già un indizio, anche se non lo sanno ancora.
+
+> [!note] Avventura Precedente In una sessione precedente, i PG hanno visto un **quadro** che raffigurava i cunicoli sotto Santarcangelo. Un'immagine inquietante, con tunnel che si snodano nel buio. All'epoca sembrava solo un dettaglio d'atmosfera...
+
+
+### Dopo l'Indagine — Il Ritorno
+
+Quando i PG tornano con informazioni sui cunicoli e su cosa hanno trovato, l'Arpia cambia atteggiamento. Diventa più seria. Più cauta.
+
+> _"I cunicoli. Lo sospettavo."_
+
+Pausa.
+
+> _"Ho una mappa. Antica. Mostra la rete di tunnel sotto il Colle Giove — oltre 200 nodi, ma non tutti i percorsi sono chiari. Ho mandato dei Ghoul a esplorare, in passato."_
+
+#### Cosa rivela l'Arpia
+
+**Sulle esplorazioni precedenti:**
+
+> _"I miei Ghoul sono entrati da vari punti — cantine, pozzi, fessure. Hanno trovato simboli sui muri. Croci, ancore, pesci, soli. Non hanno mai capito cosa significassero."_
+
+**Sui Ghoul perduti:**
+
+> _"Non tutti sono tornati. Ho perso due squadre. Una terza è rientrata... ma l'unico sopravvissuto non parla più. Ho smesso di mandare gente dopo quello."_
+
+**Sul vero problema:**
+
+> _"Il problema non è entrare. Il problema è **muoversi** là sotto. I tunnel girano in cerchio, portano a vicoli ciechi, o semplicemente... inghiottono chi ci cammina. Senza sapere come navigarli, si è ciechi."_
+
+**Sui sospetti:**
+
+> _"Sospetto che di nidi come quello ce ne siano diversi. Qualcosa vive là sotto da molto tempo. Qualcosa che non vuole essere trovato."_
+
+#### Cosa fornisce ai PG
+
+- **La mappa dei cunicoli** (copia, non l'originale)
+- I giocatori possono contattare i loro contatti per sapere di Fabbri al momento che desiderano, altrimenti l'arpia ...
+- ... **Un contatto**: _"Se avete bisogno di qualcuno che sappia leggere le cose antiche — simboli, codici, lingue morte — c'è un professore a Cesena. Fabbri. Lavora alla Malatestiana. È... discreto."_
+
+> [!important] Collegamento con Professor Fabbri L'Arpia conosce il Professor Fabbri — sa che è affidabile per certe questioni. Anche alcuni **contatti dei PG** potrebbero conoscerlo indipendentemente.
 
 ---
 
-## 1️⃣ Combattimento presso Antares (Nodo 184)
+### Struttura della Sessione
+
+| Momento           | Cosa succede                                                 |
+| ----------------- | ------------------------------------------------------------ |
+| **Inizio**        | Incarico semplice: indagare sparizioni                       |
+| **Indagine**      | I PG scoprono il collegamento con i cunicoli                 |
+| **Ritorno**       | L'Arpia rivela la mappa, i Ghoul perduti, il contatto Fabbri |
+| **Proseguimento** | I PG esplorano i cunicoli con nuove informazioni             |
+
+### Da qui parte tutto
+
+I PG iniziano l'indagine sulle sparizioni nella zona di San Vito. Questo li porta al combattimento presso il nodo 184, e da lì la catena di indizi si dipana...
+
+---
+
+## 📍 Mappa degli Indizi
+
+```
+                         PROLOGO
+                            ↓
+          Incarico dell'Arpia → Indagine Sparizioni
+                            ↓
+════════════════════════════════════════════════════════
+      PERCORSO A                      PERCORSO B
+════════════════════════════════════════════════════════
+          ↓                               ↓
+  Combattimento Nodo 184            Tana del Sire
+          ↓                               ↓
+  Nodo 2 (Rifugio vampiri)        Nodo 108 (Eltanin)
+          ↓                               ↓
+  Oggetti rubati Villon           Nodo 41 (Magazzino)
+  + Lettera del Superiore               ↓
+          ↓                       Libro Costellazioni
+          ↓                       + annotazioni Villon
+          ↓                               ↓
+════════════════════════════════════════════════════════
+                    ↘           ↙
+              Professor Fabbri (Ghoul)
+              [Contatto fornito dall'Arpia]
+                         ↓
+                 Totem da Agnese
+                         ↓
+                 Territorio Licantropi
+                         ↓
+              Tomba di Villon (NON-MORTO)
+                         ↓
+              Poesia (interno coperchio bara)
+                         ↓
+              Tracciare linee sulla mappa
+                         ↓
+                  CASA MADRE SABBAT
+```
+
+
+
+## 1️⃣ Combattimento presso San Vito (Nodo 184)
+
+### La Zona — San Vito
+
+**San Vito** è una frazione di Santarcangelo, circa 3 km a nord del centro, lungo il tracciato dell'antica Via Emilia. Una zona di case sparse, campi, e qualche edificio industriale abbandonato.
+
+> [!warning] Le Sparizioni Negli ultimi mesi, la zona ha visto **diverse sparizioni inspiegabili**:
+> 
+> - Un agricoltore che tornava a casa di notte (marzo)
+> - Una coppia di giovani che cercavano un posto appartato (aprile)
+> - Un senzatetto che dormiva in un capannone abbandonato (giugno)
+> 
+> La polizia non ha trovato nulla. I locali evitano la zona dopo il tramonto.
 
 ### Evento
 
-Durante le investigazioni, i PG si imbattono **casualmente** in un gruppo di vampiri nei pressi del nodo 184 (Antares). Dopo il combattimento, i vampiri sopravvissuti si rifugiano nel **nodo 2**.
+Durante le investigazioni sulle sparizioni, i PG si imbattono in un gruppo di vampiri nei pressi del nodo 184 (Antares). Dopo il combattimento, i vampiri sopravvissuti si rifugiano nel **nodo 2** — un rifugio nei cunicoli sotto la zona.
 
 ### Cosa trovano al Nodo 2
+Da aggiungere che qui trovano diversi umani messi in coma e trovano informazioni di una tratta di umani e anche vampiri per una destinazione non definita. Questo è lo spunto per l'ultima avventura, un attacco al catello dove si trova il mago.
+DEFINIRE QUESTI INDIZI.
 
-#### Percorso in Codice delle Canaglie
+#### Oggetti rubati dalla dimora Villon
 
-Un foglio macchiato di sangue con simboli del Codice:
+Il rifugio è pieno di cianfrusaglie accumulate nel tempo. Tra queste, **oggetti chiaramente antichi e fuori posto**:
 
-```
-184 (Antares) → 2
-```
+- Un baule di legno con iniziali "É.V." incise sul coperchio
+- Quaderni rilegati in pelle, pagine strappate o mancanti
+- Mappe astronomiche incomplete, alcune bruciate ai bordi
+- Un ritratto a olio danneggiato di un uomo pallido con occhi febbrili
+- Candele nere consumate, sigilli di cera rotta
+- Una lettera sigillata (vedi sotto)
 
-#### Vecchi libri e documenti
+> [!question] Per i PG Perché qualcuno ha rubato tutto questo? Cosa cercavano? E soprattutto — **cosa non hanno trovato?**
 
-Tra le cianfrusaglie, trovano:
+#### La Lettera del Superiore
 
-- Libri ammuffiti di occultismo minore
-- Un diario frammentario con annotazioni
-- **Un riferimento chiave**: _"...il folle Villon credeva di aver trovato la via. Ha scritto tutto prima di morire, nella tomba dove l'hanno gettato come un cane..."_
+Tra gli oggetti, una lettera con un sigillo rotto (un serpente che si morde la coda). La carta è ingiallita ma leggibile.
 
-#### Annotazione sul poeta
+> [!quote] Testo della Lettera _"Al mio servitore,_
+> _Ho ricevuto il tuo rapporto sulla dimora del poeta. Capisco la tua frustrazione — cercare tra le macerie di un folle non è compito piacevole._
+> _Tuttavia, la tua risposta non mi soddisfa. Hai portato libri, mappe, cianfrusaglie. Ma lo scritto? Quello che il poeta ha tracciato prima di morire? **Non c'è.**_
+> _Non mi interessa se hai rovistato ogni pietra. Non mi interessa, devi continuare a cercare. Lo scritto esiste. Il poeta era molte cose — folle, ossessionato, patetico — ma non era stupido. Ha lasciato qualcosa. E quel qualcosa contiene ciò che cerchiamo da secoli._
+> _Trova lo scritto. Trova dove il poeta ha nascosto le sue ultime parole. Non nella sua dimora, evidentemente. Forse in altre dimore, parenti, amici. Ti ricordo che hai carta bianca._
+> _Non tornare finché non l'avrai trovato._
+> _— M."_
 
-In un margine di un libro, con grafia nervosa:
+#### Indizio nascosto
 
-> _"La poesia è nella sua tomba. Nessuno l'ha mai trovata. Nessuno che sia tornato."_
+In fondo al baule, un quaderno con pagine quasi tutte strappate. Su una pagina superstite, una lista di nomi:
 
----
+- ~~Theatrum Cœli~~ (barrato)
+- ~~Mappa Stellarum~~ (barrato)
+- **"Lo scritto finale — NON TROVATO"**
 
-## 2️⃣ Tana del Sire
+E sotto, con grafia diversa (forse del "servitore"):
+
+> _"Il vecchio bastardo ha portato il segreto con sé nella tomba. Dove cazzo l'avrà mai nascosto?"_
+
+
+## 2️⃣ Laboratorio dei Siri
+
+I giocatori se non ricordano usare la regola dei [[Flashback]] per fargli ricordare che hanno visto dei segni simili nel laboratorio dei loro Siri.
 
 ### La Lettera Cifrata
 
@@ -134,21 +256,27 @@ Un volume rilegato in pelle scura, **"Theatrum Cœli"** (Teatro del Cielo), stam
 - Illustrazioni di **Corvus, Scorpius, Orion e Draco**
 - Tabelle con i nomi delle stelle principali
 
-#### Annotazioni nel libro
+#### Annotazioni di Villon nel libro
 
-Sparse tra le pagine, con grafie diverse e inchiostri di epoche differenti:
+> [!important] Collegamento con il Nodo 2 I PG dovrebbero riconoscere la grafia — è la stessa dei quaderni rubati trovati al Nodo 2. Questo libro apparteneva a Villon, ma chi l'ha rubato non ne ha capito l'importanza.
 
-> _"I cunicoli sotto queste terre ricalcano il cielo. Chi conosce le stelle, conosce la via."_ — (grafia antica, forse XVII secolo)
+Sparse tra le pagine, annotazioni con grafia febbrile e inchiostro sbiadito:
 
-> _"Minkar, Lesath, Bellatrix, Eltanin — le quattro porte. Ma quale porta apre cosa?"_ — (grafia più recente, forse XIX secolo)
+> _"I cunicoli sotto queste terre ricalcano il cielo. Chi conosce le stelle, conosce la via."_
 
-> _"Questi cunicoli puzzano di merda e di morte. Gli immortali sono bestie che vivono nel fango."_ — (grafia moderna, sprezzante)
+> _"Minkar — il becco che strappa. Lesath — il dardo che uccide. Bellatrix — la guerriera che veglia. Eltanin — l'occhio che non dorme. Quattro punti. Due linee. Una croce."_
 
-> _"Mai trovato niente di utile qui sotto. Solo topi e ossa. Il 'grande segreto' è una cazzo di favola per neonati."_ — (stessa mano della precedente)
+> _"Ho camminato tra le stelle di pietra. Ho trovato il centro. Ho visto il Padre."_
 
-#### Note per il DM
+> _"Se muoio prima di completare l'opera, che queste parole guidino chi verrà dopo. La verità è incisa dove riposo."_
 
-Le annotazioni sprezzanti sono dei **siri** — umani che servono i vampiri ma li disprezzano. Usavano il libro per orientarsi, senza capirne il vero significato. Il loro cinismo può fuorviare i PG o, al contrario, spingerli a cercare più a fondo.
+#### Note dei Siri (più recenti)
+
+Con grafia diversa, rozza e moderna:
+
+> _"Questo libro puzza di vecchio. Non capisco un cazzo di stelle."_
+
+> _"Il capo dice di tenerlo qui. A che serve?"_
 
 ---
 
@@ -156,13 +284,19 @@ Le annotazioni sprezzanti sono dei **siri** — umani che servono i vampiri ma l
 
 ### Chi è
 
-**Nome:** Professor Ludovico Fabbri **Età:** 72 anni **Professione:** Paleografo e archivista emerito **Sede:** Biblioteca Malatestiana di Cesena (a circa 20 km da Santarcangelo)
+**Nome:** Professor Ludovico Fabbri **Età:** 72 anni (apparenti — in realtà molto più vecchio) **Professione:** Paleografo e archivista emerito **Sede:** Biblioteca Malatestiana di Cesena (a circa 20 km da Santarcangelo) **Segreto:** È un **Ghoul** — servo di un vampiro da oltre un secolo
 
 ### Descrizione
 
-Un uomo magro, con occhiali spessi e mani macchiate d'inchiostro. Veste sempre in tweed consumato. Parla lentamente, scegliendo ogni parola. I suoi occhi tradiscono una conoscenza di cose che preferisce non nominare.
+Un uomo magro, con occhiali spessi e mani macchiate d'inchiostro. Veste sempre in tweed consumato. Parla lentamente, scegliendo ogni parola. I suoi occhi — troppo lucidi per un uomo della sua età — tradiscono una conoscenza di cose che preferisce non nominare.
 
-La Biblioteca Malatestiana è **patrimonio UNESCO** — la prima biblioteca civica d'Europa (1452). Il professor Fabbri ne custodisce i segreti da quarant'anni.
+La Biblioteca Malatestiana è **patrimonio UNESCO** — la prima biblioteca civica d'Europa (1452). Il professor Fabbri ne custodisce i segreti da... molto più tempo di quanto ammetta.
+
+### Il suo Domitor
+
+Fabbri serve un vampiro anziano della **Camarilla** — non del Sabbat. Il suo padrone vuole sapere cosa succede nei cunicoli, ma non vuole sporcarsi le mani. Fabbri è i suoi occhi e le sue orecchie nel mondo mortale.
+
+> [!note] Per il DM Fabbri non tradirà i PG, ma non dirà tutta la verità. È un sopravvissuto — sa che sapere troppo è pericoloso. Aiuterà quanto basta per soddisfare la sua curiosità e quella del suo padrone.
 
 ### Quando lo consultano
 
@@ -180,25 +314,33 @@ I PG possono cercarlo per:
 
 #### Su Étienne Villon
 
-> _"Villon... un nome maledetto. Un poeta francese, arrivato in Romagna nel 1340, forse in fuga da qualcosa. Cercava... beh, cercava l'immortalità. Non quella dei versi, capite. Quella vera."_
-> 
-> _"Lo trovarono morto nel 1347, dissanguato, nella sua tenuta vicino a Santarcangelo. La famiglia — i Villon avevano sposato una casata locale, i Da Vico — lo fece seppellire in fretta. In terra sconsacrata, su in montagna, nel Montefeltro. Dicevano che avesse visto qualcosa che non doveva vedere."_
-> 
-> _"Prima di morire, scrisse una poesia. L'ultima. Dicono che sia incisa sulla sua tomba, o nascosta nella cripta. Nessuno l'ha mai verificato... o almeno, nessuno che sia tornato a raccontarlo."_
+> _"Villon... un nome che non si pronuncia volentieri in certi ambienti."_
+
+(Pausa. Si toglie gli occhiali, li pulisce lentamente.)
+
+> _"Un poeta francese, arrivato in Romagna nel 1340. Cercava l'immortalità — e non parlo di quella dei versi. Quella vera. Quella che **alcuni** hanno trovato."_
+
+> _"Lo trovarono morto nel 1347, nella sua tenuta. Dissanguato, dicevano. La famiglia lo fece seppellire in fretta, in terra sconsacrata, nel Montefeltro. Ma..."_
+
+(Si ferma. Guarda i PG con quegli occhi troppo lucidi.)
+
+> _"Ma le voci dicono che non sia rimasto morto a lungo. Che qualcosa sia andato storto — o forse, terribilmente giusto. Che il poeta abbia ottenuto ciò che cercava, ma non nel modo che sperava."_
 
 #### L'Avvertimento
 
-> _"Ascoltate bene. Ho studiato questi cunicoli per trent'anni. Conosco ogni mappa, ogni documento, ogni leggenda. E vi dico questo: **nessun percorso conosciuto porta in quel luogo**. Il luogo che cercate non esiste sulle mappe."_
-> 
+> _"Ascoltate bene. Ho studiato questi cunicoli per... molto tempo. Conosco ogni mappa, ogni documento, ogni leggenda. E vi dico questo: **nessun percorso conosciuto porta in quel luogo**. Il luogo che cercate non esiste sulle mappe."_
+
 > _"I pochi che dicono di averlo trovato... non sono più tornati. O sono tornati **diversi**. Cambiati. Vuoti."_
-> 
-> _"Se proprio dovete andare, non fidatevi delle mappe. Fidatevi delle stelle."_
+
+> _"E il poeta... se davvero è ancora là sotto, nella sua tomba... non aspettatevi gratitudine. Sette secoli di fame e solitudine cambiano chiunque. Anche un romantico."_
 
 #### Dove trovare la tomba
 
-> _"Il cimitero della famiglia Villon-Da Vico... è abbandonato da secoli. Si trova nei boschi sopra il passo di Viamaggio, nel Montefeltro. Territorio difficile. E non solo per le strade."_
-> 
-> _"Quella zona... appartiene ad altri. Gente che non ama i visitatori. Portatevi qualcosa da offrire."_
+> _"Il cimitero della famiglia Villon-Da Vico... è abbandonato da secoli. Si trova nei boschi sopra il passo di Viamaggio, nel Montefeltro. Territorio difficile."_
+
+(Abbassa la voce.)
+
+> _"Quella zona appartiene ad **altri**. Gente — se così si possono chiamare — che non ama i visitatori. I lupi del Montefeltro. Portatevi qualcosa da offrire, o non passerete."_
 
 ---
 
@@ -252,7 +394,29 @@ Il mausoleo della famiglia Villon-Da Vico è il più grande del cimitero. L'ange
 - Nicchie con bare di legno marcito
 - Al centro, un sarcofago di pietra con il nome **ÉTIENNE VILLON** e le date **1298-1347**
 
-**La Poesia:** Incisa sulla parete dietro il sarcofago, ancora leggibile nonostante i secoli. Le lettere sono state tracciate con cura maniacale, probabilmente dallo stesso Villon prima di morire.
+### L'Apertura della Bara
+
+> [!danger] IL POETA È UN NON-MORTO Quando i PG aprono il sarcofago, **Villon è ancora lì**. Non è uno scheletro. È un vampiro — o qualcosa di simile.
+
+**Descrizione di Villon:**
+
+> Un corpo raggrinzito, quasi mummificato, avvolto in quello che resta di un abito nobiliare del XIV secolo. La pelle è grigia, tesa sulle ossa come pergamena. Gli occhi sono chiusi.
+> 
+> Poi si aprono.
+> 
+> Due pozze di oscurità assoluta vi fissano. La bocca si apre — labbra secche che si spaccano — rivelando zanne ingiallite dal tempo. Un sibilo esce dalla gola, un suono che non è parola ma che comunica una fame antica, un'agonia senza fine.
+
+**La Maledizione di Villon:** Villon ha ottenuto l'immortalità che cercava — ma non l'Abbraccio vero. È stato **maledetto**, trasformato in qualcosa di incompleto. Non può lasciare la sua tomba. Non può nutrirsi veramente. Può solo esistere, per sempre, in un limbo di fame e follia.
+
+Anche i suoi **servitori** — sepolti nelle nicchie laterali — condividono la maledizione. Se disturbati, si risveglieranno come **ghoul impazziti** o creature simili.
+
+### La Poesia
+
+> [!important] Dove si trova La poesia **non è sulla parete della cripta**. È incisa **all'interno del coperchio del sarcofago** — sulla faccia rivolta verso il corpo di Villon.
+> 
+> Per sette secoli, il poeta ha fissato le sue ultime parole. Ogni notte. Ogni giorno. Per sempre.
+
+I PG devono **sollevare il coperchio** (e affrontare Villon) per poter leggere la poesia.
 
 ---
 
@@ -260,7 +424,7 @@ Il mausoleo della famiglia Villon-Da Vico è il più grande del cimitero. L'ange
 
 ### Ultimo Canto di Étienne Villon
 
-_(ritrovato inciso nella Cripta della famiglia Villon-Da Vico, 1347)_
+_(inciso all'interno del coperchio del sarcofago, 1347)_
 
 > _Io muoio, e scrivo col mio stesso sangue,_ _Ché l'inchiostro è finito e il corpo langue._ _Ho visto il Corvo, l'ho seguito nel buio—_ _Il suo becco tracciava il primo solco._
 > 
@@ -286,7 +450,7 @@ _(ritrovato inciso nella Cripta della famiglia Villon-Da Vico, 1347)_
 ### Come risolvere l'enigma
 
 1. I PG devono identificare le quattro stelle nella poesia
-2. Trovarle sulla mappa del labirinto (usando il libro delle costellazioni)
+2. Trovarle sulla mappa del labirinto (usando il libro delle costellazioni + le annotazioni di Villon)
 3. Tracciare **due linee**:
     - **Minkar → Lesath** (Corvo → Scorpione)
     - **Bellatrix → Eltanin** (Amazzone → Drago)
@@ -320,30 +484,29 @@ Passa anni a cercare di attirare la loro attenzione. Lascia offerte di sangue ne
 
 Finalmente, qualcuno risponde. Villon viene portato in un luogo che non compare su nessuna mappa — la Casa Madre. Là vede il "Padre" e il suo "trono di ossa".
 
-Ma qualcosa va storto. Villon non viene trasformato. Forse non è ritenuto degno. Forse è solo un giocattolo. Viene rigettato, con la mente spezzata e il corpo segnato.
+Ma qualcosa va storto. Il Sabbat non lo ritiene degno dell'Abbraccio. Forse è troppo patetico. Forse è solo divertente. Invece di trasformarlo, lo **maledicono** — una parodia crudele dell'immortalità che cercava.
 
-### La Morte (1347)
+### La Maledizione (1347)
 
-Villon torna alla sua tenuta, ormai un relitto. Sa che morirà presto — gli hanno preso troppo sangue, troppe volte. Ma prima di morire, vuole lasciare un messaggio.
+Villon viene rigettato, ma non può morire veramente. La maledizione lo lega alla sua tomba, condannato a una non-vita di fame eterna senza potersi nutrire, di coscienza senza poter agire.
 
-Scrive la sua ultima poesia, incidendola nella cripta di famiglia. Poi si taglia le vene e usa il suo sangue come inchiostro per completare l'opera.
+Prima che la maledizione si completi, Villon ha abbastanza lucidità per incidere la sua ultima poesia — l'unica cosa che può lasciare al mondo. La incide all'interno del coperchio della bara che sarà la sua prigione per l'eternità.
 
-Lo trovano la mattina dopo, dissanguato, con un sorriso sul volto.
+La famiglia, terrorizzata dai cambiamenti nel loro parente, lo fa seppellire in fretta nel cimitero abbandonato in montagna. Sigillano la tomba. Bruciano i suoi documenti. Cercano di dimenticare.
 
-La famiglia, terrorizzata e vergognosa, lo fa seppellire in terra sconsacrata, nel cimitero abbandonato in montagna. Nessun prete officia il funerale. Nessuna preghiera viene detta.
+Ma qualcuno non dimentica. Qualcuno continua a cercare "lo scritto" del poeta per secoli...
 
-> _"Io scendo lieto nel mio ultimo soglio."_
+### L'Eternità
 
-### Eredità
+Per settecento anni, Villon giace nella sua bara, fissando le parole che ha inciso. Non può muoversi. Non può nutrirsi. Può solo pensare, ricordare, impazzire.
 
-La poesia di Villon sopravvive perché è incisa nella pietra. Per secoli, pochi l'hanno letta. Ancora meno l'hanno capita. E quasi nessuno ha avuto il coraggio di seguire le istruzioni.
-
-Quelli che l'hanno fatto... non sono tornati. O sono tornati cambiati.
+Quando i PG aprono la bara, liberano qualcosa che non è più umano, non è veramente vampiro, ma è disperatamente, follemente, pericolosamente **affamato**.
 
 ---
 
 ## 🔗 Collegamenti
 
+- [[Arpia di Santarcangelo]] — Sire dei PG, committente
 - [[Codice delle Canaglie]]
 - [[Mappa del Labirinto]]
 - [[Costellazioni - Stelle Chiave]]
@@ -351,19 +514,37 @@ Quelli che l'hanno fatto... non sono tornati. O sono tornati cambiati.
 - [[Casa Madre del Sabbat]]
 - [[Custode Agnese]]
 - [[Professor Ludovico Fabbri]]
+- [[Le Sparizioni di San Vito]]
+- [[Incontro Tomba di Villon]] — da sviluppare
+- [[Incontro Licantropi Montefeltro]] — da sviluppare
+- [[Combattimento Nodo 184]] — da sviluppare
 
 ---
 
 ## ✅ Checklist Indizi
 
-- [ ] Combattimento presso Antares → riferimenti a Villon
+### Prologo
+
+- [ ] Incontro con l'Arpia — ricezione incarico
+- [ ] Consegna mappa dei cunicoli
+- [ ] Informazioni sulle sparizioni di San Vito
+- [ ] Menzione del Professor Fabbri come contatto
+
+### Indagine
+
+- [ ] Indagine sulle sparizioni di San Vito
+- [ ] Combattimento presso Nodo 184 → Nodo 2
+- [ ] Oggetti rubati dalla dimora Villon (baule, quaderni, ritratto)
+- [ ] Lettera del Superiore ("trova lo scritto")
 - [ ] Tana del Sire → lettera cifrata con luogo d'ingresso
 - [ ] Percorso Eltanin → Nodo 41
-- [ ] Libro delle Costellazioni con annotazioni
-- [ ] Consultazione Professor Fabbri
+- [ ] Libro delle Costellazioni con annotazioni di Villon (collegamento!)
+- [ ] Consultazione Professor Fabbri (Ghoul)
 - [ ] Totem dalla Custode Agnese
 - [ ] Attraversamento territorio Licantropi
-- [ ] Cimitero sconsacrato → Poesia di Villon
+- [ ] Cimitero sconsacrato → Tomba di Villon
+- [ ] **Confronto con Villon non-morto**
+- [ ] Lettura della poesia (interno coperchio bara)
 - [ ] Decodifica della poesia
 - [ ] Tracciamento linee sulla mappa
 - [ ] Scoperta della Casa Madre
@@ -372,31 +553,45 @@ Quelli che l'hanno fatto... non sono tornati. O sono tornati cambiati.
 
 ## 📝 Note per il DM
 
-### Difficoltà degli Indizi
+### Flusso degli Indizi
 
-Gli indizi sono distribuiti in modo che:
+**Percorso A (Nodo 2):** Combattimento → Oggetti rubati → "Chi era questo poeta?" → Professor Fabbri → Tomba
 
-- I PG **devono** trovare almeno due riferimenti al poeta (Nodo 2 + Professor Fabbri)
-- Il libro delle costellazioni è **essenziale** per capire la poesia
-- La poesia da sola non basta senza la mappa del labirinto
+**Percorso B (Nodo 41):** Tana Sire → Percorso Codice → Magazzino → Libro con annotazioni di Villon → Collegamento con Percorso A
 
-### Ridondanze Intenzionali
+I due percorsi **convergono** sul poeta. I PG hanno bisogno di entrambi:
 
-- Due vie per scoprire Villon (libri al Nodo 2 + Professor Fabbri)
-- Due conferme che le stelle sono sulla mappa (annotazioni nel libro + Professor Fabbri)
+- Dal Nodo 2: sanno che qualcuno cerca "lo scritto" di Villon
+- Dal Nodo 41: hanno il libro con le annotazioni che spiegano le stelle
+- Dal Professor Fabbri: sanno dove è sepolto e cosa aspettarsi
 
-### Possibili Blocchi
+### Incontro con Villon
 
-Se i PG si bloccano:
+Villon non è un boss fight tradizionale. È una creatura tragica e terrificante. Opzioni:
 
-1. Il Professor Fabbri può dare hint più espliciti
-2. Un PNG ostile può lasciarsi sfuggire informazioni
-3. Sogni/visioni possono guidarli (elemento soprannaturale)
+1. **Combattimento**: è debole dopo secoli di inedia, ma disperato
+2. **Fuga**: i PG leggono la poesia e scappano
+3. **Pietà**: lo distruggono, liberandolo dalla maledizione
+4. **Negoziazione**: impossibile — è troppo folle per ragionare
+
+> [!note] Da sviluppare L'incontro completo sarà trattato in una nota separata: [[Incontro Tomba di Villon]]
+
+### Scene da sviluppare separatamente
+
+Le seguenti scene richiedono note dedicate:
+
+| Scena                   | Nota                                | Contenuto                                       |
+| ----------------------- | ----------------------------------- | ----------------------------------------------- |
+| Combattimento Nodo 184  | [[Combattimento Nodo 184]]          | Vampiri nemici, tattiche, bottino               |
+| Incontro Licantropi     | [[Incontro Licantropi Montefeltro]] | Negoziazione, totem, territorio                 |
+| Tomba di Villon         | [[Incontro Tomba di Villon]]        | Villon non-morto, servitori, combattimento/fuga |
+| Scena finale Casa Madre | da definire                         |                                                 |
 
 ### Atmosfera
 
 - I cunicoli sono **claustrofobici e antichi**
 - Il cimitero è **silenzioso e sbagliato**
+- La tomba di Villon è **un orrore pietoso**
 - La Casa Madre è **terrificante e maestosa**
 
 Non abbiate paura di far sentire i PG piccoli e vulnerabili. Stanno cercando qualcosa che non avrebbero mai dovuto trovare.

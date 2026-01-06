@@ -14,7 +14,7 @@ Se i pg non hanno modo di come muoversi, gli presta una vecchia auto ancora funz
 #### Oggetti indossati da Agnese
 
 1. **Moneta del Bargello:** gettata a terra, fa sentire passi e voci antiche; a volte indica un pericolo vicino.
-2. **Foglia che non secca mai**, simbolo di totem antico, usabile per evitare scontro con Mannari.
+2. **Foglia che non secca mai**, simbolo di totem antico, usabile per evitare scontro con Mannari. Questo oggetto serve per poter nel capitolo 5 parlare con un Lupino. IMPORTANTE CHE I PG LO NOTINO.
 
 - La moneta viene ogni tanto presa in mano da Agnese, quando i PG la vedono capiscono che qualcosa di strano è racchiuso, posso fare una prova per capire che non è normale.
 - La foglia è indossata come una collana, anche di questa capiscono che vi è qualcosa di spirituale, se hanno fatto incontro con Lupini possono capire che è qualcosa di importante, se chiedono, Agnese può spiegare che è considerato un totem antico per i lupini. Poterebbe essere merce di scambio in caso di incontri.

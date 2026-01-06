@@ -184,6 +184,7 @@ Casse accatastate, barili che spandono un odore pungente di disinfettante. Le un
 - (Raro) **Bara metallica bullonata** (troppo pesante; vibra se nominate “Adler”).
 - (Comuni) Uniformi, maschere antigas, pezzi di armi, mappa di evacuazione **senza uscita**.
 - **Uso**: tentazioni, jump scare, pista su Adler.
+- Trovano un documento con simboli strani Croci, pesci, ... questo è un indizio per il capitolo 5, indica il percorso. Se cercano meglio quando tornano trovano anche la lettera.
 
 **Prove**: Forza+Atletica 7 per spostare casse; Percezione+Allerta 7 per impronte **recenti** nella polvere (non dei PG).
 
