@@ -1,4 +1,4 @@
-![[MappaAccampamentoForesta.png]]
+![[Mappa.png]]
 
 Dalla città più piccola dove partono i giocatori, ci sono due strade possibili strade:
 1. La più veloce che passa in mezzo alla foresta, impiegano circa 3 giorni
@@ -27,6 +27,8 @@ Se tira **1**, c’è un incontro
 ## Imboscata Goblin
 Deve essere un esempio di tattica, per far capire ai PG che si trova in un mondo dove gli avversari ragionano.
 Importante: è un incontro che deve dare idea di essere in un combattimento vero, quindi nulla al caso, partendo anche proprio dal PG con più HP.
+
+![[MappaAccampamentoForesta.png]]
 
 ## Setup
 - PG accampati, un PG di guardia (quello con più HP)

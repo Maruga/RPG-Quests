@@ -1,6 +1,7 @@
 
 # Ritorno in Città
-![[Mappa.png]]
+
+![[Taverna.png]]
 
 ## Rifornimenti
 I PG possono acquistare equipaggiamento come da tabella del Prologo.
@@ -111,6 +112,3 @@ I PG si riuniscono per consegnare la pietra al mercante. Prima che la transazion
 Non importa come li raduni. L'unica condizione è: tutti entro 12m dalla pietra quando cala la sera.
 
 Se un PG si allontana dal gruppo, non viene teletrasportato → problema narrativo. Evita questa situazione.
-
-
-[[05 - Stanza Buia e Silenziosa]]

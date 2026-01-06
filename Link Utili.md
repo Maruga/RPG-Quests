@@ -14,3 +14,5 @@ https://www.google.com/maps/d/u/0/edit?hl=it&mid=1rJAEeCULu4gzjTFNUH9mP14h20g2uU
 Guida creazione personaggio
 https://www.player.it/wp-content/uploads/2018/02/player.it-Vampire-The-Masquerade-Guida-Completa.pdf
 
+Ottimizzazione immagini
+https://ezgif.com/optipng

@@ -211,11 +211,12 @@
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
-    "siteName": "Vampiri",
+    "siteName": "LaPietraDellOmbra",
     "iconEmojiStyle": "Native",
     "exportRoot": "",
     "includePluginCss": [
-      "diagram-zoom-drag"
+      "diagram-zoom-drag",
+      "obsidian-dice-roller"
     ],
     "includeStyleCssIds": [],
     "autoDisposeWebpages": true
