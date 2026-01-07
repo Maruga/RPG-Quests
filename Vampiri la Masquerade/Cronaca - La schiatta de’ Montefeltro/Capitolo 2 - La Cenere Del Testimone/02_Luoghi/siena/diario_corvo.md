@@ -10,14 +10,12 @@ Quaderno rilegato in pelle scura, logora. Copertina con simbolo inciso: artiglio
 
 ## Come Decifrarlo
 
-| Metodo | Tempo |
-|--------|-------|
-| Tremere (Siena) | 2 notti (vogliono qualcosa) |
-| Linguista esperto | 3 notti |
-| Lisandro | 1 notte (conosce alcune chiavi) |
-| Gangrel anziano | 2 notti |
-
----
+| Metodo            | Tempo                         |
+| ----------------- | ----------------------------- |
+| Tremere (Siena)   | 1 notte (vogliono qualcosa)   |
+| Linguista esperto | 2 notti                       |
+| Lisandro          | 2 ore (conosce alcune chiavi) |
+| Padre Silvestro   | 1d4 ore per trovarlo          |
 
 ## Contenuto Decifrato
 

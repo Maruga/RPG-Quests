@@ -8,38 +8,34 @@
 
 ## Scheda Rapida
 
-| | |
-|---|---|
-| **Clan** | Nosferatu |
-| **Generazione** | 10a |
-| **Età reale** | ~90 anni (Abbracciato 1935) |
-| **Ruolo** | Informatore, commercia informazioni |
-
----
+|                 |                                     |
+| --------------- | ----------------------------------- |
+| **Clan**        | Nosferatu                           |
+| **Generazione** | 10a                                 |
+| **Età reale**   | ~90 anni (Abbracciato 1935)         |
+| **Ruolo**       | Informatore, commercia informazioni |
 
 ## Aspetto
 
 Completamente calvo, pelle grigia e traslucida che lascia intravedere le vene. Occhi senza palpebre, sempre umidi e spalancati. Naso quasi assente — due fessure. Si muove con scatti improvvisi, come un insetto.
 
----
 
 ## Personalità
 
 Paranoico, avido di informazioni. Commercia solo in scambi equi. Non fa favori gratuiti — nemmeno a confratelli Nosferatu. Neutrale in tutto: non ha alleati, non ha nemici, ha solo clienti.
 
----
 
 ## Cosa Sa
 
-| Informazione | Prezzo |
-|--------------|--------|
-| Marcello lo contattò 2 settimane fa | Piccolo (info in cambio) |
-| Marcello cercava "movimenti dalla Toscana" | Piccolo |
-| **Filmato di Enzo alla stazione (18-19 Aprile)** | **Grande** (favore maggiore) |
+| Informazione                                                                                                                                 | Prezzo                   |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Marcello lo contattò 2 settimane fa                                                                                                          | Piccolo (info in cambio) |
+| Marcello cercava "movimenti dal Rimini per Bologna"                                                                                          | Piccolo                  |
+| **Filmato di Enzo alla stazione (18-19 Aprile)**, i PG devono richiedere di fare la ricerca. Per ogni notte che richiedono 2 ore di ricerca. | **Medio**                |
+| Se i PG non richiedono nulla il giorno dopo il custode li chiama per dargli l'informazione.                                                  | **Grande**               |
 
-**Nota:** Il filmato richiede **1 notte** per essere estratto e preparato.
+**Nota:** Il filmato richiede **2 ore per ogni notte** per essere estratto ed analizzato.
 
----
 
 ## Cosa Vuole in Cambio
 
@@ -52,7 +48,6 @@ Paranoico, avido di informazioni. Commercia solo in scambi equi. Non fa favori g
 - Un segreto importante
 - Accesso a qualcosa che non ha
 
----
 
 ## Frasi
 
@@ -62,7 +57,6 @@ Paranoico, avido di informazioni. Commercia solo in scambi equi. Non fa favori g
 
 > "Ho occhi ovunque in questa città. Anche dove non pensi. Specialmente dove non pensi."
 
----
 
 ## Il Filmato
 

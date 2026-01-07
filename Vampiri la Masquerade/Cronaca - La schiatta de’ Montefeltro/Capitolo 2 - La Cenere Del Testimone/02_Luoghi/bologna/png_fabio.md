@@ -4,7 +4,6 @@
 
 ## Ghoul di Marcello — Sopravvissuto
 
----
 
 ## Scheda Rapida
 
@@ -15,28 +14,22 @@
 | **Aspetto** | Uomo comune, anonimo |
 | **Posizione** | Pensione "Il Girasole", camera 12 |
 
----
-
 ## Aspetto
 
 Capelli brizzolati, occhiali da vista economici, vestiti ordinari. Potrebbe essere un impiegato, un insegnante, chiunque. Perfetto per un informatore — nessuno lo notava mai.
 
----
 
 ## Stato Attuale
 
 Distrutto dalla morte del domitor. Terrorizzato. Sta deteriorando senza sangue vampirico. Dorme di giorno, sta sveglio di notte aspettando che qualcuno venga a ucciderlo. Ha una pistola sotto il cuscino.
 
----
 
 ## ATTENZIONE: Timeline
 
-| Situazione | Conseguenza |
-|------------|-------------|
-| **Prima di Notte 5** | Vivo, può essere trovato |
+| Situazione                   | Conseguenza                                        |
+| ---------------------------- | -------------------------------------------------- |
+| **Prima di Notte 5**         | Vivo, può essere trovato                           |
 | **Notte 5 (se non trovato)** | Ucciso. Corpo nel fiume Reno. Giornali: "suicidio" |
-
----
 
 ## Cosa Sa
 
@@ -46,8 +39,6 @@ Distrutto dalla morte del domitor. Terrorizzato. Sta deteriorando senza sangue v
 - ✓ Marcello temeva "una donna potente di Firenze"
 - ✓ **Sa dov'è il rifugio di Corvo a Siena** (può disegnare una mappa)
 
----
-
 ## Come Trovarlo
 
 | Fonte                      | Informazione                                            |
@@ -55,8 +46,6 @@ Distrutto dalla morte del domitor. Terrorizzato. Sta deteriorando senza sangue v
 | Sofia                      | "Il ratto aveva un topo più piccolo (Fabio). Un umano." |
 | Il Custode (pagato)        | Sa della sua esistenza                                  |
 | Rifugio Marcello (1 notte) | Riferimento a "F. — emergenza" con numero di telefono   |
-
----
 
 ## Come Farlo Parlare
 

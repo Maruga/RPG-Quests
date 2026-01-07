@@ -18,8 +18,6 @@ In primavera le strade sono tranquille, i locali mezzi vuoti. Cacciare è più d
 
 **Nota:** La Bottonaia e il Conte di Cagliostro sono PNG della campagna, non dettagliati qui.
 
----
-
 ## Luoghi Chiave
 
 ### Il Rifugio del Custode
@@ -35,10 +33,15 @@ La stanza principale: decine di monitor accesi proiettano luce bluastra. Cavi ov
 
 Il Custode ha telecamere in tutta la città: stazione, porto, strade principali.
 
----
 
 ## Cosa si Può Scoprire a Rimini
 
-- **Dal Custode:** Marcello lo ha contattato 2 settimane fa cercando info su "movimenti dalla Toscana". Ha il filmato di Enzo alla stazione (18-19 Aprile).
-- **Da Clara:** Enzo è partito "per lavoro" la notte dell'omicidio. Riceve chiamate da una donna elegante.
-- **Su Enzo:** Alibi debole, biglietti del treno per Bologna.
+- **Dal Custode:** 
+	- Marcello lo ha contattato 2 settimane fa cercando info su "movimenti da Rimini per Bologna". Quando ha controllato nulla di anomalo
+	- I PG possono chiedere di fare un controllo la sera che è morto. 
+	- Ha il filmato di Enzo alla stazione (18-19 Aprile).
+- **Da Clara:** 
+	- Enzo è partito "per lavoro" la notte dell'omicidio. 
+	- Riceve chiamate da una donna elegante.
+- **Su Enzo:** 
+	- Alibi debole, biglietti del treno per Bologna.

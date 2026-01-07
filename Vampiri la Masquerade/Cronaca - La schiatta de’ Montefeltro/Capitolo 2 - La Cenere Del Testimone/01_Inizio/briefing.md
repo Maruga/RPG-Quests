@@ -4,7 +4,6 @@
 
 Il rifugio della Bottonaia, Santarcangelo. Una cantina sotto un palazzo antico, piena di bottoni appesi ovunque — migliaia di bottoni di ogni tipo, che tintinnano leggermente quando si muove l'aria.
 
----
 
 ## La Bottonaia (Cosa sa e dice)
 
@@ -31,15 +30,15 @@ Il rifugio della Bottonaia, Santarcangelo. Una cantina sotto un palazzo antico, 
 
 *"Non fallirete. Non perché vi ucciderà se fallirete — anche se potrebbe. Ma perché siete miei. E io non cresco idioti."*
 
----
 
 ## Suggerimenti della Bottonaia
 
 - **"Iniziate dal Custode.** È uno dei nostri, e se Marcello ha cercato informazioni a Rimini, è passato da lui."
-- Nel caso i PG ritornino a chiedere informazioni: **"Enzo Damiani...** tenetelo d'occhio. Non dico che c'entri, ma se qualcosa puzza in questa città, di solito lui è nelle vicinanze."
-- **"Il Principe Corsini di Bologna** può darvi accesso al rifugio di Marcello. Ha autorità sul dominio dove è successo."
+- - **"Il Principe Corsini di Bologna** può darvi accesso al rifugio di Marcello. Ha autorità sul dominio dove è successo."
 
----
+- **SE RITORNANO:**
+	- Nel caso i PG ritornino a chiedere informazioni alla Arpia: **"Enzo Damiani...** tenetelo d'occhio. Non dico che c'entri, ma se qualcosa puzza in questa città, di solito lui è nelle vicinanze."
+
 
 ## Informazioni per i PG
 

@@ -16,13 +16,10 @@
 | **Età reale** | 150 anni |
 | **Derangement** | Sinestesia mistica |
 
----
-
 ## Aspetto
 
 Bellezza spettrale. Pelle pallidissima, quasi luminescente. Capelli neri lunghissimi che sembrano muoversi senza vento. Occhi enormi, grigi. Veste sempre di bianco.
 
----
 
 ## Personalità
 

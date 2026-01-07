@@ -37,13 +37,14 @@ L'odore di fumo è ancora forte. Cenere nera copre ogni superficie. Pareti anner
 
 **Cosa si trova (1 notte di ricerca):**
 
-| Indizio                       | Contenuto                                                                   |
-| ----------------------------- | --------------------------------------------------------------------------- |
-| Appunti bruciati              | "V. Aldrani - Siena 1984 - Corvo?" / "Giovanni B... Perugia"                |
-| Chiave antica                 | Bronzo, stemma lupa senese → apre rifugio di Corvo                          |
-| Biglietto treno               | Bologna-Firenze, 15 Marzo 2025                                              |
-| Appunto nascosto (diff. alta) | "Cercate il vecchio grifone (Lisandro). Lui sa della rosa nera (Vittoria)." |
-| Vecchia Agenda                | Riferimento a "F. — emergenza" con numero di telefono                       |
+| Indizio                       | Contenuto                                                                                                                                         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Appunti bruciati              | "V. Aldrani - Siena 1984 - Corvo?" / "Giovanni B... Perugia"                                                                                      |
+| Chiave antica                 | Bronzo, stemma lupa senese → apre rifugio di Corvo                                                                                                |
+| Biglietto treno               | Bologna-Firenze, 15 Marzo 2025                                                                                                                    |
+| Appunto nascosto (diff. alta) | "Cercate il vecchio grifone (Lisandro). Lui sa della rosa nera (Vittoria)."                                                                       |
+| Vecchia Agenda                | Riferimento a "F. — emergenza" con numero di telefono                                                                                             |
+| Ritratto Sofia Corsini        | Il ritratto è semi bruciato, si è salvato in parte perché in una zona lontana, sotto una dedica: "Ad un caro amico". Si può riconoscere il volto. |
 
 ### Pensione "Il Girasole"
 

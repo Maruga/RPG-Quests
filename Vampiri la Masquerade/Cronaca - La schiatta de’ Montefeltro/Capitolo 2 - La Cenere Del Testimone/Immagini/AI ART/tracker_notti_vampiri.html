@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker Notti - Cronaca Vampiri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4 landscape;
+            margin: 8mm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 11px;
+            background: white;
+            padding: 8mm;
+            width: 297mm;
+            height: 210mm;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4mm;
+            border-bottom: 2px solid #333;
+            padding-bottom: 2mm;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .travel-times {
+            font-size: 9px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 1mm 4mm;
+            background: #f5f5f5;
+            padding: 2mm;
+            border-radius: 2mm;
+        }
+        
+        .travel-times span {
+            white-space: nowrap;
+        }
+        
+        .nights-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2mm;
+        }
+        
+        .night-box {
+            border: 1px solid #333;
+            padding: 1.5mm;
+            background: #fafafa;
+            min-height: 32mm;
+        }
+        
+        .night-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1mm;
+            margin-bottom: 1mm;
+        }
+        
+        .night-date {
+            font-weight: bold;
+            font-size: 11px;
+            color: #8B0000;
+        }
+        
+        .night-day {
+            font-size: 9px;
+            color: #666;
+        }
+        
+        .night-times {
+            font-size: 9px;
+            text-align: center;
+            margin-bottom: 1mm;
+        }
+        
+        .night-times strong {
+            color: #333;
+        }
+        
+        .hour-bar {
+            display: flex;
+            height: 6mm;
+            border: 1px solid #666;
+            margin-bottom: 1mm;
+            background: linear-gradient(to right, #a0a0b0 0%, #b8b8c8 50%, #a0a0b0 100%);
+        }
+        
+        .hour-segment {
+            flex: 1;
+            border-right: 1px solid #666;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .hour-segment:last-child {
+            border-right: none;
+        }
+        
+        .hour-label {
+            font-size: 7px;
+            color: #333;
+            position: absolute;
+            bottom: -2.5mm;
+        }
+        
+        .notes-area {
+            height: 14mm;
+            border: 1px dashed #ccc;
+            background: white;
+        }
+        
+        .legend {
+            margin-top: 3mm;
+            display: flex;
+            justify-content: center;
+            gap: 8mm;
+            font-size: 9px;
+            color: #666;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 1mm;
+        }
+        
+        .legend-box {
+            width: 4mm;
+            height: 4mm;
+            border: 1px solid #666;
+        }
+        
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="title">🦇 TRACKER NOTTI</div>
+            <div class="subtitle">16 Aprile - 5 Maggio</div>
+        </div>
+        <div class="travel-times">
+            <span><strong>Rimini↔Bologna:</strong> 1,5h</span>
+            <span><strong>Bologna↔Firenze:</strong> 1,5h</span>
+            <span><strong>Firenze↔Siena:</strong> 1h</span>
+            <span><strong>Bologna↔Perugia:</strong> 2,5h</span>
+            <span><strong>Perugia↔Siena:</strong> 1,5h</span>
+            <span><strong>Rimini↔Milano:</strong> 3,5h</span>
+            <span><strong>Rimini↔Firenze:</strong> 2,5h</span>
+            <span><strong>Rimini↔Perugia:</strong> 2,5h</span>
+            <span><strong>Milano↔Bologna:</strong> 2,5h</span>
+            <span><strong>Milano↔Firenze:</strong> 3,5h</span>
+            <span><strong>Firenze↔Perugia:</strong> 1,5h</span>
+            <span><strong>Siena↔Bologna:</strong> 2h</span>
+        </div>
+    </div>
+    
+    <div class="nights-grid">
+        <!-- Notte 1: 16 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">16 APR</span>
+                <span class="night-day">Mer</span>
+            </div>
+            <div class="night-times">20:05 → 6:23 | <strong>10h 18m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 2: 17 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">17 APR</span>
+                <span class="night-day">Gio</span>
+            </div>
+            <div class="night-times">20:06 → 6:21 | <strong>10h 15m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 3: 18 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">18 APR</span>
+                <span class="night-day">Ven</span>
+            </div>
+            <div class="night-times">20:08 → 6:19 | <strong>10h 11m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 4: 19 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">19 APR</span>
+                <span class="night-day">Sab</span>
+            </div>
+            <div class="night-times">20:09 → 6:18 | <strong>10h 09m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 5: 20 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">20 APR</span>
+                <span class="night-day">Dom</span>
+            </div>
+            <div class="night-times">20:10 → 6:16 | <strong>10h 06m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 6: 21 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">21 APR</span>
+                <span class="night-day">Lun</span>
+            </div>
+            <div class="night-times">20:12 → 6:14 | <strong>10h 02m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 7: 22 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">22 APR</span>
+                <span class="night-day">Mar</span>
+            </div>
+            <div class="night-times">20:13 → 6:12 | <strong>9h 59m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 8: 23 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">23 APR</span>
+                <span class="night-day">Mer</span>
+            </div>
+            <div class="night-times">20:14 → 6:10 | <strong>9h 56m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 9: 24 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">24 APR</span>
+                <span class="night-day">Gio</span>
+            </div>
+            <div class="night-times">20:16 → 6:09 | <strong>9h 53m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 10: 25 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">25 APR</span>
+                <span class="night-day">Ven</span>
+            </div>
+            <div class="night-times">20:17 → 6:07 | <strong>9h 50m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 11: 26 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">26 APR</span>
+                <span class="night-day">Sab</span>
+            </div>
+            <div class="night-times">20:18 → 6:05 | <strong>9h 47m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 12: 27 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">27 APR</span>
+                <span class="night-day">Dom</span>
+            </div>
+            <div class="night-times">20:20 → 6:03 | <strong>9h 43m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 13: 28 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">28 APR</span>
+                <span class="night-day">Lun</span>
+            </div>
+            <div class="night-times">20:21 → 6:02 | <strong>9h 41m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 14: 29 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">29 APR</span>
+                <span class="night-day">Mar</span>
+            </div>
+            <div class="night-times">20:22 → 6:00 | <strong>9h 38m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 15: 30 aprile -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">30 APR</span>
+                <span class="night-day">Mer</span>
+            </div>
+            <div class="night-times">20:24 → 5:58 | <strong>9h 34m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 16: 1 maggio -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">1 MAG</span>
+                <span class="night-day">Gio</span>
+            </div>
+            <div class="night-times">20:25 → 5:57 | <strong>9h 32m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 17: 2 maggio -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">2 MAG</span>
+                <span class="night-day">Ven</span>
+            </div>
+            <div class="night-times">20:26 → 5:55 | <strong>9h 29m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 18: 3 maggio -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">3 MAG</span>
+                <span class="night-day">Sab</span>
+            </div>
+            <div class="night-times">20:28 → 5:53 | <strong>9h 25m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 19: 4 maggio -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">4 MAG</span>
+                <span class="night-day">Dom</span>
+            </div>
+            <div class="night-times">20:29 → 5:52 | <strong>9h 23m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+        
+        <!-- Notte 20: 5 maggio -->
+        <div class="night-box">
+            <div class="night-header">
+                <span class="night-date">5 MAG</span>
+                <span class="night-day">Lun</span>
+            </div>
+            <div class="night-times">20:30 → 5:50 | <strong>9h 20m</strong></div>
+            <div class="hour-bar">
+                <div class="hour-segment"><span class="hour-label">20</span></div>
+                <div class="hour-segment"><span class="hour-label">21</span></div>
+                <div class="hour-segment"><span class="hour-label">22</span></div>
+                <div class="hour-segment"><span class="hour-label">23</span></div>
+                <div class="hour-segment"><span class="hour-label">00</span></div>
+                <div class="hour-segment"><span class="hour-label">01</span></div>
+                <div class="hour-segment"><span class="hour-label">02</span></div>
+                <div class="hour-segment"><span class="hour-label">03</span></div>
+                <div class="hour-segment"><span class="hour-label">04</span></div>
+                <div class="hour-segment"><span class="hour-label">05</span></div>
+            </div>
+            <div class="notes-area"></div>
+        </div>
+    </div>
+    
+    <div class="legend">
+        <div class="legend-item"><div class="legend-box" style="background: #333;"></div> Barra le ore usate</div>
+        <div class="legend-item">📍 Segna città corrente nello spazio note</div>
+        <div class="legend-item">⚠️ Ultima ora = rientro obbligatorio</div>
+    </div>
+</body>
+</html>

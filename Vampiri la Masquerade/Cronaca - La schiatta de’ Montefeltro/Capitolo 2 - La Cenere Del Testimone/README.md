@@ -11,23 +11,6 @@ I PG, neonati della Bottonaia (Arpia di Santarcangelo), devono indagare sulla di
 
 **Il segreto:** Marcello aveva scoperto che Vittoria Aldrani (Toreador di Firenze) ha commesso diablerie 40 anni fa. Lei lo ha fatto uccidere da Enzo Damiani (Brujah di Rimini).
 
----
-
-## Struttura delle Cartelle
-
-```
-00_Antefatto/       → Storia completa per il Narratore
-01_Inizio/          → Briefing e hook iniziale
-02_Luoghi/          → Una sottocartella per città con PNG e location
-03_Timeline/        → Eventi per notte (calendario dinamico)
-04_Scene_Chiave/    → Agguato, confronti, interrogatori
-05_Indizi/          → Catena deduttiva e prove
-06_Conclusioni/     → Finali possibili
-07_Handout/         → Documenti stampabili per i giocatori
-08_Riferimenti_Rapidi/ → Riassunti per consultazione veloce
-```
-
----
 
 ## Date Chiave
 
@@ -60,6 +43,10 @@ I PG, neonati della Bottonaia (Arpia di Santarcangelo), devono indagare sulla di
 |3 maggio|Sabato|20:28|5:53|9h 25min|
 |4 maggio|Domenica|20:29|5:52|9h 23min|
 |5 maggio|Lunedì|20:30|5:50|9h 20min|
+
+> [!info] 🦇 Tracker Notti - 16 Apr / 5 Mag
+> [[tracker_notti_vampiri.html|Apri e stampa]] | Tracker Noti Vampiri
+
 
 ## Tempi di Viaggio (in auto)
 
@@ -96,6 +83,7 @@ I PG, neonati della Bottonaia (Arpia di Santarcangelo), devono indagare sulla di
 ---
 
 ## Flusso di Gioco Consigliato
+I PG possono seguire il percorso che desiderano.
 
 1. **Inizio:** Briefing dalla Bottonaia → contatti suggeriti: Il Custode (Rimini), Principe Corsini (Bologna)
 2. **Bologna:** Rifugio Marcello, Sofia, Fabio → indizi su Perugia/Siena/Vittoria
@@ -106,15 +94,3 @@ I PG, neonati della Bottonaia (Arpia di Santarcangelo), devono indagare sulla di
 7. **Finale:** Presentazione prove a Ludovica
 
 ---
-
-## Checklist Rapida Eventi
-
-- [ ] Notte 3: Sofia fugge se non contattata
-- [ ] Notte 5: Fabio muore se non trovato
-- [ ] Notte 6: Enzo agguato se sospettato
-- [ ] Notte 7: Pressione politica da Firenze
-- [ ] Notte 8: Giulia avvicinabile
-- [ ] Notte 9: Agguato se non già avvenuto
-- [ ] Notte 10: Lisandro fugge, Giulia eliminata
-- [ ] Notte 11: Pulizia prove a Siena
-- [ ] Notte 12: DEADLINE
