@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/diario_corvo.md",
+                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "diario_corvo"
+              "title": "TODO"
             }
           },
           {
@@ -207,12 +207,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/diario_corvo.md",
+                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da diario_corvo"
+              "title": "Collegamenti in uscita da TODO"
             }
           }
         ],
@@ -240,8 +240,10 @@
   },
   "active": "8b19fd68b7f6fd9f",
   "lastOpenFiles": [
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/overview.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/README.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/TODO.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/diario_corvo.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/overview.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/png_silvestro.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/perugia/png_aurelio.md",
@@ -261,11 +263,9 @@
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/01_Inizio/briefing.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/00_Antefatto/antefatto.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/README.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/03_Scene Aguato/agguato.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Materiale/02_appunti_bruciati.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Materiale/tutti_handout.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Materiale/01_lettera_ludovica.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/AI ART/tracker_notti_vampiri.html",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Materiale/tracker_notti_vampiri.html",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 5 - Il battesimo del sangue",
