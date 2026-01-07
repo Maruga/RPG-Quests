@@ -3,11 +3,11 @@
 La cronaca inizia con il Capitolo il risveglio, da questo capito possono iniziare diverse altri capitoli, i capitoli successivi possono aprire nuovi capitoli.
 
 ### Capitoli
-Capitolo 1 - [[Vampiri la Masquerade/Capitolo 1 - Il Risveglio/README]]
-Capitolo 2 - [[Vampiri la Masquerade/Capitolo 2 - La Cenere Del Testimone/README]]
-Capitolo 3 - [[Vampiri la Masquerade/Capitolo 3 - Cripta Montebello/README]]
+Capitolo 1 - [[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 1 - Il Risveglio/README]]
+Capitolo 2 - [[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/README]]
+Capitolo 3 - [[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 3 - Cripta Montebello/README]]
 Capitolo 4 - La droga Sangue Blu
-Capitolo 5 - [[Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce/README]]
+Capitolo 5 - [[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 6 - Ricerca della Tzimisce/README]]
 Capitolo 6 - 
 Capitolo 7 - Operazione Sangue Corrotto
 

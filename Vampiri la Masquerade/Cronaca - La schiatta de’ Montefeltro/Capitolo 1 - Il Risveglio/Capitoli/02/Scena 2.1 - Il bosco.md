@@ -67,7 +67,7 @@ Un altra voce appena dietro, lenta e soddisfatta:
 > [!NOTE]
 > **Lupo Mannaro (Garou – Crinos)**: CA 6, PF 10 + rigenerazione 1/turno, Iniziativa +7, Velocità 12m, Forza 6, Destrezza 4, Costituzione 5, Intelligenza 2, Percezione 3, Prontezza 3, Carisma 2, Persuasione 1, Aspetto 0; Artigli (Forza+2, aggravato), Morso (Forza+1, aggravato), Multiattacco (fino a 3 per turno con Ira), Abilità: Allerta +3, Rissa +4, Intimidire +3, Furtività +2, Sopravvivenza +3; Rigenerazione, sensi acuti, immunità a veleno/malattie, vulnerabilità a fuoco e argento.
 
-[[Vampiri la Masquerade/Capitolo 1 - Il Risveglio/Immagini/Garou.png]]
+[[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 1 - Il Risveglio/Immagini/Garou.png]]
 ![[Battito.mp3]]
 
 I giocatori appena incontrano i Garou fanno il check di Rotshreck

@@ -1,6 +1,6 @@
 # Giovanni Bardi / Lisandro
 
-![[Vampiri la Masquerade/Capitolo 2 - La Cenere Del Testimone/Immagini/Lisandro.png]]
+![[Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Lisandro.png]]
 
 ## Il Testimone Chiave
 

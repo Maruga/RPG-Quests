@@ -9,12 +9,12 @@
 - [ ] **Notte 7 (27 Apr):** Lisandro si nasconde (+1 notte per trovarlo)
 - [ ] **Notte 8 (28 Apr):** PG stati a Firenze? Se SÌ → Giulia avvicinabile
 - [ ] **Notte 9 (29 Apr):** Agguato (se non già avvenuto)
-- [ ] **Notte 10 (30 Apr):** Lisandro trovato? Se NO → fugge
+- [ ] **Notte 9 (28 Apr):** Lisandro trovato? Se NO sapendo dell'indagine prova a contattare i PG.
+- [ ] **Notte 10 (30 Apr):** Lisandro contattato? Se NO → fugge
 - [ ] **Notte 10 (30 Apr):** Giulia contattata? Se NO → eliminata
 - [ ] **Notte 11 (1 Mag):** Rifugio Corvo visitato? Se NO → prove a rischio
 - [ ] **Notte 12 (2 Mag):** DEADLINE
 
----
 
 ## Prove Raccolte
 
@@ -28,7 +28,6 @@
 
 **Totale: ___ / 3 necessarie**
 
----
 
 ## Stato PNG
 

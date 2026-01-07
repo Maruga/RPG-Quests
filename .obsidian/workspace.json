@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e8618770d6bd7e0f",
+        "id": "011b09b55192be04",
         "type": "tabs",
         "children": [
           {
-            "id": "c4e6085e8f99a074",
+            "id": "8b19fd68b7f6fd9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
+                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Ritorno in città"
+              "title": "checklist_narratore"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.5
+    "width": 429.5
   },
   "right": {
     "id": "3cb9625393415734",
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
+                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da 04 - Ritorno in città"
+              "title": "Collegamenti in uscita da checklist_narratore"
             }
           }
         ],
@@ -224,53 +224,53 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "c4e6085e8f99a074",
+  "active": "8b19fd68b7f6fd9f",
   "lastOpenFiles": [
-    "DnD/OneShot - La Pietra dell'Ombra/03 - Viaggio di Ritorno.md",
-    "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
-    "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
-    "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
-    "DnD/OneShot - La Pietra dell'Ombra/README.md",
-    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/png_riassunto.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/checklist_narratore.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/README.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Flusso Dot.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/Mappa - Descrizione per AI Art.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/08_Riferimenti_Rapidi/Luoghi - Descrizioni per AI Art.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/perugia/png_lisandro.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/07_Handout/tutti_handout.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/firenze/overview.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/05_Indizi/catena_indizi.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/04_Scene_Chiave/agguato.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 5 - Il battesimo del sangue/README.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 7 - Operazione Sangue Corrotto/README.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 7 - Operazione Sangue Corrotto/00_Indice_Maniero.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 7 - Operazione Sangue Corrotto/01_Primo_Piano.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Flusso Dot.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/README.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 5 - Il battesimo del sangue",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 4 - La droga Sangue Blu",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/png_fabio.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/png_corsini.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Giulia.png",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Ingresso al Palazzo Visconti.png",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Lisandro.png",
+    "README.md",
     "Link Utili.md",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Selwyn Greyspire - 5th Level Fighter.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Oggetti presenti nelle due città.md",
-    "DnD/OneShot - La Pietra dell'Ombra/08a - Cripta - Scala.md",
-    "DnD/OneShot - La Pietra dell'Ombra/06 - Stanza Centrale.md",
-    "DnD/OneShot - La Pietra dell'Ombra/08c - Cripta - Stanza segreta.md",
-    "DnD/OneShot - La Pietra dell'Ombra/08b - Cripta - Scheletri.md",
-    "DnD/OneShot - La Pietra dell'Ombra/09 - Stanza dei Ragni.md",
-    "DnD/OneShot - La Pietra dell'Ombra/11 - Salto sul fiume.md",
-    "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
-    "DnD/OneShot - La Pietra dell'Ombra/10 - Scale per l'uscita.md",
-    "DnD/OneShot - La Pietra dell'Ombra/05 - Stanza Buia e Silenziosa.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Ragnatela Ragni.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa-ezgif.com-optipng.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SchemaAvventura.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Flusso.png",
-    "DnD/OneShot - Escape Room/Flusso.png",
+    "Pasted image 20260106013010.png",
+    "Lisandro.png",
+    "Vampiri la Masquerade/Assegnare Esperienza/Valutazione Personaggi.md",
     "Flusso.svg",
-    "DnD/Blocco Lancio Incantesimi.md",
-    "DnD/Armature CA.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScale.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.player.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaXstampa.png",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Cronaca_Operazione_Sangue_Corrotto.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Bestiario.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/05_Meccaniche_Struttura.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/04_Piano_Meno_Due.md",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/03_Piano_Meno_Uno.md",
-    "Vampiri la Masquerade/Capitolo 5 - Ricerca della Tzimisce",
+    "Vampiri la Masquerade/Assegnare Esperienza/Utilizzo Capacità.md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 1 - Il Risveglio/Immagini/13regole.png",
+    "Vampiri la Masquerade/Guide/Tiro dei Dadi.md",
+    "Vampiri la Masquerade/Guide/Tipologie di Debiti (Boons).md",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Siri/BRUJAH.png",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Materiale",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro",
+    "Strumenti/~$ccanicheGioco.docx",
+    "Strumenti/~$Schede_DnD_BX91.xlsx",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SchemaAvventura.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 6 - Ricerca della Tzimisce",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/cronaca_v2 1.docx",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/bestiario 1.docx",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/magnus_valdris 1.docx",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/magnus_valdris.docx",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/cronaca_v2.docx",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/bestiario.docx",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Castello",
-    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/Immagini/Oggetti",
-    "Strumenti/12C7E610"
+    "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/magnus_valdris 1.docx"
   ]
 }

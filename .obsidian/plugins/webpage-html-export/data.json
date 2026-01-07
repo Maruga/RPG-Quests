@@ -87,8 +87,8 @@
     },
     "searchOptions": {
       "featureId": "search",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -125,7 +125,7 @@
     },
     "graphViewOptions": {
       "featureId": "graph-view",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -159,7 +159,7 @@
     },
     "customHeadOptions": {
       "featureId": "custom-head",
-      "enabled": false,
+      "enabled": true,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -182,8 +182,8 @@
     },
     "rssOptions": {
       "featureId": "rss",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "siteUrl": "",
@@ -199,12 +199,12 @@
     "relativeHeaderLinks": true,
     "includeJS": true,
     "includeCSS": true,
-    "inlineMedia": true,
-    "inlineCSS": true,
-    "inlineJS": true,
-    "inlineFonts": true,
-    "inlineOther": true,
-    "combineAsSingleFile": true,
+    "inlineMedia": false,
+    "inlineCSS": false,
+    "inlineJS": false,
+    "inlineFonts": false,
+    "inlineOther": false,
+    "combineAsSingleFile": false,
     "offlineResources": true,
     "themeName": "",
     "slugifyPaths": true,
@@ -213,7 +213,7 @@
     "faviconPath": "",
     "siteName": "LaPietraDellOmbra",
     "iconEmojiStyle": "Native",
-    "exportRoot": "",
+    "exportRoot": "DnD/OneShot - La Pietra dell'Ombra",
     "includePluginCss": [
       "diagram-zoom-drag",
       "obsidian-dice-roller"
@@ -222,11 +222,11 @@
     "autoDisposeWebpages": true
   },
   "logLevel": "warning",
-  "titleProperty": "title",
+  "titleProperty": "maruga",
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "local",
+  "exportPreset": "online",
   "openAfterExport": false,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",

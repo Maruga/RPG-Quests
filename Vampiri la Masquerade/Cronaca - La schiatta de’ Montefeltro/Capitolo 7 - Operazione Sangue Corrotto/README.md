@@ -10,13 +10,14 @@ type: chronicle
 # Operazione Sangue Corrotto
 ## Assalto al Maniero di Castellaccio — Cronaca
 
----
 
 ## 1. Premessa Narrativa
 
 Il Maniero di Castellaccio sorge sulle colline dell'entroterra romagnolo, in territorio controllato dal Sabbat. Un tempo residenza nobiliare, è stato acquisito dal Sabbat decenni fa e lasciato apparentemente in abbandono. In realtà, i siri dei PG — spie del Sabbat infiltrate nella Camarilla di Rimini — lo hanno trasformato in un laboratorio segreto sotto la guida di **Magnus Valdris**, un potente Mago dei Nephandi.
 
-Il laboratorio è **unico**: tutti i Siri lavorano insieme sullo stesso progetto — il **Serum Siegfried**. Il Principe di Rimini, venuto a conoscenza del tradimento, ha stretto un'alleanza temporanea con un branco di Fianna locali il cui caern è stato contaminato dagli scarichi alchemici del laboratorio.
+Le informazioni arrivano da una spia che la Camarilla è riuscita a far infiltrare, ma non si sanno più notizie, i Giocatori proveranno a liberarlo nel capitolo 5. Se non riescono avranno una serie di svantaggi e difficolta da definire a piacere del master.
+
+Il laboratorio è **unico**: tutti i Siri lavorano insieme sullo stesso progetto — il **Serum Siegfried**. Il Principe di Rimini, venuto a conoscenza del tradimento, ha stretto un'alleanza temporanea con un branco di Fianna locali il cui caern è stato contaminato dagli scarichi alchemici del laboratorio. L'alleanza avviene se tutto va bene tramite il Capitolo 6.
 
 > [!danger] Obiettivo Finale
 > **L'assalto deve avvenire in una sola notte: all'alba non deve rimanere nulla.**

@@ -33,4 +33,4 @@
 [[12 - Riepilogo]]
 
 
-[[SchemaAvventura.png]]
+![[SchemaAvventura.png]]
