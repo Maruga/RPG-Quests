@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/AI ART/Mappa - Descrizione per AI Art.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/Materiale/Oggetti presenti nelle due città.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mappa - Descrizione per AI Art"
+              "title": "Oggetti presenti nelle due città"
             }
           },
           {
@@ -207,12 +207,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/AI ART/Mappa - Descrizione per AI Art.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/Materiale/Oggetti presenti nelle due città.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Mappa - Descrizione per AI Art"
+              "title": "Collegamenti in uscita da Oggetti presenti nelle due città"
             }
           }
         ],
@@ -240,6 +240,32 @@
   },
   "active": "8b19fd68b7f6fd9f",
   "lastOpenFiles": [
+    "DnD/Movimento.md",
+    "DnD/Oggetti Magici.md",
+    "DnD/Peso Oggetti.md",
+    "DnD/Pozioni.md",
+    "DnD/Riposo e Mattina.md",
+    "DnD/Saltare.md",
+    "DnD/Incantesimi Clericali.md",
+    "DnD/Incontri Erranti.md",
+    "DnD/Ingombro.md",
+    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
+    "DnD/OneShot - La Pietra dell'Ombra/09 - Stanza dei Ragni.md",
+    "DnD/OneShot - La Pietra dell'Ombra/10 - Scale per l'uscita.md",
+    "DnD/OneShot - La Pietra dell'Ombra/11 - Salto sul fiume.md",
+    "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Taverna.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina3.jpg",
+    "Strumenti/~$Schede_DnD_BX91.xlsx",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina2.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaAccampamentoForesta.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.player.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaUscitaTentacoli.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScale.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScalaCripta.png",
+    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/AI ART/Mappa - Descrizione per AI Art.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/TODO.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/README.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/siena/diario_corvo.md",
@@ -251,39 +277,13 @@
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/png_fabio.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/overview.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/png_corsini.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/bologna/png_sofia.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Calendario.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/png_riassunto.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/eventi_critici.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Checklist Narratore.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/catena_indizi.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/rimini/png_custode.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/rimini/overview.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/rimini/png_clara.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/01_Inizio/briefing.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/02_Luoghi/milano/overview.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/00_Antefatto/antefatto.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/03_Scene Aguato/agguato.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Materiale/02_appunti_bruciati.md",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Meccaniche/Materiale/tutti_handout.md",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/AI ART/tracker_notti_vampiri.html",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Materiale/tracker_notti_vampiri.html",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 5 - Il battesimo del sangue",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 4 - La droga Sangue Blu",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Giulia.png",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Ingresso al Palazzo Visconti.png",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 2 - La Cenere Del Testimone/Immagini/Lisandro.png",
-    "Pasted image 20260106013010.png",
-    "Lisandro.png",
-    "Flusso.svg",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 1 - Il Risveglio/Immagini/13regole.png",
-    "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Siri/BRUJAH.png",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Materiale",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro",
     "Strumenti/~$ccanicheGioco.docx",
-    "Strumenti/~$Schede_DnD_BX91.xlsx",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SchemaAvventura.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
     "Vampiri la Masquerade/Cronaca - La schiatta de’ Montefeltro/Capitolo 6 - Ricerca della Tzimisce",
     "Vampiri la Masquerade/Capitolo 7 - Operazione Sangue Corrotto/cronaca_v2 1.docx"
   ]
