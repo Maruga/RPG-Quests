@@ -212,11 +212,26 @@ Quando il Cavaliere si alza:
 > Gli scheletri rimasti si fermano. Come marionette senza burattinaio. Poi crollano anche loro, un clangore di ossa e spade arrugginite.
 > La cripta è di nuovo silenziosa. Stavolta per sempre.
 
+
+**FOR FUN**
+> La sollevi dal pavimento. Il mondo trema. L'aria si fa densa, elettrica. Il metallo è nero come l'abisso tra le stelle — assorbe la luce, la divora. Rune forgiate in un'era dimenticata bruciano di fiamma azzurra lungo l'impugnatura. Senti voci. Centinaia. Migliaia. Le anime di tutti coloro che quest'arma ha mandato nell'oblio gridano il tuo nome. Il tuo braccio vibra. Il tuo cuore rallenta. Per un istante — un singolo, terrificante istante — vedi la Morte stessa guardarti negli occhi. E sorride. Perché ora impugni il suo strumento.
+> La mazza ti osserva. Ti sonda. Scava nella tua anima. Pesa i tuoi peccati e le tue virtù. Misura il tuo valore contro eroi e re caduti da millenni.
+> Poi — silenzio.
+> Una voce antica rimbomba nella tua mente:
+> **"MA CHE VÒI? NUN SEI DEGNO MANCO DE LUSTRÀ ME MANICO."**
+> Le rune se smorźano. Er fremito se leva dar cazzo. Le voci zittiscono.
+> Te rimane 'n mano 'na mazza. Ferro scuro, tutta ammaccata, co' du' scarabocchi sopra che magari 'na vorta significavano quarcosa.
+
+_Pausa._
+
+> È 'na mazza +1. Pure cessa.
+
+
 ## Tesoro — Cripta
 
 | Oggetto                                 | Valore      |
 | --------------------------------------- | ----------- |
-| Spadone +1 del Cavaliere                | 2000 mo     |
+| Mazza +1 del Cavaliere                  | 2000 mo     |
 | Armatura di piastre antica (riparabile) | 300 mo      |
 | Anello con sigillo nobile               | 150 mo      |
 | Monete antiche sparse nei sarcofagi     | 80 mo       |
