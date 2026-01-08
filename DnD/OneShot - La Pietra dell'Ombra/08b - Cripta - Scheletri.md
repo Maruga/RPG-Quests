@@ -53,16 +53,17 @@ Iniziativa, i PG {possono essere in piedi o proni dipende come sono scesi} hanno
 
 ### Cavaliere della Cripta (×1)
 
-|               |                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------- |
-| **DV**        | 6                                                                                       |
-| **HP**        | 32                                                                                      |
-| **CA**        | 2 [17]                                                                                  |
-| **THAC0**     | 15                                                                                      |
-| **Movimento** | 20' - 4 quadretti                                                                       |
-| **Attacco**   | Spadone +1 (1d10+2)                                                                     |
-| **Morale**    | 12                                                                                      |
-| **Speciale**  | Immune a Sonno, Charme, Paura, Freddo. Metà danni da armi non magiche. Aura di Terrore. |
+|                     |                                                                                         |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| **DV**              | 6                                                                                       |
+| **HP**              | 42                                                                                      |
+| **CA**              | 1 [17]                                                                                  |
+| **THAC0**           | 15                                                                                      |
+| **Movimento**       | 20' - 4 quadretti                                                                       |
+| **Attacco**         | Mazza +1 (1d6+2) x 2 + Scudo                                                            |
+| **Colpo Stordente** | se danno ≥6, bersaglio TS Paralisi o perde prossima azione                              |
+| **Morale**          | 12                                                                                      |
+| **Speciale**        | Immune a Sonno, Charme, Paura, Freddo. Metà danni da armi non magiche. Aura di Terrore. |
 
 | AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
