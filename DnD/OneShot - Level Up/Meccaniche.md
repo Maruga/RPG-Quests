@@ -180,14 +180,14 @@ Rappresentano festività passate/corrotte.
 
 **Formula:** 20 + (modificatore FOR × 2). Esempio Forza 13, +1: 20+(1x2)=22 Slot
 
-|Forza|Mod|Slot Totali|Slot ½ Mov.|Fermo|
-|---|:-:|:-:|:-:|:-:|
-|3|-3|14|+4|19+|
-|6-8|-1|18|+5|24+|
-|9-12|0|20|+6|27+|
-|13-15|+1|22|+7|30+|
-|16-17|+2|24|+8|33+|
-|18|+3|26|+9|36+|
+| Forza | Mod | Slot Totali | Slot ½ Mov. | Fermo |
+| ----- | :-: | :---------: | :---------: | :---: |
+| 3     | -3  |     14      |     +4      |  19+  |
+| 6-8   | -1  |     18      |     +5      |  24+  |
+| 9-12  |  0  |     20      |     +6      |  27+  |
+| 13-15 | +1  |     22      |     +7      |  30+  |
+| 16-17 | +2  |     24      |     +8      |  33+  |
+| 18    | +3  |     26      |     +9      |  36+  |
 
 **Nota:** Gli slot includono TUTTO l'equipaggiamento indossato.
 
