@@ -25,6 +25,7 @@ Se tira **1**, c’è un incontro
 
 
 ## Imboscata Goblin
+I goblin vogliono vendetta, la prima notte che si accampano vengono attaccati.
 Deve essere un esempio di tattica, per far capire ai PG che si trova in un mondo dove gli avversari ragionano.
 Importante: è un incontro che deve dare idea di essere in un combattimento vero, quindi nulla al caso, partendo anche proprio dal PG con più HP.
 

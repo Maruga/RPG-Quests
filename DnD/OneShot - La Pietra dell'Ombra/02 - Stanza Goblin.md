@@ -37,7 +37,7 @@
 
 ## 🧙‍♂️ **STATISTICHE MOSTRI (BX/OSE)**
 
-### **1) Capoguerra Goblin d’Élite**
+### **1) Capo guerra Goblin d’Élite**
 - **DV:** 4+2
 - **CA:** 4 [15]
 - **Att:** 1 × spadone (1d10+1)
