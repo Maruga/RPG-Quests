@@ -5,6 +5,7 @@ Creare Schede
 https://fastcharacter.com/bxdnd.htm
 https://dndcharacter.com/
 https://chacowingnut.github.io/delvers/
+https://character.totalpartykill.ca/lbb/
 
 https://donjon.bin.sh/fantasy/
 https://itch.io/
