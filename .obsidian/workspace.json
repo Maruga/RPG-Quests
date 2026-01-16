@@ -34,21 +34,9 @@
               "icon": "lucide-file",
               "title": "Brief"
             }
-          },
-          {
-            "id": "485eb79ca747a510",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.11.4"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,7 +238,7 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "29accd8294c2764a",
   "lastOpenFiles": [
     "Strumenti/Cornici.af",
     "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
