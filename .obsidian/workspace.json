@@ -208,11 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Savage/Brief.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita"
+              "title": "Collegamenti in uscita da Brief"
             }
           }
         ],
@@ -238,11 +239,12 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "29accd8294c2764a",
+  "active": "d284af1e6031d61f",
   "lastOpenFiles": [
+    "Strumenti/sangue.png",
+    "Savage/Brief.md",
     "Strumenti/Cornici.af",
     "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
-    "Savage/Brief.md",
     "Savage",
     "DnD/OneShot - La Pietra dell'Ombra/09 - Stanza dei Ragni.md",
     "DnD/OneShot - La Pietra dell'Ombra/08b - Cripta - Scheletri.md",
@@ -267,7 +269,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
     "Strumenti/CCC3FF00",
     "Strumenti/1D5CEF00",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Thief.pdf",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Sergente Goblin.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Lupo Crudele.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/ArcieriGoblin.png",
