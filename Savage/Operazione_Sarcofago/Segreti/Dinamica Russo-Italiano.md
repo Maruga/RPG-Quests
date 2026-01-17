@@ -7,7 +7,14 @@ Nel 1986, entrambi erano presenti durante l'incidente.
 | PG | Ruolo nel 1986 |
 |----|----------------|
 | **Mikhail (Russo)** | Spetsnaz, dentro il complesso. Ha visto il laboratorio, le creature, il macchinario. Sopravvissuto. Lavaggio del cervello. |
-| **Marco (Italiano)** | Col Moschin, di stanza all'esterno. Compito: eliminare i fuggitivi. Ha visto Mikhail portare fuori. |
+| **Marco (Italiano)** | Col Moschin, di stanza all'esterno. Compito: eliminare i fuggitivi. Ha visto Mikhail portare fuori. **È stato esposto brevemente — ora contagiato Stadio 1.** |
+
+> [!warning] Doppio Segreto di Marco
+> Marco ha DUE segreti:
+> 1. Il passato condiviso con Mikhail (1986)
+> 2. Il contagio che lo rende controllabile dal macchinario
+> 
+> Vedi [[Marco Ferrante]] per i dettagli sul controllo.
 
 ## Cosa Ricorda Chi
 

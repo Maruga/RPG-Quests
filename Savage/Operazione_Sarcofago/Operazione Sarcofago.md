@@ -37,6 +37,7 @@
 - [[Dinamica Russo-Italiano]]
 - [[Dinamica Americano Traditore]]
 - [[Dinamica Francese Amore]]
+- [[Fogliettini Segreti]] ⬅️ **DA STAMPARE**
 
 ---
 
@@ -47,8 +48,10 @@
 | Russo | Flashback 1986, lavaggio cervello |
 | Inglese | Ordine distruzione totale |
 | Francese | Persona amata tra scienziati |
-| Italiano | Riconosce il Russo, missione 1986 |
+| Italiano | **Contagiato Stadio 1**, controllabile dal macchinario, riconosce Russo |
 | Americano | Campione + tracker + comunicazioni |
+
+> ⚠️ **Fogliettini:** Stampa [[Fogliettini Segreti]] prima della sessione!
 
 ---
 

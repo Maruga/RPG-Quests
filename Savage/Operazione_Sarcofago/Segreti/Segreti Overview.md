@@ -11,8 +11,15 @@ Ogni PG ha un segreto che crea tensione narrativa e potenziali conflitti con la 
 | **Russo** | Flashback 1986, lavaggio cervello | Cosa sa? È affidabile? |
 | **Inglese** | Ordine distruzione totale | Quando è "fallita" la missione? |
 | **Francese** | Persona amata tra scienziati | Missione vs cuore |
-| **Italiano** | Missione 1986, riconosce il Russo | Cosa nasconde? |
+| **Italiano** | Contagiato Stadio 1, controllabile dal macchinario, riconosce il Russo | Spia inconsapevole, minaccia interna |
 | **Americano** | Campione + tracker + comunicazioni | Traditore |
+
+> [!danger] Due Minacce Interne
+> Il team ha DUE problemi interni:
+> - **Americano:** Traditore consapevole (comunica con esterni)
+> - **Italiano:** Spia inconsapevole (il macchinario lo usa)
+> 
+> Quando Weiss scopre "qualcuno comunica", potrebbero confondere le due cose!
 
 ## Timeline Rivelazioni Consigliata
 

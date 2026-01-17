@@ -10,14 +10,19 @@ Questa scena può essere usata come:
 
 ## La Barzelletta
 
-> *Cinque soldati: un russo, un inglese, un francese, un americano e un italiano muoiono in missione e si ritrovano davanti al Signore.*
+> *Cinque soldati muoiono in missione e si ritrovano davanti al Signore.*
+> 
 > *Uno alla volta, Dio chiede: "Cosa hai fatto per me in vita?"*
+
+---
 
 **Il Russo** si fa avanti.
 
 > *"Ho eliminato i nemici della fede ortodossa. Cecenia, Siria, ovunque. Senza fare domande."*
 
 Dio annuisce.
+
+---
 
 **L'Inglese** fa un passo avanti, composto.
 
@@ -27,6 +32,8 @@ Dio: *"E io?"*
 
 > *"Lei viene subito dopo, naturalmente."*
 
+---
+
 **Il Francese** si avvicina con una scrollata di spalle.
 
 > *"Ho difeso la civiltà. Qualcuno doveva farlo."*
@@ -34,6 +41,8 @@ Dio: *"E io?"*
 Dio: *"La civiltà?"*
 
 > *"La Francia. È la stessa cosa."*
+
+---
 
 **L'Americano** si mette sull'attenti.
 
@@ -43,10 +52,12 @@ Dio: *"Quindi hai fatto il mio lavoro?"*
 
 > *"Qualcuno doveva farlo bene, Signore."*
 
+---
 
 **L'Italiano** resta seduto. Si accende una sigaretta.
 
 Dio: *"E tu? Cosa hai fatto per me?"*
+
 L'italiano tira una boccata, lo guarda e dice:
 
 > *"Siediti. Le domande le faccio io."*

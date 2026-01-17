@@ -56,7 +56,7 @@ Canticchia opera durante i combattimenti — dice che lo calma. *"La donna è mo
 
 # 🔒 SEGRETO — Solo GM
 
-## La Verità
+## La Verità — Parte 1: Il 1986
 
 **Marco c'era nel 1986.**
 
@@ -79,62 +79,175 @@ Ha visto:
 
 Marco l'ha visto. L'ha lasciato passare — non era un fuggitivo, era uno dei loro. Ma non l'ha mai dimenticato.
 
-## La Dinamica
+### Connessione con il Russo
 
 Vedi: [[Dinamica Russo-Italiano]]
 
-### La Situazione
-
 - **Marco riconosce Mikhail.** Il volto è lo stesso, invecchiato di 29 anni.
 - **Mikhail NON riconosce Marco.** Il lavaggio del cervello ha cancellato tutto.
-- **Marco non sa del lavaggio del cervello.** Pensa che Mikhail lo ignori di proposito, o che fosse troppo sotto shock per ricordare.
-
-### Momenti Chiave
-
-| Fase | Situazione | Reazione di Marco |
-|------|------------|-------------------|
-| **Briefing** | Vede Mikhail per la prima volta | Lo fissa. "Ti conosco?" Mikhail non reagisce. |
-| **Infiltrazione** | Cammina accanto a Mikhail | "Sei mai stato in questa zona, russo?" |
-| **Avvicinamento** | Mikhail ha il primo flashback | Marco lo osserva intensamente. Capisce qualcosa. |
-| **Penetrazione** | Mikhail ricorda frammenti | Marco inizia a parlare: "Nel 1986..." |
-| **Obiettivo** | Mikhail ricorda tutto | Marco conferma. "Eri tu. Ti ho visto portare fuori." |
-
-### Cosa Sa Marco
-
-- C'era un laboratorio segreto
-- Sono uscite creature
-- Hanno fatto saltare il reattore per coprire
-- I sopravvissuti sono stati "gestiti"
-
-**Non sa:**
-- Cosa c'era nel laboratorio
-- La natura del macchinario
-- Che Mikhail è stato sottoposto a lavaggio del cervello
-
-## Il Conflitto
-
-Marco ha sparato a persone che fuggivano terrorizzate. Soldati. Scienziati. Forse civili.
-
-Erano gli ordini. Non aveva scelta.
-
-O no?
-
-Tornare in quel posto riapre ferite mai chiuse. E vedere Mikhail — l'unico che ha lasciato andare — riporta tutto a galla.
-
-### Domande
-
-- Racconta a Mikhail cosa sa?
-- Racconta agli altri cosa ha fatto nel 1986?
-- Come reagisce quando capisce che a Mikhail hanno cancellato la memoria?
-
-## Note di Interpretazione
-
-Se dai una versione al giocatore:
-
-*"Sei già stato in questa zona. Tanto tempo fa. Un'operazione che non esiste. Hai fatto cose di cui non parli. E il russo... l'hai già visto. Ma lui non sembra ricordarsi di te."*
+- **Marco non sa del lavaggio del cervello.** Pensa che Mikhail lo ignori di proposito.
 
 ---
 
-Vedi anche: [[Dinamica Russo-Italiano]] | [[Mikhail Voronov]]
+## La Verità — Parte 2: Il Contagio
 
-#pg #italiano #dmr #lanciafiamme #segreto
+> [!danger] SEGRETO CRITICO
+> Marco è già infetto. **Stadio 1.** E il macchinario può usarlo.
+
+### Come È Successo
+
+Durante la missione del 1986, Marco è stato esposto brevemente. Non abbastanza per trasformarsi, ma abbastanza per essere... marcato.
+
+Per 29 anni, nessun sintomo. Il contagio era dormiente, come il macchinario.
+
+**Due settimane prima della missione attuale**, Marco ha iniziato ad avere:
+- Mal di testa intensi
+- Sogni vividi (corridoi, luci rosse, qualcosa che chiama)
+- Momenti di "assenza" (secondi in cui non ricorda cosa stava facendo)
+
+### Cosa Gli Hanno Detto
+
+I suoi superiori lo hanno informato:
+
+> *"Ferrante, i tuoi esami mostrano... anomalie. Qualcosa nel sangue. Collegato a quella vecchia missione. Non sappiamo esattamente cosa sia, ma potrebbe reagire avvicinandosi alla fonte. Sei ancora disposto ad andare?"*
+
+Marco ha detto sì. Vuole risposte.
+
+**Quello che NON gli hanno detto:**
+- Che il macchinario potrebbe controllarlo
+- Che potrebbe essere usato come spia inconsapevole
+- Che potrebbe diventare una minaccia per il team
+
+---
+
+## Il Controllo del Macchinario
+
+### Meccanica per il GM
+
+Il macchinario può **usare** Marco. Più si avvicina alla fonte, più forte è il controllo.
+
+| Fase | Livello Controllo | Cosa Può Fare il Macchinario |
+|------|-------------------|------------------------------|
+| **1-2** | Minimo | Percepisce la presenza di Marco, niente di più |
+| **3** | Basso | Può "vedere" attraverso i suoi occhi per istanti |
+| **4** | Medio | Può ascoltare conversazioni, leggere piani |
+| **5** | Alto | Può dare ordini semplici, controllare per brevi momenti |
+| **6** | Critico | Può tentare controllo totale |
+
+### Come Funziona
+
+**Il macchinario NON controlla Marco costantemente.** Lo usa in momenti specifici:
+
+1. **Spionaggio Passivo:** "Vede" e "sente" attraverso Marco
+2. **Ordini Sussurrati:** Marco sente impulsi ("vai lì", "guarda quello")
+3. **Blackout:** Momenti in cui Marco agisce senza ricordare
+
+---
+
+## Timeline del Controllo
+
+### Fase 1-2: Dormiente
+
+Nessun effetto evidente. Marco sente solo un vago disagio crescente.
+
+### Fase 3: Risveglio
+
+Il macchinario "sente" Marco avvicinarsi.
+
+**Fogliettino da passare:**
+> *"Un brivido ti percorre la schiena. Come se qualcosa ti avesse... notato."*
+
+### Fase 4: Spionaggio
+
+Il macchinario inizia a usare Marco per raccogliere informazioni sui piani del team.
+
+**Fogliettini possibili:**
+> *"Durante la discussione sui piani, hai un momento di assenza. Quando torni, tutti ti guardano. 'Marco, hai sentito?' Non hai idea di cosa abbiano detto."*
+
+> *"Senti l'impulso irresistibile di guardare la mappa che Halvorsen sta consultando. I tuoi occhi memorizzano ogni dettaglio. Non sai perché."*
+
+> *"Stanotte, mentre gli altri dormono, ti svegli in piedi davanti all'ingresso del tunnel. Non ricordi di esserti alzato."*
+
+### Fase 5: Controllo Attivo
+
+Il macchinario tenta di usare Marco come arma o per sabotare.
+
+**Fogliettini possibili:**
+> *"Una voce nella tua testa. Non parole — concetti. UCCIDI L'HACKER. Senti la mano andare verso la pistola. Tiro Spirito per resistere."*
+
+> *"Il mondo scompare. Quando torni, hai il coltello in mano e sei a tre passi da Morozov. Nessuno ha notato. Ancora."*
+
+> *"Senti il macchinario nella tua mente. Non è ostile. È... solo. Vuole che tu lo aiuti. Che tu fermi gli altri. Che tu lo lasci vivere."*
+
+### Fase 6: Ultimo Tentativo
+
+Se il virus viene inserito, il macchinario fa un ultimo disperato tentativo di usare Marco.
+
+**Fogliettino finale:**
+> *"Il macchinario urla nella tua testa. FERMALI. FERMALI. FERMALI. Senti il tuo corpo muoversi contro la tua volontà. Tiro Spirito a -4 per riprendere il controllo."*
+
+---
+
+## Scoperta del Controllo
+
+### Come Possono Capirlo
+
+Quando Dr. Weiss analizza le frequenze del macchinario (Fase 4), può notare:
+
+> *"C'è un segnale. Va verso i mutanti. Ma... c'è un'eco. Un segnale più debole. Come se il macchinario comunicasse anche con qualcos'altro. Qualcosa... qui."*
+
+Se analizza ulteriormente (tiro Intelligenza):
+
+> *"Il segnale secondario... la fonte è mobile. È dentro il complesso. È... con noi."*
+
+### La Rivelazione
+
+A questo punto il team può:
+- Controllare tutti con apparecchiature di Weiss
+- Notare i comportamenti strani di Marco
+- Confrontare Marco direttamente
+
+### Reazione di Marco
+
+Quando scopre di essere controllato:
+- Shock (non lo sapeva consciamente)
+- Paura (cosa ha rivelato senza saperlo?)
+- Determinazione (può usarlo a suo vantaggio?)
+
+---
+
+## Il Conflitto Finale
+
+Marco deve scegliere:
+
+### Opzione A: Resistere
+
+Combatte il controllo con pura forza di volontà. Ogni tentativo di controllo = tiro Spirito.
+
+### Opzione B: Usarlo
+
+Potrebbe fingere di cedere al controllo per ingannare il macchinario e avvicinarsi abbastanza da aiutare Morozov.
+
+### Opzione C: Sacrificio
+
+Se il controllo diventa troppo forte, potrebbe chiedere agli altri di... fermarlo. Prima che sia troppo tardi.
+
+---
+
+## Note di Interpretazione
+
+### Versione per il Giocatore (Foglio Personale)
+
+> *"Sei stato esposto a qualcosa nel 1986, durante quella missione. È rimasto dormiente fino a due settimane fa. Ora hai mal di testa, sogni strani, momenti di assenza — secondi che non ricordi.*
+> 
+> *Ti hanno detto che potresti 'reagire' avvicinandoti alla fonte. Non sai cosa significa esattamente.*
+> 
+> *Inoltre: riconosci il russo. L'hai visto nel 1986. Lui non sembra ricordarsi di te.*
+> 
+> *Il GM ti passerà fogliettini durante la sessione. Leggili e reagisci di conseguenza. Non condividere il contenuto con gli altri giocatori a meno che il tuo personaggio non decida di farlo."*
+
+---
+
+Vedi anche: [[Dinamica Russo-Italiano]] | [[Mikhail Voronov]] | [[Fogliettini Segreti]]
+
+#pg #italiano #dmr #lanciafiamme #segreto #contagio #controllo
