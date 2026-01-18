@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Operazione_Sarcofago/Fogliettini Segreti.md",
+                "file": "Savage/Operazione_Sarcofago/PNG/Scienziati.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fogliettini Segreti"
+              "title": "Scienziati"
             }
           }
         ],
@@ -208,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Operazione_Sarcofago/Fogliettini Segreti.md",
+                "file": "Savage/Operazione_Sarcofago/PNG/Scienziati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Fogliettini Segreti"
+              "title": "Collegamenti in uscita da Scienziati"
             }
           }
         ],
@@ -239,37 +239,39 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "d284af1e6031d61f",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Strumenti/Token.af~lock~",
+    "Savage/Operazione_Sarcofago/PG/Token Personaggi.md",
+    "Savage/Operazione_Sarcofago/PNG/Token Mutanti.md",
+    "Savage/Operazione_Sarcofago/PNG/Scienziati.md",
+    "Savage/Brief.md",
+    "Savage/Operazione_Sarcofago/PG/Token AI.md",
+    "Savage/Operazione_Sarcofago/Immagini/Copertina.png",
+    "Savage/Operazione_Sarcofago/Immagini",
     "Savage/Operazione_Sarcofago/Background.md",
+    "Savage/Operazione_Sarcofago/Segreti/Dinamica Americano Traditore.md",
+    "Savage/Operazione_Sarcofago/PG/Marco Ferrante.md",
+    "Savage/Operazione_Sarcofago/PG/Mikhail Voronov.md",
+    "Savage/Operazione_Sarcofago/PG/Ryan Callahan.md",
+    "Savage/Operazione_Sarcofago/Fogliettini Segreti.md",
     "Savage/Operazione_Sarcofago/Segreti/Segreti Overview.md",
     "Savage/Operazione_Sarcofago/Segreti/Dinamica Russo-Italiano.md",
     "Savage/Operazione_Sarcofago/Segreti/Dinamica Francese Amore.md",
-    "Savage/Operazione_Sarcofago/Segreti/Dinamica Americano Traditore.md",
-    "Savage/Operazione_Sarcofago/PNG/Scienziati.md",
     "Savage/Operazione_Sarcofago/PG/James Blackwood.md",
     "Savage/Operazione_Sarcofago/Meccaniche/Mutanti.md",
     "Savage/Operazione_Sarcofago/Meccaniche/Frequenze.md",
     "Savage/Operazione_Sarcofago/Meccaniche/Contagio.md",
     "Savage/Operazione_Sarcofago/Fasi/01 - Infiltrazione.md",
-    "Savage/Operazione_Sarcofago/Fogliettini Segreti.md",
-    "Savage/Operazione_Sarcofago/PG/Ryan Callahan.md",
     "Savage/Operazione_Sarcofago/Operazione Sarcofago.md",
     "Savage/Operazione_Sarcofago/La Minaccia.md",
     "Savage/Operazione_Sarcofago/Obiettivo Missione.md",
     "Savage/Operazione_Sarcofago/Scena Apertura.md",
-    "Savage/Brief.md",
     "Savage/Operazione_Sarcofago/Fasi/06 - Esfiltrazione.md",
     "Savage/Operazione_Sarcofago/Fasi/05 - Azione Obiettivo.md",
-    "Savage/Operazione_Sarcofago/Fasi/04 - Penetrazione.md",
-    "Savage/Operazione_Sarcofago/Fasi/03 - Breccia.md",
-    "Savage/Operazione_Sarcofago/Fasi/02 - Avvicinamento.md",
     "Savage/Operazione_Sarcofago/Fasi",
     "Savage/Operazione_Sarcofago/Segreti",
     "Savage/Operazione_Sarcofago/Meccaniche",
-    "Savage/Operazione_Sarcofago/PG/Mikhail Voronov.md",
-    "Savage/Operazione_Sarcofago/PG/Marco Ferrante.md",
-    "Savage/Operazione_Sarcofago/PG/Laurent Marchetti.md",
     "Savage/Operazione_Sarcofago/PG",
     "Savage/Operazione_Sarcofago/{PG,PNG,Fasi,Meccaniche,Segreti}",
     "Savage/Operazione_Sarcofago/PNG",
@@ -277,7 +279,6 @@
     "Strumenti/sangue.png",
     "Strumenti/Cornici.af",
     "Savage",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Cleric.pdf",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Sergente Goblin.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Lupo Crudele.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/ArcieriGoblin.png",
@@ -285,7 +286,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Guerrieri Goblin.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/CapoGuerra.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Bugbear Capo.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Goblin Sciamano.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Vari.png"
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Token/Goblin Sciamano.png"
   ]
 }

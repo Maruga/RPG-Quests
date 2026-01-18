@@ -1,6 +1,6 @@
 # La Pietra dell'Ombra
 
-![[Copertina.png]]
+![[DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina.png]]
 
 > _Un'avventura per Old-School Essentials / Basic Expert D&D_
 

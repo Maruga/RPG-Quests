@@ -113,7 +113,7 @@ I suoi superiori lo hanno informato:
 
 Marco ha detto sì. Vuole risposte.
 
-**Quello che NON gli hanno detto:**
+**Quello che NON sanno:**
 - Che il macchinario potrebbe controllarlo
 - Che potrebbe essere usato come spia inconsapevole
 - Che potrebbe diventare una minaccia per il team
@@ -141,6 +141,8 @@ Il macchinario può **usare** Marco. Più si avvicina alla fonte, più forte è 
 1. **Spionaggio Passivo:** "Vede" e "sente" attraverso Marco
 2. **Ordini Sussurrati:** Marco sente impulsi ("vai lì", "guarda quello")
 3. **Blackout:** Momenti in cui Marco agisce senza ricordare
+
+In questi momenti risulta incostante come in trance.
 
 ---
 
@@ -239,11 +241,7 @@ Se il controllo diventa troppo forte, potrebbe chiedere agli altri di... fermarl
 ### Versione per il Giocatore (Foglio Personale)
 
 > *"Sei stato esposto a qualcosa nel 1986, durante quella missione. È rimasto dormiente fino a due settimane fa. Ora hai mal di testa, sogni strani, momenti di assenza — secondi che non ricordi.*
-> 
-> *Ti hanno detto che potresti 'reagire' avvicinandoti alla fonte. Non sai cosa significa esattamente.*
-> 
 > *Inoltre: riconosci il russo. L'hai visto nel 1986. Lui non sembra ricordarsi di te.*
-> 
 > *Il GM ti passerà fogliettini durante la sessione. Leggili e reagisci di conseguenza. Non condividere il contenuto con gli altri giocatori a meno che il tuo personaggio non decida di farlo."*
 
 ---

@@ -1,6 +1,5 @@
-# Scena di Apertura — "C'è un russo, un inglese..."
-
----
+### Scena di Apertura
+![[Savage/Operazione_Sarcofago/Immagini/Copertina.png]]
 
 ## La Barzelletta
 
