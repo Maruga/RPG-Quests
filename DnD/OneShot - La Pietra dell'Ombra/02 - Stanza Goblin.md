@@ -22,6 +22,7 @@
 - Il lupo continua a "giocare" col figlio per 2 round, poi attacca seriamente
 - I due PNG nascosti non combatteranno, sono in shock
 
+I 
 
 
 ## ⚔️ **Incontro - “La Sala del Massacro Goblin”**
