@@ -32,13 +32,13 @@
 3. **Sciamano Goblin (DV 2, 2 incantesimi)**
 4. **Lupo Crudele Maggiore (DV 4, morso devastante)**
 
-**Totale mostri: solo 4**, ma ciascuno rappresenta una **minaccia seria**.
+**Totale mostri: solo 4**, non rappresenta una **minaccia seria**.
 
 
 ## 🧙‍♂️ **STATISTICHE MOSTRI (BX/OSE)**
 
 ### **1) Capo guerra Goblin d’Élite**
-- **DV:** 4+2
+- **DV:** 4+2 - **PF:** 28
 - **CA:** 4 [15]
 - **Att:** 1 × spadone (1d10+1)
 - **Morale:** 10
@@ -51,7 +51,7 @@
 
 ## **2) Bruto Goblin**
 Un goblin gigantesco, deformato, pieno di steroidi naturali.
-- **DV:** 3   
+- **DV:** 3 - **PF:** 20
 - **CA:** 6
 - **Att:** 1 × clava pesante (2d6)
 - **Morale:** 9
@@ -64,7 +64,7 @@ Un goblin gigantesco, deformato, pieno di steroidi naturali.
 
 ## **3) Sciamano Goblin**
 Incantatore selvaggio.
-- **DV:** 2
+- **DV:** 2 - **PF:** 14
 - **CA:** 7
 - **Att:** bastone (1d4)
 - **Incantesimi (2):** _Cause Fear_ (1°), _Hold Person_ (2°)
@@ -86,13 +86,15 @@ Incantatore selvaggio.
 **PX:** 20 +25 (speciale magico) = **45 PX**
 
 ## **4) Lupo Crudele Maggiore**
-Più grande di un lupo gigante, con saliva corrosiva.
-- **DV:** 4
+Più grande di un lupo gigante, se afferra cerca di portare il PG verso il capo o comunque un suo compagno.
+- **DV:** 4 - **PF:** 26
 - **CA:** 6
 - **Att:** morso (2d4+2)
 - **Speciale:**
-    - Morso _afferra_ → TS o “afferrato” (non puoi muoverti)
+    - Morso _afferra_ → TS vs Paralisi o “afferrato” (non puoi muoverti)
     - Se il lupo colpisce un bersaglio afferrato → auto-colpisce il turno successivo
+	- Può attaccare con **-4 a colpire**
+	- Può tentare di liberarsi (TS vs Paralisi) al posto dell'attacco
 
 | AC 9 | AC 8 | AC 7 | AC 6 | AC 5 | AC 4 | AC 3 | AC 2 | AC 1 | AC 0 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -207,7 +209,7 @@ Dopo il combattimento, quando i PG esplorano la stanza o cercano tesori.
 
 Nessun preavviso. Nessun tiro salvezza.
 Chi porta la pietra + tutti entro 12m → teletrasportati nella Stanza Buia.
-La pietra scompare.
+La pietra scompare, nella realtà si disintegra.
 
 
 ## La Pietra dell'Ombra — Funzione Originale
@@ -224,7 +226,7 @@ Il mago faceva indossare la pietra ai prigionieri durante i trasferimenti. Se fu
 Durante un trasferimento, la carovana fu attaccata. Il prigioniero ucciso. I servi del mago massacrati. La pietra — già attivata, pronta a scattare — rimase sul cadavere. Poi sepolta. Dimenticata per secoli.
 
 ### Ricarica
-La pietra accumula energia durante la notte. Dopo secoli di inattività, necessita di almeno due notti per ricaricarsi completamente, il calore aumenta la velocità di carica (Taverna ad esepio).
+La pietra accumula energia durante la notte. Dopo secoli di inattività, necessita di almeno tre/quattro notti per ricaricarsi completamente, il calore aumenta la velocità di carica (Taverna ad esempio).
 
 Una volta carica, scatta — ma solo se qualcuno la porta con sé. Se abbandonata, resta inerte.
 

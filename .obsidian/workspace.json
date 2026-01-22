@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8590b7b252ebc3b1",
+        "id": "22b4a8882af90d4f",
         "type": "tabs",
         "children": [
           {
-            "id": "1f170e4787ff2dfc",
+            "id": "696e4f1e19028552",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Regole.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regole"
+              "title": "02 - Stanza Goblin"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Regole.md",
+                "file": "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Regole"
+              "title": "Collegamenti in uscita da 02 - Stanza Goblin"
             }
           }
         ],
@@ -224,10 +224,30 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "1f170e4787ff2dfc",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Savage/Operazione_Sarcofago/Fasi/06 - Esfiltrazione.md",
+    "Strumenti/~$Schede_DnD_BX91.xlsx",
+    "DnD/OneShot - La Pietra dell'Ombra/PG/Cleric.pdf",
+    "DnD/OneShot - La Pietra dell'Ombra/05 - Stanza Buia e Silenziosa.md",
+    "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
+    "DnD/OneShot - La Pietra dell'Ombra/03 - Viaggio di Ritorno.md",
+    "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
+    "DnD/OneShot - La Pietra dell'Ombra/README.md",
+    "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
+    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Oggetti presenti nelle due città.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.player.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaAccampamentoForesta.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina2.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina.png",
+    "DnD/OneShot - La Pietra dell'Ombra/PG/Elf.pdf",
+    "DnD/OneShot - La Pietra dell'Ombra/PG/Dwarf.pdf",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Ragnatela Ragni.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Flusso Dot.md",
     "Savage/Regole.md",
+    "Savage/Operazione_Sarcofago/Fasi/06 - Esfiltrazione.md",
     "Savage/Operazione_Sarcofago/Fasi/05 - Azione Obiettivo.md",
     "Savage/Operazione_Sarcofago/Fasi/04 - Penetrazione.md",
     "Savage/Operazione_Sarcofago/Fasi/03 - Breccia.md",
@@ -238,12 +258,6 @@
     "Savage/Operazione_Sarcofago/Immagini/Americano.jpg",
     "Savage/Operazione_Sarcofago/Immagini/Boss.png",
     "Savage/Operazione_Sarcofago/Immagini/Copertina.png",
-    "Savage/Operazione_Sarcofago/Immagini/Fisico.jpg",
-    "Savage/Operazione_Sarcofago/Immagini/Francese.jpg",
-    "Savage/Operazione_Sarcofago/Immagini/Hacker.jpg",
-    "Savage/Operazione_Sarcofago/Immagini/Ingegnere Nucleare.jpg",
-    "Savage/Operazione_Sarcofago/Immagini/Inglese.jpg",
-    "Savage/Operazione_Sarcofago/Immagini/Mutante9.jpg",
     "Savage/Operazione_Sarcofago/PNG/Scienziati.md",
     "Strumenti/Token.af~lock~",
     "Savage/Operazione_Sarcofago/PG/Token Personaggi.md",
@@ -253,24 +267,10 @@
     "Savage/Operazione_Sarcofago/Immagini",
     "Savage/Operazione_Sarcofago/Background.md",
     "Savage/Operazione_Sarcofago/Segreti/Dinamica Americano Traditore.md",
-    "Savage/Operazione_Sarcofago/PG/Marco Ferrante.md",
-    "Savage/Operazione_Sarcofago/PG/Mikhail Voronov.md",
-    "Savage/Operazione_Sarcofago/PG/Ryan Callahan.md",
-    "Savage/Operazione_Sarcofago/Fogliettini Segreti.md",
-    "Savage/Operazione_Sarcofago/Segreti/Segreti Overview.md",
-    "Savage/Operazione_Sarcofago/Segreti/Dinamica Russo-Italiano.md",
-    "Savage/Operazione_Sarcofago/Segreti/Dinamica Francese Amore.md",
-    "Savage/Operazione_Sarcofago/PG/James Blackwood.md",
-    "Savage/Operazione_Sarcofago/Meccaniche/Mutanti.md",
-    "Savage/Operazione_Sarcofago/Meccaniche/Frequenze.md",
-    "Savage/Operazione_Sarcofago/Meccaniche/Contagio.md",
     "Savage/Operazione_Sarcofago/Fasi",
     "Savage/Operazione_Sarcofago/Segreti",
     "Savage/Operazione_Sarcofago/Meccaniche",
     "Savage/Operazione_Sarcofago/PG",
-    "Savage/Operazione_Sarcofago/{PG,PNG,Fasi,Meccaniche,Segreti}",
-    "Savage/Operazione_Sarcofago/PNG",
-    "Savage/Operazione_Sarcofago",
-    "Strumenti/Cornici.af"
+    "Savage/Operazione_Sarcofago/{PG,PNG,Fasi,Meccaniche,Segreti}"
   ]
 }

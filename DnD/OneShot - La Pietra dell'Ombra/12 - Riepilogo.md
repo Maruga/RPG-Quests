@@ -2,15 +2,15 @@
 
 ### Oggetti Magici
 
-| Oggetto | Valore | Peso (cn) | Peso (kg) |
-|---------|--------|-----------|-----------|
-| Spadone +1 | 2000 mo | 100 | 5,0 |
-| Mantello Protezione +1 | 2000 mo | 10 | 0,5 |
-| Bastone del Mago +1 | 4000 mo | 40 | 2,0 |
-| Anello/i Magico/i (scale) | 5000 mo | 2 | 0,1 |
-| Anello Scudo | 1500 mo | 1 | 0,05 |
-| Quadro Portatile Rifugio | 3000 mo | 50 | 2,5 |
-| **Subtotale** | **17500 mo** | **203 cn** | **10,15 kg** |
+| Oggetto                   | Valore       | Peso (cn)  | Peso (kg)    |
+| ------------------------- | ------------ | ---------- | ------------ |
+| Mazza +1                  | 2000 mo      | 100        | 5,0          |
+| Mantello Protezione +1    | 2000 mo      | 10         | 0,5          |
+| Bastone del Mago +1       | 4000 mo      | 40         | 2,0          |
+| Anello/i Magico/i (scale) | 5000 mo      | 2          | 0,1          |
+| Anello Scudo              | 1500 mo      | 1          | 0,05         |
+| Quadro Portatile Rifugio  | 3000 mo      | 50         | 2,5          |
+| **Subtotale**             | **17500 mo** | **203 cn** | **10,15 kg** |
 
 ---
 

@@ -53,7 +53,7 @@ _Nota del DM: portate schede di riserva._
 ## Panoramica
 
 **Sistema:** OSE / B/X D&D  
-**Livello PG:** 3-5  
+**Livello PG:** 5-6  
 **Giocatori:** 3-5  
 **Durata stimata:** 1 sessione (max 2)  
 **Tono:** Dungeon crawl classico con elementi investigativi

@@ -22,12 +22,12 @@ Inizio del dungeon nella casa del mago.
 
 ## Situazione Meccanica
 
-| Effetto | Dettagli |
-|---------|----------|
-| **Buio magico** | Nessuna fonte di luce funziona. Torce, lanterne, incantesimi Luce — nulla. Solo Dissolvi Magie rimuove l'effetto. |
-| **Silenzio magico** | Nessun suono. Impossibile parlare, lanciare incantesimi verbali, sentire i compagni. |
-| **Posizione PG** | Sparsi nella stanza, a 2d6 × 1,5m l'uno dall'altro. Non sanno dove sono gli altri. |
-| **Stanza** | 15m × 15m, pavimento di pietra liscia, pareti di pietra. Una porta di ferro (chiusa). |
+| Effetto             | Dettagli                                                                                                          |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Buio magico**     | Nessuna fonte di luce funziona. Torce, lanterne, incantesimi Luce — nulla. Solo Dissolvi Magie rimuove l'effetto. |
+| **Silenzio magico** | Nessun suono. Impossibile parlare, lanciare incantesimi verbali, sentire i compagni.                              |
+| **Posizione PG**    | Sparsi nella stanza, a 2d6 × 1,5m l'uno dall'altro. Non sanno dove sono gli altri.                                |
+| **Stanza**          | 15m × 15m, pavimento di pietra liscia, pareti di pietra. Una grata di ferro.                                      |
 
 ## Opzioni per i PG
 
