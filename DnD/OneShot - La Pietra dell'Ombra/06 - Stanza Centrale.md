@@ -63,12 +63,9 @@
 
 ### Diario del Mago (estratto leggibile)
 
-> *"...la cella funziona. Silenzio e Buio impediscono qualsiasi incantesimo. Nessuno può fuggire senza la botola..."*
->
-> *"...i guardiani della cripta rispondono solo al sangue della casata. Ho sigillato la porta. Non devono svegliarsi..."*
->
+> *"...la cella funziona. Silenzio e Buio impediscono qualsiasi incantesimo. Nessuno può fuggire... la pietra è ancora instabile..."*
+> *"...i guardiani... rispondono solo al sangue della casata... ...Ho sigillato la porta... Non devono svegliarsi..."*
 > *"...la creatura nella vasca è inquieta. Non darle da mangiare per più di tre giorni. La fame la rende..."*
->
 > Il resto è illeggibile. Macchie di umidità.
 
 ### Porte

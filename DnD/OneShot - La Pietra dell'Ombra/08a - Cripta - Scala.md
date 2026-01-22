@@ -71,7 +71,7 @@ Se il giocatore cade: Tirare 1d6 se 1 o 2 la torcia si spegne e cade lontano dal
 | Effetto            | Valore                                    |
 | ------------------ | ----------------------------------------- |
 | Danni da scivolata | Nessuno                                   |
-| Danni da ringhiera | Nessuno (cede prima dell'impatto)         |
+| Danni da ringhiera | Nessuno (cede all'impatto)                |
 | Condizione PG      | Proni a terra                             |
 | Rumore             | Forte — allerta la cripta                 |
 | Scale dopo         | Inclinate, si può risalire con difficoltà |

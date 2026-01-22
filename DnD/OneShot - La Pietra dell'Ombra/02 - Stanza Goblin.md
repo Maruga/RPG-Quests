@@ -22,7 +22,7 @@
 - Il lupo continua a "giocare" col figlio per 2 round, poi attacca seriamente
 - I due PNG nascosti non combatteranno, sono in shock
 
-I 
+**Backup PNG:** Uno dei due sopravvissuti dietro le macerie è un apprendista mago con una pergamena di _Dissolvi Magie_. Se un PG viene paralizzato e la situazione diventa critica, l'apprendista può intervenire (round successivo, deve superare shock: 1-3 su d6).
 
 
 ## ⚔️ **Incontro - “La Sala del Massacro Goblin”**
@@ -39,8 +39,9 @@ I
 ## 🧙‍♂️ **STATISTICHE MOSTRI (BX/OSE)**
 
 ### **1) Capo guerra Goblin d’Élite**
-- **DV:** 4+2 - **PF:** 28
+- **DV:** 4+2
 - **CA:** 4 [15]
+- **PF:** 28
 - **Att:** 1 × spadone (1d10+1)
 - **Morale:** 10
 - **Speciale:** “Comando Brutale” → tutti i goblin alleati ottengono +1 ai colpire per 1 round
@@ -52,8 +53,9 @@ I
 
 ## **2) Bruto Goblin**
 Un goblin gigantesco, deformato, pieno di steroidi naturali.
-- **DV:** 3 - **PF:** 20
+- **DV:** 3
 - **CA:** 6
+- **PF:** 20
 - **Att:** 1 × clava pesante (2d6)
 - **Morale:** 9
 - **Speciale:** se infligge 10+ danni in un colpo, il bersaglio deve fare TS o è sbattuto a terra = perde il prossimo turno.
@@ -65,8 +67,9 @@ Un goblin gigantesco, deformato, pieno di steroidi naturali.
 
 ## **3) Sciamano Goblin**
 Incantatore selvaggio.
-- **DV:** 2 - **PF:** 14
+- **DV:** 2 
 - **CA:** 7
+- **PF:** 14
 - **Att:** bastone (1d4)
 - **Incantesimi (2):** _Cause Fear_ (1°), _Hold Person_ (2°)
 - **Morale:** 7
@@ -88,8 +91,9 @@ Incantatore selvaggio.
 
 ## **4) Lupo Crudele Maggiore**
 Più grande di un lupo gigante, se afferra cerca di portare il PG verso il capo o comunque un suo compagno.
-- **DV:** 4 - **PF:** 26
+- **DV:** 4 
 - **CA:** 6
+- **PF:** 26
 - **Att:** morso (2d4+2)
 - **Speciale:**
     - Morso _afferra_ → TS vs Paralisi o “afferrato” (non puoi muoverti)

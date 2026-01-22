@@ -52,8 +52,7 @@ PG esamina il tavolo principale, tocca le pergamene o i libri sopra.
 | Rubino                  | Vicino al piedistallo di marmo, 75 mo                           |
 
 #### Diario del Mago (estratto):
-
-> Questo enigma era per un suo discepolo con grandi potenzialità. Il discepolo molto pigro non si impegnava, il mago ha creato questo gioco per farlo pensare e cercare tra le cose della stanza sperando di stuzzicare il suo interesse.
+Questo enigma era per un suo discepolo con grandi potenzialità. Il discepolo molto pigro non si impegnava, il mago ha creato questo gioco per farlo pensare e cercare tra le cose della stanza sperando di stuzzicare il suo interesse.
 
 
 ### Contenuto — Tavolo Vuoto
@@ -72,16 +71,16 @@ Nulla. Polvere.
 
 ### Contenuto — Libreria 1 (Pozioni e Ampolle)
 
-| Oggetto                         | Quantità | Effetto/Valore                         |
-| ------------------------------- | -------- | -------------------------------------- |
-| Pozione Cura Ferite Leggere     | 2        | 2d4+2 HP                               |
-| Pozione Invisibilità            | 1        | 4 turni                                |
-| Pozione Lettura Linguaggi       | 1        | 2 turni                                |
-| Ampolle vuote                   | 8        | 1 mo ciascuna                          |
-| Boccetta liquido verde (veleno) | 1        | TS o 2d6 danni                         |
-| Pozione Neutralizza Veleno      | 3        | Neutralizza qualsiasi veleno nel corpo |
-| Acqua santa                     | 2 fiale  | 1d8 vs non-morti                       |
-| Diamante                        | 1        | Per Enigma                             |
+| Oggetto                                   | Quantità | Effetto/Valore                         |
+| ----------------------------------------- | -------- | -------------------------------------- |
+| Pozione Cura Ferite Leggere               | 2        | 2d4+2 HP                               |
+| Pozione Invisibilità                      | 1        | 4 turni                                |
+| Pozione Lettura Linguaggi                 | 1        | 2 turni                                |
+| Ampolle vuote                             | 8        | 1 mo ciascuna                          |
+| Boccetta liquido verde (veleno dei ragni) | 1        | TS o 2d6 danni                         |
+| Pozione Neutralizza Veleno                | 3        | Neutralizza qualsiasi veleno nel corpo |
+| Acqua santa                               | 2 fiale  | 1d8 vs non-morti                       |
+| Diamante                                  | 1        | Per Enigma                             |
 
 ### Contenuto — Libreria 2 (Pergamene)
 
@@ -101,7 +100,7 @@ Nulla. Polvere.
 | Oggetto                           | Dettaglio                                                                                                               |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Tomo di Evocazione                | +1 a imparare incantesimi evocazione (se usato 1 settimana)                                                             |
-| Bestiario dei Non-Morti           | Info su scheletri, ghoul, wraith                                                                                        |
+| Bestiario dei Non-Morti           | Info su scheletri, ghoul, wraith. Se volete potete spiegare la trappola delle scale.                                    |
 | Grammatica Draconico              | Permette di imparare la lingua (1 mese studio)                                                                          |
 | Libro Bianco                      | Pagine vuote, ottimo per libro incantesimi                                                                              |
 | Libro Sigillato (cassetto chiuso) | Richiede chiave. Libro degli Incantesimi: Luce, Scudo, Individuazione Magia, Levitazione. Chiave cassetto tavolo vuoto. |
@@ -155,7 +154,7 @@ Ragni innocui. Solo scena. Nessun attacco.
 | Nano cerca | 1-2 su d6 (+1 per pietre) | 1 turno |
 | Elfo cerca | 1-2 su d6 | 1 turno |
 | Perquisire tutto | Automatico | 4-6 turni |
-**Riprovare:** Sì, ogni turno. Torce si consumano (1 torcia = 6 turni).
+**Riprovare:** Sì, ogni turno. 
 
 ## Enigma — Le Gemme dell'Arcimago
 
@@ -214,11 +213,11 @@ Ragni innocui. Solo scena. Nessun attacco.
 
 #### Da Leggere:
 
-L'ultima gemma scivola nell'incavo. Una seconda onda di colore bianco attraversa e illumina la stanza.
-Le gemme brillano. Una dopo l'altra. Viola, bianco, verde, rosso, blu.
-Il piedistallo vibra. Un rombo basso attraversa la stanza.
-La porta inferiore — le rune blu lampeggiano e svaniscono. Un altro click, metallico.
-La porta si apre. Lentamente. Un varco verso il buio sotto.
+> L'ultima gemma scivola nell'incavo. Una seconda onda di colore bianco attraversa e illumina la stanza.
+> Le gemme brillano. Una dopo l'altra. Viola, bianco, verde, rosso, blu.
+> Il piedistallo vibra. Un rombo basso attraversa la stanza.
+> La porta inferiore — le rune blu lampeggiano e svaniscono. Un altro click, metallico.
+> La porta si apre. Lentamente. Un varco verso il buio sotto.
 
 
 
@@ -237,12 +236,12 @@ La porta si apre. Lentamente. Un varco verso il buio sotto.
 
 *"Prigioniero senza nome, catturato a sud. Pietra affidata al sergente Brynn.*
 *Risultato: la pietra non è tornata. Brynn e i suoi uomini non sono mai arrivati. Presumo un'imboscata. Se il portatore muore, il ciclo si interrompe. La pietra resta dove cade.*
-*Nota: inviare qualcuno a cercarla? No. Troppo rischioso. Ne creerò un'altra."*
+*Nota: inviare qualcuno a cercarla? ... Troppo rischioso. Ne creerò un'altra."*
 
 *"La Pietra IV è stata persa. Nessuna notizia della carovana. Banditi? Mostri? Non importa. Se nessuno la tocca, resterà inerte per sempre.*
 *Ne restano due attive. Sufficienti."*
 
-*"Nota: le pietre si ricaricano con l'oscurità o con il calore. Due notti piene dopo il contatto. Poi scattano al tramonto. Se abbandonate prima della ricarica, tornano dormienti.*
+*"Nota: le pietre si ricaricano con l'oscurità o con il calore. Due/tre notti piene dopo il contatto. Poi scattano al tramonto. Se abbandonate prima della ricarica, tornano dormienti.*
 *Non toccatele se non sapete cosa fate."*
 
 Il resto delle pagine è illeggibile. Macchie di umidità e muffa hanno cancellato tutto.

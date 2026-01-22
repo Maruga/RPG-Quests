@@ -103,7 +103,7 @@ Quando il Cavaliere si alza:
 
 |                  |                                                      |
 | ---------------- | ---------------------------------------------------- |
-| **Preparazione** | Lanciare fiasco + torcia (2 azioni o 2 PG)           |
+| **Preparazione** | Lanciare fiasco olio + torcia (2 azioni o 2 PG)      |
 | **Danni**        | 1d8 primo round, 1d8 secondo round, -2 al TxC        |
 | **Note**         | Danni pieni, non-morti non hanno resistenza al fuoco |
 
