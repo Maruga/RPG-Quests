@@ -161,7 +161,7 @@ Se un tentacolo viene colpito senza avere afferrato qualcosa si ritrae subito, a
 | Tagliare tentacolo | 6 HP, libera il PG           |
 | Tirare con corda   | Bonus +2 al TS del PG        |
 | Attacco a distanza | Possibile, ma tentacolo CA 7 |
-| Fuoco              | Non funziona (acqua)         |
+| Fuoco              | Danni normali                |
 
 ## Soluzioni Possibili
 

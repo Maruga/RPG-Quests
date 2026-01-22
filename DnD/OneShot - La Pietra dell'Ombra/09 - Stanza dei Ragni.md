@@ -125,18 +125,18 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 
 ### Melma Verde
 
-| Effetto | Dettaglio |
-|---------|-----------|
-| Attraversare | Movimento dimezzato |
-| Cadere dentro | TS Destrezza o prono |
-| Danno | Nessuno (non è acida) |
-| Nasconde | Ossa, oggetti piccoli |
+| Effetto                | Dettaglio             |
+| ---------------------- | --------------------- |
+| Attraversare sicurezza | Movimento dimezzato   |
+| Movimento/Correre      | TS Destrezza o prono  |
+| Danno                  | Nessuno (non è acida) |
+| Nasconde               | Ossa, oggetti piccoli |
 
 ### Ragnatela Grande
 
 | Effetto               | Dettaglio                                   |
 | --------------------- | ------------------------------------------- |
-| Entrare               | TS o intrappolato                           |
+| Entrare               | TS vs Paralisi o intrappolato               |
 | Intrappolato          | Non può muoversi, -4 a colpire              |
 | Liberarsi             | TS ogni round, oppure 3 round di taglio     |
 | Fuoco                 | Brucia in 1 round, 1d6 danni a chi è dentro |
@@ -254,7 +254,7 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 > *"...i ragni sono troppi. Non posso contenerli.*
 > *La via d'acqua. L'unica uscita. Se nuoto abbastanza lontano...*
 > *Non dovevo aprire quella porta. Non dovevo liberare la regina.*
-> *Mi dispiace."*
+> **Maledetti."*
 
 
 ## Tesoro — Altare
