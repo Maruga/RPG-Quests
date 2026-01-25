@@ -43,25 +43,31 @@ Documenti recuperabili durante l'indagine sulla corruzione del giudice.
 
 ## ARTICOLO DI GIORNALE #2
 
-*Kyoto Shimbun, 19 dicembre 1994 - Cronaca giudiziaria*
+*Kyoto Shimbun, 13 marzo 1997 - Cronaca giudiziaria*
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                        京都新聞                                      │
 │                      KYOTO SHIMBUN                                   │
-│                    19 dicembre 1994                                  │
+│                     13 marzo 1997                                    │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
-│   OMICIDIO MOMOYAMA: CONDANNATO L'IMPRENDITORE                      │
+│   OMICIDIO MOMOYAMA: DOPO TRE ANNI ARRIVA LA CONDANNA               │
 │   18 anni di reclusione per Hayashi Kenji                           │
 │                                                                     │
-│   KYOTO - Si è concluso ieri il processo per l'omicidio             │
-│   di Yamada Shuichi, l'operaio trovato morto il 15                  │
-│   settembre scorso nel cantiere di Via Momoyama.                    │
+│   KYOTO - Si è concluso ieri, dopo quasi tre anni, il               │
+│   processo per l'omicidio di Yamada Shuichi, l'operaio              │
+│   trovato morto il 15 settembre 1994 nel cantiere di                │
+│   Via Momoyama.                                                     │
 │                                                                     │
 │   Il giudice Ishida Makoto ha condannato Hayashi Kenji,             │
-│   42 anni, imprenditore edile e proprietario del cantiere,          │
+│   45 anni, imprenditore edile e proprietario del cantiere,          │
 │   a 18 anni di reclusione per omicidio volontario.                  │
+│                                                                     │
+│   Il processo, iniziato nell'ottobre 1994, aveva subito             │
+│   numerosi rinvii e rallentamenti. Fonti del tribunale              │
+│   parlano di "questioni procedurali complesse" che                  │
+│   avrebbero ritardato la sentenza.                                  │
 │                                                                     │
 │   Secondo l'accusa, Hayashi avrebbe ucciso Yamada a                 │
 │   seguito di una violenta lite per un debito di circa               │
@@ -88,22 +94,9 @@ Documenti recuperabili durante l'indagine sulla corruzione del giudice.
 
 ---
 
-## ARTICOLO DI GIORNALE #3
+## NOTA: L'APPELLO
 
-*Kyoto Shimbun, 15 marzo 1995 - Breve*
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│   CASO MOMOYAMA: RESPINTO L'APPELLO                                 │
-│                                                                     │
-│   La Corte d'Appello di Osaka ha respinto il ricorso                │
-│   presentato dalla difesa di Hayashi Kenji, condannato              │
-│   a 18 anni per l'omicidio di Yamada Shuichi. La                    │
-│   sentenza di primo grado è stata confermata.                       │
-│   La moglie dell'imputato ha annunciato che presenterà              │
-│   ricorso in Cassazione.                                            │
-└─────────────────────────────────────────────────────────────────────┘
-```
+*Al momento della morte del giudice Ishida (aprile 1997), il ricorso in appello era ancora in fase di preparazione. La difesa non aveva ancora depositato i documenti.*
 
 ---
 
@@ -188,7 +181,7 @@ Documenti recuperabili durante l'indagine sulla corruzione del giudice.
 ║ l'effetto, lo CONDANNA alla pena di anni 18 (diciotto)               ║
 ║ di reclusione, oltre al pagamento delle spese processuali.           ║
 ║                                                                      ║
-║ Kyoto, 18 dicembre 1994                                              ║
+║ Kyoto, 12 marzo 1997                                              ║
 ║                                                                      ║
 ║                              Il Giudice                              ║
 ║                         Dott. Ishida Makoto                          ║
@@ -202,26 +195,31 @@ Documenti recuperabili durante l'indagine sulla corruzione del giudice.
 
 *Note per il Master - cosa possono scoprire gli investigatori*
 
-### 1. Il testimone che cambia versione
-**Tanaka Jiro** - nella deposizione iniziale (16 settembre) dice:
+### 1. Il processo durato quasi 3 anni
+Un processo per omicidio può durare anni, ma questo ha avuto un pattern strano:
+- 1994-1996: Continui rinvii, richieste di perizie, questioni procedurali
+- Febbraio 1997: Improvvisa accelerazione
+- Marzo 1997: Sentenza in poche settimane
+
+I colleghi del giudice hanno notato il cambio di ritmo, ma non hanno approfondito.
+
+### 2. Il testimone che cambia versione
+**Tanaka Jiro** - nella deposizione iniziale (16 settembre 1994) dice:
 > "Non ho visto niente di preciso, ero dall'altra parte del cantiere."
 
-Al processo (novembre) dice:
+Al processo (1997) dice:
 > "Ho visto il signor Hayashi allontanarsi verso le 14:30."
 
-**Perché?** È stato intimidito/pagato dalla yakuza.
+**Perché?** È stato intimidito/pagato dalla yakuza. In quasi tre anni hanno avuto tempo di "lavorarlo".
 
-### 2. L'alibi ignorato
+### 3. L'alibi ignorato
 Hayashi sosteneva di essere stato in banca alle 14:30. La difesa ha prodotto una ricevuta di un'operazione bancaria delle 14:25. Il giudice l'ha ritenuta "non sufficiente" perché la banca è a 10 minuti dal cantiere.
 
-### 3. L'arma mai trovata
-Oggetto contundente non identificato. Mai trovato. Come può essere prova certa?
+### 4. L'arma mai trovata
+Oggetto contundente non identificato. Mai trovato in tre anni di indagini.
 
-### 4. Il movente ridicolo
-¥200.000 (circa €1.500) è una cifra per cui nessuno uccide. È il movente di un furto, non di un omicidio premeditato.
-
-### 5. La velocità del processo
-Solo 3 mesi dalla denuncia alla condanna. Insolitamente rapido per un caso di omicidio.
+### 5. Il movente ridicolo
+¥200.000 (circa €1.500) è una cifra per cui nessuno uccide. È il movente di un furto, non di un omicidio.
 
 ---
 

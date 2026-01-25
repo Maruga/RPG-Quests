@@ -10,9 +10,9 @@
 
 ## 1955 - LE ORIGINI DELLA FAMIGLIA TAKEDA
 
-**Takeda Noboru** (Padre delle gemelle), giovane pittore nihonga, sposa **Takeda Misaki** (Madre delle gemelle). Lei proviene da una famiglia di cuochi e ha un talento naturale per la cucina.
+**Takeda Noboru** (Padre delle gemelle), giovane pittore nihonga, sposa **Takeda Misaki** (Madre delle gemelle). Lei proviene da una famiglia modesta e ha un talento naturale per la cucina.
 
-Noboru, tradizionalista e orgoglioso, considera la cucina un lavoro da servitù, non da moglie di un artista. Proibisce a Misaki di cucinare professionalmente.
+Noboru è un uomo del suo tempo: non proibisce nulla alla moglie, ma considera la cucina un'attività "pratica", non paragonabile all'arte. Quando Misaki cucina per la famiglia, lui apprezza il risultato ma non mostra mai vero interesse. Per lui, l'unica cosa che conta è la pittura.
 
 ---
 
@@ -27,9 +27,9 @@ Noboru, tradizionalista e orgoglioso, considera la cucina un lavoro da servitù,
 
 ## 1975 - MORTE DELLA MADRE
 
-**Takeda Misaki** (Madre delle gemelle) muore di malattia. Yui ha 20 anni e ha già appreso dalla madre tutti i segreti della cucina, inclusa la ricetta segreta del **fugu con kimo** - una preparazione illegale ma raffinatissima che prevede l'uso del fegato del pesce palla.
+**Takeda Misaki** (Madre delle gemelle) muore di malattia. Yui ha 20 anni e porta con sé l'amore per la cucina che la madre le ha trasmesso fin da bambina - non lezioni formali, ma il piacere di stare insieme ai fornelli, i piccoli segreti tramandati mentre preparavano la cena.
 
-La ricetta originale di Misaki viene conservata da Yui nei suoi appunti di cucina.
+Yui decide di trasformare quella passione in una carriera. Si iscrive alla prestigiosa **Scuola di Cucina Tsuji** a Osaka.
 
 ---
 
@@ -48,7 +48,9 @@ Durante una **cena di famiglia**, Yui conosce **Ishida Makoto** (Giudice, 25 ann
 
 Yui (Sorella di Sakura) e Makoto (Giudice) vivono una relazione intensa per circa 3 anni.
 
-Yui gli prepara spesso il **fugu con kimo**, la ricetta della madre con una sua modifica personale: una marinatura con sake e yuzu che esalta il sapore. Makoto ne diventa ghiotto.
+Alla scuola Tsuji, Yui si specializza nella preparazione del fugu - uno dei piatti più difficili e prestigiosi della cucina giapponese. Richiede una licenza speciale e anni di pratica. Durante il corso avanzato, impara anche la preparazione del **fugu con kimo** (fegato) - tecnicamente illegale, ma ancora praticata da chef esperti per clienti fidati. Il fegato contiene tetrodotossina, ma in dosi minime può dare un leggero formicolio alle labbra, una sensazione ricercata dagli intenditori.
+
+Yui sviluppa una sua variante: una marinatura con sake e yuzu che esalta il sapore. Makoto la apprezza particolarmente - diventa il loro piatto speciale, quello che lei prepara solo per lui.
 
 Durante pranzi e cene di famiglia a casa Takeda, **Sakura** (Futura moglie del Giudice) osserva la relazione con invidia crescente. Vede in Makoto la possibilità di una vita agiata che le permetterebbe di dedicarsi all'arte.
 
@@ -88,9 +90,9 @@ Yui crede ai risultati. Non saprà mai del tradimento del padre.
 
 **15 marzo 1981**: Nasce **Kimura Kenta** (Figlio di Yui). Hiro (Marito di Yui) crede di essere il padre. Yui ha seppellito i dubbi.
 
-Yui abbandona la scuola di cucina per occuparsi del figlio. Il suo sogno di diventare chef muore. Trova lavoro come aiuto cuoca al Ristorante Katsura.
+Yui abbandona la scuola di cucina per occuparsi del figlio. Il suo sogno di diventare chef muore. Trova lavoro come aiuto cuoca al Ristorante Katsura - un impiego modesto, lontano dalle ambizioni di un tempo.
 
-Conserva gelosamente gli appunti di cucina della madre, inclusa la ricetta del fugu.
+Conserva i suoi appunti di cucina, incluse le tecniche avanzate per il fugu che aveva imparato alla Tsuji.
 
 ---
 
@@ -199,7 +201,7 @@ Il clan **compra il debito** di 47 milioni di yen da Noda Isamu (Strozzino). Ora
 
 ---
 
-## OTTOBRE-DICEMBRE 1994 - IL CASO HAYASHI
+## OTTOBRE 1994 - L'OMICIDIO HAYASHI
 
 ### L'opportunità
 
@@ -218,19 +220,15 @@ Il clan cerca da tempo un modo per eliminarlo.
 
 **L'opportunità**: Il clan decide di incastrare Hayashi per l'omicidio. Due piccioni con una fava: eliminano una pedina scomoda e coprono il vero assassino.
 
-### La corruzione
+### Il processo infinito (1994-1997)
 
-Il clan contatta Makoto (Giudice). Gli chiedono di manipolare il processo per condannare Hayashi.
+**Ottobre 1994**: Inizia il processo. Il clan fa pressioni sul giudice Ishida perché condanni Hayashi.
 
-Makoto è terrorizzato ma accetta. Il suo debito viene "condonato".
+Makoto (Giudice) è in trappola: il clan ha comprato il suo debito da Noda, e ora pretende un "favore". Ma condannare un innocente è un passo che non riesce a fare.
 
-**Dicembre 1994**: Hayashi Kenji viene condannato a **18 anni** per omicidio. È innocente.
+**1995-1996**: Il giudice **procrastina**. Rinvia le udienze, chiede perizie supplementari, solleva questioni procedurali. Spera che il tempo faccia dimenticare, che il clan si stanchi, che succeda qualcosa. I colleghi notano che il caso va avanti lentamente, ma non è insolito - i processi per omicidio possono durare anni.
 
-### Le conseguenze
-
-Il caso fa notizia locale: **"L'omicidio del cantiere Momoyama"**. I giornali ne parlano per settimane.
-
-Hayashi continua a proclamarsi innocente dal carcere. Sua moglie **Hayashi Noriko** (Moglie innocente, 40 anni) inizia una battaglia legale per riaprire il caso. Nessuno la ascolta.
+Il clan si spazientisce. Manda messaggi sempre più chiari.
 
 ---
 
@@ -281,7 +279,7 @@ Le telecamere riprendono ingresso e uscita.
 
 ### L'aggressione
 
-Il clan Yamaguchi-kai pedina Makoto (Giudice) da mesi. Vogliono assicurarsi che resti "leale".
+Il clan Yamaguchi-kai pedina Makoto (Giudice) da mesi - sono stanchi di aspettare la condanna di Hayashi.
 
 **3 febbraio 1997, ore 19:20**: Gli scagnozzi **Mori Riku** (Scagnozzo yakuza) e **Kudo Masa** (Scagnozzo yakuza) vedono "la moglie del giudice" (in realtà Yui con la carta d'identità di Sakura) uscire dal tribunale. La seguono.
 
@@ -297,9 +295,23 @@ Yui cade, si ferisce un ginocchio. I due fuggono.
 
 **Per Yui**: È convinta che l'aggressione sia stata organizzata da Makoto per intimidirla. L'odio cresce.
 
-**Per Makoto**: Viene a sapere dell'aggressione alla "moglie" tramite i suoi contatti. Capisce che la yakuza fa sul serio. La frase "Dì a tuo marito di stare attento" potrebbe riferirsi anche al marito poliziotto di Yui, ma Makoto sa che il messaggio è per lui. 
+**Per Makoto**: Viene a sapere dell'aggressione alla "moglie" tramite i suoi contatti. La frase "Dì a tuo marito di stare attento" potrebbe riferirsi al marito poliziotto di Yui, ma Makoto capisce che il messaggio è per lui. La yakuza non scherza più.
 
-**Ha paura per la moglie e i figli**. Questo lo convince a restare definitivamente "leale" al clan.
+Ha paura per la moglie e i figli. Capisce che non può più procrastinare.
+
+---
+
+## MARZO 1997 - LA CONDANNA DI HAYASHI
+
+**12 marzo 1997**: Dopo quasi tre anni di processo, il giudice Ishida emette finalmente la sentenza.
+
+**Hayashi Kenji** viene condannato a **18 anni** per omicidio. È innocente.
+
+I colleghi del tribunale notano che dopo anni di rinvii, improvvisamente il caso si è chiuso. Strano, ma non insolito - i processi a volte si sbloccano all'improvviso.
+
+**Il clan è soddisfatto**. Lasciano in pace il giudice. Sarebbero tornati per altri "favori", ma Makoto morirà un mese dopo.
+
+**Hayashi Noriko** (Moglie innocente) inizia una battaglia legale per riaprire il caso. Nessuno la ascolta.
 
 ---
 
@@ -308,8 +320,6 @@ Yui cade, si ferisce un ginocchio. I due fuggono.
 **Mori Riku** (Scagnozzo yakuza) viene arrestato per un altro reato: ha pestato un commerciante che non pagava il pizzo. Finisce nel carcere di Kyoto.
 
 **Kudo Masa** (Scagnozzo yakuza) resta libero.
-
----
 
 ## MARZO 1997 - I PIANI DI MORTE
 
@@ -332,21 +342,23 @@ Crea un file "INVITATI.txt" con note sulle preferenze alimentari.
 
 Poi **cancella tutto**. Ma non sa che un tecnico informatico può recuperare i dati.
 
-**La ricetta**: Tra i suoi appunti di cucina c'è la ricetta del fugu con kimo della madre, con le sue annotazioni personali sulla modifica (marinatura sake e yuzu). Aggiunge appunti recenti sul dosaggio del veleno.
+**La ricetta**: Tra i suoi appunti di cucina c'è la tecnica per il fugu con kimo che aveva imparato alla scuola Tsuji, con la sua variante personale (marinatura sake e yuzu). Aggiunge appunti recenti sul dosaggio - sa esattamente quanto fegato serve per uccidere.
 
 ### SAKURA PIANIFICA L'ELETTROCUZIONE
 
-Sakura (Moglie del Giudice) ha scoperto i segreti del marito:
-- Ha trovato lettere minatorie in un cassetto (debiti, pressioni)
-- Ha sentito una telefonata sospetta (corruzione)
+Sakura (Moglie del Giudice) sa da tempo che qualcosa non va nel matrimonio - non i tradimenti che lei stessa commette, ma qualcosa di più oscuro.
 
-Se viene fuori tutto, perde:
+Ha notato il marito nervoso, distratto. Ha sentito mezza telefonata in cui lui supplicava qualcuno. Ha visto un uomo dall'aspetto poco raccomandabile aspettarlo fuori dal tribunale una volta, e il modo in cui Makoto era pallido dopo.
+
+Non conosce i dettagli della corruzione, ma sa che il marito è nei guai. E se viene fuori qualcosa - qualsiasi cosa - lei perde tutto:
 - La reputazione
 - Il rispetto del padre
-- La carriera artistica (ha un evento nazionale in autunno 1997)
-- L'eredità del padre
+- La carriera artistica
+- L'eredità
 
-Cerca nei vecchi fascicoli del marito qualcuno che lo odi e abbia competenze tecniche. Trova **Sakai Toru** (Tecnico penna) - condannato dal marito nel 1992 con pena esemplare.
+Decide che è meglio essere vedova che moglie di un uomo disonorato.
+
+Cerca nei vecchi fascicoli del marito (quelli che lui tiene nello studio, casi pubblici) qualcuno che lo odi e abbia competenze tecniche. Trova **Sakai Toru** (Tecnico penna) - condannato dal marito nel 1992 con pena esemplare.
 
 **I viaggi a Fushimi:**
 
@@ -535,7 +547,7 @@ La cameriera **Nakamura Emi** (Cameriera evento) lo porta al buffet senza sapere
 
 Il fugu viene servito normalmente. Non è presentato come "sorpresa dello chef" o nulla di speciale. È semplicemente un piatto in più.
 
-**21:35** - Makoto (Giudice) vede il fugu con kimo. I suoi occhi si illuminano. Ne prende una porzione. Poi un'altra. Poi un'altra ancora.
+**21:35** - Makoto (Giudice) vede il fugu con kimo. I suoi occhi si illuminano - riconosce immediatamente quella preparazione, quel profumo. Ne prende una porzione. Poi un'altra. Poi un'altra ancora.
 
 **21:40** - Il **Dott. Sato Hiroshi** (Collezionista chirurgo) lo vede mangiare la terza porzione.
 
@@ -672,7 +684,6 @@ Il cuore del giudice, già compromesso dalla **tetrodotossina** che stava causan
 3. **Penna**: Pilot Custom 845, **fuori posto** (tutto il resto è in ordine)
 4. **Foglio**: "Gent..." + striscia profonda di inchiostro
 5. **Cianosi leggera**: Colorazione bluastra (tetrodotossina)
-6. **Cassetto chiuso**: Contiene lettere minatorie sulla corruzione
 
 ## AUTOPSIA
 
@@ -767,24 +778,27 @@ Il cuore del giudice, già compromesso dalla **tetrodotossina** che stava causan
 
 | Data | Evento chiave |
 |------|---------------|
-| 1955 | Nascono le gemelle |
-| 1975 | Muore la madre Misaki |
+| 1955 | Nascono le gemelle Yui e Sakura |
+| 1975 | Muore la madre Misaki - Yui si iscrive alla scuola Tsuji |
 | 1977-1980 | Relazione Yui-Makoto |
 | Giugno 1980 | Makoto lascia Yui per Sakura |
-| Settembre 1980 | Test DNA falsificato |
+| Settembre 1980 | Test DNA falsificato (complicità di Noboru) |
 | Marzo 1981 | Nasce Kenta (figlio di Yui) |
 | Dicembre 1981 | Matrimonio Makoto-Sakura |
 | 1983 | Inizia relazione Sakura-Shin |
-| Marzo 1985 | Nasce Sora (figlio di Shin) |
-| 1990 | Debiti di gioco del giudice |
-| Marzo 1992 | Condanna Sakai |
-| Settembre 1994 | Yakuza compra il debito |
-| Dicembre 1994 | Condanna Hayashi (innocente) |
-| Aprile 1995 | Kenta rifiutato da scuola |
-| Agosto 1996 | Yui scopre sterilità marito |
-| Gennaio 1997 | Yui affronta il giudice |
+| Marzo 1985 | Nasce Sora (figlio biologico di Shin) |
+| 1990 | Debiti di gioco del giudice (47 milioni) |
+| Marzo 1992 | Condanna Sakai (pena esemplare) |
+| Settembre 1994 | Omicidio Hayashi - inizia il processo |
+| Settembre 1994 | Yakuza compra il debito del giudice |
+| 1994-1997 | Processo Hayashi - il giudice procrastina |
+| Aprile 1995 | Kenta rifiutato dalla scuola Rakusei |
+| Agosto 1996 | Yui scopre la sterilità del marito |
+| Gennaio 1997 | Yui affronta il giudice in tribunale |
 | Febbraio 1997 | Yui aggredita dalla yakuza |
-| Marzo 1997 | Sakura commissiona la penna |
+| Marzo 1997 | **Condanna Hayashi** (dopo l'aggressione) |
+| Marzo 1997 | Sakura commissiona la penna a Sakai |
+| Aprile 1997 | Haruto ammesso alla scuola Rakusei |
 | 8 aprile 1997 | Entrambi i piani si attuano |
 | 8 aprile 23:15 | Morte del giudice |
 | 9 aprile 07:00 | Corpo scoperto |
