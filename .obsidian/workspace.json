@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Manovre di Combatimento.md",
+                "file": "Investigare/Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Manovre di Combatimento"
+              "title": "Note"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Manovre di Combatimento.md",
+                "file": "Investigare/Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Manovre di Combatimento"
+              "title": "Collegamenti in uscita da Note"
             }
           }
         ],
@@ -226,8 +226,10 @@
   },
   "active": "696e4f1e19028552",
   "lastOpenFiles": [
-    "Savage/Regole.md",
     "Savage/Manovre di Combatimento.md",
+    "Investigare/Note.md",
+    "Investigare",
+    "Savage/Regole.md",
     "Strumenti/3D652300",
     "DnD/OneShot - La Pietra dell'Ombra/README.md",
     "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
@@ -262,7 +264,6 @@
     "Savage/Operazione_Sarcofago/Fasi/04 - Penetrazione.md",
     "Savage/Operazione_Sarcofago/Fasi/03 - Breccia.md",
     "Savage/Operazione_Sarcofago/Fasi/02 - Avvicinamento.md",
-    "Savage/Operazione_Sarcofago/Fasi/01 - Infiltrazione.md",
     "Savage/Operazione_Sarcofago/Immagini/AI.png",
     "Savage/Operazione_Sarcofago/Immagini/Americano.jpg",
     "Savage/Operazione_Sarcofago/Immagini/Boss.png",
@@ -270,7 +271,6 @@
     "Strumenti/Token.af~lock~",
     "Savage/Operazione_Sarcofago/Immagini",
     "Savage/Operazione_Sarcofago/Fasi",
-    "Savage/Operazione_Sarcofago/Segreti",
-    "Savage/Operazione_Sarcofago/Meccaniche"
+    "Savage/Operazione_Sarcofago/Segreti"
   ]
 }
