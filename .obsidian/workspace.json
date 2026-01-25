@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Regole.md",
+                "file": "Savage/Manovre di Combatimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regole"
+              "title": "Manovre di Combatimento"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Regole.md",
+                "file": "Savage/Manovre di Combatimento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Regole"
+              "title": "Collegamenti in uscita da Manovre di Combatimento"
             }
           }
         ],
@@ -226,6 +226,8 @@
   },
   "active": "696e4f1e19028552",
   "lastOpenFiles": [
+    "Savage/Regole.md",
+    "Savage/Manovre di Combatimento.md",
     "Strumenti/3D652300",
     "DnD/OneShot - La Pietra dell'Ombra/README.md",
     "DnD/OneShot - La Pietra dell'Ombra/12 - Riepilogo.md",
@@ -255,7 +257,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/PG/Dwarf.pdf",
     "DnD/OneShot - La Pietra dell'Ombra/Materiale/Ragnatela Ragni.md",
     "DnD/OneShot - La Pietra dell'Ombra/Materiale/Flusso Dot.md",
-    "Savage/Regole.md",
     "Savage/Operazione_Sarcofago/Fasi/06 - Esfiltrazione.md",
     "Savage/Operazione_Sarcofago/Fasi/05 - Azione Obiettivo.md",
     "Savage/Operazione_Sarcofago/Fasi/04 - Penetrazione.md",
@@ -270,7 +271,6 @@
     "Savage/Operazione_Sarcofago/Immagini",
     "Savage/Operazione_Sarcofago/Fasi",
     "Savage/Operazione_Sarcofago/Segreti",
-    "Savage/Operazione_Sarcofago/Meccaniche",
-    "Savage/Operazione_Sarcofago/PG"
+    "Savage/Operazione_Sarcofago/Meccaniche"
   ]
 }
