@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Meccanica.md",
+                "file": "Investigare/Rapporto_Autopsia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Meccanica"
+              "title": "Rapporto_Autopsia"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/Meccanica.md",
+                "file": "Investigare/Rapporto_Autopsia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Meccanica"
+              "title": "Collegamenti in uscita da Rapporto_Autopsia"
             }
           }
         ],
@@ -226,17 +226,19 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/GUIDA_MASTER.md",
-    "Investigare/Meccanica.md",
-    "Investigare/Scheda_Tecnica_Penna.md",
-    "Investigare/SCHEDA_RIASSUNTIVA_PNG.md",
-    "Investigare/Rapporto_Scena_Crimine.md",
-    "Investigare/Rapporto_Autopsia.md",
     "Investigare/Messaggi_Cercapersone.md",
-    "Investigare/Lista_Invitati_Evento.md",
+    "Investigare/Meccanica.md",
+    "Investigare/10_PNG_Secondari.md",
+    "Investigare/09_Ueno_Masa_Maggiordomo.md",
+    "Investigare/08_Chef_Tanaka_Ryo.md",
+    "Investigare/01_Ishida_Makoto_Giudice.md",
+    "Investigare/02_Ishida_Sakura_Moglie.md",
+    "Investigare/03_Kimura_Yui_Sorella.md",
+    "Investigare/05_Takeda_Noboru_Padre.md",
     "Investigare/Lettera_Suicidio_Noboru.md",
-    "Investigare/File_Computer_Yui.md",
-    "Investigare/Articoli_Giornale.md",
+    "Investigare/Idea.md",
+    "Investigare/GUIDA_MASTER.md",
+    "Investigare/Rapporto_Autopsia.md",
     "Investigare/LUOGO_07_Luoghi_Secondari.md",
     "Investigare/LUOGO_06_Casa_Takeda.md",
     "Investigare/LUOGO_05_Laboratorio_Ogawa.md",
@@ -244,14 +246,12 @@
     "Investigare/LUOGO_03_Galleria_Nijo.md",
     "Investigare/LUOGO_02_Casa_Kimura.md",
     "Investigare/LUOGO_01_Villa_Ishida.md",
-    "Investigare/00_CRONISTORIA_COMPLETA.md",
-    "Investigare/02_Ishida_Sakura_Moglie.md",
-    "Investigare/01_Ishida_Makoto_Giudice.md",
-    "Investigare/10_PNG_Secondari.md",
-    "Investigare/09_Ueno_Masa_Maggiordomo.md",
-    "Investigare/08_Chef_Tanaka_Ryo.md",
-    "Investigare/07_Sakai_Toru_Tecnico.md",
-    "Investigare/06_Ogawa_Shin_Amante.md",
+    "Investigare/Scheda_Tecnica_Penna.md",
+    "Investigare/SCHEDA_RIASSUNTIVA_PNG.md",
+    "Investigare/Rapporto_Scena_Crimine.md",
+    "Investigare/Lista_Invitati_Evento.md",
+    "Investigare/File_Computer_Yui.md",
+    "Investigare/Articoli_Giornale.md",
     "Investigare",
     "Strumenti/3D652300",
     "Strumenti/~$Schede_DnD_BX91.xlsx",

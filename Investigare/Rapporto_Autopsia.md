@@ -5,8 +5,8 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║                    OSPEDALE UNIVERSITARIO DI KYOTO                    ║
-║                      ISTITUTO DI MEDICINA LEGALE                      ║
+║                    OSPEDALE UNIVERSITARIO DI KYOTO                   ║
+║                      ISTITUTO DI MEDICINA LEGALE                     ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
 ║   RAPPORTO AUTOPTICO N° 1997-0412-A                                  ║
@@ -15,8 +15,8 @@
 ║   Ora inizio: 09:00                                                  ║
 ║   Ora fine: 14:30                                                    ║
 ║                                                                      ║
-║   Medico legale: Dott. Nakamura Kenji                               ║
-║   Assistente: Dott.ssa Yamada Eri                                   ║
+║   Medico legale: Dott. Nakamura Kenji                                ║
+║   Assistente: Dott.ssa Yamada Eri                                    ║
 ║                                                                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                         DATI DEL DECEDUTO                            ║
@@ -48,14 +48,14 @@
 ║                                                                      ║
 ║   SEGNI PARTICOLARI:                                                 ║
 ║   ▸ Mano destra, superficie palmare:                                 ║
-║     - Ustione di I-II grado su pollice (1.2 cm)                     ║
-║     - Ustione di I-II grado su indice (0.8 cm)                      ║
-║     - Pattern: compatibile con SCARICA ELETTRICA ★                  ║
+║     - Ustione di I-II grado su pollice (1.2 cm)                      ║
+║     - Ustione di I-II grado su indice (0.8 cm)                       ║
+║     - Pattern: compatibile con SCARICA ELETTRICA ★                   ║
 ║     - Disposizione: tipica da contatto con oggetto cilindrico        ║
 ║                                                                      ║
 ║   NESSUN SEGNO DI:                                                   ║
 ║   - Colluttazione                                                    ║
-║   - Ferite da arma bianca o da fuoco                                ║
+║   - Ferite da arma bianca o da fuoco                                 ║
 ║   - Strangolamento                                                   ║
 ║   - Traumi contusivi                                                 ║
 ║                                                                      ║
@@ -67,7 +67,7 @@
 ║   - Cuore: 380g (nella norma)                                        ║
 ║   - Coronarie: aterosclerosi lieve                                   ║
 ║   - Miocardio: emorragie petecchiali diffuse ★                      ║
-║   - Pattern compatibile con FIBRILLAZIONE VENTRICOLARE              ║
+║   - Pattern compatibile con FIBRILLAZIONE VENTRICOLARE               ║
 ║                                                                      ║
 ║   APPARATO RESPIRATORIO:                                             ║
 ║   - Polmoni: edema polmonare lieve                                   ║
@@ -77,30 +77,30 @@
 ║   - Stomaco: contenuto alimentare parzialmente digerito              ║
 ║   - Residui identificabili: pesce (tipo non determinabile),          ║
 ║     riso, verdure                                                    ║
-║   - Ultima assunzione cibo: 2-4 ore prima del decesso               ║
+║   - Ultima assunzione cibo: 2-4 ore prima del decesso                ║
 ║                                                                      ║
 ║   SISTEMA NERVOSO:                                                   ║
 ║   - Encefalo: nella norma                                            ║
-║   - Nessun segno di emorragia o trauma                              ║
+║   - Nessun segno di emorragia o trauma                               ║
 ║                                                                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                    ESAMI TOSSICOLOGICI ★★★                          ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
-║   Campione: Sangue periferico, urina, contenuto gastrico            ║
-║   Metodo: Cromatografia liquida ad alta prestazione (HPLC)          ║
+║   Campione: Sangue periferico, urina, contenuto gastrico             ║
+║   Metodo: Cromatografia liquida ad alta prestazione (HPLC)           ║
 ║           Spettrometria di massa                                     ║
 ║                                                                      ║
 ║   RISULTATI:                                                         ║
-║   ┌────────────────────────────────────────────────────────────┐    ║
-║   │ Sostanza              │ Concentrazione │ Range tossico     │    ║
-║   ├────────────────────────────────────────────────────────────┤    ║
-║   │ TETRODOTOSSINA (TTX)  │ 48 ng/mL      │ >10 ng/mL letale │    ║
-║   │ Etanolo               │ 0.02%          │ Trascurabile      │    ║
-║   │ Altre sostanze        │ Non rilevate   │ -                 │    ║
-║   └────────────────────────────────────────────────────────────┘    ║
+║   ┌────────────────────────────────────────────────────────────┐     ║
+║   │ Sostanza              │ Concentrazione │ Range tossico     │     ║
+║   ├────────────────────────────────────────────────────────────┤     ║
+║   │ TETRODOTOSSINA (TTX)  │ 48 ng/mL      │ >10 ng/mL letale   │     ║
+║   │ Etanolo               │ 0.02%          │ Trascurabile      │     ║
+║   │ Altre sostanze        │ Non rilevate   │ -                 │     ║
+║   └────────────────────────────────────────────────────────────┘     ║
 ║                                                                      ║
-║   NOTA SULLA TETRODOTOSSINA:                                        ║
+║   NOTA SULLA TETRODOTOSSINA:                                         ║
 ║   Neurotossina presente in alcune specie di pesce palla (fugu).     ║
 ║   Blocca i canali del sodio voltaggio-dipendenti.                   ║
 ║   Effetti: parestesia, paralisi muscolare, depressione              ║

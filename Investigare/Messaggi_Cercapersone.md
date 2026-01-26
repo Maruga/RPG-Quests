@@ -20,11 +20,11 @@ I giocatori possono recuperare questi messaggi tramite:
 ║                                                                      ║
 ║   Numero pager: 090-XXXX-5567                                        ║
 ║   Intestatario: ISHIDA Sakura                                        ║
-║   Periodo estratto: Gennaio - Aprile 1997                           ║
+║   Periodo estratto: Gennaio - Aprile 1997                            ║
 ║                                                                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
-║   Nota: I messaggi sono visualizzati in ordine cronologico.         ║
-║   Mittente identificato tramite prefisso o firma.                   ║
+║   Nota: I messaggi sono visualizzati in ordine cronologico.          ║
+║   Mittente identificato tramite prefisso o firma.                    ║
 ╚══════════════════════════════════════════════════════════════════════╝
 
 ═══════════════════════════════════════════════════════════════════════

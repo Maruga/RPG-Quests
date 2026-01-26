@@ -39,52 +39,52 @@ Questo handout è disponibile **SOLO SE** si verifica l'evento:
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
 ║                                                                      ║
-║    Ho tradito mia figlia Yui per l'onore della famiglia.            ║
+║    Ho tradito mia figlia Yui per l'onore della famiglia.             ║
 ║                                                                      ║
 ║    Ho sbagliato.                                                     ║
 ║                                                                      ║
 ║                                                                      ║
-║    Nel 1980, quando Yui mi disse di essere incinta,                 ║
-║    il giudice Ishida Makoto mi contattò.                            ║
+║    Nel 1980, quando Yui mi disse di essere incinta,                  ║
+║    il giudice Ishida Makoto mi contattò.                             ║
 ║                                                                      ║
-║    Mi propose di far falsificare il test del sangue.                ║
-║    Disse che avrebbe pagato lui. Che nessuno avrebbe                ║
-║    saputo. Che era meglio per tutti.                                ║
+║    Mi propose di far falsificare il test del sangue.                 ║
+║    Disse che avrebbe pagato lui. Che nessuno avrebbe                 ║
+║    saputo. Che era meglio per tutti.                                 ║
 ║                                                                      ║
 ║    Io accettai.                                                      ║
 ║                                                                      ║
-║    Non per i soldi. Non per lui.                                    ║
+║    Non per i soldi. Non per lui.                                     ║
 ║                                                                      ║
-║    Accettai perché volevo che Sakura sposasse un uomo              ║
-║    importante. Perché mi vergognavo di Yui e della sua             ║
-║    passione per la cucina. Perché pensavo che l'arte               ║
-║    fosse tutto e che lei fosse una delusione.                      ║
+║    Accettai perché volevo che Sakura sposasse un uomo                ║
+║    importante. Perché mi vergognavo di Yui e della sua               ║
+║    passione per la cucina. Perché pensavo che l'arte                 ║
+║    fosse tutto e che lei fosse una delusione.                        ║
 ║                                                                      ║
-║    Il medico si chiamava YAMAMOTO NAOKI.                           ║
-║    Lavorava all'Ospedale Universitario.                             ║
-║    Ishida lo pagò cinque milioni di yen.                           ║
+║    Il medico si chiamava YAMAMOTO NAOKI.                             ║
+║    Lavorava all'Ospedale Universitario.                              ║
+║    Ishida lo pagò cinque milioni di yen.                             ║
 ║                                                                      ║
-║    Il test disse che Kenta non era figlio di Ishida.               ║
-║    Era una bugia. Kenta è suo figlio.                              ║
-║    Mio nipote è cresciuto senza sapere chi è suo padre.            ║
-║                                                                      ║
-║                                                                      ║
-║    Ho sacrificato una figlia per l'altra.                          ║
-║    Ho distrutto la vita di Yui per il prestigio.                   ║
-║    Ho tradito il mio stesso sangue.                                 ║
+║    Il test disse che Kenta non era figlio di Ishida.                 ║
+║    Era una bugia. Kenta è suo figlio.                                ║
+║    Mio nipote è cresciuto senza sapere chi è suo padre.              ║
 ║                                                                      ║
 ║                                                                      ║
-║    Non merito di vivere con questa colpa.                           ║
-║    Non merito di guardare negli occhi le mie figlie.               ║
-║    Non merito il nome della famiglia Takeda.                        ║
+║    Ho sacrificato una figlia per l'altra.                            ║
+║    Ho distrutto la vita di Yui per il prestigio.                     ║
+║    Ho tradito il mio stesso sangue.                                  ║
 ║                                                                      ║
 ║                                                                      ║
-║    Chiedo perdono a Yui.                                            ║
-║    So che non mi perdonerà mai.                                     ║
+║    Non merito di vivere con questa colpa.                            ║
+║    Non merito di guardare negli occhi le mie figlie.                 ║
+║    Non merito il nome della famiglia Takeda.                         ║
+║                                                                      ║
+║                                                                      ║
+║    Chiedo perdono a Yui.                                             ║
+║    So che non mi perdonerà mai.                                      ║
 ║    Non lo merito.                                                    ║
 ║                                                                      ║
 ║                                                                      ║
-║                              武田 昇                                 ║
+║                              武田 昇                                  ║
 ║                            Takeda Noboru                             ║
 ║                                                                      ║
 ║                                                                      ║
