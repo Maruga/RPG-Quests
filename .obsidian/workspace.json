@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+                "file": "Investigare/INDICE_GENERALE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PG_01_Yamamoto_Kenji"
+              "title": "INDICE_GENERALE"
+            }
+          },
+          {
+            "id": "aa749bb4289ac193",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Investigare/handout/Registri_Pronto_Soccorso.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Registri_Pronto_Soccorso"
+            }
+          },
+          {
+            "id": "85929cc22606fbe5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Investigare/handout/Rapporto_Scena_Crimine.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Rapporto_Scena_Crimine"
             }
           }
         ]
@@ -193,12 +221,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+                "file": "Investigare/INDICE_GENERALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da PG_01_Yamamoto_Kenji"
+              "title": "Collegamenti in uscita da INDICE_GENERALE"
             }
           }
         ],
@@ -226,33 +254,36 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
+    "Investigare/CRONISTORIA COMPLETA.md",
+    "Investigare/GUIDA MASTER.md",
+    "Investigare/INDICE_GENERALE.md",
+    "Investigare/PNG_Secondari.md",
+    "Investigare/TIMELINE_GM.md",
+    "Investigare/PG_Riassunto.md",
+    "Investigare/PNG_Primari.md",
+    "Investigare/Meccanica.md",
+    "Investigare/handout/Tracce_Finanziarie.md",
+    "Investigare/handout/Scheda_Tecnica_Penna.md",
+    "Investigare/handout/Registri_Taxi.md",
+    "Investigare/handout/Messaggi_Cercapersone.md",
+    "Investigare/Idea.md",
+    "Investigare/handout/File_Computer_Yui.md",
+    "Investigare/handout/Caso_Hayashi_Documenti.md",
+    "Investigare/handout/Rapporto_Autopsia.md",
+    "Investigare/handout/Rapporto_Scena_Crimine.md",
+    "Investigare/luoghi/LUOGO_07_Luoghi_Secondari.md",
+    "Investigare/handout",
+    "Investigare/luoghi",
+    "Investigare/png/09_Ueno_Masa_Maggiordomo.md",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/png",
     "Investigare/pg/Copioni_PNG.md",
     "Investigare/pg/Sistema_di_Gioco.md",
-    "Investigare/Meccanica.md",
     "Investigare/pg/PG_05_Fujita_Emi.md",
     "Investigare/pg/PG_04_Sato_Yuki.md",
     "Investigare/pg/PG_03_Nakamura_Shota.md",
     "Investigare/pg/PG_02_Honda_Ryota.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/pg",
-    "Investigare/Idea.md",
-    "Investigare/Rapporto_Autopsia.md",
-    "Investigare/Messaggi_Cercapersone.md",
-    "Investigare/10_PNG_Secondari.md",
-    "Investigare/09_Ueno_Masa_Maggiordomo.md",
-    "Investigare/08_Chef_Tanaka_Ryo.md",
-    "Investigare/01_Ishida_Makoto_Giudice.md",
-    "Investigare/02_Ishida_Sakura_Moglie.md",
-    "Investigare/03_Kimura_Yui_Sorella.md",
-    "Investigare/05_Takeda_Noboru_Padre.md",
-    "Investigare/Lettera_Suicidio_Noboru.md",
-    "Investigare/GUIDA_MASTER.md",
-    "Investigare/LUOGO_07_Luoghi_Secondari.md",
-    "Investigare/LUOGO_06_Casa_Takeda.md",
-    "Investigare/LUOGO_05_Laboratorio_Ogawa.md",
-    "Investigare/LUOGO_04_Laboratorio_Sakai.md",
-    "Investigare/LUOGO_03_Galleria_Nijo.md",
-    "Investigare/LUOGO_02_Casa_Kimura.md",
     "Investigare",
     "Strumenti/3D652300",
     "Strumenti/~$Schede_DnD_BX91.xlsx",
@@ -268,9 +299,6 @@
     "Savage/Operazione_Sarcofago/Immagini/AI.png",
     "Savage/Operazione_Sarcofago/Immagini/Americano.jpg",
     "Savage/Operazione_Sarcofago/Immagini/Boss.png",
-    "Savage/Operazione_Sarcofago/Immagini/Copertina.png",
-    "Strumenti/Token.af~lock~",
-    "Savage/Operazione_Sarcofago/Immagini",
-    "Savage/Operazione_Sarcofago/Fasi"
+    "Savage/Operazione_Sarcofago/Immagini/Copertina.png"
   ]
 }
