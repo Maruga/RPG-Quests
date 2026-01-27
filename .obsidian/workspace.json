@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Rapporto_Autopsia.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rapporto_Autopsia"
+              "title": "PG_01_Yamamoto_Kenji"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/Rapporto_Autopsia.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Rapporto_Autopsia"
+              "title": "Collegamenti in uscita da PG_01_Yamamoto_Kenji"
             }
           }
         ],
@@ -226,8 +226,18 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/Messaggi_Cercapersone.md",
+    "Investigare/pg/Copioni_PNG.md",
+    "Investigare/pg/Sistema_di_Gioco.md",
     "Investigare/Meccanica.md",
+    "Investigare/pg/PG_05_Fujita_Emi.md",
+    "Investigare/pg/PG_04_Sato_Yuki.md",
+    "Investigare/pg/PG_03_Nakamura_Shota.md",
+    "Investigare/pg/PG_02_Honda_Ryota.md",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/pg",
+    "Investigare/Idea.md",
+    "Investigare/Rapporto_Autopsia.md",
+    "Investigare/Messaggi_Cercapersone.md",
     "Investigare/10_PNG_Secondari.md",
     "Investigare/09_Ueno_Masa_Maggiordomo.md",
     "Investigare/08_Chef_Tanaka_Ryo.md",
@@ -236,22 +246,13 @@
     "Investigare/03_Kimura_Yui_Sorella.md",
     "Investigare/05_Takeda_Noboru_Padre.md",
     "Investigare/Lettera_Suicidio_Noboru.md",
-    "Investigare/Idea.md",
     "Investigare/GUIDA_MASTER.md",
-    "Investigare/Rapporto_Autopsia.md",
     "Investigare/LUOGO_07_Luoghi_Secondari.md",
     "Investigare/LUOGO_06_Casa_Takeda.md",
     "Investigare/LUOGO_05_Laboratorio_Ogawa.md",
     "Investigare/LUOGO_04_Laboratorio_Sakai.md",
     "Investigare/LUOGO_03_Galleria_Nijo.md",
     "Investigare/LUOGO_02_Casa_Kimura.md",
-    "Investigare/LUOGO_01_Villa_Ishida.md",
-    "Investigare/Scheda_Tecnica_Penna.md",
-    "Investigare/SCHEDA_RIASSUNTIVA_PNG.md",
-    "Investigare/Rapporto_Scena_Crimine.md",
-    "Investigare/Lista_Invitati_Evento.md",
-    "Investigare/File_Computer_Yui.md",
-    "Investigare/Articoli_Giornale.md",
     "Investigare",
     "Strumenti/3D652300",
     "Strumenti/~$Schede_DnD_BX91.xlsx",
@@ -270,7 +271,6 @@
     "Savage/Operazione_Sarcofago/Immagini/Copertina.png",
     "Strumenti/Token.af~lock~",
     "Savage/Operazione_Sarcofago/Immagini",
-    "Savage/Operazione_Sarcofago/Fasi",
-    "Savage/Operazione_Sarcofago/Segreti"
+    "Savage/Operazione_Sarcofago/Fasi"
   ]
 }
