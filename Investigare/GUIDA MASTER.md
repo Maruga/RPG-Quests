@@ -1,5 +1,3 @@
-## Guida del Master
-
 # PARTE 1: SETUP INIZIALE
 
 ## IL BRIEFING
@@ -19,7 +17,7 @@ Il master può adattare i ruoli al sistema di gioco utilizzato.
 
 I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Taniguchi**, li informa:
 
-> "È morto il giudice Ishida Makoto. Trovato stamattina nella sua villa a Higashiyama. La domestica l'ha scoperto alle 7:00.
+> "È morto il giudice Ishida Makoto. Trovato stamattina nella sua villa a Higashiyama. La domestica l'ha scoperto alle 7:07.
 >
 > Ishida era un nome importante - processi di alto profilo, conoscenze influenti. I media non sanno ancora nulla, ma è questione di ore.
 >
@@ -29,13 +27,12 @@ I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Tanigu
 
 - **Chi**: Ishida Makoto, 45 anni, giudice del Tribunale Distrettuale
 - **Dove**: Villa Ishida, Via Higashiyama 45
-- **Quando**: Trovato alle 07:00, morte stimata nella notte
+- **Quando**: Trovato alle 07:07, morte stimata nella notte
 - **Come**: Non specificato - "cause da accertare"
 - **Chi ha trovato il corpo**: La domestica
 
 **Nient'altro.** Il resto lo scoprono sulla scena.
 
----
 
 ## LA SCENA DEL CRIMINE
 

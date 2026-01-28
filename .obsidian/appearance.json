@@ -1,3 +1,8 @@
 {
-  "cssTheme": "ITS Theme"
+  "cssTheme": "ITS Theme",
+  "theme": "obsidian",
+  "accentColor": "",
+  "baseFontSize": 17,
+  "baseFontSizeAction": false,
+  "nativeMenus": false
 }
