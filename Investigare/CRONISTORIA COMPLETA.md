@@ -1,4 +1,5 @@
-# L'OMBRA DEL GLICINE
+# Higashiyama
+
 ## Cronistoria Completa e Consolidata
 ### Kyoto, Aprile 1997
 

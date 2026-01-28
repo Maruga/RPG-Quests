@@ -1,7 +1,4 @@
-# INDICE GENERALE
 ## Morte di un Giudice - Kyoto 1997
-
----
 
 ## 📋 DOCUMENTI PRINCIPALI
 
@@ -10,9 +7,9 @@
 | [[CRONISTORIA COMPLETA]] | Timeline 1955-1997, tutti gli eventi     |
 | [[GUIDA MASTER]]         | Setup, eventi reattivi, piste, soluzione |
 | [[Meccanica]]            | Regole del sistema di gioco              |
-| [[PNG_Primari]]          | Scheda riassuntiva PNG principali        |
-| [[PNG_Secondari]]        | Scheda riassuntiva PNG secondari         |
-| [[PG_Riassunto]]         | Scheda riassuntiva tutti i PG            |
+| [[PNG Primari]]          | Scheda riassuntiva PNG principali        |
+| [[PNG Secondari]]        | Scheda riassuntiva PNG secondari         |
+| [[PG Riassunto]]         | Scheda riassuntiva tutti i PG            |
 | [[TIMELINE_GM]]          | Quando attivare eventi e problemi        |
 
 ---
@@ -61,7 +58,7 @@
 ### Documenti Ufficiali
 | File | Quando consegnare |
 |------|-------------------|
-| [[Rapporto_Scena_Crimine]] | Giorno 1 - Subito |
+| [[Rapporto Scena Crimine]] | Giorno 1 - Subito |
 | [[Rapporto_Autopsia]] | Giorno 2-3 |
 | [[Scheda_Tecnica_Penna]] | Dopo analisi (48-72h) |
 | [[Registri_Pronto_Soccorso]] | Su richiesta |

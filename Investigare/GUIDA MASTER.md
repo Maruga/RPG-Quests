@@ -1,11 +1,6 @@
-# L'OMBRA DEL GLICINE
 ## Guida del Master
 
----
-
 # PARTE 1: SETUP INIZIALE
-
----
 
 ## IL BRIEFING
 

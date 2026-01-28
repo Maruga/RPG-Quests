@@ -63,7 +63,7 @@ Ha sedotto deliberatamente Makoto, il fidanzato della sorella, vedendo in lui la
 ### Matrimonio (1981-1997)
 16 anni di recita perfetta. Ha dato a Makoto l'illusione di un matrimonio felice mentre lo disprezzava. Ha iniziato la relazione con Shin nel 1983 e non l'ha mai interrotta.
 
-### Il piano omicida (2997)
+### Il piano omicida (1997)
 Ha notato che il marito era in difficoltà - nervoso, spaventato. Non conosce i dettagli (yakuza, corruzione) ma sa che qualcosa sta per venire a galla. Ha deciso che essere vedova è meglio che essere la moglie di un uomo disonorato.
 
 ---

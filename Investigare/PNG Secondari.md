@@ -1,8 +1,6 @@
 # PNG SECONDARI
 ## Personaggi di supporto
 
----
-
 # STAFF CASA ISHIDA
 
 ---

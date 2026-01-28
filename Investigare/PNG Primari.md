@@ -1,8 +1,6 @@
 # SCHEDA RIASSUNTIVA PNG
 ## Riferimento Rapido per il Master
 
----
-
 ## FAMIGLIA ISHIDA (Villa Higashiyama)
 
 | Nome | Età | Ruolo | Colpevole? | Note chiave |
