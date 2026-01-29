@@ -253,3 +253,15 @@ Tira **2d6**, successo se ≤ attributo
 |Percepire il pericolo|Ascolto|Raro, situazioni speciali|
 
 **Regola:** Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco.
+
+
+## Momento di Chiarezza - Versione Finale
+
+**Una volta per sessione**, il PG può invocare il Momento di Chiarezza:
+
+- Dichiari **prima** di tirare
+- Il tiro è **successo automatico**
+- Ignora qualsiasi malus da relazione PNG o situazione
+- Nessun costo
+- Non può essere successo critico (niente bonus)
+- Non si accumula tra sessioni - se non usato, perso
