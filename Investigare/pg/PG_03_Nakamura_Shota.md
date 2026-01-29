@@ -16,16 +16,51 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore | Note |
-|-----------|--------|------|
-| **Distacco** | 0 | Normale |
-| **Pazienza** | +2 | Punto di forza - può aspettare ore |
-| **Silenzio** | +1 | Sa quando tacere |
-| **Lucidità** | 0 | Normale |
-| **Ascolto** | +2 | Eccellente - sente le bugie |
-| **Aura** | 0 | Normale - non intimidisce, convince |
+| Attributo | Valore Base | Note |
+|-----------|-------------|------|
+| **Distacco** | 7 | Normale |
+| **Pazienza** | 10 | Punto di forza - può aspettare ore |
+| **Silenzio** | 8 | Sa quando tacere |
+| **Lucidità** | 7 | Normale |
+| **Ascolto** | 10 | Eccellente - sente le bugie |
+| **Aura** | 7 | Normale - non intimidisce, convince |
 
-**STRESS INIZIALE**: +5 (buono)
+> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> - Massimo 2 punti per attributo
+> - Nessun attributo può superare 11
+
+---
+
+## STRESS/BENESSERE
+
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+
+---
+
+## IL DEBITO
+
+Scegli **uno** dei seguenti Debiti:
+
+### Opzione 1: Ombra della Verità
+*Senti quando qualcuno mente. Non sai come, ma lo senti.*
+- **Attributo**: Ascolto
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Ascolto): Sai che mente e su cosa sta mentendo
+- **Fallimento**: Sai che mente, ma non riesci a capire su quale parte
+
+### Opzione 2: Porta Socchiusa
+*Le persone si aprono con te. Dicono più di quanto vorrebbero.*
+- **Attributo**: Ascolto
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Ascolto): Il PNG rivela qualcosa che non voleva assolutamente dire
+- **Fallimento**: Il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo
+
+### Opzione 3: L'Ora Giusta
+*Sai quando è il momento perfetto per parlare, agire, colpire.*
+- **Attributo**: Pazienza
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Pazienza): La prossima azione è un successo automatico
+- **Fallimento**: Hai +2 al prossimo tiro (senti che il momento è vicino, ma non perfetto)
 
 ---
 
@@ -37,30 +72,29 @@ Nakamura è quello che fa parlare le persone. Non con la forza - con la pazienza
 
 Suo fratello minore **Daisuke (34 anni)** è l'opposto. Non ha mai tenuto un lavoro più di sei mesi. Vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti. Ogni tanto sparisce per mesi. Poi torna, con una nuova idea, un nuovo progetto, una nuova richiesta.
 
-Daisuke si è presentato in centrale stamattina. Ha bisogno di soldi. Di nuovo.
-
 ---
 
 ## IL PROBLEMA
 
-### "Fratello, mi serve un favore"
+### Il Fratello
 
-Daisuke ha un debito. Non dice con chi. Non dice per cosa. Dice solo che gli servono trecentomila yen entro domani, oppure "ci sono problemi".
+Daisuke è un peso che Nakamura si porta dietro da sempre. Gli ha già prestato soldi - tre volte. Ogni volta "l'ultima". Ogni volta una bugia.
 
-La verità: Daisuke ha truffato il socio di un piccolo affare. Il socio vuole i soldi indietro. Non è violento, ma potrebbe andare dalla polizia - e Nakamura non può permettersi uno scandalo familiare.
+Sua moglie non sa di questi prestiti. Se lo scoprisse, ci sarebbero problemi anche a casa.
 
-### Cosa vuole Nakamura
-Che Daisuke risolva i suoi problemi da solo. Che smetta di venire a chiedere soldi. Che cresca.
+Ma Daisuke è sangue del suo sangue. E quando ha bisogno, sa sempre dove trovare suo fratello.
 
-### Cosa vuole Daisuke
-I soldi. E forse, sotto sotto, che suo fratello lo salvi ancora una volta perché non sa salvarsi da solo.
+### Cosa sa il giocatore
+- Daisuke si caccia sempre nei guai
+- Ogni volta che appare, vuole qualcosa
+- Se lo scandalo diventa pubblico, la reputazione di Nakamura ne soffre
 
-### La tensione
-Nakamura ha già dato soldi a Daisuke. Tre volte. Ogni volta "l'ultima". Sua moglie non sa di quest'ultima richiesta - e se lo scopre, ci saranno problemi anche a casa. Ma Daisuke è sangue del suo sangue. Può davvero lasciarlo nei guai?
+### Cosa NON sa il giocatore
+In che guaio si è cacciato stavolta, quanto vuole, cosa succede se non lo aiuta. Lo scoprirai in gioco.
 
 ---
 
-## PNG: NAKAMURA Daisuke (Fratello)
+## PNG DEL PROBLEMA: NAKAMURA Daisuke (Fratello)
 
 | Campo | Dettaglio |
 |-------|-----------|
@@ -69,13 +103,9 @@ Nakamura ha già dato soldi a Daisuke. Tre volte. Ogni volta "l'ultima". Sua mog
 | **Aspetto** | Vestito male, un po' trasandato, sorriso da venditore |
 | **Tono** | Alternanza tra supplichevole e manipolatore |
 
-**Cosa sa**: Sa che Shota non può rifiutargli nulla, in fondo. Conosce i suoi punti deboli.
+**Cosa vuole**: Dipende dalla situazione. Ma di solito sono soldi, e di solito sono urgenti.
 
-**Cosa vuole**: I soldi, subito. Promesse per il futuro non gli servono.
-
-**Come si comporta**: Prima prova la simpatia ("Fratello, sono io, ci conosciamo"). Se non funziona, passa al senso di colpa ("Papà ti avrebbe aiutato"). Se ancora non funziona, alla minaccia velata ("Se vado in galera, che figura ci fai?").
-
-**Frase tipica**: "È l'ultima volta, te lo giuro. Dammi solo un'altra possibilità."
+**Come si comporta**: Prima la simpatia. Poi il senso di colpa. Poi la minaccia velata. Conosce i punti deboli di suo fratello.
 
 ---
 
@@ -92,7 +122,7 @@ Nakamura ha già dato soldi a Daisuke. Tre volte. Ogni volta "l'ultima". Sua mog
 
 **Come contattarlo**: Studio legale Nakamura & Associati, Via Kawaramachi. O al cellulare.
 
-**Nota culturale**: Hideki è molto attento alle forme. Non farà mai nulla di illegale, nemmeno per un parente. Ma conosce la legge meglio di chiunque e sa dove sono le zone grigie.
+**Limite**: Una volta per sessione senza conseguenze. Hideki non fa mai nulla di illegale, ma conosce le zone grigie.
 
 ---
 

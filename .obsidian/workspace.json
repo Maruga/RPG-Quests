@@ -13,40 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/pg/Sistema_di_Gioco.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sistema_di_Gioco"
-            }
-          },
-          {
-            "id": "aa749bb4289ac193",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/handout/Registri_Pronto_Soccorso.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Registri_Pronto_Soccorso"
-            }
-          },
-          {
-            "id": "85929cc22606fbe5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/handout/Rapporto Scena Crimine.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Rapporto Scena Crimine"
+              "title": "PG_01_Yamamoto_Kenji"
             }
           }
         ]
@@ -221,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/pg/Sistema_di_Gioco.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Sistema_di_Gioco"
+              "title": "Collegamenti in uscita da PG_01_Yamamoto_Kenji"
             }
           }
         ],
@@ -254,35 +226,35 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/INDICE GENERALE.md",
-    "Investigare/TIMELINE_GM.md",
-    "Investigare/PG Riassunto.md",
-    "Investigare/Meccanica.md",
+    "Investigare/Regolamento_v1.1.md",
+    "Investigare/Regolamento.md",
+    "Investigare/pg/PG_03_Nakamura_Shota.md",
+    "Investigare/pg/PG_02_Honda_Ryota.md",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/pg/PG_05_Fujita_Emi.md",
+    "Investigare/pg/PG_04_Sato_Yuki.md",
+    "Investigare/pg/Copioni_PNG.md",
+    "Investigare/pg/Sistema_di_Gioco.md",
     "Investigare/GUIDA MASTER.md",
     "Investigare/CRONISTORIA COMPLETA.md",
+    "Investigare/TIMELINE_GM.md",
     "Investigare/PNG Secondari.md",
     "Investigare/PNG Primari.md",
-    "Investigare/pg/Copioni_PNG.md",
-    "Investigare/handout/Rapporto_Autopsia.md",
+    "Investigare/PG Riassunto.md",
+    "Investigare/INDICE GENERALE.md",
     "Investigare/handout/Rapporto Scena Crimine.md",
+    "Investigare/handout/Registri_Pronto_Soccorso.md",
+    "Investigare/Meccanica.md",
+    "Investigare/handout/Rapporto_Autopsia.md",
     "Investigare/handout/Scheda_Tecnica_Penna.md",
-    "Investigare/pg/PG_04_Sato_Yuki.md",
     "Investigare/png/06_Ogawa_Shin_Amante.md",
     "Investigare/png/02_Ishida_Sakura_Moglie.md",
     "Investigare/handout/Tracce_Finanziarie.md",
     "Investigare/handout/Registri_Taxi.md",
     "Investigare/handout/Messaggi_Cercapersone.md",
-    "Investigare/Idea.md",
-    "Investigare/handout/File_Computer_Yui.md",
-    "Investigare/handout/Caso_Hayashi_Documenti.md",
-    "Investigare/luoghi/LUOGO_07_Luoghi_Secondari.md",
     "Investigare/handout",
     "Investigare/luoghi",
-    "Investigare/png/09_Ueno_Masa_Maggiordomo.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/png",
-    "Investigare/pg/Sistema_di_Gioco.md",
-    "Investigare/pg/PG_05_Fujita_Emi.md",
     "Investigare/pg",
     "Investigare",
     "Strumenti/3D652300",

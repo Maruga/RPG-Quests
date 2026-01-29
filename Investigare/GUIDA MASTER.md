@@ -2,6 +2,20 @@
 
 ## IL BRIEFING
 
+
+## CONTESTO CULTURALE: GIAPPONE 1997
+
+> **IMPORTANTE**: In Giappone l'apparenza, il rispetto e l'armonia sociale sono fondamentali. Questo influenza tutto:
+> 
+> - **Tatemae** (建前): La facciata pubblica, ciò che mostri agli altri
+> - **Honne** (本音): I veri sentimenti, nascosti
+> - **Giri** (義理): Il dovere, gli obblighi sociali
+> - **Meishi** (名刺): Lo scambio di biglietti da visita è un rituale
+> - **Keigo** (敬語): Il linguaggio onorifico marca le gerarchie
+> 
+> **Per i giocatori**: Perdere la faccia è peggio di fallire. Mostrare emozioni in pubblico è inappropriato. Il rispetto per i superiori e gli anziani è assoluto. Chiedere aiuto direttamente è imbarazzante - si suggerisce, si allude.
+
+
 ### Chi sono i giocatori
 
 I giocatori sono investigatori della **Polizia Prefetturale di Kyoto**, Sezione Omicidi. Possono essere:

@@ -16,16 +16,51 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore | Note |
-|-----------|--------|------|
-| **Distacco** | +1 | Sa mantenere le distanze |
-| **Pazienza** | 0 | Normale |
-| **Silenzio** | +2 | Punto di forza - osserva, non reagisce |
-| **Lucidità** | +1 | Buona capacità di analisi |
-| **Ascolto** | +1 | Formazione psicologica |
-| **Aura** | 0 | Normale - preferisce restare in ombra |
+| Attributo | Valore Base | Note |
+|-----------|-------------|------|
+| **Distacco** | 8 | Sa mantenere le distanze |
+| **Pazienza** | 7 | Normale |
+| **Silenzio** | 10 | Punto di forza - osserva, non reagisce |
+| **Lucidità** | 8 | Buona capacità di analisi |
+| **Ascolto** | 8 | Formazione psicologica |
+| **Aura** | 7 | Normale - preferisce restare in ombra |
 
-**STRESS INIZIALE**: +5 (buono)
+> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> - Massimo 2 punti per attributo
+> - Nessun attributo può superare 11
+
+---
+
+## STRESS/BENESSERE
+
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+
+---
+
+## IL DEBITO
+
+Scegli **uno** dei seguenti Debiti:
+
+### Opzione 1: Specchio dell'Anima
+*Vedi oltre la maschera. Senti le emozioni vere di una persona.*
+- **Attributo**: Ascolto
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Ascolto): Senti l'emozione dominante e capisci perché la prova
+- **Fallimento**: Senti l'emozione, ma non la sua origine
+
+### Opzione 2: Tocco del Medico
+*Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Dettagli precisi - tipo di trauma, natura della paura, segni di stress cronico
+- **Fallimento**: Capisci che qualcosa non va, ma non riesci a definirlo con precisione
+
+### Opzione 3: Sussurro della Sera
+*La tua voce calma. Le persone si tranquillizzano in tua presenza.*
+- **Attributo**: Silenzio
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Silenzio): La persona si calma completamente e inizia a fidarsi di te
+- **Fallimento**: La persona si calma, ma resta guardinga e sospettosa
 
 ---
 
@@ -37,49 +72,40 @@ Fujita è arrivata in polizia dopo una laurea in psicologia e anni di pratica cl
 
 Cinque anni fa ha avuto bisogno di soldi. Suo padre era malato, le cure costavano. Ha chiesto un prestito a **Iwamoto**, un conoscente di famiglia che "aiutava le persone". Non era yakuza - solo un uomo con soldi e pochi scrupoli.
 
-Il padre è morto comunque. Il debito è rimasto.
-
-Fujita ha restituito quasi tutto. Mancano solo trecentomila yen. Ma Iwamoto non vuole i soldi - vuole tenerla in debito. Ogni mese si fa vivo. "Non c'è fretta." "Quando puoi." "Siamo amici, no?"
-
-Non sono amici. E Fujita sa esattamente cosa sta facendo.
+Il padre è morto comunque. Il debito è quasi saldato. Ma Iwamoto non sembra volerlo chiudere.
 
 ---
 
 ## IL PROBLEMA
 
-### "Non c'è fretta, Fujita-san"
+### Il Creditore
 
-Iwamoto si è presentato fuori dalla centrale. Sorridente, cortese. Voleva solo salutare. E ricordare che il debito esiste ancora.
+**Iwamoto Koji** le ha prestato soldi cinque anni fa. Fujita ha restituito quasi tutto. Ma Iwamoto continua a presentarsi. "Non c'è fretta." "Siamo amici." "Quando sarà il momento, ne parleremo."
 
-Non ha chiesto nulla di specifico. Non deve. Il messaggio è chiaro: "Ti tengo d'occhio. So dove lavori. Quando vorrò qualcosa, te lo chiederò."
+Non chiede mai nulla di specifico. Questo è il punto. L'ambiguità è l'arma. Vuole tenerla in debito - non per i soldi, ma per il potere di poter chiedere qualcosa un giorno.
 
-### Cosa vuole Fujita
-Chiudere il debito. Definitivamente. Non avere più nulla a che fare con Iwamoto.
+### Cosa sa il giocatore
+- Iwamoto non vuole chiudere il debito
+- Ogni incontro è un promemoria: "Ti tengo d'occhio"
+- Se qualcuno in centrale lo vede parlare con lei, ci saranno domande
 
-### Cosa vuole Iwamoto
-Avere una poliziotta in debito con lui. Non per usarla adesso - per poterla usare quando servirà.
-
-### La tensione
-Fujita può pagare i trecentomila yen - li ha. Ma se paga, Iwamoto accetterà? O troverà un modo per rifiutare, per tenere aperta la questione? E se qualcuno in centrale lo vede parlare con lei, cosa penseranno?
+### Cosa NON sa il giocatore
+Quando si presenterà, cosa vorrà, come reagirà se lei prova a chiudere la questione. Lo scoprirai in gioco.
 
 ---
 
-## PNG: IWAMOTO Koji (Creditore)
+## PNG DEL PROBLEMA: IWAMOTO Koji (Creditore)
 
 | Campo | Dettaglio |
 |-------|-----------|
 | **Età** | 55 anni |
 | **Lavoro** | "Uomo d'affari" - prestiti privati, investimenti grigi |
 | **Aspetto** | Distinto, capelli grigi, sempre in completo. Sembra un nonno gentile. |
-| **Tono** | Estremamente cortese. Mai una parola fuori posto. Mai una minaccia. |
+| **Tono** | Estremamente cortese. Mai una parola fuori posto. Mai una minaccia esplicita. |
 
-**Cosa sa**: Sa che Fujita è orgogliosa. Sa che odia essere in debito. Sa che questo la rende vulnerabile.
+**Cosa vuole**: Controllo. Il potere di poter chiedere un favore quando vuole.
 
-**Cosa vuole**: Controllo. Non i soldi - il potere di poter chiedere un favore quando vuole.
-
-**Come si comporta**: Gentilissimo. Premuroso. Chiede della salute, del lavoro. "Mi fa piacere vederti bene." Mai una parola su cosa potrebbe chiedere. L'ambiguità è l'arma.
-
-**Frase tipica**: "Fujita-san, non c'è nessuna fretta. Siamo persone civili. Quando sarà il momento giusto, ne parleremo."
+**Come si comporta**: Gentilissimo. Premuroso. Mai una parola su cosa potrebbe chiedere. L'ambiguità è l'arma.
 
 ---
 
@@ -96,7 +122,7 @@ Fujita può pagare i trecentomila yen - li ha. Ma se paga, Iwamoto accetterà? O
 
 **Come contattarla**: Ospedale Universitario, reparto Medicina Legale. O al cellulare personale.
 
-**Nota culturale**: Morita è diretta, quasi brusca - insolito per una donna giapponese. Fujita apprezza questo. Sono le uniche due donne in posizioni di responsabilità che conoscono nel loro campo.
+**Limite**: Una volta per sessione senza conseguenze. Morita è diretta, quasi brusca - sono le uniche due donne in posizioni di responsabilità che conoscono nel loro campo.
 
 ---
 

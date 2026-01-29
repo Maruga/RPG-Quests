@@ -3,7 +3,6 @@
 ## Cronistoria Completa e Consolidata
 ### Kyoto, Aprile 1997
 
----
 
 # PARTE 1: ANTEFATTO (1955-1996)
 

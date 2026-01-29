@@ -16,16 +16,51 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore | Note |
-|-----------|--------|------|
-| **Distacco** | +2 | Punto di forza - freddo sulla scena |
-| **Pazienza** | -1 | Impulsivo, cerca la scorciatoia |
-| **Silenzio** | 0 | Normale |
-| **Lucidità** | +2 | Eccellente - nota ogni dettaglio |
-| **Ascolto** | 0 | Normale |
-| **Aura** | +1 | Sicuro di sé, a volte troppo |
+| Attributo | Valore Base | Note |
+|-----------|-------------|------|
+| **Distacco** | 10 | Punto di forza - freddo sulla scena |
+| **Pazienza** | 5 | Impulsivo, cerca la scorciatoia |
+| **Silenzio** | 7 | Normale |
+| **Lucidità** | 10 | Eccellente - nota ogni dettaglio |
+| **Ascolto** | 7 | Normale |
+| **Aura** | 8 | Sicuro di sé, a volte troppo |
 
-**STRESS INIZIALE**: +4 (buono)
+> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> - Massimo 2 punti per attributo
+> - Nessun attributo può superare 11
+
+---
+
+## STRESS/BENESSERE
+
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+
+---
+
+## IL DEBITO
+
+Scegli **uno** dei seguenti Debiti:
+
+### Opzione 1: Occhio della Gru
+*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci immediatamente il significato
+- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
+
+### Opzione 2: Teatro delle Ombre
+*Guardando una scena, visualizzi come si sono svolti gli eventi.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa degli eventi
+- **Fallimento**: Vedi frammenti disconnessi, immagini sfocate
+
+### Opzione 3: Cuore di Ghiaccio
+*Ti distacchi completamente dalla situazione. Niente ti tocca.*
+- **Attributo**: Distacco
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Distacco): Per il resto della scena, agisci normalmente senza bisogno di tiri emotivi
+- **Fallimento**: Resti lucido ma la tensione si accumula - il prossimo tiro emotivo ha -2
 
 ---
 
@@ -37,48 +72,40 @@ Il problema è che la sua mente non si ferma mai. Cerca stimoli. Adrenalina. Sfi
 
 Ha iniziato con le scommesse sportive tre anni fa. "Solo per divertimento." Poi le cifre sono cresciute. Ora scommette su tutto: baseball, sumo, corse di cavalli. Vince spesso - è intelligente. Ma quando perde, perde grosso.
 
-Ieri ha puntato due milioni di yen su una partita di baseball. I Giants hanno perso. E **Murakami**, l'allibratore, vuole i suoi soldi.
+E ultimamente ha perso più di quanto abbia vinto.
 
 ---
 
 ## IL PROBLEMA
 
-### "Hai perso, cosa fai?"
+### Il Gioco d'Azzardo
 
-Murakami non è yakuza - è un allibratore indipendente, quasi rispettabile. Ma due milioni sono due milioni. Ha mandato **Goto**, un suo uomo, a parlare con Honda.
+Honda deve soldi a **Murakami**, un allibratore indipendente. Non è yakuza - è quasi rispettabile. Ma i debiti sono debiti.
 
-Goto non minaccia. Non è il suo stile. Offre opzioni:
-1. Paga entro la settimana
-2. Raddoppia la scommessa sulla prossima partita - se vince, si cancella tutto
-3. "Possiamo trovare un accordo" (informazioni dalla polizia in cambio del debito)
+Murakami ha un uomo che si occupa delle riscossioni: **Goto Masaru**. Goto non minaccia mai. È educato, ragionevole, professionale. Il che lo rende più inquietante.
 
-### Cosa vuole Honda
-Tempo. O una via d'uscita che non distrugga la sua carriera.
+### Cosa sa il giocatore
+- Ha debiti di gioco con persone che non dimenticano
+- Goto potrebbe presentarsi in qualsiasi momento
+- Se qualcuno in centrale scopre che scommette illegalmente, la sua carriera è finita
 
-### Cosa vuole Goto
-I soldi. O qualcosa di equivalente valore. È un uomo d'affari, non un criminale - ma non accetta scuse.
-
-### La tensione
-Honda è un poliziotto. Se qualcuno scopre che scommette illegalmente, è finita. Se accetta il "favore", diventa corrotto. Se non paga, Goto potrebbe diventare meno gentile. E nel mezzo di tutto questo, c'è un omicidio da risolvere.
+### Cosa NON sa il giocatore
+Quanto deve esattamente, cosa chiederà Goto, quando si presenterà. Lo scoprirai in gioco.
 
 ---
 
-## PNG: GOTO Masaru (Uomo di Murakami)
+## PNG DEL PROBLEMA: GOTO Masaru (Riscossore)
 
 | Campo | Dettaglio |
 |-------|-----------|
 | **Età** | 45 anni |
 | **Lavoro** | "Consulente finanziario" (riscossore per Murakami) |
 | **Aspetto** | Completo grigio, occhiali, aspetto da impiegato. Non sembra minaccioso. |
-| **Tono** | Educato, ragionevole, quasi amichevole. Il che lo rende più inquietante. |
+| **Tono** | Educato, ragionevole, quasi amichevole. Mai una minaccia esplicita. |
 
-**Cosa sa**: Sa che Honda è poliziotto. Sa che questo rende la situazione "delicata" per entrambi.
+**Cosa vuole**: I soldi, preferibilmente. Ma è pragmatico - potrebbe accettare alternative.
 
-**Cosa vuole**: I soldi, preferibilmente. Ma è pragmatico - accetta alternative.
-
-**Come si comporta**: Mai aggressivo. Parla di "soluzioni", "accordi", "comprensione reciproca". Sorride sempre. Non fa mai minacce esplicite - le lascia intuire.
-
-**Frase tipica**: "Honda-san, siamo persone ragionevoli. Troviamo una soluzione che funzioni per tutti."
+**Come si comporta**: Parla di "soluzioni", "accordi", "comprensione reciproca". Sorride sempre. Le minacce sono solo sottintese.
 
 ---
 
@@ -95,7 +122,7 @@ Honda è un poliziotto. Se qualcuno scopre che scommette illegalmente, è finita
 
 **Come contattarlo**: Bazzica al Bar Shinjuku a Gion, tutte le sere dopo le 21.
 
-**Nota culturale**: Oda parla per allusioni. Non dice mai nomi direttamente. "Ho sentito che qualcuno in zona Fushimi costruisce cose interessanti" = c'è un tecnico clandestino a Fushimi.
+**Limite**: Una volta per sessione senza conseguenze. La seconda volta, il favore diventa più grande.
 
 ---
 

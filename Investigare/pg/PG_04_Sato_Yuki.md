@@ -16,16 +16,51 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore | Note |
-|-----------|--------|------|
-| **Distacco** | -1 | Si fa coinvolgere troppo |
-| **Pazienza** | +1 | Metodico nel lavoro |
-| **Silenzio** | -1 | Tende a parlare troppo quando nervoso |
-| **Lucidità** | +2 | Eccellente - mente analitica |
-| **Ascolto** | +1 | Attento ai dettagli |
-| **Aura** | 0 | Normale - ancora giovane |
+| Attributo | Valore Base | Note |
+|-----------|-------------|------|
+| **Distacco** | 5 | Si fa coinvolgere troppo |
+| **Pazienza** | 8 | Metodico nel lavoro |
+| **Silenzio** | 5 | Tende a parlare troppo quando nervoso |
+| **Lucidità** | 10 | Eccellente - mente analitica |
+| **Ascolto** | 8 | Attento ai dettagli |
+| **Aura** | 7 | Normale - ancora giovane |
 
-**STRESS INIZIALE**: +2 (stabile)
+> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> - Massimo 2 punti per attributo
+> - Nessun attributo può superare 11
+
+---
+
+## STRESS/BENESSERE
+
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+
+---
+
+## IL DEBITO
+
+Scegli **uno** dei seguenti Debiti:
+
+### Opzione 1: Palazzo della Memoria
+*Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
+- **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
+
+### Opzione 2: Occhio della Gru
+*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci il significato
+- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a interpretarlo
+
+### Opzione 3: Pietra Fuori Posto
+*Percepisci immediatamente cosa non torna - tracce, residui, anomalie.*
+- **Attributo**: Lucidità
+- **Costo**: 2 stress
+- **Successo** (2d6 ≤ Lucidità): Identifichi l'anomalia e la sua probabile origine
+- **Fallimento**: Senti che qualcosa non quadra, ma non riesci a isolare cosa
 
 ---
 
@@ -37,34 +72,31 @@ Il problema è sua madre.
 
 **Sato Michiko** non ha mai accettato che suo figlio facesse il poliziotto. "Uno spreco," dice. "Con la tua laurea potevi lavorare in un'azienda vera. Guadagnare bene. Trovare una brava ragazza."
 
-Suo zio **Tanaka Jiro** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. La madre non smette di ripetere che "lo zio ti aspetta". Ogni telefonata, ogni visita, stesso discorso.
-
-E chiama spesso. Molto spesso.
+Suo zio **Tanaka Jiro** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. La madre non smette di ripetere che "lo zio ti aspetta".
 
 ---
 
 ## IL PROBLEMA
 
-### "Quando lasci quel lavoro?"
+### La Madre
 
-La madre ha chiamato. Di nuovo. In centrale. La segretaria ha passato la chiamata - "Sato, tua madre, dice che è urgente."
+Sato Michiko chiama. Spesso. A volte in centrale. "È urgente," dice alla segretaria. Non è mai urgente.
 
-Non è urgente. Non lo è mai. Vuole solo sapere se ha "ripensato all'offerta dello zio". Vuole sapere perché non ha ancora una fidanzata. Vuole sapere perché "sprechi la tua vita".
+Vuole sapere se ha ripensato al lavoro dello zio. Vuole sapere quando si sposa. Vuole sapere perché "spreca la sua vita" a fare il poliziotto.
 
-Nel mezzo di un caso di omicidio, con il capo che aspetta un rapporto, la madre vuole parlare del suo futuro.
+Non urla mai. Non minaccia. Usa il senso di colpa come un'arma di precisione.
 
-### Cosa vuole Sato
-Che la madre lo lasci in pace. Che rispetti le sue scelte. Che smetta di trattarlo come un bambino.
+### Cosa sa il giocatore
+- La madre non approva le sue scelte
+- Ogni telefonata è una battaglia
+- Non può riattaccare in faccia a sua madre - non in Giappone
 
-### Cosa vuole la madre
-Che suo figlio abbia successo - nel modo in cui lei definisce il successo. Stabilità. Soldi. Famiglia. Non "giocare al detective".
-
-### La tensione
-Sato non può riattaccare - in Giappone non si riattacca in faccia alla propria madre. Ma ogni minuto al telefono è un minuto perso. E i colleghi stanno guardando. E lui si vergogna. Di lei? Di sé stesso? Non lo sa.
+### Cosa NON sa il giocatore
+Quando chiamerà, con quale scusa, cosa dirà stavolta. Lo scoprirai in gioco.
 
 ---
 
-## PNG: SATO Michiko (Madre)
+## PNG DEL PROBLEMA: SATO Michiko (Madre)
 
 | Campo | Dettaglio |
 |-------|-----------|
@@ -73,13 +105,9 @@ Sato non può riattaccare - in Giappone non si riattacca in faccia alla propria 
 | **Aspetto** | Signora tradizionale, sempre vestita bene |
 | **Tono** | Dolce-amaro. Ogni frase ha due livelli. |
 
-**Cosa sa**: Sa che Yuki ama il suo lavoro. Non le importa. L'amore non paga le bollette.
-
 **Cosa vuole**: Che suo figlio "sistemi la sua vita". Matrimonio, lavoro stabile, nipotini.
 
-**Come si comporta**: Mai aggressiva direttamente. Usa il senso di colpa come arma. "Io voglio solo il tuo bene." "Tuo padre sarebbe così deluso." "Lo zio ha chiesto di te - gli ho detto che forse quest'anno..."
-
-**Frase tipica**: "Non ti sto dicendo cosa fare, Yuki. Sto solo dicendo quello che penserebbe chiunque."
+**Come si comporta**: Mai aggressiva direttamente. "Io voglio solo il tuo bene." "Tuo padre sarebbe così deluso." Il senso di colpa è la sua arma principale.
 
 ---
 
@@ -96,7 +124,7 @@ Sato non può riattaccare - in Giappone non si riattacca in faccia alla propria 
 
 **Come contattarlo**: Messenger, risponde in tempo reale anche di notte.
 
-**Nota culturale**: Kato è un otaku, socialmente impacciato. Non giudica, non fa domande. È l'unica persona con cui Sato può essere completamente sé stesso.
+**Limite**: Una volta per sessione senza conseguenze. Kato è l'unica persona con cui Sato può essere completamente sé stesso.
 
 ---
 
