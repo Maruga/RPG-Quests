@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GUIDA MASTER.md",
+                "file": "Investigare/pg/Sistema_di_Gioco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GUIDA MASTER"
+              "title": "Sistema_di_Gioco"
             }
           },
           {
@@ -221,12 +221,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/GUIDA MASTER.md",
+                "file": "Investigare/pg/Sistema_di_Gioco.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da GUIDA MASTER"
+              "title": "Collegamenti in uscita da Sistema_di_Gioco"
             }
           }
         ],
@@ -254,14 +254,14 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/CRONISTORIA COMPLETA.md",
-    "Investigare/GUIDA MASTER.md",
+    "Investigare/INDICE GENERALE.md",
+    "Investigare/TIMELINE_GM.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Meccanica.md",
-    "Investigare/TIMELINE_GM.md",
+    "Investigare/GUIDA MASTER.md",
+    "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/PNG Secondari.md",
     "Investigare/PNG Primari.md",
-    "Investigare/INDICE GENERALE.md",
     "Investigare/pg/Copioni_PNG.md",
     "Investigare/handout/Rapporto_Autopsia.md",
     "Investigare/handout/Rapporto Scena Crimine.md",

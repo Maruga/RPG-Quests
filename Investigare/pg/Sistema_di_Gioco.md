@@ -204,3 +204,50 @@ Scegli il giocatore che:
 
 ### Tono
 Le scene personali sono **drammatiche ma quotidiane**. Non sono melodramma. Sono la vita vera che non si ferma perché c'è un omicidio da risolvere.
+
+
+
+
+## Riassunto Regole
+
+### Generazione Attributi
+
+- 6 attributi, range **4-11**
+- Tira **3d4** per ogni attributo (se esce un 1, un solo 1 diventa 2)
+- Se totale supera 11 → vale 11 + 1 punto bonus extra
+- Distribuisci **5 punti** (+ eventuali bonus) tra gli attributi
+- Nessun attributo può superare 11 o scendere sotto 4
+
+### Stress/Benessere Iniziale
+
+- **Attributo più basso + 1d6**
+
+### Meccanica Tiri
+
+- Tira **2d6**, successo se ≤ attributo
+
+|Esito|Condizione|Conseguenza|
+|---|---|---|
+|Successo|2d6 ≤ attributo|Nessuna|
+|Successo critico|2|+1 attributo, +1 stress|
+|Fallimento|2d6 > attributo|-1 (attributo o stress, scelta)|
+|Fallimento critico|12|-2 (distribuiti a scelta)|
+
+### Recupero Stress
+
+- **Notte di sonno**: +1 stress
+- **GM** può assegnare +1 stress per momenti narrativi eccezionali (max 1/sessione)
+
+
+## Riepilogo Meccanica Crollo
+
+|Fase|Cosa succede|
+|---|---|
+|**Trigger**|Stress scende a ≤ 3|
+|**Scena crisi**|PG interpreta il crollo|
+|**Supporto**|Altri PG possono donare 1 stress ciascuno|
+|**Se resta ≤ 3**|PG fuori gioco (spettatore)|
+|**Rientro**|Al cambio scena, tira 1d6 ≤ stress attuale|
+|**Successo**|Torna in gioco col suo stress attuale|
+|**Fallimento**|Resta fuori, ritenta al prossimo cambio scena|
+
