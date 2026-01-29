@@ -29,90 +29,17 @@ Tutti hanno un **Problema personale** che interferisce con il lavoro. La vita pr
 
 ## ATTRIBUTI
 
-Ogni PG ha 6 attributi con valore da **-2 a +2**.
+Ogni PG ha 6 attributi con valore iniziale da 4 a 11.
 
-| Attributo | Cosa rappresenta |
-|-----------|------------------|
-| **Distacco** | Capacità di non farti coinvolgere emotivamente |
-| **Pazienza** | Resistere alla fretta, aspettare, sopportare |
+| Attributo    | Cosa rappresenta                                  |
+| ------------ | ------------------------------------------------- |
+| **Distacco** | Capacità di non farti coinvolgere emotivamente    |
+| **Pazienza** | Resistere alla fretta, aspettare, sopportare      |
 | **Silenzio** | Calma interiore, non reagire d'impulso, incassare |
-| **Lucidità** | Vedere chiaro, collegare i pezzi, non perderti |
-| **Ascolto** | Far parlare gli altri, cogliere il non detto |
-| **Aura** | Presenza, autorità, rispetto che ispiri |
+| **Lucidità** | Vedere chiaro, collegare i pezzi, non perderti    |
+| **Ascolto**  | Far parlare gli altri, cogliere il non detto      |
+| **Aura**     | Presenza, autorità, rispetto che ispiri           |
 
-### Scala dei valori
-
-| Valore | Significato |
-|--------|-------------|
-| +2 | Eccellente - punto di forza |
-| +1 | Buono - sopra la media |
-| 0 | Normale - nella media |
-| -1 | Debole - difficoltà |
-| -2 | Critico - punto debole grave |
-
----
-
-## STRESS
-
-Lo **Stress** è la somma algebrica di tutti gli attributi.
-
-**Formula**: Stress = Distacco + Pazienza + Silenzio + Lucidità + Ascolto + Aura
-
-| Stress totale | Stato | Effetto |
-|---------------|-------|---------|
-| +6 o più | Ottimo | Nessun malus |
-| +3 / +5 | Buono | Nessun malus |
-| +1 / +2 | Stabile | Nessun malus |
-| 0 | Limite | -1 a tutti i tiri |
-| -1 / -2 | Sotto pressione | -2 a tutti i tiri |
-| -3 o meno | Crollo | Scena drammatica obbligatoria |
-
-### Crollo
-Quando lo Stress scende a -3 o meno, il PG ha un **crollo**:
-- Deve interpretare una scena in cui perde il controllo
-- Può essere rabbia, pianto, fuga, blocco totale
-- Dopo la scena, UN attributo a scelta torna a 0
-
----
-
-## QUANDO SI TIRA
-
-### Gli indizi si danno SEMPRE
-Se i giocatori fanno le domande giuste, vanno nei posti giusti, ragionano bene → **ricevono le informazioni**. Il dado non blocca mai l'indagine.
-
-### Il tiro serve per
-Capire **come il PG gestisce** quello che trova/vive:
-- Scena emotivamente pesante
-- Pressione esterna (minacce, tempo, superiori)
-- Elaborare informazioni complesse
-- Resistere a manipolazione o intimidazione
-
-### Meccanica del tiro
-1. GM indica quale attributo è rilevante
-2. Giocatore tira **2d6 + attributo + eventuali malus da Stress**
-3. Risultato:
-
-| Risultato | Esito |
-|-----------|-------|
-| 10+ | **Successo pieno** - gestisci bene, nessun costo |
-| 7-9 | **Successo con costo** - riesci ma qualcosa ti segna |
-| 6 o meno | **Fallimento** - riesci comunque MA ti colpisce forte |
-
-### Successo con costo / Fallimento
-Non perdi l'informazione. Ma:
-- -1 a un attributo (GM o giocatore sceglie quale)
-- Oppure: condizione narrativa (flashback, ossessione, errore sociale)
-
----
-
-## MOMENTO DI CHIAREZZA
-
-Una volta per sessione, un PG può invocare il **Momento di Chiarezza**:
-- Ignora tutti i malus da Stress per **una scena**
-- Agisce come se fosse al massimo della forma
-- **Costo**: Dopo la scena, -1 a un attributo (contraccolpo)
-
----
 
 ## CONOSCENZE
 
@@ -165,28 +92,6 @@ Gli attributi cambiano durante l'avventura tramite:
 
 Non c'è esperienza tradizionale. I PG crescono o crollano in base a come affrontano il caso e la loro vita.
 
----
-
-## RIASSUNTO RAPIDO
-
-```
-TIRO = 2d6 + Attributo + Malus Stress
-
-10+ = Successo pieno
-7-9 = Successo con costo
-6-  = Fallimento (ma info arriva comunque)
-
-STRESS = Somma degli attributi
-≤ -3  = Crollo
-0     = -1 ai tiri
-≥ +1  = OK
-
-MOMENTO DI CHIAREZZA = 1/sessione, ignora malus, poi -1 attributo
-
-SCENE PERSONALI = Roleplay 5-10 min, altri votano, +1/-1 attributo
-```
-
----
 
 ## NOTE PER IL GM
 
@@ -208,7 +113,14 @@ Le scene personali sono **drammatiche ma quotidiane**. Non sono melodramma. Sono
 
 
 
-## Riassunto Regole
+
+
+
+
+
+## Meccanica Completa - Riepilogo Finale
+
+---
 
 ### Generazione Attributi
 
@@ -218,28 +130,47 @@ Le scene personali sono **drammatiche ma quotidiane**. Non sono melodramma. Sono
 - Distribuisci **5 punti** (+ eventuali bonus) tra gli attributi
 - Nessun attributo può superare 11 o scendere sotto 4
 
-### Stress/Benessere Iniziale
+---
 
-- **Attributo più basso + 1d6**
+### Attributi
+
+|Attributo|Cosa rappresenta|
+|---|---|
+|**Distacco**|Capacità di non farti coinvolgere emotivamente|
+|**Pazienza**|Resistere alla fretta, aspettare, sopportare|
+|**Silenzio**|Calma interiore, non reagire d'impulso, incassare|
+|**Lucidità**|Vedere chiaro, collegare i pezzi, non perderti|
+|**Ascolto**|Far parlare gli altri, cogliere il non detto|
+|**Aura**|Presenza, autorità, rispetto che ispiri|
+
+---
+
+### Stress/Benessere
+
+**Valore iniziale:** Attributo più basso + 1d6
+
+**Recupero:**
+
+- Notte di sonno: +1 stress (può essere assegnato a un attributo invece che a stress)
+- Successo critico: +1 stress, +1 attributo usato
+- GM può assegnare +1 stress per momenti narrativi eccezionali (max 1/sessione)
+
+---
 
 ### Meccanica Tiri
 
-- Tira **2d6**, successo se ≤ attributo
+Tira **2d6**, successo se ≤ attributo
 
 |Esito|Condizione|Conseguenza|
 |---|---|---|
 |Successo|2d6 ≤ attributo|Nessuna|
-|Successo critico|2|+1 attributo, +1 stress|
+|Successo critico|Dado puro = 2|+1 attributo, +1 stress|
 |Fallimento|2d6 > attributo|-1 (attributo o stress, scelta)|
-|Fallimento critico|12|-2 (distribuiti a scelta)|
+|Fallimento critico|Dado puro = 12|-2 (distribuiti a scelta)|
 
-### Recupero Stress
+---
 
-- **Notte di sonno**: +1 stress
-- **GM** può assegnare +1 stress per momenti narrativi eccezionali (max 1/sessione)
-
-
-## Riepilogo Meccanica Crollo
+### Crollo
 
 |Fase|Cosa succede|
 |---|---|
@@ -248,6 +179,77 @@ Le scene personali sono **drammatiche ma quotidiane**. Non sono melodramma. Sono
 |**Supporto**|Altri PG possono donare 1 stress ciascuno|
 |**Se resta ≤ 3**|PG fuori gioco (spettatore)|
 |**Rientro**|Al cambio scena, tira 1d6 ≤ stress attuale|
-|**Successo**|Torna in gioco col suo stress attuale|
-|**Fallimento**|Resta fuori, ritenta al prossimo cambio scena|
+|**Successo**|+1 stress. Se supera 3, rientra in gioco|
+|**Fallimento**|Resta al suo stress attuale, ritenta al prossimo cambio scena|
 
+---
+
+### Uscita Definitiva
+
+- **Stress = 1**: PG in stato critico, qualsiasi danno lo elimina
+- **Stress < 1**: PG compromesso, esce dal gioco definitivamente
+- Se un danno porterebbe sotto 1, stress va a 1 ma il PG è sul filo
+
+---
+
+### Relazioni PNG
+
+**Scala:**
+
+|Valore|Livello|Tipo|
+|---|---|---|
+|+5|Amore incondizionato|Profondo|
+|+4|Legame di sangue/vita|Profondo|
+|+3|Devoto|Normale|
+|+2|Leale|Normale|
+|+1|Amichevole|Normale|
+|0|Neutro|Normale|
+|-1|Diffidente|Normale|
+|-2|Ostile|Normale|
+|-3|Nemico|Normale|
+|-4|Odio profondo|Profondo|
+|-5|Vendetta/Rovina|Profondo|
+
+**Meccanica:**
+
+- Il modificatore si applica al tiro ma **non determina i critici** (solo dado puro)
+- Fallimento "salvato" dal bonus → relazione -1
+- Critico successo (dado = 2) → relazione +1
+- Critico fallimento (dado = 12) → relazione -1
+- **Relazioni profonde (±4, ±5):** Cambiano solo per eventi narrativi, non per tiri
+
+---
+
+### Combattimento
+
+**Pericolosità Attacco:**
+
+|Attacco|Costo fallimento|
+|---|---|
+|Pugno, spinta, schiaffo|-1 stress|
+|Calcio violento, colpo con oggetto|-2 stress|
+|Morso di cane, coltello|-3 stress|
+|Arma da fuoco, colpo letale|-4 stress o fuori gioco|
+
+**Bonus/Malus Situazionali:**
+
+|Situazione|Modificatore|
+|---|---|
+|Attaccante ubriaco, anziano, maldestro|+2|
+|Attaccante normale, civile arrabbiato|0|
+|Attaccante addestrato, cane aggressivo|-2|
+|Attaccante professionista, yakuza|-3|
+|Killer, sicario, animale feroce|-4|
+
+**Attributi per Azione:**
+
+|Azione|Attributo|Note|
+|---|---|---|
+|Schivare, spostarsi|Lucidità|Sempre utilizzabile|
+|Incassare, resistere|Silenzio|Solo colpi non letali|
+|Intimidire per fermare|Aura|Blocchi l'aggressore|
+|Aspettare il momento|Pazienza|Ti ripari, cerchi apertura|
+|Non farti coinvolgere|Distacco|Ti allontani, resti fuori|
+|Percepire il pericolo|Ascolto|Raro, situazioni speciali|
+
+**Regola:** Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco.
