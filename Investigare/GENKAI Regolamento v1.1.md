@@ -1,7 +1,7 @@
-# [NOME DEL GIOCO]
+# GENKAI 限界
 ## Regolamento Completo
 
----
+![[logoNero.png]]
 
 # PANORAMICA
 
@@ -9,7 +9,6 @@ Questo è un gioco di ruolo investigativo. I personaggi non sono eroi d'azione -
 
 **Principio fondamentale**: Gli indizi si danno SEMPRE. Se i giocatori fanno le domande giuste, vanno nei posti giusti, ragionano bene → ricevono le informazioni. Il dado non blocca mai l'indagine. Il dado determina *come* il personaggio gestisce quello che trova.
 
----
 
 # CREAZIONE DEL PERSONAGGIO
 
@@ -47,37 +46,39 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 
 ---
 
-## Stress/Benessere
+## Ki 気
+*Energia Vitale*
 
-Lo **Stress/Benessere** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
+Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
 
 **Valore iniziale**: Attributo più basso + 1d6
 
-> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 1d6 e ottieni 4. Il tuo Stress/Benessere iniziale è 5+4 = 9.
+> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 1d6 e ottieni 4. Il tuo Ki iniziale è 5+4 = 9.
 
-### Usi dello Stress
+### Usi del Ki
 
 - Compensare fallimenti (invece di perdere punti attributo)
-- Pagare il costo del Debito (potere speciale)
+- Pagare il costo del Gou (potere speciale)
 - Donare ad altri PG in difficoltà
 
 ### Recupero
 
-- **Notte di sonno**: +1 stress (può essere assegnato a un attributo invece che a stress)
-- **Successo critico**: +1 stress (oltre a +1 attributo)
-- **Momenti narrativi eccezionali**: +1 stress (max 1 per sessione, a discrezione del GM)
+- **Notte di sonno**: +1 Ki (può essere assegnato a un attributo invece che a Ki)
+- **Successo critico**: +1 Ki (oltre a +1 attributo)
+- **Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
 
 ---
 
-## Il Debito
+## Gou 業
+*Il Debito*
 
-Ogni PG possiede un **Debito**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere - è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
+Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere - è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
 
-**Ogni PG ha un solo Debito.**
+**Ogni PG ha un solo Gou.**
 
 ### Meccanica
 
-**Costo**: 2 stress
+**Costo**: Sacrifichi parte di te stesso (2 Ki)
 
 **Tiro**: 2d6 ≤ attributo rilevante
 
@@ -86,11 +87,11 @@ Ogni PG possiede un **Debito**: un'abilità straordinaria che lo distingue dalle
 | Successo | Funziona con dettagli precisi e completi |
 | Fallimento | Funziona con dettagli vaghi o parziali |
 
-**Importante**: Non esistono critici per il Debito. Funziona sempre - la differenza è solo nella precisione delle informazioni ottenute.
+**Importante**: Non esistono critici per il Gou. Funziona sempre - la differenza è solo nella precisione delle informazioni ottenute.
 
 ---
 
-### Lista dei Debiti
+### Lista dei Gou
 
 #### Ombra della Verità
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
@@ -220,11 +221,11 @@ Ogni PG possiede un **Debito**: un'abilità straordinaria che lo distingue dalle
 
 ---
 
-### Esempio di Debito in Azione
+### Esempio di Gou in Azione
 
 **Situazione**: Un testimone racconta il suo alibi.
 
-**Giocatore**: "Voglio usare Ombra della Verità. Spendo 2 stress."
+**Giocatore**: "Voglio usare Ombra della Verità. Sacrifico parte di me stesso."
 
 **GM**: "Tira Ascolto."
 
@@ -238,27 +239,29 @@ Ogni PG possiede un **Debito**: un'abilità straordinaria che lo distingue dalle
 
 ---
 
-## Conoscenze
+## Enja 縁者
+*Conoscenze*
 
-Ogni PG ha una **Conoscenza**: un contatto esterno che può aiutare nell'indagine.
+Ogni PG ha un **Enja**: un contatto esterno che può aiutare nell'indagine.
 
-### Usare una Conoscenza
+### Usare un Enja
 
 1. Il giocatore descrive come contatta la persona
 2. Il GM interpreta brevemente il contatto
 3. L'aiuto arriva, ma può avere un costo sociale (favore da restituire, imbarazzo, debito)
 
-**Limite**: Ogni Conoscenza può essere usata **una volta per sessione** senza conseguenze. La seconda volta nella stessa sessione → il contatto chiede qualcosa in cambio.
+**Limite**: Ogni Enja può essere usato **una volta per sessione** senza conseguenze. La seconda volta nella stessa sessione → il contatto chiede qualcosa in cambio.
 
 ---
 
-## Il Problema Personale
+## Kage 影
+*L'Ombra*
 
-Ogni PG ha un **Problema**: qualcosa nella sua vita privata che interferisce con il lavoro. La vita personale bussa alla porta nei momenti peggiori.
+Ogni PG ha un **Kage**: qualcosa nella sua vita privata che interferisce con il lavoro. La vita personale bussa alla porta nei momenti peggiori.
 
-Il Problema viene definito in creazione e attivato dal GM durante le sessioni tramite le Scene Personali.
+Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramite le Scene Personali.
 
-**Nota importante**: Il giocatore conosce la natura del suo Problema e chi è coinvolto, ma NON sa quando verrà attivato o quale sarà l'evento scatenante specifico. Lo scopre in gioco.
+**Nota importante**: Il giocatore conosce la natura del suo Kage e chi è coinvolto, ma NON sa quando verrà attivato o quale sarà l'evento scatenante specifico. Lo scopre in gioco.
 
 ---
 
@@ -295,8 +298,8 @@ Il Problema viene definito in creazione e attivato dal GM durante le sessioni tr
 | Esito | Condizione | Conseguenza |
 |-------|------------|-------------|
 | **Successo** | 2d6 ≤ attributo | Nessuna conseguenza negativa |
-| **Successo Critico** | Dado puro = 2 | +1 all'attributo usato, +1 stress |
-| **Fallimento** | 2d6 > attributo | -1 (attributo o stress, scelta del giocatore) |
+| **Successo Critico** | Dado puro = 2 | +1 all'attributo usato, +1 Ki |
+| **Fallimento** | 2d6 > attributo | -1 (attributo o Ki, scelta del giocatore) |
 | **Fallimento Critico** | Dado puro = 12 | -2 (distribuiti a scelta del giocatore) |
 
 > **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque, ma il personaggio ne paga un costo emotivo o fisico.
@@ -314,13 +317,14 @@ Il Problema viene definito in creazione e attivato dal GM durante le sessioni tr
 | 10 | 91.7% |
 | 11 | 97.2% |
 
-> **Esempio**: Entri sulla scena del crimine. È brutale. Il GM chiede un tiro su Distacco (hai 7). Tiri 2d6: esce 8. Fallimento. Ottieni tutte le informazioni sulla scena, ma ti segna: perdi 1 punto (scegli se da Distacco o da Stress).
+> **Esempio**: Entri sulla scena del crimine. È brutale. Il GM chiede un tiro su Distacco (hai 7). Tiri 2d6: esce 8. Fallimento. Ottieni tutte le informazioni sulla scena, ma ti segna: perdi 1 punto (scegli se da Distacco o da Ki).
 
 ---
 
-## Relazioni con i PNG
+## En 縁
+*Relazioni*
 
-I PNG non hanno schede. Hanno solo un **valore di relazione** con ogni PG, che va da -5 a +5.
+I PNG non hanno schede. Hanno solo un **valore di En** con ogni PG, che va da -5 a +5.
 
 ### Scala delle Relazioni
 
@@ -343,50 +347,52 @@ I PNG non hanno schede. Hanno solo un **valore di relazione** con ogni PG, che v
 Quando interagisci con un PNG:
 
 1. Tiri 2d6 (questo è il **dado puro**)
-2. Applichi il modificatore della relazione al risultato
+2. Applichi il modificatore dell'En al risultato
 3. Confronti con il tuo attributo
 
 **Regole importanti**:
 - Il modificatore **non influenza i critici**: solo il dado puro (2 o 12) determina i critici
-- Se il dado puro indica fallimento, ma con il bonus della relazione hai successo → la relazione cala di 1 (il PNG ti ha aiutato, ma inizia a porsi domande)
-- **Critico successo (dado = 2)**: relazione +1
-- **Critico fallimento (dado = 12)**: relazione -1
+- Se il dado puro indica fallimento, ma con il bonus dell'En hai successo → l'En cala di 1 (il PNG ti ha aiutato, ma inizia a porsi domande)
+- **Critico successo (dado = 2)**: En +1
+- **Critico fallimento (dado = 12)**: En -1
 
 ### Relazioni Profonde
 
 Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. Cambiano solo per eventi narrativi significativi (tradimento grave, salvare la vita, scoperta shock). Il GM decide.
 
-> **Esempio**: Interroghi un testimone diffidente (relazione -2 con te). Hai Aura 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento. Perdi 1 punto. Se il dado puro fosse stato 5, con malus sarebbe 7, successo - ma dato che il dado puro (5) era già successo, non c'è calo di relazione.
+> **Esempio**: Interroghi un testimone diffidente (En -2 con te). Hai Aura 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento. Perdi 1 punto. Se il dado puro fosse stato 5, con malus sarebbe 7, successo - ma dato che il dado puro (5) era già successo, non c'è calo di En.
 
 ---
 
-## Momento di Chiarezza
+## Satori 悟り
+*Momento di Chiarezza*
 
-**Una volta per sessione**, il PG può invocare il Momento di Chiarezza:
+**Una volta per sessione**, il PG può invocare il Satori:
 
 - Dichiari **prima** di tirare
 - Il tiro è **successo automatico**
-- Ignora qualsiasi malus da relazione PNG o situazione
+- Ignora qualsiasi malus da En o situazione
 - Nessun costo
 - Non può essere successo critico (niente bonus)
 - Non si accumula tra sessioni - se non usato, perso
 
-> **Esempio**: Devi convincere il capo della yakuza a lasciarti andare. Relazione -4, situazione disperata. Invochi il Momento di Chiarezza: riesci. Come, lo descrivi tu - ma funziona.
+> **Esempio**: Devi convincere il capo della yakuza a lasciarti andare. En -4, situazione disperata. Invochi il Satori: riesci. Come, lo descrivi tu - ma funziona.
 
 ---
 
-## Crollo
+## Genkai 限界
+*Il Crollo*
 
-Quando lo Stress/Benessere scende a **3 o meno**, il PG entra in crisi.
+Quando il Ki scende a **3 o meno**, il PG raggiunge il suo limite. Entra in crisi.
 
-### Procedura del Crollo
+### Procedura del Genkai
 
 | Fase | Cosa succede |
 |------|--------------|
-| **1. Trigger** | Stress scende a ≤ 3 |
+| **1. Trigger** | Ki scende a ≤ 3 |
 | **2. Scena crisi** | Il giocatore interpreta il crollo del suo PG (frustrazione, panico, blocco, fuga) |
-| **3. Supporto** | Gli altri PG possono donare 1 stress ciascuno al compagno |
-| **4. Verifica** | Se lo stress torna sopra 3, il PG rientra in gioco |
+| **3. Supporto** | Gli altri PG possono sacrificare 1 Ki ciascuno per il compagno |
+| **4. Verifica** | Se il Ki torna sopra 3, il PG rientra in gioco |
 | **5. Fuori gioco** | Se resta a ≤ 3, il PG è temporaneamente fuori (il giocatore diventa spettatore) |
 
 ### Rientro in Gioco
@@ -394,20 +400,20 @@ Quando lo Stress/Benessere scende a **3 o meno**, il PG entra in crisi.
 Al cambio di ogni scena, il giocatore può tentare il rientro:
 
 1. Tira **1d6**
-2. Se il risultato è **≤ stress attuale** → +1 stress
-3. Se lo stress supera 3 → rientra in gioco
-4. Se fallisce → resta al suo stress attuale, ritenta al prossimo cambio scena
+2. Se il risultato è **≤ Ki attuale** → +1 Ki
+3. Se il Ki supera 3 → rientra in gioco
+4. Se fallisce → resta al suo Ki attuale, ritenta al prossimo cambio scena
 
-> **Esempio**: Sei crollato con stress 2. Cambio scena: tiri 1d6, devi fare ≤2 (33.3%). Fai 1: successo! Stress sale a 3. Ma 3 non è >3, resti fuori. Prossimo cambio scena: tiri, devi fare ≤3 (50%). Fai 2: successo! Stress sale a 4. Rientri in gioco.
+> **Esempio**: Hai raggiunto il Genkai con Ki 2. Cambio scena: tiri 1d6, devi fare ≤2 (33.3%). Fai 1: successo! Ki sale a 3. Ma 3 non è >3, resti fuori. Prossimo cambio scena: tiri, devi fare ≤3 (50%). Fai 2: successo! Ki sale a 4. Rientri in gioco.
 
 ---
 
 ## Uscita Definitiva
 
-- **Stress = 1**: Il PG è in stato critico. Qualsiasi danno ulteriore lo elimina dal gioco.
-- **Stress < 1**: Il PG è compromesso. Esce dal gioco definitivamente.
+- **Ki = 1**: Il PG è in stato critico. Qualsiasi danno ulteriore lo elimina dal gioco.
+- **Ki < 1**: Il PG è compromesso. Esce dal gioco definitivamente.
 
-Se un danno porterebbe lo stress sotto 1, lo stress va a 1 ma il PG è sul filo del rasoio.
+Se un danno porterebbe il Ki sotto 1, il Ki va a 1 ma il PG è sul filo del rasoio.
 
 ---
 
@@ -421,8 +427,8 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 2. Il GM assegna bonus/malus in base alla situazione
 3. Il PG tira 2d6 ≤ attributo (modificato)
 4. **Successo**: eviti/gestisci senza conseguenze
-5. **Fallimento**: perdi stress in base alla pericolosità dell'attacco
-6. **Critico successo (2)**: +1 attributo, +1 stress
+5. **Fallimento**: perdi Ki in base alla pericolosità dell'attacco
+6. **Critico successo (2)**: +1 attributo, +1 Ki
 7. **Critico fallimento (12)**: -2 invece di danno normale
 
 ---
@@ -431,10 +437,10 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 
 | Attacco | Costo fallimento |
 |---------|------------------|
-| Pugno, spinta, schiaffo | -1 stress |
-| Calcio violento, colpo con oggetto | -2 stress |
-| Morso di cane, coltello | -3 stress |
-| Arma da fuoco, colpo letale | -4 stress o fuori gioco |
+| Pugno, spinta, schiaffo | -1 Ki |
+| Calcio violento, colpo con oggetto | -2 Ki |
+| Morso di cane, coltello | -3 Ki |
+| Arma da fuoco, colpo letale | -4 Ki o fuori gioco |
 
 ---
 
@@ -463,19 +469,19 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 
 **Regola importante**: Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco. Solo Lucidità (schivi), Pazienza (ti ripari), o fuggi.
 
-> **Esempio**: Un teppista ti tira un pugno (situazione normale, 0 modificatore). Scegli di schivare con Lucidità (hai 8). Tiri 2d6: 7. Successo, ti sposti e il pugno non ti prende. Se avessi tirato 9, avresti preso il pugno e perso 1 stress.
+> **Esempio**: Un teppista ti tira un pugno (situazione normale, 0 modificatore). Scegli di schivare con Lucidità (hai 8). Tiri 2d6: 7. Successo, ti sposti e il pugno non ti prende. Se avessi tirato 9, avresti preso il pugno e perso 1 Ki.
 
 ---
 
 # SCENE PERSONALI
 
-Durante l'avventura, il GM attiva i **Problemi personali** dei PG. La vita privata irrompe nel caso.
+Durante l'avventura, il GM attiva i **Kage** dei PG. La vita privata irrompe nel caso.
 
 ## Procedura
 
-1. **Il GM attiva** il Problema di un PG
+1. **Il GM attiva** il Kage di un PG
 2. **Giocatore A** interpreta il suo PG
-3. **Giocatore B** (scelto dal GM) interpreta il PNG legato al Problema
+3. **Giocatore B** (scelto dal GM) interpreta il PNG legato al Kage
 4. Entrambi ricevono un **Copione** con informazioni sulla situazione
 5. Roleplay libero, **5-10 minuti massimo**
 6. **Gli altri giocatori votano** l'interpretazione
@@ -500,9 +506,9 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 
 Gli attributi cambiano durante l'avventura tramite:
 - Successi critici (+1 attributo)
-- Fallimenti (-1 attributo o stress)
+- Fallimenti (-1 attributo o Ki)
 - Scene personali (+1/-1 in base al voto)
-- Riposo (il +1 stress può essere dato a un attributo)
+- Riposo (il +1 Ki può essere dato a un attributo)
 
 **Non c'è esperienza tradizionale.** I PG crescono o crollano in base a come affrontano il caso e la loro vita.
 
@@ -512,7 +518,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 1: Interrogatorio
 
-**Situazione**: Il detective Tanaka interroga la signora Yamamoto, testimone di un omicidio. Lei è nervosa ma non ostile (relazione 0).
+**Situazione**: Il detective Tanaka interroga la signora Yamamoto, testimone di un omicidio. Lei è nervosa ma non ostile (En 0).
 
 **GM**: "La signora Yamamoto ti racconta che quella sera era a casa. Ha sentito un rumore verso le 22, ma non ha visto nulla. Sembra agitata."
 
@@ -524,13 +530,13 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **GM**: "Successo. Noti che quando parla delle 22 evita il tuo sguardo e si tocca il collo. C'è qualcosa che non ti dice su quel momento specifico."
 
-**Giocatore**: "Voglio usare il mio Debito: Ombra della Verità. Spendo 2 stress."
+**Giocatore**: "Voglio usare il mio Gou: Ombra della Verità. Sacrifico parte di me stesso."
 
 **GM**: "Tira Ascolto."
 
 **Giocatore**: (tira 2d6) "Ho fatto 9. Fallimento."
 
-**GM**: "Il Debito funziona comunque. Sai con certezza che sta mentendo - ma non riesci a capire su cosa esattamente. Forse sull'orario, forse su cosa ha sentito, forse su dove si trovava davvero."
+**GM**: "Il Gou funziona comunque. Sai con certezza che sta mentendo - ma non riesci a capire su cosa esattamente. Forse sull'orario, forse su cosa ha sentito, forse su dove si trovava davvero."
 
 ---
 
@@ -542,13 +548,13 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore 1** (Distacco 6): "Tiro... 8. Fallimento."
 
-**GM**: "Trovi tutti gli indizi - il coltello da cucina usato come arma, le tracce di colluttazione, il portafoglio ancora in tasca quindi non è rapina. Ma ti segna: perdi 1. Attributo o stress?"
+**GM**: "Trovi tutti gli indizi - il coltello da cucina usato come arma, le tracce di colluttazione, il portafoglio ancora in tasca quindi non è rapina. Ma ti segna: perdi 1. Attributo o Ki?"
 
-**Giocatore 1**: "Stress. Scendo a 7."
+**Giocatore 1**: "Ki. Scendo a 7."
 
 **Giocatore 2** (Distacco 9): "Io tiro... 2! Critico!"
 
-**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. +1 Distacco e +1 Stress."
+**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. +1 Distacco e +1 Ki."
 
 ---
 
@@ -564,7 +570,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore** (Lucidità 7): "Ho fatto 10. Fallimento."
 
-**GM**: "Il pugno ti prende in pieno. -1 stress. Sei a quanto?"
+**GM**: "Il pugno ti prende in pieno. -1 Ki. Sei a quanto?"
 
 **Giocatore**: "Ero a 6, ora sono a 5."
 
@@ -580,19 +586,19 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ---
 
-## Esempio 4: Crollo
+## Esempio 4: Genkai
 
-**Situazione**: Il detective Kimura ha avuto una sessione difficile. È sceso a stress 3.
+**Situazione**: Il detective Kimura ha avuto una sessione difficile. È sceso a Ki 3.
 
-**GM**: "Dopo l'ennesimo fallimento nell'interrogatorio, qualcosa si spezza. Sei a stress 3. Crollo."
+**GM**: "Dopo l'ennesimo fallimento nell'interrogatorio, qualcosa si spezza. Sei a Ki 3. Genkai."
 
 **Giocatore**: "Ok. Kimura si alza bruscamente, rovescia la sedia. Esce dalla stanza senza dire nulla. Va in bagno, si chiude dentro, e resta lì con le mani sul lavandino a fissare il suo riflesso."
 
 **GM**: "Gli altri, volete intervenire?"
 
-**Giocatore 2**: "Tanaka bussa alla porta. 'Kimura. Siamo una squadra. Apri.' Gli dono 1 stress."
+**Giocatore 2**: "Tanaka bussa alla porta. 'Kimura. Siamo una squadra. Apri.' Sacrifico 1 Ki per lui."
 
-**Giocatore 3**: "Anche Sato si avvicina. 'Abbiamo tutti giorni di merda. Vieni, ti offro un caffè.' Dono 1 stress anch'io."
+**Giocatore 3**: "Anche Sato si avvicina. 'Abbiamo tutti giorni di merda. Vieni, ti offro un caffè.' Sacrifico 1 Ki anch'io."
 
 **GM**: "Kimura, eri a 3, ora sei a 5. Sopra la soglia. Rientri in gioco. Come esci dal bagno?"
 
@@ -602,7 +608,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 5: Relazione con PNG
 
-**Situazione**: Il detective Tanaka ha già avuto un diverbio con l'ispettore Goto (relazione -2). Ora deve chiedergli un favore.
+**Situazione**: Il detective Tanaka ha già avuto un diverbio con l'ispettore Goto (En -2). Ora deve chiedergli un favore.
 
 **Giocatore**: "Vado da Goto e gli chiedo accesso ai file riservati."
 
@@ -610,15 +616,15 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore** (Aura 7): "Tiro... dado puro 5. Con il malus fa 7. Esattamente uguale al mio attributo."
 
-**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi la relazione non cala. Goto sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
+**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Goto sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
 
 ---
 
-## Esempio 6: Il Debito in Azione
+## Esempio 6: Il Gou in Azione
 
-**Situazione**: Il detective Sato ha il Debito "Teatro delle Ombre". È sulla scena di un incidente stradale sospetto.
+**Situazione**: Il detective Sato ha il Gou "Teatro delle Ombre". È sulla scena di un incidente stradale sospetto.
 
-**Giocatore**: "Voglio usare Teatro delle Ombre per visualizzare l'incidente. Spendo 2 stress, scendo a 4."
+**Giocatore**: "Voglio usare Teatro delle Ombre per visualizzare l'incidente. Sacrifico parte di me stesso, scendo a Ki 4."
 
 **GM**: "Tira Lucidità."
 
@@ -642,7 +648,7 @@ Non chiedere un tiro quando:
 - Il personaggio ha tutto il tempo per agire
 - Il fallimento bloccherebbe la storia senza alternative
 
-## Quando Attivare i Problemi Personali
+## Quando Attivare i Kage
 
 - Durante momenti di tensione investigativa (aumenta la pressione)
 - Quando un PG è già in difficoltà (lo metti alla prova)
@@ -656,19 +662,19 @@ Scegli il giocatore che:
 - È bravo a improvvisare
 - Ha il PG meno coinvolto in quel momento
 
-## Gestire le Relazioni PNG
+## Gestire le Relazioni (En)
 
-- Ogni PNG importante dovrebbe avere relazioni diverse con i vari PG
+- Ogni PNG importante dovrebbe avere En diversi con i vari PG
 - Usa questo per creare dinamiche: "Forse è meglio che parli tu con lei, a me non può vedere"
 - Le relazioni profonde (±4, ±5) sono rare e significative - usale con parsimonia
 
 ## Tono
 
-Le scene personali e i crolli sono **drammatici ma quotidiani**. Non sono melodramma. Sono la vita vera che non si ferma perché c'è un omicidio da risolvere.
+Le scene personali e i Genkai sono **drammatici ma quotidiani**. Non sono melodramma. Sono la vita vera che non si ferma perché c'è un omicidio da risolvere.
 
-## Gestire il Debito
+## Gestire il Gou
 
-Il Debito non è magia. È un talento straordinario, un'intuizione quasi soprannaturale, ma sempre spiegabile. Non far sembrare i PG supereroi - sono persone con un dono raro che costa caro usare.
+Il Gou non è magia. È un talento straordinario, un'intuizione quasi soprannaturale, ma sempre spiegabile. Non far sembrare i PG supereroi - sono persone con un dono raro che costa caro usare.
 
 ---
 
@@ -678,40 +684,40 @@ Il Debito non è magia. È un talento straordinario, un'intuizione quasi soprann
 TIRO = 2d6 ≤ Attributo
 
 Successo: nessun costo
-Critico (dado = 2): +1 attributo, +1 stress
-Fallimento: -1 (attributo o stress)
+Critico (dado = 2): +1 attributo, +1 Ki
+Fallimento: -1 (attributo o Ki)
 Critico fallimento (dado = 12): -2 a scelta
 
-STRESS
-≤ 3 = Crollo (fuori gioco temporaneo)
+KI (気)
+≤ 3 = Genkai (fuori gioco temporaneo)
 = 1 = Critico (qualsiasi danno ti elimina)
 < 1 = Fuori gioco definitivo
 
 RECUPERO
-Sonno: +1 stress (o +1 attributo)
-Critico successo: +1 stress, +1 attributo
+Sonno: +1 Ki (o +1 attributo)
+Critico successo: +1 Ki, +1 attributo
 
-MOMENTO DI CHIAREZZA
+SATORI (悟り)
 1/sessione, successo automatico, non si accumula
 
-DEBITO
-Costo: 2 stress
+GOU (業)
+Costo: sacrifichi parte di te stesso
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi
 Niente critici
 
-RELAZIONI PNG
+EN (縁) - RELAZIONI
 Scala: -5 a +5
 Modificatore al tiro (non ai critici)
 Profonde (±4, ±5): cambiano solo narrativamente
 
 COMBATTIMENTO
-Pugno: -1 stress
-Colpo oggetto: -2 stress
-Coltello: -3 stress
-Arma da fuoco: -4 stress o fuori gioco
+Pugno: -1 Ki
+Colpo oggetto: -2 Ki
+Coltello: -3 Ki
+Arma da fuoco: -4 Ki o fuori gioco
 ```
 
 ---
 
-*[NOME DEL GIOCO] - Regolamento v1.1*
+*GENKAI 限界 - Regolamento v1.0*

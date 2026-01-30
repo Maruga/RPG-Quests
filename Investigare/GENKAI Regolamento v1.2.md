@@ -28,7 +28,7 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 
 ### Procedura di Generazione
 
-1. Per ogni attributo, tira **3d4**
+1. Per ogni attributo, tira **2d4**
 2. Se esce almeno un 1, **un solo 1 diventa 2**
 3. Se il totale supera 11, il valore è 11 e ottieni **1 punto bonus extra**
 4. Dopo i 6 tiri, distribuisci **5 punti** (+ eventuali bonus) tra gli attributi

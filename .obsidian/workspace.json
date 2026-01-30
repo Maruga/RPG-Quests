@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento.md",
+                "file": "Investigare/GENKAI Regolamento v1.2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento"
+              "title": "GENKAI Regolamento v1.2"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento.md",
+                "file": "Investigare/GENKAI Regolamento v1.2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da GENKAI_Regolamento"
+              "title": "Collegamenti in uscita da GENKAI Regolamento v1.2"
             }
           }
         ],
@@ -226,14 +226,18 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/GUIDA MASTER.md",
+    "Investigare/GENKAI Regolamento v1.1.md",
+    "Investigare/GENKAI Regolamento v1.2.md",
+    "Investigare/GENKAI_Regolamento 1.md",
     "Investigare/Regolamento_v1.1.md",
-    "Investigare/GENKAI_Regolamento.md",
+    "Investigare/Immagini/logoNero.png",
+    "Investigare/Immagini/logo.png",
+    "Investigare/CRONISTORIA COMPLETA.md",
+    "Investigare/PG Riassunto.md",
+    "Investigare/GUIDA MASTER.md",
     "Investigare/README.md",
     "Investigare/INDICE GENERALE.md",
     "Investigare/TIMELINE_GM.md",
-    "Investigare/Immagini/logoNero.png",
-    "Investigare/Immagini/logo.png",
     "Investigare/Immagini",
     "Investigare/Regolamento.md",
     "Investigare/pg/Scheda_PG_Compilabile.md",
@@ -249,12 +253,8 @@
     "Investigare/pg/PG_02_Honda_Ryota 1.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji 1.md",
     "Investigare/pg/Sistema_di_Gioco.md",
-    "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/PNG Secondari.md",
     "Investigare/PNG Primari.md",
-    "Investigare/PG Riassunto.md",
-    "Investigare/handout/Rapporto Scena Crimine.md",
-    "Investigare/handout/Registri_Pronto_Soccorso.md",
     "Investigare/handout",
     "Investigare/luoghi",
     "Investigare/png",
