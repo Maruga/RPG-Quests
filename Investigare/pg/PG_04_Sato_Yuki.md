@@ -18,12 +18,12 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 5 | Si fa coinvolgere troppo |
+| **Distacco** | 5 | Ti fai coinvolgere troppo |
 | **Pazienza** | 8 | Metodico nel lavoro |
-| **Silenzio** | 5 | Tende a parlare troppo quando nervoso |
+| **Silenzio** | 5 | Tendi a parlare troppo quando sei nervoso |
 | **Lucidità** | 10 | Eccellente - mente analitica |
 | **Ascolto** | 8 | Attento ai dettagli |
-| **Aura** | 7 | Normale - ancora giovane |
+| **Aura** | 7 | Normale - sei ancora giovane |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -64,35 +64,29 @@ Scegli **uno** dei seguenti Debiti:
 
 ---
 
-## BACKGROUND
+## CHI SEI
 
-Sato è il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. È quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta.
+Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta.
 
-Il problema è sua madre.
+Il problema è tua madre.
 
-**Sato Michiko** non ha mai accettato che suo figlio facesse il poliziotto. "Uno spreco," dice. "Con la tua laurea potevi lavorare in un'azienda vera. Guadagnare bene. Trovare una brava ragazza."
+**Sato Michiko** non ha mai accettato che tu facessi il poliziotto. "Uno spreco," dice. "Con la tua laurea potevi lavorare in un'azienda vera. Guadagnare bene. Trovare una brava ragazza."
 
-Suo zio **Tanaka Jiro** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. La madre non smette di ripetere che "lo zio ti aspetta".
+Tuo zio **Tanaka Jiro** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. Tua madre non smette di ripetere che "lo zio ti aspetta".
 
 ---
 
-## IL PROBLEMA
+## IL TUO PROBLEMA
 
 ### La Madre
 
-Sato Michiko chiama. Spesso. A volte in centrale. "È urgente," dice alla segretaria. Non è mai urgente.
+Tua madre chiama. Spesso. A volte in centrale. "È urgente," dice alla segretaria. Non è mai urgente.
 
-Vuole sapere se ha ripensato al lavoro dello zio. Vuole sapere quando si sposa. Vuole sapere perché "spreca la sua vita" a fare il poliziotto.
+Vuole sapere se hai ripensato al lavoro dello zio. Vuole sapere quando ti sposi. Vuole sapere perché "sprechi la tua vita" a fare il poliziotto.
 
 Non urla mai. Non minaccia. Usa il senso di colpa come un'arma di precisione.
 
-### Cosa sa il giocatore
-- La madre non approva le sue scelte
-- Ogni telefonata è una battaglia
-- Non può riattaccare in faccia a sua madre - non in Giappone
-
-### Cosa NON sa il giocatore
-Quando chiamerà, con quale scusa, cosa dirà stavolta. Lo scoprirai in gioco.
+Sai che non approva le tue scelte. Sai che ogni telefonata è una battaglia. E sai che non puoi riattaccare in faccia a tua madre - non in Giappone.
 
 ---
 
@@ -105,7 +99,7 @@ Quando chiamerà, con quale scusa, cosa dirà stavolta. Lo scoprirai in gioco.
 | **Aspetto** | Signora tradizionale, sempre vestita bene |
 | **Tono** | Dolce-amaro. Ogni frase ha due livelli. |
 
-**Cosa vuole**: Che suo figlio "sistemi la sua vita". Matrimonio, lavoro stabile, nipotini.
+**Cosa vuole**: Che tu "sistemi la tua vita". Matrimonio, lavoro stabile, nipotini.
 
 **Come si comporta**: Mai aggressiva direttamente. "Io voglio solo il tuo bene." "Tuo padre sarebbe così deluso." Il senso di colpa è la sua arma principale.
 
@@ -118,26 +112,26 @@ Quando chiamerà, con quale scusa, cosa dirà stavolta. Lo scoprirai in gioco.
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Amico d'infanzia, ora lavora in un'azienda tech |
-| **Relazione** | Migliori amici dalle elementari, ancora si vedono per giocare ai videogiochi |
+| **Relazione** | Migliori amici dalle elementari, vi vedete ancora per giocare ai videogiochi |
 | **Cosa può fare** | Recupero dati, analisi file, hacking leggero (niente di troppo illegale) |
 | **Cosa vuole in cambio** | Storie dal lavoro, cene, compagnia |
 
 **Come contattarlo**: Messenger, risponde in tempo reale anche di notte.
 
-**Limite**: Una volta per sessione senza conseguenze. Kato è l'unica persona con cui Sato può essere completamente sé stesso.
+**Limite**: Una volta per sessione senza conseguenze. Kato è l'unica persona con cui puoi essere completamente te stesso.
 
 ---
 
-## NOTE DI INTERPRETAZIONE
+## COME TI COMPORTI
 
 ### In pubblico (Tatemae)
-Sato è il giovane promettente. Entusiasta, competente, sempre pronto ad aiutare. Vuole fare bella figura, vuole dimostrare di meritare il suo posto.
+Sei il giovane promettente. Entusiasta, competente, sempre pronto ad aiutare. Vuoi fare bella figura, vuoi dimostrare di meritare il tuo posto.
 
 ### In privato (Honne)
-È esausto dal peso delle aspettative. Della madre, del lavoro, di sé stesso. A volte si chiede se non avrebbe fatto meglio ad ascoltarla.
+Sei esausto dal peso delle aspettative. Di tua madre, del lavoro, di te stesso. A volte ti chiedi se non avresti fatto meglio ad ascoltarla.
 
 ### Frase tipica
 "Datemi ancora un'ora, ho quasi finito l'analisi."
 
-### Quando è sotto pressione
-Parla troppo. Riempie i silenzi. Si giustifica anche quando non deve. Cerca approvazione.
+### Quando sei sotto pressione
+Parli troppo. Riempi i silenzi. Ti giustifichi anche quando non devi. Cerchi approvazione.

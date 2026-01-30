@@ -20,8 +20,8 @@
 |-----------|-------------|------|
 | **Distacco** | 8 | Anni di esperienza |
 | **Pazienza** | 7 | Normale |
-| **Silenzio** | 8 | Sa incassare |
-| **Lucidità** | 10 | Punto di forza - vede i collegamenti |
+| **Silenzio** | 8 | Sai incassare |
+| **Lucidità** | 10 | Punto di forza - vedi i collegamenti |
 | **Ascolto** | 7 | Normale |
 | **Aura** | 8 | Rispettato dai colleghi |
 
@@ -64,33 +64,27 @@ Scegli **uno** dei seguenti Debiti:
 
 ---
 
-## BACKGROUND
+## CHI SEI
 
-Yamamoto è un veterano rispettato. Ha risolto casi importanti, ha costruito una reputazione solida. Ma la vita privata è un disastro.
+Sei un veterano rispettato. Hai risolto casi importanti, hai costruito una reputazione solida. Ma la tua vita privata è un disastro.
 
-Sei mesi fa sua moglie Yuko lo ha lasciato. "Non ci sei mai," ha detto. Aveva ragione. Ora vive in un piccolo appartamento a Fushimi, con le scatole ancora da disfare.
+Sei mesi fa tua moglie Yuko ti ha lasciato. "Non ci sei mai," ha detto. Aveva ragione. Ora vivi in un piccolo appartamento a Fushimi, con le scatole ancora da disfare.
 
-Suo figlio **Takeshi (8 anni)** vive con la madre, ma Yamamoto ha l'affidamento condiviso. Il martedì e il giovedì Takeshi è con lui. O dovrebbe esserlo.
+Tuo figlio **Takeshi (8 anni)** vive con la madre, ma hai l'affidamento condiviso. Il martedì e il giovedì Takeshi è con te. O dovrebbe esserlo.
 
 Il problema: il lavoro viene sempre prima. Le promesse non mantenute. Le cene saltate. E la famiglia non ha smesso di notarlo.
 
 ---
 
-## IL PROBLEMA
+## IL TUO PROBLEMA
 
 ### La Famiglia
 
-Sua sorella **Yamamoto Noriko** è stata il suo supporto durante il divorzio. Ha coperto le sue assenze, ha badato a Takeshi quando lui non poteva. Ma la pazienza di Noriko ha un limite.
+Tua sorella **Yamamoto Noriko** è stata il tuo supporto durante il divorzio. Ha coperto le tue assenze, ha badato a Takeshi quando tu non potevi. Ma la pazienza di Noriko ha un limite.
 
-L'ultima volta che le ha chiesto aiuto, glielo ha detto chiaramente: "Non sono la tua baby-sitter di riserva. Devi scegliere cosa conta davvero."
+L'ultima volta che le hai chiesto aiuto, te lo ha detto chiaramente: "Non sono la tua baby-sitter di riserva. Devi scegliere cosa conta davvero."
 
-### Cosa sa il giocatore
-- Noriko è stanca di coprire i suoi errori
-- Il rapporto con Takeshi è fragile
-- Ogni richiesta d'aiuto pesa sulla relazione con la sorella
-
-### Cosa NON sa il giocatore
-Cosa succederà quando il GM attiverà il Problema. Potrebbe essere una chiamata dalla scuola, una richiesta di Takeshi, un confronto con Noriko. Lo scoprirai in gioco.
+Sai che Noriko è stanca di coprire i tuoi errori. Sai che il rapporto con Takeshi è fragile. E sai che ogni richiesta d'aiuto pesa sulla relazione con tua sorella.
 
 ---
 
@@ -100,10 +94,10 @@ Cosa succederà quando il GM attiverà il Problema. Potrebbe essere una chiamata
 |-------|-----------|
 | **Età** | 38 anni |
 | **Lavoro** | Insegnante di ikebana |
-| **Relazione** | Sorella minore, una volta erano molto uniti |
-| **Stato attuale** | Frustrata, delusa dal fratello |
+| **Relazione** | Sorella minore, una volta eravate molto uniti |
+| **Stato attuale** | Frustrata, delusa da te |
 
-**Cosa vuole**: Che Kenji ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern.
+**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern.
 
 **Come si comporta**: Non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.
 
@@ -116,7 +110,7 @@ Cosa succederà quando il GM attiverà il Problema. Potrebbe essere una chiamata
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Vecchio compagno di università, ora giornalista al Kyoto Shimbun |
-| **Relazione** | Amici dai tempi del dormitorio, si vedono per bere ogni tanto |
+| **Relazione** | Amici dai tempi del dormitorio, vi vedete per bere ogni tanto |
 | **Cosa può fare** | Accesso agli archivi del giornale, voci di corridoio, contatti nel mondo della stampa |
 | **Cosa vuole in cambio** | Ogni tanto una soffiata, niente di compromettente |
 
@@ -126,16 +120,16 @@ Cosa succederà quando il GM attiverà il Problema. Potrebbe essere una chiamata
 
 ---
 
-## NOTE DI INTERPRETAZIONE
+## COME TI COMPORTI
 
 ### In pubblico (Tatemae)
-Yamamoto è il capo. Calmo, competente, rispettato. Non mostra mai debolezza davanti alla squadra. Le decisioni sono sue e se le assume.
+Sei il capo. Calmo, competente, rispettato. Non mostri mai debolezza davanti alla squadra. Le decisioni sono tue e te le assumi.
 
 ### In privato (Honne)
-È esausto. Si sente in colpa per Takeshi. A volte si chiede se ne vale la pena. Ma non lo ammetterà mai.
+Sei esausto. Ti senti in colpa per Takeshi. A volte ti chiedi se ne vale la pena. Ma non lo ammetterai mai.
 
 ### Frase tipica
 "Abbiamo un lavoro da fare. Concentriamoci su quello."
 
-### Quando è sotto pressione
-Si chiude. Parla meno. Diventa più brusco. Non delega - fa tutto lui perché "è più veloce."
+### Quando sei sotto pressione
+Ti chiudi. Parli meno. Diventi più brusco. Non deleghi - fai tutto tu perché "è più veloce."

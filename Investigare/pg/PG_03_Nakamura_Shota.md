@@ -19,11 +19,11 @@
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
 | **Distacco** | 7 | Normale |
-| **Pazienza** | 10 | Punto di forza - può aspettare ore |
-| **Silenzio** | 8 | Sa quando tacere |
+| **Pazienza** | 10 | Punto di forza - puoi aspettare ore |
+| **Silenzio** | 8 | Sai quando tacere |
 | **Lucidità** | 7 | Normale |
-| **Ascolto** | 10 | Eccellente - sente le bugie |
-| **Aura** | 7 | Normale - non intimidisce, convince |
+| **Ascolto** | 10 | Eccellente - senti le bugie |
+| **Aura** | 7 | Normale - non intimidisci, convinci |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -64,33 +64,25 @@ Scegli **uno** dei seguenti Debiti:
 
 ---
 
-## BACKGROUND
+## CHI SEI
 
-Nakamura è quello che fa parlare le persone. Non con la forza - con la pazienza. Si siede, aspetta, ascolta. Prima o poi tutti parlano.
+Sei quello che fa parlare le persone. Non con la forza - con la pazienza. Ti siedi, aspetti, ascolti. Prima o poi tutti parlano.
 
-È il figlio maggiore di una famiglia modesta di Osaka. Ha lavorato duro per arrivare dove è. Sua madre ne è fiera. Suo padre è morto quando aveva 15 anni.
+Sei il figlio maggiore di una famiglia modesta di Osaka. Hai lavorato duro per arrivare dove sei. Tua madre ne è fiera. Tuo padre è morto quando avevi 15 anni.
 
-Suo fratello minore **Daisuke (34 anni)** è l'opposto. Non ha mai tenuto un lavoro più di sei mesi. Vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti. Ogni tanto sparisce per mesi. Poi torna, con una nuova idea, un nuovo progetto, una nuova richiesta.
+Tuo fratello minore **Daisuke (34 anni)** è l'opposto. Non ha mai tenuto un lavoro più di sei mesi. Vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti. Ogni tanto sparisce per mesi. Poi torna, con una nuova idea, un nuovo progetto, una nuova richiesta.
 
 ---
 
-## IL PROBLEMA
+## IL TUO PROBLEMA
 
 ### Il Fratello
 
-Daisuke è un peso che Nakamura si porta dietro da sempre. Gli ha già prestato soldi - tre volte. Ogni volta "l'ultima". Ogni volta una bugia.
+Daisuke è un peso che ti porti dietro da sempre. Gli hai già prestato soldi - tre volte. Ogni volta "l'ultima". Ogni volta una bugia.
 
-Sua moglie non sa di questi prestiti. Se lo scoprisse, ci sarebbero problemi anche a casa.
+Tua moglie non sa di questi prestiti. Se lo scoprisse, ci sarebbero problemi anche a casa.
 
-Ma Daisuke è sangue del suo sangue. E quando ha bisogno, sa sempre dove trovare suo fratello.
-
-### Cosa sa il giocatore
-- Daisuke si caccia sempre nei guai
-- Ogni volta che appare, vuole qualcosa
-- Se lo scandalo diventa pubblico, la reputazione di Nakamura ne soffre
-
-### Cosa NON sa il giocatore
-In che guaio si è cacciato stavolta, quanto vuole, cosa succede se non lo aiuta. Lo scoprirai in gioco.
+Ma Daisuke è sangue del tuo sangue. E quando ha bisogno, sa sempre dove trovare suo fratello.
 
 ---
 
@@ -105,7 +97,7 @@ In che guaio si è cacciato stavolta, quanto vuole, cosa succede se non lo aiuta
 
 **Cosa vuole**: Dipende dalla situazione. Ma di solito sono soldi, e di solito sono urgenti.
 
-**Come si comporta**: Prima la simpatia. Poi il senso di colpa. Poi la minaccia velata. Conosce i punti deboli di suo fratello.
+**Come si comporta**: Prima la simpatia. Poi il senso di colpa. Poi la minaccia velata. Conosce i tuoi punti deboli.
 
 ---
 
@@ -116,7 +108,7 @@ In che guaio si è cacciato stavolta, quanto vuole, cosa succede se non lo aiuta
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Cugino di primo grado, avvocato penalista a Kyoto |
-| **Relazione** | Sono cresciuti insieme, rapporto di rispetto reciproco |
+| **Relazione** | Siete cresciuti insieme, rapporto di rispetto reciproco |
 | **Cosa può fare** | Consulenza legale, accesso a fascicoli pubblici, contatti in tribunale |
 | **Cosa vuole in cambio** | Niente di specifico - famiglia è famiglia |
 
@@ -126,16 +118,16 @@ In che guaio si è cacciato stavolta, quanto vuole, cosa succede se non lo aiuta
 
 ---
 
-## NOTE DI INTERPRETAZIONE
+## COME TI COMPORTI
 
 ### In pubblico (Tatemae)
-Nakamura è quello calmo. Non si agita mai. Parla poco, ascolta molto. Quando parla, le persone tendono ad ascoltare.
+Sei quello calmo. Non ti agiti mai. Parli poco, ascolti molto. Quando parli, le persone tendono ad ascoltare.
 
 ### In privato (Honne)
-È stanco di essere quello responsabile. Di dover tenere insieme tutto. A volte vorrebbe mandare tutto al diavolo. Ma non lo farà mai.
+Sei stanco di essere quello responsabile. Di dover tenere insieme tutto. A volte vorresti mandare tutto al diavolo. Ma non lo farai mai.
 
 ### Frase tipica
 "Prendiamoci un momento. Raccontami tutto dall'inizio."
 
-### Quando è sotto pressione
-Diventa ancora più silenzioso. Si ritira in sé stesso. Smette di chiedere e inizia a osservare. Può sembrare che non stia facendo nulla - in realtà sta elaborando tutto.
+### Quando sei sotto pressione
+Diventi ancora più silenzioso. Ti ritiri in te stesso. Smetti di chiedere e inizi a osservare. Può sembrare che tu non stia facendo nulla - in realtà stai elaborando tutto.

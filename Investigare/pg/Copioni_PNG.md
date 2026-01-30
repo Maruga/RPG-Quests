@@ -3,6 +3,15 @@
 
 ---
 
+> **PER IL GM**
+> 
+> Consegna il copione al giocatore che interpreterà il PNG **solo quando attivi la scena**. Non prima.
+> Dagli 1-2 minuti per leggerlo prima di iniziare.
+> 
+> Il giocatore del PG NON deve vedere il copione - scoprirà la situazione in scena.
+
+---
+
 > **ISTRUZIONI PER IL GIOCATORE CHE INTERPRETA IL PNG**
 > 
 > Leggi solo il copione del PNG che ti è stato assegnato.

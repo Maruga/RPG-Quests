@@ -19,11 +19,11 @@
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
 | **Distacco** | 10 | Punto di forza - freddo sulla scena |
-| **Pazienza** | 5 | Impulsivo, cerca la scorciatoia |
+| **Pazienza** | 5 | Impulsivo, cerchi la scorciatoia |
 | **Silenzio** | 7 | Normale |
-| **Lucidità** | 10 | Eccellente - nota ogni dettaglio |
+| **Lucidità** | 10 | Eccellente - noti ogni dettaglio |
 | **Ascolto** | 7 | Normale |
-| **Aura** | 8 | Sicuro di sé, a volte troppo |
+| **Aura** | 8 | Sicuro di te, a volte troppo |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -64,33 +64,27 @@ Scegli **uno** dei seguenti Debiti:
 
 ---
 
-## BACKGROUND
+## CHI SEI
 
-Honda è brillante. Lo sanno tutti, lui per primo. Vede cose che altri non vedono. Ricostruisce scene del crimine come se avesse assistito in persona.
+Sei brillante. Lo sanno tutti, tu per primo. Vedi cose che altri non vedono. Ricostruisci scene del crimine come se avessi assistito in persona.
 
-Il problema è che la sua mente non si ferma mai. Cerca stimoli. Adrenalina. Sfide.
+Il problema è che la tua mente non si ferma mai. Cerchi stimoli. Adrenalina. Sfide.
 
-Ha iniziato con le scommesse sportive tre anni fa. "Solo per divertimento." Poi le cifre sono cresciute. Ora scommette su tutto: baseball, sumo, corse di cavalli. Vince spesso - è intelligente. Ma quando perde, perde grosso.
+Hai iniziato con le scommesse sportive tre anni fa. "Solo per divertimento." Poi le cifre sono cresciute. Ora scommetti su tutto: baseball, sumo, corse di cavalli. Vinci spesso - sei intelligente. Ma quando perdi, perdi grosso.
 
-E ultimamente ha perso più di quanto abbia vinto.
+E ultimamente hai perso più di quanto hai vinto.
 
 ---
 
-## IL PROBLEMA
+## IL TUO PROBLEMA
 
 ### Il Gioco d'Azzardo
 
-Honda deve soldi a **Murakami**, un allibratore indipendente. Non è yakuza - è quasi rispettabile. Ma i debiti sono debiti.
+Devi soldi a **Murakami**, un allibratore indipendente. Non è yakuza - è quasi rispettabile. Ma i debiti sono debiti.
 
 Murakami ha un uomo che si occupa delle riscossioni: **Goto Masaru**. Goto non minaccia mai. È educato, ragionevole, professionale. Il che lo rende più inquietante.
 
-### Cosa sa il giocatore
-- Ha debiti di gioco con persone che non dimenticano
-- Goto potrebbe presentarsi in qualsiasi momento
-- Se qualcuno in centrale scopre che scommette illegalmente, la sua carriera è finita
-
-### Cosa NON sa il giocatore
-Quanto deve esattamente, cosa chiederà Goto, quando si presenterà. Lo scoprirai in gioco.
+Sai che hai debiti di gioco con persone che non dimenticano. Sai che Goto potrebbe presentarsi in qualsiasi momento. E sai che se qualcuno in centrale scopre che scommetti illegalmente, la tua carriera è finita.
 
 ---
 
@@ -116,9 +110,9 @@ Quanto deve esattamente, cosa chiederà Goto, quando si presenterà. Lo scoprira
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Ex testimone di un vecchio caso, ora piccolo ricettatore |
-| **Relazione** | Honda gli ha evitato il carcere anni fa, gli deve un favore |
+| **Relazione** | Gli hai evitato il carcere anni fa, ti deve un favore |
 | **Cosa può fare** | Conosce il sottobosco di Kyoto, sente voci, sa chi vende cosa a chi |
-| **Cosa vuole in cambio** | Che Honda continui a chiudere un occhio sui suoi affari minori |
+| **Cosa vuole in cambio** | Che tu continui a chiudere un occhio sui suoi affari minori |
 
 **Come contattarlo**: Bazzica al Bar Shinjuku a Gion, tutte le sere dopo le 21.
 
@@ -126,16 +120,16 @@ Quanto deve esattamente, cosa chiederà Goto, quando si presenterà. Lo scoprira
 
 ---
 
-## NOTE DI INTERPRETAZIONE
+## COME TI COMPORTI
 
 ### In pubblico (Tatemae)
-Honda è il tecnico sicuro di sé. Fa battute, smorza la tensione. Sembra sempre sotto controllo. È quello che trova l'indizio che cambia tutto.
+Sei il tecnico sicuro di sé. Fai battute, smorzi la tensione. Sembri sempre sotto controllo. Sei quello che trova l'indizio che cambia tutto.
 
 ### In privato (Honne)
-L'adrenalina è una droga. Quando non c'è, si sente vuoto. Le scommesse riempiono quel vuoto. E adesso il vuoto sta per inghiottirlo.
+L'adrenalina è una droga. Quando non c'è, ti senti vuoto. Le scommesse riempiono quel vuoto. E adesso il vuoto sta per inghiottirti.
 
 ### Frase tipica
 "Aspetta. Guarda qui. Vedi questo? Nessuno l'aveva notato."
 
-### Quando è sotto pressione
-Diventa più arrogante. Prende rischi. Scommette - letteralmente e metaforicamente. A volte funziona. A volte no.
+### Quando sei sotto pressione
+Diventi più arrogante. Prendi rischi. Scommetti - letteralmente e metaforicamente. A volte funziona. A volte no.

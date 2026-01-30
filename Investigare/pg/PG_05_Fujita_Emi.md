@@ -18,12 +18,12 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 8 | Sa mantenere le distanze |
+| **Distacco** | 8 | Sai mantenere le distanze |
 | **Pazienza** | 7 | Normale |
-| **Silenzio** | 10 | Punto di forza - osserva, non reagisce |
+| **Silenzio** | 10 | Punto di forza - osservi, non reagisci |
 | **Lucidità** | 8 | Buona capacità di analisi |
 | **Ascolto** | 8 | Formazione psicologica |
-| **Aura** | 7 | Normale - preferisce restare in ombra |
+| **Aura** | 7 | Normale - preferisci restare in ombra |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -64,33 +64,27 @@ Scegli **uno** dei seguenti Debiti:
 
 ---
 
-## BACKGROUND
+## CHI SEI
 
-Fujita è arrivata in polizia dopo una laurea in psicologia e anni di pratica clinica. Capisce le persone. Vede i pattern. Sa perché la gente fa quello che fa.
+Sei arrivata in polizia dopo una laurea in psicologia e anni di pratica clinica. Capisci le persone. Vedi i pattern. Sai perché la gente fa quello che fa.
 
-È anche una donna single in un ambiente dominato dagli uomini. Ha dovuto lavorare il doppio per guadagnarsi il rispetto. Ora ce l'ha - ma è stato un prezzo.
+Sei anche una donna single in un ambiente dominato dagli uomini. Hai dovuto lavorare il doppio per guadagnarti il rispetto. Ora ce l'hai - ma è stato un prezzo.
 
-Cinque anni fa ha avuto bisogno di soldi. Suo padre era malato, le cure costavano. Ha chiesto un prestito a **Iwamoto**, un conoscente di famiglia che "aiutava le persone". Non era yakuza - solo un uomo con soldi e pochi scrupoli.
+Cinque anni fa hai avuto bisogno di soldi. Tuo padre era malato, le cure costavano. Hai chiesto un prestito a **Iwamoto**, un conoscente di famiglia che "aiutava le persone". Non era yakuza - solo un uomo con soldi e pochi scrupoli.
 
-Il padre è morto comunque. Il debito è quasi saldato. Ma Iwamoto non sembra volerlo chiudere.
+Tuo padre è morto comunque. Il debito è quasi saldato. Ma Iwamoto non sembra volerlo chiudere.
 
 ---
 
-## IL PROBLEMA
+## IL TUO PROBLEMA
 
 ### Il Creditore
 
-**Iwamoto Koji** le ha prestato soldi cinque anni fa. Fujita ha restituito quasi tutto. Ma Iwamoto continua a presentarsi. "Non c'è fretta." "Siamo amici." "Quando sarà il momento, ne parleremo."
+**Iwamoto Koji** ti ha prestato soldi cinque anni fa. Hai restituito quasi tutto. Ma Iwamoto continua a presentarsi. "Non c'è fretta." "Siamo amici." "Quando sarà il momento, ne parleremo."
 
-Non chiede mai nulla di specifico. Questo è il punto. L'ambiguità è l'arma. Vuole tenerla in debito - non per i soldi, ma per il potere di poter chiedere qualcosa un giorno.
+Non chiede mai nulla di specifico. Questo è il punto. L'ambiguità è l'arma. Vuole tenerti in debito - non per i soldi, ma per il potere di poter chiedere qualcosa un giorno.
 
-### Cosa sa il giocatore
-- Iwamoto non vuole chiudere il debito
-- Ogni incontro è un promemoria: "Ti tengo d'occhio"
-- Se qualcuno in centrale lo vede parlare con lei, ci saranno domande
-
-### Cosa NON sa il giocatore
-Quando si presenterà, cosa vorrà, come reagirà se lei prova a chiudere la questione. Lo scoprirai in gioco.
+Sai che Iwamoto non vuole chiudere il debito. Sai che ogni incontro è un promemoria: "Ti tengo d'occhio". E sai che se qualcuno in centrale lo vede parlare con te, ci saranno domande.
 
 ---
 
@@ -116,26 +110,26 @@ Quando si presenterà, cosa vorrà, come reagirà se lei prova a chiudere la que
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Ex collega della facoltà di psicologia, ora medico legale |
-| **Relazione** | Amiche dai tempi dell'università, si rispettano professionalmente |
+| **Relazione** | Amiche dai tempi dell'università, vi rispettate professionalmente |
 | **Cosa può fare** | Autopsie, consulenze mediche, accesso ai dati sanitari (con cautela) |
 | **Cosa vuole in cambio** | Caffè e chiacchierate, ogni tanto una consulenza psicologica informale |
 
 **Come contattarla**: Ospedale Universitario, reparto Medicina Legale. O al cellulare personale.
 
-**Limite**: Una volta per sessione senza conseguenze. Morita è diretta, quasi brusca - sono le uniche due donne in posizioni di responsabilità che conoscono nel loro campo.
+**Limite**: Una volta per sessione senza conseguenze. Morita è diretta, quasi brusca - siete le uniche due donne in posizioni di responsabilità che conoscete nel vostro campo.
 
 ---
 
-## NOTE DI INTERPRETAZIONE
+## COME TI COMPORTI
 
 ### In pubblico (Tatemae)
-Fujita è professionale, competente, riservata. Non parla della sua vita privata. Non cerca amicizie. Fa il suo lavoro e lo fa bene.
+Sei professionale, competente, riservata. Non parli della tua vita privata. Non cerchi amicizie. Fai il tuo lavoro e lo fai bene.
 
 ### In privato (Honne)
-È stufa di dover dimostrare il doppio. È stufa di Iwamoto. È stufa di essere sempre all'erta. Ma non lo mostrerà mai.
+Sei stufa di dover dimostrare il doppio. Sei stufa di Iwamoto. Sei stufa di essere sempre all'erta. Ma non lo mostrerai mai.
 
 ### Frase tipica
 "Non guardare cosa ha fatto. Guarda perché l'ha fatto."
 
-### Quando è sotto pressione
-Si chiude ancora di più. Diventa fredda, quasi clinica. Analizza tutto, anche le proprie emozioni - come se fossero di qualcun altro.
+### Quando sei sotto pressione
+Ti chiudi ancora di più. Diventi fredda, quasi clinica. Analizzi tutto, anche le tue emozioni - come se fossero di qualcun altro.
