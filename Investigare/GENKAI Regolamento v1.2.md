@@ -1,7 +1,13 @@
 # GENKAI 限界
 ## Regolamento Completo
 
----
+
+Da aggiungere per salire di livello
+Ki massimo iniziale è 9, si può aumentare spendendo punti esperiernza
+per aumentarlo si deve spendere per portarlo a 10, 9 punti esperienza, per portalo a 11 quando si è a 10 , 10 punti esperienza.
+Attributi non subiscono aumenti in quanto sono in variazione continua.
+Gou da definire come posso aumentare e possono essere spesi punti esperienza per limitare il costo quindi da 2 a 1 di KI, da definire.
+
 
 # PANORAMICA
 
@@ -52,7 +58,7 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 
 Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
 
-**Valore iniziale**: Attributo più basso + 1d6
+**Valore iniziale**: Attributo più basso + 1d4
 
 > **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 1d6 e ottieni 4. Il tuo Ki iniziale è 5+4 = 9.
 
