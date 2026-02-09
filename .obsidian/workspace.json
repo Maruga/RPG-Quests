@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Dinamica Americano Traditore"
             }
+          },
+          {
+            "id": "7d759e179bf57e7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Savage/Operazione Sarcofago/Fogliettini Segreti.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fogliettini Segreti"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
+                "file": "Savage/Operazione Sarcofago/Fogliettini Segreti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Dinamica Americano Traditore"
+              "title": "Collegamenti in uscita da Fogliettini Segreti"
             }
           }
         ],
@@ -224,8 +239,15 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "290ca8b73cadfe96",
+  "active": "7d759e179bf57e7e",
   "lastOpenFiles": [
+    "Savage/Operazione Sarcofago/Brief.md",
+    "Savage/Operazione Sarcofago/Operazione Sarcofago.md",
+    "Savage/Operazione Sarcofago/Scena Apertura.md",
+    "Savage/Operazione Sarcofago/Obiettivo Missione.md",
+    "Savage/Operazione Sarcofago/La Minaccia.md",
+    "Savage/Operazione Sarcofago/Fogliettini Segreti.md",
+    "Savage/Operazione Sarcofago/Fasi/01 - Infiltrazione.md",
     "Savage/Operazione Sarcofago/PNG/Token Mutanti.md",
     "Savage/Operazione Sarcofago/PNG/Scienziati.md",
     "Savage/Operazione Sarcofago/Meccaniche/Mutanti.md",
@@ -242,11 +264,9 @@
     "Savage/Operazione Sarcofago/Fasi/04 - Penetrazione.md",
     "Savage/Operazione Sarcofago/Fasi/03 - Breccia.md",
     "Savage/Operazione Sarcofago/Fasi/02 - Avvicinamento.md",
-    "Savage/Operazione Sarcofago/Fasi/01 - Infiltrazione.md",
     "Savage/Operazione Sarcofago/PG/James Blackwood.md",
     "Savage/Regole.md",
     "Savage/Manovre di Combatimento.md",
-    "Savage/Operazione Sarcofago/Brief.md",
     "Investigare/GENKAI Regolamento v1.2.md",
     "Investigare/GENKAI Regolamento v1.1.md",
     "Investigare/GENKAI_Regolamento 1.md",
@@ -255,12 +275,7 @@
     "Investigare/Immagini/logo.png",
     "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/PG Riassunto.md",
-    "Investigare/GUIDA MASTER.md",
-    "Investigare/README.md",
-    "Investigare/INDICE GENERALE.md",
-    "Investigare/TIMELINE_GM.md",
     "Investigare/Immagini",
-    "Investigare/Regolamento.md",
     "Investigare/handout",
     "Investigare/luoghi",
     "Investigare/png",
