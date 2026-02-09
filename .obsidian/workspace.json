@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI Regolamento v1.2.md",
+                "file": "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI Regolamento v1.2"
+              "title": "Dinamica Americano Traditore"
             }
           }
         ]
@@ -193,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investigare/GENKAI Regolamento v1.2.md",
+                "file": "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da GENKAI Regolamento v1.2"
+              "title": "Collegamenti in uscita da Dinamica Americano Traditore"
             }
           }
         ],
@@ -226,8 +226,29 @@
   },
   "active": "290ca8b73cadfe96",
   "lastOpenFiles": [
-    "Investigare/GENKAI Regolamento v1.1.md",
+    "Savage/Operazione Sarcofago/PNG/Token Mutanti.md",
+    "Savage/Operazione Sarcofago/PNG/Scienziati.md",
+    "Savage/Operazione Sarcofago/Meccaniche/Mutanti.md",
+    "Savage/Operazione Sarcofago/Meccaniche/Frequenze.md",
+    "Savage/Operazione Sarcofago/Meccaniche/Contagio.md",
+    "Savage/Operazione Sarcofago/Immagini/Mutante1.jpg",
+    "Savage/Operazione Sarcofago/Immagini/Ingegnere Nucleare.jpg",
+    "Savage/Operazione Sarcofago/Immagini/Francese.jpg",
+    "Savage/Operazione Sarcofago/Immagini/Boss.png",
+    "Savage/Operazione Sarcofago/Immagini/Americano.jpg",
+    "Savage/Operazione Sarcofago/Immagini/AI.png",
+    "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
+    "Savage/Operazione Sarcofago/Fasi/05 - Azione Obiettivo.md",
+    "Savage/Operazione Sarcofago/Fasi/04 - Penetrazione.md",
+    "Savage/Operazione Sarcofago/Fasi/03 - Breccia.md",
+    "Savage/Operazione Sarcofago/Fasi/02 - Avvicinamento.md",
+    "Savage/Operazione Sarcofago/Fasi/01 - Infiltrazione.md",
+    "Savage/Operazione Sarcofago/PG/James Blackwood.md",
+    "Savage/Regole.md",
+    "Savage/Manovre di Combatimento.md",
+    "Savage/Operazione Sarcofago/Brief.md",
     "Investigare/GENKAI Regolamento v1.2.md",
+    "Investigare/GENKAI Regolamento v1.1.md",
     "Investigare/GENKAI_Regolamento 1.md",
     "Investigare/Regolamento_v1.1.md",
     "Investigare/Immagini/logoNero.png",
@@ -240,21 +261,6 @@
     "Investigare/TIMELINE_GM.md",
     "Investigare/Immagini",
     "Investigare/Regolamento.md",
-    "Investigare/pg/Scheda_PG_Compilabile.md",
-    "Investigare/pg/PG_04_Sato_Yuki.md",
-    "Investigare/pg/PG_03_Nakamura_Shota.md",
-    "Investigare/pg/PG_02_Honda_Ryota.md",
-    "Investigare/pg/Copioni_PNG.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Investigare/pg/PG_05_Fujita_Emi.md",
-    "Investigare/pg/PG_05_Fujita_Emi 1.md",
-    "Investigare/pg/PG_04_Sato_Yuki 1.md",
-    "Investigare/pg/PG_03_Nakamura_Shota 1.md",
-    "Investigare/pg/PG_02_Honda_Ryota 1.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji 1.md",
-    "Investigare/pg/Sistema_di_Gioco.md",
-    "Investigare/PNG Secondari.md",
-    "Investigare/PNG Primari.md",
     "Investigare/handout",
     "Investigare/luoghi",
     "Investigare/png",
@@ -265,12 +271,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/PG/Cleric.pdf",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.player.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/mappaPgDM.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaAccampamentoForesta.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Mappa.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina2.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Copertina.png",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Elf.pdf",
-    "Savage/Operazione_Sarcofago/Immagini/AI.png",
-    "Savage/Operazione_Sarcofago/Immagini/Americano.jpg"
+    "DnD/OneShot - La Pietra dell'Ombra/PG/Elf.pdf"
   ]
 }

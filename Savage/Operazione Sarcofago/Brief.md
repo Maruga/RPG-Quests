@@ -1,5 +1,5 @@
 ### Scena di Apertura
-![[Savage/Operazione_Sarcofago/Immagini/Copertina.png]]
+![[Savage/Operazione Sarcofago/Immagini/Copertina.png]]
 
 ## La Barzelletta
 
