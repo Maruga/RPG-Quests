@@ -16,3 +16,7 @@ _Cinque soldati: un russo, un inglese, un francese, un americano e un italiano m
 **L'Italiano** resta seduto, si accende una sigaretta. Dio: _"E tu? Cosa hai fatto per me?"_
 L'italiano tira una boccata, lo guarda e dice:
 _"Siediti. Le domande le faccio io."_
+
+
+**Chernobyl, 26 aprile 1986.**  
+**Il reattore 4 non è esploso per errore.**
