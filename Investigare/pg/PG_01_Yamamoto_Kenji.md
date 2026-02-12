@@ -97,7 +97,7 @@ Sai che Noriko è stanca di coprire i tuoi errori. Sai che il rapporto con Takes
 | **Relazione** | Sorella minore, una volta eravate molto uniti |
 | **Stato attuale** | Frustrata, delusa da te |
 
-**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern.
+**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern..
 
 **Come si comporta**: Non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.
 
