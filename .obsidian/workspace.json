@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
+                "file": "Investigare/GUIDA MASTER.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Esfiltrazione"
+              "title": "GUIDA MASTER"
             }
           }
         ],
@@ -208,12 +208,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
+                "file": "Investigare/GUIDA MASTER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da 06 - Esfiltrazione"
+              "title": "Collegamenti in uscita da GUIDA MASTER"
             }
           }
         ],
@@ -241,6 +241,26 @@
   },
   "active": "7d759e179bf57e7e",
   "lastOpenFiles": [
+    "Investigare/TIMELINE_GM.md",
+    "Investigare/README.md",
+    "Investigare/CRONISTORIA COMPLETA.md",
+    "Investigare/GENKAI Regolamento v1.2.md",
+    "Investigare/GUIDA MASTER.md",
+    "Investigare/Immagini/logoNero.png",
+    "Investigare/Immagini/logo.png",
+    "Investigare/PNG Secondari.md",
+    "Investigare/PNG Primari.md",
+    "Investigare/PG Riassunto.md",
+    "Investigare/INDICE GENERALE.md",
+    "Investigare/GENKAI Regolamento v1.1.md",
+    "Investigare/luoghi/LUOGO_07_Luoghi_Secondari.md",
+    "Investigare/luoghi/LUOGO_06_Casa_Takeda.md",
+    "Investigare/luoghi/LUOGO_05_Laboratorio_Ogawa.md",
+    "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
+    "Investigare/luoghi/LUOGO_03_Galleria_Nijo.md",
+    "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
+    "Investigare/luoghi/LUOGO_01_Villa_Ishida.md",
+    "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
     "Savage/Operazione Sarcofago/Fasi/05 - Azione Obiettivo.md",
     "Savage/Operazione Sarcofago/Fasi/04 - Penetrazione.md",
     "Savage/Operazione Sarcofago/Fasi/03 - Breccia.md",
@@ -253,29 +273,9 @@
     "Savage/Operazione Sarcofago/Immagini/Fisico.jpg",
     "Savage/Operazione Sarcofago/Immagini/Francese.jpg",
     "Savage/Operazione Sarcofago/Immagini/Hacker.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Ingegnere Nucleare.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Russo.jpg",
     "Savage/Regole.md",
     "Savage/Manovre di Combatimento.md",
     "Savage/Operazione Sarcofago/Obiettivo Missione.md",
-    "Savage/Operazione Sarcofago/Operazione Sarcofago.md",
-    "Savage/Operazione Sarcofago/La Minaccia.md",
-    "Savage/Operazione Sarcofago/Fasi/02 - Avvicinamento.md",
-    "Savage/Operazione Sarcofago/Fasi/01 - Infiltrazione.md",
-    "Savage/Operazione Sarcofago/Meccaniche/Frequenze.md",
-    "Savage/Operazione Sarcofago/Meccaniche/Mutanti.md",
-    "Savage/Operazione Sarcofago/Meccaniche/Contagio.md",
-    "Savage/Operazione Sarcofago/PNG/Token Mutanti.md",
-    "Savage/Operazione Sarcofago/PNG/Scienziati.md",
-    "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
-    "Savage/Operazione Sarcofago/Fogliettini Segreti.md",
-    "Savage/Operazione Sarcofago/Scena Apertura.md",
-    "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
-    "Savage/Operazione Sarcofago/PG/James Blackwood.md",
-    "Investigare/GENKAI Regolamento v1.2.md",
-    "Investigare/GENKAI Regolamento v1.1.md",
-    "Investigare/GENKAI_Regolamento 1.md",
-    "Investigare/Regolamento_v1.1.md",
     "Investigare/Immagini",
     "Investigare/handout",
     "Investigare/luoghi",
