@@ -92,7 +92,7 @@
 | File | Contenuto |
 |------|-----------|
 | [[Sistema_di_Gioco]] | Regole complete |
-| [[Copioni_PNG]] | Per scene personali |
+| [[Copioni PNG]] | Per scene personali |
 
 ### I 5 Investigatori
 | File | Ruolo | Problema |

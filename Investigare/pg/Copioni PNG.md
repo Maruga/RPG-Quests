@@ -1,8 +1,6 @@
 # COPIONI PNG
 ## Per le Scene Personali
 
----
-
 > **PER IL GM**
 > 
 > Consegna il copione al giocatore che interpreterà il PNG **solo quando attivi la scena**. Non prima.
@@ -28,7 +26,7 @@
 ## (Sorella del capo squadra Yamamoto Kenji)
 
 ### Chi sei
-Hai 38 anni. Sei insegnante di ikebana. Tuo fratello maggiore Kenji è il capo di una squadra investigativa.
+Hai 38 anni. Sei insegnante di ikebana (arte della disposizione dei fiori recisi). Tuo fratello maggiore Kenji è il capo di una squadra investigativa.
 
 ### Situazione
 Kenji ti ha chiamato. Suo figlio Takeshi (8 anni) sta male a scuola. La madre è irraggiungibile. Kenji non può lasciare il lavoro. Vuole che tu vada a prenderlo.
