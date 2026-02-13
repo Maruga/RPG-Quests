@@ -32,9 +32,7 @@ Il master può adattare i ruoli al sistema di gioco utilizzato.
 I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Taniguchi**, li informa:
 
 > "È morto il giudice Ishida Makoto. Trovato stamattina nella sua villa a Higashiyama. La domestica l'ha scoperto alle 7:07.
->
 > Ishida era un nome importante - processi di alto profilo, conoscenze influenti. I media non sanno ancora nulla, ma è questione di ore.
->
 > Voglio un lavoro pulito e veloce. Andate."
 
 ### Cosa sanno i giocatori PRIMA di arrivare
@@ -81,13 +79,11 @@ Lo studio del giudice è al piano terra, affacciato sul giardino interno.
 >
 > Al centro, una scrivania massiccia in legno di ciliegio. Dietro la scrivania, una poltrona in pelle.
 >
-> Il giudice Ishida è riverso sulla scrivania. La testa appoggiata sul piano, il braccio destro disteso, la mano aperta. Indossa ancora l'abito della sera prima.
+> Il giudice Ishida è riverso sulla scrivania. La testa appoggiata sul piano, il braccio destro disteso, le dita della mano destra sono irrigidite ad artiglio, li occhi spalancati in un'espressione di terrore muto, la bocca contorta in una smorfia. La pelle del viso ha una sfumatura violacea innaturale, le labbra sono blu scuro. Indossa ancora l'abito della sera prima. (Tiro distacco).
 >
 > Tutto nella stanza è in ordine perfetto. Libri allineati, documenti impilati con precisione, nessun segno di colluttazione.
 >
-> Solo una cosa è fuori posto: una penna stilografica, a circa 15 centimetri dalla mano destra del giudice, in posizione innaturale - come se fosse caduta o saltata via.
->
-> Sul foglio davanti a lui, le lettere "Gent..." e poi una striscia di inchiostro che attraversa il foglio in diagonale.
+> Sul foglio davanti a lui, le lettere "Gent..." e poi una striscia di inchiostro che attraversa il foglio in diagonale. Una penna stilografica poco distante.
 
 ### Dettagli osservabili (se cercano)
 
@@ -98,7 +94,7 @@ Lo studio del giudice è al piano terra, affacciato sul giardino interno.
 
 **Sulla scrivania:**
 - Foglio con "Gent..." e striscia di inchiostro
-- Penna stilografica Pilot Custom 845 (fuori posto)
+- Penna stilografica Pilot Custom 845
 - Portadocumenti ordinato
 - Lampada da tavolo (spenta)
 - Nessun bicchiere, nessun cibo
@@ -152,11 +148,8 @@ Non può aggiungere molto altro. È troppo sconvolta.
 ### Dall'autista (Okada Taro)
 
 > "Ieri sera li ho portati all'evento - il giudice e la signora. Una cosa alla Galleria Nijo, roba elegante.
->
 > La signora è andata via prima, verso le 22:00, con un taxi. Doveva andare da un'amica.
->
 > Il giudice è rimasto. L'ho riportato a casa verso le 22:45. Durante il viaggio ha detto che non si sentiva bene, che forse aveva mangiato troppo. Gli ho chiesto se voleva un medico, ha detto di no.
->
 > Quando è sceso sembrava... strano. Pallido. Ma è entrato da solo, camminava normalmente."
 
 Se chiedono dell'evento:
@@ -188,25 +181,25 @@ Gli eventi non sono schedulati. Si attivano in base alle azioni dei giocatori.
 
 ## TABELLA EVENTI
 
-| TRIGGER | EVENTO | CONSEGUENZE |
-|---------|--------|-------------|
-| Interrogano Mori Riku in carcere E lui parla della yakuza/giudice | Mori viene ucciso in cella (apparente suicidio) entro 24 ore | Yakuza sa che qualcuno indaga sulla corruzione. Kudo Masa scompare. |
-| Scoprono la falsificazione del DNA E confrontano Noboru | Noboru si suicida (seppuku) per l'onore | Lascia una lettera che conferma tutto |
-| Indagano apertamente sulla yakuza (mandati, arresti, pressioni) | Ricevono un avvertimento | Prima avvertimento verbale (intermediario), poi minaccia fisica a qualcuno vicino |
-| Trovano la penna E ordinano analisi forense | Scoprono la modifica elettrica | Collegamento a Sakai possibile |
-| Non sequestrano la penna immediatamente (es. aspettano l'autopsia) | Sakura fa sparire la penna | La penna non sarà più trovabile. Sakura l'ha distrutta. |
-| Interrogano Sakura sui viaggi a Fushimi | Lei mente (shopping, commissioni) | Controllando, le bugie non reggono |
-| Interrogano Sakai | Lui descrive "donna elegante 40 anni" | Non sa che è la moglie del giudice. Collabora per vendetta. |
-| Trovano i file cancellati sul computer di Yui | Scoprono le ricerche sugli invitati | Collegamento all'evento e al fugu |
-| Interrogano Chef Tanaka a Osaka | Conferma visita di Yui, borsa grande, divisa | Prova che Yui era all'evento |
-| Controllano registri Pronto Soccorso | Trovano altre intossicazioni da fugu | Conferma veleno nel cibo |
-| Confrontano Yui con prove schiaccianti | Lei confessa | Confessa solo il suo piano, non sa nulla della penna |
-| Confrontano Sakura con prove schiaccianti | Lei nega, poi crolla | Confessa solo il suo piano, non sa nulla del veleno |
-| Scoprono entrambe le assassine | Realizzano la doppia verità | Nessuna delle due sapeva dell'altra |
-| Indagano su Ogawa Shin | Trovano prove della relazione e del figlio | Movente apparente, ma lui è innocente |
-| Arrestano Shin senza prove concrete | Sakura potrebbe tirare un sospiro di sollievo | Shin ha alibi debole ma verificabile |
-| Pubblicano notizia morte sulla stampa | Hayashi Noriko contatta gli investigatori | Porta nuove informazioni sul caso Hayashi |
-| Riaprono il caso Hayashi ufficialmente | Yakuza reagisce con forza | Possibili minacce, sparizione di testimoni |
+| TRIGGER                                                            | EVENTO                                                       | CONSEGUENZE                                                                       |
+| ------------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| Interrogano Mori Riku in carcere E lui parla della yakuza/giudice  | Mori viene ucciso in cella (apparente suicidio) entro 24 ore | Yakuza sa che qualcuno indaga sulla corruzione. Kudo Masa scompare.               |
+| Scoprono la falsificazione del DNA E confrontano Noboru            | Noboru si suicida (seppuku) per l'onore                      | Lascia una lettera che conferma tutto                                             |
+| Indagano apertamente sulla yakuza (mandati, arresti, pressioni)    | Ricevono un avvertimento                                     | Prima avvertimento verbale (intermediario), poi minaccia fisica a qualcuno vicino |
+| Trovano la penna E ordinano analisi forense                        | Scoprono la modifica elettrica                               | Collegamento a Sakai possibile                                                    |
+| Non sequestrano la penna immediatamente (es. aspettano l'autopsia) | Sakura fa sparire la penna                                   | La penna non sarà più trovabile. Sakura l'ha distrutta.                           |
+| Interrogano Sakura sui viaggi a Fushimi                            | Lei mente (shopping, commissioni)                            | Controllando, le bugie non reggono                                                |
+| Interrogano Sakai                                                  | Lui descrive "donna elegante 40 anni"                        | Non sa che è la moglie del giudice.                                               |
+| Trovano i file cancellati sul computer di Yui                      | Scoprono le ricerche sugli invitati                          | Collegamento all'evento e al fugu                                                 |
+| Interrogano Chef Tanaka a Osaka                                    | Conferma visita di Yui, borsa grande, divisa                 | Prova che Yui era all'evento                                                      |
+| Controllano registri Pronto Soccorso                               | Trovano altre intossicazioni da fugu                         | Conferma veleno nel cibo                                                          |
+| Confrontano Yui con prove schiaccianti                             | Lei confessa                                                 | Confessa solo il suo piano, non sa nulla della penna                              |
+| Confrontano Sakura con prove schiaccianti                          | Lei nega, poi crolla                                         | Confessa solo il suo piano, non sa nulla del veleno                               |
+| Scoprono entrambe le assassine                                     | Realizzano la doppia verità                                  | Nessuna delle due sapeva dell'altra                                               |
+| Indagano su Ogawa Shin                                             | Trovano prove della relazione e del figlio                   | Movente apparente, ma lui è innocente                                             |
+| Arrestano Shin senza prove concrete                                | Sakura potrebbe tirare un sospiro di sollievo                | Shin ha alibi debole ma verificabile                                              |
+| Pubblicano notizia morte sulla stampa                              | Hayashi Noriko contatta gli investigatori                    | Porta nuove informazioni sul caso Hayashi                                         |
+| Riaprono il caso Hayashi ufficialmente                             | Yakuza reagisce con forza                                    | Possibili minacce, sparizione di testimoni                                        |
 
 ---
 
@@ -234,12 +227,7 @@ Gli eventi non sono schedulati. Si attivano in base alle azioni dei giocatori.
 
 **Cosa succede**: Noboru non sopporta la vergogna. Entro 24 ore si toglie la vita con un rituale tradizionale nella sua casa.
 
-**La lettera**: Lascia una lettera che conferma tutto:
-
-> "Ho tradito mia figlia Yui per l'onore della famiglia. Ho sbagliato.
-> Il medico Yamamoto ha falsificato il test. L'idea fu del giudice Ishida.
-> Io ho acconsentito perché Sakura avrebbe portato prestigio alla famiglia, mentre Yui con la sua cucina mi faceva vergognare.
-> Non merito di vivere con questa colpa."
+**La lettera**: Lascia una lettera che conferma tutto.
 
 **Conseguenze**:
 - Conferma definitiva della paternità di Kenta
@@ -259,7 +247,7 @@ Gli eventi non sono schedulati. Si attivano in base alle azioni dei giocatori.
 - L'unica prova del metodo di Sakura è persa
 - Resta solo la traccia finanziaria (prelievi, Sakai)
 
-**Nota**: Questo evento punisce i giocatori che non prestano attenzione ai dettagli (penna fuori posto, bruciature sulla mano).
+**Nota**: Questo evento punisce i giocatori che non prestano attenzione ai dettagli (bruciature sulla mano).
 
 ### Avvertimento della yakuza
 
@@ -288,7 +276,7 @@ Queste sono le principali direzioni che i giocatori potrebbero seguire.
 
 **Progressione possibile**:
 1. Tetrodotossina → fugu → chi ha preparato/servito fugu all'evento?
-2. Evento → Chef Tanaka → "Una donna è venuta a trovarmi, ha portato del fugu"
+2. Evento → Chef Tanaka → "Una amica è venuta a trovarmi, ha portato del fugu"
 3. Taxi → donna con borsa grande da Yamashina
 4. Yamashina → casa Kimura → Yui
 5. Computer Yui → ricerche sugli invitati
@@ -305,7 +293,7 @@ Queste sono le principali direzioni che i giocatori potrebbero seguire.
 
 ## PISTA 2: LA PENNA (porta a Sakura)
 
-**Punto di partenza**: Bruciature sulla mano, penna fuori posto.
+**Punto di partenza**: Bruciature sulla mano, mano chiusa ad artiglio, bigliettino con riga diagonale.
 
 **Progressione possibile**:
 1. Bruciature → scarica elettrica → penna modificata?
