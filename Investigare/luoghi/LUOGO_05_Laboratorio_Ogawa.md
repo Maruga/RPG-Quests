@@ -85,12 +85,12 @@
 
 ### Nel laboratorio
 
-| Elemento | Posizione | Rilevanza |
-|----------|-----------|-----------|
-| **Foto di Sora** | Scrivania, in cornice | SOSPETTO - perché ha foto del figlio del giudice? |
-| **Opere in restauro** | Cavalletti | Lavori legittimi |
-| **Agenda appuntamenti** | Scrivania | Orari di lavoro, clienti |
-| **Nulla di incriminante** | - | Nessun veleno, nessun dispositivo |
+| Elemento                  | Posizione             | Rilevanza                                         |
+| ------------------------- | --------------------- | ------------------------------------------------- |
+| **Foto di Sora**          | Scrivania, in cornice | SOSPETTO - perché ha foto del figlio del giudice? |
+| **Opere in restauro**     | Cavalletti            | Lavori legittimi                                  |
+| **Agenda appuntamenti**   | Scrivania             | Orari di lavoro, clienti                          |
+| **Nulla di incriminante** | -                     | Nessun veleno, nessun dispositivo                 |
 
 ### Nell'appartamento
 
