@@ -116,7 +116,7 @@ Un uomo che ha dedicato la vita al servizio. Conosce i segreti della famiglia ma
 > "Non ho prove di nulla, signore. Solo... la signora riceveva molte telefonate. A volte parlava in modo... riservato."
 
 **"La penna - l'aveva mai vista prima?"**
-> "No, signore. Ma io non tocco mai le cose sulla scrivania del signore. Era molto preciso nel suo ordine."
+> "Si, signore. Ma io non tocco mai le cose sulla scrivania del signore. Era molto preciso nel suo ordine."
 
 ---
 

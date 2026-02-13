@@ -69,17 +69,17 @@ Due assassine indipendenti, stesso obiettivo.
 
 ## RELAZIONI
 
-| Persona | Relazione |
-|---------|-----------|
-| **Ishida Sakura** | Moglie. La amava ciecamente. Non sospettava nulla. |
-| **Kimura Yui** | Ex fidanzata. Madre di suo figlio biologico (Kenta). La evitava. |
-| **Kimura Kenta** | Figlio biologico. Non riconosciuto. Non voleva avere nulla a che fare con lui. |
-| **Ishida Haruto** | Figlio legittimo (crede). Lo ama. |
-| **Ishida Sora** | Figlio legittimo (crede). In realtà figlio di Shin. |
-| **Takeda Noboru** | Suocero. Complice nella falsificazione del DNA. |
-| **Ogawa Shin** | Non lo conosce. Non sa della relazione con la moglie. |
-| **Oka Takeshi** | Boss yakuza. Lo teneva in pugno. |
-| **Sakai Toru** | Lo ha condannato nel 1992. Non sa che è coinvolto nella sua morte. |
+| Persona           | Relazione                                                                      |
+| ----------------- | ------------------------------------------------------------------------------ |
+| **Ishida Sakura** | Moglie. La amava ciecamente. Non sospettava nulla.                             |
+| **Kimura Yui**    | Ex fidanzata. Madre di suo figlio biologico (Kenta). La evitava.               |
+| **Kimura Kenta**  | Figlio biologico. Non riconosciuto. Non voleva avere nulla a che fare con lui. |
+| **Ishida Haruto** | Figlio legittimo. Lo ama.                                                      |
+| **Ishida Sora**   | Figlio legittimo (crede). In realtà figlio di Shin.                            |
+| **Takeda Noboru** | Suocero. Complice nella falsificazione del DNA.                                |
+| **Ogawa Shin**    | Non lo conosce. Non sa della relazione con la moglie.                          |
+| **Oka Takeshi**   | Boss yakuza. Lo teneva in pugno.                                               |
+| **Sakai Toru**    | Lo ha condannato nel 1992. Non sa che è coinvolto nella sua morte.             |
 
 ---
 

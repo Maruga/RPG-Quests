@@ -147,23 +147,6 @@ Lascia una lettera che conferma tutto.
 
 Se Noboru si suicida, lascia questa lettera:
 
-```
-Ho tradito mia figlia Yui per l'onore della famiglia. 
-Ho sbagliato.
-
-Il medico Yamamoto Naoki ha falsificato il test del DNA. 
-L'idea fu del giudice Ishida Makoto.
-
-Io ho acconsentito perché Sakura avrebbe portato 
-prestigio alla famiglia, mentre Yui con la sua cucina 
-mi faceva vergognare.
-
-Non merito di vivere con questa colpa.
-
-                                    Takeda Noboru
-```
-
----
 
 ## NOTE PER IL MASTER
 

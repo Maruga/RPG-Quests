@@ -59,20 +59,20 @@ Poliziotto da 20 anni. Promosso detective nella Sezione Anticontraffazione. È s
 Ha conosciuto Yui nel 1980, quando lei era appena stata lasciata da Makoto. L'ha corteggiata con pazienza. Si sono sposati in fretta quando lei ha scoperto di essere incinta. Ha sempre creduto di essere il padre di Kenta.
 
 ### La scoperta della sterilità (1996)
-Durante esami medici per altri problemi, ha scoperto di essere sterile dalla nascita (azoospermia congenita). Non ne ha parlato con Yui - si vergogna, non capisce le implicazioni.
+Durante esami medici per altri problemi, Yui ha scoperto che il marito è sterile dalla nascita (azoospermia congenita). Non ne ha parlato con il marito - si vergogna.
 
 ---
 
 ## COSA SA
 
-| Argomento | Livello di conoscenza |
-|-----------|----------------------|
-| Omicidio del giudice | Nulla (all'inizio) |
-| Piano di Yui | **NULLA** |
-| Paternità di Kenta | Crede di essere il padre |
-| Sua sterilità | Lo sa, non ha collegato i punti |
+| Argomento            | Livello di conoscenza              |
+| -------------------- | ---------------------------------- |
+| Omicidio del giudice | Nulla (all'inizio)                 |
+| Piano di Yui         | **NULLA**                          |
+| Paternità di Kenta   | Crede di essere il padre           |
+| Sua sterilità        | Non loo sa                         |
 | Relazione Yui-Makoto | Sa che c'è stata, crede sia finita |
-| Famiglia Ishida | Conosce di fama, nessun contatto |
+| Famiglia Ishida      | Conosce di fama, nessun contatto   |
 
 ---
 
@@ -150,7 +150,7 @@ Hiro può essere utile in diversi modi:
 ## NOTE PER IL MASTER
 
 ### Interpretazione
-Hiro è una figura tragica. Ha costruito la sua vita su una bugia (che Yui lo amasse, che Kenta fosse suo figlio). Quando scopre la verità, il suo mondo crolla.
+Hiro è una figura tragica. Ha costruito la sua vita su una bugia (che Yui lo amasse). Quando scopre la verità, il suo mondo crolla.
 
 ### Possibili sviluppi
 - Se scopre la verità su Kenta: potrebbe diventare un alleato degli investigatori

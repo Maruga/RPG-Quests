@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/TIMELINE_GM.md",
+                "file": "Investigare/CRONISTORIA COMPLETA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TIMELINE_GM"
+              "title": "CRONISTORIA COMPLETA"
+            }
+          },
+          {
+            "id": "a32402c88fc8b4f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Investigare/PNG Primari.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PNG Primari"
             }
           },
           {
@@ -269,32 +283,32 @@
   },
   "active": "7d759e179bf57e7e",
   "lastOpenFiles": [
+    "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
+    "Investigare/luoghi/LUOGO_03_Galleria_Nijo.md",
+    "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
+    "Investigare/luoghi/LUOGO_01_Villa_Ishida.md",
+    "Investigare/handout/Lettere_Tabulato_Yui.md",
+    "Investigare/handout/Caso_Hayashi_Documenti.md",
+    "Investigare/handout/Articoli_Giornale.md",
+    "Investigare/CRONISTORIA COMPLETA.md",
+    "Investigare/png/09_Ueno_Masa_Maggiordomo.md",
+    "Investigare/png/08_Chef_Tanaka_Ryo.md",
+    "Investigare/png/07_Sakai_Toru_Tecnico.md",
+    "Investigare/png/06_Ogawa_Shin_Amante.md",
+    "Investigare/png/05_Takeda_Noboru_Padre.md",
+    "Investigare/png/04_Kimura_Hiro_Marito.md",
+    "Investigare/png/03_Kimura_Yui_Sorella.md",
+    "Investigare/png/02_Ishida_Sakura_Moglie.md",
+    "Investigare/PNG Primari.md",
+    "Investigare/png/01_Ishida_Makoto_Giudice.md",
+    "Investigare/TIMELINE_GM.md",
     "Investigare/README.md",
     "Investigare/PNG Secondari.md",
-    "Investigare/PNG Primari.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Inizio - Incarico.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Investigare/png/01_Ishida_Makoto_Giudice.md",
     "Investigare/GENKAI Regolamento v1.2.md",
-    "Investigare/CRONISTORIA COMPLETA.md",
-    "Investigare/TIMELINE_GM.md",
     "Investigare/INDICE GENERALE.md",
-    "Investigare/pg/Copioni PNG.md",
-    "Investigare/luoghi/LUOGO_07_Luoghi_Secondari.md",
-    "Investigare/luoghi/LUOGO_06_Casa_Takeda.md",
-    "Investigare/luoghi/LUOGO_05_Laboratorio_Ogawa.md",
-    "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
-    "Investigare/luoghi/LUOGO_01_Villa_Ishida.md",
-    "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
-    "Investigare/handout/Tracce_Finanziarie.md",
-    "Investigare/handout/Rapporto_Autopsia.md",
-    "Investigare/handout/Rapporto Scena Crimine.md",
-    "Investigare/handout/Messaggi_Cercapersone.md",
-    "Investigare/handout/Lista_Invitati_Evento.md",
-    "Investigare/handout/Lettere_Tabulato_Yui.md",
-    "Investigare/handout/Lettera_Suicidio_Noboru.md",
-    "Investigare/handout/File_Computer_Yui.md",
     "Investigare/pg/Copioni_PNG.docx",
     "Investigare/pg/PG_05_Fujita_Emi.docx",
     "Investigare/pg/PG_04_Sato_Yuki.docx",
