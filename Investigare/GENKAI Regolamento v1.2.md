@@ -58,7 +58,7 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 
 Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
 
-**Valore iniziale**: Attributo più basso + 1d4
+**Valore iniziale**: Attributo più basso + 1d6
 
 > **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 1d6 e ottieni 4. Il tuo Ki iniziale è 5+4 = 9.
 
