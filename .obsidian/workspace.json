@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/pg/Copioni PNG.md",
+                "file": "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Copioni PNG"
+              "title": "LUOGO_02_Casa_Kimura"
             }
           }
         ],
@@ -241,11 +241,27 @@
   },
   "active": "7d759e179bf57e7e",
   "lastOpenFiles": [
+    "Investigare/luoghi/LUOGO_01_Villa_Ishida.md",
+    "Investigare/handout/Tracce_Finanziarie.md",
+    "Investigare/handout/Rapporto_Autopsia.md",
+    "Investigare/handout/Rapporto Scena Crimine.md",
+    "Investigare/handout/Messaggi_Cercapersone.md",
+    "Investigare/handout/Lista_Invitati_Evento.md",
+    "Investigare/handout/Lettere_Tabulato_Yui.md",
+    "Investigare/handout/Lettera_Suicidio_Noboru.md",
+    "Investigare/handout/File_Computer_Yui.md",
+    "Investigare/handout/Caso_Hayashi_Documenti.md",
+    "Investigare/handout/Articoli_Giornale.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/pg/Copioni_PNG.docx",
+    "Investigare/pg/PG_05_Fujita_Emi.docx",
+    "Investigare/pg/PG_04_Sato_Yuki.docx",
+    "Investigare/pg/PG_03_Nakamura_Shota.docx",
+    "Investigare/pg/PG_02_Honda_Ryota.docx",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.docx",
+    "Investigare/pg/Copioni PNG.md",
     "Investigare/pg/PG_02_Honda_Ryota.md",
     "Investigare/GUIDA MASTER.md",
-    "Investigare/pg/Copioni PNG.md",
-    "Investigare/luoghi/LUOGO_01_Villa_Ishida.md",
     "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
     "Investigare/luoghi/LUOGO_03_Galleria_Nijo.md",
     "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
@@ -257,18 +273,8 @@
     "Investigare/PNG Secondari.md",
     "Investigare/PNG Primari.md",
     "Investigare/PG Riassunto.md",
-    "Investigare/handout/Lettere_Tabulato_Yui.md",
-    "Investigare/GENKAI Regolamento v1.2.md",
-    "Investigare/CRONISTORIA COMPLETA.md",
-    "Investigare/handout/Caso_Hayashi_Documenti.md",
-    "Investigare/handout/Articoli_Giornale.md",
-    "Investigare/handout/Lettera_Suicidio_Noboru.md",
-    "Investigare/handout/File_Computer_Yui.md",
     "Investigare/Immagini/logoNero.png",
     "Investigare/Immagini/logo.png",
-    "Investigare/INDICE GENERALE.md",
-    "Investigare/GENKAI Regolamento v1.1.md",
-    "Savage/Operazione Sarcofago/Fasi/06 - Esfiltrazione.md",
     "Savage/Operazione Sarcofago/Immagini/Xenologo.jpg",
     "Savage/Operazione Sarcofago/Immagini/AI.png",
     "Savage/Operazione Sarcofago/Immagini/Americano.jpg",
@@ -280,12 +286,6 @@
     "Investigare/Immagini",
     "Investigare/handout",
     "Investigare/luoghi",
-    "Investigare/png",
-    "Investigare/pg",
-    "Investigare",
-    "Strumenti/3D652300",
-    "Strumenti/~$Schede_DnD_BX91.xlsx",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Cleric.pdf",
-    "DnD/OneShot - La Pietra dell'Ombra/PG/Elf.pdf"
+    "Investigare/png"
   ]
 }
