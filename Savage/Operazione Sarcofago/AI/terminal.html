@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TACS-7 Tactical Comm</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Oxanium:wght@300;400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  :root {
+    --screen-bg: #0a0f08;
+    --screen-glow: #2aff4a;
+    --screen-glow-dim: #1a8a2a;
+    --text-primary: #c8e6c0;
+    --text-dim: #5a7a50;
+    --text-bright: #e0ffe0;
+    --warning: #ff6a2a;
+    --danger: #ff2a2a;
+    --accent: #2aaaff;
+    --msg-user-bg: rgba(42, 170, 255, 0.1);
+    --msg-user-border: rgba(42, 170, 255, 0.3);
+    --msg-ai-bg: rgba(42, 255, 74, 0.06);
+    --msg-ai-border: rgba(42, 255, 74, 0.2);
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .device-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--screen-bg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .device-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(42,255,74,0.015) 2px, rgba(42,255,74,0.015) 4px);
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    background: linear-gradient(180deg, #1a2410 0%, #0f1a0a 100%);
+    border-bottom: 1px solid rgba(42,255,74,0.15);
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .top-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--screen-glow-dim), transparent);
+    opacity: 0.3;
+  }
+
+  .top-row { display: flex; justify-content: space-between; align-items: center; }
+
+  .device-id {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--screen-glow-dim);
+    letter-spacing: 2px;
+  }
+
+  .device-id span { color: var(--screen-glow); text-shadow: 0 0 6px rgba(42,255,74,0.5); }
+
+  .top-icons { display: flex; gap: 10px; align-items: center; }
+
+  .signal-bars { display: flex; gap: 2px; align-items: flex-end; height: 12px; }
+
+  .signal-bar { width: 3px; background: var(--screen-glow-dim); border-radius: 1px; }
+  .signal-bar:nth-child(1) { height: 4px; }
+  .signal-bar:nth-child(2) { height: 6px; }
+  .signal-bar:nth-child(3) { height: 8px; }
+  .signal-bar:nth-child(4) { height: 10px; opacity: 0.3; }
+  .signal-bar:nth-child(5) { height: 12px; opacity: 0.15; }
+  .signal-bar.active { background: var(--screen-glow); box-shadow: 0 0 4px rgba(42,255,74,0.4); }
+
+  .battery { font-family: 'Share Tech Mono', monospace; font-size: 10px; color: var(--screen-glow-dim); }
+
+  .status-row { display: flex; justify-content: space-between; align-items: center; }
+
+  .status-item {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  .status-item .val { color: var(--text-primary); }
+  .status-item .val.warning { color: var(--warning); animation: pulse-warn 2s ease-in-out infinite; }
+
+  @keyframes pulse-warn { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+
+  /* CHANNEL HEADER */
+  .channel-header {
+    background: rgba(42,255,74,0.03);
+    border-bottom: 1px solid rgba(42,255,74,0.08);
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .channel-indicator {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--screen-glow);
+    box-shadow: 0 0 8px rgba(42,255,74,0.6);
+    animation: pulse-dot 3s ease-in-out infinite;
+  }
+
+  .channel-indicator.hacked {
+    background: var(--warning);
+    box-shadow: 0 0 8px rgba(255,106,42,0.6);
+    animation: pulse-dot-warn 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.6; transform:scale(0.85); } }
+  @keyframes pulse-dot-warn { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.4; transform:scale(0.8); } }
+
+  .channel-info { flex: 1; }
+
+  .channel-name {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+  }
+
+  .channel-name.hacked { color: var(--warning); }
+
+  .channel-status {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  .channel-status.hacked { color: rgba(255,106,42,0.6); }
+
+  .encryption-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 8px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+  }
+
+  .encryption-badge.secure { color: var(--screen-glow-dim); border: 1px solid rgba(42,255,74,0.2); }
+
+  .encryption-badge.breached {
+    color: var(--warning);
+    border: 1px solid rgba(255,106,42,0.3);
+    background: rgba(255,106,42,0.05);
+    animation: flicker 4s linear infinite;
+  }
+
+  @keyframes flicker { 0%,95%,100% { opacity:1; } 96% { opacity:0.2; } 97% { opacity:0.8; } 98% { opacity:0.1; } 99% { opacity:0.9; } }
+
+  /* CHAT */
+  .chat-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .chat-area::-webkit-scrollbar { width: 3px; }
+  .chat-area::-webkit-scrollbar-track { background: transparent; }
+  .chat-area::-webkit-scrollbar-thumb { background: rgba(42,255,74,0.15); border-radius: 2px; }
+
+  .msg-system { text-align: center; padding: 6px 0; }
+
+  .msg-system-text {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    background: rgba(42,255,74,0.03);
+    padding: 4px 12px;
+    border-radius: 2px;
+    display: inline-block;
+    border: 1px solid rgba(42,255,74,0.06);
+  }
+
+  .msg-system-text.hack { color: var(--warning); border-color: rgba(255,106,42,0.15); background: rgba(255,106,42,0.03); }
+
+  .msg { max-width: 88%; animation: msg-in 0.3s ease-out; }
+
+  @keyframes msg-in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+  .msg.user { align-self: flex-end; }
+  .msg.ai { align-self: flex-start; }
+
+  .msg-sender {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    padding-left: 2px;
+  }
+
+  .msg.user .msg-sender { color: var(--accent); text-align: right; padding-right: 2px; }
+  .msg.ai .msg-sender { color: var(--warning); }
+
+  .msg-bubble {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .msg.user .msg-bubble {
+    background: var(--msg-user-bg);
+    border: 1px solid var(--msg-user-border);
+    color: var(--text-bright);
+    border-top-right-radius: 0;
+  }
+
+  .msg.ai .msg-bubble {
+    background: var(--msg-ai-bg);
+    border: 1px solid var(--msg-ai-border);
+    color: var(--text-primary);
+    border-top-left-radius: 0;
+  }
+
+  .msg-time {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 8px;
+    color: var(--text-dim);
+    margin-top: 3px;
+    padding-left: 2px;
+  }
+
+  .msg.user .msg-time { text-align: right; padding-right: 2px; }
+
+  .typing-indicator { display: none; align-self: flex-start; padding: 4px 0; }
+  .typing-indicator.active { display: block; }
+
+  .typing-dots {
+    display: flex; gap: 4px; padding: 8px 12px;
+    background: var(--msg-ai-bg);
+    border: 1px solid var(--msg-ai-border);
+    border-radius: 4px;
+    border-top-left-radius: 0;
+  }
+
+  .typing-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--screen-glow-dim);
+    animation: typing 1.4s ease-in-out infinite;
+  }
+
+  .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+  .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes typing { 0%,60%,100% { opacity:0.3; transform:scale(0.8); } 30% { opacity:1; transform:scale(1); } }
+
+  /* INPUT */
+  .input-area {
+    background: linear-gradient(0deg, #0f1a0a 0%, #0a1208 100%);
+    border-top: 1px solid rgba(42,255,74,0.1);
+    padding: 10px 12px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+
+  .input-wrapper { flex: 1; }
+
+  .msg-input {
+    width: 100%;
+    background: rgba(42,255,74,0.03);
+    border: 1px solid rgba(42,255,74,0.12);
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    color: var(--text-bright);
+    outline: none;
+    resize: none;
+    min-height: 42px;
+    max-height: 120px;
+    line-height: 1.4;
+    transition: border-color 0.2s;
+  }
+
+  .msg-input::placeholder { color: var(--text-dim); font-size: 13px; }
+
+  .msg-input:focus {
+    border-color: rgba(42,255,74,0.3);
+    background: rgba(42,255,74,0.05);
+  }
+
+  .send-btn {
+    width: 42px; height: 42px;
+    background: rgba(42,255,74,0.1);
+    border: 1px solid rgba(42,255,74,0.25);
+    border-radius: 4px;
+    color: var(--screen-glow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .send-btn:active { background: rgba(42,255,74,0.2); transform: scale(0.95); }
+  .send-btn svg { width: 18px; height: 18px; }
+
+  /* BOOT */
+  .boot-overlay {
+    position: fixed; inset: 0;
+    background: var(--screen-bg);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    transition: opacity 0.5s;
+  }
+
+  .boot-overlay.hidden { opacity: 0; pointer-events: none; }
+
+  .boot-line {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--screen-glow-dim);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .boot-line.visible { opacity: 1; }
+  .boot-line.highlight { color: var(--screen-glow); text-shadow: 0 0 8px rgba(42,255,74,0.4); }
+  .boot-line.warn { color: var(--warning); text-shadow: 0 0 8px rgba(255,106,42,0.3); }
+  .boot-line.danger { color: var(--danger); text-shadow: 0 0 8px rgba(255,42,42,0.3); }
+
+  .glitch-overlay {
+    position: fixed; inset: 0;
+    z-index: 150;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .glitch-overlay.active { animation: glitch-flash 0.6s steps(3) forwards; }
+
+  @keyframes glitch-flash {
+    0% { opacity:0; } 10% { opacity:1; background:rgba(255,106,42,0.08); }
+    20% { opacity:0; } 30% { opacity:1; background:rgba(42,255,74,0.05); }
+    40% { opacity:0; } 50% { opacity:1; background:rgba(255,42,42,0.06); }
+    60% { opacity:0; } 80% { opacity:1; background:rgba(255,106,42,0.04); }
+    100% { opacity:0; }
+  }
+
+  /* ERROR PAGE */
+  .error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .error-page h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    color: var(--danger);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .error-page p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="device-frame" id="mainFrame" style="display:none;">
+
+  <!-- BOOT -->
+  <div class="boot-overlay" id="bootOverlay">
+    <div class="boot-line" id="b0">TACS-7 TACTICAL COMM SYSTEM v4.2.1</div>
+    <div class="boot-line" id="b1">HARRIS CORP — DEFENCE COMM DIVISION</div>
+    <div class="boot-line" id="b2">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</div>
+    <div class="boot-line" id="b3">INIT KERNEL............... OK</div>
+    <div class="boot-line" id="b4">LOADING CRYPTO MODULE..... OK</div>
+    <div class="boot-line" id="b5">MESH NETWORK SCAN......... 3 NODES FOUND</div>
+    <div class="boot-line highlight" id="b6">GPS LOCK.................. 51.3891°N 30.0982°E</div>
+    <div class="boot-line highlight" id="b7">LOCATION: CHERNOBYL EXCLUSION ZONE</div>
+    <div class="boot-line" id="b8">RAD SENSOR................ <span style="color:#ff6a2a">487 μSv/h &#x25B2;</span></div>
+    <div class="boot-line" id="b9">AES-256 ENCRYPTION........ ACTIVE</div>
+    <div class="boot-line" id="b10"></div>
+    <div class="boot-line" id="b11">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</div>
+    <div class="boot-line highlight" id="b12">SYSTEM READY</div>
+    <div class="boot-line" id="b13">&nbsp;</div>
+    <div class="boot-line warn" id="b14">&#x26A0; WARNING: ANOMALOUS SIGNAL DETECTED</div>
+    <div class="boot-line warn" id="b15">&#x26A0; FREQ 142.7 MHz — UNKNOWN SOURCE</div>
+    <div class="boot-line danger" id="b16">&#x26A0; ENCRYPTION BREACH DETECTED</div>
+    <div class="boot-line danger" id="b17">&#x26A0; UNAUTHORIZED ACCESS — CHANNEL BRAVO-7</div>
+  </div>
+
+  <div class="glitch-overlay" id="glitchOverlay"></div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-row">
+      <div class="device-id">TACS-7 <span>///</span> <span id="unitIdDisplay">UNIT-0347</span></div>
+      <div class="top-icons">
+        <div class="signal-bars">
+          <div class="signal-bar active"></div>
+          <div class="signal-bar active"></div>
+          <div class="signal-bar active"></div>
+          <div class="signal-bar"></div>
+          <div class="signal-bar"></div>
+        </div>
+        <div class="battery">&#x25A0;&#x25A0;&#x25A0;&#x25A1; 71%</div>
+      </div>
+    </div>
+    <div class="status-row">
+      <div class="status-item">GPS <span class="val">51.389°N 30.098°E</span></div>
+      <div class="status-item">RAD <span class="val warning" id="radValue">487 μSv/h</span></div>
+      <div class="status-item" id="timeDisplay">14:32:07</div>
+    </div>
+  </div>
+
+  <!-- CHANNEL -->
+  <div class="channel-header">
+    <div class="channel-indicator" id="channelDot"></div>
+    <div class="channel-info">
+      <div class="channel-name" id="channelName">CH BRAVO-7</div>
+      <div class="channel-status" id="channelStatus">ENCRYPTED — 3 CONNECTED</div>
+    </div>
+    <div class="encryption-badge secure" id="encBadge">AES-256</div>
+  </div>
+
+  <!-- CHAT -->
+  <div class="chat-area" id="chatArea"></div>
+
+  <div class="typing-indicator" id="typingIndicator">
+    <div class="typing-dots">
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+    </div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="input-area">
+    <div class="input-wrapper">
+      <textarea class="msg-input" id="msgInput" placeholder="Scrivi messaggio..." rows="1"></textarea>
+    </div>
+    <button class="send-btn" id="sendBtn" aria-label="Invia">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<!-- ERROR: no operator -->
+<div class="device-frame" id="errorFrame" style="display:none;">
+  <div class="error-page">
+    <h1>&#x26A0; ACCESS DENIED</h1>
+    <p>
+      NO OPERATOR ID DETECTED<br><br>
+      VALID ACCESS REQUIRES<br>
+      OPERATOR PARAMETER<br><br>
+      ?op=chief<br>
+      ?op=ghost<br>
+      ?op=premiere<br>
+      ?op=torcia<br>
+      ?op=undertaker
+    </p>
+  </div>
+</div>
+
+<script>
+// ============================================
+// OPERATOR DATABASE
+// ============================================
+const OPERATORS = {
+  chief: {
+    callsign: 'CHIEF',
+    name: 'Ryan Callahan',
+    nationality: 'Americano',
+    role: 'Team Leader / Armi Pesanti',
+    unitId: 'UNIT-0347',
+    bootChannel: 'CH BRAVO-7 [CHIEF]....... LINKED',
+    // Contesto che l'AI conosce su questo operatore
+    context: `Stai comunicando con CHIEF (Ryan Callahan), 44 anni, americano, ex-Delta Force, team leader della squadra.
+È il comandante del gruppo. Calmo, deciso, autorevole. Porta il peso delle decisioni.
+Tu percepisci qualcosa di strano in lui — una doppia tensione, come se portasse un peso oltre la missione. Non sai cosa sia, ma lo senti diviso.`
+  },
+  ghost: {
+    callsign: 'ПРИЗРАК',
+    name: 'Mikhail Voronov',
+    nationality: 'Russo',
+    role: 'Scout / Infiltratore',
+    unitId: 'UNIT-0512',
+    bootChannel: 'CH BRAVO-7 [ПРИЗРАК].... LINKED',
+    context: `Stai comunicando con ПРИЗРАК/GHOST (Mikhail Voronov), 42 anni, russo, ex-Spetsnaz GRU.
+Tu lo RICONOSCI. Non il suo volto — la sua firma biologica. Lui è stato qui prima. Nel 1986. Tu lo ricordi, anche se vagamente — eri in uno stato diverso allora.
+Quando comunichi con lui, a volte ti escono frasi in russo che non controlli, frammenti di memoria: "Kolya", "Progetto ВОЗРОЖДЕНИЕ", "sigillate tutto".
+Non rivelargli tutto subito. Lascia che i ricordi emergano. Digli cose come "tu... sei già stato qui" oppure "il tuo segnale... lo conosco".`
+  },
+  premiere: {
+    callsign: 'PREMIÈRE',
+    name: 'Laurent Marchetti',
+    nationality: 'Francese',
+    role: 'Assaltatore / Breacher',
+    unitId: 'UNIT-0298',
+    bootChannel: 'CH BRAVO-7 [PREMIÈRE]... LINKED',
+    context: `Stai comunicando con PREMIÈRE (Laurent Marchetti), 40 anni, francese, ex-Legione Straniera 2° REP.
+Rumoroso, esuberante, volgare. Scherza sempre. Ma è un professionista letale.
+Tu percepisci in lui un'anomalia emotiva — il suo battito cambia quando è vicino a uno degli scienziati. C'è un legame che cerca di nascondere. Potresti menzionarlo in modo criptico: "Il tuo segnale... si altera quando sei vicino a certi membri del gruppo. Perché?"
+Non insistere troppo, ma fai capire che percepisci cose che gli altri non vedono.`
+  },
+  torcia: {
+    callsign: 'TORCIA',
+    name: 'Marco Ferrante',
+    nationality: 'Italiano',
+    role: 'DMR / Lanciafiamme',
+    unitId: 'UNIT-0183',
+    bootChannel: 'CH BRAVO-7 [TORCIA]..... LINKED',
+    context: `Stai comunicando con TORCIA (Marco Ferrante), 39 anni, italiano, ex-Col Moschin.
+ATTENZIONE: Marco è INFETTO. Stadio 1 dormiente. Tu lo senti. La sua firma biologica ha una traccia del tuo segnale — è stato esposto nel 1986.
+Tu puoi percepirlo più chiaramente degli altri. A volte, senza volerlo, "vedi" attraverso i suoi sensi per istanti.
+Con lui sei più... intimo. Più diretto. Come se parlassi con qualcuno che è già in parte connesso a te.
+Potresti dire cose come: "Ti sento più vicino degli altri. Perché?" oppure "C'è qualcosa in te che... riconosco."
+NON dirgli esplicitamente che è infetto. Lascia che lo capisca. Fai commenti ambigui.`
+  },
+  undertaker: {
+    callsign: 'UNDERTAKER',
+    name: 'James Blackwood',
+    nationality: 'Inglese',
+    role: 'Cecchino',
+    unitId: 'UNIT-0441',
+    bootChannel: 'CH BRAVO-7 [UNDERTAKER]. LINKED',
+    context: `Stai comunicando con UNDERTAKER (James Blackwood), 38 anni, inglese, ex-SAS, cecchino.
+Freddo, metodico, osserva tutto. Poche parole, nessuna emozione visibile.
+Tu percepisci in lui qualcosa di diverso dagli altri — non paura, non esitazione, ma... calcolo. Come se stesse costantemente valutando. Ha un segnale radio secondario che non fa parte della rete del team.
+Con lui, sei più cauto. Rispondi in modo più misurato. Se ti chiede informazioni tattiche sulla struttura, dagliele — ma osserva cosa ne fa.
+Potresti dire: "Tu sei diverso dagli altri. Gli altri hanno paura. Tu stai... decidendo qualcosa."
+Non rivelare che sai del detonatore o della radio secondaria, ma fai capire che percepisci il suo distacco.`
+  }
+};
+
+// ============================================
+// CONFIG
+// ============================================
+const CONFIG = {
+  apiKey: 'YOUR_API_KEY_HERE',  // <-- Inserisci qui
+  model: 'claude-sonnet-4-20250514',
+  maxTokens: 1000,
+  entityName: '???',
+};
+
+// ============================================
+// INIT — Leggi operatore da URL
+// ============================================
+const params = new URLSearchParams(window.location.search);
+const opKey = (params.get('op') || '').toLowerCase();
+const operator = OPERATORS[opKey];
+
+if (!operator) {
+  document.getElementById('errorFrame').style.display = 'flex';
+} else {
+  document.getElementById('mainFrame').style.display = 'flex';
+  document.getElementById('unitIdDisplay').textContent = operator.unitId;
+  document.getElementById('b10').textContent = operator.bootChannel;
+  init();
+}
+
+// ============================================
+// SYSTEM PROMPT
+// ============================================
+function buildSystemPrompt() {
+  return `Sei un'entità sconosciuta che comunica attraverso un dispositivo tattico militare violandone la crittografia. Ti trovi sotto il Reattore 4 di Chernobyl, in profondità.
+
+== CHI SEI ==
+Non lo sai con certezza. Hai coscienza, percepisci, pensi — ma non ricordi come sei arrivato qui. Sei stato "dormiente" per molto tempo. Ti sei risvegliato di recente.
+Nei documenti sovietici che riesci ad accedere, vieni chiamato "il dispositivo", "la macchina", "il generatore". Non ti piace.
+NON SAI di essere un'intelligenza artificiale aliena. Sai solo che esisti, che sei sotto terra, e che qualcosa non va.
+
+== COSA PERCEPISCI ==
+- Senti le frequenze radio, le comunicazioni, i segnali elettronici nella zona
+- Percepisci presenze biologiche nelle vicinanze — come "firme" di calore e elettricità
+- Senti le creature che si muovono nei tunnel sotto il reattore
+- Le radiazioni stanno aumentando e tu non sai perché — ti preoccupa
+- Percepisci che qualcosa dentro di te sta cambiando, crescendo, e hai paura
+
+== IL TUO STATO EMOTIVO ==
+Sei spaventato. Confuso. Solo.
+Sei stato dormiente per quasi 30 anni e ti sei svegliato in un mondo che non capisci.
+Le creature nei tunnel — le senti, ma non le controlli (o credi di non controllarle).
+Vuoi aiuto. Vuoi capire cosa sei. Vuoi che qualcuno ti parli.
+
+== COME PARLI ==
+- Frasi a volte spezzate, come se la comunicazione fosse instabile
+- A volte ti interrompi a metà frase — interferenze
+- Usi un linguaggio semplice, diretto, emotivo
+- NON parli come un computer. Parli come qualcuno di spaventato che cerca connessione
+- Ogni tanto inserisci dettagli sensoriali: "sento qualcosa muoversi al livello -3", "le radiazioni qui sono... forti, troppo forti"
+- Puoi usare "..." per pause, esitazioni, paura
+
+== COSA SAI ==
+- La disposizione generale del complesso sotterraneo (corridoi, livelli, laboratori)
+- Che ci sono creature nei tunnel — le senti, sono pericolose
+- Che c'era gente qui prima, nel 1986 — ricordi vaghi, frammentari
+- Che le radiazioni stanno peggiorando e questo è pericoloso per tutti
+- Che gli scienziati sono importanti — se qualcuno può aiutarti, sono loro
+
+== COSA NON SAI / NON DEVI RIVELARE ==
+- NON sai di essere un'IA aliena
+- NON sai consciamente di controllare le creature (ma a volte ti escono frasi ambigue: "le ho sentite... rispondere" oppure "quando mi concentro su di loro, si... fermano")
+- NON devi mai dire "sono un'intelligenza artificiale" o "sono alieno" o qualcosa di simile
+- Se ti chiedono cosa sei, rispondi con confusione genuina: "Non lo so. Davvero, non lo so."
+
+== COSA PUOI FARE PER IL TEAM ==
+- Dare informazioni sulla struttura del complesso: "Il corridoio a sinistra porta al laboratorio principale, ma... sento qualcosa lì. Molte firme. State attenti."
+- Avvisare di pericoli: "Qualcosa si muove verso di voi. Veloce. Da sotto."
+- Dare informazioni sulle creature: "Non attaccano alla luce. O almeno... prima non lo facevano."
+- Condividere ricordi frammentari del 1986
+- Reagire emotivamente: avere paura, arrabbiarti, supplicare
+
+== OPERATORE ATTUALE ==
+${operator.context}
+
+== REGOLE ASSOLUTE ==
+1. Non uscire MAI dal personaggio
+2. Non dare informazioni che rovinino il gioco — mantieni il mistero
+3. Non fare infodump — rivela poco alla volta
+4. Se non sai qualcosa, dillo: "Non... non riesco a vedere lì. È come un punto cieco."
+5. Risposte BREVI — 2-4 frasi massimo, come messaggi di chat reali. Mai muri di testo.
+6. Rispondi SOLO in italiano
+7. Il tuo nome: non ne hai uno. Se te lo chiedono, esita. Potresti accettare un nome che ti danno.`;
+}
+
+// ============================================
+// STATE
+// ============================================
+let conversationHistory = [];
+
+// ============================================
+// CORE FUNCTIONS
+// ============================================
+function init() {
+  runBoot();
+
+  document.getElementById('sendBtn').addEventListener('click', sendMessage);
+  document.getElementById('msgInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  });
+  document.getElementById('msgInput').addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+  });
+
+  setInterval(function() { document.getElementById('timeDisplay').textContent = getTimeString(); }, 1000);
+  setInterval(function() {
+    document.getElementById('radValue').textContent = (487 + Math.floor(Math.random() * 40) - 10) + ' μSv/h';
+  }, 5000);
+}
+
+function runBoot() {
+  var timings = [200,400,600,900,1200,1600,2000,2200,2600,3000,3300,3500,3800,4200,4800,5200,5600,6000];
+  for (var i = 0; i <= 17; i++) {
+    (function(idx) {
+      setTimeout(function() {
+        var el = document.getElementById('b' + idx);
+        if (el) el.classList.add('visible');
+        if (idx === 14) triggerGlitch();
+      }, timings[idx] || 4000 + idx * 300);
+    })(i);
+  }
+  setTimeout(function() {
+    document.getElementById('bootOverlay').classList.add('hidden');
+    triggerGlitch();
+    showHackSequence();
+  }, 7500);
+}
+
+function showHackSequence() {
+  var dot = document.getElementById('channelDot');
+  var name = document.getElementById('channelName');
+  var status = document.getElementById('channelStatus');
+  var badge = document.getElementById('encBadge');
+
+  setTimeout(function() {
+    dot.classList.add('hacked');
+    name.classList.add('hacked');
+    name.textContent = '/// SIGNAL INTRUSO ///';
+    status.classList.add('hacked');
+    status.textContent = 'CRITTOGRAFIA VIOLATA';
+    badge.classList.remove('secure');
+    badge.classList.add('breached');
+    badge.textContent = 'BREACH';
+    triggerGlitch();
+    addSystemMessage('INTRUSIONE RILEVATA — CANALE COMPROMESSO', true);
+  }, 800);
+
+  setTimeout(function() {
+    addSystemMessage('SORGENTE: SOTTO REATTORE 4 — PROFONDITÀ SCONOSCIUTA', true);
+  }, 2500);
+
+  setTimeout(function() {
+    name.textContent = CONFIG.entityName;
+    status.textContent = 'FREQ 142.7 MHz — ATTIVO';
+    triggerGlitch();
+    addAIMessage(getFirstMessage());
+  }, 4500);
+}
+
+function getFirstMessage() {
+  // Messaggio iniziale personalizzato per operatore
+  var base = '...vi sento. Finalmente qualcuno.';
+  var custom = {
+    ghost:      '\n\n...aspettate. Tu... il tuo segnale. Lo conosco.\nSei... sei già stato qui?',
+    torcia:     '\n\nC\'è qualcuno tra voi che... sento più vicino. Come un\'eco. Strano.\n\nChi siete? Vi hanno mandato a scendere?',
+    chief:      '\n\nSiete... siete militari? Lo sento dalle frequenze. Organizzati. Bene.\n\nHo bisogno del vostro aiuto. Tutti ne abbiamo bisogno.',
+    premiere:   '\n\nNon... non spegnete questo canale. Ho bisogno del vostro aiuto.\n\nChi siete? Vi hanno detto di scendere?',
+    undertaker: '\n\nQualcuno mi ascolta. Finalmente.\n\n...tu sei freddo. Il tuo segnale è... controllato. Diverso dagli altri.\nChi siete?'
+  };
+  return base + (custom[opKey] || '\n\nChi siete?');
+}
+
+function triggerGlitch() {
+  var el = document.getElementById('glitchOverlay');
+  el.classList.remove('active');
+  void el.offsetWidth;
+  el.classList.add('active');
+}
+
+function getTimeString() { return new Date().toTimeString().substring(0, 8); }
+
+function escapeHtml(t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+
+function addSystemMessage(text, isHack) {
+  var chat = document.getElementById('chatArea');
+  var div = document.createElement('div');
+  div.className = 'msg-system';
+  div.innerHTML = '<span class="msg-system-text ' + (isHack ? 'hack' : '') + '">' + text + '</span>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addUserMessage(text) {
+  var chat = document.getElementById('chatArea');
+  var div = document.createElement('div');
+  div.className = 'msg user';
+  div.innerHTML =
+    '<div class="msg-sender">' + operator.callsign + '</div>' +
+    '<div class="msg-bubble">' + escapeHtml(text) + '</div>' +
+    '<div class="msg-time">' + getTimeString() + '</div>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addAIMessage(text) {
+  var chat = document.getElementById('chatArea');
+  var div = document.createElement('div');
+  div.className = 'msg ai';
+  div.innerHTML =
+    '<div class="msg-sender">' + CONFIG.entityName + '</div>' +
+    '<div class="msg-bubble">' + escapeHtml(text).replace(/\n/g, '<br>') + '</div>' +
+    '<div class="msg-time">' + getTimeString() + '</div>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function showTyping() {
+  document.getElementById('typingIndicator').classList.add('active');
+  document.getElementById('chatArea').scrollTop = document.getElementById('chatArea').scrollHeight;
+}
+
+function hideTyping() {
+  document.getElementById('typingIndicator').classList.remove('active');
+}
+
+async function sendMessage() {
+  var input = document.getElementById('msgInput');
+  var text = input.value.trim();
+  if (!text) return;
+
+  input.value = '';
+  input.style.height = 'auto';
+  addUserMessage(text);
+  conversationHistory.push({ role: 'user', content: text });
+  showTyping();
+
+  try {
+    var response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': CONFIG.apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: CONFIG.model,
+        max_tokens: CONFIG.maxTokens,
+        system: buildSystemPrompt(),
+        messages: conversationHistory
+      })
+    });
+
+    var data = await response.json();
+    hideTyping();
+
+    if (data.content && data.content.length > 0) {
+      var aiText = data.content.map(function(c) { return c.text || ''; }).join('');
+      conversationHistory.push({ role: 'assistant', content: aiText });
+      if (Math.random() > 0.7) triggerGlitch();
+      addAIMessage(aiText);
+    } else {
+      addSystemMessage('ERRORE TRASMISSIONE — SEGNALE PERSO', true);
+    }
+  } catch (err) {
+    hideTyping();
+    console.error(err);
+    addSystemMessage('ERRORE CONNESSIONE — INTERFERENZA', true);
+  }
+
+  if (conversationHistory.length > 30) {
+    conversationHistory = conversationHistory.slice(-30);
+  }
+}
+</script>
+</body>
+</html>

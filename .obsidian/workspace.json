@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/README.md",
+                "file": "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Dinamica Americano Traditore"
             }
           }
         ]
@@ -224,10 +224,19 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "0763b8bce6b1ae6a",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Investigare/PNG Secondari.md",
+    "Savage/Operazione Sarcofago/AI/terminal.html",
+    "Savage/Operazione Sarcofago/AI",
+    "Savage/Operazione Sarcofago/PG/James Blackwood.md",
+    "Savage/Operazione Sarcofago/Background.md",
+    "Savage/Operazione Sarcofago/Brief.md",
+    "Savage/Operazione Sarcofago/La Minaccia.md",
+    "Savage/Operazione Sarcofago/Obiettivo Missione.md",
+    "Savage/Operazione Sarcofago/Operazione Sarcofago.md",
+    "Savage/Operazione Sarcofago/Fasi/01 - Infiltrazione.md",
     "Investigare/README.md",
+    "Investigare/PNG Secondari.md",
     "Investigare/TIMELINE_GM.md",
     "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
@@ -244,14 +253,6 @@
     "Investigare/png/05_Takeda_Noboru_Padre.md",
     "Investigare/png/04_Kimura_Hiro_Marito.md",
     "Investigare/png/03_Kimura_Yui_Sorella.md",
-    "Investigare/png/02_Ishida_Sakura_Moglie.md",
-    "Investigare/PNG Primari.md",
-    "Investigare/png/01_Ishida_Makoto_Giudice.md",
-    "Investigare/PG Riassunto.md",
-    "Investigare/Inizio - Incarico.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Investigare/GENKAI Regolamento v1.2.md",
-    "Investigare/INDICE GENERALE.md",
     "Investigare/pg/Copioni_PNG.docx",
     "Investigare/pg/PG_05_Fujita_Emi.docx",
     "Investigare/pg/PG_04_Sato_Yuki.docx",
@@ -270,7 +271,6 @@
     "Savage/Operazione Sarcofago/Immagini/Hacker.jpg",
     "Investigare/Immagini",
     "Investigare/handout",
-    "Investigare/luoghi",
-    "Investigare/png"
+    "Investigare/luoghi"
   ]
 }
