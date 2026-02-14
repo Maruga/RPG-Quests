@@ -4,81 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c08c59ede20130b5",
+        "id": "56093004ee5c68a0",
         "type": "tabs",
         "children": [
           {
-            "id": "290ca8b73cadfe96",
+            "id": "0763b8bce6b1ae6a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Segreti/Dinamica Americano Traditore.md",
+                "file": "Investigare/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dinamica Americano Traditore"
-            }
-          },
-          {
-            "id": "7d759e179bf57e7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/CRONISTORIA COMPLETA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CRONISTORIA COMPLETA"
-            }
-          },
-          {
-            "id": "a32402c88fc8b4f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/PNG Primari.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PNG Primari"
-            }
-          },
-          {
-            "id": "fcab831607481ec2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/PNG Secondari.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PNG Secondari"
-            }
-          },
-          {
-            "id": "5fd1a587eeec3329",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PG_01_Yamamoto_Kenji"
+              "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -281,8 +224,12 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "7d759e179bf57e7e",
+  "active": "0763b8bce6b1ae6a",
   "lastOpenFiles": [
+    "Investigare/PNG Secondari.md",
+    "Investigare/README.md",
+    "Investigare/TIMELINE_GM.md",
+    "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/luoghi/LUOGO_04_Laboratorio_Sakai.md",
     "Investigare/luoghi/LUOGO_03_Galleria_Nijo.md",
     "Investigare/luoghi/LUOGO_02_Casa_Kimura.md",
@@ -290,7 +237,6 @@
     "Investigare/handout/Lettere_Tabulato_Yui.md",
     "Investigare/handout/Caso_Hayashi_Documenti.md",
     "Investigare/handout/Articoli_Giornale.md",
-    "Investigare/CRONISTORIA COMPLETA.md",
     "Investigare/png/09_Ueno_Masa_Maggiordomo.md",
     "Investigare/png/08_Chef_Tanaka_Ryo.md",
     "Investigare/png/07_Sakai_Toru_Tecnico.md",
@@ -301,9 +247,6 @@
     "Investigare/png/02_Ishida_Sakura_Moglie.md",
     "Investigare/PNG Primari.md",
     "Investigare/png/01_Ishida_Makoto_Giudice.md",
-    "Investigare/TIMELINE_GM.md",
-    "Investigare/README.md",
-    "Investigare/PNG Secondari.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Inizio - Incarico.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",

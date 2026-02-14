@@ -1,4 +1,4 @@
-## PRESENTAZIONE DEL GIOCO
+## PRESENTAZIONE DEL GIOCO.
 
 ![[logoNero.png]]
 
