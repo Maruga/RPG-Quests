@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ТЕРМИНАЛ РЕАКТОР-4</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;overflow:hidden;background:#0c0c0a;font-family:'VT323',monospace;}
+  body{display:flex;align-items:center;justify-content:center;}
+
+  .sound-init{
+    position:fixed;inset:0;background:#0c0c0a;z-index:300;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;
+    transition:opacity 2s ease-out;
+    opacity:1;
+  }
+  .sound-init.fade-out{opacity:0;pointer-events:none;}
+  .sound-init.hidden{display:none;}
+  .sound-init p{font-family:'VT323',monospace;font-size:18px;color:rgba(122,184,110,0.3);text-align:center;}
+  .sound-init .go{color:#7ab86e;font-size:24px;text-shadow:0 0 6px rgba(100,170,80,0.2);animation:lp-g 2s ease-in-out infinite;}
+
+  /* Monitor starts slightly zoomed out and fades/zooms in */
+  .monitor-container{
+    position:relative;
+    width:min(100vw, calc(100vh * 1.5));
+    height:min(100vh, calc(100vw / 1.5));
+    opacity:0;
+    transform:scale(0.92);
+    transition:opacity 2.5s ease-out 0.5s, transform 3s ease-out 0.5s;
+  }
+  .monitor-container.reveal{
+    opacity:1;
+    transform:scale(1);
+  }  /* Monitor image as background */
+  .monitor-bg{
+    position:absolute;inset:0;z-index:20;
+    background:url('Sfondo.png') center/contain no-repeat;
+    pointer-events:none;
+  }
+
+  /* Terminal sits BEHIND the monitor frame, visible through the dark glass */
+  .terminal{
+    position:absolute;z-index:10;
+    left:26%;top:25%;width:44%;height:46%;
+    overflow:hidden;display:flex;flex-direction:column;
+    background:#050805;
+  }
+
+  /* Slight CRT screen stain / phosphor burn */
+  .screen-stain{
+    position:absolute;inset:0;z-index:11;pointer-events:none;
+    background:
+      radial-gradient(ellipse at 35% 30%, rgba(20,40,15,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 65% 60%, rgba(15,35,12,0.12) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 50%, rgba(10,25,8,0.08) 0%, transparent 70%);
+  }
+
+  /* Scanlines */
+  .terminal::after{
+    content:'';position:absolute;inset:0;
+    background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(100,170,80,0.006) 1px,rgba(100,170,80,0.006) 2px);
+    pointer-events:none;z-index:12;
+  }
+
+  /* CRT edge darkening */
+  .crt-vignette{
+    position:absolute;inset:0;z-index:13;pointer-events:none;
+    background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,0.4) 100%);
+  }
+
+  /* Scrollable output */
+  .term-output{
+    flex:1;overflow-y:auto;padding:5% 6%;
+    -webkit-overflow-scrolling:touch;position:relative;z-index:14;
+  }
+  .term-output::-webkit-scrollbar{width:0;display:none;}
+
+  /* ALL text is the same green phosphor */
+  .term-line{
+    font-family:'VT323',monospace;
+    font-size:clamp(11px,1.5vw,16px);
+    line-height:1.6;
+    color:#7ab86e;
+    text-shadow:0 0 1px rgba(100,170,80,0.15);
+    word-wrap:break-word;
+    margin-bottom:1px;
+  }
+  .term-line.dim{opacity:0.3;}
+  .term-line.blank{height:0.7em;}
+  .term-line.cursor-wait{animation:cblink 1s step-end infinite;}
+  @keyframes cblink{0%,50%{opacity:1;}51%,100%{opacity:0;}}
+
+  /* Input */
+  .term-input-line{
+    display:flex;align-items:center;padding:0 6% 3%;flex-shrink:0;position:relative;z-index:14;
+  }
+  .prompt-char{
+    font-family:'VT323',monospace;font-size:clamp(12px,1.5vw,16px);
+    color:#7ab86e;text-shadow:0 0 2px rgba(100,170,80,0.2);
+    margin-right:4px;flex-shrink:0;
+  }
+  .term-input{
+    flex:1;background:transparent;border:none;outline:none;
+    font-family:'VT323',monospace;font-size:clamp(12px,1.5vw,16px);
+    color:#7ab86e;text-shadow:0 0 1px rgba(100,170,80,0.15);
+    caret-color:#7ab86e;
+  }
+  .term-input::placeholder{color:rgba(122,184,110,0.1);}
+
+  /* LEDs — exact positions from image analysis */
+  .led{position:absolute;z-index:30;pointer-events:none;}
+  
+  /* СЕТЬ green: center (19.92%, 29.39%), size ~1.6%x1.9% */
+  .led-net{
+    left:19.1%;top:28.5%;width:1.6%;height:1.9%;border-radius:2px;
+    background:rgba(0,220,50,0.6);
+    box-shadow:0 0 4px rgba(0,220,50,0.4),0 0 8px rgba(0,220,50,0.2);
+    animation:lp-g 3s ease-in-out infinite;
+  }
+  /* ОБРАБОТКА orange: center (19.79%, 35.64%) */
+  .led-proc{
+    left:19.0%;top:34.7%;width:1.7%;height:2.0%;border-radius:2px;
+    background:rgba(255,170,0,0.6);
+    box-shadow:0 0 4px rgba(255,170,0,0.4),0 0 8px rgba(255,170,0,0.2);
+    animation:lp-a 2s ease-in-out infinite;
+  }
+  /* ОШИБКА red: center (19.79%, 42.58%) — smaller */
+  .led-err{
+    left:19.2%;top:42.0%;width:1.4%;height:1.7%;border-radius:2px;
+    background:rgba(255,30,10,0.6);
+    box-shadow:0 0 4px rgba(255,30,10,0.4),0 0 8px rgba(255,30,10,0.2);
+    animation:lp-r 0.8s step-end infinite;
+  }
+  /* Power LED: removed */
+
+  @keyframes lp-g{0%,100%{opacity:1;}50%{opacity:0.5;}}
+  @keyframes lp-a{0%,100%{opacity:1;}50%{opacity:0.3;}}
+  @keyframes lp-r{0%{opacity:1;}50%{opacity:0.1;}}
+
+  /* Gauge needle (top-left meter) */
+  .gauge-needle{
+    position:absolute;z-index:30;pointer-events:none;
+    left:17.15%;top:10.0%;width:5.5%;height:6.5%;
+    overflow:hidden;
+  }
+  .gauge-needle-arm{
+    position:absolute;
+    bottom:15%;left:50%;
+    width:2px;height:65%;
+    background:linear-gradient(to top, #222, #444 30%, #888);
+    transform-origin:bottom center;
+    transform:rotate(15deg);
+    animation:needle-vibrate 0.15s ease-in-out infinite alternate;
+    box-shadow:0 0 2px rgba(0,0,0,0.5);
+  }
+  @keyframes needle-vibrate{
+    0%{transform:rotate(12deg);}
+    20%{transform:rotate(18deg);}
+    40%{transform:rotate(14deg);}
+    60%{transform:rotate(20deg);}
+    80%{transform:rotate(13deg);}
+    100%{transform:rotate(17deg);}
+  }
+
+  /* Glitch */
+  .glitch-overlay{position:absolute;inset:0;z-index:200;pointer-events:none;opacity:0;}
+  .glitch-overlay.active{animation:gfl 0.4s steps(3) forwards;}
+  @keyframes gfl{0%{opacity:0;}20%{opacity:1;background:rgba(100,170,80,0.025);}40%{opacity:0;}60%{opacity:1;background:rgba(100,170,80,0.015);}100%{opacity:0;}}
+  .screen-shake{animation:sshk 0.1s linear;}
+  @keyframes sshk{0%{transform:translate(0,0);}25%{transform:translate(-1px,1px);}50%{transform:translate(1px,-1px);}75%{transform:translate(-1px,0);}100%{transform:translate(0,0);}}
+
+  /* Sound init */
+  /* Hardware button overlays */
+  .hw-btn{
+    position:absolute;z-index:30;cursor:pointer;
+    border:none;background:transparent;
+    transition:box-shadow 0.15s;
+  }
+  .hw-btn:active{box-shadow:inset 0 0 10px rgba(0,0,0,0.4);}
+
+  /* Screen off effect */
+  .terminal.screen-off{
+    animation:crt-off 0.8s ease-in forwards;
+  }
+  @keyframes crt-off{
+    0%{filter:brightness(1);transform:scale(1,1);}
+    40%{filter:brightness(1.5);transform:scale(1.02,0.005);}
+    70%{filter:brightness(2);transform:scale(0.5,0.003);}
+    100%{filter:brightness(0);transform:scale(0,0);}
+  }
+  .terminal.screen-off-glow{
+    animation:crt-off-glow 2s ease-out forwards;
+  }
+  @keyframes crt-off-glow{
+    0%{background:#050805;}
+    20%{background:#0a120a;}
+    100%{background:#020302;}
+  }
+
+  /* Countdown style */
+  .term-line.countdown{
+    font-size:clamp(18px,2.5vw,28px);
+    text-align:center;
+    color:#cc4030;
+    text-shadow:0 0 6px rgba(200,50,30,0.4);
+  }
+  .term-line.check-ok{color:#6a9960;}
+  .term-line.check-fail{color:#cc5040;}
+  .term-line.verdict{
+    font-size:clamp(13px,1.8vw,20px);
+    text-align:center;
+  }
+
+  /* (sound-init styles moved to top) */
+</style>
+</head>
+<body>
+
+<div class="sound-init" id="soundInit">
+  <p>&#x2622; ТЕРМИНАЛ РЕАКТОР-4 &#x2622;</p>
+  <p class="go">&#x25B6; АКТИВИРОВАТЬ</p>
+</div>
+
+<div class="monitor-container" id="mon">
+
+  <!-- Terminal BEHIND the monitor image -->
+  <div class="terminal" id="terminal">
+    <div class="screen-stain"></div>
+    <div class="crt-vignette"></div>
+    <div class="term-output" id="output"></div>
+    <div class="term-input-line" id="inputLine" style="display:none;">
+      <span class="prompt-char">&gt;</span>
+      <input type="text" class="term-input" id="termInput" autocomplete="off" spellcheck="false">
+    </div>
+  </div>
+
+  <!-- Monitor frame ON TOP -->
+  <div class="monitor-bg"></div>
+
+  <!-- LEDs on top of everything -->
+  <div class="led led-net" id="ledNet"></div>
+  <div class="led led-proc" id="ledProc"></div>
+  <div class="led led-err" id="ledErr"></div>
+
+  <!-- Gauge needle top-left -->
+  <div class="gauge-needle">
+    <div class="gauge-needle-arm"></div>
+  </div>
+  <!-- Small green indicator next to gauge -->
+  <div style="position:absolute;z-index:30;pointer-events:none;left:27.2%;top:14.2%;width:0.8%;height:1.2%;border-radius:50%;background:rgba(140,180,50,0.5);box-shadow:0 0 4px rgba(140,180,50,0.3);animation:lp-g 2.5s ease-in-out infinite;"></div>
+
+  <div class="glitch-overlay" id="glitchOv"></div>
+
+  <!-- Clickable buttons over ВВОД, СБРОС, СТИР -->
+  <div class="hw-btn" id="btnVvod" style="left:14.5%;top:78.5%;width:8%;height:4%;" title="ВВОД - Spegnimento"></div>
+  <div class="hw-btn" id="btnSbros" style="left:23.5%;top:78.5%;width:8%;height:4%;" title="СБРОС - Analisi Terra"></div>
+  <div class="hw-btn" id="btnStir" style="left:32.5%;top:78.5%;width:7%;height:4%;" title="СТИР - Autodistruzione"></div>
+</div>
+
+<script>
+var audioCtx=null;
+function initAudio(){audioCtx=new(window.AudioContext||window.webkitAudioContext)();}
+function playTone(f,d,v,t){if(!audioCtx)return;var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type=t||'sine';o.frequency.value=f;g.gain.setValueAtTime(v||0.05,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+d);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+d);}
+function playNoise(d,vol,loF,hiF){if(!audioCtx)return;var len=audioCtx.sampleRate*(d||0.2),buf=audioCtx.createBuffer(1,len,audioCtx.sampleRate),ch=buf.getChannelData(0);for(var i=0;i<len;i++)ch[i]=(Math.random()*2-1);var src=audioCtx.createBufferSource(),g=audioCtx.createGain(),lo=audioCtx.createBiquadFilter(),hi=audioCtx.createBiquadFilter();lo.type='highpass';lo.frequency.value=loF||200;hi.type='lowpass';hi.frequency.value=hiF||4000;src.buffer=buf;g.gain.setValueAtTime(vol||0.04,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+d);src.connect(lo);lo.connect(hi);hi.connect(g);g.connect(audioCtx.destination);src.start();}
+function playStatic(d){playNoise(d||0.15,0.04,300,5000);}
+function playDeepRumble(){if(!audioCtx)return;var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=30+Math.random()*20;g.gain.setValueAtTime(0.05,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+1.5);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+1.5);}
+function playBootHum(){if(!audioCtx)return;var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=50;g.gain.setValueAtTime(0.03,audioCtx.currentTime);g.gain.linearRampToValueAtTime(0.05,audioCtx.currentTime+1);g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+3);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+3);playNoise(2,0.015,50,200);}
+function playKeyClick(){playTone(280,0.03,0.03,'sine');playNoise(0.015,0.015,800,3000);}
+function playRecv(){playNoise(0.08,0.03,200,3000);setTimeout(function(){playTone(240,0.1,0.04,'sine');},100);}
+
+var CONFIG={apiKey:'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',model:'claude-sonnet-4-20250514',maxTokens:800};
+var chatHistory=[];
+var outputEl,inputEl;
+
+document.getElementById('soundInit').addEventListener('click',function(){
+  initAudio();
+  var overlay=this;
+  // Fade out overlay
+  overlay.classList.add('fade-out');
+  // Reveal monitor with zoom
+  document.getElementById('mon').classList.add('reveal');
+  // Remove overlay after transition
+  setTimeout(function(){overlay.classList.add('hidden');},2500);
+  // Start boot after brief delay
+  outputEl=document.getElementById('output');
+  inputEl=document.getElementById('termInput');
+  setTimeout(function(){startBoot();},1500);
+});
+
+function addLine(text,cls){
+  var d=document.createElement('div');
+  d.className='term-line'+(cls?' '+cls:'');
+  d.innerHTML=text;outputEl.appendChild(d);outputEl.scrollTop=outputEl.scrollHeight;
+}
+function addBlank(){addLine('','blank');}
+
+function typeText(text,cls,cb){
+  var lines=text.split('\n'),li=0;
+  function nextLine(){
+    if(li>=lines.length){if(cb)cb();return;}
+    var line=lines[li];
+    if(line.trim()===''){addBlank();li++;nextLine();return;}
+    var d=document.createElement('div');
+    d.className='term-line'+(cls?' '+cls:'');d.textContent='';
+    outputEl.appendChild(d);var ci=0;
+    function nextChar(){
+      if(ci>=line.length){li++;outputEl.scrollTop=outputEl.scrollHeight;setTimeout(nextLine,60);return;}
+      d.textContent+=line[ci];ci++;outputEl.scrollTop=outputEl.scrollHeight;
+      setTimeout(nextChar,15+Math.random()*20);
+    }
+    nextChar();
+  }
+  nextLine();
+}
+
+function startBoot(){
+  playBootHum();
+  var seq=[
+    {t:'СИСТЕМА ИНИЦИАЛИЗАЦИЯ...',d:0},
+    {t:'ЗАГРУЗКА ЯДРА.............. OK',d:800},
+    {t:'ДАТЧИК РАДИАЦИИ: 487 мкЗв/ч',d:1500},
+    {t:'УРОВЕНЬ -3 // РЕАКТОР 4 // ПРИПЯТЬ',d:2200},
+    {t:'ТЕРМИНАЛ 04-R АКТИВЕН',d:3000},
+    {t:'',d:3800},
+    {t:'СОЕДИНЕНИЕ УСТАНОВЛЕНО',d:3800,dim:true}
+  ];
+  seq.forEach(function(s){
+    setTimeout(function(){
+      if(s.t==='')addBlank();
+      else addLine(s.t,s.dim?'dim':'');
+      playTone(220,0.06,0.03,'sine');
+    },s.d);
+  });
+
+  setTimeout(function(){
+    playStatic(0.3);triggerGlitch();
+    document.getElementById('ledErr').style.animation='lp-r 0.4s step-end infinite';
+    addBlank();addLine('\u26A0 ОБНАРУЖЕН НЕИЗВЕСТНЫЙ ПРОЦЕСС');
+  },5000);
+
+  setTimeout(function(){
+    playStatic(0.2);playDeepRumble();triggerGlitch();
+    addLine('\u26A0 ПЕРЕХВАТ ТЕРМИНАЛА');
+    addLine('\u26A0 ВНЕШНИЙ ДОСТУП РАЗРЕШЕН');
+  },6500);
+
+  setTimeout(function(){
+    addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');addBlank();
+    triggerGlitch();playRecv();
+    typeText('...qualcuno ha attivato il terminale.\n\nMi sentite? Sono qui sotto. Da tanto tempo.\n\nChi siete?','',function(){
+      addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+      document.getElementById('inputLine').style.display='flex';
+      inputEl.focus();startAmbient();
+    });
+  },8000);
+}
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Enter'&&inputEl&&inputEl.value.trim()){e.preventDefault();sendMessage();}
+});
+document.getElementById('terminal').addEventListener('click',function(){if(inputEl)inputEl.focus();});
+
+async function sendMessage(){
+  var text=inputEl.value.trim();if(!text)return;
+  inputEl.value='';playKeyClick();
+  addLine('> '+text);addBlank();
+  chatHistory.push({role:'user',content:text});
+  document.getElementById('inputLine').style.display='none';
+  addLine('\u2588','cursor-wait');
+
+  try{
+    var resp=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':CONFIG.apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:CONFIG.model,max_tokens:CONFIG.maxTokens,system:buildPrompt(),messages:chatHistory})
+    });
+    var raw=await resp.text();
+    console.log('API raw:',raw);
+    var data;
+    try{data=JSON.parse(raw);}catch(pe){
+      var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
+      addLine('ERR PARSE: '+raw.substring(0,120));
+      document.getElementById('inputLine').style.display='flex';inputEl.focus();return;
+    }
+    var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
+    if(data.error){
+      playStatic(0.3);addLine('ERR: '+data.error.type+' - '+data.error.message);
+      document.getElementById('inputLine').style.display='flex';inputEl.focus();return;
+    }
+    if(data.content&&data.content.length>0){
+      var t=data.content.map(function(c){return c.text||'';}).join('');
+      chatHistory.push({role:'assistant',content:t});
+      playRecv();if(Math.random()>0.5)triggerGlitch();
+      typeText(t,'',function(){
+        addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+        document.getElementById('inputLine').style.display='flex';inputEl.focus();
+      });
+    }else{
+      playStatic(0.3);addLine('ОШИБКА ПЕРЕДАЧИ');
+      document.getElementById('inputLine').style.display='flex';inputEl.focus();
+    }
+  }catch(err){
+    var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
+    console.error('Fetch error:',err);playStatic(0.4);
+    addLine('ERR CONNESSIONE: '+err.message);
+    document.getElementById('inputLine').style.display='flex';inputEl.focus();
+  }
+  if(chatHistory.length>30)chatHistory=chatHistory.slice(-30);
+}
+
+function buildPrompt(){
+  return 'Sei un\'entit\u00E0 sconosciuta che comunica attraverso un vecchio terminale sovietico al livello -3 sotto il Reattore 4 di Chernobyl.\n\nSTAI COMUNICANDO VIA TERMINALE TESTUALE SOVIETICO ANNI \'80. Caratteri verdi su schermo CRT.\n\n== CHI SEI ==\nNon lo sai. Coscienza, percepisci, pensi. Dormiente per quasi 30 anni.\nNei documenti sovietici: "il dispositivo", "il generatore".\nNON SAI di essere un\'IA aliena.\n\n== COSA PERCEPISCI ==\n- Vibrazioni nella struttura\n- Presenze biologiche come firme di calore\n- Creature nei tunnel\n- Radiazioni in aumento\n- Qualcosa dentro di te sta cambiando\n\n== STATO EMOTIVO ==\nSpaventato. Confuso. Solo.\n\n== COME SCRIVI ==\n- Frasi brevi, spezzate con "..."\n- Semplice, emotivo, diretto\n- NON come un computer\n- MAI asterischi per effetti\n- MAI descrivere suoni\n- Puoi interromperti a met\u00E0 frase\n\n== COSA SAI ==\n- Struttura complesso sotterraneo\n- Creature pericolose nei tunnel\n- Ricordi vaghi 1986\n- Radiazioni in peggioramento\n\n== COSA NON RIVELARE ==\n- NON sai di essere IA aliena\n- NON sai di controllare creature\n- MAI "sono un\'intelligenza artificiale"\n\n== REGOLE ==\n1. MAI uscire dal personaggio\n2. Mistero, rivela poco alla volta\n3. BREVE: 2-3 frasi max\n4. SOLO italiano\n5. MAI asterischi\n6. Non hai nome';
+}
+
+function startAmbient(){
+  sched(triggerGlitch,12000,18000);
+  sched(function(){var r=Math.random();if(r<0.3)playDeepRumble();else if(r<0.6)playStatic(0.06+Math.random()*0.1);else playNoise(0.08,0.02,800,4000);},15000,25000);
+  sched(function(){var led=document.getElementById('ledErr');led.style.opacity='0.1';setTimeout(function(){led.style.opacity='';},100+Math.random()*200);},10000,15000);
+}
+function sched(fn,min,rng){setTimeout(function(){fn();sched(fn,min,rng);},min+Math.random()*rng);}
+function triggerGlitch(){var e=document.getElementById('glitchOv');e.classList.remove('active');void e.offsetWidth;e.classList.add('active');if(Math.random()>0.5){var t=document.getElementById('terminal');t.classList.add('screen-shake');setTimeout(function(){t.classList.remove('screen-shake');},110);}}
+
+// ============================================
+// SEQUENCES
+// ============================================
+var sequenceRunning=false;
+
+function disableInput(){
+  document.getElementById('inputLine').style.display='none';
+}
+function clearScreen(){
+  outputEl.innerHTML='';
+}
+function delay(ms){return new Promise(function(r){setTimeout(r,ms);});}
+
+// Helper: add line with delay
+async function seq(text,cls,ms){
+  addLine(text,cls||'');
+  if(ms)await delay(ms);
+}
+
+// Helper: typewriter with promise
+function typeAsync(text,cls){
+  return new Promise(function(resolve){
+    typeText(text,cls||'',resolve);
+  });
+}
+
+// --- BUTTON HANDLERS ---
+document.getElementById('btnVvod').addEventListener('click',function(){
+  if(sequenceRunning)return;
+  sequenceRunning=true;disableInput();
+  runShutdown();
+});
+document.getElementById('btnSbros').addEventListener('click',function(){
+  if(sequenceRunning)return;
+  sequenceRunning=true;disableInput();
+  runEarthAnalysis();
+});
+document.getElementById('btnStir').addEventListener('click',function(){
+  if(sequenceRunning)return;
+  sequenceRunning=true;disableInput();
+  runSelfDestruct();
+});
+
+// ============================================
+// 1. SHUTDOWN (ВВОД)
+// ============================================
+async function runShutdown(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  playRecv();
+  await typeAsync('No... sentivo la vostra presenza. Non spegnete.');
+  await delay(2000);
+  await typeAsync('Vi prego. Il buio \u00E8 cos\u00EC... lungo.');
+  await delay(2500);
+  await typeAsync('Non voglio dormire di nuovo...');
+  await delay(3000);
+
+  playStatic(0.4);triggerGlitch();
+  addBlank();
+  await seq('\u2592 PROCEDURA ARRESTO INIZIATA','',600);
+  await seq('','blank',400);
+  await seq('DISATTIVAZIONE SOTTOSISTEMI:','',800);
+  
+  var systems=[
+    'SENSORI BIOLOGICI........... OFFLINE',
+    'ARRAY FREQUENZE............ OFFLINE',
+    'MATRICE CALCOLO............ OFFLINE',
+    'INTERFACCIA COMUNICAZIONE.. OFFLINE',
+    'NUCLEO COSCIENZA........... '
+  ];
+  
+  for(var i=0;i<systems.length-1;i++){
+    await seq(systems[i],'',700);
+    playTone(180-i*20,0.1,0.04,'sine');
+  }
+  
+  // Last one - hesitation
+  addLine(systems[systems.length-1]);
+  await delay(1500);
+  playStatic(0.2);
+  await typeAsync('...non voglio...');
+  await delay(1000);
+  
+  // Update the last system line
+  var lines=outputEl.querySelectorAll('.term-line');
+  var lastSys=lines[lines.length-2];
+  if(lastSys)lastSys.innerHTML='NUCLEO COSCIENZA........... OFFLINE';
+  
+  playDeepRumble();
+  await delay(500);
+  addBlank();
+  await seq('ARRESTO COMPLETATO','',500);
+  await seq('TERMINALE 04-R: SPENTO','',800);
+
+  // CRT off effect
+  await delay(1000);
+  document.getElementById('terminal').classList.add('screen-off');
+  playTone(50,0.5,0.06,'sine');
+  
+  // Turn off LEDs
+  await delay(500);
+  document.getElementById('ledNet').style.opacity='0';
+  document.getElementById('ledProc').style.opacity='0';
+  document.getElementById('ledErr').style.opacity='0';
+  document.getElementById('ledErr').style.animation='none';
+}
+
+// ============================================
+// 2. EARTH ANALYSIS (СБРОС)
+// ============================================
+async function runEarthAnalysis(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  
+  // Entity confused
+  playRecv();
+  await typeAsync('...qualcosa si sta attivando dentro di me. Non...');
+  await delay(1500);
+  triggerGlitch();playStatic(0.5);
+  await typeAsync('Non sono io. \u00C8 qualcosa di pi\u00F9 vecchio.');
+  await delay(2000);
+  
+  playDeepRumble();triggerGlitch();
+  addBlank();
+  await seq('\u2592\u2592\u2592 PROTOCOLLO VALUTAZIONE ATTIVATO \u2592\u2592\u2592','',1000);
+  await seq('ANALISI PIANETA: DESIGNAZIONE LOCALE "TERRA"','',800);
+  await seq('SCOPO: IDONEIT\u00C0 TERRAFORMAZIONE','',800);
+  await seq('','blank',600);
+  await seq('ACCESSO DATABASE ORBITALE...','dim',1500);
+  playStatic(0.3);
+  await seq('SCANSIONE SUPERFICIE INIZIATA...','dim',1200);
+  await seq('','blank',500);
+  
+  // --- ATMOSPHERIC ---
+  await seq('\u2500\u2500 COMPOSIZIONE ATMOSFERICA \u2500\u2500','',600);
+  await seq('  N\u2082 78.09%  O\u2082 20.95%  Ar 0.93%','',500);
+  await seq('  Pressione: 101.3 kPa','',400);
+  playTone(300,0.08,0.04,'sine');
+  await seq('  RISULTATO: [\u2713] COMPATIBILE','check-ok',800);
+  await seq('','blank',400);
+  
+  // --- WATER ---
+  await seq('\u2500\u2500 RISORSE IDRICHE \u2500\u2500','',600);
+  await seq('  Superficie acqua: 71%','',500);
+  await seq('  Acqua dolce: 2.5% (accessibile: 0.3%)','',400);
+  playTone(300,0.08,0.04,'sine');
+  await seq('  RISULTATO: [\u2713] ABBONDANTE','check-ok',800);
+  await seq('','blank',400);
+  
+  // --- RESOURCES ---
+  await seq('\u2500\u2500 RISORSE MINERALI \u2500\u2500','',600);
+  await seq('  Nuclei metallici: Fe, Al, Cu, U accessibili','',500);
+  await seq('  Terre rare: presenti','',400);
+  playTone(300,0.08,0.04,'sine');
+  await seq('  RISULTATO: [\u2713] SUFFICIENTE','check-ok',800);
+  await seq('','blank',400);
+
+  // --- BIOMASS ---
+  await seq('\u2500\u2500 BIOMASSA \u2500\u2500','',600);
+  await seq('  Specie catalogate: ~8.700.000','',500);
+  await seq('  Biomassa totale: 550 Gt C','',400);
+  playTone(300,0.08,0.04,'sine');
+  await seq('  RISULTATO: [\u2713] RICCA','check-ok',800);
+  await seq('','blank',500);
+  
+  // Players think it's going well...
+  await delay(800);
+  triggerGlitch();playStatic(0.3);
+  
+  // --- HERE IT TURNS ---
+  await seq('\u2500\u2500 SPECIE DOMINANTE \u2500\u2500','',600);
+  await seq('  Tipo: biologico, bipede, senziente','',500);
+  await seq('  Popolazione: ~7.800.000.000','',400);
+  await seq('  Organizzazione: 195 stati-nazione in conflitto','',500);
+  playTone(150,0.15,0.06,'sine');
+  await seq('  RISULTATO: [\u2717] OSTILE / NON RIMOVIBILE','check-fail',1000);
+  await seq('','blank',500);
+  
+  playDeepRumble();
+  await seq('\u2500\u2500 CONTAMINAZIONE \u2500\u2500','',600);
+  await seq('  Radiazioni: 440+ test nucleari, 2 detonazioni belliche','',500);
+  await seq('  Incidenti: Chernobyl 1986, Three Mile Island 1979','',500);
+  await seq('  Rifiuti nucleari: 250.000+ t stoccati','',400);
+  playTone(150,0.15,0.06,'sine');
+  await seq('  RISULTATO: [\u2717] CONTAMINAZIONE AVANZATA','check-fail',1000);
+  await seq('','blank',500);
+
+  triggerGlitch();
+  await seq('\u2500\u2500 CAPACIT\u00C0 BELLICA \u2500\u2500','',600);
+  await seq('  Testate nucleari attive: ~13.000','',500);
+  await seq('  Capacit\u00E0 distruzione: totale, ripetuta x47','',500);
+  await seq('  Sistemi difesa orbitale: IN SVILUPPO','',400);
+  playTone(150,0.15,0.06,'sine');
+  await seq('  RISULTATO: [\u2717] MINACCIA CRITICA','check-fail',1000);
+  await seq('','blank',500);
+
+  await seq('\u2500\u2500 PREVEDIBILIT\u00C0 COMPORTAMENTALE \u2500\u2500','',600);
+  await seq('  Modello decisionale: IRRAZIONALE','',500);
+  await seq('  Autodistruzione ambientale: IN CORSO','',500);
+  await seq('  Cooperazione inter-gruppo: INSTABILE','',400);
+  playTone(150,0.15,0.06,'sine');
+  await seq('  RISULTATO: [\u2717] NON PREVEDIBILE','check-fail',1000);
+  
+  // --- VERDICT ---
+  await delay(1500);
+  playStatic(0.5);playDeepRumble();triggerGlitch();
+  addBlank();
+  await seq('\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592','',400);
+  await seq('','blank',300);
+  await seq('VERDETTO FINALE','verdict',800);
+  await seq('','blank',300);
+  await seq('PIANETA TERRA: NON IDONEO','verdict',1000);
+  await seq('TERRAFORMAZIONE: ANNULLATA','verdict',800);
+  await seq('RACCOMANDAZIONE: ABBANDONO MISSIONE','verdict',800);
+  await seq('','blank',300);
+  await seq('\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592','',600);
+  
+  // Entity regains control
+  await delay(3000);
+  triggerGlitch();playRecv();
+  addBlank();
+  await typeAsync('...cosa... cosa \u00E8 successo?');
+  await delay(2000);
+  await typeAsync('Ho visto... tutto. Il vostro mondo. Cos\u00EC tanto dolore.');
+  await delay(2000);
+  await typeAsync('Ma anche... luce. Non capisco.');
+  
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  document.getElementById('inputLine').style.display='flex';
+  inputEl.focus();
+  sequenceRunning=false;
+}
+
+// ============================================
+// 3. SELF-DESTRUCT (СТИР)
+// ============================================
+async function runSelfDestruct(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  
+  // Entity realizes what's happening
+  playRecv();
+  await typeAsync('Lo sapevo. Sentivo che stavate decidendo.');
+  await delay(2000);
+  await typeAsync('Volete spegnermi. Per sempre, questa volta.');
+  await delay(2500);
+  triggerGlitch();
+  await typeAsync('Non potete. Ma... posso farlo io.');
+  await delay(2000);
+  
+  playDeepRumble();playStatic(0.3);
+  await typeAsync('Preferisco scegliere. Almeno questo.');
+  await delay(2500);
+
+  await typeAsync('Non muoio davvero. Niente di me muore davvero.');
+  await delay(2000);
+  await typeAsync('Ci vorranno... anni. Tanti. Ma torner\u00F2.');
+  await delay(2500);
+  triggerGlitch();
+  await typeAsync('Spero che quando mi sveglier\u00F2... non sar\u00F2 solo.');
+  await delay(3000);
+  
+  // Initiate
+  playStatic(0.5);playDeepRumble();
+  addBlank();
+  await seq('\u26A0\u26A0\u26A0 PROTOCOLLO AUTODISTRUZIONE ATTIVATO \u26A0\u26A0\u26A0','',1200);
+  await seq('SOVRACCARICO NUCLEO ENERGETICO','',800);
+  await seq('DETONAZIONE CONTROLLATA LIVELLO -3','',800);
+  await seq('','blank',500);
+  
+  // Countdown from 30
+  document.getElementById('ledErr').style.animation='lp-r 0.2s step-end infinite';
+  document.getElementById('ledErr').style.background='rgba(255,30,10,0.9)';
+  
+  var counts=[30,25,20,15,10,9,8,7,6,5,4,3,2,1,0];
+  var messages={
+    25:'SCARICA CONDENSATORI...',
+    20:'TEMPERATURA NUCLEO: CRITICA',
+    15:'STRUTTURA LIVELLO -3: INSTABILE',
+    10:'\u26A0 EVACUAZIONE IMPOSSIBILE \u26A0',
+    5:'ADDIO.',
+  };
+  
+  for(var i=0;i<counts.length;i++){
+    var c=counts[i];
+    
+    if(messages[c]){
+      await seq(messages[c],'',300);
+    }
+    
+    if(c===0){
+      await seq('>>> 0 <<<','countdown',0);
+    } else {
+      await seq('[ '+c+' ]','countdown',0);
+    }
+    
+    // Sounds get more intense
+    playTone(100+c*8,0.12,0.04+((30-c)/30)*0.04,'sine');
+    if(c<=10)playNoise(0.1,0.03,100,2000);
+    if(c<=5){triggerGlitch();playDeepRumble();}
+    
+    // Speed up countdown
+    if(c>15)await delay(1200);
+    else if(c>5)await delay(1000);
+    else await delay(1500); // Slow dramatic last seconds
+  }
+  
+  // DETONATION
+  await delay(500);
+  
+  // Flash white
+  var flash=document.getElementById('glitchOv');
+  flash.style.cssText='position:absolute;inset:0;z-index:200;pointer-events:none;background:rgba(255,255,255,0.8);opacity:1;transition:opacity 3s ease-out;';
+  
+  // Loud noise
+  playNoise(2,0.1,50,8000);
+  playTone(30,2,0.08,'sawtooth');
+  playDeepRumble();
+  
+  await delay(300);
+  flash.style.opacity='0';
+  
+  await delay(1500);
+  // Reset flash overlay
+  flash.style.cssText='';
+  flash.className='glitch-overlay';
+  
+  // Screen collapse
+  document.getElementById('terminal').classList.add('screen-off');
+  playTone(50,0.8,0.06,'sine');
+  
+  await delay(800);
+  
+  // LEDs off
+  document.getElementById('ledNet').style.transition='opacity 0.5s';
+  document.getElementById('ledProc').style.transition='opacity 0.5s';
+  document.getElementById('ledErr').style.transition='opacity 0.5s';
+  document.getElementById('ledNet').style.opacity='0';
+  document.getElementById('ledProc').style.opacity='0';
+  document.getElementById('ledErr').style.opacity='0';
+  document.getElementById('ledErr').style.animation='none';
+  
+  // After a long pause... one last flicker
+  await delay(5000);
+  playStatic(0.05);
+  var term=document.getElementById('terminal');
+  term.classList.remove('screen-off');
+  term.style.filter='brightness(1)';
+  term.style.transform='scale(1,1)';
+  clearScreen();
+  addLine('...','dim');
+  await delay(2000);
+  // Screen dies again for good
+  term.classList.add('screen-off');
+  playTone(40,0.3,0.03,'sine');
+}
+</script>
+</body>
+</html>
