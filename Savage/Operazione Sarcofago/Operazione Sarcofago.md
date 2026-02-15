@@ -5,7 +5,7 @@
 ## Indice
 
 ### Informazioni Generali
-- [[Background]]
+- [[Savage/Operazione Sarcofago/Background]]
 - [[La Minaccia]]
 - [[Obiettivo Missione]]
 

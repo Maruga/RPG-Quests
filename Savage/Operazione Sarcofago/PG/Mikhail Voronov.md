@@ -114,6 +114,6 @@ Se dai questa scheda al giocatore (versione senza segreto), includi solo:
 
 ---
 
-Vedi anche: [[Dinamica Russo-Italiano]] | [[Background]]
+Vedi anche: [[Dinamica Russo-Italiano]] | [[Savage/Operazione Sarcofago/Background]]
 
 #pg #russo #scout #segreto
