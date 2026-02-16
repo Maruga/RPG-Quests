@@ -2,150 +2,110 @@
 
 ## Regola Base
 
-Entro **3 metri** da un mutante (vivo o morto), inizia il processo di mutazione.
+Entro **3 metri** da un mutante (vivo o morto), inizia il processo di mutazione. Ogni round di esposizione → tiro **Vigore**. Nessuna protezione nota. Nessuna cura.
 
-| Condizione | Effetto |
-|------------|---------|
-| **Distanza** | < 3 metri |
-| **Trigger** | Ogni round di esposizione |
-| **Tiro** | Vigore |
-| **Protezione** | Nessuna conosciuta |
-| **Cura** | Nessuna |
+I cadaveri sono **altrettanto pericolosi** — la risonanza conserva i corpi perfettamente, anche dopo decenni. Bruciare i corpi (lanciafiamme) elimina il rischio.
 
 ## Progressione Stadi
 
-| Round Esposizione | Modificatore Tiro | Stadio se Fallito |
-|-------------------|-------------------|-------------------|
+| Round Esposizione | Modificatore | Stadio se Fallito |
+|---|---|---|
 | 1° | +0 | Stadio 1 |
 | 2° | -1 | Stadio 2 |
 | 3° | -2 | Stadio 3 |
 | 4°+ | -3 | Stadio 4 |
 
-> [!warning] Importante
-> I successi NON azzerano gli stadi. Una volta raggiunto uno stadio, resta permanente.
+> **I successi NON azzerano gli stadi.** Una volta raggiunto uno stadio, resta permanente.
 
 ## Stadi della Mutazione
 
 ### Stadio 1 — Contaminazione
 
-**Sintomi:**
-- Nausea
-- Tremori leggeri
-- Sudorazione fredda
-- Mal di testa
+**Sintomi:** Nausea, tremori, sudorazione fredda, mal di testa.
 
-**Effetti Meccanici:**
-- Nessun bonus/malus meccanico
-- Solo roleplay
+**Meccanica:** Nessun bonus/malus. Solo roleplay.
 
-**Visivo:**
-- Nessun segno esterno visibile
+**Visibile:** Nessun segno esterno.
+
+**Controllo IA:** Percezione vaga dello stato mentale. Può inviare impulsi ("vai lì", "guarda quello") — il soggetto resiste con tiro **Spirito**, con malus crescente per prossimità alla fonte. Più vicino = più forte.
+
+**Se allontanato dalla rete:** Impulsi cessano. Nessun effetto collaterale grave.
 
 ---
 
 ### Stadio 2 — Alterazione
 
-**Sintomi:**
-- Vene scurite visibili (collo, braccia)
-- Febbre alta
-- Dolore muscolare
-- Sensi leggermente acuti
+**Sintomi:** Vene scurite (collo, braccia), febbre alta, dolore muscolare, sensi acuti.
 
-**Effetti Meccanici:**
+**Meccanica:**
+
 | Bonus | Malus |
-|-------|-------|
+|---|---|
 | +1 Forza O Vigore | -1 Intelligenza O Spirito |
 
-**Visivo:**
-- Vene nere visibili sotto la pelle
-- Occhi leggermente velati
-- Pallore
+**Visibile:** Vene nere sotto la pelle, occhi velati, pallore.
+
+**Controllo IA:** Pieno. Il soggetto esegue ordini senza possibilità di resistenza.
+
+**Se allontanato dalla rete:** Impazzisce o cade in stato catatonico. Vuoto — come se non ci fosse più nessuno dentro.
 
 ---
 
 ### Stadio 3 — Trasformazione Parziale
 
-**Sintomi:**
-- Deformazioni visibili
-- Impulsi violenti
-- Difficoltà a concentrarsi
-- Udito/olfatto molto acuti
-- Momenti di "assenza"
+**Sintomi:** Deformazioni visibili, impulsi violenti, difficoltà a concentrarsi, udito/olfatto acuti, momenti di "assenza".
 
-**Effetti Meccanici:**
+**Meccanica:**
+
 | Bonus | Malus |
-|-------|-------|
+|---|---|
 | +2 Forza | -2 a tutti i tiri mentali |
-| +1 Percezione | Impulsi violenti (tiro Spirito per controllarsi) |
+| +1 Percezione | Impulsi violenti (vedi sotto) |
 
-**Visivo:**
-- Vene nere estese
-- Deformazioni ossee iniziali
-- Occhi completamente velati/cambiati
-- Movimenti a scatti
+**Visibile:** Vene nere estese, deformazioni ossee iniziali, occhi completamente cambiati, movimenti a scatti.
 
-**Rischio Perdita Controllo:**
-Se fallisce un tiro Spirito in combattimento, il PG attacca il bersaglio più vicino (amico o nemico).
+**Controllo IA:** Totale.
+
+**Rischio Perdita Controllo:** Se il disturbatore interrompe il segnale e il PG fallisce un tiro **Spirito**, attacca il bersaglio più vicino (amico o nemico).
+
+**Se allontanato dalla rete:** Come Stadio 2, ma più violento.
 
 ---
 
 ### Stadio 4 — Trasformazione Completa
 
-**Il PG diventa un PNG.**
+**Il PG diventa un PNG.** L'IA ha il controllo totale. Nessuna volontà propria.
 
-L'IA assume il controllo. Il personaggio perde ogni volontà propria.
+Se il segnale viene interrotto (disturbatore): frammenti di memoria tornano brevemente. Confusione, terrore, potrebbe riconoscere i compagni. La trasformazione fisica è **irreversibile**.
 
-**Se il collegamento viene interrotto (disturbatore):**
-- Frammenti di memoria tornano
-- Confusione, terrore
-- Potrebbe riconoscere i compagni
-- Non può essere "salvato" — la trasformazione fisica è irreversibile
+## Il Dilemma
 
-## Note per il GM
+Un PG a Stadio 2-3 è **più efficace** in combattimento ma sta scivolando via.
 
-### Velocità Narrativa
+Domande per il tavolo: Nasconde la condizione agli altri? Chiede di essere ucciso prima della trasformazione? Cerca di sfruttare i bonus finché può?
+
+## Velocità Narrativa
 
 La progressione può essere accelerata o rallentata per esigenze narrative:
 
 | Situazione | Modifica |
-|------------|----------|
-| Prima esposizione (Belenko) | Molto rapida (shock narrativo) |
+|---|---|
+| Okonkwo si avvicina troppo a un corpo | Lenta — ha tempo di capire cosa succede, analizzare il contagio dall'interno, dare informazioni al team |
 | PG in combattimento | Normale (tensione) |
 | Esposizione prolungata inevitabile | Lenta (drammatica) |
-
-### Il Dilemma
-
-Un PG a Stadio 2-3 è **più efficace** in combattimento ma sta scivolando via.
-
-Domande per il tavolo:
-- Nasconde la condizione agli altri?
-- Chiede di essere ucciso prima della trasformazione?
-- Cerca di sfruttare i bonus finché può?
-
-### Mutanti Morti
-
-I cadaveri dei mutanti sono **altrettanto pericolosi**. Il contagio non richiede che il mutante sia vivo.
-
-Questo rende il lanciafiamme dell'Italiano cruciale: bruciare i corpi elimina il rischio.
 
 ## Esempio di Gioco
 
 > **GM:** Marco, sei a 2 metri dal mutante abbattuto. Fine del round.
-> 
 > **Giocatore:** Merda. Tiro Vigore?
-> 
 > **GM:** Sì. È la tua prima esposizione, nessun modificatore.
-> 
 > **Giocatore:** [tira] ...3. Fallito.
-> 
 > **GM:** Senti una fitta di nausea. Niente di visibile, ma qualcosa non va. Sei a Stadio 1.
-> 
 > **Giocatore:** Mi allontano immediatamente.
-> 
 > **GM:** Round successivo. Sei a 4 metri. Fuori pericolo. Per ora. Ma lo Stadio 1 resta.
 
 ---
 
-Vedi anche: [[Mutanti]] | [[La Minaccia]]
+Vedi anche: [[Mutanti]] | [[Frequenze]] | [[La Minaccia]]
 
 #meccanica #contagio #mutazione

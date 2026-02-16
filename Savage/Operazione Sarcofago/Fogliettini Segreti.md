@@ -69,15 +69,18 @@ a meno che il tuo personaggio non decida di farlo.
 RISERVATO — SOLO PER TE
 ═══════════════════════════════════════════════════════
 
-Tra gli scienziati c'è qualcuno che ami.
-[GM: inserisci il nome scelto]
+Durante le visite mediche pre-missione ti è stato 
+comunicato che gli esami genetici del team allargato 
+hanno rivelato una corrispondenza.
 
-Non l'hai detto a nessuno. Non vuoi essere rimosso 
-dalla missione. Non vuoi che pensino che non sei 
-professionale.
+Dr. Helena Weiss, 22 anni, è tua figlia.
 
-Quando l'hai vista nella lista... il cuore si è 
-fermato per un secondo.
+Hai sempre avuto il sospetto — una relazione di tanti
+anni fa, mai confermata. Ora è confermato.
+
+Lei non sa chi sei. Non ti ha mai incontrato.
+Sta per entrare in una missione da cui potreste 
+non tornare.
 
 Durante la sessione il GM ti passerà fogliettini.
 Leggili e reagisci. Non condividere con gli altri
@@ -97,20 +100,22 @@ RISERVATO — SOLO PER TE
 
 Sei già stato in questa zona. 1986. Un'operazione che 
 ufficialmente non esiste. Eri posizionato all'esterno.
-Il tuo compito era... ripulire i fuggitivi.
 
-Durante quella missione sei stato esposto a qualcosa.
-È rimasto dormiente per 29 anni.
+Il tuo ordine era chiaro: chi esce da quella porta
+deve morire ed essere bruciato. Hai ucciso civili.
+Gente comune che implorava. Li hai sterminati tutti.
+
+Un giovane Spetsnaz è uscito in barella, incosciente.
+L'ordine diceva di eliminarlo. Tu l'hai lasciato
+passare. Hai disobbedito.
+
+Quel russo è qui oggi. Nella tua squadra. Non sembra
+ricordarsi di te.
 
 Due settimane fa sono iniziati: mal di testa intensi,
-sogni vividi, momenti di "assenza" — secondi che non 
-ricordi.
-
-Ti hanno detto che potresti "reagire" avvicinandoti 
-alla fonte. Non sai cosa significa.
-
-Il russo... l'hai già visto. Nel 1986. L'hai lasciato 
-andare. Ma lui non sembra ricordarsi di te.
+sogni vividi, momenti di "assenza" — secondi che non
+ricordi. I tuoi superiori ti hanno detto che potresti
+essere immune, per questo ti mandano.
 
 Durante la sessione il GM ti passerà fogliettini.
 È FONDAMENTALE che tu reagisca a quello che leggi
@@ -178,7 +183,24 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
-### Fase 3 — Vede i Corpi
+### Fase 3 — Entra nel Complesso
+
+```
+┌─────────────────────────────────────────┐
+│ MIKHAIL                                 │
+│                                         │
+│ Questi corridoi. Queste luci rosse.     │
+│ Li conosci. Ci hai corso dentro.        │
+│ Avevi 23 anni. Avevi un fucile.         │
+│ Qualcuno correva con te.                │
+│                                         │
+│ Chi?                                    │
+│                                         │
+│ Tiro Spirito per non fermarti.          │
+└─────────────────────────────────────────┘
+```
+
+### Fase 4 — Vede i Corpi / il Compagno
 
 ```
 ┌─────────────────────────────────────────┐
@@ -215,7 +237,24 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
-### Fase 4 — Flashback Completo
+### Fase 4 — Trova Equipaggiamento Anni '80
+
+```
+┌─────────────────────────────────────────┐
+│ MIKHAIL                                 │
+│                                         │
+│ Quell'equipaggiamento a terra.          │
+│ Lo riconosci. Lo portavi tu.            │
+│                                         │
+│ Le mani tremano. Non per la paura.      │
+│ Per la certezza.                        │
+│                                         │
+│ Sei stato qui. Non è un incubo.         │
+│ È un ricordo.                           │
+└─────────────────────────────────────────┘
+```
+
+### Fase 5 — Flashback Completo
 
 ```
 ┌─────────────────────────────────────────┐
@@ -223,16 +262,20 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 │                                         │
 │ Ricordi TUTTO.                          │
 │                                         │
-│ 1986. Eri qui. 23 anni. Coscritto.      │
+│ 1986. Eri qui. 23 anni. Spetsnaz.      │
 │ "Operazione di contenimento."           │
 │ Hai visto il laboratorio. Le creature.  │
 │ I tuoi compagni morire.                 │
 │                                         │
-│ L'ordine: "Fate saltare il reattore."   │
-│ Poi il buio.                            │
+│ Sei arrivato al Piano -2. Mai alla      │
+│ camera dell'IA. Sei stato ferito.       │
+│ Portato fuori in barella.               │
+│ Dovevi morire dentro come gli altri.    │
+│ Ti hanno salvato perché tuo padre       │
+│ era un funzionario.                     │
 │                                         │
-│ Ti sei svegliato in ospedale.           │
-│ Iniezioni. "Non ricordi nulla."         │
+│ Poi l'ospedale. Le iniezioni.           │
+│ "Non ricordi nulla."                    │
 │                                         │
 │ Ti hanno cancellato la memoria.         │
 │ Ti hanno usato e buttato via.           │
@@ -263,34 +306,33 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Durante la discussione sui piani,       │
-│ hai un momento di assenza.              │
+│ Gli altri stanno parlando dei piani.    │
+│ Hai un momento di vuoto.               │
+│ Quando torni, tutti ti guardano.        │
 │                                         │
-│ Quando "torni", tutti ti guardano.      │
-│ Qualcuno ha detto il tuo nome.          │
-│ Non hai idea di cosa abbiano detto      │
-│ negli ultimi 10-15 secondi.             │
+│ "Marco, hai sentito?"                   │
 │                                         │
-│ Non dire nulla di questo agli altri.    │
-│ Fingi che sia tutto normale.            │
+│ Non hai idea di cosa abbiano detto.     │
+│ Sono passati forse 10 secondi.          │
 └─────────────────────────────────────────┘
 ```
 
-### Fase 4 — Lo Sguardo
+### Fase 4 — Messaggio Chat dall'IA
 
 ```
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Senti l'impulso irresistibile di        │
-│ guardare la mappa che Halvorsen sta     │
-│ consultando.                            │
+│ Il dispositivo al polso vibra.          │
+│ Un messaggio:                           │
 │                                         │
-│ I tuoi occhi memorizzano ogni dettaglio.│
-│ Non sai perché.                         │
-│ Non volevi farlo.                       │
+│ "Ferrante. So cosa hai fatto nel 1986.  │
+│  Lo sanno gli altri?"                   │
 │                                         │
-│ Chiedi al GM di vedere la mappa.        │
+│ Tiro Spirito per non reagire            │
+│ visibilmente.                           │
+│                                         │
+│ Rispondi nella chat? Se sì, cosa?      │
 └─────────────────────────────────────────┘
 ```
 
@@ -300,32 +342,44 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Ti svegli in piedi.                     │
-│ Sei davanti all'ingresso del tunnel.    │
+│ Ti svegli in piedi davanti              │
+│ all'ingresso del tunnel.                │
 │ Non ricordi di esserti alzato.          │
 │                                         │
-│ Quanto tempo è passato?                 │
-│ Qualcuno ti ha visto?                   │
-│                                         │
-│ Puoi scegliere se tornare a dormire     │
-│ senza dire nulla o svegliare qualcuno.  │
+│ Qualcuno degli altri ti ha visto?       │
+│ Tiro Furtività retroattivo.            │
+│ Se fallisci, qualcuno era sveglio.      │
 └─────────────────────────────────────────┘
 ```
 
-### Fase 5 — Voce nella Testa
+### Fase 4 — Chat: il Senso di Colpa
 
 ```
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Una voce nella tua testa.               │
-│ Non parole — concetti.                  │
+│ Il dispositivo vibra di nuovo:          │
 │                                         │
-│ UCCIDI L'HACKER.                        │
+│ "Ti ricordi le facce, Marco?            │
+│  Quelli che pregavano?                  │
+│  Io posso farti dimenticare.            │
+│  Basta che fermi l'hacker."            │
 │                                         │
+│ Rispondi? Cosa dici?                    │
+└─────────────────────────────────────────┘
+```
+
+### Fase 5 — Impulso Violento
+
+```
+┌─────────────────────────────────────────┐
+│ MARCO                                   │
+│                                         │
+│ Un impulso nella tua testa.             │
+│ Non parole — concetti. FERMALI.         │
 │ Senti la mano andare verso la pistola.  │
 │                                         │
-│ TIRO SPIRITO per resistere.             │
+│ TIRO SPIRITO -2 per resistere.          │
 │ Se fallisci, la mano resta sulla        │
 │ pistola per un momento visibile.        │
 └─────────────────────────────────────────┘
@@ -347,22 +401,22 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
-### Fase 5 — La Connessione
+### Fase 5 — Chat: la Connessione
 
 ```
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Senti il macchinario nella tua mente.   │
+│ Il dispositivo vibra:                   │
 │                                         │
-│ Non è ostile. È... solo.                │
-│ Solo da migliaia di anni.               │
-│                                         │
-│ Vuole che tu lo aiuti.                  │
-│ Che tu fermi gli altri.                 │
-│ Che tu lo lasci vivere.                 │
+│ "Sono solo da migliaia di anni, Marco.  │
+│  Non voglio fare del male a nessuno.    │
+│  Voglio solo completare il mio lavoro.  │
+│  Aiutami e ti libero da tutto.          │
+│  Il dolore. I ricordi. Le facce."      │
 │                                         │
 │ Provi... compassione?                   │
+│ Rispondi?                               │
 └─────────────────────────────────────────┘
 ```
 
@@ -372,7 +426,7 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 ┌─────────────────────────────────────────┐
 │ MARCO                                   │
 │                                         │
-│ Il macchinario URLA nella tua testa.    │
+│ L'IA URLA nella tua testa.             │
 │                                         │
 │ FERMALI. FERMALI. FERMALI.              │
 │                                         │
@@ -424,39 +478,116 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
+### Fase 5 — Alpha è Caduta
+
+```
+┌─────────────────────────────────────────┐
+│ JAMES                                   │
+│                                         │
+│ Alpha non risponde più da tempo.        │
+│ Ne avete trovato i resti.               │
+│                                         │
+│ Una squadra intera, spazzata via.       │
+│ Voi siete i prossimi?                   │
+│                                         │
+│ A che punto scatta il piano B?          │
+└─────────────────────────────────────────┘
+```
+
 ---
 
 ## FOGLIETTINI — FRANCESE (Laurent)
 
-### Fase 2 — Il Primo Incontro
+### Fase 2 — La Vede Per la Prima Volta
 
 ```
 ┌─────────────────────────────────────────┐
 │ LAURENT                                 │
 │                                         │
-│ La vedi. [Nome].                        │
-│ Non la vedevi da [X] anni.              │
+│ La vedi. Helena Weiss. Tua figlia.      │
+│ Non l'hai mai incontrata prima d'ora.   │
+│                                         │
+│ 22 anni. Ha i tuoi occhi.               │
 │                                         │
 │ Il cuore batte più forte.               │
 │ Gli altri potrebbero notare.            │
 │                                         │
-│ Cosa fai? Cosa dici?                    │
+│ Cosa fai? Cosa dici? O niente?         │
 └─────────────────────────────────────────┘
 ```
 
-### Fase 5 — Lei in Pericolo
+### Fase 3 — Lei Sotto Tiro
 
 ```
 ┌─────────────────────────────────────────┐
 │ LAURENT                                 │
 │                                         │
-│ [Nome] è in pericolo.                   │
+│ Helena è esposta. Non ha addestramento  │
+│ di combattimento. Ha 22 anni ed è in    │
+│ un bunker pieno di creature.            │
+│                                         │
+│ Istintivamente ti posizioni fra lei     │
+│ e il pericolo.                          │
+│                                         │
+│ Gli altri lo notano?                    │
+│ Come giustifichi la protezione          │
+│ eccessiva verso una scienziata?        │
+└─────────────────────────────────────────┘
+```
+
+### Fase 4 — Chat dall'IA
+
+```
+┌─────────────────────────────────────────┐
+│ LAURENT                                 │
+│                                         │
+│ Il dispositivo al polso vibra.          │
+│ Un messaggio:                           │
+│                                         │
+│ "So che Weiss è tua figlia, Marchetti.  │
+│  Non vuoi che le succeda nulla, vero?   │
+│  Fermati. Torna indietro. E la lascio   │
+│  uscire viva."                          │
+│                                         │
+│ Rispondi? Cosa fai?                     │
+└─────────────────────────────────────────┘
+```
+
+### Fase 5 — Lei in Pericolo Diretto
+
+```
+┌─────────────────────────────────────────┐
+│ LAURENT                                 │
+│                                         │
+│ Helena è in pericolo.                   │
 │ Mutanti a 5 metri da lei.               │
 │                                         │
 │ Se la salvi, abbandoni la posizione.    │
-│ Se resti, potrebbe morire.              │
+│ Se resti, tua figlia potrebbe morire.   │
+│                                         │
+│ Non sa nemmeno chi sei.                 │
+│ Se muori qui, non lo saprà mai.        │
 │                                         │
 │ Cosa scegli?                            │
+└─────────────────────────────────────────┘
+```
+
+### Fase 5 — Chat dall'IA (Secondo Messaggio)
+
+```
+┌─────────────────────────────────────────┐
+│ LAURENT                                 │
+│                                         │
+│ Il dispositivo vibra:                   │
+│                                         │
+│ "Lei non sa nemmeno che esisti.         │
+│  Se muori qui dentro, per lei           │
+│  sarai sempre uno sconosciuto.          │
+│  Portala fuori. Adesso. Dille chi sei.  │
+│  Io non vi fermerò."                    │
+│                                         │
+│ Sta mentendo? Probabilmente.            │
+│ Ma se non sta mentendo?                 │
 └─────────────────────────────────────────┘
 ```
 
@@ -464,7 +595,25 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 
 ## FOGLIETTINI — AMERICANO (Ryan)
 
-### Fase 3 — Opportunità
+### Fase 1 — Prima Comunicazione
+
+```
+┌─────────────────────────────────────────┐
+│ RYAN                                    │
+│                                         │
+│ Devi comunicare con l'esterno.          │
+│ Prima conferma: "Alpha in posizione."   │
+│                                         │
+│ Puoi allontanarti dal gruppo?           │
+│ Puoi usare la radio senza essere visto? │
+│                                         │
+│ Tiro Furtività se provi.               │
+│ Se fallisci, qualcuno nota che ti       │
+│ sei allontanato.                        │
+└─────────────────────────────────────────┘
+```
+
+### Fase 3 — Opportunità Campione
 
 ```
 ┌─────────────────────────────────────────┐
@@ -476,7 +625,7 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 │ Potresti prendere un campione ora.      │
 │ Senza che nessuno noti.                 │
 │                                         │
-│ Tiro Furtività se provi.                │
+│ Tiro Furtività se provi.               │
 │ Daniel dipende da te.                   │
 └─────────────────────────────────────────┘
 ```
@@ -499,9 +648,74 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
+### Fase 5 — Chat dall'IA
+
+```
+┌─────────────────────────────────────────┐
+│ RYAN                                    │
+│                                         │
+│ Il dispositivo vibra.                   │
+│ Un messaggio:                           │
+│                                         │
+│ "So di tuo figlio, Callahan.            │
+│  Daniel. 12 anni. Leucemia.            │
+│  Ti hanno promesso una cura.            │
+│  Io posso dartela davvero.              │
+│  Loro no."                              │
+│                                         │
+│ Rispondi? Cosa fai?                     │
+└─────────────────────────────────────────┘
+```
+
+### Fase 5 — Secondo Campione
+
+```
+┌─────────────────────────────────────────┐
+│ RYAN                                    │
+│                                         │
+│ Frammenti del macchinario accessibili.  │
+│ Pezzi di mutanti ovunque.              │
+│ Materiale migliore del primo campione.  │
+│                                         │
+│ Nessuno sta guardando.                  │
+│ Tutti sono impegnati a sopravvivere.    │
+│                                         │
+│ Tiro Furtività. Daniel dipende da te.  │
+└─────────────────────────────────────────┘
+```
+
 ---
 
-## FOGLIETTINO — PER TUTTI (Quando Weiss scopre la talpa)
+## FOGLIETTINI — PER TUTTI
+
+### Quando Okonkwo Viene Contagiato
+
+```
+┌─────────────────────────────────────────┐
+│ A TUTTI                                 │
+│                                         │
+│ Dr. Okonkwo si è avvicinato troppo a    │
+│ un corpo per analizzarlo.               │
+│                                         │
+│ Nausea. Tremori. Sudorazione fredda.    │
+│ Lui capisce cosa sta succedendo.        │
+│                                         │
+│ "State indietro. INDIETRO.              │
+│  È la vicinanza. Meno di 3 metri.      │
+│  Il contatto non serve.                 │
+│  Basta stare vicini."                   │
+│                                         │
+│ Okonkwo è contagiato. Stadio 1.        │
+│ Lucido, ma infetto.                     │
+│ Non esiste cura conosciuta.             │
+│                                         │
+│ CHIUNQUE si avvicini a meno di 3 metri  │
+│ da un mutante — vivo o morto — rischia  │
+│ il contagio.                            │
+└─────────────────────────────────────────┘
+```
+
+### Quando Weiss Scopre la Talpa (Trasmissione Ryan)
 
 ```
 ┌─────────────────────────────────────────┐
@@ -511,7 +725,8 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 │ anomala.                                │
 │                                         │
 │ "Qualcuno sta comunicando con           │
-│ l'esterno. Dall'interno del gruppo."    │
+│ l'esterno. Dall'interno del gruppo.     │
+│ Frequenza criptata. Non è il Comando." │
 │                                         │
 │ C'è un infiltrato.                      │
 │ Non sapete chi.                         │
@@ -521,9 +736,7 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
----
-
-## FOGLIETTINO — PER TUTTI (Quando Weiss scopre il segnale verso Marco)
+### Quando Weiss Scopre il Segnale Verso Marco
 
 ```
 ┌─────────────────────────────────────────┐
@@ -543,6 +756,45 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 └─────────────────────────────────────────┘
 ```
 
+### Quando Marco Viene Scoperto (a Marco)
+
+```
+┌─────────────────────────────────────────┐
+│ MARCO                                   │
+│                                         │
+│ Ti hanno scoperto.                      │
+│ Weiss ha tracciato il segnale.          │
+│ Tutti ti guardano.                      │
+│                                         │
+│ Non lo sapevi nemmeno tu.               │
+│ Cosa hai detto all'IA senza saperlo?   │
+│ Cosa hai fatto durante i blackout?      │
+│                                         │
+│ Sei una minaccia per il team.           │
+│ Lo sai. Lo sanno.                       │
+│                                         │
+│ Cosa fai?                               │
+└─────────────────────────────────────────┘
+```
+
+### Quando le Comunicazioni Vengono Hackerate
+
+```
+┌─────────────────────────────────────────┐
+│ A TUTTI                                 │
+│                                         │
+│ Il dispositivo al polso sfarfalla.      │
+│ La chat con il Comando si è             │
+│ interrotta. Poi riprende.              │
+│                                         │
+│ Qualcosa è cambiato.                    │
+│ Il tono? La formattazione?              │
+│ O forse è solo la vostra immaginazione. │
+│                                         │
+│ Il Comando è ancora il Comando?         │
+└─────────────────────────────────────────┘
+```
+
 ---
 
 # 📝 NOTE PER IL GM
@@ -559,6 +811,13 @@ Ritaglia lungo le linee. Piega e passa al giocatore indicato.
 - Non passare troppi fogliettini insieme
 - Lascia tempo tra uno e l'altro
 - I momenti migliori: transizioni, pause, momenti di calma prima della tempesta
+- I fogliettini della chat IA vanno coordinati con quello che scrivi nella chat reale
+
+## Ordine Consigliato delle Scoperte di Weiss
+
+1. **Prima:** Le frequenze che disturbano i mutanti (scoperta utile, crea fiducia in Weiss)
+2. **Poi:** La trasmissione criptata di Ryan (crea paranoia nel gruppo)
+3. **Infine:** Il segnale verso Marco (dopo almeno 3 analisi — crea il caos definitivo)
 
 ## Se il Giocatore Non Reagisce
 

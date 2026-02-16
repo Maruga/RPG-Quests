@@ -11,12 +11,12 @@
 
 ## 1. MIKHAIL "MISHA" VORONOV — Russo, Scout/Infiltratore
 
-**Simbolo ruolo:** 👁️ occhio (scout/osservatore)
+**Simbolo ruolo:** 👁 occhio (scout/osservatore)
 
 ```
 Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica laterale. Bordo sottile metallico graffiato. Atmosfera militare cupa.
 
-Uomo russo, 42 anni, operatore Spetsnaz veterano. Volto scarno, zigomi alti slavi, occhi grigi ghiaccio che trapassano, sguardo vuoto di chi ha visto troppo. Capelli corti grigi ai lati, stempiatura. Barba di tre giorni sale e pepe. Pelle segnata dal freddo e dalla fatica. Cicatrice sottile sulla tempia sinistra.
+Uomo russo, 52 anni, operatore Spetsnaz veterano. Volto scarno, zigomi alti slavi, occhi grigi ghiaccio che trapassano, sguardo vuoto di chi ha visto troppo. Capelli corti grigi ai lati, stempiatura. Barba di tre giorni sale e pepe. Pelle segnata dal freddo e dalla fatica. Cicatrice sottile sulla tempia sinistra.
 
 Indossa passamontagna nero abbassato sul collo, colletto tattico scuro. Espressione: silenzio letale, zero emozioni visibili.
 
@@ -123,56 +123,16 @@ In basso a destra: piccolo simbolo di un terminale con parentesi angolari di cod
 
 ---
 
-## 2. DR. INGRID HALVORSEN — Norvegese, Ingegnere Nucleare
-
-**Simbolo ruolo:** ☢️ radiazioni (nucleare)
-
-```
-Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica. Bordo sottile metallico graffiato. Atmosfera scientifica/tecnica.
-
-Donna norvegese, 52 anni, veterana impianti nucleari. Volto nordico, lineamenti forti ma femminili, zigomi alti scandinavi. Occhi grigio-blu calmi e profondi, sguardo materno ma autorevole. Capelli biondo cenere con molto grigio, raccolti in coda pratica. Pelle chiara con rughe d'espressione agli occhi e bocca. Nessun trucco, aspetto naturale e professionale.
-
-Espressione: calma assoluta, competenza tranquilla, leggermente materna. La persona che vuoi accanto quando le cose vanno male.
-
-Indossa tuta tecnica grigia con badge identificativo, dosimetro al collo.
-
-Sfondo scuro con sfumatura grigio neutro. Illuminazione morbida bilanciata, professionale.
-
-In basso a destra: piccolo simbolo del trifoglio radioattivo stilizzato color giallo/arancio, semi-trasparente, come icona di ruolo.
-```
-
----
-
-## 3. DR. YURI BELENKO — Ucraino, Biologo/Genetista (MUORE)
-
-**Simbolo ruolo:** 🧬 DNA/elica (biologo)
-
-```
-Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica. Bordo sottile metallico graffiato. Atmosfera scientifica/tecnica.
-
-Uomo ucraino, 48 anni, ricercatore genetista. Volto tondo amichevole, guance piene, occhi marroni vivaci pieni di curiosità quasi infantile. Capelli grigi arruffati da scienziato distratto, stempiatura pronunciata. Occhiali spessi con montatura scura. Barba grigia corta disordinata. Pelle segnata ma espressiva.
-
-Espressione: entusiasmo intellettuale, curiosità irrefrenabile, leggermente sovreccitato. Sembra uno che si avvicina troppo alle cose.
-
-Indossa camice da laboratorio sporco sopra maglione, penna nel taschino, appunti sporgono dalla tasca.
-
-Sfondo scuro con sfumatura verde biologico. Illuminazione calda da laboratorio.
-
-In basso a destra: piccolo simbolo di una doppia elica DNA stilizzata color verde, semi-trasparente, come icona di ruolo.
-```
-
----
-
-## 4. DR. HELENA WEISS — Tedesca, Fisico/Esperta Segnali
+## 2. DR. HELENA WEISS — Tedesca, Fisico/Esperta Segnali
 
 **Simbolo ruolo:** 📡 onda/segnale (frequenze)
 
 ```
 Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica. Bordo sottile metallico graffiato. Atmosfera scientifica/tecnica.
 
-Donna tedesca, 41 anni, fisica esperta onde elettromagnetiche. Volto affilato preciso, lineamenti tedeschi definiti, mascella decisa. Occhi grigi penetranti analitici, sguardo che seziona. Capelli castano scuro taglio corto pratico, quasi maschile. Pelle chiara, nessun trucco, aspetto funzionale. Piccoli orecchini discreti unico tocco personale.
+Donna tedesca, 22 anni, fisica esperta onde elettromagnetiche. Volto giovane affilato preciso, lineamenti tedeschi definiti, mascella decisa. Occhi grigi penetranti analitici, sguardo che seziona. Capelli castano scuro taglio corto pratico, quasi maschile. Pelle chiara, nessun trucco, aspetto funzionale. Piccoli orecchini discreti unico tocco personale.
 
-Espressione: concentrazione intensa, precisione fredda, poche parole. Analizza tutto, giudica in silenzio.
+Espressione: concentrazione intensa, precisione fredda, poche parole. Analizza tutto, giudica in silenzio. Giovane ma fuori posto per maturità.
 
 Indossa giacca tecnica nera, cuffie da monitoraggio intorno al collo, tablet visibile nella mano.
 
@@ -183,7 +143,7 @@ In basso a destra: piccolo simbolo di onde sinusoidali/segnale radio stilizzato 
 
 ---
 
-## 5. DR. SAMUEL OKONKWO — Nigeriano-Britannico, Xenologo
+## 3. DR. SAMUEL OKONKWO — Nigeriano-Britannico, Xenologo
 
 **Simbolo ruolo:** 🌌 stella/cosmo (xenologia)
 
@@ -208,8 +168,8 @@ In basso a destra: piccolo simbolo di una stella a più punte/costellazione stil
 ## PG — Operatori
 
 | Personaggio | Nazionalità | Ruolo | Simbolo |
-|-------------|-------------|-------|---------|
-| Mikhail Voronov | 🇷🇺 Russo | Scout | 👁️ Occhio |
+|---|---|---|---|
+| Mikhail Voronov | 🇷🇺 Russo | Scout | 👁 Occhio |
 | James Blackwood | 🇬🇧 Inglese | Cecchino | 🎯 Mirino |
 | Laurent Marchetti | 🇫🇷 Francese | Assaltatore | 💥 Breccia |
 | Marco Ferrante | 🇮🇹 Italiano | Lanciafiamme | 🔥 Fiamma |
@@ -218,13 +178,9 @@ In basso a destra: piccolo simbolo di una stella a più punte/costellazione stil
 ## PNG — Scienziati
 
 | Personaggio | Nazionalità | Ruolo | Simbolo |
-|-------------|-------------|-------|---------|
+|---|---|---|---|
 | Alexei Morozov | 🇷🇺 Russo | Hacker | 💻 Codice |
-| Ingrid Halvorsen | 🇳🇴 Norvegese | Nucleare | ☢️ Radiazioni |
-| Yuri Belenko | 🇺🇦 Ucraino | Biologo | 🧬 DNA |
 | Helena Weiss | 🇩🇪 Tedesca | Segnali | 📡 Onde |
 | Samuel Okonkwo | 🇳🇬🇬🇧 Anglo-Nigeriano | Xenologo | 🌌 Cosmo |
 
 #token #prompt #immagini #personaggi
-
-

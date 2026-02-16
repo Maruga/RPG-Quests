@@ -1,20 +1,19 @@
 # Mikhail "Misha" Voronov
 
-![[russo_portrait.png]]
-
 ## Dati Base
 
 | Campo | Valore |
 |-------|--------|
 | **Nazionalità** | Russo |
-| **Età** | 42 |
+| **Età** | 52 |
 | **Ruolo** | Scout / Infiltratore |
 | **Background** | Ex-Spetsnaz GRU |
 | **Callsign** | *Призрак* (Fantasma) |
 
 ## Storia Militare
 
-20 anni di Spetsnaz GRU. Ha operato in:
+30 anni di Spetsnaz GRU. Ha operato in:
+- Afghanistan (fine anni '80)
 - Cecenia (Prima e Seconda Guerra)
 - Georgia (2008)
 - Siria
@@ -55,7 +54,13 @@ Ha visto cose che non racconta. Incubi ricorrenti che non riesce a mettere a fuo
 
 **Mikhail c'era nel 1986.**
 
-Era un giovane coscritto, 23 anni, assegnato a una "operazione di contenimento" che ufficialmente non è mai esistita. Ha visto il laboratorio. Ha visto le creature. Ha visto morire i suoi compagni.
+Aveva 23 anni. Giovane Spetsnaz, assegnato a una "operazione di contenimento" che ufficialmente non è mai esistita. Il suo compito era entrare nell'edificio, raggiungere l'IA e distruggerla.
+
+Ha visto il laboratorio. Ha visto le creature. Ha visto morire i suoi compagni. È arrivato fino al Piano -2 ma non ha mai raggiunto la camera dell'IA. È stato ferito gravemente e portato fuori in barella, incosciente.
+
+**Doveva morire dentro.** Ma lui e alcuni altri soldati — figli di alti funzionari — sono stati portati fuori. L'Italiano, Marco Ferrante, era posizionato all'esterno con ordine di eliminare chiunque uscisse. Ha visto Mikhail sulla barella e l'ha lasciato passare, disobbedendo all'ordine.
+
+### Il Lavaggio del Cervello
 
 Dopo l'esplosione del reattore, i sopravvissuti sono stati sottoposti a **lavaggio del cervello**. Farmaci, ipnosi, elettroshock. Gli hanno cancellato tutto.
 
@@ -85,18 +90,20 @@ Durante un flashback:
 3. **Successo:** Mikhail mantiene il controllo, ottiene l'informazione
 4. **Fallimento:** Scosso (-2 al prossimo tiro), potrebbe gridare/bloccarsi
 
-> [!example] Esempio di Narrazione
+> Esempio di Narrazione:
 > *"Misha, stai camminando nel corridoio quando tutto si ferma. Il tuo respiro. Il tempo. Vedi te stesso, giovane, correre in questo stesso corridoio. Luci rosse. Allarme. Qualcuno urla 'Sigillate! Sigillate tutto!' E poi il buio. Quando torni, sei in ginocchio. Laurent ti sta scuotendo per la spalla."*
 
 ## Connessione con l'Italiano
 
-Vedi: [[Dinamica Russo-Italiano]]
+- **Marco riconosce Mikhail.** Il volto è lo stesso, invecchiato di 29 anni.
+- **Mikhail NON riconosce Marco.** Il lavaggio del cervello ha cancellato tutto.
+- **Marco non sa del lavaggio del cervello.** Pensa che Mikhail lo ignori di proposito.
 
-Marco Ferrante era presente nella missione del 1986. Era posizionato all'esterno per "ripulire i fuggitivi". Ha visto Mikhail essere portato via in barella, incosciente.
+## Come l'IA Lo Usa
 
-**Marco riconosce Mikhail. Mikhail non riconosce Marco.**
+L'IA scopre la verità su Mikhail attraverso la chat hackerata e la percezione mentale sull'Italiano.
 
-Questo crea tensione: perché l'italiano lo guarda in quel modo? Perché sembra sapere cose?
+Lo tormenta con i ricordi del 1986, gli offre la verità completa — cosa gli hanno fatto, chi ha dato l'ordine, perché — in cambio di cooperazione.
 
 ## Momento Chiave
 
@@ -108,12 +115,10 @@ Quando Mikhail ricorda tutto, deve affrontare una scelta:
 
 ## Note di Interpretazione per il Giocatore
 
-Se dai questa scheda al giocatore (versione senza segreto), includi solo:
+Versione per il giocatore (foglio personale):
 
 *"Hai incubi ricorrenti su qualcosa che non riesci a ricordare. A volte sai cose che non dovresti. Forse hai già visto la Zona, ma non riesci a ricordare quando."*
 
 ---
-
-Vedi anche: [[Dinamica Russo-Italiano]] | [[Savage/Operazione Sarcofago/Background]]
 
 #pg #russo #scout #segreto
