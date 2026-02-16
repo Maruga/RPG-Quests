@@ -1,7 +1,5 @@
 # James "Jimmy" Blackwood
 
-![[inglese_portrait.png]]
-
 ## Dati Base
 
 | Campo | Valore |
@@ -103,7 +101,7 @@ Se riveli il segreto al giocatore:
 ## Interazione con Altri Segreti
 
 - Se scopre che l'Americano comunica con esterni → Lo considera compromesso
-- Se il Francese rischia la missione per lo scienziato amato → Lo considera un rischio
+- Se il Francese rischia la missione per la scienziata → Lo considera un rischio
 - Se il Russo ha flashback che lo rendono instabile → Lo tiene d'occhio
 
 James osserva **tutti**. Sempre.
@@ -113,9 +111,3 @@ James osserva **tutti**. Sempre.
 Se dai una versione al giocatore senza segreto:
 
 *"Hai una radio con una frequenza secondaria. Ogni tanto ricevi messaggi criptati. Non hai detto a nessuno cosa dicono."*
-
----
-
-Vedi anche: [[Segreti Overview]] | [[06 - Esfiltrazione]]
-
-#pg #inglese #cecchino #segreto

@@ -78,7 +78,8 @@ Dr. Helena Weiss, 22 anni, è tua figlia.
 Hai sempre avuto il sospetto — una relazione di tanti
 anni fa, mai confermata. Ora è confermato.
 
-Lei non sa chi sei. Non ti ha mai incontrato.
+Lei non sa chi sei. Non ha idea che l'uomo che
+la scorta sia suo padre.
 Sta per entrare in una missione da cui potreste 
 non tornare.
 
@@ -846,4 +847,4 @@ Lascia spazio per fogliettini improvvisati:
 
 ---
 
-#fogliettini #segreti #gestione #stampa
+

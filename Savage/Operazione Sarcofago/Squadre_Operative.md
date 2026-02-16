@@ -107,7 +107,3 @@ Dal punto di vista delle squadre esterne: silenzio radio. Non sanno cosa sta suc
 Le squadre Charlie, Delta, Echo esistono per dare ai PG la sensazione di un'operazione militare coordinata e su larga scala. Non servono statistiche o dettagli — i PG le sentiranno nominate al briefing e via radio nelle fasi esterne.
 
 Alpha è più importante narrativamente: i PG sentiranno le loro comunicazioni, poi il silenzio, poi troveranno i resti. Serve a stabilire il livello di pericolo prima che i PG si trovino nella stessa situazione.
-
----
-
-#squadre #struttura #missione

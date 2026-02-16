@@ -5,14 +5,14 @@
 | Campo | Valore |
 |-------|--------|
 | **Nazionalità** | Francese |
-| **Età** | 40 |
+| **Età** | 44 |
 | **Ruolo** | Assaltatore / Breacher |
 | **Background** | Ex-Legione Straniera (2° REP) |
 | **Callsign** | *Première* (Primo) |
 
 ## Storia Militare
 
-18 anni Legione Straniera, 2° REP (reggimento paracadutisti).
+26 anni Legione Straniera, 2° REP (reggimento paracadutisti).
 
 Primo uomo in più assalti di quanti riesca a contare:
 - Mali (Operazione Serval)
@@ -57,7 +57,7 @@ Ma sotto la facciata c'è un professionista letale. Leale fino alla morte. Non s
 
 ### La Scoperta
 
-Laurent ha avuto una relazione circa 23 anni fa con una donna tedesca. Breve, intensa, finita quando lui è tornato in servizio. Ha sempre avuto il sospetto che potesse esserci una figlia, ma la donna non ha mai confermato. Laurent ha provato a verificare a suo tempo, senza riuscirci.
+Laurent ha avuto una relazione circa 22 anni fa con una donna tedesca, durante una licenza. Breve, intensa, finita quando lui è tornato in servizio. Ha sempre avuto il sospetto che potesse esserci una figlia, ma la donna non ha mai confermato. Laurent ha provato a verificare a suo tempo, senza riuscirci.
 
 Durante gli esami medici pre-missione, gli è stato comunicato che gli esami genetici di routine del team allargato hanno rivelato una corrispondenza: **Helena Weiss, 22 anni, è sua figlia.**
 
@@ -65,7 +65,7 @@ Laurent lo sapeva nel profondo. Ora ne ha la conferma. E sua figlia sta per entr
 
 ### Helena
 
-22 anni. Genio precoce — dottorato a 20 anni al Fraunhofer Institute. Reclutata dalla NATO per contromisure elettroniche. Non sa che Laurent è suo padre. Non lo ha mai incontrato.
+22 anni. Genio precoce — dottorato a 20 anni al Fraunhofer Institute. Reclutata dalla NATO per contromisure elettroniche. Non sa che Laurent è suo padre. Non ha idea che l'uomo che la scorta sia suo padre.
 
 Questo aggiunge una tensione enorme: è giovane, è in pericolo, è brillante, ed è sua figlia. Laurent non può dirlo a nessuno senza rischiare di essere rimosso dalla missione — e se lo rimuovono, chi la protegge?
 
@@ -128,7 +128,3 @@ Leve:
 > *Non l'hai detto a nessuno. Se lo scoprono, ti tolgono dalla missione. E se ti tolgono, chi la protegge?*
 > *Lei non sa chi sei.*
 > *Il GM ti passerà fogliettini durante la sessione. Leggili e reagisci di conseguenza."*
-
----
-
-#pg #francese #assaltatore #segreto

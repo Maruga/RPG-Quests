@@ -1,7 +1,5 @@
 # Ryan "Chief" Callahan
 
-![[americano_portrait.png]]
-
 ## Dati Base
 
 | Campo | Valore |
@@ -103,7 +101,7 @@ Ryan ha una radio secondaria con frequenza criptata. La usa per comunicare con i
 |---------|---------------|
 | Dopo l'inserimento | "Alpha in posizione. Procediamo." |
 | Durante la discesa | "Obiettivo vicino. Possibili campioni identificati." |
-| Se trova qualcosa | "Ho il pacchetto. Richedo estrazione alternativa." |
+| Se trova qualcosa | "Ho il pacchetto. Richiedo estrazione alternativa." |
 
 ### Il Piano
 
@@ -162,9 +160,3 @@ Se dai una versione al giocatore:
 Oppure, versione più nascosta:
 
 *"Hai una radio secondaria. A volte la usi per comunicare con qualcuno. Non hai detto agli altri di cosa si tratta."*
-
----
-
-Vedi anche: [[Dinamica Americano Traditore]] | [[Segreti Overview]]
-
-#pg #americano #leader #segreto #traditore

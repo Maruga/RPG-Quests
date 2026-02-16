@@ -72,7 +72,7 @@ Helena è **cruciale** per tre scoperte:
 
 ### Connessione Segreta
 
-**Helena è la figlia di Laurent Marchetti.** Non lo sa. Non lo ha mai incontrato. Laurent lo ha scoperto durante le visite mediche pre-missione. Vedi la scheda di Laurent per i dettagli.
+**Helena è la figlia di Laurent Marchetti.** Non lo sa. Non ha idea che l'uomo che la scorta sia suo padre. Laurent lo ha scoperto durante le visite mediche pre-missione. Vedi la scheda di Laurent per i dettagli.
 
 Questa connessione crea una tensione enorme: Laurent cercherà di proteggerla a costo della missione. L'IA lo sfrutterà.
 
@@ -140,4 +140,4 @@ Okonkwo rimane allo Stadio 1, lucido, e usa la sua competenza scientifica per da
 
 ---
 
-#png #scienziati #npc
+Vedi anche: [[La Minaccia]] | [[Obiettivo Missione]]

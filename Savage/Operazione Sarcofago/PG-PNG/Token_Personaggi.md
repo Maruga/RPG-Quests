@@ -52,7 +52,7 @@ In basso a destra: piccolo simbolo di un mirino da cecchino (crosshair) color gr
 ```
 Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica laterale. Bordo sottile metallico graffiato. Atmosfera militare cupa.
 
-Uomo francese, 40 anni, veterano Legione Straniera. Volto duro, mascella larga, naso rotto più volte. Grande cicatrice che va dal sopracciglio sinistro al mento attraverso la guancia. Occhi marroni intensi, sguardo da combattente. Capelli neri cortissimi quasi rasati. Barba incolta di una settimana. Pelle olivastra mediterranea segnata dal sole.
+Uomo francese, 44 anni, veterano Legione Straniera. Volto duro, mascella larga, naso rotto più volte. Grande cicatrice che va dal sopracciglio sinistro al mento attraverso la guancia. Occhi marroni intensi, sguardo da combattente. Capelli neri cortissimi quasi rasati. Barba incolta di una settimana. Pelle olivastra mediterranea segnata dal sole.
 
 Indossa giubbotto tattico nero con colletto alto, visibili segni di usura. Espressione: ghigno pericoloso appena accennato, energia aggressiva trattenuta.
 
@@ -70,7 +70,7 @@ In basso a destra: piccolo simbolo di una porta sfondata/esplosione stilizzata c
 ```
 Ritratto quadrato per token da gioco di ruolo. Busto e volto, sfondo scuro neutro. Stile realistico cinematografico, illuminazione drammatica laterale. Bordo sottile metallico graffiato. Atmosfera militare cupa.
 
-Uomo italiano, 39 anni, veterano Col Moschin. Volto mediterraneo, lineamenti marcati, naso romano. Occhi scuri penetranti, leggermente socchiusi come se valutasse sempre qualcosa. Capelli neri con primi grigi, arruffati. Barba corta curata. Sigaretta spenta nell'angolo della bocca. Pelle olivastra, piccola bruciatura vecchia sul collo visibile.
+Uomo italiano, 49 anni, veterano Col Moschin. Volto mediterraneo, lineamenti marcati, naso romano. Occhi scuri penetranti, leggermente socchiusi come se valutasse sempre qualcosa. Capelli neri con primi grigi, arruffati. Barba corta curata. Sigaretta spenta nell'angolo della bocca. Pelle olivastra, piccola bruciatura vecchia sul collo visibile.
 
 Espressione: ironia pericolosa, sorriso appena accennato che inquieta più di una minaccia aperta.
 
@@ -183,4 +183,4 @@ In basso a destra: piccolo simbolo di una stella a più punte/costellazione stil
 | Helena Weiss | 🇩🇪 Tedesca | Segnali | 📡 Onde |
 | Samuel Okonkwo | 🇳🇬🇬🇧 Anglo-Nigeriano | Xenologo | 🌌 Cosmo |
 
-#token #prompt #immagini #personaggi
+

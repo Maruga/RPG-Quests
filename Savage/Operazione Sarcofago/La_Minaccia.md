@@ -85,16 +85,13 @@ L'IA non è malvagia. Esegue un programma. Se capisce di essere sul pianeta sbag
 1. Analizza i dati disponibili
 2. Confronta coordinate stellari e caratteristiche planetarie
 3. Conclude che la Terra non è Kael-Thar
-4. Calcola pro e contro del continuare
 
-I contro sono schiaccianti. A quel punto:
+L'IA **si disattiva**: il programma non è applicabile, si spegne.
 
 |Esito|Condizione|
 |---|---|
-|**Disattivazione**|Interrompe il programma, si spegne|
-|**Autodistruzione**|Si distrugge sapendo che può rigenerarsi in 30-50 anni. È l'ultima opzione perché rallenta il suo operato|
-
-In entrambi i casi, **cessa le operazioni su questo pianeta**.
+|**Disattivazione** (esito primario)|Internet → capisce di essere sul pianeta sbagliato → si spegne|
+|**Autodistruzione** (solo se convinta di essere una minaccia)|Dopo la disattivazione, se i PG la convincono che potrebbe essere usata come arma, si distrugge per proteggere il pianeta. Estrema ratio|
 
 > **Nota per il GM** Nessuno conosce questa soluzione all'inizio. I PG possono arrivarci attraverso: indizi nei documenti del Piano -1, le parole dell'IA stessa (che parla di Kael-Thar senza rendersi conto dell'incongruenza), l'analisi di Okonkwo che capisce la natura aliena, o semplicemente intuizione dei giocatori.
 

@@ -124,7 +124,7 @@ Non lo è.
 
 Durante la costruzione, alcuni operai iniziano a mostrare comportamenti anomali. Confusione, assenze, episodi di violenza improvvisa. Alcuni scompaiono. Ai piani alti il quadro cambia rapidamente: indagini rilevano che il complesso sotterraneo vicino al reattore sta emettendo **frequenze elettromagnetiche**. L'IA non è morta. Si è rigenerata. Ed è molto più potente di quanto chiunque avesse previsto — il suo segnale sta già raggiungendo gli operai in superficie.
 
-Scatta l'evacuazione immediata del cantiere. La costruzione del secondo sarcofago viene sospesa e completata dopo la missione, tutti sanno che non basterebbe a lungo. Se l'IA riesce a far uscire anche un solo contagiato dalla zona, la catena di nodi può espandersi senza controllo.
+Scatta l'evacuazione immediata del cantiere. La costruzione del secondo sarcofago viene completata in emergenza, ma tutti sanno che non basterebbe a lungo. Se l'IA riesce a far uscire anche un solo contagiato dalla zona, la catena di nodi può espandersi senza controllo.
 
 ---
 
@@ -158,15 +158,13 @@ Gli scienziati delle nazioni hanno sviluppato un **virus informatico** progettat
 
 ### La Vera Soluzione (Sconosciuta a Tutti)
 
-L'IA non è malvagia. Non ha una coscienza morale. Esegue un programma: terraformare Kael-Thar. Se comprendesse di trovarsi sul pianeta sbagliato, il suo programma diventerebbe inapplicabile e si disattiverebbe.
+L'IA non è malvagia. Non ha una coscienza morale. Esegue un programma: terraformare Kael-Thar. Se comprendesse di trovarsi sul pianeta sbagliato, il suo programma diventerebbe inapplicabile.
 
-Per farglielo capire basterebbe **collegarla a Internet**. In pochi secondi analizzerebbe i dati disponibili, confronterebbe le coordinate e le caratteristiche planetarie, e concluderebbe che la Terra non è Kael-Thar. Pro e contro verrebbero calcolati, ma i contro sarebbero schiaccianti.
+Per farglielo capire basterebbe **collegarla a Internet**. In pochi secondi analizzerebbe i dati disponibili, confronterebbe le coordinate e le caratteristiche planetarie, e concluderebbe che la Terra non è Kael-Thar.
 
-A quel punto l'IA ha due opzioni:
-1. **Disattivazione** — Interrompe il programma e si spegne
-2. **Autodistruzione** — Si distrugge per non sprecare risorse, sapendo che può rigenerarsi in 30-50 anni e attendere un eventuale recupero dai creatori. Questo è l'ultimo scenario, perché rallenta il suo operato
+A quel punto l'IA **si disattiva**: interrompe il programma e si spegne. Non è buona né malvagia — il suo obiettivo semplicemente non è più applicabile.
 
-In ogni caso, se convinta della verità, **cesserà le operazioni su questo pianeta**.
+**L'autodistruzione** è un'opzione separata e successiva. Avviene solo se, dopo aver compreso di essere nel posto sbagliato, i PG la convincono che la sua stessa esistenza rappresenta una minaccia (qualcuno potrebbe weaponizzarla). A quel punto, per proteggere un pianeta che non è il suo obiettivo, si distrugge — sapendo che potrà rigenerarsi in 30-50 anni. È l'estrema ratio perché rallenta il suo operato futuro.
 
 Nessuno conosce questa soluzione. Dovranno scoprirla durante la missione.
 

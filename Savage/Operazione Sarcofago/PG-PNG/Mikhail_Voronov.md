@@ -118,7 +118,3 @@ Quando Mikhail ricorda tutto, deve affrontare una scelta:
 Versione per il giocatore (foglio personale):
 
 *"Hai incubi ricorrenti su qualcosa che non riesci a ricordare. A volte sai cose che non dovresti. Forse hai già visto la Zona, ma non riesci a ricordare quando."*
-
----
-
-#pg #russo #scout #segreto

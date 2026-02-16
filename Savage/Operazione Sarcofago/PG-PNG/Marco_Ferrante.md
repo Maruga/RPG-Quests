@@ -11,6 +11,7 @@
 | **Callsign**    | *Torcia*                                 |
 
 ## Storia Militare
+
 29 anni Col Moschin (9° Reggimento d'Assalto Paracadutisti "Col Moschin").
 
 Teatri operativi:
@@ -61,7 +62,7 @@ Non dentro il complesso. Era posizionato all'esterno, come parte di un team NATO
 
 Il suo compito: **chi esce da quella porta deve morire ed essere bruciato.**
 
-Marco aveva 10 anni di meno. Era appena entrato nei Col Moschin. Era la sua prima operazione "nera".
+Marco aveva vent'anni. Era appena entrato nei Col Moschin. Era la sua prima operazione "nera".
 
 ### Cosa Ha Fatto
 
@@ -149,7 +150,7 @@ Quando l'IA tenta di controllare Marco, il giocatore deve tirare **Spirito** in 
 | Fase | Modificatore | Cosa Può Fare l'IA |
 |------|-------------|---------------------|
 | **1-2** | +2 | Percepisce la sua presenza, niente di più |
-| **3** | +0 | Impulsi vaghi ("vai là", "guarda quello") |
+| **3** | +0 | Impulsi vaghi ("vai lì", "guarda quello") |
 | **4** | -1 | Ordini semplici, momenti di assenza |
 | **5** | -2 | Ordini complessi, tentativi di blackout |
 | **6** | -4 | Tentativo di controllo totale |
@@ -264,7 +265,3 @@ Marco deve scegliere:
 > *I tuoi superiori ti hanno detto che potresti essere immune. Ti hanno mandato lo stesso.*
 > *Inoltre: riconosci il russo. L'hai visto nel 1986. Sulla barella. L'hai lasciato passare invece di eliminarlo come da ordine. Lui non sembra ricordarsi di te.*
 > *Il GM ti passerà fogliettini durante la sessione. Leggili e reagisci di conseguenza."*
-
----
-
-#pg #italiano #dmr #lanciafiamme #segreto #contagio #controllo
