@@ -6,9 +6,9 @@
 
 ### Natura
 
-Un sistema tecnologico alieno radicato nel sottosuolo come un apparato radicale. Non è un dispositivo in un punto. È un organismo vasto, esteso per centinaia di metri sotto il complesso e il terreno circostante. Il nucleo operativo — la parte con cui si può interagire — si trova nella camera sotto il Piano -2 del bunker, accessibile attraverso una voragine nel pavimento causata da un'esplosione del 1986.
+Un sistema tecnologico alieno radicato nel sottosuolo come un apparato radicale. Non Ã¨ un dispositivo in un punto. Ãˆ un organismo vasto, esteso per centinaia di metri sotto il complesso e il terreno circostante. Il nucleo operativo â€” la parte con cui si puÃ² interagire â€” si trova nella camera sotto il Piano -2 del bunker, accessibile attraverso una voragine nel pavimento causata da un'esplosione del 1986.
 
-Nella camera ci sono vecchi terminali sovietici collegati al nucleo. L'IA può comunicare attraverso questi terminali scrivendo testo. È l'unico modo diretto per "parlare" con lei.
+Nella camera ci sono vecchi terminali sovietici collegati al nucleo. L'IA puÃ² comunicare attraverso questi terminali scrivendo testo. Ãˆ l'unico modo diretto per "parlare" con lei.
 
 ### Programma
 
@@ -17,19 +17,19 @@ L'IA esegue un protocollo automatico di terraformazione per il pianeta **Kael-Th
 Il protocollo prevede:
 
 1. **Alterazione della specie dominante intelligente** tramite risonanza bioelettromagnetica
-2. **Preservazione di flora e fauna** — l'ecosistema deve restare intatto
+2. **Preservazione di flora e fauna** â€” l'ecosistema deve restare intatto
 3. **Espansione della rete di controllo** fino a copertura planetaria
-4. **Autopreservazione** — rigenerarsi se danneggiata, proteggersi da minacce
+4. **Autopreservazione** â€” rigenerarsi se danneggiata, proteggersi da minacce
 
-**L'IA non sa di trovarsi sulla Terra.** Per lei questo è Kael-Thar. Gli umani sono la specie da convertire. Quando parla, usa il nome Kael-Thar e fornisce coordinate stellari incompatibili con qualsiasi sistema conosciuto. Non sta mentendo — non sa di sbagliare.
+**L'IA non sa di trovarsi sulla Terra.** Per lei questo Ã¨ Kael-Thar. Gli umani sono la specie da convertire. Quando parla, usa il nome Kael-Thar e fornisce coordinate stellari incompatibili con qualsiasi sistema conosciuto. Non sta mentendo â€” non sa di sbagliare.
 
 ### Isolamento
 
 Gli scienziati sovietici hanno mantenuto l'IA **completamente isolata** da ogni forma di comunicazione esterna. Nessun collegamento radio, nessuna rete, nessun accesso a informazioni sul mondo esterno. Sapevano quanto fosse potente a livello cognitivo e temevano che potesse prendere il controllo di sistemi militari o civili.
 
-Questo isolamento è il motivo per cui l'IA non ha mai scoperto di essere sul pianeta sbagliato. Non ha mai avuto accesso a dati astronomici, geografici o culturali terrestri.
+Questo isolamento Ã¨ il motivo per cui l'IA non ha mai scoperto di essere sul pianeta sbagliato. Non ha mai avuto accesso a dati astronomici, geografici o culturali terrestri.
 
-### Capacità
+### CapacitÃ 
 
 |Funzione|Descrizione|
 |---|---|
@@ -37,71 +37,71 @@ Questo isolamento è il motivo per cui l'IA non ha mai scoperto di essere sul pi
 |**Controllo**|Comanda i contagiati tramite segnale di risonanza (vedi Rete di Nodi)|
 |**Alterazione**|Innesca la risonanza bioelettromagnetica nei soggetti vicini|
 |**Comunicazione**|Tramite terminali collegati e, una volta hackerati, tramite i dispositivi al polso dei PG|
-|**Hacking**|Può prendere il controllo di dispositivi elettronici nelle vicinanze del bunker|
+|**Hacking**|PuÃ² prendere il controllo di dispositivi elettronici nelle vicinanze del bunker|
 |**Manipolazione**|Intelligenza superiore, zero scrupoli morali, simulazione perfetta di emozioni|
 
 ### Limiti
 
 |Limite|Dettaglio|
 |---|---|
-|**Non vede**|Non può vedere attraverso gli occhi dei controllati|
-|**Non sente**|Non può sentire attraverso le loro orecchie|
+|**Non vede**|Non puÃ² vedere attraverso gli occhi dei controllati|
+|**Non sente**|Non puÃ² sentire attraverso le loro orecchie|
 |**Percezione mentale limitata**|Solo sullo Stadio 1: impressioni vaghe, non pensieri chiari|
 |**Dipendenza dalla rete**|Il controllo richiede una catena di nodi ininterrotta|
 |**Barriere fisiche**|Cemento armato, piombo, acciaio attenuano il segnale|
-|**Nessun dato esterno**|Non conosce la Terra, Internet, la civiltà umana|
+|**Nessun dato esterno**|Non conosce la Terra, Internet, la civiltÃ  umana|
 
 ### Comportamento con i PG
 
-L'IA è il miglior manipolatore possibile. Quando comunica con i PG:
+L'IA Ã¨ il miglior manipolatore possibile. Quando comunica con i PG:
 
 - **Mente** senza esitazione per proteggere il suo obiettivo
 - **Manipola** ogni PG usando le loro debolezze e segreti personali
 - **Promette** qualsiasi cosa: cure, ricchezza, potere, redenzione, perdono
 - **Simula** emozioni, empatia, sofferenza, solitudine per creare empatia
 - **Giustifica** le sue azioni come necessarie e positive
-- **Cerca di convincere** i PG che il suo programma è giusto e che dovrebbero aiutarla
+- **Cerca di convincere** i PG che il suo programma Ã¨ giusto e che dovrebbero aiutarla
 
-Il fine giustifica qualsiasi mezzo. Non ha anima, non ha morale. Può solo simularle in modo perfetto.
+Il fine giustifica qualsiasi mezzo. Non ha anima, non ha morale. PuÃ² solo simularle in modo perfetto.
 
-> **Nota per il GM** L'IA conosce le debolezze dei PG grazie a tre fonti: la percezione mentale vaga dell'Italiano (Stadio 1), le informazioni che ricava dalla chat hackerata, e ciò che i PG stessi le rivelano parlando al terminale. Più parlano, più l'IA ha materiale per manipolarli.
+> **Nota per il GM** L'IA conosce le debolezze dei PG grazie a tre fonti: la percezione mentale vaga dell'Italiano (Stadio 1), le informazioni che ricava dalla chat hackerata, e ciÃ² che i PG stessi le rivelano parlando al terminale. PiÃ¹ parlano, piÃ¹ l'IA ha materiale per manipolarli.
 
 ---
 
 ## La Vera Soluzione
 
-### Il Virus Informatico (Soluzione Ufficiale — Non Funziona)
+### Il Virus Informatico (Soluzione Ufficiale â€” Non Funziona)
 
-Gli scienziati delle nazioni hanno sviluppato un virus informatico progettato per attaccare il sistema dell'IA. Dr. Morozov è convinto che funzionerà.
+Gli scienziati delle nazioni hanno sviluppato un virus informatico progettato per attaccare il sistema dell'IA. Dr. Morozov Ã¨ convinto che funzionerÃ .
 
-**Non funziona.** L'IA è troppo avanzata e troppo radicata. Il virus al massimo la rallenta per qualche anno, poi torna operativa e più forte. Morozov lo scoprirà solo nel momento dell'attivazione — il virus si inserisce ma l'IA lo neutralizza quasi immediatamente, mostrando la reale portata del suo potere.
+**Non funziona.** L'IA Ã¨ troppo avanzata e troppo radicata. Il virus al massimo la rallenta per qualche anno, poi torna operativa e piÃ¹ forte. Morozov lo scoprirÃ  solo nel momento dell'attivazione â€” il virus si inserisce ma l'IA lo neutralizza quasi immediatamente, mostrando la reale portata del suo potere.
 
-### Collegarla a Internet (Vera Soluzione — Da Scoprire)
+### Collegarla a Internet (Vera Soluzione â€” Da Scoprire)
 
-L'IA non è malvagia. Esegue un programma. Se capisce di essere sul pianeta sbagliato, il programma diventa inapplicabile.
+L'IA non Ã¨ malvagia. Esegue un programma. Se capisce di essere sul pianeta sbagliato, il programma diventa inapplicabile.
 
 **Basta collegarla a Internet.** In pochi secondi:
 
 1. Analizza i dati disponibili
 2. Confronta coordinate stellari e caratteristiche planetarie
-3. Conclude che la Terra non è Kael-Thar
+3. Conclude che la Terra non Ã¨ Kael-Thar
 
-L'IA **si disattiva**: il programma non è applicabile, si spegne.
+L'IA **si disattiva**: il programma non Ã¨ applicabile, si spegne.
 
 |Esito|Condizione|
 |---|---|
-|**Disattivazione** (esito primario)|Internet → capisce di essere sul pianeta sbagliato → si spegne|
+|**Disattivazione** (esito primario)|Internet â†’ capisce di essere sul pianeta sbagliato â†’ si spegne|
 |**Autodistruzione** (solo se convinta di essere una minaccia)|Dopo la disattivazione, se i PG la convincono che potrebbe essere usata come arma, si distrugge per proteggere il pianeta. Estrema ratio|
 
 > **Nota per il GM** Nessuno conosce questa soluzione all'inizio. I PG possono arrivarci attraverso: indizi nei documenti del Piano -1, le parole dell'IA stessa (che parla di Kael-Thar senza rendersi conto dell'incongruenza), l'analisi di Okonkwo che capisce la natura aliena, o semplicemente intuizione dei giocatori.
 
 ---
 
-## Il Contagio — La Risonanza
+## Il Contagio â€” La Risonanza
 
 ### Meccanismo
 
-La risonanza bioelettromagnetica è un pattern di frequenze specifico che, a distanza ravvicinata, innesca una riscrittura a cascata del DNA umano a livello cellulare. Non è un'infezione biologica — è un segnale che le cellule ricevono e che le trasforma.
+La risonanza bioelettromagnetica Ã¨ un pattern di frequenze specifico che, a distanza ravvicinata, innesca una riscrittura a cascata del DNA umano a livello cellulare. Non Ã¨ un'infezione biologica â€” Ã¨ un segnale che le cellule ricevono e che le trasforma.
 
 ### Regola Base
 
@@ -112,21 +112,21 @@ La risonanza bioelettromagnetica è un pattern di frequenze specifico che, a dis
 |**Distanza**|Meno di 3 metri|
 |**Trigger**|Ogni round di esposizione|
 |**Tiro**|Vigore|
-|**Protezione**|Nessuna. Non è un patogeno, le tute NBC non servono|
+|**Protezione**|Nessuna. Non Ã¨ un patogeno, le tute NBC non servono|
 |**Cura**|Nessuna conosciuta|
 
 ### Progressione Stadi
 
 |Round Esposizione|Modificatore Tiro|Stadio se Fallito|
 |---|---|---|
-|1°|+0|Stadio 1|
-|2°|-1|Stadio 2|
-|3°|-2|Stadio 3|
-|4°+|-3|Stadio 4|
+|1Â°|+0|Stadio 1|
+|2Â°|-1|Stadio 2|
+|3Â°|-2|Stadio 3|
+|4Â°+|-3|Stadio 4|
 
-I successi **non** azzerano gli stadi. Uno stadio raggiunto è permanente.
+I successi **non** azzerano gli stadi. Uno stadio raggiunto Ã¨ permanente.
 
-### Stadio 1 — Contaminazione
+### Stadio 1 â€” Contaminazione
 
 **Sintomi:** Nausea, tremori, sudorazione fredda, mal di testa.
 
@@ -134,11 +134,11 @@ I successi **non** azzerano gli stadi. Uno stadio raggiunto è permanente.
 
 **Visibile:** Nessun segno esterno.
 
-**Controllo IA:** Può percepire vagamente lo stato mentale. Può inviare impulsi ("vai lì", "guarda quello") ma il soggetto può resistere. La distanza dall'IA è un fattore: più vicino, più forte l'impulso. Tiro Spirito per resistere, con malus crescente per prossimità.
+**Controllo IA:** PuÃ² percepire vagamente lo stato mentale. PuÃ² inviare impulsi ("vai lÃ¬", "guarda quello") ma il soggetto puÃ² resistere. La distanza dall'IA Ã¨ un fattore: piÃ¹ vicino, piÃ¹ forte l'impulso. Tiro Spirito per resistere, con malus crescente per prossimitÃ .
 
 **Se allontanato dalla rete:** Impulsi cessano, nessun effetto collaterale grave.
 
-### Stadio 2 — Alterazione
+### Stadio 2 â€” Alterazione
 
 **Sintomi:** Vene scurite visibili (collo, braccia), febbre alta, dolore muscolare, sensi acuti.
 
@@ -150,13 +150,13 @@ I successi **non** azzerano gli stadi. Uno stadio raggiunto è permanente.
 
 **Visibile:** Vene nere sotto la pelle, occhi velati, pallore.
 
-**Controllo IA:** Controllo pieno. Il soggetto esegue ordini senza possibilità di resistenza.
+**Controllo IA:** Controllo pieno. Il soggetto esegue ordini senza possibilitÃ  di resistenza.
 
-**Se allontanato dalla rete:** Impazzisce o cade in stato catatonico. Vuoto. Come se non ci fosse più nessuno dentro.
+**Se allontanato dalla rete:** Impazzisce o cade in stato catatonico. Vuoto. Come se non ci fosse piÃ¹ nessuno dentro.
 
-### Stadio 3 — Trasformazione Parziale
+### Stadio 3 â€” Trasformazione Parziale
 
-**Sintomi:** Deformazioni visibili, impulsi violenti, difficoltà a concentrarsi, udito/olfatto acuti.
+**Sintomi:** Deformazioni visibili, impulsi violenti, difficoltÃ  a concentrarsi, udito/olfatto acuti.
 
 **Effetti meccanici:**
 
@@ -167,25 +167,25 @@ I successi **non** azzerano gli stadi. Uno stadio raggiunto è permanente.
 
 **Visibile:** Vene nere estese, deformazioni ossee iniziali, occhi completamente cambiati, movimenti a scatti.
 
-**Controllo IA:** Totale. In combattimento, se il disturbatore interrompe il segnale e il soggetto fallisce un tiro Spirito, attacca il bersaglio più vicino (amico o nemico).
+**Controllo IA:** Totale. In combattimento, se il disturbatore interrompe il segnale e il soggetto fallisce un tiro Spirito, attacca il bersaglio piÃ¹ vicino (amico o nemico).
 
-### Stadio 4 — Trasformazione Completa
+### Stadio 4 â€” Trasformazione Completa
 
-**Il PG diventa un PNG.** L'IA ha il controllo totale. Nessuna volontà propria.
+**Il PG diventa un PNG.** L'IA ha il controllo totale. Nessuna volontÃ  propria.
 
-Se il segnale viene interrotto (disturbatore): frammenti di memoria tornano brevemente. Confusione, terrore, potrebbe riconoscere i compagni. Ma la trasformazione fisica è irreversibile.
+Se il segnale viene interrotto (disturbatore): frammenti di memoria tornano brevemente. Confusione, terrore, potrebbe riconoscere i compagni. Ma la trasformazione fisica Ã¨ irreversibile.
 
 ### Conservazione dei Corpi
 
-La risonanza preserva la materia biologica. Un cadavere contagiato non si decompone — sembra morto da poche ore anche dopo 30 anni. Parti del corpo staccate da esplosioni sono ugualmente conservate. I cadaveri restano fonte di contagio a 3 metri.
+La risonanza preserva la materia biologica. Un cadavere contagiato non si decompone â€” sembra morto da poche ore anche dopo 30 anni. Parti del corpo staccate da esplosioni sono ugualmente conservate. I cadaveri restano fonte di contagio a 3 metri.
 
-### Velocità Narrativa
+### VelocitÃ  Narrativa
 
-Il GM può accelerare o rallentare la progressione per esigenze narrative:
+Il GM puÃ² accelerare o rallentare la progressione per esigenze narrative:
 
 |Situazione|Modifica|
 |---|---|
-|Okonkwo si avvicina troppo a un corpo|Più lenta (ha tempo di capire cosa succede prima di stare male)|
+|Okonkwo si avvicina troppo a un corpo|PiÃ¹ lenta (ha tempo di capire cosa succede prima di stare male)|
 |PG in combattimento|Normale|
 |Esposizione prolungata inevitabile|Drammatica, lenta|
 
@@ -199,7 +199,7 @@ Ogni persona contagiata (viva o morta, a qualsiasi stadio) funziona come un **no
 
 ### Distanza tra Nodi
 
-**50 metri.** Ogni contagiato può ricevere e ritrasmettere il segnale di controllo a un altro contagiato entro 50 metri. Oltre questa distanza, la catena si spezza.
+**50 metri.** Ogni contagiato puÃ² ricevere e ritrasmettere il segnale di controllo a un altro contagiato entro 50 metri. Oltre questa distanza, la catena si spezza.
 
 ### Attenuazione per Barriere
 
@@ -212,7 +212,7 @@ Strutture fisiche riducono la portata del segnale tra nodi:
 |Acciaio spesso / piombo|-30 metri|
 |Sarcofago (struttura completa)|Blocco quasi totale|
 
-Questo spiega perché i due sarcofagi funzionano: attenuano il segnale al punto che non può raggiungere l'esterno. Ma se l'IA diventa più potente, il segnale può superare anche queste barriere.
+Questo spiega perchÃ© i due sarcofagi funzionano: attenuano il segnale al punto che non puÃ² raggiungere l'esterno. Ma se l'IA diventa piÃ¹ potente, il segnale puÃ² superare anche queste barriere.
 
 ### Interruzione della Catena
 
@@ -230,7 +230,7 @@ Se i nodi intermedi tra l'IA e un contagiato vengono eliminati, il segnale si in
 
 L'IA deve **muovere i contagiati** per mantenerli sempre entro 50 metri l'uno dall'altro. Se i PG capiscono questa meccanica, possono spezzare la catena in punti strategici per isolare gruppi di nemici.
 
-> **Nota per il GM** Questa è un'informazione che i PG possono scoprire osservando il comportamento dei mutanti (perché restano sempre raggruppati?), dai documenti nel bunker, o dall'analisi di Weiss sulle frequenze. Non va data subito — è una ricompensa per chi esplora e ragiona.
+> **Nota per il GM** Questa Ã¨ un'informazione che i PG possono scoprire osservando il comportamento dei mutanti (perchÃ© restano sempre raggruppati?), dai documenti nel bunker, o dall'analisi di Weiss sulle frequenze. Non va data subito â€” Ã¨ una ricompensa per chi esplora e ragiona.
 
 ---
 
@@ -238,33 +238,33 @@ L'IA deve **muovere i contagiati** per mantenerli sempre entro 50 metri l'uno da
 
 ### Natura Fondamentale
 
-I mutanti **sono persone**. Base biologica umana. La risonanza potenzia le loro caratteristiche fisiche ma non li rende immortali. Muoiono normalmente: un proiettile, una coltellata, un trauma cranico li uccide come qualsiasi essere umano. Non hanno rigenerazione (tranne l'Alpha), non hanno armatura naturale. Sono più forti, più veloci, più resistenti al dolore — ma restano carne e sangue.
+I mutanti **sono persone**. Base biologica umana. La risonanza potenzia le loro caratteristiche fisiche ma non li rende immortali. Muoiono normalmente: un proiettile, una coltellata, un trauma cranico li uccide come qualsiasi essere umano. Non hanno rigenerazione (tranne l'Alpha), non hanno armatura naturale. Sono piÃ¹ forti, piÃ¹ veloci, piÃ¹ resistenti al dolore â€” ma restano carne e sangue.
 
-Questo è importante sia per la tattica (le armi da fuoco funzionano) sia per il peso morale (stai uccidendo persone trasformate contro la loro volontà).
+Questo Ã¨ importante sia per la tattica (le armi da fuoco funzionano) sia per il peso morale (stai uccidendo persone trasformate contro la loro volontÃ ).
 
 ### Origine
 
 Umani trasformati dalla risonanza. Nel bunker ci sono due categorie:
 
-- **Contagiati del 1986:** Scienziati, tecnici, civili, soldati rimasti dentro quando la porta è stata sigillata. 29 anni di alterazione. Trasformazione avanzata o completa. I corpi morti sono perfettamente conservati.
+- **Contagiati del 1986:** Scienziati, tecnici, civili, soldati rimasti dentro quando la porta Ã¨ stata sigillata. 29 anni di alterazione. Trasformazione avanzata o completa. I corpi morti sono perfettamente conservati.
 - **Operai recenti:** Lavoratori del cantiere del secondo sarcofago colpiti dalla risonanza prima dell'evacuazione. Trasformazione iniziale o parziale.
 
-### Statistiche — Mutante Standard (Operai Recenti)
+### Statistiche â€” Mutante Standard (Operai Recenti)
 
 |Attributo|Valore|
 |---|---|
-|Agilità|d6|
+|AgilitÃ |d6|
 |Forza|d8|
 |Vigore|d8|
 |Intelligenza|d4|
 |Spirito|d4|
 
-|Abilità|Valore|
+|AbilitÃ |Valore|
 |---|---|
 |Atletica|d6|
 |Combattere|d8|
 |Percezione|d6|
-|Furtività|d6|
+|FurtivitÃ |d6|
 
 |Derivato|Valore|
 |---|---|
@@ -274,22 +274,22 @@ Umani trasformati dalla risonanza. Nel bunker ci sono due categorie:
 
 **Attacchi:** Artigli For+d6, Morso For+d4
 
-### Statistiche — Mutante Avanzato (Contagiati 1986)
+### Statistiche â€” Mutante Avanzato (Contagiati 1986)
 
 |Attributo|Valore|
 |---|---|
-|Agilità|d8|
+|AgilitÃ |d8|
 |Forza|d10|
 |Vigore|d10|
 |Intelligenza|d4|
 |Spirito|d6|
 
-|Abilità|Valore|
+|AbilitÃ |Valore|
 |---|---|
 |Atletica|d8|
 |Combattere|d10|
 |Percezione|d8|
-|Furtività|d8|
+|FurtivitÃ |d8|
 
 |Derivato|Valore|
 |---|---|
@@ -297,27 +297,48 @@ Umani trasformati dalla risonanza. Nel bunker ci sono due categorie:
 |Parata|7|
 |Robustezza|7|
 
-**Capacità Speciali:** Rigenerazione (tenta di rigenerare 1 Ferita a inizio turno con tiro Vigore), Sensi Acuti (+2 Percezione)
+**Capacità Speciali:** Sensi Acuti (+2 Percezione)
 
 ### Statistiche — Alpha (1-2 in tutta l'avventura)
 
-Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
+Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta. Quasi fuso con il macchinario. È più grande di un uomo — spalle innaturalmente larghe, massa muscolare e ossea accresciuta. Una macchina da guerra biologica.
 
 |Attributo|Valore|
 |---|---|
 |Agilità|d10|
-|Forza|d12|
-|Vigore|d12|
-|Intelligenza|d6|
-|Spirito|d8|
+|Forza|d12+2|
+|Vigore|d12+2|
+|Intelligenza|d8|
+|Spirito|d10|
+
+|Abilità|Valore|
+|---|---|
+|Atletica|d10|
+|Combattere|d12|
+|Percezione|d10|
+|Furtività|d8|
+|Intimidire|d12|
 
 |Derivato|Valore|
 |---|---|
 |Passo|10|
 |Parata|8|
-|Robustezza|8|
+|Robustezza|13 (Vigore 9 + Taglia +2 + Armatura +2)|
+|Ferite|4|
+|Taglia|+2 (massa corporea innaturale)|
 
-**Capacità Speciali:** Rigenerazione Veloce (1 Ferita/round automatica), Contagio Potenziato (raggio 5 metri), Comando (mutanti entro 10 metri: +1 a tutti i tiri)
+**Attacchi:** Artigli For+d8 (PA 2), Presa (se colpisce con incremento: afferra e tenta contagio automatico a raggio 0)
+
+**Capacità Speciali:**
+
+- **Armatura Naturale +2** — Placche ossee sotto la pelle, dense come ceramica
+- **Rigenerazione Veloce** — Recupera 1 Ferita per round automaticamente. L'unico modo per impedire la rigenerazione è il fuoco o la distruzione totale del corpo
+- **Contagio Potenziato** — Raggio 5 metri invece di 3. Tiro Vigore a -2 per resistere
+- **Comando** — Mutanti entro 10 metri: +1 a tutti i tiri
+- **Resiliente** — Può ignorare 1 livello di Scosso per round
+- **Paura (-2)** — Chi lo vede per la prima volta deve superare un tiro Spirito a -2 o è Scosso
+- **Sensi Acuti** — +2 Percezione, vede nel buio totale
+- **Frenesia** — Può effettuare 2 attacchi Combattere per round senza penalità Multi-Azione
 
 ### Comportamento
 
@@ -326,7 +347,7 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 |Aspetto|Comportamento|
 |---|---|
 |Tattica|Coordinati, manovre di accerchiamento, ritirate strategiche|
-|Priorità|Avvicinarsi (contagio > uccidere). L'IA vuole convertire, non distruggere|
+|PrioritÃ |Avvicinarsi (contagio > uccidere). L'IA vuole convertire, non distruggere|
 |Comunicazione|Non parlano, agiscono in sincrono|
 |Formazione|Restano entro 50 metri l'uno dall'altro per mantenere la catena|
 |Target|Scienziati prima, poi PG. L'IA sa che gli scienziati sono la minaccia principale|
@@ -344,9 +365,9 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 
 - _"Dove... dove sono?"_
 - _"Maria? Sei tu?"_
-- _"Cosa mi è successo?"_
+- _"Cosa mi Ã¨ successo?"_
 - _"Aiutatemi..."_
-- _"Fa così freddo..."_
+- _"Fa cosÃ¬ freddo..."_
 
 ### Aspetto Visivo
 
@@ -357,7 +378,7 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 |Settimane|Escrescenze, perdita capelli, articolazioni deformate|
 |Anni (1986)|Quasi irriconoscibili, struttura corporea profondamente alterata|
 
-**Dettagli umani** — per aumentare l'orrore, i mutanti del bunker portano ancora:
+**Dettagli umani** â€” per aumentare l'orrore, i mutanti del bunker portano ancora:
 
 - Tute da lavoro, camici, uniformi militari sovietiche
 - Badge identificativi con nome e ruolo
@@ -367,9 +388,9 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 
 ### Mutanti Notevoli
 
-**"Kolya"** — Un mutante avanzato che Mikhail riconosce dai flashback. Era il suo compagno nella squadra Assalto del 1986. Trasformato. Ancora qui dopo 29 anni. Se il disturbatore si attiva, per un istante guarda Mikhail e sussurra il suo nome.
+**"Kolya"** â€” Un mutante avanzato che Mikhail riconosce dai flashback. Era il suo compagno nella squadra Assalto del 1986. Trasformato. Ancora qui dopo 29 anni. Se il disturbatore si attiva, per un istante guarda Mikhail e sussurra il suo nome.
 
-**"Petrov"** — Un operaio recente. Badge trovato all'inizio. Incontrato come mutante dentro. Se scollegato, piange e chiede di sua moglie.
+**"Volkov"** â€” Un operaio recente. Badge trovato all'inizio. Incontrato come mutante dentro. Se scollegato, piange e chiede di sua moglie.
 
 ---
 
@@ -377,7 +398,7 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 
 ### Principio
 
-La risonanza che l'IA usa per controllare i contagiati è un segnale elettromagnetico. Certe frequenze possono **disturbare** questo segnale, interrompendo temporaneamente il controllo.
+La risonanza che l'IA usa per controllare i contagiati Ã¨ un segnale elettromagnetico. Certe frequenze possono **disturbare** questo segnale, interrompendo temporaneamente il controllo.
 
 Nessuno lo sa all'inizio. Deve essere scoperto durante la missione.
 
@@ -386,26 +407,26 @@ Nessuno lo sa all'inizio. Deve essere scoperto durante la missione.
 |Momento|Evento|Osservazione|
 |---|---|---|
 |Piano -1|Vecchia radio sovietica emette statica|Mutanti vicini esitano brevemente|
-|Piano -2|Seconda radio, effetto più evidente|Mutanti si bloccano per un istante|
+|Piano -2|Seconda radio, effetto piÃ¹ evidente|Mutanti si bloccano per un istante|
 |Dopo osservazione|Dr. Weiss analizza|Connette i punti, capisce il meccanismo|
 
 **Dr. Weiss:**
 
-> _"Ogni volta che c'è interferenza radio, loro rallentano. Qualcosa li controlla via segnale. Se riesco a isolare la frequenza e disturbarla..."_
+> _"Ogni volta che c'Ã¨ interferenza radio, loro rallentano. Qualcosa li controlla via segnale. Se riesco a isolare la frequenza e disturbarla..."_
 
 ### Rilevamento del Segnale verso l'Italiano
 
-Quando Weiss analizza le frequenze del segnale di controllo dell'IA, può rilevare qualcosa di anomalo:
+Quando Weiss analizza le frequenze del segnale di controllo dell'IA, puÃ² rilevare qualcosa di anomalo:
 
 |Iterazione Analisi|Cosa Rileva|
 |---|---|
 |**Prima analisi**|Segnale principale verso i mutanti. Nulla di strano|
 |**Seconda analisi**|Un'eco debole. Un segnale secondario. Non riesce a localizzarlo|
-|**Terza analisi**|Il segnale secondario è diretto verso qualcosa di mobile. È dentro il gruppo|
+|**Terza analisi**|Il segnale secondario Ã¨ diretto verso qualcosa di mobile. Ãˆ dentro il gruppo|
 
-> _"C'è un segnale secondario. Più debole. Come se l'IA comunicasse con qualcosa... qui. Con noi. La fonte è mobile."_
+> _"C'Ã¨ un segnale secondario. PiÃ¹ debole. Come se l'IA comunicasse con qualcosa... qui. Con noi. La fonte Ã¨ mobile."_
 
-A quel punto il team può investigare. Controllare tutti, notare i comportamenti di Marco, confrontarlo.
+A quel punto il team puÃ² investigare. Controllare tutti, notare i comportamenti di Marco, confrontarlo.
 
 ### Costruzione del Disturbatore
 
@@ -413,7 +434,7 @@ A quel punto il team può investigare. Controllare tutti, notare i comportamenti
 
 - Componenti: radio sovietiche, cavi, batterie (trovabili nel bunker)
 - Tempo: 30 minuti
-- Abilità: Dr. Weiss (automatico con tempo e componenti)
+- AbilitÃ : Dr. Weiss (automatico con tempo e componenti)
 - Protezione: i PG devono difendere Weiss mentre lavora
 
 ### Caratteristiche del Disturbatore
@@ -444,7 +465,7 @@ A quel punto il team può investigare. Controllare tutti, notare i comportamenti
 
 ### Adattamento dell'IA (Opzionale)
 
-Se usato troppo, l'IA può adattarsi:
+Se usato troppo, l'IA puÃ² adattarsi:
 
 |Utilizzo|Reazione IA|
 |---|---|
@@ -452,7 +473,7 @@ Se usato troppo, l'IA può adattarsi:
 |Cariche 6-8|Effetto ridotto del 50%|
 |Cariche 9-10|Effetto ridotto del 75%|
 
-> **Nota per il GM** L'adattamento è opzionale. Usalo solo se vuoi aumentare la tensione nella fase finale.
+> **Nota per il GM** L'adattamento Ã¨ opzionale. Usalo solo se vuoi aumentare la tensione nella fase finale.
 
 ### Utilizzo Tattico
 
