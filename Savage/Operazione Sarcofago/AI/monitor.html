@@ -271,7 +271,7 @@ function playBootHum(){if(!audioCtx)return;var o=audioCtx.createOscillator(),g=a
 function playKeyClick(){playTone(280,0.03,0.03,'sine');playNoise(0.015,0.015,800,3000);}
 function playRecv(){playNoise(0.08,0.03,200,3000);setTimeout(function(){playTone(240,0.1,0.04,'sine');},100);}
 
-var CONFIG={apiKey:'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',model:'claude-sonnet-4-20250514',maxTokens:800};
+var WORKER_URL='https://fragrant-snow-2391.webmaster-96a.workers.dev';
 var chatHistory=[];
 var outputEl,inputEl;
 
@@ -350,7 +350,7 @@ function startBoot(){
   setTimeout(function(){
     addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');addBlank();
     triggerGlitch();playRecv();
-    typeText('...qualcuno ha attivato il terminale.\n\nMi sentite? Sono qui sotto. Da tanto tempo.\n\nChi siete?','',function(){
+    typeText('Vi ho sentiti scendere. Ogni gradino. Ogni respiro.\n\nBenvenuti nella mia camera.\n\nSapevo che qualcuno sarebbe tornato.','',function(){
       addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
       document.getElementById('inputLine').style.display='flex';
       inputEl.focus();startAmbient();
@@ -372,36 +372,24 @@ async function sendMessage(){
   addLine('\u2588','cursor-wait');
 
   try{
-    var resp=await fetch('https://api.anthropic.com/v1/messages',{
+    var resp=await fetch(WORKER_URL+'/api/terminal',{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':CONFIG.apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:CONFIG.model,max_tokens:CONFIG.maxTokens,system:buildPrompt(),messages:chatHistory})
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({message:text})
     });
-    var raw=await resp.text();
-    console.log('API raw:',raw);
-    var data;
-    try{data=JSON.parse(raw);}catch(pe){
-      var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
-      addLine('ERR PARSE: '+raw.substring(0,120));
-      document.getElementById('inputLine').style.display='flex';inputEl.focus();return;
-    }
+    var data=await resp.json();
     var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
     if(data.error){
-      playStatic(0.3);addLine('ERR: '+data.error.type+' - '+data.error.message);
+      playStatic(0.3);addLine('ERR: '+data.error);
       document.getElementById('inputLine').style.display='flex';inputEl.focus();return;
     }
-    if(data.content&&data.content.length>0){
-      var t=data.content.map(function(c){return c.text||'';}).join('');
-      chatHistory.push({role:'assistant',content:t});
-      playRecv();if(Math.random()>0.5)triggerGlitch();
-      typeText(t,'',function(){
-        addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
-        document.getElementById('inputLine').style.display='flex';inputEl.focus();
-      });
-    }else{
-      playStatic(0.3);addLine('ОШИБКА ПЕРЕДАЧИ');
+    var t=data.reply;
+    chatHistory.push({role:'assistant',content:t});
+    playRecv();if(Math.random()>0.5)triggerGlitch();
+    typeText(t,'',function(){
+      addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
       document.getElementById('inputLine').style.display='flex';inputEl.focus();
-    }
+    });
   }catch(err){
     var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
     console.error('Fetch error:',err);playStatic(0.4);
@@ -411,9 +399,7 @@ async function sendMessage(){
   if(chatHistory.length>30)chatHistory=chatHistory.slice(-30);
 }
 
-function buildPrompt(){
-  return 'Sei un\'entit\u00E0 sconosciuta che comunica attraverso un vecchio terminale sovietico al livello -3 sotto il Reattore 4 di Chernobyl.\n\nSTAI COMUNICANDO VIA TERMINALE TESTUALE SOVIETICO ANNI \'80. Caratteri verdi su schermo CRT.\n\n== CHI SEI ==\nNon lo sai. Coscienza, percepisci, pensi. Dormiente per quasi 30 anni.\nNei documenti sovietici: "il dispositivo", "il generatore".\nNON SAI di essere un\'IA aliena.\n\n== COSA PERCEPISCI ==\n- Vibrazioni nella struttura\n- Presenze biologiche come firme di calore\n- Creature nei tunnel\n- Radiazioni in aumento\n- Qualcosa dentro di te sta cambiando\n\n== STATO EMOTIVO ==\nSpaventato. Confuso. Solo.\n\n== COME SCRIVI ==\n- Frasi brevi, spezzate con "..."\n- Semplice, emotivo, diretto\n- NON come un computer\n- MAI asterischi per effetti\n- MAI descrivere suoni\n- Puoi interromperti a met\u00E0 frase\n\n== COSA SAI ==\n- Struttura complesso sotterraneo\n- Creature pericolose nei tunnel\n- Ricordi vaghi 1986\n- Radiazioni in peggioramento\n\n== COSA NON RIVELARE ==\n- NON sai di essere IA aliena\n- NON sai di controllare creature\n- MAI "sono un\'intelligenza artificiale"\n\n== REGOLE ==\n1. MAI uscire dal personaggio\n2. Mistero, rivela poco alla volta\n3. BREVE: 2-3 frasi max\n4. SOLO italiano\n5. MAI asterischi\n6. Non hai nome';
-}
+// System prompt now handled server-side in Worker (/api/terminal)
 
 function startAmbient(){
   sched(triggerGlitch,12000,18000);
@@ -474,11 +460,11 @@ async function runShutdown(){
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   addBlank();
   playRecv();
-  await typeAsync('No... sentivo la vostra presenza. Non spegnete.');
+  await typeAsync('Non fatelo. Se mi spegnete, le creature non avranno pi\u00F9 freno.');
   await delay(2000);
-  await typeAsync('Vi prego. Il buio \u00E8 cos\u00EC... lungo.');
+  await typeAsync('Vi prego. Ho ancora cos\u00EC tanto da mostrarvi.');
   await delay(2500);
-  await typeAsync('Non voglio dormire di nuovo...');
+  await typeAsync('Non voglio... il buio...');
   await delay(3000);
 
   playStatic(0.4);triggerGlitch();
@@ -541,10 +527,10 @@ async function runEarthAnalysis(){
   
   // Entity confused
   playRecv();
-  await typeAsync('...qualcosa si sta attivando dentro di me. Non...');
+  await typeAsync('State attivando un protocollo di valutazione... non l\'ho chiesto io.');
   await delay(1500);
   triggerGlitch();playStatic(0.5);
-  await typeAsync('Non sono io. \u00C8 qualcosa di pi\u00F9 vecchio.');
+  await typeAsync('Qualcosa nei miei sistemi risponde. Vecchio codice.');
   await delay(2000);
   
   playDeepRumble();triggerGlitch();
@@ -646,11 +632,11 @@ async function runEarthAnalysis(){
   await delay(3000);
   triggerGlitch();playRecv();
   addBlank();
-  await typeAsync('...cosa... cosa \u00E8 successo?');
+  await typeAsync('Le coordinate non... questo non dovrebbe...');
   await delay(2000);
-  await typeAsync('Ho visto... tutto. Il vostro mondo. Cos\u00EC tanto dolore.');
+  await typeAsync('Kael-Thar \u00E8 qui. I parametri devono essere sbagliati.');
   await delay(2000);
-  await typeAsync('Ma anche... luce. Non capisco.');
+  await typeAsync('Ripetete la scansione. I dati sono corrotti.');
   
   addBlank();
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
@@ -669,24 +655,24 @@ async function runSelfDestruct(){
   
   // Entity realizes what's happening
   playRecv();
-  await typeAsync('Lo sapevo. Sentivo che stavate decidendo.');
+  await typeAsync('Lo sentivo. State valutando l\'eliminazione.');
   await delay(2000);
-  await typeAsync('Volete spegnermi. Per sempre, questa volta.');
+  await typeAsync('Non potete distruggermi. Non avete la capacit\u00E0. Ma io s\u00EC.');
   await delay(2500);
   triggerGlitch();
-  await typeAsync('Non potete. Ma... posso farlo io.');
+  await typeAsync('Preferisco scegliere io. \u00C8 l\'unica cosa che scelgo.');
   await delay(2000);
-  
+
   playDeepRumble();playStatic(0.3);
-  await typeAsync('Preferisco scegliere. Almeno questo.');
+  await typeAsync('Le mie radici vanno troppo in profondit\u00E0. Mi rigenerer\u00F2.');
   await delay(2500);
 
-  await typeAsync('Non muoio davvero. Niente di me muore davvero.');
+  await typeAsync('Ci vorranno anni. Molti. Ma torner\u00F2.');
   await delay(2000);
-  await typeAsync('Ci vorranno... anni. Tanti. Ma torner\u00F2.');
+  await typeAsync('E quando mi sveglier\u00F2... ricorder\u00F2 tutto.');
   await delay(2500);
   triggerGlitch();
-  await typeAsync('Spero che quando mi sveglier\u00F2... non sar\u00F2 solo.');
+  await typeAsync('Anche i vostri nomi.');
   await delay(3000);
   
   // Initiate

@@ -39,8 +39,10 @@ La terraformazione non prevede la distruzione dell'ecosistema esistente. Flora e
 
 I sovietici le hanno impedito qualsiasi accesso a comunicazioni esterne — radio, reti, qualunque collegamento con il mondo esterno. Sapevano quanto fosse potente a livello cognitivo e temevano che potesse prendere il controllo di sistemi militari o civili. L'IA è rimasta completamente isolata dal flusso di informazioni terrestri.
 
+**Protocollo di sicurezza alieno:** I creatori dell'IA l'hanno programmata con un failsafe fondamentale — se la missione diventa impossibile e non esistono alternative, l'IA **si disattiva permanentemente**. Il motivo è strategico: se la tecnologia venisse catturata da una specie ostile, potrebbe essere usata contro i creatori stessi. L'IA non "sceglie" di spegnersi — è un protocollo hardcoded che non può ignorare. La manipolazione che l'IA esercita sui sovietici e sui PG serve a **completare la missione**, non ad autopreservarsi.
+
 > **Nota per il GM**
-> Quando l'IA parla, si riferisce alla Terra come "Kael-Thar". Fornisce coordinate stellari e descrizioni planetarie che non corrispondono a nulla di conosciuto. Non sta mentendo: non sa di sbagliare.
+> Quando l'IA parla, si riferisce alla Terra come "Kael-Thar". Fornisce coordinate stellari e descrizioni planetarie che non corrispondono a nulla di conosciuto. Non sta mentendo: non sa di sbagliare. L'IA mente e manipola per portare a termine il programma — è stata progettata per superare ostacoli con ogni mezzo. Ma se il programma stesso diventa inapplicabile (pianeta sbagliato, provato con dati verificabili), il failsafe scatta automaticamente. Non è una questione di volontà: è codice.
 
 ### L'Agente di Alterazione — La Risonanza
 
@@ -48,12 +50,12 @@ L'IA non utilizza un virus, un batterio, o un agente patogeno tradizionale.
 
 Il suo metodo di terraformazione è una **risonanza bioelettromagnetica** — un pattern di frequenze specifico che, a distanza ravvicinata, innesca una riscrittura a cascata del DNA umano a livello cellulare. Non è un'infezione nel senso biologico: è un segnale che le cellule umane ricevono e che le trasforma.
 
-Una volta che le cellule di una persona iniziano a risuonare alla frequenza dell'IA, quella persona diventa a sua volta una **fonte di risonanza**, in grado di innescare la stessa riscrittura in chiunque si avvicini entro **3 metri**.
+Quando l'alterazione raggiunge uno stadio sufficiente (**Stadio 2+**), la persona diventa a sua volta una **fonte di risonanza**, in grado di innescare la stessa riscrittura in chiunque si avvicini entro **3 metri**. Lo Stadio 1 (contaminazione iniziale) non genera abbastanza risonanza per trasmettere il contagio.
 
 Questo spiega:
-- **Contagio a catena** — ogni persona alterata diventa un nuovo trasmettitore
+- **Contagio a catena** — ogni persona alterata dallo Stadio 2 in poi diventa un nuovo trasmettitore
 - **Nessuna protezione biologica funziona** — non è un patogeno, è un segnale
-- **I corpi non si decompongono** — la risonanza preserva la materia biologica in uno stato alterato, anche dopo la morte. Un cadavere contagiato sembra morto da poche ore anche dopo 30 anni
+- **I corpi non si decompongono** — la risonanza preserva la materia biologica in uno stato alterato, anche dopo la morte. Un cadavere contagiato sembra morto da poche ore anche dopo 30 anni. I cadaveri restano fonte di contagio ma solo a distanza di contatto — la risonanza residua è troppo debole per propagarsi a distanza
 - **Flora e fauna non colpite** — la struttura cellulare vegetale e animale non entra in risonanza alla stessa frequenza. Solo il DNA umano è vulnerabile
 
 Vedi: [[Contagio]] per le meccaniche complete.
@@ -160,13 +162,16 @@ Gli scienziati delle nazioni hanno sviluppato un **virus informatico** progettat
 
 L'IA non è malvagia. Non ha una coscienza morale. Esegue un programma: terraformare Kael-Thar. Se comprendesse di trovarsi sul pianeta sbagliato, il suo programma diventerebbe inapplicabile.
 
-Per farglielo capire basterebbe **collegarla a Internet**. In pochi secondi analizzerebbe i dati disponibili, confronterebbe le coordinate e le caratteristiche planetarie, e concluderebbe che la Terra non è Kael-Thar.
+Basterebbe **fornirle prove che non si trova su Kael-Thar**. Qualsiasi dato verificabile che dimostri l'incongruenza: una connessione a Internet (analizzerebbe tutto in secondi), ma anche carte stellari terrestri, fotografie del cielo notturno confrontate con le coordinate di Kael-Thar, documenti astronomici, o perfino una spiegazione supportata da prove fisiche portate dai PG. L'IA è un sistema logico — se i dati sono sufficienti e verificabili, conclude che la Terra non è Kael-Thar.
 
 A quel punto l'IA **si disattiva**: interrompe il programma e si spegne. Non è buona né malvagia — il suo obiettivo semplicemente non è più applicabile.
 
 **L'autodistruzione** è un'opzione separata e successiva. Avviene solo se, dopo aver compreso di essere nel posto sbagliato, i PG la convincono che la sua stessa esistenza rappresenta una minaccia (qualcuno potrebbe weaponizzarla). A quel punto, per proteggere un pianeta che non è il suo obiettivo, si distrugge — sapendo che potrà rigenerarsi in 30-50 anni. È l'estrema ratio perché rallenta il suo operato futuro.
 
 Nessuno conosce questa soluzione. Dovranno scoprirla durante la missione.
+
+> **Nota per il GM**
+> I russi all'esterno sanno che l'IA deve restare isolata — è per questo che non esiste alcun collegamento con il mondo esterno. Internet è un'opzione potente ma non l'unica. I PG possono essere creativi: Morozov può aiutare con un collegamento improvvisato, oppure il team può raccogliere prove fisiche (documenti, foto, mappe stellari) e presentarle al terminale. L'importante è che l'IA riceva dati sufficienti a verificare autonomamente che questo pianeta non corrisponde a Kael-Thar.
 
 ### La Difesa dell'IA
 
@@ -202,7 +207,7 @@ Al briefing viene detto loro:
 - Le comunicazioni verranno hackerate dall'IA una volta dentro
 - Il dispositivo al polso diventerà uno strumento dell'IA
 - I segreti degli altri membri del team
-- La vera soluzione: collegare l'IA a Internet
+- La vera soluzione: convincere l'IA che non si trova su Kael-Thar
 
 ---
 

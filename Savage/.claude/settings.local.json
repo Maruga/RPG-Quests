@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(__NEW_LINE_d782faf733d5f5ab__ python -c \"\nimport os\n\nfiles_to_fix = [''Fasi_Operative_Esterne.md'', ''Fasi_Operative_Interne.md'', ''Fogliettini_Segreti.md'']\n\nfor fname in files_to_fix:\n    with open\\(fname, ''rb''\\) as f:\n        raw = f.read\\(\\)\n    \n    text = raw.decode\\(''utf-8''\\)\n    \n    # Fix only double-encoded portions, leave correct UTF-8 intact\n    result = []\n    i = 0\n    while i < len\\(text\\):\n        found = False\n        for length in range\\(4, 1, -1\\):\n            if i + length <= len\\(text\\):\n                chunk = text[i:i+length]\n                try:\n                    decoded = chunk.encode\\(''cp1252''\\).decode\\(''utf-8''\\)\n                    if len\\(decoded\\) < len\\(chunk\\):\n                        result.append\\(decoded\\)\n                        i += length\n                        found = True\n                        break\n                except \\(UnicodeEncodeError, UnicodeDecodeError\\):\n                    continue\n        if not found:\n            result.append\\(text[i]\\)\n            i += 1\n    \n    fixed = ''''.join\\(result\\)\n    with open\\(fname, ''w'', encoding=''utf-8''\\) as f:\n        f.write\\(fixed\\)\n    print\\(f''{fname}: OK''\\)\n\n# Verify\nfor fname in files_to_fix:\n    with open\\(fname, ''r'', encoding=''utf-8''\\) as f:\n        text = f.read\\(\\)\n    c = text.count\\(''Ã''\\) + text.count\\(''â€''\\)\n    print\\(f''{fname}: {c} mojibake remaining''\\)\n\")",
+      "Bash(__NEW_LINE_8919ec1c9f885de9__ python -c \"\nwith open\\(''Fogliettini_Segreti.md'', ''r'', encoding=''utf-8''\\) as f:\n    lines = f.readlines\\(\\)\nfor i, line in enumerate\\(lines, 1\\):\n    if ''â€'' in line or ''Ã'' in line:\n        print\\(f''Line {i}: {line.rstrip\\(\\)}''\\)\")",
+      "Bash(__NEW_LINE_fdc9f1c2eea0641e__ python -c \"\nimport os\nfor root, dirs, files in os.walk\\(''.''\\):\n    for fname in files:\n        if fname.endswith\\(''.md''\\):\n            fpath = os.path.join\\(root, fname\\)\n            with open\\(fpath, ''r'', encoding=''utf-8''\\) as f:\n                text = f.read\\(\\)\n            c = text.count\\(''Ã''\\) + text.count\\(''â€''\\)\n            if c > 0:\n                print\\(f''{fpath}: {c} mojibake remaining''\\)\nprint\\(''Done - all files checked''\\)\n\")",
+      "Bash(git -C \"C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Savage\" log --oneline -20)",
+      "Bash(wc:*)",
+      "Bash(for f in \"C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Savage/Operazione Sarcofago\"/*.md)",
+      "Bash(do wc -l \"$f\")",
+      "Bash(done)",
+      "Bash(git -C \"C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Savage\" config --list)"
+    ]
+  }
+}

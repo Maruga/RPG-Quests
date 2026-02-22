@@ -2,9 +2,11 @@
 
 ## Regola Base
 
-Entro **3 metri** da un mutante (vivo o morto), inizia il processo di mutazione. Ogni round di esposizione → tiro **Vigore**. Nessuna protezione nota. Nessuna cura.
+Entro **3 metri** da un mutante **vivo (Stadio 2+)**, inizia il processo di mutazione. Ogni round di esposizione → tiro **Vigore**. Nessuna protezione nota. Nessuna cura.
 
-I cadaveri sono **altrettanto pericolosi** — la risonanza conserva i corpi perfettamente, anche dopo decenni. Bruciare i corpi (lanciafiamme) elimina il rischio.
+**Stadio 1:** Non trasmette il contagio. La risonanza è troppo debole per propagarsi.
+
+**Cadaveri:** Pericolosi solo a **distanza di contatto** (meno di 1 metro). La risonanza residua è conservata ma troppo debole per propagarsi a distanza. Bruciare i corpi (lanciafiamme) elimina il rischio.
 
 ## Progressione Stadi
 
@@ -16,6 +18,7 @@ I cadaveri sono **altrettanto pericolosi** — la risonanza conserva i corpi per
 | 4°+ | -3 | Stadio 4 |
 
 > **I successi NON azzerano gli stadi.** Una volta raggiunto uno stadio, resta permanente.
+> **Il contatore dei round SI azzera** se il PG si allontana oltre i 3 metri. Se si riavvicina, riparte dal 1° round (+0).
 
 ## Stadi della Mutazione
 

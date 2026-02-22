@@ -59,7 +59,7 @@
 
 - L'IA è aliena e crede di trovarsi sul pianeta Kael-Thar
 - Il virus informatico non funzionerà — al massimo rallenta l'IA per qualche anno
-- La vera soluzione è collegare l'IA a Internet
+- La vera soluzione è convincere l'IA che non si trova su Kael-Thar (con prove verificabili)
 - All'interno ci sono persone del 1986: vive (trasformate), morte (conservate dalla risonanza), e segni di combattimento della prima incursione
 - Le comunicazioni verranno hackerate dall'IA una volta dentro
 - L'IA conosce le debolezze di ogni PG (percezione mentale sull'Italiano, chat hackerata, ciò che i PG stessi le riveleranno)
@@ -117,13 +117,13 @@ Morozov inserisce il virus. L'IA lo neutralizza quasi subito. Il virus la rallen
 
 **Esito:** Successo apparente. Tra qualche anno il problema tornerà, peggiore.
 
-### Scenario B — Internet (Successo Pieno)
+### Scenario B — La Verità (Successo Pieno)
 
-I PG capiscono che l'IA non sa di essere sulla Terra. La collegano a Internet — attraverso il dispositivo al polso, un cavo, una connessione improvvisata. L'IA analizza, capisce, **si disattiva**.
+I PG capiscono che l'IA non sa di essere sulla Terra. Le forniscono prove sufficienti a dimostrarlo: una connessione a Internet (la via più rapida — analizza tutto in secondi), ma anche carte stellari terrestri, fotografie del cielo notturno, documenti astronomici, o qualsiasi dato verificabile che dimostri l'incongruenza con Kael-Thar. L'IA analizza, capisce, **si disattiva**.
 
 Se i PG la convincono anche che la sua esistenza potrebbe essere una minaccia (weaponizzazione), l'IA può compiere un passo ulteriore e **autodistruggersi**. Ma la disattivazione è già sufficiente.
 
-**Come possono arrivarci:** Indizi nei documenti del Piano -1 (Kael-Thar, coordinate), l'IA stessa che nomina Kael-Thar nella chat, Okonkwo che riconosce la natura aliena, intuizione dei giocatori.
+**Come possono arrivarci:** Indizi nei documenti del Piano -1 (Kael-Thar, coordinate), l'IA stessa che nomina Kael-Thar nella chat, Okonkwo che riconosce la natura aliena, intuizione dei giocatori. Morozov può aiutare con un collegamento improvvisato se decidono per Internet.
 
 **Esito:** L'IA cessa le operazioni. Fine della minaccia.
 

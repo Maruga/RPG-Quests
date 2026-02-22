@@ -54,26 +54,31 @@ Umani trasformati dalla risonanza dell'IA. Due categorie nel bunker:
 
 ### Alpha (Raro — 1-2 in tutta l'avventura)
 
-Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
+Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta. Quasi fuso con il macchinario. È più grande di un uomo — spalle innaturalmente larghe, massa muscolare e ossea accresciuta. Una macchina da guerra biologica.
 
 | Attributo | Valore | | Abilità | Valore |
 |---|---|---|---|---|
 | Agilità | d10 | | Atletica | d10 |
-| Forza | d12 | | Combattere | d12 |
-| Vigore | d12 | | Percezione | d10 |
-| Intelligenza | d6 | | Furtività | d10 |
-| Spirito | d8 | | | |
+| Forza | d12+2 | | Combattere | d12 |
+| Vigore | d12+2 | | Percezione | d10 |
+| Intelligenza | d8 | | Furtività | d8 |
+| Spirito | d10 | | Intimidire | d12 |
 
-| Passo | Parata | Robustezza |
-|---|---|---|
-| 10 | 8 | 8 |
+| Passo | Parata | Robustezza | Ferite | Taglia |
+|---|---|---|---|---|
+| 10 | 8 | 13 (Vigore 9 + Taglia +2 + Armatura +2) | 4 | +2 (massa corporea innaturale) |
 
-**Attacchi:** Artigli For+d10 · Morso For+d8
+**Attacchi:** Artigli For+d8 (PA 2) · Presa (se colpisce con incremento: afferra e tenta contagio automatico a raggio 0)
 
 **Capacità Speciali:**
-- **Rigenerazione Veloce:** Rigenera 1 Ferita/round automaticamente (nessun tiro)
-- **Contagio Potenziato:** Raggio 5 metri invece di 3
-- **Comando:** Mutanti entro 10 metri agiscono con +1 a tutti i tiri
+- **Armatura Naturale +2** — Placche ossee sotto la pelle, dense come ceramica
+- **Rigenerazione Veloce** — Recupera 1 Ferita per round automaticamente. L'unico modo per impedire la rigenerazione è il fuoco o la distruzione totale del corpo
+- **Contagio Potenziato** — Raggio 5 metri invece di 3. Tiro Vigore a -2 per resistere
+- **Comando** — Mutanti entro 10 metri: +1 a tutti i tiri
+- **Resiliente** — Può ignorare 1 livello di Scosso per round
+- **Paura (-2)** — Chi lo vede per la prima volta deve superare un tiro Spirito a -2 o è Scosso
+- **Sensi Acuti** — +2 Percezione, vede nel buio totale
+- **Frenesia** — Può effettuare 2 attacchi Combattere per round senza penalità Multi-Azione
 
 ## Comportamento
 
@@ -140,7 +145,7 @@ Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta.
 
 **"Kolya"** — Mutante avanzato. Mikhail lo riconosce dai flashback — era il suo compagno nella squadra Assalto del 1986. Trasformato. Ancora qui dopo 29 anni. Se il disturbatore si attiva, per un istante guarda Mikhail e sussurra il suo nome.
 
-**"Petrov"** — Operaio recente. Badge trovato all'inizio. Incontrato come mutante più avanti. Se scollegato, piange e chiede di sua moglie.
+**"Volkov"** — Operaio recente. Badge trovato all'inizio. Incontrato come mutante più avanti. Se scollegato, piange e chiede di sua moglie.
 
 ---
 

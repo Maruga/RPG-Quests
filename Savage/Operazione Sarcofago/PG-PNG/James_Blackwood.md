@@ -49,6 +49,30 @@ Professionista fino al midollo. La missione viene prima. Sempre.
 - Ghillie suit modulare
 - Radio criptata (frequenza separata — vedi segreto)
 
+## Statistiche
+
+**Rango:** Eroico
+
+**Attributi:** Agilità d10 | Forza d6 | Intelligenza d8 | Spirito d8 | Vigore d8
+
+**Abilità:** Atletica d6, Combattere d6, Comuni d6, Furtività d10, Intimidire d6, Percezione d10, Persuasione d4, Sopravvivenza d6, Sparare d12
+
+**Passo:** 6 | **Parata:** 5 | **Robustezza:** 10 (4)
+
+**Vantaggi:** Tiratore Scelto, Mira Ferma, Allerta, Sangue Freddo Migliorato, Grinta, Schivata, Senza Pietà, Duro a Morire
+
+**Svantaggi:** Giuramento (Maggiore: la missione prima di tutto), Cauto (Minore), Peculiarità (Minore: humor nero distaccato)
+
+**Armatura:** Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)
+
+### Armi
+
+| Arma | Gittata | Danno | PA | CdT | Colpi | Note |
+|---|---|---|---|---|---|---|
+| L115A3 | 50/100/200 | 2d8+1 | 4 | 1 | 5 | Tiro Mirato, For Min d8 |
+| C8 SFW | 24/48/96 | 2d8 | 2 | 3 | 30 | Auto |
+| SIG P226 | 12/24/48 | 2d6 | 1 | 1 | 15 | Semi-auto |
+
 ---
 
 # 🔒 SEGRETO — Solo GM

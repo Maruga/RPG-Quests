@@ -50,6 +50,32 @@ Canticchia opera durante i combattimenti — dice che lo calma. *"La donna è mo
 - Dosimetro
 - Pacchetto sigarette (sempre)
 
+## Statistiche
+
+**Rango:** Eroico
+
+**Attributi:** Agilità d8 | Forza d8 | Intelligenza d6 | Spirito d8 | Vigore d8
+
+**Abilità:** Atletica d8, Combattere d6, Comuni d6, Furtività d8, Intimidire d6, Percezione d8, Persuasione d4, Sopravvivenza d6, Sparare d10
+
+**Passo:** 6 | **Parata:** 5 | **Robustezza:** 10 (4)
+
+**Vantaggi:** Tiratore Scelto, Grinta Migliorata, Sangue Freddo, Duro a Morire, Ferrea Volontà, Senza Pietà, Mira Ferma
+
+**Svantaggi:** Segreto (Maggiore: i fatti del 1986), Cattiva Abitudine (Minore: fuma costantemente), Peculiarità (Minore: canticchia opera in combattimento)
+
+**Armatura:** Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)
+
+> **Nota:** Ferrea Volontà dà +2 ai tiri per resistere a test contrapposti di Intelligenza e Spirito — fondamentale per i tiri contro il controllo dell'IA.
+
+### Armi
+
+| Arma | Gittata | Danno | PA | CdT | Colpi | Note |
+|---|---|---|---|---|---|---|
+| HK417 | 30/60/120 | 2d8+1 | 2 | 1 | 20 | Semi-auto |
+| LPO-50 | Cono Medio | 3d6 | — | 1 | 3 | Lanciafiamme |
+| Beretta 92FS | 12/24/48 | 2d6 | 1 | 1 | 15 | Semi-auto |
+
 ---
 
 # 🔒 SEGRETO — Solo GM
@@ -183,8 +209,6 @@ L'IA inizia a comunicare con Marco via chat (dispositivo al polso hackerato). Ce
 
 **Fogliettini possibili:**
 > *"Il dispositivo al polso vibra. Un messaggio: 'Ferrante. So cosa hai fatto nel 1986. Lo sanno gli altri?' Cosa rispondi?"*
-
-> *"Stanotte, mentre gli altri dormono, ti svegli in piedi davanti all'ingresso del tunnel. Non ricordi di esserti alzato."*
 
 ### Fase 5: Controllo Attivo
 

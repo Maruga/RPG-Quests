@@ -1,16 +1,16 @@
-# Fasi Operative â€” Esterne
+# Fasi Operative — Esterne
 
 > Fasi 1-3: dall'inserimento nella Zona fino all'ingresso nel bunker.
 
 ---
 
-## Fase 1 â€” Inserimento
+## Fase 1 — Inserimento
 
 ### Situazione
 
-La squadra viene trasportata in veicoli blindati fino al perimetro della zona di esclusione, 8 km dal Reattore 4. Da lÃ¬ prosegue a piedi. Ãˆ l'alba. Cielo grigio, basso.
+La squadra viene trasportata in veicoli blindati fino al perimetro della zona di esclusione, 8 km dal Reattore 4. Da lì prosegue a piedi. È l'alba. Cielo grigio, basso.
 
-Alpha Ã¨ partita 20 minuti prima. Bravo (i PG + scienziati) segue lungo la stessa rotta. Charlie, Delta, Echo si posizionano ai punti di contenimento esterni.
+Alpha è partita 20 minuti prima. Bravo (i PG + scienziati) segue lungo la stessa rotta. Charlie, Delta, Echo si posizionano ai punti di contenimento esterni.
 
 ### Comunicazioni Radio
 
@@ -20,11 +20,11 @@ I PG possono usare il dispositivo al polso per scrivere nella chat. Il Comando r
 
 ### Tono per il GM
 
-Calma prima della tempesta. ProfessionalitÃ  militare. I PG si conoscono poco â€” lasciali interagire, presentarsi, prendere le misure.
+Calma prima della tempesta. Professionalità militare. I PG si conoscono poco — lasciali interagire, presentarsi, prendere le misure.
 
 ---
 
-## Fase 2 â€” Avvicinamento
+## Fase 2 — Avvicinamento
 
 ### La Zona
 
@@ -32,23 +32,43 @@ Il percorso attraversa la zona di esclusione. 30 anni di abbandono. La natura ha
 
 > **Nota per il GM:** Non leggere tutte le descrizioni di fila. Scegline 3-4 durante la marcia. Alternale con le comunicazioni radio e le interazioni tra PG. Ogni descrizione colpisce un senso diverso.
 
-### Descrizioni â€” La Zona
+### Descrizioni — La Zona
 
-**[Vista]** Un cartello arrugginito: Ð£Ð’ÐÐ“Ð! Ð ÐÐ”Ð†ÐžÐÐšÐ¢Ð˜Ð’ÐÐ• Ð—ÐÐ‘Ð Ð£Ð”ÐÐ•ÐÐÐ¯ â€” Attenzione, contaminazione radioattiva. Sotto, un pupazzo di stoffa scolorito dalla pioggia. Qualcuno lo ha lasciato lÃ¬ trent'anni fa.
+**[Vista]** Un cartello arrugginito: УВÐГÐ! РÐДІОÐКТИВÐЕ ЗÐБРУДÐЕÐÐЯ — Attenzione, contaminazione radioattiva. Sotto, un pupazzo di stoffa scolorito dalla pioggia. Qualcuno lo ha lasciato lì trent'anni fa.
 
-**[Udito]** Silenzio totale. Niente motori, niente voci, niente. Solo i vostri passi e, a tratti, il vento che fa cigolare una lamiera da qualche parte. Un uccello grida in lontananza â€” suona sbagliato, come un pianto.
+**[Udito]** Silenzio totale. Niente motori, niente voci, niente. Solo i vostri passi e, a tratti, il vento che fa cigolare una lamiera da qualche parte. Un uccello grida in lontananza — suona sbagliato, come un pianto.
 
-**[Vista + Tatto]** Una fila di palazzi residenziali. Finestre vuote come orbite. Tende che si muovono al vento in un appartamento al terzo piano. Il vetro sotto i vostri stivali scricchiola â€” resti di bottiglie, giocattoli, vite normali.
+**[Vista + Tatto]** Una fila di palazzi residenziali. Finestre vuote come orbite. Tende che si muovono al vento in un appartamento al terzo piano. Il vetro sotto i vostri stivali scricchiola — resti di bottiglie, giocattoli, vite normali.
 
-**[Olfatto]** Odore di cemento bagnato e ferro ossidato. Sotto, qualcos'altro â€” dolciastro, organico, come vegetazione che marcisce in acqua stagnante.
+**[Olfatto]** Odore di cemento bagnato e ferro ossidato. Sotto, qualcos'altro — dolciastro, organico, come vegetazione che marcisce in acqua stagnante.
 
 **[Vista]** Una giostra per bambini in un parco. I seggiolini oscillano appena. Nessuno li tocca da trent'anni, ma oscillano. Il vento, probabilmente. Probabilmente.
 
-**[Vista + Sensazione]** Un'auto parcheggiata sul ciglio. Portiera aperta. Sedile del guidatore coperto di muschio. La chiave Ã¨ ancora nel quadro. Chi l'ha lasciata cosÃ¬ aveva fretta. Tanta fretta.
+**[Vista + Sensazione]** Un'auto parcheggiata sul ciglio. Portiera aperta. Sedile del guidatore coperto di muschio. La chiave è ancora nel quadro. Chi l'ha lasciata così aveva fretta. Tanta fretta.
 
 **[Udito + Sensazione]** Un branco di cavalli selvaggi vi osserva da 200 metri. Non fuggono. Vi fissano. Sembrano sani, forti. La Zona appartiene a loro adesso.
 
-### Comunicazioni Radio â€” Alpha
+### Indizi nella Zona
+
+> **Nota per il GM:** Questi sono indizi ambientali. Non leggerli tutti — scegline 2-3 che si inseriscono naturalmente durante la marcia. Servono a seminare inquietudine prima di arrivare al bunker.
+
+**Registro presenze del cantiere** — Una lavagna nell'ufficio di un prefabbricato del cantiere. Gli ultimi tre nomi segnati non hanno la spunta di uscita. Date: due settimane fa.
+
+**Dosimetro rotto** — Abbandonato per terra vicino a un veicolo. L'ago è piegato oltre il fondo scala, come se la lettura avesse superato il massimo. Non è difettoso — qualcosa l'ha saturato.
+
+**Graffiti** — Scritto col carbone su un muro di Pripyat. In ucraino: *"Не ходіть до 4. Зночі чув як вони ходять"* — "Non andate verso il 4. Li ho sentiti camminare di notte." Recente. Nessuna firma.
+
+**Tracce nel fango** — Impronte di stivali da lavoro che vanno verso il reattore. La postura è sbagliata: passi irregolari, un piede trascina. Non tornano indietro.
+
+**Furgone abbandonato** — Portellone aperto. Una radio portatile ancora accesa emette statica. Se qualcuno la sintonizza, per un secondo si sente un suono ritmico, basso, come un battito. Poi nulla. Sul cruscotto, una polaroid: un gruppo di operai sorridenti. Sul retro: *"Ultimo turno prima delle ferie — Maggio 2015"*. Uno dei volti tornerà più avanti.
+
+**Fauna assente** — Niente uccelli, niente insetti, niente roditori. Un silenzio biologico totale. Dr. Okonkwo lo nota: *"La vita ha abbandonato questa zona. Non è normale nemmeno per Chernobyl."*
+
+> **Nota:** I cavalli selvaggi sono un'eccezione — vengono da fuori la zona contaminata. Il loro comportamento anomalo (non fuggono, fissano) suggerisce che percepiscono qualcosa.
+
+**Geiger impazzito** — Le letture non salgono in modo costante: vanno a impulsi. Come se la sorgente si accendesse e spegnesse. Come se respirasse.
+
+### Comunicazioni Radio — Alpha
 
 Durante l'avvicinamento, Alpha comunica:
 
@@ -60,41 +80,41 @@ Durante l'avvicinamento, Alpha comunica:
 
 **15 minuti dopo:**
 
-> **Alpha:** *"Bravo da Alpha. Siamo al punto di ingresso. La porta Ã¨... massiccia. Stiamo aprendo. Vi aggiorniamo dall'interno."*
+> **Alpha:** *"Bravo da Alpha. Siamo al punto di ingresso. La porta è... massiccia. Stiamo aprendo. Vi aggiorniamo dall'interno."*
 
 ### Il Reattore 4
 
-A un certo punto del percorso, il Reattore 4 diventa visibile in lontananza. Il sarcofago â€” una struttura gigantesca, grigia, opprimente.
+A un certo punto del percorso, il Reattore 4 diventa visibile in lontananza. Il sarcofago — una struttura gigantesca, grigia, opprimente.
 
 **Descrizione:**
 
-*Il Reattore 4 appare tra gli alberi. Il sarcofago Ã¨ enorme â€” una montagna di cemento e acciaio che sembra schiacciare il terreno sotto il suo peso. Ci sono gru ferme, impalcature del cantiere del secondo sarcofago abbandonate in fretta. Nessun operaio. Nessun movimento. Solo la struttura che incombe, silenziosa.*
+*Il Reattore 4 appare tra gli alberi. Il sarcofago è enorme — una montagna di cemento e acciaio che sembra schiacciare il terreno sotto il suo peso. Ci sono gru ferme, impalcature del cantiere del secondo sarcofago abbandonate in fretta. Nessun operaio. Nessun movimento. Solo la struttura che incombe, silenziosa.*
 
-> **Fogliettino per Mikhail:** Flashback (vedi Fogliettini Segreti â€” Fase 2). Si blocca. DÃ©jÃ  vu. Ha giÃ  visto questa vista.
+> **Fogliettino per Mikhail:** Flashback (vedi Fogliettini Segreti — Fase 2). Si blocca. Déjà vu. Ha già visto questa vista.
 
-> **Fogliettino per Marco:** Disagio crescente. Non un flashback â€” una sensazione. Qualcosa si Ã¨ svegliato.
+> **Fogliettino per Marco:** Disagio crescente. Non un flashback — una sensazione. Qualcosa si è svegliato.
 
 ---
 
-## Fase 3 â€” Breccia
+## Fase 3 — Breccia
 
 ### Arrivo al Bunker
 
-L'edificio sotterraneo Ã¨ separato dal Reattore 4. Un ingresso in cemento, parzialmente coperto da vegetazione, con una porta blindata massiccia. Segni del cantiere evacuato: attrezzi abbandonati, un casco da lavoro per terra, nastro di delimitazione che sventola.
+L'edificio sotterraneo è separato dal Reattore 4. Un ingresso in cemento, parzialmente coperto da vegetazione, con una porta blindata massiccia. Segni del cantiere evacuato: attrezzi abbandonati, un casco da lavoro per terra, nastro di delimitazione che sventola.
 
 **Descrizione:**
 
-*L'ingresso Ã¨ una bocca di cemento nel terreno. La porta blindata Ã¨ aperta â€” Alpha l'ha forzata. Segni di apertura recente su chiusure che non venivano toccate da 29 anni. Oltre la soglia: buio. Un odore stantio, chiuso, vecchio di decenni risale come un respiro trattenuto troppo a lungo.*
+*L'ingresso è una bocca di cemento nel terreno. La porta blindata è aperta — Alpha l'ha forzata. Segni di apertura recente su chiusure che non venivano toccate da 29 anni. Oltre la soglia: buio. Un odore stantio, chiuso, vecchio di decenni risale come un respiro trattenuto troppo a lungo.*
 
-### Alpha â€” Silenzio
+### Alpha — Silenzio
 
 Le comunicazioni con Alpha si degradano rapidamente:
 
-> **Alpha:** *"Comando da Alpha. Siamo dentro. Corridoio principale... visibilitÃ  ridotta... luci d'emergenza ancoraâ€” [statica]"*
+> **Alpha:** *"Comando da Alpha. Siamo dentro. Corridoio principale... visibilità ridotta... luci d'emergenza ancora— [statica]"*
 
 **2 minuti dopo:**
 
-> **Alpha:** *"Alpha per Comando... [statica] ...primo piano... porte aperte... c'Ã¨â€” [statica] ...qualcosa nonâ€”"*
+> **Alpha:** *"Alpha per Comando... [statica] ...primo piano... porte aperte... c'è— [statica] ...qualcosa non—"*
 
 **Poi silenzio.**
 
@@ -159,41 +179,41 @@ Ryan (armi pesanti) al centro-retro, Laurent (breacher) in testa, Marco e James 
 
 ### Soglia
 
-*Oltre la porta: un corridoio in cemento armato che scende. Luci d'emergenza rosse, fioche â€” ancora alimentate dopo 29 anni. L'aria Ã¨ fredda, ferma, pesante. I vostri passi rimbombano.*
+*Oltre la porta: un corridoio in cemento armato che scende. Luci d'emergenza rosse, fioche — ancora alimentate dopo 29 anni. L'aria è fredda, ferma, pesante. I vostri passi rimbombano.*
 
 *Il dispositivo al polso sfarfalla per un istante. Poi torna normale.*
 
 *Siete dentro.*
 
-> **Nota per il GM:** Da questo momento iniziano le Fasi Interne. Il dispositivo al polso verrè  hackerato dall'IA entro pochi minuti dall'ingresso (vedi [[Obiettivo Missione]] â€” Dispositivo al Polso).
+> **Nota per il GM:** Da questo momento iniziano le Fasi Interne. Il dispositivo al polso verrè  hackerato dall'IA entro pochi minuti dall'ingresso (vedi [[Obiettivo Missione]] — Dispositivo al Polso).
 
 ---
 
-## Comunicazioni Radio â€” Schema per il GM
+## Comunicazioni Radio — Schema per il GM
 
 | Momento        | Chi               | Messaggio                                     |
 | -------------- | ----------------- | --------------------------------------------- |
-| Inserimento    | Comando â†’ Bravo | Conferma rotta, silenzio radio                |
-| Avvicinamento  | Alpha â†’ Comando | In posizione intermedia, nessun contatto      |
-| Pre-ingresso   | Alpha â†’ Comando | Visivo sull'obiettivo, porta confermata       |
-| Alpha entra    | Alpha â†’ Bravo   | Al punto di ingresso, stanno aprendo          |
-| Dentro (1 min) | Alpha â†’ Comando | Dentro, corridoio, luci d'emergenza           |
-| Dentro (3 min) | Alpha â†’ Comando | Primo piano, qualcosa di strano â€” [statica] |
-| Dentro (5 min) | â€”               | **Silenzio totale**                           |
-| Dopo silenzio  | Comando â†’ Bravo | Contatto perso, interferenze, procedete       |
+| Inserimento    | Comando → Bravo | Conferma rotta, silenzio radio                |
+| Avvicinamento  | Alpha → Comando | In posizione intermedia, nessun contatto      |
+| Pre-ingresso   | Alpha → Comando | Visivo sull'obiettivo, porta confermata       |
+| Alpha entra    | Alpha → Bravo   | Al punto di ingresso, stanno aprendo          |
+| Dentro (1 min) | Alpha → Comando | Dentro, corridoio, luci d'emergenza           |
+| Dentro (3 min) | Alpha → Comando | Primo piano, qualcosa di strano — [statica] |
+| Dentro (5 min) | —               | **Silenzio totale**                           |
+| Dopo silenzio  | Comando → Bravo | Contatto perso, interferenze, procedete       |
 
 ---
 
 ## Note per il GM
 
-**Ritmo:** Fase 1 Ã¨ calma, Fase 2 Ã¨ atmosfera crescente, Fase 3 Ã¨ tensione pura. Non correre â€” la paura si costruisce nel silenzio.
+**Ritmo:** Fase 1 è calma, Fase 2 è atmosfera crescente, Fase 3 è tensione pura. Non correre — la paura si costruisce nel silenzio.
 
-**Descrizioni:** Scegli quelle che funzionano per il tuo tavolo. Non leggerle tutte. Meno Ã¨ meglio.
+**Descrizioni:** Scegli quelle che funzionano per il tuo tavolo. Non leggerle tutte. Meno è meglio.
 
-**Interazioni:** Laurent cercherÃ  di stare vicino a Helena. Ryan potrebbe comunicare con il suo handler via radio secondaria. Mikhail avrÃ  il flashback. Marco sentirÃ  disagio. James osserverÃ  tutti. Lascia che succeda.
+**Interazioni:** Laurent cercherà di stare vicino a Helena. Ryan potrebbe comunicare con il suo handler via radio secondaria. Mikhail avrà il flashback. Marco sentirà disagio. James osserverà tutti. Lascia che succeda.
 
-**La chat:** Fuori dal bunker la chat funziona normalmente. I giocatori possono fare domande al Comando (tu). Rispondi con informazioni utili ma limitate â€” il Comando sa meno di quanto pensano.
+**La chat:** Fuori dal bunker la chat funziona normalmente. I giocatori possono fare domande al Comando (tu). Rispondi con informazioni utili ma limitate — il Comando sa meno di quanto pensano.
 
 ---
 
-Vedi anche: [[Fasi Operative â€” Interne]] | [[Obiettivo Missione]] | [[Squadre Operative]]
+Vedi anche: [[Fasi Operative — Interne]] | [[Obiettivo Missione]] | [[Squadre Operative]]

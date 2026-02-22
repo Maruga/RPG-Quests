@@ -50,6 +50,30 @@ Beve bourbon. Gioca a poker. Prega prima delle missioni — non lo dice a nessun
 - **Radio secondaria** (vedi segreto)
 - Kit medico base
 
+## Statistiche
+
+**Rango:** Eroico
+
+**Attributi:** Agilità d8 | Forza d10 | Intelligenza d6 | Spirito d8 | Vigore d10
+
+**Abilità:** Atletica d8, Combattere d6, Comuni d6, Furtività d6, Intimidire d8, Medicina d6, Percezione d8, Persuasione d6, Sopravvivenza d6, Sparare d10, Tattica d8
+
+**Passo:** 6 | **Parata:** 5 | **Robustezza:** 11 (4)
+
+**Vantaggi:** Comando, Comando!, Ispirare, Rock and Roll!, Grinta, Sangue Freddo, Duro a Morire, Senza Pietà
+
+**Svantaggi:** Giuramento (Maggiore: nessuno viene lasciato indietro), Leale (Minore), Ostinato (Minore)
+
+**Armatura:** Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)
+
+### Armi
+
+| Arma | Gittata | Danno | PA | CdT | Colpi | Note |
+|---|---|---|---|---|---|---|
+| Mk 48 | 30/60/120 | 2d8+1 | 2 | 3 | 100 | Auto, For Min d8 |
+| M4A1 SOPMOD | 24/48/96 | 2d8 | 2 | 3 | 30 | Auto |
+| SIG P226 | 12/24/48 | 2d6 | 1 | 1 | 15 | Semi-auto |
+
 ---
 
 # 🔒 SEGRETO — Solo GM

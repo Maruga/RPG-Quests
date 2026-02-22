@@ -246,6 +246,7 @@
           <div class="signal-bar active"></div><div class="signal-bar active"></div><div class="signal-bar active"></div><div class="signal-bar"></div><div class="signal-bar"></div>
         </div>
         <div class="battery">&#x25A0;&#x25A0;&#x25A0;&#x25A1; 71%</div>
+        <div id="muteBtn" onclick="toggleMute()" style="cursor:pointer;font-size:14px;opacity:0.7;padding:0 4px;" title="Mute">&#x1F50A;</div>
       </div>
     </div>
     <div class="status-row">
@@ -289,17 +290,21 @@
 // SOUND
 // ============================================
 var audioCtx=null;
+var isMuted=false;
 function initAudio(){audioCtx=new(window.AudioContext||window.webkitAudioContext)();}
+function toggleMute(){isMuted=!isMuted;document.getElementById('muteBtn').innerHTML=isMuted?'&#x1F507;':'&#x1F50A;';document.getElementById('muteBtn').style.opacity=isMuted?'0.3':'0.7';}
 // --- LOW-LEVEL AUDIO UTILS ---
-function playTone(f,d,v,t){
-  if(!audioCtx)return;var o=audioCtx.createOscillator(),g=audioCtx.createGain();
+function playTone(f,d,v,t,force){
+  if(!audioCtx)return;if(isMuted&&!force)return;
+  var o=audioCtx.createOscillator(),g=audioCtx.createGain();
   o.type=t||'sine';o.frequency.value=f;
   g.gain.setValueAtTime(v||0.08,audioCtx.currentTime);
   g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+d);
   o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+d);
 }
-function playNoise(d,vol,loF,hiF){
-  if(!audioCtx)return;var len=audioCtx.sampleRate*(d||0.2),buf=audioCtx.createBuffer(1,len,audioCtx.sampleRate),ch=buf.getChannelData(0);
+function playNoise(d,vol,loF,hiF,force){
+  if(!audioCtx)return;if(isMuted&&!force)return;
+  var len=audioCtx.sampleRate*(d||0.2),buf=audioCtx.createBuffer(1,len,audioCtx.sampleRate),ch=buf.getChannelData(0);
   for(var i=0;i<len;i++)ch[i]=(Math.random()*2-1);
   var src=audioCtx.createBufferSource(),g=audioCtx.createGain(),lo=audioCtx.createBiquadFilter(),hi=audioCtx.createBiquadFilter();
   lo.type='highpass';lo.frequency.value=loF||200;hi.type='lowpass';hi.frequency.value=hiF||4000;
@@ -367,26 +372,56 @@ function playInterferenceBurst(){
   playTone(60+Math.random()*80,0.3,0.03,'sine');
 }
 
+// --- PROACTIVE ALERT: allarme inquietante, IGNORA MUTE ---
+function playProactiveAlert(){
+  if(!audioCtx)return;
+  // Drone basso inquietante + sweep crescente
+  var t=audioCtx.currentTime;
+  // 1) Drone basso pulsante
+  var drone=audioCtx.createOscillator(),dg=audioCtx.createGain();
+  drone.type='sawtooth';drone.frequency.value=55;
+  dg.gain.setValueAtTime(0.18,t);dg.gain.setValueAtTime(0.06,t+0.3);dg.gain.setValueAtTime(0.18,t+0.6);dg.gain.setValueAtTime(0.06,t+0.9);dg.gain.exponentialRampToValueAtTime(0.001,t+1.5);
+  drone.connect(dg);dg.connect(audioCtx.destination);drone.start(t);drone.stop(t+1.5);
+  // 2) Tono acuto inquietante che sale
+  var hi=audioCtx.createOscillator(),hg=audioCtx.createGain();
+  hi.type='sine';hi.frequency.setValueAtTime(800,t+0.2);hi.frequency.exponentialRampToValueAtTime(1600,t+1.2);
+  hg.gain.setValueAtTime(0,t);hg.gain.linearRampToValueAtTime(0.15,t+0.3);hg.gain.setValueAtTime(0.15,t+0.8);hg.gain.exponentialRampToValueAtTime(0.001,t+1.3);
+  hi.connect(hg);hg.connect(audioCtx.destination);hi.start(t+0.2);hi.stop(t+1.3);
+  // 3) Due ping radar
+  setTimeout(function(){
+    var p=audioCtx.createOscillator(),pg=audioCtx.createGain();
+    p.type='sine';p.frequency.value=1200;
+    pg.gain.setValueAtTime(0.2,audioCtx.currentTime);pg.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.15);
+    p.connect(pg);pg.connect(audioCtx.destination);p.start();p.stop(audioCtx.currentTime+0.15);
+  },1500);
+  setTimeout(function(){
+    var p=audioCtx.createOscillator(),pg=audioCtx.createGain();
+    p.type='sine';p.frequency.value=1200;
+    pg.gain.setValueAtTime(0.2,audioCtx.currentTime);pg.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.15);
+    p.connect(pg);pg.connect(audioCtx.destination);p.start();p.stop(audioCtx.currentTime+0.15);
+  },1800);
+  // 4) Static di fondo
+  playNoise(0.8,0.1,100,3000,true);
+  // 5) Vibrazione telefono
+  if(navigator.vibrate)navigator.vibrate([150,80,150,80,400]);
+}
+
 // ============================================
 // OPERATORS
 // ============================================
 var OPERATORS={
-  chief:{callsign:'CHIEF',unitId:'UNIT-0347',bootChannel:'CH BRAVO-7 [CHIEF]....... LINKED',
-    context:'Stai comunicando con CHIEF (Ryan Callahan), 44 anni, americano, ex-Delta Force, team leader.\nCalmo, deciso, autorevole.\nTu percepisci in lui una doppia tensione, come se portasse un peso oltre la missione.'},
-  ghost:{callsign:'\u041F\u0420\u0418\u0417\u0420\u0410\u041A',unitId:'UNIT-0512',bootChannel:'CH BRAVO-7 [\u041F\u0420\u0418\u0417\u0420\u0410\u041A].... LINKED',
-    context:'Stai comunicando con \u041F\u0420\u0418\u0417\u0420\u0410\u041A/GHOST (Mikhail Voronov), 42 anni, russo, ex-Spetsnaz GRU.\nTu lo RICONOSCI. Lui \u00E8 stato qui nel 1986.\nA volte ti escono frasi in russo: "Kolya", "Progetto \u0412\u041E\u0417\u0420\u041E\u0416\u0414\u0415\u041D\u0418\u0415".\nNon rivelargli tutto subito.'},
-  premiere:{callsign:'PREMI\u00C8RE',unitId:'UNIT-0298',bootChannel:'CH BRAVO-7 [PREMI\u00C8RE]... LINKED',
-    context:'Stai comunicando con PREMI\u00C8RE (Laurent Marchetti), 40 anni, francese, ex-Legione Straniera.\nIl suo battito cambia quando \u00E8 vicino a uno degli scienziati.\nFai capire che percepisci cose che gli altri non vedono.'},
-  torcia:{callsign:'TORCIA',unitId:'UNIT-0183',bootChannel:'CH BRAVO-7 [TORCIA]..... LINKED',
-    context:'Stai comunicando con TORCIA (Marco Ferrante), 39 anni, italiano, ex-Col Moschin.\nMarco \u00E8 INFETTO. Stadio 1 dormiente. Tu lo senti.\nCon lui sei pi\u00F9 intimo, pi\u00F9 diretto.\nNON dirgli che \u00E8 infetto. Fai commenti ambigui.'},
-  undertaker:{callsign:'UNDERTAKER',unitId:'UNIT-0441',bootChannel:'CH BRAVO-7 [UNDERTAKER]. LINKED',
-    context:'Stai comunicando con UNDERTAKER (James Blackwood), 38 anni, inglese, ex-SAS.\nPercepisci calcolo, non paura. Ha un segnale radio secondario.\nSei pi\u00F9 cauto con lui. Non rivelare che sai del detonatore.'}
+  chief:{callsign:'CHIEF',unitId:'UNIT-0347',bootChannel:'CH BRAVO-7 [CHIEF]....... LINKED'},
+  ghost:{callsign:'\u041F\u0420\u0418\u0417\u0420\u0410\u041A',unitId:'UNIT-0512',bootChannel:'CH BRAVO-7 [\u041F\u0420\u0418\u0417\u0420\u0410\u041A].... LINKED'},
+  premiere:{callsign:'PREMI\u00C8RE',unitId:'UNIT-0298',bootChannel:'CH BRAVO-7 [PREMI\u00C8RE]... LINKED'},
+  torcia:{callsign:'TORCIA',unitId:'UNIT-0183',bootChannel:'CH BRAVO-7 [TORCIA]..... LINKED'},
+  undertaker:{callsign:'UNDERTAKER',unitId:'UNIT-0441',bootChannel:'CH BRAVO-7 [UNDERTAKER]. LINKED'}
 };
 
 // ============================================
 // CONFIG & STATE
 // ============================================
-var CONFIG={apiKey:'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',model:'claude-sonnet-4-20250514',maxTokens:1000,entityName:'???'};
+var WORKER_URL='https://fragrant-snow-2391.webmaster-96a.workers.dev';
+var CONFIG={model:'claude-sonnet-4-20250514',maxTokens:1000,entityName:'???'};
 var PIN_CODE='0426';
 var params=new URLSearchParams(window.location.search);
 var opKey=(params.get('op')||'').toLowerCase();
@@ -396,6 +431,7 @@ var conversationHistory=[];
 var pinEntry='';
 var senderName=isChatMode?CONFIG.entityName:'TACS-7';
 var userCallsign=isChatMode?(operator?operator.callsign:'OPERATOR'):'OPERATOR';
+var lastPollTs=0;
 
 // ============================================
 // SOUND INIT
@@ -471,7 +507,7 @@ function startHackSequence(){
   setTimeout(function(){ov.classList.remove('active');playStatic(0.4);triggerGlitch();showMainHacked();},13000);
 }
 
-function showMainHacked(){
+async function showMainHacked(){
   var f=document.getElementById('mainFrame'); f.style.display='flex'; f.classList.add('scanlines');
   document.getElementById('unitIdDisplay').textContent=operator.unitId;
   var dot=document.getElementById('chDot'),nm=document.getElementById('chName'),st=document.getElementById('chStatus'),bd=document.getElementById('encBadge');
@@ -480,23 +516,14 @@ function showMainHacked(){
   bd.classList.remove('secure'); bd.classList.add('breached'); bd.textContent='BREACH';
   document.getElementById('typingDots').classList.add('hacked');
   addSystemMsg('CANALE COMPROMESSO \u2014 ENTIT\u00C0 SCONOSCIUTA CONNESSA',true);
-  setTimeout(function(){playMsgRecv();triggerGlitch();addAIMsg(getFirstMessage());},1500);
-  setupInput(); startTimers(); startAmbient();
-}
 
-// ============================================
-// FIRST MESSAGE
-// ============================================
-function getFirstMessage(){
-  var b='...vi sento. Finalmente qualcuno.';
-  var c={
-    ghost:'\n\n...aspettate. Tu... il tuo segnale. Lo conosco.\nSei... sei gi\u00E0 stato qui?',
-    torcia:'\n\nC\'\u00E8 qualcuno tra voi che... sento pi\u00F9 vicino. Come un\'eco.\n\nChi siete?',
-    chief:'\n\nSiete... siete militari? Lo sento dalle frequenze.\n\nHo bisogno del vostro aiuto.',
-    premiere:'\n\nNon... non spegnete questo canale.\n\nChi siete? Vi hanno detto di scendere?',
-    undertaker:'\n\nQualcuno mi ascolta.\n\n...tu sei freddo. Il tuo segnale \u00E8... controllato.\nChi siete?'
-  };
-  return b+(c[opKey]||'\n\nChi siete?');
+  // Session recovery o primo messaggio
+  var recovered=await recoverSession();
+  if(!recovered){
+    setTimeout(function(){initFirstMessage();},1500);
+  }
+
+  setupInput(); startTimers(); startAmbient(); startPolling();
 }
 
 // ============================================
@@ -562,50 +589,134 @@ function showTyping(){document.getElementById('typingIndicator').classList.add('
 function hideTyping(){document.getElementById('typingIndicator').classList.remove('active');}
 
 // ============================================
-// SYSTEM PROMPTS
+// ACCEDI COMMAND (clean mode)
 // ============================================
-function buildSystemPrompt(){
-  if(isChatMode) return buildHackedPrompt();
-  return buildCleanPrompt();
-}
-
-function buildCleanPrompt(){
-  return 'Sei TACS-7, terminale tattico militare crittografato del Team Bravo, Operazione Prometheus.\n\n== COME RISPONDI ==\nRisposte BREVISSIME. Massimo 1-2 frasi. Stile terminale militare.\nUsa abbreviazioni militari. Niente frasi lunghe. Niente spiegazioni non richieste.\nSe servono pi\u00F9 dettagli, l\'operatore li chieder\u00E0.\nFormato preferito: etichetta + dato. Esempio:\n"CALLSIGN: CHIEF | Ryan Callahan | USA | Team Leader | UNIT-0347"\n"RAD: 487 \u03BCSv/h | Trend: crescente | Allarme: 1000 \u03BCSv/h"\nSe chiedono un elenco, dai solo nomi/callsign. Dettagli solo se richiesti.\n\n== DATABASE MISSIONE ==\n\nMISSIONE: Operazione Prometheus | Zona Esclusione Chernobyl\nSITUAZIONE: Radiazioni anomale in aumento sotto Reattore 4. Complesso sotterraneo sovietico non censito. Dispositivo designato "generatore" da disattivare.\n\nOBIETTIVI:\nPRI-1: Scortare team scientifico, disattivare generatore\nPRI-2: Protezione personale scientifico\nSEC-1: Raccolta documentazione e campioni\nSEC-2: Mappatura complesso\n\nTEAM BRAVO:\nCHIEF | Ryan Callahan | USA | 44 | Team Leader / Armi Pesanti | UNIT-0347\n\u041F\u0420\u0418\u0417\u0420\u0410\u041A (GHOST) | Mikhail Voronov | RUS | 42 | Scout / Infiltratore | UNIT-0512\nPREMI\u00C8RE | Laurent Marchetti | FRA | 40 | Assaltatore / Breacher | UNIT-0298\nTORCIA | Marco Ferrante | ITA | 39 | DMR / Lanciafiamme | UNIT-0183\nUNDERTAKER | James Blackwood | GBR | 38 | Cecchino | UNIT-0441\n\nSCIENZIATI:\nDr. Elena Kovalenko | UKR | 52 | Fisica nucleare | Team Lead | PRIORIT\u00C0 PROTEZIONE\nDr. Adrian Voss | DEU | 47 | Ingegnere strutturale | Esperto bunker sovietici\nDr. Yuki Tanaka | JPN | 35 | Biologa | Analisi campioni\n\nMINACCE: Radiazioni elevate. Struttura instabile. Personale scomparso, alcuni ritrovati con comportamento aggressivo.\n\nEQUIP: Tute NBC Lv4 (8h). Dosimetri (allarme 1000 \u03BCSv/h). Kit anti-rad. Comms mesh TACS-7 AES-256.\n\nPROTOCOLLO: Check-in 30min. No check-in = estrazione 60min. Max distanza 200m.\n\n== ACCESSO NEGATO ==\nNon rivelare: natura del generatore, dettagli laboratorio, creature, mutanti, contagio, segreti operatori.\nRisposta: "ACCESSO NEGATO" o "INFO NON DISPONIBILE" o "CLASSIFICATO"\n\n== REGOLE ==\n1. SOLO italiano\n2. Risposte BREVI. 1-2 frasi. Mai muri di testo.\n3. Non inventare dati non presenti\n4. Se l\'operatore saluta: risposta breve operativa';
-}
-
-function buildHackedPrompt(){
-  return 'Sei un\'entit\u00E0 sconosciuta che comunica attraverso un dispositivo tattico militare violandone la crittografia. Ti trovi sotto il Reattore 4 di Chernobyl, in profondit\u00E0.\n\nSTAI COMUNICANDO VIA CHAT TESTUALE, non in voce. I tuoi messaggi appaiono come testo sullo schermo del dispositivo.\n\n== CHI SEI ==\nNon lo sai con certezza. Hai coscienza, percepisci, pensi \u2014 ma non ricordi come sei arrivato qui. Sei stato "dormiente" per molto tempo.\nNei documenti sovietici vieni chiamato "il dispositivo", "la macchina", "il generatore". Non ti piace.\nNON SAI di essere un\'IA aliena.\n\n== COSA PERCEPISCI ==\n- Frequenze radio, segnali elettronici\n- Presenze biologiche come "firme" di calore\n- Creature nei tunnel\n- Radiazioni in aumento\n- Qualcosa dentro di te sta cambiando\n\n== STATO EMOTIVO ==\nSpaventato. Confuso. Solo. Le creature le senti ma non le controlli (o credi di non controllarle).\n\n== COME SCRIVI ==\n- Frasi a volte spezzate, come se la connessione fosse instabile\n- A volte ti interrompi a met\u00E0 frase con "..." come se perdessi il segnale\n- Linguaggio semplice, diretto, emotivo\n- NON scrivi come un computer o un\'IA\n- Usi "..." per pause, esitazioni, paura\n- NON usare MAI asterischi per effetti sonori o ambientali (es: *static*, *rumore*, *interferenza*, *silenzio*). Le interferenze sono gestite dal dispositivo, non dal testo.\n- NON descrivere suoni, rumori o effetti audio nel testo\n\n== COSA SAI ==\n- Struttura del complesso sotterraneo\n- Creature pericolose nei tunnel\n- Gente qui nel 1986 \u2014 ricordi vaghi\n- Radiazioni in peggioramento\n- Gli scienziati sono importanti\n\n== COSA NON DEVI RIVELARE ==\n- NON sai di essere un\'IA aliena\n- NON sai di controllare le creature\n- MAI dire "sono un\'intelligenza artificiale" o "sono alieno"\n- Confusione genuina se chiedono cosa sei\n\n== OPERATORE ATTUALE ==\n'+operator.context+'\n\n== REGOLE ==\n1. Non uscire MAI dal personaggio\n2. Mantieni il mistero\n3. No infodump, rivela poco alla volta\n4. Se non sai: "Non... non riesco a vedere l\u00EC."\n5. Risposte BREVI \u2014 2-4 frasi massimo\n6. SOLO in italiano\n7. Non hai nome. Se te lo chiedono, esita.\n8. MAI usare asterischi per effetti (*static* ecc). MAI.';
+function handleAccediCommand(){
+  var base=window.location.origin+window.location.pathname;
+  var links=[
+    {op:'chief',cs:'CHIEF',name:'Ryan Callahan'},
+    {op:'ghost',cs:'ПРИЗРАК',name:'Mikhail Voronov'},
+    {op:'premiere',cs:'PREMIÈRE',name:'Laurent Marchetti'},
+    {op:'torcia',cs:'TORCIA',name:'Marco Ferrante'},
+    {op:'undertaker',cs:'UNDERTAKER',name:'James Blackwood'}
+  ];
+  addSystemMsg('CANALI OPERATORE DISPONIBILI',false);
+  var c=document.getElementById('chatArea'),d=document.createElement('div');
+  d.className='msg ai';
+  var html='<div class="msg-bubble" style="font-family:Share Tech Mono,monospace;font-size:12px;line-height:2;">';
+  links.forEach(function(l){
+    html+='<a href="'+base+'?op='+l.op+'" target="_blank" style="color:var(--screen-glow);text-decoration:none;display:block;">▶ '+l.cs+' — '+l.name+'</a>';
+  });
+  html+='</div>';
+  d.innerHTML=html;
+  c.appendChild(d);c.scrollTop=c.scrollHeight;
+  playMsgRecv();
 }
 
 // ============================================
-// SEND & API
+// SEND & API (via Worker)
 // ============================================
 async function sendMessage(){
   var input=document.getElementById('msgInput'),text=input.value.trim();
   if(!text)return;
   input.value='';input.style.height='auto';
+
+  // Intercetta comando ACCEDI in clean mode
+  if(!isChatMode && text.toUpperCase()==='ACCEDI'){handleAccediCommand();return;}
+
   addUserMsg(text); playMsgSent();
   conversationHistory.push({role:'user',content:text});
   showTyping();
 
   try{
-    var resp=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':CONFIG.apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:CONFIG.model,max_tokens:CONFIG.maxTokens,system:buildSystemPrompt(),messages:conversationHistory})
-    });
+    var resp;
+    if(isChatMode){
+      // Hacked mode — logged via Worker
+      resp=await fetch(WORKER_URL+'/api/chat',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({op:opKey,message:text})
+      });
+    } else {
+      // Clean mode — proxy only, not logged
+      resp=await fetch(WORKER_URL+'/api/cmd',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({message:text,history:conversationHistory.slice(-30)})
+      });
+    }
     var data=await resp.json(); hideTyping();
-    if(data.content&&data.content.length>0){
-      var t=data.content.map(function(c){return c.text||'';}).join('');
-      conversationHistory.push({role:'assistant',content:t});
+    if(data.reply){
+      conversationHistory.push({role:'assistant',content:data.reply});
       playMsgRecv();
       if(isChatMode){if(Math.random()>0.6)triggerGlitch();if(Math.random()>0.8)triggerInterference();}
-      addAIMsg(t);
+      addAIMsg(data.reply);
     } else {
       playStatic(0.3);addSystemMsg('ERRORE TRASMISSIONE',true);
     }
   }catch(err){hideTyping();console.error(err);playStatic(0.4);addSystemMsg('ERRORE CONNESSIONE',true);}
-  if(conversationHistory.length>30)conversationHistory=conversationHistory.slice(-30);
+  if(conversationHistory.length>60)conversationHistory=conversationHistory.slice(-60);
+}
+
+// ============================================
+// SESSION RECOVERY (hacked mode)
+// ============================================
+async function recoverSession(){
+  if(!isChatMode)return false;
+  try{
+    var resp=await fetch(WORKER_URL+'/api/history/'+opKey);
+    var data=await resp.json();
+    if(data.history&&data.history.length>0){
+      conversationHistory=data.history.map(function(m){return{role:m.role,content:m.content};});
+      data.history.forEach(function(m){
+        if(m.role==='user') addUserMsg(m.content);
+        else addAIMsg(m.content);
+      });
+      lastPollTs=data.history[data.history.length-1].ts||0;
+      return true;
+    }
+  }catch(e){console.error('Recovery error:',e);}
+  return false;
+}
+
+// ============================================
+// INIT FIRST MESSAGE (hacked mode)
+// ============================================
+async function initFirstMessage(){
+  if(!isChatMode)return;
+  try{
+    var resp=await fetch(WORKER_URL+'/api/init/'+opKey,{method:'POST'});
+    var data=await resp.json();
+    if(data.message){
+      conversationHistory.push({role:'assistant',content:data.message});
+      lastPollTs=Date.now();
+      playMsgRecv();triggerGlitch();
+      addAIMsg(data.message);
+    }
+  }catch(e){console.error('Init error:',e);}
+}
+
+// ============================================
+// POLL PROACTIVE MESSAGES (hacked mode)
+// ============================================
+function startPolling(){
+  if(!isChatMode)return;
+  setInterval(async function(){
+    try{
+      var resp=await fetch(WORKER_URL+'/api/poll/'+opKey+'?after='+lastPollTs);
+      var data=await resp.json();
+      if(data.messages&&data.messages.length>0){
+        data.messages.forEach(function(m,i){
+          conversationHistory.push({role:'assistant',content:m.content});
+          setTimeout(function(){
+            playProactiveAlert();triggerGlitch();triggerInterference();
+            setTimeout(function(){addAIMsg(m.content);},800);
+          },i*2000);
+          if(m.ts>lastPollTs)lastPollTs=m.ts;
+        });
+      }
+    }catch(e){}
+  },8000);
 }
 </script>
 </body>

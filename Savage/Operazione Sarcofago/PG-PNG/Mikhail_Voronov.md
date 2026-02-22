@@ -46,6 +46,32 @@ Ha visto cose che non racconta. Incubi ricorrenti che non riesce a mettere a fuo
 - Dosimetro personale
 - Mappa della Zona (vecchia, annotata a mano)
 
+## Statistiche
+
+**Rango:** Eroico
+
+**Attributi:** Agilità d10 | Forza d8 | Intelligenza d6 | Spirito d6 | Vigore d8
+
+**Abilità:** Atletica d8, Combattere d8, Comuni d6, Furtività d12, Percezione d10, Persuasione d4, Sopravvivenza d8, Sparare d10
+
+**Passo:** 8 | **Parata:** 6 | **Robustezza:** 10 (4)
+
+**Vantaggi:** Allerta, Scatto, Schivata, Mira Ferma, Scattante, Sangue Freddo, Grinta, Senza Pietà
+
+**Svantaggi:** Segreto (Maggiore: lavaggio del cervello, ricordi cancellati), Cattiva Abitudine (Minore: alcol), Peculiarità (Minore: sorride sempre nel momento sbagliato)
+
+**Armatura:** Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)
+
+> **Nota:** Spirito d6 è intenzionalmente basso — riflette la vulnerabilità ai flashback e la fragilità psicologica del lavaggio del cervello.
+
+### Armi
+
+| Arma | Gittata | Danno | PA | CdT | Colpi | Note |
+|---|---|---|---|---|---|---|
+| AS Val | 15/30/60 | 2d8 | 2 | 3 | 20 | Auto, Silenziata |
+| SR-1 Vektor | 12/24/48 | 2d6+1 | 2 | 1 | 18 | Semi-auto |
+| NR-43 | Mischia | For+d4 | — | — | — | Coltello da combattimento |
+
 ---
 
 # 🔒 SEGRETO — Solo GM

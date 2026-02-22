@@ -47,6 +47,30 @@ Ma sotto la facciata c'è un professionista letale. Leale fino alla morte. Non s
 - Granate flashbang (x4)
 - Granate fumogene (x2)
 
+## Statistiche
+
+**Rango:** Eroico
+
+**Attributi:** Agilità d10 | Forza d8 | Intelligenza d6 | Spirito d8 | Vigore d8
+
+**Abilità:** Atletica d8, Combattere d10, Comuni d6, Furtività d6, Intimidire d6, Percezione d6, Persuasione d4, Riparazione d6, Sparare d10
+
+**Passo:** 8 | **Parata:** 7 | **Robustezza:** 10 (4)
+
+**Vantaggi:** Primo Colpo Migliorato, Contrattacco, Scatto, Schivata, Grinta, Sangue Freddo, Senza Pietà, Frenesia
+
+**Svantaggi:** Eroico (Maggiore: non si tira mai indietro), Leale (Minore), Peculiarità (Minore: humor volgare, fischietta in combattimento)
+
+**Armatura:** Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)
+
+### Armi
+
+| Arma | Gittata | Danno | PA | CdT | Colpi | Note |
+|---|---|---|---|---|---|---|
+| HK416 F | 24/48/96 | 2d8 | 2 | 3 | 30 | Auto |
+| Benelli M4 | 12/24/48 | 1–3d6 | — | 1 | 8 | Pallettoni/Slug |
+| Glock 17 | 12/24/48 | 2d6 | 1 | 1 | 17 | Semi-auto |
+
 ---
 
 # 🔒 SEGRETO — Solo GM
