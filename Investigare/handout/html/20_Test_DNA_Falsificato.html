@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referto Analisi Genetica — 1980-0715-G043</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #2a2420;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header .gm-schema {
+    margin-top: 10px; padding: 8px 12px; background: rgba(255,255,255,0.08);
+    border-left: 3px solid #e8c170; font-family: "Courier New", monospace; font-size: 11px; line-height: 1.8;
+  }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT (aged paper) -- */
+  .document {
+    max-width: 210mm; margin: 0 auto;
+    background: #faf6ee;
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(180,150,100,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse at 80% 30%, rgba(160,130,80,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse at 50% 90%, rgba(140,120,80,0.05) 0%, transparent 50%);
+    border: 2px solid #8a7a60;
+    box-shadow: 0 2px 12px rgba(80,60,30,0.25), inset 0 0 40px rgba(180,150,100,0.1);
+    position: relative;
+  }
+
+  /* age stains */
+  .document::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 15% 85%, rgba(160,130,80,0.1) 0%, transparent 30%),
+      radial-gradient(circle at 90% 15%, rgba(140,110,60,0.08) 0%, transparent 25%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .document > * { position: relative; z-index: 2; }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: transparent; color: #2a2420; padding: 24px 24px 16px; text-align: center;
+    border-bottom: 3px double #5a4a30;
+  }
+  .doc-header .hospital-logo {
+    width: 55px; height: 55px; border: 2px solid #5a4a30; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Courier New", monospace; font-size: 8px; font-weight: bold;
+    color: #5a4a30; text-align: center; line-height: 1.1;
+    margin: 0 auto 10px;
+  }
+  .doc-header .org {
+    font-family: "Courier New", monospace; font-size: 13px; letter-spacing: 3px;
+    font-weight: bold; margin-bottom: 2px; color: #2a2420;
+  }
+  .doc-header .org-jp { font-size: 11px; color: #6a5a40; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .dept {
+    font-family: "Courier New", monospace; font-size: 11px; color: #555;
+    letter-spacing: 2px; margin-bottom: 4px;
+  }
+  .doc-header .dept-sub {
+    font-size: 10px; color: #777; letter-spacing: 1px; margin-bottom: 12px;
+  }
+  .doc-header .doc-type {
+    font-size: 14px; font-weight: bold; letter-spacing: 3px;
+    border: 2px solid #5a4a30; display: inline-block; padding: 4px 16px;
+    color: #2a2420;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #8a7a60; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #d5c8a8; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #d5c8a8; }
+  .metadata .label { font-weight: bold; color: #6a5a40; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #2a2420; }
+
+  /* -- SECTIONS -- */
+  .section { padding: 14px 24px; border-bottom: 1px solid #d5c8a8; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: "Courier New", monospace; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #3a2a10;
+    border-bottom: 2px solid #5a4a30; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #8a7a60; margin: 0; }
+
+  /* -- SUBJECT BOXES -- */
+  .subject-box {
+    margin: 10px 0; padding: 10px 14px;
+    border: 1px solid #b0a080; background: rgba(255,250,240,0.5);
+    font-size: 10.5px; line-height: 1.6;
+  }
+  .subject-box .subj-label {
+    font-weight: bold; font-size: 9px; letter-spacing: 2px;
+    text-transform: uppercase; color: #5a4a30; margin-bottom: 6px;
+    border-bottom: 1px solid #c0b090; padding-bottom: 3px;
+  }
+  .subject-box .subj-row { padding: 2px 0; }
+  .subject-box .subj-field { color: #6a5a40; font-size: 9px; }
+
+  /* -- RESULTS TABLE -- */
+  .hla-table { width: 100%; border-collapse: collapse; font-size: 10.5px; margin-top: 10px; }
+  .hla-table th {
+    background: #ece4d0; text-align: center; padding: 6px 10px;
+    border: 1px solid #b0a080; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; color: #3a2a10;
+  }
+  .hla-table td {
+    padding: 5px 10px; border: 1px solid #c0b090; text-align: center;
+    vertical-align: middle; font-family: "Courier New", monospace;
+  }
+  .hla-table tr:nth-child(even) { background: rgba(240,230,210,0.3); }
+
+  /* -- METHODOLOGY NOTE -- */
+  .method-note {
+    margin: 10px 0; padding: 8px 14px; background: rgba(240,235,220,0.5);
+    border-left: 3px solid #8a7a60; font-size: 10px; line-height: 1.6; color: #555;
+  }
+
+  /* -- CONCLUSION BOX -- */
+  .conclusion-box {
+    margin: 14px 0; padding: 14px 18px;
+    border: 3px double #3a2a10; background: rgba(255,250,240,0.6);
+    text-align: center; font-size: 12px; line-height: 1.8;
+  }
+  .conclusion-box .concl-title {
+    font-weight: bold; font-size: 11px; letter-spacing: 3px;
+    text-transform: uppercase; color: #3a2a10; margin-bottom: 10px;
+    border-bottom: 1px solid #8a7a60; padding-bottom: 6px;
+  }
+  .conclusion-box .concl-result {
+    font-weight: bold; font-size: 14px; letter-spacing: 2px;
+    color: #2a2420; margin-top: 8px; padding: 6px 0;
+    border-top: 1px solid #b0a080; border-bottom: 1px solid #b0a080;
+  }
+  .conclusion-box .concl-detail {
+    font-size: 10.5px; color: #555; margin-top: 6px;
+  }
+
+  /* -- COMPATIBILITY ANALYSIS -- */
+  .analysis-block {
+    margin: 10px 0; padding: 8px 14px;
+    font-size: 10.5px; line-height: 1.7;
+  }
+  .analysis-block .analysis-label {
+    font-weight: bold; color: #5a4a30; font-size: 9.5px;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .analysis-block .analysis-value {
+    margin-left: 12px; font-family: "Courier New", monospace;
+  }
+
+  /* -- FIRMA -- */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #8a7a60;
+    font-size: 10.5px;
+  }
+  .firma-block { margin-top: 12px; }
+  .firma-line {
+    border-top: 1px solid #5a4a30; width: 220px;
+    text-align: center; padding-top: 4px; font-size: 9px; color: #6a5a40;
+    margin-top: 20px;
+  }
+
+  /* -- TIMBRO (old stamp) -- */
+  .timbro {
+    display: inline-block; margin-top: 12px;
+    border: 2px solid rgba(90,74,48,0.35); padding: 8px 14px;
+    font-family: "Courier New", monospace; font-size: 8px; font-weight: bold;
+    color: rgba(90,74,48,0.4); text-align: center; letter-spacing: 1px; line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 20 — Test di Paternita Falsificato (1980)</h2>
+  <p><strong>Quando consegnare:</strong> Quando i PG accedono agli archivi ospedalieri con mandato, trovano il referto tra i documenti di Takeda Noboru, o interrogano con successo il Dott. Yamamoto Naoki.</p>
+  <p><strong>QUESTO REFERTO E FALSO.</strong></p>
+  <ul>
+    <li><strong>Kenta E il figlio biologico di Ishida Makoto</strong> — il test e stato deliberatamente falsificato</li>
+    <li>Il Dott. <strong>Yamamoto Naoki</strong> ha manipolato i risultati HLA inserendo antigeni incompatibili nel profilo del minore</li>
+    <li>Compenso per la falsificazione: <strong>5.000.000 di yen</strong> in contanti, pagati da Ishida Makoto</li>
+    <li>Obiettivo di Makoto: liberarsi di ogni responsabilita verso Yui e il bambino</li>
+  </ul>
+  <p><strong>Complici:</strong></p>
+  <ul>
+    <li><strong>Ishida Makoto</strong> — ha commissionato e pagato la falsificazione</li>
+    <li><strong>Takeda Noboru</strong> (padre di Yui) — era al corrente, lo ha tormentato fino al suicidio</li>
+    <li><strong>Dott. Yamamoto Naoki</strong> — ha eseguito la falsificazione (giovane medico con debiti nel 1980)</li>
+  </ul>
+  <p><strong>Come Yui ha scoperto (settembre 1996):</strong></p>
+  <ul>
+    <li>Riceve il referto di sterilita congenita del marito Hiro (Handout 14)</li>
+    <li>Se Hiro e sterile dalla nascita, Kenta non puo essere suo figlio</li>
+    <li>Ma il test del 1980 dice che neanche Makoto e il padre</li>
+    <li>Conclusione: il test del 1980 era falso — Makoto E il padre</li>
+  </ul>
+  <div class="gm-schema">
+    REFERTO STERILITA HIRO &nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp; TEST PATERNITA 1980<br>
+    Hiro sterile dalla nascita &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Makoto "non e" il padre<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IL TEST DEL 1980 ERA FALSO — Makoto E il padre di Kenta
+  </div>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="hospital-logo">KUH<br>京大病院</div>
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="dept">LABORATORIO DI GENETICA MEDICA</div>
+    <div class="dept-sub">Dipartimento di Patologia</div>
+    <div class="doc-type">REFERTO DI ANALISI GENETICA</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">N. Referto</div><div class="value">1980-0715-G043</div></div>
+    <div class="field"><div class="label">Data esame</div><div class="value">15 luglio 1980</div></div>
+    <div class="field"><div class="label">Medico richiedente</div><div class="value">Dott. YAMAMOTO Naoki</div></div>
+    <div class="field"><div class="label">Reparto</div><div class="value">Medicina Interna</div></div>
+    <div class="field"><div class="label">Tipo esame</div><div class="value">TEST DI PATERNITA</div></div>
+    <div class="field"><div class="label">Metodo</div><div class="value">Tipizzazione HLA (Human Leukocyte Antigen)</div></div>
+  </div>
+
+  <!-- SOGGETTI ESAMINATI -->
+  <div class="section">
+    <div class="section-title">Soggetti Esaminati</div>
+
+    <div class="subject-box">
+      <div class="subj-label">Soggetto A — Presunto padre</div>
+      <div class="subj-row"><span class="subj-field">Cognome e nome:</span> ISHIDA Makoto</div>
+      <div class="subj-row"><span class="subj-field">Data di nascita:</span> 12 maggio 1952</div>
+      <div class="subj-row"><span class="subj-field">Luogo di nascita:</span> Kyoto</div>
+      <div class="subj-row"><span class="subj-field">Professione:</span> Magistrato</div>
+      <div class="subj-row"><span class="subj-field">Campione:</span> Sangue venoso (provetta n. A-4401)</div>
+      <div class="subj-row"><span class="subj-field">Data prelievo:</span> 10 luglio 1980</div>
+    </div>
+
+    <div class="subject-box">
+      <div class="subj-label">Soggetto B — Madre</div>
+      <div class="subj-row"><span class="subj-field">Cognome e nome:</span> KIMURA Yui</div>
+      <div class="subj-row"><span class="subj-field">Data di nascita:</span> 8 marzo 1955</div>
+      <div class="subj-row"><span class="subj-field">Luogo di nascita:</span> Kyoto</div>
+      <div class="subj-row"><span class="subj-field">Professione:</span> Casalinga</div>
+      <div class="subj-row"><span class="subj-field">Campione:</span> Sangue venoso (provetta n. B-4402)</div>
+      <div class="subj-row"><span class="subj-field">Data prelievo:</span> 10 luglio 1980</div>
+    </div>
+
+    <div class="subject-box">
+      <div class="subj-label">Soggetto C — Minore</div>
+      <div class="subj-row"><span class="subj-field">Cognome e nome:</span> KIMURA Kenta</div>
+      <div class="subj-row"><span class="subj-field">Data di nascita:</span> 22 febbraio 1980</div>
+      <div class="subj-row"><span class="subj-field">Luogo di nascita:</span> Kyoto</div>
+      <div class="subj-row"><span class="subj-field">Eta al prelievo:</span> 4 mesi</div>
+      <div class="subj-row"><span class="subj-field">Campione:</span> Sangue venoso (provetta n. C-4403)</div>
+      <div class="subj-row"><span class="subj-field">Data prelievo:</span> 10 luglio 1980</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- METODOLOGIA -->
+  <div class="section">
+    <div class="section-title">Metodologia d'Esame</div>
+
+    <div style="font-size: 10.5px; line-height: 1.7;">
+      <p><strong>Metodo utilizzato:</strong> Tipizzazione degli antigeni leucocitari umani (HLA — Human Leukocyte Antigen)</p>
+      <p style="margin-top:6px;"><strong>Antigeni analizzati:</strong> HLA-A, HLA-B, HLA-C, HLA-DR</p>
+      <p style="margin-top:6px;"><strong>Tecnica:</strong> Microlinfocitotossicita su piastra Terasaki</p>
+      <p style="margin-top:6px;"><strong>Sieri di riferimento:</strong> Pannello standard 1979 (n=120 antisieri)</p>
+    </div>
+
+    <div class="method-note">
+      NOTA: Il metodo HLA rappresenta lo standard attuale per i test di paternita. L'affidabilita del metodo e stimata al 90-95% per l'esclusione di paternita.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- RISULTATI -->
+  <div class="section">
+    <div class="section-title">Risultati</div>
+
+    <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#5a4a30; margin-bottom:8px;">Profilo HLA dei soggetti:</div>
+
+    <table class="hla-table">
+      <thead>
+        <tr>
+          <th style="width:100px;">Antigene</th>
+          <th>Sogg. A (padre)</th>
+          <th>Sogg. B (madre)</th>
+          <th>Sogg. C (minore)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:bold;">HLA-A</td>
+          <td>A2, A24</td>
+          <td>A2, A11</td>
+          <td>A11, A26</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold;">HLA-B</td>
+          <td>B7, B35</td>
+          <td>B44, B52</td>
+          <td>B44, B61</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold;">HLA-C</td>
+          <td>Cw3, Cw7</td>
+          <td>Cw1, Cw3</td>
+          <td>Cw1, Cw8</td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold;">HLA-DR</td>
+          <td>DR4, DR9</td>
+          <td>DR2, DR8</td>
+          <td>DR2, DR15</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="analysis-block" style="margin-top:14px;">
+      <div class="analysis-label">Analisi di compatibilita:</div>
+      <div class="analysis-value" style="margin-top:6px;">
+        Antigeni del minore NON attribuibili alla madre:<br>
+        &nbsp;&nbsp;&nbsp;A26, B61, Cw8, DR15
+      </div>
+      <div class="analysis-value" style="margin-top:6px;">
+        Di questi, antigeni compatibili con il presunto padre:<br>
+        &nbsp;&nbsp;&nbsp;<strong>Nessuno (0 su 4)</strong>
+      </div>
+      <div class="analysis-value" style="margin-top:8px;">
+        <strong>INDICE DI COMPATIBILITA PATERNA: 23%</strong><br>
+        <span style="font-size:9.5px; color:#666;">(Soglia minima per conferma di paternita: 80%)</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CONCLUSIONE -->
+  <div class="section">
+    <div class="section-title">Conclusione</div>
+
+    <div class="conclusion-box">
+      <div class="concl-title">Esito dell'Analisi Genetica</div>
+      <div style="font-size:11px; line-height:1.8;">
+        L'analisi HLA <strong>NON CONFERMA</strong> la paternita biologica del<br>
+        Soggetto A (<strong>ISHIDA Makoto</strong>) rispetto al Soggetto C<br>
+        (<strong>KIMURA Kenta</strong>).
+      </div>
+      <div class="concl-detail">
+        Compatibilita HLA: 23%<br>
+        (sotto la soglia dell'80% richiesta per conferma di paternita)
+      </div>
+      <div class="concl-result">RISULTATO: PATERNITA ESCLUSA</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div style="font-size:10px; color:#666;">Analisi eseguita da:</div>
+    <div style="margin-left:12px;">Dott.ssa TANAKA Michiko, Tecnico di Laboratorio</div>
+
+    <div class="firma-block">
+      <div style="font-size:10px; color:#666; margin-top:14px;">Referto validato e firmato da:</div>
+      <div class="firma-line">Dott. YAMAMOTO Naoki</div>
+      <div style="margin-top:4px; font-size:10px;">Responsabile Laboratorio di Genetica Medica</div>
+      <div style="font-size:9px; color:#666;">Ospedale Universitario di Kyoto</div>
+      <div style="font-size:9px; color:#666; margin-top:4px;">Kyoto, 15 luglio 1980</div>
+    </div>
+
+    <div class="timbro">
+      OSPEDALE UNIVERSITARIO<br>
+      DI KYOTO<br>
+      Laboratorio Genetica Medica<br>
+      * REFERTO UFFICIALE *
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

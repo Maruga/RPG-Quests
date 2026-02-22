@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registri Pronto Soccorso — 8-9 Aprile 1997</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a2e1a; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #6b8e6b; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #6b8e6b; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #a0c8a0; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-size: 11px; color: #c0d8c0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #6b8e6b; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a2e1a;
+    border-bottom: 2px solid #1a2e1a; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── REGISTRO TABLE ── */
+  .reg-table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0; }
+  .reg-table th {
+    background: #e8f0e8; text-align: left; padding: 5px 6px;
+    border: 1px solid #999; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #333;
+  }
+  .reg-table td { padding: 5px 6px; border: 1px solid #bbb; vertical-align: top; }
+  .reg-table tr:nth-child(even) { background: #f8faf8; }
+  .reg-table .highlight-row { background: #fff8e0 !important; }
+
+  /* ── CARTELLA CLINICA ── */
+  .cartella {
+    border: 1px solid #999; margin: 12px 0; background: #fafff8;
+  }
+  .cartella-header {
+    background: #1a2e1a; color: white; padding: 8px 14px;
+    font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1px;
+  }
+  .cartella-body { padding: 10px 14px; }
+  .cartella-field { padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 10.5px; }
+  .cartella-field:last-child { border-bottom: none; }
+  .cartella-label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cartella-section {
+    margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;
+  }
+  .cartella-dialog {
+    margin: 4px 0; padding: 4px 10px; background: #f0f4ee; font-style: italic; font-size: 10px;
+  }
+
+  /* ── VITALS ── */
+  .vitals { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 6px 0; }
+  .vital-item { font-size: 10px; padding: 2px 0; }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #f0ede6; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── SUBSECTION ── */
+  .subsection { margin-bottom: 12px; }
+  .subsection-title { font-weight: bold; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── RIEPILOGO ── */
+  .summary-box {
+    border: 2px solid #1a2e1a; padding: 14px 16px; margin: 10px 0; background: #f8fff8;
+  }
+  .summary-case {
+    padding: 8px 0; border-bottom: 1px dashed #999;
+  }
+  .summary-case:last-child { border-bottom: none; }
+  .summary-case-title { font-weight: bold; margin-bottom: 4px; }
+
+  /* ── STAMP ── */
+  .timbro-hosp {
+    position: absolute; right: 24px; top: 45%;
+    transform: rotate(-10deg);
+    border: 3px solid rgba(0,100,0,0.25); border-radius: 50%;
+    width: 65px; height: 65px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 7px; font-weight: bold;
+    color: rgba(0,100,0,0.3); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── FIRMA ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    font-size: 10.5px;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 04 — Registri Pronto Soccorso</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori richiedono i registri del PS con mandato, oppure dopo che l'autopsia rivela tetrodotossina e cercano altri casi di intossicazione nella stessa notte. Il Dott. Sato Hiroshi (presente all'evento) potrebbe indirizzarli.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>Tanaka Michiko (52):</strong> parestesia + nausea, ha mangiato fugu a "una cena/evento presso una galleria d'arte" — collega il fugu a un evento specifico</li>
+    <li><strong>Watanabe Kenji (48):</strong> parestesia + cefalea, ha mangiato fugu a "un evento privato", sapore "piu intenso del solito" (il fugu conteneva fegato)</li>
+    <li><strong>Oda Yuki (45):</strong> nausea, ha chiamato il medico di famiglia, non e andata al PS — caso più lieve</li>
+    <li>Tutti e tre hanno partecipato allo stesso evento la sera dell'8 aprile</li>
+    <li>La diagnosi è la stessa per tutti: intossicazione da tetrodotossina</li>
+  </ul>
+  <p><strong>Cosa dimostra:</strong></p>
+  <ul>
+    <li>Il fugu all'evento era contaminato (organi tossici)</li>
+    <li>Piu persone hanno avuto sintomi — l'avvelenamento non era chirurgicamente mirato</li>
+    <li>Il giudice ha mangiato 3 porzioni (dose molto più alta), gli altri 1-2 (sintomi lievi)</li>
+    <li>Se interrogano Tanaka o Watanabe, possono confermare la presenza di fugu al buffet e dire che "non era nel menu"</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO 1: REGISTRO ACCESSI PS -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="org-sub">Pronto Soccorso</div>
+    <div class="doc-type">REGISTRO ACCESSI NOTTURNI</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Turno</div><div class="value">Notte 8-9 aprile 1997</div></div>
+    <div class="field"><div class="label">Fascia oraria</div><div class="value">22:00 — 06:00</div></div>
+  </div>
+
+  <div class="section" style="position:relative;">
+    <div class="section-title">Accessi registrati</div>
+    <table class="reg-table">
+      <thead>
+        <tr>
+          <th style="width:35px;">N.</th>
+          <th style="width:50px;">Ora</th>
+          <th>Paziente</th>
+          <th style="width:35px;">Eta</th>
+          <th>Sintomi</th>
+          <th style="width:70px;">Esito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>127</td>
+          <td>22:15</td>
+          <td>YAMAMOTO Tetsuo</td>
+          <td>34</td>
+          <td>Trauma mano</td>
+          <td>Dimesso</td>
+        </tr>
+        <tr>
+          <td>128</td>
+          <td>22:48</td>
+          <td>KOBAYASHI Ren</td>
+          <td>19</td>
+          <td>Febbre alta</td>
+          <td>Ricovero</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>129</strong></td>
+          <td><strong>23:22</strong></td>
+          <td><strong>TANAKA Michiko</strong></td>
+          <td><strong>52</strong></td>
+          <td><strong>Parestesia, nausea</strong></td>
+          <td><strong>Osservaz.</strong></td>
+        </tr>
+        <tr>
+          <td>130</td>
+          <td>23:45</td>
+          <td>ITO Kenji</td>
+          <td>67</td>
+          <td>Dolore torace</td>
+          <td>Ricovero</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>131</strong></td>
+          <td><strong>00:15</strong></td>
+          <td><strong>WATANABE Kenji</strong></td>
+          <td><strong>48</strong></td>
+          <td><strong>Parestesia, cefalea</strong></td>
+          <td><strong>Osservaz.</strong></td>
+        </tr>
+        <tr>
+          <td>132</td>
+          <td>01:30</td>
+          <td>SUZUKI Yuki</td>
+          <td>23</td>
+          <td>Intossicaz. alcolica</td>
+          <td>Dimessa</td>
+        </tr>
+        <tr>
+          <td>133</td>
+          <td>02:45</td>
+          <td>NAKAMURA Hiroshi</td>
+          <td>41</td>
+          <td>Trauma cranico</td>
+          <td>Ricovero</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:9px; color:#888; font-style:italic; margin-top:4px;">[Estratto parziale — altri accessi omessi perché non rilevanti]</p>
+
+    <div class="timbro-hosp">KYOTO<br>UNIV.<br>HOSP.<br>京都大学</div>
+  </div>
+
+</div>
+
+<!-- DOCUMENTO 2: CARTELLA TANAKA -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="org-sub">Pronto Soccorso — Cartella Clinica</div>
+    <div class="doc-type">CARTELLA PS N. 129</div>
+  </div>
+
+  <div class="section">
+    <div class="cartella">
+      <div class="cartella-header">DATI PAZIENTE</div>
+      <div class="cartella-body">
+        <div class="cartella-field"><span class="cartella-label">Paziente:</span> TANAKA Michiko</div>
+        <div class="cartella-field"><span class="cartella-label">Data nascita:</span> 15/06/1944</div>
+        <div class="cartella-field"><span class="cartella-label">Eta:</span> 52 anni</div>
+        <div class="cartella-field"><span class="cartella-label">Accesso N.:</span> 129</div>
+        <div class="cartella-field"><span class="cartella-label">Data/Ora:</span> 08/04/1997 — 23:22</div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">MOTIVO ACCESSO</div>
+      <div class="cartella-body">
+        <p>Paziente lamenta formicolio persistente a labbra e lingua, insorto circa 2 ore prima. Riferisce anche nausea lieve.</p>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">ANAMNESI</div>
+      <div class="cartella-body">
+        <p>Paziente riferisce di aver partecipato a una cena/evento serale presso una galleria d'arte. Ha consumato vari alimenti tra cui pesce crudo.</p>
+        <div class="cartella-dialog">
+          <strong>Domanda medico:</strong> "Ha mangiato fugu?"<br>
+          <strong>Risposta:</strong> "Si, c'era del fugu al buffet. Ne ho presa una porzione piccola."
+        </div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">PARAMETRI VITALI</div>
+      <div class="cartella-body">
+        <div class="vitals">
+          <div class="vital-item"><strong>PA:</strong> 135/85 mmHg</div>
+          <div class="vital-item"><strong>FC:</strong> 72 bpm</div>
+          <div class="vital-item"><strong>SpO2:</strong> 98%</div>
+          <div class="vital-item"><strong>Temp:</strong> 36,8 &#176;C</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">DIAGNOSI E DECORSO</div>
+      <div class="cartella-body">
+        <div class="cartella-field"><span class="cartella-label">Diagnosi:</span> Sospetta lieve intossicazione da tetrodotossina (consumo di fugu)</div>
+        <div class="cartella-field"><span class="cartella-label">Decorso:</span> Paziente tenuta in osservazione per 4 ore. Sintomi in graduale risoluzione. Dimessa alle 03:30 del 09/04/1997.</div>
+        <div class="cartella-field"><span class="cartella-label">Note:</span> Paziente consigliata di evitare consumo di fugu non certificato. Sintomi compatibili con dose sub-tossica di tetrodotossina.</div>
+        <div class="cartella-field"><span class="cartella-label">Medico:</span> Dott. HAYASHI Akira</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOCUMENTO 3: CARTELLA WATANABE -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="org-sub">Pronto Soccorso — Cartella Clinica</div>
+    <div class="doc-type">CARTELLA PS N. 131</div>
+  </div>
+
+  <div class="section">
+    <div class="cartella">
+      <div class="cartella-header">DATI PAZIENTE</div>
+      <div class="cartella-body">
+        <div class="cartella-field"><span class="cartella-label">Paziente:</span> WATANABE Kenji</div>
+        <div class="cartella-field"><span class="cartella-label">Data nascita:</span> 22/03/1949</div>
+        <div class="cartella-field"><span class="cartella-label">Eta:</span> 48 anni</div>
+        <div class="cartella-field"><span class="cartella-label">Accesso N.:</span> 131</div>
+        <div class="cartella-field"><span class="cartella-label">Data/Ora:</span> 09/04/1997 — 00:15</div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">MOTIVO ACCESSO</div>
+      <div class="cartella-body">
+        <p>Paziente presenta parestesia (formicolio) a labbra, lingua e dita delle mani. Cefalea lieve. Sintomi insorti circa 3 ore prima.</p>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">ANAMNESI</div>
+      <div class="cartella-body">
+        <p>Il paziente riferisce di aver cenato presso "un evento privato" dove ha consumato diversi piatti, tra cui fugu.</p>
+        <div class="cartella-dialog">
+          <strong>Domanda medico:</strong> "Quanto fugu ha consumato?"<br>
+          <strong>Risposta:</strong> "Una porzione, forse due. Era molto buono."
+        </div>
+        <div class="cartella-dialog">
+          <strong>Domanda:</strong> "Era fugu con kimo (fegato)?"<br>
+          <strong>Risposta:</strong> "Non saprei dire con certezza. Aveva un sapore particolare, più intenso del solito."
+        </div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">PARAMETRI VITALI</div>
+      <div class="cartella-body">
+        <div class="vitals">
+          <div class="vital-item"><strong>PA:</strong> 128/82 mmHg</div>
+          <div class="vital-item"><strong>FC:</strong> 68 bpm</div>
+          <div class="vital-item"><strong>SpO2:</strong> 97%</div>
+          <div class="vital-item"><strong>Temp:</strong> 36,6 &#176;C</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartella">
+      <div class="cartella-header">DIAGNOSI E DECORSO</div>
+      <div class="cartella-body">
+        <div class="cartella-field"><span class="cartella-label">Diagnosi:</span> Intossicazione lieve da tetrodotossina</div>
+        <div class="cartella-field"><span class="cartella-label">Decorso:</span> Paziente tenuto in osservazione per 6 ore. Sintomi gradualmente risolti. Dimesso alle 06:20 del 09/04/1997.</div>
+        <div class="cartella-field"><span class="cartella-label">Note:</span> Il paziente è stato avvisato che il consumo di fugu non certificato è pericoloso. Ha rifiutato di fornire dettagli sull'evento.</div>
+        <div class="cartella-field"><span class="cartella-label">Medico:</span> Dott. HAYASHI Akira</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOCUMENTO 4: SEGNALAZIONE ODA -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header" style="background:#2e2e1a; border-bottom-color:#a09060;">
+    <div class="doc-header::after" style="background:#a09060;"></div>
+    <div class="org">STUDIO MEDICO DOTT. KIMURA TAKASHI</div>
+    <div class="org-sub" style="color:#d0c8a0;">Medicina Generale</div>
+    <div class="doc-type" style="border-color:#a09060;">REGISTRO VISITE — 09/04/1997</div>
+  </div>
+
+  <div class="section">
+    <div class="cartella">
+      <div class="cartella-header" style="background:#2e2e1a;">TELEFONATA — ORE 09:45</div>
+      <div class="cartella-body">
+        <div class="cartella-field"><span class="cartella-label">Paziente:</span> ODA Yuki, 45 anni</div>
+        <div class="cartella-field"><span class="cartella-label">Motivo:</span> Paziente lamenta nausea persistente dalla sera precedente. Ha partecipato a un evento dove ha consumato "pesce crudo".</div>
+        <div class="cartella-field"><span class="cartella-label">Consiglio:</span> Riposo, liquidi, osservazione. Se peggiora, recarsi al PS.</div>
+        <div class="cartella-field"><span class="cartella-label">Esito:</span> Paziente riferisce miglioramento nel pomeriggio.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOCUMENTO 5: RIEPILOGO INVESTIGATIVO -->
+<div class="document">
+
+  <div class="doc-header" style="background:#2e1a1a; border-bottom-color:#c08080;">
+    <div class="org">RIEPILOGO PER GLI INVESTIGATORI</div>
+    <div class="doc-type" style="border-color:#c08080;">SEGNALAZIONI INTOSSICAZIONE FUGU — NOTTE 8-9 APRILE 1997</div>
+  </div>
+
+  <div class="section">
+    <div class="summary-box">
+      <div class="summary-case">
+        <div class="summary-case-title">CASO 1: TANAKA Michiko (52 anni)</div>
+        <ul class="detail-list">
+          <li><strong>Accesso PS:</strong> 23:22</li>
+          <li><strong>Sintomi:</strong> Parestesia labbra/lingua, nausea</li>
+          <li><strong>Consumo fugu:</strong> SI (1 porzione)</li>
+          <li><strong>Evento:</strong> Galleria d'arte</li>
+          <li><strong>Esito:</strong> Dimessa dopo osservazione</li>
+        </ul>
+      </div>
+
+      <div class="summary-case">
+        <div class="summary-case-title">CASO 2: WATANABE Kenji (48 anni)</div>
+        <ul class="detail-list">
+          <li><strong>Accesso PS:</strong> 00:15</li>
+          <li><strong>Sintomi:</strong> Parestesia labbra/lingua/dita, cefalea</li>
+          <li><strong>Consumo fugu:</strong> SI (1-2 porzioni)</li>
+          <li><strong>Evento:</strong> "Evento privato"</li>
+          <li><strong>Esito:</strong> Dimesso dopo osservazione</li>
+        </ul>
+      </div>
+
+      <div class="summary-case">
+        <div class="summary-case-title">CASO 3: ODA Yuki (45 anni)</div>
+        <ul class="detail-list">
+          <li><strong>Accesso PS:</strong> NON si e presentata — telefonata al medico di famiglia</li>
+          <li><strong>Sintomi:</strong> Nausea persistente</li>
+          <li><strong>Consumo fugu:</strong> Probabile ("pesce crudo")</li>
+          <li><strong>Esito:</strong> Guarita spontaneamente</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note-box" style="margin-top:12px; background:#fff8e0; border-color:#c0a060; border-width:2px;">
+      <strong>ELEMENTO COMUNE:</strong> Tutti hanno partecipato allo stesso evento serale dell'8 aprile.<br>
+      <strong>NOTA:</strong> Il giudice Ishida ha consumato 3 porzioni di fugu.
+    </div>
+  </div>
+
+  <div class="firma">
+    <p style="font-size:9px; color:#888; font-style:italic;">Riepilogo compilato dalla Sezione Investigativa su richiesta del team inquirente.</p>
+  </div>
+</div>
+
+</body>
+</html>

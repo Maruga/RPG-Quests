@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trascrizione Nastro VHS — SEC-970122-A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: #fcfcfa;
+    border: 2px solid #444; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: #2a2a2a; color: #e0e0e0; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #777; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 1px; background: #555; margin-top: 3px; }
+  .doc-header .org { font-family: "Courier New", monospace; font-size: 13px; letter-spacing: 3px; font-weight: bold; margin-bottom: 2px; }
+  .doc-header .org-jp { font-size: 11px; color: #999; letter-spacing: 2px; margin-bottom: 8px; }
+  .doc-header .dept { font-family: "Courier New", monospace; font-size: 11px; color: #aaa; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 14px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #777; display: inline-block; padding: 4px 16px; color: #fff;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #444; font-size: 11px;
+    background: #f4f4f0;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #666; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- LOG SECTION -- */
+  .log-section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .log-section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: "Courier New", monospace; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #333;
+    border-bottom: 2px solid #444; padding-bottom: 4px; margin-bottom: 14px;
+  }
+  .section-divider { border: none; border-top: 2px solid #444; margin: 0; }
+
+  /* -- LOG ENTRIES -- */
+  .log-entry {
+    padding: 6px 0 6px 90px; position: relative; min-height: 28px;
+    border-bottom: 1px dotted #ccc;
+  }
+  .log-entry:last-child { border-bottom: none; }
+  .log-time {
+    position: absolute; left: 0; top: 6px;
+    font-weight: bold; font-size: 12px; color: #333;
+    font-family: "Courier New", monospace;
+    width: 70px; text-align: right;
+    padding-right: 12px;
+    border-right: 2px solid #bbb;
+  }
+  .log-text {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10.5px; line-height: 1.6; color: #333;
+  }
+  .log-ref {
+    font-size: 9px; color: #888; font-style: italic; margin-top: 2px;
+  }
+
+  /* -- separator line -- */
+  .log-sep {
+    border: none; border-top: 1px dashed #aaa; margin: 8px 0 8px 90px;
+  }
+
+  /* -- BLANK FIELDS -- */
+  .blank-field {
+    display: inline-block; border-bottom: 1px solid #333;
+    min-width: 200px; height: 14px; margin: 0 4px;
+  }
+
+  /* -- FOOTER -- */
+  .log-footer {
+    padding: 14px 24px; border-top: 2px solid #444;
+    font-size: 10px; color: #666;
+  }
+  .log-footer .nota { margin-top: 6px; font-style: italic; }
+
+  /* -- VHS QUALITY NOTE -- */
+  .vhs-note {
+    margin: 10px 0; padding: 8px 12px; background: #f0f0e8;
+    border: 1px solid #ccc; font-size: 9.5px; color: #666;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 21 — Registrazioni Telecamere di Sicurezza</h2>
+  <p><strong>Quando consegnare:</strong> Quando i PG richiedono le registrazioni delle telecamere del Tribunale con mandato o autorizzazione del procuratore. I nastri VHS si conservano per 90 giorni — scadenza: 22 aprile 1997.</p>
+  <p><strong>L'indizio chiave: l'abbigliamento</strong></p>
+  <ul>
+    <li>La donna delle 10:20 indossa: <strong>cappotto grigio, gonna scura, borsa in pelle marrone, scarpe basse, nessun gioiello</strong> — stile semplice e sobrio</li>
+    <li>La vera <strong>Sakura</strong> e nota per vestiti firmati, gioielli vistosi, kimono costosi — stile elegante e appariscente</li>
+    <li><strong>Yui</strong> vive modestamente a Fushimi e si veste in modo semplice — lo stile corrisponde</li>
+    <li>I PG devono <strong>notare da soli</strong> la discrepanza. Niente e evidenziato nel documento.</li>
+  </ul>
+  <p><strong>Qualita VHS:</strong> La risoluzione e troppo bassa per distinguere le gemelle dal viso. Servono altri indizi (abbigliamento, portamento, contesto).</p>
+  <p><strong>Dettaglio Morimoto:</strong> Alle 11:05 la donna e l'avvocato si incrociano nell'atrio. Non interagiscono, ma il semplice incrocio collega i due filoni dell'indagine.</p>
+  <p><strong>Hayashi Noriko:</strong> Esce alle 14:45 visibilmente turbata, forse dopo aver pianto. Un'altra vittima del giudice da scoprire.</p>
+  <p><strong>TENSIONE NARRATIVA:</strong> I nastri scadono il 22 aprile 1997. Se i PG indagano in aprile, hanno poco tempo.</p>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">TRIBUNALE DISTRETTUALE DI KYOTO</div>
+    <div class="org-jp">京都地方裁判所 — 防犯カメラ記録</div>
+    <div class="dept">UFFICIO SICUREZZA INTERNA</div>
+    <div class="doc-type">TRASCRIZIONE REVISIONE NASTRO VHS</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Telecamera</div><div class="value">CAM-01 — Ingresso principale</div></div>
+    <div class="field"><div class="label">Data registrazione</div><div class="value">22 gennaio 1997 (mercoledi)</div></div>
+    <div class="field"><div class="label">Formato</div><div class="value">VHS standard, bianco e nero</div></div>
+    <div class="field"><div class="label">Nastro n.</div><div class="value">SEC-970122-A</div></div>
+    <div class="field"><div class="label">Revisione effettuata da</div><div class="value"><span class="blank-field"></span></div></div>
+    <div class="field"><div class="label">Data revisione</div><div class="value"><span class="blank-field"></span></div></div>
+  </div>
+
+  <div class="vhs-note">
+    NOTA TECNICA: Qualita mediocre (risoluzione limitata, frame rate basso). I volti sono riconoscibili solo nei primi piani ravvicinati. Le descrizioni degli abiti sono approssimative a causa della resa cromatica in bianco e nero.
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- LOG OBSERVATIONS -->
+  <div class="log-section">
+    <div class="section-title">Log Osservazioni da Nastro</div>
+
+    <div class="log-entry">
+      <div class="log-time">08:02</div>
+      <div class="log-text">Personale tribunale — gruppo di 4 impiegati entra dall'ingresso principale. Divise regolamentari.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">08:15</div>
+      <div class="log-text">Guardia Taniguchi prende posizione al banco accoglienza.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">08:30</div>
+      <div class="log-text">Apertura al pubblico. Due addetti pulizie escono.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">08:32</div>
+      <div class="log-text">Uomo, ~50 anni, giacca scura, valigetta in pelle. Mostra badge alla guardia. Transito rapido.</div>
+      <div class="log-ref">[Compatibile con Avv. Inoue — registro n. 01]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">08:42</div>
+      <div class="log-text">Uomo, ~45 anni, giacca e cravatta grigia, valigetta. Mostra badge. Breve scambio con la guardia.</div>
+      <div class="log-ref">[Compatibile con Avv. Suzuki — registro n. 02]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">08:55</div>
+      <div class="log-text">Stesso soggetto delle 08:32 esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">09:12</div>
+      <div class="log-text">Donna, ~55 anni, cappotto beige, borsa a mano. Mostra documento. Entra.</div>
+      <div class="log-ref">[Compatibile con Sig.ra Endo — registro n. 03]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">09:30</div>
+      <div class="log-text">Uomo in giacca grigia esce (Avv. Suzuki).</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">09:40</div>
+      <div class="log-text">Donna in cappotto beige esce (Sig.ra Endo).</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">09:50</div>
+      <div class="log-text">Uomo, ~40 anni, abito blu, valigetta pesante. Badge avvocato. Entra.</div>
+      <div class="log-ref">[Compatibile con Avv. Nishimura — registro n. 04]</div>
+    </div>
+
+    <hr class="log-sep">
+
+    <div class="log-entry">
+      <div class="log-time">10:20</div>
+      <div class="log-text">Donna, ~40 anni. Capelli lunghi neri, lisci. Vestita in modo semplice — cappotto grigio, gonna scura, borsa in pelle marrone. Nessun gioiello visibile. Scarpe basse. Entra con passo deciso. Si dirige al banco, mostra documento alla guardia senza esitazione.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">10:21</div>
+      <div class="log-text">Primo piano del viso (la donna passa vicino alla telecamera). Qualita mediocre ma volto riconoscibile. Espressione tesa, determinata. Mascella serrata. Nessun sorriso, nessun saluto al personale.</div>
+    </div>
+
+    <hr class="log-sep">
+
+    <div class="log-entry">
+      <div class="log-time">10:45</div>
+      <div class="log-text">Uomo in abito blu esce (Avv. Nishimura).</div>
+    </div>
+
+    <hr class="log-sep">
+
+    <div class="log-entry">
+      <div class="log-time">11:03</div>
+      <div class="log-text">Stessa donna esce. Espressione agitata. Cammina velocemente verso l'uscita. Si ferma un momento sotto il portico d'ingresso. Si passa una mano sul viso — gesto di frustrazione o angoscia. Resta ferma circa 15 secondi, poi esce con passo rapido verso sinistra (direzione parcheggio).</div>
+      <div class="log-ref">NOTA: sembra parlare da sola (labiale non leggibile).</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">11:05</div>
+      <div class="log-text">Uomo elegante, ~50 anni. Abito scuro di taglio costoso, cravatta di seta, valigetta in pelle pregiata. Portamento sicuro, disinvolto. Mostra badge avvocato alla guardia. Entra con calma. Breve scambio con Taniguchi.</div>
+      <div class="log-ref">[Compatibile con Avv. Morimoto — registro n. 06]</div>
+      <div class="log-text" style="margin-top:6px; padding-left:12px; border-left: 2px solid #aaa; font-size:10px;">La donna in cappotto grigio e l'uomo in abito scuro si incrociano nell'atrio. Nessuna interazione visibile — la donna tiene lo sguardo basso, l'uomo non sembra notarla.</div>
+    </div>
+
+    <hr class="log-sep">
+
+    <div class="log-entry">
+      <div class="log-time">11:20</div>
+      <div class="log-text">Donna, ~35 anni, tailleur chiaro. Documento.</div>
+      <div class="log-ref">[Compatibile con Sig.ra Watanabe — registro n. 07]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">11:50</div>
+      <div class="log-text">Stessa donna esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">12:15</div>
+      <div class="log-text">Uomo in abito scuro costoso esce (Avv. Morimoto). Al telefono cellulare mentre esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">13:28</div>
+      <div class="log-text">Donna, ~45 anni, abbigliamento dimesso, espressione preoccupata. Documento. Entra.</div>
+      <div class="log-ref">[Compatibile con Sig.ra Hayashi — registro n. 08]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">14:08</div>
+      <div class="log-text">Uomo, ~40 anni, giacca marrone. Badge avvocato.</div>
+      <div class="log-ref">[Compatibile con Avv. Ogawa — registro n. 09]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">14:35</div>
+      <div class="log-text">Stesso uomo esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">14:45</div>
+      <div class="log-text">Donna dall'espressione preoccupata esce (Sig.ra Hayashi). Si soffia il naso — possibile pianto recente.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">15:03</div>
+      <div class="log-text">Uomo, ~60 anni, cappotto scuro. Documento.</div>
+      <div class="log-ref">[Compatibile con Sig. Kojima — registro n. 10]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">15:25</div>
+      <div class="log-text">Stesso uomo esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">15:28</div>
+      <div class="log-text">Donna, ~30 anni, tailleur blu. Badge avvocato.</div>
+      <div class="log-ref">[Compatibile con Avv. Takahashi — registro n. 11]</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">15:50</div>
+      <div class="log-text">Stessa donna esce.</div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-time">16:00</div>
+      <div class="log-text">Fine turno guardia Taniguchi. Cambio turno.</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FOOTER -->
+  <div class="log-footer">
+    <div style="text-align:center; font-weight:bold; letter-spacing:2px; margin-bottom:10px; font-size:11px;">— FINE TRASCRIZIONE —</div>
+    <div>Nastro conservato presso: Ufficio Sicurezza, piano seminterrato</div>
+    <div>Scadenza conservazione: <strong>22 aprile 1997</strong> (90 giorni)</div>
+    <div class="nota">Trascorso il periodo di conservazione, il nastro verra sovrascritto con nuove registrazioni secondo la procedura standard.</div>
+  </div>
+
+</div>
+
+</body>
+</html>

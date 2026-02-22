@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapporto Scena del Crimine — SC-1997-0409-001</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── PERSONS ── */
+  .persona { margin-bottom: 12px; padding-left: 12px; border-left: 2px solid #c0a060; }
+  .persona-header { font-weight: bold; margin-bottom: 2px; }
+  .persona-stato { color: #666; font-style: italic; font-size: 10px; }
+  .persona-dich {
+    margin-top: 4px; padding: 6px 10px; background: #f8f6f0;
+    border-left: 3px solid #999; font-style: italic; font-size: 10.5px;
+  }
+  .persona-assente { color: #888; font-size: 10px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed #ccc; }
+
+  /* ── DETAILS ── */
+  .subsection { margin-bottom: 12px; }
+  .subsection-title { font-weight: bold; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "—"; position: absolute; left: 0; color: #999; }
+
+  /* ── INVENTORY TABLE ── */
+  .inv-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .inv-table th {
+    background: #f0ede6; text-align: left; padding: 5px 8px;
+    border: 1px solid #ccc; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555;
+  }
+  .inv-table td { padding: 5px 8px; border: 1px solid #ddd; vertical-align: top; }
+  .inv-table tr:nth-child(even) { background: #fafaf6; }
+  .inv-status { font-size: 9px; font-weight: bold; letter-spacing: 0.5px; }
+  .inv-status.inloco { color: #666; }
+  .inv-status.seq { color: #8b0000; }
+
+  /* ── OBSERVATIONS ── */
+  .obs-item { padding: 4px 0; }
+
+  /* ── TIMELINE ── */
+  .timeline { list-style: none; padding: 0; }
+  .timeline li {
+    padding: 3px 0 3px 80px; position: relative;
+    border-left: 2px solid #ddd; margin-left: 30px;
+  }
+  .timeline li::before {
+    content: attr(data-time); position: absolute; left: -60px;
+    font-weight: bold; font-size: 10px; color: #1a1a2e; width: 50px; text-align: right;
+  }
+  .timeline li::after {
+    content: ""; position: absolute; left: -5px; top: 8px;
+    width: 8px; height: 8px; background: #1a1a2e; border-radius: 50%;
+  }
+
+  /* ── CHECKBOX ── */
+  .checkbox-list { list-style: none; padding: 0; margin: 8px 0; }
+  .checkbox-list li { padding: 3px 0; font-size: 11px; }
+  .checkbox-list .unchecked::before { content: "☐ "; font-size: 14px; }
+  .checkbox-list .checked::before { content: "☑ "; font-size: 14px; font-weight: bold; }
+  .checkbox-list .checked { font-weight: bold; }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 9px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════ GM HEADER (non si stampa) ════════════ -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 01 — Rapporto Scena del Crimine</h2>
+  <p><strong>Quando consegnare:</strong> Immediatamente, inizio della prima sessione (Giorno 1).</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>Descrizione neutra della scena — i giocatori devono decidere cosa approfondire</li>
+    <li>Maggiordomo: orario rientro (23:00), sintomi visti (pallido, sudato), andato a letto 23:30</li>
+    <li>Autista: malessere durante il viaggio, offerto pronto soccorso, rifiutato</li>
+    <li>Inventario 12 oggetti sulla scrivania — la penna è uno tra tanti, nessuna enfasi</li>
+    <li>Lista prelievi previsti dalla scientifica — i PG possono aggiungere</li>
+    <li>Osservazioni sul corpo — segni sulla mano tra altre osservazioni cliniche</li>
+  </ul>
+  <p><strong>Cosa NON contiene (esce solo sotto interrogatorio):</strong></p>
+  <ul>
+    <li>Il maggiordomo NON parla della penna "ritrovata" — lo dice solo se interrogato direttamente</li>
+    <li>L'autista NON nomina la Galleria Nijo né il tipo di evento — lo dice solo se interrogato</li>
+    <li>Nessun oggetto è evidenziato come sospetto — i PG devono capirlo da soli</li>
+  </ul>
+  <p><strong>Nota meccanica:</strong> La scena è INTATTA quando i PG arrivano. La scientifica sta facendo foto e rilievi ma non ha rimosso nulla. I PG esaminano la scena e decidono cosa far sequestrare. Se non ordinano il sequestro della penna entro 48 ore, Sakura la distrugge.</p>
+  <p><strong>Yamada:</strong> L'Ag. Yamada è a disposizione dei PG per tutta l'indagine. Esegue ordini, coordina pattuglie, accompagna. Si presenta all'arrivo dei PG sulla scena.</p>
+</div>
+
+<!-- ════════════ DOCUMENTO STAMPABILE ════════════ -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察本部</div>
+    <div class="doc-type">RAPPORTO PRIMO INTERVENTO</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">N. Rapporto</div><div class="value">SC-1997-0409-001</div></div>
+    <div class="field"><div class="label">Data</div><div class="value">9 aprile 1997</div></div>
+    <div class="field"><div class="label">Ora chiamata</div><div class="value">07:12</div></div>
+    <div class="field"><div class="label">Ora arrivo</div><div class="value">07:28</div></div>
+    <div class="field"><div class="label">Primo intervenuto</div><div class="value">Ag. Yamada Tetsuo (Matr. 4521)</div></div>
+    <div class="field"><div class="label">Unità di supporto</div><div class="value">Pattuglia 7-B (Ag. Sato, Ag. Mori)</div></div>
+  </div>
+
+  <!-- LUOGO -->
+  <div class="section">
+    <div class="section-title">Luogo</div>
+    <ul class="detail-list">
+      <li><strong>Indirizzo:</strong> Via Higashiyama 45, Higashiyama-ku, Kyoto</li>
+      <li><strong>Immobile:</strong> Villa residenziale privata, due piani</li>
+      <li><strong>Proprietàrio:</strong> ISHIDA Makoto (il defunto)</li>
+      <li><strong>Ambiente:</strong> Studio privato, piano terra, lato est — accesso dal corridoio interno</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PERSONE PRESENTI -->
+  <div class="section">
+    <div class="section-title">Persone presenti all'arrivo</div>
+
+    <div class="persona">
+      <div class="persona-header">1. NAGAI Chiyo (48) — Domestica</div>
+      <div class="persona-stato">In stato di shock. Piange, non riesce a parlare in modo coerente.</div>
+      <div class="persona-dich">"L'ho trovato così... non si muoveva... ho urlato..."</div>
+    </div>
+
+    <div class="persona">
+      <div class="persona-header">2. UENO Masa (62) — Maggiordomo</div>
+      <div class="persona-stato">Composto ma visibilmente scosso. Collaborativo.</div>
+      <div class="persona-dich">"Il signore è rientrato verso le 23:00. L'ho accolto all'ingresso. Era pallido, sudava. Si è allentato la cravatta nell'ingresso. Gli ho chiesto se stava bene, ha detto che aveva solo mangiato troppo. Ha detto che doveva scrivere una cosa e che sarebbe andato nello studio. Io sono andato a dormire verso le 23:30. Stamattina la signora Nagai ha urlato. Sono corso e ho chiamato il 110."</div>
+    </div>
+
+    <div class="persona">
+      <div class="persona-header">3. OKADA Taro (35) — Autista personale</div>
+      <div class="persona-stato">Nervoso. Risponde a monosillabi.</div>
+      <div class="persona-dich">"L'ho riportato a casa ieri sera. Durante il tragitto si lamentava, diceva che aveva lo stomaco sottosopra. Gli ho chiesto se voleva che lo portassi al pronto soccorso. Ha detto di no, che voleva solo andare a casa."</div>
+    </div>
+
+    <div class="persona-assente">
+      ASSENTE: ISHIDA Sakura (moglie) — Non presente in villa, avvisata<br>
+      ASSENTE: ISHIDA Sora (figlio, 14) — Dormiva in altra ala, non ha sentito nulla<br>
+      ASSENTE: ISHIDA Hana (figlia, 10) — Dormiva in altra ala
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DESCRIZIONE SCENA -->
+  <div class="section">
+    <div class="section-title">Descrizione scena</div>
+
+    <div class="subsection">
+      <div class="subsection-title">Accessi</div>
+      <ul class="detail-list">
+        <li>Porta interna (corridoio): aperta, nessun segno di effrazione</li>
+        <li>Porta-finestra shoji (giardino interno): chiusa dall'interno, gancio inserito</li>
+        <li>Nessun segno di forzatura su alcun accesso</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Stato generale dello studio</div>
+      <ul class="detail-list">
+        <li>Stanza in ordine, nessun segno di colluttazione o lotta</li>
+        <li>Mobili in posizione, nessun oggetto a terra</li>
+        <li>Lampada da tavolo spenta</li>
+        <li>Temperatura ambiente nella norma</li>
+        <li>Nessun odore particolare rilevato</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Il corpo</div>
+      <ul class="detail-list">
+        <li>Posizione: seduto alla scrivania, torso riverso in avanti</li>
+        <li>Testa appoggiata sul piano della scrivania, guancia destra</li>
+        <li>Braccio destro disteso sul piano, mano aperta</li>
+        <li>Braccio sinistro lungo il fianco, penzolante</li>
+        <li>Abbigliamento: completo scuro, cravatta allentata, scarpe ai piedi</li>
+        <li>Rigor mortis: presente, stadio avanzato</li>
+        <li>Livor mortis: compatibile con la posizione riscontrata</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- INVENTARIO OGGETTI -->
+  <div class="section" style="position:relative;">
+    <div class="section-title">Inventario oggetti sulla scrivania</div>
+    <p style="font-size:9px; color:#888; margin-bottom:8px; font-style:italic;">Scena intatta. Nessun oggetto rimosso. In attesa di esame da parte degli investigatori.</p>
+
+    <table class="inv-table">
+      <thead>
+        <tr>
+          <th style="width:50px;">Rif.</th>
+          <th>Oggetto</th>
+          <th>Posizione / Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>OBJ-01</td>
+          <td>Lampada da tavolo</td>
+          <td>Angolo sinistro, spenta. Tipo da studio, ottone.</td>
+        </tr>
+        <tr>
+          <td>OBJ-02</td>
+          <td>Portadocumenti</td>
+          <td>Angolo destro posteriore. Contiene corrispondenza varia.</td>
+        </tr>
+        <tr>
+          <td>OBJ-03</td>
+          <td>Orologio da tavolo</td>
+          <td>Lato destro. Funzionante, segna le 07:31 (verificato).</td>
+        </tr>
+        <tr>
+          <td>OBJ-04</td>
+          <td>Sottomano in pelle</td>
+          <td>Centro scrivania, sotto il corpo. Cuoio scuro, usura normale.</td>
+        </tr>
+        <tr>
+          <td>OBJ-05</td>
+          <td>Foglio di carta</td>
+          <td>Sotto la mano destra. Scritta "Gent..." seguita da striscia d'inchiostro.</td>
+        </tr>
+        <tr>
+          <td>OBJ-06</td>
+          <td>Penna stilografica</td>
+          <td>Ca. 15 cm dalla mano destra. Pilot Custom 845, nera/oro.</td>
+        </tr>
+        <tr>
+          <td>OBJ-07</td>
+          <td>Set calligrafia</td>
+          <td>Lato destro, astuccio aperto. Pennini, inchiostro di china, carta washi.</td>
+        </tr>
+        <tr>
+          <td>OBJ-08</td>
+          <td>Fermacarte in pietra</td>
+          <td>Centro, lato destro. Granito levigato, forma ovale.</td>
+        </tr>
+        <tr>
+          <td>OBJ-09</td>
+          <td>Portafoglio</td>
+          <td>Lato destro. Contanti (¥45.000 ca.), carte, documento identità.</td>
+        </tr>
+        <tr>
+          <td>OBJ-10</td>
+          <td>Posacenere in ceramica</td>
+          <td>Angolo destro inferiore. Pulito, nessun mozzicone.</td>
+        </tr>
+        <tr>
+          <td>OBJ-11</td>
+          <td>Agenda personale</td>
+          <td>Cassetto destro (aperto). Appuntamenti recenti.</td>
+        </tr>
+        <tr>
+          <td>OBJ-12</td>
+          <td>Contenuto cestino</td>
+          <td>A terra, lato destro scrivania. Fogli appallottolati.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:12px; padding:10px 14px; background:#f0ede6; border:1px solid #ccc; font-size:10px;">
+      <strong style="font-size:9px; letter-spacing:1px; text-transform:uppercase; color:#555;">Prelievi previsti dalla Scientifica:</strong>
+      <ul class="detail-list" style="margin-top:6px;">
+        <li>OBJ-05 — Foglio di carta con scritta parziale</li>
+        <li>OBJ-12 — Contenuto cestino</li>
+        <li>OBJ-11 — Agenda personale</li>
+        <li>Rilievi dattiloscopici su scrivania, maniglie porta, finestra shoji</li>
+        <li>Campioni biologici dal corpo (medico legale)</li>
+      </ul>
+      <p style="margin-top:6px; font-style:italic; color:#666;">Gli investigatori possono indicare ulteriori oggetti da sequestrare e analizzare.</p>
+    </div>
+
+    <div class="timbro">KYOTO<br>PD<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- OSSERVAZIONI SUL CORPO -->
+  <div class="section">
+    <div class="section-title">Osservazioni sul corpo</div>
+    <ul class="detail-list">
+      <li>Espressione facciale: contrazione muscolare compatibile con dolore acuto</li>
+      <li>Colorazione cutanea: pallore generalizzato</li>
+      <li>Labbra e unghie: lieve cianosi</li>
+      <li>Mano destra, pollice e indice: due segni scuri di forma circolare (~1 cm), aspetto di microustioni</li>
+      <li>Mano sinistra: nulla da segnalare</li>
+      <li>Nessuna ferita visibile, nessun segno di colluttazione</li>
+      <li>Abbigliamento integro, nessuno strappo o macchia</li>
+    </ul>
+    <p style="margin-top:12px; font-weight:bold; text-align:center; letter-spacing:2px; font-size:10px; border:1px solid #333; padding:6px;">
+      RICHIESTA AUTOPSIA — CAUSA DECESSO DA DETERMINARE
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- AZIONI INTRAPRESE -->
+  <div class="section">
+    <div class="section-title">Azioni intraprese</div>
+    <ul class="timeline">
+      <li data-time="07:28">Arrivo sul posto, messa in sicurezza dell'accesso</li>
+      <li data-time="07:35">Constatazione decesso (rigor mortis avanzato)</li>
+      <li data-time="07:40">Richiesta medico legale e polizia scientifica</li>
+      <li data-time="07:45">Isolamento scena, nastro perimetrale posizionato</li>
+      <li data-time="07:50">Raccolta dichiarazioni spontanee dai presenti</li>
+      <li data-time="08:00">Comunicazione alla Sezione Omicidi</li>
+      <li data-time="08:15">Arrivo polizia scientifica</li>
+      <li data-time="08:30">Arrivo squadra investigativa</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- VALUTAZIONE -->
+  <div class="section">
+    <div class="section-title">Valutazione preliminare</div>
+    <ul class="checkbox-list">
+      <li class="unchecked">Morte naturale</li>
+      <li class="unchecked">Suicidio</li>
+      <li class="unchecked">Incidente</li>
+      <li class="checked">Morte sospetta — indagine necessaria</li>
+    </ul>
+    <div style="margin-top:10px; font-size:10.5px;">
+      <strong>Note:</strong> Assenza di causa evidente di decesso. Segni anomali sulla mano destra da approfondire.
+      Cianosi non compatibile con semplice arresto cardiaco. Si raccomanda autopsia completà.
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div>Rapporto compilato da:</div>
+      <div style="font-weight:bold;">Ag. Yamada Tetsuo — Matr. 4521</div>
+      <div style="font-size:9px; color:#666;">Kyoto, 9 aprile 1997</div>
+    </div>
+    <div class="firma-line">Firma dell'agente</div>
+  </div>
+
+</div>
+
+</body>
+</html>

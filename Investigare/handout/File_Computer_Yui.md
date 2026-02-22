@@ -153,7 +153,7 @@ Mi dispiace usarlo così, ma non ho altra scelta.
 
 
 ═══════════════════════════════════════════════════════════════════════
-FILE #4: C:\DOCUMENTI\PERCHE.TXT
+FILE #4: C:\DOCUMENTI\PERCHÉ.TXT
 Stato: CANCELLATO (recuperato al 80%)
 Data creazione: 1 aprile 1997
 Data modifica: 7 aprile 1997
@@ -211,7 +211,7 @@ Nulla di rilevante per l'indagine.
 1. **INVITATI.TXT** - Yui sapeva che Ishida sarebbe stato all'evento
 2. **RICERCA.TXT** - Ha studiato il veleno e i dosaggi
 3. **TANAKA.TXT** - Ha pianificato l'infiltrazione tramite lo chef
-4. **PERCHE.TXT** - Movente completo e confessione di intento
+4. **PERCHÉ.TXT** - Movente completo e confessione di intento
 
 ### Prova definitiva
 Questi file sono una **confessione scritta**. Con questi + testimonianza del chef + registri taxi, il caso contro Yui è chiuso.
@@ -220,4 +220,4 @@ Questi file sono una **confessione scritta**. Con questi + testimonianza del che
 I file erano stati cancellati il **9 aprile** (giorno dopo l'omicidio). Yui ha cercato di coprire le tracce ma non sapeva che i file cancellati sono recuperabili.
 
 ### Errore nota importante
-Nel file PERCHE.TXT, Yui scrive "Mi ha fatto aggredire" - ma l'aggressione era della yakuza, non ordinata da Makoto. Yui ha frainteso.
+Nel file PERCHÉ.TXT, Yui scrive "Mi ha fatto aggredire" - ma l'aggressione era della yakuza, non ordinata da Makoto. Yui ha frainteso.

@@ -58,8 +58,8 @@ Poliziotto da 20 anni. Promosso detective nella Sezione Anticontraffazione. È s
 ### Matrimonio
 Ha conosciuto Yui nel 1980, quando lei era appena stata lasciata da Makoto. L'ha corteggiata con pazienza. Si sono sposati in fretta quando lei ha scoperto di essere incinta. Ha sempre creduto di essere il padre di Kenta.
 
-### La scoperta della sterilità (1996)
-Durante esami medici per altri problemi, Yui ha scoperto che il marito è sterile dalla nascita (azoospermia congenita). Non ne ha parlato con il marito - si vergogna.
+### La sterilità (settembre 1996)
+Durante esami medici per altri problemi di salute, il laboratorio ha emesso un referto urologico che conferma azoospermia congenita — Hiro è sterile dalla nascita. **Yui è andata a ritirare il referto** al posto del marito e ha letto i risultati. Non ha comunicato nulla a Hiro. Lui non sa di essere sterile e non ha mai visto il referto.
 
 ---
 
@@ -69,8 +69,8 @@ Durante esami medici per altri problemi, Yui ha scoperto che il marito è steril
 | -------------------- | ---------------------------------- |
 | Omicidio del giudice | Nulla (all'inizio)                 |
 | Piano di Yui         | **NULLA**                          |
-| Paternità di Kenta   | Crede di essere il padre           |
-| Sua sterilità        | Non loo sa                         |
+| Paternità di Kenta   | Crede di essere il padre biologico |
+| Sua sterilità        | **NON LO SA** — Yui ha ritirato il referto e non gliel'ha mai detto |
 | Relazione Yui-Makoto | Sa che c'è stata, crede sia finita |
 | Famiglia Ishida      | Conosce di fama, nessun contatto   |
 
@@ -78,9 +78,8 @@ Durante esami medici per altri problemi, Yui ha scoperto che il marito è steril
 
 ## COSA NASCONDE
 
-1. La sua sterilità (per vergogna)
-2. La frustrazione per la carriera
-3. Il sospetto che Yui non l'abbia mai amato veramente
+1. La frustrazione per la carriera
+2. Il sospetto che Yui non l'abbia mai amato veramente
 
 ---
 
@@ -92,8 +91,9 @@ Durante esami medici per altri problemi, Yui ha scoperto che il marito è steril
 - "Non abbiamo rapporti con la famiglia Ishida"
 
 ### Se gli rivelano la sterilità
-- Shock, negazione
-- Poi realizzazione: Kenta non può essere suo figlio
+- Shock totale — non ne sapeva nulla
+- Negazione: "Non è possibile, ho un figlio"
+- Poi realizzazione devastante: Kenta non può essere suo figlio
 - Crollo emotivo
 
 ### Se gli rivelano il piano di Yui

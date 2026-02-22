@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro Debiti — Quaderno Sequestrato Noda Isamu</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #2a1a0a;
+    background: #e8dcc8;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header p { margin-bottom: 6px; }
+  @media print { .gm-header { display: none !important; } body { background: #f0e8d8; } .document { box-shadow: none; } }
+
+  /* -- DOCUMENT (notebook page) -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; position: relative;
+    background: #f5edd8;
+    background-image:
+      linear-gradient(to bottom, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 28px, rgba(160,130,90,0.2) 28px, rgba(160,130,90,0.2) 29px),
+      linear-gradient(to right, rgba(180,50,50,0.15) 0px, rgba(180,50,50,0.15) 2px, rgba(0,0,0,0) 2px);
+    background-size: 100% 29px, 100% 100%;
+    background-position: 0 10px, 50px 0;
+    border: none;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.3), -1px -1px 4px rgba(0,0,0,0.1);
+  }
+
+  /* -- NOTEBOOK HEADER -- */
+  .notebook-header {
+    background: #3a2510;
+    color: #d4c4a0;
+    padding: 18px 24px 14px;
+    text-align: center;
+    border-bottom: 2px solid #6b4c28;
+    position: relative;
+  }
+  .notebook-header::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: repeating-linear-gradient(90deg, #6b4c28 0px, #6b4c28 8px, transparent 8px, transparent 12px);
+    margin-top: 6px;
+  }
+  .notebook-header .doc-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c08040;
+    margin-bottom: 4px;
+  }
+  .notebook-header .doc-title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #e8d8b8;
+  }
+  .notebook-header .doc-subtitle {
+    font-size: 11px;
+    color: #a08860;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* -- EVIDENCE TAG -- */
+  .evidence-tag {
+    position: absolute; top: 12px; right: 16px;
+    background: #cc3333; color: white;
+    font-family: Arial, sans-serif;
+    font-size: 9px; font-weight: bold;
+    letter-spacing: 2px; padding: 3px 10px;
+    transform: rotate(3deg);
+    border: 1px solid #991111;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  }
+
+  /* -- METADATA BAR -- */
+  .metadata-bar {
+    background: rgba(60,40,20,0.08);
+    border-bottom: 1px solid rgba(100,70,40,0.3);
+    padding: 8px 24px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #665540;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .metadata-bar .meta-item { margin-right: 20px; }
+  .metadata-bar .meta-label { font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 9px; }
+
+  /* -- NOTEBOOK SECTIONS -- */
+  .notebook-section {
+    padding: 16px 30px 16px 60px;
+    border-bottom: 1px dashed rgba(100,70,40,0.25);
+    position: relative;
+  }
+  .notebook-section:last-child { border-bottom: none; }
+
+  /* -- PAGE MARKER -- */
+  .page-marker {
+    position: absolute;
+    left: 14px;
+    top: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    color: #a09080;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
+
+  /* -- HANDWRITTEN TEXT -- */
+  .handwritten {
+    font-family: "Georgia", "Palatino", "Times New Roman", serif;
+    font-size: 12px;
+    line-height: 29px;
+    color: #1a0a00;
+  }
+  .handwritten .warning-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    color: #2a1a0a;
+  }
+  .handwritten .client-header {
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #4a3020;
+    border-bottom: 1px solid rgba(100,70,40,0.3);
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+  .handwritten .client-note {
+    font-style: italic;
+    color: #6a5540;
+    font-size: 11px;
+  }
+
+  /* -- LEDGER ENTRY -- */
+  .ledger-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+    line-height: 29px;
+  }
+  .ledger-desc { flex: 1; }
+  .ledger-dots {
+    flex: 1;
+    border-bottom: 1px dotted rgba(100,70,40,0.3);
+    margin: 0 6px;
+    min-width: 30px;
+    align-self: flex-end;
+    margin-bottom: 6px;
+  }
+  .ledger-amount {
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: right;
+  }
+  .ledger-amount.payment { color: #2a6020; }
+  .ledger-amount.debt { color: #1a0a00; }
+
+  /* -- DIVIDER -- */
+  .ledger-divider {
+    border: none;
+    border-top: 1px solid rgba(100,70,40,0.4);
+    margin: 8px 0;
+  }
+
+  /* -- SUBTOTAL -- */
+  .subtotal {
+    background: rgba(100,70,40,0.08);
+    border: 1px solid rgba(100,70,40,0.2);
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 11px;
+  }
+  .subtotal .total-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+  }
+  .subtotal .total-line.big {
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 2px solid rgba(100,70,40,0.4);
+    padding-top: 6px;
+    margin-top: 4px;
+  }
+
+  /* -- STAMPED/CEDUTO -- */
+  .ceduto-stamp {
+    text-align: center;
+    padding: 14px 0;
+    margin: 12px 0;
+    border: 3px double #8b0000;
+    background: rgba(139,0,0,0.04);
+  }
+  .ceduto-stamp .ceduto-text {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #8b0000;
+  }
+  .ceduto-stamp .ceduto-detail {
+    font-size: 11px;
+    color: #5a3020;
+    margin-top: 6px;
+  }
+
+  /* -- REDACTED -- */
+  .redacted {
+    background: #1a1a1a;
+    color: #1a1a1a;
+    padding: 0 4px;
+    border-radius: 1px;
+    user-select: none;
+  }
+
+  /* -- STRIKETHROUGH (cancellature) -- */
+  .cancelled { text-decoration: line-through; color: #8a7a6a; }
+
+  /* -- MARGINAL NOTE -- */
+  .margin-note {
+    font-style: italic;
+    font-size: 10.5px;
+    color: #5a4a3a;
+    padding: 4px 0 4px 16px;
+    border-left: 2px solid rgba(100,70,40,0.2);
+    margin: 4px 0;
+    line-height: 1.5;
+  }
+
+  /* -- CLOSED BADGE -- */
+  .closed-badge {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2a6020;
+    border: 1px solid #2a6020;
+    padding: 1px 8px;
+    margin-left: 8px;
+  }
+
+  /* -- SALDO LINE -- */
+  .saldo-line {
+    border-top: 2px solid rgba(100,70,40,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+    margin-top: 6px;
+    font-weight: bold;
+  }
+
+  /* -- LAST PAGE NOTE -- */
+  .last-page-note {
+    background: rgba(100,70,40,0.06);
+    border: 1px solid rgba(100,70,40,0.15);
+    padding: 12px 16px;
+    margin: 10px 0;
+    font-size: 11px;
+    line-height: 1.7;
+    font-style: italic;
+    color: #4a3a2a;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 22 — Registro Debiti di Noda Isamu</h2>
+  <p><strong>Quando consegnare:</strong> Dopo perquisizione della Casa da Te Kinkaku (mandato necessario, cassetto chiuso a chiave nell'ufficio sul retro) OPPURE se Noda collabora durante interrogatorio e indica dove si trova il registro.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>Registro manoscritto:</strong> Quaderno personale di Noda con i debiti dei clienti della bisca clandestina</li>
+    <li><strong>Voce ISHIDA M.:</strong> La voce piu lunga — debito da ¥2M (nov 93) esploso a ¥47M (ott 94) tra perdite al gioco e interessi usurari (20%)</li>
+    <li><strong>"CEDUTO A TERZI":</strong> Il debito e stato venduto a qualcuno (la yakuza di Oka Takeshi) per un importo oscurato</li>
+    <li><strong>Altri clienti:</strong> "Tanuki", "Kappa", "S.Y.", "Usagi", "T.K." — nomi in codice, tutti saldati. Solo Ishida e scritto in chiaro (il debito non e piu un problema di Noda)</li>
+    <li><strong>Note personali di Noda:</strong> Commenti sulla dipendenza del giudice ("completamente fuori controllo", "le mani gli tremano")</li>
+  </ul>
+  <p><strong>Indizi chiave:</strong></p>
+  <ul>
+    <li>"Ceduto a terzi" = venduto alla yakuza. Noda non dice a chi: ha paura</li>
+    <li>Interessi al 20% per Ishida (15% per gli altri) — tasso usurario maggiorato</li>
+    <li>I pagamenti contanti nel registro corrispondono ai prelievi ATM nell'estratto conto del giudice (handout 19)</li>
+    <li>Totale pagamenti a Noda: ~¥8.5M — compatibile con ¥20.7M di prelievi (il resto copre spese quotidiane)</li>
+    <li>L'ultima pagina rivela 3 debiti ceduti a terzi: la yakuza compra debiti grossi come leva di ricatto</li>
+  </ul>
+  <p><strong>Noda sotto pressione (interrogatorio):</strong></p>
+  <ul>
+    <li>Base: "Gente importante. Non posso dire di piu. Se parlo, mi ammazzano."</li>
+    <li>Con minacce/protezione: "Yakuza. Il clan di... no, non posso. Mi troveranno ovunque."</li>
+    <li>Successo critico Intimidire/Persuadere: "Oka. Si chiama Oka. E tutto quello che dico."</li>
+  </ul>
+</div>
+
+<!-- ============== IL QUADERNO ============== -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="notebook-header">
+    <div class="evidence-tag">SEQUESTRATO</div>
+    <div class="doc-label">Polizia Prefetturale di Kyoto — Reperto N. KNK-97-038</div>
+    <div class="doc-title">QUADERNO SEQUESTRATO</div>
+    <div class="doc-subtitle">Rinvenuto presso Casa da Te Kinkaku, ufficio retrostante, cassetto chiuso a chiave</div>
+  </div>
+
+  <div class="metadata-bar">
+    <div class="meta-item"><span class="meta-label">Tipo:</span> Taccuino formato B5, copertina nera consumata</div>
+    <div class="meta-item"><span class="meta-label">Pagine scritte:</span> ~60</div>
+    <div class="meta-item"><span class="meta-label">Soggetto:</span> NODA Isamu</div>
+  </div>
+
+  <!-- PRIMA PAGINA -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 1</div>
+    <div class="handwritten">
+      <div class="warning-text" style="margin-top:20px;">
+        Questo quaderno e proprieta di NODA Isamu.
+      </div>
+      <div class="warning-text">
+        Se lo trovi, rimettilo dove l'hai preso.
+      </div>
+      <div class="warning-text" style="margin-bottom:20px;">
+        Non sono affari tuoi.
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENTE: TANUKI -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 3</div>
+    <div class="handwritten">
+      <div class="client-header">"TANUKI" <span class="closed-badge">CHIUSO</span></div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Primo debito: mag 93</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Giu 93 perso a hanafuda</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;300.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 93 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;120.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 93 PAGATO TUTTO</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;920.000</div>
+      </div>
+
+      <div class="saldo-line">
+        <span>SALDO: &yen;0</span>
+        <span class="closed-badge">CHIUSO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENTE: KAPPA -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 4</div>
+    <div class="handwritten">
+      <div class="client-header">"KAPPA" <span style="font-weight:normal; font-size:10px; color:#6a5540;">(funzionario, zona Fushimi)</span> <span class="closed-badge">CHIUSO</span></div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 93 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.200.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Nov 93 interessi (15%)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;180.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Dic 93 pagamento parziale</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Gen 94 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;132.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Feb 94 hanafuda</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;400.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 94 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;212.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 94 PAGATO (venduto anello)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;1.624.000</div>
+      </div>
+
+      <div class="saldo-line">
+        <span>SALDO: &yen;0</span>
+        <span class="closed-badge">CHIUSO</span>
+      </div>
+      <div class="margin-note">(nota: moglie quasi scoperto, terrorizzato)</div>
+    </div>
+  </div>
+
+  <!-- CLIENTE: S.Y. -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 6</div>
+    <div class="handwritten">
+      <div class="client-header">"S.Y." <span style="font-weight:normal; font-size:10px; color:#6a5540;">(imprenditore edile)</span> <span class="closed-badge">CHIUSO</span></div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Gen 94 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;3.000.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Feb 94 interessi (15%)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;450.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 94 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 94 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;742.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mag 94 pagamento parziale</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;2.000.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Giu 94 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;553.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 94 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;800.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Ago 94 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;507.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 94 PAGATO TUTTO</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;5.552.000</div>
+      </div>
+
+      <div class="saldo-line">
+        <span>SALDO: &yen;0</span>
+        <span class="closed-badge">CHIUSO</span>
+      </div>
+      <div class="margin-note">(nota: ha ipotecato la casa, idiota)</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============== PAGINE ISHIDA (il pezzo forte) ============== -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="notebook-header" style="background:#4a1a0a; border-bottom-color:#8b3020;">
+    <div class="doc-label" style="color:#c06040;">Pagine 12-18</div>
+    <div class="doc-title">ISHIDA M.</div>
+    <div class="doc-subtitle">(magistrato — Higashiyama)</div>
+  </div>
+
+  <!-- 1994 DEBITI -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 12</div>
+    <div class="handwritten">
+
+      <div style="font-weight:bold; font-size:13px; text-align:center; padding:8px 0; letter-spacing:1px; border-bottom:2px solid rgba(100,70,40,0.4); margin-bottom:12px;">
+        ISHIDA M. — magistrato, Higashiyama
+      </div>
+
+      <div style="font-weight:bold; margin-bottom:8px; color:#4a3020;">PRIMO DEBITO:</div>
+      <div style="margin-bottom:4px;">Nov 93 — perso a mahjong, sala 2</div>
+      <div class="margin-note">"Vuole giocare il doppio per recuperare"</div>
+
+      <div class="ledger-entry" style="margin-top:8px;">
+        <div class="ledger-desc">Debito iniziale</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;2.000.000</div>
+      </div>
+
+      <hr class="ledger-divider">
+      <div style="font-weight:bold; text-align:center; letter-spacing:2px; padding:4px 0; color:#4a3020;">--- 1994 ---</div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Gen 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Gen 94 &nbsp;interessi (20%)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;400.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Feb 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Feb 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;2.200.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.120.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;1.000.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.800.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 94 &nbsp;hanafuda</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;600.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mag 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;1.224.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mag 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;500.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notebook-section">
+    <div class="page-marker">p. 14</div>
+    <div class="handwritten">
+      <div class="ledger-entry">
+        <div class="ledger-desc">Giu 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;3.500.000</div>
+      </div>
+
+      <div class="margin-note">
+        (nota: ha perso &yen;3.5M in una sera. Sudava.<br>
+        Voleva continuare a giocare ma non aveva<br>
+        piu soldi. Gli ho detto di tornare domani.)
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Giu 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;2.268.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;2.000.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;2.800.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Ago 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;2.482.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Ago 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;1.500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;4.500.000</div>
+      </div>
+
+      <div class="margin-note">
+        (nota: completamente fuori controllo.<br>
+        Gioca 3-4 sere a settimana. Le mani<br>
+        gli tremano. Beve troppo.)
+      </div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;3.279.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;1.000.000</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBTOTALE SETTEMBRE 94 -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 16</div>
+    <div class="handwritten">
+
+      <div class="subtotal">
+        <div style="font-weight:bold; text-align:center; letter-spacing:2px; margin-bottom:8px; font-size:11px;">SUBTOTALE SETTEMBRE 94</div>
+        <div class="total-line">
+          <span>Debiti accumulati</span>
+          <span>&yen;26.394.000</span>
+        </div>
+        <div class="total-line">
+          <span>Pagamenti ricevuti</span>
+          <span style="color:#2a6020;">- &yen;6.500.000</span>
+        </div>
+        <div class="total-line">
+          <span>SALDO DOVUTO</span>
+          <span>&yen;19.894.000</span>
+        </div>
+        <div class="total-line">
+          <span>+ interessi maturati</span>
+          <span>&yen;10.773.000</span>
+        </div>
+        <div class="total-line big">
+          <span>TOTALE ESIGIBILE</span>
+          <span>&yen;30.667.000</span>
+        </div>
+      </div>
+
+      <div class="ledger-entry" style="margin-top:12px;">
+        <div class="ledger-desc">Set 94 &nbsp;pagamento contanti</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;3.000.000</div>
+      </div>
+
+      <div class="margin-note">
+        (nota: ha portato &yen;3M in contanti.<br>
+        "Le ultime" ha detto. Non ci credo.)
+      </div>
+
+      <div class="ledger-entry" style="margin-top:8px;">
+        <div class="ledger-desc">Ott 94 &nbsp;mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;8.000.000</div>
+      </div>
+
+      <div class="margin-note">
+        (nota: ha giocato come un pazzo. <span class="cancelled">Ha perso tutto in</span> 3 sere di fila. Debito ora ingestibile. Non puo piu pagare.)
+      </div>
+
+      <div class="ledger-entry" style="margin-top:8px;">
+        <div class="ledger-desc">Ott 94 &nbsp;interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;7.133.000</div>
+      </div>
+
+      <hr class="ledger-divider" style="border-top-width:2px;">
+
+      <div class="subtotal" style="background:rgba(139,0,0,0.05); border-color:rgba(139,0,0,0.2);">
+        <div style="font-weight:bold; text-align:center; letter-spacing:2px; margin-bottom:8px; font-size:11px; color:#8b0000;">TOTALE OTTOBRE 1994</div>
+        <div class="total-line">
+          <span>DEBITO COMPLESSIVO</span>
+          <span>&yen;42.800.000</span>
+        </div>
+        <div class="total-line">
+          <span>+ interessi ottobre</span>
+          <span>&yen;4.200.000</span>
+        </div>
+        <div class="total-line big" style="border-top-color:rgba(139,0,0,0.4);">
+          <span>TOTALE</span>
+          <span style="color:#8b0000; font-size:15px;">&yen;47.000.000</span>
+        </div>
+      </div>
+
+      <!-- IL TIMBRO CEDUTO -->
+      <div class="ceduto-stamp">
+        <div class="ceduto-text">C E D U T O</div>
+        <div class="ceduto-detail">
+          Debito ceduto a terzi — ottobre 1994<br>
+          Valore cessione: &yen;47.000.000<br>
+          Ricevuto: <span class="redacted">&yen;XXXXXXXXXXX</span><br>
+          <span style="font-style:italic;">(il resto non sono affari di nessuno)</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; font-weight:bold; font-size:13px; padding:8px 0; letter-spacing:1px; color:#4a3020;">
+        CHIUSO. Non e piu un mio problema.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============== ALTRI CLIENTI DOPO ISHIDA ============== -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="notebook-header">
+    <div class="doc-label">Pagine 20-22</div>
+    <div class="doc-title">ALTRI CLIENTI</div>
+    <div class="doc-subtitle">Voci successive alla chiusura del conto Ishida</div>
+  </div>
+
+  <!-- CLIENTE: USAGI -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 20</div>
+    <div class="handwritten">
+      <div class="client-header">"USAGI" <span style="font-weight:normal; font-size:10px; color:#6a5540;">(impiegato banca, zona Arashiyama)</span> <span class="closed-badge">CHIUSO</span></div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Dic 94 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;800.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Gen 95 interessi (15%)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;120.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Feb 95 mahjong</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;400.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 95 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;198.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 95 PAGATO TUTTO</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;1.518.000</div>
+      </div>
+
+      <div class="saldo-line">
+        <span>SALDO: &yen;0</span>
+        <span class="closed-badge">CHIUSO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENTE: T.K. -->
+  <div class="notebook-section">
+    <div class="page-marker">p. 21</div>
+    <div class="handwritten">
+      <div class="client-header">"T.K." <span style="font-weight:normal; font-size:10px; color:#6a5540;">(poliziotto in pensione)</span> <span class="closed-badge">CHIUSO</span></div>
+
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mar 95 hanafuda</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;600.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Apr 95 interessi (15%)</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;90.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Mag 95 hanafuda</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;350.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Giu 95 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;156.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Lug 95 pagamento parziale</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;400.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Ago 95 interessi</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount debt">&yen;119.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Set 95 pagamento parziale</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;500.000</div>
+      </div>
+      <div class="ledger-entry">
+        <div class="ledger-desc">Ott 95 PAGATO resto</div>
+        <div class="ledger-dots"></div>
+        <div class="ledger-amount payment">- &yen;415.000</div>
+      </div>
+
+      <div class="saldo-line">
+        <span>SALDO: &yen;0</span>
+        <span class="closed-badge">CHIUSO</span>
+      </div>
+      <div class="margin-note">
+        (nota: gli trema la voce ogni volta che viene. Ha paura della moglie piu che di me.)
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============== ULTIMA PAGINA ============== -->
+<div class="document">
+
+  <div class="notebook-header" style="background:#2a1a0a;">
+    <div class="doc-label">Ultima pagina scritta</div>
+    <div class="doc-title">NOTA PERSONALE</div>
+  </div>
+
+  <div class="notebook-section">
+    <div class="page-marker">p. 58</div>
+    <div class="handwritten">
+
+      <div class="last-page-note">
+        <div style="font-weight:bold; margin-bottom:8px; font-style:normal;">Totale crediti ceduti a terzi: 3</div>
+
+        <div style="padding:3px 0;">- ISHIDA M. (ott 94) — &yen;47.000.000</div>
+        <div style="padding:3px 0;">- <span class="redacted">XXXXXXXX</span> (mar 95) — &yen; <span class="redacted">XXXXXXXXX</span></div>
+        <div style="padding:3px 0;">- <span class="redacted">XXXXXXXX</span> (ago 96) — &yen; <span class="redacted">XXXXXXXXX</span></div>
+      </div>
+
+      <div style="margin-top:16px; padding:14px; border:1px dashed rgba(100,70,40,0.3); font-style:italic; color:#5a4a3a; line-height:1.8;">
+        Nota per me stesso:<br><br>
+        Quando il debito diventa troppo grosso,<br>
+        vendi. Non cercare di riscuotere da solo.<br>
+        Quelli la hanno i mezzi. Tu no.
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

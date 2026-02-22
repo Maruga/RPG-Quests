@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapporto Autoptico — 1997-0412-A</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a2e1a; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #6b8e6b; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #6b8e6b; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #a0c8a0; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-size: 11px; color: #c0d8c0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #6b8e6b; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a2e1a;
+    border-bottom: 2px solid #1a2e1a; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAILS ── */
+  .subsection { margin-bottom: 12px; }
+  .subsection-title { font-weight: bold; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── HIGHLIGHT ── */
+  .highlight {
+    background: #fff8e0; border-left: 3px solid #c0a060; padding: 2px 6px; font-weight: bold;
+  }
+  .critical {
+    background: #ffe0e0; border-left: 3px solid #8b0000; padding: 2px 6px; font-weight: bold;
+  }
+
+  /* ── TOX TABLE ── */
+  .tox-table { width: 100%; border-collapse: collapse; font-size: 10.5px; margin: 8px 0; }
+  .tox-table th {
+    background: #e8f0e8; text-align: left; padding: 6px 10px;
+    border: 1px solid #999; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #333;
+  }
+  .tox-table td { padding: 6px 10px; border: 1px solid #bbb; vertical-align: top; }
+  .tox-table tr:nth-child(even) { background: #f8faf8; }
+  .tox-letàle { color: #8b0000; font-weight: bold; }
+
+  /* ── CONCLUSION BOX ── */
+  .conclusion-box {
+    border: 2px solid #333; padding: 12px 16px; margin: 10px 0; text-align: center;
+  }
+  .conclusion-box .verdict {
+    font-size: 18px; font-weight: bold; letter-spacing: 4px; color: #8b0000;
+    border: 2px solid #8b0000; display: inline-block; padding: 6px 24px; margin: 8px 0;
+  }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #f0ede6; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 50%;
+    transform: rotate(-12deg);
+    border: 3px solid rgba(0,100,0,0.3); border-radius: 50%;
+    width: 75px; height: 75px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(0,100,0,0.3); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── ALLEGATI ── */
+  .allegati-list { list-style: none; padding: 0; }
+  .allegati-list li { padding: 3px 0 3px 20px; position: relative; font-size: 10.5px; }
+  .allegati-list li::before { content: "\25A0"; position: absolute; left: 4px; color: #1a2e1a; font-size: 8px; top: 5px; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 02 — Rapporto Autopsia</h2>
+  <p><strong>Quando consegnare:</strong> 24-48 ore dopo la morte (Giorno 2-3 dell'indagine). I giocatori lo richiedono o viene consegnato d'ufficio dopo la richiesta autopsia del Rapporto Scena del Crimine.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>Tetrodotossina (TTX)</strong> nel sangue a 48 ng/mL (letàle sopra 10 ng/mL) — punta dritta al fugu avvelenato</li>
+    <li><strong>Ustioni elettriche</strong> su pollice e indice destro — compatibili con scarica da oggetto cilindrico (la penna)</li>
+    <li><strong>Due cause concorrenti:</strong> avvelenamento + elettrocuzione — il twist centrale del mistero</li>
+    <li>Emorragie petecchiali nel miocardio = fibrillazione ventricolare</li>
+    <li>Contenuto gastrico: residui di pesce, riso, verdure (la cena all'evento)</li>
+    <li>Modalita del decesso: OMICIDIO con premeditazione</li>
+  </ul>
+  <p><strong>Domande che dovrebbe generare nei giocatori:</strong></p>
+  <ul>
+    <li>Dove ha mangiato fugu? (porta all'evento alla Galleria Nijo)</li>
+    <li>Cos'ha toccato che poteva dare una scarica elettrica? (porta alla penna OBJ-06)</li>
+    <li>Due metodi diversi = due assassini? (Yui = veleno, Sakura = penna)</li>
+    <li>Il veleno da solo lo avrebbe ucciso in 4-6 ore — la penna ha accelerato la morte</li>
+  </ul>
+  <p><strong>Cosa NON contiene (esce solo con indagine):</strong></p>
+  <ul>
+    <li>Non dice dove fosse l'evento — i PG devono scoprirlo dall'autista o dal maggiordomo</li>
+    <li>Non identifica l'oggetto che ha dato la scarica — i PG devono collegare le ustioni alla penna</li>
+    <li>Non dice chi ha preparato il fugu — serve interrogare, registri PS, taxi, ecc.</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="org-sub">Istituto di Medicina Legale</div>
+    <div class="doc-type">RAPPORTO AUTOPTICO</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">N. Rapporto</div><div class="value">1997-0412-A</div></div>
+    <div class="field"><div class="label">Data esame</div><div class="value">10 aprile 1997</div></div>
+    <div class="field"><div class="label">Ora inizio</div><div class="value">09:00</div></div>
+    <div class="field"><div class="label">Ora fine</div><div class="value">14:30</div></div>
+    <div class="field"><div class="label">Medico legale</div><div class="value">Dott. Nakamura Kenji</div></div>
+    <div class="field"><div class="label">Assistente</div><div class="value">Dott.ssa Yamada Eri</div></div>
+  </div>
+
+  <!-- DATI DEL DECEDUTO -->
+  <div class="section">
+    <div class="section-title">Dati del deceduto</div>
+    <div class="subsection">
+      <ul class="detail-list">
+        <li><strong>Nome:</strong> ISHIDA Makoto</li>
+        <li><strong>Data di nascita:</strong> 12 maggio 1952</li>
+        <li><strong>Eta:</strong> 45 anni</li>
+        <li><strong>Sesso:</strong> Maschile</li>
+        <li><strong>Professione:</strong> Giudice, Tribunale Distrettuale di Kyoto</li>
+        <li><strong>Indirizzo:</strong> Via Higashiyama 45, Kyoto</li>
+      </ul>
+    </div>
+    <div class="subsection">
+      <div class="subsection-title">Circostanze</div>
+      <ul class="detail-list">
+        <li><strong>Data presunta decesso:</strong> 8-9 aprile 1997</li>
+        <li><strong>Ora presunta decesso:</strong> Tra le 23:00 e le 24:00</li>
+        <li><strong>Luogo ritrovamento:</strong> Studio privato, residenza</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAME ESTERNO -->
+  <div class="section">
+    <div class="section-title">Esame esterno</div>
+
+    <div class="subsection">
+      <div class="subsection-title">Dati antropometrici</div>
+      <ul class="detail-list">
+        <li><strong>Corporatura:</strong> Media, leggermente sovrappeso</li>
+        <li><strong>Altezza:</strong> 172 cm</li>
+        <li><strong>Peso:</strong> 78 kg</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Colorazione cutanea</div>
+      <ul class="detail-list">
+        <li>Cianosi periorale lieve (labbra e zona circumorale)</li>
+        <li>Cianosi ungueale (letti ungueali)</li>
+        <li>Livor mortis: dorsale, compatibile con posizione supina</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Segni particolari</div>
+      <div class="note-box" style="background:#fff8e0; border-color:#c0a060;">
+        <strong>Mano destra, superficie palmare:</strong>
+        <ul class="detail-list" style="margin-top:4px;">
+          <li>Ustione di I-II grado su pollice (1,2 cm diametro)</li>
+          <li>Ustione di I-II grado su indice (0,8 cm diametro)</li>
+          <li><span class="highlight">Pattern: compatibile con SCARICA ELETTRICA</span></li>
+          <li>Disposizione: tipica da contatto con oggetto cilindrico</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Segni negativi</div>
+      <ul class="detail-list">
+        <li>Nessun segno di colluttazione</li>
+        <li>Nessuna ferita da arma bianca o da fuoco</li>
+        <li>Nessun segno di strangolamento</li>
+        <li>Nessun trauma contusivo</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAME INTERNO -->
+  <div class="section">
+    <div class="section-title">Esame interno</div>
+
+    <div class="subsection">
+      <div class="subsection-title">Apparato cardiovascolare</div>
+      <ul class="detail-list">
+        <li>Cuore: 380 g (nella norma)</li>
+        <li>Coronarie: aterosclerosi lieve</li>
+        <li><span class="highlight">Miocardio: emorragie petecchiali diffuse</span></li>
+        <li><span class="highlight">Pattern compatibile con FIBRILLAZIONE VENTRICOLARE</span></li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Apparato respiratorio</div>
+      <ul class="detail-list">
+        <li>Polmoni: edema polmonare lieve</li>
+        <li>Vie aeree: libere</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Apparato digerente</div>
+      <ul class="detail-list">
+        <li>Stomaco: contenuto alimentare parzialmente digerito</li>
+        <li>Residui identificabili: pesce (tipo non determinabile), riso, verdure</li>
+        <li>Ultima assunzione cibo: 2-4 ore prima del decesso</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Sistema nervoso</div>
+      <ul class="detail-list">
+        <li>Encefalo: nella norma</li>
+        <li>Nessun segno di emorragia o trauma</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAMI TOSSICOLOGICI -->
+  <div class="section" style="position:relative;">
+    <div class="section-title" style="color:#8b0000; border-color:#8b0000;">Esami tossicologici</div>
+
+    <div class="subsection">
+      <div class="subsection-title">Campioni e metodo</div>
+      <ul class="detail-list">
+        <li><strong>Campione:</strong> Sangue periferico, urina, contenuto gastrico</li>
+        <li><strong>Metodo:</strong> Cromatografia liquida ad alta prestazione (HPLC), Spettrometria di massa</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Risultati</div>
+      <table class="tox-table">
+        <thead>
+          <tr>
+            <th>Sostanza</th>
+            <th>Concentrazione</th>
+            <th>Range tossico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tox-letàle">TETRODOTOSSINA (TTX)</td>
+            <td class="tox-letàle">48 ng/mL</td>
+            <td class="tox-letàle">&gt;10 ng/mL letàle</td>
+          </tr>
+          <tr>
+            <td>Etanolo</td>
+            <td>0,02%</td>
+            <td>Trascurabile</td>
+          </tr>
+          <tr>
+            <td>Altre sostanze</td>
+            <td>Non rilevate</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box" style="background:#ffe0e0; border-color:#8b0000; border-width:2px;">
+      <strong style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8b0000;">Nota sulla tetrodotossina:</strong>
+      <p style="margin-top:6px;">Neurotossina presente in alcune specie di pesce palla (fugu). Blocca i canali del sodio voltaggio-dipendenti.</p>
+      <p style="margin-top:4px;"><strong>Effetti:</strong> parestesia, paralisi muscolare, depressione respiratoria, bradicardia, arresto cardiaco.</p>
+      <p style="margin-top:4px;"><strong>Dose letàle media:</strong> 1-2 mg per ingestione.</p>
+      <p style="margin-top:4px; color:#8b0000; font-weight:bold;">Concentrazione rilevata: SIGNIFICATIVAMENTE SUPERIORE alla dose letàle.</p>
+    </div>
+
+    <div class="timbro">ISTITUTO<br>MED. LEG.<br>京都大学</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CONCLUSIONI -->
+  <div class="section">
+    <div class="section-title">Conclusioni</div>
+
+    <div class="subsection">
+      <p style="margin-bottom:8px;"><strong>CAUSA PRIMARIA DEL DECESSO:</strong></p>
+      <p style="padding-left:12px;">Arresto cardiaco da fibrillazione ventricolare</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Fattore concorrente 1 — Avvelenamento da tetrodotossina</div>
+      <p style="padding-left:12px; font-size:10.5px;">La concentrazione ematica indica ingestione di quantita letàle di TTX, presumibilmente tramite consumo di fugu preparato con organi tossici (fegato/ovaie). La TTX causa bradicardia progressiva e deprime la conduzione cardiaca.</p>
+    </div>
+
+    <div class="subsection">
+      <div class="subsection-title">Fattore concorrente 2 — Elettrocuzione</div>
+      <p style="padding-left:12px; font-size:10.5px;">Le ustioni sulla mano destra sono compatibili con scarica elettrica da contatto con oggetto conduttore. Voltaggio stimato: elevato (&gt;1000 V) con basso amperaggio. La scarica ha probabilmente indotto fibrillazione in un cuore già compromesso dalla TTX.</p>
+    </div>
+
+    <div class="note-box">
+      <strong style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555;">Interazione dei fattori:</strong>
+      <p style="margin-top:6px;">La tetrodotossina aveva già indebolito il sistema cardiaco (bradicardia, alterazioni della conduzione). La scarica elettrica ha provocato fibrillazione ventricolare in un cuore vulnerabile.</p>
+      <p style="margin-top:6px;">In assenza della scarica elettrica, il decesso sarebbe probabilmente avvenuto comunque entro 4-6 ore per paralisi respiratoria da TTX.</p>
+    </div>
+
+    <div class="conclusion-box">
+      <p style="font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#555; margin-bottom:4px;">Modalita del decesso</p>
+      <div class="verdict">OMICIDIO</div>
+      <p style="margin-top:8px; font-size:10.5px;">La combinazione di avvelenamento deliberato e dispositivo elettrico indica premeditazione.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ALLEGATI -->
+  <div class="section">
+    <div class="section-title">Allegati</div>
+    <ul class="allegati-list">
+      <li>A1 — Fotografie esame esterno (12)</li>
+      <li>A2 — Fotografie esame interno (8)</li>
+      <li>A3 — Referti tossicologici completi</li>
+      <li>A4 — Istologia cardiaca</li>
+    </ul>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div style="font-size:9px; color:#666; text-transform:uppercase; letter-spacing:1px;">Rapporto redatto da:</div>
+      <div style="font-weight:bold;">Dott. Nakamura Kenji</div>
+      <div style="font-size:9px; color:#666;">Istituto di Medicina Legale</div>
+      <div style="font-size:9px; color:#666;">Ospedale Universitario di Kyoto</div>
+      <div style="font-size:9px; color:#666; margin-top:4px;">Kyoto, 10 aprile 1997</div>
+    </div>
+    <div class="firma-line">Firma del medico legale</div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fascicolo Penale — MORI Riku</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header .gm-chain {
+    margin: 10px 0; padding: 8px 12px; background: rgba(139,0,0,0.15);
+    border-left: 3px solid #8b0000; font-family: "Courier New", monospace; font-size: 11px; line-height: 1.6;
+  }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; color: #ccc; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+  .doc-header .doc-subtitle {
+    font-size: 10px; color: #ccc; margin-top: 6px; letter-spacing: 1px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAILS ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── CRIMINAL RECORD TABLE ── */
+  .record-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .record-table th {
+    background: #1a1a2e; color: white; text-align: left; padding: 6px 10px;
+    font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+    border: 1px solid #333;
+  }
+  .record-table td {
+    padding: 6px 10px; border: 1px solid #ddd; vertical-align: top;
+  }
+  .record-table tr:nth-child(even) { background: #fafaf6; }
+  .record-table .status-amm {
+    font-size: 9px; font-weight: bold; color: #666; letter-spacing: 0.5px;
+    padding: 2px 6px; background: #f0ede6; display: inline-block;
+  }
+  .record-table .status-cond {
+    font-size: 9px; font-weight: bold; color: #8b0000; letter-spacing: 0.5px;
+    padding: 2px 6px; background: #fff0f0; display: inline-block;
+  }
+  .record-table .status-active {
+    font-size: 9px; font-weight: bold; color: #fff; letter-spacing: 0.5px;
+    padding: 2px 6px; background: #8b0000; display: inline-block;
+  }
+
+  /* ── CONVICTION DETAIL ── */
+  .conviction-detail {
+    margin: 10px 0; padding: 12px 16px;
+    background: #f8f6f0; border: 1px solid #ccc;
+  }
+  .conviction-detail .conv-field {
+    padding: 3px 0; font-size: 10.5px;
+  }
+  .conviction-detail .conv-label {
+    font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  /* ── STATUS BOX ── */
+  .status-box {
+    margin: 8px 0; padding: 10px 14px;
+    border: 2px solid #333; font-size: 11px; text-align: center;
+    font-weight: bold; letter-spacing: 1px;
+  }
+  .status-box.detenuto {
+    background: #fff0f0; border-color: #8b0000; color: #8b0000;
+  }
+  .status-box .status-detail {
+    font-weight: normal; font-size: 10px; color: #555; margin-top: 4px; letter-spacing: 0;
+  }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    margin: 10px 0; padding: 10px 14px;
+    background: #f8f6f0; border: 1px solid #ccc;
+    font-size: 10.5px;
+  }
+  .note-box .note-label {
+    font-weight: bold; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px;
+  }
+
+  /* ── COMPLICE BOX ── */
+  .complice-box {
+    margin: 10px 0; padding: 10px 14px;
+    background: #f8f6f0; border: 1px solid #ccc;
+    font-size: 11px;
+  }
+  .complice-box .complice-label {
+    font-size: 9px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px;
+  }
+  .complice-box .complice-name { font-weight: bold; font-size: 12px; margin-bottom: 4px; }
+
+  /* ── AGGRAVANTE BOX ── */
+  .aggravante-box {
+    margin: 10px 0; padding: 10px 14px;
+    background: #fff8e6; border: 1px solid #c0a060;
+    font-size: 10.5px;
+  }
+  .aggravante-box .agg-label {
+    font-weight: bold; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px;
+  }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    font-size: 10.5px; text-align: center;
+  }
+  .firma .firma-org { font-weight: bold; margin-bottom: 2px; }
+  .firma .firma-ente { font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── REQUEST FIELDS ── */
+  .request-fields {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #ddd; font-size: 10px;
+  }
+  .request-fields .req-field {
+    padding: 6px 16px; border-right: 1px solid #ddd;
+  }
+  .request-fields .req-field:last-child { border-right: none; }
+  .request-fields .req-label {
+    font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .request-fields .req-value { color: #999; }
+</style>
+</head>
+<body>
+
+<!-- ════════════ GM HEADER (non si stampa) ════════════ -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 23 — Scheda Penale Mori Riku</h2>
+
+  <p><strong>Quando consegnare:</strong> Quando i PG cercano condanne per "pestaggio febbraio 1997", "Higashiyama aggressione", o seguono la pista dal rapporto Fukuda (stessa data: 3/2/1997).</p>
+
+  <p><strong>Come ottenerlo:</strong></p>
+  <ul>
+    <li><strong>Database della polizia</strong>: ricerca per "pestaggio febbraio 1997", "Higashiyama aggressione", "lesioni personali aggravate 1997"</li>
+    <li><strong>Collegamento con rapporto Fukuda</strong>: la data 3/2/1997 corrisponde — cercando condanne per quella data si trova Mori</li>
+    <li><strong>Contatto in polizia</strong>: "per quel pestaggio qualcuno è in galera"</li>
+    <li>Difficoltà: Media — richiede ricerca incrociata con la data dell'aggressione</li>
+  </ul>
+
+  <p><strong>Collegamento con l'aggressione a Yui:</strong></p>
+  <ul>
+    <li><strong>Data del fatto</strong>: 3 febbraio 1997 = stessa data del rapporto Fukuda</li>
+    <li><strong>Luogo</strong>: Zona Higashiyama = stessa zona del rapporto Fukuda</li>
+    <li><strong>Tipo</strong>: pestaggio premeditato a scopo intimidatorio = stessa descrizione</li>
+    <li>Se i PG hanno entrambi i documenti, il collegamento è immediato</li>
+  </ul>
+
+  <p><strong>La catena completa:</strong></p>
+  <div class="gm-chain">
+    OKA (boss yakuza) &rarr; ordina il pestaggio<br>
+    &nbsp;&nbsp;&darr;<br>
+    MORI Riku + KUDO Masa &rarr; eseguono l'aggressione (3/2/97)<br>
+    &nbsp;&nbsp;&darr;<br>
+    Vittima = YUI (con documenti di Sakura)<br>
+    &nbsp;&nbsp;&darr;<br>
+    "Dì a tuo marito di stare attento" &rarr; diretto al giudice Ishida
+  </div>
+
+  <p><strong>Visitare Mori in carcere:</strong></p>
+  <ul>
+    <li>Serve permesso di visita (contatti in polizia o avvocato)</li>
+    <li>Mori è reticente, ha paura — serve intimidazione/persuasione</li>
+    <li>Se convinto: "Dovevamo solo spaventare la moglie del giudice. Non sapevamo nemmeno chi fosse davvero."</li>
+    <li><strong>CONSEGUENZA MORTALE</strong>: Se Mori parla, entro 24 ore viene trovato morto in cella (apparente suicidio, in realtà eliminato da Oka)</li>
+  </ul>
+
+  <p><strong>Kudo Masa:</strong> Il complice ha la pena sospesa, è libero. Quasi impossibile da interrogare: senza indirizzo fisso, scompare se rintracciato.</p>
+
+  <p><strong>Indizi per giocatori attenti:</strong></p>
+  <ul>
+    <li>La <strong>vittima non è specificata</strong> nel fascicolo pubblico — chi ha chiesto la protezione dei dati?</li>
+    <li>L'<strong>aggravante mafiosa sospettata</strong> conferma il coinvolgimento yakuza</li>
+    <li>I "<strong>sospetti collegamenti con clan Yamaguchi-kai</strong>" sono la pista che porta a Oka</li>
+  </ul>
+</div>
+
+<!-- ════════════ DOCUMENTO STAMPABILE ════════════ -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察</div>
+    <div class="org-sub">UFFICIO CASELLARIO GIUDIZIALE</div>
+    <div class="doc-type">ESTRATTO FASCICOLO PENALE</div>
+    <div class="doc-subtitle">Consultazione riservata — Solo personale autorizzato</div>
+  </div>
+
+  <div class="request-fields">
+    <div class="req-field">
+      <div class="req-label">Data estrazione</div>
+      <div class="req-value">____/____/1997</div>
+    </div>
+    <div class="req-field">
+      <div class="req-label">Richiesto da</div>
+      <div class="req-value">________________________________</div>
+    </div>
+    <div class="req-field">
+      <div class="req-label">Motivo</div>
+      <div class="req-value">________________________________</div>
+    </div>
+  </div>
+
+  <!-- DATI ANAGRAFICI -->
+  <div class="section">
+    <div class="section-title">Dati anagrafici</div>
+    <ul class="detail-list">
+      <li><strong>Cognome e Nome:</strong> MORI Riku (森 陸)</li>
+      <li><strong>Data di nascita:</strong> 22 novembre 1968</li>
+      <li><strong>Luogo di nascita:</strong> Kyoto, Prefettura di Kyoto</li>
+      <li><strong>Cittadinanza:</strong> Giapponese</li>
+      <li><strong>Stato civile:</strong> Celibe</li>
+      <li><strong>Ultimo indirizzo noto:</strong> N/D — Soggetto attualmente detenuto</li>
+    </ul>
+
+    <div class="status-box detenuto" style="margin-top:10px;">
+      STATO ATTUALE: DETENUTO
+      <div class="status-detail">
+        Carcere Prefetturale di Kyoto — Ala B, Cella 23<br>
+        In esecuzione pena dal: marzo 1997
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PRECEDENTI PENALI -->
+  <div class="section">
+    <div class="section-title">Precedenti penali</div>
+
+    <table class="record-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">N.</th>
+          <th style="width:60px;">Anno</th>
+          <th>Reato</th>
+          <th style="width:150px;">Esito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1989</td>
+          <td>Rissa</td>
+          <td><span class="status-amm">AMMONIZIONE</span><br><span style="font-size:9px; color:#888;">(non processato)</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1991</td>
+          <td>Lesioni personali aggravate</td>
+          <td><span class="status-cond">CONDANNA</span><br>1 anno sosp.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>1993</td>
+          <td>Estorsione aggravata</td>
+          <td><span class="status-cond">CONDANNA</span><br>2 anni recl.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>1997</td>
+          <td>Lesioni personali aggravate <strong>(ATTUALE)</strong></td>
+          <td><span class="status-active">IN CORSO</span><br>3 anni recl.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DETTAGLIO CONDANNA N. 2 — 1991 -->
+  <div class="section">
+    <div class="section-title">Dettaglio Condanna N. 2 — 1991</div>
+    <div class="conviction-detail">
+      <div class="conv-field"><span class="conv-label">Reato:</span> Lesioni personali aggravate (Art. 204 C.P.)</div>
+      <div class="conv-field"><span class="conv-label">Tribunale:</span> Tribunale Distrettuale di Kyoto</div>
+      <div class="conv-field"><span class="conv-label">Pena:</span> 1 anno di reclusione con sospensione condizionale</div>
+      <div class="conv-field"><span class="conv-label">Note:</span> Aggressione ai danni di un commerciante. Sospetti collegamenti con attività estorsive, non provati.</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DETTAGLIO CONDANNA N. 3 — 1993 -->
+  <div class="section">
+    <div class="section-title">Dettaglio Condanna N. 3 — 1993</div>
+    <div class="conviction-detail">
+      <div class="conv-field"><span class="conv-label">Reato:</span> Estorsione aggravata (Art. 249 C.P.)</div>
+      <div class="conv-field"><span class="conv-label">Tribunale:</span> Tribunale Distrettuale di Kyoto</div>
+      <div class="conv-field"><span class="conv-label">Pena:</span> 2 anni di reclusione</div>
+      <div class="conv-field"><span class="conv-label">Pena espiata:</span> rilasciato 1995</div>
+      <div class="conv-field"><span class="conv-label">Note:</span> Estorsione sistematica ai danni di esercizi commerciali nella zona di Gion. Sospetta appartenenza a organizzazione criminale — non provata in sede processuale.</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DETTAGLIO CONDANNA N. 4 — 1997 (ATTUALE) -->
+  <div class="section" style="position:relative;">
+    <div class="section-title" style="color:#8b0000; border-bottom-color:#8b0000;">Dettaglio Condanna N. 4 — 1997 (Attuale)</div>
+
+    <div class="conviction-detail" style="border-color:#8b0000; border-width:2px;">
+      <div class="conv-field"><span class="conv-label">Reato:</span> Lesioni personali aggravate (Art. 204 C.P.)</div>
+      <div class="conv-field"><span class="conv-label">Tipo:</span> Pestaggio / aggressione premeditata</div>
+      <div class="conv-field"><span class="conv-label">Tribunale:</span> Tribunale Distrettuale di Kyoto</div>
+      <div class="conv-field"><span class="conv-label">N. Procedimento:</span> TDK-1997-0198</div>
+      <div class="conv-field"><span class="conv-label">Data sentenza:</span> 7 marzo 1997</div>
+    </div>
+
+    <table class="record-table" style="margin-top:10px;">
+      <thead>
+        <tr>
+          <th style="width:50%;">Campo</th>
+          <th>Dettaglio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pena comminata</td>
+          <td><strong>3 (tre) anni di reclusione</strong></td>
+        </tr>
+        <tr>
+          <td>Istituto</td>
+          <td>Carcere Prefetturale di Kyoto, Ala B</td>
+        </tr>
+        <tr>
+          <td>Data inizio pena</td>
+          <td>10 marzo 1997</td>
+        </tr>
+        <tr>
+          <td>Fine pena prevista</td>
+          <td>9 marzo 2000</td>
+        </tr>
+        <tr>
+          <td><strong>Data del fatto</strong></td>
+          <td><strong>3 febbraio 1997</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Luogo</strong></td>
+          <td><strong>Zona Higashiyama-ku, Kyoto</strong></td>
+        </tr>
+        <tr>
+          <td>Vittima</td>
+          <td><em>Non specificata nel fascicolo pubblico</em><br><span style="font-size:9px; color:#888;">(dati protetti su richiesta della parte offesa)</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:14px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Descrizione</div>
+      <p style="font-size:10.5px; line-height:1.6;">
+        L'imputato, in concorso con altro soggetto (vedi nota), ha aggredito la vittima in orario serale,
+        causando lesioni personali giudicate guaribili in 15 giorni. L'aggressione risulta premeditata
+        e finalizzata a scopo intimidatorio.
+      </p>
+    </div>
+
+    <div style="margin-top:12px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Aggravanti</div>
+      <ul class="detail-list">
+        <li>Premeditazione</li>
+        <li>Concorso di persone</li>
+        <li>Recidiva specifica</li>
+      </ul>
+    </div>
+
+    <div class="aggravante-box" style="margin-top:12px;">
+      <div class="agg-label">Nota</div>
+      Aggravante mafiosa (Art. 416-bis) sospettata ma <strong>NON PROVATA</strong> in sede processuale.
+      L'accusa non ha fornito elementi sufficienti per dimostrare il legame con organizzazione criminale.
+    </div>
+
+    <!-- COMPLICE -->
+    <div class="complice-box" style="margin-top:12px;">
+      <div class="complice-label">Complice</div>
+      <div class="complice-name">KUDO Masa (工藤 雅)</div>
+      <ul class="detail-list">
+        <li>Processato separatamente — Proc. TDK-1997-0199</li>
+        <li>Esito: CONDANNA — 2 anni con sospensione condizionale</li>
+        <li>Stato: LIBERO</li>
+      </ul>
+    </div>
+
+    <div class="timbro">KYOTO<br>PD<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SEGNALAZIONI -->
+  <div class="section">
+    <div class="section-title">Segnalazioni di polizia</div>
+    <ul class="detail-list">
+      <li>Sospetti collegamenti con criminalità organizzata (clan Yamaguchi-kai) — <strong>MAI PROVATI</strong></li>
+      <li>Frequentatore noto di locali nella zona di Gion</li>
+      <li>Soggetto classificato come PERICOLOSO (tendenza alla violenza, recidiva)</li>
+      <li>Nessuna collaborazione con le forze dell'ordine</li>
+    </ul>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div class="firma-org">Estratto conforme — Ufficio Casellario Giudiziale</div>
+    <div class="firma-ente">Polizia Prefetturale di Kyoto</div>
+  </div>
+
+</div>
+
+</body>
+</html>

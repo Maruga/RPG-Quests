@@ -96,25 +96,22 @@
 ║                    ELEMENTI REPERTATI                                ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
-║   REP-001: Penna stilografica                                        ║
-║            Marca: Pilot Custom 845                                   ║
-║            Colore: Nero/oro                                          ║
-║            Posizione: 15 cm dalla mano destra                        ║
-║            Note: Peso anomalo (?)                                    ║
-║            >>> SEQUESTRATA PER ANALISI <<<                          ║
+║   Scena intatta. Nessun oggetto rimosso.                             ║
+║   In attesa di esame da parte degli investigatori.                   ║
 ║                                                                      ║
-║   REP-002: Foglio di carta                                           ║
-║            Contenuto: "Gent..." seguito da striscia inchiostro      ║
-║            Note: Il defunto stava scrivendo quando è deceduto       ║
-║            >>> SEQUESTRATO <<<                                       ║
-║                                                                      ║
-║   REP-003: Contenuto cestino                                         ║
-║            Contenuto: Fogli appallottolati, nulla di rilevante      ║
-║            >>> SEQUESTRATO <<<                                       ║
-║                                                                      ║
-║   REP-004: Agenda personale                                          ║
-║            Note: Appuntamenti, nulla di anomalo                      ║
-║            >>> SEQUESTRATA <<<                                       ║
+║   OBJ-01: Lampada da tavolo (ottone, spenta, angolo sinistro)       ║
+║   OBJ-02: Portadocumenti (angolo destro, corrispondenza varia)      ║
+║   OBJ-03: Orologio da tavolo (lato destro, segna le 07:31)         ║
+║   OBJ-04: Sottomano in pelle (centro, sotto il corpo)               ║
+║   OBJ-05: Foglio di carta ("Gent..." + striscia inchiostro)        ║
+║   OBJ-06: Penna stilografica (Pilot Custom 845, nera/oro, 15 cm    ║
+║           dalla mano destra)                                         ║
+║   OBJ-07: Set calligrafia (astuccio aperto, pennini, china)        ║
+║   OBJ-08: Fermacarte in pietra (granito ovale, centro-destra)      ║
+║   OBJ-09: Portafoglio (contanti ¥45.000 ca., carte, documento)     ║
+║   OBJ-10: Posacenere in ceramica (angolo destro, pulito)           ║
+║   OBJ-11: Agenda personale (cassetto destro aperto)                 ║
+║   OBJ-12: Contenuto cestino (fogli appallottolati)                  ║
 ║                                                                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                    OSSERVAZIONI SUL CORPO                            ║

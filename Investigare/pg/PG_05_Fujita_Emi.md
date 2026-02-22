@@ -18,47 +18,47 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 8 | Sai mantenere le distanze |
-| **Pazienza** | 7 | Normale |
-| **Silenzio** | 10 | Punto di forza - osservi, non reagisci |
-| **Lucidità** | 8 | Buona capacità di analisi |
-| **Ascolto** | 8 | Formazione psicologica |
-| **Aura** | 7 | Normale - preferisci restare in ombra |
+| **Distacco** | 5 | Sai mantenere le distanze |
+| **Pazienza** | 4 | Normale |
+| **Silenzio** | 6 | Punto di forza - osservi, non reagisci |
+| **Lucidità** | 5 | Buona capacità di analisi |
+| **Ascolto** | 5 | Formazione psicologica |
+| **Presenza** | 3 | Normale - preferisci restare in ombra |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Nessun attributo può superare 11
+> - Nessun attributo può superare 8
 
 ---
 
-## STRESS/BENESSERE
+## KI (TENUTA)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
 
 ---
 
-## IL DEBITO
+## GOU (DEBITO)
 
 Scegli **uno** dei seguenti Debiti:
 
 ### Opzione 1: Specchio dell'Anima
 *Vedi oltre la maschera. Senti le emozioni vere di una persona.*
 - **Attributo**: Ascolto
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Ascolto): Senti l'emozione dominante e capisci perché la prova
 - **Fallimento**: Senti l'emozione, ma non la sua origine
 
 ### Opzione 2: Tocco del Medico
 *Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Dettagli precisi - tipo di trauma, natura della paura, segni di stress cronico
 - **Fallimento**: Capisci che qualcosa non va, ma non riesci a definirlo con precisione
 
 ### Opzione 3: Sussurro della Sera
 *La tua voce calma. Le persone si tranquillizzano in tua presenza.*
 - **Attributo**: Silenzio
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Silenzio): La persona si calma completamente e inizia a fidarsi di te
 - **Fallimento**: La persona si calma, ma resta guardinga e sospettosa
 

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fascicolo Penale — SAKAI Toru</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; color: #ccc; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+  .doc-header .doc-subtitle {
+    font-size: 10px; color: #ccc; margin-top: 6px; letter-spacing: 1px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+  .metadata .field-full { grid-column: 1 / -1; padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field-full .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .field-full .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAILS ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── CRIMINAL RECORD TABLE ── */
+  .record-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .record-table th {
+    background: #1a1a2e; color: white; text-align: left; padding: 6px 10px;
+    font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+    border: 1px solid #333;
+  }
+  .record-table td {
+    padding: 6px 10px; border: 1px solid #ddd; vertical-align: top;
+  }
+  .record-table tr:nth-child(even) { background: #fafaf6; }
+  .record-table .status-amm {
+    font-size: 9px; font-weight: bold; color: #666; letter-spacing: 0.5px;
+    padding: 2px 6px; background: #f0ede6; display: inline-block;
+  }
+  .record-table .status-cond {
+    font-size: 9px; font-weight: bold; color: #8b0000; letter-spacing: 0.5px;
+    padding: 2px 6px; background: #fff0f0; display: inline-block;
+  }
+
+  /* ── CONVICTION DETAIL ── */
+  .conviction-detail {
+    margin: 10px 0; padding: 12px 16px;
+    background: #f8f6f0; border: 1px solid #ccc;
+  }
+  .conviction-detail .conv-header {
+    font-family: Arial, sans-serif; font-size: 10px; font-weight: bold;
+    letter-spacing: 1px; text-transform: uppercase; color: #1a1a2e;
+    margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #ddd;
+  }
+  .conviction-detail .conv-field {
+    padding: 3px 0; font-size: 10.5px;
+  }
+  .conviction-detail .conv-label {
+    font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  /* ── JUDGE BOX ── */
+  .judge-box {
+    margin: 10px 0; padding: 8px 14px;
+    background: #f8f6f0; border: 1px solid #ccc;
+    font-size: 11px;
+  }
+  .judge-box .judge-label {
+    font-size: 9px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 2px;
+  }
+
+  /* ── SENTENCE NOTE ── */
+  .sentence-note {
+    margin: 10px 0; padding: 10px 14px;
+    background: #f5f5f0; border-left: 3px solid #999;
+    font-style: italic; font-size: 10.5px; line-height: 1.6;
+  }
+  .sentence-note .note-label {
+    font-style: normal; font-weight: bold; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; color: #555; margin-bottom: 4px;
+  }
+
+  /* ── SEIZED ITEMS ── */
+  .seized-list { list-style: none; padding-left: 8px; margin-top: 6px; }
+  .seized-list li { padding: 2px 0 2px 16px; position: relative; font-size: 10.5px; }
+  .seized-list li::before { content: "\25B8"; position: absolute; left: 0; color: #555; }
+
+  /* ── STATUS BOX ── */
+  .status-box {
+    margin: 8px 0; padding: 8px 14px;
+    border: 1px solid #ccc; font-size: 11px; text-align: center;
+    font-weight: bold; letter-spacing: 1px;
+  }
+  .status-box.libero { background: #f0f8f0; border-color: #4a7; color: #2a5; }
+  .status-box.detenuto { background: #fff0f0; border-color: #c44; color: #8b0000; }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    font-size: 10.5px; text-align: center;
+  }
+  .firma .firma-org { font-weight: bold; margin-bottom: 2px; }
+  .firma .firma-ente { font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── REQUEST FIELDS ── */
+  .request-fields {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid #ddd; font-size: 10px;
+  }
+  .request-fields .req-field {
+    padding: 6px 16px; border-right: 1px solid #ddd;
+  }
+  .request-fields .req-field:last-child { border-right: none; }
+  .request-fields .req-label {
+    font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .request-fields .req-value { color: #999; }
+</style>
+</head>
+<body>
+
+<!-- ════════════ GM HEADER (non si stampa) ════════════ -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 18 — Fascicolo Penale Sakai Toru</h2>
+
+  <p><strong>Quando consegnare:</strong> Quando i PG cercano nel database penale dispositivi elettronici illegali, scariche elettriche, armi improvvisate, o quando seguono la pista dalla penna/autopsia.</p>
+
+  <p><strong>Come ottenerlo:</strong></p>
+  <ul>
+    <li><strong>Database della polizia</strong>: ricerca per "dispositivi elettronici illegali", "scariche elettriche", "armi improvvisate"</li>
+    <li><strong>Collegamento con l'autopsia</strong>: ustioni da scarica elettrica sulla mano del giudice</li>
+    <li><strong>Collegamento con la penna</strong>: chi ha le competenze per costruirla?</li>
+    <li>Difficoltà: Media — richiede una ricerca mirata nel database</li>
+  </ul>
+
+  <p><strong>Il collegamento cruciale:</strong></p>
+  <ul>
+    <li>Il <strong>Giudice ISHIDA Makoto</strong> ha condannato Sakai nel 1992 — legame diretto vittima/sospetto</li>
+    <li>Fornisce un movente apparente (vendetta) — ma Sakai NON è l'assassino</li>
+    <li>Sakai è il <strong>costruttore della penna</strong>, non il mandante</li>
+  </ul>
+
+  <p><strong>Sakai: costruttore, non assassino</strong></p>
+  <ul>
+    <li>Sakai odia il giudice Ishida ("gli ha rovinato la vita")</li>
+    <li>Ma NON ha pianificato l'omicidio — è stato ingaggiato da Sakura</li>
+    <li>Se interrogato, ammette di aver costruito la penna ma dice di non sapere chi fosse la vittima designata</li>
+  </ul>
+
+  <p><strong>La nota dalla sentenza</strong> sulla "miniaturizzazione e sofisticazione inusuale" e sul "camuffamento in oggetti di uso quotidiano" è una freccia neon che punta alla penna-arma. Giocatori attenti coglieranno il parallelo.</p>
+
+  <p><strong>Piste investigative che si aprono:</strong></p>
+  <ul>
+    <li><strong>Interrogare Sakai</strong> &rarr; ammette la costruzione, descrive la committente (donna elegante ~40 anni = Sakura)</li>
+    <li><strong>Pedinare Sakai</strong> &rarr; porta al laboratorio in Via Fushimi-dori 45</li>
+    <li><strong>Perquisire il laboratorio</strong> &rarr; soldi e componenti della penna (vedi Tracce Finanziarie)</li>
+    <li><strong>Denki-ya</strong> &rarr; il titolare sa che Sakai "fa lavoretti per conto suo"</li>
+  </ul>
+
+  <p><strong>L'ultimo indirizzo è vecchio:</strong> Via Fushimi 78 risale al 1994. Il laboratorio è in Via Fushimi-dori 45 (magazzino abbandonato) — non è nel fascicolo. Per trovarlo: pedinare Sakai o interrogarlo.</p>
+</div>
+
+<!-- ════════════ DOCUMENTO STAMPABILE ════════════ -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察</div>
+    <div class="org-sub">UFFICIO CASELLARIO GIUDIZIALE</div>
+    <div class="doc-type">ESTRATTO FASCICOLO PENALE</div>
+    <div class="doc-subtitle">Consultazione riservata — Solo personale autorizzato</div>
+  </div>
+
+  <div class="request-fields">
+    <div class="req-field">
+      <div class="req-label">Data estrazione</div>
+      <div class="req-value">____/____/1997</div>
+    </div>
+    <div class="req-field">
+      <div class="req-label">Richiesto da</div>
+      <div class="req-value">________________________________</div>
+    </div>
+    <div class="req-field">
+      <div class="req-label">Motivo</div>
+      <div class="req-value">________________________________</div>
+    </div>
+  </div>
+
+  <!-- DATI ANAGRAFICI -->
+  <div class="section">
+    <div class="section-title">Dati anagrafici</div>
+    <ul class="detail-list">
+      <li><strong>Cognome e Nome:</strong> SAKAI Toru (酒井 透)</li>
+      <li><strong>Data di nascita:</strong> 8 luglio 1962</li>
+      <li><strong>Luogo di nascita:</strong> Kyoto, Prefettura di Kyoto</li>
+      <li><strong>Cittadinanza:</strong> Giapponese</li>
+      <li><strong>Stato civile:</strong> Celibe</li>
+      <li><strong>Ultimo indirizzo noto:</strong> Via Fushimi 78, Fushimi-ku, Kyoto <span style="font-size:9px; color:#888;">(aggiornamento: 1994 — al rilascio dalla detenzione)</span></li>
+    </ul>
+
+    <div class="status-box libero" style="margin-top:10px;">
+      STATO ATTUALE: LIBERO (pena espiata)
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PRECEDENTI PENALI -->
+  <div class="section">
+    <div class="section-title">Precedenti penali</div>
+
+    <table class="record-table">
+      <thead>
+        <tr>
+          <th style="width:40px;">N.</th>
+          <th style="width:60px;">Anno</th>
+          <th>Reato</th>
+          <th style="width:150px;">Esito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1987</td>
+          <td>Possesso di componenti elettronici non dichiarati</td>
+          <td><span class="status-amm">AMMONIZIONE</span><br><span style="font-size:9px; color:#888;">(non processato)</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1992</td>
+          <td>Fabbricazione e vendita di dispositivi elettronici illegali</td>
+          <td><span class="status-cond">CONDANNA</span><br>2 anni recl.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:10px; font-size:10px; color:#555;">
+      Precedenti successivi al rilascio (1994): <strong>NESSUNO</strong>
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DETTAGLIO CONDANNA N. 2 -->
+  <div class="section" style="position:relative;">
+    <div class="section-title">Dettaglio Condanna N. 2 — 1992</div>
+
+    <div class="conviction-detail">
+      <div class="conv-field"><span class="conv-label">Reato:</span> Fabbricazione e vendita di dispositivi elettronici illegali (Art. 234 C.P.)</div>
+      <div class="conv-field"><span class="conv-label">Tribunale:</span> Tribunale Distrettuale di Kyoto</div>
+      <div class="conv-field"><span class="conv-label">N. Procedimento:</span> TDK-1992-0887</div>
+    </div>
+
+    <div class="judge-box">
+      <div class="judge-label">Giudice</div>
+      <div><strong>ISHIDA Makoto</strong> (石田 誠) — Tribunale Distrettuale di Kyoto</div>
+    </div>
+
+    <table class="record-table" style="margin-top:10px;">
+      <thead>
+        <tr>
+          <th style="width:50%;">Campo</th>
+          <th>Dettaglio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data udienza</td>
+          <td>14 settembre 1992</td>
+        </tr>
+        <tr>
+          <td>Data sentenza</td>
+          <td>28 settembre 1992</td>
+        </tr>
+        <tr>
+          <td>Pena comminata</td>
+          <td><strong>2 (due) anni di reclusione</strong></td>
+        </tr>
+        <tr>
+          <td>Istituto</td>
+          <td>Carcere Prefetturale di Kyoto</td>
+        </tr>
+        <tr>
+          <td>Data inizio pena</td>
+          <td>1 ottobre 1992</td>
+        </tr>
+        <tr>
+          <td>Data fine pena</td>
+          <td>30 settembre 1994</td>
+        </tr>
+        <tr>
+          <td>Pena interamente espiata</td>
+          <td><strong>SI</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:14px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Descrizione del reato</div>
+      <p style="font-size:10.5px; line-height:1.6;">
+        L'imputato fabbricava e vendeva dispositivi elettronici modificati, in particolare
+        apparecchi capaci di generare scariche elettriche ad alto voltaggio. I dispositivi erano
+        camuffati da oggetti di uso comune (torce elettriche, telecomandi). Venduti a privati
+        senza alcuna licenza né dichiarazione.
+      </p>
+    </div>
+
+    <div class="sentence-note">
+      <div class="note-label">Nota dalla sentenza</div>
+      "L'imputato dimostra notevole competenza tecnica nel campo dell'elettronica.
+      I dispositivi sequestrati presentano un livello di miniaturizzazione e sofisticazione
+      inusuale. La pericolosità dei dispositivi è aggravata dal loro camuffamento in oggetti
+      di uso quotidiano, rendendo impossibile per la vittima riconoscere la minaccia."
+    </div>
+
+    <div style="margin-top:12px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Materiale sequestrato (1992)</div>
+      <ul class="seized-list">
+        <li>N. 4 dispositivi a scarica elettrica camuffati</li>
+        <li>Componenti elettronici vari</li>
+        <li>Attrezzi di precisione per assemblaggio</li>
+        <li>Documentazione tecnica manoscritta</li>
+      </ul>
+    </div>
+
+    <div class="timbro">KYOTO<br>PD<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- IMPIEGO NOTO -->
+  <div class="section">
+    <div class="section-title">Impiego noto</div>
+    <p style="font-size:10.5px; margin-bottom:4px;">
+      <span style="font-size:9px; color:#555; font-weight:bold; letter-spacing:0.5px;">IMPIEGO ATTUALE (DA VERIFICA 1995):</span>
+    </p>
+    <ul class="detail-list">
+      <li><strong>Ruolo:</strong> Commesso part-time</li>
+      <li><strong>Esercizio:</strong> Negozio "Denki-ya" (電気屋) — Elettronica e componenti</li>
+      <li><strong>Indirizzo:</strong> Via Fushimi 112, Fushimi-ku, Kyoto</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SEGNALAZIONI -->
+  <div class="section">
+    <div class="section-title">Segnalazioni e note</div>
+    <ul class="detail-list">
+      <li>Soggetto considerato a basso rischio di recidiva</li>
+      <li>Nessuna affiliazione nota a organizzazioni criminali</li>
+      <li>Nessuna segnalazione post-rilascio</li>
+      <li>Obbligo di firma scaduto: marzo 1995</li>
+    </ul>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div class="firma-org">Estratto conforme — Ufficio Casellario Giudiziale</div>
+    <div class="firma-ente">Polizia Prefetturale di Kyoto</div>
+  </div>
+
+</div>
+
+</body>
+</html>

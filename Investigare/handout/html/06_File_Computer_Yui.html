@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisi Forense Informatica — NEC PC-9801</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-size: 11px; color: #d0c0a0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAIL LIST ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── FILE BLOCK (retro DOS style) ── */
+  .file-block {
+    margin: 14px 0; border: 1px solid #666;
+  }
+  .file-header {
+    background: #0a0a2e; color: #40ff40; padding: 8px 14px;
+    font-family: "Courier New", monospace; font-size: 10px; letter-spacing: 0.5px;
+  }
+  .file-header .path { color: #ffff40; font-weight: bold; }
+  .file-header .status { float: right; }
+  .file-header .status-deleted { color: #ff6060; font-weight: bold; }
+  .file-header .status-ok { color: #40ff40; }
+  .file-meta {
+    background: #1a1a3e; color: #a0a0d0; padding: 4px 14px; font-size: 9px;
+  }
+  .file-content {
+    background: #0a0a1e; color: #c0c0c0; padding: 12px 14px;
+    font-family: "Courier New", monospace; font-size: 10.5px; line-height: 1.6;
+    white-space: pre-wrap; word-wrap: break-word;
+  }
+  .file-content .important { color: #ff8080; font-weight: bold; }
+  .file-content .key-info { color: #ffff60; }
+  .file-content .corrupted { color: #606060; font-style: italic; }
+  .file-content .heading { color: #60c0ff; font-weight: bold; text-decoration: underline; }
+  .file-content .separator { color: #404080; }
+  .file-content .star { color: #ff4040; font-weight: bold; }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #f0ede6; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 9px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 06 — File Computer Yui</h2>
+  <p><strong>Quando consegnare:</strong> Solo SE i giocatori perquisiscono casa Kimura, sequestrano il computer e richiedono analisi forense informatica. Tempo: 24-48 ore dal sequestro.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>INVITATI.TXT:</strong> Lista invitati all'evento con Ishida marcato "CONFERMATO" e note su come infiltrarsi tramite lo chef</li>
+    <li><strong>RICERCA.TXT:</strong> Studio dettagliato della tetrodotossina con dosaggi e calcolo per essere "sicura della morte" — 3 porzioni da 20-25g di fegato</li>
+    <li><strong>TANAKA.TXT:</strong> Piano dettagliato: contattare lo chef, entrare dall'ingresso di servizio, divisa, due contenitori (A = fugu buono, B = fugu avvelenato)</li>
+    <li><strong>PERCHE.TXT:</strong> Movente completo — il giudice le ha rubato 20 anni, ha negato il figlio Kenta, ha falsificato il test di paternità, l'ha fatta aggredire (lei crede)</li>
+  </ul>
+  <p><strong>Valore probatorio:</strong> Questi file sono una CONFESSIONE SCRITTA. Con questi + testimonianza del chef + registri taxi, il caso contro Yui e chiuso.</p>
+  <p><strong>Nota importante:</strong> I file erano stati cancellati il 9 aprile (giorno dopo l'omicidio). Yui ha cercato di coprire le tracce ma non sapeva che i file cancellati sono recuperabili. Nel file PERCHE.TXT, Yui scrive "Mi ha fatto aggredire" — ma l'aggressione era della yakuza, non ordinata da Makoto. Yui ha frainteso.</p>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察本部</div>
+    <div class="org-sub">Sezione Informatica Forense</div>
+    <div class="doc-type">RAPPORTO ANALISI FORENSE</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Data analisi</div><div class="value">14 aprile 1997</div></div>
+    <div class="field"><div class="label">Tecnico</div><div class="value">Ishikawa Tetsuya</div></div>
+    <div class="field"><div class="label">Dispositivo</div><div class="value">NEC PC-9801 VX</div></div>
+    <div class="field"><div class="label">Disco rigido</div><div class="value">40 MB</div></div>
+    <div class="field"><div class="label">Sistema operativo</div><div class="value">MS-DOS 3.30</div></div>
+    <div class="field"><div class="label">Provenienza</div><div class="value">Residenza Kimura, Via Yamashina 12</div></div>
+  </div>
+
+  <div class="section" style="position:relative;">
+    <div class="section-title">Metodo di analisi</div>
+    <p>Recupero file cancellati tramite analisi settori disco. I file contrassegnati come "CANCELLATO" erano stati eliminati dall'utente ma i dati erano ancora presenti sui settori del disco rigido.</p>
+    <div class="timbro">KYOTO<br>PD<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FILE 1 -->
+  <div class="section">
+    <div class="section-title">File recuperati</div>
+
+    <div class="file-block">
+      <div class="file-header">
+        <span class="path">C:\DOCUMENTI\INVITATI.TXT</span>
+        <span class="status"><span class="status-deleted">CANCELLATO</span> (recuperato al 100%)</span>
+      </div>
+      <div class="file-meta">Creazione: 2 aprile 1997 | Ultima modifica: 7 aprile 1997</div>
+      <div class="file-content"><span class="heading">EVENTO: Collezione Privata Yamato</span>
+<span class="key-info">DATA: 8 aprile 1997</span>
+<span class="key-info">LUOGO: Galleria Nijo Art Space, Via Nijo 23</span>
+
+<span class="heading">INVITATI CONFERMATI:</span>
+<span class="separator">----------------------------------------------------------------------</span>
+Nome                    Professione              Note
+<span class="separator">----------------------------------------------------------------------</span>
+ISHIDA Makoto          Giudice                  <span class="star">*** CONFERMATO ***</span>
+ISHIDA Sakura          Artista                  Con il marito
+TAKEDA Noboru          Pittore                  Padre di Sakura
+SATO Hiroshi           Chirurgo (pensione)      Collezionista
+HASEGAWA Yuki          Gallerista               Organizzatrice
+KATO Hiroshi           Banchiere                Amico di Ishida
+MORIMOTO Kenji         Critico d'arte
+TANAKA Michiko         Collezionista
+WATANABE Kenji         Imprenditore
+ODA Yuki               Collezionista
+[... altri 25 nomi ...]
+<span class="separator">----------------------------------------------------------------------</span>
+
+<span class="heading">NOTE PERSONALI:</span>
+- Buffet dalle 20:00 alle 22:30
+- Catering: <span class="key-info">Chef Tanaka Ryo (Scuola Tsuji)</span> ← CONTATTARE
+- Menu previsto: tradizionale, include pesce
+- Verificare se c'e fugu nel menu
+- <span class="important">Ishida ama il fugu (lo so per esperienza)</span>
+- A fine serata ci sarànno pochi ospiti</div>
+    </div>
+
+    <!-- FILE 2 -->
+    <div class="file-block">
+      <div class="file-header">
+        <span class="path">C:\DOCUMENTI\RICERCA.TXT</span>
+        <span class="status"><span class="status-deleted">CANCELLATO</span> (recuperato al 95%)</span>
+      </div>
+      <div class="file-meta">Creazione: 28 marzo 1997 | Ultima modifica: 5 aprile 1997</div>
+      <div class="file-content"><span class="heading">TETRODOTOSSINA (TTX)</span>
+
+<span class="key-info">FONTE: Fugu (pesce palla) - fegato, ovaie, pelle</span>
+
+<span class="heading">EFFETTI:</span>
+- Blocco canali del sodio
+- Parestesia (formicolio labbra, lingua, dita)
+- Debolezza muscolare progressiva
+- Paralisi
+- Depressione respiratoria
+- Bradicardia (rallentamento cuore)
+- Arresto cardiaco
+
+<span class="heading">TEMPISTICA:</span>
+- Primi sintomi: 10-45 minuti dopo ingestione
+- Progressione: 4-6 ore
+- Morte: se non trattata, 4-8 ore
+
+<span class="heading">DOSE LETALE:</span>
+- Dose minima letàle: 1-2 mg
+- Nel fegato di fugu: concentrazione variabile
+- <span class="important">1 fegato intero = SICURAMENTE letàle</span>
+
+ANTIDOTO: <span class="important">NESSUNO</span>
+Trattamento: solo supporto respiratorio
+
+<span class="heading">CALCOLO DOSAGGIO:</span>
+
+<span class="important">Per essere SICURA della morte:</span>
+- Servire almeno 20-25g di fegato per porzione
+- 3 porzioni = 60-75g totali
+- <span class="corrupted">[testo corrotto]</span>...ra almeno 3 porzioni, lo conosco</div>
+    </div>
+
+    <!-- FILE 3 -->
+    <div class="file-block">
+      <div class="file-header">
+        <span class="path">C:\DOCUMENTI\TANAKA.TXT</span>
+        <span class="status"><span class="status-deleted">CANCELLATO</span> (recuperato al 100%)</span>
+      </div>
+      <div class="file-meta">Creazione: 15 marzo 1997 | Ultima modifica: 4 aprile 1997</div>
+      <div class="file-content"><span class="heading">CHEF TANAKA RYO</span>
+Scuola Tsuji - Osaka
+Tel: 06-6243-5500
+
+Ho chiamato il 15 marzo. Si ricorda di me!
+E contento di sentirmi dopo tutti questi anni.
+
+Gli ho detto che vorrei fargli assaggiare il mio fugu.
+Che ho perfezionato la ricetta.
+Ha accettato - posso passare all'evento dell'8 aprile.
+
+<span class="important">PIANO:</span>
+<span class="key-info">1. Arrivare alle 21:00 circa dall'ingresso servizio</span>
+<span class="key-info">2. Farmi dare una divisa</span>
+<span class="key-info">3. Fargli assaggiare il fugu BUONO (contenitore A)</span>
+<span class="key-info">4. Aspettare il momento giusto</span>
+<span class="key-info">5. Mettere il fugu AVVELENATO (contenitore B) sul carrello</span>
+<span class="key-info">6. Andarmene prima che lo servano</span>
+
+Il sensei non sospettera nulla.
+Non sapra mai cosa ho fatto.
+<span class="important">Mi dispiace usarlo così, ma non ho altra scelta.</span></div>
+    </div>
+
+    <!-- FILE 4 -->
+    <div class="file-block">
+      <div class="file-header">
+        <span class="path">C:\DOCUMENTI\PERCHE.TXT</span>
+        <span class="status"><span class="status-deleted">CANCELLATO</span> (recuperato al 80%)</span>
+      </div>
+      <div class="file-meta">Creazione: 1 aprile 1997 | Ultima modifica: 7 aprile 1997</div>
+      <div class="file-content"><span class="heading">Perche lo faccio:</span>
+
+<span class="important">1. Mi ha rubato 20 anni di vita</span>
+   - Mi ha lasciata per mia sorella
+   - Mi ha fatto credere che Kenta non fosse suo
+   - Ha pagato per falsificare il test
+
+<span class="important">2. Ha negato suo figlio</span>
+   - Kenta non sa chi è suo padre
+   - Non ha mai avuto quello che meritava
+   - <span class="corrupted">[testo corrotto]</span>...tato dalla scuola mentre suo "fratello"
+     è stato ammesso
+
+<span class="important">3. Mi ha fatto aggredire</span>
+   - Febbraio, quei due uomini
+   - "Di a tuo marito di stare attento"
+   - Pensava di spaventarmi? <span class="corrupted">[testo corrotto]</span>
+
+<span class="important">4. Non si e mai scusato</span>
+   - Mai una parola
+   - Mai un gesto
+   - Come se io non esistessi
+
+<span class="corrupted">[testo corrotto]</span>
+
+<span class="important">...non merita di vivere. Non dopo tutto quello che ha fatto.</span>
+Mia madre mi ha insegnato il fugu. Lo usero per <span class="corrupted">[testo corrotto]</span></div>
+    </div>
+
+    <!-- FILE 5 -->
+    <div class="file-block">
+      <div class="file-header">
+        <span class="path">C:\DOCUMENTI\APPUNTI.TXT</span>
+        <span class="status"><span class="status-ok">INTEGRO</span> (non cancellato)</span>
+      </div>
+      <div class="file-meta">Creazione: Varie | Ultima modifica: 3 aprile 1997</div>
+      <div class="file-content" style="color:#666;">[File di appunti vari — ricette, liste spesa, note domestiche]
+
+Nulla di rilevante per l'indagine.</div>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div style="font-size:9px; color:#666; text-transform:uppercase; letter-spacing:1px;">Rapporto redatto da:</div>
+      <div style="font-weight:bold;">Ishikawa Tetsuya</div>
+      <div style="font-size:9px; color:#666;">Sezione Informatica Forense</div>
+      <div style="font-size:9px; color:#666;">Polizia Prefetturale di Kyoto</div>
+    </div>
+    <div class="firma-line">Firma del tecnico</div>
+  </div>
+
+</div>
+
+</body>
+</html>

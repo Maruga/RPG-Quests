@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(python:*)",
+      "Bash(test:*)",
+      "Bash(find:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}

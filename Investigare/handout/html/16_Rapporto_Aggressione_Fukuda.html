@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapporto Aggressione — 1997-0203-P7-041</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header .gm-chain {
+    margin: 10px 0; padding: 8px 12px; background: rgba(139,0,0,0.15);
+    border-left: 3px solid #8b0000; font-family: "Courier New", monospace; font-size: 11px; line-height: 1.6;
+  }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; color: #ccc; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAILS ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── ID BOX ── */
+  .id-box {
+    margin: 10px 0; padding: 10px 14px; background: #f8f6f0;
+    border: 1px solid #ccc; font-size: 11px;
+  }
+  .id-box .id-label {
+    font-size: 9px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px;
+  }
+  .id-box .id-value { font-weight: bold; font-size: 12px; }
+
+  /* ── DISCREPANCY NOTE ── */
+  .discrepancy-note {
+    margin: 12px 0; padding: 10px 14px;
+    background: #fff8e6; border: 2px solid #c0a060;
+    position: relative;
+  }
+  .discrepancy-note .note-marker {
+    position: absolute; top: -10px; left: 12px;
+    background: #c0a060; color: #1a1a2e;
+    font-family: Arial, sans-serif; font-size: 9px; font-weight: bold;
+    letter-spacing: 1px; padding: 2px 8px;
+  }
+  .discrepancy-note .note-text {
+    font-size: 10.5px; line-height: 1.5; margin-top: 4px;
+  }
+
+  /* ── BLOCKQUOTE ── */
+  .threat-quote {
+    margin: 12px 0; padding: 12px 16px;
+    background: #f5f0e8; border-left: 4px solid #1a1a2e;
+    font-size: 13px; font-weight: bold; font-style: italic;
+    text-align: center; letter-spacing: 0.5px;
+  }
+
+  /* ── ADDRESS BOX ── */
+  .address-box {
+    margin: 8px 0; padding: 8px 14px;
+    background: #f8f6f0; border: 1px solid #ccc;
+    font-weight: bold; font-size: 11px;
+  }
+  .address-note {
+    margin-top: 8px; padding: 6px 12px;
+    background: #fff8e6; border-left: 3px solid #c0a060;
+    font-size: 10px; font-style: italic; color: #555;
+  }
+
+  /* ── CASE CLOSED ── */
+  .caso-chiuso {
+    margin: 12px 0; padding: 10px 14px;
+    border: 2px solid #333; text-align: center;
+    font-weight: bold; letter-spacing: 2px; font-size: 11px;
+  }
+  .caso-chiuso .date-auth {
+    font-size: 10px; font-weight: normal; color: #555; margin-top: 4px; letter-spacing: 0;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline { list-style: none; padding: 0; }
+  .timeline li {
+    padding: 3px 0 3px 80px; position: relative;
+    border-left: 2px solid #ddd; margin-left: 30px;
+  }
+  .timeline li::before {
+    content: attr(data-time); position: absolute; left: -60px;
+    font-weight: bold; font-size: 10px; color: #1a1a2e; width: 50px; text-align: right;
+  }
+  .timeline li::after {
+    content: ""; position: absolute; left: -5px; top: 8px;
+    width: 8px; height: 8px; background: #1a1a2e; border-radius: 50%;
+  }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── WOUND LIST ── */
+  .wound-list { list-style: none; padding-left: 8px; }
+  .wound-list li { padding: 2px 0 2px 16px; position: relative; font-size: 10.5px; }
+  .wound-list li::before { content: "\25B8"; position: absolute; left: 0; color: #8b0000; }
+
+  /* ── ATTACKER DESC ── */
+  .attacker-box {
+    margin: 8px 0; padding: 8px 14px;
+    background: #f8f6f0; border-left: 2px solid #999;
+    font-size: 10.5px;
+  }
+  .attacker-box .attacker-label { font-weight: bold; font-size: 10px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ════════════ GM HEADER (non si stampa) ════════════ -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 16 — Rapporto Aggressione Fukuda</h2>
+
+  <p><strong>Quando consegnare:</strong> Quando i PG cercano negli archivi rapporti legati a "Ishida", "aggressione Higashiyama febbraio 1997", o contattano l'Ag. Fukuda Yuto (Pattuglia 7).</p>
+
+  <p><strong>Come ottenerlo:</strong></p>
+  <ul>
+    <li><strong>Archivi Stazione Centrale di Kyoto</strong>: ricerca per nome "Ishida" o "aggressione Higashiyama febbraio 1997"</li>
+    <li><strong>Agente Fukuda Yuto</strong>: rintracciabile via Pattuglia 7, ricorda bene il caso</li>
+    <li><strong>Avvocato della famiglia Ishida</strong>: potrebbe averne copia</li>
+    <li>Difficoltà: Bassa (se cercano "Ishida"), Media (se partono da zero)</li>
+  </ul>
+
+  <p><strong>Il dato chiave — la discrepanza d'identità:</strong></p>
+  <ul>
+    <li><strong>La carta d'identità dice ISHIDA Sakura</strong> — perché Yui la portava per fingersi Sakura</li>
+    <li><strong>La donna si identifica come KIMURA Yui</strong> — sotto shock ha dato il suo vero nome</li>
+    <li>L'agente Fukuda ha annotato la discrepanza ma non l'ha approfondita (caso archiviato)</li>
+  </ul>
+
+  <p><strong>L'indirizzo di accompagnamento:</strong></p>
+  <ul>
+    <li>Accompagnata a <strong>Via Yamashina 12</strong> — casa di KIMURA Yui</li>
+    <li>La carta d'identità indica <strong>Via Higashiyama 45</strong> — Villa Ishida</li>
+    <li>Secondo indizio dello scambio d'identità</li>
+  </ul>
+
+  <p><strong>Il messaggio degli aggressori:</strong></p>
+  <ul>
+    <li>"Dì a <strong>tuo marito</strong> di stare attento" — diretto al giudice Ishida</li>
+    <li>Gli aggressori credevano di picchiare Sakura, ma la vittima era Yui</li>
+    <li>Yui si spacciava per Sakura regolarmente, al punto da portarne i documenti</li>
+  </ul>
+
+  <p><strong>Collegamento con Mori Riku:</strong></p>
+  <div class="gm-chain">
+    OKA (boss yakuza) &rarr; ordina il pestaggio<br>
+    &nbsp;&nbsp;&darr;<br>
+    MORI Riku + KUDO Masa &rarr; eseguono l'aggressione (3/2/97)<br>
+    &nbsp;&nbsp;&darr;<br>
+    Vittima = YUI (con documenti di Sakura)<br>
+    &nbsp;&nbsp;&darr;<br>
+    "Dì a tuo marito di stare attento" &rarr; diretto al giudice Ishida
+  </div>
+  <p>La data (3 febbraio 1997) corrisponde esattamente al fascicolo Mori. Se i PG hanno entrambi i documenti, il collegamento è immediato.</p>
+
+  <p><strong>L'agente Fukuda come PNG:</strong></p>
+  <ul>
+    <li>"Ricordo quella sera. La donna era terrorizzata, ma qualcosa non tornava."</li>
+    <li>"Il documento diceva un nome, lei ne diceva un altro. Ho pensato fosse confusa per lo shock."</li>
+    <li>"L'ho accompagnata a casa — in una zona completamente diversa da quella sul documento."</li>
+    <li>"Il caso è stato archiviato. Nessun testimone, nessun indizio. Il solito vicolo cieco."</li>
+  </ul>
+</div>
+
+<!-- ════════════ DOCUMENTO STAMPABILE ════════════ -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察</div>
+    <div class="org-sub">STAZIONE CENTRALE DI KYOTO</div>
+    <div class="doc-type">RAPPORTO INTERVENTO</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">N. Rapporto</div><div class="value">1997-0203-P7-041</div></div>
+    <div class="field"><div class="label">Tipologia</div><div class="value">AGGRESSIONE / LESIONI PERSONALI</div></div>
+    <div class="field"><div class="label">Data</div><div class="value">3 febbraio 1997</div></div>
+    <div class="field"><div class="label">Ora intervento</div><div class="value">22:34</div></div>
+    <div class="field"><div class="label">Ora chiusura rapporto</div><div class="value">00:15 (4 febbraio 1997)</div></div>
+    <div class="field"><div class="label">Agente compilatore</div><div class="value">FUKUDA Yuto (福田 悠人) — Matr. KPD-7734</div></div>
+    <div class="field"><div class="label">Assegnazione</div><div class="value">Pattuglia 7, Turno Serale</div></div>
+    <div class="field"><div class="label">Classificazione</div><div class="value">AGGRESSIONE A SCOPO INTIMIDATORIO</div></div>
+  </div>
+
+  <!-- LUOGO -->
+  <div class="section">
+    <div class="section-title">Luogo dell'intervento</div>
+    <ul class="detail-list">
+      <li><strong>Zona:</strong> Higashiyama-ku, Kyoto</li>
+      <li><strong>Via:</strong> Vicinanze di Via Higashiyama, altezza incrocio con Via Sanneizaka</li>
+      <li><strong>Riferimento:</strong> circa 200 m a sud della residenza Ishida</li>
+      <li><strong>Illuminazione:</strong> scarsa (lampione più vicino a ~30 m)</li>
+      <li><strong>Condizioni:</strong> sereno, temperatura ~3°C</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DATI VITTIMA -->
+  <div class="section">
+    <div class="section-title">Dati della vittima</div>
+
+    <div class="id-box">
+      <div class="id-label">Documento d'identità rinvenuto nella borsa</div>
+      <div class="id-value">ISHIDA Sakura (石田 桜)</div>
+      <div style="font-size:10px; margin-top:4px;">
+        Nata: 15/03/1955, Kyoto<br>
+        Residenza: Via Higashiyama 45, Higashiyama-ku, Kyoto
+      </div>
+    </div>
+
+    <div class="id-box" style="margin-top:12px;">
+      <div class="id-label">Dichiarazione verbale della vittima</div>
+      <div class="id-value">La vittima si identifica come: "KIMURA Yui" (木村 結衣)</div>
+    </div>
+
+    <!-- DISCREPANCY NOTE -->
+    <div class="discrepancy-note">
+      <div class="note-marker">ANNOTAZIONE AG. FUKUDA</div>
+      <div class="note-text">
+        Discrepanza tra documento d'identità e dichiarazione verbale della vittima.
+        La vittima risulta in evidente stato di shock e non è in grado di fornire chiarimenti
+        coerenti sulla discrepanza. Si annota per eventuale verifica successiva.
+      </div>
+    </div>
+
+    <ul class="detail-list" style="margin-top:10px;">
+      <li><strong>Sesso:</strong> Femminile</li>
+      <li><strong>Età apparente:</strong> ~35-40 anni</li>
+      <li><strong>Abbigliamento:</strong> cappotto scuro, gonna al ginocchio, scarpe con tacco basse (una scarpa rinvenuta a ~2 m dal corpo)</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DESCRIZIONE FATTI -->
+  <div class="section">
+    <div class="section-title">Descrizione dei fatti</div>
+
+    <p style="margin-bottom:8px; font-size:10.5px;">
+      <strong>Ore 22:30 circa</strong> — Segnalazione radio dalla centrale:<br>
+      <em>"Donna a terra, possibile aggressione, zona Higashiyama"</em>
+    </p>
+
+    <p style="margin-bottom:10px; font-size:10.5px;">
+      <strong>Ore 22:34</strong> — Arrivo sul posto. Situazione riscontrata:
+    </p>
+
+    <p style="margin-bottom:8px; font-size:10.5px; padding-left:12px;">
+      Vittima trovata a terra, posizione seduta, appoggiata al muro di un edificio.
+      Cosciente ma in evidente stato di shock. Trema vistosamente. Piange.
+    </p>
+
+    <div class="subsection" style="margin-top:12px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Ferite riscontrate</div>
+      <ul class="wound-list">
+        <li>Escoriazione al ginocchio sinistro (abrasione ~4 cm, sanguinamento lieve)</li>
+        <li>Contusioni multiple al braccio destro (lividi visibili, compatibili con presa violenta)</li>
+        <li>Graffio superficiale allo zigomo sinistro</li>
+        <li>Collant strappato, palmo mani escoriato (caduta)</li>
+      </ul>
+    </div>
+
+    <div class="subsection" style="margin-top:14px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Dichiarazione della vittima (raccolta frammentariamente)</div>
+      <p style="font-size:10.5px; font-style:italic; padding-left:12px; margin-bottom:8px;">
+        "Stavo camminando... tornavo a casa. Due uomini mi hanno bloccata.
+        Uno mi ha afferrata per il braccio, l'altro mi ha spinta a terra. Mi hanno detto..."
+      </p>
+
+      <div class="threat-quote">
+        "Dì a tuo marito di stare attento."
+      </div>
+
+      <p style="font-size:10.5px; font-style:italic; padding-left:12px; margin-top:8px;">
+        "...poi se ne sono andati. Non li ho mai visti prima."
+      </p>
+    </div>
+
+    <div class="subsection" style="margin-top:14px;">
+      <div style="font-weight:bold; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#555; margin-bottom:6px;">Descrizione aggressori (dalla vittima)</div>
+      <div class="attacker-box">
+        <div class="attacker-label">Soggetto 1:</div>
+        Maschio, corporatura robusta, ~175 cm, abiti scuri, guanti neri, volto non visibile (buio)
+      </div>
+      <div class="attacker-box" style="margin-top:6px;">
+        <div class="attacker-label">Soggetto 2:</div>
+        Maschio, corporatura robusta, ~170 cm, abiti scuri, guanti scuri, possibile cicatrice (vittima non sicura)
+      </div>
+      <ul class="detail-list" style="margin-top:8px;">
+        <li>Entrambi parlavano giapponese con accento locale</li>
+        <li>Nessun'arma visibile</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- AZIONI INTRAPRESE -->
+  <div class="section">
+    <div class="section-title">Azioni intraprese</div>
+    <ul class="timeline">
+      <li data-time="22:34">Arrivo sul posto, messa in sicurezza della vittima</li>
+      <li data-time="22:38">Richiesta ambulanza</li>
+      <li data-time="22:40">Perlustrazione zona circostante — esito NEGATIVO (aggressori già allontanati)</li>
+      <li data-time="22:42">Arrivo ambulanza</li>
+      <li data-time="22:45">Vittima RIFIUTA ricovero ospedaliero ("Sto bene, voglio solo andare a casa")</li>
+      <li data-time="22:50">Paramedicale dell'ambulanza medica ferite sul posto</li>
+      <li data-time="23:05">Vittima accompagnata a domicilio</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ACCOMPAGNAMENTO -->
+  <div class="section" style="position:relative;">
+    <div class="section-title">Indirizzo di accompagnamento</div>
+
+    <div class="address-box">
+      Via Yamashina 12, Yamashina-ku, Kyoto
+    </div>
+
+    <div class="address-note">
+      <strong>NOTA:</strong> L'indirizzo di accompagnamento NON corrisponde alla residenza indicata sul documento d'identità
+      (Via Higashiyama 45). La vittima ha indicato Via Yamashina 12 come proprio domicilio.
+    </div>
+
+    <div class="timbro">ARCHI-<br>VIATO<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CLASSIFICAZIONE ED ESITO -->
+  <div class="section">
+    <div class="section-title">Classificazione e seguito</div>
+    <ul class="detail-list">
+      <li><strong>Classificazione:</strong> AGGRESSIONE A SCOPO INTIMIDATORIO</li>
+      <li><strong>Testimoni oculari:</strong> NESSUNO</li>
+      <li><strong>Prove materiali:</strong> NESSUNA (no impronte, no oggetti lasciati)</li>
+      <li><strong>Fermi:</strong> NESSUNO</li>
+      <li><strong>Indagini successive:</strong> richiedesi verifica identità vittima</li>
+    </ul>
+
+    <div class="caso-chiuso" style="margin-top:14px;">
+      CASO ARCHIVIATO — Mancanza di elementi per proseguire
+      <div class="date-auth">
+        Data archiviazione: 28 febbraio 1997 — Autorizzazione: Vice-Ispettore Tanaka H.
+      </div>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div>Rapporto compilato da:</div>
+      <div style="font-weight:bold;">Ag. Fukuda Yuto — Matr. KPD-7734</div>
+      <div style="font-size:9px; color:#666;">Stazione Centrale di Polizia, Kyoto</div>
+      <div style="font-size:9px; color:#666;">Data compilazione: 4 febbraio 1997</div>
+    </div>
+    <div class="firma-line">Firma dell'agente</div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -17,13 +17,13 @@
 
 ## ATTRIBUTI A COLPO D'OCCHIO
 
-| PG | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Aura | **STRESS** |
-|----|----------|----------|----------|----------|---------|------|------------|
-| Yamamoto | +1 | 0 | +1 | **+2** | 0 | +1 | +5 |
-| Honda | **+2** | -1 | 0 | **+2** | 0 | +1 | +4 |
-| Nakamura | 0 | **+2** | +1 | 0 | **+2** | 0 | +5 |
-| Sato | -1 | +1 | -1 | **+2** | +1 | 0 | +2 |
-| Fujita | +1 | 0 | **+2** | +1 | +1 | 0 | +5 |
+| PG | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | **KI (TENUTA)** |
+|----|----------|----------|----------|----------|---------|----------|------------|
+| Yamamoto | +1 | 0 | +1 | **+2** | 0 | 0 | +5 |
+| Honda | **+2** | -2 | 0 | **+2** | 0 | **+2** | +4 |
+| Nakamura | 0 | **+2** | +1 | 0 | **+2** | -1 | +5 |
+| Sato | -1 | +1 | -1 | **+2** | +1 | **+2** | +2 |
+| Fujita | +1 | 0 | **+2** | +1 | +1 | -1 | +5 |
 
 **Legenda**: Grassetto = punto di forza
 
@@ -61,7 +61,7 @@
 | Interrogatorio lungo | Nakamura | Pazienza +2, Ascolto +2 |
 | Analisi prove tecniche | Sato | Lucidità +2 |
 | Capire moventi, profilo | Fujita | Silenzio +2, Lucidità +1 |
-| Decisioni, leadership | Yamamoto | Lucidità +2, Aura +1 |
+| Decisioni, leadership | Yamamoto | Lucidità +2 |
 | Resistere a minacce | Fujita | Silenzio +2 |
 | Contatti nel sottobosco | Honda | (Conoscenza Oda) |
 | Questioni legali | Nakamura | (Conoscenza Hideki) |
@@ -80,7 +80,7 @@
 
 ---
 
-## STRESS INIZIALE
+## KI INIZIALE (TENUTA)
 
 ```
 Yamamoto  [■■■■■□□□□□] +5 Buono

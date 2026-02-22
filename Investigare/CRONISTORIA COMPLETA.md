@@ -251,7 +251,7 @@ Per Yui (Sorella di Sakura) è la goccia che fa traboccare il vaso. Suo figlio, 
 
 ### L'antefatto
 
-Da settembre 1996, Yui (Sorella di Sakura) ha scoperto che il marito Hiro è **sterile dalla nascita** (azoospermia congenita) - emerge da esami medici per altri problemi di salute.
+Da settembre 1996, un referto urologico (emerso da esami per altri problemi di salute) ha confermato che Hiro è **sterile dalla nascita** (azoospermia congenita). **Yui** (Sorella di Sakura) è andata a ritirare il referto al posto del marito e ha letto i risultati. Non ha comunicato nulla a Hiro — lui non sa di essere sterile. Per Yui la realizzazione è devastante: Kenta **non può essere figlio di Hiro**. Il test del DNA del 1980 era falso. Kenta è figlio di Makoto (Giudice).
 
 La realizzazione è devastante: Kenta (Figlio di Yui) **non può essere figlio di Hiro**. Il test del DNA del 1980 era falso. Kenta è figlio di Makoto (Giudice).
 
@@ -369,16 +369,15 @@ Paga **500.000 yen** di anticipo in contanti.
 
 **15 marzo**: Verifica del prototipo. Sakai sta lavorando.
 
-**28 marzo**: Ritiro della penna modificata. Paga altri **2 milioni di yen** in contanti.
-
-Totale pagato: **2.5 milioni di yen**.
+**28 marzo**: Ultimo sopralluogo da Sakai. La penna non è ancora pronta. Sakai conferma che sarà completata entro la prima settimana di aprile.
 
 **I prelievi**: Sul conto bancario di Sakura risultano prelievi in contanti anomali:
-- 3 marzo: ¥600.000
-- 14 marzo: ¥400.000  
-- 27 marzo: ¥1.600.000
+- 3 febbraio: ¥600.000 (sportello Higashiyama)
+- 25 febbraio: ¥400.000 (sportello Fushimi — zona del laboratorio di Sakai)
+- 14 marzo: ¥400.000 (sportello Kawaramachi)
+- 27 marzo: ¥1.600.000 (sportello Gion)
 
-Nessuna giustificazione apparente per questi prelievi.
+Totale: **¥3.000.000**. Nessuna giustificazione apparente. Anticipo a Sakai (¥500.000 il 5 marzo), saldo (¥2.000.000 il 4 aprile). La differenza copre spese di viaggio e imprevisti.
 
 **Nel laboratorio di Sakai** restano circa **2.3 milioni di yen** in contanti in una cassetta (ha speso qualcosa per i componenti).
 
@@ -402,7 +401,7 @@ Nessuna giustificazione apparente per questi prelievi.
 
 ## MERCOLEDÌ 2 APRILE 1997
 
-**Sakura** (Moglie del Giudice): Invia messaggio a Sakai (Tecnico penna): "Ho fretta. Il lavoro deve finire."
+**Sakura** (Moglie del Giudice): Chiama Sakai (Tecnico penna) da un telefono pubblico: "Ho fretta. Il lavoro deve finire." (Nessuna traccia su tabulato o cellulare — Sakai è paranoico e usa solo il telefono del negozio.)
 
 **Yui** (Sorella di Sakura): Fa ricerche al computer sugli ospiti dell'evento.
 
@@ -412,13 +411,13 @@ Nessuna giustificazione apparente per questi prelievi.
 
 **Makoto** (Giudice): Sempre più irritato dalle telefonate. Non trova la sua penna preferita da giorni.
 
-**Sakura** (Moglie del Giudice): Riceve conferma da Sakai. La penna è pronta.
+**Sakura** (Moglie del Giudice): Riceve conferma telefonica da Sakai (stessa procedura — telefono pubblico). La penna è pronta.
 
 ---
 
 ## VENERDÌ 4 APRILE 1997
 
-**Sakura** (Moglie del Giudice): Ultimo viaggio a Fushimi. Ritira la penna modificata. Paga il saldo in contanti.
+**Sakura** (Moglie del Giudice): Ultimo viaggio a Fushimi. Ritira la penna modificata. Paga il saldo di **2 milioni di yen** in contanti. Totale pagato a Sakai: **2.5 milioni di yen**.
 
 ---
 
@@ -440,7 +439,7 @@ Nessuna giustificazione apparente per questi prelievi.
 
 **Sakura**: "Presto. Ti prometto che presto sarà tutto diverso."
 
-Shin le scrive un messaggio dopo l'incontro: **"Non sopporto più vederti con lui. Vorrei che sparisse."**
+Shin sfoga la sua frustrazione a voce durante l'incontro. L'SMS incriminante sul cellulare risale al 25 marzo: **"A volte vorrei che sparisse. Che non esistesse. Così potremmo essere una famiglia vera."**
 
 ---
 
@@ -646,15 +645,19 @@ Il cuore del giudice, già compromesso dalla **tetrodotossina** che stava causan
 
 **07:00** - Chiyo porta il tè nello studio come ogni mattina. Trova Makoto riverso sulla scrivania. Urla.
 
-**07:05** - Il maggiordomo **Ueno Masa** chiama il 110 (polizia) e il 119 (ambulanza).
+**07:12** - Il maggiordomo **Ueno Masa** chiama il 110 (polizia) e il 119 (ambulanza).
 
-**07:15** - Arriva la prima pattuglia.
+**07:28** - Arriva la prima pattuglia (Agente Yamada Tetsuo, Pattuglia 7-B).
 
-**07:25** - Arrivano i paramedici. Constatano il decesso. Morte stimata: 8-10 ore prima.
+**07:35** - Constatazione del decesso (rigor mortis avanzato). Morte stimata: 8-10 ore prima.
 
-**07:30** - La scena viene sigillata. La penna viene **fotografata** ma **non presa in considerazione** - sembra una normale stilografica. Nessuno nota che è fuori posto.
+**07:40** - Richiesta medico legale e scientifica.
 
-**08:00** - I giocatori (squadra investigativa) vengono chiamati.
+**07:45** - Isolamento scena, nastro perimetrale.
+
+**08:00** - Avviso alla Sezione Omicidi. I giocatori (squadra investigativa) vengono chiamati.
+
+**08:15** - Arrivo scientifica (foto, impronte, primi rilievi).
 
 **08:30** - Sakura (Moglie del Giudice) viene informata a casa di Kono Akemi. "Crolla" dalla notizia. (Finge.)
 
@@ -699,8 +702,8 @@ Il cuore del giudice, già compromesso dalla **tetrodotossina** che stava causan
 
 1. Testimonianza maggiordomo: Rientrata 3 minuti prima dell'evento
 2. Testimonianza autista: Nervosa
-3. Messaggi cercapersone: "Lavoro deve finire"
-4. Viaggi a Fushimi: 5, 15, 28 marzo (verificabili da pedaggi)
+3. SMS cellulare: "Lavoro deve finire"
+4. Viaggi a Fushimi: 5, 15, 28 marzo e 4 aprile (verificabili da pedaggi)
 5. Prelievi contanti: 2.5 milioni di yen senza giustificazione
 6. Sakai Toru: Può descrivere la cliente
 7. Nel laboratorio Sakai: 2.3 milioni in contanti
@@ -792,7 +795,7 @@ Il cuore del giudice, già compromesso dalla **tetrodotossina** che stava causan
 | Settembre 1994 | Yakuza compra il debito del giudice |
 | 1994-1997 | Processo Hayashi - il giudice procrastina |
 | Aprile 1995 | Kenta rifiutato dalla scuola Rakusei |
-| Agosto 1996 | Yui scopre la sterilità del marito |
+| Settembre 1996 | Yui ritira il referto urologico di Hiro e scopre che è sterile (Hiro non lo sa) |
 | Gennaio 1997 | Yui affronta il giudice in tribunale |
 | Febbraio 1997 | Yui aggredita dalla yakuza |
 | Marzo 1997 | **Condanna Hayashi** (dopo l'aggressione) |

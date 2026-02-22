@@ -1,5 +1,5 @@
-# MESSAGGI CERCAPERSONE
-## Comunicazioni Sakura - Shin
+# MESSAGGI CELLULARE
+## SMS Sakura - Shin
 
 ---
 
@@ -8,23 +8,23 @@
 I giocatori possono recuperare questi messaggi tramite:
 1. **Mandato al gestore telefonico** - Richiede motivazione e tempo (24-48h)
 2. **Perquisizione casa Shin** - Trova i messaggi salvati
-3. **Perquisizione effetti Sakura** - Cercapersone nella borsa
+3. **Perquisizione effetti Sakura** - Cellulare nella borsa
 
 ---
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║                    NTT DOCOMO - SERVIZIO PAGER                       ║
+║                    NTT DOCOMO - SERVIZIO SMS                         ║
 ║                    ESTRATTO MESSAGGI ARCHIVIATI                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
-║   Numero pager: 090-XXXX-5567                                        ║
+║   Numero cellulare: 090-XXXX-5567                                    ║
 ║   Intestatario: ISHIDA Sakura                                        ║
 ║   Periodo estratto: Gennaio - Aprile 1997                            ║
 ║                                                                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║   Nota: I messaggi sono visualizzati in ordine cronologico.          ║
-║   Mittente identificato tramite prefisso o firma.                    ║
+║   Mittente identificato tramite numero o firma.                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 
 ═══════════════════════════════════════════════════════════════════════

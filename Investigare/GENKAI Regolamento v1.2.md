@@ -1,12 +1,11 @@
 # GENKAI 限界
-## Regolamento Completo
+## Regolamento v1.2
 
 
-Da aggiungere per salire di livello
-Ki massimo iniziale è 9, si può aumentare spendendo punti esperiernza
-per aumentarlo si deve spendere per portarlo a 10, 9 punti esperienza, per portalo a 11 quando si è a 10 , 10 punti esperienza.
-Attributi non subiscono aumenti in quanto sono in variazione continua.
-Gou da definire come posso aumentare e possono essere spesi punti esperienza per limitare il costo quindi da 2 a 1 di KI, da definire.
+> **Note di design (da rimuovere prima della stampa):**
+> - Progressione Ki: massimo iniziale 9, costo aumento = valore attuale in punti esperienza (9→10 costa 9 PE, 10→11 costa 10 PE)
+> - Attributi non aumentano (in variazione continua)
+> - Gou: da definire meccanica aumento e possibilità di ridurre costo Ki con PE (da 2 a 1)
 
 
 # PANORAMICA
@@ -30,7 +29,7 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 | **Silenzio** | Calma interiore, non reagire d'impulso, incassare provocazioni, mantenere il controllo quando tutto spinge a esplodere. |
 | **Lucidità** | Vedere chiaro, collegare i pezzi, analizzare una scena, non perderti nei dettagli, capire cosa è importante. |
 | **Ascolto**  | Far parlare gli altri, cogliere il non detto, leggere tra le righe, capire cosa una persona nasconde. |
-| **Aura**     | Presenza, autorità, rispetto che ispiri. Farti prendere sul serio, intimidire, comandare attenzione. |
+| **Presenza**     | Presenza, autorità, rispetto che ispiri. Farti prendere sul serio, intimidire, comandare attenzione. |
 
 ### Procedura di Generazione
 
@@ -118,7 +117,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 
 #### Voce del Tuono
 *La tua presenza diventa schiacciante. Il PNG sente il peso della tua autorità.*
-- **Attributo**: Aura
+- **Attributo**: Presenza
 - **Successo**: Il PNG è completamente sottomesso, cede o si ritira
 - **Fallimento**: Il PNG è intimidito e scosso, ma non cede completamente
 
@@ -198,7 +197,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 
 #### Pugno di Ferro
 *La tua pressione psicologica è implacabile. Pochi resistono.*
-- **Attributo**: Aura
+- **Attributo**: Presenza
 - **Successo**: Il PNG cede su un punto importante - confessa, collabora, si ritira
 - **Fallimento**: Il PNG è scosso, sotto pressione, ma non cede completamente
 
@@ -367,7 +366,7 @@ Quando interagisci con un PNG:
 
 Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. Cambiano solo per eventi narrativi significativi (tradimento grave, salvare la vita, scoperta shock). Il GM decide.
 
-> **Esempio**: Interroghi un testimone diffidente (En -2 con te). Hai Aura 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento. Perdi 1 punto. Se il dado puro fosse stato 5, con malus sarebbe 7, successo - ma dato che il dado puro (5) era già successo, non c'è calo di En.
+> **Esempio**: Interroghi un testimone diffidente (En -2 con te). Hai Presenza 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento. Perdi 1 punto. Se il dado puro fosse stato 5, con malus sarebbe 7, successo - ma dato che il dado puro (5) era già successo, non c'è calo di En.
 
 ---
 
@@ -469,7 +468,7 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 |--------|-----------|---------------|---------|
 | Schivare, spostarsi | **Lucidità** | Vedi arrivare il colpo, reagisci | Ti butti dietro la scrivania prima che spari |
 | Incassare, resistere | **Silenzio** | Solo colpi non letali | Prendi lo schiaffo senza reagire |
-| Intimidire per fermare | **Aura** | Provi a bloccare l'aggressore | "Fermo. Polizia." Lo guardi negli occhi |
+| Intimidire per fermare | **Presenza** | Provi a bloccare l'aggressore | "Fermo. Polizia." Lo guardi negli occhi |
 | Aspettare il momento | **Pazienza** | Ti ripari, cerchi un'apertura | Resti immobile, aspetti che si distragga |
 | Non farti coinvolgere | **Distacco** | Ti allontani, non è affar tuo | Ti defili dalla rissa senza farti notare |
 | Percepire il pericolo | **Ascolto** | Situazioni speciali | Bendato, senti i passi avvicinarsi |
@@ -503,7 +502,7 @@ Durante l'avventura, il GM attiva i **Kage** dei PG. La vita privata irrompe nel
 Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 - Ha mantenuto la calma (Silenzio)?
 - Ha ascoltato l'altro (Ascolto)?
-- Ha fatto valere la sua posizione (Aura)?
+- Ha fatto valere la sua posizione (Presenza)?
 - Ha trovato una soluzione (Lucidità)?
 - È rimasto professionale nonostante tutto (Distacco)?
 
@@ -583,11 +582,11 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **GM**: "Ti sta venendo addosso di nuovo. Cosa fai?"
 
-**Giocatore**: "Uso Aura per fermarlo. Gli grido 'FERMO! POLIZIA!'"
+**Giocatore**: "Uso Presenza per fermarlo. Gli grido 'FERMO! POLIZIA!'"
 
-**GM**: "Tira Aura."
+**GM**: "Tira Presenza."
 
-**Giocatore** (Aura 8): "Ho fatto 5. Successo."
+**Giocatore** (Presenza 8): "Ho fatto 5. Successo."
 
 **GM**: "Si blocca. Vede la tua espressione, sente l'autorità nella tua voce. Le mani gli tremano. 'Io... io non volevo...' Inizia a crollare."
 
@@ -619,9 +618,9 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore**: "Vado da Goto e gli chiedo accesso ai file riservati."
 
-**GM**: "Goto ti guarda con sufficienza. Tira Aura con -2."
+**GM**: "Goto ti guarda con sufficienza. Tira Presenza con -2."
 
-**Giocatore** (Aura 7): "Tiro... dado puro 5. Con il malus fa 7. Esattamente uguale al mio attributo."
+**Giocatore** (Presenza 7): "Tiro... dado puro 5. Con il malus fa 7. Esattamente uguale al mio attributo."
 
 **GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Goto sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
 
@@ -727,4 +726,4 @@ Arma da fuoco: -4 Ki o fuori gioco
 
 ---
 
-*GENKAI 限界 - Regolamento v1.0*
+*GENKAI 限界 - Regolamento v1.2*

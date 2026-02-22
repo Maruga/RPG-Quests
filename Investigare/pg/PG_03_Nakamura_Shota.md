@@ -18,47 +18,47 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 7 | Normale |
-| **Pazienza** | 10 | Punto di forza - puoi aspettare ore |
-| **Silenzio** | 8 | Sai quando tacere |
-| **Lucidità** | 7 | Normale |
-| **Ascolto** | 10 | Eccellente - senti le bugie |
-| **Aura** | 7 | Normale - non intimidisci, convinci |
+| **Distacco** | 4 | Normale |
+| **Pazienza** | 6 | Punto di forza - puoi aspettare ore |
+| **Silenzio** | 5 | Sai quando tacere |
+| **Lucidità** | 4 | Normale |
+| **Ascolto** | 6 | Eccellente - senti le bugie |
+| **Presenza** | 3 | Normale - non intimidisci, convinci |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Nessun attributo può superare 11
+> - Nessun attributo può superare 8
 
 ---
 
-## STRESS/BENESSERE
+## KI (TENUTA)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
 
 ---
 
-## IL DEBITO
+## GOU (DEBITO)
 
 Scegli **uno** dei seguenti Debiti:
 
 ### Opzione 1: Ombra della Verità
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
 - **Attributo**: Ascolto
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Ascolto): Sai che mente e su cosa sta mentendo
 - **Fallimento**: Sai che mente, ma non riesci a capire su quale parte
 
 ### Opzione 2: Porta Socchiusa
 *Le persone si aprono con te. Dicono più di quanto vorrebbero.*
 - **Attributo**: Ascolto
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Ascolto): Il PNG rivela qualcosa che non voleva assolutamente dire
 - **Fallimento**: Il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo
 
 ### Opzione 3: L'Ora Giusta
 *Sai quando è il momento perfetto per parlare, agire, colpire.*
 - **Attributo**: Pazienza
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Pazienza): La prossima azione è un successo automatico
 - **Fallimento**: Hai +2 al prossimo tiro (senti che il momento è vicino, ma non perfetto)
 

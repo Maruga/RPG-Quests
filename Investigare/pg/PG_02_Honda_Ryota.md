@@ -18,47 +18,47 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 10 | Punto di forza - freddo sulla scena |
-| **Pazienza** | 5 | Impulsivo, cerchi la scorciatoia |
-| **Silenzio** | 7 | Normale |
-| **Lucidità** | 10 | Eccellente - noti ogni dettaglio |
-| **Ascolto** | 7 | Normale |
-| **Aura** | 8 | Sicuro di te, a volte troppo |
+| **Distacco** | 6 | Punto di forza - freddo sulla scena |
+| **Pazienza** | 2 | Impulsivo, cerchi la scorciatoia |
+| **Silenzio** | 4 | Normale |
+| **Lucidità** | 6 | Eccellente - noti ogni dettaglio |
+| **Ascolto** | 4 | Normale |
+| **Presenza** | 6 | Sicuro di te, a volte troppo |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Nessun attributo può superare 11
+> - Nessun attributo può superare 8
 
 ---
 
-## STRESS/BENESSERE
+## KI (TENUTA)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
 
 ---
 
-## IL DEBITO
+## GOU (DEBITO)
 
 Scegli **uno** dei seguenti Debiti:
 
 ### Opzione 1: Occhio della Gru
 *Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci immediatamente il significato
 - **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
 
 ### Opzione 2: Teatro delle Ombre
 *Guardando una scena, visualizzi come si sono svolti gli eventi.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa degli eventi
 - **Fallimento**: Vedi frammenti disconnessi, immagini sfocate
 
 ### Opzione 3: Cuore di Ghiaccio
 *Ti distacchi completamente dalla situazione. Niente ti tocca.*
 - **Attributo**: Distacco
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Distacco): Per il resto della scena, agisci normalmente senza bisogno di tiri emotivi
 - **Fallimento**: Resti lucido ma la tensione si accumula - il prossimo tiro emotivo ha -2
 

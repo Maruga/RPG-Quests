@@ -58,7 +58,7 @@ Questo handout è disponibile **SOLO SE** si verifica l'evento:
 ║    Accettai perché volevo che Sakura sposasse un uomo                ║
 ║    importante. Perché mi vergognavo di Yui e della sua               ║
 ║    passione per la cucina. Perché pensavo che l'arte                 ║
-║    fosse tutto e che lei fosse una delusione.                        ║
+║    fosse tutto è che lei fosse una delusione.                        ║
 ║                                                                      ║
 ║    Il medico si chiamava YAMAMOTO NAOKI.                             ║
 ║    Lavorava all'Ospedale Universitario.                              ║

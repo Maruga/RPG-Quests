@@ -6,7 +6,7 @@
 | ------------------------ | ---------------------------------------- |
 | [[CRONISTORIA COMPLETA]] | Timeline 1955-1997, tutti gli eventi     |
 | [[Inizio - Incarico]]         | Setup, eventi reattivi, piste, soluzione |
-| [[Meccanica]]            | Regole del sistema di gioco              |
+| [[GENKAI Regolamento v1.2]] | Regole del sistema di gioco           |
 | [[PNG Primari]]          | Scheda riassuntiva PNG principali        |
 | [[PNG Secondari]]        | Scheda riassuntiva PNG secondari         |
 | [[PG Riassunto]]         | Scheda riassuntiva tutti i PG            |
@@ -19,23 +19,23 @@
 ### Famiglia Ishida
 | File | Ruolo | Colpevole? |
 |------|-------|------------|
-| [[01_Ishida_Makoto_Giudice]] | Vittima | - |
-| [[02_Ishida_Sakura_Moglie]] | Moglie | ★ SÌ (penna) |
-| [[09_Ueno_Masa_Maggiordomo]] | Maggiordomo | Testimone chiave |
+| [[Ishida_Makoto_Il_Giudice]] | Vittima | - |
+| [[Ishida_Sakura_Moglie_del_Giudice]] | Moglie | ★ SÌ (penna) |
+| [[Ueno_Masa_Maggiordomo]] | Maggiordomo | Testimone chiave |
 
 ### Famiglia Kimura
 | File | Ruolo | Colpevole? |
 |------|-------|------------|
-| [[03_Kimura_Yui_Sorella]] | Gemella di Sakura | ★ SÌ (veleno) |
-| [[04_Kimura_Hiro_Marito]] | Marito di Yui | No |
+| [[Kimura_Yui_Sorella_di_Sakura]] | Gemella di Sakura | ★ SÌ (veleno) |
+| [[Kimura_Hiro_Marito_di_Yui]] | Marito di Yui | No |
 
 ### Altri Principali
 | File | Ruolo | Colpevole? |
 |------|-------|------------|
-| [[05_Takeda_Noboru_Padre]] | Padre gemelle | Complice DNA |
-| [[06_Ogawa_Shin_Amante]] | Amante Sakura | ★ FALSA PISTA |
-| [[07_Sakai_Toru_Tecnico]] | Costruttore penna | Complice |
-| [[08_Chef_Tanaka_Ryo]] | Chef evento | Testimone chiave |
+| [[Takeda_Noboru_Padre_delle_Gemelle]] | Padre gemelle | Complice DNA |
+| [[Ogawa_Shin_Amante_di_Sakura]] | Amante Sakura | ★ FALSA PISTA |
+| [[Sakai_Toru_Tecnico_della_Penna]] | Costruttore penna | Complice |
+| [[Tanaka_Ryo_Chef_Evento]] | Chef evento | Testimone chiave |
 
 ---
 
@@ -43,13 +43,13 @@
 
 | File | Tipo | Rilevanza |
 |------|------|-----------|
-| [[LUOGO_01_Villa_Ishida]] | Scena del crimine | ★★★ Critica |
-| [[LUOGO_02_Casa_Kimura]] | Residenza Yui | ★★★ Computer con prove |
-| [[LUOGO_03_Galleria_Nijo]] | Evento | ★★★ Dove è stato avvelenato |
-| [[LUOGO_04_Laboratorio_Sakai]] | Clandestino | ★★ Pista penna |
-| [[LUOGO_05_Laboratorio_Ogawa]] | Studio amante | ★ Falsa pista |
-| [[LUOGO_06_Casa_Takeda]] | Padre | ★★ Evento suicidio |
-| [[LUOGO_07_Luoghi_Secondari]] | Vari | Tribunale, ospedale, ecc. |
+| [[Villa_Ishida]] | Scena del crimine | ★★★ Critica |
+| [[Casa_Kimura]] | Residenza Yui | ★★★ Computer con prove |
+| [[Galleria_Nijo_Art_Space]] | Evento | ★★★ Dove è stato avvelenato |
+| [[Laboratorio_Sakai]] | Clandestino | ★★ Pista penna |
+| [[Laboratorio_Ogawa]] | Studio amante | ★ Falsa pista |
+| [[Casa_Takeda]] | Padre | ★★ Evento suicidio |
+| [[Luoghi_Secondari]] | Vari | Tribunale, ospedale, ecc. |
 
 ---
 
@@ -68,16 +68,29 @@
 | File | Come ottenerlo |
 |------|----------------|
 | [[File_Computer_Yui]] | Sequestro + analisi |
-| [[Lettere_Tabulato_Yui]] | Tabulati telefonici |
-| [[Messaggi_Cercapersone]] | Mandato o perquisizione |
-| [[Tracce_Finanziarie]] | Indagine bancaria |
+| [[Lettere_Tabulato_Yui]] | Tabulati telefonici Yui |
+| [[Tabulati_Casa_Ishida]] | Mandato NTT (tabulati villa) |
+| [[Messaggi_Cellulare]] | Mandato o perquisizione |
+| [[Tracce_Finanziarie]] | Indagine bancaria (conto Sakura) |
+| [[Estratto_Conto_Giudice]] | Mandato bancario (conto giudice) |
 | [[Lista_Invitati_Evento]] | Galleria Nijo |
+| [[Test_DNA_Falsificato]] | Archivi ospedalieri o Casa Takeda |
+
+### Documenti Polizia/Tribunale
+| File | Come ottenerlo |
+|------|----------------|
+| [[Rapporto_Aggressione_Fukuda]] | Archivi stazione di polizia |
+| [[Fascicolo_Penale_Sakai]] | Database polizia |
+| [[Scheda_Penale_Mori]] | Database polizia |
+| [[Registro_Visitatori_Tribunale]] | Richiesta formale al tribunale |
+| [[Telecamere_Tribunale]] | Richiesta formale (nastri VHS, 90 gg) |
 
 ### Piste Secondarie
 | File | Utilità |
 |------|---------|
 | [[Caso_Hayashi_Documenti]] | Collegamento yakuza/corruzione |
 | [[Articoli_Giornale]] | Indizio caso chiuso velocemente |
+| [[Registro_Debiti_Noda]] | Perquisizione Casa da Tè o pressione Noda |
 
 ### Eventi Reattivi
 | File | Trigger |
@@ -91,7 +104,7 @@
 ### Sistema
 | File | Contenuto |
 |------|-----------|
-| [[Sistema_di_Gioco]] | Regole complete |
+| [[GENKAI Regolamento v1.2]] | Regole complete |
 | [[Copioni PNG]] | Per scene personali |
 
 ### I 5 Investigatori
@@ -137,7 +150,7 @@ Penna non presa    → Sakura la fa sparire
 |-----------|----------|
 | PNG totali | ~30 |
 | Luoghi | 12 |
-| Handout | 14 |
+| Handout | 23 |
 | PG | 5 |
 | **File totali** | **45** |
 
@@ -149,4 +162,4 @@ Penna non presa    → Sakura la fa sparire
 
 ---
 
-*Ultimo aggiornamento: Gennaio 2026*
+*Ultimo aggiornamento: Febbraio 2026*

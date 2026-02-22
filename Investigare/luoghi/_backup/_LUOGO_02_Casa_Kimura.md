@@ -181,6 +181,45 @@ Tetrodotossina - effetti
 
 ---
 
+## MECCANICHE
+
+### Parlare con Yui
+Yui è un'assassina che finge normalità. Non serve un tiro per farla parlare — risponde alle domande educatamente. Ma nasconde tutto.
+
+**Ascolto** — Se un PG vuole capire se Yui mente o nasconde qualcosa:
+- **Successo**: "È troppo calma. Risponde velocemente, come se avesse già preparato le risposte. C'è tensione sotto la superficie."
+- **Fallimento**: -1 Ki. Non coglie nulla — Yui sembra una donna ordinaria e triste.
+
+**Presenza** — Per fare pressione su Yui (domande dirette, confronto con prove):
+- **Successo**: Yui vacilla, perde il controllo per un istante — un'emozione vera trapela
+- **Fallimento**: -1 Ki. Yui rimane impassibile e il PG si sente a disagio per aver insistito
+
+### Parlare con Hiro
+Hiro è un poliziotto onesto e ignaro. Coopera. Non servono tiri a meno che non gli si riveli qualcosa di devastante (sterilità, tradimento di Yui).
+
+**Distacco** (per il PG che rivela la verità a Hiro):
+- **Successo**: Mantiene il controllo professionale durante il crollo emotivo di Hiro
+- **Fallimento**: -1 Ki. La sofferenza di Hiro colpisce il PG — difficile proseguire l'interrogatorio
+
+### Il computer (PC-9801)
+I PG devono decidere di sequestrarlo. Se lo sequestrano, il tecnico della polizia recupera i file cancellati (nessun tiro — è lavoro del tecnico). I PG ricevono l'handout "File Computer Yui" dopo 24-48 ore.
+
+### Perquisizione della casa
+Le prove fisiche (ricette fugu, appunti, carta d'identità di Sakura) si trovano cercando nei posti giusti — nessun tiro. Se i PG dicono "cerchiamo in cucina", trovano le ricette. Se dicono "controlliamo i documenti di Yui", trovano la carta d'identità rubata.
+
+### Gou utili
+- **Ombra della Verità** (Ascolto, 2 Ki): Yui mente? Sì — su cosa? Successo: sul rapporto col giudice e sulla sera dell'8 aprile. Fallimento: mente, ma non si capisce su cosa.
+- **Porta Socchiusa** (Ascolto, 2 Ki): Yui lascia scappare qualcosa che non voleva dire
+
+### En iniziale
+| PNG | En | Motivo |
+|-----|-----|--------|
+| Yui | 0 | Cortese ma guardinga |
+| Hiro | +1 | Poliziotto, rispetta colleghi investigatori |
+| Kenta | 0 | Adolescente confuso, non capisce cosa succede |
+
+---
+
 ## NOTE PER IL MASTER
 
 ### Prima visita

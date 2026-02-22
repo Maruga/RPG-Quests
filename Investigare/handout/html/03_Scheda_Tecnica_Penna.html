@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analisi Tecnica Reperto — SC-1997-0409-001/REP-001</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .org-sub { font-size: 11px; color: #d0c0a0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 16px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── DETAILS ── */
+  .subsection { margin-bottom: 12px; }
+  .subsection-title { font-weight: bold; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── ANOMALY ── */
+  .anomaly {
+    background: #fff3e0; border: 1px solid #e0a040; padding: 2px 6px;
+    font-weight: bold; color: #8b4000;
+  }
+  .critical {
+    background: #ffe0e0; border-left: 3px solid #8b0000; padding: 2px 6px; font-weight: bold;
+  }
+
+  /* ── COMPONENT TABLE ── */
+  .comp-table { width: 100%; border-collapse: collapse; font-size: 10.5px; margin: 8px 0; }
+  .comp-table th {
+    background: #f0ede6; text-align: left; padding: 6px 10px;
+    border: 1px solid #999; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #333;
+  }
+  .comp-table td { padding: 6px 10px; border: 1px solid #bbb; vertical-align: top; }
+  .comp-table tr:nth-child(even) { background: #fafaf6; }
+
+  /* ── SCHEMA BOX ── */
+  .schema-box {
+    background: #f8f8f0; border: 1px solid #ccc; padding: 14px 18px; margin: 10px 0;
+    font-family: "Courier New", monospace; font-size: 10px; line-height: 1.6;
+  }
+  .schema-box .arrow { color: #666; }
+  .schema-box .component { font-weight: bold; color: #1a1a2e; }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #f0ede6; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── CONCLUSION ── */
+  .conclusion-box {
+    border: 2px solid #8b0000; padding: 12px 16px; margin: 10px 0; background: #fff8f8;
+  }
+
+  /* ── SIGNATURE ── */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* ── STAMP ── */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 9px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* ── SEQUENCE LIST ── */
+  .seq-list { list-style: none; padding: 0; counter-reset: seq; }
+  .seq-list li {
+    padding: 4px 0 4px 28px; position: relative; font-size: 10.5px;
+    counter-increment: seq;
+  }
+  .seq-list li::before {
+    content: counter(seq) ".";
+    position: absolute; left: 4px; font-weight: bold; color: #1a1a2e;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 03 — Scheda Tecnica Penna</h2>
+  <p><strong>Quando consegnare:</strong> Solo SE i giocatori hanno sequestrato la penna (OBJ-06) dalla scena del crimine E hanno richiesto analisi tecnica. Tempo: 48-72 ore dalla richiesta. Se non sequestrano la penna entro 24-48 ore, Sakura la fa sparire.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>La penna è un'arma:</strong> modificata con batterie, trasformatore, condensatore e interruttore a pressione</li>
+    <li><strong>Peso anomalo</strong> (+17g) e lunghezza anomala (+2mm) — segnali di manomissione</li>
+    <li><strong>Scarica da ~50.000V</strong> quando si preme per scrivere — il pennino diventa conduttore</li>
+    <li><strong>In soggetto sano:</strong> probabilmente non letàle. <strong>In soggetto con cuore compromesso (TTX):</strong> LETALE</li>
+    <li><strong>Costruzione artigianale di alta qualità</strong> — richiede esperto di elettronica e miniaturizzazione</li>
+    <li>Batterie scariche, condensatore scarico = il dispositivo è stato usato una volta</li>
+  </ul>
+  <p><strong>Prossimi passi investigativi:</strong></p>
+  <ul>
+    <li>Chi poteva costruire un dispositivo simile? (cerca nei fascicoli condannati) porta a Sakai</li>
+    <li>Chi poteva posizionare la penna sulla scrivania del giudice? porta a Sakura</li>
+    <li>Collegamento con l'autopsia: il cuore era già compromesso dalla TTX, la scarica ha causato fibrillazione fatale</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">POLIZIA PREFETTURALE DI KYOTO</div>
+    <div class="org-jp">京都府警察本部</div>
+    <div class="org-sub">Laboratorio Scientifico</div>
+    <div class="doc-type">RAPPORTO ANALISI TECNICA</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Reperto</div><div class="value">SC-1997-0409-001/REP-001</div></div>
+    <div class="field"><div class="label">Descrizione</div><div class="value">Penna stilografica</div></div>
+    <div class="field"><div class="label">Data analisi</div><div class="value">12 aprile 1997</div></div>
+    <div class="field"><div class="label">Tecnico responsabile</div><div class="value">Ing. Morita Akira</div></div>
+  </div>
+
+  <!-- IDENTIFICAZIONE OGGETTO -->
+  <div class="section">
+    <div class="section-title">Identificazione oggetto</div>
+    <ul class="detail-list">
+      <li><strong>Marca:</strong> Pilot</li>
+      <li><strong>Modello:</strong> Custom 845</li>
+      <li><strong>Colore:</strong> Corpo nero laccato, finiture in oro</li>
+      <li><strong>Lunghezza:</strong> 144 mm <span class="anomaly">Standard: 142 mm — ANOMALIA</span></li>
+      <li><strong>Peso:</strong> 48 g <span class="anomaly">Standard: 31 g — ANOMALIA SIGNIFICATIVA (+17 g)</span></li>
+      <li><strong>Numero serie:</strong> C845-1992-07721</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAME ESTERNO -->
+  <div class="section">
+    <div class="section-title">Esame esterno</div>
+    <ul class="detail-list">
+      <li>Superficie esterna: integra, nessun segno di manomissione visibile a occhio nudo</li>
+      <li>Clip: funzionante</li>
+      <li>Cappuccio: normale</li>
+      <li>Pennino: oro 18K, funzionante, tracce di inchiostro nero</li>
+    </ul>
+    <div class="note-box" style="margin-top:10px;">
+      <strong>Nota:</strong> Il peso anomalo (+17 g rispetto allo standard) ha suggerito la presenza di componenti interni non originali. Si e proceduto con apertura e analisi interna.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAME INTERNO -->
+  <div class="section" style="position:relative;">
+    <div class="section-title" style="color:#8b0000; border-color:#8b0000;">Esame interno</div>
+
+    <p style="font-weight:bold; margin-bottom:10px;">L'apertura del corpo della penna ha rivelato una MODIFICA STRUTTURALE NON ORIGINALE.</p>
+
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th style="width:30px;">N.</th>
+          <th style="width:180px;">Componente</th>
+          <th>Specifiche</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Serbatoio inchiostro</strong></td>
+          <td>Capacita ridotta (50% dell'originale). Funzionante.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Batterie miniaturizzate (x2)</strong></td>
+          <td>Ossido d'argento, 9V ciascuna. Marca Maxell (produzione industriale). Stato: <strong>scariche</strong> (utilizzate).</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Trasformatore step-up</strong></td>
+          <td>Aumenta voltaggio da 18V a ~50.000V. Costruzione artigianale, alta qualità. Dimensioni: 8 mm x 15 mm (miniaturizzato).</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Condensatore</strong></td>
+          <td>Elettrolitico, capacità 100 &#181;F / 400V. Accumula carica per scarica istantanea.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Interruttore a pressione</strong></td>
+          <td>Integrato nel meccanismo di scrittura. Attivazione: pressione del pennino sulla carta. Richiede pressione normale da scrittura.</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Conduttori</strong></td>
+          <td>Collegano il circuito al corpo metallico del pennino. Rame sottile, isolato.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="timbro">LAB.<br>SCIENT.<br>京都</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SCHEMA FUNZIONAMENTO -->
+  <div class="section">
+    <div class="section-title">Schema di funzionamento</div>
+
+    <div class="schema-box">
+      <div style="text-align:center; margin-bottom:10px;">
+        <span class="component">[BATTERIE 2x9V]</span>
+        <span class="arrow"> ───&gt; </span>
+        <span class="component">[TRASFORMATORE 18V&#8594;50kV]</span>
+        <span class="arrow"> ───&gt; </span>
+        <span class="component">[CONDENSATORE 100&#181;F]</span>
+      </div>
+      <div style="text-align:center; margin-bottom:10px;">
+        <span class="arrow">|</span>
+      </div>
+      <div style="text-align:center; margin-bottom:10px;">
+        <span class="arrow">V</span>
+      </div>
+      <div style="text-align:center; margin-bottom:10px;">
+        <span class="component">[INTERRUTTORE A PRESSIONE]</span>
+        <span class="arrow"> ───&gt; </span>
+        <span class="component">[PENNINO — OUTPUT]</span>
+      </div>
+    </div>
+
+    <div class="subsection" style="margin-top:12px;">
+      <div class="subsection-title">Sequenza di attivazione</div>
+      <ol class="seq-list">
+        <li>Le batterie alimentano il trasformatore</li>
+        <li>Il trasformatore aumenta il voltaggio a ~50.000V</li>
+        <li>Il condensatore accumula la carica</li>
+        <li>L'utente preme per scrivere: l'interruttore si chiude</li>
+        <li>Scarica elettrica attraverso il pennino verso la mano dell'utente</li>
+      </ol>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CARATTERISTICHE SCARICA -->
+  <div class="section">
+    <div class="section-title">Caratteristiche della scarica</div>
+
+    <ul class="detail-list">
+      <li><strong>Voltaggio stimato:</strong> 45.000 - 55.000 V</li>
+      <li><strong>Amperaggio:</strong> ~0,1 A (basso, ma sufficiente)</li>
+      <li><strong>Durata scarica:</strong> ~0,5 secondi</li>
+      <li><strong>Energia:</strong> ~250 Joule</li>
+    </ul>
+
+    <div class="subsection" style="margin-top:12px;">
+      <div class="subsection-title">Effetti sul corpo umano</div>
+      <ul class="detail-list">
+        <li>Contrazione muscolare involontaria</li>
+        <li>Possibile fibrillazione ventricolare</li>
+        <li>Ustioni localizzate nel punto di contatto</li>
+        <li>In soggetto sano: probabilmente non letàle</li>
+        <li><span class="critical">In soggetto con cuore compromesso: POTENZIALMENTE LETALE</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CONCLUSIONI -->
+  <div class="section">
+    <div class="section-title">Conclusioni</div>
+
+    <div class="conclusion-box">
+      <ol style="padding-left:20px; font-size:10.5px;">
+        <li style="margin-bottom:8px;">La penna è stata <strong>MODIFICATA INTENZIONALMENTE</strong> per erogare una scarica elettrica potenzialmente letàle.</li>
+        <li style="margin-bottom:8px;">La modifica richiede competenze tecniche <strong>AVANZATE:</strong> conoscenza elettronica, capacità di miniaturizzazione, accesso a componenti specializzati.</li>
+        <li style="margin-bottom:8px;">Il dispositivo è stato <strong>ATTIVATO:</strong> batterie scariche, condensatore scarico, compatibile con singolo utilizzo.</li>
+        <li style="margin-bottom:8px;">Le ustioni sulla mano della vittima sono <strong>COMPATIBILI</strong> con questa scarica elettrica.</li>
+        <li style="font-weight:bold; color:#8b0000;">QUALIFICA: ARMA IMPROPRIA — DISPOSITIVO LETALE</li>
+      </ol>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FIRMA TECNICA -->
+  <div class="section">
+    <div class="section-title">Profilo tecnico del costruttore</div>
+    <p style="margin-bottom:8px;">La qualità della modifica indica un tecnico <strong>esperto</strong> con accesso a laboratorio attrezzato.</p>
+    <div class="subsection">
+      <div class="subsection-title">Possibili profili</div>
+      <ul class="detail-list">
+        <li>Tecnico elettronico professionista</li>
+        <li>Ingegnere con competenze pratiche</li>
+        <li>Artigiano specializzato in dispositivi miniaturizzati</li>
+      </ul>
+    </div>
+    <div class="subsection">
+      <div class="subsection-title">Si suggerisce ricerca in</div>
+      <ul class="detail-list">
+        <li>Condannati per reati con dispositivi elettronici</li>
+        <li>Tecnici con precedenti penali</li>
+        <li>Laboratori clandestini</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div style="font-size:9px; color:#666; text-transform:uppercase; letter-spacing:1px;">Rapporto redatto da:</div>
+      <div style="font-weight:bold;">Ing. Morita Akira</div>
+      <div style="font-size:9px; color:#666;">Laboratorio Scientifico</div>
+      <div style="font-size:9px; color:#666;">Polizia Prefetturale di Kyoto</div>
+    </div>
+    <div class="firma-line">Firma del tecnico</div>
+  </div>
+
+</div>
+
+</body>
+</html>

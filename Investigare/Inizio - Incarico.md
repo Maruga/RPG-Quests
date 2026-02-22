@@ -429,6 +429,69 @@ L'indagine causa altre morti (Mori Riku, Noboru, forse altri). I giocatori risol
 
 ---
 
+## GUIDA MECCANICHE
+
+### Principio fondamentale
+I tiri **non determinano se i PG trovano un indizio**. Gli indizi sono fisici, visibili, disponibili. I tiri determinano **quanto il personaggio capisce, regge, percepisce** di quello che ha davanti.
+
+Se un PG prende un oggetto in mano → lo sente (peso, consistenza, temperatura). Automatico.
+Se un PG fa una domanda diretta → ottiene la risposta (se il PNG la sa). Automatico.
+Se un PG vuole **capire** una scena, **leggere** una persona, **reggere** un impatto → tiro.
+
+### Quando chiedere un tiro
+
+| Situazione | Attributo | Cosa modula il tiro |
+|------------|-----------|---------------------|
+| Scena violenta o scioccante | **Distacco** | Quanto il PG regge senza perdere lucidità |
+| Ricostruire cosa è successo | **Lucidità** | Quanto il PG capisce della dinamica |
+| Capire se qualcuno mente | **Ascolto** | Sfumature percepite (su cosa mente, perché) |
+| Fare pressione su un testimone | **Presenza** | Se il testimone cede o si chiude |
+| Interrogatorio lungo/estenuante | **Pazienza** | Se il PG mantiene il ritmo o perde il filo |
+| Non mostrare le proprie carte | **Silenzio** | Se il PG tradisce informazioni involontariamente |
+
+### Quando NON chiedere un tiro
+- Il PG cerca in un cassetto → trova quello che c'è
+- Il PG chiede il nome a un testimone → il testimone risponde
+- Il PG legge un documento → lo legge
+- Il PG ha prove schiaccianti e confronta un sospetto → il sospetto è messo alle strette (non serve Presenza)
+- Il PG fa una deduzione logica corretta → è corretta, punto
+
+### Fallimento ≠ porta chiusa
+Un fallimento costa -1 Ki (o -1 attributo) ma **non blocca mai l'indagine**:
+- Fallimento su Lucidità alla scena del crimine → il PG non ricostruisce la dinamica, ma la penna è ancora lì, le bruciature sono ancora visibili
+- Fallimento su Ascolto → il PG non coglie che il testimone mente, ma se ha prove contraddittorie, può comunque confrontarlo
+- Fallimento su Distacco → il PG è scosso, perde Ki, ma può continuare a lavorare
+
+### Gou: quando suggerirli
+Non suggerire ai giocatori di usare i Gou — devono pensarci loro. Ma se un giocatore dice qualcosa tipo "voglio concentrarmi intensamente sulla scena" o "cerco di sentire se mente con tutto me stesso", è il momento di ricordare che i Gou esistono.
+
+I Gou **funzionano sempre** (successo = preciso, fallimento = vago). Costano 2 Ki. Sono potenti ma costosi.
+
+### Scene chiave e tiri suggeriti
+
+**Scoperta del corpo (apertura)**
+→ Distacco per tutti i PG alla prima vista
+
+**Interrogatorio dello staff Villa Ishida**
+→ Ascolto solo se il PG sospetta qualcosa. Le dichiarazioni base sono spontanee.
+
+**Morte di Mori in carcere**
+→ Distacco se vedono il corpo. Lucidità per capire che è stato inscenato come suicidio.
+
+**Seppuku di Noboru**
+→ Distacco (pesante — fallimento critico = -2 Ki). Scena che segna.
+
+**Confronto finale con Yui**
+→ Ascolto per leggere le sue emozioni. Distacco quando confessa i 20 anni di sofferenza. Silenzio per non rivelare cosa si sa di Sakura.
+
+**Confronto finale con Sakura**
+→ Ascolto per leggere la maschera. Presenza per farla crollare. Pazienza se mantiene la facciata.
+
+**Minacce yakuza**
+→ Distacco per reggere l'intimidazione. Silenzio per non mostrare paura. Se escalation → combattimento (vedi regolamento, scagnozzi yakuza = -3 al tiro).
+
+---
+
 ## NOTE FINALI PER IL MASTER
 
 ### Tono

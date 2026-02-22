@@ -20,6 +20,16 @@
               "icon": "lucide-file",
               "title": "Fasi_Operative_Interne"
             }
+          },
+          {
+            "id": "ae7db1595374e667",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
+            }
           }
         ]
       }
@@ -202,7 +212,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -226,6 +236,7 @@
   },
   "active": "116cd8377df0270a",
   "lastOpenFiles": [
+    "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
     "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
     "Savage/Operazione Sarcofago/Copertina.md",
     "Savage/Operazione Sarcofago/La_Minaccia.md",
@@ -237,7 +248,6 @@
     "Savage/Operazione Sarcofago/Background.md",
     "Savage/Operazione Sarcofago/PG-PNG/Scienziati.md",
     "Savage/Operazione Sarcofago/La Minaccia.md",
-    "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
     "Savage/Operazione Sarcofago/Obiettivo_Missione.md",
     "Savage/Operazione Sarcofago/Fogliettini Segreti.md",
     "Savage/Operazione Sarcofago/Squadre Operative.md",

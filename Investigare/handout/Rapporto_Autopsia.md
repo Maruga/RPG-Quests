@@ -44,7 +44,8 @@
 ║   COLORAZIONE CUTANEA:                                               ║
 ║   - Cianosi periorale lieve (labbra e zona circumorale)              ║
 ║   - Cianosi ungueale (letti ungueali)                                ║
-║   - Livor mortis: dorsale, compatibile con posizione supina          ║
+║   - Livor mortis: anteriore (torace, viso), compatibile con          ║
+║     posizione riversa in avanti sulla scrivania                      ║
 ║                                                                      ║
 ║   SEGNI PARTICOLARI:                                                 ║
 ║   ▸ Mano destra, superficie palmare:                                 ║

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estratto Messaggi SMS — NTT DoCoMo</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: #0a3d6b; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #e0a020; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #e0a020; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #e0a020; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 14px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #e0a020; display: inline-block; padding: 4px 16px;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- DISCLAIMER -- */
+  .disclaimer {
+    padding: 10px 24px; background: #f0ede6; border-bottom: 1px solid #ccc;
+    font-size: 9px; color: #666; line-height: 1.5; font-style: italic;
+  }
+
+  /* -- MESSAGE LIST -- */
+  .messages { padding: 16px 24px; }
+  .msg-block {
+    border: 1px solid #ccc; margin-bottom: 12px; background: #fcfcfa;
+  }
+  .msg-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 5px 12px; background: #f0ede6; border-bottom: 1px solid #ccc;
+    font-size: 10px; color: #555;
+  }
+  .msg-header .msg-date { font-weight: bold; color: #1a1a1a; }
+  .msg-header .msg-sender { font-weight: bold; }
+  .msg-body {
+    padding: 10px 14px; font-size: 11px; line-height: 1.6;
+  }
+  .msg-body .msg-text { margin: 0; }
+
+  .msg-block.reply .msg-header { background: #e8f0e8; }
+  .msg-block.reply .msg-sender { color: #336633; }
+  .msg-block.incoming .msg-sender { color: #333399; }
+
+  /* -- SEPARATOR -- */
+  .msg-separator {
+    text-align: center; padding: 8px 0; font-size: 10px; color: #999;
+    border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc;
+    margin: 16px 0; letter-spacing: 3px;
+  }
+
+  /* -- FOOTER -- */
+  .doc-footer {
+    padding: 14px 24px; border-top: 2px solid #333;
+    font-size: 9px; color: #666; line-height: 1.6;
+  }
+  .doc-footer .legal { font-style: italic; margin-top: 6px; }
+
+  /* -- STAMP -- */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-12deg);
+    border: 3px solid rgba(0,60,120,0.3); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(0,60,120,0.3); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 08 — Messaggi Cellulare</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori ottengono il tabulato tramite mandato al gestore, perquisizione casa di Shin, o perquisizione degli effetti di Sakura (cellulare nella borsa).</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>Conversazioni tra Sakura e il suo amante Shin via SMS</li>
+    <li>Shin menziona Sora ("Vorrei potergli dire chi sono") — rivela paternità biologica</li>
+    <li>"Vorrei che sparisse" (25 marzo) — apparente movente per Shin (FALSA PISTA)</li>
+    <li>"Presto. Te lo prometto." (28 febbraio) — Sakura stava già pianificando</li>
+    <li>"Si." (6 aprile, 2 giorni prima dell'omicidio) — Sakura sapeva che il marito sarebbe morto</li>
+    <li>"Non scrivermi. Non ora." (9 aprile, dopo la morte) — sa di essere sotto osservazione</li>
+  </ul>
+  <p><strong>Trappola per i giocatori:</strong></p>
+  <ul>
+    <li>I messaggi sembrano incastrare SHIN come l'assassino (sfogo, frustrazione, "vorrei che sparisse")</li>
+    <li>Ma Shin NON ha i mezzi (niente competenze tecniche), NON ha l'opportunita (non era all'evento ne alla villa)</li>
+    <li>Sakura e l'assassina, non la complice — i messaggi che la incastrano sono più sottili (tempi, certezze, "fidati")</li>
+  </ul>
+  <p><strong>Cosa NON contiene (esce solo sotto interrogatorio):</strong></p>
+  <ul>
+    <li>Shin NON sa del piano di Sakura — i suoi messaggi sono sfoghi emotivi, non piani</li>
+    <li>Shin NON sa che lei ha commissionato la penna</li>
+    <li>Il "presto" è il "tutto cambierà" di Sakura si riferiscono al piano omicida, ma Shin li interpretà come "lascerà il marito"</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">NTT DoCoMo — SERVIZIO SMS</div>
+    <div class="org-jp">NTT ドコモ ショートメッセージサービス</div>
+    <div class="doc-type">ESTRATTO MESSAGGI ARCHIVIATI</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Numero Cellulare</div><div class="value">090-XXXX-5567</div></div>
+    <div class="field"><div class="label">Intestatario</div><div class="value">ISHIDA Sakura</div></div>
+    <div class="field"><div class="label">Periodo estratto</div><div class="value">Gennaio — Aprile 1997</div></div>
+    <div class="field"><div class="label">N. Protocollo</div><div class="value">NTT-KY-97-04122</div></div>
+    <div class="field"><div class="label">Richiesto da</div><div class="value">Polizia Prefetturale di Kyoto</div></div>
+    <div class="field"><div class="label">Data estrazione</div><div class="value">[data mandato]</div></div>
+  </div>
+
+  <div class="disclaimer">
+    AVVERTENZA: Il presente documento costituisce estratto dei messaggi SMS archiviati dal servizio NTT DoCoMo per il numero sopra indicato. I messaggi sono riportati in ordine cronologico. I mittenti sono identificati tramite prefisso numerico e/o firma apposta al messaggio. Il documento e rilasciato su mandato dell'autorita giudiziaria ai sensi della normativa vigente in materia di intercettazioni e acquisizione tabulati.
+  </div>
+
+  <!-- MESSAGGI -->
+  <div class="messages" style="position: relative;">
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">15 gennaio 1997 — 14:23</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Domani alle 15 al solito posto? Mi manchi.</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">15 gennaio 1997 — 16:45</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Si. Non vedo l'ora. S.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">2 febbraio 1997 — 20:12</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Ho visto Sora oggi. Cresce così in fretta. Vorrei potergli dire chi sono.</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">2 febbraio 1997 — 21:30</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Lo so. Un giorno. Dobbiamo avere pazienza.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">18 febbraio 1997 — 19:05</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Non sopporto più vederti tornare da lui ogni sera.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">28 febbraio 1997 — 22:40</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">14 anni. 14 anni che aspetto. Quando finira?</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">28 febbraio 1997 — 23:15</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Presto. Te lo prometto. Fidati di me.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">12 marzo 1997 — 18:33</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Cosa intendevi con "presto"? E successo qualcosa?</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">12 marzo 1997 — 19:20</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Non posso spiegare ora. Fidati. Tutto cambierà.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">25 marzo 1997 — 21:15</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">A volte vorrei che sparisse. Che non esistesse. Cosi potremmo essere una famiglia vera.</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">25 marzo 1997 — 21:45</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Non dire queste cose. Anche se le penso anch'io.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">3 aprile 1997 — 14:00</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Ci vediamo giovedi? Ho bisogno di vederti.</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">3 aprile 1997 — 14:30</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Giovedi no, ho l'evento. Venerdi?</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">6 aprile 1997 — 23:10</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Due giorni ancora. Poi saremo liberi?</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">6 aprile 1997 — 23:25</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Si.</p></div>
+    </div>
+
+    <div class="msg-separator">. . .</div>
+
+    <div class="msg-block incoming">
+      <div class="msg-header">
+        <span class="msg-date">9 aprile 1997 — 08:45</span>
+        <span class="msg-sender">IN — da: S.</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Ho sentito la notizia. Cosa è successo? Stai bene? Rispondimi, ti prego.</p></div>
+    </div>
+
+    <div class="msg-block reply">
+      <div class="msg-header">
+        <span class="msg-date">9 aprile 1997 — 10:30</span>
+        <span class="msg-sender">OUT — Sakura</span>
+      </div>
+      <div class="msg-body"><p class="msg-text">Non scrivermi. Non chiamarmi. Non ora.</p></div>
+    </div>
+
+    <div class="timbro">NTT<br>DoCoMo<br>KYOTO</div>
+
+  </div>
+
+  <div class="doc-footer">
+    <div>Documento generato il [data estrazione] — Filiale NTT DoCoMo Kyoto, Shijo-Karasuma</div>
+    <div>Operatore: ID-7832 — Validato da: Responsabile Servizio Tabulati</div>
+    <div class="legal">Il presente estratto e prodotto su richiesta dell'autorita giudiziaria. La riproduzione non autorizzata e vietàta ai sensi di legge. I dati contenuti sono soggetti a segreto istruttorio.</div>
+  </div>
+
+</div>
+
+</body>
+</html>

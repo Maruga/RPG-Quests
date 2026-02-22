@@ -278,4 +278,37 @@ Disponibile 24-48 ore dopo la morte:
 
 ---
 
+## MECCANICHE — LUOGHI SECONDARI
+
+### Tribunale
+- **Ascolto** con Ando Fumiko (segretaria): Successo → "Ha visto una donna identica a Sakura uscire agitata il 22 gennaio — ma qualcosa non tornava, forse l'abbigliamento." Fallimento → Conferma solo la visita.
+- En: +1 (impiegata pubblica, collaborativa)
+
+### Casa da Tè Kinkaku (yakuza)
+- **Distacco** per entrare nel mondo yakuza senza farsi intimidire. Fallimento → -1 Ki, nervosismo visibile.
+- **Presenza** con Noda Isamu: Successo → rivela i debiti del giudice (47 milioni). Fallimento → "Non so di cosa parlate."
+- En: -2 (mondo criminale, zero fiducia nelle autorità)
+- **PERICOLO**: Se i PG insistono troppo, scattano le contromisure yakuza (avvocato, poi minacce)
+
+### Carcere (Mori Riku)
+- **Ascolto** con Mori: Successo → capisce che Mori ha paura di qualcuno dentro il carcere, non fuori. Fallimento → Mori sembra solo un delinquente arrogante.
+- **Presenza** per convincerlo a parlare: Successo → Mori racconta dell'aggressione a "Sakura" (Yui). **Ma se parla, muore entro 24 ore.**
+- En: -2 (criminale, ostile)
+- **DISTACCO** quando Mori viene trovato morto: Fallimento → -1 Ki
+
+### Carcere (Hayashi Kenji)
+- **Ascolto**: Successo → "Quest'uomo è innocente. La rabbia non è di un colpevole — è di qualcuno che sa di essere stato incastrato."
+- En: +1 se i PG mostrano interesse per il suo caso
+
+### Ospedale
+Nessun tiro — documenti medici e referti si ottengono con mandato. I medici collaborano.
+
+### Stazione di Polizia
+Fascicoli e archivi accessibili con autorizzazione. Agente Fukuda (rapporto aggressione): En +1, collaborativo.
+
+### Compagnia Taxi / Scuola Tsuji / Banca
+Verifiche procedurali — nessun tiro. I PG ottengono informazioni con le richieste appropriate (mandato per la banca, richiesta formale per taxi e scuola).
+
+---
+
 *Fine Luoghi Secondari*

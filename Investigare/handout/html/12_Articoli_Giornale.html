@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articoli di Giornale — Caso Ishida</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .newspaper { box-shadow: none; margin: 0; } }
+
+  /* -- NEWSPAPER -- */
+  .newspaper {
+    max-width: 210mm; margin: 0 auto 20px; background: #fffff8;
+    border: 1px solid #999; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- NEWSPAPER MASTHEAD -- */
+  .masthead {
+    text-align: center; padding: 14px 20px 10px;
+    border-bottom: 4px double #333;
+  }
+  .masthead .paper-name-jp { font-size: 22px; letter-spacing: 6px; font-weight: bold; margin-bottom: 2px; }
+  .masthead .paper-name { font-family: "Courier New", monospace; font-size: 11px; letter-spacing: 4px; color: #555; margin-bottom: 4px; }
+  .masthead .paper-date { font-size: 10px; color: #888; letter-spacing: 1px; }
+  .masthead .paper-page { font-size: 9px; color: #aaa; }
+  .masthead-rule { border: none; border-top: 1px solid #333; margin: 0; }
+
+  /* -- TABLOID MASTHEAD -- */
+  .masthead.tabloid { background: #1a1a1a; color: white; border-bottom: 4px solid #cc0000; }
+  .masthead.tabloid .paper-name-jp { color: #ff3333; }
+  .masthead.tabloid .paper-name { color: #ccc; }
+  .masthead.tabloid .paper-date { color: #999; }
+
+  /* -- HEADLINE -- */
+  .headline-area {
+    padding: 14px 24px 10px; border-bottom: 2px solid #333;
+  }
+  .headline {
+    font-size: 20px; font-weight: bold; line-height: 1.2;
+    letter-spacing: 1px; margin-bottom: 4px;
+  }
+  .sub-headline {
+    font-size: 13px; color: #444; font-style: italic; line-height: 1.3;
+  }
+  .headline-area.tabloid .headline { color: #cc0000; font-size: 22px; }
+
+  /* -- ARTICLE BODY -- */
+  .article-body {
+    padding: 14px 24px; font-size: 11.5px; line-height: 1.8; text-align: justify;
+  }
+  .article-body p { margin-bottom: 8px; }
+  .article-body .dateline { font-weight: bold; }
+  .article-body .article-cont { text-align: right; font-style: italic; color: #888; font-size: 10px; margin-top: 12px; }
+  .article-body .article-byline { text-align: right; font-style: italic; color: #666; font-size: 10px; margin-top: 12px; }
+  .article-body .article-section { font-weight: bold; font-size: 12px; margin-top: 12px; margin-bottom: 4px; letter-spacing: 1px; }
+
+  /* -- SIDEBAR -- */
+  .sidebar {
+    margin: 12px 24px; padding: 12px 14px; background: #f5f3ee; border: 1px solid #ccc;
+    font-size: 10px; line-height: 1.7;
+  }
+  .sidebar .sidebar-title {
+    font-weight: bold; font-size: 10px; letter-spacing: 1px;
+    text-transform: uppercase; color: #333; margin-bottom: 6px;
+    border-bottom: 1px solid #999; padding-bottom: 3px;
+  }
+  .sidebar .tl-item { padding: 2px 0; }
+  .sidebar .tl-date { font-weight: bold; display: inline-block; width: 140px; }
+  .sidebar .tl-note { font-style: italic; color: #8b0000; font-size: 9px; margin-top: 4px; }
+
+  /* -- NEWSPAPER FOOTER -- */
+  .news-footer {
+    padding: 6px 24px; border-top: 2px double #333;
+    font-size: 8px; color: #aaa; text-align: center; letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 12 — Articoli di Giornale</h2>
+  <p><strong>Quando consegnare:</strong></p>
+  <ul>
+    <li><strong>Articolo 1</strong> (Prima notizia): Giorno 2 — la notizia esce sui giornali</li>
+    <li><strong>Articolo 2</strong> (Indagine per omicidio): Giorno 3-4 — dopo l'autopsia</li>
+    <li><strong>Articolo 3</strong> (Caso Hayashi): Giorno 3-4 — stesso giorno dell'articolo 2. INDIZIO FONDAMENTALE sul caso Hayashi</li>
+    <li><strong>Articolo 4</strong> (Retroscena tabloid): Giorno 5+ — il settimanale scandalistico pubblica voci e retroscena</li>
+  </ul>
+  <p><strong>Indizi chiave:</strong></p>
+  <ul>
+    <li><strong>Art. 3 e fondamentale:</strong> menziona la rapidita anomala del caso Hayashi, l'avvocato nota che "tutto si e sbloccato improvvisamente", coincidenza con "difficolta personali" del giudice. Introduce Hayashi Noriko come testimone.</li>
+    <li><strong>Art. 4 (tabloid):</strong> mescola voci vere e false — debiti di gioco (VERO), relazioni extraconiugali (VERO), pressioni esterne sul caso Hayashi (VERO). I giocatori devono distinguere il vero dal gossip.</li>
+  </ul>
+  <p><strong>Cosa NON contiene (esce solo con ulteriori indagini):</strong></p>
+  <ul>
+    <li>Il dettaglio della corruzione yakuza — i giornali ipotizzano ma non hanno prove</li>
+    <li>Il collegamento diretto tra debiti e sentenza pilotata</li>
+    <li>L'identità del vero assassino nel caso Momoyama (Kawano Daiki)</li>
+  </ul>
+</div>
+
+<!-- ============== ARTICOLO 1 — PRIMA NOTIZIA ============== -->
+<div class="newspaper">
+
+  <div class="masthead">
+    <div class="paper-name-jp">京都新聞</div>
+    <div class="paper-name">KYOTO SHIMBUN</div>
+    <div class="paper-date">10 aprile 1997</div>
+  </div>
+
+  <div class="headline-area">
+    <div class="headline">TRAGEDIA A HIGASHIYAMA: MORTO IL GIUDICE ISHIDA</div>
+    <div class="sub-headline">Trovato senza vita nella sua abitazione</div>
+  </div>
+
+  <div class="article-body">
+    <p><span class="dateline">KYOTO</span> — Il giudice Ishida Makoto, 45 anni, e stato trovato morto ieri mattina nella sua residenza di Higashiyama.</p>
+    <p>A fare la macabra scoperta e stata la domestica, che ha trovato il magistrato riverso sulla scrivania del suo studio intorno alle 7:00.</p>
+    <p>Le cause del decesso non sono ancora state rese note. Sul posto sono intervenuti gli agenti della Polizia Prefetturale e il magistrato di turno.</p>
+    <p>Ishida Makoto era un volto noto del Tribunale Distrettuale di Kyoto, dove prestava servizio da oltre dieci anni. Tra i casi più recenti da lui seguiti, la condanna dell'imprenditore Hayashi Kenji per l'omicidio del cantiere Momoyama.</p>
+    <p>Lascia la moglie Sakura, nota artista nihonga, e due figli.</p>
+    <p>La famiglia ha chiesto riserbo in questo momento di dolore.</p>
+    <div class="article-cont">(continua a pagina 12)</div>
+  </div>
+
+  <div class="news-footer">KYOTO SHIMBUN — Fondato nel 1879 — Quotidiano indipendente del Kansai</div>
+
+</div>
+
+<!-- ============== ARTICOLO 2 — INDAGINE IN CORSO ============== -->
+<div class="newspaper">
+
+  <div class="masthead">
+    <div class="paper-name-jp">京都新聞</div>
+    <div class="paper-name">KYOTO SHIMBUN</div>
+    <div class="paper-date">12 aprile 1997</div>
+  </div>
+
+  <div class="headline-area">
+    <div class="headline">MORTE GIUDICE ISHIDA: INDAGINE PER OMICIDIO</div>
+    <div class="sub-headline">L'autopsia rivela cause sospette</div>
+  </div>
+
+  <div class="article-body">
+    <p><span class="dateline">KYOTO</span> — La morte del giudice Ishida Makoto non e stata naturale. Fonti vicine all'indagine confermano che la Procura ha aperto un fascicolo per omicidio.</p>
+    <p>L'autopsia, condotta presso l'Ospedale Universitario, ha rivelato la presenza di sostanze tossiche nel corpo del magistrato. Non sono stati resi noti ulteriori dettagli.</p>
+    <p>Gli inquirenti stanno ricostruendo le ultime ore di vita della vittima. La sera del decesso, Ishida aveva partecipato a un evento presso la Galleria Nijo Art Space.</p>
+    <p>La polizia sta interrogando familiari, colleghi e conoscenti. Al momento non risultano fermi o arresti.</p>
+    <p>Il Presidente del Tribunale, Tanaka Yoshiro, ha espresso cordoglio per la perdita di "un collega stimato e un magistrato integro".</p>
+  </div>
+
+  <div class="news-footer">KYOTO SHIMBUN — Fondato nel 1879 — Quotidiano indipendente del Kansai</div>
+
+</div>
+
+<!-- ============== ARTICOLO 3 — CASO HAYASHI ============== -->
+<div class="newspaper">
+
+  <div class="masthead">
+    <div class="paper-name-jp">京都新聞</div>
+    <div class="paper-name">KYOTO SHIMBUN</div>
+    <div class="paper-date">12 aprile 1997 — Pagina 14</div>
+  </div>
+
+  <div class="headline-area">
+    <div class="headline">CASO HAYASHI: LA VEDOVA CHIEDE RIAPERTURA</div>
+    <div class="sub-headline">"Mio marito e innocente, ora forse si sapra la verità"</div>
+  </div>
+
+  <div class="article-body">
+    <p><span class="dateline">KYOTO</span> — All'indomani della morte del giudice Ishida Makoto, Hayashi Noriko torna a chiedere giustizia per il marito Kenji, condannato a 18 anni per l'omicidio Momoyama.</p>
+    <p>"Forse ora qualcuno ascoltera," ha dichiarato la donna ai microfoni del nostro giornale. "Mio marito e stato incastrato. Quel processo era una farsa."</p>
+    <p>Il caso Hayashi ha fatto discutere per la rapidita con cui si e concluso. Dopo quasi <strong>tre anni</strong> di rinvii e udienze, la sentenza e arrivata improvvisamente nel marzo scorso.</p>
+    <p>"Per anni il processo e andato avanti a rilento," sostiene l'avvocato difensore Ogawa Kazuo. "Poi, da un giorno all'altro, tutto si e sbloccato. E quantomeno singolare."</p>
+    <p>La famiglia Hayashi intende presentare nuova istanza di revisione del processo.</p>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-title">Cronologia Caso Hayashi</div>
+    <div class="tl-item"><span class="tl-date">Settembre 1994:</span> Omicidio Yamada nel cantiere Momoyama</div>
+    <div class="tl-item"><span class="tl-date">Ottobre 1994:</span> Inizio processo contro Hayashi Kenji</div>
+    <div class="tl-item"><span class="tl-date">1995-1996:</span> Numerosi rinvii, richieste perizie</div>
+    <div class="tl-item"><span class="tl-date">Febbraio 1997:</span> Improvvisa accelerazione del processo</div>
+    <div class="tl-item"><span class="tl-date">Marzo 1997:</span> Condanna a 18 anni</div>
+    <div class="tl-note">L'accelerazione coincide con un periodo di "difficolta personali" del giudice Ishida, secondo fonti del tribunale.</div>
+  </div>
+
+  <div class="news-footer">KYOTO SHIMBUN — Fondato nel 1879 — Quotidiano indipendente del Kansai</div>
+
+</div>
+
+<!-- ============== ARTICOLO 4 — TABLOID ============== -->
+<div class="newspaper">
+
+  <div class="masthead tabloid">
+    <div class="paper-name-jp">週刊文春</div>
+    <div class="paper-name">SHUKAN BUNSHUN</div>
+    <div class="paper-date">15 aprile 1997</div>
+  </div>
+
+  <div class="headline-area tabloid">
+    <div class="headline">I SEGRETI DEL GIUDICE MORTO</div>
+    <div class="sub-headline">Debiti, pressioni e una vita privata turbolenta</div>
+  </div>
+
+  <div class="article-body">
+    <p>Chi era davvero Ishida Makoto? Dietro la facciata del magistrato integerrimo, fonti anonime dipingono un ritratto ben diverso.</p>
+
+    <p class="article-section">DEBITI DI GIOCO</p>
+    <p>Secondo alcune voci, il giudice frequentava locali di Gion dove si praticava gioco d'azzardo. Si parla di debiti significativi.</p>
+
+    <p class="article-section">VITA SENTIMENTALE</p>
+    <p>Il matrimonio con la pittrice Takeda Sakura sarebbe stato "di facciata" da anni. Voci non confermate parlano di relazioni extraconiugali da entrambe le parti.</p>
+
+    <p class="article-section">IL CASO HAYASHI</p>
+    <p>L'improvvisa conclusione del processo Hayashi, dopo anni di stallo, ha sollevato interrogativi. Pressioni esterne?</p>
+
+    <p>La polizia non commenta. Le indagini proseguono.</p>
+
+    <div class="article-byline">(Articolo di Yamamoto Koji)</div>
+  </div>
+
+  <div class="news-footer" style="border-color: #cc0000;">SHUKAN BUNSHUN — Settimanale di attualita</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabulati Telefonici NTT — Utenze Kimura / Ishida</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a2040; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #4080c0; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #4080c0; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #80b0e0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 15px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #4080c0; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a2040;
+    border-bottom: 2px solid #1a2040; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── CALL TABLE ── */
+  .call-table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0; }
+  .call-table th {
+    background: #e0e8f0; text-align: left; padding: 5px 6px;
+    border: 1px solid #999; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #333;
+  }
+  .call-table td { padding: 4px 6px; border: 1px solid #bbb; vertical-align: top; }
+  .call-table tr:nth-child(even) { background: #f4f8fc; }
+  .call-table .highlight-row { background: #fff8e0 !important; }
+
+  /* ── PATTERN BREAK ── */
+  .pattern-break {
+    background: #ffe0e0; border: 1px solid #c08080; padding: 6px 12px;
+    font-weight: bold; text-align: center; font-size: 10px; letter-spacing: 1px;
+    margin: 8px 0;
+  }
+
+  /* ── LEGENDA ── */
+  .legenda {
+    background: #f0f4f8; border: 1px solid #bbb; padding: 10px 14px; margin: 10px 0;
+    font-size: 10px;
+  }
+  .legenda-title { font-weight: bold; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .legenda-item { padding: 2px 0; }
+
+  /* ── SUMMARY BOX ── */
+  .summary-box {
+    background: #f8f8f0; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #fff8e0; border: 1px solid #d0a040; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── DETAIL LIST ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── LETTERS ── */
+  .letter {
+    margin: 14px 0; border: 1px solid #bbb; background: #fffff8;
+  }
+  .letter-header {
+    background: #f0ede6; padding: 6px 14px; border-bottom: 1px solid #ccc;
+    font-size: 10px; font-weight: bold; color: #555;
+  }
+  .letter-body {
+    padding: 14px 20px; font-size: 10.5px; line-height: 1.7;
+    font-family: "Georgia", "Times New Roman", serif;
+  }
+  .letter-date { text-align: right; color: #666; margin-bottom: 10px; }
+  .letter-sig { text-align: right; margin-top: 12px; }
+
+  /* ── FIRMA ── */
+  .firma {
+    padding: 12px 24px; border-top: 2px solid #333; font-size: 10px; color: #888;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 07 — Tabulato Telefonico e Lettere di Yui</h2>
+  <p><strong>Quando consegnare:</strong> Tabulato: quando i giocatori richiedono i tabulati telefonici con mandato alla NTT. Lettere: trovate nel cestino della camera del giudice durante perquisizione della villa Ishida.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>Lettere di Yui (sett-dic 1996):</strong> Escalation dalla supplica alla minaccia. Yui chiede riconoscimento per il figlio Kenta. Parla di test di paternità falsificato. Minaccia di andare dai giornali.</li>
+    <li><strong>Tabulato Kimura (Yui):</strong> 54 chiamate al Tribunale (set 96 - gen 97), tutte brevi (1-3 min = rifiutate). Poi CAMBIO PATTERN: 4 chiamate a Osaka (lo chef Tanaka Ryo) da marzo 97, lunghe (3-12 min = conversazioni).</li>
+    <li><strong>Tabulato Ishida (Sakura):</strong> Numero più chiamato in uscita: 075-561-7788 = Laboratorio Restauro Ogawa, Gion (Ogawa Shin). 2-3 volte a settimana, chiamate lunghe (8-25 min). Prova della relazione tra Sakura e Shin.</li>
+  </ul>
+  <p><strong>Indizi chiave:</strong></p>
+  <ul>
+    <li>Le 54 chiamate al tribunale mostrano l'ossessione di Yui per Makoto</li>
+    <li>Il cambio pattern (gen 97 = dopo l'incontro in tribunale) segna il passaggio dalla supplica al piano omicida</li>
+    <li>Le chiamate a Osaka = Chef Tanaka Ryo, confermano il piano nei file del computer</li>
+    <li>Le chiamate Sakura-Shin provano la relazione (movente per eliminare il marito)</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO 1: LETTERE DI YUI -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header" style="background:#3e2e1a; border-bottom-color:#c0a060;">
+    <div class="org" style="letter-spacing:2px;">MATERIALE SEQUESTRATO</div>
+    <div class="doc-type" style="border-color:#c0a060;">CORRISPONDENZA — LETTERE RINVENUTE</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Ritrovamento</div><div class="value">Cestino camera da letto, Villa Ishida</div></div>
+    <div class="field"><div class="label">Stato</div><div class="value">Alcune aperte, alcune mai aperte</div></div>
+    <div class="field"><div class="label">Mittente</div><div class="value">Kimura Yui</div></div>
+    <div class="field"><div class="label">Destinatario</div><div class="value">Giudice Ishida Makoto</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Lettera 1 — Settembre 1996</div>
+    <div class="letter">
+      <div class="letter-header">Busta non aperta — Timbro postale: 16/09/1996</div>
+      <div class="letter-body">
+        <div class="letter-date">Kyoto, 15 settembre 1996</div>
+        <p>Egregio Giudice Ishida,</p>
+        <p>So che non vuoi sentirmi. So che hai costruito la tua vita dimenticando quello che è successo.</p>
+        <p>Ma io non posso più tacere.</p>
+        <p>Kenta è tuo figlio. L'ho sempre saputo nel profondo, anche quando quel test mi ha detto il contrario. Ora ho la prova che il test era falso.</p>
+        <p>Ti chiedo solo di incontrarmi. Una volta. Per parlare.</p>
+        <p>Non voglio rovinarti la vita. Voglio solo che mio figlio abbia quello che gli spetta.</p>
+        <div class="letter-sig">Kimura Yui<br>075-581-3344</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Lettera 2 — Ottobre 1996</div>
+    <div class="letter">
+      <div class="letter-header">Busta aperta — Timbro postale: 09/10/1996</div>
+      <div class="letter-body">
+        <div class="letter-date">Kyoto, 8 ottobre 1996</div>
+        <p>Makoto,</p>
+        <p>Non rispondi alle mie chiamate. Non rispondi alle mie lettere.</p>
+        <p>Sono passati 16 anni. Sedici anni in cui ho cresciuto TUO figlio credendo che fosse di un altro uomo. Sedici anni in cui ho rinunciato alla mia carriera, ai miei sogni.</p>
+        <p>Kenta è brillante. Molto più brillante del figlio di Sakura che hai fatto entrare in quella scuola. Eppure lui è stato rifiutato. Sai perché? Perché non ha il cognome giusto.</p>
+        <p>IL TUO cognome.</p>
+        <p>Ti prego, rispondimi.</p>
+        <div class="letter-sig">Yui</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Lettera 3 — Novembre 1996</div>
+    <div class="letter">
+      <div class="letter-header">Busta aperta — Timbro postale: 23/11/1996</div>
+      <div class="letter-body">
+        <div class="letter-date">Kyoto, 22 novembre 1996</div>
+        <p>Ho provato con le buone.</p>
+        <p>So tutto, Makoto. So che hai pagato quel medico per falsificare il test. So che mio padre era d'accordo. Tutti mi avete tradita.</p>
+        <p>Ho le prove. Posso andare dai giornali. Posso rovinare la tua carriera, la tua reputazione, il tuo matrimonio perfetto.</p>
+        <p>Ma non voglio farlo. Voglio solo quello che spetta a mio figlio.</p>
+        <p>Rispondimi, o saro costretta ad agire.</p>
+        <div class="letter-sig">Y.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Lettera 4 — Dicembre 1996</div>
+    <div class="letter">
+      <div class="letter-header">Busta non aperta — Timbro postale: 19/12/1996</div>
+      <div class="letter-body">
+        <div class="letter-date">Kyoto, 18 dicembre 1996</div>
+        <p>Makoto,</p>
+        <p>È Natale. Kenta non sa chi è il suo vero padre. Pensa che Hiro sia suo padre. Pensa che la sua famiglia sia normale.</p>
+        <p>Io devo guardarlo ogni giorno sapendo la verità.</p>
+        <p>Questa è l'ultima lettera. Se non mi rispondi entro gennaio, verrò a trovarti di persona.</p>
+        <p>Non potrai ignorarmi per sempre.</p>
+        <div class="letter-sig">Yui</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DOCUMENTO 2: TABULATO KIMURA -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">NTT WEST</div>
+    <div class="org-jp">西日本電信電話株式会社</div>
+    <div class="doc-type">TABULATO CHIAMATE IN USCITA</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Utenza</div><div class="value">075-581-3344</div></div>
+    <div class="field"><div class="label">Intestatario</div><div class="value">KIMURA Hiro</div></div>
+    <div class="field"><div class="label">Indirizzo</div><div class="value">Via Yamashina 12, Kyoto</div></div>
+    <div class="field"><div class="label">Periodo</div><div class="value">01/09/1996 — 10/04/1997</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Chiamate al Tribunale di Kyoto</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Destinazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12/09/96</td>
+          <td>09:15</td>
+          <td>075-212-2001</td>
+          <td>02:14</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>12/09/96</td>
+          <td>11:30</td>
+          <td>075-212-2001</td>
+          <td>01:08</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>12/09/96</td>
+          <td>14:45</td>
+          <td>075-212-2001</td>
+          <td>02:51</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>18/09/96</td>
+          <td>10:00</td>
+          <td>075-212-2001</td>
+          <td>01:22</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>18/09/96</td>
+          <td>16:20</td>
+          <td>075-212-2001</td>
+          <td>01:45</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>25/09/96</td>
+          <td>08:45</td>
+          <td>075-212-2001</td>
+          <td>03:02</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>25/09/96</td>
+          <td>12:15</td>
+          <td>075-212-2001</td>
+          <td>01:33</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>25/09/96</td>
+          <td>15:30</td>
+          <td>075-212-2001</td>
+          <td>02:18</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>25/09/96</td>
+          <td>17:45</td>
+          <td>075-212-2001</td>
+          <td>01:55</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... 44 chiamate simili omesse (ottobre 96 — gennaio 97) ...]</td>
+        </tr>
+        <tr>
+          <td>22/01/97</td>
+          <td>08:30</td>
+          <td>075-212-2001</td>
+          <td>01:12</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pattern-break">CAMBIO PATTERN DOPO IL 22/01/1997</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Destinazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><strong>15/03/97</strong></td>
+          <td>19:00</td>
+          <td>06-6243-5500</td>
+          <td><strong>12:35</strong></td>
+          <td>Osaka</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>22/03/97</strong></td>
+          <td>20:15</td>
+          <td>06-6243-5500</td>
+          <td><strong>08:22</strong></td>
+          <td>Osaka</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>01/04/97</strong></td>
+          <td>18:30</td>
+          <td>06-6243-5500</td>
+          <td><strong>05:47</strong></td>
+          <td>Osaka</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>07/04/97</strong></td>
+          <td>19:45</td>
+          <td>06-6243-5500</td>
+          <td><strong>03:12</strong></td>
+          <td>Osaka</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legenda">
+      <div class="legenda-title">Legenda numeri frequenti</div>
+      <div class="legenda-item"><strong>075-212-2001</strong> = Tribunale Distrettuale di Kyoto (Centralino)</div>
+      <div class="legenda-item"><strong>06-6243-5500</strong> = Ristorante Kyo-Ryori Tanaka, Osaka</div>
+    </div>
+
+    <div class="summary-box">
+      <strong>Riepilogo:</strong>
+      <ul class="detail-list" style="margin-top:4px;">
+        <li>Chiamate a 075-212-2001: <strong>54 totali</strong> (settembre 96 — gennaio 97)</li>
+        <li>Durata media: 1-3 minuti (chiamate rifiutate o interrotte)</li>
+        <li>Chiamate a 06-6243-5500: <strong>4 totali</strong> (marzo — aprile 97)</li>
+        <li>Durata media: 3-12 minuti (conversazioni complete)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Tabulato rilasciato da NTT West su mandato dell'Autorità Giudiziaria — Rif. Mandato TK-1997-0411-003</p>
+  </div>
+</div>
+
+<!-- DOCUMENTO 3: TABULATO ISHIDA (estratto Sakura) -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">NTT WEST</div>
+    <div class="org-jp">西日本電信電話株式会社</div>
+    <div class="doc-type">TABULATO CHIAMATE — ESTRATTO</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Utenza</div><div class="value">075-541-1122</div></div>
+    <div class="field"><div class="label">Intestatario</div><div class="value">ISHIDA Makoto</div></div>
+    <div class="field"><div class="label">Periodo</div><div class="value">01/01/1997 — 10/04/1997</div></div>
+    <div class="field"><div class="label">Tipo estratto</div><div class="value">Chiamate in uscita — numero più frequente</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Numero più chiamato dalla Signora Ishida</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... chiamate normali omesse ...]</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>05/01/97</td>
+          <td>14:22</td>
+          <td>075-561-7788</td>
+          <td>15:33</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>12/01/97</td>
+          <td>16:45</td>
+          <td>075-561-7788</td>
+          <td>22:18</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>19/01/97</td>
+          <td>11:30</td>
+          <td>075-561-7788</td>
+          <td>08:45</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>26/01/97</td>
+          <td>15:15</td>
+          <td>075-561-7788</td>
+          <td>18:22</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>02/02/97</td>
+          <td>10:00</td>
+          <td>075-561-7788</td>
+          <td>12:55</td>
+          <td>Gion</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... pattern continua, 2-3 chiamate a settimana ...]</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>06/04/97</td>
+          <td>17:30</td>
+          <td>075-561-7788</td>
+          <td>25:12</td>
+          <td>Gion</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legenda">
+      <div class="legenda-title">Legenda</div>
+      <div class="legenda-item"><strong>075-561-7788</strong> = Laboratorio Restauro Ogawa, Gion</div>
+      <div class="legenda-item">(Intestatario: OGAWA Shin)</div>
+    </div>
+
+    <div class="note-box">
+      <strong>NOTA:</strong> Il numero 075-561-7788 risulta il numero più chiamato dall'utenza nelle ore diurne feriali. Chiamate lunghe (media 15+ minuti). Frequenza: 2-3 volte a settimana.
+    </div>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Tabulato rilasciato da NTT West su mandato dell'Autorità Giudiziaria — Rif. Mandato TK-1997-0411-004</p>
+  </div>
+</div>
+
+</body>
+</html>

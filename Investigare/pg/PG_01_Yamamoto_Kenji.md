@@ -18,48 +18,48 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 8 | Anni di esperienza |
-| **Pazienza** | 7 | Normale |
-| **Silenzio** | 8 | Sai incassare |
-| **Lucidità** | 10 | Punto di forza - vedi i collegamenti |
-| **Ascolto** | 7 | Normale |
-| **Aura** | 8 | Rispettato dai colleghi |
+| **Distacco** | 5 | Anni di esperienza |
+| **Pazienza** | 4 | Normale |
+| **Silenzio** | 5 | Sai incassare |
+| **Lucidità** | 6 | Punto di forza - vedi i collegamenti |
+| **Ascolto** | 4 | Normale |
+| **Presenza** | 4 | Rispettato dai colleghi |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Nessun attributo può superare 11
+> - Nessun attributo può superare 8
 
 ---
 
-## STRESS/BENESSERE
+## KI (TENUTA)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
 
 ---
 
-## IL DEBITO
+## GOU (DEBITO)
 
 Scegli **uno** dei seguenti Debiti:
 
 ### Opzione 1: Teatro delle Ombre
 *Guardando una scena, visualizzi come si sono svolti gli eventi.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa - chi ha fatto cosa, in che ordine, con quali movimenti
 - **Fallimento**: Vedi frammenti disconnessi - immagini, gesti, ma non la sequenza chiara
 
 ### Opzione 2: Pietra Fuori Posto
 *Percepisci immediatamente cosa non torna in un luogo o situazione.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Sai cosa stona e perché - il dettaglio e il suo significato
 - **Fallimento**: Senti che qualcosa è sbagliato, ma non riesci a definirlo con precisione
 
 ### Opzione 3: Pugno di Ferro
 *La tua autorità diventa schiacciante. Il PNG sente il peso della tua posizione.*
-- **Attributo**: Aura
-- **Costo**: 2 stress
-- **Successo** (2d6 ≤ Aura): Il PNG cede su un punto importante - confessa, collabora, si ritira
+- **Attributo**: Presenza
+- **Costo**: 2 Ki
+- **Successo** (2d6 ≤ Presenza): Il PNG cede su un punto importante - confessa, collabora, si ritira
 - **Fallimento**: Il PNG è scosso, intimidito, ma non cede completamente
 
 ---

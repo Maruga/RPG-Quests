@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabulati Telefonici NTT — Utenza Casa Ishida</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header p { margin-bottom: 6px; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } .page-break { page-break-before: always; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #1a2040; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #4080c0; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #4080c0; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #80b0e0; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 15px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #4080c0; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a2040;
+    border-bottom: 2px solid #1a2040; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── CALL TABLE ── */
+  .call-table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0; }
+  .call-table th {
+    background: #e0e8f0; text-align: left; padding: 5px 6px;
+    border: 1px solid #999; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #333;
+  }
+  .call-table td { padding: 4px 6px; border: 1px solid #bbb; vertical-align: top; }
+  .call-table tr:nth-child(even) { background: #f4f8fc; }
+  .call-table .highlight-row { background: #fff8e0 !important; }
+
+  /* ── PATTERN BREAK ── */
+  .pattern-break {
+    background: #ffe0e0; border: 1px solid #c08080; padding: 6px 12px;
+    font-weight: bold; text-align: center; font-size: 10px; letter-spacing: 1px;
+    margin: 8px 0;
+  }
+
+  /* ── LEGENDA ── */
+  .legenda {
+    background: #f0f4f8; border: 1px solid #bbb; padding: 10px 14px; margin: 10px 0;
+    font-size: 10px;
+  }
+  .legenda-title { font-weight: bold; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  .legenda-item { padding: 2px 0; }
+
+  /* ── SUMMARY BOX ── */
+  .summary-box {
+    background: #f8f8f0; border: 1px solid #ccc; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #fff8e0; border: 1px solid #d0a040; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── ALERT BOX ── */
+  .alert-box {
+    margin: 12px 0; padding: 10px 14px; background: #fff5f0; border: 1px solid #cc6633;
+    font-size: 10px; line-height: 1.6;
+  }
+  .alert-box .alert-title {
+    font-weight: bold; color: #8b0000; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; margin-bottom: 4px;
+  }
+
+  /* ── DETAIL LIST ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── COMPARISON BAR ── */
+  .bar-chart { margin: 12px 0; }
+  .bar-row { display: flex; align-items: center; margin-bottom: 6px; font-size: 10px; }
+  .bar-label { width: 200px; font-weight: bold; }
+  .bar-fill { height: 16px; background: #1a2040; display: inline-block; }
+  .bar-fill.secondary { background: #c08040; }
+  .bar-value { margin-left: 8px; font-weight: bold; }
+
+  /* ── FIRMA ── */
+  .firma {
+    padding: 12px 24px; border-top: 2px solid #333; font-size: 10px; color: #888;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 15 — Tabulati Telefonici Casa Ishida (Completo)</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori richiedono i tabulati telefonici della CASA del giudice (utenza 075-541-1122) con mandato alla NTT. Se chiedono quelli di Kimura, ottengono invece l'handout 07.</p>
+  <p><strong>Differenza con handout 07:</strong> L'handout 07 contiene un estratto parziale (solo chiamate in uscita verso Shin, periodo gen-apr 97). Questo e il tabulato COMPLETO: entrata + uscita, settembre 1996 - aprile 1997.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>54 chiamate IN ENTRATA da 075-581-3344 (Kimura/Yui):</strong> Tutte serali (18:00-20:30), tutte brevissime (sotto 2 min = rifiutate). Si fermano il 22/01/97.</li>
+    <li><strong>~62 chiamate IN USCITA a 075-561-7788 (Ogawa Shin):</strong> Ore diurne feriali, lunghe (media 17 min). 2-3 a settimana per 8 mesi — relazione consolidata tra Sakura e Shin.</li>
+    <li><strong>Analisi comparativa:</strong> Le chiamate di Yui si fermano il 22/01 (poi va di persona al tribunale). Le chiamate a Shin sono costanti per tutto il periodo.</li>
+  </ul>
+  <p><strong>Indizi chiave:</strong></p>
+  <ul>
+    <li>L'utenza 075-581-3344 e intestata a Kimura Hiro (marito poliziotto), ma chi chiama e Yui</li>
+    <li>Chiamate brevi = rifiutate. La domestica Nagai Chiyo ha sentito il giudice imprecare: "Basta chiamare!"</li>
+    <li>La chiamata piu lunga (2:48 il 14/01/97) potrebbe essere quella in cui il giudice ha risposto e le ha detto di smetterla</li>
+    <li>Le chiamate a Ogawa Shin avvengono sempre nelle ore in cui il giudice e al tribunale — Sakura approfittava della sua assenza</li>
+    <li>La frequenza costante per 8 mesi dimostra una relazione consolidata, non una cotta passeggera</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO 1: CHIAMATE IN ENTRATA -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">NTT WEST</div>
+    <div class="org-jp">西日本電信電話株式会社</div>
+    <div class="doc-type">TABULATO CHIAMATE IN ENTRATA</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Utenza</div><div class="value">075-541-1122</div></div>
+    <div class="field"><div class="label">Intestatario</div><div class="value">ISHIDA Makoto</div></div>
+    <div class="field"><div class="label">Indirizzo</div><div class="value">Via Higashiyama 45, Kyoto</div></div>
+    <div class="field"><div class="label">Periodo</div><div class="value">01/09/1996 — 10/04/1997</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Chiamate in entrata da 075-581-3344 (Yamashina)</div>
+
+    <div class="note-box" style="margin-bottom:10px;">
+      <strong>NOTA:</strong> Vengono riportate tutte le chiamate dal numero 075-581-3344, risultato il numero in entrata piu frequente nel periodo. Altre chiamate in entrata riportate in sezione separata.
+    </div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamante</th>
+          <th>Durata</th>
+          <th>Origine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5" style="text-align:center; font-weight:bold; background:#e0e8f0; padding:6px; letter-spacing:1px;">SETTEMBRE 1996</td>
+        </tr>
+        <tr>
+          <td>14/09/96</td>
+          <td>18:32</td>
+          <td>075-581-3344</td>
+          <td>00:48</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>16/09/96</td>
+          <td>19:15</td>
+          <td>075-581-3344</td>
+          <td>01:12</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>19/09/96</td>
+          <td>20:05</td>
+          <td>075-581-3344</td>
+          <td>00:33</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>22/09/96</td>
+          <td>18:50</td>
+          <td>075-581-3344</td>
+          <td>02:15</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>24/09/96</td>
+          <td>19:40</td>
+          <td>075-581-3344</td>
+          <td>00:41</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>27/09/96</td>
+          <td>18:22</td>
+          <td>075-581-3344</td>
+          <td>01:55</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>29/09/96</td>
+          <td>20:30</td>
+          <td>075-581-3344</td>
+          <td>00:28</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-weight:bold; background:#e0e8f0; padding:6px; letter-spacing:1px;">OTTOBRE 1996</td>
+        </tr>
+        <tr>
+          <td>02/10/96</td>
+          <td>19:05</td>
+          <td>075-581-3344</td>
+          <td>01:08</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>05/10/96</td>
+          <td>18:45</td>
+          <td>075-581-3344</td>
+          <td>00:52</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>08/10/96</td>
+          <td>20:12</td>
+          <td>075-581-3344</td>
+          <td>01:33</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>11/10/96</td>
+          <td>19:30</td>
+          <td>075-581-3344</td>
+          <td>00:44</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>15/10/96</td>
+          <td>18:55</td>
+          <td>075-581-3344</td>
+          <td>02:05</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>18/10/96</td>
+          <td>19:22</td>
+          <td>075-581-3344</td>
+          <td>01:18</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>22/10/96</td>
+          <td>20:00</td>
+          <td>075-581-3344</td>
+          <td>00:55</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>25/10/96</td>
+          <td>18:38</td>
+          <td>075-581-3344</td>
+          <td>01:42</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... 12 chiamate simili in novembre 1996 ...]</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... 10 chiamate simili in dicembre 1996 ...]</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-weight:bold; background:#e0e8f0; padding:6px; letter-spacing:1px;">GENNAIO 1997</td>
+        </tr>
+        <tr>
+          <td>03/01/97</td>
+          <td>19:10</td>
+          <td>075-581-3344</td>
+          <td>01:05</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>07/01/97</td>
+          <td>18:48</td>
+          <td>075-581-3344</td>
+          <td>00:38</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>10/01/97</td>
+          <td>19:55</td>
+          <td>075-581-3344</td>
+          <td>01:22</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>14/01/97</strong></td>
+          <td>20:08</td>
+          <td>075-581-3344</td>
+          <td><strong>02:48</strong></td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>17/01/97</td>
+          <td>19:30</td>
+          <td>075-581-3344</td>
+          <td>00:55</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>20/01/97</td>
+          <td>18:42</td>
+          <td>075-581-3344</td>
+          <td>01:10</td>
+          <td>Yamashina</td>
+        </tr>
+        <tr>
+          <td>22/01/97</td>
+          <td>19:15</td>
+          <td>075-581-3344</td>
+          <td>00:32</td>
+          <td>Yamashina</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pattern-break">NESSUNA CHIAMATA DA 075-581-3344 DOPO IL 22/01/1997</div>
+
+    <div class="summary-box">
+      <strong>Riepilogo chiamate da 075-581-3344:</strong>
+      <ul class="detail-list" style="margin-top:4px;">
+        <li>Totale chiamate: <strong>54</strong> (14/09/1996 — 22/01/1997)</li>
+        <li>Frequenza: 3-5 chiamate a settimana</li>
+        <li>Durata media: <strong>01:12</strong> (la maggior parte sotto 2 minuti)</li>
+        <li>Durata massima: 02:48 (14/01/97)</li>
+        <li>Fascia oraria: tutte tra le 18:00 e le 20:30</li>
+        <li>Nota: durate brevi indicano chiamate rifiutate o interrotte</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ALTRE CHIAMATE IN ENTRATA -->
+  <div class="section">
+    <div class="section-title">Altre chiamate in entrata (campione)</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamante</th>
+          <th>Durata</th>
+          <th>Origine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>20/09/96</td>
+          <td>08:15</td>
+          <td>075-212-2001</td>
+          <td>03:22</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>04/10/96</td>
+          <td>12:30</td>
+          <td>075-744-5500</td>
+          <td>05:10</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>18/10/96</td>
+          <td>16:45</td>
+          <td>075-533-2288</td>
+          <td>08:35</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>02/11/96</td>
+          <td>10:20</td>
+          <td>075-212-2001</td>
+          <td>04:15</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>15/11/96</td>
+          <td>14:00</td>
+          <td>075-761-8800</td>
+          <td>12:22</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>22/12/96</td>
+          <td>09:30</td>
+          <td>075-212-2001</td>
+          <td>02:48</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>08/01/97</td>
+          <td>11:15</td>
+          <td>075-533-2288</td>
+          <td>06:55</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>25/02/97</td>
+          <td>15:40</td>
+          <td>075-761-8800</td>
+          <td>09:30</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>12/03/97</td>
+          <td>17:05</td>
+          <td>075-744-5500</td>
+          <td>04:18</td>
+          <td>(non identificato)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Tabulato rilasciato da NTT West su mandato dell'Autorita Giudiziaria — Rif. Mandato TK-1997-0411-015A</p>
+  </div>
+</div>
+
+<!-- DOCUMENTO 2: CHIAMATE IN USCITA -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">NTT WEST</div>
+    <div class="org-jp">西日本電信電話株式会社</div>
+    <div class="doc-type">TABULATO CHIAMATE IN USCITA</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Utenza</div><div class="value">075-541-1122</div></div>
+    <div class="field"><div class="label">Intestatario</div><div class="value">ISHIDA Makoto</div></div>
+    <div class="field"><div class="label">Indirizzo</div><div class="value">Via Higashiyama 45, Kyoto</div></div>
+    <div class="field"><div class="label">Periodo</div><div class="value">01/09/1996 — 10/04/1997</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Chiamate a 075-561-7788 (numero piu frequente)</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Destinazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td>18/09/96</td>
+          <td>10:30</td>
+          <td>075-561-7788</td>
+          <td>12:45</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>25/09/96</td>
+          <td>14:15</td>
+          <td>075-561-7788</td>
+          <td>18:22</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>03/10/96</td>
+          <td>11:00</td>
+          <td>075-561-7788</td>
+          <td>15:08</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>10/10/96</td>
+          <td>15:40</td>
+          <td>075-561-7788</td>
+          <td>22:33</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>18/10/96</td>
+          <td>10:15</td>
+          <td>075-561-7788</td>
+          <td>10:55</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>24/10/96</td>
+          <td>14:50</td>
+          <td>075-561-7788</td>
+          <td>19:12</td>
+          <td>Gion</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... pattern continua: 2-3 chiamate a settimana, novembre — dicembre 1996 ...]</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>05/01/97</td>
+          <td>14:22</td>
+          <td>075-561-7788</td>
+          <td>15:33</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>12/01/97</td>
+          <td>16:45</td>
+          <td>075-561-7788</td>
+          <td>22:18</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>19/01/97</td>
+          <td>11:30</td>
+          <td>075-561-7788</td>
+          <td>08:45</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>26/01/97</td>
+          <td>15:15</td>
+          <td>075-561-7788</td>
+          <td>18:22</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>02/02/97</td>
+          <td>10:00</td>
+          <td>075-561-7788</td>
+          <td>12:55</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>09/02/97</td>
+          <td>14:30</td>
+          <td>075-561-7788</td>
+          <td>20:40</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>16/02/97</td>
+          <td>11:15</td>
+          <td>075-561-7788</td>
+          <td>16:18</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>23/02/97</td>
+          <td>15:45</td>
+          <td>075-561-7788</td>
+          <td>24:05</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>02/03/97</td>
+          <td>10:20</td>
+          <td>075-561-7788</td>
+          <td>14:32</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>09/03/97</td>
+          <td>14:00</td>
+          <td>075-561-7788</td>
+          <td>19:55</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>16/03/97</td>
+          <td>11:40</td>
+          <td>075-561-7788</td>
+          <td>21:10</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>23/03/97</td>
+          <td>15:30</td>
+          <td>075-561-7788</td>
+          <td>17:42</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>30/03/97</td>
+          <td>10:50</td>
+          <td>075-561-7788</td>
+          <td>13:28</td>
+          <td>Gion</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>06/04/97</td>
+          <td>17:30</td>
+          <td>075-561-7788</td>
+          <td>25:12</td>
+          <td>Gion</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary-box">
+      <strong>Riepilogo chiamate a 075-561-7788:</strong>
+      <ul class="detail-list" style="margin-top:4px;">
+        <li>Totale chiamate: <strong>~62</strong> nel periodo (settembre 96 — aprile 97)</li>
+        <li>Frequenza: 2-3 a settimana (ore diurne feriali)</li>
+        <li>Durata media: <strong>17:25</strong> (conversazioni lunghe)</li>
+        <li>Numero piu chiamato dall'utenza nelle ore diurne</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CHIAMATE AL TRIBUNALE -->
+  <div class="section">
+    <div class="section-title">Chiamate al Tribunale di Kyoto</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Destinazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>16/09/96</td>
+          <td>07:55</td>
+          <td>075-212-2001</td>
+          <td>02:30</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>30/09/96</td>
+          <td>08:10</td>
+          <td>075-212-2001</td>
+          <td>01:45</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>14/10/96</td>
+          <td>07:48</td>
+          <td>075-212-2001</td>
+          <td>03:12</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>28/10/96</td>
+          <td>08:05</td>
+          <td>075-212-2001</td>
+          <td>02:08</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td>11/11/96</td>
+          <td>07:50</td>
+          <td>075-212-2001</td>
+          <td>01:55</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style:italic; color:#888; padding:6px;">[... chiamate regolari, 2-3 al mese ...]</td>
+        </tr>
+        <tr>
+          <td>04/04/97</td>
+          <td>08:00</td>
+          <td>075-212-2001</td>
+          <td>02:22</td>
+          <td>Tribunale Kyoto</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ALTRE CHIAMATE IN USCITA -->
+  <div class="section">
+    <div class="section-title">Altre chiamate in uscita (campione)</div>
+
+    <table class="call-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ora</th>
+          <th>Numero chiamato</th>
+          <th>Durata</th>
+          <th>Destinazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>22/09/96</td>
+          <td>16:30</td>
+          <td>075-533-2288</td>
+          <td>04:15</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>05/10/96</td>
+          <td>11:00</td>
+          <td>075-744-5500</td>
+          <td>03:50</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>19/11/96</td>
+          <td>15:20</td>
+          <td>075-761-8800</td>
+          <td>07:22</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>03/12/96</td>
+          <td>10:45</td>
+          <td>075-231-4455</td>
+          <td>05:10</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>14/01/97</td>
+          <td>09:15</td>
+          <td>075-533-2288</td>
+          <td>06:30</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>22/02/97</td>
+          <td>14:00</td>
+          <td>075-744-5500</td>
+          <td>04:45</td>
+          <td>(non identificato)</td>
+        </tr>
+        <tr>
+          <td>18/03/97</td>
+          <td>16:50</td>
+          <td>075-761-8800</td>
+          <td>08:12</td>
+          <td>(non identificato)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Tabulato rilasciato da NTT West su mandato dell'Autorita Giudiziaria — Rif. Mandato TK-1997-0411-015B</p>
+  </div>
+</div>
+
+<!-- DOCUMENTO 3: LEGENDA E ANALISI COMPARATIVA -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">NTT WEST</div>
+    <div class="org-jp">西日本電信電話株式会社</div>
+    <div class="doc-type">LEGENDA E ANALISI RIEPILOGATIVA</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Legenda numeri frequenti</div>
+
+    <div class="legenda" style="margin-bottom:12px;">
+      <div class="legenda-item"><strong>075-541-1122</strong> = Utenza ISHIDA Makoto, Via Higashiyama 45 (la linea oggetto del tabulato)</div>
+      <div class="legenda-item" style="margin-top:6px;"><strong>075-581-3344</strong> = Utenza KIMURA Hiro, Via Yamashina 12 (54 chiamate in entrata)</div>
+      <div class="legenda-item" style="margin-top:6px;"><strong>075-561-7788</strong> = Laboratorio Restauro Ogawa, Gion (intestatario: OGAWA Shin) (~62 chiamate in uscita)</div>
+      <div class="legenda-item" style="margin-top:6px;"><strong>075-212-2001</strong> = Tribunale Distrettuale di Kyoto (centralino)</div>
+      <div class="legenda-item" style="margin-top:8px; color:#666;"><strong>075-533-2288</strong> = Non identificato (presunta amicizia famiglia)</div>
+      <div class="legenda-item" style="color:#666;"><strong>075-744-5500</strong> = Non identificato (presunta scuola figli)</div>
+      <div class="legenda-item" style="color:#666;"><strong>075-761-8800</strong> = Non identificato (presunta amicizia famiglia)</div>
+      <div class="legenda-item" style="color:#666;"><strong>075-231-4455</strong> = Non identificato</div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="section">
+    <div class="section-title">Confronto pattern chiamate</div>
+
+    <div style="margin-bottom:14px;">
+      <div style="font-weight:bold; font-size:10px; margin-bottom:6px; letter-spacing:1px;">CHIAMATE IN ENTRATA DA 075-581-3344 (KIMURA):</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Set 96:</div>
+          <div class="bar-fill" style="width: 70px;"></div>
+          <div class="bar-value">7 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Ott 96:</div>
+          <div class="bar-fill" style="width: 80px;"></div>
+          <div class="bar-value">8 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Nov 96:</div>
+          <div class="bar-fill" style="width: 120px;"></div>
+          <div class="bar-value">12 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Dic 96:</div>
+          <div class="bar-fill" style="width: 100px;"></div>
+          <div class="bar-value">10 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Gen 97:</div>
+          <div class="bar-fill" style="width: 70px;"></div>
+          <div class="bar-value">7 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Feb 97:</div>
+          <div class="bar-fill" style="width: 0px; border:1px dashed #ccc;"></div>
+          <div class="bar-value" style="color:#c08080;">0 — interrotte</div>
+        </div>
+      </div>
+      <div class="alert-box">
+        <div class="alert-title">Anomalia</div>
+        Le chiamate da 075-581-3344 si interrompono bruscamente dopo il 22/01/1997. Durata media: <strong>01:12</strong> (chiamate brevi = rifiutate o interrotte).
+      </div>
+    </div>
+
+    <div style="margin-top:16px;">
+      <div style="font-weight:bold; font-size:10px; margin-bottom:6px; letter-spacing:1px;">CHIAMATE IN USCITA A 075-561-7788 (OGAWA SHIN):</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Set 96:</div>
+          <div class="bar-fill secondary" style="width: 80px;"></div>
+          <div class="bar-value">8 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Ott 96:</div>
+          <div class="bar-fill secondary" style="width: 90px;"></div>
+          <div class="bar-value">9 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Nov 96:</div>
+          <div class="bar-fill secondary" style="width: 80px;"></div>
+          <div class="bar-value">8 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Dic 96:</div>
+          <div class="bar-fill secondary" style="width: 70px;"></div>
+          <div class="bar-value">7 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Gen 97:</div>
+          <div class="bar-fill secondary" style="width: 80px;"></div>
+          <div class="bar-value">8 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Feb 97:</div>
+          <div class="bar-fill secondary" style="width: 80px;"></div>
+          <div class="bar-value">8 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Mar 97:</div>
+          <div class="bar-fill secondary" style="width: 90px;"></div>
+          <div class="bar-value">9 chiamate</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Apr 97:</div>
+          <div class="bar-fill secondary" style="width: 50px;"></div>
+          <div class="bar-value">5 chiamate</div>
+        </div>
+      </div>
+      <div class="note-box">
+        <strong>NOTA:</strong> Le chiamate a 075-561-7788 (Laboratorio Restauro Ogawa, Gion — intestatario OGAWA Shin) sono costanti per l'intero periodo. Frequenza regolare: 2-3 a settimana, ore diurne feriali. Durata media: <strong>17:25</strong> (conversazioni lunghe).
+      </div>
+    </div>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Analisi riepilogativa compilata da NTT West — Rif. Mandato TK-1997-0411-015</p>
+  </div>
+</div>
+
+</body>
+</html>

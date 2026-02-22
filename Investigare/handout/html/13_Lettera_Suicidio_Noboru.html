@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confessione — Takeda Noboru</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .letter-page { box-shadow: none; margin: 0; } .scene-box { display: none !important; } }
+
+  /* -- SCENE DESCRIPTION (screen only, for GM context) -- */
+  .scene-box {
+    max-width: 210mm; margin: 0 auto 0; background: #f8f5ef;
+    border: 1px solid #c0a060; padding: 20px 24px;
+    font-family: "Georgia", serif; font-size: 11.5px; line-height: 1.8;
+    color: #3a3020; font-style: italic;
+  }
+  .scene-box .scene-title {
+    font-family: Arial, sans-serif; font-style: normal;
+    font-size: 10px; font-weight: bold; letter-spacing: 2px;
+    text-transform: uppercase; color: #8b0000; margin-bottom: 10px;
+  }
+
+  /* -- LETTER PAGE -- */
+  .letter-page {
+    max-width: 210mm; margin: 0 auto; position: relative;
+    background: #faf6ee;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 31px,
+        rgba(180,160,120,0.08) 31px,
+        rgba(180,160,120,0.08) 32px
+      );
+    border: none;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    min-height: 600px;
+  }
+
+  /* -- Washi paper texture edges -- */
+  .letter-page::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    border: 8px solid transparent;
+    border-image: repeating-linear-gradient(
+      45deg,
+      rgba(180,160,120,0.15),
+      rgba(180,160,120,0.15) 2px,
+      transparent 2px,
+      transparent 6px
+    ) 8;
+    pointer-events: none;
+  }
+
+  /* -- LETTER CONTENT -- */
+  .letter-content {
+    padding: 50px 50px 40px;
+    font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 13px;
+    line-height: 2.2;
+    color: #2a2015;
+  }
+
+  .letter-title-jp {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 8px;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+  }
+  .letter-title {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  .letter-content p {
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  .letter-content .emphasis {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .letter-content .break {
+    text-align: center;
+    margin: 24px 0;
+    color: #c0a060;
+    letter-spacing: 6px;
+    font-style: normal;
+  }
+
+  .letter-signature {
+    text-align: right;
+    margin-top: 40px;
+    font-style: normal;
+  }
+  .letter-signature .sig-jp {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+  }
+  .letter-signature .sig-name {
+    font-size: 13px;
+    color: #555;
+  }
+
+  /* -- Ink splatter effect (subtle) -- */
+  .ink-spot {
+    position: absolute;
+    width: 6px; height: 6px;
+    background: rgba(30,20,10,0.15);
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 13 — Lettera di Suicidio di Noboru</h2>
+  <p><strong>Quando consegnare: CONDIZIONALE</strong></p>
+  <ul>
+    <li>SOLO SE i giocatori scoprono la falsificazione del test del sangue/DNA</li>
+    <li>SOLO SE confrontano Noboru direttamente con le prove</li>
+    <li>SOLO SE lo accusano pubblicamente o minacciano di rendere nota la cosa</li>
+    <li>Entro 24 ore da questo confronto, Noboru si toglie la vita</li>
+  </ul>
+  <p><strong>La scena:</strong> Studio d'arte di Takeda Noboru, Via Arashiyama 78. Il corpo del maestro e in posizione seiza (formale) al centro della stanza, di fronte al giardino. Kimono bianco tradizionale. Katana cerimoniale della famiglia insanguinata accanto a lui. Sul tatami, il foglio con la confessione.</p>
+  <p><strong>Cosa rivela la lettera:</strong></p>
+  <ul>
+    <li><strong>Falsificazione confermata:</strong> Ishida Makoto organizzo il falso test del sangue nel 1980</li>
+    <li><strong>Esecutore:</strong> Il medico YAMAMOTO Naoki, Ospedale Universitario — pagato 5 milioni di yen</li>
+    <li><strong>Paternita di Kenta:</strong> Confermata — Kenta E figlio del giudice Ishida</li>
+    <li><strong>Movente di Noboru:</strong> Vergogna per Yui, ambizione sociale per Sakura, voleva che la figlia sposasse un uomo importante</li>
+  </ul>
+  <p><strong>Conseguenze investigative:</strong></p>
+  <ul>
+    <li>Yamamoto Naoki puo essere trovato e interrogato (lavora in clinica privata, terrorizzato)</li>
+    <li>Il movente di Yui diventa completàmente chiaro</li>
+    <li>Se Yui scopre del suicidio del padre E della lettera: reazione complessa (odio + lutto + senso di colpa)</li>
+  </ul>
+  <p><strong>Nota per il Master:</strong> Questa è una scena pesante. Noboru era un uomo sbagliato, non malvagio. Ha fatto del male credendo di fare il bene. Gestire con rispetto al tavolo.</p>
+</div>
+
+<!-- DESCRIZIONE SCENA (visibile a schermo, non stampa) -->
+<div class="scene-box">
+  <div class="scene-title">Descrizione della scena</div>
+  <p>Lo studio d'arte di Takeda Noboru, Via Arashiyama 78.</p>
+  <p>Il corpo del maestro e seduto in posizione formale — seiza — al centro della stanza, di fronte al giardino. Indossa un kimono bianco tradizionale.</p>
+  <p>La katana cerimoniale della famiglia, normalmente esposta nel tokonoma, giace insanguinata accanto a lui.</p>
+  <p>Sul tatami, davanti al corpo, un foglio di carta di riso con calligrafia tremante.</p>
+</div>
+
+<!-- LETTERA -->
+<div class="letter-page">
+
+  <!-- Subtle ink spots for realism -->
+  <div class="ink-spot" style="top: 180px; left: 320px;"></div>
+  <div class="ink-spot" style="top: 420px; right: 90px; width: 4px; height: 4px;"></div>
+  <div class="ink-spot" style="bottom: 200px; left: 150px; width: 3px; height: 3px;"></div>
+
+  <div class="letter-content">
+
+    <div class="letter-title-jp">私の告白</div>
+    <div class="letter-title">La mia confessione</div>
+
+    <p>Ho tradito mia figlia Yui per l'onore della famiglia.</p>
+
+    <p class="emphasis">Ho sbagliato.</p>
+
+    <div class="break">* * *</div>
+
+    <p>Nel 1980, quando Yui mi disse di essere incinta, il giudice Ishida Makoto mi contatto.</p>
+
+    <p>Mi propose di far falsificare il test del sangue. Disse che avrebbe pagato lui. Che nessuno avrebbe saputo. Che era meglio per tutti.</p>
+
+    <p>Io accettai.</p>
+
+    <p>Non per i soldi. Non per lui.</p>
+
+    <p>Accettai perché volevo che Sakura sposasse un uomo importante. Perche mi vergognavo di Yui e della sua passione per la cucina. Perche pensavo che l'arte fosse tutto e che lei fosse una delusione.</p>
+
+    <p>Il medico si chiamava <span class="emphasis">Yamamoto Naoki</span>. Lavorava all'Ospedale Universitario. Ishida lo pago cinque milioni di yen.</p>
+
+    <p>Il test disse che Kenta non era figlio di Ishida. Era una bugia. Kenta è suo figlio. Mio nipote è cresciuto senza sapere chi è suo padre.</p>
+
+    <div class="break">* * *</div>
+
+    <p>Ho sacrificato una figlia per l'altra. Ho distrutto la vita di Yui per il prestigio. Ho tradito il mio stesso sangue.</p>
+
+    <p>Non merito di vivere con questa colpa. Non merito di guardare negli occhi le mie figlie. Non merito il nome della famiglia Takeda.</p>
+
+    <div class="break">* * *</div>
+
+    <p>Chiedo perdono a Yui.</p>
+
+    <p>So che non mi perdonera mai. Non lo merito.</p>
+
+    <div class="letter-signature">
+      <div class="sig-jp">武田 昇</div>
+      <div class="sig-name">Takeda Noboru</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

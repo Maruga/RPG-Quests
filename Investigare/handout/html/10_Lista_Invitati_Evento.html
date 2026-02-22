@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro Presenze — Collezione Privata Yamato</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: #2a1a3a; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: "Georgia", serif; font-size: 16px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 6px; }
+  .doc-header .event-name { font-family: "Georgia", serif; font-size: 13px; font-style: italic; color: #d4b87a; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-family: "Courier New", monospace;
+    font-size: 12px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- SECTIONS -- */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #2a1a3a;
+    border-bottom: 2px solid #2a1a3a; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* -- GUEST TABLE -- */
+  .guest-table { width: 100%; border-collapse: collapse; font-size: 9.5px; margin-top: 8px; }
+  .guest-table th {
+    background: #f0ede6; text-align: left; padding: 4px 6px;
+    border: 1px solid #ccc; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; color: #555;
+  }
+  .guest-table td { padding: 3px 6px; border: 1px solid #ddd; vertical-align: top; }
+  .guest-table tr:nth-child(even) { background: #fafaf6; }
+  .guest-table .row-key { background: #fff8e0 !important; }
+  .guest-table .row-staff { background: #f0f0f0 !important; color: #666; }
+  .guest-table .note-flag { color: #8b0000; font-weight: bold; }
+
+  /* -- WITNESS BOX -- */
+  .witness-box {
+    margin: 12px 0; padding: 12px 14px; background: #f8f6f0;
+    border-left: 3px solid #999; font-size: 10.5px; line-height: 1.6;
+  }
+  .witness-box .witness-name {
+    font-weight: bold; font-size: 10px; letter-spacing: 1px;
+    text-transform: uppercase; color: #333; margin-bottom: 6px;
+  }
+  .witness-box .witness-text { font-style: italic; }
+
+  /* -- MALORI TABLE -- */
+  .malori-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .malori-table th {
+    background: #fff0e0; text-align: left; padding: 5px 8px;
+    border: 1px solid #cc9966; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #8b4513;
+  }
+  .malori-table td { padding: 5px 8px; border: 1px solid #ddd; vertical-align: top; }
+
+  /* -- ALERT BOX -- */
+  .alert-box {
+    margin: 12px 0; padding: 10px 14px; background: #fff5f0; border: 1px solid #cc6633;
+    font-size: 10px; line-height: 1.6;
+  }
+  .alert-box .alert-title {
+    font-weight: bold; color: #8b0000; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; margin-bottom: 4px;
+  }
+
+  /* -- DETAIL LIST -- */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* -- FIRMA -- */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 10 — Lista Invitati Evento</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori richiedono la lista a Hasegawa Yuki (organizzatrice), perquisiscono la galleria con mandato, o richiedono il registro alla reception.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>32 presenze effettive (35 invitati, 3 assenti)</li>
+    <li>Orari di arrivo e uscita di tutti — Ishida arriva 18:15, esce 22:45; Sakura esce alle 22:00 (prima del marito)</li>
+    <li>Tre malori durante/dopo l'evento: Tanaka Michiko (PS), Watanabe Kenji (PS), Oda Yuki (guarita)</li>
+    <li>Il fugu è comparso sul buffet verso le 21:30, NON era nel menu originale</li>
+    <li>Ishida ne ha mangiate diverse porzioni — "preparato come quello di una volta"</li>
+  </ul>
+  <p><strong>Indizi chiave nascosti:</strong></p>
+  <ul>
+    <li><strong>Il fugu non era nel menu</strong> — chi l'ha portato? Lo chef dice di no, ma Yui e entrata dall'ingresso di servizio</li>
+    <li><strong>"Come quello di una volta"</strong> — il giudice riconosce la ricetta di Yui (la conosceva)</li>
+    <li><strong>Tre malori = fugu avvelenato</strong> — conferma la natura tossica del piatto</li>
+    <li><strong>Sakura esce alle 22:00</strong> — costruisce alibi, non era presente quando il marito ha mangiato il fugu</li>
+    <li><strong>Noboru presente</strong> (artista ospite) — era li, ma non c'entra con l'omicidio</li>
+  </ul>
+  <p><strong>Chi MANCA dalla lista:</strong></p>
+  <ul>
+    <li><strong>KIMURA Yui</strong> — NON era invitata. E entrata dall'ingresso di servizio tramite lo chef Tanaka Ryo. Non compare nel registro presenze. I giocatori devono scoprirlo interrogando lo staff.</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">GALLERIA NIJO ART SPACE</div>
+    <div class="org-jp">二条アートスペース</div>
+    <div class="event-name">"Collezione Privata Yamato" — 8 aprile 1997</div>
+    <div class="doc-type">REGISTRO PRESENZE</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Organizzatrice</div><div class="value">HASEGAWA Yuki</div></div>
+    <div class="field"><div class="label">Data evento</div><div class="value">8 aprile 1997</div></div>
+    <div class="field"><div class="label">Orario</div><div class="value">18:00 — 23:00</div></div>
+    <div class="field"><div class="label">Luogo</div><div class="value">Galleria Nijo Art Space, Kyoto</div></div>
+    <div class="field"><div class="label">Invitati confermati</div><div class="value">35</div></div>
+    <div class="field"><div class="label">Presenti effettivi</div><div class="value">32</div></div>
+  </div>
+
+  <!-- LISTA INVITATI -->
+  <div class="section">
+    <div class="section-title">Elenco presenze registrate</div>
+
+    <table class="guest-table">
+      <thead>
+        <tr>
+          <th style="width:30px;">N.</th>
+          <th style="width:140px;">Nome</th>
+          <th style="width:50px;">Arr.</th>
+          <th style="width:50px;">Usc.</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-key">
+          <td>01</td>
+          <td><strong>ISHIDA Makoto</strong></td>
+          <td>18:15</td>
+          <td>22:45</td>
+          <td>Con moglie</td>
+        </tr>
+        <tr class="row-key">
+          <td>02</td>
+          <td><strong>ISHIDA Sakura</strong></td>
+          <td>18:15</td>
+          <td>22:00</td>
+          <td>Uscita prima del marito</td>
+        </tr>
+        <tr class="row-key">
+          <td>03</td>
+          <td><strong>TAKEDA Noboru</strong></td>
+          <td>18:00</td>
+          <td>21:30</td>
+          <td>Artista ospite</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>SATO Hiroshi</td>
+          <td>18:30</td>
+          <td>21:50</td>
+          <td>Collezionista</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>KATO Hiroshi</td>
+          <td>18:45</td>
+          <td>22:30</td>
+          <td>Banchiere</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>MORIMOTO Kenji</td>
+          <td>19:00</td>
+          <td>22:00</td>
+          <td>Critico d'arte</td>
+        </tr>
+        <tr class="row-key">
+          <td>07</td>
+          <td>TANAKA Michiko</td>
+          <td>18:20</td>
+          <td>23:00</td>
+          <td class="note-flag">Malore — Pronto Soccorso</td>
+        </tr>
+        <tr class="row-key">
+          <td>08</td>
+          <td>WATANABE Kenji</td>
+          <td>19:15</td>
+          <td>23:00</td>
+          <td class="note-flag">Malore — Pronto Soccorso</td>
+        </tr>
+        <tr class="row-key">
+          <td>09</td>
+          <td>ODA Yuki</td>
+          <td>18:00</td>
+          <td>22:15</td>
+          <td class="note-flag">Malore lieve</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>HAYASHI Tomoko</td>
+          <td>19:00</td>
+          <td>21:45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>SUZUKI Akira</td>
+          <td>18:30</td>
+          <td>22:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>NAKAMURA Yoko</td>
+          <td>18:45</td>
+          <td>21:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>YAMAMOTO Taro</td>
+          <td>19:30</td>
+          <td>22:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>FUJITA Keiko</td>
+          <td>18:15</td>
+          <td>20:30</td>
+          <td>Uscita presto</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>MORI Daisuke</td>
+          <td>19:00</td>
+          <td>22:45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>OGAWA Haruki</td>
+          <td>18:30</td>
+          <td>21:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>INOUE Sachiko</td>
+          <td>19:15</td>
+          <td>22:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>KIMURA Takeshi</td>
+          <td>18:00</td>
+          <td>20:45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>ENDO Yumiko</td>
+          <td>19:30</td>
+          <td>22:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>AOKI Shinji</td>
+          <td>18:45</td>
+          <td>21:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>SASAKI Mayumi</td>
+          <td>19:00</td>
+          <td>22:15</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>YOSHIDA Kenichi</td>
+          <td>18:30</td>
+          <td>21:45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>MATSUDA Reiko</td>
+          <td>19:15</td>
+          <td>22:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>NISHIMURA Akiko</td>
+          <td>18:00</td>
+          <td>20:30</td>
+          <td>Uscita presto</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>UEDA Masaru</td>
+          <td>19:30</td>
+          <td>23:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>KOBAYASHI Miki</td>
+          <td>18:45</td>
+          <td>22:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>KONDO Ryuichi</td>
+          <td>19:00</td>
+          <td>21:30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>SHIMIZU Naoko</td>
+          <td>18:15</td>
+          <td>22:00</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>IKEDA Toshio</td>
+          <td>19:30</td>
+          <td>22:45</td>
+          <td></td>
+        </tr>
+        <tr class="row-staff">
+          <td>30</td>
+          <td>HASEGAWA Yuki</td>
+          <td>17:00</td>
+          <td>23:30</td>
+          <td>Organizzatrice</td>
+        </tr>
+        <tr class="row-staff">
+          <td>31</td>
+          <td>TANAKA Ryo</td>
+          <td>16:00</td>
+          <td>00:00</td>
+          <td>Chef (staff cucina)</td>
+        </tr>
+        <tr class="row-staff">
+          <td>32</td>
+          <td>[Staff cucina x4]</td>
+          <td>16:00</td>
+          <td>00:00</td>
+          <td>Catering</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- NOTE DELLA SERATA -->
+  <div class="section">
+    <div class="section-title">Note sulla serata</div>
+    <ul class="detail-list">
+      <li>Buffet attivo dalle 20:00 alle 22:30</li>
+      <li>Menu completo servito: antipasti, pesce, carne, dolci</li>
+      <li>Piatto di <strong>fugu</strong> comparso sul buffet intorno alle 21:30 — non presente nel menu originale</li>
+      <li>Nessun annuncio particolare per il fugu</li>
+      <li>Tre ospiti hanno accusato malori durante o dopo l'evento</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- MALORI -->
+  <div class="section">
+    <div class="section-title">Malori segnalati</div>
+
+    <table class="malori-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Sintomi</th>
+          <th>Esito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>TANAKA Michiko</strong></td>
+          <td>Parestesia, nausea</td>
+          <td>Pronto Soccorso — dimessa ore 03:30</td>
+        </tr>
+        <tr>
+          <td><strong>WATANABE Kenji</strong></td>
+          <td>Parestesia, cefalea</td>
+          <td>Pronto Soccorso — dimesso ore 06:20</td>
+        </tr>
+        <tr>
+          <td>ODA Yuki</td>
+          <td>Nausea lieve</td>
+          <td>Guarita spontaneamente</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- TESTIMONIANZE -->
+  <div class="section">
+    <div class="section-title">Dichiarazioni raccolte</div>
+
+    <div class="witness-box">
+      <div class="witness-name">Hasegawa Yuki — Organizzatrice</div>
+      <p class="witness-text">"Il fugu? Non era nel menu originale. E comparso sul buffet verso le 21:30. Ho pensato che lo chef avesse aggiunto qualcosa di speciale. Non ho fatto domande — Tanaka-san è un professionista.</p>
+      <p class="witness-text" style="margin-top: 6px;">Il giudice Ishida ne ha prese diverse porzioni. Il dottor Sato gliel'ha fatto notare — gli ha detto di andarci piano. Ma il giudice sembrava molto soddisfatto, diceva che era 'preparato come quello di una volta'.</p>
+      <p class="witness-text" style="margin-top: 6px;">La signora Ishida e andata via verso le 22:00. Doveva andare da un'amica, mi ha detto."</p>
+    </div>
+
+    <div class="witness-box">
+      <div class="witness-name">Dott. Sato Hiroshi — Collezionista</div>
+      <p class="witness-text">"Ho visto Ishida-san mangiare almeno tre porzioni di quel fugu. Gli ho detto: 'Ishida-san, vada piano, e pur sempre fugu.'</p>
+      <p class="witness-text" style="margin-top: 6px;">Lui ha sorriso e ha detto: 'E preparato esattamente come lo faceva una mia vecchia conoscenza. Non lo mangiavo così da vent'anni.'</p>
+      <p class="witness-text" style="margin-top: 6px;">Mi ha colpito — sembrava... nostalgico? Commosso, quasi. Sono andato via alle 21:50, prima di lui."</p>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div>Registro acquisito da:</div>
+      <div style="font-weight:bold;">Polizia Prefetturale di Kyoto</div>
+      <div style="font-size:9px; color:#666;">Kyoto, [data acquisizione]</div>
+    </div>
+    <div class="firma-line">Firma dell'ufficiale</div>
+  </div>
+
+</div>
+
+</body>
+</html>

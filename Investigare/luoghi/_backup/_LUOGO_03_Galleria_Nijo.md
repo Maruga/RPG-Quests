@@ -196,6 +196,49 @@
 
 ---
 
+## MECCANICHE
+
+### Intervistare Hasegawa Yuki (organizzatrice)
+Collaborativa, En +1. Non servono tiri — dà la lista invitati, descrive la serata. Domande specifiche ottengono risposte specifiche.
+
+### Intervistare il Dott. Sato Hiroshi (chirurgo/collezionista)
+Ha visto il giudice mangiare 3 porzioni di fugu. Racconta spontaneamente se gli si chiede della cena.
+
+**Ascolto** — Se si vuole capire se c'è dell'altro:
+- **Successo**: "Il dottore esita — sembra che abbia notato qualcosa sul fugu che non ha detto. 'Il sapore era più intenso del solito', aggiunge."
+- **Fallimento**: -1 Ki. Niente di aggiuntivo.
+
+### Intervistare Chef Tanaka Ryo (a Osaka)
+Tanaka è stato usato da Yui ma non lo sa. En 0, nervoso.
+
+**Ascolto** — Per capire cosa nasconde:
+- **Successo**: "È agitato — non per colpa, ma per paura. Ha fatto entrare qualcuno dalla porta di servizio e ora teme le conseguenze."
+- **Fallimento**: -1 Ki. Sembra solo un cuoco ansioso.
+
+**Presenza** — Per convincerlo a parlare della donna che ha fatto entrare:
+- **Successo**: Descrive Yui (o chi crede sia), la divisa bianca, la borsa pesante
+- **Fallimento**: -1 Ki. Si chiude, ha paura di guai legali
+
+### Ricostruire la timeline dell'evento
+I PG hanno la lista invitati con orari. La ricostruzione è lavoro loro — collegare i tempi, capire quando è apparso il fugu, chi era in cucina.
+
+**Lucidità** — Solo se i PG vogliono un'intuizione:
+- **Successo**: "Il fugu è apparso alle 21:30 ma non era nel menu. Qualcuno l'ha portato dall'esterno."
+- **Fallimento**: -1 Ki. I dati sono lì ma il PG non riesce a incastrarli — deve ragionarci con calma.
+
+### Gou utili
+- **Palazzo della Memoria** (Lucidità, 2 Ki): Ricorda perfettamente un dettaglio visto alla galleria
+- **Filo Rosso** (Ascolto, 2 Ki): Connessione istantanea con un testimone reticente
+
+### En iniziale
+| PNG | En | Motivo |
+|-----|-----|--------|
+| Hasegawa Yuki | +1 | Vuole aiutare, preoccupata per la reputazione della galleria |
+| Chef Tanaka | 0 | Nervoso, teme conseguenze legali |
+| Dott. Sato | +1 | Cittadino modello, collaborativo |
+
+---
+
 ## NOTE PER IL MASTER
 
 ### Perché i giocatori vengono qui

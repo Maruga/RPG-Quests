@@ -186,15 +186,43 @@ Struttura separata sul retro:
 
 ---
 
-## CHI TROVANO I GIOCATORI (Giorno 1)
+## PNG PRESENTI
+
+### Giorno 1 (9 aprile)
 
 | Persona | Dove | Stato |
 |---------|------|-------|
 | Agente Yamada | Ingresso | Primo intervenuto |
-| Ueno Masa | Soggiorno | Composto ma scosso |
-| Nagai Chiyo | Cucina | In lacrime |
-| Okada Taro | Giardino | Nervoso, fuma |
+| Ueno Masa (maggiordomo) | Soggiorno | Composto ma scosso |
+| Nagai Chiyo (domestica) | Cucina | In lacrime |
+| Okada Taro (autista) | Giardino | Nervoso, fuma |
 | Sakura | NON presente | Arriva dopo |
+
+> **Nota**: Per il comportamento, le frasi e le meccaniche di interrogatorio, consultare le rispettive schede PNG.
+
+---
+
+## MECCANICHE
+
+### Entrare nello studio (prima volta)
+
+**Distacco** — La scena è composta ma inquietante: un uomo morto in una stanza perfettamente in ordine.
+- **Successo**: Il PG mantiene il controllo, può osservare con calma
+- **Fallimento**: -1 Ki. Il PG è scosso — funziona ancora ma è teso, distratto. Può comunque esaminare tutto, ma il GM descrive il disagio interiore
+
+### Esaminare la scena
+
+Non servono tiri per vedere gli oggetti — sono tutti lì, elencati nel rapporto. Se un PG prende la penna in mano, **sente che è pesante** (automatico, nessun tiro).
+
+**Lucidità** — Se un PG vuole capire la dinamica della scena (come è morto, cosa stava facendo):
+- **Successo**: "La penna era probabilmente nella sua mano — la striscia d'inchiostro parte dalla scritta e va verso destra, come se la mano avesse trascinato cadendo. L'ha lasciata cadere quando è crollato."
+- **Fallimento**: -1 Ki. Il PG non riesce a ricostruire — vede i pezzi ma non si incastrano. Le informazioni fisiche (penna, foglio, posizione) restano visibili.
+
+### Gou utili in questa location
+
+- **Teatro delle Ombre** (Lucidità, 2 Ki): Visualizza la sequenza degli eventi — il giudice che entra, si siede, prende la penna, la scarica, il crollo
+- **Pietra Fuori Posto** (Lucidità, 2 Ki): Sente immediatamente cosa non torna nella stanza
+- **Occhio della Gru** (Lucidità, 2 Ki): Nota un dettaglio che cambia tutto
 
 ---
 

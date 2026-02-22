@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referto Clinico — URO-1996-08-3347</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: #ffffff; color: #1a1a1a; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #0055a0; position: relative;
+  }
+  .doc-header .hospital-logo {
+    width: 50px; height: 50px; border: 2px solid #0055a0; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: #0055a0; text-align: center; line-height: 1.1;
+    margin: 0 auto 10px;
+  }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 2px; color: #0055a0; }
+  .doc-header .org-jp { font-size: 12px; color: #666; letter-spacing: 2px; margin-bottom: 4px; }
+  .doc-header .dept { font-family: Arial, sans-serif; font-size: 11px; color: #555; letter-spacing: 1px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-family: "Courier New", monospace;
+    font-size: 14px; font-weight: bold; letter-spacing: 3px; color: #0055a0;
+    border: 2px solid #0055a0; display: inline-block; padding: 4px 16px;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #0055a0; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- SECTIONS -- */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #0055a0;
+    border-bottom: 2px solid #0055a0; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #0055a0; margin: 0; }
+
+  /* -- DETAIL LIST -- */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* -- RESULTS TABLE -- */
+  .results-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .results-table th {
+    background: #e8f0f8; text-align: left; padding: 5px 8px;
+    border: 1px solid #b0c4de; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #0055a0;
+  }
+  .results-table td { padding: 5px 8px; border: 1px solid #ddd; vertical-align: top; }
+  .results-table tr:nth-child(even) { background: #f8fafc; }
+  .results-table .abnormal { color: #cc0000; font-weight: bold; }
+  .results-table .normal { color: #006600; }
+  .results-table .row-critical { background: #fff0f0 !important; }
+
+  /* -- CLINICAL NOTE -- */
+  .clinical-note {
+    margin: 12px 0; padding: 10px 14px; background: #f8f6f0;
+    border-left: 3px solid #0055a0; font-size: 10.5px; line-height: 1.6;
+  }
+  .clinical-note .note-title {
+    font-weight: bold; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; color: #0055a0; margin-bottom: 4px;
+  }
+
+  /* -- DIAGNOSIS BOX -- */
+  .diagnosis-box {
+    margin: 12px 0; padding: 12px 16px; border: 2px solid #cc0000;
+    background: #fff8f8; font-size: 11px; line-height: 1.6;
+  }
+  .diagnosis-box .diag-title {
+    font-weight: bold; color: #cc0000; font-size: 10px; letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 8px; text-align: center;
+  }
+  .diagnosis-box .diag-primary {
+    font-weight: bold; margin-bottom: 6px;
+  }
+  .diagnosis-box .diag-detail {
+    padding-left: 12px; font-size: 10px; color: #555;
+  }
+
+  /* -- INFO BOX -- */
+  .info-box {
+    margin: 12px 0; padding: 10px 14px; background: #f0f4f8; border: 1px solid #b0c4de;
+    font-size: 10px; line-height: 1.6;
+  }
+
+  /* -- CONFIDENTIAL STAMP -- */
+  .confidential {
+    position: absolute; right: 20px; top: 60px;
+    transform: rotate(-20deg);
+    border: 3px solid rgba(200,0,0,0.3);
+    padding: 4px 12px;
+    font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;
+    color: rgba(200,0,0,0.3); letter-spacing: 3px;
+  }
+
+  /* -- FIRMA -- */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #0055a0;
+    display: flex; justify-content: space-between; align-items: flex-end; font-size: 10.5px;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* -- SUBSECTION -- */
+  .subsection { margin-bottom: 12px; }
+  .subsection-title { font-weight: bold; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 14 — Referto Clinico di Hiro (Sterilita)</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori ottengono i referti medici di Kimura Hiro tramite mandato, perquisizione, o indagine presso l'Ospedale Universitario.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>Hiro si è recato dall'urologo nell'agosto 1996 per dolore lombare e sangue nelle urine</li>
+    <li>Diagnosi primaria: calcolo renale da 4mm (il motivo della visita)</li>
+    <li>Diagnosi secondaria (scoperta incidentale): <strong>AZOOSPERMIA</strong> — zero spermatozoi</li>
+    <li>Causa: insufficienza testicolare primaria CONGENITA — sterilità assoluta dalla nascita</li>
+    <li>Hiro non ha MAI potuto generare figli — il figlio Kenta (15 anni) non può essere biologicamente suo</li>
+  </ul>
+  <p><strong>Significato investigativo:</strong></p>
+  <ul>
+    <li>Prova che Kenta NON è figlio di Hiro — la paternità biologica è impossibile</li>
+    <li>La madre di Kenta è Yui, sorella di Sakura. Il padre biologico è un altro uomo.</li>
+    <li>Questo referto combinato con il test DNA falsificato del giudice rivela l'intera trama familiare</li>
+  </ul>
+  <p><strong>HIRO NON SA.</strong></p>
+  <ul>
+    <li>Yui è andata a ritirare il referto al posto del marito (5 settembre 1996). Hiro non si è mai presentato alla visita di controllo.</li>
+    <li>Yui ha letto i risultati e ha capito tutto: Kenta non può essere figlio di Hiro. Non ha comunicato nulla al marito.</li>
+    <li>Hiro non sa di essere sterile, non ha mai visto questo documento, e crede di essere il padre di Kenta.</li>
+    <li>Se i PG gli rivelano la diagnosi: shock totale, negazione, poi crollo emotivo.</li>
+  </ul>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="hospital-logo">KUH<br>京大病院</div>
+    <div class="org">OSPEDALE UNIVERSITARIO DI KYOTO</div>
+    <div class="org-jp">京都大学医学部附属病院</div>
+    <div class="dept">Reparto di Urologia</div>
+    <div class="doc-type">REFERTO CLINICO</div>
+    <div class="confidential">RISERVATO</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Cartella N.</div><div class="value">URO-1996-08-3347</div></div>
+    <div class="field"><div class="label">Data prima visita</div><div class="value">12 agosto 1996</div></div>
+    <div class="field"><div class="label">Paziente</div><div class="value">KIMURA Hiro</div></div>
+    <div class="field"><div class="label">Data di nascita / Eta</div><div class="value">43 anni</div></div>
+    <div class="field"><div class="label">Professione</div><div class="value">Agente di Polizia</div></div>
+    <div class="field"><div class="label">Medico responsabile</div><div class="value">Dott. TANAKA Hiroyuki</div></div>
+  </div>
+
+  <!-- MOTIVO DELLA VISITA -->
+  <div class="section">
+    <div class="section-title">Motivo della visita</div>
+    <p>Il paziente si presenta lamentando dolore lombare persistente da circa tre settimane, localizzato in regione lombare destra, di intensita moderata, con episodi di irradiazione al fianco. Riferisce inoltre episodio di ematuria microscopica riscontrata in esami di routine.</p>
+    <p style="margin-top: 6px;">Anamnesi remota: nulla di rilevante. Nessun precedente urologico noto. Nessuna allergia nota.</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ESAMI DIAGNOSTICI -->
+  <div class="section">
+    <div class="section-title">Esami diagnostici — 19 agosto 1996</div>
+
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th style="width:180px;">Esame</th>
+          <th>Risultato</th>
+          <th style="width:80px;">Rif. normali</th>
+          <th style="width:70px;">Valutazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Ecografia renale</strong></td>
+          <td>Calcolo renale destro, 4 mm, localizzazione caliceale inferiore. Non ostruttivo. Rene sinistro nella norma. Nessuna idronefrosi.</td>
+          <td>Assente</td>
+          <td class="abnormal">PATOLOGICO</td>
+        </tr>
+        <tr>
+          <td><strong>Emocromo completo</strong></td>
+          <td>Tutti i parametri nella norma</td>
+          <td>—</td>
+          <td class="normal">NORMALE</td>
+        </tr>
+        <tr>
+          <td><strong>Funzionalita renale</strong></td>
+          <td>Creatinina 0,9 mg/dL — Azotemia 35 mg/dL</td>
+          <td>0,7-1,2 / 15-45</td>
+          <td class="normal">NORMALE</td>
+        </tr>
+        <tr>
+          <td><strong>Urinocoltura</strong></td>
+          <td>Negativa</td>
+          <td>Negativa</td>
+          <td class="normal">NORMALE</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="clinical-note" style="margin-top: 14px;">
+      <div class="note-title">Nota clinica</div>
+      All'esame obiettivo si riscontra volume testicolare ridotto bilateralmente (stima: 8 mL per lato; norma: 15-25 mL). Il reperto, non correlato al quadro litiasico, suggerisce approfondimento della funzionalita gonadica. Si dispone spermiogramma e dosaggio ormonale.
+    </div>
+
+    <table class="results-table" style="margin-top: 14px;">
+      <thead>
+        <tr>
+          <th style="width:180px;">Esame</th>
+          <th>Risultato</th>
+          <th style="width:80px;">Rif. normali</th>
+          <th style="width:70px;">Valutazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-critical">
+          <td><strong>Spermiogramma</strong></td>
+          <td><strong>AZOOSPERMIA</strong> — Concentrazione: 0 spermatozoi/mL. Volume eiaculato: 2,8 mL (normale). Assenza completà di cellule spermatiche.</td>
+          <td>&gt;15 mil/mL</td>
+          <td class="abnormal">PATOLOGICO</td>
+        </tr>
+        <tr class="row-critical">
+          <td><strong>FSH</strong> (ormone follicolo-stimolante)</td>
+          <td><strong>28,4 mUI/mL</strong></td>
+          <td>1,5 - 12,4</td>
+          <td class="abnormal">ELEVATO</td>
+        </tr>
+        <tr class="row-critical">
+          <td><strong>LH</strong> (ormone luteinizzante)</td>
+          <td><strong>14,2 mUI/mL</strong></td>
+          <td>1,7 - 8,6</td>
+          <td class="abnormal">ELEVATO</td>
+        </tr>
+        <tr>
+          <td><strong>Testosterone totale</strong></td>
+          <td>4,8 ng/mL</td>
+          <td>2,8 - 8,0</td>
+          <td class="normal">NORMALE</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="clinical-note" style="margin-top: 12px;">
+      <div class="note-title">Interpretàzione del quadro ormonale</div>
+      Il profilo ormonale e compatibile con <strong>insufficienza testicolare primaria</strong>: i valori elevati di FSH e LH indicano che l'ipofisi tenta di stimolare i testicoli con produzione ormonale aumentata, ma i testicoli non rispondono (assenza di spermatogenesi). Il testosterone nella norma spiega l'assenza di segni clinici di ipogonadismo. Il quadro e indicativo di <strong>eziologia congenita</strong>.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- VISITA DI CONTROLLO -->
+  <div class="section">
+    <div class="section-title">Visita di controllo — 2 settembre 1996</div>
+
+    <div class="subsection">
+      <div class="subsection-title">Diagnosi 1 — Nefrolitiasi</div>
+      <ul class="detail-list">
+        <li>Calcolo renale destro di 4 mm, non ostruttivo, caliceale inferiore</li>
+        <li>Quadro clinico benigno, non richiede intervento al momento</li>
+        <li>Raccomandazione: idratazione abbondante (almeno 2 litri/giorno), dietà a ridotto contenuto di ossalati</li>
+        <li>Controllo ecografico a 6 mesi</li>
+      </ul>
+    </div>
+
+    <div class="diagnosis-box">
+      <div class="diag-title">Diagnosi 2 — Azoospermia non ostruttiva congenita</div>
+      <div class="diag-primary">Azoospermia secretoria da insufficienza testicolare primaria congenita</div>
+      <div class="diag-detail">
+        <ul class="detail-list">
+          <li>Assenza completà di spermatozoi nell'eiaculato</li>
+          <li>FSH e LH marcatamente elevati — ipergonadotropismo</li>
+          <li>Volume testicolare ridotto bilateralmente</li>
+          <li>Testosterone nella norma (funzione endocrina conservata)</li>
+          <li>Quadro compatibile con difetto congenito della spermatogenesi</li>
+          <li><strong>Condizione presente dalla nascita</strong> — il paziente non ha mai avuto capacità di generare spermatozoi</li>
+          <li><strong>Infertilità maschile assoluta</strong> — non suscettibile di trattamento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- COMUNICAZIONE AL PAZIENTE -->
+  <div class="section" style="position: relative;">
+    <div class="section-title">Comunicazione al paziente</div>
+
+    <p>Referto emesso in data 2 settembre 1996. Il paziente è stato convocato per visita di controllo per la comunicazione dei risultati.</p>
+
+    <p style="margin-top: 8px;"><strong>Nota:</strong> Referto ritirato in data 5 settembre 1996 da familiare (moglie del paziente, Kimura Yui, documento d'identità verificato). Il paziente non si è presentato alla visita di controllo prevista.</p>
+
+    <p style="margin-top: 8px;">Sintesi diagnostica da comunicare:</p>
+    <ul class="detail-list">
+      <li>La condizione è congenita e presente dalla nascita</li>
+      <li>La paternità biologica è incompatibile con questa diagnosi</li>
+      <li>Non esistono trattamenti in grado di ripristinare la spermatogenesi in questo quadro clinico</li>
+      <li>La condizione non ha alcun impatto sulla salute generale né sulla funzione sessuale</li>
+    </ul>
+
+    <div class="confidential" style="top: auto; bottom: 20px; right: 20px; transform: rotate(-15deg);">RISERVATO</div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>
+      <div>Medico responsabile:</div>
+      <div style="font-weight:bold;">Dott. Tanaka Hiroyuki</div>
+      <div style="font-size:9px; color:#666;">Reparto di Urologia</div>
+      <div style="font-size:9px; color:#666;">Ospedale Universitario di Kyoto</div>
+      <div style="font-size:9px; color:#666;">Kyoto, 2 settembre 1996</div>
+    </div>
+    <div class="firma-line">Firma del medico</div>
+  </div>
+
+</div>
+
+</body>
+</html>

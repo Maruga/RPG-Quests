@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso Hayashi — Fascicolo 1994-CR-4521</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+  .document + .document { margin-top: 20px; }
+
+  /* -- HEADER (Tribunal) -- */
+  .doc-header {
+    background: #1a1a2e; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #c0a060; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #c0a060; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #c0a060; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 14px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #c0a060; display: inline-block; padding: 4px 16px;
+  }
+
+  /* -- HEADER (Newspaper) -- */
+  .news-header {
+    background: white; padding: 16px 24px 12px; text-align: center;
+    border-bottom: 3px solid #333;
+  }
+  .news-header .news-name { font-size: 13px; color: #c0a060; letter-spacing: 2px; margin-bottom: 2px; }
+  .news-header .news-name-jp { font-size: 16px; letter-spacing: 4px; margin-bottom: 4px; }
+  .news-header .news-date { font-size: 10px; color: #666; letter-spacing: 1px; margin-bottom: 10px; }
+  .news-header .headline { font-family: "Georgia", serif; font-size: 16px; font-weight: bold; line-height: 1.3; }
+  .news-header .sub-headline { font-family: "Georgia", serif; font-size: 12px; color: #555; font-style: italic; margin-top: 4px; }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata.single-col { grid-template-columns: 1fr; }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata.single-col .field { border-right: none; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- SECTIONS -- */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* -- ARTICLE BODY -- */
+  .article-body {
+    padding: 14px 24px; font-family: "Georgia", serif; font-size: 11px; line-height: 1.8;
+    column-count: 1;
+  }
+  .article-body p { margin-bottom: 8px; text-align: justify; }
+  .article-body .article-cont { text-align: right; font-style: italic; color: #888; font-size: 10px; margin-top: 10px; }
+
+  /* -- DETAIL LIST -- */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* -- LEGAL TEXT -- */
+  .legal-block {
+    margin: 12px 0; padding: 12px 16px; border: 1px solid #333;
+    font-size: 11px; line-height: 1.7;
+  }
+  .legal-block .legal-header {
+    font-weight: bold; text-align: center; letter-spacing: 2px; font-size: 10px;
+    text-transform: uppercase; margin-bottom: 8px; color: #1a1a2e;
+  }
+
+  /* -- QUOTE BLOCK -- */
+  .quote-block {
+    margin: 10px 0; padding: 10px 14px; background: #f8f6f0;
+    border-left: 3px solid #999; font-style: italic; font-size: 10.5px; line-height: 1.6;
+  }
+
+  /* -- TIMELINE BOX -- */
+  .timeline-box {
+    margin: 12px 0; padding: 12px 14px; background: #f0ede6; border: 1px solid #ccc;
+    font-size: 10px; line-height: 1.7;
+  }
+  .timeline-box .tl-title {
+    font-weight: bold; font-size: 9px; letter-spacing: 1px;
+    text-transform: uppercase; color: #555; margin-bottom: 6px;
+  }
+  .timeline-box .tl-item { padding: 2px 0; }
+  .timeline-box .tl-date { font-weight: bold; display: inline-block; width: 130px; }
+
+  /* -- LETTER -- */
+  .letter-body {
+    padding: 20px 30px; font-family: "Georgia", serif; font-size: 11px; line-height: 1.8;
+  }
+  .letter-body .letter-date { text-align: right; margin-bottom: 16px; color: #555; }
+  .letter-body .letter-greeting { margin-bottom: 12px; }
+  .letter-body p { margin-bottom: 8px; }
+  .letter-body .letter-sign { margin-top: 20px; }
+  .letter-body .letter-address { font-size: 10px; color: #666; margin-top: 4px; }
+
+  /* -- STAMP -- */
+  .timbro {
+    position: absolute; right: 30px; top: 40%;
+    transform: rotate(-15deg);
+    border: 3px solid rgba(180,0,0,0.35); border-radius: 50%;
+    width: 70px; height: 70px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 9px; font-weight: bold;
+    color: rgba(180,0,0,0.35); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+
+  /* -- FIRMA -- */
+  .firma {
+    padding: 16px 24px; border-top: 2px solid #333;
+    text-align: center; font-size: 10.5px;
+  }
+  .firma .firma-name { font-weight: bold; margin-top: 8px; }
+  .firma .firma-role { font-size: 9px; color: #666; }
+  .firma-line-center { border-top: 1px solid #333; width: 180px; margin: 0 auto; padding-top: 4px; font-size: 9px; color: #666; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 11 — Caso Hayashi: Documenti</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori indagano sui casi del giudice, oppure quando Hayashi Noriko li contatta (Giorno 2), o quando cercano nei fascicoli del tribunale.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>Due articoli di giornale sull'omicidio Momoyama (1994) e la condanna di Hayashi Kenji (marzo 1997)</li>
+    <li>Fascicolo ufficiale del processo con prove, argomentazioni difesa e sentenza</li>
+    <li>Lettera di Hayashi Noriko (moglie dell'imputato) che chiede giustizia</li>
+  </ul>
+  <p><strong>Indizi chiave nascosti (anomalie nel processo):</strong></p>
+  <ul>
+    <li><strong>Durata anomala:</strong> processo trascinato quasi 3 anni, poi concluso improvvisamente in poche settimane</li>
+    <li><strong>Testimone incoerente:</strong> Tanaka Jiro cambia versione tra deposizione iniziale ("non ho visto niente") e processo ("ho visto Hayashi")</li>
+    <li><strong>Alibi ignorato:</strong> ricevuta bancaria delle 14:25 rigettata dal giudice come "non sufficiente"</li>
+    <li><strong>Arma mai trovata:</strong> in tre anni di indagini, l'oggetto contundente non è mai stato identificato</li>
+    <li><strong>Movente ridicolo:</strong> 200.000 yen è una cifra per cui nessuno uccide</li>
+  </ul>
+  <p><strong>Collegamento col caso principale:</strong></p>
+  <ul>
+    <li>Il giudice è stato corrotto dalla yakuza per condannare Hayashi — il "favore" che ripaga il debito di 47 milioni</li>
+    <li>La yakuza NON vuole che questo caso venga riaperto — se i giocatori scoprono la verità, il clan reagirà</li>
+    <li>Mori Riku (scagnozzo in carcere) potrebbe parlare ma rischia di essere eliminato</li>
+    <li>Kawano Daiki (vero assassino) è ancora protetto dal clan</li>
+  </ul>
+</div>
+
+<!-- ============== DOCUMENTO 1: ARTICOLO 1994 ============== -->
+<div class="document">
+
+  <div class="news-header">
+    <div class="news-name-jp">京都新聞</div>
+    <div class="news-name">KYOTO SHIMBUN</div>
+    <div class="news-date">18 settembre 1994 — Cronaca locale</div>
+    <div class="headline">OMICIDIO AL CANTIERE MOMOYAMA</div>
+    <div class="sub-headline">Operaio trovato morto, fermato l'imprenditore</div>
+  </div>
+
+  <div class="article-body">
+    <p><strong>FUSHIMI</strong> — Un operaio edile è stato trovato morto ieri mattina presso il cantiere di Via Momoyama 156. La vittima, Yamada Shuichi, 45 anni, presentava gravi ferite alla testa causate da un oggetto contundente.</p>
+    <p>Gli inquirenti hanno fermato nelle prime ore di oggi Hayashi Kenji, 42 anni, titolare dell'impresa edile proprietària del cantiere. Secondo fonti investigative, tra i due ci sarebbero stati contrasti per questioni economiche.</p>
+    <p>"Stiamo raccogliendo le prove," ha dichiarato il portavoce della Procura. "L'indagato si è avvalso della facoltà di non rispondere."</p>
+    <p>Il cantiere è stato posto sotto sequestro.</p>
+    <div class="article-cont">[continua a pagina 7]</div>
+  </div>
+
+</div>
+
+<!-- ============== DOCUMENTO 2: ARTICOLO 1997 ============== -->
+<div class="document">
+
+  <div class="news-header">
+    <div class="news-name-jp">京都新聞</div>
+    <div class="news-name">KYOTO SHIMBUN</div>
+    <div class="news-date">13 marzo 1997 — Cronaca giudiziaria</div>
+    <div class="headline">OMICIDIO MOMOYAMA: DOPO TRE ANNI ARRIVA LA CONDANNA</div>
+    <div class="sub-headline">18 anni di reclusione per Hayashi Kenji</div>
+  </div>
+
+  <div class="article-body">
+    <p><strong>KYOTO</strong> — Si è concluso ieri, dopo quasi tre anni, il processo per l'omicidio di Yamada Shuichi, l'operaio trovato morto il 15 settembre 1994 nel cantiere di Via Momoyama.</p>
+    <p>Il giudice Ishida Makoto ha condannato Hayashi Kenji, 45 anni, imprenditore edile e proprietàrio del cantiere, a 18 anni di reclusione per omicidio volontario.</p>
+    <p>Il processo, iniziato nell'ottobre 1994, aveva subito numerosi rinvii e rallentamenti. Fonti del tribunale parlano di "questioni procedurali complesse" che avrebbero ritardato la sentenza.</p>
+    <p>Secondo l'accusa, Hayashi avrebbe ucciso Yamada a seguito di una violenta lite per un debito di circa 200.000 yen. Un testimone oculare avrebbe visto l'imputato allontanarsi dal cantiere poco dopo l'ora presunta del delitto.</p>
+    <p>La difesa ha sempre sostenuto l'innocenza dell'imputato. Al momento della lettura della sentenza, Hayashi ha gridato in aula: "Sono innocente! Questo processo è una farsa! Mi stanno incastrando!"</p>
+    <p>Il difensore, avvocato Ogawa Kazuo, ha annunciato ricorso in appello. "Presenteremo nuove prove che dimostreranno l'innocenza del mio cliente," ha dichiarato ai giornalisti.</p>
+    <p>La moglie dell'imputato, Hayashi Noriko, è uscita dall'aula in lacrime. "Mio marito non ha fatto nulla," ha detto. "Un giorno la verità verrà fuori."</p>
+  </div>
+
+</div>
+
+<!-- ============== DOCUMENTO 3: FASCICOLO PROCESSUALE ============== -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">TRIBUNALE DISTRETTUALE DI KYOTO</div>
+    <div class="org-jp">京都地方裁判所 — Sezione Penale</div>
+    <div class="doc-type">FASCICOLO PROCESSUALE</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Fascicolo N.</div><div class="value">1994-CR-4521</div></div>
+    <div class="field"><div class="label">R.G.N.R.</div><div class="value">8834/94</div></div>
+    <div class="field"><div class="label">Giudice</div><div class="value">Dott. ISHIDA Makoto</div></div>
+    <div class="field"><div class="label">Pubblico Ministero</div><div class="value">Dott. NAKAMURA Shin</div></div>
+  </div>
+
+  <!-- IMPUTATO -->
+  <div class="section">
+    <div class="section-title">Imputato</div>
+    <ul class="detail-list">
+      <li><strong>Cognome e nome:</strong> HAYASHI Kenji</li>
+      <li><strong>Nato il:</strong> 03/05/1952 a Kyoto</li>
+      <li><strong>Residente:</strong> Via Fushimi 78, Fushimi, Kyoto</li>
+      <li><strong>Professione:</strong> Imprenditore edile</li>
+      <li><strong>Difensore:</strong> Avv. OGAWA Kazuo</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- VITTIMA -->
+  <div class="section">
+    <div class="section-title">Vittima</div>
+    <ul class="detail-list">
+      <li><strong>Cognome e nome:</strong> YAMADA Shuichi</li>
+      <li><strong>Nato il:</strong> 12/08/1949 a Osaka</li>
+      <li><strong>Deceduto il:</strong> 15/09/1994</li>
+      <li><strong>Professione:</strong> Operaio edile</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- REATO -->
+  <div class="section">
+    <div class="section-title">Reato contestato</div>
+    <p style="font-weight: bold; text-align: center; padding: 8px; border: 1px solid #333;">Art. 199 C.P. — Omicidio volontario</p>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- FATTO -->
+  <div class="section" style="position: relative;">
+    <div class="section-title">Fatto</div>
+    <p>In data 15/09/1994, presso il cantiere edile sito in Via Momoyama 156, Fushimi, Kyoto, l'imputato HAYASHI Kenji cagionava la morte di YAMADA Shuichi mediante ripetuti colpi alla testa inferti con oggetto contundente non identificato.</p>
+    <p style="margin-top: 8px;">Il movente e individuato in un debito di &yen;200.000 che l'imputato avrebbe contratto con la vittima.</p>
+    <div class="timbro">KYOTO<br>裁判所<br>TRIB.</div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PROVE -->
+  <div class="section">
+    <div class="section-title">Prove a carico</div>
+
+    <div style="margin-bottom: 10px;">
+      <strong>1. Testimonianza di TANAKA Jiro</strong> (operaio):
+      <div class="quote-block">"Ho visto il signor Hayashi allontanarsi dal cantiere verso le 14:30, poco dopo aver sentito delle urla."</div>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <strong>2. Tracce ematiche</strong>
+      <p style="padding-left: 12px;">Sangue sui vestiti dell'imputato, compatibile con la vittima.</p>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <strong>3. Testimonianza di SATO Yuki</strong> (vicina di casa):
+      <div class="quote-block">"Li ho sentiti litigare il giorno prima per questioni di soldi."</div>
+    </div>
+
+    <div>
+      <strong>4. Movente</strong>
+      <p style="padding-left: 12px;">Debito documentato di &yen;200.000.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DIFESA -->
+  <div class="section">
+    <div class="section-title">Argomentazioni della difesa</div>
+    <p style="margin-bottom: 8px;">L'imputato ha sempre negato ogni addebito. La difesa ha evidenziato:</p>
+    <ul class="detail-list">
+      <li>L'arma del delitto non è mai stata trovata</li>
+      <li>L'imputato aveva un alibi parziale (testimone non ritenuto attendibile dal Giudice)</li>
+      <li>Il movente è debole (&yen;200.000 è una cifra modesta)</li>
+      <li>Il testimone TANAKA Jiro ha cambiato versione tra la deposizione iniziale e il processo</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SENTENZA -->
+  <div class="section">
+    <div class="section-title">Sentenza</div>
+
+    <div class="legal-block">
+      <p style="margin-bottom: 8px;">Visti gli artt. 199, 62 n.1 C.P.</p>
+      <div class="legal-header">DICHIARA</div>
+      <p>HAYASHI Kenji <strong>COLPEVOLE</strong> del reato ascrittogli e, per l'effetto, lo <strong>CONDANNA</strong> alla pena di anni 18 (diciotto) di reclusione, oltre al pagamento delle spese processuali.</p>
+    </div>
+  </div>
+
+  <!-- FIRMA -->
+  <div class="firma">
+    <div>Kyoto, 12 marzo 1997</div>
+    <div class="firma-name">Il Giudice</div>
+    <div class="firma-name">Dott. Ishida Makoto</div>
+    <div class="firma-line-center">[firma]</div>
+  </div>
+
+</div>
+
+<!-- ============== DOCUMENTO 4: LETTERA HAYASHI NORIKO ============== -->
+<div class="document">
+
+  <div class="letter-body">
+    <div class="letter-date">Kyoto, 10 aprile 1997</div>
+    <div class="letter-greeting">Egregi Signori Investigatori,</div>
+
+    <p>Ho saputo della morte del giudice Ishida. Non provo alcuna pietà per quell'uomo.</p>
+
+    <p>Mio marito Kenji e in carcere da quasi tre anni per un crimine che non ha commesso. Il giudice Ishida lo ha condannato ignorando tutte le prove a suo favore.</p>
+
+    <p>Vi prego, indagate. Troverete che:</p>
+
+    <p style="padding-left: 16px;">
+      1. Il testimone Tanaka Jiro ha cambiato versione tra la prima deposizione e il processo<br>
+      2. Mio marito aveva un alibi — era in banca alle 14:25<br>
+      3. L'arma del delitto non è mai stata trovata<br>
+      4. Il vero assassino è ancora libero
+    </p>
+
+    <p>So che il giudice era corrotto. So che qualcuno lo ha pagato per condannare mio marito. Non ho le prove, ma so che è così.</p>
+
+    <p>Se indagate sulla sua morte, forse troverete anche la verità su mio marito.</p>
+
+    <p>Vi prego. È tutto quello che chiedo.</p>
+
+    <div class="letter-sign">
+      <strong>Hayashi Noriko</strong><br>
+      <span class="letter-address">Via Fushimi 78, Fushimi, Kyoto<br>Tel. 075-621-4455</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

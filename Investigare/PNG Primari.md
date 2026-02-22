@@ -24,7 +24,7 @@
 | Nome | Età | Ruolo | Colpevole? | Note chiave |
 |------|-----|-------|------------|-------------|
 | **KIMURA Yui** | 42 | Aiuto cuoca | **SÌ (veleno)** | Gemella Sakura, ex di Makoto, madre di Kenta |
-| **KIMURA Hiro** | 44 | Poliziotto | No | Sterile (non lo sa), marito ignaro |
+| **KIMURA Hiro** | 44 | Poliziotto | No | Sterile (non lo sa — Yui ha ritirato il referto), marito ignaro |
 | **KIMURA Kenta** | 16 | Studente | No | Figlio biologico di MAKOTO (non lo sa) |
 
 ---

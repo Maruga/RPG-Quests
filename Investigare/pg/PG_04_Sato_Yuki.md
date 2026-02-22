@@ -18,47 +18,47 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 5 | Ti fai coinvolgere troppo |
-| **Pazienza** | 8 | Metodico nel lavoro |
-| **Silenzio** | 5 | Tendi a parlare troppo quando sei nervoso |
-| **Lucidità** | 10 | Eccellente - mente analitica |
-| **Ascolto** | 8 | Attento ai dettagli |
-| **Aura** | 7 | Normale - sei ancora giovane |
+| **Distacco** | 3 | Ti fai coinvolgere troppo |
+| **Pazienza** | 5 | Metodico nel lavoro |
+| **Silenzio** | 3 | Tendi a parlare troppo quando sei nervoso |
+| **Lucidità** | 6 | Eccellente - mente analitica |
+| **Ascolto** | 5 | Attento ai dettagli |
+| **Presenza** | 6 | Entusiasta - la tua energia è contagiosa |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Nessun attributo può superare 11
+> - Nessun attributo può superare 8
 
 ---
 
-## STRESS/BENESSERE
+## KI (TENUTA)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
 
 ---
 
-## IL DEBITO
+## GOU (DEBITO)
 
 Scegli **uno** dei seguenti Debiti:
 
 ### Opzione 1: Palazzo della Memoria
 *Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
 - **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
 
 ### Opzione 2: Occhio della Gru
 *Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci il significato
 - **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a interpretarlo
 
 ### Opzione 3: Pietra Fuori Posto
 *Percepisci immediatamente cosa non torna - tracce, residui, anomalie.*
 - **Attributo**: Lucidità
-- **Costo**: 2 stress
+- **Costo**: 2 Ki
 - **Successo** (2d6 ≤ Lucidità): Identifichi l'anomalia e la sua probabile origine
 - **Fallimento**: Senti che qualcosa non quadra, ma non riesci a isolare cosa
 

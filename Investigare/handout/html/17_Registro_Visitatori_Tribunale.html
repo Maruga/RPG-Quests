@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro Visitatori — Tribunale Distrettuale di Kyoto — 22 gennaio 1997</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4 landscape; margin: 15mm 12mm 15mm 12mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  .gm-header .gm-timeline {
+    margin-top: 10px; padding: 8px 12px; background: rgba(255,255,255,0.08);
+    border-left: 3px solid #e8c170; font-family: "Courier New", monospace; font-size: 12px;
+  }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* -- DOCUMENT -- */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    background: #1b2a4a; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #8a9bb5; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #8a9bb5; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 4px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 11px; color: #8a9bb5; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 15px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #8a9bb5; display: inline-block; padding: 4px 16px;
+  }
+
+  /* -- METADATA -- */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; border-bottom: 2px solid #1b2a4a; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:not(:last-child) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* -- SECTIONS -- */
+  .section { padding: 14px 20px; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #1b2a4a;
+    border-bottom: 2px solid #1b2a4a; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #1b2a4a; margin: 0; }
+
+  /* -- VISITOR TABLE -- */
+  .visitor-table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 8px; }
+  .visitor-table th {
+    background: #e8ecf2; text-align: left; padding: 6px 8px;
+    border: 1px solid #9aa8bd; font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+    color: #1b2a4a; font-family: Arial, sans-serif;
+  }
+  .visitor-table td { padding: 5px 8px; border: 1px solid #ccc; vertical-align: top; }
+  .visitor-table tr:nth-child(even) { background: #f8f9fb; }
+  .visitor-table .num { text-align: center; font-weight: bold; color: #1b2a4a; }
+  .visitor-table .tipo-badge { color: #555; font-size: 9px; }
+  .visitor-table .tipo-doc { color: #555; font-size: 9px; }
+
+  /* -- FOOTER -- */
+  .registro-footer {
+    padding: 12px 20px; border-top: 2px solid #1b2a4a;
+    font-size: 10px; color: #555;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .firma-line { border-top: 1px solid #333; width: 180px; text-align: center; padding-top: 4px; font-size: 9px; color: #666; }
+
+  /* -- TIMBRO -- */
+  .timbro {
+    position: absolute; right: 25px; bottom: 60px;
+    transform: rotate(-12deg);
+    border: 3px solid rgba(27,42,74,0.25); border-radius: 50%;
+    width: 75px; height: 75px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Arial, sans-serif; font-size: 8px; font-weight: bold;
+    color: rgba(27,42,74,0.3); text-align: center; letter-spacing: 1px; line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 17 — Registro Visitatori del Tribunale</h2>
+  <p><strong>Quando consegnare:</strong> Quando i PG richiedono formalmente il registro visitatori al Tribunale Distrettuale di Kyoto, o quando la segretaria Ando Fumiko menziona la visita di Sakura.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li>Lista completa di 11 visitatori del 22 gennaio 1997 — una giornata come tante</li>
+    <li>"ISHIDA Sakura" (voce n. 05) registrata con carta d'identita alle 10:22, uscita alle 11:05 — in realta era <strong>Kimura Yui</strong> con il documento della sorella gemella</li>
+    <li>Avv. <strong>Morimoto Kenji</strong> (voce n. 06), avvocato del boss yakuza Oka Takeshi, registrato alle 11:00 — entra 5 minuti prima che "Sakura" esca</li>
+    <li><strong>Hayashi Noriko</strong> (voce n. 08) — consultava il fascicolo processuale del marito; un'altra vittima del giudice</li>
+  </ul>
+  <p><strong>Indizi NON evidenziati (i giocatori devono notarli da soli):</strong></p>
+  <ul>
+    <li>Sakura e Morimoto vanno entrambi all'ufficio del Giudice Ishida, 2 piano — stesso giorno</li>
+    <li>La sovrapposizione temporale: Morimoto entra alle 11:00, "Sakura" esce alle 11:05 — si sono incrociati</li>
+    <li>Il giudice era sotto pressione da piu parti contemporaneamente</li>
+  </ul>
+  <div class="gm-timeline">
+    10:22 --- "Sakura" (Yui) entra --- 43 min nell'ufficio del giudice<br>
+    11:00 --- Morimoto entra --- possibile incrocio nell'anticamera<br>
+    11:05 --- "Sakura" (Yui) esce --- agitata<br>
+    12:15 --- Morimoto esce --- 1h15m col giudice
+  </div>
+  <p style="margin-top:8px;"><strong>Conferme incrociate:</strong> Telecamere di sicurezza (Handout 21) mostrano la donna vestita in modo semplice. Segretaria Ando Fumiko puo confermare la visita.</p>
+</div>
+
+<!-- DOCUMENTO STAMPABILE -->
+<div class="document">
+
+  <div class="doc-header">
+    <div class="org">TRIBUNALE DISTRETTUALE DI KYOTO</div>
+    <div class="org-jp">京都地方裁判所 — 来訪者記録</div>
+    <div class="doc-type">REGISTRO VISITATORI</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Data</div><div class="value">22 gennaio 1997 (mercoledi)</div></div>
+    <div class="field"><div class="label">Guardia in servizio</div><div class="value">TANIGUCHI Hiroshi (turno 08:00-16:00)</div></div>
+    <div class="field"><div class="label">Pagina</div><div class="value">14 / Registro Vol. 1997-I</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Registro Ingressi</div>
+
+    <table class="visitor-table">
+      <thead>
+        <tr>
+          <th style="width:30px;">N.</th>
+          <th style="width:50px;">Ora Entrata</th>
+          <th style="width:140px;">Nome</th>
+          <th style="width:110px;">Documento</th>
+          <th>Destinazione</th>
+          <th>Motivo</th>
+          <th style="width:55px;">Ora Uscita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">01</td>
+          <td>08:32</td>
+          <td>INOUE Atsushi<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-2241</span></td>
+          <td>Cancelleria, 1&#176; piano</td>
+          <td>Deposito atti</td>
+          <td>08:55</td>
+        </tr>
+        <tr>
+          <td class="num">02</td>
+          <td>08:45</td>
+          <td>SUZUKI Takeo<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-1887</span></td>
+          <td>Uff. Giudice Yamamoto, 3&#176; piano</td>
+          <td>Udienza preliminare caso Fujita</td>
+          <td>09:30</td>
+        </tr>
+        <tr>
+          <td class="num">03</td>
+          <td>09:15</td>
+          <td>ENDO Misato<br><span class="tipo-badge">Privata cittadina</span></td>
+          <td>Carta identita<br><span class="tipo-doc">n. 4401-XXXX</span></td>
+          <td>Ufficio Cancelleria, 1&#176; piano</td>
+          <td>Ritiro documenti causa civile</td>
+          <td>09:40</td>
+        </tr>
+        <tr>
+          <td class="num">04</td>
+          <td>09:52</td>
+          <td>NISHIMURA Daisuke<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-3105</span></td>
+          <td>Archivio fascicoli, piano seminterrato</td>
+          <td>Consultazione precedenti</td>
+          <td>10:45</td>
+        </tr>
+        <tr>
+          <td class="num">05</td>
+          <td>10:22</td>
+          <td>ISHIDA Sakura<br><span class="tipo-badge">Privata cittadina</span></td>
+          <td>Carta identita<br><span class="tipo-doc">n. 2209-XXXX</span></td>
+          <td>Uff. Giudice Ishida, 2&#176; piano</td>
+          <td>Visita personale</td>
+          <td>11:05</td>
+        </tr>
+        <tr>
+          <td class="num">06</td>
+          <td>11:00</td>
+          <td>MORIMOTO Kenji<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-0934</span></td>
+          <td>Uff. Giudice Ishida, 2&#176; piano</td>
+          <td>Discussione caso Oka</td>
+          <td>12:15</td>
+        </tr>
+        <tr>
+          <td class="num">07</td>
+          <td>11:20</td>
+          <td>WATANABE Rika<br><span class="tipo-badge">Privata cittadina</span></td>
+          <td>Carta identita<br><span class="tipo-doc">n. 3318-XXXX</span></td>
+          <td>Cancelleria, 1&#176; piano</td>
+          <td>Richiesta copie conformi</td>
+          <td>11:50</td>
+        </tr>
+        <tr>
+          <td class="num">08</td>
+          <td>13:30</td>
+          <td>HAYASHI Noriko<br><span class="tipo-badge">Privata cittadina</span></td>
+          <td>Carta identita<br><span class="tipo-doc">n. 5587-XXXX</span></td>
+          <td>Archivio fascicoli, piano seminterrato</td>
+          <td>Consultazione fascicolo processuale</td>
+          <td>14:45</td>
+        </tr>
+        <tr>
+          <td class="num">09</td>
+          <td>14:10</td>
+          <td>OGAWA Tatsuya<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-2780</span></td>
+          <td>Uff. Giudice Yamamoto, 3&#176; piano</td>
+          <td>Deposito memorie difensive</td>
+          <td>14:35</td>
+        </tr>
+        <tr>
+          <td class="num">10</td>
+          <td>15:05</td>
+          <td>KOJIMA Fumio<br><span class="tipo-badge">Privato cittadino</span></td>
+          <td>Carta identita<br><span class="tipo-doc">n. 7723-XXXX</span></td>
+          <td>Cancelleria, 1&#176; piano</td>
+          <td>Informazioni su causa</td>
+          <td>15:25</td>
+        </tr>
+        <tr>
+          <td class="num">11</td>
+          <td>15:30</td>
+          <td>TAKAHASHI Yumi<br><span class="tipo-badge">Avvocato</span></td>
+          <td>Badge avvocato<br><span class="tipo-doc">n. K-1562</span></td>
+          <td>Uff. Giudice Ishida, 2&#176; piano</td>
+          <td>Ritiro ordinanza</td>
+          <td>15:50</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:14px; padding:10px 16px; background:#f0f2f5; border:1px solid #bbb; font-size:10px; display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <strong>Totale visitatori giornata:</strong> 11<br>
+        <strong>Note:</strong> Nessuna anomalia da segnalare.
+      </div>
+      <div style="text-align:right;">
+        Firma guardia: ___ <em>Taniguchi H.</em> ___
+      </div>
+    </div>
+  </div>
+
+  <div class="timbro">TRIBUNALE<br>KYOTO<br>京都<br>地裁</div>
+
+  <div class="registro-footer">
+    <div>
+      <div style="font-size:9px; color:#888;">Registro conservato presso: Ufficio Accoglienza, piano terra</div>
+      <div style="font-size:9px; color:#888;">Periodo conservazione: 5 anni</div>
+    </div>
+    <div class="firma-line">Timbro Ufficio</div>
+  </div>
+
+</div>
+
+</body>
+</html>

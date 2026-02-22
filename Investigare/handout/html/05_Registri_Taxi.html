@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registri Taxi — Kyoto Taxi Company — 8 Aprile 1997</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+
+  body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* ── GM HEADER (screen only) ── */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .document { box-shadow: none; margin: 0; } }
+
+  /* ── DOCUMENT ── */
+  .document {
+    max-width: 210mm; margin: 0 auto; background: white;
+    border: 2px solid #333; box-shadow: 0 2px 8px rgba(0,0,0,0.15); position: relative;
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    background: #2e2e38; color: white; padding: 20px 24px 16px; text-align: center;
+    border-bottom: 3px solid #d0a040; position: relative;
+  }
+  .doc-header::after { content: ""; display: block; height: 2px; background: #d0a040; margin-top: 3px; }
+  .doc-header .org { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 3px; font-weight: bold; margin-bottom: 4px; }
+  .doc-header .org-jp { font-size: 12px; color: #d0a040; letter-spacing: 2px; margin-bottom: 10px; }
+  .doc-header .doc-type {
+    font-size: 15px; font-weight: bold; letter-spacing: 3px;
+    border: 1px solid #d0a040; display: inline-block; padding: 4px 16px;
+  }
+
+  /* ── METADATA ── */
+  .metadata {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid #333; font-size: 11px;
+  }
+  .metadata .field { padding: 6px 16px; border-bottom: 1px solid #ddd; }
+  .metadata .field:nth-child(odd) { border-right: 1px solid #ddd; }
+  .metadata .label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+  .metadata .value { font-weight: bold; color: #1a1a1a; }
+
+  /* ── SECTIONS ── */
+  .section { padding: 14px 24px; border-bottom: 1px solid #ddd; }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #2e2e38;
+    border-bottom: 2px solid #2e2e38; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .section-divider { border: none; border-top: 2px solid #333; margin: 0; }
+
+  /* ── CORSA BOX ── */
+  .corsa {
+    border: 1px solid #999; margin: 12px 0; background: #fafaf6;
+  }
+  .corsa-header {
+    background: #2e2e38; color: white; padding: 8px 14px;
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 1px;
+  }
+  .corsa-body { padding: 10px 14px; }
+  .corsa-grid {
+    display: grid; grid-template-columns: 120px 1fr; gap: 2px 8px; font-size: 10.5px;
+  }
+  .corsa-label { font-weight: bold; color: #555; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 0; }
+  .corsa-value { padding: 3px 0; }
+  .corsa-section {
+    margin-top: 8px; padding-top: 8px; border-top: 1px dashed #ccc;
+  }
+  .corsa-note {
+    margin-top: 8px; padding: 8px 12px; background: #f8f6f0;
+    border-left: 3px solid #d0a040; font-size: 10.5px; font-style: italic;
+  }
+
+  /* ── DETAIL LIST ── */
+  .detail-list { list-style: none; padding-left: 8px; }
+  .detail-list li { padding: 2px 0 2px 12px; position: relative; }
+  .detail-list li::before { content: "\2014"; position: absolute; left: 0; color: #999; }
+
+  /* ── SCHEDA AUTISTA ── */
+  .autista-box {
+    border: 1px solid #bbb; margin: 8px 0; padding: 10px 14px; background: #f8f8f4;
+    font-size: 10.5px;
+  }
+  .autista-header { font-weight: bold; margin-bottom: 4px; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #555; }
+
+  /* ── CONFRONTO BOX ── */
+  .confronto-box {
+    border: 2px solid #2e2e38; padding: 14px 16px; margin: 10px 0; background: #f8f8ff;
+  }
+  .confronto-item { padding: 6px 0; border-bottom: 1px dashed #ccc; }
+  .confronto-item:last-child { border-bottom: none; }
+
+  /* ── NOTE BOX ── */
+  .note-box {
+    background: #fff8e0; border: 1px solid #d0a040; padding: 10px 14px; margin: 10px 0; font-size: 10.5px;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline { list-style: none; padding: 0; }
+  .timeline li {
+    padding: 3px 0 3px 80px; position: relative;
+    border-left: 2px solid #ddd; margin-left: 30px;
+  }
+  .timeline li::before {
+    content: attr(data-time); position: absolute; left: -60px;
+    font-weight: bold; font-size: 10px; color: #2e2e38; width: 50px; text-align: right;
+  }
+  .timeline li::after {
+    content: ""; position: absolute; left: -5px; top: 8px;
+    width: 8px; height: 8px; background: #2e2e38; border-radius: 50%;
+  }
+
+  /* ── FIRMA ── */
+  .firma {
+    padding: 12px 24px; border-top: 2px solid #333; font-size: 10px; color: #888;
+  }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 05 — Registri Taxi</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori richiedono i registri alla compagnia taxi con mandato, oppure cercano taxi partiti da/per Via Yamashina o dalla zona della Galleria Nijo la sera dell'8 aprile.</p>
+  <p><strong>Cosa contiene per i giocatori:</strong></p>
+  <ul>
+    <li><strong>Corsa andata (20:38):</strong> Donna ~40 anni, da Via Yamashina 12 (casa Kimura/Yui) a Via Nijo 20 (vicino alla Galleria). Borsa GRANDE. Nervosa. Chiede di essere lasciata non davanti alla galleria.</li>
+    <li><strong>Corsa ritorno (22:38):</strong> Donna ~40 anni, da Via Nijo angolo Via Horikawa a Via Yamashina 12. Qualcosa di bianco sotto il cappotto (divisa da cuoco?). Borsa grande ma più LEGGERA. Sollevata.</li>
+    <li><strong>Verifica indirizzi:</strong> Via Yamashina 12 = casa Kimura. Via Nijo 20 = 50m dalla Galleria Nijo Art Space (n. 23).</li>
+  </ul>
+  <p><strong>Cosa dimostra (indizi chiave):</strong></p>
+  <ul>
+    <li>Yui era alla galleria la sera dell'8 aprile</li>
+    <li>La borsa grande all'andata (con il fugu), più leggera al ritorno (fugu lasciato)</li>
+    <li>La divisa bianca sotto il cappotto = si e cambiata per entrare come personale</li>
+    <li>Ha chiesto di non essere lasciata davanti alla galleria = evitare di essere vista</li>
+  </ul>
+  <p><strong>Attenzione:</strong> Se i PG interrogano gli autisti PRIMA di interrogare lo chef, la descrizione "donna 40 anni" potrebbe essere anche Sakura (sono gemelle identiche). Questo puo creare confusione utile all'indagine.</p>
+</div>
+
+<!-- DOCUMENTO: REGISTRI CORSE -->
+<div class="document" style="margin-bottom:20px;">
+
+  <div class="doc-header">
+    <div class="org">KYOTO TAXI COMPANY</div>
+    <div class="org-jp">京都タクシー株式会社</div>
+    <div class="doc-type">REGISTRO CORSE — 8 APRILE 1997</div>
+  </div>
+
+  <div class="metadata">
+    <div class="field"><div class="label">Centralino</div><div class="value">075-841-1234</div></div>
+    <div class="field"><div class="label">Periodo estratto</div><div class="value">Sera 8 aprile 1997</div></div>
+  </div>
+
+  <!-- CORSA ANDATA -->
+  <div class="section">
+    <div class="section-title">Corsa N. 1847 — Andata</div>
+
+    <div class="corsa">
+      <div class="corsa-header">DATI CORSA</div>
+      <div class="corsa-body">
+        <div class="corsa-grid">
+          <div class="corsa-label">Prenotazione:</div>
+          <div class="corsa-value">20:28 (telefonata)</div>
+          <div class="corsa-label">Autista:</div>
+          <div class="corsa-value">IKEDA Taro (Matricola 0892)</div>
+          <div class="corsa-label">Veicolo:</div>
+          <div class="corsa-value">Toyota Crown, Targa 京都 58 に 2247</div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Pickup:</div>
+            <div class="corsa-value">Via Yamashina 12, Yamashina</div>
+            <div class="corsa-label">Ora arrivo:</div>
+            <div class="corsa-value">20:35</div>
+            <div class="corsa-label">Ora partenza:</div>
+            <div class="corsa-value">20:38</div>
+          </div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Destinazione:</div>
+            <div class="corsa-value">Via Nijo 20, Nakagyo</div>
+            <div class="corsa-label">Ora arrivo:</div>
+            <div class="corsa-value">21:02</div>
+          </div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Importo:</div>
+            <div class="corsa-value">&yen;2.340</div>
+            <div class="corsa-label">Pagamento:</div>
+            <div class="corsa-value">Contanti</div>
+          </div>
+        </div>
+
+        <div class="corsa-note">
+          <strong>Note autista:</strong> Passeggera donna, circa 40 anni, vestita in modo semplice. Portava una <strong>BORSA GRANDE</strong>. Sembrava nervosa. Non ha parlato durante il tragitto. Ha chiesto di essere lasciata a Via Nijo 20, non proprio davanti alla galleria.
+        </div>
+      </div>
+    </div>
+
+    <div class="autista-box">
+      <div class="autista-header">Scheda autista</div>
+      <strong>IKEDA Taro</strong> — Matricola 0892 — 52 anni<br>
+      In servizio dal 1985 — Tel. 075-841-1234 int. 892<br>
+      Note: Autista esperto, nessun incidente, buone recensioni.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CORSA RITORNO -->
+  <div class="section">
+    <div class="section-title">Corsa N. 1923 — Ritorno</div>
+
+    <div class="corsa">
+      <div class="corsa-header">DATI CORSA</div>
+      <div class="corsa-body">
+        <div class="corsa-grid">
+          <div class="corsa-label">Prenotazione:</div>
+          <div class="corsa-value">Chiamata da strada (non prenotata)</div>
+          <div class="corsa-label">Autista:</div>
+          <div class="corsa-value">SUZUKI Masa (Matricola 0756)</div>
+          <div class="corsa-label">Veicolo:</div>
+          <div class="corsa-value">Nissan Cedric, Targa 京都 33 ほ 8891</div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Pickup:</div>
+            <div class="corsa-value">Via Nijo (angolo Via Horikawa)</div>
+            <div class="corsa-label">Ora:</div>
+            <div class="corsa-value">22:38</div>
+          </div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Destinazione:</div>
+            <div class="corsa-value">Via Yamashina 12, Yamashina</div>
+            <div class="corsa-label">Ora arrivo:</div>
+            <div class="corsa-value">23:05</div>
+          </div>
+        </div>
+
+        <div class="corsa-section">
+          <div class="corsa-grid">
+            <div class="corsa-label">Importo:</div>
+            <div class="corsa-value">&yen;2.580</div>
+            <div class="corsa-label">Pagamento:</div>
+            <div class="corsa-value">Contanti</div>
+          </div>
+        </div>
+
+        <div class="corsa-note">
+          <strong>Note autista:</strong> Passeggera donna, circa 40 anni. Indossava qualcosa di <strong>bianco sotto il cappotto</strong> (divisa?). Portava una borsa grande ma sembrava <strong>piu leggera</strong> di prima (???). Silenziosa. Sembrava sollevata.
+        </div>
+      </div>
+    </div>
+
+    <div class="autista-box">
+      <div class="autista-header">Scheda autista</div>
+      <strong>SUZUKI Masa</strong> — Matricola 0756 — 38 anni<br>
+      In servizio dal 1992 — Tel. 075-841-1234 int. 756<br>
+      Note: Buon autista, nessun problema disciplinare.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CONFRONTO INDIRIZZI -->
+  <div class="section">
+    <div class="section-title">Verifica indirizzi</div>
+
+    <div class="confronto-box">
+      <div class="confronto-item">
+        <strong>Via Yamashina 12</strong> = CASA FAMIGLIA KIMURA<br>
+        <span style="padding-left:12px; font-size:10px; color:#555;">(Kimura Hiro, Kimura Yui, Kimura Kenta)</span>
+      </div>
+      <div class="confronto-item">
+        <strong>Via Nijo 20</strong> = Vicino alla GALLERIA NIJO ART SPACE (n. 23)<br>
+        <span style="padding-left:12px; font-size:10px; color:#555;">Distanza a piedi: circa 50 metri</span>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong>NOTA:</strong> La passeggera ha chiesto di NON essere lasciata davanti alla galleria, ma poco distante.
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- TIMELINE RICOSTRUITA -->
+  <div class="section">
+    <div class="section-title">Timeline ricostruita dai registri taxi</div>
+
+    <ul class="timeline">
+      <li data-time="20:28">Yui chiama taxi da casa (Via Yamashina 12)</li>
+      <li data-time="20:35">Taxi arriva a Via Yamashina 12</li>
+      <li data-time="20:38">Partenza verso la galleria</li>
+      <li data-time="21:02">Arrivo Via Nijo 20 (50 m dalla galleria)</li>
+      <li data-time="22:38">Yui prende taxi di ritorno (angolo Nijo/Horikawa)</li>
+      <li data-time="23:05">Arrivo a casa (Via Yamashina 12)</li>
+    </ul>
+
+    <div class="note-box" style="margin-top:12px;">
+      <strong>Permanenza in zona galleria:</strong> 96 minuti (21:02 — 22:38)
+    </div>
+  </div>
+
+  <div class="firma">
+    <p style="font-style:italic;">Estratto fornito dalla Kyoto Taxi Company su richiesta della Polizia Prefetturale di Kyoto.</p>
+  </div>
+</div>
+
+</body>
+</html>

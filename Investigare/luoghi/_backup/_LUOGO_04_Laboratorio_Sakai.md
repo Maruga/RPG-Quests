@@ -186,6 +186,54 @@ Sakai lavora qui 4 giorni a settimana come copertura. Il proprietario non sa nul
 
 ---
 
+## MECCANICHE
+
+### Trovare il laboratorio
+Sakai lavora al Denki-ya come copertura. Il laboratorio è in un magazzino abbandonato a Fushimi. I PG lo trovano se:
+- Seguono Sakai dal negozio (appostamento — **Pazienza**: successo = lo seguono senza farsi notare; fallimento = -1 Ki, Sakai si insospettisce)
+- Indagano sui biglietti del treno di Sakura per Fushimi e chiedono in zona
+- Fanno una ricerca sui precedenti penali di Sakai (il laboratorio è al vecchio indirizzo)
+
+### Entrare nel laboratorio
+Se Sakai è presente, reagisce con panico (non violenza). Se i PG entrano senza mandato, le prove sono inutilizzabili in tribunale — ma i PG sono investigatori e lo sanno.
+
+### Esaminare il laboratorio
+Gli schemi della penna e i soldi sono visibili — nessun tiro. Se un PG prende gli schemi in mano, li vede.
+
+**Lucidità** — Per capire cosa fanno gli schemi:
+- **Successo**: "Questo è il progetto di un'arma. Un circuito che trasforma 9V in 50.000V, inserito in un oggetto cilindrico — una penna."
+- **Fallimento**: -1 Ki. "È elettronica complessa — serve un perito." (Il perito della polizia lo spiega comunque, ma ci vuole tempo.)
+
+### Interrogare Sakai
+Sakai è paranoico e spaventato. En -1 (diffidente verso le autorità).
+
+**Ascolto** — Per capire cosa nasconde:
+- **Successo**: "Ha paura di qualcosa di specifico — non della polizia, ma di qualcun altro. Come se temesse ritorsioni."
+- **Fallimento**: -1 Ki. Sembra solo un criminale colto in flagrante.
+
+**Presenza** — Per farlo parlare della cliente:
+- **Successo**: Descrive la donna (ma non sa il nome — "elegante, fredda, pagava in contanti")
+- **Fallimento**: -1 Ki. Si chiude, chiede un avvocato.
+
+**Pazienza** — Interrogatorio lungo, lasciargli tempo:
+- **Successo**: Sakai si rilassa e aggiunge dettagli — le visite a Fushimi, il pagamento, la fretta degli ultimi giorni
+- **Fallimento**: -1 Ki. Il PG perde la pazienza, Sakai si irrigidisce.
+
+### Se Sakai tenta la fuga
+Combattimento/inseguimento. Sakai è civile, non violento (+2 al tiro del PG). Tenta di uscire dal retro.
+- **Lucidità** per anticiparlo, **Pazienza** per aspettarlo all'uscita
+
+### Gou utili
+- **Pugno di Ferro** (Presenza, 2 Ki): Sakai cede completamente — confessa tutto
+- **Occhio della Gru** (Lucidità, 2 Ki): Nota un dettaglio nascosto nel laboratorio
+
+### En iniziale
+| PNG | En | Motivo |
+|-----|-----|--------|
+| Sakai Toru | -1 | Paranoico, criminale, non si fida |
+
+---
+
 ## NOTE PER IL MASTER
 
 ### Prima visita

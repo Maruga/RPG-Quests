@@ -104,10 +104,10 @@
 ### Messaggi/Lettere compromettenti
 
 ```
-MESSAGGIO CERCAPERSONE (Shin → Sakura)
+SMS (Shin → Sakura)
 Data: 6 aprile 1997
 ────────────────────────────────────────
-"Non sopporto più vederti con lui. 
+"Non sopporto più vederti con lui.
 Vorrei che sparisse."
 ────────────────────────────────────────
 
@@ -115,8 +115,8 @@ LETTERA (Shin → Sakura, non datata)
 ────────────────────────────────────────
 Sakura,
 
-Ogni giorno che passi con lui è un 
-giorno rubato a noi. Sora cresce e 
+Ogni giorno che passi con lui è un
+giorno rubato a noi. Sora cresce e
 io non posso essere suo padre.
 
 Quando finirà questa tortura?
@@ -162,6 +162,34 @@ Shin non ha motivo di fuggire - non sa di essere sospettato.
 
 ---
 
+## PNG PRESENTI
+
+| PNG | Quando | Dove | Note |
+|-----|--------|------|------|
+| **Ogawa Shin** | Giorno (90% lab), sera (80% appartamento) | Piano terra o primo piano | Vedi tabella "Shin è presente?" |
+
+> Per En iniziale, personalità, reazioni e meccaniche di interrogatorio di Shin, consultare la **scheda PNG di Ogawa Shin**.
+
+---
+
+## MECCANICHE
+
+### Shin come falsa pista
+Tutto in questo luogo grida "colpevole" — le foto, i messaggi, il movente. Ma Shin è innocente. Il rischio è che i PG lo arrestino senza prove concrete. Le telecamere del negozio vicino provano che non è uscito la sera del delitto.
+
+### Esaminare il laboratorio/appartamento
+Le foto di Sakura, le lettere, la foto di Sora — tutto visibile. Se i PG cercano, trovano.
+
+**Lucidità** — Per interpretare cosa vedono:
+- **Successo**: "Non è la tana di un assassino. È la casa di un uomo innamorato e disperato. Non ci sono strumenti, non c'è nulla di tecnico — solo arte e sentimento."
+- **Fallimento**: -1 Ki. "Sembra un ossessionato. Tutte queste foto..."
+
+### Gou utili
+- **Ombra della Verità** (Ascolto, 2 Ki): Shin mente? **No.** Successo: conferma con certezza che è sincero. Fallimento: conferma che non mente, ma il PG non capisce su cosa esattamente (l'innocenza totale o solo su certi punti).
+- **Specchio dell'Anima** (Ascolto, 2 Ki): L'emozione dominante di Shin. Successo: paura di perdere Sakura, non odio verso il giudice. Fallimento: dolore profondo, non definibile.
+
+---
+
 ## NOTE PER IL MASTER
 
 ### Quando i giocatori arrivano qui
@@ -189,9 +217,3 @@ I giocatori potrebbero arrestarlo. Sarebbe un errore.
 2. **Nessun accesso al cibo** - Non era all'evento
 3. **Telecamere** - Non è uscito quella sera
 4. **Carattere** - È un romantico, non un assassino
-
-### Dopo la scoperta della verità su Sakura
-Se i giocatori scoprono che Sakura è l'assassina:
-- Shin è devastato
-- Potrebbe non crederci
-- Oppure potrebbe crollare: "L'ho amata... e lei..."

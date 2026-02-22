@@ -180,6 +180,49 @@ Vive solo. Una donna delle pulizie viene 3 volte a settimana.
 
 ---
 
+## MECCANICHE
+
+### Parlare con Noboru
+Noboru è un uomo anziano, orgoglioso, chiuso. En -1 (considera gli investigatori un'intrusione). Risponde alle domande ma senza offrire nulla spontaneamente.
+
+**Pazienza** — Noboru parla lentamente, fa lunghe pause. Il PG deve aspettare:
+- **Successo**: Il PG lascia i silenzi e Noboru, col tempo, aggiunge qualcosa in più
+- **Fallimento**: -1 Ki. Il PG interrompe o mostra impazienza — Noboru si chiude
+
+**Ascolto** — Per leggere Noboru sotto la maschera:
+- **Successo**: "C'è vergogna. Non rabbia, non paura — vergogna profonda. Quest'uomo porta un peso."
+- **Fallimento**: -1 Ki. Sembra solo un vecchio burbero e riservato.
+
+### Il confronto (DNA falsificato)
+Se i PG confrontano Noboru con le prove della falsificazione del DNA, è una scena pesante.
+
+**Presenza** — Per fare pressione:
+- **Successo**: Noboru crolla — ammette tutto. Parla del giudice, del Dott. Yamamoto, della sua scelta
+- **Fallimento**: -1 Ki. Noboru nega a denti stretti. Servono prove più schiaccianti o un altro approccio.
+
+**ATTENZIONE**: Se Noboru confessa o è messo alle strette con prove incontrovertibili, **entro 24 ore compie seppuku**. È un evento irreversibile.
+
+### Assistere al seppuku (se accade)
+**Distacco** — Scena di forte impatto:
+- **Successo**: Il PG regge. Può esaminare la scena, leggere la lettera d'addio
+- **Fallimento critico (12)**: -2 Ki. Il PG è devastato — immagini che tornano per giorni
+- **Fallimento normale**: -1 Ki. Scosso profondamente
+
+### Perquisire la casa
+Le lettere sono nel cassetto della camera. Il testamento nella cassaforte. I PG trovano tutto se cercano — nessun tiro.
+
+### Gou utili
+- **Specchio dell'Anima** (Ascolto, 2 Ki): Emozione dominante di Noboru. Successo: vergogna per aver tradito Yui a favore di Sakura. Fallimento: dolore indefinito.
+- **Sussurro della Sera** (Silenzio, 2 Ki): Calmare Noboru, farlo sentire al sicuro. Potrebbe rallentare il seppuku (guadagnare tempo) ma non impedirlo.
+- **Cuore di Ghiaccio** (Distacco, 2 Ki): Per reggere il seppuku senza tiri successivi.
+
+### En iniziale
+| PNG | En | Motivo |
+|-----|-----|--------|
+| Takeda Noboru | -1 | Chiuso, orgoglioso, considera gli investigatori intrusi |
+
+---
+
 ## NOTE PER IL MASTER
 
 ### Quando i giocatori vengono qui

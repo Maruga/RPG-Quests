@@ -93,7 +93,7 @@ Piste convergono. Verità inizia a emergere. Scene personali più dure.
 
 ### Handout da preparare
 - [ ] File Computer Yui (se sequestrano)
-- [ ] Messaggi Cercapersone (se richiedono)
+- [ ] SMS Cellulare Sakura (se richiedono)
 - [ ] Tracce Finanziarie (se indagano banca)
 
 ### Note
