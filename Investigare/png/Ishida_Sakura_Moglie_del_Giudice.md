@@ -248,6 +248,7 @@ Quando confessa, lo fa con freddezza quasi chirurgica. Nessun rimorso. Quasi sol
 | **Tiro suggerito per il PG** | Lucidita | Per notare che le lacrime sono troppo controllate, che non c'è vera emozione |
 | **Tiro suggerito per il PG** | Ascolto | Per cogliere le microesitazioni quando mente (pause troppo calibrate) |
 | **Tiro suggerito per il PG** | Silenzio | Per resistere alla sua manipolazione emotiva e non lasciarsi impietosire |
+| **Tiro suggerito per il PG** | Pazienza | Per reggere un interrogatorio lungo — Sakura mantiene la facciata a oltranza |
 
 ### Tiri di Sakura (se necessari)
 - **Distacco 9**: Per mantenere la calma sotto interrogatorio (alta — e bravissima)

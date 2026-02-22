@@ -22,7 +22,14 @@ Tutto il materiale di gioco è in italiano.
 - **PNG** (`png/`): schede individuali per ogni NPC. Template obbligatorio con 13 sezioni (DATI BASE, TOKEN, INDIRIZZI, PERSONALITÀ, BACKGROUND, COSA SA, COSA NASCONDE, RELAZIONI, DOVE TROVARLO, COMPORTAMENTO IN INTERROGATORIO, COME PARLA, MECCANICHE, NOTE PER IL MASTER)
 - **Luoghi** (`luoghi/`): SOLO descrizioni fisiche, piantine, prove, sicurezza, meccaniche ambientali. NO dialoghi/comportamenti PNG (rimandano alle schede)
 - **Handout** (`handout/`): file .md = fonte dati per il GM (con NOTE PER IL MASTER). I file da consegnare ai giocatori sono in `handout/html/` in formato **HTML** con CSS professionale. OGNI handout DEVE avere la versione HTML.
-- Vecchi file con prefisso `_` = backup, non toccare
+- Vecchi file con prefisso `_` = backup in sottocartelle `_backup/`, non toccare
+
+## Principio di prossimità (IMPORTANTE)
+Il narratore NON deve saltare tra documenti diversi durante il gioco. Le informazioni devono stare dove servono, quando servono:
+- **Dialoghi e comportamenti dei PNG** → nella scheda del PNG, sezione INTERROGATORIO
+- **Tiri suggeriti per scene specifiche** → nel file dove il GM leggerà quella scena (scheda PNG, luogo, ecc.)
+- **Meccaniche generali** → nel Regolamento GENKAI
+- **NO duplicazioni**: se un'informazione è già nel file giusto, NON copiarla altrove. Metti un riferimento con wikilink.
 
 ## Formato Handout HTML
 Gli handout HTML in `handout/html/` seguono questo schema:

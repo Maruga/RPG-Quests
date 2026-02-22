@@ -304,6 +304,8 @@ Voce bassa, controllata, misurata. Parla poco — ogni parola e pesata. Non spre
 | Farla parlare di Kenta | Presenza | Difficile (-1) | Lei si apre appena, poi si richiude |
 | Cogliere la rabbia sotto il controllo | Ascolto | Normale | "C'è qualcosa sotto quella calma" |
 | Ottenere la confessione | Presenza o Distacco | Difficile (-2) | Solo con prove schiaccianti |
+| Reggere la confessione (20 anni di sofferenza) | Distacco | Normale | Il PG regge l'impatto emotivo del racconto |
+| Non rivelare cosa si sa di Sakura | Silenzio | Normale | Il PG non tradisce informazioni sull'altra assassina |
 
 ### Gou utili
 

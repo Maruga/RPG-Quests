@@ -287,6 +287,7 @@ Lento, misurato, con lunghe pause deliberate tra le frasi. Tono basso e autorevo
 | Notare la micro-reazione al nome Yamamoto | Ascolto | Normale | "Ha irrigidito la mascella quando avete detto quel nome" |
 | Convincerlo a collaborare | Presenza | Difficile (-1) | Solo con argomenti legati all'onore della famiglia |
 | Impedire il suicidio | Silenzio o Pazienza | Variabile (vedi Gou) | Rallenta o impedisce il seppuku |
+| Assistere alla scena del seppuku | Distacco | Pesante (-2) | Il PG regge il colpo. Fallimento critico = -2 Ki. Scena che segna. |
 
 ### Gou utili
 

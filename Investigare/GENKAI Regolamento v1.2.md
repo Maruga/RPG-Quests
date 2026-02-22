@@ -653,6 +653,28 @@ Non chiedere un tiro quando:
 - L'azione è ordinaria e senza rischi
 - Il personaggio ha tutto il tempo per agire
 - Il fallimento bloccherebbe la storia senza alternative
+- Il PG cerca in un cassetto → trova quello che c'è
+- Il PG chiede il nome a un testimone → il testimone risponde
+- Il PG legge un documento → lo legge
+- Il PG ha prove schiaccianti e confronta un sospetto → il sospetto è messo alle strette (non serve Presenza)
+- Il PG fa una deduzione logica corretta → è corretta, punto
+
+### Tabella Attributo-Situazione (riferimento rapido)
+
+| Situazione | Attributo | Cosa modula il tiro |
+|------------|-----------|---------------------|
+| Scena violenta o scioccante | **Distacco** | Quanto il PG regge senza perdere lucidità |
+| Ricostruire cosa è successo | **Lucidità** | Quanto il PG capisce della dinamica |
+| Capire se qualcuno mente | **Ascolto** | Sfumature percepite (su cosa mente, perché) |
+| Fare pressione su un testimone | **Presenza** | Se il testimone cede o si chiude |
+| Interrogatorio lungo/estenuante | **Pazienza** | Se il PG mantiene il ritmo o perde il filo |
+| Non mostrare le proprie carte | **Silenzio** | Se il PG tradisce informazioni involontariamente |
+
+### Fallimento ≠ porta chiusa
+Un fallimento costa -1 (attributo o Ki) ma **non blocca mai l'indagine**:
+- Fallimento su Lucidità → il PG non ricostruisce la dinamica, ma le prove sono ancora lì, visibili
+- Fallimento su Ascolto → il PG non coglie che il testimone mente, ma se ha prove contraddittorie, può comunque confrontarlo
+- Fallimento su Distacco → il PG è scosso, perde Ki, ma può continuare a lavorare
 
 ## Quando Attivare i Kage
 
@@ -681,6 +703,8 @@ Le scene personali e i Genkai sono **drammatici ma quotidiani**. Non sono melodr
 ## Gestire il Gou
 
 Il Gou non è magia. È un talento straordinario, un'intuizione quasi soprannaturale, ma sempre spiegabile. Non far sembrare i PG supereroi - sono persone con un dono raro che costa caro usare.
+
+Non suggerire ai giocatori di usare i Gou — devono pensarci loro. Ma se un giocatore dice qualcosa tipo "voglio concentrarmi intensamente sulla scena" o "cerco di sentire se mente con tutto me stesso", è il momento di ricordare che i Gou esistono.
 
 ---
 

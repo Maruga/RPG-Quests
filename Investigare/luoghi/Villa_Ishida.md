@@ -85,15 +85,26 @@
 
 ## LO STUDIO (Scena del Crimine)
 
-### Descrizione dettagliata
+### Descrizione da leggere ai giocatori
 
-> Stanza di circa 20 mq al piano terra, angolo sud-est. Pareti rivestite di librerie in legno scuro di ciliegio, scaffali pieni di codici, fascicoli legali, testi giuridici. Pavimento in tatami con tappeto persiano al centro.
+> Lo studio è una stanza di circa 20 metri quadrati. Pareti rivestite di librerie in legno scuro, scaffali pieni di codici e fascicoli. Una finestra con shoji dà sul giardino interno.
 >
-> **Scrivania**: Massiccia, in legno di ciliegio, posizionata di fronte alla finestra. Sedia girevole in pelle nera. Lampada da tavolo in ottone (spenta). Portadocumenti in pelle. Portapenne (vuoto - la penna era fuori).
+> Al centro, una scrivania massiccia in legno di ciliegio. Dietro la scrivania, una poltrona in pelle.
 >
-> **Finestra**: Shoji (pannello scorrevole di carta) che dà sul giardino interno. Chiusa dall'interno.
+> Il giudice Ishida è riverso sulla scrivania. La testa appoggiata sul piano, il braccio destro disteso, le dita della mano destra sono irrigidite ad artiglio, gli occhi spalancati in un'espressione di terrore muto, la bocca contorta in una smorfia. La pelle del viso ha una sfumatura violacea innaturale, le labbra sono blu scuro. Indossa ancora l'abito della sera prima.
 >
-> **Illuminazione**: Lampadario centrale, lampada da scrivania, luce naturale dalla finestra.
+> Tutto nella stanza è in ordine perfetto. Libri allineati, documenti impilati con precisione, nessun segno di colluttazione.
+>
+> Sul foglio davanti a lui, le lettere "Gent..." e poi una striscia di inchiostro che attraversa il foglio in diagonale. Una penna stilografica poco distante.
+
+**→ Tiro Distacco** per tutti i PG alla prima vista del corpo.
+
+### Dettagli tecnici della stanza
+
+- **Scrivania**: Legno di ciliegio, lampada da tavolo in ottone (spenta), portadocumenti in pelle, portapenne (vuoto)
+- **Pavimento**: Tatami con tappeto persiano al centro
+- **Finestra**: Shoji, chiusa dall'interno
+- **Illuminazione**: Lampadario centrale, lampada da scrivania, luce naturale dalla finestra
 
 ### Cosa si trova (scena intatta)
 
