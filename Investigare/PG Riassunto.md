@@ -17,13 +17,13 @@
 
 ## ATTRIBUTI A COLPO D'OCCHIO
 
-| PG | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | **Attr. Min.** |
-|----|----------|----------|----------|----------|---------|----------|------------|
-| Yamamoto | 5 | 4 | 5 | **6** | 4 | 4 | 4 |
-| Honda | **6** | 2 | 4 | **6** | 4 | **6** | 2 ← |
-| Nakamura | 4 | **6** | 5 | 4 | **6** | 3 | 3 |
-| Sato | 3 | 5 | 3 | **6** | 5 | **6** | 3 |
-| Fujita | 5 | 4 | **6** | 5 | 5 | 3 | 3 |
+| PG       | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | **Attr. Min.** |
+| -------- | :------: | :------: | :------: | :------: | :-----: | :------: | :------------: |
+| Yamamoto |    5     |    4     |    5     |  **6**   |    4    |    4     |       4        |
+| Honda    |  **6**   |    2     |    4     |  **6**   |    4    |  **6**   |      2 ←       |
+| Nakamura |    4     |  **6**   |    5     |    4     |  **6**  |    3     |       3        |
+| Sato     |    3     |    5     |    3     |  **6**   |    5    |  **6**   |       3        |
+| Fujita   |    5     |    4     |  **6**   |    5     |    5    |    3     |       3        |
 
 **Legenda**: Grassetto = punto di forza (6). Attr. Min. = attributo più basso (base per KI).
 **← = più fragile**. Ogni PG ha 5 punti da distribuire (max +2 per attributo, max 8).
