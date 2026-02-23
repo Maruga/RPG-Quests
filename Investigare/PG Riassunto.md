@@ -7,7 +7,7 @@
 
 | # | Nome | Età | Ruolo | Problema |
 |---|------|-----|-------|----------|
-| 1 | **YAMAMOTO Kenji** | 42 | Capo Squadra | Figlio malato, sorella stufa |
+| 1 | **YAMAMOTO Kenji** | 42 | Capo Squadra | Divorzio, figlio trascurato, sorella stufa |
 | 2 | **HONDA Ryota** | 35 | Analista Scene | Debito gioco ¥2M |
 | 3 | **NAKAMURA Shota** | 38 | Interrogatori | Fratello scansafatiche |
 | 4 | **SATO Yuki** | 27 | Tecnico Tracce | Mamma opprimente |
@@ -17,15 +17,16 @@
 
 ## ATTRIBUTI A COLPO D'OCCHIO
 
-| PG | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | **KI (TENUTA)** |
+| PG | Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | **Attr. Min.** |
 |----|----------|----------|----------|----------|---------|----------|------------|
-| Yamamoto | +1 | 0 | +1 | **+2** | 0 | 0 | +5 |
-| Honda | **+2** | -2 | 0 | **+2** | 0 | **+2** | +4 |
-| Nakamura | 0 | **+2** | +1 | 0 | **+2** | -1 | +5 |
-| Sato | -1 | +1 | -1 | **+2** | +1 | **+2** | +2 |
-| Fujita | +1 | 0 | **+2** | +1 | +1 | -1 | +5 |
+| Yamamoto | 5 | 4 | 5 | **6** | 4 | 4 | 4 |
+| Honda | **6** | 2 | 4 | **6** | 4 | **6** | 2 ← |
+| Nakamura | 4 | **6** | 5 | 4 | **6** | 3 | 3 |
+| Sato | 3 | 5 | 3 | **6** | 5 | **6** | 3 |
+| Fujita | 5 | 4 | **6** | 5 | 5 | 3 | 3 |
 
-**Legenda**: Grassetto = punto di forza
+**Legenda**: Grassetto = punto di forza (6). Attr. Min. = attributo più basso (base per KI).
+**← = più fragile**. Ogni PG ha 5 punti da distribuire (max +2 per attributo, max 8).
 
 ---
 
@@ -45,7 +46,7 @@
 
 | PG | Problema | PNG | Cosa vuole il PNG |
 |----|----------|-----|-------------------|
-| Yamamoto | Figlio Takeshi (8) malato a scuola | **Sorella Noriko** | Che ammetta il problema |
+| Yamamoto | Divorzio, figlio Takeshi (8) trascurato | **Sorella Noriko** | Che ammetta il problema |
 | Honda | Perso ¥2M scommessa | **Goto Masaru** (riscossore) | Soldi o "favore" |
 | Nakamura | Fratello chiede ¥300k | **Fratello Daisuke** | Soldi, subito |
 | Sato | Mamma chiama in centrale | **Madre Michiko** | Che lasci il lavoro |
@@ -82,15 +83,19 @@
 
 ## KI INIZIALE (TENUTA)
 
-```
-Yamamoto  [■■■■■□□□□□] +5 Buono
-Honda     [■■■■□□□□□□] +4 Buono
-Nakamura  [■■■■■□□□□□] +5 Buono
-Sato      [■■□□□□□□□□] +2 Stabile ← Più fragile
-Fujita    [■■■■■□□□□□] +5 Buono
-```
+**Formula**: Attributo più basso (dopo distribuzione punti) + 1d6
 
-**Nota**: Sato parte più vulnerabile. Una o due scene difficili possono metterlo in crisi.
+| PG | Attr. min. base | KI possibile (senza punti) | KI possibile (con punti) |
+|----|-----------------|---------------------------|--------------------------|
+| Yamamoto | 4 (Paz/Asc/Pres) | 5–10 | 5–12 |
+| Honda | **2 (Pazienza)** | **3–8** ← | 3–10 |
+| Nakamura | 3 (Presenza) | 4–9 | 4–11 |
+| Sato | 3 (Dist/Sil) | 4–9 | 4–11 |
+| Fujita | 3 (Presenza) | 4–9 | 4–11 |
+
+**Honda è il più fragile** — Pazienza 2 è il valore più basso tra tutti i PG. Anche mettendo 2 punti in Pazienza (→4), il suo attributo minimo resta basso.
+
+**Yamamoto è il più solido** — nessun attributo sotto il 4.
 
 ---
 
