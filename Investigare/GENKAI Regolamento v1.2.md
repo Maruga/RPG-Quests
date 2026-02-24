@@ -55,7 +55,7 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 3. Tira **2d6** e prendi il **dado più basso**: quei punti sono bonus aggiuntivi da distribuire
 4. Nessun attributo può superare **9** o scendere sotto **4**
 
-> **Esempio**: Parti con tutti gli attributi a 4. Distribuisci 12 punti: Distacco 7, Pazienza 5, Silenzio 6, Lucidità 8, Ascolto 6, Presenza 6. Poi tiri 2d6: esce 5 e 3, prendi il dado basso = 3 punti bonus. Li distribuisci: Lucidità sale a 9, Pazienza a 6, Ascolto a 7.
+> **Esempio**: Parti con tutti gli attributi a 4. Distribuisci 12 punti: Distacco 6, Pazienza 5, Silenzio 6, Lucidità 8, Ascolto 6, Presenza 5. Poi tiri 2d6: esce 5 e 3, prendi il dado basso = 3 punti bonus. Li distribuisci: Lucidità sale a 9, Pazienza a 6, Presenza a 6.
 
 ### Scala dei Valori
 
@@ -404,7 +404,7 @@ Quando interagisci con un PNG:
 
 Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. Cambiano solo per eventi narrativi significativi (tradimento grave, salvare la vita, scoperta shock). Il GM decide.
 
-> **Esempio**: Interroghi un testimone diffidente (En -2 con te). Hai Presenza 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento. Perdi 1 punto. Se il dado puro fosse stato 5, con malus sarebbe 7, successo - ma dato che il dado puro (5) era già successo, non c'è calo di En.
+> **Esempio**: Interroghi un testimone diffidente (En -2 con te). Hai Presenza 7. Tiri 2d6: dado puro 6. Con il malus: 6+2 = 8. 8 > 7 = Fallimento leggero — il testimone non collabora, ma nessuna perdita meccanica. Se il dado puro fosse stato 5, con malus sarebbe 7, successo — e dato che il dado puro (5) era già successo da solo, l'En non cala.
 
 ---
 
@@ -712,7 +712,7 @@ Non chiedere un tiro quando:
 | Non mostrare le proprie carte | **Silenzio** | Se il PG tradisce informazioni involontariamente |
 
 ### Fallimento ≠ porta chiusa
-Un fallimento **non blocca mai l'indagine**. Il fallimento leggero (dado 5-9 sopra l'attributo) è solo narrativo — nessuna perdita. Solo Nami- e Kiwami- hanno costi meccanici:
+Un fallimento **non blocca mai l'indagine**. Il fallimento leggero (dado tra attributo+1 e 10) è solo narrativo — nessuna perdita. Solo Nami- (11) e Kiwami- (12) hanno costi meccanici:
 - Fallimento leggero su Lucidità → il PG non ricostruisce la dinamica al volo, ma le prove sono ancora lì
 - Fallimento leggero su Ascolto → il PG non coglie la bugia, ma se ha prove contraddittorie può comunque confrontare
 - Fallimento leggero su Distacco → il PG è visibilmente scosso, ma senza conseguenze meccaniche
