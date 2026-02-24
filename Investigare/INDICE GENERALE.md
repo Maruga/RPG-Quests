@@ -49,7 +49,18 @@
 | [[Laboratorio_Sakai]] | Clandestino | ★★ Pista penna |
 | [[Laboratorio_Ogawa]] | Studio amante | ★ Falsa pista |
 | [[Casa_Takeda]] | Padre | ★★ Evento suicidio |
-| [[Luoghi_Secondari]] | Vari | Tribunale, ospedale, ecc. |
+| [[Tribunale_Distrettuale]] | Uffici giudice | ★★ Registro, fascicolo Hayashi |
+| [[Casa_da_Te_Kinkaku]] | Bisca clandestina | ★★ Debiti giudice |
+| [[Casa_Kono_Akemi]] | Alibi Sakura | ★ Alibi vero |
+| [[Ristorante_Katsura]] | Lavoro Yui | ★ Competenze culinarie |
+| [[Ospedale_Universitario]] | Autopsia, referti | ★★★ Due cause di morte |
+| [[Carcere_Kyoto]] | Mori, Hayashi | ★★ Pista yakuza |
+| [[Stazione_Polizia]] | Base PG | ★★ Rapporto Fukuda |
+| [[Scuola_Tsuji]] | Formazione Yui | ★ Competenze fugu |
+| [[Compagnia_Taxi]] | Registro corse | ★ Spostamenti Yui |
+| [[Banca_Sumitomo]] | Conti bancari | ★★ Prelievi Sakura |
+| [[Mercato_Nishiki]] | Acquisti fugu | ★ Premeditazione Yui |
+| [[Accademia_Rakusei]] | Rifiuto Kenta | ★ Movente Yui |
 
 ---
 
@@ -58,7 +69,7 @@
 ### Documenti Ufficiali
 | File | Quando consegnare |
 |------|-------------------|
-| [[Rapporto Scena Crimine]] | Giorno 1 - Subito |
+| [[Rapporto_Scena_Crimine]] | Giorno 1 - Subito |
 | [[Rapporto_Autopsia]] | Giorno 2-3 |
 | [[Scheda_Tecnica_Penna]] | Dopo analisi (48-72h) |
 | [[Registri_Pronto_Soccorso]] | Su richiesta |
@@ -68,7 +79,9 @@
 | File | Come ottenerlo |
 |------|----------------|
 | [[File_Computer_Yui]] | Sequestro + analisi |
-| [[Lettere_Tabulato_Yui]] | Tabulati telefonici Yui |
+| [[Lettere_Yui]] | Lettere di Yui al giudice (4) |
+| [[Tabulato_Telefonico]] | Tabulati telefonici Kimura e Ishida |
+| [[Referto_Clinico_Hiro]] | Referto sterilità Hiro |
 | [[Tabulati_Casa_Ishida]] | Mandato NTT (tabulati villa) |
 | [[Messaggi_Cellulare]] | Mandato o perquisizione |
 | [[Tracce_Finanziarie]] | Indagine bancaria (conto Sakura) |
@@ -105,12 +118,12 @@
 | File | Contenuto |
 |------|-----------|
 | [[GENKAI Regolamento v1.2]] | Regole complete |
-| [[Copioni PNG]] | Per scene personali |
+| [[Copioni_PNG]] | Per scene personali |
 
 ### I 5 Investigatori
 | File | Ruolo | Problema |
 |------|-------|----------|
-| [[PG_01_Yamamoto_Kenji]] | Capo squadra | Figlio malato |
+| [[PG_01_Yamamoto_Kenji]] | Capo squadra | Divorzio, figlio trascurato |
 | [[PG_02_Honda_Ryota]] | Analista scene | Debito gioco |
 | [[PG_03_Nakamura_Shota]] | Interrogatori | Fratello scansafatiche |
 | [[PG_04_Sato_Yuki]] | Tecnico tracce | Mamma opprimente |
@@ -149,8 +162,8 @@ Penna non presa    → Sakura la fa sparire
 | Categoria | Quantità |
 |-----------|----------|
 | PNG totali | ~30 |
-| Luoghi | 12 |
-| Handout | 23 |
+| Luoghi | 18 |
+| Handout | 25 |
 | PG | 5 |
 | **File totali** | **45** |
 

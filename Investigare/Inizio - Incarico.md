@@ -85,7 +85,7 @@ I giocatori sono liberi di muoversi come vogliono. Le opzioni tipiche:
 
 ## HANDOUT SESSIONE 1
 
-- [ ] [[Rapporto Scena Crimine]] — da consegnare subito
+- [ ] [[Rapporto_Scena_Crimine]] — da consegnare subito
 - [ ] (Opzionale) [[Articoli_Giornale]] — se cercano notizie sul giudice
 
 ---

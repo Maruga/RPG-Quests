@@ -8,7 +8,9 @@
       "Bash(python3:*)",
       "Bash(ls:*)",
       "Bash(echo:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(cd C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Investigare:*)"
     ]
   }
 }

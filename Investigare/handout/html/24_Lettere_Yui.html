@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lettere di Kimura Yui al Giudice Ishida</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page { size: A4; margin: 22mm 20mm 22mm 20mm; }
+
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+  }
+
+  /* -- GM HEADER (screen only) -- */
+  .gm-header {
+    background: #2c1810;
+    color: #f0e6d3;
+    padding: 16px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    border-bottom: 3px solid #8b0000;
+  }
+  .gm-header h2 { color: #e8c170; font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+  .gm-header .gm-tag {
+    display: inline-block; background: #8b0000; color: white;
+    padding: 2px 8px; font-size: 10px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px;
+  }
+  .gm-header ul { margin-left: 18px; margin-bottom: 6px; }
+  .gm-header li { margin-bottom: 3px; }
+  .gm-header strong { color: #e8c170; }
+  @media print { .gm-header { display: none !important; } body { background: white; } .letter-page { box-shadow: none; } }
+
+  /* -- LETTER PAGE -- */
+  .letter-page {
+    max-width: 210mm; margin: 20px auto; position: relative;
+    background: #faf6ee;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 31px,
+        rgba(180,160,120,0.08) 31px,
+        rgba(180,160,120,0.08) 32px
+      );
+    border: none;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    page-break-after: always;
+  }
+  .letter-page:last-child { page-break-after: auto; }
+
+  /* -- Washi paper texture edges -- */
+  .letter-page::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    border: 8px solid transparent;
+    border-image: repeating-linear-gradient(
+      45deg,
+      rgba(180,160,120,0.15),
+      rgba(180,160,120,0.15) 2px,
+      transparent 2px,
+      transparent 6px
+    ) 8;
+    pointer-events: none;
+  }
+
+  /* -- LETTER CONTENT -- */
+  .letter-content {
+    padding: 50px 50px 40px;
+    font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 13px;
+    line-height: 2.2;
+    color: #2a2015;
+  }
+
+  .letter-date {
+    text-align: right;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+
+  .letter-greeting {
+    margin-bottom: 20px;
+    font-style: normal;
+  }
+
+  .letter-content p {
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  .letter-content .emphasis {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .letter-signature {
+    text-align: right;
+    margin-top: 40px;
+    font-style: normal;
+  }
+  .letter-signature .sig-name {
+    font-size: 13px;
+    color: #555;
+  }
+  .letter-signature .sig-phone {
+    font-size: 10px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  /* -- LETTER NUMBER -- */
+  .letter-number {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b0a080;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(180,160,120,0.3);
+  }
+
+  /* -- Crumpled/folded effect -- */
+  .fold-mark {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(180,160,120,0.15);
+    left: 0;
+  }
+
+  /* -- Ink spots -- */
+  .ink-spot {
+    position: absolute;
+    width: 5px; height: 5px;
+    background: rgba(30,20,10,0.12);
+    border-radius: 50%;
+  }
+
+  /* -- Tone progression -- */
+  .letter-page.letter-1 { }
+  .letter-page.letter-2 { }
+  .letter-page.letter-3 .letter-content { color: #1a1008; }
+  .letter-page.letter-4 .letter-content { color: #1a1008; }
+</style>
+</head>
+<body>
+
+<!-- GM HEADER (non si stampa) -->
+<div class="gm-header">
+  <div class="gm-tag">SOLO MASTER</div>
+  <h2>HANDOUT 24 — Lettere di Yui al Giudice Ishida</h2>
+  <p><strong>Quando consegnare:</strong> Quando i giocatori perquisiscono la camera o lo studio del giudice e cercano corrispondenza, oppure quando il maggiordomo/domestica menziona "lettere strane".</p>
+  <p><strong>Dove si trovano:</strong> Nel cestino della camera del giudice (lettere 1-3 aperte e gettate) e nel cassetto della scrivania (lettera 4, aperta ma conservata).</p>
+  <p><strong>Cosa rivelano ai giocatori:</strong></p>
+  <ul>
+    <li><strong>Lettera 1 (set '96):</strong> Supplica formale — Kenta e figlio del giudice, il test era falso</li>
+    <li><strong>Lettera 2 (ott '96):</strong> Disperazione — 16 anni di bugie, il rifiuto scolastico di Kenta</li>
+    <li><strong>Lettera 3 (nov '96):</strong> Minaccia — sa della falsificazione, ha le prove</li>
+    <li><strong>Lettera 4 (dic '96):</strong> Ultimatum — verra di persona se non risponde</li>
+  </ul>
+  <p><strong>Progressione emotiva:</strong> Da "Egregio Giudice" a "Makoto" a "Y." — dalla formalita alla rabbia.</p>
+  <p><strong>Attenzione:</strong> Le lettere rivelano che Kenta e figlio di Makoto e che il test DNA era falso. I PG ora sanno del collegamento biologico.</p>
+</div>
+
+<!-- LETTERA 1 -->
+<div class="letter-page letter-1">
+  <div class="fold-mark" style="top: 33%;"></div>
+  <div class="fold-mark" style="top: 66%;"></div>
+  <div class="letter-content">
+    <div class="letter-number">Lettera 1 di 4</div>
+    <div class="letter-date">Kyoto, 15 settembre 1996</div>
+    <div class="letter-greeting">Egregio Giudice Ishida,</div>
+    <p>So che non vuoi sentirmi. So che hai costruito la tua vita dimenticando quello che e successo.</p>
+    <p>Ma io non posso piu tacere.</p>
+    <p>Kenta e tuo figlio. L'ho sempre saputo nel profondo, anche quando quel test mi ha detto il contrario. Ora ho la prova che il test era falso.</p>
+    <p>Ti chiedo solo di incontrarmi. Una volta. Per parlare.</p>
+    <p>Non voglio rovinarti la vita. Voglio solo che mio figlio abbia quello che gli spetta.</p>
+    <div class="letter-signature">
+      <div class="sig-name">Kimura Yui</div>
+      <div class="sig-phone">075-581-3344</div>
+    </div>
+  </div>
+</div>
+
+<!-- LETTERA 2 -->
+<div class="letter-page letter-2">
+  <div class="fold-mark" style="top: 33%;"></div>
+  <div class="fold-mark" style="top: 66%;"></div>
+  <div class="ink-spot" style="top: 200px; left: 280px;"></div>
+  <div class="letter-content">
+    <div class="letter-number">Lettera 2 di 4</div>
+    <div class="letter-date">Kyoto, 8 ottobre 1996</div>
+    <div class="letter-greeting">Makoto,</div>
+    <p>Non rispondi alle mie chiamate. Non rispondi alle mie lettere.</p>
+    <p>Sono passati 16 anni. Sedici anni in cui ho cresciuto <span class="emphasis">tuo</span> figlio credendo che fosse di un altro uomo. Sedici anni in cui ho rinunciato alla mia carriera, ai miei sogni.</p>
+    <p>Kenta e brillante. Molto piu brillante del figlio di Sakura che hai fatto entrare in quella scuola. Eppure lui e stato rifiutato. Sai perche? Perche non ha il cognome giusto.</p>
+    <p><span class="emphasis">Il tuo</span> cognome.</p>
+    <p>Ti prego, rispondimi.</p>
+    <div class="letter-signature">
+      <div class="sig-name">Yui</div>
+    </div>
+  </div>
+</div>
+
+<!-- LETTERA 3 -->
+<div class="letter-page letter-3">
+  <div class="fold-mark" style="top: 33%;"></div>
+  <div class="fold-mark" style="top: 66%;"></div>
+  <div class="ink-spot" style="top: 150px; right: 100px;"></div>
+  <div class="ink-spot" style="bottom: 180px; left: 200px; width: 4px; height: 4px;"></div>
+  <div class="letter-content">
+    <div class="letter-number">Lettera 3 di 4</div>
+    <div class="letter-date">Kyoto, 22 novembre 1996</div>
+    <p>Ho provato con le buone.</p>
+    <p>So tutto, Makoto. So che hai pagato quel medico per falsificare il test. So che mio padre era d'accordo. Tutti mi avete tradita.</p>
+    <p>Ho le prove. Posso andare dai giornali. Posso rovinare la tua carriera, la tua reputazione, il tuo matrimonio perfetto.</p>
+    <p>Ma non voglio farlo. Voglio solo quello che spetta a mio figlio.</p>
+    <p>Rispondimi, o saro costretta ad agire.</p>
+    <div class="letter-signature">
+      <div class="sig-name">Y.</div>
+    </div>
+  </div>
+</div>
+
+<!-- LETTERA 4 -->
+<div class="letter-page letter-4">
+  <div class="fold-mark" style="top: 33%;"></div>
+  <div class="fold-mark" style="top: 66%;"></div>
+  <div class="ink-spot" style="top: 300px; left: 120px; width: 3px; height: 3px;"></div>
+  <div class="letter-content">
+    <div class="letter-number">Lettera 4 di 4</div>
+    <div class="letter-date">Kyoto, 18 dicembre 1996</div>
+    <div class="letter-greeting">Makoto,</div>
+    <p>E Natale. Kenta non sa chi e il suo vero padre. Pensa che Hiro sia suo padre. Pensa che la sua famiglia sia normale.</p>
+    <p>Io devo guardarlo ogni giorno sapendo la verita.</p>
+    <p>Questa e l'ultima lettera. Se non mi rispondi entro gennaio, verro a trovarti di persona.</p>
+    <p>Non potrai ignorarmi per sempre.</p>
+    <div class="letter-signature">
+      <div class="sig-name">Yui</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

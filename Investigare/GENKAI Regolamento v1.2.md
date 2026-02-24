@@ -3,10 +3,27 @@
 
 
 > **Note di design (da rimuovere prima della stampa):**
-> - Progressione Ki: massimo iniziale 9, costo aumento = valore attuale in punti esperienza (9→10 costa 9 PE, 10→11 costa 10 PE)
-> - Attributi non aumentano (in variazione continua)
+> - Attributi: range 4-9, variazione continua tramite Kiwami e Nami
+> - Ki: max = valore di inizio sessione (non aumenta mai oltre quello)
 > - Gou: da definire meccanica aumento e possibilità di ridurre costo Ki con PE (da 2 a 1)
 
+---
+
+## Glossario
+
+| Termine | Kanji | Significato |
+|---------|-------|-------------|
+| **Genkai** | 限界 | *Limite* — il punto di rottura del personaggio (Ki ≤ 3) |
+| **Ki** | 気 | *Energia vitale* — risorsa principale, stato mentale e fisico |
+| **Gou** | 業 | *Debito / Karma* — talento straordinario che costa caro |
+| **En** | 縁 | *Legame* — il valore della relazione con un PNG |
+| **Enja** | 縁者 | *Conoscenza* — contatto esterno che può aiutare |
+| **Kage** | 影 | *Ombra* — il problema personale che irrompe nel caso |
+| **Satori** | 悟り | *Illuminazione* — successo automatico, una volta per sessione |
+| **Kiwami** | 極 | *Estremo* — risultato critico del dado (2 o 12) |
+| **Nami** | 波 | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi |
+
+---
 
 # PANORAMICA
 
@@ -20,7 +37,7 @@ Questo è un gioco di ruolo investigativo. I personaggi non sono eroi d'azione -
 
 ## Attributi
 
-Ogni PG ha 6 attributi con valore da **4 a 11**.
+Ogni PG ha 6 attributi con valore da **4 a 9**.
 
 | Attributo    | Cosa rappresenta                                  |
 | ------------ | ------------------------------------------------- |
@@ -33,22 +50,22 @@ Ogni PG ha 6 attributi con valore da **4 a 11**.
 
 ### Procedura di Generazione
 
-1. Per ogni attributo, tira **2d4**
-2. Se esce almeno un 1, **un solo 1 diventa 2**
-3. Se il totale supera 11, il valore è 11 e ottieni **1 punto bonus extra**
-4. Dopo i 6 tiri, distribuisci **5 punti** (+ eventuali bonus) tra gli attributi
-5. Nessun attributo può superare 11 o scendere sotto 4
+1. Tutti gli attributi partono da **4**
+2. Distribuisci **12 punti** tra i 6 attributi
+3. Tira **2d6** e prendi il **dado più basso**: quei punti sono bonus aggiuntivi da distribuire
+4. Nessun attributo può superare **9** o scendere sotto **4**
 
-> **Esempio**: Tiri 3d4 per Lucidità e ottieni 1, 3, 4. Il dado con 1 diventa 2, quindi il totale è 2+3+4 = 9. Lucidità parte da 9.
+> **Esempio**: Parti con tutti gli attributi a 4. Distribuisci 12 punti: Distacco 7, Pazienza 5, Silenzio 6, Lucidità 8, Ascolto 6, Presenza 6. Poi tiri 2d6: esce 5 e 3, prendi il dado basso = 3 punti bonus. Li distribuisci: Lucidità sale a 9, Pazienza a 6, Ascolto a 7.
 
 ### Scala dei Valori
 
 | Valore | Significato |
 |--------|-------------|
-| 10-11 | Eccezionale - punto di forza |
-| 8-9 | Buono - sopra la media |
-| 6-7 | Normale - nella media |
-| 4-5 | Debole - difficoltà evidente |
+| 9 | Eccezionale - tratto distintivo (massimo) |
+| 8 | Ottimo - punto di forza |
+| 7 | Buono - sopra la media |
+| 5-6 | Normale - nella media |
+| 4 | Debole - difficoltà evidente (minimo) |
 
 ---
 
@@ -63,15 +80,25 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 
 ### Usi del Ki
 
-- Compensare fallimenti (invece di perdere punti attributo)
+- Assorbire perdite da Nami- e Kiwami- (invece di perdere punti attributo)
 - Pagare il costo del Gou (potere speciale)
 - Donare ad altri PG in difficoltà
 
 ### Recupero
 
-- **Notte di sonno**: +1 Ki (può essere assegnato a un attributo invece che a Ki)
-- **Successo critico**: +1 Ki (oltre a +1 attributo)
-- **Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
+**Recupero notturno** (dopo una notte di sonno):
+
+| Giornata | Recupero |
+|----------|----------|
+| Nessun Kiwami | 1d3 Ki |
+| Almeno un **2** (Kiwami positivo) | 1d3+1 Ki |
+| Almeno un **12** (Kiwami negativo) | solo 1 Ki |
+| Sia 2 che 12 | vince il 12 → solo 1 Ki |
+
+- Il Ki non può mai superare il **valore di inizio sessione**
+- I Nami (3 e 11) **non influenzano** il recupero notturno
+
+**Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
 
 ---
 
@@ -93,7 +120,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 | Successo | Funziona con dettagli precisi e completi |
 | Fallimento | Funziona con dettagli vaghi o parziali |
 
-**Importante**: Non esistono critici per il Gou. Funziona sempre - la differenza è solo nella precisione delle informazioni ottenute.
+**Importante**: Non esistono Kiwami né Nami per il Gou. Funziona sempre - la differenza è solo nella precisione delle informazioni ottenute.
 
 ---
 
@@ -301,14 +328,26 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 
 ### Tabella Esiti
 
-| Esito | Condizione | Conseguenza |
-|-------|------------|-------------|
-| **Successo** | 2d6 ≤ attributo | Nessuna conseguenza negativa |
-| **Successo Critico** | Dado puro = 2 | +1 all'attributo usato, +1 Ki |
-| **Fallimento** | 2d6 > attributo | -1 (attributo o Ki, scelta del giocatore) |
-| **Fallimento Critico** | Dado puro = 12 | -2 (distribuiti a scelta del giocatore) |
+| Dado | Esito | Conseguenza |
+|------|-------|-------------|
+| **2** | **Kiwami 極 positivo** | +1 attributo usato E +1 Ki |
+| **3** | **Nami 波 positivo** | +1 a scelta del giocatore (attributo O Ki) |
+| **4 — attributo** | **Successo** | Nessuna conseguenza |
+| **attributo+1 — 10** | **Fallimento leggero** | Nessuna perdita meccanica |
+| **11** | **Nami 波 negativo** | -1 a scelta del giocatore (attributo O Ki) |
+| **12** | **Kiwami 極 negativo** | -1 attributo usato E -1 Ki |
 
-> **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque, ma il personaggio ne paga un costo emotivo o fisico.
+**Limiti**:
+- Nessun attributo può mai superare **9**
+- Nessun attributo può mai scendere sotto **4** (se l'attributo è a 4, la perdita va obbligatoriamente al Ki)
+- Il Ki non può mai superare il **valore di inizio sessione**
+- Se un bonus non può essere applicato (attributo già a 9, Ki già al massimo), il punto è perso
+
+> **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque — il fallimento leggero è solo narrativo (il PG gestisce male la situazione, ma senza costi meccanici). Solo Nami e Kiwami negativi comportano perdite.
+>
+> **Attributo minimo**: Se un attributo è a 4 e subirebbe una perdita, il punto va obbligatoriamente al Ki.
+>
+> **Ambito**: Nami e Kiwami si applicano solo alle **prove sugli attributi**. Non si applicano a Combattimento, En (relazioni), Gou o recupero notturno.
 
 ### Probabilità di Successo
 
@@ -319,11 +358,9 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 | 6 | 41.7% |
 | 7 | 58.3% |
 | 8 | 72.2% |
-| 9 | 83.3% |
-| 10 | 91.7% |
-| 11 | 97.2% |
+| 9 (max) | 83.3% |
 
-> **Esempio**: Entri sulla scena del crimine. È brutale. Il GM chiede un tiro su Distacco (hai 7). Tiri 2d6: esce 8. Fallimento. Ottieni tutte le informazioni sulla scena, ma ti segna: perdi 1 punto (scegli se da Distacco o da Ki).
+> **Esempio**: Entri sulla scena del crimine. È brutale. Il GM chiede un tiro su Distacco (hai 7). Tiri 2d6: esce 8. Fallimento leggero — la scena ti colpisce, sei pallido, le mani tremano. Ma nessuna perdita meccanica. Se avessi tirato 11 (Nami negativo): la scena ti segna nel profondo, -1 a tua scelta (attributo o Ki).
 
 ---
 
@@ -357,10 +394,11 @@ Quando interagisci con un PNG:
 3. Confronti con il tuo attributo
 
 **Regole importanti**:
-- Il modificatore **non influenza i critici**: solo il dado puro (2 o 12) determina i critici
+- Il modificatore **non influenza i Kiwami**: solo il dado puro (2 o 12) determina i Kiwami
 - Se il dado puro indica fallimento, ma con il bonus dell'En hai successo → l'En cala di 1 (il PNG ti ha aiutato, ma inizia a porsi domande)
-- **Critico successo (dado = 2)**: En +1
-- **Critico fallimento (dado = 12)**: En -1
+- **Kiwami positivo (dado = 2)**: En +1
+- **Kiwami negativo (dado = 12)**: En -1
+- I Nami (3 e 11) **non si applicano** ai tiri di En — valgono solo per le prove sugli attributi
 
 ### Relazioni Profonde
 
@@ -379,7 +417,7 @@ Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. C
 - Il tiro è **successo automatico**
 - Ignora qualsiasi malus da En o situazione
 - Nessun costo
-- Non può essere successo critico (niente bonus)
+- Non può essere Kiwami (niente bonus)
 - Non si accumula tra sessioni - se non usato, perso
 
 > **Esempio**: Devi convincere il capo della yakuza a lasciarti andare. En -4, situazione disperata. Invochi il Satori: riesci. Come, lo descrivi tu - ma funziona.
@@ -434,8 +472,8 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 3. Il PG tira 2d6 ≤ attributo (modificato)
 4. **Successo**: eviti/gestisci senza conseguenze
 5. **Fallimento**: perdi Ki in base alla pericolosità dell'attacco
-6. **Critico successo (2)**: +1 attributo, +1 Ki
-7. **Critico fallimento (12)**: -2 invece di danno normale
+6. **Kiwami positivo (dado = 2)**: +1 attributo, +1 Ki
+7. **Kiwami negativo (dado = 12)**: -1 attributo usato E -1 Ki, oltre al danno
 
 ---
 
@@ -511,10 +549,15 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 # PROGRESSIONE
 
 Gli attributi cambiano durante l'avventura tramite:
-- Successi critici (+1 attributo)
-- Fallimenti (-1 attributo o Ki)
-- Scene personali (+1/-1 in base al voto)
-- Riposo (il +1 Ki può essere dato a un attributo)
+- **Kiwami positivo** (dado = 2): +1 attributo usato E +1 Ki
+- **Nami positivo** (dado = 3): +1 a scelta (attributo O Ki)
+- **Successo / Fallimento leggero**: nessuna variazione meccanica
+- **Nami negativo** (dado = 11): -1 a scelta (attributo O Ki)
+- **Kiwami negativo** (dado = 12): -1 attributo usato E -1 Ki
+- **Scene personali**: +1/-1 attributo (in base al voto)
+- **Recupero notturno**: 1d3 Ki (modificato da Kiwami, vedi sezione Ki)
+
+**Limiti**: Nessun attributo supera mai 9 o scende sotto 4 (perdita forzata su Ki). Il Ki non supera mai il valore di inizio sessione.
 
 **Non c'è esperienza tradizionale.** I PG crescono o crollano in base a come affrontano il caso e la loro vita.
 
@@ -554,13 +597,11 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore 1** (Distacco 6): "Tiro... 8. Fallimento."
 
-**GM**: "Trovi tutti gli indizi - il coltello da cucina usato come arma, le tracce di colluttazione, il portafoglio ancora in tasca quindi non è rapina. Ma ti segna: perdi 1. Attributo o Ki?"
+**GM**: "Trovi tutti gli indizi - il coltello da cucina usato come arma, le tracce di colluttazione, il portafoglio ancora in tasca quindi non è rapina. Ma la scena ti colpisce — ti si nota, sei pallido, le mani tremano un po'. Fallimento leggero, nessuna perdita."
 
-**Giocatore 1**: "Ki. Scendo a 7."
+**Giocatore 2** (Distacco 7): "Io tiro... 2! Kiwami!"
 
-**Giocatore 2** (Distacco 9): "Io tiro... 2! Critico!"
-
-**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. +1 Distacco e +1 Ki."
+**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. Kiwami positivo: +1 Distacco (sale a 8) e +1 Ki."
 
 ---
 
@@ -576,7 +617,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore** (Lucidità 7): "Ho fatto 10. Fallimento."
 
-**GM**: "Il pugno ti prende in pieno. -1 Ki. Sei a quanto?"
+**GM**: "Il pugno ti prende in pieno. -1 Ki per il danno. Sei a quanto?"
 
 **Giocatore**: "Ero a 6, ora sono a 5."
 
@@ -596,7 +637,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Situazione**: Il detective Kimura ha avuto una sessione difficile. È sceso a Ki 3.
 
-**GM**: "Dopo l'ennesimo fallimento nell'interrogatorio, qualcosa si spezza. Sei a Ki 3. Genkai."
+**GM**: "Dopo una serie di Nami negativi durante la giornata, qualcosa si spezza. Sei a Ki 3. Genkai."
 
 **Giocatore**: "Ok. Kimura si alza bruscamente, rovescia la sedia. Esce dalla stanza senza dire nulla. Va in bagno, si chiude dentro, e resta lì con le mani sul lavandino a fissare il suo riflesso."
 
@@ -634,7 +675,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **GM**: "Tira Lucidità."
 
-**Giocatore** (Lucidità 9): "Ho fatto 7. Successo."
+**Giocatore** (Lucidità 8): "Ho fatto 7. Successo."
 
 **GM**: "Chiudi gli occhi. Le immagini si formano: vedi l'auto della vittima che procede normalmente. Poi un'altra auto, scura, che accelera da dietro. Non è un incidente - l'ha speronata deliberatamente, spingendola fuori strada. Vedi anche un dettaglio: l'auto scura ha uno specchietto rotto sul lato sinistro. Probabilmente si è danneggiato nell'impatto."
 
@@ -671,10 +712,11 @@ Non chiedere un tiro quando:
 | Non mostrare le proprie carte | **Silenzio** | Se il PG tradisce informazioni involontariamente |
 
 ### Fallimento ≠ porta chiusa
-Un fallimento costa -1 (attributo o Ki) ma **non blocca mai l'indagine**:
-- Fallimento su Lucidità → il PG non ricostruisce la dinamica, ma le prove sono ancora lì, visibili
-- Fallimento su Ascolto → il PG non coglie che il testimone mente, ma se ha prove contraddittorie, può comunque confrontarlo
-- Fallimento su Distacco → il PG è scosso, perde Ki, ma può continuare a lavorare
+Un fallimento **non blocca mai l'indagine**. Il fallimento leggero (dado 5-9 sopra l'attributo) è solo narrativo — nessuna perdita. Solo Nami- e Kiwami- hanno costi meccanici:
+- Fallimento leggero su Lucidità → il PG non ricostruisce la dinamica al volo, ma le prove sono ancora lì
+- Fallimento leggero su Ascolto → il PG non coglie la bugia, ma se ha prove contraddittorie può comunque confrontare
+- Fallimento leggero su Distacco → il PG è visibilmente scosso, ma senza conseguenze meccaniche
+- Nami- su Distacco → la scena lo segna profondamente: -1 a scelta
 
 ## Quando Attivare i Kage
 
@@ -711,21 +753,30 @@ Non suggerire ai giocatori di usare i Gou — devono pensarci loro. Ma se un gio
 # RIASSUNTO RAPIDO
 
 ```
-TIRO = 2d6 ≤ Attributo
+TIRO = 2d6 ≤ Attributo (range 4-9)
 
-Successo: nessun costo
-Critico (dado = 2): +1 attributo, +1 Ki
-Fallimento: -1 (attributo o Ki)
-Critico fallimento (dado = 12): -2 a scelta
+Dado = 2  (Kiwami 極):   +1 attributo usato E +1 Ki
+Dado = 3  (Nami 波):     +1 a scelta (attributo O Ki)
+Successo (4 — attr):     nessuna conseguenza
+Fallimento (attr+1 — 10): nessuna perdita (solo narrativo)
+Dado = 11 (Nami 波):     -1 a scelta (attributo O Ki)
+Dado = 12 (Kiwami 極):   -1 attributo usato E -1 Ki
+
+LIMITI: Attributo max 9, min 4 | Ki max = valore inizio sessione
+Se attributo a 4, la perdita va al Ki
+Nami/Kiwami: solo prove attributi (no combattimento, En, Gou)
 
 KI (気)
 ≤ 3 = Genkai (fuori gioco temporaneo)
-= 1 = Critico (qualsiasi danno ti elimina)
+= 1 = Critico (qualsiasi danno elimina il PG)
 < 1 = Fuori gioco definitivo
 
-RECUPERO
-Sonno: +1 Ki (o +1 attributo)
-Critico successo: +1 Ki, +1 attributo
+RECUPERO NOTTURNO
+Nessun Kiwami: 1d3 Ki
+Almeno un 2 (Kiwami+): 1d3+1 Ki
+Almeno un 12 (Kiwami-): solo 1 Ki
+Sia 2 che 12: vince il 12 → solo 1 Ki
+(mai oltre il max di inizio sessione)
 
 SATORI (悟り)
 1/sessione, successo automatico, non si accumula
@@ -734,12 +785,14 @@ GOU (業)
 Costo: sacrifichi parte di te stesso
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi
-Niente critici
+Niente Kiwami, niente Nami
 
 EN (縁) - RELAZIONI
 Scala: -5 a +5
-Modificatore al tiro (non ai critici)
+Modificatore al tiro (non ai Kiwami)
 Profonde (±4, ±5): cambiano solo narrativamente
+Kiwami (2): En +1 | Kiwami (12): En -1
+Nami (3, 11): NON si applicano ai tiri di En
 
 COMBATTIMENTO
 Pugno: -1 Ki

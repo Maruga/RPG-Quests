@@ -2,7 +2,7 @@
 
 ## Tabulato completo dell'utenza domestica del giudice
 
-*Questo è il tabulato COMPLETO della linea di casa Ishida. Il file `Lettere_Tabulato_Yui.md` contiene solo un estratto parziale (chiamate in uscita di Sakura verso Shin). Qui c'è tutto.*
+*Questo è il tabulato COMPLETO della linea di casa Ishida. Il file `Tabulato_Telefonico.md` contiene solo un estratto parziale (chiamate in uscita di Sakura verso Shin). Qui c'è tutto.*
 
 ---
 
@@ -241,7 +241,7 @@
 - La frequenza è costante per 8 mesi — relazione consolidata, non una cotta passeggera
 
 ### Differenza con il tabulato parziale
-- Il file `Lettere_Tabulato_Yui.md` contiene un **estratto** di questo tabulato (solo le chiamate in uscita verso Shin, periodo gen-apr 1997)
+- Il file `Tabulato_Telefonico.md` contiene un **estratto** di questo tabulato (solo le chiamate in uscita verso Shin, periodo gen-apr 1997)
 - Questo file è il **tabulato completo**: entrata + uscita, settembre 1996 - aprile 1997
 - I giocatori ottengono prima l'estratto (indagando su Yui), poi il completo (chiedendo "i tabulati della casa del giudice")
 
@@ -252,4 +252,4 @@
 ### Come ottenerlo
 - Mandato al gestore telefonico NTT West per l'utenza 075-541-1122
 - I giocatori devono chiedere specificamente i tabulati della **casa del giudice** (non dell'ufficio)
-- Se chiedono quelli di Kimura, ottengono il tabulato in `Lettere_Tabulato_Yui.md`
+- Se chiedono quelli di Kimura, ottengono il tabulato in `Tabulato_Telefonico.md`
