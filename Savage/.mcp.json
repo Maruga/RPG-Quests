@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "memory": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-memory", "--memory-path", "C:\\Public\\_Clienti\\Maruga\\Giochi\\Vampiri\\Vault\\Vampiri\\Savage\\.claude-memory"]
+    }
+  }
+}

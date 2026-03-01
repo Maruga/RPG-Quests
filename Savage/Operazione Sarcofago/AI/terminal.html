@@ -158,6 +158,11 @@
   .msg-time { font-family:'Share Tech Mono',monospace; font-size:8px; color:var(--text-dim); margin-top:3px; padding-left:2px; }
   .msg.user .msg-time { text-align:right; padding-right:2px; }
 
+  .msg-photo { margin:8px 0 4px 0; }
+  .msg-photo img { max-width:100%; max-height:240px; border-radius:3px; display:block; }
+  .msg.ai .msg-photo img { border:1px solid rgba(42,255,74,0.25); filter:sepia(0.3) hue-rotate(80deg) saturate(0.7) brightness(0.85); }
+  .msg.ai.hacked .msg-photo img { border:1px solid rgba(255,106,42,0.3); filter:sepia(0.4) hue-rotate(-10deg) saturate(1.2) brightness(0.75) contrast(1.2); }
+
   .typing-indicator { display:none; align-self:flex-start; padding:4px 0; }
   .typing-indicator.active { display:block; }
   .typing-dots { display:flex; gap:4px; padding:8px 12px; background:var(--msg-ai-bg); border:1px solid var(--msg-ai-border); border-radius:4px; border-top-left-radius:0; }
@@ -581,7 +586,9 @@ function addUserMsg(text){
 function addAIMsg(text){
   var c=document.getElementById('chatArea'),d=document.createElement('div');
   d.className='msg ai'+(isChatMode?' hacked':'');
-  d.innerHTML='<div class="msg-sender">'+senderName+'</div><div class="msg-bubble">'+escapeHtml(text).replace(/\n/g,'<br>')+'</div><div class="msg-time">'+getTimeString()+'</div>';
+  var html=escapeHtml(text).replace(/\n/g,'<br>');
+  html=html.replace(/\[FOTO:([^\]]+)\]/g,'<div class="msg-photo"><img src="Immagini/$1" onerror="this.parentElement.style.display=\'none\'" alt=""></div>');
+  d.innerHTML='<div class="msg-sender">'+senderName+'</div><div class="msg-bubble">'+html+'</div><div class="msg-time">'+getTimeString()+'</div>';
   c.appendChild(d);c.scrollTop=c.scrollHeight;
 }
 

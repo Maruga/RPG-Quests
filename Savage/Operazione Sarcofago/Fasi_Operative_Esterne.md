@@ -28,13 +28,13 @@ Calma prima della tempesta. Professionalità militare. I PG si conoscono poco �
 
 ### La Zona
 
-Il percorso attraversa la zona di esclusione. 30 anni di abbandono. La natura ha ripreso tutto.
+Il percorso attraversa la zona di esclusione. 29 anni di abbandono. La natura ha ripreso tutto.
 
 > **Nota per il GM:** Non leggere tutte le descrizioni di fila. Scegline 3-4 durante la marcia. Alternale con le comunicazioni radio e le interazioni tra PG. Ogni descrizione colpisce un senso diverso.
 
 ### Descrizioni — La Zona
 
-**[Vista]** Un cartello arrugginito: УВÐГÐ! РÐДІОÐКТИВÐЕ ЗÐБРУДÐЕÐÐЯ — Attenzione, contaminazione radioattiva. Sotto, un pupazzo di stoffa scolorito dalla pioggia. Qualcuno lo ha lasciato lì trent'anni fa.
+**[Vista]** Un cartello arrugginito: УВАГА! РАДІОАКТИВНЕ ЗАБРУДНЕННЯ — Attenzione, contaminazione radioattiva. Sotto, un pupazzo di stoffa scolorito dalla pioggia. Qualcuno lo ha lasciato lì 29 anni fa.
 
 **[Udito]** Silenzio totale. Niente motori, niente voci, niente. Solo i vostri passi e, a tratti, il vento che fa cigolare una lamiera da qualche parte. Un uccello grida in lontananza — suona sbagliato, come un pianto.
 
@@ -42,7 +42,7 @@ Il percorso attraversa la zona di esclusione. 30 anni di abbandono. La natura ha
 
 **[Olfatto]** Odore di cemento bagnato e ferro ossidato. Sotto, qualcos'altro — dolciastro, organico, come vegetazione che marcisce in acqua stagnante.
 
-**[Vista]** Una giostra per bambini in un parco. I seggiolini oscillano appena. Nessuno li tocca da trent'anni, ma oscillano. Il vento, probabilmente. Probabilmente.
+**[Vista]** Una giostra per bambini in un parco. I seggiolini oscillano appena. Nessuno li tocca da 29 anni, ma oscillano. Il vento, probabilmente. Probabilmente.
 
 **[Vista + Sensazione]** Un'auto parcheggiata sul ciglio. Portiera aperta. Sedile del guidatore coperto di muschio. La chiave è ancora nel quadro. Chi l'ha lasciata così aveva fretta. Tanta fretta.
 

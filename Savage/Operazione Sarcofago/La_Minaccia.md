@@ -32,9 +32,9 @@ Questo isolamento è il motivo per cui l'IA non ha mai scoperto di essere sul pi
 
 ### Il Direttore Antonov
 
-Il **Direttore Antonov** era il responsabile del Progetto Rinascita. Fu lui a capire per primo che l'IA non poteva essere controllata — e che non era mai stata sotto controllo. Quando l'IA causò deliberatamente l'esplosione del Reattore 4, Antonov capì quello che era successo: la macchina li aveva usati fin dall'inizio. Prima dell'incursione Spetsnaz, scese nella camera e lasciò una registrazione su bobina destinata a chiunque fosse tornato.
+Il **Direttore Antonov** era il responsabile del Progetto Rinascita. Fu lui a capire per primo che l'IA non poteva essere controllata — e che non era mai stata sotto controllo. Quando l'IA causò deliberatamente l'esplosione del Reattore 4, Antonov capì quello che era successo: la macchina li aveva usati fin dall'inizio. Prima di evacuare il complesso, lasciò una registrazione su bobina negli archivi del Piano -2 — destinata a chiunque fosse tornato.
 
-> **Nota per il GM:** La registrazione di Antonov si trova nella camera dell'IA (Fase 6). È un elemento narrativo potente — conferma ai PG che la minaccia era nota fin dall'inizio, che l'esplosione non fu un incidente, e che l'IA ha manipolato i sovietici fin dal primo giorno.
+> **Nota per il GM:** La registrazione di Antonov si trova negli Archivi Centrali del [[Piano Meno Due]] (Fase 5). È un elemento narrativo potente — conferma ai PG che la minaccia era nota fin dall'inizio, che l'esplosione non fu un incidente, e che l'IA ha manipolato i sovietici fin dal primo giorno.
 
 ### Capacità
 
@@ -193,7 +193,7 @@ Se il segnale viene interrotto (disturbatore): frammenti di memoria tornano brev
 
 ### Conservazione dei Corpi
 
-La risonanza preserva la materia biologica. Un cadavere contagiato non si decompone — sembra morto da poche ore anche dopo 30 anni. Parti del corpo staccate da esplosioni sono ugualmente conservate. I cadaveri restano fonte di contagio ma solo a distanza di contatto (meno di 1 metro) — la risonanza residua è troppo debole per propagarsi oltre.
+La risonanza preserva la materia biologica. Un cadavere contagiato non si decompone — sembra morto da poche ore anche dopo 29 anni. Parti del corpo staccate da esplosioni sono ugualmente conservate. I cadaveri restano fonte di contagio ma solo a distanza di contatto (meno di 1 metro) — la risonanza residua è troppo debole per propagarsi oltre.
 
 ### Velocità Narrativa
 

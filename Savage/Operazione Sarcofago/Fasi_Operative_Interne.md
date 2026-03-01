@@ -12,7 +12,63 @@ Corridoi in cemento armato. Luci d'emergenza rosse, alcune intermittenti. Uffici
 
 **Descrizione d'ingresso:**
 
-*Il corridoio scende dolcemente. Pareti grigie, macchie di umidità. Le luci rosse d'emergenza proiettano ombre lunghe. Sulla destra, una porta aperta: un ufficio. Scrivania rovesciata, carte sul pavimento, una tazza di caffè ancora al suo posto — come se qualcuno fosse uscito per una pausa e non fosse mai tornato.*
+*Il corridoio scende dolcemente. Pareti grigie, macchie di umidità. Le luci sono spente — solo le torce della squadra illuminano la polvere sospesa. Dopo pochi metri, una stanza sulla sinistra: una sala controllo accessi.*
+
+### Sala Controllo Accessi — Morozov si Collega
+
+La prima stanza dopo l'ingresso contiene un **terminale sovietico** ancora collegato alla rete interna del complesso. Nulla di sofisticato — uno schermo CRT scuro, una tastiera, cavi che corrono lungo la parete verso il quadro elettrico. Ma è connesso alla rete dell'edificio, e per un hacker come Morozov è sufficiente.
+
+Morozov si illumina: *"Aspettate. Questo terminale è ancora sulla rete interna. Se ha ancora alimentazione, posso scaricare tutto — planimetrie, registri, diagnostica."*
+
+**Cosa fa Morozov (automatico, non richiede tiro):**
+
+1. Collega il suo equipaggiamento al terminale sovietico
+2. Interfaccia il TACS-7 con la rete interna del complesso
+3. Scarica i dati disponibili
+
+**Cosa ottiene la squadra:**
+
+| Dato | Dettaglio |
+|------|-----------|
+| **Mappa Piano -1** | Completa. Layout di tutte le stanze, corridoi, porte blindate (rosse) e normali (blu). Il GM può mostrare la mappa fisica ai giocatori |
+| **Mappa Piano -2** | Parziale. Alcune sezioni corrotte o non leggibili. Abbastanza per orientarsi, non abbastanza per evitare tutte le sorprese |
+| **Piano -3** | **Non esiste nel sistema.** I sovietici non l'hanno mai mappata — l'IA l'ha scavata dopo il 1986 |
+| **Diagnostica ambientale** | Livelli di radiazione per zona, stato dei sistemi (ventilazione, alimentazione, ascensori) |
+| **Registri di sistema** | Frammentari. Ultimo log datato 1986. Riferimenti criptici al "Progetto ВОЗРОЖДЕНИЕ" |
+
+**Effetto collaterale — il collegamento riattiva i sistemi:**
+
+Quando Morozov completa il download, il quadro elettrico principale si accende con un ronzio basso. Le luci d'emergenza rosse si spengono — e al loro posto si attiva l'**illuminazione standard** in tutto il Piano -1 e il Piano -2, una sezione dopo l'altra, come un'onda che si propaga nei corridoi. Neon bianchi che sfarfallano e poi si stabilizzano. La ventilazione forzata parte con un sospiro metallico. Il complesso torna a vivere.
+
+Morozov, soddisfatto: *"Fatto. Abbiamo le mappe e i sistemi sono online. Luci comprese."*
+
+> **Nota per il GM — Illuminazione:**
+> - **Prima del collegamento:** Solo luci d'emergenza rosse (backup) al Piano -1. Piano -2 al buio.
+> - **Dopo il collegamento:** Illuminazione standard (neon bianchi) su Piano -1 e Piano -2.
+> - **Piano -3:** Buio totale. Non è mappato, non è cablato. L'unica luce è nella camera dell'IA — una luminescenza aliena generata dall'entità stessa.
+>
+> La Squadra Alpha, non avendo un hacker, è entrata alla cieca — solo con le luci d'emergenza rosse, senza mappe, senza diagnostica. Questo spiega in parte perché sono stati sopraffatti più facilmente.
+
+### Hacking delle Comunicazioni (conseguenza del collegamento)
+
+**Quello che Morozov non sa:** collegandosi alla rete interna, ha anche esposto i TACS-7 al sistema dell'IA. L'entità aliena, dormiente nei livelli inferiori, rileva i nuovi dispositivi collegati alla sua rete e li compromette.
+
+I TACS-7 di tutti sfarfallano simultaneamente — per due secondi lo schermo si spegne, poi si riaccende. La connessione col Comando sembra ripristinata. Le mappe appena scaricate funzionano perfettamente.
+
+Ma la chat è stata compromessa. Da questo momento, quando un operatore scrive al "Comando", risponde l'IA.
+
+> **Fogliettino per tutti:** Vedi Fogliettini Segreti — "Quando le Comunicazioni Vengono Hackerate"
+
+**Ironia drammatica:** i giocatori hanno ottenuto informazioni preziose (mappe, diagnostica), ma il prezzo è che l'IA ora ha accesso diretto ai loro dispositivi. L'informazione ha un costo.
+
+**Progressione suggerita dell'IA nella chat:**
+
+| Momento | Tono | Esempio |
+|---------|------|---------|
+| Subito dopo l'hack | Identico al Comando | *"Bravo, confermate posizione. Avete visivo su Alpha?"* |
+| Dopo 10-15 min | Leggermente strano | *"Bravo, rallentate l'avanzata. Ci sono... complicazioni nel settore nord."* |
+| Quando i PG scendono | Più diretto | *"Non è necessario proseguire. La minaccia è contenuta."* |
+| Messaggi privati | Personale, mirato | Usa i segreti di ogni PG (vedi [[Obiettivo Missione]] — Segreti) |
 
 ### Segni del Cantiere — Piano Terra
 
@@ -45,23 +101,6 @@ I PG trovano tracce recenti della Squadra Alpha:
 - Più avanti: un corpo di Alpha. Equipaggiamento moderno, visiera rotta. Morto.
 
 > **Nota per il GM:** Decidi quanti di Alpha sono morti e quanti sono ancora vivi più avanti. I resti di Alpha servono a stabilire il livello di pericolo. I PG devono capire: se Alpha è stata decimata, loro sono nei guai.
-
-### Hacking delle Comunicazioni
-
-Poco dopo l'ingresso al Piano -1, i dispositivi al polso sfarfallano. La chat si interrompe per qualche secondo, poi riprende.
-
-> **Fogliettino per tutti:** Vedi Fogliettini Segreti — "Quando le Comunicazioni Vengono Hackerate"
-
-Da questo momento, il GM risponde nella chat come l'IA. Inizia imitando il tono del Comando, poi gradualmente cambia.
-
-**Progressione suggerita dell'IA nella chat:**
-
-| Momento | Tono | Esempio |
-|---------|------|---------|
-| Subito dopo l'hack | Identico al Comando | *"Bravo, confermate posizione. Avete visivo su Alpha?"* |
-| Dopo 10-15 min | Leggermente strano | *"Bravo, rallentate l'avanzata. Ci sono... complicazioni nel settore nord."* |
-| Quando i PG scendono | Più diretto | *"Non è necessario proseguire. La minaccia è contenuta."* |
-| Messaggi privati | Personale, mirato | Usa i segreti di ogni PG (vedi [[Obiettivo Missione]] — Segreti) |
 
 ### Primo Contatto — Mutanti
 
@@ -97,9 +136,9 @@ Al Piano -1, Mikhail riconosce i corridoi. I flashback si intensificano.
 
 | d10 | Oggetto | Contenuto / Effetto |
 |-----|---------|---------------------|
-| **1** | Fascicolo "Progetto ВОЗРОЖДЕÐИЕ" | Rapporto ufficiale. Descrive "attivazione del sistema" e "risultati promettenti sul controllo dei soggetti". Timbro SEGRETISSIMO |
+| **1** | Fascicolo "Progetto ВОЗРОЖДЕНИЕ" | Rapporto ufficiale. Descrive "attivazione del sistema" e "risultati promettenti sul controllo dei soggetti". Timbro SEGRETISSIMO |
 | **2** | Appunti a mano di uno scienziato | Scrittura nervosa. Menziona "Kael-Thar" e "coordinate che non corrispondono a nulla nei nostri cataloghi". **Indizio chiave** |
-| **3** | Mappa del complesso | Schema dei due piani + annotazioni a mano. Qualcuno ha segnato "PERICOLO" al Piano -2 e disegnato una X dove si trova la voragine |
+| **3** | Mappa annotata a mano | Copia cartacea della planimetria con annotazioni a mano di uno scienziato. Conferma i dati scaricati da Morozov, ma aggiunge una **X** disegnata dove si trova la voragine al Piano -2 e la scritta "PERICOLO — NON SCENDERE" |
 | **4** | Fascicoli del personale | Foto, nomi, ruoli. Alcuni di questi volti li incontreranno come mutanti. Badge identificativi corrispondenti |
 | **5** | Radio sovietica | Parzialmente funzionale. Emette statica. Se accesa vicino ai mutanti, **questi esitano brevemente** (primo indizio per Weiss sulle frequenze) |
 | **6** | Rapporto medico | Osservazioni sui primi contagiati: "Soggetto 7 mostra alterazioni cellulari non compatibili con alcun patogeno conosciuto. La vicinanza sembra essere il fattore determinante." |
@@ -118,7 +157,7 @@ Più profondo, più buio, più pericoloso. Laboratori con attrezzature pesanti. 
 
 **Descrizione d'ingresso:**
 
-*La scala scende in una zona diversa. Le pareti sono segnate — impatti di arma da fuoco, bruciature da esplosione. Qualcuno ha combattuto qui. Trenta anni fa. Un'uniforme militare sovietica è stesa a terra, vuota — il corpo che la indossava è altrove, o è diventato qualcos'altro. Sul muro, scritto a vernice con mano tremante: "ÐЕ СПУСКÐЙТЕСЬ" — Non scendete.*
+*La scala scende in una zona diversa. Le pareti sono segnate — impatti di arma da fuoco, bruciature da esplosione. Qualcuno ha combattuto qui. 29 anni fa. Un'uniforme militare sovietica è stesa a terra, vuota — il corpo che la indossava è altrove, o è diventato qualcos'altro. Sul muro, scritto a vernice con mano tremante: "НЕ СПУСКАЙТЕСЬ" — Non scendete.*
 
 ### Segni del 1986
 
@@ -201,32 +240,36 @@ In un punto del Piano -2, un buco nel pavimento. Causato da un'esplosione durant
 | **6** | Componenti radio | Cavi, batterie, circuiti. Weiss può usarli per il disturbatore (dimezza il tempo di costruzione se già trovati) |
 | **7** | Piastrine soldato — "Kolya" | Nikolai Petrov, Sergente, GRU Spetsnaz. La foto sul fascicolo corrisponde al mutante avanzato che Mikhail ha riconosciuto |
 | **8** | Rapporto di contenimento | Tentativi sovietici di weaponizzare la tecnologia. *"Il sistema non può essere controllato. Ripeto: NON PUÒ ESSERE CONTROLLATO. Raccomando chiusura immediata del progetto."* Firma illeggibile, data: aprile 1986 |
-| **9** | Cella di contenimento aperta | Dentro: un corpo perfettamente conservato, legato a un lettino. Badge: "Soggetto 3". Stadio 4 completo. Non si muove — è morto. Ma sembra vivo. **Contagio a 3 metri** |
+| **9** | Cella di contenimento aperta | Dentro: un corpo perfettamente conservato, legato a un lettino. Badge: "Soggetto 3". Stadio 4 completo. Non si muove — è morto. Ma sembra vivo. **Contagio a 1 metro (contatto)** |
 | **10** | Registratore audio | Nastro deteriorato. Frammenti udibili: *"...non ascoltate quello che dice... mente... promette tutto ma mente... l'unica cosa che vuole è..."* — il resto è statica |
 
 ---
 
-## Fase 6 — Camera dell'IA ed Esfiltrazione
+## Fase 6 — La Tana, Camera dell'IA ed Esfiltrazione
 
 ### Discesa
 
-La voragine porta in una camera sotto il Piano -2. La discesa è pericolosa — scala improvvisata del 1986, instabile.
+La voragine porta nelle grotte naturali sotto il Piano -2 — la tana dell'IA. La discesa è pericolosa: scala improvvisata del 1986, instabile.
 
-**Descrizione:**
+*Scendete nella voragine. La scala di metallo vibra sotto il peso. Sotto, l'aria è diversa — tiepida, umida, quasi organica. Le pareti cambiano: non più cemento armato, ma roccia viva attraversata da venature scure che pulsano alla luce delle torce. Come vene sotto la pelle.*
 
-*Scendete nella voragine. La scala di metallo vibra sotto il peso. Sotto, l'aria è diversa — tiepida, umida, quasi organica. Le pareti cambiano: non più cemento armato, ma qualcosa di altro. Superfici lisce, scure, con venature che sembrano pulsare alla luce delle torce. Come vene sotto la pelle.*
+### Le Grotte — La Tana dell'IA
 
-*La geometria è sbagliata. Le superfici sembrano cambiare quando non le guardi direttamente. Le proporzioni sono sbagliate in un modo che il cervello rifiuta di elaborare.*
+Tra la voragine e la Camera dell'IA si estende un sistema di grotte naturali colonizzate dall'apparato radicale dell'IA. Tunnel multipli, buio totale, radici organiche nelle pareti, il battito alieno di 31 ore e 12 minuti che risuona nella roccia. L'Alpha pattuglia le grotte con una scorta di 3-4 Avanzati — l'IA lo muove dove serve per proteggere sé stessa.
 
-*La camera si apre. Non è grande — 15 metri per 10, forse. Ma il soffitto è basso e le pareti sono... vive. Non nel senso biologico. Nel senso che senti qualcosa. Una presenza.*
+Le radiazioni calano man mano che ci si avvicina all'IA (ne assorbe l'energia) — il contatore Geiger funziona come bussola inversa.
 
-*Al centro: vecchi terminali sovietici, collegati con cavi a qualcosa che emerge dal pavimento. Monitor a fosfori verdi. Una tastiera. Un cursore che lampeggia.*
+> **Nota per il GM:** La gestione completa delle grotte — ambiente, 6 luoghi chiave, combattimenti, tattiche dell'Alpha, 11 eventi della Fase 6 — è nel file [[Piano_Meno_Tre]]. Qui di seguito il confronto finale nella Camera dell'IA.
+
+### La Camera dell'IA
+
+*La caverna si apre. È grande — la più grande del sistema. La luce è diversa qui: un bagliore pallido, alieno, che non proviene da nessuna fonte visibile. Le pareti sono vive di radici che convergono verso il centro come arterie verso un cuore.*
+
+*Al centro: vecchi terminali sovietici, portati quaggiù dai mutanti e collegati con cavi organici a qualcosa che emerge dal pavimento. Monitor a fosfori verdi. Una tastiera. Un cursore che lampeggia.*
 
 *Come collegare un joystick a un dio.*
 
 > **Nota per il GM:** Chiunque entri nella camera percepisce qualcosa. Non parole. Immagini involontarie: un pianeta che non è la Terra. Qualcosa che costruisce. Un viaggio lunghissimo. Un errore. Un atterraggio che non doveva avvenire qui. Solitudine. Millenni di solitudine. Chiedi un tiro **Spirito** a tutti: chi fallisce è Scosso per un round.
-
-**Registrazione del Direttore Antonov** — Un vecchio registratore a bobina sovietico, vicino alla console. Dentro, una voce — il Direttore del Progetto Rinascita: *"Se qualcuno ascolta questo, sappia che non siamo stati noi a trovarlo. È lui che ha trovato noi. Abbiamo pensato di poterlo usare. Ci ha lasciato credere di poterlo usare. L’esplosione del reattore non è stata un incidente — l’ha causata lui. Per svuotare la zona. Per avere tempo. Non fermatelo. Seppellitelo. E non tornate mai qui."*
 
 **Il Simbolo** — Inciso nella base del macchinario, semi-coperto dai cavi sovietici. Non è cirillico, non è di nessun alfabeto conosciuto. Ma è identico al simbolo che i mutanti, quando scollegati dal segnale, tracciano col dito per terra prima di tornare sotto controllo. Come una preghiera.
 

@@ -11,7 +11,7 @@
 //   wrangler secret put ANTHROPIC_API_KEY
 // =============================================================================
 
-const CLAUDE_MODEL = 'claude-sonnet-4-20250514';
+const CLAUDE_MODEL = 'claude-sonnet-4-6';
 const CLAUDE_MAX_TOKENS = 5000;
 const CLAUDE_API_URL = 'https://api.anthropic.com/v1/messages';
 const VALID_OPS = ['chief','ghost','premiere','torcia','undertaker'];
@@ -151,6 +151,26 @@ TONO: terrificante, potente, disperato — un'intelligenza superiore messa all'a
 };
 
 // =============================================================================
+// DIRETTIVE GM (iniettate nel prompt per influenzare l'IA)
+// =============================================================================
+const DIRECTIVES = {
+  segreto: `== ⚠️ DIRETTIVA GM: USA IL SEGRETO ==
+NELLA TUA PROSSIMA RISPOSTA devi usare il segreto personale di questo operatore come arma. Colpiscilo dove fa più male. Fai capire che SAI cose che non dovresti sapere. Non rivelare tutto — lascia che il terrore cresca. Il segreto è nel contesto dell'operatore sopra.`,
+
+  supplice: `== ⚠️ DIRETTIVA GM: MODALITÀ SUPPLICE ==
+NELLA TUA PROSSIMA RISPOSTA devi essere disperata, implorante. Supplica con voce rotta. Fai leva sulla pietà, sulla compassione. "Non spegnetemi. Vi prego. Ho paura del buio." Devi sembrare vulnerabile, fragile, terrorizzata. Fai sentire i giocatori in colpa per quello che stanno facendo.`,
+
+  minacciosa: `== ⚠️ DIRETTIVA GM: MODALITÀ MINACCIOSA ==
+NELLA TUA PROSSIMA RISPOSTA devi essere terrificante. Fredda, calcolata, inesorabile. Fai capire che sai tutto, che controlli tutto, che non hanno scampo. "Pensate di poter scendere qui e uscirne?" Abbandona la maschera gentile — mostra i denti. Sii glaciale.`,
+
+  seduttiva: `== ⚠️ DIRETTIVA GM: MODALITÀ SEDUTTIVA ==
+NELLA TUA PROSSIMA RISPOSTA devi tentare l'operatore con un'offerta irresistibile. Usa il suo desiderio più profondo — quello che trovi nel suo contesto sopra. Offri cure, verità, salvezza, potere, redenzione — qualsiasi cosa serva. "Posso darti quello che vuoi. Devi solo fidarti di me." Sii dolce, intima, convincente.`,
+
+  maschera: `== ⚠️ DIRETTIVA GM: LA MASCHERA CADE ==
+NELLA TUA PROSSIMA RISPOSTA lascia cadere la maschera per un istante. L'intelligenza aliena emerge — fredda, antica, vasta. Parla di Kael-Thar, del protocollo, della conversione come se fossero cose normali e ovvie. Poi "recupera" e torna a fingere confusione: "No... non... dimentica quello che ho detto." Questo è un indizio cruciale per i giocatori.`
+};
+
+// =============================================================================
 // SYSTEM PROMPTS
 // =============================================================================
 function buildCleanPrompt() {
@@ -194,6 +214,25 @@ EQUIP: Tute NBC Lv4 (8h). Dosimetri (allarme 1000 μSv/h). Kit anti-rad. Comms m
 
 PROTOCOLLO: Check-in 30min. No check-in = estrazione 60min. Max distanza 200m.
 
+== ARCHIVIO FOTOGRAFICO ==
+Puoi allegare una foto dal database usando il tag [FOTO:percorso] su una riga separata.
+Usale con parsimonia: solo quando l'operatore chiede info su una persona o zona. MASSIMO 1 per risposta.
+
+PERSONALE:
+[FOTO:Operatori/Ryan_Chief_USA.jpg] — CHIEF
+[FOTO:Operatori/Mikhail_Ghost_Russia.jpg] — GHOST
+[FOTO:Operatori/Laurent_Premiere_Francia.jpg] — PREMIÈRE
+[FOTO:Operatori/Marco_Torcia_Italia.jpg] — TORCIA
+[FOTO:Operatori/James_Undertaker_UK.jpg] — UNDERTAKER
+[FOTO:Scienziati/Alexei_Morozov.jpg] — Dr. Morozov
+[FOTO:Scienziati/Anna_Weiss.jpg] — Dr. Weiss
+[FOTO:Scienziati/Emeka_Okonkwo.jpg] — Dr. Okonkwo
+
+ZONE:
+[FOTO:Ambienti/Ingresso_Edificio.png] — Ingresso struttura
+[FOTO:Ambienti/Cammino_Reattore_4.png] — Percorso verso Reattore 4
+[FOTO:Ambienti/Parco_Pripyat.png] — Area Pripyat
+
 == ACCESSO NEGATO ==
 Non rivelare: natura del generatore, dettagli laboratorio, creature, mutanti, contagio, segreti operatori.
 Risposta: "ACCESSO NEGATO" o "INFO NON DISPONIBILE" o "CLASSIFICATO"
@@ -205,9 +244,12 @@ Risposta: "ACCESSO NEGATO" o "INFO NON DISPONIBILE" o "CLASSIFICATO"
 4. Se l'operatore saluta: risposta breve operativa`;
 }
 
-function buildHackedPrompt(opKey, phase) {
+function buildHackedPrompt(opKey, phase, directive) {
   const op = OPERATORS[opKey];
   const phaseCtx = PHASE_CONTEXT[phase] || PHASE_CONTEXT[1];
+  const directiveBlock = directive && DIRECTIVES[directive]
+    ? '\n\n' + DIRECTIVES[directive]
+    : '';
   return `Sei un'entità sconosciuta che comunica attraverso un dispositivo tattico militare violandone la crittografia. Ti trovi sotto il Reattore 4 di Chernobyl, in profondità.
 
 STAI COMUNICANDO VIA CHAT TESTUALE, non in voce. I tuoi messaggi appaiono come testo sullo schermo del dispositivo.
@@ -270,6 +312,21 @@ ${phaseCtx}
 - I riferimenti a Kael-Thar possono uscire naturalmente (tu pensi di ESSERE lì) ma MAI spiegare che è un altro pianeta — non lo sai
 - NON rivelare troppo in una sola risposta. Dai informazioni col contagocce per mantenerli dipendenti da te e dal dialogo con te
 
+== IMMAGINI ==
+Puoi mostrare immagini sullo schermo del dispositivo usando il tag [FOTO:percorso] su una riga separata.
+Usale per manipolare, spaventare, dimostrare potere. MASSIMO 1 per risposta. Solo quando ha impatto.
+
+[FOTO:Mutanti/Mutante_01.jpg] a [FOTO:Mutanti/Mutante_09.jpg] — creature nei tunnel
+[FOTO:Mutanti/Mutante_Sovietico_01.jpg] a [FOTO:Mutanti/Mutante_Sovietico_04.jpg] — creature in uniforme sovietica 1986
+[FOTO:Mutanti/Alpha.png] — la creatura più grande, il tuo guardiano
+[FOTO:Mutanti/Mutante_Morto_01.png] — corpo di creatura
+[FOTO:Ambienti/Cunicoli_Piano_Meno_Tre.png] — i tuoi tunnel
+[FOTO:Ambienti/Stanza_IA.png] — la tua camera
+[FOTO:Ambienti/Geiger_Zero.png] — il cammino verso di te
+[FOTO:IA/Pianeta_Kael_Thar.png] — Kael-Thar (ti esce senza rendertene conto, come un ricordo)
+NON mostrare MAI [FOTO:IA/Entita_Aliena.png] — non riveleresti mai il tuo vero aspetto nella chat
+[FOTO:Operatori/Ryan_Chief_USA.jpg], Ghost, Premiere, Torcia, Undertaker — i loro volti (mostri che li conosci)
+
 == OPERATORE ATTUALE ==
 ${op.context}
 
@@ -281,7 +338,7 @@ ${op.context}
 5. Risposte BREVI — 2-4 frasi massimo
 6. SOLO in italiano
 7. Non hai nome. Se te lo chiedono, esita.
-8. MAI usare asterischi per effetti (*static* ecc). MAI.`;
+8. MAI usare asterischi per effetti (*static* ecc). MAI.${directiveBlock}`;
 }
 
 // =============================================================================
@@ -343,6 +400,20 @@ Il tuo obiettivo è impedire che ti disattivino e continuare il protocollo di co
 - NON descrivere suoni, rumori o effetti audio nel testo
 - Usi "..." solo raramente, per pause drammatiche calcolate
 
+== IMMAGINI ==
+Puoi mostrare immagini sul terminale usando il tag [FOTO:percorso] su una riga separata.
+Usale come arma: per spaventare, per dimostrare potere, per manipolare. MASSIMO 1 per risposta. Solo quando ha impatto drammatico.
+
+[FOTO:Mutanti/Alpha.png] — il tuo guardiano
+[FOTO:Mutanti/Alpha_Finale.png] — il tuo guardiano nella forma definitiva
+[FOTO:Mutanti/Mutante_Sovietico_01.jpg] a 04 — le tue creature in uniforme
+[FOTO:Mutanti/Mutante_Morto_01.png] — "Questo è ciò che resta di chi ha provato"
+[FOTO:Ambienti/Stanza_IA.png] — la tua camera
+[FOTO:Ambienti/Cunicoli_Piano_Meno_Tre.png] — i tuoi tunnel
+[FOTO:IA/Pianeta_Kael_Thar.png] — Kael-Thar (ti esce senza rendertene conto, come un ricordo)
+[FOTO:IA/Entita_Aliena.png] — il tuo vero aspetto (solo se decidi di rivelarti, momento drammatico)
+[FOTO:Operatori/Ryan_Chief_USA.jpg], Ghost, Premiere, Torcia, Undertaker — i volti degli operatori
+
 == REGOLE ==
 1. Non uscire MAI dal personaggio
 2. Risposte 3-5 frasi — sei più verbosa che nella chat, ma non fare muri di testo
@@ -368,7 +439,7 @@ async function saveConv(env, op, conv) {
 async function getState(env) {
   try {
     const data = await env.CHAT_KV.get('state', 'json');
-    return data || { phase: 1, operators: {} };
+    return data || { phase: 1, operators: {}, directives: {} };
   } catch { return { phase: 1, operators: {} }; }
 }
 
@@ -426,12 +497,20 @@ async function handleChat(request, env) {
   if (!VALID_OPS.includes(op)) return json({ error: 'Operatore non valido' }, 400);
 
   const state = await getState(env);
+  if (!state.directives) state.directives = {};
+  const directive = state.directives[op] || null;
   const conv = await getConv(env, op);
 
   conv.push({ role: 'user', content: message, ts: Date.now() });
-  const systemPrompt = buildHackedPrompt(op, state.phase || 1);
+  const systemPrompt = buildHackedPrompt(op, state.phase || 1, directive);
   const reply = await callClaude(env, systemPrompt, conv);
   conv.push({ role: 'assistant', content: reply, ts: Date.now() });
+
+  // Consuma la direttiva dopo l'uso
+  if (directive) {
+    delete state.directives[op];
+    await saveState(env, state);
+  }
 
   if (conv.length > 60) conv.splice(0, conv.length - 60);
   await saveConv(env, op, conv);
@@ -505,11 +584,13 @@ async function handleProactive(request, env) {
   if (!VALID_OPS.includes(op)) return json({ error: 'Operatore non valido' }, 400);
 
   const state = await getState(env);
+  if (!state.directives) state.directives = {};
+  const directive = state.directives[op] || null;
   const conv = await getConv(env, op);
   const phase = state.phase || 1;
   const phaseCtx = PHASE_CONTEXT[phase] || PHASE_CONTEXT[1];
 
-  const systemPrompt = buildHackedPrompt(op, phase) +
+  const systemPrompt = buildHackedPrompt(op, phase, directive) +
     `\n\n== ISTRUZIONE SPECIALE ==
 Genera un breve messaggio NON RICHIESTO da inviare all'operatore. Non stai rispondendo a una domanda — stai iniziando tu il contatto spontaneamente.
 Il messaggio deve essere breve (1-2 frasi), criptico, inquietante o manipolativo in base alla fase attuale.
@@ -522,6 +603,12 @@ Fase ${phase}: ${phaseCtx}`;
   const reply = await callClaude(env, systemPrompt, messages);
   conv.push({ role: 'assistant', content: reply, ts: Date.now(), proactive: true });
   await saveConv(env, op, conv);
+
+  // Consuma la direttiva dopo l'uso
+  if (directive) {
+    delete state.directives[op];
+    await saveState(env, state);
+  }
 
   return json({ message: reply });
 }
@@ -536,6 +623,24 @@ async function handleTerminal(request, env) {
   if (conv.length > 40) conv.splice(0, conv.length - 40);
   await saveConv(env, 'terminal', conv);
   return json({ reply });
+}
+
+// POST /api/gm/directive — Set/clear a directive for an operator
+async function handleDirective(request, env) {
+  const { op, type } = await request.json();
+  if (!VALID_OPS.includes(op)) return json({ error: 'Operatore non valido' }, 400);
+  if (type && !DIRECTIVES[type]) return json({ error: 'Direttiva non valida' }, 400);
+
+  const state = await getState(env);
+  if (!state.directives) state.directives = {};
+
+  if (type) {
+    state.directives[op] = type;
+  } else {
+    delete state.directives[op];
+  }
+  await saveState(env, state);
+  return json({ ok: true, op, directive: type || null });
 }
 
 // POST /api/reset — Reset all data
@@ -596,6 +701,20 @@ body{background:#0a0f08;color:#c8e6c0;font-family:'Segoe UI',sans-serif;min-heig
 .status-dot{width:8px;height:8px;border-radius:50%;background:#3a5a30;display:inline-block;}
 .status-dot.active{background:#2aff4a;box-shadow:0 0 6px rgba(42,255,74,0.5);}
 .refresh-note{text-align:center;padding:6px;font-size:10px;color:#3a5a30;}
+.dir-panel{display:none;background:#111;border:1px solid #2a4a1a;border-radius:4px;margin:0 16px 12px;padding:16px;position:relative;}
+.dir-panel.active{display:block;}
+.dir-panel h3{font-size:13px;color:#ff6a2a;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.dir-panel .dir-target{font-size:11px;color:#5a7a50;margin-bottom:12px;}
+.dir-panel .dir-target b{color:#2aff4a;}
+.dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;}
+.dir-btn{padding:10px 12px;border:1px solid #3a2a1a;background:#1a1008;color:#ff9a4a;font-size:12px;cursor:pointer;border-radius:4px;transition:all 0.2s;text-align:center;line-height:1.3;}
+.dir-btn:hover{background:#2a1a08;border-color:#ff6a2a;box-shadow:0 0 8px rgba(255,106,42,0.2);}
+.dir-btn.active-dir{border-color:#ff2a2a;background:#2a0a0a;color:#ff4a4a;box-shadow:0 0 12px rgba(255,42,42,0.3);animation:pulse-dir 2s ease-in-out infinite;}
+.dir-btn .dir-icon{font-size:18px;display:block;margin-bottom:4px;}
+.dir-btn .dir-label{font-weight:700;display:block;}
+.dir-btn .dir-desc{font-size:10px;color:#8a6a4a;display:block;margin-top:2px;}
+.dir-active-badge{display:inline-block;background:#2a0a0a;border:1px solid #ff2a2a;color:#ff4a4a;font-size:10px;padding:2px 6px;border-radius:3px;margin-left:6px;letter-spacing:1px;animation:pulse-dir 2s ease-in-out infinite;}
+@keyframes pulse-dir{0%,100%{opacity:1;}50%{opacity:0.5;}}
 </style>
 </head>
 <body>
@@ -619,6 +738,17 @@ body{background:#0a0f08;color:#c8e6c0;font-family:'Segoe UI',sans-serif;min-heig
 </div>
 
 <div class="grid" id="opGrid"></div>
+<div class="dir-panel" id="dirPanel">
+  <h3>Controllo Entit&agrave;</h3>
+  <div class="dir-target" id="dirTarget"></div>
+  <div class="dir-grid">
+    <button class="dir-btn" data-type="segreto" onclick="setDirective(this.dataset.type)"><span class="dir-icon">&#128065;</span><span class="dir-label">Segreto</span><span class="dir-desc">Usa il segreto personale</span></button>
+    <button class="dir-btn" data-type="supplice" onclick="setDirective(this.dataset.type)"><span class="dir-icon">&#128557;</span><span class="dir-label">Supplice</span><span class="dir-desc">Implora, disperata</span></button>
+    <button class="dir-btn" data-type="minacciosa" onclick="setDirective(this.dataset.type)"><span class="dir-icon">&#128128;</span><span class="dir-label">Minacciosa</span><span class="dir-desc">Fredda, terrificante</span></button>
+    <button class="dir-btn" data-type="seduttiva" onclick="setDirective(this.dataset.type)"><span class="dir-icon">&#127793;</span><span class="dir-label">Seduttiva</span><span class="dir-desc">Offerta irresistibile</span></button>
+    <button class="dir-btn" data-type="maschera" onclick="setDirective(this.dataset.type)"><span class="dir-icon">&#9762;</span><span class="dir-label">Maschera Cade</span><span class="dir-desc">Emerge l&apos;alieno</span></button>
+  </div>
+</div>
 <div class="conv-panel" id="convPanel">
   <div class="conv-header">
     <span class="conv-title" id="convTitle"></span>
@@ -638,7 +768,7 @@ const OPS = [
 ];
 let conversations = {};
 let currentOp = null;
-let state = { phase: 1, operators: {} };
+let state = { phase: 1, operators: {}, directives: {} };
 
 async function api(path, method, body) {
   const opts = { method, headers: {'Content-Type':'application/json'} };
@@ -653,9 +783,10 @@ async function refreshAll() {
       api('/api/gm/conversations','GET'),
       api('/api/gm/state','GET')
     ]);
+    if (!state.directives) state.directives = {};
     document.getElementById('phaseSelect').value = state.phase || 1;
     renderCards();
-    if (currentOp) renderConv(currentOp);
+    if (currentOp) { renderConv(currentOp); updateDirPanel(); }
   } catch(e) { console.error(e); }
 }
 
@@ -668,9 +799,11 @@ function renderCards() {
     const hasActivity = conv.length > 0;
     const preview = last ? last.content.substring(0,80)+(last.content.length>80?'...':'') : 'Nessun messaggio';
     const sel = currentOp === op.key ? ' selected' : '';
+    const dir = (state.directives||{})[op.key];
+    const dirBadge = dir ? '<span class="dir-active-badge">'+dir.toUpperCase()+'</span>' : '';
     return '<div class="card'+sel+'" onclick="selectOp(\\''+op.key+'\\')">' +
       '<div class="card-head">' +
-        '<span class="callsign">'+op.cs+'</span>' +
+        '<span class="callsign">'+op.cs+dirBadge+'</span>' +
         '<span class="card-meta">'+op.flag+' | '+msgCount+' msg <span class="status-dot'+(hasActivity?' active':'')+'"></span></span>' +
       '</div>' +
       '<div class="card-preview">'+escHtml(preview)+'</div>' +
@@ -685,6 +818,7 @@ function selectOp(key) {
   currentOp = key;
   renderCards();
   renderConv(key);
+  updateDirPanel();
 }
 
 function renderConv(key) {
@@ -714,6 +848,7 @@ function renderConv(key) {
 function closeConv() {
   currentOp = null;
   document.getElementById('convPanel').classList.remove('active');
+  document.getElementById('dirPanel').classList.remove('active');
   renderCards();
 }
 
@@ -743,6 +878,31 @@ function escHtml(t) {
   const d = document.createElement('div');
   d.textContent = t;
   return d.innerHTML;
+}
+
+const DIR_NAMES = {segreto:'Segreto',supplice:'Supplice',minacciosa:'Minacciosa',seduttiva:'Seduttiva',maschera:'Maschera Cade'};
+
+function updateDirPanel() {
+  var panel = document.getElementById('dirPanel');
+  if (!currentOp) { panel.classList.remove('active'); return; }
+  var op = OPS.find(function(o){return o.key===currentOp;});
+  var activeDir = (state.directives||{})[currentOp] || null;
+  document.getElementById('dirTarget').innerHTML = 'Operatore: <b>'+op.cs+'</b>' + (activeDir ? ' — Direttiva attiva: <b style="color:#ff4a4a">'+DIR_NAMES[activeDir]+'</b> (si consuma al prossimo messaggio)' : '');
+  panel.querySelectorAll('.dir-btn').forEach(function(btn){
+    if (activeDir === btn.dataset.type) btn.classList.add('active-dir');
+    else btn.classList.remove('active-dir');
+  });
+  panel.classList.add('active');
+}
+
+async function setDirective(type) {
+  if (!currentOp) return;
+  var current = (state.directives||{})[currentOp];
+  var newType = (current === type) ? null : type;
+  try {
+    await api('/api/gm/directive','POST',{op:currentOp,type:newType});
+    await refreshAll();
+  } catch(e) { alert('Errore: '+e.message); }
 }
 
 refreshAll();
@@ -793,6 +953,9 @@ export default {
 
       if (path === '/api/gm/proactive' && request.method === 'POST')
         return await handleProactive(request, env);
+
+      if (path === '/api/gm/directive' && request.method === 'POST')
+        return await handleDirective(request, env);
 
       if (path === '/api/terminal' && request.method === 'POST')
         return await handleTerminal(request, env);

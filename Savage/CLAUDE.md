@@ -11,6 +11,8 @@ All narrative content is in Italian.
 ## Architecture
 
 ```
+Regole.md                      # SWADE rules reference
+Manovre di Combatimento.md     # Combat maneuvers reference
 Operazione Sarcofago/
 ├── AI/                        # Live game tech (Cloudflare Worker + web interfaces)
 │   ├── worker.js              # Backend: API proxy, KV storage, GM dashboard, AI prompts
@@ -22,13 +24,15 @@ Operazione Sarcofago/
 │   ├── icon-rad.png           # Radiation icon
 │   └── img/                   # [PLANNED] Image folder for TACS-7 database photos
 ├── Immagini/                  # Portraits, mutants, assets (source images)
-├── PG-PNG/                    # Character sheets (5 operators + 3 scientists)
+├── PG-PNG/                    # 5 operators + Scienziati.md + 2 token files
 ├── Meccaniche/                # Game rules (Contagio, Frequenze, Mutanti)
 ├── La_Minaccia.md             # AI entity lore, contagion, node network, mutants
 ├── Fasi_Operative_Esterne.md  # External mission phases + exfiltration scenarios
 ├── Fasi_Operative_Interne.md  # Internal mission phases (6 phases) + encounters
 ├── Fogliettini_Segreti.md     # Secret handouts per operator per phase
+├── Squadre_Operative.md       # Team composition, roles, loadouts
 ├── Background.md              # 1986 backstory and current situation
+├── Copertina.md               # Cover/title page
 └── Obiettivo_Missione.md      # Mission briefing and objectives
 ```
 
@@ -60,7 +64,7 @@ Operazione Sarcofago/
 - **Worker URL**: `https://fragrant-snow-2391.webmaster-96a.workers.dev`
 - **KV Namespace**: `CHAT_KV` (binding name) / `sarcofago-chat` (namespace name)
 - **Secret**: `ANTHROPIC_API_KEY` via `wrangler secret put`
-- **Model**: `claude-sonnet-4-20250514` | **Max tokens**: 5000
+- **Model**: `claude-sonnet-4-6` | **Max tokens**: 5000
 - **CORS**: `*` (allows `file://` local access)
 
 ### Worker Endpoints
@@ -76,20 +80,34 @@ Operazione Sarcofago/
 | POST/GET | `/api/gm/state` | Set/get phase (1-6) and operator state |
 | GET | `/api/gm/conversations` | All conversations for dashboard |
 | POST | `/api/gm/proactive` | Trigger proactive AI message |
+| POST | `/api/gm/directive` | Set/clear directive for operator (segreto/supplice/minacciosa/seduttiva/maschera) |
 | POST | `/api/reset` | Clear all conversations (including terminal) |
 
 ### Operator Keys
 `chief`, `ghost`, `premiere`, `torcia`, `undertaker`
 
 ### KV Storage Keys
-- `conv:chief`, `conv:ghost`, `conv:premiere`, `conv:torcia`, `conv:undertaker` — operator conversations
-- `conv:terminal` — Soviet terminal conversation (monitor.html)
-- `state` — GM state (phase number, operator states)
+- `conv:chief`, `conv:ghost`, `conv:premiere`, `conv:torcia`, `conv:undertaker` — operator conversations (max 60 messages)
+- `conv:terminal` — Soviet terminal conversation (monitor.html, max 40 messages)
+- `state` — GM state (phase number, operator states, active directives)
 
 ### Three System Prompts in worker.js
 1. **`buildCleanPrompt()`** — TACS-7 military terminal. Brief, formal, military abbreviations
-2. **`buildHackedPrompt(op, phase)`** — Hacked chat per operator. Phase-dependent behavior with COMPORTAMENTO OBBLIGATORIO per phase. Operator-specific context
+2. **`buildHackedPrompt(op, phase, directive)`** — Hacked chat per operator. Phase-dependent behavior with COMPORTAMENTO OBBLIGATORIO per phase. Operator-specific context. Optional GM directive injected at end
 3. **`buildTerminalPrompt()`** — Soviet terminal endgame. AI is direct, uses ALL PG secrets, can be threatened/negotiated with
+
+### GM Directive System
+GM can set one directive per operator from the dashboard. The directive is injected into the system prompt and **consumed after one use** (either player-initiated chat or GM proactive message).
+
+| Directive | Effect |
+|-----------|--------|
+| **Segreto** | AI weaponizes the operator's personal secret |
+| **Supplice** | AI becomes desperate, begging, guilt-inducing |
+| **Minacciosa** | AI becomes cold, threatening, terrifying |
+| **Seduttiva** | AI tempts with irresistible offers using operator's deepest desire |
+| **Maschera Cade** | Alien intelligence briefly emerges — Kael-Thar references slip out |
+
+Click the same directive again to cancel it. Active directives show as pulsing badges on operator cards.
 
 ## AI Entity Behavior (Critical Lore)
 

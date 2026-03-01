@@ -55,7 +55,7 @@ Quando l'alterazione raggiunge uno stadio sufficiente (**Stadio 2+**), la person
 Questo spiega:
 - **Contagio a catena** — ogni persona alterata dallo Stadio 2 in poi diventa un nuovo trasmettitore
 - **Nessuna protezione biologica funziona** — non è un patogeno, è un segnale
-- **I corpi non si decompongono** — la risonanza preserva la materia biologica in uno stato alterato, anche dopo la morte. Un cadavere contagiato sembra morto da poche ore anche dopo 30 anni. I cadaveri restano fonte di contagio ma solo a distanza di contatto — la risonanza residua è troppo debole per propagarsi a distanza
+- **I corpi non si decompongono** — la risonanza preserva la materia biologica in uno stato alterato, anche dopo la morte. Un cadavere contagiato sembra morto da poche ore anche dopo 29 anni. I cadaveri restano fonte di contagio ma solo a distanza di contatto — la risonanza residua è troppo debole per propagarsi a distanza
 - **Flora e fauna non colpite** — la struttura cellulare vegetale e animale non entra in risonanza alla stessa frequenza. Solo il DNA umano è vulnerabile
 
 Vedi: [[Contagio]] per le meccaniche complete.

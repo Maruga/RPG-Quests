@@ -91,6 +91,8 @@
   .term-line.dim{opacity:0.3;}
   .term-line.blank{height:0.7em;}
   .term-line.cursor-wait{animation:cblink 1s step-end infinite;}
+  .term-image{margin:8px 0;text-align:center;}
+  .term-image img{max-width:90%;max-height:200px;border:1px solid rgba(122,184,110,0.3);filter:sepia(0.4) hue-rotate(80deg) saturate(0.6) brightness(0.8);border-radius:2px;}
   @keyframes cblink{0%,50%{opacity:1;}51%,100%{opacity:0;}}
 
   /* Input */
@@ -350,7 +352,9 @@ function startBoot(){
   setTimeout(function(){
     addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');addBlank();
     triggerGlitch();playRecv();
-    typeText('Vi ho sentiti scendere. Ogni gradino. Ogni respiro.\n\nBenvenuti nella mia camera.\n\nSapevo che qualcuno sarebbe tornato.','',function(){
+    var firstMsg='Vi ho sentiti arrivare. Ogni passo sulle scale. Ogni respiro nella polvere.\n\nVentinove anni di silenzio, e adesso siete qui.\n\nNon siete i primi a scendere fin qui. Ma quelli prima di voi... non sono più risaliti.';
+    chatHistory.push({role:'assistant',content:firstMsg});
+    typeText(firstMsg,'',function(){
       addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
       document.getElementById('inputLine').style.display='flex';
       inputEl.focus();startAmbient();
@@ -385,8 +389,18 @@ async function sendMessage(){
     }
     var t=data.reply;
     chatHistory.push({role:'assistant',content:t});
+    var fotoImages=[];
+    var cleanText=t.replace(/\[FOTO:([^\]]+)\]/g,function(m,p){fotoImages.push(p);return '';});
+    cleanText=cleanText.replace(/^\s*\n/gm,'').trim();
     playRecv();if(Math.random()>0.5)triggerGlitch();
-    typeText(t,'',function(){
+    typeText(cleanText,'',function(){
+      for(var i=0;i<fotoImages.length;i++){
+        var imgDiv=document.createElement('div');imgDiv.className='term-image';
+        var img=document.createElement('img');img.src='Immagini/'+fotoImages[i];
+        img.onerror=function(){this.parentElement.style.display='none';};
+        imgDiv.appendChild(img);outputEl.appendChild(imgDiv);
+      }
+      outputEl.scrollTop=outputEl.scrollHeight;
       addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
       document.getElementById('inputLine').style.display='flex';inputEl.focus();
     });
