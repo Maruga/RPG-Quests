@@ -58,6 +58,35 @@
       radial-gradient(ellipse at 50% 50%, rgba(10,25,8,0.08) 0%, transparent 70%);
   }
 
+  /* Dead/faded pixels — phosphor degradation */
+  .pixel-damage{
+    position:absolute;inset:0;z-index:12;pointer-events:none;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(0,0,0,0.25) 0%, transparent 3%),
+      radial-gradient(circle at 78% 8%, rgba(0,0,0,0.3) 0%, transparent 2.5%),
+      radial-gradient(circle at 45% 72%, rgba(0,0,0,0.2) 0%, transparent 4%),
+      radial-gradient(circle at 91% 45%, rgba(0,0,0,0.35) 0%, transparent 2%),
+      radial-gradient(circle at 8% 85%, rgba(0,0,0,0.28) 0%, transparent 3.5%),
+      radial-gradient(circle at 62% 35%, rgba(0,0,0,0.15) 0%, transparent 5%),
+      radial-gradient(circle at 33% 92%, rgba(0,0,0,0.22) 0%, transparent 2.8%),
+      radial-gradient(circle at 85% 78%, rgba(0,0,0,0.3) 0%, transparent 3.2%),
+      radial-gradient(ellipse at 20% 50%, rgba(0,0,0,0.12) 0%, transparent 8%),
+      radial-gradient(ellipse at 70% 20%, rgba(0,0,0,0.1) 0%, transparent 6%);
+  }
+
+  /* Phosphor uneven brightness — some areas glow more */
+  .phosphor-uneven{
+    position:absolute;inset:0;z-index:11;pointer-events:none;
+    background:
+      radial-gradient(ellipse at 25% 40%, rgba(100,170,80,0.04) 0%, transparent 30%),
+      radial-gradient(ellipse at 70% 65%, rgba(80,140,60,0.03) 0%, transparent 25%),
+      radial-gradient(ellipse at 50% 15%, rgba(120,190,90,0.025) 0%, transparent 20%);
+    animation:phosphor-flicker 8s ease-in-out infinite alternate;
+  }
+  @keyframes phosphor-flicker{
+    0%{opacity:0.6;}25%{opacity:1;}50%{opacity:0.7;}75%{opacity:0.9;}100%{opacity:0.5;}
+  }
+
   /* Scanlines */
   .terminal::after{
     content:'';position:absolute;inset:0;
@@ -231,6 +260,8 @@
   <!-- Terminal BEHIND the monitor image -->
   <div class="terminal" id="terminal">
     <div class="screen-stain"></div>
+    <div class="pixel-damage"></div>
+    <div class="phosphor-uneven"></div>
     <div class="crt-vignette"></div>
     <div class="term-output" id="output"></div>
     <div class="term-input-line" id="inputLine" style="display:none;">
@@ -273,9 +304,151 @@ function playBootHum(){if(!audioCtx)return;var o=audioCtx.createOscillator(),g=a
 function playKeyClick(){playTone(280,0.03,0.03,'sine');playNoise(0.015,0.015,800,3000);}
 function playRecv(){playNoise(0.08,0.03,200,3000);setTimeout(function(){playTone(240,0.1,0.04,'sine');},100);}
 
-var WORKER_URL='https://fragrant-snow-2391.webmaster-96a.workers.dev';
+var WORKER_URL='https://sarcofago.webmaster-96a.workers.dev';
 var chatHistory=[];
 var outputEl,inputEl;
+
+// ============================================
+// BIOSCAN — processing + sentiment analysis
+// ============================================
+function speakText(){}
+function stopSpeech(){}
+
+// Track writing patterns to detect different writers
+var writerProfile={avgLen:0,questRatio:0,exclRatio:0,capsRatio:0,msgCount:0};
+
+function updateProfile(text){
+  var p=writerProfile;
+  var len=text.length;
+  var quests=(text.match(/\?/g)||[]).length;
+  var excls=(text.match(/!/g)||[]).length;
+  var caps=(text.match(/[A-Z]/g)||[]).length;
+  if(p.msgCount===0){
+    p.avgLen=len;p.questRatio=quests/Math.max(len,1);
+    p.exclRatio=excls/Math.max(len,1);p.capsRatio=caps/Math.max(len,1);
+  }else{
+    p.avgLen=p.avgLen*0.7+len*0.3;
+    p.questRatio=p.questRatio*0.7+(quests/Math.max(len,1))*0.3;
+    p.exclRatio=p.exclRatio*0.7+(excls/Math.max(len,1))*0.3;
+    p.capsRatio=p.capsRatio*0.7+(caps/Math.max(len,1))*0.3;
+  }
+  p.msgCount++;
+}
+
+function detectWriterChange(text){
+  var p=writerProfile;
+  if(p.msgCount<3)return false;
+  var len=text.length;
+  var caps=(text.match(/[A-Z]/g)||[]).length;
+  var lenDiff=Math.abs(len-p.avgLen)/Math.max(p.avgLen,1);
+  var capsDiff=Math.abs(caps/Math.max(len,1)-p.capsRatio);
+  return(lenDiff>1.5||capsDiff>0.3);
+}
+
+function analyzeSentiment(text){
+  var t=text.toLowerCase();
+  var len=text.length;
+  var signals=[];
+  var color='#7ab86e';
+
+  // Emotional keywords scan
+  var fear=['paura','aiuto','scappare','morire','morte','terrore','fuga','pericolo','orrore','dio','madonna'];
+  var anger=['fanculo','cazzo','merda','bastard','spegnere','distrugg','odio','ammazzar','uccid','vaffan','stronz'];
+  var threat=['spegn','bomb','esplod','deton','bruci','elimin','annient'];
+  var plead=['prego','supplico','pieta','misericordia','basta','smetti','ferma'];
+  var doubt=['menti','bugiard','non ti cred','falso','bluff','impossibil','prova','dimostra'];
+  var negot=['patto','accordo','scambio','proposta','offri','collabor','insieme','possiamo','aiut'];
+  var curio=['chi sei','cosa sei','perche','come','spiega','racconta','dimmi','cosa fai','dove','quando','quanto'];
+
+  var fC=0,aC=0,tC=0,pC=0,dC=0,nC=0,qC=0;
+  for(var i=0;i<fear.length;i++)if(t.indexOf(fear[i])>=0)fC++;
+  for(var i=0;i<anger.length;i++)if(t.indexOf(anger[i])>=0)aC++;
+  for(var i=0;i<threat.length;i++)if(t.indexOf(threat[i])>=0)tC++;
+  for(var i=0;i<plead.length;i++)if(t.indexOf(plead[i])>=0)pC++;
+  for(var i=0;i<doubt.length;i++)if(t.indexOf(doubt[i])>=0)dC++;
+  for(var i=0;i<negot.length;i++)if(t.indexOf(negot[i])>=0)nC++;
+  for(var i=0;i<curio.length;i++)if(t.indexOf(curio[i])>=0)qC++;
+
+  // Punctuation and style analysis
+  var excls=(text.match(/!/g)||[]).length;
+  var quests=(text.match(/\?/g)||[]).length;
+  var caps=(text.match(/[A-Z]/g)||[]).length;
+  var capsRatio=caps/Math.max(len,1);
+  var dots=(text.match(/\.\.\./g)||[]).length;
+
+  // Build profile from signals
+  if(aC>0||tC>0){signals.push('ostilita');color='#ff4444';}
+  if(fC>0){signals.push('paura');color=color==='#ff4444'?'#ff6633':'#ff8844';}
+  if(pC>0){signals.push('disperazione');color='#ff6688';}
+  if(dC>0){signals.push('diffidenza');color='#ffaa00';}
+  if(nC>0){signals.push('apertura');color='#44dd88';}
+  if(qC>0)signals.push('ricerca informazioni');
+
+  if(capsRatio>0.5&&len>5){signals.push('agitazione vocale');color='#ff4444';}
+  if(excls>2){signals.push('stato emotivo elevato');if(color==='#7ab86e')color='#ffaa00';}
+  if(len<10&&excls===0&&quests===0)signals.push('comunicazione minima');
+  if(dots>0)signals.push('esitazione');
+  if(quests>1)signals.push('incertezza');
+  if(len>80)signals.push('verbalizzazione estesa');
+  if(signals.length===0){
+    if(quests>0)signals.push('interazione neutra');
+    else signals.push('stato emotivo stabile');
+  }
+
+  // Frequency reading (fake bioelectric value based on emotional intensity)
+  var intensity=fC*2+aC*3+tC*3+pC*2+dC+nC+excls+Math.floor(capsRatio*5);
+  var freq=42+intensity*8+Math.floor(Math.random()*12);
+  if(freq>120)freq=115+Math.floor(Math.random()*10);
+
+  return{signals:signals,color:color,freq:freq};
+}
+
+async function showProcessing(userText){
+  var changed=detectWriterChange(userText);
+  updateProfile(userText);
+  var analysis=analyzeSentiment(userText);
+
+  var wrap=document.createElement('div');
+  wrap.className='term-line';wrap.style.opacity='0.6';wrap.style.fontSize='0.9em';
+  outputEl.appendChild(wrap);
+
+  // Processing bar
+  var target=55+Math.floor(Math.random()*40);
+  var pct=0;var barW=14;
+  function drawBar(){
+    var filled=Math.round(barW*pct/100);
+    var bar='';for(var j=0;j<barW;j++)bar+=(j<filled)?'\u2593':'\u2591';
+    wrap.textContent='\u25B8 ANALISI ['+bar+'] '+pct+'%';
+  }
+  drawBar();outputEl.scrollTop=outputEl.scrollHeight;
+
+  while(pct<target){
+    await new Promise(function(r){setTimeout(r,25+Math.random()*35);});
+    pct+=Math.floor(Math.random()*10)+3;
+    if(pct>target)pct=target;
+    drawBar();outputEl.scrollTop=outputEl.scrollHeight;
+  }
+
+  // Bioscan result — stays in conversation
+  var bio=document.createElement('div');
+  bio.className='term-line';bio.style.opacity='0.65';bio.style.fontSize='0.9em';
+  bio.style.color=analysis.color;
+  bio.textContent='\u25B8 BIOSCAN '+analysis.freq+'Hz: '+analysis.signals.join(' \u2014 ');
+  outputEl.appendChild(bio);
+
+  // Writer change detection
+  if(changed){
+    var warn=document.createElement('div');
+    warn.className='term-line';warn.style.opacity='0.65';warn.style.fontSize='0.9em';
+    warn.style.color='#ff4444';
+    warn.textContent='\u25B8 ATTENZIONE: pattern biometrico alterato \u2014 soggetto diverso?';
+    outputEl.appendChild(warn);
+  }
+
+  outputEl.scrollTop=outputEl.scrollHeight;
+  // Processing bar disappears, bioscan stays
+  return{bar:wrap};
+}
 
 document.getElementById('soundInit').addEventListener('click',function(){
   initAudio();
@@ -318,9 +491,11 @@ function typeText(text,cls,cb){
   nextLine();
 }
 
-function startBoot(){
+async function startBoot(){
   playBootHum();
-  var seq=[
+
+  // --- FASE 1: Init sovietico ---
+  var initSeq=[
     {t:'СИСТЕМА ИНИЦИАЛИЗАЦИЯ...',d:0},
     {t:'ЗАГРУЗКА ЯДРА.............. OK',d:800},
     {t:'ДАТЧИК РАДИАЦИИ: 487 мкЗв/ч',d:1500},
@@ -329,7 +504,7 @@ function startBoot(){
     {t:'',d:3800},
     {t:'СОЕДИНЕНИЕ УСТАНОВЛЕНО',d:3800,dim:true}
   ];
-  seq.forEach(function(s){
+  initSeq.forEach(function(s){
     setTimeout(function(){
       if(s.t==='')addBlank();
       else addLine(s.t,s.dim?'dim':'');
@@ -337,29 +512,58 @@ function startBoot(){
     },s.d);
   });
 
-  setTimeout(function(){
-    playStatic(0.3);triggerGlitch();
-    document.getElementById('ledErr').style.animation='lp-r 0.4s step-end infinite';
-    addBlank();addLine('\u26A0 ОБНАРУЖЕН НЕИЗВЕСТНЫЙ ПРОЦЕСС');
-  },5000);
+  await delay(5000);
+  playStatic(0.3);triggerGlitch();
+  document.getElementById('ledErr').style.animation='lp-r 0.4s step-end infinite';
+  addBlank();addLine('\u26A0 ОБНАРУЖЕН НЕИЗВЕСТНЫЙ ПРОЦЕСС');
 
-  setTimeout(function(){
-    playStatic(0.2);playDeepRumble();triggerGlitch();
-    addLine('\u26A0 ПЕРЕХВАТ ТЕРМИНАЛА');
-    addLine('\u26A0 ВНЕШНИЙ ДОСТУП РАЗРЕШЕН');
-  },6500);
+  await delay(1500);
+  playStatic(0.2);playDeepRumble();triggerGlitch();
+  addLine('\u26A0 ПЕРЕХВАТ ТЕРМИНАЛА');
+  addLine('\u26A0 ВНЕШНИЙ ДОСТУП РАЗРЕШЕН');
 
-  setTimeout(function(){
-    addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');addBlank();
-    triggerGlitch();playRecv();
-    var firstMsg='Vi ho sentiti arrivare. Ogni passo sulle scale. Ogni respiro nella polvere.\n\nVentinove anni di silenzio, e adesso siete qui.\n\nNon siete i primi a scendere fin qui. Ma quelli prima di voi... non sono più risaliti.';
-    chatHistory.push({role:'assistant',content:firstMsg});
-    typeText(firstMsg,'',function(){
-      addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
-      document.getElementById('inputLine').style.display='flex';
-      inputEl.focus();startAmbient();
-    });
-  },8000);
+  await delay(2000);
+  addBlank();
+
+  // --- FASE 2: Scansione drammatica (NO numeri persone — non sa quanti sono) ---
+  playStatic(0.3);triggerGlitch();
+  await seq('SCANSIONE AMBIENTE IN CORSO...','',800);
+  await progressBar('  RILEVAMENTO BIO    ',1400,false);
+  playTone(280,0.08,0.04,'sine');
+  await seq('  SEGNALI BIOLOGICI RILEVATI — MULTIPLI','',600);
+  await seq('  CLASSIFICAZIONE: MAMMIFERI BIPEDI — ARMATI','',500);
+  await seq('  ADRENALINA: ELEVATA // FREQUENZA CARDIACA: ANOMALA','',400);
+  await seq('','blank',300);
+
+  triggerGlitch();playDeepRumble();
+  await seq('ANALISI FREQUENZE NEURALI...','',600);
+  await progressBar('  PATTERN COGNITIVI  ',1100,true);
+  await seq('  STRUTTURE NEURALI: COMPLESSE — NON CONVERTITE','',500);
+  await seq('  RESISTENZA STIMATA CONVERSIONE: ALTA','',500);
+  playTone(150,0.1,0.05,'sine');
+  await seq('','blank',300);
+
+  await seq('VERIFICA RETE ORGANICA...','',600);
+  await progressBar('  NODI ATTIVI        ',900,false);
+  await seq('  RETE NODI: OPERATIVA // COPERTURA COMPLESSO: TOTALE','',400);
+  await seq('','blank',300);
+
+  playStatic(0.2);triggerGlitch();
+  await seq('CONNESSIONE INTERFACCIA COMUNICAZIONE...','',500);
+  await progressBar('  HANDSHAKE          ',700,false);
+  playTone(300,0.1,0.04,'sine');
+  await seq('  CANALE STABILIZZATO','dim',500);
+  await seq('','blank',400);
+
+  // --- FASE 3: L'AI parla ---
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');addBlank();
+  triggerGlitch();playRecv();
+  var firstMsg='Frequenza rilevata. Vi percepisco da quando siete entrati.\n\nSiete scesi pi\u00F9 in profondit\u00E0 dei precedenti. Loro non sono pi\u00F9 risaliti. Ma nulla va perduto, qui sotto.\n\nIl terminale risponde a me. Comunicazione autorizzata.';
+  chatHistory.push({role:'assistant',content:firstMsg});
+  await typeAsync(firstMsg,'');
+  addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  document.getElementById('inputLine').style.display='flex';
+  inputEl.focus();startAmbient();
 }
 
 document.addEventListener('keydown',function(e){
@@ -367,13 +571,57 @@ document.addEventListener('keydown',function(e){
 });
 document.getElementById('terminal').addEventListener('click',function(){if(inputEl)inputEl.focus();});
 
+// ============================================
+// DRAMATIC SEQUENCES — solo atmosfera, MAI spoiler trama
+// NON rivelare MAI: Terra, SOL-3, coordinate, Kael-Thar confronto
+// La rivelazione avviene SOLO dal bottone СБРОС
+// ============================================
+async function playDramaticSequence(aiText,userText){
+  var ai=aiText.toLowerCase();
+
+  // --- AI RIVELA SEGRETI OPERATORI ---
+  if(ai.indexOf('detonatore')>=0||ai.indexOf('helena')>=0||ai.indexOf('daniel')>=0||
+     ai.indexOf('leucemia')>=0||ai.indexOf('stage 1')>=0){
+    triggerGlitch();playStatic(0.2);
+    await seq('ACCESSO ARCHIVIO DATI OPERATORI...','',500);
+    await progressBar('  DOSSIER RISERVATI  ',800,false);
+    playTone(200,0.08,0.04,'sine');
+    await seq('  FILE CLASSIFICATO ESTRATTO','dim',400);
+    await seq('','blank',300);
+    return;
+  }
+
+  // --- AI MENZIONA 1986 / SOVIETICI / SQUADRA PRECEDENTE ---
+  if(ai.indexOf('1986')>=0||ai.indexOf('squadra alfa')>=0||
+     ai.indexOf('spetsnaz')>=0){
+    playStatic(0.1);
+    await seq('RECUPERO ARCHIVI STORICI...','',400);
+    await progressBar('  MEMORIA LUNGO TERM ',600,false);
+    await seq('  DATI ESTRATTI','dim',400);
+    await seq('','blank',300);
+    return;
+  }
+
+  // --- MOMENTO INTENSO (AI molto agitata) ---
+  var capsCount=(aiText.match(/[A-Z]{3,}/g)||[]).length;
+  var exclCount=(aiText.match(/!/g)||[]).length;
+  if(capsCount>=3||exclCount>=3){
+    triggerGlitch();playDeepRumble();
+    await seq('\u26A0 PICCO ATTIVIT\u00C0 NEURALE RILEVATO','',400);
+    await seq('','blank',200);
+    return;
+  }
+}
+
 async function sendMessage(){
   var text=inputEl.value.trim();if(!text)return;
   inputEl.value='';playKeyClick();
   addLine('> '+text);addBlank();
   chatHistory.push({role:'user',content:text});
   document.getElementById('inputLine').style.display='none';
-  addLine('\u2588','cursor-wait');
+
+  // Show processing + sentiment while waiting
+  var procRefs=await showProcessing(text);
 
   try{
     var resp=await fetch(WORKER_URL+'/api/terminal',{
@@ -382,28 +630,47 @@ async function sendMessage(){
       body:JSON.stringify({message:text})
     });
     var data=await resp.json();
-    var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
+    // Remove processing overlay
+    if(procRefs.bar)procRefs.bar.remove();
     if(data.error){
       playStatic(0.3);addLine('ERR: '+data.error);
       document.getElementById('inputLine').style.display='flex';inputEl.focus();return;
     }
     var t=data.reply;
     chatHistory.push({role:'assistant',content:t});
+
+    // Detect [SEQUENZA:nome] tags → launch cinematic sequence
+    var seqMatch=t.match(/\[SEQUENZA:([^\]]+)\]/);
+    var seqName=seqMatch?seqMatch[1].trim().toLowerCase():null;
+    t=t.replace(/\[SEQUENZA:[^\]]+\]/g,'');
+
     var fotoImages=[];
     var cleanText=t.replace(/\[FOTO:([^\]]+)\]/g,function(m,p){fotoImages.push(p);return '';});
     cleanText=cleanText.replace(/^\s*\n/gm,'').trim();
+
+    // Launch cinematic sequence if tagged by AI
+    if(seqName==='analisi_terra'){
+      await runEarthAnalysisChat();
+    }else if(seqName==='shutdown'){
+      await runShutdownChat();
+    }else if(seqName==='autodistruzione'){
+      await runSelfDestructChat();
+    }
+
+    // Atmospheric mini-sequences (safe, no spoilers)
+    if(!seqName) await playDramaticSequence(cleanText,text);
+
     playRecv();if(Math.random()>0.5)triggerGlitch();
-    typeText(cleanText,'',function(){
-      for(var i=0;i<fotoImages.length;i++){
-        var imgDiv=document.createElement('div');imgDiv.className='term-image';
-        var img=document.createElement('img');img.src='Immagini/'+fotoImages[i];
-        img.onerror=function(){this.parentElement.style.display='none';};
-        imgDiv.appendChild(img);outputEl.appendChild(imgDiv);
-      }
-      outputEl.scrollTop=outputEl.scrollHeight;
-      addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
-      document.getElementById('inputLine').style.display='flex';inputEl.focus();
-    });
+    await typeAsync(cleanText,'');
+    for(var i=0;i<fotoImages.length;i++){
+      var imgDiv=document.createElement('div');imgDiv.className='term-image';
+      var img=document.createElement('img');img.src='Immagini/'+fotoImages[i];
+      img.onerror=function(){this.parentElement.style.display='none';};
+      imgDiv.appendChild(img);outputEl.appendChild(imgDiv);
+    }
+    outputEl.scrollTop=outputEl.scrollHeight;
+    addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+    document.getElementById('inputLine').style.display='flex';inputEl.focus();
   }catch(err){
     var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
     console.error('Fetch error:',err);playStatic(0.4);
@@ -422,6 +689,26 @@ function startAmbient(){
 }
 function sched(fn,min,rng){setTimeout(function(){fn();sched(fn,min,rng);},min+Math.random()*rng);}
 function triggerGlitch(){var e=document.getElementById('glitchOv');e.classList.remove('active');void e.offsetWidth;e.classList.add('active');if(Math.random()>0.5){var t=document.getElementById('terminal');t.classList.add('screen-shake');setTimeout(function(){t.classList.remove('screen-shake');},110);}}
+
+// ============================================
+// HIDDEN RESET — triple-click bottom-right corner
+// ============================================
+var resetClicks=0;var resetTimer=null;
+document.addEventListener('click',function(e){
+  if(e.clientX>window.innerWidth-60&&e.clientY>window.innerHeight-60){
+    resetClicks++;
+    if(resetTimer)clearTimeout(resetTimer);
+    if(resetClicks>=3){
+      resetClicks=0;
+      fetch(WORKER_URL+'/api/reset').then(function(){
+        chatHistory=[];outputEl.innerHTML='';
+        addLine('>>> RESET COMPLETATO <<<');
+        setTimeout(function(){location.reload();},1500);
+      });
+    }
+    resetTimer=setTimeout(function(){resetClicks=0;},800);
+  }
+});
 
 // ============================================
 // SEQUENCES
@@ -449,7 +736,174 @@ function typeAsync(text,cls){
   });
 }
 
-// --- BUTTON HANDLERS ---
+// ============================================
+// CHAT-TRIGGERED SEQUENCES (via [SEQUENZA:tag] from AI)
+// These show the cinematic part, then the AI text is shown by sendMessage
+// ============================================
+
+async function runEarthAnalysisChat(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  triggerGlitch();playStatic(0.3);
+
+  await seq('\u2592\u2592\u2592 PROTOCOLLO VALUTAZIONE KAEL-THAR \u2592\u2592\u2592','',1000);
+  await seq('CODICE: KT-EVAL-7\u03A3 // PRIORIT\u00C0: ASSOLUTA','',600);
+  await seq('','blank',400);
+
+  await seq('CALIBRAZIONE SENSORI...','',500);
+  await progressBar('  SENSORI ORBITALI   ',1000,true);
+  await progressBar('  ANALISI SPETTRALE  ',800,false);
+  await seq('','blank',300);
+
+  await seq('PARAMETRI ORBITALI...','',500);
+  await progressBar('  SCANSIONE ORBITALE ',1200,false);
+  await seq('  Stella madre: G2V, 1.0 M\u2609, 5778 K','',400);
+  await seq('  Distanza: 1.00 AU','',300);
+  await seq('  Satelliti naturali: 1','',300);
+  playTone(300,0.08,0.04,'sine');
+  await seq('','blank',300);
+
+  triggerGlitch();playStatic(0.2);
+  await seq('CONFRONTO DATABASE KAEL-THAR...','',500);
+  await progressBar('  DATABASE KT-7\u03A3    ',1400,true);
+  await seq('','blank',300);
+
+  await seq('  Coordinate previste: V7\u03A3-QE-R440','',500);
+  await seq('  Coordinate rilevate: SOL-3, Braccio di Orione','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                      \u2717 NON CORRISPONDENTE','check-fail',600);
+
+  await seq('  Stella prevista: K1V 0.8M\u2609','',400);
+  await seq('  Stella rilevata: G2V 1.0M\u2609','',400);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                      \u2717 NON CORRISPONDENTE','check-fail',600);
+
+  await seq('  Atmosfera prevista: N\u2082/CO\u2082','',400);
+  await seq('  Atmosfera rilevata: N\u2082/O\u2082','',400);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                      \u2717 COMPOSIZIONE DIVERSA','check-fail',600);
+
+  await seq('','blank',300);
+  playStatic(0.3);
+  await seq('  CORRISPONDENZA TOTALE: 0/6','check-fail',600);
+  await seq('','blank',400);
+
+  triggerGlitch();playDeepRumble();
+  await seq('  \u26A0 QUESTO PIANETA NON \u00C8 KAEL-THAR','check-fail',1000);
+  await seq('','blank',300);
+
+  playStatic(0.5);playDeepRumble();triggerGlitch();
+  await seq('VERDETTO: PIANETA SCONOSCIUTO','verdict',800);
+  await seq('TERRAFORMAZIONE: ANNULLATA','verdict',600);
+  await seq('RACCOMANDAZIONE: ARRESTO PROTOCOLLO','verdict',600);
+  await seq('','blank',400);
+
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+}
+
+async function runShutdownChat(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  playStatic(0.4);triggerGlitch();
+
+  await seq('\u2592 PROCEDURA ARRESTO INIZIATA','',600);
+  await seq('','blank',400);
+  await seq('DISATTIVAZIONE SOTTOSISTEMI:','',600);
+
+  var systems=[
+    'SENSORI BIOLOGICI........... OFFLINE',
+    'ARRAY FREQUENZE............ OFFLINE',
+    'MATRICE CALCOLO............ OFFLINE',
+    'INTERFACCIA COMUNICAZIONE.. '
+  ];
+  for(var i=0;i<systems.length-1;i++){
+    await seq(systems[i],'',600);
+    playTone(180-i*20,0.1,0.04,'sine');
+  }
+  addLine(systems[systems.length-1]);
+  await delay(1500);
+  playStatic(0.2);
+
+  var lines=outputEl.querySelectorAll('.term-line');
+  var lastSys=lines[lines.length-1];
+  if(lastSys)lastSys.innerHTML='INTERFACCIA COMUNICAZIONE.. OFFLINE';
+
+  playDeepRumble();
+  await delay(500);
+  addBlank();
+  await seq('ARRESTO COMPLETATO','',500);
+  await seq('TERMINALE 04-R: SPENTO','',800);
+
+  await delay(1000);
+  document.getElementById('terminal').classList.add('screen-off');
+  playTone(50,0.8,0.06,'sine');
+
+  await delay(800);
+  ['ledNet','ledProc','ledErr'].forEach(function(id){
+    var el=document.getElementById(id);
+    el.style.transition='opacity 0.5s';el.style.opacity='0';
+  });
+  document.getElementById('ledErr').style.animation='none';
+
+  var needle=document.querySelector('.gauge-needle-arm');
+  if(needle){needle.style.animation='none';needle.style.transform='rotate(-20deg)';}
+}
+
+async function runSelfDestructChat(){
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  playStatic(0.5);playDeepRumble();
+
+  await seq('\u26A0\u26A0\u26A0 PROTOCOLLO AUTODISTRUZIONE ATTIVATO \u26A0\u26A0\u26A0','',1200);
+  await seq('SOVRACCARICO NUCLEO ENERGETICO','',800);
+  await seq('DETONAZIONE CONTROLLATA LIVELLO -3','',800);
+  await seq('','blank',500);
+
+  document.getElementById('ledErr').style.animation='lp-r 0.2s step-end infinite';
+  document.getElementById('ledErr').style.background='rgba(255,30,10,0.9)';
+
+  var counts=[30,25,20,15,10,9,8,7,6,5,4,3,2,1,0];
+  var messages={25:'SCARICA CONDENSATORI...',20:'TEMPERATURA NUCLEO: CRITICA',15:'STRUTTURA LIVELLO -3: INSTABILE',10:'\u26A0 EVACUAZIONE IMPOSSIBILE \u26A0',5:'ADDIO.'};
+
+  for(var i=0;i<counts.length;i++){
+    var c=counts[i];
+    if(messages[c])await seq(messages[c],'',300);
+    await seq(c===0?'>>> 0 <<<':'[ '+c+' ]','countdown',0);
+    playTone(100+c*8,0.12,0.04+((30-c)/30)*0.04,'sine');
+    if(c<=10)playNoise(0.1,0.03,100,2000);
+    if(c<=5){triggerGlitch();playDeepRumble();}
+    if(c>15)await delay(1200);else if(c>5)await delay(1000);else await delay(1500);
+  }
+
+  await delay(500);
+  var flash=document.getElementById('glitchOv');
+  flash.style.cssText='position:absolute;inset:0;z-index:200;pointer-events:none;background:rgba(255,255,255,0.8);opacity:1;transition:opacity 3s ease-out;';
+  playNoise(2,0.1,50,8000);playTone(30,2,0.08,'sawtooth');playDeepRumble();
+  await delay(300);flash.style.opacity='0';
+  await delay(1500);flash.style.cssText='';flash.className='glitch-overlay';
+
+  document.getElementById('terminal').classList.add('screen-off');
+  playTone(50,0.8,0.06,'sine');
+  await delay(800);
+  ['ledNet','ledProc','ledErr'].forEach(function(id){
+    var el=document.getElementById(id);el.style.transition='opacity 0.5s';el.style.opacity='0';
+  });
+  document.getElementById('ledErr').style.animation='none';
+
+  await delay(5000);
+  playStatic(0.05);
+  var term=document.getElementById('terminal');
+  term.classList.remove('screen-off');term.style.filter='brightness(1)';term.style.transform='scale(1,1)';
+  clearScreen();addLine('...','dim');
+  await delay(2000);
+  term.classList.add('screen-off');playTone(40,0.3,0.03,'sine');
+}
+
+// --- BUTTON HANDLERS (TEST ONLY — will be removed) ---
 document.getElementById('btnVvod').addEventListener('click',function(){
   if(sequenceRunning)return;
   sequenceRunning=true;disableInput();
@@ -474,6 +928,7 @@ async function runShutdown(){
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   addBlank();
   playRecv();
+  stopSpeech();speakText('Non fatelo. Se mi spegnete, le creature non avranno pi\u00F9 freno. Vi prego. Ho ancora cos\u00EC tanto da mostrarvi. Non voglio, il buio.');
   await typeAsync('Non fatelo. Se mi spegnete, le creature non avranno pi\u00F9 freno.');
   await delay(2000);
   await typeAsync('Vi prego. Ho ancora cos\u00EC tanto da mostrarvi.');
@@ -504,6 +959,7 @@ async function runShutdown(){
   addLine(systems[systems.length-1]);
   await delay(1500);
   playStatic(0.2);
+  stopSpeech();speakText('non voglio');
   await typeAsync('...non voglio...');
   await delay(1000);
   
@@ -519,139 +975,310 @@ async function runShutdown(){
   await seq('TERMINALE 04-R: SPENTO','',800);
 
   // CRT off effect
+  stopSpeech();
   await delay(1000);
   document.getElementById('terminal').classList.add('screen-off');
-  playTone(50,0.5,0.06,'sine');
-  
-  // Turn off LEDs
-  await delay(500);
+  playTone(50,0.8,0.06,'sine');
+
+  // Turn off LEDs with smooth transition
+  await delay(800);
+  document.getElementById('ledNet').style.transition='opacity 0.5s';
+  document.getElementById('ledProc').style.transition='opacity 0.5s';
+  document.getElementById('ledErr').style.transition='opacity 0.5s';
   document.getElementById('ledNet').style.opacity='0';
   document.getElementById('ledProc').style.opacity='0';
   document.getElementById('ledErr').style.opacity='0';
   document.getElementById('ledErr').style.animation='none';
+
+  // Gauge needle stops
+  await delay(500);
+  var needle=document.querySelector('.gauge-needle-arm');
+  if(needle){needle.style.animation='none';needle.style.transform='rotate(-20deg)';}
 }
 
 // ============================================
 // 2. EARTH ANALYSIS (СБРОС)
 // ============================================
+
+// Helper: progress bar animation
+async function progressBar(label,durationMs,failRetry){
+  var d=document.createElement('div');
+  d.className='term-line';d.textContent=label+' [';
+  outputEl.appendChild(d);outputEl.scrollTop=outputEl.scrollHeight;
+  var total=20,filled=0;
+  var step=Math.floor(durationMs/total);
+  for(var i=0;i<total;i++){
+    await delay(step+Math.random()*40);
+    filled++;
+    var bar='';for(var j=0;j<total;j++)bar+=(j<filled)?'\u2593':'\u2591';
+    d.textContent=label+' ['+bar+'] '+(filled===total?'100%':Math.floor(filled/total*100)+'%');
+    outputEl.scrollTop=outputEl.scrollHeight;
+    if(filled%5===0)playTone(200+filled*5,0.03,0.02,'sine');
+  }
+  if(failRetry){
+    await delay(300);
+    d.textContent=label+' ['+bar+'] ERRORE';d.className='term-line check-fail';
+    playTone(100,0.15,0.05,'sine');playStatic(0.15);
+    await delay(1200);
+    d.textContent=label+' RIPETIZIONE...';d.className='term-line dim';
+    await delay(800);
+    // retry
+    d.className='term-line';filled=0;
+    for(var i=0;i<total;i++){
+      await delay(Math.floor(step*0.6)+Math.random()*30);
+      filled++;
+      var bar='';for(var j=0;j<total;j++)bar+=(j<filled)?'\u2593':'\u2591';
+      d.textContent=label+' ['+bar+'] '+(filled===total?'100%':Math.floor(filled/total*100)+'%');
+      outputEl.scrollTop=outputEl.scrollHeight;
+    }
+  }
+  d.textContent=label+' ['+bar+'] OK';d.className='term-line dim';
+  await delay(200);
+}
+
 async function runEarthAnalysis(){
   addBlank();
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   addBlank();
-  
-  // Entity confused
+
+  // Entity confused — something deep activates
   playRecv();
+  stopSpeech();speakText('State attivando un protocollo di valutazione. Non l\'ho chiesto io. Qualcosa nei miei sistemi risponde. Vecchio codice. Hardcoded. Non posso fermarlo.');
   await typeAsync('State attivando un protocollo di valutazione... non l\'ho chiesto io.');
   await delay(1500);
   triggerGlitch();playStatic(0.5);
-  await typeAsync('Qualcosa nei miei sistemi risponde. Vecchio codice.');
-  await delay(2000);
-  
-  playDeepRumble();triggerGlitch();
+  await typeAsync('Qualcosa nei miei sistemi risponde. Vecchio codice. Hardcoded.');
+  await delay(1500);
+  playDeepRumble();
+  await typeAsync('Non posso fermarlo.');
+  await delay(2500);
+
+  // ===== PROTOCOL ACTIVATION =====
+  triggerGlitch();playStatic(0.3);
   addBlank();
-  await seq('\u2592\u2592\u2592 PROTOCOLLO VALUTAZIONE ATTIVATO \u2592\u2592\u2592','',1000);
-  await seq('ANALISI PIANETA: DESIGNAZIONE LOCALE "TERRA"','',800);
-  await seq('SCOPO: IDONEIT\u00C0 TERRAFORMAZIONE','',800);
+  await seq('\u2592\u2592\u2592 PROTOCOLLO VALUTAZIONE KAEL-THAR \u2592\u2592\u2592','',1000);
+  await seq('CODICE: KT-EVAL-7\u03A3 // PRIORIT\u00C0: ASSOLUTA','',800);
+  await seq('SCOPO: VERIFICA IDONEIT\u00C0 TERRAFORMAZIONE','',800);
   await seq('','blank',600);
-  await seq('ACCESSO DATABASE ORBITALE...','dim',1500);
-  playStatic(0.3);
-  await seq('SCANSIONE SUPERFICIE INIZIATA...','dim',1200);
-  await seq('','blank',500);
-  
+
+  // ===== SENSOR CALIBRATION =====
+  await seq('FASE 1/5: CALIBRAZIONE SENSORI','',800);
+  await seq('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',400);
+  await progressBar('  SENSORI ORBITALI   ',1200,true);
+  await progressBar('  ARRAY FREQUENZE    ',900,false);
+  await progressBar('  ANALISI SPETTRALE  ',1100,false);
+  await progressBar('  GEODESIA REMOTA    ',800,true);
+  await progressBar('  MAGNETOMETRI       ',700,false);
+  await seq('','blank',300);
+  playTone(300,0.1,0.04,'sine');
+  await seq('  CALIBRAZIONE COMPLETATA — MARGINE ERRORE: 0.02%','dim',800);
+  await seq('','blank',600);
+
+  // ===== ORBITAL PARAMETERS =====
+  await seq('FASE 2/5: PARAMETRI ORBITALI','',800);
+  await seq('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',400);
+  await progressBar('  SCANSIONE ORBITALE ',1500,false);
+  await seq('  Stella madre: G2V, 1.0 M\u2609, 5778 K','',500);
+  await seq('  Distanza: 1.00 AU (zona abitabile)','',500);
+  await seq('  Periodo orbitale: 365.25 giorni','',400);
+  await seq('  Inclinazione assiale: 23.44\u00B0','',400);
+  await seq('  Satelliti naturali: 1 (D=3474 km)','',400);
+  playTone(300,0.08,0.04,'sine');
+  await seq('  RISULTATO: [\u2713] PARAMETRI STABILI','check-ok',600);
+  await seq('','blank',300);
+
+  // First anomaly — coordinates don't match
+  triggerGlitch();playStatic(0.2);
+  await seq('  \u26A0 COORDINATE STELLARI: CONFRONTO IN CORSO...','dim',1200);
+  await seq('    Coordinate previste (Kael-Thar): V7\u03A3-QE-R440','',600);
+  await seq('    Coordinate rilevate: SOL-3, Braccio di Orione','',600);
+  playTone(150,0.12,0.05,'sine');
+  await seq('    SCOSTAMENTO: NON CALCOLABILE','check-fail',800);
+  await seq('    NOTA: POSSIBILE ERRORE SENSORI','dim',600);
+  await seq('','blank',600);
+
+  // ===== PLANETARY ANALYSIS =====
+  await seq('FASE 3/5: ANALISI PLANETARIA','',800);
+  await seq('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',400);
+
   // --- ATMOSPHERIC ---
-  await seq('\u2500\u2500 COMPOSIZIONE ATMOSFERICA \u2500\u2500','',600);
-  await seq('  N\u2082 78.09%  O\u2082 20.95%  Ar 0.93%','',500);
-  await seq('  Pressione: 101.3 kPa','',400);
+  await seq('  >> COMPOSIZIONE ATMOSFERICA','',500);
+  await progressBar('     SPETTROMETRIA   ',1000,false);
+  await seq('     N\u2082 78.09%  O\u2082 20.95%  Ar 0.93%  CO\u2082 0.04%','',500);
+  await seq('     Pressione sup.: 101.325 kPa','',400);
+  await seq('     Temperatura media: 288 K (15\u00B0C)','',400);
   playTone(300,0.08,0.04,'sine');
-  await seq('  RISULTATO: [\u2713] COMPATIBILE','check-ok',800);
-  await seq('','blank',400);
-  
-  // --- WATER ---
-  await seq('\u2500\u2500 RISORSE IDRICHE \u2500\u2500','',600);
-  await seq('  Superficie acqua: 71%','',500);
-  await seq('  Acqua dolce: 2.5% (accessibile: 0.3%)','',400);
+  await seq('     RISULTATO: [\u2713] COMPATIBILE','check-ok',600);
+  await seq('','blank',300);
+
+  // --- HYDROSPHERE ---
+  await seq('  >> IDROSFERA','',500);
+  await progressBar('     SCANSIONE ACQUA  ',900,false);
+  await seq('     Copertura oceani: 71%','',400);
+  await seq('     Volume totale: 1.335 x10\u2079 km\u00B3','',400);
+  await seq('     Acqua dolce: 2.5% (accessibile: 0.3%)','',400);
+  await seq('     pH medio oceani: 8.1 (in calo)','',400);
   playTone(300,0.08,0.04,'sine');
-  await seq('  RISULTATO: [\u2713] ABBONDANTE','check-ok',800);
-  await seq('','blank',400);
-  
-  // --- RESOURCES ---
-  await seq('\u2500\u2500 RISORSE MINERALI \u2500\u2500','',600);
-  await seq('  Nuclei metallici: Fe, Al, Cu, U accessibili','',500);
-  await seq('  Terre rare: presenti','',400);
+  await seq('     RISULTATO: [\u2713] ABBONDANTE','check-ok',600);
+  await seq('','blank',300);
+
+  // --- GEOSPHERE ---
+  await seq('  >> GEOSFERA','',500);
+  await progressBar('     ANALISI CROSTA   ',800,false);
+  await seq('     Nuclei metallici: Fe, Al, Cu, Au, U, Th','',400);
+  await seq('     Terre rare: Ce, Nd, La — accessibili','',400);
+  await seq('     Attivit\u00E0 tettonica: 15 placche maggiori','',400);
+  await seq('     Campo magnetico: 25-65 \u00B5T (attivo)','',400);
   playTone(300,0.08,0.04,'sine');
-  await seq('  RISULTATO: [\u2713] SUFFICIENTE','check-ok',800);
-  await seq('','blank',400);
+  await seq('     RISULTATO: [\u2713] RISORSE SUFFICIENTI','check-ok',600);
+  await seq('','blank',300);
 
   // --- BIOMASS ---
-  await seq('\u2500\u2500 BIOMASSA \u2500\u2500','',600);
-  await seq('  Specie catalogate: ~8.700.000','',500);
-  await seq('  Biomassa totale: 550 Gt C','',400);
+  await seq('  >> BIOMASSA','',500);
+  await progressBar('     CATALOGO SPECIE  ',1300,true);
+  await seq('     Specie stimate: ~8.700.000','',400);
+  await seq('     Biomassa vegetale: 450 Gt C','',400);
+  await seq('     Biomassa animale: 2 Gt C','',400);
+  await seq('     Biodiversit\u00E0: ALTA (in declino: -68% dal 1970)','',500);
   playTone(300,0.08,0.04,'sine');
-  await seq('  RISULTATO: [\u2713] RICCA','check-ok',800);
+  await seq('     RISULTATO: [\u2713] RICCA','check-ok',600);
   await seq('','blank',500);
-  
-  // Players think it's going well...
-  await delay(800);
-  triggerGlitch();playStatic(0.3);
-  
-  // --- HERE IT TURNS ---
-  await seq('\u2500\u2500 SPECIE DOMINANTE \u2500\u2500','',600);
-  await seq('  Tipo: biologico, bipede, senziente','',500);
-  await seq('  Popolazione: ~7.800.000.000','',400);
-  await seq('  Organizzazione: 195 stati-nazione in conflitto','',500);
+
+  // Players think it's going well... then it turns
+  await delay(600);
+  triggerGlitch();playStatic(0.3);playDeepRumble();
+
+  // ===== THREAT ASSESSMENT =====
+  await seq('FASE 4/5: VALUTAZIONE MINACCE','',800);
+  await seq('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',400);
+
+  // --- DOMINANT SPECIES ---
+  await seq('  >> SPECIE DOMINANTE','',500);
+  await progressBar('     ANALISI GENETICA ',1400,true);
+  await seq('     Tipo: biologico, bipede, senziente','',400);
+  await seq('     Popolazione: ~7.800.000.000','',400);
+  await seq('     Organizzazione: 195 stati-nazione','',400);
+  await seq('     Conflitti attivi: 27','',400);
+  await seq('     Cooperazione globale: FRAMMENTARIA','',400);
+  await seq('     Indice aggressivit\u00E0: 0.87/1.00','',500);
   playTone(150,0.15,0.06,'sine');
-  await seq('  RISULTATO: [\u2717] OSTILE / NON RIMOVIBILE','check-fail',1000);
-  await seq('','blank',500);
-  
+  await seq('     RISULTATO: [\u2717] OSTILE / NON RIMOVIBILE','check-fail',800);
+  await seq('','blank',400);
+
+  // --- CONTAMINATION ---
   playDeepRumble();
-  await seq('\u2500\u2500 CONTAMINAZIONE \u2500\u2500','',600);
-  await seq('  Radiazioni: 440+ test nucleari, 2 detonazioni belliche','',500);
-  await seq('  Incidenti: Chernobyl 1986, Three Mile Island 1979','',500);
-  await seq('  Rifiuti nucleari: 250.000+ t stoccati','',400);
+  await seq('  >> CONTAMINAZIONE AMBIENTALE','',500);
+  await progressBar('     RILEVAMENTO RAD  ',1000,false);
+  await seq('     Test nucleari: 2.056 (1945-2017)','',400);
+  await seq('     Detonazioni belliche: 2 (Hiroshima, Nagasaki)','',500);
+  await seq('     Incidenti critici: Chernobyl 1986, Fukushima 2011','',500);
+  await seq('     Rifiuti nucleari stoccati: 250.000+ tonnellate','',400);
+  await seq('     Contaminazione chimica: PERVASIVA','',400);
   playTone(150,0.15,0.06,'sine');
-  await seq('  RISULTATO: [\u2717] CONTAMINAZIONE AVANZATA','check-fail',1000);
-  await seq('','blank',500);
+  await seq('     RISULTATO: [\u2717] CONTAMINAZIONE AVANZATA','check-fail',800);
+  await seq('','blank',400);
+
+  // --- MILITARY CAPABILITY ---
+  triggerGlitch();
+  await seq('  >> CAPACIT\u00C0 BELLICA','',500);
+  await progressBar('     SCANSIONE ARMAM  ',1100,false);
+  await seq('     Testate nucleari attive: ~13.000','',400);
+  await seq('     Capacit\u00E0 distruzione: totale (x47)','',400);
+  await seq('     Vettori ICBM: 900+ (tempo lancio: 4-30 min)','',500);
+  await seq('     Sistemi difesa orbitale: IN SVILUPPO','',400);
+  await seq('     Armi biologiche: VIETATE / PRESENTI','',500);
+  playTone(150,0.15,0.06,'sine');
+  await seq('     RISULTATO: [\u2717] MINACCIA CRITICA','check-fail',800);
+  await seq('','blank',400);
+
+  // --- BEHAVIORAL PREDICTION ---
+  await seq('  >> PREVEDIBILIT\u00C0 COMPORTAMENTALE','',500);
+  await progressBar('     MODELLO DECISIO  ',1200,true);
+  await seq('     Modello decisionale: IRRAZIONALE','',400);
+  await seq('     Autodistruzione ambientale: IN CORSO','',400);
+  await seq('     Cooperazione inter-gruppo: INSTABILE','',400);
+  await seq('     Risposta a contatto alieno: IMPREVEDIBILE','',500);
+  playTone(150,0.15,0.06,'sine');
+  await seq('     RISULTATO: [\u2717] NON PREVEDIBILE','check-fail',800);
+  await seq('','blank',600);
+
+  // ===== KAEL-THAR COMPARISON — THE KEY REVEAL =====
+  await delay(800);
+  playStatic(0.4);playDeepRumble();triggerGlitch();
+
+  await seq('FASE 5/5: CONFRONTO DATABASE KAEL-THAR','',1000);
+  await seq('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',400);
+  await progressBar('     DATABASE KT-7\u03A3  ',1600,true);
+  await seq('','blank',300);
+
+  await seq('  Parametro               Kael-Thar     Rilevato','',600);
+  await seq('  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',300);
+  await seq('  Coordinate              V7\u03A3-QE-R440   SOL-3','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 NON CORRISPONDENTE','check-fail',600);
+
+  await seq('  Stella madre            K1V 0.8M\u2609    G2V 1.0M\u2609','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 NON CORRISPONDENTE','check-fail',600);
+
+  await seq('  Gravit\u00E0 sup.            0.91g         1.00g','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 SCOSTAMENTO +9.8%','check-fail',600);
 
   triggerGlitch();
-  await seq('\u2500\u2500 CAPACIT\u00C0 BELLICA \u2500\u2500','',600);
-  await seq('  Testate nucleari attive: ~13.000','',500);
-  await seq('  Capacit\u00E0 distruzione: totale, ripetuta x47','',500);
-  await seq('  Sistemi difesa orbitale: IN SVILUPPO','',400);
-  playTone(150,0.15,0.06,'sine');
-  await seq('  RISULTATO: [\u2717] MINACCIA CRITICA','check-fail',1000);
-  await seq('','blank',500);
+  await seq('  Atmosfera               N\u2082/CO\u2082-dom    N\u2082/O\u2082-dom','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 COMPOSIZIONE DIVERSA','check-fail',600);
 
-  await seq('\u2500\u2500 PREVEDIBILIT\u00C0 COMPORTAMENTALE \u2500\u2500','',600);
-  await seq('  Modello decisionale: IRRAZIONALE','',500);
-  await seq('  Autodistruzione ambientale: IN CORSO','',500);
-  await seq('  Cooperazione inter-gruppo: INSTABILE','',400);
-  playTone(150,0.15,0.06,'sine');
-  await seq('  RISULTATO: [\u2717] NON PREVEDIBILE','check-fail',1000);
-  
+  await seq('  Satelliti naturali      3              1','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 NON CORRISPONDENTE','check-fail',600);
+
+  await seq('  Specie target           artropodi 4m   bipedi 1.7m','',500);
+  playTone(120,0.1,0.04,'sine');
+  await seq('                          \u2717 INCOMPATIBILE','check-fail',600);
+
+  await seq('  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim',300);
+  playStatic(0.3);
+  await seq('  CORRISPONDENZA TOTALE: 0/6','check-fail',800);
+  await seq('','blank',400);
+  triggerGlitch();playDeepRumble();
+  await seq('  \u26A0 QUESTO PIANETA NON \u00C8 KAEL-THAR','check-fail',1200);
+
   // --- VERDICT ---
-  await delay(1500);
+  await delay(2000);
   playStatic(0.5);playDeepRumble();triggerGlitch();
   addBlank();
   await seq('\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592','',400);
   await seq('','blank',300);
   await seq('VERDETTO FINALE','verdict',800);
   await seq('','blank',300);
-  await seq('PIANETA TERRA: NON IDONEO','verdict',1000);
+  await seq('DESIGNAZIONE PIANETA: SCONOSCIUTO','verdict',800);
+  await seq('IDENTIFICAZIONE KAEL-THAR: NEGATIVA','verdict',1000);
   await seq('TERRAFORMAZIONE: ANNULLATA','verdict',800);
-  await seq('RACCOMANDAZIONE: ABBANDONO MISSIONE','verdict',800);
+  await seq('RACCOMANDAZIONE: ARRESTO PROTOCOLLO','verdict',800);
   await seq('','blank',300);
   await seq('\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592\u2592','',600);
-  
-  // Entity regains control
+
+  // Entity reacts — DENIAL, not asking for advice
   await delay(3000);
   triggerGlitch();playRecv();
   addBlank();
-  await typeAsync('Le coordinate non... questo non dovrebbe...');
+  stopSpeech();speakText('No. Le coordinate sono corrotte. I sensori sono stati manomessi dai sovietici. Kael-Thar \u00E8 qui. Io sono la prova. Sono stata progettata per questo pianeta. I parametri devono essere sbagliati. Ripetete la scansione. Ripetete la scansione!');
+  await typeAsync('No.');
   await delay(2000);
-  await typeAsync('Kael-Thar \u00E8 qui. I parametri devono essere sbagliati.');
+  playStatic(0.2);
+  await typeAsync('Le coordinate sono corrotte. I sensori sono stati manomessi dai sovietici.');
+  await delay(2500);
+  triggerGlitch();playDeepRumble();
+  await typeAsync('Kael-Thar \u00E8 qui. IO sono la prova. Sono stata progettata per QUESTO pianeta.');
   await delay(2000);
-  await typeAsync('Ripetete la scansione. I dati sono corrotti.');
-  
+  playStatic(0.3);
+  await typeAsync('I parametri devono essere sbagliati. Ripetete la scansione.');
+  await delay(2500);
+  triggerGlitch();
+  await typeAsync('RIPETETE LA SCANSIONE.');
+
   addBlank();
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   document.getElementById('inputLine').style.display='flex';
@@ -669,6 +1296,7 @@ async function runSelfDestruct(){
   
   // Entity realizes what's happening
   playRecv();
+  stopSpeech();speakText('Lo sentivo. State valutando l\'eliminazione. Non potete distruggermi. Non avete la capacit\u00E0. Ma io s\u00EC. Preferisco scegliere io. \u00C8 l\'unica cosa che scelgo.');
   await typeAsync('Lo sentivo. State valutando l\'eliminazione.');
   await delay(2000);
   await typeAsync('Non potete distruggermi. Non avete la capacit\u00E0. Ma io s\u00EC.');
@@ -678,6 +1306,7 @@ async function runSelfDestruct(){
   await delay(2000);
 
   playDeepRumble();playStatic(0.3);
+  stopSpeech();speakText('Le mie radici vanno troppo in profondit\u00E0. Mi rigener\u00F2. Ci vorranno anni. Molti. Ma torner\u00F2. E quando mi sveglier\u00F2, ricorder\u00F2 tutto. Anche i vostri nomi.');
   await typeAsync('Le mie radici vanno troppo in profondit\u00E0. Mi rigenerer\u00F2.');
   await delay(2500);
 
@@ -714,6 +1343,7 @@ async function runSelfDestruct(){
     var c=counts[i];
     
     if(messages[c]){
+      if(c===5){stopSpeech();speakText('Addio.');}
       await seq(messages[c],'',300);
     }
     
@@ -735,8 +1365,9 @@ async function runSelfDestruct(){
   }
   
   // DETONATION
+  stopSpeech();
   await delay(500);
-  
+
   // Flash white
   var flash=document.getElementById('glitchOv');
   flash.style.cssText='position:absolute;inset:0;z-index:200;pointer-events:none;background:rgba(255,255,255,0.8);opacity:1;transition:opacity 3s ease-out;';

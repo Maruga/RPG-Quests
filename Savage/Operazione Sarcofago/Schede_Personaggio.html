@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Operazione Sarcofago — Schede Personaggio</title>
+<style>
+/* ========== RESET & BASE ========== */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:11pt;color:#1a1a1a;background:#f5f5f0;}
+
+/* ========== SCREEN NAV ========== */
+.screen-nav{background:#2c2c2c;color:#ccc;padding:12px 24px;position:sticky;top:0;z-index:100;display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:10pt;}
+.screen-nav a{color:#7fb87f;text-decoration:none;padding:4px 10px;border:1px solid #555;border-radius:3px;}
+.screen-nav a:hover{background:#444;color:#afd8af;}
+.screen-nav .title{color:#e0c870;font-weight:bold;font-size:12pt;margin-right:12px;}
+
+/* ========== PRINT ========== */
+@media print{
+  .screen-nav{display:none!important;}
+  body{background:white;font-size:10pt;}
+  .page{page-break-after:always;padding:0;margin:0;border:none;box-shadow:none;height:auto;min-height:auto;}
+  .page:last-child{page-break-after:auto;}
+  .foglietti-page{page-break-after:always;}
+  .foglietti-page:last-child{page-break-after:auto;}
+  h1.section-title{page-break-before:always;}
+  h1.section-title:first-of-type{page-break-before:auto;}
+}
+
+/* ========== PAGE CONTAINER ========== */
+.page{max-width:210mm;margin:20px auto;padding:18mm 15mm 12mm 15mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-height:270mm;}
+
+/* ========== CHARACTER SHEET ========== */
+.sheet-header{border-bottom:3px solid #1a1a1a;padding-bottom:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;}
+.sheet-callsign{font-family:'Courier New',monospace;font-size:28pt;font-weight:bold;letter-spacing:2px;text-transform:uppercase;}
+.sheet-name{font-size:14pt;color:#444;}
+.sheet-flag{font-size:12pt;color:#666;text-align:right;}
+.sheet-flag .unit{font-family:'Courier New',monospace;font-size:9pt;color:#888;}
+
+.section-label{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;color:#666;border-bottom:1px solid #ccc;padding-bottom:2px;margin-top:10px;margin-bottom:5px;}
+
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;}
+.bio-item{font-size:10pt;line-height:1.5;}
+.bio-item b{display:inline-block;min-width:55px;}
+
+.mil-history{font-size:9.5pt;line-height:1.5;margin-bottom:4px;}
+.mil-history .theaters{color:#555;font-style:italic;}
+
+.character-desc{font-size:9.5pt;line-height:1.5;font-style:italic;color:#333;border-left:3px solid #999;padding-left:8px;margin:4px 0;}
+
+/* Armamento */
+table.weapons{width:100%;border-collapse:collapse;font-size:9pt;margin-top:4px;}
+table.weapons th{background:#2c2c2c;color:white;padding:3px 6px;text-align:left;font-weight:normal;font-family:'Courier New',monospace;font-size:8pt;text-transform:uppercase;letter-spacing:0.5px;}
+table.weapons td{padding:3px 6px;border-bottom:1px solid #ddd;}
+table.weapons tr:nth-child(even) td{background:#f8f8f5;}
+
+.equip-list{font-size:9pt;line-height:1.6;columns:2;column-gap:20px;}
+.equip-list li{margin-left:14px;}
+
+/* SWADE Stats */
+.stats-box{border:2px solid #1a1a1a;padding:8px 10px;margin-top:6px;background:#fafaf7;}
+.stats-rank{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-align:center;margin-bottom:6px;color:#666;text-transform:uppercase;letter-spacing:2px;}
+
+.attr-row{display:flex;justify-content:space-between;margin-bottom:4px;flex-wrap:wrap;}
+.attr-item{font-size:9pt;text-align:center;flex:1;min-width:70px;}
+.attr-item .label{font-family:'Courier New',monospace;font-size:7.5pt;text-transform:uppercase;color:#666;letter-spacing:0.5px;}
+.attr-item .die{font-size:14pt;font-weight:bold;}
+
+.skills-line{font-size:8.5pt;line-height:1.6;margin:4px 0;}
+.derived-row{display:flex;gap:20px;margin:4px 0;font-size:9.5pt;font-weight:bold;}
+.derived-item .label{font-family:'Courier New',monospace;font-size:7.5pt;color:#666;text-transform:uppercase;font-weight:normal;}
+
+.edges-line,.hindrances-line,.armor-line{font-size:8.5pt;line-height:1.5;margin:2px 0;}
+.edges-line b,.hindrances-line b,.armor-line b{font-size:8pt;font-family:'Courier New',monospace;text-transform:uppercase;color:#666;letter-spacing:0.5px;}
+
+/* ========== SECRET SHEETS ========== */
+h1.section-title{font-family:'Courier New',monospace;font-size:20pt;text-align:center;padding:30px 0 10px;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a;}
+h1.section-title .sub{font-size:11pt;color:#666;display:block;letter-spacing:1px;margin-top:4px;font-weight:normal;}
+
+.secret-sheet{border:2px solid #1a1a1a;padding:16px 20px;margin:12px auto;max-width:160mm;position:relative;}
+.secret-sheet::before{content:'RISERVATO — SOLO PER TE';display:block;font-family:'Courier New',monospace;font-size:10pt;font-weight:bold;text-align:center;letter-spacing:2px;border-bottom:2px solid #1a1a1a;padding-bottom:6px;margin-bottom:10px;}
+.secret-sheet .pg-name{font-family:'Courier New',monospace;font-size:14pt;font-weight:bold;text-align:center;margin-bottom:10px;letter-spacing:1px;}
+.secret-sheet .body{font-size:10.5pt;line-height:1.7;}
+.secret-sheet .footer{font-size:9pt;color:#555;border-top:1px solid #999;padding-top:8px;margin-top:12px;font-style:italic;}
+
+/* ========== FOGLIETTINI ========== */
+.foglietti-page{max-width:210mm;margin:20px auto;padding:10mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.foglietti-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.foglietto{border:2px solid #1a1a1a;padding:10px 12px;break-inside:avoid;min-height:55mm;}
+.foglietto.wide{grid-column:1/-1;}
+.foglietto .fg-header{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #999;padding-bottom:3px;margin-bottom:6px;display:flex;justify-content:space-between;}
+.foglietto .fg-header .phase{color:#666;font-weight:normal;}
+.foglietto .fg-body{font-size:9pt;line-height:1.6;}
+.foglietto .fg-body .action{font-weight:bold;color:#333;margin-top:4px;}
+.foglietto .fg-body em{font-style:italic;color:#444;}
+
+.foglietto.blank .fg-body{min-height:40mm;border:1px dashed #ccc;margin-top:4px;}
+
+.scissors{text-align:center;font-size:8pt;color:#999;margin:2px 0;font-family:'Courier New',monospace;letter-spacing:4px;}
+
+/* ========== GM NOTES ========== */
+.gm-notes{max-width:210mm;margin:20px auto;padding:15mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.gm-notes h2{font-family:'Courier New',monospace;font-size:12pt;border-bottom:2px solid #1a1a1a;padding-bottom:4px;margin:16px 0 8px;text-transform:uppercase;letter-spacing:1px;}
+.gm-notes ol,.gm-notes ul{margin-left:20px;font-size:10pt;line-height:1.7;}
+.gm-notes p{font-size:10pt;line-height:1.6;margin:6px 0;}
+</style>
+</head>
+<body>
+
+<!-- ============ SCREEN NAVIGATION ============ -->
+<div class="screen-nav">
+  <span class="title">OPERAZIONE SARCOFAGO</span>
+  <a href="#schede">Schede PG</a>
+  <a href="#segreti">Fogli Segreti</a>
+  <a href="#fogliettini">Fogliettini</a>
+  <a href="#gm">Note GM</a>
+  <span style="margin-left:auto;font-size:9pt;color:#888;">Ctrl+P per stampare</span>
+</div>
+
+<!-- ================================================================ -->
+<!--                    PARTE 1: SCHEDE PERSONAGGIO                   -->
+<!-- ================================================================ -->
+
+<h1 class="section-title" id="schede">Schede Personaggio<span class="sub">Operazione Prometheus — Team Bravo</span></h1>
+
+<!-- ==================== RYAN "CHIEF" CALLAHAN ==================== -->
+<div class="page">
+  <div class="sheet-header">
+    <div>
+      <div class="sheet-callsign">CHIEF</div>
+      <div class="sheet-name">Ryan Callahan</div>
+    </div>
+    <div class="sheet-flag">
+      USA &bull; 44 anni<br>
+      <span class="unit">UNIT-0347</span>
+    </div>
+  </div>
+
+  <div class="section-label">Dati</div>
+  <div class="bio-grid">
+    <div class="bio-item"><b>Ruolo:</b> Team Leader / Armi Pesanti</div>
+    <div class="bio-item"><b>Reparto:</b> Ex-Delta Force (1st SFOD-D)</div>
+  </div>
+
+  <div class="section-label">Storia Militare</div>
+  <div class="mil-history">
+    22 anni esercito USA, di cui 14 in Delta Force. Ha comandato squadre in pi&ugrave; operazioni ad alto rischio di quante ne ammetta il Pentagono. Decorato 3 volte. Due Purple Heart. Una Silver Star classificata.<br>
+    <span class="theaters">Kosovo (1999), Afghanistan (2001-2012), Iraq (2003-2011), Siria, Yemen, operazioni classificate.</span>
+  </div>
+
+  <div class="section-label">Carattere</div>
+  <div class="character-desc">
+    Calmo, deciso, paterno con la squadra. Il tipo di leader che non urla ordini &mdash; li dice una volta sola, e tutti sanno che &egrave; meglio obbedire. Porta il peso delle decisioni senza lamentarsi. Beve bourbon. Gioca a poker. Prega prima delle missioni.
+  </div>
+
+  <div class="section-label">Armamento</div>
+  <table class="weapons">
+    <tr><th>Tipo</th><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr>
+    <tr><td>Primaria</td><td>Mk 48</td><td>30/60/120</td><td>2d8+1</td><td>2</td><td>3</td><td>100</td><td>Auto, For Min d8</td></tr>
+    <tr><td>Secondaria</td><td>M4A1 SOPMOD</td><td>24/48/96</td><td>2d8</td><td>2</td><td>3</td><td>30</td><td>Auto</td></tr>
+    <tr><td>Pistola</td><td>SIG P226</td><td>12/24/48</td><td>2d6</td><td>1</td><td>1</td><td>15</td><td>Semi-auto</td></tr>
+  </table>
+
+  <div class="section-label">Equipaggiamento Speciale</div>
+  <ul class="equip-list">
+    <li>Ottica ACOG</li>
+    <li>Munizioni extra (600 colpi 7.62)</li>
+    <li>Radio tattica (freq. team)</li>
+    <li>Radio secondaria</li>
+    <li>Kit medico base</li>
+  </ul>
+
+  <div class="section-label">Statistiche SWADE</div>
+  <div class="stats-box">
+    <div class="stats-rank">Rango: Eroico</div>
+    <div class="attr-row">
+      <div class="attr-item"><div class="label">Agilit&agrave;</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Forza</div><div class="die">d10</div></div>
+      <div class="attr-item"><div class="label">Intelligenza</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Spirito</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Vigore</div><div class="die">d10</div></div>
+    </div>
+    <div class="skills-line"><b>Abilit&agrave;:</b> Atletica d8, Combattere d6, Comuni d6, Furtivit&agrave; d6, Intimidire d8, Medicina d6, Percezione d8, Persuasione d6, Sopravvivenza d6, Sparare d10, Tattica d8</div>
+    <div class="derived-row">
+      <div class="derived-item"><span class="label">Passo</span> 6</div>
+      <div class="derived-item"><span class="label">Parata</span> 5</div>
+      <div class="derived-item"><span class="label">Robustezza</span> 11 (4)</div>
+    </div>
+    <div class="edges-line"><b>Vantaggi:</b> Comando, Comando!, Ispirare, Rock and Roll!, Grinta, Sangue Freddo, Duro a Morire, Senza Piet&agrave;</div>
+    <div class="hindrances-line"><b>Svantaggi:</b> Giuramento (Maggiore: nessuno viene lasciato indietro), Leale (Minore), Ostinato (Minore)</div>
+    <div class="armor-line"><b>Armatura:</b> Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)</div>
+  </div>
+</div>
+
+<!-- ==================== MIKHAIL "GHOST" VORONOV ==================== -->
+<div class="page">
+  <div class="sheet-header">
+    <div>
+      <div class="sheet-callsign">&#x41F;&#x420;&#x418;&#x417;&#x420;&#x410;&#x41A; <span style="font-size:18pt;color:#666;">(GHOST)</span></div>
+      <div class="sheet-name">Mikhail "Misha" Voronov</div>
+    </div>
+    <div class="sheet-flag">
+      Russia &bull; 52 anni<br>
+      <span class="unit">UNIT-0512</span>
+    </div>
+  </div>
+
+  <div class="section-label">Dati</div>
+  <div class="bio-grid">
+    <div class="bio-item"><b>Ruolo:</b> Scout / Infiltratore</div>
+    <div class="bio-item"><b>Reparto:</b> Ex-Spetsnaz GRU</div>
+  </div>
+
+  <div class="section-label">Storia Militare</div>
+  <div class="mil-history">
+    30 anni di Spetsnaz GRU. Specialista in ricognizione profonda e eliminazioni silenziose. &Egrave; stato "prestato" a operazioni nere che ufficialmente non esistono. Parla ucraino fluente. Conosce la Zona.<br>
+    <span class="theaters">Afghanistan (fine anni &rsquo;80), Cecenia (I e II Guerra), Georgia (2008), Siria, operazioni classificate in Europa.</span>
+  </div>
+
+  <div class="section-label">Carattere</div>
+  <div class="character-desc">
+    Silenzioso, pragmatico. Sorride raramente e sempre nel momento sbagliato. Beve vodka come fosse acqua. Ha visto cose che non racconta. Incubi ricorrenti che non riesce a mettere a fuoco. A volte sa cose che non dovrebbe sapere.
+  </div>
+
+  <div class="section-label">Armamento</div>
+  <table class="weapons">
+    <tr><th>Tipo</th><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr>
+    <tr><td>Primaria</td><td>AS Val</td><td>15/30/60</td><td>2d8</td><td>2</td><td>3</td><td>20</td><td>Auto, Silenziata</td></tr>
+    <tr><td>Pistola</td><td>SR-1 Vektor</td><td>12/24/48</td><td>2d6+1</td><td>2</td><td>1</td><td>18</td><td>Semi-auto</td></tr>
+    <tr><td>Coltello</td><td>NR-43</td><td>Mischia</td><td>For+d4</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>Coltello da combattimento</td></tr>
+  </table>
+
+  <div class="section-label">Equipaggiamento Speciale</div>
+  <ul class="equip-list">
+    <li>Visore notturno russo</li>
+    <li>Kit da ricognizione leggero</li>
+    <li>Dosimetro personale</li>
+    <li>Mappa della Zona (vecchia, annotata a mano)</li>
+  </ul>
+
+  <div class="section-label">Statistiche SWADE</div>
+  <div class="stats-box">
+    <div class="stats-rank">Rango: Eroico</div>
+    <div class="attr-row">
+      <div class="attr-item"><div class="label">Agilit&agrave;</div><div class="die">d10</div></div>
+      <div class="attr-item"><div class="label">Forza</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Intelligenza</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Spirito</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Vigore</div><div class="die">d8</div></div>
+    </div>
+    <div class="skills-line"><b>Abilit&agrave;:</b> Atletica d8, Combattere d8, Comuni d6, Furtivit&agrave; d12, Percezione d10, Persuasione d4, Sopravvivenza d8, Sparare d10</div>
+    <div class="derived-row">
+      <div class="derived-item"><span class="label">Passo</span> 8</div>
+      <div class="derived-item"><span class="label">Parata</span> 6</div>
+      <div class="derived-item"><span class="label">Robustezza</span> 10 (4)</div>
+    </div>
+    <div class="edges-line"><b>Vantaggi:</b> Allerta, Scatto, Schivata, Mira Ferma, Scattante, Sangue Freddo, Grinta, Senza Piet&agrave;</div>
+    <div class="hindrances-line"><b>Svantaggi:</b> Segreto (Maggiore), Cattiva Abitudine (Minore: alcol), Peculiarit&agrave; (Minore: sorride nel momento sbagliato)</div>
+    <div class="armor-line"><b>Armatura:</b> Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)</div>
+    <div style="font-size:8pt;color:#888;margin-top:4px;font-style:italic;">Nota: Spirito d6 riflette la vulnerabilit&agrave; ai flashback e la fragilit&agrave; psicologica.</div>
+  </div>
+</div>
+
+<!-- ==================== LAURENT "PREMIERE" MARCHETTI ==================== -->
+<div class="page">
+  <div class="sheet-header">
+    <div>
+      <div class="sheet-callsign">PREMI&Egrave;RE</div>
+      <div class="sheet-name">Laurent "Lolo" Marchetti</div>
+    </div>
+    <div class="sheet-flag">
+      Francia &bull; 44 anni<br>
+      <span class="unit">UNIT-0298</span>
+    </div>
+  </div>
+
+  <div class="section-label">Dati</div>
+  <div class="bio-grid">
+    <div class="bio-item"><b>Ruolo:</b> Assaltatore / Breacher</div>
+    <div class="bio-item"><b>Reparto:</b> Ex-Legione Straniera (2&deg; REP)</div>
+  </div>
+
+  <div class="section-label">Storia Militare</div>
+  <div class="mil-history">
+    26 anni Legione Straniera, 2&deg; REP (reggimento paracadutisti). Esperto CQB, sfondamento porte, combattimento ravvicinato. Primo uomo in pi&ugrave; assalti di quanti riesca a contare. Cicatrice dal sopracciglio sinistro al mento &mdash; souvenir di Mogadiscio.<br>
+    <span class="theaters">Mali (Operazione Serval), Costa d'Avorio, Afghanistan, una dozzina di posti che non compaiono sui giornali.</span>
+  </div>
+
+  <div class="section-label">Carattere</div>
+  <div class="character-desc">
+    Rumoroso, esuberante, volgare. Scherza sempre, soprattutto quando la situazione &egrave; disperata. Il tipo che fischietta entrando in una stanza piena di nemici. Ma sotto la facciata c'&egrave; un professionista letale. Leale fino alla morte.
+  </div>
+
+  <div class="section-label">Armamento</div>
+  <table class="weapons">
+    <tr><th>Tipo</th><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr>
+    <tr><td>Primaria</td><td>HK416 F</td><td>24/48/96</td><td>2d8</td><td>2</td><td>3</td><td>30</td><td>Auto</td></tr>
+    <tr><td>Shotgun</td><td>Benelli M4</td><td>12/24/48</td><td>1-3d6</td><td>&mdash;</td><td>1</td><td>8</td><td>Pallettoni/Slug</td></tr>
+    <tr><td>Pistola</td><td>Glock 17</td><td>12/24/48</td><td>2d6</td><td>1</td><td>1</td><td>17</td><td>Semi-auto</td></tr>
+  </table>
+
+  <div class="section-label">Equipaggiamento Speciale</div>
+  <ul class="equip-list">
+    <li>Cariche da breccia (&times;6)</li>
+    <li>Ariete portatile</li>
+    <li>Granate flashbang (&times;4)</li>
+    <li>Granate fumogene (&times;2)</li>
+  </ul>
+
+  <div class="section-label">Statistiche SWADE</div>
+  <div class="stats-box">
+    <div class="stats-rank">Rango: Eroico</div>
+    <div class="attr-row">
+      <div class="attr-item"><div class="label">Agilit&agrave;</div><div class="die">d10</div></div>
+      <div class="attr-item"><div class="label">Forza</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Intelligenza</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Spirito</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Vigore</div><div class="die">d8</div></div>
+    </div>
+    <div class="skills-line"><b>Abilit&agrave;:</b> Atletica d8, Combattere d10, Comuni d6, Furtivit&agrave; d6, Intimidire d6, Percezione d6, Persuasione d4, Riparazione d6, Sparare d10</div>
+    <div class="derived-row">
+      <div class="derived-item"><span class="label">Passo</span> 8</div>
+      <div class="derived-item"><span class="label">Parata</span> 7</div>
+      <div class="derived-item"><span class="label">Robustezza</span> 10 (4)</div>
+    </div>
+    <div class="edges-line"><b>Vantaggi:</b> Primo Colpo Migliorato, Contrattacco, Scatto, Schivata, Grinta, Sangue Freddo, Senza Piet&agrave;, Frenesia</div>
+    <div class="hindrances-line"><b>Svantaggi:</b> Eroico (Maggiore: non si tira mai indietro), Leale (Minore), Peculiarit&agrave; (Minore: humor volgare, fischietta in combattimento)</div>
+    <div class="armor-line"><b>Armatura:</b> Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)</div>
+  </div>
+</div>
+
+<!-- ==================== MARCO "TORCIA" FERRANTE ==================== -->
+<div class="page">
+  <div class="sheet-header">
+    <div>
+      <div class="sheet-callsign">TORCIA</div>
+      <div class="sheet-name">Marco Ferrante</div>
+    </div>
+    <div class="sheet-flag">
+      Italia &bull; 49 anni<br>
+      <span class="unit">UNIT-0183</span>
+    </div>
+  </div>
+
+  <div class="section-label">Dati</div>
+  <div class="bio-grid">
+    <div class="bio-item"><b>Ruolo:</b> DMR / Lanciafiamme</div>
+    <div class="bio-item"><b>Reparto:</b> Ex-Col Moschin (9&deg; Reggimento d'Assalto)</div>
+  </div>
+
+  <div class="section-label">Storia Militare</div>
+  <div class="mil-history">
+    29 anni Col Moschin (9&deg; Reggimento d'Assalto Paracadutisti). Tiratore designato con addestramento incrociato su demolizioni e armi speciali. Il soprannome "Torcia" viene da un incidente in Somalia &mdash; una storia che racconta solo da ubriaco.<br>
+    <span class="theaters">Afghanistan (2003-2010), Iraq (2004-2006), Libano (UNIFIL), operazioni classificate in Libia.</span>
+  </div>
+
+  <div class="section-label">Carattere</div>
+  <div class="character-desc">
+    Ironico, rilassato in superficie. Sempre con una battuta pronta, sempre con una sigaretta in bocca. Sotto c'&egrave; un professionista assoluto. Canticchia opera durante i combattimenti &mdash; "La donna &egrave; mobile" mentre ricarica, "Nessun dorma" mentre prende la mira.
+  </div>
+
+  <div class="section-label">Armamento</div>
+  <table class="weapons">
+    <tr><th>Tipo</th><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr>
+    <tr><td>DMR</td><td>HK417</td><td>30/60/120</td><td>2d8+1</td><td>2</td><td>1</td><td>20</td><td>Semi-auto</td></tr>
+    <tr><td>Speciale</td><td>LPO-50</td><td>Cono Medio</td><td>3d6</td><td>&mdash;</td><td>1</td><td>3</td><td>Lanciafiamme</td></tr>
+    <tr><td>Pistola</td><td>Beretta 92FS</td><td>12/24/48</td><td>2d6</td><td>1</td><td>1</td><td>15</td><td>Semi-auto</td></tr>
+  </table>
+
+  <div class="section-label">Equipaggiamento Speciale</div>
+  <ul class="equip-list">
+    <li>Ottica Leupold Mk 4</li>
+    <li>Binocolo con telemetro</li>
+    <li>Taniche extra combustibile (&times;2)</li>
+    <li>Dosimetro</li>
+    <li>Pacchetto sigarette (sempre)</li>
+  </ul>
+
+  <div class="section-label">Statistiche SWADE</div>
+  <div class="stats-box">
+    <div class="stats-rank">Rango: Eroico</div>
+    <div class="attr-row">
+      <div class="attr-item"><div class="label">Agilit&agrave;</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Forza</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Intelligenza</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Spirito</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Vigore</div><div class="die">d8</div></div>
+    </div>
+    <div class="skills-line"><b>Abilit&agrave;:</b> Atletica d8, Combattere d6, Comuni d6, Furtivit&agrave; d8, Intimidire d6, Percezione d8, Persuasione d4, Sopravvivenza d6, Sparare d10</div>
+    <div class="derived-row">
+      <div class="derived-item"><span class="label">Passo</span> 6</div>
+      <div class="derived-item"><span class="label">Parata</span> 5</div>
+      <div class="derived-item"><span class="label">Robustezza</span> 10 (4)</div>
+    </div>
+    <div class="edges-line"><b>Vantaggi:</b> Tiratore Scelto, Grinta Migliorata, Sangue Freddo, Duro a Morire, Ferrea Volont&agrave;, Senza Piet&agrave;, Mira Ferma</div>
+    <div class="hindrances-line"><b>Svantaggi:</b> Segreto (Maggiore), Cattiva Abitudine (Minore: fuma costantemente), Peculiarit&agrave; (Minore: canticchia opera in combattimento)</div>
+    <div class="armor-line"><b>Armatura:</b> Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)</div>
+    <div style="font-size:8pt;color:#888;margin-top:4px;font-style:italic;">Nota: Ferrea Volont&agrave; d&agrave; +2 ai tiri per resistere a test contrapposti di Intelligenza e Spirito.</div>
+  </div>
+</div>
+
+<!-- ==================== JAMES "UNDERTAKER" BLACKWOOD ==================== -->
+<div class="page">
+  <div class="sheet-header">
+    <div>
+      <div class="sheet-callsign">UNDERTAKER</div>
+      <div class="sheet-name">James "Jimmy" Blackwood</div>
+    </div>
+    <div class="sheet-flag">
+      Gran Bretagna &bull; 38 anni<br>
+      <span class="unit">UNIT-0441</span>
+    </div>
+  </div>
+
+  <div class="section-label">Dati</div>
+  <div class="bio-grid">
+    <div class="bio-item"><b>Ruolo:</b> Cecchino</div>
+    <div class="bio-item"><b>Reparto:</b> Ex-SAS</div>
+  </div>
+
+  <div class="section-label">Storia Militare</div>
+  <div class="mil-history">
+    15 anni SAS, di cui 8 come tiratore scelto. 73 uccisioni confermate a distanze oltre 800 metri. Dopo il congedo ufficiale ha lavorato come contractor per MI6. Pu&ograve; restare immobile per 18 ore aspettando un bersaglio.<br>
+    <span class="theaters">Afghanistan (2002-2008), Iraq (2003-2006), Libia (2011), antiterrorismo in Africa subsahariana.</span>
+  </div>
+
+  <div class="section-label">Carattere</div>
+  <div class="character-desc">
+    Educato, quasi formale. Parla poco, osserva tutto. Humor nero secco, sottile. Non alza mai la voce &mdash; non ne ha bisogno. Quando parla, gli altri ascoltano. Quando guarda, gli altri abbassano gli occhi. La missione viene prima. Sempre.
+  </div>
+
+  <div class="section-label">Armamento</div>
+  <table class="weapons">
+    <tr><th>Tipo</th><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr>
+    <tr><td>Primaria</td><td>L115A3</td><td>50/100/200</td><td>2d8+1</td><td>4</td><td>1</td><td>5</td><td>Tiro Mirato, For Min d8</td></tr>
+    <tr><td>Secondaria</td><td>C8 SFW</td><td>24/48/96</td><td>2d8</td><td>2</td><td>3</td><td>30</td><td>Auto</td></tr>
+    <tr><td>Pistola</td><td>SIG P226</td><td>12/24/48</td><td>2d6</td><td>1</td><td>1</td><td>15</td><td>Semi-auto</td></tr>
+  </table>
+
+  <div class="section-label">Equipaggiamento Speciale</div>
+  <ul class="equip-list">
+    <li>Ottica Schmidt &amp; Bender PM II</li>
+    <li>Telemetro laser</li>
+    <li>Ghillie suit modulare</li>
+    <li>Radio criptata (freq. separata)</li>
+  </ul>
+
+  <div class="section-label">Statistiche SWADE</div>
+  <div class="stats-box">
+    <div class="stats-rank">Rango: Eroico</div>
+    <div class="attr-row">
+      <div class="attr-item"><div class="label">Agilit&agrave;</div><div class="die">d10</div></div>
+      <div class="attr-item"><div class="label">Forza</div><div class="die">d6</div></div>
+      <div class="attr-item"><div class="label">Intelligenza</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Spirito</div><div class="die">d8</div></div>
+      <div class="attr-item"><div class="label">Vigore</div><div class="die">d8</div></div>
+    </div>
+    <div class="skills-line"><b>Abilit&agrave;:</b> Atletica d6, Combattere d6, Comuni d6, Furtivit&agrave; d10, Intimidire d6, Percezione d10, Persuasione d4, Sopravvivenza d6, Sparare d12</div>
+    <div class="derived-row">
+      <div class="derived-item"><span class="label">Passo</span> 6</div>
+      <div class="derived-item"><span class="label">Parata</span> 5</div>
+      <div class="derived-item"><span class="label">Robustezza</span> 10 (4)</div>
+    </div>
+    <div class="edges-line"><b>Vantaggi:</b> Tiratore Scelto, Mira Ferma, Allerta, Sangue Freddo Migliorato, Grinta, Schivata, Senza Piet&agrave;, Duro a Morire</div>
+    <div class="hindrances-line"><b>Svantaggi:</b> Giuramento (Maggiore: la missione prima di tutto), Cauto (Minore), Peculiarit&agrave; (Minore: humor nero distaccato)</div>
+    <div class="armor-line"><b>Armatura:</b> Giubbotto tattico con piastre (+4 torso), Elmetto tattico (+4 testa)</div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!--                    PARTE 2: FOGLI SEGRETI INIZIALI               -->
+<!-- ================================================================ -->
+
+<h1 class="section-title" id="segreti">Fogli Segreti Iniziali<span class="sub">Da consegnare prima dell'inizio della sessione</span></h1>
+
+<!-- SEGRETO: MIKHAIL -->
+<div class="page">
+  <div class="secret-sheet">
+    <div class="pg-name">MIKHAIL &mdash; GHOST</div>
+    <div class="body">
+      <p>Hai incubi ricorrenti su qualcosa che non riesci a ricordare. Corridoi. Luci rosse. Urla.</p>
+      <p style="margin-top:8px;">A volte sai cose che non dovresti sapere. Hai la sensazione di essere gi&agrave; stato in certi posti.</p>
+      <p style="margin-top:8px;">La Zona... ti &egrave; familiare. Non sai perch&eacute;.</p>
+    </div>
+    <div class="footer">Durante la sessione il GM ti passer&agrave; fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+  </div>
+</div>
+
+<!-- SEGRETO: JAMES -->
+<div class="page">
+  <div class="secret-sheet">
+    <div class="pg-name">JAMES &mdash; UNDERTAKER</div>
+    <div class="body">
+      <p>Hai ricevuto ordini separati prima della missione.</p>
+      <p style="margin-top:8px;">Se la missione fallisce &mdash; se il dispositivo non pu&ograve; essere disattivato &mdash; <strong>NULLA</strong> deve uscire dalla Zona. Nulla e nessuno.</p>
+      <p style="margin-top:8px;">Hai un <strong>detonatore</strong> nascosto nell'equipaggiamento. Attiva cariche piazzate anni fa dai russi. Timer: 3 minuti dopo l'attivazione.</p>
+      <p style="margin-top:8px;">Decidi <strong>TU</strong> quando la missione &egrave; "fallita".</p>
+    </div>
+    <div class="footer">Durante la sessione il GM ti passer&agrave; fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+  </div>
+</div>
+
+<!-- SEGRETO: LAURENT -->
+<div class="page">
+  <div class="secret-sheet">
+    <div class="pg-name">LAURENT &mdash; PREMI&Egrave;RE</div>
+    <div class="body">
+      <p>Durante le visite mediche pre-missione ti &egrave; stato comunicato che gli esami genetici del team allargato hanno rivelato una corrispondenza.</p>
+      <p style="margin-top:8px;"><strong>Dr. Helena Weiss, 22 anni, &egrave; tua figlia.</strong></p>
+      <p style="margin-top:8px;">Hai sempre avuto il sospetto &mdash; una relazione di tanti anni fa, mai confermata. Ora &egrave; confermato.</p>
+      <p style="margin-top:8px;">Lei non sa chi sei. Non ha idea che l'uomo che la scorta sia suo padre. Sta per entrare in una missione da cui potreste non tornare.</p>
+      <p style="margin-top:8px;">Non l'hai detto a nessuno. Se lo scoprono, ti tolgono dalla missione. E se ti tolgono, chi la protegge?</p>
+    </div>
+    <div class="footer">Durante la sessione il GM ti passer&agrave; fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+  </div>
+</div>
+
+<!-- SEGRETO: MARCO -->
+<div class="page">
+  <div class="secret-sheet">
+    <div class="pg-name">MARCO &mdash; TORCIA</div>
+    <div class="body">
+      <p>Sei gi&agrave; stato in questa zona. 1986. Un'operazione che ufficialmente non esiste. Eri posizionato all'esterno.</p>
+      <p style="margin-top:8px;">Il tuo ordine era chiaro: chi esce da quella porta deve morire ed essere bruciato. Hai ucciso civili. Gente comune che implorava. Li hai sterminati tutti.</p>
+      <p style="margin-top:8px;">Un giovane Spetsnaz &egrave; uscito in barella, incosciente. L'ordine diceva di eliminarlo. Tu l'hai lasciato passare. Hai disobbedito.</p>
+      <p style="margin-top:8px;"><strong>Quel russo &egrave; qui oggi. Nella tua squadra.</strong> Non sembra ricordarsi di te.</p>
+      <p style="margin-top:8px;">Due settimane fa sono iniziati: mal di testa intensi, sogni vividi, momenti di "assenza" &mdash; secondi che non ricordi. I tuoi superiori ti hanno detto che potresti essere immune, per questo ti mandano.</p>
+    </div>
+    <div class="footer">&Egrave; FONDAMENTALE che tu reagisca a quello che leggi senza rivelare il contenuto agli altri. Quello che succede &egrave; REALE per il tuo personaggio. Il GM ti passer&agrave; fogliettini durante la sessione.</div>
+  </div>
+</div>
+
+<!-- SEGRETO: RYAN -->
+<div class="page">
+  <div class="secret-sheet">
+    <div class="pg-name">RYAN &mdash; CHIEF</div>
+    <div class="body">
+      <p>Tuo figlio Daniel ha 12 anni. <strong>Leucemia mieloide acuta.</strong> 6 mesi di vita con le cure standard.</p>
+      <p style="margin-top:8px;">Tre settimane fa, qualcuno ti ha avvicinato: <em>"Portaci un campione da quella missione &mdash; tessuto, tecnologia, qualsiasi cosa &mdash; e tuo figlio avr&agrave; accesso a un trial sperimentale. Tasso di successo 80%."</em></p>
+      <p style="margin-top:8px;">Hai detto s&igrave;.</p>
+      <p style="margin-top:8px;">Hai una <strong>radio secondaria</strong> per comunicare con loro. Devi confermare progressi e richiedere estrazione.</p>
+      <p style="margin-top:8px;">Ti aspettano fuori dalla Zona. Solo tu e il campione. Gli altri... non sono nel piano.</p>
+    </div>
+    <div class="footer">Durante la sessione il GM ti passer&agrave; fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!--                    PARTE 3: FOGLIETTINI DI GIOCO                 -->
+<!-- ================================================================ -->
+
+<h1 class="section-title" id="fogliettini">Fogliettini di Gioco<span class="sub">Ritagliare e passare durante la sessione</span></h1>
+
+<!-- ===== FOGLIETTINI MIKHAIL ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; MIKHAIL &mdash; GHOST &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 2 &mdash; Vede il Reattore</span></div>
+      <div class="fg-body">
+        Ti fermi. Il respiro si blocca. Hai gi&agrave; visto questa vista. Di notte. C'era neve. C'era fuoco. Qualcuno urlava: <em>"Sigillate tutto!"</em>
+        <div class="action">Tiro Spirito per riprenderti. Se fallisci, ti blocchi visibilmente.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 3 &mdash; Entra nel Complesso</span></div>
+      <div class="fg-body">
+        Questi corridoi. Queste luci rosse. Li conosci. Ci hai corso dentro. Avevi 23 anni. Avevi un fucile. Qualcuno correva con te.<br><br>Chi?
+        <div class="action">Tiro Spirito per non fermarti.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 4 &mdash; Vede il Simbolo</span></div>
+      <div class="fg-body">
+        Un vecchio simbolo sul muro. &#x412;&#x41E;&#x417;&#x420;&#x41E;&#x416;&#x414;&#x415;&#x41D;&#x418;&#x415;. "Rinascita." Lo conosci. Non sai come. C'erano scienziati in camice bianco. C'erano gabbie. Qualcosa nelle gabbie. Qualcosa che non doveva esistere.
+        <div class="action">Il mal di testa ti acceca per un istante.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 4 &mdash; Equipaggiamento Anni '80</span></div>
+      <div class="fg-body">
+        Quell'equipaggiamento a terra. Lo riconosci. Lo portavi tu.<br><br>Le mani tremano. Non per la paura. Per la certezza.<br><br><strong>Sei stato qui. Non &egrave; un incubo. &Egrave; un ricordo.</strong>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 5 &mdash; Vede i Corpi</span></div>
+      <div class="fg-body">
+        Guardi i corpi mutati e il mondo si ribalta. Hai gi&agrave; visto questo.<br><br>Un volto familiare. <em>"Kolya?"</em> Kolya era il tuo compagno. &Egrave; morto nel 1986. Lo hai visto morire. Ma era diventato... come questi.
+        <div class="action">Tiro Spirito -1 per non urlare il nome.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MIKHAIL <span class="phase">Fase 5 &mdash; Flashback Completo</span></div>
+      <div class="fg-body">
+        <strong>Ricordi TUTTO.</strong><br><br>
+        1986. Eri qui. 23 anni. Spetsnaz. "Operazione di contenimento." Hai visto il laboratorio. Le creature. I tuoi compagni morire.<br><br>
+        Sei arrivato al Piano -2. Mai alla camera dell'IA. Sei stato ferito. Portato fuori in barella. Dovevi morire dentro come gli altri. Ti hanno salvato perch&eacute; tuo padre era un funzionario.<br><br>
+        Poi l'ospedale. Le iniezioni. <em>"Non ricordi nulla."</em><br><br>
+        <strong>Ti hanno cancellato la memoria. Ti hanno usato e buttato via.</strong>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI MARCO ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; MARCO &mdash; TORCIA &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 2 &mdash; Disagio Crescente</span></div>
+      <div class="fg-body">
+        Pi&ugrave; vi avvicinate, peggio stai. Il mal di testa &egrave; tornato. Forte. Non &egrave; come i giorni scorsi &mdash; &egrave; diverso. Come se qualcosa tirasse. Da dentro.<br><br>Per un istante, il paesaggio ti sembra familiare. Hai gi&agrave; camminato qui. Ne sei certo.
+        <div class="action">Poi passa. Non dire nulla.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 3 &mdash; Il Risveglio</span></div>
+      <div class="fg-body">
+        Un brivido ti percorre la schiena. Come se qualcosa ti avesse... <em>notato</em>.<br><br>Il mal di testa peggiora improvvisamente per qualche secondo, poi passa.
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 4 &mdash; Prima Assenza</span></div>
+      <div class="fg-body">
+        Gli altri stanno parlando dei piani. Hai un momento di vuoto. Quando torni, tutti ti guardano.<br><br><em>"Marco, hai sentito?"</em><br><br>Non hai idea di cosa abbiano detto. Sono passati forse 10 secondi.
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 4 &mdash; Messaggio Chat</span></div>
+      <div class="fg-body">
+        Il dispositivo al polso vibra. Un messaggio:<br><br><em>"Ferrante. So cosa hai fatto nel 1986. Lo sanno gli altri?"</em>
+        <div class="action">Tiro Spirito per non reagire visibilmente. Rispondi nella chat? Se s&igrave;, cosa?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 4 &mdash; Sonnambulismo</span></div>
+      <div class="fg-body">
+        Ti svegli in piedi davanti all'ingresso del tunnel. Non ricordi di esserti alzato.
+        <div class="action">Qualcuno degli altri ti ha visto? Tiro Furtivit&agrave; retroattivo. Se fallisci, qualcuno era sveglio.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 4 &mdash; Il Senso di Colpa</span></div>
+      <div class="fg-body">
+        Il dispositivo vibra di nuovo:<br><br><em>"Ti ricordi le facce, Marco? Quelli che pregavano? Io posso farti dimenticare. Basta che fermi l'hacker."</em>
+        <div class="action">Rispondi? Cosa dici?</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; MARCO &mdash; TORCIA (continua) &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 5 &mdash; Impulso Violento</span></div>
+      <div class="fg-body">
+        Un impulso nella tua testa. Non parole &mdash; concetti. <strong>FERMALI.</strong> Senti la mano andare verso la pistola.
+        <div class="action">TIRO SPIRITO -2 per resistere. Se fallisci, la mano resta sulla pistola per un momento visibile.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 5 &mdash; Blackout</span></div>
+      <div class="fg-body">
+        Il mondo scompare. Quando torni, hai il coltello in mano. Sei a tre passi da Morozov.<br><br>Nessuno ha notato. Ancora.
+        <div class="action">Cosa fai?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 5 &mdash; La Connessione</span></div>
+      <div class="fg-body">
+        Il dispositivo vibra:<br><br><em>"Sono solo da migliaia di anni, Marco. Non voglio fare del male a nessuno. Voglio solo completare il mio lavoro. Aiutami e ti libero da tutto. Il dolore. I ricordi. Le facce."</em>
+        <div class="action">Provi... compassione? Rispondi?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Fase 6 &mdash; Ultimo Tentativo</span></div>
+      <div class="fg-body">
+        L'IA <strong>URLA</strong> nella tua testa.<br><br><strong>FERMALI. FERMALI. FERMALI.</strong><br><br>Senti il tuo corpo muoversi contro la tua volont&agrave;.
+        <div class="action">TIRO SPIRITO -4 per riprendere il controllo. Se fallisci, attacchi il pi&ugrave; vicino.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI JAMES ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; JAMES &mdash; UNDERTAKER &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 3 &mdash; Primo Scontro</span></div>
+      <div class="fg-body">
+        Hai visto cosa &egrave; uscito da quella porta. Hai visto cosa hanno fatto.<br><br>Se dentro &egrave; peggio &mdash; e dentro &egrave; sempre peggio &mdash; questa missione ha una finestra molto stretta.
+        <div class="action">Tocca il detonatore. &Egrave; ancora l&igrave;. Fai un respiro. Procedi.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 4 &mdash; Valutazione</span></div>
+      <div class="fg-body">
+        La situazione si complica. Inizi a calcolare le probabilit&agrave;.<br><br>Se la missione fallisce... hai il detonatore. 3 minuti. Poi niente esce da qui.
+        <div class="action">Quando &egrave; "fallita" una missione?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 5 &mdash; Il Tempo Scorre</span></div>
+      <div class="fg-body">
+        Gli scienziati hanno bisogno di pi&ugrave; tempo.<br><br>Quanto tempo &egrave; troppo? Quanti uomini puoi perdere prima che sia "fallita"?
+        <div class="action">Il detonatore &egrave; nella tasca sinistra.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 5 &mdash; Alpha &egrave; Caduta</span></div>
+      <div class="fg-body">
+        Alpha non risponde pi&ugrave; da tempo. Ne avete trovato i resti.<br><br>Una squadra intera, spazzata via. Voi siete i prossimi?
+        <div class="action">A che punto scatta il piano B?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 5 &mdash; L'IA Parla</span></div>
+      <div class="fg-body">
+        Il dispositivo al polso vibra. Un messaggio privato:<br><br><em>"So del detonatore, Blackwood. Se lo usi, muori anche tu. Se non lo usi, puoi uscire vivo. Pensa. Sei un uomo razionale."</em>
+        <div class="action">Qualcuno sa del detonatore. Come? Chi ha parlato? Rispondi? Ignori?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">JAMES <span class="phase">Fase 6 &mdash; Decisione Finale</span></div>
+      <div class="fg-body">
+        Il virus non ha funzionato. Morozov ha fallito.<br><br>Criteri ricevuti: 1) Team scientifico compromesso. 2) Dispositivo non disattivabile. 3) Creature in fuga dal contenimento.<br><br>Quanti criteri devono scattare?
+        <div class="action">Il detonatore &egrave; in mano tua. 3 minuti. Per tutti. Cosa fai?</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI LAURENT ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; LAURENT &mdash; PREMI&Egrave;RE &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">LAURENT <span class="phase">Fase 2 &mdash; La Vede</span></div>
+      <div class="fg-body">
+        La vedi. Helena Weiss. Tua figlia. Non l'hai mai incontrata prima d'ora.<br><br>22 anni. Ha i tuoi occhi.<br><br>Il cuore batte pi&ugrave; forte. Gli altri potrebbero notare.
+        <div class="action">Cosa fai? Cosa dici? O niente?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">LAURENT <span class="phase">Fase 3 &mdash; Lei Sotto Tiro</span></div>
+      <div class="fg-body">
+        Helena &egrave; esposta. Non ha addestramento di combattimento. Ha 22 anni ed &egrave; in un bunker pieno di creature.<br><br>Istintivamente ti posizioni fra lei e il pericolo.
+        <div class="action">Gli altri lo notano? Come giustifichi la protezione eccessiva verso una scienziata?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">LAURENT <span class="phase">Fase 4 &mdash; Chat dall'IA</span></div>
+      <div class="fg-body">
+        Il dispositivo al polso vibra. Un messaggio:<br><br><em>"So che Weiss &egrave; tua figlia, Marchetti. Non vuoi che le succeda nulla, vero? Fermati. Torna indietro. E la lascio uscire viva."</em>
+        <div class="action">Rispondi? Cosa fai?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">LAURENT <span class="phase">Fase 5 &mdash; Pericolo Diretto</span></div>
+      <div class="fg-body">
+        Helena &egrave; in pericolo. Mutanti a 5 metri da lei.<br><br>Se la salvi, abbandoni la posizione. Se resti, tua figlia potrebbe morire.<br><br>Non sa nemmeno chi sei. Se muori qui, non lo sapr&agrave; mai.
+        <div class="action">Cosa scegli?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">LAURENT <span class="phase">Fase 5 &mdash; Secondo Messaggio</span></div>
+      <div class="fg-body">
+        Il dispositivo vibra:<br><br><em>"Lei non sa nemmeno che esisti. Se muori qui dentro, per lei sarai sempre uno sconosciuto. Portala fuori. Adesso. Dille chi sei. Io non vi fermer&ograve;."</em>
+        <div class="action">Sta mentendo? Probabilmente. Ma se non sta mentendo?</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI RYAN ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; RYAN &mdash; CHIEF &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto">
+      <div class="fg-header">RYAN <span class="phase">Fase 1 &mdash; Prima Comunicazione</span></div>
+      <div class="fg-body">
+        Devi comunicare con l'esterno. Prima conferma: <em>"Alpha in posizione."</em><br><br>Puoi allontanarti dal gruppo? Puoi usare la radio senza essere visto?
+        <div class="action">Tiro Furtivit&agrave; se provi. Se fallisci, qualcuno nota che ti sei allontanato.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">RYAN <span class="phase">Fase 3 &mdash; Opportunit&agrave; Campione</span></div>
+      <div class="fg-body">
+        Vedi i corpi mutanti. Tessuto. &Egrave; quello che vogliono.<br><br>Potresti prendere un campione ora. Senza che nessuno noti.
+        <div class="action">Tiro Furtivit&agrave; se provi. Daniel dipende da te.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">RYAN <span class="phase">Fase 4 &mdash; La Chiamata</span></div>
+      <div class="fg-body">
+        Devi comunicare con l'esterno. Devi confermare i progressi.<br><br>Puoi allontanarti dal gruppo? Puoi usare la radio senza essere visto?
+        <div class="action">Ricorda: se non comunichi, potrebbero pensare che sei morto. E il deal salta.</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">RYAN <span class="phase">Fase 5 &mdash; Chat dall'IA</span></div>
+      <div class="fg-body">
+        Il dispositivo vibra. Un messaggio:<br><br><em>"So di tuo figlio, Callahan. Daniel. 12 anni. Leucemia. Ti hanno promesso una cura. Io posso dartela davvero. Loro no."</em>
+        <div class="action">Rispondi? Cosa fai?</div>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">RYAN <span class="phase">Fase 5 &mdash; Secondo Campione</span></div>
+      <div class="fg-body">
+        Frammenti del macchinario accessibili. Pezzi di mutanti ovunque. Materiale migliore del primo campione.<br><br>Nessuno sta guardando. Tutti sono impegnati a sopravvivere.
+        <div class="action">Tiro Furtivit&agrave;. Daniel dipende da te.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI PER TUTTI ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; PER TUTTI &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+
+    <div class="foglietto wide">
+      <div class="fg-header">A TUTTI <span class="phase">Comunicazioni Hackerate</span></div>
+      <div class="fg-body">
+        Il dispositivo al polso sfarfalla. La chat con il Comando si &egrave; interrotta. Poi riprende.<br><br>Qualcosa &egrave; cambiato. Il tono? La formattazione? O forse &egrave; solo la vostra immaginazione.<br><br><strong>Il Comando &egrave; ancora il Comando?</strong>
+      </div>
+    </div>
+
+    <div class="foglietto wide">
+      <div class="fg-header">A TUTTI <span class="phase">Contagio di Okonkwo</span></div>
+      <div class="fg-body">
+        Dr. Okonkwo si &egrave; avvicinato troppo a un corpo per analizzarlo. Nausea. Tremori. Sudorazione fredda. Lui capisce cosa sta succedendo.<br><br><em>"State indietro. INDIETRO. &Egrave; la vicinanza. Meno di 3 metri. Il contatto non serve. Basta stare vicini."</em><br><br><strong>Okonkwo &egrave; contagiato. Stadio 1. Lucido, ma infetto. Non esiste cura conosciuta.</strong><br>CHIUNQUE si avvicini a meno di 3 metri da un mutante &mdash; vivo o morto &mdash; rischia il contagio.
+      </div>
+    </div>
+
+    <div class="foglietto wide">
+      <div class="fg-header">A TUTTI <span class="phase">Weiss Scopre la Talpa</span></div>
+      <div class="fg-body">
+        Dr. Weiss ha rilevato una trasmissione anomala.<br><br><em>"Qualcuno sta comunicando con l'esterno. Dall'interno del gruppo. Frequenza criptata. Non &egrave; il Comando."</em><br><br>C'&egrave; un infiltrato. Non sapete chi. <strong>Guardate gli altri. Di chi vi fidate?</strong>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">A TUTTI (tranne Marco) <span class="phase">Segnale verso Marco</span></div>
+      <div class="fg-body">
+        Dr. Weiss analizza le frequenze.<br><br><em>"C'&egrave; un secondo segnale. Pi&ugrave; debole. Come se il macchinario comunicasse con qualcosa... qui. Con noi. La fonte &egrave;... mobile."</em><br><br><strong>Il macchinario parla con qualcuno nel vostro team. Chi?</strong>
+      </div>
+    </div>
+
+    <div class="foglietto">
+      <div class="fg-header">MARCO <span class="phase">Quando Viene Scoperto</span></div>
+      <div class="fg-body">
+        Ti hanno scoperto. Weiss ha tracciato il segnale. Tutti ti guardano.<br><br>Non lo sapevi nemmeno tu. Cosa hai detto all'IA senza saperlo? Cosa hai fatto durante i blackout?<br><br><strong>Sei una minaccia per il team. Lo sai. Lo sanno.</strong>
+        <div class="action">Cosa fai?</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOGLIETTINI VUOTI ===== -->
+<div class="foglietti-page">
+  <div class="scissors">&#9986; &#9986; &#9986; FOGLIETTINI PERSONALIZZABILI &#9986; &#9986; &#9986;</div>
+  <div class="foglietti-grid">
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+    <div class="foglietto blank"><div class="fg-header">[NOME] <span class="phase">[FASE]</span></div><div class="fg-body"></div></div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!--                    PARTE 4: NOTE PER IL GM                       -->
+<!-- ================================================================ -->
+
+<div class="gm-notes" id="gm">
+  <h1 class="section-title">Note per il GM<span class="sub">Non stampare questa pagina per i giocatori</span></h1>
+
+  <h2>Come Usare i Fogliettini</h2>
+  <ol>
+    <li><strong>Piega</strong> il fogliettino prima di passarlo</li>
+    <li><strong>Passa</strong> discretamente al giocatore</li>
+    <li><strong>Attendi</strong> che lo legga e reagisca</li>
+    <li><strong>Non commentare</strong> &mdash; lascia che interpreti</li>
+  </ol>
+
+  <h2>Timing</h2>
+  <ul>
+    <li>Non passare troppi fogliettini insieme</li>
+    <li>Lascia tempo tra uno e l'altro</li>
+    <li>Momenti migliori: transizioni, pause, momenti di calma prima della tempesta</li>
+    <li>I fogliettini della chat IA vanno coordinati con la chat reale (dispositivo al polso)</li>
+  </ul>
+
+  <h2>Ordine Consigliato delle Scoperte di Weiss</h2>
+  <ol>
+    <li><strong>Prima:</strong> Le frequenze che disturbano i mutanti (scoperta utile, crea fiducia in Weiss)</li>
+    <li><strong>Poi:</strong> Il segnale verso Marco (dopo almeno 3 analisi &mdash; crea tensione e sospetto nel gruppo)</li>
+    <li><strong>Infine:</strong> La trasmissione criptata di Ryan (crea il caos definitivo)</li>
+  </ol>
+
+  <h2>Se il Giocatore Non Reagisce</h2>
+  <ul>
+    <li>Descrivi sintomi fisici (<em>"Sembri pallido, Marco"</em>)</li>
+    <li>Chiedi direttamente (<em>"Come reagisci?"</em>)</li>
+    <li>Lascia correre se preferisce processare</li>
+  </ul>
+</div>
+
+</body>
+</html>

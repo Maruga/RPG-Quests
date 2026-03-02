@@ -61,7 +61,7 @@ Operazione Sarcofago/
 
 ### Deployment
 - **Cloudflare Worker** (`worker.js`): API proxy, KV storage, embedded GM dashboard
-- **Worker URL**: `https://fragrant-snow-2391.webmaster-96a.workers.dev`
+- **Worker URL**: `https://sarcofago.webmaster-96a.workers.dev`
 - **KV Namespace**: `CHAT_KV` (binding name) / `sarcofago-chat` (namespace name)
 - **Secret**: `ANTHROPIC_API_KEY` via `wrangler secret put`
 - **Model**: `claude-sonnet-4-6` | **Max tokens**: 5000

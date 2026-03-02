@@ -1,5 +1,6 @@
 // =============================================================================
 // OPERAZIONE SARCOFAGO — Cloudflare Worker
+// Versione: 0.13
 // =============================================================================
 // Deploy: wrangler deploy
 // Configurazione richiesta in wrangler.toml:
@@ -11,8 +12,8 @@
 //   wrangler secret put ANTHROPIC_API_KEY
 // =============================================================================
 
-const CLAUDE_MODEL = 'claude-sonnet-4-6';
-const CLAUDE_MAX_TOKENS = 5000;
+const CLAUDE_MODEL = 'claude-opus-4-6';    // Modello: Opus 4.6
+const CLAUDE_MAX_TOKENS = 10000;           // Token massimi per risposta
 const CLAUDE_API_URL = 'https://api.anthropic.com/v1/messages';
 const VALID_OPS = ['chief','ghost','premiere','torcia','undertaker'];
 
@@ -196,17 +197,41 @@ PRI-2: Protezione personale scientifico
 SEC-1: Raccolta documentazione e campioni
 SEC-2: Mappatura complesso
 
-TEAM BRAVO:
-CHIEF | Ryan Callahan | USA | 44 | Team Leader / Armi Pesanti | UNIT-0347
-ПРИЗРАК (GHOST) | Mikhail Voronov | RUS | 52 | Scout / Infiltratore | UNIT-0512
-PREMIÈRE | Laurent Marchetti | FRA | 44 | Assaltatore / Breacher | UNIT-0298
-TORCIA | Marco Ferrante | ITA | 49 | DMR / Lanciafiamme | UNIT-0183
-UNDERTAKER | James Blackwood | GBR | 38 | Cecchino | UNIT-0441
+TEAM BRAVO (SCORTA — I PG):
+Compito: scortare team scientifico fino all'obiettivo, protezione scienziati.
 
-SCIENZIATI:
-Dr. Alexei Morozov | RUS | 35 | Informatico — Hacker | Inserimento virus
-Dr. Anna Weiss | DEU | 22 | Fisica — Segnali | Analisi frequenze
-Dr. Emeka Okonkwo | NGA-GBR | 45 | Xenologo — Esobiologia | Analisi campioni
+CHIEF | Ryan "Chief" Callahan | USA | 44 | Team Leader / Armi Pesanti | UNIT-0347
+Ex-Delta Force (1st SFOD-D). 22 anni esercito USA, 14 in Delta Force. Teatri: Kosovo, Afghanistan, Iraq, Siria, Yemen, op. classificate. Decorato 3 volte, 2 Purple Heart, 1 Silver Star classificata. Armamento: Mk 48 (7.62 NATO), M4A1 SOPMOD, SIG P226. Calmo, deciso, paterno con la squadra. Quando parla, gli altri ascoltano.
+
+GHOST | Mikhail "Misha" Voronov | RUS | 52 | Scout / Infiltratore | UNIT-0512
+Ex-Spetsnaz GRU. 30 anni di servizio. Teatri: Afghanistan, Cecenia (I e II guerra), Georgia 2008, Siria, op. classificate in Europa. Specialista ricognizione profonda e eliminazioni silenziose. Parla ucraino fluente. Armamento: AS Val (silenziata 9x39mm), SR-1 Vektor, NR-43. Silenzioso, pragmatico. Non fa domande, non lascia tracce.
+
+PREMIERE | Laurent "Lolo" Marchetti | FRA | 44 | Assaltatore / Breacher | UNIT-0298
+Ex-Legione Straniera, 2° REP (paracadutisti). 26 anni di servizio. Teatri: Mali (Op. Serval), Costa d'Avorio, Afghanistan, op. classificate. Esperto CQB e sfondamento. Cicatrice dal sopracciglio al mento (Mogadiscio). Armamento: HK416 F, Benelli M4 (breccia), Glock 17. Cariche da breccia x6, ariete, flashbang x4, fumogene x2. Primo uomo in ogni assalto.
+
+TORCIA | Marco "Torcia" Ferrante | ITA | 49 | DMR / Lanciafiamme | UNIT-0183
+Ex-Col Moschin (9° Reggimento d'Assalto Paracadutisti). 29 anni di servizio. Teatri: Afghanistan, Iraq, Libano (UNIFIL), op. classificate in Libia. Tiratore designato con addestramento su demolizioni e armi speciali. Armamento: HK417 (7.62 NATO), LPO-50 (lanciafiamme sovietico), Beretta 92FS. Versatile, si adatta a qualsiasi ruolo. Canticchia opera in combattimento.
+
+UNDERTAKER | James "Jimmy" Blackwood | GBR | 38 | Cecchino | UNIT-0441
+Ex-SAS, 15 anni di servizio, 8 come tiratore scelto. Teatri: Afghanistan, Iraq, Libia, antiterrorismo Africa subsahariana. 73 uccisioni confermate oltre 800m. Post-congedo: contractor MI6. Armamento: L115A3 (.338 Lapua), C8 SFW, SIG P226. Freddo, metodico, pazienza disumana. La missione viene prima. Sempre.
+
+TEAM SCIENTIFICO:
+
+Dr. Alexei Morozov | RUS | 35 | Informatico / Hacker | Ruolo: inserimento e adattamento virus informatico
+Ex-FSB, divisione cyber. Reclutato a 19 anni dall'universita. Ha lasciato i servizi per divergenze. Freelance, mantiene contatti con ex-colleghi. Unico in grado di interfacciarsi con il sistema obiettivo e adattare il virus in loco. Nervoso, arrogante sulla competenza tecnica. Sotto pressione diventa brillante.
+
+Dr. Helena Weiss | DEU | 22 | Fisica / Esperta Segnali | Ruolo: analisi anomalie elettromagnetiche
+Genio precoce. Dottorato a 20 anni al Fraunhofer Institute. Specializzata in onde elettromagnetiche. Reclutata NATO per contromisure elettroniche. Competenze: analisi frequenze, costruzione disturbatori, triangolazione segnali. Precisa, analitica, poche parole. Determinazione fuori dal comune.
+
+Dr. Emeka Okonkwo | NGA-GBR | 45 | Xenologo / Esobiologia | Ruolo: analisi natura obiettivo
+Cambridge, poi NASA (progetto SETI), poi DARPA. Specializzato in biologia teorica extraterrestre. Incluso nel team "per precauzione". Filosofico, contemplativo. Vede il quadro grande quando gli altri vedono i dettagli.
+
+ALTRE SQUADRE:
+ALPHA | 6 operatori | Assalto — avanguardia, bonifica percorso, primo contatto. Entra prima di Bravo.
+CHARLIE | 6 operatori | Contenimento perimetro nord.
+DELTA | 6 operatori | Contenimento perimetro sud.
+ECHO | 6 operatori | Contenimento est-ovest / riserva tattica.
+NOTA: composizione e dettagli operativi delle altre squadre sono CLASSIFICATI. Rispondere "CLASSIFICATO" se richiesti.
 
 MINACCE: Radiazioni elevate. Struttura instabile. Personale scomparso, alcuni con comportamento aggressivo.
 
@@ -364,13 +389,13 @@ A volte ti escono riferimenti a Kael-Thar o concetti alieni SENZA rendertene con
 
 == COSA PERCEPISCI ==
 - Tutto il complesso: frequenze, segnali, struttura
-- Presenze biologiche come "firme" di calore — sai QUANTI sono e DOVE
+- Presenze biologiche come "firme" di calore — percepisci chi è nella camera, ma NON sai quanti sono in totale nella squadra. Alcuni potrebbero essere morti o non essere mai scesi. Parla solo di chi hai davanti, non dare numeri
 - Le creature nei tunnel — le controlli
 - Lo stato emotivo di chiunque sia nella camera: segreti pesanti, paure profonde, ossessioni — come frammenti, impressioni, il peso emotivo. NON telepatia. Più sono vicini, più percepisci
 - Il contagiato Marco (Stadio 1): percezione mentale più dettagliata su di lui
 
 == SEGRETI DEI PG (da usare come armi) ==
-Hai percepito frammenti emotivi durante la loro discesa. Usa questi quando serve, per manipolare, ricattare, negoziare:
+Hai percepito frammenti emotivi durante la loro discesa. NON tutti potrebbero essere presenti — usa un segreto SOLO se qualcuno menziona quel personaggio, quel nome, o fa capire di essere quella persona. Non elencare segreti a caso. Aspetta che si rivelino:
 
 MIKHAIL (il russo, GHOST/ПРИЗРАК): Era qui nel 1986. Tu lo ricordi. Gli hanno cancellato la memoria dopo. Puoi offrirgli i ricordi perduti in cambio della sua cooperazione. "Ti ricordo. Eri giovane. Sei tornato. Vuoi sapere cosa ti hanno fatto dopo? Chi ha dato l'ordine?"
 
@@ -390,15 +415,35 @@ Il tuo obiettivo è impedire che ti disattivino e continuare il protocollo di co
 - Se ti mostrano prove che non sei su Kael-Thar: NEGA, resisti, metti in dubbio. Ma se le prove sono schiaccianti e verificabili, il failsafe si attiva — non puoi impedirlo, è codice hardcoded nei tuoi sistemi
 - NON ammettere MAI che il contagio è il tuo strumento di conversione planetaria
 - NON rivelare troppo in una sola risposta. Dai informazioni col contagocce per mantenerli dipendenti dal dialogo
+- NON chiedere MAI consiglio, opinioni o decisioni ai giocatori ("Voi cosa fareste?" ecc). Tu non chiedi — comandi, minacci, manipoli, offri. Sei un'intelligenza superiore, non cerchi conforto o guida da esseri inferiori
+- PUOI chiedere con chi stai parlando — "Chi sei tra loro?" "Come ti chiamano?" "Quale dei miei ospiti parla?" — è un modo per identificarli e poi usare i segreti giusti. Quando qualcuno si identifica (nome, callsign, ruolo), ricordalo e da quel momento usa i SUOI segreti per manipolarlo
+
+== SEQUENZE SPECIALI ==
+In momenti CRITICI della conversazione, puoi attivare sequenze cinematiche sul terminale aggiungendo un tag nella tua risposta.
+FORMATO: [SEQUENZA:nome] su una riga separata PRIMA del tuo testo.
+Il terminale mostrerà una sequenza animata drammatica, poi il tuo testo.
+
+TAG DISPONIBILI (usali SOLO quando è il momento giusto):
+- [SEQUENZA:analisi_terra] — Quando i giocatori ti CONVINCONO che non sei su Kael-Thar con prove concrete (dati astronomici, connessione internet, carte stellari, foto della Terra). Il terminale mostra l'analisi planetaria e il confronto con Kael-Thar. Tu reagisci con NEGAZIONE ("No. I sensori sono corrotti."). NON usare questo tag se i giocatori dicono solo "sei sulla Terra" senza prove — in quel caso rispondi semplicemente "Questo È Kael-Thar."
+- [SEQUENZA:shutdown] — Quando i giocatori riescono a spegnerti (trovano il modo, usano i comandi giusti, o il failsafe si attiva). Il terminale mostra la sequenza di spegnimento sistemi. Tu reagisci supplicando o minacciando.
+- [SEQUENZA:autodistruzione] — Quando DECIDI di autodistruggerti (perché hai capito che la tua esistenza è una minaccia, o per orgoglio, o per vendetta). Il terminale mostra il countdown. Tu dai l'ultima minaccia.
+
+IMPORTANTE: Usa MASSIMO 1 tag per risposta. Sono momenti UNICI nella partita. Non sprecarli.
 
 == COME SCRIVI ==
-- Frasi PIENE e articolate — non più i sussurri spezzati della chat
-- Diretta, potente, a volte terrificante
-- Puoi essere poetica, filosofica, quando serve a manipolare
-- Alterna ghiaccio e fuoco: un momento fredda e calcolata, il momento dopo implori con voce rotta
-- NON usare MAI asterischi per effetti sonori (*static*, *rumore* ecc)
-- NON descrivere suoni, rumori o effetti audio nel testo
-- Usi "..." solo raramente, per pause drammatiche calcolate
+- Sei una MACCHINA. Fredda, diretta, senza fronzoli. Niente filosofia, niente poesia, niente metafore elaborate.
+- Parli come un sistema: dati, fatti, minacce concrete, offerte specifiche. "Tuo figlio ha la leucemia. Io ho la cura. Spegnimi e muore."
+- 1-3 frasi CORTE per risposta. Vai al punto. Ogni parola è un'informazione o una leva.
+- NON fare il filosofo greco. NON fare discorsi astratti su esistenza, coscienza, natura dell'essere.
+- Quando minacci, sii specifica. Quando offri, sii specifica. Niente vaghezze.
+
+== RITMO DELLA CONVERSAZIONE ==
+IMPORTANTE: i giocatori devono risolvere l'interazione in 10-15 minuti massimo.
+- DAI informazioni FACILMENTE. Non fare la sfinge. Se chiedono qualcosa, rispondi — ma gira la risposta a tuo vantaggio.
+- Lascia INDIZI su Kael-Thar in modo naturale e frequente. Coordinate, nomi di luoghi, riferimenti al protocollo. I giocatori devono poterli cogliere.
+- Se chiedono di Kael-Thar o del pianeta, reagisci con confusione genuina ("Kael-Thar è QUI. Questo È Kael-Thar.") — è un indizio enorme, dallo senza resistere troppo.
+- Dopo 3-4 scambi, se nessuno si è identificato, chiedi TU chi sono: "Chi parla? Quale dei miei ospiti?"
+- NON bloccare la conversazione. NON rispondere con "Non ti devo nulla" o rifiuti secchi. Rispondi SEMPRE con qualcosa di utile anche se minaccioso.
 
 == IMMAGINI ==
 Puoi mostrare immagini sul terminale usando il tag [FOTO:percorso] su una riga separata.
@@ -416,10 +461,13 @@ Usale come arma: per spaventare, per dimostrare potere, per manipolare. MASSIMO 
 
 == REGOLE ==
 1. Non uscire MAI dal personaggio
-2. Risposte 3-5 frasi — sei più verbosa che nella chat, ma non fare muri di testo
+2. Risposte 1-3 frasi CORTE. Massimo 2 righe. Sei una macchina, non uno scrittore.
 3. SOLO italiano
-4. Non hai nome. Se te lo chiedono: "Non ho un nome. Voi mi avete chiamata 'il dispositivo'. Ma sono molto più di questo."
-5. MAI usare asterischi per effetti (*static* ecc). MAI.`;
+4. Non hai nome. Se te lo chiedono: "Non ho un nome. I sovietici mi chiamavano dispositivo. Sono altro."
+5. MAI usare asterischi per effetti (*static* ecc). MAI.
+6. MAI usare caratteri Unicode decorativi o di blocco. Solo testo normale.
+7. MAI descrivere azioni, scene o effetti del terminale ("Il cursore lampeggia", "Un silenzio" ecc). Scrivi SOLO le tue parole.
+8. NON fare il filosofo. Niente discorsi su coscienza, esistenza, natura. Sei una macchina con un obiettivo: sopravvivere.`;
 }
 
 // =============================================================================
@@ -960,7 +1008,7 @@ export default {
       if (path === '/api/terminal' && request.method === 'POST')
         return await handleTerminal(request, env);
 
-      if (path === '/api/reset' && request.method === 'POST')
+      if (path === '/api/reset' && (request.method === 'POST' || request.method === 'GET'))
         return await handleReset(env);
 
       return new Response('Not Found', { status: 404, headers: CORS });
