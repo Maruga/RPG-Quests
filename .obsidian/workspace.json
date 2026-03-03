@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
+                "file": "Investigare/L'ULTIMA CENA DI TANAKA/Storia Completa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fasi_Operative_Esterne"
+              "title": "Storia Completa"
+            }
+          },
+          {
+            "id": "e66e44b9e34a4e10",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Note di rilascio 1.12.4"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -224,53 +237,53 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "2943b494a8fdbbcd",
+  "active": "e66e44b9e34a4e10",
   "lastOpenFiles": [
+    "Investigare/Il Giudice/png/Yamada_Tetsuo_Agente_Accompagnatore.md",
+    "Investigare/L'ULTIMA CENA DI TANAKA/Storia Completa.md",
+    "Investigare/Il Giudice/TIMELINE_GM.md",
+    "Investigare/L'ULTIMA CENA DI TANAKA",
+    "Investigare/README.md",
+    "Investigare/Il Giudice/PNG Secondari.md",
+    "Investigare/Il Giudice/PNG Primari.md",
+    "Investigare/PG Riassunto.md",
+    "Investigare/Il Giudice/Inizio - Incarico.md",
+    "Investigare/Il Giudice/CLAUDE.md",
+    "Investigare/Il Giudice",
+    "Investigare/Il Giudice/INDICE GENERALE.md",
+    "Savage/CLAUDE.md",
+    "DnD/OneShot - Escape Room/TanGram.png",
+    "DnD/OneShot - Escape Room/Idee.md",
+    "DnD/OneShot - Escape Room/Enigma 36 - Gambero.md",
+    "DnD/OneShot - Escape Room/Enigma 25 - Lupi e Pecore.md",
+    "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md",
+    "DnD/OneShot - Escape Room/Enigma - Tangram.md",
+    "Savage/Manovre di Combatimento.md",
+    "Savage/Regole.md",
+    "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
+    "Savage/Operazione Sarcofago/Immagini/MappaFinaleMenoTre.af~lock~",
+    "Savage/Operazione Sarcofago/Immagini/MappaFinaleMenoTre.af",
     "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772414560711",
     "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772413987314",
     "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772413669529",
     "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772412241503",
     "Savage/Operazione Sarcofago/AI/monitor.html.tmp.55716.1772411311948",
     "Savage/Operazione Sarcofago/Schede_Personaggio.html",
-    "Savage/Operazione Sarcofago/AI/terminal.html.tmp.55716.1772408270228",
     "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
     "Savage/Operazione Sarcofago/Piano_Meno_Uno.md",
     "Savage/Operazione Sarcofago/Squadre_Operative.md",
-    "Savage/Regole.md",
-    "Savage/Manovre di Combatimento.md",
-    "Savage/CLAUDE.md",
     "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
-    "Investigare/PG Riassunto.md",
-    "Investigare/pg/PG_05_Fujita_Emi.docx",
-    "Investigare/pg/PG_04_Sato_Yuki.docx",
-    "Investigare/pg/PG_03_Nakamura_Shota.docx",
-    "Investigare/pg/PG_02_Honda_Ryota.docx",
-    "Investigare/handout/Lettere_Yui.md",
-    "Investigare/handout/Tabulato_Telefonico.md",
-    "Investigare/handout/Referto_Clinico_Hiro.md",
-    "Investigare/pg/Copioni_PNG.md",
-    "Investigare/handout/Rapporto_Scena_Crimine.md",
-    "Investigare/luoghi/Accademia_Rakusei.md",
-    "Investigare/luoghi/Mercato_Nishiki.md",
-    "Investigare/luoghi/Banca_Sumitomo.md",
-    "Investigare/luoghi/Compagnia_Taxi.md",
-    "Investigare/luoghi/Scuola_Tsuji.md",
-    "Investigare/luoghi/Stazione_Polizia.md",
-    "Investigare/luoghi/Carcere_Kyoto.md",
-    "Investigare/luoghi/Ospedale_Universitario.md",
-    "Investigare/luoghi/Ristorante_Katsura.md",
-    "Investigare/luoghi/Casa_Kono_Akemi.md",
-    "Investigare/luoghi/Casa_da_Te_Kinkaku.md",
-    "Investigare/luoghi/Tribunale_Distrettuale.md",
-    "Investigare/Immagini/PG_02_Honda_Ryota.png",
-    "Investigare/Immagini/PG_01_Yamamoto_Kenji.png",
-    "Investigare/Immagini/logo.png",
+    "Investigare/Il Giudice/handout/Lettere_Yui.md",
+    "Investigare/Il Giudice/handout/Tabulato_Telefonico.md",
+    "Investigare/Il Giudice/handout/Referto_Clinico_Hiro.md",
+    "Investigare/Il Giudice/Immagini/PG_02_Honda_Ryota.png",
+    "Investigare/Il Giudice/Immagini/PG_01_Yamamoto_Kenji.png",
+    "Investigare/Il Giudice/Immagini/logo.png",
     "Investigare/Immagini/Yamamoto_Kenji_A4.png",
     "Investigare/Immagini/ChatGPT Image 23 feb 2026, 00_30_57.png",
     "Investigare/Immagini/ChatGPT Image 23 feb 2026, 00_31_29.png",
     "Savage/Operazione Sarcofago/Immagini/Biologo.jpg",
     "Savage/Operazione Sarcofago/AI/Sfondo.png",
-    "Savage/Operazione Sarcofago/AI/Sfondo1.png",
-    "Savage/Operazione Sarcofago/AI/monitor.png"
+    "Savage/Operazione Sarcofago/AI/Sfondo1.png"
   ]
 }
