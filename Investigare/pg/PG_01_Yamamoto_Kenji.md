@@ -18,12 +18,12 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 5 | Anni di esperienza |
+| **Distacco** | 6 | Veterano — sai distaccarti |
 | **Pazienza** | 4 | Normale |
-| **Silenzio** | 5 | Sai incassare |
-| **Lucidità** | 6 | Punto di forza - vedi i collegamenti |
+| **Silenzio** | 6 | Incassi e chiudi tutto dentro |
+| **Lucidità** | 6 | Punto di forza — vedi i collegamenti |
 | **Ascolto** | 4 | Normale |
-| **Presenza** | 4 | Rispettato dai colleghi |
+| **Presenza** | 5 | Capo rispettato |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -133,3 +133,25 @@ Sei esausto. Ti senti in colpa per Takeshi. A volte ti chiedi se ne vale la pena
 
 ### Quando sei sotto pressione
 Ti chiudi. Parli meno. Diventi più brusco. Non deleghi - fai tutto tu perché "è più veloce."
+
+### Debolezza
+Quando qualcuno mette in dubbio le sue priorità tra lavoro e famiglia. Soprattutto se ha ragione.
+
+---
+
+## TRATTI PERSONALI
+
+- **Vizio**: Caffè nero, almeno sei tazze al giorno. Non tocca l'alcol da quando Yuko se n'è andata.
+- **Tic**: Si massaggia il ponte del naso quando è stanco o frustrato.
+- **Oggetto personale**: Un orologio Seiko automatico, regalo di suo padre per la promozione a ispettore.
+- **Gusto**: Udon caldo da un chiosco vicino alla centrale. Sempre lo stesso, sempre in piedi.
+- **Rituale**: Ogni mattina, prima di entrare in centrale, caffè Boss in lattina al distributore. Sempre lo stesso, sempre in piedi.
+
+---
+
+## RAPPORTI NELLA SQUADRA
+
+- **HONDA Ryota**: "Brillante, ma gioca col fuoco. Un giorno si brucerà e non ci sarà nessuno a salvarlo."
+- **NAKAMURA Shota**: "Il migliore di noi negli interrogatori. Mi fido di lui più di chiunque altro."
+- **SATO Yuki**: "Mi ricorda me a quell'età. Spero che non faccia i miei stessi errori."
+- **FUJITA Emi**: "Competente, riservata, non chiede mai nulla. Questo mi preoccupa."

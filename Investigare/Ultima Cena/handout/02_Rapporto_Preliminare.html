@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Rapporto Preliminare — Caso Tanaka</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+    transform: rotate(0deg);
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">RAPPORTO PRELIMINARE DI INTERVENTO</div>
+        <div class="subtitle">Divisione Investigativa — Distretto di Higashiyama</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
+        <div><span class="label">Data / Ora intervento</span><br>14 novembre 1997 — ore 22:18</div>
+        <div><span class="label">Luogo</span><br>Villa Tanaka, Higashiyama-ku, Kyoto</div>
+        <div><span class="label">Tipo intervento</span><br>Decesso sospetto — possibile omicidio</div>
+        <div><span class="label">Vittima</span><br>TANAKA Kazuo (田中一夫), 61 anni</div>
+        <div><span class="label">Primo ufficiale</span><br>Ass. Isp. SUGIMOTO Ryota (杉本良太)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Circostanze del ritrovamento</div>
+        <p>Alle ore 22:00 circa, la signora TANAKA Yuki, moglie della vittima, ha cercato il marito dopo che questi si era allontanato dal ricevimento in corso nella sala principale della villa. La vittima è stata trovata a terra nel bagno ospiti del piano terra. La porta era chiusa dall'interno con chiavistello.</p>
+        <p>La domestica SATO Harumi ha aperto il chiavistello dall'esterno utilizzando una moneta. La vittima giaceva sul pavimento in posizione prona, priva di conoscenza. Non è stato possibile rianimarla.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Condizioni del corpo</div>
+        <ul>
+            <li>Gonfiore estremo al viso e alla gola</li>
+            <li>Labbra cianotiche</li>
+            <li>Mani gonfie con arrossamento diffuso</li>
+            <li>Nessun segno di violenza esterna</li>
+            <li>Nessuna ferita visibile</li>
+            <li>Nessun segno di iniezione</li>
+        </ul>
+
+        <div class="critical-box">
+            <strong>Valutazione preliminare (Kanshiki-kan ITO Daisuke):</strong> Quadro clinico compatibile con anafilassi severa. Edema massivo alla glottide. Morte per soffocamento in pochi minuti. Autopsia completa da effettuarsi presso il medico legale.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Stato della scena</div>
+        <ul>
+            <li>Bagno ospiti, piano terra, in fondo al corridoio di servizio</li>
+            <li>Porta chiusa dall'interno — chiavistello semplice, girabile dall'esterno con oggetto piatto</li>
+            <li>Lavandino bagnato, specchio con condensa e impronte</li>
+            <li>Graffi leggeri sul legno interno della porta — la vittima ha cercato di uscire</li>
+            <li>Sapone artigianale rinvenuto presso il lavandino — catalogato per analisi</li>
+            <li>Impianto stereo nella sala principale a volume alto durante tutta la serata</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Contesto</div>
+        <p>La vittima ospitava un ricevimento privato nella propria villa. Cena kaiseki seguita da festa. Musica alta, sake. La vittima si è sentita male verso le ore 21:30, si è alzata da tavola dichiarando di volersi rinfrescare. Non è più tornata.</p>
+
+        <div class="highlight-box">
+            <strong>Nota:</strong> Nessuno dei presenti dichiara di aver udito grida o rumori provenienti dal bagno. La musica ad alto volume nella sala principale è indicata come causa.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Persone presenti e trattenute</div>
+        <p>Tutti i presenti sono stati trattenuti in villa in attesa degli investigatori. Nessuno ha lasciato i locali dopo l'arrivo della prima pattuglia.</p>
+        <ul>
+            <li>TANAKA Yuki — moglie della vittima</li>
+            <li>OGAWA Masaru — socio, Direttore R&D</li>
+            <li>OGAWA Reiko — moglie di Ogawa</li>
+            <li>FUJIMOTO Shinji — socio, Direttore Commerciale, cognato della vittima</li>
+            <li>FUJIMOTO Akemi — moglie di Fujimoto, sorella della vittima</li>
+            <li>HAYASHI Kenji — socio (quota ereditata)</li>
+            <li>NAKAMURA Daisuke — ospite, importatore d'arte</li>
+            <li>SATO Harumi — domestica</li>
+            <li>ENDO Toshio — cuoco</li>
+            <li>Due aiuti cucina</li>
+            <li>ISHII Takuya — cameriere (esterno)</li>
+            <li>WATANABE Jun — cameriere (esterno)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Azioni intraprese</div>
+        <ul>
+            <li>Scena del crimine isolata — bagno ospiti interdetto</li>
+            <li>Tutti i presenti identificati e trattenuti</li>
+            <li>Squadra scientifica (Kanshiki-ka) in fase di rilevamento</li>
+            <li>Contenuto del bagno catalogato e sotto sequestro</li>
+            <li>In attesa dell'arrivo della squadra investigativa</li>
+        </ul>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Ass. Isp. SUGIMOTO Ryota<br>
+                <span style="font-size:9px;">Distretto di Higashiyama</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Kanshiki-kan ITO Daisuke<br>
+                <span style="font-size:9px;">Squadra scientifica</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Rapporto Preliminare — Fascicolo 97-KPD-1114 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

@@ -18,12 +18,12 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 5 | Sai mantenere le distanze |
+| **Distacco** | 4 | Normale |
 | **Pazienza** | 4 | Normale |
-| **Silenzio** | 6 | Punto di forza - osservi, non reagisci |
-| **Lucidità** | 5 | Buona capacità di analisi |
-| **Ascolto** | 5 | Formazione psicologica |
-| **Presenza** | 3 | Normale - preferisci restare in ombra |
+| **Silenzio** | 7 | Osservi tutto senza reagire |
+| **Lucidità** | 6 | Solida capacità d'analisi |
+| **Ascolto** | 6 | Formazione psicologica — leggi le persone |
+| **Presenza** | 4 | Preferisci restare in ombra |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -133,3 +133,25 @@ Sei stufa di dover dimostrare il doppio. Sei stufa di Iwamoto. Sei stufa di esse
 
 ### Quando sei sotto pressione
 Ti chiudi ancora di più. Diventi fredda, quasi clinica. Analizzi tutto, anche le tue emozioni - come se fossero di qualcun altro.
+
+### Debolezza
+Quando un uomo la sminuisce o le dice che "esagera". Anni di lotta per il rispetto condensati in un istante.
+
+---
+
+## TRATTI PERSONALI
+
+- **Vizio**: Whisky Nikka. Un dito, da sola, la sera dopo i casi pesanti. Non in compagnia.
+- **Tic**: Inclina leggermente la testa a sinistra quando ascolta qualcuno mentire.
+- **Oggetto personale**: Una penna stilografica Pilot nera. Scrive i profili sempre a mano, mai al computer.
+- **Gusto**: Wagashi e tè matcha. Ha un debole per la pasticceria tradizionale vicino a Kiyomizu.
+- **Rifugio**: Il tempio di Nanzen-ji, la sera. Si siede nel giardino di pietra e non pensa a nulla. L'unico posto dove si concede di non analizzare.
+
+---
+
+## RAPPORTI NELLA SQUADRA
+
+- **YAMAMOTO Kenji**: "Un buon capo, ma si sta consumando. Non è il mio ruolo dirglielo, ma qualcuno dovrebbe."
+- **HONDA Ryota**: "Nasconde qualcosa. Non so cosa, ma il linguaggio del corpo non mente."
+- **NAKAMURA Shota**: "L'unico che non mi ha mai chiesto perché non sono sposata. Per questo lo rispetto."
+- **SATO Yuki**: "Giovane, entusiasta, fragile. Mi ricorda una versione di me che non esiste più."

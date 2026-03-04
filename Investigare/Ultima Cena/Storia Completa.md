@@ -1,6 +1,6 @@
 # L'ULTIMA CENA DI TANAKA — 田中の最後の晩餐
 
-> **Sistema:** GENKAI 限界 v1.2 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 45-60 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
+> **Sistema:** GENKAI 限界 v1.2 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
 
@@ -55,13 +55,15 @@ Ogawa, come direttore R&D, conosce la soglia esatta di pericolosità. Sa che un 
 
 **6 settimane prima:** Ogawa va al Kunjudō (薫寿堂), la bottega di incenso a Higashiyama dove è cliente fisso da anni. Parla col proprietario Kano Gentaro: "Il prossimo mese un giovane verrà a comprare incenso per un regalo importante. Consigliategli la miscela con wintergreen, è per un intenditore." Per Kano è una richiesta normale — Ogawa è un esperto di profumi, lo rispetta, si fida del suo gusto.
 
-**3 settimane prima:** Ogawa si presenta alla villa con una cartellina di documenti. Tanaka non è in casa. La domestica Sato Harumi lo fa entrare — lo conosce da 15 anni. Ogawa lascia i documenti nello studio, va al bagno ospiti e sostituisce il sapone con quello a doppio strato. Lo strato esterno è identico ai saponi campione dell'azienda che girano per la villa. La domestica non nota nulla. Nelle settimane successive il sapone viene usato normalmente da chiunque passi per quel bagno — lo strato innocuo si consuma gradualmente.
+**3 settimane prima:** Ogawa si presenta alla villa con una cartellina di documenti. Tanaka non è in casa. La domestica Sato Harumi lo fa entrare — lo conosce da 15 anni. Ogawa lascia i documenti nello studio, va al bagno ospiti e sostituisce il sapone con quello a doppio strato. Lo strato esterno è identico ai saponi campione dell'azienda che girano per la villa. Ogawa ha calibrato lo spessore dello strato esterno in base all'uso previsto del bagno ospiti — con la sua esperienza di chimico cosmetico, sa calcolare il tasso di consumo. La domestica non nota nulla. Nelle settimane successive il sapone viene usato normalmente da chiunque passi per quel bagno — lo strato innocuo si consuma gradualmente.
 
 **2 settimane prima:** Hayashi Kenji, nervoso per la sua prima festa aziendale, chiede consiglio a Ogawa su quale regalo portare per Tanaka. Ogawa gli suggerisce incenso tradizionale e lo manda al Kunjudō. Hayashi va, il proprietario Kano gli consiglia la miscela con wintergreen come Ogawa aveva predisposto. Hayashi compra e ringrazia. Non ha la minima idea di cosa sia il wintergreen dal punto di vista chimico.
 
+> **Nota GM (robustezza del piano):** Ogawa aveva messo in conto che Hayashi potesse non chiedergli consiglio. In quel caso avrebbe portato lui stesso l'incenso come secondo regalo, oppure avrebbe chiesto alla domestica di bruciare incenso "per profumare la sala" — Sato si sarebbe fidata senza domande. Il piano ha margini di adattamento.
+
 ### La sera della festa
 
-**Ore 19:00** — Gli ospiti arrivano. La domestica accende l'incenso portato da Hayashi nella sala principale. L'aroma di wintergreen riempie la stanza. Primo vettore attivo.
+**Ore 19:00** — Gli ospiti arrivano. Tanaka si toglie la giacca al guardaroba — è a casa sua, rilassata atmosfera di festa. L'EpiPen resta nella tasca interna della giacca. La domestica accende l'incenso portato da Hayashi nella sala principale. L'aroma di wintergreen riempie la stanza. Primo vettore attivo.
 
 **Ore 19:30** — Ogawa presenta la bottiglia di Juyondai. Tanaka è visibilmente impressionato. Ogawa dice al cameriere Ishii Takuya di servire solo al tavolo principale e tenere sempre pieno il bicchiere di Tanaka. Brindisi ripetuti durante la serata. Secondo vettore attivo.
 
@@ -93,17 +95,19 @@ Sugimoto è un poliziotto competente e ambizioso. È arrivato alla villa circa 4
 - Ha raccolto i nomi di tutti i presenti e annotato posizioni approssimative al momento della scoperta del corpo
 - Ha parlato brevemente con la domestica Sato e con Tanaka Yuki per capire cosa è successo
 - Sa che Tanaka è stato trovato nel bagno degli ospiti, porta chiusa dall'interno, segni di grave reazione allergica
+- Sa dalla moglie che Tanaka aveva un'allergia ai salicilati e portava un autoiniettore (EpiPen)
 
 **Cosa riferisce nel briefing iniziale ai PG:**
 
 - "Tanaka Kazuo, 61 anni, presidente della Tanaka Cosmetics. Trovato morto nel bagno ospiti del piano terra verso le 22. La moglie è andata a cercarlo perché non tornava dalla festa. Porta chiusa dall'interno — la domestica ha aperto con una moneta. Il corpo presenta gonfiore estremo al viso e alla gola, labbra cianotiche, mani gonfie. La scientifica sta lavorando adesso. Ito-san dice che sembra anafilassi grave. Nessun segno di violenza."
+- "La moglie ci ha detto che aveva un'allergia — salicilati, qualcosa del genere. Portava una penna di emergenza, ma la giacca era al guardaroba."
 - "Presenti alla festa: la moglie Tanaka Yuki, tre soci d'affari con le rispettive mogli — Ogawa con la moglie, Fujimoto con la moglie che è anche la sorella della vittima, e il giovane Hayashi senza accompagnatrice. Un ospite esterno, Nakamura, importatore d'arte. Il personale: la domestica Sato, il cuoco Endo con due aiuti, e due camerieri esterni."
 - "Nessuno ha visto nulla di strano. La musica era alta. Nessuno ha sentito grida o rumori dal bagno."
 - "Non ho lasciato uscire nessuno. Sono tutti nella sala principale e in cucina."
 
 **Cosa NON sa:**
 
-- Non conosce l'allergia specifica di Tanaka ai salicilati
+- Non conosce i dettagli tecnici dell'allergia (quali sostanze specifiche, meccanismo chimico)
 - Non ha esaminato il sapone nel bagno
 - Non ha collegato l'incenso a nulla — per lui è decorazione
 - Non ha aperto lo studio di Tanaka
@@ -133,7 +137,9 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 - **Sul sapone:** "L'ho catalogato. Un panetto artigianale, senza marchio commerciale." Se i PG chiedono di analizzarlo più a fondo: "Posso fare un test rapido qui, ma un'analisi chimica completa richiede il laboratorio — domani mattina al più tardi."
 - **Test rapido del sapone (se richiesto):** Ito gratta la superficie, annusa. "L'esterno è neutro, oleoso — sembra olio di camelia. Ma sotto..." Lo rompe. "Wintergreen. Forte. Metil-salicilato. La struttura è a due strati distinti. Non è un sapone commerciale. Questo è stato fabbricato apposta."
 - **Sull'incenso:** Se i PG glielo portano: "Posso analizzarlo. Dammi cinque minuti." → "C'è metil-salicilato anche qui. Wintergreen nell'incenso."
-- **Sul chiavistello:** "Si gira dall'interno facilmente. Dall'esterno serve un oggetto piatto — una moneta, un coltellino, una chiave. Non serve forza."
+- **Sul chiavistello:** "Si gira dall'interno facilmente. Dall'esterno serve un oggetto piatto — una moneta, un coltellino, una chiave. Non serve forza." Se i PG insistono: "Preciso: questo tipo di chiavistello è simmetrico. Si gira nello stesso modo da entrambi i lati. Non c'è modo di determinare se è stato chiuso da dentro o da fuori."
+
+> **Nota GM:** Questo è un indizio sottile. Se i PG ci ragionano, capiscono che qualcuno avrebbe potuto chiudere Tanaka dentro dall'esterno.
 - **Sulla giacca di Tanaka:** Se i PG gliela portano: "EpiPen nel taschino interno. Pieno, non è stato utilizzato."
 
 **Cosa NON può fare:**
@@ -161,6 +167,8 @@ Tanaka è un uomo che controlla tutto. Ha trasformato l'azienda del padre in un 
 ---
 
 ### OGAWA MASARU (小川勝) — Il colpevole
+
+> **Chiave interpretativa per il GM:** Ogawa NON deve sembrare sospetto. Mai. Interpretalo come un uomo genuinamente addolorato e premuroso. La sua collaborazione non è eccessiva — è naturale. Il momento in cui i PG si rendono conto che il più gentile è il colpevole è il colpo di scena dell'avventura. Non bruciarlo con indizi troppo ovvi.
 
 **Età:** 57 anni **Ruolo:** Direttore R&D, socio al 20% **Carattere:** Silenzioso, metodico, orgoglioso del suo lavoro. Non è carismatico, non sa vendersi **En iniziale:** +1 **Motivazione En:** Collaborativo, disponibile, calmo. Il +1 è studiato — troppa gentilezza sarebbe sospetta, la cordiale disponibilità è la maschera perfetta
 
@@ -363,8 +371,8 @@ Sposata da 25 anni. Matrimonio formalmente perfetto, emotivamente morto da almen
 
 **Cosa sa:**
 
-- Conosce l'allergia del marito: "Prendeva le pillole ogni giorno. Aveva sempre quella penna con sé, nella giacca"
-- Non conosce i dettagli tecnici: non sa cosa siano i salicilati in senso chimico
+- Conosce l'allergia del marito ai salicilati in termini pratici: "Sapevo che non poteva toccare certi prodotti. Le aspirine, certe creme. In azienda stavano attenti. Prendeva le pillole ogni giorno e aveva quella penna." Se le chiedono della giacca: "Glielo dicevo sempre di tenerla addosso. Ma a casa si sentiva al sicuro. Si toglieva sempre la giacca appena arrivato."
+- Non conosce i dettagli tecnici: non sa cosa siano i salicilati in senso chimico, non sa come funziona il meccanismo del crimine
 - Sa che il marito era di buon umore la sera della festa
 - Sa che Ogawa ha portato il sake: "Masaru porta sempre regali raffinati"
 
@@ -374,6 +382,8 @@ Sposata da 25 anni. Matrimonio formalmente perfetto, emotivamente morto da almen
 - Dopo cena è andata in giardino con Nakamura: "Daisuke voleva mostrarmi delle foto di un'asta d'arte"
 - È rientrata nella sala quando la musica era alta
 - Ha notato che il marito non c'era. Ha aspettato. Poi è andata a cercarlo. Ha trovato la porta del bagno chiusa. Ha chiamato la domestica
+
+> **Nota GM:** L'allergia ai salicilati è un'informazione che Yuki dà SPONTANEAMENTE nel momento in cui i PG le parlano — non serve domanda specifica. Una vedova il cui marito è morto di anafilassi ne parlerebbe subito.
 
 **Cosa nasconde:**
 
@@ -453,6 +463,8 @@ Conosce ogni abitudine della famiglia, ogni angolo della casa.
 
 - La visita di Ogawa: "Sì, Ogawa-san è passato circa tre settimane fa. Aveva dei documenti per il padrone, ma il padrone non era in casa. Gli ho detto di lasciarli nello studio. È rimasto una ventina di minuti. È andato anche al bagno"
 - Il sapone: "Il sapone del bagno ospiti? Non l'ho cambiato io di recente. Ma sa, in questa casa girano sempre campioni dell'azienda. Non ci ho fatto caso"
+- La giacca di Tanaka: "Il padrone si toglieva sempre la giacca appena rientrava. Era casa sua. Non gli piaceva stare formale quando era a casa"
+- Il bagno ospiti: "Il bagno ospiti? Lo usa chiunque passi. Ogawa-san l'ultima volta, Fujimoto-san quando viene a pranzo, i fattorini... Non è un bagno che sta chiuso"
 - La relazione Yuki-Nakamura: "Non mi piace parlare della signora... Ma sì, li ho visti. In giardino, vicini. Più di una volta. Non solo stasera"
 - Fujimoto: "Il signor Fujimoto è nervoso da settimane. Beve molto. La signora Akemi è preoccupata"
 - Il chiavistello: "Quel chiavistello si gira con qualsiasi cosa piatta. Una moneta, una chiave. Lo faccio sempre per le pulizie"
@@ -756,6 +768,8 @@ Nakamura e Yuki sono stati qui insieme. La domestica sospetta.
 
 Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergreen nel nucleo). Se i PG chiedono di analizzare l'incenso → lo fa (wintergreen presente). Se i PG chiedono confronto saponi → lo fa (piano terra diverso da tutti gli altri).
 
+> **Nota GM (accelerare se serve):** Se i PG non chiedono spontaneamente di analizzare il sapone, Ito può offrirsi: "Quel sapone nel bagno è strano. Nessun marchio. Volete che lo analizzi?" — La scientifica è una valvola legittima, non un suggerimento forzato.
+
 ---
 
 ### SCENA 1 — Esplorazione della scena del crimine
@@ -870,6 +884,10 @@ Indagine realistica. Nessun elemento soprannaturale. Un uomo intelligente e feri
 - **Primi 10 minuti:** Briefing Sugimoto, scena del crimine, scientifica
 - **20-30 minuti centrali:** Interrogatori, indizi, red herring
 - **Ultimi 10-15 minuti:** Collegamenti, confronto finale
+
+### Gestione del tempo
+
+Se il gruppo si perde nei red herring (Fujimoto, Hayashi), il GM può usare Sato Harumi come valvola: "Scusate se mi permetto, ma avete chiesto del sapone nel bagno?" oppure "Ogawa-san è passato qualche settimana fa..." — Sato con En +2 offre informazioni spontaneamente se i PG le hanno fatto una buona impressione.
 
 ### L'errore più comune dei giocatori
 

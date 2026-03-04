@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/L'ULTIMA CENA DI TANAKA/Storia Completa.md",
+                "file": "Investigare/pg/token_prompts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Storia Completa"
-            }
-          },
-          {
-            "id": "e66e44b9e34a4e10",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.12.4"
+              "title": "token_prompts"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,22 +224,45 @@
       "publish:Pubblica modifiche": false
     }
   },
-  "active": "e66e44b9e34a4e10",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/pg/~WRL1885.tmp",
+    "Investigare/pg/~WRD1870.tmp",
+    "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx",
+    "Investigare/pg/~WRL3215.tmp",
+    "Investigare/pg/~WRD3187.tmp",
+    "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
+    "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
+    "Investigare/pg/~WRL3595.tmp",
+    "Investigare/pg/~WRD3583.tmp",
+    "Investigare/pg/~WRL2501.tmp",
+    "Investigare/pg/~WRD2489.tmp",
+    "Investigare/pg/PG_05_Fujita_Emi_foto.png",
+    "Investigare/pg/PG_04_Sato_Yuki_foto.png",
+    "Investigare/pg/PG_03_Nakamura_Shota_foto.png",
+    "Investigare/pg/PG_02_Honda_Ryota_foto.png",
+    "Investigare/pg/PG_01_Yamamoto_Kenji_foto.png",
+    "Investigare/pg/GruppoInvestigatori.png",
+    "Investigare/pg/Fujita Emi.png",
+    "Investigare/pg/Sato Yuki.png",
+    "Investigare/pg/Nakamura Shota.png",
+    "Investigare/pg/Honda Ryota.png",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/pg/token_prompts.md",
+    "Investigare/GENKAI Regolamento v1.2.md",
+    "Investigare/pg/PG_02_Honda_Ryota.md",
+    "Investigare/Ultima Cena/Storia Completa.md",
+    "Investigare/Ultima Cena/CLAUDE.md",
     "Investigare/Il Giudice/png/Yamada_Tetsuo_Agente_Accompagnatore.md",
-    "Investigare/L'ULTIMA CENA DI TANAKA/Storia Completa.md",
     "Investigare/Il Giudice/TIMELINE_GM.md",
-    "Investigare/L'ULTIMA CENA DI TANAKA",
     "Investigare/README.md",
     "Investigare/Il Giudice/PNG Secondari.md",
     "Investigare/Il Giudice/PNG Primari.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Il Giudice/Inizio - Incarico.md",
     "Investigare/Il Giudice/CLAUDE.md",
-    "Investigare/Il Giudice",
     "Investigare/Il Giudice/INDICE GENERALE.md",
     "Savage/CLAUDE.md",
-    "DnD/OneShot - Escape Room/TanGram.png",
     "DnD/OneShot - Escape Room/Idee.md",
     "DnD/OneShot - Escape Room/Enigma 36 - Gambero.md",
     "DnD/OneShot - Escape Room/Enigma 25 - Lupi e Pecore.md",
@@ -261,29 +271,6 @@
     "Savage/Manovre di Combatimento.md",
     "Savage/Regole.md",
     "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
-    "Savage/Operazione Sarcofago/Immagini/MappaFinaleMenoTre.af~lock~",
-    "Savage/Operazione Sarcofago/Immagini/MappaFinaleMenoTre.af",
-    "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772414560711",
-    "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772413987314",
-    "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772413669529",
-    "Savage/Operazione Sarcofago/AI/worker.js.tmp.55716.1772412241503",
-    "Savage/Operazione Sarcofago/AI/monitor.html.tmp.55716.1772411311948",
-    "Savage/Operazione Sarcofago/Schede_Personaggio.html",
-    "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
-    "Savage/Operazione Sarcofago/Piano_Meno_Uno.md",
-    "Savage/Operazione Sarcofago/Squadre_Operative.md",
-    "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
-    "Investigare/Il Giudice/handout/Lettere_Yui.md",
-    "Investigare/Il Giudice/handout/Tabulato_Telefonico.md",
-    "Investigare/Il Giudice/handout/Referto_Clinico_Hiro.md",
-    "Investigare/Il Giudice/Immagini/PG_02_Honda_Ryota.png",
-    "Investigare/Il Giudice/Immagini/PG_01_Yamamoto_Kenji.png",
-    "Investigare/Il Giudice/Immagini/logo.png",
-    "Investigare/Immagini/Yamamoto_Kenji_A4.png",
-    "Investigare/Immagini/ChatGPT Image 23 feb 2026, 00_30_57.png",
-    "Investigare/Immagini/ChatGPT Image 23 feb 2026, 00_31_29.png",
-    "Savage/Operazione Sarcofago/Immagini/Biologo.jpg",
-    "Savage/Operazione Sarcofago/AI/Sfondo.png",
-    "Savage/Operazione Sarcofago/AI/Sfondo1.png"
+    "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md"
   ]
 }

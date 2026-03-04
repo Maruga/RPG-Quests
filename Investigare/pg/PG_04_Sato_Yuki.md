@@ -18,12 +18,12 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 3 | Ti fai coinvolgere troppo |
-| **Pazienza** | 5 | Metodico nel lavoro |
-| **Silenzio** | 3 | Tendi a parlare troppo quando sei nervoso |
-| **Lucidità** | 6 | Eccellente - mente analitica |
+| **Distacco** | 4 | Ti fai coinvolgere troppo |
+| **Pazienza** | 6 | Metodico, preciso |
+| **Silenzio** | 4 | Tendi a parlare troppo quando sei nervoso |
+| **Lucidità** | 7 | Eccellente — mente analitica formidabile |
 | **Ascolto** | 5 | Attento ai dettagli |
-| **Presenza** | 6 | Entusiasta - la tua energia è contagiosa |
+| **Presenza** | 5 | Entusiasta, energia contagiosa |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -116,7 +116,7 @@ Sai che non approva le tue scelte. Sai che ogni telefonata è una battaglia. E s
 | **Cosa può fare** | Recupero dati, analisi file, hacking leggero (niente di troppo illegale) |
 | **Cosa vuole in cambio** | Storie dal lavoro, cene, compagnia |
 
-**Come contattarlo**: Messenger, risponde in tempo reale anche di notte.
+**Come contattarlo**: Telefono di casa. Risponde anche a tarda sera.
 
 **Limite**: Una volta per sessione senza conseguenze. Kato è l'unica persona con cui puoi essere completamente te stesso.
 
@@ -135,3 +135,25 @@ Sei esausto dal peso delle aspettative. Di tua madre, del lavoro, di te stesso. 
 
 ### Quando sei sotto pressione
 Parli troppo. Riempi i silenzi. Ti giustifichi anche quando non devi. Cerchi approvazione.
+
+### Debolezza
+Quando qualcuno lo tratta da ragazzino o mette in dubbio la sua esperienza. Soprattutto se è un superiore.
+
+---
+
+## TRATTI PERSONALI
+
+- **Vizio**: Gomme da masticare alla menta. Ne consuma un pacchetto al giorno in laboratorio.
+- **Tic**: Si sistema gli occhiali spingendoli sul naso con l'indice, anche quando non scivolano.
+- **Oggetto personale**: Un portachiavi a forma di struttura molecolare, regalo di laurea dei compagni.
+- **Gusto**: Curry rice della mensa della centrale. Lo mangia quasi ogni giorno, senza vergogna.
+- **Abitudine**: Conta i passi quando è nervoso. Non se ne accorge, ma i colleghi sì.
+
+---
+
+## RAPPORTI NELLA SQUADRA
+
+- **YAMAMOTO Kenji**: "L'ispettore. Lo ammiro, ma a volte ho paura di deluderlo."
+- **HONDA Ryota**: "Il più figo della squadra. Vorrei avere la sua sicurezza. O almeno fingerla così bene."
+- **NAKAMURA Shota**: "Calmo come un lago. Quando parla con me, mi sento meno ansioso."
+- **FUJITA Emi**: "A volte mi guarda come se sapesse esattamente cosa sto pensando. Probabilmente lo sa."

@@ -18,10 +18,10 @@
 
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
-| **Distacco** | 6 | Punto di forza - freddo sulla scena |
-| **Pazienza** | 2 | Impulsivo, cerchi la scorciatoia |
+| **Distacco** | 6 | Freddo sulla scena |
+| **Pazienza** | 4 | Impulsivo, cerchi la scorciatoia |
 | **Silenzio** | 4 | Normale |
-| **Lucidità** | 6 | Eccellente - noti ogni dettaglio |
+| **Lucidità** | 7 | Brillante — noti ogni dettaglio |
 | **Ascolto** | 4 | Normale |
 | **Presenza** | 6 | Sicuro di te, a volte troppo |
 
@@ -133,3 +133,25 @@ L'adrenalina è una droga. Quando non c'è, ti senti vuoto. Le scommesse riempio
 
 ### Quando sei sotto pressione
 Diventi più arrogante. Prendi rischi. Scommetti - letteralmente e metaforicamente. A volte funziona. A volte no.
+
+### Debolezza
+Quando qualcuno lo chiama "fortunato" invece di riconoscere il suo talento. O quando i debiti vengono anche solo sfiorati.
+
+---
+
+## TRATTI PERSONALI
+
+- **Vizio**: Mild Seven. Fuma solo sulla scena del crimine, dice che lo aiuta a pensare.
+- **Tic**: Fa roteare una moneta da 500 yen tra le dita quando ragiona.
+- **Oggetto personale**: Una lente d'ingrandimento pieghevole nel taschino — vecchia, graffiata, non la cambierebbe mai.
+- **Gusto**: Yakitori e birra Asahi al bancone. Mai al tavolo, sempre al bancone.
+- **Superstizione**: Non inizia mai un sopralluogo dal lato destro della scena. Dice che porta sfortuna. Non sa spiegare perché.
+
+---
+
+## RAPPORTI NELLA SQUADRA
+
+- **YAMAMOTO Kenji**: "Il capo. Duro, giusto, ma ultimamente lo vedo stanco. Non glielo dirò mai."
+- **NAKAMURA Shota**: "Troppo lento per i miei gusti, ma quando trova qualcosa è sempre la cosa giusta."
+- **SATO Yuki**: "Il ragazzino del laboratorio. Bravo, ma deve smettere di chiedere il permesso per tutto."
+- **FUJITA Emi**: "Mi legge come un libro aperto. Questo mi innervosisce."

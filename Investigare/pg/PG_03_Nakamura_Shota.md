@@ -19,11 +19,11 @@
 | Attributo | Valore Base | Note |
 |-----------|-------------|------|
 | **Distacco** | 4 | Normale |
-| **Pazienza** | 6 | Punto di forza - puoi aspettare ore |
+| **Pazienza** | 7 | Punto di forza — puoi aspettare ore |
 | **Silenzio** | 5 | Sai quando tacere |
 | **Lucidità** | 4 | Normale |
-| **Ascolto** | 6 | Eccellente - senti le bugie |
-| **Presenza** | 3 | Normale - non intimidisci, convinci |
+| **Ascolto** | 7 | Eccellente — senti le bugie |
+| **Presenza** | 4 | Non intimidisci, convinci |
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
@@ -131,3 +131,25 @@ Sei stanco di essere quello responsabile. Di dover tenere insieme tutto. A volte
 
 ### Quando sei sotto pressione
 Diventi ancora più silenzioso. Ti ritiri in te stesso. Smetti di chiedere e inizi a osservare. Può sembrare che tu non stia facendo nulla - in realtà stai elaborando tutto.
+
+### Debolezza
+Quando qualcuno usa i legami di sangue come arma. Tocca troppo vicino a casa.
+
+---
+
+## TRATTI PERSONALI
+
+- **Vizio**: Tè verde. Ne beve litri durante gli interrogatori. Offre sempre una tazza all'interrogato.
+- **Tic**: Annuisce lentamente anche quando non è d'accordo. Le persone lo trovano rassicurante.
+- **Oggetto personale**: Un taccuino Moleskine nero, pieno di appunti in calligrafia minuscola. Non usa registratori.
+- **Gusto**: Ramen miso con extra chashu. Conosce tutti i posti migliori di Kyoto a memoria.
+- **Segreto**: Colleziona manga shoujo. Li tiene nascosti in un cassetto della scrivania. Se qualcuno li vedesse, morirebbe di vergogna.
+
+---
+
+## RAPPORTI NELLA SQUADRA
+
+- **YAMAMOTO Kenji**: "Un capo che si porta il lavoro a casa e la casa al lavoro. Lo capisco fin troppo bene."
+- **HONDA Ryota**: "Geniale e imprudente. Lo tengo d'occhio, anche se lui non se ne accorge."
+- **SATO Yuki**: "Ha talento vero. Deve solo imparare che non tutti i problemi si risolvono col microscopio."
+- **FUJITA Emi**: "L'unica che capisce il silenzio come lo capisco io. Ci rispettiamo senza bisogno di parole."
