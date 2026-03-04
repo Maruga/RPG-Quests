@@ -233,3 +233,7 @@ Ricorda: non stai cercando di "vincere". Stai cercando di creare una scena inter
 Se il PG ti convince davvero - se l'interpretazione è buona - puoi cedere. Ma non renderla facile.
 
 La tensione è il punto. Senza tensione, la scena non funziona.
+
+---
+
+> **Nota**: I copioni per i PNG ricorrenti (Taniguchi, Yamada, Ito) si trovano in `Investigare/png/Copioni_PNG.md`.

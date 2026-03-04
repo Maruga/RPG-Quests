@@ -105,7 +105,8 @@
 
 | PNG | Ruolo | Dove | Quando |
 |-----|-------|------|--------|
-| **Commissario Taniguchi** | Superiore dei PG | Ufficio commissario | Orario ufficio |
+| **Commissario Taniguchi** ([[Taniguchi_Kenji_Commissario]]) | Superiore dei PG | Ufficio commissario | Orario ufficio |
+| **Ito Daisuke** ([[Ito_Daisuke_Scientifica]]) | Responsabile scientifica | Laboratorio seminterrato | Quando ci sono prove da analizzare |
 | **Kimura Hiro** | Detective, Anticontraffazione | Piano 1 | Orario lavoro |
 | **Agente Fukuda** | Autore rapporto aggressione | Vari | Turni variabili |
 

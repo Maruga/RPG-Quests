@@ -1,5 +1,8 @@
 # YAMADA TETSUO
-## L'Agente Accompagnatore dei PG
+## L'Agente Accompagnatore dei PG — Dettagli per "Il Giudice"
+
+> **PNG ricorrente** — scheda base condivisa: [[Yamada_Tetsuo_Accompagnatore]]
+> Questo file contiene i dettagli specifici di Yamada per l'avventura "Il Giudice".
 
 ---
 

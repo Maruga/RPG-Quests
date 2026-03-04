@@ -83,11 +83,13 @@ Ogawa, come direttore R&D, conosce la soglia esatta di pericolosità. Sa che un 
 
 ---
 
-### SUGIMOTO RYOTA (杉本良太) — Assistente Ispettore, primo sulla scena
+### YAMADA TETSUO (山田 哲夫) — Accompagnatore PG, primo sulla scena
 
-**Età:** 34 anni **Grado:** Keibu-ho (警部補) — Assistente Ispettore **Ruolo:** Primo ufficiale arrivato sulla scena, fa da ponte tra PG e scientifica **En iniziale:** +1 (rispetta gli investigatori senior, vuole fare bella figura)
+> **PNG ricorrente** — scheda completa: [[Yamada_Tetsuo_Accompagnatore]]
 
-Sugimoto è un poliziotto competente e ambizioso. È arrivato alla villa circa 40 minuti prima dei PG, chiamato da una pattuglia che ha risposto alla telefonata d'emergenza. Ha messo in sicurezza la scena, ha impedito a chiunque di lasciare la villa, e ha fatto chiamare la Kanshiki-ka (scientifica).
+**Età:** 35 anni **Grado:** Junsa-buchō (巡査部長) — Sergente **Ruolo:** Primo ufficiale arrivato sulla scena, accompagnatore e supporto operativo dei PG **En iniziale:** +2 (affidabile, rispettoso, prende il compito seriamente)
+
+Yamada è un poliziotto solido e affidabile, assegnato dal commissario Taniguchi come supporto ai PG. È arrivato alla villa circa 40 minuti prima dei PG, chiamato da una pattuglia che ha risposto alla telefonata d'emergenza. Ha messo in sicurezza la scena, ha impedito a chiunque di lasciare la villa, e ha fatto chiamare la Kanshiki-ka (scientifica).
 
 **Cosa sa:**
 
@@ -112,11 +114,13 @@ Sugimoto è un poliziotto competente e ambizioso. È arrivato alla villa circa 4
 - Non ha collegato l'incenso a nulla — per lui è decorazione
 - Non ha aperto lo studio di Tanaka
 
-**Utilità in gioco:** Sugimoto è a disposizione dei PG per tutto. Può portare messaggi, far spostare persone, sorvegliare qualcuno, andare a controllare cose in giro per la villa. I PG possono mandarlo a fare verifiche (es. "Sugimoto, vai a controllare i saponi negli altri bagni e dimmi se sono uguali a quello della scena del crimine"). Non serve tiro per dargli ordini — è il suo lavoro.
+**Utilità in gioco:** Yamada è a disposizione dei PG per tutto. Può portare messaggi, far spostare persone, sorvegliare qualcuno, andare a controllare cose in giro per la villa. I PG possono mandarlo a fare verifiche (es. "Yamada, vai a controllare i saponi negli altri bagni e dimmi se sono uguali a quello della scena del crimine"). Non serve tiro per dargli ordini — è il suo lavoro.
 
 ---
 
 ### ITO DAISUKE (伊藤大介) — Responsabile Kanshiki-ka (scientifica)
+
+> **PNG ricorrente** — scheda completa: [[Ito_Daisuke_Scientifica]]
 
 **Età:** 52 anni **Grado:** Kanshiki-kan, Classe 1 (鑑識官一級) — oltre 15 anni di servizio **Ruolo:** Responsabile della squadra scientifica sulla scena **En iniziale:** 0 (professionale, non ha relazioni personali coi PG)
 
@@ -588,7 +592,7 @@ Ha visto Ogawa tornare e sedersi come se nulla fosse. Ha visto Tanaka Yuki rient
 
 |PNG|En|Ruolo nell'indagine|
 |---|:-:|---|
-|Sugimoto Ryota (polizia)|+1|Briefing iniziale, esecutore ordini PG|
+|Yamada Tetsuo (polizia)|+1|Briefing iniziale, esecutore ordini PG|
 |Ito Daisuke (scientifica)|0|Analisi scientifiche, dati fattuali|
 |Ogawa Masaru|+1|IL COLPEVOLE — la gentilezza è la maschera|
 |Ogawa Reiko|0|Involontariamente rivela amarezza del marito|
@@ -705,7 +709,7 @@ Bagno al piano terra, lungo un corridoio, lontano dal guardaroba. La scientifica
 
 #### 5. Studio di Tanaka / Shosai (書斎)
 
-Porta chiusa. La domestica o Sugimoto possono aprirlo.
+Porta chiusa. La domestica o Yamada possono aprirlo.
 
 **Indizi:**
 
@@ -757,14 +761,14 @@ Nakamura e Yuki sono stati qui insieme. La domestica sospetta.
 
 - Gli indizi si danno SEMPRE. Il dado non blocca l'indagine
 - La scientifica fornisce dati fattuali senza bisogno di tiri
-- Sugimoto esegue ordini senza bisogno di tiri
+- Yamada esegue ordini senza bisogno di tiri
 - Il tiro serve per gestire le PERSONE, non le PROVE
 
 ---
 
-### SCENA 0 — Briefing (Sugimoto e scientifica)
+### SCENA 0 — Briefing (Yamada e scientifica)
 
-**Tutto automatico.** Sugimoto fa il briefing. Ito mostra la scena. Nessun tiro.
+**Tutto automatico.** Yamada fa il briefing. Ito mostra la scena. Nessun tiro.
 
 Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergreen nel nucleo). Se i PG chiedono di analizzare l'incenso → lo fa (wintergreen presente). Se i PG chiedono confronto saponi → lo fa (piano terra diverso da tutti gli altri).
 
@@ -778,7 +782,7 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 
 - Corpo, condizioni bagno, sapone, lavandino, impronte
 - Giacca → EpiPen
-- Studio → documenti (Sugimoto o domestica aprono)
+- Studio → documenti (Yamada o domestica aprono)
 - Confronto saponi → differenza evidente
 
 **Tiro richiesto:**
@@ -881,7 +885,7 @@ Indagine realistica. Nessun elemento soprannaturale. Un uomo intelligente e feri
 
 ### Ritmo
 
-- **Primi 10 minuti:** Briefing Sugimoto, scena del crimine, scientifica
+- **Primi 10 minuti:** Briefing Yamada, scena del crimine, scientifica
 - **20-30 minuti centrali:** Interrogatori, indizi, red herring
 - **Ultimi 10-15 minuti:** Collegamenti, confronto finale
 
@@ -897,9 +901,9 @@ Accanirsi su Hayashi o Fujimoto. Lascia che perdano tempo. Quando finalmente gua
 
 Se i PG non ci arrivano da soli, la domestica Sato Harumi è la chiave: chi ha portato l'incenso, chi è passato settimane prima, il sapone non è suo.
 
-### Usare Sugimoto e la scientifica
+### Usare Yamada e la scientifica
 
-Sugimoto è un esecutore — non serve tiro per dargli ordini. Ito analizza qualsiasi cosa — risposte definitive, nessun tiro.
+Yamada è un esecutore — non serve tiro per dargli ordini. Ito analizza qualsiasi cosa — risposte definitive, nessun tiro.
 
 ---
 

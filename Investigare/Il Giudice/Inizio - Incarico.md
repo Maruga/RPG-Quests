@@ -32,7 +32,7 @@ Il master può adattare i ruoli al sistema di gioco utilizzato.
 
 **9 aprile 1997, ore 08:14**
 
-I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Taniguchi**, li informa:
+I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Taniguchi** ([[Taniguchi_Kenji_Commissario]]), li informa:
 
 > "È morto il giudice Ishida Makoto. Trovato stamattina nella sua villa a Higashiyama. La domestica l'ha scoperto alle 7:07.
 > Ishida era un nome importante - processi di alto profilo, conoscenze influenti. I media non sanno ancora nulla, ma è questione di ore.
@@ -58,7 +58,7 @@ I giocatori vengono convocati d'urgenza. Il loro superiore, **Commissario Tanigu
 >
 > Un agente giovane in uniforme vi aspetta all'ingresso. Si mette sull'attenti quando vi vede arrivare.
 
-L'agente è **Yamada Tetsuo** ([[Yamada_Tetsuo_Agente_Accompagnatore]]). Primo intervenuto sulla scena. Li saluta con deferenza e fa un rapporto veloce:
+L'agente è **Yamada Tetsuo** ([[Yamada_Tetsuo_Agente_Accompagnatore]] — PNG ricorrente: [[Yamada_Tetsuo_Accompagnatore]]). Primo intervenuto sulla scena. Li saluta con deferenza e fa un rapporto veloce:
 
 > "Signori. Agente Yamada, Pattuglia 7-B. Sono arrivato sulla scena alle 07:28. Il corpo del giudice Ishida è nello studio al piano terra. Non ho toccato nulla. La domestica l'ha trovato alle 7:00, ha urlato, il maggiordomo ha chiamato il 110. La scientifica è già dentro."
 

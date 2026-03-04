@@ -30,7 +30,7 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 `Storia Completa.md` contiene tutto in sequenza:
 1. Premessa GM e azienda (struttura societaria, quote)
 2. Il crimine — meccanismo e timeline dettagliata
-3. PNG istituzionali (Sugimoto, Ito — polizia e scientifica)
+3. PNG istituzionali (Yamada, Ito — polizia e scientifica, PNG ricorrenti con schede in `Investigare/png/`)
 4. PNG presenti alla festa — schede complete per interrogatorio (Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, camerieri, Toda, Mori)
 5. PNG esterni (Nishida, Kano)
 6. Luoghi della villa (planimetria, stanze, prove)
