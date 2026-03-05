@@ -10,7 +10,8 @@
       "Bash(echo:*)",
       "Bash(grep:*)",
       "Bash(wc:*)",
-      "Bash(cd C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Investigare:*)"
+      "Bash(cd C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Investigare:*)",
+      "mcp__tavily-search__tavily_extract"
     ]
   }
 }

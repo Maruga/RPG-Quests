@@ -2,11 +2,6 @@
 ## Regolamento v1.2
 
 
-> **Note di design (da rimuovere prima della stampa):**
-> - Attributi: range 4-9, variazione continua tramite Kiwami e Nami
-> - Ki: max = valore di inizio sessione (non aumenta mai oltre quello)
-> - Gou: da definire meccanica aumento e possibilità di ridurre costo Ki con PE (da 2 a 1)
-
 ---
 
 ## Glossario
@@ -74,9 +69,11 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 
 Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
 
-**Valore iniziale**: Attributo più basso + 1d6
+**Valore iniziale**: Attributo più basso + 2d6 (prendi il dado più alto)
 
-> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 1d6 e ottieni 4. Il tuo Ki iniziale è 5+4 = 9.
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo. Il minimo possibile è quindi 2.
+
+> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 2d6: esce 3 e 5, prendi il 5. Il tuo Ki iniziale è 5+5 = 10.
 
 ### Usi del Ki
 
@@ -93,9 +90,10 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 | Nessun Kiwami | 1d3 Ki |
 | Almeno un **2** (Kiwami positivo) | 1d3+1 Ki |
 | Almeno un **12** (Kiwami negativo) | solo 1 Ki |
-| Sia 2 che 12 | vince il 12 → solo 1 Ki |
+| Sia 2 che 12 | si annullano → 1d3 Ki (recupero standard) |
 
 - Il Ki non può mai superare il **valore di inizio sessione**
+- Se nella stessa giornata si tirano sia 2 che 12, **si annullano**: il recupero torna a 1d3 (standard). Più Kiwami dello stesso tipo contano comunque come uno solo
 - I Nami (3 e 11) **non influenzano** il recupero notturno
 
 **Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
@@ -421,6 +419,28 @@ Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. C
 - Non si accumula tra sessioni - se non usato, perso
 
 > **Esempio**: Devi convincere il capo della yakuza a lasciarti andare. En -4, situazione disperata. Invochi il Satori: riesci. Come, lo descrivi tu - ma funziona.
+
+---
+
+## Kyōryoku 協力
+*Supporto*
+
+Un compagno può aiutarti in un tiro, se narrativamente presente e coinvolto nella scena.
+
+### Meccanica
+
+- Il compagno dichiara di aiutarti **prima** del tiro
+- Ottieni automaticamente **+1** al tuo attributo per quel tiro
+- Se il tiro **fallisce comunque**, il compagno perde **1 Ki** (si è esposto e ha fallito anche lui)
+- Se il tiro ha **successo**, nessun costo per il compagno
+
+### Limiti
+
+- Ogni PG può dare supporto **una sola volta per scena**
+- Un tiro può ricevere supporto da **un solo compagno**
+- Il supporto non si applica ai tiri di Gou
+
+> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato gli dice "Ti copro io, non guardare il corpo — concentrati sulle prove." Sato dà supporto: Tanaka tira con Distacco 7 (6+1). Tira 2d6: 8. Fallimento. Sato perde 1 Ki — la scena ha colpito anche lui. Se Tanaka avesse tirato 5, successo — Sato non perde nulla.
 
 ---
 
@@ -775,8 +795,14 @@ RECUPERO NOTTURNO
 Nessun Kiwami: 1d3 Ki
 Almeno un 2 (Kiwami+): 1d3+1 Ki
 Almeno un 12 (Kiwami-): solo 1 Ki
-Sia 2 che 12: vince il 12 → solo 1 Ki
+Sia 2 che 12: si annullano → 1d3 Ki (standard)
 (mai oltre il max di inizio sessione)
+
+KYŌRYOKU (協力) - SUPPORTO
+Compagno presente dà +1 al tiro (prima di tirare)
+Se fallisci comunque, il compagno perde 1 Ki
+1 supporto per scena per giocatore, 1 compagno per tiro
+Non si applica al Gou
 
 SATORI (悟り)
 1/sessione, successo automatico, non si accumula
