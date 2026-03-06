@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Recupero Dati — Cronologia Browser</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 9px;
+}
+.data-table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.data-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+.data-table tr:nth-child(even) td { background: #f8f8f5; }
+.data-table .url { color: #336; word-break: break-all; font-size: 8px; }
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">RECUPERO DATI — CRONOLOGIA BROWSER</div>
+        <div class="subtitle">Divisione Investigativa — Sezione Informatica Forense</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1216-DIG</div>
+        <div><span class="label">Data analisi</span><br>16 novembre 1997</div>
+        <div><span class="label">Dispositivo</span><br>Fujitsu FMV-DESKPOWER — Studio 307, Facoltà di Lettere</div>
+        <div><span class="label">Software analizzato</span><br>Netscape Navigator 3.04</div>
+        <div><span class="label">Tecnico incaricato</span><br>KATO Hiroshi (consulente esterno)</div>
+        <div><span class="label">Metodo di recupero</span><br>Analisi file cache e registro di sistema</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Nota tecnica</div>
+        <div class="highlight-box">
+            La cronologia del browser è stata cancellata dall'utente. Il recupero è stato effettuato tramite analisi dei file cache e del registro di sistema. Non è possibile determinare la data esatta della cancellazione.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Cronologia recuperata</div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Ora</th>
+                    <th>URL</th>
+                    <th>Titolo pagina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18/08/1997</td>
+                    <td>10:22</td>
+                    <td class="url">http://www.kyoto-u.ac.jp/library/catalog</td>
+                    <td>Catalogo Biblioteca Universitaria</td>
+                </tr>
+                <tr>
+                    <td>18/08/1997</td>
+                    <td>10:45</td>
+                    <td class="url">http://www.heian-art.ac.jp/ceramics/momoyama</td>
+                    <td>Ceramica Momoyama — Influenze Heian</td>
+                </tr>
+                <tr>
+                    <td>21/08/1997</td>
+                    <td>14:30</td>
+                    <td class="url">http://www.nihon-yakuso.jp/encyclopedia/aconitum</td>
+                    <td>Aconitum japonicum — Scheda botanica</td>
+                </tr>
+                <tr>
+                    <td>21/08/1997</td>
+                    <td>14:52</td>
+                    <td class="url">http://www.yakuso-db.jp/extraction/alkaloids</td>
+                    <td>Metodi di estrazione alcaloidi vegetali</td>
+                </tr>
+                <tr>
+                    <td>25/08/1997</td>
+                    <td>09:15</td>
+                    <td class="url">http://www.kyoto-u.ac.jp/art-history/heian-period</td>
+                    <td>Arte periodo Heian — Risorse</td>
+                </tr>
+                <tr>
+                    <td>28/08/1997</td>
+                    <td>16:40</td>
+                    <td class="url">http://www.mountaineering-jp.com/kitayama/trails</td>
+                    <td>Sentieri Monte Kitayama — Guida</td>
+                </tr>
+                <tr>
+                    <td>03/09/1997</td>
+                    <td>11:10</td>
+                    <td class="url">http://www.kyoto-u.ac.jp/library/journals/art</td>
+                    <td>Riviste accademiche — Arte giapponese</td>
+                </tr>
+                <tr>
+                    <td>03/09/1997</td>
+                    <td>11:35</td>
+                    <td class="url">http://www.torikabuto-info.jp/toxicology</td>
+                    <td>Trikabuto — Proprietà tossicologiche</td>
+                </tr>
+                <tr>
+                    <td>08/09/1997</td>
+                    <td>15:20</td>
+                    <td class="url">http://www.asahi.com/1986/kamiya-case-verdict</td>
+                    <td>Caso Kamiya — Verdetto definitivo (1994)</td>
+                </tr>
+                <tr>
+                    <td>08/09/1997</td>
+                    <td>15:48</td>
+                    <td class="url">http://www.asahi.com/1986/torikabuto-insurance</td>
+                    <td>Torikabuto e assicurazione — Cronaca</td>
+                </tr>
+                <tr>
+                    <td>12/09/1997</td>
+                    <td>09:30</td>
+                    <td class="url">http://www.kyoto-u.ac.jp/art-history/conferences</td>
+                    <td>Conferenze — Dipartimento Storia Arte</td>
+                </tr>
+                <tr>
+                    <td>15/09/1997</td>
+                    <td>14:15</td>
+                    <td class="url">http://www.montbell.jp/shop/kyoto-kawaramachi</td>
+                    <td>Montbell Kawaramachi — Orari e accesso</td>
+                </tr>
+                <tr>
+                    <td>22/09/1997</td>
+                    <td>10:00</td>
+                    <td class="url">http://www.bungeishunju.co.jp/academic/submissions</td>
+                    <td>Bungeishunjū — Invio manoscritti</td>
+                </tr>
+                <tr>
+                    <td>30/09/1997</td>
+                    <td>16:20</td>
+                    <td class="url">http://www.med-toxic.jp/aconitine/symptoms</td>
+                    <td>Aconitina — Sintomi di avvelenamento</td>
+                </tr>
+                <tr>
+                    <td>05/10/1997</td>
+                    <td>11:45</td>
+                    <td class="url">http://www.kyoto-u.ac.jp/library/catalog</td>
+                    <td>Catalogo Biblioteca Universitaria</td>
+                </tr>
+                <tr>
+                    <td>18/10/1997</td>
+                    <td>09:00</td>
+                    <td class="url">http://www.nipponlife.co.jp/products/life-insurance</td>
+                    <td>Nippon Life — Polizze vita</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="highlight-box">
+            <strong>Nota:</strong> La cronologia risulta parzialmente cancellata. Le voci sopra riportate sono state recuperate dai file cache residui. Non è possibile garantire la completezza dell'elenco.
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                KATO Hiroshi (加藤宏)<br>
+                <span style="font-size:9px;">Consulente informatico forense</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Ass. Isp. YAMADA Tetsuo (山田哲雄)<br>
+                <span style="font-size:9px;">Distretto di Sakyo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Recupero Dati — Fascicolo 97-KPD-1216-DIG — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

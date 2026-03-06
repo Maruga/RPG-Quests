@@ -145,25 +145,42 @@ Non è una confessione. È il dito puntato di una vittima.
 
 Stipulata 3 mesi fa con la Nippon Life. Beneficiaria: la figlia Aoi. Importo: ¥30.000.000. Clausola standard: non paga in caso di suicidio accertato entro i primi 2 anni.
 
+L'assicurazione **non è un movente per nessuno** — è un beneficio per Aoi. Morimoto sapeva che, morendo "assassinato", la polizza avrebbe pagato e la figlia sarebbe stata protetta dai debiti. Se si fosse suicidato, Aoi non avrebbe preso nulla. È un'azione parallela alla vendetta: protegge la figlia mentre punisce Kuroda.
+
 ---
 
-## Fase 2 — La sera della morte (12 Novembre 1997)
+## Fase 2 — I giorni precedenti e la sera della morte
 
-### La sequenza
+### Preparazione dello studio (giorni precedenti)
 
-**18:00** — Morimoto è nel suo studio all'università. È sera, il dipartimento è quasi vuoto. Solo il custode Tanabe è nell'edificio.
+Nei giorni prima della morte, Morimoto ha preparato il suo studio all'università come una **scena del crimine finta**:
+- Ha spostato documenti per simulare che qualcuno li avesse frugati
+- Ha lasciato la lettera "se mi succede qualcosa" nel cassetto della scrivania
+- Ha nascosto il diario nella libreria, terzo scaffale, dietro i volumi sull'arte Heian
+- Ha lasciato la corrispondenza con l'editore in vista
+- Ha cancellato la cronologia del browser sul computer dello studio
 
-**18:30** — Morimoto prepara la scena. Sposta alcuni documenti, apre un cassetto come se fosse stato frugato. Lascia la lettera nel posto giusto. Appoggia il diario nella libreria, terzo scaffale, dietro i volumi di Heian — visibile solo a chi cerca.
+Lo studio è il luogo dove Kuroda aveva accesso — e dove tutti sapevano che Morimoto lasciava spesso il collirio sulla scrivania. La versione "omicidio" è: Kuroda è entrato nello studio, ha avvelenato il collirio, Morimoto lo ha usato ignaro. La realtà: Morimoto ha avvelenato il flacone lui stesso a casa.
+
+### Il collirio
+
+Morimoto soffre di **sindrome dell'occhio secco** (ドライアイ) — condizione cronica comune in chi legge e studia per ore sotto luci artificiali. Il Dr. Endo gli ha prescritto collirio anni fa. Morimoto ne fa uso costante: **tutti lo sanno** — colleghi, studenti, custode. Lo vedono mettersi il collirio più volte al giorno.
+
+Ha **più flaconi**: uno nella borsa, uno sulla scrivania dello studio, uno a casa. Li dimentica spesso all'università — Nishimura glieli ha restituiti più di una volta. Questo è fondamentale: chiunque frequentasse lo studio sapeva del collirio e poteva accedere al flacone lasciato sulla scrivania. Questo *sembra* dare a Kuroda l'opportunità perfetta.
+
+### La sera della morte (12 Novembre 1997)
+
+**18:30** — Morimoto torna a casa (Sakyo-ku, vicino al Sentiero del Filosofo) dopo una giornata all'università. Porta con sé il flacone di collirio avvelenato — quello che ha preparato a casa giorni prima.
 
 **19:00** — Si mette il collirio avvelenato. Entrambi gli occhi. L'aconitina penetra attraverso le mucose oculari. Il bruciore è immediato e intenso. Sa che ha circa 30-40 minuti prima che i sintomi sistemici diventino gravi.
 
 **19:15** — I primi sintomi: nausea, formicolio al viso, visione offuscata. Morimoto sa che sta funzionando.
 
-**19:22** — Chiama il 119 (numero di emergenza). Voce affannata, spaventata: *"Mi sento male... non riesco a vedere... il cuore... sono all'Università di Kyoto, Facoltà di Lettere, studio 307..."*
+**19:22** — Chiama il 119 (numero di emergenza) da casa. Voce affannata, spaventata: *"Mi sento male... non riesco a vedere... il cuore..."* — dà il suo indirizzo con precisione.
 
 La chiamata è perfetta. Un uomo che chiede aiuto. Un uomo che non vuole morire.
 
-**19:28** — L'ambulanza arriva. I paramedici lo trovano a terra, cosciente ma in stato confusionale. Tachicardia, ipotensione, pupille dilatate. Lo stabilizzano e lo trasportano all'Ospedale Universitario.
+**19:28** — L'ambulanza arriva a casa. I paramedici lo trovano a terra nel soggiorno, cosciente ma in stato confusionale. Tachicardia, ipotensione, pupille dilatate. Il flacone di collirio è sul tavolino — lo ha usato poco prima. Lo stabilizzano e lo trasportano all'Ospedale Universitario.
 
 **19:45** — Arrivo in ospedale. Morimoto è ancora vivo ma perde rapidamente conoscenza. I medici trattano i sintomi (aritmia, ipotensione) ma non identificano la causa. Non sospettano avvelenamento — sembra un evento cardiaco acuto.
 
@@ -219,7 +236,12 @@ Quando scopre che il padre è stato "assassinato", il suo dolore si mescola alla
 
 **Per i PG**: Aoi è il personaggio più difficile da gestire emotivamente. Se la verità esce, perde tutto — il padre come lo conosceva, l'assicurazione, la dignità della famiglia. I PG con Distacco basso faranno fatica.
 
-**En iniziale**: 0 (neutrale, collaborativa ma diffidente verso la polizia)
+**En iniziale**:
+- Yamamoto: +1 (rispetta l'autorità, lui è il capo)
+- Honda: 0
+- Nakamura: +1 (è paziente, la fa sentire ascoltata)
+- Sato: 0
+- Fujita: +1 (donna, empatia naturale con Aoi)
 
 ---
 
@@ -232,9 +254,16 @@ Descritto sopra. In interrogatorio:
 - **Mente** quando minimizza la rivalità ("divergenza accademica")
 - **Dice la verità** quando nega l'omicidio
 - **Nasconde** la vergogna del plagio — sa di averlo fatto, non vuole ammetterlo
-- Sotto pressione estrema, potrebbe ammettere il plagio pensando che sia meglio confessare *quello* piuttosto che essere accusato di omicidio
+- **Quando alle strette**, confessa il plagio. Lo fa pensando che sia meglio ammettere *quello* piuttosto che essere accusato di omicidio. La confessione è dolorosa e sincera — ma non cambia le prove contro di lui per l'omicidio.
+- **Non ha alibi**: la sera del 12 Novembre la moglie e i figli erano fuori città (visita ai parenti). Kuroda è rimasto a casa perché non si sentiva bene. Nessuno può confermarlo. Ha cenato da solo, guardato la televisione, è andato a letto. Niente di verificabile.
+- Cercherà di portare prove della sua innocenza — ma non ne ha. Può solo dire "non sono stato io", senza nulla che lo confermi.
 
-**En iniziale**: -1 (diffidente verso la polizia, sa che le prove lo incastrano)
+**En iniziale**:
+- Yamamoto: -1 (vede l'autorità come una minaccia)
+- Honda: -2 (Honda è aggressivo, lo spaventa)
+- Nakamura: 0 (il più neutrale, paziente)
+- Sato: -1 (giovane, Kuroda non lo prende sul serio)
+- Fujita: -1 (la profiler lo mette a disagio)
 
 ---
 
@@ -249,7 +278,12 @@ Può rivelare, sotto pressione: che Kuroda negli ultimi mesi era nervoso perché
 
 **Questo è un indizio**: perché Morimoto avrebbe cercato il contatto con l'uomo che odiava?
 
-**En iniziale**: -2 (ostile, protegge il marito)
+**En iniziale**:
+- Yamamoto: -2 (ostile, lo vede come il nemico del marito)
+- Honda: -3 (se Honda è aggressivo, lei si chiude completamente)
+- Nakamura: -1 (il meno minaccioso)
+- Sato: -1
+- Fujita: -2 (non si fida di un'altra donna che "analizza")
 
 ---
 
@@ -264,7 +298,12 @@ Col senno di poi, potrebbe capire: stava mettendo in ordine perché sapeva che s
 
 **Dettaglio chiave**: Sa che Morimoto usava il collirio tutti i giorni — occhi secchi cronici, il medico gliel'aveva prescritto da anni. Il flacone era sempre sulla scrivania. **Chiunque** frequentasse lo studio lo sapeva.
 
-**En iniziale**: +1 (collaborativa, vuole giustizia per il maestro)
+**En iniziale**:
+- Yamamoto: +1 (rispetta il grado)
+- Honda: 0 (troppo diretto per i suoi gusti)
+- Nakamura: +2 (paziente, la ascolta — si apre molto con lui)
+- Sato: +1 (giovane come lei, affinità generazionale)
+- Fujita: +1 (professionale, rispettosa)
 
 ---
 
@@ -273,15 +312,13 @@ Col senno di poi, potrebbe capire: stava mettendo in ordine perché sapeva che s
 **Ruolo**: Custode della Facoltà di Lettere
 **Lavoro**: Custode da 28 anni
 
-La sera della morte:
-- Ha visto Morimoto entrare alle **17:30**. Solo.
-- **Non ha visto nessun altro entrare** dall'ingresso principale.
-- Ha sentito qualcosa (la caduta di Morimoto?) verso le **19:15**.
-- Ha visto arrivare l'ambulanza alle **19:28**.
+**Sugli accessi allo studio**: Conferma che nelle settimane precedenti Kuroda è entrato nello studio di Morimoto almeno 4 volte. Morimoto lo invitava. *"Non era strano — i professori si consultano."*
+
+Il **12 Novembre** (giorno della morte): Morimoto è stato in studio durante il giorno, è uscito verso le **17:30** come al solito. Tanabe non ha notato nulla di anomalo.
 
 **Dettaglio critico**: L'edificio ha un ingresso secondario sul retro, normalmente chiuso ma apribile dall'esterno con una chiave che hanno solo i professori ordinari. Tanabe non controlla quell'ingresso. Kuroda ha una copia di quella chiave (come tutti gli ordinari e vice-ordinari).
 
-Questo *sembra* dare a Kuroda un modo per entrare non visto. Ma la realtà è che nessuno è entrato da lì quella sera — è solo un'ombra che Morimoto sapeva che i PG avrebbero trovato.
+Questo *sembra* dare a Kuroda un modo per entrare nello studio non visto — e avvelenare il collirio che Morimoto lasciava spesso sulla scrivania. Ma la realtà è che nessuno ha manomesso nulla nello studio. Morimoto ha avvelenato il flacone a casa.
 
 **En iniziale**: 0 (neutrale, rispettoso della polizia)
 
@@ -298,7 +335,12 @@ Mette pressione sui PG dalla metà della Sessione 1 in poi: *"Avete il colpevole
 
 Non è un antagonista — è un superiore pragmatico in un sistema gerarchico rigido. Resistere alla sua pressione richiede Presenza o Pazienza.
 
-**En iniziale**: +1 con Yamamoto (colleghi da anni), 0 con gli altri
+**En iniziale**:
+- Yamamoto: +1 (colleghi da anni, rispetto reciproco)
+- Honda: 0 (sa dei problemi di gioco, lo tiene d'occhio)
+- Nakamura: 0
+- Sato: -1 (troppo giovane, non lo prende sul serio)
+- Fujita: 0
 
 ---
 
@@ -427,10 +469,11 @@ Se i PG chiedono a Kuroda del libro: non ne sa nulla. Non l'ha mai ordinato. È 
 ### Cosa si trova
 
 **Sulla scrivania**:
-- Flacone di collirio (reperto A — contiene tracce di aconitina)
 - Documenti sparsi (apparentemente frugati, in realtà spostati da Morimoto)
 - Tazza di tè freddo (non avvelenata)
-- Telefono (ultimo numero chiamato: 119)
+- Telefono fisso
+- **Computer** (Fujitsu desktop, Netscape Navigator) — cronologia del browser cancellata. Se i PG chiedono un'analisi del disco (tramite Sato Yuki o il suo contatto Kato Hiroshi), la cronologia è **recuperabile** → vedi handout "Cronologia Browser"
+- **Nota**: il collirio NON è qui. Il flacone avvelenato è stato trovato a casa (reperto A). Ma sulla scrivania c'è lo **spazio dove di solito Morimoto appoggiava il collirio** — Nishimura e il custode confermano che lo lasciava sempre lì. Questo rafforza la versione "omicidio": Kuroda poteva accedere al flacone quando Morimoto non era in studio
 
 **Nel cassetto della scrivania**:
 - La lettera "se mi succede qualcosa" (busta chiusa, indirizzata a nessuno)
@@ -444,12 +487,12 @@ Se i PG chiedono a Kuroda del libro: non ne sa nulla. Non l'ha mai ordinato. È 
 - Chiusa dall'interno. Nessun segno di effrazione. Dà su un giardino interno al secondo piano — difficile da raggiungere dall'esterno.
 
 **Porta**:
-- Era chiusa a chiave quando i paramedici sono arrivati? No — Morimoto l'ha lasciata aperta (doveva far entrare l'ambulanza).
+- Chiusa a chiave normalmente. Lo studio è stato sigillato dopo la riapertura del caso.
 
 ### Dettagli per un PG attento
 - I documenti "frugati" sono in disordine, ma nessun foglio è strappato o calpestato. È un disordine **ordinato** — come se qualcuno avesse spostato le pile senza fretta.
-- Il collirio è sulla scrivania in posizione naturale — non nascosto, non buttato via. Chi avvelena un collirio e lo rimette sulla scrivania?
-- La sedia è allontanata dalla scrivania ma non rovesciata. Morimoto si è alzato (per il dolore) e poi è caduto.
+- Il collirio **non c'è** sulla scrivania (trovato a casa), ma c'è lo spazio dove lo lasciava di solito — tutti lo confermano.
+- Il computer ha la cronologia cancellata — perché un professore cancellerebbe la cronologia del browser?
 
 ---
 
@@ -470,12 +513,19 @@ Se i PG chiedono a Kuroda del libro: non ne sa nulla. Non l'ha mai ordinato. È 
 
 ## 3. Casa di Morimoto — Sakyo-ku, vicino al Sentiero del Filosofo
 
-Appartamento modesto per un professore ordinario. Due stanze, cucina, bagno. Ordinato ma spoglio — pochi mobili, molti libri.
+Appartamento modesto per un professore ordinario. Due stanze, cucina, bagno. Ordinato ma spoglio — pochi mobili, molti libri. È qui che Morimoto è stato trovato dai paramedici la sera del 12 Novembre.
+
+### Scena del ritrovamento (soggiorno)
+- Morimoto è stato trovato a terra, cosciente ma confuso
+- **Flacone di collirio** sul tavolino del soggiorno (reperto A — contiene tracce di aconitina). È il flacone che ha usato poco prima di chiamare il 119
+- Un secondo flacone di collirio (pulito, non avvelenato) nel bagno — il suo flacone "di casa" normale
+- La porta d'ingresso era aperta (i paramedici sono entrati senza problemi)
 
 ### Cosa si trova
 
 **Nel bagno**:
 - Scatola di Tofranil (antidepressivo) — prescritto dal Dr. Endo. Nascosta dietro altri medicinali.
+- Secondo flacone di collirio (pulito) — Morimoto aveva più flaconi, questo è quello che teneva a casa normalmente
 
 **Nello studio di casa**:
 - Libri di botanica giapponese, tra cui il *Nihon Yakusō Zusetsu* con un segnalibro alle pagine sul trikabuto (ma sono testi accademici normali per uno storico dell'arte che studia la cultura materiale — non è una prova schiacciante da sola)
@@ -723,10 +773,10 @@ Opzione C — **Qualcosa nel mezzo**:
 Lettera "se mi succede qualcosa" → rivalità accademica → plagio confermato dall'editore → accesso allo studio → chiave ingresso secondario → visite frequenti → libro di botanica ordinato a suo nome → **Kuroda è il colpevole**
 
 ## Percorso B: Qualcosa non torna
-Custode non ha visto nessuno → disordine troppo ordinato → Morimoto era "sereno" → Kuroda sincero quando nega → **chi ha avvelenato il collirio se nessuno è entrato?**
+Disordine troppo ordinato nello studio → Morimoto era "sereno" negli ultimi mesi → Kuroda sincero quando nega → il collirio avvelenato è stato trovato a casa, non allo studio → Kuroda non ha alibi ma non ha nemmeno accesso alla casa di Morimoto → cronologia browser cancellata (perché?) → **qualcosa non quadra**
 
 ## Percorso C: La verità
-Prelievo anomalo su estratto conto (Kawaramachi) → negozio Montbell (commesso riconosce Morimoto, domande su Kitayama) → chiosco in montagna (pesce fuor d'acqua, sentieri con piante selvatiche) → libro di botanica con segnalibro sul trikabuto → Dr. Endo: mani irritate = contatto con aconitina → antidepressivi → debiti → polizza con clausola suicidio → diario troppo perfetto → frammenti della lettera ad Aoi → residui nel lavandino (se richiesto) → **Morimoto ha raccolto la pianta in montagna, ha estratto il veleno a casa (facendo errori da non-chimico), e ha orchestrato tutto da solo**
+Cronologia browser recuperata (ricerche su trikabuto, estrazione aconitina, caso Kamiya) → prelievo anomalo su estratto conto (Kawaramachi) → negozio Montbell (commesso riconosce Morimoto, domande su Kitayama) → chiosco in montagna (pesce fuor d'acqua, sentieri con piante selvatiche) → libro di botanica con segnalibro sul trikabuto → Dr. Endo: mani irritate = contatto con aconitina → antidepressivi → debiti → polizza con clausola suicidio → diario troppo perfetto → frammenti della lettera ad Aoi → residui nel lavandino (se richiesto) → **Morimoto ha raccolto la pianta in montagna, ha estratto il veleno a casa (facendo errori da non-chimico), e ha orchestrato tutto da solo**
 
 ---
 
@@ -760,6 +810,29 @@ La Sessione 2 è il **ribaltamento**. Ogni nuova scoperta smonta un pezzo del ca
 - **Resistere a Takagi**: Presenza o Pazienza
 - **Confronto finale con Aoi (se riveli la verità)**: Distacco, Silenzio
 
+## La chiamata al 119 (trascrizione)
+
+Se i PG chiedono la registrazione della chiamata di emergenza, consegna questa trascrizione (o leggila ad alta voce):
+
+> **Operatore**: 119, qual è l'emergenza?
+> **Morimoto**: *(voce affannata)* Mi sento male... non riesco a vedere bene... il cuore batte fortissimo...
+> **Operatore**: Mi dica il suo indirizzo.
+> **Morimoto**: *(preciso, senza esitazione)* Sakyo-ku, Shishigatani, via Tetsugaku-no-Michi 14, secondo piano. Morimoto Takeshi.
+> **Operatore**: Abbia pazienza, stiamo mandando un'ambulanza. Riesce a descrivere i sintomi?
+> **Morimoto**: Bruciore... gli occhi... mi fa male il petto... per favore fate presto...
+> **Operatore**: Rimanga in linea. L'ambulanza è in arrivo.
+> *(silenzio, poi un tonfo — Morimoto cade)*
+
+**Tiro su Ascolto**: Un PG attento nota che Morimoto è affannato e spaventato, ma dà l'indirizzo completo **senza esitazione** — nome, via, numero civico, piano. Una persona colta da un malore improvviso è confusa, balbetta, fatica a ricordare. Morimoto sapeva esattamente cosa stava succedendo e aveva preparato anche questo.
+
+## La cronologia browser (handout)
+
+Se i PG chiedono un'analisi del computer nello studio, la cronologia del browser (Netscape Navigator) è stata cancellata. Ma un tecnico può recuperarla — Sato Yuki può usare il suo contatto **Kato Hiroshi** (tech worker, data recovery) per il recupero.
+
+Il recupero richiede **24-48 ore** — i PG lo chiedono nella Sessione 1, i risultati arrivano nella Sessione 2.
+
+Il contenuto recuperato sarà un handout separato (da creare): una lista di URL su più giorni, mescolati tra ricerche accademiche normali (arte Heian, ceramica Momoyama) e ricerche sospette (proprietà del trikabuto, estrazione alcaloidi, caso Kamiya 1986, sintomi avvelenamento da aconitina). Le ricerche sospette sono distribuite su settimane diverse per non sembrare un blocco unico.
+
 ## I Gou utili
 
 - **Ombra della Verità** → su Kuroda: sente che mente (sul plagio) ma dice la verità (sull'omicidio). Informazione devastante se interpretata bene.
@@ -773,6 +846,43 @@ La Sessione 2 è il **ribaltamento**. Ogni nuova scoperta smonta un pezzo del ca
 Non forzare una scelta. Lascia che i PG discutano tra loro. Il disaccordo è benvenuto — anzi, è il punto. Un PG potrebbe voler proteggere Aoi, un altro voler fare giustizia per Kuroda. Questo conflitto interno è L'Ultima Lezione.
 
 Se i PG scelgono di tacere, non giudicarli. Se scelgono la verità, non premiarli. Entrambe le scelte hanno un costo. Il gioco finisce quando i PG decidono — non quando il GM decide per loro.
+
+## Reazioni alla scoperta della verità
+
+### Se i PG dichiarano suicidio
+
+**Aoi**: Rifiuta di accettarlo. Reagisce con disperazione, poi con rabbia. Preferisce mentire a se stessa piuttosto che accettare che il padre si sia suicidato e abbia usato la sua morte come arma. Continuerà a dare la colpa a Kuroda — *"Anche se non l'ha ucciso con le mani, l'ha distrutto. È la stessa cosa."* Non perdonerà mai, non accetterà la verità. Il dolore è troppo grande.
+
+**Kuroda**: Sollevato ma segnato. Viene scagionato dall'omicidio, ma la confessione del plagio ha conseguenze: l'università lo **degrada** dalla cattedra. In Giappone la reputazione accademica è tutto — il disonore pubblico è una condanna sociale anche senza prigione. Kuroda non tornerà mai quello di prima.
+
+**Takagi**: Segue gli ordini dall'alto. Se i superiori decidono per il suicidio, si adegua. Se i superiori vogliono l'omicidio (per evitare lo scandalo di un errore investigativo), spinge per chiudere su Kuroda. Takagi non ha opinioni personali — ha una gerarchia. Fa quello che il sistema richiede, con efficienza e senza domande. Se i PG gli portano prove del suicidio, le porta ai superiori e aspetta istruzioni. *"Non è una mia decisione."*
+
+### Se i PG lasciano che sia omicidio
+
+**Kuroda**: Viene arrestato. Il processo andrà avanti — le prove circostanziali sono forti anche se non schiaccianti. Senza alibi (famiglia fuori, lui a casa da solo) e con il movente del plagio, rischia la condanna. Continuerà a proclamarsi innocente, ma nessuno gli crederà.
+
+**Aoi**: Ha giustizia, soldi, e la memoria del padre intatta. Non saprà mai la verità. Vivrà nel dolore di aver perso il padre, ma con la certezza che il responsabile è stato punito.
+
+**I PG**: Vivono sapendo di aver mandato un innocente in prigione. Ogni tanto ci penseranno. Forse uno di loro un giorno parlerà.
+
+## Evento reattivo: Il diario
+
+Se i PG **non trovano il diario** nello studio entro la Sessione 2, **Aoi lo trova**. Qualche giorno dopo la morte, va all'università per svuotare lo studio del padre. Trova il quaderno Muji dietro i volumi di Heian. Lo legge.
+
+Il diario rafforza la sua convinzione che Kuroda è il responsabile — le annotazioni sulla "paura di Kuroda" la confermano in quello che già crede. Porta il diario alla polizia: *"Mio padre aveva paura di lui. È scritto tutto qui."*
+
+Se questo succede:
+- Le prove contro Kuroda si rafforzano ulteriormente
+- I PG hanno meno tempo per dubitare — la pressione per chiudere il caso aumenta
+- Aoi diventa un elemento attivo nell'indagine, non solo una testimone passiva
+
+## Se i PG chiudono il caso nella Sessione 1
+
+È una scelta legittima. Se decidono che Kuroda è colpevole e portano il caso al magistrato, **hanno sbagliato**. Un innocente va in prigione.
+
+Non c'è una valvola di sicurezza. Non tutti i casi si risolvono bene. Questa è un'avventura investigativa per giocatori esperti — e i giocatori esperti devono accettare che possono fallire.
+
+Il GM non interviene per "salvare" la situazione. Se i PG non hanno cercato abbastanza, non hanno fatto le domande giuste, non hanno seguito i dubbi — il caso si chiude male. L'Ultima Lezione di Morimoto ha funzionato perfettamente.
 
 ---
 
@@ -796,10 +906,13 @@ Se i PG scelgono di tacere, non giudicarli. Se scelgono la verità, non premiarl
 | Settembre-Ottobre 1997 | Scrive il diario (verità + menzogne calibrate). Invita Kuroda allo studio 4 volte |
 | Ottobre 1997 | Scrive la lettera "se mi succede qualcosa" |
 | Novembre 1997 | Prepara la busta per Aoi (polizza, lettera, contatti) |
-| 12 Novembre 1997, 18:00 | Entra nello studio. Prepara la scena |
-| 12 Novembre 1997, 19:00 | Si mette il collirio avvelenato |
-| 12 Novembre 1997, 19:22 | Chiama il 119 simulando un malore |
-| 12 Novembre 1997, 19:28 | Ambulanza arriva. Morimoto cosciente ma confuso |
+| Novembre 1997 | Fa ricerche sul computer dell'università (trikabuto, estrazione aconitina, caso Kamiya). Cancella la cronologia del browser |
+| 8-11 Novembre 1997 | Prepara lo studio all'università: documenti in disordine, lettera nel cassetto, diario nella libreria |
+| 12 Novembre 1997, 17:30 | Esce dall'università normalmente. Il custode lo vede uscire |
+| 12 Novembre 1997, 18:30 | A casa. Prende il flacone di collirio avvelenato |
+| 12 Novembre 1997, 19:00 | Si mette il collirio avvelenato. Entrambi gli occhi |
+| 12 Novembre 1997, 19:22 | Chiama il 119 da casa, simulando un malore |
+| 12 Novembre 1997, 19:28 | Ambulanza arriva a casa. Morimoto cosciente ma confuso |
 | 12 Novembre 1997, 19:45 | Arrivo in ospedale. Perde conoscenza |
 | 12 Novembre 1997, 22:30 | Morte. Diagnosi iniziale: arresto cardiaco |
 | 13 Novembre 1997 | Autopsia standard: morte naturale per evento cardiaco acuto |

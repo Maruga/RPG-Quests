@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Lettera Morimoto — Reperto B</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #2c2418;
+    background: #d6ceb8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #f5f0e0;
+    padding: 30mm 25mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+    background-image:
+        radial-gradient(ellipse at 20% 80%, rgba(180,160,120,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(160,140,100,0.1) 0%, transparent 50%);
+}
+.document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 28px,
+        rgba(160,140,110,0.06) 28px,
+        rgba(160,140,110,0.06) 29px
+    );
+    pointer-events: none;
+}
+.letter-body {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-indent: 2em;
+}
+.letter-body p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+.signature {
+    text-align: right;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 15px;
+    color: #3a2e1a;
+}
+.evidence-tag {
+    position: absolute;
+    bottom: 20mm;
+    left: 18mm;
+    right: 18mm;
+    background: #fff;
+    border: 2px solid #8b0000;
+    padding: 8px 14px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 9px;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: rotate(-1deg);
+}
+.evidence-tag::before {
+    content: "\25A0  ";
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 25mm 20mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="letter-body">
+        <p>Se dovesse succedermi qualcosa, guardate Kuroda Haruki.</p>
+
+        <p>Sa cosa ha fatto dieci anni fa. Sa che io possiedo le prove di quello che ha fatto alla mia ricerca. Non mi fido più di lui.</p>
+
+        <p>Non scrivo questo per paura. Lo scrivo perché qualcuno deve sapere la verità, nel caso io non possa più raccontarla.</p>
+    </div>
+
+    <div class="signature">Morimoto Takeshi</div>
+
+    <div class="evidence-tag">Reperto B — Rinvenuto in busta chiusa, cassetto scrivania Studio 307, Facoltà di Lettere — 16/11/1997</div>
+
+</div>
+</body>
+</html>

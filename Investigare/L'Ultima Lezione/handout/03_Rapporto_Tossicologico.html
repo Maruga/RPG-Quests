@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Rapporto Tossicologico — Caso Morimoto</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+}
+table th, table td {
+    border: 1px solid #999;
+    padding: 4px 8px;
+    text-align: left;
+}
+table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+table tr:nth-child(even) { background: #f9f9f5; }
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都大学医学部附属病院 — OSPEDALE UNIVERSITARIO DI KYOTO</div>
+        <div class="title">RAPPORTO TOSSICOLOGICO INTEGRATIVO</div>
+        <div class="subtitle">Laboratorio Tossicologia Forense</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1216-TOX</div>
+        <div><span class="label">Data analisi</span><br>15 novembre 1997</div>
+        <div><span class="label">Laboratorio</span><br>Tossicologia Forense, Ospedale Univ. Kyoto</div>
+        <div><span class="label">Metodo analitico</span><br>HPLC (cromatografia liquida ad alta prestazione)</div>
+        <div><span class="label">Vittima</span><br>MORIMOTO Takeshi (森本 武), 63 anni</div>
+        <div><span class="label">Richiesto da</span><br>Procura di Kyoto — rif. autopsia 97-KPD-1216-AUT</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Premessa</div>
+        <p>A seguito della richiesta della Procura di Kyoto, è stata disposta analisi tossicologica integrativa tramite HPLC sui campioni biologici della vittima e sul reperto A (flacone di collirio) sequestrato nell'appartamento del defunto.</p>
+        <p>L'analisi è stata richiesta a seguito di segnalazione della compagnia assicurativa Nippon Life in merito a polizza vita di recente stipulazione.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Risultati analisi — campioni biologici</div>
+        <table>
+            <tr>
+                <th>Campione</th>
+                <th>Sostanza ricercata</th>
+                <th>Esito</th>
+                <th>Concentrazione</th>
+            </tr>
+            <tr>
+                <td>Sangue periferico</td>
+                <td>Aconitina</td>
+                <td style="color:#8b0000;font-weight:bold;">POSITIVO</td>
+                <td>&gt;3 ng/mL (soglia letale: &gt;1 ng/mL)</td>
+            </tr>
+            <tr>
+                <td>Mucosa oculare (bilaterale)</td>
+                <td>Aconitina</td>
+                <td style="color:#8b0000;font-weight:bold;">POSITIVO</td>
+                <td>Assorbimento transcorneale confermato</td>
+            </tr>
+            <tr>
+                <td>Contenuto gastrico</td>
+                <td>Aconitina</td>
+                <td style="color:green;font-weight:bold;">NEGATIVO</td>
+                <td>Non rilevata — via orale esclusa</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Risultati analisi — Reperto A (collirio)</div>
+        <table>
+            <tr>
+                <th>Reperto</th>
+                <th>Sostanza rilevata</th>
+                <th>Esito</th>
+                <th>Concentrazione stimata</th>
+            </tr>
+            <tr>
+                <td>Reperto A — Flacone collirio</td>
+                <td>Aconitina disciolta in soluzione oftalmica</td>
+                <td style="color:#8b0000;font-weight:bold;">POSITIVO</td>
+                <td>~0.5 mg/mL</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Interpretazione dei risultati</div>
+
+        <div class="critical-box">
+            <strong>Via di somministrazione:</strong> La via di somministrazione è oculare (collirio). L'aconitina non è presente nei pannelli tossicologici di routine — il rilevamento è stato possibile solo tramite analisi HPLC mirata.
+        </div>
+
+        <p>La concentrazione ematica di aconitina (&gt;3 ng/mL) è ampiamente superiore alla soglia letale riconosciuta in letteratura (&gt;1 ng/mL). La presenza dell'alcaloide nelle mucose oculari e l'assenza nel contenuto gastrico confermano in modo univoco la via di assorbimento transcorneale.</p>
+        <p>Il collirio (Reperto A) risulta contaminato con aconitina alla concentrazione di ~0.5 mg/mL, sufficiente a causare il decesso con poche gocce applicate sulla mucosa oculare.</p>
+
+        <div class="highlight-box">
+            <strong>NOTA INVESTIGATIVA:</strong> L'aconitina (アコニチン) è il principale alcaloide tossico del trikabuto (トリカブト, <em>Aconitum japonicum</em>). Cfr. caso Kamiya Tsutomu, 1986 (トリカブト保険金殺人事件).
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Conclusione</div>
+
+        <div class="critical-box">
+            <strong>Causa del decesso da riclassificare:</strong> Avvelenamento da aconitina per via oculare. La morte, inizialmente attribuita a evento cardiaco acuto, è da ricondursi all'azione cardiotossica dell'aconitina assorbita tramite applicazione oculare di collirio contaminato.<br><br>
+            <strong>Classificazione: OMICIDIO.</strong>
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Dr. TANAKA Hiromi (田中弘美)<br>
+                <span style="font-size:9px;">Medicina Legale — Ospedale Univ. Kyoto</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Dr. FUJIMOTO Yuko (藤本裕子)<br>
+                <span style="font-size:9px;">Responsabile Lab. Tossicologia Forense</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">TOSSICOL.<br>FORENSE<br>法中毒<br>京都</div>
+
+    <div class="footer">
+        Rapporto Tossicologico Integrativo — Fascicolo 97-KPD-1216-TOX — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>
