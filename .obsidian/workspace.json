@@ -221,11 +221,52 @@
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "webpage-html-export:Export as HTML": false,
-      "publish:Pubblica modifiche": false
+      "publish:Pubblica modifiche": false,
+      "edge-tts:Read note aloud": false
     }
   },
-  "active": "d769841e2388e25f",
+  "floating": {
+    "id": "2e5802c91e361dd0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "db03cbf88b19c9ab",
+        "type": "window",
+        "children": [
+          {
+            "id": "d0793709abecd569",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "f5a281bc1d5a31fa",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://tts.travisvn.com/",
+                    "title": "Edge TTS Voices | Text-to-Speech API | OpenAI TTS API",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "Edge TTS Voices | Text-to-Speech API | OpenAI TTS API"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1536,
+        "y": 152,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "f5a281bc1d5a31fa",
   "lastOpenFiles": [
+    "Investigare/Ultima Cena/Storia Completa.md",
     "Investigare/Kitsune/CRONISTORIA COMPLETA.md",
     "Investigare/L'Ultima Lezione/Storia Completa.md",
     "Investigare/L'Ultima Lezione/CLAUDE.md",
@@ -249,7 +290,6 @@
     "Investigare/L'Ultima Lezione/handout/06_Lettera_Morimoto.html",
     "Investigare/L'Ultima Lezione/handout/02_Autopsia_Standard.html",
     "Investigare/L'Ultima Lezione/handout/01_Rapporto_Preliminare.html",
-    "Investigare/Ultima Cena/Storia Completa.md",
     "Investigare/Ultima Cena/CLAUDE.md",
     "Investigare/Il Giudice/handout/Articoli_Giornale.md",
     "Investigare/pg/PG_05_Fujita_Emi_foto.png",
