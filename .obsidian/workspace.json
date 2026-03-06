@@ -225,47 +225,12 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "floating": {
-    "id": "2e5802c91e361dd0",
-    "type": "floating",
-    "children": [
-      {
-        "id": "db03cbf88b19c9ab",
-        "type": "window",
-        "children": [
-          {
-            "id": "d0793709abecd569",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f5a281bc1d5a31fa",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://tts.travisvn.com/",
-                    "title": "Edge TTS Voices | Text-to-Speech API | OpenAI TTS API",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "Edge TTS Voices | Text-to-Speech API | OpenAI TTS API"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1536,
-        "y": 152,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "f5a281bc1d5a31fa",
+  "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Ultima Cena/handout/Villa.png",
+    "Investigare/pg/~$heda_PG_02_Honda_Ryota.docx",
+    "Investigare/pg/~$heda_PG_01_Yamamoto_Kenji.docx",
+    "Investigare/Ultima Cena/handout/~$ndout_Ultima_Cena_di_Tanaka.docx",
     "Investigare/Ultima Cena/Storia Completa.md",
     "Investigare/Kitsune/CRONISTORIA COMPLETA.md",
     "Investigare/L'Ultima Lezione/Storia Completa.md",
@@ -278,7 +243,6 @@
     "Investigare/GENKAI Regolamento v1.2.md",
     "Investigare/logo.png",
     "Investigare/pg/PG_01_Yamamoto_Kenji_foto.png",
-    "Investigare/Ultima Cena/handout/Villa.png",
     "Investigare/Kitsune/CLAUDE.md",
     "Investigare/Kitsune",
     "Investigare/L'Ultima Lezione/handout/09_Trascrizione_119.html",
@@ -287,9 +251,6 @@
     "Investigare/L'Ultima Lezione/handout/04_Scheda_Collirio.html",
     "Investigare/L'Ultima Lezione/handout/07_Polizza_Assicurativa.html",
     "Investigare/L'Ultima Lezione/handout/03_Rapporto_Tossicologico.html",
-    "Investigare/L'Ultima Lezione/handout/06_Lettera_Morimoto.html",
-    "Investigare/L'Ultima Lezione/handout/02_Autopsia_Standard.html",
-    "Investigare/L'Ultima Lezione/handout/01_Rapporto_Preliminare.html",
     "Investigare/Ultima Cena/CLAUDE.md",
     "Investigare/Il Giudice/handout/Articoli_Giornale.md",
     "Investigare/pg/PG_05_Fujita_Emi_foto.png",
@@ -310,7 +271,6 @@
     "DnD/OneShot - Escape Room/Idee.md",
     "DnD/OneShot - Escape Room/Enigma 36 - Gambero.md",
     "DnD/OneShot - Escape Room/Enigma 25 - Lupi e Pecore.md",
-    "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md",
-    "DnD/OneShot - Escape Room/Enigma - Tangram.md"
+    "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md"
   ]
 }
