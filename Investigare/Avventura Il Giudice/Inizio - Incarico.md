@@ -95,8 +95,8 @@ I giocatori sono liberi di muoversi come vogliono. Le opzioni tipiche:
 | Cosa | Dove trovarlo |
 |------|---------------|
 | Eventi reattivi e trigger | [[TIMELINE_GM]] |
-| Piste investigative e prove | [[CRONISTORIA COMPLETA]] (Parte 3) |
-| Soluzione e possibili finali | [[CRONISTORIA COMPLETA]] (Parte 6) |
+| Piste investigative e prove | [[Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA]] (Parte 3) |
+| Soluzione e possibili finali | [[Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA]] (Parte 6) |
 | Ritmo delle sessioni | [[TIMELINE_GM]] |
 
 ---

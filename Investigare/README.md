@@ -9,7 +9,7 @@
 GENKAI è un gioco di ruolo investigativo dove il vero nemico non è l'assassino — sei tu. I tuoi limiti. Le tue debolezze. La vita che non si ferma solo perché c'è un caso da risolvere. Ma hai qualcosa dentro. Un dono.
 
 ---
-![[GruppoInvestigatori.png]]
+![[Squadra Investigatori.png]]
 
 **COSA LO RENDE DIVERSO**
 

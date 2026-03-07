@@ -4,7 +4,7 @@
 
 | File                     | Descrizione                              |
 | ------------------------ | ---------------------------------------- |
-| [[CRONISTORIA COMPLETA]] | Timeline 1955-1997, tutti gli eventi     |
+| [[Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA]] | Timeline 1955-1997, tutti gli eventi     |
 | [[Inizio - Incarico]]         | Setup, eventi reattivi, piste, soluzione |
 | [[GENKAI Regolamento v1.2]] | Regole del sistema di gioco           |
 | [[PNG Primari]]          | Scheda riassuntiva PNG principali        |
