@@ -171,6 +171,24 @@
   .typing-dot:nth-child(2){animation-delay:0.2s;} .typing-dot:nth-child(3){animation-delay:0.4s;}
   @keyframes typing { 0%,60%,100%{opacity:0.3;transform:scale(0.8);} 30%{opacity:1;transform:scale(1);} }
 
+  /* QUICK REPLIES */
+  .quick-replies { display:none; padding:6px 12px 2px; background:linear-gradient(0deg,#0f1a0a 0%,#0a1208 100%); border-top:1px solid rgba(42,255,74,0.08); flex-shrink:0; gap:6px; flex-wrap:wrap; }
+  .quick-replies.active { display:flex; }
+  .quick-reply-btn { font-family:'Share Tech Mono',monospace; font-size:11px; letter-spacing:1px; padding:6px 14px; background:rgba(42,255,74,0.06); border:1px solid rgba(42,255,74,0.2); border-radius:3px; color:var(--screen-glow); cursor:pointer; transition:all 0.15s; }
+  .quick-reply-btn:active { background:rgba(42,255,74,0.15); transform:scale(0.95); }
+  .quick-reply-btn.accent { border-color:rgba(42,170,255,0.3); color:var(--accent); background:rgba(42,170,255,0.06); }
+
+  /* BIOSCAN — dispositivo hackerato che legge lo stato emotivo */
+  .bioscan { display:flex; align-items:center; gap:6px; padding:4px 10px; margin-top:6px; background:rgba(255,106,42,0.04); border:1px solid rgba(255,106,42,0.12); border-radius:2px; animation:bioscan-in 0.6s ease-out; }
+  @keyframes bioscan-in { 0%{opacity:0;transform:scaleX(0.3);} 40%{opacity:0.6;transform:scaleX(1.02);} 100%{opacity:1;transform:scaleX(1);} }
+  .bioscan-icon { width:6px; height:6px; border-radius:50%; background:var(--warning); animation:bioscan-pulse 2s ease-in-out infinite; flex-shrink:0; }
+  @keyframes bioscan-pulse { 0%,100%{opacity:0.4;box-shadow:none;} 50%{opacity:1;box-shadow:0 0 4px var(--warning);} }
+  .bioscan-label { font-family:'Share Tech Mono',monospace; font-size:8px; letter-spacing:2px; color:rgba(255,106,42,0.6); text-transform:uppercase; }
+
+  /* CLICKABLE CODES */
+  .intel-code { color:var(--accent); cursor:pointer; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; transition:color 0.15s; }
+  .intel-code:active { color:var(--screen-glow); }
+
   .input-area { background:linear-gradient(0deg,#0f1a0a 0%,#0a1208 100%); border-top:1px solid rgba(42,255,74,0.1); padding:10px 12px; padding-bottom:max(10px,env(safe-area-inset-bottom)); display:flex; gap:8px; align-items:flex-end; flex-shrink:0; }
   .input-wrapper { flex:1; }
   .msg-input { width:100%; background:rgba(42,255,74,0.03); border:1px solid rgba(42,255,74,0.12); border-radius:4px; padding:10px 12px; font-family:'Rajdhani',sans-serif; font-size:15px; color:var(--text-bright); outline:none; resize:none; min-height:42px; max-height:120px; line-height:1.4; transition:border-color 0.2s; }
@@ -276,6 +294,8 @@
   <div class="typing-indicator" id="typingIndicator">
     <div class="typing-dots" id="typingDots"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
   </div>
+
+  <div class="quick-replies" id="quickReplies"></div>
 
   <div class="input-area">
     <div class="input-wrapper">
@@ -529,6 +549,7 @@ async function showMainHacked(){
   }
 
   setupInput(); startTimers(); startAmbient(); startPolling();
+  fetch(WORKER_URL+'/api/connect/'+opKey,{method:'POST'}).catch(function(e){console.error('Connect:',e);});
 }
 
 // ============================================
@@ -586,10 +607,119 @@ function addUserMsg(text){
 function addAIMsg(text){
   var c=document.getElementById('chatArea'),d=document.createElement('div');
   d.className='msg ai'+(isChatMode?' hacked':'');
-  var html=escapeHtml(text).replace(/\n/g,'<br>');
+  // Estrai BIOSCAN prima di processare il testo
+  var bioscanLabel='';
+  var cleanText=text.replace(/\[BIOSCAN:([^\]]+)\]/g,function(m,label){bioscanLabel=label.trim();return '';}).trim();
+  var html=escapeHtml(cleanText).replace(/\n/g,'<br>');
   html=html.replace(/\[FOTO:([^\]]+)\]/g,'<div class="msg-photo"><img src="Immagini/$1" onerror="this.parentElement.style.display=\'none\'" alt=""></div>');
-  d.innerHTML='<div class="msg-sender">'+senderName+'</div><div class="msg-bubble">'+html+'</div><div class="msg-time">'+getTimeString()+'</div>';
+  // Codici intelligence cliccabili
+  html=html.replace(/\b(UFO-INT|SIGINT|HUMINT|DOCINT|SCIINT|MEDIAWATCH)-(\d{3})\b/g,'<span class="intel-code" data-code="$1-$2">$1-$2</span>');
+  // BIOSCAN: mostra solo in modalita hackerata
+  var bioscanHtml='';
+  if(isChatMode&&bioscanLabel){bioscanHtml='<div class="bioscan"><div class="bioscan-icon"></div><div class="bioscan-label">BIOSCAN: '+escapeHtml(bioscanLabel)+'</div></div>';}
+  d.innerHTML='<div class="msg-sender">'+senderName+'</div><div class="msg-bubble">'+html+bioscanHtml+'</div><div class="msg-time">'+getTimeString()+'</div>';
   c.appendChild(d);c.scrollTop=c.scrollHeight;
+  // Quick replies detection
+  detectQuickReplies(cleanText);
+}
+
+// ============================================
+// CLICKABLE INTEL CODES
+// ============================================
+document.addEventListener('click',function(e){
+  var code=e.target.closest('.intel-code');
+  if(!code)return;
+  var id=code.getAttribute('data-code');
+  var input=document.getElementById('msgInput');
+  input.value='Dettagli '+id;
+  playKeyPress();
+  sendMessage();
+});
+
+// ============================================
+// QUICK REPLY BUTTONS
+// ============================================
+function detectQuickReplies(text){
+  var qr=document.getElementById('quickReplies');
+  qr.innerHTML='';qr.classList.remove('active');
+  var t=text.toLowerCase();
+  var buttons=[];
+  var hasQuestion=(/\?/.test(text));
+  var added={};
+  function addBtn(label,value,accent){
+    if(added[label])return;
+    added[label]=true;
+    buttons.push({label:label,value:value,accent:!!accent});
+  }
+
+  // 1) Yes/No questions
+  if(/\b(vuoi|confermi|procedo|procedere|autorizzare|continuare|proseguire|approvare|necessit|serve)\b/.test(t)&&hasQuestion){
+    addBtn('AFFERMATIVO','Affermativo');addBtn('NEGATIVO','Negativo');
+  }
+
+  // 2) Parse bullet/numbered lists → each item becomes a button
+  var lines=text.split('\n');
+  var listItems=[];
+  lines.forEach(function(line){
+    var m=line.match(/^\s*(?:[-•]\s*|\d+[.)]\s*)\*{0,2}(.+)/);
+    if(m) listItems.push(m[1].trim());
+  });
+  if(listItems.length>=2){
+    listItems.forEach(function(item){
+      // Extract label: bold part, or first segment before | — : ( ,
+      var label=item;
+      var boldMatch=label.match(/\*\*([^*]+)\*\*/);
+      if(boldMatch) label=boldMatch[1];
+      else{
+        var cut=label.match(/^([^|—:(\-,]+)/);
+        if(cut) label=cut[1].trim();
+      }
+      label=label.replace(/\*\*/g,'').trim();
+      if(label.length>22) label=label.substring(0,20)+'..';
+      if(label.length>=2){
+        addBtn(label.toUpperCase(),'Dettagli su '+label,true);
+      }
+    });
+  }
+
+  // 3) Intel codes (inline, even single ones if AI is asking)
+  var codes=text.match(/\b(?:UFO-INT|SIGINT|HUMINT|DOCINT|SCIINT|MEDIAWATCH)-\d{3}\b/g);
+  if(codes){
+    var uniqueCodes=[];
+    codes.forEach(function(c){if(uniqueCodes.indexOf(c)===-1)uniqueCodes.push(c);});
+    if(uniqueCodes.length>=2||uniqueCodes.length===1&&hasQuestion){
+      uniqueCodes.forEach(function(c){addBtn(c,'Dettagli '+c,true);});
+    }
+  }
+
+  // 4) Inline comma/slash separated options: "A, B o C" or "A / B / C"
+  var optMatch=text.match(/:\s*([A-Z][\w\s.'-]+(?:\s*[,\/]\s*[A-Z][\w\s.'-]+)+(?:\s+o\s+[A-Z][\w\s.'-]+)?)\s*[.?]/);
+  if(optMatch&&buttons.length<3){
+    var opts=optMatch[1].split(/\s*[,\/]\s*|\s+o\s+/);
+    if(opts.length>=2&&opts.length<=6){
+      opts.forEach(function(o){
+        o=o.trim().replace(/\*\*/g,'');
+        if(o.length>=2&&o.length<=35) addBtn(o.toUpperCase(),'Dettagli su '+o,true);
+      });
+    }
+  }
+
+  // 5) Limit and render
+  if(buttons.length>8) buttons=buttons.slice(0,8);
+  if(buttons.length===0) return;
+  buttons.forEach(function(b){
+    var btn=document.createElement('button');
+    btn.className='quick-reply-btn'+(b.accent?' accent':'');
+    btn.textContent=b.label;
+    btn.addEventListener('click',function(){
+      document.getElementById('msgInput').value=b.value;
+      playKeyPress();
+      sendMessage();
+      qr.innerHTML='';qr.classList.remove('active');
+    });
+    qr.appendChild(btn);
+  });
+  qr.classList.add('active');
 }
 
 function showTyping(){document.getElementById('typingIndicator').classList.add('active');document.getElementById('chatArea').scrollTop=document.getElementById('chatArea').scrollHeight;}
