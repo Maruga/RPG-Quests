@@ -17,7 +17,12 @@
       "Bash(FILE=\"C:/Users/Maruga/.claude/projects/C--Public--Clienti-Maruga-Giochi-Vampiri-Vault-Vampiri-Investigare/a067bea6-2709-4343-8736-1c3953bbe9c1/tool-results/mcp-tavily-search-tavily_search-1772731798324.txt\")",
       "Read(//c/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Investigare/**)",
       "mcp__tavily-search__tavily_research",
-      "WebSearch"
+      "WebSearch",
+      "Bash(mv:*)",
+      "Bash(for f in 0*.html)",
+      "Bash(do echo -n \"$f: \")",
+      "Read(//c/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Investigare/Avventura Sake/handout/**)",
+      "Bash(done)"
     ]
   }
 }

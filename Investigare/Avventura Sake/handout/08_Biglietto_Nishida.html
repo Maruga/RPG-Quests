@@ -150,6 +150,24 @@ body {
     width: 100%;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .meishi { background: #2a2a30; border-color: #555; box-shadow: 2px 3px 8px rgba(0,0,0,0.3); }
+    .meishi-front .name-jp { color: #d0d0d0; }
+    .meishi-front .name-romaji { color: #888; }
+    .meishi-front .title-jp { color: #bbb; }
+    .meishi-front .title-it { color: #888; }
+    .meishi-front .license { color: #777; }
+    .meishi-front::after { background: #8b0000; }
+    .meishi-back { background: #2e2e35; }
+    .meishi-back .back-header { color: #888; }
+    .contact-line { color: #d0d0d0; }
+    .contact-label { color: #888; }
+    .address-section { color: #999; border-top-color: #444; }
+    .handwritten-note { color: #8888cc; }
+    .cut-instructions { color: #555; border-color: #444; }
+}
+
 @media print {
     body { background: white; }
     .cut-instructions { color: #ccc; }

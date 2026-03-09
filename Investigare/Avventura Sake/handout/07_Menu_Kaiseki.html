@@ -9,7 +9,7 @@
 body {
     font-family: "Courier New", Courier, monospace;
     font-size: 11px;
-    line-height: 1.7;
+    line-height: 1.6;
     color: #1a1a1a;
     background: #f5f5f0;
     display: flex;
@@ -18,22 +18,15 @@ body {
 }
 .document {
     width: 180mm;
-    background: #1a1a1a;
-    padding: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.menu-inner {
-    background: #faf5e8;
-    margin: 3px;
-    padding: 30mm 24mm;
+    min-height: 250mm;
+    background: #fff;
+    padding: 18mm 20mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     position: relative;
 }
 
-/* Bordo decorativo */
-.menu-inner::before {
+/* Bordo decorativo dorato */
+.document::before {
     content: "";
     position: absolute;
     top: 8px;
@@ -46,7 +39,7 @@ body {
 
 .menu-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .menu-date {
     font-size: 9px;
@@ -55,9 +48,9 @@ body {
     text-transform: uppercase;
 }
 .menu-title-jp {
-    font-size: 28px;
+    font-size: 26px;
     color: #2c2c2c;
-    margin: 10px 0 4px 0;
+    margin: 8px 0 3px 0;
     letter-spacing: 8px;
 }
 .menu-title {
@@ -69,22 +62,22 @@ body {
 .menu-subtitle {
     font-size: 9px;
     color: #aaa;
-    margin-top: 8px;
+    margin-top: 6px;
     letter-spacing: 2px;
 }
 .divider {
     width: 60px;
     height: 1px;
     background: #c0a060;
-    margin: 16px auto;
+    margin: 12px auto;
 }
 
 .course {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     text-align: center;
 }
 .course-name-jp {
-    font-size: 14px;
+    font-size: 13px;
     color: #2c2c2c;
     letter-spacing: 4px;
 }
@@ -93,8 +86,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #c0a060;
-    margin-top: 2px;
-    margin-bottom: 6px;
+    margin-top: 1px;
+    margin-bottom: 4px;
 }
 .course-desc {
     font-size: 10px;
@@ -102,17 +95,17 @@ body {
     font-style: italic;
     max-width: 80%;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .sake-section {
-    margin-top: 30px;
+    margin-top: 18px;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 12px;
     border-top: 1px solid #e0d8c8;
 }
 .sake-title-jp {
-    font-size: 16px;
+    font-size: 15px;
     color: #2c2c2c;
     letter-spacing: 4px;
 }
@@ -122,12 +115,12 @@ body {
     letter-spacing: 3px;
     color: #c0a060;
     margin-top: 2px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .sake-item {
     font-size: 11px;
     color: #333;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 .sake-detail {
     font-size: 9px;
@@ -136,14 +129,14 @@ body {
 }
 
 .menu-footer {
-    margin-top: 36px;
+    margin-top: 22px;
     text-align: center;
     font-size: 8px;
     color: #bbb;
     letter-spacing: 2px;
 }
 .menu-footer .chef {
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 9px;
     color: #999;
 }
@@ -151,8 +144,8 @@ body {
 /* Sigillo decorativo */
 .seal {
     position: absolute;
-    top: 25mm;
-    right: 20mm;
+    top: 18mm;
+    right: 18mm;
     width: 36px;
     height: 36px;
     border: 2px solid rgba(180, 50, 50, 0.25);
@@ -165,6 +158,26 @@ body {
     transform: rotate(5deg);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2520; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .document::before { border-color: #6b5530; }
+    .menu-date { color: #777; }
+    .menu-title-jp { color: #d0ccc0; }
+    .menu-title { color: #c0a060; }
+    .menu-subtitle { color: #777; }
+    .divider { background: #6b5530; }
+    .course-name-jp { color: #d0ccc0; }
+    .course-desc { color: #aaa59a; }
+    .sake-section { border-top-color: #4a4030; }
+    .sake-title-jp { color: #d0ccc0; }
+    .sake-item { color: #d0d0d0; }
+    .sake-detail { color: #888; }
+    .menu-footer { color: #777; }
+    .menu-footer .chef { color: #888; }
+    .seal { border-color: rgba(180, 50, 50, 0.2); color: rgba(180, 50, 50, 0.2); }
+}
+
 @media print {
     body { background: white; padding: 0; }
     .document { box-shadow: none; }
@@ -173,7 +186,6 @@ body {
 </head>
 <body>
 <div class="document">
-<div class="menu-inner">
 
     <div class="seal">田</div>
 
@@ -235,18 +247,17 @@ body {
         <div class="sake-title">Sake</div>
         <div class="sake-item">Juyondai Junmai Daiginjo — 十四代 純米大吟醸</div>
         <div class="sake-detail">Yamagata — Takagi Shuzo — offerto da Ogawa Masaru</div>
-        <div class="sake-item" style="margin-top:8px;">Gekkeikan Tokubetsu Junmai — 月桂冠</div>
+        <div class="sake-item" style="margin-top:6px;">Gekkeikan Tokubetsu Junmai — 月桂冠</div>
         <div class="sake-detail">Fushimi, Kyoto — sake della casa</div>
     </div>
 
     <div class="menu-footer">
         <div>Tutti gli ingredienti selezionati dal mercato di Nishiki (錦市場)</div>
-        <div class="chef">Cuoco: ENDO Toshio — 遠藤敏夫</div>
+        <div class="chef">Cuoco: ENDO Toshio — 遠藤俊夫</div>
         <div style="margin-top:4px;">Menù approvato dal Sig. Tanaka Kazuo</div>
-        <div style="margin-top:8px; font-size:7px; letter-spacing:1px; color:#ccc;">Nessun ingrediente contiene salicilati, aspirina o derivati</div>
+        <div style="margin-top:6px; font-size:7px; letter-spacing:1px; color:#ccc;">Nessun ingrediente contiene salicilati, aspirina o derivati</div>
     </div>
 
-</div>
 </div>
 </body>
 </html>

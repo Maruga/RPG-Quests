@@ -141,6 +141,25 @@ body {
     transform: rotate(0deg);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .metadata { border-color: #555; }
+    .metadata div { border-bottom-color: #444; }
+    .metadata div:nth-child(odd) { border-right-color: #444; }
+    .metadata .label { color: #999; }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    .section p { color: #d0d0d0; }
+    .section ul li::before { color: #666; }
+    .highlight-box { background: #33322a; border-left-color: #c0a060; }
+    .critical-box { background: #352a2a; border-left-color: #8b0000; }
+    .signature-section { color: #d0d0d0; }
+    .signature-line { border-top-color: #888; }
+    .timbro { border-color: rgba(180, 50, 50, 0.2); color: rgba(180, 50, 50, 0.2); }
+    .footer { color: #666; border-top-color: #444; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+}
+
 @media print {
     body { background: white; padding: 0; }
     .document { box-shadow: none; padding: 15mm; }
@@ -164,7 +183,7 @@ body {
         <div><span class="label">Luogo</span><br>Villa Tanaka, Higashiyama-ku, Kyoto</div>
         <div><span class="label">Tipo intervento</span><br>Decesso sospetto — possibile omicidio</div>
         <div><span class="label">Vittima</span><br>TANAKA Kazuo (田中一夫), 61 anni</div>
-        <div><span class="label">Primo ufficiale</span><br>Ass. Isp. SUGIMOTO Ryota (杉本良太)</div>
+        <div><span class="label">Primo ufficiale</span><br>Serg. YAMADA Tetsuo (山田哲夫)</div>
     </div>
 
     <div class="section">
@@ -243,7 +262,7 @@ body {
     <div class="signature-section">
         <div class="signature-block">
             <div class="signature-line">
-                Ass. Isp. SUGIMOTO Ryota<br>
+                Serg. YAMADA Tetsuo<br>
                 <span style="font-size:9px;">Distretto di Higashiyama</span>
             </div>
         </div>

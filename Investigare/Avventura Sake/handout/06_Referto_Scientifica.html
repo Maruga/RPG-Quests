@@ -13,8 +13,10 @@ body {
     color: #1a1a1a;
     background: #f5f5f0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    gap: 30px;
 }
 .document {
     width: 210mm;
@@ -23,6 +25,8 @@ body {
     padding: 20mm 18mm;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .doc-header {
     background: #1a2e1a;
@@ -50,7 +54,7 @@ body {
 .metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
 .metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
 
-.section { margin-bottom: 16px; }
+.section { margin-bottom: 16px; flex: 1; }
 .section-title {
     font-size: 11px;
     font-weight: bold;
@@ -70,9 +74,6 @@ body {
     letter-spacing: 1px;
 }
 .section p { margin-bottom: 6px; text-align: justify; }
-.section ul { margin-left: 16px; list-style: none; }
-.section ul li { margin-bottom: 4px; }
-.section ul li::before { content: "\2014\00a0"; color: #6b8e6b; }
 
 table {
     width: 100%;
@@ -95,13 +96,8 @@ td {
 }
 tr:nth-child(even) { background: #f5f8f5; }
 
-.result-positive {
-    color: #8b0000;
-    font-weight: bold;
-}
-.result-negative {
-    color: #2e7a2e;
-}
+.result-positive { color: #8b0000; font-weight: bold; }
+.result-negative { color: #2e7a2e; }
 
 .critical-box {
     background: #fff5f5;
@@ -113,6 +109,22 @@ tr:nth-child(even) { background: #f5f8f5; }
 .critical-box .critical-title {
     font-weight: bold;
     color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    font-size: 11px;
+}
+
+.clean-box {
+    background: #f0f8f0;
+    border: 2px solid #2e7a2e;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 10px;
+}
+.clean-box .clean-title {
+    font-weight: bold;
+    color: #2e7a2e;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 4px;
@@ -170,48 +182,36 @@ tr:nth-child(even) { background: #f5f8f5; }
     margin-top: 2px;
 }
 
-.conclusion-box {
-    border: 2px solid #1a2e1a;
-    padding: 12px 16px;
-    margin: 16px 0;
-    background: #f0f5f0;
-}
-.conclusion-box .conclusion-title {
-    font-weight: bold;
-    color: #1a2e1a;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-}
-
-.signature-section {
-    margin-top: 30px;
+.sig {
+    margin-top: auto;
+    padding-top: 16px;
     text-align: right;
-    font-size: 10px;
+    font-size: 9px;
+    color: #555;
 }
-.signature-line {
-    border-top: 1px solid #333;
-    margin-top: 24px;
-    padding-top: 4px;
+.sig-line {
+    border-top: 1px solid #555;
     display: inline-block;
-    min-width: 200px;
+    min-width: 180px;
+    padding-top: 3px;
     text-align: center;
+    margin-top: 16px;
 }
 
 .timbro {
     position: absolute;
-    bottom: 50px;
-    right: 40px;
-    width: 70px;
-    height: 70px;
-    border: 3px solid rgba(50, 120, 50, 0.3);
+    bottom: 40px;
+    right: 35px;
+    width: 55px;
+    height: 55px;
+    border: 2px solid rgba(50, 120, 50, 0.25);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: rotate(-12deg);
-    color: rgba(50, 120, 50, 0.3);
-    font-size: 7px;
+    color: rgba(50, 120, 50, 0.25);
+    font-size: 6px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -220,7 +220,7 @@ tr:nth-child(even) { background: #f5f8f5; }
 }
 
 .footer {
-    margin-top: 16px;
+    margin-top: 12px;
     font-size: 8px;
     color: #999;
     text-align: center;
@@ -228,29 +228,61 @@ tr:nth-child(even) { background: #f5f8f5; }
     padding-top: 6px;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .metadata { border-color: #555; }
+    .metadata div { border-bottom-color: #444; }
+    .metadata div:nth-child(odd) { border-right-color: #444; }
+    .metadata .label { color: #999; }
+    .section-title { color: #6b8e6b; border-bottom-color: #6b8e6b; }
+    .subsection-title { color: #8bae8b; }
+    th { background: #1a2e1a; }
+    td { border-bottom-color: #444; color: #d0d0d0; }
+    tr:nth-child(even) { background: #2a302a; }
+    .result-positive { color: #cc5555; }
+    .result-negative { color: #5aaa5a; }
+    .critical-box { background: #352a2a; border-color: #8b0000; }
+    .critical-box .critical-title { color: #cc5555; }
+    .clean-box { background: #2a352a; border-color: #2e7a2e; }
+    .clean-box .clean-title { color: #5aaa5a; }
+    .note-box { background: #33322a; border-left-color: #c0a060; }
+    .diagram { border-color: #555; background: #2e2e35; }
+    .diagram-title { color: #999; }
+    .layer-outer { background: #2a3a2a; border-color: #6b8e6b; border-bottom-color: #555; }
+    .layer-inner { background: #3a2a2a; border-color: #8b0000; border-top-color: #555; color: #cc5555; }
+    .layer-label { color: #999; }
+    .sig { color: #999; }
+    .sig-line { border-top-color: #888; }
+    .timbro { border-color: rgba(50, 120, 50, 0.2); color: rgba(50, 120, 50, 0.2); }
+    .footer { color: #666; border-top-color: #444; }
+}
+
 @media print {
-    body { background: white; padding: 0; }
+    body { background: white; padding: 0; gap: 0; }
     .document { box-shadow: none; padding: 15mm; }
+    .document + .document { page-break-before: always; }
 }
 </style>
 </head>
 <body>
+
+<!-- ==================== REPERTO A — SAPONE ==================== -->
 <div class="document">
 
     <div class="doc-header">
         <div class="org">京都府警察本部 鑑識課 — KANSHIKI-KA — POLIZIA SCIENTIFICA</div>
         <div class="title">REFERTO ANALISI IN LOCO</div>
-        <div class="subtitle">Analisi preliminari effettuate sulla scena &nbsp;|&nbsp; Test rapidi con conferma strumentale</div>
+        <div class="subtitle">Reperto A — Sapone &nbsp;|&nbsp; Test rapidi con conferma strumentale</div>
     </div>
 
     <div class="metadata">
         <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
         <div><span class="label">Data analisi</span><br>14 novembre 1997 — ore 23:00-00:30</div>
-        <div><span class="label">Luogo</span><br>Villa Tanaka — Bagno ospiti, piano terra</div>
+        <div><span class="label">Luogo prelievo</span><br>Villa Tanaka — Bagno ospiti, piano terra</div>
         <div><span class="label">Analista responsabile</span><br>Kanshiki-kan ITO Daisuke (伊藤大介), Classe 1</div>
     </div>
 
-    <!-- REPERTO A: SAPONE -->
     <div class="section">
         <div class="section-title">Reperto A — Sapone rinvenuto nel bagno ospiti</div>
 
@@ -258,7 +290,6 @@ tr:nth-child(even) { background: #f5f8f5; }
         <p>Panetto di sapone artigianale, privo di marchio commerciale o etichetta. Forma rettangolare, dimensioni circa 8×5×3 cm. Superficie parzialmente consumata dall'uso. Aspetto compatibile con produzione di laboratorio, non industriale.</p>
 
         <div class="subsection-title">Analisi strutturale</div>
-
         <div class="diagram">
             <div class="diagram-title">Sezione trasversale del reperto</div>
             <div class="soap-layers">
@@ -312,7 +343,29 @@ tr:nth-child(even) { background: #f5f8f5; }
         </div>
     </div>
 
-    <!-- REPERTO B: INCENSO -->
+    <div class="sig">
+        <div class="sig-line">Kanshiki-kan ITO Daisuke — 鑑識官一級</div>
+    </div>
+    <div class="timbro">鑑識課<br>KANSHIKI<br>KYOTO</div>
+    <div class="footer">Referto Analisi — Fascicolo 97-KPD-1114 — Reperto A — Riservato</div>
+</div>
+
+<!-- ==================== REPERTO B — INCENSO ==================== -->
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 鑑識課 — KANSHIKI-KA — POLIZIA SCIENTIFICA</div>
+        <div class="title">REFERTO ANALISI IN LOCO</div>
+        <div class="subtitle">Reperto B — Incenso &nbsp;|&nbsp; Test rapidi con conferma strumentale</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
+        <div><span class="label">Data analisi</span><br>14 novembre 1997 — ore 23:00-00:30</div>
+        <div><span class="label">Luogo prelievo</span><br>Villa Tanaka — Sala principale, bruciatore</div>
+        <div><span class="label">Analista responsabile</span><br>Kanshiki-kan ITO Daisuke (伊藤大介), Classe 1</div>
+    </div>
+
     <div class="section">
         <div class="section-title">Reperto B — Incenso dalla sala principale</div>
 
@@ -345,10 +398,36 @@ tr:nth-child(even) { background: #f5f8f5; }
         </div>
     </div>
 
-    <!-- REPERTO C: CONFRONTO SAPONI -->
+    <div class="sig">
+        <div class="sig-line">Kanshiki-kan ITO Daisuke — 鑑識官一級</div>
+    </div>
+    <div class="timbro">鑑識課<br>KANSHIKI<br>KYOTO</div>
+    <div class="footer">Referto Analisi — Fascicolo 97-KPD-1114 — Reperto B — Riservato</div>
+</div>
+
+<!-- ==================== REPERTO C — CONFRONTO SAPONI ==================== -->
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 鑑識課 — KANSHIKI-KA — POLIZIA SCIENTIFICA</div>
+        <div class="title">REFERTO ANALISI IN LOCO</div>
+        <div class="subtitle">Reperto C — Confronto saponi &nbsp;|&nbsp; Test rapidi con conferma strumentale</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
+        <div><span class="label">Data analisi</span><br>14 novembre 1997 — ore 23:00-00:30</div>
+        <div><span class="label">Luogo prelievo</span><br>Villa Tanaka — Bagno ospiti + Bagno padronale</div>
+        <div><span class="label">Analista responsabile</span><br>Kanshiki-kan ITO Daisuke (伊藤大介), Classe 1</div>
+    </div>
+
     <div class="section">
         <div class="section-title">Reperto C — Confronto saponi</div>
 
+        <div class="subsection-title">Descrizione</div>
+        <p>Confronto tra il sapone rinvenuto nel bagno ospiti (Reperto A) e il sapone presente nel bagno padronale al primo piano. Il confronto è stato richiesto dagli investigatori per verificare se il sapone del bagno ospiti appartenga alla dotazione abituale della villa.</p>
+
+        <div class="subsection-title">Risultati comparativi</div>
         <table>
             <thead>
                 <tr>
@@ -382,31 +461,93 @@ tr:nth-child(even) { background: #f5f8f5; }
         </table>
 
         <div class="critical-box">
-            <div class="critical-title">Conclusione confronto</div>
+            <div class="critical-title">Conclusione Reperto C</div>
             I due saponi non hanno alcuna caratteristica in comune. Il sapone del bagno ospiti <strong>non appartiene alla produzione Tanaka Cosmetics</strong> e non corrisponde a nessun prodotto commerciale noto. È stato introdotto nel bagno da terzi.
         </div>
     </div>
 
-    <!-- CONCLUSIONE GENERALE -->
-    <div class="conclusion-box">
-        <div class="conclusion-title">Conclusione generale</div>
-        <p>La vittima è stata esposta a metil-salicilato attraverso <strong>almeno due vettori indipendenti</strong> presenti nella villa: esposizione aerea prolungata (incenso) e contatto cutaneo diretto (sapone). La struttura intenzionale del sapone a doppio strato indica <strong>premeditazione</strong>. Si raccomanda la ricerca del laboratorio di origine e l'identificazione di chi ha avuto accesso al bagno ospiti nelle settimane precedenti il decesso.</p>
+    <div class="sig">
+        <div class="sig-line">Kanshiki-kan ITO Daisuke — 鑑識官一級</div>
+    </div>
+    <div class="timbro">鑑識課<br>KANSHIKI<br>KYOTO</div>
+    <div class="footer">Referto Analisi — Fascicolo 97-KPD-1114 — Reperto C — Riservato</div>
+</div>
+
+<!-- ==================== REPERTO D — SAKE ==================== -->
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 鑑識課 — KANSHIKI-KA — POLIZIA SCIENTIFICA</div>
+        <div class="title">REFERTO ANALISI IN LOCO</div>
+        <div class="subtitle">Reperto D — Sake &nbsp;|&nbsp; Test rapidi con conferma strumentale</div>
     </div>
 
-    <div class="signature-section">
-        <p>Il Responsabile delle analisi</p>
-        <div class="signature-line">
-            Kanshiki-kan ITO Daisuke<br>
-            <span style="font-size:9px;">鑑識官一級 — Classe 1</span>
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
+        <div><span class="label">Data analisi</span><br>14 novembre 1997 — ore 23:00-00:30</div>
+        <div><span class="label">Luogo prelievo</span><br>Villa Tanaka — Sala principale, tavolo</div>
+        <div><span class="label">Analista responsabile</span><br>Kanshiki-kan ITO Daisuke (伊藤大介), Classe 1</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Reperto D — Sake (bottiglia dalla sala principale)</div>
+
+        <div class="subsection-title">Descrizione</div>
+        <p>Bottiglia da 720 ml di sake giapponese. Etichetta originale intatta: Juyondai Junmai Daiginjo (十四代 純米大吟醸), produttore Takagi Shuzō, Yamagata. Bottiglia quasi vuota — residuo stimato circa 40 ml. Tappo originale presente, sigillo di garanzia rotto in modo coerente con apertura standard.</p>
+        <p>Secondo le testimonianze, la bottiglia è stata portata dall'ospite OGAWA Masaru e aperta durante la serata. Il sake è stato servito a tutti i commensali del tavolo principale.</p>
+
+        <div class="subsection-title">Risultati test chimico — residuo bottiglia</div>
+        <table>
+            <thead>
+                <tr><th>Sostanza ricercata</th><th>Risultato</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Metil-salicilato (wintergreen)</td>
+                    <td class="result-negative">NON RILEVATO</td>
+                </tr>
+                <tr>
+                    <td>Salicilati (tutte le forme)</td>
+                    <td class="result-negative">NON RILEVATI</td>
+                </tr>
+                <tr>
+                    <td>Metanolo</td>
+                    <td class="result-negative">NON RILEVATO</td>
+                </tr>
+                <tr>
+                    <td>Sostanze tossiche (pannello standard)</td>
+                    <td class="result-negative">NEGATIVO</td>
+                </tr>
+                <tr>
+                    <td>Etanolo</td>
+                    <td class="result-negative">15,8% vol. — conforme all'etichetta</td>
+                </tr>
+                <tr>
+                    <td>Sedativi / ipnotici</td>
+                    <td class="result-negative">NON RILEVATI</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="subsection-title">Bicchieri — tavolo principale</div>
+        <p>Prelevati campioni da 8 bicchieri rinvenuti sul tavolo principale. Tutti i campioni mostrano residui identici e compatibili con il contenuto della bottiglia. Nessun bicchiere presenta tracce di sostanze estranee rispetto agli altri.</p>
+
+        <div class="clean-box">
+            <div class="clean-title">Conclusione Reperto D</div>
+            Il sake <strong>non contiene sostanze tossiche, allergeni o adulterazioni</strong>. Il contenuto è conforme all'etichetta originale. Non è stata riscontrata alcuna differenza tra i residui nei bicchieri dei diversi commensali. Il sake è stato consumato da tutti i presenti al tavolo principale senza effetti avversi su nessuno tranne la vittima.
+        </div>
+
+        <div class="note-box">
+            <strong>Nota farmacocinetica:</strong> L'etanolo è un noto potenziatore dell'assorbimento transdermico e della risposta allergica ai salicilati. Un consumo elevato di alcol nelle ore precedenti l'esposizione cutanea può abbassare significativamente la soglia di reazione anafilattica in soggetti sensibilizzati.
         </div>
     </div>
 
-    <div class="timbro">鑑識課<br>KANSHIKI<br>KYOTO<br>1997</div>
-
-    <div class="footer">
-        Referto Analisi in Loco — Fascicolo 97-KPD-1114 — Allegato B — Riservato
+    <div class="sig">
+        <div class="sig-line">Kanshiki-kan ITO Daisuke — 鑑識官一級</div>
     </div>
-
+    <div class="timbro">鑑識課<br>KANSHIKI<br>KYOTO</div>
+    <div class="footer">Referto Analisi — Fascicolo 97-KPD-1114 — Reperto D — Riservato</div>
 </div>
+
 </body>
 </html>
