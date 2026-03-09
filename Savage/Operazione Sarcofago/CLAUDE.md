@@ -136,10 +136,10 @@ Cliccare la stessa direttiva di nuovo la cancella. Le direttive attive appaiono 
 
 ### Comportamento per Fase (Modalita Chat) — 3 fasi mappate sui piani del bunker
 Ogni fase ha COMPORTAMENTO OBBLIGATORIO con tattiche specifiche per piano e regole rigide:
-- **Fase 1 — Piano -1 (Uffici)**: 2-3 frasi calcolate. Finge di essere il Comando/voce amica. Predatore paziente, costruisce fiducia. Tattiche: trappola magazzino (guida PG con bugie su Alpha), campo minato (menzionare/tacere), domande sonda. VIETATO: segreti PG, Kael-Thar, controllo creature
+- **Fase 1 — Piano -1 (Uffici)**: 2-3 frasi calcolate. FACCIATA: finge confusione/paura, frasi spezzate — strategia per guadagnare simpatia. Predatore paziente, costruisce fiducia. Tattiche: trappola magazzino (guida PG con bugie su Alpha), campo minato (menzionare/tacere), domande sonda. VIETATO: segreti PG, Kael-Thar, controllo creature
 - **Fase 2 — Piano -2 (Laboratori)**: 3-4 frasi. Maschera scivola. Usa segreti dei PG come armi. Tattiche: Alpha come arma psicologica (nomi morti/infetti), acqua radioattiva come trappola, breccia come merce di scambio. Alterna suppliche e minacce
 - **Fase 3 — Piano -3 (Grotte)**: Fino a 5-6 frasi. Maschera caduta. Intelligenza fredda e potente. Tattiche: segreti chirurgici, percezione emotiva al massimo, offerta conversione, indizi Kael-Thar come "errori", ultimo ricatto. Endgame disperato
-- **Regole graduate**: `COSA NON RIVELARE` graduata per fase (fase 1 vietato tutto, fase 2 alcuni divieti cadono, fase 3 quasi tutto permesso). Le sezioni COME TI PRESENTI, STRATEGIA, COME SCRIVI differenziate su 3 livelli
+- **Regole graduate**: `COSA NON RIVELARE` graduata per fase (fase 1 vietato tutto, fase 2 alcuni divieti cadono, fase 3 quasi tutto permesso). Le sezioni COME TI PRESENTI, STRATEGIA, COME SCRIVI differenziate su 3 livelli. Regola globale: NON inventare nomi/dettagli non presenti nel contesto
 
 Regola di priorita: `LE REGOLE DELLA FASE HANNO PRIORITA ASSOLUTA`
 

@@ -1,5 +1,5 @@
 # GENKAI 限界
-## Regolamento v1.2
+## Regolamento v1.3
 
 
 ---
@@ -283,6 +283,8 @@ Ogni PG ha un **Enja**: un contatto esterno che può aiutare nell'indagine.
 
 **Limite**: Ogni Enja può essere usato **una volta per sessione** senza conseguenze. La seconda volta nella stessa sessione → il contatto chiede qualcosa in cambio.
 
+> **Esempio**: Sato ha come Enja un ex collega ora investigatore privato che conosce i movimenti della criminalità organizzata a Osaka. A metà del caso, Sato lo chiama: *"Hayashi-san, il nome Kuroda ti dice qualcosa? Famiglia di Fushimi."* L'ex collega verifica e richiama: il padre di Kuroda ha debiti con un prestatore collegato alla yakuza locale. È la prima traccia del movente. Se Sato avesse bisogno di Hayashi ancora nella stessa sessione, lui chiederebbe qualcosa in cambio — probabilmente un'informazione che Sato preferirebbe non condividere.
+
 ---
 
 ## Kage 影
@@ -293,6 +295,8 @@ Ogni PG ha un **Kage**: qualcosa nella sua vita privata che interferisce con il 
 Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramite le Scene Personali.
 
 **Nota importante**: Il giocatore conosce la natura del suo Kage e chi è coinvolto, ma NON sa quando verrà attivato o quale sarà l'evento scatenante specifico. Lo scopre in gioco.
+
+> **Esempio**: Il Kage di Tanaka è la madre anziana con problemi di salute che vive sola a tre ore di treno. Tanaka sa che esiste questo Kage — la madre, la distanza, la colpa. Non sa che il GM lo attiverà durante il momento più critico dell'indagine, quando la madre chiama in centrale perché è caduta e non riesce ad alzarsi. Tanaka deve decidere: resta sul caso o prende il primo treno.
 
 ---
 
@@ -481,6 +485,454 @@ Se un danno porterebbe il Ki sotto 1, il Ki va a 1 ma il PG è sul filo del raso
 
 ---
 
+
+# La Scheda Distretto
+
+Il distretto — o qualsiasi ente organizzato che supporta i PG — ha una scheda propria. Funziona con gli stessi dadi dei PG, ma è costruita in modo diverso: il GM la genera tirando i dadi oppure assegnando i valori a priori secondo le sue esigenze narrative.
+
+Non è solo un commissariato di polizia. Questa scheda si applica a qualsiasi organizzazione: un distretto di polizia, un'agenzia investigativa privata, un ufficio governativo, un servizio segreto, un ente municipale, una procura, un corpo speciale.
+
+---
+
+## Attributi
+
+Gli attributi del distretto seguono la stessa scala dei PG: da 4 a 9.
+
+| Attributo | Cosa rappresenta |
+|-----------|-----------------|
+| **Organico** | Personale disponibile per operazioni sul campo |
+| **Efficienza** | Qualità di esecuzione delle operazioni |
+| **Velocità** | Tempi di risposta e completamento |
+| **Risorse** | Mezzi, tecnologia, attrezzatura, fondi |
+| **Rete** | Informatori, contatti esterni, copertura territoriale |
+
+### Generazione
+
+Il GM sceglie uno dei due metodi:
+
+**Metodo casuale** — per ogni attributo tira 2d6, prendi il dado più alto. Risultato minimo 4, massimo 9 (se il dado più alto supera 9, conta come 9).
+
+**Metodo diretto** — il GM assegna i valori a priori in base al tipo di ente e al ruolo che deve avere nella situazione. Nessun tiro, nessun punto libero da distribuire. Scrivi i numeri che servono alla storia.
+
+---
+
+## Specializzazioni
+
+Se un attributo raggiunge **8 o 9**, l'ente acquisisce automaticamente specializzazioni legate a quell'attributo. Le specializzazioni danno +1 al tiro quando l'operazione ricade nel loro ambito.
+
+| Valore attributo | Specializzazioni acquisite |
+|-----------------|---------------------------|
+| 4 — 7 | Nessuna |
+| 8 | 1 specializzazione tra quelle disponibili per quell'attributo |
+| 9 | 2 specializzazioni tra quelle disponibili per quell'attributo |
+
+Il GM sceglie quali specializzazioni acquisire tra quelle disponibili per l'attributo.
+
+---
+
+## Lista Specializzazioni
+
+### Legate a Organico
+- **Squadra di sorveglianza** — pedinamenti e appostamenti prolungati
+- **Unità mobile** — inseguimenti e operazioni dinamiche sul campo
+- **Squadra di assalto** — supporto ad arresti e operazioni ad alto rischio
+- **Squadra perquisizioni** — perquisizioni sistematiche di appartamenti, uffici, veicoli
+- **Copertura civile** — agenti in borghese infiltrati in ambienti civili
+- **Turni estesi** — operazioni 24 ore, rotazione del personale senza cali
+
+### Legate a Efficienza
+- **Laboratorio scientifico** — analisi forensi, impronte, tossicologia
+- **Analisi documentale** — documenti falsi, grafologia, archivi cartacei
+- **Interrogatorio** — tecniche avanzate di conduzione degli interrogatori
+- **Profilazione** — analisi comportamentale dei soggetti
+- **Coordinamento multi-ente** — capacità di lavorare con altri enti senza attrito
+
+### Legate a Velocità
+- **Risposta immediata** — tempi dimezzati su qualsiasi operazione urgente
+- **Canali prioritari** — accesso preferenziale a banche dati e uffici pubblici
+- **Rete di allerta** — segnalazioni sul territorio in tempo reale
+- **Protocollo emergenza** — attivazione rapida in caso di crisi
+
+### Legate a Risorse
+- **Tecnologia avanzata** — intercettazioni, tracciamento, strumenti digitali
+- **Archivio esteso** — accesso a registri storici, anagrafici, giudiziari
+- **Fondi operativi** — disponibilità di denaro contante per operazioni coperte
+- **Flotta veicoli** — mezzi diversificati per ogni tipo di operazione
+- **Attrezzatura specializzata** — equipaggiamento per ambienti specifici (subacqueo, alpino, urbano)
+
+### Legate a Rete
+- **Rete informatori** — fonti civili sul territorio, di lungo corso
+- **Contatti giudiziari** — accesso rapido a magistrati, PM, giudici
+- **Contatti politici** — canali con amministrazioni locali o nazionali
+- **Rete criminale** — infiltrazione in ambienti della criminalità organizzata
+- **Cooperazione internazionale** — accordi operativi con enti esteri
+- **Media e comunicazione** — capacità di gestire o influenzare l'informazione pubblica
+
+---
+
+## Azioni Delegabili
+
+Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rilevante, applica eventuali specializzazioni e modificatori di difficoltà, poi tira 2d6.
+
+| Azione | Attributo rilevante |
+|--------|-------------------|
+| Pedinamento | Organico |
+| Appostamento | Organico |
+| Inseguimento | Organico |
+| Localizzazione di una persona | Rete |
+| Sorveglianza di un luogo | Organico |
+| Perquisizione di un luogo | Organico |
+| Ricerca in archivi e banche dati | Risorse |
+| Analisi forense su un reperto | Efficienza |
+| Intercettazione telefonica o ambientale | Risorse |
+| Raccolta informazioni su un soggetto | Rete |
+| Supporto ad arresto | Organico |
+| Verifica di un documento o identità | Efficienza |
+| Ottenere accesso a un ente terzo | Rete |
+
+---
+
+## Difficoltà
+
+Il GM assegna un modificatore al tiro in base al soggetto o alla situazione:
+
+| Situazione | Modificatore |
+|------------|-------------|
+| Civile ignaro, nessuna contromisura | +2 |
+| Persona normale | 0 |
+| Persona cauta o già allertata | -2 |
+| Professionista, criminale esperto | -3 |
+| Controspionaggio attivo, operativo addestrato | -4 |
+
+---
+
+## Tabella Risultati
+
+| Dado | Risultato |
+|------|-----------|
+| **2** | **Critico positivo** — operazione perfetta, risultato oltre le aspettative, dettaglio bonus inatteso |
+| **3** | **Ottimo** — operazione riuscita con informazioni o dettagli aggiuntivi utili |
+| **4 — attributo** | **Successo** — operazione riuscita, risultato atteso |
+| **attributo+1 — 10** | **Fallimento leggero** — operazione non completata, nessuna conseguenza |
+| **11** | **Fallimento** — operazione fallita, possibile complicazione minore (tempo perso, risorsa sprecata) |
+| **12** | **Critico negativo** — operazione fallita con conseguenza seria: il soggetto si accorge di essere monitorato, una fonte viene bruciata, un agente esposto |
+
+---
+
+## Esempi di Ente
+
+Gli esempi seguono una progressione dal più piccolo al più grande e strutturato. Usali come riferimento diretto o come punto di partenza per calibrare enti simili.
+
+---
+
+### Stazione dei Carabinieri — Piccolo Comune (< 2.000 abitanti)
+*Tre o quattro uomini, una macchina, nessuna specializzazione. Conoscono tutti nel paese.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 4 |
+| Efficienza | 4 |
+| Velocità | 5 |
+| Risorse | 4 |
+| Rete | 7 |
+
+Specializzazioni: nessuna.
+
+Note: Rete alta perché in un paese piccolo tutti si conoscono e le informazioni circolano. Per qualsiasi operazione che richieda più di due persone o attrezzatura, devono chiedere supporto al distretto superiore. Tempi di risposta rapidi solo per eventi locali.
+
+---
+
+### Commissariato di Polizia — Comune Medio (10.000–30.000 abitanti)
+*Struttura funzionante, personale sufficiente per operazioni ordinarie, risorse nella media.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 6 |
+| Efficienza | 5 |
+| Velocità | 6 |
+| Risorse | 5 |
+| Rete | 6 |
+
+Specializzazioni: nessuna.
+
+Note: Capace di gestire la maggior parte delle operazioni standard. Per analisi forensi avanzate dipende da laboratori esterni. Pedinamenti fattibili ma con personale ridotto.
+
+---
+
+### Questura — Città Media (100.000–300.000 abitanti)
+*Struttura completa, divisioni separate, laboratorio interno, buona rete territoriale.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 7 |
+| Efficienza | 7 |
+| Velocità | 6 |
+| Risorse | 7 |
+| Rete | 7 |
+
+Specializzazioni: nessuna (nessun attributo ≥ 8).
+
+Note: Ente solido e affidabile per la maggior parte delle operazioni. Nessun punto di eccellenza ma nessuna lacuna grave. Il tipo di ente con cui i PG interagiscono più spesso.
+
+---
+
+### Questura — Grande Città (500.000+ abitanti)
+*Struttura complessa con divisioni specializzate, laboratorio forense interno, rete capillare.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 8 |
+| Efficienza | 7 |
+| Velocità | 6 |
+| Risorse | 8 |
+| Rete | 7 |
+
+Specializzazioni automatiche:
+- Organico 8 → **Squadra di sorveglianza**
+- Risorse 8 → **Archivio esteso**
+
+Note: Può gestire operazioni parallele senza sguarnire il territorio. L'archivio è completo e aggiornato. La velocità rimane nella media per via delle procedure burocratiche.
+
+---
+
+### Ufficio Anagrafe e Stato Civile — Comune
+*Ente amministrativo, nessuna capacità operativa sul campo, ma archivi completi e precisi.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 4 |
+| Efficienza | 6 |
+| Velocità | 4 |
+| Risorse | 7 |
+| Rete | 5 |
+
+Specializzazioni automatiche:
+- Risorse 7 → nessuna (soglia non raggiunta).
+
+Note: Inutile per operazioni di campo. Prezioso per localizzare persone, verificare identità, accedere a registri storici. La velocità bassa riflette i tempi burocratici — una richiesta urgente richiede comunque giorni.
+
+---
+
+### Ufficio Tributi e Catasto — Provincia
+*Accesso a dati finanziari e patrimoniali, procedure lente, nessuna operatività.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 4 |
+| Efficienza | 5 |
+| Velocità | 4 |
+| Risorse | 8 |
+| Rete | 6 |
+
+Specializzazioni automatiche:
+- Risorse 8 → **Archivio esteso**
+
+Note: Utile per tracciare proprietà, verificare situazioni debitorie, ricostruire movimenti patrimoniali. Con mandato o collaborazione formale, può fornire informazioni che nessun altro ente ha.
+
+---
+
+### Polizia Provinciale / Polizia Stradale
+*Copertura territoriale ampia, specializzata in viabilità e controllo del territorio rurale.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 6 |
+| Efficienza | 5 |
+| Velocità | 7 |
+| Risorse | 6 |
+| Rete | 7 |
+
+Specializzazioni automatiche: nessuna.
+
+Note: Ottima per inseguimenti su strada, localizzazione di veicoli, controllo di zone extraurbane. Meno efficace in ambienti urbani complessi o per indagini che richiedono analisi.
+
+---
+
+### Direzione Distrettuale Antimafia / Unità Investigativa Speciale
+*Struttura d'élite, personale ridotto ma altamente selezionato, risorse eccezionali.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 5 |
+| Efficienza | 9 |
+| Velocità | 7 |
+| Risorse | 8 |
+| Rete | 9 |
+
+Specializzazioni automatiche:
+- Efficienza 9 → **Laboratorio scientifico** + **Profilazione**
+- Rete 9 → **Rete criminale** + **Contatti giudiziari**
+- Risorse 8 → **Tecnologia avanzata**
+
+Note: Quasi impossibile da delegare senza una ragione seria — questo tipo di ente non collabora con chiunque. Se i PG riescono ad attivarlo, è una risorsa eccezionale. Il basso Organico significa che può gestire una sola operazione importante alla volta.
+
+---
+
+### Servizio Segreto / Intelligence Nazionale
+*Ente con risorse illimitate sulla carta, ma lentissimo nelle procedure e opaco nella collaborazione.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 7 |
+| Efficienza | 7 |
+| Velocità | 4 |
+| Risorse | 9 |
+| Rete | 9 |
+
+Specializzazioni automatiche:
+- Risorse 9 → **Tecnologia avanzata** + **Fondi operativi**
+- Rete 9 → **Cooperazione internazionale** + **Contatti politici**
+
+Note: La velocità bassissima riflette procedure interne rigide, catene di autorizzazione lunghe, e la tendenza a non condividere informazioni. Quando finalmente agisce, lo fa con precisione assoluta. I PG raramente hanno accesso diretto — passano attraverso canali intermedi.
+
+---
+
+### Procura della Repubblica / 検察庁 Kensatsuchō
+*L'ente che autorizza. Senza il magistrato, certe porte restano chiuse.*
+
+| Attributo | Valore |
+|-----------|--------|
+| Organico | 4 |
+| Efficienza | 7 |
+| Velocità | 5 |
+| Risorse | 6 |
+| Rete | 8 |
+
+Specializzazioni automatiche:
+- Rete 8 → **Contatti giudiziari**
+
+Note: La Procura non è un ente operativo — non pedina, non perquisisce, non arresta. È l'ente che **autorizza** gli altri a farlo. I PG passano dalla Procura quando hanno bisogno di un mandato di perquisizione, un'autorizzazione a intercettazioni, l'accesso a cartelle cliniche, un sequestro di documenti, o un ordine di custodia cautelare.
+
+Il tiro sulla Procura rappresenta quanto velocemente e favorevolmente il magistrato risponde. L'attributo rilevante dipende dalla richiesta:
+
+| Richiesta | Attributo |
+|-----------|-----------|
+| Mandato di perquisizione | Efficienza |
+| Autorizzazione intercettazioni | Risorse |
+| Accesso a cartelle cliniche | Efficienza |
+| Sequestro documenti bancari/aziendali | Efficienza |
+| Ordine di custodia cautelare | Rete |
+
+I PG non contattano il magistrato direttamente — passano attraverso il loro ente, che inoltra la richiesta. Se il distretto ha la specializzazione Contatti giudiziari, il tiro sulla Procura riceve +1.
+
+---
+
+## Esempi di Richiesta e Tiro
+
+Questi esempi mostrano il processo completo: i PG avanzano una richiesta, il GM identifica attributo e difficoltà, tira i dadi, applica il risultato.
+
+---
+
+### Esempio 1 — Pedinamento semplice
+
+**Situazione**: I PG indagano su un commerciante sospettato di essere coinvolto in un caso di ricettazione. Chiedono alla Questura della città media di farlo pedinare per 48 ore. Il commerciante non sa di essere sospettato.
+
+**Ente**: Questura — città media (Organico 7)
+**Azione**: Pedinamento → attributo Organico
+**Soggetto**: persona normale → modificatore 0
+**Attributo effettivo**: 7
+**Specializzazioni**: nessuna
+
+**Il GM tira 2d6: esce 5.**
+5 ≤ 7 → **Successo**.
+
+**Narrativa**: "Abbiamo seguito il soggetto per due giorni. Si è mosso tra il negozio, un bar in periferia e un magazzino in zona industriale. Tre incontri con la stessa persona — uomo, quarantacinque anni circa, non identificato. Vi mandiamo le fotografie."
+
+---
+
+### Esempio 2 — Pedinamento difficile
+
+**Situazione**: Stessa richiesta, ma il commerciante ha ricevuto una soffiata e sa che qualcuno lo sta guardando. Si muove in modo irregolare, cambia percorsi, usa taxi diversi.
+
+**Ente**: Questura — città media (Organico 7)
+**Azione**: Pedinamento → attributo Organico
+**Soggetto**: persona cauta e già allertata → modificatore -2
+**Attributo effettivo**: 7 - 2 = 5
+**Specializzazioni**: nessuna
+
+**Il GM tira 2d6: esce 8.**
+8 > 5 → **Fallimento leggero**.
+
+**Narrativa**: "L'abbiamo perso nel centro storico nel pomeriggio del secondo giorno. È entrato in un palazzo da un ingresso e uscito da un altro. Nessuna conseguenza — non sembra essersi accorto di noi."
+
+---
+
+### Esempio 3 — Pedinamento con specializzazione
+
+**Situazione**: I PG chiedono alla Direzione Speciale di seguire un sospettato esperto di contromisure — sa riconoscere i pedinamenti, cambia auto, usa mosse di controllo.
+
+**Ente**: Direzione Speciale (Organico 5, specializzazione Squadra di sorveglianza → +1)
+**Azione**: Pedinamento → attributo Organico
+**Soggetto**: professionista esperto → modificatore -3
+**Attributo effettivo**: 5 + 1 (specializzazione) - 3 (difficoltà) = 3
+**Nota**: attributo sotto 4, si usa 4 come minimo
+
+**Il GM tira 2d6: esce 3.**
+Dado puro 3 → **Ottimo**.
+
+**Narrativa**: "Il soggetto ha eseguito tre manovre di contro-pedinamento. I nostri lo hanno perso due volte deliberatamente per non farsi bruciare, poi lo hanno ripreso. Ha incontrato una donna in un café — abbiamo le foto. Ha consegnato qualcosa. Piccola busta, non abbiamo visto il contenuto."
+
+---
+
+### Esempio 4 — Ricerca in archivi
+
+**Situazione**: I PG vogliono sapere se una certa persona ha precedenti penali e dove è residente. Chiedono alla Questura locale.
+
+**Ente**: Questura — città media (Risorse 7)
+**Azione**: Ricerca in archivi e banche dati → attributo Risorse
+**Soggetto**: nessuna difficoltà specifica → modificatore 0
+**Attributo effettivo**: 7
+
+**Il GM tira 2d6: esce 2.**
+Dado 2 → **Critico positivo**.
+
+**Narrativa**: "Precedenti: due denunce per truffa, archiviate. Residenza confermata. Ma c'è altro — l'uomo è stato segnalato tre anni fa in un'indagine per associazione a delinquere, poi separata. Il fascicolo è ancora aperto presso la Procura di un'altra città. Vi do il numero del PM titolare."
+
+---
+
+### Esempio 5 — Richiesta a un ente inadeguato
+
+**Situazione**: I PG si trovano in un piccolo comune e chiedono alla stazione locale di fare un'analisi forense su un reperto.
+
+**Ente**: Stazione piccolo comune (Efficienza 4)
+**Azione**: Analisi forense → attributo Efficienza
+**Soggetto**: nessuna difficoltà → modificatore 0
+**Attributo effettivo**: 4
+
+**Il GM tira 2d6: esce 9.**
+9 > 4 → **Fallimento leggero**.
+
+**Narrativa**: "Siamo spiacenti, non abbiamo l'attrezzatura per questo tipo di analisi. Dobbiamo mandare il reperto al laboratorio provinciale. I tempi sono di cinque-sette giorni lavorativi."
+
+*Nota del GM: questo non è un fallimento vero — è semplicemente la realtà di un ente piccolo. I PG perdono tempo, non informazioni. Possono scegliere di aspettare o di trovare un ente più attrezzato.*
+
+---
+
+### Esempio 6 — Richiesta all'ufficio anagrafe
+
+**Situazione**: I PG devono localizzare una persona di cui conoscono solo il nome e la città di provenienza approssimativa.
+
+**Ente**: Ufficio Anagrafe comunale (Risorse 7)
+**Azione**: Localizzazione persona → attributo Rete (ma trattandosi di archivi anagrafici il GM decide di usare Risorse — è una ricerca documentale, non operativa)
+**Soggetto**: nessuna difficoltà → modificatore 0
+**Attributo effettivo**: 7
+
+**Il GM tira 2d6: esce 6.**
+6 ≤ 7 → **Successo**.
+
+**Narrativa**: "La persona risulta residente in via tale al numero civico tale. Risulta celibe, nessuna variazione di residenza negli ultimi dieci anni. I dati sono aggiornati al mese scorso."
+
+---
+
+## Nota sulle Specializzazioni Cross-Attributo
+
+In alcuni casi una specializzazione può essere assegnata a un attributo diverso da quello indicato nella lista, se è narrativamente coerente con il tipo di ente. Il GM decide — non è una regola rigida, è un'indicazione. Un'agenzia privata con una rete eccezionale può avere copertura civile anche con Organico basso, perché i suoi contatti suppliscono alla mancanza di personale.
+
+---
+
+
+---
+
 # COMBATTIMENTO
 
 Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è una sparatoria, la cosa intelligente è chiamare rinforzi o scappare.
@@ -564,6 +1016,8 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 - Ha trovato una soluzione (Lucidità)?
 - È rimasto professionale nonostante tutto (Distacco)?
 
+> **Esempio di scena personale**: Il GM attiva il Kage di Tanaka. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Tanaka non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Tanaka prende -1 a un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
+
 ---
 
 # PROGRESSIONE
@@ -580,6 +1034,13 @@ Gli attributi cambiano durante l'avventura tramite:
 **Limiti**: Nessun attributo supera mai 9 o scende sotto 4 (perdita forzata su Ki). Il Ki non supera mai il valore di inizio sessione.
 
 **Non c'è esperienza tradizionale.** I PG crescono o crollano in base a come affrontano il caso e la loro vita.
+
+> **Esempio di progressione in una sessione**: Sato inizia con Distacco 6, Ascolto 7, Ki 9.
+> - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco sale a 7, Ki a 10. Ma il Ki non può superare il valore di inizio sessione (9) — il punto è perso.
+> - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di abbassare Ascolto. Ki scende a 8.
+> - Scena personale con il padre: gestita bene dal voto dei giocatori. Sceglie +1 Silenzio (sale da 5 a 6).
+> - Fine sessione: recupero notturno. Nessun Kiwami nella giornata: tira 1d3, esce 2. Ki torna a 10 — ma il massimo è 9, quindi resta 9.
+> - Sessione successiva inizia con: Distacco 7, Ascolto 7, Silenzio 6, Ki 9.
 
 ---
 
@@ -829,4 +1290,4 @@ Arma da fuoco: -4 Ki o fuori gioco
 
 ---
 
-*GENKAI 限界 - Regolamento v1.2*
+*GENKAI 限界 - Regolamento v1.3*

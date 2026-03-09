@@ -94,9 +94,24 @@ Avventura GDR (Savage Worlds) con integrazione IA live via Cloudflare Worker. Li
 - **Riscrittura prompt terminale**: macchina fredda, 10-15 min, RITMO DELLA CONVERSAZIONE
 - **CLAUDE_MAX_TOKENS**: 10000
 
+## Stato Attuale (2026-03-09)
+
+### Completati e Deployati
+- **TASK 1**: Database Lore (25 voci intel nel TACS-7 pulito)
+- **TASK 2**: Tracking PG Connessi (endpoint + dashboard + prompt)
+- **Revisione Fasi**: Da 6 a 3, mappate sui piani del bunker
+- **Intensificazione Prompt**: PHASE_CONTEXT con tattiche specifiche, sezioni graduate per fase, BIOSCAN
+- **Fix nomi inventati**: regola globale + Alpha senza nomi
+- Worker deployato e testato — tutte e 3 le fasi funzionano correttamente
+
+### Da Fare
+- **TASK 3**: Scena Conversione (monitor.html + worker.js) — non iniziato
+- **TASK 4**: Musica e Audio — ULTIMA PRIORITA, in attesa tracce dall'utente
+- **Test da fare**: sequenza boot scan monitor.html, mini-sequenze drammatiche, BIOSCAN visuale su terminal.html
+
 ## Lavori in Sospeso (Precedenti)
 - ~~Serve `wrangler deploy` dell'ultimo worker.js~~ FATTO 2026-03-08
-- Serve testare: sequenza boot scan, mini-sequenze drammatiche, qualita modello Opus, BIOSCAN
+- ~~Serve testare fasi~~ FATTO 2026-03-09 — fasi testate via API, tutte coerenti
 
 ## PIANO DI LAVORO — Sessione 2026-03-08
 
@@ -280,6 +295,15 @@ Avventura GDR (Savage Worlds) con integrazione IA live via Cloudflare Worker. Li
 - Le due implementazioni sono indipendenti e non si toccano
 
 **Deploy**: `npx wrangler deploy` eseguito. Worker version: `e8b34db4`
+
+#### Fix Post-Test: Nomi Inventati — COMPLETATO e DEPLOYATO
+**File modificato**: `AI/worker.js`
+**Problemi trovati durante i test e corretti**:
+1. **Nomi inventati**: l'IA inventava nomi di operatori Alpha (Jackson, Miller) non presenti nel lore. Aggiunta regola globale in COSA NON RIVELARE: "NON inventare nomi di persone, luoghi o dettagli non nel contesto"
+2. **Alpha senza nomi**: tattica ALPHA in fase 2 riscritta — "NON conosci i nomi degli operatori di Alpha", parla in modo generico
+**NOTA**: Le sezioni COME TI PRESENTI e COME SCRIVI fase 1 NON vanno toccate — "confusa, spaventata, frasi spezzate" e la FACCIATA calcolata dell'IA, coerente col lore. Non confondere con lo stato reale dell'IA.
+**Test post-fix**: tutte e 3 le fasi coerenti. BIOSCAN presente e graduato.
+**Deploy**: Worker version `905135bf`
 
 ### Regole per Claude Paralleli
 

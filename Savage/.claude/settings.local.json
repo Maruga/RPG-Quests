@@ -19,7 +19,8 @@
       "Bash(cp:*)",
       "Bash(rm:*)",
       "Bash(node:*)",
-      "Bash(npx wrangler:*)"
+      "Bash(npx wrangler:*)",
+      "Bash(curl:*)"
     ]
   },
   "enableAllProjectMcpServers": true
