@@ -11,14 +11,12 @@
             "id": "d769841e2388e25f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Squadra Investigatori.png"
               },
-              "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "icon": "lucide-image",
+              "title": "Squadra Investigatori"
             }
           }
         ]
@@ -227,11 +225,15 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Kyoto.png",
+    "Investigare/logo.png",
+    "Investigare/logoNero.png",
+    "Investigare/PG Riassunto.md",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Manuale_GM.md",
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/GENKAI Manuale Giocatori.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI Manuale Situazioni.md",
     "Investigare/GENKAI Regolamento v1.2.md",
     "Link Utili.md",
@@ -251,9 +253,6 @@
     "Savage/CLAUDE.md",
     "Savage/Operazione Sarcofago/CLAUDE.md",
     "Savage/Manovre di Combatimento.md",
-    "Investigare/Kyoto.png",
-    "Investigare/logo.png",
-    "Investigare/logoNero.png",
     "Investigare/Squadra Investigatori.png",
     "Investigare/Avventura Occhi di Volpe/CRONISTORIA COMPLETA.md",
     "Investigare/Avventura Sake/Storia Completa.md",
@@ -264,14 +263,12 @@
     "Investigare/Ultima Cena/handout/~$ndout_Ultima_Cena_di_Tanaka.docx",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Avventura Ultima Lezione/CLAUDE.md",
-    "Investigare/PG Riassunto.md",
     "Investigare/README.md",
     "Investigare/Avventura Occhi di Volpe/CLAUDE.md",
     "Investigare/Avventura Occhi di Volpe",
     "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Il Giudice/handout/Articoli_Giornale.md",
     "Investigare/pg/token_prompts.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Investigare/pg/PG_02_Honda_Ryota.md"
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md"
   ]
 }
