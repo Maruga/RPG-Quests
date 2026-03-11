@@ -440,6 +440,7 @@ Gli attributi del distretto seguono la stessa scala dei PG: da 4 a 9.
 | **Velocità** | Tempi di risposta e completamento |
 | **Risorse** | Mezzi, tecnologia, attrezzatura, fondi |
 | **Rete** | Informatori, contatti esterni, copertura territoriale |
+| **Corruzione** | Compromissione dell'ente — interessi esterni, favoritismi, agende proprie |
 
 ### Generazione
 
@@ -448,6 +449,8 @@ Il GM sceglie uno dei due metodi:
 **Metodo casuale** — per ogni attributo tira 2d6, prendi il dado più alto. Risultato minimo 4, massimo 9 (se il dado più alto supera 9, conta come 9).
 
 **Metodo diretto** — il GM assegna i valori a priori in base al tipo di ente e al ruolo che deve avere nella situazione. Nessun tiro, nessun punto libero da distribuire. Scrivi i numeri che servono alla storia.
+
+> **Nota sulla Corruzione**: la Corruzione segue la stessa scala (4–9) ma va sempre assegnata con il metodo diretto, perché dipende dal tipo di ente e dall'ambientazione — non dal caso.
 
 ---
 
@@ -503,6 +506,14 @@ Il GM sceglie quali specializzazioni acquisire tra quelle disponibili per l'attr
 - **Cooperazione internazionale** — accordi operativi con enti esteri
 - **Media e comunicazione** — capacità di gestire o influenzare l'informazione pubblica
 
+### Legate a Corruzione
+- **Connessioni criminali** — legami con criminalità organizzata, protezione reciproca
+- **Protezione politica** — copertura da politici, funzionari, amministrazione
+- **Insabbiamento** — capacità di far sparire indagini scomode e informazioni interne
+- **Corruzione economica** — tangenti, fondi neri, appalti pilotati
+- **Omertà** — muro di silenzio interno, nessuno parla
+- **Agenda propria** — l'ente persegue obiettivi non dichiarati
+
 ---
 
 ## Azioni Delegabili
@@ -554,6 +565,76 @@ Il GM assegna un modificatore al tiro in base al soggetto o alla situazione:
 
 ---
 
+## Corruzione
+
+La Corruzione non è un attributo di capacità — è un **fattore di rischio**. Misura quanto l'ente è compromesso da interessi esterni: criminalità, politica, favoritismi, agende proprie. Più è alta, più è probabile che qualcuno all'interno dell'ente lavori contro gli interessi dell'indagine — senza che i PG lo sappiano.
+
+### Quando si tira
+
+Il GM tira per Corruzione **solo quando l'operazione delegata tocca interessi sensibili**:
+
+- L'indagine coinvolge criminalità organizzata
+- Si indaga su persone potenti — politici, imprenditori, membri dell'ente stesso
+- L'operazione potrebbe danneggiare chi protegge o finanzia l'ente
+- I PG chiedono di agire contro qualcuno "intoccabile"
+
+**Non si tira** per operazioni di routine che non toccano interessi particolari.
+
+### Come si tira
+
+Il GM tira **2d6 in segreto**, separatamente dal tiro dell'operazione. Se il risultato è **≤ Corruzione** → la corruzione si attiva.
+
+Il tiro è indipendente dal risultato dell'operazione. Un pedinamento può riuscire perfettamente e la corruzione attivarsi comunque — qualcuno dentro l'ente ha passato l'informazione.
+
+| Corruzione | Probabilità di attivarsi |
+|------------|--------------------------|
+| 4 | 17% |
+| 5 | 28% |
+| 6 | 42% |
+| 7 | 58% |
+| 8 | 72% |
+| 9 | 83% |
+
+### Effetti
+
+Il GM sceglie l'effetto appropriato alla situazione:
+
+| Effetto | Cosa succede |
+|---------|-------------|
+| **Fuga di notizie** | Il sospettato o un terzo viene informato dell'operazione |
+| **Omissione** | Un dettaglio rilevante viene omesso dal rapporto |
+| **Ritardo deliberato** | L'operazione richiede il doppio del tempo previsto |
+| **Depistaggio** | Il rapporto contiene un'informazione fuorviante |
+| **Sabotaggio** | Prove alterate o "perse accidentalmente" |
+| **Copertura** | L'ente protegge attivamente qualcuno coinvolto |
+
+**I giocatori non sanno** che la corruzione ha agito. Lo scoprono quando il sospettato cambia comportamento, quando un dettaglio non torna, quando qualcuno sa cose che non dovrebbe sapere.
+
+### Forme di Corruzione
+
+Il GM annota brevemente la natura della corruzione dell'ente — non ha effetto meccanico, ma guida la scelta dell'effetto quando si attiva. Le forme corrispondono alle specializzazioni di Corruzione: a qualsiasi livello il GM può annotare quale forma prevale come nota narrativa, ma solo a Corruzione 8+ la forma diventa una specializzazione con bonus meccanico (+1).
+
+### Contromisure dei PG
+
+I giocatori possono proteggersi dalla corruzione:
+
+- **Compartimentare le informazioni** — non dire all'ente tutto quello che sanno
+- **Usare un ente diverso** — delegare a uno più pulito, anche se meno potente
+- **Verificare i risultati** — confrontare le informazioni ricevute con altre fonti
+- **Indagare l'ente stesso** — scoprire chi è corrotto e aggirarlo
+
+### Esempio
+
+**Situazione**: I PG chiedono alla Questura di pedinare un uomo d'affari sospettato di legami con la yakuza.
+
+**Operazione**: Il GM tira normalmente per il pedinamento → Organico 7, dado 5 → Successo.
+
+**Tiro Corruzione**: La Questura ha Corruzione 5. L'operazione tocca la criminalità organizzata → il GM tira 2d6 in segreto: esce 4. 4 ≤ 5 → la corruzione si attiva.
+
+**Effetto**: Il GM sceglie "Fuga di notizie". L'uomo d'affari viene avvisato da qualcuno dentro la Questura. I PG ricevono il rapporto del pedinamento — tutto regolare, nessun segnale. Ma due giorni dopo, l'uomo d'affari cambia improvvisamente abitudini. Se i PG indagano, scopriranno che qualcuno ha fatto una telefonata.
+
+---
+
 ## Esempi di Ente
 
 Gli esempi seguono una progressione dal più piccolo al più grande e strutturato. Usali come riferimento diretto o come punto di partenza per calibrare enti simili.
@@ -570,10 +651,11 @@ Gli esempi seguono una progressione dal più piccolo al più grande e strutturat
 | Velocità | 5 |
 | Risorse | 4 |
 | Rete | 7 |
+| Corruzione | 4 |
 
 Specializzazioni: nessuna.
 
-Note: Rete alta perché in un paese piccolo tutti si conoscono e le informazioni circolano. Per qualsiasi operazione che richieda più di due persone o attrezzatura, devono chiedere supporto al distretto superiore. Tempi di risposta rapidi solo per eventi locali.
+Note: Rete alta perché in un paese piccolo tutti si conoscono e le informazioni circolano. Per qualsiasi operazione che richieda più di due persone o attrezzatura, devono chiedere supporto al distretto superiore. Tempi di risposta rapidi solo per eventi locali. Corruzione minima — al massimo qualche favore al notabile locale.
 
 ---
 
@@ -587,10 +669,11 @@ Note: Rete alta perché in un paese piccolo tutti si conoscono e le informazioni
 | Velocità | 6 |
 | Risorse | 5 |
 | Rete | 6 |
+| Corruzione | 4 |
 
 Specializzazioni: nessuna.
 
-Note: Capace di gestire la maggior parte delle operazioni standard. Per analisi forensi avanzate dipende da laboratori esterni. Pedinamenti fattibili ma con personale ridotto.
+Note: Capace di gestire la maggior parte delle operazioni standard. Per analisi forensi avanzate dipende da laboratori esterni. Pedinamenti fattibili ma con personale ridotto. Corruzione fisiologica, niente di sistemico.
 
 ---
 
@@ -604,10 +687,11 @@ Note: Capace di gestire la maggior parte delle operazioni standard. Per analisi 
 | Velocità | 6 |
 | Risorse | 7 |
 | Rete | 7 |
+| Corruzione | 5 |
 
 Specializzazioni: nessuna (nessun attributo ≥ 8).
 
-Note: Ente solido e affidabile per la maggior parte delle operazioni. Nessun punto di eccellenza ma nessuna lacuna grave. Il tipo di ente con cui i PG interagiscono più spesso.
+Note: Ente solido e affidabile per la maggior parte delle operazioni. Nessun punto di eccellenza ma nessuna lacuna grave. Il tipo di ente con cui i PG interagiscono più spesso. Corruzione presente ma contenuta — qualche sacca, nessun sistema.
 
 ---
 
@@ -621,12 +705,13 @@ Note: Ente solido e affidabile per la maggior parte delle operazioni. Nessun pun
 | Velocità | 6 |
 | Risorse | 8 |
 | Rete | 7 |
+| Corruzione | 5 |
 
 Specializzazioni automatiche:
 - Organico 8 → **Squadra di sorveglianza**
 - Risorse 8 → **Archivio esteso**
 
-Note: Può gestire operazioni parallele senza sguarnire il territorio. L'archivio è completo e aggiornato. La velocità rimane nella media per via delle procedure burocratiche.
+Note: Può gestire operazioni parallele senza sguarnire il territorio. L'archivio è completo e aggiornato. La velocità rimane nella media per via delle procedure burocratiche. Più grande l'ente, più esposizione alle pressioni — corruzione presente.
 
 ---
 
@@ -640,11 +725,12 @@ Note: Può gestire operazioni parallele senza sguarnire il territorio. L'archivi
 | Velocità | 4 |
 | Risorse | 7 |
 | Rete | 5 |
+| Corruzione | 4 |
 
 Specializzazioni automatiche:
 - Risorse 7 → nessuna (soglia non raggiunta).
 
-Note: Inutile per operazioni di campo. Prezioso per localizzare persone, verificare identità, accedere a registri storici. La velocità bassa riflette i tempi burocratici — una richiesta urgente richiede comunque giorni.
+Note: Inutile per operazioni di campo. Prezioso per localizzare persone, verificare identità, accedere a registri storici. La velocità bassa riflette i tempi burocratici — una richiesta urgente richiede comunque giorni. Corruzione minima — al massimo qualche accesso non autorizzato ai registri.
 
 ---
 
@@ -658,11 +744,12 @@ Note: Inutile per operazioni di campo. Prezioso per localizzare persone, verific
 | Velocità | 4 |
 | Risorse | 8 |
 | Rete | 6 |
+| Corruzione | 5 |
 
 Specializzazioni automatiche:
 - Risorse 8 → **Archivio esteso**
 
-Note: Utile per tracciare proprietà, verificare situazioni debitorie, ricostruire movimenti patrimoniali. Con mandato o collaborazione formale, può fornire informazioni che nessun altro ente ha.
+Note: Utile per tracciare proprietà, verificare situazioni debitorie, ricostruire movimenti patrimoniali. Con mandato o collaborazione formale, può fornire informazioni che nessun altro ente ha. Corruzione presente — dati sensibili e pressioni immobiliari creano opportunità.
 
 ---
 
@@ -676,10 +763,11 @@ Note: Utile per tracciare proprietà, verificare situazioni debitorie, ricostrui
 | Velocità | 7 |
 | Risorse | 6 |
 | Rete | 7 |
+| Corruzione | 4 |
 
 Specializzazioni automatiche: nessuna.
 
-Note: Ottima per inseguimenti su strada, localizzazione di veicoli, controllo di zone extraurbane. Meno efficace in ambienti urbani complessi o per indagini che richiedono analisi.
+Note: Ottima per inseguimenti su strada, localizzazione di veicoli, controllo di zone extraurbane. Meno efficace in ambienti urbani complessi o per indagini che richiedono analisi. Corruzione minima — poco esposta a pressioni esterne.
 
 ---
 
@@ -693,13 +781,14 @@ Note: Ottima per inseguimenti su strada, localizzazione di veicoli, controllo di
 | Velocità | 7 |
 | Risorse | 8 |
 | Rete | 9 |
+| Corruzione | 4 |
 
 Specializzazioni automatiche:
 - Efficienza 9 → **Laboratorio scientifico** + **Profilazione**
 - Rete 9 → **Rete criminale** + **Contatti giudiziari**
 - Risorse 8 → **Tecnologia avanzata**
 
-Note: Quasi impossibile da delegare senza una ragione seria — questo tipo di ente non collabora con chiunque. Se i PG riescono ad attivarlo, è una risorsa eccezionale. Il basso Organico significa che può gestire una sola operazione importante alla volta.
+Note: Quasi impossibile da delegare senza una ragione seria — questo tipo di ente non collabora con chiunque. Se i PG riescono ad attivarlo, è una risorsa eccezionale. Il basso Organico significa che può gestire una sola operazione importante alla volta. Corruzione minima — personale selezionato per integrità.
 
 ---
 
@@ -713,12 +802,13 @@ Note: Quasi impossibile da delegare senza una ragione seria — questo tipo di e
 | Velocità | 4 |
 | Risorse | 9 |
 | Rete | 9 |
+| Corruzione | 7 |
 
 Specializzazioni automatiche:
 - Risorse 9 → **Tecnologia avanzata** + **Fondi operativi**
 - Rete 9 → **Cooperazione internazionale** + **Contatti politici**
 
-Note: La velocità bassissima riflette procedure interne rigide, catene di autorizzazione lunghe, e la tendenza a non condividere informazioni. Quando finalmente agisce, lo fa con precisione assoluta. I PG raramente hanno accesso diretto — passano attraverso canali intermedi.
+Note: La velocità bassissima riflette procedure interne rigide, catene di autorizzazione lunghe, e la tendenza a non condividere informazioni. Quando finalmente agisce, lo fa con precisione assoluta. I PG raramente hanno accesso diretto — passano attraverso canali intermedi. Corruzione endemica — non per venalità, ma per agenda propria e opacità strutturale. Forma: agenda propria.
 
 ---
 
@@ -732,11 +822,12 @@ Note: La velocità bassissima riflette procedure interne rigide, catene di autor
 | Velocità | 5 |
 | Risorse | 6 |
 | Rete | 8 |
+| Corruzione | 5 |
 
 Specializzazioni automatiche:
 - Rete 8 → **Contatti giudiziari**
 
-Note: La Procura non è un ente operativo — non pedina, non perquisisce, non arresta. È l'ente che **autorizza** gli altri a farlo.
+Note: La Procura non è un ente operativo — non pedina, non perquisisce, non arresta. È l'ente che **autorizza** gli altri a farlo. Corruzione presente — pressioni politiche possibili, magistrati non sempre indipendenti.
 
 **Azioni che NON richiedono autorizzazione del magistrato:**
 

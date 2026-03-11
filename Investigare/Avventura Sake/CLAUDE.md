@@ -20,7 +20,8 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 - **Gli indizi si danno SEMPRE** — il dado non blocca l'indagine, modula solo la gestione emotiva di ciò che si trova
 - **Ogawa è il colpevole** — è il PNG più gentile e collaborativo (En +1). Questa è la trappola
 - **Meccanismo a tre vettori**: incenso (aereo), sake (potenziatore), sapone a doppio strato (contatto). Tutti e tre necessari, nessuno letale da solo
-- **Ogawa mente solo sulle emozioni e sulla sequenza al bagno** — non mente mai su fatti verificabili
+- **Ogawa mente solo sulle emozioni e sull'intento reale al bagno** — non mente mai su fatti verificabili
+- **Tanaka si chiude nel bagno da solo** — Ogawa chiude la porta (per privacy) ma non gira il chiavistello. Tanaka nella confusione dell'anafilassi gira il chiavistello convinto di aprirlo e si chiude dentro. Il chiavistello è una pista falsa per i PG
 - **Hayashi è stato manipolato** per comprare l'incenso al Kunjudō. Non sa nulla di chimica
 - **L'indagine privata su Hayashi** (commissionata da Tanaka a Nishida) NON c'entra con Ogawa — è un depistaggio
 - **L'EpiPen** è nella giacca al guardaroba, non al bagno — per questo Tanaka non si è salvato
@@ -54,6 +55,22 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 - Le prove sono fisiche e sempre trovabili — i tiri modulano solo la comprensione
 - Il tono è noir realistico, nessun elemento soprannaturale
 - Ritmo target: 45-60 minuti totali (10 min briefing, 20-30 min interrogatori, 10-15 min finale)
+
+## Handout
+
+10 handout HTML in `handout/`. Dettagli completi in `MEMORY.md`.
+
+- **H01-H04**: Planimetria, rapporto preliminare, lista presenti, ristrutturazione societaria
+- **H05**: Agenda Tanaka — 4 pagine (Set-Dic), sfondo bianco, colori forti, biglietto Nishida incollato
+- **H06**: Referti scientifica — 4 pagine standalone (Sapone, Incenso, Confronto, Sake), consegnabili singolarmente
+- **H07**: Menu kaiseki — sfondo bianco, una pagina compatta
+- **H08**: Biglietto da visita Nishida (meishi)
+- **H09**: Lettere Nakamura→Yuki (red herring, reperto polizia Allegato D)
+- **H10**: Rapporto PI Nishida su Hayashi (tutto pulito)
+
+Tutti hanno dark mode CSS (`prefers-color-scheme: dark`) e print CSS (sempre light). Ogni handout funziona standalone.
+
+Dati coerenti tra handout: Nishida (tel, indirizzo, licenza), fascicolo 97-KPD-1114, kanji PNG.
 
 ## Vault Obsidian
 

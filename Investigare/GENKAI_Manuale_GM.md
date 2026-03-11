@@ -371,7 +371,7 @@ Non tutta la corruzione è qualcosa che i PG subiscono. Alcune zone grigie sono 
 
 ### Come il GM gestisce la corruzione
 
-La corruzione non è una meccanica — è un contesto narrativo. Non servono tiri dedicati. Serve che il mondo reagisca in modo coerente.
+La corruzione ha una meccanica dedicata — l'attributo **Corruzione** sulla scheda dell'ente, con tiro 2d6 segreto (vedi la sezione *Corruzione* nel Regolamento e nel Manuale Situazioni). Ma la meccanica è solo la base. La vera gestione della corruzione è narrativa — serve che il mondo reagisca in modo coerente.
 
 **La corruzione è un'offerta, non un obbligo.** Non forzare i PG verso scelte moralmente ambigue. Presenta le opportunità e lascia che decidano. Un informatore yakuza che offre informazioni in cambio di un favore è un'opportunità — non una trappola del GM.
 

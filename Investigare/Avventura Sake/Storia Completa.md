@@ -69,11 +69,13 @@ Ogawa, come direttore R&D, conosce la soglia esatta di pericolosità. Sa che un 
 
 **Ore 20:30-21:00** — Cena kaiseki servita. Menù impeccabile, nessun allergene. La musica viene alzata — è una festa, si beve, si ride.
 
-**Ore 21:30 circa** — Tanaka inizia a sentirsi male. Gola irritata, leggero gonfiore, disagio. Si alza da tavola, dice che va al bagno. Ogawa si alza subito dopo: "Tanaka-san, ti accompagno, non hai una bella faccia." Lo segue al bagno.
+**Ore 21:30 circa** — Tanaka inizia a sentirsi male. Gola irritata, leggero gonfiore, disagio. Si alza da tavola, dice che va al bagno. Ogawa si alza subito dopo: "Tanaka-san, ti accompagno, non hai una bella faccia." Lo accompagna al bagno.
+
+> **Nota GM:** Tanaka usa abitualmente il suo bagno personale al primo piano. Se fosse lucido ci andrebbe da solo, ma sta già male e Ogawa lo accompagna volutamente al bagno ospiti del piano terra — dove ha piazzato la saponetta col doppio strato tre settimane prima, sapendo che il primo strato protettivo è ormai consumato dall'uso degli ospiti precedenti.
 
 **Ore 21:35** — Tanaka si lava il viso e le mani con il sapone. Lo strato protettivo è già consumato. Wintergreen concentrato a contatto con la pelle. Terzo vettore attivo. La reazione allergica accelera violentemente.
 
-**Ore 21:35-21:40** — Tanaka cerca di prendere l'EpiPen dalla giacca — ma la giacca è nel guardaroba all'ingresso, lontano dal bagno. Ogawa chiude la porta "per dargli privacy," torna alla festa. La musica copre le grida. Tanaka cerca di chiamare aiuto ma la voce è strozzata dall'edema.
+**Ore 21:35-21:40** — Tanaka cerca di prendere l'EpiPen dalla giacca — ma la giacca è nel guardaroba all'ingresso, lontano dal bagno. Ogawa lo vede entrare nel bagno, chiude la porta per dargli privacy ma non gira il chiavistello, poi torna alla festa. Tanaka, sempre più compromesso, barcolla verso la porta per chiedere aiuto. Nella confusione dell'anafilassi gira il chiavistello convinto di aprirla — e si chiude dentro. Intrappolato dal suo stesso errore, troppo debole per capire cosa ha fatto, graffia il legno della porta e cerca di gridare. La musica copre tutto.
 
 **Ore 22:00 circa** — Qualcuno va a cercarlo. Lo trovano a terra nel bagno. Morto.
 
@@ -132,7 +134,7 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 - Nessun segno di violenza esterna, nessuna ferita, nessun segno di iniezione
 - Porta del bagno chiusa dall'interno con chiavistello semplice (girabile dall'esterno con oggetto piatto)
 - Lavandino e specchio bagnati — la vittima si è lavata
-- Graffi leggeri sul legno interno della porta — la vittima ha cercato di uscire o attirare attenzione
+- Graffi leggeri sul legno interno della porta — la vittima ha cercato disperatamente di uscire dopo essersi chiusa dentro da sola nella confusione dell'anafilassi
 - Ha isolato e catalogato tutto il contenuto del bagno, incluso il sapone
 
 **Cosa può riferire se i PG chiedono:**
@@ -143,7 +145,7 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 - **Sull'incenso:** Se i PG glielo portano: "Posso analizzarlo. Dammi cinque minuti." → "C'è metil-salicilato anche qui. Wintergreen nell'incenso."
 - **Sul chiavistello:** "Si gira dall'interno facilmente. Dall'esterno serve un oggetto piatto — una moneta, un coltellino, una chiave. Non serve forza." Se i PG insistono: "Preciso: questo tipo di chiavistello è simmetrico. Si gira nello stesso modo da entrambi i lati. Non c'è modo di determinare se è stato chiuso da dentro o da fuori."
 
-> **Nota GM:** Questo è un indizio sottile. Se i PG ci ragionano, capiscono che qualcuno avrebbe potuto chiudere Tanaka dentro dall'esterno.
+> **Nota GM:** La porta è stata chiusa da Tanaka stesso, nella confusione dell'anafilassi. I PG potrebbero sospettare che qualcuno l'abbia chiusa dall'esterno (Ogawa era stato visto seguirlo) — è una pista falsa. Se indagano il chiavistello, stanno perdendo tempo. Non frenare l'errore — la frustrazione quando scopriranno la verità è parte dell'esperienza.
 - **Sulla giacca di Tanaka:** Se i PG gliela portano: "EpiPen nel taschino interno. Pieno, non è stato utilizzato."
 
 **Cosa NON può fare:**
@@ -188,7 +190,7 @@ In azienda da 28 anni. Ogni crema, ogni sapone, ogni profumo che ha reso famosa 
 - Ha creato il sapone nel laboratorio R&D
 - Ha predisposto l'incenso attraverso Hayashi e il negoziante Kano
 - Ha portato il sake e orchestrato i brindisi
-- Ha seguito Tanaka al bagno e ha chiuso la porta dall'esterno
+- Ha accompagnato Tanaka al bagno ospiti del piano terra (dove c'è la saponetta), ha chiuso la porta e è tornato alla festa sapendo che l'EpiPen era lontana e i tre vettori avrebbero fatto il resto
 
 **Cosa dice liberamente:**
 
@@ -201,8 +203,8 @@ In azienda da 28 anni. Ogni crema, ogni sapone, ogni profumo che ha reso famosa 
 **Dove mente (per Gou "Ombra della Verità"):**
 
 - "Tanaka-san era il mio mentore. Lo rispettavo profondamente" → BUGIA. Lo odiava
-- "Ho lasciato Tanaka al bagno ed è entrato da solo" → MEZZA VERITÀ. Lo ha seguito fin dentro, ha chiuso la porta dall'esterno
-- Tutto il resto è vero — Ogawa non mente su fatti verificabili. Mente solo sulle emozioni e sulla sequenza esatta al bagno
+- "Ho lasciato Tanaka al bagno ed è entrato da solo" → MEZZA VERITÀ. Lo ha seguito per assicurarsi che la reazione fosse iniziata, non per preoccupazione. Lo ha lasciato morire sapendo che non avrebbe raggiunto l'EpiPen
+- Tutto il resto è vero — Ogawa non mente su fatti verificabili. Mente solo sulle emozioni e sull'intento reale al bagno
 
 **Come reagisce sotto pressione:**
 
