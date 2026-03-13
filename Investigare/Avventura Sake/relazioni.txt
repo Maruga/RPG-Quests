@@ -1,0 +1,111 @@
+# Relazioni PNG -> PG — L'Ultima Cena di Tanaka
+# Valori iniziali basati su En di partenza da Storia Completa
+# Formato: NomePNG -> NomePG -> Punteggio:Nota
+
+# PNG istituzionali
+
+Yamada Tetsuo -> Yamamoto Kenji -> 2:Rispettoso, prende il compito seriamente
+Yamada Tetsuo -> Honda Ryota -> 2:Rispettoso, prende il compito seriamente
+Yamada Tetsuo -> Nakamura Shota -> 2:Rispettoso, prende il compito seriamente
+Yamada Tetsuo -> Sato Yuki -> 2:Rispettoso, prende il compito seriamente
+Yamada Tetsuo -> Fujita Emi -> 2:Rispettoso, prende il compito seriamente
+
+Ito Daisuke -> Yamamoto Kenji -> 0:Professionale, nessuna relazione personale
+Ito Daisuke -> Honda Ryota -> 0:Professionale, nessuna relazione personale
+Ito Daisuke -> Nakamura Shota -> 0:Professionale, nessuna relazione personale
+Ito Daisuke -> Sato Yuki -> 0:Professionale, nessuna relazione personale
+Ito Daisuke -> Fujita Emi -> 0:Professionale, nessuna relazione personale
+
+# PNG presenti alla festa
+
+Ogawa Masaru -> Yamamoto Kenji -> 1:Collaborativo, disponibile, calmo
+Ogawa Masaru -> Honda Ryota -> 1:Collaborativo, disponibile, calmo
+Ogawa Masaru -> Nakamura Shota -> 1:Collaborativo, disponibile, calmo
+Ogawa Masaru -> Sato Yuki -> 1:Collaborativo, disponibile, calmo
+Ogawa Masaru -> Fujita Emi -> 1:Collaborativo, disponibile, calmo
+
+Ogawa Reiko -> Yamamoto Kenji -> 0:Composta, riservata
+Ogawa Reiko -> Honda Ryota -> 0:Composta, riservata
+Ogawa Reiko -> Nakamura Shota -> 0:Composta, riservata
+Ogawa Reiko -> Sato Yuki -> 0:Composta, riservata
+Ogawa Reiko -> Fujita Emi -> 0:Composta, riservata
+
+Fujimoto Shinji -> Yamamoto Kenji -> -1:Ubriaco, nervoso, vede la polizia come minaccia
+Fujimoto Shinji -> Honda Ryota -> -1:Ubriaco, nervoso, vede la polizia come minaccia
+Fujimoto Shinji -> Nakamura Shota -> -1:Ubriaco, nervoso, vede la polizia come minaccia
+Fujimoto Shinji -> Sato Yuki -> -1:Ubriaco, nervoso, vede la polizia come minaccia
+Fujimoto Shinji -> Fujita Emi -> -1:Ubriaco, nervoso, vede la polizia come minaccia
+
+Fujimoto Akemi -> Yamamoto Kenji -> 0:Sotto shock, collabora ma fragile
+Fujimoto Akemi -> Honda Ryota -> 0:Sotto shock, collabora ma fragile
+Fujimoto Akemi -> Nakamura Shota -> 0:Sotto shock, collabora ma fragile
+Fujimoto Akemi -> Sato Yuki -> 0:Sotto shock, collabora ma fragile
+Fujimoto Akemi -> Fujita Emi -> 0:Sotto shock, collabora ma fragile
+
+Hayashi Kenji -> Yamamoto Kenji -> -1:Ha paura, pensa di essere sospettato
+Hayashi Kenji -> Honda Ryota -> -1:Ha paura, pensa di essere sospettato
+Hayashi Kenji -> Nakamura Shota -> -1:Ha paura, pensa di essere sospettato
+Hayashi Kenji -> Sato Yuki -> -1:Ha paura, pensa di essere sospettato
+Hayashi Kenji -> Fujita Emi -> -1:Ha paura, pensa di essere sospettato
+
+Tanaka Yuki -> Yamamoto Kenji -> 0:Elegante, controllata, formale
+Tanaka Yuki -> Honda Ryota -> 0:Elegante, controllata, formale
+Tanaka Yuki -> Nakamura Shota -> 0:Elegante, controllata, formale
+Tanaka Yuki -> Sato Yuki -> 0:Elegante, controllata, formale
+Tanaka Yuki -> Fujita Emi -> 0:Elegante, controllata, formale
+
+Nakamura Daisuke -> Yamamoto Kenji -> -1:Vuole andarsene, la polizia mette a rischio il segreto
+Nakamura Daisuke -> Honda Ryota -> -1:Vuole andarsene, la polizia mette a rischio il segreto
+Nakamura Daisuke -> Nakamura Shota -> -1:Vuole andarsene, la polizia mette a rischio il segreto
+Nakamura Daisuke -> Sato Yuki -> -1:Vuole andarsene, la polizia mette a rischio il segreto
+Nakamura Daisuke -> Fujita Emi -> -1:Vuole andarsene, la polizia mette a rischio il segreto
+
+Sato Harumi -> Yamamoto Kenji -> 2:Vuole giustizia per Tanaka, collabora attivamente
+Sato Harumi -> Honda Ryota -> 2:Vuole giustizia per Tanaka, collabora attivamente
+Sato Harumi -> Nakamura Shota -> 2:Vuole giustizia per Tanaka, collabora attivamente
+Sato Harumi -> Sato Yuki -> 2:Vuole giustizia per Tanaka, collabora attivamente
+Sato Harumi -> Fujita Emi -> 2:Vuole giustizia per Tanaka, collabora attivamente
+
+Endo Toshio -> Yamamoto Kenji -> 0:Orgoglioso, diretto
+Endo Toshio -> Honda Ryota -> 0:Orgoglioso, diretto
+Endo Toshio -> Nakamura Shota -> 0:Orgoglioso, diretto
+Endo Toshio -> Sato Yuki -> 0:Orgoglioso, diretto
+Endo Toshio -> Fujita Emi -> 0:Orgoglioso, diretto
+
+Toda Yumi -> Yamamoto Kenji -> 1:Timida ma collaborativa
+Toda Yumi -> Honda Ryota -> 1:Timida ma collaborativa
+Toda Yumi -> Nakamura Shota -> 1:Timida ma collaborativa
+Toda Yumi -> Sato Yuki -> 1:Timida ma collaborativa
+Toda Yumi -> Fujita Emi -> 1:Timida ma collaborativa
+
+Mori Sachiko -> Yamamoto Kenji -> 0:Riservata, parla solo se le si chiede
+Mori Sachiko -> Honda Ryota -> 0:Riservata, parla solo se le si chiede
+Mori Sachiko -> Nakamura Shota -> 0:Riservata, parla solo se le si chiede
+Mori Sachiko -> Sato Yuki -> 0:Riservata, parla solo se le si chiede
+Mori Sachiko -> Fujita Emi -> 0:Riservata, parla solo se le si chiede
+
+Ishii Takuya -> Yamamoto Kenji -> 0:Professionale, distaccato
+Ishii Takuya -> Honda Ryota -> 0:Professionale, distaccato
+Ishii Takuya -> Nakamura Shota -> 0:Professionale, distaccato
+Ishii Takuya -> Sato Yuki -> 0:Professionale, distaccato
+Ishii Takuya -> Fujita Emi -> 0:Professionale, distaccato
+
+Watanabe Jun -> Yamamoto Kenji -> 0:Esperto, parla poco ma con precisione
+Watanabe Jun -> Honda Ryota -> 0:Esperto, parla poco ma con precisione
+Watanabe Jun -> Nakamura Shota -> 0:Esperto, parla poco ma con precisione
+Watanabe Jun -> Sato Yuki -> 0:Esperto, parla poco ma con precisione
+Watanabe Jun -> Fujita Emi -> 0:Esperto, parla poco ma con precisione
+
+# PNG esterni (contattabili)
+
+Kano Gentaro -> Yamamoto Kenji -> 1:Anziano, rispettoso della polizia
+Kano Gentaro -> Honda Ryota -> 1:Anziano, rispettoso della polizia
+Kano Gentaro -> Nakamura Shota -> 1:Anziano, rispettoso della polizia
+Kano Gentaro -> Sato Yuki -> 1:Anziano, rispettoso della polizia
+Kano Gentaro -> Fujita Emi -> 1:Anziano, rispettoso della polizia
+
+Nishida Goro -> Yamamoto Kenji -> -1:Diffidente, protegge riservatezza del cliente
+Nishida Goro -> Honda Ryota -> -1:Diffidente, protegge riservatezza del cliente
+Nishida Goro -> Nakamura Shota -> -1:Diffidente, protegge riservatezza del cliente
+Nishida Goro -> Sato Yuki -> -1:Diffidente, protegge riservatezza del cliente
+Nishida Goro -> Fujita Emi -> -1:Diffidente, protegge riservatezza del cliente
