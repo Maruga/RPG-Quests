@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Manuale_Giocatori.md",
+                "file": "Investigare/Avventura Sake/CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Manuale_Giocatori"
+              "title": "CLAUDE"
             }
           }
         ]
@@ -225,8 +225,14 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "2943b494a8fdbbcd",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/Token/MORI SACHIKO.png",
+    "Investigare/Avventura Sake/Token/Hayashi Kenji.png",
+    "Investigare/Avventura Sake/Token/Fujimoto Shinji.png",
+    "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
+    "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
+    "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/Avventura Sake/Token/GENKAI_Token_PNG.pdf",
     "Investigare/Immagini/CrimeBoard.png",
     "Investigare/Avventura Sake/PG/PG_02_Honda_Ryota.md",
@@ -260,18 +266,12 @@
     "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx",
     "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
     "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
-    "Investigare/pg/~$heda_PG_02_Honda_Ryota.docx",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Squadra Investigatori.png",
     "Investigare/Kyoto.png",
-    "Investigare/logo.png",
-    "Investigare/logoNero.png",
     "Investigare/PG Riassunto.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
-    "Investigare/GENKAI_Manuale_GM.md",
-    "Investigare/GENKAI_Manuale_Giocatori.md",
-    "Savage/Operazione Sarcofago/AI/Sfondo.png",
-    "Savage/Operazione Sarcofago/AI/patch-prometheus.png"
+    "Investigare/GENKAI_Manuale_GM.md"
   ]
 }
