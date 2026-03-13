@@ -3,6 +3,9 @@
 > **Sistema:** GENKAI 限界 v1.2 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
+link Telegram: https://t.me/GenkaiDashBoardBot
+
+![[QR_Telegram_Bot.png]]
 
 ## PREMESSA PER IL GM
 

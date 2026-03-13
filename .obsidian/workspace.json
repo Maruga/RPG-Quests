@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Il Giudice/Inizio - Incarico.md",
+                "file": "Investigare/GENKAI_Manuale_Giocatori.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inizio - Incarico"
+              "title": "GENKAI_Manuale_Giocatori"
             }
           }
         ]
@@ -227,9 +227,29 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/PG/PG_02_Honda_Ryota.md",
+    "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
+    "Investigare/Avventura Sake/Storia Completa.md",
+    "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
+    "Investigare/Avventura Sake/PG/PG_04_Sato_Yuki.md",
+    "Investigare/Avventura Sake/PG/PG_03_Nakamura_Shota.md",
+    "Investigare/Avventura Sake/PG",
+    "Investigare/Avventura Sake/Nuova cartella",
+    "Investigare/Avventura Sake/Token/~NG.tmp",
+    "Investigare/Avventura Sake/Token/PNG.png.~tmp",
+    "Investigare/Avventura Sake/QR_Telegram_Bot.png",
+    "Investigare/Avventura Sake/Location/Giardino Niwa.md",
+    "Investigare/Avventura Sake/Location/Camera degli Ospiti.md",
+    "Investigare/Avventura Sake/Location/Bagno Padronale.md",
+    "Investigare/Avventura Sake/Location/Camera da Letto Padronale.md",
+    "Investigare/Avventura Sake/Location/Corridoio di Servizio.md",
+    "Investigare/Avventura Sake/Location/Studio di Tanaka Shosai.md",
+    "Investigare/Avventura Sake/Location/Cucina Daidokoro.md",
+    "Investigare/Avventura Sake/Location/Bagno Ospiti Otearai.md",
+    "Investigare/Avventura Il Giudice/Inizio - Incarico.md",
+    "Investigare/Avventura Sake/Location/Sala Principale Ohiroma.md",
     "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
     "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
-    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html",
     "Investigare/Avventura Sake/handout/09_Lettere_Nakamura.html",
@@ -239,10 +259,6 @@
     "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
     "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
     "Investigare/pg/~$heda_PG_02_Honda_Ryota.docx",
-    "Investigare/pg/~$heda_PG_01_Yamamoto_Kenji.docx",
-    "Investigare/pg/~$pioni_PNG.docx",
-    "Investigare/pg/~WRL1150.tmp",
-    "Investigare/pg/~WRD1142.tmp",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Squadra Investigatori.png",
     "Investigare/Kyoto.png",
@@ -254,24 +270,8 @@
     "Investigare/GENKAI_Manuale_GM.md",
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/GENKAI Manuale Giocatori.md",
-    "Investigare/GENKAI Manuale Situazioni.md",
-    "Investigare/GENKAI Regolamento v1.2.md",
-    "Link Utili.md",
-    "README.md",
     "Savage/Operazione Sarcofago/AI/Sfondo.png",
-    "Savage/Operazione Sarcofago/AI/CLAUDE.md",
     "Savage/Operazione Sarcofago/AI/patch-prometheus.png",
-    "Savage/Operazione Sarcofago/AI/logo-tacs7.png",
-    "Savage/Operazione Sarcofago/AI/icon-rad.png",
-    "Savage/Operazione Sarcofago/MEMORY.md",
-    "Savage/CLAUDE.md",
-    "Savage/Operazione Sarcofago/CLAUDE.md",
-    "Savage/Manovre di Combatimento.md",
-    "Investigare/Avventura Occhi di Volpe/CRONISTORIA COMPLETA.md",
-    "Investigare/Avventura Ultima Lezione/CLAUDE.md",
-    "Investigare/README.md",
-    "Investigare/Avventura Occhi di Volpe/CLAUDE.md",
-    "Investigare/Avventura Il Giudice/handout/Articoli_Giornale.md",
-    "Investigare/pg/token_prompts.md"
+    "Savage/Operazione Sarcofago/AI/logo-tacs7.png"
   ]
 }
