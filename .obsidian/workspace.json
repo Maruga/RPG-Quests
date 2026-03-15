@@ -11,14 +11,12 @@
             "id": "d769841e2388e25f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura Sake/MEMORY.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Materiale/CrimeBoard.png"
               },
-              "icon": "lucide-file",
-              "title": "MEMORY"
+              "icon": "lucide-image",
+              "title": "CrimeBoard"
             }
           }
         ]
@@ -227,6 +225,11 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Materiale/CrimeBoard.jpg",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/GENKAI_Manuale_GM.md",
+    "Investigare/GENKAI_Manuale_Giocatori.md",
+    "Investigare/Avventura Sake/MEMORY.md",
     "Investigare/Avventura Sake/handout/villa.png",
     "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Sake/Token/MORI SACHIKO.png",
@@ -234,9 +237,8 @@
     "Investigare/Avventura Sake/Token/Fujimoto Shinji.png",
     "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
     "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
-    "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/Avventura Sake/Token/GENKAI_Token_PNG.pdf",
-    "Investigare/Immagini/CrimeBoard.png",
+    "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Avventura Sake/PG/PG_02_Honda_Ryota.md",
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
     "Investigare/Avventura Sake/Storia Completa.md",
@@ -268,9 +270,6 @@
     "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Squadra Investigatori.png",
-    "Investigare/PG Riassunto.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/GENKAI_Manuale_Situazioni.md",
-    "Investigare/GENKAI_Manuale_GM.md"
+    "Investigare/PG Riassunto.md"
   ]
 }
