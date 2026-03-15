@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Sake/CLAUDE.md",
+                "file": "Investigare/Avventura Sake/MEMORY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "MEMORY"
             }
           }
         ]
@@ -225,8 +225,10 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/handout/villa.png",
+    "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Sake/Token/MORI SACHIKO.png",
     "Investigare/Avventura Sake/Token/Hayashi Kenji.png",
     "Investigare/Avventura Sake/Token/Fujimoto Shinji.png",
@@ -258,17 +260,14 @@
     "Investigare/Avventura Sake/Location/Sala Principale Ohiroma.md",
     "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
     "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
-    "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html",
     "Investigare/Avventura Sake/handout/09_Lettere_Nakamura.html",
-    "Investigare/Avventura Sake/handout/villa.png",
     "Investigare/Avventura Sake/handout/Villa.png",
     "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx",
     "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
     "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Squadra Investigatori.png",
-    "Investigare/Kyoto.png",
     "Investigare/PG Riassunto.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
