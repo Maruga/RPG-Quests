@@ -11,12 +11,12 @@
             "id": "d769841e2388e25f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "pdf",
               "state": {
-                "file": "Investigare/Materiale/CrimeBoard.png"
+                "file": "Investigare/Avventura Sake/Storia Completa.pdf"
               },
-              "icon": "lucide-image",
-              "title": "CrimeBoard"
+              "icon": "lucide-file-text",
+              "title": "Storia Completa"
             }
           }
         ]
@@ -225,6 +225,10 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/Storia Completa.md",
+    "Investigare/Avventura Sake/Storia Completa.pdf",
+    "Investigare/PG Riassunto.md",
+    "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Materiale/CrimeBoard.jpg",
     "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Manuale_GM.md",
@@ -238,10 +242,8 @@
     "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
     "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
     "Investigare/Avventura Sake/Token/GENKAI_Token_PNG.pdf",
-    "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Avventura Sake/PG/PG_02_Honda_Ryota.md",
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
-    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
     "Investigare/Avventura Sake/PG/PG_04_Sato_Yuki.md",
     "Investigare/Avventura Sake/PG/PG_03_Nakamura_Shota.md",
@@ -267,9 +269,6 @@
     "Investigare/Avventura Sake/handout/Villa.png",
     "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx",
     "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
-    "Investigare/pg/~$heda_PG_03_Nakamura_Shota.docx",
-    "Investigare/Avventura Ultima Lezione/Storia Completa.md",
-    "Investigare/Squadra Investigatori.png",
-    "Investigare/PG Riassunto.md"
+    "Investigare/Avventura Ultima Lezione/Storia Completa.md"
   ]
 }
