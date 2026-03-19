@@ -11,11 +11,13 @@
             "id": "d769841e2388e25f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Sake/Storia Completa.pdf"
+                "file": "Investigare/Avventura Sake/Storia Completa.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
+              "icon": "lucide-file",
               "title": "Storia Completa"
             }
           }
@@ -225,8 +227,9 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
-    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/Storia Completa.pdf",
+    "Investigare/Avventura Sake/DnD_BasicRules_2018.pdf",
+    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Materiale/CrimeBoard.jpg",
