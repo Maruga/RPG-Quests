@@ -58,7 +58,7 @@ A quel punto il team può investigare: controllare tutti, notare i comportamenti
 | 10–15 m | **Esitazione**. -2 ai loro tiri per 1 round |
 | 15+ m | Nessun effetto |
 
-**Frammenti di Memoria:** Quando il controllo viene interrotto, alcuni mutanti recuperano brevemente la loro umanità — sussurrano nomi, frasi sconnesse. Utilizzabile per ottenere informazioni, creare dilemmi morali, aumentare l'orrore. (Vedi [[Mutanti]] per frasi e dettagli.)
+**Frammenti di Memoria:** Quando il controllo viene interrotto, alcuni mutanti recuperano brevemente la loro umanità — sussurrano nomi, frasi sconnesse. Utilizzabile per ottenere informazioni, creare dilemmi morali, aumentare l'orrore. (Vedi [[Mutante Standard]] per frasi e dettagli.)
 
 ## Batteria
 
@@ -112,6 +112,6 @@ L'IA è più forte vicino al nucleo:
 
 ---
 
-Vedi anche: [[Mutanti]] | [[Contagio]] | [[La Minaccia]]
+Vedi anche: [[Mutante Standard]] | [[Mutante Avanzato]] | [[Mutante Alpha]] | [[Contagio]] | [[La Minaccia]]
 
 #meccanica #frequenze #disturbatore

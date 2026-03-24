@@ -6,7 +6,7 @@
 <style>
 /* ========== RESET & BASE ========== */
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:11pt;color:#1a1a1a;background:#f5f5f0;}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:11pt;color:#d4d4d4;background:#1a1a1a;}
 
 /* ========== SCREEN NAV ========== */
 .screen-nav{background:#2c2c2c;color:#ccc;padding:12px 24px;position:sticky;top:0;z-index:100;display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:10pt;}
@@ -17,89 +17,110 @@ body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:11pt;colo
 /* ========== PRINT ========== */
 @media print{
   .screen-nav{display:none!important;}
-  body{background:white;font-size:10pt;}
-  .page{page-break-after:always;padding:0;margin:0;border:none;box-shadow:none;height:auto;min-height:auto;}
+  body{background:white!important;color:#1a1a1a!important;font-size:10pt;}
+  .page{page-break-after:always;padding:0;margin:0;border:none;box-shadow:none;height:auto;min-height:auto;background:white!important;}
   .page:last-child{page-break-after:auto;}
-  .foglietti-page{page-break-after:always;}
+  .foglietti-page{page-break-after:always;background:white!important;}
   .foglietti-page:last-child{page-break-after:auto;}
-  h1.section-title{page-break-before:always;}
+  h1.section-title{page-break-before:always;color:#1a1a1a!important;}
   h1.section-title:first-of-type{page-break-before:auto;}
+  h1.section-title .sub{color:#666!important;}
+  .sheet-header{border-bottom-color:#1a1a1a!important;}
+  .sheet-callsign{color:#1a1a1a!important;}
+  .sheet-name{color:#444!important;}
+  .section-label{color:#666!important;border-bottom-color:#ccc!important;}
+  .character-desc{color:#333!important;border-left-color:#999!important;}
+  .stats-box{border-color:#1a1a1a!important;background:#fafaf7!important;}
+  .attr-item .label,.derived-item .label,.edges-line b,.hindrances-line b,.armor-line b{color:#666!important;}
+  table.weapons th{background:#2c2c2c!important;color:white!important;}
+  table.weapons td{border-bottom-color:#ddd!important;color:#1a1a1a!important;}
+  table.weapons tr:nth-child(even) td{background:#f8f8f5!important;}
+  .secret-sheet{border-color:#1a1a1a!important;background:white!important;}
+  .secret-sheet::before{border-bottom-color:#1a1a1a!important;color:#1a1a1a!important;}
+  .secret-sheet .pg-name{color:#1a1a1a!important;}
+  .secret-sheet .body{color:#1a1a1a!important;}
+  .secret-sheet .footer{color:#555!important;border-top-color:#999!important;}
+  .foglietto{border-color:#1a1a1a!important;background:white!important;}
+  .foglietto .fg-body,.foglietto .fg-body .action{color:#1a1a1a!important;}
+  .foglietto .fg-body em{color:#444!important;}
+  .gm-notes{background:white!important;}
+  .gm-notes h2{border-bottom-color:#1a1a1a!important;color:#1a1a1a!important;}
 }
 
 /* ========== PAGE CONTAINER ========== */
-.page{max-width:210mm;margin:20px auto;padding:18mm 15mm 12mm 15mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-height:270mm;}
+.page{max-width:210mm;margin:20px auto;padding:18mm 15mm 12mm 15mm;background:#2a2a2a;box-shadow:0 2px 8px rgba(0,0,0,0.4);min-height:270mm;}
 
 /* ========== CHARACTER SHEET ========== */
-.sheet-header{border-bottom:3px solid #1a1a1a;padding-bottom:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;}
-.sheet-callsign{font-family:'Courier New',monospace;font-size:28pt;font-weight:bold;letter-spacing:2px;text-transform:uppercase;}
-.sheet-name{font-size:14pt;color:#444;}
-.sheet-flag{font-size:12pt;color:#666;text-align:right;}
-.sheet-flag .unit{font-family:'Courier New',monospace;font-size:9pt;color:#888;}
+.sheet-header{border-bottom:3px solid #888;padding-bottom:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;}
+.sheet-callsign{font-family:'Courier New',monospace;font-size:28pt;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#e0c870;}
+.sheet-name{font-size:14pt;color:#aaa;}
+.sheet-flag{font-size:12pt;color:#999;text-align:right;}
+.sheet-flag .unit{font-family:'Courier New',monospace;font-size:9pt;color:#777;}
 
-.section-label{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;color:#666;border-bottom:1px solid #ccc;padding-bottom:2px;margin-top:10px;margin-bottom:5px;}
+.section-label{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-transform:uppercase;letter-spacing:1.5px;color:#999;border-bottom:1px solid #555;padding-bottom:2px;margin-top:10px;margin-bottom:5px;}
 
 .bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;}
 .bio-item{font-size:10pt;line-height:1.5;}
 .bio-item b{display:inline-block;min-width:55px;}
 
 .mil-history{font-size:9.5pt;line-height:1.5;margin-bottom:4px;}
-.mil-history .theaters{color:#555;font-style:italic;}
+.mil-history .theaters{color:#aaa;font-style:italic;}
 
-.character-desc{font-size:9.5pt;line-height:1.5;font-style:italic;color:#333;border-left:3px solid #999;padding-left:8px;margin:4px 0;}
+.character-desc{font-size:9.5pt;line-height:1.5;font-style:italic;color:#bbb;border-left:3px solid #666;padding-left:8px;margin:4px 0;}
 
 /* Armamento */
 table.weapons{width:100%;border-collapse:collapse;font-size:9pt;margin-top:4px;}
-table.weapons th{background:#2c2c2c;color:white;padding:3px 6px;text-align:left;font-weight:normal;font-family:'Courier New',monospace;font-size:8pt;text-transform:uppercase;letter-spacing:0.5px;}
-table.weapons td{padding:3px 6px;border-bottom:1px solid #ddd;}
-table.weapons tr:nth-child(even) td{background:#f8f8f5;}
+table.weapons th{background:#3a3a3a;color:#ccc;padding:3px 6px;text-align:left;font-weight:normal;font-family:'Courier New',monospace;font-size:8pt;text-transform:uppercase;letter-spacing:0.5px;}
+table.weapons td{padding:3px 6px;border-bottom:1px solid #444;color:#d4d4d4;}
+table.weapons tr:nth-child(even) td{background:#333;}
 
 .equip-list{font-size:9pt;line-height:1.6;columns:2;column-gap:20px;}
 .equip-list li{margin-left:14px;}
 
 /* SWADE Stats */
-.stats-box{border:2px solid #1a1a1a;padding:8px 10px;margin-top:6px;background:#fafaf7;}
-.stats-rank{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-align:center;margin-bottom:6px;color:#666;text-transform:uppercase;letter-spacing:2px;}
+.stats-box{border:2px solid #666;padding:8px 10px;margin-top:6px;background:#333;}
+.stats-rank{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;text-align:center;margin-bottom:6px;color:#999;text-transform:uppercase;letter-spacing:2px;}
 
 .attr-row{display:flex;justify-content:space-between;margin-bottom:4px;flex-wrap:wrap;}
 .attr-item{font-size:9pt;text-align:center;flex:1;min-width:70px;}
-.attr-item .label{font-family:'Courier New',monospace;font-size:7.5pt;text-transform:uppercase;color:#666;letter-spacing:0.5px;}
+.attr-item .label{font-family:'Courier New',monospace;font-size:7.5pt;text-transform:uppercase;color:#999;letter-spacing:0.5px;}
 .attr-item .die{font-size:14pt;font-weight:bold;}
 
 .skills-line{font-size:8.5pt;line-height:1.6;margin:4px 0;}
 .derived-row{display:flex;gap:20px;margin:4px 0;font-size:9.5pt;font-weight:bold;}
-.derived-item .label{font-family:'Courier New',monospace;font-size:7.5pt;color:#666;text-transform:uppercase;font-weight:normal;}
+.derived-item .label{font-family:'Courier New',monospace;font-size:7.5pt;color:#999;text-transform:uppercase;font-weight:normal;}
 
 .edges-line,.hindrances-line,.armor-line{font-size:8.5pt;line-height:1.5;margin:2px 0;}
-.edges-line b,.hindrances-line b,.armor-line b{font-size:8pt;font-family:'Courier New',monospace;text-transform:uppercase;color:#666;letter-spacing:0.5px;}
+.edges-line b,.hindrances-line b,.armor-line b{font-size:8pt;font-family:'Courier New',monospace;text-transform:uppercase;color:#999;letter-spacing:0.5px;}
 
 /* ========== SECRET SHEETS ========== */
-h1.section-title{font-family:'Courier New',monospace;font-size:20pt;text-align:center;padding:30px 0 10px;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a;}
-h1.section-title .sub{font-size:11pt;color:#666;display:block;letter-spacing:1px;margin-top:4px;font-weight:normal;}
+h1.section-title{font-family:'Courier New',monospace;font-size:20pt;text-align:center;padding:30px 0 10px;letter-spacing:3px;text-transform:uppercase;color:#d4d4d4;}
+h1.section-title .sub{font-size:11pt;color:#999;display:block;letter-spacing:1px;margin-top:4px;font-weight:normal;}
 
-.secret-sheet{border:2px solid #1a1a1a;padding:16px 20px;margin:12px auto;max-width:160mm;position:relative;}
-.secret-sheet::before{content:'RISERVATO — SOLO PER TE';display:block;font-family:'Courier New',monospace;font-size:10pt;font-weight:bold;text-align:center;letter-spacing:2px;border-bottom:2px solid #1a1a1a;padding-bottom:6px;margin-bottom:10px;}
-.secret-sheet .pg-name{font-family:'Courier New',monospace;font-size:14pt;font-weight:bold;text-align:center;margin-bottom:10px;letter-spacing:1px;}
-.secret-sheet .body{font-size:10.5pt;line-height:1.7;}
-.secret-sheet .footer{font-size:9pt;color:#555;border-top:1px solid #999;padding-top:8px;margin-top:12px;font-style:italic;}
+.secret-sheet{border:2px solid #666;padding:16px 20px;margin:12px auto;max-width:160mm;position:relative;background:#333;}
+.secret-sheet::before{content:'RISERVATO — SOLO PER TE';display:block;font-family:'Courier New',monospace;font-size:10pt;font-weight:bold;text-align:center;letter-spacing:2px;border-bottom:2px solid #666;padding-bottom:6px;margin-bottom:10px;color:#e0c870;}
+.secret-sheet .pg-name{font-family:'Courier New',monospace;font-size:14pt;font-weight:bold;text-align:center;margin-bottom:10px;letter-spacing:1px;color:#e0c870;}
+.secret-sheet .body{font-size:10.5pt;line-height:1.7;color:#d4d4d4;}
+.secret-sheet .footer{font-size:9pt;color:#999;border-top:1px solid #666;padding-top:8px;margin-top:12px;font-style:italic;}
 
 /* ========== FOGLIETTINI ========== */
-.foglietti-page{max-width:210mm;margin:20px auto;padding:10mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.foglietti-page{max-width:210mm;margin:20px auto;padding:10mm;background:#2a2a2a;box-shadow:0 2px 8px rgba(0,0,0,0.4);}
 .foglietti-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.foglietto{border:2px solid #1a1a1a;padding:10px 12px;break-inside:avoid;min-height:55mm;}
+.foglietto{border:2px solid #666;padding:10px 12px;break-inside:avoid;min-height:55mm;background:#333;}
 .foglietto.wide{grid-column:1/-1;}
 .foglietto .fg-header{font-family:'Courier New',monospace;font-size:9pt;font-weight:bold;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #999;padding-bottom:3px;margin-bottom:6px;display:flex;justify-content:space-between;}
-.foglietto .fg-header .phase{color:#666;font-weight:normal;}
-.foglietto .fg-body{font-size:9pt;line-height:1.6;}
-.foglietto .fg-body .action{font-weight:bold;color:#333;margin-top:4px;}
-.foglietto .fg-body em{font-style:italic;color:#444;}
+.foglietto .fg-header .phase{color:#999;font-weight:normal;}
+.foglietto .fg-body{font-size:9pt;line-height:1.6;color:#d4d4d4;}
+.foglietto .fg-body .action{font-weight:bold;color:#ccc;margin-top:4px;}
+.foglietto .fg-body em{font-style:italic;color:#aaa;}
 
-.foglietto.blank .fg-body{min-height:40mm;border:1px dashed #ccc;margin-top:4px;}
+.foglietto.blank .fg-body{min-height:40mm;border:1px dashed #555;margin-top:4px;}
 
-.scissors{text-align:center;font-size:8pt;color:#999;margin:2px 0;font-family:'Courier New',monospace;letter-spacing:4px;}
+.scissors{text-align:center;font-size:8pt;color:#666;margin:2px 0;font-family:'Courier New',monospace;letter-spacing:4px;}
 
 /* ========== GM NOTES ========== */
-.gm-notes{max-width:210mm;margin:20px auto;padding:15mm;background:white;box-shadow:0 2px 8px rgba(0,0,0,0.15);}
-.gm-notes h2{font-family:'Courier New',monospace;font-size:12pt;border-bottom:2px solid #1a1a1a;padding-bottom:4px;margin:16px 0 8px;text-transform:uppercase;letter-spacing:1px;}
+.gm-notes{max-width:210mm;margin:20px auto;padding:15mm;background:#2a2a2a;box-shadow:0 2px 8px rgba(0,0,0,0.4);}
+.gm-notes h2{font-family:'Courier New',monospace;font-size:12pt;border-bottom:2px solid #666;padding-bottom:4px;margin:16px 0 8px;text-transform:uppercase;letter-spacing:1px;color:#e0c870;}
 .gm-notes ol,.gm-notes ul{margin-left:20px;font-size:10pt;line-height:1.7;}
 .gm-notes p{font-size:10pt;line-height:1.6;margin:6px 0;}
 </style>

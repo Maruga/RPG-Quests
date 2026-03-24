@@ -525,7 +525,7 @@ Mutanti attaccano subito dopo aver trovato i resti di Alpha.
 
 > **Il primo contatto dovrebbe essere inquietante più che pericoloso.** Un singolo mutante standard, magari un operaio recente con il badge ancora addosso. I PG devono capire cosa sono PRIMA di affrontarne molti.
 
-**Stat block rapido — Mutante Standard:** vedi [[Mutanti]]
+**Stat block rapido — Mutante Standard:** vedi [[Mutante Standard]]
 
 | Attributo | Valore |
 |-----------|--------|
@@ -643,4 +643,4 @@ Da questo momento:
 
 ---
 
-Vedi anche: [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Obiettivo Missione]]
+Vedi anche: [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutante Standard]] | [[Mutante Avanzato]] | [[Obiettivo Missione]]

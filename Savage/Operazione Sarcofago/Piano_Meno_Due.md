@@ -311,7 +311,7 @@ Tra i mutanti avanzati del Piano -2, Mikhail riconosce un volto. **Nikolai "Koly
 
 **Se il disturbatore si attiva vicino a Kolya:** Per un istante si ferma. Guarda Mikhail. Sussurra il suo nome. Poi il segnale torna e Kolya attacca di nuovo. Il GM può usare questo momento per forzare un tiro **Spirito** a Mikhail — se fallisce, è Scosso per un round.
 
-**Stat block:** Mutante Avanzato (vedi [[Mutanti]]) + Piastrine "Nikolai Petrov, Sergente, GRU Spetsnaz"
+**Stat block:** vedi [[Mutante Avanzato]] + Piastrine "Nikolai Petrov, Sergente, GRU Spetsnaz"
 
 ---
 
@@ -382,7 +382,7 @@ Weiss nota che vicino a una radio i mutanti esitano. Connette i punti: la risona
 
 **Cosa serve:** Tempo (30 minuti) e componenti (dalla voce 6 del Loot, o improvvisati). I PG devono proteggerla mentre lavora.
 
-**Risultato:** Costruisce un **disturbatore** — interrompe il segnale dell'IA entro un raggio di 10 metri. I mutanti nel raggio perdono la coordinazione (vedi [[Mutanti]] — Senza Segnale).
+**Risultato:** Costruisce un **disturbatore** — interrompe il segnale dell'IA entro un raggio di 10 metri. I mutanti nel raggio perdono la coordinazione (vedi [[Mutante Standard]] — Senza Segnale).
 
 ### 2) Il Segnale verso Marco
 
@@ -503,4 +503,4 @@ Dopo la scoperta della trasmissione (o quando la situazione precipita), passa a 
 
 ---
 
-Vedi anche: [[Piano Meno Tre]] | [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Frequenze]] | [[Contagio]]
+Vedi anche: [[Piano Meno Tre]] | [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutante Standard]] | [[Mutante Avanzato]] | [[Frequenze]] | [[Contagio]]

@@ -265,7 +265,7 @@ Umani trasformati dalla risonanza. Nel bunker ci sono due categorie:
 - **Contagiati del 1986:** Scienziati, tecnici, civili, soldati rimasti dentro quando la porta è stata sigillata. 29 anni di alterazione. Trasformazione avanzata o completa. I corpi morti sono perfettamente conservati.
 - **Operai recenti:** Lavoratori del cantiere del secondo sarcofago colpiti dalla risonanza prima dell'evacuazione. Trasformazione iniziale o parziale.
 
-Statistiche complete di tutti i mutanti (Standard, Avanzato, Alpha): vedi [[Mutanti]]
+Statistiche complete: [[Mutante Standard]] | [[Mutante Avanzato]] | [[Mutante Alpha]]
 
 ### Comportamento
 

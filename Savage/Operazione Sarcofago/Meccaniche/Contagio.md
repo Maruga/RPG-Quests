@@ -109,6 +109,6 @@ La progressione può essere accelerata o rallentata per esigenze narrative:
 
 ---
 
-Vedi anche: [[Mutanti]] | [[Frequenze]] | [[La Minaccia]]
+Vedi anche: [[Mutante Standard]] | [[Mutante Avanzato]] | [[Mutante Alpha]] | [[Frequenze]] | [[La Minaccia]]
 
 #meccanica #contagio #mutazione

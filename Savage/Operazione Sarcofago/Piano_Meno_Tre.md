@@ -289,7 +289,7 @@ A questa profondità, la percezione emotiva dell'IA è al massimo. Funziona in e
 
 ## L'Alpha — Il Guardiano
 
-L'Alpha è la creatura più pericolosa delle grotte. "Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta. Quasi fuso con il macchinario" (da [[Mutanti]]). È più grande di un uomo — spalle innaturalmente larghe, massa muscolare e ossea accresciuta. Una macchina da guerra biologica.
+L'Alpha è la creatura più pericolosa delle grotte. "Il primo soggetto riuscito. 29 anni di evoluzione ininterrotta. Quasi fuso con il macchinario" (da [[Mutante Alpha]]). È più grande di un uomo — spalle innaturalmente larghe, massa muscolare e ossea accresciuta. Una macchina da guerra biologica.
 
 ### Comportamento
 
@@ -325,7 +325,7 @@ Il momento in cui i PG incontrano l'Alpha è il boss fight dell'avventura. Sugge
 
 ### Statistiche (Riepilogo)
 
-> Statblock completo: vedi [[Mutanti]] — Alpha
+> Statblock completo: vedi [[Mutante Alpha]]
 
 | Stat | Valore |
 |------|--------|
@@ -513,4 +513,4 @@ Dopo la risoluzione, il team deve uscire. Le squadre esterne (Charlie, Delta, Ec
 
 ---
 
-Vedi anche: [[Piano Meno Due]] | [[La Minaccia]] | [[Mutanti]] | [[Fogliettini Segreti]]
+Vedi anche: [[Piano Meno Due]] | [[La Minaccia]] | [[Mutante Alpha]] | [[Mutante Avanzato]] | [[Fogliettini Segreti]]
