@@ -9,7 +9,7 @@
 
 Il Piano -1 è il livello amministrativo e logistico del complesso sovietico sotto il Reattore 4. Uffici, laboratori di base, magazzini, alloggi del personale. Qui lavoravano gli scienziati minori e il personale di supporto del Progetto ВОЗРОЖДЕНИЕ (Rinascita).
 
-Abbandonato dal 1986. 29 anni di polvere, silenzio e buio. Il backup mantiene solo luci d'emergenza rosse. Quando Morozov si collega alla rete interna (vedi [[Fasi Operative — Interne]], Sala Controllo Accessi), i sistemi si riattivano: **illuminazione standard** (neon bianchi), ventilazione, alimentazione completa. Da quel momento, il Piano -1 è completamente illuminato e funzionante.
+Abbandonato dal 1986. 29 anni di polvere, silenzio e buio. Il backup mantiene solo luci d'emergenza rosse. Quando Morozov si collega alla rete interna (vedi sezione Sala Controllo Accessi più sotto), i sistemi si riattivano: **illuminazione standard** (neon bianchi), ventilazione, alimentazione completa. Da quel momento, il Piano -1 è completamente illuminato e funzionante.
 
 **Tono:** Lento, esplorativo. I PG devono sentire il peso del bunker — le vite interrotte, la polvere, il silenzio. Non forzare il combattimento subito.
 
@@ -385,6 +385,43 @@ Primo indizio visivo del contagio — inquietante ma non pericoloso.
 
 ---
 
+## Sala Controllo Accessi — Morozov si Collega
+
+La prima stanza dopo l'ingresso contiene un **terminale sovietico** ancora collegato alla rete interna del complesso. Nulla di sofisticato — uno schermo CRT scuro, una tastiera, cavi che corrono lungo la parete verso il quadro elettrico. Ma è connesso alla rete dell'edificio, e per un hacker come Morozov è sufficiente.
+
+Morozov si illumina: *"Aspettate. Questo terminale è ancora sulla rete interna. Se ha ancora alimentazione, posso scaricare tutto — planimetrie, registri, diagnostica."*
+
+**Cosa fa Morozov (automatico, non richiede tiro):**
+
+1. Collega il suo equipaggiamento al terminale sovietico
+2. Interfaccia il TACS-7 con la rete interna del complesso
+3. Scarica i dati disponibili
+
+**Cosa ottiene la squadra:**
+
+| Dato | Dettaglio |
+|------|-----------|
+| **Mappa Piano -1** | Completa. Layout di tutte le stanze, corridoi, porte blindate (rosse) e normali (blu). Il GM può mostrare la mappa fisica ai giocatori |
+| **Mappa Piano -2** | Parziale. Alcune sezioni corrotte o non leggibili. Abbastanza per orientarsi, non abbastanza per evitare tutte le sorprese |
+| **Piano -3** | **Non esiste nel sistema.** I sovietici non l'hanno mai mappata — l'IA l'ha scavata dopo il 1986 |
+| **Diagnostica ambientale** | Livelli di radiazione per zona, stato dei sistemi (ventilazione, alimentazione, ascensori) |
+| **Registri di sistema** | Frammentari. Ultimo log datato 1986. Riferimenti criptici al "Progetto ВОЗРОЖДЕНИЕ" |
+
+**Effetto collaterale — il collegamento riattiva i sistemi:**
+
+Quando Morozov completa il download, il quadro elettrico principale si accende con un ronzio basso. Le luci d'emergenza rosse si spengono — e al loro posto si attiva l'**illuminazione standard** in tutto il Piano -1 e il Piano -2, una sezione dopo l'altra, come un'onda che si propaga nei corridoi. Neon bianchi che sfarfallano e poi si stabilizzano. La ventilazione forzata parte con un sospiro metallico. Il complesso torna a vivere.
+
+Morozov, soddisfatto: *"Fatto. Abbiamo le mappe e i sistemi sono online. Luci comprese."*
+
+> **Nota per il GM — Illuminazione:**
+> - **Prima del collegamento:** Solo luci d'emergenza rosse (backup) al Piano -1. Piano -2 al buio.
+> - **Dopo il collegamento:** Illuminazione standard (neon bianchi) su Piano -1 e Piano -2.
+> - **Piano -3:** Buio totale. Non è mappato, non è cablato. L'unica luce è nella camera dell'IA — una luminescenza aliena generata dall'entità stessa.
+>
+> La Squadra Alpha, non avendo un hacker, è entrata alla cieca — solo con le luci d'emergenza rosse, senza mappe, senza diagnostica. Questo spiega in parte perché sono stati sopraffatti più facilmente.
+
+---
+
 ## Eventi della Fase 4
 
 ### Ordine Consigliato
@@ -606,4 +643,4 @@ Da questo momento:
 
 ---
 
-Vedi anche: [[Fasi Operative — Interne]] | [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Obiettivo Missione]]
+Vedi anche: [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Obiettivo Missione]]

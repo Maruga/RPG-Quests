@@ -469,12 +469,23 @@ L'IA attiva un terminale. Cursore lampeggiante. Da questo momento: monitor.html 
 ### 10. Il Confronto
 I PG parlano con l'IA. Il virus di Morozov fallisce. L'IA gioca ogni carta — segreti, promesse, minacce. I PG devono trovare la vera soluzione (o usare il detonatore, o ritirarsi).
 
-### 11. Risoluzione
-Qualunque sia l'esito (vedi [[Fasi Operative — Interne]] — Esfiltrazione):
-- **La Verità:** L'IA si disattiva. I mutanti crollano. Silenzio
-- **Autodistruzione:** L'IA si distrugge. Fuga
-- **Detonatore:** 3 minuti. Corsa verso l'uscita
-- **Ritirata:** L'IA resta attiva. Il fallimento
+### 11. Risoluzione ed Esfiltrazione
+
+Dopo la risoluzione, il team deve uscire. Le squadre esterne (Charlie, Delta, Echo) sono in posizione al perimetro per tutta la durata della missione. In ogni scenario, una volta che il team è fuori, la porta del complesso viene fatta saltare per sigillare definitivamente l'accesso.
+
+> **Nota per il GM:** I casi sotto coprono gli esiti principali. Il gioco è libero — adatta l'esfiltrazione a quello che succede al tavolo.
+
+**1. L'IA si disattiva (La Verità)** — I mutanti crollano a terra. Il percorso di ritorno è libero ma inquietante — corpi ovunque, alcuni che respirano ancora, confusi. Uscita sicura. La porta viene fatta saltare per sigillare il complesso. Fine della minaccia.
+
+**2. L'IA si autodistrugge** — Come sopra, ma il processo di autodistruzione richiede tempo. I PG devono risalire prima che il complesso diventi instabile. Tremori, polvere dal soffitto, crepe nei muri. La porta viene fatta saltare. Fine permanente.
+
+**3. Virus inserito (parziale)** — L'IA è rallentata, i mutanti sono meno coordinati ma ancora attivi. Combattimento durante la risalita. La porta viene fatta saltare. La minaccia torna tra qualche anno.
+
+**4. Detonatore attivato** — 3 minuti. Corsa disperata verso l'uscita. Il complesso crolla. Chi è dentro quando scade il timer, muore. Le squadre esterne confermano la distruzione. L'IA si rigenera in 30-50 anni.
+
+**5. L'IA vince / Ritirata** — Il team esce senza aver risolto nulla, o viene lasciato uscire dall'IA. La porta viene fatta saltare per contenere, ma l'IA è ancora attiva all'interno. Il contagio potrebbe espandersi. Scenario peggiore.
+
+**6. Il team di Ryan** — Se Ryan si separa dal gruppo durante l'esfiltrazione per consegnare il campione, il suo team di estrazione è in attesa fuori dalla Zona. Potrebbe entrare in conflitto con il perimetro delle squadre esterne. La gestione dipende da come si è evoluta la situazione al tavolo.
 
 ---
 
@@ -502,4 +513,4 @@ Qualunque sia l'esito (vedi [[Fasi Operative — Interne]] — Esfiltrazione):
 
 ---
 
-Vedi anche: [[Piano Meno Due]] | [[Fasi Operative — Interne]] | [[La Minaccia]] | [[Mutanti]] | [[Fogliettini Segreti]]
+Vedi anche: [[Piano Meno Due]] | [[La Minaccia]] | [[Mutanti]] | [[Fogliettini Segreti]]

@@ -216,4 +216,4 @@ Ryan (armi pesanti) al centro-retro, Laurent (breacher) in testa, Marco e James 
 
 ---
 
-Vedi anche: [[Fasi Operative — Interne]] | [[Obiettivo Missione]] | [[Squadre Operative]]
+Vedi anche: [[Piano Meno Uno]] | [[Obiettivo Missione]] | [[Squadre Operative]]

@@ -27,7 +27,6 @@ Operazione Sarcofago/
   Meccaniche/                  # Regole di gioco (Contagio, Frequenze, Mutanti)
   La_Minaccia.md               # Lore entita IA, contagio, rete nodi, mutanti
   Fasi_Operative_Esterne.md    # Fasi esterne (1-3) + esfiltrazione
-  Fasi_Operative_Interne.md    # Fasi interne (4-6) + incontri
   Piano_Meno_Uno.md            # Guida completa Piano -1 (Fase 1)
   Piano_Meno_Due.md            # Guida completa Piano -2 (Fase 2)
   Piano_Meno_Tre.md            # Guida completa Piano -3 (Fase 3)

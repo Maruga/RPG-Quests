@@ -277,7 +277,7 @@ Creato dall'esplosione durante la prima incursione Spetsnaz del 1986. I soldati 
 **Meccanica:**
 - La discesa richiede **Atletica Diff 4** (la scala è instabile). Con fallimento: il PG scivola, 2d4 danni da caduta, si riprende in fondo
 - Fallimento critico: la scala cede — il PG cade 5 metri, 2d6 danni. Gli altri devono trovare un altro modo per scendere (corda, improvvisare)
-- La voragine porta alla **Camera dell'IA** (Fase 6 — vedi [[Fasi Operative — Interne]])
+- La voragine porta alla **Camera dell'IA** (Fase 6 — vedi [[Piano Meno Tre]])
 
 > **Nota per il GM:** La voragine è il passaggio alla Fase 6. Non aprirla finché i PG non hanno esplorato abbastanza del Piano -2, Weiss non ha fatto le sue scoperte, e la tensione è al massimo. Se i PG corrono verso la voragine ignorando tutto, va bene — ma perderanno indizi fondamentali.
 
@@ -500,4 +500,4 @@ Weiss rileva una frequenza criptata proveniente dall'interno del gruppo. Non il 
 
 ---
 
-Vedi anche: [[Fasi Operative — Interne]] | [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Frequenze]] | [[Contagio]]
+Vedi anche: [[Piano Meno Tre]] | [[La Minaccia]] | [[Fogliettini Segreti]] | [[Mutanti]] | [[Frequenze]] | [[Contagio]]
