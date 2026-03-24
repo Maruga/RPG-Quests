@@ -20,7 +20,12 @@
       "Bash(rm:*)",
       "Bash(node:*)",
       "Bash(npx wrangler:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(mv \"James Blackwood.md\" \"UK_James_Blackwood.md\")",
+      "Bash(mv \"Laurent_Marchetti.md\" \"FR_Laurent_Marchetti.md\")",
+      "Bash(mv \"Marco_Ferrante.md\" \"IT_Marco_Ferrante.md\")",
+      "Bash(mv \"Mikhail_Voronov.md\" \"RU_Mikhail_Voronov.md\")",
+      "Bash(mv \"Ryan_Callahan.md\" \"US_Ryan_Callahan.md\")"
     ]
   },
   "enableAllProjectMcpServers": true

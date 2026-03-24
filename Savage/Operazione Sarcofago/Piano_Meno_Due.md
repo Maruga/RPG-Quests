@@ -453,7 +453,7 @@ Weiss rileva una frequenza criptata proveniente dall'interno del gruppo. Non il 
 | Weiss rileva segnale verso Marco | TUTTI tranne Marco | Quando Weiss Scopre il Segnale Verso Marco |
 | Weiss rileva trasmissione Ryan | TUTTI | Quando Weiss Scopre la Talpa |
 | Marco sente l'impulso dell'IA | Marco | Fase 5 — Impulso (tiro Spirito) |
-| Momento di scelta per James | James | Fase 5 — Il Detonatore |
+| Trovano i resti di Alpha | James | Fase 5 — Alpha è Caduta |
 | Situazione disperata | Ryan | Fase 5 — Estrazione |
 
 > **Nota:** Distribuisci i fogliettini nei momenti di pausa o transizione. Le scoperte di Weiss sono i punti cardine — ogni scoperta cambia la dinamica del gruppo.
@@ -492,6 +492,9 @@ Weiss rileva una frequenza criptata proveniente dall'interno del gruppo. Non il 
 - **Frequenze**: Momento di speranza — finalmente i PG hanno uno strumento contro i mutanti
 - **Segnale Marco**: Momento di orrore — qualcuno nel team è compromesso. Chi? (I PG non sanno che è Marco)
 - **Trasmissione Ryan**: Caos totale — c'è anche una talpa umana. Il team potrebbe spaccarsi
+
+### Ryan — Il Bivio
+Dopo la scoperta della trasmissione (o quando la situazione precipita), passa a Ryan il fogliettino **"Fase 5 — Estrazione"**. Ryan deve decidere se separarsi dal gruppo per uscire e consegnare i campioni al suo team di estrazione che aspetta fuori dalla Zona. Se si separa, potrebbe entrare in conflitto con il perimetro delle squadre esterne.
 
 ### Transizione alla Fase 6
 - La voragine è l'ingresso alla Fase 6. Non forzare la discesa — ma non lasciare che la Fase 5 si trascini oltre i 90 minuti

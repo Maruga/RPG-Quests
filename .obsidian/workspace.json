@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Obiettivo_Missione.md",
+                "file": "Savage/Manovre di Combatimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obiettivo_Missione"
+              "title": "Manovre di Combatimento"
             }
           }
         ]
@@ -227,14 +227,24 @@
   },
   "active": "dc178c7ba8305eff",
   "lastOpenFiles": [
-    "Savage/Operazione Sarcofago/La_Minaccia.md",
-    "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
-    "Savage/Operazione Sarcofago/Background.md",
-    "Savage/Operazione Sarcofago/Copertina.md",
+    "Savage/Regole.md",
+    "Savage/Manovre di Combatimento.md",
+    "Savage/Operazione Sarcofago/Meccaniche/Mutanti.md",
     "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
+    "Savage/Operazione Sarcofago/PG-PNG/James Blackwood.md",
+    "Savage/Operazione Sarcofago/PG-PNG/US_Ryan_Callahan.md",
+    "Savage/Operazione Sarcofago/PG-PNG/RU_Mikhail_Voronov.md",
+    "Savage/Operazione Sarcofago/PG-PNG/IT_Marco_Ferrante.md",
+    "Savage/Operazione Sarcofago/PG-PNG/FR_Laurent_Marchetti.md",
+    "Savage/Operazione Sarcofago/PG-PNG/UK_James_Blackwood.md",
+    "Savage/Operazione Sarcofago/clean_fogliettini.py",
+    "Savage/Operazione Sarcofago/PG-PNG/Scienziati.md",
+    "Savage/Operazione Sarcofago/Background.md",
+    "Savage/Operazione Sarcofago/La_Minaccia.md",
     "Savage/Operazione Sarcofago/Obiettivo_Missione.md",
+    "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
+    "Savage/Operazione Sarcofago/Copertina.md",
     "Savage/Operazione Sarcofago/PG-PNG/Laurent_Marchetti.md",
-    "Savage/Operazione Sarcofago/PG-PNG/James_Blackwood.md",
     "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
     "Savage/Operazione Sarcofago/Immagini/Copertina.png",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Alexei_Morozov.jpg",
@@ -253,25 +263,15 @@
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/Avventura Sake/MEMORY.md",
     "Investigare/Avventura Sake/handout/villa.png",
-    "Investigare/Avventura Sake/CLAUDE.md",
     "Investigare/Avventura Sake/Token/MORI SACHIKO.png",
     "Investigare/Avventura Sake/Token/Hayashi Kenji.png",
     "Investigare/Avventura Sake/Token/Fujimoto Shinji.png",
     "Investigare/Avventura Sake/Token/GENKAI_Token_PNG.pdf",
-    "Investigare/Avventura Sake/PG/PG_02_Honda_Ryota.md",
-    "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
-    "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
-    "Investigare/Avventura Sake/PG/PG_04_Sato_Yuki.md",
-    "Investigare/Avventura Sake/PG/PG_03_Nakamura_Shota.md",
     "Investigare/Avventura Sake/PG",
     "Investigare/Avventura Sake/Nuova cartella",
     "Investigare/Avventura Sake/Token/~NG.tmp",
     "Investigare/Avventura Sake/Token/PNG.png.~tmp",
-    "Investigare/Avventura Sake/Location/Giardino Niwa.md",
-    "Investigare/Avventura Sake/Location/Camera degli Ospiti.md",
-    "Investigare/Avventura Sake/Location/Bagno Padronale.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html",
-    "Investigare/Avventura Sake/handout/09_Lettere_Nakamura.html",
-    "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx"
+    "Investigare/Avventura Sake/handout/09_Lettere_Nakamura.html"
   ]
 }
