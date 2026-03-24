@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Tabulati Telefonici — Villa Tanaka</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    font-size: 9px;
+}
+th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 5px 4px;
+    text-align: left;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+th.center, td.center { text-align: center; }
+td {
+    padding: 4px 4px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+tr:nth-child(even) { background: #faf8f2; }
+
+.dir-out { color: #2e5a2e; font-weight: bold; }
+.dir-in { color: #2e3a6e; font-weight: bold; }
+.flag { text-align: center; color: #c0a060; font-size: 11px; }
+.flag-empty { text-align: center; color: #ddd; }
+
+.legend {
+    display: flex;
+    gap: 20px;
+    font-size: 9px;
+    color: #666;
+    margin-bottom: 14px;
+    padding: 6px 10px;
+    background: #faf8f2;
+    border: 1px solid #e0ddd5;
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-symbol { font-weight: bold; }
+.legend-symbol.out { color: #2e5a2e; }
+.legend-symbol.in { color: #2e3a6e; }
+.legend-symbol.flag { color: #c0a060; font-size: 11px; }
+
+.summary-box {
+    background: #f5f5f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+    font-size: 9px;
+    display: flex;
+    gap: 24px;
+}
+.summary-item .summary-label {
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+.summary-item .summary-value {
+    font-size: 11px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.notes-area {
+    margin-top: 16px;
+    border: 1px solid #999;
+    padding: 12px;
+    min-height: 80px;
+    background: #faf8f2;
+}
+.notes-area .notes-title {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 8px;
+}
+.notes-line {
+    border-bottom: 1px dotted #ccc;
+    height: 20px;
+}
+
+.signature-section {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 10px;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    display: inline-block;
+    min-width: 180px;
+    padding-top: 4px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+
+.timbro {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.footer {
+    margin-top: 12px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .metadata { border-color: #555; }
+    .metadata div { border-bottom-color: #444; }
+    .metadata div:nth-child(odd) { border-right-color: #444; }
+    .metadata .label { color: #999; }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    th { background: #1a1a2e; }
+    td { border-bottom-color: #444; color: #d0d0d0; }
+    tr:nth-child(even) { background: #2e2e35; }
+    .dir-out { color: #5aaa5a; }
+    .dir-in { color: #7a9ad9; }
+    .flag { color: #c0a060; }
+    .flag-empty { color: #444; }
+    .legend { background: #2e2e35; border-color: #444; color: #999; }
+    .legend-symbol.out { color: #5aaa5a; }
+    .legend-symbol.in { color: #7a9ad9; }
+    .legend-symbol.flag { color: #c0a060; }
+    .summary-box { background: #2e2e35; border-color: #444; }
+    .summary-item .summary-label { color: #999; }
+    .summary-item .summary-value { color: #c0a060; }
+    .notes-area { border-color: #555; background: #2e2e35; }
+    .notes-area .notes-title { color: #999; }
+    .notes-line { border-bottom-color: #444; }
+    .signature-section { color: #d0d0d0; }
+    .signature-line { border-top-color: #888; }
+    .timbro { border-color: rgba(180, 50, 50, 0.2); color: rgba(180, 50, 50, 0.2); }
+    .footer { color: #666; border-top-color: #444; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">TABULATI TELEFONICI — UTENZA FISSA</div>
+        <div class="subtitle">Acquisiti da NTT 日本電信電話 — Centrale Kyoto &nbsp;|&nbsp; Fascicolo 97-KPD-1114</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1114</div>
+        <div><span class="label">Periodo richiesto</span><br>15 settembre — 14 novembre 1997</div>
+        <div><span class="label">Utenza</span><br>075-561-7788</div>
+        <div><span class="label">Intestatario</span><br>TANAKA Kazuo (田中一夫)</div>
+        <div><span class="label">Indirizzo utenza</span><br>Villa Tanaka, Higashiyama-ku, Kyoto</div>
+        <div><span class="label">Identificazione controparti</span><br>Effettuata — Distretto di Higashiyama</div>
+    </div>
+
+    <div class="section-title">Registro chiamate</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="center">N.</th>
+                <th>Data</th>
+                <th>Inizio</th>
+                <th>Fine</th>
+                <th>Durata</th>
+                <th class="center">Dir.</th>
+                <th>Numero</th>
+                <th>Intestatario</th>
+                <th class="center">P.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">1</td>
+                <td>18/09</td>
+                <td>10:15</td>
+                <td>10:22</td>
+                <td>7 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-3842</td>
+                <td>NISHIDA Goro</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>25/09</td>
+                <td>14:40</td>
+                <td>14:48</td>
+                <td>8 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-541-2260</td>
+                <td>OGAWA Masaru — Tanaka Cosmetics</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">3</td>
+                <td>02/10</td>
+                <td>09:50</td>
+                <td>09:53</td>
+                <td>3 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-3842</td>
+                <td>NISHIDA Goro</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">4</td>
+                <td>05/10</td>
+                <td>18:45</td>
+                <td>18:51</td>
+                <td>6 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>075-541-1180</td>
+                <td>FUJIMOTO Shinji</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">5</td>
+                <td>11/10</td>
+                <td>21:10</td>
+                <td>21:32</td>
+                <td>22 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-525-4190</td>
+                <td>NAKAMURA Daisuke</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">6</td>
+                <td>15/10</td>
+                <td>10:05</td>
+                <td>10:08</td>
+                <td>3 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-3842</td>
+                <td>NISHIDA Goro</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">7</td>
+                <td>18/10</td>
+                <td>11:20</td>
+                <td>11:25</td>
+                <td>5 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>075-541-2260</td>
+                <td>OGAWA Masaru — Tanaka Cosmetics</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">8</td>
+                <td>20/10</td>
+                <td>20:50</td>
+                <td>21:08</td>
+                <td>18 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-525-4190</td>
+                <td>NAKAMURA Daisuke</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">9</td>
+                <td>24/10</td>
+                <td>16:30</td>
+                <td>16:42</td>
+                <td>12 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>075-541-1180</td>
+                <td>FUJIMOTO Shinji</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">10</td>
+                <td>27/10</td>
+                <td>10:20</td>
+                <td>10:27</td>
+                <td>7 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-3842</td>
+                <td>NISHIDA Goro</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">11</td>
+                <td>30/10</td>
+                <td>21:30</td>
+                <td>21:45</td>
+                <td>15 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-525-4190</td>
+                <td>NAKAMURA Daisuke</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>01/11</td>
+                <td>14:15</td>
+                <td>14:21</td>
+                <td>6 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-0847</td>
+                <td>ENDO Toshio</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">13</td>
+                <td>03/11</td>
+                <td>17:00</td>
+                <td>17:04</td>
+                <td>4 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>03-3407-5512</td>
+                <td>HAYASHI Kenji — Tokyo</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">14</td>
+                <td>05/11</td>
+                <td>22:15</td>
+                <td>22:40</td>
+                <td>25 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-525-4190</td>
+                <td>NAKAMURA Daisuke</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">15</td>
+                <td>07/11</td>
+                <td>10:30</td>
+                <td>10:33</td>
+                <td>3 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-8800</td>
+                <td>Ag. Yamashita — Catering</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">16</td>
+                <td>09/11</td>
+                <td>12:10</td>
+                <td>12:14</td>
+                <td>4 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>075-541-2260</td>
+                <td>OGAWA Masaru — Tanaka Cosmetics</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">17</td>
+                <td>10/11</td>
+                <td>21:05</td>
+                <td>21:17</td>
+                <td>12 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-525-4190</td>
+                <td>NAKAMURA Daisuke</td>
+                <td class="flag">●</td>
+            </tr>
+            <tr>
+                <td class="center">18</td>
+                <td>12/11</td>
+                <td>10:40</td>
+                <td>10:45</td>
+                <td>5 min</td>
+                <td class="center"><span class="dir-out">↑</span></td>
+                <td>075-561-3842</td>
+                <td>NISHIDA Goro</td>
+                <td class="flag-empty">—</td>
+            </tr>
+            <tr>
+                <td class="center">19</td>
+                <td>13/11</td>
+                <td>18:20</td>
+                <td>18:23</td>
+                <td>3 min</td>
+                <td class="center"><span class="dir-in">↓</span></td>
+                <td>075-541-1180</td>
+                <td>FUJIMOTO Shinji</td>
+                <td class="flag">●</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="legend">
+        <div class="legend-item"><span class="legend-symbol out">↑</span> Uscente</div>
+        <div class="legend-item"><span class="legend-symbol in">↓</span> Entrante</div>
+        <div class="legend-item"><span class="legend-symbol flag">●</span> Persona presente alla festa del 14/11</div>
+        <div class="legend-item"><span class="legend-symbol">—</span> Non presente</div>
+    </div>
+
+    <div class="summary-box">
+        <div class="summary-item">
+            <div class="summary-label">Totale</div>
+            <div class="summary-value">19 chiamate</div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-label">Uscenti</div>
+            <div class="summary-value">13</div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-label">Entranti</div>
+            <div class="summary-value">6</div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-label">Utenze distinte</div>
+            <div class="summary-value">7</div>
+        </div>
+    </div>
+
+    <div class="notes-area">
+        <div class="notes-title">Note investigative</div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-line">
+            Serg. YAMADA Tetsuo<br>
+            <span style="font-size:9px;">Distretto di Higashiyama — richiedente</span>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Tabulati Telefonici — Fascicolo 97-KPD-1114 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

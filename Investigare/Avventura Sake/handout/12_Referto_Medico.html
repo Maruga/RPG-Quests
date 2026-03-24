@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Scheda Allergologica — Tanaka Kazuo</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 18mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.doc-header {
+    background: #1a3a5c;
+    color: #e0e8f0;
+    padding: 12px 20px;
+    border-bottom: 3px solid #5a9cc5;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #5a9cc5; }
+.doc-header .title { font-size: 14px; font-weight: bold; margin-top: 5px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 3px; color: #9ab0c8; }
+
+.patient-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 14px;
+    font-size: 9px;
+}
+.patient-info div {
+    padding: 4px 8px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.patient-info div:nth-child(3n) { border-right: none; }
+.patient-info .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 7px; letter-spacing: 1px; }
+
+.section { margin-bottom: 12px; }
+.section-title {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a3a5c;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+    color: #1a3a5c;
+}
+.section p { margin-bottom: 4px; text-align: justify; font-size: 10px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 9px;
+}
+th {
+    background: #1a3a5c;
+    color: #e0e8f0;
+    padding: 4px 6px;
+    text-align: left;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+td {
+    padding: 3px 6px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+tr:nth-child(even) { background: #f0f4f8; }
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.avoid-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+}
+.avoid-list li {
+    margin-bottom: 2px;
+    padding-left: 10px;
+    position: relative;
+}
+.avoid-list li::before {
+    content: "\2014";
+    position: absolute;
+    left: 0;
+    color: #999;
+}
+.cat-title {
+    font-weight: bold;
+    color: #1a3a5c;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 6px 0 3px 0;
+}
+
+.notes-section {
+    font-size: 9px;
+    color: #444;
+    margin-top: 8px;
+}
+.notes-section p { margin-bottom: 3px; }
+
+.treatment-line {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 3px;
+    font-size: 9px;
+}
+.treatment-drug { font-weight: bold; color: #1a3a5c; min-width: 130px; }
+.treatment-dose { color: #444; }
+
+.sig {
+    margin-top: 14px;
+    text-align: right;
+    font-size: 9px;
+    color: #555;
+}
+.sig-line {
+    border-top: 1px solid #555;
+    display: inline-block;
+    min-width: 180px;
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.hanko {
+    position: absolute;
+    bottom: 55px;
+    right: 40px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgba(180, 50, 50, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-5deg);
+    color: rgba(180, 50, 50, 0.35);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+.police-stamp {
+    margin-top: 10px;
+    font-size: 8px;
+    color: #8b0000;
+    border: 1px solid #8b0000;
+    display: inline-block;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .patient-info { border-color: #555; }
+    .patient-info div { border-bottom-color: #444; border-right-color: #444; }
+    .patient-info .label { color: #999; }
+    .section-title { color: #5a9cc5; border-bottom-color: #5a9cc5; }
+    .section p { color: #d0d0d0; }
+    .cat-title { color: #7ab8e0; }
+    .avoid-list li::before { color: #666; }
+    th { background: #1a3a5c; }
+    td { border-bottom-color: #444; color: #d0d0d0; }
+    tr:nth-child(even) { background: #2a3040; }
+    .treatment-drug { color: #7ab8e0; }
+    .treatment-dose { color: #999; }
+    .notes-section { color: #aaa; }
+    .sig { color: #999; }
+    .sig-line { border-top-color: #888; }
+    .hanko { border-color: rgba(180, 50, 50, 0.25); color: rgba(180, 50, 50, 0.25); }
+    .police-stamp { color: #cc4444; border-color: #cc4444; }
+    .footer { color: #666; border-top-color: #444; }
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">東山メディカルセンター — HIGASHIYAMA MEDICAL CENTER</div>
+        <div class="title">SCHEDA ALLERGOLOGICA — 診断書</div>
+        <div class="subtitle">Ambulatorio di Allergologia &nbsp;|&nbsp; Higashiyama-ku, Kyoto</div>
+    </div>
+
+    <div class="patient-info">
+        <div><span class="label">Paziente</span><br>TANAKA Kazuo (田中一夫)</div>
+        <div><span class="label">Data di nascita</span><br>8 marzo 1936 — 61 anni</div>
+        <div><span class="label">Cartella N.</span><br>HMC-1978-04825</div>
+        <div><span class="label">Diagnosi</span><br>Ipersensibilità ai salicilati (Tipo I)</div>
+        <div><span class="label">Data valutazione</span><br>15 maggio 1997</div>
+        <div><span class="label">Medico</span><br>Dott. MORIMOTO Hiroshi (森本浩)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Anamnesi</div>
+        <p>Allergia ai salicilati diagnosticata in età pediatrica (1944) in seguito a reazione orticarioide da aspirina. Episodio severo nel 1961 da contatto con prodotto topico a base di olio di wintergreen — ricovero con broncospasmo e edema laringeo iniziale. Ultimo episodio nel 1978 da contatto con cosmetico contenente acido salicilico (reazione moderata, trattamento ambulatoriale). Negli anni successivi: nessun episodio acuto grazie all'aderenza al protocollo di evitamento.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Sostanze e prodotti da evitare</div>
+
+        <div class="two-col">
+            <div>
+                <div class="cat-title">Farmaci</div>
+                <ul class="avoid-list">
+                    <li>Aspirina (acido acetilsalicilico)</li>
+                    <li>Farmaci a base di salicilato di sodio</li>
+                    <li>Preparati topici con acido salicilico</li>
+                    <li>Unguenti e balsami con metil-salicilato</li>
+                    <li>Collutori con derivati salicilici</li>
+                </ul>
+
+                <div class="cat-title">Cosmetici e prodotti per il corpo</div>
+                <ul class="avoid-list">
+                    <li>Creme e lozioni con acido salicilico</li>
+                    <li>Saponi o detergenti con wintergreen</li>
+                    <li>Prodotti antiacne (spesso a base salicilica)</li>
+                    <li>Dentifrici con olio di wintergreen</li>
+                    <li>Oli da massaggio con metil-salicilato</li>
+                </ul>
+
+                <div class="cat-title">Oli essenziali e aromi</div>
+                <ul class="avoid-list">
+                    <li>Olio di wintergreen (Gaultheria)</li>
+                    <li>Olio di betulla (contiene metil-salicilato)</li>
+                    <li>Incensi o profumi con wintergreen</li>
+                    <li>Potpourri e diffusori con derivati salicilici</li>
+                </ul>
+            </div>
+            <div>
+                <div class="cat-title">Alimenti ad alto contenuto di salicilati</div>
+                <ul class="avoid-list">
+                    <li>Frutti di bosco (fragole, lamponi, mirtilli)</li>
+                    <li>Albicocche, ciliegie, arance, prugne</li>
+                    <li>Pomodori e concentrato di pomodoro</li>
+                    <li>Peperoni, olive, cetrioli sottaceto</li>
+                    <li>Mandorle, arachidi, pinoli</li>
+                    <li>Spezie: curry, curcuma, paprika, cannella</li>
+                    <li>Miele (contenuto variabile)</li>
+                    <li>Tè verde e tè nero</li>
+                    <li>Aceto di vino e mele</li>
+                    <li>Gomme da masticare alla menta</li>
+                </ul>
+
+                <div class="cat-title">Alimenti generalmente tollerati</div>
+                <ul class="avoid-list">
+                    <li>Riso, pasta, pane bianco</li>
+                    <li>Carne, pesce, uova, tofu</li>
+                    <li>Latte, formaggi freschi</li>
+                    <li>Patate, cavolo, lattuga</li>
+                    <li>Banana, pera pelata</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Terapia in corso</div>
+        <div class="treatment-line">
+            <span class="treatment-drug">Cetirizina 10 mg</span>
+            <span class="treatment-dose">1 compressa/die — ore 21:00 — uso continuativo</span>
+        </div>
+        <div class="treatment-line">
+            <span class="treatment-drug">Autoiniettore epinefrina</span>
+            <span class="treatment-dose">0,3 mg — uso d'emergenza — da portare sempre con sé</span>
+        </div>
+        <div class="treatment-line">
+            <span class="treatment-drug">Prednisone 25 mg</span>
+            <span class="treatment-dose">Scorta d'emergenza — uso esclusivo su indicazione medica</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Note cliniche</div>
+        <div class="notes-section">
+            <p>Il paziente presenta una sensibilizzazione progressiva documentata nell'arco di 35 anni. La soglia di reazione si è abbassata significativamente dai primi episodi. Si raccomanda la massima attenzione nell'evitare tutte le fonti di esposizione, incluse quelle ambientali e alimentari.</p>
+            <p>Si ricorda che il consumo di bevande alcoliche può influenzare la capacità dell'organismo di tollerare i salicilati. Si raccomanda moderazione.</p>
+            <p>In caso di reazione: somministrare immediatamente l'autoiniettore e chiamare il 119. Non attendere la progressione dei sintomi.</p>
+            <p>Prossimo controllo: novembre 1997.</p>
+        </div>
+    </div>
+
+    <div class="sig">
+        <div class="sig-line">
+            Dott. MORIMOTO Hiroshi — 森本浩<br>
+            <span style="font-size:8px;">Specialista in Allergologia — Reg. 京都府医 第4825号</span>
+        </div>
+    </div>
+
+    <div class="hanko">森本</div>
+
+    <div style="margin-top:14px;">
+        <div class="police-stamp">ACQUISITO — Fascicolo 97-KPD-1114 — 15/11/1997</div>
+    </div>
+
+    <div class="footer">
+        Higashiyama Medical Center — Scheda Allergologica — Cartella HMC-1978-04825
+    </div>
+
+</div>
+</body>
+</html>
