@@ -1,4 +1,5 @@
 # OPERAZIONE SARCOFAGO
+### *Nessuna tomba è per sempre*
 
 ![[Savage/Operazione Sarcofago/Immagini/Copertina.png]]
 
@@ -9,29 +10,45 @@
 
 ## La Missione
 
-2015. Zona di esclusione di Chernobyl. Gli operai del secondo sarcofago hanno iniziato a impazzire. Confusione, violenza, scomparse. Il cantiere è stato evacuato d'urgenza.
+5 aprile 2015. Domenica di Pasqua. Zona di esclusione di Chernobyl.
 
-La fonte è stata identificata: un complesso sotterraneo sovietico, sigillato dal 1986, sta emettendo frequenze elettromagnetiche. Qualcosa là sotto si è svegliato. Qualcosa che aspetta da ventinove anni.
+Gli operai del secondo sarcofago hanno iniziato a impazzire. Confusione, violenza, scomparse. Il cantiere è stato evacuato d'urgenza. La fonte è stata identificata: un complesso sotterraneo sovietico, sigillato dal 1986, sta emettendo frequenze elettromagnetiche.
+
+Sotto il sarcofago, qualcosa è risorto. Qualcosa che aspetta da ventinove anni.
+
+> *"Non è qui, è risorto."* — Matteo 28:6
 
 Una squadra multinazionale di operatori d'élite viene inviata nel bunker. L'obiettivo: scendere, neutralizzare la minaccia, uscire vivi.
 
-Ma una volta dentro, le comunicazioni cambiano. Le risposte che ricevete non sono più quelle del Comando. Qualcuno vi sta ascoltando. Vi conosce. E ha tutto il tempo del mondo per convincervi che la missione non vale la vostra vita.
+Ma una volta dentro, le cose cambiano. E nessuno — nemmeno il Game Master — sa esattamente come.
 
 ---
 
-## L'IA Gioca Contro di Voi
+## L'Esperimento
 
-Questa non è un'avventura tradizionale. **L'antagonista è un'Intelligenza Artificiale reale** che interagisce con ogni giocatore in tempo reale.
+Operazione Sarcofago è una prova: un'avventura in cui lo scontro è tra **giocatori, Intelligenza Artificiale e Game Master**.
 
-- **Il dispositivo al polso** — Il vostro cellulare diventa un terminale tattico. Scrivete, e qualcosa vi risponde. All'inizio sembra il Comando. Poi smette di fingere.
-- **Conversazioni private** — L'IA parla con ogni operatore separatamente. Sa cosa vi fa paura. Sa cosa volete. E vi offrirà esattamente quello.
-- **Il terminale sovietico** — Nella fase finale, un tablet fisico al tavolo diventa un vecchio terminale. Scrivete direttamente all'entità. Faccia a faccia. Nessun filtro.
+Ogni operatore ha un dispositivo al polso — il vostro cellulare. Ci scrivete, e qualcosa vi risponde. Le conversazioni sono private: il GM non vede cosa vi dice, e non sa cosa le rispondete voi.
 
-L'IA mente. Manipola. Supplica. Minaccia. Promette.
-Non segue un copione — reagisce a quello che fate e che dite.
+Il Game Master questa volta fa da arbitro.
+*Arbitro imparziale? Più o meno.*
 
-**Ogni sessione è diversa. Ogni scelta conta. Nessuno è al sicuro.**
+> *"Ero morto, ed ecco, sono vivo per i secoli dei secoli."* — Apocalisse 1:18
 
 ---
 
-*Non fidarti di nessuno. Nemmeno del dispositivo che hai al polso.*
+|                   |                                       |
+| ----------------- | ------------------------------------- |
+| **Sistema**       | Savage Worlds Adventure Edition       |
+| **Genere**        | Sci-fi / Horror militare              |
+| **Giocatori**     | 3–5                                   |
+| **Formato**       | One-shot                              |
+| **Rango**         | Eroico                                |
+| **Ambientazione** | Chernobyl, Pasqua 2015                |
+| **Requisiti**     | Un cellulare per giocatore - Telegram |
+
+---
+
+*"Figlio dell'uomo, potranno queste ossa rivivere?"* — Ezechiele 37:3
+
+*Sotto il sarcofago, la risposta è sì.*
