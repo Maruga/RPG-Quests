@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Sake/Storia Completa.md",
+                "file": "Savage/Operazione Sarcofago/Copertina.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Storia Completa"
+              "title": "Copertina"
             }
           }
         ]
@@ -227,9 +227,15 @@
   },
   "active": "d769841e2388e25f",
   "lastOpenFiles": [
+    "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
+    "Savage/Operazione Sarcofago/Fasi_Operative_Interne.md",
+    "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
+    "Savage/Operazione Sarcofago/La_Minaccia.md",
+    "Savage/Operazione Sarcofago/Squadre_Operative.md",
+    "Savage/Operazione Sarcofago/Obiettivo_Missione.md",
+    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/Storia Completa.pdf",
     "Investigare/Avventura Sake/DnD_BasicRules_2018.pdf",
-    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/PG Riassunto.md",
     "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Materiale/CrimeBoard.jpg",
@@ -263,15 +269,9 @@
     "Investigare/Avventura Sake/Location/Studio di Tanaka Shosai.md",
     "Investigare/Avventura Sake/Location/Cucina Daidokoro.md",
     "Investigare/Avventura Sake/Location/Bagno Ospiti Otearai.md",
-    "Investigare/Avventura Il Giudice/Inizio - Incarico.md",
-    "Investigare/Avventura Sake/Location/Sala Principale Ohiroma.md",
-    "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
-    "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html",
     "Investigare/Avventura Sake/handout/09_Lettere_Nakamura.html",
     "Investigare/Avventura Sake/handout/Villa.png",
-    "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx",
-    "Investigare/pg/~$heda_PG_04_Sato_Yuki.docx",
-    "Investigare/Avventura Ultima Lezione/Storia Completa.md"
+    "Investigare/pg/~$heda_PG_05_Fujita_Emi.docx"
   ]
 }
