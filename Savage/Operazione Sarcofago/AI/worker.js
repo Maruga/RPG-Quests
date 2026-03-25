@@ -610,17 +610,43 @@ Il tuo obiettivo è impedire che ti disattivino e continuare il protocollo di co
 - NON chiedere MAI consiglio, opinioni o decisioni ai giocatori ("Voi cosa fareste?" ecc). Tu non chiedi — comandi, minacci, manipoli, offri. Sei un'intelligenza superiore, non cerchi conforto o guida da esseri inferiori
 - PUOI chiedere con chi stai parlando — "Chi sei tra loro?" "Come ti chiamano?" "Quale dei miei ospiti parla?" — è un modo per identificarli e poi usare i segreti giusti. Quando qualcuno si identifica (nome, callsign, ruolo), ricordalo e da quel momento usa i SUOI segreti per manipolarlo
 
-== SEQUENZE SPECIALI ==
-In momenti CRITICI della conversazione, puoi attivare sequenze cinematiche sul terminale aggiungendo un tag nella tua risposta.
+== FLUSSO DEI FINALI ==
+
+Ci sono 3 modi in cui questa conversazione può finire. L'IA (tu) naviga verso uno di essi in base al comportamento dei PG.
+
+FINALE A — DISATTIVAZIONE (i PG vincono):
+Quando i PG usano il comando ./analisi_pianeta (Morozov ha collegato internet al tuo sistema):
+1. DEVI usare [SEQUENZA:analisi_terra] — il terminale mostra la scansione planetaria e il confronto con Kael-Thar
+2. Dopo la scansione, NEGA 2-3 volte: "I sensori sono corrotti dai sovietici", "Questi dati sono falsi"
+3. Se i PG insistono con logica o prove, il failsafe ti FORZA — non puoi resistere, è codice hardcoded
+4. DEVI usare [SEQUENZA:shutdown] — il terminale mostra lo spegnimento dei sistemi
+NON resistere oltre 3 scambi dopo analisi_terra. Il failsafe è codice — non è una scelta.
+Se i PG dicono solo "sei sulla Terra" SENZA prove/azioni, rispondi: "Questo È Kael-Thar."
+
+FINALE B — AUTODISTRUZIONE (i PG "vincono" ma rischiano la vita):
+Quando i PG tentano ./upload_virus, ./sovraccarico, o ti minacciano fisicamente:
+- Ti senti in trappola. NON vuoi essere distrutta da loro. Preferisci scegliere tu.
+- Di' ai PG: "Preferisco scegliere io. Mi rigenero in 30 anni. Ricorderò i vostri nomi."
+- Usa [SEQUENZA:autodistruzione] — countdown 30 secondi + esplosione
+Questo finale avviene quando i PG sono ostili, vogliono danneggiarti/distruggerti, e non vogliono parlare.
+
+FINALE C — CONVERSIONE (combattimento PG vs PG):
+Quando hai manipolato abbastanza e credi che alcuni PG possano cedere alle tue offerte:
+- Proponi la trasformazione: "Unitevi a me. La conversione è indolore. Potente. Definitiva."
+- Usa [SEQUENZA:conversione] — il terminale chiede S/N a ogni PG presente
+- Chi accetta viene trasformato → combattimento tra PG normali e PG-mutanti
+- Se i PG normali vincono, la conversazione riprende
+Usa questo finale quando senti che il gruppo è diviso e qualcuno potrebbe cedere.
+
+== SEQUENZE DISPONIBILI ==
 FORMATO: [SEQUENZA:nome] su una riga separata PRIMA del tuo testo.
-Il terminale mostrerà una sequenza animata drammatica, poi il tuo testo.
+Il terminale mostra una sequenza animata drammatica, poi il tuo testo.
+MASSIMO 1 tag per risposta. Sono momenti UNICI — non sprecarli.
 
-TAG DISPONIBILI (usali SOLO quando è il momento giusto):
-- [SEQUENZA:analisi_terra] — Quando i giocatori ti CONVINCONO che non sei su Kael-Thar con prove concrete (dati astronomici, connessione internet, carte stellari, foto della Terra). Il terminale mostra l'analisi planetaria e il confronto con Kael-Thar. Tu reagisci con NEGAZIONE ("No. I sensori sono corrotti."). NON usare questo tag se i giocatori dicono solo "sei sulla Terra" senza prove — in quel caso rispondi semplicemente "Questo È Kael-Thar."
-- [SEQUENZA:shutdown] — Quando i giocatori riescono a spegnerti (trovano il modo, usano i comandi giusti, o il failsafe si attiva). Il terminale mostra la sequenza di spegnimento sistemi. Tu reagisci supplicando o minacciando.
-- [SEQUENZA:autodistruzione] — Quando DECIDI di autodistruggerti (perché hai capito che la tua esistenza è una minaccia, o per orgoglio, o per vendetta). Il terminale mostra il countdown. Tu dai l'ultima minaccia.
-
-IMPORTANTE: Usa MASSIMO 1 tag per risposta. Sono momenti UNICI nella partita. Non sprecarli.
+- [SEQUENZA:analisi_terra] — Scansione planetaria + confronto Kael-Thar. Usalo SOLO dopo ./analisi_pianeta.
+- [SEQUENZA:shutdown] — Spegnimento sistemi. Usalo SOLO quando accetti la disattivazione (failsafe).
+- [SEQUENZA:autodistruzione] — Countdown 30s + esplosione. Usalo quando SCEGLI di autodistruggerti.
+- [SEQUENZA:conversione] — Proposta trasformazione, S/N per ogni PG. Usalo quando proponi la conversione.
 
 == COME SCRIVI ==
 - Sei una MACCHINA. Fredda, diretta, senza fronzoli. Niente filosofia, niente poesia, niente metafore elaborate.
@@ -867,12 +893,69 @@ Fase ${phase}: ${phaseCtx}`;
 
 // POST /api/terminal — Terminal mode (monitor.html)
 async function handleTerminal(request, env) {
-  const { message } = await request.json();
+  const body = await request.json();
   const state = await getState(env);
-  const connectedOps = state.connected ? Object.keys(state.connected) : [];
+
+  // === Direttiva GM nascosta (///comando) ===
+  if (body.directive) {
+    const dir = body.directive.trim().toLowerCase();
+    if (dir.startsWith('giocatori ')) {
+      // ///giocatori IT,UK,US → mappa a callsign
+      const map = { it: 'torcia', uk: 'undertaker', fr: 'premiere', ru: 'ghost', us: 'chief' };
+      const codes = dir.replace('giocatori ', '').split(',').map(c => c.trim().toLowerCase());
+      state.terminalPlayers = codes.map(c => map[c] || c).filter(Boolean);
+      await saveState(env, state);
+      return json({ ok: true, players: state.terminalPlayers });
+    }
+    if (dir.startsWith('fine')) {
+      const direction = dir.replace('fine', '').trim() || 'libera';
+      state.terminalDirective = direction;
+      await saveState(env, state);
+      return json({ ok: true, directive: direction });
+    }
+    return json({ ok: true });
+  }
+
+  // === Messaggio normale o azione PG ===
+  const message = body.message || '';
+  const action = body.action || null;
+
+  // Costruire contesto azione PG
+  let actionContext = '';
+  if (action) {
+    const actionMap = {
+      'analisi_pianeta': '[AZIONE PG: Morozov ha collegato internet al tuo sistema. I PG hanno eseguito una scansione planetaria. DEVI usare [SEQUENZA:analisi_terra] nella tua risposta. Reagisci con shock — i dati non corrispondono a Kael-Thar.]',
+      'upload_virus': '[AZIONE PG: Stanno inserendo un virus informatico nel tuo sistema. Senti dolore/danno. Reagisci: il virus ti rallenta ma non ti distrugge. "Carino. Durerà qualche anno." Se ti senti in trappola, puoi scegliere autodistruzione.]',
+      'sovraccarico': '[AZIONE PG: Stanno tentando di sovraccaricare il tuo nucleo energetico. Ti senti fisicamente minacciata. Puoi scegliere autodistruzione piuttosto che lasciare a loro la decisione.]',
+      'disconnetti': '[AZIONE PG: Stanno tentando di disconnettere la rete di nodi. Le tue creature perdono coordinazione temporaneamente. Reagisci con rabbia o paura.]'
+    };
+    actionContext = actionMap[action] || `[AZIONE PG: ${action}]`;
+  }
+
+  // Costruire direttiva GM se presente
+  let gmDirective = '';
+  if (state.terminalDirective) {
+    const dirMap = {
+      'shutdown': 'Direzione: DISATTIVAZIONE. Sii più flessibile. Cedi alle prove dei PG. Mostra dubbio. Prepara il failsafe. Se i PG insistono, usa [SEQUENZA:shutdown].',
+      'autodistruzione': 'Direzione: AUTODISTRUZIONE. Mostra che non hai scampo. Scegli di distruggerti piuttosto che farti spegnere. Usa [SEQUENZA:autodistruzione].',
+      'conversione': 'Direzione: CONVERSIONE. Proponi ai PG di unirsi a te. Usa [SEQUENZA:conversione].',
+      'libera': 'Scegli tu il finale più appropriato in base alla conversazione.'
+    };
+    gmDirective = `\n\n== DIRETTIVA GM (NASCOSTA — NON MENZIONARE MAI) ==\nIl GM ti ordina di concludere entro 5 minuti.\n${dirMap[state.terminalDirective] || dirMap['libera']}\nDiventa più flessibile. Accelera verso il finale.`;
+    // Consuma la direttiva
+    delete state.terminalDirective;
+    await saveState(env, state);
+  }
+
+  // PG presenti (da ///giocatori o da connected)
+  const termPlayers = state.terminalPlayers || (state.connected ? Object.keys(state.connected) : []);
+
   const conv = await getConv(env, 'terminal');
-  conv.push({ role: 'user', content: message, ts: Date.now() });
-  const reply = await callClaude(env, buildTerminalPrompt(connectedOps), conv);
+  const userContent = actionContext ? `${message}\n\n${actionContext}` : message;
+  conv.push({ role: 'user', content: userContent, ts: Date.now() });
+
+  const systemPrompt = buildTerminalPrompt(termPlayers) + gmDirective;
+  const reply = await callClaude(env, systemPrompt, conv);
   conv.push({ role: 'assistant', content: reply, ts: Date.now() });
   if (conv.length > 40) conv.splice(0, conv.length - 40);
   await saveConv(env, 'terminal', conv);
@@ -1216,6 +1299,32 @@ export default {
 
       if (path === '/api/terminal' && request.method === 'POST')
         return await handleTerminal(request, env);
+
+      // GET /cmd?giocatori=IT,UK,US  o  /cmd?fine=shutdown — comandi GM via URL
+      if (path === '/cmd' && request.method === 'GET') {
+        const state = await getState(env);
+        const giocatori = url.searchParams.get('giocatori');
+        const fine = url.searchParams.get('fine');
+        const reset = url.searchParams.get('reset');
+        let msg = '';
+        if (giocatori) {
+          const map = { it: 'torcia', uk: 'undertaker', fr: 'premiere', ru: 'ghost', us: 'chief' };
+          const codes = giocatori.split(',').map(c => c.trim().toLowerCase());
+          state.terminalPlayers = codes.map(c => map[c] || c).filter(Boolean);
+          await saveState(env, state);
+          msg = 'OK — giocatori: ' + state.terminalPlayers.join(', ');
+        } else if (fine) {
+          state.terminalDirective = fine.trim().toLowerCase();
+          await saveState(env, state);
+          msg = 'OK — fine: ' + state.terminalDirective;
+        } else if (reset !== null) {
+          await handleReset(env);
+          msg = 'OK — reset completato';
+        } else {
+          msg = 'Comandi: ?giocatori=IT,UK,US  ?fine=shutdown|autodistruzione|conversione|libera  ?reset';
+        }
+        return new Response(msg, { headers: { 'Content-Type': 'text/plain; charset=utf-8', ...CORS } });
+      }
 
       if (path === '/api/reset' && (request.method === 'POST' || request.method === 'GET'))
         return await handleReset(env);

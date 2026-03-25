@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Manovre di Combatimento"
             }
+          },
+          {
+            "id": "7107619891bd02d6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Note di rilascio 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,7 +238,7 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "5d815e862880f16f",
+  "active": "7107619891bd02d6",
   "lastOpenFiles": [
     "Savage/Operazione Sarcofago/PG-PNG/~WRL0121.tmp",
     "Savage/Operazione Sarcofago/PG-PNG/~WRD0094.tmp",

@@ -613,9 +613,37 @@ async function playDramaticSequence(aiText,userText){
   }
 }
 
+// PG presenti (default tutti, aggiornato da ///giocatori)
+var activePlayers=['chief','ghost','premiere','torcia','undertaker'];
+var playerLabelMap={chief:'CHIEF',ghost:'\u041F\u0420\u0418\u0417\u0420\u0410\u041A',premiere:'PREMI\u00C8RE',torcia:'TORCIA',undertaker:'UNDERTAKER'};
+
 async function sendMessage(){
   var text=inputEl.value.trim();if(!text)return;
-  inputEl.value='';playKeyClick();
+  inputEl.value='';
+
+  // === Comandi GM nascosti (///) — non appaiono a schermo ===
+  if(text.startsWith('///')){
+    var cmd=text.substring(3).trim();
+    fetch(WORKER_URL+'/api/terminal',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({directive:cmd})
+    }).then(function(r){return r.json();}).then(function(d){
+      // Aggiorna lista giocatori localmente se presente
+      if(d.players)activePlayers=d.players;
+      console.log('GM directive:',cmd,d);
+    });
+    return;
+  }
+
+  playKeyClick();
+
+  // === Comandi PG scenografici (./) — appaiono a schermo ===
+  var action=null;
+  if(text.startsWith('./')){
+    action=text.substring(2).trim();
+  }
+
   addLine('> '+text);addBlank();
   chatHistory.push({role:'user',content:text});
   document.getElementById('inputLine').style.display='none';
@@ -624,10 +652,13 @@ async function sendMessage(){
   var procRefs=await showProcessing(text);
 
   try{
+    var fetchBody={message:text};
+    if(action)fetchBody.action=action;
+
     var resp=await fetch(WORKER_URL+'/api/terminal',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({message:text})
+      body:JSON.stringify(fetchBody)
     });
     var data=await resp.json();
     // Remove processing overlay
@@ -655,6 +686,8 @@ async function sendMessage(){
       await runShutdownChat();
     }else if(seqName==='autodistruzione'){
       await runSelfDestructChat();
+    }else if(seqName==='conversione'){
+      await runConversion();
     }
 
     // Atmospheric mini-sequences (safe, no spoilers)
@@ -670,7 +703,10 @@ async function sendMessage(){
     }
     outputEl.scrollTop=outputEl.scrollHeight;
     addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
-    document.getElementById('inputLine').style.display='flex';inputEl.focus();
+    // Riabilita input (tranne se shutdown/autodistruzione hanno spento il terminale)
+    if(seqName!=='shutdown'&&seqName!=='autodistruzione'){
+      document.getElementById('inputLine').style.display='flex';inputEl.focus();
+    }
   }catch(err){
     var wc=outputEl.querySelector('.cursor-wait');if(wc)wc.remove();
     console.error('Fetch error:',err);playStatic(0.4);
@@ -903,22 +939,102 @@ async function runSelfDestructChat(){
   term.classList.add('screen-off');playTone(40,0.3,0.03,'sine');
 }
 
-// --- BUTTON HANDLERS (TEST ONLY — will be removed) ---
-document.getElementById('btnVvod').addEventListener('click',function(){
-  if(sequenceRunning)return;
-  sequenceRunning=true;disableInput();
-  runShutdown();
-});
-document.getElementById('btnSbros').addEventListener('click',function(){
-  if(sequenceRunning)return;
-  sequenceRunning=true;disableInput();
-  runEarthAnalysis();
-});
-document.getElementById('btnStir').addEventListener('click',function(){
-  if(sequenceRunning)return;
-  sequenceRunning=true;disableInput();
-  runSelfDestruct();
-});
+// === SEQUENZA CONVERSIONE ===
+async function runConversion(){
+  sequenceRunning=true;
+  document.getElementById('inputLine').style.display='none';
+  addBlank();
+  addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+  addBlank();
+  triggerGlitch();playStatic(0.3);
+
+  await seq('\u2588\u2588\u2588 PROTOCOLLO CONVERSIONE ATTIVATO \u2588\u2588\u2588','',1000);
+  await seq('SCANSIONE SOGGETTI PRESENTI...','',600);
+  await progressBar('  ANALISI NEURALE    ',1200,false);
+  await seq('','blank',500);
+
+  var epicPhrases=[
+    'Il protocollo ha registrato.',
+    'La tua scelta \u00E8 stata sigillata.',
+    'Irreversibile.',
+    'Registrato nel nucleo.',
+    'Nessun ritorno.'
+  ];
+  var choices={};
+
+  // Per ogni PG presente, chiedi S o N
+  for(var i=0;i<activePlayers.length;i++){
+    var pg=activePlayers[i];
+    var label=playerLabelMap[pg]||pg.toUpperCase();
+    playTone(200+i*50,0.1,0.04,'sine');
+    await seq(label+'. Accetti la trasformazione?','check-fail',800);
+
+    // Attendi S o N da tastiera
+    var choice=await new Promise(function(resolve){
+      function handler(e){
+        var k=e.key.toUpperCase();
+        if(k==='S'||k==='N'){
+          document.removeEventListener('keydown',handler);
+          resolve(k);
+        }
+      }
+      document.addEventListener('keydown',handler);
+    });
+    choices[pg]=choice;
+    // Frase epica (la risposta NON appare — solo la frase)
+    await seq(epicPhrases[i%epicPhrases.length],'dim',1200);
+    await delay(800);
+  }
+
+  // Pausa drammatica
+  await delay(2500);
+  playDeepRumble();triggerGlitch();
+
+  await seq('PROTOCOLLO CONVERSIONE \u2014 RISULTATI','',1000);
+  await delay(600);
+
+  var converted=0;var refused=0;
+  for(var pg in choices){
+    var accepted=choices[pg]==='S';
+    var label2=playerLabelMap[pg]||pg.toUpperCase();
+    var statusText=accepted?'CONVERTITO':'RIFIUTATO';
+    var cls=accepted?'check-ok':'check-fail';
+    await seq(label2+' \u2014 '+statusText,cls,800);
+    playTone(accepted?300:150,0.15,0.05,'sine');
+    if(accepted)converted++;else refused++;
+    await delay(800);
+  }
+
+  await delay(1500);
+
+  if(converted>0&&refused>0){
+    // Misti — combattimento
+    playStatic(0.5);triggerGlitch();playDeepRumble();
+    await seq('','blank',300);
+    await seq('\u26A0 CONFLITTO RILEVATO','check-fail',800);
+    await seq('PROTOCOLLO COMBATTIMENTO ATTIVO','check-fail',600);
+    await seq('','blank',400);
+    addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+    // Riabilita input — i PG normali possono continuare dopo il combattimento
+    sequenceRunning=false;
+    document.getElementById('inputLine').style.display='flex';inputEl.focus();
+  }else if(converted===activePlayers.length){
+    // Tutti convertiti — IA vince
+    await seq('','blank',300);
+    await seq('CONVERSIONE COMPLETA. IL PROTOCOLLO PROSEGUE.','',800);
+    playDeepRumble();
+    addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+    // Terminale resta attivo ma i PG hanno perso
+    sequenceRunning=false;
+  }else{
+    // Tutti rifiutano
+    await seq('','blank',300);
+    await seq('RIFIUTO REGISTRATO. IL PROTOCOLLO SI ADATTA.','',800);
+    addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
+    sequenceRunning=false;
+    document.getElementById('inputLine').style.display='flex';inputEl.focus();
+  }
+}
 
 // ============================================
 // 1. SHUTDOWN (ВВОД)
