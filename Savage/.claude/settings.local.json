@@ -25,7 +25,12 @@
       "Bash(mv \"Laurent_Marchetti.md\" \"FR_Laurent_Marchetti.md\")",
       "Bash(mv \"Marco_Ferrante.md\" \"IT_Marco_Ferrante.md\")",
       "Bash(mv \"Mikhail_Voronov.md\" \"RU_Mikhail_Voronov.md\")",
-      "Bash(mv \"Ryan_Callahan.md\" \"US_Ryan_Callahan.md\")"
+      "Bash(mv \"Ryan_Callahan.md\" \"US_Ryan_Callahan.md\")",
+      "Bash(pip install:*)",
+      "Bash(python genera_scheda_RU.py)",
+      "Bash(python genera_scheda_IT.py)",
+      "Bash(python genera_scheda_UK.py)",
+      "Bash(python genera_scheda_FR.py)"
     ]
   },
   "enableAllProjectMcpServers": true

@@ -11,12 +11,14 @@
             "id": "5d815e862880f16f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Savage/Operazione Sarcofago/Immagini/Copertina.png"
+                "file": "Savage/Manovre di Combatimento.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Copertina"
+              "icon": "lucide-file",
+              "title": "Manovre di Combatimento"
             }
           }
         ]
@@ -223,9 +225,23 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "5d815e862880f16f",
   "lastOpenFiles": [
-    "Savage/Operazione Sarcofago/PG-PNG/Schede_Personaggio.html",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_FR.py",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_UK.py",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_IT.py",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_RU.py",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda.py",
+    "Savage/Operazione Sarcofago/PG-PNG/scripts",
+    "Savage/Operazione Sarcofago/PG-PNG/FR_Laurent_Premiere_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/UK_James_Undertaker_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/IT_Marco_Torcia_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/RU_Mikhail_Ghost_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/genera_scheda_FR.py",
+    "Savage/Operazione Sarcofago/AI/CLASSIFIED.png",
+    "Savage/Operazione Sarcofago/AI/ChatGPT Image 25 mar 2026, 00_16_33.png",
+    "Savage/Regole.md",
+    "Savage/Operazione Sarcofago/Immagini/Copertina.png",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Emeka_Okonkwo.jpg",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Anna_Weiss.jpg",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Alexei_Morozov.jpg",
@@ -233,16 +249,7 @@
     "Savage/Operazione Sarcofago/Immagini/Operatori/Mikhail_Ghost_Russia.jpg",
     "Savage/Operazione Sarcofago/Immagini/Operatori/Marco_Torcia_Italia.jpg",
     "Savage/Operazione Sarcofago/Immagini/Operatori/Laurent_Premiere_Francia.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Operatori/James_Undertaker_UK.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Mutanti/Mutante_02.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Mutanti/Mutante_01.jpg",
-    "Savage/Operazione Sarcofago/Musica/PianoMenoUno.mp3",
-    "Savage/Operazione Sarcofago/Musica/PianoMenoTre.mp3",
-    "Savage/Operazione Sarcofago/Musica/PianoMenoDue.mp3",
-    "Savage/Operazione Sarcofago/Musica/Esterno.mp3",
-    "Savage/Operazione Sarcofago/Musica/Briefing.mp3",
     "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
-    "Savage/Operazione Sarcofago/Musica",
     "Savage/Operazione Sarcofago/Fogliettini/TUTTI/05_Weiss_Scopre_Talpa.md",
     "Savage/Operazione Sarcofago/Fogliettini/TUTTI/04_Marco_Scoperto.md",
     "Savage/Operazione Sarcofago/Fogliettini/TUTTI/03_Weiss_Segnale_Marco.md",
@@ -265,11 +272,6 @@
     "Savage/Operazione Sarcofago/Fogliettini/UK_James/06_F6_Decisione_Finale.md",
     "Savage/Operazione Sarcofago/Fogliettini/UK_James/05_F5_IA_Parla.md",
     "Savage/Operazione Sarcofago/Fogliettini/UK_James/04_F5_Alpha_Caduta.md",
-    "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/01_F2_Vede_Helena.md",
-    "Savage/Operazione Sarcofago/Fogliettini/UK_James/03_F5_Il_Tempo_Scorre.md",
-    "Savage/Operazione Sarcofago/Fogliettini/TUTTI",
-    "Savage/Operazione Sarcofago/Fogliettini/US_Ryan",
-    "Savage/Operazione Sarcofago/Fogliettini/UK_James",
-    "Savage/Operazione Sarcofago/Fogliettini/RU_Mikhail"
+    "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/01_F2_Vede_Helena.md"
   ]
 }
