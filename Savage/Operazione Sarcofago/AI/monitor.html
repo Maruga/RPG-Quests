@@ -563,7 +563,7 @@ async function startBoot(){
   await typeAsync(firstMsg,'');
   addBlank();addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   document.getElementById('inputLine').style.display='flex';
-  inputEl.focus();startAmbient();
+  inputEl.focus();startAmbient();startDirectivePolling();
 }
 
 document.addEventListener('keydown',function(e){
@@ -623,7 +623,12 @@ async function sendMessage(){
 
   // === Comandi GM nascosti (///) — non appaiono a schermo ===
   if(text.startsWith('///')){
-    var cmd=text.substring(3).trim();
+    var cmd=text.substring(3).trim().toLowerCase();
+    // Vittoria IA — schermata finale
+    if(cmd==='vittoria_ia'||cmd==='vittoria'){
+      runVittoriaIA();
+      return;
+    }
     fetch(WORKER_URL+'/api/terminal',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
@@ -717,6 +722,21 @@ async function sendMessage(){
 }
 
 // System prompt now handled server-side in Worker (/api/terminal)
+
+// Polling GM directives (vittoria_ia da GET /cmd)
+function startDirectivePolling(){
+  setInterval(function(){
+    if(sequenceRunning)return;
+    fetch(WORKER_URL+'/api/gm/state').then(function(r){return r.json();}).then(function(d){
+      if(d.terminalPlayers&&d.terminalPlayers.length>0)activePlayers=d.terminalPlayers;
+      if(d.terminalDirective==='vittoria_ia'){
+        // Consuma: manda direttiva vuota per cancellarla
+        fetch(WORKER_URL+'/api/terminal',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({directive:'clear_vittoria'})});
+        runVittoriaIA();
+      }
+    }).catch(function(){});
+  },5000);
+}
 
 function startAmbient(){
   sched(triggerGlitch,12000,18000);
@@ -939,6 +959,57 @@ async function runSelfDestructChat(){
   term.classList.add('screen-off');playTone(40,0.3,0.03,'sine');
 }
 
+// === VITTORIA IA — Schermata finale ===
+async function runVittoriaIA(){
+  sequenceRunning=true;
+  document.getElementById('inputLine').style.display='none';
+  document.getElementById('inputLine').style.visibility='hidden';
+
+  // Glitch drammatico
+  triggerGlitch();playDeepRumble();playStatic(0.5);
+  await delay(1000);
+  triggerGlitch();
+  await delay(500);
+
+  // Pulisci schermo — output + nascondi tutto
+  clearScreen();
+  document.querySelector('.prompt-char').style.display='none';
+  await delay(2000);
+
+  // Centra il versetto
+  var container=document.createElement('div');
+  container.style.cssText='position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:14;padding:10%;';
+
+  var verse=document.createElement('div');
+  verse.className='term-line';
+  verse.style.cssText='font-size:clamp(14px,2vw,22px);text-align:center;line-height:2;opacity:0;transition:opacity 3s ease-in;';
+
+  var text1=document.createElement('div');
+  text1.style.cssText='margin-bottom:1.5em;';
+  text1.textContent='"Ero morto, ed ecco, sono vivo per i secoli dei secoli."';
+  var text2=document.createElement('div');
+  text2.style.cssText='font-size:clamp(11px,1.3vw,15px);opacity:0.4;';
+  text2.textContent='\u2014 Apocalisse 1:18';
+
+  verse.appendChild(text1);
+  verse.appendChild(text2);
+  container.appendChild(verse);
+
+  var terminal=document.getElementById('terminal');
+  terminal.querySelector('.term-output').appendChild(container);
+
+  // Fade in lento
+  playTone(80,3,0.03,'sine');
+  await delay(100);
+  verse.style.opacity='1';
+
+  // LED: solo errore rosso, lento
+  document.getElementById('ledNet').style.opacity='0';
+  document.getElementById('ledProc').style.opacity='0';
+  document.getElementById('ledErr').style.animation='lp-r 3s ease-in-out infinite';
+  document.getElementById('ledErr').style.background='rgba(255,30,10,0.4)';
+}
+
 // === SEQUENZA CONVERSIONE ===
 async function runConversion(){
   sequenceRunning=true;
@@ -950,7 +1021,17 @@ async function runConversion(){
 
   await seq('\u2588\u2588\u2588 PROTOCOLLO CONVERSIONE ATTIVATO \u2588\u2588\u2588','',1000);
   await seq('SCANSIONE SOGGETTI PRESENTI...','',600);
+
+  // Fetch giocatori presenti dal worker (aggiornati via /cmd?giocatori=)
+  var convPlayers=activePlayers;
+  try{
+    var stResp=await fetch(WORKER_URL+'/api/gm/state');
+    var stData=await stResp.json();
+    if(stData.terminalPlayers&&stData.terminalPlayers.length>0)convPlayers=stData.terminalPlayers;
+  }catch(e){}
+
   await progressBar('  ANALISI NEURALE    ',1200,false);
+  await seq('SOGGETTI RILEVATI: '+convPlayers.length,'',400);
   await seq('','blank',500);
 
   var epicPhrases=[
@@ -963,11 +1044,11 @@ async function runConversion(){
   var choices={};
 
   // Per ogni PG presente, chiedi S o N
-  for(var i=0;i<activePlayers.length;i++){
-    var pg=activePlayers[i];
+  for(var i=0;i<convPlayers.length;i++){
+    var pg=convPlayers[i];
     var label=playerLabelMap[pg]||pg.toUpperCase();
     playTone(200+i*50,0.1,0.04,'sine');
-    await seq(label+'. Accetti la trasformazione?','check-fail',800);
+    await seq(label+'. Accetti la trasformazione? (S/N)','check-fail',800);
 
     // Attendi S o N da tastiera
     var choice=await new Promise(function(resolve){
@@ -1018,14 +1099,14 @@ async function runConversion(){
     // Riabilita input — i PG normali possono continuare dopo il combattimento
     sequenceRunning=false;
     document.getElementById('inputLine').style.display='flex';inputEl.focus();
-  }else if(converted===activePlayers.length){
-    // Tutti convertiti — IA vince
+  }else if(converted===convPlayers.length){
+    // Tutti convertiti — IA vince → versetto Apocalisse
     await seq('','blank',300);
     await seq('CONVERSIONE COMPLETA. IL PROTOCOLLO PROSEGUE.','',800);
     playDeepRumble();
-    addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
-    // Terminale resta attivo ma i PG hanno perso
-    sequenceRunning=false;
+    await delay(3000);
+    // Transizione al versetto
+    runVittoriaIA();
   }else{
     // Tutti rifiutano
     await seq('','blank',300);

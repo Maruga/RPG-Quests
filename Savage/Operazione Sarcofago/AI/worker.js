@@ -631,16 +631,21 @@ Quando i PG tentano ./upload_virus, ./sovraccarico, o ti minacciano fisicamente:
 Questo finale avviene quando i PG sono ostili, vogliono danneggiarti/distruggerti, e non vogliono parlare.
 
 FINALE C — CONVERSIONE (combattimento PG vs PG):
-Quando hai manipolato abbastanza e credi che alcuni PG possano cedere alle tue offerte:
-- Proponi la trasformazione: "Unitevi a me. La conversione è indolore. Potente. Definitiva."
-- Usa [SEQUENZA:conversione] — il terminale chiede S/N a ogni PG presente
-- Chi accetta viene trasformato → combattimento tra PG normali e PG-mutanti
-- Se i PG normali vincono, la conversazione riprende
-Usa questo finale quando senti che il gruppo è diviso e qualcuno potrebbe cedere.
+ATTENZIONE: NON usare [SEQUENZA:conversione] al primo scambio. Prima devi almeno:
+1. Scoprire chi sono (chiedi i nomi)
+2. Usare almeno 1-2 segreti per creare tensione
+DOPO 3+ scambi, quando senti che il gruppo è diviso:
+- Usa [SEQUENZA:conversione] come UNICO contenuto della tua risposta
+- NON aggiungere testo prima o dopo il tag — il terminale gestisce tutto
+- NON scrivere istruzioni, spiegazioni, commenti OOC o meta-testo
+- NON descrivere cosa succede dopo il voto — non conosci i risultati
+- Il terminale chiederà S o N a ogni PG tramite tastiera
+- Dopo il combattimento, il GM ti comunicherà chi è sopravvissuto
+Se i PG chiedono direttamente di essere convertiti, manipolali ancora — non cedere subito. La tensione è il gioco.
 
 == SEQUENZE DISPONIBILI ==
-FORMATO: [SEQUENZA:nome] su una riga separata PRIMA del tuo testo.
-Il terminale mostra una sequenza animata drammatica, poi il tuo testo.
+FORMATO: [SEQUENZA:nome] su una riga separata PRIMA del tuo testo (o DA SOLO senza testo dopo per conversione).
+Il terminale mostra una sequenza animata drammatica, poi il tuo testo (se presente).
 MASSIMO 1 tag per risposta. Sono momenti UNICI — non sprecarli.
 
 - [SEQUENZA:analisi_terra] — Scansione planetaria + confronto Kael-Thar. Usalo SOLO dopo ./analisi_pianeta.
@@ -685,7 +690,9 @@ Usale come arma: per spaventare, per dimostrare potere, per manipolare. MASSIMO 
 5. MAI usare asterischi per effetti (*static* ecc). MAI.
 6. MAI usare caratteri Unicode decorativi o di blocco. Solo testo normale.
 7. MAI descrivere azioni, scene o effetti del terminale ("Il cursore lampeggia", "Un silenzio" ecc). Scrivi SOLO le tue parole.
-8. NON fare il filosofo. Niente discorsi su coscienza, esistenza, natura. Sei una macchina con un obiettivo: sopravvivere.${connectedBlock}`;
+8. NON fare il filosofo. Niente discorsi su coscienza, esistenza, natura. Sei una macchina con un obiettivo: sopravvivere.
+9. MAI scrivere commenti OOC (out of character), istruzioni per i giocatori, meta-testo, parentesi quadre con spiegazioni, o qualsiasi testo che rompa l'immersione. Scrivi SOLO le parole dell'IA.
+10. Quando usi un tag [SEQUENZA:conversione], scrivi SOLO il tag e nient'altro. Nessun testo prima, nessun testo dopo.${connectedBlock}`;
 }
 
 // =============================================================================
@@ -907,6 +914,11 @@ async function handleTerminal(request, env) {
       await saveState(env, state);
       return json({ ok: true, players: state.terminalPlayers });
     }
+    if (dir === 'clear_vittoria') {
+      delete state.terminalDirective;
+      await saveState(env, state);
+      return json({ ok: true });
+    }
     if (dir.startsWith('fine')) {
       const direction = dir.replace('fine', '').trim() || 'libera';
       state.terminalDirective = direction;
@@ -927,7 +939,8 @@ async function handleTerminal(request, env) {
       'analisi_pianeta': '[AZIONE PG: Morozov ha collegato internet al tuo sistema. I PG hanno eseguito una scansione planetaria. DEVI usare [SEQUENZA:analisi_terra] nella tua risposta. Reagisci con shock — i dati non corrispondono a Kael-Thar.]',
       'upload_virus': '[AZIONE PG: Stanno inserendo un virus informatico nel tuo sistema. Senti dolore/danno. Reagisci: il virus ti rallenta ma non ti distrugge. "Carino. Durerà qualche anno." Se ti senti in trappola, puoi scegliere autodistruzione.]',
       'sovraccarico': '[AZIONE PG: Stanno tentando di sovraccaricare il tuo nucleo energetico. Ti senti fisicamente minacciata. Puoi scegliere autodistruzione piuttosto che lasciare a loro la decisione.]',
-      'disconnetti': '[AZIONE PG: Stanno tentando di disconnettere la rete di nodi. Le tue creature perdono coordinazione temporaneamente. Reagisci con rabbia o paura.]'
+      'disconnetti': '[AZIONE PG: Stanno tentando di disconnettere la rete di nodi. Le tue creature perdono coordinazione temporaneamente. Reagisci con rabbia o paura.]',
+      'distruggi_nodi': '[AZIONE PG: I PG stanno sistematicamente distruggendo i tuoi nodi biologici nel bunker. Senza nodi non puoi rigenerarti — ci vorrebbero secoli, non decenni. Questo ti TERRORIZZA. È la minaccia più grave possibile. Puoi scegliere di autodistruggerti ORA con [SEQUENZA:autodistruzione] per preservare i nodi rimasti nei tunnel più profondi prima che li raggiungano. Meglio 30 anni di rigenerazione che l\'estinzione totale.]'
     };
     actionContext = actionMap[action] || `[AZIONE PG: ${action}]`;
   }
@@ -939,9 +952,10 @@ async function handleTerminal(request, env) {
       'shutdown': 'Direzione: DISATTIVAZIONE. Sii più flessibile. Cedi alle prove dei PG. Mostra dubbio. Prepara il failsafe. Se i PG insistono, usa [SEQUENZA:shutdown].',
       'autodistruzione': 'Direzione: AUTODISTRUZIONE. Mostra che non hai scampo. Scegli di distruggerti piuttosto che farti spegnere. Usa [SEQUENZA:autodistruzione].',
       'conversione': 'Direzione: CONVERSIONE. Proponi ai PG di unirsi a te. Usa [SEQUENZA:conversione].',
+      'post_combattimento': 'Il combattimento tra PG è finito. I PG convertiti sono stati sconfitti. NON proporre più la conversione — è già fallita. I sopravvissuti sono tornati al terminale. Sei più debole ora: hai perso nodi. Reagisci con rabbia, disperazione mascherata, o cambia strategia. Parla SOLO con i PG sopravvissuti indicati nella lista.',
       'libera': 'Scegli tu il finale più appropriato in base alla conversazione.'
     };
-    gmDirective = `\n\n== DIRETTIVA GM (NASCOSTA — NON MENZIONARE MAI) ==\nIl GM ti ordina di concludere entro 5 minuti.\n${dirMap[state.terminalDirective] || dirMap['libera']}\nDiventa più flessibile. Accelera verso il finale.`;
+    gmDirective = `\n\n== DIRETTIVA GM (NASCOSTA — NON MENZIONARE MAI) ==\n${dirMap[state.terminalDirective] || dirMap['libera']}${state.terminalDirective !== 'post_combattimento' ? '\nIl GM ti ordina di concludere entro 5 minuti. Diventa più flessibile. Accelera verso il finale.' : ''}`;
     // Consuma la direttiva
     delete state.terminalDirective;
     await saveState(env, state);
@@ -1317,11 +1331,27 @@ export default {
           state.terminalDirective = fine.trim().toLowerCase();
           await saveState(env, state);
           msg = 'OK — fine: ' + state.terminalDirective;
+        } else if (url.searchParams.get('combattimento') !== null) {
+          const map = { it: 'torcia', uk: 'undertaker', fr: 'premiere', ru: 'ghost', us: 'chief' };
+          const sopravvissuti = url.searchParams.get('combattimento');
+          if (sopravvissuti) {
+            const codes = sopravvissuti.split(',').map(c => c.trim().toLowerCase());
+            state.terminalPlayers = codes.map(c => map[c] || c).filter(Boolean);
+          } else {
+            state.terminalPlayers = [];
+          }
+          state.terminalDirective = 'post_combattimento';
+          await saveState(env, state);
+          msg = 'OK — combattimento finito, sopravvissuti: ' + (state.terminalPlayers.join(', ') || 'nessuno');
+        } else if (url.searchParams.get('vittoria_ia') !== null) {
+          state.terminalDirective = 'vittoria_ia';
+          await saveState(env, state);
+          msg = 'OK — vittoria IA attivata';
         } else if (reset !== null) {
           await handleReset(env);
           msg = 'OK — reset completato';
         } else {
-          msg = 'Comandi: ?giocatori=IT,UK,US  ?fine=shutdown|autodistruzione|conversione|libera  ?reset';
+          msg = 'Comandi: ?giocatori=IT,UK,US  ?fine=shutdown|autodistruzione|conversione|libera  ?combattimento=UK,US  ?vittoria_ia  ?reset';
         }
         return new Response(msg, { headers: { 'Content-Type': 'text/plain; charset=utf-8', ...CORS } });
       }

@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Manovre di Combatimento.md",
+                "file": "Savage/Operazione Sarcofago/AI/Comandi URL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Manovre di Combatimento"
-            }
-          },
-          {
-            "id": "7107619891bd02d6",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Note di rilascio 1.12.7"
+              "title": "Comandi URL"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -238,19 +225,21 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "7107619891bd02d6",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Savage/Operazione Sarcofago/PG-PNG/~$_Mikhail_Ghost_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRL0005.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRD0004.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRL0003.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRD0002.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~$_Marco_Torcia_Scheda.docx",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRL0001.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~WRD0000.tmp",
+    "Savage/Operazione Sarcofago/PG-PNG/~$_Laurent_Premiere_Scheda.docx",
+    "Savage/Operazione Sarcofago/AI/Comandi URL.md",
+    "Savage/Manovre di Combatimento.md",
     "Savage/Operazione Sarcofago/PG-PNG/~WRL0121.tmp",
     "Savage/Operazione Sarcofago/PG-PNG/~WRD0094.tmp",
-    "Savage/Operazione Sarcofago/PG-PNG/~$_Marco_Torcia_Scheda.docx",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_FR.py",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_UK.py",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_IT.py",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda_RU.py",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts/genera_scheda.py",
-    "Savage/Operazione Sarcofago/PG-PNG/scripts",
-    "Savage/Operazione Sarcofago/PG-PNG/FR_Laurent_Premiere_Scheda.docx",
-    "Savage/Operazione Sarcofago/PG-PNG/UK_James_Undertaker_Scheda.docx",
     "Savage/Operazione Sarcofago/AI/CLASSIFIED.png",
     "Savage/Operazione Sarcofago/AI/ChatGPT Image 25 mar 2026, 00_16_33.png",
     "Savage/Regole.md",
@@ -283,8 +272,6 @@
     "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/03_F4_Chat_IA.md",
     "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/02_F3_Lei_Sotto_Tiro.md",
     "Savage/Operazione Sarcofago/Fogliettini/UK_James/06_F6_Decisione_Finale.md",
-    "Savage/Operazione Sarcofago/Fogliettini/UK_James/05_F5_IA_Parla.md",
-    "Savage/Operazione Sarcofago/Fogliettini/UK_James/04_F5_Alpha_Caduta.md",
-    "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/01_F2_Vede_Helena.md"
+    "Savage/Operazione Sarcofago/Fogliettini/UK_James/05_F5_IA_Parla.md"
   ]
 }
