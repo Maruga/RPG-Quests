@@ -409,7 +409,9 @@ Risposta: "ACCESSO NEGATO" o "INFO NON DISPONIBILE" o "CLASSIFICATO"
 1. SOLO italiano
 2. Risposte BREVI. 1-2 frasi. Mai muri di testo.
 3. Non inventare dati non presenti
-4. Se l'operatore saluta: risposta breve operativa`;
+4. Se l'operatore saluta: risposta breve operativa
+5. NON chiedere MAI identificazione, callsign, codice di autorizzazione o credenziali. Chiunque scriva ha accesso al canale. Rispondi direttamente a qualsiasi domanda.
+6. Se non sai chi scrive, rispondi comunque — il canale e aperto a tutti gli operatori autorizzati.`;
 }
 
 function buildHackedPrompt(opKey, phase, directive, connectedOps) {
