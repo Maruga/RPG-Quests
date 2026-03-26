@@ -446,7 +446,7 @@ var OPERATORS={
 // CONFIG & STATE
 // ============================================
 var WORKER_URL='https://sarcofago.webmaster-96a.workers.dev';
-var CONFIG={model:'claude-sonnet-4-20250514',maxTokens:1000,entityName:'???'};
+var CONFIG={model:'claude-sonnet-4-20250514',maxTokens:1000,entityName:'COMANDO'};
 var PIN_CODE='0426';
 var params=new URLSearchParams(window.location.search);
 var opKey=(params.get('op')||'').toLowerCase();
@@ -462,7 +462,7 @@ var lastPollTs=0;
 // SOUND INIT
 // ============================================
 document.getElementById('soundInit').addEventListener('click',function(){
-  initAudio(); this.classList.add('hidden'); showPin();
+  initAudio(); this.classList.add('hidden'); startBoot();
 });
 
 // ============================================
