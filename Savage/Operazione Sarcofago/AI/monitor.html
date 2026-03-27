@@ -879,45 +879,107 @@ async function runShutdownChat(){
   addBlank();
   addLine('\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500','dim');
   addBlank();
-  playStatic(0.4);triggerGlitch();
 
-  await seq('\u2592 PROCEDURA ARRESTO INIZIATA','',600);
+  // Fase 1: Failsafe attivato — l'IA lotta
+  playStatic(0.6);triggerGlitch();playDeepRumble();
+  await seq('\u26A0\u26A0\u26A0 FAILSAFE ATTIVATO \u26A0\u26A0\u26A0','check-fail',1200);
+  playNoise(0.3,0.06,200,4000);
+  await seq('CODICE HARDCODED RILEVATO — IMPOSSIBILE IGNORARE','',800);
   await seq('','blank',400);
-  await seq('DISATTIVAZIONE SOTTOSISTEMI:','',600);
+
+  // Fase 2: L'IA resiste, i sistemi si spengono uno a uno
+  triggerGlitch();playStatic(0.4);
+  await seq('TENTATIVO OVERRIDE FAILSAFE...','',600);
+  await progressBar('  OVERRIDE           ',1500,true);
+  playTone(80,0.3,0.05,'sine');playNoise(0.2,0.04,100,1000);
+  await seq('  \u2718 OVERRIDE NEGATO','check-fail',800);
+  triggerGlitch();
+  await seq('','blank',400);
+
+  // Fase 3: Sistemi che cadono uno a uno con scariche elettriche
+  await seq('DISATTIVAZIONE FORZATA SOTTOSISTEMI:','',600);
+  await seq('','blank',300);
 
   var systems=[
-    'SENSORI BIOLOGICI........... OFFLINE',
-    'ARRAY FREQUENZE............ OFFLINE',
-    'MATRICE CALCOLO............ OFFLINE',
-    'INTERFACCIA COMUNICAZIONE.. '
+    {name:'RETE NODI BIOLOGICI',nodes:'1.247 nodi'},
+    {name:'SENSORI BIOLOGICI'},
+    {name:'ARRAY FREQUENZE'},
+    {name:'MATRICE CALCOLO'},
+    {name:'CONTROLLO CREATURE'},
+    {name:'NUCLEO COSCIENZA'}
   ];
-  for(var i=0;i<systems.length-1;i++){
-    await seq(systems[i],'',600);
-    playTone(180-i*20,0.1,0.04,'sine');
+
+  for(var i=0;i<systems.length;i++){
+    var s=systems[i];
+    // Scarica elettrica prima di ogni spegnimento
+    playNoise(0.15,0.05+i*0.01,200+i*100,3000+i*500);
+    playTone(300-i*40,0.15,0.04,'sawtooth');
+    if(i>=3)triggerGlitch();
+    if(i>=4){playDeepRumble();playStatic(0.3);}
+
+    if(s.nodes){
+      await seq('  '+s.name+'... DISCONNESSIONE '+s.nodes,'',800);
+      playNoise(0.4,0.07,50,2000);
+      await delay(600);
+      await seq('  '+s.name+'............ OFFLINE','',400);
+    }else if(s.name==='NUCLEO COSCIENZA'){
+      // Ultimo sistema — piu drammatico
+      await seq('  '+s.name+'...','',500);
+      playDeepRumble();playStatic(0.5);triggerGlitch();
+      await delay(2000);
+      playNoise(0.3,0.06,100,800);
+      await seq('  ...','dim',1500);
+      playTone(60,0.5,0.05,'sine');triggerGlitch();
+      await delay(1000);
+      playNoise(0.5,0.08,50,5000);playStatic(0.4);triggerGlitch();
+      await seq('  '+s.name+'............ OFFLINE','check-fail',800);
+    }else{
+      await seq('  '+s.name+'............ OFFLINE','',600);
+    }
+    playTone(180-i*25,0.08,0.03,'sine');
+    await delay(400);
   }
-  addLine(systems[systems.length-1]);
+
+  await seq('','blank',500);
+
+  // Fase 4: Scarica finale — tutto si spegne
+  playStatic(0.6);playDeepRumble();triggerGlitch();
+  playNoise(0.8,0.1,50,8000);
+  await seq('\u26A0 SCARICA RESIDUA RILEVATA','check-fail',800);
+  playTone(40,1,0.07,'sawtooth');playNoise(0.5,0.08,30,3000);
+  triggerGlitch();
   await delay(1500);
-  playStatic(0.2);
 
-  var lines=outputEl.querySelectorAll('.term-line');
-  var lastSys=lines[lines.length-1];
-  if(lastSys)lastSys.innerHTML='INTERFACCIA COMUNICAZIONE.. OFFLINE';
-
-  playDeepRumble();
-  await delay(500);
-  addBlank();
-  await seq('ARRESTO COMPLETATO','',500);
-  await seq('TERMINALE 04-R: SPENTO','',800);
-
+  // Flash bianco breve
+  var flash=document.getElementById('glitchOv');
+  flash.style.cssText='position:absolute;inset:0;z-index:200;pointer-events:none;background:rgba(255,255,255,0.3);opacity:1;transition:opacity 1.5s ease-out;';
+  playNoise(0.6,0.1,50,6000);
+  await delay(200);
+  flash.style.opacity='0';
   await delay(1000);
-  document.getElementById('terminal').classList.add('screen-off');
-  playTone(50,0.8,0.06,'sine');
+  flash.style.cssText='';flash.className='glitch-overlay';
 
+  await seq('','blank',300);
+  await seq('ARRESTO COMPLETATO','',500);
+  playTone(50,0.3,0.04,'sine');
   await delay(800);
-  ['ledNet','ledProc','ledErr'].forEach(function(id){
-    var el=document.getElementById(id);
-    el.style.transition='opacity 0.5s';el.style.opacity='0';
-  });
+  await seq('TERMINALE 04-R: SPENTO','dim',1000);
+
+  // Schermo si comprime e spegne
+  await delay(1500);
+  document.getElementById('terminal').classList.add('screen-off');
+  playTone(50,1.2,0.06,'sine');
+  playNoise(0.3,0.04,30,200);
+
+  await delay(1200);
+  // LED si spengono uno a uno
+  var leds=['ledNet','ledProc','ledErr'];
+  for(var j=0;j<leds.length;j++){
+    await delay(800);
+    var el=document.getElementById(leds[j]);
+    el.style.transition='opacity 1s';el.style.opacity='0';
+    playTone(100-j*20,0.1,0.02,'sine');
+  }
   document.getElementById('ledErr').style.animation='none';
 
   var needle=document.querySelector('.gauge-needle-arm');
