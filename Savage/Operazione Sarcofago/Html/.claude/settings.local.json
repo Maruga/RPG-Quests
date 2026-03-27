@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node convert.js)",
+      "Bash(ls -la \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Savage/Operazione Sarcofago/Html/\"*.html)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(done)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "memory"
+  ]
+}

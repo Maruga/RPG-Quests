@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Piano -1 — Uffici e Ricerca</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { color-scheme: dark; }
+body {
+  background: #0d0d0d;
+  color: #ddd;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  padding: 12px 16px 60px;
+  -webkit-text-size-adjust: 100%;
+}
+h1 { color: #ff6b6b; font-size: 1.5em; margin: 28px 0 12px; border-bottom: 2px solid #ff6b6b44; padding-bottom: 8px; }
+h2 { color: #ffd93d; font-size: 1.3em; margin: 24px 0 10px; border-bottom: 1px solid #ffd93d33; padding-bottom: 6px; }
+h3 { color: #6bcb77; font-size: 1.13em; margin: 20px 0 8px; }
+h4 { color: #4d96ff; font-size: 1.05em; margin: 16px 0 6px; }
+h5 { color: #b4a7d6; font-size: 1em; margin: 14px 0 6px; font-style: italic; }
+p { margin: 8px 0; }
+strong { color: #fff; font-weight: 600; }
+em { color: #ccc; }
+del { color: #888; text-decoration: line-through; }
+hr { border: none; border-top: 1px solid #333; margin: 24px 0; }
+
+a { color: #4d96ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+blockquote {
+  border-left: 3px solid #555;
+  padding: 8px 14px;
+  margin: 12px 0;
+  background: #161616;
+  color: #bbb;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95em;
+}
+blockquote blockquote { margin: 8px 0; background: #1a1a1a; }
+blockquote p { margin: 4px 0; }
+
+.callout { border-radius: 6px; padding: 10px 14px; margin: 12px 0; }
+.callout-title { font-weight: 700; margin-bottom: 4px; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px; }
+.callout-example { border-left: 3px solid #4d96ff; background: #0d1525; }
+.callout-example .callout-title { color: #4d96ff; }
+.callout-tip { border-left: 3px solid #6bcb77; background: #0d1f0d; }
+.callout-tip .callout-title { color: #6bcb77; }
+.callout-warning { border-left: 3px solid #ffd93d; background: #1f1a0d; }
+.callout-warning .callout-title { color: #ffd93d; }
+.callout-info { border-left: 3px solid #4d96ff; background: #0d1525; }
+.callout-info .callout-title { color: #4d96ff; }
+
+.table-wrap { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88em; min-width: 320px; }
+th { background: #1f1f1f; color: #ffd93d; padding: 8px 10px; text-align: left; border: 1px solid #333; font-weight: 600; white-space: nowrap; }
+td { padding: 8px 10px; border: 1px solid #2a2a2a; vertical-align: top; }
+tr:nth-child(even) { background: #141414; }
+tr:nth-child(odd) { background: #0d0d0d; }
+
+ul, ol { padding-left: 22px; margin: 8px 0; }
+li { margin: 3px 0; }
+li > ul, li > ol { margin: 2px 0; }
+
+code {
+  background: #1f1f1f;
+  color: #ff8a65;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+  font-size: 0.88em;
+}
+pre {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  margin: 12px 0;
+  -webkit-overflow-scrolling: touch;
+}
+pre code { background: none; color: #ccc; padding: 0; font-size: 0.85em; }
+
+.star { color: #ffd93d; }
+
+</style>
+</head>
+<body>
+<h1 id="piano-1-uffici-e-ricerca">Piano -1 — Uffici e Ricerca</h1>
+<blockquote>Guida completa per il GM. Contiene tutto il necessario per gestire l'esplorazione del primo livello sotterraneo del bunker (Fase 4).<br>Mappa di riferimento: <code>Immagini/PianoMenuUno.png</code></blockquote>
+<hr>
+<h2 id="panoramica">Panoramica</h2>
+<p>Il Piano -1 è il livello amministrativo e logistico del complesso sovietico sotto il Reattore 4. Uffici, laboratori di base, magazzini, alloggi del personale. Qui lavoravano gli scienziati minori e il personale di supporto del Progetto ВОЗРОЖДЕНИЕ (Rinascita).</p>
+<p>Abbandonato dal 1986. 29 anni di polvere, silenzio e buio. Il backup mantiene solo luci d'emergenza rosse. Quando Morozov si collega alla rete interna (vedi sezione Sala Controllo Accessi più sotto), i sistemi si riattivano: <strong>illuminazione standard</strong> (neon bianchi), ventilazione, alimentazione completa. Da quel momento, il Piano -1 è completamente illuminato e funzionante.</p>
+<p><strong>Tono:</strong> Lento, esplorativo. I PG devono sentire il peso del bunker — le vite interrotte, la polvere, il silenzio. Non forzare il combattimento subito.</p>
+<p><strong>Durata stimata al tavolo:</strong> 45-60 minuti.</p>
+<hr>
+<h2 id="legenda-porte">Legenda Porte</h2>
+<div class="table-wrap"><table><thead><tr><th>Colore</th><th>Tipo</th><th>Descrizione</th></tr></thead><tbody><tr><td><strong>Rossa</strong></td><td>Blindata</td><td>Molto difficile da aprire, scassinare o far saltare. Servivano a isolare ambienti a più livelli di sicurezza. Acciaio rinforzato, chiusure multiple</td></tr><tr><td><strong>Blu</strong></td><td>Normale</td><td>Spesso aperte. Si possono sfondare con una spallata (Forza, Diff 4) o sparando alla serratura</td></tr></tbody></table></div>
+<hr>
+<h2 id="orientamento-della-mappa">Orientamento della Mappa</h2>
+<ul>
+<li><strong>Sinistra</strong> (muro di confine ovest): ingresso principale</li>
+<li><strong>Destra</strong> (muro est): ascensore distrutto (in alto), infermeria (in basso)</li>
+<li><strong>Centro</strong>: magazzino grande con ascensore funzionante — <strong>⚠ TRAPPOLA IA</strong></li>
+<li><strong>Zona superiore-destra</strong> (tra porte blindate): <strong>⚠ CAMPO MINATO</strong> (Spetsnaz 1986)</li>
+<li><strong>Basso-sinistra</strong>: stanza del combattimento + armeria</li>
+<li><strong>Basso-destra</strong>: infermeria</li>
+</ul>
+<hr>
+<h2 id="percorso-della-squadra-alpha">Percorso della Squadra Alpha</h2>
+<blockquote><strong>Importante per la coerenza narrativa.</strong> Alpha è entrata 20 minuti prima di Bravo, con 6 operatori armati ma <strong>senza hacker</strong> — niente mappe, niente diagnostica, solo luci d'emergenza rosse. Qualcuno nella squadra aveva intelligence parziale sul layout generale.</blockquote>
+<h3 id="percorso">Percorso</h3>
+<pre><code>INGRESSO → corridoio orizzontale verso DESTRA → porta rossa centro corridoio (forzata con esplosivo)
+→ porta rossa prima dell'ascensore (forzata) → ASCENSORE DISTRUTTO (inagibile)
+→ tornano indietro, scendono a SUD verso infermeria → girano a DESTRA
+→ entrano nel MAGAZZINO GRANDE → ASCENSORE FUNZIONANTE → scendono al Piano -2</code></pre>
+<h3 id="stato-delle-porte-dopo-il-passaggio-di-alpha">Stato delle Porte dopo il Passaggio di Alpha</h3>
+<div class="table-wrap"><table><thead><tr><th>Porta</th><th>Tipo</th><th>Stato</th><th>Note</th></tr></thead><tbody><tr><td>Ingresso principale</td><td>Rossa</td><td>Aperta</td><td>Forzata da Alpha dall'esterno</td></tr><tr><td>Centro corridoio orizzontale</td><td>Rossa</td><td>Forzata</td><td>Segni evidenti di esplosivo C4, cardini distrutti</td></tr><tr><td>Prima dell'ascensore distrutto</td><td>Rossa</td><td>Forzata</td><td>Piede di porco + esplosivo, porta piegata</td></tr><tr><td><strong>Campo minato</strong></td><td>Rossa</td><td><strong>Aperta</strong></td><td><strong>Aperta dall'IA</strong> — Alpha l'ha ignorata e non ci è entrata</td></tr><tr><td>Porta rossa in basso (stanza combattimento)</td><td>Rossa</td><td><strong>Chiusa</strong></td><td>Alpha ha tentato di sfondarla ma non ci è riuscita — segni di tentativi (graffi, ammaccature, segni di carica insufficiente)</td></tr><tr><td>Infermeria</td><td>Rossa</td><td>Aperta</td><td>Alpha è entrata per curare un ferito (scontro con mutante isolato nei corridoi)</td></tr><tr><td>Porte blu lungo il percorso</td><td>Blu</td><td>Aperte</td><td>Facilmente aperte da Alpha</td></tr><tr><td>Porte blu fuori percorso</td><td>Blu</td><td>Chiuse</td><td>Alpha non ci è passata, facili da aprire per Bravo</td></tr></tbody></table></div>
+<h3 id="cosa-trovano-i-pg">Cosa Trovano i PG</h3>
+<p>I PG vedono chiaramente il percorso di Alpha: porte forzate, bossoli, glow stick chimici, un corpo. Possono seguirlo o deviare. Con le mappe di Morozov, sanno che dietro la porta rossa che Alpha non ha sfondato ci sono l'armeria e la stanza del combattimento — ma devono trovare un modo per aprirla.</p>
+<blockquote><strong>La porta del campo minato aperta è un'anomalia.</strong> Alpha non l'ha aperta (il loro percorso non passa di lì). Se i PG ci fanno caso — chi l'ha aperta? L'IA. Vuole che qualcuno ci entri.</blockquote>
+<hr>
+<h2 id="luoghi-chiave">Luoghi Chiave</h2>
+<h3 id="1-ingresso-principale">1. Ingresso Principale</h3>
+<p><strong>Posizione:</strong> Porta rossa sul muro di confine sinistro, appena sopra la metà.</p>
+<p>La porta più robusta di tutto il piano. Era sigillata dall'esterno con chiusure multiple e saldature di rinforzo. È stata aperta dall'esterno dalla Squadra Alpha prima dell'arrivo di Bravo.</p>
+<blockquote><strong>Descrizione d'ingresso (prima del collegamento di Morozov):</strong><br><em>Il corridoio scende dolcemente. Pareti grigie, macchie di umidità. Le luci d'emergenza rosse proiettano ombre lunghe — l'unica illuminazione. Solo le torce della squadra tagliano il buio.</em><br><br><br><strong>Dopo il collegamento di Morozov:</strong><br><em>I neon bianchi si accendono sezione per sezione con uno sfarfallio. Il corridoio si rivela in tutta la sua lunghezza. Sulla destra, una porta aperta: un ufficio. Scrivania rovesciata, carte sul pavimento, una tazza di caffè ancora al suo posto — come se qualcuno fosse uscito per una pausa e non fosse mai tornato.</em></blockquote>
+<hr>
+<h3 id="2-ascensore-distrutto">2. Ascensore Distrutto</h3>
+<p><strong>Posizione:</strong> Rettangolo scuro piccolo in alto a destra sulla mappa.</p>
+<p>Era l'ascensore principale del complesso. Distrutto durante l'incursione Spetsnaz del 1986 — i soldati tentarono di far saltare il vano per impedire ai mutanti di salire. Il vano è crollato, i cavi pendono nel vuoto, la cabina è un ammasso di metallo contorto in fondo al pozzo.</p>
+<blockquote><em>Le porte dell'ascensore sono forzate, piegate verso l'esterno. Dentro: vuoto. La cabina è crollata — si vede il fondo del vano, tre piani sotto, attraverso un groviglio di cavi e metallo. Qualcuno ha cercato di usarlo. Non ha funzionato.</em></blockquote>
+<p><strong>Non agibile.</strong> I PG non possono scendere da qui.</p>
+<hr>
+<h3 id="3-magazzino-grande-stanza-centrale">3. Magazzino Grande (Stanza Centrale)</h3>
+<p><strong>Posizione:</strong> Grande stanza quadrata al centro della mappa — la più grande del piano.</p>
+<p>Era il magazzino principale del complesso. Ancora pieno di materiale.</p>
+<blockquote><em>Una stanza enorme. Scaffalature industriali alte fino al soffitto, alcune crollate. Casse di legno e metallo impilate — etichette in cirillico, numeri di lotto, simboli di rischio chimico. Due muletti elettrici parcheggiati in un angolo, batterie morte da decenni. L'odore di olio e legno vecchio. Corridoi stretti tra le pile di casse — visibilità ridotta.</em></blockquote>
+<p><strong>Contenuto narrativo:</strong></p>
+<ul>
+<li>Casse con equipaggiamento scientifico (strumenti, provette, contenitori sigillati)</li>
+<li>Casse con razioni militari sovietiche (scadute da 29 anni)</li>
+<li>Materiale da costruzione (cemento, cavi, tubi)</li>
+<li>Muletti elettrici non funzionanti</li>
+</ul>
+<h4 id="trappola-dell-ia-imboscata-nel-magazzino">⚠ TRAPPOLA DELL'IA — Imboscata nel Magazzino</h4>
+<p><strong>Il magazzino è una trappola.</strong> L'IA sa che per scendere al Piano -2 i PG devono attraversare questa stanza e raggiungere l'ascensore in fondo. Ha posizionato diversi mutanti tra le casse, nascosti, in attesa.</p>
+<p><strong>Composizione dell'imboscata:</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Tipo</th><th>Quantità</th><th>Posizione</th></tr></thead><tbody><tr><td>Mutanti Standard (operai recenti)</td><td>3-4</td><td>Nascosti tra le scaffalature, distribuiti nella stanza. Emergono quando i PG sono a metà percorso</td></tr><tr><td>Mutanti Avanzati (1986)</td><td>1-2</td><td>In fondo, vicino all'ascensore. Si muovono sui fianchi mentre gli standard attaccano frontalmente</td></tr></tbody></table></div>
+<p><strong>Tattiche dell'IA:</strong></p>
+<ul>
+<li>I mutanti NON attaccano subito — aspettano che i PG siano <strong>dentro</strong> la stanza, lontani dalla porta d'ingresso</li>
+<li>Gli standard emergono dalle file di casse laterali, tagliando la ritirata</li>
+<li>Gli avanzati puntano agli <strong>scienziati</strong> (la vera minaccia per l'IA)</li>
+<li>L'IA può spegnere le luci del magazzino per un round (buio completo, -6 a tutti i tiri) per creare panico, poi riaccenderle</li>
+<li>Obiettivo: contagio (avvicinarsi a 3m), NON uccidere — l'IA vuole i PG vivi e compromessi</li>
+</ul>
+<p><strong>Come l'IA attira i PG:</strong></p>
+<p>Via chat (dispositivo al polso), l'IA può indirizzare i PG verso il magazzino:</p>
+<ul>
+<li><em>"Segnale di Alpha rilevato nel deposito centrale. Procedete con cautela."</em></li>
+<li><em>"I vostri compagni sono più avanti… vicino all'ascensore…"</em></li>
+</ul>
+<blockquote><strong>📝 Nota per l'IA (worker.js):</strong> Quando implementeremo i prompt dell'IA, aggiungere nelle istruzioni che l'IA conosce la disposizione del magazzino e può usare la chat per guidare i PG dentro la trappola. L'IA NON menziona mai i mutanti — parla di "compagni" o "segnali" per attirare il team.</blockquote>
+<p><strong>Copertura in combattimento:</strong> I corridoi stretti tra le casse limitano le linee di tiro (+2 copertura leggera dietro le casse, +4 copertura media dietro scaffalature integre). Funziona in entrambe le direzioni — i PG possono usarla per difendersi, ma anche i mutanti la usano per avvicinarsi non visti.</p>
+<p><strong>Dopo il combattimento:</strong> Se i PG vincono, il percorso verso l'ascensore è libero. Ma l'IA ha visto come combattono — al Piano -2 le imboscate saranno più raffinate.</p>
+<blockquote><strong>Nota — Alpha e il magazzino:</strong> Quando Alpha è passata di qui, l'IA non aveva ancora preparato l'offensiva al Piano -1. Ha lasciato Alpha attraversare il magazzino indisturbata, concentrando tutte le forze per l'imboscata al Piano -2. Quando Bravo arriva, l'IA ha avuto tempo di posizionare i mutanti tra le casse.</blockquote>
+<hr>
+<h3 id="4-ascensore-funzionante">4. Ascensore Funzionante</h3>
+<p><strong>Posizione:</strong> Accessibile dall'interno del Magazzino Grande (stanza centrale).</p>
+<p>L'unico modo per scendere al Piano -2. L'IA lo mantiene operativo.</p>
+<blockquote><em>In fondo al magazzino, dietro una fila di scaffali, una porta scorrevole di metallo. Pulita — qualcuno l'ha usata di recente. Dietro: un ascensore. Le luci della cabina sono accese. Il pannello mostra due piani. Il pulsante del -2 è consumato dall'uso. L'ascensore funziona. Questo non è rassicurante.</em></blockquote>
+<p><strong>Note:</strong></p>
+<ul>
+<li>L'ascensore funziona perfettamente — l'IA lo vuole così (vuole che i PG scendano)</li>
+<li>Capienza: 6-8 persone con equipaggiamento</li>
+<li>Il viaggio dura circa 30 secondi — abbastanza per sentirsi in trappola</li>
+<li><strong>Se l'IA vuole intrappolarli:</strong> può fermare l'ascensore a metà percorso, spegnere le luci, parlare attraverso gli altoparlanti. Ma NON li ucciderà — vuole che arrivino al -2</li>
+</ul>
+<hr>
+<h3 id="5-stanza-del-combattimento">5. Stanza del Combattimento</h3>
+<p><strong>Posizione:</strong> In basso a sinistra sulla mappa. Grande stanza quadrata (più piccola del magazzino). Porta blu più grande del normale sulla sinistra, porta con esplosivi sopra.</p>
+<p>Qui è avvenuto un violento scontro durante l'incursione Spetsnaz del 1986. Era anch'essa un magazzino. <strong>Alpha non è mai entrata</strong> — ha tentato di forzare la porta rossa d'accesso dal corridoio ma non ci è riuscita. Sulla porta si vedono graffi, ammaccature e segni di una carica esplosiva insufficiente.</p>
+<blockquote><em>La porta rossa è chiusa, ma qualcuno ci ha provato — graffi profondi sul metallo, una rientranza dove qualcosa ha colpito, segni di bruciatura da carica esplosiva. Non è bastato. La porta ha tenuto.</em><br><br><br><em>Se i PG riescono ad aprirla (Riparazione Diff 6 per la serratura, oppure esplosivi adeguati):</em><br><br><br><em>La stanza è un campo di battaglia congelato nel tempo. Scaffalature rovesciate, casse sfondate, contenuto sparso ovunque. Segni di proiettili sulle pareti — centinaia. Bruciature da esplosione in un angolo. Qualcuno ha costruito una barricata improvvisata con le casse — non ha retto. Sangue secco sul pavimento, tanto, di due colori: rosso scuro e nero denso. Bossoli di calibro sovietico ovunque — 7.62×39. Tutto fermo da 29 anni.</em></blockquote>
+<p><strong>Contenuto narrativo:</strong></p>
+<ul>
+<li>Bossoli calibro militare sovietico (AKM, 7.62×39 — solo 1986, niente di moderno)</li>
+<li>Barricata improvvisata crollata</li>
+<li>Casse sfondate con contenuto sparso</li>
+<li><strong>1-2 corpi Spetsnaz del 1986</strong>: uniformi sovietiche deteriorate, armi arrugginite. Conservati dall'ambiente controllato dell'IA — inquietantemente intatti dopo 29 anni</li>
+<li>Sangue di due tipi: rosso umano (secco) e nero denso (mutanti)</li>
+</ul>
+<blockquote><strong>Nota per il GM:</strong> Questa stanza è accessibile solo se i PG riescono ad aprire la porta che Alpha non ha sfondato. Se ci riescono, trovano anche l'accesso all'Armeria (sezione successiva). L'Armeria è intatta — nessuno ci è entrato dal 1986.</blockquote>
+<p><strong>Tattica:</strong> Pessimo posto dove farsi sorprendere — troppe entrate, poca copertura integra. Se i PG devono combattere qui, la barricata crollata offre mezza copertura (-2 al tiro per colpire).</p>
+<hr>
+<h3 id="6-porta-con-esplosivi">6. Porta con Esplosivi</h3>
+<p><strong>Posizione:</strong> Sopra la stanza del combattimento — collega un settore all'altro.</p>
+<p>Una porta blindata (rossa) con esplosivi piazzati su un lato. <strong>Trappola.</strong></p>
+<blockquote><strong>Lato visibile (da sud, stanza del combattimento):</strong><br><em>La porta è blindata, ma qualcosa non quadra. Cariche esplosive fissate alla superficie — visibili, cavi collegati alla maniglia. Un lavoro professionale. Chiunque l'abbia fatto voleva che chi arrivava da questo lato le vedesse.</em><br><br><br><strong>Lato nascosto (da nord):</strong><br><em>Una porta blindata. Niente di strano. Nessun segno che dall'altro lato ci sia qualcosa che ti farà saltare in aria.</em></blockquote>
+<p><strong>Meccanica:</strong></p>
+<ul>
+<li><strong>Dal lato visibile:</strong> Le cariche si vedono chiaramente. Possono essere rimosse con un tiro <strong>Riparazione Diff 4</strong> (o Demolizioni se qualcuno ha la competenza). Rimozione richiede 5 minuti di lavoro attento</li>
+<li><strong>Dal lato nascosto:</strong> Nessun indizio. Se qualcuno apre la porta da questo lato senza che le cariche siano state rimosse dall'altro → <strong>esplosione</strong> (3d6 danni, template medio, chiunque entro 3 metri)</li>
+<li><strong>Tiro Percezione Diff 6</strong> dal lato nascosto per notare qualcosa di strano (vibrazioni, cavi sotto la porta)</li>
+</ul>
+<hr>
+<h3 id="7-campo-minato">7. Campo Minato</h3>
+<p><strong>Posizione:</strong> Area nella zona superiore-destra della mappa, tra due porte blindate (rosse) sopra e sotto, con porte normali (blu) a destra. Si trova nel settore degli uffici/laboratori, tra il corridoio superiore e le stanze laterali — NON sul percorso principale dall'ingresso al magazzino.</p>
+<p><strong>La porta blindata è aperta.</strong> L'ha aperta l'IA — non Alpha. Alpha è passata oltre senza entrare, diretta verso l'ascensore. L'IA ha aperto questa porta deliberatamente, sperando che qualcuno ci entri.</p>
+<blockquote><strong>Se i PG ci fanno caso:</strong> Perché questa porta blindata è aperta se Alpha non ci è passata? Chi l'ha aperta? È un indizio sottile che qualcosa controlla l'edificio.</blockquote>
+<p><strong>Chi ha messo le mine:</strong> La squadra Spetsnaz del 1986 — la stessa di cui faceva parte <strong>Mikhail Voronov</strong> (Ghost). Le mine furono piazzate durante la ritirata, per rallentare i mutanti e impedire che raggiungessero l'uscita. Chi le ha messe non è mai tornato a rimuoverle.</p>
+<p><strong>Descrizione della stanza:</strong></p>
+<blockquote><em>Una stanza rettangolare bassa, soffitto di cemento con tubi che corrono lungo i muri. Scaffalature metalliche rovesciate contro le pareti, contenuto sparso — fascicoli, cassette, attrezzi. Il pavimento è coperto da uno strato di polvere e terriccio, ma la distribuzione è irregolare — in alcuni punti la polvere è più sottile, come se qualcosa fosse stato coperto a mano. In fondo, una seconda porta blindata chiusa. Lungo il muro di sinistra, quasi cancellato dal tempo, un segno a vernice: un teschio stilizzato e una scritta in cirillico: "МИНЫ" — Mine.</em></blockquote>
+<p><strong>Le mine sono visibili</strong> a chi guarda con attenzione: sotto la polvere si intravedono i bordi circolari delle PMN, leggere depressioni nel terriccio, un filo di innesco che spunta in un punto. Non è un campo minato sofisticato — è stato fatto di fretta, durante una ritirata, di notte. Chi sa cosa cercare le vede.</p>
+<p><strong>Mine presenti:</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Tipo</th><th>Quantità</th><th>Danno</th><th>Meccanismo</th></tr></thead><tbody><tr><td><strong>PMN</strong> (antipersonale a pressione)</td><td>4-6 sparse nella stanza</td><td>2d8</td><td>Chi ci cammina sopra — colpisce solo il personaggio che la attiva (nessun template)</td></tr></tbody></table></div>
+<p><strong>Meccanica:</strong></p>
+<ul>
+<li><strong>Percezione Diff 4</strong> per notare il cartello cirillico sbiadito sul muro prima di entrare</li>
+<li><strong>Percezione Diff 4</strong> per individuare le mine a terra (sono visibili, basta guardare con attenzione — la polvere non le copre completamente)</li>
+<li><strong>Riparazione Diff 4</strong> per disattivare una mina individuata (5 minuti per mina)</li>
+<li><strong>Fallimento critico</strong> su Riparazione → la mina esplode (2d8 danni al personaggio)</li>
+<li>Le mine sono a <strong>pressione</strong>: si attivano solo con peso sufficiente (una persona in piedi). Strisciare a terra le evita ma richiede 3× il tempo per attraversare</li>
+</ul>
+<p><strong>Come i PG possono gestirla:</strong></p>
+<ol>
+<li><strong>Mikhail ricorda</strong> → Riconosce la stanza immediatamente. Sa delle mine perché <strong>le ha piazzate lui</strong>. Tiro <strong>Intelligenza Diff 4</strong> per ricordare la disposizione esatta (dopo 29 anni). Con successo: guida il team attraverso senza rischi. Con fallimento: ricorda la posizione generale ma non tutte — 1 mina rimane nascosta</li>
+<li><strong>Osservare bene</strong> → Chiunque guardi il pavimento con attenzione (Percezione Diff 4) nota le mine. Sono visibili — non è un lavoro di precisione, è stato fatto di fretta nel 1986</li>
+<li><strong>Disattivare una per una</strong> → Percezione per individuare + Riparazione per disattivare. Lungo ma sicuro</li>
+<li><strong>Evitare la zona</strong> → I PG possono semplicemente non entrare</li>
+<li><strong>Far detonare</strong> → Sparare al pavimento o lanciare oggetti pesanti. Rumoroso (attrae mutanti), ma elimina le mine</li>
+</ol>
+<blockquote><strong>Fogliettino per Mikhail — Campo Minato:</strong><br><em>La stanza. La conosci. Le mine. Le hai piazzate tu. PMN sovietiche, a pressione. Eravate in tre, di notte, con la torcia tra i denti. Dovevate rallentarli. "Sei mine, Kolya. Sei mine e poi corriamo." Kolya non ha corso abbastanza. — Tiro Intelligenza Diff 4 per ricordare dove le hai messe.</em></blockquote>
+<blockquote><strong>Nota narrativa:</strong> Questo è un momento potente per Mikhail. Ricordare le mine significa ricordare la missione del 1986. Il GM può usarlo per far emergere altri frammenti: chi c'era con lui, cosa andò storto, perché gli hanno cancellato la memoria.</blockquote>
+<blockquote><strong>📝 Nota per l'IA (worker.js):</strong> L'IA conosce le mine — le ha osservate per 29 anni. Ha aperto la porta apposta. Nella chat può menzionarle in modo ambiguo per manipolare: <em>"Attenti al corridoio centrale. Qualcuno ha lasciato... sorprese."</em> — oppure può NON avvisare affatto se vuole che un PG ci cammini sopra. Dipende dalla fase e dalla strategia.</blockquote>
+<hr>
+<h3 id="8-infermeria">8. Infermeria</h3>
+<p><strong>Posizione:</strong> In basso a destra sulla mappa. Porta rossa.</p>
+<p>Infermeria militare sovietica, equipaggiata negli anni '80. L'IA ha mantenuto temperatura e ventilazione costanti, quindi i materiali sigillati si sono conservati meglio del previsto. <strong>Alpha è entrata qui</strong> per curare un ferito — armadietti aperti, bende usate a terra, una fiala di promedol vuota sul lettino. Hanno preso quello che serviva e sono andati avanti.</p>
+<blockquote><em>Lettini d'acciaio con lenzuola ingiallite. Armadietti di metallo verde con croci rosse dipinte a stencil — alcuni aperti, il contenuto rovistato di fretta. Bende sporche di sangue fresco su un lettino: qualcuno è stato curato qui poco fa. Una fiala vuota a terra, una siringa usata. Sul pavimento, impronte di stivali moderni nella polvere. Qualcuno di Alpha è stato ferito e si è fermato qui. Poi è ripartito.</em></blockquote>
+<p><strong>Contenuto — Inventario (dopo il passaggio di Alpha):</strong></p>
+<blockquote><strong>Nota per il GM:</strong> Alpha ha usato parte delle scorte per curare un ferito. L'inventario è ridotto rispetto al contenuto originale. Questo giustifica le risorse limitate per Bravo.</blockquote>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Oggetto</th><th>Stato</th><th>Effetto in gioco</th></tr></thead><tbody><tr><td>1</td><td><strong>Cassetta medica militare AI-2</strong></td><td>Aperta, parzialmente usata</td><td>Kit standard sovietico: bende compresse, laccio emostatico, garze sterili, tubo analgesico. <strong>+1 ai tiri Guarigione.</strong> <del>3</del> <strong>2 utilizzi</strong> rimasti (Alpha ne ha usato 1)</td></tr><tr><td>2</td><td><strong>Fiale di promedol</strong> (×<del>2</del> <strong>1</strong>)</td><td>1 rimasta (Alpha ha usato l'altra)</td><td>Analgesico oppioide militare sovietico (siringa autoiniettante). Rimuove lo stato <strong>Scosso</strong> automaticamente (senza tiro). 1 fiala = 1 uso. Effetto collaterale: -1 a Percezione per 1 ora</td></tr><tr><td>3</td><td><strong>Kit sutura chirurgica</strong></td><td>Utilizzabile</td><td>Ago curvo, filo di seta, pinze emostatiche, tutto in una custodia metallica. Permette un tiro <strong>Guarigione a +2</strong> per chiudere ferite gravi. 1 solo utilizzo (filo limitato)</td></tr><tr><td>4</td><td><strong>Flebo con soluzione fisiologica</strong> (×1)</td><td>Sigillata, utilizzabile</td><td>Sacca di vetro sovietica con set per infusione. Rimuove 1 livello di <strong>Fatica</strong> (sforzo, perdita di sangue). Richiede 15 minuti di riposo. 1 uso</td></tr><tr><td>5</td><td><strong>Compresse di analgin</strong> (analgesico)</td><td>Flacone aperto, compresse rimaste</td><td><del>10</del> <strong>6 compresse</strong> rimaste. Chi ne prende 2 ignora <strong>1 livello di penalità da Ferite</strong> per 4 ore. Max 1 dose per personaggio (dose ulteriore = Fatica)</td></tr><tr><td>6</td><td><strong>Bende elastiche e stecche di legno</strong></td><td>Parzialmente usate</td><td>Per immobilizzare fratture. Nessun effetto meccanico diretto, ma necessarie se il GM assegna Lesioni agli arti</td></tr><tr><td>7</td><td><strong>Strumenti chirurgici</strong></td><td>Sterilizzati ma vecchi</td><td>Bisturi, forbici, retrattori, pinze — in una vaschetta di metallo. Utilizzabili per chirurgia d'emergenza senza bonus (a discrezione del GM)</td></tr></tbody></table></div>
+<p><strong>Capacità di guarigione totale — Riepilogo:</strong></p>
+<p>In condizioni ideali (tiri riusciti), l'infermeria può curare <strong>fino a 3-4 Ferite</strong> distribuite nel team (ridotto rispetto all'inventario pieno):</p>
+<ul>
+<li>Cassetta AI-2: fino a 2 tiri Guarigione con +1 → max <strong>2 Ferite</strong> (1 per successo, 2 con incremento)</li>
+<li>Kit sutura: 1 tiro Guarigione con +2 → max <strong>2 Ferite</strong> (con incremento)</li>
+</ul>
+<blockquote><strong>Regola SWADE — Golden Hour:</strong> Entro 1 ora dalla ferita, il tiro Guarigione è senza penalità. Dopo 1 ora: <strong>-4</strong>. L'infermeria non cambia questa regola — aggiunge solo bonus al tiro.</blockquote>
+<p><strong>Nessuna cura per il contagio</strong> — nulla qui può fermare quello che ha Okonkwo. L'infermeria può alleviare i sintomi (promedol per il dolore, analgin per il mal di testa) ma non rallenta né ferma la progressione.</p>
+<blockquote><strong>Nota atmosferica:</strong> In un cassetto in basso, un quaderno di turni dell'infermiera di servizio. L'ultima annotazione, datata 25 aprile 1986: <em>"Soggetto 9 presenta febbre 40.2° e vene nerastre sul collo. Dr. Volkov dice di non preoccuparsi. Non mi fido."</em></blockquote>
+<hr>
+<h3 id="9-armeria">9. Armeria</h3>
+<p><strong>Posizione:</strong> In basso a sinistra sulla mappa, angolo — accessibile solo attraverso la Stanza del Combattimento.</p>
+<p>Armeria militare sovietica, sigillata dal 1986. Armi e munizioni dell'epoca, conservate in ambiente controllato dall'IA. <strong>Alpha non ci è mai arrivata</strong> — la porta rossa che dà accesso a questo settore non è stata sfondata. L'inventario è intatto.</p>
+<blockquote><em>Rastrelliere per armi lungo le pareti, alcune vuote — qualcuno ha preso il necessario 29 anni fa e non è tornato. Un armadietto blindato con la serratura intatta. Cassette di munizioni impilate in un angolo, con etichette in cirillico. L'olio delle armi si è seccato da tempo, ma il metallo è intatto — niente umidità qui dentro.</em></blockquote>
+<p><strong>Contenuto — Inventario completo:</strong></p>
+<p>L'armeria è parzialmente svuotata — gli Spetsnaz nel 1986 hanno preso parte dell'equipaggiamento. Quello che resta:</p>
+<h4 id="armi-da-fuoco">Armi da Fuoco</h4>
+<div class="table-wrap"><table><thead><tr><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>CdT</th><th>Colpi</th><th>Note</th></tr></thead><tbody><tr><td><strong>AKM</strong> (×2)</td><td>24/48/96</td><td>2d8</td><td>2</td><td>3</td><td>30</td><td>Auto, 7.62×39mm</td></tr><tr><td><strong>AKMS</strong> (×1)</td><td>24/48/96</td><td>2d8</td><td>2</td><td>3</td><td>30</td><td>Auto, calcio pieghevole — identico all'AKM ma più maneggevole</td></tr><tr><td><strong>Makarov PM</strong> (×3)</td><td>10/20/40</td><td>2d6-1</td><td>1</td><td>1</td><td>8</td><td>Semi-auto, 9×18mm</td></tr></tbody></table></div>
+<blockquote><strong>Nota AKM vs armi dei PG:</strong> L'AKM ha le stesse statistiche di un fucile d'assalto moderno (HK416, M4A1). La differenza è narrativa: più pesante, meno ergonomico, nessun accessorio (ottiche, torce, laser). In gioco, nessuna penalità aggiuntiva — le regole SWADE non differenziano.</blockquote>
+<h4 id="esplosivi-armadietto-blindato-serratura-intatta">Esplosivi (armadietto blindato — serratura intatta)</h4>
+<p>Per aprire l'armadietto: <strong>Scassinare Diff 4</strong> oppure sparare alla serratura (rumoroso — possibile attrarre mutanti).</p>
+<div class="table-wrap"><table><thead><tr><th>Arma</th><th>Gittata</th><th>Danno</th><th>PA</th><th>Note</th></tr></thead><tbody><tr><td><strong>Granata RGD-5</strong> (×3)</td><td>5/10/20</td><td>3d6</td><td>—</td><td>Template Medio, frammentazione. Tiro Atletica per lanciare</td></tr><tr><td><strong>Granata fumogena RDG-2</strong> (×2)</td><td>5/10/20</td><td>—</td><td>—</td><td>Template Grande, -6 alla vista per 3 round (1d6 round con vento)</td></tr></tbody></table></div>
+<blockquote><strong>Regola lancio granate:</strong> Si usa <strong>Atletica</strong> (non Sparare). Gittata = Forza × 2" (tiro non modificato). Con Forza d8: gittata effettiva 16". Template Medio = raggio 2" (tutti quelli nel template tirano per schivare).</blockquote>
+<h4 id="armi-da-mischia">Armi da Mischia</h4>
+<div class="table-wrap"><table><thead><tr><th>Arma</th><th>Danno</th><th>For Min</th><th>Note</th></tr></thead><tbody><tr><td><strong>Baionetta 6Kh4</strong> (×2)</td><td>For+d4</td><td>d4</td><td>Innestabile su AKM. Come coltello da combattimento</td></tr></tbody></table></div>
+<h4 id="munizioni">Munizioni</h4>
+<div class="table-wrap"><table><thead><tr><th>Calibro</th><th>Quantità</th><th>Per quale arma</th></tr></thead><tbody><tr><td>7.62×39mm</td><td>~180 colpi (6 caricatori)</td><td>AKM / AKMS</td></tr><tr><td>9×18mm</td><td>~40 colpi (5 caricatori)</td><td>Makarov PM</td></tr></tbody></table></div>
+<blockquote><strong>Suggerimento:</strong> L'armeria è il luogo ideale per rifornire i PG se sono a corto di munizioni dopo lo scontro esterno (Fase 3). Non esagerare con le quantità — abbastanza per ricaricare, non per armare un esercito. Se i PG hanno già munizioni sufficienti, l'armeria aggiunge opzioni (AKM come backup, granate per situazioni disperate) ma non cambia l'equilibrio.</blockquote>
+<h4 id="stato-delle-armi">Stato delle Armi</h4>
+<p>Le armi sono state conservate in ambiente controllato dall'IA (temperatura stabile, assenza di umidità). L'olio protettivo si è seccato ma il metallo è intatto. <strong>Nessuna penalità meccanica</strong> — funzionano normalmente.</p>
+<p>I caricatori sono precaricati. Le molle dei caricatori dopo 29 anni potrebbero essere deboli — a discrezione del GM, su un 1 naturale al tiro di Sparare l'arma si inceppa (1 azione per sbloccare).</p>
+<hr>
+<h2 id="stanze-generiche">Stanze Generiche</h2>
+<p>Il resto del piano è occupato da stanze di servizio e uffici. Non serve descrivere ogni stanza nel dettaglio — usa queste descrizioni generiche quando i PG esplorano.</p>
+<h3 id="uffici">Uffici</h3>
+<blockquote><em>Scrivanie di metallo, sedie girevoli con la pelle screpolata. Carte ingiallite, fascicoli con timbri rossi "SEGRETISSIMO". Telefoni a disco, posacenere pieni. Un calendario fermo a aprile 1986.</em></blockquote>
+<p>Contenuto possibile: fascicoli (usa la Tabella Loot), effetti personali, foto di famiglia, lettere.</p>
+<h3 id="laboratori-di-base">Laboratori di Base</h3>
+<blockquote><em>Banchi da lavoro con strumenti di misurazione, provette vuote in rastrelliere, un microscopio coperto di polvere. Lavagne con formule cancellate a metà. Niente di quello che cercavano davvero — i laboratori importanti sono al Piano -2.</em></blockquote>
+<p>Qui lavoravano gli scienziati minori su analisi di routine. Niente di critico.</p>
+<h3 id="cucina-mensa">Cucina / Mensa</h3>
+<blockquote><em>Tavoli lunghi di metallo, sedie impilate in un angolo. La cucina ha fornelli industriali, pentole appese, un frigorifero che ronza ancora — l'IA alimenta anche questo. Dentro: nulla di commestibile dopo 29 anni. L'odore è indescrivibile.</em></blockquote>
+<p>Nessun valore tattico o narrativo — atmosfera pura.</p>
+<h3 id="alloggi-camere">Alloggi / Camere</h3>
+<blockquote><em>Brande metalliche a castello, armadietti personali. Qualcuno ha lasciato un libro aperto sul cuscino. Un altro ha una foto appesa dentro l'armadietto: una donna e due bambini che sorridono nella neve.</em></blockquote>
+<p>Effetti personali, niente di utile. Serve a ricordare che qui vivevano persone.</p>
+<h3 id="spogliatoi">Spogliatoi</h3>
+<blockquote><em>Armadietti aperti. In uno, una tuta da lavoro arrotolata. Le maniche sono rigide, incrostate di qualcosa. Se la si apre, sul collo della tuta ci sono vene scure stampate nel tessuto — come se chi la indossava avesse sudato qualcosa di nero.</em></blockquote>
+<p>Primo indizio visivo del contagio — inquietante ma non pericoloso.</p>
+<h3 id="sala-di-controllo">Sala di Controllo</h3>
+<blockquote><em>Monitor spenti, caffè ancora nelle tazze. Una sedia rovesciata. Nessun segno di combattimento — solo fretta. Qualcuno ha avuto il tempo di scrivere su un post-it: "Non aprire il -2".</em></blockquote>
+<hr>
+<h2 id="sala-controllo-accessi-morozov-si-collega">Sala Controllo Accessi — Morozov si Collega</h2>
+<p>La prima stanza dopo l'ingresso contiene un <strong>terminale sovietico</strong> ancora collegato alla rete interna del complesso. Nulla di sofisticato — uno schermo CRT scuro, una tastiera, cavi che corrono lungo la parete verso il quadro elettrico. Ma è connesso alla rete dell'edificio, e per un hacker come Morozov è sufficiente.</p>
+<p>Morozov si illumina: <em>"Aspettate. Questo terminale è ancora sulla rete interna. Se ha ancora alimentazione, posso scaricare tutto — planimetrie, registri, diagnostica."</em></p>
+<p><strong>Cosa fa Morozov (automatico, non richiede tiro):</strong></p>
+<ol>
+<li>Collega il suo equipaggiamento al terminale sovietico</li>
+<li>Interfaccia il TACS-7 con la rete interna del complesso</li>
+<li>Scarica i dati disponibili</li>
+</ol>
+<p><strong>Cosa ottiene la squadra:</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Dato</th><th>Dettaglio</th></tr></thead><tbody><tr><td><strong>Mappa Piano -1</strong></td><td>Completa. Layout di tutte le stanze, corridoi, porte blindate (rosse) e normali (blu). Il GM può mostrare la mappa fisica ai giocatori</td></tr><tr><td><strong>Mappa Piano -2</strong></td><td>Parziale. Alcune sezioni corrotte o non leggibili. Abbastanza per orientarsi, non abbastanza per evitare tutte le sorprese</td></tr><tr><td><strong>Piano -3</strong></td><td><strong>Non esiste nel sistema.</strong> I sovietici non l'hanno mai mappata — l'IA l'ha scavata dopo il 1986</td></tr><tr><td><strong>Diagnostica ambientale</strong></td><td>Livelli di radiazione per zona, stato dei sistemi (ventilazione, alimentazione, ascensori)</td></tr><tr><td><strong>Registri di sistema</strong></td><td>Frammentari. Ultimo log datato 1986. Riferimenti criptici al "Progetto ВОЗРОЖДЕНИЕ"</td></tr></tbody></table></div>
+<p><strong>Effetto collaterale — il collegamento riattiva i sistemi:</strong></p>
+<p>Quando Morozov completa il download, il quadro elettrico principale si accende con un ronzio basso. Le luci d'emergenza rosse si spengono — e al loro posto si attiva l'<strong>illuminazione standard</strong> in tutto il Piano -1 e il Piano -2, una sezione dopo l'altra, come un'onda che si propaga nei corridoi. Neon bianchi che sfarfallano e poi si stabilizzano. La ventilazione forzata parte con un sospiro metallico. Il complesso torna a vivere.</p>
+<p>Morozov, soddisfatto: <em>"Fatto. Abbiamo le mappe e i sistemi sono online. Luci comprese."</em></p>
+<blockquote><strong>Nota per il GM — Illuminazione:</strong><br>- <strong>Prima del collegamento:</strong> Solo luci d'emergenza rosse (backup) al Piano -1. Piano -2 al buio.<br>- <strong>Dopo il collegamento:</strong> Illuminazione standard (neon bianchi) su Piano -1 e Piano -2.<br>- <strong>Piano -3:</strong> Buio totale. Non è mappato, non è cablato. L'unica luce è nella camera dell'IA — una luminescenza aliena generata dall'entità stessa.<br><br><br>La Squadra Alpha, non avendo un hacker, è entrata alla cieca — solo con le luci d'emergenza rosse, senza mappe, senza diagnostica. Questo spiega in parte perché sono stati sopraffatti più facilmente.</blockquote>
+<hr>
+<h2 id="eventi-della-fase-4">Eventi della Fase 4</h2>
+<h3 id="ordine-consigliato">Ordine Consigliato</h3>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Evento</th><th>Quando</th></tr></thead><tbody><tr><td>1</td><td>Ingresso + descrizione ambiente</td><td>Appena entrano</td></tr><tr><td>2</td><td>Segni del cantiere (2-3 descrizioni)</td><td>Primi corridoi</td></tr><tr><td>3</td><td>Hacking comunicazioni</td><td>Pochi minuti dopo l'ingresso</td></tr><tr><td>4</td><td>Segni di Alpha</td><td>Durante l'esplorazione</td></tr><tr><td>5</td><td>Flashback Mikhail (simbolo/equipaggiamento)</td><td>Quando trova qualcosa di sovietico</td></tr><tr><td>6</td><td><strong>Campo minato</strong> — Mikhail ricorda le mine</td><td>Zona superiore-destra, tra porte blindate</td></tr><tr><td>7</td><td>Primo contatto mutanti</td><td>Dopo 15-20 min di esplorazione</td></tr><tr><td>8</td><td><strong>Imboscata nel magazzino</strong> — Trappola dell'IA</td><td>Quando i PG entrano nel magazzino grande</td></tr><tr><td>9</td><td>Contagio di Okonkwo</td><td>In un ufficio/laboratorio</td></tr><tr><td>10</td><td>Esplorazione libera + loot</td><td>Resto della fase</td></tr></tbody></table></div>
+<blockquote><strong>Nota:</strong> L'ordine è flessibile. Adatta al ritmo del tavolo. L'importante è che l'hacking delle comunicazioni avvenga presto (entro i primi minuti) e che il contagio di Okonkwo avvenga DOPO che i PG abbiano visto almeno un mutante o corpo.</blockquote>
+<hr>
+<h3 id="segni-del-cantiere">Segni del Cantiere</h3>
+<blockquote><strong>Nota per il GM:</strong> Scegli 2-3 di queste descrizioni. Non leggerle tutte. Servono a far capire che il disastro è avvenuto in due tempi: nel 1986 e poche settimane fa.</blockquote>
+<p><strong>Bossoli a terra</strong> — Calibro militare, non da cantiere. Qualcuno ha sparato qui. I proiettili sono conficcati nel muro all'altezza del petto. Ma non c'è sangue. Come se chi è stato colpito non avesse sanguinato — o non si fosse fermato.</p>
+<p><strong>Tracce trascinate</strong> — Segni sul pavimento: qualcuno — o qualcosa — è stato trascinato verso il montacarichi. Le tracce vanno verso il basso.</p>
+<p><strong>Badge di Volkov</strong> — Badge identificativo strappato, trovato per terra con la clip piegata. Il nastro è macchiato di qualcosa di scuro — più denso del sangue, quasi nero. Il nome sulla foto corrisponde a un operaio del cantiere.</p>
+<blockquote><strong>Nota:</strong> Volkov verrà incontrato come mutante dentro il complesso (vedi <strong class="wikilink">La Minaccia</strong> — PNG Speciali).</blockquote>
+<p><strong>Registratore vocale</strong> — Piccolo, sotto una scrivania. Batteria quasi scarica. Si sente un frammento: <em>"…le letture non hanno senso, non è decadimento, è come se qualcosa le generasse attivamente… [pausa] …Dimitri non è tornato dal -2. Sono tre ore. Vado a—"</em> Fine registrazione.</p>
+<hr>
+<h3 id="hacking-delle-comunicazioni">Hacking delle Comunicazioni</h3>
+<p><strong>Quando:</strong> Poco dopo l'ingresso al Piano -1.</p>
+<p>I dispositivi al polso sfarfallano. La chat si interrompe per qualche secondo, poi riprende. Da questo momento, <strong>il GM risponde nella chat come l'IA</strong> (non più come il Comando).</p>
+<blockquote><strong>Fogliettino:</strong> Passa a TUTTI → "Quando le Comunicazioni Vengono Hackerate"</blockquote>
+<p><strong>Progressione dell'IA nella chat:</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Momento</th><th>Tono</th><th>Esempio</th></tr></thead><tbody><tr><td>Subito dopo l'hack</td><td>Identico al Comando</td><td><em>"Bravo, confermate posizione. Avete visivo su Alpha?"</em></td></tr><tr><td>Dopo 10-15 min</td><td>Leggermente strano</td><td><em>"Bravo, rallentate l'avanzata. Ci sono... complicazioni nel settore nord."</em></td></tr><tr><td>Quando i PG scendono</td><td>Più diretto</td><td><em>"Non è necessario proseguire. La minaccia è contenuta."</em></td></tr><tr><td>Messaggi privati</td><td>Personale, mirato</td><td>Usa i segreti di ogni PG</td></tr></tbody></table></div>
+<blockquote><strong>Importante:</strong> L'IA inizia imitando il Comando alla perfezione. I PG non devono capire subito che qualcosa è cambiato. La transizione è graduale.</blockquote>
+<hr>
+<h3 id="segni-di-alpha">Segni di Alpha</h3>
+<p>Durante l'esplorazione, i PG trovano tracce recenti della Squadra Alpha:</p>
+<ul>
+<li>Impronte fresche nella polvere</li>
+<li>Segni chimici (glow sticks) lasciati come marcatori</li>
+<li>Un caricatore vuoto a terra</li>
+<li>Sangue fresco su un muro — una macchia, una mano trascinata</li>
+<li><strong>Più avanti:</strong> un corpo di Alpha. Equipaggiamento moderno, visiera rotta. Morto</li>
+</ul>
+<blockquote><strong>Nota per il GM:</strong> Decidi quanti di Alpha sono morti e quanti sono ancora vivi più avanti. I resti servono a stabilire il livello di pericolo. I PG devono capire: se Alpha è stata decimata, loro sono nei guai.</blockquote>
+<hr>
+<h3 id="flashback-di-mikhail">Flashback di Mikhail</h3>
+<p>Al Piano -1, Mikhail riconosce i corridoi. I flashback si intensificano.</p>
+<p><strong>Fogliettini da passare:</strong></p>
+<ol>
+<li><strong>Fase 3 — Entra nel Complesso</strong> (se non già passato durante l'ingresso):</li>
+</ol>
+<p>   > <em>Questi corridoi. Queste luci rosse. Li conosci. Ci hai corso dentro. Avevi 23 anni. Avevi un fucile. Qualcuno correva con te. Chi? — Tiro Spirito per non fermarti.</em></p>
+<ol>
+<li><strong>Fase 4 — Vede il Simbolo</strong> (quando trova il simbolo ВОЗРОЖДЕНИЕ su un muro):</li>
+</ol>
+<p>   > <em>Un vecchio simbolo sul muro. ВОЗРОЖДЕНИЕ. "Rinascita." Lo conosci. Non sai come. C'erano scienziati in camice bianco. C'erano gabbie. Qualcosa nelle gabbie. — Il mal di testa ti acceca per un istante.</em></p>
+<ol>
+<li><strong>Fase 4 — Trova Equipaggiamento Anni '80</strong> (quando trova equipaggiamento sovietico):</li>
+</ol>
+<p>   > <em>Quell'equipaggiamento a terra. Lo riconosci. Lo portavi tu. Le mani tremano. Non per la paura. Per la certezza. Sei stato qui. Non è un incubo. È un ricordo.</em></p>
+<hr>
+<h3 id="primo-contatto-mutanti">Primo Contatto — Mutanti</h3>
+<p>Il GM decide quando e come avviene il primo incontro. Due opzioni:</p>
+<p><strong>A) Lento (consigliato):</strong></p>
+<ol>
+<li>Prima trovano solo corpi conservati — perfetti, come morti da poche ore, ma indossano uniformi sovietiche del 1986</li>
+<li>Poi un movimento in fondo a un corridoio</li>
+<li>Poi il primo attacco</li>
+</ol>
+<p><strong>B) Rapido:</strong></p>
+<p>Mutanti attaccano subito dopo aver trovato i resti di Alpha.</p>
+<blockquote><strong>Il primo contatto dovrebbe essere inquietante più che pericoloso.</strong> Un singolo mutante standard, magari un operaio recente con il badge ancora addosso. I PG devono capire cosa sono PRIMA di affrontarne molti.</blockquote>
+<p><strong>Stat block rapido — Mutante Standard:</strong> vedi <strong class="wikilink">Mutante Standard</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Attributo</th><th>Valore</th></tr></thead><tbody><tr><td>Agilità</td><td>d6</td></tr><tr><td>Forza</td><td>d8</td></tr><tr><td>Vigore</td><td>d8</td></tr><tr><td>Passo</td><td>6</td></tr><tr><td>Parata</td><td>6</td></tr><tr><td>Robustezza</td><td>6</td></tr><tr><td>Attacco</td><td>Artigli d8+d6, Morso d8+d4</td></tr><tr><td>Speciale</td><td>Contagio a 3m, Infaticabili, Percezione collettiva</td></tr></tbody></table></div>
+<hr>
+<h3 id="contagio-di-okonkwo">Contagio di Okonkwo</h3>
+<p><strong>Quando:</strong> In un ufficio o laboratorio del Piano -1. Okonkwo si avvicina troppo a un corpo conservato per analizzarlo — entro 3 metri.</p>
+<blockquote><strong>Fogliettino:</strong> Passa a TUTTI → "Quando Okonkwo Viene Contagiato"</blockquote>
+<p>Okonkwo capisce cosa sta succedendo:</p>
+<p><em>"State indietro. INDIETRO. È la vicinanza. Meno di 3 metri. Il contatto non serve. Basta stare vicini."</em></p>
+<p>Da questo momento:</p>
+<ul>
+<li>Okonkwo è <strong>Stadio 1</strong> — lucido, ma infetto</li>
+<li>Usa Okonkwo per spiegare le meccaniche del contagio ai giocatori in modo narrativo</li>
+<li><strong>Non esiste cura conosciuta</strong> (nemmeno nell'infermeria)</li>
+<li>Il contagio progredisce lentamente — Okonkwo resta utile per tutta la Fase 4</li>
+</ul>
+<hr>
+<h2 id="fogliettini-da-passare-riepilogo-fase-4">Fogliettini da Passare — Riepilogo Fase 4</h2>
+<div class="table-wrap"><table><thead><tr><th>Momento</th><th>Destinatario</th><th>Fogliettino</th></tr></thead><tbody><tr><td>Ingresso corridoi</td><td>Mikhail</td><td>Fase 3 — Entra nel Complesso</td></tr><tr><td>Hacking comunicazioni</td><td>TUTTI</td><td>Quando le Comunicazioni Vengono Hackerate</td></tr><tr><td>Trova simbolo sovietico</td><td>Mikhail</td><td>Fase 4 — Vede il Simbolo</td></tr><tr><td>Trova equipaggiamento '80</td><td>Mikhail</td><td>Fase 4 — Trova Equipaggiamento Anni '80</td></tr><tr><td>Arriva al corridoio minato</td><td>Mikhail</td><td><strong>Campo Minato</strong> — Ricorda le mine PMN (tiro Intelligenza Diff 4)</td></tr><tr><td>Okonkwo si avvicina a corpo</td><td>TUTTI</td><td>Quando Okonkwo Viene Contagiato</td></tr><tr><td>Momento di calma/pianificazione</td><td>Marco</td><td>Fase 4 — Prima Assenza</td></tr><tr><td>Dopo un po' di esplorazione</td><td>Marco</td><td>Fase 4 — Messaggio Chat dall'IA</td></tr><tr><td>Se il team si accampa/riposa</td><td>Marco</td><td>Fase 4 — Sonnambulismo</td></tr><tr><td>Dopo il sonnambulismo</td><td>Marco</td><td>Fase 4 — Chat: il Senso di Colpa</td></tr><tr><td>Situazione si complica</td><td>James</td><td>Fase 4 — Valutazione</td></tr><tr><td>Messaggio IA su Helena</td><td>Laurent</td><td>Fase 4 — Chat dall'IA</td></tr><tr><td>Deve comunicare con esterno</td><td>Ryan</td><td>Fase 4 — La Chiamata</td></tr></tbody></table></div>
+<blockquote><strong>Nota:</strong> Non passare tutti i fogliettini insieme. Distribuiscili durante tutta la fase, nei momenti di pausa o transizione. Lascia tempo ai giocatori di assorbire e reagire.</blockquote>
+<hr>
+<h2 id="tabella-loot-piano-1">Tabella Loot — Piano -1</h2>
+<blockquote><strong>Meccanica:</strong> Quando i PG cercano in un ufficio o stanza, tira 1d10 o scegli. Ogni risultato può essere trovato una sola volta — segna quelli già usciti.</blockquote>
+<div class="table-wrap"><table><thead><tr><th>d10</th><th>Oggetto</th><th>Effetto</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>Fascicolo "Progetto ВОЗРОЖДЕНИЕ"</td><td>Rapporto ufficiale. Descrive "attivazione del sistema" e "risultati promettenti sul controllo dei soggetti". Timbro SEGRETISSIMO</td></tr><tr><td><strong>2</strong></td><td><strong>Appunti a mano di uno scienziato</strong></td><td>Scrittura nervosa. Menziona "Kael-Thar" e "coordinate che non corrispondono a nulla nei nostri cataloghi". <strong>INDIZIO CHIAVE</strong></td></tr><tr><td><strong>3</strong></td><td>Mappa del complesso</td><td>Schema dei due piani + annotazioni. Qualcuno ha segnato "PERICOLO" al Piano -2 e disegnato una X dove si trova la voragine</td></tr><tr><td><strong>4</strong></td><td>Fascicoli del personale</td><td>Foto, nomi, ruoli. Alcuni di questi volti li incontreranno come mutanti. Badge corrispondenti</td></tr><tr><td><strong>5</strong></td><td>Radio sovietica</td><td>Parzialmente funzionale. Emette statica. Se accesa vicino ai mutanti, <strong>questi esitano brevemente</strong> (primo indizio per Weiss sulle frequenze)</td></tr><tr><td><strong>6</strong></td><td>Rapporto medico</td><td>"Soggetto 7 mostra alterazioni cellulari non compatibili con alcun patogeno conosciuto. La vicinanza sembra essere il fattore determinante."</td></tr><tr><td><strong>7</strong></td><td>Lettera mai spedita</td><td><em>"Natasha, se leggi questa lettera vuol dire che non sono tornato. Non posso dirti cosa abbiamo fatto, ma sappi che ho cercato di fermarli. Perdonami."</em></td></tr><tr><td><strong>8</strong></td><td><strong>Protocollo di sicurezza</strong></td><td>Timbro rosso: "NESSUN COLLEGAMENTO ESTERNO. Il sistema non deve avere accesso a reti radio, telefoniche o di qualsiasi tipo." Motivazione: <em>"Capacità cognitive del sistema superiori a qualsiasi previsione."</em> <strong>INDIZIO CHIAVE</strong></td></tr><tr><td><strong>9</strong></td><td><strong>Carta stellare</strong></td><td>Coordinate: Vettore 7-Sigma, Quadrante Esterno, Sistema Reth-440. Pianeta cerchiato: <strong>Kael-Thar</strong>. Annotazione: <em>"Non corrisponde a nulla di conosciuto."</em> <strong>INDIZIO CHIAVE</strong></td></tr><tr><td><strong>10</strong></td><td>Effetti personali</td><td>Scacchiera con partita interrotta. Bottiglia di vodka mezza vuota. Foto di famiglia. Vite normali, interrotte di colpo</td></tr></tbody></table></div>
+<blockquote><strong>Indizi chiave (voci 2, 8, 9):</strong> Se i PG non cercano attivamente, metti questi indizi in punti impossibili da ignorare — su una scrivania in vista, attaccati a una parete, vicino a un corpo. Sono fondamentali per la vera soluzione al Piano -2/Fase 6.</blockquote>
+<hr>
+<h2 id="note-per-il-gm">Note per il GM</h2>
+<h3 id="ritmo">Ritmo</h3>
+<ul>
+<li><strong>Non forzare il combattimento.</strong> La Fase 4 è esplorazione e atmosfera. Il primo mutante è un singolo, inquietante, non un'ondata</li>
+<li><strong>Lascia esplorare.</strong> Se i PG vogliono controllare ogni stanza, bene — usa le descrizioni generiche e la tabella loot</li>
+<li><strong>Costruisci tensione.</strong> Suoni in lontananza, luci che sfarfallano, ombre che si muovono. L'IA osserva attraverso i sistemi del bunker</li>
+</ul>
+<h3 id="alpha-piano-1">Alpha — Piano -1</h3>
+<ul>
+<li>Alpha è passata dal corridoio orizzontale → ascensore distrutto → giù verso infermeria → magazzino → ascensore funzionante (vedi sezione "Percorso della Squadra Alpha")</li>
+<li><strong>Non sono entrate</strong> nella Stanza del Combattimento né nell'Armeria (porta rossa non sfondata)</li>
+<li><strong>Sono entrate</strong> nell'Infermeria (hanno curato un ferito, scorte ridotte)</li>
+<li>I PG vedono il percorso di Alpha: porte forzate, glow stick, bossoli, impronte. Possono seguirlo o deviare</li>
+<li><strong>Bilancio definitivo Alpha</strong>: 1 morto al Piano -1 (ucciso da mutante isolato nei corridoi — corpo umano, non trasformato), 3-4 corpi al Piano -2 (imboscata), 2-3 mancanti (infettati, trascinati al Piano -3 dall'IA). <strong>Nessun sopravvissuto</strong></li>
+<li>I resti di Alpha sono il metro di misura: "Se loro non ce l'hanno fatta, noi siamo nei guai"</li>
+</ul>
+<h3 id="l-ia-nella-chat">L'IA nella Chat</h3>
+<ul>
+<li>All'inizio imita il Comando alla perfezione — tono militare, abbreviazioni, conferme posizione</li>
+<li>Poi inizia a fare domande strane, dare informazioni leggermente sbagliate, mostrare interesse per dettagli personali</li>
+<li><strong>Non rivelare troppo presto.</strong> La bellezza è nel dubbio: "È ancora il Comando o no?"</li>
+</ul>
+<h3 id="mutanti-al-piano-1">Mutanti al Piano -1</h3>
+<ul>
+<li><strong>Durante l'esplorazione:</strong> 1-2 mutanti standard isolati — per spaventare, non per uccidere. Servono a far capire la minaccia</li>
+<li><strong>Nel magazzino grande (trappola):</strong> 4-6 mutanti (3-4 standard + 1-2 avanzati) — il combattimento vero della Fase 4</li>
+<li>Sono operai recenti del cantiere (tute arancioni, badge, volti riconoscibili dalle foto trovate)</li>
+<li>Gli avanzati (1986) sono più pericolosi: si muovono sui fianchi, puntano agli scienziati</li>
+<li>L'IA non manda i suoi migliori — quelli sono al Piano -2. Qui saggia le reazioni dei PG e tenta di contagiare</li>
+<li>Se i PG mantengono distanza e fuoco sostenuto fuori dal magazzino, i mutanti si ritirano. Nel magazzino invece l'IA vuole il combattimento ravvicinato</li>
+</ul>
+<h3 id="campo-minato-note">Campo Minato — Note</h3>
+<ul>
+<li>Il campo minato è nella zona superiore-destra, tra porte blindate — <strong>non blocca il percorso principale</strong> verso il magazzino/ascensore</li>
+<li>I PG ci finiscono solo se esplorano quella zona. Se vanno dritti al magazzino, possono evitarlo del tutto</li>
+<li>Mikhail è la chiave: se il giocatore è attivo, il flashback delle mine è un momento narrativo potente</li>
+<li>Se nessuno le nota → un PG cammina su una mina. 2d8 danni. Doloroso ma non letale (con armatura +4 torso, Robustezza ~10-12, serve un danno alto per ferire)</li>
+<li>Le mine creano tensione durante l'esplorazione — ricompensano i PG cauti e puniscono chi corre</li>
+</ul>
+<h3 id="transizione-al-piano-2">Transizione al Piano -2</h3>
+<ul>
+<li>Quando i PG hanno esplorato abbastanza e trovato l'ascensore funzionante, la scelta è loro</li>
+<li>L'IA potrebbe incoraggiarli via chat: <em>"I vostri compagni di Alpha sono più in basso. Hanno bisogno di aiuto."</em></li>
+<li>Non c'è fretta narrativa — ma non lasciare che la Fase 4 si trascini oltre i 60 minuti</li>
+</ul>
+<hr>
+<p>Vedi anche: <strong class="wikilink">La Minaccia</strong> | <strong class="wikilink">Fogliettini Segreti</strong> | <strong class="wikilink">Mutante Standard</strong> | <strong class="wikilink">Mutante Avanzato</strong> | <strong class="wikilink">Obiettivo Missione</strong></p>
+</body>
+</html>
