@@ -37,7 +37,7 @@
   }  /* Monitor image as background */
   .monitor-bg{
     position:absolute;inset:0;z-index:20;
-    background:url('Sfondo.png') center/contain no-repeat;
+    /* immagine caricata via <img> dentro il div */
     pointer-events:none;
   }
 
@@ -271,7 +271,7 @@
   </div>
 
   <!-- Monitor frame ON TOP -->
-  <div class="monitor-bg"></div>
+  <div class="monitor-bg"><img src="https://mkd.sx/IA/Sfondo.png" style="width:100%;height:100%;object-fit:contain;" alt=""></div>
 
   <!-- LEDs on top of everything -->
   <div class="led led-net" id="ledNet"></div>
@@ -464,6 +464,22 @@ document.getElementById('soundInit').addEventListener('click',function(){
   inputEl=document.getElementById('termInput');
   setTimeout(function(){startBoot();},1500);
 });
+
+// ?skip — salta intro, va diretto all'input
+var params=new URLSearchParams(window.location.search);
+if(params.has('skip')){
+  document.getElementById('soundInit').classList.add('hidden');
+  var mon=document.getElementById('mon');
+  mon.style.transition='none';
+  mon.style.opacity='1';
+  mon.style.transform='scale(1)';
+  mon.classList.add('reveal');
+  outputEl=document.getElementById('output');
+  inputEl=document.getElementById('termInput');
+  document.getElementById('inputLine').style.display='flex';
+  inputEl.focus();
+  if(!params.has('nopoll'))startDirectivePolling();
+}
 
 function addLine(text,cls){
   var d=document.createElement('div');
