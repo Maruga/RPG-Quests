@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Savage/Manovre di Combatimento.md",
+                "file": "Savage/Savage Worlds - Quick Reference GM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Manovre di Combatimento"
+              "title": "Savage Worlds - Quick Reference GM"
             }
           }
         ]
@@ -227,6 +227,9 @@
   },
   "active": "5d815e862880f16f",
   "lastOpenFiles": [
+    "Savage/Armi e Manovre.md",
+    "Savage/Savage Worlds - Quick Reference GM.md",
+    "Savage/Manovre di Combatimento.md",
     "Savage/Regole.md",
     "Savage/Operazione Sarcofago/Html/uno.html",
     "Savage/Operazione Sarcofago/Html/r.html",
@@ -243,7 +246,6 @@
     "Savage/Operazione Sarcofago/Html/Piano_Meno_Tre.md",
     "Savage/Operazione Sarcofago/Html/Piano_Meno_Due.md",
     "Savage/Operazione Sarcofago/Html/Regole.md",
-    "Savage/Manovre di Combatimento.md",
     "Savage/Operazione Sarcofago/Piano_Meno_Tre.md",
     "Savage/Operazione Sarcofago/Piano_Meno_Due.md",
     "Savage/Operazione Sarcofago/Piano_Meno_Uno.md",
@@ -270,7 +272,6 @@
     "Savage/Operazione Sarcofago/Fogliettini/TUTTI/02_Okonkwo_Contagiato.md",
     "Savage/Operazione Sarcofago/Fogliettini/TUTTI/01_Comunicazioni_Hackerate.md",
     "Savage/Operazione Sarcofago/Fogliettini/IT_Marco/00_Foglio_Personale.md",
-    "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/00_Foglio_Personale.md",
-    "Savage/Operazione Sarcofago/Fogliettini/US_Ryan/02_F3_Opportunita_Campione.md"
+    "Savage/Operazione Sarcofago/Fogliettini/FR_Laurent/00_Foglio_Personale.md"
   ]
 }
