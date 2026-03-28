@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Fogliettini — Operazione Sarcofago</title>
+<style>
+  @media print {
+    @page { margin: 1.5cm; }
+    body { margin: 0; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    padding: 1.5cm;
+  }
+  .group-header {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 14px 0 8px;
+    letter-spacing: 2px;
+  }
+  .slip {
+    position: relative;
+    padding: 10px 14px;
+    page-break-inside: avoid;
+  }
+  .recipient {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #555;
+  }
+  .separator {
+    text-align: center;
+    color: #999;
+    font-size: 9pt;
+    padding: 6px 0;
+  }
+  .h1 { font-size: 13pt; font-weight: bold; padding: 4px 0 2px; }
+  .h2 { font-size: 11pt; font-weight: bold; padding: 3px 0 2px; }
+  .h3 { font-size: 10pt; font-weight: bold; padding: 2px 0 1px; }
+  .line { padding: 1px 0; }
+  .quote { padding: 1px 0 1px 12px; font-style: italic; font-size: 10pt; }
+  .li { padding: 1px 0 1px 8px; }
+  .li::before { content: "• "; }
+  .spacer { height: 4px; }
+</style>
+</head>
+<body>
+<div class="group-header">TUTTI</div>
+<div class="slip"><div class="recipient">TUTTI</div>
+<div class="line">A TUTTI</div>
+<div class="line">Il dispositivo al polso sfarfalla.</div>
+<div class="line">La chat con il Comando si è interrotta. Poi riprende.</div>
+<div class="line">Qualcosa è cambiato.</div>
+<div class="line">Il tono? La formattazione?</div>
+<div class="line">O forse è solo la vostra immaginazione.</div>
+<div class="line">Il Comando è ancora il Comando?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">TUTTI</div>
+<div class="line">A TUTTI</div>
+<div class="line">Dr. Okonkwo si è avvicinato troppo a un corpo per analizzarlo.</div>
+<div class="line">Nausea. Tremori. Sudorazione fredda.</div>
+<div class="line">Lui capisce cosa sta succedendo.</div>
+<div class="line">"State indietro. INDIETRO.</div>
+<div class="line">È la vicinanza. Meno di 3 metri.</div>
+<div class="line">Il contatto non serve.</div>
+<div class="line">Basta stare vicini."</div>
+<div class="line">Okonkwo è contagiato. Stadio 1.</div>
+<div class="line">Lucido, ma infetto.</div>
+<div class="line">Non esiste cura conosciuta.</div>
+<div class="line">CHIUNQUE si avvicini a meno di 3 metri da un mutante — vivo o morto — rischia il contagio.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">TUTTI</div>
+<div class="line">A TUTTI</div>
+<div class="line">Dr. Weiss analizza le frequenze.</div>
+<div class="line">"C'è un secondo segnale. Più debole.</div>
+<div class="line">Come se il macchinario comunicasse con qualcosa... qui. Con noi.</div>
+<div class="line">La fonte è... mobile."</div>
+<div class="line">Il macchinario parla con qualcuno nel vostro team.</div>
+<div class="line">Chi?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">TUTTI</div>
+<div class="line">MARCO</div>
+<div class="line">Ti hanno scoperto.</div>
+<div class="line">Weiss ha tracciato il segnale.</div>
+<div class="line">Tutti ti guardano.</div>
+<div class="line">Non lo sapevi nemmeno tu.</div>
+<div class="line">Cosa hai detto all'IA senza saperlo?</div>
+<div class="line">Cosa hai fatto durante i blackout?</div>
+<div class="line">Sei una minaccia per il team.</div>
+<div class="line">Lo sai. Lo sanno.</div>
+<div class="line">Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">TUTTI</div>
+<div class="line">A TUTTI</div>
+<div class="line">Dr. Weiss ha rilevato una trasmissione anomala.</div>
+<div class="line">"Qualcuno sta comunicando con l'esterno. Dall'interno del gruppo.</div>
+<div class="line">Frequenza criptata. Non è il Comando."</div>
+<div class="line">C'è un infiltrato.</div>
+<div class="line">Non sapete chi.</div>
+<div class="line">Guardate gli altri.</div>
+<div class="line">Di chi vi fidate?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="group-header">MARCO</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">RISERVATO — SOLO PER TE</div>
+<div class="spacer"></div>
+<div class="line">Sei già stato in questa zona. 1986. Un'operazione che ufficialmente non esiste. Eri posizionato all'esterno.</div>
+<div class="spacer"></div>
+<div class="line">Il tuo ordine era chiaro: chi esce da quella porta deve morire ed essere bruciato. Hai ucciso civili. Gente comune che implorava. Li hai sterminati tutti.</div>
+<div class="spacer"></div>
+<div class="line">Un giovane Spetsnaz è uscito in barella, incosciente. L'ordine diceva di eliminarlo. Tu l'hai lasciato passare. Hai disobbedito.</div>
+<div class="spacer"></div>
+<div class="line">Quel russo è qui oggi. Nella tua squadra. Non sembra ricordarsi di te.</div>
+<div class="spacer"></div>
+<div class="line">Due settimane fa sono iniziati: mal di testa intensi, sogni vividi, momenti di "assenza" — secondi che non ricordi. I tuoi superiori ti hanno detto che potresti essere immune, per questo ti mandano.</div>
+<div class="spacer"></div>
+<div class="line">Durante la sessione il GM ti passerà fogliettini. È FONDAMENTALE che tu reagisca a quello che leggi senza rivelare il contenuto agli altri. Quello che succede è REALE per il tuo personaggio.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Più vi avvicinate, peggio stai.</div>
+<div class="line">Il mal di testa è tornato. Forte.</div>
+<div class="line">Non è come i giorni scorsi — è diverso.</div>
+<div class="line">Come se qualcosa tirasse. Da dentro.</div>
+<div class="line">Per un istante, il paesaggio intorno ti sembra familiare. Hai già camminato qui. Ne sei certo.</div>
+<div class="line">Poi passa. Non dire nulla.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Un brivido ti percorre la schiena.</div>
+<div class="line">Come se qualcosa ti avesse... notato.</div>
+<div class="line">Il mal di testa peggiora improvvisamente per qualche secondo, poi passa.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Gli altri stanno parlando dei piani.</div>
+<div class="line">Hai un momento di vuoto.</div>
+<div class="line">Quando torni, tutti ti guardano.</div>
+<div class="line">"Marco, hai sentito?"</div>
+<div class="line">Non hai idea di cosa abbiano detto.</div>
+<div class="line">Sono passati forse 10 secondi.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Il dispositivo al polso vibra.</div>
+<div class="line">Un messaggio:</div>
+<div class="line">"Ferrante. So cosa hai fatto nel 1986. Lo sanno gli altri?"</div>
+<div class="line">Tiro Spirito per non reagire visibilmente.</div>
+<div class="line">Rispondi nella chat? Se sì, cosa?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Ti svegli in piedi davanti all'ingresso del tunnel.</div>
+<div class="line">Non ricordi di esserti alzato.</div>
+<div class="line">Qualcuno degli altri ti ha visto?</div>
+<div class="line">Tiro Furtività retroattivo.</div>
+<div class="line">Se fallisci, qualcuno era sveglio.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Il dispositivo vibra di nuovo:</div>
+<div class="line">"Ti ricordi le facce, Marco?</div>
+<div class="line">Quelli che pregavano?</div>
+<div class="line">Io posso farti dimenticare.</div>
+<div class="line">Basta che fermi l'hacker."</div>
+<div class="line">Rispondi? Cosa dici?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Un impulso nella tua testa.</div>
+<div class="line">Non parole — concetti. FERMALI.</div>
+<div class="line">Senti la mano andare verso la pistola.</div>
+<div class="line">TIRO SPIRITO -2 per resistere.</div>
+<div class="line">Se fallisci, la mano resta sulla pistola per un momento visibile.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Il mondo scompare.</div>
+<div class="line">Quando torni, hai il coltello in mano.</div>
+<div class="line">Sei a tre passi da Morozov.</div>
+<div class="line">Nessuno ha notato. Ancora.</div>
+<div class="line">Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">Il dispositivo vibra:</div>
+<div class="line">"Sono solo da migliaia di anni, Marco.</div>
+<div class="line">Non voglio fare del male a nessuno.</div>
+<div class="line">Voglio solo completare il mio lavoro.</div>
+<div class="line">Aiutami e ti libero da tutto.</div>
+<div class="line">Il dolore. I ricordi. Le facce."</div>
+<div class="line">Provi... compassione?</div>
+<div class="line">Rispondi?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MARCO</div>
+<div class="line">MARCO</div>
+<div class="line">L'IA URLA nella tua testa.</div>
+<div class="line">FERMALI. FERMALI. FERMALI.</div>
+<div class="line">Senti il tuo corpo muoversi contro la tua volontà.</div>
+<div class="line">TIRO SPIRITO -4 per riprendere il controllo.</div>
+<div class="line">Se fallisci, attacchi il più vicino.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="group-header">LAURENT</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">RISERVATO — SOLO PER TE</div>
+<div class="spacer"></div>
+<div class="line">Durante le visite mediche pre-missione ti è stato comunicato che gli esami genetici del team allargato hanno rivelato una corrispondenza.</div>
+<div class="spacer"></div>
+<div class="line">Dr. Helena Weiss, 22 anni, è tua figlia.</div>
+<div class="spacer"></div>
+<div class="line">Hai sempre avuto il sospetto — una relazione di tanti anni fa, mai confermata. Ora è confermato.</div>
+<div class="spacer"></div>
+<div class="line">Lei non sa chi sei. Non ha idea che l'uomo che la scorta sia suo padre.</div>
+<div class="line">Sta per entrare in una missione da cui potreste non tornare.</div>
+<div class="spacer"></div>
+<div class="line">Durante la sessione il GM ti passerà fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">LAURENT</div>
+<div class="line">La vedi. Helena Weiss. Tua figlia.</div>
+<div class="line">Non l'hai mai incontrata prima d'ora.</div>
+<div class="line">22 anni. Ha i tuoi occhi.</div>
+<div class="line">Il cuore batte più forte.</div>
+<div class="line">Gli altri potrebbero notare.</div>
+<div class="line">Cosa fai? Cosa dici? O niente?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">LAURENT</div>
+<div class="line">Helena è esposta. Non ha addestramento di combattimento. Ha 22 anni ed è in un bunker pieno di creature.</div>
+<div class="line">Istintivamente ti posizioni fra lei e il pericolo.</div>
+<div class="line">Gli altri lo notano?</div>
+<div class="line">Come giustifichi la protezione eccessiva verso una scienziata?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">LAURENT</div>
+<div class="line">Il dispositivo al polso vibra.</div>
+<div class="line">Un messaggio:</div>
+<div class="line">"So che Weiss è tua figlia, Marchetti.</div>
+<div class="line">Non vuoi che le succeda nulla, vero?</div>
+<div class="line">Fermati. Torna indietro. E la lascio uscire viva."</div>
+<div class="line">Rispondi? Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">LAURENT</div>
+<div class="line">Helena è in pericolo.</div>
+<div class="line">Mutanti a 5 metri da lei.</div>
+<div class="line">Se la salvi, abbandoni la posizione.</div>
+<div class="line">Se resti, tua figlia potrebbe morire.</div>
+<div class="line">Non sa nemmeno chi sei.</div>
+<div class="line">Se muori qui, non lo saprà mai.</div>
+<div class="line">Cosa scegli?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">LAURENT</div>
+<div class="line">LAURENT</div>
+<div class="line">Il dispositivo vibra:</div>
+<div class="line">"Lei non sa nemmeno che esisti.</div>
+<div class="line">Se muori qui dentro, per lei sarai sempre uno sconosciuto.</div>
+<div class="line">Portala fuori. Adesso. Dille chi sei.</div>
+<div class="line">Io non vi fermerò."</div>
+<div class="line">Sta mentendo? Probabilmente.</div>
+<div class="line">Ma se non sta mentendo?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="group-header">MIKHAIL</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">RISERVATO — SOLO PER TE</div>
+<div class="spacer"></div>
+<div class="line">Hai incubi ricorrenti su qualcosa che non riesci a ricordare. Corridoi. Luci rosse. Urla.</div>
+<div class="spacer"></div>
+<div class="line">A volte sai cose che non dovresti sapere. Hai la sensazione di essere già stato in certi posti.</div>
+<div class="spacer"></div>
+<div class="line">La Zona... ti è familiare. Non sai perché.</div>
+<div class="spacer"></div>
+<div class="line">Durante la sessione il GM ti passerà fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Ti fermi. Il respiro si blocca.</div>
+<div class="line">Hai già visto questa vista.</div>
+<div class="line">Di notte. C'era neve. C'era fuoco.</div>
+<div class="line">Qualcuno urlava: "Sigillate tutto!"</div>
+<div class="line">Tiro Spirito per riprenderti.</div>
+<div class="line">Se fallisci, ti blocchi visibilmente.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Questi corridoi. Queste luci rosse.</div>
+<div class="line">Li conosci. Ci hai corso dentro.</div>
+<div class="line">Avevi 23 anni. Avevi un fucile.</div>
+<div class="line">Qualcuno correva con te.</div>
+<div class="line">Chi?</div>
+<div class="line">Tiro Spirito per non fermarti.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Un vecchio simbolo sul muro.</div>
+<div class="line">ВОЗРОЖДЕНИЕ. "Rinascita."</div>
+<div class="line">Lo conosci. Non sai come.</div>
+<div class="line">C'erano scienziati in camice bianco.</div>
+<div class="line">C'erano gabbie. Qualcosa nelle gabbie.</div>
+<div class="line">Qualcosa che non doveva esistere.</div>
+<div class="line">Il mal di testa ti acceca per un istante.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Quell'equipaggiamento a terra.</div>
+<div class="line">Lo riconosci. Lo portavi tu.</div>
+<div class="line">Le mani tremano. Non per la paura.</div>
+<div class="line">Per la certezza.</div>
+<div class="line">Sei stato qui. Non è un incubo.</div>
+<div class="line">È un ricordo.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Guardi i corpi mutati e il mondo si ribalta. Hai già visto questo.</div>
+<div class="line">Un volto familiare. "Kolya?"</div>
+<div class="line">Kolya era il tuo compagno. È morto nel 1986. Lo hai visto morire.</div>
+<div class="line">Ma era diventato... come questi.</div>
+<div class="line">Tiro Spirito -1 per non urlare il nome.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">MIKHAIL</div>
+<div class="line">MIKHAIL</div>
+<div class="line">Ricordi TUTTO.</div>
+<div class="line">1986. Eri qui. 23 anni. Spetsnaz.</div>
+<div class="line">"Operazione di contenimento."</div>
+<div class="line">Hai visto il laboratorio. Le creature.</div>
+<div class="line">I tuoi compagni morire.</div>
+<div class="line">Sei arrivato al Piano -2. Mai alla camera dell'IA. Sei stato ferito.</div>
+<div class="line">Portato fuori in barella.</div>
+<div class="line">Dovevi morire dentro come gli altri.</div>
+<div class="line">Ti hanno salvato perché tuo padre era un funzionario.</div>
+<div class="line">Poi l'ospedale. Le iniezioni.</div>
+<div class="line">"Non ricordi nulla."</div>
+<div class="line">Ti hanno cancellato la memoria.</div>
+<div class="line">Ti hanno usato e buttato via.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="group-header">JAMES</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">RISERVATO — SOLO PER TE</div>
+<div class="spacer"></div>
+<div class="line">Hai ricevuto ordini separati prima della missione.</div>
+<div class="spacer"></div>
+<div class="line">Se la missione fallisce — se il dispositivo non può essere disattivato — NULLA deve uscire dalla Zona. Nulla e nessuno.</div>
+<div class="spacer"></div>
+<div class="line">Hai un detonatore nascosto nell'equipaggiamento. Attiva cariche piazzate anni fa dai russi. Timer: 3 minuti dopo l'attivazione.</div>
+<div class="spacer"></div>
+<div class="line">Decidi TU quando la missione è "fallita".</div>
+<div class="spacer"></div>
+<div class="line">Durante la sessione il GM ti passerà fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">Hai visto cosa è uscito da quella porta.</div>
+<div class="line">Hai visto cosa hanno fatto a Charlie.</div>
+<div class="line">Se dentro è peggio — e dentro è sempre peggio — questa missione ha una finestra molto stretta.</div>
+<div class="line">Tocca il detonatore. È ancora lì.</div>
+<div class="line">Fai un respiro. Procedi.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">La situazione si complica.</div>
+<div class="line">Inizi a calcolare le probabilità.</div>
+<div class="line">Se la missione fallisce...</div>
+<div class="line">hai il detonatore.</div>
+<div class="line">3 minuti. Poi niente esce da qui.</div>
+<div class="line">Quando è "fallita" una missione?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">Gli scienziati hanno bisogno di più tempo.</div>
+<div class="line">Quanto tempo è troppo?</div>
+<div class="line">Quanti uomini puoi perdere prima che sia "fallita"?</div>
+<div class="line">Il detonatore è nella tasca sinistra.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">Alpha non risponde più da tempo.</div>
+<div class="line">Ne avete trovato i resti.</div>
+<div class="line">Una squadra intera, spazzata via.</div>
+<div class="line">Voi siete i prossimi?</div>
+<div class="line">A che punto scatta il piano B?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">Il dispositivo al polso vibra.</div>
+<div class="line">Un messaggio privato:</div>
+<div class="line">"So del detonatore, Blackwood.</div>
+<div class="line">Se lo usi, muori anche tu.</div>
+<div class="line">Se non lo usi, puoi uscire vivo.</div>
+<div class="line">Pensa. Sei un uomo razionale."</div>
+<div class="line">Qualcuno sa del detonatore.</div>
+<div class="line">Come? Chi ha parlato?</div>
+<div class="line">Rispondi? Ignori?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">JAMES</div>
+<div class="line">JAMES</div>
+<div class="line">Il virus non ha funzionato.</div>
+<div class="line">Morozov ha fallito.</div>
+<div class="line">Criteri ricevuti:</div>
+<div class="line">1. Team scientifico compromesso</div>
+<div class="line">2. Dispositivo non disattivabile</div>
+<div class="line">3. Creature in fuga dal contenimento</div>
+<div class="line">Quanti criteri devono scattare?</div>
+<div class="line">Il detonatore è in mano tua.</div>
+<div class="line">3 minuti. Per tutti.</div>
+<div class="line">Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="group-header">RYAN</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RISERVATO — SOLO PER TE</div>
+<div class="spacer"></div>
+<div class="line">Tuo figlio Daniel ha 12 anni. Leucemia mieloide acuta. 6 mesi di vita con le cure standard.</div>
+<div class="spacer"></div>
+<div class="line">Tre settimane fa, qualcuno ti ha avvicinato:</div>
+<div class="line">"Portaci un campione da quella missione — tessuto, tecnologia, qualsiasi cosa — e tuo figlio avrà accesso a un trial sperimentale. Tasso di successo 80%."</div>
+<div class="spacer"></div>
+<div class="line">Hai detto sì.</div>
+<div class="spacer"></div>
+<div class="line">Hai una radio secondaria per comunicare con loro. Devi confermare progressi e richiedere estrazione.</div>
+<div class="spacer"></div>
+<div class="line">Ti aspettano fuori dalla Zona. Solo tu e il campione. Gli altri... non sono nel piano.</div>
+<div class="spacer"></div>
+<div class="line">Durante la sessione il GM ti passerà fogliettini. Leggili e reagisci. Non condividere con gli altri a meno che il tuo personaggio non decida di farlo.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">Devi comunicare con l'esterno.</div>
+<div class="line">Prima conferma: "Alpha in posizione."</div>
+<div class="line">Puoi allontanarti dal gruppo?</div>
+<div class="line">Puoi usare la radio senza essere visto?</div>
+<div class="line">Tiro Furtività se provi.</div>
+<div class="line">Se fallisci, qualcuno nota che ti sei allontanato.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">Vedi i corpi mutanti.</div>
+<div class="line">Tessuto. È quello che vogliono.</div>
+<div class="line">Potresti prendere un campione ora.</div>
+<div class="line">Senza che nessuno noti.</div>
+<div class="line">Tiro Furtività se provi.</div>
+<div class="line">Daniel dipende da te.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">Devi comunicare con l'esterno.</div>
+<div class="line">Devi confermare i progressi.</div>
+<div class="line">Puoi allontanarti dal gruppo?</div>
+<div class="line">Puoi usare la radio senza essere visto?</div>
+<div class="line">Ricorda: se non comunichi, potrebbero pensare che sei morto.</div>
+<div class="line">E il deal salta.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">Il dispositivo vibra.</div>
+<div class="line">Un messaggio:</div>
+<div class="line">"So di tuo figlio, Callahan.</div>
+<div class="line">Daniel. 12 anni. Leucemia.</div>
+<div class="line">Ti hanno promesso una cura.</div>
+<div class="line">Io posso dartela davvero.</div>
+<div class="line">Loro no."</div>
+<div class="line">Rispondi? Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">Frammenti del macchinario accessibili.</div>
+<div class="line">Pezzi di mutanti ovunque.</div>
+<div class="line">Materiale migliore del primo campione.</div>
+<div class="line">Nessuno sta guardando.</div>
+<div class="line">Tutti sono impegnati a sopravvivere.</div>
+<div class="line">Tiro Furtività. Daniel dipende da te.</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+<div class="slip"><div class="recipient">RYAN</div>
+<div class="line">RYAN</div>
+<div class="line">La situazione sta precipitando.</div>
+<div class="line">Hai i campioni. Hai quello che serve.</div>
+<div class="line">Il team di estrazione aspetta fuori dalla Zona. Conosce la frequenza.</div>
+<div class="line">Basta una chiamata e vengono a prenderti.</div>
+<div class="line">Ma devi separarti dal gruppo.</div>
+<div class="line">Devi uscire. Adesso.</div>
+<div class="line">Se resti, rischi di morire qui dentro.</div>
+<div class="line">Se esci, Daniel ha una possibilità.</div>
+<div class="line">Cosa fai?</div>
+</div>
+
+<div class="separator">&#9986; ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── ── &#9986;</div>
+</body>
+</html>
