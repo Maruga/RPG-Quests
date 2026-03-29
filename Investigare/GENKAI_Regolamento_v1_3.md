@@ -17,6 +17,7 @@
 | **Satori** | 悟り | *Illuminazione* — successo automatico, una volta per sessione |
 | **Kiwami** | 極 | *Estremo* — risultato critico del dado (2 o 12) |
 | **Nami** | 波 | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi |
+| **Nasake** | 情け | *Compassione* — punto Ki conservato quando il bonus andrebbe perso |
 
 ---
 
@@ -97,6 +98,34 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 - I Nami (3 e 11) **non influenzano** il recupero notturno
 
 **Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
+
+---
+
+## Nasake 情け
+*Compassione*
+
+> *情けは人の為ならず — Nasake wa hito no tame narazu*
+> "La compassione non è solo per gli altri." Quello che doni torna a te.
+
+Quando un PG ottiene un Kiwami positivo (2) o un Nami positivo (3) ma **non può applicare il bonus** — perché il Ki è già al massimo e l'attributo rilevante è già a 9 — il punto che andrebbe perso può essere conservato nel **Nasake**.
+
+### Regole
+
+- Il Nasake contiene **al massimo 1 Ki**
+- Si riempie solo quando un bonus da Kiwami+ o Nami+ andrebbe perso perché non c'è dove applicarlo
+- Se il Nasake è già pieno, il punto in eccesso è perso normalmente
+
+### Uso
+
+Il Nasake **non si usa su se stessi** — si dona a un altro PG. Il PG deve farlo **interpretando la scena**: un gesto, una parola, un momento di connessione umana. Non basta dichiararlo: si gioca. Il ricevente recupera 1 Ki.
+
+### Limiti
+
+- Il Nasake non si accumula tra sessioni — se non usato, si perde a fine sessione
+- Un PG può avere al massimo 1 Nasake alla volta
+- Non si può donare a se stessi
+
+> **Esempio**: Sato ha Distacco 9 e Ki al massimo. Entra sulla scena del crimine e tira 2 — Kiwami positivo. Distacco è già a 9 (punto perso) e il Ki è al massimo (punto perso). Invece di sprecare entrambi, Sato conserva 1 Ki nel suo Nasake. Tre scene dopo, Kimura è a Ki 4 e sta per crollare. Sato gli mette una mano sulla spalla: *"Resta con me, Kimura."* Il giocatore dona il Nasake — Kimura sale a Ki 5.
 
 ---
 
@@ -1349,6 +1378,11 @@ Almeno un 2 (Kiwami+): 1d3+1 Ki
 Almeno un 12 (Kiwami-): solo 1 Ki
 Sia 2 che 12: si annullano → 1d3 Ki (standard)
 (mai oltre il max di inizio sessione)
+
+NASAKE (情け) - COMPASSIONE
+Bonus da Kiwami+/Nami+ che andrebbe perso → conserva 1 Ki
+Max 1, si perde a fine sessione
+Solo donabile a un compagno (giocando la scena)
 
 KYŌRYOKU (協力) - SUPPORTO
 Compagno presente dà +1 al tiro (prima di tirare)

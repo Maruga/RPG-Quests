@@ -119,6 +119,25 @@ Il Ki non può mai superare il valore con cui hai iniziato la sessione.
 
 ---
 
+## Il Nasake 情け — Compassione
+
+> *情けは人の為ならず — Nasake wa hito no tame narazu*
+> "La compassione non è solo per gli altri." Quello che doni torna a te.
+
+A volte sei al massimo — Ki pieno, attributo al limite — e il dado ti premia comunque. Un Kiwami positivo o un Nami positivo che non può andare da nessuna parte. Normalmente quel punto si perde. Con il Nasake, lo conservi.
+
+Il Nasake è una riserva di **1 solo Ki** che tieni da parte per quando serve — a te o a qualcun altro.
+
+**Come si riempie**: quando un bonus da Kiwami+ (2) o Nami+ (3) andrebbe perso perché non c'è dove applicarlo, puoi metterlo nel Nasake.
+
+**Come si usa**: il Nasake non è per te — è per un compagno. Lo doni a un altro PG **giocando la scena**: un gesto, una parola, un momento vero tra i due personaggi. Non basta dichiararlo. Il ricevente recupera 1 Ki.
+
+**Limiti**: ne tieni al massimo 1 alla volta. Si perde a fine sessione se non usato.
+
+> **Esempio**: Tanaka ha Lucidità 9 e Ki al massimo. Tira 2 su una prova — Kiwami positivo, ma non può applicare nessuno dei due bonus. Conserva 1 Ki nel Nasake. Più avanti, Sato è in difficoltà dopo una scena brutale. Tanaka lo prende da parte: *"Sato. Respira. Ci sono io."* Dona il Nasake — Sato recupera 1 Ki.
+
+---
+
 ## Il Gou 業 — Il Tuo Talento
 
 Ogni personaggio ha un **Gou**: un talento straordinario che lo distingue dagli altri investigatori. Non è un superpotere — è un'intuizione quasi soprannaturale, qualcosa che vai oltre la normale competenza. Ma ogni volta che lo usi, paghi un prezzo: **2 Ki**.
@@ -718,6 +737,11 @@ Relazioni profonde (±4, ±5): cambiano solo per eventi narrativi
 
 SATORI
 1 volta per sessione, successo automatico, non si accumula
+
+NASAKE (情け) - COMPASSIONE
+Bonus perso da Kiwami+/Nami+ → conserva 1 Ki
+Max 1, si perde a fine sessione
+Solo donabile a un compagno (giocando la scena)
 
 SUPPORTO
 Prima del tiro: +1 attributo dal compagno
