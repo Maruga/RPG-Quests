@@ -622,6 +622,60 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 
 ---
 
+## Tiri di Pressione
+*Quando la situazione ti logora*
+
+A volte non sei tu ad agire — è il mondo che preme. L'attesa si prolunga, il report non arriva, il superiore chiede risultati che non hai, la burocrazia blocca tutto. Il GM può chiedere un **tiro di pressione** per vedere come il PG gestisce la tensione.
+
+### Quando si usa
+
+Il tiro di pressione si chiede solo quando l'attesa o la frustrazione hanno **posta in gioco narrativa**:
+
+| Situazione | Attributo |
+|------------|-----------|
+| Yamada non arriva, il reperto è in ritardo, devi aspettare | **Pazienza** |
+| Scena brutale, corpo di un bambino, foto disturbanti | **Distacco** |
+| Il superiore ti provoca, un testimone ti insulta, pressione dal commissario | **Silenzio** |
+| Troppe informazioni contraddittorie, il caso non torna | **Lucidità** |
+| Qualcuno ti manipola emotivamente, il Kage bussa | **Ascolto** |
+| Tutti ti guardano, sei al centro dell'attenzione non voluta | **Presenza** |
+
+**Non si chiede** su routine senza pressione: Yamada tarda 5 minuti → niente tiro. Yamada tarda 3 ore e il sospettato potrebbe fuggire → tiro.
+
+### Meccanica
+
+Il PG tira 2d6 contro l'attributo rilevante. **Può solo perdere, mai guadagnare.** Non si applicano Kiwami né Nami.
+
+| Dado | Esito | Effetto |
+|------|-------|---------|
+| **2 — attributo** | Successo | Gestisci la pressione. Nessun costo |
+| **attributo+1 — 9** | Fallimento leggero | Mostri lo sforzo — frustrazione, tensione, impazienza. **Nessun costo meccanico** |
+| **10, 11, 12** | Fallimento | **-1 Ki**. La pressione ti erode |
+
+### Il roleplay
+
+Il PG che **fallisce** (anche leggero) descrive la reazione: sbatte il pugno, alza la voce, esce dalla stanza, si blocca. Questi momenti sono il cuore del tiro di pressione — mostrano chi è il personaggio sotto stress.
+
+Il PG che ha **successo** può comunque descrivere lo sforzo: stringe i pugni sotto il tavolo, respira lentamente, si morde la lingua. Successo non significa "non ti importa" — significa che reggi.
+
+### Limite
+
+**Massimo 2-3 tiri di pressione per sessione.** Se il GM ne chiede troppi, diventano rumore. I tiri di pressione funzionano perché sono rari e piazzati nei momenti giusti.
+
+### Esempio
+
+I PG aspettano il tabulato telefonico. Il distretto ha avuto un problema — il tabulato arriva con 48 ore di ritardo invece di 24 (vedi *Tempi del Distretto* nella sezione Scheda Distretto). Il fermo del sospettato scade tra tre giorni.
+
+Yamada entra: *"Due giorni. C'è un problema tecnico alla compagnia."*
+
+Il GM chiede un tiro di pressione su **Pazienza** a Yamamoto (Pazienza 4).
+
+Yamamoto tira 2d6: **esce 7**. Fallimento leggero. Yamamoto sbatte la mano sul tavolo, si alza, va alla finestra. *"Due giorni. Non abbiamo due giorni."* Ma nessun costo meccanico — 7 è sotto 10.
+
+Se avesse tirato **11**: stessa scena, ma **-1 Ki**. La frustrazione lo segna. I colleghi lo guardano. Il caffè è freddo. Le mani tremano.
+
+---
+
 ## En 縁
 *Relazioni*
 
@@ -856,6 +910,69 @@ Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rileva
 | Supporto ad arresto | Organico |
 | Verifica di un documento o identità | Efficienza |
 | Ottenere accesso a un ente terzo | Rete |
+
+---
+
+## Tempi del Distretto
+
+Quando i PG delegano un'operazione, il risultato non arriva istantaneamente. Ogni richiesta ha un **tempo previsto** — quanto ci vuole in condizioni normali. Il tiro del distretto (2d6 ≤ Velocità) determina se arriva prima, in tempo, o in ritardo.
+
+### Tabella Tempi Previsti
+
+| Richiesta | Tempo previsto |
+|-----------|---------------|
+| Controllo precedenti penali | 2 ore |
+| Identificazione persona (nome noto) | 4 ore |
+| Risultato perquisizione | 6 ore |
+| Analisi impronte digitali | 12 ore |
+| Autopsia completa | 24 ore |
+| Tabulato telefonico | 24 ore |
+| Analisi tossicologica | 48 ore |
+| Cartelle cliniche (con mandato) | 2 giorni |
+| Documenti bancari (con mandato) | 3 giorni |
+| Rapporto pedinamento | Durata pedinamento + 4 ore |
+
+### Come si determina il tempo
+
+Il GM tira **2d6 ≤ Velocità** del distretto. Il risultato modifica il tempo previsto:
+
+| Dado | Risultato | Tempo |
+|------|-----------|-------|
+| **2** | Critico positivo | **Metà** del tempo previsto |
+| **3** | Ottimo | **Due terzi** del tempo previsto |
+| **4 — Velocità** | Successo | **Tempo previsto** |
+| **Velocità+1 — 10** | Fallimento leggero | **Tempo e mezzo** |
+| **11** | Fallimento | **Doppio** del tempo previsto |
+| **12** | Critico negativo | **Triplo**, oppure problema grave (reperto perso, errore nel report, richiesta respinta) |
+
+### Riferimento rapido — moltiplicatori
+
+| Tempo previsto | Metà | Due terzi | Previsto | Tempo e mezzo | Doppio | Triplo |
+|----------------|------|-----------|----------|---------------|--------|--------|
+| 2 ore | 1 ora | 1 ora e mezza | 2 ore | 3 ore | 4 ore | 6 ore |
+| 4 ore | 2 ore | 3 ore circa | 4 ore | 6 ore | 8 ore | 12 ore |
+| 12 ore | 6 ore | 8 ore | 12 ore | 18 ore | 1 giorno | 1 giorno e mezzo |
+| 24 ore | 12 ore | 16 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni |
+| 48 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni | 4 giorni | 6 giorni |
+| 3 giorni | 1 giorno e mezzo | 2 giorni | 3 giorni | 4-5 giorni | 6 giorni | 9 giorni |
+
+### Nota sull'attributo
+
+Il tiro usa normalmente **Velocità**. Ma se l'operazione è particolarmente complessa (analisi tossicologica rara, documenti da un'altra prefettura, coordinamento con enti esterni), il GM può tirare su **Efficienza** o **Rete** al posto di Velocità — a seconda di cosa rallenta davvero il processo.
+
+### Esempio completo
+
+I PG chiedono il tabulato telefonico alla Questura di una città media (Velocità 6). Tempo previsto: 24 ore.
+
+**Il GM tira 2d6: esce 11.** Fallimento → doppio del tempo previsto → **48 ore**.
+
+Yamada entra nell'ufficio: *"La compagnia telefonica ha un problema nel sistema. Il tabulato non arriva prima di giovedì."*
+
+Il fermo del sospettato scade tra tre giorni. L'attesa pesa. Il GM valuta che la situazione ha posta in gioco e chiede un **tiro di pressione su Pazienza** a Yamamoto (vedi *Tiri di Pressione* nella sezione Meccaniche di Gioco).
+
+Yamamoto (Pazienza 4) tira 2d6: **esce 10**. Fallimento → **-1 Ki**. Yamamoto si alza di scatto: *"Quarantotto ore? E nel frattempo il nostro uomo se ne va a casa?"* La frustrazione lo segna.
+
+Se avesse tirato **7**: fallimento leggero, stessa frustrazione ma nessun costo in Ki. Se avesse tirato **4**: successo, Yamamoto chiude gli occhi, respira, e dice con calma: *"Va bene. Troviamo un'altra strada."*
 
 ---
 
