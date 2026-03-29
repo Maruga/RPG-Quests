@@ -33,34 +33,57 @@
 
 ## KI (TENUTA)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
 
-### Opzione 1: Palazzo della Memoria
+### Opzione 1: Palazzo della Memoria 記憶の宮殿
 *Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
-- **Attributo**: Lucidità
+- **Attributo**: Lucidità o Pazienza (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
+- **Vincolo**: devi specificare cosa stai cercando di ricordare
+- **Successo** (2d6 ≤ attributo scelto): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
 - **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
 
-### Opzione 2: Occhio della Gru
-*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a interpretarlo
+> Tre giorni fa hai visto un documento sulla scrivania della vittima. "Era un estratto conto. E il logo — non era della banca abituale della vittima."
 
-### Opzione 3: Pietra Fuori Posto
-*Percepisci immediatamente cosa non torna - tracce, residui, anomalie.*
+### Opzione 2: Occhio della Gru 鶴の目
+*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
+- **Costo**: 3 Ki
+- **Vincolo**: devi dichiarare **dove** stai guardando
+- **Successo** (2d6 ≤ Lucidità): Trovi il dettaglio nascosto e capisci in che direzione punta
+- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
+
+> In laboratorio, dichiari "Guardo i residui sul colletto." Una particella che non c'entra con l'ambiente — industriale, non domestica. La vittima è stata in un posto diverso da quello dichiarato.
+
+### Opzione 3: L'Istante della Caduta 散り際
+*Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
+- **Attributo**: Pazienza o Ascolto (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Identifichi l'anomalia e la sua probabile origine
-- **Fallimento**: Senti che qualcosa non quadra, ma non riesci a isolare cosa
+- **Meccanica**: stato di allerta per il resto della giornata. Si attiva automaticamente la prima volta che qualcosa sta per svanire. Il tiro si fa in quel momento
+- **Successo** (2d6 ≤ attributo scelto): Sai cosa sta per svanire e hai un istante per agire
+- **Fallimento**: Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
+
+> Attivi L'Istante della Caduta la mattina. Tre ore dopo, durante un'analisi, il GM dice: "L'Istante della Caduta si attiva. Il campione sta degradandosi — hai ancora pochi minuti per l'analisi chiave prima che sia inutilizzabile."
 
 ---
 

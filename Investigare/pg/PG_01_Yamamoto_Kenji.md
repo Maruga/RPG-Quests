@@ -33,34 +33,56 @@
 
 ## KI (TENUTA)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
 
-### Opzione 1: Teatro delle Ombre
-*Guardando una scena, visualizzi come si sono svolti gli eventi.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa - chi ha fatto cosa, in che ordine, con quali movimenti
-- **Fallimento**: Vedi frammenti disconnessi - immagini, gesti, ma non la sequenza chiara
-
-### Opzione 2: Pietra Fuori Posto
-*Percepisci immediatamente cosa non torna in un luogo o situazione.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Sai cosa stona e perché - il dettaglio e il suo significato
-- **Fallimento**: Senti che qualcosa è sbagliato, ma non riesci a definirlo con precisione
-
-### Opzione 3: Pugno di Ferro
-*La tua autorità diventa schiacciante. Il PNG sente il peso della tua posizione.*
+### Opzione 1: Pugno di Ferro 鉄拳
+*Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*
 - **Attributo**: Presenza
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ Presenza): Il PNG cede su un punto importante specifico — ammette, collabora, si ritira
+- **Fallimento**: Il PNG è scosso e sotto pressione, ma non cede
+
+> Il capo che non molla. Dopo mezz'ora di interrogatorio, Hayashi abbassa gli occhi: "Va bene. Sì, lo sapevo dei debiti."
+
+### Opzione 2: Teatro delle Ombre 影芝居
+*Guardando una scena, vedi le sagome sbiadite di ciò che è accaduto.*
+- **Attributo**: Lucidità (requisito: Lucidità ≥ 7)
+- **Costo**: 4 Ki
+- **Vincolo**: devi essere sul luogo, entro 48 ore dal fatto
+- **Successo** (2d6 ≤ Lucidità): 2-3 momenti chiave come sagome sbiadite in movimento — figure semi-trasparenti, nell'ordine giusto, con vuoti tra loro. Non volti, non dettagli
+- **Fallimento**: Un singolo momento congelato — una sagoma, una posizione, senza prima né dopo
+
+> Chiudi gli occhi nell'appartamento. Sagome sbiadite: due figure in piedi, poi una a terra. La seconda si muove verso la finestra. L'assassino non è uscito dalla porta.
+
+### Opzione 3: Lo Spirito che Resta 残心
+*La consapevolezza che persiste dopo l'azione. Lo spirito del samurai che non cede.*
+- **Attributo**: Distacco o Pazienza (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Presenza): Il PNG cede su un punto importante - confessa, collabora, si ritira
-- **Fallimento**: Il PNG è scosso, intimidito, ma non cede completamente
+- **Vincolo**: attivabile solo quando sei a Ki 4 o 5
+- **Successo** (2d6 ≤ attributo scelto): Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli
+- **Fallimento**: Solo il 12 è protetto. L'11 resta Nami negativo
+
+> Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
 
 ---
 

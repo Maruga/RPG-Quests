@@ -33,34 +33,56 @@
 
 ## KI (TENUTA)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
 
-### Opzione 1: Occhio della Gru
-*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
+### Opzione 1: Occhio della Gru 鶴の目
+*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci immediatamente il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
+- **Costo**: 3 Ki
+- **Vincolo**: devi dichiarare **dove** stai guardando
+- **Successo** (2d6 ≤ Lucidità): Trovi il dettaglio nascosto e capisci in che direzione punta
+- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
 
-### Opzione 2: Teatro delle Ombre
-*Guardando una scena, visualizzi come si sono svolti gli eventi.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa degli eventi
-- **Fallimento**: Vedi frammenti disconnessi, immagini sfocate
+> Dichiari "Guardo attorno alla finestra." Una fibra di tessuto sul bordo inferiore. Qualcuno è passato da qui — verso l'esterno.
 
-### Opzione 3: Cuore di Ghiaccio
+### Opzione 2: Cuore di Ghiaccio 氷の心
 *Ti distacchi completamente dalla situazione. Niente ti tocca.*
 - **Attributo**: Distacco
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Distacco): Per il resto della scena, agisci normalmente senza bisogno di tiri emotivi
-- **Fallimento**: Resti lucido ma la tensione si accumula - il prossimo tiro emotivo ha -2
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ Distacco): Il primo tiro emotivo della scena è **successo automatico**
+- **Fallimento**: +2 al prossimo tiro emotivo
+
+> Stai per entrare nell'obitorio. Un gelo professionale ti avvolge. Il primo impatto non ti tocca — il tiro di Distacco è superato automaticamente.
+
+### Opzione 3: La Brace che Resta 残り火
+*Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.*
+- **Attributo**: Ascolto o Distacco (a scelta — dual-attribute)
+- **Costo**: 3 Ki
+- **Vincolo**: devi essere sul luogo, entro 24-48 ore dal fatto
+- **Successo** (2d6 ≤ attributo scelto): Senti le emozioni dominanti e quante presenze diverse c'erano — distingui paura da rabbia da determinazione fredda
+- **Fallimento**: Un'impressione emotiva generale (terrore, tensione) senza distinzione tra le persone
+
+> Nella stanza dell'omicidio. Due presenze emotive. La prima: paura crescente, poi terrore — la vittima. La seconda: determinazione fredda, nessuna esitazione.
 
 ---
 

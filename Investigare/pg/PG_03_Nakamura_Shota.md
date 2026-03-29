@@ -33,34 +33,57 @@
 
 ## KI (TENUTA)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
 
-### Opzione 1: Ombra della Verità
+### Opzione 1: Ombra della Verità 影の真実
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
 - **Attributo**: Ascolto
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Ascolto): Sai che mente e su cosa sta mentendo
-- **Fallimento**: Sai che mente, ma non riesci a capire su quale parte
+- **Costo**: 3 Ki
+- **Vincolo**: devi aver parlato con la persona per almeno qualche minuto
+- **Successo** (2d6 ≤ Ascolto): Certezza della bugia + l'area generale (mente sull'orario, su una persona, su un luogo — non il contenuto specifico)
+- **Fallimento**: Senti disonestà, ma non distingui se è bugia, nervosismo, o qualcosa di personale
 
-### Opzione 2: Porta Socchiusa
+> Il testimone descrive il suo alibi. "Sta mentendo. È qualcosa legato a un luogo — quando parla di dove si trovava, la voce cambia."
+
+### Opzione 2: Porta Socchiusa 開きかけの扉
 *Le persone si aprono con te. Dicono più di quanto vorrebbero.*
 - **Attributo**: Ascolto
-- **Costo**: 2 Ki
+- **Costo**: 3 Ki
+- **Vincolo**: richiede conversazione in corso (non si usa come apertura)
 - **Successo** (2d6 ≤ Ascolto): Il PNG rivela qualcosa che non voleva assolutamente dire
 - **Fallimento**: Il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo
 
-### Opzione 3: L'Ora Giusta
-*Sai quando è il momento perfetto per parlare, agire, colpire.*
-- **Attributo**: Pazienza
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Pazienza): La prossima azione è un successo automatico
-- **Fallimento**: Hai +2 al prossimo tiro (senti che il momento è vicino, ma non perfetto)
+> Parli con la moglie della vittima da dieci minuti. Le sfugge: "Era cambiato, da quando aveva ricominciato a vederla." Si blocca. Non voleva dirlo.
+
+### Opzione 3: La Risalita della Carpa 鯉の滝登り
+*Non molli. Mai. La tua pazienza è una forza della natura.*
+- **Attributo**: Pazienza o Presenza (a scelta — dual-attribute)
+- **Costo**: 3 Ki
+- **Vincolo**: l'interrogatorio deve essere in corso da tempo
+- **Successo** (2d6 ≤ attributo scelto): Il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione
+- **Fallimento**: Il PNG è visibilmente stanco, la coerenza vacilla, ma la storia regge
+
+> Interroghi Kuroda da due ore. Ripeti la domanda sull'orario. "Le sei e mezza" — ma tre domande fa aveva detto "le sette". Impallidisce.
 
 ---
 

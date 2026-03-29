@@ -18,11 +18,11 @@
 | **Kiwami** | 極 | *Estremo* — risultato critico del dado (2 o 12) |
 | **Nami** | 波 | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi |
 | **Nasake** | 情け | *Compassione* — punto Ki conservato quando il bonus andrebbe perso |
-| **Yamabiko** | 山彦 | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva) |
-| **Nokori-bi** | 残り火 | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva) |
-| **Zanshin** | 残心 | *Spirito che Resta* — disciplina del samurai, protezione dal crollo |
-| **Chirigiwa** | 散り際 | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura) |
-| **Koi no Takinobori** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio |
+| **L'Eco della Montagna** | 山彦 | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva) |
+| **La Brace che Resta** | 残り火 | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva) |
+| **Lo Spirito che Resta** | 残心 | *Spirito che Resta* — disciplina del samurai, protezione dal crollo |
+| **L'Istante della Caduta** | 散り際 | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura) |
+| **La Risalita della Carpa** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio |
 
 ---
 
@@ -377,7 +377,7 @@ Spostato da Ascolto a Silenzio: la tua tranquillità mette le persone a loro agi
 
 ---
 
-#### Yamabiko 山彦 — L'Eco della Montagna
+#### L'Eco della Montagna 山彦
 *Le parole non scompaiono. Restano intrappolate nello spazio, e nel tuo silenzio le senti.*
 
 **NUOVO — Famiglia Percezione Retroattiva (Udito)**
@@ -389,9 +389,9 @@ Spostato da Ascolto a Silenzio: la tua tranquillità mette le persone a loro agi
 - **Successo**: frammenti di frasi riconoscibili — non conversazioni intere, ma parole chiave, toni (rabbia, paura, supplica), il numero di voci presenti
 - **Fallimento**: suoni indistinti — un tono emotivo generale (c'è stata violenza, c'è stata calma, c'è stato pianto) senza parole riconoscibili
 
-> **Esempio**: Sei nell'ufficio dove la vittima ha avuto l'ultima discussione ieri pomeriggio. Usi Yamabiko (Silenzio 8). Tiri 7 — successo. Il GM dice: "Nel silenzio, le parole emergono come echi lontani. Due voci — una calma, una agitata. La voce agitata dice qualcosa come '...non puoi farlo...' e poi '...ti distruggerò...'. La voce calma risponde, ma le parole sono indistinte." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Senti un tono emotivo residuo — rabbia, tensione. Due presenze. Ma nessuna parola distinguibile."
+> **Esempio**: Sei nell'ufficio dove la vittima ha avuto l'ultima discussione ieri pomeriggio. Usi L'Eco della Montagna (Silenzio 8). Tiri 7 — successo. Il GM dice: "Nel silenzio, le parole emergono come echi lontani. Due voci — una calma, una agitata. La voce agitata dice qualcosa come '...non puoi farlo...' e poi '...ti distruggerò...'. La voce calma risponde, ma le parole sono indistinte." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Senti un tono emotivo residuo — rabbia, tensione. Due presenze. Ma nessuna parola distinguibile."
 
-> **Differenza con Teatro delle Ombre**: Teatro delle Ombre **vede** sagome sbiadite (Lucidità). Yamabiko **sente** echi di parole (Silenzio). Sono la stessa famiglia — Percezione Retroattiva — ma sensi diversi, attributi diversi. Un gruppo con entrambi i Gou ricostruisce molto di più.
+> **Differenza con Teatro delle Ombre**: Teatro delle Ombre **vede** sagome sbiadite (Lucidità). L'Eco della Montagna **sente** echi di parole (Silenzio). Sono la stessa famiglia — Percezione Retroattiva — ma sensi diversi, attributi diversi. Un gruppo con entrambi i Gou ricostruisce molto di più.
 
 ---
 
@@ -431,7 +431,7 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 
 ---
 
-#### Nokori-bi 残り火 — La Brace che Resta
+#### La Brace che Resta 残り火
 *Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.*
 
 **NUOVO — Famiglia Percezione Retroattiva (Empatia)**
@@ -442,13 +442,13 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 - **Successo**: senti le emozioni dominanti e quante "presenze emotive" diverse c'erano. Distingui paura da rabbia da dolore da determinazione fredda
 - **Fallimento**: un'impressione emotiva generale (questo luogo trasuda paura, oppure qui c'era tensione) senza distinzione tra le persone presenti
 
-> **Esempio**: Sei nella stanza dove è avvenuto l'omicidio la notte scorsa. Usi Nokori-bi con Ascolto 7. Tiri 5 — successo. Il GM dice: "Due presenze emotive. La prima: paura crescente, poi terrore puro — la vittima. La seconda: determinazione fredda, nessuna esitazione — chi ha agito non aveva dubbi." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Questo luogo è saturo di terrore. Qualcosa di violento è successo qui. Ma non distingui quante persone fossero o cosa provassero individualmente."
+> **Esempio**: Sei nella stanza dove è avvenuto l'omicidio la notte scorsa. Usi La Brace che Resta con Ascolto 7. Tiri 5 — successo. Il GM dice: "Due presenze emotive. La prima: paura crescente, poi terrore puro — la vittima. La seconda: determinazione fredda, nessuna esitazione — chi ha agito non aveva dubbi." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Questo luogo è saturo di terrore. Qualcosa di violento è successo qui. Ma non distingui quante persone fossero o cosa provassero individualmente."
 
-> **Differenza con Teatro delle Ombre e Yamabiko**: Teatro delle Ombre **vede** (Lucidità). Yamabiko **sente** parole (Silenzio). Nokori-bi **percepisce emozioni** (Ascolto o Distacco). Stessa famiglia — Percezione Retroattiva — tre sensi diversi.
+> **Differenza con Teatro delle Ombre e L'Eco della Montagna**: Teatro delle Ombre **vede** (Lucidità). L'Eco della Montagna **sente** parole (Silenzio). La Brace che Resta **percepisce emozioni** (Ascolto o Distacco). Stessa famiglia — Percezione Retroattiva — tre sensi diversi.
 
 ---
 
-#### Zanshin 残心 — Lo Spirito che Resta
+#### Lo Spirito che Resta 残心
 *La consapevolezza che persiste dopo l'azione. Lo spirito del samurai che non cede.*
 
 **NUOVO**
@@ -459,11 +459,11 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 - **Successo**: per il resto della scena, i tiri del PG non possono generare Nami negativi (11) né Kiwami negativi (12) — contano come fallimento leggero. Non crolli
 - **Fallimento**: solo il Kiwami negativo (12) è protetto e conta come fallimento leggero. L'11 resta Nami negativo
 
-> **Esempio**: Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico e non puoi fermarti. Usi Zanshin con Distacco 7. Tiri 6 — successo. Il GM dice: "Qualcosa dentro di te si irrigidisce — non come il ghiaccio, come l'acciaio. Per il resto della scena, anche se i dadi ti vanno contro, non crolli." Un eventuale 11 o 12 conta come fallimento leggero. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "La disciplina regge, ma solo in parte." Solo il 12 è protetto; l'11 resta Nami negativo.
+> **Esempio**: Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico e non puoi fermarti. Usi Lo Spirito che Resta con Distacco 7. Tiri 6 — successo. Il GM dice: "Qualcosa dentro di te si irrigidisce — non come il ghiaccio, come l'acciaio. Per il resto della scena, anche se i dadi ti vanno contro, non crolli." Un eventuale 11 o 12 conta come fallimento leggero. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "La disciplina regge, ma solo in parte." Solo il 12 è protetto; l'11 resta Nami negativo.
 
 ---
 
-#### Koi no Takinobori 鯉の滝登り — La Risalita della Carpa
+#### La Risalita della Carpa 鯉の滝登り
 *Non molli. Mai. La tua pazienza è una forza della natura.*
 
 **NUOVO**
@@ -474,13 +474,13 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 - **Successo**: il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione
 - **Fallimento**: il PNG è visibilmente stanco, la coerenza vacilla, ma la storia regge. Il PG sente che sta cedendo
 
-> **Esempio**: Stai interrogando Kuroda da due ore. La sua storia regge, ma senti che è stanco. Usi Koi no Takinobori con Pazienza 7. Tiri 5 — successo. Il GM dice: "Ripeti la domanda sull'orario per la sesta volta. Kuroda dice 'le sei e mezza' — ma tre domande fa aveva detto 'le sette'. Si rende conto dell'errore e impallidisce." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Kuroda rallenta, le risposte sono più lente, le mani stanche. Ma la storia tiene. Per ora."
+> **Esempio**: Stai interrogando Kuroda da due ore. La sua storia regge, ma senti che è stanco. Usi La Risalita della Carpa con Pazienza 7. Tiri 5 — successo. Il GM dice: "Ripeti la domanda sull'orario per la sesta volta. Kuroda dice 'le sei e mezza' — ma tre domande fa aveva detto 'le sette'. Si rende conto dell'errore e impallidisce." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Kuroda rallenta, le risposte sono più lente, le mani stanche. Ma la storia tiene. Per ora."
 
-> **Differenza con Pugno di Ferro**: Pugno di Ferro è **pressione psicologica** — il PNG cede perché il peso della tua autorità lo schiaccia. Koi no Takinobori è **persistenza** — il PNG cede perché non molli mai e la sua storia si sgretola nel tempo.
+> **Differenza con Pugno di Ferro**: Pugno di Ferro è **pressione psicologica** — il PNG cede perché il peso della tua autorità lo schiaccia. La Risalita della Carpa è **persistenza** — il PNG cede perché non molli mai e la sua storia si sgretola nel tempo.
 
 ---
 
-#### Chirigiwa 散り際 — L'Istante della Caduta
+#### L'Istante della Caduta 散り際
 *Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
 
 **NUOVO — Stato di allerta.**
@@ -491,7 +491,7 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 - **Successo**: sai cosa sta per svanire e hai un istante per agire
 - **Fallimento**: senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
 
-> **Esempio**: La mattina, prima di uscire per le indagini, attivi Chirigiwa (2 Ki). Tre ore dopo, mentre interroghi un testimone, il GM ti dice: "Chirigiwa si attiva." Tiri con Pazienza 7: dado 5 — successo. Il GM dice: "Senti che il testimone sta per chiudersi definitivamente — hai ancora una domanda, forse due, prima che non parli più. Scegli bene." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Qualcosa sta cambiando in questa conversazione. Senti urgenza, ma non sai cosa stai per perdere."
+> **Esempio**: La mattina, prima di uscire per le indagini, attivi L'Istante della Caduta (2 Ki). Tre ore dopo, mentre interroghi un testimone, il GM ti dice: "L'Istante della Caduta si attiva." Tiri con Pazienza 7: dado 5 — successo. Il GM dice: "Senti che il testimone sta per chiudersi definitivamente — hai ancora una domanda, forse due, prima che non parli più. Scegli bene." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Qualcosa sta cambiando in questa conversazione. Senti urgenza, ma non sai cosa stai per perdere."
 
 ---
 
@@ -501,28 +501,28 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 
 | Attributo | Gou dedicati | Gou dual | Totale |
 |-----------|-------------|----------|--------|
-| **Ascolto** | Ombra della Verità, Porta Socchiusa, Brivido sulla Nuca | Nokori-bi, Chirigiwa | 5 |
+| **Ascolto** | Ombra della Verità, Porta Socchiusa, Brivido sulla Nuca | La Brace che Resta, L'Istante della Caduta | 5 |
 | **Lucidità** | Teatro delle Ombre, Occhio della Gru, Tocco del Medico | Palazzo della Memoria | 4 |
-| **Presenza** | Voce del Tuono, Pugno di Ferro | Koi no Takinobori | 3 |
-| **Distacco** | Passo della Nebbia, Cuore di Ghiaccio, Pietra Fuori Posto | Zanshin, Nokori-bi | 5 |
-| **Silenzio** | Sussurro della Sera, Specchio dell'Anima, Filo Rosso, Yamabiko | — | 4 |
-| **Pazienza** | L'Ora Giusta | Palazzo della Memoria, Zanshin, Koi no Takinobori, Chirigiwa | 5 |
+| **Presenza** | Voce del Tuono, Pugno di Ferro | La Risalita della Carpa | 3 |
+| **Distacco** | Passo della Nebbia, Cuore di Ghiaccio, Pietra Fuori Posto | Lo Spirito che Resta, La Brace che Resta | 5 |
+| **Silenzio** | Sussurro della Sera, Specchio dell'Anima, Filo Rosso, L'Eco della Montagna | — | 4 |
+| **Pazienza** | L'Ora Giusta | Palazzo della Memoria, Lo Spirito che Resta, La Risalita della Carpa, L'Istante della Caduta | 5 |
 
 #### Per Costo
 
 | Costo | Gou |
 |-------|-----|
-| **4 Ki** | Teatro delle Ombre, Yamabiko |
-| **3 Ki** | Ombra della Verità, Porta Socchiusa, Occhio della Gru, Voce del Tuono, Pugno di Ferro, Cuore di Ghiaccio, L'Ora Giusta, Nokori-bi, Koi no Takinobori |
-| **2 Ki** | Brivido sulla Nuca, Tocco del Medico, Passo della Nebbia, Pietra Fuori Posto, Sussurro della Sera, Specchio dell'Anima, Filo Rosso, Palazzo della Memoria, Zanshin, Chirigiwa |
+| **4 Ki** | Teatro delle Ombre, L'Eco della Montagna |
+| **3 Ki** | Ombra della Verità, Porta Socchiusa, Occhio della Gru, Voce del Tuono, Pugno di Ferro, Cuore di Ghiaccio, L'Ora Giusta, La Brace che Resta, La Risalita della Carpa |
+| **2 Ki** | Brivido sulla Nuca, Tocco del Medico, Passo della Nebbia, Pietra Fuori Posto, Sussurro della Sera, Specchio dell'Anima, Filo Rosso, Palazzo della Memoria, Lo Spirito che Resta, L'Istante della Caduta |
 
 #### Famiglia Percezione Retroattiva
 
 | Gou | Senso | Attributo | Costo | Vincolo |
 |-----|-------|-----------|-------|---------|
 | Teatro delle Ombre | Vista | Lucidità | 4 Ki | Sul luogo, entro 48h, Lucidità ≥ 7 |
-| Yamabiko | Udito | Silenzio | 4 Ki | Sul luogo, entro 48h, Silenzio ≥ 7 |
-| Nokori-bi | Empatia | Ascolto/Distacco | 3 Ki | Sul luogo, entro 24-48h |
+| L'Eco della Montagna | Udito | Silenzio | 4 Ki | Sul luogo, entro 48h, Silenzio ≥ 7 |
+| La Brace che Resta | Empatia | Ascolto/Distacco | 3 Ki | Sul luogo, entro 24-48h |
 
 ---
 

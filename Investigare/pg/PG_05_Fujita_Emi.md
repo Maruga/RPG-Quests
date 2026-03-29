@@ -33,34 +33,55 @@
 
 ## KI (TENUTA)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
 
-### Opzione 1: Specchio dell'Anima
+### Opzione 1: Specchio dell'Anima 魂の鏡
 *Vedi oltre la maschera. Senti le emozioni vere di una persona.*
-- **Attributo**: Ascolto
+- **Attributo**: Silenzio
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Ascolto): Senti l'emozione dominante e capisci perché la prova
+- **Successo** (2d6 ≤ Silenzio): Senti l'emozione dominante e capisci perché la prova
 - **Fallimento**: Senti l'emozione, ma non la sua origine
 
-### Opzione 2: Tocco del Medico
+> La vedova ti ringrazia per le condoglianze. Sotto il dolore c'è sollievo. Non è il dolore di chi ha perso qualcuno che amava davvero.
+
+### Opzione 2: L'Eco della Montagna 山彦
+*Le parole non scompaiono. Nel tuo silenzio, le senti.*
+- **Attributo**: Silenzio (requisito: Silenzio ≥ 7)
+- **Costo**: 4 Ki
+- **Vincolo**: devi essere sul luogo, entro 48 ore dal fatto
+- **Successo** (2d6 ≤ Silenzio): Frammenti di frasi riconoscibili — parole chiave, toni (rabbia, paura, supplica), il numero di voci presenti
+- **Fallimento**: Suoni indistinti — un tono emotivo generale senza parole riconoscibili
+
+> Nell'ufficio dell'ultima discussione. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
+
+### Opzione 3: Tocco del Medico 医者の手
 *Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
 - **Attributo**: Lucidità
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Dettagli precisi - tipo di trauma, natura della paura, segni di stress cronico
+- **Successo** (2d6 ≤ Lucidità): Dettagli precisi — tipo di trauma, natura della paura, segni di stress cronico
 - **Fallimento**: Capisci che qualcosa non va, ma non riesci a definirlo con precisione
 
-### Opzione 3: Sussurro della Sera
-*La tua voce calma. Le persone si tranquillizzano in tua presenza.*
-- **Attributo**: Silenzio
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Silenzio): La persona si calma completamente e inizia a fidarsi di te
-- **Fallimento**: La persona si calma, ma resta guardinga e sospettosa
+> Un testimone è a disagio. "Le mani tremano — non è paura, è astinenza. Non beve da almeno due giorni."
 
 ---
 

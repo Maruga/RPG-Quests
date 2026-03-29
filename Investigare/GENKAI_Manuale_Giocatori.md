@@ -324,16 +324,16 @@ La tua tranquillità mette le persone a loro agio immediatamente.
 
 ---
 
-**Yamabiko** 山彦 — L'Eco della Montagna *(Silenzio — 4 Ki)*
+**L'Eco della Montagna** 山彦 — L'Eco della Montagna *(Silenzio — 4 Ki)*
 Le parole non scompaiono. Nel tuo silenzio, le senti.
 
 Richiede Silenzio ≥ 7. Devi essere fisicamente sul luogo, entro 48 ore dal fatto.
 - Successo: frammenti di frasi riconoscibili — parole chiave, toni, il numero di voci presenti
 - Fallimento: suoni indistinti — un tono emotivo generale senza parole riconoscibili
 
-Teatro delle Ombre **vede** (Lucidità). Yamabiko **sente parole** (Silenzio). Stessa famiglia, sensi diversi.
+Teatro delle Ombre **vede** (Lucidità). L'Eco della Montagna **sente parole** (Silenzio). Stessa famiglia, sensi diversi.
 
-> **Esempio**: Sei nell'ufficio dell'ultima discussione. Usi Yamabiko (Silenzio 8). Tiri 7 — successo. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
+> **Esempio**: Sei nell'ufficio dell'ultima discussione. Usi L'Eco della Montagna (Silenzio 8). Tiri 7 — successo. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
 
 ---
 
@@ -358,47 +358,47 @@ Dual-attribute: scegli se usare Lucidità (analisi) o Pazienza (attesa che il ri
 
 ---
 
-**Nokori-bi** 残り火 — La Brace che Resta *(Ascolto o Distacco — 3 Ki)*
+**La Brace che Resta** 残り火 — La Brace che Resta *(Ascolto o Distacco — 3 Ki)*
 Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.
 
-Dual-attribute. Devi essere sul luogo, entro 24-48 ore. Teatro delle Ombre **vede**, Yamabiko **sente parole**, Nokori-bi **percepisce emozioni**.
+Dual-attribute. Devi essere sul luogo, entro 24-48 ore. Teatro delle Ombre **vede**, L'Eco della Montagna **sente parole**, La Brace che Resta **percepisce emozioni**.
 - Successo: senti le emozioni dominanti e quante presenze diverse c'erano
 - Fallimento: un'impressione generale (paura, tensione) senza distinzione tra le persone
 
-> **Esempio**: Nella stanza dell'omicidio. Usi Nokori-bi con Ascolto 7. Tiri 5 — successo. "Due presenze. La prima: paura crescente, poi terrore. La seconda: determinazione fredda, nessuna esitazione."
+> **Esempio**: Nella stanza dell'omicidio. Usi La Brace che Resta con Ascolto 7. Tiri 5 — successo. "Due presenze. La prima: paura crescente, poi terrore. La seconda: determinazione fredda, nessuna esitazione."
 
 ---
 
-**Zanshin** 残心 — Lo Spirito che Resta *(Distacco o Pazienza — 2 Ki)*
+**Lo Spirito che Resta** 残心 — Lo Spirito che Resta *(Distacco o Pazienza — 2 Ki)*
 Lo spirito del samurai che non cede. La consapevolezza che persiste.
 
 Dual-attribute. Attivabile solo a Ki 4 o 5 (vicino al crollo, non ancora in Genkai).
 - Successo: per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli
 - Fallimento: solo il 12 è protetto. L'11 resta Nami negativo
 
-> **Esempio**: Sei a Ki 4. Il caso è al momento critico. Usi Zanshin con Distacco 7. Tiri 6 — successo. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
+> **Esempio**: Sei a Ki 4. Il caso è al momento critico. Usi Lo Spirito che Resta con Distacco 7. Tiri 6 — successo. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
 
 ---
 
-**Koi no Takinobori** 鯉の滝登り — La Risalita della Carpa *(Pazienza o Presenza — 3 Ki)*
+**La Risalita della Carpa** 鯉の滝登り — La Risalita della Carpa *(Pazienza o Presenza — 3 Ki)*
 Non molli. Mai. La tua pazienza è una forza della natura.
 
-Dual-attribute. L'interrogatorio deve essere in corso da tempo. Koi no Takinobori è **persistenza** (la storia si sgretola). Pugno di Ferro è **pressione** (il PNG cede al tuo peso).
+Dual-attribute. L'interrogatorio deve essere in corso da tempo. La Risalita della Carpa è **persistenza** (la storia si sgretola). Pugno di Ferro è **pressione** (il PNG cede al tuo peso).
 - Successo: il PNG si contraddice su un punto specifico
 - Fallimento: il PNG è stanco, la coerenza vacilla, ma la storia regge
 
-> **Esempio**: Interroghi Kuroda da due ore. Usi Koi no Takinobori con Pazienza 7. Tiri 5 — successo. Ripeti la domanda sull'orario. "Le sei e mezza" — ma tre domande fa aveva detto "le sette". Impallidisce.
+> **Esempio**: Interroghi Kuroda da due ore. Usi La Risalita della Carpa con Pazienza 7. Tiri 5 — successo. Ripeti la domanda sull'orario. "Le sei e mezza" — ma tre domande fa aveva detto "le sette". Impallidisce.
 
 ---
 
-**Chirigiwa** 散り際 — L'Istante della Caduta *(Pazienza o Ascolto — 2 Ki)*
+**L'Istante della Caduta** 散り際 — L'Istante della Caduta *(Pazienza o Ascolto — 2 Ki)*
 Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.
 
 Dual-attribute. Stato di allerta: paghi 2 Ki e ti "armi". Lo stato dura per il resto della giornata in-game. Si attiva automaticamente la prima volta che qualcosa sta per svanire (PNG in fuga, prova in distruzione, finestra che si chiude). Il tiro si fa in quel momento, non all'attivazione.
 - Successo: sai cosa sta per svanire e hai un istante per agire
 - Fallimento: senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
 
-> **Esempio**: La mattina attivi Chirigiwa (2 Ki). Tre ore dopo, durante un interrogatorio, il GM dice: "Chirigiwa si attiva." Tiri Pazienza 7: dado 5. "Il testimone sta per chiudersi. Hai ancora una domanda prima che non parli più."
+> **Esempio**: La mattina attivi L'Istante della Caduta (2 Ki). Tre ore dopo, durante un interrogatorio, il GM dice: "L'Istante della Caduta si attiva." Tiri Pazienza 7: dado 5. "Il testimone sta per chiudersi. Hai ancora una domanda prima che non parli più."
 
 ---
 
@@ -420,13 +420,13 @@ Dual-attribute. Stato di allerta: paghi 2 Ki e ti "armi". Lo stato dura per il r
 | Sussurro della Sera | Silenzio | 2 Ki | Calma una persona |
 | Specchio dell'Anima | Silenzio | 2 Ki | Legge emozioni vere |
 | Filo Rosso | Silenzio | 2 Ki | Connessione istantanea, En +1 |
-| Yamabiko | Silenzio | 4 Ki | Echi di parole passate (48h, ≥7) |
+| L'Eco della Montagna | Silenzio | 4 Ki | Echi di parole passate (48h, ≥7) |
 | L'Ora Giusta | Pazienza | 3 Ki | +3 / +1 al prossimo tiro |
 | Palazzo della Memoria | Lucidità/Pazienza | 2 Ki | Richiamo fotografico |
-| Nokori-bi | Ascolto/Distacco | 3 Ki | Residui emotivi in un luogo (24-48h) |
-| Zanshin | Distacco/Pazienza | 2 Ki | Protezione dal crollo (a Ki 4-5) |
-| Koi no Takinobori | Pazienza/Presenza | 3 Ki | Persistenza — il PNG si contraddice |
-| Chirigiwa | Pazienza/Ascolto | 2 Ki | Stato allerta — coglie ciò che svanisce |
+| La Brace che Resta | Ascolto/Distacco | 3 Ki | Residui emotivi in un luogo (24-48h) |
+| Lo Spirito che Resta | Distacco/Pazienza | 2 Ki | Protezione dal crollo (a Ki 4-5) |
+| La Risalita della Carpa | Pazienza/Presenza | 3 Ki | Persistenza — il PNG si contraddice |
+| L'Istante della Caduta | Pazienza/Ascolto | 2 Ki | Stato allerta — coglie ciò che svanisce |
 
 ---
 

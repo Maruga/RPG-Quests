@@ -22,7 +22,8 @@
       "Bash(for f in 0*.html)",
       "Bash(do echo -n \"$f: \")",
       "Read(//c/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Investigare/Avventura Sake/handout/**)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(pip install:*)"
     ]
   }
 }
