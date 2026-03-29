@@ -18,6 +18,11 @@
 | **Kiwami** | 極 | *Estremo* — risultato critico del dado (2 o 12) |
 | **Nami** | 波 | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi |
 | **Nasake** | 情け | *Compassione* — punto Ki conservato quando il bonus andrebbe perso |
+| **Yamabiko** | 山彦 | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva) |
+| **Nokori-bi** | 残り火 | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva) |
+| **Zanshin** | 残心 | *Spirito che Resta* — disciplina del samurai, protezione dal crollo |
+| **Chirigiwa** | 散り際 | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura) |
+| **Koi no Takinobori** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio |
 
 ---
 
@@ -132,13 +137,19 @@ Il Nasake **non si usa su se stessi** — si dona a un altro PG. Il PG deve farl
 ## Gou 業
 *Il Debito*
 
-Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere - è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
+Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere — è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
 
 **Ogni PG ha un solo Gou.**
 
 ### Meccanica
 
-**Costo**: Sacrifichi parte di te stesso (2 Ki)
+**Costo**: variabile per Gou (2, 3 o 4 Ki). Il secondo uso nella stessa sessione **costa il doppio**.
+
+| Costo base | Primo uso | Secondo uso |
+|------------|-----------|-------------|
+| 2 Ki | 2 Ki | 4 Ki |
+| 3 Ki | 3 Ki | 6 Ki |
+| 4 Ki | 4 Ki | 8 Ki |
 
 **Tiro**: 2d6 ≤ attributo rilevante
 
@@ -147,155 +158,371 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 | Successo | Funziona con dettagli precisi e completi |
 | Fallimento | Funziona con dettagli vaghi o parziali |
 
-**Importante**: Non esistono Kiwami né Nami per il Gou. Funziona sempre - la differenza è solo nella precisione delle informazioni ottenute.
+**Importante**: Non esistono Kiwami né Nami per il Gou. Funziona sempre — la differenza è solo nella precisione delle informazioni ottenute.
+
+**Dual-Attribute**: Alcuni Gou hanno due attributi possibili. Il giocatore sceglie quale usare al momento dell'attivazione. Il tiro si fa sull'attributo scelto.
+
+> **Definizione — Tiro emotivo**: qualsiasi tiro provocato dalla scena che colpisce il PG — Distacco per scene brutali o scioccanti, Silenzio per provocazioni o pressione, reazioni al Kage. NON include tiri dove il PG agisce volontariamente: Presenza per fare pressione, Ascolto per cogliere bugie, Lucidità per analizzare una scena.
 
 ---
 
-### Lista dei Gou
+### I Gou — Ascolto
 
-#### Ombra della Verità
+---
+
+#### Ombra della Verità 影の真実
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
+
 - **Attributo**: Ascolto
-- **Successo**: Sai che mente e su cosa sta mentendo
-- **Fallimento**: Sai che mente, ma non riesci a capire su quale parte
+- **Costo**: 3 Ki
+- **Vincolo**: devi aver parlato con la persona per almeno qualche minuto
+- **Successo**: certezza della bugia + l'area generale (mente sull'orario, su una persona, su un luogo — non il contenuto specifico)
+- **Fallimento**: senti disonestà, ma non distingui se è bugia deliberata, nervosismo, o qualcosa di personale non legato al caso
+
+> **Esempio**: Il testimone descrive il suo alibi. Usi Ombra della Verità (Ascolto 8). Tiri 5 — successo. Il GM dice: "Sta mentendo. È qualcosa legato a un luogo — quando parla di dove si trovava, la voce cambia." Non sai cosa ha mentito, ma sai dove scavare. Se avessi tirato 9 — fallimento — il GM avrebbe detto: "C'è qualcosa di stonato nel suo racconto, ma potrebbe essere nervosismo. Non sei sicuro."
+
+> **Differenza con Specchio dell'Anima**: Ombra della Verità rileva le **bugie** — il PNG dice il falso. Specchio dell'Anima legge le **emozioni vere** — cosa prova davvero, anche quando non mente.
 
 ---
 
-#### Specchio dell'Anima
-*Vedi oltre la maschera. Senti le emozioni vere di una persona.*
-- **Attributo**: Ascolto
-- **Successo**: Senti l'emozione dominante e capisci perché la prova
-- **Fallimento**: Senti l'emozione, ma non la sua origine
-
----
-
-#### Voce del Tuono
-*La tua presenza diventa schiacciante. Il PNG sente il peso della tua autorità.*
-- **Attributo**: Presenza
-- **Successo**: Il PNG è completamente sottomesso, cede o si ritira
-- **Fallimento**: Il PNG è intimidito e scosso, ma non cede completamente
-
----
-
-#### Occhio della Gru
-*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
-- **Attributo**: Lucidità
-- **Successo**: Noti il dettaglio nascosto e ne capisci immediatamente il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
-
----
-
-#### Tocco del Medico
-*Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
-- **Attributo**: Lucidità
-- **Successo**: Dettagli precisi - tipo di trauma, natura della paura, segni di stress cronico
-- **Fallimento**: Capisci che qualcosa non va, ma non riesci a definirlo con precisione
-
----
-
-#### Sussurro della Sera
-*La tua voce calma. Le persone si tranquillizzano in tua presenza.*
-- **Attributo**: Silenzio
-- **Successo**: La persona si calma completamente e inizia a fidarsi di te
-- **Fallimento**: La persona si calma, ma resta guardinga e sospettosa
-
----
-
-#### Passo della Nebbia
-*Ti muovi senza farti notare. La gente guarda attraverso di te.*
-- **Attributo**: Distacco
-- **Successo**: Passi completamente inosservato, puoi osservare e ascoltare indisturbato
-- **Fallimento**: Non attiri attenzione diretta, ma qualcuno potrebbe ricordarti vagamente
-
----
-
-#### Porta Socchiusa
+#### Porta Socchiusa 開きかけの扉
 *Le persone si aprono con te. Dicono più di quanto vorrebbero.*
+
 - **Attributo**: Ascolto
-- **Successo**: Il PNG rivela qualcosa che non voleva assolutamente dire
-- **Fallimento**: Il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo
+- **Costo**: 3 Ki
+- **Vincolo**: richiede conversazione in corso (non si usa come apertura)
+- **Successo**: il PNG rivela qualcosa che non voleva assolutamente dire
+- **Fallimento**: il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo
+
+> **Esempio**: Stai parlando con la moglie della vittima da dieci minuti. Usi Porta Socchiusa (Ascolto 7). Tiri 6 — successo. Il GM dice: "A un certo punto, mentre parla del marito, le sfugge: 'Era cambiato, da quando aveva ricominciato a vederla.' Si blocca. Non voleva dirlo." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "La voce le trema quando parla degli ultimi mesi. Stava per aggiungere qualcosa, ma si è fermata. Ha deglutito e ha cambiato argomento."
 
 ---
 
-#### Teatro delle Ombre
-*Guardando una scena, visualizzi come si sono svolti gli eventi.*
-- **Attributo**: Lucidità
-- **Successo**: Vedi la sequenza completa - chi ha fatto cosa, in che ordine, con quali movimenti
-- **Fallimento**: Vedi frammenti disconnessi - immagini, gesti, ma non la sequenza chiara
-
----
-
-#### Palazzo della Memoria
-*Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
-- **Attributo**: Lucidità
-- **Successo**: Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
-- **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
-
----
-
-#### Pietra Fuori Posto
-*Percepisci immediatamente cosa non torna in un luogo o situazione.*
-- **Attributo**: Lucidità
-- **Successo**: Sai cosa stona e perché - il dettaglio e il suo significato
-- **Fallimento**: Senti che qualcosa è sbagliato, ma non riesci a definirlo con precisione
-
----
-
-#### Brivido sulla Nuca
+#### Brivido sulla Nuca 首筋の寒気
 *Percepisci il pericolo prima che si manifesti.*
+
 - **Attributo**: Ascolto
-- **Successo**: Senti la minaccia e sai da dove o da chi arriva
-- **Fallimento**: Senti che qualcosa non va, ma non sai da dove viene il pericolo
+- **Costo**: 2 Ki
+- **Successo**: senti la minaccia e sai da dove o da chi arriva
+- **Fallimento**: senti che qualcosa non va, ma non sai da dove viene il pericolo
+
+> **Esempio**: Stai interrogando un sospettato nel suo appartamento. Usi Brivido sulla Nuca (Ascolto 7). Tiri 5 — successo. Il GM dice: "Qualcosa non va. Il sospettato continua a guardare verso la cucina — c'è qualcuno là dentro." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "I peli sulla nuca si drizzano. Qualcosa è sbagliato in questa stanza, ma non sai cosa."
 
 ---
 
-#### Pugno di Ferro
-*La tua pressione psicologica è implacabile. Pochi resistono.*
+### I Gou — Lucidità
+
+---
+
+#### Teatro delle Ombre 影芝居
+*Guardando una scena, vedi le sagome sbiadite di ciò che è accaduto.*
+
+**Famiglia Percezione Retroattiva (Vista)**
+
+- **Attributo**: Lucidità
+- **Costo**: 4 Ki
+- **Requisito**: Lucidità ≥ 7
+- **Vincolo**: devi essere fisicamente sul luogo, entro 48 ore dal fatto
+- **Successo**: 2-3 momenti chiave come sagome sbiadite in movimento — figure semi-trasparenti, ombre su un muro. Posizioni e movimenti generali, nell'ordine giusto, con vuoti tra loro. Non volti, non dettagli
+- **Fallimento**: un singolo momento congelato — una sagoma, una posizione, senza prima né dopo
+
+> **Esempio**: Sei nell'appartamento dove è avvenuto l'omicidio ieri notte. Usi Teatro delle Ombre (Lucidità 8). Tiri 6 — successo. Il GM dice: "Chiudi gli occhi. Vedi sagome sbiadite, come ombre proiettate su un muro. Primo momento: due figure in piedi, una di fronte all'altra. Secondo momento: una figura a terra, l'altra china su di lei. Terzo momento: la figura in piedi si muove verso la finestra, non verso la porta." Non vedi volti, non vedi dettagli — ma sai che l'assassino è uscito dal balcone. Se avessi tirato 10 — fallimento — il GM avrebbe detto: "Un'immagine sola, congelata: una sagoma a terra. Nient'altro."
+
+> **Differenza con Occhio della Gru**: Teatro delle Ombre ricostruisce **eventi passati** come visioni sfocate. Occhio della Gru trova un **dettaglio fisico presente** nella scena.
+
+---
+
+#### Occhio della Gru 鶴の目
+*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
+
+- **Attributo**: Lucidità
+- **Costo**: 3 Ki
+- **Vincolo**: devi dichiarare **dove** stai guardando (un'area, un oggetto, un aspetto della scena)
+- **Successo**: trovi il dettaglio nascosto e capisci **in che direzione punta** (non il significato completo)
+- **Fallimento**: percepisci **quanti** elementi fuori posto ci sono nella scena (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
+
+> **Esempio**: Sei sulla scena del crimine e dichiari: "Guardo attorno alla finestra." Usi Occhio della Gru (Lucidità 8). Tiri 7 — successo. Il GM dice: "C'è una fibra di tessuto sul bordo inferiore della finestra. Qualcuno è passato da qui — verso l'esterno." Non sai chi, ma hai una direzione. Se avessi tirato 9 — fallimento — il GM avrebbe detto: "In questa stanza c'è più di una cosa che non torna. Almeno due elementi fuori posto." Non sai cosa sono — ma sai che vale la pena cercare ancora.
+
+---
+
+#### Tocco del Medico 医者の手
+*Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
+
+- **Attributo**: Lucidità
+- **Costo**: 2 Ki
+- **Successo**: dettagli precisi — tipo di trauma, natura della paura, segni di stress cronico
+- **Fallimento**: capisci che qualcosa non va, ma non riesci a definirlo con precisione
+
+> **Esempio**: Un testimone è visibilmente a disagio. Usi Tocco del Medico (Lucidità 7). Tiri 5 — successo. Il GM dice: "Le mani tremano in modo specifico — non è paura, è astinenza. Quest'uomo ha un problema con l'alcol, e non beve da almeno due giorni." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Il suo corpo ti dice che sta subendo qualcosa di fisico, non solo emotivo. Ma non riesci a capire cosa."
+
+---
+
+### I Gou — Presenza
+
+---
+
+#### Voce del Tuono 雷の声
+*Esplosione di autorità in un momento preciso. Una frase, uno sguardo. Interruzione totale.*
+
 - **Attributo**: Presenza
-- **Successo**: Il PNG cede su un punto importante - confessa, collabora, si ritira
-- **Fallimento**: Il PNG è scosso, sotto pressione, ma non cede completamente
+- **Costo**: 3 Ki
+- **Successo**: il PNG si ferma — qualche secondo di sottomissione assoluta, perde il filo di quello che stava facendo o dicendo
+- **Fallimento**: il PNG esita, perde il filo per un istante
+
+> **Esempio**: Il sospettato sta per alzarsi e andarsene. Usi Voce del Tuono (Presenza 7). Tiri 4 — successo. Il GM dice: "'SEDUTO.' La tua voce taglia l'aria. Nakamura si blocca a metà movimento, le gambe cedono, si risiede. Per cinque secondi non sa più cosa stava facendo." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Nakamura esita un istante — la mano sul bracciolo, lo sguardo che vacilla — poi si riprende e si alza comunque."
+
+> **Differenza con Pugno di Ferro**: Voce del Tuono è un **momento** — un'esplosione di autorità che interrompe. Pugno di Ferro è una **pressione costante** che fa cedere il PNG su un punto specifico. Il Tuono ferma; il Pugno piega.
 
 ---
 
-#### Filo Rosso
-*Crei connessioni istantanee. Le persone sentono di conoscerti da sempre.*
-- **Attributo**: Ascolto
-- **Successo**: La relazione con il PNG parte da +1
-- **Fallimento**: Il PNG è ben disposto, ma la relazione resta a 0
+#### Pugno di Ferro 鉄拳
+*Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*
+
+- **Attributo**: Presenza
+- **Costo**: 3 Ki
+- **Successo**: il PNG cede su un punto importante specifico — ammette, collabora, si ritira
+- **Fallimento**: il PNG è scosso e sotto pressione, ma non cede
+
+> **Esempio**: Stai interrogando il socio della vittima da mezz'ora. Usi Pugno di Ferro (Presenza 8). Tiri 6 — successo. Il GM dice: "Hayashi abbassa gli occhi. 'Va bene. Sì, lo sapevo dei debiti. Ma non l'ho ucciso.' Ha ceduto sul punto — ammette di aver saputo dei debiti, qualcosa che negava da tre interrogatori." Se avessi tirato 10 — fallimento — il GM avrebbe detto: "Hayashi è visibilmente a disagio, le mani stringono il tavolo, ma scuote la testa: 'Non so di cosa parli.' Non cede."
 
 ---
 
-#### Cuore di Ghiaccio
-*Ti distacchi completamente dalla situazione. Niente ti tocca.*
+### I Gou — Distacco
+
+---
+
+#### Passo della Nebbia 霧の歩み
+*Ti muovi senza farti notare. La gente guarda attraverso di te.*
+
 - **Attributo**: Distacco
-- **Successo**: Per il resto della scena, agisci normalmente senza bisogno di tiri emotivi
-- **Fallimento**: Resti lucido ma la tensione si accumula - il prossimo tiro emotivo ha -2
+- **Costo**: 2 Ki
+- **Successo**: passi completamente inosservato, puoi osservare e ascoltare indisturbato
+- **Fallimento**: non attiri attenzione diretta, ma qualcuno potrebbe ricordarti vagamente
+
+> **Esempio**: Vuoi osservare il sospettato al bar senza che ti noti. Usi Passo della Nebbia (Distacco 7). Tiri 5 — successo. Il GM dice: "Ti siedi due tavoli più in là. Nessuno ti guarda. Il sospettato parla liberamente al telefono — puoi ascoltare tutto." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Nessuno ti nota direttamente, ma la cameriera ti ha guardato un secondo di troppo. Se qualcuno chiede, potrebbe ricordarsi di te."
 
 ---
 
-#### L'Ora Giusta
+#### Cuore di Ghiaccio 氷の心
+*Ti distacchi completamente dalla situazione. Niente ti tocca.*
+
+- **Attributo**: Distacco
+- **Costo**: 3 Ki
+- **Successo**: il primo tiro emotivo della scena è **successo automatico** (uno solo, non tutti)
+- **Fallimento**: **+2** al prossimo tiro emotivo (uno solo)
+
+> **Esempio**: Stai per entrare nell'obitorio per vedere il corpo di un bambino. Usi Cuore di Ghiaccio (Distacco 7). Tiri 6 — successo. Il GM dice: "Entri. Vedi il corpo. Non senti nulla — un gelo professionale ti avvolge. Il primo impatto non ti tocca." Il tiro di Distacco che il GM avrebbe chiesto è automaticamente superato. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Non riesci a distaccarti del tutto, ma sei più preparato." Al prossimo tiro emotivo hai +2.
+
+> **Nota**: per "tiro emotivo" si intende qualsiasi tiro provocato dalla scena che colpisce il PG (vedi definizione nella sezione Meccanica del Gou).
+
+---
+
+#### Pietra Fuori Posto 不釣り合いの石
+*Percepisci immediatamente cosa non torna in un luogo o situazione.*
+
+Spostato da Lucidità a Distacco: il tuo distacco emotivo ti fa percepire la dissonanza che altri non sentono perché sono coinvolti nella scena.
+
+- **Attributo**: Distacco
+- **Costo**: 2 Ki
+- **Successo**: sai cosa stona e perché — il dettaglio e il suo significato
+- **Fallimento**: senti che qualcosa è sbagliato, ma non riesci a definirlo con precisione
+
+> **Esempio**: Entri nell'ufficio della vittima. Usi Pietra Fuori Posto (Distacco 6). Tiri 4 — successo. Il GM dice: "Tutto sembra in ordine — troppo in ordine. La scrivania è stata pulita di recente. Qualcuno ha riordinato questo ufficio dopo la morte." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Qualcosa non va in questa stanza. Non sai cosa, ma il tuo istinto ti dice che quello che vedi non è come dovrebbe essere."
+
+> **Differenza con Occhio della Gru**: Pietra Fuori Posto è **intuitiva** — senti la dissonanza, il "qualcosa non torna". Occhio della Gru è **analitica** — trovi il dettaglio fisico specifico. Pietra Fuori Posto funziona con il Distacco (non sei coinvolto, quindi vedi), Occhio della Gru con la Lucidità (analizzi e trovi).
+
+---
+
+### I Gou — Silenzio
+
+---
+
+#### Sussurro della Sera 夕暮れの囁き
+*La tua voce calma. Le persone si tranquillizzano in tua presenza.*
+
+- **Attributo**: Silenzio
+- **Costo**: 2 Ki
+- **Successo**: la persona si calma completamente e inizia a fidarsi di te
+- **Fallimento**: la persona si calma, ma resta guardinga e sospettosa
+
+> **Esempio**: Una testimone è in stato di shock, non riesce a parlare. Usi Sussurro della Sera (Silenzio 7). Tiri 5 — successo. Il GM dice: "La tua voce bassa e costante la raggiunge. Dopo un minuto il respiro rallenta, le mani smettono di tremare. Ti guarda negli occhi per la prima volta." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Si calma un po', ma tiene le braccia incrociate. Ti ascolta, ma non si fida."
+
+---
+
+#### Specchio dell'Anima 魂の鏡
+*Vedi oltre la maschera. Senti le emozioni vere di una persona.*
+
+Spostato da Ascolto a Silenzio: la tua calma interiore riflette le emozioni altrui come uno specchio d'acqua ferma.
+
+- **Attributo**: Silenzio
+- **Costo**: 2 Ki
+- **Successo**: senti l'emozione dominante e capisci perché la prova
+- **Fallimento**: senti l'emozione, ma non la sua origine
+
+> **Esempio**: La vedova ti ringrazia per le condoglianze. Usi Specchio dell'Anima (Silenzio 6). Tiri 4 — successo. Il GM dice: "Sotto il dolore c'è sollievo. Non è il dolore di chi ha perso qualcuno che amava — è il dolore di chi sa che dovrebbe soffrire di più." Se avessi tirato 7 — fallimento — il GM avrebbe detto: "C'è qualcosa che non è dolore puro. Un'altra emozione, sotto la superficie. Ma non riesci a darle un nome."
+
+---
+
+#### Filo Rosso 赤い糸
+*Crei connessioni istantanee. Le persone sentono di conoscerti da sempre.*
+
+Spostato da Ascolto a Silenzio: la tua tranquillità mette le persone a loro agio immediatamente.
+
+- **Attributo**: Silenzio
+- **Costo**: 2 Ki
+- **Successo**: la relazione con il PNG parte da En +1
+- **Fallimento**: il PNG è ben disposto, ma la relazione resta a En 0
+
+> **Esempio**: Arrivi per la prima volta da un testimone anziano e diffidente. Usi Filo Rosso (Silenzio 7). Tiri 6 — successo. Il GM dice: "Il vecchio ti guarda e qualcosa nel suo sguardo si ammorbidisce. 'Entra, entra. Vuoi un tè?' La relazione parte da En +1 — amichevole." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Il vecchio ti apre la porta. Non è ostile, ma nemmeno caloroso. En resta a 0 — neutro. Dovrai guadagnarti la sua fiducia."
+
+---
+
+#### Yamabiko 山彦 — L'Eco della Montagna
+*Le parole non scompaiono. Restano intrappolate nello spazio, e nel tuo silenzio le senti.*
+
+**NUOVO — Famiglia Percezione Retroattiva (Udito)**
+
+- **Attributo**: Silenzio
+- **Costo**: 4 Ki
+- **Requisito**: Silenzio ≥ 7
+- **Vincolo**: devi essere fisicamente sul luogo, entro 48 ore dal fatto
+- **Successo**: frammenti di frasi riconoscibili — non conversazioni intere, ma parole chiave, toni (rabbia, paura, supplica), il numero di voci presenti
+- **Fallimento**: suoni indistinti — un tono emotivo generale (c'è stata violenza, c'è stata calma, c'è stato pianto) senza parole riconoscibili
+
+> **Esempio**: Sei nell'ufficio dove la vittima ha avuto l'ultima discussione ieri pomeriggio. Usi Yamabiko (Silenzio 8). Tiri 7 — successo. Il GM dice: "Nel silenzio, le parole emergono come echi lontani. Due voci — una calma, una agitata. La voce agitata dice qualcosa come '...non puoi farlo...' e poi '...ti distruggerò...'. La voce calma risponde, ma le parole sono indistinte." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Senti un tono emotivo residuo — rabbia, tensione. Due presenze. Ma nessuna parola distinguibile."
+
+> **Differenza con Teatro delle Ombre**: Teatro delle Ombre **vede** sagome sbiadite (Lucidità). Yamabiko **sente** echi di parole (Silenzio). Sono la stessa famiglia — Percezione Retroattiva — ma sensi diversi, attributi diversi. Un gruppo con entrambi i Gou ricostruisce molto di più.
+
+---
+
+### I Gou — Pazienza
+
+---
+
+#### L'Ora Giusta 正しい時
 *Sai quando è il momento perfetto per parlare, agire, colpire.*
+
 - **Attributo**: Pazienza
-- **Successo**: La prossima azione è un successo automatico
-- **Fallimento**: Hai +2 al prossimo tiro (senti che il momento è vicino, ma non perfetto)
+- **Costo**: 3 Ki
+- **Successo**: **+3** al prossimo tiro
+- **Fallimento**: **+1** al prossimo tiro
+- **Nota**: il bonus decade se non usato entro la scena corrente
+
+> **Esempio**: Hai le prove per inchiodare il sospettato ma sai che il momento deve essere perfetto. Usi L'Ora Giusta (Pazienza 7). Tiri 5 — successo. Il GM dice: "Senti il momento — ora. Non un secondo prima, non un secondo dopo." Il tuo prossimo tiro ha +3. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Il momento è vicino, lo senti, ma non è perfetto." Il tuo prossimo tiro ha +1.
 
 ---
 
-### Esempio di Gou in Azione
+### I Gou — Dual-Attribute
 
-**Situazione**: Un testimone racconta il suo alibi.
+I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare al momento dell'attivazione.
 
-**Giocatore**: "Voglio usare Ombra della Verità. Sacrifico parte di me stesso."
+---
 
-**GM**: "Tira Ascolto."
+#### Palazzo della Memoria 記憶の宮殿
+*Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
 
-**Giocatore** (Ascolto 8): "Ho fatto 6. Successo."
+- **Attributo**: Lucidità o Pazienza (a scelta)
+- **Costo**: 2 Ki
+- **Vincolo**: devi specificare cosa stai cercando di ricordare
+- **Successo**: ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
+- **Fallimento**: ricordi il dettaglio principale, ma sfocato o incompleto
 
-**GM**: "Sta mentendo quando parla del bar. Non era lì quella sera - lo senti con certezza."
+> **Esempio**: Tre giorni fa hai visto un documento sulla scrivania della vittima, ma non l'hai letto. Usi Palazzo della Memoria con Lucidità 8. Tiri 6 — successo. Il GM dice: "Ricordi il documento — era un estratto conto. Non l'hai letto, ma ora vedi nella memoria anche un dettaglio che non avevi notato: il logo in alto non era della banca che la vittima usava abitualmente." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Ricordi che c'era un documento — qualcosa di bancario. Ma i dettagli sono sfocati, non riesci a leggere i numeri."
 
-*Se avesse tirato 9 (fallimento):*
+---
 
-**GM**: "Sai con certezza che sta mentendo da qualche parte nel suo racconto, ma non riesci a capire esattamente su cosa. L'orario? Il luogo? Qualcuno che ha visto? Non è chiaro."
+#### Nokori-bi 残り火 — La Brace che Resta
+*Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.*
+
+**NUOVO — Famiglia Percezione Retroattiva (Empatia)**
+
+- **Attributo**: Ascolto o Distacco (a scelta)
+- **Costo**: 3 Ki
+- **Vincolo**: devi essere fisicamente sul luogo, entro 24-48 ore dal fatto
+- **Successo**: senti le emozioni dominanti e quante "presenze emotive" diverse c'erano. Distingui paura da rabbia da dolore da determinazione fredda
+- **Fallimento**: un'impressione emotiva generale (questo luogo trasuda paura, oppure qui c'era tensione) senza distinzione tra le persone presenti
+
+> **Esempio**: Sei nella stanza dove è avvenuto l'omicidio la notte scorsa. Usi Nokori-bi con Ascolto 7. Tiri 5 — successo. Il GM dice: "Due presenze emotive. La prima: paura crescente, poi terrore puro — la vittima. La seconda: determinazione fredda, nessuna esitazione — chi ha agito non aveva dubbi." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Questo luogo è saturo di terrore. Qualcosa di violento è successo qui. Ma non distingui quante persone fossero o cosa provassero individualmente."
+
+> **Differenza con Teatro delle Ombre e Yamabiko**: Teatro delle Ombre **vede** (Lucidità). Yamabiko **sente** parole (Silenzio). Nokori-bi **percepisce emozioni** (Ascolto o Distacco). Stessa famiglia — Percezione Retroattiva — tre sensi diversi.
+
+---
+
+#### Zanshin 残心 — Lo Spirito che Resta
+*La consapevolezza che persiste dopo l'azione. Lo spirito del samurai che non cede.*
+
+**NUOVO**
+
+- **Attributo**: Distacco o Pazienza (a scelta)
+- **Costo**: 2 Ki
+- **Vincolo**: attivabile solo quando il PG è a Ki 4 o 5 (vicino al crollo ma non ancora in Genkai)
+- **Successo**: per il resto della scena, i tiri del PG non possono generare Nami negativi (11) né Kiwami negativi (12) — contano come fallimento leggero. Non crolli
+- **Fallimento**: solo il Kiwami negativo (12) è protetto e conta come fallimento leggero. L'11 resta Nami negativo
+
+> **Esempio**: Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico e non puoi fermarti. Usi Zanshin con Distacco 7. Tiri 6 — successo. Il GM dice: "Qualcosa dentro di te si irrigidisce — non come il ghiaccio, come l'acciaio. Per il resto della scena, anche se i dadi ti vanno contro, non crolli." Un eventuale 11 o 12 conta come fallimento leggero. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "La disciplina regge, ma solo in parte." Solo il 12 è protetto; l'11 resta Nami negativo.
+
+---
+
+#### Koi no Takinobori 鯉の滝登り — La Risalita della Carpa
+*Non molli. Mai. La tua pazienza è una forza della natura.*
+
+**NUOVO**
+
+- **Attributo**: Pazienza o Presenza (a scelta)
+- **Costo**: 3 Ki
+- **Vincolo**: l'interrogatorio o il confronto deve essere in corso da tempo (non si usa all'inizio)
+- **Successo**: il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione
+- **Fallimento**: il PNG è visibilmente stanco, la coerenza vacilla, ma la storia regge. Il PG sente che sta cedendo
+
+> **Esempio**: Stai interrogando Kuroda da due ore. La sua storia regge, ma senti che è stanco. Usi Koi no Takinobori con Pazienza 7. Tiri 5 — successo. Il GM dice: "Ripeti la domanda sull'orario per la sesta volta. Kuroda dice 'le sei e mezza' — ma tre domande fa aveva detto 'le sette'. Si rende conto dell'errore e impallidisce." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Kuroda rallenta, le risposte sono più lente, le mani stanche. Ma la storia tiene. Per ora."
+
+> **Differenza con Pugno di Ferro**: Pugno di Ferro è **pressione psicologica** — il PNG cede perché il peso della tua autorità lo schiaccia. Koi no Takinobori è **persistenza** — il PNG cede perché non molli mai e la sua storia si sgretola nel tempo.
+
+---
+
+#### Chirigiwa 散り際 — L'Istante della Caduta
+*Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
+
+**NUOVO — Stato di allerta.**
+
+- **Attributo**: Pazienza o Ascolto (a scelta)
+- **Costo**: 2 Ki (pagato all'attivazione)
+- **Meccanica**: stato di allerta che dura per il resto della giornata in-game. Si attiva automaticamente al primo evento in cui qualcosa sta per svanire (PNG in fuga, prova in distruzione, finestra che si chiude), poi decade. Il tiro successo/fallimento si effettua quando l'evento scatta, non al momento dell'attivazione
+- **Successo**: sai cosa sta per svanire e hai un istante per agire
+- **Fallimento**: senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
+
+> **Esempio**: La mattina, prima di uscire per le indagini, attivi Chirigiwa (2 Ki). Tre ore dopo, mentre interroghi un testimone, il GM ti dice: "Chirigiwa si attiva." Tiri con Pazienza 7: dado 5 — successo. Il GM dice: "Senti che il testimone sta per chiudersi definitivamente — hai ancora una domanda, forse due, prima che non parli più. Scegli bene." Se avessi tirato 8 — fallimento — il GM avrebbe detto: "Qualcosa sta cambiando in questa conversazione. Senti urgenza, ma non sai cosa stai per perdere."
+
+---
+
+### Riepilogo Gou
+
+#### Per Attributo
+
+| Attributo | Gou dedicati | Gou dual | Totale |
+|-----------|-------------|----------|--------|
+| **Ascolto** | Ombra della Verità, Porta Socchiusa, Brivido sulla Nuca | Nokori-bi, Chirigiwa | 5 |
+| **Lucidità** | Teatro delle Ombre, Occhio della Gru, Tocco del Medico | Palazzo della Memoria | 4 |
+| **Presenza** | Voce del Tuono, Pugno di Ferro | Koi no Takinobori | 3 |
+| **Distacco** | Passo della Nebbia, Cuore di Ghiaccio, Pietra Fuori Posto | Zanshin, Nokori-bi | 5 |
+| **Silenzio** | Sussurro della Sera, Specchio dell'Anima, Filo Rosso, Yamabiko | — | 4 |
+| **Pazienza** | L'Ora Giusta | Palazzo della Memoria, Zanshin, Koi no Takinobori, Chirigiwa | 5 |
+
+#### Per Costo
+
+| Costo | Gou |
+|-------|-----|
+| **4 Ki** | Teatro delle Ombre, Yamabiko |
+| **3 Ki** | Ombra della Verità, Porta Socchiusa, Occhio della Gru, Voce del Tuono, Pugno di Ferro, Cuore di Ghiaccio, L'Ora Giusta, Nokori-bi, Koi no Takinobori |
+| **2 Ki** | Brivido sulla Nuca, Tocco del Medico, Passo della Nebbia, Pietra Fuori Posto, Sussurro della Sera, Specchio dell'Anima, Filo Rosso, Palazzo della Memoria, Zanshin, Chirigiwa |
+
+#### Famiglia Percezione Retroattiva
+
+| Gou | Senso | Attributo | Costo | Vincolo |
+|-----|-------|-----------|-------|---------|
+| Teatro delle Ombre | Vista | Lucidità | 4 Ki | Sul luogo, entro 48h, Lucidità ≥ 7 |
+| Yamabiko | Udito | Silenzio | 4 Ki | Sul luogo, entro 48h, Silenzio ≥ 7 |
+| Nokori-bi | Empatia | Ascolto/Distacco | 3 Ki | Sul luogo, entro 24-48h |
 
 ---
 
@@ -1394,10 +1621,12 @@ SATORI (悟り)
 1/sessione, successo automatico, non si accumula
 
 GOU (業)
-Costo: sacrifichi parte di te stesso
+Costo: 2, 3 o 4 Ki (variabile per Gou)
+Secondo uso nella stessa sessione: costo doppio
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi
 Niente Kiwami, niente Nami
+Dual-attribute: alcuni Gou hanno due attributi a scelta
 
 EN (縁) - RELAZIONI
 Scala: -5 a +5
