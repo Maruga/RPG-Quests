@@ -23,7 +23,8 @@
       "Bash(do echo -n \"$f: \")",
       "Read(//c/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Investigare/Avventura Sake/handout/**)",
       "Bash(done)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(pip show:*)"
     ]
   }
 }

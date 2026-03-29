@@ -874,13 +874,13 @@ Non è solo un commissariato di polizia. Questa scheda si applica a qualsiasi or
 
 Gli attributi del distretto seguono la stessa scala dei PG: da 4 a 9.
 
-| Attributo | Cosa rappresenta |
-|-----------|-----------------|
-| **Organico** | Personale disponibile per operazioni sul campo |
-| **Efficienza** | Qualità di esecuzione delle operazioni |
-| **Velocità** | Tempi di risposta e completamento |
-| **Risorse** | Mezzi, tecnologia, attrezzatura, fondi |
-| **Rete** | Informatori, contatti esterni, copertura territoriale |
+| Attributo      | Cosa rappresenta                                                          |
+| -------------- | ------------------------------------------------------------------------- |
+| **Organico**   | Personale disponibile per operazioni sul campo                            |
+| **Efficienza** | Qualità di esecuzione delle operazioni                                    |
+| **Velocità**   | Tempi di risposta e completamento                                         |
+| **Risorse**    | Mezzi, tecnologia, attrezzatura, fondi                                    |
+| **Rete**       | Informatori, contatti esterni, copertura territoriale                     |
 | **Corruzione** | Compromissione dell'ente — interessi esterni, favoritismi, agende proprie |
 
 ### Generazione

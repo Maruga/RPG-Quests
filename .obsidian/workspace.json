@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/pg/PG_05_Fujita_Emi.md",
+                "file": "Investigare/GENKAI_Manuale_GM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PG_05_Fujita_Emi"
+              "title": "GENKAI_Manuale_GM"
             }
           }
         ]
@@ -227,16 +227,18 @@
   },
   "active": "5d815e862880f16f",
   "lastOpenFiles": [
+    "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/GENKAI_Manuale_Situazioni.md",
+    "Investigare/GENKAI_Manuale_GM.md",
+    "Investigare/pg/PG_05_Fujita_Emi.md",
     "Investigare/pg/PG_04_Sato_Yuki_foto.png",
     "Investigare/pg/PG_05_Fujita_Emi_foto.png",
     "Investigare/pg/PG_04_Sato_Yuki.md",
-    "Investigare/pg/PG_05_Fujita_Emi.md",
     "Investigare/png/Copioni_PNG.md",
     "Investigare/pg/Copioni_PNG.md",
     "Investigare/png/Ito_Daisuke_Scientifica.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/PG Riassunto.md",
-    "Investigare/GENKAI_Manuale_GM.md",
     "Investigare/Materiale/genkai_640x360.png",
     "Investigare/Materiale/genkai_960x540.png",
     "Investigare/GENKAI_Manuale_Giocatori.md",
@@ -265,13 +267,11 @@
     "Savage/Operazione Sarcofago/Piano_Meno_Uno.md",
     "Savage/Operazione Sarcofago/Fasi_Operative_Esterne.md",
     "Savage/Operazione Sarcofago/Squadre_Operative.md",
-    "Savage/Operazione Sarcofago/Fogliettini_Segreti.md",
     "Savage/Operazione Sarcofago/AI/CLASSIFIED.png",
     "Savage/Operazione Sarcofago/AI/ChatGPT Image 25 mar 2026, 00_16_33.png",
     "Savage/Operazione Sarcofago/Immagini/Copertina.png",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Emeka_Okonkwo.jpg",
     "Savage/Operazione Sarcofago/Immagini/Scienziati/Anna_Weiss.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Scienziati/Alexei_Morozov.jpg",
-    "Savage/Operazione Sarcofago/Immagini/Operatori/Ryan_Chief_USA.jpg"
+    "Savage/Operazione Sarcofago/Immagini/Scienziati/Alexei_Morozov.jpg"
   ]
 }
