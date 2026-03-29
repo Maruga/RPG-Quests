@@ -105,17 +105,35 @@ Il Ki è lo stato complessivo del tuo personaggio: fisico, mentale, emotivo tutt
 - **Pagare il tuo potere speciale** (il Gou) — ogni volta che lo usi, costi 2 Ki
 - **Aiutare un compagno** — puoi sacrificare 1 Ki per supportare un collega in difficoltà
 
-### Il Ki si recupera
+### Il Ki si recupera — Il Soroban 算盤
 
-Dopo una notte di sonno recuperi Ki in base a com'è andata la giornata:
+Al centro del tavolo c'è un **soroban** (算盤, abaco giapponese). Ogni giocatore ha una colonna che traccia come sta andando la giornata del suo personaggio.
 
-| Giornata | Recupero |
-|----------|----------|
-| Normale | 1d3 Ki |
-| Hai avuto un momento eccezionale (dado 2) | 1d3+1 Ki |
-| Hai vissuto qualcosa che ti ha segnato (dado 12) | solo 1 Ki |
+> Se non hai un soroban fisico, usa un foglio al centro del tavolo con un numero per ogni PG. **Partenza 5, minimo 0, massimo 9.** L'importante è che sia visibile a tutti — i tuoi compagni devono poter vedere come stai.
 
-Il Ki non può mai superare il valore con cui hai iniziato la sessione.
+**Come funziona**: all'inizio di ogni giornata in-game, la tua colonna parte dal valore medio (su foglio: 5). Durante la giornata, ogni risultato estremo sui tiri di attributo muove le perline:
+
+| Evento | Movimento |
+|--------|-----------|
+| Nami positivo (dado = 3) | +1 |
+| Kiwami positivo (dado = 2) | +2 |
+| Nami negativo (dado = 11) | -1 |
+| Kiwami negativo (dado = 12) | -2 |
+
+Solo tiri di attributo — non Gou, non En, non combattimento, non tiri di pressione. Ogni volta che succede, ti alzi e muovi le perline. Il valore non scende sotto 0 e non supera il massimo.
+
+**A fine giornata**, quando il tuo personaggio dorme, leggi il soroban:
+
+- **Alla metà o sopra**: tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado
+- **Sotto la metà**: tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado
+
+Il risultato = Ki recuperati. Non puoi mai superare il valore con cui hai iniziato la sessione. Poi riporti la colonna al valore medio — domani è un nuovo giorno.
+
+**Momenti narrativi eccezionali**: il GM può assegnare +1 Ki per un momento speciale — direttamente a te, oppure come +1 al soroban (influenza il recupero notturno). Sceglie lui.
+
+**Perché è visibile a tutti**: il soroban racconta la tua giornata senza bisogno di parole. I tuoi compagni vedono che sei messo male — e possono reagire. Il capo che ti porta fuori cinque minuti. Il collega che si offre di fare l'interrogatorio difficile al tuo posto. Non devi chiedere aiuto. Le perline lo dicono per te.
+
+> **Esempio**: Sato parte a 5. Kiwami negativo sulla scena (-2), Nami negativo sull'interrogatorio (-1). Soroban a 2. A fine giornata tira 2d6 prendi il peggiore: esce 2 e 5 → recupera solo 2 Ki. Fujita invece è a 8: tira 2d6 prendi il migliore, esce 4 e 6 → recupera 6 Ki. Domani la squadra partirà con energie molto diverse.
 
 ---
 
@@ -911,11 +929,12 @@ Ki ≤ 3: crisi, fuori gioco temporaneo
 Ki = 1: critico — qualsiasi danno elimina il PG
 Ki < 1: fuori gioco definitivo
 
-RECUPERO NOTTURNO
-Nessun Kiwami: 1d3 Ki
-Almeno un dado 2: 1d3+1 Ki
-Almeno un dado 12: solo 1 Ki
-Sia 2 che 12: si annullano → 1d3 Ki
+RECUPERO NOTTURNO (SOROBAN 算盤)
+Soroban traccia Nami/Kiwami della giornata (+1/+2/-1/-2)
+Soroban ≥ partenza: 2d6 prendi il migliore (reroll 1) = Ki recuperati
+Soroban < partenza: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
+Su foglio: partenza 5, range 0-9
+Dopo il recupero: soroban torna al valore medio
 ```
 
 ---

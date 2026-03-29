@@ -23,6 +23,7 @@
 | **Lo Spirito che Resta** | 残心 | *Spirito che Resta* — disciplina del samurai, protezione dal crollo |
 | **L'Istante della Caduta** | 散り際 | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura) |
 | **La Risalita della Carpa** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio |
+| **Soroban** | 算盤 | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno |
 
 ---
 
@@ -87,22 +88,87 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 - Pagare il costo del Gou (potere speciale)
 - Donare ad altri PG in difficoltà
 
-### Recupero
+### Recupero — Il Soroban 算盤
 
-**Recupero notturno** (dopo una notte di sonno):
+Il recupero notturno è tracciato dal **soroban** (算盤, abaco giapponese), un oggetto fisico al centro del tavolo. Ogni giocatore usa una colonna. Il soroban registra l'andamento emotivo della giornata — ogni momento critico lascia un segno, e a fine giornata determina la qualità del riposo.
 
-| Giornata | Recupero |
-|----------|----------|
-| Nessun Kiwami | 1d3 Ki |
-| Almeno un **2** (Kiwami positivo) | 1d3+1 Ki |
-| Almeno un **12** (Kiwami negativo) | solo 1 Ki |
-| Sia 2 che 12 | si annullano → 1d3 Ki (recupero standard) |
+> Se non si ha un soroban fisico, si usa un foglio al centro del tavolo con una colonna per ogni PG. **Partenza 5, minimo 0, massimo 9** — gli stessi valori di una colonna di soroban giapponese. L'importante è che sia **visibile a tutti**, non nascosto nella propria scheda.
 
-- Il Ki non può mai superare il **valore di inizio sessione**
-- Se nella stessa giornata si tirano sia 2 che 12, **si annullano**: il recupero torna a 1d3 (standard). Più Kiwami dello stesso tipo contano comunque come uno solo
-- I Nami (3 e 11) **non influenzano** il recupero notturno
+#### Impostazione Iniziale
 
-**Momenti narrativi eccezionali**: +1 Ki (max 1 per sessione, a discrezione del GM)
+All'inizio di ogni giornata in-game, ogni giocatore imposta la propria colonna al **valore medio**:
+
+- Colonna con totale **pari**: metà esatta. *Esempio: 14 perline → partenza 7*
+- Colonna con totale **dispari**: metà arrotondata per eccesso. *Esempio: 9 perline → partenza 5*
+- **Su foglio**: partenza fissa a **5** (range 0-9)
+
+#### Quando si Muovono le Perline
+
+Le perline si muovono **solo** in risposta a risultati estremi sui tiri di attributo. Non si applicano a Gou, En, combattimento o tiri di pressione — stesse regole dei Nami/Kiwami standard.
+
+| Evento | Movimento |
+|--------|-----------|
+| Nami positivo (dado = 3) | **+1** (una perlina verso l'alto) |
+| Kiwami positivo (dado = 2) | **+2** (due perline verso l'alto) |
+| Nami negativo (dado = 11) | **-1** (una perlina verso il basso) |
+| Kiwami negativo (dado = 12) | **-2** (due perline verso il basso) |
+
+Il giocatore si alza e muove fisicamente le perline ogni volta che uno di questi risultati si verifica. Il valore non può scendere sotto 0 né superare il massimo della colonna.
+
+**Momenti narrativi eccezionali**: quando il GM assegna +1 Ki per un momento speciale (max 1 per sessione), sceglie se darlo **direttamente** al giocatore oppure aggiungerlo al **soroban** (+1 perlina verso l'alto). Nel primo caso è Ki immediato; nel secondo influenza il recupero notturno.
+
+#### Recupero Notturno
+
+A fine giornata, quando il personaggio dorme, il giocatore legge il valore della propria colonna:
+
+| Posizione del soroban | Tiro di recupero |
+|-----------------------|-----------------|
+| Alla metà o sopra (≥ valore di partenza) | Tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado |
+| Sotto la metà (< valore di partenza) | Tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado |
+
+Il risultato del dado = **Ki recuperati**.
+
+**Limite invariato**: il Ki non può mai superare il valore di inizio sessione.
+
+#### Dopo il Recupero
+
+Dopo aver tirato, il giocatore **riporta la propria colonna al valore medio**. La nuova giornata parte da zero.
+
+#### Il Soroban è Visibile
+
+Il soroban è al centro del tavolo. Tutti vedono tutto. Non è un'informazione segreta — è lo stato emotivo visibile della squadra. Un investigatore con le perline basse si vede: è stanco, teso, consumato. Le perline lo raccontano prima che lo dica il giocatore.
+
+> Yamamoto guarda il soroban di Honda. Le perline sono a 3 — due Kiwami negativi, la scena del crimine e l'interrogatorio. Yamamoto prende un caffè in lattina dal distributore e lo appoggia sulla scrivania di Honda senza dire nulla. Honda alza lo sguardo. Yamamoto: *"Cinque minuti fuori. Andiamo."* Non è un ordine — è il capo che ha visto le perline e sa che il suo uomo è al limite.
+
+> Nakamura nota che il soroban di Sato è a 3 mentre il suo è a 8. Il prossimo interrogatorio è quello difficile — il sospettato principale. *"Questo lo faccio io. Sato, resta sulla documentazione."* Non sta escludendo Sato — lo sta proteggendo. E Sato lo capisce dallo sguardo, non dalle parole.
+
+> Fine giornata. Il GM guarda i soroban. Fujita è a 8, Honda è a 3, gli altri nel mezzo. Fujita recupererà bene — 2d6 prendi il migliore. Honda dormirà male — 2d6 prendi il peggiore. Domani la squadra partirà con energie diverse, e il caso non aspetta.
+
+#### Esempi di Recupero
+
+**Giornata equilibrata** *(soroban da 9, partenza 5)*
+
+Honda parte a 5. Durante la giornata:
+- Tira Distacco: dado 3 → Nami+ → soroban sale a **6**
+- Tira Ascolto: dado 11 → Nami- → soroban scende a **5**
+
+Fine giornata: soroban a 5, uguale alla partenza → alla metà → 2d6 prendi il migliore (reroll 1). Esce 3 e 5 → recupera **5 Ki**.
+
+**Giornata pesante** *(soroban da 9, partenza 5)*
+
+Sato parte a 5. Durante la giornata:
+- Tira Distacco: dado 12 → Kiwami- → soroban scende a **3**
+- Tira Silenzio: dado 11 → Nami- → soroban scende a **2**
+
+Fine giornata: soroban a 2, sotto la partenza → 2d6 prendi il **peggiore** (reroll 1). Esce 2 e 5 → recupera solo **2 Ki**.
+
+**Giornata eccezionale** *(soroban da 9, partenza 5)*
+
+Fujita parte a 5. Durante la giornata:
+- Tira Silenzio: dado 2 → Kiwami+ → soroban sale a **7**
+- Tira Ascolto: dado 3 → Nami+ → soroban sale a **8**
+
+Fine giornata: soroban a 8, sopra la partenza → 2d6 prendi il **migliore** (reroll 1). Esce 4 e 6 → recupera **6 Ki**.
 
 ---
 
@@ -1493,7 +1559,7 @@ Gli attributi cambiano durante l'avventura tramite:
 - **Nami negativo** (dado = 11): -1 a scelta (attributo O Ki)
 - **Kiwami negativo** (dado = 12): -1 attributo usato E -1 Ki
 - **Scene personali**: +1/-1 attributo (in base al voto)
-- **Recupero notturno**: 1d3 Ki (modificato da Kiwami, vedi sezione Ki)
+- **Recupero notturno**: tramite soroban (vedi sezione Ki — Recupero)
 
 **Limiti**: Nessun attributo supera mai 9 o scende sotto 4 (perdita forzata su Ki). Il Ki non supera mai il valore di inizio sessione.
 
@@ -1503,7 +1569,7 @@ Gli attributi cambiano durante l'avventura tramite:
 > - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco sale a 7, Ki a 10. Ma il Ki non può superare il valore di inizio sessione (9) — il punto è perso.
 > - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di abbassare Ascolto. Ki scende a 8.
 > - Scena personale con il padre: gestita bene dal voto dei giocatori. Sceglie +1 Silenzio (sale da 5 a 6).
-> - Fine sessione: recupero notturno. Nessun Kiwami nella giornata: tira 1d3, esce 2. Ki torna a 10 — ma il massimo è 9, quindi resta 9.
+> - Fine sessione: recupero notturno. Il soroban è alla partenza (Kiwami+ e Nami- si sono bilanciati): tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
 > - Sessione successiva inizia con: Distacco 7, Ascolto 7, Silenzio 6, Ki 9.
 
 ---
@@ -1716,11 +1782,12 @@ KI (気)
 = 1 = Critico (qualsiasi danno elimina il PG)
 < 1 = Fuori gioco definitivo
 
-RECUPERO NOTTURNO
-Nessun Kiwami: 1d3 Ki
-Almeno un 2 (Kiwami+): 1d3+1 Ki
-Almeno un 12 (Kiwami-): solo 1 Ki
-Sia 2 che 12: si annullano → 1d3 Ki (standard)
+RECUPERO NOTTURNO (SOROBAN 算盤)
+Soroban traccia Nami/Kiwami della giornata (+1/+2/-1/-2)
+Soroban ≥ partenza: 2d6 prendi il migliore (reroll 1) = Ki recuperati
+Soroban < partenza: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
+Su foglio: partenza 5, range 0-9
+Dopo il recupero: soroban torna al valore medio
 (mai oltre il max di inizio sessione)
 
 NASAKE (情け) - COMPASSIONE
