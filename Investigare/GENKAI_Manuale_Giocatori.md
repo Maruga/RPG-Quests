@@ -57,14 +57,14 @@ Il dado decide *come* il vostro personaggio gestisce quello che trova. Una scena
 
 Il tuo personaggio ha sei attributi, ognuno con un valore da 4 a 9. Non misurazioni fisiche — stati interiori. Come stai quando le cose si mettono male.
 
-| Attributo | Cosa rappresenta |
-|-----------|-----------------|
-| **Distacco** | Non farti coinvolgere emotivamente. Restare lucido davanti all'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire. |
-| **Pazienza** | Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo. |
+| Attributo    | Cosa rappresenta                                                                                                                                   |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Distacco** | Non farti coinvolgere emotivamente. Restare lucido davanti all'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire.       |
+| **Pazienza** | Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo.                                |
 | **Silenzio** | Calma interiore. Non reagire d'impulso. Incassare provocazioni senza esplodere. Non tradire le tue intenzioni con un gesto o una parola di troppo. |
-| **Lucidità** | Vedere chiaro. Collegare i pezzi. Capire cosa è importante e cosa no. Ricostruire cosa è successo da quello che resta. |
-| **Ascolto** | Far parlare gli altri. Cogliere il non detto. Leggere tra le righe. Sentire quando qualcosa non torna in quello che qualcuno ti sta dicendo. |
-| **Presenza** | L'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza. |
+| **Lucidità** | Vedere chiaro. Collegare i pezzi. Capire cosa è importante e cosa no. Ricostruire cosa è successo da quello che resta.                             |
+| **Ascolto**  | Far parlare gli altri. Cogliere il non detto. Leggere tra le righe. Sentire quando qualcosa non torna in quello che qualcuno ti sta dicendo.       |
+| **Presenza** | L'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza.                      |
 
 ### Come si genera
 
