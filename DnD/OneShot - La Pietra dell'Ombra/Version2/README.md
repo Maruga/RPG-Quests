@@ -13,7 +13,7 @@
 
 Un mercante ricco e misterioso vi ha mandato un messaggero. L'invito è elegante — carta pregiata, sigillo in ceralacca nera, calligrafia impeccabile.
 
-> *"Siete cordialmente invitati al banchetto di* ***Messer Aldric Voss****,*
+> *"Siete cordialmente invitati al banchetto di* ***Herr Günther Von Kaltenstein****,*
 > *mercante di rarità e collezionista di meraviglie.*
 > *Si cena al tramonto. Si discute d'affari dopo il dessert.*
 > *Abbigliamento: quello che portate addosso andrà benissimo.*
