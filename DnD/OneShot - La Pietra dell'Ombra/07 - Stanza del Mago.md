@@ -76,6 +76,8 @@ Nulla. Polvere.
 | Pozione Cura Ferite Leggere               | 2        | 2d4+2 HP                               |
 | Pozione Invisibilità                      | 1        | 4 turni                                |
 | Pozione Lettura Linguaggi                 | 1        | 2 turni                                |
+| Boccette d'acqua (sigillate)              | 3        | Acqua pura, tappo di cera              |
+| Bacile di pietra                          | 1        | Sullo scaffale in basso, vuoto         |
 | Ampolle vuote                             | 8        | 1 mo ciascuna                          |
 | Boccetta liquido verde (veleno dei ragni) | 1        | TS o 2d6 danni                         |
 | Pozione Neutralizza Veleno                | 3        | Neutralizza qualsiasi veleno nel corpo |
