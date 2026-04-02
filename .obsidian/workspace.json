@@ -11,14 +11,12 @@
             "id": "8617616e39320824",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/Version2/Stanza del Mago.md",
-                "mode": "source",
-                "source": false
+                "file": "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Zaffiro.png"
               },
-              "icon": "lucide-file",
-              "title": "Stanza del Mago"
+              "icon": "lucide-image",
+              "title": "Zaffiro"
             }
           }
         ]
@@ -227,18 +225,20 @@
   },
   "active": "8617616e39320824",
   "lastOpenFiles": [
-    "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Uova.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Zaffiro.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Smeraldo.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Rubino.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Diamante.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Ametista.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Stanza del Mago.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova",
+    "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/MappaXstampa.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/SchemaAvventura.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaUscitaTentacoli.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScale.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaScalaCripta.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaRagni.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaMago.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaCripta.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/StanzaCentrale.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/SotterraneiCastello.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Enigma.md",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/README.md",
     "DnD/OneShot - La Pietra dell'Ombra/08a - Cripta - Scala.md",
@@ -270,8 +270,6 @@
     "Investigare/Avventura Occhi di Volpe/CRONISTORIA COMPLETA.md",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
-    "DnD/Effetti di Stato.md",
-    "Investigare/Avventura La Falsa Primavera",
-    "Investigare/pg/~WRL0711.tmp"
+    "Investigare/Avventura La Falsa Primavera"
   ]
 }
