@@ -114,7 +114,7 @@ Tutte grigie e opache. L'iscrizione non nomina mai l'azione né la gemma. Azione
 
 ### Uovo 5 — Zaffiro (Ghiaccio)
 
-**Iscrizione:** *"Più mi cerchi, più mi perdi. Smetti di cercarmi."*
+**Iscrizione:** *"L'acqua mi conosce. Le mani no. Affidami a chi già mi appartiene, poi allontanati."*
 
 **Azione:** Immergere in acqua fredda E lasciarlo andare. Due condizioni: acqua fredda + non tenerlo. Se lo tengono nell'acqua, niente. Se lo lasciano senza acqua, niente. Solo insieme funziona.
 
