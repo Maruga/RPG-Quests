@@ -6,13 +6,25 @@ I PG sono stati invitati a cena da un mercante straniero, oscenamente ricco. La 
 
 ### Descrizione Sala — Da Leggere
 
-> [!NOTE]
-> L'intero piano superiore della locanda. Affittato. Tutto. Per una cena.
-> Tovaglia di lino bianco, ricamata in oro ai bordi. Candelabri d'argento massiccio — non placcati, massicci. Piatti di porcellana con lo stemma di una casata che non riconoscete. Calici di cristallo. Tre tipi di vino già versati. Carne, selvaggina, formaggi, frutta che non cresce da queste parti. Un cameriere personale per ogni commensale.
-> Al centro del tavolo, su un cuscino di velluto nero bordato d'oro, una pietra. Liscia, scura, grande come un pugno. Sembra assorbire la luce delle candele intorno a sé. Le fiamme vicine tremolano, come se la pietra respirasse.
-> In fondo al tavolo, un uomo. Grosso. Largo come un armadio da sacrestia. Anelli d'oro su ogni dito — gemme colorate, troppi anelli, troppo grossi. Una veste di seta verde con ricami d'argento, che fatica a contenere una pancia da re. Baffi biondi impomatati con cura maniacale. Una catena d'oro al collo con un rubino grosso come una noce. Stivali di pelle di coccodrillo. Sorriso enorme. Occhi piccoli, furbi, che vi misurano come merce al bancone.
-> Dietro di lui, un servitore gli regge un ventaglio. Un altro gli tiene il calice pronto. Un terzo aspetta in piedi con un vassoio d'argento.
-> Vi fa cenno di sedervi con un gesto da imperatore. Anzi, da imperatore che l'imperatore lo paga lui.
+> _L'intero piano superiore della locanda. / Affittato. / Tutto. // Per una cena._
+> 
+> _Tovaglia di lino bianco, / ricamata in oro ai bordi. / Candelabri d'argento massiccio / — non placcati, / `↓` massicci. / Piatti di porcellana con lo stemma di una casata / che non riconoscete. / Calici di cristallo. / Tre tipi di vino già versati. / Carne, selvaggina, formaggi, / frutta che non cresce da queste parti. / Un cameriere personale / per ogni commensale._
+> 
+> _// Al centro del tavolo, / su un cuscino di velluto nero bordato d'oro, / `↓` una pietra. / Liscia. / Scura. / Grande come un pugno. // `↓` Sembra assorbire la luce delle candele intorno a sé. / Le fiamme vicine tremolano, / `↓` come se la pietra / respirasse. //_
+> 
+> _In fondo al tavolo, / un uomo. / Grosso. / `↑` Largo come un armadio da sacrestia. / Anelli d'oro su ogni dito / — gemme colorate, / troppi anelli, / troppo grossi. / Una veste di seta verde con ricami d'argento, / che fatica a contenere / una pancia da re. / Baffi biondi impomatati con cura maniacale. / Una catena d'oro al collo / con un rubino grosso come una noce. / Stivali di pelle di coccodrillo. / `↑` Sorriso enorme. / `↓` Occhi piccoli. / Furbi. / Che vi misurano / come merce al bancone. //_
+> 
+> _Dietro di lui, un servitore gli regge un ventaglio. / Un altro gli tiene il calice pronto. / Un terzo aspetta in piedi con un vassoio d'argento._
+> 
+> _// Vi fa cenno di sedervi / con un gesto da imperatore. / Anzi — // `↓` da imperatore / che l'imperatore / lo paga lui._
+
+**Legenda:**
+
+- `/` = pausa breve
+- `//` = pausa lunga, guarda i giocatori
+- `↓` = abbassa la voce, rallenta
+- `↑` = volume medio-alto, leggermente più enfatico
+
 
 ---
 
@@ -30,98 +42,133 @@ I PG sono stati invitati a cena da un mercante straniero, oscenamente ricco. La 
 
 Il DM interpreta Von Kaltenstein. Enfasi teatrale. Pause drammatiche per effetti che non arrivano. Si alza, si siede, si rialza. Beve di continuo. Si pulisce i baffi con la tovaglia bianca. Si commuove da solo.
 
-> [!NOTE]
-> *Si alza in piedi. Sbatte le ginocchia sotto il tavolo. Finge che non sia successo.*
-> 
-> "Signori! Signori e... e dame, se ce ne sono fra voi, il che mi parrebbe strano dato il vostro aspetto, ma non si sa mai, i tempi cambiano."
-> 
-> *Gesto magniloquente.*
-> 
-> "Sedete! Mangiate! Bevete! Questo vino è un Rosso di Glantri del '42 — quindici monete d'oro la BOTTIGLIA, per chi se ne intende — e ne ho fatte portare sei. SEI! Quindi bevetelo tutto, ché Von Kaltenstein non riporta indietro il vino."
-> 
-> *Si siede pesantemente. La sedia scricchiola. Si rialza subito.*
-> 
-> "Ora. Io so cosa state pensando. State pensando: chi è questo magnifico uomo che ci ha riuniti, perché ci riempie la pancia, e soprattutto... che vuole in cambio?"
-> 
-> *Pausa lunghissima. Si versa il vino. Beve. Si pulisce i baffi.*
-> 
-> "Vuole qualcosa in cambio. Eh sì."
-> 
-> *Ride da solo. Nessun altro ride. Non se ne accorge.*
-> 
-> "Io sono Günther Von Kaltenstein. Mercante. Commerciante. Imprenditore. Visionario. L'uomo più ricco di questa città — e di quella prima, e di quella prima ancora. Un GENIO del commercio. Mio padre — riposi in pace quel taccagno — aveva due muli e un carretto. IO ho magazzini in sei città, una flotta di dodici carri, quaranta dipendenti e un palazzo con le colonne di MARMO. Di marmo! Sapete quanto costano le colonne di marmo? No, non lo sapete. Perché non ve le potete permettere."
-> 
-> *Si avvicina alla pietra al centro del tavolo. La indica con un dito. Non la tocca. Non si avvicina troppo.*
-> 
-> "Vedete questa? Questa... QUESTA, signori miei, è il motivo per cui siete qui a mangiare a sbafo."
-> 
-> *Gira intorno al tavolo. Gravità improvvisa.*
-> 
-> "Una Pietra dell'Ombra. Così la chiamano le carte che ho... *acquisito*. Come l'ho acquisita? Questioni mie. Dove l'ho trovata? Affari miei. Quanto l'ho pagata? Troppo. Ma Von Kaltenstein non bada a spese quando fiuta l'affare."
-> 
-> *Si tocca il naso. Occhiolino.*
-> 
-> "Nei documenti — vecchi, di un mago, scritti da un pazzo con la calligrafia di una gallina ubriaca — c'è scritto che questa pietra... *spedisce la gente*."
-> 
-> *Pausa teatrale.*
-> 
-> "Di netto. *Puf.* Cala il sole, cala la sera, e chi sta vicino a questa pietra... non è più qui. È LÀ."
-> 
-> *Indica un punto vago alle sue spalle.*
-> 
-> "Dove 'là'? In una casa. Vecchia. Di questo mago. Morto, si presume, ché non risulta abbia pagato affitti di recente."
-> 
-> *Si siede. Si sporge in avanti. Voce bassa, da cospiratore.*
-> 
-> "Ora — io non ci sono MAI stato, sia chiaro. Günther Von Kaltenstein non mette piede in posti bui, umidi, e pieni di Dio sa cosa. Per quello esistete VOI."
-> 
-> *Vi punta il dito. Uno alla volta.*
-> 
-> "Ma le carte del mago dicono anche un'altra cosa. Dicono che c'è un'uscita. Si entra con la pietra, si esce... a piedi. Da qualche parte. Non so dove. Non so come. Ma si esce. Altrimenti il mago sarebbe ancora lì dentro, e invece è morto FUORI, il che vuol dire che un modo l'ha trovato."
-> 
-> *Si alza di scatto. Cammina. Gesticola come un predicatore.*
-> 
-> "E QUI viene il bello! Perché Von Kaltenstein — cioè io — ha avuto un'IDEA. Un'idea che vale ORO. Che vale DIAMANTI. Che vale più di tutti voi messi insieme — con rispetto, eh."
-> 
-> *Si ferma. Mani sul tavolo. Vi guarda con gli occhi che brillano.*
-> 
-> "Se io capisco come funziona questa pietra... se scopro il meccanismo... io mando un mio uomo a comprare spezie a Karameikos. Gli metto la pietra in tasca. E la sera — *PUF!* — è nel mio magazzino. Con la merce. Senza carovana. Senza banditi. Senza tre settimane di strada con i lupi e i goblin e il fango fino alle ginocchia!"
-> 
-> *Sbatte il pugno sul tavolo. I calici tremano.*
-> 
-> "CAPITE? Capite cosa sto dicendo? Trasporto ISTANTANEO! Von Kaltenstein rivoluziona il commercio! Von Kaltenstein cambia il MONDO!"
-> 
-> *Pausa. Si rende conto che sta urlando. Si aggiusta la veste. Tono commerciale.*
-> 
-> "Ma per fare questo, qualcuno deve andare là dentro. Esplorare. Capire come funziona la casa del mago. Trovare indizi, meccanismi, qualsiasi cosa che spieghi la magia dietro il trasporto. E tornare a raccontarmelo. Tutto."
-> 
-> *Sorriso largo. Apre le braccia.*
-> 
-> "Quel qualcuno siete voi."
-> 
-> *Si risiede. Alza il calice.*
-> 
-> "Ma prima — MANGIAMO! Ché la carne si fredda, il vino si scalda, e Von Kaltenstein non sopporta né l'una né l'altro. E poi che vi devo dire, godetevi la cena. Potrebbe essere l'ultima."
-> 
-> *Pausa.*
-> 
-> "Scherzo! Scherzo. Probabilmente."
+> _Si leva in piedi. / Sbatte le ginocchia sotto il tavolo. / Fa finta di nulla._
+
+> _"Messeri! / Messeri e... / e dame, / se per avventura ve ne fosse alcuna / in cotesta compagnia di ceffi, / il che mi parrebbe assai dubbioso, / ma i tempi son quelli che semo."_
+
+> _Gesto magniloquente._
+
+> _"Sedete! / Mangiate! / Bevete! / Cotesto vino fue portato da Glantri / — `↑` quindici aurei la BOTTIGLIA, / per chi havesse lo senno di capirlo — / e ne ho fatte portare sei. / `↑` SEI! / Bevetelo tutto, per gli dèi, / ché Von Kaltenstein / non riporta indietro lo vino. / Mai. / Est clarum."_
+
+> _Si siede pesantemente. La sedia scricchiola. Si rialza subito._
+
+> _"Ora. // Io so bene cosa volgete nel vostro cerebro. / Pensate: / chi è cotesto magnifico homo / che ci ha convocati, / perché ci riempie la pancia, / e soprattutto... / `↓` che vuole in cambio?"_
+
+> _// Pausa lunghissima. Si versa il vino. Beve. Si pulisce i baffi. //_
+
+> _"`↓` Vuole qualcosa in cambio. / Eh sì. / Von Kaltenstein non fa niente per niente. / Mai fue e mai sarà."_
+
+> _Ride da solo. Nessuno ride. Non se ne accorge._
+
+> _"Io semo Günther Von Kaltenstein! / Mercante! / Commerciante! / `↑` Visionarius! / L'homo più ricco di questa cittade / — e di quella prima, / e di quella prima ancora. / `↑` Un GENIO del commercio! / Lo padre mio / — riposi in pace quel taccagno / che Iddio lo habbi in gloria malgrado tutto — / teneva due muli et un carretto. / DUE MULI! / `↑` IO ho magazzini in sei cittadi, / una flotta di dodici carri, / quaranta anime al meo servizio, / et un palazzo / con le colonne di MARMO. / Di marmo! / Sapete voi quanto costano le colonne di marmo? / `↓` No. / Non lo sapete. / Perché non ve le potete permettere. / Con rispetto."_
+
+> _Si avvicina alla pietra. La indica con un dito. `↓` Non la tocca. Non si avvicina troppo. //_
+
+> _"`↓` Guatate cotesta cosa. / Cotesta... / `↑` COTESTA, messeri miei, / est lo motivo per cui siete qui / a mangiare a sbafo meo."_
+
+> _Gira intorno al tavolo. // Gravità improvvisa. Voce che cambia. //_
+
+> _"`↓` Una Pietra dell'Ombra. / Così la chiamano le carte / che ho... acquisito. / Come l'ho acquisita? / Fatti miei. / Dove l'ho trovata? / Fatti miei. / Quanto ho sborsato? / `↓` Troppo. / Ma Von Kaltenstein non bada a spese / quando fiuta l'occasione."_
+
+> _Si tocca il naso. Occhiolino._
+
+> _"Nelle carte / — vecchie, d'uno mago, / scritte da un forsennato / con la calligrafia d'una gallina in stato d'ebbrezza — / est scritto / che cotesta pietra... / `↓` spedisce la gente."_
+
+> _// Pausa teatrale. //_
+
+> _"`↓` Di netto. / Puf. / Cala lo sole, cala la sera, / et chi si trova in prossimità di cotesta pietra... / `↓` non est più qui. / Est LÀ."_
+
+> _Indica un punto vago alle sue spalle._
+
+> _"Ove 'là'? / In una casa. / Vecchia. / D'uno mago. / `↓` Morto, si presuppone, / ché non risulta habbi pagato affitti / di recente."_
+
+> _Si siede. Si sporge. `↓` Voce da cospiratore._
+
+> _"`↓` Ora — / io non ci semo MAI stato, / sia ben chiaro. / Von Kaltenstein / non mette piede in luoghi bui, / umidi, / et colmi di Dio sa quale lordura. / `↓` Per cotesto / existete / VOI."_
+
+> _Vi punta il dito. // Uno alla volta. //_
+
+> _"Ma le carte dicono anco un'altra cosa. / Dicono che v'est una via d'uscita. / S'entra con la pietra, / si esce... a piedi. / Da qualche parte. / Non so ove. / Non so come. / `↓` Ma si esce. / Altrimenti lo mago sarebbe ancora là dentro, / et invece est morto FUORI, / il che vuol dire / che un modo / `↓` l'ha trovato."_
+
+> _Si leva di scatto. Cammina. Gesticola. //_
+
+> _"`↑` Et QUI viene lo bello! / Perché Von Kaltenstein / — id est io — / ha havuto un'IDEA! / Un'idea che vale oro! / Che vale diamanti! / `↑` Che vale più di tutti voi messi assieme / — con rispetto, eh."_
+
+> _Si ferma. // Mani sul tavolo. Vi guarda con gli occhi che brillano. //_
+
+> _"Se io comprendo lo funzionamento di cotesta pietra... / se ne scopro lo meccanismo... / io mando uno meo homo a comprare spezie a Karameikos. / Gli metto la pietra in saccoccia. / Et la sera / `↑` — PUF! — / est nel meo magazzino. / Con la merce. / Senza carovana. / Senza banditi. / Senza tre settimane di cammino / con li lupi et li goblin / et lo fango fino alle ginocchia!"_
+
+> _`↑` Sbatte il pugno sul tavolo. I calici tremano._
+
+> _"`↑` CAPITE?! / Capite cosa sto dicendo?! / Trasporto ISTANTANEO! / Von Kaltenstein rivoluziona lo commercio! / `↑` Von Kaltenstein cambia lo MONDO!"_
+
+> _// Pausa. Si aggiusta la veste. // Tono commerciale._
+
+> _"Ma per fare tutto ciò, / qualcuno deve andare là dentro. / Explorare. / Capire come funziona la dimora del mago. / Trovare indizi, meccanismi, / qualsivoglia cosa che spieghi la magia. / `↓` Et tornare a raccontarmelo. / Tutto."_
+
+> _Sorriso largo. Apre le braccia._
+
+> _"`↑` Cotesto qualcuno siete voi."_
+
+> _Si risiede. Alza il calice._
+
+> _"Ma prima / — MANGIAMO! / Ché la carne si fredda, / lo vino si scalda, / et Von Kaltenstein non sopporta né l'una cosa né l'altra. / Godetevi la cena. / `↓` Potrebbe essere l'ultima."_
+
+> _// Pausa. //_
+
+> _"`↑` Scherzo! / Scherzo. / `↓` Probabilmente."_
+
 
 ---
 
 ## Dopo il Discorso — Gestione della Scena
 
 ### Se i PG fanno domande:
+> _"Quanto paghi?"_
 
-| Domanda | Risposta di Von Kaltenstein |
-|---------|------------------|
-| "Quanto paghi?" | *Tira fuori un sacchetto di velluto. Lo apre sul tavolo. Monete d'oro che si rovesciano ovunque.* "Mille monete d'oro. A TESTA. E la cena è offerta, ovviamente. Sapete quanto costa questa cena? No? Meglio. Vi rovinerebbe l'appetito. O ve lo migliorerebbe, dipende da che tipo di persone siete." |
-| "Come torniamo?" | "A piedi! Le carte dicono che c'è un'uscita. Dove, non lo so. Ma se un mago morto l'ha trovata, la trovate anche voi che siete vivi. In teoria." |
-| "Cos'è esattamente questa pietra?" | "Una Pietra dell'Ombra! Ve l'ho appena detto! Roba di maghi. Io non ci capisco NIENTE di magia. Per quello pago gente come voi. E per quello bevo." |
-| "Come funziona?" | "Se lo sapessi vi avrei invitato a cena lo stesso? Eh? Cala il sole, chi è vicino alla pietra — *puf* — va là. Questo c'è scritto. Il resto... il resto lo scoprite voi." |
-| "Ci sei mai stato?" | "IO?! Là dentro?! Von Kaltenstein non va in posti dove non c'è una locanda. È una questione di principio. E di sopravvivenza." |
-| "È pericoloso?" | *Si aggiusta il colletto.* "Le carte dicono che il mago ci teneva i prigionieri. Ma sono carte vecchie! Vecchissime! Sarà tutto crollato ormai. Sicuramente. Quasi sicuramente." |
-| "E se non torniamo?" | *Lunga pausa. Sguardo altrove.* "...Vi verso altro vino?" |
+> _Tira fuori un sacchetto di velluto. Lo rovescia sul tavolo. Monete d'oro ovunque._
+
+> _"`↑` Mille aurei. / A TESTA. / Et la cena est offerta, / ovviamente. / Sapete quanto costa cotesta cena? / `↓` No? / Meglio così. / Vi rovinerebbe lo appetito. / O ve lo migliorerebbe, / `↓` dipende da che razza di gente siete."_
+
+---
+
+> _"Come torniamo?"_
+
+> _"`↑` A piedi! / Le carte dicono che v'est una via d'uscita! / Ove, non lo so. / Ma se uno mago morto l'ha trovata, / la trovate anco voi / che siete vivi. / `↓` In teoria."_
+
+---
+
+> _"Cos'est cotesta pietra?"_
+
+> _"`↑` Una Pietra dell'Ombra! / Ve l'ho appena detto! / Roba di maghi, roba obscura! / `↓` Io non ci capisco NIENTE di magia. / Per cotesto pago gente come voi. / `↓` Et per cotesto bevo."_
+
+---
+
+> _"Come funziona?"_
+
+> _"`↓` Se lo sapessi / vi avrei invitati a cena lo stesso? / Eh? / Cala lo sole, / chi si trova presso la pietra / `↓` — puf — / va là. / Cotesto est scritto. / Lo resto... / `↓` lo resto lo scoprite voi."_
+
+---
+
+> _"Ci sei mai stato?"_
+
+> _"`↑` IO?! / Là dentro?! / Per tutti li santi et li beati! / Von Kaltenstein non mette piede / in luoghi ove non v'est una locanda! / `↓` Est questione di principio. / Et di sopravvivenza."_
+
+---
+
+> _"Est pericoloso?"_
+
+> _Si aggiusta il colletto. //_
+
+> _"`↓` Le carte dicono che lo mago / ci teneva li prigionieri. / Ma son carte vecchie! / `↑` Vecchissime! / Antiquissime! / Sarà tutto crollato ormai. / Sicuramente. / `↓` Quasi sicuramente. / Con ogni probabilità."_
+
+---
+
+> _"Et se non torniamo?"_
+
+> _// Lunga pausa. // Sguardo altrove. //_
+
+> _"`↓` ...Vi verso altro vino?"_
 
 ### La Pietra
 
