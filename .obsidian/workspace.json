@@ -11,12 +11,14 @@
             "id": "8617616e39320824",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamene01.png"
+                "file": "DnD/Combattimento.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pergamene01"
+              "icon": "lucide-file",
+              "title": "Combattimento"
             }
           }
         ]
@@ -225,13 +227,13 @@
   },
   "active": "8617616e39320824",
   "lastOpenFiles": [
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Enigma.md",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamene01.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamene02.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/01 - Il Banchetto.md",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Locanda.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/README.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Enigma.md",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamena.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamene01.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/PiedistalloMarmoScritte.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/PiedistalloMarmoVuoto.png",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Uova/Diamante.png",
