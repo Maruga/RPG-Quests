@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Scheda Archivio — Caso Kamiya 1986</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #333;
+    color: #e0ddd0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #888;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #aaa; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #999; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #333;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.timeline-table th {
+    background: #333;
+    color: #e0ddd0;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.timeline-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+.timeline-table tr:nth-child(even) td { background: #f8f8f5; }
+.archive-stamp {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #666;
+    border: 2px solid #666;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #999; border-bottom-color: #666; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #252520; border-left-color: #c0a060; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .timeline-table th { background: #111; }
+    .timeline-table td { border-color: #333; color: #c0bdb0; }
+    .timeline-table tr:nth-child(even) td { background: #1e1e22; }
+    .archive-stamp { color: #666; border-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="archive-stamp">ARCHIVIO</div>
+
+    <div class="doc-header">
+        <div class="org">警察庁 &mdash; AGENZIA NAZIONALE DI POLIZIA</div>
+        <div class="title">SCHEDA CASO &mdash; ARCHIVIO STORICO</div>
+        <div class="subtitle">Casi rilevanti &mdash; Avvelenamento</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Denominazione</span><br>Torikabuto Hoken-kin Satsujin Jiken<br>(トリカブト保険金殺人事件)</div>
+        <div><span class="label">Traduzione</span><br>&laquo;Caso dell'omicidio per assicurazione con trikabuto&raquo;</div>
+        <div><span class="label">Imputato</span><br>KAMIYA Tsutomu (神谷力), nato 1940</div>
+        <div><span class="label">Vittima</span><br>KAMIYA Reiko (神谷玲子), moglie dell'imputato</div>
+        <div><span class="label">Luogo</span><br>Okinawa / Tokyo</div>
+        <div><span class="label">Verdetto finale</span><br>Colpevole &mdash; Ergastolo (1994)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Sintesi del caso</div>
+        <p>Nel 1986, Kamiya Tsutomu avvelen&ograve; la moglie Reiko somministrandole <strong>aconitina</strong> estratta dal trikabuto (トリカブト, <em>Aconitum japonicum</em>), una pianta selvatica comune sulle montagne giapponesi. Il veleno fu somministrato in una capsula mescolata con altri integratori che la vittima assumeva quotidianamente.</p>
+        <p>Il movente era il denaro: Kamiya aveva stipulato <strong>molteplici polizze vita</strong> sulla moglie presso diverse compagnie assicurative, per un totale di oltre <strong>&yen;185.000.000</strong>. Aveva inoltre avvelenato e ucciso una precedente compagna con lo stesso metodo.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Cronologia</div>
+        <table class="timeline-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1986</td>
+                    <td>Morte di Kamiya Reiko. Diagnosi iniziale: arresto cardiaco. Caso archiviato come morte naturale</td>
+                </tr>
+                <tr>
+                    <td>1986</td>
+                    <td>Le compagnie assicurative segnalano anomalie: molteplici polizze, importi elevati, morte improvvisa</td>
+                </tr>
+                <tr>
+                    <td>1986</td>
+                    <td>Riapertura indagini. Analisi tossicologica mirata (HPLC) su campioni conservati: <strong>aconitina positiva</strong></td>
+                </tr>
+                <tr>
+                    <td>1986</td>
+                    <td>Arresto di Kamiya Tsutomu</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>Processo di primo grado. Condanna a morte</td>
+                </tr>
+                <tr>
+                    <td>1994</td>
+                    <td>Appello. Pena commutata in ergastolo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Elementi investigativi rilevanti</div>
+        <ul>
+            <li><strong>Veleno</strong>: Aconitina (アコニチン), alcaloide del trikabuto. Non rilevabile con pannelli tossicologici standard &mdash; richiede analisi HPLC mirata</li>
+            <li><strong>Origine</strong>: Pianta raccolta in natura. Il trikabuto cresce selvatico sulle montagne giapponesi (fioritura agosto&ndash;ottobre)</li>
+            <li><strong>Movente</strong>: Incasso polizze vita multiple &mdash; totale &gt;&yen;185.000.000</li>
+            <li><strong>Scoperta</strong>: L'aconitina fu identificata solo perch&eacute; il medico legale aveva conservato i campioni di sangue per analisi successive</li>
+            <li><strong>Modus operandi</strong>: Somministrazione del veleno in capsule di integratori &mdash; la vittima non poteva distinguerle</li>
+            <li><strong>Precedente</strong>: Kamiya aveva gi&agrave; ucciso una precedente compagna con lo stesso metodo (confermato durante il processo)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="critical-box">
+            <strong>Rilevanza per le indagini correnti:</strong> Il caso Kamiya stabilisce il precedente giudiziario per omicidio tramite aconitina a scopo assicurativo in Giappone. Lo schema &mdash; veleno non tracciabile, polizza vita recente, morte apparentemente naturale &mdash; &egrave; diventato un riferimento standard per la polizia giapponese.
+        </div>
+    </div>
+
+    <div class="footer">
+        Scheda Archivio Storico &mdash; Agenzia Nazionale di Polizia &mdash; Consultazione interna
+    </div>
+
+</div>
+</body>
+</html>

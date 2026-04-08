@@ -10,7 +10,7 @@
 
 # PANORAMICA
 
-Un professore universitario viene trovato in fin di vita nel suo studio. Muore in ospedale qualche ora dopo senza mai riprendere conoscenza. L'autopsia standard dice: **arresto cardiaco**. Caso chiuso, morte naturale.
+Un professore universitario viene trovato in fin di vita nel suo appartamento. Muore in ospedale qualche ora dopo senza mai riprendere conoscenza. L'autopsia standard dice: **arresto cardiaco**. Caso chiuso, morte naturale.
 
 Ma qualcosa non torna. L'assicurazione sulla vita (polizza recente, importo alto) chiede verifiche. Oppure la figlia trova la lettera "se mi succede qualcosa" e la porta alla polizia. Oppure il medico legale nota un'irritazione anomala delle mucose oculari, non compatibile con un semplice infarto.
 
@@ -45,7 +45,7 @@ Kuroda ha ottenuto riconoscimenti internazionali. Morimoto è rimasto nell'ombra
 
 Dopo il plagio, la carriera di Morimoto si è lentamente svuotata. Meno pubblicazioni, meno fondi di ricerca, meno studenti che lo cercavano. Ha investito in ricerche che non hanno dato risultati. I debiti si sono accumulati — prima piccoli, poi sempre più pesanti.
 
-Tre anni fa ha iniziato a soffrire di depressione. Il medico curante gli ha prescritto antidepressivi. Non l'ha detto a nessuno — nell'ambiente accademico giapponese, la malattia mentale è uno stigma.
+Due anni fa ha iniziato a soffrire di depressione. Il medico curante gli ha prescritto antidepressivi. Non l'ha detto a nessuno — nell'ambiente accademico giapponese, la malattia mentale è uno stigma.
 
 Negli ultimi mesi, la situazione è diventata insostenibile. I creditori premevano. L'università stava valutando di non rinnovargli la cattedra. Kuroda, nel frattempo, era stato nominato per un premio internazionale — per la ricerca che era di Morimoto.
 
@@ -103,7 +103,7 @@ Ha comprato scarponi e attrezzatura da escursionismo al negozio **Montbell** di 
 
 Il trikabuto fiorisce tra agosto e ottobre con caratteristici fiori viola a forma di elmo. Morimoto lo conosceva: nella cultura materiale giapponese il trikabuto appare nell'arte e nella letteratura come simbolo di morte. Per uno storico dell'arte, riconoscerlo era banale.
 
-Ha fatto 3-4 escursioni sui Kitayama tra agosto e settembre. In un **chiosco/rifugio di montagna** lungo il sentiero verso Kurama, il gestore lo ricorda: un uomo di città, vestito con abiti troppo nuovi, che si è fermato a bere tè e ha chiesto indicazioni su sentieri laterali. Un **pesce fuor d'acqua** evidente — non il tipo che si dimentica.
+Ha fatto 3-4 escursioni sui Kitayama tra settembre e ottobre. In un **chiosco/rifugio di montagna** lungo il sentiero verso Kurama, il gestore lo ricorda: un uomo di città, vestito con abiti troppo nuovi, che si è fermato a bere tè e ha chiesto indicazioni su sentieri laterali. Un **pesce fuor d'acqua** evidente — non il tipo che si dimentica.
 
 Ha raccolto le radici (la parte più tossica) e a casa ne ha estratto l'aconitina con infusione in alcol e filtrazione. Le informazioni le ha trovate in un testo accademico di etnobotanica della biblioteca universitaria: *Nihon Yakusō Zusetsu* (日本薬草図説, "Illustrazioni delle piante medicinali giapponesi").
 
@@ -143,7 +143,7 @@ Non è una confessione. È il dito puntato di una vittima.
 
 ### La polizza assicurativa
 
-Stipulata 3 mesi fa con la Nippon Life. Beneficiaria: la figlia Aoi. Importo: ¥30.000.000. Clausola standard: non paga in caso di suicidio accertato entro i primi 2 anni.
+Stipulata quasi 3 mesi fa con la Nippon Life. Beneficiaria: la figlia Aoi. Importo: ¥30.000.000. Clausola standard: non paga in caso di suicidio accertato entro i primi 2 anni.
 
 L'assicurazione **non è un movente per nessuno** — è un beneficio per Aoi. Morimoto sapeva che, morendo "assassinato", la polizza avrebbe pagato e la figlia sarebbe stata protetta dai debiti. Se si fosse suicidato, Aoi non avrebbe preso nulla. È un'azione parallela alla vendetta: protegge la figlia mentre punisce Kuroda.
 
@@ -379,7 +379,7 @@ Morimoto le aveva scritto lettere furiose all'epoca. Lei aveva risposto formalme
 ### Negozio Montbell Kawaramachi — Commesso
 **Non è un PNG con nome**: è una fonte di informazioni.
 
-Un commesso ricorda un cliente insolito di circa 3 mesi fa — *"Un signore distinto, sui sessant'anni, chiaramente non il tipo da trekking"*. Ha comprato scarponi, bastone e borsa da raccolta. **Pagamento in contanti** — nessuno scontrino nominativo.
+Un commesso ricorda un cliente insolito di circa 2 mesi fa — *"Un signore distinto, sui sessant'anni, chiaramente non il tipo da trekking"*. Ha comprato scarponi, bastone e borsa da raccolta. **Pagamento in contanti** — nessuno scontrino nominativo.
 
 Il commesso lo ricorda perché ha fatto **molte domande specifiche**: che attrezzatura serve per certi sentieri di montagna, come muoversi nella zona dei Kitayama, che tipo di borsa per raccogliere campioni. *"Sapeva esattamente dove voleva andare, ma non aveva mai camminato in montagna in vita sua."*
 
@@ -406,7 +406,7 @@ Se mostrata foto di Morimoto: lo riconosce.
 **Ruolo**: Medico curante di Morimoto
 **Lavoro**: Internista, Clinica Sakura (Sakyo-ku)
 
-Ha in cura Morimoto per depressione da 3 anni. Gli prescrive antidepressivi (Tofranil, triciclico). Ha anche prescritto il collirio per gli occhi secchi cronici.
+Ha in cura Morimoto per depressione da 2 anni. Gli prescrive antidepressivi (Tofranil, triciclico). Ha anche prescritto il collirio per gli occhi secchi cronici.
 
 **Segreto professionale**: Non può rivelare informazioni senza mandato o consenso dei familiari. I PG dovranno convincere Aoi a dare il consenso, oppure ottenere un mandato dal magistrato.
 
@@ -426,7 +426,7 @@ Se ottengono accesso, la cartella clinica rivela:
 **Ruolo**: Agente assicurativo, Nippon Life
 **Lavoro**: Consulente assicurativo
 
-Ha stipulato la polizza di Morimoto 3 mesi fa. Polizza vita, ¥30.000.000, beneficiaria Morimoto Aoi.
+Ha stipulato la polizza di Morimoto quasi 3 mesi fa. Polizza vita, ¥30.000.000, beneficiaria Morimoto Aoi.
 
 Può rivelare: Morimoto era molto specifico sulle clausole. Ha chiesto esplicitamente cosa succedesse in caso di suicidio. Sato gli ha spiegato la clausola dei 2 anni. Morimoto ha annuito e firmato.
 
@@ -560,7 +560,7 @@ Nella busta:
 - Una lettera del padre (breve, affettuosa, generica: *"Qualunque cosa accada, sappi che ho sempre pensato a te."*)
 - Un elenco di contatti utili (avvocato, banca, assicurazione)
 
-Aoi non ha collegato questa busta alla morte del padre. Per lei era un gesto di un genitore premuroso. Per un investigatore, è un uomo che stava mettendo in ordine le sue cose.
+Aoi non ha collegato questa busta alla morte del padre. Per lei era un gesto di un genitore premuroso. Per un investigatore, è un uomo che stava mettendo in ordine le sue cose. Se i PG chiedono di vedere la busta, consegna l'handout "Busta Aoi".
 
 ---
 
@@ -646,7 +646,7 @@ Qui i PG ricevono il briefing, analizzano le prove, subiscono la pressione di Ta
 ## Sessione 1 — "Il caso facile" (~2 ore)
 
 ### Scena 1: Briefing (10 min)
-Takagi convoca i PG. Un professore dell'Università di Kyoto è morto in ospedale 3 giorni fa. Inizialmente sembrava un infarto — l'autopsia standard aveva chiuso il caso come morte naturale.
+Takagi convoca i PG. Un professore dell'Università di Kyoto è morto in ospedale 4 giorni fa. Inizialmente sembrava un infarto — l'autopsia standard aveva chiuso il caso come morte naturale.
 
 Ma la Nippon Life ha sollevato dubbi: polizza vita da ¥30M stipulata solo 3 mesi fa. Morte improvvisa. Hanno chiesto verifiche. L'analisi tossicologica mirata ha trovato **aconitina** nel sangue e nel collirio della vittima.
 
@@ -663,7 +663,7 @@ I PG esaminano lo studio 307. Trovano: collirio (già sequestrato dalla scientif
 - **Lucidità** per notare che il disordine è "troppo ordinato"
 - **Distacco** se la lettera "se mi succede qualcosa" è emotivamente pesante
 
-Il diario è nascosto — richiede una ricerca attenta della stanza. Non è in vista.
+Il diario è nascosto — richiede una ricerca attenta della stanza. Non è in vista. Quando lo trovano, consegna l'handout "Diario di Morimoto" (Reperto C).
 
 ### Scena 3: Primi interrogatori (40-50 min)
 
@@ -704,17 +704,17 @@ I PG devono decidere: chiudono o continuano?
 ### Scena 5: I dubbi (20-30 min)
 I PG seguono le piste secondarie.
 
-**Casa di Morimoto**: Antidepressivi nascosti. Bollette arretrate. Frammenti della lettera ad Aoi. Libro di botanica con segnalibro sul trikabuto. Estratti conto con il **prelievo anomalo in zona Kawaramachi**. Nessuna attrezzatura da trekking (gettata via).
+**Casa di Morimoto**: Antidepressivi nascosti. Bollette arretrate. Frammenti della lettera ad Aoi nel cestino dello studio — consegna l'handout "Frammenti Lettera Aoi" (Reperto D). Libro di botanica con segnalibro sul trikabuto. Estratti conto con il **prelievo anomalo in zona Kawaramachi**. Nessuna attrezzatura da trekking (gettata via).
 - **Lucidità** per trovare i frammenti nel cestino, notare il prelievo fuori zona, collegare libro di botanica + trikabuto
 - **Distacco** per gestire la scoperta dei debiti e della depressione
 
-**Libreria Maruzen**: Il libro ordinato a nome Kuroda non è mai stato ritirato. Kuroda non ne sa nulla.
+**Libreria Maruzen**: Il libro ordinato a nome Kuroda non è mai stato ritirato. Kuroda non ne sa nulla. Consegna l'handout "Ricevuta Maruzen".
 
 **Negozio Montbell** (se i PG seguono la pista del prelievo anomalo in zona Kawaramachi): il commesso riconosce Morimoto. Un professore anziano che faceva molte domande su attrezzatura da montagna, sentieri sui Kitayama. Pagamento in contanti.
 
 **Chiosco di montagna** (se i PG capiscono che Morimoto andava sui Kitayama): il gestore riconosce il "pesce fuor d'acqua" che chiedeva di sentieri laterali dove crescono piante selvatiche.
 
-**Dr. Endo** (se ottengono accesso): oltre a depressione e antidepressivi, rivela le **mani irritate** di Morimoto 6 settimane prima. Per Sato Yuki (chimico forense), irritazione + formicolio = contatto con aconitina.
+**Dr. Endo** (se ottengono accesso): consegna l'handout "Cartella Clinica" — depressione, antidepressivi, ideazione suicidaria, e le **mani irritate** di Morimoto 6 settimane prima. Per Sato Yuki (chimico forense), irritazione + formicolio = contatto con aconitina.
 
 ### Scena 6: La crepa (15-20 min)
 
@@ -803,7 +803,6 @@ La Sessione 2 è il **ribaltamento**. Ogni nuova scoperta smonta un pezzo del ca
 - **Scena del crimine**: Lucidità (per notare dettagli), Distacco (per gestire l'impatto emotivo della lettera)
 - **Interrogatorio Kuroda**: Ascolto (per separare bugie da verità), Presenza (per fare pressione)
 - **Interrogatorio Aoi**: Distacco (per gestire il dolore), Ascolto (per capire che ripete le parole del padre)
-- **Farmacia**: Ascolto, Presenza
 - **Casa di Morimoto**: Lucidità (per trovare i frammenti), Distacco (per gestire la scoperta)
 - **Medico**: Presenza (per ottenere accesso)
 - **Diario (rilettura critica)**: Lucidità
@@ -831,7 +830,7 @@ Se i PG chiedono un'analisi del computer nello studio, la cronologia del browser
 
 Il recupero richiede **24-48 ore** — i PG lo chiedono nella Sessione 1, i risultati arrivano nella Sessione 2.
 
-Il contenuto recuperato sarà un handout separato (da creare): una lista di URL su più giorni, mescolati tra ricerche accademiche normali (arte Heian, ceramica Momoyama) e ricerche sospette (proprietà del trikabuto, estrazione alcaloidi, caso Kamiya 1986, sintomi avvelenamento da aconitina). Le ricerche sospette sono distribuite su settimane diverse per non sembrare un blocco unico.
+Il contenuto recuperato è nell'handout "Cronologia Browser": una lista di 16 URL su più giorni, mescolati tra ricerche accademiche normali (arte Heian, ceramica Momoyama) e ricerche sospette (proprietà del trikabuto, estrazione alcaloidi, caso Kamiya 1986, sintomi avvelenamento da aconitina). Le ricerche sospette sono distribuite su settimane diverse per non sembrare un blocco unico.
 
 ## I Gou utili
 
@@ -897,17 +896,17 @@ Il GM non interviene per "salvare" la situazione. Se i PG non hanno cercato abba
 | 1995 | Il medico curante diagnostica depressione. Prescrive Tofranil |
 | 1996 | I debiti si aggravano. L'università considera il mancato rinnovo della cattedra |
 | Agosto 1997 | Morimoto decide. Inizia la preparazione |
-| Agosto 1997 | Preleva contanti da ATM in zona Kawaramachi (anomalo). Compra attrezzatura da trekking al Montbell, pagando in contanti. Fa molte domande al commesso |
-| Agosto-Settembre 1997 | Fa 3-4 escursioni sui monti Kitayama. Viene notato al chiosco di montagna come "pesce fuor d'acqua". Raccoglie radici di trikabuto |
-| Settembre 1997 | Estrae l'aconitina a casa (infusione in alcol). Si irrita le mani per contatto — va dal Dr. Endo, dice "allergia da detersivo" |
-| Settembre 1997 | Getta via tutta l'attrezzatura da trekking e il materiale di estrazione. Pulisce la cucina |
-| Settembre 1997 | Stipula la polizza assicurativa. Chiede specificamente della clausola suicidio |
-| Settembre 1997 | Ordina il libro di botanica velenosa a nome di Kuroda alla libreria Maruzen |
+| Agosto 1997 | Stipula la polizza assicurativa (20/08). Chiede specificamente della clausola suicidio |
+| Agosto-Ottobre 1997 | Fa ricerche sul computer dell'università: trikabuto, estrazione aconitina, caso Kamiya 1986, sentieri Kitayama, Nippon Life — distribuite tra ricerche accademiche normali |
+| Settembre 1997 | Preleva contanti da ATM in zona Kawaramachi, 15/09 (anomalo). Compra attrezzatura da trekking al Montbell, pagando in contanti. Fa molte domande al commesso |
+| Settembre 1997 | Ordina il libro di botanica velenosa a nome di Kuroda alla libreria Maruzen (18/09) |
+| Settembre-Ottobre 1997 | Fa 3-4 escursioni sui monti Kitayama. Viene notato al chiosco di montagna come "pesce fuor d'acqua". Raccoglie radici di trikabuto |
 | Settembre-Ottobre 1997 | Scrive il diario (verità + menzogne calibrate). Invita Kuroda allo studio 4 volte |
+| Ottobre 1997 | Estrae l'aconitina a casa (infusione in alcol). Si irrita le mani per contatto — va dal Dr. Endo il 02/10, dice "allergia da detersivo" |
+| Ottobre 1997 | Getta via tutta l'attrezzatura da trekking e il materiale di estrazione. Pulisce la cucina |
 | Ottobre 1997 | Scrive la lettera "se mi succede qualcosa" |
 | Novembre 1997 | Prepara la busta per Aoi (polizza, lettera, contatti) |
-| Novembre 1997 | Fa ricerche sul computer dell'università (trikabuto, estrazione aconitina, caso Kamiya). Cancella la cronologia del browser |
-| 8-11 Novembre 1997 | Prepara lo studio all'università: documenti in disordine, lettera nel cassetto, diario nella libreria |
+| 8-11 Novembre 1997 | Prepara lo studio all'università: documenti in disordine, lettera nel cassetto, diario nella libreria. Cancella la cronologia del browser |
 | 12 Novembre 1997, 17:30 | Esce dall'università normalmente. Il custode lo vede uscire |
 | 12 Novembre 1997, 18:30 | A casa. Prende il flacone di collirio avvelenato |
 | 12 Novembre 1997, 19:00 | Si mette il collirio avvelenato. Entrambi gli occhi |

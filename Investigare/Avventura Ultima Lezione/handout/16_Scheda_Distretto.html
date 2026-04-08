@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Scheda Distretto — Sakyo</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+.section { margin-bottom: 18px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.attr-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.attr-table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.attr-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+.attr-table tr:nth-child(even) td { background: #f9f9f5; }
+.attr-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a2e;
+    text-align: center;
+    width: 50px;
+}
+.attr-desc {
+    font-size: 10px;
+    color: #666;
+}
+.pips {
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.pip-full { color: #1a1a2e; }
+.pip-empty { color: #ddd; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.ops-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.ops-table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.ops-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #ddd;
+}
+.ops-table tr:nth-child(even) td { background: #f9f9f5; }
+.personnel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+}
+.person-card {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    font-size: 10px;
+    background: #fafaf8;
+}
+.person-card .name { font-weight: bold; color: #1a1a2e; font-size: 11px; }
+.person-card .role { color: #666; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    .section p { color: #c0bdb0; }
+    .highlight-box { background: #252520; border-left-color: #c0a060; color: #c0bdb0; }
+    .attr-table th { background: #111118; }
+    .attr-table td { border-color: #333; color: #c0bdb0; }
+    .attr-table tr:nth-child(even) td { background: #1e1e22; }
+    .attr-value { color: #c0a060; }
+    .attr-desc { color: #888; }
+    .pip-full { color: #c0a060; }
+    .pip-empty { color: #333; }
+    .ops-table th { background: #111118; }
+    .ops-table td { border-color: #333; color: #c0bdb0; }
+    .ops-table tr:nth-child(even) td { background: #1e1e22; }
+    .personnel-grid .person-card { background: #151518; border-color: #333; }
+    .personnel-grid .person-card .name { color: #c0a060; }
+    .personnel-grid .person-card .role { color: #888; }
+    .footer { color: #555; border-top-color: #333; }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 &mdash; POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">SCHEDA DISTRETTO &mdash; SAKYO</div>
+        <div class="subtitle">Divisione Investigativa &mdash; Sezione Omicidi</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Attributi del Distretto</div>
+        <table class="attr-table">
+            <thead>
+                <tr>
+                    <th>Attributo</th>
+                    <th>Valore</th>
+                    <th></th>
+                    <th>Descrizione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Organico</strong></td>
+                    <td class="attr-value">7</td>
+                    <td><span class="pips"><span class="pip-full">&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="pip-empty">&bull;&bull;</span></span></td>
+                    <td class="attr-desc">Personale sufficiente per operazioni parallele. Pattuglie, supporto arresti, sorveglianza ordinaria.</td>
+                </tr>
+                <tr>
+                    <td><strong>Efficienza</strong></td>
+                    <td class="attr-value">7</td>
+                    <td><span class="pips"><span class="pip-full">&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="pip-empty">&bull;&bull;</span></span></td>
+                    <td class="attr-desc">Squadra scientifica competente. Analisi forensi, impronte, tossicologia di base. Per HPLC e analisi avanzate, dipende dall'Ospedale Universitario.</td>
+                </tr>
+                <tr>
+                    <td><strong>Velocit&agrave;</strong></td>
+                    <td class="attr-value">5</td>
+                    <td><span class="pips"><span class="pip-full">&bull;&bull;&bull;&bull;&bull;</span><span class="pip-empty">&bull;&bull;&bull;&bull;</span></span></td>
+                    <td class="attr-desc">Burocrazia giapponese. I mandati richiedono tempo. Le analisi di laboratorio hanno code. Niente si fa in fretta.</td>
+                </tr>
+                <tr>
+                    <td><strong>Risorse</strong></td>
+                    <td class="attr-value">6</td>
+                    <td><span class="pips"><span class="pip-full">&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="pip-empty">&bull;&bull;&bull;</span></span></td>
+                    <td class="attr-desc">Attrezzatura standard 1997. Nessuna tecnologia digitale avanzata. Archivi cartacei, fax, cercapersone. Il computer &egrave; un lusso.</td>
+                </tr>
+                <tr>
+                    <td><strong>Rete</strong></td>
+                    <td class="attr-value">6</td>
+                    <td><span class="pips"><span class="pip-full">&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="pip-empty">&bull;&bull;&bull;</span></span></td>
+                    <td class="attr-desc">Contatti sul territorio di Sakyo-ku. Rapporti con universit&agrave;, ospedali, uffici pubblici. Nessun infiltrato in ambienti criminali.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="highlight-box">
+            <strong>Specializzazioni:</strong> Nessuna (nessun attributo &ge; 8). Il distretto &egrave; solido ma senza eccellenze. Per operazioni che richiedono competenze specifiche, i PG devono usare le proprie conoscenze personali o chiedere supporto esterno.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Operazioni delegabili</div>
+        <table class="ops-table">
+            <thead>
+                <tr>
+                    <th>Operazione</th>
+                    <th>Attributo</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedinamento</td>
+                    <td>Organico</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Appostamento</td>
+                    <td>Organico</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sorveglianza di un luogo</td>
+                    <td>Organico</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Perquisizione di un luogo</td>
+                    <td>Organico</td>
+                    <td>Richiede mandato</td>
+                </tr>
+                <tr>
+                    <td>Supporto ad arresto</td>
+                    <td>Organico</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Analisi impronte / tracce</td>
+                    <td>Efficienza</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Analisi tossicologica base</td>
+                    <td>Efficienza</td>
+                    <td>Solo pannello standard</td>
+                </tr>
+                <tr>
+                    <td>Analisi tossicologica mirata (HPLC)</td>
+                    <td>Efficienza</td>
+                    <td>Esternalizzata &mdash; Ospedale Universitario</td>
+                </tr>
+                <tr>
+                    <td>Analisi documentale</td>
+                    <td>Efficienza</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Richiesta mandato al magistrato</td>
+                    <td>Rete</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Verifica anagrafica / registri</td>
+                    <td>Rete</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Accesso archivi bancari</td>
+                    <td>Rete</td>
+                    <td>Richiede mandato</td>
+                </tr>
+                <tr>
+                    <td>Recupero dati informatici</td>
+                    <td>Risorse</td>
+                    <td>Non disponibile internamente &mdash; richiede consulente esterno</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Personale assegnato al caso</div>
+        <div class="personnel-grid">
+            <div class="person-card">
+                <div class="name">TAKAGI Ryuichi (高木隆一)</div>
+                <div class="role">Ispettore Capo &mdash; Supervisore</div>
+                Approva le operazioni, assegna risorse, riporta ai superiori. Non partecipa alle indagini sul campo.
+            </div>
+            <div class="person-card">
+                <div class="name">YAMADA Tetsuo (山田哲雄)</div>
+                <div class="role">Assistente Ispettore &mdash; Accompagnatore</div>
+                Supporto operativo: trasporto, comunicazioni, coordinamento con il distretto, gestione reperti.
+            </div>
+            <div class="person-card">
+                <div class="name">ITO Daisuke (伊藤大輔)</div>
+                <div class="role">Kanshiki-kan &mdash; Scientifica</div>
+                Analisi scene del crimine, catalogazione reperti, coordinamento con laboratori esterni.
+            </div>
+            <div class="person-card">
+                <div class="name">Squadra PG (5 investigatori)</div>
+                <div class="role">Squadra Investigativa Assegnata</div>
+                Yamamoto (capo), Honda, Nakamura, Sato, Fujita.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Scheda Distretto &mdash; Sakyo &mdash; Divisione Investigativa &mdash; Polizia Prefetturale di Kyoto
+    </div>
+
+</div>
+</body>
+</html>

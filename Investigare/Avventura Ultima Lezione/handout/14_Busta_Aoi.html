@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Documenti consegnati a Morimoto Aoi</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.letter-inset {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #2c2418;
+    background: #f8f4e8;
+    padding: 18px 22px;
+    margin: 14px 0;
+    border: 1px solid #d8d0c0;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.06);
+}
+.letter-inset p {
+    margin-bottom: 10px;
+    text-indent: 1.5em;
+    text-align: justify;
+}
+.letter-inset .signature {
+    text-align: right;
+    margin-top: 16px;
+    font-style: italic;
+    color: #3a2e1a;
+}
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.contacts-table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contacts-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #ddd;
+}
+.contacts-table tr:nth-child(even) td { background: #f9f9f5; }
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #252520; border-left-color: #c0a060; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .letter-inset { background: #1e1c18; border-color: #3a3528; color: #d0c8b0; box-shadow: 1px 2px 6px rgba(0,0,0,0.3); }
+    .letter-inset p { color: #d0c8b0; }
+    .letter-inset .signature { color: #a09880; }
+    .contacts-table th { background: #111118; }
+    .contacts-table td { border-color: #333; color: #c0bdb0; }
+    .contacts-table tr:nth-child(even) td { background: #1e1e22; }
+    .signature-section { color: #888; }
+    .signature-line { border-top-color: #555; color: #999; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.2); color: rgba(200, 60, 60, 0.2); }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 &mdash; POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">VERBALE DI ACQUISIZIONE &mdash; DOCUMENTI MORIMOTO AOI</div>
+        <div class="subtitle">Divisione Investigativa &mdash; Distretto di Sakyo</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1216-ACQ-04</div>
+        <div><span class="label">Data acquisizione</span><br>19 novembre 1997</div>
+        <div><span class="label">Consegnati da</span><br>MORIMOTO Aoi (森本 葵), figlia della vittima</div>
+        <div><span class="label">Circostanza</span><br>Busta consegnata dal padre circa un mese prima del decesso</div>
+        <div><span class="label">Acquisiti da</span><br>Ass. Isp. YAMADA Tetsuo (山田哲雄)</div>
+        <div><span class="label">N. documenti</span><br>3 (lettera, polizza assicurativa, elenco contatti)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Circostanze della consegna</div>
+        <p>MORIMOTO Aoi dichiara che il padre le ha consegnato una busta circa un mese prima del decesso (stima: met&agrave; ottobre 1997), dicendole: <em>&laquo;Tieni questi, sono importanti.&raquo;</em></p>
+        <p>La figlia non ha esaminato il contenuto con attenzione fino a dopo la morte del padre. Dichiara di aver interpretato il gesto come premura paterna generica.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Documento 1 &mdash; Lettera personale</div>
+        <div class="letter-inset">
+            <p>Aoi,</p>
+            <p>qualunque cosa accada, sappi che ho sempre pensato a te. Sei la cosa migliore che mi sia capitata in questa vita, e tutto quello che faccio &egrave; perch&eacute; tu possa avere un futuro sereno.</p>
+            <p>Nella busta trovi dei documenti importanti. Conservali. Se dovesse servirti aiuto, chiama le persone nell'elenco &mdash; sono persone di cui mi fido.</p>
+            <p>Non preoccuparti per me. Sto bene. Ma un padre deve pensare al futuro, e io ci sto pensando.</p>
+            <p>Ti voglio bene, pi&ugrave; di quanto tu sappia.</p>
+            <div class="signature">Pap&agrave;</div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="section-title">Documento 2 &mdash; Polizza assicurativa</div>
+        <p>Copia della polizza vita Nippon Life (rif. NL-KY-97-08834, gi&agrave; acquisita separatamente &mdash; vedi fasc. 97-KPD-1216-ASS). Beneficiaria: MORIMOTO Aoi. Capitale: &yen;30.000.000.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Documento 3 &mdash; Elenco contatti</div>
+        <p>Foglio manoscritto con i seguenti recapiti:</p>
+        <table class="contacts-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ruolo</th>
+                    <th>Recapito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TANAKA Yoshio (田中義雄)</td>
+                    <td>Avvocato</td>
+                    <td>075-XXX-XXXX &mdash; Studio legale Tanaka, Kawaramachi</td>
+                </tr>
+                <tr>
+                    <td>SATO Nobuo (佐藤信夫)</td>
+                    <td>Agente assicurativo, Nippon Life</td>
+                    <td>075-XXX-XXXX</td>
+                </tr>
+                <tr>
+                    <td>Sumitomo Mitsui Banking</td>
+                    <td>Filiale Sakyo-ku</td>
+                    <td>075-XXX-XXXX &mdash; Rif. conto MORIMOTO T.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Ass. Isp. YAMADA Tetsuo (山田哲雄)<br>
+                <span style="font-size:9px;">Distretto di Sakyo</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                MORIMOTO Aoi (森本 葵)<br>
+                <span style="font-size:9px;">Dichiarante</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Verbale Acquisizione &mdash; Fascicolo 97-KPD-1216-ACQ-04 &mdash; Pagina 1 di 1 &mdash; Riservato
+    </div>
+
+</div>
+</body>
+</html>

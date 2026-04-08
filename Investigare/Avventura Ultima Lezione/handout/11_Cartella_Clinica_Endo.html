@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Cartella Clinica — Morimoto Takeshi</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #e8edf2;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #2e5e4e;
+    color: #e8f0ec;
+    padding: 14px 20px;
+    border-bottom: 3px solid #8ab89e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #8ab89e; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #a0c0b0; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #2e5e4e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #2e5e4e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+.highlight-box {
+    background: #f0fff5;
+    border-left: 3px solid #8ab89e;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.visit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+}
+.visit-table th {
+    background: #2e5e4e;
+    color: #e8f0ec;
+    padding: 5px 8px;
+    text-align: left;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.visit-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+.visit-table tr:nth-child(even) td { background: #f5faf7; }
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.classificazione {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 9px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(46, 94, 78, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(46, 94, 78, 0.3);
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #6aaa8e; border-bottom-color: #6aaa8e; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #1a2520; border-left-color: #6aaa8e; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .visit-table th { background: #1a3028; }
+    .visit-table td { border-color: #333; color: #c0bdb0; }
+    .visit-table tr:nth-child(even) td { background: #1e2220; }
+    .signature-section { color: #888; }
+    .signature-line { border-top-color: #555; color: #999; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(46, 94, 78, 0.2); color: rgba(46, 94, 78, 0.2); }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO &mdash; SEGRETO MEDICO</div>
+
+    <div class="doc-header">
+        <div class="org">さくらクリニック &mdash; CLINICA SAKURA</div>
+        <div class="title">ESTRATTO CARTELLA CLINICA</div>
+        <div class="subtitle">Sakyo-ku, Kyoto &mdash; Rilascio su autorizzazione</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Paziente</span><br>MORIMOTO Takeshi (森本 武), 63 anni</div>
+        <div><span class="label">Data di nascita</span><br>15 marzo 1934</div>
+        <div><span class="label">Medico curante</span><br>Dr. ENDO Hiroshi (遠藤 博), Internista</div>
+        <div><span class="label">In cura dal</span><br>1990</div>
+        <div><span class="label">Rilasciato a</span><br>Polizia Prefetturale di Kyoto &mdash; Fasc. 97-KPD-1216</div>
+        <div><span class="label">Autorizzazione</span><br>Consenso familiare / Mandato Procura</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Anamnesi rilevante</div>
+        <ul>
+            <li><strong>Ipertensione lieve</strong> &mdash; diagnosticata 1992, controllata con dieta</li>
+            <li><strong>Sindrome dell'occhio secco</strong> (ドライアイ) &mdash; diagnosticata 1993, cronica. Prescritto collirio ad uso quotidiano</li>
+            <li><strong>Disturbo depressivo maggiore</strong> &mdash; diagnosticato 1995. Trattamento farmacologico in corso</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Terapia farmacologica in corso</div>
+        <ul>
+            <li><strong>Tofranil</strong> (imipramina cloridrato) &mdash; 75 mg/die, antidepressivo triciclico. Prescritto dal 1995, dosaggio aumentato a 75 mg nel 1996</li>
+            <li><strong>Collirio</strong> &mdash; lacrime artificiali, uso quotidiano plurimo (3-5 applicazioni/die)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Visite rilevanti &mdash; Ultimi 12 mesi</div>
+        <table class="visit-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Motivo</th>
+                    <th>Note cliniche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>14/01/1997</td>
+                    <td>Controllo periodico</td>
+                    <td>Pressione nella norma. Umore depresso ma stabile. Conferma terapia in corso.</td>
+                </tr>
+                <tr>
+                    <td>12/05/1997</td>
+                    <td>Visita su richiesta</td>
+                    <td>Il paziente riferisce insonnia persistente e calo dell'appetito. Umore marcatamente depresso. Aumento dosaggio Tofranil non indicato per rischio effetti collaterali.</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="critical-box">
+                            <strong>Nota riservata (12/05/1997):</strong> Il paziente riferisce pensieri ricorrenti di morte. Nega piani concreti. Alla domanda diretta risponde: &laquo;Non farei mai una cosa del genere.&raquo; Raccomandato monitoraggio ravvicinato. Il paziente rifiuta invio a specialista psichiatrico.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22/07/1997</td>
+                    <td>Controllo periodico</td>
+                    <td>Umore lievemente migliorato rispetto a maggio. Il paziente appare pi&ugrave; calmo, meno agitato. Riferisce di &laquo;aver preso alcune decisioni importanti&raquo; senza specificare. Conferma terapia.</td>
+                </tr>
+                <tr>
+                    <td>02/10/1997</td>
+                    <td>Visita su richiesta</td>
+                    <td>Il paziente presenta <strong>irritazione cutanea bilaterale alle mani</strong>: eritema diffuso sul dorso e sui palmi, con desquamazione lieve. Riferisce <strong>formicolio persistente alle dita</strong>, in particolare pollice, indice e medio di entrambe le mani.</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="critical-box">
+                            <strong>Dettaglio visita 02/10/1997:</strong> Il paziente attribuisce i sintomi a &laquo;un'allergia da contatto, probabilmente un detersivo nuovo&raquo;. Esame obiettivo: eritema compatibile con dermatite da contatto irritativa. Prescritto: crema cortisonica topica (betametasone 0,1%), applicazione 2 volte/die per 10 giorni. Il paziente non riferisce esposizione a sostanze chimiche note. Non si ritiene necessario approfondimento allergologico.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>28/10/1997</td>
+                    <td>Controllo telefonico</td>
+                    <td>Il paziente riferisce miglioramento dell'irritazione alle mani. Umore descritto come &laquo;tranquillo&raquo;. Prossimo controllo previsto a dicembre.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="highlight-box">
+            <strong>Nota del medico curante:</strong> Il paziente era una persona riservata, poco incline a discutere della propria vita personale durante le visite. La diagnosi di depressione era nota solo al sottoscritto &mdash; il paziente ha sempre rifiutato che venisse comunicata a familiari o colleghi.
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Dr. ENDO Hiroshi (遠藤 博)<br>
+                <span style="font-size:9px;">Internista &mdash; Clinica Sakura, Sakyo-ku</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Rilasciato il 18/11/1997<br>
+                <span style="font-size:9px;">Su autorizzazione Fasc. 97-KPD-1216</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">CLINICA<br>SAKURA<br>さくら<br>京都</div>
+
+    <div class="footer">
+        Estratto Cartella Clinica &mdash; Paziente MORIMOTO T. &mdash; Clinica Sakura, Sakyo-ku &mdash; Pagina 1 di 1 &mdash; Riservato
+    </div>
+
+</div>
+</body>
+</html>

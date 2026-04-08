@@ -33,9 +33,9 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 
 ## Il Meccanismo del Suicidio
 
-1. Raccolta trikabuto sui Kitayama (3-4 escursioni agosto-settembre)
+1. Raccolta trikabuto sui Kitayama (3-4 escursioni settembre-ottobre)
 2. Estrazione aconitina a casa (infusione in alcol, errori da non-chimico)
-3. Collirio avvelenato (Santen FX, ~0.5 mg/mL di aconitina)
+3. Collirio avvelenato (Sante FX, ~0.5 mg/mL di aconitina)
 4. Si mette il collirio a casa, 12/11/1997 ore 19:00
 5. Chiama 119 alle 19:22 (indirizzo dato con precisione sospetta)
 6. Ambulanza arriva 19:28, trasporto in ospedale
@@ -86,19 +86,26 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 
 ## Handout (cartella `handout/`)
 
-9 file HTML stampabili in formato A4:
+16 file HTML stampabili in formato A4:
 
 | # | File | Contenuto | Quando si dà |
 |---|------|-----------|-------------|
 | 01 | Rapporto_Preliminare | Intervento paramedici, ritrovamento, riapertura caso | Briefing (Sessione 1) |
 | 02 | Autopsia_Standard | Referto 13/11, arresto cardiaco, tossicologia negativa | Briefing (Sessione 1) |
 | 03 | Rapporto_Tossicologico | HPLC 15/11, aconitina positiva, riferimento Kamiya | Briefing (Sessione 1) |
-| 04 | Scheda_Collirio | Reperto A, Santen FX, contaminazione | Quando esaminano il collirio |
+| 04 | Scheda_Collirio | Reperto A, Sante FX, contaminazione | Quando esaminano il collirio |
 | 05 | Estratti_Conto | ATM anomalo Kawaramachi, debiti | Quando indagano le finanze |
 | 06 | Lettera_Morimoto | "Se mi succede qualcosa" — Reperto B | Quando trovano la lettera nello studio |
 | 07 | Polizza_Assicurativa | Nippon Life ¥30M, clausola suicidio 24 mesi | Quando indagano sull'assicurazione |
 | 08 | Cronologia_Browser | 16 URL Netscape recuperati (mix accademico + sospetto) | Sessione 2 (dopo 24-48h recupero dati) |
 | 09 | Trascrizione_119 | Chiamata emergenza con timestamp | Quando chiedono la registrazione |
+| 10 | Diario_Morimoto | Reperto C, 9 annotazioni ago-nov (verità + menzogne calibrate) | Quando trovano il diario nello studio |
+| 11 | Cartella_Clinica_Endo | Depressione, Tofranil, ideazione suicidaria, mani irritate 02/10 | Dopo accesso medico (consenso Aoi o mandato) |
+| 12 | Frammenti_Lettera_Aoi | Reperto D, 5 frammenti strappati — "perdonami", "debiti", "l'unica cosa che potevo fare" | Quando perquisiscono casa di Morimoto (cestino studio) |
+| 13 | Ricevuta_Maruzen | Ordine telefonico libro piante velenose a nome Kuroda, mai ritirato | Quando indagano alla libreria Maruzen |
+| 14 | Busta_Aoi | Lettera affettuosa del padre + polizza + elenco contatti, consegnata un mese prima | Quando interrogano Aoi a fondo sulla busta |
+| 15 | Caso_Kamiya_1986 | Scheda archivio caso Torikabuto 1986: aconitina + assicurazione = precedente | Briefing (Sessione 1) — Takagi lo cita |
+| 16 | Scheda_Distretto | Attributi distretto Sakyo (O7 E7 V5 R6 Re6), personale, operazioni delegabili | Inizio avventura — riferimento permanente |
 
 ## Principi di Scrittura
 
