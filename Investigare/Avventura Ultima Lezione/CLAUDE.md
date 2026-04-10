@@ -27,7 +27,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 - **Attrezzatura da trekking gettata via** — a casa di Morimoto NON c'è niente che lo colleghi alla montagna. L'unica traccia è il prelievo ATM anomalo in zona Kawaramachi
 - **Morimoto non è un chimico** — ha fatto errori nell'estrazione (mani irritate = contatto con aconitina). Il Dr. Endo ha annotato i sintomi
 - **Nessuna prova fisica nell'ufficio di Kuroda** — Morimoto era troppo intelligente. Le prove false sono solo documentali e testimoniali
-- **Se i PG chiudono il caso in Sessione 1**: hanno fallito, un innocente va in prigione. Nessuna valvola di sicurezza
+- **Se i PG chiudono il caso prematuramente**: hanno fallito, un innocente va in prigione. Nessuna valvola di sicurezza
 - **Gli indizi si danno SEMPRE** — il dado non blocca l'indagine, modula solo la gestione emotiva
 - **Caso Kamiya 1986** (Torikabuto Hoken-kin Satsujin Jiken): riferimento storico reale. Ogni investigatore giapponese del 1997 lo conosce. Funziona come depistaggio (rafforza l'ipotesi omicidio per assicurazione)
 
@@ -78,7 +78,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 4. Il piano di Morimoto (Fase 1: preparazione, Fase 2: esecuzione)
 5. I personaggi — schede PNG complete con En per PG
 6. Le location (9 totali: studio, ufficio Kuroda, casa Morimoto, casa Aoi, ospedale, Montbell, chiosco montagna, editrice, stazione polizia)
-7. Struttura sessioni (Sessione 1: "il caso facile", Sessione 2: "la verità fa male")
+7. Struttura dell'indagine (Fase 1: "il caso facile", Fase 2: "la verità fa male")
 8. Indizi e percorsi (A: caso falso, B: dubbi, C: verità)
 9. Note GM (ritmo, toni, quando tirare, Gou utili, dilemma finale)
 10. Reazioni alla scoperta, evento reattivo (diario), fallimento legittimo
@@ -90,25 +90,25 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 
 | # | File | Contenuto | Quando si dà |
 |---|------|-----------|-------------|
-| 01 | Rapporto_Preliminare | Intervento paramedici, ritrovamento, riapertura caso | Briefing (Sessione 1) |
-| 02 | Autopsia_Standard | Referto 13/11, arresto cardiaco, tossicologia negativa | Briefing (Sessione 1) |
-| 03 | Rapporto_Tossicologico | HPLC 15/11, aconitina positiva, riferimento Kamiya | Briefing (Sessione 1) |
+| 01 | Rapporto_Preliminare | Intervento paramedici, ritrovamento, riapertura caso | Briefing |
+| 02 | Autopsia_Standard | Referto 13/11, arresto cardiaco, tossicologia negativa | Briefing |
+| 03 | Rapporto_Tossicologico | HPLC 15/11, aconitina positiva, riferimento Kamiya | Briefing |
 | 04 | Scheda_Collirio | Reperto A, Sante FX, contaminazione | Quando esaminano il collirio |
 | 05 | Estratti_Conto | ATM anomalo Kawaramachi, debiti | Quando indagano le finanze |
 | 06 | Lettera_Morimoto | "Se mi succede qualcosa" — Reperto B | Quando trovano la lettera nello studio |
 | 07 | Polizza_Assicurativa | Nippon Life ¥30M, clausola suicidio 24 mesi | Quando indagano sull'assicurazione |
-| 08 | Cronologia_Browser | 16 URL Netscape recuperati (mix accademico + sospetto) | Sessione 2 (dopo 24-48h recupero dati) |
+| 08 | Cronologia_Browser | 16 URL Netscape recuperati (mix accademico + sospetto) | Dopo 24-48h dalla richiesta di recupero dati |
 | 09 | Trascrizione_119 | Chiamata emergenza con timestamp | Quando chiedono la registrazione |
 | 10 | Diario_Morimoto | Reperto C, 9 annotazioni ago-nov (verità + menzogne calibrate) | Quando trovano il diario nello studio |
 | 11 | Cartella_Clinica_Endo | Depressione, Tofranil, ideazione suicidaria, mani irritate 02/10 | Dopo accesso medico (consenso Aoi o mandato) |
 | 12 | Frammenti_Lettera_Aoi | Reperto D, 5 frammenti strappati — "perdonami", "debiti", "l'unica cosa che potevo fare" | Quando perquisiscono casa di Morimoto (cestino studio) |
 | 13 | Ricevuta_Maruzen | Ordine telefonico libro piante velenose a nome Kuroda, mai ritirato | Quando indagano alla libreria Maruzen |
 | 14 | Busta_Aoi | Lettera affettuosa del padre + polizza + elenco contatti, consegnata un mese prima | Quando interrogano Aoi a fondo sulla busta |
-| 15 | Caso_Kamiya_1986 | Scheda archivio caso Torikabuto 1986: aconitina + assicurazione = precedente | Briefing (Sessione 1) — Takagi lo cita |
+| 15 | Caso_Kamiya_1986 | Scheda archivio caso Torikabuto 1986: aconitina + assicurazione = precedente | Briefing — Takagi lo cita |
 | 16 | Scheda_Distretto | Attributi distretto Sakyo (O7 E7 V5 R6 Re6), personale, operazioni delegabili | Inizio avventura — riferimento permanente |
 | 17 | Giornale_Necrologia | Kyoto Shimbun 14/11 — trafiletto morte naturale, nessun sospetto | Briefing o disponibile su richiesta |
-| 18 | Giornale_Omicidio | Kyoto Shimbun 16/11 — veleno nel collirio, caso riaperto, parallelo Kamiya | Briefing Sessione 1 (stesso giorno) |
-| 19 | Giornale_Scandalo | Kyoto Shimbun 17/11 — polizza 30M, rivalita accademica, speculazioni | Sessione 2 o su richiesta |
+| 18 | Giornale_Omicidio | Kyoto Shimbun 16/11 — veleno nel collirio, caso riaperto, parallelo Kamiya | Briefing (stesso giorno) |
+| 19 | Giornale_Scandalo | Kyoto Shimbun 17/11 — polizza 30M, rivalita accademica, speculazioni | Fase 2 o su richiesta |
 | 20 | Giornale_Nomina_Kuroda | Kyoto Shimbun 8/10 — Kuroda nominato premio Kokusai per la ricerca Heian-Momoyama | Sulla scrivania Studio 307, o se PG si bloccano |
 | 21 | Giornale_Kamiya_1986 | Asahi Shimbun 12/09/1986 — cronaca originale del caso trikabuto (archivio) | Solo se richiesto o se PG si bloccano (via Tanaka) |
 
@@ -118,7 +118,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 - Le schede PNG seguono lo schema: dati, cosa sa, cosa nasconde, come reagisce, En
 - Le prove sono fisiche e sempre trovabili — i tiri modulano solo la comprensione
 - Il tono è noir realistico, nessun elemento soprannaturale
-- Ritmo target: 2 sessioni da ~2 ore (Sessione 1: caso facile, Sessione 2: ribaltamento)
+- Ritmo target: due fasi narrative (Fase 1: caso facile, Fase 2: ribaltamento). Durata variabile a seconda del tavolo
 - I PG sono gli stessi delle altre avventure (Yamamoto, Honda, Nakamura, Sato, Fujita)
 
 ## Vault Obsidian

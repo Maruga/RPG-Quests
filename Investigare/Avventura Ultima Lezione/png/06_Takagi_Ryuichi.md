@@ -5,7 +5,7 @@
 
 ## Descrizione
 
-Superiore dei PG. Vuole chiudere il caso per efficienza, non per pigrizia. Le prove contro Kuroda sono solide — perche perdere tempo? Mette pressione da meta Sessione 1. Segue la gerarchia: se i superiori dicono suicidio, si adegua. Se vogliono omicidio, spinge per Kuroda.
+Superiore dei PG. Vuole chiudere il caso per efficienza, non per pigrizia. Le prove contro Kuroda sono solide — perche perdere tempo? Mette pressione man mano che l'indagine procede. Segue la gerarchia: se i superiori dicono suicidio, si adegua. Se vogliono omicidio, spinge per Kuroda.
 
 ## Prompt GPT
 
@@ -21,15 +21,15 @@ Superiore dei PG. Vuole chiudere il caso per efficienza, non per pigrizia. Le pr
 | Sato | -1 | Troppo giovane |
 | Fujita | 0 | — |
 
-## Cosa sa — per fase
+## Cosa sa / come si comporta
 
-### Briefing (Sessione 1)
+### Al briefing
 
 - Presenta il caso: professore morto 4 giorni fa, aconitina nel collirio
 - Cita il caso Kamiya 1986: "Vi ricorda qualcosa?"
 - Consegna rapporti (handout 01, 02, 03, 15, 16)
 
-### Meta Sessione 1
+### Quando le prove contro Kuroda si accumulano
 
 - "Cosa vi serve ancora? Avete movente, accesso, la lettera."
 - Spinge per chiudere

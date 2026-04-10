@@ -23,7 +23,7 @@ Ha plagiato la ricerca di Morimoto 10 anni fa. Lo sa, sa che tutti lo sanno. Qua
 
 ## Cosa sa — per fase
 
-### Primo interrogatorio (Sessione 1)
+### Primo interrogatorio
 
 **Mente su**:
 - La rivalita: "Era una divergenza accademica, niente di personale" (BUGIA — era plagio)

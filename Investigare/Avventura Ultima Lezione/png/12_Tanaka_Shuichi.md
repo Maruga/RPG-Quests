@@ -3,7 +3,7 @@
 **Eta**: 43 | **Lavoro**: Giornalista, cronaca giudiziaria, Kyoto Shimbun
 **Legame**: Conoscenza di Yamamoto Kenji (vecchio compagno di universita, si vedono per bere)
 **Contatto**: Cellulare personale. Risponde sempre, anche di notte.
-**Costo**: Prima volta per sessione senza conseguenze. La seconda volta chiede qualcosa in cambio (una soffiata, un dettaglio dall'indagine).
+**Costo**: La prima chiamata e gratuita. Dalla seconda in poi chiede qualcosa in cambio (una soffiata, un dettaglio dall'indagine).
 
 ## Descrizione
 

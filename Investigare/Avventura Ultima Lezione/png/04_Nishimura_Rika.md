@@ -23,7 +23,7 @@ Devota al professore. La persona piu vicina a lui professionalmente. Ha notato c
 
 ## Cosa sa — per fase
 
-### Primo interrogatorio (Sessione 1)
+### Primo interrogatorio
 
 **Sul collirio**:
 - "Lo usava tutti i giorni. Occhi secchi, il medico gliel'aveva prescritto. Il flacone era sempre sulla scrivania. Tutti lo sapevano."

@@ -19,4 +19,4 @@
 
 ## Nota GM
 
-La stazione è dove Takagi mette pressione. Da metà Sessione 1: "Avete il colpevole. Portatemi la confessione." Resistere richiede Presenza o Pazienza.
+La stazione è dove Takagi mette pressione. Man mano che le prove contro Kuroda si accumulano: "Avete il colpevole. Portatemi la confessione." Resistere richiede Presenza o Pazienza.

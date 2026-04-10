@@ -23,7 +23,7 @@ Figlia unica. Adorava il padre. Sa della rivalita con Kuroda — il padre gliene
 
 ## Cosa sa — per fase
 
-### Primo interrogatorio (Sessione 1)
+### Primo interrogatorio
 
 - Il padre le parlava della rivalita con Kuroda da anni
 - "Quell'uomo gli ha rubato il lavoro della vita"
