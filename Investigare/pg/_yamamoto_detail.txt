@@ -1,0 +1,112 @@
+=== TABLE 1 (Attributi 7x6) — cell run details ===
+-- ROW 0 --
+  C0: ["'Attributo' sz=9.0 c=None"]
+  C1: ["'Base' sz=9.0 c=None"]
+  C2: ["'Finale' sz=9.0 c=None"]
+  C3: []
+  C4: ["'Valori' sz=9.0 c=None"]
+  C5: ["'Note' sz=9.0 c=None"]
+-- ROW 1 --
+  C0: ["'Distacco ' sz=None c=1A1A2E", "'冷静' sz=None c=1A1A2E"]
+  C1: ["'6' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ['"Non farti coinvolgere emotivamente. Restare lucido davanti all\'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire." sz=8.0 c=None']
+-- ROW 2 --
+  C0: ["'Pazienza ' sz=None c=1A1A2E", "'忍耐' sz=None c=1A1A2E"]
+  C1: ["'4' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ["'Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo.' sz=8.0 c=None"]
+-- ROW 3 --
+  C0: ["'Silenzio ' sz=None c=1A1A2E", "'沈黙' sz=None c=1A1A2E"]
+  C1: ["'6' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ['"Calma interiore. Non reagire d\'impulso. Incassare provocazioni senza esplodere. Non tradire le tue intenzioni con un gesto o una parola di troppo." sz=8.0 c=None']
+-- ROW 4 --
+  C0: ["'Lucidità ' sz=None c=1A1A2E", "'明晰' sz=None c=1A1A2E"]
+  C1: ["'6' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ["'v' sz=8.0 c=None", "'edere chiaro. Collegare i pezzi. Capire cosa è importante e cosa no. Ricostruire cosa è successo da quello che resta.' sz=8.0 c=None"]
+-- ROW 5 --
+  C0: ["'Ascolto ' sz=None c=1A1A2E", "'傾聴' sz=None c=1A1A2E"]
+  C1: ["'4' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ["'Far parlare gli altri. Cogliere il non detto. Leggere tra le righe. Sentire quando qualcosa non torna in quello che qualcuno ti sta dicendo.' sz=8.0 c=None"]
+-- ROW 6 --
+  C0: ["'Presenza ' sz=None c=1A1A2E", "'存在' sz=None c=1A1A2E"]
+  C1: ["'5' sz=12.0 c=1A1A2E"]
+  C2: []
+  C3: []
+  C4: []
+  C5: ['"L\'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza." sz=8.0 c=None']
+
+=== TABLE 0 (Header 1x3) ===
+  C0: ["'山本'", "' '", "'健二'", "'YAMAMOTO Kenji'"]
+  C1: ["'Età '", "'42'", "'Ruolo '", "'Capo Squadra Investigativa'", "'Grado '", "'Ispettore Capo ('", "'Keibu'", "')'", "'Servizio '", "'18 anni'"]
+  C2: ["''"]
+
+=== TABLE 2 (Ki/Satori 1x2) ===
+  C0:
+    '気'
+    '  '
+    'KI'
+    ' '
+    ' '
+    '— '
+    'T'
+    'enuta'
+    'Ki'
+    ' Max: ________     '
+    '≤3 Genkai'
+    ' '
+    ' '
+    'Ki'
+    ' attuale: ________'
+  C1:
+    '悟'
+    'り'
+    '  '
+    'SATORI'
+    '1/sessione'
+    'successo '
+    'automatico '
+    '☐'
+
+=== TABLE 3 (Nasake/Soroban 1x2) ===
+  C0:
+    '情'
+    'け'
+    '  NASAKE'
+    ' — Compassione'
+    'Solo donabile a un altro PG giocando la scena.'
+    '\nSi perde a fine sessione.'
+    '☐ Vuoto   ☐ Pieno'
+  C1:
+    '算盤'
+    '  SOROBAN'
+    ' — Giornata'
+    'Nami+ → +1    '
+    'Kiwami'
+    '+ → +2'
+    '\nNami- → -1     '
+    'Kiwami'
+    '- → -2'
+    '0  1'
+    '  '
+    '2  3'
+    '  '
+    '4  '
+    '⑤'
+    '  '
+    '6  7'
+    '  '
+    '8  9'
