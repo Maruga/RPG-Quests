@@ -1,0 +1,15 @@
+{
+  "id": "avventura-ultima-lezione",
+  "name": "Avventura Ultima Lezione",
+  "system": "Genkai",
+  "author": "Maru",
+  "version": "1.0",
+  "description": "Omicidio di un professore.",
+  "players": "3-5",
+  "duration": "3 ore",
+  "language": "it",
+  "tags": [],
+  "visibility": "public",
+  "includeKeys": true,
+  "exportedAt": "2026-04-10"
+}

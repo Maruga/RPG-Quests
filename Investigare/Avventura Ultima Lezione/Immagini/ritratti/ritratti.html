@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Dramatis Personae — L'Ultima Lezione</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #1a1a2e;
+    color: #f5f3eb;
+    margin: 0;
+    padding: 18px 24px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #b49650;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin: 0 0 4px 0;
+  }
+  .sub {
+    text-align: center;
+    color: #787878;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #242438;
+    border: 1px solid #b49650;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 6px;
+  }
+  .card .name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #f5f3eb;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+  }
+  .card .role {
+    font-size: 11px;
+    color: #b49650;
+    font-style: italic;
+    margin-top: 2px;
+    line-height: 1.25;
+  }
+
+  /* STAMPA — sfondo chiaro */
+  @media print {
+    @page { size: A4; margin: 10mm; }
+    body {
+      background: #ffffff !important;
+      color: #1a1a2e !important;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    h1 { color: #8b6914 !important; }
+    .sub { color: #555 !important; }
+    .card {
+      background: #faf8f0 !important;
+      border: 1px solid #8b6914 !important;
+      page-break-inside: avoid;
+    }
+    .card .name { color: #1a1a2e !important; }
+    .card .role { color: #8b6914 !important; }
+    .grid { gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<h1>DRAMATIS PERSONAE</h1>
+<div class="sub">L'Ultima Lezione — Kyoto, Novembre 1997</div>
+
+<div class="grid">
+  <div class="card">
+    <img src="morimoto-takeshi.png" alt="Morimoto Takeshi">
+    <div class="name">MORIMOTO Takeshi</div>
+    <div class="role">La vittima<br>Professore di Storia dell'Arte</div>
+  </div>
+  <div class="card">
+    <img src="morimoto-aoi.png" alt="Morimoto Aoi">
+    <div class="name">MORIMOTO Aoi</div>
+    <div class="role">Figlia della vittima<br>Insegnante elementare</div>
+  </div>
+  <div class="card">
+    <img src="kuroda-haruki.png" alt="Kuroda Haruki">
+    <div class="name">KURODA Haruki</div>
+    <div class="role">Collega della vittima<br>Vice-Ordinario, Storia dell'Arte</div>
+  </div>
+  <div class="card">
+    <img src="kuroda-yumi.png" alt="Kuroda Yumi">
+    <div class="name">KURODA Yumi</div>
+    <div class="role">Moglie di Kuroda Haruki<br>Ex insegnante di ikebana</div>
+  </div>
+
+  <div class="card">
+    <img src="nishimura-rika.png" alt="Nishimura Rika">
+    <div class="name">NISHIMURA Rika</div>
+    <div class="role">Assistente di ricerca della vittima<br>Dottoranda</div>
+  </div>
+  <div class="card">
+    <img src="tanabe-shigeru.png" alt="Tanabe Shigeru">
+    <div class="name">TANABE Shigeru</div>
+    <div class="role">Custode della Facoltà di Lettere</div>
+  </div>
+  <div class="card">
+    <img src="takagi-ryuichi.png" alt="Takagi Ryuichi">
+    <div class="name">TAKAGI Ryuichi</div>
+    <div class="role">Ispettore Capo<br>Superiore della squadra</div>
+  </div>
+  <div class="card">
+    <img src="endo-hiroshi.png" alt="Endo Hiroshi">
+    <div class="name">Dr. ENDO Hiroshi</div>
+    <div class="role">Medico curante della vittima<br>Clinica Sakura</div>
+  </div>
+
+  <div class="card">
+    <img src="honda-masao.png" alt="Honda Masao">
+    <div class="name">HONDA Masao</div>
+    <div class="role">Preside della Facoltà di Lettere</div>
+  </div>
+  <div class="card">
+    <img src="yamaguchi-keiko.png" alt="Yamaguchi Keiko">
+    <div class="name">YAMAGUCHI Keiko</div>
+    <div class="role">Responsabile pubblicazioni<br>Bungeishunju</div>
+  </div>
+  <div class="card">
+    <img src="sato-nobuo.png" alt="Sato Nobuo">
+    <div class="name">SATO Nobuo</div>
+    <div class="role">Consulente assicurativo<br>Nippon Life</div>
+  </div>
+  <div class="card">
+    <img src="mori-katsuo.png" alt="Mori Katsuo">
+    <div class="name">MORI Katsuo</div>
+    <div class="role">Collega della vittima<br>Professore Associato</div>
+  </div>
+</div>
+</body>
+</html>
