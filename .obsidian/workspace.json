@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Ultima Lezione/Storia Completa.md",
+                "file": "Varie/Spiriti Guardiani/Avventura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Storia Completa"
+              "title": "Avventura"
             }
           }
         ]
@@ -227,6 +227,15 @@
   },
   "active": "8617616e39320824",
   "lastOpenFiles": [
+    "Varie/Spiriti Guardiani/spiriti-guardiani-regolamento.md",
+    "Varie/Spiriti Guardiani/Avventura.md",
+    "Varie/Spiriti Guardiani",
+    "Senza nome 1.base",
+    "Senza nome.base",
+    "Link Utili.md",
+    "README.md",
+    "Investigare/Avventura Ultima Lezione/Storia Completa.md",
+    "Varie",
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/Avventura Ultima Lezione/Immagini/ritratti/ritratti.html.tmp.20444.1775838918475",
     "Investigare/Avventura Ultima Lezione/_project-state.json",
@@ -244,13 +253,8 @@
     "Investigare/Avventura Ultima Lezione/Immagini/scene/frammenti-lettera.png",
     "Investigare/Avventura Ultima Lezione/Immagini/scene",
     "Investigare/Avventura Ultima Lezione/Immagini/ritratti",
-    "Investigare/pg/~WRL0002.tmp",
-    "Investigare/pg/~WRD0001.tmp",
-    "Investigare/pg/~WRD0000.tmp",
-    "Investigare/pg/~$TEPRIMA_Fujita_Emi.docx",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/README.md",
-    "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/Avventura Ultima Lezione/png/12_Tanaka_Shuichi.md",
     "Investigare/png/Taniguchi_Kenji_Commissario.md",
     "Investigare/Avventura Ultima Lezione/png/06_Takagi_Ryuichi.md",
@@ -268,9 +272,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/Version2/Enigma.md",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/01 - Il Banchetto.md",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/README.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Stanza del Mago.md",
-    "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
-    "DnD/OneShot - La Pietra dell'Ombra/08a - Cripta - Scala.md",
-    "DnD/OneShot - Escape Room/Enigma - Uomo nel ritratto.md"
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/Stanza del Mago.md"
   ]
 }
