@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Estratti Conto Bancari — Caso Morimoto</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 6mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 11px; margin-top: 4px; color: #aaa69d; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+.classificazione {
+    position: absolute;
+    top: 6mm;
+    right: 6mm;
+    font-size: 11px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+}
+table th, table td {
+    border: 1px solid #999;
+    padding: 4px 8px;
+    text-align: left;
+}
+table th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+table tr:nth-child(even) { background: #f9f9f5; }
+tr.anomalous { background: #fff5f5 !important; }
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #252520; border-left-color: #c0a060; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .signature-section { color: #888; }
+    .signature-line { border-top-color: #555; color: #999; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.2); color: rgba(200, 60, 60, 0.2); }
+    table th { background: #111118; }
+    table td { border-color: #333; color: #c0bdb0; }
+    table tr:nth-child(even) td { background: #1e1e22; }
+    tr.anomalous { background: #2a1a1a !important; }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">ESTRATTI CONTO BANCARI — VITTIMA</div>
+        <div class="subtitle">Divisione Investigativa — Analisi Finanziaria</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1216-FIN</div>
+        <div><span class="label">Data analisi</span><br>16 novembre 1997</div>
+        <div><span class="label">Istituto bancario</span><br>Sumitomo Mitsui Banking Corporation, filiale Sakyo-ku</div>
+        <div><span class="label">Periodo analizzato</span><br>Settembre — Novembre 1997</div>
+        <div><span class="label">Intestatario</span><br>MORIMOTO Takeshi (森本 武)</div>
+        <div><span class="label">Tipo conto</span><br>Conto corrente ordinario (普通預金)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Prelievi ATM — Settembre / Novembre 1997</div>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Importo</th>
+                <th>ATM / Località</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td>02/09/1997</td>
+                <td>¥20.000</td>
+                <td>Sakyo-ku, Higashioji</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>08/09/1997</td>
+                <td>¥15.000</td>
+                <td>Yoshida, Campus</td>
+                <td></td>
+            </tr>
+            <tr class="anomalous">
+                <td>15/09/1997</td>
+                <td>¥35.000</td>
+                <td>Kawaramachi, Shijo</td>
+                <td style="color:#8b0000;font-weight:bold;">&#9888; FUORI ZONA</td>
+            </tr>
+            <tr>
+                <td>22/09/1997</td>
+                <td>¥20.000</td>
+                <td>Sakyo-ku, Higashioji</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>01/10/1997</td>
+                <td>¥25.000</td>
+                <td>Yoshida, Campus</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10/10/1997</td>
+                <td>¥15.000</td>
+                <td>Sakyo-ku, Higashioji</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20/10/1997</td>
+                <td>¥20.000</td>
+                <td>Sakyo-ku, Higashioji</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>01/11/1997</td>
+                <td>¥20.000</td>
+                <td>Yoshida, Campus</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10/11/1997</td>
+                <td>¥15.000</td>
+                <td>Sakyo-ku, Higashioji</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div class="highlight-box">
+            Il prelievo del 15/09 in zona Kawaramachi-Shijo è l'unico fuori dalla routine abituale della vittima (Sakyo-ku / Yoshida). La zona ospita negozi commerciali, librerie e articoli sportivi.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Situazione debitoria</div>
+        <p>L'analisi degli estratti conto e della corrispondenza bancaria ha evidenziato una situazione debitoria significativa:</p>
+        <ul>
+            <li>Molteplici pagamenti in ritardo su utenze e rate di prestito personale</li>
+            <li>Due lettere di sollecito dalla banca (luglio e settembre 1997)</li>
+            <li>Una lettera di diffida formale (ottobre 1997) per mancato pagamento rata prestito</li>
+            <li>Scoperto di conto corrente ricorrente negli ultimi 6 mesi</li>
+        </ul>
+
+        <div class="critical-box">
+            <strong>Debito complessivo stimato:</strong> ~¥4.800.000<br>
+            Composto da: prestito personale (¥3.200.000 residuo), arretrati utenze (¥380.000), scoperto bancario (¥420.000), debiti vari (¥800.000).
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Stipendio</div>
+        <p>Accredito mensile dall'Università di Kyoto (Facoltà di Lettere):</p>
+        <ul>
+            <li><strong>Stipendio netto mensile:</strong> ¥380.000</li>
+            <li><strong>Qualifica:</strong> Professore Ordinario (教授)</li>
+        </ul>
+        <p>L'importo risulta inferiore alla media per un professore ordinario della stessa anzianità, riflettendo la riduzione dei fondi di ricerca assegnati al dipartimento negli ultimi anni e l'assenza di incarichi aggiuntivi retribuiti.</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Ass. Isp. YAMADA Tetsuo (山田哲雄)<br>
+                <span style="font-size: 11px;">Distretto di Sakyo</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Ag. SUZUKI Manabu (鈴木学)<br>
+                <span style="font-size: 11px;">Analisi Finanziaria</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Estratti Conto Bancari — Fascicolo 97-KPD-1216-FIN — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

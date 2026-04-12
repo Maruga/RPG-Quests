@@ -11,14 +11,12 @@
             "id": "8617616e39320824",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Varie/Spiriti Guardiani/Armi.md",
-                "mode": "source",
-                "source": false
+                "file": "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 03_02_07.png"
               },
-              "icon": "lucide-file",
-              "title": "Armi"
+              "icon": "lucide-image",
+              "title": "ChatGPT Image 12 apr 2026, 03_02_07"
             }
           }
         ]
@@ -227,35 +225,36 @@
   },
   "active": "8617616e39320824",
   "lastOpenFiles": [
+    "Varie/Spiriti Guardiani/Immagini/GruppoMax.png",
+    "Varie/Spiriti Guardiani/Immagini/GruppoMin.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 03_02_07.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 03_01_40.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 03_00_22.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 02_59_31.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 02_59_25.png",
+    "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 12 apr 2026, 02_59_08.png",
+    "Varie/Spiriti Guardiani/Armi.md",
+    "Varie/Spiriti Guardiani/Immagini",
+    "Investigare/Avventura Ultima Lezione/handout/backup/21_Giornale_Kamiya_1986.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/20_Giornale_Nomina_Kuroda.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/19_Giornale_Scandalo.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/18_Giornale_Omicidio.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/17_Giornale_Necrologia.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/16_Scheda_Distretto.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/15_Caso_Kamiya_1986.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/14_Busta_Aoi.html",
+    "Investigare/Avventura Ultima Lezione/handout/backup/13_Ricevuta_Maruzen.html",
     "Varie/Spiriti Guardiani/Avventura.md",
     "Varie/Spiriti Guardiani/Prologo.md",
     "Varie/Spiriti Guardiani/PG.md",
-    "Varie/Spiriti Guardiani/Armi.md",
     "Varie/Spiriti Guardiani/spiriti-guardiani-regolamento.md",
-    "Varie/Spiriti Guardiani",
-    "Senza nome 1.base",
-    "Senza nome.base",
     "Link Utili.md",
     "README.md",
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
-    "Varie",
     "Investigare/GENKAI_Briefing_Giocatori.md",
-    "Investigare/Avventura Ultima Lezione/Immagini/ritratti/ritratti.html.tmp.20444.1775838918475",
-    "Investigare/Avventura Ultima Lezione/_project-state.json",
-    "Investigare/Avventura Ultima Lezione/_adventure.json",
-    "Investigare/Avventura Ultima Lezione/Immagini/ritratti/ritratti.html",
     "Investigare/Avventura Ultima Lezione/Immagini/scene/studio-307-morimoto.png",
     "Investigare/Avventura Ultima Lezione/Immagini/scene/universita-kyoto-esterno.png",
     "Investigare/Avventura Ultima Lezione/Immagini/scene/sentiero-del-filosofo.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/sala-riunioni-distretto.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/polizza-nippon-life.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/negozio-montbell.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/ospedale-pronto-soccorso.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/monti-kitayama-trikabuto.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/lettera-se-mi-succede.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene/frammenti-lettera.png",
-    "Investigare/Avventura Ultima Lezione/Immagini/scene",
-    "Investigare/Avventura Ultima Lezione/Immagini/ritratti",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/README.md",
     "Investigare/Avventura Ultima Lezione/png/12_Tanaka_Shuichi.md",
@@ -271,7 +270,6 @@
     "Investigare/Avventura Ultima Lezione/png/09_Yamaguchi_Keiko.md",
     "Investigare/Avventura Ultima Lezione/png/10_Sato_Nobuo.md",
     "Investigare/Avventura Ultima Lezione/png/11_Mori_Katsuo.md",
-    "DnD/Combattimento.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Enigma.md"
+    "DnD/Combattimento.md"
   ]
 }

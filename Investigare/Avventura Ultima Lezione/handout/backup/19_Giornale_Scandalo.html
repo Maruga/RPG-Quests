@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Kyoto Shimbun — Scandalo assicurazione</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #faf8f0;
+    padding: 6mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.newspaper-header {
+    text-align: center;
+    border-bottom: 3px double #1a1a1a;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+.newspaper-name {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #1a1a1a;
+}
+.newspaper-name-jp {
+    font-size: 14px;
+    letter-spacing: 8px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.newspaper-date {
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+    letter-spacing: 2px;
+}
+.article {
+    border: 1px solid #ccc;
+    padding: 16px 20px;
+    margin: 20px 0;
+    background: #fff;
+}
+.article-section {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 6px;
+}
+.article-headline {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+.article-subhead {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+.article-body {
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px solid #ddd;
+}
+.article-body p {
+    margin-bottom: 8px;
+    text-indent: 1em;
+}
+.article-body p:first-child {
+    text-indent: 0;
+}
+.article-byline {
+    font-size: 11px;
+    color: #888;
+    margin-top: 12px;
+    text-align: right;
+    font-style: italic;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1e1c18; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .newspaper-header { border-bottom-color: #c0a060; }
+    .newspaper-name { color: #c0a060; }
+    .newspaper-name-jp { color: #a09070; }
+    .newspaper-date { color: #777; }
+    .article { background: #151512; border-color: #333; }
+    .article-section { color: #777; }
+    .article-headline { color: #d0cdc0; }
+    .article-subhead { color: #999; }
+    .article-body { color: #c0bdb0; column-rule-color: #333; }
+    .article-byline { color: #777; }
+    .footer { color: #555; border-top-color: #333; }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="newspaper-header">
+        <div class="newspaper-name-jp">京都新聞</div>
+        <div class="newspaper-name">KYOTO SHIMBUN</div>
+        <div class="newspaper-date">17 novembre 1997 &mdash; Edizione del mattino &mdash; Pagina 1</div>
+    </div>
+
+    <div class="article">
+        <div class="article-section">Cronaca</div>
+        <div class="article-headline">Caso Morimoto: polizza da 30 milioni e rivalit&agrave; accademica. Gli inquirenti indagano nell'ateneo</div>
+        <div class="article-subhead">Lo schema ricalca il caso Kamiya: veleno non tracciabile, assicurazione recente, morte mascherata. Fonti interne parlano di tensioni nel dipartimento di Storia dell'Arte</div>
+
+        <div class="article-body">
+            <p>Si infittisce il giallo dell'Universit&agrave; di Kyoto. A due giorni dalla scoperta dell'aconitina nel sangue del professor Morimoto Takeshi, emergono nuovi dettagli che disegnano un quadro sempre pi&ugrave; inquietante attorno alla morte dello storico dell'arte.</p>
+
+            <p>Secondo fonti vicine all'indagine, Morimoto aveva stipulato una polizza vita del valore di 30 milioni di yen con la Nippon Life meno di tre mesi prima della morte. Beneficiaria della polizza sarebbe la figlia Aoi, 28 anni, insegnante di scuola elementare. La compagnia assicurativa &egrave; stata la prima a segnalare anomalie alla polizia, innescando la riapertura del caso.</p>
+
+            <p>Lo schema &egrave; inquietantemente familiare: un veleno non rilevabile dalle autopsie standard, una polizza vita di importo elevato stipulata di recente, una morte che sembrava naturale. &Egrave; lo stesso copione del caso Kamiya del 1986, quando Kamiya Tsutomu avvelen&ograve; la moglie con aconitina estratta dal trikabuto per incassare oltre 185 milioni di yen in polizze assicurative.</p>
+
+            <p>Ma le somiglianze potrebbero fermarsi qui. Fonti interne alla Facolt&agrave; di Lettere, che hanno chiesto l'anonimato, riferiscono di tensioni di lunga data all'interno del dipartimento di Storia dell'Arte. &laquo;C'erano rivalit&agrave; profonde&raquo;, ha confermato un docente. &laquo;Cose che andavano avanti da anni. Tutti sapevano, nessuno ne parlava.&raquo;</p>
+
+            <p>Gli inquirenti avrebbero gi&agrave; sentito diversi colleghi e collaboratori della vittima. Lo studio del professore alla Facolt&agrave; di Lettere resta sotto sigillo. Nell'appartamento di Morimoto, nel quartiere di Sakyo-ku, la scientifica ha completato i rilievi.</p>
+
+            <p>La Procura di Kyoto non ha rilasciato commenti. La Polizia Prefetturale si limita a confermare che &laquo;le indagini proseguono su pi&ugrave; piste&raquo;.</p>
+
+            <p>Intanto nel campus universitario il clima &egrave; teso. &laquo;Non succedeva nulla del genere da quando sono qui&raquo;, riferisce un custode della Facolt&agrave;. &laquo;I professori parlano a bassa voce. Tutti hanno paura.&raquo;</p>
+        </div>
+
+        <div class="article-byline">Tanaka Shuichi &mdash; Cronaca giudiziaria</div>
+    </div>
+
+    <div class="footer">
+        Kyoto Shimbun &mdash; 17 novembre 1997
+    </div>
+
+</div>
+</body>
+</html>

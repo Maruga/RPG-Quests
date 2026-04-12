@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Trascrizione Chiamata 119 — Caso Morimoto</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 6mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 11px; margin-top: 4px; color: #aaa69d; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.highlight-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.critical-box {
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.transcript {
+    background: #fafaf5;
+    border: 1px solid #ddd;
+    padding: 14px 16px;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.8;
+}
+.transcript .line {
+    margin-bottom: 8px;
+    padding-left: 90px;
+    text-indent: -90px;
+}
+.transcript .timestamp {
+    color: #666;
+    font-weight: bold;
+    margin-right: 6px;
+}
+.transcript .speaker {
+    font-weight: bold;
+    color: #1a1a2e;
+}
+.transcript .speaker-caller {
+    font-weight: bold;
+    color: #8b0000;
+}
+.transcript .stage-direction {
+    color: #888;
+    font-style: italic;
+}
+.classificazione {
+    position: absolute;
+    top: 6mm;
+    right: 6mm;
+    font-size: 11px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 2px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+}
+.timbro {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(180, 50, 50, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-12deg);
+    color: rgba(180, 50, 50, 0.3);
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.signature-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.signature-block {
+    text-align: center;
+    width: 40%;
+}
+.signature-line {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 4px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+@media screen {
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #252520; border-left-color: #c0a060; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .signature-section { color: #888; }
+    .signature-line { border-top-color: #555; color: #999; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.2); color: rgba(200, 60, 60, 0.2); }
+    .transcript { background: #151518; border-color: #333; }
+    .transcript .timestamp { color: #888; }
+    .transcript .speaker { color: #c0a060; }
+    .transcript .speaker-caller { color: #cc5555; }
+    .transcript .stage-direction { color: #777; }
+}
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">TRASCRIZIONE CHIAMATA DI EMERGENZA</div>
+        <div class="subtitle">Divisione Investigativa — Distretto di Sakyo</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-1216-TEL</div>
+        <div><span class="label">Data / Ora chiamata</span><br>12 novembre 1997 — ore 19:22</div>
+        <div><span class="label">Chiamante</span><br>MORIMOTO Takeshi (identificato dal numero fisso dell'abitazione)</div>
+        <div><span class="label">Numero chiamante</span><br>075-XXX-XXXX (Sakyo-ku, Shishigatani)</div>
+        <div><span class="label">Durata</span><br>1 minuto 47 secondi</div>
+        <div><span class="label">Operatore</span><br>Centralino 119 — Stazione Sakyo</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Trascrizione</div>
+        <div class="transcript">
+            <div class="line">
+                <span class="timestamp">[19:22:14]</span> <span class="speaker">OPERATORE:</span> 119, qual è l'emergenza?
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:17]</span> <span class="speaker-caller">CHIAMANTE:</span> <span class="stage-direction">(voce affannata)</span> Mi sento male... non riesco a vedere bene... il cuore batte fortissimo...
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:24]</span> <span class="speaker">OPERATORE:</span> Mi dica il suo nome e indirizzo.
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:27]</span> <span class="speaker-caller">CHIAMANTE:</span> Morimoto... Morimoto Takeshi. Sakyo-ku, Shishigatani, via Tetsugaku-no-Michi 14, secondo piano.
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:38]</span> <span class="speaker">OPERATORE:</span> Signor Morimoto, può descrivere cosa sente?
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:42]</span> <span class="speaker-caller">CHIAMANTE:</span> Bruciore... gli occhi bruciano... mi fa male il petto... formicolio alla faccia... per favore, fate presto...
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:22:55]</span> <span class="speaker">OPERATORE:</span> L'ambulanza è in arrivo. Rimanga in linea. È solo in casa?
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:23:01]</span> <span class="speaker-caller">CHIAMANTE:</span> Sì... sono solo... <span class="stage-direction">(pausa)</span> ...non riesco...
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:23:12]</span> <span class="stage-direction">(rumore di caduta — il chiamante è caduto a terra)</span>
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:23:15]</span> <span class="speaker">OPERATORE:</span> Signor Morimoto? Signor Morimoto, mi sente?
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:23:20]</span> <span class="stage-direction">(nessuna risposta — respiro affannoso in sottofondo)</span>
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:23:35]</span> <span class="speaker">OPERATORE:</span> L'ambulanza è a 3 minuti. Rimanga dove si trova.
+            </div>
+            <div class="line">
+                <span class="timestamp">[19:24:01]</span> <span class="stage-direction">(fine registrazione — il chiamante non risponde più)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="highlight-box">
+            <strong>NOTA:</strong> Il chiamante fornisce nome e indirizzo completo senza esitazione (19:22:27–19:22:38), nonostante lo stato di evidente sofferenza. La precisione delle informazioni è stata annotata dai paramedici come insolita per un malore improvviso.
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Ass. Isp. YAMADA Tetsuo (山田哲雄)<br>
+                <span style="font-size: 11px;">Distretto di Sakyo</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Operatore SUZUKI Kenji (鈴木健二)<br>
+                <span style="font-size: 11px;">Centralino 119 — Stazione Sakyo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POLIZIA<br>KYOTO<br>京都<br>1997</div>
+
+    <div class="footer">
+        Trascrizione Chiamata 119 — Fascicolo 97-KPD-1216-TEL — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

@@ -7,11 +7,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 @page { size: A4; margin: 5mm; }
 body {
-    font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+    font-family: "Courier New", Courier, monospace;
     font-size: 13px;
-    line-height: 1.65;
-    color: #111;
-    background: #fff;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #e8edf2;
     display: flex;
     justify-content: center;
     padding: 4px;
@@ -20,112 +20,89 @@ body {
     width: 210mm;
     min-height: 297mm;
     background: #fff;
-    padding: 8mm;
+    padding: 6mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     position: relative;
 }
 .doc-header {
-    border: 1px solid #333;
-    border-bottom: 2px solid #333;
-    padding: 12px 20px;
+    background: #2e5e4e;
+    color: #e8f0ec;
+    padding: 14px 20px;
+    border-bottom: 3px solid #8ab89e;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
-.doc-header .org {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #333;
-}
-.doc-header .title {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 4px;
-    letter-spacing: 2px;
-    color: #000;
-}
-.doc-header .subtitle {
-    font-size: 11px;
-    margin-top: 3px;
-    color: #555;
-}
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #8ab89e; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 11px; margin-top: 4px; color: #a0c0b0; }
 .metadata {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #333;
-    margin-bottom: 16px;
-    font-size: 13px;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 12px;
 }
 .metadata div {
-    padding: 4px 10px;
-    border-bottom: 1px solid #999;
-    color: #111;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
 }
-.metadata div:nth-child(odd) { border-right: 1px solid #999; }
-.metadata .label {
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-.section { margin-bottom: 14px; }
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 16px; }
 .section-title {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 2px;
-    margin-bottom: 6px;
-    color: #000;
+    border-bottom: 2px solid #2e5e4e;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #2e5e4e;
 }
-.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.section p { margin-bottom: 6px; text-align: justify; }
 .section ul { margin-left: 16px; list-style: none; }
-.section ul li { margin-bottom: 4px; color: #111; }
-.section ul li::before { content: "\2014\00a0"; color: #666; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
 .highlight-box {
-    border-left: 3px solid #333;
+    background: #f0fff5;
+    border-left: 3px solid #8ab89e;
     padding: 8px 12px;
     margin: 10px 0;
-    font-size: 13px;
-    color: #111;
+    font-size: 12px;
 }
 .critical-box {
-    border: 1px solid #8b0000;
-    border-left: 4px solid #8b0000;
+    background: #fff5f5;
+    border-left: 3px solid #8b0000;
     padding: 8px 12px;
     margin: 10px 0;
-    font-size: 13px;
-    color: #111;
+    font-size: 12px;
 }
 .visit-table {
     width: 100%;
     border-collapse: collapse;
     margin: 10px 0;
-    font-size: 13px;
+    font-size: 12px;
 }
 .visit-table th {
-    background: #eee;
-    color: #000;
+    background: #2e5e4e;
+    color: #e8f0ec;
     padding: 5px 8px;
     text-align: left;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-bottom: 2px solid #333;
 }
 .visit-table td {
     padding: 5px 8px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     vertical-align: top;
-    color: #111;
 }
-.visit-table tr:nth-child(even) td { background: #f9f9f7; }
+.visit-table tr:nth-child(even) td { background: #f5faf7; }
 .signature-section {
-    margin-top: 24px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: #111;
 }
 .signature-block {
     text-align: center;
@@ -133,13 +110,13 @@ body {
 }
 .signature-line {
     border-top: 1px solid #333;
-    margin-top: 28px;
+    margin-top: 30px;
     padding-top: 4px;
 }
 .classificazione {
     position: absolute;
-    top: 8mm;
-    right: 8mm;
+    top: 6mm;
+    right: 6mm;
     font-size: 11px;
     font-weight: bold;
     color: #8b0000;
@@ -149,59 +126,55 @@ body {
 }
 .timbro {
     position: absolute;
-    bottom: 50px;
-    right: 30px;
-    width: 70px;
-    height: 70px;
-    border: 3px solid rgba(180, 30, 30, 0.35);
+    bottom: 60px;
+    right: 40px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgba(46, 94, 78, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-15deg);
-    color: rgba(180, 30, 30, 0.35);
+    transform: rotate(-12deg);
+    color: rgba(46, 94, 78, 0.3);
     font-size: 9px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
-    font-family: "Courier New", monospace;
 }
 .footer {
-    margin-top: 16px;
+    margin-top: 20px;
     font-size: 10px;
-    color: #666;
+    color: #999;
     text-align: center;
-    border-top: 1px solid #ccc;
-    padding-top: 4px;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
 }
 @media screen {
-    body { background: #0a0a0c; }
-    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
-    .doc-header { border-color: #555; }
-    .doc-header .org { color: #999; }
-    .doc-header .title { color: #e0ddd0; }
-    .doc-header .subtitle { color: #888; }
+    body { background: #0d0d0f; }
+    .document { background: #1a1a1e; color: #d0cdc0; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
     .metadata { border-color: #444; }
-    .metadata div { border-color: #333; color: #ccc8b8; }
-    .metadata .label { color: #999; }
-    .section-title { color: #d8d4c8; border-bottom-color: #555; }
-    .section p, .section ul li { color: #ccc8b8; }
-    .highlight-box { border-left-color: #777; color: #ccc8b8; }
-    .critical-box { border-color: #993333; border-left-color: #cc4444; color: #ddd; }
-    .visit-table th { background: #252525; color: #ccc; border-bottom-color: #555; }
-    .visit-table td { border-bottom-color: #333; color: #ccc8b8; }
-    .visit-table tr:nth-child(even) td { background: #1a1a1c; }
-    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .metadata div { border-color: #333; color: #c0bdb0; }
+    .metadata .label { color: #888; }
+    .section-title { color: #6aaa8e; border-bottom-color: #6aaa8e; }
+    .section p { color: #c0bdb0; }
+    .section ul li { color: #c0bdb0; }
+    .highlight-box { background: #1a2520; border-left-color: #6aaa8e; color: #c0bdb0; }
+    .critical-box { background: #2a1a1a; border-left-color: #8b3030; color: #d0c0c0; }
+    .visit-table th { background: #1a3028; }
+    .visit-table td { border-color: #333; color: #c0bdb0; }
+    .visit-table tr:nth-child(even) td { background: #1e2220; }
+    .signature-section { color: #888; }
+    .signature-line { border-top-color: #555; color: #999; }
     .footer { color: #555; border-top-color: #333; }
     .classificazione { color: #cc4444; border-color: #cc4444; }
-    .timbro { border-color: rgba(200, 60, 60, 0.2); color: rgba(200, 60, 60, 0.2); }
+    .timbro { border-color: rgba(46, 94, 78, 0.2); color: rgba(46, 94, 78, 0.2); }
 }
 @media print {
-    body { background: #fff; padding: 0; }
-    .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; }
-    .visit-table th { background: #eee; color: #000; }
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; }
 }
 </style>
 </head>
@@ -273,7 +246,7 @@ body {
                 <tr>
                     <td>22/07/1997</td>
                     <td>Controllo periodico</td>
-                    <td>Umore lievemente migliorato rispetto a maggio. Il paziente appare più calmo, meno agitato. Riferisce di &laquo;aver preso alcune decisioni importanti&raquo; senza specificare. Conferma terapia.</td>
+                    <td>Umore lievemente migliorato rispetto a maggio. Il paziente appare pi&ugrave; calmo, meno agitato. Riferisce di &laquo;aver preso alcune decisioni importanti&raquo; senza specificare. Conferma terapia.</td>
                 </tr>
                 <tr>
                     <td>02/10/1997</td>
