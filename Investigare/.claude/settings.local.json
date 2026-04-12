@@ -24,7 +24,9 @@
       "Read(//c/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Investigare/Avventura Sake/handout/**)",
       "Bash(done)",
       "Bash(pip install:*)",
-      "Bash(pip show:*)"
+      "Bash(pip show:*)",
+      "Bash(explorer C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Investigare\\\\Avventura Ultima Lezione\\\\handout:*)",
+      "Bash(start:*)"
     ]
   }
 }
