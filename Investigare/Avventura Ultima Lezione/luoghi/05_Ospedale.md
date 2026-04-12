@@ -22,6 +22,6 @@
 - Aconitina nel sangue: >3 ng/mL (letale)
 - Aconitina nelle mucose oculari (via transcorneale)
 - Stomaco: negativo — via orale esclusa
-- Collirio (Reperto A): aconitina ~0.5 mg/mL
+- Collirio (Reperto A): aconitina ~5 mg/mL
 - Conclusione: avvelenamento da aconitina, via oculare
 - → handout "Rapporto Tossicologico" (già dato nel briefing)

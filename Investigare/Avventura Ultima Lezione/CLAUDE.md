@@ -35,7 +35,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 
 1. Raccolta trikabuto sui Kitayama (3-4 escursioni settembre-ottobre)
 2. Estrazione aconitina a casa (infusione in alcol, errori da non-chimico)
-3. Collirio avvelenato (Sante FX, ~0.5 mg/mL di aconitina)
+3. Collirio avvelenato (Sante FX, ~5 mg/mL di aconitina)
 4. Si mette il collirio a casa, 12/11/1997 ore 19:00
 5. Chiama 119 alle 19:22 (indirizzo dato con precisione sospetta)
 6. Ambulanza arriva 19:28, trasporto in ospedale

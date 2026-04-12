@@ -492,7 +492,7 @@ Aoi non ha collegato la busta alla morte. Per lei era premura paterna. Per un in
 - Aconitina nel sangue: >3 ng/mL (letale)
 - Tracce nelle mucose oculari (assorbimento transcorneale)
 - Stomaco: negativo — via orale esclusa
-- Collirio (Reperto A): positivo, ~0.5 mg/mL
+- Collirio (Reperto A): positivo, ~5 mg/mL
 - **Conclusione**: avvelenamento da aconitina, via oculare
 
 Senza la riapertura del caso, Morimoto sarebbe stato un morto per infarto — come nel caso Kamiya (1986), dove l'aconitina fu scoperta solo perché il medico legale aveva conservato i campioni.
