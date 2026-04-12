@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Varie/Spiriti Guardiani/PG.md",
+                "file": "Varie/Spiriti Guardiani/Armi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PG"
+              "title": "Armi"
             }
           }
         ]
@@ -227,10 +227,10 @@
   },
   "active": "8617616e39320824",
   "lastOpenFiles": [
-    "Varie/Spiriti Guardiani/Armi.md",
-    "Varie/Spiriti Guardiani/PG.md",
     "Varie/Spiriti Guardiani/Avventura.md",
     "Varie/Spiriti Guardiani/Prologo.md",
+    "Varie/Spiriti Guardiani/PG.md",
+    "Varie/Spiriti Guardiani/Armi.md",
     "Varie/Spiriti Guardiani/spiriti-guardiani-regolamento.md",
     "Varie/Spiriti Guardiani",
     "Senza nome 1.base",
