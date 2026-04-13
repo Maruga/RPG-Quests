@@ -609,14 +609,17 @@ Usalo nei momenti che contano davvero.
 
 Prima di un tiro, un compagno può dichiararsi pronto ad aiutarti. Se lo fa, ottieni **+1 al tuo attributo** per quel tiro.
 
-Ma se il tiro **fallisce comunque**, il compagno perde **1 Ki** — si è esposto e non è bastato.
+- **Successo** → nessun costo per nessuno
+- **Fallimento** (attr+1 — 10) → **entrambi -1 Ki**
+- **Nami-** (11) → chi tira: -1 a scelta (attributo o Ki). Il compagno: -1 Ki
+- **Kiwami-** (12) → chi tira: -1 attributo -1 Ki (standard). Il compagno: -1 Ki
 
 **Limiti:**
-- Ogni PG può aiutare una sola volta per scena
-- Un tiro può ricevere aiuto da un solo compagno
+- Puoi **ricevere** aiuto solo **una volta per scena**, da un solo compagno
+- Un compagno può **dare** aiuto a PG diversi nella stessa scena
 - Non si applica al Gou
 
-> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Tanaka tira con Distacco 7 (6+1). Esce 8. Fallimento — la scena colpisce entrambi. Sato perde 1 Ki. Se fosse uscito 5, successo — Sato non perde nulla.
+> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Tanaka tira con Distacco 7 (6+1). Esce 8. Fallimento — entrambi perdono 1 Ki. Se fosse uscito 5, successo — nessuno perde nulla. Nella stessa scena, Tanaka non può più ricevere supporto, ma Sato può aiutare un altro PG.
 
 ---
 

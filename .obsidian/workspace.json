@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Briefing_Giocatori.md",
+                "file": "Investigare/Avventura Ultima Lezione/Briefing Regole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Briefing_Giocatori"
+              "title": "Briefing Regole"
             }
           },
           {
@@ -241,8 +241,8 @@
   },
   "active": "1d2c71e6f44fa5c2",
   "lastOpenFiles": [
-    "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/Avventura Ultima Lezione/Briefing Regole.md",
     "Varie/Spiriti Guardiani/Avventura.md",
     "Varie/Spiriti Guardiani/PG.md",

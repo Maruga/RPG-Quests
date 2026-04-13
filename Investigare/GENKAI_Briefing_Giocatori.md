@@ -134,14 +134,14 @@ Quando ottieni un Kiwami+ (2) o Nami+ (3) ma **non puoi applicare il bonus** —
 
 ## Kyōryoku 協力 — Supporto
 
-Un compagno può aiutarti in un tiro, se presente nella scena.
+Un compagno può aiutarti in un tiro, se presente nella scena. Dichiara **prima** del tiro → ottieni **+1 attributo**.
 
-- Dichiara di aiutarti **prima** del tiro
-- Ottieni **+1** al tuo attributo per quel tiro
-- Se il tiro **fallisce**, il compagno perde **1 Ki**
-- Se il tiro ha **successo**, nessun costo
+- **Successo** → nessun costo per nessuno
+- **Fallimento** (attr+1 — 10) → **entrambi -1 Ki**
+- **11** (Nami-) → chi tira -1 (scelta attr/Ki), compagno -1 Ki
+- **12** (Kiwami-) → chi tira -1 attr -1 Ki, compagno -1 Ki
 
-**Limiti**: un solo compagno per tiro, una sola volta per scena, non si applica ai tiri di Gou.
+**Limiti**: puoi ricevere aiuto **1 volta per scena** da 1 solo PG. Chi aiuta può aiutare PG diversi nella stessa scena. Non si applica al Gou.
 
 ---
 
@@ -234,7 +234,7 @@ Il distretto ha i suoi attributi (Organico, Efficienza, Velocità, Risorse, Rete
 ## Esempi rapidi
 
 **Supporto (Kyōryoku)**
-> Sato deve esaminare il corpo ma è scosso (Distacco 5). Nakamura gli mette una mano sulla spalla: "Respira. Ci sono io." → Sato tira con Distacco 6. Se fallisce, Nakamura perde 1 Ki.
+> Sato deve esaminare il corpo ma è scosso (Distacco 5). Nakamura gli mette una mano sulla spalla: "Respira. Ci sono io." → Sato tira con Distacco 6. Esce 8 — fallimento, entrambi perdono 1 Ki. Nella stessa scena Sato non può più ricevere aiuto, ma Nakamura può aiutare un altro PG.
 
 **Ki che scende (Nami-)**
 > Honda tira 11 durante un interrogatorio teso. Sceglie di perdere 1 Ki invece dell'attributo. Ora è a Ki 6 — ancora gestibile, ma ogni tiro conta di più.

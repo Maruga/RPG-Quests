@@ -811,16 +811,18 @@ Un compagno può aiutarti in un tiro, se narrativamente presente e coinvolto nel
 
 - Il compagno dichiara di aiutarti **prima** del tiro
 - Ottieni automaticamente **+1** al tuo attributo per quel tiro
-- Se il tiro **fallisce comunque**, il compagno perde **1 Ki** (si è esposto e ha fallito anche lui)
-- Se il tiro ha **successo**, nessun costo per il compagno
+- Se il tiro ha **successo** → nessun costo per nessuno
+- Se il tiro **fallisce** (attr+1 — 10) → **entrambi perdono 1 Ki**
+- Se il tiro è **Nami-** (11) → chi tira: -1 a scelta (attributo o Ki). Il compagno: **-1 Ki**
+- Se il tiro è **Kiwami-** (12) → chi tira: -1 attributo -1 Ki (regole standard). Il compagno: **-1 Ki**
 
 ### Limiti
 
-- Ogni PG può dare supporto **una sola volta per scena**
-- Un tiro può ricevere supporto da **un solo compagno**
+- Ogni PG può **ricevere** supporto **una sola volta per scena**, da **un solo compagno**
+- Un compagno può **dare** supporto a **PG diversi** nella stessa scena
 - Il supporto non si applica ai tiri di Gou
 
-> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato gli dice "Ti copro io, non guardare il corpo — concentrati sulle prove." Sato dà supporto: Tanaka tira con Distacco 7 (6+1). Tira 2d6: 8. Fallimento. Sato perde 1 Ki — la scena ha colpito anche lui. Se Tanaka avesse tirato 5, successo — Sato non perde nulla.
+> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Tanaka tira con Distacco 7 (6+1). Esce 8. Fallimento — entrambi perdono 1 Ki. La scena ha colpito tutti e due. Se fosse uscito 5, successo — nessuno perde nulla. Se fosse uscito 12, Kiwami negativo: Tanaka perde -1 Distacco -1 Ki, Sato perde -1 Ki. Nella stessa scena, Tanaka non può più ricevere supporto — ma Sato può ancora aiutare un altro PG.
 
 ---
 
@@ -1797,8 +1799,10 @@ Solo donabile a un compagno (giocando la scena)
 
 KYŌRYOKU (協力) - SUPPORTO
 Compagno presente dà +1 al tiro (prima di tirare)
-Se fallisci comunque, il compagno perde 1 Ki
-1 supporto per scena per giocatore, 1 compagno per tiro
+Successo: nessun costo. Fallimento: entrambi -1 Ki
+Nami- (11): chi tira -1 (scelta), compagno -1 Ki
+Kiwami- (12): chi tira -1 attr -1 Ki, compagno -1 Ki
+Receiver: 1 supporto per scena. Helper: può aiutare PG diversi
 Non si applica al Gou
 
 SATORI (悟り)
