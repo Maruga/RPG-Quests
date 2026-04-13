@@ -26,7 +26,7 @@ Si e suicidato. Ha orchestrato tutto per sembrare un omicidio.
 
 | Quando | Cosa |
 |--------|------|
-| Agosto | Decide. Stipula polizza vita (20/08) |
+| Agosto | Decide. Stipula polizza vita (20/08) — mente sulla dichiarazione sanitaria (nega depressione e Tofranil) |
 | Agosto-Ottobre | Ricerche su internet: trikabuto, estrazione, caso Kamiya, Montbell, Nippon Life |
 | Settembre | Compra attrezzatura Montbell (15/09, contanti) |
 | Settembre-Ottobre | 3-4 escursioni Kitayama, raccoglie trikabuto |
@@ -44,6 +44,7 @@ Si e suicidato. Ha orchestrato tutto per sembrare un omicidio.
 - **Ideazione suicidaria** annotata dal medico 6 mesi prima
 - **Debiti**: ~¥4.800.000 (prestito, arretrati, scoperto)
 - **Motivazione del piano**: vendetta su Kuroda + protezione di Aoi (assicurazione) + morte con onore
+- **Frode assicurativa**: ha mentito sulla kokuchi gimu (dichiarazione sanitaria) — ha negato depressione, farmaci, ideazione suicidaria. Se la compagnia lo scopre, la polizza è nulla (clausola 8.1) e Aoi non prende nulla, indipendentemente dalla causa del decesso
 - **Stato ultimi mesi**: "sereno, calmo, come se avesse trovato pace" — la calma di chi ha deciso
 
 ## Abitudini note (quelle che i PNG possono confermare)

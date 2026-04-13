@@ -1,3 +1,4 @@
+
 | #   | Nome                     | Aspetto                                                                                                  | Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  | Comportamento                                                                                                                                                                                                                                                                                |
 | --- | ------------------------ | -------------------------------------------------------------------------------------------------------- | ------ | --- | --------- | ----- | ------ | ------- | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | **Scorpione di Sabbia**  | Scorpione corazzato grande come un cavallo, chele di pietra, coda con pungiglione di ossidiana           | 6      | 4   | 5         | 5     | 4      | 6       | 8   | Attacca con Battito (coda rapida), difende con Radice (corazza). Il più comune, attacca in gruppi di 2-3                                                                                                                                                                                     |
@@ -6,12 +7,3 @@
 | 4   | **Vespa del Deserto**    | Vespa grande come un'aquila, ali trasparenti che ronzano come lame, pungiglione che inietta paralisi     | 3      | 5   | 5         | 6     | 7      | 8       | 7   | Attacca con Battito (picchiate rapide dall'alto), difende con Flusso (volo imprevedibile). Se il pungiglione va a segno il PG perde un turno (paralisi). Arriva sempre in sciami di 3-4                                                                                                      |
 | 5   | **Scarabeo Titano**      | Scarabeo delle dimensioni di un carro, corno frontale come un ariete, dorso coperto di sabbia compattata | 9      | 3   | 8         | 2     | 3      | 3       | 20  | Attacca con Scintilla (carica frontale col corno), difende con Radice 9 (quasi impenetrabile da davanti). Lentissimo, stupido, ma devastante. Punto debole: le zampe laterali (Ombra 2, Flusso 3). È il "mini-boss" che appare raramente. Un solo Scarabeo Titano basta a sfondare una fossa |
 
-**Note per l'uso:**
-
-|Tipo attacco|Mostri adatti|
-|---|---|
-|Assalto alle fosse (ondate)|Scorpioni di Sabbia x6 + Ragni delle Dune x3|
-|Attacco aereo|Vespe del Deserto x4|
-|Sfondamento fossa|1 Scarabeo Titano + Scorpioni di scorta|
-|Imboscata nel deserto|Ragni delle Dune x4 + Millepiedi x1|
-|Attacco alla prigione (Atto 1)|2 Scorpioni di Sabbia oppure 1 Millepiedi Corazzato|

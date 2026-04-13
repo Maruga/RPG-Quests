@@ -24,6 +24,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 - **Kuroda Haruki è il falso colpevole** — ha davvero plagiato la ricerca (colpevole moralmente) ma NON ha ucciso nessuno. Quando nega l'omicidio, dice la verità
 - **Kuroda mente solo sul plagio** (minimizza la rivalità) — dice la verità su tutto il resto
 - **L'assicurazione è un beneficio per Aoi**, non un movente per nessuno. Morimoto la stipula per proteggere la figlia. Clausola suicidio: non paga se suicidio entro 24 mesi
+- **Dichiarazione sanitaria falsa (告知義務違反)**: Morimoto ha mentito sulla kokuchi-sho — ha negato depressione, Tofranil, ideazione suicidaria. Se la compagnia scopre la non-disclosure, la polizza è annullabile (clausola 8.1) e Aoi non prende nulla, anche se il caso resta "omicidio"
 - **Attrezzatura da trekking gettata via** — a casa di Morimoto NON c'è niente che lo colleghi alla montagna. L'unica traccia è il prelievo ATM anomalo in zona Kawaramachi
 - **Morimoto non è un chimico** — ha fatto errori nell'estrazione (mani irritate = contatto con aconitina). Il Dr. Endo ha annotato i sintomi
 - **Nessuna prova fisica nell'ufficio di Kuroda** — Morimoto era troppo intelligente. Le prove false sono solo documentali e testimoniali

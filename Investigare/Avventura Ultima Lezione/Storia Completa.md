@@ -140,7 +140,9 @@ Non è una confessione. È il dito puntato di una vittima.
 
 Stipulata il 20/08 con la Nippon Life. Beneficiaria: Aoi. Importo: ¥30.000.000. Clausola standard: non paga in caso di suicidio accertato entro 24 mesi.
 
-L'assicurazione **non è un movente per nessuno** — è un beneficio per Aoi. Morimoto sapeva che, morendo "assassinato", la polizza avrebbe pagato. Se si fosse suicidato, Aoi non avrebbe preso nulla. Azione parallela alla vendetta: protegge la figlia mentre punisce Kuroda.
+**Dichiarazione sanitaria falsa (告知義務違反)**: al momento della stipulazione, Morimoto ha compilato la dichiarazione sanitaria obbligatoria (kokuchi-sho). Ha dichiarato solo l'ipertensione lieve. Ha **mentito** su depressione, Tofranil e ideazione suicidaria — sapeva che nessuno avrebbe controllato perché il Dr. Endo era vincolato dal segreto professionale. Se la compagnia scopre la falsa dichiarazione, la polizza è **annullabile** (clausola 8.1) indipendentemente dalla causa del decesso — Aoi non prenderebbe nulla.
+
+L'assicurazione **non è un movente per nessuno** — è un beneficio per Aoi. Morimoto sapeva che, morendo "assassinato", la polizza avrebbe pagato. Se si fosse suicidato, Aoi non avrebbe preso nulla. Ma c'è un ulteriore livello: anche se il caso resta classificato come omicidio, la scoperta della falsa dichiarazione sanitaria potrebbe invalidare tutto. Il piano di Morimoto è fragile — e lui lo sapeva.
 
 ### La busta per Aoi
 
