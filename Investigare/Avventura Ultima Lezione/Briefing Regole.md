@@ -1,7 +1,3 @@
-# GENKAI 限界 — Briefing per i giocatori
-
----
-
 ## Principio Base
 
 Siete investigatori. Il caso si risolve con la testa: fare le domande giuste, controllare i documenti, collegare i pezzi. I dadi **NON** danno gli indizi — decidono solo quanto vi costa emotivamente quello che scoprite.
@@ -20,14 +16,6 @@ Ogni PG ha 6 attributi (da 4 a 9):
 | **Lucidità** | Collegare i pezzi, analizzare, ricostruire |
 | **Ascolto** | Cogliere il non detto, leggere tra le righe |
 | **Presenza** | Autorità, intimidire, farsi prendere sul serio |
-
-### Come si compila -Scheda Vuota
-
-1. Tutti partono da **4**
-2. Distribuite **12 punti** liberi tra i 6 attributi
-3. Tirate **2d6**, prendete il dado **PIÙ BASSO** → punti bonus extra da distribuire
-4. Nessun attributo sopra **9** o sotto **4**
-
 ### Come si compila - Scheda Pre-Compilata
 
 5 punti da distribuire  ·  max +2 per attributo  ·  max 8  ·  Scrivi il totale in Finale
