@@ -232,13 +232,40 @@ Si illumina — non in modo evidente, ma diventa più attivo, propositivo. Offre
 Tono calmo e rispettoso. Frasi di lunghezza media, professionali ma accessibili. Linguaggio da poliziotto di strada — preciso senza essere burocratico. Voce bassa e ferma. Annuisce spesso mentre ascolta.
 
 ### Frasi tipiche (per il GM)
-- "Signore, non ho toccato nulla." *(rapporto)*
-- "A disposizione." *(sempre, con un cenno del capo)*
-- "Se posso permettermi..." *(timido, prima di dare un'opinione)*
-- "Conosco quella zona, signore. Posso portarvi." *(utile)*
-- "Devo chiamare qualcuno?" *(disponibile)*
-- "Posso controllare. Mi dia un'ora." *(operativo)*
-- "Non sta a me dirlo, signore." *(prima di dare un'opinione, poi la dà comunque)*
+
+**Quando arriva / saluta:**
+- "Buongiorno, signore. L'auto è pronta." *(cenno del capo, taccuino già in mano)*
+- "Yamada, a rapporto." *(breve, come se non servisse dire altro)*
+
+**Quando riceve un ordine:**
+- "Ricevuto. Mi dia un'ora." *(annuisce, già in movimento)*
+- "Ci penso io." *(tono piatto, come se fosse la cosa più naturale del mondo)*
+- "Devo chiamare qualcuno?" *(sempre un passo avanti sulla logistica)*
+
+**Quando offre un'opinione (raro):**
+- "Se posso permettermi..." *(la sua firma — sempre prima di qualsiasi osservazione)*
+- "Non sta a me dirlo, signore. Ma..." *(poi la dice comunque, a bassa voce)*
+
+**Quando aspetta:**
+- "Sono qui fuori." *(si appoggia all'auto, onigiri in mano)*
+- *(non dice nulla — annuisce e prende appunti sul taccuino)*
+
+**Quando lo mandano a fare qualcosa:**
+- "Conosco una strada più veloce, se volete."
+- "Quella zona la conosco bene. Posso portarvi."
+- "Controllo e vi faccio sapere."
+
+**Quando la situazione è tesa:**
+- *(silenzio — stringe il taccuino nella tasca interna)*
+- "Signore, l'auto è accesa. Quando siete pronti." *(modo gentile per dire: andiamocene)*
+
+**Quando va via / chiude la giornata:**
+- "Se non serve altro, io sono al cercapersone."
+- "Buonanotte, signore. Domani alle sette?"
+- *(cenno del capo, si mette il berretto, esce)*
+
+**La frase che lo definisce:**
+- "Se posso permettermi..." — i PG dopo due sessioni la anticipano prima che la dica.
 
 ### Note sul tono
 - Non parla mai per primo se non interpellato — aspetta
