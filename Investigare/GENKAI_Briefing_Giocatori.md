@@ -114,3 +114,19 @@ Il distretto ha i suoi attributi (Organico, Efficienza, Velocità, Risorse, Rete
 - Non siete eroi. Siete persone sotto pressione.
 - Potete aiutare un compagno prima del tiro (+1 attributo), ma se fallisce perdete 1 Ki.
 - Serve l'autorizzazione del magistrato per: perquisizioni, intercettazioni, referti medici riservati, sequestro documenti.
+
+---
+
+## Esempi rapidi
+
+**Supporto — aiutare un compagno**
+> Sato deve esaminare il corpo ma è scosso (Distacco 5). Nakamura gli mette una mano sulla spalla: "Respira. Ci sono io." → Sato tira con Distacco 6. Se fallisce, Nakamura perde 1 Ki — il peso emotivo ricade su chi ha offerto supporto.
+
+**Ki che scende**
+> Honda tira 11 (Nami-) durante un interrogatorio teso. Sceglie di perdere 1 Ki invece dell'attributo. Ora è a Ki 6 — ancora gestibile, ma ogni tiro conta di più.
+
+**Gou**
+> Yamamoto attiva Pugno di Ferro (3 Ki) su un testimone reticente. Tira 2d6: esce 5, il suo Presenza è 7 — successo. Il testimone cede. Se avesse tirato 9, il testimone sarebbe stato scosso ma non avrebbe parlato. In entrambi i casi, Yamamoto ha speso 3 Ki. Se lo usa una seconda volta nella stessa sessione, ne costerà 6.
+
+**Satori**
+> Fujita è a Ki 4, il caso è a un punto critico. Deve leggere un sospettato ma non può permettersi un fallimento. Usa il Satori: successo automatico, niente tiro, niente rischio. Ma è l'unico della sessione — da ora in poi è senza rete.
