@@ -51,6 +51,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 | Diario (verità + bugie calibrate) | Documenta la minaccia crescente | Costruito come arma legale |
 | Visite di Kuroda allo studio (4x) | Kuroda aveva accesso | Morimoto lo ha invitato apposta |
 | Libro Maruzen a nome Kuroda | Kuroda studiava piante velenose | Ordinato da Morimoto per telefono |
+| Libro botanica con segnalibro trikabuto | Kuroda studiava il veleno (trovato nel suo ufficio) | Piazzato da Morimoto durante una visita |
 | Chiave ingresso secondario | Kuroda poteva entrare non visto | Nessuno è mai entrato |
 | Caso Kamiya 1986 | Omicidio per assicurazione | Il "killer" qui è la vittima stessa |
 

@@ -17,7 +17,7 @@
 - Secondo flacone collirio — pulito, non avvelenato. Quello "di casa" normale
 
 **Studio di casa**
-- Libri botanica giapponese, tra cui *Nihon Yakusō Zusetsu* con segnalibro sulle pagine del trikabuto. Testi accademici plausibili per uno storico dell'arte — non prova schiacciante da sola
+- Libri di storia dell'arte, cataloghi, riviste accademiche. Nessun testo di botanica (il *Nihon Yakusō Zusetsu* è stato piazzato nell'ufficio di Kuroda)
 - Frammenti lettera ad Aoi nel cestino — strappati → handout "Frammenti Lettera Aoi" (Reperto D)
 - Bollette arretrate, lettere di sollecito dalla banca
 
@@ -38,5 +38,5 @@ Residui minimi di alcaloidi — tracce dell'estrazione. Solo se lo chiedono espl
 
 ## Tiri
 
-- **Lucidità**: frammenti nel cestino, prelievo fuori zona, collegamento botanica + trikabuto
+- **Lucidità**: frammenti nel cestino, prelievo fuori zona
 - **Distacco**: scoperta debiti e depressione

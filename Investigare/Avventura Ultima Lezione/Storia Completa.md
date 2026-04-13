@@ -114,7 +114,9 @@ Morimoto ha invitato Kuroda nel suo studio 4 volte nelle settimane precedenti. S
 
 Il custode Tanabe e l'assistente Nishimura hanno visto Kuroda entrare e uscire dallo studio più volte. Questo stabilisce **accesso regolare**.
 
-### Il libro
+Ma le visite servivano anche a un secondo scopo: durante una di queste, Morimoto ha avuto accesso all'ufficio di Kuroda (Studio 215) e ha piazzato sullo scaffale un testo di etnobotanica — *Nihon Yakusō Zusetsu* — con un **segnalibro sulle pagine del trikabuto**. Kuroda non sa della sua esistenza.
+
+### Il libro alla Maruzen
 
 Morimoto ha ordinato per telefono un testo di botanica giapponese — *Nihon no Doku-Sō* ("Piante velenose del Giappone") — a nome di Kuroda, alla libreria Maruzen di Kawaramachi il 18/09. Non l'ha mai ritirato. Il libro è ancora lì.
 
@@ -414,12 +416,16 @@ Sta già coprendo il caso (firma gli articoli 18 e 19). Può fornire contesto su
 
 **Secondo piano**, ala ovest. Richiede mandato.
 
-**Nell'armadietto personale**:
+**Sullo scaffale** (visibile):
+- Testi di storia dell'arte, cataloghi, riviste accademiche
+- *Nihon Yakusō Zusetsu* — testo di etnobotanica con **segnalibro sulle pagine del trikabuto**. Sul dorso, **adesivo della libreria Maruzen di Kawaramachi**. Piazzato da Morimoto durante una delle 4 visite — Kuroda non sa della sua esistenza
+
+**Nell'armadietto personale** (chiuso a chiave):
 - Nessuna traccia di aconitina o veleni
 - Documenti accademici ordinari
 - Manoscritto originale della ricerca pubblicata (quella plagiata)
 
-**Nota**: Morimoto NON ha messo prove fisiche nell'ufficio di Kuroda. Troppo intelligente per questo — il rischio di essere visto era troppo alto. Le prove false sono tutte **documentali e testimoniali**, mai fisiche.
+**Nota GM**: In Fase 1, il libro con segnalibro è incriminante — perché Kuroda ha un libro sulle piante velenose? In Fase 2, se i PG capiscono il pattern dei depistaggi (lettera fabbricata, diario costruito, ordine Maruzen a nome Kuroda), possono dedurre che anche il libro è stato piazzato. Kuroda, se confrontato, non sa nulla del libro — genuinamente confuso.
 
 ---
 
@@ -441,7 +447,7 @@ Appartamento modesto. Due stanze, cucina, bagno. Ordinato ma spoglio — pochi m
 - Secondo flacone di collirio (pulito)
 
 **Studio di casa**:
-- Libri di botanica giapponese, tra cui *Nihon Yakusō Zusetsu* con segnalibro sulle pagine del trikabuto (normale per uno storico dell'arte — non prova schiacciante da sola)
+- Libri di storia dell'arte, cataloghi, riviste accademiche. Nessun testo di botanica
 - Frammenti di lettere non spedite ad Aoi nel cestino → handout **12_Frammenti_Lettera_Aoi**
 - Bollette arretrate, lettere di sollecito dalla banca
 
@@ -606,10 +612,10 @@ I PG seguono le piste secondarie. Ogni scoperta smonta un pezzo del caso.
 
 ### Casa di Morimoto
 
-Antidepressivi nascosti, bollette arretrate, frammenti della lettera ad Aoi nel cestino, libro di botanica con segnalibro sul trikabuto, **prelievo anomalo in zona Kawaramachi** sugli estratti conto, nessuna attrezzatura da trekking. → Dettagli nella sezione Location.
+Antidepressivi nascosti, bollette arretrate, frammenti della lettera ad Aoi nel cestino, **prelievo anomalo in zona Kawaramachi** sugli estratti conto, nessuna attrezzatura da trekking. → Dettagli nella sezione Location.
 
 **Tiri**:
-- **Lucidità** per trovare i frammenti, notare il prelievo fuori zona, collegare botanica + trikabuto
+- **Lucidità** per trovare i frammenti, notare il prelievo fuori zona
 - **Distacco** per gestire la scoperta dei debiti e della depressione
 
 ### Piste che si aprono
@@ -629,7 +635,7 @@ I PG mettono insieme i pezzi:
 - Prelievo anomalo → Montbell → attrezzatura (poi gettata via)
 - Commesso Montbell riconosce Morimoto, domande su Kitayama
 - Chiosco: "pesce fuor d'acqua" e piante selvatiche
-- Libro botanica + segnalibro trikabuto
+- Libro botanica nell'ufficio Kuroda = piazzato (come la lettera, come il diario, come l'ordine Maruzen)
 - Mani irritate = contatto con aconitina (errore di un non-chimico)
 - Residui nel lavandino (se richiesti) = estrazione in casa
 - Depressione, debiti, polizza con clausola suicidio
@@ -645,7 +651,7 @@ I PG mettono insieme i pezzi:
 # INDIZI E PERCORSI INVESTIGATIVI
 
 ## Percorso A — Il caso contro Kuroda (falso)
-Lettera "se mi succede qualcosa" → plagio confermato → accesso allo studio → chiave ingresso secondario → visite frequenti → libro Maruzen a suo nome → **Kuroda è il colpevole**
+Lettera "se mi succede qualcosa" → plagio confermato → accesso allo studio → chiave ingresso secondario → visite frequenti → libro Maruzen a suo nome → libro botanica con segnalibro trikabuto nel SUO ufficio → **Kuroda è il colpevole**
 
 ## Percorso B — Qualcosa non torna
 Disordine troppo ordinato → Morimoto "sereno" negli ultimi mesi → Kuroda sincero quando nega → **collirio avvelenato trovato a casa, non allo studio** → Kuroda non ha accesso alla casa → cronologia browser cancellata → **qualcosa non quadra**

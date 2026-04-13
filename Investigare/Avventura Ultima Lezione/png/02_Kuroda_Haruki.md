@@ -43,6 +43,11 @@ Ha plagiato la ricerca di Morimoto 10 anni fa. Lo sa, sa che tutti lo sanno. Qua
 **Sul libro Maruzen** (se confrontato):
 - Non ne sa nulla. Genuinamente confuso. "Non ho mai ordinato nessun libro."
 
+**Sul libro di botanica nel suo ufficio** (se confrontato):
+- Sconvolto. "Non è mio. Non l'ho mai visto. Non so come sia finito lì."
+- Se gli mostrano il segnalibro sul trikabuto, impallidisce. Capisce quanto è incastrato.
+- Dice la verità — non è suo. Ma non può provarlo.
+
 ### Se messo alle strette sul plagio
 
 - Crolla. Confessa il plagio. Doloroso, sincero.

@@ -62,7 +62,8 @@ Si e suicidato. Ha orchestrato tutto per sembrare un omicidio.
 | Lettera "se mi succede qualcosa" | Cassetto studio (Rep. B) | Aveva paura di Kuroda | Fabbricata |
 | Diario | Libreria studio (Rep. C) | Kuroda lo minacciava | Verita + menzogne calibrate |
 | 4 visite di Kuroda | Studio | Kuroda aveva accesso | Li ha invitati lui |
-| Libro Maruzen a nome Kuroda | Libreria | Kuroda studiava veleni | Ordinato da Morimoto per telefono |
+| Libro Maruzen a nome Kuroda | Libreria Maruzen | Kuroda studiava veleni | Ordinato da Morimoto per telefono |
+| Libro botanica con segnalibro trikabuto | Ufficio Kuroda (scaffale) | Kuroda studiava il veleno | Piazzato da Morimoto durante una visita |
 | Disordine nello studio | Studio | Qualcuno ha frugato | Spostato da Morimoto |
 | Cronologia cancellata | Computer studio | Kuroda ha coperto le tracce | Cancellata da Morimoto |
 
@@ -72,7 +73,7 @@ Si e suicidato. Ha orchestrato tutto per sembrare un omicidio.
 - Prelievo ATM fuori zona (Kawaramachi, 15/09) — unica traccia finanziaria
 - Commesso Montbell lo ricorda
 - Gestore chiosco lo ricorda
-- Libro botanica con segnalibro sul trikabuto a casa
+- Libro botanica con segnalibro sul trikabuto piazzato nell'ufficio di Kuroda (depistaggio, non errore)
 - Frammenti lettera ad Aoi nel cestino — ha vacillato
 - Browser: ricerche su trikabuto e aconitina dal suo computer
 - Residui alcaloidi nel lavandino cucina (se analizzano)
