@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Ultima Lezione/Briefing Regole.md",
+                "file": "Investigare/GENKAI_Briefing_Giocatori.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Briefing Regole"
+              "title": "GENKAI_Briefing_Giocatori"
             }
           },
           {
@@ -241,8 +241,8 @@
   },
   "active": "1d2c71e6f44fa5c2",
   "lastOpenFiles": [
-    "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/Avventura Ultima Lezione/Briefing Regole.md",
+    "Investigare/GENKAI_Briefing_Giocatori.md",
     "Varie/Spiriti Guardiani/Avventura.md",
     "Varie/Spiriti Guardiani/PG.md",
     "Varie/Spiriti Guardiani/Immagini/LA TRUFFATRICE - Livia.png",
