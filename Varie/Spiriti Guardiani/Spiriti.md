@@ -21,15 +21,17 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 ## Struttura dei Poteri (comune a tutti gli spiriti)
 
-Ogni spirito ha tre poteri. **Tutti gli effetti si applicano al PG** — il mostro può subirne le conseguenze solo di riflesso (lo incassa perché il PG è diventato più forte, più veloce, più difficile da colpire, ecc.).
+Ogni spirito ha tre poteri. **Tutti gli effetti si applicano al PG** — il mostro può subirne le conseguenze solo di riflesso.
+
+Il **bonus d'ingresso** (+1 alla caratteristica dello spirito, +3 Ki) viene dato al PG **al momento del collegamento nelle Terme** (Stanza 1) — non è parte dei tre poteri qui sotto.
 
 |Livello|Frequenza|Durata|Costo|
 |---|---|---|---|
-|**Passivo**|Sempre attivo|Permanente|Piccolo **malus** costante (ogni spirito ha il suo prezzo)|
-|**Attivo**|Max 1 per scena, **solo se lo spirito lo concede** (dipende dall'En)|3 round|Nessuno|
-|**Fusione**|1 per sessione|3 round|Dopo l'uso lo spirito entra in silenzio profondo fino al prossimo riposo lungo: niente Passivo, niente Attivo, niente comunicazione via Telegram|
+|**Passivo**|Sempre attivo|Permanente|Nessuno — effetto narrativo/percettivo, non numerico|
+|**Attivo**|A discrezione del PG|**1 round per ogni punto Ki speso**|Consumo di Ki|
+|**Fusione**|1 per sessione, **scelta dello spirito** (non del PG)|3 round|Dopo l'uso lo spirito entra in silenzio profondo fino al prossimo riposo lungo: niente Passivo, niente Attivo, niente comunicazione via Telegram|
 
-Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito a 9**, **Ki al massimo**, più l'effetto unico dello spirito. Dopo, il PG è solo — nessuna voce, nessuna guida, nessun bonus fino al riposo.
+Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito a 9**, **Ki al massimo**, più l'effetto unico dello spirito. Decide lo spirito quando attivarla — di solito in un momento di crisi grave, quando il PG è in pericolo mortale o il gruppo sta per cadere.
 
 ---
 
@@ -39,9 +41,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 |Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Corazza Spirituale|**Bonus:** **+1 ai tiri di Radice**. **Malus:** il peso della pietra lo rallenta, **-1 Battito** permanente|
-|Attivo (1/scena, se concesso)|Radice di Pietra|Per **3 round** il PG si ancora: **Radice +3** sui tiri difensivi, non può essere spostato, spinto o sorpreso. Chi lo attacca trova pietra|
-|Fusione (1/sessione, 3 round)|Forma di Granito|Per 3 round **Radice 9**, Ki al massimo: gli attacchi fisici diretti non lo scalfiscono (danno ignorato), gli attacchi speciali sono dimezzati|
+|Passivo|Corazza Spirituale|Il PG sente la terra sotto i piedi come parte di sé. Cade senza farsi male, regge pesi che spezzerebbero altri, non vacilla nel vento. Quando decide di restare fermo, nessuno riesce a smuoverlo|
+|Attivo (costa Ki)|Radice di Pietra|Il PG si ancora: **Radice +3** sui tiri difensivi, non può essere spostato né spinto. **Dura 1 round per ogni Ki speso**|
+|Fusione (1/sessione, 3 round, scelta dallo spirito)|Forma di Granito|Per 3 round **Radice 9**, Ki al massimo: gli attacchi fisici diretti non lo scalfiscono (danno ignorato), gli attacchi speciali sono dimezzati|
 
 ---
 
@@ -51,9 +53,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 | Potere                        | Nome               | Effetto (sul PG)                                                                                                                                                                                                                                                                  |
 | ----------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passivo                       | Orecchie del Mondo | **Bonus:** **+1 ai tiri di Eco**. **Malus:** in scene di rumore estremo o caos sensoriale (esplosioni, vapore denso, grida in massa) subisce **-1 Eco** — i sensi sono saturi |
-| Attivo (1/scena, se concesso) | Frequenza Rivelata | Per **3 round** il PG sente ogni mossa prima che accada: tutti i tiri di difesa sono **successo automatico** e ogni attacco ha **+2 al tiro**                                                                                                                                     |
-| Fusione (1/sessione, 3 round) | Silenzio Assoluto  | Per 3 round **Eco 9**, Ki al massimo: conosce in anticipo ogni attacco e ogni intenzione. Difesa automatica contro ogni colpo, +2 a ogni tiro offensivo                                                                                                                           |
+| Passivo | Orecchie del Mondo | Il PG sente ciò che gli altri ignorano: il respiro di chi si nasconde, il ticchettio di un meccanismo sotto la pietra, un nemico che si avvicina da lontano. Il mondo non ha più angoli ciechi per lui |
+| Attivo (costa Ki) | Frequenza Rivelata | Il PG sente ogni mossa prima che accada: tutti i tiri di difesa sono **successo automatico** e ogni attacco ha **+2 al tiro**. **Dura 1 round per ogni Ki speso** |
+| Fusione (1/sessione, 3 round, scelta dallo spirito) | Silenzio Assoluto | Per 3 round **Eco 9**, Ki al massimo: conosce in anticipo ogni attacco e ogni intenzione. Difesa automatica contro ogni colpo, +2 a ogni tiro offensivo |
 
 ---
 
@@ -63,9 +65,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 |Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Sangue Alchemico|**Bonus:** **+1 ai tiri di Scintilla**. **Malus:** il calore lo rivela, **-1 Ombra** permanente (non può nascondersi né sorprendere)|
-|Attivo (1/scena, se concesso)|Mani di Brace|Per **3 round** ogni colpo a segno del PG infligge **+2 danno** e incendia il bersaglio (1 danno residuo il turno successivo)|
-|Fusione (1/sessione, 3 round)|Conflagrazione|Per 3 round **Scintilla 9**, Ki al massimo: immune al fuoco e al danno fisico, ogni attacco a segno è **critico automatico**|
+|Passivo|Sangue Alchemico|Il sangue del PG scalda le vene come brace sotto la cenere. Non teme il freddo, le fiamme normali non lo ustionano, la sua arma fuma leggermente quando colpisce|
+|Attivo (costa Ki)|Mani di Brace|Ogni colpo a segno del PG infligge **+2 danno** e incendia il bersaglio (1 danno residuo il turno successivo). **Dura 1 round per ogni Ki speso**|
+|Fusione (1/sessione, 3 round, scelta dallo spirito)|Conflagrazione|Per 3 round **Scintilla 9**, Ki al massimo: immune al fuoco e al danno fisico, ogni attacco a segno è **critico automatico**|
 
 ---
 
@@ -75,9 +77,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 |Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Mimetismo dell'Anima|Il PG è difficile da inquadrare: **+1 a tutti i tiri di difesa**. **Malus:** il corpo è fragile, ogni colpo che va a segno infligge **+1 danno**|
-|Attivo (1/scena, se concesso)|Foglia che Cade|Per **3 round** il PG non può essere bersagliato da attacchi diretti (è visibile, ma chi mira a lui lo manca). Può riapparire alle spalle di un nemico per attaccare con vantaggio|
-|Fusione (1/sessione, 3 round)|Vuoto di Foresta|Per 3 round **Ombra 9**, Ki al massimo: invisibile e intangibile. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira|
+|Passivo|Mimetismo dell'Anima|Il PG diventa fondo tra i fondi: chi lo guarda senza cercarlo non lo trova. Nelle folle passa inosservato, nelle ombre si confonde con le ombre, i suoi contorni sembrano sfumare|
+|Attivo (costa Ki)|Foglia che Cade|Il PG non può essere bersagliato da attacchi diretti (è visibile, ma chi mira a lui lo manca). Può riapparire alle spalle di un nemico per attaccare con vantaggio. **Dura 1 round per ogni Ki speso**|
+|Fusione (1/sessione, 3 round, scelta dallo spirito)|Vuoto di Foresta|Per 3 round **Ombra 9**, Ki al massimo: invisibile e intangibile. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira|
 
 ---
 
@@ -87,9 +89,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 |Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Percezione Eterea|**Bonus:** **+1 ai tiri di Flusso**. **Malus:** la sua natura contemplativa gli toglie aggressività, **-1 Scintilla** permanente|
-|Attivo (1/scena, se concesso)|Corrente Sospesa|Per **3 round** il PG entra nel flusso: schiva automaticamente il **primo attacco di ogni turno** e lo restituisce al mittente con **Flusso +2**|
-|Fusione (1/sessione, 3 round)|Marea Eterna|Per 3 round **Flusso 9**, Ki al massimo: ogni attacco diretto contro di lui è schivato automaticamente, una volta per turno può rispedirlo al mittente|
+|Passivo|Percezione Eterea|Il PG percepisce i fili invisibili che muovono il mondo: trappole nascoste, correnti d'aria cambiate, sguardi che lo seguono da lontano. Vede prima di vedere|
+|Attivo (costa Ki)|Corrente Sospesa|Il PG entra nel flusso: schiva automaticamente il **primo attacco di ogni turno** e lo restituisce al mittente con **Flusso +2**. **Dura 1 round per ogni Ki speso**|
+|Fusione (1/sessione, 3 round, scelta dallo spirito)|Marea Eterna|Per 3 round **Flusso 9**, Ki al massimo: ogni attacco diretto contro di lui è schivato automaticamente, una volta per turno può rispedirlo al mittente|
 
 ---
 
@@ -99,9 +101,9 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 |Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Riflessi Accelerati|**Bonus:** **+1 ai tiri di Battito**. **Malus:** il cuore vive al limite, il corpo è sottile — **-1 Radice** permanente (più fragile, subisce +1 danno da ogni colpo a segno)|
-|Attivo (1/scena, se concesso)|Lampo Vivente|Per **3 round** il PG agisce **due volte nello stesso turno** (due attacchi, oppure un attacco + un movimento, oppure due reazioni)|
-|Fusione (1/sessione, 3 round)|Supernova del Battito|Per 3 round **Battito 9**, Ki al massimo, due azioni per turno. Inoltre una volta nella scena può far **riavvolgere** il round corrente e farlo rigiocare al gruppo con le informazioni appena ottenute|
+|Passivo|Riflessi Accelerati|Il cuore del PG batte al ritmo del fulmine: reagisce prima di pensare, schiva prima di sapere, le sue mani si muovono mentre gli altri stanno ancora guardando|
+|Attivo (costa Ki)|Lampo Vivente|Il PG agisce **due volte nello stesso turno** (due attacchi, oppure un attacco + un movimento, oppure due reazioni). **Dura 1 round per ogni Ki speso**|
+|Fusione (1/sessione, 3 round, scelta dallo spirito)|Supernova del Battito|Per 3 round **Battito 9**, Ki al massimo, due azioni per turno. Inoltre una volta nella scena può far **riavvolgere** il round corrente e farlo rigiocare al gruppo con le informazioni appena ottenute|
 
 
 ### Carattere degli spirti
