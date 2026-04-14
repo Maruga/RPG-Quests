@@ -1,6 +1,7 @@
 # Dr. Endo Hiroshi 遠藤 博 — Medico curante
 
 **Eta**: 50 | **Lavoro**: Internista, Clinica Sakura, Sakyo-ku
+**Carriera**: 7 anni alla Clinica Sakura (dal 1990), medico di Morimoto dal 1990
 **Ruolo nell'avventura**: Custode del segreto medico. Depressione + mani irritate.
 
 ## Descrizione
@@ -40,6 +41,14 @@ Consegna handout "Cartella Clinica" (11). In aggiunta, a voce:
 
 **Serenita degli ultimi mesi**:
 - Ultimo controllo telefonico 28/10: "Tranquillo. Mi ha sorpreso."
+
+## Alibi — sera del 12 novembre
+
+Ultimo paziente alle **17:30**. Clinica chiusa alle 18:00. Dice di essere andato direttamente a casa. Vive solo (divorziato da 3 anni) — nessun testimone fino alla mattina dopo.
+
+**Verificabile**: registro pazienti conferma ultimo appuntamento alle 17:30. Dopo le 18:00, nessuna conferma.
+
+**Nota GM**: Endo è innocente. Ma vive solo, conosceva la situazione medica di Morimoto (depressione, farmaci, abitudine del collirio), e ha competenze mediche. Un PG potrebbe costruire una teoria: il medico che copre un errore, o che sapeva troppo. L'alibi debole alimenta il dubbio.
 
 ## Tiri
 

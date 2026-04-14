@@ -1,6 +1,7 @@
 # Kuroda Haruki 黒田 春樹 — Falso colpevole
 
 **Eta**: 58 | **Lavoro**: Vice-Ordinario, Storia dell'Arte, Universita di Kyoto
+**Carriera**: ~25 anni all'universita (dal 1972)
 **Ruolo nell'avventura**: Il colpevole perfetto. Colpevole di plagio, innocente di omicidio.
 
 ## Descrizione
@@ -33,8 +34,13 @@ Ha plagiato la ricerca di Morimoto 10 anni fa. Lo sa, sa che tutti lo sanno. Qua
 - Non sa nulla del collirio avvelenato
 - Non sa nulla dell'aconitina o del trikabuto
 
-**Sull'alibi**:
-- Sera 12/11: a casa da solo. Moglie e figli fuori citta. Ha cenato, guardato TV, dormito. Niente di verificabile.
+## Alibi — sera del 12 novembre
+
+A casa da solo. Moglie Yumi e figli fuori città (dai parenti della moglie). Ha cenato, guardato la TV, dormito. Niente di verificabile — nessun testimone, nessuna telefonata, nessuna uscita.
+
+**Verificabile**: no. Yumi conferma di essere stata fuori città (solido per lei, ma non copre Kuroda). L'alibi è il più debole di tutti i PNG.
+
+**Nota GM**: Kuroda è innocente ma il suo alibi è un disastro. Morimoto lo sapeva — ha scelto una sera in cui la famiglia di Kuroda era via. Anche questo fa parte del piano.
 
 **Sulle visite allo studio**:
 - Conferma: Morimoto lo invitava. "Mi sembrava strano, non mi parlava da anni e all'improvviso voleva collaborare."

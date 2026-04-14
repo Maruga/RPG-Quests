@@ -3,7 +3,8 @@
 **Eta**: 63 | **Nato**: 15/03/1934 | **Morto**: 12/11/1997, ore 22:30
 **Lavoro**: Professore Ordinario di Storia dell'Arte Giapponese, Universita di Kyoto, Facolta di Lettere
 **Indirizzo**: Sakyo-ku, Shishigatani, Tetsugaku-no-Michi 14, 2° piano
-**Stato civile**: Vedovo | **Figlia**: Morimoto Aoi (28)
+**Stato civile**: Vedovo (moglie Haruko morta nel 1985, cancro al pancreas) | **Figlia**: Morimoto Aoi (28)
+**Carriera**: ~30 anni all'Università di Kyoto (dal 1967)
 
 ## Chi era
 

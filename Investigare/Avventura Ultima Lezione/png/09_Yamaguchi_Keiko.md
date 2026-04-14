@@ -1,6 +1,7 @@
 # Yamaguchi Keiko 山口 恵子 — Editrice
 
 **Eta**: 45 | **Lavoro**: Responsabile pubblicazioni accademiche, Bungeishunju, ufficio di Kyoto (Shimogyo-ku)
+**Carriera**: ~15 anni alla Bungeishunju
 **Ruolo nell'avventura**: Conferma il plagio documentalmente. Rafforza il caso falso contro Kuroda.
 
 ## Descrizione
@@ -26,3 +27,9 @@ En -1 — non vuole essere coinvolta.
 **Sulla risposta formale**:
 - "Non ci sono elementi sufficienti per riconoscere un plagio." Linea ufficiale.
 - Sa che e una bugia istituzionale
+
+## Alibi — sera del 12 novembre
+
+In ufficio alla Bungeishunju (Shimogyo-ku) fino alle 21:00 circa — revisione bozze con scadenza. Il collega di scrivania Harada conferma. Poi a casa in taxi.
+
+**Verificabile**: sì — collega Harada + registro uscita dell'edificio.

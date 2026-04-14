@@ -57,7 +57,7 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 
 ## PNG Principali (con En differenziato per PG)
 
-- **Morimoto Aoi** (28, figlia) — cuore emotivo. Non sa di debiti/depressione. Odia Kuroda. Se scopre la verità, crolla
+- **Morimoto Aoi** (28, figlia) — cuore emotivo. Non sa di debiti/depressione. Odia Kuroda. Se scopre la verità, crolla. Orfana di madre dal 1985 (Haruko, cancro)
 - **Kuroda Haruki** (58, falso colpevole) — plagiatore reale, non assassino. Spaventato, evasivo sul plagio, sincero su omicidio. Senza alibi
 - **Kuroda Yumi** (55, moglie Kuroda) — difende il marito. Sa del plagio. Rivela che Morimoto invitava Kuroda (strano)
 - **Nishimura Rika** (30, assistente) — chiave nascosta. Parla della "serenità" di Morimoto e del collirio sempre sulla scrivania
@@ -113,6 +113,9 @@ Tutto il materiale è in **italiano**. L'avventura è contenuta in `Storia Compl
 | 19 | Giornale_Scandalo | Kyoto Shimbun 17/11 — polizza 30M, rivalita accademica, speculazioni | Fase 2 o su richiesta |
 | 20 | Giornale_Nomina_Kuroda | Kyoto Shimbun 8/10 — Kuroda nominato premio Kokusai per la ricerca Heian-Momoyama | Sulla scrivania Studio 307, o se PG si bloccano |
 | 21 | Giornale_Kamiya_1986 | Asahi Shimbun 12/09/1986 — cronaca originale del caso trikabuto (archivio) | Solo se richiesto o se PG si bloccano (via Tanaka) |
+| 22 | Tabulato_Casa_Morimoto | NTT — Tabulato utenza residenziale sett-nov '97. Poche chiamate (Aoi, Dr. Endo, universita, 119) | Su richiesta (tabulato NTT, serve autorizzazione) |
+| 23 | Tabulato_Universita | Registro interni Fac. Lettere — chiamate uscita di Morimoto (int. 307) e Kuroda (int. 215) | Su richiesta — la chiamata 18/09 di Morimoto a un numero di Kawaramachi e il collegamento alla Maruzen |
+| 24 | Giornale_Necrologia_Moglie | Kyoto Shimbun 8/03/1985 — necrologia Morimoto Haruko (moglie, cancro) | Solo se richiesto. NON e collegato al caso — red herring |
 
 ## Principi di Scrittura
 

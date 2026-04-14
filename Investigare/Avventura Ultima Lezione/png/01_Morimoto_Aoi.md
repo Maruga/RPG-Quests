@@ -50,6 +50,16 @@ Figlia unica. Adorava il padre. Sa della rivalita con Kuroda — il padre gliene
 - Resiste. "Perche volete le cartelle mediche di mio padre? Lui non era malato."
 - **Presenza** per convincerla. Se cede, lo fa con riluttanza.
 
+## Alibi — sera del 12 novembre
+
+A casa sua a Higashiyama. La collega Shimizu Yoko è passata per cena — arrivata verso le 18:30, andata via alle **19:00** (doveva tornare presto, il figlio piccolo era malato). Aoi è rimasta sola da quel momento.
+
+**Verificabile**: Shimizu conferma la cena ma conferma anche di essere andata via alle 19:00. Da Higashiyama a casa del padre (Sakyo-ku, Tetsugaku-no-Michi) sono circa **15 minuti in autobus**. Aoi non ha alibi per la finestra 19:00-22:30.
+
+**Nota GM**: Aoi è innocente. Ma è la beneficiaria della polizza da ¥30M, non ha alibi per il momento critico, e abita vicino al padre. Un PG che collega polizza + prossimità + alibi debole può costruire una teoria. Questo crea tensione emotiva — sospettare la figlia addolorata è scomodo e doloroso per i PG.
+
+---
+
 ### Se scopre la verita (suicidio)
 
 - Rifiuta. Disperazione, poi rabbia. Preferisce mentire a se stessa.

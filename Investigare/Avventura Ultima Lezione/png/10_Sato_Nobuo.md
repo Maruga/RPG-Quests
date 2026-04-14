@@ -1,6 +1,7 @@
 # Sato Nobuo 佐藤 信夫 — Agente assicurativo
 
 **Eta**: 42 | **Lavoro**: Consulente assicurativo, Nippon Life
+**Carriera**: 12 anni alla Nippon Life, filiale Kyoto-Sakyo
 **Ruolo nell'avventura**: Rivela che Morimoto ha chiesto della clausola suicidio. Dettaglio ambiguo.
 
 ## Descrizione
@@ -30,3 +31,9 @@ En 0 — collaborativo.
 
 **Sul comportamento di Morimoto**:
 - "Un uomo calmo, educato. Non sembrava disperato."
+
+## Alibi — sera del 12 novembre
+
+A casa con moglie e due figli. Serata normale — cena, televisione. La moglie conferma.
+
+**Verificabile**: sì — famiglia. Non è un sospetto realistico.

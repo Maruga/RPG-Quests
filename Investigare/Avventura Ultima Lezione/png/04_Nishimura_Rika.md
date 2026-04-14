@@ -1,6 +1,7 @@
 # Nishimura Rika 西村 理香 — Assistente di ricerca
 
 **Eta**: 30 | **Lavoro**: Dottoranda, terzo anno, Universita di Kyoto
+**Carriera**: Assistente di ricerca di Morimoto da 3 anni (inizio dottorato 1995)
 **Ruolo nell'avventura**: Chiave nascosta. I suoi dettagli sulla "serenita" e sul collirio sono indizi cruciali.
 
 ## Descrizione
@@ -41,3 +42,13 @@ Devota al professore. La persona piu vicina a lui professionalmente. Ha notato c
 
 **Sul disordine nello studio**:
 - "Non era da lui. Il professore era ordinatissimo."
+
+## Alibi — sera del 12 novembre
+
+Dice di essere stata in biblioteca universitaria fino alle 20:30 a studiare. Il **registro presenze** della biblioteca mostra però che ha firmato l'uscita alle **18:45**. Quasi 2 ore non coperte.
+
+Se confrontata sulla discrepanza: si agita. "Sono... sono uscita dalla sala principale, ma sono rimasta nella sala studio al secondo piano. Non ha registro." Oppure: "Sono andata a fare una passeggiata. Avevo bisogno di pensare. Non ricordo dove esattamente."
+
+**Verificabile**: parzialmente — il registro la copre solo fino alle 18:45. Le 2 ore successive non hanno testimoni.
+
+**Nota GM**: Nishimura è innocente. La discrepanza è genuina — era semplicemente a passeggiare o al caffè, in un momento personale. Ma combinata con il suo accesso allo studio e la conoscenza del collirio, crea un sospetto legittimo per i PG.

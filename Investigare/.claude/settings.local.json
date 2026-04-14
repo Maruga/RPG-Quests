@@ -26,7 +26,15 @@
       "Bash(pip install:*)",
       "Bash(pip show:*)",
       "Bash(explorer C:\\\\Public\\\\_Clienti\\\\Maruga\\\\Giochi\\\\Vampiri\\\\Vault\\\\Vampiri\\\\Investigare\\\\Avventura Ultima Lezione\\\\handout:*)",
-      "Bash(start:*)"
+      "Bash(start:*)",
+      "Bash(cat)",
+      "Bash(sed -i 's/\\\\*\\\\*Eta\\\\*\\\\*: 58 | \\\\*\\\\*Lavoro\\\\*\\\\*: Vice-Ordinario, Storia dell'\\\\''Arte, Universita di Kyoto/\\\\*\\\\*Eta\\\\*\\\\*: 58 | \\\\*\\\\*Lavoro\\\\*\\\\*: Vice-Ordinario, Storia dell'\\\\''Arte, Universita di Kyoto\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~25 anni all'\\\\''universita \\(dal 1972\\)/' 02_Kuroda_Haruki.md)",
+      "Bash(sed -i \"s/\\\\*\\\\*Eta\\\\*\\\\*: 60 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Ordinario di Letteratura Comparata, Preside Facolta di Lettere/\\\\*\\\\*Eta\\\\*\\\\*: 60 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Ordinario di Letteratura Comparata, Preside Facolta di Lettere\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~30 anni all'universita, Preside dal 1993/\" 08_Honda_Masao.md)",
+      "Bash(sed -i \"s/\\\\*\\\\*Eta\\\\*\\\\*: 45 | \\\\*\\\\*Lavoro\\\\*\\\\*: Responsabile pubblicazioni accademiche, Bungeishunju, ufficio di Kyoto \\(Shimogyo-ku\\)/\\\\*\\\\*Eta\\\\*\\\\*: 45 | \\\\*\\\\*Lavoro\\\\*\\\\*: Responsabile pubblicazioni accademiche, Bungeishunju, ufficio di Kyoto \\(Shimogyo-ku\\)\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~15 anni alla Bungeishunju/\" 09_Yamaguchi_Keiko.md)",
+      "Bash(sed -i \"s/\\\\*\\\\*Eta\\\\*\\\\*: 42 | \\\\*\\\\*Lavoro\\\\*\\\\*: Consulente assicurativo, Nippon Life/\\\\*\\\\*Eta\\\\*\\\\*: 42 | \\\\*\\\\*Lavoro\\\\*\\\\*: Consulente assicurativo, Nippon Life\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: 12 anni alla Nippon Life, filiale Kyoto-Sakyo/\" 10_Sato_Nobuo.md)",
+      "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 50 | \\\\*\\\\*Lavoro\\\\*\\\\*: Internista, Clinica Sakura, Sakyo-ku|\\\\*\\\\*Eta\\\\*\\\\*: 50 | \\\\*\\\\*Lavoro\\\\*\\\\*: Internista, Clinica Sakura, Sakyo-ku\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: 7 anni alla Clinica Sakura \\(dal 1990\\), medico di Morimoto dal 1990|\" 07_Dr_Endo_Hiroshi.md)",
+      "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 30 | \\\\*\\\\*Lavoro\\\\*\\\\*: Dottoranda, terzo anno, Universita di Kyoto|\\\\*\\\\*Eta\\\\*\\\\*: 30 | \\\\*\\\\*Lavoro\\\\*\\\\*: Dottoranda, terzo anno, Universita di Kyoto\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: Assistente di Morimoto da 3 anni \\(inizio dottorato 1995\\)|\" 04_Nishimura_Rika.md)",
+      "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~20 anni all'universita, conosce Morimoto e Kuroda da quando sono arrivati|\" 11_Mori_Katsuo.md)"
     ]
   }
 }

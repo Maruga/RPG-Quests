@@ -33,6 +33,8 @@ Il professor Morimoto si è suicidato. Ha orchestrato ogni dettaglio perché sem
 
 Studioso rigoroso, rispettato ma non famoso. Per trent'anni ha costruito la sua opera: una teoria sull'influenza dell'arte Heian nella ceramica Momoyama che avrebbe ridefinito il campo.
 
+**Famiglia**: vedovo dal 1985. La moglie Morimoto Haruko, insegnante di musica alla scuola media Shishigatani, è morta di cancro al pancreas a 51 anni, dopo una malattia di circa sei mesi. Aoi aveva 16 anni. Dopo la morte della moglie, Morimoto si è chiuso ancora di più nel lavoro. La figlia è diventata il suo unico legame affettivo — e quello che doveva proteggere.
+
 Dieci anni fa, il suo allievo più promettente — Kuroda Haruki — ha pubblicato quella teoria a suo nome. Una rielaborazione abbastanza diversa da rendere impossibile dimostrare il plagio in tribunale, ma abbastanza simile da far capire a chiunque nel settore cosa fosse successo. L'editore lo sapeva. I colleghi lo sapevano. Nessuno ha fatto nulla. Kuroda ha ottenuto riconoscimenti internazionali. Morimoto è rimasto nell'ombra.
 
 ### La spirale
@@ -761,6 +763,7 @@ Il GM non interviene per "salvare" la situazione. Se i PG non hanno cercato abba
 
 | Data | Evento |
 |------|--------|
+| Marzo 1985 | Morte della moglie Morimoto Haruko (cancro al pancreas, 51 anni) |
 | 1987 | Morimoto completa la ricerca sull'arte Heian-Momoyama |
 | 1988 | Kuroda pubblica la rielaborazione. Morimoto protesta. L'editore rifiuta di riconoscere il plagio |
 | 1989-1994 | La carriera di Morimoto declina. Meno fondi, meno pubblicazioni |

@@ -1,6 +1,7 @@
 # Mori Katsuo 森 勝男 — Collega neutrale
 
 **Eta**: 55 | **Lavoro**: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento
+**Carriera**: ~20 anni all'universita, conosce Morimoto e Kuroda da quando sono arrivati
 **Ruolo nell'avventura**: Prospettiva esterna. Conferma plagio. Offre l'indizio della "pace".
 
 ## Descrizione
@@ -27,3 +28,9 @@ En +1 — rispetta la polizia, vuole la verita.
 
 **Su Kuroda**:
 - "Un uomo ambizioso. Non cattivo, ma ambizioso."
+
+## Alibi — sera del 12 novembre
+
+A casa, ha corretto compiti degli studenti. Vive solo. Il portiere del condominio lo ha visto rientrare alle 17:45. Nessun altro testimone per la serata.
+
+**Verificabile**: parzialmente — il portiere copre solo il rientro. Vive solo, come Kuroda. Ma non ha movente né accesso.

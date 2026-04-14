@@ -1,6 +1,7 @@
 # Honda Masao 本田 正雄 — Preside Facolta
 
 **Eta**: 60 | **Lavoro**: Professore Ordinario di Letteratura Comparata, Preside Facolta di Lettere
+**Carriera**: ~30 anni all'universita, Preside dal 1993
 **Ruolo nell'avventura**: Vuole chiudere lo scandalo. Sa della rivalita e dei problemi finanziari.
 
 ## Descrizione
@@ -28,3 +29,9 @@ En 0.
 **Sulla cattedra**:
 - L'universita stava valutando di non rinnovargli il contratto
 - Non lo dice spontaneamente — solo se pressato
+
+## Alibi — sera del 12 novembre
+
+Cena istituzionale al ristorante Kitcho di Arashiyama con il rettore e 4 colleghi. Dalle 18:30 alle 22:00 circa. Ricevuta del ristorante e 5 testimoni.
+
+**Verificabile**: sì — multipli testimoni, ricevuta. Alibi blindato.
