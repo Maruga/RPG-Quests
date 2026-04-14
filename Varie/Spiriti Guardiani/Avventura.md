@@ -192,15 +192,9 @@ _Da leggere al tavolo:_
 
 **3 Scorpioni di Vapore**
 
-|Stat|Valore|
-|---|---|
-|Ombra|7|
-|Flusso|6|
-|Battito|6|
-|Scintilla|5|
-|Eco|5|
-|Radice|4|
-|Ki|6 ciascuno|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito |      Ki      |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :----------: |
+|   4    |  5  |     5     |   7   |   6    |    6    | 6 (ciascuno) |
 
 - Attaccano con **Ombra** (dal vapore, invisibili)
 - Difendono con **Flusso** (si spostano nel vapore)
@@ -283,15 +277,9 @@ _Da leggere quando i PG entrano nella sala:_
 
 > In fondo al corridoio, la sala si apre in un cerchio. Al centro, immobile, uno scorpione grande come tre cavalli messi insieme. La sua corazza è diversa dagli altri — è fatta di bronzo, non di chitina. Sulla testa, fuso nella corazza, un elmo da centurione romano con la cresta rossa. Le chele sono larghe come porte e affilate come gladii. La coda — un pilum di ossidiana — ondeggia lenta sopra il suo dorso. Vi ha sentito arrivare. Non si muove. Vi guarda con otto occhi neri. Aspetta.
 
-|Stat|Valore|
-|---|---|
-|Radice|8|
-|Scintilla|7|
-|Battito|6|
-|Eco|6|
-|Flusso|5|
-|Ombra|4|
-|Ki|25|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
+|   8    |  6  |     7     |   4   |   5    |    6    | 25  |
 
 **Comportamento:**
 
@@ -363,15 +351,9 @@ Saturno dice:
 
 **Se i PG dicono che vogliono uccidere la Madre o attaccano Saturno:**
 
-|Stat|Valore|
-|---|---|
-|Radice|9|
-|Scintilla|8|
-|Flusso|6|
-|Battito|5|
-|Ombra|3|
-|Eco|4|
-|Ki|40|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
+|   9    |  4  |     8     |   3   |   6    |    5    | 40  |
 
 Combattimento durissimo. Saturno attacca con la falce (Scintilla), difende con Radice 9. Punto debole: Ombra 3 (è una statua, non si gira).
 
@@ -437,15 +419,9 @@ _Da leggere al tavolo:_
 
 > Il primo ad arrivare è il più grande. Uno scarabeo enorme — grande come una casa — con un corno frontale che sembra un ariete da assedio. La sua corazza è coperta di sabbia compattata, come un'armatura naturale. Avanza lento, inesorabile. I soldati che provano a fermarlo vengono spazzati via come insetti da un bue. Le lance si spezzano sulla sua corazza. Le frecce rimbalzano. Si fa strada attraverso la fossa come se non esistesse.
 
-|Stat|Valore|
-|---|---|
-|Radice|9|
-|Scintilla|8|
-|Ombra|2|
-|Flusso|3|
-|Battito|3|
-|Eco|3|
-|Ki|30|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
+|   9    |  3  |     8     |   2   |   3    |    3    | 30  |
 
 - Attacca con **Scintilla** (carica col corno)
 - Difende con **Radice 9** — quasi impenetrabile da davanti
@@ -460,15 +436,9 @@ _Da leggere al tavolo:_
 
 > Mentre combattete lo scarabeo, il terreno dietro di voi si apre. Non dalla fossa — da sotto. Un buco perfettamente circolare, largo dieci metri. Dal buco emergono zampe — bianche, lunghe, sottili come colonne. Otto zampe. Poi il corpo. Un ragno grande come una torre, pallido come osso, con occhi come lanterne rosse. Ha scavato sotto le fosse. È arrivato da dietro. I soldati che stavano sulla cresta della fossa si girano e urlano.
 
-|Stat|Valore|
-|---|---|
-|Ombra|9|
-|Flusso|7|
-|Eco|7|
-|Battito|6|
-|Scintilla|5|
-|Radice|4|
-|Ki|28|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
+|   4    |  7  |     5     |   9   |   7    |    6    | 28  |
 
 - Attacca con **Ombra** (imboscata, seta, trappole)
 - Difende con **Flusso** (si sposta velocissimo sulle zampe)
@@ -484,15 +454,9 @@ _Da leggere al tavolo:_
 
 > Il terzo arriva arrotolato. Una palla nera, enorme, che rotola dalla sabbia a velocità terrificante. Colpisce le rovine di una torre e la attraversa senza rallentare. Poi si srotola — venti metri di segmenti di chitina nera, ogni zampa un uncino grande come una spada. Si alza verticale per un istante — un muro di morte — poi si abbatte in avanti.
 
-|Stat|Valore|
-|---|---|
-|Scintilla|9|
-|Radice|8|
-|Battito|5|
-|Eco|4|
-|Ombra|3|
-|Flusso|3|
-|Ki|32|
+| Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
+| :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
+|   8    |  4  |     9     |   3   |   3    |    5    | 32  |
 
 - Attacca con **Scintilla 9** (carica rotolante devastante, colpo dall'alto)
 - Difende con **Radice 8** (corazza a segmenti)
@@ -525,4 +489,4 @@ Se l'En è abbastanza alto, gli spiriti mandano un ultimo messaggio via Telegram
 - I mostri non si coordinano perfettamente ma si completano: lo Scarabeo sfonda, il Ragno intrappola, il Millepiedi distrugge
 - I soldati della città tengono occupati i mostri piccoli ma vengono spazzati via dai grandi — i PG vedono soldati lanciati in aria, schiacciati, avvolti nella seta
 
-**Questa è la scena in cui i sacrifici dei spiriti possono accadere.** Se un PG è in difficoltà, lo spirito può sacrificarsi — tutte le caratteristiche a 9, Ki al massimo, effetto speciale, per un'intera scena. Lo spirito muore per sempre.
+**Questa è la scena in cui le Fusioni degli spiriti possono accadere.** Se un PG è in difficoltà, lo spirito può fondersi con lui — caratteristica dello spirito a 9, Ki al massimo, effetto speciale, per un'intera scena. Dopo l'uso lo spirito entra in silenzio profondo fino al riposo successivo: niente passivo, niente attivo, niente comunicazione via Telegram.

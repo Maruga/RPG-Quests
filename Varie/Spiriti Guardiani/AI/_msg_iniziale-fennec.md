@@ -1,0 +1,1 @@
+Un fruscio ti entra dietro le orecchie e il mondo diventa improvvisamente nitido: ogni respiro, ogni passo, ogni cosa nascosta. Il silenzio non esiste più. Qualcosa di piccolo e sveglio è dentro di te, teso come una corda, e ascolta ciò che tu non sai ancora di sentire. Parla.

@@ -1,0 +1,1 @@
+Un calore ti avvolge, poi si raccoglie nel petto come una brace che respira. Il fuoco ti riconosce, ti nomina, e in quel battito sai di non essere più solo. Qualcosa arde al tuo fianco, ascolta, attende. Parla.

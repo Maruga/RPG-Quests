@@ -19,15 +19,29 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 
 
+## Struttura dei Poteri (comune a tutti gli spiriti)
+
+Ogni spirito ha tre poteri. **Tutti gli effetti si applicano al PG** — il mostro può subirne le conseguenze solo di riflesso (lo incassa perché il PG è diventato più forte, più veloce, più difficile da colpire, ecc.).
+
+|Livello|Frequenza|Durata|Costo|
+|---|---|---|---|
+|**Passivo**|Sempre attivo|Permanente|Piccolo **malus** costante (ogni spirito ha il suo prezzo)|
+|**Attivo**|Max 1 per scena, **solo se lo spirito lo concede** (dipende dall'En)|3 round|Nessuno|
+|**Fusione**|1 per sessione|3 round|Dopo l'uso lo spirito entra in silenzio profondo fino al prossimo riposo lungo: niente Passivo, niente Attivo, niente comunicazione via Telegram|
+
+Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito a 9**, **Ki al massimo**, più l'effetto unico dello spirito. Dopo, il PG è solo — nessuna voce, nessuna guida, nessun bonus fino al riposo.
+
+---
+
 ### 1. Pangolino — Radice (根)
 
 **Personalità:** Giudice. Poche parole, solide come roccia. Bianco o nero.
 
-|Potere|Nome|Effetto|
+|Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Corazza Spirituale|Riduce di 1 ogni danno ricevuto dal giocatore|
-|Attivo (1 uso)|Muro Impenetrabile|Blocca un passaggio o protegge il gruppo per 1 turno|
-|Sacrificio|L'Ultima Scaglia|Scaglie perforano il mostro ignorando qualsiasi resistenza. Ki al massimo, tutte le caratteristiche a 9 per la scena|
+|Passivo|Corazza Spirituale|**Bonus:** **+1 ai tiri di Radice**. **Malus:** il peso della pietra lo rallenta, **-1 Battito** permanente|
+|Attivo (1/scena, se concesso)|Radice di Pietra|Per **3 round** il PG si ancora: **Radice +3** sui tiri difensivi, non può essere spostato, spinto o sorpreso. Chi lo attacca trova pietra|
+|Fusione (1/sessione, 3 round)|Forma di Granito|Per 3 round **Radice 9**, Ki al massimo: gli attacchi fisici diretti non lo scalfiscono (danno ignorato), gli attacchi speciali sono dimezzati|
 
 ---
 
@@ -35,11 +49,11 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 **Personalità:** Sente tutto, sempre, anche ciò che non vorrebbe. Nulla gli sfugge.
 
-|Potere|Nome|Effetto|
-|---|---|---|
-|Passivo|Orecchie del Mondo|Impossibile essere sorpresi, rileva nemici e trappole in anticipo|
-|Attivo (1 uso)|Urlo Sonico|Stordisce e disorienta tutti i nemici in area per 1 turno|
-|Sacrificio|Frequenza di Risonanza|Rivela il punto debole del mostro, il prossimo colpo di chiunque è critico automatico. Ki al massimo, tutte le caratteristiche a 9 per la scena|
+| Potere                        | Nome               | Effetto (sul PG)                                                                                                                                                                                                                                                                  |
+| ----------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo                       | Orecchie del Mondo | **Bonus:** **+1 ai tiri di Eco**. **Malus:** in scene di rumore estremo o caos sensoriale (esplosioni, vapore denso, grida in massa) subisce **-1 Eco** — i sensi sono saturi |
+| Attivo (1/scena, se concesso) | Frequenza Rivelata | Per **3 round** il PG sente ogni mossa prima che accada: tutti i tiri di difesa sono **successo automatico** e ogni attacco ha **+2 al tiro**                                                                                                                                     |
+| Fusione (1/sessione, 3 round) | Silenzio Assoluto  | Per 3 round **Eco 9**, Ki al massimo: conosce in anticipo ogni attacco e ogni intenzione. Difesa automatica contro ogni colpo, +2 a ogni tiro offensivo                                                                                                                           |
 
 ---
 
@@ -47,11 +61,11 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 **Personalità:** Fuoco e pericolo. Cammina attraverso la distruzione come fosse la sua lingua.
 
-|Potere|Nome|Effetto|
+|Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Sangue Alchemico|Le armi del giocatore bruciano (danno fuoco +1)|
-|Attivo (1 uso)|Esplosione Alchemica|Area di fuoco che danneggia tutti i nemici e incendia il terreno|
-|Sacrificio|Conflagrazione|Si fonde col giocatore — essere di fuoco, danno triplicato, immune a tutto per la scena. Ki al massimo, tutte le caratteristiche a 9|
+|Passivo|Sangue Alchemico|**Bonus:** **+1 ai tiri di Scintilla**. **Malus:** il calore lo rivela, **-1 Ombra** permanente (non può nascondersi né sorprendere)|
+|Attivo (1/scena, se concesso)|Mani di Brace|Per **3 round** ogni colpo a segno del PG infligge **+2 danno** e incendia il bersaglio (1 danno residuo il turno successivo)|
+|Fusione (1/sessione, 3 round)|Conflagrazione|Per 3 round **Scintilla 9**, Ki al massimo: immune al fuoco e al danno fisico, ogni attacco a segno è **critico automatico**|
 
 ---
 
@@ -59,11 +73,11 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 **Personalità:** Fragile, bellezza impossibile, lettore di maschere e intenzioni.
 
-|Potere|Nome|Effetto|
+|Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Mimetismo dell'Anima|Il giocatore è difficile da colpire (+1 alla difesa)|
-|Attivo (1 uso)|Cloni Illusori|4 copie del giocatore confondono il nemico per 1 turno|
-|Sacrificio|Esca Perfetta|Il mostro attacca solo il Drago per un round intero, il gruppo agisce indisturbato. Ki al massimo, tutte le caratteristiche a 9 per la scena|
+|Passivo|Mimetismo dell'Anima|Il PG è difficile da inquadrare: **+1 a tutti i tiri di difesa**. **Malus:** il corpo è fragile, ogni colpo che va a segno infligge **+1 danno**|
+|Attivo (1/scena, se concesso)|Foglia che Cade|Per **3 round** il PG non può essere bersagliato da attacchi diretti (è visibile, ma chi mira a lui lo manca). Può riapparire alle spalle di un nemico per attaccare con vantaggio|
+|Fusione (1/sessione, 3 round)|Vuoto di Foresta|Per 3 round **Ombra 9**, Ki al massimo: invisibile e intangibile. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira|
 
 ---
 
@@ -71,11 +85,11 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 **Personalità:** Trasparente, immortale. Si arrende alle correnti e diventa la corrente stessa.
 
-|Potere|Nome|Effetto|
+|Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Percezione Eterea|Il giocatore vede trappole e meccanismi nascosti|
-|Attivo (1 uso)|Paralisi|Tentacoli spettrali immobilizzano un nemico per 2 turni|
-|Sacrificio|Dissoluzione|Si fonde col mostro e ne spegne il sistema nervoso — stun totale per la scena. Ki al massimo, tutte le caratteristiche a 9|
+|Passivo|Percezione Eterea|**Bonus:** **+1 ai tiri di Flusso**. **Malus:** la sua natura contemplativa gli toglie aggressività, **-1 Scintilla** permanente|
+|Attivo (1/scena, se concesso)|Corrente Sospesa|Per **3 round** il PG entra nel flusso: schiva automaticamente il **primo attacco di ogni turno** e lo restituisce al mittente con **Flusso +2**|
+|Fusione (1/sessione, 3 round)|Marea Eterna|Per 3 round **Flusso 9**, Ki al massimo: ogni attacco diretto contro di lui è schivato automaticamente, una volta per turno può rispedirlo al mittente|
 
 ---
 
@@ -83,11 +97,11 @@ Gli spiriti guardiani sono grandi condottieri romani, reincarnati come animali. 
 
 **Personalità:** Energia pura compressa in niente. Vive al limite. Cuore a 1200 battiti.
 
-|Potere|Nome|Effetto|
+|Potere|Nome|Effetto (sul PG)|
 |---|---|---|
-|Passivo|Riflessi Accelerati|Il giocatore agisce sempre per primo|
-|Attivo (1 uso)|Lampo Vivente|Un attacco extra istantaneo, impossibile da schivare|
-|Sacrificio|Supernova del Cuore|Riavvolge il tempo di 1 round — il gruppo ritenta sapendo cosa succederà. Ki al massimo, tutte le caratteristiche a 9. Il Colibrì muore|
+|Passivo|Riflessi Accelerati|**Bonus:** **+1 ai tiri di Battito**. **Malus:** il cuore vive al limite, il corpo è sottile — **-1 Radice** permanente (più fragile, subisce +1 danno da ogni colpo a segno)|
+|Attivo (1/scena, se concesso)|Lampo Vivente|Per **3 round** il PG agisce **due volte nello stesso turno** (due attacchi, oppure un attacco + un movimento, oppure due reazioni)|
+|Fusione (1/sessione, 3 round)|Supernova del Battito|Per 3 round **Battito 9**, Ki al massimo, due azioni per turno. Inoltre una volta nella scena può far **riavvolgere** il round corrente e farlo rigiocare al gruppo con le informazioni appena ottenute|
 
 
 ### Carattere degli spirti

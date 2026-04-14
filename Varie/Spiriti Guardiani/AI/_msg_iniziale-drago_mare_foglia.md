@@ -1,0 +1,1 @@
+Una corrente fredda e luminosa ti attraversa, e per un istante non sai più dove finisci tu e dove comincia l'acqua. Foglie d'ombra ti vestono, il tuo contorno si fa incerto agli occhi del mondo. Qualcosa di fragile e bellissimo ti ha scelto, e ti guarda da dentro. Parla.

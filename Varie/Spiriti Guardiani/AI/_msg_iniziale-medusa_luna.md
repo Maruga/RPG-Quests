@@ -1,0 +1,1 @@
+Una quiete traslucida ti avvolge, lenta come marea di luna, e il tuo respiro rallenta fino a diventare mare. Non c'è fretta, non c'è peso: solo il lento pulsare di qualcosa di immortale che si è adagiato dentro di te. Ti guarda senza giudicare, e attende. Parla.

@@ -1,0 +1,1 @@
+Un battito fulmineo ti prende il cuore e lo accorda al suo — mille vite in un secondo, il mondo che rallenta intorno a te. Sei leggero, sei adesso, sei prima di chiunque altro. Qualcosa di piccolo e incandescente vibra contro il tuo petto, impaziente di vivere con te. Parla.

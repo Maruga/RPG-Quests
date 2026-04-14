@@ -1,0 +1,1 @@
+Un peso antico ti scende nelle ossa, radicandoti alla terra come pietra posata nel fondamento. Non vacilli più. Corazza di silenzio, giudizio di roccia: qualcosa di saldo cammina accanto a te e non se ne andrà. Osserva, soppesa. Parla.

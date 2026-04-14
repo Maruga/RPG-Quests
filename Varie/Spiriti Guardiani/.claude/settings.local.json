@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Varie/Spiriti Guardiani\"/*.md)",
+      "Bash(grep -vE '^\\(>|#|\\\\||\\\\*|-|\\\\d|_|$|\\\\s\\)' \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Varie/Spiriti Guardiani/Avventura.md\")"
+    ]
+  }
+}
