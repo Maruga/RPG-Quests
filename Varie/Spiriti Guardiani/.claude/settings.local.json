@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(wc -l \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Varie/Spiriti Guardiani\"/*.md)",
-      "Bash(grep -vE '^\\(>|#|\\\\||\\\\*|-|\\\\d|_|$|\\\\s\\)' \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Varie/Spiriti Guardiani/Avventura.md\")"
+      "Bash(grep -vE '^\\(>|#|\\\\||\\\\*|-|\\\\d|_|$|\\\\s\\)' \"C:/Public/_Clienti/Maruga/Giochi/Vampiri/Vault/Vampiri/Varie/Spiriti Guardiani/Avventura.md\")",
+      "Bash(mv \"Frammento di mosaico romano antico.png\" \"Tassello_1_Colosseo.png\")",
+      "Bash(mv \"ChatGPT Image 13 apr 2026, 02_51_05.png\" \"Tassello_2_Pantheon.png\")",
+      "Bash(mv \"ChatGPT Image 13 apr 2026, 02_51_17.png\" \"Tassello_3_CircoMassimo.png\")",
+      "Bash(mv \"ChatGPT Image 13 apr 2026, 02_51_57.png\" \"Tassello_4_ArcoCostantino.png\")",
+      "Bash(mv \"ChatGPT Image 13 apr 2026, 02_52_03.png\" \"Tassello_5_Obelisco.png\")",
+      "Bash(python -c \"import docx; print\\(docx.__version__\\)\")",
+      "Bash(python genera_schede_pg.py)",
+      "WebSearch",
+      "Bash(start *)"
     ]
   }
 }

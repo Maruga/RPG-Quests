@@ -28,7 +28,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Gamba di tavolo con pietre|Legno scheggiato con pietre legate in cima|
+|Improvvisata|Gamba di tavolo con pietre|Legno scheggiato con pietre legate in cima|
 |Forma 1|Mazza chiodata|Ferro grezzo, chiodi sporgenti, pesante|
 |Forma 2|Martello da guerra a una mano|Testa di ferro temprato, impugnatura di cuoio rosso|
 |Forma 3|**Malleus Iacta**|Bronzo incandescente, la testa emana calore, lascia impronte di fuoco|
@@ -53,7 +53,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Due pietre scheggiate legate a bastoni|Selce e corda, si rompono facilmente|
+|Improvvisata|Due pietre scheggiate legate a bastoni|Selce e corda, si rompono facilmente|
 |Forma 1|Due accette di ferro grezza|Pesanti, sbilanciate, ma taglienti|
 |Forma 2|Due asce da guerra bilanciate|Ferro temprato, impugnatura di cuoio, leggere|
 |Forma 3|**Geminae Restitutor**|Oro e ossidiana, leggerissime, vibrano quando colpiscono come ali|
@@ -78,7 +78,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Fionda di stracci|Corda e stoffa, lancia sassi|
+|Improvvisata|Fionda di stracci|Corda e stoffa, lancia sassi|
 |Forma 1|Pistola a pietra focaia grezza|Legno e ferro, spara lenta, imprecisa|
 |Forma 2|Spingarda corta|Canna larga di bronzo, calcio intagliato|
 |Forma 3|**Vox Africani**|Oro con incisioni di orecchie e onde sonore, lo sparo non fa rumore ma il bersaglio sente un tuono|
@@ -103,7 +103,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Catena con sasso + coperchio di pentola|Catena arrugginita, sasso irregolare, coperchio ammaccato|
+|Improvvisata|Catena con sasso + coperchio di pentola|Catena arrugginita, sasso irregolare, coperchio ammaccato|
 |Forma 1|Flagello di ferro + scudo rotondo|Catena solida con sfera chiodata, scudo rotondo di legno e ferro|
 |Forma 2|Mazzafrusto a tre code + scudo di bronzo|Tre catene con sfere di bronzo, scudo con rilievo di medusa|
 |Forma 3|**Flagellum Pacis** + **Scutum Auctoritas**|Catene di luce traslucida, scudo di marmo bianco che emana calma|
@@ -128,7 +128,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Sbarra di ferro + fondo di barile|Ferro arrugginito, legno marcio|
+|Improvvisata|Sbarra di ferro + fondo di barile|Ferro arrugginito, legno marcio|
 |Forma 1|Gladio corto + scudo di legno cerchiato|Lama corta ma affilata, scudo con cerchi di ferro|
 |Forma 2|Spatha di bronzo + scutum legionario|Lama lunga di bronzo lucido, scudo rettangolare con incisione di pangolino|
 |Forma 3|**Virtus Imperatoris** + **Clipeus Meditationis**|Lama bianca come marmo, scudo circolare con aureola dorata|
@@ -153,7 +153,7 @@
 
 |Fase arma|Nome|Aspetto|
 |---|---|---|
-|Banale|Bastone con chiodo|Legno marcio, chiodo piegato|
+|Improvvisata|Bastone con chiodo|Legno marcio, chiodo piegato|
 |Forma 1|Lancia di legno con punta di ferro|Asta solida, punta grezza ma funzionale|
 |Forma 2|Pilum legionario|Asta di frassino, punta di ferro lungo|
 |Forma 3|**Hasta Libertatis**|Ossidiana nera con fronde dorate che si muovono senza vento, quasi invisibile in penombra|
