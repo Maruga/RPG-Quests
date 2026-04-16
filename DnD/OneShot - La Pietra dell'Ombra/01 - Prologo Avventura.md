@@ -9,6 +9,9 @@
 **Scopo della scena:** Combattimento semplice e veloce per insegnare le meccaniche ai giocatori e partire in modo insolito (in media res). Dopo il salvataggio, si torna in città dove inizia la vera missione.
 
 **Testo da leggere ai giocatori:**
+
+[cast|Immagini/Copertina.png|La Pietra dell'Ombra]
+
 > [!info]
 > State cercando il party del figlio di un vostro caro amico. La ricerca non è difficile: il dungeon — le fondamenta di un vecchio castello — è in gran parte crollato. Restano poche stanze.
 > Avete già esplorato alcune aree senza trovare nulla, solo corpi di goblin e qualche ratto che li sta divorando.
@@ -16,7 +19,11 @@
 > Qualcuno è appena morto.
 > Correte nella direzione del rumore, sperando di non arrivare troppo tardi.
 
+[cast|Immagini/SotterraneiCastello.png|I sotterranei del castello]
+
 **Ricompensa:** 1000 mo + tutto ciò che trovano nel dungeon.
+
+[cast|blank]
 
 [[02 - Stanza Goblin]]
 [[03 - Viaggio di Ritorno]]

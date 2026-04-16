@@ -7,15 +7,17 @@ Porta inferiore chiusa e rinforzata anche magicamente. Se attivata la trappola c
 
 ### Descrizione Stanza
 
+[cast|Immagini/Stanze/StanzaMago.png|Biblioteca del Mago]
+
 > [!Leggere]
 > La porta si apre. Luce.
 > Non torce. Non fuoco. Piccole sfere luminose fluttuano vicino al soffitto. Luci magiche. Perenni.
 > Una stanza ampia. Odore di polvere, pergamena vecchia, cera.
 > Al centro, un grande tappeto. Un tempo splendido — motivi arcani intrecciati. Ora sporco, logoro, mangiato dal tempo.
-> Un tavolo di legno scuro domina la stanza. Pergamene ammucchiate. Boccette d'inchiostro secco. Un piedistallo di marmo bianco con cinque incavi. Una gemma, sembra un rubino accanto. Libri aperti. Qualcuno studiava qui. 
+> Un tavolo di legno scuro domina la stanza. Pergamene ammucchiate. Boccette d'inchiostro secco. Un piedistallo di marmo bianco con cinque incavi. Un foglio di pergamena piegato sotto un fermacarte di bronzo. Libri aperti. Qualcuno studiava qui.
 > Accanto, un tavolo più piccolo. Vuoto. Polveroso.
 > Lungo la stanza, tre librerie. Piene. Ampolle colorate nella prima. Pergamene arrotolate nella seconda. Libri rilegati in pelle nella terza.
-> Nell'angolo in basso, una pianta è sbucata dal pavimento. Foglie pallide. Ragnatele ovunque intorno. Vecchie. Abbandonate.
+> Nell'angolo in basso, una pianta è sbucata dal pavimento. Foglie pallide. Ragnatele ovunque intorno. Vecchie. Abbandonate. Attorno alla base, un po' di terra scura accumulata sul pavimento.
 > Sul tavolo — un piedistallo di marmo bianco. Cinque incavi in fila. Vuoti.
 
 ### Trappola — Tavolo Principale
@@ -49,10 +51,24 @@ PG esamina il tavolo principale, tocca le pergamene o i libri sopra.
 | Boccette inchiostro (3) | Secche, inutili                                                 |
 | Libri (2)               | Diario del mago (parzialmente leggibile), tomo di teoria arcana |
 | Penna d'argento         | Funzionante, 15 mo                                              |
-| Rubino                  | Vicino al piedistallo di marmo, 75 mo                           |
+| Pergamena piegata       | Fermacarte di bronzo — lettera del mago (vedi sotto)            |
 
-#### Diario del Mago (estratto):
-Questo enigma era per un suo discepolo con grandi potenzialità. Il discepolo molto pigro non si impegnava, il mago ha creato questo gioco per farlo pensare e cercare tra le cose della stanza sperando di stuzzicare il suo interesse.
+#### Pergamena sulla Scrivania — Lettera del Mago
+
+Foglio di pergamena ingiallito, calligrafia ordinata, inchiostro nero sbiadito. Piegato in due sotto un fermacarte di bronzo.
+
+> [!NOTE]
+> *"A chi legge queste righe e si trova qui dentro: congratulazioni. Sei nel posto giusto, o nel posto sbagliato. Dipende da te.*
+>
+> *Ho nascosto cinque uova in questa casa. Grigie, anonime, apparentemente inutili. Non lo sono.*
+>
+> *Ogni uovo custodisce una gemma. Per ottenerla devi capire cosa l'uovo vuole da te. Leggi. Pensa. Agisci. Se sbagli, non succede niente — l'uovo aspetta. Ha più pazienza di te.*
+>
+> *Quando avrai le cinque gemme, il piedistallo ti dirà il resto.*
+>
+> *Questo gioco l'ho inventato per i miei discepoli. Quelli che lo superavano restavano. Quelli che non lo superavano... tornavano a casa. Non è un test di forza, né di coraggio. È un test di testa. La magia non si impara con la spada.*
+>
+> *Buona fortuna. Ne avrai bisogno meno di quanto pensi, e più di quanto vorresti."*
 
 
 ### Contenuto — Tavolo Vuoto
@@ -67,7 +83,6 @@ Nulla. Polvere.
 | Primo    | 45 mo, 120 ma                                      |
 | Secondo  | Chiave di ferro (apre cassetto terza libreria)     |
 | Terzo    | Vuoto, fondo falso: 3 gemme piccole (75 mo totali) |
-|          | Zaffiro per enigma                                 |
 
 ### Contenuto — Libreria 1 (Pozioni e Ampolle)
 
@@ -76,13 +91,12 @@ Nulla. Polvere.
 | Pozione Cura Ferite Leggere               | 2        | 2d4+2 HP                               |
 | Pozione Invisibilità                      | 1        | 4 turni                                |
 | Pozione Lettura Linguaggi                 | 1        | 2 turni                                |
-| Boccette d'acqua (sigillate)              | 3        | Acqua pura, tappo di cera              |
-| Bacile di pietra                          | 1        | Sullo scaffale in basso, vuoto         |
+| Boccette d'acqua (sigillate)              | 3        | Acqua pura, tappo di cera — fredda      |
+| Bacile di pietra                          | 1        | Sullo scaffale in basso, vuoto — può essere riempito |
 | Ampolle vuote                             | 8        | 1 mo ciascuna                          |
 | Boccetta liquido verde (veleno dei ragni) | 1        | TS o 2d6 danni                         |
 | Pozione Neutralizza Veleno                | 3        | Neutralizza qualsiasi veleno nel corpo |
 | Acqua santa                               | 2 fiale  | 1d8 vs non-morti                       |
-| Diamante                                  | 1        | Per Enigma                             |
 
 ### Contenuto — Libreria 2 (Pergamene)
 
@@ -95,7 +109,6 @@ Nulla. Polvere.
 | Pergamena Protezione dal Male | 1        | 1° livello               |
 | Pergamene normali (vuote)     | 12       | 2 mo ciascuna            |
 | ???Mappa vecchia              | 1        | Mostra dungeon parziale  |
-| Smeraldo per enigma           | 1        | Caduto sotto la libreria |
 
 ### Contenuto — Libreria 3 (Libri)
 
@@ -115,12 +128,24 @@ Nulla. Polvere.
 > [!Leggere]
 > Una pianta pallida è cresciuta attraverso una crepa nel pavimento. Foglie bianche, sottili. Senza luce solare, eppure viva.
 > Ragnatele la avvolgono. Vecchie. Polvere. Nessun ragno in vista.
+> Attorno alla base, un po' di **terra scura** si è accumulata sul pavimento — terra vera, umida, raccolta attraverso la crepa.
 
 #### Se Esaminano:
 
+[cast|Immagini/Uova/Uovo_Zaffiro_PiantaMago.png|Un uovo grigio tra le foglie]
+
 > [!Leggere]
 > Nulla di pericoloso. La pianta è solo una pianta. Le ragnatele sono abbandonate.
-> Tra le foglie, qualcosa luccica. **Una gemma. Ametista.**
+> Tra le foglie, nascosto, qualcosa. Non una gemma.
+> **Un uovo.** Grigio, opaco, grande come un pugno. Liscio. Anonimo. Sulla superficie, incise con tratto sottile, delle parole:
+> *"L'acqua mi conosce. Le mani no. Affidami a chi già mi appartiene, poi allontanati."*
+> L'uovo è tiepido al tatto. Non si rompe, non si apre. Aspetta.
+
+#### Nota per il DM — Uovo Zaffiro
+
+**Azione corretta:** immergere l'uovo nel bacile pieno di acqua fredda E lasciarlo andare. Due condizioni insieme: acqua fredda + non tenerlo. Se lo tengono in mano nell'acqua, non succede nulla. Se lo lasciano senza acqua, non succede nulla. Solo insieme funziona.
+
+Se eseguita correttamente, il guscio si incrina dall'interno e rivela lo **Zaffiro** (ghiaccio).
 
 
 ### Tappeto — Ragni Sotto
@@ -138,48 +163,63 @@ Nulla. Polvere.
 Ragni innocui. Solo scena. Nessun attacco.
 
 
-## Gemme — Posizioni Nascoste
+## Gemme — Uova nelle Stanze
 
-| Gemma        | Posizione                              | Difficoltà                                  |
-| ------------ | -------------------------------------- | ------------------------------------------- |
-| **Ametista** | Tra le foglie della pianta             | Facile (osservare pianta)                   |
-| **Rubino**   | Sul tavolo                             | Facile                                      |
-| **Smeraldo** | Dietro libreria 2 (caduta)             | Media (1-2 su d6 o spostare libreria)       |
-| **Diamante** | Dentro boccetta vuota, libreria 1      | Media (1-2 su d6 o esaminare ogni boccetta) |
-| **Zaffiro**  | Cassetto con fondo falso, tavolo vuoto | Difficile (1 su d6 per fondo falso)         |
+Le cinque gemme NON si trovano in questa stanza. Sono nascoste dentro **cinque uova grigie** sparse nelle altre stanze del dungeon. Ogni uovo ha un'iscrizione enigmatica: solo eseguendo l'azione corretta l'uovo si rompe e rivela la gemma.
 
-### Cercare le Gemme — Meccanica
+| Uovo         | Gemma    | Elemento | Dove si trova                        | Azione per aprirlo                                      |
+| ------------ | -------- | -------- | ------------------------------------ | ------------------------------------------------------- |
+| **Ametista** | Viola    | Vuoto    | Stanza Buia e Silenziosa             | Tenerlo in silenzio assoluto (30 secondi reali)         |
+| **Rubino**   | Rosso    | Fuoco    | Stanza dei Ragni — sull'altare       | Tenerlo sopra una fiamma                                |
+| **Smeraldo** | Verde    | Terra    | Cripta degli Scheletri — a terra     | Seppellirlo nella terra (basta qualsiasi terra — c'è anche quella vicino alla pianta qui) |
+| **Diamante** | Trasp.   | Aria     | Baule in fondo alle Scale d'uscita   | Soffiargli sopra un respiro lungo e diretto             |
+| **Zaffiro**  | Blu      | Ghiaccio | Pianta della Stanza del Mago         | Immergerlo nel bacile con acqua fredda E lasciarlo andare |
 
-| Metodo | Tiro | Tempo |
-|--------|------|-------|
-| Cercare zona specifica | 1-2 su d6 | 1 turno (10 min) |
-| Nano cerca | 1-2 su d6 (+1 per pietre) | 1 turno |
-| Elfo cerca | 1-2 su d6 | 1 turno |
-| Perquisire tutto | Automatico | 4-6 turni |
-**Riprovare:** Sì, ogni turno. 
-
-## Enigma — Le Gemme dell'Arcimago
+## Enigma del Piedistallo — Le Cinque Gemme
 
 > [!Leggere]
 > Un piedistallo di marmo. Cinque incavi disposti in fila. Vuoti.
-> Un'iscrizione incisa sulla base:
+> Sulla base, incisi in lettere antiche, sette versi:
+>
+> *I. "Il pozzo precede la torcia."*
+> *II. "La torcia non illumina l'ultima soglia."*
+> *III. "La montagna è equidistante dall'abisso e dal gelo eterno."*
+> *IV. "Il respiro arriva solo dopo che la polvere si è posata."*
+> *V. "Il gelo non giunge finché il vento non l'ha preceduto."*
+> *VI. "L'abisso e il gelo non condividono mai una parete."*
+> *VII. "Il respiro non è mai al bordo del mondo."*
 
-> *"Il fuoco mai vicino al ghiaccio.*
-> *La terra sta al centro.*
-> *L'aria precede l'acqua.*
-> *Il vuoto è all'inizio.*
-> *Il fuoco non è ultimo."*
+### Metafore (i PG devono dedurle)
 
+| Metafora               | Elemento  |
+| ---------------------- | --------- |
+| Pozzo, Abisso          | Vuoto     |
+| Torcia                 | Fuoco     |
+| Montagna, Polvere      | Terra     |
+| Respiro, Vento         | Aria      |
+| Gelo eterno, Gelo      | Ghiaccio  |
 
-### Legenda (i PG devono dedurla):
+### Vincoli
+
+| # | Vincolo                                          |
+| - | ------------------------------------------------ |
+| I | Vuoto prima di Fuoco                             |
+| II | Fuoco ≠ posizione 5                             |
+| III | Terra equidistante da Vuoto e Ghiaccio         |
+| IV | Aria dopo Terra                                 |
+| V | Aria prima di Ghiaccio                           |
+| VI | Vuoto e Ghiaccio non adiacenti                  |
+| VII | Aria ≠ posizione 1 e ≠ posizione 5             |
+
+### Legenda Gemme (colore/tatto)
 
 | Gemma    | Elemento | Leggere                                                                                             |
 | -------- | -------- | --------------------------------------------------------------------------------------------------- |
+| Ametista | Vuoto    | Niente. Non senti niente. Viola scuro, quasi nero al centro. Come guardare in un pozzo senza fondo. |
 | Rubino   | Fuoco    | È calda. Più calda di quanto dovrebbe essere. Rosso intenso. Profondo.                              |
-| Zaffiro  | Ghiaccio | Fredda. Fredda come acqua di fiume in inverno. Blu scuro, con venature più chiare.                  |
 | Smeraldo | Terra    | Pesante. Più pesante di quanto sembri. Verde intenso. Il colore di una foresta antica.              |
 | Diamante | Aria     | Leggera. Quasi non la senti in mano. Trasparente. Pura. Riflette la luce come se la respirasse.     |
-| Ametista | Vuoto    | Niente. Non senti niente. Viola scuro, quasi nero al centro. Come guardare in un pozzo senza fondo. |
+| Zaffiro  | Ghiaccio | Fredda. Fredda come acqua di fiume in inverno. Blu scuro, con venature più chiare.                  |
 
 ### Soluzione:
 
@@ -191,11 +231,13 @@ Ragni innocui. Solo scena. Nessun attacco.
 | Elemento  | Vuoto    | Fuoco  | Terra    | Aria     | Ghiaccio |
 
 #### Verifica:
-- Il vuoto è all'inizio ✓ (Ametista in posizione 1)
-- La terra sta al centro ✓ (Smeraldo in posizione 3)
-- L'aria precede l'acqua ✓ (Diamante in 4, prima di Zaffiro in 5)
-- Il fuoco mai vicino al ghiaccio ✓ (Rubino in 2, Zaffiro in 5 — separati)
-- Il fuoco non è ultimo ✓ (Rubino in posizione 2)
+- I. Vuoto prima di Fuoco ✓ (Ametista 1 < Rubino 2)
+- II. Fuoco ≠ posizione 5 ✓ (Rubino in 2)
+- III. Terra equidistante da Vuoto e Ghiaccio ✓ (Smeraldo in 3: distanza 2 da Ametista, 2 da Zaffiro)
+- IV. Aria dopo Terra ✓ (Diamante 4 > Smeraldo 3)
+- V. Aria prima di Ghiaccio ✓ (Diamante 4 < Zaffiro 5)
+- VI. Vuoto e Ghiaccio non adiacenti ✓ (Ametista 1 e Zaffiro 5 — non adiacenti)
+- VII. Aria ≠ posizione 1 e ≠ posizione 5 ✓ (Diamante in 4)
 
 
 ### Conseguenze Errore
@@ -286,4 +328,6 @@ _Il mago poteva attivarle a piacere, la sua creazione è persa i documenti non s
 Diviso per 3 PG = **~1215 PX a testa**
 Diviso per 4 PG = **~911 PX a testa**
 Diviso per 5 PG = **~729 PX a testa**
+
+[cast|blank]
 

@@ -3,6 +3,8 @@
 
 ### Descrizione
 
+[cast|Immagini/StanzaScale.png|Scale e pianerottolo]
+
 > [!Leggere]
 > La porta si apre. Scale di pietra scendono davanti a voi.
 > L'aria è fredda. Ferma.
@@ -193,7 +195,32 @@ Nicchia nascosta alla base del muro, tra due inferiate.
 | Pergamena Palla di Fuoco | 400 mo                      |
 | Chiave d'argento         | Apre stanza rituale [ragni] |
 | Anello Magico            | Casuale                     |
+| Uovo del Diamante        | Vedi sotto                  |
 | **Totale**               | **~1005 mo**                |
+
+## Uovo del Diamante — Dentro il Baule
+
+### Posizione
+In fondo al baule massiccio, tra le altre cose. Si trova automaticamente quando svuotano il baule.
+
+### Descrizione — Da Leggere (quando lo trovano):
+
+[cast|Immagini/Uova/Uovo_Diamante_BauleScale.png|Un uovo grigio nel baule]
+
+> [!Leggere]
+> In fondo al baule, tra le monete e le pergamene, qualcosa di liscio e tondo. Non una gemma. Non una moneta. Un uovo.
+> Grigio, opaco, grande come un pugno. Sorprendentemente leggero. Quasi non lo senti in mano.
+> Sulla superficie, incise con tratto sottile, delle parole:
+> *"Sono ovunque e non mi vedi. Sono in te adesso, mentre leggi. Donami ciò che già mi appartiene."*
+> L'uovo non si rompe, non si apre. Aspetta.
+
+### Nota per il DM — Apertura
+
+**Azione corretta:** **soffiare sull'uovo** un respiro lungo, diretto, controllato. Un soffio, non un alito casuale. Basta un respiro singolo fatto con intenzione.
+
+Se eseguita correttamente, il guscio si incrina e rivela il **Diamante** (aria).
+
+**Trappola mentale:** sembra troppo semplice, i PG non ci credono e cercano soluzioni più complicate.
 
 ## Baule — Anello Casuale
 
@@ -285,3 +312,5 @@ Nicchia nascosta alla base del muro, tra due inferiate.
 Diviso per 3 PG = **~2.018 PX a testa**
 Diviso per 4 PG = **~1.514 PX a testa**
 Diviso per 5 PG = **~1.211 PX a testa**
+
+[cast|blank]

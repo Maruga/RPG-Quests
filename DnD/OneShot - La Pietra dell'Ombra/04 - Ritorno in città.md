@@ -12,6 +12,8 @@ I PG possono acquistare equipaggiamento come da tabella del Prologo.
 
 ### Da leggere:
 
+[cast|Immagini/Taverna.png|Il villaggio]
+
 > [!NOTE]
 > Un villaggio di pietra grigia aggrappato a una collina. Forse duecento anime.
 > Una via principale di fango battuto. Case basse col tetto di paglia. L'odore di letame e pane fresco. Galline che attraversano la strada. Un fabbro che batte il ferro. Bambini che vi fissano.
@@ -57,6 +59,8 @@ I PG possono acquistare equipaggiamento come da tabella del Prologo.
 ## Locanda — "La Corona Spezzata" (Città Grande)
 
 ### Atmosfera:
+
+[cast|Immagini/Taverna.png|La Corona Spezzata]
 
 > [!NOTE]
 > Fumo, odore di arrosto, risate grasse. Tavoli di legno scuro pieni di segni. Un camino che scoppietta. Una ragazza porta boccali traboccanti.
@@ -112,3 +116,5 @@ I PG si riuniscono per consegnare la pietra al mercante. Prima che la transazion
 Non importa come li raduni. L'unica condizione è: tutti entro 12m dalla pietra quando cala la sera.
 
 Se un PG si allontana dal gruppo, non viene teletrasportato → problema narrativo. Evita questa situazione.
+
+[cast|blank]

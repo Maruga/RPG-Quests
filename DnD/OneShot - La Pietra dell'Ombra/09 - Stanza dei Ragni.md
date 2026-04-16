@@ -8,6 +8,8 @@
 | Grate rotte        | CA 3, 30 HP, rischio rottura armi |
 ### Descrizione — Da Leggere (entrata):
 
+[cast|Immagini/Stanze/StanzaRagniA.png|Stanza dei Ragni — ingresso]
+
 > [!NOTE]
 > La porta si apre. Buio oltre la luce delle torce.
 > L'aria è densa. Umida. Un odore dolciastro, di marcio e qualcos'altro. Organico.
@@ -19,6 +21,8 @@
 > _{Se entro o escono dal portone principale notano i proiettili della balista}_ Sul muro vicino al portone notate dei proiettili di balista. 
 
 ### Descrizione — Resto della Stanza (quando avanzano):
+
+[cast|Immagini/Stanze/StanzaRagniB.png|Stanza dei Ragni — reveal completo]
 
 > [!NOTE]
 > La luce si espande.
@@ -77,6 +81,8 @@
 > Il veleno ha vinto.
 
 ---
+
+[cast|Immagini/Stanze/Matriarca.png|La Matriarca dei Ragni]
 
 ### Matriarca dei Ragni (DV 6)
 
@@ -268,7 +274,32 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 | Pergamena Ragnatela | 200 mo |
 | Pergamena Dissolvi Magie | 400 mo |
 | Libro Incantesimi (Sonno, Dardo Incantato, Levitazione, Volare) | 2000 mo |
+| Uovo del Rubino | Vedi sotto |
 | **Totale Altare** | **7650 mo** |
+
+## Uovo del Rubino — Sull'Altare
+
+### Posizione
+Appoggiato sull'altare di pietra insieme agli altri tesori (boccette, pergamene, libri, bastone). Si nota subito avvicinandosi all'altare.
+
+### Descrizione — Da Leggere (quando lo raccolgono):
+
+[cast|Immagini/Uova/Uovo_Rubino_StanzaRagni.png|Un uovo grigio sull'altare]
+
+> [!Leggere]
+> Tra gli oggetti sull'altare, qualcosa che non è libro né boccetta. Un uovo.
+> Grigio, opaco, grande come un pugno. Liscio. Tiepido al tatto, più tiepido di quanto dovrebbe.
+> Sulla superficie, incise con tratto sottile, delle parole:
+> *"Sono nato dove tu non osi tenere la mano. Portami là."*
+> L'uovo non si rompe, non si apre. Aspetta.
+
+### Nota per il DM — Apertura
+
+**Azione corretta:** tenere l'uovo **sopra una fiamma** (torcia, candela, fuoco, olio acceso) finché non si incrina. Serve fiamma vera, non calore generico. Basta una torcia tenuta sotto l'uovo per qualche secondo.
+
+Se eseguita correttamente, il guscio si incrina e rivela il **Rubino** (fuoco).
+
+**Trappola mentale:** i PG hanno paura di danneggiare l'uovo col fuoco. L'iscrizione invita proprio a metterlo dove non tieni la mano.
 
 ## Tesoro Totale Stanza
 
@@ -297,3 +328,5 @@ Le Vedove sono aggressive — attaccano subito in mischia.
 |-------|------------|
 | 4 PG | 3291 |
 | 5 PG | 2633 |
+
+[cast|blank]

@@ -63,6 +63,8 @@ Se si avvicinano alle uova
 
 ### Uova di Ragno — Descrizione
 
+[cast|Immagini/Uova/Uova.png|Uova di ragno schiuse]
+
 > [!Leggere]
 > Vi avvicinate al tavolo. Quelle sfere biancastre — gusci. Uova. Schiuse da tempo.
 > Un movimento.
@@ -148,3 +150,5 @@ Un appunto a margine, grafia diversa:
 Diviso per 3 PG = **~862 PX a testa**
 Diviso per 4 PG = **~646 PX a testa**
 Diviso per 5 PG = **~517 PX a testa**
+
+[cast|blank]

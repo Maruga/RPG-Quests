@@ -2,6 +2,8 @@
 
 ### Descrizione — Caduta dalle Scale
 
+[cast|Immagini/Stanze/Cripta.png|La Cripta — risveglio dei non-morti]
+
 > [!Leggere]
 > Vi rialzate. Una sala lunga. Soffitto a volta. Aria ferma, secca, antica.
 > Cinque sarcofagi di pietra lungo le pareti. Tre di fronte e due sul lato. Coperti di polvere. Incisioni sbiadite — simboli militari, stemmi dimenticati.
@@ -251,3 +253,29 @@ _Pausa._
 Diviso per 3 PG = **~1060 PX a testa**
 Diviso per 4 PG = **~795 PX a testa**
 Diviso per 5 PG = **~636 PX a testa**
+
+## Uovo dello Smeraldo — Sul Pavimento della Cripta
+
+### Posizione
+A terra vicino al sarcofago centrale (o tra i detriti dei coperchi rotti, a discrezione del DM). Si nota dopo il combattimento, quando i PG perquisiscono la stanza.
+
+### Descrizione — Da Leggere (quando lo trovano):
+
+[cast|Immagini/Uova/Uovo_Smeraldo_Cripta.png|Un uovo grigio tra le ossa]
+
+> [!Leggere]
+> Tra la polvere e i detriti, qualcosa che non è osso né pietra. Un uovo.
+> Grigio, opaco, grande come un pugno. Liscio. Pesante nella mano.
+> Sulla superficie, incise con tratto sottile, delle parole:
+> *"Tutto ciò che muore torna da me. Restituiscimi ciò che mi è stato tolto."*
+> L'uovo non si rompe al colpo, non si apre con le mani. Aspetta.
+
+### Nota per il DM — Apertura
+
+**Azione corretta:** **seppellire l'uovo nella terra** o premerlo contro un pavimento di terra/pietra coprendolo con entrambe le mani. Va bene qualsiasi terra vera — quella della cripta è secca ma funziona, oppure la terra vicino alla pianta nella Stanza del Mago.
+
+Se eseguita correttamente, il guscio si spacca dall'interno e rivela lo **Smeraldo** (terra).
+
+**Trappola mentale:** i PG pensano di doverlo rompere con la forza. L'iscrizione ("restituiscimi") suggerisce invece di ridarlo alla terra.
+
+[cast|blank]

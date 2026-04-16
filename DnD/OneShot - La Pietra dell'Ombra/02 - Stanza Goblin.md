@@ -2,6 +2,8 @@
 
 **SCENA — Da leggere ai giocatori**
 
+[cast|Immagini/SotterraneiCastello.png|La sala del massacro goblin]
+
 > [!info]
 > Correte lungo il corridoio. I rumori si fanno più forti: ringhi, grida, il clangore del metallo.
 > Sbucate in una grande sala con il pavimento a lastre di pietra grigia. Torce alle pareti illuminano la scena.
@@ -242,4 +244,5 @@ Ora attende solo due cose: essere toccata e ricaricarsi.
 
 Il primo a portarla con sé dopo tutto questo tempo completerà il ciclo.
 
+[cast|blank]
 

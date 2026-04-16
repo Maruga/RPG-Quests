@@ -1,5 +1,7 @@
 ![[Mappa.png]]
 
+[cast|Immagini/Mappa.png|Il viaggio di ritorno]
+
 Dalla città più piccola dove partono i giocatori, ci sono due strade possibili strade:
 1. La più veloce che passa in mezzo alla foresta, impiegano circa 3 giorni
 2. Usando la strada a parte ultimo pezzo circa 5 giorni.
@@ -145,6 +147,8 @@ Importante: è un incontro che deve dare idea di essere in un combattimento vero
 
 ## Testo da leggere — Inizio
 
+[cast|Immagini/MappaAccampamentoForesta.png|Accampamento notturno nella foresta]
+
 > [!info]
 > Notte. Il fuoco scoppietta, le braci scaldano l'aria.
 > Odore di legna bruciata e resina. I tuoi compagni russano. Un gufo in lontananza. Grilli nel sottobosco.
@@ -279,3 +283,5 @@ Check Morale: 2d6, Goblin (Morale 7) → tiri 2d6 → esce 8 → fuggono
 | Bugbear Capo | 125 |
 | Tesoro | 155 |
 | **Totale** | **320 PX** |
+
+[cast|blank]

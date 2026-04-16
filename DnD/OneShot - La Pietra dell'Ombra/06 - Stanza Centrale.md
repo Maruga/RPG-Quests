@@ -3,6 +3,8 @@
 
 ### Descrizione — Entrata dalla Grata
 
+[cast|Immagini/Stanze/BotolaPerStanzaCentrale.png|Vista dalla botola — scendendo]
+
 > [!Leggere]
 > {Se caduto} Ti rialzi. La polvere si posa lentamente.
 > 
@@ -15,6 +17,8 @@
 > A sud, un'altra porta. Più semplice. Decorazioni sbiadite. Chiusa.
 > Lungo le pareti, casse di legno. Alcune aperte, altre chiuse. Ragnatele. Polvere.
 > A terra, vicino ad un statua, una tavoletta di metallo. Qualcosa è inciso sopra.
+
+[cast|Immagini/Stanze/StanzaCentrale.png|Stanza Centrale — panoramica]
 
 ### Contenuto Casse
 
@@ -118,3 +122,5 @@
 Diviso per 3 PG = **~72 PX a testa**
 Diviso per 4 PG = **~54 PX a testa**
 Diviso per 5 PG = **~43 PX a testa**
+
+[cast|blank]

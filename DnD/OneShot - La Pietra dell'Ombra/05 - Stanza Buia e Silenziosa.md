@@ -10,6 +10,8 @@ Inizio del dungeon nella casa del mago.
 
 ### Da leggere:
 
+[cast|blank]
+
 > [!NOTE]
 > State {mangiando, camminado verso, incontrando, ...}. {Esempio locanda} Il boccale è freddo in mano. La carne è buona. Uno di voi sta parlando.
 > Poi — nulla.
@@ -59,6 +61,8 @@ PG cammina sulla grata → TS Paralisi o cade.
 Il peso della pedana, cadendo sulla pedana sotto, disattiva l'incantesimo Silenzio nella stanza sopra. Voluto perché quando il carceriere si avvicina doveva poter parlare. Si riattiva lasciando la pedana, in questo caso rimuovendo anche la grata.
 
 ### Descrizione — Caduta
+
+[cast|Immagini/Stanze/BotolaPerStanzaCentrale.png|La caduta dalla grata]
 
 > [!Leggere]
 > Il pavimento cede. Una grata. Cadi nel vuoto.
@@ -155,4 +159,30 @@ Se il PG avanza
 ```
 Se il giocatore cade: Tirare 1d6 se 1 o 2 la torcia si spegne e cade lontano dal Giocatore
 ```
+
+## Uovo dell'Ametista — Nella Cella
+
+### Posizione
+Sul pavimento della cella (stanza buia), in un angolo. Si trova a tastoni muovendosi nella cella, oppure dopo che il silenzio viene rotto cadendo sulla pedana (e ci si può vedere con le torce di chi è sopra/sotto).
+
+### Descrizione — Da Leggere (quando lo trovano):
+
+[cast|Immagini/Uova/Uovo_Ametista_StanzaBuia.png|Un uovo grigio nella cella]
+
+> [!Leggere]
+> Le vostre dita incontrano qualcosa sul pavimento. Liscio. Tiepido. Grande come un pugno.
+> Un uovo. Grigio, opaco, perfettamente liscio. Anonimo.
+> Sulla superficie, incise con tratto sottile, delle parole:
+> *"Non sono nel silenzio. Sono il silenzio. Dammi ciò che hai tolto a tutto il resto."*
+> L'uovo non si rompe, non si apre. Aspetta.
+
+### Nota per il DM — Apertura
+
+**Azione corretta:** chi tiene l'uovo (e tutto il gruppo intorno) deve restare in **silenzio assoluto per 30 secondi reali** — nessuna parola, nessun rumore intenzionale, nessun movimento brusco. Al termine l'uovo si incrina da solo e rivela l'**Ametista** (vuoto).
+
+Se qualcuno parla, si muove rumorosamente o batte qualcosa, il conteggio riparte da zero. Basta che un giocatore rompa il silenzio per ricominciare. Non serve che l'uovo stesso stia in un luogo silenzioso: serve silenzio del gruppo.
+
+**Trappola mentale:** i PG cercano parole, gesti, incantesimi. La risposta è non fare niente.
+
+[cast|blank]
 

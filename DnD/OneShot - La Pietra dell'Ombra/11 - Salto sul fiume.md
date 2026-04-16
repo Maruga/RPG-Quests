@@ -2,6 +2,8 @@
 
 ### Descrizione
 
+[cast|Immagini/Stanze/UltimaStanzaUscita.png|La fossa dei tentacoli]
+
 > [!Leggere]
 > Scendete le scale. L'aria cambia. Umida. Salmastra.
 > Poi la vedete. Luce. Luce del giorno. Dall'altra parte della stanza/caverna.
@@ -281,5 +283,5 @@ Cambiano solo taglia.
 
 ### Fine Sessione
 
-
+[cast|blank]
 

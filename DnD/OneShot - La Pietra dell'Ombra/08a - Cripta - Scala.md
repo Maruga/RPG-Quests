@@ -8,6 +8,8 @@
 
 ### Descrizione:
 
+[cast|Immagini/Stanze/ScalePerLaCripta.png|Scale verso la Cripta]
+
 > [!Leggere]
 > Oltre la porta socchiusa, scale di pietra che scendono nel buio.
 > L'aria cambia subito. Fredda. Ferma. Odore di chiuso, di tomba, di qualcosa che non respira da molto tempo.
@@ -89,5 +91,7 @@ Se il giocatore cade: Tirare 1d6 se 1 o 2 la torcia si spegne e cade lontano dal
 Diviso per 3 PG = **~200 PX a testa**
 Diviso per 4 PG = **~150 PX a testa**
 Diviso per 5 PG = **~120 PX a testa**
+
+[cast|blank]
 
 [[08b - Cripta - Scheletri]]

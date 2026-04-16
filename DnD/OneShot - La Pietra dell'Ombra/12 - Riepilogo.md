@@ -1,3 +1,5 @@
+[cast|Immagini/Copertina.png|La Pietra dell'Ombra — Fine]
+
 ## Lista Tesoro — Solo Oggetti di Valore
 
 ### Oggetti Magici
@@ -153,3 +155,5 @@
 | 5 PG | 240 cn | 12 kg | Leggero |
 
 **Nota:** Questo è solo il tesoro. Aggiungere equipaggiamento personale (armi, armatura, zaino) porta a **Carico Medio** per la maggior parte dei PG.
+
+[cast|blank]
