@@ -214,6 +214,8 @@ In fondo al baule massiccio, tra le altre cose. Si trova automaticamente quando 
 > *"Sono ovunque e non mi vedi. Sono in te adesso, mentre leggi. Donami ciò che già mi appartiene."*
 > L'uovo non si rompe, non si apre. Aspetta.
 
+[cast|"Sono ovunque e non mi vedi. Sono in te adesso, mentre leggi. Donami ciò che già mi appartiene."]
+
 ### Nota per il DM — Apertura
 
 **Azione corretta:** **soffiare sull'uovo** un respiro lungo, diretto, controllato. Un soffio, non un alito casuale. Basta un respiro singolo fatto con intenzione.

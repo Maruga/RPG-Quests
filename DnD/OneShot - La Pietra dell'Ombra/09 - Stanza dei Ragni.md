@@ -293,6 +293,8 @@ Appoggiato sull'altare di pietra insieme agli altri tesori (boccette, pergamene,
 > *"Sono nato dove tu non osi tenere la mano. Portami là."*
 > L'uovo non si rompe, non si apre. Aspetta.
 
+[cast|"Sono nato dove tu non osi tenere la mano. Portami là."]
+
 ### Nota per il DM — Apertura
 
 **Azione corretta:** tenere l'uovo **sopra una fiamma** (torcia, candela, fuoco, olio acceso) finché non si incrina. Serve fiamma vera, non calore generico. Basta una torcia tenuta sotto l'uovo per qualche secondo.

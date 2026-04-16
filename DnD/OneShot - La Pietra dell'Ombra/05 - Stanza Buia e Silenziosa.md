@@ -176,6 +176,8 @@ Sul pavimento della cella (stanza buia), in un angolo. Si trova a tastoni muoven
 > *"Non sono nel silenzio. Sono il silenzio. Dammi ciò che hai tolto a tutto il resto."*
 > L'uovo non si rompe, non si apre. Aspetta.
 
+[cast|"Non sono nel silenzio. Sono il silenzio. Dammi ciò che hai tolto a tutto il resto."]
+
 ### Nota per il DM — Apertura
 
 **Azione corretta:** chi tiene l'uovo (e tutto il gruppo intorno) deve restare in **silenzio assoluto per 30 secondi reali** — nessuna parola, nessun rumore intenzionale, nessun movimento brusco. Al termine l'uovo si incrina da solo e rivela l'**Ametista** (vuoto).

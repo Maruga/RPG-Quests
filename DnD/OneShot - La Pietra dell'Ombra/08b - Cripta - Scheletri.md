@@ -270,6 +270,8 @@ A terra vicino al sarcofago centrale (o tra i detriti dei coperchi rotti, a disc
 > *"Tutto ciò che muore torna da me. Restituiscimi ciò che mi è stato tolto."*
 > L'uovo non si rompe al colpo, non si apre con le mani. Aspetta.
 
+[cast|"Tutto ciò che muore torna da me. Restituiscimi ciò che mi è stato tolto."]
+
 ### Nota per il DM — Apertura
 
 **Azione corretta:** **seppellire l'uovo nella terra** o premerlo contro un pavimento di terra/pietra coprendolo con entrambe le mani. Va bene qualsiasi terra vera — quella della cripta è secca ma funziona, oppure la terra vicino alla pianta nella Stanza del Mago.

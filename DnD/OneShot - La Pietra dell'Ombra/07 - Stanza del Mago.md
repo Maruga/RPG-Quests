@@ -141,6 +141,8 @@ Nulla. Polvere.
 > *"L'acqua mi conosce. Le mani no. Affidami a chi già mi appartiene, poi allontanati."*
 > L'uovo è tiepido al tatto. Non si rompe, non si apre. Aspetta.
 
+[cast|"L'acqua mi conosce. Le mani no. Affidami a chi già mi appartiene, poi allontanati."]
+
 #### Nota per il DM — Uovo Zaffiro
 
 **Azione corretta:** immergere l'uovo nel bacile pieno di acqua fredda E lasciarlo andare. Due condizioni insieme: acqua fredda + non tenerlo. Se lo tengono in mano nell'acqua, non succede nulla. Se lo lasciano senza acqua, non succede nulla. Solo insieme funziona.
