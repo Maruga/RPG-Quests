@@ -11,14 +11,12 @@
             "id": "2f72c9619aa3ada5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/Version2/01 - Il Banchetto.md",
-                "mode": "source",
-                "source": false
+                "file": "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Zaffiro-Blu-Ghiaccio.png"
               },
-              "icon": "lucide-file",
-              "title": "01 - Il Banchetto"
+              "icon": "lucide-image",
+              "title": "Zaffiro-Blu-Ghiaccio"
             }
           }
         ]
@@ -225,19 +223,20 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/ChatGPT Image 16 apr 2026, 16_54_07.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/ChatGPT Image 16 apr 2026, 16_54_56.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/ChatGPT Image 16 apr 2026, 17_07_38.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/ChatGPT Image 16 apr 2026, 17_08_29.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/PiedistalloMarmoVuoto.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/PiedistalloMarmoScritte.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamene02.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Pergamena.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Version2/Immagini/Locanda.png",
-    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Smeraldo.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Ametista-Viola-Vuoto.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Diamante-Trasparente-Aria.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Smeraldo-Verde-Terra.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Rubino-Rosso-Fuoco.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Diamante.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Ametista.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Zaffiro-Blu-Ghiaccio.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Rubino.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Smeraldo.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Zaffiro.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Uova.png",
+    "DnD/OneShot - La Pietra dell'Ombra/Version2/01 - Il Banchetto.md",
     "Varie/Spiriti Guardiani/PG.md",
     "Varie/Spiriti Guardiani/Spiriti.md",
     "Varie/Spiriti Guardiani/Immagini/Tasselli",
@@ -271,7 +270,6 @@
     "Investigare/Avventura Ultima Lezione/Storia Completa.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/README.md",
-    "Investigare/Avventura Ultima Lezione/png/12_Tanaka_Shuichi.md",
-    "Investigare/png/Taniguchi_Kenji_Commissario.md"
+    "Investigare/Avventura Ultima Lezione/png/12_Tanaka_Shuichi.md"
   ]
 }
