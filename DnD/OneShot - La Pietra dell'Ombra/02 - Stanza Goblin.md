@@ -143,7 +143,7 @@ Dopo il combattimento, quando i PG esplorano la stanza o cercano tesori.
 
 > [!NOTE]
 > Mentre perquisite la stanza, qualcosa attira il vostro sguardo.
-> In alto sulla parete destra. Una pietra. Diversa dalle altre.
+> In alto sulla parete sinistra. Una pietra. Diversa dalle altre.
 > È nera. Nero opaco con striature verdi e viola. Non riflette la luce delle torce. La assorbe.
 > Grande come un pugno. Liscia. Perfettamente ovale. Sembra... sbagliata. Come se non dovesse essere lì. Come se fosse stata messa dopo, incastonata nella roccia grezza.
 > La fissate. Per un istante, vi sembra che pulsi. Un battito. Lento.
@@ -190,7 +190,7 @@ Dopo il combattimento, quando i PG esplorano la stanza o cercano tesori.
 > Guarda i compagni morti.
 > *"Ora... immagino di più per chi è rimasto."*
 
-**SE NESSUNA LA PRENDE DEI PG, LA PRENDE IL PNG E LA SERA ANDRÀ ALLA LOCANDE PER RINGRAZZAIARLI, LI SCATTA IL TELETRASPORTO.**
+**SE NESSUN PG LA PRENDE, LA PRENDE IL PNG E LA SERA ANDRÀ ALLA LOCANDA PER RINGRAZIARLI: GLI SCATTA IL TELETRASPORTO.**
 
 
 ## Note per il Master

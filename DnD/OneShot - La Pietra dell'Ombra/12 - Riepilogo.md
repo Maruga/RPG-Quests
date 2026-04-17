@@ -47,7 +47,7 @@
 
 | Oggetto | Valore | Peso (cn) | Peso (kg) |
 |---------|--------|-----------|-----------|
-| Pozione Cura Ferite Leggere (×3) | 150 mo | 30 | 1,5 |
+| Pozione Cura Ferite Leggere (×4) | 200 mo | 40 | 2,0 |
 | Pozione Cura Ferite Gravi | 150 mo | 10 | 0,5 |
 | Pozione Invisibilità (×2) | 800 mo | 20 | 1,0 |
 | Pozione Lettura Linguaggi | 200 mo | 10 | 0,5 |

@@ -16,7 +16,7 @@
 > 
 > A sud, un'altra porta. Più semplice. Decorazioni sbiadite. Chiusa.
 > Lungo le pareti, casse di legno. Alcune aperte, altre chiuse. Ragnatele. Polvere.
-> A terra, vicino ad un statua, una tavoletta di metallo. Qualcosa è inciso sopra.
+> A terra, vicino a una statua, una tavoletta di metallo. Qualcosa è inciso sopra.
 
 [cast|Immagini/Stanze/StanzaCentrale.png|Stanza Centrale — panoramica]
 
@@ -101,7 +101,7 @@
 ### Tavoletta di Metallo
 
 > [!Leggere]
-> A terra, vicino ad un stauta. Una tavoletta. Metallo scuro. Rame, forse. O bronzo. La ruggine la divora ai bordi. Ti chini. Lettere incise. Alcune consumate, altre ancora leggibili. 
+> A terra, vicino a una statua. Una tavoletta. Metallo scuro. Rame, forse. O bronzo. La ruggine la divora ai bordi. Ti chini. Lettere incise. Alcune consumate, altre ancora leggibili. 
 > _"Ciò che pensi di conoscere potrebbe trasformarsi sotto i tuoi piedi."_ 
 
 #### Nota per il DM:

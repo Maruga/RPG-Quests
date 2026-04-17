@@ -38,7 +38,7 @@
 ### **Se individuata:**
 
 > [!Leggere]
-> > Guardi meglio. I gradini non sono fissati. Poggiano su cardini nascosti. Le scanalature sui muri — guide. Queste scale possono inclinarsi.
+> Guardi meglio. I gradini non sono fissati. Poggiano su cardini nascosti. Le scanalature sui muri — guide. Queste scale possono inclinarsi.
 
 ### Disinnescare
 

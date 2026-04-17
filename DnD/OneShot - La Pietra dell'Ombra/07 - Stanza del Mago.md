@@ -16,7 +16,7 @@ Porta inferiore chiusa e rinforzata anche magicamente. Se attivata la trappola c
 > Al centro, un grande tappeto. Un tempo splendido — motivi arcani intrecciati. Ora sporco, logoro, mangiato dal tempo.
 > Un tavolo di legno scuro domina la stanza. Pergamene ammucchiate. Boccette d'inchiostro secco. Un piedistallo di marmo bianco con cinque incavi. Un foglio di pergamena piegato sotto un fermacarte di bronzo. Libri aperti. Qualcuno studiava qui.
 > Accanto, un tavolo più piccolo. Vuoto. Polveroso.
-> Lungo la stanza, tre librerie. Piene. Ampolle colorate nella prima. Pergamene arrotolate nella seconda. Libri rilegati in pelle nella terza.
+> Lungo la stanza, tre librerie. Piene. Ampolle colorate nella prima — sullo scaffale in basso, un bacile di pietra vuoto. Pergamene arrotolate nella seconda. Libri rilegati in pelle nella terza.
 > Nell'angolo in basso, una pianta è sbucata dal pavimento. Foglie pallide. Ragnatele ovunque intorno. Vecchie. Abbandonate. Attorno alla base, un po' di terra scura accumulata sul pavimento.
 > Sul tavolo — un piedistallo di marmo bianco. Cinque incavi in fila. Vuoti.
 
@@ -86,6 +86,9 @@ Nulla. Polvere.
 
 ### Contenuto — Libreria 1 (Pozioni e Ampolle)
 
+> [!Leggere]
+> Ti avvicini alla prima libreria. Scaffali alti, polverosi, pieni di ampolle di vetro di ogni colore. Sullo scaffale in basso, un **bacile di pietra**, liscio, vuoto. Accanto, tre boccette d'acqua sigillate con tappo di cera — l'acqua dentro è limpida, fresca al tatto attraverso il vetro.
+
 | Oggetto                                   | Quantità | Effetto/Valore                         |
 | ----------------------------------------- | -------- | -------------------------------------- |
 | Pozione Cura Ferite Leggere               | 2        | 2d4+2 HP                               |
@@ -154,7 +157,7 @@ Se eseguita correttamente, il guscio si incrina dall'interno e rivela lo **Zaffi
 
 #### Se Spostano il Tappeto:
 
-> [!Leggeree]
+> [!Leggere]
 > Sollevi il tappeto.
 > Ragni. Decine. Centinaia forse. Piccoli, neri, veloci.
 > Scappano. In ogni direzione. Verso le crepe nei muri, sotto le librerie, negli angoli bui.
@@ -173,7 +176,7 @@ Le cinque gemme NON si trovano in questa stanza. Sono nascoste dentro **cinque u
 | ------------ | -------- | -------- | ------------------------------------ | ------------------------------------------------------- |
 | **Ametista** | Viola    | Vuoto    | Stanza Buia e Silenziosa             | Tenerlo in silenzio assoluto (30 secondi reali)         |
 | **Rubino**   | Rosso    | Fuoco    | Stanza dei Ragni — sull'altare       | Tenerlo sopra una fiamma                                |
-| **Smeraldo** | Verde    | Terra    | Cripta degli Scheletri — a terra     | Seppellirlo nella terra (basta qualsiasi terra — c'è anche quella vicino alla pianta qui) |
+| **Smeraldo** | Verde    | Terra    | Cripta degli Scheletri — a terra (dopo il combattimento, tra i detriti dei coperchi) | Seppellirlo nella terra (basta qualsiasi terra — c'è anche quella vicino alla pianta qui) |
 | **Diamante** | Trasp.   | Aria     | Baule in fondo alle Scale d'uscita   | Soffiargli sopra un respiro lungo e diretto             |
 | **Zaffiro**  | Blu      | Ghiaccio | Pianta della Stanza del Mago         | Immergerlo nel bacile con acqua fredda E lasciarlo andare |
 

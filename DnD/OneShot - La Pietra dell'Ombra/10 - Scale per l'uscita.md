@@ -11,7 +11,9 @@
 > Scendete. Sulla sinistra, una parete di inferriate arrugginite e vetro sporco. Oltre, una stanza. Non potete entrarci da qui, ma vedete qualcosa.
 > Un tavolo di pietra scura. Simboli incisi sulla superficie. Un cerchio rituale. Sopra: boccette, libri impilati, un pugnale dalla lama nera. E appoggiato alla parete — un bastone. Legno scuro, intarsi d'argento. Sembra prezioso.
 > Continuate a scendere.
-> In fondo, un pianerottolo. Due porte si fronteggiano. Una a sinistra, una a destra.
+> In fondo, un pianerottolo. Due porte si fronteggiano.
+> A **sinistra** un portone rinforzato — pesante, metallico, nessuna maniglia visibile. Conduce alla Stanza dei Ragni (quella intravista dalle inferriate lungo le scale).
+> A **destra** un portone di legno scuro rinforzato, serratura elaborata e catenaccio interno. Conduce verso l'uscita dal dungeon.
 > Di fronte a voi, contro la parete — un baule. Massiccio. Ferro e acciaio. Una serratura grossa come un pugno.
 > Non sembra facile da aprire.
 
@@ -193,7 +195,7 @@ Nicchia nascosta alla base del muro, tra due inferiate.
 | Gemma grezza (topazio)   | 100 mo                      |
 | Anello sigillo nobile    | 75 mo                       |
 | Pergamena Palla di Fuoco | 400 mo                      |
-| Chiave d'argento         | Apre stanza rituale [ragni] |
+| Chiave d'argento         | Apre il portone rinforzato verso la Stanza dei Ragni (quella vista dalle inferriate lungo le scale, con l'altare) — alternativa al meccanismo nascosto |
 | Anello Magico            | Casuale                     |
 | Uovo del Diamante        | Vedi sotto                  |
 | **Totale**               | **~1005 mo**                |

@@ -39,5 +39,13 @@
 [[11 - Salto sul fiume]]
 [[12 - Riepilogo]]
 
+### Materiale di Supporto
+
+[[Materiale/Uova e Gemme|Uova e Gemme — riepilogo DM]]
+[[Materiale/Sequenza Combattimento|Sequenza Combattimento — cheat sheet]]
+[[Materiale/Oggetti presenti nelle due città|Oggetti acquistabili in città]]
+[[Materiale/Ragnatela Ragni|Ragnatela dei Ragni]]
+[[Materiale/Flusso Dot|Flusso del dungeon]]
+
 
 ![[SchemaAvventura.png]]
