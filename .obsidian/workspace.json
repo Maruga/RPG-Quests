@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DnD/OneShot - La Pietra dell'Ombra/08b - Cripta - Scheletri.md",
+                "file": "Varie/Spiriti Guardiani/Regole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08b - Cripta - Scheletri"
+              "title": "Regole"
             }
           }
         ]
@@ -227,6 +227,10 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Varie/Spiriti Guardiani/Armi.md",
+    "Varie/Spiriti Guardiani/Regole.md",
+    "Varie/Spiriti Guardiani/PG.md",
+    "DnD/OneShot - La Pietra dell'Ombra/08b - Cripta - Scheletri.md",
     "DnD/OneShot - La Pietra dell'Ombra/Materiale/Sequenza Combattimento.md",
     "DnD/OneShot - La Pietra dell'Ombra/Materiale/Uova e Gemme.md",
     "DnD/OneShot - La Pietra dell'Ombra/07 - Stanza del Mago.md",
@@ -244,7 +248,6 @@
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Uova/Zaffiro-Blu-Ghiaccio.png",
     "DnD/OneShot - La Pietra dell'Ombra/Immagini/Stanze",
     "DnD/OneShot - La Pietra dell'Ombra/Version2/01 - Il Banchetto.md",
-    "Varie/Spiriti Guardiani/PG.md",
     "Varie/Spiriti Guardiani/Spiriti.md",
     "Varie/Spiriti Guardiani/Immagini/Tasselli",
     "Varie/Spiriti Guardiani/Avventura.md",
@@ -261,9 +264,7 @@
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Varie/Spiriti Guardiani/Mostri.md",
-    "Varie/Spiriti Guardiani/Regole.md",
     "Link Utili.md",
-    "Varie/Spiriti Guardiani/Armi.md",
     "descriionepp.md",
     "Investigare/Avventura Ultima Lezione/handout/_restyle_all.py",
     "Varie/Spiriti Guardiani/Immagini",
@@ -271,7 +272,6 @@
     "Investigare/Avventura Ultima Lezione/handout/backup/20_Giornale_Nomina_Kuroda.html",
     "Investigare/Avventura Ultima Lezione/handout/backup/19_Giornale_Scandalo.html",
     "Investigare/Avventura Ultima Lezione/handout/backup/18_Giornale_Omicidio.html",
-    "Varie/Spiriti Guardiani/spiriti-guardiani-regolamento.md",
-    "README.md"
+    "Varie/Spiriti Guardiani/spiriti-guardiani-regolamento.md"
   ]
 }
