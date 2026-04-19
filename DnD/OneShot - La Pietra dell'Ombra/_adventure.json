@@ -3,7 +3,7 @@
   "name": "OneShot - La Pietra dell'Ombra",
   "system": "D&D OSE",
   "author": "Maru",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Avventura in stile DnD OSE, esplorazione di un laboratorio di un mago. Con due versioni per enigma della stanza del mago.",
   "players": "3-6",
   "duration": "3 ore",
@@ -11,5 +11,5 @@
   "tags": [],
   "visibility": "public",
   "includeKeys": true,
-  "exportedAt": "2026-04-03"
+  "exportedAt": "2026-04-18"
 }
