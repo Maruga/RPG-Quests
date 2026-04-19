@@ -387,11 +387,19 @@ Ogni PG riceve: +1 punto attributo (dove vuole) + Ki al massimo.
 
 _Il GM descrive ogni arma nella sua forma finale._
 
+> I vostri spiriti non tornano nei vostri corpi. Restano accanto a Tellus. Il Pangolino si acciambella ai suoi piedi, il Fennec si siede sulla sua spalla, la Salamandra si adagia sul palmo della sua mano. Sono a casa. Dopo millenni, sono a casa.
+> 
+> Tellus vi guarda. Non parla, ma capite: _"Tornate sopra. La battaglia non è finita. I miei figli resteranno qui con me per un po' — hanno bisogno di riposare nella luce della Madre. Ma se li chiamerete, verranno."_
+> 
 > Poi un bagliore. Bianco. Caldo. Non fa male — è come il sole dopo un inverno lungo. Non vedete più la sala, non vedete più Tellus, non vedete più i vostri spiriti. Solo luce.
 > 
-> Quando la luce si attenua, siete in piedi. Sulla piattaforma di pietra bianca. La radura. I calderoni sono spenti. È giorno. Il sole del deserto è alto. Le vostre armi sono nelle vostre mani. I vostri spiriti sono tornati — li sentite dentro, non accanto. Siete diversi. Più forti. Più pesanti. Più veri.
+> Quando la luce si attenua, siete in piedi. Sulla piattaforma di pietra bianca. La radura. I calderoni sono spenti. È giorno. Il sole del deserto è alto. Le vostre armi sono nelle vostre mani. I vostri spiriti non sono dentro di voi — li sentite lontani, anche se dovrebbero essere vicini. Come una voce che c'era e ora è fuori portata.
 > 
 > Poi sentite il rumore. Dalla direzione delle fosse. Un rumore che conoscete — l'avete sentito quella notte in prigione. Ma cento volte più forte.
+
+**Spiriti in silenzio:**
+
+Gli spiriti sono con Tellus. L'unica cosa che cambia: la comunicazione via Telegram è **sospesa** — l'AI non risponde più. Se un PG tenta di parlare allo spirito, sente solo un'eco lontana, come se fosse in un'altra stanza anche quando dovrebbe essere vicino. Tutto il resto (passivo, attivo, Forma 3, bonus) resta invariato.
 
 ---
 
@@ -489,4 +497,110 @@ Se l'En è abbastanza alto, gli spiriti mandano un ultimo messaggio via Telegram
 - I mostri non si coordinano perfettamente ma si completano: lo Scarabeo sfonda, il Ragno intrappola, il Millepiedi distrugge
 - I soldati della città tengono occupati i mostri piccoli ma vengono spazzati via dai grandi — i PG vedono soldati lanciati in aria, schiacciati, avvolti nella seta
 
-**Questa è la scena in cui le Fusioni degli spiriti possono accadere.** Se un PG è in difficoltà, lo spirito può fondersi con lui — caratteristica dello spirito a 9, Ki al massimo, effetto speciale, per un'intera scena. Dopo l'uso lo spirito entra in silenzio profondo fino al riposo successivo: niente passivo, niente attivo, niente comunicazione via Telegram.
+---
+
+**Richiamo degli spiriti:**
+
+Gli spiriti sono con Tellus. Un PG in difficoltà può **richiamare il proprio spirito**: basta chiamarlo per nome, ad alta voce o nel pensiero.
+
+- Il richiamo è **gratis** — non costa Ki, non costa azione
+- Lo spirito arriva **immediatamente** e **resta** con il PG fino alla fine della battaglia (e oltre — non tornerà più da Tellus)
+- Una volta richiamato, la comunicazione via Telegram torna attiva e l'attivo è di nuovo usabile
+- Ogni PG può richiamare solo il proprio spirito
+
+**Fusione in battaglia finale:**
+
+Una volta richiamato, lo spirito può **fondersi** con il PG come da regola (1/sessione, 3 round, caratteristica spirito a 9, Ki al massimo). Dopo la fusione lo spirito resta in silenzio per il resto della scena, ma **non torna da Tellus** — resta comunque accanto al PG.
+
+Se la fusione è già avvenuta prima del richiamo (uno spirito già fuso e poi tornato da Tellus), il richiamo ne attiva una nuova fusione — la Madre li ha ricaricati.
+
+---
+
+## EPILOGO — La Dea Risorta
+
+_Da leggere al tavolo (dopo la sconfitta dell'ultimo boss):_
+
+> L'ultimo colpo cade. Il millepiedi si spezza in due, si contorce, poi si ferma. Un ultimo sibilo, poi il silenzio. Non un silenzio vuoto — un silenzio pieno. Come se il mondo avesse smesso di trattenere il fiato.
+> 
+> Poi il terreno trema. Non di paura. Di gioia.
+> 
+> Dalla direzione della piazza del sacrificio — quella dove vi hanno condannati, dove i calderoni bruciavano fuoco blu — si alza un bagliore. La piattaforma di marmo bianco con i sei animali incisi comincia a cambiare. Gli animali si dissolvono. Il marmo si alza, si scolpisce da solo. Emerge un volto di donna — lo stesso volto che avete visto sotto terra. Tellus. Il volto sostituisce tutto ciò che era sulla piazza: i calderoni, le incisioni, le colonne attorno.
+> 
+> Dalla base della statua partono radici di luce. Si estendono in ogni direzione: attraversano la piazza, scendono nel terreno, salgono lungo le mura, si spingono fuori fino alle fosse, oltre le fosse, nel deserto. Sei radici più luminose delle altre — una per ognuno di voi — si dirigono verso dove siete.
+> 
+> L'aura azzurra esplode. Più ampia, più forte, più profonda di quanto sia mai stata.
+> 
+> Alle fosse, i mostri che restano si fermano. Un ragno sbanda, un altro crolla. Uno scorpione si dissolve in sabbia prima ancora di toccare la fossa. L'aura li raggiunge e li spegne, come una candela sotto l'acqua. Da oggi, nessun mostro arriverà più vicino di così.
+> 
+> La battaglia è finita.
+
+---
+
+### I sacerdoti
+
+> In piazza, sei sacerdoti con le maschere di bronzo — un animale ciascuno — si trovano davanti alla nuova statua. Uno di loro, quello con la maschera del pangolino, si toglie la maschera lentamente. La guarda come se la vedesse per la prima volta. La lascia cadere a terra.
+> 
+> Un altro fa lo stesso. Poi un altro. Tre delle sei maschere cadono sulla pietra — fennec, medusa, colibrì. Quei sacerdoti si allontanano dalla piazza in silenzio, come uomini che hanno capito di aver servito una menzogna per tutta la vita.
+> 
+> Gli altri tre — salamandra, pangolino, drago — restano. Si inginocchiano davanti alla statua di Tellus. Non pregano con formule di stato. Pregano con le mani aperte, come bambini davanti a una madre ritrovata. Uno di loro piange. "È sempre stata qui," ripete. "È sempre stata qui e non lo sapevamo."
+
+---
+
+### Il ritorno in città
+
+> Camminate verso la piazza. La gente si apre davanti a voi. Nessuno osa toccarvi. Qualcuno piange guardandovi. Qualcuno si inginocchia. Qualcuno ride perché non sa cos'altro fare.
+> 
+> Una vecchia cerca di darvi del pane — come quando vi hanno portati al sacrificio. Ma questa volta non vi butta il tozzo. Ve lo porge con le mani tremanti.
+> 
+> Il bambino che vi aveva gridato "ammazzateli tutti!" è davanti a voi. Non vi grida più niente. Vi guarda. Poi tende la mano. Non sa perché lo fa. Lo fa.
+> 
+> Arrivate alla piazza. La statua di Tellus è lì. Sotto i vostri piedi, le radici di luce brillano ancora, pulsano piano, come un respiro.
+
+---
+
+### La voce della Madre
+
+_Solo i PG la sentono — nella testa, piena e calda:_
+
+> _"Figli miei — perché ora siete figli miei — avete aperto la porta. Avete portato i miei sei a casa. Il male che premeva contro la mia luce, oggi, è sconfitto."_
+> 
+> _"Questa città vi ha rifiutati. Vi ha buttati nel buio come scarti. Voi l'avete salvata comunque. Questo è il dono che fate al mondo. Un dono che il mondo non meritava e che ora, forse, imparerà a meritare."_
+> 
+> _"I miei sei non torneranno più da me. Sono vostri. E voi siete loro. Ciò che avete costruito sotto terra — l'En, il legame, la fiducia — resta. Per sempre."_
+> 
+> _"Non siete più reietti. Non siete più condannati. Siete i miei Cavalieri. Camminate in pace."_
+
+> Gli spiriti sono accanto a voi. Visibili per un istante — come la prima notte alle Terme. Poi entrano. Non come un respiro profondo che non avete deciso di fare. Entrano come qualcuno che torna a casa.
+
+---
+
+### Titoli di coda — I Sei
+
+_Il GM descrive, uno alla volta, una piccola scena finale per ogni PG. Richiama il Kage di ciascuno — non lo risolve, ma lo tocca._
+
+| PG | Scena finale |
+|---|---|
+| **Il Barbone — Titus** | Un cittadino gli porge una brocca di vino. Titus la prende. La guarda a lungo. Poi la posa a terra senza bere. Per la prima volta in cinque anni. La Salamandra gli sfrigola piano nel petto. |
+| **Il Ladruncolo — Furco** | Un vecchio soldato gli mette una mano sulla spalla. "Sei dei nostri, ragazzo." Furco non sa rispondere. Non ha mai avuto niente di suo. Ora ha cinque fratelli e una madre di pietra. |
+| **La Truffatrice — Livia** | Una donna le chiede il suo nome. Livia apre la bocca per mentire — è l'istinto. Poi si ferma. Dice il nome vero. Quello che non usava da undici anni. La donna sorride. Il Fennec le drizza le orecchie contento. |
+| **Il Debitore — Faber** | Tra la folla vede un bambino — per un istante pensa sia sua figlia. Non lo è. Ma ora può permettersi di cercarla. Ha le mani di chi costruisce e, di nuovo, gli occhi di chi spera. La Medusa Luna fluttua lenta accanto a lui. |
+| **Il Falsario — Nummus** | Uno dei sacerdoti che hanno gettato la maschera si avvicina a lui. Gli chiede scusa. Non per cosa — per tutto. Nummus non risponde. Annuisce. È abbastanza. Il Pangolino si stringe contro le sue gambe. |
+| **L'Eretico — Vox** | Un altro "matto" della città lo guarda dalla folla. Uno di quelli che nessuno ascolta. Vox lo guarda indietro. Annuisce piano. La voce era vera. Qualcun altro la sentiva. Il Drago di Mare Foglia gli fluttua sopra la testa come un'aureola viva. |
+
+---
+
+### Ultima scena
+
+> Il sole cala sul deserto. La statua di Tellus brilla ancora debolmente. Le radici di luce pulsano piano sotto la città, sotto le fosse, fino al deserto — un battito costante.
+> 
+> Siete in piedi sulla piazza. Nelle vostre mani, le armi. Accanto a voi, i vostri spiriti. Davanti a voi, la città che vi aveva condannati e che ora vi acclama.
+> 
+> Non siete più quelli della cella est.
+> 
+> Non siete più reietti.
+> 
+> Siete **I Sei**. I Cavalieri della Madre.
+
+---
+
+**🜲 FINE 🜲**
