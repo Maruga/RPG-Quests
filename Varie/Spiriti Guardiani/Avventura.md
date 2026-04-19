@@ -478,14 +478,14 @@ _Da leggere al tavolo:_
 
 Se l'En è abbastanza alto, gli spiriti mandano un ultimo messaggio via Telegram prima del combattimento:
 
-|Spirito|Messaggio|
-|---|---|
-|Caesar (Salamandra)|_"Il guscio dello scarabeo è impenetrabile. Ma le zampe no. Colpiscilo di lato."_|
-|Scipio (Fennec)|_"Il ragno arriva da sotto. Sentirai il terreno vibrare prima che emerga. Sii pronto."_|
-|Augustus (Medusa Luna)|_"Il millepiedi è forte in linea retta. Se si arrotola, spostati. Non resistere."_|
-|Aurelian (Colibrì)|_"Tre nemici. Non combatterli tutti insieme. Uno alla volta. Veloce."_|
-|Aurelius (Pangolino)|_"Il ragno è fragile se non può muoversi. Bloccalo e colpiscilo."_|
-|Spartacus (Drago di Mare Foglia)|_"Il ventre del millepiedi è l'unico punto molle. Qualcuno deve andare sotto."_|
+| Spirito                          | Messaggio                                                                               |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Caesar (Salamandra)              | _"Il guscio dello scarabeo è impenetrabile. Ma le zampe no. Colpiscilo di lato."_       |
+| Scipio (Fennec)                  | _"Il ragno arriva da sotto. Sentirai il terreno vibrare prima che emerga. Sii pronto."_ |
+| Augustus (Medusa Luna)           | _"Il millepiedi è forte in linea retta. Se si arrotola, spostati. Non resistere."_      |
+| Aurelian (Colibrì)               | _"Tre nemici. Non combatterli tutti insieme. Uno alla volta. Veloce."_                  |
+| Aurelius (Pangolino)             | _"Il ragno è fragile se non può muoversi. Bloccalo e colpiscilo."_                      |
+| Spartacus (Drago di Mare Foglia) | _"Il ventre del millepiedi è l'unico punto molle. Qualcuno deve andare sotto."_         |
 
 ---
 
