@@ -518,9 +518,9 @@ _Da leggere al tavolo (dopo la sconfitta dell'ultimo boss):_
 > 
 > Poi il terreno trema. Non di paura. Di gioia.
 > 
-> Dalla direzione della piazza del sacrificio — quella dove vi hanno condannati, dove i calderoni bruciavano fuoco blu — si alza un bagliore. La piattaforma di marmo bianco con i sei animali incisi comincia a cambiare. Gli animali si dissolvono. Il marmo si alza, si scolpisce da solo. Emerge un volto di donna — lo stesso volto che avete visto sotto terra. Tellus. Il volto sostituisce tutto ciò che era sulla piazza: i calderoni, le incisioni, le colonne attorno.
+> Dalla direzione della piazza del sacrificio — quella dove vi hanno condannati, dove i calderoni bruciavano fuoco blu — si alza un bagliore. La piattaforma di marmo bianco con i sei animali incisi comincia a cambiare. Gli animali si dissolvono. Il marmo si alza da solo, si piega, si scolpisce — e dove prima c'era la piattaforma ora siede una statua immensa: cinque metri di marmo bianco, una donna sul trono, mani posate sulle ginocchia, capelli lunghi sulle spalle, sguardo sereno di madre. È lei. Lo stesso volto che avete visto sotto terra. Tellus. La statua sostituisce tutto ciò che era sulla piazza: i calderoni, le incisioni, le colonne bruciate.
 > 
-> Dalla base della statua partono radici di luce. Si estendono in ogni direzione: attraversano la piazza, scendono nel terreno, salgono lungo le mura, si spingono fuori fino alle fosse, oltre le fosse, nel deserto. Sei radici più luminose delle altre — una per ognuno di voi — si dirigono verso dove siete.
+> Dalla base del trono partono radici di luce. Si estendono in ogni direzione: attraversano la piazza, scendono nel terreno, salgono lungo le mura, si spingono fuori fino alle fosse, oltre le fosse, nel deserto. Sei radici più luminose delle altre — una per ognuno di voi — si dirigono verso dove siete.
 > 
 > L'aura azzurra esplode. Più ampia, più forte, più profonda di quanto sia mai stata.
 > 
