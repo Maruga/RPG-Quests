@@ -3,7 +3,7 @@
 
 ## Tabella Completa
 
-|Arma|Animale|Condottiero|Caratteristica|Improvvisata (prigione)|Forma 1 (spirito)|Forma 2 (Boss 1)|Forma 3 (Madre)|
+|Arma|Animale|Condottiero|Caratteristica|Improvvisata (prigione)|Forma I (spirito)|Forma II (Boss 1)|Forma III (Madre)|
 |---|---|---|---|---|---|---|---|
 |**Spada + Scudo**|Pangolino|Marco Aurelio — **Aurelius**|Radice (根)|Sbarra di ferro + fondo di barile|Gladio corto + scudo di legno cerchiato|Spatha di bronzo + scutum legionario|**Virtus Imperatoris** + **Clipeus Meditationis**|
 |**Accetta Doppia**|Colibrì|Aureliano — **Aurelian**|Battito (拍)|Due pietre scheggiate legate a bastoni|Due accette di ferro grezza|Due asce da guerra bilanciate|**Geminae Restitutor**|
@@ -14,12 +14,12 @@
 
 ---
 
-## Nomi Forma 3 — Significato
+## Nomi Forma III — Significato
 
 |Arma|Nome Latino|Significato|Riferimento Storico|
 |---|---|---|---|
 |Spada|**Virtus Imperatoris**|La virtù dell'imperatore|La filosofia stoica di Marco Aurelio|
-|Scudo|**Clipeus Meditationis**|Lo scudo della meditazione|I "Pensieri" di Aurelio, scritti di notte|
+|Scudo (spada)|**Clipeus Meditationis**|Lo scudo della meditazione|I "Pensieri" di Aurelio, scritti di notte|
 |Accette|**Geminae Restitutor**|Le gemelle del restauratore|Aureliano era "Restitutor Orbis"|
 |Mazzafrusto|**Flagellum Pacis**|Il flagello della pace|Augusto portò la Pax Romana|
 |Scudo (mazzafrusto)|**Scutum Auctoritas**|Lo scudo dell'autorità|L'auctoritas era il potere personale di Augusto|
@@ -29,137 +29,134 @@
 
 ---
 
-## Evoluzione delle Armi — Dettaglio
+## Regole di Utilizzo
 
-### Spada + Scudo (Pangolino / Aurelius / Radice)
+Ogni arma attraversa **4 forme** durante l'avventura:
 
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Sbarra di ferro + fondo di barile|Ferro arrugginito, legno marcio, puzza di vino|
-|Forma 1|Gladio corto + scudo di legno cerchiato|Lama corta ma affilata, scudo con cerchi di ferro|
-|Forma 2|Spatha di bronzo + scutum legionario|Lama lunga di bronzo lucido, scudo rettangolare con incisione di pangolino|
-|Forma 3|**Virtus Imperatoris** + **Clipeus Meditationis**|Lama bianca come marmo, scudo circolare con aureola dorata, peso perfetto|
+| Forma            | Momento di sblocco                                          |
+| ---------------- | ----------------------------------------------------------- |
+| **Improvvisata** | Inizio avventura — rituale del sacrificio                   |
+| **Forma I**      | Collegamento con lo spirito nelle Terme                     |
+| **Forma II**     | Durante il combattimento con il Boss 1 — Primus (Via Sacra) |
+| **Forma III**    | Attivabile in base alle azioni                              |
 
-### Accetta Doppia (Colibrì / Aurelian / Battito)
+### Attivazione della forma
 
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Due pietre scheggiate legate a bastoni|Selce e corda, si rompono facilmente|
-|Forma 1|Due accette di ferro grezza|Pesanti, sbilanciate, ma taglienti|
-|Forma 2|Due asce da guerra bilanciate|Ferro temprato, impugnatura di cuoio, leggere|
-|Forma 3|**Geminae Restitutor**|Oro e ossidiana, leggerissime, vibrano quando colpiscono come ali|
+Per **usare una forma** (dalla Forma I in poi), il PG deve **attivarla spendendo Ki**. La forma resta attiva per un numero di **round** indicato. Si può usare la forma di livello corrispondete o più bassa in base alla forma raggiunta dall'arma. 
 
-### Mazzafrusto + Scudo (Medusa Luna / Augustus / Flusso)
+| Forma | Costo di attivazione | Durata |
+|:-----:|:--------------------:|:------:|
+| Improvvisata | **gratis** — stato base dell'arma | permanente |
+| Forma I | **1 Ki** | **3 round** |
+| Forma II | **2 Ki** | **3 round** |
+| Forma III | **3 Ki** | **3 round** |
 
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Catena con sasso + coperchio di pentola|Catena arrugginita, sasso irregolare, coperchio ammaccato|
-|Forma 1|Flagello di ferro + scudo rotondo|Catena solida con sfera chiodata, scudo rotondo di legno e ferro|
-|Forma 2|Mazzafrusto a tre code + scudo di bronzo|Tre catene con sfere di bronzo, scudo con rilievo di medusa|
-|Forma 3|**Flagellum Pacis** + **Scutum Auctoritas**|Catene di luce traslucida, scudo di marmo bianco che emana calma|
+**Regole di attivazione:**
 
-### Lancia (Drago di Mare Foglia / Spartacus / Ombra)
-
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Bastone con chiodo|Legno marcio, chiodo piegato|
-|Forma 1|Lancia di legno con punta di ferro|Asta solida, punta grezza ma funzionale|
-|Forma 2|Pilum legionario|Asta di frassino, punta di ferro lungo che si piega dopo l'impatto|
-|Forma 3|**Hasta Libertatis**|Ossidiana nera con fronde dorate che si muovono senza vento, quasi invisibile in penombra|
-
-### Martello da Guerra (Salamandra / Caesar / Scintilla)
-
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Gamba di tavolo con pietre|Legno scheggiato con pietre legate in cima|
-|Forma 1|Mazza chiodata|Ferro grezzo, chiodi sporgenti, pesante|
-|Forma 2|Martello da guerra a una mano|Testa di ferro temprato, impugnatura di cuoio rosso|
-|Forma 3|**Malleus Iacta**|Bronzo incandescente, la testa emana calore, lascia impronte di fuoco dove colpisce|
-
-### Trombone (Fennec / Scipio / Eco)
-
-|Fase|Arma|Aspetto|
-|---|---|---|
-|Improvvisata|Fionda di stracci|Corda e stoffa, lancia sassi|
-|Forma 1|Pistola a pietra focaia grezza|Legno e ferro, spara lenta, imprecisa|
-|Forma 2|Spingarda corta|Canna larga di bronzo, calcio intagliato, più precisa|
-|Forma 3|**Vox Africani**|Oro con incisioni di orecchie e onde sonore, lo sparo non fa rumore ma il bersaglio sente un tuono|
+- Non si possono avere **più forme attive contemporaneamente**
+- Il PG può **disattivare** la forma attiva in qualunque momento (azione libera) per attivarne un'altra, pagando il nuovo costo in Ki
+- **Riattivare la stessa forma** dopo che si è spenta costa di nuovo il suo Ki
 
 
+### Bonus passivi della forma attivata
+
+Quando una forma è attiva, si applicano automaticamente a ogni attacco:
+
+- **TxC** (Tiro per Colpire): modifica il tiro d'attacco
+- **Danno**: modifica il danno inflitto (si somma al danno del margine)
+
+### Abilità speciale della forma attivata
+
+Ogni forma (dalla I in poi) ha un'**abilità speciale** usabile durante i round di forma attiva senza costi Ki aggiuntivi (il costo è già nell'attivazione). Alcuni effetti dell'abilità possono essere più corti (singola azione) o più lunghi dei 3 round di forma (es. _"per tutto il combattimento"_): in quel caso l'effetto persiste come indicato nella scheda, anche dopo che la forma si spegne.
 
 ---
 
-## Bonus per Forma
+## 🗡️ Spada + Scudo
 
-### Tiro per Colpire (uguale per tutte le armi)
+_Pangolino · **Aurelius** (Marco Aurelio) · Radice (根)_
 
-| Improvvisata | Forma I | Forma II | Forma III |
-| :----------: | :-----: | :------: | :-------: |
-|      -1      |    0    |    +1    |    +2     |
-
-### Bonus al Danno
-
-| Arma                   | Improvvisata | Forma I | Forma II | Forma III |
-| ---------------------- | :----------: | :-----: | :------: | :-------: |
-| **Spada + Scudo**      |      -2      |   +1    |    +3    |    +4     |
-| **Accetta Doppia**     |      -2      |   +1    |    +3    |    +4     |
-| **Mazzafrusto + Scudo**|      -2      |   +2    |    +4    |    +5     |
-| **Lancia**             |      -2      |   +2    |    +4    |    +5     |
-| **Martello**           |      -2      |   +3    |    +5    |    +6     |
-| **Trombone**           |      -2      |   +3    |    +5    |    +6     |
-
-Formula: Forma II = base Forma I + 2, Forma III = base Forma I + 3.
+| Forma | Nome | Aspetto | TxC | DMG | Ki | Abilità |
+|---|---|---|:-:|:-:|:-:|---|
+| Improvvisata | Sbarra di ferro + fondo di barile | Ferro arrugginito, legno marcio, puzza di vino | −1 | −2 | — | — |
+| Forma I | Gladio corto + scudo di legno cerchiato | Lama corta affilata, scudo con cerchi di ferro | 0 | +1 | 1 | **Attira i colpi** — i nemici attaccano il PG invece dei compagni per 1 round |
+| Forma II | Spatha di bronzo + scutum legionario | Lama lunga lucida, scudo con incisione di pangolino | +1 | +3 | 2 | **Muro fermo** — riduzione danno +1 al PG per 3 round |
+| Forma III | **Virtus Imperatoris** + **Clipeus Meditationis** | Lama bianca come marmo, scudo circolare con aureola dorata | +2 | +4 | 3 | **Parata totale** — per 3 round il PG non attacca e non subisce danni, i compagni vicini hanno −1 al danno subito |
 
 ---
 
-## Abilità Speciali per Arma
+## 🪓 Accetta Doppia
 
-### Spada + Scudo (Pangolino / Aurelius / Radice)
+_Colibrì · **Aurelian** (Aureliano) · Battito (拍)_
 
-| Forma     | Abilità                                                                    |
-| --------- | -------------------------------------------------------------------------- |
-| Forma I   | Attira i colpi dei nemici                                                  |
-| Forma II  | Riduzione del danno +1                                                     |
-| Forma III | Parata totale (no attacco): nessun danno, compagni -1 al danno subito     |
+| Forma        | Nome                                   | Aspetto                                         | TxC | DMG | Ki  | Abilità                                                                                                                                  |
+| ------------ | -------------------------------------- | ----------------------------------------------- | :-: | :-: | :-: | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Improvvisata | Due pietre scheggiate legate a bastoni | Selce e corda, si rompono facilmente            | −1  | −2  |  —  | —                                                                                                                                        |
+| Forma I      | Due accette di ferro grezzo            | Pesanti, sbilanciate, ma taglienti              |  0  | +1  |  1  | **Doppio bersaglio** — un solo tiro, il danno totale viene diviso a scelta del PG tra due nemici adiacenti +1 Ki di danno per bersaglio. |
+| Forma II     | Due asce da guerra bilanciate          | Ferro temprato, impugnatura di cuoio, leggere   | +1  | +3  |  2  | **Lancio con ritorno** — le accette sono lanciate a distanza e tornano (stesse regole del doppio bersaglio)                              |
+| Forma III    | **Geminae Restitutor**                 | Oro e ossidiana, leggerissime, vibrano come ali | +2  | +4  |  3  | **Rubavita** — se l'attacco infligge danno, il PG recupera un numero di Ki pari al danno inflitto                                        |
 
-### Accetta Doppia (Colibrì / Aurelian / Battito)
+---
 
-| Forma     | Abilità                                                                                              |
-| --------- | ---------------------------------------------------------------------------------------------------- |
-| Forma I   | Doppio bersaglio: un solo tiro, il danno totale viene diviso a scelta del PG tra due nemici adiacenti |
-| Forma II  | Lancia le accette e ritornano (attacco a distanza, stesse regole del doppio bersaglio)                |
-| Forma III | Rubavita: se fa danno, +1 Ki di ritorno                                                              |
+## ⛓️ Mazzafrusto + Scudo
 
-### Mazzafrusto + Scudo (Medusa Luna / Augustus / Flusso)
+_Medusa Luna · **Augustus** (Augusto) · Flusso (流)_
 
-| Forma     | Abilità                                                   |
-| --------- | --------------------------------------------------------- |
-| Forma I   | Rotea mazzafrusto: cura un alleato se successo +1 Ki      |
-| Forma II  | Colpo che atterra il nemico                               |
-| Forma III | Cura tutti gli alleati vicini +1 Ki                       |
+| Forma        | Nome                                        | Aspetto                                                          | TxC | DMG | Ki  | Abilità                                                                                              |
+| ------------ | ------------------------------------------- | ---------------------------------------------------------------- | :-: | :-: | :-: | ---------------------------------------------------------------------------------------------------- |
+| Improvvisata | Catena con sasso + coperchio di pentola     | Catena arrugginita, sasso irregolare, coperchio ammaccato        | −1  | −2  |  —  | —                                                                                                    |
+| Forma I      | Flagello di ferro + scudo rotondo           | Sfera chiodata, scudo di legno e ferro                           |  0  | +2  |  1  | **Rotea mazzafrusto** — cura un alleato vicino di Ki pari ai successi del tiro                       |
+| Forma II     | Mazzafrusto a tre code + scudo di bronzo    | Tre catene con sfere di bronzo, scudo con rilievo di medusa      | +1  | +4  |  2  | **Sbilancia** — il nemico colpito ha −2 alla difesa per 1 round                                      |
+| Forma III    | **Flagellum Pacis** + **Scutum Auctoritas** | Catene di luce traslucida, scudo di marmo bianco che emana calma | +2  | +5  |  3  | **Alba di guarigione** — cura tutti gli alleati vicini di Ki pari al Ki che il PG ha in quel momento |
 
-### Lancia (Drago di Mare Foglia / Spartacus / Ombra)
+---
 
-| Forma     | Abilità                                                   |
-| --------- | --------------------------------------------------------- |
-| Forma I   | Lancia con ritorno                                        |
-| Forma II  | *(da definire)*                                           |
-| Forma III | Carica: +3 Ki al danno                                    |
+## 🔱 Lancia
 
-### Martello da Guerra (Salamandra / Caesar / Scintilla)
+_Drago di Mare Foglia · **Spartacus** (Spartaco) · Ombra (影)_
 
-| Forma     | Abilità                                                   |
-| --------- | --------------------------------------------------------- |
-| Forma I   | Spezza corazza: il nemico -1 alla difesa                  |
-| Forma II  | *(da definire)*                                           |
-| Forma III | Colpo a terra: tutti i nemici -1 attacco                  |
+| Forma | Nome | Aspetto | TxC | DMG | Ki | Abilità |
+|---|---|---|:-:|:-:|:-:|---|
+| Improvvisata | Bastone con chiodo | Legno marcio, chiodo piegato | −1 | −2 | — | — |
+| Forma I | Lancia di legno con punta di ferro | Asta solida, punta grezza ma funzionale | 0 | +2 | 1 | **Lancio con ritorno** — la lancia è scagliata a distanza e torna in mano al PG |
+| Forma II | Pilum legionario | Asta di frassino, punta di ferro lungo che si piega dopo l'impatto | +1 | +4 | 2 | **Balzo** — il PG salta sul nemico: +3 al danno su un singolo bersaglio |
+| Forma III | **Hasta Libertatis** | Ossidiana nera con fronde dorate che si muovono senza vento, quasi invisibile in penombra | +2 | +5 | 3 | **Lancio dall'alto** — la lancia scompare in aria e ricade sui nemici colpendone più di uno |
 
-### Trombone (Fennec / Scipio / Eco)
+---
 
-| Forma     | Abilità                                                   |
-| --------- | --------------------------------------------------------- |
-| Forma I   | Spara a ventaglio davanti a sé                            |
-| Forma II  | Mirare: +1 colpire, +1 al danno                          |
-| Forma III | Esplosione dove colpisce                                  |
+## 🔨 Martello da Guerra
 
+_Salamandra · **Caesar** (Giulio Cesare) · Scintilla (火)_
 
+| Forma | Nome | Aspetto | TxC | DMG | Ki | Abilità |
+|---|---|---|:-:|:-:|:-:|---|
+| Improvvisata | Gamba di tavolo con pietre | Legno scheggiato con pietre legate in cima | −1 | −2 | — | — |
+| Forma I | Mazza chiodata | Ferro grezzo, chiodi sporgenti, pesante | 0 | +3 | 1 | **Spezza corazza** — il nemico colpito ha −1 alla difesa per tutto il combattimento |
+| Forma II | Martello da guerra a una mano | Testa di ferro temprato, impugnatura di cuoio rosso | +1 | +5 | 2 | **Roteazione** — colpisce tutti i nemici vicini, li sposta indietro |
+| Forma III | **Malleus Iacta** | Bronzo incandescente, la testa emana calore, lascia impronte di fuoco | +2 | +6 | 3 | **Colpo a terra** — tutti i nemici vicini hanno −1 attacco per 3 round |
+
+---
+
+## 💥 Trombone
+
+_Fennec · **Scipio** (Scipione l'Africano) · Eco (響)_
+
+| Forma | Nome | Aspetto | TxC | DMG | Ki | Abilità |
+|---|---|---|:-:|:-:|:-:|---|
+| Improvvisata | Fionda di stracci | Corda e stoffa, lancia sassi | −1 | −2 | — | — |
+| Forma I | Pistola a pietra focaia grezza | Legno e ferro, spara lenta, imprecisa | 0 | +3 | 1 | **Spara a ventaglio** — colpisce tutti i nemici di fronte al PG |
+| Forma II | Spingarda corta | Canna larga di bronzo, calcio intagliato, più precisa | +1 | +5 | 2 | **Mirare** — +1 al colpire e +1 al danno, più 1/1 per ogni Ki extra speso; funziona anche a lunga distanza |
+| Forma III | **Vox Africani** | Oro con incisioni di orecchie e onde sonore, lo sparo non fa rumore ma il bersaglio sente un tuono | +2 | +6 | 3 | **Esplosione** — scaraventa i nemici ai lati e li stordisce: −1 al colpire e −1 al danno per 2 round |
+
+---
+
+## Formula Bonus Danno
+
+Il bonus danno segue una progressione per categoria di arma:
+
+| Categoria | Arma | Forma I | Forma II | Forma III |
+|---|---|:-:|:-:|:-:|
+| Leggere | Spada+Scudo · Accette | +1 | +3 | +4 |
+| Medie | Mazzafrusto+Scudo · Lancia | +2 | +4 | +5 |
+| Pesanti | Martello · Trombone | +3 | +5 | +6 |
+
+Tutte le forme Improvvisate hanno **−2 al danno** e **−1 al TxC**.

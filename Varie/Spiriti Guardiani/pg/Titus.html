@@ -498,6 +498,57 @@
     color: var(--text-soft);
     line-height: 1.3;
   }
+  .wstep .wbonus {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    margin-top: 5px;
+    padding-top: 4px;
+    border-top: 1px dashed var(--dotted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .wstep.final .wbonus { color: var(--gold-light); }
+  .wstep .wbonus .b-key { color: var(--shadow); font-weight: 400; font-size: 9px; }
+
+  /* Abilità speciali arma */
+  .abilities {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: linear-gradient(180deg, rgba(200,69,69,0.08), rgba(140,32,32,0.04));
+    border-left: 3px solid var(--red);
+    border-radius: 4px;
+  }
+  .abilities .ab-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--red-light);
+    margin-bottom: 4px;
+  }
+  .abilities .ab-row {
+    display: grid;
+    grid-template-columns: 68px 1fr;
+    gap: 10px;
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 2px 0;
+  }
+  .abilities .ab-row .ab-phase {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    padding-top: 2px;
+  }
+  .abilities .ab-row .ab-text {
+    color: var(--text-main);
+  }
+  .abilities .ab-row .ab-text strong { color: var(--red-light); font-weight: 600; }
 
   /* ── FOOTER ── */
   .footer-orn {
@@ -659,6 +710,18 @@
     .wstep .wname { color: var(--ink); }
     .wstep.final .wname { color: var(--red-deep); text-shadow: none; }
     .wstep .waspect { color: var(--shadow); }
+    .wstep .wbonus { color: var(--gold-deep); border-top-color: var(--gold-deep); }
+    .wstep.final .wbonus { color: var(--red-deep); }
+    .wstep .wbonus .b-key { color: var(--shadow); }
+
+    .abilities {
+      background: rgba(138,32,32,0.06);
+      border-left-color: var(--red-deep);
+    }
+    .abilities .ab-title { color: var(--red-deep); }
+    .abilities .ab-row .ab-phase { color: var(--gold-deep); }
+    .abilities .ab-row .ab-text { color: var(--ink); }
+    .abilities .ab-row .ab-text strong { color: var(--red-deep); }
 
     .footer-orn { color: var(--gold-deep); }
     .footer-tag { color: var(--shadow); }
@@ -693,8 +756,8 @@
       <div class="row"><div class="label">ETÀ</div><div class="value">23 anni</div></div>
       <div class="row"><div class="label">ACCUSA</div><div class="value">Rissa in una taverna. Ha rotto la mascella a un nobile.</div></div>
       <div class="row"><div class="label">ARMA</div><div class="value">Martello da Guerra <em>— forma finale: Malleus Iacta</em></div></div>
-      <div class="row"><div class="label">CONDOTTIERO</div><div class="value">Giulio Cesare <em>— il dado è tratto</em></div></div>
       <div class="row"><div class="label">SPIRITO</div><div class="value">Salamandra di Fuoco <em>· Caesar</em></div></div>
+      <div class="row"><div class="label">CARATTERISTICA</div><div class="value">Scintilla <span style="font-family:'Noto Serif JP'; color:var(--gold);">火</span></div></div>
     </div>
   </div>
 
@@ -706,7 +769,7 @@
       <div class="accent"></div>
     </div>
     <p class="body-text">
-      Ex soldato. Ha combattuto sulle fosse e ha visto troppo, poi ha bevuto per dimenticare. Le mani ricordano ancora come si impugna un'arma anche se la testa vorrebbe scordarlo. Non parla volentieri di quello che ha fatto, e ancora meno di quello che ha lasciato fare. Il vino è stato il suo ultimo onore — l'unica cosa che è riuscito a tenere stretta.
+      Ex soldato. Ha combattuto sulle fosse. Ha visto troppo, ha bevuto per dimenticare. Le mani ricordano ancora come si impugna un'arma anche se la testa vorrebbe scordarlo. Era tornato dalla guerra pensando di aver già sofferto abbastanza. Poi l'inverno scorso sua figlia si ammalò. Titus non fu in grado di proteggerla dal freddo. Una notte lei si addormentò e non si svegliò più. Questa cosa lo ha distrutto.
     </p>
   </div>
 
@@ -720,7 +783,7 @@
     <div class="kage">
       <div class="label"><span class="k">影</span> L'OMBRA CHE PORTA</div>
       <div class="text">
-        L'alcol. Non riesce a smettere. Ha iniziato a bere dopo una battaglia in cui il suo plotone è stato massacrato — è l'unico sopravvissuto. Da allora ogni sorso è una preghiera storta, e ogni mattina è una promessa rotta.
+        Sua figlia. Non è stato capace di proteggerla. Beve per non sentire più il peso leggero di lei fra le braccia — quel peso che c'era, e poi non c'era più. Ogni volta che è sobrio è come perderla di nuovo.
       </div>
     </div>
   </div>
@@ -753,7 +816,7 @@
     </div>
     <div class="spirit">
       <div class="charline">
-        Fuoco trattenuto, brucia a fuoco lento. Rispetta chi agisce, disprezza chi esita. <em>Alea iacta est.</em>
+        Il Generale. Fuoco che cammina. Rispetta chi agisce, non consola chi esita. Dopo la battaglia, una sola domanda: <em>come stai?</em>
       </div>
       <div class="power">
         <div class="ptag">PASSIVO</div>
@@ -791,21 +854,37 @@
         <div class="phase">IMPROVVISATA</div>
         <div class="wname">Gamba di tavolo<br>con pietre</div>
         <div class="waspect">Legno scheggiato, pietre legate in cima</div>
+        <div class="wbonus"><span><span class="b-key">TIRO</span> −1</span><span><span class="b-key">DANNO</span> −2</span></div>
       </div>
       <div class="wstep">
         <div class="phase">FORMA I</div>
         <div class="wname">Mazza chiodata</div>
         <div class="waspect">Ferro grezzo, chiodi sporgenti, pesante</div>
+        <div class="wbonus"><span><span class="b-key">TIRO</span> 0</span><span><span class="b-key">DANNO</span> +3</span></div>
       </div>
       <div class="wstep">
         <div class="phase">FORMA II</div>
         <div class="wname">Martello da guerra</div>
         <div class="waspect">Ferro temprato, impugnatura di cuoio rosso</div>
+        <div class="wbonus"><span><span class="b-key">TIRO</span> +1</span><span><span class="b-key">DANNO</span> +5</span></div>
       </div>
       <div class="wstep final">
         <div class="phase">FORMA III ★</div>
         <div class="wname">Malleus Iacta</div>
         <div class="waspect">Bronzo incandescente, lascia impronte di fuoco</div>
+        <div class="wbonus"><span><span class="b-key">TIRO</span> +2</span><span><span class="b-key">DANNO</span> +6</span></div>
+      </div>
+    </div>
+
+    <div class="abilities">
+      <div class="ab-title">✦ ABILITÀ SPECIALI ✦</div>
+      <div class="ab-row">
+        <div class="ab-phase">FORMA I</div>
+        <div class="ab-text"><strong>Spezza corazza</strong> — il nemico colpito subisce <strong>−1 alla difesa</strong> fino alla fine della scena.</div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-phase">FORMA III</div>
+        <div class="ab-text"><strong>Colpo a terra</strong> — tutti i nemici vicini subiscono <strong>−1 attacco</strong> per 1 round.</div>
       </div>
     </div>
   </div>

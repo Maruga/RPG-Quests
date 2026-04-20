@@ -25,11 +25,11 @@ Ogni spirito ha tre poteri. **Tutti gli effetti si applicano al PG** — il most
 
 Il **bonus d'ingresso** (+1 alla caratteristica dello spirito, +3 Ki) viene dato al PG **al momento del collegamento nelle Terme** (Stanza 1) — non è parte dei tre poteri qui sotto.
 
-|Livello|Frequenza|Durata|Costo|
-|---|---|---|---|
-|**Passivo**|Sempre attivo|Permanente|Nessuno — effetto narrativo/percettivo, non numerico|
-|**Attivo**|A discrezione del PG|**1 round per ogni punto Ki speso**|Consumo di Ki|
-|**Fusione**|1 per sessione, **scelta dello spirito** (non del PG)|3 round|Dopo l'uso lo spirito entra in silenzio profondo fino al prossimo riposo lungo: niente Passivo, niente Attivo, niente comunicazione via Telegram|
+| Livello     | Frequenza                                             | Durata                              | Costo                                                                                                                                            |
+| ----------- | ----------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Passivo** | A discrezione                                         | Concentrazione                      | Narrativo/percettivo, non numerico                                                                                                               |
+| **Attivo**  | A discrezione del PG                                  | **1 round per ogni punto Ki speso** | Consumo di Ki                                                                                                                                    |
+| **Fusione** | 1 per sessione, **scelta dello spirito** (non del PG) | 3 round                             | Dopo l'uso lo spirito entra in silenzio profondo fino al prossimo riposo lungo: niente Passivo, niente Attivo, niente comunicazione via Telegram |
 
 Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito a 9**, **Ki al massimo**, più l'effetto unico dello spirito. Decide lo spirito quando attivarla — di solito in un momento di crisi grave, quando il PG è in pericolo mortale o il gruppo sta per cadere.
 
