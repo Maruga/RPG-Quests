@@ -95,7 +95,7 @@ _Da leggere al tavolo:_
 > Affondate in un bacino profondo di acqua tiepida. Risalite a galla tossendo. Vapore ovunque, denso, bianco. Quando si dirada vedete: colonne di marmo alte dieci metri, mosaici colorati sul pavimento sotto l'acqua, nicchie con statue senza testa — in una delle nicchie, la più vicina all'acqua, qualcosa brilla debolmente, mezzo sommerso. Archi che si perdono nel vapore. Siete nelle terme. Terme enormi, antiche, impossibili. La luce viene da qualche parte sotto l'acqua, un bagliore azzurro e costante. I vostri vestiti sono puliti. Le ferite della prigione non fanno più male. Vi sentite — per la prima volta da anni — leggeri.
 > Poi le vedete. Ombre nel vapore. Sagome che si muovono lente tra le colonne. Forse sono vapori. Forse no. Il vapore si dirada ancora, le ombre si volta e vengono di colpo verso di voi.
 
-**Nella nicchia vicina all'acqua:** un tassello di mosaico a forma di obelisco, con incisa la sagoma di un obelisco di pietra rossa. È mezzo sommerso, facile da non notare. Questo è il **Tassello 5**. I PG possono vederlo ora ma non sapere a cosa serve. Lo capiranno quando torneranno al Mosaico.
+**Nella nicchia vicina all'acqua:** un tassello di mosaico a forma di obelisco, con incisa la sagoma di un obelisco di pietra rossa. È mezzo sommerso, facile da non notare. Questo è il **Tassello 5**.
 
 **Meccanica di collegamento:**
 
@@ -227,12 +227,12 @@ Ogni ombra ripete la sua frase in loop. Ogni frase è legata al crimine del PG m
 
 |Ombra|Frase che ripete|Frammento nascosto|
 |---|---|---|
-|Il Barbone|_"Ho colpito perché non sapevo più proteggere. Una volta proteggevo qualcuno."_|I figli proteggevano la Madre|
-|Il Ladruncolo|_"Ho preso quello che non era mio. Ma qualcuno ha preso anche me, da qualcuno che mi amava."_|I figli sono stati strappati dalla Madre|
-|La Truffatrice|_"Tutti credono alle bugie. La verità è sotto, ma nessuno scava."_|La verità è sotto la città|
-|Il Debitore|_"Ho dato tutto per chi amavo. Ma non è bastato a liberarla."_|Tellus non è stata liberata|
-|Il Falsario|_"So riconoscere il falso dal vero. Questo sacrificio è falso."_|Il rituale è inutile|
-|L'Eretico|_"La voce veniva da sotto. Era una madre che chiamava i suoi figli."_|Tellus chiama i suoi figli|
+|Il Barbone (Titus)|_"L'ho tenuta stretta al petto e non è bastato. Una volta i figli sapevano tenere al caldo chi li aveva al caldo."_|I figli proteggevano la Madre|
+|Il Ladruncolo (Furco)|_"Ho preso quello che non era mio. Ma prima di me, qualcuno ha preso l'unico che mi voleva bene — e non me l'hanno più riportato."_|I figli sono stati strappati dalla Madre|
+|La Truffatrice (Livia)|_"Una bugia mi ha uccisa la madre. Ora mento io meglio di chiunque. La verità è sotto, ma nessuno scava."_|La verità è sotto la città|
+|Il Debitore (Faber)|_"Ho dato tutto a chi amavo. Non è bastato. Quella che ho amato è uscita dalla porta — e un'altra che amo è ancora chiusa dentro."_|Tellus non è stata liberata|
+|Il Falsario (Nummus)|_"Ho creduto a un giuramento falso e mi è costato la vita. So riconoscere il falso — e questo sacrificio lo è."_|Il rituale è inutile|
+|L'Eretico (Vox)|_"Mi ha venduto chi avrei dovuto servire. Ma la voce di sotto non mi ha mai tradito — è una madre, chiama i suoi figli."_|Tellus chiama i suoi figli|
 
 **Meccanica:**
 
@@ -252,7 +252,7 @@ Ogni ombra ripete la sua frase in loop. Ogni frase è legata al crimine del PG m
 
 _Da leggere al tavolo:_
 
-> Un corridoio largo, dritto, lungo. Le pareti sono fiancheggiate da statue — legionari romani a grandezza naturale, in armatura completa, con scudo e gladio. Ce ne sono dodici, sei per lato, disposte a intervalli regolari. Stanno sull'attenti, lo sguardo fisso in avanti. In fondo al corridoio, un'apertura larga. Da oltre l'apertura, un rumore ritmico. Un battere di chele sulla pietra. Qualcosa vi aspetta.
+> Un corridoio largo, dritto, lungo. Le pareti sono fiancheggiate da statue — soldati a grandezza naturale, in armatura completa, con scudo e gladio. Ce ne sono dodici, sei per lato, disposte a intervalli regolari. Stanno sull'attenti, lo sguardo fisso in avanti. In fondo al corridoio, un'apertura larga. Da oltre l'apertura, un rumore ritmico. Un battere di chele sulla pietra. Qualcosa vi aspetta.
 > 
 > I vostri spiriti si agitano. Li sentite vibrare. Il Fennec punta le orecchie verso il fondo. La Salamandra sfrigola più forte. Il Pangolino si irrigidisce. Il Colibrì si ferma — per la prima volta. Qualcosa di grosso è là dentro. Molto grosso.
 
@@ -275,7 +275,7 @@ Le statue hanno **Ki 10** ciascuna. Quando distrutte lo spirito torna al PG. Ogn
 
 _Da leggere quando i PG entrano nella sala:_
 
-> In fondo al corridoio, la sala si apre in un cerchio. Al centro, immobile, uno scorpione grande come tre cavalli messi insieme. La sua corazza è diversa dagli altri — è fatta di bronzo, non di chitina. Sulla testa, fuso nella corazza, un elmo da centurione romano con la cresta rossa. Le chele sono larghe come porte e affilate come gladii. La coda — un pilum di ossidiana — ondeggia lenta sopra il suo dorso. Vi ha sentito arrivare. Non si muove. Vi guarda con otto occhi neri. Aspetta.
+> In fondo al corridoio, la sala si apre in un cerchio. Al centro, immobile, uno scorpione grande come tre cavalli messi insieme. La sua corazza è diversa dagli altri — è fatta di bronzo, non di chitina, incisa con motivi militari antichi. Lungo la spina dorsale corre una cresta di punte di bronzo rossastro, un ventaglio di spine verticali che gli dà il profilo di un comandante. Le chele sono larghe come porte e affilate come gladii. La coda — un pilum di ossidiana — ondeggia lenta sopra il suo dorso. Vi ha sentito arrivare. Non si muove. Vi guarda con otto occhi neri. Aspetta.
 
 | Radice | Eco | Scintilla | Ombra | Flusso | Battito | Ki  |
 | :----: | :-: | :-------: | :---: | :----: | :-----: | :-: |
@@ -388,13 +388,10 @@ Ogni PG riceve: +1 punto attributo (dove vuole) + Ki al massimo.
 _Il GM descrive ogni arma nella sua forma finale._
 
 > I vostri spiriti non tornano nei vostri corpi. Restano accanto a Tellus. Il Pangolino si acciambella ai suoi piedi, il Fennec si siede sulla sua spalla, la Salamandra si adagia sul palmo della sua mano. Sono a casa. Dopo millenni, sono a casa.
-> 
-> Tellus vi guarda. Non parla, ma capite: _"Tornate sopra. La battaglia non è finita. I miei figli resteranno qui con me per un po' — hanno bisogno di riposare nella luce della Madre. Ma se li chiamerete, verranno."_
-> 
+> Tellus vi guarda. Non parla, ma capite: _"Tornate sopra. La battaglia non è finita. I miei figli resteranno qui con me — hanno bisogno di riposare nella luce della Madre."_
 > Poi un bagliore. Bianco. Caldo. Non fa male — è come il sole dopo un inverno lungo. Non vedete più la sala, non vedete più Tellus, non vedete più i vostri spiriti. Solo luce.
-> 
 > Quando la luce si attenua, siete in piedi. Sulla piattaforma di pietra bianca. La radura. I calderoni sono spenti. È giorno. Il sole del deserto è alto. Le vostre armi sono nelle vostre mani. I vostri spiriti non sono dentro di voi — li sentite lontani, anche se dovrebbero essere vicini. Come una voce che c'era e ora è fuori portata.
-> 
+> Intorno una folla che sta pregando, qualcosa è successo, qualcosa di spaventoso. 
 > Poi sentite il rumore. Dalla direzione delle fosse. Un rumore che conoscete — l'avete sentito quella notte in prigione. Ma cento volte più forte.
 
 **Spiriti in silenzio:**
@@ -407,13 +404,10 @@ Gli spiriti sono con Tellus. L'unica cosa che cambia: la comunicazione via Teleg
 
 _Da leggere al tavolo:_
 
-> Correte verso le fosse. La gente vi vede e non vi riconosce — poi vi riconosce e non ci crede. I prigionieri. Quelli del sacrificio. Con armature che non esistono e armi che brillano. Un soldato vi grida "Sono tornati! I sacrificati sono TORNATI!" Una donna urla. Un vecchio si inginocchia. Un bambino — lo stesso che vi ha gridato "ammazzateli tutti" — vi guarda a bocca aperta.
-> 
+> Correte verso le fosse. La gente vi vede e non vi riconosce — poi vi riconosce e non ci crede. I prigionieri. Quelli del sacrificio. Con armature che non esistono e armi che brillano. Un soldato vi grida "Sono tornati! I sacrificati sono TORNATI!" Una donna urla. Un vecchio si inginocchia. Un bambino — lo stesso che vi ha gridato "ammazzateli tutti" — vi guarda con meraviglia. 
 > Non avete tempo per questo.
-> 
-> Dalla seconda fossa, l'ultima rimasta, vedete il campo di battaglia. Centinaia di scorpioni e ragni premono contro la sabbia che riempie la fossa. I soldati della città sono sulla cresta, lanciano pietre, frecce, olio bollente. Tengono. A malapena.
-> 
-> Poi lo sentite. Il terreno trema. Dalla sabbia, lontano, tre sagome enormi si muovono verso la città.
+>  Dalla seconda fossa, la terza è scomparsa, vedete il campo di battaglia. Centinaia di scorpioni e ragni premono contro la sabbia che riempie la fossa. I soldati della città sono sulla cresta, lanciano pietre, frecce, olio bollente. Tengono. A malapena.
+>  Poi lo sentite. Il terreno trema. Dalla sabbia, lontano, tre sagome enormi si muovono verso la città.
 
 **I 3 Super Boss:**
 
