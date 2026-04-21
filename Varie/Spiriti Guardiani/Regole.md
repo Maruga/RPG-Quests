@@ -103,16 +103,39 @@ Ogni arma ha caratteristiche che le si addicono naturalmente. Il PG può sempre 
 
 ### Difesa
 
-La difesa dipende da **come** il PG reagisce. L'arma non determina la caratteristica di difesa, ma influenza cosa è credibile (senza scudo la Radice difensiva è più debole, senza gambe libere il Flusso è limitato).
+La difesa dipende da **come** il PG reagisce. Ci sono tre modi fondamentali per difendersi, ognuno con la sua caratteristica e i suoi requisiti.
 
-| Caratteristica   | Come difende                                                                           | Armi che la favoriscono        |
-| ---------------- | -------------------------------------------------------------------------------------- | ------------------------------ |
-| **Radice** 根    | Reggere, parare col manico, scudo alzato, tenere la posizione                          | Spada+Scudo, Mazzafrusto+Scudo |
-| **Flusso** 流    | Schivare deviando, parare scorrendo col colpo, seguire il movimento del nemico          | Mazzafrusto, Lancia, Accette   |
-| **Battito** 拍   | Anticipare, reagire prima che arrivi, spostarsi all'ultimo istante                      | Accette, Lancia, Trombone      |
-| **Ombra** 影     | Non essere dove il nemico colpisce, sparire, farsi confondere                           | Lancia, Trombone               |
-| **Eco** 響       | Leggere l'attacco prima che parta, posizionarsi nel punto cieco                         | Lancia, Trombone               |
-| **Scintilla** 火 | *Raro.* Contrattaccare con violenza superiore, fermare il colpo con la propria potenza  | Martello, Accette              |
+| Tipo difesa | Caratteristica | Chi può usarla | Descrizione |
+|---|---|---|---|
+| **Parata con scudo** | **Radice** 根 | solo chi ha uno scudo | La parata per eccellenza: piedi piantati, scudo alzato, reggi il colpo |
+| **Schivata** | **Battito** 拍 | tutti | Velocità e reazione: anticipi, scivoli di lato, non sei dove il colpo arriva |
+| **Parata con arma** | **Flusso** 流 *o* **Eco** 響 | solo se l'arma difendente ha **taglia ≥** dell'arma che attacca | Blocchi o devi l'attacco con la tua arma — dipende dal tipo d'arma quale caratteristica usi |
+
+**Taglie armi:**
+- **M (Media):** Spada, Accetta Doppia
+- **G (Grande):** Mazzafrusto, Lancia, Martello
+- **R (Ranged):** Trombone (non para, mai)
+
+Un'arma di taglia M non può parare un colpo portato con arma G (la spada non regge il martello). Un'arma G para sia M sia G.
+
+**Criterio Flusso vs Eco per la parata con arma:**
+
+- **Flusso** 流 → armi mobili, con più punti di contatto o traiettorie variabili. Cedi col colpo, devii, segui il movimento.
+- **Eco** 響 → armi lunghe/rigide che richiedono lettura e posizionamento. Prima leggi dove sta per arrivare il colpo, poi pianti il blocco.
+
+| Arma | Taglia | Scudo (Radice) | Schivata (Battito) | Parata arma |
+|---|:-:|:-:|:-:|:-:|
+| **Spada + Scudo** | M | ✓ | ✓ | **Flusso** |
+| **Accetta Doppia** | M | ✗ | ✓ | **Flusso** |
+| **Mazzafrusto + Scudo** | G | ✓ | ✓ | ✗ (la catena trasmette l'impatto, non lo blocca) |
+| **Lancia** | G | ✗ | ✓ | **Eco** |
+| **Martello** | G | ✗ | ✓ | **Eco** |
+| **Trombone** | R | ✗ | ✓ | ✗ (arma da fuoco, non para in mischia) |
+
+**Note:**
+- Un PG che ha **sia scudo sia arma G** può scegliere turno per turno se parare con scudo (Radice) o con arma (Flusso/Eco), in base a cosa conviene narrativamente o meccanicamente.
+- La **schivata con Battito** è sempre disponibile, anche da armato — a volte è la difesa più alta.
+- In caso di attacco che non è fisico (incantesimo, paura, illusione), valgono le caratteristiche tradizionali (Radice per resistenza, Ombra per sottrarsi, Eco per percepirlo).
 
 ### Soglie Ki
 
@@ -147,6 +170,6 @@ La difesa dipende da **come** il PG reagisce. L'arma non determina la caratteris
 
 ### Il nemico attacca il PG
 
-> Mostro (Scintilla 6) tira 2d6 → **4** → Successo. Margine: **2**. Riku (Radice 6) difende: 2d6 → **5** + 2 = **7** → supera 6. Danno: 7 - 6 = **1 Ki perso** da Riku. (Attacco naturale del mostro, nessun bonus arma.)
+> Mostro (Scintilla 6) tira 2d6 → **4** → Successo. Margine: **2**. Riku difende con **Battito 6** (schivata, la lancia non ha scudo): 2d6 → **5** + 2 = **7** → supera 6. Danno: 7 - 6 = **1 Ki perso** da Riku. (Attacco naturale del mostro, nessun bonus arma.)
 
 ---

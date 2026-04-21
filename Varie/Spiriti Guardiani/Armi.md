@@ -3,14 +3,33 @@
 
 ## Tabella Completa
 
-|Arma|Animale|Condottiero|Caratteristica|Improvvisata (prigione)|Forma I (spirito)|Forma II (Boss 1)|Forma III (Madre)|
-|---|---|---|---|---|---|---|---|
-|**Spada + Scudo**|Pangolino|Marco Aurelio — **Aurelius**|Radice (根)|Sbarra di ferro + fondo di barile|Gladio corto + scudo di legno cerchiato|Spatha di bronzo + scutum legionario|**Virtus Imperatoris** + **Clipeus Meditationis**|
-|**Accetta Doppia**|Colibrì|Aureliano — **Aurelian**|Battito (拍)|Due pietre scheggiate legate a bastoni|Due accette di ferro grezza|Due asce da guerra bilanciate|**Geminae Restitutor**|
-|**Mazzafrusto + Scudo**|Medusa Luna|Augusto — **Augustus**|Flusso (流)|Catena con sasso + coperchio di pentola|Flagello di ferro + scudo rotondo|Mazzafrusto a tre code + scudo di bronzo|**Flagellum Pacis** + **Scutum Auctoritas**|
-|**Lancia**|Drago di Mare Foglia|Spartaco — **Spartacus**|Ombra (影)|Bastone con chiodo|Lancia di legno con punta di ferro|Pilum legionario|**Hasta Libertatis**|
-|**Martello**|Salamandra|Giulio Cesare — **Caesar**|Scintilla (火)|Gamba di tavolo con pietre|Mazza chiodata|Martello da guerra a una mano|**Malleus Iacta**|
-|**Trombone**|Fennec|Scipione — **Scipio**|Eco (響)|Fionda di stracci|Pistola a pietra focaia grezza|Spingarda corta|**Vox Africani**|
+|Arma|Taglia|Animale|Condottiero|Caratteristica|Improvvisata (prigione)|Forma I (spirito)|Forma II (Boss 1)|Forma III (Madre)|
+|---|:-:|---|---|---|---|---|---|---|
+|**Spada + Scudo**|M|Pangolino|Marco Aurelio — **Aurelius**|Radice (根)|Sbarra di ferro + fondo di barile|Gladio corto + scudo di legno cerchiato|Spatha di bronzo + scutum legionario|**Virtus Imperatoris** + **Clipeus Meditationis**|
+|**Accetta Doppia**|M|Colibrì|Aureliano — **Aurelian**|Battito (拍)|Due pietre scheggiate legate a bastoni|Due accette di ferro grezza|Due asce da guerra bilanciate|**Geminae Restitutor**|
+|**Mazzafrusto + Scudo**|G|Medusa Luna|Augusto — **Augustus**|Flusso (流)|Catena con sasso + coperchio di pentola|Flagello di ferro + scudo rotondo|Mazzafrusto a tre code + scudo di bronzo|**Flagellum Pacis** + **Scutum Auctoritas**|
+|**Lancia**|G|Drago di Mare Foglia|Spartaco — **Spartacus**|Ombra (影)|Bastone con chiodo|Lancia di legno con punta di ferro|Pilum legionario|**Hasta Libertatis**|
+|**Martello**|G|Salamandra|Giulio Cesare — **Caesar**|Scintilla (火)|Gamba di tavolo con pietre|Mazza chiodata|Martello da guerra a una mano|**Malleus Iacta**|
+|**Trombone**|R|Fennec|Scipione — **Scipio**|Eco (響)|Fionda di stracci|Pistola a pietra focaia grezza|Spingarda corta|**Vox Africani**|
+
+**Legenda Taglia:** M = Media · G = Grande · R = Ranged (arma da fuoco, non para in mischia). Un'arma può parare solo un attacco portato con arma di taglia ≤ alla propria.
+
+---
+
+## Tabella Difese per Arma
+
+Ogni arma ha tre possibili difese. La caratteristica usata dipende dal tipo di difesa scelto dal PG:
+
+| Arma | Scudo (Radice) | Schivata (Battito) | Parata arma |
+|---|:-:|:-:|:-:|
+| **Spada + Scudo** | ✓ | ✓ | **Flusso** |
+| **Accetta Doppia** | ✗ | ✓ | **Flusso** |
+| **Mazzafrusto + Scudo** | ✓ | ✓ | ✗ (catena) |
+| **Lancia** | ✗ | ✓ | **Eco** |
+| **Martello** | ✗ | ✓ | **Eco** |
+| **Trombone** | ✗ | ✓ | ✗ (fuoco) |
+
+Vedi `Regole.md` → sezione **Difesa** per il dettaglio (requisiti di taglia, quando si può parare con arma, ecc.).
 
 ---
 
