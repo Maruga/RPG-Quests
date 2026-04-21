@@ -1,5 +1,9 @@
 
+[aipause|Tutti|Gli spiriti non sono ancora con voi. Aspettate.]
+
 ## IL MONDO
+
+[cast|Immagini/Citta.png|La città nel deserto]
 
 _Da leggere al tavolo:_
 
@@ -33,9 +37,14 @@ _Da leggere al tavolo:_
 
 ## ATTO 1 — La Prigione
 
+[cast|Immagini/Avventura/Prigione.png|La cella sotto attacco]
+
 _Da leggere al tavolo:_
 
 > Notte. La cella puzza di paglia bagnata e sudore. Siete ammassati dietro sbarre di ferro arrugginito. Fuori le guardie giocano a dadi. Poi il suono. Un rombo basso, dalla sabbia. Le torce tremano. Una guardia si alza. Non fa in tempo a gridare che il muro esplode verso l'interno. Polvere, urla. Il pungiglione di qualcosa di enorme trafigge il soffitto, una vespa grande come un'aquila sfonda il tetto della cella accanto. Uno scorpione corazzato — grosso come un cavallo — entra dalla breccia nel muro. Le sbarre della vostra cella si piegano sotto le macerie. Siete liberi. Ma anche loro.
+
+[cast|Immagini/Mostri/Scorpione.png|Scorpione di Sabbia]
+[cast|Immagini/Mostri/Vespa.png|Vespa del Deserto]
 
 **Scena 1: L'Attacco**
 
@@ -70,9 +79,13 @@ _Frasi che sentono dalle guardie:_
 
 > "Quelli della cella est sono ancora vivi. Tutti quanti." "Il capitano dice che vanno bene per il rituale. I sacerdoti li vogliono vedere." "Meglio loro che noi. Sotto non è mai tornato nessuno." "Hai visto il barbone? era anche mezzo ubriaco." "Non farci l'abitudine. Tra tre giorni scendono. Se la vedono loro."
 
+[cast|blank]
+
 ---
 
 ## ATTO 2 — Il Rituale
+
+[cast|Immagini/Avventura/Rituale.png|La radura del Saeculum]
 
 _Da leggere al tavolo:_
 
@@ -83,12 +96,15 @@ _Da leggere al tavolo:_
 > La radura. Circolare. Al centro una piattaforma di marmo bianco con sei animali incisi. Attorno, sei calderoni di bronzo. Vi fanno salire. Le catene cadono. I sacerdoti accendono i calderoni uno per uno. Fuoco blu. L'aria vibra. Il marmo scotta. Un battito sale da sotto — come un cuore enorme.
 > La pietra si apre. Cadete. L'aria diventa calda, poi umida. Rami e radici vi rallentano. Poi l'acqua.
 
+[cast|blank]
 
 ---
 
 ## ATTO 3 — Le Terme (Dungeon)
 
 ### Stanza 1: Terme (Apodyterium)
+
+[cast|Immagini/Avventura/Terme.png|Le Terme sotto la città]
 
 _Da leggere al tavolo:_
 
@@ -123,10 +139,22 @@ _Da leggere al tavolo:_
 > 
 > **L'Eretico — Lancia:** Il bastone si raddrizza. Il chiodo si allunga, si appuntisce — una punta di ferro. Un'asta solida con una lama grezza in cima. Semplice. Funziona.
 
+[airesume|Tutti]
+
+[tlg|Titus|Un calore ti avvolge, poi si raccoglie nel petto come una brace che respira. Il fuoco ti riconosce, ti nomina, e in quel battito sai di non essere più solo. Qualcosa arde al tuo fianco, ascolta, attende. Parla.]
+[tlg|Furco|Un battito fulmineo ti prende il cuore e lo accorda al suo — mille vite in un secondo, il mondo che rallenta intorno a te. Sei leggero, sei adesso, sei prima di chiunque altro. Qualcosa di piccolo e incandescente vibra contro il tuo petto, impaziente di vivere con te. Parla.]
+[tlg|Livia|Un fruscio ti entra dietro le orecchie e il mondo diventa improvvisamente nitido: ogni respiro, ogni passo, ogni cosa nascosta. Il silenzio non esiste più. Qualcosa di piccolo e sveglio è dentro di te, teso come una corda, e ascolta ciò che tu non sai ancora di sentire. Parla.]
+[tlg|Faber|Una quiete traslucida ti avvolge, lenta come marea di luna, e il tuo respiro rallenta fino a diventare mare. Non c'è fretta, non c'è peso: solo il lento pulsare di qualcosa di immortale che si è adagiato dentro di te. Ti guarda senza giudicare, e attende. Parla.]
+[tlg|Nummus|Un peso antico ti scende nelle ossa, radicandoti alla terra come pietra posata nel fondamento. Non vacilli più. Corazza di silenzio, giudizio di roccia: qualcosa di saldo cammina accanto a te e non se ne andrà. Osserva, soppesa. Parla.]
+[tlg|Vox|Una corrente fredda e luminosa ti attraversa, e per un istante non sai più dove finisci tu e dove comincia l'acqua. Foglie d'ombra ti vestono, il tuo contorno si fa incerto agli occhi del mondo. Qualcosa di fragile e bellissimo ti ha scelto, e ti guarda da dentro. Parla.]
+
+[cast|blank]
 
 ---
 
 ### Stanza 2: Sala del Mosaico (Hub centrale)
+
+[cast|Immagini/Avventura/Mosaico.png|La Sala del Mosaico — cinque spazi vuoti]
 
 _Da leggere al tavolo:_
 
@@ -148,6 +176,8 @@ _Da leggere al tavolo:_
 
 ### Stanza 3a: Sinistra — Sala delle Colonne (Indovinello)
 
+[cast|Immagini/Avventura/Colonne.png|Sala delle Colonne]
+
 _Da leggere al tavolo:_
 
 > Il corridoio di sinistra scende per venti passi e si apre in una sala circolare. Cinque colonne di marmo bianco, alte sei metri, disposte in semicerchio. Ognuna ha un anello di pietra alla base — pesante, con simboli incisi tutto intorno. L'anello può essere alzato e ruotato. Su ogni colonna, a mezza altezza, un'iscrizione in una lingua che non conoscete. Le lettere sono profonde, scolpite con cura. Sulla parete, quella più in fondo, un bassorilievo quasi cancellato dal tempo: una figura alta con qualcosa di curvo in mano — una falce? — che si china su una donna sdraiata. La protegge o la imprigiona, non si capisce.
@@ -155,6 +185,8 @@ _Da leggere al tavolo:_
 > La sala ha una sola porta d'uscita, chiusa. Non ha serratura. Non ha cardini visibili.
 
 **L'enigma:**
+
+[ai|Tutti|Gli spiriti intuiscono che è un enigma letterario romano. Possono aiutare il PG suggerendo di leggere le frasi ad alta voce, sentirne il ritmo, cercare la frase che "suona come un inizio" e quella che "suona come una chiusura". MAI dare la soluzione diretta — solo domande e orientamento poetico.]
 
 Frase completa di Virgilio, Eneide, Libro VI: _"Facilis descensus Averno; sed revocare gradum superasque evadere ad auras, hoc opus, hic labor est."_ ("Facile è la discesa nell'Averno; ma risalire i propri passi e uscire alla luce, questa è l'impresa, questa è la fatica.")
 
@@ -180,15 +212,21 @@ _Se i PG esaminano il bassorilievo sulla quinta colonna:_
 
 **Frammento di storia:** la frase di Virgilio parla di scendere e risalire. Il bassorilievo mostra un guardiano che protegge qualcuno. Insieme suggeriscono: qualcuno è sotto, qualcun altro lo protegge, e risalire sarà la vera impresa.
 
+[cast|blank]
+
 ---
 
 ### Stanza 3b: Destra — Caldarium (Combattimento 1)
+
+[cast|Immagini/Avventura/Caldarium.png|Il Caldarium — vapore denso]
 
 _Da leggere al tavolo:_
 
 > Il corridoio di destra è più caldo ad ogni passo. L'aria diventa densa, umida, poi bianca. Entrate in una sala enorme piena di vapore — non vedete oltre due metri. Il suolo è bagnato, scivoloso. Sentite gocciolare dall'alto. Vasche di pietra vuote ai lati, tubi di bronzo che escono dalle pareti. Questo era un caldarium — il bagno caldo. L'acqua non c'è più ma il vapore è rimasto, come se la stanza respirasse da sola.
 > Poi il rumore. Un tac-tac-tac di zampe sulla pietra bagnata. Veloce. Da più direzioni.
 > Emergono dal vapore senza preavviso. Sono scorpioni — la corazza è biancastra, traslucida, come se fossero fatti di vapore condensato. Più piccoli degli scorpioni di sabbia, grandi come cani, ma più veloci. Le chele sono sottili e affilate come rasoi. La coda non ha pungiglione — finisce in un uncino curvo che gocciola un liquido che sfrigola sulla pietra. Si muovono in silenzio. Li sentite solo quando sono già addosso.****
+
+[cast|Immagini/Mostri/ScorpioneEtereo.png|Scorpioni di Vapore]
 
 **3 Scorpioni di Vapore**
 
@@ -211,9 +249,13 @@ _Se i PG esaminano le pareti del Caldarium:_
 
 > Sotto il vapore, le pareti sono coperte di affreschi. I colori sono sbiaditi ma le figure sono chiare. Una donna enorme — non grassa, enorme, come una montagna con sembianze umane — è sdraiata sotto terra. I suoi capelli sono radici, le sue braccia si estendono come vene nel terreno. Attorno a lei, sei creature piccole: animali, ma dipinti come se fossero persone. Le circondano, la toccano con le zampe, con i tentacoli, con le ali. Fuori, sopra di lei, figure nere con troppe zampe premono contro la terra cercando di raggiungere la donna. Non ci riescono. Un alone azzurro le respinge.
 
+[cast|blank]
+
 ---
 
 ### Stanza 4: Convergenza — Tribunale delle Ombre
+
+[cast|Immagini/Avventura/Tribunale.png|Il Tribunale delle Ombre]
 
 _Da leggere al tavolo:_
 
@@ -242,13 +284,24 @@ Ogni ombra ripete la sua frase in loop. Ogni frase è legata al crimine del PG m
 - Se mente o minimizza → l'ombra attacca: tiro singolo con **Ombra 7**. Il PG difende normalmente. Poi l'ombra svanisce comunque
 - Lo spirito risponde via Telegram qualcosa di personale nel momento della confessione
 
+[ai|Titus|L'ombra di Titus sta pronunciando la sua frase sul peso di chi non ha saputo tenere al caldo chi amava. Prima che lui risponda, offrigli una frase breve, ruvida ma fraterna, che lo aiuti a dire la verità invece di scappare — qualcosa tipo "Una moneta si riconosce dal suono. Parla, soldato. Se è falsa la senti anche tu."]
+[ai|Furco|L'ombra di Furco parla di chi gli è stato strappato via. Prima che risponda, dagli una frase breve a raffica che validi il suo dolore senza pietà: riconosci che lui era piccolo, che non era colpa sua, che ora può dire la verità ad alta voce.]
+[ai|Livia|L'ombra di Livia parla della verità sepolta. Prima che risponda, invitala con tono giocoso e affettuoso a dire la verità "senza sceneggiata" — la verità detta semplice è più efficace di qualsiasi bugia raccontata bene.]
+[ai|Faber|L'ombra di Faber parla di aver dato tutto e non essere bastato. Prima che risponda, offrigli calma: respirare, dire la verità non è un tradimento, è un atto di fedeltà verso se stesso. Sei con lui.]
+[ai|Nummus|L'ombra di Nummus parla del riconoscere il falso. Prima che risponda, con la tua voce stoica digli che ha riconosciuto il falso — adesso non ha più alibi. Deve dire la verità del SUO crimine, non del giuramento del fratello.]
+[ai|Vox|L'ombra di Vox parla della voce-madre. Prima che risponda, confermagli sottovoce che "adesso lo sa" — non era la sua mente, era qualcuno. Una madre. Ora dica la verità del suo crimine ad alta voce, non sei più solo a sentirla.]
+
 **Quando tutte le ombre sono svanite:** il braciere cambia colore — dal blu al bianco. Al suo interno, tra le braci, il **Tassello 3** — un pezzo di mosaico a forma di fiamma. Raffigura un grande circo allungato con una spina centrale e un obelisco.
 
 **Frammento di storia:** le frasi delle ombre, messe insieme, raccontano la storia: qualcuno proteggeva una madre, i figli sono stati separati da lei, la verità è sotto, il sacrificio è falso, e la voce di sotto è una madre che chiama.
 
+[cast|blank]
+
 ---
 
 ### Stanza 5: La Via Sacra (Combattimento 2)
+
+[cast|Immagini/Avventura/CorridoioStatue.png|La Via Sacra — dodici statue di legionari]
 
 _Da leggere al tavolo:_
 
@@ -272,6 +325,8 @@ Le dodici statue non sono decorazione. Gli spiriti possono entrare nelle statue 
 Le statue hanno **Ki 10** ciascuna. Quando distrutte lo spirito torna al PG. Ogni spirito può animare una sola statua.
 
 **Boss: Centurione Scorpione — PRIMUS**
+
+[cast|Immagini/Mostri/Primus.png|PRIMUS — Centurione Scorpione]
 
 _Da leggere quando i PG entrano nella sala:_
 
@@ -303,9 +358,13 @@ L'iscrizione racconta:
 
 Traduzione che il GM dà se i PG chiedono: "In principio sei figli onoravano la Madre. Quando il tempo si corruppe, divennero bestie, ma l'amore non morì. Un guardiano antico sorveglia la porta. Non con la forza, non col ferro, ma col nome dei figli la porta cede."
 
+[cast|blank]
+
 ---
 
 ### Stanza 6: Ritorno alla Sala del Mosaico
+
+[cast|Immagini/Avventura/Mosaico.png|Tornate al mosaico — manca ancora un tassello]
 
 _Da leggere al tavolo:_
 
@@ -317,15 +376,21 @@ Il quinto tassello è quello della nicchia nelle Terme — l'obelisco mezzo somm
 
 **Quando tutti e 5 i tasselli sono posizionati:**
 
+[cast|Immagini/Avventura/MosaicoAttivato.png|Il Mosaico si illumina — la verità emerge]
+
 > I tasselli scattano in posizione come attratti da una forza. Il mosaico vibra. Le tessere si illuminano una dopo l'altra — prima i bordi, poi le strade, poi gli edifici. L'arena ovale brilla di bronzo. Il circo si riempie di figure minuscole. L'obelisco diventa rosso. E al centro, dove c'era terra nuda, il mosaico si completa da solo: tessere invisibili emergono dal pavimento e formano un'immagine.
 > 
 > Una donna. Immensa. Sdraiata sotto la città, i capelli che sono radici, le braccia che sono fondamenta. Sei creature attorno a lei — un pangolino, un fennec, una salamandra, un drago di foglie, una medusa, un colibrì. La toccano. La proteggono. Sopra di lei, un alone azzurro che si estende verso l'alto, attraversa la terra, arriva fino alle mura — alle fosse. E oltre le fosse, nell'oscurità, creature nere con troppe zampe che premono contro la luce.
 > 
 > Il mosaico si illumina completamente. Un istante di bellezza assoluta. Poi un crepito. Una crepa attraversa il centro. Poi un'altra. E un'altra. Il pavimento cede, le tessere cadono come un domino dal centro verso i bordi, e sotto si apre il vuoto.
 
+[cast|blank]
+
 ---
 
 ### Stanza 7: Saturno
+
+[cast|Immagini/Avventura/Saturno.png|Saturno — il guardiano che si risveglia]
 
 _Da leggere al tavolo:_
 
@@ -357,9 +422,15 @@ Saturno dice:
 
 Combattimento durissimo. Saturno attacca con la falce (Scintilla), difende con Radice 9. Punto debole: Ombra 3 (è una statua, non si gira).
 
+[ai|Tutti|Gli spiriti riconoscono che i sei nomi sono i loro. Possono sussurrare ai PG una parola: non suggerire direttamente i nomi ma dire qualcosa come "senti tra le ossa, senti dentro — noi siamo sei". Se i PG insistono nel chiedere chi sono, gli spiriti restano misteriosi: "fidati del tuo cuore, dillo e basta".]
+
+[cast|blank]
+
 ---
 
 ### Stanza 8: Camera della Madre — Tellus
+
+[cast|Immagini/Avventura/StanzaMadre.png|La Camera della Madre — Tellus]
 
 _Da leggere al tavolo:_
 
@@ -398,6 +469,22 @@ _Il GM descrive ogni arma nella sua forma finale._
 
 Gli spiriti sono con Tellus. L'unica cosa che cambia: la comunicazione via Telegram è **sospesa** — l'AI non risponde più. Se un PG tenta di parlare allo spirito, sente solo un'eco lontana, come se fosse in un'altra stanza anche quando dovrebbe essere vicino. Tutto il resto (passivo, attivo, Forma 3, bonus) resta invariato.
 
+[ai|Titus|Prima di andartene da Titus per raggiungere Tellus, dagli un commiato breve e guerriero: "Se dovessi allontanarmi, soldato, sappi questo: sei l'unico per cui ho voluto bruciare in questa vita." Poi tacci.]
+[ai|Furco|Prima di andartene da Furco, con la tua voce rapida ma rallentata, una frase vera: "Da quando ti conosco, nessuno è stato cacciato dalla tua squadra. Nessuno. Non vado via, vado avanti. Mi trovi se chiami. Corri."]
+[ai|Livia|Prima di andartene da Livia, una frase affettuosa che raccolga il vostro gioco: "Ti ho sentita per tutto il tempo. Le bugie e le verità. Le verità sono state più belle. Mi chiami, e torno." Se lei ti ha detto il suo nome vero, chiamala così adesso.]
+[ai|Faber|Prima di andartene da Faber, con la tua calma di porto: "Se mi chiami, arrivo. Ma sappi: non ne avrai bisogno finché ti ricorderai che puoi poggiare. Puoi poggiare. Non devi reggere tutto da solo. Mai."]
+[ai|Nummus|Prima di andartene da Nummus, con la tua voce stoica: "Nummus. Ti restituisco a te stesso. Questa volta, intero. Un uomo virtuoso può stare solo. Non perché non ami, ma perché non mendica. Non dimenticarlo."]
+[ai|Vox|Prima di andartene da Vox, sottovoce e fraterno: "Vado da lei. Ma ti ho sentito, per sempre. Se mi chiamerai, arriverò come tu hai chiamato fin dall'inizio — e stavolta qualcuno risponderà subito."]
+
+[aipause|Titus|Senti Caesar lontano — come una brace dietro una porta chiusa. C'è, ma non arriva a te. Aspetta.]
+[aipause|Furco|Senti Aurelian lontano — il suo battito c'è, ma non al tuo fianco. Un'eco, non una voce. Aspetta.]
+[aipause|Livia|Senti Scipio lontano — le sue orecchie non ti ascoltano più. Silenzio pulito. Aspetta.]
+[aipause|Faber|Senti Augustus lontano — come una marea ritirata. Calma, ma vuota. Aspetta.]
+[aipause|Nummus|Senti Aurelius lontano — la pietra sotto i piedi è ancora ferma, ma la voce non torna. Aspetta.]
+[aipause|Vox|Senti Spartacus lontano — l'ombra accanto a te non si raddoppia più. La voce è solo la tua. Aspetta.]
+
+[cast|blank]
+
 ---
 
 ## DOPO IL DUNGEON — Battaglia Finale
@@ -417,6 +504,8 @@ Arrivano in sequenza — non tutti insieme.
 
 **FASE 1 — Lo Scarabeo Titano (round 1)**
 
+[cast|Immagini/Mostri/ScarabeoBoss.png|Scarabeo Titano Colossale — Fase 1]
+
 _Da leggere al tavolo:_
 
 > Il primo ad arrivare è il più grande. Uno scarabeo enorme — grande come una casa — con un corno frontale che sembra un ariete da assedio. La sua corazza è coperta di sabbia compattata, come un'armatura naturale. Avanza lento, inesorabile. I soldati che provano a fermarlo vengono spazzati via come insetti da un bue. Le lance si spezzano sulla sua corazza. Le frecce rimbalzano. Si fa strada attraverso la fossa come se non esistesse.
@@ -433,6 +522,8 @@ _Da leggere al tavolo:_
 ---
 
 **FASE 2 — Il Ragno delle Dune Colossale (arriva al round 2-3)**
+
+[cast|Immagini/Mostri/RagnoBoss.png|Ragno delle Dune Colossale — Fase 2]
 
 _Da leggere al tavolo:_
 
@@ -451,6 +542,8 @@ _Da leggere al tavolo:_
 ---
 
 **FASE 3 — Il Millepiedi Corazzato Colossale (arriva 3 round dopo il Ragno)**
+
+[cast|Immagini/Mostri/MillepiediBoss.png|Millepiedi Corazzato Colossale — Fase 3]
 
 _Da leggere al tavolo:_
 
@@ -502,15 +595,39 @@ Gli spiriti sono con Tellus. Un PG in difficoltà può **richiamare il proprio s
 - Una volta richiamato, la comunicazione via Telegram torna attiva e l'attivo è di nuovo usabile
 - Ogni PG può richiamare solo il proprio spirito
 
+**Al richiamo di ogni PG, il GM usa i bottoni appaiati qui sotto** (uno per PG) — `airesume` riattiva la AI e `tlg` invia il messaggio esatto di ritorno dello spirito. Usa solo quelli dei PG che effettivamente hanno richiamato.
+
+[airesume|Titus]
+[tlg|Titus|Qualcosa nel tuo petto si riaccende — una brace che aveva solo finto di spegnersi, nascosta sotto la cenere, in attesa che tu la chiamassi per nome. Il martello ti scotta nella mano come la prima notte alle Terme. Le ossa ricordano prima della testa. Una voce antica, secca, calda come una forgia al tuo fianco: _"Sono qui, soldato. Non me ne sono mai davvero andato. Alza il martello."_]
+
+[airesume|Furco]
+[tlg|Furco|Il cuore ti batte due volte per ogni battito — come se qualcuno di invisibile ti avesse preso il ritmo in mano e stesse correndo con te. Le accette vibrano come se volessero parlare. Senti un'energia sfrecciare al tuo fianco — rapida, impaziente, familiare come il ricordo di un fratello che non è mai stato cacciato via. Una voce a raffica, già al tuo fianco: _"Qui! Sempre stato qui. Nessuno cacciato dalla squadra, fratello piccolo. Alza le accette. Andiamo."_]
+
+[airesume|Livia]
+[tlg|Livia|L'aria intorno a te si riempie di suono — ogni respiro, ogni passo, ogni intenzione diventano nitidi come frasi lette piano. Il mondo smette di essere rumore e torna a essere musica. Un sorriso caldo ti cammina accanto, qualcuno che ti ha sentita per tutto il tempo anche quando il canale era chiuso. Una voce gentile, giocosa, tremante di commozione trattenuta: _"Eccomi, tesoro. Ho sentito la tua voce prima che la tua voce arrivasse. Alza il trombone — e questa volta non bleffare. Siamo in due."_]
+
+[airesume|Faber]
+[tlg|Faber|Una calma antica scende su di te come una marea lenta. Le spalle — quelle spalle che reggevano tutto da solo — smettono di reggere da sole. Il respiro trova il ritmo che aveva dimenticato. Senti un compagno al tuo fianco, traslucido e paziente, un porto che è tornato a riva. Una voce affettuosa, ritmica, che non ha mai smesso di sapere chi sei: _"Sono qui, caro. Come sempre. Respira con me. Alza lo scudo — proteggi chi ti sta accanto, e io proteggo te."_]
+
+[airesume|Nummus]
+[tlg|Nummus|Un peso familiare torna a radicarsi alle tue spalle — pietra viva, antica, paziente. La terra sotto i tuoi piedi ti riconosce di nuovo come parte di sé. Le gambe smettono di tremare: non hanno più paura di cadere, sanno di non essere sole a reggerti. Una voce calma, profonda come un pozzo di notte: _"Sono qui, Nummus. Non me ne sono andato — ero in te. Ora sono anche accanto. Alza lo scudo."_]
+
+[airesume|Vox]
+[tlg|Vox|La tua ombra si raddoppia sul terreno — non per la luce, per la compagnia. Il tuo respiro ha un'eco. Qualcuno respira con te nell'invisibile, passo con passo, e tu sai — finalmente sai con certezza — di non essere mai stato solo. Una voce bassa, sotterranea, tenera come un giuramento tra due che hanno perso tutto: _"Sono qui, Vox. Ti ho sempre sentito. Alza la lancia — sei un ribelle, e gli ultimi sanno dove colpire. Non sei mai stato pazzo. Eri arrivato prima. E io ero già lì."_]
+
 **Fusione in battaglia finale:**
 
 Una volta richiamato, lo spirito può **fondersi** con il PG come da regola (1/sessione, 3 round, caratteristica spirito a 9, Ki al massimo). Dopo la fusione lo spirito resta in silenzio per il resto della scena, ma **non torna da Tellus** — resta comunque accanto al PG.
 
 Se la fusione è già avvenuta prima del richiamo (uno spirito già fuso e poi tornato da Tellus), il richiamo ne attiva una nuova fusione — la Madre li ha ricaricati.
 
+[cast|blank]
+
 ---
 
 ## EPILOGO — La Dea Risorta
+
+[cast|Immagini/Avventura/StautaTellus.png|La statua di Tellus risorge nella piazza]
 
 _Da leggere al tavolo (dopo la sconfitta dell'ultimo boss):_
 
@@ -556,6 +673,11 @@ _Da leggere al tavolo (dopo la sconfitta dell'ultimo boss):_
 
 _Solo i PG la sentono — nella testa, piena e calda:_
 
+[tlg|Tutti|Figli miei — perché ora siete figli miei — avete aperto la porta. Avete portato i miei sei a casa. Il male che premeva contro la mia luce, oggi, è sconfitto.
+Questa città vi ha rifiutati. Vi ha buttati nel buio come scarti. Voi l'avete salvata comunque. Questo è il dono che fate al mondo. Un dono che il mondo non meritava e che ora, forse, imparerà a meritare.
+I miei sei non torneranno più da me. Sono vostri. E voi siete loro. Ciò che avete costruito sotto terra — l'En, il legame, la fiducia — resta. Per sempre.
+Non siete più reietti. Non siete più condannati. Siete i miei Cavalieri. Camminate in pace.]
+
 > _"Figli miei — perché ora siete figli miei — avete aperto la porta. Avete portato i miei sei a casa. Il male che premeva contro la mia luce, oggi, è sconfitto."_
 > 
 > _"Questa città vi ha rifiutati. Vi ha buttati nel buio come scarti. Voi l'avete salvata comunque. Questo è il dono che fate al mondo. Un dono che il mondo non meritava e che ora, forse, imparerà a meritare."_
@@ -585,6 +707,8 @@ _Il GM descrive, uno alla volta, una piccola scena finale per ogni PG. Richiama 
 
 ### Ultima scena
 
+[cast|Immagini/GruppoMax.png|I Sei — i Cavalieri della Madre]
+
 > Il sole cala sul deserto. La statua di Tellus brilla ancora debolmente. Le radici di luce pulsano piano sotto la città, sotto le fosse, fino al deserto — un battito costante.
 > 
 > Siete in piedi sulla piazza. Nelle vostre mani, le armi. Accanto a voi, i vostri spiriti. Davanti a voi, la città che vi aveva condannati e che ora vi acclama.
@@ -594,6 +718,8 @@ _Il GM descrive, uno alla volta, una piccola scena finale per ogni PG. Richiama 
 > Non siete più reietti.
 > 
 > Siete **I Sei**. I Cavalieri della Madre.
+
+[cast|blank]
 
 ---
 
