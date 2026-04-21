@@ -39,11 +39,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Giudice. Poche parole, solide come roccia. Bianco o nero.
 
-|Potere|Nome|Effetto (sul PG)|
-|---|---|---|
-|Passivo|Corazza Spirituale|Il PG sente la terra sotto i piedi come parte di sé. Cade senza farsi male, regge pesi che spezzerebbero altri, non vacilla nel vento. Quando decide di restare fermo, nessuno riesce a smuoverlo|
-|Attivo (costa Ki)|Radice di Pietra|Il PG si ancora: **Radice +3** sui tiri difensivi, non può essere spostato né spinto. **Dura 1 round per ogni Ki speso**|
-|Fusione (1/sessione, 3 round, scelta dallo spirito)|Forma di Granito|Per 3 round **Radice 9**, Ki al massimo: gli attacchi fisici diretti non lo scalfiscono (danno ignorato), gli attacchi speciali sono dimezzati|
+| Potere            | Nome               | Effetto (sul PG)                                                                                                                                                                              |
+| ----------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo           | Corazza Spirituale | Il PG sente la terra sotto i piedi come parte di sé. Cade senza farsi male, regge pesi che spezzerebbero altri, non vacilla nel vento. Quando decide di restare fermo, complicato a smuoverlo |
+| Attivo (costa Ki) | Radice di Pietra   | Il PG si ancora: **Radice +3** sui tiri difensivi, non può essere spostato né spinto, non si può muovere. **Dura 1 round per ogni Ki speso**.                                                 |
+| Fusione           | Forma di Granito   | Per 3 round **Radice 9**, Ki al massimo: gli attacchi fisici diretti non lo scalfiscono (danno ignorato), gli attacchi speciali sono dimezzati                                                |
 
 ---
 
@@ -51,11 +51,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Sente tutto, sempre, anche ciò che non vorrebbe. Nulla gli sfugge.
 
-| Potere                        | Nome               | Effetto (sul PG)                                                                                                                                                                                                                                                                  |
-| ----------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Passivo | Orecchie del Mondo | Il PG sente ciò che gli altri ignorano: il respiro di chi si nasconde, il ticchettio di un meccanismo sotto la pietra, un nemico che si avvicina da lontano. Il mondo non ha più angoli ciechi per lui |
-| Attivo (costa Ki) | Frequenza Rivelata | Il PG sente ogni mossa prima che accada: tutti i tiri di difesa sono **successo automatico** e ogni attacco ha **+2 al tiro**. **Dura 1 round per ogni Ki speso** |
-| Fusione (1/sessione, 3 round, scelta dallo spirito) | Silenzio Assoluto | Per 3 round **Eco 9**, Ki al massimo: conosce in anticipo ogni attacco e ogni intenzione. Difesa automatica contro ogni colpo, +2 a ogni tiro offensivo |
+| Potere            | Nome               | Effetto (sul PG)                                                                                                                                                                                       |
+| ----------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Passivo           | Orecchie del Mondo | Il PG sente ciò che gli altri ignorano: il respiro di chi si nasconde, il ticchettio di un meccanismo sotto la pietra, un nemico che si avvicina da lontano. Il mondo non ha più angoli ciechi per lui |
+| Attivo (costa Ki) | Frequenza Rivelata | Il PG sente ogni mossa prima che accada: tutti i tiri di difesa sono **successo automatico**. **Dura 1 round per ogni Ki speso**                                                                       |
+| Fusione           | Silenzio Assoluto  | Per 3 round **Eco 9**, Ki al massimo: conosce in anticipo ogni attacco e ogni intenzione. Difesa automatica contro ogni colpo, +2 a ogni tiro offensivo                                                |
 
 ---
 
@@ -63,11 +63,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Fuoco e pericolo. Cammina attraverso la distruzione come fosse la sua lingua.
 
-|Potere|Nome|Effetto (sul PG)|
-|---|---|---|
-|Passivo|Sangue Alchemico|Il sangue del PG scalda le vene come brace sotto la cenere. Non teme il freddo, le fiamme normali non lo ustionano, la sua arma fuma leggermente quando colpisce|
-|Attivo (costa Ki)|Mani di Brace|Ogni colpo a segno del PG infligge **+2 danno** e incendia il bersaglio (1 danno residuo il turno successivo). **Dura 1 round per ogni Ki speso**|
-|Fusione (1/sessione, 3 round, scelta dallo spirito)|Conflagrazione|Per 3 round **Scintilla 9**, Ki al massimo: immune al fuoco e al danno fisico, ogni attacco a segno è **critico automatico**|
+| Potere            | Nome             | Effetto (sul PG)                                                                                                                                                 |
+| ----------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo           | Sangue Alchemico | Il sangue del PG scalda le vene come brace sotto la cenere. Non teme il freddo, le fiamme normali non lo ustionano, la sua arma fuma leggermente quando colpisce |
+| Attivo (costa Ki) | Mani di Brace    | Ogni colpo a segno del PG infligge **+2 danno** e incendia il bersaglio (1 danno residuo il turno successivo). **Dura 1 round per ogni Ki speso**                |
+| Fusione           | Conflagrazione   | Per 3 round **Scintilla 9**, Ki al massimo: immune al fuoco e al danno fisico, ogni attacco a segno è **critico automatico**                                     |
 
 ---
 
@@ -75,11 +75,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Fragile, bellezza impossibile, lettore di maschere e intenzioni.
 
-|Potere|Nome|Effetto (sul PG)|
-|---|---|---|
-|Passivo|Mimetismo dell'Anima|Il PG diventa fondo tra i fondi: chi lo guarda senza cercarlo non lo trova. Nelle folle passa inosservato, nelle ombre si confonde con le ombre, i suoi contorni sembrano sfumare|
-|Attivo (costa Ki)|Foglia che Cade|Il PG non può essere bersagliato da attacchi diretti (è visibile, ma chi mira a lui lo manca). Può riapparire alle spalle di un nemico per attaccare con vantaggio. **Dura 1 round per ogni Ki speso**|
-|Fusione (1/sessione, 3 round, scelta dallo spirito)|Vuoto di Foresta|Per 3 round **Ombra 9**, Ki al massimo: invisibile e intangibile. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira|
+| Potere            | Nome                 | Effetto (sul PG)                                                                                                                                                                  |
+| ----------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo           | Mimetismo dell'Anima | Il PG diventa fondo tra i fondi: chi lo guarda senza cercarlo non lo trova. Nelle folle passa inosservato, nelle ombre si confonde con le ombre, i suoi contorni sembrano sfumare |
+| Attivo (costa Ki) | Foglia che Cade      | Il PG può riapparire alle spalle di un nemico per attaccare con vantaggio. **Dura 1 round per ogni Ki speso**                                                                     |
+| Fusione           | Vuoto di Foresta     | Per 3 round **Ombra 9**, Ki al massimo: invisibile e intangibile. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira                           |
 
 ---
 
@@ -87,11 +87,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Trasparente, immortale. Si arrende alle correnti e diventa la corrente stessa.
 
-|Potere|Nome|Effetto (sul PG)|
-|---|---|---|
-|Passivo|Percezione Eterea|Il PG percepisce i fili invisibili che muovono il mondo: trappole nascoste, correnti d'aria cambiate, sguardi che lo seguono da lontano. Vede prima di vedere|
-|Attivo (costa Ki)|Corrente Sospesa|Il PG entra nel flusso: schiva automaticamente il **primo attacco di ogni turno** e lo restituisce al mittente con **Flusso +2**. **Dura 1 round per ogni Ki speso**|
-|Fusione (1/sessione, 3 round, scelta dallo spirito)|Marea Eterna|Per 3 round **Flusso 9**, Ki al massimo: ogni attacco diretto contro di lui è schivato automaticamente, una volta per turno può rispedirlo al mittente|
+| Potere            | Nome              | Effetto (sul PG)                                                                                                                                                     |
+| ----------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo           | Percezione Eterea | Il PG percepisce i fili invisibili che muovono il mondo: trappole nascoste, correnti d'aria cambiate, sguardi che lo seguono da lontano. Vede prima di vedere        |
+| Attivo (costa Ki) | Corrente Sospesa  | Il PG entra nel flusso: schiva automaticamente il **primo attacco di ogni turno** e lo restituisce al mittente con **Flusso +2**. **Dura 1 round per ogni Ki speso** |
+| Fusione           | Marea Eterna      | Per 3 round **Flusso 9**, Ki al massimo: ogni attacco diretto contro di lui è automaticamente rispedirlo al mittente                                                 |
 
 ---
 
@@ -99,11 +99,11 @@ Durante la **Fusione** il PG riceve per 3 round: **caratteristica dello spirito 
 
 **Personalità:** Energia pura compressa in niente. Vive al limite. Cuore a 1200 battiti.
 
-|Potere|Nome|Effetto (sul PG)|
-|---|---|---|
-|Passivo|Riflessi Accelerati|Il cuore del PG batte al ritmo del fulmine: reagisce prima di pensare, schiva prima di sapere, le sue mani si muovono mentre gli altri stanno ancora guardando|
-|Attivo (costa Ki)|Lampo Vivente|Il PG agisce **due volte nello stesso turno** (due attacchi, oppure un attacco + un movimento, oppure due reazioni). **Dura 1 round per ogni Ki speso**|
-|Fusione (1/sessione, 3 round, scelta dallo spirito)|Supernova del Battito|Per 3 round **Battito 9**, Ki al massimo, due azioni per turno. Inoltre una volta nella scena può far **riavvolgere** il round corrente e farlo rigiocare al gruppo con le informazioni appena ottenute|
+| Potere            | Nome                  | Effetto (sul PG)                                                                                                                                                                                         |
+| ----------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passivo           | Riflessi Accelerati   | Il cuore del PG batte al ritmo del fulmine: reagisce prima di pensare, schiva prima di sapere, le sue mani si muovono mentre gli altri stanno ancora guardando.                                          |
+| Attivo (costa Ki) | Lampo Vivente         | Il PG agisce **due volte nello stesso turno** (due attacchi, oppure un attacco + un movimento, oppure due reazioni). **Dura 1 round per ogni Ki speso**                                                  |
+| Fusione           | Supernova del Battito | Per 3 round **Battito 9**, Ki al massimo, due azioni per turno. Inoltre una volta nella scena può far **riavvolgere** il round corrente e farlo rigiocare al gruppo con le informazioni appena ottenute. |
 
 
 ### Carattere degli spirti

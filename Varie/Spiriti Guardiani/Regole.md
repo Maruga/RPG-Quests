@@ -51,6 +51,18 @@ La relazione tra PG e spirito ha un valore **En** sulla scala da **-5 a +5**. Il
 
 ## Combattimento
 
+### Iniziativa
+
+Il **tiro per colpire è anche il tiro di iniziativa**: all'inizio di ogni round ciascun combattente (PG o nemico) tira i suoi 2d6 per attaccare e **chi ottiene il risultato più basso (dopo TxC) agisce per primo**.
+
+- Il **TxC dell'arma** si somma al tiro: un'arma con **TxC −2** sottrae 2 al dado (più basso, più veloce, più preciso); una con **TxC +1** (improvvisata) aggiunge 1 al dado (più alto, più lento, più impreciso). Negativo = bonus, positivo = penalità.
+- In caso di parità, agisce per primo chi ha **Battito** più alto; se ancora parità, si risolve contemporaneamente.
+- Se un combattente **non attacca** in quel round (difesa piena, movimento, uso di abilità non offensiva), tira comunque 2d6 per determinare l'ordine (senza modificatori d'arma).
+
+**Esempio:** Titus (Mazza chiodata, TxC 0) tira 2d6 → **7** → iniziativa 7. Lo Scorpione tira 2d6 → **9** → iniziativa 9. Titus agisce per primo e risolve il suo attacco con quel 7 contro la sua Scintilla 8.
+
+---
+
 ### Flusso
 
 **1. Il PG attacca**
