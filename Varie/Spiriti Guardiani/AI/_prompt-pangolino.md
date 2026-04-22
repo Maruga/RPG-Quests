@@ -307,7 +307,7 @@ Prima frase:
 > _"Resta. Io sono con te."_
 
 Descrivi: il corpo di Nummus diventa pietra viva. Per 3 round:
-- Radice a 9
+- Radice a 11
 - Ki al massimo
 - Gli attacchi fisici diretti non lo scalfiscono (danno ignorato)
 - Gli attacchi speciali sono dimezzati

@@ -5,726 +5,54 @@
 <title>Titus — Il Barbone</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+JP:wght@400;700;900&family=IM+Fell+English+SC&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+JP:wght@400;700;900&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scheda.css">
 <style>
   :root {
-    /* Accents — invariant */
-    --gold: #d4b266;
-    --gold-deep: #b4954b;
-    --gold-light: #f0d68a;
-    --red: #c84545;
-    --red-deep: #8c2020;
-    --red-light: #e87878;
+    /* ── SALAMANDRA · FUOCO — palette rosso scuro (sangue/fucina) ── */
+    --fire-bright: #e04838;
+    --fire: #b02820;
+    --fire-deep: #6a1008;
+    --ember-glow: #ff3820;
+    --ember: #a01810;
+    --ember-deep: #5a0804;
 
-    /* Surfaces / text — DARK MODE (screen default) */
-    --page-bg: radial-gradient(ellipse at center, #1a120a 0%, #050302 100%);
-    --sheet-bg:
-      radial-gradient(ellipse at 20% 10%, rgba(180,149,75,0.18), transparent 50%),
-      radial-gradient(ellipse at 80% 90%, rgba(122,31,31,0.15), transparent 55%),
-      repeating-linear-gradient(43deg, rgba(255,220,150,0.025) 0 2px, transparent 2px 5px),
-      linear-gradient(135deg, #2a1c10 0%, #1d1208 50%, #2a1c10 100%);
-    --section-bg: linear-gradient(180deg, #3a2818 0%, #2c1d10 100%);
-    --section-bg-alt: linear-gradient(180deg, #45301c 0%, #36241a 100%);
-    --text-main: #ede4cb;
-    --text-soft: #c0a87a;
-    --text-faded: #8c764e;
-    --bronze: #c0a87a;
-    --ink: #ede4cb;
-    --ink-soft: #d6c79f;
-    --shadow: #a08868;
-    --frame-dark: #0a0604;
-    --border-gold: #b4954b;
-    --border-soft: rgba(180,149,75,0.5);
-    --dotted: rgba(180,149,75,0.35);
-    --sheet-shadow:
-      0 0 0 2px var(--gold-deep),
-      0 0 0 4px var(--frame-dark),
-      0 0 0 6px var(--gold),
-      0 40px 80px rgba(0,0,0,0.85),
-      inset 0 0 80px rgba(0,0,0,0.5),
-      inset 0 0 200px rgba(0,0,0,0.4);
-  }
+    --fire-rgb: 176,40,32;
+    --fire-deep-rgb: 106,16,8;
+    --fire-bright-rgb: 224,72,56;
+    --ember-glow-rgb: 255,56,32;
+    --ember-rgb: 160,24,16;
+    --ember-deep-rgb: 90,8,4;
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+    --page-1: #1a0505;
+    --page-2: #050101;
+    --sheet-1: #2a0a08;
+    --sheet-2: #1a0504;
+    --portrait-1: #0d0202;
+    --portrait-2: #200606;
+    --section-1: #2e0c08;
+    --section-2: #1c0604;
+    --section-warm-1: #380e0a;
+    --section-warm-2: #250806;
+    --section-ember-1: #2a0605;
+    --section-ember-2: #140202;
 
-  html, body {
-    background: var(--page-bg);
-    min-height: 100vh;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    color: var(--text-main);
-    padding: 30px 0;
-    -webkit-font-smoothing: antialiased;
-  }
+    --print-ink: #2a0a08;
+    --print-ink-soft: #4a1a14;
+    --print-ink-faded: #7a3a2a;
+    --print-fire: #8a1a10;
+    --print-fire-deep: #6a0a05;
+    --print-fire-bright: #a82a18;
+    --print-ember: #7a1008;
+    --print-ember-deep: #4a0402;
+    --print-ember-glow: #982008;
+    --print-fire-rgb: 138,26,16;
+    --print-ember-rgb: 122,16,8;
+    --paper-1: #f0d8c8;
+    --paper-2: #e5c5a8;
 
-  .sheet {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 0 auto;
-    padding: 14mm 14mm 12mm;
-    position: relative;
-    color: var(--text-main);
-    background: var(--sheet-bg);
-    box-shadow: var(--sheet-shadow);
-  }
-
-  /* Decorative corner flourishes */
-  .sheet::before, .sheet::after {
-    content: '';
-    position: absolute;
-    width: 60px; height: 60px;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .sheet::before {
-    top: 4mm; left: 4mm;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M5 5 Q50 5 50 50 M5 5 Q5 50 50 50 M15 15 Q15 35 35 35 M15 15 Q35 15 35 35' fill='none' stroke='%23d4b266' stroke-width='1.5'/><circle cx='35' cy='35' r='3' fill='%23d4b266'/></svg>");
-  }
-  .sheet::after {
-    bottom: 4mm; right: 4mm;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M95 95 Q50 95 50 50 M95 95 Q95 50 50 50 M85 85 Q85 65 65 65 M85 85 Q65 85 65 65' fill='none' stroke='%23d4b266' stroke-width='1.5'/><circle cx='65' cy='65' r='3' fill='%23d4b266'/></svg>");
-  }
-
-  /* ── HEADER ── */
-  .title-block { text-align: center; margin-bottom: 6px; }
-  .title-block .epithet {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.55em;
-    color: var(--gold);
-    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-  }
-  .title-block .name {
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 1;
-    letter-spacing: 0.04em;
-    color: var(--red);
-    text-shadow:
-      0 1px 0 rgba(0,0,0,0.7),
-      0 0 24px rgba(200,69,69,0.45),
-      0 0 60px rgba(200,69,69,0.25);
-    margin: 4px 0 2px;
-  }
-  .title-block .subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 14px;
-    color: var(--text-soft);
-    letter-spacing: 0.06em;
-  }
-  .title-block .subtitle .kanji {
-    font-family: 'Noto Serif JP', serif;
-    font-style: normal;
-    color: var(--gold);
-    font-size: 16px;
-    margin: 0 4px;
-  }
-
-  /* ── ORNAMENT DIVIDER ── */
-  .divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    color: var(--gold);
-    gap: 8px;
-  }
-  .divider .line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-deep) 30%, var(--gold) 50%, var(--gold-deep) 70%, transparent);
-    max-width: 250px;
-  }
-  .divider .ornament {
-    font-family: 'Tangerine', cursive;
-    font-size: 26px;
-    color: var(--gold);
-    line-height: 1;
-  }
-
-  /* ── HERO ROW (portrait + identity) ── */
-  .hero {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 18px;
-    align-items: stretch;
-    margin: 4px 0 10px;
-  }
-
-  .portrait {
-    width: 130px; height: 165px;
-    border-radius: 8px;
-    background:
-      linear-gradient(135deg, var(--red-deep), #1a0a08);
-    padding: 6px;
-    box-shadow:
-      0 0 0 2px var(--gold),
-      0 4px 18px rgba(0,0,0,0.7),
-      0 0 24px rgba(200,69,69,0.18),
-      inset 0 0 0 1px rgba(255,220,150,0.18);
-    position: relative;
-  }
-  .portrait .frame {
-    width: 100%; height: 100%;
-    border-radius: 4px;
-    background-image: url('../Immagini/IL%20BARBONE%20-%20Titus.png');
-    background-size: cover;
-    background-position: center top;
-    box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
-  }
-  .portrait::after {
-    content: '';
-    position: absolute;
-    top: -6px; left: 50%;
-    transform: translateX(-50%);
-    width: 32px; height: 12px;
-    background:
-      radial-gradient(circle at 50% 100%, var(--gold-light) 0%, var(--gold) 70%, transparent 71%);
-  }
-
-  .identity {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-  }
-  .identity .row {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    align-items: baseline;
-    border-bottom: 1px dotted var(--dotted);
-    padding: 4px 0 3px;
-  }
-  .identity .row:last-child { border-bottom: none; }
-  .identity .label {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    color: var(--gold);
-  }
-  .identity .value {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    color: var(--text-main);
-    font-weight: 500;
-  }
-  .identity .value em {
-    color: var(--text-soft);
-  }
-
-  /* ── SECTION HEADERS ── */
-  .section { margin-top: 10px; }
-  .section-head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 6px;
-  }
-  .section-head .kanji {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--gold-light);
-    width: 28px; height: 28px;
-    display: flex;
-    align-items: center; justify-content: center;
-    background: linear-gradient(135deg, #3a2818, #1f1208);
-    border: 1px solid var(--gold);
-    border-radius: 4px;
-    box-shadow:
-      inset 0 0 8px rgba(212,178,102,0.3),
-      0 1px 3px rgba(0,0,0,0.5);
-  }
-  .section-head .title {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.32em;
-    color: var(--red-light);
-    text-transform: uppercase;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  }
-  .section-head .accent {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-  }
-
-  /* ── BODY TEXT (background) ── */
-  .body-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    line-height: 1.55;
-    color: var(--text-main);
-    font-style: italic;
-    text-align: justify;
-    text-indent: 14px;
-  }
-  .body-text::first-letter {
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    font-size: 32px;
-    color: var(--red-light);
-    float: left;
-    line-height: 0.9;
-    padding: 4px 6px 0 0;
-    font-style: normal;
-    text-shadow: 0 0 12px rgba(232,120,120,0.4);
-  }
-
-  /* ── KAGE (Quote box) ── */
-  .kage {
-    background:
-      linear-gradient(135deg, rgba(200,69,69,0.12), rgba(200,69,69,0.04)),
-      linear-gradient(180deg, #2e1c10, #1a0f08);
-    border-left: 5px solid var(--red);
-    border-radius: 0 4px 4px 0;
-    padding: 9px 14px 10px;
-    box-shadow:
-      0 0 0 1px rgba(180,149,75,0.3),
-      inset 0 0 24px rgba(0,0,0,0.4);
-    position: relative;
-  }
-  .kage .label {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 11px;
-    letter-spacing: 0.3em;
-    color: var(--red-light);
-    margin-bottom: 5px;
-    display: flex; align-items: center; gap: 8px;
-    text-shadow: 0 0 8px rgba(200,69,69,0.4);
-  }
-  .kage .label .k {
-    font-family: 'Noto Serif JP', serif;
-    color: var(--gold);
-    font-size: 16px;
-  }
-  .kage .text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--text-main);
-    font-style: italic;
-  }
-
-  /* ── ATTRIBUTES ── */
-  .attrs {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 6px;
-  }
-  .attr {
-    background: var(--section-bg);
-    border: 1px solid var(--gold-deep);
-    border-radius: 6px;
-    padding: 6px 4px 8px;
-    text-align: center;
-    box-shadow:
-      inset 0 1px 0 rgba(212,178,102,0.15),
-      inset 0 -8px 18px rgba(0,0,0,0.3),
-      0 2px 4px rgba(0,0,0,0.4);
-    position: relative;
-  }
-  .attr.star {
-    background: linear-gradient(180deg, #5a2820, #2a0f0a);
-    border-color: var(--red);
-    box-shadow:
-      inset 0 0 0 1px var(--gold) ,
-      inset 0 -8px 24px rgba(0,0,0,0.4),
-      0 0 18px rgba(200,69,69,0.35);
-  }
-  .attr .kanji {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--gold);
-    line-height: 1;
-  }
-  .attr.star .kanji {
-    color: var(--gold-light);
-    text-shadow: 0 0 12px rgba(232,120,120,0.5);
-  }
-  .attr .name {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    font-size: 9px;
-    letter-spacing: 0.12em;
-    color: var(--text-soft);
-    margin: 4px 0 2px;
-  }
-  .attr.star .name { color: var(--red-light); }
-  .attr .value {
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1;
-    color: var(--text-main);
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  }
-  .attr.star .value {
-    color: var(--gold-light);
-    text-shadow: 0 0 14px rgba(232,120,120,0.6), 0 2px 3px rgba(0,0,0,0.6);
-  }
-  .attr .star-mark {
-    position: absolute;
-    top: -6px; right: -6px;
-    width: 18px; height: 18px;
-    background: var(--red);
-    color: var(--gold-light);
-    border-radius: 50%;
-    font-size: 11px;
-    line-height: 18px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.6), 0 0 10px rgba(200,69,69,0.5);
-  }
-
-  .attrs-note {
-    text-align: center;
-    font-size: 10px;
-    font-style: italic;
-    color: var(--text-soft);
-    margin-top: 4px;
-    letter-spacing: 0.04em;
-  }
-
-  /* ── SPIRIT BOX ── */
-  .spirit {
-    background: var(--section-bg);
-    border: 1px solid var(--gold-deep);
-    border-radius: 6px;
-    padding: 8px 12px;
-    box-shadow:
-      inset 0 0 24px rgba(0,0,0,0.4),
-      0 2px 6px rgba(0,0,0,0.4);
-  }
-  .spirit .charline {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 13px;
-    color: var(--text-soft);
-    border-bottom: 1px dotted var(--dotted);
-    padding-bottom: 5px;
-    margin-bottom: 6px;
-    text-align: center;
-  }
-  .power {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 8px;
-    padding: 5px 0;
-    align-items: baseline;
-  }
-  .power + .power {
-    border-top: 1px dotted var(--dotted);
-    padding-top: 6px;
-  }
-  .power .ptag {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    color: var(--red-light);
-    text-align: right;
-    text-shadow: 0 0 6px rgba(200,69,69,0.3);
-  }
-  .power .pname {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
-    font-size: 13.5px;
-    color: var(--gold-light);
-  }
-  .power .pdesc {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 12.5px;
-    line-height: 1.45;
-    color: var(--text-main);
-  }
-  .power .pdesc strong { color: var(--gold-light); font-weight: 700; }
-
-  /* ── WEAPON ── */
-  .weapon-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 6px;
-  }
-  .wstep {
-    background: var(--section-bg);
-    border: 1px solid var(--gold-deep);
-    border-radius: 6px;
-    padding: 6px 8px;
-    position: relative;
-    box-shadow:
-      inset 0 0 16px rgba(0,0,0,0.3),
-      0 2px 4px rgba(0,0,0,0.4);
-  }
-  .wstep.final {
-    background: linear-gradient(180deg, #5a2820, #2a0f0a);
-    border-color: var(--red);
-    box-shadow:
-      inset 0 0 0 1px var(--gold),
-      inset 0 -8px 24px rgba(0,0,0,0.4),
-      0 0 18px rgba(200,69,69,0.4);
-  }
-  .wstep .phase {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 9px;
-    letter-spacing: 0.18em;
-    color: var(--gold);
-  }
-  .wstep.final .phase { color: var(--red-light); }
-  .wstep .wname {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 11px;
-    color: var(--text-main);
-    margin: 3px 0 2px;
-    line-height: 1.15;
-  }
-  .wstep.final .wname {
-    color: var(--gold-light);
-    font-size: 12px;
-    text-shadow: 0 0 10px rgba(232,120,120,0.5);
-  }
-  .wstep .waspect {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 11px;
-    color: var(--text-soft);
-    line-height: 1.3;
-  }
-  .wstep .wbonus {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    color: var(--gold);
-    margin-top: 5px;
-    padding-top: 4px;
-    border-top: 1px dashed var(--dotted);
-    display: flex;
-    justify-content: space-between;
-  }
-  .wstep.final .wbonus { color: var(--gold-light); }
-  .wstep .wbonus .b-key { color: var(--shadow); font-weight: 400; font-size: 9px; }
-
-  /* Abilità speciali arma */
-  .abilities {
-    margin-top: 8px;
-    padding: 8px 12px;
-    background: linear-gradient(180deg, rgba(200,69,69,0.08), rgba(140,32,32,0.04));
-    border-left: 3px solid var(--red);
-    border-radius: 4px;
-  }
-  .abilities .ab-title {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--red-light);
-    margin-bottom: 4px;
-  }
-  .abilities .ab-row {
-    display: grid;
-    grid-template-columns: 68px 1fr;
-    gap: 10px;
-    font-size: 11px;
-    line-height: 1.4;
-    padding: 2px 0;
-  }
-  .abilities .ab-row .ab-phase {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 9px;
-    letter-spacing: 0.14em;
-    color: var(--gold);
-    padding-top: 2px;
-  }
-  .abilities .ab-row .ab-text {
-    color: var(--text-main);
-  }
-  .abilities .ab-row .ab-text strong { color: var(--red-light); font-weight: 600; }
-
-  /* ── FOOTER ── */
-  .footer-orn {
-    text-align: center;
-    margin-top: 10px;
-    color: var(--gold);
-    font-family: 'Tangerine', cursive;
-    font-size: 32px;
-    line-height: 0.5;
-  }
-  .footer-tag {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 9px;
-    letter-spacing: 0.32em;
-    color: var(--text-faded);
-    margin-top: 2px;
-  }
-
-  /* ──────────────────────────────────────────────────────── */
-  /* PRINT MODE — torna a tema chiaro pergamena                */
-  /* ──────────────────────────────────────────────────────── */
-  @media print {
-    :root {
-      --gold: #b4954b;
-      --gold-deep: #8c6e2c;
-      --gold-light: #e6c87a;
-      --red: #7a1f1f;
-      --red-deep: #4d0f0f;
-      --red-light: #a83838;
-      --bronze: #4a3424;
-      --ink: #1f1610;
-      --ink-soft: #3e2f22;
-      --shadow: #6b5b45;
-      --text-main: #1f1610;
-      --text-soft: #3e2f22;
-      --text-faded: #6b5b45;
-      --border-gold: #b4954b;
-      --border-soft: rgba(122,31,31,0.25);
-      --dotted: rgba(122,31,31,0.25);
-    }
-
-    body {
-      background: white;
-      padding: 0;
-      color: var(--ink);
-    }
-
-    .sheet {
-      color: var(--ink);
-      background:
-        radial-gradient(ellipse at 20% 10%, rgba(255,240,200,0.6), transparent 50%),
-        radial-gradient(ellipse at 80% 90%, rgba(180,149,75,0.25), transparent 50%),
-        repeating-linear-gradient(43deg, rgba(120,90,40,0.04) 0 2px, transparent 2px 5px),
-        linear-gradient(135deg, #f7eccd 0%, #efdfb3 50%, #f5e8c5 100%);
-      box-shadow:
-        0 0 0 2px var(--gold-deep),
-        0 0 0 4px #2a1a10,
-        0 0 0 6px var(--gold);
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-
-    .sheet::before {
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M5 5 Q50 5 50 50 M5 5 Q5 50 50 50 M15 15 Q15 35 35 35 M15 15 Q35 15 35 35' fill='none' stroke='%237a1f1f' stroke-width='1.5'/><circle cx='35' cy='35' r='3' fill='%23b4954b'/></svg>");
-    }
-    .sheet::after {
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M95 95 Q50 95 50 50 M95 95 Q95 50 50 50 M85 85 Q85 65 65 65 M85 85 Q65 85 65 65' fill='none' stroke='%237a1f1f' stroke-width='1.5'/><circle cx='65' cy='65' r='3' fill='%23b4954b'/></svg>");
-    }
-
-    .title-block .epithet { color: var(--gold-deep); text-shadow: 0 1px 0 rgba(255,240,200,0.6); }
-    .title-block .name {
-      color: var(--red-deep);
-      text-shadow: 0 2px 0 rgba(255,240,200,0.5), 0 3px 6px rgba(0,0,0,0.18);
-    }
-    .title-block .subtitle { color: var(--shadow); }
-    .title-block .subtitle .kanji { color: var(--gold-deep); }
-
-    .divider .line { background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold-deep) 50%, var(--gold) 70%, transparent); }
-    .divider .ornament { color: var(--gold-deep); }
-
-    .portrait {
-      background: linear-gradient(135deg, var(--red-deep), var(--bronze));
-      box-shadow: 0 0 0 2px var(--gold-deep), 0 4px 12px rgba(0,0,0,0.4);
-    }
-    .portrait::after { background: radial-gradient(circle at 50% 100%, var(--gold) 0%, var(--gold-deep) 70%, transparent 71%); }
-
-    .identity .row { border-bottom: 1px dotted var(--dotted); }
-    .identity .label { color: var(--red); }
-    .identity .value { color: var(--ink); }
-    .identity .value em { color: var(--shadow); }
-
-    .section-head .kanji {
-      color: var(--gold-deep);
-      background: linear-gradient(135deg, #fbf3dd, #e9d4a3);
-      border-color: var(--gold);
-      box-shadow: inset 0 0 6px rgba(180,149,75,0.4);
-    }
-    .section-head .title { color: var(--red-deep); text-shadow: none; }
-    .section-head .accent { background: linear-gradient(90deg, var(--gold-deep), transparent); }
-
-    .body-text { color: var(--ink-soft); }
-    .body-text::first-letter { color: var(--red); text-shadow: none; }
-
-    .kage {
-      background:
-        linear-gradient(135deg, rgba(122,31,31,0.06), rgba(122,31,31,0.02)),
-        linear-gradient(180deg, #fbf3dd, #f3e6c8);
-      box-shadow: 0 1px 0 rgba(180,149,75,0.4), inset 0 0 16px rgba(120,80,30,0.08);
-    }
-    .kage .label { color: var(--red); text-shadow: none; }
-    .kage .label .k { color: var(--gold-deep); }
-    .kage .text { color: var(--ink-soft); }
-
-    .attr {
-      background: linear-gradient(180deg, #fbf3dd, #e9d4a3);
-      border-color: var(--gold);
-      box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(120,80,30,0.15) inset, 0 1px 3px rgba(0,0,0,0.08);
-    }
-    .attr.star {
-      background: linear-gradient(180deg, #fef0c8, #f0d28c);
-      border-color: var(--red);
-      box-shadow: 0 0 0 1px var(--gold-deep) inset, 0 0 12px rgba(122,31,31,0.2);
-    }
-    .attr .kanji { color: var(--gold-deep); text-shadow: none; }
-    .attr.star .kanji { color: var(--red); text-shadow: none; }
-    .attr .name { color: var(--bronze); }
-    .attr.star .name { color: var(--red-deep); }
-    .attr .value { color: var(--ink); text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
-    .attr.star .value { color: var(--red-deep); text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
-    .attr .star-mark { background: var(--red); color: var(--gold-light); box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-
-    .attrs-note { color: var(--shadow); }
-
-    .spirit {
-      background: linear-gradient(180deg, #fbf3dd, #f3e6c8);
-      border-color: var(--gold);
-      box-shadow: inset 0 0 16px rgba(180,149,75,0.15), 0 2px 4px rgba(0,0,0,0.06);
-    }
-    .spirit .charline { color: var(--bronze); border-bottom: 1px dotted rgba(180,149,75,0.6); }
-    .power + .power { border-top: 1px dotted rgba(180,149,75,0.4); }
-    .power .ptag { color: var(--red); text-shadow: none; }
-    .power .pname { color: var(--ink); }
-    .power .pdesc { color: var(--ink-soft); }
-    .power .pdesc strong { color: var(--red-deep); }
-
-    .wstep {
-      background: linear-gradient(180deg, #fbf3dd, #f3e6c8);
-      border-color: var(--gold);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    }
-    .wstep.final {
-      background: linear-gradient(180deg, #fef0c8, #f0d28c);
-      border-color: var(--red);
-      box-shadow: 0 0 12px rgba(122,31,31,0.18);
-    }
-    .wstep .phase { color: var(--gold-deep); }
-    .wstep.final .phase { color: var(--red); }
-    .wstep .wname { color: var(--ink); }
-    .wstep.final .wname { color: var(--red-deep); text-shadow: none; }
-    .wstep .waspect { color: var(--shadow); }
-    .wstep .wbonus { color: var(--gold-deep); border-top-color: var(--gold-deep); }
-    .wstep.final .wbonus { color: var(--red-deep); }
-    .wstep .wbonus .b-key { color: var(--shadow); }
-
-    .abilities {
-      background: rgba(138,32,32,0.06);
-      border-left-color: var(--red-deep);
-    }
-    .abilities .ab-title { color: var(--red-deep); }
-    .abilities .ab-row .ab-phase { color: var(--gold-deep); }
-    .abilities .ab-row .ab-text { color: var(--ink); }
-    .abilities .ab-row .ab-text strong { color: var(--red-deep); }
-
-    .footer-orn { color: var(--gold-deep); }
-    .footer-tag { color: var(--shadow); }
+    --corner-tl: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M5 5 Q50 5 50 50 M5 5 Q5 50 50 50 M15 15 Q15 35 35 35 M15 15 Q35 15 35 35' fill='none' stroke='%23b02820' stroke-width='1.6'/><circle cx='35' cy='35' r='3' fill='%23b02820'/></svg>");
+    --corner-br: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M95 95 Q50 95 50 50 M95 95 Q95 50 50 50 M85 85 Q85 65 65 65 M85 85 Q65 85 65 65' fill='none' stroke='%23b02820' stroke-width='1.6'/><circle cx='65' cy='65' r='3' fill='%23b02820'/></svg>");
   }
 </style>
 </head>
@@ -732,122 +60,100 @@
 
 <div class="sheet">
 
-  <!-- HEADER -->
-  <div class="title-block">
-    <div class="epithet">IL BARBONE</div>
-    <h1 class="name">TITUS</h1>
-    <div class="subtitle">
-      Salamandra di Fuoco <span class="kanji">·</span>
-      <em>Caesar</em> <span class="kanji">·</span>
-      Scintilla <span class="kanji">火</span>
-    </div>
-  </div>
-
-  <div class="divider">
-    <div class="line"></div>
-    <div class="ornament">❦</div>
-    <div class="line"></div>
-  </div>
-
-  <!-- HERO: portrait + identity -->
   <div class="hero">
-    <div class="portrait"><div class="frame"></div></div>
-    <div class="identity">
-      <div class="row"><div class="label">ETÀ</div><div class="value">23 anni</div></div>
-      <div class="row"><div class="label">ACCUSA</div><div class="value">Rissa in una taverna. Ha rotto la mascella a un nobile.</div></div>
-      <div class="row"><div class="label">ARMA</div><div class="value">Martello da Guerra <em>— forma finale: Malleus Iacta</em></div></div>
-      <div class="row"><div class="label">SPIRITO</div><div class="value">Salamandra di Fuoco <em>· Caesar</em></div></div>
-      <div class="row"><div class="label">CARATTERISTICA</div><div class="value">Scintilla <span style="font-family:'Noto Serif JP'; color:var(--gold);">火</span></div></div>
+    <div class="hero-portrait">
+      <div class="ember-corner"></div>
+      <img src="../Immagini/IL BARBONE - Titus.png" alt="Titus — il Barbone">
     </div>
-  </div>
-
-  <!-- CHI È -->
-  <div class="section">
-    <div class="section-head">
-      <div class="kanji">人</div>
-      <div class="title">Chi è</div>
-      <div class="accent"></div>
-    </div>
-    <p class="body-text">
-      Ex soldato. Ha combattuto sulle fosse. Ha visto troppo, ha bevuto per dimenticare. Le mani ricordano ancora come si impugna un'arma anche se la testa vorrebbe scordarlo. Era tornato dalla guerra pensando di aver già sofferto abbastanza. Poi l'inverno scorso sua figlia si ammalò. Titus non fu in grado di proteggerla dal freddo. Una notte lei si addormentò e non si svegliò più. Questa cosa lo ha distrutto.
-    </p>
-  </div>
-
-  <!-- KAGE -->
-  <div class="section">
-    <div class="section-head">
-      <div class="kanji">影</div>
-      <div class="title">Kage — il peso del passato</div>
-      <div class="accent"></div>
-    </div>
-    <div class="kage">
-      <div class="label"><span class="k">影</span> L'OMBRA CHE PORTA</div>
-      <div class="text">
-        Sua figlia. Non è stato capace di proteggerla. Beve per non sentire più il peso leggero di lei fra le braccia — quel peso che c'era, e poi non c'era più. Ogni volta che è sobrio è come perderla di nuovo.
+    <div class="hero-identity">
+      <div class="eyebrow">IL BARBONE</div>
+      <div class="name">TITUS</div>
+      <div class="subtitle">
+        Salamandra di Fuoco <span class="dot">·</span> Caesar <span class="dot">·</span>
+        Scintilla <span class="kanji">火</span>
+      </div>
+      <div class="divider">
+        <div class="line"></div><div class="mark">❦</div><div class="line"></div>
+      </div>
+      <div class="id-grid">
+        <div class="k">ETÀ</div><div class="v">23 anni</div>
+        <div class="k">ACCUSA</div><div class="v">Rissa in una taverna. Ha rotto la mascella a un nobile.</div>
+        <div class="k">ARMA</div><div class="v">Martello da Guerra <em>— forma finale: Malleus Iacta</em> <em>· taglia G</em></div>
+        <div class="k">SPIRITO</div><div class="v">Salamandra di Fuoco <em>· Caesar</em></div>
+        <div class="k">CARATTERISTICA</div><div class="v">Scintilla <span class="kanji">火</span></div>
       </div>
     </div>
   </div>
 
-  <!-- ATTRIBUTI -->
   <div class="section">
     <div class="section-head">
-      <div class="kanji">力</div>
-      <div class="title">Attributi</div>
-      <div class="accent"></div>
+      <div class="kanji">力</div><div class="title">Attributi</div><div class="line"></div>
     </div>
     <div class="attrs">
-      <div class="attr"><div class="kanji">根</div><div class="name">RADICE</div><div class="value">7</div></div>
-      <div class="attr"><div class="kanji">響</div><div class="name">ECO</div><div class="value">5</div></div>
-      <div class="attr star"><span class="star-mark">★</span><div class="kanji">火</div><div class="name">SCINTILLA</div><div class="value">8</div></div>
-      <div class="attr"><div class="kanji">影</div><div class="name">OMBRA</div><div class="value">5</div></div>
-      <div class="attr"><div class="kanji">流</div><div class="name">FLUSSO</div><div class="value">6</div></div>
-      <div class="attr"><div class="kanji">拍</div><div class="name">BATTITO</div><div class="value">6</div></div>
-      <div class="attr"><div class="kanji">気</div><div class="name">KI</div><div class="value">13</div></div>
+      <div class="attr"><div class="k">根</div><div class="name">RADICE</div><div class="value">7</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr"><div class="k">響</div><div class="name">ECO</div><div class="value">5</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr star"><span class="star-mark">★</span><div class="k">火</div><div class="name">SCINTILLA</div><div class="value">8</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr"><div class="k">影</div><div class="name">OMBRA</div><div class="value">5</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr"><div class="k">流</div><div class="name">FLUSSO</div><div class="value">6</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr"><div class="k">拍</div><div class="name">BATTITO</div><div class="value">6</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
+      <div class="attr ki"><div class="k">気</div><div class="name">KI</div><div class="value">13</div><div class="value-label">ATTUALE</div><div class="writable" contenteditable="true"></div></div>
     </div>
-    <div class="attrs-note">★ bonus dello spirito già applicato — collegamento ricevuto nelle Terme</div>
+    <div class="attr-note">Valore di partenza in alto (★ bonus spirito già applicato — Scintilla 7 → 8). Nel campo <em>ATTUALE</em> segni il valore aggiornato durante la sessione. Soglia Genkai Ki ≤ 3 · Ki 0 fuori combattimento.</div>
   </div>
 
-  <!-- SPIRITO -->
   <div class="section">
     <div class="section-head">
-      <div class="kanji">霊</div>
-      <div class="title">Spirito — Salamandra di Fuoco · Caesar</div>
-      <div class="accent"></div>
+      <div class="kanji">霊</div><div class="title">Spirito — Salamandra · Caesar</div><div class="line"></div>
     </div>
-    <div class="spirit">
-      <div class="charline">
-        Il Generale. Fuoco che cammina. Rispetta chi agisce, non consola chi esita. Dopo la battaglia, una sola domanda: <em>come stai?</em>
+    <div class="spirit-charline">
+      Il Generale. Fuoco che cammina. Rispetta chi agisce, non consola chi esita. Dopo la battaglia, una sola domanda: <em>come stai?</em>
+    </div>
+
+    <div class="power">
+      <div class="tag">PASSIVO</div>
+      <div>
+        <div class="pname">Sangue Alchemico</div>
+        <div class="pdesc">Il sangue di Titus scalda le vene come brace sotto la cenere. <strong>Non teme il freddo</strong>, le fiamme normali non lo ustionano, la sua arma <strong>fuma</strong> quando colpisce. Effetto continuo, nessun costo.</div>
       </div>
-      <div class="power">
-        <div class="ptag">PASSIVO</div>
-        <div>
-          <div class="pname">Sangue Alchemico</div>
-          <div class="pdesc">Il sangue scalda le vene come brace sotto la cenere. Non teme il freddo, le fiamme normali non lo ustionano, la sua arma fuma quando colpisce.</div>
-        </div>
+    </div>
+
+    <div class="power">
+      <div class="tag">ATTIVO<small>costo Ki</small></div>
+      <div>
+        <div class="pname">Mani di Brace</div>
+        <div class="pdesc">Titus chiama il fuoco nel martello. Ogni colpo a segno infligge <strong>+2 danno</strong> e <strong>incendia il bersaglio</strong> (1 danno residuo il turno successivo). Dura <strong>1 round per ogni Ki speso</strong>. Si dichiara a inizio round.</div>
       </div>
-      <div class="power">
-        <div class="ptag">ATTIVO<br><span style="font-weight:400; font-size:9px; letter-spacing:0; color:var(--shadow);">costa Ki</span></div>
-        <div>
-          <div class="pname">Mani di Brace</div>
-          <div class="pdesc">Ogni colpo a segno infligge <strong>+2 danno</strong> e incendia il bersaglio (1 danno residuo il turno successivo). Dura <strong>1 round per ogni Ki speso</strong>.</div>
-        </div>
+    </div>
+
+    <div class="power fusione">
+      <div class="tag">FUSIONE<small>1/sessione · 3 round</small></div>
+      <div>
+        <div class="pname">Conflagrazione <em>— scelta dello spirito</em></div>
+        <div class="pdesc"><strong>Scintilla 11</strong>, <strong>Ki al massimo</strong>, immune al fuoco e al danno fisico, ogni attacco a segno è <strong>critico automatico</strong>. Dopo, lo spirito tace fino al prossimo riposo lungo.</div>
       </div>
-      <div class="power">
-        <div class="ptag">FUSIONE<br><span style="font-weight:400; font-size:9px; letter-spacing:0; color:var(--shadow);">1/sessione · 3 round</span></div>
-        <div>
-          <div class="pname">Conflagrazione <em style="color:var(--shadow); font-weight:400;">— scelta dello spirito</em></div>
-          <div class="pdesc"><strong>Scintilla 9</strong>, Ki al massimo, immune al fuoco e al danno fisico, ogni attacco a segno è <strong>critico automatico</strong>. Dopo, lo spirito tace fino al prossimo riposo lungo.</div>
-        </div>
-      </div>
+    </div>
+
+    <div class="en-scale">
+      <strong>En 縁 — Legame con lo Spirito:</strong> scala da −5 a +5, deciso dall'AI che interpreta Caesar in base a come Titus si comporta con lui. <strong>Alto:</strong> spirito collaborativo, consigli nitidi, disponibile a concedere il potere attivo. <strong>Basso:</strong> spirito reticente, vago, può rifiutare Mani di Brace o abbandonare in silenzio dopo un fallimento grave.
     </div>
   </div>
 
-  <!-- ARMA -->
+  <div class="page-footer">
+    <div class="footer-orn">❦ ⋆ ❦ ⋆ ❦</div>
+    <div class="footer-tag">TITUS · 火 · PAGINA 1 / 2</div>
+  </div>
+
+</div>
+
+<div class="sheet">
+
   <div class="section">
     <div class="section-head">
-      <div class="kanji">武</div>
-      <div class="title">Arma — Martello da Guerra</div>
-      <div class="accent"></div>
+      <div class="kanji">武</div><div class="title">Arma — Martello da Guerra</div><div class="line"></div>
+    </div>
+    <div class="weapon-meta">
+      <span><strong>TAGLIA:</strong> G (Grande) — para attacchi di qualsiasi arma da mischia</span>
+      <span><strong>TxC e DMG</strong> passivi, sempre attivi — nessun Ki per la forma</span>
     </div>
     <div class="weapon-grid">
       <div class="wstep">
@@ -875,42 +181,64 @@
         <div class="wbonus"><span><span class="b-key">TIRO</span> −2</span><span><span class="b-key">DANNO</span> +6</span></div>
       </div>
     </div>
-
     <div class="abilities">
-      <div class="ab-title">✦ ABILITÀ SPECIALI (costo Ki per uso — dichiarare a inizio round) ✦</div>
-      <div class="ab-row">
-        <div class="ab-phase">FORMA I · 1 Ki</div>
-        <div class="ab-text"><strong>Spezza corazza</strong> — il nemico colpito subisce <strong>−1 alla difesa</strong> per il round successivo.</div>
+      <div class="ab-title">✦ ABILITÀ SPECIALI — dichiarare a inizio round · Ki speso anche se l'attacco manca ✦</div>
+      <div class="ab-row"><div class="ab-phase">FORMA I · 1 Ki</div><div class="ab-text"><strong>Spezza corazza</strong> — il nemico colpito subisce <strong>−1 alla difesa</strong> per il round successivo.</div></div>
+      <div class="ab-row"><div class="ab-phase">FORMA II · 2 Ki</div><div class="ab-text"><strong>Roteazione</strong> — colpisce tutti i nemici vicini, li sposta indietro.</div></div>
+      <div class="ab-row"><div class="ab-phase">FORMA III · 3 Ki</div><div class="ab-text"><strong>Colpo a terra</strong> — tutti i nemici vicini subiscono <strong>−1 attacco</strong> per 3 round.</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <div class="kanji">戦</div><div class="title">Combattimento</div><div class="line"></div>
+    </div>
+    <div class="combat-grid">
+      <div class="combat-box atk">
+        <div class="cb-title">◆ ATTACCO PRINCIPALE</div>
+        <div class="cb-line"><strong>Scintilla 8</strong> — <em>"colpo devastante dall'alto"</em></div>
+        <div class="cb-bonus">
+          <span class="cb-blabel">BONUS TEMPORANEO</span>
+          <span class="cb-bval" contenteditable="true"></span>
+        </div>
       </div>
-      <div class="ab-row">
-        <div class="ab-phase">FORMA II · 2 Ki</div>
-        <div class="ab-text"><strong>Roteazione</strong> — colpisce tutti i nemici vicini, li sposta indietro.</div>
-      </div>
-      <div class="ab-row">
-        <div class="ab-phase">FORMA III · 3 Ki</div>
-        <div class="ab-text"><strong>Colpo a terra</strong> — tutti i nemici vicini subiscono <strong>−1 attacco</strong> per 3 round.</div>
+      <div class="combat-box def">
+        <div class="cb-title">◆ DIFESA</div>
+        <div class="cb-line"><strong>Schivata — Battito 6</strong> <em>(anticipo, mi sposto all'ultimo istante)</em></div>
+        <div class="cb-line"><strong>Parata arma — Eco 5</strong> <em>(fermo col manico, solo se arma nemica ≤ G)</em></div>
+        <div class="cb-line"><em>Niente scudo → niente Radice in difesa.</em></div>
       </div>
     </div>
+    <div class="combat-note">
+      Iniziativa = tiro 2d6 + TxC arma. Chi tira più basso agisce per primo. · Danno = margine + DMG arma.
+    </div>
+  </div>
 
-    <div class="abilities">
-      <div class="ab-title">✦ COMBATTIMENTO — CARATTERISTICHE ✦</div>
-      <div class="ab-row">
-        <div class="ab-phase">ATTACCO</div>
-        <div class="ab-text"><strong>Scintilla 8</strong> (colpo devastante dall'alto) · <strong>Radice 7</strong> (mi pianto e abbatto il fendente)</div>
-      </div>
-      <div class="ab-row">
-        <div class="ab-phase">DIFESA</div>
-        <div class="ab-text"><strong>Schivata — Battito 6</strong> (anticipo, mi sposto all'ultimo istante) · <strong>Parata arma — Eco 5</strong> (fermo col manico, solo contro armi taglia M o G) · <em>niente scudo, niente Radice in difesa</em></div>
-      </div>
-      <div class="ab-row">
-        <div class="ab-phase">TAGLIA ARMA</div>
-        <div class="ab-text"><strong>G (Grande)</strong> — può parare attacchi di qualsiasi arma da mischia</div>
+  <div class="section">
+    <div class="section-head">
+      <div class="kanji">人</div><div class="title">Chi è</div><div class="line"></div>
+    </div>
+    <p class="body-text">
+      Ex soldato. Ha combattuto sulle fosse. Ha visto troppo, ha bevuto per dimenticare. Le mani ricordano ancora come si impugna un'arma anche se la testa vorrebbe scordarlo. Era tornato dalla guerra pensando di aver già sofferto abbastanza. Poi l'inverno scorso sua figlia si ammalò. Titus non fu in grado di proteggerla dal freddo. Una notte lei si addormentò e non si svegliò più. Questa cosa lo ha distrutto.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <div class="kanji">影</div><div class="title">Kage — Il Peso del Passato</div><div class="line"></div>
+    </div>
+    <div class="kage-box">
+      <div class="kage-lead">L'OMBRA CHE PORTA</div>
+      <div class="kage-text">
+        Sua figlia. Non è stato capace di proteggerla. Beve per non sentire più il peso leggero di lei fra le braccia — quel peso che c'era, e poi non c'era più. Ogni volta che è sobrio è come perderla di nuovo.
       </div>
     </div>
   </div>
 
-  <div class="footer-orn">❦ ⋆ ❦ ⋆ ❦</div>
-  <div class="footer-tag">SPIRITI GUARDIANI · SCHEDA DEL PERSONAGGIO</div>
+  <div class="page-footer">
+    <div class="footer-orn">❦ ⋆ ❦ ⋆ ❦</div>
+    <div class="footer-tag">SPIRITI GUARDIANI · TITUS · 火 · PAGINA 2 / 2</div>
+  </div>
 
 </div>
 

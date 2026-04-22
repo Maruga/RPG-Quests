@@ -617,7 +617,7 @@ Gli spiriti sono con Tellus. Un PG in difficoltà può **richiamare il proprio s
 
 **Fusione in battaglia finale:**
 
-Una volta richiamato, lo spirito può **fondersi** con il PG come da regola (1/sessione, 3 round, caratteristica spirito a 9, Ki al massimo). Dopo la fusione lo spirito resta in silenzio per il resto della scena, ma **non torna da Tellus** — resta comunque accanto al PG.
+Una volta richiamato, lo spirito può **fondersi** con il PG come da regola (1/sessione, 3 round, caratteristica spirito a 11, Ki al massimo). Dopo la fusione lo spirito resta in silenzio per il resto della scena, ma **non torna da Tellus** — resta comunque accanto al PG.
 
 Se la fusione è già avvenuta prima del richiamo (uno spirito già fuso e poi tornato da Tellus), il richiamo ne attiva una nuova fusione — la Madre li ha ricaricati.
 

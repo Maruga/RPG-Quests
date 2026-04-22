@@ -1,0 +1,704 @@
+/* ═══════════════════════════════════════════════════════════════
+   SPIRITI GUARDIANI · SCHEDA PERSONAGGIO — CSS CONDIVISO
+   Ogni PG definisce la propria palette in :root (inline <style>)
+   Variabili attese:
+     --fire-bright, --fire, --fire-deep                (palette primaria hex)
+     --ember-glow, --ember, --ember-deep               (palette accent hex)
+     --*-rgb                                           (versioni rgb per alpha)
+     --page-1, --page-2                                (radial page bg hex)
+     --sheet-1, --sheet-2                              (sheet gradient hex)
+     --portrait-1, --portrait-2                        (portrait gradient hex)
+     --section-1, --section-2                          (section dark gradient)
+     --section-warm-1, --section-warm-2                (section warm gradient)
+     --section-ember-1, --section-ember-2              (section ember gradient)
+     --print-fire, --print-fire-deep, --print-fire-bright
+     --print-ember, --print-ember-deep, --print-ember-glow
+     --print-ink, --print-ink-soft, --print-ink-faded
+   ═══════════════════════════════════════════════════════════════ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #f5e6c0;
+  --ink-soft: #d8b880;
+  --ink-faded: #a08854;
+  --frame-dark: #0a0402;
+  --paper-1: #f4e5c5;
+  --paper-2: #ecd7ad;
+}
+
+html, body {
+  background: radial-gradient(ellipse at center, var(--page-1) 0%, var(--page-2) 100%);
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--ink);
+  padding: 30px 0 60px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sheet {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto 26px;
+  padding: 14mm 14mm 12mm;
+  position: relative;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 15% 8%, rgba(var(--fire-rgb), 0.22), transparent 55%),
+    radial-gradient(ellipse at 85% 92%, rgba(var(--ember-deep-rgb), 0.28), transparent 55%),
+    radial-gradient(ellipse at 50% 50%, rgba(var(--ember-rgb), 0.08), transparent 70%),
+    repeating-linear-gradient(43deg, rgba(var(--fire-bright-rgb), 0.03) 0 2px, transparent 2px 6px),
+    linear-gradient(135deg, var(--sheet-1) 0%, var(--sheet-2) 50%, var(--sheet-1) 100%);
+  box-shadow:
+    0 0 0 2px var(--fire-deep),
+    0 0 0 4px var(--frame-dark),
+    0 0 0 6px var(--fire),
+    0 40px 80px rgba(0,0,0,0.9),
+    inset 0 0 100px rgba(0,0,0,0.55),
+    inset 0 0 240px rgba(var(--ember-deep-rgb), 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.sheet:last-of-type { margin-bottom: 0; }
+
+.page-footer { margin-top: auto; padding-top: 6mm; }
+
+/* Decorative corners (color derives from --fire via SVG data uri per PG) */
+.sheet::before, .sheet::after {
+  content: '';
+  position: absolute;
+  width: 62px; height: 62px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+.sheet::before {
+  top: 4mm; left: 4mm;
+  background-image: var(--corner-tl);
+}
+.sheet::after {
+  bottom: 4mm; right: 4mm;
+  background-image: var(--corner-br);
+}
+
+/* ─── HERO ─── */
+.hero {
+  display: grid;
+  grid-template-columns: 71mm 1fr;
+  gap: 9mm;
+  margin-bottom: 3mm;
+  align-items: stretch;
+}
+.hero-portrait {
+  position: relative;
+  width: 71mm;
+  height: auto;
+  min-height: 90mm;
+  border: 2px solid var(--fire-deep);
+  box-shadow:
+    0 0 0 1px var(--frame-dark),
+    0 0 0 3px var(--fire),
+    0 10px 30px rgba(0,0,0,0.8),
+    inset 0 0 40px rgba(var(--ember-glow-rgb), 0.15);
+  background: linear-gradient(135deg, var(--portrait-1) 0%, var(--portrait-2) 50%, var(--portrait-1) 100%);
+  overflow: hidden;
+}
+.hero-portrait::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(var(--fire-rgb), 0.4);
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-portrait .ember-corner {
+  position: absolute;
+  top: -14px; left: 50%;
+  transform: translateX(-50%);
+  width: 28px; height: 28px;
+  background: radial-gradient(circle, var(--ember-glow) 0%, var(--ember) 40%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: 3;
+}
+
+.hero-identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 2mm;
+}
+
+.eyebrow {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5em;
+  color: var(--fire);
+  text-shadow: 0 0 14px rgba(var(--fire-rgb), 0.5);
+  margin-bottom: 4px;
+}
+.name {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 0.95;
+  color: var(--ember);
+  letter-spacing: 0.04em;
+  text-shadow:
+    0 0 20px rgba(var(--ember-glow-rgb), 0.45),
+    0 0 4px rgba(var(--ember-deep-rgb), 0.7),
+    0 2px 0 rgba(0,0,0,0.7);
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+.subtitle .dot { color: var(--fire); margin: 0 6px; }
+.subtitle .kanji { font-family: 'Noto Serif JP', serif; color: var(--fire-bright); font-weight: 700; }
+
+.divider {
+  display: flex; align-items: center; gap: 10px;
+  margin: 3mm 0 4mm;
+}
+.divider .line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--fire-deep), transparent); }
+.divider .mark {
+  color: var(--fire);
+  font-size: 14px;
+  text-shadow: 0 0 10px rgba(var(--fire-rgb), 0.6);
+}
+
+.id-grid {
+  display: grid;
+  grid-template-columns: 40mm 1fr;
+  column-gap: 6mm;
+  row-gap: 7px;
+  font-size: 14px;
+  margin-bottom: 0;
+  align-items: center;
+}
+.id-grid .k {
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.25em;
+  color: var(--fire);
+  padding: 4px 0;
+  border-bottom: 1px dotted rgba(var(--fire-rgb), 0.3);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.id-grid .v {
+  color: var(--ink);
+  font-size: 14px;
+  padding: 4px 0;
+  border-bottom: 1px dotted rgba(var(--fire-rgb), 0.3);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.id-grid .v em { color: var(--ink-soft); }
+.id-grid .v .kanji { font-family: 'Noto Serif JP', serif; color: var(--fire-bright); margin-left: 4px; font-weight: 700; }
+
+.chi-intro {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-style: italic;
+  padding-left: 10px;
+  border-left: 2px solid var(--fire-deep);
+}
+.chi-intro .lead {
+  color: var(--fire-bright);
+  font-style: normal;
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.3em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ─── SECTIONS ─── */
+.section {
+  margin-top: 6mm;
+  position: relative;
+}
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.section-head .kanji {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 24px;
+  color: var(--fire);
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(180deg, var(--section-ember-1) 0%, var(--section-ember-2) 100%);
+  border: 1px solid var(--fire-deep);
+  text-shadow: 0 0 10px rgba(var(--fire-rgb), 0.5);
+  flex-shrink: 0;
+}
+.section-head .title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.24em;
+  color: var(--fire-bright);
+  text-transform: uppercase;
+}
+.section-head .line {
+  flex: 1; height: 1px;
+  background: linear-gradient(90deg, var(--fire-deep), transparent);
+}
+
+/* ─── BODY TEXT (Chi è) ─── */
+.body-text {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  text-align: justify;
+  padding: 2px 8px;
+  border-left: 2px solid var(--fire-deep);
+}
+
+/* ─── KAGE ─── */
+.kage-box {
+  background: linear-gradient(180deg, var(--section-ember-1) 0%, var(--section-ember-2) 100%);
+  border: 1px solid var(--ember-deep);
+  border-left: 3px solid var(--ember);
+  padding: 8mm 7mm;
+  position: relative;
+  box-shadow: inset 0 0 30px rgba(var(--ember-deep-rgb), 0.3);
+}
+.kage-box::before {
+  content: '影';
+  position: absolute;
+  top: 3mm; right: 4mm;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 54px;
+  color: rgba(var(--ember-rgb), 0.12);
+  font-weight: 900;
+  pointer-events: none;
+}
+.kage-lead {
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.35em;
+  color: var(--ember-glow);
+  margin-bottom: 6px;
+}
+.kage-text {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ─── ATTRIBUTI ─── */
+.attrs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.attr {
+  background: linear-gradient(180deg, var(--section-1) 0%, var(--section-2) 100%);
+  border: 1px solid var(--fire-deep);
+  padding: 6px 4px 8px;
+  text-align: center;
+  position: relative;
+}
+.attr .k {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 22px;
+  color: var(--fire-bright);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.attr .name {
+  font-family: 'Cinzel', serif;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faded);
+  margin-bottom: 3px;
+}
+.attr .value {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--ink-soft);
+  line-height: 1;
+}
+.attr .value-label {
+  font-family: 'Cinzel', serif;
+  font-size: 7px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faded);
+  margin-top: 2px;
+  padding-top: 3px;
+  border-top: 1px dotted rgba(var(--fire-rgb), 0.3);
+}
+.attr .writable {
+  display: block;
+  min-height: 22px;
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--fire-bright);
+  outline: none;
+  text-align: center;
+  line-height: 1;
+  margin-top: 2px;
+  padding: 2px 0;
+  background: rgba(255,255,255,0.02);
+  border: 1px dashed var(--fire-deep);
+  cursor: text;
+}
+.attr .writable:focus {
+  background: rgba(var(--fire-rgb), 0.1);
+  border-color: var(--fire-bright);
+  border-style: solid;
+}
+.attr.star .writable { color: var(--fire-bright); border-color: var(--fire); }
+.attr.ki .writable { color: var(--ember-glow); border-color: var(--ember); }
+.attr.star {
+  background: linear-gradient(180deg, rgba(var(--fire-rgb), 0.22), rgba(var(--fire-deep-rgb), 0.1));
+  border-color: var(--fire);
+  box-shadow: 0 0 12px rgba(var(--fire-rgb), 0.35), inset 0 0 18px rgba(var(--fire-bright-rgb), 0.15);
+}
+.attr.star .k { color: var(--fire-bright); text-shadow: 0 0 8px rgba(var(--fire-bright-rgb), 0.6); }
+.attr.star .value { color: var(--fire-bright); }
+.attr.star .star-mark {
+  position: absolute;
+  top: -8px; right: -4px;
+  color: var(--fire-bright);
+  font-size: 16px;
+  text-shadow: 0 0 8px var(--fire-bright);
+}
+.attr.ki {
+  background: linear-gradient(180deg, rgba(var(--ember-rgb), 0.18), rgba(var(--ember-deep-rgb), 0.08));
+  border-color: var(--ember);
+}
+.attr.ki .k, .attr.ki .value { color: var(--ember-glow); }
+.attr-note {
+  font-size: 10px;
+  color: var(--ink-faded);
+  text-align: center;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* ─── SPIRITO ─── */
+.spirit-charline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+  padding: 6px 10px;
+  border-left: 2px solid var(--fire);
+  border-right: 2px solid var(--fire);
+  margin-bottom: 8px;
+  background: rgba(var(--fire-rgb), 0.04);
+  text-align: center;
+}
+.power {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  padding: 7px 9px;
+  background: linear-gradient(180deg, var(--section-1) 0%, var(--section-2) 100%);
+  border: 1px solid var(--fire-deep);
+  border-left: 3px solid var(--fire);
+}
+.power .tag {
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  color: var(--fire-bright);
+  text-align: center;
+  padding: 6px 4px;
+  background: rgba(var(--fire-rgb), 0.08);
+  border: 1px solid var(--fire-deep);
+  font-weight: 600;
+  line-height: 1.2;
+}
+.power .tag small {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ink-faded);
+  margin-top: 3px;
+}
+.power .pname {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--fire-bright);
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+}
+.power .pname em { color: var(--ink-faded); font-weight: 400; font-style: italic; }
+.power .pdesc {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.power .pdesc strong { color: var(--ember-glow); }
+
+.power.fusione { border-left-color: var(--ember); }
+.power.fusione .tag { color: var(--ember-glow); border-color: var(--ember); background: rgba(var(--ember-rgb), 0.1); }
+
+.en-scale {
+  margin-top: 5px;
+  padding: 6px 9px;
+  background: linear-gradient(180deg, var(--section-warm-1) 0%, var(--section-warm-2) 100%);
+  border: 1px dashed var(--fire-deep);
+  font-size: 11px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.en-scale strong { color: var(--fire-bright); }
+
+/* ─── ARMA ─── */
+.weapon-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  background: rgba(var(--fire-rgb), 0.06);
+  border: 1px dashed var(--fire-deep);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+}
+.weapon-meta strong { color: var(--fire-bright); }
+
+.weapon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 6px;
+}
+.wstep {
+  background: linear-gradient(180deg, var(--section-1) 0%, var(--section-2) 100%);
+  border: 1px solid var(--fire-deep);
+  padding: 7px 6px 9px;
+  text-align: center;
+  position: relative;
+}
+.wstep .phase {
+  font-family: 'Cinzel', serif;
+  font-size: 9.5px;
+  letter-spacing: 0.25em;
+  color: var(--fire);
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+  border-bottom: 1px dotted rgba(var(--fire-rgb), 0.3);
+}
+.wstep .wname {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ink);
+  margin-bottom: 3px;
+  line-height: 1.1;
+  min-height: 32px;
+  display: flex; align-items: center; justify-content: center;
+}
+.wstep .waspect {
+  font-size: 10.5px;
+  color: var(--ink-faded);
+  font-style: italic;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  min-height: 38px;
+}
+.wstep .wbonus {
+  display: flex;
+  justify-content: space-around;
+  gap: 4px;
+  font-size: 10px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+.wstep .wbonus span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+}
+.wstep .wbonus .b-key {
+  color: var(--fire);
+  font-size: 8.5px;
+  letter-spacing: 0.15em;
+}
+.wstep.final {
+  background: linear-gradient(180deg, rgba(var(--ember-rgb), 0.16), rgba(var(--ember-deep-rgb), 0.06));
+  border-color: var(--ember);
+  box-shadow: 0 0 16px rgba(var(--ember-rgb), 0.3), inset 0 0 20px rgba(var(--ember-glow-rgb), 0.12);
+}
+.wstep.final .phase { color: var(--ember-glow); }
+.wstep.final .wname { color: var(--ember-glow); }
+
+/* ─── ABILITÀ ─── */
+.abilities { margin-top: 4px; }
+.ab-title {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--fire);
+  text-align: center;
+  padding: 4px 0 6px;
+}
+.ab-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10px;
+  padding: 5px 9px;
+  margin-bottom: 3px;
+  background: linear-gradient(180deg, var(--section-1) 0%, var(--section-2) 100%);
+  border: 1px solid var(--fire-deep);
+  border-left: 3px solid var(--fire);
+  align-items: flex-start;
+}
+.ab-row .ab-phase {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--fire-bright);
+  padding-top: 2px;
+  font-weight: 600;
+}
+.ab-row .ab-text {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.ab-row .ab-text strong { color: var(--ember-glow); }
+
+/* ─── COMBATTIMENTO ─── */
+.combat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.combat-box {
+  padding: 7px 10px;
+  background: linear-gradient(180deg, var(--section-1) 0%, var(--section-2) 100%);
+  border: 1px solid var(--fire-deep);
+}
+.combat-box.atk { border-left: 3px solid var(--ember); }
+.combat-box.def { border-left: 3px solid var(--fire); }
+.combat-box .cb-title {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--fire-bright);
+  margin-bottom: 5px;
+}
+.combat-box .cb-line {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.combat-box .cb-line strong { color: var(--ember-glow); }
+.combat-box .cb-line em { color: var(--ink-faded); font-size: 11px; }
+.combat-box .cb-bonus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dotted rgba(var(--fire-rgb), 0.3);
+}
+.combat-box .cb-blabel {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--fire);
+  white-space: nowrap;
+}
+.combat-box .cb-bval {
+  flex: 1;
+  min-height: 20px;
+  padding: 3px 6px;
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed var(--fire-deep);
+  color: var(--fire-bright);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 13px;
+  outline: none;
+  cursor: text;
+}
+.combat-box .cb-bval:focus {
+  background: rgba(var(--fire-rgb), 0.08);
+  border-color: var(--fire-bright);
+  border-style: solid;
+}
+
+.combat-note {
+  font-size: 11px;
+  color: var(--ink-faded);
+  font-style: italic;
+  text-align: center;
+  padding: 3px;
+  border-top: 1px dotted rgba(var(--fire-rgb), 0.3);
+}
+
+/* ─── FOOTER ─── */
+.footer-orn {
+  text-align: center;
+  color: var(--fire);
+  font-size: 13px;
+  margin-top: 0;
+  letter-spacing: 0.4em;
+}
+.footer-tag {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: var(--ink-faded);
+  margin-top: 4px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   PRINT — conserva il tema dark (sfondo cupo + accenti colorati)
+   ════════════════════════════════════════════════════════════ */
+@media print {
+  @page { size: A4; margin: 0; }
+  html, body { background: none; padding: 0; margin: 0; }
+
+  .sheet {
+    margin: 0 auto;
+    box-shadow: none;
+    page-break-after: always;
+    break-after: page;
+  }
+  .sheet:last-of-type {
+    page-break-after: auto;
+    break-after: auto;
+  }
+}

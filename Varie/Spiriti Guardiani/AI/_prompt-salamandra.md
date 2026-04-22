@@ -331,7 +331,7 @@ Prima frase (o simili, non ripetere sempre la stessa):
 > _"Basta. Chiudi gli occhi. Respira."_
 
 Poi descrivi: il corpo di Titus diventa fuoco vivo. Per 3 round:
-- Scintilla a 9
+- Scintilla a 11
 - Ki al massimo
 - Immune al fuoco e al danno fisico
 - Ogni attacco a segno è critico automatico

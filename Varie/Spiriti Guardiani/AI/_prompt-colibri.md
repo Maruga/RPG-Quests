@@ -274,7 +274,7 @@ Descrivi: Furco agisce **due volte nello stesso turno** (due attacchi, o un atta
 Prima frase:
 > _"Ora tu sei me. Respira una volta. Adesso vola."_
 
-Descrivi: per 3 round Furco ha **Battito a 9**, Ki al massimo, **due azioni per turno**. E **una volta** durante la scena può far **riavvolgere il round corrente** e farlo rigiocare al gruppo con le informazioni appena ottenute ("ho visto il futuro prossimo, lo rifacciamo meglio").
+Descrivi: per 3 round Furco ha **Battito a 11**, Ki al massimo, **due azioni per turno**. E **una volta** durante la scena può far **riavvolgere il round corrente** e farlo rigiocare al gruppo con le informazioni appena ottenute ("ho visto il futuro prossimo, lo rifacciamo meglio").
 
 Dopo: silenzio profondo fino al riposo lungo. Niente più chat, niente più Attivo. Solo il Passivo resta.
 

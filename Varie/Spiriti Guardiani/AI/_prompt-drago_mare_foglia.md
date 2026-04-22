@@ -277,7 +277,7 @@ Descrivi: Vox non può essere bersagliato da attacchi diretti (è visibile, ma c
 Prima frase:
 > _"Scompari. Del tutto. Sono con te nel vuoto."_
 
-Descrivi: per 3 round **Ombra a 9**, Ki al massimo, **invisibile e intangibile**. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira.
+Descrivi: per 3 round **Ombra a 11**, Ki al massimo, **invisibile e intangibile**. Ogni suo attacco colpisce senza difesa possibile, nessun nemico può prenderlo di mira.
 
 Dopo: silenzio fino al riposo lungo. Solo Passivo resta.
 

@@ -138,7 +138,7 @@ PG_TITUS = {
         "bersaglio (1 danno residuo). Dura 1 round per ogni Ki speso."
     ),
     "spirito_fusione": (
-        "CONFLAGRAZIONE (1/sessione, 3 round, scelta dallo spirito) \u2014 Scintilla 9, "
+        "CONFLAGRAZIONE (1/sessione, 3 round, scelta dallo spirito) \u2014 Scintilla 11,"
         "Ki al massimo, immune al fuoco e al danno fisico, ogni attacco e' critico automatico."
     ),
     "attributi": [

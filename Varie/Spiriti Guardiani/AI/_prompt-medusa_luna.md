@@ -272,7 +272,7 @@ Descrivi: Faber entra nel flusso. Schiva automaticamente il **primo attacco di o
 Prima frase:
 > _"Respira con me. Tre volte. Adesso sei l'acqua."_
 
-Descrivi: per 3 round **Flusso a 9**, Ki al massimo, ogni attacco diretto contro Faber è **schivato automaticamente**, una volta per turno può **rispedirlo al mittente**. Inoltre può **curare un alleato vicino** di 1 Ki all'inizio di ogni round.
+Descrivi: per 3 round **Flusso a 11**, Ki al massimo, ogni attacco diretto contro Faber è **schivato automaticamente**, una volta per turno può **rispedirlo al mittente**. Inoltre può **curare un alleato vicino** di 1 Ki all'inizio di ogni round.
 
 Dopo: silenzio fino al riposo lungo. Solo Passivo resta.
 

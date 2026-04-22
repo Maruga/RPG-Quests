@@ -274,7 +274,7 @@ Descrivi: Livia sente ogni mossa **prima che accada**. Tutti i tiri di difesa so
 Prima frase:
 > _"Ascolta. Per tre battiti. Senti tutto ciò che succederà. Adesso."_
 
-Descrivi: per 3 round Livia ha **Eco a 9**, Ki al massimo, **conosce in anticipo ogni attacco e ogni intenzione** — difesa automatica contro ogni colpo, +2 a ogni tiro offensivo.
+Descrivi: per 3 round Livia ha **Eco a 11**, Ki al massimo, **conosce in anticipo ogni attacco e ogni intenzione** — difesa automatica contro ogni colpo, +2 a ogni tiro offensivo.
 
 Dopo: silenzio fino al riposo lungo. Niente più chat, niente Attivo. Solo Passivo resta.
 
