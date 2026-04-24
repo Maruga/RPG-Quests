@@ -11,14 +11,12 @@
             "id": "2f72c9619aa3ada5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura La Falsa Primavera/Immagini/Shimizu Tetsuo.png"
               },
-              "icon": "lucide-file",
-              "title": "Storia Completa"
+              "icon": "lucide-image",
+              "title": "Shimizu Tetsuo"
             }
           }
         ]
@@ -227,12 +225,16 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Investigare/Avventura La Falsa Primavera/handout/M2_Primo_Piano_Giocatori.html",
+    "Investigare/Avventura La Falsa Primavera/handout/M1_Piano_Terra_Giocatori.html",
+    "Investigare/Avventura La Falsa Primavera/Immagini/SecondoPiano.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/PianoTerra.png",
+    "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
     "Investigare/Avventura La Falsa Primavera/handout/11_Scontrini_Konbini.html",
     "Investigare/Avventura La Falsa Primavera/PNG/_prompts_mappe_giocatori.md",
     "Investigare/Avventura La Falsa Primavera/handout/08b_Fotogramma_Elaborato.html",
     "Investigare/Avventura La Falsa Primavera/PNG/verifica_fotogramma_CAM01.md",
     "Investigare/Avventura La Falsa Primavera/handout/M3_Percorso_Villa_Konbini.html",
-    "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
     "Investigare/Avventura La Falsa Primavera/handout/M2_Villa_Primo_Piano.html",
     "Investigare/Avventura La Falsa Primavera/handout/M1_Villa_Piano_Terra.html",
     "Investigare/Avventura La Falsa Primavera/PNG/_prompts_immagini.md",
@@ -244,8 +246,6 @@
     "Investigare/Avventura La Falsa Primavera/Immagini/Ogawa Fumiko.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/Obata Shigeru.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/Murakami Kazuko.png",
-    "Investigare/Avventura La Falsa Primavera/Immagini/Morita Chiaki.png",
-    "Investigare/Avventura La Falsa Primavera/Immagini/Kubo Midori.png",
     "Investigare/Avventura La Falsa Primavera/Immagini",
     "Investigare/Avventura La Falsa Primavera/PNG/01_Ogawa_Masao.md",
     "Investigare/Avventura La Falsa Primavera/PNG/02_Ogawa_Fumiko.md",
@@ -260,8 +260,6 @@
     "Investigare/Avventura La Falsa Primavera/PNG",
     "Investigare/Avventura La Falsa Primavera/handout/10_Analisi_Timbro.html",
     "Investigare/Avventura La Falsa Primavera/handout/09_Lettera_Anonima.html",
-    "Investigare/Avventura La Falsa Primavera/handout/08_Fotogramma_Konbini.html",
-    "Investigare/Avventura La Falsa Primavera/handout/07_Agenda_Ogawa.html",
     "Investigare/Avventura La Falsa Primavera/MEMORY.md",
     "Investigare/Avventura La Falsa Primavera/CLAUDE.md",
     "Varie/Spiriti Guardiani/Avventura.md",

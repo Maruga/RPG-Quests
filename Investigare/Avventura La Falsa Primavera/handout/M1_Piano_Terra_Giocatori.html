@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Planimetria — Villa Ogawa Piano Terra</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 10px 18px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 10px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 8px; color: #000; }
+.map-wrapper { margin: 8px 0; padding: 10px; border: 2px solid #111; background: #f2ece0; position: relative; text-align: center; }
+.map-wrapper img { display: block; width: 100%; height: auto; margin: 0 auto; }
+.map-caption { color: #666; font-size: 10px; text-align: center; margin-top: 6px; line-height: 1.4; letter-spacing: 1px; text-transform: uppercase; }
+.legend-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 12px; }
+.legend-table th, .legend-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.legend-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.glossary-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 12px; color: #111; background: rgba(0,0,0,0.02); }
+.glossary-box dt { font-weight: bold; display: inline; }
+.glossary-box dd { display: inline; margin-left: 4px; }
+.glossary-box div { margin-bottom: 4px; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #204070; border: 2px solid #204070; padding: 2px 8px; letter-spacing: 2px; }
+.timbro { position: absolute; bottom: 30px; right: 24px; width: 56px; height: 56px; border: 3px solid rgba(30, 80, 160, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-12deg); color: rgba(30, 80, 160, 0.3); font-size: 8px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .map-wrapper { border-color: #555; background: #1d1d22; }
+    .map-caption { color: #888; }
+    .legend-table th, .legend-table td { border-color: #444; color: #d0ccbe; }
+    .legend-table th { background: #1f1f24; color: #b0a890; }
+    .glossary-box { border-left-color: #777; color: #d0ccbe; background: rgba(255,255,255,0.03); }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #7aa8d8; border-color: #7aa8d8; }
+    .timbro { border-color: rgba(122, 168, 216, 0.25); color: rgba(122, 168, 216, 0.25); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">DOCUMENTAZIONE</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — DOCUMENTAZIONE PLANIMETRICA</div>
+        <div class="title">PLANIMETRIA — VILLA OGAWA</div>
+        <div class="subtitle">Piano Terra (一階) — scala 1:100</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo</span><br>97-KPD-0330-DOC-P1</div>
+        <div><span class="label">Data rilievo</span><br>30 marzo 1997</div>
+        <div><span class="label">Indirizzo</span><br>Higashiyama-ku, Gojōzaka 3-14</div>
+        <div><span class="label">Tipologia</span><br>Villa tradizionale a due piani con giardino</div>
+        <div><span class="label">Fonte</span><br>Copia della planimetria catastale depositata</div>
+        <div><span class="label">Orientamento</span><br>Ingresso a Sud, giardino a Nord</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Planimetria — Piano Terra</div>
+        <div class="map-wrapper">
+            <img src="../immagini/PianoTerra.png" alt="Planimetria Villa Ogawa — Piano Terra">
+        </div>
+        <div class="map-caption">
+            Villa Ogawa — Higashiyama-ku, Gojōzaka 3-14 — Piano Terra — scala 1:100
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Legenda degli ambienti</div>
+        <table class="legend-table">
+            <thead>
+                <tr>
+                    <th style="width:22%;">Etichetta (giapponese)</th>
+                    <th style="width:18%;">Romaji</th>
+                    <th>Traduzione italiana</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>小川邸</td><td>Ogawa-tei</td><td>Villa Ogawa (residenza della famiglia Ogawa)</td></tr>
+                <tr><td>平面図</td><td>heimenzu</td><td>Planimetria / pianta</td></tr>
+                <tr><td>一階</td><td>ikkai</td><td>Piano terra</td></tr>
+                <tr><td>庭</td><td>niwa</td><td>Giardino interno</td></tr>
+                <tr><td>台所</td><td>daidokoro</td><td>Cucina</td></tr>
+                <tr><td>居間</td><td>ima</td><td>Soggiorno / sala principale</td></tr>
+                <tr><td>和室</td><td>washitsu</td><td>Stanza in stile tradizionale giapponese (qui usata come studio)</td></tr>
+                <tr><td>金庫</td><td>kinko</td><td>Cassaforte a parete</td></tr>
+                <tr><td>廊下</td><td>rōka</td><td>Corridoio</td></tr>
+                <tr><td>玄関</td><td>genkan</td><td>Ingresso (vestibolo ribassato dove si tolgono le scarpe)</td></tr>
+                <tr><td>階段</td><td>kaidan</td><td>Scale</td></tr>
+                <tr><td>納戸</td><td>nando</td><td>Ripostiglio</td></tr>
+                <tr><td>五条坂</td><td>Gojōzaka</td><td>Nome della via — "Salita di Gojō" (non si traduce, è toponimo)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Glossario — elementi tipici di architettura tradizionale</div>
+        <div class="glossary-box">
+            <div><dt>Tatami</dt> <dd>— stuoie di paglia di riso di dimensione standard (circa 90×180 cm), utilizzate come pavimento delle stanze tradizionali. Le linee nella planimetria mostrano la disposizione delle stuoie.</dd></div>
+            <div><dt>Chabudai</dt> <dd>— tavolo basso (circa 30–40 cm di altezza) al centro del soggiorno, usato per pasti e riunioni familiari con i convitati seduti sul tatami.</dd></div>
+            <div><dt>Zabuton</dt> <dd>— cuscini piatti quadrati disposti attorno al chabudai, usati per sedersi sul pavimento di tatami.</dd></div>
+            <div><dt>Fusuma</dt> <dd>— porte scorrevoli opache, di legno e tessuto/carta, che separano due stanze interne. Nella planimetria sono indicate da linee tratteggiate.</dd></div>
+            <div><dt>Shoji</dt> <dd>— porte/finestre scorrevoli di carta di riso traslucida, tipicamente sul lato giardino, lasciano passare luce attutita.</dd></div>
+            <div><dt>Tokonoma</dt> <dd>— piccola nicchia rialzata all'interno del washitsu dove si espongono oggetti d'arte (rotolo calligrafico o vaso di fiori ikebana).</dd></div>
+            <div><dt>Mizuya / tansu</dt> <dd>— credenza tradizionale a più scomparti, con ante scorrevoli in alto e cassetti in basso; custodisce stoviglie, sake e liquori di casa.</dd></div>
+            <div><dt>Ishidōrō</dt> <dd>— lanterna di pietra tipica dei giardini tradizionali (presente nel giardino 庭).</dd></div>
+            <div><dt>Shidare-zakura</dt> <dd>— ciliegio piangente, varietà ornamentale dai rami ricadenti (è l'albero centrale del giardino).</dd></div>
+        </div>
+    </div>
+
+    <div class="timbro">DOCUMENTI<br>鑑識<br>京都府警</div>
+
+    <div class="footer">
+        Planimetria Villa Ogawa — Piano Terra — Fascicolo 97-KPD-0330-DOC-P1 — Pagina 1 di 1
+    </div>
+
+</div>
+</body>
+</html>
