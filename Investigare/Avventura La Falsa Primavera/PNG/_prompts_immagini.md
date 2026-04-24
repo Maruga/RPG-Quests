@@ -1,74 +1,160 @@
 # Prompt per generazione immagini PNG — figura intera
 
-File di supporto per la generazione di 10 immagini fotorealistiche dei PNG dell'avventura. Da usare con generatori AI (Midjourney, DALL-E, SDXL, Flux, ecc.) mantenendo lo stesso stile e sfondo per consentire il confronto visivo con il fotogramma della telecamera (H8).
+File di supporto per la generazione di 10 immagini fotorealistiche dei PNG dell'avventura. Stile: foto reali scattate in Giappone nel 1997, su pellicola 35mm, con ambiente caratterizzato (non studio neutro), documentary realism — evitando estetica commerciale / da catalogo moderna.
 
-**Stile comune a tutti i prompt**:
-- Full body portrait photograph, head to feet visible
-- Neutral light gray seamless background, studio lighting
-- Sharp focus, photorealistic, 1997 Japan aesthetic
-- Straight-on camera angle, no cropping
+**Specifiche tecniche comuni**:
+- 35mm film photograph, Fujicolor Superia 200 or Kodak Gold 200
+- Camera: Nikon F3 / Canon EOS-1n / Minolta X-700, 50mm f/1.4 prime lens
+- Natural light (window / workplace lighting), visible fine film grain, subtle vignette
+- 1997 muted Japanese color palette, slight magenta cast typical of mid-90s consumer film
+- Documentary realism, unretouched skin with pores and blemishes
+- Mid-90s Japanese portrait photography aesthetic (reference: PHaT PHOTO magazine, Nobuyoshi Araki documentary style)
+- Full-length composition head to feet, environmental context visible on both sides
+
+**Negative prompt comune** (da aggiungere o adattare al generatore):
+> modern studio lighting, Instagram look, digital smoothness, plastic skin, HDR, oversaturated colors, white seamless backdrop, catalog pose, mannequin stiffness, contemporary 2020s aesthetic, beauty retouching, airbrushed skin, ultra-sharp digital clarity.
 
 ---
 
 ## 01 — Ogawa Masao (vittima)
 
-> Full body portrait photograph of Ogawa Masao: 66-year-old Japanese man, 168 cm, lean build, 71 kg. Weathered square face, deep eye crinkles, short salt-and-pepper hair combed back, slightly sunken cheeks, small reading glasses on the bridge of the nose. Wearing a traditional Japanese work clothes set in charcoal gray — dark samue jacket and loose trousers, white cotton tabi socks, zori sandals. Standing upright, hands at sides, serious and composed expression, slight authority in the posture. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Ogawa Masao, 66-year-old Japanese Kyoto potter, third-generation Kiyomizu-yaki ceramicist. Shot on 35mm Fujicolor Superia 200 film with a Nikon F3 camera and 50mm f/1.4 lens, natural afternoon window light, visible fine film grain, muted 1997 Japanese color palette with warm earth tones and slight magenta cast typical of mid-90s consumer film stock.
+>
+> PHYSICAL: lean wiry build, 168 cm, 71 kg, weathered square face with deep eye crinkles and sun-etched wrinkles around the mouth, short salt-and-pepper hair combed back showing receding temples, slightly sunken cheeks, prominent brow, small thin gold wire-rimmed reading glasses. Hands dusted with dried pale clay, dark fingernails, calloused knuckles.
+>
+> CLOTHING: worn dark indigo samue jacket with faint pale clay smudges on sleeves and chest, matching loose indigo trousers gathered at the ankles, a thin work apron tied at the waist with darker clay streaks, white cotton tabi socks slightly dirty at the sole, black zori sandals with worn straps.
+>
+> SETTING: inside his traditional Kiyomizu-yaki pottery workshop in Higashiyama, Kyoto. Old wooden floor with visible clay dust in the corners. Behind him: a hand-kicked pottery wheel with half-finished clay, wooden shelves with rows of unglazed tea bowls and small vases, hanging bamboo rulers and wooden tools on the far wall. A shoji screen filters late afternoon light from the right side, warm sideways glow, dust motes visible in the shaft of light. Low brown tonal palette, muted indigo accents.
+>
+> POSE: standing upright facing camera with a relaxed working posture that suggests he has paused mid-work, one clay-dusted hand resting at the hip, the other loosely holding a small unfinished tea bowl near the waist, shoulders square, chin neutral, steady authoritative gaze directed straight into the camera, the calm seriousness of a master craftsman who does not smile for portraits.
 
 ---
 
 ## 02 — Ogawa Fumiko (moglie)
 
-> Full body portrait photograph of Ogawa Fumiko: 62-year-old Japanese woman, 152 cm, medium build. Soft round face with fine lines, gentle but guarded expression, short natural gray hair neatly combed, no makeup, no jewelry beyond a simple wedding band. Wearing a traditional everyday kimono in dark indigo with subtle geometric pattern, dark obi, white cotton tabi socks, zori sandals. Standing upright with hands folded in front, posture perfectly composed, slightly reserved demeanor, dignity in stillness. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Ogawa Fumiko, 62-year-old Japanese housewife, wife of a Kyoto ceramicist. Shot on 35mm Fujicolor Superia 200 film with a Nikon F3 camera and 50mm f/1.4 lens, soft morning light filtering through rice-paper shoji screens, visible fine film grain, muted 1997 Japanese color palette with gentle cream and indigo tones.
+>
+> PHYSICAL: medium build, 152 cm, 56 kg, soft round face with fine lines around the eyes and mouth, gentle but guarded expression, short natural gray hair neatly combed and held by a small plain comb, no makeup, no jewelry beyond a simple gold wedding band, pale well-kept hands with faint calluses from housework.
+>
+> CLOTHING: traditional everyday kimono in dark indigo with a subtle geometric hemp-leaf pattern, matching dark obi tied plainly at the back, a clean white cotton apron (kappōgi) worn over the kimono while doing housework, white cotton tabi socks, simple dark zori sandals set on the tatami edge.
+>
+> SETTING: inside the traditional kitchen (daidokoro) of the Ogawa villa in Higashiyama, Kyoto. Pale wooden floor, low wooden counter with a small clay donabe rice pot, a ceramic teapot and two handmade Kiyomizu-yaki tea bowls on the counter, strings of dried persimmon hanging near a small window, soft morning light entering from a shoji screen on the left, a narrow wooden cutting board with fresh vegetables partially prepped. The ambience is lived-in, clean, dignified.
+>
+> POSE: standing upright near the low counter, hands folded modestly in front of the apron, weight evenly distributed, shoulders slightly dropped in the composed posture of a woman who has prepared meals for forty years, calm resigned expression, eyes directed at the camera with quiet dignity, not smiling but not severe — a woman who has learned to hold her face still.
 
 ---
 
 ## 03 — Ogawa Shūichi (figlio)
 
-> Full body portrait photograph of Ogawa Shūichi: 34-year-old Japanese man, 175 cm, thin and wiry build, hollow cheeks, tired eyes with dark circles, short black hair slightly disheveled. Nicotine-stained fingers on the right hand. Wearing a mid-quality western business suit: dark charcoal two-piece suit, slightly rumpled jacket, loose navy tie knotted too low, white shirt with collar slightly open, black leather belt, polished but scuffed black leather shoes. Standing with weight shifted to one leg, hands loose at sides or one in pocket, anxious body language, slightly slumped shoulders, looking somewhere between exhausted and guilty. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Ogawa Shūichi, 34-year-old Japanese man, son of a wealthy Kyoto ceramicist family with a serious gambling problem. Shot on 35mm Fujicolor Superia 400 film (pushed one stop for low light) with a Canon EOS-1n camera and 50mm f/1.4 lens, mixed neon and tungsten street light after dark, visible film grain, muted 1997 Japanese color palette with deep reds, greens and sodium oranges typical of Kyoto nightlife streets.
+>
+> PHYSICAL: thin wiry build, 175 cm, 62 kg, hollow cheeks, tired sunken eyes with heavy dark circles, short black hair slightly disheveled, sallow pale complexion with a faint sheen of sweat, nicotine-stained right hand holding a lit cigarette near the hip.
+>
+> CLOTHING: mid-quality western business suit worn unraveling — dark charcoal two-piece with wrinkles at the elbows and knees, slightly rumpled jacket unbuttoned, loose navy tie knotted too low and pulled off-center, white shirt with collar unbuttoned at the top, black leather belt, polished but scuffed black leather shoes, a cheap plastic Japan Racing Association bet slip half-stuffed into the jacket pocket.
+>
+> SETTING: standing in a narrow Nakagyō-ku alley at night, a garish pachinko parlor with vertical red neon signage reading パチンコ in the background slightly out of focus, wet asphalt reflecting the neon light, a vending machine glowing on the left, a parked Mama-chari bicycle leaning against a utility pole, Kyoto urban street atmosphere 1997. Deep blue-purple night sky with slight film halation around bright neon.
+>
+> POSE: standing weight shifted to one leg, one hand loose at the side holding the cigarette, the other hand buried in the trouser pocket, shoulders slightly slumped, chin tilted down but eyes raised toward the camera with a resigned almost guilty look, face caught between exhaustion and shame, expression of a man who has just lost again.
 
 ---
 
 ## 04 — Ogawa Yumi (nuora) — immagine abituale
 
-> Full body portrait photograph of Ogawa Yumi: 30-year-old Japanese woman, 157 cm, petite and slender build. Fair skin, oval face with large dark eyes, delicate features, modest natural beauty. Long straight black hair worn loose down to mid-back (NOT tied up). Light subtle makeup. Wearing an elegant everyday kimono in muted sage green with small floral pattern, cream-colored obi, white cotton tabi socks, zori sandals. Standing upright with hands folded in front, impeccable posture, composed and faintly detached expression, the perfect daughter-in-law appearance. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Ogawa Yumi, 30-year-old Japanese woman, part-time shop assistant at a Shijō kimono store, daughter-in-law of a wealthy Kyoto family. Shot on 35mm Fujicolor Superia 200 film with a Nikon F3 camera and 50mm f/1.4 lens, warm tungsten shop lighting, visible fine film grain, muted 1997 Japanese color palette with soft sage and cream tones.
+>
+> PHYSICAL: petite slender build, 157 cm, 48 kg, fair porcelain skin, oval face with large dark almond eyes, delicate refined features, modest natural beauty, light subtle makeup (barely-there foundation, soft brown eye definition, muted pink lip), long straight jet-black hair worn loose falling past the shoulders down to mid-back, small pearl studs on the ears.
+>
+> CLOTHING: elegant everyday kimono in muted sage green with a small scattered floral plum-blossom pattern, cream-colored obi with simple pattern tied in a plain taiko knot, a thin dark indigo apron (an employee identification ribbon pinned on the chest), white cotton tabi socks, simple lacquered zori sandals.
+>
+> SETTING: inside a traditional Kyoto kimono shop on Shijō-dōri. Wooden cabinet walls filled with carefully stacked bolts of patterned silk fabric in rolls of indigo, rose, cream, emerald. A low wooden display platform in front with two kimono mannequins half-visible behind her. Warm soft tungsten overhead light, the kind found in old Kyoto shops, glossy wooden floor, a small kotatsu table to the side with customer tea prepared. Atmosphere: refined, traditional, commercial.
+>
+> POSE: standing upright near the shop counter, hands folded modestly in front of the apron, impeccable shop-assistant posture, shoulders slightly back, chin neutral, a small practiced professional smile on the mouth (closed lips, not warm), eyes directed at the camera with faint detached calm — the perfect daughter-in-law pose, the pose of a woman who has learned to be exactly what people expect.
 
-**Nota GM** — per il confronto con H8: nel filmato del Family Mart Yumi ha **capelli raccolti sulla nuca** (non come in questa immagine abituale) e indossa **giacca scura a vita + pantaloni scuri** (NON kimono). La discrepanza è voluta: nel confronto i giocatori devono notare l'alterazione.
+**Nota GM** — per il confronto con H8: nel filmato del Family Mart Yumi ha **capelli raccolti sulla nuca** (non sciolti come in questa foto abituale) e indossa **giacca scura a vita + pantaloni scuri** (NON kimono). La discrepanza è deliberata.
 
 ---
 
 ## 05 — Murakami Kazuko (sorella della vittima)
 
-> Full body portrait photograph of Murakami Kazuko: 70-year-old Japanese woman, 148 cm (quite short), sturdy and stocky build. Round face with many smile lines, short permed gray hair (traditional elderly Japanese women's style), dated pearl brooch on the kimono collar, small round reading glasses on a chain around the neck. Wearing a traditional kimono in autumn colors — warm rust orange with fallen leaves pattern — despite early spring, dark brown obi, white cotton tabi socks, zori sandals. Standing upright with a small handbag clutched in front, expressive talkative face caught mid-gesture, lively and unfiltered demeanor, old-school schoolteacher energy. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Murakami Kazuko, 70-year-old Japanese retired schoolteacher and widow, older sister of a ceramicist. Shot on 35mm Fujicolor Superia 200 film with a Minolta X-700 camera and 50mm f/1.4 lens, late morning natural light through shoji screens, visible fine film grain, muted 1997 Japanese color palette with warm oranges and browns.
+>
+> PHYSICAL: sturdy stocky build, 148 cm (quite short), round lived-in face with many smile lines and laugh wrinkles around eyes and mouth, short permed gray hair styled in the traditional rounded perm typical of elderly Japanese women, small round reading glasses on a thin gold chain around the neck, dated pearl brooch pinned at the kimono collar, slightly arthritic hands clasped in front.
+>
+> CLOTHING: traditional formal kimono in warm rust-orange with a scattered fallen-leaves pattern (autumn motif despite early spring — she dresses in what she likes), dark brown obi tied in a simple taiko knot, a small silk handbag in rust and gold, white cotton tabi socks, lacquered brown zori sandals.
+>
+> SETTING: inside her cluttered living room (ima) in a small Fushimi-ku home. Low wooden chabudai table with a tray of tea and biscuits, a family photo album open on one side. Behind her: a wooden tansu cabinet filled with framed family photographs from decades ago (black-and-white wedding photos, sepia portraits), a small Showa-era television set half visible on the right, a hanging scroll with calligraphy, strings of paper good-luck charms (omamori) from Fushimi Inari taisho pinned on one wall. Soft natural light from a shoji screen on the left, the whole room lived-in and warmly cluttered.
+>
+> POSE: standing mid-gesture with one hand slightly raised as if caught mid-sentence of a long story, the other at the side, body slightly leaning forward toward the camera in the unconscious posture of a person who likes to talk, lively expressive face caught in the middle of telling something, eyes bright and directed at the camera, mouth in a knowing half-smile — old-school schoolteacher energy who never stopped being the center of any conversation.
 
 ---
 
 ## 06 — Shimizu Tetsuo (avvocato)
 
-> Full body portrait photograph of Shimizu Tetsuo: 56-year-old Japanese man, 172 cm, medium build, good posture. Rectangular face with intelligent eyes, salt-and-pepper hair neatly side-parted, thin gold wire-rimmed rectangular eyeglasses. Wearing a formal dark charcoal three-piece business suit (jacket, matching waistcoat, trousers), crisp white dress shirt, regimental-stripe silk tie in deep burgundy and navy, silver tie bar, black leather briefcase in the left hand (Kitamura brand, soft leather), black Oxford lace-up shoes polished, silver watch on the left wrist. Standing upright, professional attorney posture, measured and precise expression, dignified but approachable. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Shimizu Tetsuo, 56-year-old Japanese family attorney. Shot on 35mm Fujicolor Superia 200 film with a Nikon F3 camera and 50mm f/1.4 lens, warm tungsten office light supplemented by a green banker's lamp, visible fine film grain, muted 1997 Japanese color palette with deep browns and warm ambers typical of a law office.
+>
+> PHYSICAL: medium build, 172 cm, 70 kg, rectangular face with intelligent alert eyes, salt-and-pepper hair neatly side-parted with a left part, clean-shaven with faint five o'clock shadow, thin gold wire-rimmed rectangular eyeglasses, subtle crow's feet from decades of reading fine print.
+>
+> CLOTHING: formal dark charcoal three-piece business suit (jacket, matching waistcoat with five buttons closed, trousers with clean crease), crisp white dress shirt with a slight visible collar stiffener, regimental-stripe silk tie in deep burgundy and navy diagonal stripes, silver tie bar mid-chest, conservative gold wedding band and gold Seiko watch on the left wrist, black Oxford lace-up shoes polished to a soft shine.
+>
+> SETTING: inside his law office in Shimogyō-ku, Kyoto. Heavy wooden desk in front of him partially visible at the frame edge, a green-glass banker's desk lamp, stacks of labeled manila document folders, a fountain pen on a leather blotter. Behind him: floor-to-ceiling wooden shelves filled with bound Japanese legal tomes in uniform dark red, navy and black spines, a small hanging framed calligraphy scroll, a dark-leather briefcase (Kitamura brand) propped against a shelf. Warm wood paneling, soft amber light.
+>
+> POSE: standing upright a step away from his desk, one hand holding a thin manila document folder at the chest level, the other resting loose at the side, shoulders square, professional attorney posture, measured and precise expression, eyes directed at the camera with dignified calm, mouth closed in a faint neutral line — a man used to weighing every word.
 
 ---
 
 ## 07 — Dott.ssa Morita Chiaki (medico legale)
 
-> Full body portrait photograph of Dr. Morita Chiaki: 45-year-old Japanese woman, 165 cm, slim and angular build. Sharp oval face with high cheekbones, minimal makeup, dark hair pulled back in a low bun (chignon), thin silver-framed rectangular eyeglasses. Wearing a white lab coat (knee-length, three buttons closed at chest level) over a gray tailored pantsuit visible at the hem, white dress shirt collar at the neck, small silver stud earrings, stethoscope NOT visible (she's a pathologist, not a clinician), ID badge clipped to the coat lapel. Hospital plastic slip-on shoes (white, low). Standing upright with clipboard in one hand, professional and unsentimental expression, quiet authority. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Dr. Morita Chiaki, 45-year-old Japanese female forensic pathologist. Shot on 35mm Fujicolor Superia 200 film with a Canon EOS-1n camera and 50mm f/1.4 lens, cool fluorescent hospital light from above, slight green cast, visible fine film grain, muted 1997 Japanese hospital palette with pale greens, whites and steel grays.
+>
+> PHYSICAL: slim angular build, 165 cm, 55 kg, sharp oval face with defined cheekbones, minimal makeup (barely visible foundation, muted lip), dark hair pulled back tightly in a low chignon, thin silver-framed rectangular eyeglasses, small silver stud earrings, pale thin hands with clean short fingernails.
+>
+> CLOTHING: white knee-length lab coat with three buttons closed at the chest, hospital name patch embroidered on the left chest ("京都府立病院"), ID badge clipped on the lapel, a gray tailored pantsuit visible at the hem and collar, white dress shirt underneath, flat white hospital plastic slip-on shoes. Pen and small notebook protruding from the lab coat chest pocket.
+>
+> SETTING: inside the forensic pathology department of the Kyoto Prefectural Hospital in Kamigyō-ku. Clinical sterile environment, pale green tiled wall behind her, a metal autopsy table visible at the left edge of the frame (covered with a clean white sheet — no remains visible), a wheeled stainless-steel instrument tray with neatly arranged forensic tools, a large institutional wall clock, a fluorescent ceiling light fixture, a filing cabinet on the right. Atmosphere: clinical, cold, ordered.
+>
+> POSE: standing upright holding a clipboard with a case file at her chest, other hand at her side holding a pen, feet planted firmly, shoulders square, no hint of warmth, professional unsentimental expression, eyes directed at the camera with quiet authority, mouth closed in a flat neutral line — a woman who has seen hundreds of bodies and treats each one with the same rigorous respect.
 
 ---
 
 ## 08 — Dott. Nishida Takao (cardiologo)
 
-> Full body portrait photograph of Dr. Nishida Takao: 58-year-old Japanese man, 170 cm, average build with slight middle-age softness. Kind oval face with deep laugh lines, thinning gray hair combed neatly, warm intelligent eyes, gold wire-framed round eyeglasses. Wearing a long white doctor's lab coat (knee-length, two buttons closed) over a dark navy suit visible at hem and collar, white dress shirt, conservative dark burgundy necktie, small gold tie pin, brown leather briefcase at his side. Hospital plastic slip-on shoes (white). Standing upright, relaxed and approachable posture, didactic professor energy. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Dr. Nishida Takao, 58-year-old Japanese senior cardiologist at a university hospital. Shot on 35mm Fujicolor Superia 200 film with a Nikon F3 camera and 50mm f/1.4 lens, warm fluorescent hospital light softened by a small desk lamp, visible fine film grain, muted 1997 Japanese color palette with cream whites and soft wood tones.
+>
+> PHYSICAL: average build with slight middle-age softness, 170 cm, 72 kg, kind oval face with deep laugh lines and prominent eye crinkles, thinning gray hair combed neatly with a side part, warm intelligent eyes, gold wire-framed round eyeglasses, clean-shaven, slightly rounded shoulders from decades of leaning over patients.
+>
+> CLOTHING: long white doctor's lab coat (knee-length, two buttons closed at the chest, visible pen-stained chest pocket), hospital name patch reading "京都大学医学部附属病院 循環器内科", ID badge clipped to the lapel, dark navy suit visible at hem and collar, white dress shirt, conservative dark burgundy silk necktie, small gold tie pin, soft brown leather slip-on shoes. A stethoscope visible partially in the lab coat pocket.
+>
+> SETTING: inside his cardiology consultation room at Kyodai Hospital in Sakyō-ku. Behind him: a wall-mounted light box displaying a dim chest X-ray, wooden shelves with thick medical textbooks, a medical anatomical model of the heart on a side shelf, a small framed calligraphy that reads 健康第一, a compact electrocardiograph machine partially visible at the frame edge. A patient examination table with white paper cover is just visible on the far left. Warm and reassuring atmosphere.
+>
+> POSE: standing in a relaxed professional posture facing the camera, hands folded loosely in front at waist level, slight forward lean conveying approachability, warm approachable expression, mouth closed with a faint gentle half-smile, eyes directed at the camera with didactic kindness — the physician you trust to tell you the truth slowly enough that you can bear it.
 
 ---
 
 ## 09 — Obata Shigeru (custode fornace)
 
-> Full body portrait photograph of Obata Shigeru: 62-year-old Japanese man, 162 cm, small and wiry build, weather-beaten. Tanned square face lined by years of outdoor work, deep crow's feet, short cropped gray hair mostly hidden under a dark navy flat work cap. Calloused dark hands with prominent knuckles. Wearing a worker's gray cotton jumpsuit (tsunagi), full-body one-piece work uniform with multiple patch pockets, a dark canvas apron tied at the waist, white cotton towel tucked in the belt, heavy dark jikatabi split-toe work boots laced high at the ankle. Standing upright with slight stoop from age, hands folded in front in a respectful working-class posture, quiet dignified expression, humble gaze. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Obata Shigeru, 62-year-old Japanese caretaker and manutentore of a Kiyomizu-yaki pottery workshop in Kyoto. Shot on 35mm Fujicolor Superia 200 film with a Minolta X-700 camera and 50mm f/1.4 lens, natural daylight in an open workshop courtyard, visible fine film grain, muted 1997 Japanese color palette with earth tones and weathered wood browns.
+>
+> PHYSICAL: small wiry build, 162 cm, 58 kg, weather-beaten tanned face with deep crow's feet and sun-carved furrows on the forehead and cheeks, short cropped iron-gray hair mostly hidden under a dark navy flat work cap, calloused dark hands with prominent knuckles and faint scars, a small scar on the left cheek from a long-ago kiln accident.
+>
+> CLOTHING: gray cotton work jumpsuit (tsunagi) — full-body one-piece work uniform with multiple patch pockets visibly worn from years of use, a dark canvas apron tied at the waist with scorch marks near the hem from kiln work, a white cotton towel looped around the neck partially stained with sweat and dust, heavy dark indigo jikatabi split-toe work boots laced high at the ankle. A wooden broom or long-handled tool held loose at his side.
+>
+> SETTING: the working courtyard of the Ogawa Tōgei Kiyomizu-yaki pottery workshop in Higashiyama, Kyoto. Behind him: a wood-fired traditional noborigama climbing kiln with brick chambers and a chimney, stacks of seasoned firewood piled against a wooden wall, rows of unglazed tea bowls drying on outdoor racks, a small raked gravel path, tools leaning neatly against the kiln wall. In the far background partially visible: a weeping cherry tree just beginning to bloom (shidare-zakura). Overcast soft daylight diffusing evenly, the working day air of a craftsman's backyard.
+>
+> POSE: standing upright with slight stoop from age and decades of manual work, weight even on both feet, one hand holding the long broom handle, the other loose at the side, shoulders slightly rounded, humble respectful posture of a working-class man who has been photographed only at weddings and funerals, eyes directed at the camera with quiet dignity, mouth closed in a calm neutral line — honest working dignity.
 
 ---
 
 ## 10 — Kubo Midori (amante vittima)
 
-> Full body portrait photograph of Kubo Midori: 42-year-old Japanese woman, 160 cm, petite and elegant build. Fair complexion with refined porcelain makeup (geisha-style restrained: pale foundation, subtle eye definition, red lipstick), oval face with sharp cheekbones, dark almond eyes with slight melancholy, jet-black hair in a low chignon pinned with a single lacquered hair ornament. Wearing an elegant evening kimono in deep charcoal-gray silk with subtle pine-branch pattern at the hem, dark silver obi with intricate embroidery, white cotton tabi socks, fine lacquered zori sandals. Standing upright with one hand delicately holding a closed paper fan at her side, posture impeccable, poised and slightly distant expression — the composure of a Gion mama-san who has seen everything. Neutral light gray seamless background, studio lighting, sharp focus, photorealistic, 1997 Japan aesthetic. Full-length shot, head to feet visible, straight-on camera angle, no cropping.
+> Full body environmental portrait photograph of Kubo Midori, 42-year-old Japanese mama-san of a small Gion Shinbashi bar. Shot on 35mm Fujicolor Superia 400 film (pushed half a stop) with a Nikon F3 camera and 85mm f/1.8 portrait lens, warm low tungsten light from amber paper lanterns, visible fine film grain, muted 1997 Japanese color palette with deep reds, ambers and polished wood browns, subtle bokeh highlights in the background.
+>
+> PHYSICAL: petite elegant build, 160 cm, 48 kg, fair complexion with refined restrained geisha-style makeup (pale porcelain foundation, subtle brown-black eye definition, precise red lipstick), oval face with sharp cheekbones, dark almond eyes with a hint of melancholy, clean elegant neck (uncovered at the nape by the kimono collar dip), jet-black hair in a low formal chignon pinned with a single carved tortoiseshell and lacquered hair ornament.
+>
+> CLOTHING: elegant evening kimono in deep charcoal-gray silk with a subtle embroidered pine-branch pattern at the hem, dark silver obi with intricate hand-embroidered floral motif tied in an elegant complex knot at the back, a thin silver decorative obi-jime cord, white cotton tabi socks, fine black lacquered zori sandals. A small black lacquered handbag at her side.
+>
+> SETTING: inside her own small traditional Kyoto snack bar "Midori" in Gion Shinbashi. Behind her: a polished dark wood bar counter with a row of Japanese whisky bottles on a back shelf (Yamazaki, Nikka, Suntory Old), a small ikebana flower arrangement with a single white camellia, red paper lanterns (chōchin) hanging from the ceiling casting warm amber pools of light, a faint glimpse of a framed calligraphy scroll on the back wall, polished cedar-wood walls, a quiet intimate atmosphere of a Gion bar before opening hours.
+>
+> POSE: standing upright near the bar counter, one hand holding a closed paper fan at her side, the other hand gracefully resting on the bar edge, impeccable posture with a subtle inward curve of the spine, chin slightly raised, eyes directed at the camera with the composed slightly distant expression of a Gion professional who has mastered reading people — poised, unreadable, elegant.
 
 ---
 
