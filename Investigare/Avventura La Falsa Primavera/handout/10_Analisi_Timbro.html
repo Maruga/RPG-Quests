@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Analisi timbro postale — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.6; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; color: #111; }
+.section ul li::before { content: "— "; color: #666; }
+.zoom-box {
+    display: flex; gap: 16px; align-items: flex-start; margin: 10px 0;
+}
+.postmark-visual {
+    width: 160px; height: 160px;
+    border: 4px solid rgba(20, 20, 120, 0.7);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    color: rgba(20, 20, 120, 0.7);
+    font-family: "MS Mincho", "Yu Mincho", serif;
+    font-weight: bold; text-align: center;
+    line-height: 1.3;
+    transform: rotate(-6deg);
+    flex-shrink: 0;
+    background: radial-gradient(ellipse at center, rgba(20,20,120,0.05) 0%, transparent 70%);
+}
+.postmark-visual .top-line { font-size: 15px; letter-spacing: 2px; }
+.postmark-visual .mid-line { font-size: 11px; margin: 4px 0; }
+.postmark-visual .date-line { font-size: 18px; margin-top: 6px; }
+.postmark-visual .time-line { font-size: 10px; margin-top: 3px; letter-spacing: 1px; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.data-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.data-table th, .data-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.data-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; width: 32%; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #204070; border: 2px solid #204070; padding: 2px 8px; letter-spacing: 2px; }
+.signature-section { margin-top: 20px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.timbro { position: absolute; bottom: 40px; right: 24px; width: 60px; height: 60px; border: 3px solid rgba(30, 80, 160, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-15deg); color: rgba(30, 80, 160, 0.3); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p, .section ul li { color: #d0ccbe; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .postmark-visual { border-color: rgba(120, 160, 210, 0.7); color: rgba(150, 180, 220, 0.8); background: radial-gradient(ellipse at center, rgba(120,160,210,0.08) 0%, transparent 70%); }
+    .data-table th, .data-table td { border-color: #444; color: #d0ccbe; }
+    .data-table th { background: #1f1f24; color: #b0a890; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #7aa8d8; border-color: #7aa8d8; }
+    .timbro { border-color: rgba(122, 168, 216, 0.25); color: rgba(122, 168, 216, 0.25); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">日本郵政 — POSTE GIAPPONESI / RISCONTRO TECNICO ALLA SCIENTIFICA</div>
+        <div class="title">ANALISI TIMBRO POSTALE</div>
+        <div class="subtitle">Accertamenti sulla provenienza della lettera anonima del 02/04/1997</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">N. pratica</span><br>97-NP-0402-TEC-019</div>
+        <div><span class="label">Data emissione</span><br>04 aprile 1997</div>
+        <div><span class="label">Oggetto</span><br>Identificazione ufficio di obliterazione e zona di raccolta</div>
+        <div><span class="label">Corrispondenza</span><br>Protocollo 97-KPR-0402-POST-0419</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Timbro rilevato sulla busta</div>
+
+        <div class="zoom-box">
+            <div class="postmark-visual">
+                <div class="top-line">中京</div>
+                <div class="mid-line">郵便局</div>
+                <div class="date-line">31.3.97</div>
+                <div class="time-line">AM 1</div>
+            </div>
+            <div style="flex: 1;">
+                <p><strong>Interpretazione del timbro:</strong></p>
+                <ul>
+                    <li>Ufficio emittente: <strong>中京郵便局 (Ufficio Postale di Nakagyō)</strong></li>
+                    <li>Sigla del turno di raccolta: <strong>AM 1</strong> (prima levata mattutina, tipicamente ore 07:00)</li>
+                    <li>Data di obliterazione: <strong>31 marzo 1997 (lunedì)</strong></li>
+                    <li>Inchiostro: blu-ardesia, acquoso, standard tipografico Poste Giapponesi</li>
+                    <li>Impronta intera ed integra, leggibile</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Zona di competenza dell'ufficio</div>
+        <p>L'Ufficio Postale di Nakagyō serve il quartiere omonimo nella zona centrale di Kyoto. Le cassette di raccolta (ポスト) afferenti a questo ufficio coprono l'area delimitata approssimativamente da:</p>
+        <ul>
+            <li>a Nord: Oike-dōri (御池通)</li>
+            <li>a Sud: Shijō-dōri (四条通)</li>
+            <li>a Est: Kawaramachi-dōri (河原町通)</li>
+            <li>a Ovest: Horikawa-dōri (堀川通)</li>
+        </ul>
+        <p>L'intera area comprende i blocchi di Karasuma-Oike, Sanjō-Karasuma e Shijō-Karasuma.</p>
+
+        <div class="highlight-box">
+            Nel bacino di raccolta dell'ufficio di Nakagyō risiedono diversi soggetti di interesse dell'indagine, tra cui la coppia <strong>OGAWA Shūichi / OGAWA Yumi</strong> (Karasuma-Oike Higashi-iru, Mansion Karasuma 502). La cassetta postale più vicina all'abitazione citata si trova a circa 150 metri (incrocio Karasuma-Oike).
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Cronologia di raccolta e consegna</div>
+        <table class="data-table">
+            <tbody>
+                <tr><th>Finestra di imbucamento</th><td>Dalla levata di domenica 30/03 (dom. — sola battuta pomeridiana 17:00, verificata in ordine) all'alba di lunedì 31/03. In pratica: la missiva è stata imbucata tra il primo pomeriggio di domenica e le 06:45 circa di lunedì mattina.</td></tr>
+                <tr><th>Prima levata utile</th><td>Lunedì 31/03/1997, tra le 07:00 e le 07:15 (AM 1). L'obliterazione è stata eseguita immediatamente allo smistamento dell'ufficio.</td></tr>
+                <tr><th>Smistamento</th><td>Centro di smistamento Kyoto Chūō, 31/03 pomeriggio.</td></tr>
+                <tr><th>Recapito al destinatario</th><td>Polizia Prefetturale, mercoledì 02/04/1997, consegna della prima mattina con corriere interno Poste.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Limiti dell'accertamento</div>
+        <p>Non è possibile determinare con certezza la singola cassetta di imbucamento: le cassette dell'area vengono svuotate da più addetti che conferiscono unitariamente all'ufficio centrale di Nakagyō. Tuttavia, tutte le cassette afferenti a questo ufficio sono contenute nel perimetro sopra descritto.</p>
+        <p>Si esclude la provenienza da altri uffici di Kyoto (es. Higashiyama, Sakyō, Kamigyō), che usano sigla e timbro differenti.</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                ONO Masaki (小野 正樹)<br>
+                <span style="font-size: 11px;">Direttore Ufficio Postale Nakagyō</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Isp. SAITŌ Ryōichi (斉藤 亮一)<br>
+                <span style="font-size: 11px;">Polizia Scientifica — KPD</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">POSTE<br>郵政<br>中京局</div>
+
+    <div class="footer">
+        Analisi Timbro Postale — N. 97-NP-0402-TEC-019 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

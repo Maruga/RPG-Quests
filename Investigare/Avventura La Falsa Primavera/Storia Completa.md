@@ -8,6 +8,8 @@
 
 Ogawa Masao, 66 anni, ceramista, muore nel sonno la notte dopo la cena familiare dei ciliegi. L'autopsia trova digossina letale nel sangue. Ogawa prendeva Lanoxin per il cuore — ma la dose è 4 volte la terapia. Il farmaco era stato disciolto nell'**umeshu** (梅酒) fatto in casa, servito dopo cena. **Tutti i convitati stanno male** — la digossina era nella bottiglia condivisa.
 
+**Sei presenti alla cena**: la vittima Ogawa Masao, la moglie Fumiko, il figlio Shūichi, la nuora Yumi, la sorella Kazuko e l'avvocato di famiglia Shimizu — ospite abituale dei pranzi e delle cene dei parenti.
+
 **L'assassina è la nuora Yumi.** Ha triturato 12 compresse di Lanoxin nell'umeshu. Ha bevuto appena un sorso per non insospettire. Ha portato via la scatola del farmaco e l'ha gettata in un konbini. Ha spedito una lettera anonima per incastrare la moglie della vittima.
 
 **I PG ricevono il caso lunedì 31 Marzo.**
@@ -20,7 +22,7 @@ Ogawa Masao, 66 anni, ceramista, muore nel sonno la notte dopo la cena familiare
 
 **Movente**: Due settimane prima, ha sentito il suocero dire all'avvocato di modificare il testamento — Shūichi (suo marito) verrà ridotto al minimo di legittima. La modifica è fissata per giovedì 3 Aprile. In più, durante lo stesso pranzo, Yumi ha simulato che dei fogli fossero caduti dalla borsa di Shimizu e li ha raccolti — leggendo i dettagli della modifica (data, notaio, quote). Shimizu l'ha vista raccogliere i fogli ma non ci ha fatto caso. Yumi deve agire prima del 3 Aprile.
 
-**Come**: Sabato 29 pomeriggio, sale al bagno della villa, prende 12 compresse di Lanoxin dall'armadietto, le tritura, le mette in un fazzoletto in tasca. Porta via la scatola intera nella borsa. La sera, quando Fumiko va in cucina, versa la polvere nell'umeshu e serve tutti. Versa generosamente al suocero, un sorso a sé stessa. Sulla via di casa, getta la scatola nel bidone del Family Mart (telecamera). La notte stessa, scrive e imbuca una lettera anonima che accusa Fumiko.
+**Come**: Sabato 29 pomeriggio, sale al bagno della villa, prende 12 compresse di Lanoxin dall'armadietto. Le tritura su un fazzoletto di carta: la prima salvietta — sporca di residui visibili — la accartoccia e la getta nel cestino, confidando che venga svuotato come di consueto (non sa che Obata l'ha svuotato solo venerdì). La polvere la raccoglie in un secondo fazzoletto pulito che ripone in tasca. Porta via la scatola intera nella borsa. A fine cena, con la scusa di "andare a prendere dell'altro umeshu", passa per la cucina: Fumiko sta sparecchiando di spalle al lavello. Le bastano pochi secondi per riaprire la bottiglia, versare la polvere e roteare il collo per scioglierla. Rientra in soggiorno e serve tutti di persona — un bicchiere colmo al suocero, un sorso a sé stessa. Sulla via di casa, chiede a Shūichi di fermarsi al Family Mart: entra (capelli raccolti, sa che c'è la telecamera), getta la scatola nel bidone esterno, compra un pacchetto di fazzoletti per giustificare l'ingresso. La notte stessa imbuca nella cassetta di Nakagyō una lettera anonima che accusa Fumiko.
 
 **Prove chiave che la incastrano**:
 
@@ -76,7 +78,7 @@ Autoritario, testardo. Terza generazione di ceramisti. Tradiva la moglie con Kub
 
 #### Fasi comportamentali
 
-**Primo interrogatorio**: Composta, fredda, keigo impeccabile. Non piange — non per colpa, per dignità. Racconta la cena punto per punto. _"Ho preparato tutto. Ho servito. Ho lavato. Siamo andati a letto verso le 23."_ Se le chiedono del matrimonio: risposta vaga, sguardo che si sposta. _"Quarant'anni insieme non sono sempre facili."_ Se le chiedono delle medicine: _"Le prendeva lui ogni mattina. Io non toccavo quella scatola."_ Se le chiedono chi è andato al piano di sopra: _"Yumi-san è salita al bagno quando è arrivata sabato. È stata su un bel po'."_ — lo dice solo se la domanda è diretta.
+**Primo interrogatorio**: Composta, fredda, keigo impeccabile. Non piange — non per colpa, per dignità. Racconta la cena punto per punto. _"Ho preparato tutto. Ho servito. Ho lavato. Siamo andati a letto verso le 23."_ Se le chiedono del matrimonio: risposta vaga, sguardo che si sposta. _"Quarant'anni insieme non sono sempre facili."_ Se le chiedono delle medicine: _"Ero io a ritirare la ricetta dal farmacista, certo. Ma la scatola la teneva lui nell'armadietto del bagno, dalla sua parte. La pillola la prendeva da solo ogni mattina — io non toccavo i blister."_ Se le chiedono chi è andato al piano di sopra: _"Yumi-san è salita al bagno quando è arrivata sabato. È stata su un bel po'."_ — lo dice solo se la domanda è diretta.
 
 **Quando i PG scoprono che tutti hanno assunto digossina**: Si spaventa. La compostezza si incrina. _"Vuol dire che qualcuno ha messo il farmaco anche a me?"_ — il terrore è genuino. Una persona colpevole non mostrerebbe paura per sé stessa. Se i PG sono attenti, questo la scagiona emotivamente.
 
@@ -105,13 +107,13 @@ Autoritario, testardo. Terza generazione di ceramisti. Tradiva la moglie con Kub
 
 #### Fasi comportamentali
 
-**Primo interrogatorio**: Nervoso, sudato, non riesce a stare fermo. Gambe che tremano. Racconta la serata in modo disordinato, salta avanti e indietro. Mente sui debiti: _"Qualche volta al pachinko, niente di serio."_ Mente sull'andare al piano di sopra: _"Non ci sono salito"_ (falso — ci è andato a prendere le sigarette). L'ansia è evidente — ma è l'ansia di un uomo che nasconde i debiti, non un omicidio.
+**Primo interrogatorio**: Nervoso, sudato, non riesce a stare fermo. Gambe che tremano. Racconta la serata in modo disordinato, salta avanti e indietro. Mente sui debiti: _"Qualche volta al pachinko, niente di serio."_ Mente sull'andare al piano di sopra: _"Non ci sono salito"_ (falso — ci è salito a riprendere le sigarette dalla giacca lasciata nella camera ospiti). L'ansia è evidente — ma è l'ansia di un uomo che nasconde i debiti, non un omicidio.
 
 **Se pressato sui debiti**: Crolla rapidamente. Si copre il viso con le mani. Ammette tutto — pachinko, corse, lo strozzino di Fushimi, i ¥12 milioni. _"Mio padre mi avrebbe ammazzato se..."_ — pausa, si rende conto di quello che ha detto. Guarda i PG con orrore.
 
 **Quando gli dicono della modifica al testamento**: Shock autentico — bocca aperta, occhi spalancati, poi rabbia verso il padre morto. _"Voleva diseredarmi? Quel bastardo..."_ — poi si ferma, imbarazzato dalla propria reazione davanti alla polizia. **Questa reazione è LA prova che non sapeva.** Un PG attento lo vede: non si può fingere questo tipo di sorpresa.
 
-**Secondo interrogatorio (ammette la verità sul piano di sopra)**: _"Va bene, sono salito. Ho preso le sigarette dalla camera. Ma non ho toccato nient'altro."_ Lo dice con vergogna — ha mentito prima e ora sa che sembra peggio.
+**Secondo interrogatorio (ammette la verità sul piano di sopra)**: _"Va bene, sono salito. Ho preso le sigarette dalla giacca, nella camera ospiti. Ma non ho toccato nient'altro."_ Lo dice con vergogna — ha mentito prima e ora sa che sembra peggio.
 
 **Quando gli chiedono del konbini**: Lo dice senza pensarci, come un dettaglio qualunque. _"Sì, Yumi mi ha chiesto di fermarmi al Family Mart sulla via di casa. È entrata un attimo."_ Non ci vede nulla di strano — non sa che è importante.
 
@@ -176,7 +178,7 @@ Sorella maggiore della vittima. Vedova. Logorroica, pettegola, tagliente. Non fi
 
 **Quando le dicono che tutti hanno assunto digossina**: Si agita molto, diventa drammatica. _"Lo sapevo! Lo sapevo che quell'umeshu aveva un sapore strano! Ho detto a tutti 'ha un sapore diverso' ma nessuno mi ascolta mai!"_ — utile: conferma che il sapore era alterato.
 
-**Se le chiedono specificamente chi ha versato l'umeshu**: _"Yumi-san, naturalmente. Si è alzata, ha preso la bottiglia dalla credenza, e ha versato per tutti. È una brava ragazza, sempre premurosa. A Masao ha dato un bel bicchiere pieno, a me un dito..."_ — se i PG chiedono: _"E a sé stessa?"_ — Kazuko ci pensa: _"A sé stessa? Poco. Mezzo bicchierino forse. Ha detto che non le andava."_
+**Se le chiedono specificamente chi ha versato l'umeshu**: _"Yumi-san, naturalmente. Si è alzata, è andata a prendere la bottiglia — mi pare sia passata anche in cucina, non ricordo bene — e ha versato per tutti. È una brava ragazza, sempre premurosa. A Masao ha dato un bel bicchiere pieno, a me un paio di bicchierini come sempre..."_ — se i PG chiedono: _"E a sé stessa?"_ — Kazuko ci pensa: _"A sé stessa? Poco. Mezzo bicchierino forse. Ha detto che non le andava."_
 
 **Quando i sospetti si spostano su Yumi**: Si scandalizza: _"Yumi-san? Ma quella è una santa! Fa tutto per la famiglia!"_ — poi, lentamente, comincia a ripensare: _"...però adesso che ci penso, era strana quella sera. Troppo gentile. Continuava a servire tutti."_ Il dubbio si insinua.
 
@@ -208,9 +210,9 @@ Vincolato dal segreto professionale — serve richiesta del PM o consenso di Fum
 
 L'ultima frase è il collegamento: Yumi poteva aver sentito. Shimizu non accusa nessuno — fornisce fatti. Le conclusioni sono dei PG.
 
-**Se gli chiedono di Yumi specificamente**: _"La signora Yumi? Non ho motivo di sospettarla di nulla. Ma era presente a diversi pranzi domenicali in cui io e Ogawa-san discutevamo nello studio."_ — non accusa, non protegge. Fornisce il contesto.
+**Se gli chiedono di Yumi specificamente**: _"La signora Yumi? Non ho motivo di sospettarla di nulla. Ma era presente a diversi pranzi di famiglia in cui io e Ogawa-san discutevamo nello studio."_ — non accusa, non protegge. Fornisce il contesto.
 
-**Se pressato sulla possibilità che Yumi sapesse dei dettagli** (date, quote, notaio): Shimizu si ferma. Ci pensa. Poi: _"Adesso che me lo fa notare... a quel pranzo domenicale, la signora Yumi stava raccogliendo dei fogli da terra vicino alla mia borsa. Le ho chiesto cosa facesse e mi ha detto che erano caduti e li stava rimettendo a posto. In effetti alcuni fogli erano scivolati fuori... ma adesso mi chiedo se non li stesse leggendo."_
+**Se pressato sulla possibilità che Yumi sapesse dei dettagli** (date, quote, notaio): Shimizu si ferma. Ci pensa. Poi: _"Adesso che me lo fa notare... al pranzo di metà marzo, la signora Yumi stava raccogliendo dei fogli da terra vicino alla mia borsa. Le ho chiesto cosa facesse e mi ha detto che erano caduti e li stava rimettendo a posto. In effetti alcuni fogli erano scivolati fuori... ma adesso mi chiedo se non li stesse leggendo."_
 
 Questo è il momento in cui Shimizu capisce. Il suo viso cambia — imbarazzo professionale, poi orrore. _"Nella mia borsa c'era la bozza della modifica testamentaria. Con le date, le quote, tutto."_ Se i PG gli chiedono se è sicuro: _"Sì. Me lo ricordo perché ho pensato che fosse premurosa. Adesso non ne sono più sicuro."_
 
@@ -246,9 +248,10 @@ Gion Shinbashi, bar "Midori". Relazione con Ogawa da 5 anni. **Pista completamen
 |---|---|
 |1994|Ogawa inizia Lanoxin per fibrillazione atriale|
 |1995|Shūichi inizia a giocare. Debiti crescenti|
-|05/03/1997|Ultima ricetta Lanoxin (60 compresse)|
-|15/03/1997|Ogawa chiede a Shimizu di modificare il testamento → appuntamento 3 Aprile|
-|~16/03/1997|Pranzo domenicale. **Yumi sente la conversazione** Ogawa-Shimizu sulla modifica. Simula che dei fogli siano caduti dalla borsa di Shimizu — legge i dettagli|
+|05/03/1997 (Mer)|Ultima ricetta Lanoxin (60 compresse)|
+|12/03/1997 (Mer)|Ogawa incontra Shimizu allo studio — decide la modifica testamentaria, fissato appuntamento dal notaio per il 3 Aprile|
+|15/03/1997 (Sab)|Pranzo di famiglia con Shimizu invitato. **Yumi sente la conversazione** Ogawa-Shimizu sulla modifica (pareti sottili). Simula che dei fogli siano caduti dalla borsa di Shimizu — ne legge i dettagli (date, quote, notaio)|
+|20/03 → 27/03|Ogawa telefona più volte a Shimizu per conferme (cfr. H6)|
 |28/03 (Ven)|Obata prepara il giardino, svuota i cestini|
 |**29/03 (Sab) 15:00**|Yumi e Shūichi arrivano. Yumi sale al bagno: prende 12 compresse, le tritura, prende la scatola|
 |**29/03, 20:00**|Cena dei ciliegi. Sei presenti|
@@ -258,8 +261,8 @@ Gion Shinbashi, bar "Midori". Relazione con Ogawa da 5 anni. **Pista completamen
 |30/03, 03:00-06:00|Ogawa muore nel sonno|
 |30/03, 06:30|Fumiko trova il corpo|
 |30/03, 06:38|Chiamata 119|
-|30/03, 07:05|Yumi chiama la villa (ambiguo: controlla se il piano ha funzionato, o auguri domenicali?)|
-|30/03, giornata|Gli altri convitati accusano malesseri|
+|30/03, 07:05|Dal fisso dell'appartamento Shūichi/Yumi parte una chiamata alla villa (48 secondi). Shūichi dormiva ancora. Chi ha composto il numero?|
+|30/03, mattinata|Sopralluogo villa: armadietto bagno aperto, **scatola Lanoxin assente**. Gli altri convitati accusano malesseri|
 |30/03, 15:00|Autopsia: miosi → tossicologico → digossina 8,4 ng/mL|
 |30/03-31/03|Esami del sangue su tutti|
 |**31/03 (Lun)**|**I PG ricevono il caso**|
@@ -282,7 +285,7 @@ Gion Shinbashi, bar "Midori". Relazione con Ogawa da 5 anni. **Pista completamen
 
 - **Camera matrimoniale**: futon dove Ogawa è morto. Comodino, bicchiere d'acqua (pulito).
 - **Bagno/spogliatoio**: armadietto medicinali — **scatola Lanoxin ASSENTE**. Cestino con fazzoletto (Reperto C).
-- **Camera ospiti**: dove Yumi ha messo la borsa sabato pomeriggio.
+- **Camera ospiti**: dove Yumi e Shūichi hanno lasciato borsa e giacca sabato pomeriggio.
 
 ### Konbini — Family Mart, Higashiōji-Shichijō
 
@@ -294,10 +297,10 @@ Sul tragitto tra la villa e l'appartamento Shūichi/Yumi. Telecamera VHS all'ing
 
 |Reperto|Cosa|Dove|Cosa dimostra|
 |---|---|---|---|
-|**A**|Bottiglia umeshu|Credenza soggiorno|Digossina disciolta. Impronte di tutti **tranne Shūichi** (Yumi ha versato per lui)|
+|**A**|Bottiglia umeshu|Credenza soggiorno|Digossina disciolta. Impronte nette di Ogawa (collo/tappo — l'ha aperta) e Yumi (corpo della bottiglia, gesto di versamento). Nessuna impronta utile degli altri convitati|
 |**B**|Scatola Lanoxin|Bidone Family Mart (Higashiōji-Shichijō)|Sparita dalla villa. 12 compresse mancanti in più del previsto. Impronte parziali di Yumi sui blister|
 |**C**|Fazzoletto di carta|Cestino bagno primo piano|Residui digossina triturata. Cestino svuotato venerdì → messo sabato/domenica. Yumi era al bagno sabato|
-|**D**|Filmato telecamera|Family Mart, 29/03 ore 22:58|Donna sfocata, 155-160 cm, **capelli raccolti**, giacca scura. Getta oggetto nel bidone. Yumi ha capelli lunghi sciolti normalmente — se li è raccolti apposta? Fumiko (152, corti) e Kazuko (148, robusta) escluse per corporatura|
+|**D**|Filmato telecamera|Family Mart, 29/03 ore 22:58|Donna sfocata, 155-160 cm, **capelli raccolti**, giacca scura. Getta oggetto nel bidone. Yumi ha capelli lunghi sciolti normalmente — se li è raccolti apposta? Fumiko (152, corti) e Kazuko (148, robusta) escluse per corporatura; Shimizu escluso (maschio, 172 cm)|
 |**E**|Lettera anonima|Arriva in polizia il 02/04|Accusa Fumiko, menziona amante. Timbro: **Nakagyō** (quartiere di Yumi), raccolta 31/03|
 |**F**|Esami sangue|Laboratorio|Yumi a 0,3 ng/mL — 3-4 volte inferiore a tutti gli altri (media 1,1). Ha bevuto quasi nulla|
 
@@ -325,199 +328,55 @@ Livello sangue + scatola + filmato + fazzoletto + impronte sui blister + lettera
 
 # 8. HANDOUT
 
-## H1 — Referto autoptico
+Gli handout sono stati spostati in file HTML separati (stile burocratico JP '97, compatibili sia a video — dark mode — sia in stampa A4). Directory: `handout/`.
 
-**Vittima**: Ogawa Masao, 66 anni, Higashiyama-ku **Decesso**: 30/03/1997, tra le 03:00 e le 06:00 **Medico legale**: Dott.ssa Morita Chiaki
+| File | Contenuto | Note per il GM |
+|---|---|---|
+| `01_Referto_Autoptico.html` | Referto autoptico della Dott.ssa Morita | Introduce la miosi e la digossinemia 8,4 ng/mL. Da consegnare subito dopo la comunicazione del caso |
+| `02_Rapporto_Scena.html` | Sopralluogo scientifica alla villa | Documenta assenza scatola Lanoxin, fazzoletto nel cestino, agenda nella scrivania |
+| `03_Cartella_Clinica.html` | Estratto cartella Kyodai Hospital | Fibrillazione atriale, terapia Lanoxin, ultima ricetta 60 cp il 05/03 |
+| `04_Trascrizione_119.html` | Chiamata di Fumiko ore 06:38 | Dialogo JP + traduzione + log centralino |
+| `05_Esami_Sangue.html` | **LA pista principale** — tabella digossinemia 6 soggetti | Yumi 0,3 vs media 1,1 — se i PG non lo notano, Morita lo segnala |
+| `06_Tabulati_Telefonici.html` | 3 utenze NTT / NTT DoCoMo, 20-30 marzo | Evidenzia la chiamata 07:05 del 30/03 dal fisso Shūichi/Yumi alla villa |
+| `07_Agenda_Ogawa.html` | Agenda Takahashi Techo 1997 | Conferma movente anche senza parlare con Shimizu — 12/3 Shimizu, 3/4 notaio |
+| `08_Fotogramma_Konbini.html` | Estratto TVCC Family Mart 22:58 | Donna 155-160 cm capelli raccolti — Yumi possibile |
+| `09_Lettera_Anonima.html` | Busta + testo JP + analisi | Timbro Nakagyō (quartiere Yumi), menziona amante |
+| `10_Analisi_Timbro.html` | Scheda tecnica Poste Giapponesi | Perimetro raccolta = zona residenza Shūichi/Yumi |
 
-- Nessun segno di violenza, lotta, iniezione
-- **Pupille miotiche** (puntiformi) — incompatibile con arresto cardiaco standard, segno di intossicazione da glicosidi digitalici
-- Cuore ipertrofico (430g), fibrillazione atriale cronica
-- Stomaco: residui alimentari, tracce di liquido alcolico dolciastro
-- **Digossina sierica: 8,4 ng/mL** (range terapeutico: 0,8-2,0)
-- Digossina nel contenuto gastrico: positiva
-- Alcol: 0,4 g/L
-- **Conclusione**: Intossicazione acuta da digossina. Dose incompatibile con assunzione terapeutica. Sovradosaggio per via orale in alimento/bevanda.
+**Consegna consigliata**:
+1. Apertura sessione: `01` Autopsia + `02` Scena + `03` Cartella clinica + `04` Trascrizione 119
+2. Dopo primo giro di interrogatori: `05` Sangue + `06` Tabulati
+3. Se i PG chiedono testamento / perquisiscono studio: `07` Agenda
+4. Dopo seguito scatola/konbini: `08` Fotogramma
+5. Dal 2 aprile in poi: `09` Lettera + `10` Timbro
+---
+
+## Note GM per gli handout
+
+Le note tecniche che NON appaiono nei file HTML (riservate al Game Master):
+
+- **H5 Esami sangue — il dato chiave**. Il valore 0,3 ng/mL di Yumi salta all'occhio se i PG leggono la tabella con attenzione. Se non lo notano, la Dott.ssa Morita lo segnala una sola volta: *"C'è una cosa che mi colpisce. Tutti tra 0,9 e 1,4. La signora Yumi è a 0,3."* Quanto ciascuno ha bevuto è informazione che i PG devono ottenere dagli interrogatori, non dal referto.
+
+- **H6 Tabulati — chiave numeri**. I PG devono identificare da soli i numeri. Soluzione:
+  - 075-371-8823 → Studio Shimizu (avvocato)
+  - 075-641-2190 → Murakami Kazuko (sorella)
+  - 075-561-7043 → Fornace Ogawa Tōgei
+  - 075-561-5541 → Villa Ogawa (fisso)
+  - 075-222-4471 → Appartamento Shūichi/Yumi (fisso)
+  - 090-8712-3366 → Shūichi (cellulare)
+  - 0774-56-XXXX → Ippodromo di Yodo
+  - 090-1188-8812 → Non identificato (creditore di Shūichi)
+
+- **H6 Tabulati — chiamata 07:05 del 30/03**. Viene dal fisso dell'appartamento di Shūichi e Yumi. A quell'ora sulla villa ci sono già i soccorsi arrivati dopo la 119. Risponde un agente o un paramedico ("Casa Ogawa", voce maschile sconosciuta); chi chiama riattacca dopo 48 secondi. Shūichi dormiva (lo dice lui stesso). Yumi era sveglia? Perché chiamava, e perché ha riagganciato sentendo voce estranea?
+
+- **H7 Agenda — traduzione completa**. Già disponibile direttamente nell'handout HTML. L'agenda conferma il movente anche senza parlare con Shimizu: i PG devono trovarla nel cassetto dello studio (ridondanza utile se i PG non ottengono il consenso di Fumiko per liberare Shimizu dal segreto professionale).
+
+- **H8 Fotogramma — lettura dei capelli**. Yumi si è raccolta i capelli apposta prima di entrare nel konbini — sa che c'è la telecamera. I PG non possono identificarla solo dal filmato. Ma se chiedono a Shūichi: *"Yumi aveva i capelli raccolti quella sera?"* lui risponde: *"No, li aveva sciolti come sempre... aspetti, forse se li è tirati su in macchina prima di scendere al konbini. Sì, mi pare di sì."* — dettaglio che non ha senso a meno che Yumi non volesse cambiare aspetto.
+
+- **H9 Lettera + H10 Timbro — la trappola di Yumi**. La lettera accusa Fumiko. Ma il timbro è Nakagyō (quartiere di Yumi) e il testo menziona l'amante — informazione che Yumi non dovrebbe possedere. Se i PG notano entrambi gli elementi, la trappola si ritorce contro l'autrice.
 
 ---
 
-## H2 — Rapporto scena del crimine
-
-**Luogo**: Villa Ogawa, Higashiyama-ku, Gojōzaka 3-14 — 30/03/1997
-
-- **Camera**: vittima nel futon, posizione supina, nessun segno di lotta, finestre chiuse
-- **Bagno**: armadietto aperto, **scatola Lanoxin ASSENTE**. Cestino: fazzoletto accartocciato (sequestrato)
-- **Soggiorno**: bottiglia umeshu (~200 mL rimasti, sequestrata), due bicchierini sporchi
-- **Cucina**: piatti lavati dalla moglie la sera prima
-- **Studio**: cassaforte chiusa, nessuna anomalia
-
----
-
-## H3 — Cartella clinica (estratto)
-
-**Paziente**: Ogawa Masao — Kyodai Hospital, Cardiologia **Diagnosi**: Fibrillazione atriale cronica (1994) **Terapia**: Lanoxin 0,25 mg, 1 cp/die + Aspirina 100 mg **Ultima ricetta**: 05/03/1997 (confezione 60 cp) **Ultima visita** (08/03/1997): ECG stabile, digossinemia 1,3 ng/mL, PA 140/80. Buone condizioni. **Note**: Non compliance su dieta. Fumatore moderato. Compliance farmacologica buona.
-
----
-
-## H4 — Trascrizione chiamata 119
-
-> **Operatore**: 119番です。火事ですか、救急ですか。 **Fumiko**: _(tremante)_ 救急です... 主人が起きないんです... 息をしてないみたい... **Operatore**: 住所を教えてください。 **Fumiko**: 東山区、五条坂三丁目14。小川です。早く来てください... **Operatore**: ご主人のお年は。 **Fumiko**: 66歳です。心臓の薬を飲んでいます... **Operatore**: 体は冷たいですか。 **Fumiko**: _(pausa)_ ...はい。冷たいです。
-
-Traduzione: Fumiko chiama alle 06:38. Il marito non si sveglia, non respira, è freddo. Prende medicine per il cuore. Svegliata alle 06:30 — 8 minuti tra scoperta e chiamata.
-
----
-
-## H5 — Esami del sangue
-
-### 京都大学医学部附属病院 — 中央検査部
-
-Esami tossicologici — Campioni prelevati 30-31/03/1997
-
-|Soggetto|Età|Digossina sierica (ng/mL)|Alcol etilico (g/L)|
-|---|---|---|---|
-|Ogawa Masao †|66|8,4|0,4|
-|Ogawa Fumiko|62|1,2|0,2|
-|Ogawa Shūichi|34|1,0|0,5|
-|Ogawa Yumi|30|0,3|0,1|
-|Murakami Kazuko|70|1,4|0,3|
-|Shimizu Tetsuo|56|0,9|0,2|
-
-_Range terapeutico digossina: 0,8-2,0 ng/mL. Valori superiori indicano sovradosaggio._
-
-**Nota per il GM** (non nell'handout): Il dato di Yumi (0,3) salta all'occhio se i PG leggono la tabella con attenzione. Se non lo notano, la dott.ssa Morita lo segnala: _"C'è una cosa che mi colpisce. Tutti tra 0,9 e 1,4. La signora Yumi è a 0,3."_ Quanto ciascuno ha bevuto è informazione che i PG devono ottenere dagli interrogatori, non dal referto.
-
----
-
-## H6 — Tabulati telefonici
-
-### Utenza fissa 075-561-5541 (intestatario: Ogawa Masao)
-
-Periodo: 20/03/1997 — 30/03/1997
-
-|Data|Ora|Dir.|Numero|Durata|
-|---|---|---|---|---|
-|20/03|09:42|OUT|075-371-8823|00:08:22|
-|22/03|10:15|OUT|075-371-8823|00:14:07|
-|23/03|11:00|IN|075-641-2190|00:03:45|
-|25/03|18:40|OUT|075-641-2190|00:06:12|
-|27/03|09:00|OUT|075-371-8823|00:03:18|
-|28/03|11:20|OUT|075-561-7043|00:08:44|
-|28/03|16:30|IN|075-222-4471|00:05:02|
-|29/03|14:10|OUT|090-8712-3366|00:01:55|
-|30/03|07:05|IN|075-222-4471|00:00:48|
-
-### Utenza mobile 090-8712-3366 (intestatario: Ogawa Shūichi)
-
-Periodo: 20/03/1997 — 30/03/1997
-
-|Data|Ora|Dir.|Numero|Durata|
-|---|---|---|---|---|
-|22/03|20:15|OUT|0774-56-XXXX|00:02:30|
-|24/03|21:40|OUT|0774-56-XXXX|00:04:11|
-|26/03|22:30|OUT|0774-56-XXXX|00:03:58|
-|27/03|15:00|IN|090-1188-8812|00:07:22|
-|28/03|23:45|IN|090-1188-8812|00:02:14|
-|29/03|14:15|IN|075-561-5541|00:01:55|
-
-### Utenza fissa 075-222-4471 (intestatario: Ogawa Shūichi — appartamento Nakagyō-ku)
-
-Periodo: 20/03/1997 — 30/03/1997
-
-|Data|Ora|Dir.|Numero|Durata|
-|---|---|---|---|---|
-|25/03|10:00|OUT|075-641-2190|00:03:10|
-|28/03|16:30|OUT|075-561-5541|00:05:02|
-|30/03|07:05|OUT|075-561-5541|00:00:48|
-
-**Chiave numeri (solo GM — i PG devono identificarli)**:
-
-- 075-371-8823 → Studio Shimizu (avvocato)
-- 075-641-2190 → Murakami Kazuko (sorella)
-- 075-561-7043 → Fornace Ogawa Tōgei
-- 075-561-5541 → Villa Ogawa (fisso)
-- 075-222-4471 → Appartamento Shūichi/Yumi (fisso)
-- 090-8712-3366 → Shūichi (cellulare)
-- 0774-56-XXXX → Ippodromo di Yodo
-- 090-1188-8812 → Non identificato (creditore di Shūichi)
-
-**Nota GM**: La chiamata alla villa il 30/03 alle 07:05 (48 secondi) viene dal fisso dell'appartamento di Shūichi e Yumi. Potrebbe averla fatta chiunque dei due. Ma Shūichi dormiva (lo dice lui stesso). Yumi era sveglia? Perché chiamava?
-
----
-
-## H6b — Agenda della vittima (手帳)
-
-Agenda tascabile Hobonichi Techo, anno 1997, trovata nel cassetto della scrivania nello studio (piano terra). Scrittura a mano, inchiostro nero.
-
-**Pagine rilevanti** (da consegnare come handout in giapponese):
-
-> **3月5日（水）** 京大病院 10:00 西田先生 / 薬局 — ラノキシン
-> 
-> **3月12日（水）** 清水 14:00 — 遺言の件
-> 
-> **3月15日（土）** 家族昼食
-> 
-> **3月22日（土）** 清水に電話 — 4/3の確認
-> 
-> **3月27日（木）** 清水 確認済み — 4月3日 10:00 公証人
-> 
-> **3月29日（土）** 花見の夕食 — 家族 / 準備: 梅酒、酒、果物
-> 
-> **4月3日（木）** 公証人 清水事務所 10:00 — 遺言変更
-
-**Traduzione (solo GM)**:
-
-- 5/3: Kyodai Hospital 10:00 Dott. Nishida / Farmacia — Lanoxin
-- 12/3: Shimizu 14:00 — questione testamento
-- 15/3: Pranzo famiglia
-- 22/3: Telefonare Shimizu — conferma 3/4
-- 27/3: Shimizu confermato — 3 Aprile 10:00 notaio
-- 29/3: Cena ciliegi — famiglia / Preparare: umeshu, sake, frutta
-- **3/4: Notaio, studio Shimizu 10:00 — MODIFICA TESTAMENTO**
-
-L'agenda conferma il movente senza bisogno di parlare con Shimizu. Ma i PG devono trovarla (cassetto studio) e leggerla (è in giapponese — se i PG hanno un personaggio che legge, la trovano da soli).
-
----
-
-## H7 — Fotogramma telecamera Family Mart
-
-**Luogo**: Family Mart, angolo Higashiōji-dōri / Shichijō-dōri **Data**: 29/03/1997, 22:58 **Qualità**: VHS bassa risoluzione, bianco e nero
-
-Donna entra dal parcheggio. Corporatura minuta, **capelli scuri raccolti sulla nuca**, giacca scura. Si dirige al bidone, getta un oggetto piccolo. Va alla cassa, compra qualcosa, esce.
-
-**Volto non identificabile.** Altezza stimata: 155-160 cm.
-
-|Soggetto|Altezza|Corporatura|Capelli abituali|Compatibile?|
-|---|---|---|---|---|
-|Yumi|157 cm|Minuta|Lunghi, scuri (ma nel filmato sono raccolti)|**Possibile**|
-|Fumiko|152 cm|Media|Corti, grigi|No (altezza, corporatura)|
-|Kazuko|148 cm|Robusta|Corti, grigi|No (altezza, corporatura)|
-
-**Nota GM**: Yumi si è raccolta i capelli apposta prima di entrare nel konbini — sa che ci sono telecamere. Con i capelli su, la silhouette non corrisponde immediatamente alla sua immagine abituale (capelli lunghi sciolti). I PG non possono identificarla dal filmato da solo. Ma se chiedono a Shūichi: _"Yumi aveva i capelli raccolti quella sera?"_ — Shūichi ci pensa e dice: _"No, li aveva sciolti come sempre... aspetti, forse se li è tirati su in macchina prima di scendere al konbini. Sì, mi pare di sì."_ — dettaglio che non ha senso a meno che Yumi non volesse cambiare aspetto.
-
----
-
-## H8 — Lettera anonima
-
-Arriva il **2 Aprile**. Busta bianca, nessun mittente. Timbro: **中京郵便局 (Nakagyō)** — raccolta 31/03.
-
-Testo stampato (getto d'inchiostro, font generico):
-
-> 捜査課の方々へ
-> 
-> 小川正雄の死は事故ではありません。 妻の文子に聞いてください。 薬のことを誰よりも知っていたのは彼女です。 夫の愛人のことも知っていました。 証拠は薬の箱を探してください。
-> 
-> 真実を求める者より
-
-**Traduzione**: _"La morte di Ogawa non è un incidente. Chiedete alla moglie Fumiko. Conosceva i farmaci meglio di chiunque. Sapeva dell'amante. Cercate la scatola delle medicine."_
-
-**Analisi**: La cassetta postale più vicina è a 150 metri dall'appartamento di Yumi (Nakagyō-ku). La lettera menziona l'amante — informazione che Yumi non dovrebbe avere.
-
----
-
-## H9 — Analisi timbro postale
-
-**Ufficio postale**: 中京郵便局 (Nakagyō) **Data raccolta**: 31/03/1997 (lunedì, prima raccolta mattutina) **Cassetta di provenienza**: Non determinabile con certezza, ma la zona di raccolta copre il quartiere Karasuma-Oike — dove risiedono Ogawa Shūichi e Ogawa Yumi.
-
----
 
 # 9. SCENA FINALE — LA CADUTA DI SHŪICHI
 
@@ -605,4 +464,4 @@ Non descrivere il suicidio con dettagli grafici. Basta il colpo, il silenzio, e 
 
 ---
 
-_偽りの春 — La Falsa Primavera — v2.0_
+_偽りの春 — La Falsa Primavera — v2.2_

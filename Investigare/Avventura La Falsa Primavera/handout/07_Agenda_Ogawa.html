@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Agenda personale — Ogawa Masao</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 1px solid #111; border-bottom: 2px solid #111; padding: 10px 18px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #555; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 2px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 8px; color: #000; }
+.page-scan {
+    background: #f6f1e3;
+    border: 1px solid #b8a97a;
+    padding: 20px 28px;
+    font-family: "MS Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+    color: #1a1a2a;
+    background-image: repeating-linear-gradient(transparent 0, transparent 27px, rgba(80,80,120,0.1) 27px, rgba(80,80,120,0.1) 28px);
+    line-height: 28px;
+    font-size: 15px;
+    position: relative;
+}
+.page-scan::before { content: "〒"; position: absolute; top: 10px; right: 14px; font-size: 10px; color: #888; letter-spacing: 1px; }
+.entry { margin-bottom: 6px; }
+.entry .date-jp { font-weight: bold; color: #1a1a2a; display: inline-block; width: 180px; }
+.entry .note { color: #1a1a2a; }
+.translation-box { margin-top: 14px; border: 1px solid #888; padding: 10px 14px; font-size: 12px; line-height: 1.6; font-family: "Courier New", monospace; color: #111; }
+.translation-box .t-title { font-weight: bold; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #333; border-bottom: 1px solid #aaa; padding-bottom: 3px; margin-bottom: 6px; }
+.translation-box ul { list-style: none; margin-left: 0; }
+.translation-box li { margin-bottom: 3px; color: #111; }
+.translation-box li strong { color: #8b0000; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .page-scan { background: #2a261c; color: #e8e0c8; border-color: #6a5c3a; background-image: repeating-linear-gradient(transparent 0, transparent 27px, rgba(200,180,120,0.1) 27px, rgba(200,180,120,0.1) 28px); }
+    .page-scan::before { color: #998860; }
+    .entry .date-jp, .entry .note { color: #e8e0c8; }
+    .translation-box { border-color: #555; color: #d0ccbe; }
+    .translation-box .t-title { color: #a99c78; border-bottom-color: #555; }
+    .translation-box li { color: #d0ccbe; }
+    .translation-box li strong { color: #cc4444; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">ACQUISITO</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — DOCUMENTAZIONE DI SUPPORTO</div>
+        <div class="title">AGENDA PERSONALE DELLA VITTIMA</div>
+        <div class="subtitle">Takahashi Techo 1997 — rinvenuta nel cassetto della scrivania, studio villa Ogawa</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Oggetto</span><br>Agenda tascabile in pelle nera, 240 pp.</div>
+        <div><span class="label">Modello</span><br>Takahashi No Techo — edizione 1997</div>
+        <div><span class="label">Rinvenimento</span><br>30/03/1997 — cassetto scrivania, studio</div>
+        <div><span class="label">Appartenenza</span><br>OGAWA Masao (scrittura riconosciuta dal coniuge)</div>
+        <div><span class="label">Strumento</span><br>Penna stilografica, inchiostro nero</div>
+        <div><span class="label">Contenuto rilevante</span><br>pp. 12–18 (marzo–aprile 1997)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Scansione pagine rilevanti — marzo / aprile 1997</div>
+
+        <div class="page-scan">
+            <div class="entry"><span class="date-jp">3月5日（水）</span><span class="note">京大病院 10:00　西田先生 ／ 薬局 — ラノキシン</span></div>
+            <div class="entry"><span class="date-jp">3月12日（水）</span><span class="note">清水　14:00 — 遺言の件</span></div>
+            <div class="entry"><span class="date-jp">3月15日（土）</span><span class="note">家族昼食</span></div>
+            <div class="entry"><span class="date-jp">3月22日（土）</span><span class="note">清水に電話 — 4/3の確認</span></div>
+            <div class="entry"><span class="date-jp">3月27日（木）</span><span class="note">清水 確認済み — 4月3日 10:00 公証人</span></div>
+            <div class="entry"><span class="date-jp">3月29日（土）</span><span class="note">花見の夕食 — 家族 ／ 準備: 梅酒、酒、果物</span></div>
+            <div class="entry"><span class="date-jp">4月3日（木）</span><span class="note">公証人 清水事務所 10:00 — 遺言変更</span></div>
+        </div>
+
+        <div class="translation-box">
+            <div class="t-title">Traduzione in italiano (a cura della Scientifica)</div>
+            <ul>
+                <li><strong>5 marzo (mer)</strong>: Ospedale Kyodai ore 10:00, Dott. Nishida / Farmacia — Lanoxin</li>
+                <li><strong>12 marzo (mer)</strong>: Shimizu ore 14:00 — questione testamento</li>
+                <li><strong>15 marzo (sab)</strong>: pranzo di famiglia</li>
+                <li><strong>22 marzo (sab)</strong>: telefonare a Shimizu — conferma del 3 aprile</li>
+                <li><strong>27 marzo (gio)</strong>: Shimizu confermato — 3 aprile ore 10:00 dal notaio</li>
+                <li><strong>29 marzo (sab)</strong>: cena dei ciliegi — famiglia / preparare: umeshu, sake, frutta</li>
+                <li><strong>3 aprile (gio)</strong>: notaio, studio Shimizu ore 10:00 — modifica testamento</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Nota del repertore</div>
+        <p style="font-size: 12px; line-height: 1.6;">Non sono state rilevate annotazioni di rilievo nelle pagine precedenti al 5 marzo né successive al 3 aprile (non riempite). Le pagine 12–18 non presentano cancellature né strappi. Le annotazioni sono compatibili con la grafia riscontrata su altri documenti autografi della vittima (verifica calligrafica preliminare positiva).</p>
+    </div>
+
+    <div class="footer">
+        Agenda Personale — Documento acquisito — Caso Ogawa — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

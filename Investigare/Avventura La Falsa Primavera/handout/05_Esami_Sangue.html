@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Esami tossicologici — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.6; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 16px; font-size: 13px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.signature-section { margin-top: 24px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.timbro { position: absolute; bottom: 50px; right: 30px; width: 70px; height: 70px; border: 3px solid rgba(30, 80, 160, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-15deg); color: rgba(30, 80, 160, 0.4); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+.footer { margin-top: 16px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #204070; border: 2px solid #204070; padding: 2px 8px; letter-spacing: 2px; }
+.lab-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.lab-table th, .lab-table td { border: 1px solid #333; padding: 6px 8px; text-align: left; color: #111; }
+.lab-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.lab-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.lab-table .range { background: #f6f6f0; font-size: 11px; }
+.death { color: #8b0000; font-weight: bold; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p { color: #d0ccbe; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #7aa8d8; border-color: #7aa8d8; }
+    .timbro { border-color: rgba(122, 168, 216, 0.25); color: rgba(122, 168, 216, 0.25); }
+    .lab-table th, .lab-table td { border-color: #444; color: #d0ccbe; }
+    .lab-table th { background: #1f1f24; color: #b0a890; }
+    .lab-table .range { background: #1b1b20; color: #a99c78; }
+    .death { color: #cc4444; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">LABORATORIO</div>
+
+    <div class="doc-header">
+        <div class="org">京都大学医学部附属病院 — 中央検査部 — LABORATORIO CENTRALE</div>
+        <div class="title">REFERTO TOSSICOLOGICO</div>
+        <div class="subtitle">Richiesta urgente in ambito di procedimento penale</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">N. richiesta</span><br>KU-LAB-97-0330-URG-112</div>
+        <div><span class="label">Data emissione</span><br>31 marzo 1997 — ore 14:20</div>
+        <div><span class="label">Richiedente</span><br>Dott.ssa MORITA Chiaki — Osp. Prefetturale</div>
+        <div><span class="label">Finalità</span><br>Screening digossina e alcolemia</div>
+        <div><span class="label">Prelievi</span><br>30/03/1997 e 31/03/1997</div>
+        <div><span class="label">Metodica digossina</span><br>Immunoenzimatica (EIA) — sensibilità 0,1 ng/mL</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Premessa</div>
+        <p>Su richiesta della Dr.ssa Morita Chiaki (Medicina Legale, Ospedale Prefetturale di Kyoto), in seguito al rilievo di intossicazione digitalica letale sul cadavere del Sig. OGAWA Masao, sono stati sottoposti a prelievo ematico venoso tutti i sei soggetti presenti alla cena familiare del 29/03/1997 presso la residenza Ogawa. Finalità: valutare eventuale esposizione condivisa e livello di assunzione individuale.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Risultati — pannello tossicologico</div>
+
+        <table class="lab-table">
+            <thead>
+                <tr>
+                    <th style="width:28%;">Soggetto</th>
+                    <th style="width:8%;">Età</th>
+                    <th style="width:10%;">Sesso</th>
+                    <th style="width:12%;">Data prelievo</th>
+                    <th style="width:18%;">Digossina sierica (ng/mL)</th>
+                    <th style="width:14%;">Alcol etilico (g/L)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="death">OGAWA Masao †</td>
+                    <td>66</td>
+                    <td>M</td>
+                    <td>30/03 — autopsia</td>
+                    <td class="num death">8,4</td>
+                    <td class="num">0,4</td>
+                </tr>
+                <tr>
+                    <td>OGAWA Fumiko</td>
+                    <td>62</td>
+                    <td>F</td>
+                    <td>30/03 — 14:10</td>
+                    <td class="num">1,2</td>
+                    <td class="num">0,2</td>
+                </tr>
+                <tr>
+                    <td>OGAWA Shūichi</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>30/03 — 16:55</td>
+                    <td class="num">1,0</td>
+                    <td class="num">0,5</td>
+                </tr>
+                <tr>
+                    <td>OGAWA Yumi</td>
+                    <td>30</td>
+                    <td>F</td>
+                    <td>30/03 — 17:10</td>
+                    <td class="num">0,3</td>
+                    <td class="num">0,1</td>
+                </tr>
+                <tr>
+                    <td>MURAKAMI Kazuko</td>
+                    <td>70</td>
+                    <td>F</td>
+                    <td>31/03 — 09:30</td>
+                    <td class="num">1,4</td>
+                    <td class="num">0,3</td>
+                </tr>
+                <tr>
+                    <td>SHIMIZU Tetsuo</td>
+                    <td>56</td>
+                    <td>M</td>
+                    <td>31/03 — 10:45</td>
+                    <td class="num">0,9</td>
+                    <td class="num">0,2</td>
+                </tr>
+                <tr class="range">
+                    <td colspan="4"><em>Range di riferimento — digossina terapeutica</em></td>
+                    <td class="num"><em>0,8 — 2,0</em></td>
+                    <td class="num"><em>—</em></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Note del laboratorio</div>
+        <p>Tutti e sei i soggetti presentano digossinemia rilevabile. Nessuno dei sei soggetti risulta essere in terapia digitalica, ad eccezione della vittima. La presenza del farmaco nei campioni ematici dei commensali viventi è pertanto attribuibile a una unica assunzione orale esogena, coerentemente con l'ipotesi investigativa di veicolazione attraverso alimento o bevanda condivisa.</p>
+        <div class="highlight-box">
+            La variabilità osservata tra i soggetti (0,3 — 1,4 ng/mL esclusa la vittima) è compatibile con differenze individuali nella quantità ingerita e nel tempo trascorso dall'assunzione al prelievo. Tossicologicamente, valori al di sotto di 0,4 ng/mL risultano coerenti con assunzione minima (pochi millilitri di bevanda contaminata) o con prelievo effettuato a lunga distanza dall'ingestione.
+        </div>
+        <p>Il valore della vittima (8,4 ng/mL) è incompatibile con la sola terapia in atto (Lanoxin 0,25 mg/die) e conferma il sovradosaggio acuto segnalato nel Referto Autoptico.</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Dott. HASEGAWA Jun (長谷川 純)<br>
+                <span style="font-size: 11px;">Tossicologia — Lab Centrale Kyodai</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Dott.ssa TAKAHASHI Yuri (高橋 百合)<br>
+                <span style="font-size: 11px;">Responsabile analisi immunoenzimatiche</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">LAB<br>CENTRALE<br>中央検査<br>京大病院</div>
+
+    <div class="footer">
+        Referto Tossicologico — N. KU-LAB-97-0330-URG-112 — Pagina 1 di 1 — Documento riservato
+    </div>
+
+</div>
+</body>
+</html>

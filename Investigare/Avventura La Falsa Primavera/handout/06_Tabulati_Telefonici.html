@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Tabulati telefonici — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 12px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 10px 18px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 10px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 12px; }
+.section-title { font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.utenza-header { background: #eee; padding: 4px 8px; font-size: 11px; font-weight: bold; border: 1px solid #333; border-bottom: none; color: #222; }
+.utenza-header span.num { font-family: "Courier New"; letter-spacing: 1px; }
+.cdr-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 10px; }
+.cdr-table th, .cdr-table td { border: 1px solid #333; padding: 3px 6px; text-align: left; color: #111; }
+.cdr-table th { background: #f4f4ef; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.cdr-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.cdr-table td.center { text-align: center; }
+.cdr-table tr.highlight td { background: rgba(180, 30, 30, 0.08); font-weight: bold; }
+.legend { font-size: 10px; color: #555; margin-top: 6px; padding: 6px 8px; border-left: 2px solid #555; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+.timbro { position: absolute; bottom: 30px; right: 20px; width: 60px; height: 60px; border: 3px solid rgba(180, 30, 30, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-12deg); color: rgba(180, 30, 30, 0.3); font-size: 8px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .utenza-header { background: #1f1f24; color: #b0a890; border-color: #555; }
+    .cdr-table th, .cdr-table td { border-color: #444; color: #d0ccbe; }
+    .cdr-table th { background: #1b1b20; color: #a99c78; }
+    .cdr-table tr.highlight td { background: rgba(200, 60, 60, 0.12); color: #e8d4c8; }
+    .legend { color: #a99c78; border-left-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.2); color: rgba(200, 60, 60, 0.2); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">NTT日本電信電話 / NTT DoCoMo — ESTRAZIONE TABULATI SU RICHIESTA GIUDIZIARIA</div>
+        <div class="title">TABULATI TELEFONICI</div>
+        <div class="subtitle">Caso Ogawa — periodo 20/03/1997 — 30/03/1997</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Richiesta</span><br>Procura di Kyoto, decreto 97-KPR-0331-TEL</div>
+        <div><span class="label">Data estrazione</span><br>01 aprile 1997</div>
+        <div><span class="label">Operatore</span><br>NTT Kyoto + NTT DoCoMo Kansai</div>
+        <div><span class="label">Utenze oggetto</span><br>3 (fissa Ogawa, fissa Shūichi, mobile Shūichi)</div>
+    </div>
+
+    <div class="utenza-header">
+        Utenza fissa <span class="num">075-561-5541</span> — intestatario: OGAWA Masao — Villa Ogawa, Higashiyama-ku
+    </div>
+    <table class="cdr-table">
+        <thead>
+            <tr><th>Data</th><th>Ora</th><th>Dir.</th><th>Numero controparte</th><th>Durata</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>20/03 (gio)</td><td class="num">09:42</td><td class="center">OUT</td><td>075-371-8823</td><td class="num">00:08:22</td></tr>
+            <tr><td>22/03 (sab)</td><td class="num">10:15</td><td class="center">OUT</td><td>075-371-8823</td><td class="num">00:14:07</td></tr>
+            <tr><td>23/03 (dom)</td><td class="num">11:00</td><td class="center">IN</td><td>075-641-2190</td><td class="num">00:03:45</td></tr>
+            <tr><td>25/03 (mar)</td><td class="num">18:40</td><td class="center">OUT</td><td>075-641-2190</td><td class="num">00:06:12</td></tr>
+            <tr><td>27/03 (gio)</td><td class="num">09:00</td><td class="center">OUT</td><td>075-371-8823</td><td class="num">00:03:18</td></tr>
+            <tr><td>28/03 (ven)</td><td class="num">11:20</td><td class="center">OUT</td><td>075-561-7043</td><td class="num">00:08:44</td></tr>
+            <tr><td>28/03 (ven)</td><td class="num">16:30</td><td class="center">IN</td><td>075-222-4471</td><td class="num">00:05:02</td></tr>
+            <tr><td>29/03 (sab)</td><td class="num">14:10</td><td class="center">OUT</td><td>090-8712-3366</td><td class="num">00:01:55</td></tr>
+            <tr class="highlight"><td>30/03 (dom)</td><td class="num">07:05</td><td class="center">IN</td><td>075-222-4471</td><td class="num">00:00:48</td></tr>
+        </tbody>
+    </table>
+
+    <div class="utenza-header">
+        Utenza mobile <span class="num">090-8712-3366</span> — intestatario: OGAWA Shūichi — NTT DoCoMo Kansai
+    </div>
+    <table class="cdr-table">
+        <thead>
+            <tr><th>Data</th><th>Ora</th><th>Dir.</th><th>Numero controparte</th><th>Durata</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>22/03 (sab)</td><td class="num">20:15</td><td class="center">OUT</td><td>0774-56-XXXX</td><td class="num">00:02:30</td></tr>
+            <tr><td>24/03 (lun)</td><td class="num">21:40</td><td class="center">OUT</td><td>0774-56-XXXX</td><td class="num">00:04:11</td></tr>
+            <tr><td>26/03 (mer)</td><td class="num">22:30</td><td class="center">OUT</td><td>0774-56-XXXX</td><td class="num">00:03:58</td></tr>
+            <tr><td>27/03 (gio)</td><td class="num">15:00</td><td class="center">IN</td><td>090-1188-8812</td><td class="num">00:07:22</td></tr>
+            <tr><td>28/03 (ven)</td><td class="num">23:45</td><td class="center">IN</td><td>090-1188-8812</td><td class="num">00:02:14</td></tr>
+            <tr><td>29/03 (sab)</td><td class="num">14:15</td><td class="center">IN</td><td>075-561-5541</td><td class="num">00:01:55</td></tr>
+        </tbody>
+    </table>
+
+    <div class="utenza-header">
+        Utenza fissa <span class="num">075-222-4471</span> — intestatario: OGAWA Shūichi — appartamento Nakagyō-ku, Mansion Karasuma 502
+    </div>
+    <table class="cdr-table">
+        <thead>
+            <tr><th>Data</th><th>Ora</th><th>Dir.</th><th>Numero controparte</th><th>Durata</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>25/03 (mar)</td><td class="num">10:00</td><td class="center">OUT</td><td>075-641-2190</td><td class="num">00:03:10</td></tr>
+            <tr><td>28/03 (ven)</td><td class="num">16:30</td><td class="center">OUT</td><td>075-561-5541</td><td class="num">00:05:02</td></tr>
+            <tr class="highlight"><td>30/03 (dom)</td><td class="num">07:05</td><td class="center">OUT</td><td>075-561-5541</td><td class="num">00:00:48</td></tr>
+        </tbody>
+    </table>
+
+    <div class="section">
+        <div class="section-title">Legenda abbreviazioni</div>
+        <div class="legend">
+            <strong>OUT</strong> = chiamata uscente dalla utenza intestata<br>
+            <strong>IN</strong> = chiamata entrante verso la utenza intestata<br>
+            <strong>Durata</strong> = formato hh:mm:ss, tempo di conversazione effettivo (escluse squille)<br>
+            Le righe evidenziate corrispondono a eventi sincronizzati su più utenze; i minimi scostamenti nell'orario di registrazione (tipicamente ≤ 5 min) sono compatibili con la tolleranza dei sistemi di logging NTT fisso e NTT DoCoMo.
+        </div>
+    </div>
+
+    <div class="footer">
+        Tabulati Telefonici — Fascicolo 97-KPR-0331-TEL — Pagina 1 di 1 — Uso giudiziario riservato
+    </div>
+
+    <div class="timbro">NTT<br>日本電信<br>電話</div>
+
+</div>
+</body>
+</html>

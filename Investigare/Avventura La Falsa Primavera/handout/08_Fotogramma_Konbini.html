@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Fotogramma telecamera — Family Mart</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.frame-wrapper { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 10px; }
+.frame {
+    width: 280px; flex-shrink: 0;
+    background: #0a0a0a; border: 2px solid #333; padding: 12px; position: relative;
+    color: #c0c0c0; font-family: "Courier New", monospace;
+    background-image: repeating-linear-gradient(transparent 0, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 3px);
+}
+.frame .osd-top { display: flex; justify-content: space-between; font-size: 10px; color: #e0e0e0; text-shadow: 0 0 2px #000; margin-bottom: 6px; letter-spacing: 1px; }
+.frame .osd-bottom { display: flex; justify-content: space-between; font-size: 10px; color: #e0e0e0; text-shadow: 0 0 2px #000; margin-top: 6px; letter-spacing: 1px; }
+.frame-img {
+    background: linear-gradient(180deg, #2a2a2a 0%, #151515 60%, #0a0a0a 100%);
+    height: 200px; position: relative; overflow: hidden;
+    border: 1px solid #222;
+}
+.frame-img .noise {
+    position: absolute; inset: 0;
+    background-image:
+        radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 2px 2px, 3px 3px;
+    pointer-events: none;
+}
+.frame-img .shelf-top { position: absolute; top: 12px; left: 0; right: 0; height: 4px; background: rgba(180,180,180,0.4); }
+.frame-img .shelf-back { position: absolute; top: 20px; left: 12px; right: 12px; height: 40px; background: rgba(120,120,120,0.2); border: 1px solid rgba(150,150,150,0.3); }
+.frame-img .bin { position: absolute; bottom: 28px; left: 30px; width: 36px; height: 50px; background: rgba(80,80,80,0.6); border: 1px solid rgba(120,120,120,0.5); }
+.frame-img .figure {
+    position: absolute; bottom: 20px; left: 90px;
+    width: 60px; height: 140px;
+    background: linear-gradient(180deg, rgba(50,50,50,0.9) 0%, rgba(30,30,30,0.95) 30%, rgba(40,40,40,0.9) 100%);
+    border-radius: 16px 16px 4px 4px;
+    filter: blur(1.5px);
+    opacity: 0.85;
+}
+.frame-img .figure::before {
+    content: ""; position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(80,80,80,0.8);
+    filter: blur(1px);
+}
+.frame-img .figure::after {
+    content: ""; position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+    width: 20px; height: 12px; border-radius: 50% 50% 40% 40%;
+    background: rgba(30,30,30,0.9);
+}
+.frame-img .floor { position: absolute; bottom: 0; left: 0; right: 0; height: 20px; background: rgba(60,60,60,0.5); border-top: 1px solid rgba(120,120,120,0.3); }
+.frame-img .ceiling-label { position: absolute; top: 2px; left: 8px; font-size: 9px; color: rgba(220,220,220,0.7); letter-spacing: 1px; }
+.frame-caption { font-size: 10px; color: #666; text-align: center; margin-top: 6px; line-height: 1.4; }
+.analysis { flex: 1; }
+.analysis ul { margin-left: 16px; list-style: none; }
+.analysis ul li { margin-bottom: 4px; color: #111; }
+.analysis ul li::before { content: "— "; color: #666; }
+.compare-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.compare-table th, .compare-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; }
+.compare-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.compare-table td.center { text-align: center; }
+.compare-table tr.match td { background: rgba(180,30,30,0.08); font-weight: bold; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p { color: #d0ccbe; }
+    .analysis ul li { color: #d0ccbe; }
+    .compare-table th, .compare-table td { border-color: #444; color: #d0ccbe; }
+    .compare-table th { background: #1f1f24; color: #b0a890; }
+    .compare-table tr.match td { background: rgba(200,60,60,0.14); color: #e8d4c8; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .frame-caption { color: #888; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } .frame { background: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — SEZIONE ANALISI VIDEO</div>
+        <div class="title">ESTRAZIONE FOTOGRAMMA DA REGISTRAZIONE TVCC</div>
+        <div class="subtitle">Family Mart Higashiōji-Shichijō — turno notturno del 29/03/1997</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">N. richiesta</span><br>97-KPD-0401-VID-008</div>
+        <div><span class="label">Data estrazione</span><br>01 aprile 1997</div>
+        <div><span class="label">Esercizio</span><br>Family Mart — 東大路七条店</div>
+        <div><span class="label">Indirizzo</span><br>Angolo Higashiōji-dōri × Shichijō-dōri, Higashiyama-ku</div>
+        <div><span class="label">Supporto</span><br>Cassetta VHS T-120 in loop 24h — monocromatica, time-lapse 2 fps</div>
+        <div><span class="label">Timecode</span><br>29/03/1997 — 22:58:14</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Fotogramma selezionato</div>
+
+        <div class="frame-wrapper">
+            <div class="frame">
+                <div class="osd-top"><span>FAMILY MART</span><span>CH-02</span></div>
+                <div class="frame-img">
+                    <div class="ceiling-label">ENTRY / PARKING</div>
+                    <div class="shelf-top"></div>
+                    <div class="shelf-back"></div>
+                    <div class="bin"></div>
+                    <div class="figure"></div>
+                    <div class="floor"></div>
+                    <div class="noise"></div>
+                </div>
+                <div class="osd-bottom"><span>1997-03-29</span><span>22:58:14</span></div>
+                <div class="frame-caption">Frame singolo estratto — qualità nativa VHS time-lapse (2 fps, B/N, 240×480 lines)</div>
+            </div>
+
+            <div class="analysis">
+                <strong>Descrizione del fotogramma</strong>
+                <ul>
+                    <li>Inquadratura fissa dall'alto sulla zona di ingresso del punto vendita</li>
+                    <li>Soggetto femminile, figura intera di spalle, in procinto di gettare un oggetto di piccole dimensioni nel cestino esterno prima di accedere al negozio</li>
+                    <li>Abbigliamento: giacca scura a vita, pantaloni scuri, scarpe basse</li>
+                    <li>Capelli scuri, raccolti sulla nuca (crocchia bassa o coda corta)</li>
+                    <li>Nessun elemento di riconoscimento facciale disponibile (inquadratura dorsale, qualità insufficiente)</li>
+                    <li>Altezza stimata con metodo fotogrammetrico (riferimento: altezza porta = 182 cm): <strong>155 — 160 cm</strong></li>
+                    <li>Corporatura: minuta</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Confronto morfometrico con soggetti di interesse</div>
+        <p>Sulla base delle schede anagrafiche dei soggetti convitati alla cena familiare del 29/03/1997, è stato effettuato un confronto morfometrico preliminare:</p>
+
+        <table class="compare-table">
+            <thead>
+                <tr>
+                    <th style="width:22%;">Soggetto</th>
+                    <th class="center" style="width:12%;">Sesso</th>
+                    <th class="center" style="width:12%;">Altezza</th>
+                    <th style="width:22%;">Corporatura</th>
+                    <th style="width:18%;">Capelli abituali</th>
+                    <th class="center" style="width:14%;">Compatibile?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="match">
+                    <td>OGAWA Yumi</td>
+                    <td class="center">F</td>
+                    <td class="center">157 cm</td>
+                    <td>Minuta</td>
+                    <td>Lunghi, sciolti</td>
+                    <td class="center">POSSIBILE</td>
+                </tr>
+                <tr>
+                    <td>OGAWA Fumiko</td>
+                    <td class="center">F</td>
+                    <td class="center">152 cm</td>
+                    <td>Media</td>
+                    <td>Corti, grigi</td>
+                    <td class="center">No (altezza, capelli)</td>
+                </tr>
+                <tr>
+                    <td>MURAKAMI Kazuko</td>
+                    <td class="center">F</td>
+                    <td class="center">148 cm</td>
+                    <td>Robusta</td>
+                    <td>Corti, grigi</td>
+                    <td class="center">No (altezza, corp.)</td>
+                </tr>
+                <tr>
+                    <td>SHIMIZU Tetsuo</td>
+                    <td class="center">M</td>
+                    <td class="center">172 cm</td>
+                    <td>Media maschile</td>
+                    <td>—</td>
+                    <td class="center">No (sesso, altezza)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Note tecniche</div>
+        <div class="highlight-box">
+            La qualità del supporto VHS time-lapse a 2 frame/sec e la risoluzione monocromatica non consentono identificazione biometrica certa. La compatibilità indicata è esclusivamente di tipo morfometrico su altezza e corporatura. Il riconoscimento richiede riscontro incrociato con dichiarazioni testimoniali, capi di abbigliamento e/o ricevuta di acquisto presso la cassa.
+        </div>
+        <p>Rilievi complementari richiesti: acquisizione scontrino cassa dell'orario 22:58-23:02 del 29/03/1997 e verbale di Shift Manager dell'esercizio.</p>
+    </div>
+
+    <div class="footer">
+        Analisi Video TVCC — N. 97-KPD-0401-VID-008 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

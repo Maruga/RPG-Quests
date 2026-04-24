@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Lettera anonima — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.6; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.letter-scan {
+    background: #fafaf4;
+    border: 1px solid #aaa;
+    padding: 30px 40px;
+    font-family: "MS Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+    color: #1a1a2a;
+    font-size: 15px;
+    line-height: 34px;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.05);
+    position: relative;
+    min-height: 300px;
+}
+.letter-scan::before { content: "〒中京"; position: absolute; top: 6px; right: 14px; font-size: 11px; color: #999; letter-spacing: 1px; }
+.letter-scan p { margin-bottom: 14px; color: #1a1a2a; text-align: left; }
+.letter-scan .greeting { font-weight: bold; }
+.letter-scan .signature { text-align: right; margin-top: 30px; font-style: italic; }
+.envelope-scan {
+    background: #ede5d4;
+    border: 1px solid #9c8a62;
+    padding: 20px 30px;
+    margin-bottom: 14px;
+    position: relative;
+    min-height: 120px;
+    font-family: "MS Mincho", serif;
+    color: #222;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+}
+.envelope-scan .stamp-area {
+    position: absolute; top: 14px; right: 20px;
+    width: 64px; height: 44px;
+    border: 1px dashed #888;
+    padding: 4px; text-align: center;
+    font-size: 9px; color: #555;
+    line-height: 1.3;
+}
+.envelope-scan .postmark {
+    position: absolute; top: 16px; right: 94px;
+    width: 74px; height: 74px;
+    border: 2px solid rgba(20, 20, 120, 0.5);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transform: rotate(-8deg);
+    color: rgba(20, 20, 120, 0.55);
+    font-size: 10px; font-family: "MS Mincho", serif;
+    text-align: center; line-height: 1.3;
+    font-weight: bold;
+}
+.envelope-scan .addr-to { font-size: 13px; line-height: 1.7; margin-top: 40px; }
+.envelope-scan .addr-to-label { font-size: 10px; color: #666; letter-spacing: 1px; }
+.envelope-scan .no-sender { position: absolute; bottom: 14px; left: 24px; font-size: 11px; color: #888; font-style: italic; }
+.analysis-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.analysis-table th, .analysis-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.analysis-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; width: 30%; }
+.translation-box { margin-top: 14px; border: 1px solid #888; padding: 10px 14px; font-size: 12px; line-height: 1.6; font-family: "Courier New", monospace; color: #111; }
+.translation-box .t-title { font-weight: bold; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #333; border-bottom: 1px solid #aaa; padding-bottom: 3px; margin-bottom: 6px; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p { color: #d0ccbe; }
+    .letter-scan { background: #2a261c; color: #e8e0c8; border-color: #6a5c3a; }
+    .letter-scan p { color: #e8e0c8; }
+    .letter-scan::before { color: #998860; }
+    .envelope-scan { background: #2e2a20; color: #e0d8c0; border-color: #7a6a44; }
+    .envelope-scan .stamp-area { border-color: #8a7858; color: #b0a890; }
+    .envelope-scan .postmark { border-color: rgba(120, 160, 210, 0.5); color: rgba(150, 180, 220, 0.7); }
+    .envelope-scan .addr-to-label, .envelope-scan .no-sender { color: #a99c78; }
+    .analysis-table th, .analysis-table td { border-color: #444; color: #d0ccbe; }
+    .analysis-table th { background: #1f1f24; color: #b0a890; }
+    .translation-box { border-color: #555; color: #d0ccbe; }
+    .translation-box .t-title { color: #a99c78; border-bottom-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">CORRISPONDENZA</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA PREFETTURALE — SEZIONE INVESTIGATIVA</div>
+        <div class="title">LETTERA ANONIMA</div>
+        <div class="subtitle">Acquisita al protocollo il 2 aprile 1997 — inoltro al fascicolo Ogawa</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Protocollo ingresso</span><br>97-KPR-0402-POST-0419</div>
+        <div><span class="label">Data acquisizione</span><br>02 aprile 1997, ore 10:14</div>
+        <div><span class="label">Destinatario</span><br>Polizia Prefetturale di Kyoto — Sez. Investigativa</div>
+        <div><span class="label">Mittente</span><br>Anonimo</div>
+        <div><span class="label">Timbro postale</span><br>中京郵便局 (Nakagyō) — raccolta 31/03/1997</div>
+        <div><span class="label">Supporto</span><br>Foglio A5 bianco 80 g/mq, busta bianca standard</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Scansione della busta</div>
+
+        <div class="envelope-scan">
+            <div class="postmark">中京<br>郵便局<br>31.3.97</div>
+            <div class="stamp-area">FRANCO<br>80円</div>
+            <div class="addr-to-label">送り先 (destinatario)</div>
+            <div class="addr-to">京都府警察本部<br>捜査一課 御中</div>
+            <div class="no-sender">— assenza di mittente (no indirizzo di ritorno) —</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Scansione del contenuto</div>
+
+        <div class="letter-scan">
+            <p class="greeting">捜査課の方々へ</p>
+            <p>小川正雄の死は事故ではありません。</p>
+            <p>妻の文子に聞いてください。<br>
+            薬のことを誰よりも知っていたのは彼女です。<br>
+            夫の愛人のことも知っていました。</p>
+            <p>証拠は薬の箱を探してください。</p>
+            <p class="signature">真実を求める者より</p>
+        </div>
+
+        <div class="translation-box">
+            <div class="t-title">Traduzione in italiano (a cura della Scientifica)</div>
+            <p>Agli ufficiali della Sezione Investigativa.</p>
+            <p>La morte di Ogawa Masao non è un incidente.</p>
+            <p>Chiedete alla moglie Fumiko. Era lei, più di chiunque altro, a conoscere le medicine. Sapeva anche dell'amante del marito.</p>
+            <p>Per la prova, cercate la scatola dei farmaci.</p>
+            <p style="text-align: right; font-style: italic;">Da chi cerca la verità.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Analisi preliminare della Scientifica</div>
+
+        <table class="analysis-table">
+            <tbody>
+                <tr><th>Supporto cartaceo</th><td>Foglio A5 bianco 80 g/mq, carta da ufficio generica, nessuna filigrana identificativa. Commercializzato in grandi distribuzioni (es. ITO-YOKADO, MUJI).</td></tr>
+                <tr><th>Stampa</th><td>Inkjet a getto d'inchiostro, risoluzione ≈ 360 dpi. Font Mincho (明朝) standard, corpo 10,5 pt. Nessuna indicazione riconducibile a stampanti professionali; profilo compatibile con stampante domestica di fascia consumer (es. Canon BJ, Epson Stylus).</td></tr>
+                <tr><th>Contenuto testuale</th><td>Giapponese formale. Assenza di errori ortografici. Stile scarno e diretto, verosimilmente redatto con intenzione di non lasciare elementi stilistici identificativi.</td></tr>
+                <tr><th>Busta</th><td>Busta bianca da 90×205 mm, gommata, standard postale. Francobollo da ¥80 (tariffa ordinaria interna 1997). Nessun residuo organico utile al prelievo biologico sul lembo (gomma industriale preumidificata).</td></tr>
+                <tr><th>Timbro postale</th><td>Ufficio postale di <strong>Nakagyō (中京郵便局)</strong>. Data raccolta: <strong>31/03/1997</strong>, prima battuta mattutina. L'area servita dall'ufficio copre il quartiere Karasuma-Oike e limitrofi.</td></tr>
+                <tr><th>Impronte digitali</th><td>Rilevate impronte miste frammentate attribuibili al personale postale (smistamento). Nessuna impronta univoca del mittente recuperabile.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Nota del protocollo</div>
+        <p>La lettera è stata aperta dall'ufficio protocollo con procedura conservativa (taglio del lato lungo non gommato). Busta e foglio sono conservati separatamente sotto busta plastica con verbale di acquisizione. Si trasmette al fascicolo dell'indagine per le opportune valutazioni.</p>
+    </div>
+
+    <div class="footer">
+        Lettera Anonima — Prot. 97-KPR-0402-POST-0419 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Referto Autoptico — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #111;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 8mm;
+    position: relative;
+}
+.doc-header {
+    border: 2px solid #111;
+    border-bottom: 3px double #111;
+    padding: 12px 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title {
+    font-size: 13px; font-weight: bold; text-transform: uppercase;
+    letter-spacing: 2px; border-bottom: 1px solid #333;
+    padding-bottom: 2px; margin-bottom: 6px; color: #000;
+}
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; color: #111; }
+.section ul li::before { content: "— "; color: #666; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.critical-box { border: 1px solid #8b0000; border-left: 4px solid #8b0000; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.signature-section { margin-top: 24px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.timbro {
+    position: absolute; bottom: 50px; right: 30px;
+    width: 70px; height: 70px;
+    border: 3px solid rgba(180, 30, 30, 0.4); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transform: rotate(-15deg);
+    color: rgba(180, 30, 30, 0.4);
+    font-size: 9px; font-weight: bold; text-align: center;
+    text-transform: uppercase; letter-spacing: 1px; line-height: 1.2;
+}
+.footer { margin-top: 16px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione {
+    position: absolute; top: 8mm; right: 8mm;
+    font-size: 11px; font-weight: bold; color: #8b0000;
+    border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px;
+}
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; }
+    .doc-header .org { color: #999; }
+    .doc-header .title { color: #e8e4d8; }
+    .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; }
+    .metadata div { border-color: #333; color: #d0ccbe; }
+    .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p, .section ul li { color: #d0ccbe; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .critical-box { border-color: #993333; border-left-color: #cc4444; color: #e0d8d0; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.25); color: rgba(200, 60, 60, 0.25); }
+}
+@media print {
+    body { background: #fff; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府立病院 — OSPEDALE PREFETTURALE DI KYOTO</div>
+        <div class="title">REFERTO AUTOPTICO</div>
+        <div class="subtitle">Dipartimento di Medicina Legale — Kamigyō-ku</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-0330-AUT</div>
+        <div><span class="label">Data esame</span><br>30 marzo 1997 — ore 15:00</div>
+        <div><span class="label">Patologo</span><br>Dott.ssa MORITA Chiaki (森田 千秋)</div>
+        <div><span class="label">Struttura</span><br>Ospedale Prefetturale, Kamigyō-ku</div>
+        <div><span class="label">Vittima</span><br>OGAWA Masao (小川 正雄), 66 anni</div>
+        <div><span class="label">Residenza</span><br>Higashiyama-ku, Gojōzaka 3-14</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Dati anagrafici e circostanze</div>
+        <p>Il corpo del defunto OGAWA Masao, maschio, 66 anni, proprietario della fornace Ogawa Tōgei (Kiyomizu-yaki), è stato sottoposto ad esame autoptico in data 30 marzo 1997, a seguito del decesso avvenuto nelle prime ore della stessa giornata presso la residenza familiare.</p>
+        <p>Orario di decesso stimato sulla base della rigidità e dell'ipostasi: tra le 03:00 e le 06:00 del 30/03/1997. Chiamata al 119 registrata alle ore 06:38 dal coniuge della vittima.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Esame esterno</div>
+        <ul>
+            <li>Corporatura normotipo, altezza 168 cm, peso 71 kg</li>
+            <li>Nessun segno di violenza, colluttazione o contenzione</li>
+            <li>Nessun segno di iniezione (esaminati arti superiori, inferiori, collo, dorso)</li>
+            <li>Ipostasi dorsali fisse, compatibili con posizione supina mantenuta</li>
+            <li>Pupille miotiche bilaterali (puntiformi) — reperto anomalo per arresto cardiaco primario</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Esame interno — apparato cardiovascolare</div>
+        <ul>
+            <li>Cuore: peso 430 g, ipertrofia ventricolare sinistra marcata</li>
+            <li>Dilatazione atriale compatibile con fibrillazione atriale cronica documentata</li>
+            <li>Coronarie: placche aterosclerotiche moderate, senza ostruzione critica</li>
+            <li>Miocardio: segni compatibili con evento aritmico terminale</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Esame interno — apparato gastrointestinale</div>
+        <ul>
+            <li>Stomaco: contenuto alimentare parzialmente digerito (riso, pesce, verdure saltate)</li>
+            <li>Tracce di liquido alcolico dolciastro (compatibile con umeshu)</li>
+            <li>Mucose gastriche integre, nessuna erosione</li>
+            <li>Campione gastrico inviato per esame tossicologico</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Esame tossicologico</div>
+        <p>Dato il reperto della miosi bilaterale in assenza di cause meccaniche del decesso, si è richiesto pannello tossicologico esteso con particolare attenzione ai glicosidi cardioattivi, coerentemente con la terapia farmacologica nota del paziente.</p>
+        <ul>
+            <li>Alcol etilico sierico: 0,4 g/L</li>
+            <li><strong>Digossina sierica: 8,4 ng/mL</strong> (range terapeutico: 0,8–2,0 ng/mL)</li>
+            <li>Digossina in contenuto gastrico: POSITIVA, concentrazione elevata</li>
+            <li>Barbiturici, benzodiazepine, oppioidi, cianuro: NEGATIVI</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>Nota del patologo:</strong> il valore di digossinemia rilevato è oltre <em>quattro volte</em> il limite superiore del range terapeutico. Un dosaggio di tale entità è incompatibile con assunzione orale della singola dose giornaliera prescritta (Lanoxin 0,25 mg/die).
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Conclusione</div>
+
+        <div class="critical-box">
+            <strong>Causa del decesso:</strong> intossicazione acuta da digossina, con innesco di aritmia ventricolare fatale su cuore cardiopatico preesistente (fibrillazione atriale cronica, ipertrofia ventricolare sinistra).<br><br>
+            <strong>Modalità:</strong> sovradosaggio per via orale. La presenza di digossina nel contenuto gastrico e la contemporanea presenza di liquido alcolico dolciastro suggeriscono veicolazione in bevanda.
+        </div>
+
+        <p>Si rileva manifesta incompatibilità con assunzione terapeutica accidentale. Si raccomanda l'apertura di procedimento penale e l'estensione degli accertamenti tossicologici a tutti i commensali della cena del 29/03/1997.</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Dott.ssa MORITA Chiaki (森田 千秋)<br>
+                <span style="font-size: 11px;">Medicina Legale — Osp. Prefetturale Kyoto</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Dott. KITAGAWA Yūji (北川 雄二)<br>
+                <span style="font-size: 11px;">Direttore Dipartimento Medicina Legale</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">MEDICINA<br>LEGALE<br>法医学<br>京都府立</div>
+
+    <div class="footer">
+        Referto Autoptico — Fascicolo 97-KPD-0330-AUT — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>
