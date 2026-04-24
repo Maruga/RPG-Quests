@@ -9,6 +9,7 @@ Istruzioni operative per lavorare su questa avventura. Leggere insieme a MEMORY.
 - **Formato**: one-shot investigativa, sessione unica (3-4 ore)
 - **File canonico**: `Storia Completa.md` — versione corrente **v2.2**
 - **Handout HTML**: 10 file in `handout/` (01–10), stile burocratico JP '97
+- **Schede PNG**: 10 file markdown in `PNG/` (01–10), con prompt GPT + En + fasi comportamentali
 
 ## Lore critiche (NON cambiare senza autorizzazione)
 

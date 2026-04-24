@@ -6,8 +6,24 @@ Note di lavoro per questa avventura. Aggiornare dopo ogni sessione di modifica.
 
 - **File canonico**: `Storia Completa.md` — **v2.2** (sez. 8 alleggerita, solo indice + Note GM)
 - **Handout HTML**: **10 file creati** in `handout/` (stile burocratico JP '97, dark mode su schermo + print A4, pattern Ultima Lezione). Vedi elenco sotto.
-- **PG**: non ancora creati per questa avventura specifica (si possono adattare i PG investigativi standard con `Investigare/pg/genera_schede_pg.py`)
+- **Schede PNG**: **10 schede .md** create in `PNG/` (pattern Avventura Ultima Lezione — anagrafica, descrizione, prompt GPT, En per 5 PG standard, frasi tipiche, comportamento per fase, alibi, segreti GM).
+- **PG**: non ancora creati per questa avventura specifica (si possono adattare i PG investigativi standard con `Investigare/pg/genera_schede_pg.py`). Le schede PNG usano i nomi PG standard: Yamamoto, Honda, Nakamura, Sato, Fujita.
 - **Playtest**: non ancora testata al tavolo
+
+### File schede PNG — stato
+
+| File | Ruolo |
+|---|---|
+| `01_Ogawa_Masao.md` | Vittima (scheda di background) |
+| `02_Ogawa_Fumiko.md` | Falsa sospettata — la trappola |
+| `03_Ogawa_Shuichi.md` | Falso sospettato — debiti + Tokarev |
+| `04_Ogawa_Yumi.md` | **Assassina** — scheda più complessa, con prompt roleplay |
+| `05_Murakami_Kazuko.md` | Testimone chiave — flusso di coscienza |
+| `06_Shimizu_Tetsuo.md` | Fonte informativa — segreto professionale |
+| `07_Dott_Morita_Chiaki.md` | Medico legale — rete di sicurezza GM |
+| `08_Dott_Nishida_Takao.md` | Cardiologo — farmacologia digossina |
+| `09_Obata_Shigeru.md` | Custode — ancore temporali (cestini 28/3, umeshu sigillata) |
+| `10_Kubo_Midori.md` | Amante vittima — **pista falsa** |
 
 ### File handout HTML — stato
 
@@ -112,6 +128,7 @@ Creati 10 handout HTML nella cartella `handout/` seguendo il pattern di Ultima L
 
 - [x] ~~Creare handout HTML~~ — **fatto 2026-04-24** (10 file in `handout/`)
 - [x] ~~Rimuovere handout testuali da Storia Completa~~ — **fatto 2026-04-24** (sostituiti da indice + Note GM)
+- [x] ~~Schede PNG~~ — **fatto 2026-04-24** (10 file in `PNG/`)
 - [ ] Definire schede PG specifiche (o adattare PG standard con `Investigare/pg/genera_schede_pg.py`)
 - [ ] Eventuale cartellina GM stampabile (A4, chiavi numeri, tabella soluzione)
 - [ ] Playtest sessione unica per validare timing 3-4h
