@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Mappa di Kyoto — Quadrante sud-est</title>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4 landscape; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 297mm; min-height: 210mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 10px 18px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 10px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; border-right: 1px solid #999; color: #111; }
+.metadata div:nth-child(3n) { border-right: none; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 8px; color: #000; }
+.map-wrapper {
+    margin: 8px 0;
+    padding: 10px;
+    border: 2px solid #111;
+    background: #f2ece0;
+    position: relative;
+    text-align: center;
+}
+.map-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.map-overlay {
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    pointer-events: none;
+}
+.marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.marker .pencil-circle {
+    width: 54px;
+    height: 44px;
+    border: 2.5px solid rgba(185, 30, 30, 0.75);
+    border-radius: 50%;
+    transform: rotate(-6deg);
+    background: radial-gradient(ellipse at center, rgba(185,30,30,0) 45%, rgba(185,30,30,0.06) 70%, rgba(185,30,30,0) 100%);
+    filter: url(#pencilfilter);
+}
+.marker .pencil-label {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 4px);
+    transform: translateY(-50%) rotate(-3deg);
+    font-family: "Permanent Marker", "Caveat", "Courier New", monospace;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgba(185, 30, 30, 0.85);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-shadow: 0 0 2px rgba(255, 220, 220, 0.3);
+}
+.marker.below-left .pencil-label {
+    top: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+}
+.marker.left .pencil-label {
+    left: auto;
+    right: calc(100% + 4px);
+    transform: translateY(-50%) rotate(-3deg);
+}
+.marker.above .pencil-label {
+    top: auto;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+}
+.marker .pencil-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+    font-family: "Permanent Marker", "Caveat", "Courier New", monospace;
+    font-size: 18px;
+    color: rgba(185, 30, 30, 0.85);
+    font-weight: 700;
+}
+.legend-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 6px; }
+.legend-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.legend-table th, .legend-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.legend-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.legend-table td.num { text-align: center; font-weight: bold; width: 28px; color: #b91e1e; }
+.glossary-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 12px; color: #111; background: rgba(0,0,0,0.02); }
+.glossary-box dt { font-weight: bold; display: inline; }
+.glossary-box dd { display: inline; margin-left: 4px; }
+.glossary-box div { margin-bottom: 4px; }
+.footer { margin-top: 10px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #204070; border: 2px solid #204070; padding: 2px 8px; letter-spacing: 2px; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .map-wrapper { border-color: #555; background: #1d1d22; }
+    .legend-table th, .legend-table td { border-color: #444; color: #d0ccbe; }
+    .legend-table th { background: #1f1f24; color: #b0a890; }
+    .legend-table td.num { color: #e04a4a; }
+    .glossary-box { border-left-color: #777; color: #d0ccbe; background: rgba(255,255,255,0.03); }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #7aa8d8; border-color: #7aa8d8; }
+    .marker .pencil-circle { border-color: rgba(220, 60, 60, 0.9); }
+    .marker .pencil-label { color: rgba(230, 80, 80, 0.95); text-shadow: 0 0 3px rgba(200, 40, 40, 0.25); }
+    .marker .pencil-number { color: rgba(230, 80, 80, 0.95); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">DOCUMENTAZIONE</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — DOCUMENTAZIONE CARTOGRAFICA</div>
+        <div class="title">MAPPA DI KYOTO — QUADRANTE SUD-EST</div>
+        <div class="subtitle">Base cartografica municipale — annotazioni manuali a cura degli investigatori</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo</span><br>97-KPD-0401-CART-005</div>
+        <div><span class="label">Base cartografica</span><br>Carta urbana Kyoto-shi 1:15.000 (1996)</div>
+        <div><span class="label">Data</span><br>aprile 1997</div>
+        <div><span class="label">Area coperta</span><br>~3,5 × 2,5 km</div>
+        <div><span class="label">Distretti</span><br>Higashiyama-ku, Shimogyō-ku, Nakagyō-ku</div>
+        <div><span class="label">Orientamento</span><br>Nord in alto</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Mappa urbana — luoghi emersi dall'indagine</div>
+        <div class="map-wrapper">
+            <!-- SVG filter for pencil effect -->
+            <svg width="0" height="0" style="position:absolute;">
+                <filter id="pencilfilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+                    <feDisplacementMap in="SourceGraphic" scale="1.2"/>
+                </filter>
+            </svg>
+            <img src="../immagini/Mappa.png" alt="Mappa di Kyoto — quadrante sud-est">
+
+            <div class="map-overlay">
+                <!-- 1 Villa Ogawa — Gojōzaka, Higashiyama (nord-est della mappa, sulla salita) -->
+                <div class="marker" style="top: 36%; left: 80%;">
+                    <div class="pencil-circle"><div class="pencil-number">1</div></div>
+                    <div class="pencil-label">VILLA OGAWA</div>
+                </div>
+
+                <!-- 2 Appartamento Shūichi/Yumi — Karasuma-Oike (Nakagyō nord-ovest, alto-centro) -->
+                <div class="marker left" style="top: 16%; left: 44%;">
+                    <div class="pencil-circle"><div class="pencil-number">2</div></div>
+                    <div class="pencil-label">APT. SHŪICHI/YUMI</div>
+                </div>
+
+                <!-- 3 Gion (residenza Kubo Midori — amante) nord-est, già etichettato Gion sulla mappa -->
+                <div class="marker above" style="top: 16%; left: 62%;">
+                    <div class="pencil-circle"><div class="pencil-number">3</div></div>
+                    <div class="pencil-label">KUBO (GION)</div>
+                </div>
+
+                <!-- 4 Studio Shimizu — Shichijō × Karasuma (centro-sud) -->
+                <div class="marker below-left" style="top: 68%; left: 36%;">
+                    <div class="pencil-circle"><div class="pencil-number">4</div></div>
+                    <div class="pencil-label">STUDIO SHIMIZU</div>
+                </div>
+
+                <!-- 5 Family Mart — Higashiōji × Shichijō (centro-est) -->
+                <div class="marker below-left" style="top: 68%; left: 74%;">
+                    <div class="pencil-circle"><div class="pencil-number">5</div></div>
+                    <div class="pencil-label">FAMILY MART</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="legend-columns">
+
+        <div>
+            <div class="section-title">Luoghi cerchiati (annotazioni)</div>
+            <table class="legend-table">
+                <thead>
+                    <tr><th style="width:24px;">#</th><th>Luogo</th><th>Riferimento</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="num">1</td><td><strong>Villa Ogawa</strong></td><td>Higashiyama-ku, Gojōzaka 3-14</td></tr>
+                    <tr><td class="num">2</td><td><strong>Appartamento Shūichi / Yumi</strong></td><td>Nakagyō-ku, Karasuma-Oike Higashi-iru, Mansion Karasuma 502</td></tr>
+                    <tr><td class="num">3</td><td><strong>Kubo Midori (bar "Midori")</strong></td><td>Gion Shinbashi</td></tr>
+                    <tr><td class="num">4</td><td><strong>Studio legale Shimizu</strong></td><td>Shimogyō-ku, Shichijō Karasuma Nishi-iru</td></tr>
+                    <tr><td class="num">5</td><td><strong>Family Mart</strong></td><td>Angolo Higashiōji-dōri × Shichijō-dōri</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <div class="section-title">Legenda cartografica</div>
+            <table class="legend-table">
+                <thead>
+                    <tr><th style="width:35%;">Giapponese</th><th>Traduzione</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>京都市街図 南東部</td><td>Pianta urbana di Kyoto — quadrante sud-est</td></tr>
+                    <tr><td>鴨川 (Kamo-gawa)</td><td>Fiume Kamo (scorre da nord a sud, ovest)</td></tr>
+                    <tr><td>中京区 (Nakagyō-ku)</td><td>Distretto Nakagyō (centro-nord)</td></tr>
+                    <tr><td>下京区 (Shimogyō-ku)</td><td>Distretto Shimogyō (centro-sud)</td></tr>
+                    <tr><td>東山区 (Higashiyama-ku)</td><td>Distretto Higashiyama (est)</td></tr>
+                    <tr><td>祇園 (Gion)</td><td>Quartiere storico dei bar e delle case da tè</td></tr>
+                    <tr><td>清水寺 (Kiyomizu-dera)</td><td>Tempio buddhista dell'acqua pura (colline a est)</td></tr>
+                    <tr><td>京都駅 (JR Kyoto Station)</td><td>Stazione centrale delle ferrovie JR</td></tr>
+                    <tr><td>御池通 (Oike-dōri)</td><td>Grande via est-ovest più a nord</td></tr>
+                    <tr><td>四条通 (Shijō-dōri)</td><td>Grande via est-ovest — "Quarta Avenue"</td></tr>
+                    <tr><td>五条通 (Gojō-dōri)</td><td>Grande via est-ovest — "Quinta Avenue"</td></tr>
+                    <tr><td>七条通 (Shichijō-dōri)</td><td>Grande via est-ovest — "Settima Avenue"</td></tr>
+                    <tr><td>河原町通 (Kawaramachi-dōri)</td><td>Grande via nord-sud (ovest)</td></tr>
+                    <tr><td>東大路通 (Higashiōji-dōri)</td><td>Grande via nord-sud (est)</td></tr>
+                    <tr><td>五条坂 (Gojōzaka)</td><td>Salita di Gojō — piccola via che risale verso il Kiyomizu-dera</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="section-title">Glossario toponomastico</div>
+        <div class="glossary-box">
+            <div><dt>-ku (区)</dt> <dd>— suffisso che indica "distretto" amministrativo urbano (come un municipio di Roma o un arrondissement di Parigi).</dd></div>
+            <div><dt>-dōri (通)</dt> <dd>— "via" nel senso di strada principale cittadina. Kyoto ha un reticolo ortogonale, dove le -dōri est-ovest sono numerate (Shijō = 4ª, Gojō = 5ª, Shichijō = 7ª, ecc.).</dd></div>
+            <div><dt>-zaka (坂)</dt> <dd>— "salita" o "pendio". Il Gojōzaka è la piccola via che sale dalla Gojō-dōri verso le colline di Higashiyama e il tempio Kiyomizu-dera. La villa Ogawa si trova su questa salita.</dd></div>
+            <div><dt>-gawa (川)</dt> <dd>— "fiume". Il Kamo-gawa (鴨川 — "fiume delle anatre") attraversa Kyoto da nord a sud ed è il confine naturale tra il centro storico e il quartiere di Higashiyama.</dd></div>
+            <div><dt>-chō (町)</dt> <dd>— "quartiere" o "circoscrizione" di livello inferiore al distretto.</dd></div>
+            <div><dt>Higashi / Nishi / Minami / Kita</dt> <dd>— "est / ovest / sud / nord". Gli indirizzi giapponesi tradizionali indicano l'ubicazione relativa a un incrocio (es. "Higashi-iru" = "entrando a est").</dd></div>
+            <div><dt>Higashi-iru / Nishi-iru / Agaru / Sagaru</dt> <dd>— nella toponomastica di Kyoto, indicano se un punto si trova a est / ovest / a salire (nord) / a scendere (sud) da un incrocio di riferimento. Es. "Karasuma-Oike Higashi-iru" = "a est dell'incrocio Karasuma-Oike".</dd></div>
+            <div><dt>Kiyomizu-yaki (清水焼)</dt> <dd>— la celebre ceramica tradizionale di Kyoto prodotta nell'area delle fornaci attorno al Kiyomizu-dera, di cui la famiglia Ogawa è una delle realtà storiche.</dd></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Mappa di Kyoto — Quadrante Sud-Est — Fascicolo 97-KPD-0401-CART-005 — Pagina 1 di 1
+    </div>
+
+</div>
+</body>
+</html>
