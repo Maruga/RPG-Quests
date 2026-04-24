@@ -158,6 +158,170 @@ File di supporto per la generazione di 10 immagini fotorealistiche dei PNG dell'
 
 ---
 
+# Prompt fotogramma telecamera (H8 Family Mart)
+
+Prompt separato per generare il fotogramma VHS della telecamera di sicurezza del Family Mart, da inserire nell'handout `08_Fotogramma_Konbini.html` o da stampare/mostrare al tavolo. L'immagine deve essere **intenzionalmente di bassa qualità** — è una telecamera VHS B/N time-lapse del 1997, non una foto. Il volto del soggetto **non deve essere identificabile**: i giocatori devono dedurre di chi si tratta solo dai parametri morfometrici (altezza, corporatura, capelli, abbigliamento) incrociando con le schede PNG.
+
+---
+
+## CAM01 — Fotogramma sorveglianza Family Mart
+
+> Low-quality black and white CCTV security camera still frame from a 1990s Japanese convenience store surveillance system, shot on VHS tape in time-lapse recording mode at 2 frames per second. Grainy monochrome image with horizontal scan lines, VHS noise artifacts, tape tracking errors visible as horizontal distortion bands, heavy film grain, motion blur on moving subject, low resolution of approximately 240 TV lines, slight wide-angle lens distortion from a ceiling-mounted security camera, high contrast with blown-out highlights near ceiling fluorescents and crushed blacks in the shadows.
+>
+> CAMERA POSITION: overhead wide-angle view from a ceiling corner of the convenience store entrance, pointed diagonally down at the front doors and the adjacent parking area, capturing both the interior entry mat and the outdoor trash bin area just beyond the glass doors.
+>
+> ON-SCREEN DISPLAY (OSD): white monospaced text burned into the frame — top left reads "FAMILY MART", top right reads "CH-02", bottom left reads "1997-03-29", bottom right reads "22:58:14". Text is pixelated low-resolution 7-segment-style font typical of 1990s security DVRs, with a thin black drop shadow.
+>
+> SUBJECT: a solitary Japanese woman caught mid-action just outside the glass entrance doors, seen from behind and slightly above at a three-quarter rear angle. She is petite — approximately 155-160 cm tall relative to the 182 cm door frame reference — and slender of build. Her dark hair is tied up in a low bun or short ponytail at the nape of the neck (NOT flowing loose). She wears a dark-colored waist-length casual jacket (possibly dark navy or charcoal, but rendered as dark gray in the monochrome image), dark trousers (not a skirt, not a kimono), and low dark shoes or sneakers. Her right arm is extended toward a dark metal trash bin at her side, caught in the act of releasing a small rectangular object (the size of a medication box) into the bin. Her face is turned away from the camera and in any case would not be identifiable due to the low resolution, motion blur and overhead angle.
+>
+> ENVIRONMENT: glass automatic sliding doors of a Family Mart convenience store in the center of the frame, with faint reflections on the glass, the interior partially visible beyond — vague shelving, a bright fluorescent ceiling light, a cash register counter in the far background. Outside: a concrete sidewalk tile floor, the metal cylindrical outdoor trash bin (gomibako) at the right of the subject, a small illuminated signboard reading "ファミリーマート" partially cropped at the top of the frame, a parked bicycle leaning against a pole at the far left edge, asphalt parking area visible beyond. Late evening, nighttime outside, interior fluorescents overexposed.
+>
+> ATMOSPHERE: cold impersonal security camera aesthetic, no artistic lighting, flat wide-angle field of view, VHS tape degradation, vertical sync occasional wobble, 1997 Kyoto suburban convenience store feel.
+>
+> Negative prompt: color, sharp modern digital footage, high resolution, visible face, clear facial features, identifiable person, cinematic lighting, film photography, artistic composition, retouching, smooth skin, portrait style, shallow depth of field, bokeh.
+
+---
+
+## Note di uso (fotogramma telecamera)
+
+- **Formato consigliato**: 4:3 orizzontale (proporzioni classiche TV/VHS 1997), risoluzione di generazione alta ma poi degradata a ~480×360 finale per autentico effetto VHS
+- **Post-processing opzionale**: se il generatore rende un'immagine troppo pulita, in post applicare:
+  - Conversione a bianco e nero
+  - Riduzione a 240 righe verticali di risoluzione
+  - Aggiunta di scanline orizzontali (ogni 2 righe)
+  - Rumore gaussiano 10-15%
+  - Motion blur orizzontale leggero (3-5px)
+  - Tracking error bands occasionali
+  - Timestamp overlay in post se il generatore non lo ha reso correttamente
+- **Salvataggio**: `PNG/immagini/CAM01_Fotogramma_Konbini.png`
+- **Integrazione H8**: sostituire il blocco `.frame-img` nel file `handout/08_Fotogramma_Konbini.html` con un `<img>` che punta al file generato, oppure usare l'immagine come artwork di supporto stampato
+
+---
+
+# Prompt mappe (M1, M2, M3) — handout planimetrici
+
+Prompt per generare le tre mappe dell'avventura con GPT/DALL-E 3 o simili generatori di immagini. Stile comune: dossier di polizia del 1997, disegno tecnico giapponese, carta leggermente ingiallita, labeling in giapponese e romaji.
+
+**Specifiche tecniche comuni**:
+- Top-down architectural plan view (nadir angle, no perspective)
+- 1997 Kyoto Prefectural Police case file aesthetic
+- Vintage paper texture (aged cream or off-white paper with subtle fold lines and slight yellowing at edges)
+- Black technical ink line drawing, clean vector-like lines
+- Typewriter-style labels in both Japanese kanji and romaji translation
+- North arrow compass rose top-right corner
+- Scale indicator bottom-left corner (meters)
+- Fascicolo number stamp top-right corner
+- Slight age and wear on the paper, subtle dust spots
+- Format: landscape orientation, document-like composition
+
+**Negative prompt comune**:
+> 3D rendering, isometric view, color photography, modern CAD software look, ultra-clean digital vectors, contemporary game map, fantasy map, video game minimap, cartoon style, anime illustration.
+
+---
+
+## MAP1 — Villa Ogawa, Piano Terra
+
+> Top-down architectural floor plan drawing of a traditional Japanese two-story villa, ground floor (一階 ikkai) only, 1997 Kyoto Prefectural Police case file document style. Vintage cream paper texture, black technical ink, typewriter-style labels.
+>
+> BUILDING FOOTPRINT: rectangular traditional Kyoto house, approximately 18m × 14m, with a garden area on the north side (top of the drawing) and entrance on the south side (bottom).
+>
+> ROOMS AND LAYOUT (labeled in both Japanese and romaji):
+> - NORTH AREA: rectangular garden (庭 niwa) with a small weeping cherry tree (shidare-zakura) drawn as a simple circle-and-stem symbol in the center, one stone lantern (ishidōrō) in the lower-left corner, a curved stone path crossing the garden
+> - CENTER-EAST: large living room (居間 ima), ~25 sqm, tatami mat lines subtly drawn as a 3×4 grid, with a low table (chabudai) in the center shown as a soft rectangle, and a wooden cabinet (credenza) on the west wall with a small red circle labeled "REPERTO A" marking a bottle position, sliding fusuma doors indicated with dashed lines on the north wall opening to the garden
+> - WEST: kitchen (台所 daidokoro), ~12 sqm, with a sink along the north wall, a two-burner stove, and a prep counter indicated by simple rectangles
+> - SOUTHWEST: washitsu study (和室 washitsu), ~17 sqm, tatami lines, a desk with a small icon labeled "H7 AGENDA", a wall safe on the east wall labeled "CASSAFORTE Diamond SS-42"
+> - CENTER-SOUTH: a narrow corridor (廊下 rōka) connecting rooms, indicated with dashed room borders
+> - SOUTH-CENTER: entrance (玄関 genkan) with a lowered tatami section for shoe storage, sliding double door at the bottom labeled "→ Gojōzaka"
+> - SOUTH-CENTER-EAST: staircase (階段) going up to the second floor, shown as parallel lines with an up-arrow
+> - SOUTHEAST: storage room (納戸 nando), ~20 sqm, minimal detail
+>
+> ANNOTATIONS: a north compass arrow in the top-right corner. A metric scale bar in the bottom-left reading "0 — 5 metri". Top-right corner: a small red rectangular stamp reading "RISERVATO — 97-KPD-0330-SCE-P1". Title at the top center: "PLANIMETRIA — VILLA OGAWA — Piano Terra (一階) — 1:100". Subtle paper fold line running vertically through the center. Slight coffee-stain smudge in one corner.
+>
+> STYLE: clean architectural line drawing, 2-3 line weights (thick for exterior walls, medium for interior walls, thin for furniture), flat black ink on cream paper, no color except a single red evidence marker on the cabinet ("REPERTO A"). Typewriter font for labels.
+
+---
+
+## MAP2 — Villa Ogawa, Primo Piano
+
+> Top-down architectural floor plan drawing of a traditional Japanese two-story villa, second floor (二階 nikai) only, 1997 Kyoto Prefectural Police case file document style. Vintage cream paper texture, black technical ink, typewriter-style labels.
+>
+> BUILDING FOOTPRINT: rectangular floor plan slightly smaller than the ground floor (second floor does not extend over the garden), approximately 15m × 12m, oriented with the staircase opening in the south-center.
+>
+> ROOMS AND LAYOUT:
+> - NORTHEAST (main bedroom area, largest room): master bedroom (主寝室 shushin-shitsu), ~28 sqm, tatami lines (14 tatami), with a futon mattress drawn in the center-east of the room as a soft rectangle labeled "FUTON (posizione corpo)" with a small red X mark indicating the body position, a small bedside table with a drawn glass icon, a wall closet on the south wall
+> - NORTHWEST: bathroom and dressing room combined (浴室・脱衣室), ~15 sqm, with a traditional rectangular bathtub (ofuro) in the upper-left, a washbasin, and IMPORTANTLY a medicine cabinet (薬箱) on the east interior wall highlighted with a red outline and labeled "ARMADIETTO — Lanoxin ASSENTE", a small wastebasket labeled "Reperto C" with a red circled "C"
+> - WEST-CENTER: separate toilet (便所 benjo), ~6 sqm, minimal
+> - CENTER-SOUTH: guest room (客間 kyakuma), ~17 sqm, tatami lines, with two small object icons labeled "borsa (Yumi)" and "giacca (Shūichi)" placed on the tatami
+> - SOUTHWEST: small sewing room (縫い物部屋), ~13 sqm, Fumiko's personal room
+> - SOUTH-CENTER: staircase (階段) with down-arrow indicating descent to the ground floor
+> - CENTER: narrow corridor (廊下) connecting all rooms, drawn with lighter dashed internal walls
+>
+> PATH INDICATORS (dashed lines crossing the plan):
+> - A red dashed line from the staircase going northwest into the bathroom, labeled "percorso Yumi sab 15:00"
+> - A blue dashed line from the staircase going southeast into the guest room, labeled "percorso Shūichi durante cena"
+>
+> ANNOTATIONS: north compass arrow top-right, metric scale bar bottom-left "0 — 5 metri". Top-right corner: small red stamp "RISERVATO — 97-KPD-0330-SCE-P2". Title center-top: "PLANIMETRIA — VILLA OGAWA — Primo Piano (二階) — 1:100". Legend bottom-right showing the two colored path lines.
+>
+> STYLE: same clean architectural line drawing as Map 1, consistent stroke weights and label font. Spot color used only for: evidence markers (red: armadietto, Reperto C, corpo), path Yumi (red dashed), path Shūichi (blue dashed). Everything else in black ink on cream paper. Slight paper aging visible.
+
+---
+
+## MAP3 — Mappa urbana Kyoto sud-est (villa → konbini → appartamento)
+
+> Top-down urban street map drawing of Kyoto, southeast quadrant, 1997 Kyoto Prefectural Police case file document style. Vintage aged cream paper with subtle yellowing at edges, black technical ink line work, muted pale blue for water, spot red and orange for points of interest, typewriter-style labels in Japanese and romaji.
+>
+> GEOGRAPHIC AREA: a roughly 3 km × 2.5 km section of central-east Kyoto, covering parts of Higashiyama-ku (east), Shimogyō-ku (center-south), and the southern tip of Nakagyō-ku (north). Bird's-eye plan view, not 3D.
+>
+> MAJOR STREETS (drawn as double-line roads with cream-filled road surface):
+> - Higashiōji-dōri (東大路通) — main north-south artery on the east side of the map
+> - Kawaramachi-dōri (河原町通) — secondary north-south street on the west side
+> - Gojō-dōri (五条通) — horizontal east-west street in the upper-center
+> - Shichijō-dōri (七条通) — horizontal east-west street in the lower-center
+> - Shijō-dōri (四条通) — minor horizontal street near the top
+> - Oike-dōri (御池通) — minor horizontal street at the very top
+> - Gojōzaka (五条坂) — small sloped side street branching east and uphill from Gojō-dōri toward Kiyomizu-dera
+>
+> WATER: Kamo-gawa river (鴨川) drawn as a flowing pale blue shape on the far west side, vertical, with a subtle current-line pattern
+>
+> LANDMARKS (small pictographic icons with labels):
+> - Kiyomizu-dera temple (清水寺) — small pagoda icon in the far east, above the villa
+> - Gion district (祇園) — small labeled rectangle in the upper-east
+> - Kyoto Station (京都駅) — small labeled rectangle in the south-west (lower)
+>
+> POINTS OF INTEREST (numbered circles with case-related labels):
+> - POI 1 "VILLA OGAWA": red pentagon house icon near the top-east, on Gojōzaka, labeled "Gojōzaka 3-14"
+> - POI 2 "FAMILY MART": green square icon at the intersection of Higashiōji-dōri and Shichijō-dōri, labeled "Higashiōji × Shichijō"
+> - POI 3 "APT SHŪICHI/YUMI": purple house icon in the upper-west (Nakagyō-ku area), labeled "Mansion Karasuma 502"
+> - Small icon "S" for "Studio Shimizu" in the center-west (Shimogyō-ku)
+> - Small red rectangle icon labeled "cassetta postale Nakagyō" near POI 3
+>
+> ROUTE (prominent orange dashed line crossing the map):
+> - Traced from POI 1 (Villa) going down Gojōzaka → onto Higashiōji-dōri → southward along Higashiōji-dōri → arriving at POI 2 (Family Mart) at the Shichijō intersection
+> - Small orange timestamp boxes placed along the route: "22:30" at POI 1 start, "22:58" at POI 2, "~23:15" at POI 3
+> - Secondary fainter dashed orange line continuing from POI 2 back north and west to POI 3 (the return trip)
+>
+> DISTRICT LABELS (pale gray italic text in empty areas, semi-transparent):
+> - "NAKAGYŌ-KU 中京区" upper-center
+> - "HIGASHIYAMA-KU 東山区" lower-east
+> - "SHIMOGYŌ-KU 下京区" lower-center
+>
+> ANNOTATIONS: large compass rose top-right with "N" label and stylized arrow. Scale bar bottom-left "0 — 500 m — 1 km". Top-right corner small red stamp reading "RISERVATO — 97-KPD-0401-CART-003". Title center-top: "MAPPA PERCORSO — Villa Ogawa → Family Mart — 29/03/1997". Bottom-right corner legend box explaining the dashed orange line (route) and the POI color codes. Subtle paper fold crease running horizontally across the map. Slight coffee-stain smudge in one corner.
+>
+> STYLE: vintage police dossier cartography, reminiscent of 1990s Japanese street atlas pages and police investigation maps. Black ink for streets and line work, pale blue only for the river, orange for route and timestamps, red/green/purple spot colors only for the POI icons and case stamps. Rest of the map in cream and off-white paper tones. Typewriter label font throughout. Aged and slightly faded feel.
+
+---
+
+## Note di uso (mappe)
+
+- **Generazione**: i 3 prompt possono essere generati con DALL-E 3 (via ChatGPT) o con qualsiasi modello che interpreta bene prompt lunghi descrittivi. Midjourney richiede abbreviazione — riformulare in frasi più corte se si usa MJ
+- **Formato consigliato**: orizzontale 4:3 per M1 e M2 (interni casa), orizzontale 16:10 o 4:3 per M3 (mappa urbana)
+- **Risoluzione**: ≥ 1792×1024 per M1/M2 (ratio DALL-E "wide"), 1792×1024 anche per M3
+- **Salvataggio**: `handout/immagini/M1_Villa_Piano_Terra.png`, `M2_Villa_Primo_Piano.png`, `M3_Percorso_Villa_Konbini.png`
+- **Uso alternativo**: le mappe HTML/SVG già in `handout/` sono precise e modificabili via codice; le immagini AI sono più "atmosferiche" ma meno accurate e non modificabili — consigliato usare le HTML per il gioco e le immagini AI come supporto estetico stampato (crime board del GM)
+- **Limite dei generatori**: GPT/DALL-E spesso sbaglia il kanji; se il testo giapponese risulta illeggibile, chiedi esplicitamente "accurate Japanese characters" o rigenera. In alternativa usa solo romaji e aggiungi il kanji in post con un editor di immagini
+
+---
+
 # Prompt volto (headshot) — versione Crime Board
 
 Seconda serie di prompt: primo piano del volto adatto a essere stampato e appeso sulla crime board al tavolo, stile foto-dossier di polizia.

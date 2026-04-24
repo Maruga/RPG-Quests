@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura La Falsa Primavera/PNG/_prompts_immagini.md",
+                "file": "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_prompts_immagini"
+              "title": "Storia Completa"
             }
           }
         ]
@@ -227,10 +227,28 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
-    "Investigare/Avventura La Falsa Primavera/PNG/01_Ogawa_Masao.md",
-    "Investigare/Avventura La Falsa Primavera/PNG/_prompts_immagini.md",
-    "Investigare/Avventura La Falsa Primavera/PNG/02_Ogawa_Fumiko.md",
+    "Investigare/Avventura La Falsa Primavera/handout/11_Scontrini_Konbini.html",
+    "Investigare/Avventura La Falsa Primavera/PNG/_prompts_mappe_giocatori.md",
+    "Investigare/Avventura La Falsa Primavera/handout/08b_Fotogramma_Elaborato.html",
+    "Investigare/Avventura La Falsa Primavera/PNG/verifica_fotogramma_CAM01.md",
+    "Investigare/Avventura La Falsa Primavera/handout/M3_Percorso_Villa_Konbini.html",
     "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
+    "Investigare/Avventura La Falsa Primavera/handout/M2_Villa_Primo_Piano.html",
+    "Investigare/Avventura La Falsa Primavera/handout/M1_Villa_Piano_Terra.html",
+    "Investigare/Avventura La Falsa Primavera/PNG/_prompts_immagini.md",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Nishida Takao.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Shimizu Tetsuo.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Ogawa Yumi.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Ogawa Shūichi.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Ogawa Masao.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Ogawa Fumiko.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Obata Shigeru.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Murakami Kazuko.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Morita Chiaki.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Kubo Midori.png",
+    "Investigare/Avventura La Falsa Primavera/Immagini",
+    "Investigare/Avventura La Falsa Primavera/PNG/01_Ogawa_Masao.md",
+    "Investigare/Avventura La Falsa Primavera/PNG/02_Ogawa_Fumiko.md",
     "Investigare/Avventura La Falsa Primavera/PNG/09_Obata_Shigeru.md",
     "Investigare/Avventura La Falsa Primavera/PNG/08_Dott_Nishida_Takao.md",
     "Investigare/Avventura La Falsa Primavera/PNG/07_Dott_Morita_Chiaki.md",
@@ -244,11 +262,6 @@
     "Investigare/Avventura La Falsa Primavera/handout/09_Lettera_Anonima.html",
     "Investigare/Avventura La Falsa Primavera/handout/08_Fotogramma_Konbini.html",
     "Investigare/Avventura La Falsa Primavera/handout/07_Agenda_Ogawa.html",
-    "Investigare/Avventura La Falsa Primavera/handout/06_Tabulati_Telefonici.html",
-    "Investigare/Avventura La Falsa Primavera/handout/05_Esami_Sangue.html",
-    "Investigare/Avventura La Falsa Primavera/handout/04_Trascrizione_119.html",
-    "Investigare/Avventura La Falsa Primavera/handout/03_Cartella_Clinica.html",
-    "Investigare/Avventura La Falsa Primavera/handout/02_Rapporto_Scena.html",
     "Investigare/Avventura La Falsa Primavera/MEMORY.md",
     "Investigare/Avventura La Falsa Primavera/CLAUDE.md",
     "Varie/Spiriti Guardiani/Avventura.md",
@@ -259,19 +272,6 @@
     "Varie/Spiriti Guardiani/Mostri.md",
     "Varie/Spiriti Guardiani/Prompt_Stanze.md",
     "Varie/Spiriti Guardiani/Prompt_Creature.md",
-    "DnD/OneShot - La Pietra dell'Ombra/README.md",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/StanzaMadre.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Mosaico.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/MosaicoAttivato.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Prigione.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Rituale.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Saturno.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/StautaTellus.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Terme.png",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Tribunale.png",
-    "Varie/Spiriti Guardiani/zz-demo-comandi.md",
-    "Varie/Spiriti Guardiani/Immagini/Avventura/Prigione2.png",
-    "Varie/Spiriti Guardiani/__playwright-demo-comandi.md",
-    "Varie/Spiriti Guardiani/AI/_msg_iniziale-colibri.md"
+    "DnD/OneShot - La Pietra dell'Ombra/README.md"
   ]
 }

@@ -36,10 +36,18 @@ body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-hei
 .frame-img .noise {
     position: absolute; inset: 0;
     background-image:
-        radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px);
-    background-size: 2px 2px, 3px 3px;
+        radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+        radial-gradient(rgba(0,0,0,0.22) 1px, transparent 1px),
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 2px,
+            rgba(0,0,0,0.18) 2px,
+            rgba(0,0,0,0.18) 3px
+        );
+    background-size: 2px 2px, 3px 3px, 100% 3px;
     pointer-events: none;
+    z-index: 2;
 }
 .frame-img .shelf-top { position: absolute; top: 12px; left: 0; right: 0; height: 4px; background: rgba(180,180,180,0.4); }
 .frame-img .shelf-back { position: absolute; top: 20px; left: 12px; right: 12px; height: 40px; background: rgba(120,120,120,0.2); border: 1px solid rgba(150,150,150,0.3); }
@@ -65,7 +73,23 @@ body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-hei
 }
 .frame-img .floor { position: absolute; bottom: 0; left: 0; right: 0; height: 20px; background: rgba(60,60,60,0.5); border-top: 1px solid rgba(120,120,120,0.3); }
 .frame-img .ceiling-label { position: absolute; top: 2px; left: 8px; font-size: 9px; color: rgba(220,220,220,0.7); letter-spacing: 1px; }
+.frame-img img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: blur(2.2px) contrast(1.35) brightness(0.82) saturate(0);
+    transform: scale(1.02);
+    z-index: 1;
+}
 .frame-caption { font-size: 10px; color: #666; text-align: center; margin-top: 6px; line-height: 1.4; }
+.fotogramma-large-wrapper { margin-top: 8px; padding: 10px; border: 2px solid #111; background: #0a0a0a; position: relative; }
+.fotogramma-large-wrapper img { display: block; width: 100%; height: auto; }
+.fotogramma-large-caption { color: #888; font-size: 10px; text-align: center; margin-top: 8px; line-height: 1.4; letter-spacing: 1px; text-transform: uppercase; }
+.stime-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.stime-table th, .stime-table td { border: 1px solid #333; padding: 4px 8px; color: #111; }
+.stime-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; text-align: left; }
+.stime-table th.center, .stime-table td.center { text-align: center; }
 .analysis { flex: 1; }
 .analysis ul { margin-left: 16px; list-style: none; }
 .analysis ul li { margin-bottom: 4px; color: #111; }
@@ -89,6 +113,8 @@ body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-hei
     .compare-table th, .compare-table td { border-color: #444; color: #d0ccbe; }
     .compare-table th { background: #1f1f24; color: #b0a890; }
     .compare-table tr.match td { background: rgba(200,60,60,0.14); color: #e8d4c8; }
+    .stime-table th, .stime-table td { border-color: #444; color: #d0ccbe; }
+    .stime-table th { background: #1f1f24; color: #b0a890; }
     .highlight-box { border-left-color: #777; color: #d0ccbe; }
     .frame-caption { color: #888; }
     .footer { color: #555; border-top-color: #333; }
@@ -124,52 +150,82 @@ body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-hei
             <div class="frame">
                 <div class="osd-top"><span>FAMILY MART</span><span>CH-02</span></div>
                 <div class="frame-img">
-                    <div class="ceiling-label">ENTRY / PARKING</div>
-                    <div class="shelf-top"></div>
-                    <div class="shelf-back"></div>
-                    <div class="bin"></div>
-                    <div class="figure"></div>
-                    <div class="floor"></div>
+                    <img src="../immagini/Fotogramma.png" alt="Fotogramma telecamera Family Mart 22:58:14">
                     <div class="noise"></div>
                 </div>
                 <div class="osd-bottom"><span>1997-03-29</span><span>22:58:14</span></div>
-                <div class="frame-caption">Frame singolo estratto — qualità nativa VHS time-lapse (2 fps, B/N, 240×480 lines)</div>
+                <div class="frame-caption">Frame singolo estratto — qualità nativa VHS time-lapse<br>2 fps, monocromatico, 240×480 linee, nessuna elaborazione</div>
             </div>
 
             <div class="analysis">
-                <strong>Descrizione del fotogramma</strong>
+                <strong>Osservazioni preliminari</strong>
                 <ul>
                     <li>Inquadratura fissa dall'alto sulla zona di ingresso del punto vendita</li>
-                    <li>Soggetto femminile, figura intera di spalle, in procinto di gettare un oggetto di piccole dimensioni nel cestino esterno prima di accedere al negozio</li>
-                    <li>Abbigliamento: giacca scura a vita, pantaloni scuri, scarpe basse</li>
-                    <li>Capelli scuri, raccolti sulla nuca (crocchia bassa o coda corta)</li>
-                    <li>Nessun elemento di riconoscimento facciale disponibile (inquadratura dorsale, qualità insufficiente)</li>
-                    <li>Altezza stimata con metodo fotogrammetrico (riferimento: altezza porta = 182 cm): <strong>155 — 160 cm</strong></li>
-                    <li>Corporatura: minuta</li>
+                    <li>Figura umana singola ripresa di spalle in area parcheggio, probabile interazione con il cestino esterno prima dell'accesso al negozio</li>
+                    <li>Qualità del frame compromessa da degradazione del nastro VHS, rumore monocromatico e motion blur tipici della registrazione in time-lapse a 2 fps</li>
+                    <li><strong>Riconoscimento facciale: non disponibile</strong> (inquadratura dorsale)</li>
+                    <li><strong>Riconoscimento biometrico: non effettuabile allo stato attuale del supporto</strong></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Dati fotogrammetrici del soggetto</div>
-        <p>Dal frame estratto sono stati ricavati i seguenti parametri morfometrici, utilizzabili per il riscontro con eventuali persone di interesse:</p>
-        <ul>
-            <li><strong>Sesso</strong>: femminile (silhouette, andatura, abbigliamento)</li>
-            <li><strong>Altezza stimata</strong>: 155 — 160 cm (metodo fotogrammetrico con riferimento porta 182 cm)</li>
-            <li><strong>Corporatura</strong>: minuta</li>
-            <li><strong>Capelli</strong>: scuri, raccolti sulla nuca (crocchia bassa o coda corta)</li>
-            <li><strong>Abbigliamento</strong>: giacca scura a vita, pantaloni scuri, scarpe basse</li>
-            <li><strong>Azione</strong>: getta un oggetto di piccole dimensioni nel bidone esterno, accede al punto vendita, si dirige alla cassa</li>
-        </ul>
+        <div class="section-title">Stime preliminari (prima dell'elaborazione)</div>
+        <p>Allo stato attuale del supporto — <strong>senza elaborazione digitale</strong> — le stime ottenibili dal frame grezzo sono affette da margini di incertezza molto ampi. Si forniscono solo a titolo indicativo:</p>
+        <table class="stime-table">
+            <thead>
+                <tr>
+                    <th>Parametro</th>
+                    <th>Stima grezza</th>
+                    <th class="center">Confidenza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Presenza figura umana</td>
+                    <td>Soggetto singolo</td>
+                    <td class="center"><strong>~98%</strong></td>
+                </tr>
+                <tr>
+                    <td>Interazione con il cestino esterno</td>
+                    <td>Probabile rilascio/introduzione oggetto</td>
+                    <td class="center">~65%</td>
+                </tr>
+                <tr>
+                    <td>Sesso del soggetto</td>
+                    <td><em>indeterminato</em></td>
+                    <td class="center">&lt; 50%</td>
+                </tr>
+                <tr>
+                    <td>Altezza stimata (range grezzo)</td>
+                    <td>150 — 175 cm</td>
+                    <td class="center">~50%</td>
+                </tr>
+                <tr>
+                    <td>Corporatura</td>
+                    <td>Non classificabile con certezza</td>
+                    <td class="center">—</td>
+                </tr>
+                <tr>
+                    <td>Capelli / acconciatura</td>
+                    <td>Non leggibile per rumore e motion blur</td>
+                    <td class="center">—</td>
+                </tr>
+                <tr>
+                    <td>Abbigliamento</td>
+                    <td>Indumenti di tonalità scura, tipologia non classificabile</td>
+                    <td class="center">~60%</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="section">
-        <div class="section-title">Note tecniche</div>
+        <div class="section-title">Stato del supporto</div>
         <div class="highlight-box">
-            La qualità del supporto VHS time-lapse a 2 frame/sec e la risoluzione monocromatica non consentono identificazione biometrica certa né riconoscimento facciale. Il riscontro richiede confronto con dichiarazioni testimoniali, descrizioni fisiche acquisite, capi di abbigliamento sequestrati e/o ricevute di acquisto alla cassa.
+            Cassetta VHS T-120 in modalità time-lapse a 2 frame per secondo, formato monocromatico a 240×480 linee. Usura del nastro compatibile con loop di registrazione continua di circa 14 mesi. Presenza di bande di tracking, rumore magnetico, leggera perdita di sincronia verticale. Tutti i fotogrammi della giornata del 29/03/1997 sono stati estratti e archiviati digitalmente; si consegna in questa sede il singolo frame di interesse (timecode 22:58:14).
         </div>
-        <p>Rilievi complementari richiesti: acquisizione scontrino cassa dell'orario 22:58-23:02 del 29/03/1997 e verbale di Shift Manager dell'esercizio.</p>
     </div>
 
     <div class="footer">

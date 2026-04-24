@@ -339,9 +339,11 @@ Gli handout sono stati spostati in file HTML separati (stile burocratico JP '97,
 | `05_Esami_Sangue.html` | **LA pista principale** — tabella digossinemia 6 soggetti | Yumi 0,3 vs media 1,1 — se i PG non lo notano, Morita lo segnala |
 | `06_Tabulati_Telefonici.html` | 3 utenze NTT / NTT DoCoMo, 20-30 marzo | Evidenzia la chiamata 07:05 del 30/03 dal fisso Shūichi/Yumi alla villa |
 | `07_Agenda_Ogawa.html` | Agenda Takahashi Techo 1997 | Conferma movente anche senza parlare con Shimizu — 12/3 Shimizu, 3/4 notaio |
-| `08_Fotogramma_Konbini.html` | Estratto TVCC Family Mart 22:58 | Donna 155-160 cm capelli raccolti — Yumi possibile |
+| `08_Fotogramma_Konbini.html` | Estratto TVCC Family Mart 22:58 (**qualità VHS sgranata**) | Donna 155-160 cm capelli raccolti — volto non leggibile. I PG devono richiedere l'elaborazione |
+| `08b_Fotogramma_Elaborato.html` | Fotogramma post-elaborazione laboratorio (consegnato SOLO su richiesta PG) | Ingrandimento leggibile con dati morfometrici riconfermati (156 ±3 cm, abbigliamento occidentale) |
 | `09_Lettera_Anonima.html` | Busta + testo JP + analisi | Timbro Nakagyō (quartiere Yumi), menziona amante |
 | `10_Analisi_Timbro.html` | Scheda tecnica Poste Giapponesi | Perimetro raccolta = zona residenza Shūichi/Yumi |
+| `11_Scontrini_Konbini.html` | Tre scontrini cassa finestra 22:55–23:04 del 29/03 | Consegnato SOLO se i PG richiedono i giornali di cassa. Contiene 3 transazioni: birra+snack+rivista (22:55), **fazzoletti ¥120 cash (22:58:47)**, onigiri+drink+sigarette (23:04). I PG devono incrociare l'orario col timecode del frame H8 (22:58:14) |
 
 **Consegna consigliata**:
 1. Apertura sessione: `01` Autopsia + `02` Scena + `03` Cartella clinica + `04` Trascrizione 119

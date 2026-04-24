@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Scontrini cassa — Family Mart Higashiōji-Shichijō</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 10px 18px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 10px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 8px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.receipts-wrapper { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 10px 0; }
+.receipt {
+    width: 220px;
+    background: #fbf8ee;
+    padding: 14px 12px;
+    font-family: "Courier New", Courier, monospace;
+    color: #222;
+    font-size: 11px;
+    line-height: 1.4;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
+    position: relative;
+    border-top: 1px dashed #999;
+    border-bottom: 1px dashed #999;
+    background-image: repeating-linear-gradient(
+        transparent 0,
+        transparent 15px,
+        rgba(0,0,0,0.015) 15px,
+        rgba(0,0,0,0.015) 16px
+    );
+}
+.receipt::before {
+    content: "";
+    position: absolute;
+    top: -4px; left: 0; right: 0;
+    height: 4px;
+    background-image:
+        linear-gradient(135deg, transparent 50%, #fbf8ee 50%),
+        linear-gradient(45deg, transparent 50%, #fbf8ee 50%);
+    background-size: 8px 4px;
+    background-repeat: repeat-x;
+}
+.receipt::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 4px;
+    background-image:
+        linear-gradient(-45deg, transparent 50%, #fbf8ee 50%),
+        linear-gradient(-135deg, transparent 50%, #fbf8ee 50%);
+    background-size: 8px 4px;
+    background-repeat: repeat-x;
+}
+.receipt .store { text-align: center; font-weight: bold; font-size: 12px; letter-spacing: 1px; margin-bottom: 2px; }
+.receipt .store-jp { text-align: center; font-size: 13px; font-family: "MS Mincho", serif; margin-bottom: 4px; }
+.receipt .store-info { text-align: center; font-size: 9px; color: #555; margin-bottom: 6px; }
+.receipt .divider { border-top: 1px dashed #888; margin: 6px 0; }
+.receipt .timestamp { text-align: center; font-size: 10px; margin-bottom: 2px; }
+.receipt .register { text-align: center; font-size: 9px; color: #555; margin-bottom: 6px; }
+.receipt .items { margin-bottom: 4px; }
+.receipt .item-row { display: flex; justify-content: space-between; font-size: 10px; }
+.receipt .item-row .name { flex: 1; }
+.receipt .item-row .price { text-align: right; }
+.receipt .totals { font-size: 10px; }
+.receipt .totals .row { display: flex; justify-content: space-between; }
+.receipt .totals .total-row { font-weight: bold; font-size: 11px; border-top: 1px solid #333; padding-top: 3px; margin-top: 2px; }
+.receipt .payment { text-align: center; font-size: 10px; margin-top: 4px; letter-spacing: 0.5px; }
+.receipt .thank { text-align: center; font-size: 9px; color: #666; margin-top: 6px; font-family: "MS Mincho", serif; }
+.receipt .barcode { text-align: center; font-family: "Courier New"; font-size: 9px; color: #333; margin-top: 6px; letter-spacing: 2px; }
+.receipt .serial { text-align: center; font-size: 8px; color: #888; margin-top: 2px; }
+.legend-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 12px; }
+.legend-table th, .legend-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.legend-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+.timbro { position: absolute; bottom: 30px; right: 24px; width: 56px; height: 56px; border: 3px solid rgba(180, 30, 30, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-12deg); color: rgba(180, 30, 30, 0.3); font-size: 8px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p { color: #d0ccbe; }
+    .legend-table th, .legend-table td { border-color: #444; color: #d0ccbe; }
+    .legend-table th { background: #1f1f24; color: #b0a890; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.25); color: rgba(200, 60, 60, 0.25); }
+    .receipt { background: #e8e2d2; color: #1a1a1a; }
+    .receipt::before, .receipt::after { background-image:
+        linear-gradient(135deg, transparent 50%, #e8e2d2 50%),
+        linear-gradient(45deg, transparent 50%, #e8e2d2 50%); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">ACQUISITO</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — ACQUISIZIONE DOCUMENTALE</div>
+        <div class="title">SCONTRINI CASSA — FAMILY MART</div>
+        <div class="subtitle">Estrazione registri vendita — Higashiōji × Shichijō — 29/03/1997</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo</span><br>97-KPD-0403-DOC-022</div>
+        <div><span class="label">Data acquisizione</span><br>03 aprile 1997, ore 15:20</div>
+        <div><span class="label">Esercizio</span><br>Family Mart 東大路七条店 (cod. 3142)</div>
+        <div><span class="label">Indirizzo</span><br>Higashiōji-dōri × Shichijō-dōri, Higashiyama-ku</div>
+        <div><span class="label">Modalità acquisizione</span><br>Copia dei giornali di cassa, turno notturno 22:00–06:00</div>
+        <div><span class="label">Finestra estratta</span><br>29/03/1997 ore 22:55 — 23:10</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Scontrini cassa nella finestra temporale</div>
+        <p>Si riproducono fedelmente tutti gli scontrini emessi dalla cassa unica (registro 01) dell'esercizio nella finestra temporale richiesta. La copia è effettuata dai giornali di cassa conservati in locale dal gestore.</p>
+
+        <div class="receipts-wrapper">
+
+            <!-- SCONTRINO 1 -->
+            <div class="receipt">
+                <div class="store">FAMILY MART</div>
+                <div class="store-jp">ファミリーマート</div>
+                <div class="store-info">東大路七条店<br>京都市東山区 TEL 075-541-8822</div>
+                <div class="divider"></div>
+                <div class="timestamp">1997/03/29 (土) 22:55:08</div>
+                <div class="register">レジ 01 / 担当 田中</div>
+                <div class="divider"></div>
+                <div class="items">
+                    <div class="item-row"><span class="name">アサヒ スーパードライ 500ml</span><span class="price">¥260</span></div>
+                    <div class="item-row"><span class="name">柿の種 小袋</span><span class="price">¥158</span></div>
+                    <div class="item-row"><span class="name">週刊ジャンプ</span><span class="price">¥220</span></div>
+                </div>
+                <div class="divider"></div>
+                <div class="totals">
+                    <div class="row"><span>小計</span><span>¥638</span></div>
+                    <div class="row"><span>消費税 5%</span><span>¥32</span></div>
+                    <div class="row total-row"><span>合計</span><span>¥670</span></div>
+                    <div class="row" style="margin-top:3px;"><span>現金</span><span>¥1,000</span></div>
+                    <div class="row"><span>お釣り</span><span>¥330</span></div>
+                </div>
+                <div class="payment">— 現金 (contanti) —</div>
+                <div class="thank">ありがとうございました</div>
+                <div class="serial">取引番号 001-3142-22955</div>
+            </div>
+
+            <!-- SCONTRINO 2 -->
+            <div class="receipt">
+                <div class="store">FAMILY MART</div>
+                <div class="store-jp">ファミリーマート</div>
+                <div class="store-info">東大路七条店<br>京都市東山区 TEL 075-541-8822</div>
+                <div class="divider"></div>
+                <div class="timestamp">1997/03/29 (土) 22:58:47</div>
+                <div class="register">レジ 01 / 担当 田中</div>
+                <div class="divider"></div>
+                <div class="items">
+                    <div class="item-row"><span class="name">ティッシュ ポケット 1P</span><span class="price">¥120</span></div>
+                </div>
+                <div class="divider"></div>
+                <div class="totals">
+                    <div class="row"><span>小計</span><span>¥120</span></div>
+                    <div class="row"><span>消費税 5%</span><span>¥6</span></div>
+                    <div class="row total-row"><span>合計</span><span>¥126</span></div>
+                    <div class="row" style="margin-top:3px;"><span>現金</span><span>¥200</span></div>
+                    <div class="row"><span>お釣り</span><span>¥74</span></div>
+                </div>
+                <div class="payment">— 現金 (contanti) —</div>
+                <div class="thank">ありがとうございました</div>
+                <div class="serial">取引番号 001-3142-22958</div>
+            </div>
+
+            <!-- SCONTRINO 3 -->
+            <div class="receipt">
+                <div class="store">FAMILY MART</div>
+                <div class="store-jp">ファミリーマート</div>
+                <div class="store-info">東大路七条店<br>京都市東山区 TEL 075-541-8822</div>
+                <div class="divider"></div>
+                <div class="timestamp">1997/03/29 (土) 23:04:22</div>
+                <div class="register">レジ 01 / 担当 田中</div>
+                <div class="divider"></div>
+                <div class="items">
+                    <div class="item-row"><span class="name">ポカリスエット 500ml</span><span class="price">¥150</span></div>
+                    <div class="item-row"><span class="name">おにぎり 鮭</span><span class="price">¥110</span></div>
+                    <div class="item-row"><span class="name">おにぎり 梅</span><span class="price">¥110</span></div>
+                    <div class="item-row"><span class="name">マルボロ ライト</span><span class="price">¥260</span></div>
+                </div>
+                <div class="divider"></div>
+                <div class="totals">
+                    <div class="row"><span>小計</span><span>¥630</span></div>
+                    <div class="row"><span>消費税 5%</span><span>¥32</span></div>
+                    <div class="row total-row"><span>合計</span><span>¥662</span></div>
+                    <div class="row" style="margin-top:3px;"><span>現金</span><span>¥700</span></div>
+                    <div class="row"><span>お釣り</span><span>¥38</span></div>
+                </div>
+                <div class="payment">— 現金 (contanti) —</div>
+                <div class="thank">ありがとうございました</div>
+                <div class="serial">取引番号 001-3142-23004</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Traduzione articoli</div>
+        <table class="legend-table">
+            <thead>
+                <tr><th style="width:40%;">Giapponese</th><th>Traduzione</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>アサヒ スーパードライ 500ml</td><td>Birra Asahi Super Dry, lattina 500ml</td></tr>
+                <tr><td>柿の種 小袋</td><td>Kaki-no-tane (arachidi piccanti giapponesi), confezione piccola</td></tr>
+                <tr><td>週刊ジャンプ</td><td>Shūkan Jump (rivista settimanale di fumetti)</td></tr>
+                <tr><td><strong>ティッシュ ポケット 1P</strong></td><td><strong>Pacchetto di fazzoletti di carta formato tascabile (1 conf.)</strong></td></tr>
+                <tr><td>ポカリスエット 500ml</td><td>Pocari Sweat (bevanda isotonica), 500ml</td></tr>
+                <tr><td>おにぎり 鮭 / 梅</td><td>Onigiri ripieno di salmone / prugna umeboshi</td></tr>
+                <tr><td>マルボロ ライト</td><td>Sigarette Marlboro Lights, pacchetto</td></tr>
+                <tr><td>現金 / お釣り / 合計</td><td>Contanti / Resto / Totale</td></tr>
+                <tr><td>担当 田中</td><td>Cassiere di turno: Tanaka</td></tr>
+                <tr><td>取引番号</td><td>Numero progressivo della transazione</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Dati del turno</div>
+        <table class="legend-table">
+            <tbody>
+                <tr><th style="width:28%;">Cassiere in servizio</th><td>TANAKA Kōhei (田中 耕平), 22 anni, studente universitario part-time, turno 22:00–06:00</td></tr>
+                <tr><th>Shift Manager notturno</th><td>YOSHIDA Ryō (吉田 亮), 34 anni, responsabile notturno dal 1995</td></tr>
+                <tr><th>Giornale di cassa</th><td>Registro unico, totale transazioni turno notturno: 42. Totale incassato: ¥18.420</td></tr>
+                <tr><th>Stato registro</th><td>Integro, senza annotazioni di anomalie, senza chiusure intermedie</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="timbro">SCIENTIFICA<br>鑑識<br>京都府警</div>
+
+    <div class="footer">
+        Scontrini Cassa Family Mart — Fascicolo 97-KPD-0403-DOC-022 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

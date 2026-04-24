@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Fotogramma elaborato — Caso Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.55; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 14px; font-size: 12px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.fotogramma-large-wrapper { margin: 8px 0; padding: 10px; border: 2px solid #111; background: #0a0a0a; position: relative; }
+.fotogramma-large-wrapper img { display: block; width: 100%; height: auto; }
+.fotogramma-large-caption { color: #666; font-size: 10px; text-align: center; margin-top: 8px; line-height: 1.4; letter-spacing: 1px; text-transform: uppercase; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.signature-section { margin-top: 20px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.footer { margin-top: 14px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+.timbro { position: absolute; bottom: 40px; right: 24px; width: 60px; height: 60px; border: 3px solid rgba(180, 30, 30, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-12deg); color: rgba(180, 30, 30, 0.3); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p { color: #d0ccbe; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.25); color: rgba(200, 60, 60, 0.25); }
+    .fotogramma-large-wrapper { border-color: #555; background: #0a0a0a; }
+    .fotogramma-large-caption { color: #888; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">ALLEGATO</div>
+
+    <div class="doc-header">
+        <div class="org">POLIZIA SCIENTIFICA — SEZIONE ANALISI VIDEO</div>
+        <div class="title">FOTOGRAMMA ELABORATO — ALLEGATO</div>
+        <div class="subtitle">Ingrandimento e correzione digitale del frame 97-KPD-0401-VID-008</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">N. allegato</span><br>97-KPD-0401-VID-008-A</div>
+        <div><span class="label">Data elaborazione</span><br>03 aprile 1997, ore 11:40</div>
+        <div><span class="label">Frame sorgente</span><br>Family Mart — CH-02 — 29/03/1997 22:58:14</div>
+        <div><span class="label">Tecnico responsabile</span><br>Isp. OKUMURA Tatsuya — Sez. Analisi Video</div>
+        <div><span class="label">Richiesta da</span><br>Sezione Investigativa Centrale, decreto verbale</div>
+        <div><span class="label">Tempo di elaborazione</span><br>36 ore (dal 01/04 ore 23:30 al 03/04 ore 11:30)</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Procedura di elaborazione</div>
+        <p>Il frame originale estratto dalla cassetta VHS della telecamera CH-02 del Family Mart di Higashiōji-Shichijō è stato sottoposto in laboratorio alle seguenti operazioni di miglioramento, eseguite mediante stazione di analisi video digitale Avid Media Composer 7.2:</p>
+        <ul style="margin-left: 18px; margin-top: 6px;">
+            <li>Campionamento digitale del frame a risoluzione nativa (240×480 linee)</li>
+            <li>Rimozione delle bande di tracking VHS mediante filtro temporale su 7 frame consecutivi</li>
+            <li>Correzione dei livelli di contrasto e compensazione della sovraesposizione da fluorescenti</li>
+            <li>Riduzione del rumore monocromatico con filtro a media mobile selettivo</li>
+            <li>Stabilizzazione delle linee di scansione e rimozione del jitter verticale</li>
+            <li>Ingrandimento 2× con interpolazione adattiva, senza aggiunta di dettaglio sintetico</li>
+        </ul>
+        <div class="highlight-box">
+            L'elaborazione <strong>non introduce informazione non presente nel frame originale</strong>: si limita a restituire con maggiore leggibilità quanto già catturato dalla registrazione. Il volto del soggetto non è presente nel frame originale a causa dell'angolo dorsale di ripresa e non può essere ricostruito.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Frame elaborato — 29/03/1997 ore 22:58:14</div>
+        <div class="fotogramma-large-wrapper">
+            <img src="../immagini/Fotogramma.png" alt="Fotogramma telecamera Family Mart — elaborato">
+        </div>
+        <div class="fotogramma-large-caption">
+            Family Mart Higashiōji-Shichijō — 29/03/1997 — 22:58:14 — Canale 02 — elaborazione digitale post-VHS
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Dati morfometrici riconfermati</div>
+        <ul style="margin-left: 18px;">
+            <li><strong>Sesso</strong>: femminile</li>
+            <li><strong>Altezza ricalcolata</strong>: 156 ± 3 cm (metodo fotogrammetrico su riferimento porta scorrevole 182 cm)</li>
+            <li><strong>Corporatura</strong>: minuta, spalle strette, bacino stretto</li>
+            <li><strong>Capelli</strong>: scuri, raccolti sulla nuca in coda bassa/crocchia — legatura non visibile ma morfologia chiaramente incompatibile con capelli sciolti</li>
+            <li><strong>Abbigliamento</strong>: giacca corta scura a vita (lunghezza ~fianco), pantaloni scuri lunghi, scarpe basse scure — abbigliamento occidentale, non kimono</li>
+            <li><strong>Azione osservata</strong>: braccio destro esteso oltre il corpo, mano aperta in atto di rilascio sul bidone esterno cilindrico</li>
+            <li><strong>Volto</strong>: <em>non identificabile</em> (soggetto di spalle, angolo dorsale; l'elaborazione non ha permesso di recuperare lineamenti facciali perché mai catturati nel frame originale)</li>
+        </ul>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Isp. OKUMURA Tatsuya (奥村 達也)<br>
+                <span style="font-size: 11px;">Sezione Analisi Video — KPD</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Isp. SAITŌ Ryōichi (斉藤 亮一)<br>
+                <span style="font-size: 11px;">Resp. Polizia Scientifica — KPD</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">ANALISI<br>VIDEO<br>映像分析<br>京都府警</div>
+
+    <div class="footer">
+        Fotogramma Elaborato — Allegato 97-KPD-0401-VID-008-A — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>
