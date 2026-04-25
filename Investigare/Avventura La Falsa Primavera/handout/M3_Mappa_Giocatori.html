@@ -145,107 +145,24 @@ body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-hei
     <div class="section">
         <div class="section-title">Mappa urbana — luoghi emersi dall'indagine</div>
         <div class="map-wrapper">
-            <!-- SVG filter for pencil effect -->
-            <svg width="0" height="0" style="position:absolute;">
-                <filter id="pencilfilter">
-                    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
-                    <feDisplacementMap in="SourceGraphic" scale="1.2"/>
-                </filter>
-            </svg>
-            <img src="../immagini/Mappa.png" alt="Mappa di Kyoto — quadrante sud-est">
-
-            <div class="map-overlay">
-                <!-- 1 Villa Ogawa — Gojōzaka, Higashiyama (nord-est della mappa, sulla salita) -->
-                <div class="marker" style="top: 36%; left: 80%;">
-                    <div class="pencil-circle"><div class="pencil-number">1</div></div>
-                    <div class="pencil-label">VILLA OGAWA</div>
-                </div>
-
-                <!-- 2 Appartamento Shūichi/Yumi — Karasuma-Oike Higashi-iru (subito a est dell'incrocio Karasuma × Oike) -->
-                <div class="marker left" style="top: 14%; left: 47%;">
-                    <div class="pencil-circle"><div class="pencil-number">2</div></div>
-                    <div class="pencil-label">APT. SHŪICHI/YUMI</div>
-                </div>
-
-                <!-- 3 Gion (residenza Kubo Midori — amante) nord-est, già etichettato Gion sulla mappa -->
-                <div class="marker above" style="top: 17%; left: 62%;">
-                    <div class="pencil-circle"><div class="pencil-number">3</div></div>
-                    <div class="pencil-label">KUBO (GION)</div>
-                </div>
-
-                <!-- 4 Studio Shimizu — Shichijō Karasuma Nishi-iru (subito a ovest dell'incrocio Shichijō × Karasuma) -->
-                <div class="marker below-left" style="top: 65%; left: 46%;">
-                    <div class="pencil-circle"><div class="pencil-number">4</div></div>
-                    <div class="pencil-label">STUDIO SHIMIZU</div>
-                </div>
-
-                <!-- 5 Family Mart — Higashiōji × Shichijō (incrocio delle due strade) -->
-                <div class="marker below-left" style="top: 65%; left: 73%;">
-                    <div class="pencil-circle"><div class="pencil-number">5</div></div>
-                    <div class="pencil-label">FAMILY MART</div>
-                </div>
-            </div>
+            <img src="../immagini/mappa.png" alt="Mappa di Kyoto — quadrante sud-est con luoghi dell'indagine">
         </div>
-    </div>
-
-    <div class="legend-columns">
-
-        <div>
-            <div class="section-title">Luoghi cerchiati (annotazioni)</div>
-            <table class="legend-table">
-                <thead>
-                    <tr><th style="width:24px;">#</th><th>Luogo</th><th>Riferimento</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td class="num">1</td><td><strong>Villa Ogawa</strong></td><td>Higashiyama-ku, Gojōzaka 3-14</td></tr>
-                    <tr><td class="num">2</td><td><strong>Appartamento Shūichi / Yumi</strong></td><td>Nakagyō-ku, Karasuma-Oike Higashi-iru, Mansion Karasuma 502</td></tr>
-                    <tr><td class="num">3</td><td><strong>Kubo Midori (bar "Midori")</strong></td><td>Gion Shinbashi</td></tr>
-                    <tr><td class="num">4</td><td><strong>Studio legale Shimizu</strong></td><td>Shimogyō-ku, Shichijō Karasuma Nishi-iru</td></tr>
-                    <tr><td class="num">5</td><td><strong>Family Mart</strong></td><td>Angolo Higashiōji-dōri × Shichijō-dōri</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div>
-            <div class="section-title">Legenda cartografica</div>
-            <table class="legend-table">
-                <thead>
-                    <tr><th style="width:35%;">Giapponese</th><th>Traduzione</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>京都市街図 南東部</td><td>Pianta urbana di Kyoto — quadrante sud-est</td></tr>
-                    <tr><td>鴨川 (Kamo-gawa)</td><td>Fiume Kamo (scorre da nord a sud, ovest)</td></tr>
-                    <tr><td>中京区 (Nakagyō-ku)</td><td>Distretto Nakagyō (centro-nord)</td></tr>
-                    <tr><td>下京区 (Shimogyō-ku)</td><td>Distretto Shimogyō (centro-sud)</td></tr>
-                    <tr><td>東山区 (Higashiyama-ku)</td><td>Distretto Higashiyama (est)</td></tr>
-                    <tr><td>祇園 (Gion)</td><td>Quartiere storico dei bar e delle case da tè</td></tr>
-                    <tr><td>清水寺 (Kiyomizu-dera)</td><td>Tempio buddhista dell'acqua pura (colline a est)</td></tr>
-                    <tr><td>京都駅 (JR Kyoto Station)</td><td>Stazione centrale delle ferrovie JR</td></tr>
-                    <tr><td>御池通 (Oike-dōri)</td><td>Grande via est-ovest più a nord</td></tr>
-                    <tr><td>四条通 (Shijō-dōri)</td><td>Grande via est-ovest — "Quarta Avenue"</td></tr>
-                    <tr><td>五条通 (Gojō-dōri)</td><td>Grande via est-ovest — "Quinta Avenue"</td></tr>
-                    <tr><td>七条通 (Shichijō-dōri)</td><td>Grande via est-ovest — "Settima Avenue"</td></tr>
-                    <tr><td>河原町通 (Kawaramachi-dōri)</td><td>Grande via nord-sud (ovest)</td></tr>
-                    <tr><td>東大路通 (Higashiōji-dōri)</td><td>Grande via nord-sud (est)</td></tr>
-                    <tr><td>五条坂 (Gojōzaka)</td><td>Salita di Gojō — piccola via che risale verso il Kiyomizu-dera</td></tr>
-                </tbody>
-            </table>
-        </div>
-
     </div>
 
     <div class="section">
-        <div class="section-title">Glossario toponomastico</div>
-        <div class="glossary-box">
-            <div><dt>-ku (区)</dt> <dd>— suffisso che indica "distretto" amministrativo urbano (come un municipio di Roma o un arrondissement di Parigi).</dd></div>
-            <div><dt>-dōri (通)</dt> <dd>— "via" nel senso di strada principale cittadina. Kyoto ha un reticolo ortogonale, dove le -dōri est-ovest sono numerate (Shijō = 4ª, Gojō = 5ª, Shichijō = 7ª, ecc.).</dd></div>
-            <div><dt>-zaka (坂)</dt> <dd>— "salita" o "pendio". Il Gojōzaka è la piccola via che sale dalla Gojō-dōri verso le colline di Higashiyama e il tempio Kiyomizu-dera. La villa Ogawa si trova su questa salita.</dd></div>
-            <div><dt>-gawa (川)</dt> <dd>— "fiume". Il Kamo-gawa (鴨川 — "fiume delle anatre") attraversa Kyoto da nord a sud ed è il confine naturale tra il centro storico e il quartiere di Higashiyama.</dd></div>
-            <div><dt>-chō (町)</dt> <dd>— "quartiere" o "circoscrizione" di livello inferiore al distretto.</dd></div>
-            <div><dt>Higashi / Nishi / Minami / Kita</dt> <dd>— "est / ovest / sud / nord". Gli indirizzi giapponesi tradizionali indicano l'ubicazione relativa a un incrocio (es. "Higashi-iru" = "entrando a est").</dd></div>
-            <div><dt>Higashi-iru / Nishi-iru / Agaru / Sagaru</dt> <dd>— nella toponomastica di Kyoto, indicano se un punto si trova a est / ovest / a salire (nord) / a scendere (sud) da un incrocio di riferimento. Es. "Karasuma-Oike Higashi-iru" = "a est dell'incrocio Karasuma-Oike".</dd></div>
-            <div><dt>Kiyomizu-yaki (清水焼)</dt> <dd>— la celebre ceramica tradizionale di Kyoto prodotta nell'area delle fornaci attorno al Kiyomizu-dera, di cui la famiglia Ogawa è una delle realtà storiche.</dd></div>
-        </div>
+        <div class="section-title">Luoghi contrassegnati sulla mappa</div>
+        <table class="legend-table">
+            <thead>
+                <tr><th style="width:40%;">Luogo</th><th>Riferimento</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Villa Ogawa</strong></td><td>Higashiyama-ku, Gojōzaka 3-14</td></tr>
+                <tr><td><strong>Apt. Shūichi / Yumi</strong></td><td>Nakagyō-ku, Karasuma-Oike Higashi-iru, Mansion Karasuma 502</td></tr>
+                <tr><td><strong>Bar Midori (Kubo Midori)</strong></td><td>Gion Shinbashi</td></tr>
+                <tr><td><strong>Studio Shimizu</strong></td><td>Shimogyō-ku, Shichijō Karasuma Nishi-iru</td></tr>
+                <tr><td><strong>Family Mart</strong></td><td>Angolo Higashiōji-dōri × Shichijō-dōri</td></tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="footer">

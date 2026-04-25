@@ -3,6 +3,7 @@ Mappe
 [Mappe già fatte](https://dysonlogos.blog/maps/)
 [Creazione di mappe casuali di vario genere](https://watabou.github.io/)
 [Applica la griglia sulla mappa, Fog e altre utilità](https://dungeonmapper.io/)
+[Creazione Mappe con Marker personalizzati, spettacolare](https://www.printmaps.net/it/)
 
 Musica effetti immagini
 [Libreria di immagini, video, musica ed effetti](https://pixabay.com/)
