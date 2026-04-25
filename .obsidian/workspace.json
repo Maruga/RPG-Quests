@@ -11,14 +11,12 @@
             "id": "2f72c9619aa3ada5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Link Utili.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png"
               },
-              "icon": "lucide-file",
-              "title": "Link Utili"
+              "icon": "lucide-image",
+              "title": "mappa"
             }
           }
         ]
@@ -227,6 +225,7 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Link Utili.md",
     "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
     "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png",
     "Investigare/Avventura La Falsa Primavera/_mappa_live_kyoto.html",
