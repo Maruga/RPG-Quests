@@ -11,12 +11,14 @@
             "id": "2f72c9619aa3ada5",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png"
+                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "mappa"
+              "icon": "lucide-file",
+              "title": "GENKAI_Regolamento_v1_3"
             }
           }
         ]
@@ -225,9 +227,10 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Investigare/README.md",
+    "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png",
     "Link Utili.md",
     "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
-    "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png",
     "Investigare/Avventura La Falsa Primavera/_mappa_live_kyoto.html",
     "Investigare/Avventura La Falsa Primavera/Immagini/Kubo Midori.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
@@ -269,7 +272,6 @@
     "Varie/Spiriti Guardiani/Regole.md",
     "Varie/Spiriti Guardiani/Mostri.md",
     "Varie/Spiriti Guardiani/Prompt_Stanze.md",
-    "Varie/Spiriti Guardiani/Prompt_Creature.md",
-    "DnD/OneShot - La Pietra dell'Ombra/README.md"
+    "Varie/Spiriti Guardiani/Prompt_Creature.md"
   ]
 }
