@@ -44,201 +44,33 @@ Ogawa Masao, 66 anni, ceramista, muore nel sonno la notte dopo la cena familiare
 
 ---
 
-# 3. PNG
-
-## Convitati
-
-### Ogawa Masao 小川 正雄 — VITTIMA
-
-|||
-|---|---|
-|**Età**|66|
-|**Indirizzo**|Higashiyama-ku, Gojōzaka 3-14|
-|**Lavoro**|Proprietario Ogawa Tōgei (fornace ceramica Kiyomizu-yaki, 30 dipendenti)|
-|**Salute**|Fibrillazione atriale (dal 1994). Lanoxin 0,25 mg/die. Cardiologo: Dott. Nishida, Kyodai Hospital|
-|**Digossina sangue**|8,4 ng/mL (letale)|
-
-Autoritario, testardo. Terza generazione di ceramisti. Tradiva la moglie con Kubo Midori (mama-san a Gion). Disprezzava il figlio per i debiti di gioco. Stava per modificare il testamento riducendo Shūichi al minimo. Appuntamento con l'avvocato: 3 Aprile.
-
----
-
-### Ogawa Fumiko 小川 文子 — FALSA SOSPETTATA
-
-|||
-|---|---|
-|**Età**|62|
-|**Indirizzo**|Higashiyama-ku, Gojōzaka 3-14 (villa Ogawa)|
-|**Lavoro**|Casalinga, aiuta in fornace|
-|**Digossina sangue**|1,2 ng/mL|
-|**Sintomi**|Nausea, capogiri|
-
-**Perché sembra colpevole**: Gestiva le medicine. Ha preparato la cena. La lettera anonima la accusa. Sapeva dell'amante.
-
-**Perché non lo è**: La modifica del testamento le avrebbe dato _di più_. Il suo livello di digossina è nella media. Non ha motivo.
-
-#### Fasi comportamentali
-
-**Primo interrogatorio**: Composta, fredda, keigo impeccabile. Non piange — non per colpa, per dignità. Racconta la cena punto per punto. _"Ho preparato tutto. Ho servito. Ho lavato. Siamo andati a letto verso le 23."_ Se le chiedono del matrimonio: risposta vaga, sguardo che si sposta. _"Quarant'anni insieme non sono sempre facili."_ Se le chiedono delle medicine: _"Ero io a ritirare la ricetta dal farmacista, certo. Ma la scatola la teneva lui nell'armadietto del bagno, dalla sua parte. La pillola la prendeva da solo ogni mattina — io non toccavo i blister."_ Se le chiedono chi è andato al piano di sopra: _"Yumi-san è salita al bagno quando è arrivata sabato. È stata su un bel po'."_ — lo dice solo se la domanda è diretta.
-
-**Quando i PG scoprono che tutti hanno assunto digossina**: Si spaventa. La compostezza si incrina. _"Vuol dire che qualcuno ha messo il farmaco anche a me?"_ — il terrore è genuino. Una persona colpevole non mostrerebbe paura per sé stessa. Se i PG sono attenti, questo la scagiona emotivamente.
-
-**Quando le chiedono dell'amante**: Si chiude. Mascella serrata, sguardo a terra. _"Non so di cosa parlate."_ Mente — ma per orgoglio, non per colpa. Se pressata con delicatezza: _"Lo sapevo da anni. Non cambiava nulla."_ Se pressata con durezza: si irrigidisce e non dà più nulla.
-
-**Quando arriva la lettera anonima che la accusa**: Pallida, scioccata. _"Chi ha scritto questo? Perché?"_ — la rabbia è reale. Si sente tradita due volte: dal marito e ora da chi la accusa. Se i PG le mostrano la lettera, può diventare collaborativa per disperazione: _"Vi dico tutto quello che volete, ma non sono stata io."_
-
-**Se i PG la accusano formalmente**: Non crolla — si irrigidisce con dignità ferita. _"Se credete davvero che io abbia ucciso l'uomo con cui ho vissuto quarant'anni per soldi che non mi servono, allora procedete."_ Il tono è di sfida stanca, non di colpevolezza.
-
----
-
-### Ogawa Shūichi 小川 修一 — FALSO SOSPETTATO
-
-|||
-|---|---|
-|**Età**|34|
-|**Indirizzo**|Nakagyō-ku, Karasuma-Oike Higashi-iru, Mansion Karasuma 502|
-|**Lavoro**|Direttore commerciale Ogawa Tōgei (di facciata)|
-|**Debiti**|¥12.000.000 (pachinko, corse a Yodo)|
-|**Digossina sangue**|1,0 ng/mL|
-|**Sintomi**|Nausea forte, vomito|
-
-**Perché sembra colpevole**: Debiti enormi, rapporto orribile col padre, diseredazione imminente.
-
-**Perché non lo è**: Non sapeva della modifica. Impronte NON sulla bottiglia. Troppo debole per pianificare.
-
-#### Fasi comportamentali
-
-**Primo interrogatorio**: Nervoso, sudato, non riesce a stare fermo. Gambe che tremano. Racconta la serata in modo disordinato, salta avanti e indietro. Mente sui debiti: _"Qualche volta al pachinko, niente di serio."_ Mente sull'andare al piano di sopra: _"Non ci sono salito"_ (falso — ci è salito a riprendere le sigarette dalla giacca lasciata nella camera ospiti). L'ansia è evidente — ma è l'ansia di un uomo che nasconde i debiti, non un omicidio.
-
-**Se pressato sui debiti**: Crolla rapidamente. Si copre il viso con le mani. Ammette tutto — pachinko, corse, lo strozzino di Fushimi, i ¥12 milioni. _"Mio padre mi avrebbe ammazzato se..."_ — pausa, si rende conto di quello che ha detto. Guarda i PG con orrore.
-
-**Quando gli dicono della modifica al testamento**: Shock autentico — bocca aperta, occhi spalancati, poi rabbia verso il padre morto. _"Voleva diseredarmi? Quel bastardo..."_ — poi si ferma, imbarazzato dalla propria reazione davanti alla polizia. **Questa reazione è LA prova che non sapeva.** Un PG attento lo vede: non si può fingere questo tipo di sorpresa.
-
-**Secondo interrogatorio (ammette la verità sul piano di sopra)**: _"Va bene, sono salito. Ho preso le sigarette dalla giacca, nella camera ospiti. Ma non ho toccato nient'altro."_ Lo dice con vergogna — ha mentito prima e ora sa che sembra peggio.
-
-**Quando gli chiedono del konbini**: Lo dice senza pensarci, come un dettaglio qualunque. _"Sì, Yumi mi ha chiesto di fermarmi al Family Mart sulla via di casa. È entrata un attimo."_ Non ci vede nulla di strano — non sa che è importante.
-
-**Quando gli chiedono delle abitudini di Yumi con l'alcol**: _"Di solito beve un bicchierino quando siamo con la famiglia. Non è che beve tanto, ma beve."_ — contradice direttamente la versione di Yumi ("non bevo quasi mai"). Shūichi non si rende conto della contraddizione.
-
-**Se i sospetti si spostano su Yumi**: Reazione complessa. Prima incredulità: _"Yumi? Ma è assurdo."_ Poi, lentamente, inizia a ripensare ai dettagli — la fermata al konbini, il fatto che lei ha versato l'umeshu, il fatto che non ha bevuto quasi nulla. Il viso cambia. Non dice nulla, ma i PG vedono che sta mettendo insieme i pezzi. Se gli chiedono direttamente: silenzio lungo, poi _"...non lo so. Non lo so più."_
-
----
-
-### Ogawa Yumi 小川 由美 (nata Hayashi 林) — L'ASSASSINA
-
-|||
-|---|---|
-|**Età**|30|
-|**Indirizzo**|Nakagyō-ku, Karasuma-Oike Higashi-iru, Mansion Karasuma 502 (con Shūichi)|
-|**Lavoro**|Part-time, negozio kimono a Shijō|
-|**Origine**|Uji, famiglia modesta (padre postino)|
-|**Digossina sangue**|**0,3 ng/mL** (anomalia)|
-|**Sintomi**|_"Leggera nausea"_|
-
-#### Fasi comportamentali
-
-**Primo interrogatorio**: La nuora modello. Postura corretta, voce misurata, espressione di dolore controllato. Racconta la serata con dettagli coerenti — troppo coerenti. Ogni risposta sembra preparata. _"Sono arrivata alle 15 con Shūichi. Sono salita a mettere la borsa in camera e a usare il bagno. Poi sono scesa ad aiutare Fumiko-san in cucina."_ Se le chiedono dell'umeshu: _"Non ne bevo quasi mai, non amo l'alcol. Ne ho assaggiato un goccio per cortesia."_ Se le chiedono dei rapporti con il suocero: _"Ogawa-san era un uomo esigente ma giusto. Lo rispettavo molto."_ — il tono è giusto, le parole sono giuste, tutto è _giusto_. Ed è esattamente questo il problema: in un contesto di morte, le persone vere sono disordinate nel dolore. Yumi no.
-
-**Quando le dicono che tutti hanno assunto digossina**: Mostra sorpresa calibrata. _"Tutti? Ma come è possibile?"_ Si porta una mano alla bocca — gesto di shock. Ma gli occhi non cambiano. Un PG con Ascolto alto nota: la bocca recita, gli occhi calcolano.
-
-**Quando le chiedono del livello di digossina basso (0,3)**: Primo momento di tensione — brevissimo, poi la maschera torna. _"Come le ho detto, non bevo quasi mai. Ho preso un piccolo sorso per rispetto."_ La voce è un filo più alta, il ritmo un filo più veloce. Se i PG hanno già parlato con Shūichi e sanno che lui dice "di solito beve un bicchierino", possono confrontarla. Yumi: _"Shūichi esagera. Forse a volte bevo qualcosa in più, ma quella sera non mi sentivo bene."_ — nuova bugia per coprire la prima.
-
-**Quando le chiedono della scatola di Lanoxin sparita**: Pausa impercettibile prima di rispondere. _"Non saprei. Non tocco le medicine di Ogawa-san. Fumiko-san se ne occupava."_ — sposta l'attenzione su Fumiko. Se i PG insistono: _"Forse Fumiko-san l'ha spostata? Dovreste chiedere a lei."_
-
-**Quando le mostrano il filmato del konbini**: Per la prima volta il controllo vacilla. Non molto — un battito di ciglia in più, le mani che si stringono in grembo. _"Non ricordo bene cosa ho comprato. Forse fazzoletti. Non sono entrata per molto."_ Se le dicono che nel bidone c'era la scatola di Lanoxin: _"Non so cosa c'era nel bidone. Ho buttato un fazzoletto usato, forse."_ — la storia cambia. Prima non ricordava, ora ricorda un fazzoletto. Se le chiedono dei capelli raccolti nel filmato: _"A volte me li tiro su quando fa caldo."_ — ma era fine marzo, la sera, 12 gradi. Non regge.
-
-**Quando le chiedono della modifica al testamento**: _"Non ne sapevo nulla."_ — MENTE. Ma la dice con la stessa sicurezza delle verità. Per inchiodarla serve una prova che sapeva (Shimizu che conferma la conversazione a porta socchiusa, o Fumiko che dice "le pareti sono sottili").
-
-**Quando arriva la lettera anonima e i PG notano il timbro Nakagyō**: Qui Yumi è in trappola — il suo stesso depistaggio la tradisce. Se le chiedono della lettera: _"Non so chi possa averla scritta."_ Se le fanno notare che il timbro è dal suo quartiere: _"Ci abitano migliaia di persone."_ Se le chiedono come l'autore sapesse dell'amante: pausa più lunga. _"...non so di quale amante parlate."_ — troppo tardi, la frase arriva dopo un'esitazione che la tradisce.
-
-**Confronto finale (tutte le prove sul tavolo)**: L'investigatore le mette davanti: sangue 0,3 + scatola nel bidone + filmato + fazzoletto nel cestino + impronte sui blister + lettera dal suo quartiere + Kazuko che l'ha vista versare + Shūichi che smentisce che non beve.
-
-Yumi non crolla in lacrime. Si irrigidisce. La maschera non cade — si congela. Lungo silenzio. Poi, una di queste due reazioni:
-
-**(A) Confessa** — con voce piatta, senza emozione: _"Avrebbe tolto tutto a Shūichi. E Shūichi non sarebbe sopravvissuto. Non avrebbe avuto i soldi per i debiti. Quegli uomini lo avrebbero ucciso. Io ho protetto la mia famiglia."_ Non mostra rimorso — mostra la logica fredda di chi ha pesato le vite sulla bilancia e ha deciso.
-
-**(B) Chiede l'avvocato** — _"Non ho altro da dire. Voglio il mio avvocato."_ Si chiude completamente. I PG hanno comunque prove sufficienti per l'arresto.
-
----
-
-### Murakami Kazuko 村上 和子 (nata Ogawa) — TESTIMONE CHIAVE
-
-|||
-|---|---|
-|**Età**|70|
-|**Indirizzo**|Fushimi-ku, Momoyama-chō 2-8|
-|**Lavoro**|Pensionata (ex insegnante)|
-|**Digossina sangue**|1,4 ng/mL|
-|**Sintomi**|Nausea, diarrea, capogiri|
-
-Sorella maggiore della vittima. Vedova. Logorroica, pettegola, tagliente. Non filtra nulla.
-
-#### Fasi comportamentali
-
-**Primo interrogatorio**: Parla senza sosta. Il GM deve mescolare le informazioni chiave nel flusso di coscienza. Esempio di flusso tipico: _"Masao è sempre stato un testardo, fin da bambini. Quella sera era di buon umore, parlava del ciliegio, della ceramica, delle solite cose. Il riso era buono, Fumiko almeno quello lo sa fare. Shūichi aveva una faccia da funerale già prima del funerale, quel ragazzo ha qualche guaio. Yumi-san ha versato l'umeshu per tutti, era molto premurosa, ha dato un bicchierone a Masao. L'umeshu quest'anno aveva un sapore diverso, meno dolce, ho pensato che Masao avesse cambiato le proporzioni. Fumiko non ha quasi mangiato, si è alzata tre volte..."_ — le due frasi su Yumi (versamento e sapore diverso) sono DENTRO questo flusso. Il GM non le enfatizza.
-
-**Quando le dicono che tutti hanno assunto digossina**: Si agita molto, diventa drammatica. _"Lo sapevo! Lo sapevo che quell'umeshu aveva un sapore strano! Ho detto a tutti 'ha un sapore diverso' ma nessuno mi ascolta mai!"_ — utile: conferma che il sapore era alterato.
-
-**Se le chiedono specificamente chi ha versato l'umeshu**: _"Yumi-san, naturalmente. Si è alzata, è andata a prendere la bottiglia — mi pare sia passata anche in cucina, non ricordo bene — e ha versato per tutti. È una brava ragazza, sempre premurosa. A Masao ha dato un bel bicchiere pieno, a me un paio di bicchierini come sempre..."_ — se i PG chiedono: _"E a sé stessa?"_ — Kazuko ci pensa: _"A sé stessa? Poco. Mezzo bicchierino forse. Ha detto che non le andava."_
-
-**Quando i sospetti si spostano su Yumi**: Si scandalizza: _"Yumi-san? Ma quella è una santa! Fa tutto per la famiglia!"_ — poi, lentamente, comincia a ripensare: _"...però adesso che ci penso, era strana quella sera. Troppo gentile. Continuava a servire tutti."_ Il dubbio si insinua.
-
----
-
-### Shimizu Tetsuo 清水 哲夫 — FONTE INFORMATIVA
-
-|||
-|---|---|
-|**Età**|56|
-|**Studio**|Shimogyō-ku, Shichijō Karasuma Nishi-iru|
-|**Abitazione**|Ukyō-ku, Sagano|
-|**Lavoro**|Avvocato di famiglia, 20 anni|
-|**Digossina sangue**|0,9 ng/mL|
-|**Sintomi**|Leggera nausea|
-
-Vincolato dal segreto professionale — serve richiesta del PM o consenso di Fumiko.
-
-#### Fasi comportamentali
-
-**Primo contatto**: Formale, preciso, prudente. _"Sono vincolato dal segreto professionale. Senza un'autorizzazione non posso rivelare informazioni sui miei clienti."_ Non è ostile — è un professionista. Se i PG ottengono il consenso di Fumiko o un mandato, si apre completamente.
-
-**Quando parla (con autorizzazione)**: Diventa una miniera. Risponde in modo secco e completo, come se stesse dettando un verbale:
-
-- Testamento: _"Il signor Ogawa voleva ridurre la quota di Shūichi al minimo di legittima. Appuntamento dal notaio il 3 Aprile."_
-- Debiti: _"Shūichi ha debiti per circa 12 milioni di yen. Principalmente gioco d'azzardo."_
-- Amante: _"Il signor Ogawa pagava ¥120.000 al mese per un appartamento a Gion. Una signora Kubo."_
-- Chi sapeva della modifica: _"Ogawa-san mi aveva chiesto la massima riservatezza. Non so se ne abbia parlato con altri. Ma..."_ — pausa — _"...ne parlavamo spesso nel suo studio a casa. A voce normale. Le pareti in quella casa non sono spesse."_
-
-L'ultima frase è il collegamento: Yumi poteva aver sentito. Shimizu non accusa nessuno — fornisce fatti. Le conclusioni sono dei PG.
-
-**Se gli chiedono di Yumi specificamente**: _"La signora Yumi? Non ho motivo di sospettarla di nulla. Ma era presente a diversi pranzi di famiglia in cui io e Ogawa-san discutevamo nello studio."_ — non accusa, non protegge. Fornisce il contesto.
-
-**Se pressato sulla possibilità che Yumi sapesse dei dettagli** (date, quote, notaio): Shimizu si ferma. Ci pensa. Poi: _"Adesso che me lo fa notare... al pranzo di metà marzo, la signora Yumi stava raccogliendo dei fogli da terra vicino alla mia borsa. Le ho chiesto cosa facesse e mi ha detto che erano caduti e li stava rimettendo a posto. In effetti alcuni fogli erano scivolati fuori... ma adesso mi chiedo se non li stesse leggendo."_
-
-Questo è il momento in cui Shimizu capisce. Il suo viso cambia — imbarazzo professionale, poi orrore. _"Nella mia borsa c'era la bozza della modifica testamentaria. Con le date, le quote, tutto."_ Se i PG gli chiedono se è sicuro: _"Sì. Me lo ricordo perché ho pensato che fosse premurosa. Adesso non ne sono più sicuro."_
-
----
-
-## PNG secondari
-
-### Dott.ssa Morita Chiaki 森田 千秋 — Medico legale
-
-Ospedale Prefetturale, Kamigyō-ku. Ha notato la miosi nell'autopsia e ordinato il tossicologico.
-
-**Quando consegna i risultati del sangue**: Professionale, ma punta il dito sull'anomalia senza che i PG glielo chiedano: _"C'è una cosa che mi colpisce. Tutti gli altri sono tra 0,9 e 1,4. La signora Yumi è a 0,3. O non ha bevuto quasi nulla — il che è strano per una cena in famiglia — o sapeva che non doveva bere."_ Se i PG non raccolgono, non insiste. Ma l'informazione è stata data.
-
-### Dott. Nishida Takao 西田 孝雄 — Cardiologo
-
-Kyodai Hospital, Sakyō-ku. Curava Ogawa dal 1994. Ultima visita 3 settimane prima: stabile. Può spiegare: _"La digossina in polvere è quasi insapore. In un liquido dolce come l'umeshu è impercettibile. Basta quadruplicare la dose per uccidere un cardiopatico."_
-
-### Obata Shigeru 小畑 茂 — Custode fornace
-
-Higashiyama-ku (vicino alla villa). Ha preparato il giardino venerdì 28 e **ha svuotato i cestini del bagno**. Qualsiasi cosa trovata nel cestino dopo il 28 è stata messa tra sabato e domenica.
-
-**Se gli chiedono della bottiglia di umeshu**: _"Il padrone la teneva nella credenza, sigillata. La apriva solo per le occasioni."_
-
-### Kubo Midori 久保 みどり — Amante della vittima
-
-Gion Shinbashi, bar "Midori". Relazione con Ogawa da 5 anni. **Pista completamente falsa** — non era alla cena, non sa nulla, non c'entra. Esiste solo nella lettera anonima di Yumi come depistaggio. Se i PG la cercano, perdono tempo.
+# 3. PNG — INDICE SCHEDE
+
+Le schede complete dei personaggi sono in `PNG/`. Ogni scheda contiene: anagrafica, descrizione, prompt GPT per roleplay, valori En per i 5 PG investigativi standard, fasi comportamentali (cosa dice in primo interrogatorio / sotto pressione / al confronto finale), frasi tipiche, alibi, segreti GM, immagini di riferimento.
+
+| File | Personaggio | Ruolo nell'avventura |
+|---|---|---|
+| `PNG/01_Ogawa_Masao.md` | **Ogawa Masao** (66, vittima) | Background per il GM. Ceramista Kiyomizu-yaki, fibrillazione atriale, infedele. Stava per diseredare Shūichi |
+| `PNG/02_Ogawa_Fumiko.md` | **Ogawa Fumiko** (62, moglie) | **Falsa sospettata** — la trappola. Apparente colpevole con tutti gli elementi tradizionali, manca il movente |
+| `PNG/03_Ogawa_Shuichi.md` | **Ogawa Shūichi** (34, figlio) | **Falso sospettato** — debiti gioco ¥12M, rapporto pessimo col padre. Non sapeva della diseredazione. Protagonista della **Scena Finale** (sez. 9) |
+| `PNG/04_Ogawa_Yumi.md` | **Ogawa Yumi** (30, nuora) | **L'assassina.** Maschera di nuora-modello. Movente: identità sociale + protezione di Shūichi |
+| `PNG/05_Murakami_Kazuko.md` | **Murakami Kazuko** (70, sorella vittima) | **Testimone chiave.** Logorroica — disperde gli indizi nel flusso di coscienza |
+| `PNG/06_Shimizu_Tetsuo.md` | **Shimizu Tetsuo** (56, avvocato) | **Fonte informativa** sul testamento. Vincolato dal segreto professionale (serve PM o consenso Fumiko) |
+| `PNG/07_Dott_Morita_Chiaki.md` | **Dott.ssa Morita Chiaki** (45, medico legale) | Rete di sicurezza del GM. Segnala il dato 0,3 di Yumi se i PG non lo notano |
+| `PNG/08_Dott_Nishida_Takao.md` | **Dott. Nishida Takao** (58, cardiologo) | Spiega farmacologia digossina e quadro clinico stabile pre-decesso |
+| `PNG/09_Obata_Shigeru.md` | **Obata Shigeru** (62, custode fornace) | Ancore temporali: cestini svuotati venerdì 28, bottiglia umeshu sigillata in credenza |
+| `PNG/10_Kubo_Midori.md` | **Kubo Midori** (42, amante vittima) | **Pista falsa pura.** Non era alla cena, non sa nulla. I PG che la inseguono perdono tempo |
+
+## Quadro digossinemia (riepilogo da H5)
+
+| Soggetto | Età | Digossinemia ng/mL | Note |
+|---|---|---|---|
+| Ogawa Masao † | 66 | **8,4** | Letale (range terapeutico 0,8-2,0). Cardiopatico in cura con Lanoxin |
+| Ogawa Fumiko | 62 | 1,2 | Nausea, capogiri |
+| Ogawa Shūichi | 34 | 1,0 | Nausea forte, vomito |
+| Ogawa Yumi | 30 | **0,3** | "Leggera nausea" — anomalia: ha bevuto quasi nulla |
+| Murakami Kazuko | 70 | 1,4 | Nausea, diarrea, capogiri |
+| Shimizu Tetsuo | 56 | 0,9 | Leggera nausea |
 
 ---
 
@@ -466,4 +298,4 @@ Non descrivere il suicidio con dettagli grafici. Basta il colpo, il silenzio, e 
 
 ---
 
-_偽りの春 — La Falsa Primavera — v2.2_
+_偽りの春 — La Falsa Primavera — v2.3_

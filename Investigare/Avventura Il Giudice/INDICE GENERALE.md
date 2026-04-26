@@ -118,7 +118,7 @@
 | File | Contenuto |
 |------|-----------|
 | [[GENKAI Regolamento v1.2]] | Regole complete |
-| [[Copioni_PNG]] | Per scene personali |
+| [[Investigare/pg/Copioni_PNG]] | Per scene personali |
 
 ### I 5 Investigatori
 | File | Ruolo | Problema |

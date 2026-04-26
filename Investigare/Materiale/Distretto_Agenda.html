@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Sezione Investigativa Centrale — Scheda Distretto + Agenda</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 6mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #111;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 8mm;
+    position: relative;
+}
+
+/* HEADER */
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 14px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+
+/* CLASSIFICAZIONE */
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+
+/* TIMBRO */
+.timbro { position: absolute; bottom: 30px; right: 24px; width: 60px; height: 60px; border: 3px solid rgba(180, 30, 30, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-12deg); color: rgba(180, 30, 30, 0.3); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+
+/* SEZIONI */
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 8px; color: #000; }
+
+/* DISTRETTO ATTRIBUTI (tabella compatta a 6 colonne) */
+.attr-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 8px; }
+.attr-cell { border: 1px solid #333; padding: 6px 4px; text-align: center; background: #f6f6f0; }
+.attr-cell .label { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #555; }
+.attr-cell .value { font-size: 22px; font-weight: bold; color: #111; line-height: 1; margin: 4px 0; }
+.attr-cell .spec { font-size: 9px; color: #666; min-height: 22px; line-height: 1.2; }
+
+/* AZIONI DELEGABILI (tabella) */
+.azioni-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.azioni-table th, .azioni-table td { border: 1px solid #555; padding: 3px 6px; text-align: left; color: #111; vertical-align: top; }
+.azioni-table th { background: #eee; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.azioni-table td.center { text-align: center; }
+.azioni-table tbody tr:nth-child(even) td { background: #f8f8f4; }
+
+/* PNG NOTEVOLI (4 card orizzontali) */
+.png-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.png-card { border: 1px solid #333; padding: 8px 10px; background: #f9f6ec; }
+.png-card .png-name { font-size: 12px; font-weight: bold; color: #000; margin-bottom: 2px; }
+.png-card .png-name .kanji { color: #555; font-weight: normal; font-size: 11px; }
+.png-card .png-role { font-size: 10px; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.png-card .png-grade { font-size: 10px; color: #888; margin-bottom: 6px; }
+.png-card .png-desc { font-size: 11px; color: #222; line-height: 1.4; }
+.png-card .png-contact { font-size: 9px; color: #666; margin-top: 4px; padding-top: 4px; border-top: 1px dashed #aaa; }
+
+/* HANDOUT TRACKER */
+.handout-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 4px; }
+.handout-table th, .handout-table td { border: 1px solid #555; padding: 3px 6px; text-align: left; color: #111; }
+.handout-table th { background: #eee; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.handout-table input { width: 100%; border: none; background: transparent; font-family: "Courier New", monospace; font-size: 11px; color: #111; padding: 2px; }
+.handout-table input:focus { background: #fffce8; outline: 1px solid #b91e1e; }
+.btn-row { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
+.btn { background: #333; color: #f0e8d0; border: 1px solid #555; padding: 4px 12px; font-family: "Courier New", monospace; font-size: 11px; cursor: pointer; letter-spacing: 1px; text-transform: uppercase; }
+.btn:hover { background: #b91e1e; }
+.btn.secondary { background: #f0e8d0; color: #333; border: 1px solid #888; }
+.btn.secondary:hover { background: #fffce8; color: #b91e1e; }
+
+/* CALENDARIO */
+.cal-controls { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; font-size: 11px; }
+.cal-controls label { color: #555; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
+.cal-controls input[type="month"] { border: 1px solid #555; padding: 3px 6px; font-family: "Courier New", monospace; font-size: 11px; background: #fffce8; }
+.cal-controls .cal-info { color: #777; font-size: 10px; font-style: italic; }
+#calendar-list { display: flex; flex-direction: column; gap: 3px; }
+.cal-day { display: grid; grid-template-columns: 70px 1fr; border: 1px solid #888; background: #fafaf4; min-height: 32px; }
+.cal-day.weekend { background: #f3eee0; border-color: #b8a97a; }
+.cal-day.today { background: #fffce8; border-color: #b91e1e; border-width: 2px; }
+.cal-day .cal-date { padding: 6px 8px; border-right: 1px solid #888; font-size: 10px; line-height: 1.3; color: #333; background: rgba(0,0,0,0.04); }
+.cal-day.weekend .cal-date { background: rgba(120,90,40,0.08); }
+.cal-day .cal-date .day-num { font-size: 16px; font-weight: bold; color: #111; line-height: 1; }
+.cal-day .cal-date .day-name { font-size: 9px; text-transform: uppercase; color: #777; letter-spacing: 1px; margin-top: 2px; }
+.cal-day textarea {
+    border: none; background: transparent; padding: 6px 8px;
+    font-family: "Courier New", monospace; font-size: 11px;
+    color: #111; resize: vertical; min-height: 32px; width: 100%;
+    line-height: 1.4;
+}
+.cal-day textarea:focus { background: #fffce8; outline: 1px solid #b91e1e; }
+
+/* NOTE LIBERE */
+.notes-area { width: 100%; min-height: 120px; border: 1px solid #555; padding: 8px;
+    font-family: "Courier New", monospace; font-size: 11px; line-height: 1.4;
+    background: #fafaf4; color: #111; resize: vertical; }
+.notes-area:focus { background: #fffce8; outline: 1px solid #b91e1e; }
+
+/* FOOTER */
+.footer { margin-top: 18px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 6px; }
+
+/* DARK MODE SCREEN */
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; }
+    .doc-header .org { color: #999; }
+    .doc-header .title { color: #e8e4d8; }
+    .doc-header .subtitle { color: #888; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200,60,60,0.25); color: rgba(200,60,60,0.25); }
+    .footer { color: #555; border-top-color: #333; }
+
+    .attr-cell { background: #1d1d22; border-color: #555; }
+    .attr-cell .label { color: #998860; }
+    .attr-cell .value { color: #e8e4d8; }
+    .attr-cell .spec { color: #998860; }
+
+    .azioni-table th, .azioni-table td { border-color: #444; color: #d0ccbe; }
+    .azioni-table th { background: #1f1f24; color: #b0a890; }
+    .azioni-table tbody tr:nth-child(even) td { background: #1a1a20; }
+
+    .png-card { background: #1d1d22; border-color: #555; }
+    .png-card .png-name { color: #e8e4d8; }
+    .png-card .png-name .kanji { color: #998860; }
+    .png-card .png-role { color: #998860; }
+    .png-card .png-grade { color: #707060; }
+    .png-card .png-desc { color: #c8c4b8; }
+    .png-card .png-contact { color: #888; border-top-color: #444; }
+
+    .handout-table th, .handout-table td { border-color: #444; color: #d0ccbe; }
+    .handout-table th { background: #1f1f24; color: #b0a890; }
+    .handout-table input { color: #d8d4c8; }
+    .handout-table input:focus { background: #2a2418; outline-color: #cc4444; }
+    .btn { background: #2a2a30; color: #d0ccbe; border-color: #555; }
+    .btn:hover { background: #cc4444; color: #fff; }
+    .btn.secondary { background: #1d1d22; color: #998860; border-color: #555; }
+    .btn.secondary:hover { background: #2a2418; color: #cc4444; }
+
+    .cal-controls label { color: #998860; }
+    .cal-controls input[type="month"] { background: #2a2418; border-color: #555; color: #d8d4c8; }
+    .cal-controls .cal-info { color: #777; }
+
+    .cal-day { background: #1a1a20; border-color: #555; }
+    .cal-day.weekend { background: #1f1d18; border-color: #6a5c3a; }
+    .cal-day.today { background: #2a2418; border-color: #cc4444; }
+    .cal-day .cal-date { background: rgba(255,255,255,0.04); border-right-color: #555; color: #998860; }
+    .cal-day.weekend .cal-date { background: rgba(180,140,60,0.08); }
+    .cal-day .cal-date .day-num { color: #e8e4d8; }
+    .cal-day .cal-date .day-name { color: #998860; }
+    .cal-day textarea { color: #d8d4c8; }
+    .cal-day textarea:focus { background: #2a2418; outline-color: #cc4444; }
+
+    .notes-area { background: #1a1a20; border-color: #555; color: #d8d4c8; }
+    .notes-area:focus { background: #2a2418; outline-color: #cc4444; }
+}
+
+/* PRINT */
+@media print {
+    body { background: #fff; padding: 0; }
+    .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; }
+    .btn-row { display: none; }
+    .cal-controls input[type="month"] { background: transparent; }
+    .handout-table input, .cal-day textarea, .notes-area { background: transparent; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">捜査一課 — SEZIONE INVESTIGATIVA CENTRALE</div>
+        <div class="title">SCHEDA DISTRETTO + AGENDA OPERATIVA</div>
+        <div class="subtitle">Polizia Prefetturale — quadro operativo e cronologia indagini</div>
+    </div>
+
+    <!-- DISTRETTO ATTRIBUTI -->
+    <div class="section">
+        <div class="section-title">Attributi del Distretto</div>
+        <div class="attr-grid">
+            <div class="attr-cell">
+                <div class="label">Organico</div>
+                <div class="value">8</div>
+                <div class="spec">Squadra di sorveglianza (+1)</div>
+            </div>
+            <div class="attr-cell">
+                <div class="label">Efficienza</div>
+                <div class="value">7</div>
+                <div class="spec">—</div>
+            </div>
+            <div class="attr-cell">
+                <div class="label">Velocità</div>
+                <div class="value">6</div>
+                <div class="spec">—</div>
+            </div>
+            <div class="attr-cell">
+                <div class="label">Risorse</div>
+                <div class="value">8</div>
+                <div class="spec">Archivio esteso (+1)</div>
+            </div>
+            <div class="attr-cell">
+                <div class="label">Rete</div>
+                <div class="value">7</div>
+                <div class="spec">—</div>
+            </div>
+            <div class="attr-cell">
+                <div class="label">Corruzione</div>
+                <div class="value">5</div>
+                <div class="spec">28% attivazione</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AZIONI DELEGABILI -->
+    <div class="section">
+        <div class="section-title">Azioni delegabili — riferimento operativo</div>
+        <table class="azioni-table">
+            <thead>
+                <tr>
+                    <th style="width:38%;">Azione</th>
+                    <th style="width:14%;" class="center">Attributo</th>
+                    <th style="width:14%;" class="center">Bonus spec.</th>
+                    <th>Note / tempi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Pedinamento / appostamento / sorveglianza</td><td class="center">Organico (8)</td><td class="center">+1 sorv.</td><td>Operazione continua, autorizzazione interna</td></tr>
+                <tr><td>Inseguimento veicolare / supporto arresto</td><td class="center">Organico (8)</td><td class="center">—</td><td>Operazione singola, urgenza</td></tr>
+                <tr><td>Perquisizione di un luogo</td><td class="center">Organico (8)</td><td class="center">—</td><td>Richiede mandato → Procura. 4–6h + autorizzazione</td></tr>
+                <tr><td>Ricerca anagrafica / precedenti / patrimoniali</td><td class="center">Risorse (8)</td><td class="center">+1 arch.</td><td>1–4 ore</td></tr>
+                <tr><td>Acquisizione tabulati telefonici</td><td class="center">Risorse (8)</td><td class="center">+1 arch.</td><td>24–48h + autorizzazione</td></tr>
+                <tr><td>Acquisizione filmati TVCC / scontrini</td><td class="center">Risorse (8)</td><td class="center">+1 arch.</td><td>12–24h</td></tr>
+                <tr><td>Elaborazione digitale filmato/audio</td><td class="center">Efficienza (7)</td><td class="center">—</td><td>24–48h, Sez. Analisi Video</td></tr>
+                <tr><td>Analisi tossicologica / impronte / balistica</td><td class="center">Efficienza (7)</td><td class="center">—</td><td>24–72h, laboratori esterni</td></tr>
+                <tr><td>Analisi documentale / grafologia</td><td class="center">Efficienza (7)</td><td class="center">—</td><td>48h</td></tr>
+                <tr><td>Localizzazione di una persona</td><td class="center">Rete (7)</td><td class="center">—</td><td>4–8h</td></tr>
+                <tr><td>Raccolta informazioni su un soggetto</td><td class="center">Rete (7)</td><td class="center">—</td><td>Variabile</td></tr>
+                <tr><td>Verifica documento / identità</td><td class="center">Efficienza (7)</td><td class="center">—</td><td>1–2h</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PNG NOTEVOLI -->
+    <div class="section">
+        <div class="section-title">Personale fisso del distretto</div>
+        <div class="png-grid">
+            <div class="png-card">
+                <div class="png-name">TANIGUCHI Kenji <span class="kanji">谷口 健二</span></div>
+                <div class="png-role">Commissario / Capo Sezione Omicidi</div>
+                <div class="png-grade">Keibu (警部) — 56 anni — 18+ anni di servizio</div>
+                <div class="png-desc">Superiore diretto dei PG. Pragmatico, esigente, protettivo. Riceve briefing e rapporti, autorizza risorse e mandati attraverso il PM, gestisce le pressioni mediatiche e politiche. Frase tipica: <em>"Sedetevi. Raccontate."</em></div>
+                <div class="png-contact">Ufficio Piano 2 — Cercapersone, risponde &lt;10 min</div>
+            </div>
+            <div class="png-card">
+                <div class="png-name">YAMADA Tetsuo <span class="kanji">山田 哲夫</span></div>
+                <div class="png-role">Sergente — Accompagnatore PG</div>
+                <div class="png-grade">Junsa-buchō (巡査部長) — 35 anni — 10+ anni servizio</div>
+                <div class="png-desc">Agente affidabile assegnato 24/7 ai PG come supporto operativo. Guida, prende appunti, fa da riferimento territoriale. Non investiga ma è prezioso per la logistica e i sopralluoghi sul campo.</div>
+                <div class="png-contact">Sempre disponibile durante l'indagine — Cercapersone &lt;20 min</div>
+            </div>
+            <div class="png-card">
+                <div class="png-name">ITO Daisuke <span class="kanji">伊藤 大介</span></div>
+                <div class="png-role">Responsabile Polizia Scientifica</div>
+                <div class="png-grade">Kanshiki-kan Cl.1 (鑑識官一級) — 52 anni — 15+ anni</div>
+                <div class="png-desc">Capo della squadra scientifica (Kanshiki-ka). Metodico, fattuale, mai speculativo. Riferisce dati, mai opinioni. Punto di contatto coi laboratori esterni per medicina legale, tossicologia, balistica.</div>
+                <div class="png-contact">Lab seminterrato — Su scena del crimine in 45 min</div>
+            </div>
+            <div class="png-card">
+                <div class="png-name">WATANABE Hideo <span class="kanji">渡辺 秀夫</span></div>
+                <div class="png-role">Procuratore — Pubblico Ministero</div>
+                <div class="png-grade">Kenji (検事) — 51 anni — magistrato dal 1971</div>
+                <div class="png-desc">Magistrato del PM di riferimento. Imparziale, scrupoloso, lento per principio. Firma o respinge mandati e autorizzazioni. Non si contatta direttamente — sempre tramite Taniguchi. Frase tipica: <em>"Lo valuterò."</em></div>
+                <div class="png-contact">Procura Tribunale Prefetturale, 4° piano — solo orari ufficio</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HANDOUT TRACKER -->
+    <div class="section">
+        <div class="section-title">Tracker Handout / Reperti — richieste e consegne</div>
+        <table class="handout-table" id="handout-table">
+            <thead>
+                <tr>
+                    <th style="width:30%;">Handout / Reperto</th>
+                    <th style="width:20%;">Richiesto il (data/ora)</th>
+                    <th style="width:20%;">Consegnato il</th>
+                    <th>Note / esito</th>
+                </tr>
+            </thead>
+            <tbody id="handout-tbody">
+                <!-- generato via JS, default 12 righe vuote -->
+            </tbody>
+        </table>
+        <div class="btn-row">
+            <button class="btn secondary" type="button" onclick="addHandoutRow()">+ Aggiungi riga</button>
+            <button class="btn secondary" type="button" onclick="clearHandouts()">Pulisci tracker</button>
+        </div>
+    </div>
+
+    <!-- CALENDARIO AGENDA -->
+    <div class="section">
+        <div class="section-title">Agenda — calendario operativo</div>
+        <div class="cal-controls">
+            <label for="cal-month">Mese:</label>
+            <input type="month" id="cal-month">
+            <span class="cal-info">I dati si salvano automaticamente nel browser. Annota fatti, interrogatori, consegne handout, decisioni.</span>
+        </div>
+        <div id="calendar-list">
+            <!-- generato via JS in base al mese selezionato -->
+        </div>
+    </div>
+
+    <!-- NOTE LIBERE -->
+    <div class="section">
+        <div class="section-title">Note libere</div>
+        <textarea class="notes-area" id="free-notes" placeholder="Spazio libero per teorie, ipotesi, collegamenti, schemi, link tra sospettati, idee in corso..."></textarea>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="section">
+        <div class="btn-row">
+            <button class="btn" type="button" onclick="exportData()">Esporta JSON</button>
+            <button class="btn secondary" type="button" onclick="importData()">Importa JSON</button>
+            <button class="btn secondary" type="button" onclick="window.print()">Stampa</button>
+            <button class="btn secondary" type="button" onclick="resetAll()" style="margin-left: auto;">Reset tutto</button>
+        </div>
+    </div>
+
+    <div class="timbro">SEZ.<br>OMICIDI<br>殺人課<br>京都府警</div>
+
+    <div class="footer">
+        Sezione Investigativa Centrale — Scheda Distretto + Agenda Operativa — pagina unica — uso GM/PG
+    </div>
+
+</div>
+
+<input type="file" id="import-file" accept=".json" style="display:none;">
+
+<script>
+// ============================================================
+// LocalStorage keys
+// ============================================================
+const LS_PREFIX = 'genkai_distretto_';
+const LS_HANDOUT = LS_PREFIX + 'handout';
+const LS_CAL = LS_PREFIX + 'calendar';
+const LS_NOTES = LS_PREFIX + 'notes';
+const LS_MONTH = LS_PREFIX + 'currentmonth';
+
+// ============================================================
+// HANDOUT TRACKER
+// ============================================================
+function getHandouts() {
+    const data = localStorage.getItem(LS_HANDOUT);
+    if (data) return JSON.parse(data);
+    // default: 12 righe vuote
+    return Array.from({length: 12}, () => ({ name: '', requested: '', delivered: '', notes: '' }));
+}
+
+function saveHandouts() {
+    const rows = document.querySelectorAll('#handout-tbody tr');
+    const data = Array.from(rows).map(r => ({
+        name: r.querySelector('input[data-field="name"]').value,
+        requested: r.querySelector('input[data-field="requested"]').value,
+        delivered: r.querySelector('input[data-field="delivered"]').value,
+        notes: r.querySelector('input[data-field="notes"]').value
+    }));
+    localStorage.setItem(LS_HANDOUT, JSON.stringify(data));
+}
+
+function renderHandouts() {
+    const tbody = document.getElementById('handout-tbody');
+    tbody.innerHTML = '';
+    const data = getHandouts();
+    data.forEach(item => addHandoutRowEl(item));
+}
+
+function addHandoutRowEl(item = { name: '', requested: '', delivered: '', notes: '' }) {
+    const tbody = document.getElementById('handout-tbody');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td><input type="text" data-field="name" value="${escapeHtml(item.name)}" placeholder="Nome handout / reperto"></td>
+        <td><input type="text" data-field="requested" value="${escapeHtml(item.requested)}" placeholder="GG/MM hh:mm"></td>
+        <td><input type="text" data-field="delivered" value="${escapeHtml(item.delivered)}" placeholder="GG/MM hh:mm"></td>
+        <td><input type="text" data-field="notes" value="${escapeHtml(item.notes)}" placeholder="Note / esito"></td>
+    `;
+    tr.querySelectorAll('input').forEach(inp => inp.addEventListener('input', saveHandouts));
+    tbody.appendChild(tr);
+}
+
+function addHandoutRow() {
+    addHandoutRowEl();
+    saveHandouts();
+}
+
+function clearHandouts() {
+    if (!confirm('Svuotare il tracker degli handout?')) return;
+    localStorage.removeItem(LS_HANDOUT);
+    renderHandouts();
+}
+
+// ============================================================
+// CALENDARIO
+// ============================================================
+function getCalendarData() {
+    const data = localStorage.getItem(LS_CAL);
+    return data ? JSON.parse(data) : {};
+}
+
+function saveCalendarEntry(dateKey, value) {
+    const data = getCalendarData();
+    if (value.trim() === '') {
+        delete data[dateKey];
+    } else {
+        data[dateKey] = value;
+    }
+    localStorage.setItem(LS_CAL, JSON.stringify(data));
+}
+
+function renderCalendar(year, month /* 1-12 */) {
+    const list = document.getElementById('calendar-list');
+    list.innerHTML = '';
+    const data = getCalendarData();
+    const daysInMonth = new Date(year, month, 0).getDate();
+    const today = new Date();
+    const todayKey = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+    const dayNames = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+
+    for (let d = 1; d <= daysInMonth; d++) {
+        const dateObj = new Date(year, month - 1, d);
+        const dayOfWeek = dateObj.getDay();
+        const isWeekend = (dayOfWeek === 0 || dayOfWeek === 6);
+        const dateKey = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        const isToday = dateKey === todayKey;
+
+        const div = document.createElement('div');
+        div.className = 'cal-day' + (isWeekend ? ' weekend' : '') + (isToday ? ' today' : '');
+        div.innerHTML = `
+            <div class="cal-date">
+                <div class="day-num">${d}</div>
+                <div class="day-name">${dayNames[dayOfWeek]}</div>
+            </div>
+            <textarea data-date="${dateKey}" placeholder="—">${escapeHtml(data[dateKey] || '')}</textarea>
+        `;
+        const ta = div.querySelector('textarea');
+        ta.addEventListener('input', e => saveCalendarEntry(dateKey, e.target.value));
+        ta.addEventListener('blur', e => saveCalendarEntry(dateKey, e.target.value));
+        list.appendChild(div);
+    }
+}
+
+function changeMonth(yyyymm) {
+    localStorage.setItem(LS_MONTH, yyyymm);
+    const [y, m] = yyyymm.split('-').map(Number);
+    renderCalendar(y, m);
+}
+
+// ============================================================
+// FREE NOTES
+// ============================================================
+function setupFreeNotes() {
+    const ta = document.getElementById('free-notes');
+    ta.value = localStorage.getItem(LS_NOTES) || '';
+    ta.addEventListener('input', () => localStorage.setItem(LS_NOTES, ta.value));
+}
+
+// ============================================================
+// EXPORT / IMPORT / RESET
+// ============================================================
+function exportData() {
+    const data = {
+        handout: localStorage.getItem(LS_HANDOUT),
+        calendar: localStorage.getItem(LS_CAL),
+        notes: localStorage.getItem(LS_NOTES),
+        month: localStorage.getItem(LS_MONTH),
+        exportedAt: new Date().toISOString()
+    };
+    const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `agenda_distretto_${new Date().toISOString().slice(0,10)}.json`;
+    a.click();
+}
+
+function importData() {
+    document.getElementById('import-file').click();
+}
+
+document.getElementById('import-file').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(ev) {
+        try {
+            const data = JSON.parse(ev.target.result);
+            if (data.handout) localStorage.setItem(LS_HANDOUT, data.handout);
+            if (data.calendar) localStorage.setItem(LS_CAL, data.calendar);
+            if (data.notes) localStorage.setItem(LS_NOTES, data.notes);
+            if (data.month) localStorage.setItem(LS_MONTH, data.month);
+            location.reload();
+        } catch (err) {
+            alert('Errore importazione: ' + err.message);
+        }
+    };
+    reader.readAsText(file);
+});
+
+function resetAll() {
+    if (!confirm('Cancellare TUTTI i dati (handout, calendario, note)? Operazione irreversibile.')) return;
+    localStorage.removeItem(LS_HANDOUT);
+    localStorage.removeItem(LS_CAL);
+    localStorage.removeItem(LS_NOTES);
+    localStorage.removeItem(LS_MONTH);
+    location.reload();
+}
+
+// ============================================================
+// UTILITIES
+// ============================================================
+function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ============================================================
+// INIT
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Handout
+    renderHandouts();
+
+    // Calendar
+    const monthInput = document.getElementById('cal-month');
+    const savedMonth = localStorage.getItem(LS_MONTH);
+    let yyyymm;
+    if (savedMonth) {
+        yyyymm = savedMonth;
+    } else {
+        const now = new Date();
+        yyyymm = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    }
+    monthInput.value = yyyymm;
+    changeMonth(yyyymm);
+    monthInput.addEventListener('change', e => changeMonth(e.target.value));
+
+    // Free notes
+    setupFreeNotes();
+});
+</script>
+
+</body>
+</html>
