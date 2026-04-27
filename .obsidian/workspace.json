@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Materiale/Scheda_Distretto.md",
+                "file": "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scheda_Distretto"
+              "title": "Storia Completa"
             }
           }
         ]
@@ -225,8 +225,15 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Investigare/Avventura La Falsa Primavera/GM_Scena_Finale.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Handout_Cross.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Interrogatorio_Yumi.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Cheatsheet.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Apertura.md",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
+    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/Materiale/~WRL0661.tmp",
     "Investigare/Materiale/~WRD0645.tmp",
     "Investigare/Materiale/~WRL3566.tmp",
@@ -261,17 +268,10 @@
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Setsuko_Maizuru.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Murakami_Yamashina.md",
     "Investigare/Avventura Tra Galli/Luoghi",
-    "Investigare/Materiale/Scheda_Distretto.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Sasaki_Hideo_Prestanome_Ignaro.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Okubo_Kenji_Prestanome_Consapevole.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Tachibana_Setsuko_Moglie.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Saito_Goro_Capo_Nitogun.md",
-    "Investigare/Avventura Tra Galli/PNG",
     "Investigare/png notevoli/PNG_03_Ito_Daisuke_foto.png",
     "Investigare/png notevoli/PNG_02_Yamada_Tetsuo_foto.png",
     "Investigare/png notevoli/PNG_01_Taniguchi_Kenji_foto.png",
     "Investigare/Materiale/logoNero.png",
-    "Investigare/Materiale/logo.png",
-    "Investigare/Materiale/Kyoto.png"
+    "Investigare/Materiale/logo.png"
   ]
 }

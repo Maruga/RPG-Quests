@@ -129,8 +129,13 @@ Creati 10 handout HTML nella cartella `handout/` seguendo il pattern di Ultima L
 - [x] ~~Creare handout HTML~~ — **fatto 2026-04-24** (10 file in `handout/`)
 - [x] ~~Rimuovere handout testuali da Storia Completa~~ — **fatto 2026-04-24** (sostituiti da indice + Note GM)
 - [x] ~~Schede PNG~~ — **fatto 2026-04-24** (10 file in `PNG/`)
+- [x] ~~Materiali GM operativi~~ — **fatto 2026-04-27** (5 file `GM_*.md`):
+  - `GM_Apertura.md` — briefing Taniguchi 31/03 09:15
+  - `GM_Cheatsheet.md` — soluzione + 6 prove + 3 piste false + chiave tabulati + indizi sepolti, 1 pagina
+  - `GM_Interrogatorio_Yumi.md` — tabella 3 giri (richiamo a `PNG/04`)
+  - `GM_Handout_Cross.md` — trigger/autorizzazioni/tempi consegna handout
+  - `GM_Scena_Finale.md` — regole GENKAI per negoziazione Shūichi (Ascolto/Presenza/Pazienza + Pressione)
 - [ ] Definire schede PG specifiche (o adattare PG standard con `Investigare/pg/genera_schede_pg.py`)
-- [ ] Eventuale cartellina GM stampabile (A4, chiavi numeri, tabella soluzione)
 - [ ] Playtest sessione unica per validare timing 3-4h
 - [ ] Valutare se aggiungere prove fisiche secondarie (impronte sulla cassetta postale? ricevuta konbini?)
 - [ ] Verificare resa visiva handout in browser locale (file:// protocol + stampa PDF A4)
