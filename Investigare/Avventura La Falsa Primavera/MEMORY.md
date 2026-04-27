@@ -135,10 +135,9 @@ Creati 10 handout HTML nella cartella `handout/` seguendo il pattern di Ultima L
   - `GM_Interrogatorio_Yumi.md` — tabella 3 giri (richiamo a `PNG/04`)
   - `GM_Handout_Cross.md` — trigger/autorizzazioni/tempi consegna handout
   - `GM_Scena_Finale.md` — regole GENKAI per negoziazione Shūichi (Ascolto/Presenza/Pazienza + Pressione)
-- [ ] Definire schede PG specifiche (o adattare PG standard con `Investigare/pg/genera_schede_pg.py`)
-- [ ] Playtest sessione unica per validare timing 3-4h
-- [ ] Valutare se aggiungere prove fisiche secondarie (impronte sulla cassetta postale? ricevuta konbini?)
-- [ ] Verificare resa visiva handout in browser locale (file:// protocol + stampa PDF A4)
+- [x] ~~Prova fisica secondaria~~ — **fatto 2026-04-27**: `handout/12_Perquisizione_Appartamento.html` (verbale perquisizione Mansion Karasuma 502 con stampante Canon BJ-200, carta inkjet, pacchetto fazzoletti Nepia identico al konbini, Tokarev nel comodino di Shūichi). Aggancia la scena finale e dà ridondanza alla trappola della lettera. Cheatsheet + Cross-reference + Storia Completa aggiornati.
+
+**PG**: standard cross-avventura (Yamamoto/Honda/Nakamura/Sato/Fujita) — non servono schede specifiche.
 
 ## Riferimenti
 

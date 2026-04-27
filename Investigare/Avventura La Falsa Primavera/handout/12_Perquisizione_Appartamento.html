@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Verbale Perquisizione — Appartamento Shūichi/Yumi Ogawa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.65; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 16px; font-size: 13px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; color: #111; }
+.section ul li::before { content: "— "; color: #666; }
+.highlight-box { border-left: 3px solid #333; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; }
+.signature-section { margin-top: 24px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.timbro { position: absolute; bottom: 50px; right: 30px; width: 70px; height: 70px; border: 3px solid rgba(180, 30, 30, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-15deg); color: rgba(180, 30, 30, 0.4); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+.footer { margin-top: 16px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+.room-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.room-table th, .room-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.room-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.repertati { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.repertati th, .repertati td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.repertati th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.repertati td.center { text-align: center; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p, .section ul li { color: #d0ccbe; }
+    .highlight-box { border-left-color: #777; color: #d0ccbe; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.25); color: rgba(200, 60, 60, 0.25); }
+    .room-table th, .room-table td, .repertati th, .repertati td { border-color: #444; color: #d0ccbe; }
+    .room-table th, .repertati th { background: #1f1f24; color: #b0a890; }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察 — POLIZIA PREFETTURALE DI KYOTO — POLIZIA SCIENTIFICA</div>
+        <div class="title">VERBALE DI PERQUISIZIONE DOMICILIARE</div>
+        <div class="subtitle">Mansion Karasuma 502 — Residenza Ogawa Shūichi / Hayashi Yumi</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Fascicolo N.</span><br>97-KPD-0402-PER-014</div>
+        <div><span class="label">Data esecuzione</span><br>2 aprile 1997 — ore 14:20 / 17:05</div>
+        <div><span class="label">Mandato</span><br>Procura Prefettizia Kyoto — Decreto n. 97-PR-K-0287, em. PM Watanabe Hideo</div>
+        <div><span class="label">Distretto</span><br>Nakagyō Keisatsu-sho (delega operativa)</div>
+        <div><span class="label">Luogo</span><br>Mansion Karasuma 502 — Nakagyō-ku, Karasuma-Oike Higashi-iru</div>
+        <div><span class="label">Presenti</span><br>Sig.ra Hayashi Yumi (intestataria, presente). Coniuge Ogawa Shūichi assente in fase iniziale, sopraggiunto alle 15:40.</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Premessa</div>
+        <p>In esecuzione del decreto di perquisizione emesso dal PM Watanabe Hideo nell'ambito del procedimento per la morte di OGAWA Masao (fasc. 97-KPD-0330), in data 02/04/1997 il sottoscritto Ispettore con squadra Scientifica e operatori del Distretto di Higashiyama ha effettuato perquisizione presso il domicilio dei coniugi Ogawa Shūichi e Hayashi Yumi.</p>
+        <p>L'appartamento, al quinto piano del condominio "Mansion Karasuma", si compone di soggiorno con angolo cottura, due camere (matrimoniale + studio/uso lavoro), bagno, ripostiglio. La signora Hayashi Yumi era presente in casa al momento dell'intervento. Ha letto il decreto, non ha sollevato eccezioni formali, ha richiesto la presenza del legale di famiglia (avv. Shimizu Tetsuo) — comunicazione fatta, l'avvocato è sopraggiunto alle 15:55.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Rilievi per ambiente</div>
+        <table class="room-table">
+            <thead>
+                <tr><th style="width:22%;">Ambiente</th><th>Rilievi</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Soggiorno</strong></td>
+                    <td>Mobilio occidentale, ordinato. Sul tavolo basso, posta corrente del nucleo familiare. Nessun elemento di interesse rinvenuto in sede di prima ispezione. Cestino svuotato.</td>
+                </tr>
+                <tr>
+                    <td><strong>Studio (uso lavoro)</strong></td>
+                    <td>Scrivania con personal computer NEC PC-9821, stampante a getto d'inchiostro <strong>Canon BJ-200</strong> collegata. La stampante risulta accesa e in stato operativo. Nel cassetto inferiore della scrivania: una risma aperta di carta inkjet formato A4 (marca Kokuyo, peso 70 g/m², circa 380 fogli residui sui 500 originari). Nel cestino della stanza: nessun documento attinente. <strong>Repertati: stampante, carta, file di stampa storici (vedi Repertato G).</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Camera matrimoniale</strong></td>
+                    <td>Letto a una piazza e mezza, due comodini. Nel cassetto del comodino lato finestra (lato Ogawa Shūichi, come dichiarato dal coniuge a richiesta): rinvenuta <strong>arma da fuoco corta — pistola semiautomatica Tokarev TT-33 cal. 7,62×25 mm</strong>, matricola abrasa, caricatore inserito con 8 cartucce, una in canna. Nessuna documentazione di detenzione legale. Repertata in sicurezza, sigilli apposti. <strong>(Repertato H — comunicazione separata alla sezione Armi.)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Bagno</strong></td>
+                    <td>Armadietto medicinali: presenti farmaci da banco (analgesici, antipiretico, antistaminico). Nessun farmaco a base di digossina o glicosidi cardiaci. Cestino svuotato.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cucina / dispensa</strong></td>
+                    <td>Sul ripiano basso della dispensa, accanto a confezioni alimentari aperte: <strong>pacchetto di fazzoletti di carta marca "Nepia" — confezione tascabile da 10 pezzi</strong>, aperta, residui 6 fazzoletti. Confezione visivamente identica a quella riscontrata sullo scontrino Family Mart 22:58:47 del 29/03/1997 (cfr. fasc. 97-KPD-0331-KON). <strong>Repertato.</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Ripostiglio</strong></td>
+                    <td>Articoli di uso comune (aspirapolvere, scorte detersivi, valigie). Nessun elemento di rilievo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Reperti acquisiti</div>
+        <table class="repertati">
+            <thead>
+                <tr>
+                    <th style="width:6%;">Sigla</th>
+                    <th style="width:30%;">Reperto</th>
+                    <th style="width:24%;">Ambiente</th>
+                    <th>Descrizione sintetica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="center"><strong>G1</strong></td>
+                    <td>Stampante Canon BJ-200</td>
+                    <td>Studio</td>
+                    <td>Stampante a getto d'inchiostro consumer. Cartucce installate, alimentazione collegata. Acquisita per analisi tipografica comparativa.</td>
+                </tr>
+                <tr>
+                    <td class="center"><strong>G2</strong></td>
+                    <td>Risma carta Kokuyo A4 70 g/m²</td>
+                    <td>Studio (cassetto)</td>
+                    <td>Risma aperta, residui circa 380 fogli su 500. Acquisita per analisi comparativa filigrana/grammatura.</td>
+                </tr>
+                <tr>
+                    <td class="center"><strong>G3</strong></td>
+                    <td>Pacchetto fazzoletti Nepia tascabile</td>
+                    <td>Cucina (dispensa)</td>
+                    <td>Confezione 10 pz. aperta, 6 fazzoletti residui. Tipologia visivamente identica a confezione battente scontrino n. 0408 del 29/03 ore 22:58:47, Family Mart Higashiōji-Shichijō.</td>
+                </tr>
+                <tr>
+                    <td class="center"><strong>H</strong></td>
+                    <td>Pistola Tokarev TT-33 cal. 7,62×25</td>
+                    <td>Camera matrimoniale (comodino lato Shūichi)</td>
+                    <td>Arma da fuoco semiautomatica, matricola abrasa. Caricatore con 8 cartucce + 1 in canna. Detenzione illegale. Trasmessa alla Sezione Armi del Distretto. Procedimento separato a carico di OGAWA Shūichi.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Esito comparazioni richieste</div>
+        <p>Si richiede al laboratorio di Polizia Scientifica:</p>
+        <ul>
+            <li>Confronto tipografico tra stampe ottenute da reperto G1 (Canon BJ-200) e lettera anonima trasmessa il 02/04 (cfr. fasc. 97-KPD-0402-LET) — verifica corrispondenza di font, densità inchiostro, pattern getto, eventuali difetti di stampa.</li>
+            <li>Confronto filigrana/grammatura/composizione tra carta reperto G2 e foglio della lettera anonima.</li>
+            <li>Verifica balistica del reperto H ai fini del procedimento separato e di eventuali riscontri archivio.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Dichiarazioni rese</div>
+        <p>La sig.ra Hayashi Yumi ha dichiarato che la stampante e la carta vengono utilizzate "per il lavoro del marito" (corrispondenza commerciale con clienti della fornace) e che il pacchetto di fazzoletti è "di uso comune in casa, non ricordo dove l'ho preso". Sul reperto H ha dichiarato di "non sapere come si trovasse lì" e di "non averla mai vista". Il coniuge sopraggiunto alle 15:40 ha confermato la propria responsabilità esclusiva sulla detenzione del reperto H.</p>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">Isp. SAITŌ Ryōichi</div>
+            <div>Polizia Scientifica</div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">Sov. KOBAYASHI Tarō</div>
+            <div>Ufficiale di P.G. — verbalizzante</div>
+        </div>
+    </div>
+
+    <div class="timbro">KPD<br>SCIENT.<br>京都府警<br>鑑識</div>
+
+    <div class="footer">
+        Verbale di perquisizione domiciliare — Mansion Karasuma 502 — Caso 97-KPD-0330 — pag. 1/1
+    </div>
+
+</div>
+</body>
+</html>

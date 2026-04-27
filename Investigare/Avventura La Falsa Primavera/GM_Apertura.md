@@ -16,9 +16,7 @@ Taniguchi (Keibu) convoca i PG nel suo ufficio. Sul tavolo: una cartellina marro
 >
 > *"Sabato sera c'era una cena. Sei persone. Tutti gli altri sono stati male — nausea, capogiri, qualcuno ha vomitato. Lui è l'unico morto. Hanno bevuto umeshu di casa. La bottiglia ce l'abbiamo."*
 >
-> *"La famiglia: la moglie, il figlio, la nuora, una sorella anziana. Più l'avvocato di famiglia, era invitato. Stessa cena, stessa bottiglia. Uno di loro ha messo qualcosa dentro."*
->
-> *"Il caso è vostro. Yamada-kun vi accompagna. Avete tutto in cartellina: autopsia, scena, cartella clinica, trascrizione 119. Esami del sangue dei sopravvissuti arrivano in mattinata."*
+> *"Il caso è vostro. Yamada-kun vi accompagna.* 
 >
 > *"La famiglia Ogawa è conosciuta a Higashiyama. La fornace ha più di settant'anni. La stampa non sa ancora che è omicidio. Tenete il caso pulito."*
 >
@@ -39,8 +37,8 @@ Pacchetto iniziale (cfr. `Storia Completa.md` sez. 8 — "Consegna consigliata")
 
 - **H1** Referto Autoptico
 - **H2** Rapporto Scena
-- **H3** Cartella Clinica
-- **H4** Trascrizione 119
+- **H3** Cartella Clinica (opzionale)
+- **H4** Trascrizione 119 (opzionale)
 
 > Gli **esami del sangue** (H5) arrivano "in mattinata" — il GM li consegna quando i PG hanno completato il primo giro di interrogatori, mai prima. È la pista principale: deve cadere in mezzo, non all'inizio.
 

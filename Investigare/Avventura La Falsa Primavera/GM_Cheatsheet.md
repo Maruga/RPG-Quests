@@ -40,9 +40,10 @@
 ## CONSEGNA HANDOUT
 - **Apertura**: H1 + H2 + H3 + H4
 - **Dopo 1° giro interrogatori**: H5 + H6
-- **Se chiedono testamento / perquisiscono studio**: H7
+- **Se chiedono testamento / perquisiscono studio villa**: H7
 - **Dopo Shūichi → konbini**: H8 (poi H8b solo su richiesta elaborazione + H11 solo su richiesta scontrini)
 - **Dal 02/04**: H9 + H10
+- **Se PG perquisiscono appartamento Shūichi/Yumi (mandato Procura)**: **H12** — stampante Canon BJ-200, risma carta inkjet, pacchetto fazzoletti identico al konbini, **Tokarev** nel comodino di Shūichi (collega alla scena finale)
 
 ## YUMI IN INTERROGATORIO
 - **Giro 1**: nuora modello, tutto coerente. Maschera intatta.

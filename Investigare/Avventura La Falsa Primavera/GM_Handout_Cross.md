@@ -16,6 +16,7 @@
 | **H9** Lettera anonima | **Arriva da sola** in Procura il **02/04 (mer)** — i PG non possono accelerarla | — | Tempistica fissa | Mattina 2/4 |
 | **H10** Analisi Timbro | I PG devono **richiedere** alla Scientifica + verifica Poste | Standard interno | 24h | 2/4 pomeriggio o 3/4 mattina |
 | **H11** Scontrini Konbini | I PG devono **chiedere** il giornale di cassa Family Mart finestra 22:55–23:04 | Richiesta diretta gestore | 12h | Subito dopo H8 |
+| **H12** Perquisizione Appartamento Shūichi/Yumi | I PG devono **richiedere** perquisizione domiciliare. Trigger: indizi su Yumi (sangue 0,3 + scatola al konbini + lettera Nakagyō) sufficienti a giustificare il mandato | **Mandato perquisizione** → Watanabe (serve quadro indiziario solido) | 24h dopo autorizzazione | 02/04 pomeriggio o 03/04 mattina |
 | **M1/M2** Mappe villa | Consegnate quando PG entrano alla villa | — | — | Apertura villa |
 | **M3** Mappa Kyoto | Consegnata in apertura come riferimento topografico | — | — | Apertura |
 
@@ -49,3 +50,4 @@ Tutta l'avventura si svolge in 3 giorni di gioco (31/03 → 02/04). I tempi real
 | H9 (lettera) | Sessione si conclude alle prove fisiche; perdono il movente trappola |
 | H10 (timbro) | H9 perde il colpo di ritorno — Yumi può ancora cavarsela |
 | H11 (scontrini) | Perdono la conferma incrociata orario fazzoletti — non blocca, è ridondanza |
+| H12 (perquisizione app.) | Perdono la prova materiale che collega Yumi alla lettera (stampante + carta) e il pacchetto fazzoletti identico. Non blocca: la lettera+timbro+sangue restano sufficienti per arresto. **Effetto collaterale**: senza H12, Tokarev di Shūichi non emerge in indagine — la scena finale può comunque attivarsi (Shūichi ce l'ha addosso al momento dell'arresto Yumi) |

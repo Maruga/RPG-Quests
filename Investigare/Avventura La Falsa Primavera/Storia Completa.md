@@ -176,6 +176,7 @@ Gli handout sono stati spostati in file HTML separati (stile burocratico JP '97,
 | `09_Lettera_Anonima.html` | Busta + testo JP + analisi | Timbro Nakagyō (quartiere Yumi), menziona amante |
 | `10_Analisi_Timbro.html` | Scheda tecnica Poste Giapponesi | Perimetro raccolta = zona residenza Shūichi/Yumi |
 | `11_Scontrini_Konbini.html` | Tre scontrini cassa finestra 22:55–23:04 del 29/03 | Consegnato SOLO se i PG richiedono i giornali di cassa. Contiene 3 transazioni: birra+snack+rivista (22:55), **fazzoletti ¥120 cash (22:58:47)**, onigiri+drink+sigarette (23:04). I PG devono incrociare l'orario col timecode del frame H8 (22:58:14) |
+| `12_Perquisizione_Appartamento.html` | Verbale perquisizione Mansion Karasuma 502 (Shūichi/Yumi) | Richiede mandato Procura. Reperti: stampante Canon BJ-200 (G1) + carta inkjet (G2) per comparazione con lettera anonima H9, pacchetto fazzoletti Nepia identico (G3) al battente scontrino H11, **Tokarev TT-33 (H)** nel comodino di Shūichi. Aggancia la scena finale (sez. 9) e fornisce ridondanza materiale alla trappola della lettera |
 
 **Consegna consigliata**:
 1. Apertura sessione: `01` Autopsia + `02` Scena + `03` Cartella clinica + `04` Trascrizione 119

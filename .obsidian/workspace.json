@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
+                "file": "Investigare/Avventura La Falsa Primavera/PNG/_prompt_scena_finale.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Storia Completa"
+              "title": "_prompt_scena_finale"
             }
           }
         ]
@@ -227,11 +227,15 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
-    "Investigare/Avventura La Falsa Primavera/GM_Scena_Finale.md",
+    "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
     "Investigare/Avventura La Falsa Primavera/GM_Handout_Cross.md",
-    "Investigare/Avventura La Falsa Primavera/GM_Interrogatorio_Yumi.md",
     "Investigare/Avventura La Falsa Primavera/GM_Cheatsheet.md",
     "Investigare/Avventura La Falsa Primavera/GM_Apertura.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Interrogatorio_Yumi.md",
+    "Investigare/Avventura La Falsa Primavera/PNG/_prompt_scena_finale.md",
+    "Investigare/Avventura La Falsa Primavera/MEMORY.md",
+    "Investigare/Avventura La Falsa Primavera/GM_Scena_Finale.md",
+    "Investigare/Avventura La Falsa Primavera/handout/12_Perquisizione_Appartamento.html",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/Materiale/~WRL0661.tmp",
@@ -247,7 +251,6 @@
     "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png",
     "Investigare/Materiale/Squadra Investigatori.png",
     "Investigare/Materiale/StradaNotturna.png",
-    "Investigare/Avventura La Falsa Primavera/Storia Completa.md",
     "Link Utili.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
     "Investigare/Avventura Tra Galli/Luoghi/Appartamento - Tachibana Eiji.md",
@@ -265,9 +268,6 @@
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Kuroda_Fushimi.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Hayashi_Kameoka.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Club_Aoyagi_Kiyamachi.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Setsuko_Maizuru.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Murakami_Yamashina.md",
-    "Investigare/Avventura Tra Galli/Luoghi",
     "Investigare/png notevoli/PNG_03_Ito_Daisuke_foto.png",
     "Investigare/png notevoli/PNG_02_Yamada_Tetsuo_foto.png",
     "Investigare/png notevoli/PNG_01_Taniguchi_Kenji_foto.png",
