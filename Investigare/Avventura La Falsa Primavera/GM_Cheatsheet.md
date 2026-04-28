@@ -10,7 +10,7 @@
 | B | Scatola Lanoxin nel bidone Family Mart, impronte parziali Yumi | H8 |
 | C | Fazzoletto cestino bagno con residui digossina (cestino svuotato Ven 28) | H2 |
 | D | TVCC konbini 22:58 — donna 156 cm, capelli **raccolti** (Yumi li porta sciolti) | H8 / H8b |
-| E | Lettera anonima — timbro **Nakagyō** (suo quartiere) + cita amante (info che Yumi non doveva sapere) | H9 / H10 |
+| E | Lettera anonima — timbro **Nakagyō** (suo quartiere) + cita amante (info che Yumi non doveva sapere) | H9 |
 | F | Sangue Yumi **0,3 ng/mL** (media altri 1,1) — ha bevuto quasi nulla | **H5** |
 
 ## 3 PISTE FALSE
@@ -42,8 +42,9 @@
 - **Dopo 1° giro interrogatori**: H5 + H6
 - **Se chiedono testamento / perquisiscono studio villa**: H7
 - **Dopo Shūichi → konbini**: H8 (poi H8b solo su richiesta elaborazione + H11 solo su richiesta scontrini)
-- **Dal 02/04**: H9 + H10
-- **Se PG perquisiscono appartamento Shūichi/Yumi (mandato Procura)**: **H12** — stampante Canon BJ-200, risma carta inkjet, pacchetto fazzoletti identico al konbini, **Tokarev** nel comodino di Shūichi (collega alla scena finale)
+- **Dal 02/04**: H9
+- **Se PG perquisiscono appartamento Shūichi/Yumi (mandato Procura)**: **H12** — verbale neutro di tutti gli ambienti. **Nessun reperto acquisito d'ufficio.** Tra gli oggetti documentati: 3 bossoli esauriti 7,62×25 in fondo al cassetto di Shūichi (ma **nessuna arma rinvenuta** — Shūichi la tiene con sé, sez. 9); 2 bigliettini Yodo conservati con elastico (piccole vincite ¥1.200/¥800); stampante NEC PICTY 200 + carta Kokuyo A4 70 g/m² nello studio; pacchetto Nepia in dispensa. I PG decidono cosa è rilevante
+- **Se PG richiedono accertamento tipografico carta/stampa**: **H10** — **compatibilità tecnica completa** ma **non identificazione**: NEC PICTY 200 = 500.000 unità diffuse, carta Kokuyo prodotto di massa, font Mincho standard di sistema. Coerente con la lettera ma non prova nulla da solo
 
 ## YUMI IN INTERROGATORIO
 - **Giro 1**: nuora modello, tutto coerente. Maschera intatta.

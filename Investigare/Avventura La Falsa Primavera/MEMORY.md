@@ -37,8 +37,8 @@ Note di lavoro per questa avventura. Aggiornare dopo ogni sessione di modifica.
 | `06_Tabulati_Telefonici.html` | NTT / NTT DoCoMo Kansai | 3 utenze, 18 chiamate, giorni della settimana verificati su calendario 1997 |
 | `07_Agenda_Ogawa.html` | Takahashi Techo 1997 (**NON** Hobonichi: lanciato nel 2001) | 7 date JP con giorno settimana verificato |
 | `08_Fotogramma_Konbini.html` | Family Mart Higashiōji-Shichijō | VHS time-lapse 2fps B/N, tabella confronto 4 soggetti con Shimizu escluso |
-| `09_Lettera_Anonima.html` | Busta+contenuto, analisi Scientifica | Testo JP invariato, timbro Nakagyō, stampa inkjet Mincho |
-| `10_Analisi_Timbro.html` | Poste Giapponesi + Scientifica | Perimetro raccolta Nakagyō delimitato (Oike/Shijō/Kawaramachi/Horikawa) |
+| `09_Lettera_Anonima.html` | Busta+contenuto, analisi Scientifica | Testo JP invariato, timbro Nakagyō visibile sulla busta, stampa inkjet Mincho |
+| `10_Esame_Comparativo_Stampa.html` | Sez. Analisi Documentale | Confronto lettera vs stampante+carta dell'appartamento — compatibile ma non identificativo (NEC PICTY 200 = 500.000 unità diffuse, carta Kokuyo prodotto di massa). Generato solo su richiesta dei PG dopo H12 |
 
 ### Correzioni storiche applicate durante la creazione handout
 
@@ -100,10 +100,9 @@ Creati 10 handout HTML nella cartella `handout/` seguendo il pattern di Ultima L
 - **H7 Agenda**: **correzione storica** Hobonichi→Takahashi (Hobonichi Techo lanciato 2001, Takahashi No Techo brand reale dal 1949); date JP tutte con giorno settimana corretto
 - **H8 Fotogramma**: Family Mart a Higashiōji-Shichijō esiste realmente in Higashiyama-ku; qualità VHS time-lapse 2fps B/N è tipica delle TVCC convenience store anni '90; Shimizu aggiunto alla tabella esclusioni
 - **H9 Lettera**: stampa inkjet consumer diffusa in JP '97 (Canon BJ, Epson Stylus); francobollo ¥80 era la tariffa ordinaria '94-'99
-- **H10 Timbro**: perimetro raccolta Nakagyō delimitato con vie reali (Oike/Shijō/Kawaramachi/Horikawa) che effettivamente definiscono il quartiere
 
 **Modifiche a Storia Completa.md (v2.1 → v2.2)**:
-- Rimossi tutti gli handout testuali H1-H10 dalla sezione 8
+- Rimossi tutti gli handout testuali dalla sezione 8
 - Sezione 8 ora contiene: (a) tabella indice dei 10 file HTML, (b) "Consegna consigliata" in 5 fasi, (c) "Note GM per gli handout" con le info tecniche riservate (chiave numeri, dato 0,3 di Yumi, chiamata 07:05, capelli raccolti, trappola lettera)
 
 ## Incongruenze verificate e OK (non toccare)
@@ -136,6 +135,8 @@ Creati 10 handout HTML nella cartella `handout/` seguendo il pattern di Ultima L
   - `GM_Handout_Cross.md` — trigger/autorizzazioni/tempi consegna handout
   - `GM_Scena_Finale.md` — regole GENKAI per negoziazione Shūichi (Ascolto/Presenza/Pazienza + Pressione)
 - [x] ~~Prova fisica secondaria~~ — **fatto 2026-04-27**: `handout/12_Perquisizione_Appartamento.html` (verbale perquisizione Mansion Karasuma 502 con stampante Canon BJ-200, carta inkjet, pacchetto fazzoletti Nepia identico al konbini, Tokarev nel comodino di Shūichi). Aggancia la scena finale e dà ridondanza alla trappola della lettera. Cheatsheet + Cross-reference + Storia Completa aggiornati.
+- [x] ~~Coerenza incrociata handout~~ — **fatto 2026-04-28**: passata sistematica su tutti i 13 handout; corrette incongruenze (chiamata 119 mancante in H6, carta lettera A5/A4 H9↔H12, Hayashi→Ogawa Yumi in H12, data H10, marca Nepia H11, formato decreti Procura, riferimenti incrociati H12, "modifica testamento"/"questione testamento" rimossi da H7).
+- [x] ~~Rimosso handout H10 (Analisi Timbro)~~ — **fatto 2026-04-28**: troppo direzionale, dava ai PG la mappa del quartiere di Yumi. L'informazione del timbro Nakagyō resta solo sulla busta in H9 (visibile nella scansione + tabella analisi). Spetta ai PG collegare Nakagyō a Yumi (residenza Mansion Karasuma 502). Aggiornati: Storia Completa, GM_Cheatsheet, GM_Handout_Cross, GM_Interrogatorio_Yumi, PNG/02, PNG/04, CLAUDE.md, _prompts_mappe_giocatori.md.
 
 **PG**: standard cross-avventura (Yamamoto/Honda/Nakamura/Sato/Fujita) — non servono schede specifiche.
 

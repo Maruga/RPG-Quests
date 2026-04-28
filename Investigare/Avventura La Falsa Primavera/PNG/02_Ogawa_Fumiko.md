@@ -55,7 +55,7 @@ Sapeva dell'amante (Kubo Midori) da anni. Non ne ha mai parlato col marito. Non 
 - Pallida. Prende la lettera, legge, riguarda la busta, alza gli occhi
 - *"Chi ha scritto questo? Perché?"* — la rabbia è reale
 - Si sente tradita due volte: dal marito (amante) e da chi la accusa
-- Se i PG le mostrano anche l'analisi del timbro (H10): *"Nakagyō? Ma in quel quartiere vive… anche mio figlio."* — si ferma, non completa il pensiero. Non accuserà mai Yumi esplicitamente, ma il dubbio è entrato
+- Se i PG le fanno notare il timbro Nakagyō sulla busta (H9): *"Nakagyō? Ma in quel quartiere vive… anche mio figlio."* — si ferma, non completa il pensiero. Non accuserà mai Yumi esplicitamente, ma il dubbio è entrato
 
 ### Se le chiedono di autorizzare Shimizu a parlare (segreto professionale)
 

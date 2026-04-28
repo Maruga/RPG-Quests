@@ -107,7 +107,7 @@ Genera immagini della stessa architettura / stessa geografia ma senza indicatori
 - Layout della casa (utile per muoversi, capire chi poteva andare dove)
 - Mappa della città (utile per orientarsi tra i luoghi che già conoscono dagli interrogatori)
 
-Le prove e i percorsi **devono essere dedotti dagli interrogatori, dagli handout di polizia (H1-H10) e dagli appunti dei PG**, non da queste mappe.
+Le prove e i percorsi **devono essere dedotti dagli interrogatori, dagli handout di polizia (H1-H9, H11, H12) e dagli appunti dei PG**, non da queste mappe.
 
 ### Consigli per l'uso al tavolo
 - Le 2 planimetrie vanno date all'inizio del sopralluogo alla villa (quando i PG arrivano il 31/03)

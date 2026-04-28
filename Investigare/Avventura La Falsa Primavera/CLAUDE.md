@@ -56,7 +56,7 @@ Masao (vittima), Fumiko (moglie), Shūichi (figlio), Yumi (nuora), Kazuko (sorel
 | `07_Agenda_Ogawa.html` | Agenda Takahashi Techo (JP) | Conferma movente senza parlare con Shimizu |
 | `08_Fotogramma_Konbini.html` | Fotogramma Family Mart | Donna 155-160 cm, capelli raccolti (Yumi li porta sciolti) |
 | `09_Lettera_Anonima.html` | Lettera anonima (JP) | Accusa Fumiko — timbro Nakagyō + conosce amante |
-| `10_Analisi_Timbro.html` | Analisi timbro | Nakagyō = quartiere di Yumi |
+| `10_Esame_Comparativo_Stampa.html` | Confronto stampa/carta lettera ↔ appartamento | **Compatibile** ma non certezza — NEC PICTY 200 e carta Kokuyo troppo diffuse |
 
 **Note GM tecniche** (chiave numeri tabulati, valore 0,3 di Yumi, chiamata 07:05, lettura capelli, trappola lettera) sono in `Storia Completa.md` sezione 8 → sottosezione "Note GM per gli handout".
 

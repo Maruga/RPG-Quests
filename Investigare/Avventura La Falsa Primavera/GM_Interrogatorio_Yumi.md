@@ -12,7 +12,7 @@
 | **2° — Konbini H8** | Fotogramma + scatola nel bidone | *"Forse fazzoletti. Non so cosa c'era nel bidone. Ho buttato un fazzoletto."* (storia cambia) | Battito ciglia in più, mani strette |
 | **2° — Capelli raccolti** | Confronto con abitudine | *"A volte me li tiro su quando fa caldo."* (era 12°C, sera marzo) | Non regge |
 | **2° — Testamento** | Movente | *"Non ne sapevo nulla."* — **mente** con la stessa sicurezza delle verità | — |
-| **3° — Lettera + timbro** | H9 + H10: timbro Nakagyō + cita amante | *"…non so di quale amante parlate."* — esitazione la tradisce | **Pausa lunga** |
+| **3° — Lettera + timbro** | H9: timbro Nakagyō + cita amante | *"…non so di quale amante parlate."* — esitazione la tradisce | **Pausa lunga** |
 | **3° — Confronto finale** | Tutte le prove insieme | **Si congela.** Lungo silenzio, due esiti possibili | **A** o **B** ↓ |
 
 ## Confronto finale — esiti
@@ -47,6 +47,6 @@ Si attiva il 3° giro **solo** se i PG hanno sul tavolo almeno 4 dei seguenti:
 - Testimonianza Kazuko ("ha versato per tutti")
 - Versione Shūichi sull'alcol
 - Movente (Shimizu o agenda H7)
-- Lettera + timbro Nakagyō (H9+H10)
+- Lettera + timbro Nakagyō (H9)
 
 **Sotto le 4 prove**: Yumi tiene. I PG devono tornare al lavoro investigativo.

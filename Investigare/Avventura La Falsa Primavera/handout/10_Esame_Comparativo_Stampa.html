@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Esame Comparativo — Carta e Stampa Lettera Anonima</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 5mm; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.65; color: #111; background: #fff; display: flex; justify-content: center; padding: 4px; }
+.document { width: 210mm; min-height: 297mm; background: #fff; padding: 8mm; position: relative; }
+.doc-header { border: 2px solid #111; border-bottom: 3px double #111; padding: 12px 20px; text-align: center; margin-bottom: 16px; }
+.doc-header .org { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.doc-header .title { font-size: 18px; font-weight: bold; margin-top: 4px; letter-spacing: 2px; color: #000; }
+.doc-header .subtitle { font-size: 11px; margin-top: 3px; color: #444; }
+.metadata { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; margin-bottom: 16px; font-size: 13px; }
+.metadata div { padding: 4px 10px; border-bottom: 1px solid #999; color: #111; }
+.metadata div:nth-child(odd) { border-right: 1px solid #999; }
+.metadata .label { font-weight: bold; color: #333; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.section { margin-bottom: 14px; }
+.section-title { font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 6px; color: #000; }
+.section p { margin-bottom: 6px; text-align: justify; color: #111; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; color: #111; }
+.section ul li::before { content: "— "; color: #666; }
+.compare-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 12px; }
+.compare-table th, .compare-table td { border: 1px solid #333; padding: 4px 8px; text-align: left; color: #111; vertical-align: top; }
+.compare-table th { background: #eee; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+.compare-table td.center { text-align: center; }
+.outcome-box { border: 1px solid #555; border-left: 4px solid #555; padding: 8px 12px; margin: 10px 0; font-size: 13px; color: #111; background: #f6f6f0; }
+.outcome-box strong { color: #000; }
+.signature-section { margin-top: 24px; display: flex; justify-content: space-between; font-size: 12px; color: #111; }
+.signature-block { text-align: center; width: 40%; }
+.signature-line { border-top: 1px solid #333; margin-top: 28px; padding-top: 4px; }
+.timbro { position: absolute; bottom: 50px; right: 30px; width: 70px; height: 70px; border: 3px solid rgba(180, 30, 30, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; transform: rotate(-15deg); color: rgba(180, 30, 30, 0.4); font-size: 9px; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; }
+.footer { margin-top: 16px; font-size: 10px; color: #666; text-align: center; border-top: 1px solid #ccc; padding-top: 4px; }
+.classificazione { position: absolute; top: 8mm; right: 8mm; font-size: 11px; font-weight: bold; color: #8b0000; border: 2px solid #8b0000; padding: 2px 8px; letter-spacing: 2px; }
+@media screen {
+    body { background: #0a0a0c; }
+    .document { background: #151518; color: #d8d4c8; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+    .doc-header { border-color: #555; } .doc-header .org { color: #999; } .doc-header .title { color: #e8e4d8; } .doc-header .subtitle { color: #888; }
+    .metadata { border-color: #444; } .metadata div { border-color: #333; color: #d0ccbe; } .metadata .label { color: #999; }
+    .section-title { color: #e0dcd0; border-bottom-color: #555; }
+    .section p, .section ul li { color: #d0ccbe; }
+    .compare-table th, .compare-table td { border-color: #444; color: #d0ccbe; }
+    .compare-table th { background: #1f1f24; color: #b0a890; }
+    .outcome-box { background: #1d1d22; border-color: #555; border-left-color: #888; color: #d8d4c8; }
+    .outcome-box strong { color: #e8e4d8; }
+    .signature-section, .signature-line { color: #999; border-top-color: #555; }
+    .footer { color: #555; border-top-color: #333; }
+    .classificazione { color: #cc4444; border-color: #cc4444; }
+    .timbro { border-color: rgba(200, 60, 60, 0.25); color: rgba(200, 60, 60, 0.25); }
+}
+@media print { body { background: #fff; padding: 0; } .document { box-shadow: none; padding: 6mm; background: #fff; color: #111; } }
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="classificazione">RISERVATO</div>
+
+    <div class="doc-header">
+        <div class="org">京都府警察 — POLIZIA SCIENTIFICA — SEZ. ANALISI DOCUMENTALE</div>
+        <div class="title">ESAME COMPARATIVO TIPOGRAFICO E CARTACEO</div>
+        <div class="subtitle">Confronto tra lettera anonima protocollata 02/04 e materiali da residenza Mansion Karasuma 502</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">N. pratica</span><br>97-KPD-0403-DOC-027</div>
+        <div><span class="label">Data emissione</span><br>03 aprile 1997 — ore 17:30</div>
+        <div><span class="label">Richiedente</span><br>Sezione Investigativa Centrale (richiesta orale del 02/04)</div>
+        <div><span class="label">Tecnico responsabile</span><br>Dott. KIMURA Hiroto (木村 弘人) — Sez. Analisi Documentale</div>
+        <div><span class="label">Reperto in esame (A)</span><br>Lettera anonima — prot. 97-KPR-0402-POST-0419</div>
+        <div><span class="label">Riferimenti di confronto (B)</span><br>Stampe-test e campione cartaceo prelevati 02/04 presso Mansion Karasuma 502</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Premessa</div>
+        <p>Su richiesta della Sezione Investigativa Centrale, la presente analisi confronta il documento anonimo protocollato in data 02/04/1997 (busta + foglio dattilostampato) con campioni di stampa e supporto cartaceo prelevati il medesimo giorno presso il domicilio dei coniugi OGAWA Shūichi e OGAWA Yumi (cfr. verbale 97-KPD-0402-PER-014). L'analisi è stata eseguita presso il laboratorio di Polizia Scientifica utilizzando microscopio ottico stereoscopico (40×–100×), spettrofotometro per riflettanza della carta e densitometro su scala di grigi.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Caratteristiche tecniche dei due campioni</div>
+        <table class="compare-table">
+            <thead>
+                <tr>
+                    <th style="width:30%;">Parametro</th>
+                    <th style="width:35%;">Reperto A — lettera anonima</th>
+                    <th style="width:35%;">Riferimento B — campioni domicilio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Tecnologia di stampa</strong></td>
+                    <td>Getto d'inchiostro (inkjet) consumer</td>
+                    <td>Getto d'inchiostro (inkjet) consumer — stampante NEC PICTY 200</td>
+                </tr>
+                <tr>
+                    <td><strong>Risoluzione apparente</strong></td>
+                    <td>≈ 360 dpi</td>
+                    <td>360 dpi (specifica nominale del modello)</td>
+                </tr>
+                <tr>
+                    <td><strong>Pattern getto</strong></td>
+                    <td>Distribuzione regolare, nessun difetto unico identificato</td>
+                    <td>Distribuzione regolare, nessun difetto unico</td>
+                </tr>
+                <tr>
+                    <td><strong>Composizione inchiostro</strong></td>
+                    <td>Inchiostro a base acquosa, nero standard, profilo cromatografico tipico per consumer 1995–97</td>
+                    <td>Inchiostro a base acquosa, nero standard, profilo non distinguibile dal reperto A entro la sensibilità dell'apparato</td>
+                </tr>
+                <tr>
+                    <td><strong>Carattere tipografico</strong></td>
+                    <td>Famiglia Mincho (明朝), corpo 10,5 pt</td>
+                    <td>Famiglia Mincho (明朝), corpo 10,5 pt — font di sistema standard NEC PC-9821</td>
+                </tr>
+                <tr>
+                    <td><strong>Formato foglio</strong></td>
+                    <td>A4 (210 × 297 mm)</td>
+                    <td>A4 (210 × 297 mm)</td>
+                </tr>
+                <tr>
+                    <td><strong>Grammatura carta</strong></td>
+                    <td>70 g/m² (± 2)</td>
+                    <td>70 g/m² nominali (Kokuyo)</td>
+                </tr>
+                <tr>
+                    <td><strong>Riflettanza carta (CIE L*)</strong></td>
+                    <td>92,1</td>
+                    <td>92,3</td>
+                </tr>
+                <tr>
+                    <td><strong>Filigrana / marcature</strong></td>
+                    <td>Assenti</td>
+                    <td>Assenti</td>
+                </tr>
+                <tr>
+                    <td><strong>Difetti caratteristici</strong></td>
+                    <td>Nessuno</td>
+                    <td>Nessuno</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Considerazioni metodologiche</div>
+        <p>I parametri analizzati documentano una <strong>compatibilità tecnica completa</strong> tra il reperto A e il riferimento B sotto i profili: tecnologia di stampa, risoluzione, composizione dell'inchiostro, carattere tipografico, formato e grammatura della carta, riflettanza e profilo cromatografico.</p>
+        <p>Va tuttavia osservato che ciascuno dei parametri sopra elencati corrisponde a uno standard di mercato di larga diffusione nel territorio nazionale. In particolare:</p>
+        <ul>
+            <li>La stampante NEC PICTY 200 è stata commercializzata in Giappone in <strong>oltre 500.000 unità</strong> nel periodo 1995–1997 ed è la stampante consumer più diffusa nelle abitazioni domestiche e nei piccoli uffici.</li>
+            <li>La carta Kokuyo A4 70 g/m² è prodotto di consumo di massa, distribuita in tutte le cartolerie e grandi distribuzioni; la sua riflettanza e composizione sono uniformi su scala nazionale.</li>
+            <li>Il font Mincho 10,5 pt è il carattere tipografico predefinito su quasi tutti i sistemi operativi e applicativi giapponesi (NEC, Fujitsu, IBM giapponese, EPSON), motivo per cui ricorre nella quasi totalità dei documenti dattilostampati domestici dell'epoca.</li>
+            <li>L'inchiostro consumer a base acquosa per inkjet, nella sua formulazione standard "nero", presenta profili pressoché indistinguibili tra produttori diversi al livello di sensibilità del nostro apparato.</li>
+        </ul>
+        <p>L'analisi non ha rilevato sul reperto A <strong>alcun difetto meccanico o anomalia caratteristica</strong> — quale ad esempio ugelli intasati con pattern unico, calibrazione idiosincratica, residui particellari distintivi — che avrebbero potuto consentire un'identificazione individuale rispetto a una specifica unità di stampante.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Conclusione</div>
+        <div class="outcome-box">
+            <p><strong>Esito:</strong> il riscontro tra il reperto A (lettera anonima) e i riferimenti B (stampante e supporto cartaceo provenienti da Mansion Karasuma 502) è <strong>tecnicamente compatibile sotto tutti i profili esaminati</strong>.</p>
+            <p>Non sussistono tuttavia elementi sufficienti per affermare con <strong>certezza forense</strong> che il documento anonimo sia stato materialmente prodotto utilizzando l'apparecchiatura e i materiali in oggetto. La compatibilità rilevata è infatti coerente con una pluralità indeterminata di apparecchiature analoghe e di campioni cartacei equivalenti diffusi sul territorio.</p>
+            <p>Si formula pertanto una valutazione di <strong>compatibilità non identificativa</strong>: il dato è coerente con l'ipotesi di provenienza dal domicilio in oggetto, ma non sufficiente, di per sé, a escludere altre origini.</p>
+        </div>
+    </div>
+
+    <div class="signature-section">
+        <div class="signature-block">
+            <div class="signature-line">
+                Dott. KIMURA Hiroto (木村 弘人)<br>
+                <span style="font-size: 11px;">Sez. Analisi Documentale — KPD</span>
+            </div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">
+                Isp. SAITŌ Ryōichi (斉藤 亮一)<br>
+                <span style="font-size: 11px;">Resp. Polizia Scientifica — KPD</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timbro">ANALISI<br>DOCUMENTALE<br>文書鑑定<br>京都府警</div>
+
+    <div class="footer">
+        Esame Comparativo — N. 97-KPD-0403-DOC-027 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

@@ -76,7 +76,7 @@ Intelligenza pratica, memoria lunga. Ha pianificato con cura: il furto delle com
 - *"Non ne sapevo nulla."* — **MENTE**. Ma con la stessa sicurezza delle verità
 - Per inchiodarla serve: Shimizu che conferma la conversazione a porta socchiusa, o Fumiko che dice "le pareti sono sottili", o l'agenda H7
 
-### Quando i PG portano la lettera anonima (H9) + analisi timbro (H10)
+### Quando i PG portano la lettera anonima (H9) e collegano il timbro Nakagyō
 
 **Qui il suo stesso depistaggio la tradisce.**
 
@@ -92,7 +92,7 @@ I PG mettono davanti:
 - Scatola nel bidone del konbini (H8 + testimonianza Shūichi sulla fermata)
 - Fazzoletto nel cestino bagno con residui (Reperto C)
 - Impronte sui blister
-- Lettera dal suo quartiere (H9+H10)
+- Lettera dal suo quartiere (H9)
 - Kazuko che l'ha vista versare
 - Shūichi che smentisce che beve poco
 - Movente (testamento — Shimizu e/o agenda H7)
