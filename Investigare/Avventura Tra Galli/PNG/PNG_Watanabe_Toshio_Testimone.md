@@ -39,7 +39,7 @@
 - Nessun rumore di lotta
 
 ## Alibi
-**N/A**: è il testimone, non sospettato. Treno Shinkansen documentato (biglietto alle 18:32 da Kobe), telefonata alla moglie alle 20:55, riunione lavoro a Kobe confermata.
+**N/A**: è il testimone, non sospettato. Treno Shinkansen documentato (biglietto delle 20:32 da Shin-Kobe), telefonata alla moglie alle 20:55, riunione lavoro a Kobe confermata.
 
 ## Se interrogato
 - Estremamente cooperativo ma **traumatizzato**

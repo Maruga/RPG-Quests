@@ -26,8 +26,8 @@
 | 11/02 | A casa, sente la notizia di Tachibana al TG delle 23:00 |
 | 12/02 | Sparisce dalla circolazione, non risponde al telefono |
 | 13/02 | Cambia hotel ogni notte, dorme al Toyoko Inn di Karasuma |
-| 14/02 | **Tentato omicidio** mentre rientra in auto in un parcheggio sotterraneo (ore da definire). Sopravvive ferito. Ricoverato. |
-| 17/02 | **Secondo attentato in ospedale** — esito dipende dai PG |
+| 14/02 ore 22:30 | **Tentato omicidio** mentre rientra in auto al parcheggio sotterraneo di casa (Kamigyō, dopo cambio hotel). Sopravvive ferito alla spalla destra. Ricoverato al Kyoto University Hospital, stanza 412 |
+| 17/02 ore ~18:00 | **Secondo attentato in ospedale** (Kuroda travestito da fattorino di catering, tenta iniezione di veleno in flebo) — esito dipende dai PG |
 
 ## Se interrogato (in ospedale, dal 14/02)
 - Inizialmente nega tutto, terrorizzato
@@ -57,13 +57,15 @@
 ## Punto debole
 La figlia di 12 anni a Nagoya. Disposto a tradire chiunque per proteggerla.
 
-## Tentato omicidio del 14/02 (suggerimento dinamica)
-- Sparatoria nel parcheggio sotterraneo del suo condominio
-- Esecutore: Kuroda Ryō
-- 2 colpi: uno manca, uno colpisce alla spalla
-- Ōkubo riesce a ripararsi dietro un'auto e gridare
-- Vicino di casa che torna in quel momento spaventa l'esecutore, che fugge
-- Ricovero al **Kyoto University Hospital**
+## Tentato omicidio del 14/02 ore 22:30
+- Ōkubo era in cambio hotel dal 12/02, ma la sera del 14/02 **rientra brevemente al condominio** per recuperare la **pistola Tokarev** del cassetto comodino e ¥600.000 in contanti d'emergenza, prima di lasciare definitivamente Kyoto verso Nagoya il giorno seguente. È convinto che 5 minuti a casa siano un rischio gestibile. Si sbaglia.
+- Sparatoria nel parcheggio sotterraneo del suo condominio (Kamigyō, posto B-04)
+- Esecutore: Kuroda Ryō (in attesa dietro un pilastro)
+- 2 colpi: uno manca, uno colpisce alla spalla destra
+- Ōkubo riesce a ripararsi dietro la sua Nissan Skyline e gridare
+- Un vicino di casa rientra in auto in quel momento dalla rampa: i fari illuminano la scena, Kuroda fugge a piedi per la rampa di uscita
+- Ambulanza alle 22:42, ricovero al **Kyoto University Hospital** alle 23:15
+- **Conseguenza investigativa**: la Tokarev resta nel cassetto del comodino — i PG la troveranno se perquisiscono l'appartamento, conferma indiretta che Ōkubo viveva nel terrore
 
 ## Note operative GM
 - È la **chiave investigativa principale**: i PG che lo proteggono e lo fanno parlare ottengono la mappa per il capannone e nomi precisi

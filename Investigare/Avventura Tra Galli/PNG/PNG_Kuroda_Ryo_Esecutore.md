@@ -30,9 +30,9 @@
 | Data | Dove era |
 |---|---|
 | 11/02 sera | Dichiara di essere stato in palestra, **nessun testimone affidabile**, registro firme palestra falsificato da lui stesso |
-| 13/02 | A casa, "ho dormito" |
-| 14/02 | Tentato omicidio Ōkubo (parcheggio sotterraneo) |
-| 17/02 | Secondo attentato in ospedale (tentativo di intrusione travestito da fattorino o infermiere) |
+| 13/02 pomeriggio | Omicidio Murakami allo studio veterinario di Yamashina (~14:00). Iniezione letale di xilazina al collo. Entra dal vicolo retro, esce stessa via. Dichiara "lezione palestra al pomeriggio", registro firme falsificato |
+| 14/02 ore 22:30 | Tentato omicidio Ōkubo al parcheggio sotterraneo del condominio di Kamigyō. 2 colpi cal. .38: uno manca, uno colpisce alla spalla destra. Spaventato dal Sig. Hayama in rientro, fugge a piedi per la rampa |
+| 17/02 sera (~18:00) | Secondo attentato in ospedale (Kyoto University Hospital, stanza 412). Travestito da fattorino di catering ospedaliero, tenta di iniettare veleno nella flebo di Ōkubo |
 
 ## Se interrogato
 - Risposte monosillabiche: "non so", "non ricordo", "non c'ero"

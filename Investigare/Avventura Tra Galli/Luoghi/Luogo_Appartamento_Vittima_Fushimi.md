@@ -67,7 +67,7 @@
 ### Soggiorno
 
 - Segreteria telefonica: 2 messaggi non ascoltati
-  - Messaggio 1 (10/02 ore 18:42): voce maschile, breve, "*Ei-san, sono io. Domani come d'accordo*". Voce non identificata immediatamente — è Hayashi Tomoki che fissa un finto incontro per attirarlo alla stazione
+  - Messaggio 1 (10/02 ore 18:42): voce maschile, breve, "*Ei-san, sono io. Domani come d'accordo*". Voce non identificata immediatamente — è Hayashi Tomoki che conferma l'incontro pomeridiano dell'11/02 a Kameoka (durante quell'incontro Hayashi gli darà di persona l'appuntamento serale alla stazione, ultimo anello della trappola)
   - Messaggio 2 (11/02 ore 22:14, post mortem): voce femminile preoccupata, "*Ei-chan, sono Mariko, dove sei?*"
 - Rubrica cartacea accanto al telefono: solo numeri innocui (locale, dentista, sartoria, lavanderia)
 - Cestino della carta: vuoto (svuotato il 10/02 dalle pulizie)
@@ -86,7 +86,7 @@
 
 ### Altri oggetti
 
-- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate (contenuto da definire — possibile gancio narrativo o red herring)
+- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate. Sviluppate in laboratorio (richiede 3-4 giorni, **distrazione potenziale**): contengono filmati privati anni '90 con la moglie Setsuko (viaggio a Hokkaidō nell'estate '94, festa di compleanno della cognata, dettagli familiari). **Niente di criminale**, è un ricordo personale che Tachibana conservava. I PG che spendono tempo qui perdono giorni di indagine
 - Album fotografico in salotto: foto di matrimonio del 1985, viaggi con la moglie fino al 1995, poi nessuna foto recente
 - **Sotto il letto**, in una scatola di scarpe: pacchetto di vecchie lettere d'amore della moglie Setsuko, conservate
 - Niente armi, niente droga, niente materiale incriminante diretto sul Nitōgun

@@ -54,7 +54,7 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 ## Indizi sulla scena
 
 ### Sul corpo
-Vittima trovata seduta in posizione semireclinata, schiena contro la parete del cubicolo, cellulare ancora nella mano sinistra (spento), pantaloni allacciati. Tachibana **non stava effettivamente usando il bagno**: era entrato per nascondersi o aspettare qualcuno (da indagare).
+Vittima trovata seduta in posizione semireclinata, schiena contro la parete del cubicolo, cellulare ancora nella mano sinistra (schermo spento per inattività), pantaloni allacciati. Tachibana **non stava effettivamente usando il bagno**: era entrato in attesa dell'incontro con Hayashi (vedi sezione "Cosa cercava Tachibana alla stazione").
 
 ### Sul pavimento
 - Pozza di sangue
@@ -90,25 +90,25 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 
 ## Cosa cercava Tachibana alla stazione
 
-**Punto da chiarire in seguito.** Ipotesi al vaglio:
-- Aspettava un complice (uno dei prestanome?) per consegnare/ricevere qualcosa
-- Voleva prendere il treno verso Osaka ma era arrivato in anticipo
-- Era stato attirato in trappola con un appuntamento falso
+**Era stato attirato in trappola da Hayashi.** Durante l'incontro pomeridiano dell'11/02 a Kameoka (14–18), Hayashi gli ha fissato di persona un appuntamento serale alla stazione: *"alle 21:15, al bagno del 3° piano lato Hachijō, posto discreto, ti porto la tua quota del giro di gennaio"*. Per Tachibana è routine mensile (consegna in contanti della sua quota), nessun motivo di sospettare. Il punto incontro nel bagno gli è giustificato come "evitiamo di farci vedere insieme in pubblico, soprattutto in una serata festiva con poche persone in stazione" — pretesto credibile.
 
 ## Movimenti precedenti di Tachibana l'11/02
 
 - **Mattino**: locale Kōrin a Gion, gestione ordinaria
 - **14:30**: prende l'autobus per Kameoka (Kyoto Bus, fermata Hachijō-guchi)
-- **15:30 ca**: arrivo Kameoka, motivo da definire (ricognizione capannone? Incontro?)
-- **18:45**: prende l'autobus di ritorno
-- **20:00 ca**: rientro a Kyoto
-- **20:00–21:17**: vuoto da ricostruire
-- **21:17**: arriva al 3° piano della stazione
+- **15:30 ca**: arrivo Kameoka. Incontro pomeridiano con Hayashi per "discussioni operative" (cliente nuovo, calendario combattimenti del 22/02). Hayashi gli fissa l'appuntamento serale alla stazione.
+- **18:45**: prende l'autobus di ritorno (biglietto andata-ritorno timbrato)
+- **20:00 ca**: arrivo a Kyoto Station Hachijō-guchi (capolinea autobus). Tachibana scende, lascia gli effetti dell'autobus alla sua **Toyota Crown** parcheggiata al multipiano della stazione (lato Hachijō, posto B-14)
+- **20:15–21:00**: cena leggera al ristorante del 1° piano (area **Asty Road**), tavolo per uno, ricevuta di pagamento ¥3.200 (recuperabile dai PG con ricerca scontrino, conferma orari)
+- **21:05–21:15**: si trattiene nell'atrio del 1° piano, fuma una sigaretta nello spazio fumatori, controlla il cellulare
+- **21:17**: sale al 3° piano con scala mobile lato est
+- **21:18**: entra nel bagno, va al cubicolo centrale, chiude la porta (in attesa dell'incontro)
+- **21:21**: Kuroda spara
 
 ## Note operative per il GM
 
 - Il bagno è il punto di partenza investigativo. Indizi *forti*: disegno del gallo, biglietto autobus Kameoka, piuma di gallo. Indizi *deboli* ma utili: orario, cellulare, fede + amante (depistaggio temporaneo).
-- La scelta del luogo da parte di Kuroda è strategica: telecamera ingresso bagno guasta (informazione ottenuta da un complice interno? Da indagare come sottotrama).
+- La scelta del luogo da parte di Kuroda è strategica: telecamera ingresso bagno **guasta dal 9/02** (segnalazione pubblica, ricambio in arrivo). Hayashi ha fatto una **ricognizione preventiva** del bagno il 10/02 per scegliere il punto adatto e ha notato il cartello di guasto: niente complice interno, è un'opportunità casuale colta al volo. **Non aprire sottotrame** su questo: i PG che vogliono indagare il guasto trovano solo il rapporto di manutenzione standard JR.
 - Lasciare ai PG margine per scoprire la **telecamera del corridoio**: dà una descrizione fisica utile dell'esecutore senza rivelare il volto.
 
 ---

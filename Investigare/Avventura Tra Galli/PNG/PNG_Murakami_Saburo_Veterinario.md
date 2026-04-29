@@ -25,8 +25,8 @@ Magro, 1,72 m, leggermente curvo. Capelli grigi diradati. Occhiali in metallo do
 | Data | Dove era |
 |---|---|
 | 11/02 sera | A casa con la moglie, cena alle 19:30, TV fino alle 22:00 (confermato da Hiroko) |
-| 12/02 | In clinica giornata intera, 4 visite registrate |
-| 13/02 | Ucciso (modalità da definire) |
+| 12/02 | In clinica giornata intera, 4 visite registrate. La sera apprende dell'omicidio Tachibana dal TG e dalla copia del Kyoto Shimbun consegnata al mattino |
+| 13/02 pomeriggio | Ucciso allo studio veterinario nel retrobottega (~14:00). Modalità: **iniezione letale di xilazina** al collo, lato destro. Aspetto iniziale di possibile suicidio/overdose, smentito dall'autopsia del 14/02 mattina |
 
 **Nota**: l'11 febbraio Murakami non sa ancora dell'omicidio di Tachibana. Lo apprende dai giornali del 12 febbraio.
 

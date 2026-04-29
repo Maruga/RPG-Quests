@@ -37,8 +37,9 @@ Casa silenziosa. Le tensioni economiche e la distanza tra i coniugi negli ultimi
 - **Aiko** può fornire informazioni preziose se interrogata con cautela (ricorda telefonate, gesti, momenti specifici)
 - L'eventuale presenza di un **uomo sospetto** (Kuroda?) intorno alla casa nei giorni precedenti il 13/02 può essere ricordata da vicini
 
-## Possibile scena dell'omicidio Murakami (13/02)
-Da definire — opzioni discusse separatamente. Se l'omicidio avviene qui, è un evento traumatico per Hiroko e Aiko (che lo trovano).
+## Scena dell'omicidio Murakami (13/02)
+**L'omicidio NON avviene in casa**, ma allo **studio veterinario** (vicolo retro, pomeriggio ~14:00). Vedi `Luogo_Studio_Veterinario_Murakami.md` per dinamica.
+Hiroko trova il corpo allo studio verso le 16:30 e rientra in casa devastata. La casa Yamashina diventa quindi un luogo di **dolore familiare e collaborazione investigativa**, non di scena del crimine.
 
 ## Note operative GM
 - Visitare la casa Murakami è un momento di **forte impatto emotivo**: ricorda ai PG la dimensione umana della tragedia

@@ -26,12 +26,14 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 ## Parcheggio sotterraneo
 - 32 posti auto, illuminazione fluorescente, telecamere agli angoli (qualità mediocre)
 - Auto di Ōkubo: **Nissan Skyline R32**, posto B-04
-- 14/02: Kuroda lo aspetta dietro un pilastro vicino al posto B-04, spara appena Ōkubo scende dall'auto. Ōkubo si accuccia dietro l'auto, viene colpito alla spalla. Un vicino che torna in quel momento spaventa Kuroda che fugge per la rampa di uscita.
+- **14/02 ore 22:30**: Ōkubo rientra al condominio per **un rapido prelievo** (Tokarev nel comodino + contante d'emergenza ¥600.000): vuole partire per Nagoya il mattino seguente e ritiene 5 minuti a casa un rischio gestibile. Kuroda lo aspetta dietro un pilastro vicino al posto B-04. Spara 2 colpi appena Ōkubo scende dall'auto: il primo manca, il secondo lo colpisce alla spalla destra. Ōkubo si accuccia dietro l'auto e grida. Un vicino di casa rientra in auto in quel momento dalla rampa: i fari illuminano la scena, Kuroda fugge per la stessa rampa di uscita a piedi.
 - Telecamera del parcheggio: registra **Kuroda** parzialmente, vista parziale del giubbotto bomber e delle scarpe Asics
+- Ambulanza chiamata dal Sig. Hayama alle 22:33, arrivo alle 22:42, ricovero al Kyoto University Hospital alle 23:15
 
 ## Persone presenti
 - Ōkubo Kenji fino al 14/02 (poi in ospedale)
-- Vicini: la **Sig.ra Ueda** (62 anni, vedova, interno 404) sente i tre colpi del parcheggio dalla finestra del suo soggiorno
+- Vicini: la **Sig.ra Ueda** (62 anni, vedova, interno 404) sente i tre colpi salire dalla **tromba dell'ascensore** (porte aperte al 4° piano in quel momento, eco architettonica del parcheggio sotterraneo). Chiama il 119 alle 22:31. Testimone secondaria.
+- Vicino in auto: residente del condominio (54 anni, dirigente in pensione) — testimone diretto, vede di sfuggita la fuga di Kuroda. **Descrizione fornita** alla polizia: bomber scuro, sneaker chiare, corporatura atletica, ~1,80 m. **Non ricorda il volto** (era buio, fari abbaglianti). Identità per verbale ma non centrale per l'indagine
 
 ## Indagine
 - Accesso libero ai PG dopo il 14/02 (Ōkubo in ospedale, l'appartamento può essere ispezionato con consenso)

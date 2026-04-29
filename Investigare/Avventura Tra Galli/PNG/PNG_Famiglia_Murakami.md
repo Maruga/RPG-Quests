@@ -17,13 +17,13 @@
 
 ### Ruolo nella vicenda
 - **Non sa nulla** di truffa o galli
-- Trova il marito morto il 13/02 (modalità da definire — probabile che lo trovi lei al rientro)
+- Trova il marito morto il **13/02 verso le 16:30** allo studio veterinario, dove passa abitualmente prima di rientrare a casa per dare una mano. Chiama l'ambulanza in stato di shock
 - Crolla in stato di shock profondo
 - È la persona che fornisce ai PG l'alibi del marito per l'11/02 (cena casalinga, TV)
 
 ### Alibi
 - 11/02: a casa con il marito
-- 13/02: la mattina al mercato, rientro nel pomeriggio (orario in cui trova il corpo)
+- 13/02: mattina al mercato di Yamashina, pranzo a casa con amica vedova, rientro pomeridiano. Allo studio veterinario verso le 16:30 trova il corpo
 
 ### Se interrogata
 - Sotto shock, parla a frammenti
@@ -108,4 +108,4 @@ N/A: non sospettata.
 
 ## Collegamenti
 - [[Dr. Murakami Saburō — Veterinario complice]]
-- [[Studio veterinario Murakami — Yamashina]] *(da creare)*
+- [[Studio veterinario Murakami — Yamashina]]

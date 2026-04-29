@@ -16,8 +16,9 @@
 - Organizza la logistica del capannone di Kameoka (mensile)
 - Pubblica gli annunci sul Kyoto Shimbun tramite agenzia di intermediazione (paga in nero)
 - Riscuote scommesse e paga vincite per conto di Tachibana
-- Ha **chiamato Tachibana l'11/02 alle 18:42** lasciando il messaggio in segreteria che lo attira alla stazione
-- Il giorno 11/02 incontra Tachibana intorno alle 14–18 a Kameoka per "discussioni operative" (era la trappola: lo rassicura, gli dà appuntamento alla stazione la sera)
+- Ha **chiamato Tachibana il 10/02 alle 18:42** lasciando il messaggio in segreteria (*"Ei-san, sono io. Domani come d'accordo"*) per fissare l'incontro pomeridiano dell'11/02 a Kameoka
+- **Ricognizione preventiva del bagno della Kyoto Station** il 10/02 mattina: sceglie il punto dell'agguato, nota casualmente il cartello "telecamera fuori servizio dal 9/02, ricambio in arrivo" all'ingresso del bagno e ne approfitta come opportunità (nessun complice interno, niente sabotaggio)
+- Il giorno 11/02 incontra Tachibana intorno alle 14–18 a Kameoka per "discussioni operative" (era la trappola: lo rassicura, gli dà di persona appuntamento alla stazione la sera col pretesto della consegna mensile della quota di Tachibana)
 - Coordina Kuroda per i tre attentati
 
 ## Alibi

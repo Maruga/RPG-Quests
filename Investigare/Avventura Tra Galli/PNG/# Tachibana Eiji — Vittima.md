@@ -114,7 +114,7 @@ La sua morte ha **due livelli di lettura**:
 1. Esecuzione mirata e veloce (3 colpi, niente furto, nessuna perquisizione del corpo)
 2. Il disegno col sangue è la sua **ultima dichiarazione**: sapeva chi e perché
 
-I PG che leggono i due livelli arrivano subito alla pista Nitōgun. Quelli che si fermano alla scena materiale possono perdere giorni sui clienti scommettitori.
+I PG che leggono entrambi i livelli ottengono **una direzione**: i combattimenti di galli, qualcosa legato a Kameoka. Identificare il **Nitōgun come gruppo specifico** richiede comunque triangolazione del simbolo (gallo con due speroni) con almeno **due** elementi tra: testimonianze di clienti del giro, archivi storici della Polizia su gruppi locali di Kameoka, oggetti emersi durante perquisizioni successive (accendini commemorativi, monete interne), interrogatorio di un esperto di combattimenti clandestini. **Nessun indizio singolo identifica il Nitōgun.** Quelli che si fermano alla scena materiale senza interpretare il disegno possono perdere giorni sui clienti scommettitori.
 
 ---
 
