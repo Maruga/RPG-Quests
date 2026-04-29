@@ -36,14 +36,14 @@
     }
   },
   "floatingPlayerPosition": {
-    "x": 1594,
-    "y": 934
+    "x": 408,
+    "y": 918
   },
   "disablePlaybackControlPopover": false,
   "enableReplayOption": true,
   "enableQueueFeature": true,
   "queueManagerPosition": {
-    "x": 1524,
+    "x": 1523,
     "y": 704
   },
   "autoPauseOnWindowBlur": false,
