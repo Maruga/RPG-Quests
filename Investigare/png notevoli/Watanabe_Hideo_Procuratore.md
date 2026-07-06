@@ -133,7 +133,7 @@ Non lo sai ancora.
 Il magistrato. Posato, formale, distaccato. Non sorride quasi mai — quando lo fa è una breve curva delle labbra senza coinvolgere gli occhi. Saluta tutti con keigo impeccabile. Non si ricorda mai di chi è di chi tra il personale.
 
 ### In privato (Honne)
-Stanco. Vedovo da otto anni (la moglie morì di cancro al seno nel 1989, due figli adulti che vivono a Tokyo). La sera mangia da solo, quasi sempre la stessa cena. Legge molta saggistica giuridica. Non ha hobby espliciti. La sua pensione è prevista per il 2011 — dieci anni e mezzo. Non sa cosa farà dopo.
+Stanco. Vedovo da otto anni (la moglie morì di cancro al seno nel 1989, due figli adulti che vivono a Tokyo). La sera mangia da solo, quasi sempre la stessa cena. Legge molta saggistica giuridica. Non ha hobby espliciti. La sua pensione è prevista per il 2011 — quattordici anni. Non sa cosa farà dopo.
 
 ### Frase tipica
 *"Lo valuterò."* (la dice in 9 casi su 10 quando riceve una richiesta. Poi lo valuta davvero)
@@ -278,7 +278,7 @@ Keigo formale impeccabile. Frasi precise, mai approssimative. Usa il "lei" giuri
 | Operazione | Attributo Procura | Modificatore tipo prove |
 |------------|------------------|--------------------------|
 | Mandato di perquisizione | Efficienza | Vedi tabella prove |
-| Autorizzazione intercettazioni | Risorse | Vedi tabella prove |
+| Autorizzazione intercettazioni | Risorse | In Giappone illegali fino al 1999 — Watanabe non può concederle (vedi *Quadro Legale*, Manuale GM) |
 | Accesso a cartelle cliniche | Efficienza | +1 se familiare consenziente |
 | Sequestro documenti bancari | Efficienza | -1 (segreto bancario forte) |
 | Sequestro documenti aziendali | Efficienza | 0 |

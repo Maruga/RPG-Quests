@@ -335,7 +335,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 - **Successo**: il PNG si ferma — qualche secondo di sottomissione assoluta, perde il filo di quello che stava facendo o dicendo
 - **Fallimento**: il PNG esita, perde il filo per un istante
 
-> **Esempio**: Il sospettato sta per alzarsi e andarsene. Usi Voce del Tuono (Presenza 7). Tiri 4 — successo. Il GM dice: "'SEDUTO.' La tua voce taglia l'aria. Nakamura si blocca a metà movimento, le gambe cedono, si risiede. Per cinque secondi non sa più cosa stava facendo." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Nakamura esita un istante — la mano sul bracciolo, lo sguardo che vacilla — poi si riprende e si alza comunque."
+> **Esempio**: Il sospettato sta per alzarsi e andarsene. Usi Voce del Tuono (Presenza 7). Tiri 4 — successo. Il GM dice: "'SEDUTO.' La tua voce taglia l'aria. Ueda si blocca a metà movimento, le gambe cedono, si risiede. Per cinque secondi non sa più cosa stava facendo." Se avessi tirato 9 — fallimento — il GM avrebbe detto: "Ueda esita un istante — la mano sul bracciolo, lo sguardo che vacilla — poi si riprende e si alza comunque."
 
 > **Differenza con Pugno di Ferro**: Voce del Tuono è un **momento** — un'esplosione di autorità che interrompe. Pugno di Ferro è una **pressione costante** che fa cedere il PNG su un punto specifico. Il Tuono ferma; il Pugno piega.
 
@@ -524,6 +524,7 @@ I seguenti Gou hanno due attributi possibili. Il giocatore sceglie quale usare a
 - **Vincolo**: attivabile solo quando il PG è a Ki 4 o 5 (vicino al crollo ma non ancora in Genkai)
 - **Successo**: per il resto della scena, i tiri del PG non possono generare Nami negativi (11) né Kiwami negativi (12) — contano come fallimento leggero. Non crolli
 - **Fallimento**: solo il Kiwami negativo (12) è protetto e conta come fallimento leggero. L'11 resta Nami negativo
+- **Nota**: il costo di attivazione non innesca il Genkai — finché dura la scena il PG resta in piedi anche a Ki ≤ 3, con successo o fallimento. A fine scena, se il Ki è ancora ≤ 3, il Genkai scatta normalmente
 
 > **Esempio**: Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico e non puoi fermarti. Usi Lo Spirito che Resta con Distacco 7. Tiri 6 — successo. Il GM dice: "Qualcosa dentro di te si irrigidisce — non come il ghiaccio, come l'acciaio. Per il resto della scena, anche se i dadi ti vanno contro, non crolli." Un eventuale 11 o 12 conta come fallimento leggero. Se avessi tirato 8 — fallimento — il GM avrebbe detto: "La disciplina regge, ma solo in parte." Solo il 12 è protetto; l'11 resta Nami negativo.
 
@@ -671,7 +672,7 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 >
 > **Attributo minimo**: Se un attributo è a 4 e subirebbe una perdita, il punto va obbligatoriamente al Ki.
 >
-> **Ambito**: Nami e Kiwami si applicano solo alle **prove sugli attributi**. Non si applicano a Combattimento, En (relazioni), Gou o recupero notturno.
+> **Ambito**: Nami e Kiwami si applicano solo alle **prove sugli attributi**. Non si applicano a Combattimento, Gou o recupero notturno. Nei tiri con En, il 2 e il 12 (dado puro) non modificano attributi o Ki: muovono solo l'En di ±1 (vedi *Relazioni*).
 
 ### Probabilità di Successo
 
@@ -973,7 +974,7 @@ Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rileva
 | Perquisizione di un luogo | Organico |
 | Ricerca in archivi e banche dati | Risorse |
 | Analisi forense su un reperto | Efficienza |
-| Intercettazione telefonica o ambientale | Risorse |
+| Intercettazione telefonica o ambientale (in Giappone 1997: illegale) | Risorse |
 | Raccolta informazioni su un soggetto | Rete |
 | Supporto ad arresto | Organico |
 | Verifica di un documento o identità | Efficienza |
@@ -994,7 +995,7 @@ Quando i PG delegano un'operazione, il risultato non arriva istantaneamente. Ogn
 | Risultato perquisizione | 6 ore |
 | Analisi impronte digitali | 12 ore |
 | Autopsia completa | 24 ore |
-| Tabulato telefonico | 24 ore |
+| Tabulato telefonico (con ordine del PM) | 24 ore |
 | Analisi tossicologica | 48 ore |
 | Cartelle cliniche (con mandato) | 2 giorni |
 | Documenti bancari (con mandato) | 3 giorni |
@@ -1340,7 +1341,7 @@ Il tiro sulla Procura rappresenta quanto velocemente e favorevolmente il magistr
 | Richiesta | Attributo |
 |-----------|-----------|
 | Mandato di perquisizione | Efficienza |
-| Autorizzazione intercettazioni | Risorse |
+| Autorizzazione intercettazioni (in Giappone 1997: illegali, nessun magistrato può concederle) | Risorse |
 | Accesso a cartelle cliniche | Efficienza |
 | Sequestro documenti bancari/aziendali | Efficienza |
 | Ordine di custodia cautelare | Rete |
@@ -1476,8 +1477,8 @@ Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è u
 3. Il PG tira 2d6 ≤ attributo (modificato)
 4. **Successo**: eviti/gestisci senza conseguenze
 5. **Fallimento**: perdi Ki in base alla pericolosità dell'attacco
-6. **Kiwami positivo (dado = 2)**: +1 attributo, +1 Ki
-7. **Kiwami negativo (dado = 12)**: -1 attributo usato E -1 Ki, oltre al danno
+
+> **Nota**: Nami e Kiwami **non** si applicano al combattimento — un 2 è solo un successo, un 12 è solo un fallimento (vedi *Ambito* nella sezione Meccanica Base dei Tiri). Il combattimento costa Ki, non tocca gli attributi.
 
 ---
 
@@ -1571,7 +1572,7 @@ Gli attributi cambiano durante l'avventura tramite:
 > - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco sale a 7, Ki a 10. Ma il Ki non può superare il valore di inizio sessione (9) — il punto è perso.
 > - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di abbassare Ascolto. Ki scende a 8.
 > - Scena personale con il padre: gestita bene dal voto dei giocatori. Sceglie +1 Silenzio (sale da 5 a 6).
-> - Fine sessione: recupero notturno. Il soroban è alla partenza (Kiwami+ e Nami- si sono bilanciati): tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
+> - Fine sessione: recupero notturno. Il soroban è a 6, sopra la partenza (Kiwami+ = +2, Nami- = -1): tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
 > - Sessione successiva inizia con: Distacco 7, Ascolto 7, Silenzio 6, Ki 9.
 
 ---
@@ -1580,9 +1581,9 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 1: Interrogatorio
 
-**Situazione**: Il detective Tanaka interroga la signora Yamamoto, testimone di un omicidio. Lei è nervosa ma non ostile (En 0).
+**Situazione**: Il detective Tanaka interroga la signora Ogawa, testimone di un omicidio. Lei è nervosa ma non ostile (En 0).
 
-**GM**: "La signora Yamamoto ti racconta che quella sera era a casa. Ha sentito un rumore verso le 22, ma non ha visto nulla. Sembra agitata."
+**GM**: "La signora Ogawa ti racconta che quella sera era a casa. Ha sentito un rumore verso le 22, ma non ha visto nulla. Sembra agitata."
 
 **Giocatore**: "Voglio capire se sta nascondendo qualcosa. Uso Ascolto per cogliere il non detto."
 
@@ -1622,7 +1623,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Situazione**: Un sospettato cerca di fuggire e attacca il detective Sato.
 
-**GM**: "Nakamura ti spinge contro il muro e ti tira un pugno. È un civile arrabbiato, nessun addestramento. Come reagisci?"
+**GM**: "Ueda ti spinge contro il muro e ti tira un pugno. È un civile arrabbiato, nessun addestramento. Come reagisci?"
 
 **Giocatore**: "Provo a schivare, uso Lucidità."
 
@@ -1668,15 +1669,15 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 5: Relazione con PNG
 
-**Situazione**: Il detective Tanaka ha già avuto un diverbio con l'ispettore Goto (En -2). Ora deve chiedergli un favore.
+**Situazione**: Il detective Tanaka ha già avuto un diverbio con l'ispettore Shimizu (En -2). Ora deve chiedergli un favore.
 
-**Giocatore**: "Vado da Goto e gli chiedo accesso ai file riservati."
+**Giocatore**: "Vado da Shimizu e gli chiedo accesso ai file riservati."
 
-**GM**: "Goto ti guarda con sufficienza. Tira Presenza con -2."
+**GM**: "Shimizu ti guarda con sufficienza. Tira Presenza con -2."
 
 **Giocatore** (Presenza 7): "Tiro... dado puro 5. Con il malus fa 7. Esattamente uguale al mio attributo."
 
-**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Goto sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
+**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Shimizu sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
 
 ---
 

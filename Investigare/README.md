@@ -19,7 +19,7 @@ GENKAI è un gioco di ruolo investigativo dove il vero nemico non è l'assassino
 
 **La vita privata irrompe nel caso.** Hai un'ombra — il **Kage**. Debiti, famiglia, errori del passato. Il GM la attiva nei momenti peggiori. La tua ex chiama mentre stai interrogando un sospettato. Il tuo creditore si presenta sulla scena del crimine.
 
-**Un dono che costa caro.** Ogni personaggio ha il **Gou** — un talento straordinario. Senti le bugie. Visualizzi gli eventi passati. Calmi chiunque. Ma ogni volta che lo usi, paghi. 2 Ki. E il Ki non torna facilmente.
+**Un dono che costa caro.** Ogni personaggio ha il **Gou** — un talento straordinario. Senti le bugie. Visualizzi gli eventi passati. Calmi chiunque. Ma ogni volta che lo usi, paghi — 2, 3 o 4 Ki. E il Ki non torna facilmente.
 
 **Le relazioni hanno peso meccanico.** I PNG non sono pedine — hanno un valore di **En** con ogni personaggio. Chi ti odia ti ostacola. Chi ti ama ti aiuta. Ma se abusi della loro fiducia, il legame si deteriora.
 

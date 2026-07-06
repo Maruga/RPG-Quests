@@ -27,11 +27,12 @@
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
+> - Poi tira **2d6** e prendi il dado **più basso**: punti bonus extra da distribuire liberamente
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
@@ -43,7 +44,7 @@
 
 > *情けは人の為ならず — "La compassione non è solo per gli altri."*
 
-Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
 
 - Contiene al massimo **1 Ki**
 - **Non si usa su se stessi** — si dona a un altro PG interpretando la scena

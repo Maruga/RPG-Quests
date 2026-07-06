@@ -9,7 +9,7 @@
 |-------|--------|
 | **Nome completo** | Taniguchi Kenji (谷口 健二) |
 | **Ruolo** | Commissario, Sezione Omicidi, Polizia Prefetturale di Kyoto |
-| **Grado** | Keibu (警部) — Commissario |
+| **Grado** | Keishi (警視) — Commissario |
 | **Età** | 56 anni (nato ~1941) |
 | **Stato** | Vivo — SUPERIORE DEI PG |
 
@@ -258,7 +258,7 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 | **Ascolto** | 5 | Più comandante che ascoltatore — delega l'ascolto ai suoi |
 | **Presenza** | 8 | Riempie la stanza senza alzare la voce |
 
-> **Distribuzione**: base 4 × 6 = 24, +12 punti +3 bonus (d6) = 39 totale
+> **Distribuzione**: base 4 × 6 = 24, +12 punti +5 bonus (d6) = 41 totale
 
 ### Ki 気
 
@@ -267,11 +267,11 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 ### Gou 業
 
 **Voce del Tuono** 雷の声
-*La tua presenza diventa schiacciante. Il PNG sente il peso della tua autorità.*
+*Esplosione di autorità in un momento preciso. Una frase, uno sguardo. Interruzione totale.*
 - **Attributo**: Presenza (8)
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ 8): Il PNG è completamente sottomesso, cede o si ritira
-- **Fallimento**: Il PNG è intimidito e scosso, ma non cede completamente
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ 8): Il PNG si ferma — qualche secondo di sottomissione assoluta, perde il filo di quello che stava facendo o dicendo
+- **Fallimento**: Il PNG esita, perde il filo per un istante
 
 > Taniguchi non usa il Gou spesso — non ne ha bisogno. Ma quando lo fa, è devastante. Non urla: abbassa la voce, fissa negli occhi, e il peso di trent'anni di carriera si abbatte sul bersaglio.
 
@@ -282,9 +282,9 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 
 | Azione | Descrizione |
 |--------|-------------|
-| **Mandati** | Può ottenerli entro 24 ore con motivazione solida |
+| **Mandati** | Può ottenerli in 24-48 ore con motivazione solida (12 ore in urgenza) |
 | **Rinforzi** | Può assegnare agenti extra se necessario |
-| **Sorveglianza** | Può autorizzare pedinamenti e intercettazioni telefoniche |
+| **Sorveglianza** | Può autorizzare pedinamenti e appostamenti (le intercettazioni telefoniche non sono legali nel Giappone del 1997 — vedi *Quadro Legale*, Manuale GM) |
 | **Protezione testimoni** | Può organizzare protezione temporanea |
 | **Pressione istituzionale** | Può forzare cooperazione da altre istituzioni (ospedali, tribunali, banche) |
 | **Blocco informazioni** | Può tenere i media lontani per un tempo limitato |

@@ -323,7 +323,7 @@ PG_DATA = [
         "name": "NAKAMURA Shota",
         "age": "38",
         "role": "Specialista Interrogatori",
-        "rank": "Sergente Capo (Keibu-ho)",
+        "rank": "Ispettore (Keibu-ho)",
         "years": "14",
         "attrs": [
             ("Distacco", "4", "Normale"),

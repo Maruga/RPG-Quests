@@ -93,7 +93,7 @@ Non definire tutto in dettaglio adesso. **Nomina e posiziona.** Il dettaglio arr
 
 > **Esempio — il professore di chimica**:
 > - Famiglia: moglie, due figli adulti fuori casa. Rapporto con la moglie formalmente stabile ma freddo da anni.
-> - Lavoro: Università di Kyoto, dipartimento di scienze, 25 anni di carriera. Tre colleghi diretti, un assistente di ricerca giovane (Kuroda), uno studente di dottorato (Tanaka).
+> - Lavoro: Università di Kyoto, dipartimento di scienze, 25 anni di carriera. Tre colleghi diretti, un assistente di ricerca giovane (Kuroda), una dottoranda (Tanaka).
 > - Amici: un vecchio amico d'infanzia ora commerciante, un collega di un altro dipartimento con cui gioca a golf il sabato.
 > - Luoghi: appartamento a Sakyo-ku, ufficio al terzo piano del dipartimento, laboratorio al piano terra, un izakaya vicino all'università dove va il venerdì sera.
 > - Problemi: da sei mesi una disputa con il collega Hashimoto sulla paternità di una ricerca. È al corrente di qualcosa che riguarda il suo assistente Kuroda — qualcosa di irregolare nei fondi di ricerca — ma non ha ancora deciso se agire.
@@ -139,7 +139,7 @@ Se nessuno nel cast ha quel motivo in modo credibile, hai due opzioni:
 Il colpevole può essere anche più di uno — complicità, coperture, interessi sovrapposti. Nella realtà funziona spesso così.
 
 > **Esempio — il professore di chimica**:
-> Il colpevole è Kuroda. 27 anni, assistente di ricerca, terzo anno di dottorato. Ha usato 800.000 yen di fondi di ricerca per pagare i debiti di gioco del padre. Sa esattamente come funziona un laboratorio di chimica. Sa quali reagenti sono disponibili, sa come non lasciare tracce evidenti, sa che il professore beve un tè verde ogni mattina prima di arrivare gli studenti.
+> Il colpevole è Kuroda. 27 anni, assistente di ricerca, terzo anno di dottorato. Ha usato 800.000 yen di fondi di ricerca per pagare i debiti di gioco del padre. Sa esattamente come funziona un laboratorio di chimica. Sa quali reagenti sono disponibili, sa come non lasciare tracce evidenti, sa che il professore beve un tè verde ogni mattina prima che arrivino gli studenti.
 >
 > L'elemento chiave: Kuroda è esperto di chimica — ma di chimica organica, non di tossicologia. Ha usato un composto che conosceva dal laboratorio, pensando di essere furbo. Non sapeva che lasciava tracce nel sangue rilevabili con un'analisi tossicologica standard. Questo è l'errore coerente con chi è.
 
@@ -192,7 +192,7 @@ Scrivi in modo asciutto. Questa è documentazione interna, non narrativa. Deve e
 >
 > **Due settimane fa**: Kuroda capisce che il professore sta documentando le irregolarità. Inizia a pianificare. Accede al database universitario dei reagenti chimici usando il suo badge.
 >
-> **Martedì scorso**: Kuroda arriva in laboratorio alle 6:30 — un'ora prima del solito. Aggiunge il composto al thermos del tè del professore, che sta sulla scrivania e viene preparato ogni mattina dalla segretaria. Esce alle 6:55. Il badge registra l'entrata e l'uscita.
+> **Martedì scorso**: Kuroda arriva in laboratorio alle 6:30 — un'ora prima del solito. Aggiunge il composto al barattolo del tè verde nell'ufficio del professore — quello da cui la segretaria, ogni mattina, prepara il thermos che gli lascia sulla scrivania. Esce alle 6:55. Il badge registra l'entrata e l'uscita.
 >
 > **Martedì mattina, ore 8:15**: Il professore arriva, beve il tè, inizia a lavorare. Muore verso le 9:30 in apparente arresto cardiaco. Il primo a trovarlo è Tanaka.
 >
@@ -530,7 +530,7 @@ Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rileva
 | Perquisizione di un luogo | Organico |
 | Ricerca in archivi e banche dati | Risorse |
 | Analisi forense su un reperto | Efficienza |
-| Intercettazione telefonica o ambientale | Risorse |
+| Intercettazione telefonica o ambientale (in Giappone 1997: illegale) | Risorse |
 | Raccolta informazioni su un soggetto | Rete |
 | Supporto ad arresto | Organico |
 | Verifica di un documento o identità | Efficienza |
@@ -846,7 +846,7 @@ Note: La Procura non è un ente operativo — non pedina, non perquisisce, non a
 | Azione | Motivo |
 |--------|--------|
 | Perquisizione di proprietà privata | Tutela del domicilio |
-| Intercettazione telefonica o ambientale | Tutela della privacy |
+| Intercettazione telefonica o ambientale | Tutela della privacy (in Giappone 1997: illegale, non autorizzabile) |
 | Accesso a cartelle cliniche | Segreto medico |
 | Sequestro di documenti bancari | Segreto bancario |
 | Sequestro di documenti aziendali | Tutela della proprietà |
@@ -867,7 +867,7 @@ Note: La Procura non è un ente operativo — non pedina, non perquisisce, non a
 I PG passano dalla Procura quando hanno bisogno di:
 
 - **Mandato di perquisizione** — appartamento, ufficio, veicolo, magazzino
-- **Autorizzazione a intercettazioni** — telefoniche o ambientali
+- **Autorizzazione a intercettazioni** — telefoniche o ambientali (in Giappone 1997: illegali — vedi *Quadro Legale*, Manuale GM)
 - **Accesso a cartelle cliniche** — protette dal segreto medico
 - **Sequestro di documenti** — bancari, aziendali, personali
 - **Ordine di custodia cautelare** — fermo di un sospettato
@@ -879,7 +879,7 @@ Il tiro sulla Procura non rappresenta la competenza degli investigatori — rapp
 | Richiesta | Attributo |
 |-----------|-----------|
 | Mandato di perquisizione | Efficienza |
-| Autorizzazione intercettazioni | Risorse |
+| Autorizzazione intercettazioni (in Giappone 1997: illegali, nessun magistrato può concederle) | Risorse |
 | Accesso a cartelle cliniche | Efficienza |
 | Sequestro documenti bancari/aziendali | Efficienza |
 | Ordine di custodia cautelare | Rete |
@@ -890,7 +890,7 @@ Il tiro sulla Procura non rappresenta la competenza degli investigatori — rapp
 
 > **Esempio**: I PG vogliono perquisire l'appartamento di un sospettato. Hanno prove indiziarie ma niente di schiacciante. Passano attraverso la Questura che inoltra la richiesta alla Procura. Il GM tira su Efficienza (7) della Procura. Difficoltà: 0 (prove nella media). Dado: 8. Fallimento leggero — il magistrato chiede prove più solide prima di firmare. I PG devono tornare con qualcosa di concreto, oppure aspettare e riprovare. Se avessero avuto le impronte del sospettato sulla scena, il GM avrebbe potuto dare +2 alla situazione.
 
-> **Esempio in Giappone**: Nel sistema giapponese del 1997, il 検事 (kenji, procuratore) ha un potere significativo. La Procura può trattenere un sospettato fino a 23 giorni senza processo (il *daiyo kangoku* del Manuale GM). Ottenere un prolungamento della custodia è un tiro sulla Procura — e in Giappone la Procura è tendenzialmente favorevole alle richieste della polizia. Il GM può riflettere questo con un bonus situazionale di +1 o +2.
+> **Esempio in Giappone**: Nel sistema giapponese del 1997, il 検事 (kenji, procuratore) ha un potere significativo. La Procura può trattenere un sospettato fino a 23 giorni senza processo (vedi la cronologia del fermo e il sistema del *daiyo kangoku* nel Manuale GM). Ottenere un prolungamento della custodia è un tiro sulla Procura — e in Giappone la Procura è tendenzialmente favorevole alle richieste della polizia. Il GM può riflettere questo con un bonus situazionale di +1 o +2.
 
 > **Per il quadro legale completo** — tempistiche del fermo, diritti del sospettato, cosa è legale e cosa no nel Giappone del 1997, conseguenze delle violazioni — vedi la sezione *"Il Quadro Legale — Giappone 1997"* nel Manuale del Game Master.
 
@@ -1062,7 +1062,7 @@ Non dai cinquanta nomi. Dai una lista con informazioni già integrate per ogni p
 
 - Nome
 - Relazione con la vittima o con l'evento — due parole (collega, vicino di casa, ex socio)
-- Eventuale nota — "non si presentato", "ha lasciato prima della fine", "unico estraneo al gruppo"
+- Eventuale nota — "non si è presentato", "ha lasciato prima della fine", "unico estraneo al gruppo"
 
 Alcune note sono neutre. Alcune aprono una domanda. I giocatori decidono chi seguire — ma lo decidono con informazioni, non al buio.
 

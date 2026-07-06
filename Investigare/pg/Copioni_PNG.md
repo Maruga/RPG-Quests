@@ -236,4 +236,4 @@ La tensione è il punto. Senza tensione, la scena non funziona.
 
 ---
 
-> **Nota**: I copioni per i PNG ricorrenti (Taniguchi, Yamada, Ito) si trovano in `Investigare/png/Copioni_PNG.md`.
+> **Nota**: I copioni per i PNG ricorrenti (Taniguchi, Yamada, Ito) si trovano in `Investigare/png notevoli/Copioni_PNG.md`.

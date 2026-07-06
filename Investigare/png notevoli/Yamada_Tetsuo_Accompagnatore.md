@@ -74,14 +74,14 @@ Taniguchi lo rispetta. "Yamada è un bravo poliziotto." Per un uomo di poche par
 | Scena del crimine (caso corrente) | **DIRETTO** — è tra i primi ad arrivare, osserva con occhio da poliziotto |
 | Dettagli dell'indagine | Solo quello che vede e sente con i PG — non ha informazioni autonome |
 
-> **Nota per il GM**: I dettagli specifici di cosa Yamada sa e osserva in ogni avventura sono nelle rispettive schede avventura (es. `Il Giudice/png/Yamada_Tetsuo_Agente_Accompagnatore.md`).
+> **Nota per il GM**: I dettagli specifici di cosa Yamada sa e osserva in ogni avventura sono nei materiali della rispettiva cartella `Avventura .../`.
 
 ---
 
 ## COSA NASCONDE
 
 1. Ha spesso opinioni e osservazioni che non esprime spontaneamente — non vuole influenzare l'indagine né sembrare presuntuoso davanti ai superiori
-2. Ha fallito l'esame per detective due volte. Nessuno lo sa tranne lui e il commissario Taniguchi, che non ne ha mai parlato
+2. Ha fallito l'esame per detective due volte. Non ne parla con nessuno: lo sanno solo il commissario Taniguchi, che non ne ha mai fatto parola, e Miki, che ha trovato le lettere di rifiuto in un cassetto
 3. La vergogna per l'esame fallito è il vero motivo per cui dice di "amare la strada" — è vero, ma è anche una giustificazione
 
 ---
@@ -119,19 +119,19 @@ Il problema: Miki vuole che riprovi l'esame. Tu hai paura di fallire una terza v
 
 ## CONOSCENZA (ENJA 縁者)
 
-### KATO Jiro — Proprietario di izakaya, ex informatore
+### OKUDA Jiro — Proprietario di izakaya, ex informatore
 
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Proprietario dell'izakaya "Tsukimi" a Gion, ex informatore della polizia |
 | **Età** | 58 anni |
-| **Relazione** | Lo conosce da anni, si fidano a vicenda. Kato è uscito dal giro ma conosce ancora tutti |
+| **Relazione** | Lo conosce da anni, si fidano a vicenda. Okuda è uscito dal giro ma conosce ancora tutti |
 | **Cosa può fare** | Voci dalla strada, informazioni sui movimenti nel quartiere, contatti con gente che non parla con la polizia |
 | **Cosa vuole in cambio** | Che la polizia non ficchi il naso nel suo locale. Ha smesso, ma non vuole che qualcuno scavi nel passato |
 
 **Come contattarlo**: Di persona, al locale. Non al telefono — "le pareti hanno orecchie".
 
-**Limite**: Una volta per sessione senza conseguenze. La seconda volta, Kato si innervosisce: "Yamada, stai attirando troppa attenzione su di me."
+**Limite**: Una volta per sessione senza conseguenze. La seconda volta, Okuda si innervosisce: "Yamada, stai attirando troppa attenzione su di me."
 
 ---
 
@@ -358,6 +358,4 @@ Le dà con rispetto e cautela. "Se posso permettermi..." Le sue osservazioni son
 Yamada appare in tutte le avventure della serie Investigare. Man mano che i PG lo conoscono, il rapporto si approfondisce. Nelle avventure successive può essere più propositivo, offrire opinioni con meno esitazione, o mostrare preoccupazione per i PG. Resta sempre un passo indietro, ma diventa progressivamente un compagno fidato.
 
 ### Dettagli specifici per avventura
-Le osservazioni specifiche di Yamada sulla scena del crimine, i dettagli del caso che conosce e le sue reazioni ai PNG di ogni avventura sono documentati nei file avventura:
-- **Il Giudice**: `Il Giudice/png/Yamada_Tetsuo_Agente_Accompagnatore.md`
-- **Ultima Cena**: Sezione PNG istituzionali in `Ultima Cena/Storia Completa.md`
+Le osservazioni specifiche di Yamada sulla scena del crimine, i dettagli del caso che conosce e le sue reazioni ai PNG di ogni avventura sono documentati nei materiali della rispettiva cartella `Avventura .../`.

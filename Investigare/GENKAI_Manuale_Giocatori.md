@@ -102,7 +102,7 @@ Il Ki è lo stato complessivo del tuo personaggio: fisico, mentale, emotivo tutt
 ### A cosa serve il Ki
 
 - **Assorbire i colpi peggiori** — quando un dado dice che qualcosa ti segna nel profondo, puoi perdere Ki invece di perdere un punto attributo permanente
-- **Pagare il tuo potere speciale** (il Gou) — ogni volta che lo usi, costi 2 Ki
+- **Pagare il tuo potere speciale** (il Gou) — ogni volta che lo usi, paghi il suo costo in Ki (2, 3 o 4 a seconda del Gou)
 - **Aiutare un compagno** — puoi sacrificare 1 Ki per supportare un collega in difficoltà
 
 ### Il Ki si recupera — Il Soroban 算盤
@@ -342,7 +342,7 @@ La tua tranquillità mette le persone a loro agio immediatamente.
 
 ---
 
-**L'Eco della Montagna** 山彦 — L'Eco della Montagna *(Silenzio — 4 Ki)*
+**L'Eco della Montagna** 山彦 *(Silenzio — 4 Ki)*
 Le parole non scompaiono. Nel tuo silenzio, le senti.
 
 Richiede Silenzio ≥ 7. Devi essere fisicamente sul luogo, entro 48 ore dal fatto.
@@ -376,7 +376,7 @@ Dual-attribute: scegli se usare Lucidità (analisi) o Pazienza (attesa che il ri
 
 ---
 
-**La Brace che Resta** 残り火 — La Brace che Resta *(Ascolto o Distacco — 3 Ki)*
+**La Brace che Resta** 残り火 *(Ascolto o Distacco — 3 Ki)*
 Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.
 
 Dual-attribute. Devi essere sul luogo, entro 24-48 ore. Teatro delle Ombre **vede**, L'Eco della Montagna **sente parole**, La Brace che Resta **percepisce emozioni**.
@@ -387,18 +387,20 @@ Dual-attribute. Devi essere sul luogo, entro 24-48 ore. Teatro delle Ombre **ved
 
 ---
 
-**Lo Spirito che Resta** 残心 — Lo Spirito che Resta *(Distacco o Pazienza — 2 Ki)*
+**Lo Spirito che Resta** 残心 *(Distacco o Pazienza — 2 Ki)*
 Lo spirito del samurai che non cede. La consapevolezza che persiste.
 
 Dual-attribute. Attivabile solo a Ki 4 o 5 (vicino al crollo, non ancora in Genkai).
 - Successo: per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli
 - Fallimento: solo il 12 è protetto. L'11 resta Nami negativo
 
+Il costo di attivazione non innesca il Genkai: finché dura la scena resti in piedi anche a Ki ≤ 3 (con successo o fallimento). A fine scena, se il Ki è ancora ≤ 3, il Genkai scatta normalmente.
+
 > **Esempio**: Sei a Ki 4. Il caso è al momento critico. Usi Lo Spirito che Resta con Distacco 7. Tiri 6 — successo. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
 
 ---
 
-**La Risalita della Carpa** 鯉の滝登り — La Risalita della Carpa *(Pazienza o Presenza — 3 Ki)*
+**La Risalita della Carpa** 鯉の滝登り *(Pazienza o Presenza — 3 Ki)*
 Non molli. Mai. La tua pazienza è una forza della natura.
 
 Dual-attribute. L'interrogatorio deve essere in corso da tempo. La Risalita della Carpa è **persistenza** (la storia si sgretola). Pugno di Ferro è **pressione** (il PNG cede al tuo peso).
@@ -409,7 +411,7 @@ Dual-attribute. L'interrogatorio deve essere in corso da tempo. La Risalita dell
 
 ---
 
-**L'Istante della Caduta** 散り際 — L'Istante della Caduta *(Pazienza o Ascolto — 2 Ki)*
+**L'Istante della Caduta** 散り際 *(Pazienza o Ascolto — 2 Ki)*
 Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.
 
 Dual-attribute. Stato di allerta: paghi 2 Ki e ti "armi". Lo stato dura per il resto della giornata in-game. Si attiva automaticamente la prima volta che qualcosa sta per svanire (PNG in fuga, prova in distruzione, finestra che si chiude). Il tiro si fa in quel momento, non all'attivazione.
@@ -713,7 +715,7 @@ Se il magistrato rifiuta, non è la fine — significa che devi trovare altre pr
 
 Il tuo personaggio conosce queste cose. Puoi usarle al tavolo.
 
-**I tempi del fermo**: quando la polizia ferma un sospettato, il conto alla rovescia parte. 48 ore di fermo iniziale, poi il procuratore può chiedere la custodia cautelare al giudice — fino a 10 giorni, prorogabili di altri 10. **Massimo 23 giorni** senza incriminazione formale, poi si rilascia. Ogni giorno che passa senza prove è un giorno perso.
+**I tempi del fermo**: quando la polizia ferma un sospettato, il conto alla rovescia parte. 48 ore di fermo iniziale, poi il caso passa al procuratore che ha 24 ore per decidere (72 ore totali); da lì può chiedere la custodia cautelare al giudice — fino a 10 giorni, prorogabili di altri 10. **Massimo 23 giorni** senza incriminazione formale, poi si rilascia. Ogni giorno che passa senza prove è un giorno perso.
 
 **L'avvocato non assiste all'interrogatorio**: questa è la differenza più grande rispetto a quello che vedi nei film. Nel Giappone del 1997, il sospettato può chiedere un avvocato — ma l'avvocato non entra nella stanza durante l'interrogatorio. Gli interrogatori avvengono a porte chiuse, senza registrazione, senza testimoni. Questo cambia radicalmente come giochi le scene di interrogatorio: hai più libertà, ma anche più responsabilità.
 
@@ -902,7 +904,7 @@ Attributo: max 9, min 4 (se a 4, la perdita va al Ki)
 Ki: mai sopra il valore di inizio sessione
 Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
 
-GOÙ
+GOU
 Costo: 2, 3 o 4 Ki (variabile per Gou)
 Secondo uso nella stessa sessione: costo doppio
 Successo: effetto completo e preciso
@@ -922,10 +924,13 @@ Bonus perso da Kiwami+/Nami+ → conserva 1 Ki
 Max 1, si perde a fine sessione
 Solo donabile a un compagno (giocando la scena)
 
-SUPPORTO
+SUPPORTO (KYŌRYOKU 協力)
 Prima del tiro: +1 attributo dal compagno
-Se fallisci comunque: il compagno perde 1 Ki
-1 supporto per scena per giocatore
+Successo: nessun costo. Fallimento: entrambi -1 Ki
+Nami- (11): chi tira -1 (scelta), compagno -1 Ki
+Kiwami- (12): chi tira -1 attr -1 Ki, compagno -1 Ki
+Ricevi 1 supporto per scena; chi aiuta può aiutare PG diversi
+Non si applica al Gou
 
 GENKAI
 Ki ≤ 3: crisi, fuori gioco temporaneo

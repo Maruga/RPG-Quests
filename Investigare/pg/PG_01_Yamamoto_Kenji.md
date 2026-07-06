@@ -27,11 +27,12 @@
 
 > **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
+> - Poi tira **2d6** e prendi il dado **più basso**: punti bonus extra da distribuire liberamente
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
@@ -43,7 +44,7 @@
 
 > *情けは人の為ならず — "La compassione non è solo per gli altri."*
 
-Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo a 9 — il punto che andrebbe perso viene conservato nel **Nasake**.
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
 
 - Contiene al massimo **1 Ki**
 - **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
@@ -81,6 +82,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Vincolo**: attivabile solo quando sei a Ki 4 o 5
 - **Successo** (2d6 ≤ attributo scelto): Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli
 - **Fallimento**: Solo il 12 è protetto. L'11 resta Nami negativo
+- **Nota**: il costo di attivazione non innesca il Genkai — finché dura la scena resti in piedi anche a Ki ≤ 3 (con successo o fallimento). A fine scena, se il Ki è ancora ≤ 3, il Genkai scatta normalmente
 
 > Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
 
@@ -119,7 +121,7 @@ Sai che Noriko è stanca di coprire i tuoi errori. Sai che il rapporto con Takes
 | **Relazione** | Sorella minore, una volta eravate molto uniti |
 | **Stato attuale** | Frustrata, delusa da te |
 
-**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern..
+**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern.
 
 **Come si comporta**: Non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.
 

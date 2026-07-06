@@ -209,7 +209,8 @@ Si irrigidisce. "I dati sono questi. Se avete un laboratorio migliore del mio, f
 |----------------|-------|
 | Test rapido sul campo | 5-15 minuti |
 | Analisi standard in laboratorio | 24 ore |
-| Analisi complessa (DNA, tossicologia avanzata) | 3-7 giorni |
+| Analisi tossicologica standard | 48 ore |
+| Analisi complessa (DNA, tossicologie rare) | 3-7 giorni |
 | Confronto campioni | 1-2 ore se i campioni sono disponibili |
 
 ### Domande/situazioni chiave e risposte
@@ -275,9 +276,9 @@ Linguaggio tecnico ma comprensibile. Frasi corte e dichiarative. Non usa mai con
 **Occhio della Gru** 鶴の目
 *Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità (8)
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ 8): Noti il dettaglio nascosto e ne capisci immediatamente il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ 8): Trovi il dettaglio nascosto e capisci in che direzione punta
+- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
 
 > Ito non lo chiama così. Per lui è semplicemente "fare il mio lavoro". Ma quando si china su una prova e dice "Interessante...", quello è il momento in cui il Gou si attiva. Vede la fibra fuori posto, la composizione anomala, il segno che non dovrebbe esserci.
 

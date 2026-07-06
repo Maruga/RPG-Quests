@@ -301,7 +301,7 @@ def genera_scheda(d, output_filename, image_path=None):
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = INDENT
     add_run(p, "5 punti da distribuire ", size=9, bold=True, color=GRAY)
-    add_run(p, "(max 2 per attributo, max 8)", size=9, color=GRAY)
+    add_run(p, "(max 2 per attributo) + 2d6 prendi il dado più basso come bonus — max 8", size=9, color=GRAY)
 
     add_separator(doc)
 
@@ -316,11 +316,11 @@ def genera_scheda(d, output_filename, image_path=None):
     p = c_ki.paragraphs[0]
     p.paragraph_format.space_after = Pt(3)
     add_run(p, "気", size=12, color=GOLD)
-    add_run(p, "  KI  — Tenuta", size=10, bold=True, color=NAVY)
+    add_run(p, "  KI  — Energia Vitale", size=10, bold=True, color=NAVY)
     p = c_ki.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     add_run(p, "Ki Max: ________    ", size=11, bold=True, color=NAVY)
-    add_run(p, "attributo più basso +2d6 valore più basso, 1 si ritira", size=8, italic=True, color=DARK_RED)
+    add_run(p, "attributo più basso +2d6 prendi il dado più alto, 1 si ritira", size=8, italic=True, color=DARK_RED)
     p = c_ki.add_paragraph()
     add_run(p, "Ki attuale: ________________ ", size=11, bold=True, color=NAVY)
     add_run(p, "≤3 Genkai", size=9, italic=True, color=DARK_RED)
@@ -525,7 +525,7 @@ PG_01 = {
     "gou_2_successo": "2-3 momenti chiave come sagome sbiadite, nell'ordine giusto, con vuoti. Non volti, non dettagli",
     "gou_2_fallimento": "Un singolo momento congelato — una sagoma, una posizione, senza prima né dopo",
     "gou_3_nome": "Lo Spirito che Resta 残心",
-    "gou_3_desc": "La consapevolezza che persiste dopo l'azione. Lo spirito del samurai che non cede.",
+    "gou_3_desc": "Lo spirito del samurai che non cede. Attivabile solo a Ki 4-5; il costo non innesca il Genkai: si verifica a fine scena.",
     "gou_3_attributo": "Distacco o Pazienza (dual)",
     "gou_3_costo": "2 Ki",
     "gou_3_successo": "Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli",
@@ -632,7 +632,7 @@ PG_03 = {
     "nome_romanizzato": "NAKAMURA Shota",
     "eta": "38",
     "ruolo": "Specialista Interrogatori",
-    "grado": "Sergente Capo (Keibu-ho)",
+    "grado": "Ispettore (Keibu-ho)",
     "servizio": "14 anni",
     "distacco_base": "4", "pazienza_base": "7", "silenzio_base": "5",
     "lucidita_base": "4", "ascolto_base": "7", "presenza_base": "4",

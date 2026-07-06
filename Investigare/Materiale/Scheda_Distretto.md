@@ -24,12 +24,12 @@ Schede personaggio complete in `pg/`. Schermata sintetica:
 ### PG_02 — HONDA Ryota (本田 涼太) — Analista Scena del Crimine
 - **Età**: 35 | **Grado**: 巡査部長 Junsa-bucho (Sergente) | **Servizio**: 10 anni
 - **Ruolo**: Lettura della scena, repertazione, ricostruzione fisica dell'evento
-- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 4 / Lucidità 7 / Ascolto 4 / Presenza 4
-- **Forte di**: Lucidità (osservazione brillante), Distacco (freddo sulla scena)
+- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 4 / Lucidità 7 / Ascolto 4 / Presenza 6
+- **Forte di**: Lucidità (osservazione brillante), Distacco (freddo sulla scena), Presenza (sicuro di sé)
 - **Debole di**: Pazienza (impulsivo, cerca scorciatoie)
 
 ### PG_03 — NAKAMURA Shota (中村 翔太) — Specialista Interrogatori
-- **Età**: 38 | **Grado**: 警部補 Keibu-ho (Sergente Capo) | **Servizio**: 14 anni
+- **Età**: 38 | **Grado**: 警部補 Keibu-ho (Ispettore) | **Servizio**: 14 anni
 - **Ruolo**: Conduzione di interrogatori, lettura delle bugie, gestione di testimoni difficili
 - **Attributi base**: Distacco 4 / Pazienza 7 / Silenzio 5 / Lucidità 4 / Ascolto 7 / Presenza 4
 - **Forte di**: Pazienza (può aspettare ore), Ascolto (sente le bugie), Silenzio (sa quando tacere)
@@ -37,7 +37,7 @@ Schede personaggio complete in `pg/`. Schermata sintetica:
 ### PG_04 — SATO Yuki (佐藤 勇気) — Tecnico Analisi Tracce
 - **Età**: 27 | **Grado**: 巡査長 Junsa-cho (Agente Scelto) | **Servizio**: 3 anni
 - **Ruolo**: Tracce fisiche, rapporti tecnici, dialogo con la Scientifica e il laboratorio
-- **Attributi base**: Distacco 4 / Pazienza 6 / Silenzio 4 / Lucidità 7 / Ascolto 5 / Presenza 4
+- **Attributi base**: Distacco 4 / Pazienza 6 / Silenzio 4 / Lucidità 7 / Ascolto 5 / Presenza 5
 - **Forte di**: Lucidità (mente analitica), Pazienza (metodico, preciso)
 - **Debole di**: Distacco (si fa coinvolgere troppo), Silenzio (parla quando è nervoso)
 
@@ -87,7 +87,7 @@ Personale capillare nei distretti subordinati più riserva centrale al QG. La sp
 Buona qualità di esecuzione standard. Laboratori scientifici disponibili (di norma esterni — ospedali prefetturali, università di medicina, centri analisi tossicologica).
 
 ### Velocità (6)
-Standard burocratico giapponese. Tempi medi orientativi: 24–48 ore per analisi forensi su reperti fisici, 48–72 ore per trasferimenti interdistrettuali, 12–24 ore per acquisizione tabulati.
+Standard burocratico giapponese. Tempi medi orientativi: 12–48 ore per analisi forensi su reperti fisici (impronte 12, tossicologia 48), 48–72 ore per trasferimenti interdistrettuali, 24 ore per acquisizione tabulati (con ordine del PM).
 
 ### Risorse (8) — *Archivio esteso*
 La specializzazione **Archivio esteso** consente accesso rapido a anagrafe prefetturale, registri imprese, precedenti penali, archivi fotografici, banche dati interconnesse: bonus +1 ai tiri su ricerche documentali.
@@ -106,7 +106,7 @@ Presente ma contenuta. Forma narrativa prevalente: omertà interna leggera. Ness
 PNG ricorrenti che operano insieme ai PG in tutte le avventure della serie Investigare. Schede complete in `png notevoli/`.
 
 ### Commissario — Capo Sezione Omicidi
-**TANIGUCHI Kenji** (谷口 健二) — 56 anni, 警部 Keibu (Commissario)
+**TANIGUCHI Kenji** (谷口 健二) — 56 anni, 警視 Keishi (Commissario)
 
 Superiore diretto dei PG. Pragmatico, esigente, protettivo. Non indaga di persona — riceve rapporti, autorizza risorse, gestisce le pressioni esterne (politici, media). Il suo "Bene." vale più di mille parole.
 
@@ -154,12 +154,12 @@ Le operazioni che i PG possono richiedere all'ente, con attributo corrispondente
 | Supporto ad arresto | Organico (8) | — | Operazione singola |
 | Verifica precedenti penali | Risorse (8) | +1 (Archivio) | 1–2 ore |
 | Ricerca anagrafica di una persona | Risorse (8) | +1 (Archivio) | 2–4 ore |
-| Acquisizione tabulati telefonici | Risorse (8) | +1 (Archivio) | 24–48 ore + autorizzazione |
+| Acquisizione tabulati telefonici | Risorse (8) | +1 (Archivio) | 24 ore + ordine del PM |
 | Acquisizione filmati di sorveglianza | Risorse (8) | +1 (Archivio) | 12–24 ore |
 | Elaborazione digitale di filmato/audio | Efficienza (7) | — | 24–48 ore |
 | Acquisizione documenti commerciali | Risorse (8) | +1 (Archivio) | 24 ore + eventuale mandato |
-| Analisi tossicologica su reperto | Efficienza (7) | — | 24–48 ore (laboratori esterni) |
-| Analisi impronte digitali | Efficienza (7) | — | 24 ore |
+| Analisi tossicologica su reperto | Efficienza (7) | — | 48 ore (laboratori esterni) |
+| Analisi impronte digitali | Efficienza (7) | — | 12 ore |
 | Analisi balistica | Efficienza (7) | — | 48–72 ore |
 | Analisi documentale (grafologia, falsi) | Efficienza (7) | — | 48 ore |
 | Localizzazione di una persona | Rete (7) | — | 4–8 ore |
@@ -206,11 +206,11 @@ Le operazioni che i PG possono richiedere all'ente, con attributo corrispondente
 - Tiro: 2d6 → **5** → 5 ≤ 7 → **Successo**: dossier dettagliato consegnato dopo 7 giorni
 
 ### Esempio 2 — Acquisizione tabulati
-*I PG chiedono i tabulati telefonici di tre utenze nell'ultimo mese.*
+*I PG chiedono i tabulati telefonici di tre utenze nell'ultimo mese (l'ordine del PM è già agli atti).*
 - Operazione: acquisizione tabulati → Attributo **Risorse 8**
 - Bonus: +1 *Archivio esteso*
 - Modificatore: 0
-- Tiro: 2d6 → **3** → **Ottimo**: tabulati arrivano in 36 ore + l'analista evidenzia 4 chiamate sospette
+- Tiro: 2d6 → **3** → **Ottimo**: tabulati arrivano in 16 ore (due terzi del tempo previsto) + l'analista evidenzia 4 chiamate sospette
 
 ### Esempio 3 — Analisi forense con corruzione attiva
 *I PG chiedono analisi su un reperto in un'indagine che tocca la criminalità organizzata.*
@@ -224,7 +224,7 @@ Le operazioni che i PG possono richiedere all'ente, con attributo corrispondente
 - Pre-requisito: mandato del PM **Watanabe** (vedi sua scheda)
 - Tiro Procura: Attributo Efficienza 7 (mandato di perquisizione)
 - Solidità prove: indiziarie solide → Modificatore **0**
-- Tiro: 2d6 → **6** → 6 ≤ 7 → **Successo**: mandato emesso in 12 ore
+- Tiro: 2d6 → **6** → 6 ≤ 7 → **Successo**: mandato emesso in 24 ore
 - Operazione perquisizione: tiro **Organico 8** + sospettato cauto **-2** = soglia 6
 - Tiro: 2d6 → **4** → 4 ≤ 6 → **Successo**: la squadra esegue, materiale repertato
 

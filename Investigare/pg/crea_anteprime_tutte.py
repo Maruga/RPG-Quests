@@ -86,7 +86,7 @@ PG_03 = {
     "nome_romanizzato": "NAKAMURA Shota",
     "eta": "38",
     "ruolo": "Specialista Interrogatori",
-    "grado": "Sergente Capo (Keibu-ho)",
+    "grado": "Ispettore (Keibu-ho)",
     "servizio": "14 anni",
     "distacco_base": "4", "pazienza_base": "7", "silenzio_base": "5",
     "lucidita_base": "4", "ascolto_base": "7", "presenza_base": "4",

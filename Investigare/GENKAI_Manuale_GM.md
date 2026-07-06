@@ -55,7 +55,7 @@ Yamada racconta la situazione in modo asciutto e professionale. Chi è la vittim
 
 Interpreta Yamada mentre parla: il taccuino in mano, voce calma, sguardo serio. Se i PG fanno domande che non rientrano nel briefing iniziale, Yamada risponde con quello che sa — e dice chiaramente quando non sa.
 
-> **Esempio**: *"Buongiorno. Il corpo è stato trovato questa mattina alle 6:47 dal portiere dell'edificio. Terzo piano, appartamento 12. Uomo, 58 anni, Morita Ichiro, commercialista. La morte risale a ieri sera, tra le 22 e mezzanotte secondo la stima preliminare. Non ci sono segni evidenti di effrazione. Il portiere ha chiamato il 119 — vi lascio la trascrizione. Ito-san è già sul posto con la squadra."*
+> **Esempio**: *"Buongiorno. Il corpo è stato trovato questa mattina alle 6:47 dal portiere dell'edificio. Terzo piano, appartamento 12. Uomo, 58 anni, Maeda Ichiro, commercialista. La morte risale a ieri sera, tra le 22 e mezzanotte secondo la stima preliminare. Non ci sono segni evidenti di effrazione. Il portiere ha chiamato il 119 — vi lascio la trascrizione. Ito-san è già sul posto con la squadra."*
 
 ## 2. I Materiali Iniziali
 
@@ -511,7 +511,7 @@ Non è il GM che decide arbitrariamente. Gli indizi diventano prove quando **si 
 ## Cosa preparare come GM
 
 Quando costruisci la situazione, per ogni sospettato chiave definisci:
-- **Quali indizi esistono** nella realtà (li hai già nel Passo 9 del metodo)
+- **Quali indizi esistono** nella realtà (li hai già nel Passo 9 del metodo — vedi *Manuale Situazioni*)
 - **Quale combinazione basta** per arrivare al livello 3 (prova indiziaria — mandato)
 - **Quale combinazione basta** per arrivare al livello 4 (prova diretta — fermo)
 - **Quale combinazione chiude il caso** (livello 5)
@@ -715,9 +715,9 @@ Il PG dichiara quale tecnica usa per aprire l'interrogatorio. Fai tirare sull'at
 | Risultato | Effetto |
 |-----------|---------|
 | Successo | En temporaneo +1 per questo interrogatorio |
-| Kiwami (dado puro = 2) | En temporaneo +2 |
+| Kiwami positivo (dado puro = 2) | En temporaneo +2 |
 | Fallimento | En resta invariato |
-| Nami (dado puro = 12) | En temporaneo -1 (l'interrogato capisce la manipolazione) |
+| Kiwami negativo (dado puro = 12) | En temporaneo -1 (l'interrogato capisce la manipolazione) |
 
 Il setup richiede tempo narrativo — minuti di conversazione, non secondi. Non è un tiro e via.
 
@@ -738,7 +738,7 @@ Più successi consecutivi = l'interrogato si apre progressivamente. Un falliment
 
 A En molto negativo, lo shift è quasi sempre temporaneo. Un nemico giurato non diventa amico in 10 minuti.
 
-A En molto positivo, attenzione: un Nami su un alleato può danneggiare l'En **permanentemente** — il PNG si sente tradito dalla manipolazione.
+A En molto positivo, attenzione: un Kiwami negativo (dado puro 12) su un alleato può danneggiare l'En **permanentemente** — il PNG si sente tradito dalla manipolazione.
 
 ### Permanenza dell'En Temporaneo
 
@@ -877,7 +877,7 @@ I PNG Notevoli sono le figure ricorrenti della serie — persone che i PG incont
 
 Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i propri problemi, le proprie reazioni. Il rapporto con i PG evolve in base a come vengono trattati.
 
-## I Tre Ruoli Fondamentali
+## I Quattro Ruoli Fondamentali
 
 **Il Superiore** — l'autorità che assegna i casi, protegge la squadra dalle pressioni esterne, pretende risultati. Non indaga ma autorizza risorse. Il suo valore è l'ancora: c'è sempre, dietro la scrivania, con aspettative chiare.
 
@@ -885,7 +885,9 @@ Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i
 
 **L'Accompagnatore** — il braccio destro operativo. Conosce il territorio, facilita tutto, prende nota di tutto. Il PNG con cui i PG passano più tempo — e quindi il più ricco di potenziale narrativo.
 
-## I Tre PNG della Serie Investigare
+**L'Autorità Terza** — il magistrato che autorizza. Non lavora per i PG e non lavora contro: applica un controllo esterno. Il suo valore è il filtro: costringe la squadra a costruire casi solidi prima di muoversi.
+
+## I PNG Fissi della Serie Investigare
 
 ### Taniguchi Kenji — Il Commissario
 
@@ -959,6 +961,31 @@ L'esame fallito due volte non emerge spesso. Ma quando qualcuno — anche innoce
 - *"Se posso permettermi..."*
 - *"Conosco quella zona, signore. Posso portarvi."*
 - *"Non sta a me dirlo, signore. Ma..."*
+
+---
+
+### Watanabe Hideo — Il Procuratore
+
+51 anni. Magistrato del Pubblico Ministero di riferimento per il distretto. Meticoloso, lento per scrupolo, impossibile da forzare. Firma o respinge i mandati valutando solo la solidità delle prove. Non è alleato né ostacolo — è un terzo grado istituzionale.
+
+**Come usarlo al tavolo:**
+
+Di routine è una funzione, non un personaggio in scena: i PG lo sentono via fax, tramite Taniguchi. *"Mandato concesso, ecco le condizioni."* Oppure: *"Mandato respinto, ecco le motivazioni."*
+
+Entra in scena solo nei casi importanti, quando Taniguchi porta i PG a sostenere di persona una richiesta delicata. Incontri brevi, formali, con conseguenze concrete.
+
+**Il suo Kage al tavolo:**
+
+Il dossier sul giudice Maezawa non emerge di routine — esiste come profondità del personaggio. Ma se un caso tocca Maezawa, direttamente o indirettamente, Watanabe può diventare un alleato improvviso. È una carta da tenere in serbo per le campagne lunghe.
+
+**Frasi tipiche:**
+- *"Lo valuterò."*
+- *"Mi mostri le prove. Non mi mostri le sue convinzioni."*
+- *"La motivazione è insufficiente."*
+- *"Procederò nei tempi tecnici."*
+- *"Vi sconsiglio di insistere allo stato attuale."*
+
+Scheda completa: `png notevoli/Watanabe_Hideo_Procuratore.md`.
 
 ## Come Evolvono nel Tempo
 
