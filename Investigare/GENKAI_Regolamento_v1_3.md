@@ -888,57 +888,11 @@ Quando i PG **delegano** un'operazione (pedinamento, analisi forense, ricerca d'
 
 # COMBATTIMENTO
 
-Il combattimento è **raro e pericoloso**. I PG non sono combattenti - se c'è una sparatoria, la cosa intelligente è chiamare rinforzi o scappare.
+Il combattimento è **raro e pericoloso**. I PG non sono combattenti — se c'è una sparatoria, la cosa intelligente è chiamare rinforzi o scappare.
 
-## Meccanica
+Quando lo scontro è inevitabile, le regole complete — iniziativa, attacco e difesa a margini, armi, coperture, raffiche e fuoco di copertura, esplosivi — sono nel modulo **`GENKAI_Combattimento.md`** (*Lo Scontro — Shōtotsu 衝突*).
 
-1. Il PNG attacca → il PG sceglie l'attributo in base alla sua reazione
-2. Il GM assegna bonus/malus in base alla situazione
-3. Il PG tira 2d6 ≤ attributo (modificato)
-4. **Successo**: eviti/gestisci senza conseguenze
-5. **Fallimento**: perdi Ki in base alla pericolosità dell'attacco
-
-> **Nota**: Nami e Kiwami **non** si applicano al combattimento — un 2 è solo un successo, un 12 è solo un fallimento (vedi *Ambito* nella sezione Meccanica Base dei Tiri). Il combattimento costa Ki, non tocca gli attributi.
-
----
-
-## Pericolosità degli Attacchi
-
-| Attacco | Costo fallimento |
-|---------|------------------|
-| Pugno, spinta, schiaffo | -1 Ki |
-| Calcio violento, colpo con oggetto | -2 Ki |
-| Morso di cane, coltello | -3 Ki |
-| Arma da fuoco, colpo letale | -4 Ki o fuori gioco |
-
----
-
-## Bonus/Malus Situazionali
-
-| Situazione | Modificatore |
-|------------|--------------|
-| Attaccante ubriaco, anziano, maldestro | +2 |
-| Attaccante normale, civile arrabbiato | 0 |
-| Attaccante addestrato, cane aggressivo | -2 |
-| Attaccante professionista, yakuza | -3 |
-| Killer, sicario, animale feroce | -4 |
-
----
-
-## Attributi per Azione
-
-| Azione | Attributo | Quando usarlo | Esempio |
-|--------|-----------|---------------|---------|
-| Schivare, spostarsi | **Lucidità** | Vedi arrivare il colpo, reagisci | Ti butti dietro la scrivania prima che spari |
-| Incassare, resistere | **Silenzio** | Solo colpi non letali | Prendi lo schiaffo senza reagire |
-| Intimidire per fermare | **Presenza** | Provi a bloccare l'aggressore | "Fermo. Polizia." Lo guardi negli occhi |
-| Aspettare il momento | **Pazienza** | Ti ripari, cerchi un'apertura | Resti immobile, aspetti che si distragga |
-| Non farti coinvolgere | **Distacco** | Ti allontani, non è affar tuo | Ti defili dalla rissa senza farti notare |
-| Percepire il pericolo | **Ascolto** | Situazioni speciali | Bendato, senti i passi avvicinarsi |
-
-**Regola importante**: Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco. Solo Lucidità (schivi), Pazienza (ti ripari), o fuggi.
-
-> **Esempio**: Un teppista ti tira un pugno (situazione normale, 0 modificatore). Scegli di schivare con Lucidità (hai 8). Tiri 2d6: 7. Successo, ti sposti e il pugno non ti prende. Se avessi tirato 9, avresti preso il pugno e perso 1 Ki.
+L'essenziale: attaccante e difensore tirano 2d6 ≤ attributo e confrontano i **margini**; il danno (margine + arma − assorbimento) si perde in **Ki**. Niente Nami né Kiwami: il combattimento costa Ki, non tocca gli attributi né il soroban. Coltelli e proiettili non si incassano. Un'arma da fuoco può mettere fuori gioco: la fuga è quasi sempre la risposta giusta.
 
 ---
 
@@ -1096,35 +1050,7 @@ Il tetto resta **9**.
 
 ---
 
-## Esempio 3: Combattimento
-
-**Situazione**: Un sospettato cerca di fuggire e attacca il detective Sato.
-
-**GM**: "Ueda ti spinge contro il muro e ti tira un pugno. È un civile arrabbiato, nessun addestramento. Come reagisci?"
-
-**Giocatore**: "Provo a schivare, uso Lucidità."
-
-**GM**: "Ok, nessun modificatore. Tira."
-
-**Giocatore** (Lucidità 7): "Ho fatto 10. Fallimento."
-
-**GM**: "Il pugno ti prende in pieno. -1 Ki per il danno. Sei a quanto?"
-
-**Giocatore**: "Ero a 6, ora sono a 5."
-
-**GM**: "Ti sta venendo addosso di nuovo. Cosa fai?"
-
-**Giocatore**: "Uso Presenza per fermarlo. Gli grido 'FERMO! POLIZIA!'"
-
-**GM**: "Tira Presenza."
-
-**Giocatore** (Presenza 8): "Ho fatto 5. Successo."
-
-**GM**: "Si blocca. Vede la tua espressione, sente l'autorità nella tua voce. Le mani gli tremano. 'Io... io non volevo...' Inizia a crollare."
-
----
-
-## Esempio 4: Genkai
+## Esempio 3: Genkai
 
 **Situazione**: Il detective Kimura ha avuto una sessione difficile. È sceso a Ki 3.
 
@@ -1144,7 +1070,7 @@ Il tetto resta **9**.
 
 ---
 
-## Esempio 5: Relazione con PNG
+## Esempio 4: Relazione con PNG
 
 **Situazione**: Il detective Honda ha già avuto un diverbio con l'ispettore Shimizu (En -2). Ora deve chiedergli un favore.
 
@@ -1158,7 +1084,7 @@ Il tetto resta **9**.
 
 ---
 
-## Esempio 6: Il Gou in Azione
+## Esempio 5: Il Gou in Azione
 
 **Situazione**: Il detective Sato ha il Gou "Teatro delle Ombre". È sulla scena di un incidente stradale sospetto.
 
@@ -1312,11 +1238,9 @@ Profonde (±4, ±5): cambiano solo narrativamente
 Kiwami (2): En +1 | Kiwami (12): En -1
 Nami (3, 11): NON si applicano ai tiri di En
 
-COMBATTIMENTO
-Pugno: -1 Ki
-Colpo oggetto: -2 Ki
-Coltello: -3 Ki
-Arma da fuoco: -4 Ki o fuori gioco
+COMBATTIMENTO (vedi GENKAI_Combattimento.md)
+Margini contrapposti: danno = margine att. + arma - margine dif.
+Si perde solo Ki. Iniziativa: dado più basso, il tiro è la 1ª azione
 ```
 
 ---

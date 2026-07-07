@@ -872,29 +872,13 @@ Un errore comune è giocare come se il personaggio vedesse sempre le cose con ch
 
 Il combattimento è raro e pericoloso. Se c'è una sparatoria, la risposta intelligente è cercare rinforzi o fuggire. Non siete combattenti.
 
-Quando non potete evitarlo, la meccanica è semplice: il PNG attacca, voi scegliete come reagire in base alla situazione.
+Quando è inevitabile, si usa il modulo **`GENKAI_Combattimento.md`** (*Lo Scontro*). L'essenziale da sapere:
 
-| Reazione | Attributo | Quando |
-|----------|-----------|--------|
-| Schivare, spostarsi | **Lucidità** | Vedi arrivare il colpo |
-| Incassare, resistere | **Silenzio** | Solo colpi non letali |
-| Fermare con autorità | **Presenza** | Provi a bloccare l'aggressore |
-| Aspettare un'apertura | **Pazienza** | Ti ripari, aspetti il momento |
-| Allontanarti | **Distacco** | Ti defili senza farti notare |
-| Percepire il pericolo | **Ascolto** | Situazioni speciali — al buio, senti i passi avvicinarsi |
-
-**Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco.** Solo Lucidità (schivi) o Pazienza (ti ripari).
-
-Se fallisci, perdi Ki in base all'attacco:
-
-| Attacco | Costo |
-|---------|-------|
-| Pugno, spinta | -1 Ki |
-| Colpo violento con oggetto | -2 Ki |
-| Coltello | -3 Ki |
-| Arma da fuoco | -4 Ki o fuori gioco |
-
-Il bonus/malus situazionale dipende dall'aggressore: un ubriaco è più facile da gestire (+2), un professionista molto meno (-3 o -4).
+- **Iniziativa**: 2d6 a testa, agisce prima chi ha il **dado più basso** — e quel tiro è già la tua prima azione
+- **Attacco e difesa**: entrambi tirano 2d6 ≤ attributo; il danno = margine di chi attacca + arma − margine di chi difende. Si perde **Ki**
+- **Difendi come vuoi tu**: schivi (Lucidità), incassi (Silenzio — mai coltelli o proiettili), ti ripari (Pazienza), ti defili (Distacco)
+- Coperture e giubbotti **abbassano il tuo dado** di difesa; buio e fumo alzano quello di chi ti spara
+- Niente Nami né Kiwami: il combattimento costa Ki e basta — e un'arma da fuoco può mettere fuori gioco
 
 ---
 

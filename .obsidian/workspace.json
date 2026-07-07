@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Briefing_Giocatori.md",
+                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Briefing_Giocatori"
+              "title": "GENKAI_Regolamento_v1_3"
             }
           }
         ]
@@ -227,6 +227,10 @@
   },
   "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/GENKAI_Combattimento.md.tmp.14376.735e03d7740a",
+    "Investigare/GENKAI_Combattimento.md.tmp.14376.4b40cfbe1119",
+    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.67048bf2e67e",
     "Investigare/GENKAI_Combattimento.md",
     "Investigare/GENKAI_Combattimento.md.tmp.14376.418785ec0997",
     "Investigare/GENKAI_Manuale_Giocatori.md",
@@ -239,9 +243,6 @@
     "Investigare/GENKAI_Manuale_Giocatori.md.tmp.14376.44abd4fdd6c0",
     "Investigare/GENKAI_Specializzazioni.md.tmp.14376.2b59bc75540f",
     "Investigare/GENKAI_Specializzazioni.md.tmp.14376.b763630e02cd",
-    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.566da602f4b4",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.86ef27f6357d",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.849ac1eb835b",
     "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
@@ -252,7 +253,6 @@
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/pg/token_prompts.md",
     "Investigare/pg/Copioni_PNG.md",
-    "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/README.md",
     "Investigare/pg/PG_02_Honda_Ryota.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
@@ -270,7 +270,6 @@
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Setsuko_Maizuru.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Murakami_Yamashina.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Kuroda_Fushimi.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Hayashi_Tomoki_Logistica_Nitogun.md",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png"
   ]

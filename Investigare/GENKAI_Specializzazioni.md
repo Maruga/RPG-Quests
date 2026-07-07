@@ -118,6 +118,7 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 | **Leggi — categoria a scelta** *(penale, societario, edilizia...)* | Lucidità | La normativa di quel campo, cosa è reato e cosa è zona grigia | Lucidità 8 **+** Ricerca d'archivio 2+ |
 | **Medicina** | Lucidità | Anatomia, traumi, patologie, referti | Lucidità 8 **+** Medicinali e veleni 2+ |
 | **Sport e scommesse** | Ascolto | Discipline, giri di scommesse, allibratori, risultati pilotati | Ascolto 8 |
+| **Meccanica** | Lucidità | Motori di auto e moto: riparare, truccare, riconoscere sabotaggi e manomissioni — *eccezione: Maestro +2 con Correzione* | Lucidità 8 **+** Automobili e moto 2+ |
 
 ### Territorio e ambienti *(sapere sociale — Maestro: +3)*
 
@@ -127,6 +128,19 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 | **Ambienti yakuza** | Silenzio | Gerarchie, territori, codici, come parlarci senza morire | Silenzio 8 **+** un contatto vivo nell'ambiente (Enja o En 2+) |
 | **Mondo della notte** | Presenza | Bar, hostess club, mizu shōbai, chi ci lavora e chi ci si nasconde | Presenza 8 **+** Quartiere 2+ |
 | **Stampa e media** | Presenza | Redazioni, tempi dei giornali, come nasce (o muore) una notizia | Presenza 8 **+** un contatto in redazione (En 2+) |
+
+### Combattimento *(regole in `GENKAI_Combattimento.md` — Maestro: +2 con Correzione)*
+
+| Specializzazione | Chiave | Copre | Paletti G3 |
+|---|---|---|---|
+| **Lotta** | Presenza | Pugni, prese, tecniche d'arresto | Presenza 8 |
+| **Lame e bastoni** | Lucidità o Silenzio | Coltello *o* bastone — l'arma si dichiara alla scelta | Attributo chiave 8 |
+| **Pistola** | Lucidità | Tiro rapido, estrazione, sparare in movimento | Lucidità 8 |
+| **Fucile** | Distacco | Pompa, caccia, assalto; raffiche e fuoco di copertura | Distacco 8 |
+| **Tiro di precisione** | Pazienza | Fucili di precisione — il grado 1 è il **requisito** per usarli | Pazienza 9 **+** Fucile 2+ |
+| **Esplosivi** | Pazienza | Usare, riconoscere e **disinnescare** ordigni | Pazienza 8 **+** Meccanica 2+ |
+
+Il grado si sottrae dal dado dei tiri di combattimento pertinenti (−1/−2/−3), dentro il tetto dei favorevoli. Nota: *Armi da fuoco* (Conoscenze di campo) resta un'altra cosa — è riconoscere le armi, non saper sparare.
 
 ---
 

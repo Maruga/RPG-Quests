@@ -151,6 +151,8 @@ I PNG attaccano e difendono con gli stessi attributi dei PG (le comparse senza s
 
 A **Riserva 0** il PNG è **fuori combattimento** — l'esito lo decide il GM in base alla scena: KO, ferito che si trascina via, mani alzate, fuga. La **morte** non è mai un automatismo dei numeri: è una scelta narrativa (e per un poliziotto, un mondo di conseguenze). I PNG notevoli con scheda usano il loro Ki.
 
+**La pericolosità non è un modificatore da ricordare**: è già negli attributi e nelle Senmon dell'avversario. L'ubriaco molesto ha 4 e tira male; il sicario ha 7, Pistola 2 e un giubbotto. Il sistema fa il resto.
+
 ---
 
 ## Le Specializzazioni di Combattimento
@@ -164,6 +166,7 @@ Nuova famiglia dell'elenco Senmon (vedi `GENKAI_Specializzazioni.md` — regole,
 | **Pistola** | Lucidità | tiro rapido, estrazione, sparare in movimento | Lucidità 8 |
 | **Fucile** | Distacco | pompa, caccia, assalto, raffiche e copertura | Distacco 8 |
 | **Tiro di precisione** | Pazienza | fucili di precisione — **il grado 1 è il requisito per usarli** | Pazienza 9 + Fucile 2+ |
+| **Esplosivi** | Pazienza | usare, riconoscere e **disinnescare** ordigni | Pazienza 8 + Meccanica 2+ |
 
 Il grado si **sottrae dal dado** dei tiri pertinenti (−1/−2/−3, o −2 con Correzione per il Maestro), dentro il tetto −4. La Senmon *Armi da fuoco* già in elenco resta un'altra cosa: è **conoscenza** (riconoscere armi, fatture, mercato) — saper *sparare* si impara qui.
 
