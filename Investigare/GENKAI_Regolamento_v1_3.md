@@ -2,28 +2,24 @@
 ## Regolamento v1.3
 
 
----
-
 ## Glossario
 
-| Termine                     | Kanji | Significato                                                                                     |
-| --------------------------- | ----- | ----------------------------------------------------------------------------------------------- |
-| **Genkai**                  | 限界    | *Limite* — il punto di rottura del personaggio (Ki ≤ 3)                                         |
-| **Ki**                      | 気     | *Energia vitale* — risorsa principale, stato mentale e fisico                                   |
-| **Gou**                     | 業     | *Debito / Karma* — talento straordinario che costa caro                                         |
-| **En**                      | 縁     | *Legame* — il valore della relazione con un PNG                                                 |
-| **Enja**                    | 縁者    | *Conoscenza* — contatto esterno che può aiutare                                                 |
-| **Kage**                    | 影     | *Ombra* — il problema personale che irrompe nel caso                                            |
-| **Satori**                  | 悟り    | *Illuminazione* — successo automatico, una volta per sessione                                   |
-| **Kiwami**                  | 極     | *Estremo* — risultato critico del dado (2 o 12)                                                 |
-| **Nami**                    | 波     | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi                          |
-| **Nasake**                  | 情け    | *Compassione* — punto Ki conservato quando il bonus andrebbe perso                              |
-| **Kyōryoku** | 協力 | *Supporto* — l'aiuto di un compagno su un tiro (+1 all'attributo) |
-| **Soroban**                 | 算盤    | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno |
-| **Shugyō** | 修行 | *Disciplina* — i punti di crescita: si guadagnano con i casi, si spendono tra un caso e l'altro |
-| **Senmon** | 専門 | *Specialità* — le specializzazioni professionali in tre gradi (vedi `GENKAI_Specializzazioni.md`) |
-
----
+| Termine      | Kanji | Significato                                                                                       |
+| ------------ | ----- | ------------------------------------------------------------------------------------------------- |
+| **Genkai**   | 限界    | *Limite* — il punto di rottura del personaggio (Ki ≤ 3)                                           |
+| **Ki**       | 気     | *Energia vitale* — risorsa principale, stato mentale e fisico                                     |
+| **Gou**      | 業     | *Debito / Karma* — talento straordinario che costa caro                                           |
+| **En**       | 縁     | *Legame* — il valore della relazione con un PNG                                                   |
+| **Enja**     | 縁者    | *Conoscenza* — contatto esterno che può aiutare                                                   |
+| **Kage**     | 影     | *Ombra* — il problema personale che irrompe nel caso                                              |
+| **Satori**   | 悟り    | *Illuminazione* — successo automatico, una volta per sessione                                     |
+| **Kiwami**   | 極     | *Estremo* — risultato critico del dado (2 o 12)                                                   |
+| **Nami**     | 波     | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi                            |
+| **Nasake**   | 情け    | *Compassione* — punto Ki conservato quando il bonus andrebbe perso                                |
+| **Kyōryoku** | 協力    | *Supporto* — l'aiuto di un compagno su un tiro (+1 all'attributo)                                 |
+| **Soroban**  | 算盤    | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno   |
+| **Shugyō**   | 修行    | *Disciplina* — i punti di crescita: si guadagnano con i casi, si spendono tra un caso e l'altro   |
+| **Senmon**   | 専門    | *Specialità* — le specializzazioni professionali in tre gradi (vedi `GENKAI_Specializzazioni.md`) |
 
 # PANORAMICA
 
@@ -39,14 +35,14 @@ Questo è un gioco di ruolo investigativo. I personaggi non sono eroi d'azione -
 
 Ogni PG ha 6 attributi con valore da **4 a 9**.
 
-| Attributo    | Cosa rappresenta                                  |
-| ------------ | ------------------------------------------------- |
+| Attributo    | Cosa rappresenta                                                                                                                          |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Distacco** | Capacità di non farti coinvolgere emotivamente. Restare lucido davanti all'orrore, non affezionarti, mantenere la distanza professionale. |
-| **Pazienza** | Resistere alla fretta, aspettare il momento giusto, sopportare lunghe attese, non cedere alla pressione del tempo. |
-| **Silenzio** | Calma interiore, non reagire d'impulso, incassare provocazioni, mantenere il controllo quando tutto spinge a esplodere. |
-| **Lucidità** | Vedere chiaro, collegare i pezzi, analizzare una scena, non perderti nei dettagli, capire cosa è importante. |
-| **Ascolto**  | Far parlare gli altri, cogliere il non detto, leggere tra le righe, capire cosa una persona nasconde. |
-| **Presenza**     | Presenza, autorità, rispetto che ispiri. Farti prendere sul serio, intimidire, comandare attenzione. |
+| **Pazienza** | Resistere alla fretta, aspettare il momento giusto, sopportare lunghe attese, non cedere alla pressione del tempo.                        |
+| **Silenzio** | Calma interiore, non reagire d'impulso, incassare provocazioni, mantenere il controllo quando tutto spinge a esplodere.                   |
+| **Lucidità** | Vedere chiaro, collegare i pezzi, analizzare una scena, non perderti nei dettagli, capire cosa è importante.                              |
+| **Ascolto**  | Far parlare gli altri, cogliere il non detto, leggere tra le righe, capire cosa una persona nasconde.                                     |
+| **Presenza** | Presenza, autorità, rispetto che ispiri. Farti prendere sul serio, intimidire, comandare attenzione.                                      |
 
 ### Procedura di Generazione
 
@@ -59,13 +55,13 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 
 ### Scala dei Valori
 
-| Valore | Significato |
-|--------|-------------|
-| 9 | Eccezionale - tratto distintivo (massimo) |
-| 8 | Ottimo - punto di forza |
-| 7 | Buono - sopra la media |
-| 5-6 | Normale - nella media |
-| 4 | Debole - difficoltà evidente (minimo) |
+| Valore | Significato                               |
+| ------ | ----------------------------------------- |
+| 9      | Eccezionale - tratto distintivo (massimo) |
+| 8      | Ottimo - punto di forza                   |
+| 7      | Buono - sopra la media                    |
+| 5-6    | Normale - nella media                     |
+| 4      | Debole - difficoltà evidente (minimo)     |
 
 ---
 
@@ -670,6 +666,7 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 - Il Ki non può mai superare il **Ki massimo**
 - Ogni notte di sonno, un attributo sotto scheda **risale di 1** (vedi *Progressione*)
 - Il tetto assoluto di scheda è **9**: si alza solo comprando (vedi *Crescita tra i Casi*)
+- La somma dei **bonus** su un singolo tiro (Senmon, Kyōryoku, L'Ora Giusta...) non supera mai **+4**
 
 > **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque — il fallimento leggero è solo narrativo (il PG gestisce male la situazione, ma senza costi meccanici). Solo Nami e Kiwami negativi comportano perdite.
 >
@@ -1263,6 +1260,7 @@ Scheda max 9: si alza solo comprando
 Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
 Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (no combattimento, En, Gou)
+Bonus cumulati su un singolo tiro: max +4
 Permanenti solo: Scene Personali e acquisti Shugyō
 (attributo: arrivo × 3 | Ki: arrivo × 4 — tra un caso e l'altro)
 

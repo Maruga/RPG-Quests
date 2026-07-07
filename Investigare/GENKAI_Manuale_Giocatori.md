@@ -555,6 +555,7 @@ Solo i **Nami e Kiwami negativi** (11 e 12) hanno costi meccanici reali — perd
 - Il tuo **valore di scheda** è il tuo tetto: i dadi non lo superano mai. Gli 11 e i 12 **scavano sotto** (il −1 si segna a matita), i 2 e i 3 **riparano** i punti persi, e **ogni notte di sonno risali di 1** verso la scheda. Se sei già a scheda piena, il +1 è perso — o va nel **Nasake**
 - Nessun attributo attuale scende sotto **4** (a 4, le perdite vanno al Ki)
 - Il Ki non supera mai il **Ki massimo**
+- La somma dei **bonus** su un singolo tiro (specializzazioni, Kyōryoku, L'Ora Giusta) non supera mai **+4**
 - La scheda cresce solo con le **Scene Personali** e gli **acquisti Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*). Tetto assoluto: 9
 
 ---
@@ -916,6 +917,7 @@ Attributo attuale min 4 (a 4, le perdite vanno al Ki)
 Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
 Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
+Bonus cumulati su un singolo tiro: max +4
 Permanenti solo: Scene Personali e acquisti Shugyō
 
 GOU

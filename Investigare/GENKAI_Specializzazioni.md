@@ -61,7 +61,7 @@ Per **tornare Maestro**: i paletti della voce devono essere **ancora soddisfatti
 
 ### Cumulo dei bonus
 
-Un tiro beneficia di **una sola** specializzazione. Si cumula con Kyōryoku (+1) e con L'Ora Giusta; il bonus totale su un singolo tiro non supera **+4** 【proposta da confermare】.
+Un tiro beneficia di **una sola** specializzazione. Si cumula con Kyōryoku (+1) e con L'Ora Giusta — ma **la somma dei bonus su un singolo tiro non supera mai +4**: il dado resta vivo, nessuna combinazione rende un tiro una formalità.
 
 ---
 
@@ -153,7 +153,7 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 | 1 | **Costi in punti Shugyō** dei tre gradi | ✅ Definiti: **9 / 19 / 39** — ritorno dalla decadenza: 20 |
 | 2 | **Nome definitivo**: Senmon 専門 o Tokui 得意 | Provvisorio: Senmon |
 | 3 | **Dotazione dei pre-generati** | Rimandata: si deciderà quando si rimetterà mano alle schede PG, con modifiche |
-| 4 | **Tetto cumulo bonus** +4 per tiro | Proposta da confermare |
+| 4 | **Tetto cumulo bonus** +4 per tiro | ✅ **Confermato** (regola attiva) |
 | 5 | **Numeri di usi** per voce (10/25 default) | Default fissato, deroghe per voce quando serve |
 | 6 | **Ritmo**: una nuova specializzazione per intervallo tra casi | ✅ **Confermata** (regola attiva) |
 
