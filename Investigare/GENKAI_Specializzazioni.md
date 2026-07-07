@@ -48,7 +48,8 @@ Regola pratica: le **Tecniche** (azioni sul campo) hanno il Maestro a +2 con Cor
 Un grado 3 significa impegno costante: pratica, aggiornamento, tempo rubato al resto.
 
 - La **prima** specializzazione a grado 3 non costa manutenzione
-- **Ogni grado 3 oltre il primo** sottrae **3 punti da ogni assegnazione di punti esperienza** del GM (due Maestri: −3 a ogni premio; tre Maestri: −6 — di fatto, quasi impossibile da sostenere)
+- **Ogni grado 3 oltre il primo** costa **1 punto Shugyō ogni 5 guadagnati**: si conta sul totale ricevuto, di assegnazione in assegnazione — al quinto punto ricevuto ne paghi 1 e il conteggio riparte. Due Maestri: −1 ogni 5; tre Maestri: −2 ogni 5
+- La tassa è il tempo che il mestiere ti mangia — riviste specialistiche, pratica, contatti da coltivare. Il GM può mostrarlo: il Maestro è al poligono mentre gli altri riposano
 
 Con i paletti sugli attributi, il risultato voluto: un PG con **un** grado 3 ha rinunciato a molto per averlo; **due** gradi 3 sono un'impresa; tre o quattro **gradi 2** sono già un investigatore fuori dal comune.
 
@@ -143,12 +144,12 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 
 | # | Questione | Stato |
 |---|---|---|
-| 1 | **Costi in punti** dei tre gradi | Da definire insieme al sistema punti esperienza (fase B) |
+| 1 | **Costi in punti Shugyō** dei tre gradi | Da definire insieme al sistema punti (fase B in corso — nome e guadagno già decisi: vedi Regolamento, *Crescita tra i casi*) |
 | 2 | **Nome definitivo**: Senmon 専門 o Tokui 得意 | Provvisorio: Senmon |
-| 3 | **Dotazione dei pre-generati**: partono con zero specializzazioni o 1 di ruolo a grado 1? | Aperta (tocca schede e DOCX) |
+| 3 | **Dotazione dei pre-generati** | Rimandata: si deciderà quando si rimetterà mano alle schede PG, con modifiche |
 | 4 | **Tetto cumulo bonus** +4 per tiro | Proposta da confermare |
 | 5 | **Numeri di usi** per voce (10/25 default) | Default fissato, deroghe per voce quando serve |
-| 6 | **Ritmo**: una nuova specializzazione per intervallo tra casi | Proposta da confermare |
+| 6 | **Ritmo**: una nuova specializzazione per intervallo tra casi | ✅ **Confermata** (regola attiva) |
 
 ---
 
