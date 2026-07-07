@@ -538,6 +538,69 @@ Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rileva
 
 ---
 
+## Tempi del Distretto
+
+Quando i PG delegano un'operazione, il risultato non arriva istantaneamente. Ogni richiesta ha un **tempo previsto** — quanto ci vuole in condizioni normali. Il tiro del distretto (2d6 ≤ Velocità) determina se arriva prima, in tempo, o in ritardo.
+
+### Tabella Tempi Previsti
+
+| Richiesta | Tempo previsto |
+|-----------|---------------|
+| Controllo precedenti penali | 2 ore |
+| Identificazione persona (nome noto) | 4 ore |
+| Risultato perquisizione | 6 ore |
+| Analisi impronte digitali | 12 ore |
+| Autopsia completa | 24 ore |
+| Tabulato telefonico (con ordine del PM) | 24 ore |
+| Analisi tossicologica | 48 ore |
+| Cartelle cliniche (con mandato) | 2 giorni |
+| Documenti bancari (con mandato) | 3 giorni |
+| Rapporto pedinamento | Durata pedinamento + 4 ore |
+
+### Come si determina il tempo
+
+Il GM tira **2d6 ≤ Velocità** del distretto. Il risultato modifica il tempo previsto:
+
+| Dado | Risultato | Tempo |
+|------|-----------|-------|
+| **2** | Critico positivo | **Metà** del tempo previsto |
+| **3** | Ottimo | **Due terzi** del tempo previsto |
+| **4 — Velocità** | Successo | **Tempo previsto** |
+| **Velocità+1 — 10** | Fallimento leggero | **Tempo e mezzo** |
+| **11** | Fallimento | **Doppio** del tempo previsto |
+| **12** | Critico negativo | **Triplo**, oppure problema grave (reperto perso, errore nel report, richiesta respinta) |
+
+### Riferimento rapido — moltiplicatori
+
+| Tempo previsto | Metà | Due terzi | Previsto | Tempo e mezzo | Doppio | Triplo |
+|----------------|------|-----------|----------|---------------|--------|--------|
+| 2 ore | 1 ora | 1 ora e mezza | 2 ore | 3 ore | 4 ore | 6 ore |
+| 4 ore | 2 ore | 3 ore circa | 4 ore | 6 ore | 8 ore | 12 ore |
+| 12 ore | 6 ore | 8 ore | 12 ore | 18 ore | 1 giorno | 1 giorno e mezzo |
+| 24 ore | 12 ore | 16 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni |
+| 48 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni | 4 giorni | 6 giorni |
+| 3 giorni | 1 giorno e mezzo | 2 giorni | 3 giorni | 4-5 giorni | 6 giorni | 9 giorni |
+
+### Nota sull'attributo
+
+Il tiro usa normalmente **Velocità**. Ma se l'operazione è particolarmente complessa (analisi tossicologica rara, documenti da un'altra prefettura, coordinamento con enti esterni), il GM può tirare su **Efficienza** o **Rete** al posto di Velocità — a seconda di cosa rallenta davvero il processo.
+
+### Esempio completo
+
+I PG chiedono il tabulato telefonico alla Questura di una città media (Velocità 6). Tempo previsto: 24 ore.
+
+**Il GM tira 2d6: esce 11.** Fallimento → doppio del tempo previsto → **48 ore**.
+
+Yamada entra nell'ufficio: *"La compagnia telefonica ha un problema nel sistema. Il tabulato non arriva prima di giovedì."*
+
+Il fermo del sospettato scade tra tre giorni. L'attesa pesa. Il GM valuta che la situazione ha posta in gioco e chiede un **tiro di pressione su Pazienza** a Yamamoto (vedi *Tiri di Pressione* nel Regolamento).
+
+Yamamoto (Pazienza 4) tira 2d6: **esce 10**. Fallimento → **-1 Ki**. Yamamoto si alza di scatto: *"Quarantotto ore? E nel frattempo il nostro uomo se ne va a casa?"* La frustrazione lo segna.
+
+Se avesse tirato **7**: fallimento leggero, stessa frustrazione ma nessun costo in Ki. Se avesse tirato **4**: successo, Yamamoto chiude gli occhi, respira, e dice con calma: *"Va bene. Troviamo un'altra strada."*
+
+---
+
 ## Difficoltà
 
 Il GM assegna un modificatore al tiro in base al soggetto o alla situazione:
@@ -549,6 +612,8 @@ Il GM assegna un modificatore al tiro in base al soggetto o alla situazione:
 | Persona cauta o già allertata | -2 |
 | Professionista, criminale esperto | -3 |
 | Controspionaggio attivo, operativo addestrato | -4 |
+
+Il modificatore si applica all'attributo dell'ente e **può portarlo sotto 4** — non c'è un minimo. Con attributo effettivo 3 riescono solo il 2 e il 3 naturali (8,3%); con effettivo 1 o meno riesce **solo il 2 naturale** (2,8%) — il Critico positivo riesce sempre, per quanto disperata sia l'operazione. Se i numeri dicono "quasi impossibile", la strada giusta è cercare un ente più attrezzato.
 
 ---
 
@@ -944,7 +1009,7 @@ Questi esempi mostrano il processo completo: i PG avanzano una richiesta, il GM 
 **Azione**: Pedinamento → attributo Organico
 **Soggetto**: professionista esperto → modificatore -3
 **Attributo effettivo**: 5 + 1 (specializzazione) - 3 (difficoltà) = 3
-**Nota**: attributo sotto 4, si usa 4 come minimo
+**Nota**: attributo effettivo sotto 4 — riescono solo il 2 e il 3 naturali (8,3%). Operazione al limite delle capacità dell'ente
 
 **Il GM tira 2d6: esce 3.**
 Dado puro 3 → **Ottimo**.
@@ -1108,13 +1173,13 @@ Il GM deve controllare che ogni handout contenga:
 
 L'analista ha già prodotto questa sintesi:
 
-> **Numero più contattato**: +39 02-XXX-XXXX — 34 chiamate in 30 giorni, prevalentemente ore ufficio. (Identificato: Studio legale associato Ferretti & Morandi)
+> **Numero più contattato**: 075-XXX-XXXX — 34 chiamate in 30 giorni, prevalentemente ore ufficio. (Identificato: Studio legale Mizuno & Arai, Kyoto)
 >
-> **Numero anomalo 1**: +39 347-XXXXXXX — 6 chiamate nell'ultima settimana, nessuna nelle tre settimane precedenti. Durata media 2 minuti. (Non identificato)
+> **Numero anomalo 1**: 030-XXX-XXXX (cellulare) — 6 chiamate nell'ultima settimana, nessuna nelle tre settimane precedenti. Durata media 2 minuti. (Non identificato)
 >
-> **Numero anomalo 2**: +39 02-YYY-YYYY — 1 chiamata, durata 18 secondi, ore 23:14 del 3 novembre. (Non identificato)
+> **Numero anomalo 2**: 075-YYY-YYYY — 1 chiamata, durata 18 secondi, ore 23:14 del 3 novembre. (Non identificato)
 >
-> **Chiamate in entrata non risposte**: 11 chiamate dallo stesso numero nelle ultime 48 ore prima del decesso. (Numero: +39 347-XXXXXXX — stesso del numero anomalo 1)
+> **Chiamate in entrata non risposte**: 11 chiamate dallo stesso numero nelle ultime 48 ore prima del decesso. (Numero: 030-XXX-XXXX — stesso del numero anomalo 1)
 
 I giocatori hanno quattro direzioni possibili. Lo studio legale è probabilmente routine. Il numero anomalo 1 che chiama ossessivamente nelle ultime 48 ore è la priorità ovvia. La chiamata notturna di 18 secondi è una domanda aperta. Nessuno di questi è la risposta — sono le domande giuste.
 

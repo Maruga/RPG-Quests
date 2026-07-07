@@ -106,7 +106,7 @@ I soldi. Ma sei pragmatico. Accetti alternative:
 
 ---
 
-# COPIONE 3: NAKAMURA DAISUKE
+# COPIONE 3: NAKAMURA KAZUO
 ## (Fratello scansafatiche di Nakamura Shota)
 
 ### Chi sei

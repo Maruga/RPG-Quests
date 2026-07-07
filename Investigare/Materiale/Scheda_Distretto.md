@@ -180,9 +180,11 @@ Le operazioni che i PG possono richiedere all'ente, con attributo corrispondente
 | Professionista, criminale esperto | -3 |
 | Controspionaggio attivo, operativo addestrato | -4 |
 
+Il modificatore può portare l'attributo effettivo **sotto 4** — non c'è un minimo: con effettivo 3 riescono solo il 2 e il 3 naturali; il **2 naturale riesce sempre** (Critico positivo).
+
 ---
 
-## Tabella risultati (riepilogo dal regolamento)
+## Tabella risultati (riepilogo dal Manuale Situazioni)
 
 | Dado | Risultato |
 |------|-----------|

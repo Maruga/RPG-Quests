@@ -256,6 +256,8 @@ Keigo formale impeccabile. Frasi precise, mai approssimative. Usa il "lei" giuri
 | **Ascolto** | 6 | Ascolta tutto, registra tutto |
 | **Presenza** | 6 | Autorità istituzionale, non carismatica |
 
+> **Distribuzione**: metodo diretto — 42 punti totali. Figura d'autorità: sopra il budget medio dei PG, voluto (vedi *I PNG Notevoli* nel Manuale GM)
+
 ### Ki 気
 **Ki iniziale**: 8 (Ascolto 6 + 2)
 

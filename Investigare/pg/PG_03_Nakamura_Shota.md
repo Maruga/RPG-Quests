@@ -54,7 +54,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
 ### Opzione 1: Ombra della Verità 影の真実
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
@@ -94,7 +94,7 @@ Sei quello che fa parlare le persone. Non con la forza - con la pazienza. Ti sie
 
 Sei il figlio maggiore di una famiglia modesta di Osaka. Hai lavorato duro per arrivare dove sei. Tua madre ne è fiera. Tuo padre è morto quando avevi 15 anni.
 
-Tuo fratello minore **Daisuke (34 anni)** è l'opposto. Non ha mai tenuto un lavoro più di sei mesi. Vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti. Ogni tanto sparisce per mesi. Poi torna, con una nuova idea, un nuovo progetto, una nuova richiesta.
+Tuo fratello minore **Kazuo (34 anni)** è l'opposto. Non ha mai tenuto un lavoro più di sei mesi. Vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti. Ogni tanto sparisce per mesi. Poi torna, con una nuova idea, un nuovo progetto, una nuova richiesta.
 
 ---
 
@@ -102,15 +102,15 @@ Tuo fratello minore **Daisuke (34 anni)** è l'opposto. Non ha mai tenuto un lav
 
 ### Il Fratello
 
-Daisuke è un peso che ti porti dietro da sempre. Gli hai già prestato soldi - tre volte. Ogni volta "l'ultima". Ogni volta una bugia.
+Kazuo è un peso che ti porti dietro da sempre. Gli hai già prestato soldi - tre volte. Ogni volta "l'ultima". Ogni volta una bugia.
 
 Tua moglie non sa di questi prestiti. Se lo scoprisse, ci sarebbero problemi anche a casa.
 
-Ma Daisuke è sangue del tuo sangue. E quando ha bisogno, sa sempre dove trovare suo fratello.
+Ma Kazuo è sangue del tuo sangue. E quando ha bisogno, sa sempre dove trovare suo fratello.
 
 ---
 
-## PNG DEL PROBLEMA: NAKAMURA Daisuke (Fratello)
+## PNG DEL PROBLEMA: NAKAMURA Kazuo (Fratello)
 
 | Campo | Dettaglio |
 |-------|-----------|

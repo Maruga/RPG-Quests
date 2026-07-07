@@ -80,7 +80,7 @@ A volte non sei tu ad agire — è il mondo che preme. Il GM può chiedere un ti
 | **attr+1 — 9** | Fallimento leggero | Mostri lo sforzo, nessun costo meccanico |
 | **10, 11, 12** | Fallimento | **-1 Ki** — la pressione ti erode |
 
-Non si applicano Kiwami né Nami. Massimo 2-3 per sessione.
+Non si applicano Kiwami né Nami. Massimo 2-3 per sessione. La scala è volutamente diversa dai tiri normali: la pressione logora più spesso (il 10 costa), ma meno a fondo (mai attributi, solo Ki).
 
 ---
 
@@ -116,7 +116,8 @@ Ogni PG possiede un Gou: un'abilità straordinaria che va oltre la normale compe
 - **Successo** (2d6 ≤ attributo) → dettagli precisi e completi
 - **Fallimento** (2d6 > attributo) → dettagli vaghi o parziali
 - **Costo**: 2, 3 o 4 Ki a seconda del Gou
-- Il **secondo uso** nella stessa sessione costa il **DOPPIO** (2→4, 3→6, 4→8)
+- Ogni uso fa **raddoppiare** il costo del successivo (2→4→8, 3→6→12). Una **notte di sonno** riabbassa il costo di un grado
+- Puoi **bruciarti**: il costo può portarti fino a Ki 1 (mai sotto). Se finisci a Ki ≤ 3, prima ricevi l'effetto, poi scatta il Genkai — i compagni possono rialzarti (1 Ki ciascuno)
 
 ---
 
@@ -137,7 +138,7 @@ Quando ottieni un Kiwami+ (2) o Nami+ (3) ma **non puoi applicare il bonus** —
 Un compagno può aiutarti in un tiro, se presente nella scena. Dichiara **prima** del tiro → ottieni **+1 attributo**.
 
 - **Successo** → nessun costo per nessuno
-- **Fallimento** (attr+1 — 10) → **entrambi -1 Ki**
+- **Fallimento leggero** (attr+1 — 10) → **solo il compagno -1 Ki** (voleva aiutare, non è bastato). Chi tira non perde nulla
 - **11** (Nami-) → chi tira -1 (scelta attr/Ki), compagno -1 Ki
 - **12** (Kiwami-) → chi tira -1 attr -1 Ki, compagno -1 Ki
 
@@ -188,29 +189,29 @@ Quando il Ki scende a **3 o meno**:
 
 ---
 
-## Soroban 算盤 — L'Abaco della Giornata
+## Soroban 算盤 — Il Conteggio della Giornata
 
-L'abaco al centro del tavolo. Ogni giocatore ha una colonna. **Tutti vedono tutto** — è lo stato emotivo visibile della squadra.
+Un numero da **0 a 9**, segnato sulla scheda o su un foglio comune: è lo stato emotivo del personaggio, giorno per giorno.
 
-**Partenza**: ogni giornata in-game parte dal valore medio (5 su scala 0-9).
+**Partenza**: ogni giornata in-game parte da **5**.
 
-**Quando si muovono le perline** (solo sui tiri di attributo):
+**Quando si muove** (solo sui tiri di attributo):
 
 | Dado | Effetto sul soroban |
 |------|---------------------|
-| **2** (Kiwami+) | +2 perline verso l'alto |
-| **3** (Nami+) | +1 perlina verso l'alto |
-| **11** (Nami-) | -1 perlina verso il basso |
-| **12** (Kiwami-) | -2 perline verso il basso |
+| **2** (Kiwami+) | +2 |
+| **3** (Nami+) | +1 |
+| **11** (Nami-) | -1 |
+| **12** (Kiwami-) | -2 |
 
 **Recupero notturno** — a fine giornata, quando il personaggio dorme:
 
 | Soroban | Tiro | Significato |
 |---------|------|-------------|
-| ≥ partenza (5+) | 2d6, prendi il **migliore** (reroll 1) | Giornata buona, riposo sereno |
-| < partenza (sotto 5) | 2d6, prendi il **peggiore** (reroll 1) | Giornata pesante, notte agitata |
+| 5 o più | 2d6, prendi il **migliore** (reroll 1) | Giornata buona, riposo sereno |
+| Sotto 5 | 2d6, prendi il **peggiore** (reroll 1) | Giornata pesante, notte agitata |
 
-Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il massimo iniziale. Dopo il tiro, il soroban torna al valore medio.
+Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il massimo iniziale. Dopo il tiro, il soroban torna a 5.
 
 ---
 
@@ -234,13 +235,13 @@ Il distretto ha i suoi attributi (Organico, Efficienza, Velocità, Risorse, Rete
 ## Esempi rapidi
 
 **Supporto (Kyōryoku)**
-> Sato deve esaminare il corpo ma è scosso (Distacco 5). Nakamura gli mette una mano sulla spalla: "Respira. Ci sono io." → Sato tira con Distacco 6. Esce 8 — fallimento, entrambi perdono 1 Ki. Nella stessa scena Sato non può più ricevere aiuto, ma Nakamura può aiutare un altro PG.
+> Sato deve esaminare il corpo ma è scosso (Distacco 5). Nakamura gli mette una mano sulla spalla: "Respira. Ci sono io." → Sato tira con Distacco 6. Esce 8 — fallimento leggero: Sato non perde nulla, Nakamura perde 1 Ki (voleva aiutare, non è bastato). Nella stessa scena Sato non può più ricevere aiuto, ma Nakamura può aiutare un altro PG.
 
 **Ki che scende (Nami-)**
 > Honda tira 11 durante un interrogatorio teso. Sceglie di perdere 1 Ki invece dell'attributo. Ora è a Ki 6 — ancora gestibile, ma ogni tiro conta di più.
 
 **Gou (Il Debito)**
-> Yamamoto attiva il suo Gou. Costa 3 Ki — li paga subito. Tira 2d6: esce 5, il suo attributo è 7 — successo, dettagli precisi. Se avesse tirato 9 — fallimento, ma il Gou funziona comunque: dettagli vaghi. Se lo usa una seconda volta nella stessa sessione, ne costerà 6.
+> Yamamoto attiva il suo Gou. Costa 3 Ki — li paga subito. Tira 2d6: esce 5, il suo attributo è 7 — successo, dettagli precisi. Se avesse tirato 9 — fallimento, ma il Gou funziona comunque: dettagli vaghi. Se lo riusa senza aver dormito, ne costerà 6; dopo una notte di sonno, di nuovo 3.
 
 **Satori**
 > Fujita è a Ki 4, il caso è a un punto critico. Usa il Satori: successo automatico, niente tiro. Ma è l'unico della sessione — da ora in poi è senza rete.

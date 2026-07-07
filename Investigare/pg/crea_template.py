@@ -367,7 +367,7 @@ add_separator(doc)
 # GOU
 add_section_header(doc, "業", "GOU — IL DEBITO  (scegli uno)")
 
-add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Secondo uso: costo doppio.", size=9, color=GRAY, italic=True, after=2)
+add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado.", size=9, color=GRAY, italic=True, after=2)
 
 add_gou(doc, "{{gou_1_nome}}", "{{gou_1_desc}}",
         "{{gou_1_attributo}}", "{{gou_1_costo}}",

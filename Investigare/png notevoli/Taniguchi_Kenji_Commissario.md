@@ -258,7 +258,7 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 | **Ascolto** | 5 | Più comandante che ascoltatore — delega l'ascolto ai suoi |
 | **Presenza** | 8 | Riempie la stanza senza alzare la voce |
 
-> **Distribuzione**: base 4 × 6 = 24, +12 punti +5 bonus (d6) = 41 totale
+> **Distribuzione**: metodo diretto — 41 punti totali. Figura d'autorità: sopra il budget medio dei PG, voluto (vedi *I PNG Notevoli* nel Manuale GM)
 
 ### Ki 気
 

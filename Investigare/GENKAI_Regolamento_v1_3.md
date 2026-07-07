@@ -6,24 +6,24 @@
 
 ## Glossario
 
-| Termine | Kanji | Significato |
-|---------|-------|-------------|
-| **Genkai** | 限界 | *Limite* — il punto di rottura del personaggio (Ki ≤ 3) |
-| **Ki** | 気 | *Energia vitale* — risorsa principale, stato mentale e fisico |
-| **Gou** | 業 | *Debito / Karma* — talento straordinario che costa caro |
-| **En** | 縁 | *Legame* — il valore della relazione con un PNG |
-| **Enja** | 縁者 | *Conoscenza* — contatto esterno che può aiutare |
-| **Kage** | 影 | *Ombra* — il problema personale che irrompe nel caso |
-| **Satori** | 悟り | *Illuminazione* — successo automatico, una volta per sessione |
-| **Kiwami** | 極 | *Estremo* — risultato critico del dado (2 o 12) |
-| **Nami** | 波 | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi |
-| **Nasake** | 情け | *Compassione* — punto Ki conservato quando il bonus andrebbe perso |
-| **L'Eco della Montagna** | 山彦 | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva) |
-| **La Brace che Resta** | 残り火 | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva) |
-| **Lo Spirito che Resta** | 残心 | *Spirito che Resta* — disciplina del samurai, protezione dal crollo |
-| **L'Istante della Caduta** | 散り際 | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura) |
-| **La Risalita della Carpa** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio |
-| **Soroban** | 算盤 | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno |
+| Termine                     | Kanji | Significato                                                                                     |
+| --------------------------- | ----- | ----------------------------------------------------------------------------------------------- |
+| **Genkai**                  | 限界    | *Limite* — il punto di rottura del personaggio (Ki ≤ 3)                                         |
+| **Ki**                      | 気     | *Energia vitale* — risorsa principale, stato mentale e fisico                                   |
+| **Gou**                     | 業     | *Debito / Karma* — talento straordinario che costa caro                                         |
+| **En**                      | 縁     | *Legame* — il valore della relazione con un PNG                                                 |
+| **Enja**                    | 縁者    | *Conoscenza* — contatto esterno che può aiutare                                                 |
+| **Kage**                    | 影     | *Ombra* — il problema personale che irrompe nel caso                                            |
+| **Satori**                  | 悟り    | *Illuminazione* — successo automatico, una volta per sessione                                   |
+| **Kiwami**                  | 極     | *Estremo* — risultato critico del dado (2 o 12)                                                 |
+| **Nami**                    | 波     | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi                          |
+| **Nasake**                  | 情け    | *Compassione* — punto Ki conservato quando il bonus andrebbe perso                              |
+| **L'Eco della Montagna**    | 山彦    | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva)               |
+| **La Brace che Resta**      | 残り火   | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva)                        |
+| **Lo Spirito che Resta**    | 残心    | *Spirito che Resta* — disciplina del samurai, protezione dal crollo                             |
+| **L'Istante della Caduta**  | 散り際   | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura)                              |
+| **La Risalita della Carpa** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio                            |
+| **Soroban**                 | 算盤    | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno |
 
 ---
 
@@ -90,41 +90,37 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 
 ### Recupero — Il Soroban 算盤
 
-Il recupero notturno è tracciato dal **soroban** (算盤, abaco giapponese), un oggetto fisico al centro del tavolo. Ogni giocatore usa una colonna. Il soroban registra l'andamento emotivo della giornata — ogni momento critico lascia un segno, e a fine giornata determina la qualità del riposo.
+Il recupero notturno è determinato dal **Soroban** (算盤, "abaco"): il conteggio dell'andamento emotivo della giornata. È un semplice numero da **0 a 9** che ogni giocatore segna sulla propria scheda o su un foglio comune — ogni momento critico lascia un segno, e a fine giornata il totale determina la qualità del riposo.
 
-> Se non si ha un soroban fisico, si usa un foglio al centro del tavolo con una colonna per ogni PG. **Partenza 5, minimo 0, massimo 9** — gli stessi valori di una colonna di soroban giapponese. L'importante è che sia **visibile a tutti**, non nascosto nella propria scheda.
+> Se lo tenete su un foglio comune al centro del tavolo, i compagni vedono come state senza bisogno di chiederlo. Non è obbligatorio — ma i momenti migliori nascono da lì.
 
 #### Impostazione Iniziale
 
-All'inizio di ogni giornata in-game, ogni giocatore imposta la propria colonna al **valore medio**:
+All'inizio di ogni giornata in-game, il Soroban di ogni PG parte da **5**, il valore medio della scala 0-9.
 
-- Colonna con totale **pari**: metà esatta. *Esempio: 14 perline → partenza 7*
-- Colonna con totale **dispari**: metà arrotondata per eccesso. *Esempio: 9 perline → partenza 5*
-- **Su foglio**: partenza fissa a **5** (range 0-9)
+#### Quando si Muove il Soroban
 
-#### Quando si Muovono le Perline
-
-Le perline si muovono **solo** in risposta a risultati estremi sui tiri di attributo. Non si applicano a Gou, En, combattimento o tiri di pressione — stesse regole dei Nami/Kiwami standard.
+Il valore si muove **solo** in risposta a risultati estremi sui tiri di attributo. Non si applica a Gou, En, combattimento o tiri di pressione — stesse regole dei Nami/Kiwami standard.
 
 | Evento | Movimento |
 |--------|-----------|
-| Nami positivo (dado = 3) | **+1** (una perlina verso l'alto) |
-| Kiwami positivo (dado = 2) | **+2** (due perline verso l'alto) |
-| Nami negativo (dado = 11) | **-1** (una perlina verso il basso) |
-| Kiwami negativo (dado = 12) | **-2** (due perline verso il basso) |
+| Nami positivo (dado = 3) | **+1** |
+| Kiwami positivo (dado = 2) | **+2** |
+| Nami negativo (dado = 11) | **-1** |
+| Kiwami negativo (dado = 12) | **-2** |
 
-Il giocatore si alza e muove fisicamente le perline ogni volta che uno di questi risultati si verifica. Il valore non può scendere sotto 0 né superare il massimo della colonna.
+Il giocatore aggiorna il valore ogni volta che uno di questi risultati si verifica. Il valore non può scendere sotto 0 né superare 9.
 
-**Momenti narrativi eccezionali**: quando il GM assegna +1 Ki per un momento speciale (max 1 per sessione), sceglie se darlo **direttamente** al giocatore oppure aggiungerlo al **soroban** (+1 perlina verso l'alto). Nel primo caso è Ki immediato; nel secondo influenza il recupero notturno.
+**Momenti narrativi eccezionali**: quando il GM assegna +1 Ki per un momento speciale (max 1 per sessione), sceglie se darlo **direttamente** al giocatore oppure aggiungerlo al **Soroban** (+1). Nel primo caso è Ki immediato; nel secondo influenza il recupero notturno.
 
 #### Recupero Notturno
 
-A fine giornata, quando il personaggio dorme, il giocatore legge il valore della propria colonna:
+A fine giornata, quando il personaggio dorme, il giocatore legge il valore del proprio Soroban:
 
-| Posizione del soroban | Tiro di recupero |
-|-----------------------|-----------------|
-| Alla metà o sopra (≥ valore di partenza) | Tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado |
-| Sotto la metà (< valore di partenza) | Tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado |
+| Soroban a fine giornata | Tiro di recupero |
+|-------------------------|-----------------|
+| 5 o più | Tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado |
+| Sotto 5 | Tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado |
 
 Il risultato del dado = **Ki recuperati**.
 
@@ -132,43 +128,43 @@ Il risultato del dado = **Ki recuperati**.
 
 #### Dopo il Recupero
 
-Dopo aver tirato, il giocatore **riporta la propria colonna al valore medio**. La nuova giornata parte da zero.
+Dopo aver tirato, il giocatore **riporta il proprio Soroban a 5**. La nuova giornata parte da zero.
 
-#### Il Soroban è Visibile
+#### Il Soroban Non è un Segreto
 
-Il soroban è al centro del tavolo. Tutti vedono tutto. Non è un'informazione segreta — è lo stato emotivo visibile della squadra. Un investigatore con le perline basse si vede: è stanco, teso, consumato. Le perline lo raccontano prima che lo dica il giocatore.
+Il Soroban non è un'informazione da nascondere — è lo stato emotivo della squadra. Un investigatore con il valore basso si vede: è stanco, teso, consumato. Il numero lo racconta prima che lo dica il giocatore.
 
-> Yamamoto guarda il soroban di Honda. Le perline sono a 3 — due Kiwami negativi, la scena del crimine e l'interrogatorio. Yamamoto prende un caffè in lattina dal distributore e lo appoggia sulla scrivania di Honda senza dire nulla. Honda alza lo sguardo. Yamamoto: *"Cinque minuti fuori. Andiamo."* Non è un ordine — è il capo che ha visto le perline e sa che il suo uomo è al limite.
+> Yamamoto dà un'occhiata al foglio: il Soroban di Honda è a 3 — due Kiwami negativi, la scena del crimine e l'interrogatorio. Yamamoto prende un caffè in lattina dal distributore e lo appoggia sulla scrivania di Honda senza dire nulla. Honda alza lo sguardo. Yamamoto: *"Cinque minuti fuori. Andiamo."* Non è un ordine — è il capo che ha visto il numero e sa che il suo uomo è al limite.
 
 > Nakamura nota che il soroban di Sato è a 3 mentre il suo è a 8. Il prossimo interrogatorio è quello difficile — il sospettato principale. *"Questo lo faccio io. Sato, resta sulla documentazione."* Non sta escludendo Sato — lo sta proteggendo. E Sato lo capisce dallo sguardo, non dalle parole.
 
-> Fine giornata. Il GM guarda i soroban. Fujita è a 8, Honda è a 3, gli altri nel mezzo. Fujita recupererà bene — 2d6 prendi il migliore. Honda dormirà male — 2d6 prendi il peggiore. Domani la squadra partirà con energie diverse, e il caso non aspetta.
+> Fine giornata. Il GM controlla i Soroban. Fujita è a 8, Honda è a 3, gli altri nel mezzo. Fujita recupererà bene — 2d6 prendi il migliore. Honda dormirà male — 2d6 prendi il peggiore. Domani la squadra partirà con energie diverse, e il caso non aspetta.
 
 #### Esempi di Recupero
 
-**Giornata equilibrata** *(soroban da 9, partenza 5)*
+**Giornata equilibrata** *(partenza 5)*
 
 Honda parte a 5. Durante la giornata:
 - Tira Distacco: dado 3 → Nami+ → soroban sale a **6**
 - Tira Ascolto: dado 11 → Nami- → soroban scende a **5**
 
-Fine giornata: soroban a 5, uguale alla partenza → alla metà → 2d6 prendi il migliore (reroll 1). Esce 3 e 5 → recupera **5 Ki**.
+Fine giornata: soroban a 5 → 5 o più → 2d6 prendi il migliore (reroll 1). Esce 3 e 5 → recupera **5 Ki**.
 
-**Giornata pesante** *(soroban da 9, partenza 5)*
+**Giornata pesante** *(partenza 5)*
 
 Sato parte a 5. Durante la giornata:
 - Tira Distacco: dado 12 → Kiwami- → soroban scende a **3**
 - Tira Silenzio: dado 11 → Nami- → soroban scende a **2**
 
-Fine giornata: soroban a 2, sotto la partenza → 2d6 prendi il **peggiore** (reroll 1). Esce 2 e 5 → recupera solo **2 Ki**.
+Fine giornata: soroban a 2, sotto il 5 → 2d6 prendi il **peggiore** (reroll 1). Esce 2 e 5 → recupera solo **2 Ki**.
 
-**Giornata eccezionale** *(soroban da 9, partenza 5)*
+**Giornata eccezionale** *(partenza 5)*
 
 Fujita parte a 5. Durante la giornata:
 - Tira Silenzio: dado 2 → Kiwami+ → soroban sale a **7**
 - Tira Ascolto: dado 3 → Nami+ → soroban sale a **8**
 
-Fine giornata: soroban a 8, sopra la partenza → 2d6 prendi il **migliore** (reroll 1). Esce 4 e 6 → recupera **6 Ki**.
+Fine giornata: soroban a 8 → 5 o più → 2d6 prendi il **migliore** (reroll 1). Esce 4 e 6 → recupera **6 Ki**.
 
 ---
 
@@ -209,13 +205,19 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 
 ### Meccanica
 
-**Costo**: variabile per Gou (2, 3 o 4 Ki). Il secondo uso nella stessa sessione **costa il doppio**.
+**Costo**: variabile per Gou (2, 3 o 4 Ki). Ogni uso fa **raddoppiare** il costo dell'uso successivo. **Una notte di sonno** fa scendere il costo di un grado, fino a tornare al costo base.
 
-| Costo base | Primo uso | Secondo uso |
-|------------|-----------|-------------|
-| 2 Ki | 2 Ki | 4 Ki |
-| 3 Ki | 3 Ki | 6 Ki |
-| 4 Ki | 4 Ki | 8 Ki |
+| Costo base | 2° uso senza dormire | 3° uso senza dormire |
+|------------|----------------------|----------------------|
+| 2 Ki | 4 Ki | 8 Ki |
+| 3 Ki | 6 Ki | 12 Ki |
+| 4 Ki | 8 Ki | 16 Ki |
+
+> **Esempio**: Gou da 2 Ki. Lo usi la mattina: paghi 2. Lo riusi nel pomeriggio: paghi 4. Quella notte dormi — il costo scende di un grado. Il giorno dopo lo usi ancora: paghi di nuovo 4, non 8. Un'altra notte senza usarlo e il costo torna a 2.
+
+**Bruciare se stessi**: puoi attivare un Gou anche se il costo ti porta in zona Genkai. Il Ki scende fino a un minimo di **1**, mai sotto — per i costi volontari non si esce mai definitivamente dal gioco. Se dopo il pagamento sei a Ki ≤ 3, il Genkai scatta **appena l'effetto del Gou si conclude**: prima ricevi quello che hai pagato — la visione, l'informazione — poi crolli. I compagni possono aiutarti a rialzarti come in ogni Genkai (1 Ki ciascuno).
+
+> **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
 **Tiro**: 2d6 ≤ attributo rilevante
 
@@ -619,7 +621,7 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 
 **Nota importante**: Il giocatore conosce la natura del suo Kage e chi è coinvolto, ma NON sa quando verrà attivato o quale sarà l'evento scatenante specifico. Lo scopre in gioco.
 
-> **Esempio**: Il Kage di Tanaka è la madre anziana con problemi di salute che vive sola a tre ore di treno. Tanaka sa che esiste questo Kage — la madre, la distanza, la colpa. Non sa che il GM lo attiverà durante il momento più critico dell'indagine, quando la madre chiama in centrale perché è caduta e non riesce ad alzarsi. Tanaka deve decidere: resta sul caso o prende il primo treno.
+> **Esempio**: Il Kage di Kimura è la madre anziana con problemi di salute che vive sola a tre ore di treno. Kimura sa che esiste questo Kage — la madre, la distanza, la colpa. Non sa che il GM lo attiverà durante il momento più critico dell'indagine, quando la madre chiama in centrale perché è caduta e non riesce ad alzarsi. Kimura deve decidere: resta sul caso o prende il primo treno.
 
 ---
 
@@ -719,6 +721,8 @@ Il PG tira 2d6 contro l'attributo rilevante. **Può solo perdere, mai guadagnare
 | **attributo+1 — 9** | Fallimento leggero | Mostri lo sforzo — frustrazione, tensione, impazienza. **Nessun costo meccanico** |
 | **10, 11, 12** | Fallimento | **-1 Ki**. La pressione ti erode |
 
+> **Nota**: la scala è volutamente diversa dai tiri normali — qui il 10 costa (nei tiri normali è gratis) e il 12 costa meno (-1 Ki invece di -1 attributo e -1 Ki). La pressione logora più spesso, ma non lascia mai segni profondi: costa sempre e solo Ki, mai attributi.
+
 ### Il roleplay
 
 Il PG che **fallisce** (anche leggero) descrive la reazione: sbatte il pugno, alza la voce, esce dalla stanza, si blocca. Questi momenti sono il cuore del tiro di pressione — mostrano chi è il personaggio sotto stress.
@@ -731,7 +735,7 @@ Il PG che ha **successo** può comunque descrivere lo sforzo: stringe i pugni so
 
 ### Esempio
 
-I PG aspettano il tabulato telefonico. Il distretto ha avuto un problema — il tabulato arriva con 48 ore di ritardo invece di 24 (vedi *Tempi del Distretto* nella sezione Scheda Distretto). Il fermo del sospettato scade tra tre giorni.
+I PG aspettano il tabulato telefonico. Il distretto ha avuto un problema — il tabulato arriva con 48 ore di ritardo invece di 24 (vedi *Tempi del Distretto* nel Manuale Situazioni). Il fermo del sospettato scade tra tre giorni.
 
 Yamada entra: *"Due giorni. C'è un problema tecnico alla compagnia."*
 
@@ -813,7 +817,7 @@ Un compagno può aiutarti in un tiro, se narrativamente presente e coinvolto nel
 - Il compagno dichiara di aiutarti **prima** del tiro
 - Ottieni automaticamente **+1** al tuo attributo per quel tiro
 - Se il tiro ha **successo** → nessun costo per nessuno
-- Se il tiro **fallisce** (attr+1 — 10) → **entrambi perdono 1 Ki**
+- Se il tiro **fallisce** (attr+1 — 10) → **solo il compagno perde 1 Ki**. Chi tira non perde nulla — il fallimento leggero resta gratis. Il compagno voleva aiutare e non è bastato: quel peso è suo
 - Se il tiro è **Nami-** (11) → chi tira: -1 a scelta (attributo o Ki). Il compagno: **-1 Ki**
 - Se il tiro è **Kiwami-** (12) → chi tira: -1 attributo -1 Ki (regole standard). Il compagno: **-1 Ki**
 
@@ -823,7 +827,7 @@ Un compagno può aiutarti in un tiro, se narrativamente presente e coinvolto nel
 - Un compagno può **dare** supporto a **PG diversi** nella stessa scena
 - Il supporto non si applica ai tiri di Gou
 
-> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Tanaka tira con Distacco 7 (6+1). Esce 8. Fallimento — entrambi perdono 1 Ki. La scena ha colpito tutti e due. Se fosse uscito 5, successo — nessuno perde nulla. Se fosse uscito 12, Kiwami negativo: Tanaka perde -1 Distacco -1 Ki, Sato perde -1 Ki. Nella stessa scena, Tanaka non può più ricevere supporto — ma Sato può ancora aiutare un altro PG.
+> **Esempio**: Honda deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Honda tira con Distacco 7 (6+1). Esce 8. Fallimento leggero — Honda non perde nulla, ma Sato perde 1 Ki: voleva fare da scudo e non è bastato. Se fosse uscito 5, successo — nessuno perde nulla. Se fosse uscito 12, Kiwami negativo: Honda perde -1 Distacco -1 Ki, Sato perde -1 Ki. Nella stessa scena, Honda non può più ricevere supporto — ma Sato può ancora aiutare un altro PG.
 
 ---
 
@@ -865,604 +869,22 @@ Se un danno porterebbe il Ki sotto 1, il Ki va a 1 ma il PG è sul filo del raso
 ---
 
 
-# La Scheda Distretto
+# La Scheda Distretto — In Breve
 
-Il distretto — o qualsiasi ente organizzato che supporta i PG — ha una scheda propria. Funziona con gli stessi dadi dei PG, ma è costruita in modo diverso: il GM la genera tirando i dadi oppure assegnando i valori a priori secondo le sue esigenze narrative.
+Il distretto — o qualsiasi ente organizzato che supporta i PG: questura, procura, agenzia investigativa, ufficio pubblico — ha una scheda propria e tira gli stessi dadi dei PG.
 
-Non è solo un commissariato di polizia. Questa scheda si applica a qualsiasi organizzazione: un distretto di polizia, un'agenzia investigativa privata, un ufficio governativo, un servizio segreto, un ente municipale, una procura, un corpo speciale.
+| Attributo | Cosa rappresenta |
+|-----------|-----------------|
+| **Organico** | Personale per le operazioni sul campo |
+| **Efficienza** | Qualità di esecuzione |
+| **Velocità** | Tempi di risposta |
+| **Risorse** | Mezzi, tecnologia, archivi, fondi |
+| **Rete** | Informatori, contatti, copertura territoriale |
+| **Corruzione** | Compromissione dell'ente — fattore di rischio, tiro segreto del GM |
 
----
+Quando i PG **delegano** un'operazione (pedinamento, analisi forense, ricerca d'archivio, richiesta di mandato), il GM tira **2d6 ≤ attributo rilevante** dell'ente, modificato da difficoltà e specializzazioni: 2 = Critico positivo, 3 = Ottimo, fino all'attributo = Successo, attributo+1—10 = Fallimento leggero (nessuna conseguenza), 11 = Fallimento con possibile complicazione, 12 = Critico negativo. Ogni operazione ha un tempo previsto, modulato dal tiro su Velocità.
 
-## Attributi
-
-Gli attributi del distretto seguono la stessa scala dei PG: da 4 a 9.
-
-| Attributo      | Cosa rappresenta                                                          |
-| -------------- | ------------------------------------------------------------------------- |
-| **Organico**   | Personale disponibile per operazioni sul campo                            |
-| **Efficienza** | Qualità di esecuzione delle operazioni                                    |
-| **Velocità**   | Tempi di risposta e completamento                                         |
-| **Risorse**    | Mezzi, tecnologia, attrezzatura, fondi                                    |
-| **Rete**       | Informatori, contatti esterni, copertura territoriale                     |
-| **Corruzione** | Compromissione dell'ente — interessi esterni, favoritismi, agende proprie |
-
-### Generazione
-
-Il GM sceglie uno dei due metodi:
-
-**Metodo casuale** — per ogni attributo tira 2d6, prendi il dado più alto. Risultato minimo 4, massimo 9 (se il dado più alto supera 9, conta come 9).
-
-**Metodo diretto** — il GM assegna i valori a priori in base al tipo di ente e al ruolo che deve avere nella situazione. Nessun tiro, nessun punto libero da distribuire. Scrivi i numeri che servono alla storia.
-
-> **Nota sulla Corruzione**: la Corruzione segue la stessa scala (4–9) ma va sempre assegnata con il metodo diretto, perché dipende dal tipo di ente e dall'ambientazione — non dal caso.
-
----
-
-## Specializzazioni
-
-Se un attributo raggiunge **8 o 9**, l'ente acquisisce automaticamente specializzazioni legate a quell'attributo. Le specializzazioni danno +1 al tiro quando l'operazione ricade nel loro ambito.
-
-| Valore attributo | Specializzazioni acquisite |
-|-----------------|---------------------------|
-| 4 — 7 | Nessuna |
-| 8 | 1 specializzazione tra quelle disponibili per quell'attributo |
-| 9 | 2 specializzazioni tra quelle disponibili per quell'attributo |
-
-Il GM sceglie quali specializzazioni acquisire tra quelle disponibili per l'attributo.
-
----
-
-## Lista Specializzazioni
-
-### Legate a Organico
-- **Squadra di sorveglianza** — pedinamenti e appostamenti prolungati
-- **Unità mobile** — inseguimenti e operazioni dinamiche sul campo
-- **Squadra di assalto** — supporto ad arresti e operazioni ad alto rischio
-- **Squadra perquisizioni** — perquisizioni sistematiche di appartamenti, uffici, veicoli
-- **Copertura civile** — agenti in borghese infiltrati in ambienti civili
-- **Turni estesi** — operazioni 24 ore, rotazione del personale senza cali
-
-### Legate a Efficienza
-- **Laboratorio scientifico** — analisi forensi, impronte, tossicologia
-- **Analisi documentale** — documenti falsi, grafologia, archivi cartacei
-- **Interrogatorio** — tecniche avanzate di conduzione degli interrogatori
-- **Profilazione** — analisi comportamentale dei soggetti
-- **Coordinamento multi-ente** — capacità di lavorare con altri enti senza attrito
-
-### Legate a Velocità
-- **Risposta immediata** — tempi dimezzati su qualsiasi operazione urgente
-- **Canali prioritari** — accesso preferenziale a banche dati e uffici pubblici
-- **Rete di allerta** — segnalazioni sul territorio in tempo reale
-- **Protocollo emergenza** — attivazione rapida in caso di crisi
-
-### Legate a Risorse
-- **Tecnologia avanzata** — intercettazioni, tracciamento, strumenti digitali
-- **Archivio esteso** — accesso a registri storici, anagrafici, giudiziari
-- **Fondi operativi** — disponibilità di denaro contante per operazioni coperte
-- **Flotta veicoli** — mezzi diversificati per ogni tipo di operazione
-- **Attrezzatura specializzata** — equipaggiamento per ambienti specifici (subacqueo, alpino, urbano)
-
-### Legate a Rete
-- **Rete informatori** — fonti civili sul territorio, di lungo corso
-- **Contatti giudiziari** — accesso rapido a magistrati, PM, giudici
-- **Contatti politici** — canali con amministrazioni locali o nazionali
-- **Rete criminale** — infiltrazione in ambienti della criminalità organizzata
-- **Cooperazione internazionale** — accordi operativi con enti esteri
-- **Media e comunicazione** — capacità di gestire o influenzare l'informazione pubblica
-
-### Legate a Corruzione
-- **Connessioni criminali** — legami con criminalità organizzata, protezione reciproca
-- **Protezione politica** — copertura da politici, funzionari, amministrazione
-- **Insabbiamento** — capacità di far sparire indagini scomode e informazioni interne
-- **Corruzione economica** — tangenti, fondi neri, appalti pilotati
-- **Omertà** — muro di silenzio interno, nessuno parla
-- **Agenda propria** — l'ente persegue obiettivi non dichiarati
-
----
-
-## Azioni Delegabili
-
-Quando i PG delegano un'operazione all'ente, il GM identifica l'attributo rilevante, applica eventuali specializzazioni e modificatori di difficoltà, poi tira 2d6.
-
-| Azione | Attributo rilevante |
-|--------|-------------------|
-| Pedinamento | Organico |
-| Appostamento | Organico |
-| Inseguimento | Organico |
-| Localizzazione di una persona | Rete |
-| Sorveglianza di un luogo | Organico |
-| Perquisizione di un luogo | Organico |
-| Ricerca in archivi e banche dati | Risorse |
-| Analisi forense su un reperto | Efficienza |
-| Intercettazione telefonica o ambientale (in Giappone 1997: illegale) | Risorse |
-| Raccolta informazioni su un soggetto | Rete |
-| Supporto ad arresto | Organico |
-| Verifica di un documento o identità | Efficienza |
-| Ottenere accesso a un ente terzo | Rete |
-
----
-
-## Tempi del Distretto
-
-Quando i PG delegano un'operazione, il risultato non arriva istantaneamente. Ogni richiesta ha un **tempo previsto** — quanto ci vuole in condizioni normali. Il tiro del distretto (2d6 ≤ Velocità) determina se arriva prima, in tempo, o in ritardo.
-
-### Tabella Tempi Previsti
-
-| Richiesta | Tempo previsto |
-|-----------|---------------|
-| Controllo precedenti penali | 2 ore |
-| Identificazione persona (nome noto) | 4 ore |
-| Risultato perquisizione | 6 ore |
-| Analisi impronte digitali | 12 ore |
-| Autopsia completa | 24 ore |
-| Tabulato telefonico (con ordine del PM) | 24 ore |
-| Analisi tossicologica | 48 ore |
-| Cartelle cliniche (con mandato) | 2 giorni |
-| Documenti bancari (con mandato) | 3 giorni |
-| Rapporto pedinamento | Durata pedinamento + 4 ore |
-
-### Come si determina il tempo
-
-Il GM tira **2d6 ≤ Velocità** del distretto. Il risultato modifica il tempo previsto:
-
-| Dado | Risultato | Tempo |
-|------|-----------|-------|
-| **2** | Critico positivo | **Metà** del tempo previsto |
-| **3** | Ottimo | **Due terzi** del tempo previsto |
-| **4 — Velocità** | Successo | **Tempo previsto** |
-| **Velocità+1 — 10** | Fallimento leggero | **Tempo e mezzo** |
-| **11** | Fallimento | **Doppio** del tempo previsto |
-| **12** | Critico negativo | **Triplo**, oppure problema grave (reperto perso, errore nel report, richiesta respinta) |
-
-### Riferimento rapido — moltiplicatori
-
-| Tempo previsto | Metà | Due terzi | Previsto | Tempo e mezzo | Doppio | Triplo |
-|----------------|------|-----------|----------|---------------|--------|--------|
-| 2 ore | 1 ora | 1 ora e mezza | 2 ore | 3 ore | 4 ore | 6 ore |
-| 4 ore | 2 ore | 3 ore circa | 4 ore | 6 ore | 8 ore | 12 ore |
-| 12 ore | 6 ore | 8 ore | 12 ore | 18 ore | 1 giorno | 1 giorno e mezzo |
-| 24 ore | 12 ore | 16 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni |
-| 48 ore | 1 giorno | 1 giorno e mezzo | 2 giorni | 3 giorni | 4 giorni | 6 giorni |
-| 3 giorni | 1 giorno e mezzo | 2 giorni | 3 giorni | 4-5 giorni | 6 giorni | 9 giorni |
-
-### Nota sull'attributo
-
-Il tiro usa normalmente **Velocità**. Ma se l'operazione è particolarmente complessa (analisi tossicologica rara, documenti da un'altra prefettura, coordinamento con enti esterni), il GM può tirare su **Efficienza** o **Rete** al posto di Velocità — a seconda di cosa rallenta davvero il processo.
-
-### Esempio completo
-
-I PG chiedono il tabulato telefonico alla Questura di una città media (Velocità 6). Tempo previsto: 24 ore.
-
-**Il GM tira 2d6: esce 11.** Fallimento → doppio del tempo previsto → **48 ore**.
-
-Yamada entra nell'ufficio: *"La compagnia telefonica ha un problema nel sistema. Il tabulato non arriva prima di giovedì."*
-
-Il fermo del sospettato scade tra tre giorni. L'attesa pesa. Il GM valuta che la situazione ha posta in gioco e chiede un **tiro di pressione su Pazienza** a Yamamoto (vedi *Tiri di Pressione* nella sezione Meccaniche di Gioco).
-
-Yamamoto (Pazienza 4) tira 2d6: **esce 10**. Fallimento → **-1 Ki**. Yamamoto si alza di scatto: *"Quarantotto ore? E nel frattempo il nostro uomo se ne va a casa?"* La frustrazione lo segna.
-
-Se avesse tirato **7**: fallimento leggero, stessa frustrazione ma nessun costo in Ki. Se avesse tirato **4**: successo, Yamamoto chiude gli occhi, respira, e dice con calma: *"Va bene. Troviamo un'altra strada."*
-
----
-
-## Difficoltà
-
-Il GM assegna un modificatore al tiro in base al soggetto o alla situazione:
-
-| Situazione | Modificatore |
-|------------|-------------|
-| Civile ignaro, nessuna contromisura | +2 |
-| Persona normale | 0 |
-| Persona cauta o già allertata | -2 |
-| Professionista, criminale esperto | -3 |
-| Controspionaggio attivo, operativo addestrato | -4 |
-
----
-
-## Tabella Risultati
-
-| Dado | Risultato |
-|------|-----------|
-| **2** | **Critico positivo** — operazione perfetta, risultato oltre le aspettative, dettaglio bonus inatteso |
-| **3** | **Ottimo** — operazione riuscita con informazioni o dettagli aggiuntivi utili |
-| **4 — attributo** | **Successo** — operazione riuscita, risultato atteso |
-| **attributo+1 — 10** | **Fallimento leggero** — operazione non completata, nessuna conseguenza |
-| **11** | **Fallimento** — operazione fallita, possibile complicazione minore (tempo perso, risorsa sprecata) |
-| **12** | **Critico negativo** — operazione fallita con conseguenza seria: il soggetto si accorge di essere monitorato, una fonte viene bruciata, un agente esposto |
-
----
-
-## Corruzione
-
-La Corruzione non è un attributo di capacità — è un **fattore di rischio**. Misura quanto l'ente è compromesso da interessi esterni: criminalità, politica, favoritismi, agende proprie. Più è alta, più è probabile che qualcuno all'interno dell'ente lavori contro gli interessi dell'indagine — senza che i PG lo sappiano.
-
-### Quando si tira
-
-Il GM tira per Corruzione **solo quando l'operazione delegata tocca interessi sensibili**:
-
-- L'indagine coinvolge criminalità organizzata
-- Si indaga su persone potenti — politici, imprenditori, membri dell'ente stesso
-- L'operazione potrebbe danneggiare chi protegge o finanzia l'ente
-- I PG chiedono di agire contro qualcuno "intoccabile"
-
-**Non si tira** per operazioni di routine che non toccano interessi particolari.
-
-### Come si tira
-
-Il GM tira **2d6 in segreto**, separatamente dal tiro dell'operazione. Se il risultato è **≤ Corruzione** → la corruzione si attiva.
-
-Il tiro è indipendente dal risultato dell'operazione. Un pedinamento può riuscire perfettamente e la corruzione attivarsi comunque — qualcuno dentro l'ente ha passato l'informazione.
-
-| Corruzione | Probabilità di attivarsi |
-|------------|--------------------------|
-| 4 | 17% |
-| 5 | 28% |
-| 6 | 42% |
-| 7 | 58% |
-| 8 | 72% |
-| 9 | 83% |
-
-### Effetti
-
-Il GM sceglie l'effetto appropriato alla situazione:
-
-| Effetto | Cosa succede |
-|---------|-------------|
-| **Fuga di notizie** | Il sospettato o un terzo viene informato dell'operazione |
-| **Omissione** | Un dettaglio rilevante viene omesso dal rapporto |
-| **Ritardo deliberato** | L'operazione richiede il doppio del tempo previsto |
-| **Depistaggio** | Il rapporto contiene un'informazione fuorviante |
-| **Sabotaggio** | Prove alterate o "perse accidentalmente" |
-| **Copertura** | L'ente protegge attivamente qualcuno coinvolto |
-
-**I giocatori non sanno** che la corruzione ha agito. Lo scoprono quando il sospettato cambia comportamento, quando un dettaglio non torna, quando qualcuno sa cose che non dovrebbe sapere.
-
-### Forme di Corruzione
-
-Il GM annota brevemente la natura della corruzione dell'ente — non ha effetto meccanico, ma guida la scelta dell'effetto quando si attiva. Le forme corrispondono alle specializzazioni di Corruzione: a qualsiasi livello il GM può annotare quale forma prevale come nota narrativa, ma solo a Corruzione 8+ la forma diventa una specializzazione con bonus meccanico (+1).
-
-### Contromisure dei PG
-
-I giocatori possono proteggersi dalla corruzione:
-
-- **Compartimentare le informazioni** — non dire all'ente tutto quello che sanno
-- **Usare un ente diverso** — delegare a uno più pulito, anche se meno potente
-- **Verificare i risultati** — confrontare le informazioni ricevute con altre fonti
-- **Indagare l'ente stesso** — scoprire chi è corrotto e aggirarlo
-
-### Esempio
-
-**Situazione**: I PG chiedono alla Questura di pedinare un uomo d'affari sospettato di legami con la yakuza.
-
-**Operazione**: Il GM tira normalmente per il pedinamento → Organico 7, dado 5 → Successo.
-
-**Tiro Corruzione**: La Questura ha Corruzione 5. L'operazione tocca la criminalità organizzata → il GM tira 2d6 in segreto: esce 4. 4 ≤ 5 → la corruzione si attiva.
-
-**Effetto**: Il GM sceglie "Fuga di notizie". L'uomo d'affari viene avvisato da qualcuno dentro la Questura. I PG ricevono il rapporto del pedinamento — tutto regolare, nessun segnale. Ma due giorni dopo, l'uomo d'affari cambia improvvisamente abitudini. Se i PG indagano, scopriranno che qualcuno ha fatto una telefonata.
-
----
-
-## Esempi di Ente
-
-Gli esempi seguono una progressione dal più piccolo al più grande e strutturato. Usali come riferimento diretto o come punto di partenza per calibrare enti simili.
-
----
-
-### Stazione dei Carabinieri — Piccolo Comune (< 2.000 abitanti)
-*Tre o quattro uomini, una macchina, nessuna specializzazione. Conoscono tutti nel paese.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 4 |
-| Efficienza | 4 |
-| Velocità | 5 |
-| Risorse | 4 |
-| Rete | 7 |
-| Corruzione | 4 |
-
-Specializzazioni: nessuna.
-
-Note: Rete alta perché in un paese piccolo tutti si conoscono e le informazioni circolano. Per qualsiasi operazione che richieda più di due persone o attrezzatura, devono chiedere supporto al distretto superiore. Tempi di risposta rapidi solo per eventi locali. Corruzione minima — al massimo qualche favore al notabile locale.
-
----
-
-### Commissariato di Polizia — Comune Medio (10.000–30.000 abitanti)
-*Struttura funzionante, personale sufficiente per operazioni ordinarie, risorse nella media.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 6 |
-| Efficienza | 5 |
-| Velocità | 6 |
-| Risorse | 5 |
-| Rete | 6 |
-| Corruzione | 4 |
-
-Specializzazioni: nessuna.
-
-Note: Capace di gestire la maggior parte delle operazioni standard. Per analisi forensi avanzate dipende da laboratori esterni. Pedinamenti fattibili ma con personale ridotto. Corruzione fisiologica, niente di sistemico.
-
----
-
-### Questura — Città Media (100.000–300.000 abitanti)
-*Struttura completa, divisioni separate, laboratorio interno, buona rete territoriale.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 7 |
-| Efficienza | 7 |
-| Velocità | 6 |
-| Risorse | 7 |
-| Rete | 7 |
-| Corruzione | 5 |
-
-Specializzazioni: nessuna (nessun attributo ≥ 8).
-
-Note: Ente solido e affidabile per la maggior parte delle operazioni. Nessun punto di eccellenza ma nessuna lacuna grave. Il tipo di ente con cui i PG interagiscono più spesso. Corruzione presente ma contenuta — qualche sacca, nessun sistema.
-
----
-
-### Questura — Grande Città (500.000+ abitanti)
-*Struttura complessa con divisioni specializzate, laboratorio forense interno, rete capillare.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 8 |
-| Efficienza | 7 |
-| Velocità | 6 |
-| Risorse | 8 |
-| Rete | 7 |
-| Corruzione | 5 |
-
-Specializzazioni automatiche:
-- Organico 8 → **Squadra di sorveglianza**
-- Risorse 8 → **Archivio esteso**
-
-Note: Può gestire operazioni parallele senza sguarnire il territorio. L'archivio è completo e aggiornato. La velocità rimane nella media per via delle procedure burocratiche. Più grande l'ente, più esposizione alle pressioni — corruzione presente.
-
----
-
-### Ufficio Anagrafe e Stato Civile — Comune
-*Ente amministrativo, nessuna capacità operativa sul campo, ma archivi completi e precisi.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 4 |
-| Efficienza | 6 |
-| Velocità | 4 |
-| Risorse | 7 |
-| Rete | 5 |
-| Corruzione | 4 |
-
-Specializzazioni automatiche:
-- Risorse 7 → nessuna (soglia non raggiunta).
-
-Note: Inutile per operazioni di campo. Prezioso per localizzare persone, verificare identità, accedere a registri storici. La velocità bassa riflette i tempi burocratici — una richiesta urgente richiede comunque giorni. Corruzione minima — al massimo qualche accesso non autorizzato ai registri.
-
----
-
-### Ufficio Tributi e Catasto — Provincia
-*Accesso a dati finanziari e patrimoniali, procedure lente, nessuna operatività.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 4 |
-| Efficienza | 5 |
-| Velocità | 4 |
-| Risorse | 8 |
-| Rete | 6 |
-| Corruzione | 5 |
-
-Specializzazioni automatiche:
-- Risorse 8 → **Archivio esteso**
-
-Note: Utile per tracciare proprietà, verificare situazioni debitorie, ricostruire movimenti patrimoniali. Con mandato o collaborazione formale, può fornire informazioni che nessun altro ente ha. Corruzione presente — dati sensibili e pressioni immobiliari creano opportunità.
-
----
-
-### Polizia Provinciale / Polizia Stradale
-*Copertura territoriale ampia, specializzata in viabilità e controllo del territorio rurale.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 6 |
-| Efficienza | 5 |
-| Velocità | 7 |
-| Risorse | 6 |
-| Rete | 7 |
-| Corruzione | 4 |
-
-Specializzazioni automatiche: nessuna.
-
-Note: Ottima per inseguimenti su strada, localizzazione di veicoli, controllo di zone extraurbane. Meno efficace in ambienti urbani complessi o per indagini che richiedono analisi. Corruzione minima — poco esposta a pressioni esterne.
-
----
-
-### Direzione Distrettuale Antimafia / Unità Investigativa Speciale
-*Struttura d'élite, personale ridotto ma altamente selezionato, risorse eccezionali.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 5 |
-| Efficienza | 9 |
-| Velocità | 7 |
-| Risorse | 8 |
-| Rete | 9 |
-| Corruzione | 4 |
-
-Specializzazioni automatiche:
-- Efficienza 9 → **Laboratorio scientifico** + **Profilazione**
-- Rete 9 → **Rete criminale** + **Contatti giudiziari**
-- Risorse 8 → **Tecnologia avanzata**
-
-Note: Quasi impossibile da delegare senza una ragione seria — questo tipo di ente non collabora con chiunque. Se i PG riescono ad attivarlo, è una risorsa eccezionale. Il basso Organico significa che può gestire una sola operazione importante alla volta. Corruzione minima — personale selezionato per integrità.
-
----
-
-### Servizio Segreto / Intelligence Nazionale
-*Ente con risorse illimitate sulla carta, ma lentissimo nelle procedure e opaco nella collaborazione.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 7 |
-| Efficienza | 7 |
-| Velocità | 4 |
-| Risorse | 9 |
-| Rete | 9 |
-| Corruzione | 7 |
-
-Specializzazioni automatiche:
-- Risorse 9 → **Tecnologia avanzata** + **Fondi operativi**
-- Rete 9 → **Cooperazione internazionale** + **Contatti politici**
-
-Note: La velocità bassissima riflette procedure interne rigide, catene di autorizzazione lunghe, e la tendenza a non condividere informazioni. Quando finalmente agisce, lo fa con precisione assoluta. I PG raramente hanno accesso diretto — passano attraverso canali intermedi. Corruzione endemica — non per venalità, ma per agenda propria e opacità strutturale. Forma: agenda propria.
-
----
-
-### Procura della Repubblica / 検察庁 Kensatsuchō
-*L'ente che autorizza. Senza il magistrato, certe porte restano chiuse.*
-
-| Attributo | Valore |
-|-----------|--------|
-| Organico | 4 |
-| Efficienza | 7 |
-| Velocità | 5 |
-| Risorse | 6 |
-| Rete | 8 |
-| Corruzione | 5 |
-
-Specializzazioni automatiche:
-- Rete 8 → **Contatti giudiziari**
-
-Note: La Procura non è un ente operativo — non pedina, non perquisisce, non arresta. È l'ente che **autorizza** gli altri a farlo. I PG passano dalla Procura quando hanno bisogno di un mandato di perquisizione, un'autorizzazione a intercettazioni, l'accesso a cartelle cliniche, un sequestro di documenti, o un ordine di custodia cautelare. Corruzione presente — pressioni politiche possibili, magistrati non sempre indipendenti.
-
-Il tiro sulla Procura rappresenta quanto velocemente e favorevolmente il magistrato risponde. L'attributo rilevante dipende dalla richiesta:
-
-| Richiesta | Attributo |
-|-----------|-----------|
-| Mandato di perquisizione | Efficienza |
-| Autorizzazione intercettazioni (in Giappone 1997: illegali, nessun magistrato può concederle) | Risorse |
-| Accesso a cartelle cliniche | Efficienza |
-| Sequestro documenti bancari/aziendali | Efficienza |
-| Ordine di custodia cautelare | Rete |
-
-I PG non contattano il magistrato direttamente — passano attraverso il loro ente, che inoltra la richiesta. Se il distretto ha la specializzazione Contatti giudiziari, il tiro sulla Procura riceve +1.
-
----
-
-## Esempi di Richiesta e Tiro
-
-Questi esempi mostrano il processo completo: i PG avanzano una richiesta, il GM identifica attributo e difficoltà, tira i dadi, applica il risultato.
-
----
-
-### Esempio 1 — Pedinamento semplice
-
-**Situazione**: I PG indagano su un commerciante sospettato di essere coinvolto in un caso di ricettazione. Chiedono alla Questura della città media di farlo pedinare per 48 ore. Il commerciante non sa di essere sospettato.
-
-**Ente**: Questura — città media (Organico 7)
-**Azione**: Pedinamento → attributo Organico
-**Soggetto**: persona normale → modificatore 0
-**Attributo effettivo**: 7
-**Specializzazioni**: nessuna
-
-**Il GM tira 2d6: esce 5.**
-5 ≤ 7 → **Successo**.
-
-**Narrativa**: "Abbiamo seguito il soggetto per due giorni. Si è mosso tra il negozio, un bar in periferia e un magazzino in zona industriale. Tre incontri con la stessa persona — uomo, quarantacinque anni circa, non identificato. Vi mandiamo le fotografie."
-
----
-
-### Esempio 2 — Pedinamento difficile
-
-**Situazione**: Stessa richiesta, ma il commerciante ha ricevuto una soffiata e sa che qualcuno lo sta guardando. Si muove in modo irregolare, cambia percorsi, usa taxi diversi.
-
-**Ente**: Questura — città media (Organico 7)
-**Azione**: Pedinamento → attributo Organico
-**Soggetto**: persona cauta e già allertata → modificatore -2
-**Attributo effettivo**: 7 - 2 = 5
-**Specializzazioni**: nessuna
-
-**Il GM tira 2d6: esce 8.**
-8 > 5 → **Fallimento leggero**.
-
-**Narrativa**: "L'abbiamo perso nel centro storico nel pomeriggio del secondo giorno. È entrato in un palazzo da un ingresso e uscito da un altro. Nessuna conseguenza — non sembra essersi accorto di noi."
-
----
-
-### Esempio 3 — Pedinamento con specializzazione
-
-**Situazione**: I PG chiedono alla Direzione Speciale di seguire un sospettato esperto di contromisure — sa riconoscere i pedinamenti, cambia auto, usa mosse di controllo.
-
-**Ente**: Direzione Speciale (Organico 5, specializzazione Squadra di sorveglianza → +1)
-**Azione**: Pedinamento → attributo Organico
-**Soggetto**: professionista esperto → modificatore -3
-**Attributo effettivo**: 5 + 1 (specializzazione) - 3 (difficoltà) = 3
-**Nota**: attributo sotto 4, si usa 4 come minimo
-
-**Il GM tira 2d6: esce 3.**
-Dado puro 3 → **Ottimo**.
-
-**Narrativa**: "Il soggetto ha eseguito tre manovre di contro-pedinamento. I nostri lo hanno perso due volte deliberatamente per non farsi bruciare, poi lo hanno ripreso. Ha incontrato una donna in un café — abbiamo le foto. Ha consegnato qualcosa. Piccola busta, non abbiamo visto il contenuto."
-
----
-
-### Esempio 4 — Ricerca in archivi
-
-**Situazione**: I PG vogliono sapere se una certa persona ha precedenti penali e dove è residente. Chiedono alla Questura locale.
-
-**Ente**: Questura — città media (Risorse 7)
-**Azione**: Ricerca in archivi e banche dati → attributo Risorse
-**Soggetto**: nessuna difficoltà specifica → modificatore 0
-**Attributo effettivo**: 7
-
-**Il GM tira 2d6: esce 2.**
-Dado 2 → **Critico positivo**.
-
-**Narrativa**: "Precedenti: due denunce per truffa, archiviate. Residenza confermata. Ma c'è altro — l'uomo è stato segnalato tre anni fa in un'indagine per associazione a delinquere, poi separata. Il fascicolo è ancora aperto presso la Procura di un'altra città. Vi do il numero del PM titolare."
-
----
-
-### Esempio 5 — Richiesta a un ente inadeguato
-
-**Situazione**: I PG si trovano in un piccolo comune e chiedono alla stazione locale di fare un'analisi forense su un reperto.
-
-**Ente**: Stazione piccolo comune (Efficienza 4)
-**Azione**: Analisi forense → attributo Efficienza
-**Soggetto**: nessuna difficoltà → modificatore 0
-**Attributo effettivo**: 4
-
-**Il GM tira 2d6: esce 9.**
-9 > 4 → **Fallimento leggero**.
-
-**Narrativa**: "Siamo spiacenti, non abbiamo l'attrezzatura per questo tipo di analisi. Dobbiamo mandare il reperto al laboratorio provinciale. I tempi sono di cinque-sette giorni lavorativi."
-
-*Nota del GM: questo non è un fallimento vero — è semplicemente la realtà di un ente piccolo. I PG perdono tempo, non informazioni. Possono scegliere di aspettare o di trovare un ente più attrezzato.*
-
----
-
-### Esempio 6 — Richiesta all'ufficio anagrafe
-
-**Situazione**: I PG devono localizzare una persona di cui conoscono solo il nome e la città di provenienza approssimativa.
-
-**Ente**: Ufficio Anagrafe comunale (Risorse 7)
-**Azione**: Localizzazione persona → attributo Rete (ma trattandosi di archivi anagrafici il GM decide di usare Risorse — è una ricerca documentale, non operativa)
-**Soggetto**: nessuna difficoltà → modificatore 0
-**Attributo effettivo**: 7
-
-**Il GM tira 2d6: esce 6.**
-6 ≤ 7 → **Successo**.
-
-**Narrativa**: "La persona risulta residente in via tale al numero civico tale. Risulta celibe, nessuna variazione di residenza negli ultimi dieci anni. I dati sono aggiornati al mese scorso."
-
----
-
-## Nota sulle Specializzazioni Cross-Attributo
-
-In alcuni casi una specializzazione può essere assegnata a un attributo diverso da quello indicato nella lista, se è narrativamente coerente con il tipo di ente. Il GM decide — non è una regola rigida, è un'indicazione. Un'agenzia privata con una rete eccezionale può avere copertura civile anche con Organico basso, perché i suoi contatti suppliscono alla mancanza di personale.
-
----
-
+> **La scheda completa è nel Manuale Situazioni** (sezione *La Scheda Distretto*): generazione degli enti, specializzazioni, azioni delegabili, tempi delle operazioni, la meccanica della Corruzione, dieci enti d'esempio e la Procura. La scheda del distretto della serie Investigare è in `Materiale/Scheda_Distretto.md`.
 
 ---
 
@@ -1549,7 +971,7 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 - Ha trovato una soluzione (Lucidità)?
 - È rimasto professionale nonostante tutto (Distacco)?
 
-> **Esempio di scena personale**: Il GM attiva il Kage di Tanaka. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Tanaka non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Tanaka prende -1 a un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
+> **Esempio di scena personale**: Il GM attiva il Kage di Kimura. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Kimura non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Kimura prende -1 a un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
 
 ---
 
@@ -1572,7 +994,7 @@ Gli attributi cambiano durante l'avventura tramite:
 > - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco sale a 7, Ki a 10. Ma il Ki non può superare il valore di inizio sessione (9) — il punto è perso.
 > - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di abbassare Ascolto. Ki scende a 8.
 > - Scena personale con il padre: gestita bene dal voto dei giocatori. Sceglie +1 Silenzio (sale da 5 a 6).
-> - Fine sessione: recupero notturno. Il soroban è a 6, sopra la partenza (Kiwami+ = +2, Nami- = -1): tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
+> - Fine sessione: recupero notturno. Il soroban è a 6 (Kiwami+ = +2, Nami- = -1): 5 o più → tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
 > - Sessione successiva inizia con: Distacco 7, Ascolto 7, Silenzio 6, Ki 9.
 
 ---
@@ -1581,7 +1003,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 1: Interrogatorio
 
-**Situazione**: Il detective Tanaka interroga la signora Ogawa, testimone di un omicidio. Lei è nervosa ma non ostile (En 0).
+**Situazione**: Il detective Nakamura interroga la signora Ogawa, testimone di un omicidio. Lei è nervosa ma non ostile (En 0).
 
 **GM**: "La signora Ogawa ti racconta che quella sera era a casa. Ha sentito un rumore verso le 22, ma non ha visto nulla. Sembra agitata."
 
@@ -1657,7 +1079,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **GM**: "Gli altri, volete intervenire?"
 
-**Giocatore 2**: "Tanaka bussa alla porta. 'Kimura. Siamo una squadra. Apri.' Sacrifico 1 Ki per lui."
+**Giocatore 2**: "Yamamoto bussa alla porta. 'Kimura. Siamo una squadra. Apri.' Sacrifico 1 Ki per lui."
 
 **Giocatore 3**: "Anche Sato si avvicina. 'Abbiamo tutti giorni di merda. Vieni, ti offro un caffè.' Sacrifico 1 Ki anch'io."
 
@@ -1669,7 +1091,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ## Esempio 5: Relazione con PNG
 
-**Situazione**: Il detective Tanaka ha già avuto un diverbio con l'ispettore Shimizu (En -2). Ora deve chiedergli un favore.
+**Situazione**: Il detective Honda ha già avuto un diverbio con l'ispettore Shimizu (En -2). Ora deve chiedergli un favore.
 
 **Giocatore**: "Vado da Shimizu e gli chiedo accesso ai file riservati."
 
@@ -1677,7 +1099,7 @@ Gli attributi cambiano durante l'avventura tramite:
 
 **Giocatore** (Presenza 7): "Tiro... dado puro 5. Con il malus fa 7. Esattamente uguale al mio attributo."
 
-**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Shimizu sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Tanaka. Non dimenticarlo.'"
+**GM**: "Successo, ma di un soffio. Il dado puro era 5, che sarebbe già successo da solo, quindi l'En non cala. Shimizu sbuffa: 'Solo perché il caso è prioritario. Ma mi devi un favore, Honda. Non dimenticarlo.'"
 
 ---
 
@@ -1786,11 +1208,11 @@ KI (気)
 < 1 = Fuori gioco definitivo
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
-Soroban traccia Nami/Kiwami della giornata (+1/+2/-1/-2)
-Soroban ≥ partenza: 2d6 prendi il migliore (reroll 1) = Ki recuperati
-Soroban < partenza: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
-Su foglio: partenza 5, range 0-9
-Dopo il recupero: soroban torna al valore medio
+Numero 0-9 segnato su scheda o foglio, parte da 5
+Traccia i Nami/Kiwami della giornata (+1/+2/-1/-2)
+Soroban ≥ 5: 2d6 prendi il migliore (reroll 1) = Ki recuperati
+Soroban < 5: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
+Dopo il recupero: torna a 5
 (mai oltre il max di inizio sessione)
 
 NASAKE (情け) - COMPASSIONE
@@ -1800,7 +1222,7 @@ Solo donabile a un compagno (giocando la scena)
 
 KYŌRYOKU (協力) - SUPPORTO
 Compagno presente dà +1 al tiro (prima di tirare)
-Successo: nessun costo. Fallimento: entrambi -1 Ki
+Successo: nessun costo. Fallimento leggero: solo il compagno -1 Ki
 Nami- (11): chi tira -1 (scelta), compagno -1 Ki
 Kiwami- (12): chi tira -1 attr -1 Ki, compagno -1 Ki
 Receiver: 1 supporto per scena. Helper: può aiutare PG diversi
@@ -1811,7 +1233,10 @@ SATORI (悟り)
 
 GOU (業)
 Costo: 2, 3 o 4 Ki (variabile per Gou)
-Secondo uso nella stessa sessione: costo doppio
+Ogni uso raddoppia il costo del successivo (2→4→8)
+Una notte di sonno riabbassa il costo di un grado
+Pagabile fino a Ki 1 (mai sotto); a Ki ≤ 3 il Genkai
+scatta a effetto concluso (i compagni possono aiutare)
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi
 Niente Kiwami, niente Nami

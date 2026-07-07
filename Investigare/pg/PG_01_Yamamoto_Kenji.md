@@ -54,7 +54,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il **secondo uso nella stessa sessione costa il doppio**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
 ### Opzione 1: Pugno di Ferro 鉄拳
 *Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*

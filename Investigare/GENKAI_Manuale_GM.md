@@ -30,7 +30,7 @@ Questo mantiene l'immersione e tiene il GM in una posizione neutra. Yamada è il
 
 - I documenti che arrivano — *"Il referto è sul tavolo, signore."*
 - Le informazioni dalla centrale — *"La scientifica ha concluso l'analisi."*
-- I testimoni convocati — *"La signora Tanaka è in sala d'attesa."*
+- I testimoni convocati — *"La signora Ueno è in sala d'attesa."*
 - Le comunicazioni dal commissario — *"Il commissario Taniguchi vuole un aggiornamento."*
 - Le richieste logistiche — se i PG vogliono convocare qualcuno, lo chiedono a Yamada
 - Gli aggiornamenti del calendario vivo — *"Stanotte c'è stato un articolo sul giornale."*
@@ -371,7 +371,7 @@ Non tutta la corruzione è qualcosa che i PG subiscono. Alcune zone grigie sono 
 
 ### Come il GM gestisce la corruzione
 
-La corruzione ha una meccanica dedicata — l'attributo **Corruzione** sulla scheda dell'ente, con tiro 2d6 segreto (vedi la sezione *Corruzione* nel Regolamento e nel Manuale Situazioni). Ma la meccanica è solo la base. La vera gestione della corruzione è narrativa — serve che il mondo reagisca in modo coerente.
+La corruzione ha una meccanica dedicata — l'attributo **Corruzione** sulla scheda dell'ente, con tiro 2d6 segreto (vedi la sezione *Corruzione* nel Manuale Situazioni). Ma la meccanica è solo la base. La vera gestione della corruzione è narrativa — serve che il mondo reagisca in modo coerente.
 
 **La corruzione è un'offerta, non un obbligo.** Non forzare i PG verso scelte moralmente ambigue. Presenta le opportunità e lascia che decidano. Un informatore yakuza che offre informazioni in cambio di un favore è un'opportunità — non una trappola del GM.
 
@@ -684,7 +684,7 @@ Il silenzio dopo la prova è il momento più importante. Non riempirlo. Aspettar
 
 **Al tavolo**: questo è il momento drammatico che i giocatori aspettano. Il tabulato telefonico. La fibra di tessuto. L'estratto conto con il bonifico. La tecnica funziona meglio quando i PG hanno aspettato il momento giusto invece di bruciare le prove troppo presto.
 
-> **Esempio**: I PG sanno da ore che l'alibi non regge. Invece di dirlo subito, lasciano che il sospettato lo ripeta ancora una volta. Poi Tanaka mette il registro sul tavolo. *"Questo è il registro degli accessi al parcheggio. La sua auto è uscita alle 21:47. Lei ha detto che è partito dopo le 22."* Silenzio. Nessuna domanda. Aspetta.
+> **Esempio**: I PG sanno da ore che l'alibi non regge. Invece di dirlo subito, lasciano che il sospettato lo ripeta ancora una volta. Poi Nakamura mette il registro sul tavolo. *"Questo è il registro degli accessi al parcheggio. La sua auto è uscita alle 21:47. Lei ha detto che è partito dopo le 22."* Silenzio. Nessuna domanda. Aspetta.
 
 ---
 
@@ -719,6 +719,8 @@ Il PG dichiara quale tecnica usa per aprire l'interrogatorio. Fai tirare sull'at
 | Fallimento | En resta invariato |
 | Kiwami negativo (dado puro = 12) | En temporaneo -1 (l'interrogato capisce la manipolazione) |
 
+**Il tiro di setup è pura tecnica**: il modificatore En standard **non** si applica — il PG sta calibrando la propria abilità, non chiedendo un favore. L'ostilità pesa solo agli estremi (vedi *En agli Estremi*: a En -3/-4/-5 il dado del setup prende +1/+2/+3). L'En — base più temporaneo — si applica invece normalmente ai tiri della Fase 2.
+
 Il setup richiede tempo narrativo — minuti di conversazione, non secondi. Non è un tiro e via.
 
 **Fase 2 — Domande**
@@ -729,16 +731,23 @@ Più successi consecutivi = l'interrogato si apre progressivamente. Un falliment
 
 ### En agli Estremi
 
-| En attuale | Effetto sul setup |
-|------------|-------------------|
-| -3 | Soglia del tiro +1 (serve di più per aprirlo) |
-| -4 | Soglia del tiro +2 |
-| -5 | Soglia del tiro +3 |
+| En attuale | Effetto sul tiro di setup |
+|------------|---------------------------|
+| da -2 a +2 | Nessun modificatore — conta solo la tecnica del PG |
+| -3 | +1 al dado del setup |
+| -4 | +2 al dado del setup |
+| -5 | +3 al dado del setup |
 | +3 o più | La Fase 1 non serve — passa direttamente alle domande |
+
+Questi sono gli **unici** modificatori del setup: il malus En standard non si somma (a En -5 sarebbe +8 al dado, impossibile per definizione — e le tecniche servono proprio con gli ostili).
 
 A En molto negativo, lo shift è quasi sempre temporaneo. Un nemico giurato non diventa amico in 10 minuti.
 
 A En molto positivo, attenzione: un Kiwami negativo (dado puro 12) su un alleato può danneggiare l'En **permanentemente** — il PNG si sente tradito dalla manipolazione.
+
+> **Esempio — testimone ostile (En -3)**: Nakamura (Ascolto 7) interroga Okabe, un imprenditore che detesta la polizia (En -3). Apre con il Rispecchiamento: parla lentamente, si adatta al suo ritmo. Tiro di setup su Ascolto: niente malus En standard, solo la soglia di En -3 → +1 al dado. Esce 5 → 5+1 = 6 ≤ 7: successo. Okabe abbassa la guardia — En temporaneo -2 per questo interrogatorio. Le domande di Fase 2 ora si tirano con +2 al dado invece di +3: il terreno preparato ha reso tutto un gradino più facile. A fine interrogatorio, l'En torna a -3.
+
+> **Esempio — nemico (En -5)**: Fujita (Silenzio 7) prova Fingere di Sapere su un riscossore yakuza (En -5) che teme di essere stato scaricato dal suo clan. Setup su Silenzio con +3 al dado (soglia di En -5). Esce 4 → 4+3 = 7 ≤ 7: successo per un soffio. Il riscossore vacilla — En temporaneo -4, e le domande di Fase 2 restano durissime (+4 al dado) ma non impossibili. Se al setup fosse uscito un 12 naturale: l'interrogato capisce la manipolazione — l'En temporaneo scenderebbe di 1, ma a -5 è già a fondo scala: resta -5, e ora il riscossore sa che stanno provando a lavorarselo.
 
 ### Permanenza dell'En Temporaneo
 
@@ -813,13 +822,13 @@ Usa il profilo del PNG per decidere come reagisce:
 
 ### Esempio Meccanico
 
-**Situazione**: Tanaka interroga Hayashi (En 0, sospettato). Hayashi è nervoso ma non vuole cedere.
+**Situazione**: Kimura interroga Hayashi (En 0, sospettato). Hayashi è nervoso ma non vuole cedere.
 
-**Fase 1**: Tanaka dichiara: *"Parlo piano, mi adatto al suo ritmo. Voglio che si senta a suo agio."* — Rispecchiamento. Il GM chiede un tiro su Ascolto (6). Dado puro: 5. 5 ≤ 6 = Successo. En temporaneo sale a +1 per questo interrogatorio.
+**Fase 1**: Kimura dichiara: *"Parlo piano, mi adatto al suo ritmo. Voglio che si senta a suo agio."* — Rispecchiamento. Il GM chiede un tiro su Ascolto (6). Dado puro: 5. 5 ≤ 6 = Successo. En temporaneo sale a +1 per questo interrogatorio.
 
-**Fase 2**: Tanaka chiede dove fosse la sera del fatto. Tiro su Presenza (7) con En +1. Dado puro: 7. Con il bonus: 7-1 = 6. 6 ≤ 7 = Successo. Hayashi risponde, ma in modo evasivo. Tanaka usa l'Eco: *"Al bar fino alle undici?"* — Tiro su Pazienza (6). Dado puro: 8. 8 > 6 = Fallimento. Hayashi nota la tecnica, si irrigidisce su quel punto. Ma non è ostile — l'En temporaneo resta a +1, semplicemente su quell'argomento non dice altro.
+**Fase 2**: Kimura chiede dove fosse la sera del fatto. Tiro su Presenza (7) con En +1. Dado puro: 7. Con il bonus: 7-1 = 6. 6 ≤ 7 = Successo. Hayashi risponde, ma in modo evasivo. Kimura usa l'Eco: *"Al bar fino alle undici?"* — Tiro su Pazienza (6). Dado puro: 8. 8 > 6 = Fallimento. Hayashi nota la tecnica, si irrigidisce su quel punto. Ma non è ostile — l'En temporaneo resta a +1, semplicemente su quell'argomento non dice altro.
 
-Tanaka ha ancora il bonus per le altre domande. L'interrogatorio non è perso — solo quel punto è chiuso per ora.
+Kimura ha ancora il bonus per le altre domande. L'interrogatorio non è perso — solo quel punto è chiuso per ora.
 
 ---
 
@@ -876,6 +885,8 @@ Gli altri giocatori votano se la scena è stata gestita bene o male. Il criterio
 I PNG Notevoli sono le figure ricorrenti della serie — persone che i PG incontrano in ogni avventura e con cui costruiscono un rapporto nel tempo.
 
 Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i propri problemi, le proprie reazioni. Il rapporto con i PG evolve in base a come vengono trattati.
+
+**Le loro schede si costruiscono con il metodo diretto**: il GM assegna i valori che servono al ruolo, senza vincolo di budget. Le figure d'autorità — il commissario, il procuratore — pesano più dei PG (41-42 punti di attributi contro ~38), ed è voluto: sono ancore istituzionali, non avversari da bilanciare. Il loro peso non entra quasi mai in un tiro contrapposto — si sente nella stanza.
 
 ## I Quattro Ruoli Fondamentali
 

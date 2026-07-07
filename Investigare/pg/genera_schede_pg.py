@@ -324,6 +324,10 @@ def genera_scheda(d, output_filename, image_path=None):
     p = c_ki.add_paragraph()
     add_run(p, "Ki attuale: ________________ ", size=11, bold=True, color=NAVY)
     add_run(p, "≤3 Genkai", size=9, italic=True, color=DARK_RED)
+    p = c_ki.add_paragraph()
+    p.paragraph_format.space_before = Pt(2)
+    add_run(p, "Soroban: ________ ", size=11, bold=True, color=NAVY)
+    add_run(p, "parte da 5 (0-9); +1 su 3, +2 su 2, -1 su 11, -2 su 12; decide il recupero notturno", size=8, italic=True, color=GRAY)
 
     c_sat = t2.rows[0].cells[1]
     set_cell_width(c_sat, 7)
@@ -381,7 +385,7 @@ def genera_scheda(d, output_filename, image_path=None):
 
     # ── GOU ──
     add_section_header(doc, "業", "GOU — IL DEBITO  (scegli uno)")
-    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Secondo uso: costo doppio.",
+    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado.",
              size=9, color=GRAY, italic=True, after=2)
 
     add_gou(doc, d["gou_1_nome"], d["gou_1_desc"], d["gou_1_attributo"],
@@ -654,10 +658,10 @@ PG_03 = {
     "gou_3_costo": "3 Ki",
     "gou_3_successo": "Il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione",
     "gou_3_fallimento": "Il PNG è stanco, la coerenza vacilla, ma la storia regge",
-    "chi_sei": "Sei quello che fa parlare le persone. Non con la forza — con la pazienza. Ti siedi, aspetti, ascolti. Prima o poi tutti parlano. Figlio maggiore di una famiglia modesta di Osaka, hai lavorato duro per arrivare dove sei. Tuo padre è morto quando avevi 15 anni. Tuo fratello minore Daisuke (34 anni) è l'opposto — vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti.",
+    "chi_sei": "Sei quello che fa parlare le persone. Non con la forza — con la pazienza. Ti siedi, aspetti, ascolti. Prima o poi tutti parlano. Figlio maggiore di una famiglia modesta di Osaka, hai lavorato duro per arrivare dove sei. Tuo padre è morto quando avevi 15 anni. Tuo fratello minore Kazuo (34 anni) è l'opposto — vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti.",
     "problema_titolo": "IL FRATELLO",
-    "problema_testo": "Daisuke è un peso che ti porti dietro da sempre. Gli hai già prestato soldi tre volte. Ogni volta l'ultima. Ogni volta una bugia. Tua moglie non sa di questi prestiti: se lo scoprisse, ci sarebbero problemi anche a casa. Ma Daisuke è sangue del tuo sangue, e quando ha bisogno sa sempre dove trovare suo fratello.",
-    "png_nome": "NAKAMURA Daisuke",
+    "problema_testo": "Kazuo è un peso che ti porti dietro da sempre. Gli hai già prestato soldi tre volte. Ogni volta l'ultima. Ogni volta una bugia. Tua moglie non sa di questi prestiti: se lo scoprisse, ci sarebbero problemi anche a casa. Ma Kazuo è sangue del tuo sangue, e quando ha bisogno sa sempre dove trovare suo fratello.",
+    "png_nome": "NAKAMURA Kazuo",
     "png_eta": "34 anni",
     "png_occupazione": "Nessuno fisso — imprenditore",
     "png_relazione": "Fratello minore",

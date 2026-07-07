@@ -107,11 +107,11 @@ Il Ki è lo stato complessivo del tuo personaggio: fisico, mentale, emotivo tutt
 
 ### Il Ki si recupera — Il Soroban 算盤
 
-Al centro del tavolo c'è un **soroban** (算盤, abaco giapponese). Ogni giocatore ha una colonna che traccia come sta andando la giornata del suo personaggio.
+Il **Soroban** (算盤, "abaco") è il conteggio della tua giornata: un numero da **0 a 9** che segni sulla scheda o su un foglio comune, e che traccia come sta andando la giornata del tuo personaggio.
 
-> Se non hai un soroban fisico, usa un foglio al centro del tavolo con un numero per ogni PG. **Partenza 5, minimo 0, massimo 9.** L'importante è che sia visibile a tutti — i tuoi compagni devono poter vedere come stai.
+> Se lo tenete su un foglio comune al centro del tavolo, i compagni vedono come stai senza chiederlo. Non è obbligatorio — ma aiuta la squadra a leggersi.
 
-**Come funziona**: all'inizio di ogni giornata in-game, la tua colonna parte dal valore medio (su foglio: 5). Durante la giornata, ogni risultato estremo sui tiri di attributo muove le perline:
+**Come funziona**: all'inizio di ogni giornata in-game, il tuo Soroban parte da **5**. Durante la giornata, ogni risultato estremo sui tiri di attributo lo muove:
 
 | Evento | Movimento |
 |--------|-----------|
@@ -120,18 +120,18 @@ Al centro del tavolo c'è un **soroban** (算盤, abaco giapponese). Ogni giocat
 | Nami negativo (dado = 11) | -1 |
 | Kiwami negativo (dado = 12) | -2 |
 
-Solo tiri di attributo — non Gou, non En, non combattimento, non tiri di pressione. Ogni volta che succede, ti alzi e muovi le perline. Il valore non scende sotto 0 e non supera il massimo.
+Solo tiri di attributo — non Gou, non En, non combattimento, non tiri di pressione. Ogni volta che succede, aggiorni il valore. Non scende sotto 0 e non supera 9.
 
-**A fine giornata**, quando il tuo personaggio dorme, leggi il soroban:
+**A fine giornata**, quando il tuo personaggio dorme, leggi il Soroban:
 
-- **Alla metà o sopra**: tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado
-- **Sotto la metà**: tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado
+- **5 o più**: tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado
+- **Sotto 5**: tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado
 
-Il risultato = Ki recuperati. Non puoi mai superare il valore con cui hai iniziato la sessione. Poi riporti la colonna al valore medio — domani è un nuovo giorno.
+Il risultato = Ki recuperati. Non puoi mai superare il valore con cui hai iniziato la sessione. Poi riporti il Soroban a 5 — domani è un nuovo giorno.
 
 **Momenti narrativi eccezionali**: il GM può assegnare +1 Ki per un momento speciale — direttamente a te, oppure come +1 al soroban (influenza il recupero notturno). Sceglie lui.
 
-**Perché è visibile a tutti**: il soroban racconta la tua giornata senza bisogno di parole. I tuoi compagni vedono che sei messo male — e possono reagire. Il capo che ti porta fuori cinque minuti. Il collega che si offre di fare l'interrogatorio difficile al tuo posto. Non devi chiedere aiuto. Le perline lo dicono per te.
+**Non è un segreto**: il Soroban racconta la tua giornata senza bisogno di parole. Se i compagni possono vederlo, reagiscono — il capo che ti porta fuori cinque minuti, il collega che si offre di fare l'interrogatorio difficile al tuo posto. Non devi chiedere aiuto. Il numero lo dice per te.
 
 > **Esempio**: Sato parte a 5. Kiwami negativo sulla scena (-2), Nami negativo sull'interrogatorio (-1). Soroban a 2. A fine giornata tira 2d6 prendi il peggiore: esce 2 e 5 → recupera solo 2 Ki. Fujita invece è a 8: tira 2d6 prendi il migliore, esce 4 e 6 → recupera 6 Ki. Domani la squadra partirà con energie molto diverse.
 
@@ -152,7 +152,7 @@ Il Nasake è una riserva di **1 solo Ki** che tieni da parte per quando serve �
 
 **Limiti**: ne tieni al massimo 1 alla volta. Si perde a fine sessione se non usato.
 
-> **Esempio**: Tanaka ha Lucidità 9 e Ki al massimo. Tira 2 su una prova — Kiwami positivo, ma non può applicare nessuno dei due bonus. Conserva 1 Ki nel Nasake. Più avanti, Sato è in difficoltà dopo una scena brutale. Tanaka lo prende da parte: *"Sato. Respira. Ci sono io."* Dona il Nasake — Sato recupera 1 Ki.
+> **Esempio**: Honda ha Lucidità 9 e Ki al massimo. Tira 2 su una prova — Kiwami positivo, ma non può applicare nessuno dei due bonus. Conserva 1 Ki nel Nasake. Più avanti, Sato è in difficoltà dopo una scena brutale. Honda lo prende da parte: *"Sato. Respira. Ci sono io."* Dona il Nasake — Sato recupera 1 Ki.
 
 ---
 
@@ -182,7 +182,11 @@ Non tutti i Gou costano uguale. I più potenti costano di più:
 | **3 Ki** | Forti — vantaggio importante |
 | **2 Ki** | Orientamento e utilità |
 
-**Il secondo uso nella stessa sessione costa il doppio.** Un Gou da 3 Ki costa 3 la prima volta e 6 la seconda. Puoi usarlo ancora, ma il prezzo è alto.
+**Ogni uso fa raddoppiare il costo del successivo.** Un Gou da 3 Ki costa 3 la prima volta, 6 la seconda, 12 la terza. **Una notte di sonno fa scendere il costo di un grado**: dormi, e il prossimo uso torna a costare 6; un'altra notte senza usarlo e sei di nuovo a 3.
+
+**Puoi bruciare te stesso.** Il Gou si può attivare anche se il costo ti manda in zona Genkai: il Ki scende fino a un minimo di 1, mai sotto. Se finisci a Ki 3 o meno, prima ricevi l'effetto — la visione, l'informazione — e poi crolli: il Genkai scatta appena l'effetto si conclude. I tuoi compagni possono rialzarti come in ogni Genkai, sacrificando 1 Ki ciascuno.
+
+> **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
 ### Dual-attribute
 
@@ -456,7 +460,7 @@ Ogni personaggio ha un **Enja**: una persona fuori dalla squadra che può aiutar
 
 Puoi usare il tuo Enja **una volta per sessione** senza conseguenze. La seconda volta, il contatto chiede qualcosa in cambio — un favore, informazioni, qualcosa che potresti non voler dare.
 
-> **Esempio**: Tanaka ha come Enja un ex collega ora in pensione con quarant'anni di casi alle spalle. Durante un'indagine difficile, Tanaka lo chiama: "Masuda-san, ho un caso che mi ricorda il tuo lavoro negli anni '70. Un veleno raro. Puoi aiutarmi?" Masuda può aiutarlo — ma se Tanaka lo chiama di nuovo nella stessa sessione, Masuda vuole qualcosa in cambio.
+> **Esempio**: Kimura ha come Enja un ex collega ora in pensione con quarant'anni di casi alle spalle. Durante un'indagine difficile, Kimura lo chiama: "Masuda-san, ho un caso che mi ricorda il tuo lavoro negli anni '70. Un veleno raro. Puoi aiutarmi?" Masuda può aiutarlo — ma se Kimura lo chiama di nuovo nella stessa sessione, Masuda vuole qualcosa in cambio.
 
 ---
 
@@ -473,7 +477,7 @@ Quando accade, si gioca una **Scena Personale**: tu interpreti il tuo personaggi
 
 "Gestire bene" non significa vincere la discussione o risolvere il problema. Significa interpretare il tuo personaggio in modo umano e credibile — ascoltare davvero, reggere la pressione, restare te stesso.
 
-> **Esempio**: Il Kage di Sato è il padre anziano che continua a chiamarlo in centrale per cose che si dimentica di aver già chiesto. A metà dell'indagine, mentre Sato sta lavorando su un caso urgente, squilla il telefono. "Kenji, sei tu? A che ora vieni a cena?" — Il padre gli ha già chiesto la stessa cosa ieri, e l'altro ieri. Come gestisce Sato questa scena conta tanto quanto come gestisce gli interrogatori.
+> **Esempio**: Il Kage di Sato è la madre, che chiama in centrale dicendo che è urgente — non è mai urgente. A metà dell'indagine, mentre Sato sta lavorando su un caso critico, squilla il telefono. "Yuki, sei tu? Lo zio ha chiesto di te. Gli ho detto che forse quest'anno..." — la stessa conversazione della settimana scorsa, e di quella prima. Come gestisce Sato questa scena conta tanto quanto come gestisce gli interrogatori.
 
 ---
 
@@ -612,7 +616,7 @@ Usalo nei momenti che contano davvero.
 Prima di un tiro, un compagno può dichiararsi pronto ad aiutarti. Se lo fa, ottieni **+1 al tuo attributo** per quel tiro.
 
 - **Successo** → nessun costo per nessuno
-- **Fallimento** (attr+1 — 10) → **entrambi -1 Ki**
+- **Fallimento leggero** (attr+1 — 10) → **solo il compagno perde 1 Ki**. Tu non perdi nulla — lui voleva aiutarti e non è bastato: quel peso è suo
 - **Nami-** (11) → chi tira: -1 a scelta (attributo o Ki). Il compagno: -1 Ki
 - **Kiwami-** (12) → chi tira: -1 attributo -1 Ki (standard). Il compagno: -1 Ki
 
@@ -621,7 +625,7 @@ Prima di un tiro, un compagno può dichiararsi pronto ad aiutarti. Se lo fa, ott
 - Un compagno può **dare** aiuto a PG diversi nella stessa scena
 - Non si applica al Gou
 
-> **Esempio**: Tanaka deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Tanaka tira con Distacco 7 (6+1). Esce 8. Fallimento — entrambi perdono 1 Ki. Se fosse uscito 5, successo — nessuno perde nulla. Nella stessa scena, Tanaka non può più ricevere supporto, ma Sato può aiutare un altro PG.
+> **Esempio**: Honda deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Honda tira con Distacco 7 (6+1). Esce 8. Fallimento leggero — Honda non perde nulla, ma Sato perde 1 Ki: voleva fare da scudo e non è bastato. Se fosse uscito 5, successo — nessuno perde nulla. Nella stessa scena, Honda non può più ricevere supporto, ma Sato può aiutare un altro PG.
 
 ---
 
@@ -871,6 +875,7 @@ Quando non potete evitarlo, la meccanica è semplice: il PNG attacca, voi scegli
 | Fermare con autorità | **Presenza** | Provi a bloccare l'aggressore |
 | Aspettare un'apertura | **Pazienza** | Ti ripari, aspetti il momento |
 | Allontanarti | **Distacco** | Ti defili senza farti notare |
+| Percepire il pericolo | **Ascolto** | Situazioni speciali — al buio, senti i passi avvicinarsi |
 
 **Non puoi incassare (Silenzio) colpi di coltello o arma da fuoco.** Solo Lucidità (schivi) o Pazienza (ti ripari).
 
@@ -906,7 +911,10 @@ Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
 
 GOU
 Costo: 2, 3 o 4 Ki (variabile per Gou)
-Secondo uso nella stessa sessione: costo doppio
+Ogni uso raddoppia il costo del successivo (2→4→8)
+Una notte di sonno riabbassa il costo di un grado
+Pagabile fino a Ki 1 (mai sotto); a Ki ≤ 3 il Genkai
+scatta a effetto concluso (i compagni possono aiutare)
 Successo: effetto completo e preciso
 Fallimento: effetto parziale o vago — funziona sempre
 Niente Kiwami, niente Nami
@@ -926,7 +934,7 @@ Solo donabile a un compagno (giocando la scena)
 
 SUPPORTO (KYŌRYOKU 協力)
 Prima del tiro: +1 attributo dal compagno
-Successo: nessun costo. Fallimento: entrambi -1 Ki
+Successo: nessun costo. Fallimento leggero: solo il compagno -1 Ki
 Nami- (11): chi tira -1 (scelta), compagno -1 Ki
 Kiwami- (12): chi tira -1 attr -1 Ki, compagno -1 Ki
 Ricevi 1 supporto per scena; chi aiuta può aiutare PG diversi
@@ -938,11 +946,11 @@ Ki = 1: critico — qualsiasi danno elimina il PG
 Ki < 1: fuori gioco definitivo
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
-Soroban traccia Nami/Kiwami della giornata (+1/+2/-1/-2)
-Soroban ≥ partenza: 2d6 prendi il migliore (reroll 1) = Ki recuperati
-Soroban < partenza: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
-Su foglio: partenza 5, range 0-9
-Dopo il recupero: soroban torna al valore medio
+Numero 0-9 segnato su scheda o foglio, parte da 5
+Traccia i Nami/Kiwami della giornata (+1/+2/-1/-2)
+Soroban ≥ 5: 2d6 prendi il migliore (reroll 1) = Ki recuperati
+Soroban < 5: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
+Dopo il recupero: torna a 5
 ```
 
 ---
