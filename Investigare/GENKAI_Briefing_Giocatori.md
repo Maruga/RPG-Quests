@@ -41,7 +41,8 @@ Ogni PG ha 6 attributi (da 4 a 9):
 ## Ki 気 — Energia Vitale
 
 Il Ki rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico.
-**Calcolo**: attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**, reroll se esce 1)
+**Ki massimo** = attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**, reroll se esce 1) + eventuali punti comprati. Tetto: 12.
+Il dado rappresenta **il momento** — periodi top e periodi no: a fine caso si ritira, in su o in giù.
 Si consuma quando: subite Nami-/Kiwami-, usate il Gou, aiutate un compagno.
 
 > Quando il Ki scende a **3 o meno** → **GENKAI**: il personaggio crolla (vedi sotto).
@@ -66,7 +67,7 @@ Il fallimento **non blocca mai la storia**. L'informazione arriva comunque — i
 | **11** | Nami- | -1 a scelta (attributo **O** Ki) |
 | **12** | Kiwami- | -1 attributo usato **E** -1 Ki |
 
-**Limiti**: nessun attributo sopra al massimo consentito né sotto 4 (se è a 4, la perdita va al Ki). Il Ki non supera mai il valore di inizio sessione. I ±1 agli attributi dai dadi sono **temporanei**: ogni notte di sonno la deviazione rientra di 1 verso il valore di scheda — la crescita permanente si compra tra i casi (punti **Shugyō**).
+**Limiti**: il valore di scheda è il tuo **tetto** — i dadi non lo superano mai: gli 11/12 scavano sotto (segna il −1 a matita), i 2/3 e ogni notte di sonno riparano (+1 verso la scheda). A scheda piena il +1 è perso o va nel Nasake. Attributo attuale mai sotto 4 (a 4, le perdite vanno al Ki). Il Ki non supera mai il Ki massimo. La scheda cresce solo con le Scene Personali e i punti **Shugyō** tra i casi.
 
 ---
 
@@ -211,7 +212,7 @@ Un numero da **0 a 9**, segnato sulla scheda o su un foglio comune: è lo stato 
 | 5 o più | 2d6, prendi il **migliore** (reroll 1) | Giornata buona, riposo sereno |
 | Sotto 5 | 2d6, prendi il **peggiore** (reroll 1) | Giornata pesante, notte agitata |
 
-Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il massimo iniziale. Dopo il tiro, il soroban torna a 5.
+Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il **Ki massimo**. Dopo il tiro, il soroban torna a 5.
 
 ---
 

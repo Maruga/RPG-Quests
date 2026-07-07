@@ -93,11 +93,13 @@ Un Distacco 9 è un investigatore che ha visto così tanto da essere quasi imper
 
 Il Ki è lo stato complessivo del tuo personaggio: fisico, mentale, emotivo tutto insieme. Non è la salute — è quanto reggi.
 
-**Calcolo iniziale**: attributo più basso + 2d6 (prendi il dado più alto)
+**Ki massimo** = attributo più basso (di scheda) + 2d6 (prendi il dado più alto) + eventuali punti Ki comprati. Tetto assoluto: **12**.
 
 > **Nota**: Se uno dei due dadi mostra 1, puoi ritirarlo.
 
-> **Esempio**: Il tuo attributo più basso è Presenza con 5. Tiri 2d6: esce 2 e 6. Prendi il 6. Ki iniziale: 5 + 6 = 11.
+**Il dado rappresenta il momento** — non sei sempre al massimo delle tue energie: hai periodi top e periodi no. **A fine caso il dado si ritira**, e il nuovo Ki massimo sostituisce il vecchio, in su o in giù. Alzare il tuo attributo più basso alza anche il Ki massimo; i punti comprati restano sempre.
+
+> **Esempio**: Il tuo attributo più basso è Presenza con 5. Tiri 2d6: esce 2 e 6. Prendi il 6. Ki massimo: 5 + 6 = 11. A fine caso ritiri il dado: esce 3 e 4 → nuovo massimo 5 + 4 = 9. Periodo no.
 
 ### A cosa serve il Ki
 
@@ -127,7 +129,7 @@ Solo tiri di attributo — non Gou, non En, non combattimento, non tiri di press
 - **5 o più**: tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado
 - **Sotto 5**: tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado
 
-Il risultato = Ki recuperati. Non puoi mai superare il valore con cui hai iniziato la sessione. Poi riporti il Soroban a 5 — domani è un nuovo giorno.
+Il risultato = Ki recuperati. Non puoi mai superare il tuo **Ki massimo**. Poi riporti il Soroban a 5 — domani è un nuovo giorno.
 
 **Momenti narrativi eccezionali**: il GM può assegnare +1 Ki per un momento speciale — direttamente a te, oppure come +1 al soroban (influenza il recupero notturno). Sceglie lui.
 
@@ -546,14 +548,14 @@ Solo i **Nami e Kiwami negativi** (11 e 12) hanno costi meccanici reali — perd
 > - Tiri **8** → fallimento leggero. La scena ti colpisce, sei pallido, le mani tremano. Ma nessuna perdita.
 > - Tiri **11** → Nami negativo. La scena ti segna nel profondo. -1 a tua scelta: abbassi Distacco (ora 6) oppure perdi 1 Ki. Scegli tu.
 > - Tiri **12** → Kiwami negativo. La scena ti distrugge. -1 Distacco E -1 Ki. Entrambi.
-> - Tiri **2** → Kiwami positivo. Non solo reggi — quella scena ti tempra. +1 Distacco E +1 Ki.
+> - Tiri **2** → Kiwami positivo. Non solo reggi — quella scena ti ripara. +1 Distacco (fino al tuo valore di scheda: se sei già pieno, il punto va nel Nasake o è perso) E +1 Ki.
 
 ### Limiti importanti
 
-- Nessun attributo supera **9** (se hai già 9 e guadagneresti +1, il punto è perso)
-- Nessun attributo scende sotto **4** (se sei a 4 e perderesti -1, la perdita va obbligatoriamente al Ki)
-- Il Ki non supera mai il **valore con cui hai iniziato la sessione**
-- Le variazioni di attributo dai dadi sono **temporanee**: sono la tua forma del giorno, segnate a matita accanto al valore di scheda. **Ogni notte di sonno la deviazione rientra di 1** verso il valore di scheda — in su e in giù: l'euforia sbollisce, le ferite si rimarginano. Permanenti sono solo le **Scene Personali** e la crescita comprata coi punti **Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*)
+- Il tuo **valore di scheda** è il tuo tetto: i dadi non lo superano mai. Gli 11 e i 12 **scavano sotto** (il −1 si segna a matita), i 2 e i 3 **riparano** i punti persi, e **ogni notte di sonno risali di 1** verso la scheda. Se sei già a scheda piena, il +1 è perso — o va nel **Nasake**
+- Nessun attributo attuale scende sotto **4** (a 4, le perdite vanno al Ki)
+- Il Ki non supera mai il **Ki massimo**
+- La scheda cresce solo con le **Scene Personali** e gli **acquisti Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*). Tetto assoluto: 9
 
 ---
 
@@ -908,11 +910,12 @@ attr+1–10 → Fallimento leggero, nessuna perdita
 Dado 11 → Nami-: -1 a scelta (attributo O Ki)
 Dado 12 → Kiwami-: -1 attributo usato E -1 Ki
 
-Attributo: max 9, min 4 (se a 4, la perdita va al Ki)
-Ki: mai sopra il valore di inizio sessione
+La scheda è il tetto: i dadi la scavano (11/12) e la
+riparano (2/3, e +1 a notte) — mai oltre
+Attributo attuale min 4 (a 4, le perdite vanno al Ki)
+Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
+Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
-Variazioni attributo da dado: TEMPORANEE — ogni notte la
-deviazione rientra di 1 verso il valore di scheda
 Permanenti solo: Scene Personali e acquisti Shugyō
 
 GOU

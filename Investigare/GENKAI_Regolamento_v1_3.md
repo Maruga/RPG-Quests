@@ -18,12 +18,10 @@
 | **Kiwami**                  | 極     | *Estremo* — risultato critico del dado (2 o 12)                                                 |
 | **Nami**                    | 波     | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi                          |
 | **Nasake**                  | 情け    | *Compassione* — punto Ki conservato quando il bonus andrebbe perso                              |
-| **L'Eco della Montagna**    | 山彦    | *Eco della Montagna* — eco di parole passate in un luogo (Percezione Retroattiva)               |
-| **La Brace che Resta**      | 残り火   | *Brace che Resta* — residui emotivi in un luogo (Percezione Retroattiva)                        |
-| **Lo Spirito che Resta**    | 残心    | *Spirito che Resta* — disciplina del samurai, protezione dal crollo                             |
-| **L'Istante della Caduta**  | 散り際   | *Istante della Caduta* — cogliere ciò che sta per svanire (sakura)                              |
-| **La Risalita della Carpa** | 鯉の滝登り | *Risalita della Carpa* — persistenza implacabile nell'interrogatorio                            |
+| **Kyōryoku** | 協力 | *Supporto* — l'aiuto di un compagno su un tiro (+1 all'attributo) |
 | **Soroban**                 | 算盤    | *Abaco giapponese* — traccia l'andamento emotivo della giornata, determina il recupero notturno |
+| **Shugyō** | 修行 | *Disciplina* — i punti di crescita: si guadagnano con i casi, si spendono tra un caso e l'altro |
+| **Senmon** | 専門 | *Specialità* — le specializzazioni professionali in tre gradi (vedi `GENKAI_Specializzazioni.md`) |
 
 ---
 
@@ -76,11 +74,13 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 
 Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico. È la risorsa principale del gioco.
 
-**Valore iniziale**: Attributo più basso + 2d6 (prendi il dado più alto)
+**Ki massimo** = attributo più basso (di scheda) + 2d6 (prendi il dado più alto) + eventuali punti Ki comprati (vedi *Crescita tra i Casi*). Tetto assoluto: **12**.
 
 > **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo. Il minimo possibile è quindi 2.
 
-> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 2d6: esce 3 e 5, prendi il 5. Il tuo Ki iniziale è 5+5 = 10.
+**Il dado rappresenta il momento**: non sei sempre al massimo delle tue energie — hai periodi top e periodi no. **A fine caso, o dopo un lungo periodo, il dado si ritira**: il nuovo Ki massimo (attributo più basso + nuovo dado + comprati) sostituisce il vecchio, in su o in giù. Alzare l'attributo più basso di scheda alza anche il Ki massimo; i punti comprati restano sempre.
+
+> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 2d6: esce 3 e 5, prendi il 5. Il tuo Ki massimo è 5+5 = 10. A fine caso lo ritiri: esce 2 e 3 → il nuovo massimo è 5+3 = 8. Periodo no.
 
 ### Usi del Ki
 
@@ -124,7 +124,7 @@ A fine giornata, quando il personaggio dorme, il giocatore legge il valore del p
 
 Il risultato del dado = **Ki recuperati**.
 
-**Limite invariato**: il Ki non può mai superare il valore di inizio sessione.
+**Limite invariato**: il Ki non può mai superare il **Ki massimo**.
 
 #### Dopo il Recupero
 
@@ -174,7 +174,7 @@ Fine giornata: soroban a 8 → 5 o più → 2d6 prendi il **migliore** (reroll 1
 > *情けは人の為ならず — Nasake wa hito no tame narazu*
 > "La compassione non è solo per gli altri." Quello che doni torna a te.
 
-Quando un PG ottiene un Kiwami positivo (2) o un Nami positivo (3) ma **non può applicare il bonus** — perché il Ki è già al massimo e l'attributo rilevante è già a 9 — il punto che andrebbe perso può essere conservato nel **Nasake**.
+Quando un PG ottiene un Kiwami positivo (2) o un Nami positivo (3) ma **non può applicare il bonus** — perché il Ki è già al massimo e l'attributo rilevante è già al valore di scheda — il punto che andrebbe perso può essere conservato nel **Nasake**.
 
 ### Regole
 
@@ -665,11 +665,11 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 | **12** | **Kiwami 極 negativo** | -1 attributo usato E -1 Ki |
 
 **Limiti**:
-- Nessun attributo può mai superare **9**
-- Nessun attributo può mai scendere sotto **4** (se l'attributo è a 4, la perdita va obbligatoriamente al Ki)
-- Il Ki non può mai superare il **valore di inizio sessione**
-- Se un bonus non può essere applicato (attributo già a 9, Ki già al massimo), il punto è perso
-- Le variazioni di attributo da Nami e Kiwami sono **temporanee**: muovono la *forma del giorno*, non il valore di scheda — ogni notte di sonno la deviazione rientra di 1 (vedi *Progressione*)
+- Il **valore di scheda** è il tetto personale di ogni attributo: i bonus dai dadi non lo superano mai — **riparano** i punti persi. A scheda piena, il +1 è perso o va nel **Nasake**
+- Nessun attributo attuale può scendere sotto **4** (se è a 4, la perdita va obbligatoriamente al Ki)
+- Il Ki non può mai superare il **Ki massimo**
+- Ogni notte di sonno, un attributo sotto scheda **risale di 1** (vedi *Progressione*)
+- Il tetto assoluto di scheda è **9**: si alza solo comprando (vedi *Crescita tra i Casi*)
 
 > **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque — il fallimento leggero è solo narrativo (il PG gestisce male la situazione, ma senza costi meccanici). Solo Nami e Kiwami negativi comportano perdite.
 >
@@ -978,37 +978,34 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 
 # PROGRESSIONE
 
-Il personaggio ha due livelli: la **forma del giorno** (temporanea, mossa dai dadi) e il **valore di scheda** (permanente, mosso dalla vita e dalla disciplina).
+Il valore di scheda di ogni attributo è il **tetto personale** del PG: rappresenta chi è diventato. I dadi non lo superano mai — lo **consumano** e lo **riparano**. Esattamente come il Ki attuale non supera mai il Ki massimo.
 
 ## La Forma del Giorno
 
-Le variazioni di attributo da Nami e Kiwami (±1) sono **deviazioni temporanee** dal valore di scheda — la scena che ti tempra, l'interrogatorio che ti segna. Si segnano a matita accanto al valore di scheda.
+- I **Nami e Kiwami negativi** (11 e 12) scavano **sotto** il valore di scheda: il −1 all'attributo si segna a matita
+- I **Nami e Kiwami positivi** (2 e 3) **riparano**: +1 all'attributo attuale, mai oltre la scheda. Se sei già a scheda piena, il punto è perso — o conservato nel **Nasake**
+- **Ogni notte di sonno**, ogni attributo sotto scheda risale di 1 — le ferite si rimarginano
+- I tiri si fanno sempre sul **valore attuale**; minimo 4 (a 4, le perdite vanno al Ki)
 
-**Ogni notte di sonno, ogni deviazione rientra di 1 verso il valore di scheda** — in entrambe le direzioni: l'euforia sbollisce, le ferite si rimarginano.
-
-- I limiti (max 9, min 4, perdita forzata sul Ki se l'attributo è a 4) si applicano al **valore attuale**
-- Il Nasake scatta quando il **valore attuale** è al massimo consentito
-- I tiri si fanno sempre sul **valore attuale**
-
-> **Esempio**: Fujita ha Lucidità 5 di scheda. In tre giorni fortunati colleziona +4 di deviazione: Lucidità attuale 9, il massimo. Poi il caso rallenta: prima notte → 8, seconda → 7, terza → 6, quarta → di nuovo la sua Lucidità 5. Solo comprare il punto lo rende suo.
+> **Esempio**: Honda ha Distacco 6 di scheda. Una settimana brutale: due Kiwami negativi → Distacco attuale 4. Un 2 sulla scena successiva lo ripara a 5; la notte lo riporta a 6 — la sua scheda. Il giorno che tira un altro 2 con Distacco già a 6, il punto è perso (o va nel Nasake): per arrivare a 7, deve comprarlo.
 
 ## Il Valore di Scheda
 
-Il valore di scheda cambia solo per:
+Cambia solo per:
 
-- **Scene Personali**: +1/−1 all'attributo **di scheda**, in base al voto del tavolo — la vita che ti cambia davvero
+- **Scene Personali**: +1/−1 al valore **di scheda**, in base al voto del tavolo — la vita che ti cambia davvero
 - **Acquisti con i punti Shugyō** (vedi *Crescita tra i Casi*)
 
 ## Il Ki
 
-- **Recupero notturno**: tramite soroban (vedi sezione Ki — Recupero)
-- Il Ki non supera mai il valore di inizio sessione
+- **Recupero notturno**: tramite soroban (vedi sezione Ki — Recupero), mai sopra il **Ki massimo**
+- Il Ki massimo = attributo più basso di scheda + dado + comprati (tetto 12); il dado si **ritira a fine caso** — rappresenta il momento (vedi sezione Ki)
 
-> **Esempio di progressione in una sessione**: Sato ha Distacco 6 di scheda, Ascolto 7, Silenzio 5, Ki 9.
-> - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco attuale 7 (deviazione +1, a matita); il +1 Ki è perso, il Ki è già al massimo.
+> **Esempio di progressione in una sessione**: Sato ha Distacco 6 di scheda (attuale 5, segnato ieri), Ascolto 7, Silenzio 5, Ki massimo 9, Ki attuale 9.
+> - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco attuale risale a 6 — riparato, è di nuovo alla sua scheda; il +1 Ki è perso, il Ki è già al massimo.
 > - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di segnare −1 su Ascolto. Ki 8.
 > - Scena personale con il padre: gestita bene dal voto. +1 Silenzio **di scheda** — da 5 a 6, permanente.
-> - Notte: il soroban è a 6 (Kiwami+ = +2, Nami- = -1) → 5 o più → 2d6 prendi il migliore, esce 3 e 5 → +5 Ki, torna a 9. E la deviazione di Distacco rientra di 1 → Distacco torna 6.
+> - Notte: il soroban è a 6 (Kiwami+ = +2, Nami- = -1) → 5 o più → 2d6 prendi il migliore, esce 3 e 5 → +5 Ki, torna a 9.
 > - Il giorno dopo Sato è: Distacco 6, Ascolto 7, Silenzio 6 (suo per sempre), Ki 9.
 
 ---
@@ -1044,11 +1041,19 @@ Si spende **tra un caso e l'altro** — la crescita richiede tempo e quiete, non
 
 Il tetto resta **9**.
 
-**Ki massimo** — 【da definire】
+**Ki massimo** — comprare 1 punto di Ki costa **valore di arrivo del Ki massimo × 4** (portarlo da 8 a 9 costa 36, da 9 a 10 costa 40). È pesante — ma il Ki permette tanto. I punti comprati sono **stabili**: restano nella formula quando il dado si ritira a fine caso, e si sommano al ricalcolo quando alzi l'attributo più basso. Tetto assoluto: **12**.
 
-**Specializzazioni (Senmon 専門)** — Interrogatorio, Pedinamento, conoscenze da esperto (armi, veleni, libri contabili...) in tre gradi: Praticante (+1), Esperto (+2), Maestro (+3, o +2 con Correzione). Ogni grado dà bonus ai tiri pertinenti e soprattutto **conoscenza automatica** crescente; i gradi alti richiedono attributi, usi contati sul campo e altre specializzazioni, e i Maestri multipli costano manutenzione (1 punto Shugyō ogni 5 guadagnati, per ciascun grado 3 oltre il primo).
+**Specializzazioni (Senmon 専門)** — Interrogatorio, Pedinamento, conoscenze da esperto (armi, veleni, libri contabili...) in tre gradi: Praticante (+1, **9 punti**), Esperto (+2, **19**), Maestro (+3 o +2 con Correzione, **39**). Ogni grado dà bonus ai tiri pertinenti e soprattutto **conoscenza automatica** crescente; i gradi alti richiedono attributi, usi contati sul campo e altre specializzazioni, e i Maestri multipli costano manutenzione (1 punto Shugyō ogni 5 guadagnati, per ciascun grado 3 oltre il primo).
 
 > Il sistema completo e l'**elenco vivo** delle specializzazioni sono in **`GENKAI_Specializzazioni.md`**. Ricorda: si può iniziare al massimo **una nuova** specializzazione per intervallo tra i casi, e la Fase 1 delle micro-tecniche di interrogatorio richiede la specializzazione **Interrogatorio**.
+
+**Affinare il Gou** — una sola volta, puoi ridurre di 1 il costo base del tuo Gou: costa **costo base attuale × 11** (un Gou da 3 Ki scende a 2 pagando 33; da 2 a 1 pagando 22; da 4 a 3 pagando 44). Il raddoppio per gli usi ripetuti riparte dal nuovo costo base. Massimo −1, per sempre.
+
+**Un secondo Gou** — non è acquistabile. Potrà diventarlo in futuro, con regole dedicate.
+
+**Satori aggiuntivo** — mai: il momento di chiarezza è uno a sessione, per tutti.
+
+**Enja aggiuntivo** — **12 punti**, e la relazione va costruita in gioco prima: non si compra un amico dal nulla, si formalizza un legame che le sessioni hanno già creato.
 
 ---
 
@@ -1251,13 +1256,15 @@ Fallimento (attr+1 — 10): nessuna perdita (solo narrativo)
 Dado = 11 (Nami 波):     -1 a scelta (attributo O Ki)
 Dado = 12 (Kiwami 極):   -1 attributo usato E -1 Ki
 
-LIMITI: Attributo max 9, min 4 | Ki max = valore inizio sessione
-Se attributo a 4, la perdita va al Ki
+LIMITI: la scheda è il tetto — i dadi non la superano mai:
+la scavano (11/12) e la riparano (2/3, e +1 a notte)
+Attributo attuale min 4 (a 4, le perdite vanno al Ki)
+Scheda max 9: si alza solo comprando
+Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
+Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (no combattimento, En, Gou)
-Variazioni attributo da dado: TEMPORANEE — ogni notte la
-deviazione rientra di 1 verso il valore di scheda
 Permanenti solo: Scene Personali e acquisti Shugyō
-(attributo: valore di arrivo × 3 punti, tra un caso e l'altro)
+(attributo: arrivo × 3 | Ki: arrivo × 4 — tra un caso e l'altro)
 
 KI (気)
 ≤ 3 = Genkai (fuori gioco temporaneo)
@@ -1292,6 +1299,7 @@ GOU (業)
 Costo: 2, 3 o 4 Ki (variabile per Gou)
 Ogni uso raddoppia il costo del successivo (2→4→8)
 Una notte di sonno riabbassa il costo di un grado
+Affinabile una volta: costo base -1, pagando base × 11 Shugyō
 Pagabile fino a Ki 1 (mai sotto); a Ki ≤ 3 il Genkai
 scatta a effetto concluso (i compagni possono aiutare)
 Successo: funziona con dettagli precisi

@@ -19,9 +19,9 @@ I bonus si applicano **solo ai tiri pertinenti di competenza**. Mai ai tiri emot
 
 | Grado | Titolo | Bonus | Conoscenza automatica | Requisiti |
 |---|---|---|---|---|
-| **1** | Praticante | **+1** | Conosci il campo da professionista: riconosci le cose **comuni** senza tiro | Giustificazione narrativa + costo in punti 【da definire】 |
-| **2** | Esperto | **+2** | Quello che un perito ti direbbe in ore, tu lo vedi **sul posto**: marca, fattura, anomalie | Attributo chiave **≥ 6** + almeno **10 usi** da Praticante + costo 【da definire】 |
-| **3** | Maestro | **+3**, oppure **+2 con Correzione** (dipende dalla voce) | Sei un'autorità: il GM ti **segnala** l'anomalia del tuo campo anche se non la cerchi; la tua parola pesa quasi come una perizia | **Paletti della voce** (attributo a 8-9 e/o altra Senmon a 2+, o requisito narrativo) + almeno **25 usi** da Esperto + costo alto 【da definire】 |
+| **1** | Praticante | **+1** | Conosci il campo da professionista: riconosci le cose **comuni** senza tiro | Giustificazione narrativa + **9 punti Shugyō** |
+| **2** | Esperto | **+2** | Quello che un perito ti direbbe in ore, tu lo vedi **sul posto**: marca, fattura, anomalie | Attributo chiave **di scheda ≥ 6** + almeno **10 usi** da Praticante + **19 punti Shugyō** |
+| **3** | Maestro | **+3**, oppure **+2 con Correzione** (dipende dalla voce) | Sei un'autorità: il GM ti **segnala** l'anomalia del tuo campo anche se non la cerchi; la tua parola pesa quasi come una perizia | **Paletti della voce** (attributo di scheda a 8-9 e/o altra Senmon a 2+, o requisito narrativo) + almeno **25 usi** da Esperto + **39 punti Shugyō** |
 
 ### Iniziare una specializzazione (Grado 1)
 
@@ -29,7 +29,7 @@ Il primo grado è **difficile ma fattibile** — abbastanza impegnativo da imped
 
 - Serve una **giustificazione narrativa** validata dal GM: un maestro, un corso, un passato che la spieghi, pratica reale tra i casi
 - Si può **iniziare al massimo una nuova specializzazione tra un caso e l'altro**
-- Il costo in punti non è simbolico 【da definire】
+- Il costo non è simbolico: **9 punti Shugyō** — circa un caso intero di risparmio totale
 
 ### Il conteggio degli usi
 
@@ -57,7 +57,7 @@ Con i paletti sugli attributi, il risultato voluto: un PG con **un** grado 3 ha 
 
 Un Maestro può smettere di mantenersi aggiornato: il grado 3 **decade** a Esperto (+2) e la sua parte di tassa cessa. È una scelta, non una punizione — il maestro d'armi che ha smesso di sparare.
 
-Per **tornare Maestro**: i paletti della voce devono essere **ancora soddisfatti** al momento del ritorno (attributi, specializzazioni correlate, requisiti narrativi) e si paga **metà** del costo del grado 3. Gli usi non si rifanno — il mestiere c'era, va solo rispolverato.
+Per **tornare Maestro**: i paletti della voce devono essere **ancora soddisfatti** al momento del ritorno (attributi, specializzazioni correlate, requisiti narrativi) e si paga **metà** del costo del grado 3 (**20 punti**). Gli usi non si rifanno — il mestiere c'era, va solo rispolverato.
 
 ### Cumulo dei bonus
 
@@ -150,7 +150,7 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 
 | # | Questione | Stato |
 |---|---|---|
-| 1 | **Costi in punti Shugyō** dei tre gradi | Da definire insieme al sistema punti (fase B in corso — nome e guadagno già decisi: vedi Regolamento, *Crescita tra i casi*) |
+| 1 | **Costi in punti Shugyō** dei tre gradi | ✅ Definiti: **9 / 19 / 39** — ritorno dalla decadenza: 20 |
 | 2 | **Nome definitivo**: Senmon 専門 o Tokui 得意 | Provvisorio: Senmon |
 | 3 | **Dotazione dei pre-generati** | Rimandata: si deciderà quando si rimetterà mano alle schede PG, con modifiche |
 | 4 | **Tetto cumulo bonus** +4 per tiro | Proposta da confermare |
