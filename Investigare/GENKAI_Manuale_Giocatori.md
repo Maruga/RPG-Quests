@@ -553,6 +553,7 @@ Solo i **Nami e Kiwami negativi** (11 e 12) hanno costi meccanici reali — perd
 - Nessun attributo supera **9** (se hai già 9 e guadagneresti +1, il punto è perso)
 - Nessun attributo scende sotto **4** (se sei a 4 e perderesti -1, la perdita va obbligatoriamente al Ki)
 - Il Ki non supera mai il **valore con cui hai iniziato la sessione**
+- Le variazioni di attributo dai dadi sono **temporanee**: sono la tua forma del giorno, segnate a matita accanto al valore di scheda. **Ogni notte di sonno la deviazione rientra di 1** verso il valore di scheda — in su e in giù: l'euforia sbollisce, le ferite si rimarginano. Permanenti sono solo le **Scene Personali** e la crescita comprata coi punti **Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*)
 
 ---
 
@@ -910,6 +911,9 @@ Dado 12 → Kiwami-: -1 attributo usato E -1 Ki
 Attributo: max 9, min 4 (se a 4, la perdita va al Ki)
 Ki: mai sopra il valore di inizio sessione
 Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
+Variazioni attributo da dado: TEMPORANEE — ogni notte la
+deviazione rientra di 1 verso il valore di scheda
+Permanenti solo: Scene Personali e acquisti Shugyō
 
 GOU
 Costo: 2, 3 o 4 Ki (variabile per Gou)

@@ -66,7 +66,7 @@ Il fallimento **non blocca mai la storia**. L'informazione arriva comunque — i
 | **11** | Nami- | -1 a scelta (attributo **O** Ki) |
 | **12** | Kiwami- | -1 attributo usato **E** -1 Ki |
 
-**Limiti**: nessun attributo sopra al massimo consentito né sotto 4 (se è a 4, la perdita va al Ki). Il Ki non supera mai il valore di inizio sessione.
+**Limiti**: nessun attributo sopra al massimo consentito né sotto 4 (se è a 4, la perdita va al Ki). Il Ki non supera mai il valore di inizio sessione. I ±1 agli attributi dai dadi sono **temporanei**: ogni notte di sonno la deviazione rientra di 1 verso il valore di scheda — la crescita permanente si compra tra i casi (punti **Shugyō**).
 
 ---
 

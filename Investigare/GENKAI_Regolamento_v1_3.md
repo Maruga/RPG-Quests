@@ -669,6 +669,7 @@ Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramit
 - Nessun attributo può mai scendere sotto **4** (se l'attributo è a 4, la perdita va obbligatoriamente al Ki)
 - Il Ki non può mai superare il **valore di inizio sessione**
 - Se un bonus non può essere applicato (attributo già a 9, Ki già al massimo), il punto è perso
+- Le variazioni di attributo da Nami e Kiwami sono **temporanee**: muovono la *forma del giorno*, non il valore di scheda — ogni notte di sonno la deviazione rientra di 1 (vedi *Progressione*)
 
 > **Importante**: Il fallimento non blocca mai la storia. L'informazione arriva comunque — il fallimento leggero è solo narrativo (il PG gestisce male la situazione, ma senza costi meccanici). Solo Nami e Kiwami negativi comportano perdite.
 >
@@ -977,33 +978,77 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 
 # PROGRESSIONE
 
-Gli attributi cambiano durante l'avventura tramite:
-- **Kiwami positivo** (dado = 2): +1 attributo usato E +1 Ki
-- **Nami positivo** (dado = 3): +1 a scelta (attributo O Ki)
-- **Successo / Fallimento leggero**: nessuna variazione meccanica
-- **Nami negativo** (dado = 11): -1 a scelta (attributo O Ki)
-- **Kiwami negativo** (dado = 12): -1 attributo usato E -1 Ki
-- **Scene personali**: +1/-1 attributo (in base al voto)
+Il personaggio ha due livelli: la **forma del giorno** (temporanea, mossa dai dadi) e il **valore di scheda** (permanente, mosso dalla vita e dalla disciplina).
+
+## La Forma del Giorno
+
+Le variazioni di attributo da Nami e Kiwami (±1) sono **deviazioni temporanee** dal valore di scheda — la scena che ti tempra, l'interrogatorio che ti segna. Si segnano a matita accanto al valore di scheda.
+
+**Ogni notte di sonno, ogni deviazione rientra di 1 verso il valore di scheda** — in entrambe le direzioni: l'euforia sbollisce, le ferite si rimarginano.
+
+- I limiti (max 9, min 4, perdita forzata sul Ki se l'attributo è a 4) si applicano al **valore attuale**
+- Il Nasake scatta quando il **valore attuale** è al massimo consentito
+- I tiri si fanno sempre sul **valore attuale**
+
+> **Esempio**: Fujita ha Lucidità 5 di scheda. In tre giorni fortunati colleziona +4 di deviazione: Lucidità attuale 9, il massimo. Poi il caso rallenta: prima notte → 8, seconda → 7, terza → 6, quarta → di nuovo la sua Lucidità 5. Solo comprare il punto lo rende suo.
+
+## Il Valore di Scheda
+
+Il valore di scheda cambia solo per:
+
+- **Scene Personali**: +1/−1 all'attributo **di scheda**, in base al voto del tavolo — la vita che ti cambia davvero
+- **Acquisti con i punti Shugyō** (vedi *Crescita tra i Casi*)
+
+## Il Ki
+
 - **Recupero notturno**: tramite soroban (vedi sezione Ki — Recupero)
+- Il Ki non supera mai il valore di inizio sessione
 
-**Limiti**: Nessun attributo supera mai 9 o scende sotto 4 (perdita forzata su Ki). Il Ki non supera mai il valore di inizio sessione.
-
-**Non c'è esperienza tradizionale.** I PG crescono o crollano in base a come affrontano il caso e la loro vita.
-
-> **Esempio di progressione in una sessione**: Sato inizia con Distacco 6, Ascolto 7, Ki 9.
-> - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco sale a 7, Ki a 10. Ma il Ki non può superare il valore di inizio sessione (9) — il punto è perso.
-> - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di abbassare Ascolto. Ki scende a 8.
-> - Scena personale con il padre: gestita bene dal voto dei giocatori. Sceglie +1 Silenzio (sale da 5 a 6).
-> - Fine sessione: recupero notturno. Il soroban è a 6 (Kiwami+ = +2, Nami- = -1): 5 o più → tira 2d6 prendi il migliore, esce 3 e 5 → recupera 5 Ki. Ki andrebbe a 13, ma il massimo è 9 → resta 9.
-> - Sessione successiva inizia con: Distacco 7, Ascolto 7, Silenzio 6, Ki 9.
+> **Esempio di progressione in una sessione**: Sato ha Distacco 6 di scheda, Ascolto 7, Silenzio 5, Ki 9.
+> - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco attuale 7 (deviazione +1, a matita); il +1 Ki è perso, il Ki è già al massimo.
+> - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di segnare −1 su Ascolto. Ki 8.
+> - Scena personale con il padre: gestita bene dal voto. +1 Silenzio **di scheda** — da 5 a 6, permanente.
+> - Notte: il soroban è a 6 (Kiwami+ = +2, Nami- = -1) → 5 o più → 2d6 prendi il migliore, esce 3 e 5 → +5 Ki, torna a 9. E la deviazione di Distacco rientra di 1 → Distacco torna 6.
+> - Il giorno dopo Sato è: Distacco 6, Ascolto 7, Silenzio 6 (suo per sempre), Ki 9.
 
 ---
 
-## Specializzazioni — Senmon 専門
+# CRESCITA TRA I CASI — SHUGYŌ 修行
 
-Oltre alla progressione in gioco, i PG possono acquisire **specializzazioni professionali** — Interrogatorio, Pedinamento, conoscenze da esperto (armi, veleni, libri contabili...) — in tre gradi: Praticante (+1), Esperto (+2), Maestro (+3, o +2 con Correzione). Ogni grado dà bonus ai tiri pertinenti e soprattutto **conoscenza automatica** crescente; i gradi alti hanno requisiti (attributi, usi contati sul campo, altre specializzazioni) e i Maestri multipli costano manutenzione.
+*Shugyō: la disciplina, l'addestramento del praticante. La crescita che nessun dado regala.*
 
-> Il sistema completo e l'**elenco vivo** delle specializzazioni sono in **`GENKAI_Specializzazioni.md`**. Nota: la Fase 1 delle micro-tecniche di interrogatorio (Manuale GM) richiede la specializzazione **Interrogatorio**.
+## Guadagnare punti Shugyō
+
+| Fonte | Punti |
+|---|---|
+| Sessione giocata | **1** |
+| Caso chiuso | **4-6** — 4: chiuso con buchi o scorciatoie · 5: caso solido · 6: esemplare (incriminazione che regge, nessuna violazione) |
+| Scena Personale gestita bene | **+1** |
+| Momento eccezionale (max 1 a sessione) | **+1** — stesso trigger del +1 Ki narrativo: il GM sceglie se premiare con Ki, soroban o Shugyō |
+
+Un caso da 3 sessioni rende tipicamente **8-10 punti** a PG.
+
+## Spendere i punti
+
+Si spende **tra un caso e l'altro** — la crescita richiede tempo e quiete, non si studia in mezzo a un'indagine.
+
+**Attributi** — alzare di 1 il valore di scheda costa **valore di arrivo × 3**:
+
+| Passaggio | Costo |
+|-----------|-------|
+| 4 → 5 | 15 |
+| 5 → 6 | 18 |
+| 6 → 7 | 21 |
+| 7 → 8 | 24 |
+| 8 → 9 | 27 |
+
+Il tetto resta **9**.
+
+**Ki massimo** — 【da definire】
+
+**Specializzazioni (Senmon 専門)** — Interrogatorio, Pedinamento, conoscenze da esperto (armi, veleni, libri contabili...) in tre gradi: Praticante (+1), Esperto (+2), Maestro (+3, o +2 con Correzione). Ogni grado dà bonus ai tiri pertinenti e soprattutto **conoscenza automatica** crescente; i gradi alti richiedono attributi, usi contati sul campo e altre specializzazioni, e i Maestri multipli costano manutenzione (1 punto Shugyō ogni 5 guadagnati, per ciascun grado 3 oltre il primo).
+
+> Il sistema completo e l'**elenco vivo** delle specializzazioni sono in **`GENKAI_Specializzazioni.md`**. Ricorda: si può iniziare al massimo **una nuova** specializzazione per intervallo tra i casi, e la Fase 1 delle micro-tecniche di interrogatorio richiede la specializzazione **Interrogatorio**.
 
 ---
 
@@ -1209,6 +1254,10 @@ Dado = 12 (Kiwami 極):   -1 attributo usato E -1 Ki
 LIMITI: Attributo max 9, min 4 | Ki max = valore inizio sessione
 Se attributo a 4, la perdita va al Ki
 Nami/Kiwami: solo prove attributi (no combattimento, En, Gou)
+Variazioni attributo da dado: TEMPORANEE — ogni notte la
+deviazione rientra di 1 verso il valore di scheda
+Permanenti solo: Scene Personali e acquisti Shugyō
+(attributo: valore di arrivo × 3 punti, tra un caso e l'altro)
 
 KI (気)
 ≤ 3 = Genkai (fuori gioco temporaneo)
