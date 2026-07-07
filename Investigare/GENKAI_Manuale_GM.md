@@ -710,6 +710,8 @@ I tiri servono **solo nella zona grigia** — quando il roleplay da solo non bas
 
 **Fase 1 — Setup (Costruzione del Rapport)**
 
+**Requisito**: la Fase 1 richiede la specializzazione **Interrogatorio**, grado 1 o più (vedi `GENKAI_Specializzazioni.md`). Chi non la possiede interroga normalmente — domande, prove, Confronto Diretto, Eco delle Parole — ma il terreno emotivo lo prepara solo chi ha il mestiere.
+
 Il PG dichiara quale tecnica usa per aprire l'interrogatorio. Fai tirare sull'attributo della tecnica scelta — oppure, se il roleplay è già convincente, concedi il bonus senza tiro.
 
 | Risultato | Effetto |

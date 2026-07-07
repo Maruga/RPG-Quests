@@ -808,6 +808,8 @@ Funziona così: **prima costruisci il terreno emotivo, poi fai le domande**. Il 
 
 Meccanicamente, un buon setup può darti un bonus all'En temporaneo con quella persona per la durata dell'interrogatorio. Non è un cambiamento di relazione reale — è la persona che abbassa la guardia per il tempo della conversazione.
 
+**Le tecniche di apertura richiedono mestiere**: per usare il setup (tutte le tecniche tranne l'Eco delle Parole) serve la specializzazione **Interrogatorio**, almeno al grado 1 — vedi `GENKAI_Specializzazioni.md`. Senza, interroghi comunque: domande, prove, Confronto Diretto ed Eco restano a disposizione di tutti.
+
 **Come si dichiara al tavolo**: dici al GM cosa stai facendo e come. *"Voglio provare a rispecchiare il suo tono, adattarmi al suo ritmo."* Il GM può chiederti un tiro, oppure — se il tuo roleplay è già convincente — concederti il bonus direttamente.
 
 Ecco le tecniche che puoi usare:

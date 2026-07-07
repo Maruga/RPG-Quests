@@ -999,6 +999,14 @@ Gli attributi cambiano durante l'avventura tramite:
 
 ---
 
+## Specializzazioni — Senmon 専門
+
+Oltre alla progressione in gioco, i PG possono acquisire **specializzazioni professionali** — Interrogatorio, Pedinamento, conoscenze da esperto (armi, veleni, libri contabili...) — in tre gradi: Praticante (+1), Esperto (+2), Maestro (+3, o +2 con Correzione). Ogni grado dà bonus ai tiri pertinenti e soprattutto **conoscenza automatica** crescente; i gradi alti hanno requisiti (attributi, usi contati sul campo, altre specializzazioni) e i Maestri multipli costano manutenzione.
+
+> Il sistema completo e l'**elenco vivo** delle specializzazioni sono in **`GENKAI_Specializzazioni.md`**. Nota: la Fase 1 delle micro-tecniche di interrogatorio (Manuale GM) richiede la specializzazione **Interrogatorio**.
+
+---
+
 # ESEMPI DI GIOCO
 
 ## Esempio 1: Interrogatorio

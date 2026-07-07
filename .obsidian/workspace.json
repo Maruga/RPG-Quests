@@ -225,8 +225,13 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "2f72c9619aa3ada5",
   "lastOpenFiles": [
+    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.30284.059dfe9946fd",
+    "Investigare/GENKAI_Manuale_Giocatori.md.tmp.30284.3eecf3f114c2",
+    "Investigare/GENKAI_Manuale_GM.md.tmp.30284.da6aa8593667",
+    "Investigare/GENKAI_Specializzazioni.md",
+    "Investigare/GENKAI_Specializzazioni.md.tmp.30284.87c0cc32df8e",
     "Investigare/GENKAI_Briefing_Giocatori.md.tmp.30284.7fcc3a887134",
     "Investigare/GENKAI_Regolamento_v1_3.md.tmp.30284.7f8b29155287",
     "Investigare/GENKAI_Manuale_Giocatori.md.tmp.30284.307f4abe4f29",
@@ -234,10 +239,6 @@
     "Investigare/pg/crea_anteprime_tutte.py.tmp.30284.c22c090eb747",
     "Investigare/pg/genera_schede_pg.py.tmp.30284.feb780bec7f6",
     "Investigare/pg/Copioni_PNG.md.tmp.30284.4ca24a612667",
-    "Investigare/pg/PG_03_Nakamura_Shota.md.tmp.30284.144059771aed",
-    "Investigare/GENKAI_Manuale_GM.md.tmp.30284.92f66994edc2",
-    "Investigare/GENKAI_Manuale_GM.md.tmp.30284.59f27580387d",
-    "Investigare/GENKAI_Manuale_GM.md.tmp.30284.af66c37e57dc",
     "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/token_prompts.md",
@@ -270,7 +271,6 @@
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Murakami_Yamashina.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Kuroda_Fushimi.md",
     "Investigare/Avventura Tra Galli/PNG/PNG_Hayashi_Tomoki_Logistica_Nitogun.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Famiglia_Murakami.md",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png"
   ]
