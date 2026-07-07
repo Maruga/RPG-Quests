@@ -53,6 +53,12 @@ Un grado 3 significa impegno costante: pratica, aggiornamento, tempo rubato al r
 
 Con i paletti sugli attributi, il risultato voluto: un PG con **un** grado 3 ha rinunciato a molto per averlo; **due** gradi 3 sono un'impresa; tre o quattro **gradi 2** sono già un investigatore fuori dal comune.
 
+### Lasciar decadere un grado 3
+
+Un Maestro può smettere di mantenersi aggiornato: il grado 3 **decade** a Esperto (+2) e la sua parte di tassa cessa. È una scelta, non una punizione — il maestro d'armi che ha smesso di sparare.
+
+Per **tornare Maestro**: i paletti della voce devono essere **ancora soddisfatti** al momento del ritorno (attributi, specializzazioni correlate, requisiti narrativi) e si paga **metà** del costo del grado 3. Gli usi non si rifanno — il mestiere c'era, va solo rispolverato.
+
 ### Cumulo dei bonus
 
 Un tiro beneficia di **una sola** specializzazione. Si cumula con Kyōryoku (+1) e con L'Ora Giusta; il bonus totale su un singolo tiro non supera **+4** 【proposta da confermare】.
