@@ -890,6 +890,8 @@ Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i
 
 **Le loro schede si costruiscono con il metodo diretto**: il GM assegna i valori che servono al ruolo, senza vincolo di budget. Le figure d'autorità — il commissario, il procuratore — pesano più dei PG (41-42 punti di attributi contro ~38), ed è voluto: sono ancore istituzionali, non avversari da bilanciare. Il loro peso non entra quasi mai in un tiro contrapposto — si sente nella stanza.
 
+**I PNG non hanno Gou** — il Gou è il dono dei protagonisti. Hanno invece **Senmon**, anche di grado 2 (le trovi sulle loro schede). Se un PNG notevole diventa PG, sceglie il suo Gou in quel momento.
+
 ## I Quattro Ruoli Fondamentali
 
 **Il Superiore** — l'autorità che assegna i casi, protegge la squadra dalle pressioni esterne, pretende risultati. Non indaga ma autorizza risorse. Il suo valore è l'ancora: c'è sempre, dietro la scrivania, con aspettative chiare.

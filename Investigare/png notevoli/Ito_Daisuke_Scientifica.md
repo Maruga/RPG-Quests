@@ -265,22 +265,20 @@ Linguaggio tecnico ma comprensibile. Frasi corte e dichiarative. Non usa mai con
 | **Ascolto** | 4 | Non gli interessano le persone — gli interessano le prove |
 | **Presenza** | 5 | Non è un uomo carismatico, ma nessuno mette in dubbio la sua competenza |
 
-> **Distribuzione**: base 4 × 6 = 24, +12 punti +3 bonus (d6) = 39 totale
+> **Distribuzione**: metodo diretto — 39 punti totali
 
 ### Ki 気
 
 **Ki iniziale: 8** (Ascolto 4 + 4)
 
-### Gou 業
+### Senmon 専門
 
-**Occhio della Gru** 鶴の目
-*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
-- **Attributo**: Lucidità (8)
-- **Costo**: 3 Ki
-- **Successo** (2d6 ≤ 8): Trovi il dettaglio nascosto e capisci in che direzione punta
-- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
+I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Ito ha il metodo:
 
-> Ito non lo chiama così. Per lui è semplicemente "fare il mio lavoro". Ma quando si china su una prova e dice "Interessante...", quello è il momento in cui il Gou si attiva. Vede la fibra fuori posto, la composizione anomala, il segno che non dovrebbe esserci.
+- **Rilievi e fotografia 2 — Esperto** *(Lucidità 8)*: quello che un perito vede in ore, lui lo vede sul posto — la fibra fuori posto, il segno che non dovrebbe esserci. +2 ai tiri pertinenti
+- **Medicinali e veleni 2 — Esperto** *(Lucidità 8)*: l'eredità del chimico industriale — composti, dosaggi, tossicologia da campo. +2 ai tiri pertinenti
+
+> Quando si china su una prova e dice *"Interessante..."*, non è un potere: sono trent'anni di metodo. *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*
 
 ### En (Legame) iniziale
 **0** — Professionale, neutro. Non ha relazioni personali coi PG. Se lo rispettano e lo lasciano lavorare, resta a 0 (che per lui è il massimo della collaborazione). Se lo infastidiscono, scende.

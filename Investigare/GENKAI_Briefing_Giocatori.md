@@ -24,17 +24,15 @@ Ogni PG ha 6 attributi (da 4 a 9):
 ### Come si compila — Scheda Vuota
 
 1. Tutti partono da **4**
-2. Distribuite **12 punti** liberi tra i 6 attributi
-3. Tirate **2d6**, prendete il dado **PIÙ BASSO** → punti bonus extra da distribuire
-4. Nessun attributo sopra **9** o sotto **4**
+2. Distribuite **9 punti** liberi tra i 6 attributi
+3. Nessun attributo sopra **9** o sotto **4**
 
 ### Come si compila — Scheda Pre-Compilata
 
-5 punti da distribuire  ·  max +2 per attributo  ·  max 8  ·  Scrivi il totale in Finale
+3 punti da distribuire  ·  max +2 per attributo  ·  max 8  ·  Scrivi il totale in Finale
 
-1. Distribuite **5 punti** liberi tra i 6 attributi
-2. Tirate **2d6**, prendete il dado **PIÙ BASSO** → punti bonus extra da distribuire
-3. Nessun attributo sopra **8** o sotto **4**
+1. Distribuite **3 punti** liberi tra i 6 attributi
+2. Nessun attributo sopra **8** o sotto **4**
 
 ---
 

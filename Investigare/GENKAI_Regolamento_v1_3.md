@@ -47,11 +47,10 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 ### Procedura di Generazione
 
 1. Tutti gli attributi partono da **4**
-2. Distribuisci **12 punti** tra i 6 attributi
-3. Tira **2d6** e prendi il **dado più basso**: quei punti sono bonus aggiuntivi da distribuire
-4. Nessun attributo può superare **9** o scendere sotto **4**
+2. Distribuisci **9 punti** tra i 6 attributi
+3. Nessun attributo può superare **9** o scendere sotto **4**
 
-> **Esempio**: Parti con tutti gli attributi a 4. Distribuisci 12 punti: Distacco 6, Pazienza 5, Silenzio 6, Lucidità 8, Ascolto 6, Presenza 5. Poi tiri 2d6: esce 5 e 3, prendi il dado basso = 3 punti bonus. Li distribuisci: Lucidità sale a 9, Pazienza a 6, Presenza a 6.
+> **Esempio**: Parti con tutti gli attributi a 4. Distribuisci i 9 punti: Distacco 6, Pazienza 5, Silenzio 4, Lucidità 7, Ascolto 6, Presenza 5. Il tuo tratto distintivo è la Lucidità — bravo, non ancora eccezionale: l'8 e il 9 si conquistano coi casi.
 
 ### Scala dei Valori
 
@@ -197,7 +196,7 @@ Il Nasake **non si usa su se stessi** — si dona a un altro PG. Il PG deve farl
 
 Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere — è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
 
-**Ogni PG ha un solo Gou.**
+**Ogni PG ha un solo Gou.** E il Gou appartiene ai protagonisti: i PNG — anche i notevoli — **non ne hanno**.
 
 ### Meccanica
 

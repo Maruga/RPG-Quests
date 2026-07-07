@@ -300,8 +300,8 @@ def genera_scheda(d, output_filename, image_path=None):
     p.paragraph_format.space_before = Pt(3)
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = INDENT
-    add_run(p, "5 punti da distribuire ", size=9, bold=True, color=GRAY)
-    add_run(p, "(max 2 per attributo) + 2d6 prendi il dado più basso come bonus — max 8", size=9, color=GRAY)
+    add_run(p, "3 punti da distribuire ", size=9, bold=True, color=GRAY)
+    add_run(p, "(max 2 per attributo, max 8)", size=9, color=GRAY)
 
     add_separator(doc)
 
@@ -394,6 +394,65 @@ def genera_scheda(d, output_filename, image_path=None):
             d["gou_2_costo"], d["gou_2_successo"], d["gou_2_fallimento"])
     add_gou(doc, d["gou_3_nome"], d["gou_3_desc"], d["gou_3_attributo"],
             d["gou_3_costo"], d["gou_3_successo"], d["gou_3_fallimento"])
+
+    add_separator(doc)
+
+    # ── SENMON ──
+    add_section_header(doc, "専門", "SENMON — SPECIALIZZAZIONI  (scegli una, grado 1)")
+    add_text(doc, "Parti da Praticante: +1 ai tiri pertinenti, conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō — vedi GENKAI_Specializzazioni.md.",
+             size=9, color=GRAY, italic=True, after=2)
+    for i in (1, 2, 3):
+        p = doc.add_paragraph()
+        p.paragraph_format.left_indent = INDENT
+        p.paragraph_format.space_after = Pt(2)
+        add_run(p, "☐ ", size=10, color=NAVY)
+        add_run(p, d[f"senmon_{i}_nome"], size=10, bold=True, color=NAVY)
+        add_run(p, f"  ({d[f'senmon_{i}_chiave']})  —  ", size=9, color=GOLD)
+        add_run(p, d[f"senmon_{i}_desc"], size=9, color=GRAY)
+
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = INDENT
+    p.paragraph_format.space_before = Pt(4)
+    p.paragraph_format.space_after = Pt(1)
+    add_run(p, "Grado: ______    Usi: ", size=10, bold=True, color=NAVY)
+    add_run(p, "☐☐☐☐☐☐☐☐☐☐", size=11, color=NAVY)
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = INDENT
+    add_run(p, "10 usi + 19 Shugyō (attr. chiave di scheda 6+) → Esperto (+2)  ·  25 usi + 39 Shugyō (paletti) → Maestro", size=8, italic=True, color=GRAY)
+
+    add_separator(doc)
+
+    # ── EQUIPAGGIAMENTO ──
+    add_section_header(doc, "装", "EQUIPAGGIAMENTO DI SERVIZIO")
+    add_text(doc, "In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni. (Regole di scontro: GENKAI_Combattimento.md)",
+             size=9, color=GRAY, italic=True, after=2)
+    for line in (
+        "Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità, danno +3. Addestramento base: sai usarla, non sei un tiratore scelto",
+        "Armadietto — Giubbotto antiproiettile: -2 al dado di difesa contro armi da fuoco (operazioni a rischio)",
+        "Operazioni — Keibō (manganello): Silenzio, danno +2",
+        "Sempre con te — Keisatsu techō (tesserino), manette, taccuino",
+        "A mani nude — Lotta: Presenza, danno +1 (prese e immobilizzazioni d'accademia)",
+    ):
+        p = doc.add_paragraph()
+        p.paragraph_format.left_indent = INDENT
+        p.paragraph_format.space_after = Pt(1)
+        add_run(p, "• " + line, size=9, color=GRAY)
+
+    add_separator(doc)
+
+    # ── SHUGYO ──
+    add_section_header(doc, "修行", "SHUGYŌ — CRESCITA")
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = INDENT
+    p.paragraph_format.space_after = Pt(2)
+    add_run(p, "Punti Shugyō: ____________________", size=11, bold=True, color=NAVY)
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = INDENT
+    p.paragraph_format.space_after = Pt(1)
+    add_run(p, "Guadagno: 1 a sessione · 4-6 a caso chiuso · +1 scena personale ben gestita · +1 momento eccezionale (max 1/sessione)", size=8, color=GRAY)
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = INDENT
+    add_run(p, "Spesa tra i casi: attributo = arrivo ×3 · Ki max = arrivo ×4 (tetto 12) · Senmon 9/19/39 · Enja extra 12 · affinare il Gou = base ×11", size=8, color=GRAY)
 
     add_separator(doc)
 
@@ -514,7 +573,7 @@ PG_01 = {
     "ruolo": "Capo Squadra Investigativa",
     "grado": "Ispettore Capo (Keibu)",
     "servizio": "18 anni",
-    "distacco_base": "6", "pazienza_base": "4", "silenzio_base": "6",
+    "distacco_base": "6", "pazienza_base": "4", "silenzio_base": "5",
     "lucidita_base": "6", "ascolto_base": "4", "presenza_base": "5",
     "gou_1_nome": "Pugno di Ferro 鉄拳",
     "gou_1_desc": "Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.",
@@ -534,6 +593,15 @@ PG_01 = {
     "gou_3_costo": "2 Ki",
     "gou_3_successo": "Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli",
     "gou_3_fallimento": "Solo il 12 è protetto. L'11 resta Nami negativo",
+    "senmon_1_nome": "Ambienti yakuza",
+    "senmon_1_chiave": "Silenzio",
+    "senmon_1_desc": "Diciott'anni a Kyoto: sai chi comanda in quali strade e come si parla a un kumichō senza perdere la faccia.",
+    "senmon_2_nome": "Stampa e media",
+    "senmon_2_chiave": "Presenza",
+    "senmon_2_desc": "Sai come ragionano le redazioni, cosa fa notizia e cosa può aspettare. E hai un amico al Kyoto Shimbun.",
+    "senmon_3_nome": "Lotta",
+    "senmon_3_chiave": "Presenza",
+    "senmon_3_desc": "Accademia vecchia scuola: pugni, prese, immobilizzazioni e tecniche d'arresto.",
     "chi_sei": "Sei un veterano rispettato. Hai risolto casi importanti, hai costruito una reputazione solida. Ma la tua vita privata è un disastro. Sei mesi fa tua moglie Yuko ti ha lasciato. Non ci sei mai, ha detto. Aveva ragione. Ora vivi in un piccolo appartamento a Fushimi, con le scatole ancora da disfare. Tuo figlio Takeshi (8 anni) vive con la madre. Il martedì e il giovedì è con te. O dovrebbe esserlo. Il problema: il lavoro viene sempre prima.",
     "problema_titolo": "LA FAMIGLIA",
     "problema_testo": "Tua sorella Yamamoto Noriko è stata il tuo supporto durante il divorzio. Ha coperto le tue assenze, ha badato a Takeshi quando tu non potevi. Ma la pazienza di Noriko ha un limite. L'ultima volta che le hai chiesto aiuto, te lo ha detto chiaramente: Non sono la tua baby-sitter di riserva. Devi scegliere cosa conta davvero. Sai che Noriko è stanca. Sai che il rapporto con Takeshi è fragile.",
@@ -577,7 +645,7 @@ PG_02 = {
     "grado": "Sergente (Junsa-bucho)",
     "servizio": "10 anni",
     "distacco_base": "6", "pazienza_base": "4", "silenzio_base": "4",
-    "lucidita_base": "7", "ascolto_base": "4", "presenza_base": "6",
+    "lucidita_base": "7", "ascolto_base": "4", "presenza_base": "5",
     "gou_1_nome": "Occhio della Gru 鶴の目",
     "gou_1_desc": "Vedi ciò che altri non vedono — il dettaglio che cambia tutto.",
     "gou_1_attributo": "Lucidità",
@@ -596,6 +664,15 @@ PG_02 = {
     "gou_3_costo": "3 Ki",
     "gou_3_successo": "Senti le emozioni dominanti e quante presenze diverse c'erano — distingui paura da rabbia da determinazione",
     "gou_3_fallimento": "Un'impressione emotiva generale, senza distinzione tra le persone",
+    "senmon_1_nome": "Rilievi e fotografia",
+    "senmon_1_chiave": "Lucidità",
+    "senmon_1_desc": "Documentare una scena è il tuo mestiere: luci, angoli, impronte, catena di custodia.",
+    "senmon_2_nome": "Pedinamento",
+    "senmon_2_chiave": "Lucidità",
+    "senmon_2_desc": "Distanze, riflessi nelle vetrine, cambi di marciapiede. Vedi ogni dettaglio — anche quando sei tu a seguire.",
+    "senmon_3_nome": "Sport e scommesse",
+    "senmon_3_chiave": "Ascolto",
+    "senmon_3_desc": "Baseball, sumo, corse. Quote, allibratori, risultati pilotati. Conosci quel mondo fin troppo bene.",
     "chi_sei": "Sei brillante. Lo sanno tutti, tu per primo. Vedi cose che altri non vedono, ricostruisci scene del crimine come se avessi assistito in persona. Il problema è che la tua mente non si ferma mai — cerchi stimoli, adrenalina, sfide. Hai iniziato con le scommesse sportive tre anni fa. Solo per divertimento. Poi le cifre sono cresciute. Ora scommetti su tutto: baseball, sumo, corse di cavalli. Vinci spesso — sei intelligente. Ma ultimamente hai perso più di quanto hai vinto.",
     "problema_titolo": "IL GIOCO D'AZZARDO",
     "problema_testo": "Devi soldi a Murakami, un allibratore indipendente. Non è yakuza — è quasi rispettabile. Ma i debiti sono debiti. Il suo uomo per le riscossioni è Goto Masaru: non minaccia mai, è educato, ragionevole, professionale — il che lo rende più inquietante. Sai che se qualcuno in centrale scopre che scommetti illegalmente, la tua carriera è finita.",
@@ -638,7 +715,7 @@ PG_03 = {
     "ruolo": "Specialista Interrogatori",
     "grado": "Ispettore (Keibu-ho)",
     "servizio": "14 anni",
-    "distacco_base": "4", "pazienza_base": "7", "silenzio_base": "5",
+    "distacco_base": "4", "pazienza_base": "7", "silenzio_base": "4",
     "lucidita_base": "4", "ascolto_base": "7", "presenza_base": "4",
     "gou_1_nome": "Ombra della Verità 影の真実",
     "gou_1_desc": "Senti quando qualcuno mente. Non sai come, ma lo senti.",
@@ -658,6 +735,15 @@ PG_03 = {
     "gou_3_costo": "3 Ki",
     "gou_3_successo": "Il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione",
     "gou_3_fallimento": "Il PNG è stanco, la coerenza vacilla, ma la storia regge",
+    "senmon_1_nome": "Interrogatorio",
+    "senmon_1_chiave": "Pazienza o Ascolto",
+    "senmon_1_desc": "Il tuo mestiere. Sblocca le tecniche di apertura — il terreno emotivo che prepari prima delle domande vere.",
+    "senmon_2_nome": "Conoscere il quartiere",
+    "senmon_2_chiave": "Ascolto — quartiere a scelta",
+    "senmon_2_desc": "Le strade dove sei cresciuto o dove lavori da anni: le facce, le abitudini, chi vede tutto e chi non parla.",
+    "senmon_3_nome": "Ricerca d'archivio",
+    "senmon_3_chiave": "Pazienza",
+    "senmon_3_desc": "Registri, protocolli, fascicoli. Dove gli altri si arrendono dopo un'ora, tu stai ancora leggendo.",
     "chi_sei": "Sei quello che fa parlare le persone. Non con la forza — con la pazienza. Ti siedi, aspetti, ascolti. Prima o poi tutti parlano. Figlio maggiore di una famiglia modesta di Osaka, hai lavorato duro per arrivare dove sei. Tuo padre è morto quando avevi 15 anni. Tuo fratello minore Kazuo (34 anni) è l'opposto — vive di espedienti, piccoli imbrogli, soldi prestati e mai restituiti.",
     "problema_titolo": "IL FRATELLO",
     "problema_testo": "Kazuo è un peso che ti porti dietro da sempre. Gli hai già prestato soldi tre volte. Ogni volta l'ultima. Ogni volta una bugia. Tua moglie non sa di questi prestiti: se lo scoprisse, ci sarebbero problemi anche a casa. Ma Kazuo è sangue del tuo sangue, e quando ha bisogno sa sempre dove trovare suo fratello.",
@@ -701,7 +787,7 @@ PG_04 = {
     "grado": "Agente Scelto (Junsa-cho)",
     "servizio": "3 anni",
     "distacco_base": "4", "pazienza_base": "6", "silenzio_base": "4",
-    "lucidita_base": "7", "ascolto_base": "5", "presenza_base": "5",
+    "lucidita_base": "7", "ascolto_base": "5", "presenza_base": "4",
     "gou_1_nome": "Palazzo della Memoria 記憶の宮殿",
     "gou_1_desc": "Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.",
     "gou_1_attributo": "Lucidità o Pazienza (dual)",
@@ -720,6 +806,15 @@ PG_04 = {
     "gou_3_costo": "2 Ki",
     "gou_3_successo": "Sai cosa sta per svanire e hai un istante per agire",
     "gou_3_fallimento": "Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa",
+    "senmon_1_nome": "Medicinali e veleni",
+    "senmon_1_chiave": "Lucidità",
+    "senmon_1_desc": "La tua laurea: farmaci, dosaggi, interazioni. Riconosci un'anomalia chimica prima ancora del laboratorio.",
+    "senmon_2_nome": "Computer e reti",
+    "senmon_2_chiave": "Lucidità",
+    "senmon_2_desc": "Sistemi, archivi digitali, recupero dati. È il 1997: sei uno dei pochi in centrale che ci capisce qualcosa.",
+    "senmon_3_nome": "Medicina",
+    "senmon_3_chiave": "Lucidità",
+    "senmon_3_desc": "Anatomia, traumi, referti. Il linguaggio del medico legale non ha segreti per te.",
     "chi_sei": "Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta. Il problema è tua madre: Sato Michiko non ha mai accettato che tu facessi il poliziotto. Uno spreco, dice. Tuo zio Tanaka Jiro ha un'azienda di import-export e ti aspetta.",
     "problema_titolo": "LA MADRE",
     "problema_testo": "Tua madre chiama. Spesso. A volte in centrale. È urgente, dice alla segretaria. Non è mai urgente. Vuole sapere se hai ripensato al lavoro dello zio, quando ti sposi, perché sprechi la tua vita. Non urla, non minaccia — usa il senso di colpa come un'arma di precisione. E non puoi riattaccare in faccia a tua madre — non in Giappone.",
@@ -763,7 +858,7 @@ PG_05 = {
     "grado": "Ispettore (Keibu-ho)",
     "servizio": "8 anni",
     "distacco_base": "4", "pazienza_base": "4", "silenzio_base": "7",
-    "lucidita_base": "6", "ascolto_base": "6", "presenza_base": "4",
+    "lucidita_base": "5", "ascolto_base": "6", "presenza_base": "4",
     "gou_1_nome": "Specchio dell'Anima 魂の鏡",
     "gou_1_desc": "Vedi oltre la maschera. Senti le emozioni vere di una persona.",
     "gou_1_attributo": "Silenzio",
@@ -782,6 +877,15 @@ PG_05 = {
     "gou_3_costo": "2 Ki",
     "gou_3_successo": "Dettagli precisi — tipo di trauma, natura della paura, segni di stress cronico",
     "gou_3_fallimento": "Capisci che qualcosa non va, ma non riesci a definirlo con precisione",
+    "senmon_1_nome": "Copertura e travestimento",
+    "senmon_1_chiave": "Silenzio",
+    "senmon_1_desc": "Reggere un ruolo è psicologia applicata: postura, voce, storia di copertura.",
+    "senmon_2_nome": "Mondo della notte",
+    "senmon_2_chiave": "Presenza",
+    "senmon_2_desc": "Bar, hostess club, mizu shōbai: i posti dove le maschere cadono. Sai chi tiene i conti e chi i segreti.",
+    "senmon_3_nome": "Arte e antiquariato",
+    "senmon_3_chiave": "Lucidità",
+    "senmon_3_desc": "Epoche, autori, falsi. La tua estetica coltivata — e il mercato, legale e non, che ci gira attorno.",
     "chi_sei": "Sei arrivata in polizia dopo una laurea in psicologia e anni di pratica clinica. Capisci le persone, vedi i pattern, sai perché la gente fa quello che fa. Sei anche una donna single in un ambiente dominato dagli uomini — hai dovuto lavorare il doppio per guadagnarti il rispetto. Cinque anni fa hai chiesto un prestito a Iwamoto, un conoscente di famiglia, per le cure di tuo padre. Tuo padre è morto comunque. Il debito è quasi saldato. Ma Iwamoto non sembra volerlo chiudere.",
     "problema_titolo": "IL CREDITORE",
     "problema_testo": "Iwamoto Koji continua a presentarsi. Non c'è fretta. Siamo amici. Quando sarà il momento, ne parleremo. Non chiede mai nulla di specifico — questo è il punto. L'ambiguità è l'arma. Vuole tenerti in debito non per i soldi, ma per il potere di poter chiedere qualcosa un giorno. E se qualcuno in centrale lo vede parlare con te, ci saranno domande.",

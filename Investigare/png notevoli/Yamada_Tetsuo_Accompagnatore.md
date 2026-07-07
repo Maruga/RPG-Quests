@@ -290,22 +290,20 @@ Tono calmo e rispettoso. Frasi di lunghezza media, professionali ma accessibili.
 | **Ascolto** | 5 | Ascolta per obbedire, non per leggere le persone |
 | **Presenza** | 6 | Rispettato ma non imponente — non è il suo stile |
 
-> **Distribuzione**: base 4 × 6 = 24, +12 punti +3 bonus (d6) = 39 totale
+> **Distribuzione**: metodo diretto — 39 punti totali
 
 ### Ki 気
 
 **Ki iniziale: 8** (Ascolto 5 + 3)
 
-### Gou 業
+### Senmon 専門
 
-**Palazzo della Memoria** 記憶の宮殿
-*Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
-- **Attributo**: Lucidità (7)
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ 7): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
-- **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
+I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Yamada ha la strada:
 
-> Yamada prende appunti su tutto. Ma il Palazzo della Memoria va oltre gli appunti — è la capacità di richiamare un'immagine completa: la disposizione di una stanza, un viso visto di sfuggita, una targa intravista nel traffico. Il taccuino è il metodo; il Gou è il talento.
+- **Conoscere il quartiere — Kyoto 2 — Esperto** *(Ascolto)*: la città come le sue tasche — ogni strada, scorciatoia, izakaya, faccia di quartiere. +2 ai tiri pertinenti *(scheda a metodo diretto: per i PNG i requisiti di grado sono solo un riferimento)*
+- **Pedinamento 1 — Praticante** *(Lucidità 7)*: dieci anni di pattuglia — le distanze giuste, l'occhio per chi ti segue. +1 ai tiri pertinenti
+
+> Il taccuino resta il suo metodo: una ventina riempiti in dieci anni. Quello che Yamada sa di Kyoto non è un potere — è la strada. *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*
 
 ### En (Legame) iniziale
 **+2 verso i PG** — Li supporta, li rispetta. È assegnato a loro e prende il compito seriamente.

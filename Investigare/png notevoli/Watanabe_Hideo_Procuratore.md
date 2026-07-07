@@ -261,16 +261,14 @@ Keigo formale impeccabile. Frasi precise, mai approssimative. Usa il "lei" giuri
 ### Ki 気
 **Ki iniziale**: 8 (Ascolto 6 + 2)
 
-### Gou 業
+### Senmon 専門
 
-**Lettura della Toga** 法衣の眼差し
-*Sai vedere se una richiesta sta in piedi giuridicamente prima ancora di leggerla.*
-- **Attributo**: Lucidità (7)
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ 7): Watanabe individua immediatamente il punto debole della richiesta e lo segnala ai PG (anche tramite Taniguchi). I PG sanno cosa correggere
-- **Fallimento**: Watanabe non si pronuncia, valuta nei tempi standard
+I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Watanabe ha il diritto:
 
-> Watanabe usa questo Gou raramente — solo quando ha En +1 con i PG e vede che lavorano in buona fede ma con errori formali. È il suo modo di "aiutare senza aiutare".
+- **Leggi — diritto penale 2 — Esperto** *(Lucidità 7)*: vede il punto debole di una richiesta prima ancora di finire di leggerla. +2 ai tiri pertinenti
+- **Ricerca d'archivio 2 — Esperto** *(Pazienza 8)*: fascicoli, precedenti, giurisprudenza — trent'anni di letture giudiziarie. +2 ai tiri pertinenti
+
+> Quando ha En +1 con i PG e li vede lavorare in buona fede ma con errori formali, può segnalare — tramite Taniguchi — cosa correggere in una richiesta. Non è un potere: è il suo modo di "aiutare senza aiutare". *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*
 
 ### En (Legame) iniziale
 **0 verso i PG** — neutrale, istituzionale. Cresce di +1 ogni 3 richieste solide presentate. Cala di -1 per ogni richiesta evidentemente debole presentata in cattiva fede o per pressione politica.

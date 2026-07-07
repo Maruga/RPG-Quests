@@ -155,6 +155,22 @@ def add_gou_box(doc, name, kanji_desc, attribute, cost, success, failure):
     add_run(p5, failure, size=8, color=DARK)
 
 
+def add_senmon_box(doc, name, chiave, desc):
+    p = doc.add_paragraph()
+    pf = p.paragraph_format
+    pf.space_before = Pt(5)
+    pf.space_after = Pt(1)
+    pf.left_indent = Cm(0.3)
+    add_run(p, "▸ ", size=9, color=GOLD)
+    add_run(p, name, bold=True, size=10, color=DARK)
+    add_run(p, f"   ({chiave})", size=8, color=MUTED)
+
+    p2 = doc.add_paragraph()
+    p2.paragraph_format.space_after = Pt(3)
+    p2.paragraph_format.left_indent = Cm(0.6)
+    add_run(p2, desc, size=8, color=DARK)
+
+
 # ── PNG Data ──
 
 PNG_DATA = [
@@ -177,14 +193,12 @@ PNG_DATA = [
             ("Ascolto", "5", "Più comandante che ascoltatore — delega l'ascolto ai suoi"),
             ("Presenza", "8", "Riempie la stanza senza alzare la voce"),
         ],
-        "gou": {
-            "name": "Voce del Tuono",
-            "kanji": "雷の声",
-            "desc": "Esplosione di autorità in un momento preciso. Una frase, uno sguardo. Interruzione totale.",
-            "attr": "Presenza (8)", "cost": "3 Ki",
-            "success": "Il PNG si ferma — qualche secondo di sottomissione assoluta, perde il filo",
-            "failure": "Il PNG esita, perde il filo per un istante",
-        },
+        "senmon": [
+            ("Interrogatorio 2 — Esperto", "Pazienza",
+             "Trent'anni di stanze chiuse: +2 ai tiri pertinenti, sceglie la tecnica giusta per la persona giusta senza tentativi."),
+            ("Stampa e media 2 — Esperto", "Presenza 8",
+             "Sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. +2 ai tiri pertinenti."),
+        ],
         "background": "Sei un veterano. Hai scalato i ranghi della polizia in trent'anni di servizio, da pattuglia a commissario. Hai risolto casi importanti, hai protetto la tua squadra, hai tenuto a bada media e politici.\n\nSei la roccia della Sezione Omicidi. I tuoi uomini ti rispettano. I tuoi superiori si fidano. Nessuno vede le crepe.\n\nMa le crepe ci sono. A casa, tua moglie Fumiko sta peggiorando. La demenza precoce sta avanzando. E tu fingi che vada tutto bene.",
         "problem_title": "La Moglie",
         "problem_text": "Tua moglie Taniguchi Fumiko ha iniziato a dimenticare le cose. Prima le chiavi, poi i nomi, poi gli appuntamenti. Tre mesi fa il dottore ha detto la parola che non volevi sentire: demenza precoce. Ha 54 anni.\n\nNon l'hai detto a nessuno. Al lavoro sei lo stesso di sempre. Ma la sera torni a casa e trovi i fornelli accesi, le pentole vuote, Fumiko che sorride come se niente fosse.\n\nIl problema: se al lavoro scoprono della malattia di Fumiko, qualcuno potrebbe usarla per metterti in pensione anticipata. E ogni ora che resti in ufficio, ti chiedi se Fumiko sta bene.",
@@ -236,14 +250,12 @@ PNG_DATA = [
             ("Ascolto", "5", "Ascolta per obbedire, non per leggere le persone"),
             ("Presenza", "6", "Rispettato ma non imponente"),
         ],
-        "gou": {
-            "name": "Palazzo della Memoria",
-            "kanji": "記憶の宮殿",
-            "desc": "Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.",
-            "attr": "Lucidità (7)", "cost": "2 Ki",
-            "success": "Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente",
-            "failure": "Ricordi il dettaglio principale, ma sfocato o incompleto",
-        },
+        "senmon": [
+            ("Conoscere il quartiere — Kyoto 2 — Esperto", "Ascolto",
+             "La città come le sue tasche: ogni strada, scorciatoia, izakaya, faccia di quartiere. +2 ai tiri pertinenti."),
+            ("Pedinamento 1 — Praticante", "Lucidità 7",
+             "Dieci anni di pattuglia: le distanze giuste, l'occhio per chi ti segue. +1 ai tiri pertinenti."),
+        ],
         "background": "Sei poliziotto da dieci anni. Hai iniziato come agente di pattuglia e lo sei ancora — non per mancanza di capacità, ma perché ami la strada. O almeno, è quello che dici.\n\nConosci Kyoto come le tue tasche. Ogni quartiere, ogni scorciatoia, ogni izakaya dove si trovano informazioni. Quando la Sezione Omicidi apre un caso, il commissario Taniguchi ti assegna come supporto.\n\nSei quello che facilita tutto: spostamenti, contatti, archivi, territorio. Un bravo poliziotto. Ma non un detective.",
         "problem_title": "L'Esame",
         "problem_text": "Hai fallito l'esame per detective due volte. La prima a 28 anni, la seconda a 31. Non per stupidità — per ansia. Davanti al foglio d'esame ti si blocca tutto.\n\nLa tua fidanzata Kawano Miki ti vuole bene, ma è stanca di aspettare. Ha 32 anni, vuole sposarsi, vuole una famiglia. E un agente di pattuglia che non avanza di grado non è il futuro che aveva in mente.\n\nMiki vuole che riprovi l'esame. Tu hai paura di fallire una terza volta. E ogni volta che i PG ti trattano da \"semplice agente\", la ferita si riapre.",
@@ -295,14 +307,12 @@ PNG_DATA = [
             ("Ascolto", "4", "Non gli interessano le persone — gli interessano le prove"),
             ("Presenza", "5", "Non carismatico, ma nessuno mette in dubbio la sua competenza"),
         ],
-        "gou": {
-            "name": "Occhio della Gru",
-            "kanji": "鶴の目",
-            "desc": "Vedi ciò che altri non vedono — il dettaglio che cambia tutto.",
-            "attr": "Lucidità (8)", "cost": "3 Ki",
-            "success": "Trovi il dettaglio nascosto e capisci in che direzione punta",
-            "failure": "Percepisci quanti elementi fuori posto ci sono — non cosa sono, ma quanto cercare",
-        },
+        "senmon": [
+            ("Rilievi e fotografia 2 — Esperto", "Lucidità 8",
+             "Quello che un perito vede in ore, lui lo vede sul posto: la fibra fuori posto, il segno che non dovrebbe esserci. +2 ai tiri."),
+            ("Medicinali e veleni 2 — Esperto", "Lucidità 8",
+             "L'eredità del chimico industriale: composti, dosaggi, tossicologia da campo. +2 ai tiri pertinenti."),
+        ],
         "background": "Sei nella Kanshiki-ka da oltre 15 anni. Prima eri chimico industriale, poi sei entrato nella polizia per curiosità e ci sei rimasto per passione.\n\nHai formato decine di tecnici, migliorato le procedure della prefettura, testimoniato in centinaia di processi. I tuoi rapporti non sono mai stati contestati con successo.\n\nLe prove non mentono, le persone sì. Per questo preferisci le prove.",
         "problem_title": "La Figlia",
         "problem_text": "Tua figlia Ito Haruka ha 24 anni e non ti parla da due. L'ultima volta ti ha detto: \"Non sei mai stato un padre. Sei stato un laboratorio con le gambe.\"\n\nAveva ragione. Quando era bambina, tu eri al lavoro. Tua moglie Sachiko ha tenuto insieme la famiglia finché ha potuto, poi ha smesso. Il divorzio è stato pulito, silenzioso.\n\nHaruka vive a Osaka. Ogni tanto Sachiko ti aggiorna — \"Sta bene, Daisuke\" — e tu annuisci e non chiedi altro. Ma la verità è che vorresti chiamarla. Non sai cosa dire.",
@@ -557,18 +567,17 @@ def create_sheet(png):
 
     add_thin_separator(doc)
 
-    # ── GOU (fixed, single) ──
-    add_section_header(doc, "Gou — Il Debito", "業")
+    # ── SENMON ──
+    add_section_header(doc, "Senmon — Specializzazioni", "専門")
 
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = Cm(0.3)
-    add_run(p, "Il Gou funziona SEMPRE. Successo = dettagli precisi. Fallimento = dettagli vaghi.",
+    add_run(p, "I PNG notevoli non hanno Gou — il Gou è il dono dei protagonisti. Hanno mestiere.",
             italic=True, size=8, color=MUTED)
 
-    gou = png["gou"]
-    add_gou_box(doc, f"{gou['name']}  {gou['kanji']}", gou["desc"],
-                gou["attr"], gou["cost"], gou["success"], gou["failure"])
+    for s_name, s_chiave, s_desc in png["senmon"]:
+        add_senmon_box(doc, s_name, s_chiave, s_desc)
 
     # ── Satori reminder ──
     add_separator(doc)

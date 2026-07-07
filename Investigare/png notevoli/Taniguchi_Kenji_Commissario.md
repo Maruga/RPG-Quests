@@ -264,16 +264,14 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 
 **Ki iniziale: 9** (Ascolto 5 + 4)
 
-### Gou 業
+### Senmon 専門
 
-**Voce del Tuono** 雷の声
-*Esplosione di autorità in un momento preciso. Una frase, uno sguardo. Interruzione totale.*
-- **Attributo**: Presenza (8)
-- **Costo**: 3 Ki
-- **Successo** (2d6 ≤ 8): Il PNG si ferma — qualche secondo di sottomissione assoluta, perde il filo di quello che stava facendo o dicendo
-- **Fallimento**: Il PNG esita, perde il filo per un istante
+I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Taniguchi ha il mestiere:
 
-> Taniguchi non usa il Gou spesso — non ne ha bisogno. Ma quando lo fa, è devastante. Non urla: abbassa la voce, fissa negli occhi, e il peso di trent'anni di carriera si abbatte sul bersaglio.
+- **Interrogatorio 2 — Esperto** *(Pazienza)*: trent'anni di stanze chiuse. +2 ai tiri pertinenti; sceglie la tecnica giusta per la persona giusta senza tentativi
+- **Stampa e media 2 — Esperto** *(Presenza 8)*: sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. +2 ai tiri pertinenti
+
+> Quando Taniguchi abbassa la voce e ti fissa negli occhi, non è un potere: è il peso di trent'anni di carriera. *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*
 
 ### En (Legame) iniziale
 **+1 verso i PG** — Li rispetta come professionisti. Il legame cresce se lavorano bene, cala se fanno errori gravi o parlano coi media.

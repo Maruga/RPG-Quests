@@ -23,11 +23,10 @@
 | **Silenzio** | 4 | Tendi a parlare troppo quando sei nervoso |
 | **Lucidità** | 7 | Eccellente — mente analitica formidabile |
 | **Ascolto** | 5 | Attento ai dettagli |
-| **Presenza** | 5 | Entusiasta, energia contagiosa |
+| **Presenza** | 4 | Il più giovane — ti prendono sul serio a fatica |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Poi tira **2d6** e prendi il dado **più basso**: punti bonus extra da distribuire liberamente
 > - Nessun attributo può superare 8
 
 ---
@@ -85,6 +84,48 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Fallimento**: Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
 
 > Attivi L'Istante della Caduta la mattina. Tre ore dopo, durante un'analisi, il GM dice: "L'Istante della Caduta si attiva. Il campione sta degradandosi — hai ancora pochi minuti per l'analisi chiave prima che sia inutilizzabile."
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Medicinali e veleni *(Lucidità)*
+La tua laurea: farmaci, dosaggi, interazioni, sostanze. Riconosci un'anomalia chimica prima ancora che il laboratorio la confermi.
+
+### Opzione 2: Computer e reti *(Lucidità)*
+Sistemi, archivi digitali, recupero dati. È il 1997: sei uno dei pochi in centrale che ci capisce qualcosa — e il tuo migliore amico fa questo di mestiere.
+
+### Opzione 3: Medicina *(Lucidità)*
+Anatomia, traumi, referti. Il linguaggio del medico legale non ha segreti per te.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 

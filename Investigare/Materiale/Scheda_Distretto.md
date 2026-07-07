@@ -18,34 +18,34 @@ Schede personaggio complete in `pg/`. Schermata sintetica:
 ### PG_01 — YAMAMOTO Kenji (山本 健二) — Capo Squadra
 - **Età**: 42 | **Grado**: 警部 Keibu (Ispettore Capo) | **Servizio**: 18 anni
 - **Ruolo**: Coordina la squadra. Punto di contatto con il Commissario Taniguchi
-- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 6 / Lucidità 6 / Ascolto 4 / Presenza 5
-- **Forte di**: Lucidità (vede i collegamenti), Distacco (veterano), Silenzio (incassa)
+- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 5 / Lucidità 6 / Ascolto 4 / Presenza 5
+- **Forte di**: Lucidità (vede i collegamenti), Distacco (veterano)
 
 ### PG_02 — HONDA Ryota (本田 涼太) — Analista Scena del Crimine
 - **Età**: 35 | **Grado**: 巡査部長 Junsa-bucho (Sergente) | **Servizio**: 10 anni
 - **Ruolo**: Lettura della scena, repertazione, ricostruzione fisica dell'evento
-- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 4 / Lucidità 7 / Ascolto 4 / Presenza 6
-- **Forte di**: Lucidità (osservazione brillante), Distacco (freddo sulla scena), Presenza (sicuro di sé)
+- **Attributi base**: Distacco 6 / Pazienza 4 / Silenzio 4 / Lucidità 7 / Ascolto 4 / Presenza 5
+- **Forte di**: Lucidità (osservazione brillante), Distacco (freddo sulla scena)
 - **Debole di**: Pazienza (impulsivo, cerca scorciatoie)
 
 ### PG_03 — NAKAMURA Shota (中村 翔太) — Specialista Interrogatori
 - **Età**: 38 | **Grado**: 警部補 Keibu-ho (Ispettore) | **Servizio**: 14 anni
 - **Ruolo**: Conduzione di interrogatori, lettura delle bugie, gestione di testimoni difficili
-- **Attributi base**: Distacco 4 / Pazienza 7 / Silenzio 5 / Lucidità 4 / Ascolto 7 / Presenza 4
-- **Forte di**: Pazienza (può aspettare ore), Ascolto (sente le bugie), Silenzio (sa quando tacere)
+- **Attributi base**: Distacco 4 / Pazienza 7 / Silenzio 4 / Lucidità 4 / Ascolto 7 / Presenza 4
+- **Forte di**: Pazienza (può aspettare ore), Ascolto (sente le bugie)
 
 ### PG_04 — SATO Yuki (佐藤 勇気) — Tecnico Analisi Tracce
 - **Età**: 27 | **Grado**: 巡査長 Junsa-cho (Agente Scelto) | **Servizio**: 3 anni
 - **Ruolo**: Tracce fisiche, rapporti tecnici, dialogo con la Scientifica e il laboratorio
-- **Attributi base**: Distacco 4 / Pazienza 6 / Silenzio 4 / Lucidità 7 / Ascolto 5 / Presenza 5
+- **Attributi base**: Distacco 4 / Pazienza 6 / Silenzio 4 / Lucidità 7 / Ascolto 5 / Presenza 4
 - **Forte di**: Lucidità (mente analitica), Pazienza (metodico, preciso)
 - **Debole di**: Distacco (si fa coinvolgere troppo), Silenzio (parla quando è nervoso)
 
 ### PG_05 — FUJITA Emi (藤田 恵美) — Profiler / Psicologa Investigativa
 - **Età**: 36 | **Grado**: 警部補 Keibu-ho (Ispettore) | **Servizio**: 8 anni
 - **Ruolo**: Profilazione comportamentale dei sospettati, valutazione del movente, supporto psicologico
-- **Attributi base**: Distacco 4 / Pazienza 4 / Silenzio 7 / Lucidità 6 / Ascolto 6 / Presenza 4
-- **Forte di**: Silenzio (osserva senza reagire), Ascolto (formazione psicologica), Lucidità (analisi solida)
+- **Attributi base**: Distacco 4 / Pazienza 4 / Silenzio 7 / Lucidità 5 / Ascolto 6 / Presenza 4
+- **Forte di**: Silenzio (osserva senza reagire), Ascolto (formazione psicologica)
 
 ---
 

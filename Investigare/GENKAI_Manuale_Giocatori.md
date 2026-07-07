@@ -69,11 +69,10 @@ Il tuo personaggio ha sei attributi, ognuno con un valore da 4 a 9. Non misurazi
 ### Come si genera
 
 1. Tutti gli attributi partono da **4**
-2. Distribuisci **12 punti** tra i sei attributi come vuoi
-3. Tira **2d6** e prendi il **dado più basso**: quei punti sono bonus aggiuntivi da distribuire liberamente
-4. Nessun attributo può superare **9** o scendere sotto **4**
+2. Distribuisci **9 punti** tra i sei attributi come vuoi
+3. Nessun attributo può superare **9** o scendere sotto **4**
 
-> **Esempio**: Stai creando un investigatore esperto ma consumato. Distribuisci i 12 punti: Distacco 7, Pazienza 6, Silenzio 5, Lucidità 8, Ascolto 6, Presenza 4. Poi tiri 2d6 per i bonus: esce 4 e 6, prendi il 4. Quattro punti extra. Li metti su Ascolto (7), Silenzio (6), Presenza (5). Il personaggio finale: Distacco 7, Pazienza 6, Silenzio 6, Lucidità 8, Ascolto 7, Presenza 5.
+> **Esempio**: Stai creando un investigatore esperto ma consumato. Distribuisci i 9 punti: Distacco 7, Pazienza 5, Silenzio 5, Lucidità 7, Ascolto 5, Presenza 4. Due punti di forza — Distacco e Lucidità — e il resto nella media: il personaggio finito lo costruiranno i casi.
 
 ### Cosa dicono i numeri
 

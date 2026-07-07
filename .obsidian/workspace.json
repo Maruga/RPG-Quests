@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "50bf730a1c22c8d9",
+        "id": "3cb996cb4d477e3b",
         "type": "tabs",
         "children": [
           {
-            "id": "2f72c9619aa3ada5",
+            "id": "3895039331ab9e56",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -225,24 +221,25 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "2f72c9619aa3ada5",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/pg/old/Scheda_PG_05_Fujita_Emi.docx",
+    "Investigare/pg/old/Scheda_PG_04_Sato_Yuki.docx",
+    "Investigare/pg/old/Scheda_PG_03_Nakamura_Shota.docx",
+    "Investigare/pg/old/Scheda_PG_02_Honda_Ryota.docx",
+    "Investigare/pg/old/Scheda_PG_01_Yamamoto_Kenji.docx",
+    "Investigare/pg/old",
+    "Investigare/png notevoli/Ito_Daisuke_Scientifica.md.tmp.14376.a9190376cdfa",
+    "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md.tmp.14376.386e30b6012e",
+    "Investigare/Materiale/Scheda_Distretto.md.tmp.14376.4da4abf0de4b",
+    "Investigare/Materiale/Scheda_Distretto.md.tmp.14376.584b0fd894ee",
+    "Investigare/Materiale/Scheda_Distretto.md.tmp.14376.4f09baf2cb25",
     "Investigare/GENKAI_Briefing_Giocatori.md",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.735e03d7740a",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.4b40cfbe1119",
-    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.67048bf2e67e",
     "Investigare/GENKAI_Combattimento.md",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.418785ec0997",
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/GENKAI_Manuale_GM.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.52170bec246b",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.f3c7050ed898",
-    "Investigare/GENKAI_Manuale_Giocatori.md.tmp.14376.83ac9a7ee5b3",
-    "Investigare/GENKAI_Manuale_Giocatori.md.tmp.14376.44abd4fdd6c0",
-    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.2b59bc75540f",
-    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.b763630e02cd",
     "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",

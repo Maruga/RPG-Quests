@@ -20,14 +20,13 @@
 |-----------|-------------|------|
 | **Distacco** | 4 | Normale |
 | **Pazienza** | 7 | Punto di forza — puoi aspettare ore |
-| **Silenzio** | 5 | Sai quando tacere |
+| **Silenzio** | 4 | Normale |
 | **Lucidità** | 4 | Normale |
 | **Ascolto** | 7 | Eccellente — senti le bugie |
 | **Presenza** | 4 | Non intimidisci, convinci |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
-> - Poi tira **2d6** e prendi il dado **più basso**: punti bonus extra da distribuire liberamente
 > - Nessun attributo può superare 8
 
 ---
@@ -85,6 +84,48 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Fallimento**: Il PNG è visibilmente stanco, la coerenza vacilla, ma la storia regge
 
 > Interroghi Kuroda da due ore. Ripeti la domanda sull'orario. "Le sei e mezza" — ma tre domande fa aveva detto "le sette". Impallidisce.
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Interrogatorio *(Pazienza o Ascolto)*
+Il tuo mestiere. Sblocca le tecniche di apertura (Rispecchiamento, Linguaggio Inclusivo...) — il terreno emotivo che prepari prima delle domande vere.
+
+### Opzione 2: Conoscere il quartiere *(Ascolto — quartiere a scelta)*
+Le strade dove sei cresciuto o quelle dove lavori da anni: le facce, le abitudini, chi vede tutto e chi non parla.
+
+### Opzione 3: Ricerca d'archivio *(Pazienza)*
+Registri, protocolli, fascicoli. Dove gli altri si arrendono dopo un'ora, tu stai ancora leggendo.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 
