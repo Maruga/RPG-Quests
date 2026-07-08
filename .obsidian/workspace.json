@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Kage.md",
+                "file": "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Kage"
+              "title": "Kage_02_Honda_Ryota"
             }
           }
         ]
@@ -225,21 +225,28 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "3895039331ab9e56",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/pg/Copioni_PNG.md.tmp.14376.979f71187934",
+    "Investigare/png notevoli/Kage_Notevoli.md",
+    "Investigare/png notevoli/Kage_Notevoli.md.tmp.14376.79c60b561201",
+    "Investigare/pg/Kage/Kage_05_Fujita_Emi.md",
+    "Investigare/pg/Kage/Kage_05_Fujita_Emi.md.tmp.14376.c2628b6a1aae",
+    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md",
+    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.51ff054013b8",
+    "Investigare/pg/Kage/Kage_03_Nakamura_Shota.md",
+    "Investigare/pg/Kage/Kage_03_Nakamura_Shota.md.tmp.14376.7c252e293c6e",
+    "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md",
+    "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md.tmp.14376.37596133329c",
+    "Investigare/pg/Kage/Kage_02_Honda_Ryota.md.tmp.14376.868bffbababe",
+    "Investigare/pg/Copioni_PNG.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
+    "Investigare/GENKAI_Kage.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md.tmp.14376.ce74cce08a3b",
     "Investigare/pg/Kage",
     "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/GENKAI_Kage.md",
     "Investigare/GENKAI_Kage.md.tmp.14376.80eb6052c597",
     "Investigare/pg/old/Scheda_PG_05_Fujita_Emi.docx",
-    "Investigare/pg/old/Scheda_PG_04_Sato_Yuki.docx",
-    "Investigare/pg/old/Scheda_PG_03_Nakamura_Shota.docx",
-    "Investigare/pg/old/Scheda_PG_02_Honda_Ryota.docx",
-    "Investigare/pg/old/Scheda_PG_01_Yamamoto_Kenji.docx",
-    "Investigare/pg/old",
-    "Investigare/png notevoli/Ito_Daisuke_Scientifica.md.tmp.14376.a9190376cdfa",
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/GENKAI_Combattimento.md",
     "Investigare/GENKAI_Manuale_Giocatori.md",
@@ -254,23 +261,16 @@
     "Investigare/png notevoli/PNG_01_Taniguchi_Kenji_foto.png",
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/pg/token_prompts.md",
-    "Investigare/pg/Copioni_PNG.md",
     "Investigare/README.md",
     "Investigare/pg/PG_02_Honda_Ryota.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/Materiale/CrimeBoard.jpg",
     "Investigare/Materiale/CrimeBoard.png",
-    "README.md",
-    "Investigare/Avventura Il Giudice/handout/Caso_Hayashi_Documenti.md",
-    "Investigare/Avventura Il Giudice/handout/Articoli_Giornale.md",
     "Investigare/Materiale/StradaNotturna.png",
     "Investigare/Materiale/Squadra Investigatori.png",
     "Investigare/Materiale/New Nambu M60.png",
     "Investigare/Materiale/genkai_640x360.png",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Club_Aoyagi_Kiyamachi.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Setsuko_Maizuru.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Murakami_Yamashina.md",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
     "Investigare/Avventura La Falsa Primavera/Immagini/mappa.png"
   ]

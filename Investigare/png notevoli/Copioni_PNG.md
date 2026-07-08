@@ -1,6 +1,8 @@
 # COPIONI PNG RICORRENTI
 ## Per le Scene Personali dei PNG della Serie Investigare
 
+> **⚠️ NOTA PER IL GM — evoluzione**: questi sono i copioni **d'apertura**. I motori (a tempo / a scadenza) e i copioni successivi di Fumiko, Miki e Sachiko sono in `Kage_Notevoli.md` (questa cartella), che usa le regole di `GENKAI_Kage.md`.
+
 > **PER IL GM**
 >
 > Consegna il copione al giocatore che interpreterà il PNG **solo quando attivi la scena**. Non prima.

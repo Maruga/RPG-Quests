@@ -1,6 +1,8 @@
 # COPIONI PNG
 ## Per le Scene Personali
 
+> **⚠️ NOTA PER IL GM — evoluzione dei Kage**: questi sono i copioni **d'apertura** (la prima scena di ogni problema). Gli sviluppi — registro, rete delle situazioni, copioni successivi con le due parti da consegnare — sono nei dossier `pg/Kage/Kage_0N_<nome>.md`, che usano le regole di `GENKAI_Kage.md`. Ogni dossier contiene anche la versione riformattata di questi copioni base (X-0).
+
 > **PER IL GM**
 > 
 > Consegna il copione al giocatore che interpreterà il PNG **solo quando attivi la scena**. Non prima.
