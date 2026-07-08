@@ -612,7 +612,7 @@ Ogni PG ha un **Enja**: un contatto esterno che può aiutare nell'indagine.
 
 Ogni PG ha un **Kage**: qualcosa nella sua vita privata che interferisce con il lavoro. La vita personale bussa alla porta nei momenti peggiori.
 
-Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramite le Scene Personali.
+Il Kage viene definito in creazione e attivato dal GM durante le sessioni tramite le Scene Personali. La sua evoluzione nel tempo — il problema che vive, cresce e chiede — è materia del GM: vedi **`GENKAI_Kage.md`** (*L'Ombra che Cresce*).
 
 **Nota importante**: Il giocatore conosce la natura del suo Kage e chi è coinvolto, ma NON sa quando verrà attivato o quale sarà l'evento scatenante specifico. Lo scopre in gioco.
 
@@ -1043,9 +1043,9 @@ Il tetto resta **9**.
 
 **GM**: "Trovi tutti gli indizi - il coltello da cucina usato come arma, le tracce di colluttazione, il portafoglio ancora in tasca quindi non è rapina. Ma la scena ti colpisce — ti si nota, sei pallido, le mani tremano un po'. Fallimento leggero, nessuna perdita."
 
-**Giocatore 2** (Distacco 7): "Io tiro... 2! Kiwami!"
+**Giocatore 2** (Distacco 7 di scheda, attuale 6 dopo una settimana pesante): "Io tiro... 2! Kiwami!"
 
-**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. Kiwami positivo: +1 Distacco (sale a 8) e +1 Ki."
+**GM**: "Eccellente. Non solo gestisci la scena con freddezza, ma noti qualcosa che gli altri hanno mancato: c'è un secondo set di impronte insanguinate che porta verso la finestra, non verso la porta. L'assassino è uscito dal balcone. Kiwami positivo: il Distacco attuale risale a 7 — di nuovo alla tua scheda — e +1 Ki. Se fossi già stato a scheda piena, il punto sarebbe andato nel Nasake, o perso."
 
 ---
 
@@ -1200,7 +1200,7 @@ Traccia i Nami/Kiwami della giornata (+1/+2/-1/-2)
 Soroban ≥ 5: 2d6 prendi il migliore (reroll 1) = Ki recuperati
 Soroban < 5: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
 Dopo il recupero: torna a 5
-(mai oltre il max di inizio sessione)
+(mai oltre il Ki massimo)
 
 NASAKE (情け) - COMPASSIONE
 Bonus da Kiwami+/Nami+ che andrebbe perso → conserva 1 Ki

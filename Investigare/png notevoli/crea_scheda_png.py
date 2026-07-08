@@ -1,6 +1,6 @@
 """
 Genera schede PNG ricorrenti in stile giapponese elegante per GENKAI 限界.
-Pagina 1: Statistiche, Ki (fisso), Gou (fisso)
+Pagina 1: Statistiche, Ki (fisso), Senmon (fisse)
 Pagina 2: Background, problema, PNG del problema, conoscenza, comportamento
 """
 
@@ -119,42 +119,6 @@ def add_section_header(doc, text, kanji=""):
              align=WD_ALIGN_PARAGRAPH.LEFT, space_after=4, space_before=0)
 
 
-def add_gou_box(doc, name, kanji_desc, attribute, cost, success, failure):
-    p = doc.add_paragraph()
-    pf = p.paragraph_format
-    pf.space_before = Pt(7)
-    pf.space_after = Pt(2)
-    pf.left_indent = Cm(0.3)
-    add_run(p, "▸ ", size=9, color=GOLD)
-    add_run(p, name, bold=True, size=10, color=DARK)
-
-    p2 = doc.add_paragraph()
-    p2.paragraph_format.space_after = Pt(1)
-    p2.paragraph_format.left_indent = Cm(0.6)
-    add_run(p2, kanji_desc, italic=True, size=9, color=MUTED)
-
-    p3 = doc.add_paragraph()
-    p3.paragraph_format.space_after = Pt(1)
-    p3.paragraph_format.left_indent = Cm(0.6)
-    add_run(p3, "Attributo: ", bold=True, size=8, color=MUTED)
-    add_run(p3, attribute, size=8, color=DARK)
-    add_run(p3, "  ·  ", size=8, color=GOLD)
-    add_run(p3, "Costo: ", bold=True, size=8, color=MUTED)
-    add_run(p3, cost, size=8, color=RED)
-
-    p4 = doc.add_paragraph()
-    p4.paragraph_format.space_after = Pt(1)
-    p4.paragraph_format.left_indent = Cm(0.6)
-    add_run(p4, "Successo: ", bold=True, size=8, color=MUTED)
-    add_run(p4, success, size=8, color=DARK)
-
-    p5 = doc.add_paragraph()
-    p5.paragraph_format.space_after = Pt(4)
-    p5.paragraph_format.left_indent = Cm(0.6)
-    add_run(p5, "Fallimento: ", bold=True, size=8, color=MUTED)
-    add_run(p5, failure, size=8, color=DARK)
-
-
 def add_senmon_box(doc, name, chiave, desc):
     p = doc.add_paragraph()
     pf = p.paragraph_format
@@ -174,12 +138,12 @@ def add_senmon_box(doc, name, chiave, desc):
 # ── PNG Data ──
 
 PNG_DATA = [
-    # ── PNG_01 — TANIGUCHI Kenji ──
+    # ── PNG_01 — TANIGUCHI Osamu ──
     {
-        "filename": "Scheda_PNG_01_Taniguchi_Kenji.docx",
-        "photo": "PNG_01_Taniguchi_Kenji_foto.png",
-        "name_jp": "谷口 健二",
-        "name": "TANIGUCHI Kenji",
+        "filename": "Scheda_PNG_01_Taniguchi_Osamu.docx",
+        "photo": "PNG_01_Taniguchi_Osamu_foto.png",
+        "name_jp": "谷口 治",
+        "name": "TANIGUCHI Osamu",
         "age": "56",
         "role": "Commissario, Sezione Omicidi",
         "rank": "Keishi (警視) — Commissario",
@@ -206,7 +170,7 @@ PNG_DATA = [
         "png_role": "Moglie da 30 anni",
         "png_age": "54",
         "png_job": "Ex insegnante di calligrafia, ora a casa",
-        "png_wants": "Che Kenji smetta di fingere che vada tutto bene. Non ha paura della malattia — ha paura di affrontarla da sola.",
+        "png_wants": "Che Osamu smetta di fingere che vada tutto bene. Non ha paura della malattia — ha paura di affrontarla da sola.",
         "png_behavior": "Nei momenti lucidi è la donna forte e ironica di sempre. Nei momenti di vuoto si confonde, ripete le domande, si arrabbia con se stessa. Non fa scene — si vergogna.",
         "enja_name": "MORIYAMA Genzo",
         "enja_role": "Procuratore Capo in pensione",
@@ -371,7 +335,7 @@ def create_sheet(png):
     # ════════════════════════════════════════════
 
     # ── Top decorative line ──
-    p = add_para(doc, "限界  ·  GENKAI v1.2  ·  限界", size=7, color=GOLD,
+    p = add_para(doc, "限界  ·  GENKAI v1.3  ·  限界", size=7, color=GOLD,
              align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
     # PNG label
     add_para(doc, "▸ SCHEDA PNG RICORRENTE ◂", size=7, color=RED,
@@ -540,7 +504,7 @@ def create_sheet(png):
     p.paragraph_format.space_before = Pt(6)
     p.paragraph_format.space_after = Pt(4)
     add_run(p, "Distribuzione: ", bold=True, size=8, color=MUTED)
-    add_run(p, "base 4 × 6 = 24  +  12 punti  +  3 bonus (d6)  =  39 totale", size=8, color=MUTED)
+    add_run(p, "distribuzione: metodo diretto — il GM assegna i valori che servono al ruolo", size=8, color=MUTED)
 
     add_thin_separator(doc)
 

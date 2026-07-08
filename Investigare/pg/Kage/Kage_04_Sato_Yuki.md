@@ -9,7 +9,7 @@
 
 Il Kage di Yuki non è Michiko. È **l'approvazione**: Yuki non ha mai detto a sua madre chi è — le ha sempre mostrato la versione che lei poteva accettare. Il lavoro è "in laboratorio, tranquillo". La vita privata è "ci sto pensando, mamma". Finché cerca il suo permesso, lei governa; e Michiko, vedova da dieci anni con un figlio solo, governa con l'arma dei deboli: il senso di colpa.
 
-Attorno a lei orbitano **lo zio Kenzō** (import-export a Osaka, il posto "serio" sempre pronto), gli **omiai** (incontri combinati con brave ragazze), e il quartiere che chiede quando Yuki "si sistema". Non ci sono cattivi in questo Kage — c'è una madre che ha paura di restare sola, e la dice in tutte le lingue tranne quella vera.
+Attorno a lei orbitano **lo zio Jirō** (Tanaka Jirō, fratello di Michiko — import-export a Osaka, il posto "serio" sempre pronto), gli **omiai** (incontri combinati con brave ragazze), e il quartiere che chiede quando Yuki "si sistema". Non ci sono cattivi in questo Kage — c'è una madre che ha paura di restare sola, e la dice in tutte le lingue tranne quella vera.
 
 **La radice**: dire la verità alla madre — chi è, cosa fa davvero, cosa vuole — **e reggere la delusione senza cedere e senza sbattere la porta**. Su più scene, su più casi. Ogni bugia comoda è un sintomo curato.
 
@@ -24,7 +24,7 @@ Attorno a lei orbitano **lo zio Kenzō** (import-export a Osaka, il posto "serio
 | **Favori** | — (questo Kage non corrompe: *ingoia*) |
 | **Chi ha notato** | Tutti: le telefonate della mamma sono quasi una barzelletta di squadra. Honda lo prende in giro. Nessuno ha capito quanto pesa |
 
-**PNG**: **Michiko** (58, la madre — mai aggressiva, sempre due livelli) · **zio Kenzō** (61, il fratello del padre — pratico, sbrigativo, non cattivo) · **Ayumi** (26, la ragazza dell'omiai — la sorpresa del dossier) · il medico della clinica (una voce al telefono, quando serve).
+**PNG**: **Michiko** (58, la madre — mai aggressiva, sempre due livelli) · **zio Tanaka Jirō** (61, il fratello di Michiko — pratico, sbrigativo, non cattivo) · **Ayumi** (26, la ragazza dell'omiai — la sorpresa del dossier) · il medico della clinica (una voce al telefono, quando serve).
 
 ## La rete delle situazioni
 
@@ -35,9 +35,9 @@ Attorno a lei orbitano **lo zio Kenzō** (import-export a Osaka, il posto "serio
 - **A4 La scoperta del pericolo** → Copione S-4: Michiko trova qualcosa (una foto del caso, un giubbotto antiproiettile in borsa, un articolo di giornale col suo nome). La bugia "sto in laboratorio" esplode
 
 **B · Lo zio** *(la tenaglia "seria")*
-- **B1 Il pranzo con scadenza** → Copione S-1: Kenzō, uomo pratico: "Ad aprile assumo. Te o un altro." Una data vera sul calendario
-- **B2 L'alleanza dei grandi** → Kenzō e Michiko fanno fronte comune: il posto + la casa vicino alla zia + l'omiai — il "pacchetto vita giusta" completo
-- **B3 Il rispetto inatteso** *(Spiraglio)* → se Yuki gli parla da uomo a uomo, Kenzō — che i sentimentalismi non li ha mai capiti ma il coraggio sì — può diventare il primo alleato: "Almeno lui una cosa l'ha scelta. Michiko, lascialo stare."
+- **B1 Il pranzo con scadenza** → Copione S-1: Jirō, uomo pratico: "Ad aprile assumo. Te o un altro." Una data vera sul calendario
+- **B2 L'alleanza dei grandi** → Jirō e Michiko — fratello e sorella — fanno fronte comune: il posto + la casa vicino alla zia + l'omiai — il "pacchetto vita giusta" completo
+- **B3 Il rispetto inatteso** *(Spiraglio)* → se Yuki gli parla da uomo a uomo, Jirō — che i sentimentalismi non li ha mai capiti ma il coraggio sì — può diventare il primo alleato: "Almeno lui una cosa l'ha scelta. Michiko, lascialo stare."
 
 **C · La salute** *(la Tempesta di questo Kage)*
 - **C1 Il malore** → Copione S-3: la clinica, "non è niente". Il senso di colpa smette di essere una manipolazione e diventa vero — il momento più pericoloso del Kage
@@ -82,26 +82,26 @@ Attorno a lei orbitano **lo zio Kenzō** (import-export a Osaka, il posto "serio
 
 ---
 
-## COPIONE S-1 — ZIO KENZŌ: IL PRANZO
+## COPIONE S-1 — ZIO JIRŌ: IL PRANZO
 *Quando: la pressione si fa "seria". Un pranzo — pagato da lui, deciso da lui.*
 
 ### ✂️ AL GIOCATORE-PNG
 
-**Sei SATO KENZŌ, 61 anni**, fratello maggiore del padre di Yuki. Import-export di componentistica, Osaka, trentacinque anni di fatture e strette di mano. Non sei cattivo: sei *pratico*. Tuo fratello è morto giovane e il figlio di tuo fratello fa un lavoro pagato male e pericoloso, quando nella TUA azienda c'è un posto da responsabile qualità che sembra scritto per un chimico. Hai invitato Yuki a pranzo. Uomini che parlano di cose concrete.
+**Sei TANAKA JIRŌ, 61 anni**, fratello maggiore di Michiko — lo zio materno di Yuki. Import-export di componentistica, Osaka, trentacinque anni di fatture e strette di mano. Non sei cattivo: sei *pratico*. Tuo cognato è morto giovane e il figlio di tua sorella fa un lavoro pagato male e pericoloso, quando nella TUA azienda c'è un posto da responsabile qualità che sembra scritto per un chimico. Hai invitato Yuki a pranzo. Uomini che parlano di cose concrete.
 
-**Sai**: il posto si libera **ad aprile**: Watabe va in pensione · Michiko ti chiama ogni settimana — vi siete "coordinati", anche se la parola non ti piace · lo stipendio d'ingresso: **¥520.000 al mese**, più del suo attuale del quaranta percento. L'hai fatto calcolare apposta.
+**Sai**: il posto si libera **ad aprile**: Watabe va in pensione · Michiko ti chiama ogni settimana — vi siete "coordinati", anche se la parola non ti piace · lo stipendio d'ingresso: **¥530.000 al mese**, quasi il quaranta per cento più del suo attuale. L'hai fatto calcolare apposta.
 **Vuoi**: un sì, o almeno un "ci penso" con una data. Le decisioni senza data, nel tuo mondo, si chiamano no.
 **Come ti comporti**: cordiale e sbrigativo — ordini per entrambi senza chiedere · parli di cifre, orari, prospettive: mai di sentimenti · il lavoro di Yuki non lo disprezzi: lo *non-capisci*, che è diverso ("servire lo Stato è nobile. Anche pagare un mutuo lo è.") · la leva di tua madre non la usi... tranne una volta, alla fine, ben piazzata · se Yuki dice no CHIARO, guardandoti negli occhi: ti fermi. Lo misuri. Non sei abituato ai no, ma rispetti chi li sa dare.
-**Frasi**: "Mangia, che si fredda. Allora: aprile." · "Cinquecentoventi al mese. Ho fatto fare i conti: è il quaranta in più di adesso." · "Non devi amare il lavoro, Yuki. Devi amare la vita che il lavoro ti paga." · "Tuo padre era il sognatore. Io no. Ma pure lui i sogni li faceva con lo stipendio fisso." · *(l'affondo, uno solo)* "Tua madre non ringiovanisce. Osaka è a mezz'ora da casa sua. Fai i conti anche di questo." · *(se riceve un no vero)* "...Mh. Almeno sai dire di no. In azienda ne ho venti che non lo sanno fare."
+**Frasi**: "Mangia, che si fredda. Allora: aprile." · "Cinquecentotrenta al mese. Ho fatto fare i conti: è il quaranta in più di adesso." · "Non devi amare il lavoro, Yuki. Devi amare la vita che il lavoro ti paga." · "Tuo padre era il sognatore. Io no. Ma pure lui i sogni li faceva con lo stipendio fisso." · *(l'affondo, uno solo)* "Tua madre non ringiovanisce. Osaka è a mezz'ora da casa sua. Fai i conti anche di questo." · *(se riceve un no vero)* "...Mh. Almeno sai dire di no. In azienda ne ho venti che non lo sanno fare."
 
 ### ✂️ AL GIOCATORE DI SATO
 
-Lo zio non è tua madre: non manipola, *compra*. Il posto è vero, la cifra è vera (¥520.000: il 40% in più), la scadenza è vera — ad aprile, e non aspetterà. È anche l'unico adulto della famiglia che potrebbe rispettare un no detto bene: non gli è mai arrivato da nessuno, e in fondo è per questo che ti stima poco. Il pranzo ha un menu solo: chi sei, detto a voce alta.
+Lo zio non è tua madre: non manipola, *compra*. Il posto è vero, la cifra è vera (¥530.000: quasi il 40% in più), la scadenza è vera — ad aprile, e non aspetterà. È anche l'unico adulto della famiglia che potrebbe rispettare un no detto bene: non gli è mai arrivato da nessuno, e in fondo è per questo che ti stima poco. Il pranzo ha un menu solo: chi sei, detto a voce alta.
 
 ### 🎬 REGIA
 
-- No chiaro, in faccia, con le ragioni → Kenzō incassa con rispetto *(apre B3: il primo alleato possibile — e Michiko perde la tenaglia)*
-- "Ci penso" senza data → per Kenzō è un no dei deboli: riferirà a Michiko che "il ragazzo non decide" *(A1 si intensifica)*
+- No chiaro, in faccia, con le ragioni → Jirō incassa con rispetto *(apre B3: il primo alleato possibile — e Michiko perde la tenaglia)*
+- "Ci penso" senza data → per Jirō è un no dei deboli: riferirà a Michiko che "il ragazzo non decide" *(A1 si intensifica)*
 - Yuki tentenna davvero → il posto resta aperto fino ad aprile *(deadline nel registro: il GM la fa scadere DAVVERO)*
 
 ---
@@ -181,6 +181,6 @@ La busta del caso — quella che dovevi riconsegnare a Ito domattina — è aper
 ## Note di regia
 
 - **Michiko non è la cattiva**: è una donna sola che parla una lingua sbagliata. Ogni tanto — una volta ogni tre scene — falle dire una cosa che rivela l'amore sotto la manovra. Il giocatore-PNG tenderà alla macchietta: frena
-- **Kenzō è un no da conquistare, non un muro**: rispetta la forza. È il "boss segreto" buono di questo Kage
+- **Jirō è un no da conquistare, non un muro**: rispetta la forza. È il "boss segreto" buono di questo Kage
 - **Ayumi è la carta jolly**: non sprecarla come gag. Se il tavolo la ama, può diventare ricorrente — e il suo segreto (Tokyo) è un piccolo Kage in prestito che insegna a Yuki come si custodiscono le verità altrui
 - **Le telefonate in centrale**: usale come metronomo comico... finché S-3 non le trasforma. Il colpo funziona proprio perché prima faceva ridere

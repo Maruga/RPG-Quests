@@ -65,7 +65,7 @@ Il fallimento **non blocca mai la storia**. L'informazione arriva comunque — i
 | **11** | Nami- | -1 a scelta (attributo **O** Ki) |
 | **12** | Kiwami- | -1 attributo usato **E** -1 Ki |
 
-**Limiti**: il valore di scheda è il tuo **tetto** — i dadi non lo superano mai: gli 11/12 scavano sotto (segna il −1 a matita), i 2/3 e ogni notte di sonno riparano (+1 verso la scheda). A scheda piena il +1 è perso o va nel Nasake. Attributo attuale mai sotto 4 (a 4, le perdite vanno al Ki). Il Ki non supera mai il Ki massimo. La scheda cresce solo con le Scene Personali e i punti **Shugyō** tra i casi.
+**Limiti**: il valore di scheda è il tuo **tetto** — i dadi non lo superano mai: gli 11/12 scavano sotto (segna il −1 a matita), i 2/3 e ogni notte di sonno riparano (+1 verso la scheda). A scheda piena il +1 è perso o va nel Nasake. Attributo attuale mai sotto 4 (a 4, le perdite vanno al Ki). Il Ki non supera mai il Ki massimo. La somma dei bonus su un singolo tiro (Senmon, Kyōryoku, L'Ora Giusta) non supera mai **+4**. La scheda cresce solo con le Scene Personali e i punti **Shugyō** tra i casi.
 
 ---
 
@@ -98,6 +98,7 @@ I PNG hanno un valore di **En** con ogni PG (da -5 a +5). Quando interagisci con
 | 0 | Neutro |
 | -1 | Diffidente |
 | -2 / -3 | Ostile / Nemico |
+| ±4 / ±5 | **Relazioni profonde** — rare, si costruiscono solo in gioco (vedi Manuale dei Giocatori) |
 
 En positivo → il dado si abbassa (più facile). En negativo → il dado si alza (più difficile).
 

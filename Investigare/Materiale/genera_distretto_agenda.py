@@ -50,8 +50,8 @@ AZIONI = [
 
 PNG = [
     {
-        "nome": "TANIGUCHI Kenji",
-        "kanji": "谷口 健二",
+        "nome": "TANIGUCHI Osamu",
+        "kanji": "谷口 治",
         "ruolo": "Commissario / Capo Sezione Omicidi",
         "grado": "Keibu (警部) — 56 anni — 18+ anni di servizio",
         "desc": "Superiore diretto dei PG. Pragmatico, esigente, protettivo. Riceve briefing e rapporti, autorizza risorse e mandati attraverso il PM, gestisce le pressioni mediatiche e politiche. Frase tipica: «Sedetevi. Raccontate.»",

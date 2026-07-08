@@ -11,7 +11,7 @@ Scheda di riferimento per le avventure GENKAI della serie Investigare. Generica 
 
 ## La Squadra Investigativa Centrale (i 5 PG)
 
-I 5 PG formano una squadra mista di vari gradi e specializzazioni, distaccata sotto il Commissario di Sezione Omicidi (PNG **Taniguchi Kenji**, vedi `png notevoli/Taniguchi_Kenji_Commissario.md`). Operano sui casi che richiedono competenza prefetturale — omicidi, indagini complesse, casi interdistrettuali — e sono il riferimento operativo del Distretto.
+I 5 PG formano una squadra mista di vari gradi e specializzazioni, distaccata sotto il Commissario di Sezione Omicidi (PNG **Taniguchi Osamu**, vedi `png notevoli/Taniguchi_Osamu_Commissario.md`). Operano sui casi che richiedono competenza prefetturale — omicidi, indagini complesse, casi interdistrettuali — e sono il riferimento operativo del Distretto.
 
 Schede personaggio complete in `pg/`. Schermata sintetica:
 
@@ -106,11 +106,11 @@ Presente ma contenuta. Forma narrativa prevalente: omertà interna leggera. Ness
 PNG ricorrenti che operano insieme ai PG in tutte le avventure della serie Investigare. Schede complete in `png notevoli/`.
 
 ### Commissario — Capo Sezione Omicidi
-**TANIGUCHI Kenji** (谷口 健二) — 56 anni, 警視 Keishi (Commissario)
+**TANIGUCHI Osamu** (谷口 治) — 56 anni, 警視 Keishi (Commissario)
 
 Superiore diretto dei PG. Pragmatico, esigente, protettivo. Non indaga di persona — riceve rapporti, autorizza risorse, gestisce le pressioni esterne (politici, media). Il suo "Bene." vale più di mille parole.
 
-> 📎 Scheda: `png notevoli/Taniguchi_Kenji_Commissario.md`
+> 📎 Scheda: `png notevoli/Taniguchi_Osamu_Commissario.md`
 > Frase tipica: *"Sedetevi. Raccontate."*
 > Quando contattarlo: briefing iniziale, aggiornamenti, richieste di mandati e rinforzi
 

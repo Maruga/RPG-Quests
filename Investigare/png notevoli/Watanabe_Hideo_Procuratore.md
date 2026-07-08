@@ -151,7 +151,7 @@ Qualsiasi accenno al caso del 1982. Un PG che lo nominasse esplicitamente vedreb
 | Persona | Relazione | Come ne parla |
 |---------|-----------|---------------|
 | **I PG** | Polizia che presenta richieste — rapporto istituzionale. Cresce nel tempo se le richieste sono solide | "L'Ispettore Yamamoto è un funzionario serio." (commento massimo che farà) |
-| **Taniguchi Kenji** | Conoscenza professionale di vent'anni. Reciproco rispetto, niente di personale | "Il Commissario Taniguchi sa fare il suo lavoro." |
+| **Taniguchi Osamu** | Conoscenza professionale di vent'anni. Reciproco rispetto, niente di personale | "Il Commissario Taniguchi sa fare il suo lavoro." |
 | **Ito Daisuke** | Apprezza i suoi referti scientifici asciutti e completi | "I rapporti del Kanshiki-kan Ito sono sempre utilizzabili in udienza." |
 | **Kawasaki Junko** | Stima profonda. Non amici, ma il rapporto più vicino che abbia | Non ne parla mai esplicitamente |
 | **Maezawa Hiroyuki** | Diffidenza recente, mai dichiarata | Non ne parla. Gli risponde con keigo glaciale |

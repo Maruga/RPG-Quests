@@ -139,10 +139,10 @@ Un biglietto scritto a mano ti ha invitato a un caffè: *"Un amico di suo fratel
 
 **⚠️ TU NON SAI COSA SIGNIFICA IL MESSAGGIO.** E ti sei imposto di non pensarci — pensarci fa paura.
 
-**Sai**: il messaggio è: **"La pratica Fudō. Il signor Kirino gradirebbe che restasse ferma un'altra settimana. Tuo fratello sa."** · se Shota "collabora", il tuo debito scende di centomila · Kirino era gentile come sempre, e questo ti ha fatto più paura del solito.
+**Sai**: il messaggio è: **"La pratica Fudō. Il signor Kirino gradirebbe che restasse ferma un'altra settimana. Tuo fratello sa."** · se Shota "collabora", il tuo debito sparisce — tutto · Kirino era gentile come sempre, e questo ti ha fatto più paura del solito.
 **Vuoi**: consegnare le parole esatte, sentirti dire "va bene", e uscire da questa storia anche solo per una settimana.
 **Come ti comporti**: nervoso, colpevole, incapace di guardare Shota negli occhi · recita il messaggio come una filastrocca imparata — perché lo è · se Shota chiede cosa significa: "Non lo so. TE LO GIURO che non lo so. Mi ha detto solo di dirtelo." · se Shota si infuria: "Che dovevo fare?! Dirgli di no?!" · a un certo punto, la frase che ti scappa dal cuore: "Shota... in cosa ti ho messo?"
-**Frasi**: "Devo dirti una cosa. Parole sue, non mie." · *(recitato)* "La pratica Fudō. Gradirebbe che restasse ferma un'altra settimana. Tu sai." · "Se dici di sì, mi toglie centomila. L'ha detto così, come si parla del tempo." · "Non chiedermi cosa vuol dire. Non me l'ha detto e io NON VOGLIO saperlo."
+**Frasi**: "Devo dirti una cosa. Parole sue, non mie." · *(recitato)* "La pratica Fudō. Gradirebbe che restasse ferma un'altra settimana. Tu sai." · "Se dici di sì, il mio debito sparisce. Tutto quanto. L'ha detto così, come si parla del tempo." · "Non chiedermi cosa vuol dire. Non me l'ha detto e io NON VOGLIO saperlo."
 
 ### ✂️ AL GIOCATORE DI NAKAMURA — 🔒 cosa significa davvero
 
@@ -153,7 +153,7 @@ Un biglietto scritto a mano ti ha invitato a un caffè: *"Un amico di suo fratel
 ### 🎬 REGIA
 
 - Shota dice no → Kazuo esce terrorizzato. Il GM decide il prezzo (Kazuo sparisce qualche giorno? "cade dalle scale"?) — ma il no regge: **+1 al prossimo Tiro, e D4 diventa personale** *(ora Shota VUOLE incastrarlo)*
-- Shota dice sì → l'esecuzione si gioca a parte (GM + Shota). *(−¥100k dal debito di Kazuo, **Shimi grave**, e Kirino ha un poliziotto nel libro)*
+- Shota dice sì → l'esecuzione si gioca a parte (GM + Shota). *(il debito di Kazuo si azzera, **Shimi grave**, e Kirino ha un poliziotto nel libro)*
 - Shota finge di sì per incastrarlo → bellissimo e pericolosissimo: serve la squadra o l'anti-crimine, e Kazuo è la pedina esposta *(apre D4 col rischio massimo)*
 
 ---

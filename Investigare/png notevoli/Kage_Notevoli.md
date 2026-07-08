@@ -20,12 +20,12 @@
 
 ### ✂️ AL GIOCATORE-PNG
 
-**Sei TANIGUCHI FUMIKO, 54 anni** — e oggi non è un buon giorno. Sei uscita per comprare il tè, poi c'era una cosa importante: la scuola, i ragazzi del corso ti aspettano. (La scuola ha chiuso dodici anni fa. Oggi questo fatto non è disponibile.) Due agenti gentili ti hanno accompagnata in un posto pieno di scrivanie. Dicono che Kenji sta arrivando.
+**Sei TANIGUCHI FUMIKO, 54 anni** — e oggi non è un buon giorno. Sei uscita per comprare il tè, poi c'era una cosa importante: la scuola, i ragazzi del corso ti aspettano. (La scuola ha chiuso dodici anni fa. Oggi questo fatto non è disponibile.) Due agenti gentili ti hanno accompagnata in un posto pieno di scrivanie. Dicono che Osamu sta arrivando.
 
 **Sai** *(oggi)*: ti chiami Fumiko, insegni calligrafia, tuo marito fa il poliziotto ed è sempre in ritardo · gli agenti sono gentili ma ti trattano come una bambina, e questo ti irrita moltissimo · c'è qualcosa che non torna nella giornata — lo *senti* — e non riesci a mettere il dito sopra. Questo ti fa paura, e la paura ti rende più fiera.
-**Vuoi**: andare alla scuola (ti aspettano). E poi, quando arriva Kenji: che questa storia non diventi un dramma. Hai la tua dignità.
-**Come ti comporti**: composta, cortese, spilla al posto giusto — una signora, non una paziente · correggi chi ti parla lentamente: "Non sono sorda, giovanotto." · **lampi di lucidità senza preavviso**: a metà frase, per un momento, CAPISCI dove sei e perché — e in quel momento la vergogna ti attraversa la faccia. Poi la nebbia torna, misericordiosa · quando arriva Kenji: prima sollievo, poi — se lui è teso davanti ai suoi uomini — la frase che nessuno dei due dimenticherà.
-**Frasi**: "C'è stato un malinteso. Stavo andando alla scuola, i ragazzi aspettano." · "Che begli uffici. Kenji lavora in un posto così, sapete? Forse lo conoscete." · *(lampo di lucidità)* "...La scuola ha chiuso. Ha chiuso, vero? Oh. *Oh.*" · *(a Kenji, davanti a tutti, con dolcezza terribile)* "Non fare quella faccia. Lo so cosa sto diventando. Lo so meglio di te."
+**Vuoi**: andare alla scuola (ti aspettano). E poi, quando arriva Osamu: che questa storia non diventi un dramma. Hai la tua dignità.
+**Come ti comporti**: composta, cortese, spilla al posto giusto — una signora, non una paziente · correggi chi ti parla lentamente: "Non sono sorda, giovanotto." · **lampi di lucidità senza preavviso**: a metà frase, per un momento, CAPISCI dove sei e perché — e in quel momento la vergogna ti attraversa la faccia. Poi la nebbia torna, misericordiosa · quando arriva Osamu: prima sollievo, poi — se lui è teso davanti ai suoi uomini — la frase che nessuno dei due dimenticherà.
+**Frasi**: "C'è stato un malinteso. Stavo andando alla scuola, i ragazzi aspettano." · "Che begli uffici. Osamu lavora in un posto così, sapete? Forse lo conoscete." · *(lampo di lucidità)* "...La scuola ha chiuso. Ha chiuso, vero? Oh. *Oh.*" · *(a Osamu, davanti a tutti, con dolcezza terribile)* "Non fare quella faccia. Lo so cosa sto diventando. Lo so meglio di te."
 
 ### 👁 COSA VEDONO I PG
 
@@ -38,16 +38,16 @@ Tutto. La signora elegante che scambia l'ufficio per un posto qualunque, il lamp
 - Qualcuno mormora o ridacchia (PNG di contorno, mai i PG a meno che...) → Taniguchi lo sente. Quel nome finisce in una lista che non esiste ufficialmente
 
 ## COPIONE T-2 — FUMIKO: IL GIORNO LUCIDO
-*Quando: gradino ③. Un pomeriggio buono — forse uno degli ultimi. Fumiko si presenta in centrale DA LUCIDA, elegante, annunciata. Vuole parlare con Kenji. E ha deciso.*
+*Quando: gradino ③. Un pomeriggio buono — forse uno degli ultimi. Fumiko si presenta in centrale DA LUCIDA, elegante, annunciata. Vuole parlare con Osamu. E ha deciso.*
 
 ### ✂️ AL GIOCATORE-PNG
 
 **Sei FUMIKO — e oggi ci sei tutta.** Sai cosa hai, sai dove va a finire, e hai passato la mattina con i documenti della clinica di Uji: retta, orari di visita, la stanza con il giardino. Hai deciso tu, nel pieno delle tue facoltà, e sei venuta a dirglielo di persona — in centrale, perché a casa lui riesce sempre a rimandare il discorso.
 
-**Sai**: nei giorni confusi decidono gli altri; nei giorni lucidi decidi tu — e i giorni lucidi stanno finendo · Kenji direbbe di no per amore, e il suo no ti condannerebbe a essere, per lui, un lungo addio invece che una moglie · trent'anni di matrimonio: sai esattamente come combatte, e come si arrende.
+**Sai**: nei giorni confusi decidono gli altri; nei giorni lucidi decidi tu — e i giorni lucidi stanno finendo · Osamu direbbe di no per amore, e il suo no ti condannerebbe a essere, per lui, un lungo addio invece che una moglie · trent'anni di matrimonio: sai esattamente come combatte, e come si arrende.
 **Vuoi**: il suo **sì**, oggi, finché puoi sentirtelo dire. Non domani: domani potresti non esserci abbastanza per firmare.
-**Come ti comporti**: la donna di trent'anni fa — ironica, dritta, bellissima nel suo modo · niente lacrime finché il discorso non è chiuso: le lacrime dopo, magari, insieme · porta i documenti: la praticità è la tua tenerezza ("ho già visto la stanza: si vede il giardino") · se lui dice "ce la facciamo, resto io con te": la risposta che hai preparato stanotte — "E io perderei un marito per guadagnare un infermiere. No, Kenji. Voglio che tu venga a trovarmi da marito." · l'ultima carta, solo se serve: "Firmiamo oggi. Perché oggi io sono ancora io. E voglio che questa firma sia MIA."
-**Frasi**: "Ho preso due tè alla macchinetta. Fa schifo come dieci anni fa: che consolazione, le cose che non cambiano." · "Uji. La stanza d'angolo. Si vede il giardino e — ho controllato — accettano l'inchiostro: potrò tenere i pennelli." · "Non ti sto chiedendo il permesso, Kenji. Ti sto offrendo di esserci." · "Trent'anni fa ho firmato un registro con te. Adesso firmiamo quest'altro. Le cose importanti, noi due, le abbiamo sempre firmate insieme."
+**Come ti comporti**: la donna di trent'anni fa — ironica, dritta, bellissima nel suo modo · niente lacrime finché il discorso non è chiuso: le lacrime dopo, magari, insieme · porta i documenti: la praticità è la tua tenerezza ("ho già visto la stanza: si vede il giardino") · se lui dice "ce la facciamo, resto io con te": la risposta che hai preparato stanotte — "E io perderei un marito per guadagnare un infermiere. No, Osamu. Voglio che tu venga a trovarmi da marito." · l'ultima carta, solo se serve: "Firmiamo oggi. Perché oggi io sono ancora io. E voglio che questa firma sia MIA."
+**Frasi**: "Ho preso due tè alla macchinetta. Fa schifo come dieci anni fa: che consolazione, le cose che non cambiano." · "Uji. La stanza d'angolo. Si vede il giardino e — ho controllato — accettano l'inchiostro: potrò tenere i pennelli." · "Non ti sto chiedendo il permesso, Osamu. Ti sto offrendo di esserci." · "Trent'anni fa ho firmato un registro con te. Adesso firmiamo quest'altro. Le cose importanti, noi due, le abbiamo sempre firmate insieme."
 
 ### 👁 COSA VEDONO I PG
 

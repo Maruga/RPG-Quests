@@ -51,7 +51,7 @@ Il cuore del sistema: **due tiri, una sottrazione**.
 3. **Il difensore** tira 2d6 (modificato) sul suo attributo di difesa. Se riesce → il suo margine **assorbe**. Se fallisce → assorbe **zero**: prende tutto
 4. **Danno = margine attaccante + arma − margine difensore** (minimo 0). Si perde in **Ki**
 
-> **Esempio**: Honda (Lucidità 6) tira 4 → margine 2, a mani nude (+1) = 3 in arrivo. Il sospettato (Distacco 5) tira 4 → margine 1, assorbe. **Danno: 2 Ki.** Se il sospettato avesse tirato 6 (fallito), avrebbe preso tutti e 3.
+> **Esempio**: Honda (Presenza 5) tira 3 → margine 2, a mani nude (+1) = 3 in arrivo. Il sospettato (Distacco 5) tira 4 → margine 1, assorbe. **Danno: 2 Ki.** Se il sospettato avesse tirato 6 (fallito), avrebbe preso tutti e 3.
 
 **Schivare o assorbire è la stessa difesa** — cambia solo come la descrivi, e l'attributo che usi:
 
@@ -74,7 +74,7 @@ Ogni arma ha il suo **attributo d'attacco** e il suo **danno**. Non sono interca
 | **Coltello, lama corta** | Lucidità | +2 | — | — | non incassabile |
 | **Bastone, mazza, oggetto** | Silenzio | +2 | — | — | incassabile |
 | **Pistola / revolver** | Lucidità | +3 | nessun malus: il grilletto lo premono tutti | 5-8 | il New Nambu M60 di servizio ha **5 colpi** |
-| **Fucile a pompa / da caccia** | Distacco | +4 | +2 al dado | 2-5 | |
+| **Fucile a pompa / da caccia** | Distacco | +4 | +2 al dado | 2-5 | niente raffica né fuoco di copertura |
 | **Fucile d'assalto / mitraglietta** | Distacco | +4 | +2 al dado | 20-30 | può fare **raffica** e fuoco di copertura |
 | **Fucile di precisione** | Pazienza | +5 | **inutilizzabile**: senza istruzione (Senmon *Tiro di precisione* 1+ o background militare) spari come con un fucile da caccia che non conosci: Distacco, +4, e +2 al dado | 5 | beneficia di **Mirare** |
 
@@ -184,9 +184,9 @@ Un poliziotto che **estrae** l'arma lo scrive nel rapporto. Uno che **spara** ap
 
 **Iniziativa** (gruppo unico): Honda tira 3 e 4 → iniziativa 3, primo attacco 7. Kubo tira 2 e 8 → iniziativa **2**, attacco 10. Yamamoto tira 4 e 5 → iniziativa 4, attacco 9.
 
-**Giro 1** — *Kubo (2)*: spara a Honda col suo tiro tenuto: 10 > Lucidità 6 → **manca**, il colpo scheggia lo stipite. *Honda (3)*: risponde col 7 tenuto ≤ Lucidità 7 (la sua) → margine 0, +3 pistola = 3 in arrivo. Kubo difende: Distacco 5, tira 6, col tavolo −1 → 5 → riesce, margine 0: **prende 3**. Riserva 6→3. *Yamamoto (4)*: invece di sparare fa **fuoco di copertura** sulla porta interna — Kubo ora deve scegliere.
+**Giro 1** — *Kubo (2)*: spara a Honda col suo tiro tenuto: 10 > Lucidità 6 → **manca**, il colpo scheggia lo stipite. *Honda (3)*: risponde col 7 tenuto ≤ Lucidità 7 (la sua) → margine 0, +3 pistola = 3 in arrivo. Kubo difende: Distacco 5, tira 6, col tavolo −1 → 5 → riesce, margine 0: **prende 3**. Riserva 6→3. *Yamamoto (4)*: non spara — **mira** (−2 al suo prossimo colpo), la canna del pompa piantata sul vano della porta: il prossimo che si affaccia lì, se lo prende.
 
-**Giro 2** — Kubo sta giù (perde l'azione) e alla prossima iniziativa userà il dado più alto. Honda avanza in copertura. La voce di Yamamoto: *"Kubo. È finita. Butta l'arma."* — e questo non è più combattimento: è Presenza. Si torna a GENKAI.
+**Giro 2** — Kubo non si affaccia: con una canna già puntata sulla porta, restare dietro il tavolo è l'unica mossa sensata. Honda avanza in copertura. La voce di Yamamoto: *"Kubo. È finita. Butta l'arma."* — e questo non è più combattimento: è Presenza. Si torna a GENKAI.
 
 ---
 

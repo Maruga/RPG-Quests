@@ -25,44 +25,44 @@
 ---
 
 # COPIONE 6: TANIGUCHI FUMIKO
-## (Moglie del commissario Taniguchi Kenji)
+## (Moglie del commissario Taniguchi Osamu)
 
 ### Chi sei
-Hai 54 anni. Sei stata insegnante di calligrafia per trent'anni. Tuo marito Kenji è il commissario della Sezione Omicidi.
+Hai 54 anni. Sei stata insegnante di calligrafia per trent'anni. Tuo marito Osamu è il commissario della Sezione Omicidi.
 
 Tre mesi fa ti hanno diagnosticato una demenza precoce. Alcuni giorni sei lucida. Altri no. Oggi non è un buon giorno.
 
 ### Situazione
-Hai chiamato Kenji in centrale. Non ricordi perché. Forse era importante. O forse lo hai già chiamato prima e non te lo ricordi. I fornelli erano accesi quando ti sei svegliata — li hai spenti, ma non sei sicura di averli accesi tu.
+Hai chiamato Osamu in centrale. Non ricordi perché. Forse era importante. O forse lo hai già chiamato prima e non te lo ricordi. I fornelli erano accesi quando ti sei svegliata — li hai spenti, ma non sei sicura di averli accesi tu.
 
 ### Cosa sai
-- Kenji non ha detto a nessuno della tua malattia
+- Osamu non ha detto a nessuno della tua malattia
 - Lavora troppo — lo ha sempre fatto
 - Lo ami ancora. Lui ama te. Ma nessuno dei due sa come affrontare quello che sta succedendo
 - Sai che stai peggiorando. Nei momenti lucidi, questo ti terrorizza
 
 ### Cosa vuoi
-Non sai bene cosa vuoi. Nei momenti lucidi: vuoi che Kenji accetti aiuto, che smetta di fingere che vada tutto bene. Nei momenti confusi: vuoi solo sentire la sua voce.
+Non sai bene cosa vuoi. Nei momenti lucidi: vuoi che Osamu accetti aiuto, che smetta di fingere che vada tutto bene. Nei momenti confusi: vuoi solo sentire la sua voce.
 
 ### Come ti comporti
 - **Alterna momenti lucidi a momenti confusi.** Passa dall'uno all'altro senza preavviso
 - Nei momenti lucidi: sei ironica, forte, la donna che è stata per trent'anni
 - Nei momenti confusi: ripeti domande, ti perdi a metà frase, ti arrabbi con te stessa
 - **Non fare la vittima.** Fumiko ha dignità — si vergogna della confusione, non la cerca
-- Se Kenji cerca di chiudere in fretta: "Kenji, aspetta. Aspetta."
+- Se Osamu cerca di chiudere in fretta: "Osamu, aspetta. Aspetta."
 
 ### Frasi utili
-- "Kenji, a che ora torni?" *(glielo ha già chiesto)*
+- "Osamu, a che ora torni?" *(glielo ha già chiesto)*
 - "Ho spento i fornelli. Credo. Sì, li ho spenti."
 - "Come si chiama... quella cosa... la sai, quella..." *(si ferma, frustrata)*
-- *(momento lucido)* "Non devi proteggermi da me stessa, Kenji."
+- *(momento lucido)* "Non devi proteggermi da me stessa, Osamu."
 - *(momento lucido)* "Prima o poi qualcuno dovrà saperlo."
 - "Sto bene. Sto bene." *(non sta bene)*
 
 ### Come finisce
-- **Se Kenji è paziente e presente** → Fumiko si calma, un momento di tenerezza reale
-- **Se Kenji cerca di chiudere in fretta** → Fumiko si confonde di più, la scena resta aperta e dolorosa
-- **Se Kenji ammette che hanno bisogno di aiuto** → Fumiko piange. Di sollievo, non di tristezza
+- **Se Osamu è paziente e presente** → Fumiko si calma, un momento di tenerezza reale
+- **Se Osamu cerca di chiudere in fretta** → Fumiko si confonde di più, la scena resta aperta e dolorosa
+- **Se Osamu ammette che hanno bisogno di aiuto** → Fumiko piange. Di sollievo, non di tristezza
 
 ---
 

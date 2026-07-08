@@ -4,7 +4,7 @@ Stile generale: foto tessera polizia giapponese anni '90. Sfondo grigio-azzurro 
 
 ---
 
-## PNG_01 — TANIGUCHI Kenji
+## PNG_01 — TANIGUCHI Osamu
 
 > Japanese man, age 56, police ID photo, 1990s Japan. Short grey hair combed back with military precision, thick grey eyebrows. Long bony face, deep forehead wrinkles, narrow penetrating eyes, pronounced lines around the mouth. Clean-shaven, gaunt cheekbones, rigid posture. Wearing a perfectly pressed white dress shirt, dark narrow tie, charcoal grey vest. Expression: severe cold authority, the face of a man who has seen everything and is surprised by nothing. Flat institutional lighting, neutral grey-blue background. Photorealistic, noir tone.
 

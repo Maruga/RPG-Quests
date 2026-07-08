@@ -1,4 +1,4 @@
-# TANIGUCHI KENJI
+# TANIGUCHI OSAMU
 ## Il Commissario — Superiore dei PG
 
 ---
@@ -7,7 +7,7 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Nome completo** | Taniguchi Kenji (谷口 健二) |
+| **Nome completo** | Taniguchi Osamu (谷口 治) |
 | **Ruolo** | Commissario, Sezione Omicidi, Polizia Prefetturale di Kyoto |
 | **Grado** | Keishi (警視) — Commissario |
 | **Età** | 56 anni (nato ~1941) |
@@ -107,11 +107,11 @@ Il problema: il lavoro ti mangia vivo, e a casa la situazione peggiora. Ogni vol
 | **Relazione** | Moglie da 30 anni, matrimonio solido ma silenzioso |
 | **Stato attuale** | Demenza precoce in fase iniziale, alterna momenti di lucidità a vuoti di memoria |
 
-**Cosa vuole**: Che Kenji smetta di fingere che vada tutto bene. Non ha paura della malattia — ha paura di affrontarla da sola mentre lui è sempre al lavoro.
+**Cosa vuole**: Che Osamu smetta di fingere che vada tutto bene. Non ha paura della malattia — ha paura di affrontarla da sola mentre lui è sempre al lavoro.
 
 **Come si comporta**: Nei momenti lucidi è la donna forte e ironica di sempre. Nei momenti di vuoto si confonde, ripete le stesse domande, si arrabbia con se stessa. Non fa scene — si vergogna. A volte lo chiama in centrale per cose che non ricorda di aver già chiesto.
 
-**Frase tipica**: "Kenji, a che ora torni stasera?" *(glielo ha già chiesto due volte)*
+**Frase tipica**: "Osamu, a che ora torni stasera?" *(glielo ha già chiesto due volte)*
 
 ---
 
@@ -129,7 +129,7 @@ Il problema: il lavoro ti mangia vivo, e a casa la situazione peggiora. Ogni vol
 
 **Come contattarlo**: Telefono di casa. Risponde sempre, anche se finge di essere seccato.
 
-**Limite**: Una volta per sessione senza conseguenze. La seconda volta, Moriyama fa domande scomode: "Kenji, sei sicuro di avere tutto sotto controllo?"
+**Limite**: Una volta per sessione senza conseguenze. La seconda volta, Moriyama fa domande scomode: "Osamu, sei sicuro di avere tutto sotto controllo?"
 
 ---
 

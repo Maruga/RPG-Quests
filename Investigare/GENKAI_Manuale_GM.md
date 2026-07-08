@@ -869,6 +869,8 @@ Se un PNG cambia versione, la ragione deve essere nella sua testa — una nuova 
 
 Il Kage di ogni PG è la tua leva drammatica. Non usarla troppo spesso — massimo due o tre scene personali per sessione — e usala nei momenti in cui aggiunge qualcosa, non quando interrompe.
 
+**L'evoluzione dei Kage** — registro, Peso, Tiro del Kage, favori e macchie — è nel manuale dedicato **`GENKAI_Kage.md`** (*L'Ombra che Cresce*); i dossier pronti dei cinque PG sono in `pg/Kage/`, gli archi dei notevoli in `png notevoli/Kage_Notevoli.md`.
+
 **Quando attivare un Kage:**
 - Durante un momento di tensione investigativa alta — aumenta la pressione su più livelli
 - Quando un PG è già in difficoltà — lo metti alla prova nel peggior momento
@@ -904,7 +906,7 @@ Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i
 
 ## I PNG Fissi della Serie Investigare
 
-### Taniguchi Kenji — Il Commissario
+### Taniguchi Osamu — Il Commissario
 
 56 anni. Freddo, efficiente, inattaccabile in superficie. Nella realtà: esausto, preoccupato per la moglie con demenza precoce che non ha detto a nessuno, incapace di lasciare il lavoro anche quando sa che dovrebbe tornare a casa.
 
@@ -989,7 +991,7 @@ Di routine è una funzione, non un personaggio in scena: i PG lo sentono via fax
 
 Entra in scena solo nei casi importanti, quando Taniguchi porta i PG a sostenere di persona una richiesta delicata. Incontri brevi, formali, con conseguenze concrete.
 
-**Il suo Kage al tavolo:**
+**La sua carta nascosta** *(non è un Kage da scena personale — è un gancio di En per le campagne lunghe)*:
 
 Il dossier sul giudice Maezawa non emerge di routine — esiste come profondità del personaggio. Ma se un caso tocca Maezawa, direttamente o indirettamente, Watanabe può diventare un alleato improvviso. È una carta da tenere in serbo per le campagne lunghe.
 
