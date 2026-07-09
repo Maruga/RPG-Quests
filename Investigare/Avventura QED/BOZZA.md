@@ -41,6 +41,7 @@
 | Vice-direttore del juku (depistaggio) | ŌHARA Nobuyuki, 48 | accesso alle liste, movente economico, alibi deboli — innocente |
 | Direttore del juku | MAKIMURA Sadao, 63 | fondatore del Meirinkan; copre le magagne per reputazione |
 | Il genitore delle lettere minatorie (rumore) | TODOROKI Isamu, 50 | figlio bocciato, rabbia vera, colpevole di niente |
+| **L'ex allievo anestesista (pista)** | **FUKAMI Ryōsuke**, ~35 | ex allievo del Meirinkan indirizzato alla medicina da Seki; gli fornì inconsapevole l'halotano; conferma il nome di Seki |
 | **Il discepolo (seme del seguito)** | **IGNOTO** | manda al juku una lettera + l'identità di Eulero; irrintracciabile; "lo seguirà" |
 | Il juku | **Meirinkan** (明倫館) | quartiere Sakyō; il distributore di sencha accanto all'ingresso |
 
@@ -104,8 +105,18 @@ Il registro assegna a ogni ex allievo un **Delta** = talento misurato (punteggi,
 5. **La matita** — 2H temperata **a lama** (non col temperino), tratto durissimo: chi scrive numeri da trent'anni. *(La lama è anche l'arma dell'Irruzione: coerenza da seminare)*
 6. **Il sencha** — sempre la stessa marca, quella del distributore accanto al Meirinkan
 
-### La pista dell'anestetico *(da sviluppare — vedi §11)*
-Dove prende un professore di matematica un anestetico chirurgico? È una **pista a sé**, e mette **Sato** (il chimico) al centro dell'identificazione dell'agente. Opzioni d'origine da decidere: furto in clinica, una fonte veterinaria, un ex allievo diventato medico, o un canale industriale.
+### La pista dell'anestetico — Fukami (Sato al centro)
+**FUKAMI Ryōsuke** (~35), anestesista, è un ex allievo del Meirinkan: mediocre nelle gare, ma Seki gli vide *mani ferme e sangue freddo* e — raro per lui — lo indirizzò verso la medicina invece di spremerlo. Fukami gli deve la carriera e lo venera. Dopo il suicidio di Itsuki, Seki è andato a trovarlo da vecchio maestro riverito e — con una scusa (insonnia, un "esperimento didattico") — si è fatto dare alcune fiale di **halotano in dismissione**: vecchia scorta che l'ospedale sta smaltendo (halotano epatotossico, in phase-out reale negli anni '90), "roba che nessuno rimpiangerà". Fukami è **inconsapevole**: sarà l'uomo più sconvolto di Kyoto.
+
+**La scala (guidata da Sato):**
+1. Sul corpo fresco di Tsujimura, Ito trova la traccia e un lieve odore dolciastro; Sato riconosce l'agente: *"Non è un veleno da manuale — è un anestetico da sala operatoria, e per giunta uno che stanno ritirando. Chi lo usa oggi? Nessuno. Ed è per questo che nessuno lo sorveglia."* *(I Mizuno, cremati entro pochi giorni, non danno tossicologia: l'agente si prova solo da qui in poi.)*
+2. Da solo l'agente dice troppo poco (un medico, da qualche parte in Kansai). Ma dice *dove* guardare: scorte vecchie, in smaltimento, dove i controlli sono laschi.
+3. **L'interlock**: quando il filone del juku produce gli ex allievi, tra quelli "di cui il Meirinkan va fiero" c'è *"quello diventato medico"*. L'unico ex allievo con accesso all'halotano. I due fili convergono su un nome: Fukami.
+4. Con Watanabe (mandato), i registri di smaltimento anestetici dell'ospedale di Fukami mostrano piccoli ammanchi nelle scorte in dismissione, sui suoi turni, mai notati.
+5. **Fukami non è il killer: è il testimone che conferma Seki.** *"Seki-sensei... il mio professore del Meirinkan. È venuto a trovarmi. Gliel'ho dato io. Oddio, gliel'ho dato io."* Non sa dove Seki sia (troppo attento): dà il nome, non il nascondiglio.
+
+**Perché non scavalca**: l'agente è troppo comune tra gli ospedali per isolare Fukami senza il filone juku; e i tempi (mandati, registri) portano la convergenza a metà-tardi, quando i PG già cerchiano il Meirinkan. L'anestetico *chiude la porta* su Seki, non la apre.
+**Tema**: Fukami è il controesempio che Seki ignora — l'unico allievo il cui talento *non* fu spento (perché Seki stesso lo deviò bene) arma il vendicatore dei talenti spenti. E per **Sato** è una scena tra pari: due uomini di scienza che "ce l'hanno fatta", e lo specchio della reverenza per un mentore.
 
 ---
 
@@ -219,9 +230,9 @@ Dove Seki faceva una *somma selettiva* (numeri perfetti), il successore sogna un
 5. Struttura: **niente sessioni** → spina fissa (calendario) + mondo reattivo (stampa/panico/lettere/interviste/omicidio-esca)
 6. Kaho: **cardine emotivo del finale se conquistata**
 7. Ultimo scarto → **il discepolo ignoto + l'identità di Eulero** (formula vera, non operativa; seme di seguito)
+8. Pista anestetico: **l'ex allievo anestesista Fukami** (inconsapevole; halotano in dismissione; interlock juku+chimica → conferma Seki)
 
 🔲 **Ancora aperte:**
-- **A** — la **pista dell'anestetico**: da dove lo prende Seki (clinica / veterinario / ex allievo medico / industriale)? È la pista che coinvolge Sato
 - **B** — l'**origine della fuga di notizie** che fa scoppiare il caso (un poliziotto? un familiare? una mossa di Seki?)
 - **C** — se e quando trasformare il seme del discepolo in una **seconda campagna**
 
