@@ -41,6 +41,8 @@
 | Vice-direttore del juku (depistaggio) | ŌHARA Nobuyuki, 48 | accesso alle liste, movente economico, alibi deboli — innocente |
 | Direttore del juku | MAKIMURA Sadao, 63 | fondatore del Meirinkan; copre le magagne per reputazione |
 | Il genitore delle lettere minatorie (rumore) | TODOROKI Isamu, 50 | figlio bocciato, rabbia vera, colpevole di niente |
+| **Il cronista scandalistico (la fuga)** | **HAYAKAWA Tatsuya**, ~40 | shūkanshi; conia "il Killer dei Compiti"; compra un PG o incassa dalla talpa |
+| **La talpa in centrale (la fuga)** | **GONDA Susumu**, 55 | sovrintendente reception-archivio; da anni vende briciole a Hayakawa; il fallback che fa scoppiare il caso |
 | **L'ex allievo anestesista (pista)** | **FUKAMI Ryōsuke**, ~35 | ex allievo del Meirinkan indirizzato alla medicina da Seki; gli fornì inconsapevole l'halotano; conferma il nome di Seki |
 | **Il discepolo (seme del seguito)** | **IGNOTO** | manda al juku una lettera + l'identità di Eulero; irrintracciabile; "lo seguirà" |
 | Il juku | **Meirinkan** (明倫館) | quartiere Sakyō; il distributore di sencha accanto all'ingresso |
@@ -128,6 +130,13 @@ Il registro assegna a ogni ex allievo un **Delta** = talento misurato (punteggi,
 - **Privato** — le morti sembrano slegate, nessun allarme; i PG lavorano al riparo. (Finché non collegano i casi o non trapela nulla.)
 - **Lo scoppio** — trapela "c'è un serial killer". La stampa lo battezza (**"il Killer dei Compiti"** — il nome sbagliato che fa infuriare Seki: leva utile). Parte il circo.
 - **Il panico** — la città ha paura; ogni morte sospetta "è lui"; i genitori del juku ritirano i figli; qualcuno chiede la scorta.
+
+### Come scoppia — la fuga di notizie (due livelli)
+Il compratore è **HAYAKAWA Tatsuya** (~40), cronista di nera di un settimanale scandalistico: fiuto, zero scrupoli, è lui a coniare "il Killer dei Compiti".
+- **Livello 1 — l'offerta a un PG** *(primario, si aggancia alla scala favori dei Kage)*: Hayakawa punta il PG più ricattabile e offre uno scambio su misura del suo Kage (soldi per il debito di Honda, una spinta mediatica, il silenzio su qualcosa) — passare info riservate alla stampa è un favore **gradino 2-3**. Se un PG cede, **la fuga è di qualità**: escono dettagli veri (il pattern, forse il juku) → panico peggiore, Seki tippato, valanga di piste, e l'ispettorato che risale alla falla (→ al PG). *Nota GENKAI: una fuga accurata può perfino compiacere Seki ("qualcuno ha capito"); una imprecisa lo fa infuriare.*
+- **Livello 2 — la talpa storica** *(fallback, garantisce lo scoppio)*: se nessun PG può/vuole, esce comunque tramite **GONDA Susumu** (55), sovrintendente reception-archivio: da anni vende briciole a Hayakawa (rivalsa da promozione mancata + spiccioli). Fuori dalla squadra, accesso periferico: fa uscire abbastanza da rompere "c'è un serial killer, morti collegate" (→ panico), non i dettagli del juku. Se venga scoperto non importa ora: i PG potranno, più avanti, indagare la falla interna e trovarlo.
+
+L'asimmetria è il punto: la talpa dà la versione *banalizzata* (che fa infuriare Seki); un PG darebbe la versione *profonda* (che aiuta Seki o l'indagine, e si ritorce su di lui). Il mondo scoppia comunque — cambia solo chi tira il grilletto.
 
 ### Il catalogo del rumore (il GM lo dosa)
 - **Articoli ed edizioni straordinarie** — handout d'atmosfera; alcuni con dettagli veri (fuga di notizie: da chi?), altri inventati
@@ -231,10 +240,10 @@ Dove Seki faceva una *somma selettiva* (numeri perfetti), il successore sogna un
 6. Kaho: **cardine emotivo del finale se conquistata**
 7. Ultimo scarto → **il discepolo ignoto + l'identità di Eulero** (formula vera, non operativa; seme di seguito)
 8. Pista anestetico: **l'ex allievo anestesista Fukami** (inconsapevole; halotano in dismissione; interlock juku+chimica → conferma Seki)
+9. Fuga di notizie: **Hayakawa** (cronista scandalistico che compra un PG — gancio favori Kage) con fallback **Gonda** (talpa storica in centrale)
 
 🔲 **Ancora aperte:**
-- **B** — l'**origine della fuga di notizie** che fa scoppiare il caso (un poliziotto? un familiare? una mossa di Seki?)
-- **C** — se e quando trasformare il seme del discepolo in una **seconda campagna**
+- **C** — se e quando trasformare il seme del discepolo in una **seconda campagna** *(parcheggiato per ora)*
 
 ---
 
