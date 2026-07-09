@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura La Somma Perfetta/BOZZA.md",
+                "file": "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BOZZA"
+              "title": "Kage_02_Honda_Ryota"
             }
           }
         ]
@@ -227,9 +227,12 @@
   },
   "active": "3895039331ab9e56",
   "lastOpenFiles": [
+    "Investigare/Avventura QED/BOZZA.md.tmp.14376.cd0740f42d92",
+    "Investigare/Avventura La Somma Perfetta/BOZZA.md",
+    "Investigare/Avventura QED/BOZZA.md",
+    "Investigare/Avventura QED",
     "Investigare/Avventura La Somma Perfetta/BOZZA.md.tmp.14376.f9d3e2353b9e",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
-    "Investigare/Avventura La Somma Perfetta/BOZZA.md",
     "Investigare/Avventura La Somma Perfetta/BOZZA.md.tmp.14376.af0c66d2a81a",
     "Investigare/Avventura La Somma Perfetta",
     "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.e10cbc7409c2",
@@ -238,8 +241,6 @@
     "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.045b28270d5e",
     "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.4fd14b994925",
     "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.3215113c6eb2",
-    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.b8c7a8e47e8c",
-    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.423149bd7f3a",
     "Investigare/png notevoli/PNG_01_Taniguchi_Osamu_foto.png",
     "Investigare/png notevoli/Taniguchi_Osamu_Commissario.md",
     "Investigare/png notevoli/Kage_Notevoli.md",
@@ -265,7 +266,6 @@
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/pg/token_prompts.md",
     "Investigare/README.md",
-    "Investigare/pg/PG_02_Honda_Ryota.md",
     "Investigare/Materiale/CrimeBoard.jpg",
     "Investigare/Materiale/CrimeBoard.png",
     "Investigare/Materiale/StradaNotturna.png",
