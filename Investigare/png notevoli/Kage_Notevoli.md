@@ -4,6 +4,8 @@
 > **SOLO PER IL GM.** Archi più corti di quelli dei PG: qui il PG "interessato" non esiste — l'interessato è il PNG notevole (Taniguchi, Yamada, Ito), che interpreti tu. Un giocatore interpreta il PNG del copione; i PG **assistono** — ed è il punto: vedere il commissario incrinarsi vale una sessione di lore.
 >
 > I copioni base sono i n. 6-8 di `Copioni_PNG.md` (in questa cartella). Qui ci sono i motori e gli sviluppi.
+>
+> **Un quarto Kage di notevole, diverso**: quello di **Gonda Susumu** (l'archivista/talpa) non è un arco familiare da scena personale ma una *pressione economica* (i "tre pesi") che ne spiega la corruzione + la meccanica "se scoperto → informatore". È self-contained nella sua scheda: `Gonda_Susumu_Archivista.md`.
 
 ---
 ---
