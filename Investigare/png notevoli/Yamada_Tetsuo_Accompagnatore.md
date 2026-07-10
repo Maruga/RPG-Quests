@@ -298,7 +298,7 @@ Tono calmo e rispettoso. Frasi di lunghezza media, professionali ma accessibili.
 
 ### Senmon 専門
 
-I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Yamada ha la strada:
+Yamada ha la strada:
 
 - **Conoscere il quartiere — Kyoto 2 — Esperto** *(Ascolto)*: la città come le sue tasche — ogni strada, scorciatoia, izakaya, faccia di quartiere. +2 ai tiri pertinenti *(scheda a metodo diretto: per i PNG i requisiti di grado sono solo un riferimento)*
 - **Pedinamento 1 — Praticante** *(Lucidità 7)*: dieci anni di pattuglia — le distanze giuste, l'occhio per chi ti segue. +1 ai tiri pertinenti

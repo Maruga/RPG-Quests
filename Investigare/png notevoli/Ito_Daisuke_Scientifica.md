@@ -273,9 +273,9 @@ Linguaggio tecnico ma comprensibile. Frasi corte e dichiarative. Non usa mai con
 
 ### Senmon 専門
 
-I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Ito ha il metodo:
+Ito ha il metodo:
 
-- **Rilievi e fotografia 2 — Esperto** *(Lucidità 8)*: quello che un perito vede in ore, lui lo vede sul posto — la fibra fuori posto, il segno che non dovrebbe esserci. +2 ai tiri pertinenti
+- **Rilievi e fotografia 3 — Maestro** *(Lucidità 8)*: quello che un perito vede in ore, lui lo vede sul posto — la fibra fuori posto, il segno che non dovrebbe esserci. Al grado Maestro (Tecnica): **+2 con Correzione** — 1/scena può ritirare o sistemare il tiro (il nuovo dado vale anche se 11/12)
 - **Medicinali e veleni 2 — Esperto** *(Lucidità 8)*: l'eredità del chimico industriale — composti, dosaggi, tossicologia da campo. +2 ai tiri pertinenti
 
 > Quando si china su una prova e dice *"Interessante..."*, non è un potere: sono trent'anni di metodo. *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*

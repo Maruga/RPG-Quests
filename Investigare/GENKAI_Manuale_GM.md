@@ -892,7 +892,7 @@ Non sono funzioni al servizio dell'indagine. Sono persone con la propria vita, i
 
 **Le loro schede si costruiscono con il metodo diretto**: il GM assegna i valori che servono al ruolo, senza vincolo di budget. Le figure d'autorità — il commissario, il procuratore — pesano più dei PG (41-42 punti di attributi contro ~38), ed è voluto: sono ancore istituzionali, non avversari da bilanciare. Il loro peso non entra quasi mai in un tiro contrapposto — si sente nella stanza.
 
-**I PNG non hanno Gou** — il Gou è il dono dei protagonisti. Hanno invece **Senmon**, anche di grado 2 (le trovi sulle loro schede). Se un PNG notevole diventa PG, sceglie il suo Gou in quel momento.
+**Di norma un PNG non ha un Gou** — è il dono dei protagonisti (e semmai dei **notevoli** ricorrenti, a tua discrezione). Le **Senmon**, invece, un PNG può averle liberamente: di qualunque grado, anche più d'una a grado 3 — sei tu a decidere il livello di ogni personaggio. Nessun automatismo: se ti serve un PNG con dieci maestrie o con un Gou, daglielo. Le dotazioni dei notevoli sono sulle schede in `png notevoli/`.
 
 ## I Quattro Ruoli Fondamentali
 

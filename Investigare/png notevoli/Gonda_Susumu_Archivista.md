@@ -235,10 +235,19 @@ Dialetto del Kansai ammorbidito, cortesie da vecchio impiegato, molte scuse e mo
 ### Ki 気
 **Ki iniziale**: 7 (Distacco/Lucidità 5 + 2)
 
+### Gou 業 — l'eccezione
+> Gonda ha un Gou — non lo usa quasi mai: gli serve solo quando conta.
+
+**業 L'Orecchio del Sotterraneo** 地下の耳
+*Vent'anni in archivio, e nessuno che badi a lui: Gonda sa dove ogni cosa è sepolta, e ha sentito più di quanto chiunque immagini.*
+- **Attributo**: Ascolto (7) · **Costo**: 2 Ki
+- **Successo** (2d6 ≤ Ascolto): recupera il dato preciso — un vecchio fascicolo, un nome, una firma, una voce di corridoio di anni fa — e un collegamento che nessuno aveva notato
+- **Fallimento**: sa che *c'è* qualcosa, e più o meno dove cercare, ma non cosa
+- *(È il Gou perfetto per il suo ruolo di informatore: una volta "girato", è la memoria vivente della centrale al servizio dei PG.)*
+
 ### Senmon 専門
-I PNG notevoli **non hanno Gou**. Gonda ha il mestiere di una vita:
+Gonda ha anche il mestiere di una vita:
 - **Ricerca d'archivio 2 — Esperto** *(Pazienza 6)*: fascicoli, precedenti, pratiche interdistrettuali — nessuno conosce gli archivi come lui. +2 ai tiri pertinenti
-- *(Non formalizzato ma reale: l'arte di sentire tutto restando invisibile — un vantaggio narrativo su Ascolto, non un bonus meccanico)*
 
 ### En (Legame) iniziale
 **+1 verso i PG** — li serve da sempre, gli sono simpatici. Da informatore "girato", l'En sale rapidamente per gratitudine e paura (arriva a +3, mai oltre: la lealtà di Gonda è vera ma fragile).

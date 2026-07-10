@@ -266,10 +266,10 @@ Frasi brevi. Voce bassa e ferma. Non alza mai il tono — abbassa la voce quando
 
 ### Senmon 専門
 
-I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Taniguchi ha il mestiere:
+Taniguchi ha il mestiere di trent'anni:
 
 - **Interrogatorio 2 — Esperto** *(Pazienza)*: trent'anni di stanze chiuse. +2 ai tiri pertinenti; sceglie la tecnica giusta per la persona giusta senza tentativi
-- **Stampa e media 2 — Esperto** *(Presenza 8)*: sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. +2 ai tiri pertinenti
+- **Stampa e media 3 — Maestro** *(Presenza 8)*: sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. Al grado Maestro (Conoscenza): **+3** ai tiri pertinenti
 
 > Quando Taniguchi abbassa la voce e ti fissa negli occhi, non è un potere: è il peso di trent'anni di carriera. *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*
 

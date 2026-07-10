@@ -135,6 +135,42 @@ def add_senmon_box(doc, name, chiave, desc):
     add_run(p2, desc, size=8, color=DARK)
 
 
+def add_gou_box(doc, name, kanji, desc, attr, cost, success, failure):
+    p = doc.add_paragraph()
+    pf = p.paragraph_format
+    pf.space_before = Pt(4)
+    pf.space_after = Pt(1)
+    pf.left_indent = Cm(0.3)
+    add_run(p, "業 ", size=11, color=GOLD)
+    add_run(p, name, bold=True, size=11, color=DARK)
+    add_run(p, f"  {kanji}", size=9, color=GOLD)
+
+    p2 = doc.add_paragraph()
+    p2.paragraph_format.space_after = Pt(1)
+    p2.paragraph_format.left_indent = Cm(0.6)
+    add_run(p2, desc, italic=True, size=8, color=MUTED)
+
+    p3 = doc.add_paragraph()
+    p3.paragraph_format.space_after = Pt(1)
+    p3.paragraph_format.left_indent = Cm(0.6)
+    add_run(p3, "Attributo: ", bold=True, size=8, color=DARK)
+    add_run(p3, attr, size=8, color=DARK)
+    add_run(p3, "   ·   Costo: ", bold=True, size=8, color=DARK)
+    add_run(p3, cost, size=8, color=RED)
+
+    p4 = doc.add_paragraph()
+    p4.paragraph_format.space_after = Pt(1)
+    p4.paragraph_format.left_indent = Cm(0.6)
+    add_run(p4, "Successo: ", bold=True, size=8, color=DARK)
+    add_run(p4, success, size=8, color=DARK)
+
+    p5 = doc.add_paragraph()
+    p5.paragraph_format.space_after = Pt(3)
+    p5.paragraph_format.left_indent = Cm(0.6)
+    add_run(p5, "Fallimento: ", bold=True, size=8, color=DARK)
+    add_run(p5, failure, size=8, color=DARK)
+
+
 # ── PNG Data ──
 
 PNG_DATA = [
@@ -160,8 +196,8 @@ PNG_DATA = [
         "senmon": [
             ("Interrogatorio 2 — Esperto", "Pazienza",
              "Trent'anni di stanze chiuse: +2 ai tiri pertinenti, sceglie la tecnica giusta per la persona giusta senza tentativi."),
-            ("Stampa e media 2 — Esperto", "Presenza 8",
-             "Sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. +2 ai tiri pertinenti."),
+            ("Stampa e media 3 — Maestro", "Presenza 8",
+             "Sa cosa fa notizia, cosa può aspettare, e come si tiene un giornale al guinzaglio per 48 ore. Al grado Maestro (Conoscenza): +3 ai tiri pertinenti."),
         ],
         "background": "Sei un veterano. Hai scalato i ranghi della polizia in trent'anni di servizio, da pattuglia a commissario. Hai risolto casi importanti, hai protetto la tua squadra, hai tenuto a bada media e politici.\n\nSei la roccia della Sezione Omicidi. I tuoi uomini ti rispettano. I tuoi superiori si fidano. Nessuno vede le crepe.\n\nMa le crepe ci sono. A casa, tua moglie Fumiko sta peggiorando. La demenza precoce sta avanzando. E tu fingi che vada tutto bene.",
         "problem_title": "La Moglie",
@@ -272,8 +308,8 @@ PNG_DATA = [
             ("Presenza", "5", "Non carismatico, ma nessuno mette in dubbio la sua competenza"),
         ],
         "senmon": [
-            ("Rilievi e fotografia 2 — Esperto", "Lucidità 8",
-             "Quello che un perito vede in ore, lui lo vede sul posto: la fibra fuori posto, il segno che non dovrebbe esserci. +2 ai tiri."),
+            ("Rilievi e fotografia 3 — Maestro", "Lucidità 8",
+             "Quello che un perito vede in ore, lui lo vede sul posto: la fibra fuori posto, il segno che non dovrebbe esserci. Al grado Maestro (Tecnica): +2 con Correzione (1/scena ritira o corregge)."),
             ("Medicinali e veleni 2 — Esperto", "Lucidità 8",
              "L'eredità del chimico industriale: composti, dosaggi, tossicologia da campo. +2 ai tiri pertinenti."),
         ],
@@ -307,6 +343,136 @@ PNG_DATA = [
             "oggetto": "Lente d'ingrandimento tascabile Nikon, vecchia di trent'anni.",
             "gusto": "Bento preparato da solo — sempre uguale: riso, salmone grigliato, tsukemono.",
             "extra": ("Rituale", "Prima di lavorare su una scena, fa un giro completo della stanza senza toccare nulla. Solo guardando."),
+        },
+    },
+    # ── PNG_04 — WATANABE Hideo ──
+    {
+        "filename": "Scheda_PNG_04_Watanabe_Hideo.docx",
+        "photo": "PNG_04_Watanabe_Hideo_foto.png",
+        "name_jp": "渡辺 秀夫",
+        "name": "WATANABE Hideo",
+        "age": "51",
+        "role": "Procuratore (Pubblico Ministero)",
+        "rank": "Kenji (検事) — Procuratore",
+        "years": "26",
+        "ki": "8",
+        "attrs": [
+            ("Distacco", "8", "Magistrale — non si fa coinvolgere"),
+            ("Pazienza", "8", "Aspetta i tempi della giustizia"),
+            ("Silenzio", "7", "Parla solo per dire cose precise"),
+            ("Lucidità", "8", "Trent'anni di letture giudiziarie: legge la legge come pochi"),
+            ("Ascolto", "6", "Ascolta tutto, registra tutto"),
+            ("Presenza", "6", "Autorità istituzionale, non carismatica"),
+        ],
+        "gou": {
+            "name": "Lettura della Toga",
+            "kanji": "法衣の眼差し",
+            "desc": "Sa vedere se una richiesta sta in piedi giuridicamente prima ancora di finire di leggerla.",
+            "attr": "Lucidità (8)",
+            "cost": "2 Ki",
+            "success": "Individua subito il punto debole di una richiesta e lo segnala — anche tramite Taniguchi: i PG sanno esattamente cosa correggere.",
+            "failure": "Non si pronuncia; valuta nei tempi standard, senza indicazioni.",
+        },
+        "senmon": [
+            ("Leggi — diritto penale 3 — Maestro", "Lucidità 8",
+             "Vede il punto debole di una richiesta prima ancora di finire di leggerla. Al grado Maestro (Conoscenza): +3 ai tiri pertinenti."),
+            ("Ricerca d'archivio 2 — Esperto", "Pazienza 8",
+             "Fascicoli, precedenti, giurisprudenza — trent'anni di letture giudiziarie. +2 ai tiri pertinenti."),
+        ],
+        "background": "Sei procuratore da oltre vent'anni. Laurea a Tokyo nel 1968, concorso in magistratura nel 1971, diverse Procure del Kansai, poi stabilmente qui dal 1988.\n\nHai gestito centinaia di casi. Sei rispettato dai colleghi e temuto dagli avvocati per la precisione delle tue requisitorie. La tua regola: \"Un mandato emesso male è peggio di un mandato non emesso. Il primo distrugge la causa, il secondo solo rallenta.\"\n\nNel 1982, da sostituto, autorizzasti una perquisizione su prove deboli: annullata, imputato assolto, causa allo Stato, richiamo formale. Da allora firmi lentissimo. La lentezza è una garanzia, non un difetto.",
+        "problem_title": "Il Giudice Maezawa",
+        "problem_text": "Tre mesi fa una tua richiesta di custodia cautelare per un imprenditore (evasione fiscale grave) è stata respinta dal giudice Maezawa Hiroyuki con una motivazione formalmente corretta ma sostanzialmente debole. In due settimane l'imprenditore ha trasferito ¥800 milioni all'estero, irraggiungibili.\n\nHai capito subito. Non hai prove. Ma hai compilato in silenzio un dossier sui movimenti patrimoniali di Maezawa: due appartamenti sotto mercato, una figlia ammessa in un'università prestigiosa con voti modesti, sponsorizzazioni che si sovrappongono a procedimenti chiusi bene.\n\nIl dossier è nel tuo armadietto chiuso a chiave. Denunciare significa una guerra interna alla magistratura che probabilmente perderesti; lasciar perdere significa convivere con mandati non firmati per ragioni che non hanno nulla a che fare con la legge.",
+        "png_name": "MAEZAWA Hiroyuki",
+        "png_role": "Giudice, decano del Tribunale Prefetturale",
+        "png_age": "52",
+        "png_job": "Giudice",
+        "png_wants": "Che nessuno guardi troppo da vicino i suoi conti. È abile, coperto, rispettato — respinge le richieste scomode con motivazioni tecniche perfette.",
+        "png_behavior": "Cortese, impeccabile, formalmente ineccepibile. Non lascia mai un appiglio: tutto ciò che fa è, sulla carta, corretto.",
+        "enja_name": "KAWASAKI Junko",
+        "enja_role": "Giudice penale, Tribunale Prefetturale",
+        "enja_desc": "Giudice integerrima, 47 anni. Stima reciproca da quindici anni. Quando Watanabe deve impostare una richiesta delicata, va da lei in modo informale: non firma per lui, ma gli dice se la richiesta sta in piedi.",
+        "enja_contact": "Caffetteria del Tribunale, ore 16:00, dopo le udienze. Mai al telefono le cose importanti.",
+        "enja_cost": "Nulla. Si rispettano, punto.",
+        "tatemae": "Il magistrato. Posato, formale, distaccato. Keigo impeccabile. Non sorride quasi mai.",
+        "honne": "Stanco. Vedovo da otto anni, due figli adulti a Tokyo. La sera mangia solo, legge saggistica giuridica. La pensione è prevista per il 2011. Non sa cosa farà dopo.",
+        "phrase": "\"Lo valuterò.\" (la dice davvero — e poi lo valuta)",
+        "pressure": "Diventi più formale, non meno. Il keigo si stratifica, le pause si allungano, la stilografica viene tenuta più stretta.",
+        "weakness": "Qualsiasi accenno al caso del 1982. Si irrigidisce e chiude: \"Non discuto casi chiusi quindici anni fa.\"",
+        "district": [
+            ("I PG", "Polizia che presenta richieste — rapporto istituzionale. Cresce se le richieste sono solide. \"L'Ispettore Yamamoto è un funzionario serio.\""),
+            ("Commissario Taniguchi", "Rispetto professionale di vent'anni. \"Il Commissario Taniguchi sa fare il suo lavoro.\""),
+            ("Ito Daisuke", "Apprezza i suoi referti asciutti. \"I rapporti di Ito sono sempre utilizzabili in udienza.\""),
+        ],
+        "traits": {
+            "vizio": "Un solo bicchiere di whisky scozzese (Yamazaki 12) la sera. Sempre uno solo.",
+            "tic": "Batte due volte la stilografica sul foglio prima di posarla. Se la batte tre volte, la richiesta sarà respinta.",
+            "oggetto": "Stilografica Pilot Custom 823 nera, regalo di laurea della madre. Inchiostro sempre nero, mai blu.",
+            "gusto": "Tè verde caldo al lavoro, whisky a casa. Mai caffè, mai sigarette.",
+            "extra": ("Rituale", "Ogni mattina in ufficio alle 08:15. Apre la finestra cinque minuti anche d'inverno. Poi inizia a leggere."),
+        },
+    },
+    # ── PNG_05 — GONDA Susumu ──
+    {
+        "filename": "Scheda_PNG_05_Gonda_Susumu.docx",
+        "photo": "PNG_05_Gonda_Susumu_foto.png",
+        "name_jp": "権田 進",
+        "name": "GONDA Susumu",
+        "age": "55",
+        "role": "Archivista / reception — Distretto dei PG",
+        "rank": "Junsa-buchō (巡査部長) — Sovrintendente",
+        "years": "32",
+        "ki": "7",
+        "attrs": [
+            ("Distacco", "5", "Si è anestetizzato da anni"),
+            ("Pazienza", "6", "Trent'anni di faldoni"),
+            ("Silenzio", "6", "Invisibile per mestiere"),
+            ("Lucidità", "5", "Ordinato, non brillante"),
+            ("Ascolto", "7", "Sente tutto: nessuno bada all'archivista"),
+            ("Presenza", "5", "Nessuno lo guarda due volte"),
+        ],
+        "gou": {
+            "name": "L'Orecchio del Sotterraneo",
+            "kanji": "地下の耳",
+            "desc": "Vent'anni in archivio, e nessuno che badi a lui: Gonda sa dove ogni cosa è sepolta, e ha sentito più di quanto chiunque immagini.",
+            "attr": "Ascolto (7)",
+            "cost": "2 Ki",
+            "success": "Recupera il dato preciso — un vecchio fascicolo, un nome, una firma, una voce di corridoio di anni fa — e un collegamento che nessuno aveva notato.",
+            "failure": "Sa che c'è qualcosa, e più o meno dove cercare, ma non cosa.",
+        },
+        "senmon": [
+            ("Ricerca d'archivio 2 — Esperto", "Pazienza 6",
+             "Fascicoli, precedenti, pratiche interdistrettuali — nessuno conosce gli archivi come lui. +2 ai tiri pertinenti."),
+        ],
+        "background": "Entrato in polizia nel 1965. Non portato per la strada, spostato presto agli archivi — e lì sei rimasto. Sovrintendente dal 1979, mai oltre: tre volte proposto e tre volte scavalcato da colleghi più giovani e più visibili.\n\nConosci la centrale meglio del commissario: chi entra, chi esce, quale pratica è ferma su quale scrivania. Da qualche anno vendi al cronista Hayakawa piccole cose che passano dal tuo banco — per arrotondare.\n\nNon ti senti un traditore: ti senti uno che \"arrotonda\". Sai benissimo che è una bugia, e la notte non dormi benissimo.",
+        "problem_title": "I Tre Pesi — e la talpa",
+        "problem_text": "Tre pesi schiacciano uno stipendio solo: tua sorella Michi (51), vedova al nord, a cui mandi ¥40.000 al mese; tua figlia Ayano (24), con una disabilità che le rende quasi impossibile un lavoro stabile, di cui integri cure e mantenimento; il mutuo della casetta di Fushimi, ancora otto anni. La somma non torna, non è mai tornata: le buste di Hayakawa colmano esattamente quel buco.\n\nSE I PG TI SCOPRONO E NON TI DENUNCIANO: in cambio del silenzio, diventi il loro informatore. Sai cosa la stampa ha in mano prima che esca, puoi piantare o far sparire una storia, e conosci gli archivi meglio di chiunque. Leale e terrorizzato — ma un uomo che ha già venduto una volta può rivendere (una Shimi latente per chi ti copre).",
+        "png_name": "GONDA Ayano",
+        "png_role": "Figlia, la ragione di tutto",
+        "png_age": "24",
+        "png_job": "Cerca lavoro — una disabilità la fa scartare con mille cortesie",
+        "png_wants": "Non sa cosa fa suo padre per lei. È il motivo per cui accetta le buste.",
+        "png_behavior": "Dolce, dignitosa. La sua foto da bambina, al mare, è nel portafoglio di Gonda dietro la tessera: la prima cosa che tira fuori quando crolla.",
+        "enja_name": "HAYAKAWA Tatsuya",
+        "enja_role": "Cronista di nera, settimanale scandalistico",
+        "enja_desc": "~40 anni, fiuto e zero scrupoli. Il 'cliente' di Gonda da ~4 anni: buste in cambio di briciole. È lui a coniare \"il Killer dei Compiti\". (Scheda completa in Avventura QED.)",
+        "enja_contact": "Un numero su un foglietto nel portafoglio. Un bar defilato vicino alla stazione, mai lo stesso due volte di fila.",
+        "enja_cost": "Le briciole che passano dal banco dell'archivio. Il resto non lo vuole sapere.",
+        "tatemae": "Il vecchio dell'archivio: cortese, un po' lamentoso sulla schiena e sul freddo, offre caramelle d'orzo, chiede della famiglia. Innocuo.",
+        "honne": "Un uomo stanco che fa i conti la notte e non gli tornano mai. Ama la figlia più della propria dignità — ed è la crepa da cui è entrata la corruzione.",
+        "phrase": "\"Eh, la schiena... e i faldoni non si archiviano da soli.\" (per non parlare d'altro)",
+        "pressure": "Ti scusi troppo. Ti pulisci gli occhiali. Cominci a spiegare prima ancora che ti accusino. Se ti stringono, crolli e tiri fuori la foto della figlia.",
+        "weakness": "Ayano. Qualsiasi cosa riguardi sua figlia. E l'idea che lei sappia cosa ha fatto suo padre.",
+        "district": [
+            ("I PG", "Li serve all'archivio da sempre; li conosce tutti. \"Brava gente. Lavorano troppo, come me.\""),
+            ("Commissario Taniguchi", "Timore reverenziale. \"Il commissario è un signore. Non come me.\""),
+            ("Hayakawa (cronista)", "Il suo peccato ricorrente: lo disprezza e ne dipende. Nega di conoscerlo, finché regge."),
+        ],
+        "traits": {
+            "vizio": "Caramelle d'orzo (mugi-ame) dal barattolo sul banco; ne offre a tutti. Fuma solo quando è nervoso, di nascosto, sulla scala antincendio.",
+            "tic": "Si pulisce gli occhiali con un lembo del gilet quando mente o è a disagio.",
+            "oggetto": "La foto di Ayano bambina, al mare, nel portafoglio dietro la tessera.",
+            "gusto": "Bentō riscaldato al microonde del seminterrato, sempre da solo; tè d'orzo freddo d'estate.",
+            "extra": ("Rituale", "Ogni sera, ultimo a spegnere le luci dell'archivio. \"Qualcuno deve pur chiudere.\""),
         },
     },
 ]
@@ -384,7 +550,7 @@ def create_sheet(png):
     p_photo.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_photo.paragraph_format.space_before = Pt(0)
     p_photo.paragraph_format.space_after = Pt(0)
-    photo_path = OUT_DIR / png.get("photo", "")
+    photo_path = OUT_DIR / "Immagini" / png.get("photo", "")
     if photo_path.exists():
         run = p_photo.add_run()
         run.add_picture(str(photo_path), width=Cm(3.2))
@@ -531,14 +697,15 @@ def create_sheet(png):
 
     add_thin_separator(doc)
 
+    # ── GOU (solo per chi ne ha uno — eccezione: Gonda) ──
+    if png.get("gou"):
+        add_section_header(doc, "Gou — Il Debito", "業")
+        g = png["gou"]
+        add_gou_box(doc, g["name"], g["kanji"], g["desc"],
+                    g["attr"], g["cost"], g["success"], g["failure"])
+
     # ── SENMON ──
     add_section_header(doc, "Senmon — Specializzazioni", "専門")
-
-    p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(2)
-    p.paragraph_format.left_indent = Cm(0.3)
-    add_run(p, "I PNG notevoli non hanno Gou — il Gou è il dono dei protagonisti. Hanno mestiere.",
-            italic=True, size=8, color=MUTED)
 
     for s_name, s_chiave, s_desc in png["senmon"]:
         add_senmon_box(doc, s_name, s_chiave, s_desc)

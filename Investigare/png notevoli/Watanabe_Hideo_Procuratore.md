@@ -252,20 +252,29 @@ Keigo formale impeccabile. Frasi precise, mai approssimative. Usa il "lei" giuri
 | **Distacco** | 8 | Magistrale — non si fa coinvolgere |
 | **Pazienza** | 8 | Aspetta i tempi della giustizia |
 | **Silenzio** | 7 | Parla solo per dire cose precise |
-| **Lucidità** | 7 | Trent'anni di letture giudiziarie |
+| **Lucidità** | 8 | Trent'anni di letture giudiziarie: legge la legge come pochi |
 | **Ascolto** | 6 | Ascolta tutto, registra tutto |
 | **Presenza** | 6 | Autorità istituzionale, non carismatica |
 
-> **Distribuzione**: metodo diretto — 42 punti totali. Figura d'autorità: sopra il budget medio dei PG, voluto (vedi *I PNG Notevoli* nel Manuale GM)
+> **Distribuzione**: metodo diretto — 43 punti totali. Figura d'autorità: sopra il budget medio dei PG, voluto (vedi *I PNG Notevoli* nel Manuale GM)
 
 ### Ki 気
 **Ki iniziale**: 8 (Ascolto 6 + 2)
 
+### Gou 業
+
+**業 Lettura della Toga** 法衣の眼差し
+*Sa vedere se una richiesta sta in piedi giuridicamente prima ancora di finire di leggerla.*
+- **Attributo**: Lucidità (8) · **Costo**: 2 Ki
+- **Successo** (2d6 ≤ Lucidità): individua subito il punto debole di una richiesta e lo segnala — anche tramite Taniguchi. I PG sanno esattamente cosa correggere
+- **Fallimento**: non si pronuncia; valuta nei tempi standard, senza indicazioni
+- *(È il suo "aiutare senza aiutare": lo tira fuori solo con chi lavora in buona fede — vedi il suo Kage, il giudice Maezawa.)*
+
 ### Senmon 専門
 
-I PNG notevoli **non hanno Gou** — il Gou è il dono dei protagonisti. Watanabe ha il diritto:
+Watanabe ha:
 
-- **Leggi — diritto penale 2 — Esperto** *(Lucidità 7)*: vede il punto debole di una richiesta prima ancora di finire di leggerla. +2 ai tiri pertinenti
+- **Leggi — diritto penale 3 — Maestro** *(Lucidità 8)*: vede il punto debole di una richiesta prima ancora di finire di leggerla. Al grado Maestro (Conoscenza): **+3** ai tiri pertinenti
 - **Ricerca d'archivio 2 — Esperto** *(Pazienza 8)*: fascicoli, precedenti, giurisprudenza — trent'anni di letture giudiziarie. +2 ai tiri pertinenti
 
 > Quando ha En +1 con i PG e li vede lavorare in buona fede ma con errori formali, può segnalare — tramite Taniguchi — cosa correggere in una richiesta. Non è un potere: è il suo modo di "aiutare senza aiutare". *(Se un giorno diventasse un PG, sceglierebbe allora il suo Gou.)*

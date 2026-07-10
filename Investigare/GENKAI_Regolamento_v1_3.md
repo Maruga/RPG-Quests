@@ -196,7 +196,7 @@ Il Nasake **non si usa su se stessi** — si dona a un altro PG. Il PG deve farl
 
 Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle persone comuni. Non è un superpotere — è un talento raro, qualcosa che va oltre la normale competenza professionale. Ma ogni volta che lo usi, paghi un prezzo.
 
-**Ogni PG ha un solo Gou.** E il Gou appartiene ai protagonisti: i PNG — anche i notevoli — **non ne hanno**.
+**Ogni PG ha un solo Gou.** Il Gou è il dono dei **protagonisti**. Un **PNG** può avere **Senmon** senza problemi — di qualunque grado e quante ne servono: lo decide il GM in base al personaggio. Ma **di norma un PNG non ha un Gou** (resta cosa dei protagonisti, e semmai dei notevoli ricorrenti). Nessuna regola rigida: se al GM serve un PNG con dieci maestrie, o perfino con un Gou, è libero di darglielo.
 
 ### Meccanica
 

@@ -166,7 +166,7 @@ Il grado si sottrae dal dado dei tiri di combattimento pertinenti (−1/−2/−
 |---|---|---|
 | 1 | **Costi in punti Shugyō** dei tre gradi | ✅ Definiti: **9 / 19 / 39** — ritorno dalla decadenza: 20 |
 | 2 | **Nome definitivo**: Senmon 専門 o Tokui 得意 | Provvisorio: Senmon |
-| 3 | **Dotazione dei pre-generati** | ✅ Ogni pre-generato sceglie **1 Senmon di grado 1** tra le 3 opzioni sulla sua scheda (come per il Gou). I PNG notevoli non hanno Gou ma hanno Senmon, anche di grado 2 |
+| 3 | **Dotazione dei pre-generati** | ✅ Ogni pre-generato sceglie **1 Senmon di grado 1** tra le 3 opzioni. **PNG**: possono avere Senmon di qualunque grado e numero — lo decide il GM; **di norma niente Gou** (dono dei protagonisti/notevoli), ma il GM è libero di derogare |
 | 4 | **Tetto cumulo bonus** +4 per tiro | ✅ **Confermato** (regola attiva) |
 | 5 | **Numeri di usi** per voce (10/25 default) | Default fissato, deroghe per voce quando serve |
 | 6 | **Ritmo**: una nuova specializzazione per intervallo tra casi | ✅ **Confermata** (regola attiva) |
