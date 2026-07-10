@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Specializzazioni.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Specializzazioni"
+              "title": "PG_01_Yamamoto_Kenji"
+            }
+          },
+          {
+            "id": "e5f4eae32ac608d4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Investigare/pg/Immagini/PG_01_Yamamoto_Kenji_foto.png"
+              },
+              "icon": "lucide-image",
+              "title": "PG_01_Yamamoto_Kenji_foto"
             }
           }
         ]
@@ -225,19 +237,21 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "3895039331ab9e56",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Investigare/pg_yamamoto_foto-20260711-001444-829.jpg",
-    "Investigare/Materiale/Kyoto.png",
-    "Investigare/pg_yamamoto_momento-20260710-235527-598.jpg",
-    "Investigare/pg_yamamoto_momento_v2-20260711-000634-037.jpg",
+    "Investigare/Materiale/StradaNotturna.png",
+    "Investigare/Materiale/Squadra Investigatori.png",
+    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/Materiale/New Nambu M60.png",
+    "Investigare/Materiale/genkai_960x540.png",
+    "Investigare/Materiale/genkai_640x360.png",
     "Investigare/Materiale/logoNero.png",
     "Investigare/Materiale/logo.png",
-    "Investigare/Materiale/genkai_640x360.png",
-    "Investigare/Materiale/CrimeBoard.png",
-    "Investigare/Avventura Sake/copertina_sake.jpg",
-    "Investigare/Avventura Sake/copertina_sake_scena.jpg",
+    "Investigare/Materiale/copertina_kyoto.jpg",
+    "Investigare/Materiale/distretto_pg_esterno.jpg",
+    "Investigare/pg_yamamoto_foto-20260711-001444-829.jpg",
+    "Investigare/pg/Immagini/PG_01_Yamamoto_Kenji_foto.png",
+    "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.781771a6131a",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.2fd750b00648",
@@ -254,7 +268,6 @@
     "Investigare/Avventura Il Giudice/handout/Caso_Hayashi_Documenti.md.tmp.14376.e75fb9abe33b",
     "Investigare/Avventura Sake/MEMORY.md.tmp.14376.a1240b924bae",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
-    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
     "Investigare/Avventura QED/MEMORY.md",
     "Investigare/Avventura QED/INDICE GENERALE.md",
@@ -271,7 +284,6 @@
     "Investigare/Avventura QED/luoghi/Casa_di_Riposo_Rakusai.md",
     "Investigare/Avventura QED/png/Kamogawa_Mitsue_Il_Dilemma.md",
     "Investigare/Avventura QED/handout/Rapporto_Ito_Scena_6giu.md",
-    "Investigare/Avventura QED/luoghi/Stanza_della_Serie_Appartamento_Seki.md",
-    "Investigare/Avventura QED/png/Seki_Tomiko_Madre.md"
+    "Investigare/Avventura QED/luoghi/Stanza_della_Serie_Appartamento_Seki.md"
   ]
 }
