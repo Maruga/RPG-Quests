@@ -11,14 +11,12 @@
             "id": "3895039331ab9e56",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/GENKAI_Briefing_Giocatori.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/copertina_kyoto.jpg"
               },
-              "icon": "lucide-file",
-              "title": "GENKAI_Briefing_Giocatori"
+              "icon": "lucide-image",
+              "title": "copertina_kyoto"
             }
           }
         ]
@@ -227,7 +225,8 @@
   },
   "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Investigare/copertina_kyoto_genkai-20260710-202131-659.jpg",
+    "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/copertina_kyoto.jpg",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.781771a6131a",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.2fd750b00648",
     "Investigare/Avventura Sake/Storia Completa.md",
@@ -252,7 +251,6 @@
     "Investigare/png notevoli/PNG_01_Taniguchi_Osamu_foto.png",
     "Investigare/png notevoli/Immagini/PNG_02_Yamada_Tetsuo_foto.png",
     "Investigare/png notevoli/Immagini/PNG_01_Taniguchi_Osamu_foto.png",
-    "Investigare/png notevoli/PNG_04 — Watanabe Hideo.png",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
     "Investigare/Avventura QED/MEMORY.md",
