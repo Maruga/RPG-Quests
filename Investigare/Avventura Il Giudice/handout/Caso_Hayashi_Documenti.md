@@ -204,7 +204,7 @@ Un processo per omicidio può durare anni, ma questo ha avuto un pattern strano:
 I colleghi del giudice hanno notato il cambio di ritmo, ma non hanno approfondito.
 
 ### 2. Il testimone che cambia versione
-**Tanaka Jiro** - nella deposizione iniziale (16 settembre 1994) dice:
+**Nomura Isao** - nella deposizione iniziale (16 settembre 1994) dice:
 > "Non ho visto niente di preciso, ero dall'altra parte del cantiere."
 
 Al processo (1997) dice:
@@ -241,7 +241,7 @@ condannato ignorando tutte le prove a suo favore.
 
 Vi prego, indagate. Troverete che:
 
-1. Il testimone Tanaka Jiro ha cambiato versione tra 
+1. Il testimone Nomura Isao ha cambiato versione tra 
    la prima deposizione e il processo
    
 2. Mio marito aveva un alibi - era in banca alle 14:25
