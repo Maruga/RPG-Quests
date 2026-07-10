@@ -34,7 +34,8 @@
       "Bash(sed -i \"s/\\\\*\\\\*Eta\\\\*\\\\*: 42 | \\\\*\\\\*Lavoro\\\\*\\\\*: Consulente assicurativo, Nippon Life/\\\\*\\\\*Eta\\\\*\\\\*: 42 | \\\\*\\\\*Lavoro\\\\*\\\\*: Consulente assicurativo, Nippon Life\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: 12 anni alla Nippon Life, filiale Kyoto-Sakyo/\" 10_Sato_Nobuo.md)",
       "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 50 | \\\\*\\\\*Lavoro\\\\*\\\\*: Internista, Clinica Sakura, Sakyo-ku|\\\\*\\\\*Eta\\\\*\\\\*: 50 | \\\\*\\\\*Lavoro\\\\*\\\\*: Internista, Clinica Sakura, Sakyo-ku\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: 7 anni alla Clinica Sakura \\(dal 1990\\), medico di Morimoto dal 1990|\" 07_Dr_Endo_Hiroshi.md)",
       "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 30 | \\\\*\\\\*Lavoro\\\\*\\\\*: Dottoranda, terzo anno, Universita di Kyoto|\\\\*\\\\*Eta\\\\*\\\\*: 30 | \\\\*\\\\*Lavoro\\\\*\\\\*: Dottoranda, terzo anno, Universita di Kyoto\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: Assistente di Morimoto da 3 anni \\(inizio dottorato 1995\\)|\" 04_Nishimura_Rika.md)",
-      "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~20 anni all'universita, conosce Morimoto e Kuroda da quando sono arrivati|\" 11_Mori_Katsuo.md)"
+      "Bash(sed -i \"s|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento|\\\\*\\\\*Eta\\\\*\\\\*: 55 | \\\\*\\\\*Lavoro\\\\*\\\\*: Professore Associato, Storia dell'Arte Moderna, stesso dipartimento\\\\n\\\\*\\\\*Carriera\\\\*\\\\*: ~20 anni all'universita, conosce Morimoto e Kuroda da quando sono arrivati|\" 11_Mori_Katsuo.md)",
+      "mcp__bia-ws__bia_image_generate"
     ]
   }
 }
