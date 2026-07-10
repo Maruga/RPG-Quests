@@ -18,7 +18,6 @@ HANDOUT_DIR = Path(__file__).parent
 OUTPUT = HANDOUT_DIR / "Handout_Ultima_Cena_di_Tanaka.docx"
 
 FILES = [
-    "01_Planimetria_Villa.html",
     "02_Rapporto_Preliminare.html",
     "03_Lista_Presenti.html",
     "04_Ristrutturazione_Societaria.html",
@@ -707,7 +706,7 @@ def main():
     add_styled_paragraph(doc, "HANDOUT PER I GIOCATORI", bold=True, size=14,
                          color=(26, 26, 46),
                          align=WD_ALIGN_PARAGRAPH.CENTER, space_after=8)
-    add_styled_paragraph(doc, "GENKAI 限界 v1.2", size=11,
+    add_styled_paragraph(doc, "GENKAI 限界 v1.3", size=11,
                          color=(100, 100, 100),
                          align=WD_ALIGN_PARAGRAPH.CENTER, space_after=30)
 
@@ -717,7 +716,6 @@ def main():
                          align=WD_ALIGN_PARAGRAPH.CENTER, space_after=12)
 
     toc_items = [
-        "01 — Planimetria Villa Tanaka",
         "02 — Rapporto Preliminare di Intervento",
         "03 — Elenco Persone Presenti",
         "04 — Ristrutturazione Societaria Tanaka Cosmetics",
@@ -732,7 +730,6 @@ def main():
 
     # Process special handlers
     SPECIAL = {
-        "01_Planimetria_Villa.html": process_01_planimetria,
         "05_Agenda_Tanaka.html": process_05_agenda,
         "07_Menu_Kaiseki.html": process_07_menu,
         "08_Biglietto_Nishida.html": process_08_biglietto,

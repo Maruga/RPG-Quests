@@ -23,44 +23,108 @@
 | **Silenzio** | 4 | Normale |
 | **Lucidità** | 7 | Brillante — noti ogni dettaglio |
 | **Ascolto** | 4 | Normale |
-| **Presenza** | 6 | Sicuro di te, a volte troppo |
+| **Presenza** | 5 | Sicuro di te, a volte troppo |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
-### Opzione 1: Occhio della Gru
-*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
+### Opzione 1: Occhio della Gru 鶴の目
+*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci immediatamente il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a capire cosa significa
+- **Costo**: 3 Ki
+- **Vincolo**: devi dichiarare **dove** stai guardando
+- **Successo** (2d6 ≤ Lucidità): Trovi il dettaglio nascosto e capisci in che direzione punta
+- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
 
-### Opzione 2: Teatro delle Ombre
-*Guardando una scena, visualizzi come si sono svolti gli eventi.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa degli eventi
-- **Fallimento**: Vedi frammenti disconnessi, immagini sfocate
+> Dichiari "Guardo attorno alla finestra." Una fibra di tessuto sul bordo inferiore. Qualcuno è passato da qui — verso l'esterno.
 
-### Opzione 3: Cuore di Ghiaccio
+### Opzione 2: Cuore di Ghiaccio 氷の心
 *Ti distacchi completamente dalla situazione. Niente ti tocca.*
 - **Attributo**: Distacco
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Distacco): Per il resto della scena, agisci normalmente senza bisogno di tiri emotivi
-- **Fallimento**: Resti lucido ma la tensione si accumula - il prossimo tiro emotivo ha -2
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ Distacco): Il primo tiro emotivo della scena è **successo automatico**
+- **Fallimento**: +2 al prossimo tiro emotivo
+
+> Stai per entrare nell'obitorio. Un gelo professionale ti avvolge. Il primo impatto non ti tocca — il tiro di Distacco è superato automaticamente.
+
+### Opzione 3: La Brace che Resta 残り火
+*Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.*
+- **Attributo**: Ascolto o Distacco (a scelta — dual-attribute)
+- **Costo**: 3 Ki
+- **Vincolo**: devi essere sul luogo, entro 24-48 ore dal fatto
+- **Successo** (2d6 ≤ attributo scelto): Senti le emozioni dominanti e quante presenze diverse c'erano — distingui paura da rabbia da determinazione fredda
+- **Fallimento**: Un'impressione emotiva generale (terrore, tensione) senza distinzione tra le persone
+
+> Nella stanza dell'omicidio. Due presenze emotive. La prima: paura crescente, poi terrore — la vittima. La seconda: determinazione fredda, nessuna esitazione.
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Rilievi e fotografia *(Lucidità)*
+Documentare una scena è il tuo mestiere: luci, angoli, impronte, catena di custodia. Nessuno fotografa una stanza come te.
+
+### Opzione 2: Pedinamento *(Lucidità)*
+Distanze, riflessi nelle vetrine, cambi di marciapiede. Vedi ogni dettaglio — anche quando sei tu a seguire.
+
+### Opzione 3: Sport e scommesse *(Ascolto)*
+Baseball, sumo, corse. Quote, allibratori, risultati pilotati. Conosci quel mondo fin troppo bene — e lui conosce te.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 

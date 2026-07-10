@@ -1,6 +1,6 @@
 # L'ULTIMA CENA DI TANAKA — 田中の最後の晩餐
 
-> **Sistema:** GENKAI 限界 v1.2 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
+> **Sistema:** GENKAI 限界 v1.3 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
 link Telegram: https://t.me/GenkaiDashBoardBot
@@ -346,7 +346,7 @@ Sposato con Akemi, la sorella minore di Tanaka, da 10 anni. In azienda da 8 anni
 
 **Età:** 26 anni **Ruolo:** Ha ereditato la quota del padre (13%), laureato a Waseda **Carattere:** Intelligente ma inesperto, nervoso, fuori dal suo elemento **En iniziale:** -1 **Motivazione En:** Ha paura. Pensa che la polizia lo consideri sospetto perché ha portato l'incenso
 
-Primo contatto con l'azienda a livello di governance. Il padre è morto 6 mesi fa. Non ha esperienza nel settore cosmetico.
+Primo contatto con l'azienda a livello di governance. Il padre è morto a marzo di quest'anno (14 marzo 1997). Non ha esperienza nel settore cosmetico.
 
 **Cosa sa:**
 
@@ -597,7 +597,7 @@ Ha visto Ogawa tornare e sedersi come se nulla fosse. Ha visto Tanaka Yuki rient
 
 |PNG|En|Ruolo nell'indagine|
 |---|:-:|---|
-|Yamada Tetsuo (polizia)|+1|Briefing iniziale, esecutore ordini PG|
+|Yamada Tetsuo (polizia)|+2|Briefing iniziale, esecutore ordini PG|
 |Ito Daisuke (scientifica)|0|Analisi scientifiche, dati fattuali|
 |Ogawa Masaru|+1|IL COLPEVOLE — la gentilezza è la maschera|
 |Ogawa Reiko|0|Involontariamente rivela amarezza del marito|
@@ -912,4 +912,4 @@ Yamada è un esecutore — non serve tiro per dargli ordini. Ito analizza qualsi
 
 ---
 
-_L'Ultima Cena di Tanaka — GENKAI 限界 v1.2_
+_L'Ultima Cena di Tanaka — GENKAI 限界 v1.3_

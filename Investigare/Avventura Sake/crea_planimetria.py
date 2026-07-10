@@ -1,6 +1,7 @@
 """
 Genera la planimetria della Villa Tanaka — Piano Terra e Primo Piano.
-Output: villa.png nella cartella handout/
+Output: villa.png nella cartella handout/  (LEGACY — non più usato: le planimetrie
+attuali sono handout/Piano Terra.png e handout/Primo Piano.png, generate a parte)
 """
 
 from PIL import Image, ImageDraw, ImageFont

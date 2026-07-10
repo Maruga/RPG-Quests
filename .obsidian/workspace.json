@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
+                "file": "Investigare/Avventura Sake/Storia Completa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Watanabe_Hideo_Procuratore"
+              "title": "Storia Completa"
             }
           }
         ]
@@ -227,17 +227,19 @@
   },
   "active": "3895039331ab9e56",
   "lastOpenFiles": [
-    "Investigare/png notevoli/Gonda_Susumu_Archivista.md.tmp.14376.497510b818c9",
-    "Investigare/png notevoli/Ito_Daisuke_Scientifica.md.tmp.14376.3d33b2fd4b18",
-    "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md.tmp.14376.c6578a9db5f2",
-    "Investigare/png notevoli/Taniguchi_Osamu_Commissario.md.tmp.14376.38689102e2e2",
-    "Investigare/png notevoli/crea_scheda_png.py.tmp.14376.6b0a4b878525",
-    "Investigare/GENKAI_Specializzazioni.md.tmp.14376.dbdd0a35a232",
-    "Investigare/GENKAI_Manuale_GM.md.tmp.14376.5b7a9160c5d9",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.dd83d87bfbdd",
-    "Investigare/png notevoli/crea_scheda_png.py.tmp.14376.825e459f9337",
-    "Investigare/png notevoli/crea_scheda_png.py.tmp.14376.008b95b1067a",
-    "Investigare/png notevoli/crea_scheda_png.py.tmp.14376.c0383c6a1ada",
+    "Investigare/Avventura Sake/MEMORY.md.tmp.14376.a1240b924bae",
+    "Investigare/Avventura Sake/crea_planimetria.py.tmp.14376.1e0bb65fe357",
+    "Investigare/Avventura Sake/handout/crea_word.py.tmp.14376.2f85a6150013",
+    "Investigare/Avventura Sake/handout/crea_word.py.tmp.14376.c395ea4e2e15",
+    "Investigare/Avventura Sake/handout/crea_word.py.tmp.14376.9fc1dbebd3fd",
+    "Investigare/Avventura Sake/handout/crea_word.py.tmp.14376.1b393ecc149b",
+    "Investigare/Avventura Sake/MEMORY.md.tmp.14376.eff51b2558fa",
+    "Investigare/Avventura Sake/MEMORY.md.tmp.14376.973eb08b791e",
+    "Investigare/Avventura Sake/MEMORY.md.tmp.14376.292bf1b8d822",
+    "Investigare/Avventura Sake/CLAUDE.md.tmp.14376.47d3a2a17ad9",
+    "Investigare/Avventura Sake/CLAUDE.md.tmp.14376.8687b04a7511",
+    "Investigare/Avventura Sake/Storia Completa.md",
+    "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/Immagini/PNG_05_Gonda_Susumu_foto.png",
     "Investigare/png notevoli/Immagini/PNG_04_Watanabe_Hideo_foto.png",
     "Investigare/png notevoli/Immagini/PNG_03_Ito_Daisuke_foto.png",
@@ -246,7 +248,6 @@
     "Investigare/png notevoli/Immagini/PNG_01_Taniguchi_Osamu_foto.png",
     "Investigare/png notevoli/PNG_04 — Watanabe Hideo.png",
     "Investigare/png notevoli/PNG_05 — Gonda Susumu.png",
-    "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/PNG_03_Ito_Daisuke_foto.png",
     "Investigare/png notevoli/PNG_02_Yamada_Tetsuo_foto.png",
     "Investigare/Materiale/Scheda_Distretto.md",
@@ -271,7 +272,6 @@
     "Investigare/Avventura QED/png/Todoroki_Isamu_Lettere.md",
     "Investigare/Avventura QED/handout/Biglietti_Quadretti.md",
     "Investigare/Avventura QED/png/Tsujimura_Manabu_Ex_Allievo.md",
-    "Investigare/Avventura QED/luoghi/Vecchio_Meirinkan_Aula.md",
-    "Investigare/Avventura QED/png/Aikawa_Daichi_Figlio.md"
+    "Investigare/Avventura QED/luoghi/Vecchio_Meirinkan_Aula.md"
   ]
 }

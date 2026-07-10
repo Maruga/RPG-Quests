@@ -20,47 +20,112 @@
 |-----------|-------------|------|
 | **Distacco** | 6 | Veterano — sai distaccarti |
 | **Pazienza** | 4 | Normale |
-| **Silenzio** | 6 | Incassi e chiudi tutto dentro |
+| **Silenzio** | 5 | Incassi e chiudi tutto dentro |
 | **Lucidità** | 6 | Punto di forza — vedi i collegamenti |
 | **Ascolto** | 4 | Normale |
 | **Presenza** | 5 | Capo rispettato |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
-### Opzione 1: Teatro delle Ombre
-*Guardando una scena, visualizzi come si sono svolti gli eventi.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Vedi la sequenza completa - chi ha fatto cosa, in che ordine, con quali movimenti
-- **Fallimento**: Vedi frammenti disconnessi - immagini, gesti, ma non la sequenza chiara
-
-### Opzione 2: Pietra Fuori Posto
-*Percepisci immediatamente cosa non torna in un luogo o situazione.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Sai cosa stona e perché - il dettaglio e il suo significato
-- **Fallimento**: Senti che qualcosa è sbagliato, ma non riesci a definirlo con precisione
-
-### Opzione 3: Pugno di Ferro
-*La tua autorità diventa schiacciante. Il PNG sente il peso della tua posizione.*
+### Opzione 1: Pugno di Ferro 鉄拳
+*Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*
 - **Attributo**: Presenza
+- **Costo**: 3 Ki
+- **Successo** (2d6 ≤ Presenza): Il PNG cede su un punto importante specifico — ammette, collabora, si ritira
+- **Fallimento**: Il PNG è scosso e sotto pressione, ma non cede
+
+> Il capo che non molla. Dopo mezz'ora di interrogatorio, Hayashi abbassa gli occhi: "Va bene. Sì, lo sapevo dei debiti."
+
+### Opzione 2: Teatro delle Ombre 影芝居
+*Guardando una scena, vedi le sagome sbiadite di ciò che è accaduto.*
+- **Attributo**: Lucidità (requisito: Lucidità ≥ 7)
+- **Costo**: 4 Ki
+- **Vincolo**: devi essere sul luogo, entro 48 ore dal fatto
+- **Successo** (2d6 ≤ Lucidità): 2-3 momenti chiave come sagome sbiadite in movimento — figure semi-trasparenti, nell'ordine giusto, con vuoti tra loro. Non volti, non dettagli
+- **Fallimento**: Un singolo momento congelato — una sagoma, una posizione, senza prima né dopo
+
+> Chiudi gli occhi nell'appartamento. Sagome sbiadite: due figure in piedi, poi una a terra. La seconda si muove verso la finestra. L'assassino non è uscito dalla porta.
+
+### Opzione 3: Lo Spirito che Resta 残心
+*La consapevolezza che persiste dopo l'azione. Lo spirito del samurai che non cede.*
+- **Attributo**: Distacco o Pazienza (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Presenza): Il PNG cede su un punto importante - confessa, collabora, si ritira
-- **Fallimento**: Il PNG è scosso, intimidito, ma non cede completamente
+- **Vincolo**: attivabile solo quando sei a Ki 4 o 5
+- **Successo** (2d6 ≤ attributo scelto): Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli
+- **Fallimento**: Solo il 12 è protetto. L'11 resta Nami negativo
+- **Nota**: il costo di attivazione non innesca il Genkai — finché dura la scena resti in piedi anche a Ki ≤ 3 (con successo o fallimento). A fine scena, se il Ki è ancora ≤ 3, il Genkai scatta normalmente
+
+> Sei a Ki 4 dopo una giornata brutale. Il caso è al momento critico. Qualcosa dentro di te si irrigidisce come l'acciaio. Anche se i dadi vanno contro, non crolli.
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Ambienti yakuza *(Silenzio)*
+Diciott'anni di servizio a Kyoto: sai chi comanda in quali strade, come si parla a un kumichō senza perdere la faccia, e quando un silenzio è una minaccia.
+
+### Opzione 2: Stampa e media *(Presenza)*
+Sai come ragionano le redazioni, cosa fa notizia e cosa si può far aspettare. E hai un vecchio amico al Kyoto Shimbun.
+
+### Opzione 3: Lotta *(Presenza)*
+L'accademia vecchia scuola: pugni, prese, immobilizzazioni — l'arte di mettere a terra un uomo senza fargli male. Copre anche le tecniche d'arresto.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 
@@ -97,7 +162,7 @@ Sai che Noriko è stanca di coprire i tuoi errori. Sai che il rapporto con Takes
 | **Relazione** | Sorella minore, una volta eravate molto uniti |
 | **Stato attuale** | Frustrata, delusa da te |
 
-**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern..
+**Cosa vuole**: Che tu ammetta di avere un problema. Non si tratta di singoli episodi - si tratta del pattern.
 
 **Come si comporta**: Non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.
 

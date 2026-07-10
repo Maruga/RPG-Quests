@@ -1,5 +1,13 @@
 # MEMORY — Avventura Sake (L'Ultima Cena di Tanaka)
 
+## Audit completo (2026-07-10)
+Audit a 3 verificatori (PNG, luoghi, handout HTML) + allineamento regolamento. **Esito: avventura solida.** Luoghi puliti al 100%; PNG fedeli al canone (Ogawa non si tradisce, 5 depistaggi coerenti, chiavistello/EpiPen/3-vettori ok); handout non rivelano Ogawa, dati duri coerenti, 13/13 dark+print CSS.
+**Fix applicati:** versione v1.2→v1.3 (Storia, CLAUDE, crea_word.py); **5 copie PG in `PG/` aggiornate all'attuale** (erano ferme a "5 punti", ora 3 punti + Senmon + Modello B); En Yamada +1→+2 (tabella riepilogativa Storia allineata al testo/relazioni.txt); Sato Harumi 20→22 anni servizio (H03); padre Hayashi "6 mesi fa"→"a marzo (14/03/1997)" (Storia + scheda Hayashi); CLAUDE/MEMORY handout aggiornati (12 handout, planimetria 01a/01b, niente villa.png/banner rosso); crea_word.py: tolto riferimento a `01_Planimetria_Villa.html` inesistente; crea_planimetria.py marcato legacy.
+**Falso positivo mio:** il Gou "Ombra della Verità" ESISTE (è il Gou di Nakamura, 影の真実) — i riferimenti in Sake sono corretti, non toccati.
+**NON toccato per decisione utente:** le collisioni di nomi (PG Sato Yuki ↔ Sato Harumi + Tanaka Yuki; Nakamura PG↔Daisuke; Daisuke×2; Kenji; Watanabe Jun↔Hideo; Kazuo; Fujita↔Fujimoto). Da valutare in futuro.
+**Gap residuo minore (non bug):** crea_word.py compila solo H02-H08 (non include H09-H12, che sono standalone) — se un giorno serve il Word completo, vanno aggiunti.
+
+
 ## Handout — Stato attuale (aggiornato 2026-03-22)
 
 12 handout HTML in `handout/`. Tutti hanno dark mode (`prefers-color-scheme: dark`) e print CSS. Sfondo bianco per agenda e menu, gli altri variano.
@@ -8,7 +16,7 @@
 
 | # | File | Contenuto | Modifiche |
 |---|------|-----------|-----------|
-| 01 | `01_Planimetria_Villa.html` | Planimetria SVG della villa | Dark mode aggiunto. Riferimento a `villa.png` (minuscolo) |
+| 01a/01b | `01a_Planimetria_Piano_Terra.html` + `01b_Planimetria_Primo_Piano.html` | Planimetria divisa per piano | Due file (piano terra + primo piano); immagini `Piano Terra.png` / `Primo Piano.png`; dark mode |
 | 02 | `02_Rapporto_Preliminare.html` | Rapporto polizia preliminare | Sugimoto→Yamada. Dark mode aggiunto |
 | 03 | `03_Lista_Presenti.html` | Lista presenti alla festa | 7 età corrette, 3 kanji corretti (allineati a Storia Completa). Dark mode |
 | 04 | `04_Ristrutturazione_Societaria.html` | Documento ristrutturazione societaria | Dark mode aggiunto |
@@ -21,8 +29,8 @@
 | 11 | `11_Tabulati_Telefonici.html` | **NUOVO** — Tabulati telefonici villa | 19 chiamate (set-nov 1997), flag presenti, stile polizia |
 | 12 | `12_Referto_Medico.html` | **NUOVO** — Scheda allergologica Tanaka | Referto medico allergia salicilati, storia clinica, trigger, protocollo emergenza |
 
-### File rinominato
-- `Villa.png` → `villa.png` (case sensitivity cross-platform)
+### Planimetria (divisa per piano)
+- `01a_Planimetria_Piano_Terra.html` + `01b_Planimetria_Primo_Piano.html`, immagini `Piano Terra.png` / `Primo Piano.png`. Il vecchio `villa.png` non è più usato (lo script legacy `crea_planimetria.py` lo genera ancora, ma è orfano).
 
 ### Correzioni dati allineati a Storia Completa
 
@@ -81,7 +89,7 @@ Dati inventati coerenti: DOB Tanaka 08/03/1936, cartella HMC-1978-04825, reg. me
 ### Stile visivo handout
 
 - Documenti polizia: header navy scuro `#1a1a2e`, accenti oro `#c0a060`, font Courier New
-- Documento medico: header blu scuro `#1a3a5c`, accenti blu `#5a9cc5`, banner allergia rosso
+- Documento medico: header blu scuro `#1a3a5c`, accenti blu `#5a9cc5` (nessun banner rosso — design volutamente neutro, vedi H12)
 - Agenda: sfondo bianco, bordo sinistro marrone `#6b3000`, handwritten blu `#0000cc`
 - Menu: sfondo bianco, bordo decorativo oro, sigillo Tanaka
 - Lettere: carta elegante, script corsivo, framing come reperto polizia

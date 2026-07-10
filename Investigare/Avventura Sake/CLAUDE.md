@@ -8,7 +8,7 @@ Prima di fare modifiche che cambiano la trama, i personaggi, le relazioni o le m
 
 ## Contesto
 
-**L'Ultima Cena di Tanaka** — avventura investigativa one-shot per il sistema GENKAI 限界 v1.2. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
+**L'Ultima Cena di Tanaka** — avventura investigativa one-shot per il sistema GENKAI 限界 v1.3. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
 
 Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~890 righe).
 
@@ -58,15 +58,18 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 
 ## Handout
 
-10 handout HTML in `handout/`. Dettagli completi in `MEMORY.md`.
+12 handout HTML in `handout/`. Dettagli completi in `MEMORY.md`.
 
-- **H01-H04**: Planimetria, rapporto preliminare, lista presenti, ristrutturazione societaria
+- **H01a / H01b**: Planimetria — piano terra (`01a`) e primo piano (`01b`); immagini `Piano Terra.png` / `Primo Piano.png`
+- **H02-H04**: Rapporto preliminare, lista presenti, ristrutturazione societaria
 - **H05**: Agenda Tanaka — 4 pagine (Set-Dic), sfondo bianco, colori forti, biglietto Nishida incollato
 - **H06**: Referti scientifica — 4 pagine standalone (Sapone, Incenso, Confronto, Sake), consegnabili singolarmente
 - **H07**: Menu kaiseki — sfondo bianco, una pagina compatta
 - **H08**: Biglietto da visita Nishida (meishi)
 - **H09**: Lettere Nakamura→Yuki (red herring, reperto polizia Allegato D)
 - **H10**: Rapporto PI Nishida su Hayashi (tutto pulito)
+- **H11**: Tabulati telefonici villa — 19 chiamate, rinforza i red herring Nakamura/Nishida
+- **H12**: Referto medico allergologico Tanaka (salicilati; wintergreen/alcol presenti ma non evidenziati)
 
 Tutti hanno dark mode CSS (`prefers-color-scheme: dark`) e print CSS (sempre light). Ogni handout funziona standalone.
 

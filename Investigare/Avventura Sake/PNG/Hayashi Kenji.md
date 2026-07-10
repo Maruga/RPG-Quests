@@ -6,7 +6,7 @@
 **En:** -1
 **Motivazione En:** Ha paura. Pensa che la polizia lo consideri sospetto perché ha portato l'incenso
 
-Primo contatto con l'azienda a livello di governance. Il padre è morto 6 mesi fa. Non ha esperienza nel settore cosmetico.
+Primo contatto con l'azienda a livello di governance. Il padre è morto a marzo di quest'anno (14 marzo 1997). Non ha esperienza nel settore cosmetico.
 
 ## Cosa sa
 

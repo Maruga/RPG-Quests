@@ -21,46 +21,109 @@
 | **Distacco** | 4 | Normale |
 | **Pazienza** | 4 | Normale |
 | **Silenzio** | 7 | Osservi tutto senza reagire |
-| **Lucidità** | 6 | Solida capacità d'analisi |
+| **Lucidità** | 5 | Analisi ordinata, senza lampi |
 | **Ascolto** | 6 | Formazione psicologica — leggi le persone |
 | **Presenza** | 4 | Preferisci restare in ombra |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
-### Opzione 1: Specchio dell'Anima
+### Opzione 1: Specchio dell'Anima 魂の鏡
 *Vedi oltre la maschera. Senti le emozioni vere di una persona.*
-- **Attributo**: Ascolto
+- **Attributo**: Silenzio
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Ascolto): Senti l'emozione dominante e capisci perché la prova
+- **Successo** (2d6 ≤ Silenzio): Senti l'emozione dominante e capisci perché la prova
 - **Fallimento**: Senti l'emozione, ma non la sua origine
 
-### Opzione 2: Tocco del Medico
+> La vedova ti ringrazia per le condoglianze. Sotto il dolore c'è sollievo. Non è il dolore di chi ha perso qualcuno che amava davvero.
+
+### Opzione 2: L'Eco della Montagna 山彦
+*Le parole non scompaiono. Nel tuo silenzio, le senti.*
+- **Attributo**: Silenzio (requisito: Silenzio ≥ 7)
+- **Costo**: 4 Ki
+- **Vincolo**: devi essere sul luogo, entro 48 ore dal fatto
+- **Successo** (2d6 ≤ Silenzio): Frammenti di frasi riconoscibili — parole chiave, toni (rabbia, paura, supplica), il numero di voci presenti
+- **Fallimento**: Suoni indistinti — un tono emotivo generale senza parole riconoscibili
+
+> Nell'ufficio dell'ultima discussione. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
+
+### Opzione 3: Tocco del Medico 医者の手
 *Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
 - **Attributo**: Lucidità
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Dettagli precisi - tipo di trauma, natura della paura, segni di stress cronico
+- **Successo** (2d6 ≤ Lucidità): Dettagli precisi — tipo di trauma, natura della paura, segni di stress cronico
 - **Fallimento**: Capisci che qualcosa non va, ma non riesci a definirlo con precisione
 
-### Opzione 3: Sussurro della Sera
-*La tua voce calma. Le persone si tranquillizzano in tua presenza.*
-- **Attributo**: Silenzio
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Silenzio): La persona si calma completamente e inizia a fidarsi di te
-- **Fallimento**: La persona si calma, ma resta guardinga e sospettosa
+> Un testimone è a disagio. "Le mani tremano — non è paura, è astinenza. Non beve da almeno due giorni."
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Copertura e travestimento *(Silenzio)*
+Reggere un ruolo è psicologia applicata: postura, voce, storia di copertura. Sparire in un personaggio ti riesce naturale.
+
+### Opzione 2: Mondo della notte *(Presenza)*
+Bar, hostess club, mizu shōbai: i posti dove le maschere cadono. Sai come ci si muove, chi tiene i conti e chi tiene i segreti.
+
+### Opzione 3: Arte e antiquariato *(Lucidità)*
+Epoche, autori, falsi. La tua estetica coltivata — e il mercato, legale e non, che ci gira attorno.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatrice in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei una tiratrice scelta |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 

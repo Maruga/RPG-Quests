@@ -23,44 +23,109 @@
 | **Silenzio** | 4 | Tendi a parlare troppo quando sei nervoso |
 | **Lucidità** | 7 | Eccellente — mente analitica formidabile |
 | **Ascolto** | 5 | Attento ai dettagli |
-| **Presenza** | 5 | Entusiasta, energia contagiosa |
+| **Presenza** | 4 | Il più giovane — ti prendono sul serio a fatica |
 
-> **PUNTI DA ASSEGNARE**: Hai **5 punti** da distribuire tra gli attributi.
+> **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo
 > - Nessun attributo può superare 8
 
 ---
 
-## KI (TENUTA)
+## KI (ENERGIA VITALE)
 
-**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 1d6
+**Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
+
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+
+---
+
+## NASAKE 情け (COMPASSIONE)
+
+> *情けは人の為ならず — "La compassione non è solo per gli altri."*
+
+Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applicare il bonus — Ki al massimo e attributo al massimo consentito — il punto che andrebbe perso viene conservato nel **Nasake**.
+
+- Contiene al massimo **1 Ki**
+- **Non si usa su se stessi** — si dona a un altro PG interpretando la scena
+- Si perde a fine sessione se non usato
 
 ---
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti:
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
 
-### Opzione 1: Palazzo della Memoria
+### Opzione 1: Palazzo della Memoria 記憶の宮殿
 *Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
-- **Attributo**: Lucidità
+- **Attributo**: Lucidità o Pazienza (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
+- **Vincolo**: devi specificare cosa stai cercando di ricordare
+- **Successo** (2d6 ≤ attributo scelto): Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente
 - **Fallimento**: Ricordi il dettaglio principale, ma sfocato o incompleto
 
-### Opzione 2: Occhio della Gru
-*Vedi ciò che altri non vedono - il dettaglio che cambia tutto.*
-- **Attributo**: Lucidità
-- **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Noti il dettaglio nascosto e ne capisci il significato
-- **Fallimento**: Vedi qualcosa di anomalo, ma non riesci a interpretarlo
+> Tre giorni fa hai visto un documento sulla scrivania della vittima. "Era un estratto conto. E il logo — non era della banca abituale della vittima."
 
-### Opzione 3: Pietra Fuori Posto
-*Percepisci immediatamente cosa non torna - tracce, residui, anomalie.*
+### Opzione 2: Occhio della Gru 鶴の目
+*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
 - **Attributo**: Lucidità
+- **Costo**: 3 Ki
+- **Vincolo**: devi dichiarare **dove** stai guardando
+- **Successo** (2d6 ≤ Lucidità): Trovi il dettaglio nascosto e capisci in che direzione punta
+- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
+
+> In laboratorio, dichiari "Guardo i residui sul colletto." Una particella che non c'entra con l'ambiente — industriale, non domestica. La vittima è stata in un posto diverso da quello dichiarato.
+
+### Opzione 3: L'Istante della Caduta 散り際
+*Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
+- **Attributo**: Pazienza o Ascolto (a scelta — dual-attribute)
 - **Costo**: 2 Ki
-- **Successo** (2d6 ≤ Lucidità): Identifichi l'anomalia e la sua probabile origine
-- **Fallimento**: Senti che qualcosa non quadra, ma non riesci a isolare cosa
+- **Meccanica**: stato di allerta per il resto della giornata. Si attiva automaticamente la prima volta che qualcosa sta per svanire. Il tiro si fa in quel momento
+- **Successo** (2d6 ≤ attributo scelto): Sai cosa sta per svanire e hai un istante per agire
+- **Fallimento**: Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
+
+> Attivi L'Istante della Caduta la mattina. Tre ore dopo, durante un'analisi, il GM dice: "L'Istante della Caduta si attiva. Il campione sta degradandosi — hai ancora pochi minuti per l'analisi chiave prima che sia inutilizzabile."
+
+---
+
+## SENMON (SPECIALIZZAZIONI)
+
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+
+### Opzione 1: Medicinali e veleni *(Lucidità)*
+La tua laurea: farmaci, dosaggi, interazioni, sostanze. Riconosci un'anomalia chimica prima ancora che il laboratorio la confermi.
+
+### Opzione 2: Computer e reti *(Lucidità)*
+Sistemi, archivi digitali, recupero dati. È il 1997: sei uno dei pochi in centrale che ci capisce qualcosa — e il tuo migliore amico fa questo di mestiere.
+
+### Opzione 3: Medicina *(Lucidità)*
+Anatomia, traumi, referti. Il linguaggio del medico legale non ha segreti per te.
+
+**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
+*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
+
+---
+
+## EQUIPAGGIAMENTO DI SERVIZIO
+
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+
+| Dove | Cosa | In gioco |
+|---|---|---|
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità, danno +3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | −2 al dado di difesa contro armi da fuoco (operazioni a rischio) |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio, danno +2 |
+| Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
+| — | **A mani nude** (Lotta) | Presenza, danno +1 — prese e immobilizzazioni d'accademia |
+
+---
+
+## SHUGYŌ (CRESCITA)
+
+**Punti Shugyō**: _______________
+
+Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
+
+Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
 
 ---
 
