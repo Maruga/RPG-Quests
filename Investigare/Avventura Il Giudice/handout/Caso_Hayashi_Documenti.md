@@ -153,7 +153,7 @@ Documenti recuperabili durante l'indagine sulla corruzione del giudice.
 ║ 2. Tracce ematiche sui vestiti dell'imputato                         ║
 ║    (compatibili con la vittima)                                      ║
 ║                                                                      ║
-║ 3. Testimonianza di SATO Yuki (vicina di casa):                      ║
+║ 3. Testimonianza di MAEDA Kimiko (vicina di casa):                      ║
 ║    "Li ho sentiti litigare il giorno prima per questioni             ║
 ║    di soldi."                                                        ║
 ║                                                                      ║
