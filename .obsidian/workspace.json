@@ -11,12 +11,14 @@
             "id": "3895039331ab9e56",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/copertina_kyoto.jpg"
+                "file": "Investigare/GENKAI_Specializzazioni.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "copertina_kyoto"
+              "icon": "lucide-file",
+              "title": "GENKAI_Specializzazioni"
             }
           }
         ]
@@ -223,19 +225,26 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "3895039331ab9e56",
   "lastOpenFiles": [
+    "Investigare/pg_yamamoto_foto-20260711-001444-829.jpg",
+    "Investigare/Materiale/Kyoto.png",
+    "Investigare/pg_yamamoto_momento-20260710-235527-598.jpg",
+    "Investigare/pg_yamamoto_momento_v2-20260711-000634-037.jpg",
+    "Investigare/Materiale/New Nambu M60.png",
+    "Investigare/Materiale/logoNero.png",
+    "Investigare/Materiale/logo.png",
+    "Investigare/Materiale/genkai_640x360.png",
+    "Investigare/Materiale/CrimeBoard.png",
+    "Investigare/Avventura Sake/copertina_sake.jpg",
+    "Investigare/Avventura Sake/copertina_sake_scena.jpg",
     "Investigare/GENKAI_Briefing_Giocatori.md",
-    "Investigare/copertina_kyoto.jpg",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.781771a6131a",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.2fd750b00648",
     "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
     "Investigare/Avventura Sake/Storia Completa.pdf",
-    "Investigare/Avventura Sake/QR_Telegram_Bot.png",
     "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
-    "Investigare/Avventura Sake/handout/Primo Piano.png",
-    "Investigare/Avventura Sake/handout/Piano Terra.png",
     "Investigare/GENKAI_Registro_Nomi.md.tmp.14376.17ede21367cc",
     "Investigare/GENKAI_Registro_Nomi.md.tmp.14376.96ac842016f9",
     "Investigare/Avventura Il Giudice/handout/html/11_Caso_Hayashi_Documenti.html.tmp.14376.0e6ec66a9392",
@@ -245,12 +254,6 @@
     "Investigare/Avventura Il Giudice/handout/Caso_Hayashi_Documenti.md.tmp.14376.e75fb9abe33b",
     "Investigare/Avventura Sake/MEMORY.md.tmp.14376.a1240b924bae",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
-    "Investigare/png notevoli/Immagini/PNG_05_Gonda_Susumu_foto.png",
-    "Investigare/png notevoli/Immagini/PNG_04_Watanabe_Hideo_foto.png",
-    "Investigare/png notevoli/Immagini/PNG_03_Ito_Daisuke_foto.png",
-    "Investigare/png notevoli/PNG_01_Taniguchi_Osamu_foto.png",
-    "Investigare/png notevoli/Immagini/PNG_02_Yamada_Tetsuo_foto.png",
-    "Investigare/png notevoli/Immagini/PNG_01_Taniguchi_Osamu_foto.png",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
     "Investigare/Avventura QED/MEMORY.md",
@@ -269,7 +272,6 @@
     "Investigare/Avventura QED/png/Kamogawa_Mitsue_Il_Dilemma.md",
     "Investigare/Avventura QED/handout/Rapporto_Ito_Scena_6giu.md",
     "Investigare/Avventura QED/luoghi/Stanza_della_Serie_Appartamento_Seki.md",
-    "Investigare/Avventura QED/png/Seki_Tomiko_Madre.md",
-    "Investigare/Avventura QED/png/Todoroki_Isamu_Lettere.md"
+    "Investigare/Avventura QED/png/Seki_Tomiko_Madre.md"
   ]
 }
