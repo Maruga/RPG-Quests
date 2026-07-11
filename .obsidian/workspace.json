@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3cb996cb4d477e3b",
+        "id": "d0e1f72db3e33a85",
         "type": "tabs",
         "children": [
           {
-            "id": "3895039331ab9e56",
+            "id": "8ff47a252fc8dbb1",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Investigare/Materiale/koban_periferia.png"
-              },
-              "icon": "lucide-image",
-              "title": "koban_periferia"
-            }
-          },
-          {
-            "id": "e5f4eae32ac608d4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Investigare/pg/Immagini/PG_01_Yamamoto_Kenji_foto.png"
-              },
-              "icon": "lucide-image",
-              "title": "PG_01_Yamamoto_Kenji_foto"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -235,19 +221,23 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
-    "Investigare/Materiale/sala_interrogatorio_Koban.jpg",
-    "Investigare/Materiale/koban_periferia.png",
-    "Investigare/Materiale/Sala_interrogatorio_Tokyo.png",
-    "Investigare/Materiale/sala_interrogatorio_kyoto_pg.png",
-    "Investigare/Materiale/sala_interrogatorio_generica.png",
-    "Investigare/Materiale/copertina_kyoto.jpg",
+    "Investigare/pg/Immagini/PG_01_Yamamoto_Kenji_foto.png",
+    "Investigare/png notevoli/Immagini/PNG_01_Taniguchi_Osamu_foto.png",
+    "Investigare/png notevoli/Immagini/PNG_02_Yamada_Tetsuo_foto.png",
+    "Investigare/png notevoli/Immagini/PNG_03_Ito_Daisuke_foto.png",
+    "Investigare/png notevoli/Immagini/PNG_04_Watanabe_Hideo_foto.png",
+    "Investigare/png notevoli/Immagini/PNG_05_Gonda_Susumu_foto.png",
+    "Investigare/png notevoli/Taniguchi_Osamu_Commissario.md",
+    "Investigare/png notevoli/token_prompts.md",
+    "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
+    "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
     "Investigare/Materiale/bacheca_polizia_anni90.jpg",
-    "Investigare/Materiale/distretto_interno_sala_secondaria.png",
-    "Investigare/Materiale/distretto_pg_esterno.jpg",
-    "Investigare/Materiale/distretto_interno_sala_principale.png",
-    "Investigare/Materiale/genkai_640x360.png",
+    "Investigare/Materiale/copertina_kyoto.jpg",
+    "Investigare/Materiale/CrimeBoard.png",
+    "Investigare/Materiale/CrimeBoard.jpg",
+    "Investigare/Materiale/distretto_interno_scrivanie_pg.jpg",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
@@ -267,7 +257,6 @@
     "Investigare/GENKAI_Registro_Nomi.md.tmp.14376.469e2bd26d13",
     "Investigare/Avventura Il Giudice/handout/Caso_Hayashi_Documenti.md.tmp.14376.e75fb9abe33b",
     "Investigare/Avventura Sake/MEMORY.md.tmp.14376.a1240b924bae",
-    "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
     "Investigare/Avventura QED/MEMORY.md",
     "Investigare/Avventura QED/INDICE GENERALE.md",
@@ -279,9 +268,6 @@
     "Investigare/Avventura QED/handout/Registro_Delta.md",
     "Investigare/Avventura QED/png/Kamogawa_Takumi_Hikikomori.md",
     "Investigare/Avventura QED/luoghi/Ospedale_Fukami.md",
-    "Investigare/Avventura QED/handout/Articoli_Mizuno.md",
-    "Investigare/Avventura QED/png/Hayakawa_Tatsuya_Cronista.md",
-    "Investigare/Avventura QED/luoghi/Casa_di_Riposo_Rakusai.md",
-    "Investigare/Avventura QED/png/Kamogawa_Mitsue_Il_Dilemma.md"
+    "Investigare/Avventura QED/handout/Articoli_Mizuno.md"
   ]
 }
