@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Investigare/Materiale/Libretto/izakaya_esterno.jpg"
+                "file": "Investigare/Materiale/Libretto/A2_Honda_Ryota.png"
               },
               "icon": "lucide-image",
-              "title": "izakaya_esterno"
+              "title": "A2_Honda_Ryota"
             }
           }
         ]
@@ -223,19 +223,19 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
-    "Investigare/Materiale/Libretto/amada_Tetsuo.png",
-    "Investigare/Materiale/Libretto/ChatGPT Image 11 lug 2026, 20_36_37.png",
-    "Investigare/Materiale/Libretto/kamo_tramonto.jpg",
-    "Investigare/Materiale/Libretto/koban_chuzaisho.png",
-    "Investigare/Materiale/Libretto/koban_paese.png",
-    "Investigare/Materiale/Libretto/koban_periferia.png",
-    "Investigare/Materiale/Libretto/koban_quartiere.png",
-    "Investigare/Materiale/Libretto/lavagna_caso.jpg",
-    "Investigare/Materiale/Libretto/logoNero.png",
-    "Investigare/Materiale/Libretto/New Nambu M60.png",
-    "Investigare/Materiale/Libretto/premio_pg.png",
+    "Investigare/Materiale/Libretto/Libretto_Squadra.pptx",
+    "Investigare/Materiale/Libretto/Scrivania.png",
+    "Investigare/Materiale/Libretto/lavagna del caso.png",
+    "Investigare/Materiale/Libretto/Via commerciale coperta.png",
+    "Investigare/Materiale/Libretto/Incrocio urbano.png",
+    "Investigare/Materiale/Libretto/fiume Kamo.png",
+    "Investigare/Materiale/Libretto/Periferia operaia.png",
+    "Investigare/Materiale/Libretto/Vicolo urbano sotto la pioggia.png",
+    "Investigare/Materiale/Libretto/Notte industriale solitaria al neon.png",
+    "Investigare/Materiale/Libretto/sottopasso degradato.png",
+    "Investigare/Materiale/Libretto/cena_pg.png",
     "Investigare/Materiale/Libretto/libretto_squadra.html",
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/png notevoli/Gonda_Susumu_Archivista.md",
