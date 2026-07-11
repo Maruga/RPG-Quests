@@ -11,14 +11,12 @@
             "id": "3895039331ab9e56",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Materiale/distretto_pg_esterno.jpg"
               },
-              "icon": "lucide-file",
-              "title": "PG_01_Yamamoto_Kenji"
+              "icon": "lucide-image",
+              "title": "distretto_pg_esterno"
             }
           },
           {
@@ -237,22 +235,23 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "3895039331ab9e56",
   "lastOpenFiles": [
-    "Investigare/Materiale/StradaNotturna.png",
-    "Investigare/Materiale/Squadra Investigatori.png",
-    "Investigare/Materiale/Scheda_Distretto.md",
-    "Investigare/Materiale/New Nambu M60.png",
-    "Investigare/Materiale/genkai_960x540.png",
-    "Investigare/Materiale/genkai_640x360.png",
     "Investigare/Materiale/logoNero.png",
-    "Investigare/Materiale/logo.png",
+    "Investigare/Materiale/New Nambu M60.png",
+    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/Materiale/copertina_kyoto.jpg",
+    "Investigare/Materiale/CrimeBoard.png",
+    "Investigare/Materiale/CrimeBoard.jpg",
     "Investigare/Materiale/distretto_pg_esterno.jpg",
-    "Investigare/pg_yamamoto_foto-20260711-001444-829.jpg",
-    "Investigare/pg/Immagini/PG_01_Yamamoto_Kenji_foto.png",
-    "Investigare/GENKAI_Specializzazioni.md",
+    "Investigare/Materiale/genkai_640x360.png",
+    "Investigare/Materiale/genkai_960x540.png",
+    "Investigare/Materiale/Kyoto.png",
+    "Investigare/Materiale/Squadra Investigatori.png",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.781771a6131a",
     "Investigare/Avventura Sake/handout/10_Rapporto_Nishida.html.tmp.14376.2fd750b00648",
     "Investigare/Avventura Sake/Storia Completa.md",
@@ -282,8 +281,6 @@
     "Investigare/Avventura QED/handout/Articoli_Mizuno.md",
     "Investigare/Avventura QED/png/Hayakawa_Tatsuya_Cronista.md",
     "Investigare/Avventura QED/luoghi/Casa_di_Riposo_Rakusai.md",
-    "Investigare/Avventura QED/png/Kamogawa_Mitsue_Il_Dilemma.md",
-    "Investigare/Avventura QED/handout/Rapporto_Ito_Scena_6giu.md",
-    "Investigare/Avventura QED/luoghi/Stanza_della_Serie_Appartamento_Seki.md"
+    "Investigare/Avventura QED/png/Kamogawa_Mitsue_Il_Dilemma.md"
   ]
 }
