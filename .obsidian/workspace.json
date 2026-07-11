@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Investigare/Materiale/distretto_pg_esterno.jpg"
+                "file": "Investigare/Materiale/koban_periferia.png"
               },
               "icon": "lucide-image",
-              "title": "distretto_pg_esterno"
+              "title": "koban_periferia"
             }
           },
           {
@@ -235,19 +235,20 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "3895039331ab9e56",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Investigare/Materiale/logoNero.png",
-    "Investigare/Materiale/New Nambu M60.png",
-    "Investigare/Materiale/Scheda_Distretto.md",
+    "Investigare/Materiale/sala_interrogatorio_Koban.jpg",
+    "Investigare/Materiale/koban_periferia.png",
+    "Investigare/Materiale/Sala_interrogatorio_Tokyo.png",
+    "Investigare/Materiale/sala_interrogatorio_kyoto_pg.png",
+    "Investigare/Materiale/sala_interrogatorio_generica.png",
     "Investigare/Materiale/copertina_kyoto.jpg",
-    "Investigare/Materiale/CrimeBoard.png",
-    "Investigare/Materiale/CrimeBoard.jpg",
+    "Investigare/Materiale/bacheca_polizia_anni90.jpg",
+    "Investigare/Materiale/distretto_interno_sala_secondaria.png",
     "Investigare/Materiale/distretto_pg_esterno.jpg",
+    "Investigare/Materiale/distretto_interno_sala_principale.png",
     "Investigare/Materiale/genkai_640x360.png",
-    "Investigare/Materiale/genkai_960x540.png",
-    "Investigare/Materiale/Kyoto.png",
-    "Investigare/Materiale/Squadra Investigatori.png",
+    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
