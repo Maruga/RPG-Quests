@@ -11,12 +11,14 @@
             "id": "8ff47a252fc8dbb1",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Materiale/Libretto/compleanno_mensa.png"
+                "file": "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "compleanno_mensa"
+              "icon": "lucide-file",
+              "title": "Kage_01_Yamamoto_Kenji"
             }
           }
         ]
@@ -223,10 +225,23 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
-    "Investigare/Materiale/Libretto/~$Libretto_Squadra.pptx",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
+    "Investigare/Materiale/StradaNotturna.png",
+    "Investigare/Materiale/Scheda_Distretto.md",
+    "Investigare/Materiale/Sala_interrogatorio_Tokyo.png",
+    "Investigare/Materiale/sala_interrogatorio_kyoto_pg.png",
+    "Investigare/Materiale/sala_interrogatorio_Koban.jpg",
+    "Investigare/Materiale/sala_interrogatorio_generica.png",
+    "Investigare/Materiale/logo.png",
+    "Investigare/Materiale/genkai_logo_transparent.png",
+    "Investigare/Materiale/Kyoto.png",
+    "Investigare/Materiale/genkai_960x540.png",
+    "Investigare/Materiale/genkai_640x360.png",
     "Investigare/Materiale/Libretto/Libretto_Squadra.pdf",
+    "Investigare/Materiale/Libretto/mso659F.tmp",
+    "Investigare/Materiale/Libretto/~$Libretto_Squadra.pptx",
     "Investigare/Materiale/Libretto/mso51B8.tmp",
     "Investigare/Materiale/Libretto/ppt879.tmp",
     "Investigare/Materiale/Libretto/pptDC18.tmp",
@@ -234,21 +249,8 @@
     "Investigare/Materiale/Libretto/pptD78F.tmp",
     "Investigare/Materiale/Libretto/pptEABD.tmp",
     "Investigare/Materiale/Libretto/ppt62B4.tmp",
-    "Investigare/Materiale/Libretto/pptA232.tmp",
-    "Investigare/Materiale/Libretto/ppt7AB.tmp",
-    "Investigare/Materiale/Libretto/timbro_fine_preview.png",
-    "Investigare/Materiale/Libretto/timbro_fine.png",
-    "Investigare/Materiale/Libretto/kanji_fine.png",
-    "Investigare/Materiale/Libretto/ChatGPT Image 12 lug 2026, 03_32_48.png",
-    "Investigare/Materiale/Libretto/PaginaAlbumPari.png",
-    "Investigare/Materiale/Libretto/PaginaAlbumDispari.png",
-    "Investigare/Materiale/Libretto/PaginaAlbum02.png",
-    "Investigare/Materiale/Libretto/ChatGPT Image 12 lug 2026, 03_20_35.png",
-    "Investigare/Materiale/Libretto/PaginaAlbum.png",
-    "Investigare/Materiale/Libretto/panoramica_kyoto_tramonto.jpg",
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/png notevoli/Gonda_Susumu_Archivista.md",
-    "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/png notevoli/token_prompts.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
@@ -261,7 +263,6 @@
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Registro_Nomi.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
