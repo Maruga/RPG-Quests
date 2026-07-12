@@ -51,7 +51,7 @@ Il pericolo vero però non è Ono: è dove Kazuo va a prendere i soldi **quando 
 - **D4 Kirino incastrato** → l'usura è reato. Ma serve Kazuo che testimoni — e Kazuo ha paura. Arco lungo, da intrecciare con un caso
 - **La scorciatoia** *(aspettarla, mai offrirla)* → pagare Kirino coi soldi di casa senza dire niente, o "sistemare" il fermo di Kazuo da dentro. **Shimi** — e Kirino, che annusa le debolezze per mestiere, lo saprà usare
 
-**Risoluzione completa**: D1 su più casi + una tra D2/D3/D4 + niente segreti aperti con Harumi → +1 scheda o 5 Shugyō, soroban a 6. Nuovo Kage co-creato (una pista: Kazuo che *ce la fa* e ha bisogno di un garante — fidarsi di nuovo è il Kage successivo).
+**Risoluzione completa**: D1 su più casi + una tra D2/D3/D4 + niente segreti aperti con Harumi → 8 Shugyō, soroban a 6. Nuovo Kage co-creato (una pista: Kazuo che *ce la fa* e ha bisogno di un garante — fidarsi di nuovo è il Kage successivo).
 
 ---
 ---

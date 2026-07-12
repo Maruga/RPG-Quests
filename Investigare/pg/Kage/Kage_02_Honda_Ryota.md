@@ -52,7 +52,7 @@ Honda non ha un problema di soldi. Ha un problema **col gioco** — i soldi sono
 - **D4 Smettere** *(obbligatoria)* → la dipendenza si gioca: una tentazione a caso (sala pachinko, dritta "sicura", quote sbagliate). Più scene rette su più casi = radice affrontata
 - **La scorciatoia** *(mai offrirla: aspettarla)* → soldi sporchi per chiudere. Funziona. **Shimi grave** — e tra 1-3 casi, su Tiro 2-4: Copione H-5. Il Kage nuovo è peggio del vecchio
 
-**Risoluzione completa**: D4 + una via tra D1/D2/D3 + Shimi chiuse → +1 scheda o 5 Shugyō, soroban a 6 per un caso, nuovo Kage co-creato.
+**Risoluzione completa**: D4 + una via tra D1/D2/D3 + Shimi chiuse → 8 Shugyō, soroban a 6 per un caso, nuovo Kage co-creato.
 
 ---
 ---

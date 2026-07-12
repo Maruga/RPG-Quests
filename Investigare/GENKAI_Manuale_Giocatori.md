@@ -473,8 +473,8 @@ Definisci il tuo Kage in creazione. Sai cos'è, sai chi è coinvolto — ma non 
 
 Quando accade, si gioca una **Scena Personale**: tu interpreti il tuo personaggio, un altro giocatore (scelto dal GM) interpreta il PNG del tuo Kage, e gli altri osservano e poi votano com'è andata.
 
-- Se gestisci bene la scena: **+1 a un attributo** a tua scelta
-- Se gestisci male la scena: **-1 a un attributo** a tua scelta
+- Se gestisci bene la scena: **+1 al valore attuale** di un attributo o al Ki, a tua scelta — mai oltre la scheda o il Ki massimo (se sei già pieno, il punto è perso)
+- Se gestisci male la scena: **-1 al valore attuale** di un attributo o al Ki, a tua scelta
 
 "Gestire bene" non significa vincere la discussione o risolvere il problema. Significa interpretare il tuo personaggio in modo umano e credibile — ascoltare davvero, reggere la pressione, restare te stesso.
 
@@ -555,7 +555,7 @@ Solo i **Nami e Kiwami negativi** (11 e 12) hanno costi meccanici reali — perd
 - Nessun attributo attuale scende sotto **4** (a 4, le perdite vanno al Ki)
 - Il Ki non supera mai il **Ki massimo**
 - La somma dei **bonus** su un singolo tiro (specializzazioni, Kyōryoku, L'Ora Giusta) non supera mai **+4**
-- La scheda cresce solo con le **Scene Personali** e gli **acquisti Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*). Tetto assoluto: 9
+- La scheda cresce **solo comprando con i punti Shugyō** tra un caso e l'altro (vedi Regolamento, *Crescita tra i Casi*); le Scene Personali muovono il valore attuale. Tetto assoluto: 9
 
 ---
 
@@ -901,7 +901,7 @@ Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
 Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (non Gou, non En, non combattimento)
 Bonus cumulati su un singolo tiro: max +4
-Permanenti solo: Scene Personali e acquisti Shugyō
+Permanente solo: acquisti Shugyō (le Scene Personali muovono il valore attuale)
 
 GOU
 Costo: 2, 3 o 4 Ki (variabile per Gou)
@@ -936,8 +936,8 @@ Non si applica al Gou
 
 GENKAI
 Ki ≤ 3: crisi, fuori gioco temporaneo
-Ki = 1: critico — qualsiasi danno elimina il PG
-Ki < 1: fuori gioco definitivo
+Perdite di Ki (costi, pressione): mai sotto 1 — ti fermi a 1
+Danno da combattimento: nessun pavimento — a 0 o sotto sei morto
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
 Numero 0-9 segnato su scheda o foglio, parte da 5

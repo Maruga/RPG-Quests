@@ -770,7 +770,7 @@ I PNG non hanno schede. Hanno solo un **valore di En** con ogni PG, che va da -5
 Quando interagisci con un PNG:
 
 1. Tiri 2d6 (questo è il **dado puro**)
-2. Applichi il modificatore dell'En al risultato
+2. Applichi il modificatore dell'En al dado: **En positivo → sottrai dal dado** (più facile) · **En negativo → aggiungi al dado** (più difficile)
 3. Confronti con il tuo attributo
 
 **Regole importanti**:
@@ -858,10 +858,16 @@ Al cambio di ogni scena, il giocatore può tentare il rientro:
 
 ## Uscita Definitiva
 
-- **Ki = 1**: Il PG è in stato critico. Qualsiasi danno ulteriore lo elimina dal gioco.
-- **Ki < 1**: Il PG è compromesso. Esce dal gioco definitivamente.
+Il Ki può crollare per due strade diverse — con conseguenze diverse:
 
-Se un danno porterebbe il Ki sotto 1, il Ki va a 1 ma il PG è sul filo del rasoio.
+**Perdite di Ki** (costi dei Gou, Tiri di Pressione, Nami e Kiwami, supporto):
+- Non portano **mai** il Ki sotto 1: se una perdita lo farebbe scendere oltre, il Ki si ferma a **1**
+- La soglia resta il **Genkai** (Ki ≤ 3): crisi, uscita di scena — depressione, crollo, blocco. Si rientra (vedi *Genkai*). Di logorio non si muore: ci si spegne
+
+**Danno da combattimento** (vedi `GENKAI_Combattimento.md`):
+- Il danno **non ha pavimento**: sottrae Ki fino in fondo
+- **Ki = 1**: stato critico — a terra, a un soffio dalla fine. Qualsiasi danno ulteriore ti uccide
+- **Ki a 0 o sotto**: il PG **muore**. In combattimento si muore davvero — per questo la fuga è quasi sempre la risposta giusta
 
 ---
 
@@ -910,8 +916,8 @@ Durante l'avventura, il GM attiva i **Kage** dei PG. La vita privata irrompe nel
 
 ## Esito
 
-- **Gestito bene** → +1 a un attributo (il giocatore sceglie)
-- **Gestito male** → -1 a un attributo (il giocatore sceglie)
+- **Gestito bene** → **+1 al valore attuale** di un attributo **o al Ki** (il giocatore sceglie) — la scena ripara, come un Nami positivo. Mai oltre la scheda o il Ki massimo: se sei già pieno, il punto è perso
+- **Gestito male** → **−1 al valore attuale** di un attributo **o al Ki** (il giocatore sceglie) — il costo emotivo. Come ogni ferita, si rimargina
 
 ## Criteri per "gestito bene"
 
@@ -922,7 +928,7 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 - Ha trovato una soluzione (Lucidità)?
 - È rimasto professionale nonostante tutto (Distacco)?
 
-> **Esempio di scena personale**: Il GM attiva il Kage di Kimura. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Kimura non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Kimura prende -1 a un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
+> **Esempio di scena personale**: Il GM attiva il Kage di Kimura. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Kimura non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Kimura prende -1 al valore attuale di un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
 
 ---
 
@@ -941,10 +947,11 @@ Il valore di scheda di ogni attributo è il **tetto personale** del PG: rapprese
 
 ## Il Valore di Scheda
 
-Cambia solo per:
+Cambia in un solo modo:
 
-- **Scene Personali**: +1/−1 al valore **di scheda**, in base al voto del tavolo — la vita che ti cambia davvero
-- **Acquisti con i punti Shugyō** (vedi *Crescita tra i Casi*)
+- **Acquisti con i punti Shugyō** (vedi *Crescita tra i Casi*) — la crescita non si regala: si compra
+
+Le **Scene Personali** muovono il valore **attuale** (±1, a voto del tavolo), mai la scheda: la vita ti ripara o ti scava, come i dadi. Chi sei diventato lo decide solo il lavoro su te stesso.
 
 ## Il Ki
 
@@ -954,9 +961,9 @@ Cambia solo per:
 > **Esempio di progressione in una sessione**: Sato ha Distacco 6 di scheda (attuale 5, segnato ieri), Ascolto 7, Silenzio 5, Ki massimo 9, Ki attuale 9.
 > - Entra sulla scena del crimine: tira Distacco, esce 2 → Kiwami positivo. Distacco attuale risale a 6 — riparato, è di nuovo alla sua scheda; il +1 Ki è perso, il Ki è già al massimo.
 > - Interroga un testimone ostile: tira Ascolto, esce 11 → Nami negativo. Sceglie di perdere 1 Ki invece di segnare −1 su Ascolto. Ki 8.
-> - Scena personale con il padre: gestita bene dal voto. +1 Silenzio **di scheda** — da 5 a 6, permanente.
-> - Notte: il soroban è a 6 (Kiwami+ = +2, Nami- = -1) → 5 o più → 2d6 prendi il migliore, esce 3 e 5 → +5 Ki, torna a 9.
-> - Il giorno dopo Sato è: Distacco 6, Ascolto 7, Silenzio 6 (suo per sempre), Ki 9.
+> - Scena personale con il padre: gestita bene dal voto. Il suo Silenzio è già a scheda piena — un +1 lì andrebbe perso: sceglie **+1 Ki**, da 8 a 9. (La scheda non si muove: quella si compra, con lo Shugyō.)
+> - Notte: il soroban è a 6 (Kiwami+ = +2, Nami- = -1) → 5 o più → 2d6 prendi il migliore, esce 3 e 5 → +5 Ki — ma il Ki è già al massimo: resta 9.
+> - Il giorno dopo Sato è: Distacco 6, Ascolto 7, Silenzio 5, Ki 9.
 
 ---
 
@@ -1186,13 +1193,13 @@ Ki attuale ≤ Ki massimo (attr. più basso + dado + comprati, max 12)
 Il dado del Ki si ritira a fine caso — rappresenta il momento
 Nami/Kiwami: solo prove attributi (no combattimento, En, Gou)
 Bonus cumulati su un singolo tiro: max +4
-Permanenti solo: Scene Personali e acquisti Shugyō
+Permanente solo: acquisti Shugyō (le Scene Personali muovono il valore attuale)
 (attributo: arrivo × 3 | Ki: arrivo × 4 — tra un caso e l'altro)
 
 KI (気)
 ≤ 3 = Genkai (fuori gioco temporaneo)
-= 1 = Critico (qualsiasi danno elimina il PG)
-< 1 = Fuori gioco definitivo
+Perdite di Ki (costi, pressione, tiri): mai sotto 1 — si fermano a 1
+Danno da combattimento: nessun pavimento — a 0 o sotto il PG muore
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
 Numero 0-9 segnato su scheda o foglio, parte da 5

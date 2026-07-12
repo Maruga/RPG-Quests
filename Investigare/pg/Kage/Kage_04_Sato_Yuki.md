@@ -51,7 +51,7 @@ Attorno a lei orbitano **lo zio Jirō** (Tanaka Jirō, fratello di Michiko — i
 - **D4 La costanza della verità** *(obbligatoria)* → una bugia comoda evitata per volta, su più casi. Il GM tenta: "tua madre chiede com'è andata la settimana" — e la settimana era un omicidio
 - **La scorciatoia** *(aspettarla)* → la bugia grossa: inventarsi un trasferimento, una fidanzata finta, "l'esame da dirigente". Compra mesi di pace. **Shimi** — e quando crolla, crolla tutto insieme
 
-**Risoluzione completa**: D1 + D2 retti nel tempo (D4) → +1 scheda o 5 Shugyō, soroban a 6. Nuovo Kage co-creato (piste: la salute di Michiko come Kage nuovo e onesto, stavolta senza bugie; oppure Ayumi — una vita privata vera ha i suoi Kage).
+**Risoluzione completa**: D1 + D2 retti nel tempo (D4) → 8 Shugyō, soroban a 6. Nuovo Kage co-creato (piste: la salute di Michiko come Kage nuovo e onesto, stavolta senza bugie; oppure Ayumi — una vita privata vera ha i suoi Kage).
 
 ---
 ---

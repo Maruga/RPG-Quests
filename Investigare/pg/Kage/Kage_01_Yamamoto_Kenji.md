@@ -48,7 +48,7 @@ Il Kage di Yamamoto non è Noriko, e non è nemmeno Takeshi. È **il pattern**: 
 - **D3 La babysitter** → la NON-soluzione dal Catalogo: ¥40.000 al mese e Takeshi che chiama la signora per nome. Compra tempo, scava il fosso
 - **D4 La costanza** *(obbligatoria)* → esserci OGNI martedì per più casi. Scene da un minuto: il GM le chiede, il giocatore le gioca. La radice è qui
 
-**Risoluzione completa**: D4 + una tra D1/D2 reggere C3 → +1 scheda o 5 Shugyō, soroban a 6. Poi il nuovo Kage si co-crea (una pista: il vuoto che resta quando il figlio sta bene — o Noriko, che ora il debito ce l'ha lui).
+**Risoluzione completa**: D4 + una tra D1/D2 reggere C3 → 8 Shugyō, soroban a 6. Poi il nuovo Kage si co-crea (una pista: il vuoto che resta quando il figlio sta bene — o Noriko, che ora il debito ce l'ha lui).
 
 ---
 ---

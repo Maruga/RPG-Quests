@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md",
+                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kage_01_Yamamoto_Kenji"
+              "title": "GENKAI_Regolamento_v1_3"
             }
           }
         ]
@@ -227,6 +227,27 @@
   },
   "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
+    "Investigare/README.md",
+    "Investigare/GENKAI_Specializzazioni.md",
+    "Investigare/pg/Kage/Kage_05_Fujita_Emi.md.tmp.14376.0d38e8c1bdf2",
+    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.a702c792beec",
+    "Investigare/pg/Kage/Kage_03_Nakamura_Shota.md.tmp.14376.6c0d55f94413",
+    "Investigare/pg/Kage/Kage_02_Honda_Ryota.md.tmp.14376.eb53de656410",
+    "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md.tmp.14376.9ccc89769bb2",
+    "Investigare/GENKAI_Kage.md.tmp.14376.43c4159ffdf1",
+    "Investigare/GENKAI_Kage.md.tmp.14376.883f38d18ea0",
+    "Investigare/GENKAI_Kage.md.tmp.14376.b463c123fb05",
+    "Investigare/GENKAI_Combattimento.md.tmp.14376.3bf541329264",
+    "Investigare/GENKAI_Combattimento.md.tmp.14376.2435b54569b8",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/GENKAI_Registro_Nomi.md",
+    "Investigare/GENKAI_Manuale_Situazioni.md",
+    "Investigare/GENKAI_Manuale_GM.md",
+    "Investigare/GENKAI_Manuale_Giocatori.md",
+    "Investigare/GENKAI_Kage.md",
+    "Investigare/GENKAI_Combattimento.md",
+    "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
     "Investigare/Materiale/StradaNotturna.png",
     "Investigare/Materiale/Scheda_Distretto.md",
@@ -239,38 +260,17 @@
     "Investigare/Materiale/Kyoto.png",
     "Investigare/Materiale/genkai_960x540.png",
     "Investigare/Materiale/genkai_640x360.png",
-    "Investigare/Materiale/Libretto/Libretto_Squadra.pdf",
-    "Investigare/Materiale/Libretto/mso659F.tmp",
-    "Investigare/Materiale/Libretto/~$Libretto_Squadra.pptx",
-    "Investigare/Materiale/Libretto/mso51B8.tmp",
-    "Investigare/Materiale/Libretto/ppt879.tmp",
-    "Investigare/Materiale/Libretto/pptDC18.tmp",
-    "Investigare/Materiale/Libretto/ppt2806.tmp",
-    "Investigare/Materiale/Libretto/pptD78F.tmp",
-    "Investigare/Materiale/Libretto/pptEABD.tmp",
-    "Investigare/Materiale/Libretto/ppt62B4.tmp",
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
     "Investigare/png notevoli/Gonda_Susumu_Archivista.md",
     "Investigare/png notevoli/token_prompts.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/Yamada_Tetsuo_Accompagnatore.md",
     "Investigare/png notevoli/Taniguchi_Osamu_Commissario.md",
-    "Investigare/README.md",
-    "Investigare/GENKAI_Briefing_Giocatori.md",
-    "Investigare/GENKAI_Combattimento.md",
-    "Investigare/GENKAI_Kage.md",
-    "Investigare/GENKAI_Manuale_GM.md",
-    "Investigare/GENKAI_Manuale_Situazioni.md",
-    "Investigare/GENKAI_Registro_Nomi.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
     "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
     "Investigare/Avventura QED/MEMORY.md",
-    "Investigare/Avventura QED/INDICE GENERALE.md",
-    "Investigare/Avventura QED/handout/Prime_Pagine_Killer_Compiti.md",
-    "Investigare/Avventura QED/handout/Lettera_Discepolo_Eulero.md"
+    "Investigare/Avventura QED/INDICE GENERALE.md"
   ]
 }

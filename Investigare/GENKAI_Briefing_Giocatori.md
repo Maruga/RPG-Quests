@@ -65,7 +65,7 @@ Il fallimento **non blocca mai la storia**. L'informazione arriva comunque — i
 | **11** | Nami- | -1 a scelta (attributo **O** Ki) |
 | **12** | Kiwami- | -1 attributo usato **E** -1 Ki |
 
-**Limiti**: il valore di scheda è il tuo **tetto** — i dadi non lo superano mai: gli 11/12 scavano sotto (segna il −1 a matita), i 2/3 e ogni notte di sonno riparano (+1 verso la scheda). A scheda piena il +1 è perso o va nel Nasake. Attributo attuale mai sotto 4 (a 4, le perdite vanno al Ki). Il Ki non supera mai il Ki massimo. La somma dei bonus su un singolo tiro (Senmon, Kyōryoku, L'Ora Giusta) non supera mai **+4**. La scheda cresce solo con le Scene Personali e i punti **Shugyō** tra i casi.
+**Limiti**: il valore di scheda è il tuo **tetto** — i dadi non lo superano mai: gli 11/12 scavano sotto (segna il −1 a matita), i 2/3 e ogni notte di sonno riparano (+1 verso la scheda). A scheda piena il +1 è perso o va nel Nasake. Attributo attuale mai sotto 4 (a 4, le perdite vanno al Ki). Il Ki non supera mai il Ki massimo. La somma dei bonus su un singolo tiro (Senmon, Kyōryoku, L'Ora Giusta) non supera mai **+4**. La scheda cresce solo comprando con i punti **Shugyō** tra i casi (le Scene Personali muovono il valore attuale).
 
 ---
 
@@ -185,7 +185,7 @@ Quando il Ki scende a **3 o meno**:
 
 **Rientro**: a ogni cambio scena, tiri 1d6. Se ≤ Ki attuale → +1 Ki. Quando supera 3, rientri.
 
-**Ki = 1**: stato critico. **Ki < 1**: fuori dal gioco definitivamente.
+**Perdite di Ki** (costi, pressione, tiri): mai sotto 1 — ti fermi a 1. **Danno da combattimento**: nessun pavimento — a Ki 0 o sotto il PG muore.
 
 ---
 

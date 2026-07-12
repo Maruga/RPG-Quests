@@ -50,7 +50,7 @@ La sua arma è **l'ambiguità**; il suo antidoto — e Fujita non lo sa ancora �
 - **D4 La costanza** *(obbligatoria)* → ogni visita gestita senza concedere niente E senza nascondere niente di nuovo. Il segreto non deve crescere più
 - **La scorciatoia** *(aspettarla)* → pagare la "cortesia da nulla" (B1) per farlo sparire. Funziona un mese. **Shimi** — e il gradino dopo è già pronto
 
-**Risoluzione completa**: D4 + (D1 *e* D2) o D3 → +1 scheda o 5 Shugyō, soroban a 6. Nuovo Kage co-creato (piste: Iwamoto processato fa i nomi — e Fujita testimone-chiave con un passato da spiegare; oppure la libertà stessa: chi è Fujita quando nessuno la tiene?).
+**Risoluzione completa**: D4 + (D1 *e* D2) o D3 → 8 Shugyō, soroban a 6. Nuovo Kage co-creato (piste: Iwamoto processato fa i nomi — e Fujita testimone-chiave con un passato da spiegare; oppure la libertà stessa: chi è Fujita quando nessuno la tiene?).
 
 ---
 ---

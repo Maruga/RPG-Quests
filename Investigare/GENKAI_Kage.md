@@ -9,7 +9,7 @@
 
 ## Come si incastra col resto
 
-Le regole base restano quelle di sempre (Regolamento: *Kage* e *Scene Personali*): il GM attiva, un altro giocatore interpreta il PNG col copione, 5-10 minuti, il tavolo vota, ±1 di scheda. Questo manuale aggiunge **quello che succede tra una scena e l'altra**: il problema che vive, cresce, chiede.
+Le regole base restano quelle di sempre (Regolamento: *Kage* e *Scene Personali*): il GM attiva, un altro giocatore interpreta il PNG col copione, 5-10 minuti, il tavolo vota, ±1 al valore attuale (mai oltre la scheda). Questo manuale aggiunge **quello che succede tra una scena e l'altra**: il problema che vive, cresce, chiede.
 
 Una regola resta sacra: **il Kage non blocca mai il caso**. Complica, distrae, costa — ma l'indagine va avanti sempre.
 
@@ -153,7 +153,7 @@ Requisiti (tutti e tre):
 2. **Un sacrificio reale e visibile**: soldi veri che mancano dopo, una richiesta d'aiuto che costa la faccia, una verità detta a chi fa più paura, giorni di licenza nel mezzo di un caso importante
 3. **Nessuna scorciatoia aperta**: le Shimi collegate vanno chiuse — o accettate come rischio permanente nel registro
 
-**Ricompensa** (quando il GM dichiara il Kage risolto): **+1 di scheda** a un attributo pertinente **oppure 5 punti Shugyō**, a scelta del giocatore. E la pace si sente: per il caso successivo **il soroban parte a 6**.
+**Ricompensa** (quando il GM dichiara il Kage risolto): **8 punti Shugyō** — quasi un grado di Senmon, o metà strada verso un attributo. E la pace si sente: per il caso successivo **il soroban parte a 6**.
 
 **Poi la vita continua**: GM e giocatore costruiscono insieme il **Kage successivo** — spesso nato dal finale del primo (una Shimi accettata, un rapporto cambiato, un nemico fatto per strada). Un PG senza Kage non esiste: chi non ha ombre non è un protagonista di GENKAI.
 
@@ -247,7 +247,7 @@ FAVORI (scala 1-5): innocuo → improprio → grave → penale → tradimento
 SHIMI: ogni scorciatoia sporca incuba · riemerge su 2-4 · diventa nuovo Kage
 
 RISOLVERE: radice (più scene, più casi) + sacrificio reale + Shimi chiuse
-  Premio: +1 scheda O 5 Shugyō, soroban a 6 per un caso
+  Premio: 8 Shugyō, soroban a 6 per un caso
   Poi: nuovo Kage co-creato — un PG senza ombra non esiste
 ```
 

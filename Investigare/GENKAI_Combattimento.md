@@ -30,7 +30,7 @@ Ogni contendente tira **2d6**. **Il dado più basso è la tua iniziativa**: agis
 - L'iniziativa si tira **per gruppo di scontro**, non per tutta la scena: i tre nella sparatoria in strada tirano tra loro; i due che si prendono a pugni nel vicolo tirano tra loro
 - L'ordine resta per tutto lo scontro. Dal secondo giro in poi si tira normalmente al momento dell'azione
 
-> **Esempio**: Honda tira 3 e 4 → iniziativa 3, e il suo primo attacco è già tirato: 7. Il sospettato tira 2 e 8 → iniziativa 2: **inizia lui**, e il suo primo attacco vale 10.
+> **Esempio**: Honda tira 3 e 4 → iniziativa 3, e il suo primo attacco è già tirato: 7. Il sospettato tira 2 e 6 → iniziativa 2: **inizia lui**, e il suo primo attacco vale 8.
 
 ---
 
@@ -50,6 +50,8 @@ Il cuore del sistema: **due tiri, una sottrazione**.
 2. Al margine si somma il **danno dell'arma**. *(margine 2 + pistola 3 = 5 in arrivo)*
 3. **Il difensore** tira 2d6 (modificato) sul suo attributo di difesa. Se riesce → il suo margine **assorbe**. Se fallisce → assorbe **zero**: prende tutto
 4. **Danno = margine attaccante + arma − margine difensore** (minimo 0). Si perde in **Ki**
+
+Il danno **non ha pavimento**: può portare il Ki a zero e sotto. **A Ki 0 o meno il PG è morto.** Il fermarsi a 1 delle perdite di Ki (Regolamento, *Uscita Definitiva*) vale per costi e pressioni — **non** per il danno.
 
 > **Esempio**: Honda (Presenza 5) tira 3 → margine 2, a mani nude (+1) = 3 in arrivo. Il sospettato (Distacco 5) tira 4 → margine 1, assorbe. **Danno: 2 Ki.** Se il sospettato avesse tirato 6 (fallito), avrebbe preso tutti e 3.
 
@@ -182,9 +184,9 @@ Un poliziotto che **estrae** l'arma lo scrive nel rapporto. Uno che **spara** ap
 
 *Il sospettato Kubo si è chiuso nel suo appartamento con una pistola. Honda entra dal corridoio, Yamamoto lo copre dall'ingresso col fucile a pompa d'ordinanza. Kubo: Lucidità 6, Distacco 5, Riserva 6, dietro una copertura leggera (il tavolo rovesciato, −1).*
 
-**Iniziativa** (gruppo unico): Honda tira 3 e 4 → iniziativa 3, primo attacco 7. Kubo tira 2 e 8 → iniziativa **2**, attacco 10. Yamamoto tira 4 e 5 → iniziativa 4, attacco 9.
+**Iniziativa** (gruppo unico): Honda tira 3 e 4 → iniziativa 3, primo attacco 7. Kubo tira 2 e 6 → iniziativa **2**, attacco 8. Yamamoto tira 4 e 5 → iniziativa 4, attacco 9.
 
-**Giro 1** — *Kubo (2)*: spara a Honda col suo tiro tenuto: 10 > Lucidità 6 → **manca**, il colpo scheggia lo stipite. *Honda (3)*: risponde col 7 tenuto ≤ Lucidità 7 (la sua) → margine 0, +3 pistola = 3 in arrivo. Kubo difende: Distacco 5, tira 6, col tavolo −1 → 5 → riesce, margine 0: **prende 3**. Riserva 6→3. *Yamamoto (4)*: non spara — **mira** (−2 al suo prossimo colpo), la canna del pompa piantata sul vano della porta: il prossimo che si affaccia lì, se lo prende.
+**Giro 1** — *Kubo (2)*: spara a Honda col suo tiro tenuto: 8 > Lucidità 6 → **manca**, il colpo scheggia lo stipite. *Honda (3)*: risponde col 7 tenuto ≤ Lucidità 7 (la sua) → margine 0, +3 pistola = 3 in arrivo. Kubo difende: Distacco 5, tira 6, col tavolo −1 → 5 → riesce, margine 0: **prende 3**. Riserva 6→3. *Yamamoto (4)*: non spara — **mira** (−2 al suo prossimo colpo), la canna del pompa piantata sul vano della porta: il prossimo che si affaccia lì, se lo prende.
 
 **Giro 2** — Kubo non si affaccia: con una canna già puntata sulla porta, restare dietro il tavolo è l'unica mossa sensata. Honda avanza in copertura. La voce di Yamamoto: *"Kubo. È finita. Butta l'arma."* — e questo non è più combattimento: è Presenza. Si torna a GENKAI.
 
@@ -206,6 +208,7 @@ SCONTRO:  attaccante 2d6 ≤ attr arma → margine = attr - dado
           danno in arrivo = margine + danno arma
           difensore 2d6 ≤ attr difesa → assorbe il suo margine
           difesa fallita = prende tutto | danno minimo 0 | si perde Ki
+          il danno non ha pavimento: Ki a 0 o sotto = MORTO
 
 DIFESE:   Lucidità schivi | Silenzio incassi (solo non letale)
           Pazienza al riparo | Distacco ti defili
