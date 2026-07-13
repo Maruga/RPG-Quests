@@ -27,7 +27,7 @@
 | 17 | Voto del tavolo rischioso | Voto confermato; il criterio anti-teatro si porta anche lato giocatori | ✅ **DECISO** — A + mezza riga |
 | 18 | Nessuna tregua post-Kage | La tregua c'è già (soroban 6); si esplicita il "quando" del nuovo Kage | ✅ **DECISO** — A, riga esplicita |
 | 19 | Consenso su segreti/sabotaggio PG | A + GM ultima parola + paragrafo "il caso irrisolto" (fallire è previsto, e un irrisolto è un seme) | ✅ **DECISO** |
-| 20 | Fuoco di copertura vs iniziativa fissa | **VERO** (Comb. 117/228 vs 31) — fix 1 frase | — |
+| 20 | Fuoco di copertura vs iniziativa fissa | **SUPERATO**: l'utente ristruttura il combattimento — iniziativa a ogni scambio | ✅ **DECISO** — nuovo sistema a scambi (vedi sotto) |
 | 21 | Prima azione senza tiro | Vero micro-buco — fix 1 frase | — |
 | 22 | Lucidità dominante | Parziale — bilanciamento da playtest, mitigato da Senmon/paletti | — |
 | 23 | Difesa gratuita illimitata | Design esplicito ("difendi ogni volta") | — |
@@ -113,6 +113,17 @@ I PG **creati da zero** ricevono **1 Senmon di grado 1**, giustificata dal backg
 **9 · Gou — riga-manifesto**
 - Manuale Giocatori riga ~40: *"Non avete superpoteri. Avete un Gou: un dono ambiguo, che né voi né il gioco spiegate fino in fondo."*
 - Dove si presentano i Gou (Giocatori ~162 e/o Regolamento sezione Gou): *"Il soprannaturale non esiste nei casi di GENKAI — i colpevoli sono umani, le soluzioni pure. L'unica ambiguità concessa è il Gou: vi aiuta a **vedere**, mai a sapere chi è stato. Se sia intuito allenato o qualcosa di più, il gioco non risponde — e il tavolo non deve chiederselo."*
+
+**20 · COMBATTIMENTO RISTRUTTURATO — sistema a scambi (2026-07-13, bozza utente)**
+L'iniziativa di gruppo fissa "è vecchia e non piace" → si riscrive il modulo attorno agli **SCAMBI**:
+- Ogni scambio: **entrambi tirano 2d6** — iniziativa ritirata ogni scambio.
+- **Un tiro, doppio uso**: dado singolo più basso = chi attacca; la **somma** = tiro d'azione (attacco su attributo dell'arma per il vincitore, **difesa** per l'altro — nell'esempio su Distacco).
+- **Danno = margine attaccante + danno arma − margine difensore** (invariato). Esempio validato dall'utente (PG Lucidità 7/pistola vs PNG: scambi 4/4 · 5−1 · 5−1).
+- **Armi con due valori: Velocità e Danno** (pistola: vel 3, danno 4) — ⚠ funzione della Velocità DA CHIARIRE (non usata nell'esempio).
+- **Genkai SOSPESO in combattimento**: l'adrenalina lo supera; si valuta a fine scontro. La morte resta a Ki ≤ 0 (danno senza pavimento).
+- **RAFFICA (bozza da definire)**: chi la fa non mira — protegge i compagni; sull'iniziativa prende il **dado più alto**; tira solo per la riuscita; i compagni possono muoversi/sparare coperti; chi si espone riceve gli attacchi.
+- APERTI: funzione Velocità · il vincitore può fare azioni diverse dall'attacco? · difesa solo Distacco o a scelta? · spareggio parità · multi-contendenti · Ki PNG esempio (10 vs 11).
+- Conseguenza: il punto 20 del reviewer decade; i punti 21/23/24/25 vanno riletti alla luce del nuovo sistema.
 
 **19 · Consenso PG-PG + il caso irrisolto (2026-07-13)**
 - Manuale Kage (sez. Shimi/favori) + richiamo Manuale GM: *"Il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. Una Shimi può complicare il caso — non dev'essere lei a renderlo insolubile."*
