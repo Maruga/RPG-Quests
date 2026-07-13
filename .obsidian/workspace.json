@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
+                "file": "Investigare/GENKAI_Manuale_Giocatori.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "title": "GENKAI_Manuale_Giocatori"
             }
           }
         ]
@@ -227,19 +227,21 @@
   },
   "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.ad3e355c1398",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.70268a73f3fb",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.a781f63e16d7",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.3e5fdbbb6abb",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.275474cefaa4",
     "Investigare/README.md",
-    "Investigare/GENKAI_Specializzazioni.md",
-    "Investigare/pg/Kage/Kage_05_Fujita_Emi.md.tmp.14376.0d38e8c1bdf2",
-    "Investigare/pg/Kage/Kage_04_Sato_Yuki.md.tmp.14376.a702c792beec",
-    "Investigare/pg/Kage/Kage_03_Nakamura_Shota.md.tmp.14376.6c0d55f94413",
-    "Investigare/pg/Kage/Kage_02_Honda_Ryota.md.tmp.14376.eb53de656410",
-    "Investigare/pg/Kage/Kage_01_Yamamoto_Kenji.md.tmp.14376.9ccc89769bb2",
-    "Investigare/GENKAI_Kage.md.tmp.14376.43c4159ffdf1",
-    "Investigare/GENKAI_Kage.md.tmp.14376.883f38d18ea0",
-    "Investigare/GENKAI_Kage.md.tmp.14376.b463c123fb05",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.3bf541329264",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.2435b54569b8",
     "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.3d2919aa16f8",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.a8ea6273229d",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.55e7d1270857",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.c55e48ae0f94",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.197e7a58bcf0",
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.528d2aaf3745",
+    "Investigare/Revisione_AI2_Decisioni.md",
+    "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/GENKAI_Registro_Nomi.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Manuale_GM.md",
@@ -270,7 +272,6 @@
     "Investigare/Avventura Sake/PG/PG_01_Yamamoto_Kenji.md",
     "Investigare/Avventura Sake/PG/PG_05_Fujita_Emi.md",
     "Investigare/pg/Kage/Kage_02_Honda_Ryota.md",
-    "Investigare/Avventura QED/MEMORY.md",
-    "Investigare/Avventura QED/INDICE GENERALE.md"
+    "Investigare/Avventura QED/MEMORY.md"
   ]
 }
