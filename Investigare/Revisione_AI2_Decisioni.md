@@ -26,7 +26,7 @@
 | 16 | Guarigione attributi simultanea | Modello B confermato: tutti +1/notte, mai oltre scheda (già così nel testo) | ✅ **DECISO** — A, nessuna modifica |
 | 17 | Voto del tavolo rischioso | Voto confermato; il criterio anti-teatro si porta anche lato giocatori | ✅ **DECISO** — A + mezza riga |
 | 18 | Nessuna tregua post-Kage | La tregua c'è già (soroban 6); si esplicita il "quando" del nuovo Kage | ✅ **DECISO** — A, riga esplicita |
-| 19 | Consenso su segreti/sabotaggio PG | Buona riga da pubblicazione (safety) | — |
+| 19 | Consenso su segreti/sabotaggio PG | A + GM ultima parola + paragrafo "il caso irrisolto" (fallire è previsto, e un irrisolto è un seme) | ✅ **DECISO** |
 | 20 | Fuoco di copertura vs iniziativa fissa | **VERO** (Comb. 117/228 vs 31) — fix 1 frase | — |
 | 21 | Prima azione senza tiro | Vero micro-buco — fix 1 frase | — |
 | 22 | Lucidità dominante | Parziale — bilanciamento da playtest, mitigato da Senmon/paletti | — |
@@ -113,6 +113,10 @@ I PG **creati da zero** ricevono **1 Senmon di grado 1**, giustificata dal backg
 **9 · Gou — riga-manifesto**
 - Manuale Giocatori riga ~40: *"Non avete superpoteri. Avete un Gou: un dono ambiguo, che né voi né il gioco spiegate fino in fondo."*
 - Dove si presentano i Gou (Giocatori ~162 e/o Regolamento sezione Gou): *"Il soprannaturale non esiste nei casi di GENKAI — i colpevoli sono umani, le soluzioni pure. L'unica ambiguità concessa è il Gou: vi aiuta a **vedere**, mai a sapere chi è stato. Se sia intuito allenato o qualcosa di più, il gioco non risponde — e il tavolo non deve chiederselo."*
+
+**19 · Consenso PG-PG + il caso irrisolto (2026-07-13)**
+- Manuale Kage (sez. Shimi/favori) + richiamo Manuale GM: *"Il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. Una Shimi può complicare il caso — non dev'essere lei a renderlo insolubile."*
+- **NUOVO paragrafo Manuale GM — "Il caso irrisolto"**: fallire un caso ci sta ed è previsto — alcuni casi sono costruiti per poter finire male o non chiudersi; nessun investigatore ha il 100%. Distinzione da scolpire: *"gli indizi si danno sempre" = il dado non blocca l'indagine; ma le conclusioni sbagliate restano possibili — è il gioco.* E un irrisolto è un **seme**, non un vicolo cieco: può riaprirsi più avanti (nuove prove, una frase che sfugge in un interrogatorio futuro, una scoperta in un altro caso — il cold case che torna). Indicare al GM che un caso irrisolto è spunto per tanto altro.
 
 **18 · Kage — la tregua**
 - Manuale Kage, dopo la Ricompensa (~156): *"Il nuovo Kage non ha fretta: si co-crea con calma e può entrare in gioco dal caso successivo o anche dopo — lo decidono insieme giocatore e GM. Il caso con il soroban a 6 è la vostra pace: godetevela, è rara."*
