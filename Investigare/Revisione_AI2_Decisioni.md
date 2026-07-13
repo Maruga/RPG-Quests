@@ -114,16 +114,23 @@ I PG **creati da zero** ricevono **1 Senmon di grado 1**, giustificata dal backg
 - Manuale Giocatori riga ~40: *"Non avete superpoteri. Avete un Gou: un dono ambiguo, che né voi né il gioco spiegate fino in fondo."*
 - Dove si presentano i Gou (Giocatori ~162 e/o Regolamento sezione Gou): *"Il soprannaturale non esiste nei casi di GENKAI — i colpevoli sono umani, le soluzioni pure. L'unica ambiguità concessa è il Gou: vi aiuta a **vedere**, mai a sapere chi è stato. Se sia intuito allenato o qualcosa di più, il gioco non risponde — e il tavolo non deve chiederselo."*
 
-**20 · COMBATTIMENTO RISTRUTTURATO — sistema a scambi (2026-07-13, bozza utente)**
-L'iniziativa di gruppo fissa "è vecchia e non piace" → si riscrive il modulo attorno agli **SCAMBI**:
-- Ogni scambio: **entrambi tirano 2d6** — iniziativa ritirata ogni scambio.
-- **Un tiro, doppio uso**: dado singolo più basso = chi attacca; la **somma** = tiro d'azione (attacco su attributo dell'arma per il vincitore, **difesa** per l'altro — nell'esempio su Distacco).
-- **Danno = margine attaccante + danno arma − margine difensore** (invariato). Esempio validato dall'utente (PG Lucidità 7/pistola vs PNG: scambi 4/4 · 5−1 · 5−1).
-- **Armi con due valori: Velocità e Danno** (pistola: vel 3, danno 4) — ⚠ funzione della Velocità DA CHIARIRE (non usata nell'esempio).
-- **Genkai SOSPESO in combattimento**: l'adrenalina lo supera; si valuta a fine scontro. La morte resta a Ki ≤ 0 (danno senza pavimento).
-- **RAFFICA (bozza da definire)**: chi la fa non mira — protegge i compagni; sull'iniziativa prende il **dado più alto**; tira solo per la riuscita; i compagni possono muoversi/sparare coperti; chi si espone riceve gli attacchi.
-- APERTI: funzione Velocità · il vincitore può fare azioni diverse dall'attacco? · difesa solo Distacco o a scelta? · spareggio parità · multi-contendenti · Ki PNG esempio (10 vs 11).
-- Conseguenza: il punto 20 del reviewer decade; i punti 21/23/24/25 vanno riletti alla luce del nuovo sistema.
+**20 · COMBATTIMENTO v2 — sistema a scambi (2026-07-13, CONSOLIDATO con l'utente)**
+Sostituisce iniziativa di gruppo fissa e struttura a turni del modulo BOZZA. Regole canoniche:
+- **Lo scambio**: entrambi tirano 2d6 a ogni scambio. **Iniziativa = dado più basso + velocità dell'arma** (estrazione se da sfoderare, uso se in mano): agisce prima chi ha il totale più basso. La **somma** dei 2d6 è il tiro d'azione: attacco per chi agisce (attributo dell'arma), difesa per l'altro.
+- **Danno = scarto attaccante + danno arma − scarto difensore − Assorbe** (coperture/protezioni).
+- **Chi subisce danno perde la propria azione** in quello scambio ("come i maghi in D&D"). In gruppo: tirano tutti, si agisce in ordine d'iniziativa, chi ha preso danno salta.
+- **Chi agisce può fare altro** (ripararsi, muoversi, ricaricare) invece di attaccare — allora l'avversario non danneggiato fa la sua azione.
+- **Velocità**: ogni arma ha *vel. estrazione* e *vel. uso*; **Ricarica/Indossare è come sfoderare**: malus di velocità per l'azione combinata (ricarico e sparo = dado basso + valore Ricarica: perdi tempo).
+- **Attributi**: attacco per arma (pugnale→Pazienza, pistola→Lucidità, granata→Presenza…); **difesa** su Lucidità/Distacco/Pazienza secondo situazione (linee guida + GM).
+- **Assorbe** (giubbotto 3, tavolo 1, muro 5): riduzione **fissa e automatica** del danno, indipendente dalla difesa — la protezione c'è, punto.
+- **Spareggio**: velocità totale più bassa → secondo dado puro → simultanei.
+- **Opportunità**: se anche il tuo **dado più alto + velocità** resta sotto l'iniziativa dell'avversario → un'azione descrittiva extra (riparo+sparo, ricarico+sparo — mai due attacchi), spendibile nel round o nel successivo. *(Scelta: iniziative modificate, non dadi puri — consiglio accettato... da confermare.)*
+- **Critico 1+1**: in attacco +1d6 danni; in difesa +1d6 assorbimento. Il GM definisce il colore.
+- **Colpi multipli** (pistola max 3): ogni colpo = tiro 2d6 separato con propria iniziativa; malus fisso sulla somma di TUTTI i colpi (+3 se tre, +2 se due); i colpi si intercalano con le azioni nemiche in ordine d'iniziativa; **se prendi danno la sequenza si interrompe**. Esempio utente validato (8>7 manca · 7=7 → 3 danni · 6<7 → 4 danni).
+- **Tabella armi v2** (vel estr. / vel uso / ricarica / danno / raffica / max colpi): Pugno 1/1/0/1/no/0 · Coltello 2/1/0/2/no/0 · Pistola 3/1/4/3/no/3 · Fucile 4/2/5/4/no/0 · Mitragliatore leggero 4/2/5/4/sì/9 · Mitragliatore pesante 5/3/6/5/sì/9 · Granata 2/2/2/4/no/0. Protezioni (indossare/assorbe): Giubbotto 4/3 · Tavolo ribaltato 2/1 · Muro 0/5. **Danno pistola = 3 (tabella), da provare sul campo.**
+- **Genkai SOSPESO in combattimento** (l'adrenalina lo supera): si valuta a fine scontro. Morte: danno senza pavimento, Ki ≤ 0 = morto.
+- **RAFFICA — DA DEFINIRE** (bozza utente): chi la fa non mira, protegge i compagni; prende il dado più alto come iniziativa; tira solo la riuscita; i compagni agiscono coperti; chi si espone riceve gli attacchi.
+- Conseguenze: punto 20 reviewer decaduto; i punti 21/23/24/25 da rileggere sul sistema nuovo; il modulo `GENKAI_Combattimento.md` va **riscritto** (non ritoccato).
 
 **19 · Consenso PG-PG + il caso irrisolto (2026-07-13)**
 - Manuale Kage (sez. Shimi/favori) + richiamo Manuale GM: *"Il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. Una Shimi può complicare il caso — non dev'essere lei a renderlo insolubile."*
