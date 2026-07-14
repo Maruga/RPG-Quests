@@ -320,14 +320,14 @@ def genera_scheda(d, output_filename, image_path=None):
     p = c_ki.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     add_run(p, "Ki Max: ________    ", size=11, bold=True, color=NAVY)
-    add_run(p, "attributo più basso +2d6 prendi il dado più alto, 1 si ritira", size=8, italic=True, color=DARK_RED)
+    add_run(p, "attributo più basso + 2d6 prendi il più alto; l'1 si ritira una sola volta. Il dado si ritira a ogni nuovo caso; i comprati si sommano sempre", size=8, italic=True, color=DARK_RED)
     p = c_ki.add_paragraph()
     add_run(p, "Ki attuale: ________________ ", size=11, bold=True, color=NAVY)
     add_run(p, "≤3 Genkai", size=9, italic=True, color=DARK_RED)
     p = c_ki.add_paragraph()
     p.paragraph_format.space_before = Pt(2)
     add_run(p, "Soroban: ________ ", size=11, bold=True, color=NAVY)
-    add_run(p, "parte da 5 (0-9); +1 su 3, +2 su 2, -1 su 11, -2 su 12; decide il recupero notturno", size=8, italic=True, color=GRAY)
+    add_run(p, "parte da 5 (0-9); +1 su 3, +2 su 2, -1 su 11, -2 su 12; decide il recupero notturno; domani riparti dalla chiusura, avvicinata di 1 al riposo", size=8, italic=True, color=GRAY)
 
     c_sat = t2.rows[0].cells[1]
     set_cell_width(c_sat, 7)
@@ -339,9 +339,9 @@ def genera_scheda(d, output_filename, image_path=None):
     add_run(p, "  SATORI", size=10, bold=True, color=NAVY)
     p = c_sat.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
-    add_run(p, "1/sessione", size=9, color=GRAY)
+    add_run(p, "1/sessione — dichiarato prima del tiro", size=9, color=GRAY)
     p = c_sat.add_paragraph()
-    add_run(p, "successo automatico ☐", size=9, color=NAVY)
+    add_run(p, "il dado vale 2, niente Kiwami ☐", size=9, color=NAVY)
 
     add_separator(doc)
 
@@ -385,7 +385,7 @@ def genera_scheda(d, output_filename, image_path=None):
 
     # ── GOU ──
     add_section_header(doc, "業", "GOU — IL DEBITO  (scegli uno)")
-    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado.",
+    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado. Il costo si paga per intero: se ti porterebbe a 0 o sotto, il Gou non si attiva.",
              size=9, color=GRAY, italic=True, after=2)
 
     add_gou(doc, d["gou_1_nome"], d["gou_1_desc"], d["gou_1_attributo"],
@@ -427,11 +427,11 @@ def genera_scheda(d, output_filename, image_path=None):
     add_text(doc, "In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni. (Regole di scontro: GENKAI_Combattimento.md)",
              size=9, color=GRAY, italic=True, after=2)
     for line in (
-        "Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità, danno +3. Addestramento base: sai usarla, non sei un tiratore scelto",
-        "Armadietto — Giubbotto antiproiettile: -2 al dado di difesa contro armi da fuoco (operazioni a rischio)",
-        "Operazioni — Keibō (manganello): Silenzio, danno +2",
+        "Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/1 · ricarica 4 · danno 3. Addestramento base: sai usarla, non sei un tiratore scelto",
+        "Armadietto — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4",
+        "Operazioni — Keibō (manganello): Pazienza o Silenzio · vel. 2/1 · danno 2",
         "Sempre con te — Keisatsu techō (tesserino), manette, taccuino",
-        "A mani nude — Lotta: Presenza, danno +1 (prese e immobilizzazioni d'accademia)",
+        "A mani nude — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni; il grado 1 ce l'hanno tutti gli investigatori)",
     ):
         p = doc.add_paragraph()
         p.paragraph_format.left_indent = INDENT
@@ -599,9 +599,9 @@ PG_01 = {
     "senmon_2_nome": "Stampa e media",
     "senmon_2_chiave": "Presenza",
     "senmon_2_desc": "Sai come ragionano le redazioni, cosa fa notizia e cosa può aspettare. E hai un amico al Kyoto Shimbun.",
-    "senmon_3_nome": "Lotta",
-    "senmon_3_chiave": "Presenza",
-    "senmon_3_desc": "Accademia vecchia scuola: pugni, prese, immobilizzazioni e tecniche d'arresto.",
+    "senmon_3_nome": "Interrogatorio",
+    "senmon_3_chiave": "Pazienza o Ascolto",
+    "senmon_3_desc": "Diciott'anni di stanze chiuse: sblocca le tecniche di apertura — il terreno emotivo che si prepara prima delle domande vere.",
     "chi_sei": "Sei un veterano rispettato. Hai risolto casi importanti, hai costruito una reputazione solida. Ma la tua vita privata è un disastro. Sei mesi fa tua moglie Yuko ti ha lasciato. Non ci sei mai, ha detto. Aveva ragione. Ora vivi in un piccolo appartamento a Fushimi, con le scatole ancora da disfare. Tuo figlio Takeshi (8 anni) vive con la madre. Il martedì e il giovedì è con te. O dovrebbe esserlo. Il problema: il lavoro viene sempre prima.",
     "problema_titolo": "LA FAMIGLIA",
     "problema_testo": "Tua sorella Yamamoto Noriko è stata il tuo supporto durante il divorzio. Ha coperto le tue assenze, ha badato a Takeshi quando tu non potevi. Ma la pazienza di Noriko ha un limite. L'ultima volta che le hai chiesto aiuto, te lo ha detto chiaramente: Non sono la tua baby-sitter di riserva. Devi scegliere cosa conta davvero. Sai che Noriko è stanca. Sai che il rapporto con Takeshi è fragile.",
@@ -794,12 +794,12 @@ PG_04 = {
     "gou_1_costo": "2 Ki",
     "gou_1_successo": "Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente",
     "gou_1_fallimento": "Ricordi il dettaglio principale, ma sfocato o incompleto",
-    "gou_2_nome": "Occhio della Gru 鶴の目",
-    "gou_2_desc": "Vedi ciò che altri non vedono — il dettaglio che cambia tutto.",
-    "gou_2_attributo": "Lucidità",
+    "gou_2_nome": "L'Ora Giusta 正しい時",
+    "gou_2_desc": "Sai quando è il momento perfetto per parlare, agire, colpire. Il bonus decade se non usato entro la scena.",
+    "gou_2_attributo": "Pazienza",
     "gou_2_costo": "3 Ki",
-    "gou_2_successo": "Trovi il dettaglio nascosto e capisci in che direzione punta",
-    "gou_2_fallimento": "Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti)",
+    "gou_2_successo": "+3 al prossimo tiro",
+    "gou_2_fallimento": "+1 al prossimo tiro",
     "gou_3_nome": "L'Istante della Caduta 散り際",
     "gou_3_desc": "Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.",
     "gou_3_attributo": "Pazienza o Ascolto (dual)",

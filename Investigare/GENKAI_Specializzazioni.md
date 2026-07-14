@@ -140,7 +140,7 @@ Chi non la possiede interroga comunque — domande, prove, Confronto Diretto —
 | Specializzazione | Chiave | Copre | Paletti G3 |
 |---|---|---|---|
 | **Lotta** | Presenza | Pugni, prese, tecniche d'arresto | Presenza 8 |
-| **Lame e bastoni** | Lucidità o Silenzio | Coltello *o* bastone — l'arma si dichiara alla scelta | Attributo chiave 8 |
+| **Lame e bastoni** | Pazienza o Silenzio | Coltello *o* bastone — l'arma si dichiara alla scelta | Attributo chiave 8 |
 | **Pistola** | Lucidità | Tiro rapido, estrazione, sparare in movimento | Lucidità 8 |
 | **Fucile** | Distacco | Pompa, caccia, assalto; raffiche e fuoco di copertura | Distacco 8 |
 | **Tiro di precisione** | Pazienza | Fucili di precisione — il grado 1 è il **requisito** per usarli | Pazienza 9 **+** Fucile 2+ |
