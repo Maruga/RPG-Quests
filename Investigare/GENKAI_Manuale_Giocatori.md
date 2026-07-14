@@ -37,7 +37,7 @@ Non devi vincere. Non devi risolvere il caso nel modo "giusto". Devi interpretar
 
 GENKAI è un gioco investigativo. I personaggi sono investigatori che lavorano su casi criminali — omicidi, scomparse, morti sospette. Il Giappone degli anni '90, con la sua burocrazia precisa, la sua gerarchia silenziosa, le sue contraddizioni tra tradizione e modernità.
 
-Non siete eroi d'azione. Non avete superpoteri. Siete persone che osservano, ascoltano, ricostruiscono.
+Non siete eroi d'azione. Non avete superpoteri — avete un **Gou**: un dono ambiguo, che né voi né il gioco spiegate fino in fondo. Siete persone che osservano, ascoltano, ricostruiscono.
 
 La sfida non è fisica — è emotiva. Un caso vi porta dentro vite spezzate, bugie costruite con cura, segreti che le persone proteggono a costo di tutto. Gestire quella pressione, mantenere la lucidità, non perdere pezzi di voi stessi lungo la strada: questo è il gioco.
 
@@ -84,7 +84,7 @@ Il tuo personaggio ha sei attributi, ognuno con un valore da 4 a 9. Non misurazi
 | 5-6 | Normale — nella media |
 | 4 | Debole — ci fai fatica |
 
-Un Distacco 9 è un investigatore che ha visto così tanto da essere quasi impermeabile. Un Distacco 4 è qualcuno che ancora si sorprende, ancora si lascia toccare dalle cose — forse è un pregio, forse un problema.
+Un Distacco 9 è un investigatore che ha visto così tanto da sembrare impermeabile — regge quasi sempre; ma quando la vita colpisce davvero (un 11, un 12), colpisce anche lui: nessuno è immune, è il cuore del gioco. Un Distacco 4 è qualcuno che ancora si sorprende, ancora si lascia toccare dalle cose — forse è un pregio, forse un problema.
 
 ---
 
@@ -128,13 +128,13 @@ Solo tiri di attributo — non Gou, non En, non combattimento, non tiri di press
 - **5 o più**: tira **2d6, prendi il dado migliore**. Se esce 1, ritira quel dado
 - **Sotto 5**: tira **2d6, prendi il dado peggiore**. Se esce 1, ritira quel dado
 
-Il risultato = Ki recuperati. Non puoi mai superare il tuo **Ki massimo**. Poi riporti il Soroban a 5 — domani è un nuovo giorno.
+Il risultato = Ki recuperati. Non puoi mai superare il tuo **Ki massimo**. Poi il Soroban di domani parte dal **valore di chiusura di oggi, avvicinato di 1 verso il riposo** (5 di norma): chiudi a 3 → domani parti da 4; chiudi a 7 → parti da 6. Le giornate estreme lasciano coda, in bene e in male.
 
 **Momenti narrativi eccezionali**: il GM può assegnare +1 Ki per un momento speciale — direttamente a te, oppure come +1 al soroban (influenza il recupero notturno). Sceglie lui.
 
 **Non è un segreto**: il Soroban racconta la tua giornata senza bisogno di parole. Se i compagni possono vederlo, reagiscono — il capo che ti porta fuori cinque minuti, il collega che si offre di fare l'interrogatorio difficile al tuo posto. Non devi chiedere aiuto. Il numero lo dice per te.
 
-> **Esempio**: Sato parte a 5. Kiwami negativo sulla scena (-2), Nami negativo sull'interrogatorio (-1). Soroban a 2. A fine giornata tira 2d6 prendi il peggiore: esce 2 e 5 → recupera solo 2 Ki. Fujita invece è a 8: tira 2d6 prendi il migliore, esce 4 e 6 → recupera 6 Ki. Domani la squadra partirà con energie molto diverse.
+> **Esempio**: Sato parte a 5. Kiwami negativo sulla scena (-2), Nami negativo sull'interrogatorio (-1). Soroban a 2. A fine giornata tira 2d6 prendi il peggiore: esce 2 e 5 → recupera solo 2 Ki — e domani partirà da 3, non da 5: la giornata nera se la porta dietro. Fujita invece è a 8: tira 2d6 prendi il migliore, esce 4 e 6 → recupera 6 Ki, e domani parte da 7. La squadra partirà con energie molto diverse — e si vedrà.
 
 ---
 
@@ -161,6 +161,8 @@ Il Nasake è una riserva di **1 solo Ki** che tieni da parte per quando serve �
 
 Ogni personaggio ha un **Gou**: un talento straordinario che lo distingue dagli altri investigatori. Non è un superpotere — è un'intuizione quasi soprannaturale, qualcosa che va oltre la normale competenza. Ma ogni volta che lo usi, paghi un prezzo in Ki.
 
+Il soprannaturale **non esiste nei casi di GENKAI** — i colpevoli sono umani, le soluzioni pure. L'unica ambiguità concessa è il Gou: vi aiuta a **vedere**, mai a sapere chi è stato. Se sia intuito allenato o qualcosa di più, il gioco non risponde — e il tavolo non deve chiederselo.
+
 **Ogni personaggio ha un solo Gou.** Sceglilo in creazione — definisce chi sei.
 
 ### Come funziona
@@ -185,7 +187,7 @@ Non tutti i Gou costano uguale. I più potenti costano di più:
 
 **Ogni uso fa raddoppiare il costo del successivo.** Un Gou da 3 Ki costa 3 la prima volta, 6 la seconda, 12 la terza. **Una notte di sonno fa scendere il costo di un grado**: dormi, e il prossimo uso torna a costare 6; un'altra notte senza usarlo e sei di nuovo a 3.
 
-**Puoi bruciare te stesso.** Il Gou si può attivare anche se il costo ti manda in zona Genkai: il Ki scende fino a un minimo di 1, mai sotto. Se finisci a Ki 3 o meno, prima ricevi l'effetto — la visione, l'informazione — e poi crolli: il Genkai scatta appena l'effetto si conclude. I tuoi compagni possono rialzarti come in ogni Genkai, sacrificando 1 Ki ciascuno.
+**Il costo si paga per intero.** Attivi un Gou **solo se il Ki ti basta restando ad almeno 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi l'effetto — la visione, l'informazione — e poi crolli: il Genkai scatta appena l'effetto si conclude. Ma se il costo ti porterebbe a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I tuoi compagni possono rialzarti come in ogni Genkai, sacrificando 1 Ki ciascuno.
 
 > **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
@@ -476,7 +478,7 @@ Quando accade, si gioca una **Scena Personale**: tu interpreti il tuo personaggi
 - Se gestisci bene la scena: **+1 al valore attuale** di un attributo o al Ki, a tua scelta — mai oltre la scheda o il Ki massimo (se sei già pieno, il punto è perso)
 - Se gestisci male la scena: **-1 al valore attuale** di un attributo o al Ki, a tua scelta
 
-"Gestire bene" non significa vincere la discussione o risolvere il problema. Significa interpretare il tuo personaggio in modo umano e credibile — ascoltare davvero, reggere la pressione, restare te stesso.
+"Gestire bene" non significa vincere la discussione o risolvere il problema. Significa interpretare il tuo personaggio in modo umano e credibile — ascoltare davvero, reggere la pressione, restare te stesso. Si vota la **verità del personaggio**, non la performance: crollare e non riuscire a dire nulla può essere una gestione eccellente.
 
 > **Esempio**: Il Kage di Sato è la madre, che chiama in centrale dicendo che è urgente — non è mai urgente. A metà dell'indagine, mentre Sato sta lavorando su un caso critico, squilla il telefono. "Yuki, sei tu? Lo zio ha chiesto di te. Gli ho detto che forse quest'anno..." — la stessa conversazione della settimana scorsa, e di quella prima. Come gestisce Sato questa scena conta tanto quanto come gestisce gli interrogatori.
 
@@ -604,13 +606,13 @@ Non si costruisce dall'esterno — si costruisce giocando. Un testimone che trat
 
 ## Il Satori 悟り — Il Momento di Chiarezza
 
-**Una volta per sessione**, puoi invocare il Satori prima di tirare. Il risultato è un **successo automatico**, indipendentemente dalla situazione, dall'En, da qualsiasi malus.
+**Una volta per sessione**, puoi invocare il Satori prima di tirare — e non tiri: il tuo **dado puro vale 2**, il meglio che potevi fare. Non è un Kiwami (nessun bonus, l'En non sale) e tutti i **modificatori si applicano normalmente**: se anche col 2 il totale supera l'attributo, il tiro fallisce. Il Satori è il meglio di te, non un miracolo — garantisce il miglior esito **plausibile**, non l'impossibile. Vale sui **tuoi** tiri, non su quelli del distretto o della Procura.
 
-Non hai costi. Non puoi ottenere Kiwami. Non si accumula — se non lo usi, lo perdi.
+Non hai costi. Non si accumula — se non lo usi, lo perdi.
 
 Usalo nei momenti che contano davvero.
 
-> **Esempio**: Devi convincere il capoclan yakuza a lasciarti andare. Ha En -4 con te. La situazione è disperata. Invochi il Satori. Riesci — come lo descrivi tu, ma funziona.
+> **Esempio**: Devi convincere il capoclan yakuza a lasciarti andare — En -4, Presenza 6. Invochi il Satori: dado 2, +4 dal malus = 6 ≤ 6. Per un soffio: il boss decide che non vali il fastidio. Ti lascia andare — non diventa tuo amico, l'En resta -4.
 
 ---
 
@@ -630,6 +632,8 @@ Prima di un tiro, un compagno può dichiararsi pronto ad aiutarti. Se lo fa, ott
 
 > **Esempio**: Honda deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Honda tira con Distacco 7 (6+1). Esce 8. Fallimento leggero — Honda non perde nulla, ma Sato perde 1 Ki: voleva fare da scudo e non è bastato. Se fosse uscito 5, successo — nessuno perde nulla. Nella stessa scena, Honda non può più ricevere supporto, ma Sato può aiutare un altro PG.
 
+Aiutare chi sta affondando costa più che aiutare chi è solido — ed è voluto: il supporto non è un bonus gratuito, è farsi carico del rischio di un compagno. Il prezzo dell'esserci.
+
 ---
 
 ## Il Genkai 限界 — Il Crollo
@@ -646,9 +650,11 @@ Quando il tuo Ki scende a **3 o meno**, arrivi al limite. Il tuo personaggio ent
 
 ### Come si rientra
 
-Al cambio di ogni scena, tiri **1d6**. Se il risultato è **≤ al tuo Ki attuale**, guadagni +1 Ki. Se il Ki supera 3, rientri.
+Al cambio di ogni scena, tiri **2d6 e leggi ogni dado da solo** — non si sommano mai. **Ogni dado ≤ al tuo Ki attuale** vale **+1 Ki** (puoi recuperare 0, 1 o 2). Entrambi i dadi si confrontano col Ki che avevi all'inizio del tiro. Se il Ki supera 3, rientri.
 
-> **Esempio**: Sei a Ki 2. Cambio scena: devi tirare ≤ 2 su 1d6. Esce 1: successo, Ki sale a 3. Ma 3 non è ancora sufficiente per rientrare. Prossimo cambio scena: devi tirare ≤ 3. Esce 2: Ki sale a 4. Rientri in gioco.
+A Ki 1 risalire è dura — ed è voluto: se sei lì, è successo qualcosa di grosso, e il peso si deve sentire. La via rapida è il **Supporto** dei compagni.
+
+> **Esempio**: Sei a Ki 2. Cambio scena: esce 1 e 5 — l'1 è ≤2 (successo), il 5 no. Ki 3: non basta. Prossimo cambio: esce 2 e 3, entrambi ≤3 → Ki 5. Rientri in gioco. (Con 1 e 2 non fai "3": sono due dadi separati.)
 
 Il Genkai non è una punizione — è un momento drammatico che appartiene al giocatore. Come il tuo personaggio crolla, cosa emerge quando non regge più, è una delle scene più importanti che puoi interpretare.
 
@@ -919,7 +925,8 @@ Da -5 a +5, modificatore al tiro (non ai Kiwami)
 Relazioni profonde (±4, ±5): cambiano solo per eventi narrativi
 
 SATORI
-1 volta per sessione, successo automatico, non si accumula
+1 volta per sessione: non tiri, il dado puro vale 2 (niente Kiwami);
+i modificatori si applicano normalmente. Non si accumula
 
 NASAKE (情け) - COMPASSIONE
 Bonus perso da Kiwami+/Nami+ → conserva 1 Ki
@@ -944,7 +951,7 @@ Numero 0-9 segnato su scheda o foglio, parte da 5
 Traccia i Nami/Kiwami della giornata (+1/+2/-1/-2)
 Soroban ≥ 5: 2d6 prendi il migliore (reroll 1) = Ki recuperati
 Soroban < 5: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
-Dopo il recupero: torna a 5
+Dopo il recupero: domani parti dal valore di oggi avvicinato di 1 verso il 5
 ```
 
 ---

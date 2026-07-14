@@ -190,7 +190,7 @@ I PG **raramente lo incontrano di persona**. Quando succede, è perché Taniguch
 - Se la richiesta è solida: *"Procederò nei tempi tecnici."*
 - Se è debole: *"Vi sconsiglio di insistere allo stato attuale."*
 
-### Quando concede un mandato
+### Quando il mandato è concesso *(lo emette il giudice, su richiesta della Procura)*
 - Notifica via fax a Taniguchi entro le tempistiche dichiarate
 - Allegato: il provvedimento firmato + le condizioni operative
 - Watanabe NON spiega perché ha concesso. È solo la decisione

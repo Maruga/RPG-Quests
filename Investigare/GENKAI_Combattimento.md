@@ -1,5 +1,5 @@
 # GENKAI 限界 — Lo Scontro
-## Shōtotsu 衝突 — *manuale opzionale · BOZZA v0.1*
+## Shōtotsu 衝突 — *manuale opzionale · v2.0 (sistema a scambi)*
 
 > Questo è un modulo **opzionale**. GENKAI resta un gioco investigativo: il combattimento è raro, pericoloso, e la via intelligente resta chiamare rinforzi o andarsene. Ma un sospettato può barricarsi in casa, una consegna può andare male — e allora questo manuale dà un pizzico d'azione per spezzare una campagna. Non è un manuale di guerra: è mezz'ora di adrenalina, poi si torna a indagare.
 >
@@ -7,137 +7,149 @@
 
 ---
 
-## La convenzione dei segni (una sola regola)
+## Le regole della casa
 
-**Tutto ciò che ti aiuta ABBASSA il dado. Tutto ciò che ti ostacola lo ALZA.**
+**Tutto ciò che ti aiuta ABBASSA il dado. Tutto ciò che ti ostacola lo ALZA.** Senmon, mira, preparazione → si sottraggono dalla somma. Buio, fumo, colpi multipli → si sommano. Il confronto è sempre lo stesso: totale ≤ attributo.
 
-Coperture, giubbotti, mira, specializzazioni → si **sottraggono** dal tiro. Buio, fumo, raffiche, ferite → si **sommano**. Il confronto è sempre lo stesso: dado modificato ≤ attributo. Nessun altro calcolo.
-
-- I modificatori favorevoli su un singolo tiro non superano mai **−4** complessivi (è il tetto +4 del Regolamento, visto dal lato del dado)
-- Il dado modificato non scende mai sotto **2**
-
-**In combattimento non esistono Nami e Kiwami** (regola del Regolamento): un 2 è solo un ottimo tiro, un 12 solo un tiro pessimo. Il combattimento costa **Ki**, non tocca gli attributi — e non muove il soroban.
-
----
-
-## L'Iniziativa
-
-Ogni contendente tira **2d6**. **Il dado più basso è la tua iniziativa**: agisce prima chi ha il dado più basso, poi gli altri in ordine crescente.
-
-**Il tiro non si spreca: è già la tua prima azione.** La somma dei due dadi è il risultato del tuo primo attacco (o di quello che dichiari di fare). Chi è rapido, di solito, è anche preciso.
-
-- **Parità** di iniziativa: spareggia il secondo dado (più basso agisce prima). Ancora pari → le azioni sono **simultanee**: i danni si applicano insieme, anche se qualcuno finisce a terra
-- L'iniziativa si tira **per gruppo di scontro**, non per tutta la scena: i tre nella sparatoria in strada tirano tra loro; i due che si prendono a pugni nel vicolo tirano tra loro
-- L'ordine resta per tutto lo scontro. Dal secondo giro in poi si tira normalmente al momento dell'azione
-
-> **Esempio**: Honda tira 3 e 4 → iniziativa 3, e il suo primo attacco è già tirato: 7. Il sospettato tira 2 e 6 → iniziativa 2: **inizia lui**, e il suo primo attacco vale 8.
+- I modificatori favorevoli su un singolo tiro non superano mai **−4** complessivi (è il tetto +4 del Regolamento, visto dal lato del dado). La somma modificata non scende mai sotto **2**
+- **Niente Nami e Kiwami**: in combattimento il critico è un altro (l'**1+1**, vedi *Manovre*). Il combattimento costa **Ki**, non tocca gli attributi — e non muove il soroban
+- **Il Genkai non scatta in combattimento**: l'adrenalina lo supera. Si valuta **a fine scontro** — chi è a Ki ≤ 3 quando cala il silenzio, crolla lì
+- **Il danno non ha pavimento**: può portare il Ki a zero e sotto. **A Ki 0 o meno il PG è morto.** Il fermarsi a 1 delle perdite di Ki (Regolamento, *Uscita Definitiva*) vale per costi e pressioni — **non** per il danno
+- **Dotazione d'accademia**: ogni investigatore ha **Lotta 1** di base (Regolamento, *Creazione*) — judo, kendo e tecniche d'arresto
 
 ---
 
-## Il Turno
+## Lo Scambio
 
-Nel tuo turno fai **una cosa**: attacchi, ti sposti in copertura, ricarichi, fai fuoco di copertura, miri, lanci qualcosa, scappi.
+Il combattimento procede a **scambi**. A ogni scambio, **tutti i coinvolti tirano 2d6** — e quel tiro fa tutto:
 
-**La difesa è gratis e sempre possibile**: quando vieni attaccato, tiri la tua difesa — non consuma il turno. Se vieni attaccato più volte nello stesso giro, difendi ogni volta.
+1. **Iniziativa** = il tuo **dado più basso + la velocità della tua arma** (estrazione se è da sfoderare, uso se ce l'hai in mano). Agisce prima chi ha il totale **più basso**
+2. **La somma dei due dadi è il tuo tiro d'azione**: attacco (sull'attributo dell'arma) se agisci, **difesa** se sei bersaglio
+3. **Chi subisce danno perde la propria azione** in quello scambio: il colpo ti ha fermato
+4. Poi si tira lo scambio successivo — **l'iniziativa si ridecide ogni volta**
+
+**Chi agisce può fare altro** invece di attaccare: ripararsi, spostarsi, ricaricare, prepararsi. In quel caso l'avversario — se non ha subito danno — fa la sua azione: sta per lanciare una granata? forse conviene buttarsi dietro l'auto invece di provare a colpirlo.
+
+**Parità di iniziativa**: spareggia il secondo dado puro; ancora pari → le azioni sono **simultanee** (i danni si applicano insieme, anche se qualcuno va giù).
+
+**In tanti** (2 contro 3, la rissa): tirano tutti, si agisce in ordine di iniziativa, chi ha preso danno salta la propria azione quando arriva il suo momento. **Il bersaglio di più attacchi difende attivamente contro UNO solo** (sceglie quale); gli altri colpi passano pieni — ridotti solo dall'**Assorbe** di coperture e protezioni, che vale sempre e contro tutti. Il numero conta: la fuga resta la risposta giusta.
 
 ---
 
-## Attacco e Difesa — i Margini
+## Attacco, Difesa e Danno
 
-Il cuore del sistema: **due tiri, una sottrazione**.
+1. **L'attaccante** confronta la sua somma (modificata) con l'**attributo dell'arma**. Se supera → **manca**, fine. Se riesce → il suo **scarto** = attributo − totale
+2. **Il difensore** confronta la sua somma con il suo **attributo di difesa**. Se riesce → il suo scarto **assorbe**. Se fallisce → assorbe zero
+3. **Danno = scarto attaccante + danno arma − scarto difensore − Assorbe** (minimo 0). Si perde in **Ki**
 
-1. **L'attaccante** tira 2d6 (modificato) sull'attributo dell'arma. Se supera l'attributo → **manca**, fine. Se riesce → il suo **margine** = attributo − dado. *(Lucidità 6, tiro 4 → margine 2: la tua bravura)*
-2. Al margine si somma il **danno dell'arma**. *(margine 2 + pistola 3 = 5 in arrivo)*
-3. **Il difensore** tira 2d6 (modificato) sul suo attributo di difesa. Se riesce → il suo margine **assorbe**. Se fallisce → assorbe **zero**: prende tutto
-4. **Danno = margine attaccante + arma − margine difensore** (minimo 0). Si perde in **Ki**
+**La difesa** si dichiara col corpo e si tira su **Lucidità, Distacco o Pazienza**, secondo la situazione (guida il GM):
 
-Il danno **non ha pavimento**: può portare il Ki a zero e sotto. **A Ki 0 o meno il PG è morto.** Il fermarsi a 1 delle perdite di Ki (Regolamento, *Uscita Definitiva*) vale per costi e pressioni — **non** per il danno.
-
-> **Esempio**: Honda (Presenza 5) tira 3 → margine 2, a mani nude (+1) = 3 in arrivo. Il sospettato (Distacco 5) tira 4 → margine 1, assorbe. **Danno: 2 Ki.** Se il sospettato avesse tirato 6 (fallito), avrebbe preso tutti e 3.
-
-**Schivare o assorbire è la stessa difesa** — cambia solo come la descrivi, e l'attributo che usi:
-
-| Difesa | Attributo | Vincolo |
+| Situazione | Attributo | Perché |
 |---|---|---|
-| Schivi, ti sposti | **Lucidità** | — |
-| Incassi | **Silenzio** | solo colpi **non letali** (lotta, bastone) — coltelli e proiettili non si incassano |
-| Ti butti dietro un riparo | **Pazienza** | serve una copertura a portata |
-| Ti defili, esci dalla traiettoria | **Distacco** | — |
+| Sotto il fuoco di un'arma | **Lucidità** | ripararti senza farti prendere dal panico |
+| Un coltello, un pugno | **Pazienza** | aspettare il momento giusto per deviare o scartare |
+| Un'esplosione, il caos | **Lucidità o Distacco** | buttarti via, o la freddezza di chi si defila |
+
+> **Esempio — tre scambi** *(PG: Lucidità 7, pistola in mano · PNG: Distacco 5, Lucidità 6, pistola in mano)*
+> **Scambio 1** — PG tira 2 e 5 (iniziativa 2+1=3), PNG tira 4 e 3 (iniziativa 3+1=4): agisce il PG. Attacco: somma 7 ≤ Lucidità 7 → scarto 0, +3 pistola = 3 in arrivo. Il PNG difende con la sua somma: 7 > Distacco 5 → fallisce, **prende 3**. Ha subito danno: la sua azione salta.
+> **Scambio 2** — PG 1 e 5 (iniziativa 2), PNG 2 e 2 (iniziativa 3): ancora il PG. Somma 6 ≤ 7 → scarto 1, +3 = 4 in arrivo. Il PNG difende: 4 ≤ 5 → scarto 1, assorbe. **Prende 3.**
+> **Scambio 3** — PG 3 e 4 (iniziativa 4), PNG 2 e 3 (iniziativa 3): **agisce il PNG**. Attacco: 5 ≤ Lucidità 6 → scarto 1, +3 = 4. Il PG difende su Distacco: 5 (somma) — dipende dal suo Distacco... se assorbe di 1, **prende 3**. Ora è lui ad aver perso l'azione.
 
 ---
 
 ## Le Armi
 
-Ogni arma ha il suo **attributo d'attacco** e il suo **danno**. Non sono intercambiabili: bravo di pistola non vuol dire saper usare un fucile da cecchino.
+Ogni arma ha il suo **attributo**, due **velocità** (estrazione: sfoderarla · uso: ce l'hai già in mano), il tempo di **ricarica**, il **danno** — e per alcune il fuoco a **raffica** e i **colpi multipli**.
 
-| Arma | Attributo | Danno | Senza pratica | Colpi | Note |
-|---|---|---|---|---|---|
-| **Lotta** (pugni, calci, prese) | Presenza | +1 | — | — | incassabile |
-| **Coltello, lama corta** | Lucidità | +2 | — | — | non incassabile |
-| **Bastone, mazza, oggetto** | Silenzio | +2 | — | — | incassabile |
-| **Pistola / revolver** | Lucidità | +3 | nessun malus: il grilletto lo premono tutti | 5-8 | il New Nambu M60 di servizio ha **5 colpi** |
-| **Fucile a pompa / da caccia** | Distacco | +4 | +2 al dado | 2-5 | niente raffica né fuoco di copertura |
-| **Fucile d'assalto / mitraglietta** | Distacco | +4 | +2 al dado | 20-30 | può fare **raffica** e fuoco di copertura |
-| **Fucile di precisione** | Pazienza | +5 | **inutilizzabile**: senza istruzione (Senmon *Tiro di precisione* 1+ o background militare) spari come con un fucile da caccia che non conosci: Distacco, +4, e +2 al dado | 5 | beneficia di **Mirare** |
+| Arma | Attributo | Vel. estraz. | Vel. uso | Ricarica | Danno | Raffica | Max colpi |
+|---|---|---|---|---|---|---|---|
+| **Pugno** (Lotta) | Presenza | 1 | 1 | — | 1 | no | 1 |
+| **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | 1 | 1 | — | 1-2 (GM) | no | 1 |
+| **Coltello** | Pazienza | 2 | 1 | — | 2 | no | 1 |
+| **Pistola / revolver** | Lucidità | 3 | 1 | 4 | 3 | sì* | 3 |
+| **Fucile** (pompa / caccia) | Distacco | 4 | 2 | 5 | 4 | no | 1 |
+| **Mitragliatore leggero** | Distacco | 4 | 2 | 5 | 4 | sì | 9 |
+| **Mitragliatore pesante** | Distacco | 5 | 3 | 6 | 5 | sì | 9 |
+| **Fucile di precisione** | Pazienza | 5 | 3 | 5 | 5 | no | 1 |
+| **Granata** | Presenza | 2 | 2 | — | 4 (area) | no | 1 |
 
-- **Ricaricare** = un'azione
-- **Mirare** = un'azione: il tuo prossimo colpo con quell'arma ha **−2 al dado**. Il pane del cecchino
+- **Le velocità si sommano al dado d'iniziativa**: pistola nella fondina = dado basso +3 (estrai e spari nello stesso scambio); pistola in mano = +1. Il coltello sfoderato (1) batte la pistola nella fondina (3); la pistola in mano (1) batte il coltello da sfoderare (2)
+- **Ricaricare è come sfoderare**: l'azione combinata "ricarico e sparo" usa la velocità di **Ricarica** (pistola: dado basso +4). Perdi tempo — e si sente
+- **Fucile di precisione**: richiede la Senmon *Tiro di precisione* 1+ (o un passato militare). Senza, lo usi come un fucile da caccia che non conosci: Distacco, +2 alla somma
+- **Armi improvvisate** (*): l'attributo lo decide il GM dalla scena (di norma Presenza — l'impeto). Il combattimento in casa è il caso tipico di GENKAI: la colluttazione non voluta, la bottiglia afferrata al volo, la sedia alzata per tenere a distanza
+- **Raffica pistola** (*): può fare fuoco di soppressione, ma svuota il caricatore — dopo, va **ricaricata**
 
----
+**Colpi multipli** (dove Max colpi > 1): puoi dichiarare 2 o 3 colpi nello scambio. Ogni colpo è un **tiro 2d6 separato**, con la propria iniziativa (dado basso + vel. uso) — e **tutti** i colpi della sequenza prendono il malus: **+2 alla somma se dichiari due colpi, +3 se tre**. I colpi si intercalano con le azioni altrui in ordine d'iniziativa; **se prendi danno, la sequenza si interrompe** — i colpi restanti sono persi.
 
-## Coperture e Protezioni
-
-Si sottraggono **dal dado di difesa** (ti aiutano):
-
-| Protezione | Al dado di difesa |
-|---|---|
-| Copertura leggera (auto, mobili, angolo) | **−1** |
-| Copertura solida (muro, pilastro, cassa d'acciaio) | **−2** |
-| Giubbotto antiproiettile | **−2**, solo contro armi da fuoco |
-
-> **Esempio**: il sospettato (Distacco 5) col giubbotto viene colpito. Tira 5 → fallirebbe di misura, ma col giubbotto: 5−2 = 3 → riesce, margine 2. Da 3 danni in arrivo ne prende **1**.
-
-Cumulabili (giubbotto + muro), nel tetto di −4. Ricorda: il dado modificato non scende sotto 2.
-
-**Contro chi attacca**: buio fitto o fumo = **+2/+3 al dado dell'attaccante** (vedi Fumogeni).
+> **Esempio**: il PG (Lucidità 7, pistola in mano) dichiara **tre colpi** su un sospettato in fuga — +3 a ogni somma.
+> Colpo 1: tira 2 e 3 → iniziativa 3, somma 2+3+3 = 8 > 7 → **manca**.
+> Colpo 2: tira 1 e 3 → iniziativa 2, somma 1+3+3 = 7 = 7 → colpito, scarto 0: **3 danni**.
+> Colpo 3: tira 1 e 2 → iniziativa 2, somma 1+2+3 = 6 < 7 → scarto 1: **4 danni**.
+> Se tra un colpo e l'altro il sospettato avesse risposto (iniziativa più bassa) e l'avesse **colpito**, la sequenza finiva lì.
 
 ---
 
-## Raffica e Fuoco di Copertura
+## Coperture e Protezioni — l'Assorbe
 
-*(solo armi automatiche, e solo se hai i colpi)*
+Le protezioni **assorbono danno, sempre**: l'Assorbe è **fisso e automatico**, non dipende dalla difesa — il muro è lì, il giubbotto lo indossi. Si applica a ogni colpo che ti raggiunge, anche quando la difesa attiva fallisce o non c'è.
 
-**Raffica** — spari un grappolo di colpi su un bersaglio: **+3 al dado** d'attacco, ma se colpisci il danno dell'arma vale **+2 in più**. Consuma **5 colpi**.
+| Protezione | Indossare / mettersi | Assorbe |
+|---|---|---|
+| **Giubbotto antiproiettile** | 4 | **3** |
+| **Tavolo di legno ribaltato** | 2 | **1** |
+| **Dietro un muro** | 0 | **5** |
 
-**Fuoco di copertura** — non cerchi di colpire: costringi a stare giù. Scegli un bersaglio o uno stretto passaggio (una porta, un corridoio). Consuma **5 colpi**, nessun tiro. Chi lo subisce **non prende danno**, ma sceglie:
+Altre coperture: il GM assegna un Assorbe da 1 a 5 sulla scala *tavolo → muro* (portiera d'auto 2, pilastro di cemento 4…). "Indossare/mettersi" funziona come una velocità: è il tempo che l'azione ti costa.
 
-- **Sta giù** → perde la prossima azione, oppure
-- **Agisce comunque** → tutti i suoi tiri fino al tuo prossimo turno hanno **+2 al dado**
-
-E in entrambi i casi, alla prossima iniziativa usa **il dado più alto** invece del più basso: chi ha i proiettili sopra la testa riparte per ultimo. Il fuoco di copertura serve a questo: proteggere uno spostamento, guadagnare tempo, far ragionare un barricato.
+**Contro chi attacca**: buio fitto o fumo = **+2/+3 alla somma dell'attaccante** (vedi Fumogeni).
 
 ---
 
-## Fumogeni, Granate, Esplosivi
+## Manovre
 
-**Fumogeno** — un'azione per lanciarlo (tiro su Lucidità solo se il lancio è difficile). Il fumo copre la zona per **2 giri**: ogni attacco a distanza attraverso il fumo ha **+3 al dado**; muoversi coperti dal fumo non espone. È l'attrezzo dei reparti speciali — e di chi vuole sparire.
+**MIRARE** *(pistole e fucili)* — tiri lo scambio normalmente; quando tocca a te, dichiari che **miri** invece di sparare. Dallo scambio dopo hai **−1 alla somma**; puoi mirare al massimo **2 scambi** (−2). **Mirare implica stare fermi**: se ti muovi o devi difenderti da un colpo, la concentrazione è persa — nessuno mira camminando.
 
-**Granata / ordigno artigianale** — roba rara nel Giappone del 1997: se compare, la scena è già fuori controllo. Danno **fisso**, niente margini:
+**PREPARARSI / RITARDARE** — puoi **ritardare la tua azione**: con iniziativa 4 puoi agire a 4, 5, 6… decidi tu quando entrare. Se dichiari di **non agire affatto** nello scambio, dal prossimo tiro hai **−1**: non è mira, è preparazione — il respiro prima di muoversi. Il −1 **non si cumula** e **resta finché non lo usi**; una volta speso, puoi prepararti di nuovo.
 
-| Ordigno | Danno nell'area |
-|---|---|
-| Granata | **5** |
-| Ordigno artigianale / carica esplosiva | **8** |
+**OPPORTUNITÀ** — se anche il tuo **dado più alto + la tua velocità** resta **sotto l'iniziativa dell'avversario**, sei stato così più rapido da guadagnare **un'azione descrittiva extra**, spendibile in questo scambio o nel prossimo: salti sul cofano *e* ti ripari *e* spari; ricarichi *e* spari. Mai **due attacchi**.
 
-Chi è nell'area tira una difesa (Lucidità per buttarsi via, Pazienza se ha un riparo a portata): successo = **metà danno** (arrotonda per difetto), fallimento = pieno. Le coperture solide danno il loro −2 anche qui.
+**CRITICO — l'1+1** — se tiri **1 e 1**, il colpo è perfetto: il GM definisce il colore, e di norma vale **+1d6** — di **danni** se stavi attaccando, di **assorbimento** se ti stavi difendendo.
+
+**RAFFICA / FUOCO DI SOPPRESSIONE** *(armi con Raffica: sì)* — non spari *a* qualcuno: copri. Dichiari la soppressione:
+- La tua iniziativa = **dado più basso puro**, senza velocità (se l'arma è da sfoderare, la vel. di estrazione si somma comunque). Non stai preparando un colpo: apri il fuoco e basta
+- Gli altri tirano normalmente. Se un nemico agisce prima di te e **ti fa danno**, la raffica salta; se manca, parte
+- Riuscita: **tiro su Presenza** (la tua somma)
+- **Effetto (per lo scambio corrente)**: chi è sotto il fuoco usa il proprio **dado più alto** (+ la sua velocità) come iniziativa → agisce per ultimo. I tuoi compagni si muovono, si riposizionano, sparano con armi lente **prima** di loro
+- **Chi è sotto la raffica** lo decide il GM con la logica: l'arco di fuoco su una porta, un corridoio, il tratto di strada tra due auto. Non "cinque macchine in fila" — un mitragliatore copre una direzione, non un quartiere
+- La **pistola** può farlo una volta: poi il caricatore è vuoto (ricarica 4)
+
+**GRANATA** — attacco su **Presenza** contro **tutti nell'area** (il GM la definisce: la stanza, il vano scale, lo spazio tra le auto). Ognuno difende con la propria somma (Lucidità per buttarsi via, Distacco per la freddezza di defilarsi); l'Assorbe delle coperture vale, e un muro in mezzo ferma quasi tutto. Danno 4 + scarto, a testa.
+
+**FUMOGENO** — un'azione per lanciarlo. Il fumo copre la zona per **2 scambi**: ogni attacco a distanza attraverso il fumo ha **+3 alla somma**; muoversi coperti dal fumo non espone.
 
 ---
 
 ## Sorpresa e Agguati
 
-Se il bersaglio **non sa** dell'attacco, **non tira la difesa**: prende margine + arma, pieno. Per questo gli agguati ammazzano.
+Si può essere sorpresi **fallendo un tiro** — Ascolto per il passo dietro l'angolo, o quello che la scena chiede: lo decide il GM, coi malus che decide il GM. Il Gou *Brivido sulla Nuca* qui vale oro.
 
-Un PG può accorgersene all'ultimo istante con un tiro su **Ascolto** (il passo dietro l'angolo, il click del cane): se riesce, difende normalmente. Il Gou *Brivido sulla Nuca* qui vale oro.
+**Se il tiro fallisce, non c'è difesa**: l'attaccante tira normalmente (scarto + arma) e il bersaglio **prende tutto** — nessun assorbimento dal tiro, riduce solo l'**Assorbe** fisso (giubbotto, copertura). Un cecchino con Pazienza 8 che tira 6 fa scarto 2 + 5 d'arma: **7 danni secchi**. Un cecchino che colpisce è solitamente letale.
+
+Se si sopravvive, iniziano gli scambi.
+
+---
+
+## Le Zone — contatto, vicino, lontano
+
+Niente griglie e niente metri: tre fasce, e il buonsenso.
+
+| Zona | Cos'è | Cosa ci fai |
+|---|---|---|
+| **Contatto** | Lo tocchi — la colluttazione, il tavolo tra voi | Pugni, coltelli, afferrare. Sparare qui è caotico: il GM può dare +1/+2 alla somma |
+| **Vicino** | La stessa stanza, il vicolo, pochi passi | Tutto funziona. Raggiungi una copertura o il contatto con la tua azione |
+| **Lontano** | Oltre — la strada, il tetto di fronte | Solo armi da fuoco. Serve un'azione (o due, dice il GM) per avvicinarsi; il fucile di precisione vive qui |
+
+Muoversi di una fascia è un'azione (quella di chi "fa altro"). Scappare = raggiungere *lontano* e uscire dalla scena: spesso la mossa migliore del combattimento.
 
 ---
 
@@ -151,7 +163,7 @@ I PNG attaccano e difendono con gli stessi attributi dei PG (le comparse senza s
 | Determinato, duro | **6** |
 | Professionista, killer | **9** |
 
-A **Riserva 0** il PNG è **fuori combattimento** — l'esito lo decide il GM in base alla scena: KO, ferito che si trascina via, mani alzate, fuga. La **morte** non è mai un automatismo dei numeri: è una scelta narrativa (e per un poliziotto, un mondo di conseguenze). I PNG notevoli con scheda usano il loro Ki.
+A **Riserva 0** il PNG è **fuori combattimento** — l'esito lo decide il GM in base alla scena: KO, ferito che si trascina via, mani alzate, fuga. La **morte di un PNG** non è mai un automatismo dei numeri: è una scelta narrativa (e per un poliziotto, un mondo di conseguenze). I PNG notevoli con scheda usano il loro Ki — e per i PG la morte invece è reale: a Ki 0 o sotto si muore.
 
 **La pericolosità non è un modificatore da ricordare**: è già negli attributi e nelle Senmon dell'avversario. L'ubriaco molesto ha 4 e tira male; il sicario ha 7, Pistola 2 e un giubbotto. Il sistema fa il resto.
 
@@ -159,18 +171,18 @@ A **Riserva 0** il PNG è **fuori combattimento** — l'esito lo decide il GM in
 
 ## Le Specializzazioni di Combattimento
 
-Nuova famiglia dell'elenco Senmon (vedi `GENKAI_Specializzazioni.md` — regole, costi 9/19/39, usi, paletti):
+Famiglia dell'elenco Senmon (vedi `GENKAI_Specializzazioni.md` — regole, costi 9/19/39, usi, paletti):
 
 | Senmon | Chiave | Copre | Paletti G3 |
 |---|---|---|---|
-| **Lotta** | Presenza | pugni, prese, tecniche d'arresto | Presenza 8 |
-| **Lame e bastoni** | Lucidità o Silenzio | coltello, bastone — *una* delle due, dichiarata | attributo chiave 8 |
+| **Lotta** | Presenza | pugni, prese, tecniche d'arresto — **grado 1 di base per tutti gli investigatori** (accademia) | Presenza 8 |
+| **Lame e bastoni** | Pazienza o Silenzio | coltello, bastone — *una* delle due, dichiarata | attributo chiave 8 |
 | **Pistola** | Lucidità | tiro rapido, estrazione, sparare in movimento | Lucidità 8 |
-| **Fucile** | Distacco | pompa, caccia, assalto, raffiche e copertura | Distacco 8 |
+| **Fucile** | Distacco | pompa, caccia, mitragliatori, raffiche e soppressione | Distacco 8 |
 | **Tiro di precisione** | Pazienza | fucili di precisione — **il grado 1 è il requisito per usarli** | Pazienza 9 + Fucile 2+ |
 | **Esplosivi** | Pazienza | usare, riconoscere e **disinnescare** ordigni | Pazienza 8 + Meccanica 2+ |
 
-Il grado si **sottrae dal dado** dei tiri pertinenti (−1/−2/−3, o −2 con Correzione per il Maestro), dentro il tetto −4. La Senmon *Armi da fuoco* già in elenco resta un'altra cosa: è **conoscenza** (riconoscere armi, fatture, mercato) — saper *sparare* si impara qui.
+Il grado si **sottrae dalla somma** dei tiri pertinenti (−1/−2/−3, o −2 con Correzione per il Maestro), dentro il tetto −4. La Senmon *Armi da fuoco* già in elenco resta un'altra cosa: è **conoscenza** (riconoscere armi, fatture, mercato) — saper *sparare* si impara qui.
 
 ---
 
@@ -180,60 +192,50 @@ Un poliziotto che **estrae** l'arma lo scrive nel rapporto. Uno che **spara** ap
 
 ---
 
-## Esempio completo — il barricato
-
-*Il sospettato Kubo si è chiuso nel suo appartamento con una pistola. Honda entra dal corridoio, Yamamoto lo copre dall'ingresso col fucile a pompa d'ordinanza. Kubo: Lucidità 6, Distacco 5, Riserva 6, dietro una copertura leggera (il tavolo rovesciato, −1).*
-
-**Iniziativa** (gruppo unico): Honda tira 3 e 4 → iniziativa 3, primo attacco 7. Kubo tira 2 e 6 → iniziativa **2**, attacco 8. Yamamoto tira 4 e 5 → iniziativa 4, attacco 9.
-
-**Giro 1** — *Kubo (2)*: spara a Honda col suo tiro tenuto: 8 > Lucidità 6 → **manca**, il colpo scheggia lo stipite. *Honda (3)*: risponde col 7 tenuto ≤ Lucidità 7 (la sua) → margine 0, +3 pistola = 3 in arrivo. Kubo difende: Distacco 5, tira 6, col tavolo −1 → 5 → riesce, margine 0: **prende 3**. Riserva 6→3. *Yamamoto (4)*: non spara — **mira** (−2 al suo prossimo colpo), la canna del pompa piantata sul vano della porta: il prossimo che si affaccia lì, se lo prende.
-
-**Giro 2** — Kubo non si affaccia: con una canna già puntata sulla porta, restare dietro il tavolo è l'unica mossa sensata. Honda avanza in copertura. La voce di Yamamoto: *"Kubo. È finita. Butta l'arma."* — e questo non è più combattimento: è Presenza. Si torna a GENKAI.
-
----
-
 ## Riepilogo Rapido
 
 ```
-SEGNI: ti aiuta = -al dado | ti ostacola = +al dado
-       favorevoli max -4 | il dado non scende sotto 2
-       niente Nami/Kiwami, niente soroban: si perde solo Ki
+SEGNI: ti aiuta = -alla somma | ti ostacola = +alla somma
+       favorevoli max -4 | la somma non scende sotto 2
+       niente Nami/Kiwami (il critico è l'1+1), niente soroban
+       GENKAI SOSPESO: si valuta a fine scontro
+       il danno non ha pavimento: Ki a 0 o sotto = MORTO
 
-INIZIATIVA: 2d6 per contendente, dado più basso agisce prima
-            il tiro È la tua prima azione (somma = attacco)
-            parità: secondo dado, poi simultanei
-            per gruppo di scontro, ordine fisso per tutta la scena
+SCAMBIO: tutti tirano 2d6, ogni scambio
+  iniziativa = dado più basso + velocità dell'arma (più basso agisce)
+  la somma = attacco (attributo arma) per chi agisce, difesa per l'altro
+  CHI SUBISCE DANNO PERDE LA PROPRIA AZIONE
+  chi agisce può fare altro (muoversi, ricaricare, prepararsi)
+  parità: secondo dado puro, poi simultanei
+  in tanti: difesa attiva contro UN attacco a scelta;
+            l'Assorbe vale contro tutti
 
-SCONTRO:  attaccante 2d6 ≤ attr arma → margine = attr - dado
-          danno in arrivo = margine + danno arma
-          difensore 2d6 ≤ attr difesa → assorbe il suo margine
-          difesa fallita = prende tutto | danno minimo 0 | si perde Ki
-          il danno non ha pavimento: Ki a 0 o sotto = MORTO
+DANNO = scarto attaccante + arma - scarto difensore - Assorbe
+DIFESA su Lucidità (fuoco) | Pazienza (lame, pugni) | Distacco (defilarsi)
 
-DIFESE:   Lucidità schivi | Silenzio incassi (solo non letale)
-          Pazienza al riparo | Distacco ti defili
+VELOCITÀ: estrazione (sfoderare) / uso (in mano) / ricarica (= sfoderare)
+ARMI: Pugno 1/1/- d1 (Presenza) | Improvvisata 1/1/- d1-2
+      Coltello 2/1/- d2 (Pazienza) | Pistola 3/1/4 d3 (Lucidità, 3 colpi)
+      Fucile 4/2/5 d4 (Distacco) | Mitr.leggero 4/2/5 d4 raffica
+      Mitr.pesante 5/3/6 d5 raffica | Precisione 5/3/5 d5 (Senmon!)
+      Granata 2/2/- d4 area (Presenza)
+COLPI MULTIPLI: ogni colpo un tiro, +2/+3 a tutte le somme;
+      danno subito = sequenza interrotta
 
-ARMI:     Lotta +1 (Presenza) | Coltello +2 (Lucidità)
-          Bastone +2 (Silenzio) | Pistola +3 (Lucidità)
-          Pompa/caccia +4 (Distacco) | Assalto +4 (Distacco)
-          Precisione +5 (Pazienza, solo istruiti)
-          Mirare (azione): -2 al prossimo colpo | Ricarica: 1 azione
-
-PROTEZIONI (al dado di difesa): leggera -1 | solida -2
-           giubbotto -2 (solo armi da fuoco)
-
-RAFFICA: +3 al dado, danno arma +2, 5 colpi (solo automatiche)
-COPERTURA (fuoco di): 5 colpi, niente danno — il bersaglio
-  sta giù (perde l'azione) o agisce a +2 al dado;
-  e alla prossima iniziativa usa il dado PIÙ ALTO
-
-FUMO: +3 agli attacchi attraverso, dura 2 giri
-GRANATA 5 / ESPLOSIVO 8: danno fisso, difesa riuscita dimezza
-
-SORPRESA: niente difesa (Ascolto per accorgersi in tempo)
+ASSORBE (fisso, sempre): giubbotto 3 | tavolo 1 | muro 5
+MIRARE: fermi, -1 dal prossimo scambio, max 2; salta se difendi/muovi
+PREPARARSI: rinuncia all'azione = -1 al prossimo tiro (non cumula)
+OPPORTUNITÀ: dado alto + velocità < iniziativa avversaria
+      = un'azione descrittiva extra (mai due attacchi)
+CRITICO 1+1: +1d6 danni (attacco) o +1d6 assorbimento (difesa)
+SOPPRESSIONE (armi a raffica; pistola: poi ricarica):
+      iniziativa = dado basso PURO, riuscita su Presenza
+      chi è sotto usa il dado PIÙ ALTO: agisce per ultimo
+SORPRESA: tiro (GM) fallito = niente difesa, danno pieno - solo Assorbe
+ZONE: contatto | vicino | lontano — muoversi di una fascia = un'azione
 PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
 ```
 
 ---
 
-*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · modulo opzionale, bozza v0.1*
+*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · modulo opzionale, v2.0 — da validare al tavolo*

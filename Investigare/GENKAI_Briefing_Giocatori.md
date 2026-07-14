@@ -117,7 +117,7 @@ Ogni PG possiede un Gou: un'abilità straordinaria che va oltre la normale compe
 - **Fallimento** (2d6 > attributo) → dettagli vaghi o parziali
 - **Costo**: 2, 3 o 4 Ki a seconda del Gou
 - Ogni uso fa **raddoppiare** il costo del successivo (2→4→8, 3→6→12). Una **notte di sonno** riabbassa il costo di un grado
-- Puoi **bruciarti**: il costo può portarti fino a Ki 1 (mai sotto). Se finisci a Ki ≤ 3, prima ricevi l'effetto, poi scatta il Genkai — i compagni possono rialzarti (1 Ki ciascuno)
+- **Il costo si paga per intero**: attivi un Gou solo se il Ki ti basta restando ad almeno 1. Puoi bruciarti fino a Ki 1 (prima l'effetto, poi a Ki ≤ 3 il Genkai — i compagni possono rialzarti, 1 Ki ciascuno). Se il costo ti porterebbe a 0 o sotto, **il Gou non si attiva**
 
 ---
 
@@ -148,11 +148,11 @@ Un compagno può aiutarti in un tiro, se presente nella scena. Dichiara **prima*
 
 ## Satori 悟り — Momento di Chiarezza
 
-**Una volta per sessione.** Dichiari **prima** di tirare.
+**Una volta per sessione.** Dichiari **prima** di tirare — e non tiri: il tuo **dado puro vale 2**.
 
-- Successo automatico, ignora qualsiasi malus da En
-- Nessun costo, niente Kiwami (niente bonus)
-- Non si accumula tra sessioni — se non usato, perso
+- Non è un Kiwami (nessun bonus); i **modificatori si applicano normalmente** — con malus pesanti può non bastare
+- Miglior esito **plausibile**: non rende possibile l'impossibile. Solo sui **tuoi** tiri
+- Nessun costo; non si accumula tra sessioni — se non usato, perso
 
 ---
 
@@ -183,7 +183,7 @@ Quando il Ki scende a **3 o meno**:
 | **4. Verifica** | Se il Ki torna sopra 3 → rientri |
 | **5. Fuori gioco** | Se resta ≤ 3 → temporaneamente fuori (spettatore) |
 
-**Rientro**: a ogni cambio scena, tiri 1d6. Se ≤ Ki attuale → +1 Ki. Quando supera 3, rientri.
+**Rientro**: a ogni cambio scena, tiri **2d6 letti come dadi singoli** (mai la somma): ogni dado ≤ Ki attuale → +1 Ki (0, 1 o 2). Quando il Ki supera 3, rientri.
 
 **Perdite di Ki** (costi, pressione, tiri): mai sotto 1 — ti fermi a 1. **Danno da combattimento**: nessun pavimento — a Ki 0 o sotto il PG muore.
 
@@ -211,7 +211,7 @@ Un numero da **0 a 9**, segnato sulla scheda o su un foglio comune: è lo stato 
 | 5 o più | 2d6, prendi il **migliore** (reroll 1) | Giornata buona, riposo sereno |
 | Sotto 5 | 2d6, prendi il **peggiore** (reroll 1) | Giornata pesante, notte agitata |
 
-Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il **Ki massimo**. Dopo il tiro, il soroban torna a 5.
+Il risultato del dado = **Ki recuperati**. Il Ki non supera mai il **Ki massimo**. Il soroban di domani parte dal valore di oggi **avvicinato di 1 verso il 5**: chiudi a 3 → parti da 4; chiudi a 7 → parti da 6.
 
 ---
 
@@ -244,7 +244,7 @@ Il distretto ha i suoi attributi (Organico, Efficienza, Velocità, Risorse, Rete
 > Yamamoto attiva il suo Gou. Costa 3 Ki — li paga subito. Tira 2d6: esce 5, il suo attributo è 7 — successo, dettagli precisi. Se avesse tirato 9 — fallimento, ma il Gou funziona comunque: dettagli vaghi. Se lo riusa senza aver dormito, ne costerà 6; dopo una notte di sonno, di nuovo 3.
 
 **Satori**
-> Fujita è a Ki 4, il caso è a un punto critico. Usa il Satori: successo automatico, niente tiro. Ma è l'unico della sessione — da ora in poi è senza rete.
+> Fujita è a Ki 4, il caso è a un punto critico. Usa il Satori: niente tiro, il dado vale 2 — con Silenzio 7 e nessun malus, è fatta. Ma è l'unico della sessione — da ora in poi è senza rete.
 
 **Nasake (Compassione)**
 > Sato tira 2 (Kiwami+) ma ha Ki al massimo e attributo al massimo consentito — i bonus andrebbero persi. Invece conserva 1 Ki nel Nasake. Due scene dopo, Honda è a Ki 4. Sato gli offre un caffè: "Ehi, cinque minuti fuori." Il giocatore dona il Nasake — Honda sale a Ki 5.

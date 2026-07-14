@@ -37,9 +37,15 @@ Un **uso** è un'occasione concreta in gioco in cui la specializzazione ha incis
 
 I minimi (10 per il grado 2, 25 per il grado 3) sono il default — le singole voci possono derogare.
 
+**I costi si sommano**: ogni grado si paga **in aggiunta** ai precedenti — da zero a Maestro spendi 9+19+39 = **67 punti** in tutto, più gli usi sul campo.
+
+**Valvola del GM (facoltativa)**: un caso in cui la Senmon è stata centrale può valere **3 usi**; il GM può inoltre concedere usi o punti bonus quando la pratica sul campo lo merita.
+
 ### La Correzione (Maestri delle Tecniche)
 
 Quando una voce dà **"+2 con Correzione"** al grado 3: **una volta per scena** puoi ritirare un tiro pertinente appena fallito, oppure — dove il GM lo ritiene possibile — **sistemare a posteriori** un errore nel tuo campo: il pedinamento bruciato si recupera, il setup fallito si ritenta con una tecnica diversa, il rilievo compromesso si rifà prima che la scena venga liberata. Il nuovo risultato vale, **anche se è un 11 o un 12**: correggersi è un rischio.
+
+**I paletti della Correzione**: vale solo su un **tuo** tiro fatto **con quella Senmon**, **entro la scena**. Puoi rifare un tiro fallito — o anche uno riuscito che non ti convince, quando vuoi guardare meglio (può essere il GM stesso a proportelo). Non corregge i tiri degli altri, né quelli del distretto o della Procura. Le difese non hanno Senmon: non si correggono.
 
 Regola pratica: le **Tecniche** (azioni sul campo) hanno il Maestro a +2 con Correzione; le **Conoscenze** (sapere puro) hanno il Maestro a +3. Le eccezioni sono segnate nell'elenco.
 

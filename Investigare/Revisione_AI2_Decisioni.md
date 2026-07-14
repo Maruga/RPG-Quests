@@ -1,8 +1,9 @@
 # Revisione AI #2 — Registro decisioni (2026-07-13)
 
-> **Documento di lavoro.** Rassegna punto-per-punto della seconda review esterna (30 punti).
-> Le decisioni si annotano qui man mano; le modifiche si applicano **tutte insieme a fine rassegna**. Non applicare nulla prima.
-> Verdetti di verifica: già controllati sui file (2026-07-13, notte).
+> **✅ APPLICATO IL 2026-07-14** — giro unico completato: 44 fix su 8 manuali/schede notevoli + **riscrittura completa `GENKAI_Combattimento.md` v2.0** (sistema a scambi) + 5 schede PG allineate (equipaggiamento v2 + Lotta 1 accademia). Verifica residui: zero. Le copie schede in `Avventura Sake/PG/` non esistono più (cartella riorganizzata dall'utente con `_adventure.json`): fonte = `pg/PG_0*.md`.
+> **Kyōryoku — RISOLTO (2026-07-14)**: canone confermato dall'utente = com'è scritto nei manuali ("fallimento leggero → SOLO il compagno perde 1 Ki"). Nessuna modifica.
+
+> Rassegna punto-per-punto della seconda review esterna (30 punti). Verdetti verificati sui file (2026-07-13).
 
 ## Stato
 
@@ -28,16 +29,16 @@
 | 18 | Nessuna tregua post-Kage | La tregua c'è già (soroban 6); si esplicita il "quando" del nuovo Kage | ✅ **DECISO** — A, riga esplicita |
 | 19 | Consenso su segreti/sabotaggio PG | A + GM ultima parola + paragrafo "il caso irrisolto" (fallire è previsto, e un irrisolto è un seme) | ✅ **DECISO** |
 | 20 | Fuoco di copertura vs iniziativa fissa | **SUPERATO**: l'utente ristruttura il combattimento — iniziativa a ogni scambio | ✅ **DECISO** — nuovo sistema a scambi (vedi sotto) |
-| 21 | Prima azione senza tiro | Vero micro-buco — fix 1 frase | — |
-| 22 | Lucidità dominante | Parziale — bilanciamento da playtest, mitigato da Senmon/paletti | — |
-| 23 | Difesa gratuita illimitata | Design esplicito ("difendi ogni volta") | — |
-| 24 | Sorpresa: Ascolto senza difficoltà | Il tiro è lo standard di sistema (niente tiri opposti in GENKAI) | — |
-| 25 | Mancano zone/distanze | Assenza voluta (teatro della mente); 3 fasce = opzione per revisione modulo | — |
-| 26 | Relazioni profonde vs Kiwami ±1 | **GIÀ SCRITTO** (Reg 785: "non cambiano per effetto dei tiri") | — |
-| 27 | En temporaneo vs permanente | Micro-chiarimento sensato — 1 riga | — |
-| 28 | Ki max ritirato < Ki attuale + reroll 1 | Vero micro-buco — 1 riga (+1 parola sul reroll "una sola volta") | — |
-| 29 | Regole duplicate | = punto 8 prima review: fonte unica già in piano; allineamento fatto 2026-07-12 | — |
-| 30 | Etichette lavorazione + riferimenti file | Pre-stampa; `Kage_Notevoli.md` e `Watanabe_Hideo_Procuratore.md` ESISTONO (pacchetto AI incompleto) | — |
+| 21 | Prima azione senza tiro | **DECADUTO** col sistema a scambi (ogni scambio è un tiro d'azione) | ✅ chiuso |
+| 22 | Lucidità dominante | Ridimensionato dal v2 (attributi per arma distribuiti; pistola→Lucidità è tematico) | ✅ chiuso — com'è |
+| 23 | Difesa gratuita illimitata | RISOLTO dal v2: si difende attivamente contro UN solo attacco | ✅ **DECISO** (vedi sotto) |
+| 24 | Sorpresa | Ridefinita dall'utente: tiro deciso dal GM, fallito = niente difesa + danno massimo | ✅ **DECISO** (vedi sotto) |
+| 25 | Zone/distanze | Si inseriscono le 3 fasce | ✅ **DECISO** — contatto/vicino/lontano |
+| 26 | Relazioni profonde vs Kiwami ±1 | Già scritto (Reg 785) — si aggiunge solo il micro-rimando | ✅ **DECISO** |
+| 27 | En temporaneo vs permanente | Si consuma prima il temporaneo | ✅ **DECISO** |
+| 28 | Ki max ritirato | Righe confermate + regole sul ritiro (GM decide il quando; comprati sempre sommati) | ✅ **DECISO** |
+| 29 | Regole duplicate | Fonte unica già in piano; allineamento fatto 2026-07-12 | ✅ chiuso — nessuna azione nuova |
+| 30 | Etichette lavorazione + riferimenti file | Pre-stampa; i file "mancanti" esistono; BOZZA Combattimento decade con la riscrittura v2 | ✅ chiuso |
 
 ## Decisioni prese
 
@@ -124,13 +125,26 @@ Sostituisce iniziativa di gruppo fissa e struttura a turni del modulo BOZZA. Reg
 - **Attributi**: attacco per arma (pugnale→Pazienza, pistola→Lucidità, granata→Presenza…); **difesa** su Lucidità/Distacco/Pazienza secondo situazione (linee guida + GM).
 - **Assorbe** (giubbotto 3, tavolo 1, muro 5): riduzione **fissa e automatica** del danno, indipendente dalla difesa — la protezione c'è, punto.
 - **Spareggio**: velocità totale più bassa → secondo dado puro → simultanei.
-- **Opportunità**: se anche il tuo **dado più alto + velocità** resta sotto l'iniziativa dell'avversario → un'azione descrittiva extra (riparo+sparo, ricarico+sparo — mai due attacchi), spendibile nel round o nel successivo. *(Scelta: iniziative modificate, non dadi puri — consiglio accettato... da confermare.)*
+- **Opportunità** (✅ confermata): se anche il tuo **dado più alto + velocità dell'arma** resta sotto l'iniziativa dell'avversario → un'azione descrittiva extra (riparo+sparo, ricarico+sparo — mai due attacchi), spendibile nel round o nel successivo.
 - **Critico 1+1**: in attacco +1d6 danni; in difesa +1d6 assorbimento. Il GM definisce il colore.
 - **Colpi multipli** (pistola max 3): ogni colpo = tiro 2d6 separato con propria iniziativa; malus fisso sulla somma di TUTTI i colpi (+3 se tre, +2 se due); i colpi si intercalano con le azioni nemiche in ordine d'iniziativa; **se prendi danno la sequenza si interrompe**. Esempio utente validato (8>7 manca · 7=7 → 3 danni · 6<7 → 4 danni).
 - **Tabella armi v2** (vel estr. / vel uso / ricarica / danno / raffica / max colpi): Pugno 1/1/0/1/no/0 · Coltello 2/1/0/2/no/0 · Pistola 3/1/4/3/no/3 · Fucile 4/2/5/4/no/0 · Mitragliatore leggero 4/2/5/4/sì/9 · Mitragliatore pesante 5/3/6/5/sì/9 · Granata 2/2/2/4/no/0. Protezioni (indossare/assorbe): Giubbotto 4/3 · Tavolo ribaltato 2/1 · Muro 0/5. **Danno pistola = 3 (tabella), da provare sul campo.**
 - **Genkai SOSPESO in combattimento** (l'adrenalina lo supera): si valuta a fine scontro. Morte: danno senza pavimento, Ki ≤ 0 = morto.
-- **RAFFICA — DA DEFINIRE** (bozza utente): chi la fa non mira, protegge i compagni; prende il dado più alto come iniziativa; tira solo la riuscita; i compagni agiscono coperti; chi si espone riceve gli attacchi.
+- **RAFFICA / FUOCO DI SOPPRESSIONE (✅ definita)**: dichiari la soppressione — non spari *a* qualcuno, copri. Iniziativa = **dado più basso PURO** (senza velocità) se l'arma è in mano (se da sfoderare: + vel. estrazione). Gli altri tirano normalmente; se un nemico agisce prima e ti fa danno → la raffica salta; se manca → parte. Riuscita: **tiro su Presenza** (somma 2d6). Effetto (solo scambio corrente): **chi è sotto il fuoco usa il proprio dado più alto** (+ la sua velocità) come iniziativa → agisce per ultimo; i compagni si muovono/riposizionano/sparano con armi lente prima. **Chi può farla**: armi a raffica liberamente; **pistola** sì ma poi va ricaricata (svuoti il caricatore); **fucili no** salvo semiautomatici. **Chi la subisce**: lo decide il GM con la logica (tutti quelli nell'arco di fuoco; non "5 macchine") — mettere esempi reali nel modulo.
+- **MIRARE (✅ definita)** (pistole e fucili): tiri lo scambio normalmente; quando tocca a te dichiari che miri invece di sparare → dallo scambio dopo **−1 al dado**; max **2 scambi** di mira (quindi fino a −2, da confermare in stesura). **Mirare implica stare fermi**: se ti muovi o devi assorbire/schivare un colpo, la concentrazione è persa — nessuno mira camminando.
+- **MULTI-CONTENDENTI (✅, ex punto 23)**: in 3-contro-1 il singolo **difende attivamente contro UN solo attacco** (tira una volta, contro l'attacco che sceglie — da precisare in stesura); gli altri colpi passano pieni. Copertura/giubbotto (**Assorbe**) valgono invece contro **tutti** i colpi, senza tiro. Il numero conta, eccome — la fuga resta la risposta giusta.
+- **SORPRESA (✅ definitiva, ex punto 24)**: si può essere sorpresi **fallendo un tiro** (Ascolto o altro — lo decide il GM, coi malus che decide il GM). Tiro fallito → **nessuna difesa**: l'attaccante tira **normalmente** (scarto reale + arma) e il bersaglio **prende tutto** — nessun assorbimento dal tiro, riduce solo l'Assorbe fisso (giubbotto/copertura). Es.: cecchino Pazienza 8 tira 6 → scarto 2 + arma + eventuali = danno. Un cecchino che colpisce è solitamente letale. Se si sopravvive, iniziano gli scambi.
+- **ZONE (✅, ex punto 25)**: tre fasce narrative — **contatto / vicino / lontano** — mezza pagina di guida (quando usi il coltello, quando raggiungi una copertura, quando la fuga è realistica). Niente griglie.
+- **RITARDARE / PREPARAZIONE (✅ definitiva)**: puoi **ritardare la tua azione** — con iniziativa 4 puoi partire a 4, 5, 6… decidi tu quando. Se dichiari di **non agire affatto** nello scambio, dal prossimo tiro hai **−1**: non è mira, è preparazione. Il −1 **non si cumula mai** e **si mantiene finché non lo usi** (dichiari al 1°, usi al 2° — o lo tieni al 3°, sempre −1); una volta usato, puoi ri-dichiarare preparazione. Ripetibile senza limiti.
+- **Stesura v2 — aggiunte confermate (2026-07-14)**: le **Senmon di scontro restano identiche** (il grado si sottrae dal dado). In tabella armi si aggiungono il **fucile di precisione** (arma da Senmon dedicata) e le **armi improvvisate** (sedia, libro, bottiglia — il combattimento in casa, lo scontro non voluto: è il caso tipico di GENKAI). **Lotta 1 di base a tutti gli investigatori** (accademia: judo/kendo + taiho-jutsu) — proposta: la Senmon di creazione dev'essere diversa da Lotta; additiva anche per i pregen *(in attesa di conferma formulazione)*.
+- **Schede PG**: tabella equipaggiamento da **allineare al v2** nello stesso giro (poi revisione attenta pre-sessione).
+- **Manovre future** (non ora, solo basi): afferrare, disarmare, sparare da steso…
 - Conseguenze: punto 20 reviewer decaduto; i punti 21/23/24/25 da rileggere sul sistema nuovo; il modulo `GENKAI_Combattimento.md` va **riscritto** (non ritoccato).
+
+**26-27-28 · En e Ki — micro-fix (2026-07-14)**
+- **26**: accanto a "Kiwami positivo: En +1" (Reg ~779) → aggiungere *"(non per le relazioni profonde)"*.
+- **27**: dove si parla di En temporaneo (Specializzazioni/interrogatorio + Reg sez. En): *"Si consuma prima l'En **temporaneo** della scena, poi quello permanente."*
+- **28** (Reg sez. Ki): *"Il dado del Ki si ritira **all'inizio di un nuovo caso, o quando il GM lo ritiene opportuno** (una settimana che passa, una svolta di vita). Il nuovo valore **sostituisce** il vecchio, in su o in giù; i punti Ki **comprati si sommano sempre** (es.: attributo più basso 5, dadi 2 e 4 → prendi il 4, +2 comprati = Ki massimo 11). Se il nuovo massimo è inferiore al Ki attuale, il Ki attuale scende subito al nuovo massimo. Il dado con 1 si ritira **una sola volta**."* (Nota: il caso "Genkai da ricalcolo" è impossibile — Ki max mai sotto ~5.)
 
 **19 · Consenso PG-PG + il caso irrisolto (2026-07-13)**
 - Manuale Kage (sez. Shimi/favori) + richiamo Manuale GM: *"Il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. Una Shimi può complicare il caso — non dev'essere lei a renderlo insolubile."*

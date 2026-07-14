@@ -40,6 +40,8 @@ Per ogni PG il GM tiene una mezza pagina, aggiornata tra le sessioni. Nessun gio
 | **4** | Critico | Minaccia qualcosa di reale (lavoro, famiglia, libertà). **Il soroban parte a 4** invece che a 5 |
 | **5** | Collasso | L'evento maggiore è inevitabile e arriva presto. **Soroban a 3**, e il GM piazza un'intrusione garantita a sessione |
 
+A Peso 4-5 il soroban lo tradisce — ed è voluto: quando un problema ti consuma, i colleghi lo vedono in faccia. Segreto resta il **contenuto** del Kage, non il suo peso. Se un compagno chiede e ascolta, quello è il gioco.
+
 Il Peso si muove per tre vie: le **scene giocate** (gestita bene: il GM può abbassarlo di 1 se il PG ha affrontato la radice; gestita male o evitata: può salire), le **scelte del PG** (pagare, cedere, affrontare, nascondere), e il **Tiro del Kage**.
 
 > Il Peso non è un punteggio da comunicare al giocatore. Il giocatore lo *sente*: dalla frequenza delle telefonate, dal tono di chi bussa.
@@ -138,6 +140,8 @@ Ogni scorciatoia sporca lascia una **macchia** sul registro del GM: cosa ha fatt
 
 - Quando il Tiro del Kage dà **2-4** e c'è una Shimi nel registro, il GM può — invece della sfortuna normale — **far riemergere la macchia**: il collega che aveva visto, il riscossore che ricorda, il poliziotto che ha ricostruito i movimenti e ora vuole la sua parte
 - Una Shimi riemersa di solito **è un nuovo Kage**, o innesta il vecchio di nuova linfa
+
+**Il Kage e il tavolo**: il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. Una Shimi può complicare il caso — non dev'essere lei a renderlo insolubile.
 - Le Shimi si chiudono solo affrontandole: confessare prima che ti scoprano, restituire, incastrare chi ricatta. Mai gratis
 
 > **Esempio (quello giusto)**: Honda "risolve" lo strozzino sottraendo soldi dai fondi sequestrati di un caso. Debito chiuso, Kage risolto? No: **Shimi grave** nel registro. Tre casi dopo, tiro del Kage: 3. Un agente della contabile lo ferma nel parcheggio: "Ho rifatto i conti di quel sequestro, Honda-san. Mancano due milioni. Ne parliamo?" — Il Kage è tornato. Ha solo cambiato faccia.
@@ -154,6 +158,8 @@ Requisiti (tutti e tre):
 3. **Nessuna scorciatoia aperta**: le Shimi collegate vanno chiuse — o accettate come rischio permanente nel registro
 
 **Ricompensa** (quando il GM dichiara il Kage risolto): **8 punti Shugyō** — quasi un grado di Senmon, o metà strada verso un attributo. E la pace si sente: per il caso successivo **il soroban parte a 6**.
+
+**La tregua**: il nuovo Kage non ha fretta — si co-crea con calma e può entrare in gioco dal caso successivo o anche dopo, lo decidono insieme giocatore e GM. Il caso con il soroban a 6 è la vostra pace: godetevela, è rara.
 
 **Poi la vita continua**: GM e giocatore costruiscono insieme il **Kage successivo** — spesso nato dal finale del primo (una Shimi accettata, un rapporto cambiato, un nemico fatto per strada). Un PG senza Kage non esiste: chi non ha ombre non è un protagonista di GENKAI.
 

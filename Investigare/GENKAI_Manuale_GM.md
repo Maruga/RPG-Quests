@@ -149,7 +149,7 @@ Quando un PG chiede di fare qualcosa che richiede autorizzazione:
 
 **3. Tira sulla Procura** usando la scheda dell'ente (vedi Manuale Situazioni). Il risultato ti dice non solo se l'autorizzazione arriva, ma **quando e con che margine**.
 
-**4. Comunica il risultato attraverso Yamada.** *"Il PM ha firmato il mandato. Avete 48 ore e potete accedere solo alla residenza principale, non all'ufficio."* Oppure: *"Il PM vuole vedere le prove prima di firmare. Dice che un alibi traballante non basta."*
+**4. Comunica il risultato attraverso Yamada.** *"La Procura ha ottenuto il mandato dal giudice. Avete 48 ore e potete accedere solo alla residenza principale, non all'ufficio."* Oppure: *"Il PM vuole vedere le prove prima di chiedere il mandato al giudice. Dice che un alibi traballante non basta."*
 
 ## Linee guida per il GM
 
@@ -161,9 +161,9 @@ Quando un PG chiede di fare qualcosa che richiede autorizzazione:
 
 **In Giappone il sistema è tendenzialmente favorevole alla polizia.** I magistrati giapponesi del 1997 autorizzano più facilmente rispetto ai sistemi europei — il tasso di approvazione delle richieste è altissimo. Puoi riflettere questo con un bonus situazionale di +1 ai tiri sulla Procura. Ma non è automatico: un magistrato scrupoloso esiste anche in Giappone, e può diventare un personaggio interessante.
 
-> **Esempio al tavolo**: I PG chiedono di perquisire l'ufficio di Hayashi. Hanno l'alibi smontato e il tabulato telefonico. Prove indiziarie solide — difficoltà 0. Yamada inoltra la richiesta. Il GM tira sulla Procura (Efficienza 7): dado 6. Successo. Yamada entra con il mandato in mano: *"Il PM ha firmato. Avete accesso all'ufficio dalle 8 alle 18, in presenza del suo avvocato se lo richiede. Non toccate niente che non sia pertinente al caso."*
+> **Esempio al tavolo**: I PG chiedono di perquisire l'ufficio di Hayashi. Hanno l'alibi smontato e il tabulato telefonico. Prove indiziarie solide — difficoltà 0. Yamada inoltra la richiesta. Il GM tira sulla Procura (Efficienza 7): dado 6. Successo. Yamada entra con il mandato in mano: *"La Procura ha ottenuto il mandato dal giudice. Avete accesso all'ufficio dalle 8 alle 18, in presenza del suo avvocato se lo richiede. Non toccate niente che non sia pertinente al caso."*
 
-> **Esempio di rifiuto**: I PG vogliono intercettare il telefono di un testimone che non è nemmeno sospettato — solo perché hanno un brutto presentimento. Nessun tiro. Yamada scuote la testa: *"Il PM non firmerà mai un'intercettazione su un testimone senza indizi. Trovatemi qualcosa di concreto."*
+> **Esempio di rifiuto**: I PG vogliono i tabulati telefonici di un testimone che non è nemmeno sospettato — solo perché hanno un brutto presentimento. Nessun tiro. Yamada scuote la testa: *"Il PM non chiederà mai i tabulati di un testimone senza indizi. Trovatemi qualcosa di concreto."* (Le intercettazioni, ricorda, nel 1997 sono illegali per chiunque — vedi *Quadro Legale*.)
 
 ---
 
@@ -200,7 +200,7 @@ Questi sono i tempi reali del sistema giapponese nel 1997. Usali come conto alla
 | **Fermo iniziale** (逮捕 taiho) | **48 ore** | La polizia arresta il sospettato. Ha 48 ore per interrogarlo e raccogliere prove, poi deve riferire al procuratore o rilasciarlo. |
 | **Decisione del procuratore** | **+24 ore** (72 ore totali) | Il procuratore riceve il caso e decide: chiedere al giudice la custodia cautelare, oppure rilasciare. |
 | **Custodia cautelare** (勾留 kōryū) | **+10 giorni** | Il giudice autorizza la detenzione. La polizia continua gli interrogatori. |
-| **Proroga** | **+10 giorni** | Il procuratore chiede un'estensione. Quasi sempre concessa. |
+| **Proroga** | **+10 giorni** | Il procuratore chiede al **giudice** un'estensione. Quasi sempre concessa. |
 | **Totale massimo** | **23 giorni** | Dopo 23 giorni senza incriminazione formale, il sospettato **deve** essere rilasciato. |
 
 **Dove viene tenuto il sospettato**: non in un carcere — in una cella dentro il commissariato. Il sistema si chiama *daiyo kangoku* (代用監獄, prigione sostitutiva). Il sospettato è sotto sorveglianza costante della polizia, giorno e notte. Gli interrogatori possono durare dalle 9 del mattino alle 9 di sera, quasi ogni giorno.
@@ -443,6 +443,28 @@ Un indizio è un'informazione che punta in una direzione. Da solo non dimostra n
 
 Gli indizi non provano. Suggeriscono.
 
+## I quattro tipi di indizio — per chi costruisce casi
+
+Il principio *"gli indizi si danno sempre"* vale per **gli indizi**: ciò che i PG trovano indagando di persona. Le operazioni delegate al distretto sono un'altra cosa — **vantaggi operativi**: il loro rischio è il prezzo di delegare, e non nega mai l'indizio in sé. Quando costruisci un caso, classifica:
+
+| Tipo | Cosa può succedergli |
+|---|---|
+| **Essenziale** | Mai negabile, distruttibile o falsificabile senza una **seconda pista evidente**. Ogni conclusione indispensabile ha più vie per essere raggiunta — è così che sono costruite le avventure della serie |
+| **Approfondimento** | Può arrivare tardi o incompleto: arricchisce, non regge il caso da solo |
+| **Conferma** | Può mancare del tutto senza fermare il caso |
+| **Vantaggio operativo** | Può fallire: è la comodità di delegare, non l'indizio |
+
+E le **operazioni delegate** si dividono per natura:
+- **Sul campo, irripetibili** (pedinamento, appostamento): possono fallire davvero — prevedi la conseguenza *prima* di tirare
+- **D'ufficio, ripetibili** (tabulati, esami, archivi, richieste formali): il fallimento è **ritardo**, anche grave — ma un tabulato si richiede, un esame si rifà
+- **La perdita di una prova** è il danno più grave: mai l'esito di un tiro qualsiasi — solo un evento raro e **deliberato** del GM (una Corruzione che si attiva, una scelta narrativa), e di base molto difficile
+
+## Il caso irrisolto
+
+Fallire un caso ci sta — ed è previsto: alcuni casi sono costruiti per poter finire male o non chiudersi, e nessun investigatore ha il 100%. La distinzione da tenere ferma: *"gli indizi si danno sempre"* significa che **il dado non blocca l'indagine** — non che il caso si risolva sempre. Le conclusioni sbagliate restano possibili: è il gioco.
+
+E un irrisolto non è un vicolo cieco — è un **seme**. Può riaprirsi più avanti: nuove prove, una frase che sfugge in un interrogatorio futuro, una scoperta in un altro caso. Il cold case che torna a bussare è tra i migliori inneschi che una campagna possa avere: tienili nel cassetto, e falli respirare ogni tanto.
+
 ## Cosa sono le prove
 
 Una prova è un'informazione che **stabilisce un fatto** con ragionevole certezza. Può essere un singolo elemento forte, oppure una combinazione di indizi che insieme non lasciano alternative plausibili.
@@ -476,7 +498,7 @@ Usa questa scala per valutare a che punto sono i PG durante l'indagine. Non è u
 | **0 — Niente** | Sospetti vaghi, intuizioni | Niente che richieda autorizzazione. Possono solo investigare, osservare, fare domande |
 | **1 — Indizio singolo** | Un elemento che punta in una direzione | Investigare su quella direzione, cercare conferme. Non basta per il magistrato |
 | **2 — Indizi multipli** | Due o tre elementi che convergono | Chiedere autorizzazioni minori (accesso ad archivi, verifica documenti). Il magistrato ascolta ma potrebbe esitare |
-| **3 — Prova indiziaria** | Indizi convergenti senza alternativa plausibile | Chiedere mandati (perquisizione, intercettazione, sequestro documenti). Il magistrato firma |
+| **3 — Prova indiziaria** | Indizi convergenti senza alternativa plausibile | Chiedere mandati (perquisizione, sequestro documenti). Il magistrato firma |
 | **4 — Prova diretta** | Elemento che stabilisce il fatto | Chiedere il fermo o la custodia cautelare. L'arresto è giustificato |
 | **5 — Caso chiuso** | Prove che coprono movente, opportunità, e mezzo | Il caso va in Procura per il rinvio a giudizio |
 
@@ -881,6 +903,8 @@ Scegli il giocatore il cui PG è meno coinvolto in quel momento. Ha il compito d
 
 **Come valutare la scena:**
 Gli altri giocatori votano se la scena è stata gestita bene o male. Il criterio non è "ha risolto il problema" ma "ha reagito in modo umano e credibile". Un investigatore che crolla davanti al padre malato e non riesce a dire nulla è una gestione eccellente — più che uno che trova la risposta perfetta.
+
+**Il Kage e il tavolo**: il Kage crea conflitto tra personaggi — mai tra giocatori. Segreti, indagini reciproche e scorciatoie sporche funzionano solo se il tavolo ha accettato questo tipo di gioco: parlatene alla sessione zero. **L'ultima parola è del GM**, in base al tipo di campagna e a quanto concordato. (Il dettaglio è in `GENKAI_Kage.md`.)
 
 ---
 

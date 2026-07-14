@@ -12,7 +12,7 @@
 | **En**       | 縁     | *Legame* — il valore della relazione con un PNG                                                   |
 | **Enja**     | 縁者    | *Conoscenza* — contatto esterno che può aiutare                                                   |
 | **Kage**     | 影     | *Ombra* — il problema personale che irrompe nel caso                                              |
-| **Satori**   | 悟り    | *Illuminazione* — successo automatico, una volta per sessione                                     |
+| **Satori**   | 悟り    | *Illuminazione* — una volta per sessione, il dado puro vale 2 (modificatori normali)              |
 | **Kiwami**   | 極     | *Estremo* — risultato critico del dado (2 o 12)                                                   |
 | **Nami**     | 波     | *Onda* — risultato notevole del dado (3 o 11), solo su prove attributi                            |
 | **Nasake**   | 情け    | *Compassione* — punto Ki conservato quando il bonus andrebbe perso                                |
@@ -62,6 +62,12 @@ Ogni PG ha 6 attributi con valore da **4 a 9**.
 | 5-6    | Normale - nella media                     |
 | 4      | Debole - difficoltà evidente (minimo)     |
 
+### Dotazione Professionale
+
+**Senmon iniziale**: scegli **una Senmon di grado 1** (Praticante, +1), giustificata dal tuo passato — cosa sapevi fare prima di entrare nella squadra? (Elenco e regole: `GENKAI_Specializzazioni.md`.) La Senmon di creazione dev'essere **diversa da Lotta** — quella ce l'avete già tutti:
+
+**Dotazione d'accademia**: ogni investigatore ha **Lotta 1** di base — judo, kendo e le tecniche d'arresto (taihō-jutsu) dell'accademia di polizia. Vale per chiunque abbia il distintivo, pregenerati compresi (per loro è additiva: le schede restano come sono, più Lotta 1).
+
 ---
 
 ## Ki 気
@@ -71,11 +77,11 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 
 **Ki massimo** = attributo più basso (di scheda) + 2d6 (prendi il dado più alto) + eventuali punti Ki comprati (vedi *Crescita tra i Casi*). Tetto assoluto: **12**.
 
-> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo. Il minimo possibile è quindi 2.
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo — **una sola volta**. Il minimo possibile è quindi 2 (se esce ancora 1, tieni l'1).
 
-**Il dado rappresenta il momento**: non sei sempre al massimo delle tue energie — hai periodi top e periodi no. **A fine caso, o dopo un lungo periodo, il dado si ritira**: il nuovo Ki massimo (attributo più basso + nuovo dado + comprati) sostituisce il vecchio, in su o in giù. Alzare l'attributo più basso di scheda alza anche il Ki massimo; i punti comprati restano sempre.
+**Il dado rappresenta il momento**: non sei sempre al massimo delle tue energie — hai periodi top e periodi no. **Il dado si ritira all'inizio di un nuovo caso, o quando il GM lo ritiene opportuno** (una settimana che passa, una svolta di vita): il nuovo Ki massimo (attributo più basso + nuovo dado + comprati) **sostituisce** il vecchio, in su o in giù. Se il nuovo massimo è **inferiore al tuo Ki attuale**, il Ki attuale scende subito al nuovo massimo. Alzare l'attributo più basso di scheda alza anche il Ki massimo; i punti comprati **si sommano sempre**.
 
-> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 2d6: esce 3 e 5, prendi il 5. Il tuo Ki massimo è 5+5 = 10. A fine caso lo ritiri: esce 2 e 3 → il nuovo massimo è 5+3 = 8. Periodo no.
+> **Esempio**: Il tuo attributo più basso è Pazienza con 5. Tiri 2d6: esce 3 e 5, prendi il 5. Il tuo Ki massimo è 5+5 = 10. A fine caso lo ritiri: esce 2 e 3 → il nuovo massimo è 5+3 = 8. Periodo no. Se avessi comprato 2 punti Ki, sarebbero 5+3+2 = 10: i comprati non si perdono mai.
 
 ### Usi del Ki
 
@@ -123,7 +129,9 @@ Il risultato del dado = **Ki recuperati**.
 
 #### Dopo il Recupero
 
-Dopo aver tirato, il giocatore **riporta il proprio Soroban a 5**. La nuova giornata parte da zero.
+Dopo aver tirato, il Soroban del giorno nuovo parte dal **valore di chiusura di ieri, avvicinato di 1 verso il valore di riposo** (5 di norma; 4 o 3 se il Peso del Kage lo impone — vedi `GENKAI_Kage.md`). Vale in entrambe le direzioni: chiudere a 7 significa partire da 6; chiudere a 3, partire da 4. Le giornate estreme lasciano coda — il buonumore ti sorregge, le giornate nere pesano ancora.
+
+> **Esempio**: chiudi la giornata a 3 → domani parti da 4, e solo dopodomani torni a 5. Chiudi a 9 (la gran giornata) → parti da 8, poi 7, poi 6: la scia ti accompagna per giorni. Con Peso 4 sul Kage, il tuo valore di riposo è 4: converge lì, non a 5.
 
 #### Il Soroban Non è un Segreto
 
@@ -210,7 +218,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 
 > **Esempio**: Gou da 2 Ki. Lo usi la mattina: paghi 2. Lo riusi nel pomeriggio: paghi 4. Quella notte dormi — il costo scende di un grado. Il giorno dopo lo usi ancora: paghi di nuovo 4, non 8. Un'altra notte senza usarlo e il costo torna a 2.
 
-**Bruciare se stessi**: puoi attivare un Gou anche se il costo ti porta in zona Genkai. Il Ki scende fino a un minimo di **1**, mai sotto — per i costi volontari non si esce mai definitivamente dal gioco. Se dopo il pagamento sei a Ki ≤ 3, il Genkai scatta **appena l'effetto del Gou si conclude**: prima ricevi quello che hai pagato — la visione, l'informazione — poi crolli. I compagni possono aiutarti a rialzarti come in ogni Genkai (1 Ki ciascuno).
+**Attivazione — il costo si paga per intero**: attivi un Gou **solo se puoi pagarne il costo intero restando ad almeno Ki 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi quello che hai pagato (la visione, l'informazione), poi se sei a Ki ≤ 3 il Genkai scatta **appena l'effetto si conclude**. Ma se il costo ti porterebbe a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali, mai — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I compagni possono rialzarti come in ogni Genkai (1 Ki ciascuno).
 
 > **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
@@ -775,9 +783,9 @@ Quando interagisci con un PNG:
 
 **Regole importanti**:
 - Il modificatore **non influenza i Kiwami**: solo il dado puro (2 o 12) determina i Kiwami
-- Se il dado puro indica fallimento, ma con il bonus dell'En hai successo → l'En cala di 1 (il PNG ti ha aiutato, ma inizia a porsi domande)
-- **Kiwami positivo (dado = 2)**: En +1
-- **Kiwami negativo (dado = 12)**: En -1
+- Se il dado puro indica fallimento, ma con il bonus dell'En hai successo → l'En cala di 1 (il PNG ti ha aiutato, ma inizia a porsi domande). Se hai anche un **En temporaneo** di scena (tecniche di interrogatorio), si consuma **prima quello**, poi il permanente
+- **Kiwami positivo (dado = 2)**: En +1 *(non per le relazioni profonde, vedi sotto)*
+- **Kiwami negativo (dado = 12)**: En -1 *(non per le relazioni profonde)*
 - I Nami (3 e 11) **non si applicano** ai tiri di En — valgono solo per le prove sugli attributi
 
 ### Relazioni Profonde
@@ -793,14 +801,15 @@ Le relazioni a ±4 e ±5 sono **profonde**: non cambiano per effetto dei tiri. C
 
 **Una volta per sessione**, il PG può invocare il Satori:
 
-- Dichiari **prima** di tirare
-- Il tiro è **successo automatico**
-- Ignora qualsiasi malus da En o situazione
-- Nessun costo
-- Non può essere Kiwami (niente bonus)
-- Non si accumula tra sessioni - se non usato, perso
+- Dichiari **prima** di tirare — e non tiri: il tuo **dado puro vale 2**, il meglio che potevi fare
+- **Non è un Kiwami**: nessun bonus, l'En non sale
+- Tutti i **modificatori si applicano normalmente** (En, situazione, bonus): se anche col 2 il totale supera l'attributo, il tiro **fallisce** — il Satori è il meglio di te, non un miracolo
+- Vale sui **tuoi** tiri — non su quelli del distretto o della Procura
+- Nessun costo; non si accumula tra sessioni: se non usato, perso
 
-> **Esempio**: Devi convincere il capo della yakuza a lasciarti andare. En -4, situazione disperata. Invochi il Satori: riesci. Come, lo descrivi tu - ma funziona.
+Il Satori garantisce il **miglior esito plausibile** dell'azione dichiarata: non rende possibile l'impossibile, non crea prove che non esistono, non cancella chi è un PNG — un boss resta un boss, un padre resta un padre.
+
+> **Esempio**: Devi convincere il capo della yakuza a lasciarti andare — En -4, Presenza 6. Invochi il Satori: dado 2, +4 dal malus = 6 ≤ 6. Per un soffio: il boss decide che non vali il fastidio. Ti lascia andare — non diventa tuo amico, l'En resta -4. (Con Presenza 5 non sarebbe bastato nemmeno il momento perfetto.)
 
 ---
 
@@ -826,6 +835,8 @@ Un compagno può aiutarti in un tiro, se narrativamente presente e coinvolto nel
 
 > **Esempio**: Honda deve reggere una scena brutale (Distacco 6). Sato dice: "Ti copro io — non guardare il corpo, concentrati sulle prove." Honda tira con Distacco 7 (6+1). Esce 8. Fallimento leggero — Honda non perde nulla, ma Sato perde 1 Ki: voleva fare da scudo e non è bastato. Se fosse uscito 5, successo — nessuno perde nulla. Se fosse uscito 12, Kiwami negativo: Honda perde -1 Distacco -1 Ki, Sato perde -1 Ki. Nella stessa scena, Honda non può più ricevere supporto — ma Sato può ancora aiutare un altro PG.
 
+Aiutare chi sta affondando costa più che aiutare chi è solido — ed è voluto: il supporto non è un bonus gratuito, è farsi carico del rischio di un compagno. Il prezzo dell'esserci.
+
 ---
 
 ## Genkai 限界
@@ -847,12 +858,14 @@ Quando il Ki scende a **3 o meno**, il PG raggiunge il suo limite. Entra in cris
 
 Al cambio di ogni scena, il giocatore può tentare il rientro:
 
-1. Tira **1d6**
-2. Se il risultato è **≤ Ki attuale** → +1 Ki
-3. Se il Ki supera 3 → rientra in gioco
-4. Se fallisce → resta al suo Ki attuale, ritenta al prossimo cambio scena
+1. Tira **2d6 e leggi ogni dado da solo** — i due dadi **non si sommano mai**
+2. **Ogni dado ≤ al tuo Ki attuale** vale **+1 Ki** (puoi recuperare 0, 1 o 2 Ki). Entrambi i dadi si confrontano col Ki che avevi all'inizio del tiro
+3. Se il Ki supera 3 → rientri in gioco
+4. Altrimenti resti fuori e ritenti al prossimo cambio scena
 
-> **Esempio**: Hai raggiunto il Genkai con Ki 2. Cambio scena: tiri 1d6, devi fare ≤2 (33.3%). Fai 1: successo! Ki sale a 3. Ma 3 non è >3, resti fuori. Prossimo cambio scena: tiri, devi fare ≤3 (50%). Fai 2: successo! Ki sale a 4. Rientri in gioco.
+A Ki 1 risalire è dura — ed è voluto: se sei arrivato lì, è successo qualcosa di grosso (ti sei sacrificato con un Gou, o peggio). Il peso si deve sentire. La via rapida resta il **Supporto** dei compagni: se non ti tirano su loro, quel silenzio racconta qualcosa.
+
+> **Esempio**: Genkai con Ki 2. Cambio scena: tiri 2d6, esce 1 e 5 — l'1 è ≤2 (successo), il 5 no. Ki 3: non basta, resti fuori. Prossimo cambio: esce 2 e 3, entrambi ≤3. Ki 5: rientri. (Con 1 e 2 non fai "3": sono due dadi separati — a Ki 2 valgono +2.)
 
 ---
 
@@ -895,9 +908,9 @@ Quando i PG **delegano** un'operazione (pedinamento, analisi forense, ricerca d'
 
 Il combattimento è **raro e pericoloso**. I PG non sono combattenti — se c'è una sparatoria, la cosa intelligente è chiamare rinforzi o scappare.
 
-Quando lo scontro è inevitabile, le regole complete — iniziativa, attacco e difesa a margini, armi, coperture, raffiche e fuoco di copertura, esplosivi — sono nel modulo **`GENKAI_Combattimento.md`** (*Lo Scontro — Shōtotsu 衝突*).
+Quando lo scontro è inevitabile, le regole complete — scambi, velocità delle armi, soppressione, mira, sorpresa — sono nel modulo **`GENKAI_Combattimento.md`** (*Lo Scontro — Shōtotsu 衝突*).
 
-L'essenziale: attaccante e difensore tirano 2d6 ≤ attributo e confrontano i **margini**; il danno (margine + arma − assorbimento) si perde in **Ki**. Niente Nami né Kiwami: il combattimento costa Ki, non tocca gli attributi né il soroban. Coltelli e proiettili non si incassano. Un'arma da fuoco può mettere fuori gioco: la fuga è quasi sempre la risposta giusta.
+L'essenziale: si combatte a **scambi** — entrambi tirano 2d6; il **dado più basso + la velocità dell'arma** decide chi agisce, la **somma** è attacco per chi agisce e difesa per l'altro. Danno = scarto + arma − scarto difensore, e si perde in **Ki**; **chi subisce danno perde la propria azione**. Niente Nami né Kiwami (il critico è l'1+1): il combattimento costa Ki, non tocca gli attributi né il soroban. **Il Genkai in combattimento non scatta** — l'adrenalina lo supera: si valuta a fine scontro. Il danno non ha pavimento: a Ki 0 o sotto si muore. La fuga è quasi sempre la risposta giusta.
 
 ---
 
@@ -928,6 +941,8 @@ Non serve "vincere" la scena. Serve gestirla in modo umano e credibile:
 - Ha trovato una soluzione (Lucidità)?
 - È rimasto professionale nonostante tutto (Distacco)?
 
+Si vota la **verità del personaggio**, non la performance: crollare e non riuscire a dire nulla può essere una gestione eccellente.
+
 > **Esempio di scena personale**: Il GM attiva il Kage di Kimura. La madre ha chiamato. Il giocatore B interpreta la madre — anziana, spaventata, che non capisce perché il figlio non viene mai. La scena dura otto minuti. Kimura non riesce a promettere niente di concreto, si inceppa, dice "ci sono, ci penso" senza dire niente. I giocatori votano: *gestito male* — non ha ascoltato davvero, ha evitato la domanda reale. Kimura prende -1 al valore attuale di un attributo a sua scelta. Non è una punizione arbitraria: è il costo emotivo di quella conversazione che non è riuscita.
 
 ---
@@ -944,6 +959,8 @@ Il valore di scheda di ogni attributo è il **tetto personale** del PG: rapprese
 - I tiri si fanno sempre sul **valore attuale**; minimo 4 (a 4, le perdite vanno al Ki)
 
 > **Esempio**: Honda ha Distacco 6 di scheda. Una settimana brutale: due Kiwami negativi → Distacco attuale 4. Un 2 sulla scena successiva lo ripara a 5; la notte lo riporta a 6 — la sua scheda. Il giorno che tira un altro 2 con Distacco già a 6, il punto è perso (o va nel Nasake): per arrivare a 7, deve comprarlo.
+
+> **Regola opzionale — La solidità del maestro** *(a discrezione del GM)*: per un attributo a **9** (o oltre, nei casi speciali che il GM ha concesso), su quell'attributo l'**11 (Nami−) non ha effetto** e il **12 (Kiwami−) costa un solo punto** (a scelta: attributo o Ki) invece di due. Il maestro non è immune — ma il colpo, quasi sempre, scivola.
 
 ## Il Valore di Scheda
 
@@ -1202,11 +1219,12 @@ Perdite di Ki (costi, pressione, tiri): mai sotto 1 — si fermano a 1
 Danno da combattimento: nessun pavimento — a 0 o sotto il PG muore
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
-Numero 0-9 segnato su scheda o foglio, parte da 5
+Numero 0-9 su scheda o foglio; il giorno nuovo parte dal
+valore di ieri avvicinato di 1 verso il riposo (5, o 4/3 da Peso)
 Traccia i Nami/Kiwami della giornata (+1/+2/-1/-2)
 Soroban ≥ 5: 2d6 prendi il migliore (reroll 1) = Ki recuperati
 Soroban < 5: 2d6 prendi il peggiore (reroll 1) = Ki recuperati
-Dopo il recupero: torna a 5
+Dopo il recupero: domani parti dal valore di oggi avvicinato di 1 verso il riposo
 (mai oltre il Ki massimo)
 
 NASAKE (情け) - COMPASSIONE
@@ -1223,14 +1241,16 @@ Receiver: 1 supporto per scena. Helper: può aiutare PG diversi
 Non si applica al Gou
 
 SATORI (悟り)
-1/sessione, successo automatico, non si accumula
+1/sessione: non tiri, il dado puro vale 2 (niente Kiwami);
+modificatori normali — con malus pesanti può non bastare
 
 GOU (業)
 Costo: 2, 3 o 4 Ki (variabile per Gou)
 Ogni uso raddoppia il costo del successivo (2→4→8)
 Una notte di sonno riabbassa il costo di un grado
 Affinabile una volta: costo base -1, pagando base × 11 Shugyō
-Pagabile fino a Ki 1 (mai sotto); a Ki ≤ 3 il Genkai
+Si attiva SOLO se paghi il costo intero restando ad almeno Ki 1
+(a Ki ≤ 3 il Genkai; se ti porterebbe a 0 o sotto → NON si attiva)
 scatta a effetto concluso (i compagni possono aiutare)
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi

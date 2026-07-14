@@ -446,7 +446,7 @@ Gli attributi del distretto seguono la stessa scala dei PG: da 4 a 9.
 
 Il GM sceglie uno dei due metodi:
 
-**Metodo casuale** — per ogni attributo tira 2d6, prendi il dado più alto. Risultato minimo 4, massimo 9 (se il dado più alto supera 9, conta come 9).
+**Metodo casuale** — per ogni attributo tira **2d6 e somma i dadi**. Risultato minimo 4, massimo 9 (sotto 4 conta come 4, sopra 9 conta come 9).
 
 **Metodo diretto** — il GM assegna i valori a priori in base al tipo di ente e al ruolo che deve avere nella situazione. Nessun tiro, nessun punto libero da distribuire. Scrivi i numeri che servono alla storia.
 
@@ -703,6 +703,8 @@ I giocatori possono proteggersi dalla corruzione:
 ## Esempi di Ente
 
 Gli esempi seguono una progressione dal più piccolo al più grande e strutturato. Usali come riferimento diretto o come punto di partenza per calibrare enti simili.
+
+> **Nota**: questi esempi usano enti di paesi ed epoche diverse (Carabinieri, Questure...) per mostrare la flessibilità del sistema — la scheda ente funziona per qualsiasi ambientazione. Per la campagna **Kyoto 1997**: la Scheda Distretto è in `Materiale/Scheda_Distretto.md`, e le regole del contesto sono nel *Quadro Legale — Giappone 1997* (Manuale GM).
 
 ---
 
