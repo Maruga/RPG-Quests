@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
+                "file": "Investigare/pg/PG_01_Yamamoto_Kenji.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "title": "PG_01_Yamamoto_Kenji"
             }
           }
         ]
@@ -225,24 +225,24 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "8ff47a252fc8dbb1",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
-    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.aa4639b0f5a4",
+    "Investigare/pg/PG_04_Sato_Yuki.md.tmp.14376.36fb2ab5d2d9",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md.tmp.14376.cb0af0f338f1",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/pg/PG_05_Fujita_Emi.md.tmp.14376.c9e8a30169d5",
+    "Investigare/pg/PG_05_Fujita_Emi.md.tmp.14376.86e4ce97e343",
+    "Investigare/pg/PG_04_Sato_Yuki.md.tmp.14376.8334a07d23e5",
+    "Investigare/pg/PG_04_Sato_Yuki.md.tmp.14376.a71b6b660a72",
+    "Investigare/pg/PG_03_Nakamura_Shota.md.tmp.14376.c199588e0a4a",
+    "Investigare/pg/PG_03_Nakamura_Shota.md.tmp.14376.7879be08c7de",
+    "Investigare/pg/PG_02_Honda_Ryota.md.tmp.14376.6570379c80c0",
+    "Investigare/pg/PG_02_Honda_Ryota.md.tmp.14376.0a819528fc26",
+    "Investigare/pg/PG_01_Yamamoto_Kenji.md.tmp.14376.bc9e367e4907",
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/GENKAI_Manuale_GM.md",
-    "Investigare/Revisione_AI2_Decisioni.md.tmp.14376.2eff8f167853",
-    "Investigare/pg/PG_05_Fujita_Emi.md.tmp.14376.20647b9535b2",
-    "Investigare/pg/PG_04_Sato_Yuki.md.tmp.14376.83c5b9c256e6",
-    "Investigare/pg/PG_03_Nakamura_Shota.md.tmp.14376.31fff79ac07b",
-    "Investigare/pg/PG_02_Honda_Ryota.md.tmp.14376.8333ef4372af",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md.tmp.14376.2487297faecb",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.63544abac86e",
-    "Investigare/GENKAI_Combattimento.md.tmp.14376.8c4e3ecd992e",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.547830aaa9e2",
-    "Investigare/GENKAI_Regolamento_v1_3.md.tmp.14376.5841714b6edb",
     "Savage/Manovre di Combatimento.md",
     "Investigare/README.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/Revisione_AI2_Decisioni.md",
     "Investigare/GENKAI_Specializzazioni.md",
     "Investigare/GENKAI_Registro_Nomi.md",

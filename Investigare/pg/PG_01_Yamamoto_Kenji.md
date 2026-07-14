@@ -35,7 +35,7 @@
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
-> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo — **una sola volta**. Il dado si ritira all'inizio di ogni nuovo caso (o quando il GM lo decide): il nuovo massimo sostituisce il vecchio; i punti Ki comprati si sommano sempre.
 
 ---
 
@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Pugno di Ferro 鉄拳
 *Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*
@@ -97,8 +97,8 @@ Diciott'anni di servizio a Kyoto: sai chi comanda in quali strade, come si parla
 ### Opzione 2: Stampa e media *(Presenza)*
 Sai come ragionano le redazioni, cosa fa notizia e cosa si può far aspettare. E hai un vecchio amico al Kyoto Shimbun.
 
-### Opzione 3: Lotta *(Presenza)*
-L'accademia vecchia scuola: pugni, prese, immobilizzazioni — l'arte di mettere a terra un uomo senza fargli male. Copre anche le tecniche d'arresto.
+### Opzione 3: Interrogatorio *(Pazienza o Ascolto)*
+Diciott'anni di stanze chiuse: sblocca le tecniche di apertura (Rispecchiamento, Linguaggio Inclusivo...), la conduzione, il ritmo delle domande. Il terreno emotivo che si prepara prima delle domande vere.
 
 **Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
 *10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*

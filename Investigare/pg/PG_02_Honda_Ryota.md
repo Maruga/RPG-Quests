@@ -35,7 +35,7 @@
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
-> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo — **una sola volta**. Il dado si ritira all'inizio di ogni nuovo caso (o quando il GM lo decide): il nuovo massimo sostituisce il vecchio; i punti Ki comprati si sommano sempre.
 
 ---
 
@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Occhio della Gru 鶴の目
 *Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*

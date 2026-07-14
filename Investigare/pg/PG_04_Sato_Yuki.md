@@ -35,7 +35,7 @@
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
-> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo.
+> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo — **una sola volta**. Il dado si ritira all'inizio di ogni nuovo caso (o quando il GM lo decide): il nuovo massimo sostituisce il vecchio; i punti Ki comprati si sommano sempre.
 
 ---
 
@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Palazzo della Memoria 記憶の宮殿
 *Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
@@ -65,15 +65,15 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 > Tre giorni fa hai visto un documento sulla scrivania della vittima. "Era un estratto conto. E il logo — non era della banca abituale della vittima."
 
-### Opzione 2: Occhio della Gru 鶴の目
-*Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
-- **Attributo**: Lucidità
+### Opzione 2: L'Ora Giusta 正しい時
+*Sai quando è il momento perfetto per parlare, agire, colpire.*
+- **Attributo**: Pazienza
 - **Costo**: 3 Ki
-- **Vincolo**: devi dichiarare **dove** stai guardando
-- **Successo** (2d6 ≤ Lucidità): Trovi il dettaglio nascosto e capisci in che direzione punta
-- **Fallimento**: Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono, ma sai quanto cercare
+- **Successo** (2d6 ≤ Pazienza): **+3** al prossimo tiro
+- **Fallimento**: **+1** al prossimo tiro
+- **Nota**: il bonus decade se non usato entro la scena corrente
 
-> In laboratorio, dichiari "Guardo i residui sul colletto." Una particella che non c'entra con l'ambiente — industriale, non domestica. La vittima è stata in un posto diverso da quello dichiarato.
+> Hai il referto che smonta l'alibi, ma la riunione è tesa e tutti parlano. Aspetti. Poi lo senti — ora. Il prossimo tiro ha +3.
 
 ### Opzione 3: L'Istante della Caduta 散り際
 *Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
