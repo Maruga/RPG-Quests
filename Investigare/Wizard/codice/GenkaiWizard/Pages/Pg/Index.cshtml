@@ -8,7 +8,7 @@
     <h1>I miei personaggi</h1>
 
     <form method="post" asp-page-handler="Crea" class="wz-nuovo">
-        <input type="text" name="nome" maxlength="120" placeholder="Nome del personaggio (opzionale, lo scegli anche dopo)" />
+        <input type="text" name="nome" maxlength="120" placeholder="Alias — un nome per ricordartelo (non è il nome del personaggio)" />
         <button type="submit" class="wz-btn wz-btn-primario">+ Nuovo personaggio</button>
     </form>
 
@@ -23,7 +23,8 @@
             {
                 <li class="wz-card">
                     <a class="wz-card-main" asp-page="/Pg/Scheda" asp-route-id="@p.Id">
-                        <strong>@p.Nome</strong>
+                        <strong>@p.Nome</strong>@if (Model.NomiPg.TryGetValue(p.Id, out var npg) && npg != "" && npg != p.Nome)
+                        {<text> — @npg</text>}
                         <span class="wz-meta">agg. @p.AggiornatoIl.ToLocalTime().ToString("dd/MM HH:mm")</span>
                     </a>
                     <a class="wz-btn wz-mini" asp-page="/Pg/Stampa" asp-route-id="@p.Id" title="Vista stampabile">🖨</a>

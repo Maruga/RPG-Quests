@@ -2,7 +2,7 @@
 @model GenkaiWizard.Pages.Pg.SchedaModel
 @{
     ViewData["Title"] = $"{Model.Pg.Nome} — scheda";
-    var etichette = new[] { "Il gioco", "Identità", "Attributi", "Senmon", "Gou", "Ki", "Storia", "Kage", "Enja", "Carattere", "Squadra", "Riepilogo" };
+    var etichette = new[] { "Termini", "Identità", "Attributi", "Senmon", "Gou", "Ki", "Storia", "Kage", "Enja", "Carattere", "Squadra", "Riepilogo" };
 }
 
 <div class="wz" id="pg-root">
@@ -42,23 +42,31 @@
 
     <main class="wz-passo">
 
-        <!-- ═══════════ 0 · IL GIOCO ═══════════ -->
+        <!-- ═══════════ 0 · I TERMINI ═══════════ -->
         <section data-pg-passo="0" hidden>
-            <h2>GENKAI 限界 — come funziona il gioco</h2>
-            <p class="wz-aiuto">Kyoto, 1997. Sei un <strong>detective della polizia</strong> — una persona vera, con un lavoro difficile, un problema personale e un limite. Qui creerai il tuo investigatore un passo alla volta: il wizard ti spiega tutto, non serve conoscere il regolamento.</p>
+            <h2>Prima di iniziare — i termini che incontrerai</h2>
+            <p class="wz-aiuto">Kyoto, 1997. Stai per creare il tuo <strong>investigatore</strong>. Nei prossimi passi troverai questi termini giapponesi: eccoli in breve — li ritroverai uno per uno, spiegati al momento giusto.</p>
 
-            <div class="pg-gioco-blocco"><h3>🎲 I tiri</h3>
-                <p>Si tirano <strong>2 dadi da 6</strong> e si somma: per riuscire devi fare <strong>meno o uguale</strong> al tuo attributo. Basso è buono: un <strong>2-3</strong> è un colpo eccezionale, un <strong>11-12</strong> costa caro. Non si tira per tutto — solo quando l'esito è incerto e conta.</p></div>
-            <div class="pg-gioco-blocco"><h3>気 Il Ki e il Genkai</h3>
-                <p>Il <strong>Ki</strong> è la tua energia: mentale, emotiva, fisica. Le indagini la consumano — le notti insonni, le scene del crimine, le pressioni. Se il Ki scende a <strong>3 o meno</strong> scatta il <strong>Genkai 限界</strong>, il crollo: il caso ti è entrato dentro. Il titolo del gioco è questo — <em>il limite è il tuo</em>.</p></div>
-            <div class="pg-gioco-blocco"><h3>業 Il Gou</h3>
-                <p>Ogni investigatore ha <strong>un</strong> talento sottile, quasi soprannaturale: sentire le bugie, vedere ciò che è accaduto in una stanza, calmare chiunque. Si paga in Ki — il tuo potere consuma proprio ciò che ti tiene in piedi.</p></div>
-            <div class="pg-gioco-blocco"><h3>専門 Le Senmon</h3>
-                <p>Le tue specializzazioni professionali: interrogare, pedinare, leggere un bilancio, conoscere un quartiere. Danno un bonus nei tiri del loro campo e crescono con l'uso, di grado in grado.</p></div>
-            <div class="pg-gioco-blocco"><h3>影 Il Kage e 縁者 l'Enja</h3>
-                <p>Il <strong>Kage</strong> è la tua ombra: un problema personale vero, che il GM farà riemergere quando meno te lo aspetti. L'<strong>Enja</strong> è il tuo contatto fuori dalla polizia: prezioso, ma prima o poi chiede qualcosa in cambio.</p></div>
-            <div class="pg-gioco-blocco"><h3>🀄 Al tavolo</h3>
-                <p>Niente binari: l'indagine è vera. Si parla con le persone, si leggono i documenti, si mettono insieme i pezzi. I dadi non bloccano mai la verità — modulano quanto ti costa arrivarci.</p></div>
+            <div class="pg-gioco-blocco pg-tiro"><h3>🎲 Il tiro</h3>
+                <p>Si tirano <strong>2 dadi da 6</strong> e si somma: riesci se fai <strong>meno o uguale</strong> al tuo attributo — basso è buono. I risultati speciali hanno un nome:
+                <strong>2 o 12 = Kiwami 極</strong> (l'estremo, il critico) · <strong>3 o 11 = Nami 波</strong> (l'onda, il risultato notevole).</p></div>
+
+            <div class="pg-glossario">
+                <div class="pg-gioco-blocco"><h3>限界 Genkai</h3><p><em>Limite</em> — il punto di rottura del personaggio (Ki ≤ 3).</p></div>
+                <div class="pg-gioco-blocco"><h3>気 Ki</h3><p><em>Energia vitale</em> — la risorsa principale: stato mentale e fisico.</p></div>
+                <div class="pg-gioco-blocco"><h3>業 Gou</h3><p><em>Debito / Karma</em> — il talento straordinario che costa caro. Ne avrai uno.</p></div>
+                <div class="pg-gioco-blocco"><h3>縁 En</h3><p><em>Legame</em> — il valore della relazione con un PNG.</p></div>
+                <div class="pg-gioco-blocco"><h3>縁者 Enja</h3><p><em>Conoscenza</em> — il contatto esterno che può aiutare.</p></div>
+                <div class="pg-gioco-blocco"><h3>影 Kage</h3><p><em>Ombra</em> — il problema personale che irrompe nel caso.</p></div>
+                <div class="pg-gioco-blocco"><h3>悟り Satori</h3><p><em>Illuminazione</em> — una volta per sessione, il dado puro vale 2 (modificatori normali).</p></div>
+                <div class="pg-gioco-blocco"><h3>極 Kiwami</h3><p><em>Estremo</em> — il risultato critico del dado (2 o 12).</p></div>
+                <div class="pg-gioco-blocco"><h3>波 Nami</h3><p><em>Onda</em> — il risultato notevole del dado (3 o 11), solo su prove di attributo.</p></div>
+                <div class="pg-gioco-blocco"><h3>情け Nasake</h3><p><em>Compassione</em> — il punto Ki conservato quando il bonus andrebbe perso.</p></div>
+                <div class="pg-gioco-blocco"><h3>協力 Kyōryoku</h3><p><em>Supporto</em> — l'aiuto di un compagno su un tiro (+1 all'attributo).</p></div>
+                <div class="pg-gioco-blocco"><h3>算盤 Soroban</h3><p><em>Abaco</em> — traccia l'andamento emotivo della giornata e il recupero notturno.</p></div>
+                <div class="pg-gioco-blocco"><h3>修行 Shugyō</h3><p><em>Disciplina</em> — i punti di crescita: si guadagnano coi casi, si spendono tra un caso e l'altro.</p></div>
+                <div class="pg-gioco-blocco"><h3>専門 Senmon</h3><p><em>Specialità</em> — le specializzazioni professionali, in tre gradi.</p></div>
+            </div>
 
             <p class="wz-nota">Premi <strong>Avanti</strong> e cominciamo dal nome.</p>
         </section>

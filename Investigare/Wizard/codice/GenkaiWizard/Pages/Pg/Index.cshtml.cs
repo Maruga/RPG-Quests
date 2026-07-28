@@ -14,6 +14,8 @@ public class IndexModel : PageModel
     public IndexModel(ApplicationDbContext db) => _db = db;
 
     public List<Personaggio> Personaggi { get; set; } = new();
+    /// <summary>Id → nome del personaggio (da identita nello stato) — mostrato accanto all'alias.</summary>
+    public Dictionary<Guid, string> NomiPg { get; set; } = new();
 
     private string Uid => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
 
@@ -23,6 +25,16 @@ public class IndexModel : PageModel
             .Where(p => p.UtenteId == Uid)
             .OrderByDescending(p => p.AggiornatoIl)
             .ToListAsync();
+        foreach (var p in Personaggi)
+        {
+            try
+            {
+                var id = System.Text.Json.Nodes.JsonNode.Parse(p.StatoJson)?["identita"];
+                var nome = ($"{id?["cognome"]} {id?["nome"]}").Trim();
+                NomiPg[p.Id] = nome;
+            }
+            catch { NomiPg[p.Id] = ""; }
+        }
     }
 
     public async Task<IActionResult> OnPostCreaAsync(string? nome)

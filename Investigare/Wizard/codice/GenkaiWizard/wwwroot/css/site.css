@@ -529,3 +529,10 @@ input.wz-data-caso { max-width: 12rem; }
 #pg-root .wz-nav .wz-btn { flex: 1 1 0; min-width: 0; }
 /* il titolo "Dove vivi" col suo ✨ in linea */
 #pg-root .wz-h3 .wz-btn { vertical-align: middle; margin-left: .3rem; }
+
+/* glossario a riquadri (3 per riga, poi 2/1 sui piccoli) */
+.pg-glossario { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: .6rem 0; }
+.pg-glossario .pg-gioco-blocco { margin: 0; }
+@media (max-width: 900px) { .pg-glossario { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .pg-glossario { grid-template-columns: 1fr; } }
+.pg-tiro { border-left: 4px solid #8b1a1a; }

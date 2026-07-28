@@ -38,7 +38,7 @@
         return JSON.stringify({
             statoJson: JSON.stringify(S),
             passoCorrente: passoCorrente,
-            nome: nomePieno() || document.getElementById("pg-nome-testata").value || null
+            nome: document.getElementById("pg-nome-testata").value || null // = ALIAS (il nome del PG vive in identita)
         });
     }
     function salvaDebounce() {
@@ -80,10 +80,7 @@
         const tit = document.getElementById("pg-nome-testata");
         tit.addEventListener("input", salvaDebounce);
     }
-    function aggiornaTitolo() {
-        const n = nomePieno();
-        if (n) document.getElementById("pg-nome-testata").value = n;
-    }
+    function aggiornaTitolo() { /* la testata è l'ALIAS: non si sincronizza col nome del PG */ }
 
     // ───────── passi (client-side) ─────────
     let passoCorrente = Math.min(Math.max(PG.passo || 0, 0), PASSI - 1);
@@ -804,7 +801,6 @@
             Object.keys(S).forEach(k => delete S[k]);
             Object.assign(S, statoIniziale());
             passoCorrente = 0;
-            document.getElementById("pg-nome-testata").value = "Nuovo investigatore"; // anche il nome riparte
             await salvaOra();
             location.reload();
         });
