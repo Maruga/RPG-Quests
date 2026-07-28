@@ -187,7 +187,7 @@ Non tutti i Gou costano uguale. I più potenti costano di più:
 
 **Ogni uso fa raddoppiare il costo del successivo.** Un Gou da 3 Ki costa 3 la prima volta, 6 la seconda, 12 la terza. **Una notte di sonno fa scendere il costo di un grado**: dormi, e il prossimo uso torna a costare 6; un'altra notte senza usarlo e sei di nuovo a 3.
 
-**Il costo si paga per intero.** Attivi un Gou **solo se il Ki ti basta restando ad almeno 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi l'effetto — la visione, l'informazione — e poi crolli: il Genkai scatta appena l'effetto si conclude. Ma se il costo ti porterebbe a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I tuoi compagni possono rialzarti come in ogni Genkai, sacrificando 1 Ki ciascuno.
+**Il costo si paga per intero.** Attivi un Gou **solo se il Ki ti basta restando ad almeno 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi l'effetto — la visione, l'informazione — e poi crolli: il Genkai scatta appena l'effetto si conclude. Ma se il costo ti portasse a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I tuoi compagni possono rialzarti come in ogni Genkai, sacrificando 1 Ki ciascuno.
 
 > **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
@@ -358,7 +358,7 @@ Richiede Silenzio ≥ 7. Devi essere fisicamente sul luogo, entro 48 ore dal fat
 
 Teatro delle Ombre **vede** (Lucidità). L'Eco della Montagna **sente parole** (Silenzio). Stessa famiglia, sensi diversi.
 
-> **Esempio**: Sei nell'ufficio dell'ultima discussione. Usi L'Eco della Montagna (Silenzio 8). Tiri 7 — successo. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
+> **Esempio**: Sei nell'ufficio dell'ultima discussione. Usi L'Eco della Montagna (Silenzio 8). Tiri 7 — successo. Due voci. La voce agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". L'altra, calma, risponde — ma le parole sono indistinte.
 
 ---
 

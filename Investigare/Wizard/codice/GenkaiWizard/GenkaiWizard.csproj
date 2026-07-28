@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-GenkaiWizard-a629a482-2423-4caa-afce-d3a2b53bd489</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Il db NON si copia in bin: vive solo nel ContentRoot (vedi Program.cs) -->
+    <Content Update="Dati\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Dati\**\*.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.29" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.29" />
+  </ItemGroup>
+
+</Project>

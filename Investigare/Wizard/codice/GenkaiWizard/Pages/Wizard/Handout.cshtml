@@ -1,0 +1,286 @@
+@page
+@model GenkaiWizard.Pages.Wizard.HandoutModel
+@{
+    Layout = null;
+    var vuoto = string.IsNullOrWhiteSpace(Model.ContenutoHtml);
+}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@Model.Titolo — handout</title>
+    <link rel="stylesheet" href="~/css/handout.css" asp-append-version="true" />
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #4a4640; font-family: Arial, sans-serif; color: #eee; }
+        .ho-barra { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; padding: .55rem .9rem; background: #26231f; border-bottom: 1px solid #000; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
+        .ho-barra .tit { font-weight: bold; margin: 0 auto 0 .3rem; letter-spacing: .5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 30vw; }
+        .ho-barra button, .ho-barra label.btn, .ho-barra a { cursor: pointer; border: 1px solid #6a655c; background: #35312b; color: #eee; padding: .42rem .75rem; border-radius: 6px; font-size: .85rem; text-decoration: none; line-height: 1; display: inline-flex; align-items: center; gap: .3rem; transition: background .15s; }
+        .ho-barra select { cursor: pointer; border: 1px solid #6a655c; background: #35312b; color: #eee; padding: .42rem .5rem; border-radius: 6px; font-size: .85rem; }
+        .ho-barra select:disabled { opacity: .5; cursor: default; }
+        .ho-vers-pan { position: absolute; right: .9rem; top: 3.1rem; z-index: 20; background: #26231f; border: 1px solid #6a655c; border-radius: 8px; padding: .5rem; min-width: 300px; max-width: 90vw; box-shadow: 0 6px 22px rgba(0,0,0,.45); }
+        .ho-vers-tit { font-size: .78rem; color: #9a948a; padding: .1rem .3rem .4rem; }
+        .ho-vers-riga { display: flex; justify-content: space-between; align-items: center; gap: .6rem; padding: .4rem .3rem; border-top: 1px solid #3a352f; font-size: .82rem; }
+        .ho-vers-riga .az { display: flex; gap: .35rem; white-space: nowrap; }
+        .ho-vers-riga button { cursor: pointer; border: 1px solid #6a655c; background: #35312b; color: #eee; padding: .28rem .55rem; border-radius: 5px; font-size: .78rem; }
+        .ho-vers-riga button:hover { background: #45403a; }
+        .ho-vers-vuoto { color: #9a948a; font-size: .82rem; padding: .3rem; }
+        .ho-barra a#ho-torna { background: transparent; border-color: transparent; color: #cbb; }
+        .ho-barra a#ho-torna:hover { background: #35312b; }
+        .ho-barra button.attivo { background: #8b1a1a; border-color: #8b1a1a; }
+        .ho-barra button:hover, .ho-barra label.btn:hover, .ho-barra a:hover { background: #45403a; }
+        .ho-stato { font-size: .8rem; color: #9a948a; min-width: 5.5rem; }
+        .ho-stato.ok { color: #7db07d; }
+        .ho-stato.attesa { color: #cbb18a; }
+        .ho-msg { font-size: .8rem; color: #cbb; }
+        .ho-area { padding: 22px 12px 60px; display: flex; justify-content: center; }
+        #ho-html { width: 190mm; max-width: 100%; min-height: 60vh; font-family: ui-monospace, Consolas, monospace; font-size: 12px; padding: 12px; border: 1px solid #000; background: #1c1a17; color: #d9d4c7; display: none; }
+        /* il foglio è modificabile in modalità visuale */
+        #ho-foglio-wrap[data-modifica="1"] .ho-foglio { outline: 2px dashed #8b1a1a; }
+        @@media print {
+            .ho-barra, .ho-area { padding: 0; }
+            .ho-barra { display: none !important; }
+            body { background: #fff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="ho-barra ho-no-stampa">
+        <a class="btn" id="ho-torna" href="/Wizard/@Model.ProgettoId/@Model.Torna" title="Torna al caso (salva prima)">← Torna al caso</a>
+        <span class="tit">📄 @Model.Titolo</span>
+        <button type="button" id="ho-crea" data-ai="@(Model.AiAttiva ? "1" : "0")" title="Genera il contenuto dalla descrizione scritta al passo 13">✨ Crea con l'AI</button>
+        @if (Model.AiAttiva)
+        {
+            <select id="ho-modello" title="Modello AI usato da ✨ Crea (qualità e costo)">
+                <option value="claude-opus-5">🤖 Opus 5</option>
+                <option value="claude-fable-5">🤖 Fable 5</option>
+                <option value="claude-sonnet-5">🤖 Sonnet 5</option>
+                <option value="claude-haiku-4-5">🤖 Haiku 4.5</option>
+            </select>
+            <select id="ho-effort" title="Quanto ragiona l'AI: più alto = migliore ma più lento (non vale per Haiku)">
+                <option value="max">🧠 Max</option>
+                <option value="high">🧠 Alto</option>
+                <option value="medium">🧠 Medio</option>
+                <option value="low">🧠 Basso</option>
+            </select>
+        }
+        <button type="button" id="ho-versioni-btn" title="Backup: le ultime 3 versioni, richiamabili">🕘 Versioni (0)</button>
+        <button type="button" id="ho-m-visuale" class="attivo">✏️ Visuale</button>
+        <button type="button" id="ho-m-html">&lt;/&gt; HTML</button>
+        <label class="btn">🖼 Immagine<input type="file" id="ho-img" accept="image/png,image/jpeg,image/webp" hidden></label>
+        <button type="button" id="ho-stampa">🖨 Stampa / PDF</button>
+        <span class="ho-stato" id="ho-stato">salvato</span>
+        <span class="ho-msg" id="ho-msg"></span>
+    </div>
+    <div id="ho-versioni-pan" class="ho-vers-pan ho-no-stampa" hidden></div>
+
+    <div class="ho-area">
+        <div id="ho-foglio-wrap" data-modifica="1">
+            @if (vuoto)
+            {
+                <div class="ho-foglio ho-doc">
+                    <div class="ho-intestazione"><div class="ente">DOCUMENTO</div><div class="tipo-doc">@Model.Tipo</div></div>
+                    <p>Questo handout è ancora vuoto. Torna al passo 13 e premi <strong>✨ Crea handout</strong>, oppure scrivi qui il contenuto.</p>
+                </div>
+            }
+            else
+            {
+                @Html.Raw(Model.ContenutoHtml)
+            }
+        </div>
+        <textarea id="ho-html">@Model.ContenutoHtml</textarea>
+    </div>
+
+    <script>
+        const WID = "@Model.ProgettoId", HID = "@Model.HandoutId";
+        const wrap = document.getElementById("ho-foglio-wrap");
+        const html = document.getElementById("ho-html");
+        const msg = document.getElementById("ho-msg");
+        const foglio = () => wrap.querySelector(".ho-foglio");
+
+        // modello + ragionamento condivisi col wizard (stesse chiavi localStorage); default Opus 5 / Alto
+        const modelloAI = () => localStorage.getItem("wizModelAI") || "claude-opus-5";
+        const effortAI = () => localStorage.getItem("wizEffortAI") || "high";
+        const selMod = document.getElementById("ho-modello");
+        const selEff = document.getElementById("ho-effort");
+        const effortOff = () => { if (selEff) selEff.disabled = (selMod && selMod.value === "claude-haiku-4-5"); };
+        if (selMod) {
+            if ([...selMod.options].some(o => o.value === modelloAI())) selMod.value = modelloAI();
+            selMod.addEventListener("change", () => { localStorage.setItem("wizModelAI", selMod.value); effortOff(); });
+        }
+        if (selEff) {
+            if ([...selEff.options].some(o => o.value === effortAI())) selEff.value = effortAI();
+            selEff.addEventListener("change", () => localStorage.setItem("wizEffortAI", selEff.value));
+        }
+        effortOff();
+
+        // ── versioni (backup): le ultime 3, richiamabili; NON interferiscono col corrente ──
+        let versioni = @Html.Raw(string.IsNullOrWhiteSpace(Model.VersioniJson) ? "[]" : Model.VersioniJson);
+        if (!Array.isArray(versioni)) versioni = [];
+        const versBtn = document.getElementById("ho-versioni-btn");
+        const versPan = document.getElementById("ho-versioni-pan");
+        // "ha contenuto" = c'è qualcosa di reale (non vuoto, non il placeholder): allora avvisa e fai il backup
+        function haContenuto(txt) { return !!txt && txt.trim().length > 0 && !txt.includes("ancora vuoto"); }
+        function renderVersioni() {
+            versBtn.textContent = `🕘 Versioni (${versioni.length})`;
+            if (!versioni.length) {
+                versPan.innerHTML = `<div class="ho-vers-vuoto">Nessun backup ancora. Se ne crea uno automaticamente a ogni rigenerazione con l'AI e a ogni ripristino.</div>`;
+                return;
+            }
+            versPan.innerHTML = `<div class="ho-vers-tit">Ultime versioni (più recente in alto). Sono copie: non toccano il documento finché non premi Ripristina.</div>` +
+                versioni.map((v, i) => {
+                    let q = v.quando || ""; try { if (v.quando) q = new Date(v.quando).toLocaleString("it-IT"); } catch { }
+                    return `<div class="ho-vers-riga"><span>#${i + 1} · ${q}</span><span class="az"><button type="button" data-vers-vedi="${i}">👁 Vedi</button><button type="button" data-vers-ripr="${i}">↩ Ripristina</button></span></div>`;
+                }).join("");
+            versPan.querySelectorAll("[data-vers-vedi]").forEach(b => b.addEventListener("click", () => vediVersione(+b.dataset.versVedi)));
+            versPan.querySelectorAll("[data-vers-ripr]").forEach(b => b.addEventListener("click", () => ripristinaVersione(+b.dataset.versRipr)));
+        }
+        versBtn.addEventListener("click", () => { versPan.hidden = !versPan.hidden; if (!versPan.hidden) renderVersioni(); });
+        function vediVersione(i) {
+            const v = versioni[i]; if (!v) return;
+            const w = window.open("", "_blank");
+            if (!w) { msg.textContent = "⚠ Il browser ha bloccato la finestra del backup"; return; }
+            w.document.write(`<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Backup handout</title><link rel="stylesheet" href="/css/handout.css"><style>body{margin:0;background:#4a4640;padding:16px}</style></head><body>${v.html || ""}</body></html>`);
+            w.document.close();
+        }
+        function ripristinaVersione(i) {
+            const v = versioni[i]; if (!v) return;
+            if (!confirm("Ripristinare questo backup come contenuto attuale?\nIl documento corrente finirà nei backup (reversibile).")) return;
+            const cur = contenutoCorrente();
+            versioni.splice(i, 1); // la versione scelta diventa il corrente: esce dai backup
+            if (haContenuto(cur)) versioni.unshift({ html: cur, quando: new Date().toISOString() });
+            versioni = versioni.slice(0, 3);
+            wrap.innerHTML = v.html || "";
+            if (html.style.display === "block") html.value = v.html || "";
+            else { const nf = foglio(); if (nf) nf.setAttribute("contenteditable", "true"); }
+            versPan.hidden = true;
+            renderVersioni();
+            salvaHtml();
+            msg.textContent = "✓ backup ripristinato";
+        }
+        renderVersioni();
+
+        // ── modalità visuale / HTML ──
+        const bVis = document.getElementById("ho-m-visuale"), bHtml = document.getElementById("ho-m-html");
+        function modoVisuale() {
+            // se vengo da HTML, riscrivo il foglio col contenuto della textarea
+            if (html.style.display === "block") { wrap.innerHTML = html.value; }
+            html.style.display = "none"; wrap.style.display = "";
+            const f = foglio(); if (f) f.setAttribute("contenteditable", "true");
+            bVis.classList.add("attivo"); bHtml.classList.remove("attivo");
+        }
+        function modoHtml() {
+            const f = foglio(); if (f) { f.removeAttribute("contenteditable"); html.value = wrap.innerHTML.trim(); }
+            html.style.display = "block"; wrap.style.display = "none";
+            bHtml.classList.add("attivo"); bVis.classList.remove("attivo");
+        }
+        bVis.addEventListener("click", modoVisuale);
+        bHtml.addEventListener("click", modoHtml);
+        modoVisuale(); // parte in visuale
+
+        // ── inserisci immagine (data URI: resta dentro l'handout, si stampa) ──
+        document.getElementById("ho-img").addEventListener("change", (e) => {
+            const file = e.target.files[0]; if (!file) return;
+            const r = new FileReader();
+            r.onload = () => {
+                const img = `<img src="${r.result}" alt="">`;
+                const f = foglio();
+                if (html.style.display === "block") { html.value += "\n" + img; }
+                else if (f) {
+                    const sel = window.getSelection();
+                    if (sel.rangeCount && f.contains(sel.anchorNode)) {
+                        const el = document.createElement("div"); el.innerHTML = img;
+                        sel.getRangeAt(0).insertNode(el.firstChild);
+                    } else { f.insertAdjacentHTML("beforeend", img); }
+                }
+                msg.textContent = "immagine inserita";
+                salvaProgramma();
+            };
+            r.readAsDataURL(file);
+            e.target.value = "";
+        });
+
+        // ── salvataggio AUTOMATICO (come nel resto del wizard): niente bottone Salva ──
+        const stato = document.getElementById("ho-stato");
+        let salvaTimer = null, inSospeso = false;
+        function contenutoCorrente() {
+            const f = foglio();
+            return html.style.display === "block" ? html.value : (f ? wrap.innerHTML.trim() : "");
+        }
+        async function salvaHtml() {
+            inSospeso = false;
+            try {
+                const rp = await fetch(`/api/progetti/${WID}/handout-html`, {
+                    method: "POST", headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ handoutId: HID, html: contenutoCorrente(), versioni })
+                });
+                stato.textContent = rp.ok ? "salvato" : "⚠ errore";
+                stato.className = "ho-stato " + (rp.ok ? "ok" : "");
+                return rp.ok;
+            } catch { stato.textContent = "⚠ offline"; stato.className = "ho-stato"; return false; }
+        }
+        function salvaProgramma() {
+            inSospeso = true;
+            stato.textContent = "modifiche…"; stato.className = "ho-stato attesa";
+            clearTimeout(salvaTimer); salvaTimer = setTimeout(salvaHtml, 900);
+        }
+        // segna le modifiche: digitazione nel foglio (visuale) o nell'HTML
+        wrap.addEventListener("input", salvaProgramma);
+        html.addEventListener("input", salvaProgramma);
+        // se esco/cambio scheda con modifiche in sospeso, salva col beacon (sopravvive alla navigazione)
+        function flush() {
+            if (!inSospeso) return;
+            clearTimeout(salvaTimer); inSospeso = false;
+            navigator.sendBeacon(`/api/progetti/${WID}/handout-html`,
+                new Blob([JSON.stringify({ handoutId: HID, html: contenutoCorrente(), versioni })], { type: "application/json" }));
+        }
+        window.addEventListener("pagehide", flush);
+        document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flush(); });
+
+        // ── torna al caso: salva (attende) poi naviga ──
+        document.getElementById("ho-torna").addEventListener("click", async (e) => {
+            e.preventDefault();
+            const dest = e.currentTarget.getAttribute("href");
+            clearTimeout(salvaTimer);
+            stato.textContent = "salvo…";
+            try { await salvaHtml(); } catch { }
+            location.href = dest;
+        });
+
+        // ── stampa: le regole di stampa isolano il foglio ──
+        document.getElementById("ho-stampa").addEventListener("click", () => {
+            const f = foglio(); if (f) f.removeAttribute("contenteditable");
+            window.print();
+        });
+
+        // ── ✨ Crea/Rigenera con l'AI (dalla descrizione salvata al passo 13) ──
+        const bCrea = document.getElementById("ho-crea");
+        bCrea.addEventListener("click", async () => {
+            if (bCrea.dataset.ai !== "1") { msg.textContent = "⚠ Manca la chiave AI sul server."; return; }
+            const cur = contenutoCorrente();
+            const pieno = haContenuto(cur);
+            if (pieno && !confirm("Rigenerare con l'AI? Il contenuto attuale verrà sostituito.\n(Resta recuperabile da 🕘 Versioni.)")) return;
+            bCrea.disabled = true; const orig = bCrea.textContent; bCrea.textContent = "✨ Sto scrivendo… (10-30s)"; msg.textContent = "";
+            try {
+                const r = await fetch(`/api/progetti/${WID}/handout`, {
+                    method: "POST", headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ handoutId: HID, modello: modelloAI(), effort: effortAI() })
+                });
+                const json = await r.json().catch(() => ({}));
+                if (!r.ok) { msg.textContent = "⚠ " + (json.detail || json.errore || r.status); return; }
+                const pulito = (json.testo || "").replace(/^```[a-z]*\n?/i, "").replace(/\n?```\s*$/, "").trim();
+                // backup: la versione precedente (se c'era) entra nei backup PRIMA di sovrascrivere
+                if (pieno) { versioni.unshift({ html: cur, quando: new Date().toISOString() }); versioni = versioni.slice(0, 3); }
+                wrap.innerHTML = pulito;
+                if (html.style.display === "block") html.value = pulito;
+                else { const nf = foglio(); if (nf) nf.setAttribute("contenteditable", "true"); }
+                msg.textContent = "✓ creato";
+                renderVersioni();
+                await salvaHtml(); // il generato si salva subito (l'assegnazione via JS non fa scattare l'autosave)
+            } catch { msg.textContent = "⚠ AI non raggiungibile"; }
+            finally { bCrea.disabled = false; bCrea.textContent = orig; }
+        });
+    </script>
+</body>
+</html>

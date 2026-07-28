@@ -1,0 +1,57 @@
+<p class="wz-aiuto">Chi è legato a chi, e <strong>quanto</strong>: per ogni coppia scegli i due (persone <em>o gruppi</em>), il tipo di relazione e l'<strong>En nei due sensi, da −5 a +5</strong> (può essere diverso: lei lo ama +2 Leale, lui la sopporta −1 Diffidente). Regola del manuale: <strong>En positivo si sottrae dal dado</strong> (il legame aiuta), <strong>negativo si aggiunge</strong> (il legame pesa).</p>
+
+<h3 class="wz-h3">Gruppi e distretti <small>(la banda, la classe, il distretto di polizia…)</small></h3>
+<details class="wz-help">
+    <summary>❓ A cosa servono — esempi</summary>
+    <div>
+        <p>Un gruppo è un <strong>attore collettivo</strong>: ha un nome, un tipo, dei membri presi dal cast — e può avere relazioni ed En come una persona. Il <strong>distretto di polizia</strong> è un gruppo di tipo speciale: conosce la gente del territorio, soprattutto i malviventi (schedari, informatori).</p>
+        <div class="wz-esempio-testo"><strong>I Kurokaze</strong> (banda giovanile) — membri: Matsui Kenta… · relazione: "schedati dal" Distretto 5, En −2</div>
+        <div class="wz-esempio-testo"><strong>Distretto 5 — Shimogyō</strong> (distretto di polizia) — relazione con Matsui: "schedato, due fermi per rissa"</div>
+        <div class="wz-esempio-testo"><strong>Classe 3-B del liceo Rakuhoku</strong> (classe/scuola) — membri: la vittima, Watanabe, Aoki</div>
+        <p>Nel grafo i gruppi sono <strong>rettangoli</strong> (組 = gruppo, 署 = distretto) e i membri sono collegati col tratteggio.</p>
+    </div>
+</details>
+<div data-lista="gruppi" data-tipo-lista="gruppo"></div>
+
+<h3 class="wz-h3">Relazioni</h3>
+
+<details class="wz-help">
+    <summary>📖 La scala degli En — dal manuale (縁)</summary>
+    <div>
+        <table class="wz-tab-en">
+            <tr><th>Valore</th><th>Livello</th><th></th></tr>
+            <tr class="en-pos"><td>+5</td><td>Amore incondizionato</td><td class="en-prof">profonda</td></tr>
+            <tr class="en-pos"><td>+4</td><td>Legame di sangue/vita</td><td class="en-prof">profonda</td></tr>
+            <tr class="en-pos"><td>+3</td><td>Devoto</td><td></td></tr>
+            <tr class="en-pos"><td>+2</td><td>Leale</td><td></td></tr>
+            <tr class="en-pos"><td>+1</td><td>Amichevole</td><td></td></tr>
+            <tr><td>0</td><td>Neutro</td><td></td></tr>
+            <tr class="en-neg"><td>−1</td><td>Diffidente</td><td></td></tr>
+            <tr class="en-neg"><td>−2</td><td>Ostile</td><td></td></tr>
+            <tr class="en-neg"><td>−3</td><td>Nemico</td><td></td></tr>
+            <tr class="en-neg"><td>−4</td><td>Odio profondo</td><td class="en-prof">profonda</td></tr>
+            <tr class="en-neg"><td>−5</td><td>Vendetta/Rovina</td><td class="en-prof">profonda</td></tr>
+        </table>
+        <p><strong>Al tavolo</strong>: quando si interagisce con un PNG, il suo En modifica il dado (positivo sottrae, negativo aggiunge); non tocca mai i Kiwami. Le relazioni <strong>profonde (±4/±5) non cambiano coi tiri</strong> — solo per eventi narrativi gravi (tradimento, vita salvata, scoperta shock).</p>
+    </div>
+</details>
+
+<details class="wz-help">
+    <summary>❓ Come si compila una relazione — esempi</summary>
+    <div>
+        <p>Ogni riga si legge da sinistra a destra: <em>A [En di A verso B] relazione [En di B verso A] B</em>.</p>
+        <div class="wz-esempio-testo">Shimada Yuta <strong style="color:#2e7d32">+2 Leale</strong> — fidanzati — <strong style="color:#8b0000">−1 Diffidente</strong> Watanabe Emi<br><small>lui la ama davvero; lei si stava allontanando</small></div>
+        <div class="wz-esempio-testo">Kurosawa Gorō <strong style="color:#8b0000">−4 Odio profondo</strong> — rivali — <strong style="color:#2e7d32">+1 Amichevole</strong> Shimada Yuta<br><small>il capo banda lo odia (gelosia); il ragazzo lo ammirava ancora</small></div>
+        <div class="wz-esempio-testo">Shimada Yasuhiro <strong style="color:#2e7d32">+4 Legame di sangue</strong> — madre e figlio — <strong style="color:#2e7d32">+3 Devoto</strong> Shimada Yuta</div>
+        <p>L'En serve al tavolo: quando un PNG agisce verso qualcuno, il suo En verso quella persona modifica il tiro. E le asimmetrie (+2 da una parte, −1 dall'altra) sono già storie.</p>
+    </div>
+</details>
+
+<div data-lista="relazioni" data-tipo-lista="relazione"></div>
+
+<h3 class="wz-h3">La tabella da tavolo <small>(da tenere sotto mano in sessione)</small></h3>
+<div id="wz-rel-tabella" class="wz-rel-tab-box"></div>
+
+<h3 class="wz-h3">Il grafo del caso <small>(si aggiorna da solo)</small></h3>
+<p class="wz-nota">✝ = vittima (anello oro) · 刃 = assassino (anello rosso). Verde = En positivo, rosso = negativo.</p>
+<div id="wz-rel-grafo" class="wz-rel-grafo"></div>

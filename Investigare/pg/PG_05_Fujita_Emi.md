@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Specchio dell'Anima 魂の鏡
 *Vedi oltre la maschera. Senti le emozioni vere di una persona.*
@@ -72,7 +72,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Successo** (2d6 ≤ Silenzio): Frammenti di frasi riconoscibili — parole chiave, toni (rabbia, paura, supplica), il numero di voci presenti
 - **Fallimento**: Suoni indistinti — un tono emotivo generale senza parole riconoscibili
 
-> Nell'ufficio dell'ultima discussione. Due voci. La agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". La calma risponde, ma le parole sono indistinte.
+> Nell'ufficio dell'ultima discussione. Due voci. La voce agitata dice "...non puoi farlo..." e poi "...ti distruggerò...". L'altra, calma, risponde — ma le parole sono indistinte.
 
 ### Opzione 3: Tocco del Medico 医者の手
 *Leggi il corpo e la mente. Vedi i segni che altri ignorano.*
@@ -87,7 +87,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
 
 ### Opzione 1: Copertura e travestimento *(Silenzio)*
 Reggere un ruolo è psicologia applicata: postura, voce, storia di copertura. Sparire in un personaggio ti riesce naturale.
@@ -111,7 +111,7 @@ Da investigatrice in borghese **non porti l'arma con te**: resta nell'armadietto
 |---|---|---|
 | Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei una tiratrice scelta |
 | Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Pazienza o Silenzio · vel. 2/1 · danno 2 |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
 | — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
 
@@ -204,7 +204,7 @@ Quando un uomo la sminuisce o le dice che "esagera". Anni di lotta per il rispet
 
 ## TRATTI PERSONALI
 
-- **Vizio**: Whisky Nikka. Un dito, da sola, la sera dopo i casi pesanti. Non in compagnia.
+- **Vizio**: Whisky Nikka. Un dito, da sola, la sera dopo i casi pesanti. Quasi mai in compagnia — l'eccezione è Morita.
 - **Tic**: Inclina leggermente la testa a sinistra quando ascolta qualcuno mentire.
 - **Oggetto personale**: Una penna stilografica Pilot nera. Scrive i profili sempre a mano, mai al computer.
 - **Gusto**: Wagashi e tè matcha. Ha un debole per la pasticceria tradizionale vicino a Kiyomizu.

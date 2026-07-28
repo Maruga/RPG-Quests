@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Palazzo della Memoria 記憶の宮殿
 *Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.*
@@ -71,15 +71,15 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Costo**: 3 Ki
 - **Successo** (2d6 ≤ Pazienza): **+3** al prossimo tiro
 - **Fallimento**: **+1** al prossimo tiro
-- **Nota**: il bonus decade se non usato entro la scena corrente
+- **Nota**: il bonus si sottrae dal dado; decade se non usato entro la scena corrente
 
 > Hai il referto che smonta l'alibi, ma la riunione è tesa e tutti parlano. Aspetti. Poi lo senti — ora. Il prossimo tiro ha +3.
 
 ### Opzione 3: L'Istante della Caduta 散り際
 *Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.*
 - **Attributo**: Pazienza o Ascolto (a scelta — dual-attribute)
-- **Costo**: 2 Ki
-- **Meccanica**: stato di allerta per il resto della giornata. Si attiva automaticamente la prima volta che qualcosa sta per svanire. Il tiro si fa in quel momento
+- **Costo**: 2 Ki (pagati subito, alla dichiarazione)
+- **Meccanica**: stato di allerta per il resto della giornata. Si attiva automaticamente la prima volta che qualcosa sta per svanire, poi decade. Il tiro si fa in quel momento
 - **Successo** (2d6 ≤ attributo scelto): Sai cosa sta per svanire e hai un istante per agire
 - **Fallimento**: Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa
 
@@ -89,7 +89,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
 
 ### Opzione 1: Medicinali e veleni *(Lucidità)*
 La tua laurea: farmaci, dosaggi, interazioni, sostanze. Riconosci un'anomalia chimica prima ancora che il laboratorio la confermi.
@@ -113,7 +113,7 @@ Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto 
 |---|---|---|
 | Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
 | Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Pazienza o Silenzio · vel. 2/1 · danno 2 |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
 | — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
 

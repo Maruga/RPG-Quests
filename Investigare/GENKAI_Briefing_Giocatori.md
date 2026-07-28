@@ -39,7 +39,7 @@ Ogni PG ha 6 attributi (da 4 a 9):
 ## Ki 気 — Energia Vitale
 
 Il Ki rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico.
-**Ki massimo** = attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**, reroll se esce 1) + eventuali punti comprati. Tetto: 12.
+**Ki massimo** = attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**; l'1 si ritira **una sola volta**) + eventuali punti comprati. Tetto: 12.
 Il dado rappresenta **il momento** — periodi top e periodi no: a fine caso si ritira, in su o in giù.
 Si consuma quando: subite Nami-/Kiwami-, usate il Gou, aiutate un compagno.
 
@@ -117,7 +117,7 @@ Ogni PG possiede un Gou: un'abilità straordinaria che va oltre la normale compe
 - **Fallimento** (2d6 > attributo) → dettagli vaghi o parziali
 - **Costo**: 2, 3 o 4 Ki a seconda del Gou
 - Ogni uso fa **raddoppiare** il costo del successivo (2→4→8, 3→6→12). Una **notte di sonno** riabbassa il costo di un grado
-- **Il costo si paga per intero**: attivi un Gou solo se il Ki ti basta restando ad almeno 1. Puoi bruciarti fino a Ki 1 (prima l'effetto, poi a Ki ≤ 3 il Genkai — i compagni possono rialzarti, 1 Ki ciascuno). Se il costo ti porterebbe a 0 o sotto, **il Gou non si attiva**
+- **Il costo si paga per intero**: attivi un Gou solo se il Ki ti basta restando ad almeno 1. Puoi bruciarti fino a Ki 1 (prima l'effetto, poi a Ki ≤ 3 il Genkai — i compagni possono rialzarti, 1 Ki ciascuno). Se il costo ti portasse a 0 o sotto, **il Gou non si attiva**
 
 ---
 

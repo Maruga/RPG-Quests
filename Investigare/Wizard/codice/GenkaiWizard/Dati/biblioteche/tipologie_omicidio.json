@@ -1,0 +1,488 @@
+{
+  "$commento": "Biblioteca passo 1 — Come è morto. Ogni tipologia porta i suoi vincoli generativi (il primo filtro della situazione, dal manuale) e le tracce tipiche che produce. frequenza1997 = bussola di realismo per il Giappone del 1997; le voci segnate 'rara — spunto per un caso particolare' servono a dare al GM idee fuori dal comune restando nel reale e nel praticabile.",
+  "tipologie": [
+    {
+      "id": "avvelenamento",
+      "nome": "Avvelenamento",
+      "frequenza1997": "comune nei casi domestici e professionali",
+      "sottotipi": [
+        { "id": "farmaco", "nome": "Farmaco (dose letale o interazione)", "nota": "accesso a ricette/armadietti; digossina, insulina, barbiturici; sospetto naturale su chi assiste malati" },
+        { "id": "compostoLaboratorio", "nome": "Composto industriale o da laboratorio", "nota": "richiede accesso a laboratorio/fabbrica e competenza; il registro reagenti è una traccia automatica" },
+        { "id": "tossinaAlimentare", "nome": "Tossina naturale nel cibo o bevanda", "nota": "fugu, funghi, oleandro; punta su chi cucinava o serviva" },
+        { "id": "gas", "nome": "Gas (CO, esalazioni)", "nota": "spesso camuffabile da incidente domestico; perizia sull'impianto" },
+        { "id": "iniezioneClinica", "nome": "Iniezione clinica (insulina, potassio, aria)", "nota": "ambiente ospedaliero o assistenza domiciliare; quasi invisibile senza sospetto mirato — l'autopsia standard non la cerca" },
+        { "id": "overdoseIndotta", "nome": "Overdose indotta (droga adulterata o forzata)", "nota": "la vittima 'era un tossico' e il fascicolo si chiude da solo: il camuffamento è il pregiudizio" },
+        { "id": "cronicoPiccoleDosi", "nome": "Cronico a piccole dosi (arsenico, tallio, mesi di 'malattia')", "nota": "rara — spunto per un caso particolare: la vittima è stata dal medico per mesi; le cartelle cliniche SONO la cronistoria" },
+        { "id": "allergeneMirato", "nome": "Allergene mirato (anafilassi provocata)", "nota": "rara — spunto per un caso particolare: serve conoscenza intima dell'allergia; il soccorso sabotato (adrenalina sparita) è la seconda firma" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "il colpevole aveva accesso alla vittima o al suo cibo/bevande/farmaci",
+        "competenze": "sapeva — o credeva di sapere — abbastanza di chimica/dosaggi",
+        "premeditazione": "sempre premeditato: procurarsi la sostanza richiede tempo",
+        "prossimita": "vicinanza abituale o occasione sociale precisa (cena, tè, ricevimento)"
+      },
+      "domandeGuida": [
+        "Da dove viene la sostanza? Chi può procurarsela lascia quale traccia?",
+        "In quale contenitore/momento è stata somministrata? Chi altro poteva berne?",
+        "Perché la vittima non si è accorta di nulla? (sapore, fiducia, abitudine)"
+      ],
+      "tracceTipiche": [
+        { "nome": "analisi tossicologica", "tipo": "referto", "nota": "richiede ~48 ore; senza sospetto specifico il primo referto può dire 'arresto cardiaco'" },
+        { "nome": "provenienza della sostanza (registro reagenti, farmacia, acquisti)", "tipo": "datoTecnico" },
+        { "nome": "contenitore/residui sulla scena", "tipo": "fisica", "nota": "campo-irripetibile: se non repertato subito, si perde" },
+        { "nome": "chi ha preparato o servito", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "L'autopsia standard NON cerca ogni veleno: la tossicologica mirata parte solo se qualcosa insospettisce. Ottimo per la finestra investigativa iniziale."
+    },
+    {
+      "id": "corpoContundente",
+      "nome": "Colpo con oggetto contundente",
+      "frequenza1997": "comune — il delitto d'impulso per eccellenza",
+      "sottotipi": [
+        { "id": "oggettoScena", "nome": "Oggetto trovato sul posto", "nota": "impulso: posacenere, bottiglia, attrezzo — l'arma racconta il luogo" },
+        { "id": "oggettoPortato", "nome": "Oggetto portato dal colpevole", "nota": "premeditazione; l'arma sparita diventa una caccia" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "presenza fisica sulla scena al momento del fatto",
+        "competenze": "nessuna particolare — ma la forza e l'angolo del colpo profilano corporatura e mano dominante",
+        "premeditazione": "spesso impulso (lite degenerata); premeditato se l'arma è stata portata",
+        "prossimita": "faccia a faccia: quasi sempre la vittima conosceva il colpevole"
+      },
+      "domandeGuida": [
+        "L'arma è del luogo o portata? Dov'è adesso?",
+        "Quanti colpi? Il primo per fermare, gli altri per rabbia — cosa dice del rapporto?",
+        "C'è stata colluttazione? Cosa si è rotto, spostato, sporcato?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (forma della ferita, angolo, forza, mano)", "tipo": "referto" },
+        { "nome": "l'arma: presente, ripulita o mancante", "tipo": "fisica", "nota": "campo-irripetibile" },
+        { "nome": "segni di colluttazione, sangue, impronte", "tipo": "fisica" },
+        { "nome": "chi ha sentito la lite", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Il delitto meno 'pulito': scena ricca, colpevole spesso segnato (graffi, vestiti). Ottimo per casi corti a forte pressione."
+    },
+    {
+      "id": "armaBianca",
+      "nome": "Arma da taglio",
+      "frequenza1997": "LA più comune in Giappone — il coltello da cucina è l'arma domestica nazionale",
+      "sottotipi": [
+        { "id": "coltelloCucina", "nome": "Coltello da cucina", "nota": "domestico, impulso; se manca dal ceppo della vittima, il dettaglio pesa" },
+        { "id": "lamaPropria", "nome": "Lama portata (tantō, coltello a serramanico)", "nota": "premeditazione o ambiente criminale" },
+        { "id": "forbici", "nome": "Forbici", "nota": "statisticamente vere in Giappone: l'arma che ogni casa e ogni ufficio ha; parla di impulso assoluto" },
+        { "id": "vetroBottiglia", "nome": "Vetro / bottiglia rotta", "nota": "rissa, izakaya, impulso alcolico; frammenti ovunque = scena ricchissima" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "contatto ravvicinato — zona contatto",
+        "competenze": "un colpo preciso suggerisce esperienza; colpi multipli disordinati, panico",
+        "premeditazione": "dipende dall'arma: di casa = impulso, portata = pianificato",
+        "prossimita": "rapporto stretto o agguato in spazio chiuso"
+      },
+      "domandeGuida": [
+        "Di chi era la lama? Dove è finita?",
+        "Ferite da difesa sulle mani della vittima?",
+        "Quanto sangue ha portato via il colpevole con sé?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (profondità, direzione, ferite da difesa)", "tipo": "referto" },
+        { "nome": "tracce ematiche fuori dalla scena (percorso di fuga)", "tipo": "fisica", "nota": "campo-irripetibile" },
+        { "nome": "vestiti del colpevole (lavati? buttati? dove?)", "tipo": "fisica" },
+        { "nome": "acquisto/possesso della lama", "tipo": "datoTecnico" }
+      ],
+      "notaCanone1997": "Colpo singolo preciso in ambiente yakuza = messaggio, non solo omicidio. I tantō parlano."
+    },
+    {
+      "id": "strangolamento",
+      "nome": "Strangolamento / soffocamento",
+      "frequenza1997": "comune nei delitti domestici e passionali",
+      "sottotipi": [
+        { "id": "manuale", "nome": "A mani nude", "nota": "forza fisica superiore; rapporto personale quasi certo" },
+        { "id": "legatura", "nome": "Con legatura (corda, cintura, obi)", "nota": "l'oggetto usato è una firma" },
+        { "id": "soffocamento", "nome": "Soffocamento (cuscino, sacchetto)", "nota": "vittime deboli o sedate; quasi invisibile senza autopsia attenta" },
+        { "id": "impiccagioneForzata", "nome": "Impiccagione forzata o post-mortem", "nota": "il ponte verso il suicidio inscenato: il solco doppio è la crepa medico-legale" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "contatto fisico prolungato — minuti, non secondi",
+        "competenze": "nessuna, ma serve differenza di forza o vittima incapacitata (sonno, alcol, sedativi)",
+        "premeditazione": "manuale = spesso impulso; su vittima sedata = premeditato",
+        "prossimita": "massima: è l'omicidio più intimo"
+      },
+      "domandeGuida": [
+        "La vittima era in grado di difendersi? Se no, perché? (l'eventuale sedativo è una seconda traccia)",
+        "Cosa è stato usato? È rimasto sulla scena?",
+        "Il colpevole ha segni addosso? (graffi, morsi)"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (petecchie, osso ioide, solco del laccio)", "tipo": "referto" },
+        { "nome": "DNA/pelle sotto le unghie della vittima", "tipo": "referto", "nota": "nel 1997 il DNA esiste ma è lento e raro: settimane, non giorni" },
+        { "nome": "l'oggetto della legatura", "tipo": "fisica" },
+        { "nome": "eventuale sedativo nel sangue", "tipo": "referto" }
+      ],
+      "notaCanone1997": "Il test del DNA nel 1997 è possibile ma lento, costoso e non di routine: usatelo come conferma tardiva, mai come salvagente."
+    },
+    {
+      "id": "cadutaInscenata",
+      "nome": "Caduta (accidentale solo in apparenza)",
+      "frequenza1997": "il camuffamento classico",
+      "sottotipi": [
+        { "id": "scale", "nome": "Scale di casa o del lavoro", "nota": "domestico; l'ora e le pantofole raccontano" },
+        { "id": "altezza", "nome": "Da tetto o dirupo", "nota": "richiede di portare o attirare la vittima sul posto" },
+        { "id": "finestraCondominio", "nome": "Finestra / balcone di condominio", "nota": "il vicinato come coro di testimoni parziali: chi ha sentito cosa, a che piano" },
+        { "id": "sentieroMontagna", "nome": "Sentiero di montagna (Kurama, Hiei, Arashiyama)", "nota": "i gestori dei sentieri e dei rifugi ricordano i clienti; il meteo è un testimone" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "il colpevole era lì, o ha creato le condizioni (gradino manomesso, ringhiera)",
+        "competenze": "capacità di mettere in scena: sangue freddo dopo il fatto",
+        "premeditazione": "quasi sempre: l'inscenamento richiede lucidità e tempo",
+        "prossimita": "qualcuno che poteva trovarsi col morto in quel luogo senza destare domande"
+      },
+      "domandeGuida": [
+        "Cosa non torna nella dinamica? (lesioni incompatibili, posizione del corpo)",
+        "Perché la vittima era lì a quell'ora?",
+        "Chi 'trova' il corpo — e quanto conviene a chi lo trova?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (lesioni pre-caduta, orario incompatibile)", "tipo": "referto", "nota": "l'incongruenza medico-legale è spesso l'indizio essenziale" },
+        { "nome": "la scena: segni di trascinamento, seconda presenza", "tipo": "fisica", "nota": "campo-irripetibile: la prima archiviazione come incidente distrugge tutto" },
+        { "nome": "chi sapeva dove sarebbe stata la vittima", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Spesso il caso ARRIVA ai PG già archiviato come incidente: la riapertura è l'inizio dell'avventura."
+    },
+    {
+      "id": "annegamento",
+      "nome": "Annegamento",
+      "frequenza1997": "raro come omicidio, frequente come copertura",
+      "sottotipi": [
+        { "id": "vasca", "nome": "Nella vasca (ofuro)", "nota": "domestico; alcol o sedativi quasi sempre coinvolti" },
+        { "id": "acqueAperte", "nome": "Fiume, canale, mare", "nota": "il corpo viaggia: dove è entrato in acqua ≠ dove è stato trovato" },
+        { "id": "onsenSento", "nome": "Onsen / sentō", "nota": "luogo PUBBLICO: orari, habitué, la cassiera che vede tutti — il paradosso del delitto in mezzo alla gente" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "acqua + vittima incapacitata o sorpresa",
+        "competenze": "sapere che l'annegamento maschera: l'acqua lava le tracce",
+        "premeditazione": "in vasca spesso premeditato (sedativo); in acque aperte anche impulso + occultamento",
+        "prossimita": "chi conosceva le abitudini (il bagno serale, la passeggiata lungo il Kamo)"
+      },
+      "domandeGuida": [
+        "Era vivo quando è entrato in acqua? (diatomee, acqua nei polmoni)",
+        "Il punto di ingresso in acqua: chi lo conosce, il fiume o il colpevole?",
+        "Cosa manca addosso al corpo?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (acqua nei polmoni, lesioni pre-immersione, alcol/sedativi)", "tipo": "referto" },
+        { "nome": "punto d'ingresso in acqua (vegetazione, fango, oggetti persi)", "tipo": "fisica" },
+        { "nome": "chi l'ha visto l'ultima volta e dove", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Kyoto: il Kamogawa e i canali di Fushimi sono scene naturali; la corrente ridisegna la geografia del caso."
+    },
+    {
+      "id": "armaDaFuoco",
+      "nome": "Arma da fuoco",
+      "frequenza1997": "RARISSIMA (<1% degli omicidi reali) — e questo è il punto",
+      "sottotipi": [
+        { "id": "pistola", "nome": "Pistola", "nota": "circolano quasi solo in ambiente yakuza; il possesso è già reato grave" },
+        { "id": "fucileCaccia", "nome": "Fucile da caccia", "nota": "l'unica arma legale (licenza rigidissima): il registro dei detentori è corto e consultabile" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "procurarsi l'arma È il problema: canale yakuza o licenza di caccia",
+        "competenze": "saper sparare non è scontato in Giappone: dove ha imparato?",
+        "premeditazione": "quasi sempre: nessuno 'ha con sé' una pistola per caso",
+        "prossimita": "può uccidere a distanza — unico metodo che non richiede vicinanza sociale"
+      },
+      "domandeGuida": [
+        "Da dove viene l'arma? (questa domanda È metà del caso)",
+        "Chi nel cast ha un legame anche remoto con yakuza o mondo della caccia?",
+        "Perché un metodo così rumoroso e tracciabile? Fretta, messaggio, o mano estranea al cast?"
+      ],
+      "tracceTipiche": [
+        { "nome": "balistica (calibro, arma, distanza)", "tipo": "referto" },
+        { "nome": "provenienza dell'arma (registro licenze / canale nero)", "tipo": "datoTecnico", "nota": "spesso l'indizio essenziale" },
+        { "nome": "chi ha sentito lo sparo", "tipo": "testimonianza" },
+        { "nome": "bossolo/proiettile", "tipo": "fisica", "nota": "campo-irripetibile" }
+      ],
+      "notaCanone1997": "Nel Giappone del 1997 un'arma da fuoco è GIÀ un indizio: restringe il cast a yakuza, cacciatori o chi ha comprato dal canale sbagliato. Usala solo se questa restrizione è voluta."
+    },
+    {
+      "id": "incendioDoloso",
+      "nome": "Incendio doloso",
+      "frequenza1997": "raro come arma diretta, usato per distruggere prove",
+      "sottotipi": [
+        { "id": "abitazione", "nome": "Abitazione (spesso in legno)", "nota": "le machiya bruciano in fretta: il fuoco come cancellazione della scena" },
+        { "id": "attivita", "nome": "Negozio/laboratorio", "nota": "sospetto assicurativo automatico — doppia pista" },
+        { "id": "esplosioneGas", "nome": "Esplosione di gas orchestrata", "nota": "rara — spunto per un caso particolare: sembra fatalità domestica; la perizia sull'impianto decide tutto" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "accesso al luogo + innesco; conoscere le abitudini (quando dorme, quando è vuoto)",
+        "competenze": "un incendio 'che sembri accidentale' richiede più competenza della media",
+        "premeditazione": "sempre",
+        "prossimita": "anche bassa: il fuoco lavora da solo"
+      },
+      "domandeGuida": [
+        "La vittima è morta PER il fuoco o PRIMA del fuoco? (la domanda dell'autopsia)",
+        "Punto di innesco e accelerante: cosa dicono della competenza del colpevole?",
+        "Cosa doveva sparire in quell'incendio oltre alla vittima?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (CO nel sangue: respirava durante l'incendio?)", "tipo": "referto", "nota": "spesso l'indizio essenziale che trasforma l'incidente in omicidio" },
+        { "nome": "perizia sul punto di innesco e accelerante", "tipo": "referto" },
+        { "nome": "polizza assicurativa e beneficiari", "tipo": "documento" },
+        { "nome": "chi è stato visto nei paraggi prima", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Kyoto ha memoria storica del fuoco: i vigili indagano seriamente, i vicini notano tutto. Un incendio muove il quartiere intero."
+    },
+    {
+      "id": "suicidioOrchestrato",
+      "nome": "Suicidio (orchestrato o inscenato)",
+      "frequenza1997": "il camuffamento culturalmente più efficace",
+      "sottotipi": [
+        { "id": "impiccagioneInscenata", "nome": "Impiccagione inscenata post-mortem", "nota": "richiede forza e sangue freddo; il solco doppio è la crepa medico-legale" },
+        { "id": "farmaciIndotti", "nome": "Overdose 'volontaria' indotta", "nota": "il biglietto d'addio diventa il campo di battaglia" },
+        { "id": "pressionePsicologica", "nome": "Suicidio reale, indotto da pressione deliberata", "nota": "il caso moralmente più duro: c'è un colpevole ma non un omicida" },
+        { "id": "incidenteImbarazzante", "nome": "Morte inscenata come incidente imbarazzante", "nota": "rara — spunto per un caso particolare: la scena costruita per creare vergogna (alcol, circostanze intime) così la FAMIGLIA per prima chiede di chiudere in fretta. Il camuffamento è sociale, non tecnico" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "intimità con la vittima: abitudini, calligrafia, stato d'animo pubblico",
+        "competenze": "conoscere cosa rende credibile un suicidio: contesto, biglietto, precedenti",
+        "premeditazione": "totale — è il metodo più pianificato di tutti",
+        "prossimita": "solo qualcuno di molto vicino può costruire la messinscena"
+      },
+      "domandeGuida": [
+        "Cosa non torna nel biglietto? (calligrafia, lessico, cosa NON dice)",
+        "La vittima aveva davvero segnali di crisi, o qualcuno li ha costruiti/raccontati dopo?",
+        "Chi beneficia della parola 'suicidio' scritta sul fascicolo?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia fine (solco doppio, lividi da contenzione, orario)", "tipo": "referto" },
+        { "nome": "il biglietto: perizia calligrafica, carta, penna", "tipo": "documento" },
+        { "nome": "lo stato reale della vittima nei giorni prima (agenda, chiamate, spese)", "tipo": "datoTecnico" },
+        { "nome": "chi ha raccontato per primo la versione del suicidio", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Nel Giappone del '97 il suicidio chiude i fascicoli in fretta e senza domande — lo stigma protegge il colpevole. Riaprire significa ferire la famiglia: pressione sociale sui PG garantita."
+    },
+    {
+      "id": "investimentoInscenato",
+      "nome": "Investimento stradale (pirata solo in apparenza)",
+      "frequenza1997": "plausibile e sottovalutato",
+      "sottotipi": [
+        { "id": "pirata", "nome": "Finto pirata della strada", "nota": "strada giusta, ora giusta: il colpevole conosceva il percorso della vittima" },
+        { "id": "veicoloVittima", "nome": "Manomissione del veicolo della vittima", "nota": "freni, sterzo: serve competenza meccanica — restringe il cast" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "conoscere percorsi e orari abituali della vittima (o accesso al suo veicolo)",
+        "competenze": "guidare senza esitare, o mani da meccanico",
+        "premeditazione": "alta: appostamento o sabotaggio",
+        "prossimita": "bassa al momento del fatto — alta nella conoscenza delle abitudini"
+      },
+      "domandeGuida": [
+        "Perché la vittima era a piedi/in auto proprio lì? Chi conosceva quella routine?",
+        "Il veicolo investitore: rubato, prestato, riparato di fretta nei giorni dopo?",
+        "Frenata assente: buio e distrazione, o intenzione?"
+      ],
+      "tracceTipiche": [
+        { "nome": "perizia sulla dinamica (velocità, frenata, punto d'impatto)", "tipo": "referto" },
+        { "nome": "frammenti di carrozzeria/vernice sulla scena", "tipo": "fisica", "nota": "campo-irripetibile" },
+        { "nome": "carrozzerie e officine nei giorni successivi", "tipo": "testimonianza" },
+        { "nome": "il percorso abituale della vittima: chi lo conosceva", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Niente telecamere diffuse nel 1997: la strada è cieca. Contano testimoni, vernici e officine — investigazione di suola di scarpe."
+    },
+    {
+      "id": "pestaggioGruppo",
+      "nome": "Pestaggio / violenza di gruppo",
+      "frequenza1997": "comune — la cronaca nera giovanile e di strada degli anni '90",
+      "sottotipi": [
+        { "id": "rissaDegenrata", "nome": "Rissa degenerata (izakaya, strada, festival)", "nota": "nessuno 'voleva' — ma qualcuno ha colpito per ultimo, e tutti lo sanno" },
+        { "id": "bosozoku", "nome": "Bande giovanili / bōsōzoku", "nota": "gerarchie, riti, silenzi: il gruppo protegge il colpo fatale" },
+        { "id": "bullismoScolastico", "nome": "Bullismo scolastico finito male", "nota": "rara — spunto per un caso particolare: la scuola copre, i genitori negano, i ragazzi sanno" },
+        { "id": "punizioneAmbiente", "nome": "'Punizione' d'ambiente (cantiere, yakuza, spogliatoio)", "nota": "doveva essere una lezione; l'ambiente intero diventa complice del silenzio" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "la vittima era nel territorio o nel gruppo sbagliato",
+        "competenze": "nessuna: è il numero che uccide",
+        "premeditazione": "di norma bassa sul morto, alta sull'aggressione",
+        "prossimita": "il colpevole è un GRUPPO: il vero lavoro investigativo è romperne l'omertà"
+      },
+      "domandeGuida": [
+        "Chi ha dato il colpo fatale — e il gruppo lo sa?",
+        "Qual è l'anello debole del gruppo? (il più giovane, il meno coinvolto, chi ha già precedenti)",
+        "Chi ha ripulito o spostato qualcosa DOPO, e chi l'ha deciso?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (colpi multipli, quale è stato letale, impronte diverse)", "tipo": "referto", "nota": "distinguere le mani: il perno legale del caso" },
+        { "nome": "lesioni sui membri del gruppo (nocche, scarpe)", "tipo": "fisica" },
+        { "nome": "le versioni concordate che non combaciano nei dettagli", "tipo": "testimonianza", "nota": "interrogatori separati: il cuore dell'avventura" },
+        { "nome": "chi era presente ma non ha colpito", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Legalmente decisivo CHI ha inferto il colpo mortale: il gruppo lo sa e tace. Caso costruito sugli interrogatori più che sui reperti — perfetto per Nakamura."
+    },
+    {
+      "id": "sabotaggioTrappola",
+      "nome": "Sabotaggio / trappola",
+      "frequenza1997": "raro ma documentato — l'incidente sul lavoro inscenato",
+      "sottotipi": [
+        { "id": "cantiere", "nome": "Impalcatura / cantiere", "nota": "l'edilizia post-bolla taglia sulla sicurezza: il sabotaggio si nasconde nella negligenza vera" },
+        { "id": "macchinario", "nome": "Macchinario industriale", "nota": "serve competenza tecnica: il filtro sul cast è fortissimo" },
+        { "id": "impiantoElettrico", "nome": "Impianto elettrico domestico (elettrocuzione)", "nota": "il bagno, la lavatrice, la stufa: la morte 'da casa vecchia'" },
+        { "id": "fugaGas", "nome": "Fuga di gas predisposta", "nota": "confina con l'incendio doloso; la perizia sull'impianto decide" },
+        { "id": "trappolaNaturale", "nome": "Trappola 'naturale' (mamushi, vespe ōsuzumebachi)", "nota": "rara — spunto per un caso particolare: rurale (Uji, montagna); sembra fatalità di stagione, ma qualcuno sapeva DOVE e QUANDO" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "accesso al luogo/oggetto PRIMA del fatto, senza testimoni",
+        "competenze": "tecniche e specifiche: chi sa manomettere QUELLA cosa? (il filtro più netto del catalogo)",
+        "premeditazione": "totale, e con attesa: il colpevole non è presente quando scatta",
+        "prossimita": "zero al momento della morte — l'alibi del colpevole è spesso PERFETTO, ed è questo il suo errore"
+      },
+      "domandeGuida": [
+        "Chi aveva le competenze esatte per QUESTA manomissione?",
+        "Quando è stata fatta? (la finestra di accesso è la vera scena del crimine)",
+        "Perché proprio quel giorno? Chi sapeva che la vittima avrebbe usato quella cosa?"
+      ],
+      "tracceTipiche": [
+        { "nome": "perizia tecnica sul guasto (manomissione vs usura)", "tipo": "referto", "nota": "spesso l'indizio essenziale — e richiede giorni" },
+        { "nome": "registro accessi/turni nel periodo della manomissione", "tipo": "datoTecnico" },
+        { "nome": "acquisto/possesso di attrezzi o parti", "tipo": "datoTecnico" },
+        { "nome": "chi ha insistito perché la vittima usasse quella cosa quel giorno", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "L'ispettorato del lavoro del '97 è sotto organico e l'edilizia lo sa: la prima archiviazione dice quasi sempre 'negligenza'. L'alibi di ferro del colpevole è il segnale, non la prova."
+    },
+    {
+      "id": "omissioneDeliberata",
+      "nome": "Omissione deliberata",
+      "frequenza1997": "più comune di quanto i fascicoli ammettano — quasi mai riconosciuta",
+      "sottotipi": [
+        { "id": "farmacoNegato", "nome": "Farmaco salvavita negato o sostituito", "nota": "insulina, cardiotonici: la scatola c'è, il contenuto no" },
+        { "id": "soccorsoNegato", "nome": "Soccorso deliberatamente ritardato", "nota": "la chiamata al 119 partita 'troppo tardi': i tabulati misurano i minuti" },
+        { "id": "abbandonoNonAutosufficiente", "nome": "Abbandono di persona non autosufficiente", "nota": "rara — spunto per un caso particolare: anziano o disabile lasciato senza cure/cibo; il confine tra fatica del caregiver e intenzione è il cuore morale del caso" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "il colpevole ERA la linea di sopravvivenza della vittima (familiare, badante, infermiere)",
+        "competenze": "conoscere la dipendenza esatta: cosa succede se manca X per Y ore",
+        "premeditazione": "alta ma passiva: il colpevole 'non fa' — e questo lo protegge",
+        "prossimita": "totale e quotidiana: il cast è piccolissimo per definizione"
+      },
+      "domandeGuida": [
+        "Di cosa dipendeva ESATTAMENTE la vittima, e chi lo gestiva?",
+        "Cosa dicono i tempi? (ultima dose, ultima visita, orario della chiamata)",
+        "L'omissione è stanchezza, incapacità o volontà? Cosa la fa pendere?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia + livelli ematici (quanto tempo senza il farmaco/cibo)", "tipo": "referto" },
+        { "nome": "ricette, acquisti in farmacia, scatole e blister contati", "tipo": "datoTecnico", "nota": "la contabilità dei farmaci è la cronistoria del delitto" },
+        { "nome": "tabulato della chiamata di soccorso (quando, da dove)", "tipo": "datoTecnico" },
+        { "nome": "il medico curante e gli infermieri domiciliari", "tipo": "testimonianza" }
+      ],
+      "notaCanone1997": "Il reato quasi perfetto: non c'è azione, non c'è scena, non c'è arma. Si dimostra coi REGISTRI e con la coerenza dei tempi. Il Dilemma Finale (Manuale GM) qui è quasi garantito."
+    },
+    {
+      "id": "morteIndotta",
+      "nome": "Morte indotta (il corpo cede da solo)",
+      "frequenza1997": "rara — spunto per un caso particolare",
+      "sottotipi": [
+        { "id": "spaventoCardiopatico", "nome": "Spavento/stress su cardiopatico noto", "nota": "aggressione senza contatto: minacce, irruzione, notizia devastante costruita" },
+        { "id": "farmaciScambiati", "nome": "Terapia sabotata (farmaci scambiati/diluiti)", "nota": "gemello attivo dell'omissione: qui si AGISCE sulla terapia" },
+        { "id": "sforzoImposto", "nome": "Sforzo o condizione imposta a un malato", "nota": "il capo che nega la pausa, il rito imposto, la scalata 'di gruppo': l'assassino ha testimoni a favore" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "conoscenza CLINICA della vittima: il colpevole sapeva del cuore, dell'asma, della pressione",
+        "competenze": "capire cosa il corpo della vittima non poteva reggere",
+        "premeditazione": "alta, e mascherata da eventi normali",
+        "prossimita": "sociale più che fisica: serve sapere, non toccare"
+      },
+      "domandeGuida": [
+        "CHI sapeva della patologia? (la lista è corta ed È il filtro)",
+        "Cosa è successo nelle ore prima del 'malore'? Ricostruirle minuto per minuto",
+        "L'evento scatenante è stato costruito o è arrivato da solo?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (causa naturale MA contesto anomalo)", "tipo": "referto", "nota": "il referto dice 'infarto': il caso vive tutto nel contesto" },
+        { "nome": "cartella clinica: chi ne conosceva il contenuto", "tipo": "documento" },
+        { "nome": "le ultime ore: chiamate, visite, litigi", "tipo": "testimonianza" },
+        { "nome": "analisi dei farmaci trovati in casa (contenuto vs etichetta)", "tipo": "referto" }
+      ],
+      "notaCanone1997": "Il fascicolo nasce e muore come 'morte naturale': l'avventura È convincere qualcuno (Procura compresa) che c'è un caso. Pressione istituzionale CONTRO i PG fin dal giorno zero."
+    },
+    {
+      "id": "spintaTreno",
+      "nome": "Spinta sotto il treno",
+      "frequenza1997": "rara ma tragicamente reale — e quasi sempre archiviata come suicidio",
+      "sottotipi": [
+        { "id": "banchinaAffollata", "nome": "Banchina affollata (ora di punta)", "nota": "la folla è il complice involontario: cento testimoni, nessun testimone" },
+        { "id": "stazioneDeserta", "nome": "Stazione minore, ultima corsa", "nota": "niente folla: conta chi SAPEVA che la vittima prendeva quel treno" },
+        { "id": "passaggioLivello", "nome": "Passaggio a livello", "nota": "auto o pedone; la dinamica si perizia meglio, l'inscenamento è più fragile" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "conoscere la routine ferroviaria della vittima (linea, orario, punto della banchina)",
+        "competenze": "nessuna tecnica — ma servono nervi e tempismo",
+        "premeditazione": "alta: la scelta di stazione e orario è tutto",
+        "prossimita": "un contatto di un secondo: il metodo più rapido del catalogo"
+      },
+      "domandeGuida": [
+        "Perché LEI/LUI era su quella banchina, in quel punto esatto?",
+        "Le ferrovie e la polizia hanno già scritto 'jisatsu': cosa non torna? (niente biglietto? progetti per il weekend?)",
+        "Chi era dietro nella calca — e chi è sceso dalla banchina senza prendere il treno?"
+      ],
+      "tracceTipiche": [
+        { "nome": "testimoni della banchina (versioni caotiche, un dettaglio vero)", "tipo": "testimonianza", "nota": "cento persone hanno visto: nessuna ha guardato" },
+        { "nome": "biglietto/abbonamento della vittima (da dove veniva davvero?)", "tipo": "datoTecnico" },
+        { "nome": "il capostazione e gli orari al secondo", "tipo": "testimonianza" },
+        { "nome": "l'assenza dei segnali del suicidio (nessun biglietto, progetti in corso)", "tipo": "documento" }
+      ],
+      "notaCanone1997": "Le ferrovie giapponesi archiviano il 'jinshin jiko' in fretta — c'è perfino la fattura dei danni alla famiglia. Tutto il sistema VUOLE che sia suicidio: i PG remano contro la corrente."
+    },
+    {
+      "id": "ipotermiaEsposizione",
+      "nome": "Ipotermia / esposizione",
+      "frequenza1997": "rara — spunto per un caso particolare, stagionale",
+      "sottotipi": [
+        { "id": "ubriacoInverno", "nome": "Ubriaco 'lasciato' fuori d'inverno", "nota": "dopo la nomikai: chi l'ha accompagnato per ultimo? chi NON l'ha fatto salire?" },
+        { "id": "montagna", "nome": "Montagna (Kurama, Hiei) fuori stagione", "nota": "l'escursione 'andata male': attrezzatura mancante, compagno rientrato solo" },
+        { "id": "cellaFrigorifera", "nome": "Chiuso in cella frigorifera (mercato, fabbrica)", "nota": "rara — spunto per un caso particolare: la porta 'difettosa', il turno che non c'era; il luogo di lavoro come arma" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "controllo del luogo o dell'ultimo tratto di strada della vittima",
+        "competenze": "nessuna: il freddo lavora da solo — serve solo impedire il rientro",
+        "premeditazione": "media: spesso un'occasione colta (l'ubriachezza, la gita)",
+        "prossimita": "l'ultimo ad averla vista viva è quasi sempre nel cast stretto"
+      },
+      "domandeGuida": [
+        "Poteva salvarsi? Cosa gliel'ha impedito? (porta chiusa, scarpe sparite, sentiero sbagliato indicato)",
+        "Chi c'era nell'ultimo tratto — e chi doveva esserci e non c'era?",
+        "L'alcol/sedativo nel sangue: bevuto o fatto bere?"
+      ],
+      "tracceTipiche": [
+        { "nome": "autopsia (ipotermia + alcol/sedativi + lesioni da 'contenimento')", "tipo": "referto" },
+        { "nome": "meteo e tempi (quando è iniziata la nevicata, quando è morto)", "tipo": "datoTecnico" },
+        { "nome": "l'ultima compagnia: la nomikai, il gruppo di escursione", "tipo": "testimonianza" },
+        { "nome": "lo stato del luogo (porta, serratura, campanello d'allarme della cella)", "tipo": "fisica", "nota": "campo-irripetibile" }
+      ],
+      "notaCanone1997": "L'inverno di Kyoto è corto ma vero, e in montagna il freddo uccide anche in autunno. Il medico legale scrive 'assideramento': la parola 'omicidio' devono guadagnarsela i PG."
+    },
+    {
+      "id": "manomissioneProdotti",
+      "nome": "Manomissione di prodotti (il bersaglio nascosto nel mucchio)",
+      "frequenza1997": "rara ma nella memoria di tutti — spunto per un caso particolare",
+      "sottotipi": [
+        { "id": "ciboScaffale", "nome": "Cibo/bevande sullo scaffale o distributore", "nota": "eco del caso Glico-Morinaga (1984): il panico è collettivo, il bersaglio forse uno solo" },
+        { "id": "farmaciConfezione", "nome": "Farmaci manomessi in confezione", "nota": "la farmacia di quartiere diventa scena del crimine; il registro vendite è oro" },
+        { "id": "omiyageAvvelenato", "nome": "Omiyage / regalo alimentare mirato", "nota": "il dolce portato in ufficio, il sake regalato: l'arma viaggia per mano di terzi innocenti" }
+      ],
+      "vincoliGenerativi": {
+        "accesso": "accesso al prodotto PRIMA della vittima: scaffale, pacco, scrivania",
+        "competenze": "media: manomettere senza lasciare segni visibili",
+        "premeditazione": "totale — e cinica: accetta vittime casuali o le usa come cortina",
+        "prossimita": "può essere minima: è il metodo che meglio nasconde il legame colpevole-vittima"
+      },
+      "domandeGuida": [
+        "Il bersaglio era UNO (e gli altri sono cortina) o il gesto è indiscriminato? Da cosa si capisce?",
+        "Come faceva il colpevole a sapere che il prodotto sarebbe arrivato alla vittima giusta?",
+        "Dove è avvenuta la manomissione? (fabbrica, negozio, tragitto, ufficio)"
+      ],
+      "tracceTipiche": [
+        { "nome": "analisi del prodotto e della confezione (dove è stata aperta/richiusa)", "tipo": "referto" },
+        { "nome": "lotto e catena di distribuzione (quali altri pezzi sono contaminati?)", "tipo": "datoTecnico", "nota": "spesso l'indizio essenziale: il punto della catena restringe il cast" },
+        { "nome": "chi ha comprato/regalato/portato il prodotto alla vittima", "tipo": "testimonianza" },
+        { "nome": "altri casi di malore collegati allo stesso lotto", "tipo": "documento" }
+      ],
+      "notaCanone1997": "Il Giappone ricorda Glico-Morinaga: appena la stampa fiuta 'prodotto avvelenato' il caso diventa NAZIONALE — pressione mediatica massima, e la vera domanda investigativa è: chi era il bersaglio nel mucchio?"
+    }
+  ]
+}

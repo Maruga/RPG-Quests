@@ -218,7 +218,7 @@ Ogni PG possiede un **Gou**: un'abilità straordinaria che lo distingue dalle pe
 
 > **Esempio**: Gou da 2 Ki. Lo usi la mattina: paghi 2. Lo riusi nel pomeriggio: paghi 4. Quella notte dormi — il costo scende di un grado. Il giorno dopo lo usi ancora: paghi di nuovo 4, non 8. Un'altra notte senza usarlo e il costo torna a 2.
 
-**Attivazione — il costo si paga per intero**: attivi un Gou **solo se puoi pagarne il costo intero restando ad almeno Ki 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi quello che hai pagato (la visione, l'informazione), poi se sei a Ki ≤ 3 il Genkai scatta **appena l'effetto si conclude**. Ma se il costo ti porterebbe a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali, mai — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I compagni possono rialzarti come in ogni Genkai (1 Ki ciascuno).
+**Attivazione — il costo si paga per intero**: attivi un Gou **solo se puoi pagarne il costo intero restando ad almeno Ki 1**. Puoi bruciarti — scendere a 3, 2 o 1: prima ricevi quello che hai pagato (la visione, l'informazione), poi se sei a Ki ≤ 3 il Genkai scatta **appena l'effetto si conclude**. Ma se il costo ti portasse a **0 o sotto, il Gou non si attiva**: niente pagamenti parziali, mai — quando il costo raddoppiato supera le tue forze, il dono tace finché non riposi. I compagni possono rialzarti come in ogni Genkai (1 Ki ciascuno).
 
 > **Esempio**: Fujita è a Ki 6 e attiva L'Eco della Montagna (4 Ki): scende a 2. Sente le voci — l'informazione arriva — poi le gambe cedono: Genkai. Nakamura la fa sedere e le parla piano: *"Respira. Siamo qui."* (le dona 1 Ki). Sato le porta un bicchiere d'acqua senza dire nulla (1 Ki). Fujita risale a 4: sopra la soglia, rientra in gioco.
 
@@ -1250,7 +1250,7 @@ Ogni uso raddoppia il costo del successivo (2→4→8)
 Una notte di sonno riabbassa il costo di un grado
 Affinabile una volta: costo base -1, pagando base × 11 Shugyō
 Si attiva SOLO se paghi il costo intero restando ad almeno Ki 1
-(a Ki ≤ 3 il Genkai; se ti porterebbe a 0 o sotto → NON si attiva)
+(a Ki ≤ 3 il Genkai; se ti portasse a 0 o sotto → NON si attiva)
 scatta a effetto concluso (i compagni possono aiutare)
 Successo: funziona con dettagli precisi
 Fallimento: funziona con dettagli vaghi

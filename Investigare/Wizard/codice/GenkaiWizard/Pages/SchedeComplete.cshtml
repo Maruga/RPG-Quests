@@ -1,0 +1,30 @@
+@page
+@model GenkaiWizard.Pages.SchedeCompleteModel
+@{
+    ViewData["Title"] = "Schede complete";
+}
+
+<div class="wz">
+    <h1 class="wz-h1">🚧 Schede complete — in costruzione</h1>
+    <p class="wz-aiuto">Questa sezione genererà le <strong>schede complete da manuale</strong>, pronte da stampare. Per ora è un segnaposto: la voce di menu c'è per ricordarci il lavoro — come gestirle lo decidiamo insieme.</p>
+
+    <div class="wz-info">
+        @if (Model.Tipo == "pg")
+        {
+            <h3 class="wz-h3">🎴 Scheda PG completa</h3>
+            <p>Quello che conterrà (dal Regolamento): anagrafica e ritratto · <strong>6 attributi</strong> (tutti da 4 + 9 punti) · <strong>Ki massimo</strong> (attributo più basso + 2d6 dado migliore) · <strong>Gou</strong> con i vincoli · <strong>Senmon</strong> · soroban · equipaggiamento v2 · Kage.</p>
+        }
+        else if (Model.Tipo == "png")
+        {
+            <h3 class="wz-h3">🎭 Scheda PNG completa</h3>
+            <p>Quello che conterrà: anagrafica · attributi (4–9, comparse 5–6) · <strong>Riserva</strong> (3/6/9 — i notevoli con scheda usano il Ki) · Senmon a discrezione del GM · trigger e deposizioni dalla scheda del caso.</p>
+        }
+        else
+        {
+            <h3 class="wz-h3">🏢 Scheda distretto completa</h3>
+            <p>Quello che conterrà (dal Manuale Situazioni): <strong>Organico · Efficienza · Velocità · Risorse · Rete · Corruzione</strong> (2d6 somma, min 4 max 9; la Corruzione si assegna) · specializzazioni (a 8 una, a 9 due) · azioni delegabili · tempi delle operazioni.</p>
+        }
+    </div>
+
+    <p class="wz-nota">Intanto, le <strong>statistiche veloci</strong> si tirano già nella scheda del caso (passo 11): 🎲 per persone e enti.</p>
+</div>

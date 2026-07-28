@@ -1,0 +1,30 @@
+<p class="wz-aiuto">Il mondo <strong>continua a muoversi</strong> anche se i PG non fanno nulla. Eventi automatici (referti coi loro tempi, necrologio, funerale) ed eventi condizionali ("se i PG non hanno ancora interrogato X → …"). Ogni mossa di copertura del colpevole lascia una traccia nuova.</p>
+
+<details class="wz-help">
+    <summary>❓ Come si scrive un giorno — esempi</summary>
+    <div>
+        <p>Per ogni giorno, due tipi di eventi:</p>
+        <p><strong>Automatici</strong> — succedono comunque, coi tempi reali del 1997:</p>
+        <div class="wz-esempio-testo">Giorno 2 — Arriva la tossicologica (48h dal prelievo): composto organofosforico nel tè.</div>
+        <div class="wz-esempio-testo">Giorno 3 — Necrologio sul Kyoto Shimbun; il funerale è fissato per giovedì.</div>
+        <p><strong>Condizionali</strong> — formato <em>se → allora</em>, il mondo reagisce ai PG (o alla loro assenza):</p>
+        <div class="wz-esempio-testo">Giorno 3 — Se i PG non hanno ancora sentito la segretaria → lei parla della lite alla collega sbagliata, e Kuroda lo viene a sapere.</div>
+        <div class="wz-esempio-testo">Giorno 4 — Se Kuroda si sente osservato → butta i guanti nel bidone di casa (nuova traccia per chi lo pedina).</div>
+    </div>
+</details>
+
+<div data-lista="passo11.giorni" data-tipo-lista="giornoCalendario"></div>
+
+<div id="cal-sugg" class="wz-sugg" hidden>
+    <button type="button" class="wz-btn wz-ai" id="cal-sugg-apri">✨ Chiedi all'AI un evento</button>
+    <div id="cal-sugg-box" class="wz-sugg-box" hidden>
+        <p class="wz-mini-nota">Chiedi <strong>UNA cosa</strong> da mettere nel calendario e l'AI ti dà <strong>solo quella</strong>, dai fatti del caso. Non tocca niente: la <strong>aggiungi tu</strong> se ti va.</p>
+        <textarea id="cal-sugg-note" rows="2" placeholder="Es. «aggiungi il funerale», «cosa succede il giorno dopo la morte», «una mossa di copertura del colpevole al giorno 2»"></textarea>
+        <div class="wz-nome-riga">
+            <button type="button" class="wz-btn wz-btn-primario" id="cal-sugg-genera">✨ Genera</button>
+            <button type="button" class="wz-btn" id="cal-sugg-chiudi">Chiudi</button>
+            <span class="wz-alg-msg" id="cal-sugg-msg"></span>
+        </div>
+        <div id="cal-sugg-out" class="wz-sugg-out"></div>
+    </div>
+</div>

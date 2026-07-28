@@ -1,0 +1,531 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ═══════════════ GENKAI Wizard — mobile-first ═══════════════ */
+:root {
+  --wz-oro: #b49650;
+  --wz-navy: #1a1a2e;
+  --wz-crema: #f5f3eb;
+  --wz-rosso: #8b0000;
+  --wz-grigio: #787878;
+}
+
+.wz { max-width: 860px; margin: 0 auto; }
+
+.wz-testata { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; }
+.wz-indietro { font-size: 1.6rem; text-decoration: none; color: var(--wz-navy); padding: 0 .4rem; }
+.wz-titolo { flex: 1; border: none; border-bottom: 2px solid var(--wz-oro); font-size: 1.1rem; font-weight: 600; background: transparent; min-width: 0; }
+.wz-salvato { font-size: .8rem; }
+.wz-salvato.ok { color: #2e7d32; }
+.wz-salvato.attesa { color: var(--wz-oro); }
+.wz-salvato.errore { color: var(--wz-rosso); }
+.wz-drawer-btn { border: 1px solid var(--wz-oro); background: var(--wz-crema); border-radius: 6px; padding: .2rem .6rem; font-size: 1rem; }
+.wz-modello { border: 1px solid var(--wz-oro); background: var(--wz-crema); border-radius: 6px; padding: .2rem .3rem; font-size: .78rem; max-width: 9rem; cursor: pointer; }
+
+.wz-progresso { display: flex; gap: .4rem; overflow-x: auto; padding: .25rem 0 .6rem; }
+.wz-punto { display: flex; flex-direction: column; align-items: center; gap: .18rem; min-width: 56px; flex: 0 0 auto; text-decoration: none; }
+.wz-punto-n { min-width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--wz-grigio); color: var(--wz-grigio); font-size: .85rem; }
+.wz-punto-t { font-size: .6rem; color: var(--wz-grigio); text-align: center; line-height: 1.05; max-width: 64px; }
+.wz-punto.fatto .wz-punto-n { border-color: var(--wz-oro); color: var(--wz-oro); background: var(--wz-crema); }
+.wz-punto.fatto .wz-punto-t { color: var(--wz-oro); }
+.wz-punto.attivo .wz-punto-n { background: var(--wz-navy); border-color: var(--wz-navy); color: #fff; font-weight: 700; }
+.wz-punto.attivo .wz-punto-t { color: var(--wz-navy); font-weight: 700; }
+
+.wz-drawer { border: 1px solid var(--wz-oro); background: var(--wz-crema); border-radius: 8px; padding: .8rem 1rem; margin-bottom: 1rem; font-size: .9rem; }
+.wz-drawer h3 { font-size: 1rem; color: var(--wz-oro); margin-bottom: .4rem; }
+
+.wz-passo h2 { font-size: 1.25rem; margin-bottom: .8rem; }
+.wz-passo-n { color: var(--wz-oro); font-size: .85rem; display: block; }
+
+.wz-aiuto { background: var(--wz-crema); border-left: 3px solid var(--wz-oro); padding: .6rem .9rem; border-radius: 0 6px 6px 0; font-size: .92rem; }
+.wz-nota { color: var(--wz-grigio); font-size: .82rem; display: block; margin-top: .2rem; }
+.wz-opz { color: var(--wz-grigio); font-weight: 400; font-size: .85em; }
+.wz-obbl { color: var(--wz-rosso); }
+
+.wz-campo { margin: .9rem 0; }
+.wz-campo > label { display: block; font-weight: 600; margin-bottom: .25rem; font-size: .95rem; }
+.wz-campo input[type=text], .wz-campo input[type=number], .wz-campo select, .wz-campo textarea,
+.wz-riga-lista input, .wz-riga-lista select, .wz-blocco-lista textarea, .wz-blocco-lista input, .wz-blocco-lista select {
+  width: 100%; padding: .55rem .6rem; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; /* 16px = niente zoom iOS */
+}
+.wz-riga2 { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+.wz-radio3 { display: flex; gap: 1rem; flex-wrap: wrap; }
+.wz-radio3 label, .wz-check { display: flex; align-items: center; gap: .35rem; font-size: .95rem; }
+.wz-check-mini { display: flex; align-items: center; gap: .2rem; font-size: .8rem; }
+
+.wz-info { background: #fafaf5; border: 1px dashed var(--wz-oro); border-radius: 6px; padding: .5rem .8rem; margin-top: .4rem; font-size: .85rem; }
+.wz-info ul { margin: .3rem 0 .3rem 1.1rem; }
+.wz-info p { margin: .25rem 0; }
+
+.wz-h3 { font-size: 1rem; color: var(--wz-navy); border-bottom: 1px solid var(--wz-oro); padding-bottom: .2rem; margin-top: 1.3rem; }
+.wz-h3 small { color: var(--wz-grigio); font-weight: 400; }
+
+.wz-riga-lista { display: flex; gap: .35rem; align-items: center; margin: .35rem 0; flex-wrap: wrap; }
+.wz-riga-lista .wz-corto { flex: 1 1 90px; width: auto; }
+.wz-riga-lista .wz-medio { flex: 1 1 130px; width: auto; }
+.wz-riga-lista .wz-lungo { flex: 2 1 220px; width: auto; }
+.wz-riga-lista .wz-num { flex: 0 0 4.2rem; width: 4.2rem; }
+.wz-blocco-lista { border: 1px solid #e0dcc8; border-radius: 8px; padding: .5rem .6rem; margin: .5rem 0; }
+.wz-via-riga { margin-top: .1rem; } /* Via del luogo su riga a sé, a tutta larghezza (indirizzo completo) */
+.wz-strada { padding-left: .8rem; }
+.wz-strada-n { color: var(--wz-oro); }
+
+.wz-btn { border: 1px solid var(--wz-navy); background: #fff; color: var(--wz-navy); border-radius: 8px; padding: .55rem 1rem; font-size: .95rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+.wz-btn-primario { background: var(--wz-navy); color: #fff; }
+.wz-btn.wz-mini { padding: .3rem .55rem; font-size: .85rem; }
+.wz-btn-x { border: none; background: transparent; color: var(--wz-rosso); font-size: 1rem; padding: .2rem .4rem; }
+.wz-aggiungi { margin-top: .3rem; border-style: dashed; }
+.wz-ai { margin-top: 1rem; border-color: var(--wz-oro); color: var(--wz-oro); }
+
+.wz-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0 1rem; position: sticky; bottom: 0; background: #fff; padding: .6rem 0; border-top: 1px solid #eee; }
+.wz-nav .wz-btn { min-width: 44%; min-height: 48px; }
+
+.wz-proposte { border: 2px solid var(--wz-oro); border-radius: 10px; padding: .8rem; margin-top: 1rem; background: #fffdf6; }
+.wz-proposte-testata { display: flex; justify-content: space-between; align-items: center; }
+.wz-proposta { border: 1px solid #e0dcc8; border-radius: 8px; padding: .5rem; margin: .5rem 0; }
+.wz-proposta pre { font-size: .75rem; white-space: pre-wrap; max-height: 260px; overflow: auto; }
+
+.wz-nome-riga { display: flex; gap: .5rem; align-items: center; }
+.wz-nome-mostra { font-size: 1.05rem; font-weight: 600; }
+.wz-candidato { background: var(--wz-crema); border-radius: 6px; padding: .15rem .4rem; }
+
+.l-ok { color: #2e7d32; margin: .2rem 0; }
+.l-warn { color: #b26a00; margin: .2rem 0; }
+.l-err { color: var(--wz-rosso); margin: .2rem 0; }
+
+/* Progetti */
+.wz-progetti { max-width: 720px; margin: 0 auto; }
+.wz-nuovo { display: flex; gap: .5rem; margin: 1rem 0; }
+.wz-nuovo input { flex: 1; padding: .55rem .6rem; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+.wz-lista { list-style: none; padding: 0; }
+.wz-card { display: flex; align-items: stretch; gap: .3rem; border: 1px solid #e0dcc8; border-radius: 10px; margin: .6rem 0; overflow: hidden; }
+.wz-card-main { flex: 1; padding: .7rem .9rem; text-decoration: none; color: var(--wz-navy); display: block; }
+.wz-meta { display: block; color: var(--wz-grigio); font-size: .8rem; margin: .15rem 0 .3rem; }
+.wz-barra { display: block; height: 5px; background: #eee; border-radius: 3px; }
+.wz-barra span { display: block; height: 5px; background: var(--wz-oro); border-radius: 3px; }
+.wz-vuoto { color: var(--wz-grigio); }
+
+@media (max-width: 600px) {
+  .wz-riga2 { grid-template-columns: 1fr; }
+}
+
+/* Riassunto: colonna fissa su desktop, blocchi richiudibili */
+.wz-rias-testata { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin-bottom: .3rem; }
+.wz-rias-testata h3 { margin: 0; }
+.wz-rias-blocco { border-bottom: 1px solid #e6e0cc; padding: .3rem 0; font-size: .85rem; }
+.wz-rias-blocco summary { color: var(--wz-oro); font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; padding: .15rem 0; user-select: none; }
+.wz-rias-blocco p { margin: .15rem 0; }
+.wz-rias-blocco ul { margin: .15rem 0 .3rem 1rem; padding: 0; }
+.wz-rias-blocco li { margin: .12rem 0; }
+.wz-rias-sotto { color: var(--wz-navy); font-weight: 600; font-size: .78rem; margin-top: .35rem !important; text-transform: uppercase; letter-spacing: .02em; }
+.wz-rias-mini { color: var(--wz-grigio); font-size: .8rem; }
+.wz-rias-fase { color: var(--wz-oro); font-size: .75rem; }
+
+@media (min-width: 1000px) {
+  .wz { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 0 1.2rem; max-width: 1200px; }
+  .wz-testata, .wz-progresso, .wz-nav { grid-column: 1 / -1; }
+  .wz-passo { grid-column: 1; grid-row: 3; }
+  .wz-drawer { grid-column: 2; grid-row: 3; position: sticky; top: 1rem; align-self: start; max-height: 82vh; overflow-y: auto; margin-bottom: 0; }
+  .wz-drawer[hidden] { display: block; } /* su desktop è sempre visibile */
+  #wz-drawer-btn { display: none; }
+}
+
+/* Mappa di Kyoto */
+.wz-link { background: none; border: none; color: var(--wz-oro); text-decoration: underline; padding: 0; font-size: inherit; cursor: pointer; }
+.wz-mappa-overlay { position: fixed; inset: 0; background: rgba(26,26,46,.55); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.wz-mappa-scatola { background: #fff; border-radius: 12px; padding: 1rem; max-width: 560px; width: 100%; max-height: 92vh; overflow-y: auto; }
+.wz-mappa svg { width: 100%; height: auto; }
+.wz-mappa-q { fill: var(--wz-crema); stroke: var(--wz-oro); stroke-width: 1.5; cursor: pointer; transition: fill .15s; }
+.wz-mappa-q:hover { fill: #ecdfb9; }
+.wz-mappa-q.scelto { fill: var(--wz-navy); }
+.wz-mappa-q.scelto + text { fill: #fff; }
+.wz-mappa-fuori { stroke-dasharray: 5 4; }
+.wz-mappa-lbl { font-size: 13px; fill: var(--wz-navy); pointer-events: none; font-weight: 600; }
+.wz-mappa-lbl-v { writing-mode: vertical-rl; font-size: 11px; }
+.wz-mappa-mini { font-size: 9px; fill: var(--wz-grigio); }
+.wz-mappa-rif text { font-size: 11px; fill: var(--wz-rosso); pointer-events: none; }
+.wz-mappa-stella { font-size: 15px; fill: var(--wz-oro) !important; }
+
+/* Proposte nome (chips) e validazione anti-omonimie */
+.wz-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .5rem; }
+.wz-chip { border: 1.5px solid var(--wz-oro); background: var(--wz-crema); border-radius: 999px; padding: .45rem .9rem; font-size: .95rem; cursor: pointer; }
+.wz-chip small { color: var(--wz-grigio); margin-left: .3rem; }
+.wz-chip:hover { background: #ecdfb9; }
+.wz-nome-ko { border-color: var(--wz-rosso) !important; background: #fdecec; }
+.wz-riga-ko input[type=text] { border-color: var(--wz-rosso); background: #fdecec; }
+
+/* Campo libero "Altro — lo scrivo io" accanto ai select di contenuto */
+.wz-custom-input { margin-top: .4rem; border-color: var(--wz-oro) !important; background: #fffdf6; }
+
+/* Filtro sul cast (passo 4) — card con domanda guidata */
+.wz-filtro-card { border: 1px solid #e0dcc8; border-radius: 10px; padding: .7rem .9rem; margin: .6rem 0; transition: background .15s, border-color .15s; }
+.wz-filtro-card.candidato { border-color: var(--wz-oro); background: #fffaf0; }
+.wz-filtro-card.escluso { background: #f6f6f6; opacity: .85; }
+.wz-filtro-testa { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
+.wz-filtro-eta { color: var(--wz-grigio); font-size: .85rem; }
+.wz-filtro-chi { color: var(--wz-grigio); font-size: .85rem; font-style: italic; }
+.wz-filtro-domanda { font-size: .9rem; margin: .45rem 0 .3rem; color: var(--wz-navy); }
+.wz-seg { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .45rem; }
+.wz-seg label { cursor: pointer; }
+.wz-seg input { position: absolute; opacity: 0; pointer-events: none; }
+.wz-seg span { display: inline-block; border: 1.5px solid #ccc; border-radius: 999px; padding: .4rem .85rem; font-size: .88rem; background: #fff; }
+.wz-seg input:checked + span { border-color: var(--wz-navy); background: var(--wz-navy); color: #fff; }
+.wz-seg label:first-child input:checked + span { border-color: var(--wz-oro); background: var(--wz-oro); }
+.wz-filtro-card .f-perche { width: 100%; }
+/* Pannelli aiuto ❓ — a tocco (niente mouseover: mobile-first), con esempi toccabili */
+.wz-help { margin: .4rem 0 .2rem; }
+.wz-help > summary { cursor: pointer; font-size: .88rem; color: var(--wz-oro); font-weight: 600; padding: .25rem 0; list-style: none; user-select: none; }
+.wz-help > summary::-webkit-details-marker { display: none; }
+.wz-help > summary::after { content: " ▾"; font-size: .75rem; color: var(--wz-grigio); }
+.wz-help[open] > summary::after { content: " ▴"; }
+.wz-help > div { border: 1px solid #e6ddbe; border-left: 3px solid var(--wz-oro); background: #fffdf4; border-radius: 8px; padding: .7rem .9rem; margin-top: .35rem; font-size: .9rem; }
+.wz-help > div p { margin: .35rem 0; }
+.wz-esempio { display: block; width: 100%; text-align: left; border: 1.5px dashed var(--wz-oro); background: #fff; border-radius: 8px; padding: .5rem .7rem; margin: .35rem 0; font-size: .88rem; cursor: pointer; color: var(--wz-navy); }
+.wz-esempio:hover, .wz-esempio:focus-visible { background: #fdf4dd; border-style: solid; }
+.wz-esempio::before { content: "👆 "; }
+.wz-esempio-testo { border: 1px solid #e6e2d2; background: #fafaf5; border-radius: 8px; padding: .45rem .7rem; margin: .3rem 0; font-size: .87rem; color: #444; }
+
+/* Select nelle righe-lista: possono restringersi (il min-content di un select è l'opzione più lunga e sfonda la riga) */
+.wz-riga-lista select { min-width: 0; }
+.wz-riga-lista select[data-sel-custom] { flex: 1 1 150px; max-width: 260px; }
+
+/* Linguette interne al passo (es. passo 3: La sua vita / Altre persone del caso) */
+.wz-tabs { display: flex; gap: .4rem; margin: .8rem 0 .4rem; border-bottom: 2px solid var(--wz-oro); }
+.wz-tab { border: 1px solid #ddd; border-bottom: none; background: #f4f2ea; color: var(--wz-grigio); border-radius: 8px 8px 0 0; padding: .5rem .95rem; font-size: .92rem; cursor: pointer; }
+.wz-tab.attiva { background: #fff; color: var(--wz-navy); font-weight: 700; border-color: var(--wz-oro); position: relative; top: 2px; border-bottom: 2px solid #fff; }
+
+/* Appunti del GM per persona (📝) */
+.wz-btn-nota.ha-nota { border-color: var(--wz-oro); background: #fdf4dd; }
+.wz-dialog { border: 2px solid var(--wz-oro); border-radius: 12px; padding: 1rem 1.2rem; max-width: min(560px, 92vw); width: 100%; }
+.wz-dialog::backdrop { background: rgba(26, 26, 46, .45); }
+.wz-dialog h3 { margin: 0 0 .3rem; color: var(--wz-navy); }
+.wz-dialog textarea { width: 100%; padding: .55rem .6rem; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; margin-top: .5rem; }
+.wz-dialog-azioni { display: flex; justify-content: flex-end; gap: .6rem; margin-top: .8rem; }
+.wz-riga-lista input { min-width: 0; }
+
+/* Passo 9 — Relazioni ed En: righe e grafo */
+.wz-rel-riga select.wz-num { flex: 0 0 4.6rem; width: 4.6rem; }
+.wz-rel-grafo { border: 1px solid #e0dcc8; border-radius: 10px; background: #fffdf6; padding: .4rem; overflow-x: auto; }
+.wz-rel-svg { width: 100%; height: auto; display: block; }
+.wz-rel-nome { font-size: 11px; text-anchor: middle; fill: #1a1a2e; }
+.wz-rel-tipo { font-size: 10px; text-anchor: middle; fill: #787878; font-style: italic; }
+.wz-rel-en { font-size: 11px; text-anchor: middle; font-weight: 700; }
+.wz-rel-ruolo { font-size: 12px; text-anchor: middle; }
+
+/* Scala En, descrizioni sotto i nomi, select En più larghi */
+.wz-rel-riga select.wz-en { flex: 0 0 8.6rem; width: 8.6rem; }
+.wz-tab-en { border-collapse: collapse; font-size: .85rem; margin: .3rem 0; }
+.wz-tab-en th, .wz-tab-en td { border: 1px solid #e0dcc8; padding: .22rem .6rem; text-align: left; }
+.wz-tab-en .en-pos td:first-child { color: #2e7d32; font-weight: 700; }
+.wz-tab-en .en-neg td:first-child { color: #8b0000; font-weight: 700; }
+.wz-tab-en .en-prof { color: var(--wz-oro); font-size: .78rem; font-style: italic; }
+.wz-chie { display: block; color: var(--wz-grigio); font-size: .78rem; font-weight: 400; line-height: 1.15; }
+.wz-check { align-items: flex-start; }
+.wz-check .wz-check-testo { display: inline-block; }
+.wz-rel-chie { font-size: 8.5px; text-anchor: middle; fill: #999; }
+
+/* Grafo relazioni: aloni bianchi sulle scritte (leggibili sugli incroci), iniziali nei nodi */
+.wz-rel-nome, .wz-rel-tipo, .wz-rel-en, .wz-rel-chie { paint-order: stroke; stroke: #fffdf6; stroke-width: 3px; stroke-linejoin: round; }
+.wz-rel-iniziali { font-size: 13px; text-anchor: middle; font-weight: 700; }
+
+/* Tabella da tavolo delle relazioni */
+.wz-rel-tab-box { overflow-x: auto; }
+.wz-tab-rel { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.wz-tab-rel th { text-align: left; color: var(--wz-oro); font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; border-bottom: 2px solid var(--wz-oro); padding: .3rem .5rem; }
+.wz-tab-rel td { border-bottom: 1px solid #e6e0cc; padding: .4rem .5rem; vertical-align: top; }
+.wz-tab-rel .wz-rel-encella { font-weight: 700; white-space: nowrap; }
+.wz-tab-rel .wz-rel-encella small { display: block; font-weight: 400; font-size: .72rem; }
+.wz-tab-rel .wz-rel-tipocella { font-style: italic; color: var(--wz-navy); }
+
+/* Barra di ordinamento luoghi */
+.wz-ordina { display: flex; gap: .4rem; align-items: center; flex-wrap: wrap; margin: .5rem 0 .3rem; }
+.wz-ordina-lbl { color: var(--wz-grigio); font-size: .85rem; }
+.wz-ordina .wz-btn.attivo { background: var(--wz-navy); color: #fff; border-color: var(--wz-navy); }
+
+/* Nomi cliccabili nel riassunto (inserimento nel campo attivo) */
+.wz-nome-ins { cursor: pointer; border-bottom: 1px dashed var(--wz-oro); }
+.wz-nome-ins:hover, .wz-nome-ins:active { background: #fdf4dd; }
+.wz-nome-ins-demo { border-bottom: 1px dashed var(--wz-oro); }
+
+/* Membri dei gruppi: pillole a toggle (tocca = dentro/fuori) */
+.wz-membri { display: flex; flex-wrap: wrap; gap: .35rem; margin: .25rem 0 .5rem; }
+.wz-membro { border: 1.5px solid #ccc; background: #fff; color: var(--wz-grigio); border-radius: 999px; padding: .35rem .8rem; font-size: .88rem; cursor: pointer; }
+.wz-membro.attivo { border-color: var(--wz-oro); background: #fdf4dd; color: var(--wz-navy); font-weight: 600; }
+.wz-membro.attivo::before { content: "✓ "; color: var(--wz-oro); }
+.wz-membro { text-align: center; line-height: 1.15; }
+.wz-membro .wz-chie { font-size: .7rem; }
+
+/* Mappa per avventura: immagine + perni calibrabili */
+.wz-mappa-scatola { max-width: 920px; width: 94vw; }
+.wz-mappa2-cont { position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(26,26,46,.25); }
+.wz-mappa2-cont img { width: 100%; display: block; }
+.wz-mappa2-cont.posiziona { cursor: crosshair; outline: 3px dashed var(--wz-oro); }
+#wz-mappa2-pins { position: absolute; inset: 0; }
+.wz-pin { position: absolute; transform: translate(-50%, -8px); background: none; border: none; cursor: pointer; text-align: center; padding: 0; }
+.wz-pin::before { content: ""; display: block; width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: #fffdf6; border: 3px solid var(--wz-navy); box-shadow: 0 1px 3px rgba(0,0,0,.45); }
+.wz-pin.caso::before { border-color: #7a5f1e; background: var(--wz-oro); }
+.wz-pin-n { display: block; font-size: 11.5px; font-weight: 700; color: var(--wz-navy); margin-top: 1px; text-shadow: 0 0 3px #f5f3eb, 0 0 6px #f5f3eb, 1px 1px 2px #f5f3eb; white-space: nowrap; }
+.wz-pin-p { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); color: var(--wz-oro); font-size: 14px; text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.wz-pin-b { display: block; font-size: 10.5px; color: var(--wz-rosso); font-weight: 700; text-shadow: 0 0 3px #f5f3eb, 0 0 5px #f5f3eb; }
+.wz-mappa2-bar { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; margin-top: .55rem; }
+.wz-mappa2-bar .wz-nota { flex: 1; margin: 0; }
+
+/* Mappa: elenco nomi sotto i perni, icone e vista giocatori */
+.wz-pin-item { display: block; font-size: 10.5px; font-weight: 600; color: #3a3a52; line-height: 1.25; text-shadow: 0 0 3px #f5f3eb, 0 0 5px #f5f3eb, 1px 1px 2px #f5f3eb; white-space: nowrap; }
+.wz-pin-item.pg { color: #1a5c1a; font-weight: 700; }
+.wz-riga-lista select.wz-icona { flex: 0 0 4.3rem; width: 4.3rem; min-width: 0; }
+#wz-mappa2-vista.attivo { background: var(--wz-navy); color: #fff; border-color: var(--wz-navy); }
+
+/* Mappa: perno in primo piano, elenchi del pannello, bottoni occhio */
+.wz-pin { z-index: 1; }
+.wz-pin.primo { z-index: 10; }
+.wz-pin-item { font-size: 10px; }
+.wz-mappa-elenco { list-style: none; margin: .15rem 0 .4rem; padding: 0; }
+.wz-mappa-elenco li { padding: .15rem 0; }
+.wz-seg-btn { padding: .1rem .45rem; font-size: .8rem; margin-left: .3rem; }
+
+/* Perni compatti (vicini a un altro): solo nome, SOPRA il pallino — niente incroci */
+.wz-pin.compatto .wz-pin-n { position: absolute; bottom: calc(100% + 1px); left: 50%; transform: translateX(-50%); font-size: 10px; opacity: .9; }
+.wz-mappa2-cont.modifica .wz-pin { touch-action: none; cursor: grab; }
+.wz-mappa2-cont.modifica .wz-pin:active { cursor: grabbing; }
+
+/* Cronistoria: calendario data+ora sugli eventi */
+.wz-riga-lista input[type=date].wz-data { flex: 0 0 9.6rem; width: 9.6rem; min-width: 0; }
+.wz-riga-lista input[type=time].wz-ora { flex: 0 0 6.2rem; width: 6.2rem; min-width: 0; }
+input.wz-data-caso { max-width: 12rem; }
+
+/* Cronistoria: fase a colori (il FATTO salta all'occhio), fine + durata */
+.wz-blocco-lista.wz-ev-prima { border-left: 5px solid #d8d2bc; }
+.wz-blocco-lista.wz-ev-fatto { border-left: 5px solid var(--wz-rosso); border-color: #e5b8b3; background: #fdf3f2; }
+.wz-blocco-lista.wz-ev-dopo { border-left: 5px solid var(--wz-navy); background: #f7f8fb; }
+.wz-ev-fatto select.wz-fase { color: var(--wz-rosso); font-weight: 700; }
+.wz-riga-lista select.wz-fase { flex: 0 0 7rem; width: 7rem; min-width: 0; }
+.wz-fine-lbl { color: var(--wz-grigio); font-size: .85rem; white-space: nowrap; }
+.wz-durata { color: #7a5f1e; font-weight: 700; font-size: .85rem; white-space: nowrap; }
+.wz-rias-fase.fatto { color: var(--wz-rosso); font-weight: 700; }
+.wz-rias-fase.dopo { color: var(--wz-navy); }
+
+/* Ore e minuti a tendina (niente time-picker che salta) */
+.wz-riga-lista select.wz-hm { flex: 0 0 3.6rem; width: 3.6rem; min-width: 0; padding-left: .35rem; padding-right: .2rem; }
+.wz-hm-sep { color: var(--wz-grigio); font-weight: 700; margin: 0 -0.15rem; }
+
+/* ── informazioni multi-fonte (passo 12) ── */
+.wz-fonte { margin: .25rem 0 .55rem 1rem; padding-left: .5rem; border-left: 2px solid #c9c2b4; }
+.wz-fonte input { min-width: 0; }
+.wz-ho-tit { border-style: dashed !important; }
+
+/* ── handout raccolti (passo 13) ── */
+.wz-ho-card { border: 1px solid #c9c2b4; border-radius: 8px; padding: .5rem .7rem; margin: .5rem 0; background: rgba(255,255,255,.35); }
+.wz-ho-testa { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.wz-ho-card p { margin: .3rem 0 0; white-space: pre-wrap; }
+
+/* ── statistiche nelle schede (passo 11) ── */
+.wz-stats { border: 1px dashed #b6ad9c; border-radius: 8px; padding: .5rem .7rem; margin: .7rem 0; }
+.wz-stats-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: .4rem .6rem; margin: .45rem 0; }
+.wz-stats-griglia label { display: flex; flex-direction: column; font-size: .85em; gap: .15rem; }
+.wz-stats-griglia input { width: 100%; min-width: 0; }
+.wz-check { display: flex; align-items: center; gap: .45rem; margin-top: .35rem; font-size: .92em; }
+.wz-h4 { margin: .1rem 0 .35rem; }
+
+/* ── "Già nel caso" nella scheda: raccolto automatico, sola lettura ── */
+.wz-recap ul { margin: .15rem 0 .3rem 1.1rem; padding: 0; }
+.wz-recap li { margin: .12rem 0; font-size: .92em; }
+.wz-recap > p { margin: .25rem 0; }
+
+/* ── allegati (passi 12/13): chip col file, ✕ per togliere ── */
+.wz-allegati { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; margin-top: .35rem; }
+.wz-alg { display: inline-flex; align-items: center; gap: .3rem; }
+.wz-alg a { text-decoration: none; color: inherit; }
+.wz-alg-x { border: 0; background: none; cursor: pointer; padding: 0 .15rem; color: var(--wz-rosso, #a33); }
+.wz-alg-add { cursor: pointer; }
+.wz-alg-msg { font-size: .82em; color: var(--wz-grigio, #777); }
+
+/* ── informazioni: testo che cresce + blocco comprimibile ── */
+.wz-info-testo { field-sizing: content; min-height: 6.5rem; max-height: 60vh; }
+.wz-apri { color: var(--wz-navy, #234); font-size: 1rem; }
+.wz-info-chiusa { padding-top: .35rem; padding-bottom: .35rem; opacity: .92; }
+.wz-conta { white-space: nowrap; }
+
+/* ── scheda: azioni descrizione/foto ── */
+.wz-sch-azioni { margin-top: .4rem; flex-wrap: wrap; gap: .4rem; }
+#sch-foto-prompt { margin-top: .45rem; font-size: .85em; font-family: ui-monospace, Consolas, monospace; }
+
+/* ── scheda: costruttore descrizione fisica + deposizione da verbale ── */
+/* costruttore descrizione fisica: tratto | valore | + Aggiungi tutto su UNA riga */
+.wz-fis-builder { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; margin-bottom: .4rem; }
+.wz-fis-builder select, .wz-fis-builder input { min-width: 0; }
+#sch-fis-tratto { flex: 0 1 8.5rem; }
+#sch-fis-valore { flex: 1 1 10rem; }
+#sch-fis-libero { flex: 1 1 8rem; }
+#sch-fis-add { flex: 0 0 auto; }
+/* carattere del PNG in due schede: 🎙 Voce (come parla) | 🎭 Tratti (chi è) */
+.wz-cara { margin: .6rem 0; }
+.wz-tab-bar { display: flex; gap: .3rem; }
+.wz-tab { border: 1px solid #b6ad9c; border-bottom: none; background: #ece5d5; color: #5a5346; border-radius: 8px 8px 0 0; padding: .35rem .85rem; font-size: .92em; cursor: pointer; }
+.wz-tab.attivo { background: #fff; font-weight: 600; color: inherit; }
+.wz-tab-pane { border: 1px solid #b6ad9c; border-radius: 0 8px 8px 8px; padding: .55rem .8rem; }
+.wz-tab-pane .wz-campo { margin-bottom: .45rem; }
+.wz-tab-pane input { width: 100%; }
+.wz-mini-nota { font-size: .82em; color: #7a7263; margin: 0 0 .55rem; }
+/* ogni campo di Voce/Tratti: input + pulsantino ✨ affiancati */
+.wz-campo-ai { display: flex; gap: .3rem; align-items: center; }
+.wz-campo-ai input { flex: 1 1 auto; min-width: 0; }
+.wz-campo-genera { flex: 0 0 auto; line-height: 1; }
+.wz-campo-ai + .wz-campo-ai { margin-top: .3rem; } /* le 3 frasi pronte, una sotto l'altra */
+/* contatti / reperibilità (sotto le statistiche) */
+.wz-contatti-box .wz-campo { margin-bottom: .45rem; }
+.wz-contatti-box input, .wz-contatti-box textarea { width: 100%; }
+.wz-contatti-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .4rem .6rem; margin: .45rem 0; }
+.wz-contatti-griglia label { display: flex; flex-direction: column; font-size: .85em; gap: .15rem; }
+.wz-contatti-griglia input { min-width: 0; }
+.wz-cont-resel { width: 100%; margin-bottom: .3rem; }
+/* residenza = luogo del passo 9: riga di creazione + indirizzo assegnato */
+.wz-res-nuovo { display: flex; gap: .3rem; align-items: center; margin-bottom: .3rem; }
+.wz-res-nuovo [data-res-nome] { flex: 1 1 auto; min-width: 0; }
+.wz-res-nuovo [data-res-via] { flex: 0 1 12rem; min-width: 0; }
+.wz-res-nuovo button { flex: 0 0 auto; }
+/* nome del luogo obbligatorio: bordo rosso quando è vuoto (passo 9) */
+.wz-nome-obbl:placeholder-shown { border-color: #c0392b; background: #fdf3f2; }
+
+/* ── suggeritore AI in pagina (nuovo stile: leggibile, niente popup, niente JSON) ── */
+.wz-sugg { margin: .6rem 0; }
+.wz-sugg-box { border: 1px solid #b6ad9c; border-radius: 8px; padding: .7rem .8rem; margin-top: .4rem; background: rgba(240, 234, 218, .35); }
+.wz-sugg-box textarea { width: 100%; margin-bottom: .4rem; }
+.wz-sugg-out { margin-top: .6rem; display: flex; flex-direction: column; gap: .45rem; }
+.wz-sugg-card { display: flex; gap: .5rem; align-items: flex-start; justify-content: space-between; border: 1px solid #d8d2bc; border-radius: 8px; padding: .5rem .65rem; background: #fff; }
+.wz-sugg-card .wz-sugg-testo { flex: 1 1 auto; min-width: 0; line-height: 1.5; }
+.wz-sugg-add { flex: 0 0 auto; align-self: center; }
+.wz-sugg-piede { margin-top: .3rem; }
+.wz-cont-assegnata { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; font-size: .9em; }
+.wz-cont-assegnata > span:first-child { font-weight: 600; }
+.wz-cont-assegnata .wz-nota { margin: 0; }
+.wz-verbale-box { border: 1px solid #b6ad9c; border-left: 4px solid var(--wz-navy, #234); border-radius: 6px; padding: .6rem .8rem; background: rgba(240, 234, 218, .45); }
+.wz-verbale { font-family: "Courier New", ui-monospace, monospace; font-size: .92em; line-height: 1.5; background: #faf6ec; field-sizing: content; min-height: 7rem; max-height: 60vh; }
+
+/* ── descrizione fisica + foto affiancate ── */
+.wz-fisica-grid { display: grid; grid-template-columns: 116px 1fr; gap: .8rem; align-items: start; margin: .3rem 0; }
+.wz-foto-col { display: flex; flex-direction: column; gap: .4rem; }
+.wz-foto-col .wz-btn { text-align: center; }
+.wz-foto-slot { width: 116px; height: 116px; border: 1px solid var(--wz-bordo, #cbc4b4); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.04); }
+.wz-foto-slot img { width: 100%; height: 100%; object-fit: cover; }
+.wz-foto-vuota { font-size: .78em; color: var(--wz-grigio, #999); text-align: center; }
+.wz-fisica-testo { min-width: 0; display: flex; flex-direction: column; gap: .4rem; }
+.wz-fisica-testo textarea { width: 100%; }
+/* miniatura-ritratto nelle pillole/tag (schede fatte, membri gruppi, persone-evento) */
+.wz-chip.con-foto { display: inline-flex; align-items: center; gap: .35rem; padding-left: .3rem; text-align: left; }
+.wz-chip-foto { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 30px; }
+.wz-schede-pill .wz-chip { display: inline-flex; align-items: center; gap: .35rem; }
+/* foto nel recap "Già nel caso" */
+.wz-recap-foto { width: 96px; height: 96px; object-fit: cover; border-radius: 8px; border: 1px solid var(--wz-bordo, #cbc4b4); float: right; margin: 0 0 .5rem .6rem; }
+
+/* ── anteprima handout in sovraimpressione ── */
+#wz-ho-anteprima { position: fixed; inset: 0; z-index: 3000; background: rgba(0,0,0,.6); display: flex; flex-direction: column; padding: 2vh 2vw; }
+#wz-ho-anteprima[hidden] { display: none; }
+.wz-ho-ov-barra { display: flex; gap: .5rem; align-items: center; background: #26231f; color: #eee; padding: .5rem .8rem; border-radius: 6px 6px 0 0; }
+.wz-ho-ov-barra .tit { font-weight: bold; margin-right: auto; }
+.wz-ho-ov-barra .wz-btn { background: #35312b; color: #eee; border-color: #6a655c; text-decoration: none; }
+.wz-ho-ov-frame { flex: 1; width: 100%; border: 0; background: #4a4640; border-radius: 0 0 6px 6px; }
+
+/* ═══════════ Wizard-PG (Crea il tuo personaggio) ═══════════ */
+.pg-griglia-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .4rem .8rem; }
+.pg-griglia-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .4rem .8rem; }
+.pg-punti { font-size: 1.05rem; }
+.pg-punti-zero strong { color: #2e7d32; }
+.pg-attr { display: flex; align-items: center; justify-content: space-between; gap: .8rem; border: 1px solid var(--wz-bordo, #d8cfc0); border-radius: 8px; padding: .5rem .8rem; margin: .35rem 0; background: #fff; }
+.pg-attr-testa small { color: #6a655c; }
+.pg-attr-ctrl { display: flex; align-items: center; gap: .5rem; white-space: nowrap; }
+.pg-attr-val { font-size: 1.25rem; font-weight: 700; min-width: 1.4rem; text-align: center; }
+.pg-fisso { border-left: 3px solid var(--wz-oro, #b08d2f); }
+.pg-ritratto { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.pg-ritratto img { max-width: 180px; border-radius: 8px; border: 1px solid #d8cfc0; }
+.pg-riep-ritratto { max-width: 140px; border-radius: 8px; float: right; margin: 0 0 .5rem .8rem; }
+.pg-rapporto { display: flex; gap: .4rem; align-items: center; margin: .3rem 0; }
+.pg-rapporto input:not(.wz-medio) { flex: 1; }
+.pg-scene { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .6rem; }
+.pg-scena { position: relative; display: inline-block; }
+.pg-scena img { max-width: 200px; border-radius: 8px; border: 1px solid #d8cfc0; display: block; }
+.pg-scena .wz-btn-x { position: absolute; top: 4px; right: 4px; }
+.pg-shu-riga { display: flex; justify-content: space-between; gap: .8rem; align-items: center; padding: .4rem 0; border-top: 1px dotted #d8cfc0; flex-wrap: wrap; }
+.pg-shu-riga:first-child { border-top: 0; }
+.pg-usi { width: 3.2rem; }
+.pg-equip { margin: .3rem 0 .3rem 1rem; }
+.pg-shugyo-punti input { font-size: 1.05rem; font-weight: 700; }
+
+/* 🔮 nomi su misura (wizard-PG, passo 0) */
+.pg-nomi-box { margin-top: 1.2rem; }
+.pg-nomi-riga { display: flex; gap: .5rem; flex-wrap: wrap; }
+.pg-nomi-riga input { flex: 1 1 260px; padding: .55rem .6rem; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+.pg-nomi-out { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .6rem; margin-top: .7rem; }
+.pg-nomi-out .wz-nota { grid-column: 1 / -1; }
+.pg-nome-card { text-align: left; cursor: pointer; border: 1.5px solid var(--wz-oro); background: #fffdf6; border-radius: 10px; padding: .6rem .8rem; display: flex; flex-direction: column; gap: .15rem; transition: transform .08s, box-shadow .08s; }
+.pg-nome-card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.12); }
+.pg-nome-card.scelto { background: var(--wz-navy); border-color: var(--wz-navy); color: #fff; }
+.pg-nome-card.scelto .pg-nome-k, .pg-nome-card.scelto .pg-nome-s { color: #e8e3d5; }
+.pg-nome-n { font-weight: 700; font-size: 1.02rem; }
+.pg-nome-k { font-size: 1.25rem; letter-spacing: .2rem; color: #6a5a2a; }
+.pg-nome-s { font-size: .8rem; color: var(--wz-grigio); font-style: italic; line-height: 1.3; }
+
+/* ═══ Ki 気 — pannello sobrio (wizard-PG) ═══ */
+.pg-ki-pannello { border: 1px solid #d9cfb8; border-radius: 10px; padding: 1rem 1.2rem; margin: .8rem 0; background: #faf7ee; }
+.pg-ki-riga { margin: .3rem 0; font-size: .92rem; }
+.pg-ki-grande { display: flex; align-items: center; gap: 1rem; margin: .5rem 0 .3rem; }
+.pg-ki-kanji { font-size: 3.6rem; line-height: 1; color: rgba(139,26,26,.18); font-family: Georgia, serif; user-select: none; }
+.pg-ki-grande small { display: block; text-transform: uppercase; letter-spacing: 2px; font-size: .68rem; color: #8a7f6b; }
+#pg-ki-max { font-size: 2.6rem; font-family: Georgia, serif; font-weight: 700; color: #2b2620; line-height: 1.05; }
+.pg-ki-msg { min-height: 1.2rem; margin: .3rem 0; font-weight: 600; color: #6a5a2a; font-size: .92rem; }
+.pg-ki-bottoni { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .4rem; }
+
+.pg-genkai-box { border-left: 4px solid #8b1a1a; background: #fdf6f4; border-radius: 0 8px 8px 0; padding: .7rem 1rem; margin: 1rem 0; }
+.pg-genkai-box h3 { margin: .1rem 0 .35rem; font-size: 1rem; color: #8b1a1a; letter-spacing: 1px; }
+.pg-genkai-box p { margin: .3rem 0; font-size: .92rem; }
+.pg-esempio { color: #6a655c; }
+
+/* ═══ tocco giapponese, sobrio e tipografico, sulle schermate del wizard-PG ═══ */
+#pg-root .wz-passo h2 { border-left: 4px solid #8b1a1a; padding-left: .6rem; padding-bottom: .35rem; border-bottom: 1px solid #e5ddc9; letter-spacing: .5px; }
+#pg-root .wz-punto.attivo .wz-punto-n { background: #8b1a1a; border-color: #8b1a1a; }
+#pg-root .wz-punto.attivo .wz-punto-t { color: #8b1a1a; font-weight: 700; }
+#pg-root .wz-aiuto { background: #faf7ee; border-left-color: #8b1a1a; }
+#pg-root .wz-h3 { border-bottom-color: #c9b98f; }
+#pg-root .wz-info { background: #fcfaf3; border-color: #d9cfb8; border-style: solid; }
+#pg-root .wz-btn-primario { background: #2b2620; border-color: #2b2620; }
+
+/* pagina iniziale "Il gioco" (wizard-PG, passo 1) */
+.pg-gioco-blocco { border: 1px solid #e5ddc9; border-radius: 10px; background: #fcfaf3; padding: .65rem 1rem; margin: .6rem 0; }
+.pg-gioco-blocco h3 { margin: .1rem 0 .3rem; font-size: 1rem; color: #2b2620; letter-spacing: .5px; }
+.pg-gioco-blocco p { margin: .2rem 0; font-size: .93rem; line-height: 1.5; }
+
+/* campo con ✨ a fianco (wizard-PG): input/textarea + bottone sulla stessa riga, colonne allineate */
+.pg-campo-ai { display: flex; gap: .4rem; align-items: stretch; } /* il ✨ è ALTO quanto il box */
+.pg-campo-ai > input, .pg-campo-ai > textarea { flex: 1; min-width: 0; }
+.pg-campo-ai > .pg-ai, .pg-campo-ai > .pg-ai-enja { flex: 0 0 auto; }
+.pg-campo-ai:has(> textarea) { align-items: flex-start; }              /* con le textarea il ✨ non si allunga: */
+.pg-campo-ai:has(> textarea) > .pg-ai, .pg-campo-ai:has(> textarea) > .pg-ai-enja { height: 44px; } /* resta alto come un input */
+
+/* wizard-PG: campo largo 2 colonne nella griglia (es. Grado, allineato fino ad Anni di servizio) */
+@media (min-width: 700px) { .pg-span2 { grid-column: span 2; } }
+/* wizard-PG: niente colonna-drawer → il footer non sporge; Avanti e Indietro identici e allineati al contenuto */
+#pg-root.wz { display: block; max-width: 860px; }
+#pg-root .wz-nav { display: flex; }
+#pg-root .wz-nav .wz-btn { flex: 1 1 0; min-width: 0; }
+/* il titolo "Dove vivi" col suo ✨ in linea */
+#pg-root .wz-h3 .wz-btn { vertical-align: middle; margin-left: .3rem; }

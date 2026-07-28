@@ -1,0 +1,208 @@
+@page "/Pg/{id:guid}/Stampa"
+@model GenkaiWizard.Pages.Pg.StampaModel
+@using System.Text.Json.Nodes
+@{
+    Layout = null;
+    var at = Model.St["attributi"] as JsonObject;
+    var gou = Model.Gou();
+    var senmon = Model.St["senmon"] as JsonArray ?? new JsonArray();
+    var enja = Model.St["enja"] as JsonArray ?? new JsonArray();
+    var rapporti = Model.St["rapporti"] as JsonArray ?? new JsonArray();
+    var scene = Model.St["scene"] as JsonArray ?? new JsonArray();
+    var nome = ($"{Model.S("identita.cognome")} {Model.S("identita.nome")}").Trim();
+    if (nome.Length == 0) nome = Model.Pg.Nome;
+    var attrNomi = new[] { "Distacco", "Pazienza", "Silenzio", "Lucidità", "Ascolto", "Presenza" };
+}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@nome — scheda GENKAI</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #4a4640; font-family: Georgia, "Times New Roman", serif; color: #1c1a17; }
+        .barra { position: sticky; top: 0; display: flex; gap: .5rem; align-items: center; padding: .5rem .9rem; background: #26231f; color: #eee; font-family: Arial, sans-serif; }
+        .barra a, .barra button { cursor: pointer; border: 1px solid #6a655c; background: #35312b; color: #eee; padding: .4rem .8rem; border-radius: 6px; font-size: .85rem; text-decoration: none; }
+        .foglio { width: 210mm; min-height: 297mm; margin: 14px auto; background: #f6f3eb; padding: 16mm 15mm; box-shadow: 0 3px 16px rgba(0,0,0,.25); }
+        h1 { font-size: 25px; margin: 0; letter-spacing: .5px; }
+        .kanji { color: #6a655c; font-size: 18px; }
+        .sotto { color: #6a655c; font-size: 13px; margin: 2px 0 10px; }
+        .testata { display: flex; justify-content: space-between; gap: 10mm; border-bottom: 3px double #1c1a17; padding-bottom: 4mm; margin-bottom: 5mm; }
+        .ritratto { max-width: 34mm; max-height: 44mm; border: 1px solid #cfc7b5; border-radius: 4px; }
+        h2 { font-family: Arial, sans-serif; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; border-left: 4px solid #8b1a1a; padding-left: 8px; margin: 6mm 0 2mm; }
+        .attr { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2mm; text-align: center; }
+        .attr .n { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #6a655c; }
+        .attr .v { font-size: 24px; font-weight: 700; border: 1.5px solid #1c1a17; border-radius: 6px; padding: 1.5mm 0; margin-top: 1mm; background: #fff; }
+        .riga { margin: 1.6mm 0; font-size: 13.5px; line-height: 1.45; }
+        .riga b { font-family: Arial, sans-serif; font-size: 11.5px; letter-spacing: .5px; text-transform: uppercase; color: #444; }
+        .box { border: 1px solid #cfc7b5; border-radius: 6px; padding: 3mm 4mm; margin: 2mm 0; background: #fffdf6; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; }
+        .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+        .ki { display: flex; gap: 6mm; align-items: center; }
+        .ki .kv { font-size: 26px; font-weight: 700; border: 2px solid #8b1a1a; color: #8b1a1a; border-radius: 8px; padding: 2mm 5mm; background: #fff; }
+        .tacche { letter-spacing: 2px; }
+        ul { margin: 1mm 0 1mm 5mm; padding: 0; font-size: 13.5px; }
+        .scene { display: flex; gap: 3mm; flex-wrap: wrap; }
+        .scene img { max-width: 55mm; border: 1px solid #cfc7b5; border-radius: 4px; }
+        @@media print {
+            body { background: #fff; }
+            .barra { display: none; }
+            .foglio { box-shadow: none; margin: 0; width: auto; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="barra">
+        <a href="/Pg/@Model.Pg.Id">← Torna alla scheda</a>
+        <button type="button" onclick="window.print()">🖨 Stampa / PDF</button>
+    </div>
+
+    <div class="foglio">
+        <div class="testata">
+            <div>
+                <h1>@nome <span class="kanji">@Model.S("identita.kanji")</span></h1>
+                <p class="sotto">
+                    GENKAI 限界 · Scheda investigatore ·
+                    @(Model.N("identita.eta") is int e ? e + " anni" : "") ·
+                    @Model.S("identita.ruolo")@(Model.S("identita.grado") != "" ? " · " + Model.S("identita.grado") : "")@(Model.N("identita.anniServizio") is int a ? $" · {a} anni di servizio" : "")
+                </p>
+                @{
+                    var contatti = new[] {
+                        Model.S("identita.quartiere"), Model.S("identita.via"),
+                        Model.S("identita.telefono") != "" ? "tel " + Model.S("identita.telefono") : "",
+                        Model.S("identita.pocketBell") != "" ? "pocket bell " + Model.S("identita.pocketBell") : "",
+                        Model.S("identita.altroContatto")
+                    }.Where(x => x != "").ToList();
+                }
+                @if (contatti.Count > 0)
+                {
+                    <p class="sotto">🏠 @string.Join(" · ", contatti)</p>
+                }
+            </div>
+            @if (Model.S("ritratto") != "")
+            {
+                <img class="ritratto" src="@Model.S("ritratto")" alt="" />
+            }
+        </div>
+
+        <h2>Attributi</h2>
+        <div class="attr">
+            @foreach (var n in attrNomi)
+            {
+                <div><div class="n">@n</div><div class="v">@(at?[n]?.GetValue<int>() ?? 4)</div></div>
+            }
+        </div>
+
+        <h2>Ki 気</h2>
+        <div class="ki">
+            <span class="kv">@(Model.KiMax()?.ToString() ?? "—")</span>
+            <div class="riga">
+                Ki attuale: <span class="tacche">☐☐☐☐☐☐☐☐☐☐☐☐</span><br />
+                <small>Genkai (crollo) a Ki ≤ 3 · Nasake 情け: ☐ · Soroban: 5 a inizio giornata</small>
+            </div>
+        </div>
+
+        @if (gou is not null)
+        {
+            <h2>Gou 業 — @gou["nome"] @gou["kanji"]</h2>
+            <div class="riga"><em>@gou["tagline"]</em></div>
+            <div class="riga"><b>Attributo</b>: @string.Join(" o ", (gou["attributi"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString()))
+                · <b>Costo</b>: @(Model.St["shugyo"]?["gouAffinato"]?.GetValue<bool>() == true ? $"{gou["costo"]!.GetValue<int>() - 1} Ki (affinato)" : $"{gou["costo"]} Ki")
+                · <small>ogni uso raddoppia il costo; una notte −1 grado; attivabile solo restando a Ki ≥ 1</small></div>
+            <div class="riga"><b>Successo</b>: @gou["successo"]</div>
+            <div class="riga"><b>Fallimento</b>: @gou["fallimento"]</div>
+            @if ((gou["vincolo"]?.ToString() ?? "") != "")
+            {
+                <div class="riga"><b>Vincolo</b>: @gou["vincolo"]</div>
+            }
+        }
+
+        <h2>Senmon 専門</h2>
+        <ul>
+            @foreach (var s in senmon)
+            {
+                var voce = Model.SenmonVoce(s?["id"]?.GetValue<string>() ?? "");
+                var grado = s?["grado"]?.GetValue<int>() ?? 1;
+                var usi = s?["usi"]?.GetValue<int>() ?? 0;
+                <li><strong>@(voce?["nome"]?.ToString() ?? s?["id"]?.ToString())</strong>
+                    (@string.Join(" o ", (voce?["chiave"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString())))
+                    — grado @grado (−@grado al dado)@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "") · usi: @usi</li>
+            }
+        </ul>
+        @if (Model.S("senmonPerche") != "")
+        {
+            <div class="riga"><b>Perché</b>: @Model.S("senmonPerche")</div>
+        }
+
+        @if (Model.S("chiSei") != "")
+        {
+            <h2>Chi sei</h2>
+            <div class="box">@Model.S("chiSei")</div>
+        }
+        @if (Model.S("descrizioneFisica") != "")
+        {
+            <h2>Aspetto</h2>
+            <div class="box">@Model.S("descrizioneFisica")</div>
+        }
+
+        @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "")
+        {
+            <h2>Kage 影 — il tuo problema</h2>
+            <div class="duo">
+                <div class="box">@Model.S("kage.problema")</div>
+                <div class="box">@Model.S("kage.png")</div>
+            </div>
+        }
+
+        @if (enja.Any(x => (x?.ToString() ?? "").Trim() != ""))
+        {
+            <h2>Enja 縁者 — i tuoi contatti</h2>
+            @foreach (var x in enja)
+            {
+                if ((x?.ToString() ?? "").Trim() == "") { continue; }
+                <div class="box">@x</div>
+            }
+        }
+
+        <h2>Come ti comporti</h2>
+        <div class="riga"><b>In pubblico (tatemae)</b>: @Model.S("comportamento.tatemae")</div>
+        <div class="riga"><b>In privato (honne)</b>: @Model.S("comportamento.honne")</div>
+        <div class="riga"><b>Frase tipica</b>: @Model.S("comportamento.fraseTipica")</div>
+        <div class="riga"><b>Sotto pressione</b>: @Model.S("comportamento.sottoPressione")</div>
+        <div class="riga"><b>Debolezza</b>: @Model.S("comportamento.debolezza")</div>
+
+        <h2>Tratti personali</h2>
+        <div class="riga"><b>Vizio</b>: @Model.S("tratti.vizio") · <b>Tic</b>: @Model.S("tratti.tic")</div>
+        <div class="riga"><b>Oggetto</b>: @Model.S("tratti.oggetto") · <b>Gusto</b>: @Model.S("tratti.gusto")</div>
+        <div class="riga"><b>@(Model.S("tratti.liberoEtichetta") == "" ? "Tratto" : Model.S("tratti.liberoEtichetta"))</b>: @Model.S("tratti.libero")</div>
+
+        @if (rapporti.Count > 0)
+        {
+            <h2>La squadra</h2>
+            <ul>
+                @foreach (var r in rapporti)
+                {
+                    <li><strong>@r?["nome"]</strong>: @r?["testo"]</li>
+                }
+            </ul>
+        }
+
+        <h2>Equipaggiamento di servizio</h2>
+        <div class="riga">Revolver New Nambu M60 (.38, 5 colpi) e giubbotto antiproiettile — in armadietto, si prelevano firmando · Keibō per le operazioni · Keisatsu techō, manette, taccuino — sempre con te.</div>
+
+        <h2>Shugyō 修行</h2>
+        <div class="riga">Punti guadagnati: <strong>@(Model.N("shugyo.punti") ?? 0)</strong> ·
+            spesi: <strong>@(((Model.St["shugyo"]?["log"] as JsonArray) ?? new JsonArray()).Sum(x => x?["costo"]?.GetValue<int>() ?? 0))</strong></div>
+        @if (scene.Count > 0)
+        {
+            <h2>Scene</h2>
+            <div class="scene">
+                @foreach (var u in scene)
+                {
+                    <img src="@u" alt="" />
+                }
+            </div>
+        }
+    </div>
+</body>
+</html>

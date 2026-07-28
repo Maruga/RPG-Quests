@@ -85,8 +85,8 @@ def set_cell_width(cell, width_cm):
 def add_separator(doc):
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(6)
-    p.paragraph_format.space_after = Pt(6)
+    p.paragraph_format.space_before = Pt(4)
+    p.paragraph_format.space_after = Pt(4)
     add_run(p, "━" * 70, size=6, color=GOLD)
 
 
@@ -94,14 +94,18 @@ def add_section_header(doc, kanji, title):
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(8)
     p.paragraph_format.space_after = Pt(4)
+    p.paragraph_format.keep_with_next = True  # il titolo non resta mai solo a fondo pagina
     add_run(p, kanji, size=13, color=GOLD)
     add_run(p, "  ", size=13)
     add_run(p, title, size=11, bold=True, color=NAVY)
 
 
-def add_text(doc, text, size=10, color=NAVY, italic=False, bold=False, indent=True, after=3):
+def add_text(doc, text, size=10, color=NAVY, italic=False, bold=False, indent=True, after=3, keep=False):
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(after)
+    p.paragraph_format.keep_together = True
+    if keep:
+        p.paragraph_format.keep_with_next = True
     if indent:
         p.paragraph_format.left_indent = INDENT
     add_run(p, text, size=size, color=color, italic=italic, bold=bold)
@@ -116,37 +120,57 @@ def add_field(doc, label, value, label_color=GRAY, size=10):
     add_run(p, value, size=size, color=NAVY)
 
 
-def add_gou(doc, name, desc, attributo, costo, successo, fallimento):
+def add_gou(doc, name, desc, attributo, costo, successo, fallimento,
+            vincolo=None, vincolo_label="Vincolo"):
+    # tutto il blocco Gou e' indivisibile: mai spezzato tra due pagine
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(6)
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = INDENT
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.keep_together = True
     add_run(p, "☐ ", size=11, color=NAVY)
     add_run(p, name, size=10, bold=True, color=NAVY)
 
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = GOU_INDENT
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.keep_together = True
     add_run(p, desc, size=9, italic=True, color=GRAY)
 
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(1)
     p.paragraph_format.left_indent = GOU_INDENT
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.keep_together = True
     add_run(p, "Attributo: ", size=9, bold=True, color=GRAY)
     add_run(p, attributo, size=9, color=GRAY)
     add_run(p, "    ", size=9)
     add_run(p, "Costo: ", size=9, bold=True, color=GRAY)
     add_run(p, costo, size=9, color=GRAY)
 
+    if vincolo:
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(1)
+        p.paragraph_format.left_indent = GOU_INDENT
+        p.paragraph_format.keep_with_next = True
+        p.paragraph_format.keep_together = True
+        add_run(p, f"{vincolo_label}: ", size=9, bold=True, color=GRAY)
+        add_run(p, vincolo, size=9, color=GRAY)
+
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(1)
     p.paragraph_format.left_indent = GOU_INDENT
+    p.paragraph_format.keep_with_next = True
+    p.paragraph_format.keep_together = True
     add_run(p, "Successo: ", size=9, bold=True, color=GRAY)
     add_run(p, successo, size=9, color=NAVY)
 
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.left_indent = GOU_INDENT
+    p.paragraph_format.keep_together = True
     add_run(p, "Fallimento: ", size=9, bold=True, color=GRAY)
     add_run(p, fallimento, size=9, color=NAVY)
 
@@ -180,7 +204,7 @@ def genera_scheda(d, output_filename, image_path=None):
     t0.alignment = WD_TABLE_ALIGNMENT.CENTER
 
     c_name = t0.rows[0].cells[0]
-    set_cell_width(c_name, 8)
+    set_cell_width(c_name, 7.2)
     set_cell_valign(c_name, "center")
     remove_all_borders(c_name)
     p = c_name.paragraphs[0]
@@ -192,7 +216,7 @@ def genera_scheda(d, output_filename, image_path=None):
     add_run(p, d["nome_romanizzato"], size=13, bold=True, color=NAVY)
 
     c_info = t0.rows[0].cells[1]
-    set_cell_width(c_info, 9)
+    set_cell_width(c_info, 8.2)
     set_cell_valign(c_info, "center")
     remove_all_borders(c_info)
     p = c_info.paragraphs[0]
@@ -213,7 +237,7 @@ def genera_scheda(d, output_filename, image_path=None):
     add_run(p, d["servizio"], size=10, color=NAVY)
 
     c_foto = t0.rows[0].cells[2]
-    set_cell_width(c_foto, 4)
+    set_cell_width(c_foto, 3.6)
     set_cell_valign(c_foto, "center")
     remove_all_borders(c_foto)
     p_foto = c_foto.paragraphs[0]
@@ -385,26 +409,26 @@ def genera_scheda(d, output_filename, image_path=None):
 
     # ── GOU ──
     add_section_header(doc, "業", "GOU — IL DEBITO  (scegli uno)")
-    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado. Il costo si paga per intero: se ti porterebbe a 0 o sotto, il Gou non si attiva.",
-             size=9, color=GRAY, italic=True, after=2)
+    add_text(doc, "Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado. Il costo si paga per intero: se ti portasse a 0 o sotto, il Gou non si attiva.",
+             size=9, color=GRAY, italic=True, after=2, keep=True)
 
-    add_gou(doc, d["gou_1_nome"], d["gou_1_desc"], d["gou_1_attributo"],
-            d["gou_1_costo"], d["gou_1_successo"], d["gou_1_fallimento"])
-    add_gou(doc, d["gou_2_nome"], d["gou_2_desc"], d["gou_2_attributo"],
-            d["gou_2_costo"], d["gou_2_successo"], d["gou_2_fallimento"])
-    add_gou(doc, d["gou_3_nome"], d["gou_3_desc"], d["gou_3_attributo"],
-            d["gou_3_costo"], d["gou_3_successo"], d["gou_3_fallimento"])
+    for gi in (1, 2, 3):
+        add_gou(doc, d[f"gou_{gi}_nome"], d[f"gou_{gi}_desc"], d[f"gou_{gi}_attributo"],
+                d[f"gou_{gi}_costo"], d[f"gou_{gi}_successo"], d[f"gou_{gi}_fallimento"],
+                d.get(f"gou_{gi}_vincolo"), d.get(f"gou_{gi}_vincolo_label", "Vincolo"))
 
     add_separator(doc)
 
     # ── SENMON ──
     add_section_header(doc, "専門", "SENMON — SPECIALIZZAZIONI  (scegli una, grado 1)")
-    add_text(doc, "Parti da Praticante: +1 ai tiri pertinenti, conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō — vedi GENKAI_Specializzazioni.md.",
-             size=9, color=GRAY, italic=True, after=2)
+    add_text(doc, "Parti da Praticante: +1 ai tiri pertinenti (il bonus si sottrae dal dado), conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō — vedi GENKAI_Specializzazioni.md.",
+             size=9, color=GRAY, italic=True, after=2, keep=True)
     for i in (1, 2, 3):
         p = doc.add_paragraph()
         p.paragraph_format.left_indent = INDENT
         p.paragraph_format.space_after = Pt(2)
+        p.paragraph_format.keep_with_next = True
+        p.paragraph_format.keep_together = True
         add_run(p, "☐ ", size=10, color=NAVY)
         add_run(p, d[f"senmon_{i}_nome"], size=10, bold=True, color=NAVY)
         add_run(p, f"  ({d[f'senmon_{i}_chiave']})  —  ", size=9, color=GOLD)
@@ -414,6 +438,7 @@ def genera_scheda(d, output_filename, image_path=None):
     p.paragraph_format.left_indent = INDENT
     p.paragraph_format.space_before = Pt(4)
     p.paragraph_format.space_after = Pt(1)
+    p.paragraph_format.keep_with_next = True
     add_run(p, "Grado: ______    Usi: ", size=10, bold=True, color=NAVY)
     add_run(p, "☐☐☐☐☐☐☐☐☐☐", size=11, color=NAVY)
     p = doc.add_paragraph()
@@ -425,17 +450,22 @@ def genera_scheda(d, output_filename, image_path=None):
     # ── EQUIPAGGIAMENTO ──
     add_section_header(doc, "装", "EQUIPAGGIAMENTO DI SERVIZIO")
     add_text(doc, "In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni. (Regole di scontro: GENKAI_Combattimento.md)",
-             size=9, color=GRAY, italic=True, after=2)
-    for line in (
-        "Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/1 · ricarica 4 · danno 3. Addestramento base: sai usarla, non sei un tiratore scelto",
+             size=9, color=GRAY, italic=True, after=2, keep=True)
+    tiratore = "non sei una tiratrice scelta" if d.get("genere") == "f" else "non sei un tiratore scelto"
+    equip_lines = (
+        f"Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/1 · ricarica 4 · danno 3. Addestramento base: sai usarla, {tiratore}",
         "Armadietto — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4",
-        "Operazioni — Keibō (manganello): Pazienza o Silenzio · vel. 2/1 · danno 2",
+        "Operazioni — Keibō (manganello): Silenzio · vel. 2/1 · danno 2",
         "Sempre con te — Keisatsu techō (tesserino), manette, taccuino",
         "A mani nude — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni; il grado 1 ce l'hanno tutti gli investigatori)",
-    ):
+    )
+    for j, line in enumerate(equip_lines):
         p = doc.add_paragraph()
         p.paragraph_format.left_indent = INDENT
         p.paragraph_format.space_after = Pt(1)
+        p.paragraph_format.keep_together = True
+        if j < len(equip_lines) - 1:
+            p.paragraph_format.keep_with_next = True
         add_run(p, "• " + line, size=9, color=GRAY)
 
     add_separator(doc)
@@ -445,10 +475,12 @@ def genera_scheda(d, output_filename, image_path=None):
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = INDENT
     p.paragraph_format.space_after = Pt(2)
+    p.paragraph_format.keep_with_next = True
     add_run(p, "Punti Shugyō: ____________________", size=11, bold=True, color=NAVY)
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = INDENT
     p.paragraph_format.space_after = Pt(1)
+    p.paragraph_format.keep_with_next = True
     add_run(p, "Guadagno: 1 a sessione · 4-6 a caso chiuso · +1 scena personale ben gestita · +1 momento eccezionale (max 1/sessione)", size=8, color=GRAY)
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = INDENT
@@ -542,7 +574,7 @@ def genera_scheda(d, output_filename, image_path=None):
         ("Tic", d["tic"]),
         ("Oggetto", d["oggetto"]),
         ("Gusto", d["gusto"]),
-        ("Rituale", d["rituale"]),
+        (d.get("rituale_label", "Rituale"), d["rituale"]),  # etichetta per-PG: Rituale/Superstizione/Segreto/Abitudine/Rifugio
     ]:
         add_field(doc, label, val, size=10)
 
@@ -554,6 +586,9 @@ def genera_scheda(d, output_filename, image_path=None):
         p = doc.add_paragraph()
         p.paragraph_format.space_after = Pt(3)
         p.paragraph_format.left_indent = INDENT
+        p.paragraph_format.keep_together = True
+        if i < 4:
+            p.paragraph_format.keep_with_next = True
         add_run(p, f"{d[f'rapporto_{i}_nome']}: ", size=10, bold=True, color=GRAY)
         add_run(p, d[f"rapporto_{i}_testo"], size=10, italic=True, color=NAVY)
 
@@ -585,12 +620,14 @@ PG_01 = {
     "gou_2_desc": "Guardando una scena, vedi le sagome sbiadite di ciò che è accaduto.",
     "gou_2_attributo": "Lucidità (requisito: ≥ 7)",
     "gou_2_costo": "4 Ki",
+    "gou_2_vincolo": "devi essere sul luogo, entro 48 ore dal fatto",
     "gou_2_successo": "2-3 momenti chiave come sagome sbiadite, nell'ordine giusto, con vuoti. Non volti, non dettagli",
     "gou_2_fallimento": "Un singolo momento congelato — una sagoma, una posizione, senza prima né dopo",
     "gou_3_nome": "Lo Spirito che Resta 残心",
-    "gou_3_desc": "Lo spirito del samurai che non cede. Attivabile solo a Ki 4-5; il costo non innesca il Genkai: si verifica a fine scena.",
-    "gou_3_attributo": "Distacco o Pazienza (dual)",
+    "gou_3_desc": "Lo spirito del samurai che non cede.",
+    "gou_3_attributo": "Distacco o Pazienza (a scelta)",
     "gou_3_costo": "2 Ki",
+    "gou_3_vincolo": "attivabile solo a Ki 4 o 5; il costo non innesca il Genkai — si valuta a fine scena",
     "gou_3_successo": "Per il resto della scena, 11 e 12 contano come fallimento leggero — non crolli",
     "gou_3_fallimento": "Solo il 12 è protetto. L'11 resta Nami negativo",
     "senmon_1_nome": "Ambienti yakuza",
@@ -613,7 +650,7 @@ PG_01 = {
     "png_desc": "Non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.",
     "conoscenza_nome": "TANAKA Shuichi",
     "conoscenza_ruolo": "Giornalista al Kyoto Shimbun",
-    "conoscenza_desc": "Vecchio compagno di università. Vi vedete per bere ogni tanto. Accesso agli archivi del giornale, voci di corridoio, contatti nel mondo della stampa.",
+    "conoscenza_desc": "Vecchio compagno di università. Vi vedete ogni tanto — lui beve, tu ordini tè oolong. Accesso agli archivi del giornale, voci di corridoio, contatti nel mondo della stampa.",
     "conoscenza_contatto": "Cellulare personale. Risponde sempre, anche di notte.",
     "conoscenza_costo": "Ogni tanto una soffiata, niente di compromettente.",
     "conoscenza_limite": "Una volta per sessione senza conseguenze. La seconda volta, chiederà qualcosa in cambio.",
@@ -650,18 +687,22 @@ PG_02 = {
     "gou_1_desc": "Vedi ciò che altri non vedono — il dettaglio che cambia tutto.",
     "gou_1_attributo": "Lucidità",
     "gou_1_costo": "3 Ki",
+    "gou_1_vincolo": "devi dichiarare dove stai guardando",
     "gou_1_successo": "Trovi il dettaglio nascosto e capisci in che direzione punta",
     "gou_1_fallimento": "Percepisci quanti elementi fuori posto ci sono (uno, più di uno, molti) — non sai cosa sono",
     "gou_2_nome": "Cuore di Ghiaccio 氷の心",
     "gou_2_desc": "Ti distacchi completamente dalla situazione. Niente ti tocca.",
     "gou_2_attributo": "Distacco",
     "gou_2_costo": "3 Ki",
+    "gou_2_vincolo": "tiro emotivo = un tiro provocato dalla scena che ti colpisce, non uno che scegli di fare; il +2 è un bonus (si sottrae dal dado)",
+    "gou_2_vincolo_label": "Nota",
     "gou_2_successo": "Il primo tiro emotivo della scena è successo automatico",
     "gou_2_fallimento": "+2 al prossimo tiro emotivo",
     "gou_3_nome": "La Brace che Resta 残り火",
     "gou_3_desc": "Le emozioni lasciano calore. Il luogo è ancora tiepido di ciò che è stato provato.",
-    "gou_3_attributo": "Ascolto o Distacco (dual)",
+    "gou_3_attributo": "Ascolto o Distacco (a scelta)",
     "gou_3_costo": "3 Ki",
+    "gou_3_vincolo": "devi essere sul luogo, entro 24-48 ore dal fatto",
     "gou_3_successo": "Senti le emozioni dominanti e quante presenze diverse c'erano — distingui paura da rabbia da determinazione",
     "gou_3_fallimento": "Un'impressione emotiva generale, senza distinzione tra le persone",
     "senmon_1_nome": "Rilievi e fotografia",
@@ -697,6 +738,7 @@ PG_02 = {
     "tic": "Fa roteare una moneta da 500 yen tra le dita quando ragiona.",
     "oggetto": "Una lente d'ingrandimento pieghevole nel taschino — vecchia, graffiata, non la cambierebbe mai.",
     "gusto": "Yakitori e birra Asahi al bancone. Mai al tavolo, sempre al bancone.",
+    "rituale_label": "Superstizione",
     "rituale": "Non inizia mai un sopralluogo dal lato destro della scena. Dice che porta sfortuna.",
     "rapporto_1_nome": "YAMAMOTO Kenji",
     "rapporto_1_testo": "Il capo. Duro, giusto, ma ultimamente lo vedo stanco. Non glielo dirò mai.",
@@ -721,18 +763,21 @@ PG_03 = {
     "gou_1_desc": "Senti quando qualcuno mente. Non sai come, ma lo senti.",
     "gou_1_attributo": "Ascolto",
     "gou_1_costo": "3 Ki",
+    "gou_1_vincolo": "devi aver parlato con la persona per almeno qualche minuto",
     "gou_1_successo": "Certezza della bugia + l'area generale (orario, persona, luogo) — non il contenuto specifico",
     "gou_1_fallimento": "Senti disonestà, ma non distingui se è bugia, nervosismo, o qualcosa di personale",
     "gou_2_nome": "Porta Socchiusa 開きかけの扉",
     "gou_2_desc": "Le persone si aprono con te. Dicono più di quanto vorrebbero.",
     "gou_2_attributo": "Ascolto",
     "gou_2_costo": "3 Ki",
+    "gou_2_vincolo": "richiede conversazione in corso (non si usa come apertura)",
     "gou_2_successo": "Il PNG rivela qualcosa che non voleva assolutamente dire",
     "gou_2_fallimento": "Il PNG lascia trapelare qualcosa, ma si ferma prima di dire troppo",
     "gou_3_nome": "La Risalita della Carpa 鯉の滝登り",
     "gou_3_desc": "Non molli. Mai. La tua pazienza è una forza della natura.",
-    "gou_3_attributo": "Pazienza o Presenza (dual)",
+    "gou_3_attributo": "Pazienza o Presenza (a scelta)",
     "gou_3_costo": "3 Ki",
+    "gou_3_vincolo": "l'interrogatorio deve essere in corso da tempo",
     "gou_3_successo": "Il PNG si contraddice su un punto specifico — la sua storia cede sotto il peso della ripetizione",
     "gou_3_fallimento": "Il PNG è stanco, la coerenza vacilla, ma la storia regge",
     "senmon_1_nome": "Interrogatorio",
@@ -756,7 +801,7 @@ PG_03 = {
     "conoscenza_nome": "NAKAMURA Hideki",
     "conoscenza_ruolo": "Avvocato penalista (cugino)",
     "conoscenza_desc": "Cugino di primo grado, siete cresciuti insieme. Consulenza legale, accesso a fascicoli pubblici, contatti in tribunale.",
-    "conoscenza_contatto": "Studio legale Nakamura & Associati, Via Kawaramachi. O al cellulare.",
+    "conoscenza_contatto": "Studio legale Nakamura & Associati, via Kawaramachi. O al cellulare.",
     "conoscenza_costo": "Niente di specifico — famiglia è famiglia.",
     "conoscenza_limite": "Una volta per sessione senza conseguenze. Hideki non fa mai nulla di illegale, ma conosce le zone grigie.",
     "tatemae": "Sei quello calmo. Non ti agiti mai. Parli poco, ascolti molto. Quando parli, le persone tendono ad ascoltare.",
@@ -768,7 +813,8 @@ PG_03 = {
     "tic": "Annuisce lentamente anche quando non è d'accordo. Le persone lo trovano rassicurante.",
     "oggetto": "Un taccuino Moleskine nero, pieno di appunti in calligrafia minuscola. Non usa registratori.",
     "gusto": "Ramen miso con extra chashu. Conosce tutti i posti migliori di Kyoto a memoria.",
-    "rituale": "Colleziona manga shoujo. Li tiene nascosti in un cassetto della scrivania.",
+    "rituale_label": "Segreto",
+    "rituale": "Colleziona manga shōjo. Li tiene nascosti in un cassetto della scrivania.",
     "rapporto_1_nome": "YAMAMOTO Kenji",
     "rapporto_1_testo": "Un capo che si porta il lavoro a casa e la casa al lavoro. Lo capisco fin troppo bene.",
     "rapporto_2_nome": "HONDA Ryota",
@@ -790,20 +836,25 @@ PG_04 = {
     "lucidita_base": "7", "ascolto_base": "5", "presenza_base": "4",
     "gou_1_nome": "Palazzo della Memoria 記憶の宮殿",
     "gou_1_desc": "Puoi richiamare con precisione fotografica qualcosa che hai visto o sentito.",
-    "gou_1_attributo": "Lucidità o Pazienza (dual)",
+    "gou_1_attributo": "Lucidità o Pazienza (a scelta)",
     "gou_1_costo": "2 Ki",
+    "gou_1_vincolo": "devi specificare cosa stai cercando di ricordare",
     "gou_1_successo": "Ricordi il dettaglio e anche elementi periferici che non avevi notato consciamente",
     "gou_1_fallimento": "Ricordi il dettaglio principale, ma sfocato o incompleto",
     "gou_2_nome": "L'Ora Giusta 正しい時",
-    "gou_2_desc": "Sai quando è il momento perfetto per parlare, agire, colpire. Il bonus decade se non usato entro la scena.",
+    "gou_2_desc": "Sai quando è il momento perfetto per parlare, agire, colpire.",
     "gou_2_attributo": "Pazienza",
     "gou_2_costo": "3 Ki",
+    "gou_2_vincolo": "il bonus si sottrae dal dado; decade se non usato entro la scena",
+    "gou_2_vincolo_label": "Nota",
     "gou_2_successo": "+3 al prossimo tiro",
     "gou_2_fallimento": "+1 al prossimo tiro",
     "gou_3_nome": "L'Istante della Caduta 散り際",
     "gou_3_desc": "Il fiore di ciliegio nel momento in cui cade. Cogliere ciò che sta per svanire.",
-    "gou_3_attributo": "Pazienza o Ascolto (dual)",
-    "gou_3_costo": "2 Ki",
+    "gou_3_attributo": "Pazienza o Ascolto (a scelta)",
+    "gou_3_costo": "2 Ki (pagati subito)",
+    "gou_3_vincolo": "allerta per il resto della giornata: si attiva da sola alla prima cosa che sta per svanire, poi decade — il tiro si fa in quel momento",
+    "gou_3_vincolo_label": "Meccanica",
     "gou_3_successo": "Sai cosa sta per svanire e hai un istante per agire",
     "gou_3_fallimento": "Senti urgenza, sai che qualcosa sta sfuggendo, ma non cosa",
     "senmon_1_nome": "Medicinali e veleni",
@@ -815,7 +866,7 @@ PG_04 = {
     "senmon_3_nome": "Medicina",
     "senmon_3_chiave": "Lucidità",
     "senmon_3_desc": "Anatomia, traumi, referti. Il linguaggio del medico legale non ha segreti per te.",
-    "chi_sei": "Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta. Il problema è tua madre: Sato Michiko non ha mai accettato che tu facessi il poliziotto. Uno spreco, dice. Tuo zio Tanaka Jiro ha un'azienda di import-export e ti aspetta.",
+    "chi_sei": "Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta. Il problema è tua madre: Sato Michiko non ha mai accettato che tu facessi il poliziotto. Uno spreco, dice. Tuo zio Tanaka Jiro ha un'azienda di import-export — e tua madre non smette di ripetere che lo zio ti aspetta.",
     "problema_titolo": "LA MADRE",
     "problema_testo": "Tua madre chiama. Spesso. A volte in centrale. È urgente, dice alla segretaria. Non è mai urgente. Vuole sapere se hai ripensato al lavoro dello zio, quando ti sposi, perché sprechi la tua vita. Non urla, non minaccia — usa il senso di colpa come un'arma di precisione. E non puoi riattaccare in faccia a tua madre — non in Giappone.",
     "png_nome": "SATO Michiko",
@@ -839,6 +890,7 @@ PG_04 = {
     "tic": "Si sistema gli occhiali spingendoli sul naso con l'indice, anche quando non scivolano.",
     "oggetto": "Un portachiavi a forma di struttura molecolare, regalo di laurea dei compagni.",
     "gusto": "Curry rice della mensa della centrale. Lo mangia quasi ogni giorno, senza vergogna.",
+    "rituale_label": "Abitudine",
     "rituale": "Conta i passi quando è nervoso. Non se ne accorge, ma i colleghi sì.",
     "rapporto_1_nome": "YAMAMOTO Kenji",
     "rapporto_1_testo": "L'ispettore. Lo ammiro, ma a volte ho paura di deluderlo.",
@@ -851,6 +903,7 @@ PG_04 = {
 }
 
 PG_05 = {
+    "genere": "f",
     "nome_kanji": "藤田 恵美",
     "nome_romanizzato": "FUJITA Emi",
     "eta": "36",
@@ -869,6 +922,7 @@ PG_05 = {
     "gou_2_desc": "Le parole non scompaiono. Nel tuo silenzio, le senti.",
     "gou_2_attributo": "Silenzio (requisito: ≥ 7)",
     "gou_2_costo": "4 Ki",
+    "gou_2_vincolo": "devi essere sul luogo, entro 48 ore dal fatto",
     "gou_2_successo": "Frammenti di frasi riconoscibili — parole chiave, toni, numero di voci presenti",
     "gou_2_fallimento": "Suoni indistinti — un tono emotivo generale senza parole",
     "gou_3_nome": "Tocco del Medico 医者の手",
@@ -906,10 +960,11 @@ PG_05 = {
     "frase": "Non guardare cosa ha fatto. Guarda perché l'ha fatto.",
     "pressione": "Ti chiudi ancora di più. Diventi fredda, quasi clinica. Analizzi tutto, anche le tue emozioni — come se fossero di qualcun altro.",
     "debolezza": "Quando un uomo la sminuisce o le dice che esagera. Anni di lotta per il rispetto condensati in un istante.",
-    "vizio": "Whisky Nikka. Un dito, da sola, la sera dopo i casi pesanti. Non in compagnia.",
+    "vizio": "Whisky Nikka. Un dito, da sola, la sera dopo i casi pesanti. Quasi mai in compagnia — l'eccezione è Morita.",
     "tic": "Inclina leggermente la testa a sinistra quando ascolta qualcuno mentire.",
     "oggetto": "Una penna stilografica Pilot nera. Scrive i profili sempre a mano, mai al computer.",
     "gusto": "Wagashi e tè matcha. Ha un debole per la pasticceria tradizionale vicino a Kiyomizu.",
+    "rituale_label": "Rifugio",
     "rituale": "Il tempio di Nanzen-ji, la sera. Si siede nel giardino di pietra e non pensa a nulla.",
     "rapporto_1_nome": "YAMAMOTO Kenji",
     "rapporto_1_testo": "Un buon capo, ma si sta consumando. Non è il mio ruolo dirglielo, ma qualcuno dovrebbe.",
@@ -933,6 +988,8 @@ PG_LIST = [
 if __name__ == "__main__":
     for code, name, data in PG_LIST:
         img = os.path.join(BASE_DIR, "Immagini", f"{code}_{name}_foto.png")
+        if not os.path.exists(img):
+            print(f"ATTENZIONE: foto mancante, la scheda avra' il placeholder [FOTO]: {img}")
         out = f"ANTEPRIMA_{name}.docx"
         genera_scheda(data, out, img)
     print("Fatto.")

@@ -1,0 +1,34 @@
+<p class="wz-aiuto">Si parte dal <strong>come</strong> — non da chi è morto, non da chi ha ucciso. Il metodo di morte pre-esclude metà delle possibilità e ne rende obbligatorie altre: è il primo filtro della situazione. <em>Una riga sola, poi avanti.</em></p>
+
+<div class="wz-campo">
+    <label>Tipologia</label>
+    <select data-campo="passo1.tipologiaId" data-opzioni="lib:tipologie_omicidio:tipologie:id:nome"></select>
+</div>
+
+<div class="wz-campo">
+    <label>Sottotipo <span class="wz-opz">(opzionale)</span></label>
+    <select data-campo="passo1.sottotipoId" data-opzioni-dinamiche="sottotipi-omicidio"></select>
+</div>
+
+<div class="wz-info" data-info="tipologie_omicidio:tipologie:passo1.tipologiaId"
+     data-info-campi="frequenza1997,notaCanone1997" data-info-oggetto="vincoliGenerativi" data-info-elenco="domandeGuida"></div>
+
+<div class="wz-campo">
+    <label>La riga unica <span class="wz-obbl">*</span></label>
+    <input type="text" data-campo="passo1.rigaUnica" maxlength="140"
+           placeholder="È morto avvelenato." />
+    <details class="wz-help">
+        <summary>❓ Cosa scrivo qui — esempi</summary>
+        <div>
+            <p>Scrivi <strong>come è morta la vittima</strong> in una sola frase, come la prima riga di un rapporto di polizia. Solo il metodo: chi era, dove e perché arrivano nei passi successivi.</p>
+            <p>Tocca un esempio per usarlo (poi puoi modificarlo):</p>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo1.rigaUnica']">È morto avvelenato.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo1.rigaUnica']">È morta per una caduta dalle scale, in apparenza accidentale.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo1.rigaUnica']">È morto colpito alla testa con un oggetto contundente.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo1.rigaUnica']">È morta annegata nel canale — ma non dove è entrata in acqua.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo1.rigaUnica']">È morto nel sonno: overdose di farmaci, con biglietto d'addio.</button>
+        </div>
+    </details>
+</div>
+
+<button type="button" class="wz-btn wz-ai" data-proponi="1" hidden>✨ Proponi 3 metodi</button>

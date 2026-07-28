@@ -1,0 +1,69 @@
+{
+  "$commento": "Biblioteca passo 3.problemi (vittima) e passo 8 (segreti dei PNG). Ogni problema porta: comeEmerge (le tracce documentali che produce — alimentano il passo 9) e il potenziale da falsa pista. REGOLA del manuale: le false piste NON si piazzano — emergono dai problemi veri delle persone vere.",
+
+  "categorie": [
+    {
+      "id": "debiti",
+      "nome": "Debiti e soldi",
+      "voci": [
+        { "id": "strozzino", "testo": "Deve soldi a un prestatore privato — rate 'gentili' che non finiscono mai", "comeEmerge": ["prelievi contanti regolari e anomali", "visite periodiche di un uomo educato", "il registro del prestatore, se mai si trova"], "falsaPista": "un debito spiega nervosismo e bugie anche in un innocente" },
+        { "id": "gioco", "testo": "Gioco: pachinko, corse, mahjong d'azzardo — vince abbastanza da non smettere", "comeEmerge": ["assenze a orari fissi", "buste paga che spariscono", "conoscenti nel giro"], "falsaPista": "l'alibi vero ma inconfessabile: era a giocare" },
+        { "id": "garanzia", "testo": "Ha firmato da garante per la persona sbagliata (parente, amico) e ora paga lui", "comeEmerge": ["atto di garanzia in banca", "lettere di sollecito", "rancore visibile verso il garantito"], "falsaPista": "il rancore economico sembra movente anche quando non lo è" },
+        { "id": "mutuoBolla", "testo": "Mutuo su una casa comprata al picco della bolla: vale metà, la rata è intera", "comeEmerge": ["atto d'acquisto 1989-91", "seconda occupazione serale nascosta", "vendite di oggetti di famiglia"], "falsaPista": "la disperazione silenziosa della classe media: universale nel '97" },
+        { "id": "prestitoNascosto", "testo": "Prestito fatto di nascosto dal coniuge — per aiutare qualcuno che non doveva", "comeEmerge": ["conto separato o cassetta postale segreta", "il beneficiario che ricompare", "libretto nascosto in casa"], "falsaPista": "la scoperta del prestito sembra un movente familiare perfetto" }
+      ]
+    },
+    {
+      "id": "relazioni",
+      "nome": "Relazioni e famiglia",
+      "voci": [
+        { "id": "amante", "testo": "Una relazione fuori dal matrimonio — gestita con orari, alberghi e bugie collaudate", "comeEmerge": ["tabulati con un numero ricorrente in fasce anomale", "ricevute d'albergo/regali", "il collega che copre"], "falsaPista": "LA falsa pista classica del manuale: reale, nascosta, e non c'entra con l'omicidio" },
+        { "id": "figlioSegreto", "testo": "Un figlio mai riconosciuto, mantenuto a distanza", "comeEmerge": ["bonifici mensili a un nome sconosciuto", "una foto nascosta", "la madre che si rifà viva"], "falsaPista": "i soldi periodici sembrano ricatto — sono alimenti informali" },
+        { "id": "matrimonioFinito", "testo": "Il matrimonio è finito da anni ma nessuno dei due lo dichiara — separati in casa", "comeEmerge": ["camere separate, orari sfalsati", "i vicini che sanno", "consulto da un avvocato divorzista mai formalizzato"], "falsaPista": "il coniuge freddo sembra sospetto: è solo indifferente" },
+        { "id": "fratelloPeso", "testo": "Un fratello/parente che vive di espedienti e torna sempre a chiedere", "comeEmerge": ["prestiti a fondo perduto", "liti sentite dai vicini", "sparizioni e ritorni del parente"], "falsaPista": "il parente disastro attira ogni sospetto per riflesso" },
+        { "id": "promessaOmiai", "testo": "Un fidanzamento combinato (omiai) in corso, gestito dalle famiglie sopra la testa degli interessati", "comeEmerge": ["incontri formali a calendario", "l'intermediaria che sa tutto di tutti", "il rifiuto che qualcuno non ha digerito"], "falsaPista": "l'onore delle famiglie coinvolte produce reticenze che sembrano colpe" }
+      ]
+    },
+    {
+      "id": "lavoro",
+      "nome": "Lavoro e carriera",
+      "voci": [
+        { "id": "frodeContabile", "testo": "Ha truccato numeri — bilanci, resoconti, rimborsi — e il castello regge finché nessuno controlla", "comeEmerge": ["discrepanze nei registri", "l'ispezione in arrivo", "lo stile di vita sopra lo stipendio"], "falsaPista": "chi trucca i conti mente su tutto: sembra colpevole di qualsiasi cosa" },
+        { "id": "erroreInsabbiato", "testo": "Un errore grave (medico, tecnico, di perizia) coperto anni fa — con altri che sanno", "comeEmerge": ["il fascicolo archiviato in fretta", "la vittima dell'errore che ricompare", "il complice di copertura che paga da allora"], "falsaPista": "la copertura vecchia genera comportamenti da colpevole nel presente" },
+        { "id": "licenziamentoInArrivo", "testo": "Sa di essere sulla lista dei tagli — e non l'ha detto a casa", "comeEmerge": ["esce e rientra in orario fingendo di lavorare", "colloqui segreti", "il capo del personale che evita il suo sguardo"], "falsaPista": "il doppio orario quotidiano crea buchi d'alibi sistematici" },
+        { "id": "concorrenzaSleale", "testo": "Passa informazioni a un concorrente/rivale — per soldi o per rancore", "comeEmerge": ["incontri fuori zona", "documenti fotocopiati in orari morti", "il rivale che sa cose che non dovrebbe"], "falsaPista": "il traditore aziendale ha segreti veri, ma non di sangue" },
+        { "id": "molestieSubite", "testo": "Subisce (o ha subito) pressioni e umiliazioni sistematiche da un superiore — e tace per sopravvivere", "comeEmerge": ["trasferimenti punitivi in serie", "colleghi che distolgono lo sguardo", "un diario, se mai si trova"], "falsaPista": "il rancore verso il capo morto è enorme — e legittimo" }
+      ]
+    },
+    {
+      "id": "dipendenze",
+      "nome": "Dipendenze e salute",
+      "voci": [
+        { "id": "alcol", "testo": "Beve da funzionale: mai visto ubriaco, mai visto sobrio", "comeEmerge": ["bottiglie nei posti sbagliati", "il fegato nel referto", "l'izakaya che lo fa uscire per ultimo"], "falsaPista": "i vuoti di memoria veri rendono l'alibi sincero ma inservibile" },
+        { "id": "farmaci", "testo": "Ansiolitici o sonniferi ben oltre la ricetta — più medici, più farmacie", "comeEmerge": ["ricette multiple", "i registri delle farmacie", "assenze mentali notate al lavoro"], "falsaPista": "l'accesso ai farmaci lo mette in cima ai sospetti se il metodo è chimico" },
+        { "id": "malattiaNascosta", "testo": "Una diagnosi grave tenuta segreta a tutti — famiglia compresa", "comeEmerge": ["visite in una clinica fuori quartiere", "polizza vita ritoccata di recente", "gesti da 'ultima volta' incompresi"], "falsaPista": "i movimenti anomali degli ultimi mesi sembrano preparativi criminali: erano ospedali" },
+        { "id": "esaurimento", "testo": "Sta cedendo per il lavoro (karōshi in arrivo) — e il suo ambiente lo sa e tace", "comeEmerge": ["straordinari disumani nei registri", "un collega crollato prima di lui", "la famiglia che aveva chiesto aiuto all'azienda"], "falsaPista": "l'azienda copre i ritmi: le reticenze sembrano nascondere altro" }
+      ]
+    },
+    {
+      "id": "passato",
+      "nome": "Passato che torna",
+      "voci": [
+        { "id": "condanna", "testo": "Una condanna vecchia (rissa, furto, guida) espiata e cancellata dalla vita ufficiale", "comeEmerge": ["il fascicolo penale che i PG possono chiedere", "l'amico dell'epoca che ricompare", "il ricatto piccolo di chi sa"], "falsaPista": "il precedente pesa sul giudizio di tutti — polizia compresa" },
+        { "id": "identita", "testo": "Vive sotto un nome che non è quello di nascita — motivi suoi (fuga, adozione, vergogna)", "comeEmerge": ["i documenti troppo puliti", "l'anagrafe di provincia che non torna", "la persona che lo chiama con l'ALTRO nome"], "falsaPista": "l'identità doppia grida colpevolezza — e magari nasconde solo dolore" },
+        { "id": "tortoFatto", "testo": "Anni fa ha rovinato qualcuno (affare, testimonianza, delazione) e ha rimosso", "comeEmerge": ["il rovinato che è tornato in zona", "una lettera senza mittente", "il documento dell'epoca in un archivio"], "falsaPista": "se la vittima del torto è nel cast, il movente sembra suo — attenzione al doppio uso" },
+        { "id": "guerraFamiglia", "testo": "Una faida di famiglia sepolta (eredità contestata, terra divisa male) mai davvero chiusa", "comeEmerge": ["atti notarili vecchi", "due rami che non si parlano ai funerali", "il confine conteso ancora recintato storto"], "falsaPista": "le famiglie in faida si accusano a vicenda gratis: rumore garantito" }
+      ]
+    },
+    {
+      "id": "quartiere",
+      "nome": "Quartiere e ambiente",
+      "voci": [
+        { "id": "protezione", "testo": "Paga una 'protezione' piccola e regolare — così normale che non la considera più un reato", "comeEmerge": ["uscite di cassa fisse mascherate", "il ragazzo che passa il primo del mese", "tutti i negozi della via pagano: nessuno parla"], "falsaPista": "il giro di protezione attira i PG verso la yakuza anche quando c'entra nulla" },
+        { "id": "abusoEdilizio", "testo": "Ha costruito/ampliato senza permessi con la complicità di un funzionario", "comeEmerge": ["catasto che non corrisponde", "il funzionario che suda", "il vicino che ha denunciato tre volte"], "falsaPista": "la pratica sporca produce omertà a grappolo" },
+        { "id": "testimoneSilenzioso", "testo": "Ha visto qualcosa di grave (non legato al caso) e ha scelto di non denunciare", "comeEmerge": ["cambia strada da mesi", "evita una persona precisa", "un appunto, una data cerchiata"], "falsaPista": "la sua paura sembra colpa; il suo segreto apre un SECONDO filone" },
+        { "id": "affittoNero", "testo": "Affitta stanze in nero a lavoratori irregolari", "comeEmerge": ["troppa gente per una casa 'vuota'", "contanti mensili", "gli inquilini fantasma che nessuno può interrogare"], "falsaPista": "gli inquilini invisibili sono testimoni perfetti e introvabili" }
+      ]
+    }
+  ]
+}

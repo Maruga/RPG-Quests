@@ -1,0 +1,61 @@
+<p class="wz-aiuto"><strong>Nomina e posiziona</strong>: i cerchi concentrici della vita quotidiana. Niente biografie — una riga a persona. Il dettaglio arriverà solo su chi diventa rilevante. <em>La vittima costruisce il cast: da queste persone usciranno movente e colpevole.</em> Il 📝 su ogni persona apre gli appunti del GM.</p>
+
+<div class="wz-tabs" id="wz-tabs-p3">
+    <button type="button" class="wz-tab attiva" data-tab="vita">La sua vita</button>
+    <button type="button" class="wz-tab" data-tab="altri" id="wz-tab-altri">Altre persone del caso</button>
+</div>
+
+<div data-pane="vita">
+    <details class="wz-help">
+        <summary>❓ Come si scrive una persona — esempi</summary>
+        <div>
+            <p>Per ogni persona bastano <strong>nome + relazione + una riga</strong> su cosa fa o che rapporto aveva con la vittima. Così:</p>
+            <div class="wz-esempio-testo">Moglie — insegnante di ikebana, matrimonio freddo da anni ma di facciata perfetta</div>
+            <div class="wz-esempio-testo">Figlio — 24 anni, a Tokyo per lavoro, torna di rado; l'ultima telefonata è finita male</div>
+            <div class="wz-esempio-testo">Assistente di laboratorio — ambizioso, gli deve la carriera, ultimamente evitava di guardarlo</div>
+            <p>Non serve la biografia: per gli appunti c'è il 📝, e il dettaglio vero (cosa sa, cosa non sa, trigger) arriverà al passo 11, solo per chi conta.</p>
+        </div>
+    </details>
+
+    <h3 class="wz-h3">Famiglia <small>(condividono il cognome della vittima)</small></h3>
+    <div data-lista="passo3.famiglia" data-tipo-lista="persona" data-cerchio="famiglia" data-cognome-vittima="true"></div>
+
+    <h3 class="wz-h3">Lavoro</h3>
+    <div data-lista="passo3.lavoro" data-tipo-lista="persona" data-cerchio="lavoro"></div>
+
+    <h3 class="wz-h3">Amici</h3>
+    <div data-lista="passo3.amici" data-tipo-lista="persona" data-cerchio="amici"></div>
+
+    <h3 class="wz-h3">Cosa non andava nella sua vita — problemi e segreti</h3>
+    <p class="wz-nota">Le crepe: debiti, liti, segreti, decisioni che qualcuno temeva. <strong>Al passo 7 UNA di queste diventerà il movente dell'omicidio</strong> — le altre restano nel caso come piste che i giocatori sospetteranno comunque. Ne serve almeno una abbastanza grossa da giustificare un morto. Col 🎲 ne peschi una dalla biblioteca; la spunta <em>falsa pista</em> segna quelle che vuoi far sembrare sospette anche se non c'entrano.</p>
+    <details class="wz-help">
+        <summary>❓ Esempi di problemi che reggono un caso</summary>
+        <div>
+            <div class="wz-esempio-testo">Aveva scoperto ammanchi nei fondi di ricerca e ne parlava a mezza voce</div>
+            <div class="wz-esempio-testo">Debiti di gioco: 2 milioni di yen a un prestasoldi di Fushimi</div>
+            <div class="wz-esempio-testo">Stava per cambiare il testamento — l'appuntamento dal notaio era già fissato</div>
+            <div class="wz-esempio-testo">Una relazione extraconiugale che durava da tre anni</div>
+            <div class="wz-esempio-testo">Il fratello voleva vendere il negozio di famiglia, lei si opponeva</div>
+        </div>
+    </details>
+    <div data-lista="passo3.problemi" data-tipo-lista="problema"></div>
+</div>
+
+<div data-pane="altri" hidden>
+    <p class="wz-nota">Chi non rientra nei tre cerchi della vittima ma è nel caso — possono essere anche tanti: qui hanno la loro scheda. Entrano nel cast come tutti gli altri (assassino al passo 5, movente al 7, schede all'11).</p>
+    <details class="wz-help">
+        <summary>❓ Chi va qui — esempi</summary>
+        <div>
+            <p>Due tipi di persone:</p>
+            <p><strong>1. Nel mondo della vittima, ma non famiglia/lavoro/amici</strong> — il rivale, il capo della banda che frequentava, il creditore, la vicina che lo teneva d'occhio, l'ex:</p>
+            <div class="wz-esempio-testo">Capo della banda — gelosia: la stessa ragazza, e il ragazzo stava scalando il gruppo</div>
+            <div class="wz-esempio-testo">Strozzino di Fushimi — gli aveva prestato 800.000 ¥ otto mesi fa</div>
+            <div class="wz-esempio-testo">Ex fidanzata — lasciata male in primavera, le famiglie si erano messe in mezzo</div>
+            <p><strong>2. Nessun legame con la vittima, ma dentro il caso</strong> — testimoni, complici, figure che i PG incontreranno:</p>
+            <div class="wz-esempio-testo">Nessun legame — senzatetto del ponte, ha visto due moto quella notte</div>
+            <div class="wz-esempio-testo">Nessun legame — complice del colpevole, ha prestato il furgone senza fare domande</div>
+            <p>Nella casella relazione scrivi <em>chi è nel caso</em>; col 📝 aggiungi tutti gli appunti che vuoi.</p>
+        </div>
+    </details>
+    <div data-lista="passo3.altri" data-tipo-lista="persona" data-cerchio="altri"></div>
+</div>

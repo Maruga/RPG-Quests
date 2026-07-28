@@ -1,0 +1,134 @@
+{
+  "$commento": "Biblioteca passo 4 — Perché è morta. Il movente si definisce PRIMA del colpevole e funziona da filtro sul cast (regola del manuale: uno forte vale più di tre deboli). tracceCheGenera: ogni movente lascia una scia documentale sua, che il passo 9 raccoglie.",
+  "regolaDelPasso": "Definisci il movente guardando il cast del passo 3 e chiediti: chi aveva QUESTA ragione? Il wizard mostra il cast accanto e chiede anche le esclusioni (chi NON l'aveva e perché).",
+  "moventi": [
+    {
+      "id": "paura",
+      "nome": "Paura — la vittima stava per scoprire o rivelare qualcosa",
+      "sottocasi": [
+        { "id": "denunciaImminente", "nome": "Stava per denunciare (irregolarità, reato, frode)" },
+        { "id": "segretoScoperto", "nome": "Aveva scoperto un segreto e non aveva ancora deciso che farne" },
+        { "id": "testimoneScomodo", "nome": "Aveva visto qualcosa che non doveva vedere" }
+      ],
+      "domandeGuida": [
+        "Cosa sapeva esattamente la vittima — e quanto era vicina ad agire?",
+        "Come ha capito il colpevole che il tempo stava per scadere? (quel momento va in cronistoria)",
+        "Chi altro sa una parte dello stesso segreto senza saperlo? (testimoni naturali)"
+      ],
+      "chiTipicamente": "colleghi, sottoposti, soci — chi perde tutto se la vittima parla: lavoro, famiglia, libertà",
+      "tracceCheGenera": [
+        "ciò che la vittima stava raccogliendo (appunti, resoconti, richieste di documenti)",
+        "il momento della scoperta: un alterco, una convocazione, una domanda di troppo (testimoni indiretti)",
+        "l'accelerazione del colpevole nei giorni prima (accessi, acquisti, spostamenti)"
+      ],
+      "notaMetodo": "Il movente dell'esempio Kuroda del manuale. Fortissimo perché genera da solo la cronistoria: scoperta → conto alla rovescia → atto."
+    },
+    {
+      "id": "interesseEconomico",
+      "nome": "Interesse economico",
+      "sottocasi": [
+        { "id": "eredita", "nome": "Eredità (che non arriva mai abbastanza in fretta)" },
+        { "id": "debito", "nome": "Debito — la vittima era creditrice, o sapeva del debito" },
+        { "id": "affare", "nome": "Un affare che la vittima stava per far saltare (o per chiudere escludendo qualcuno)" },
+        { "id": "assicurazione", "nome": "Polizza vita / assicurazione" },
+        { "id": "societa", "nome": "Quote societarie, successione aziendale" }
+      ],
+      "domandeGuida": [
+        "Chi guadagna, esattamente quanto, e quando? (la domanda del procuratore)",
+        "Il bisogno di denaro del colpevole: da quando, per cosa, chi lo sa?",
+        "I soldi si muovono SEMPRE su carta nel 1997: dove sono i documenti?"
+      ],
+      "chiTipicamente": "famiglia (eredità, polizze), soci (quote, affari), debitori strangolati — chi ha un buco che i soldi della vittima chiudono",
+      "tracceCheGenera": [
+        "testamento, polizze, visure societarie (documento)",
+        "estratti conto: il buco del colpevole e i movimenti anomali (datoTecnico)",
+        "il notaio, il consulente, il funzionario di banca che sa (testimonianza)"
+      ],
+      "notaMetodo": "Il più documentale dei moventi: perfetto per casi con lavoro d'ufficio, richieste agli enti e handout finanziari."
+    },
+    {
+      "id": "gelosia",
+      "nome": "Gelosia",
+      "sottocasi": [
+        { "id": "sentimentale", "nome": "Sentimentale — tradimento reale o creduto" },
+        { "id": "professionale", "nome": "Professionale — il riconoscimento andato all'altro" },
+        { "id": "sociale", "nome": "Sociale — lo status, la faccia, il confronto perenne" }
+      ],
+      "domandeGuida": [
+        "La gelosia è fondata o costruita in testa? (nel secondo caso il cast non la vede arrivare)",
+        "Qual è stata la goccia — l'episodio preciso che va in cronistoria?",
+        "Chi conosceva la relazione/rivalità, e chi la negherà per pudore?"
+      ],
+      "chiTipicamente": "coniugi e amanti, il rivale di sempre, il collega superato — chi misura la propria vita su quella della vittima",
+      "tracceCheGenera": [
+        "lettere, regali, pedinamenti fai-da-te, appostamenti notati dai vicini",
+        "tabulati: la frequenza delle chiamate racconta la relazione meglio dei contenuti",
+        "chi sapeva e taceva (l'amica confidente, il collega che ha visto)"
+      ],
+      "notaMetodo": "Movente caldo: produce comportamenti visibili PRIMA del fatto — ottimo per testimonianze contraddittorie e false piste naturali."
+    },
+    {
+      "id": "ricatto",
+      "nome": "Ricatto — la vittima sapeva qualcosa e lo faceva pesare",
+      "sottocasi": [
+        { "id": "vittimaRicattatrice", "nome": "La vittima ricattava il colpevole" },
+        { "id": "ricattoSpezzato", "nome": "La vittima stava per smettere di pagare e parlare" },
+        { "id": "catenaDiRicatti", "nome": "Più ricattati: il cast dei sospetti è la lista dei paganti" }
+      ],
+      "domandeGuida": [
+        "Cosa aveva in mano la vittima — e DOVE lo teneva? (quell'oggetto/documento è una traccia essenziale)",
+        "Da quanto durava? I pagamenti periodici sono una firma sui conti",
+        "Il colpevole ha ucciso per il segreto: l'ha poi trovato e distrutto? (se no, esiste ancora)"
+      ],
+      "chiTipicamente": "chiunque abbia un segreto che vale più di una vita: carriere, matrimoni, reputazioni",
+      "tracceCheGenera": [
+        "prelievi/versamenti regolari e anomali su due conti speculari (datoTecnico)",
+        "il materiale del ricatto: nascosto, sparito o ancora al suo posto (fisica/documento)",
+        "il doppio tenore di vita della vittima (spese sopra il reddito)"
+      ],
+      "notaMetodo": "Rovescia la simpatia: la vittima non è innocente. Ottimo per il Dilemma Finale del Manuale GM."
+    },
+    {
+      "id": "vendetta",
+      "nome": "Vendetta — un torto vecchio",
+      "sottocasi": [
+        { "id": "tortoPrivato", "nome": "Un torto personale mai perdonato (rovina, umiliazione, abbandono)" },
+        { "id": "tortoGiudiziario", "nome": "Un processo, una sentenza, una perizia che ha distrutto una vita" },
+        { "id": "tortoAscendente", "nome": "Il torto è a un familiare: il vendicatore è di seconda generazione" }
+      ],
+      "domandeGuida": [
+        "Quanto è vecchio il torto? Più è vecchio, più il collegamento è invisibile al cast attuale",
+        "Cosa ha riacceso la miccia ADESSO? (un anniversario, un ritorno, una notizia — va in cronistoria)",
+        "La vittima sapeva di avere quel nemico, o l'aveva dimenticato?"
+      ],
+      "chiTipicamente": "qualcuno ai margini del cast attuale o fuori: il wizard avvisa — se il vendicatore non è nella vita presente della vittima, va agganciato in modo coerente (lavoro nuovo, trasferimento, contatto ripreso)",
+      "tracceCheGenera": [
+        "il fascicolo del passato: archivi, giornali dell'epoca, sentenze (ufficio-ripetibile)",
+        "il momento del riavvicinamento: una lettera, una visita, una telefonata anomala",
+        "qualcuno del passato che ricorda (il testimone anziano, l'ex collega)"
+      ],
+      "notaMetodo": "L'unico movente che autorizza un colpevole 'esterno' — ma il manuale impone che entri in modo coerente, non come cattivo piovuto dal cielo. Richiede lavoro d'archivio: allunga la durata."
+    },
+    {
+      "id": "carriera",
+      "nome": "Carriera / potere — la vittima era un ostacolo",
+      "sottocasi": [
+        { "id": "promozione", "nome": "Il posto che spettava a un altro" },
+        { "id": "successione", "nome": "La successione (azienda familiare, studio, tempio, dojo)" },
+        { "id": "reputazione", "nome": "La vittima poteva stroncare una carriera con una parola (referenza, voto, perizia)" }
+      ],
+      "domandeGuida": [
+        "Cosa si sblocca ESATTAMENTE con la morte — e per chi? (spesso più di un beneficiario: false piste naturali)",
+        "C'era una scadenza? (nomina, consiglio, firma) — la data mette fretta al colpevole e ritmo alla cronistoria",
+        "L'ambiente sapeva della rivalità? Gli ambienti sanno sempre."
+      ],
+      "chiTipicamente": "il numero due, il rivale interno, l'escluso dalla successione — chi aspetta da troppo",
+      "tracceCheGenera": [
+        "documenti dell'organizzazione: nomine, verbali, organigrammi (documento)",
+        "le voci di corridoio: l'ambiente come coro di testimoni reticenti",
+        "il comportamento del beneficiario subito dopo (troppa fretta, troppa calma)"
+      ],
+      "notaMetodo": "Movente freddo e sociale: perfetto per ambienti chiusi giapponesi (università, azienda, tempio) dove la faccia conta più dei soldi."
+    }
+  ]
+}

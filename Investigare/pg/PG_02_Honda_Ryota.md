@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Occhio della Gru 鶴の目
 *Vedi ciò che altri non vedono — il dettaglio che cambia tutto.*
@@ -70,7 +70,8 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 - **Attributo**: Distacco
 - **Costo**: 3 Ki
 - **Successo** (2d6 ≤ Distacco): Il primo tiro emotivo della scena è **successo automatico**
-- **Fallimento**: +2 al prossimo tiro emotivo
+- **Fallimento**: +2 al prossimo tiro emotivo (bonus: si sottrae dal dado)
+- **Nota**: tiro emotivo = un tiro provocato dalla scena che ti colpisce, non un tiro che scegli di fare
 
 > Stai per entrare nell'obitorio. Un gelo professionale ti avvolge. Il primo impatto non ti tocca — il tiro di Distacco è superato automaticamente.
 
@@ -88,7 +89,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
 
 ### Opzione 1: Rilievi e fotografia *(Lucidità)*
 Documentare una scena è il tuo mestiere: luci, angoli, impronte, catena di custodia. Nessuno fotografa una stanza come te.
@@ -112,7 +113,7 @@ Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto 
 |---|---|---|
 | Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
 | Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Pazienza o Silenzio · vel. 2/1 · danno 2 |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
 | — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
 

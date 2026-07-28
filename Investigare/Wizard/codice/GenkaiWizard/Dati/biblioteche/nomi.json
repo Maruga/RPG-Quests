@@ -1,0 +1,106 @@
+{
+  "$commento": "Generatore nomi giapponesi anti-omonimie. REGOLE: (1) mai nome+cognome identici dentro lo stesso progetto né uguali a un riservato; solo-nome o solo-cognome uguali sono ammessi e normali. (2) Il nome proprio deve essere coerente con la GENERAZIONE: chi ha 60 anni nel 1997 è nato ~1937 — porta un nome di quell'epoca. (3) Convenzione di romanizzazione del progetto: nomi propri SENZA macron (Ryota, Shota, Jiro), termini comuni con macron. (4) La lista riservati qui sotto è il cast base stabile; la lista completa (tutti i nomi di tutte le avventure) va ESPORTATA da GENKAI_Registro_Nomi.md in fase di build → riservati_completi.json.",
+
+  "generazioni": {
+    "anziani": { "nati": "1920-1940", "etaNel1997": "57-77", "nota": "nomi tradizionali, spesso a un kanji o con suffissi -zō/-kichi/-e/-ko arcaici" },
+    "adulti": { "nati": "1941-1960", "etaNel1997": "37-56", "nota": "la generazione dei quadri, dei -o maschili e dei -ko femminili" },
+    "giovaniAdulti": { "nati": "1961-1975", "etaNel1997": "22-36", "nota": "il -ko femminile inizia a sparire; nomi maschili più morbidi" },
+    "ragazzi": { "nati": "1976-1985", "etaNel1997": "12-21", "nota": "nomi moderni: Yuta, Kenta, Ai, Mai, Saki" }
+  },
+
+  "cognomi": [
+    { "r": "Abe", "k": "阿部" }, { "r": "Aoki", "k": "青木" }, { "r": "Arai", "k": "新井" }, { "r": "Asano", "k": "浅野" },
+    { "r": "Baba", "k": "馬場" }, { "r": "Chiba", "k": "千葉" }, { "r": "Doi", "k": "土井" }, { "r": "Eguchi", "k": "江口" },
+    { "r": "Endo", "k": "遠藤" }, { "r": "Fukuda", "k": "福田" }, { "r": "Fukui", "k": "福井" }, { "r": "Furukawa", "k": "古川" },
+    { "r": "Goto", "k": "後藤" }, { "r": "Hamada", "k": "浜田" }, { "r": "Hara", "k": "原" }, { "r": "Harada", "k": "原田" },
+    { "r": "Hasegawa", "k": "長谷川" }, { "r": "Hashimoto", "k": "橋本" }, { "r": "Hattori", "k": "服部" }, { "r": "Hayashi", "k": "林" },
+    { "r": "Higuchi", "k": "樋口" }, { "r": "Hirano", "k": "平野" }, { "r": "Hirata", "k": "平田" }, { "r": "Honda", "k": "本田" },
+    { "r": "Hoshino", "k": "星野" }, { "r": "Ikeda", "k": "池田" }, { "r": "Imai", "k": "今井" }, { "r": "Inoue", "k": "井上" },
+    { "r": "Ishida", "k": "石田" }, { "r": "Ishikawa", "k": "石川" }, { "r": "Ito", "k": "伊藤" }, { "r": "Iwata", "k": "岩田" },
+    { "r": "Kaneko", "k": "金子" }, { "r": "Kato", "k": "加藤" }, { "r": "Kawaguchi", "k": "川口" }, { "r": "Kawamura", "k": "川村" },
+    { "r": "Kikuchi", "k": "菊池" }, { "r": "Kimura", "k": "木村" }, { "r": "Kinoshita", "k": "木下" }, { "r": "Kobayashi", "k": "小林" },
+    { "r": "Koike", "k": "小池" }, { "r": "Kojima", "k": "小島" }, { "r": "Kondo", "k": "近藤" }, { "r": "Kubo", "k": "久保" },
+    { "r": "Kudo", "k": "工藤" }, { "r": "Kuroda", "k": "黒田" }, { "r": "Maeda", "k": "前田" }, { "r": "Maruyama", "k": "丸山" },
+    { "r": "Masuda", "k": "増田" }, { "r": "Matsubara", "k": "松原" }, { "r": "Matsuda", "k": "松田" }, { "r": "Matsui", "k": "松井" },
+    { "r": "Matsumoto", "k": "松本" }, { "r": "Miura", "k": "三浦" }, { "r": "Miyamoto", "k": "宮本" }, { "r": "Miyazaki", "k": "宮崎" },
+    { "r": "Mizuno", "k": "水野" }, { "r": "Mori", "k": "森" }, { "r": "Morita", "k": "森田" }, { "r": "Murakami", "k": "村上" },
+    { "r": "Murata", "k": "村田" }, { "r": "Nagai", "k": "永井" }, { "r": "Nagata", "k": "永田" }, { "r": "Nakagawa", "k": "中川" },
+    { "r": "Nakajima", "k": "中島" }, { "r": "Nakamura", "k": "中村" }, { "r": "Nakano", "k": "中野" }, { "r": "Nakata", "k": "中田" },
+    { "r": "Nishida", "k": "西田" }, { "r": "Nishimura", "k": "西村" }, { "r": "Noguchi", "k": "野口" }, { "r": "Nomura", "k": "野村" },
+    { "r": "Ogawa", "k": "小川" }, { "r": "Okada", "k": "岡田" }, { "r": "Okamoto", "k": "岡本" }, { "r": "Ono", "k": "小野" },
+    { "r": "Osawa", "k": "大沢" }, { "r": "Oshima", "k": "大島" }, { "r": "Ota", "k": "太田" }, { "r": "Otsuka", "k": "大塚" },
+    { "r": "Saito", "k": "斎藤" }, { "r": "Sakai", "k": "酒井" }, { "r": "Sakamoto", "k": "坂本" }, { "r": "Sakurai", "k": "桜井" },
+    { "r": "Sano", "k": "佐野" }, { "r": "Sasaki", "k": "佐々木" }, { "r": "Sato", "k": "佐藤" }, { "r": "Shibata", "k": "柴田" },
+    { "r": "Shimada", "k": "島田" }, { "r": "Shimizu", "k": "清水" }, { "r": "Sugimoto", "k": "杉本" }, { "r": "Sugiyama", "k": "杉山" },
+    { "r": "Suzuki", "k": "鈴木" }, { "r": "Takagi", "k": "高木" }, { "r": "Takahashi", "k": "高橋" }, { "r": "Takeda", "k": "武田" },
+    { "r": "Takeuchi", "k": "竹内" }, { "r": "Tamura", "k": "田村" }, { "r": "Tanaka", "k": "田中" }, { "r": "Taniguchi", "k": "谷口" },
+    { "r": "Tsuchiya", "k": "土屋" }, { "r": "Uchida", "k": "内田" }, { "r": "Ueda", "k": "上田" }, { "r": "Ueno", "k": "上野" },
+    { "r": "Wada", "k": "和田" }, { "r": "Watanabe", "k": "渡辺" }, { "r": "Yamada", "k": "山田" }, { "r": "Yamaguchi", "k": "山口" },
+    { "r": "Yamamoto", "k": "山本" }, { "r": "Yamashita", "k": "山下" }, { "r": "Yano", "k": "矢野" }, { "r": "Yokoyama", "k": "横山" },
+    { "r": "Yoshida", "k": "吉田" }, { "r": "Yoshikawa", "k": "吉川" }
+  ],
+
+  "nomiMaschili": {
+    "anziani": [
+      { "r": "Shigeru", "k": "茂" }, { "r": "Isamu", "k": "勇" }, { "r": "Minoru", "k": "実" }, { "r": "Osamu", "k": "治" },
+      { "r": "Susumu", "k": "進" }, { "r": "Tadashi", "k": "正" }, { "r": "Makoto", "k": "誠" }, { "r": "Kiyoshi", "k": "清" },
+      { "r": "Hiroshi", "k": "博" }, { "r": "Takeshi", "k": "武" }, { "r": "Noboru", "k": "昇" }, { "r": "Masao", "k": "正雄" },
+      { "r": "Kazuo", "k": "一雄" }, { "r": "Yoshio", "k": "義夫" }, { "r": "Toshio", "k": "敏夫" }, { "r": "Haruo", "k": "春夫" },
+      { "r": "Gentaro", "k": "源太郎" }, { "r": "Shozo", "k": "省三" }, { "r": "Eikichi", "k": "栄吉" }, { "r": "Tomokazu", "k": "友和" }
+    ],
+    "adulti": [
+      { "r": "Kenji", "k": "健二" }, { "r": "Koji", "k": "浩二" }, { "r": "Akira", "k": "明" }, { "r": "Katsumi", "k": "克己" },
+      { "r": "Masaru", "k": "勝" }, { "r": "Satoshi", "k": "聡" }, { "r": "Takao", "k": "隆夫" }, { "r": "Tetsuo", "k": "哲夫" },
+      { "r": "Yasuhiro", "k": "康弘" }, { "r": "Kazuhiko", "k": "和彦" }, { "r": "Mitsuo", "k": "光夫" }, { "r": "Nobuyuki", "k": "信之" },
+      { "r": "Shinichi", "k": "真一" }, { "r": "Toru", "k": "徹" }, { "r": "Yukio", "k": "幸雄" }, { "r": "Hideki", "k": "秀樹" },
+      { "r": "Masayuki", "k": "正之" }, { "r": "Ryoichi", "k": "良一" }, { "r": "Takayuki", "k": "隆行" }, { "r": "Kuniaki", "k": "邦明" }
+    ],
+    "giovaniAdulti": [
+      { "r": "Daisuke", "k": "大輔" }, { "r": "Tsuyoshi", "k": "剛" }, { "r": "Naoki", "k": "直樹" }, { "r": "Takashi", "k": "隆" },
+      { "r": "Jun", "k": "潤" }, { "r": "Shinji", "k": "慎二" }, { "r": "Kenta", "k": "健太" }, { "r": "Manabu", "k": "学" },
+      { "r": "Hitoshi", "k": "仁" }, { "r": "Kosuke", "k": "浩介" }, { "r": "Tomoya", "k": "智也" }, { "r": "Yasushi", "k": "靖" },
+      { "r": "Masahiro", "k": "雅弘" }, { "r": "Atsushi", "k": "敦" }, { "r": "Norio", "k": "紀夫" }, { "r": "Wataru", "k": "渉" }
+    ],
+    "ragazzi": [
+      { "r": "Yuta", "k": "優太" }, { "r": "Takuya", "k": "拓也" }, { "r": "Sho", "k": "翔" }, { "r": "Daiki", "k": "大樹" },
+      { "r": "Ryo", "k": "涼" }, { "r": "Kazuki", "k": "和樹" }, { "r": "Hayato", "k": "隼人" }, { "r": "Naoto", "k": "直人" }
+    ]
+  },
+
+  "nomiFemminili": {
+    "anziane": [
+      { "r": "Kiyo", "k": "清代" }, { "r": "Haru", "k": "はる" }, { "r": "Fumi", "k": "文" }, { "r": "Toshiko", "k": "敏子" },
+      { "r": "Chiyoko", "k": "千代子" }, { "r": "Masako", "k": "正子" }, { "r": "Shizue", "k": "静江" }, { "r": "Umeko", "k": "梅子" },
+      { "r": "Sadako", "k": "貞子" }, { "r": "Tomiko", "k": "富子" }, { "r": "Yaeko", "k": "八重子" }, { "r": "Kimie", "k": "君江" }
+    ],
+    "adulte": [
+      { "r": "Keiko", "k": "恵子" }, { "r": "Yoko", "k": "陽子" }, { "r": "Junko", "k": "順子" }, { "r": "Michiko", "k": "美智子" },
+      { "r": "Kazuko", "k": "和子" }, { "r": "Sachiko", "k": "幸子" }, { "r": "Noriko", "k": "紀子" }, { "r": "Reiko", "k": "麗子" },
+      { "r": "Yumiko", "k": "由美子" }, { "r": "Mariko", "k": "真理子" }, { "r": "Hiroko", "k": "裕子" }, { "r": "Setsuko", "k": "節子" },
+      { "r": "Akemi", "k": "明美" }, { "r": "Kumiko", "k": "久美子" }, { "r": "Mitsuko", "k": "光子" }, { "r": "Harumi", "k": "晴美" }
+    ],
+    "giovaniAdulte": [
+      { "r": "Yuki", "k": "由紀" }, { "r": "Naomi", "k": "直美" }, { "r": "Tomoko", "k": "智子" }, { "r": "Kyoko", "k": "京子" },
+      { "r": "Miki", "k": "美樹" }, { "r": "Rie", "k": "理恵" }, { "r": "Megumi", "k": "恵" }, { "r": "Chie", "k": "千恵" },
+      { "r": "Asami", "k": "麻美" }, { "r": "Kaori", "k": "香織" }, { "r": "Mayumi", "k": "真由美" }, { "r": "Izumi", "k": "泉" },
+      { "r": "Sayuri", "k": "小百合" }, { "r": "Emiko", "k": "恵美子" }, { "r": "Ayako", "k": "綾子" }, { "r": "Rumiko", "k": "留美子" }
+    ],
+    "ragazze": [
+      { "r": "Ai", "k": "愛" }, { "r": "Mai", "k": "舞" }, { "r": "Saki", "k": "咲" }, { "r": "Yuka", "k": "由佳" },
+      { "r": "Aya", "k": "彩" }, { "r": "Nana", "k": "菜々" }, { "r": "Misaki", "k": "美咲" }, { "r": "Haruka", "k": "遥" }
+    ]
+  },
+
+  "riservatiCastBase": {
+    "$nota": "Nome+cognome VIETATI per i PNG generati (cast base GENKAI). Lista stabile; quella completa per-avventura si esporta dal Registro Nomi.",
+    "pg": ["Yamamoto Kenji", "Honda Ryota", "Nakamura Shota", "Sato Yuki", "Fujita Emi"],
+    "notevoli": ["Taniguchi Osamu", "Ito Daisuke", "Yamada Tetsuo", "Watanabe Hideo", "Gonda Susumu"],
+    "pngDeiKage": ["Yamamoto Noriko", "Tanaka Shuichi", "Goto Masaru", "Oda Takumi", "Nakamura Kazuo", "Nakamura Hideki", "Sato Michiko", "Tanaka Jiro", "Kato Hiroshi", "Iwamoto Koji", "Morita Akiko", "Hasegawa Ayumi", "Sanada Haruo", "Ono Shigeru", "Takeda Jun", "Kurosawa Ren", "Uchida Go", "Kawasaki Junko", "Kuroki Tetsuro", "Maezawa Hiroyuki", "Moriyama Genzo", "Okuda Jiro", "Honda Akira"]
+  },
+
+  "algoritmo": {
+    "generazione": "1) Determina la fascia d'età del personaggio → scegli il pool generazionale giusto. 2) Pesca cognome + nome. 3) Controlla nome+cognome contro: (a) cast del progetto corrente, (b) riservatiCastBase, (c) riservati_completi.json se presente. 4) In caso di collisione piena, ripesca SOLO il nome (il cognome condiviso è realistico — in Giappone i Sato e i Suzuki abbondano).",
+    "famiglie": "I familiari condividono il cognome: genera il cognome UNA volta per nucleo. Una donna sposata del 1997 porta quasi sempre il cognome del marito; il cognome da nubile è un dettaglio investigativo utile (conti, vecchi documenti).",
+    "kanjiVarianti": "Lo stesso suono può avere kanji diversi (Kenji 健二/賢治/健司): per personaggi diversi con lo stesso nome romanizzato in avventure diverse, variare il kanji è legittimo e realistico."
+  }
+}

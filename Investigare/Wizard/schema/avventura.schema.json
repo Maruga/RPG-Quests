@@ -1,0 +1,366 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "genkai-wizard/avventura.schema.json",
+  "title": "Progetto Avventura GENKAI",
+  "description": "Stato completo di un progetto del wizard. Una proprietà per passo del metodo (GENKAI_Manuale_Situazioni). Il backend .NET lo persiste come colonna JSON; passoCorrente e i campi di testata vanno anche in colonne indicizzate.",
+  "type": "object",
+  "required": ["versione", "testata", "setup"],
+  "properties": {
+
+    "versione": { "type": "integer", "description": "Versione dello schema, per migrazioni future", "const": 1 },
+
+    "testata": {
+      "type": "object",
+      "required": ["titolo", "passoCorrente"],
+      "properties": {
+        "titolo": { "type": "string", "maxLength": 120 },
+        "passoCorrente": { "type": "integer", "minimum": 0, "maximum": 12, "description": "0=setup … 11=calendario, 12=validazione/export" },
+        "creatoIl": { "type": "string", "format": "date-time" },
+        "aggiornatoIl": { "type": "string", "format": "date-time" },
+        "demo": { "type": "boolean", "default": false, "description": "true per il progetto d'esempio Kuroda (sola lettura)" }
+      }
+    },
+
+    "setup": {
+      "title": "Passo 0 — Cornice (da decidere PRIMA di costruire, come da manuale)",
+      "type": "object",
+      "required": ["durata", "complessita"],
+      "properties": {
+        "ambientazione": { "type": "string", "default": "kyoto-1997", "description": "v1: solo kyoto-1997" },
+        "quartiere": { "type": "string", "description": "Quartiere/distretto del caso (es. Sakyō-ku); dalla biblioteca luoghi" },
+        "durata": { "type": "integer", "minimum": 1, "maximum": 3, "description": "1=corta 2=media 3=lunga — quante informazioni ci sono da trovare" },
+        "complessita": { "type": "integer", "minimum": 1, "maximum": 3, "description": "1=semplice 2=media 3=difficile — quante strade portano alle informazioni chiave (asse INDIPENDENTE dalla durata)" },
+        "agganciKage": { "type": "boolean", "default": false, "description": "Se true, il wizard propone agganci ai Kage dei PG al passo 8" },
+        "note": { "type": "string" }
+      }
+    },
+
+    "passo1": {
+      "title": "Come è morto — UNA riga sola, vincolo generativo di tutto",
+      "type": "object",
+      "required": ["tipologiaId", "rigaUnica"],
+      "properties": {
+        "tipologiaId": { "type": "string", "description": "id dalla biblioteca tipologie_omicidio" },
+        "sottotipoId": { "type": "string" },
+        "rigaUnica": { "type": "string", "maxLength": 140, "description": "\"È morto avvelenato.\" — l'interfaccia NON accetta di più" }
+      }
+    },
+
+    "passo2": {
+      "title": "Chi è morto — identità professionale e sociale (non psicologia)",
+      "type": "object",
+      "required": ["professioneId"],
+      "properties": {
+        "professioneId": { "type": "string", "description": "id dalla biblioteca professioni" },
+        "postoNelMondo": { "type": "string", "description": "Una frase: che posto occupava (es. 'professore di chimica, Università di Kyoto, 25 anni di carriera')" },
+        "eta": { "type": "integer", "minimum": 16, "maximum": 99 },
+        "genere": { "type": "string", "enum": ["m", "f"] },
+        "personaId": { "type": "string", "description": "ref → cast[] (la vittima È un membro del cast, con nome dal generatore)" }
+      }
+    },
+
+    "passo3": {
+      "title": "La vita della vittima — cerchi concentrici: nomina e posiziona",
+      "type": "object",
+      "properties": {
+        "famiglia":  { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "lavoro":    { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "amici":     { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "altri":     { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" }, "description": "fuori dai tre cerchi: rivali, capi banda, creditori, vicini — e coinvolti SENZA legame con la vittima (testimoni, complici); la relazione dice chi sono nel caso" },
+        "luoghi":    { "type": "array", "items": { "type": "string", "description": "ref → luoghi[].id" } },
+        "problemi":  { "type": "array", "items": { "$ref": "#/definitions/problema" } }
+      }
+    },
+
+    "passo4": {
+      "title": "Perché è morta — il movente PRIMA del colpevole; uno forte, non tre deboli",
+      "type": "object",
+      "required": ["moventeId", "descrizione"],
+      "properties": {
+        "moventeId": { "type": "string", "description": "id dalla biblioteca moventi" },
+        "descrizione": { "type": "string", "description": "Il movente calato in QUESTA situazione (es. 'stava per denunciare Kuroda per i fondi')" },
+        "esclusioni": { "type": "array", "items": { "type": "object", "properties": { "personaId": { "type": "string" }, "perche": { "type": "string" } } }, "description": "Chi del cast NON aveva questa ragione, e perché — il movente come filtro" }
+      }
+    },
+
+    "passo5": {
+      "title": "Chi ha ucciso — SI SELEZIONA dal cast, non si inventa",
+      "type": "object",
+      "required": ["colpevoliIds", "erroreCoerente"],
+      "properties": {
+        "colpevoliIds": { "type": "array", "items": { "type": "string" }, "minItems": 1, "description": "ref → cast[] (può essere più di uno: complicità)" },
+        "aggiuntoApposta": { "type": "boolean", "default": false, "description": "true se il colpevole è stato aggiunto al cast in questo passo → il wizard avvisa: deve entrare in modo coerente nella vita della vittima" },
+        "competenze": { "type": "string", "description": "Cosa sa fare DAVVERO il colpevole, dato chi è (vincola il metodo e gli errori)" },
+        "erroreCoerente": { "type": "string", "description": "OBBLIGATORIO — l'errore che una persona come lui, sotto pressione, commette (es. cancella le email locali ma non sa del server)" }
+      }
+    },
+
+    "passo6": {
+      "title": "Il mondo del colpevole — la seconda rete",
+      "type": "object",
+      "properties": {
+        "famiglia":  { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "lavoro":    { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "amici":     { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" } },
+        "altri":     { "type": "array", "items": { "$ref": "#/definitions/rigaCerchio" }, "description": "fuori dai tre cerchi del colpevole: il giro, il creditore, il vecchio socio…" },
+        "luoghi":    { "type": "array", "items": { "type": "string" } },
+        "connessioneVittima": { "type": "string", "description": "Cosa lo connette alla vittima" },
+        "dopoIlFatto": { "type": "string", "description": "Com'è cambiato il suo comportamento; cosa ha cercato di nascondere e come" },
+        "intersezione": { "type": "array", "items": { "type": "string" }, "description": "CALCOLATA dall'app: personaId presenti in entrambe le reti — 'sanno qualcosa senza sapere di saperlo'" }
+      }
+    },
+
+    "passo7": {
+      "title": "La cronistoria — LA VERITÀ ASSOLUTA. Fonte unica per handout e calendario",
+      "type": "object",
+      "properties": {
+        "eventi": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["quando", "fase", "testo"],
+            "properties": {
+              "id": { "type": "string" },
+              "quandoFine": { "type": "string", "description": "OPZIONALE - fine dell'evento (stesso formato di quando): incontro di 3 ore, soggiorno di 3 giorni; la UI mostra la durata calcolata" },
+              "quando": { "type": "string", "description": "Assoluto o relativo: '1997-06-03 06:30' oppure 'tre settimane prima'" },
+              "fase": { "type": "string", "enum": ["prima", "fatto", "dopo"] },
+              "testo": { "type": "string", "description": "Asciutto: documentazione interna, non narrativa" },
+              "personeIds": { "type": "array", "items": { "type": "string" } },
+              "luogoId": { "type": "string" },
+              "generaTraccia": { "type": "array", "items": { "type": "string" }, "description": "DEPRECATO (le informazioni vivono al passo 12 con le loro fonti); conservato per i salvataggi vecchi" }
+            }
+          }
+        }
+      }
+    },
+
+    "passo8": {
+      "title": "Le schede personaggio — solo per i membri del cast marcati rilevanti",
+      "type": "object",
+      "properties": {
+        "schede": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["personaId", "cosaSa", "cosaNonSa", "comportamento"],
+            "properties": {
+              "personaId": { "type": "string" },
+              "datiBase": { "type": "string", "description": "DEPRECATO (campo rimosso dalla UI): migrato negli appunti 📝 della persona. Il chi-è lo raccoglie il recap automatico" },
+              "descrizioneFisica": { "type": "string", "description": "Solo aspetto osservabile — da qui nascono il ritratto (prompt foto) e l'AI ✨ la propone leggendo il caso; componibile coi tratti guidati (occhi/capelli/pelle…)" },
+              "foto": { "type": "string", "description": "URL del RITRATTO del personaggio (campo dedicato, separato dagli allegati): caricato o generato dall'AI, salvato in wwwroot/allegati/{progettoId}/ritratto-{personaId}.png. Si stampa nel foglio delle facce e appare nelle pillole/recap" },
+              "cosaHaFatto": { "type": "string", "description": "La VERITÀ per il GM: cosa ha fatto e cosa no — la deposizione può dire altro (omissioni e bugie del personaggio)" },
+              "allegati": { "type": "array", "description": "File della scheda (foto del personaggio, documenti) — su disco in wwwroot/allegati/{progettoId}/", "items": { "type": "object", "properties": { "nome": { "type": "string" }, "url": { "type": "string" } } } },
+              "cosaSa": { "type": "string", "description": "Anche ciò che ha visto/sentito senza collegarlo a nulla" },
+              "cosaNonSa": { "type": "string", "description": "Incluso ciò che sa ma non sa di sapere" },
+              "comportamento": { "type": "string", "description": "Atteggiamento iniziale; cosa nasconde e PERCHÉ SUO (non per ostacolare i PG)" },
+              "trigger": { "type": "array", "items": { "type": "object", "properties": { "se": { "type": "string" }, "allora": { "type": "string" } } }, "description": "Risposte naturali, non eventi programmati" },
+              "aggancioKagePg": { "type": "string", "description": "Opzionale: quale Kage di quale PG questo PNG può toccare (se setup.agganciKage)" },
+              "tratti": { "type": "object", "description": "Chi è (scheda 🎭 Tratti, tutti opzionali): un vizio, un tic/gesto FISICO, un oggetto sempre con sé. Il 'come parla' sta in 'voce', separato. Ogni campo ha un ✨ che lo propone con l'AI (endpoint /scheda-campo)", "properties": { "vizio": { "type": "string", "description": "fumo, gioco, alcol, spese…" }, "tic": { "type": "string", "description": "gesto fisico/nervoso, NON verbale (i tic verbali stanno in voce.marcatore)" }, "oggetto": { "type": "string" } } },
+              "voce": { "type": "object", "description": "La voce del PNG (scheda 🎙 Voce): 5 leve, come parla. OGNI leva ha un ✨ che la propone in carattere con l'AI (endpoint /scheda-campo, prompt campo_scheda.md)", "properties": { "intercalare": { "type": "string", "description": "1-2 parole fisse che infila sempre" }, "marcatore": { "type": "string", "description": "tic sintattico/verbale ricorrente" }, "appellativo": { "type": "string", "description": "come chiama i PG (messere/dottò/voi)" }, "abitudine": { "type": "string", "description": "proverbi? domande retoriche? terza persona?" }, "saluto": { "type": "string" }, "rifiuto": { "type": "string" }, "minaccia": { "type": "string", "description": "frase pronta: minaccia/chiusura" } } },
+              "contatti": { "type": "object", "description": "Reperibilità del PNG (sotto le statistiche). La RESIDENZA è un LUOGO del passo 9 referenziato per id (residenzaLuogoId): si modifica solo nel passo 9, la modifica si propaga a tutte le schede collegate. Il resto (telefono/email…) ✨ l'AI riempie SOLO i vuoti (endpoint /contatti)", "properties": { "residenzaLuogoId": { "type": "string", "description": "ref → luoghi[].id: la casa del PNG (più PNG possono condividerla). Si sceglie/crea dalla scheda, si edita nel passo 9" }, "residenza": { "type": "string", "description": "DEPRECATO (stringa libera): migrato a un luogo referenziato (residenzaLuogoId) all'apertura della scheda" }, "telefono": { "type": "string" }, "cellulare": { "type": "string", "description": "keitai / PHS (fine anni '90)" }, "email": { "type": "string" }, "altro": { "type": "string", "description": "cercapersone, fax, tramite terzi" }, "dove": { "type": "string", "description": "altri luoghi abituali dove trovarlo" } } },
+              "attributi": { "type": "object", "description": "Solo se servono in gioco: metodo diretto (34 = ordinario). Senmon libere. NIENTE Gou di norma.", "properties": { "totale": { "type": "integer" }, "note": { "type": "string" }, "senmon": { "type": "array", "items": { "type": "string" } } } },
+              "deposizione": { "type": "string", "description": "Testo consegnabile (verbale, lettera) — scritto qui una volta sola" },
+              "depHandout": { "type": "boolean", "description": "true = la deposizione è un handout: compare raccolta al passo 13" },
+              "depTitolo": { "type": "string" },
+              "stats": { "type": "object", "description": "PNG notevole con scheda: attributi 4-9 (da un esempio-archetipo) e Ki col tiro del manuale (attributo più basso + 2d6 prendi il migliore, tetto 12). Le comparse senza scheda in combattimento usano la Riserva 3/6/9.", "properties": { "Distacco": { "type": "integer" }, "Pazienza": { "type": "integer" }, "Silenzio": { "type": "integer" }, "Lucidità": { "type": "integer" }, "Ascolto": { "type": "integer" }, "Presenza": { "type": "integer" }, "Ki": { "type": "integer" }, "esempio": { "type": "string", "description": "Archetipo di partenza (studente, poliziotto, sicario…)" } } },
+              "statsEnte": { "type": "object", "description": "Scheda ente (Manuale Situazioni): 2d6 somma min 4 max 9; Corruzione MAI tirata; spec a 8 (una) / 9 (due)", "properties": { "Organico": { "type": "integer" }, "Efficienza": { "type": "integer" }, "Velocità": { "type": "integer" }, "Risorse": { "type": "integer" }, "Rete": { "type": "integer" }, "Corruzione": { "type": "integer" }, "specializzazioni": { "type": "string" } } }
+            }
+          }
+        }
+      }
+    },
+
+    "passo9": {
+      "title": "Le informazioni (chi sa cosa) — ogni cosa scoperta si scrive UNA volta; sotto, le sue FONTI",
+      "type": "object",
+      "properties": {
+        "tracce": {
+          "type": "array",
+          "description": "Chiave storica 'tracce', contenuto: informazioni multi-fonte",
+          "items": {
+            "type": "object",
+            "required": ["id", "nome", "classificazione", "fonti"],
+            "properties": {
+              "id": { "type": "string" },
+              "nome": { "type": "string", "description": "es. 'La moto della banda — che modello è e di chi è'" },
+              "testo": { "type": "string", "description": "Cosa si scopre — scritto una volta sola qui" },
+              "classificazione": { "type": "string", "enum": ["essenziale", "approfondimento", "conferma", "vantaggioOperativo"], "description": "I 4 tipi del Manuale GM. LINT: ogni essenziale deve avere ≥ 2 fonti" },
+              "fonti": {
+                "type": "array", "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "attoreId": { "type": "string", "description": "ref → cast[].id o gruppi[].id (la fonte è una persona o un ente)" },
+                    "canale": { "type": "string", "description": "In alternativa ad attoreId: canale di ricerca libero (Internet, archivio di giornale, un PG esperto…)" },
+                    "richiede": { "type": "string", "enum": ["nulla", "interrogatorio", "mandatoGiudice", "richiestaEnte", "accessoTecnico", "sospettoPreesistente"], "description": "mandatoGiudice = quadro legale '97" },
+                    "versione": { "type": "string", "description": "Cosa dice/dà QUESTA fonte, se diverso dal testo base (fonti diverse dicono cose diverse)" },
+                    "handout": { "type": "boolean", "description": "true = questa versione è un handout: compare raccolto al passo 13" },
+                    "handoutTitolo": { "type": "string" }
+                  }
+                }
+              },
+              "allegati": { "type": "array", "description": "File caricati (doc, immagini…) — su disco in wwwroot/allegati/{progettoId}/", "items": { "type": "object", "properties": { "nome": { "type": "string" }, "url": { "type": "string" } } } }
+            }
+          }
+        }
+      }
+    },
+
+    "passo10": {
+      "title": "Gli handout — materializzazione delle tracce. I dati si GENERANO dalla cronistoria",
+      "type": "object",
+      "properties": {
+        "handout": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "titolo"],
+            "properties": {
+              "id": { "type": "string" },
+              "titolo": { "type": "string" },
+              "tipo": { "type": "string", "description": "Tipo di documento, personalizzabile (tabulato telefonico, referto, menu, lettera…). Guida il formato dell'AI" },
+              "descrizione": { "type": "string", "description": "Come lo vuole il GM: è la guida principale per l'AI (es. '4 chiamate a un recupero crediti, il resto normale')" },
+              "collegatoA": { "type": "string", "description": "Opzionale: 'p:<castId>' | 'g:<gruppoId>' | 'l:<luogoId>' — di chi/cosa parla il documento; l'AI ne usa i dati veri" },
+              "allegati": { "type": "array", "description": "File caricati (doc, immagini…) — su disco in wwwroot/allegati/{progettoId}/", "items": { "type": "object", "properties": { "nome": { "type": "string" }, "url": { "type": "string" } } } },
+              "generatore": { "type": "string", "description": "DEPRECATO: sostituito da 'tipo' (libero) + generazione AI dalla descrizione" },
+              "contenuto": { "type": "string", "description": "Contenuto del documento: scritto dal GM o generato con ✨ Crea handout" }
+            }
+          }
+        }
+      }
+    },
+
+    "passo11": {
+      "title": "Il calendario vivo — cosa succede se i PG non intervengono",
+      "type": "object",
+      "properties": {
+        "giorni": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["giorno", "evento"],
+            "properties": {
+              "giorno": { "type": "integer", "minimum": 0 },
+              "momento": { "type": "string", "description": "mattina/sera/ore 18…" },
+              "evento": { "type": "string" },
+              "condizione": { "type": "string", "description": "es. 'se i PG non hanno ancora interrogato Tanaka'" },
+              "personeIds": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+
+    "cast": {
+      "title": "Derivato dai passi 2/3/5/6 — ogni persona nominata entra qui",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "cognome"],
+        "properties": {
+          "id": { "type": "string" },
+          "cognome": { "type": "string" },
+          "nome": { "type": "string" },
+          "kanji": { "type": "string" },
+          "eta": { "type": "integer" },
+          "genere": { "type": "string", "enum": ["m", "f"] },
+          "ruoloNelCaso": { "type": "string", "enum": ["vittima", "colpevole", "complice", "testimone", "falsaPista", "contorno"] },
+          "cerchio": { "type": "string", "description": "famiglia/lavoro/amici/altri — di quale rete: vittima, colpevole o entrambe" },
+          "professione": { "type": "string" },
+          "note": { "type": "string", "description": "appunti liberi del GM (popup 📝 sulle righe-persona); il dettaglio strutturato va nella scheda al passo 8" },
+          "postoNelMondo": { "type": "string", "description": "per il colpevole (anagrafica al passo 5): che posto occupa nel mondo — l'equivalente di passo2.postoNelMondo della vittima" },
+          "rilevante": { "type": "boolean", "description": "true → richiede scheda al passo 8" },
+          "nomeValidato": { "type": "boolean", "description": "true = passato il controllo anti-omonimie (progetto + riservati cast base)" }
+        }
+      }
+    },
+
+    "luoghi": {
+      "title": "Derivato dai passi 3/6/7 — ogni luogo nominato entra qui",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "tipologiaId"],
+        "properties": {
+          "id": { "type": "string" },
+          "nome": { "type": "string", "description": "es. 'Laboratorio del dipartimento di chimica'" },
+          "via": { "type": "string", "description": "Indirizzo/via del luogo (es. 'Kamigyō-ku 3-jō, casa Shimada')" },
+          "tipologiaId": { "type": "string", "description": "id dalla biblioteca luoghi" },
+          "quartiere": { "type": "string" },
+          "personaId": { "type": "string", "description": "OPZIONALE — di chi è questo luogo (ref cast[].id); vuoto = luogo del caso in generale" },
+          "icona": { "type": "string", "description": "OPZIONALE — emoji per la mappa; vuota = automatica dalla tipologia" },
+          "segretoPG": { "type": "boolean", "description": "true = nascosto nella vista giocatori della mappa" },
+          "cosaSiVede": { "type": "string" },
+          "cosaSiTrova": { "type": "string", "description": "Tracce presenti qui (ref discorsivo alle tracce)" },
+          "chiCe": { "type": "string" }
+        }
+      }
+    },
+
+    "gruppi": {
+      "title": "Passo 9 (schermata) — Gruppi e istituzioni: attori collettivi (la banda, la classe, il DISTRETTO DI POLIZIA che conosce/scheda le persone)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome"],
+        "properties": {
+          "id":          { "type": "string" },
+          "nome":        { "type": "string", "description": "es. 'I Kurokaze', 'Distretto 5 — Shimogyō', 'Classe 3-B del liceo Rakuhoku'" },
+          "tipo":        { "type": "string", "description": "banda giovanile (bōsōzoku) | clan yakuza (kumi) | distretto di polizia | distretto dei PG (la squadra) | classe/scuola | azienda/ufficio | circolo o associazione | il giro di un locale | famiglia allargata | libero" },
+          "zona":        { "type": "string", "description": "OPZIONALE — territorio del gruppo (quartiere della biblioteca per nome, o libero); mostrato sulla mappa" },
+          "icona":       { "type": "string", "description": "OPZIONALE — emoji per la mappa; vuota = automatica dal tipo (🚓 distretto dei PG, 👮 distretto, 🏍️ banda…)" },
+          "segretoPG":   { "type": "boolean", "description": "true = nascosto nella vista giocatori della mappa" },
+          "descrizione": { "type": "string" },
+          "membriIds":   { "type": "array", "items": { "type": "string" }, "description": "ref cast[].id — la stessa persona può stare in più gruppi" }
+        }
+      }
+    },
+
+    "relazioni": {
+      "title": "Passo 9 (schermata) — Relazioni ed En; aId/bId possono essere PERSONE (cast[].id) o GRUPPI (gruppi[].id): la banda schedata dal distretto, la classe, ecc.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["aId", "bId"],
+        "properties": {
+          "aId":  { "type": "string", "description": "ref cast[].id — prima persona" },
+          "bId":  { "type": "string", "description": "ref cast[].id — seconda persona" },
+          "tipo": { "type": "string", "description": "relazione in chiaro: moglie, fidanzati, rivali, compagni di scuola, assassino e vittima…" },
+          "enAB": { "type": ["integer", "string"], "description": "En di A verso B, scala del manuale −5..+5 (+5 amore incondizionato … 0 neutro … −5 vendetta/rovina; ±4/±5 = relazioni profonde). Positivo si sottrae dal dado, negativo si aggiunge. Può differire da enBA" },
+          "enBA": { "type": ["integer", "string"], "description": "En di B verso A (−5..+5, stessa scala)" }
+        }
+      }
+    },
+
+    "validazione": {
+      "title": "Esito del lint finale (calcolato, non editabile)",
+      "type": "object",
+      "properties": {
+        "eseguitoIl": { "type": "string", "format": "date-time" },
+        "esiti": { "type": "array", "items": { "type": "object", "properties": { "regola": { "type": "string" }, "livello": { "type": "string", "enum": ["ok", "avviso", "errore"] }, "messaggio": { "type": "string" } } } }
+      }
+    }
+  },
+
+  "definitions": {
+    "rigaCerchio": {
+      "type": "object",
+      "required": ["personaId", "relazione"],
+      "properties": {
+        "personaId": { "type": "string", "description": "ref → cast[].id" },
+        "relazione": { "type": "string", "description": "es. 'moglie — rapporto stabile ma freddo da anni'" },
+        "posizionata": { "type": "boolean", "description": "nomina e posiziona: il dettaglio arriva solo se diventa rilevante" }
+      }
+    },
+    "problema": {
+      "type": "object",
+      "required": ["testo"],
+      "properties": {
+        "problemaId": { "type": "string", "description": "id dalla biblioteca problemi_segreti (opzionale)" },
+        "testo": { "type": "string", "description": "es. 'disputa con Hashimoto sulla paternità di una ricerca'" },
+        "personeIds": { "type": "array", "items": { "type": "string" } },
+        "potenzialeFalsaPista": { "type": "boolean", "description": "Le false piste EMERGONO dai problemi reali, non si piazzano" }
+      }
+    }
+  }
+}

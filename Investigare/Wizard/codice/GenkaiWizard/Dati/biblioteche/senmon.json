@@ -1,0 +1,55 @@
+{
+  "$commento": "Catalogo Senmon (GENKAI_Specializzazioni.md §L'Elenco). In creazione: Lotta 1 a TUTTI (d'accademia) + 1 Senmon di grado 1 a scelta (diversa da Lotta). Gradi: 1 Praticante +1 (costo 9) · 2 Esperto +2 (19; attr chiave ≥6 + 10 usi) · 3 Maestro (39; paletti + 25 usi). maestro = '+3' (Conoscenze) o '+2C' (+2 con Correzione — Tecniche e Combattimento, più le eccezioni segnate).",
+
+  "gradi": [
+    { "grado": 1, "titolo": "Praticante", "bonus": 1, "costo": 9, "requisiti": "giustificazione narrativa; max 1 nuova Senmon per intervallo tra i casi" },
+    { "grado": 2, "titolo": "Esperto", "bonus": 2, "costo": 19, "requisiti": "attributo chiave di scheda ≥ 6 + almeno 10 usi da Praticante" },
+    { "grado": 3, "titolo": "Maestro", "bonus": 3, "costo": 39, "requisiti": "paletti della voce + almeno 25 usi da Esperto; Maestro delle Tecniche = +2 con Correzione" }
+  ],
+
+  "famiglie": [
+    { "id": "tecniche", "nome": "Tecniche investigative", "maestro": "+2C", "nota": "azioni sul campo — il Maestro corregge (ritira 1 volta/scena un proprio tiro pertinente)" },
+    { "id": "campo", "nome": "Conoscenze di campo", "maestro": "+3", "nota": "\"esperto di…\" — sapere puro" },
+    { "id": "professionali", "nome": "Conoscenze professionali", "maestro": "+3", "nota": "saperi tecnici (eccezioni: Computer e reti, Meccanica → +2 con Correzione)" },
+    { "id": "territorio", "nome": "Territorio e ambienti", "maestro": "+3", "nota": "sapere sociale" },
+    { "id": "combattimento", "nome": "Combattimento", "maestro": "+2C", "nota": "regole in GENKAI_Combattimento.md; il grado si sottrae dal dado dei tiri pertinenti" }
+  ],
+
+  "senmon": [
+    { "id": "interrogatorio", "nome": "Interrogatorio", "famiglia": "tecniche", "chiave": ["Pazienza", "Ascolto"], "copre": "Le tecniche di setup, la conduzione, il ritmo delle domande", "palettiG3": "Pazienza 9 o Ascolto 9" },
+    { "id": "pedinamento", "nome": "Pedinamento", "famiglia": "tecniche", "chiave": ["Lucidità"], "copre": "Seguire, appostarsi, non farsi bruciare, contro-pedinamento", "palettiG3": "Lucidità 8 + Conoscere il quartiere 2+" },
+    { "id": "ricercaArchivio", "nome": "Ricerca d'archivio", "famiglia": "tecniche", "chiave": ["Pazienza"], "copre": "Registri, protocolli, incroci documentali, sapere dove cercare", "palettiG3": "Pazienza 8 + una Conoscenza professionale 2+" },
+    { "id": "perquisizione", "nome": "Perquisizione metodica", "famiglia": "tecniche", "chiave": ["Lucidità"], "copre": "Setacciare un luogo senza distruggere né tralasciare", "palettiG3": "Lucidità 8 + Pazienza 7" },
+    { "id": "rilievi", "nome": "Rilievi e fotografia", "famiglia": "tecniche", "chiave": ["Lucidità"], "copre": "Documentare una scena, impronte, luci, catena di custodia", "palettiG3": "Lucidità 8 + Distacco 7" },
+    { "id": "copertura", "nome": "Copertura e travestimento", "famiglia": "tecniche", "chiave": ["Silenzio"], "copre": "Passare per qualcun altro, reggere una storia di copertura", "palettiG3": "Silenzio 8 + Quartiere 2+ o Mondo della notte 2+" },
+
+    { "id": "armiDaFuoco", "nome": "Armi da fuoco", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Modelli, calibri, fattura, modifiche, mercato nero (riconoscerle — sparare è un'altra Senmon)", "palettiG3": "Lucidità 8" },
+    { "id": "orologi", "nome": "Orologi", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Marche, movimenti, falsi, valore, provenienza", "palettiG3": "Lucidità 8 + Pazienza 7" },
+    { "id": "gioielli", "nome": "Gioielli e pietre", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Gemme, montature, falsi, ricettazione", "palettiG3": "Lucidità 8 + Orologi 2+ o Arte 2+" },
+    { "id": "viniSake", "nome": "Vini e sake", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Etichette, annate, contraffazioni, il mondo che ci gira attorno", "palettiG3": "Pazienza 8" },
+    { "id": "medicinaliVeleni", "nome": "Medicinali e veleni", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Farmaci, dosaggi, interazioni, sostanze da banco e no", "palettiG3": "Lucidità 8 + Medicina 2+ o Erbe 2+" },
+    { "id": "erbe", "nome": "Erbe e botanica", "famiglia": "campo", "chiave": ["Pazienza"], "copre": "Piante, preparati, tossicità naturali, tradizione erboristica", "palettiG3": "Pazienza 8" },
+    { "id": "arte", "nome": "Arte e antiquariato", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Autori, epoche, falsi, mercato legale e non", "palettiG3": "Lucidità 8 + Pazienza 7" },
+    { "id": "autoMoto", "nome": "Automobili e moto", "famiglia": "campo", "chiave": ["Lucidità"], "copre": "Modelli, targhe, modifiche, officine, incidenti", "palettiG3": "Lucidità 8" },
+
+    { "id": "computer", "nome": "Computer e reti (anni '90)", "famiglia": "professionali", "chiave": ["Lucidità"], "copre": "Sistemi, archivi digitali, recupero dati", "palettiG3": "Lucidità 8", "maestroEccezione": "+2C" },
+    { "id": "economia", "nome": "Economia e finanza", "famiglia": "professionali", "chiave": ["Lucidità"], "copre": "Società, flussi di denaro, banche, la bolla e le sue macerie", "palettiG3": "Lucidità 8 + Libri contabili 2+" },
+    { "id": "libriContabili", "nome": "Libri contabili", "famiglia": "professionali", "chiave": ["Pazienza"], "copre": "Bilanci, partita doppia, dove si nascondono i soldi", "palettiG3": "Pazienza 8 + Economia 2+" },
+    { "id": "leggi", "nome": "Leggi (categoria a scelta)", "famiglia": "professionali", "chiave": ["Lucidità"], "copre": "La normativa di quel campo, cosa è reato e cosa è zona grigia (penale, societario, edilizia…)", "palettiG3": "Lucidità 8 + Ricerca d'archivio 2+" },
+    { "id": "medicina", "nome": "Medicina", "famiglia": "professionali", "chiave": ["Lucidità"], "copre": "Anatomia, traumi, patologie, referti", "palettiG3": "Lucidità 8 + Medicinali e veleni 2+" },
+    { "id": "sportScommesse", "nome": "Sport e scommesse", "famiglia": "professionali", "chiave": ["Ascolto"], "copre": "Discipline, giri di scommesse, allibratori, risultati pilotati", "palettiG3": "Ascolto 8" },
+    { "id": "meccanica", "nome": "Meccanica", "famiglia": "professionali", "chiave": ["Lucidità"], "copre": "Motori di auto e moto: riparare, truccare, riconoscere sabotaggi", "palettiG3": "Lucidità 8 + Automobili e moto 2+", "maestroEccezione": "+2C" },
+
+    { "id": "quartiere", "nome": "Conoscere il quartiere (a scelta, ripetibile)", "famiglia": "territorio", "chiave": ["Ascolto"], "copre": "Strade, facce, abitudini, chi vede tutto e chi non parla", "palettiG3": "Ascolto 8 + averci vissuto o lavorato (narrativo)" },
+    { "id": "yakuza", "nome": "Ambienti yakuza", "famiglia": "territorio", "chiave": ["Silenzio"], "copre": "Gerarchie, territori, codici, come parlarci senza morire", "palettiG3": "Silenzio 8 + un contatto vivo nell'ambiente (Enja o En 2+)" },
+    { "id": "mondoNotte", "nome": "Mondo della notte", "famiglia": "territorio", "chiave": ["Presenza"], "copre": "Bar, hostess club, mizu shōbai, chi ci lavora e chi ci si nasconde", "palettiG3": "Presenza 8 + Quartiere 2+" },
+    { "id": "stampa", "nome": "Stampa e media", "famiglia": "territorio", "chiave": ["Presenza"], "copre": "Redazioni, tempi dei giornali, come nasce (o muore) una notizia", "palettiG3": "Presenza 8 + un contatto in redazione (En 2+)" },
+
+    { "id": "lotta", "nome": "Lotta", "famiglia": "combattimento", "chiave": ["Presenza"], "copre": "Pugni, prese, tecniche d'arresto (taihō-jutsu)", "palettiG3": "Presenza 8", "diBase": true },
+    { "id": "lameBastoni", "nome": "Lame e bastoni", "famiglia": "combattimento", "chiave": ["Pazienza", "Silenzio"], "copre": "Coltello o bastone — l'arma si dichiara alla scelta", "palettiG3": "Attributo chiave 8" },
+    { "id": "pistola", "nome": "Pistola", "famiglia": "combattimento", "chiave": ["Lucidità"], "copre": "Tiro rapido, estrazione, sparare in movimento", "palettiG3": "Lucidità 8" },
+    { "id": "fucile", "nome": "Fucile", "famiglia": "combattimento", "chiave": ["Distacco"], "copre": "Pompa, caccia, assalto; raffiche e fuoco di copertura", "palettiG3": "Distacco 8" },
+    { "id": "tiroPrecisione", "nome": "Tiro di precisione", "famiglia": "combattimento", "chiave": ["Pazienza"], "copre": "Fucili di precisione — il grado 1 è il requisito per usarli", "palettiG3": "Pazienza 9 + Fucile 2+" },
+    { "id": "esplosivi", "nome": "Esplosivi", "famiglia": "combattimento", "chiave": ["Pazienza"], "copre": "Usare, riconoscere e disinnescare ordigni", "palettiG3": "Pazienza 8 + Meccanica 2+" }
+  ]
+}

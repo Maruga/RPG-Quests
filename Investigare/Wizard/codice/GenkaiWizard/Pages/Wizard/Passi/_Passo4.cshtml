@@ -1,0 +1,72 @@
+<p class="wz-aiuto">Hai scelto l'assassino al passo 5: ora dai un nome alla <strong>sua ragione concreta</strong>. Poi passala su tutto il cast: <strong>chi altro</strong> aveva la stessa ragione diventa una falsa pista naturale. Regola del manuale: <em>un movente forte vale più di tre deboli</em>.</p>
+
+<div class="wz-campo">
+    <label>Movente</label>
+    <select data-campo="passo4.moventeId" data-opzioni="lib:moventi:moventi:id:nome"></select>
+    <div class="wz-info" data-info="moventi:moventi:passo4.moventeId"
+         data-info-campi="chiTipicamente,notaMetodo" data-info-elenco="domandeGuida"></div>
+</div>
+
+<div class="wz-campo">
+    <label>Il movente in QUESTA situazione <span class="wz-obbl">*</span></label>
+    <textarea data-campo="passo4.descrizione" rows="3"
+              placeholder="Cosa esattamente stava per succedere (es. stava per denunciare X per i fondi di ricerca)"></textarea>
+    <details class="wz-help">
+        <summary>❓ Cosa scrivo qui — esempi</summary>
+        <div>
+            <p>Non il movente generico ("soldi") ma <strong>cosa stava per succedere concretamente</strong> in questa storia. La frase giusta contiene quasi sempre uno "stava per…".</p>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo4.descrizione']">Stava per denunciare il suo assistente per i fondi di ricerca truccati: aveva iniziato a raccogliere i documenti.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo4.descrizione']">Stava per vendere il negozio di famiglia ai costruttori, tagliando fuori il fratello che ci lavora da vent'anni.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo4.descrizione']">Aveva visto chi ha manomesso l'impalcatura del cantiere — e l'ha detto alla persona sbagliata.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo4.descrizione']">Ricattava da anni un uomo rispettabile: aveva appena alzato il prezzo.</button>
+        </div>
+    </details>
+</div>
+
+<h3 class="wz-h3">Il filtro sul cast</h3>
+<p class="wz-aiuto">Adesso prendi il movente che hai appena scritto e <strong>passalo su ogni persona del cast</strong>, una per una: <em>questa persona aveva questa ragione per uccidere?</em><br>
+— <strong>Sì</strong> = aveva anche lui/lei questa ragione: sospettabile credibile (l'assassino è già segnato Sì)<br>
+— <strong>No</strong> = escluso, e se scrivi un buon perché hai già una falsa pista naturale (i giocatori lo sospetteranno comunque)<br>
+— <strong>Non so</strong> = lo lasci in sospeso, va bene così</p>
+<div id="wz-filtro-movente" class="wz-info" hidden></div>
+<div id="wz-filtro-cast"></div>
+<div id="wz-filtro-nuovo"></div>
+<p class="wz-nota" id="wz-filtro-conto"></p>
+
+<h3 class="wz-h3">Come ha agito l'assassino</h3>
+<p class="wz-nota">Due domande che preparano l'indagine: <strong>cosa sapeva fare</strong> (il crimine è alla sua portata?) e <strong>che sbaglio ha lasciato dietro di sé</strong> — perché nessun crimine vero è perfetto, e quello sbaglio è ciò che i detective troveranno.</p>
+
+<div class="wz-campo">
+    <label>Cosa sa fare davvero — e cosa NO <span class="wz-obbl">*</span></label>
+    <textarea data-campo="passo5.competenze" rows="2"
+              placeholder="Le capacità vere del suo mestiere/vita, e i suoi limiti (es. sa guidare la moto a fari spenti, NON sa nulla di polizia)"></textarea>
+    <details class="wz-help">
+        <summary>❓ Cosa scrivo qui — esempi</summary>
+        <div>
+            <p>Le capacità <strong>reali</strong> dell'assassino (dal suo mestiere, dalla sua vita) e soprattutto <strong>i suoi limiti</strong>: servono a rendere credibile il crimine, e i limiti generano lo sbaglio qui sotto.</p>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.competenze']">Capo banda: sa intimidire, colpire e far tacere i suoi. NON sa niente di indagini: pensa che senza testimoni sia finita lì.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.competenze']">Chimico organico: sa maneggiare composti e dosaggi. NON sa niente di medicina forense né di come lavora la polizia.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.competenze']">Elettricista da trent'anni: sa far sembrare un guasto qualunque manomissione. NON sa che il registro degli interventi si può richiedere.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.competenze']">Casalinga che gestisce i conti di famiglia: sa dove sono tutti i soldi. NON ha mai commesso un reato e non sa mentire a lungo.</button>
+        </div>
+    </details>
+</div>
+
+<div class="wz-campo">
+    <label>Lo sbaglio che ha lasciato <span class="wz-obbl">*</span></label>
+    <textarea data-campo="passo5.erroreCoerente" rows="3"
+              placeholder="L'errore che UNA PERSONA COSÌ, sotto pressione, commette davvero (es. si fa vedere da qualcuno, butta male qualcosa, telefona a chi non doveva)"></textarea>
+    <small class="wz-nota">Obbligatorio — da questo sbaglio nasceranno le tracce migliori del passo 12: è il filo che i detective possono tirare.</small>
+    <details class="wz-help">
+        <summary>❓ Cosa scrivo qui — esempi</summary>
+        <div>
+            <p>Nessuno uccide con la lucidità di un GM: sotto pressione, <strong>una persona così che sbaglio fa?</strong> Dev'essere coerente coi suoi limiti e deve lasciare qualcosa di TROVABILE.</p>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.erroreCoerente']">Ha lasciato la moto dove il benzinaio di notte l'ha vista — e quella marmitta la riconoscono in tre distretti.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.erroreCoerente']">Cancella le email dal computer di lavoro, ma non sa che il server dell'azienda le archivia tutte.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.erroreCoerente']">Ripulisce ogni impronta dalla scena, poi butta i guanti nel bidone di casa propria.</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo5.erroreCoerente']">Si costruisce un alibi perfetto per l'ora sbagliata: nessuno gli aveva detto l'ora della morte.</button>
+        </div>
+    </details>
+</div>
+
+<button type="button" class="wz-btn wz-ai" data-proponi="4" hidden>✨ Proponi 3 moventi filtrati</button>

@@ -1,0 +1,340 @@
+@page "/Pg/{id:guid}"
+@model GenkaiWizard.Pages.Pg.SchedaModel
+@{
+    ViewData["Title"] = $"{Model.Pg.Nome} — scheda";
+    var etichette = new[] { "Il gioco", "Identità", "Attributi", "Senmon", "Gou", "Ki", "Storia", "Kage", "Enja", "Carattere", "Squadra", "Riepilogo" };
+}
+
+<div class="wz" id="pg-root">
+
+    <header class="wz-testata">
+        <a asp-page="/Pg/Index" class="wz-indietro" title="I miei personaggi">‹</a>
+        <input id="pg-nome-testata" class="wz-titolo" maxlength="120" value="@Model.Pg.Nome" title="Nome del personaggio" />
+        <span id="pg-salvato" class="wz-salvato" title="Stato salvataggio">●</span>
+        @if (Model.AiAttiva)
+        {
+            <select id="wz-modello-ai" class="wz-modello" title="Modello AI usato dai pulsanti ✨">
+                <option value="claude-opus-5">🤖 Opus 5</option>
+                <option value="claude-fable-5">🤖 Fable 5</option>
+                <option value="claude-sonnet-5">🤖 Sonnet 5</option>
+                <option value="claude-haiku-4-5">🤖 Haiku 4.5</option>
+            </select>
+            <select id="wz-effort-ai" class="wz-modello" title="Quanto ragiona l'AI (non vale per Haiku)">
+                <option value="max">🧠 Max</option>
+                <option value="high">🧠 Alto</option>
+                <option value="medium">🧠 Medio</option>
+                <option value="low">🧠 Basso</option>
+            </select>
+        }
+        <button type="button" id="pg-reset" class="wz-drawer-btn" title="Ricomincia da zero: svuota tutta la scheda">↺</button>
+        <a class="wz-drawer-btn" asp-page="/Pg/Stampa" asp-route-id="@Model.Pg.Id" title="Vista stampabile della scheda">🖨</a>
+    </header>
+
+    <nav class="wz-progresso" aria-label="Passi">
+        @for (var i = 0; i < etichette.Length; i++)
+        {
+            <a class="wz-punto" data-pg-vai="@i" href="#" title="@(i + 1) — @etichette[i]">
+                <span class="wz-punto-n">@(i + 1)</span>
+                <span class="wz-punto-t">@etichette[i]</span>
+            </a>
+        }
+    </nav>
+
+    <main class="wz-passo">
+
+        <!-- ═══════════ 0 · IL GIOCO ═══════════ -->
+        <section data-pg-passo="0" hidden>
+            <h2>GENKAI 限界 — come funziona il gioco</h2>
+            <p class="wz-aiuto">Kyoto, 1997. Sei un <strong>detective della polizia</strong> — una persona vera, con un lavoro difficile, un problema personale e un limite. Qui creerai il tuo investigatore un passo alla volta: il wizard ti spiega tutto, non serve conoscere il regolamento.</p>
+
+            <div class="pg-gioco-blocco"><h3>🎲 I tiri</h3>
+                <p>Si tirano <strong>2 dadi da 6</strong> e si somma: per riuscire devi fare <strong>meno o uguale</strong> al tuo attributo. Basso è buono: un <strong>2-3</strong> è un colpo eccezionale, un <strong>11-12</strong> costa caro. Non si tira per tutto — solo quando l'esito è incerto e conta.</p></div>
+            <div class="pg-gioco-blocco"><h3>気 Il Ki e il Genkai</h3>
+                <p>Il <strong>Ki</strong> è la tua energia: mentale, emotiva, fisica. Le indagini la consumano — le notti insonni, le scene del crimine, le pressioni. Se il Ki scende a <strong>3 o meno</strong> scatta il <strong>Genkai 限界</strong>, il crollo: il caso ti è entrato dentro. Il titolo del gioco è questo — <em>il limite è il tuo</em>.</p></div>
+            <div class="pg-gioco-blocco"><h3>業 Il Gou</h3>
+                <p>Ogni investigatore ha <strong>un</strong> talento sottile, quasi soprannaturale: sentire le bugie, vedere ciò che è accaduto in una stanza, calmare chiunque. Si paga in Ki — il tuo potere consuma proprio ciò che ti tiene in piedi.</p></div>
+            <div class="pg-gioco-blocco"><h3>専門 Le Senmon</h3>
+                <p>Le tue specializzazioni professionali: interrogare, pedinare, leggere un bilancio, conoscere un quartiere. Danno un bonus nei tiri del loro campo e crescono con l'uso, di grado in grado.</p></div>
+            <div class="pg-gioco-blocco"><h3>影 Il Kage e 縁者 l'Enja</h3>
+                <p>Il <strong>Kage</strong> è la tua ombra: un problema personale vero, che il GM farà riemergere quando meno te lo aspetti. L'<strong>Enja</strong> è il tuo contatto fuori dalla polizia: prezioso, ma prima o poi chiede qualcosa in cambio.</p></div>
+            <div class="pg-gioco-blocco"><h3>🀄 Al tavolo</h3>
+                <p>Niente binari: l'indagine è vera. Si parla con le persone, si leggono i documenti, si mettono insieme i pezzi. I dadi non bloccano mai la verità — modulano quanto ti costa arrivarci.</p></div>
+
+            <p class="wz-nota">Premi <strong>Avanti</strong> e cominciamo dal nome.</p>
+        </section>
+
+        <!-- ═══════════ 1 · IDENTITÀ ═══════════ -->
+        <section data-pg-passo="1" hidden>
+            <h2>Chi sei — l'identità</h2>
+            <p class="wz-aiuto">I tuoi dati. Scrivi il nome e i <strong>kanji arrivano da soli</strong> (o li chiedi con ✨); più sotto trovi anche i nomi <strong>su misura</strong> se non sai da dove partire.</p>
+
+            <div class="wz-campo-griglia pg-griglia-3">
+                <div class="wz-campo"><label>Cognome</label><input type="text" data-pg-campo="identita.cognome" placeholder="es. Tanaka" /></div>
+                <div class="wz-campo"><label>Nome</label><input type="text" data-pg-campo="identita.nome" placeholder="es. Hiroshi" /></div>
+                <div class="wz-campo"><label>Kanji <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="kanji" data-pg-dest="identita.kanji">✨</button></label><input type="text" data-pg-campo="identita.kanji" placeholder="arrivano da soli col nome" /></div>
+                <div class="wz-campo"><label>Età</label><input type="number" min="21" max="65" data-pg-campo="identita.eta" /></div>
+                <div class="wz-campo"><label>Genere</label>
+                    <select data-pg-campo="identita.genere"><option value="m">Uomo</option><option value="f">Donna</option></select></div>
+                <div class="wz-campo"><label>Anni di servizio</label><input type="number" min="0" max="45" data-pg-campo="identita.anniServizio" /></div>
+                <div class="wz-campo"><label>Ruolo <small>(nella squadra)</small></label>
+                    <select id="pg-ruolo-sel" class="wz-lungo">
+                        <option value="">— scegli —</option>
+                        <option value="Capo squadra">Capo squadra</option>
+                        <option value="Interrogatore">Interrogatore</option>
+                        <option value="Scena del crimine e rilievi">Scena del crimine e rilievi</option>
+                        <option value="Pedinamento e osservazione">Pedinamento e osservazione</option>
+                        <option value="Archivi e documenti">Archivi e documenti</option>
+                        <option value="Rapporti col territorio">Rapporti col territorio</option>
+                        <option value="__custom">✏️ Altro — lo scrivo io</option>
+                    </select>
+                    <input type="text" id="pg-ruolo-libero" class="wz-custom-input" placeholder="Scrivi il ruolo…" hidden /></div>
+                <div class="wz-campo pg-span2"><label>Grado <small>(rango di polizia)</small></label>
+                    <select id="pg-grado-sel" class="wz-lungo">
+                        <option value="">— scegli —</option>
+                        <option value="Junsa (Agente)">Junsa — Agente (la divisa, il kōban)</option>
+                        <option value="Junsa-chō (Agente Scelto)">Junsa-chō — Agente Scelto</option>
+                        <option value="Junsa-buchō (Sergente)">Junsa-buchō — Sergente ⭐ il detective tipico</option>
+                        <option value="Keibu-ho (Vice Ispettore)">Keibu-ho — Vice Ispettore · detective anziano</option>
+                        <option value="Keibu (Ispettore Capo)">Keibu — Ispettore Capo · guida la squadra</option>
+                        <option value="__custom">✏️ Altro — lo scrivo io</option>
+                    </select>
+                    <input type="text" id="pg-grado-libero" class="wz-custom-input" placeholder="Scrivi il grado…" hidden /></div>
+            </div>
+
+            <h3 class="wz-h3">🏠 Dove vivi e come ti si contatta <button type="button" id="pg-residenza-ai" class="wz-btn wz-mini" title="L'AI propone residenza e contatti coerenti (riempie solo i campi vuoti)">✨</button></h3>
+            <div class="wz-campo-griglia pg-griglia-3">
+                <div class="wz-campo"><label>Quartiere</label>
+                    <select id="pg-quartiere-sel" class="wz-lungo"><option value="">— scegli —</option></select>
+                    <input type="text" id="pg-quartiere-libero" class="wz-custom-input" placeholder="Scrivi il quartiere…" hidden /></div>
+                <div class="wz-campo"><label>Indirizzo <small>(via, edificio)</small></label><input type="text" data-pg-campo="identita.via" placeholder="es. apāto Kotobuki 2-4, vicino alla stazione" /></div>
+                <div class="wz-campo"><label>Telefono di casa</label><input type="text" data-pg-campo="identita.telefono" placeholder="075-…" /></div>
+                <div class="wz-campo"><label>Pocket bell <small>(cercapersone)</small></label><input type="text" data-pg-campo="identita.pocketBell" placeholder="es. 020-…" /></div>
+                <div class="wz-campo pg-span2"><label>Altri contatti <small>(fax, tramite terzi, il bar sotto casa…)</small></label><input type="text" data-pg-campo="identita.altroContatto" placeholder="es. fax del distretto; messaggio all'izakaya Kotobuki" /></div>
+            </div>
+
+            <div class="pg-nomi-box">
+                <h3 class="wz-h3">🔮 Non sai che nome dargli?</h3>
+                <p class="wz-nota">Scrivi (se vuoi) un'idea del personaggio — un tratto, un'immagine, un'origine — e ti proponiamo nomi <strong>su misura</strong>, con i kanji e il loro significato. Poi tocchi quello che ti piace e finisce sulla scheda.</p>
+                <div class="pg-nomi-riga">
+                    <input type="text" id="pg-nomi-ispirazione" placeholder="es. sguardo infallibile · vecchia scuola · figlio di pescatori · silenzioso come la neve" />
+                    <button type="button" id="pg-nomi-btn" class="wz-btn wz-btn-primario">✨ Proponi nomi</button>
+                </div>
+                <div id="pg-nomi-out" class="pg-nomi-out"></div>
+            </div>
+        </section>
+
+        <!-- ═══════════ 2 · ATTRIBUTI ═══════════ -->
+        <section data-pg-passo="2" hidden>
+            <h2>Attributi — come affronti il mondo</h2>
+            <p class="wz-aiuto">Sei attributi, da <strong>4</strong> (debole) a <strong>9</strong> (eccezionale). Partono tutti da 4: hai <strong>9 punti</strong> da distribuire. Nei tiri devi fare <em>meno o uguale</em> al valore: più alto = meglio.</p>
+            <p class="pg-punti">Punti rimasti: <strong id="pg-attr-rimasti">9</strong> / 9</p>
+            <div id="pg-attributi"></div>
+            <details class="wz-help"><summary>❓ La scala dei valori</summary><div>
+                <p><strong>4</strong> = debole · <strong>5-6</strong> = una persona normale · <strong>7</strong> = buono · <strong>8</strong> = ottimo · <strong>9</strong> = eccezionale (il massimo umano). Non serve essere forti ovunque: i punti deboli rendono il personaggio vero — e il tuo <strong>Ki</strong> partirà dall'attributo più basso.</p>
+            </div></details>
+        </section>
+
+        <!-- ═══════════ 3 · SENMON ═══════════ -->
+        <section data-pg-passo="3" hidden>
+            <h2>Senmon 専門 — le tue specializzazioni</h2>
+            <p class="wz-aiuto">Le Senmon sono le cose che sai fare <strong>meglio degli altri</strong>: danno un bonus (−1 al dado a grado 1) sui tiri del loro campo. Parti con <strong>Lotta 1</strong> (l'addestramento d'accademia, ce l'hanno tutti) e <strong>una specializzazione a tua scelta</strong>, giustificata dal tuo passato.</p>
+
+            <div class="wz-info pg-fisso">🥋 <strong>Lotta 1 — d'accademia</strong> (Presenza) · pugni, prese, tecniche d'arresto. La hanno tutti gli investigatori: è già sulla tua scheda.</div>
+
+            <div class="wz-campo">
+                <label>La tua specializzazione <small>(grado 1 · Praticante · bonus −1 — oppure rinforza Lotta al grado 2, se hai Presenza 6)</small></label>
+                <select id="pg-senmon-sel" class="wz-lungo"><option value="">— scegli —</option></select>
+            </div>
+            <div id="pg-senmon-info" class="wz-info" hidden></div>
+            <div class="wz-campo"><label>Perché la sai fare? <small>(una riga sul tuo passato — la regola la chiede)</small></label>
+                <input type="text" data-pg-campo="senmonPerche" placeholder="es. Tre anni alla Scientifica prima del distretto" /></div>
+
+            <details class="wz-help"><summary>❓ I tre gradi e la crescita</summary><div>
+                <p><strong>Grado 1 Praticante (−1)</strong> → <strong>2 Esperto (−2)</strong> → <strong>3 Maestro (−3, o −2 con Correzione)</strong>. I gradi successivi si comprano dopo, giocando (punti Shugyō) e usando la specializzazione (servono usi reali). La <strong>Correzione</strong> dei Maestri delle Tecniche permette di ritirare una volta per scena un proprio tiro fallito del proprio campo.</p>
+            </div></details>
+        </section>
+
+        <!-- ═══════════ 4 · GOU ═══════════ -->
+        <section data-pg-passo="4" hidden>
+            <h2>Gou 業 — il tuo potere</h2>
+            <p class="wz-aiuto">Ogni investigatore ha <strong>UN</strong> Gou: un talento sottile, quasi soprannaturale, che <em>definisce chi sei</em>. Si attiva pagando <strong>Ki</strong> e funziona sempre: col successo ottieni molto, col fallimento comunque qualcosa.</p>
+
+            <div class="wz-campo">
+                <label>Il tuo Gou</label>
+                <select id="pg-gou-sel" class="wz-lungo"><option value="">— scegli —</option></select>
+            </div>
+            <div id="pg-gou-info" class="wz-info" hidden></div>
+
+            <details class="wz-help"><summary>❓ Come si usa un Gou</summary><div>
+                <p>Dichiari il Gou, paghi il costo in Ki (per intero: serve restare almeno a Ki 1), tiri 2d6 contro l'attributo indicato. Ogni uso nella stessa giornata <strong>raddoppia</strong> il costo del successivo; una notte di sonno lo abbassa di un grado. Due Gou (Teatro delle Ombre, L'Eco della Montagna) richiedono l'attributo ad almeno <strong>7</strong>: se non lo raggiungi, il wizard te li disabilita.</p>
+            </div></details>
+        </section>
+
+        <!-- ═══════════ 5 · KI ═══════════ -->
+        <section data-pg-passo="5" hidden>
+            <h2>Ki 気 — la tua energia</h2>
+            <p class="wz-aiuto">Il Ki è tutto insieme: energia mentale, emotiva, fisica. Si consuma indagando e si recupera dormendo. <strong>Ki massimo = il tuo attributo più basso + il più alto di 2d6</strong> (tetto: 12).</p>
+
+            <div class="pg-ki-pannello">
+                <p class="pg-ki-riga">Il tuo attributo più basso: <strong id="pg-ki-minattr">—</strong></p>
+                <div class="pg-ki-grande">
+                    <span class="pg-ki-kanji" aria-hidden="true">気</span>
+                    <div><small>Ki massimo</small><span id="pg-ki-max">—</span></div>
+                </div>
+                <p id="pg-ki-msg" class="pg-ki-msg"></p>
+                <div class="pg-ki-bottoni">
+                    <button type="button" id="pg-ki-tira" class="wz-btn wz-btn-primario">🎲 Tira 2d6</button>
+                    <button type="button" id="pg-ki-nuovocaso" class="wz-btn wz-mini" hidden>Ritira (a inizio nuovo caso o su richiesta del GM)</button>
+                </div>
+                <p class="wz-nota">Se un dado mostra <strong>1</strong> si ritira <strong>sempre</strong>, anche più volte di fila, finché non esce altro.</p>
+            </div>
+
+            <div class="pg-genkai-box">
+                <h3>Genkai 限界 — il limite</h3>
+                <p>Il Genkai è il cuore del gioco: se il tuo Ki scende a <strong>3 o meno</strong>, il personaggio <strong>crolla</strong> — il caso gli è entrato dentro, non ragiona più lucidamente, e serve una via di rientro.</p>
+                <p class="pg-esempio"><strong>Esempio</strong>: hai Ki massimo 8. Una giornata dura tra scena del crimine e interrogatori ti costa 3 Ki → sei a 5. La sera usi il tuo Gou (costo 2) → sei a 3: <strong>è scattato il Genkai</strong>. Da lì non si continua come niente fosse: prima si rientra, poi si torna a indagare.</p>
+            </div>
+
+            <h3 class="wz-h3">Nasake 情け e Soroban 算盤 <small>(li incontrerai in gioco — non devi segnare nulla ora)</small></h3>
+            <div class="wz-info">
+                <p><strong>Nasake 情け — la riserva di compassione.</strong> Un serbatoio da <strong>1 punto</strong>, che parte vuoto. Si riempie quando il tuo investigatore compie un <em>atto di vera compassione</em> — non di convenienza: fermarsi per la persona, non per il caso. Quando è pieno, puoi spenderlo come <strong>1 Ki</strong> nel momento del bisogno. È il gioco che ti dice: l'umanità ripaga.</p>
+                <p><strong>Soroban 算盤 — il contatore della giornata.</strong> A inizio giornata parte da <strong>5</strong> e scende man mano che accumuli fatiche, pressioni e pesi. A fine giornata dice quanto hai tirato la corda — e lascia uno <strong>strascico</strong>: domani non riparti da zero, la chiusura di oggi si sposta di un passo verso il riposo. Lo gestisce il GM al tavolo: qui basta sapere che esiste.</p>
+            </div>
+        </section>
+
+        <!-- ═══════════ 6 · STORIA & ASPETTO ═══════════ -->
+        <section data-pg-passo="6" hidden>
+            <h2>Chi sei — storia e aspetto</h2>
+            <p class="wz-aiuto">Il tuo passato e il tuo aspetto. Se non sai da dove iniziare, il pulsante ✨ propone un testo coerente con le scelte fatte finora — poi lo modifichi come vuoi.</p>
+
+            <div class="wz-campo"><label>La tua storia <small>(da dove vieni, perché fai questo lavoro)</small> <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="chiSei" data-pg-dest="chiSei">✨</button></label>
+                <textarea rows="5" data-pg-campo="chiSei" placeholder="Sei cresciuto a…"></textarea></div>
+
+            <div class="wz-campo"><label>Descrizione fisica <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="descrizioneFisica" data-pg-dest="descrizioneFisica">✨</button></label>
+                <textarea rows="4" data-pg-campo="descrizioneFisica" placeholder="Volto, corporatura, come ti vesti…"></textarea></div>
+
+            <div class="wz-campo">
+                <label>Ritratto</label>
+                <div id="pg-ritratto-box" class="pg-ritratto">
+                    <img id="pg-ritratto-img" alt="" hidden />
+                    <button type="button" id="pg-ritratto-genera" class="wz-btn">🎨 Genera il ritratto <small>(dalla descrizione fisica)</small></button>
+                    <span id="pg-ritratto-msg" class="wz-nota"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ 7 · KAGE ═══════════ -->
+        <section data-pg-passo="7" hidden>
+            <h2>Kage 影 — il tuo problema</h2>
+            <p class="wz-aiuto">Ogni investigatore ha un'ombra: un problema personale <strong>vero e attivo</strong> — un debito, un familiare, un errore che torna. Tu lo definisci; <strong>quando e come</strong> entrerà in gioco lo decide il GM. Dal Kage nascono le <em>Scene Personali</em>.</p>
+
+            <div class="wz-campo"><label>Il problema <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="kageProblema" data-pg-dest="kage.problema">✨</button></label>
+                <textarea rows="5" data-pg-campo="kage.problema" placeholder="Concreto: chi, cosa, da quando, cosa rischi…"></textarea></div>
+
+            <div class="wz-campo"><label>Il PNG del problema <small>(la persona al centro del tuo Kage)</small> <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="kagePng" data-pg-dest="kage.png">✨</button></label>
+                <textarea rows="5" data-pg-campo="kage.png" placeholder="Età · Lavoro · Relazione con te · Cosa vuole · Come si comporta"></textarea></div>
+        </section>
+
+        <!-- ═══════════ 8 · ENJA ═══════════ -->
+        <section data-pg-passo="8" hidden>
+            <h2>Enja 縁者 — il tuo contatto</h2>
+            <p class="wz-aiuto">Una persona <strong>fuori dalla polizia</strong> che ti deve qualcosa o ti vuole bene: un giornalista, un medico, un vecchio della mala. Puoi usarlo <strong>una volta a sessione</strong> senza conseguenze; la seconda, ti chiederà qualcosa in cambio.</p>
+            <div id="pg-enja-lista"></div>
+        </section>
+
+        <!-- ═══════════ 9 · CARATTERE ═══════════ -->
+        <section data-pg-passo="9" hidden>
+            <h2>Come ti comporti</h2>
+            <p class="wz-aiuto">In Giappone c'è il <strong>tatemae</strong> (la faccia pubblica) e lo <strong>honne</strong> (quello che sei davvero). Il contrasto tra i due è il tuo personaggio.</p>
+
+            <div class="wz-campo"><label>In pubblico (Tatemae) <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="tatemae" data-pg-dest="comportamento.tatemae">✨</button></label>
+                <textarea rows="2" data-pg-campo="comportamento.tatemae"></textarea></div>
+            <div class="wz-campo"><label>In privato (Honne) <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="honne" data-pg-dest="comportamento.honne">✨</button></label>
+                <textarea rows="2" data-pg-campo="comportamento.honne"></textarea></div>
+            <div class="wz-campo"><label>Frase tipica <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="fraseTipica" data-pg-dest="comportamento.fraseTipica">✨</button></label>
+                <input type="text" data-pg-campo="comportamento.fraseTipica" placeholder="«…»" /></div>
+            <div class="wz-campo"><label>Sotto pressione <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="sottoPressione" data-pg-dest="comportamento.sottoPressione">✨</button></label>
+                <input type="text" data-pg-campo="comportamento.sottoPressione" /></div>
+            <div class="wz-campo"><label>Debolezza <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="debolezza" data-pg-dest="comportamento.debolezza">✨</button></label>
+                <input type="text" data-pg-campo="comportamento.debolezza" /></div>
+
+            <h3 class="wz-h3">Tratti personali</h3>
+            <div class="wz-campo-griglia pg-griglia-2">
+                <div class="wz-campo"><label>Vizio <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="vizio" data-pg-dest="tratti.vizio">✨</button></label><input type="text" data-pg-campo="tratti.vizio" /></div>
+                <div class="wz-campo"><label>Tic o gesto <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="tic" data-pg-dest="tratti.tic">✨</button></label><input type="text" data-pg-campo="tratti.tic" /></div>
+                <div class="wz-campo"><label>Oggetto personale <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="oggetto" data-pg-dest="tratti.oggetto">✨</button></label><input type="text" data-pg-campo="tratti.oggetto" /></div>
+                <div class="wz-campo"><label>Gusto <small>(cibo, musica, piccoli piaceri)</small> <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="gusto" data-pg-dest="tratti.gusto">✨</button></label><input type="text" data-pg-campo="tratti.gusto" /></div>
+            </div>
+            <div class="wz-campo"><label>
+                <select data-pg-campo="tratti.liberoEtichetta" class="wz-medio">
+                    <option>Rituale</option><option>Abitudine</option><option>Superstizione</option><option>Segreto</option><option>Rifugio</option>
+                </select>
+                <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="trattoLibero" data-pg-dest="tratti.libero">✨</button></label>
+                <input type="text" data-pg-campo="tratti.libero" /></div>
+        </section>
+
+        <!-- ═══════════ 10 · SQUADRA & SCENE ═══════════ -->
+        <section data-pg-passo="10" hidden>
+            <h2>La squadra — e le immagini</h2>
+            <p class="wz-aiuto">Se conosci già gli altri personaggi del gruppo, scrivi una riga sul rapporto con ciascuno (si può fare anche dopo). Qui puoi anche generare <strong>immagini di situazioni</strong> del tuo personaggio.</p>
+
+            <h3 class="wz-h3">Rapporti con i compagni</h3>
+            <div id="pg-rapporti"></div>
+            <button type="button" id="pg-rapporto-agg" class="wz-btn wz-mini">+ Aggiungi compagno</button>
+
+            <h3 class="wz-h3">Immagini di situazioni</h3>
+            <div class="wz-campo"><label>Descrivi la scena <small>(il tuo PG in azione: dove, cosa fa, che atmosfera)</small></label>
+                <textarea id="pg-scena-testo" rows="3" placeholder="es. Sotto la pioggia davanti a un kōban di Shimogyō, sigaretta accesa, neon riflessi nelle pozzanghere"></textarea></div>
+            <button type="button" id="pg-scena-genera" class="wz-btn">🎨 Genera immagine</button>
+            <span id="pg-scena-msg" class="wz-nota"></span>
+            <div id="pg-scene-galleria" class="pg-scene"></div>
+        </section>
+
+        <!-- ═══════════ 11 · RIEPILOGO & CRESCITA ═══════════ -->
+        <section data-pg-passo="11" hidden>
+            <h2>Riepilogo — la tua scheda</h2>
+            <div id="pg-riepilogo" class="wz-info"></div>
+
+            <h3 class="wz-h3">Equipaggiamento di servizio <small>(uguale per tutti — non si sceglie)</small></h3>
+            <div class="wz-info">
+                <ul class="pg-equip">
+                    <li>🔫 <strong>Revolver New Nambu M60</strong> (.38, 5 colpi) e 🦺 <strong>giubbotto antiproiettile</strong> — in armadietto, si prelevano firmando</li>
+                    <li>🥢 <strong>Keibō</strong> (manganello) per le operazioni</li>
+                    <li>📕 <strong>Keisatsu techō</strong> (tesserino), manette, taccuino — sempre con te</li>
+                </ul>
+            </div>
+
+            <h3 class="wz-h3">Crescita — Shugyō 修行 <small>(si spende SOLO tra un caso e l'altro)</small></h3>
+            <details class="wz-help"><summary>❓ Come si guadagnano i punti</summary><div>
+                <p><strong>+1</strong> a sessione giocata · <strong>+4-6</strong> a caso chiuso (4 con buchi, 5 solido, 6 esemplare) · <strong>+1</strong> per una Scena Personale gestita bene · <strong>+1</strong> per un momento eccezionale (max 1 a sessione).</p>
+            </div></details>
+            <div class="wz-campo pg-shugyo-punti"><label>Punti Shugyō guadagnati in totale</label>
+                <input type="number" min="0" max="999" data-pg-campo="shugyo.punti" class="wz-medio" /></div>
+            <p class="pg-punti">Spesi: <strong id="pg-shu-spesi">0</strong> · Disponibili: <strong id="pg-shu-rimasti">0</strong></p>
+
+            <div id="pg-shu-acquisti" class="wz-info"></div>
+            <h4 class="wz-h3">Registro acquisti</h4>
+            <div id="pg-shu-log" class="wz-info"><em>Nessun acquisto ancora.</em></div>
+
+            <p class="wz-nota">🖨 La <a asp-page="/Pg/Stampa" asp-route-id="@Model.Pg.Id"><strong>vista stampabile</strong></a> è la scheda da portare al tavolo.</p>
+        </section>
+    </main>
+
+    <footer class="wz-nav">
+        <button type="button" class="wz-btn" id="pg-indietro">‹ Indietro</button>
+        <button type="button" class="wz-btn wz-btn-primario" id="pg-avanti">Avanti ›</button>
+    </footer>
+</div>
+
+@section Scripts {
+    <script>
+        window.PG = {
+            id: '@Model.Pg.Id',
+            passo: @Model.Pg.PassoCorrente,
+            aiAttiva: @(Model.AiAttiva ? "true" : "false"),
+            immaginiAttive: @(Model.ImmaginiAttive ? "true" : "false"),
+            stato: @Html.Raw(Model.Pg.StatoJson)
+        };
+    </script>
+    <script src="~/js/pg.js" asp-append-version="true"></script>
+}

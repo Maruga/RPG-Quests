@@ -85,7 +85,7 @@ Honda Ryota, un poliziotto, ha perso due milioni di yen in una scommessa. Deve p
 I soldi. Ma sei pragmatico. Accetti alternative:
 1. Pagamento entro la settimana
 2. Raddoppia la scommessa (se vince, debito cancellato)
-3. "Un favore" - informazioni dalla polizia
+3. "Un favore" — non specificare mai quale: non lo sai nemmeno tu (l'ambiguità è l'arma)
 
 ### Come ti comporti
 - **Mai aggressivo.** Sei educato. Sorridi.

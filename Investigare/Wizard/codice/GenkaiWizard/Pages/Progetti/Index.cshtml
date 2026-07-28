@@ -1,0 +1,41 @@
+@page
+@model GenkaiWizard.Pages.Progetti.IndexModel
+@{
+    ViewData["Title"] = "I miei casi";
+}
+
+<div class="wz-progetti">
+    <h1>I miei casi</h1>
+
+    <form method="post" asp-page-handler="Crea" class="wz-nuovo">
+        <input type="text" name="titolo" maxlength="120" placeholder="Titolo del nuovo caso (opzionale)" />
+        <button type="submit" class="wz-btn wz-btn-primario">+ Nuovo caso</button>
+    </form>
+
+    @if (Model.Progetti.Count == 0)
+    {
+        <p class="wz-vuoto">Nessun caso ancora. Creane uno: il wizard ti guida negli 11 passi del metodo GENKAI.</p>
+    }
+    else
+    {
+        <ul class="wz-lista">
+            @foreach (var p in Model.Progetti)
+            {
+                <li class="wz-card">
+                    <a class="wz-card-main" asp-page="/Wizard/Index" asp-route-id="@p.Id" asp-route-passo="@p.PassoCorrente">
+                        <strong>@p.Titolo</strong>
+                        <span class="wz-meta">passo @p.PassoCorrente/12 · agg. @p.AggiornatoIl.ToLocalTime().ToString("dd/MM HH:mm")</span>
+                        <span class="wz-barra"><span style="width:@(p.PassoCorrente * 100 / 12)%"></span></span>
+                    </a>
+                    @if (!p.Demo)
+                    {
+                        <form method="post" asp-page-handler="Elimina" asp-route-id="@p.Id"
+                              onsubmit="return confirm('Eliminare definitivamente questo caso?');">
+                            <button type="submit" class="wz-btn-x" title="Elimina">✕</button>
+                        </form>
+                    }
+                </li>
+            }
+        </ul>
+    }
+</div>

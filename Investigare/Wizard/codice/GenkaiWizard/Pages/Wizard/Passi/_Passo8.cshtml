@@ -1,0 +1,165 @@
+<p class="wz-aiuto">Scegli qualcuno e <strong>quello che il caso già sa di lui compare da solo</strong> (cerchie, gruppi, En, cronistoria, cosa può dare ai PG): nei campi scrivi <strong>solo il nuovo</strong> — come si comporta, i trigger, la deposizione (📄 = handout, la ritrovi al passo 13) — e tiri le <strong>statistiche</strong> 🎲: attributi per le persone, scheda ente per gruppi e distretti.</p>
+
+<div class="wz-campo">
+    <label>Personaggio o gruppo</label>
+    <select id="wz-scheda-persona"></select>
+    <small class="wz-nota">Anche il distretto e la banda hanno una scheda: cosa sanno (schedari, voci di territorio), come si comportano coi PG, trigger.</small>
+</div>
+
+<div id="wz-scheda-form" hidden>
+    <div id="sch-nota-p3" class="wz-info" hidden></div>
+    <div id="sch-recap" class="wz-info wz-recap" hidden></div>
+
+    <details class="wz-help">
+        <summary>❓ Come si compila una scheda — esempi</summary>
+        <div>
+            <p><strong>Cosa sa</strong> viene dalla cronistoria (passo 10): cosa ha visto o sentito questa persona, e quando. Esempio:</p>
+            <div class="wz-esempio-testo">Ha sentito la lite del 12 marzo (le voci, non le parole). Sa che il professore restava in ufficio fino a tardi il martedì.</div>
+            <p><strong>Cosa NON sa</strong> è altrettanto importante — compreso ciò che <em>sa senza sapere di sapere</em>:</p>
+            <div class="wz-esempio-testo">Non sa che l'ammanco riguarda Kuroda. Ha visto Kuroda in corridoio alle 6:40 ma non ci ha dato peso: "arriva sempre presto".</div>
+            <p><strong>Trigger</strong> = una riga per reazione, formato <em>se → allora</em>:</p>
+            <div class="wz-esempio-testo">Se le chiedono chi c'era quella mattina → nomina Kuroda, ma solo se si sente al sicuro</div>
+            <div class="wz-esempio-testo">Se le mostrano il registro accessi → si contraddice sull'orario e si spaventa</div>
+        </div>
+    </details>
+    <div class="wz-campo">
+        <label>Descrizione fisica e foto <small>(la foto è il ritratto — separata dagli allegati, si stampa nel foglio delle facce)</small></label>
+        <div class="wz-fisica-grid">
+            <div class="wz-foto-col">
+                <div class="wz-foto-slot" id="sch-foto-slot"><span class="wz-foto-vuota">nessuna foto</span></div>
+                <label class="wz-btn wz-mini wz-foto-carica">📷 Carica<input type="file" hidden id="sch-foto-file" accept="image/png,image/jpeg,image/webp" /></label>
+                <button type="button" class="wz-btn wz-mini" id="sch-foto-togli" hidden>🗑 Togli</button>
+            </div>
+            <div class="wz-fisica-testo">
+                <div class="wz-nome-riga wz-fis-builder">
+                    <select id="sch-fis-tratto" class="wz-medio" title="Scegli il tratto"></select>
+                    <select id="sch-fis-valore" class="wz-medio" title="Scegli il valore — o ✏️ Altro"></select>
+                    <input type="text" id="sch-fis-libero" placeholder="scrivi tu…" hidden />
+                    <button type="button" class="wz-btn wz-mini" id="sch-fis-add">+ Aggiungi</button>
+                </div>
+                <textarea id="sch-descrizioneFisica" rows="5" placeholder="I tratti aggiunti finiscono qui — poi modifichi il testo come vuoi."></textarea>
+            </div>
+        </div>
+        <div class="wz-nome-riga wz-sch-azioni">
+            <button type="button" class="wz-btn" id="sch-ai-fisico" hidden>✨ Proponi descrizione (l'AI legge il caso)</button>
+            <button type="button" class="wz-btn" id="sch-foto-prompt-btn">🖼 Prompt foto per GPT</button>
+            <button type="button" class="wz-btn" id="sch-foto-crea" hidden>🎨 Crea la foto (AI)</button>
+            <span class="wz-alg-msg" id="sch-foto-msg2"></span>
+        </div>
+        <textarea id="sch-foto-prompt" rows="8" hidden></textarea>
+        <div class="wz-nome-riga" id="sch-foto-azioni" hidden>
+            <button type="button" class="wz-btn wz-mini" id="sch-foto-copia">📋 Copia il prompt</button>
+            <small class="wz-nota" id="sch-foto-msg"></small>
+        </div>
+    </div>
+    <div class="wz-campo"><label>Cosa sa <span class="wz-obbl">*</span></label><textarea id="sch-cosaSa" rows="3" placeholder="Derivato dalla cronistoria: cosa ha visto/sentito, con quando"></textarea></div>
+    <div class="wz-campo"><label>Cosa NON sa <span class="wz-obbl">*</span></label><textarea id="sch-cosaNonSa" rows="2" placeholder="Incluso ciò che sa ma non sa di sapere"></textarea></div>
+    <div class="wz-campo"><label>Cosa ha fatto davvero <small>(verità per il GM — la deposizione può dire altro)</small></label><textarea id="sch-cosaHaFatto" rows="3" placeholder="Cosa ha fatto e cosa NO, quella sera e nel caso: la verità dei fatti, anche quella che alla polizia non dirà mai"></textarea></div>
+    <div class="wz-campo"><label>Come si comporta <span class="wz-obbl">*</span></label><textarea id="sch-comportamento" rows="3" placeholder="Atteggiamento iniziale; cosa nasconde e perché SUO"></textarea></div>
+    <div class="wz-campo"><label>Trigger <small>(uno per riga: se … → allora …)</small></label><textarea id="sch-trigger" rows="3" placeholder="Se i PG le chiedono se ha visto qualcuno → dice di Kuroda, tace su di sé"></textarea></div>
+    <div class="wz-cara">
+        <div class="wz-tab-bar" role="tablist">
+            <button type="button" class="wz-tab attivo" data-cara-tab="voce" title="Come parla">🎙 Voce</button>
+            <button type="button" class="wz-tab" data-cara-tab="tratti" title="Chi è — vizio, tic, oggetto">🎭 Tratti</button>
+        </div>
+        <div class="wz-tab-pane" data-cara-pane="voce">
+            <p class="wz-mini-nota">Come parla — 5 leve, al tavolo più di 5 non le tieni in testa. Tutte facoltative; ✨ le propone l'AI, una per una.</p>
+            <div class="wz-campo"><label>Intercalare <small>(1-2 parole fisse che infila sempre — l'ancora del personaggio)</small></label><input type="text" id="sch-voce-intercalare" data-ai-campo="intercalare" placeholder="es. «insomma», «ecco», «capisce»" /></div>
+            <div class="wz-campo"><label>Marcatore grammaticale <small>(tic VERBALE: come costruisce le frasi)</small></label><input type="text" id="sch-voce-marcatore" data-ai-campo="marcatore" placeholder="es. ripete l'ultima parola, frasi mai finite, verbi al passato remoto" /></div>
+            <div class="wz-campo"><label>Appellativo <small>(come chiama i PG)</small></label><input type="text" id="sch-voce-appellativo" data-ai-campo="appellativo" placeholder="es. messere / guagliò / dottò / voi" /></div>
+            <div class="wz-campo"><label>Abitudine discorsiva <small>(proverbi? domande retoriche? si ripete? parla in terza persona?)</small></label><input type="text" id="sch-voce-abitudine" data-ai-campo="abitudine" placeholder="es. risponde con proverbi; parla di sé in terza persona" /></div>
+            <div class="wz-campo"><label>3 frasi pronte <small>(già scritte, da riusare al volo — ✨ le propone l'AI in carattere)</small></label>
+                <input type="text" id="sch-voce-saluto" data-ai-campo="saluto" placeholder="saluto…" />
+                <input type="text" id="sch-voce-rifiuto" data-ai-campo="rifiuto" placeholder="rifiuto…" />
+                <input type="text" id="sch-voce-minaccia" data-ai-campo="minaccia" placeholder="minaccia / chiusura…" />
+            </div>
+        </div>
+        <div class="wz-tab-pane" data-cara-pane="tratti" hidden>
+            <p class="wz-mini-nota">Chi è — tutti opzionali, aggiungi solo ciò che serve; ✨ li propone l'AI.</p>
+            <div class="wz-campo"><label>Vizio <small>(fumo, gioco, alcol, spese… un debole che lo caratterizza)</small></label><input type="text" id="sch-tratti-vizio" data-ai-campo="vizio" placeholder="es. gioca a go d'azzardo nel retro di un salone" /></div>
+            <div class="wz-campo"><label>Tic o gesto <small>(FISICO, non verbale: cosa fa col corpo)</small></label><input type="text" id="sch-tratti-tic" data-ai-campo="tic" placeholder="es. pulisce gli occhiali quando vuole guadagnare tempo" /></div>
+            <div class="wz-campo"><label>Oggetto <small>(qualcosa che porta sempre con sé)</small></label><input type="text" id="sch-tratti-oggetto" data-ai-campo="oggetto" placeholder="es. la tessera del video-noleggio, più consumata della carta d'identità" /></div>
+        </div>
+    </div>
+
+    <div class="wz-campo">
+        <label>Altri allegati <small>(documenti, note, immagini varie — nella cartella di questa avventura; la foto-ritratto sta nel suo box in alto)</small></label>
+        <div class="wz-allegati" id="sch-allegati"></div>
+    </div>
+
+    <div class="wz-campo wz-verbale-box">
+        <label>📋 Deposizione — cosa racconta alla polizia <small>(in prima persona; nasce da cosa sa/non sa/ha fatto)</small></label>
+        <textarea id="sch-deposizione" class="wz-verbale" rows="6" placeholder="«Quella sera io ero…» — le parole che il personaggio mette a verbale. Se omette o mente, qui omette o mente."></textarea>
+        <div class="wz-nome-riga wz-sch-azioni">
+            <button type="button" class="wz-btn" id="sch-ai-depo" hidden>✨ Scrivi la deposizione (dalla scheda qui sopra)</button>
+        </div>
+        <label class="wz-check"><input type="checkbox" id="sch-dep-handout" /> 📄 è un handout — lo ritrovi raccolto al passo 13</label>
+        <input type="text" id="sch-dep-titolo" placeholder="Titolo dell'handout (es. Verbale s.i.t. — il titolare)" hidden />
+    </div>
+
+    <div id="sch-stats-p" class="wz-stats" hidden>
+        <h4 class="wz-h4">🎲 Statistiche <small>(attributi 4–9 · Ki col tiro del manuale)</small></h4>
+        <div class="wz-riga-lista">
+            <select id="st-p-livello" class="wz-medio" title="Un esempio da cui partire — poi ritocchi tutto"></select>
+            <button type="button" class="wz-btn" id="st-p-tira">🎲 Tira</button>
+        </div>
+        <div class="wz-stats-griglia">
+            <label>Distacco <input type="number" id="st-p-Distacco" min="1" max="12" /></label>
+            <label>Pazienza <input type="number" id="st-p-Pazienza" min="1" max="12" /></label>
+            <label>Silenzio <input type="number" id="st-p-Silenzio" min="1" max="12" /></label>
+            <label>Lucidità <input type="number" id="st-p-Lucidità" min="1" max="12" /></label>
+            <label>Ascolto <input type="number" id="st-p-Ascolto" min="1" max="12" /></label>
+            <label>Presenza <input type="number" id="st-p-Presenza" min="1" max="12" /></label>
+            <label>Ki <input type="number" id="st-p-ki" min="0" max="12" title="Ki massimo = attributo più basso + 2d6 prendi il dado migliore, tetto 12. Il 🎲 lo tira così. A Ki 0 o sotto: fuori gioco." /></label>
+        </div>
+        <small class="wz-nota">Gli esempi sono <strong>punti di partenza</strong>: il 🎲 tira gli attributi nel loro range e il <strong>Ki con la regola del manuale</strong> (attributo più basso + 2d6, prendi il migliore, tetto 12). Poi ritocca ogni numero: si salva da solo. Le comparse senza scheda, in combattimento, usano la Riserva 3/6/9.</small>
+    </div>
+
+    <div id="sch-stats-e" class="wz-stats" hidden>
+        <h4 class="wz-h4">🎲 Scheda ente <small>(2d6 somma, min 4 max 9 — la Corruzione non si tira mai: si assegna)</small></h4>
+        <div class="wz-riga-lista">
+            <button type="button" class="wz-btn" id="st-e-tira">🎲 Tira per tipo</button>
+            <small class="wz-nota" id="st-e-tipo"></small>
+        </div>
+        <div class="wz-stats-griglia">
+            <label>Organico <input type="number" id="st-e-Organico" min="4" max="9" /></label>
+            <label>Efficienza <input type="number" id="st-e-Efficienza" min="4" max="9" /></label>
+            <label>Velocità <input type="number" id="st-e-Velocità" min="4" max="9" /></label>
+            <label>Risorse <input type="number" id="st-e-Risorse" min="4" max="9" /></label>
+            <label>Rete <input type="number" id="st-e-Rete" min="4" max="9" /></label>
+            <label>Corruzione <input type="number" id="st-e-Corruzione" min="4" max="9" title="Sempre a mano: dipende dall'ente e dall'ambientazione, non dal caso" /></label>
+        </div>
+        <div class="wz-campo"><label>Specializzazioni <small>(a 8 una, a 9 due — il tiro le propone, poi decidi tu)</small></label><textarea id="st-e-spec" rows="2" placeholder="es. Rete informatori; Laboratorio scientifico"></textarea></div>
+        <small class="wz-nota">Il tipo del gruppo (passo 8) sposta il tiro: un kōban ha poco organico ma conosce il territorio, un honbu ha mezzi e uomini. I numeri si salvano da soli.</small>
+    </div>
+
+    <div id="sch-contatti" class="wz-stats wz-contatti-box" hidden>
+        <h4 class="wz-h4">📇 Contatti e reperibilità <small>(dove abita, come si raggiunge, dove trovarlo)</small></h4>
+        <div class="wz-nome-riga wz-sch-azioni">
+            <button type="button" class="wz-btn" id="sch-cont-ai" hidden>✨ Proponi i contatti (riempie solo i vuoti)</button>
+            <span class="wz-alg-msg" id="sch-cont-msg"></span>
+        </div>
+        <div class="wz-campo"><label>Residenza <small>(un luogo del passo 9 — lì si modifica; qui scegline uno o creane uno nuovo)</small></label>
+            <select id="sch-cont-residenza-sel" class="wz-cont-resel" title="Scegli un luogo del caso o creane uno nuovo"></select>
+            <div id="sch-cont-residenza-nuovo" class="wz-res-nuovo" hidden>
+                <input type="text" data-res-nome placeholder="Nome del luogo *" />
+                <input type="text" data-res-via placeholder="Via / indirizzo (facoltativo)" />
+                <button type="button" class="wz-btn wz-mini" id="sch-cont-residenza-crea">✓ crea</button>
+            </div>
+            <div id="sch-cont-residenza-info" class="wz-cont-assegnata" hidden>
+                <small class="wz-nota">✏️ l'indirizzo si modifica nel passo 9 · Luoghi</small>
+                <button type="button" class="wz-btn wz-mini" id="sch-cont-residenza-togli" title="Togli l'assegnazione dal PNG">✕ togli</button>
+            </div>
+        </div>
+        <div class="wz-contatti-griglia">
+            <label>Telefono <input type="text" id="sch-cont-telefono" placeholder="fisso, casa/ufficio" /></label>
+            <label>Cellulare <input type="text" id="sch-cont-cellulare" placeholder="keitai / PHS" /></label>
+            <label>Email <input type="text" id="sch-cont-email" placeholder="rara nel '97, ma…" /></label>
+            <label>Altro <input type="text" id="sch-cont-altro" placeholder="cercapersone, fax, tramite terzi" /></label>
+        </div>
+        <div class="wz-campo"><label>Dove trovarlo <small>(altri luoghi abituali: lavoro, locali, dove passa le sere)</small></label><textarea id="sch-cont-dove" rows="2" placeholder="es. il bar sotto casa dopo le 20; il dōjō il martedì sera"></textarea></div>
+    </div>
+</div>
+
+<h3 class="wz-h3">Schede fatte</h3>
+<div id="wz-schede-fatte" class="wz-info"></div>

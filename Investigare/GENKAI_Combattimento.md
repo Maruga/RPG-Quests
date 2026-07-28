@@ -66,6 +66,7 @@ Ogni arma ha il suo **attributo**, due **velocità** (estrazione: sfoderarla · 
 | **Pugno** (Lotta) | Presenza | 1 | 1 | — | 1 | no | 1 |
 | **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | 1 | 1 | — | 1-2 (GM) | no | 1 |
 | **Coltello** | Pazienza | 2 | 1 | — | 2 | no | 1 |
+| **Manganello** (keibō 警棒) | Silenzio | 2 | 1 | — | 2 | no | 1 |
 | **Pistola / revolver** | Lucidità | 3 | 1 | 4 | 3 | sì* | 3 |
 | **Fucile** (pompa / caccia) | Distacco | 4 | 2 | 5 | 4 | no | 1 |
 | **Mitragliatore leggero** | Distacco | 4 | 2 | 5 | 4 | sì | 9 |
@@ -215,10 +216,10 @@ DIFESA su Lucidità (fuoco) | Pazienza (lame, pugni) | Distacco (defilarsi)
 
 VELOCITÀ: estrazione (sfoderare) / uso (in mano) / ricarica (= sfoderare)
 ARMI: Pugno 1/1/- d1 (Presenza) | Improvvisata 1/1/- d1-2
-      Coltello 2/1/- d2 (Pazienza) | Pistola 3/1/4 d3 (Lucidità, 3 colpi)
-      Fucile 4/2/5 d4 (Distacco) | Mitr.leggero 4/2/5 d4 raffica
-      Mitr.pesante 5/3/6 d5 raffica | Precisione 5/3/5 d5 (Senmon!)
-      Granata 2/2/- d4 area (Presenza)
+      Coltello 2/1/- d2 (Pazienza) | Manganello 2/1/- d2 (Silenzio)
+      Pistola 3/1/4 d3 (Lucidità, 3 colpi) | Fucile 4/2/5 d4 (Distacco)
+      Mitr.leggero 4/2/5 d4 raffica | Mitr.pesante 5/3/6 d5 raffica
+      Precisione 5/3/5 d5 (Senmon!) | Granata 2/2/- d4 area (Presenza)
 COLPI MULTIPLI: ogni colpo un tiro, +2/+3 a tutte le somme;
       danno subito = sequenza interrotta
 

@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Pugno di Ferro 鉄拳
 *Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.*
@@ -89,7 +89,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
 
 ### Opzione 1: Ambienti yakuza *(Silenzio)*
 Diciott'anni di servizio a Kyoto: sai chi comanda in quali strade, come si parla a un kumichō senza perdere la faccia, e quando un silenzio è una minaccia.
@@ -113,7 +113,7 @@ Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto 
 |---|---|---|
 | Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
 | Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Pazienza o Silenzio · vel. 2/1 · danno 2 |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
 | — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
 
@@ -175,7 +175,7 @@ Sai che Noriko è stanca di coprire i tuoi errori. Sai che il rapporto con Takes
 | Campo | Dettaglio |
 |-------|-----------|
 | **Chi è** | Vecchio compagno di università, ora giornalista al Kyoto Shimbun |
-| **Relazione** | Amici dai tempi del dormitorio, vi vedete per bere ogni tanto |
+| **Relazione** | Amici dai tempi del dormitorio, vi vedete ogni tanto — lui beve, tu ordini tè oolong |
 | **Cosa può fare** | Accesso agli archivi del giornale, voci di corridoio, contatti nel mondo della stampa |
 | **Cosa vuole in cambio** | Ogni tanto una soffiata, niente di compromettente |
 
@@ -210,7 +210,7 @@ Quando qualcuno mette in dubbio le sue priorità tra lavoro e famiglia. Soprattu
 - **Tic**: Si massaggia il ponte del naso quando è stanco o frustrato.
 - **Oggetto personale**: Un orologio Seiko automatico, regalo di suo padre per la promozione a ispettore.
 - **Gusto**: Udon caldo da un chiosco vicino alla centrale. Sempre lo stesso, sempre in piedi.
-- **Rituale**: Ogni mattina, prima di entrare in centrale, caffè Boss in lattina al distributore. Sempre lo stesso, sempre in piedi.
+- **Rituale**: Ogni mattina, prima di entrare in centrale, caffè Boss in lattina al distributore.
 
 ---
 

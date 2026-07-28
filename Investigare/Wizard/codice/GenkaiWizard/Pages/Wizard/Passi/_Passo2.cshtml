@@ -1,0 +1,53 @@
+<p class="wz-aiuto">L'identità <strong>professionale e sociale</strong> della vittima — che posto occupava nel mondo. Non la psicologia: quella viene dopo, e solo se serve. Metodo × professione = la scena del crimine emerge da sola.</p>
+
+<div class="wz-campo">
+    <label>Professione</label>
+    <select data-campo="passo2.professioneId" data-opzioni="lib:professioni:professioni:id:nome:ambiente"></select>
+    <div class="wz-info" data-info="professioni:professioni:passo2.professioneId"
+         data-info-campi="ambiente,nota1997" data-info-elenchi="luoghiImpliciti,cerchieTipiche,problemiTipici"></div>
+</div>
+
+<div class="wz-riga2">
+    <div class="wz-campo">
+        <label>Età</label>
+        <input type="number" data-campo="passo2.eta" min="16" max="99" />
+    </div>
+    <div class="wz-campo">
+        <label>Genere</label>
+        <select data-campo="passo2.genere">
+            <option value="m">Uomo</option>
+            <option value="f">Donna</option>
+        </select>
+    </div>
+</div>
+
+<div class="wz-campo">
+    <label>Nome della vittima</label>
+    <div class="wz-riga-lista">
+        <input type="text" id="wz-vitt-cognome" placeholder="Cognome" class="wz-corto" autocomplete="off" />
+        <input type="text" id="wz-vitt-nome" placeholder="Nome" class="wz-corto" autocomplete="off" />
+        <span id="wz-vitt-kanji" class="wz-nome-mostra"></span>
+        <button type="button" class="wz-btn" id="wz-dado-vittima">🎲 Proposte</button>
+    </div>
+    <div id="wz-vitt-esito" class="wz-nota"></div>
+    <div id="wz-vitt-proposte" class="wz-chips" hidden></div>
+    <small class="wz-nota">Scrivi il tuo nome o fatti proporre: il controllo anti-omonimie (cast base GENKAI + nomi già nel caso) gira comunque.</small>
+</div>
+
+<div class="wz-campo">
+    <label>Posto nel mondo <span class="wz-obbl">*</span></label>
+    <input type="text" data-campo="passo2.postoNelMondo"
+           placeholder="Professore di chimica, Università di Kyoto, 25 anni di carriera" />
+    <details class="wz-help">
+        <summary>❓ Cosa scrivo qui — esempi</summary>
+        <div>
+            <p>Una frase su <strong>che posto occupava nel mondo</strong>: mestiere, dove, da quanto. Non la personalità — quella emergerà da sola.</p>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo2.postoNelMondo']">Professore di chimica, Università di Kyoto, 25 anni di carriera</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo2.postoNelMondo']">Proprietaria di un izakaya a Pontochō, terza generazione</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo2.postoNelMondo']">Funzionario del catasto, ufficio tecnico del comune, vicino alla pensione</button>
+            <button type="button" class="wz-esempio" data-target="[data-campo='passo2.postoNelMondo']">Capocantiere di un'impresa edile in difficoltà dopo la bolla</button>
+        </div>
+    </details>
+</div>
+
+<button type="button" class="wz-btn wz-ai" data-proponi="2" hidden>✨ Proponi 3 vittime</button>

@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi Genkai) — ma se il costo ti porterebbe a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Ombra della Verità 影の真実
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
@@ -89,7 +89,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti, e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
 
 ### Opzione 1: Interrogatorio *(Pazienza o Ascolto)*
 Il tuo mestiere. Sblocca le tecniche di apertura (Rispecchiamento, Linguaggio Inclusivo...) — il terreno emotivo che prepari prima delle domande vere.
@@ -113,7 +113,7 @@ Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto 
 |---|---|---|
 | Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
 | Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Pazienza o Silenzio · vel. 2/1 · danno 2 |
+| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
 | — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
 
@@ -177,7 +177,7 @@ Ma Kazuo è sangue del tuo sangue. E quando ha bisogno, sa sempre dove trovare s
 | **Cosa può fare** | Consulenza legale, accesso a fascicoli pubblici, contatti in tribunale |
 | **Cosa vuole in cambio** | Niente di specifico - famiglia è famiglia |
 
-**Come contattarlo**: Studio legale Nakamura & Associati, Via Kawaramachi. O al cellulare.
+**Come contattarlo**: Studio legale Nakamura & Associati, via Kawaramachi. O al cellulare.
 
 **Limite**: Una volta per sessione senza conseguenze. Hideki non fa mai nulla di illegale, ma conosce le zone grigie.
 
@@ -208,7 +208,7 @@ Quando qualcuno usa i legami di sangue come arma. Tocca troppo vicino a casa.
 - **Tic**: Annuisce lentamente anche quando non è d'accordo. Le persone lo trovano rassicurante.
 - **Oggetto personale**: Un taccuino Moleskine nero, pieno di appunti in calligrafia minuscola. Non usa registratori.
 - **Gusto**: Ramen miso con extra chashu. Conosce tutti i posti migliori di Kyoto a memoria.
-- **Segreto**: Colleziona manga shoujo. Li tiene nascosti in un cassetto della scrivania. Se qualcuno li vedesse, morirebbe di vergogna.
+- **Segreto**: Colleziona manga shōjo. Li tiene nascosti in un cassetto della scrivania. Se qualcuno li vedesse, morirebbe di vergogna.
 
 ---
 

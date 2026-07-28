@@ -1,0 +1,38 @@
+@page
+@model GenkaiWizard.Pages.Pg.IndexModel
+@{
+    ViewData["Title"] = "I miei personaggi";
+}
+
+<div class="wz-progetti">
+    <h1>I miei personaggi</h1>
+
+    <form method="post" asp-page-handler="Crea" class="wz-nuovo">
+        <input type="text" name="nome" maxlength="120" placeholder="Nome del personaggio (opzionale, lo scegli anche dopo)" />
+        <button type="submit" class="wz-btn wz-btn-primario">+ Nuovo personaggio</button>
+    </form>
+
+    @if (Model.Personaggi.Count == 0)
+    {
+        <p class="wz-vuoto">Nessun personaggio.</p>
+    }
+    else
+    {
+        <ul class="wz-lista">
+            @foreach (var p in Model.Personaggi)
+            {
+                <li class="wz-card">
+                    <a class="wz-card-main" asp-page="/Pg/Scheda" asp-route-id="@p.Id">
+                        <strong>@p.Nome</strong>
+                        <span class="wz-meta">agg. @p.AggiornatoIl.ToLocalTime().ToString("dd/MM HH:mm")</span>
+                    </a>
+                    <a class="wz-btn wz-mini" asp-page="/Pg/Stampa" asp-route-id="@p.Id" title="Vista stampabile">🖨</a>
+                    <form method="post" asp-page-handler="Elimina" asp-route-id="@p.Id"
+                          onsubmit="return confirm('Eliminare definitivamente questo personaggio?');">
+                        <button type="submit" class="wz-btn-x" title="Elimina">✕</button>
+                    </form>
+                </li>
+            }
+        </ul>
+    }
+</div>

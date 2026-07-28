@@ -1,0 +1,32 @@
+<p class="wz-aiuto"><strong>La verità assoluta</strong>, in ordine: prima / il fatto / dopo. Asciutta, consultabile al volo. Da qui il wizard genererà tabulati, registri e referti: gli eventi con telefoni, accessi, soldi vanno scritti con <strong>data/ora precise</strong>.</p>
+
+<details class="wz-help">
+    <summary>❓ Come si scrive un evento — esempi</summary>
+    <div>
+        <p>Un evento = <strong>quando + chi fa cosa</strong>, una riga. Scegli la fase (prima / il fatto / dopo). Se c'è di mezzo un telefono, un badge, dei soldi: metti l'ora precisa, servirà per generare tabulati e registri.</p>
+        <p><strong>Prima del fatto:</strong></p>
+        <div class="wz-esempio-testo">3 settimane prima — Il professore convoca Kuroda in studio: lite a porte chiuse. La segretaria sente le voci, non le parole.</div>
+        <div class="wz-esempio-testo">Venerdì, 18:40 — Kuroda preleva 200.000 ¥ allo sportello di Karasuma (registrato dalla banca).</div>
+        <p><strong>Il fatto:</strong></p>
+        <div class="wz-esempio-testo">Martedì, 06:31 — Kuroda entra in facoltà col badge (registro accessi). Versa il composto nel tè in filtri. Esce alle 06:55.</div>
+        <p><strong>Dopo il fatto:</strong></p>
+        <div class="wz-esempio-testo">Martedì, 21:12 — Kuroda chiama il padre a Osaka dal telefono di casa, 8 minuti (finirà nel tabulato).</div>
+        <div class="wz-esempio-testo">Giovedì — Kuroda si presenta al funerale, porta i fiori più costosi di tutti.</div>
+    </div>
+</details>
+
+<div class="wz-campo">
+    <label>Da quando parte il caso <span class="wz-opz">(precompila il calendario degli eventi nuovi)</span></label>
+    <input type="date" data-campo="passo7.dataInizio" class="wz-data-caso" />
+    <small class="wz-nota">GENKAI vive nel 1997 (Heisei 9), ma la data è libera: ambienta quando vuoi. Ogni evento nuovo parte dall'<strong>ultima data inserita</strong> (o da questa, se è il primo) — e se cambi la data di un evento, si sposta da solo al posto giusto in cronologia.</small>
+</div>
+
+<div class="wz-ordina" id="wz-eventi-ordina">
+    <span class="wz-ordina-lbl">Ordina per:</span>
+    <button type="button" class="wz-btn wz-mini" data-ordina="data">data</button>
+    <button type="button" class="wz-btn wz-mini" data-ordina="fase">fase (prima / fatto / dopo)</button>
+</div>
+
+<div data-lista="passo7.eventi" data-tipo-lista="evento"></div>
+
+<button type="button" class="wz-btn wz-ai" data-proponi="7" hidden>✨ Proponi la cronistoria completa</button>

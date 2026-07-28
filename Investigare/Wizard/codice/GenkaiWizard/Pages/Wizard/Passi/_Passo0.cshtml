@@ -1,0 +1,35 @@
+<p class="wz-aiuto">Prima di costruire, il metodo chiede di decidere la cornice: <strong>durata</strong> (quante informazioni ci sono da trovare) e <strong>complessità</strong> (quante strade portano a quelle informazioni) sono due assi <em>indipendenti</em>. Il passo 12 confronterà il caso con quello che dichiari qui.</p>
+
+<div class="wz-campo">
+    <label>Quartiere del caso</label>
+    <select data-campo="setup.quartiere" data-opzioni="lib:luoghi:quartieri:id:nome:carattere"></select>
+    <small class="wz-nota">Non conosci Kyoto? Apri la <button type="button" class="wz-link" id="wz-mappa-da-passo">mappa dei quartieri 🗺</button> e scegli da lì (si può aprire da ogni passo, in alto).</small>
+    <div class="wz-info" data-info="luoghi:quartieri:setup.quartiere" data-info-campi="carattere,criminalitaTipica,nota"></div>
+</div>
+
+<div class="wz-campo">
+    <label>Durata</label>
+    <div class="wz-radio3">
+        <label><input type="radio" name="durata" data-campo="setup.durata" value="1" /> Corta</label>
+        <label><input type="radio" name="durata" data-campo="setup.durata" value="2" /> Media</label>
+        <label><input type="radio" name="durata" data-campo="setup.durata" value="3" /> Lunga</label>
+    </div>
+</div>
+
+<div class="wz-campo">
+    <label>Complessità</label>
+    <div class="wz-radio3">
+        <label><input type="radio" name="complessita" data-campo="setup.complessita" value="1" /> Semplice</label>
+        <label><input type="radio" name="complessita" data-campo="setup.complessita" value="2" /> Media</label>
+        <label><input type="radio" name="complessita" data-campo="setup.complessita" value="3" /> Difficile</label>
+    </div>
+</div>
+
+<div class="wz-campo">
+    <label class="wz-check"><input type="checkbox" data-campo="setup.agganciKage" /> Proponi agganci ai Kage dei PG (passo 11)</label>
+</div>
+
+<div class="wz-campo">
+    <label>Note della cornice <span class="wz-opz">(opzionale)</span></label>
+    <textarea data-campo="setup.note" rows="2" placeholder="Es. sessione singola per il gruppo del giovedì"></textarea>
+</div>

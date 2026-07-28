@@ -1,0 +1,112 @@
+@page "/Wizard/{id:guid}/{passo:int?}"
+@model GenkaiWizard.Pages.Wizard.IndexModel
+@{
+    ViewData["Title"] = $"{Model.Progetto.Titolo} — passo {Model.Passo + 1}";
+    var schermate = GenkaiWizard.Pages.Wizard.IndexModel.Schermate;
+    var ultima = GenkaiWizard.Pages.Wizard.IndexModel.UltimaSchermata;
+    var etichette = new[] { "Cornice", "La morte", "Vittima", "La sua vita", "Assassino", "Suo mondo", "Movente", "Gruppi", "Luoghi", "Cronistoria", "Schede", "Informazioni", "Handout", "Calendario", "Riepilogo" };
+}
+
+<div class="wz" id="wz-root">
+
+    <header class="wz-testata">
+        <a asp-page="/Progetti/Index" class="wz-indietro" title="I miei casi">‹</a>
+        <input id="wz-titolo" class="wz-titolo" maxlength="120" value="@Model.Progetto.Titolo"
+               @(Model.Progetto.Demo ? "readonly" : "") />
+        <span id="wz-salvato" class="wz-salvato" title="Stato salvataggio">●</span>
+        @if (Model.AiAttiva)
+        {
+            <select id="wz-modello-ai" class="wz-modello" title="Modello AI usato dai pulsanti ✨ (qualità e costo)">
+                <option value="claude-opus-5">🤖 Opus 5</option>
+                <option value="claude-fable-5">🤖 Fable 5</option>
+                <option value="claude-sonnet-5">🤖 Sonnet 5</option>
+                <option value="claude-haiku-4-5">🤖 Haiku 4.5</option>
+            </select>
+            <select id="wz-effort-ai" class="wz-modello" title="Quanto ragiona l'AI: più alto = migliore ma più lento e costoso (non vale per Haiku)">
+                <option value="max">🧠 Max</option>
+                <option value="high">🧠 Alto</option>
+                <option value="medium">🧠 Medio</option>
+                <option value="low">🧠 Basso</option>
+            </select>
+        }
+        <button type="button" id="wz-mappa-btn" class="wz-drawer-btn" title="Mappa di Kyoto">🗺</button>
+        <button type="button" id="wz-drawer-btn" class="wz-drawer-btn" title="Riassunto del caso">☰</button>
+    </header>
+
+    <div id="wz-mappa-overlay" class="wz-mappa-overlay" hidden>
+        <div class="wz-mappa-scatola">
+            <div class="wz-proposte-testata">
+                <h3>Kyoto, 1997 — i quartieri</h3>
+                <button type="button" id="wz-mappa-chiudi" class="wz-btn-x">✕</button>
+            </div>
+            <partial name="Passi/_MappaKyoto" />
+        </div>
+    </div>
+
+    <nav class="wz-progresso" aria-label="Passi">
+        @for (var i = 0; i <= ultima; i++)
+        {
+            <a class="wz-punto @(i == Model.Passo ? "attivo" : "") @(i < Model.Progetto.PassoCorrente ? "fatto" : "")"
+               href="/Wizard/@Model.Progetto.Id/@i" title="@(i + 1) — @schermate[i].Titolo">
+                <span class="wz-punto-n">@(i + 1)</span>
+                <span class="wz-punto-t">@etichette[i]</span>
+            </a>
+        }
+    </nav>
+
+    <aside id="wz-drawer" class="wz-drawer" hidden>
+        <div class="wz-rias-testata">
+            <h3>Riassunto del caso</h3>
+            <button type="button" id="wz-rias-toggle" class="wz-btn wz-mini">Chiudi tutto</button>
+        </div>
+        <p class="wz-nota">✍ Tocca un <span class="wz-nome-ins-demo">nome</span> per inserirlo nel campo in cui stai scrivendo. Se poi rinomini qualcuno, il nome si aggiorna in tutti i testi.</p>
+        <div id="wz-drawer-corpo"></div>
+    </aside>
+
+    <main class="wz-passo">
+        <h2><span class="wz-passo-n">Passo @(Model.Passo + 1) di @(ultima + 1)</span> @schermate[Model.Passo].Titolo</h2>
+
+        <partial name="@("Passi/" + schermate[Model.Passo].Partial)" />
+
+        <div id="wz-proposte" class="wz-proposte" hidden>
+            <div class="wz-proposte-testata">
+                <h3>Proposte ✨</h3>
+                <button type="button" id="wz-proposte-chiudi" class="wz-btn-x">✕</button>
+            </div>
+            <div id="wz-proposte-corpo"></div>
+        </div>
+    </main>
+
+    <footer class="wz-nav">
+        @if (Model.Passo > 0)
+        {
+            <button type="button" class="wz-btn" data-vai="@(Model.Passo - 1)">‹ Indietro</button>
+        }
+        else
+        {
+            <span></span>
+        }
+        @if (Model.Passo < ultima)
+        {
+            <button type="button" class="wz-btn wz-btn-primario" data-vai="@(Model.Passo + 1)">Avanti ›</button>
+        }
+        else
+        {
+            <a class="wz-btn wz-btn-primario" href="/Wizard/@Model.Progetto.Id?handler=Export">⬇ Scarica dossier (.zip)</a>
+        }
+    </footer>
+</div>
+
+@section Scripts {
+    <script>
+        window.WIZ = {
+            id: '@Model.Progetto.Id',
+            passo: @Model.Passo,
+            demo: @(Model.Progetto.Demo ? "true" : "false"),
+            aiAttiva: @(Model.AiAttiva ? "true" : "false"),
+            immaginiAttive: @(Model.ImmaginiAttive ? "true" : "false"),
+            stato: @Html.Raw(Model.Progetto.StatoJson)
+        };
+    </script>
+    <script src="~/js/wizard.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,76 @@
+{
+  "$commento": "Biblioteca tratti per rendere vivo un PNG in un click (passo 8). Stesso spirito delle schede PG (vizio/tic/oggetto/frase) ma pool separato. REGOLA: un tratto non è mai un indizio di colpevolezza — è vita quotidiana; se il GM vuole usarlo come tell, lo decide lui.",
+
+  "vizi": [
+    "Seven Stars una dietro l'altra, ma solo fuori casa — la moglie crede abbia smesso",
+    "Caffè in lattina del distributore, tre al giorno, sempre la stessa marca",
+    "Pachinko il venerdì sera, mai più di diecimila yen — dice",
+    "Whisky economico allungato con acqua calda, da solo dopo mezzanotte",
+    "Compra riviste di ippica ma non scommette più — le legge e basta",
+    "Dolci di Kiyomizu nascosti nel cassetto della scrivania",
+    "One-cup di sake sul treno del ritorno, ogni sera, come un rito",
+    "Gioca a go d'azzardo nel retro di un salone — puntate piccole, orgoglio enorme",
+    "Colleziona omiyage dei viaggi che non ha mai fatto",
+    "Karaoke da solo il mercoledì: sempre le stesse tre canzoni di Ishihara Yūjirō",
+    "Mangia ramen alle 2 di notte quando è nervoso — il gestore lo conosce",
+    "Fuma solo quando telefona: il portacenere accanto al telefono lo tradisce"
+  ],
+
+  "tic": [
+    "Si aggiusta il nodo della cravatta prima di ogni risposta impegnativa",
+    "Pulisce gli occhiali quando vuole guadagnare tempo",
+    "Ride una battuta prima di dire una cosa seria",
+    "Allinea gli oggetti sul tavolo mentre parla — biglietti, accendino, tazza",
+    "Chiude gli occhi due secondi prima di rispondere alle date",
+    "Si inchina anche al telefono",
+    "Batte due colpetti sul pacchetto di sigarette prima di aprirlo",
+    "Parla più piano quando mente — non più forte",
+    "Tocca il telaio della porta uscendo di casa: scaramanzia mai spiegata",
+    "Conta i resti due volte, sempre, anche davanti alla polizia",
+    "Sposta il peso sulla gamba sinistra quando la domanda non gli piace",
+    "Sorride troppo presto — mezzo secondo prima della battuta"
+  ],
+
+  "oggetti": [
+    "Un orologio fermo che porta lo stesso — regalo del padre",
+    "L'agendina consumata con la fascia elastica: dentro c'è tutta la sua vita",
+    "Un portafortuna omamori sbiadito di un santuario di provincia",
+    "L'accendino d'argento con incise iniziali NON sue",
+    "Un pettine di legno nel taschino, usato solo quando è agitato",
+    "La foto piegata in quattro nel portafoglio — mai mostrata a nessuno",
+    "Un netsuke di volpe attaccato alle chiavi di casa",
+    "La penna stilografica buona: firma solo le cose importanti con quella",
+    "Il fazzoletto stirato in modo maniacale, cambiato ogni giorno",
+    "Un biglietto del cinema del 1989 usato come segnalibro perpetuo",
+    "La tessera del video-noleggio più consumata della carta d'identità",
+    "Un rosario buddista al polso, portato come un orologio"
+  ],
+
+  "frasi": [
+    "«Shōganai» — e per lui chiude davvero ogni discorso",
+    "«Ai miei tempi questo quartiere...» — e parte comunque, sempre",
+    "«Non sono affari miei, però...» — ed erano affari suoi da mesi",
+    "«Chiedo scusa per il disturbo» anche quando il disturbato è lui",
+    "«La memoria non è più quella di una volta» — la usa come scudo, la memoria è perfetta",
+    "«Mia moglie dice sempre che parlo troppo» — e continua a parlare",
+    "«Queste cose ai giornali non le dico» — e ai PG le ha appena dette",
+    "«Il lavoro è lavoro» — risposta unica a tre domande diverse",
+    "«Era una brava persona» — detto con mezzo secondo di ritardo",
+    "«Io pago le tasse» — premessa a ogni lamentela con la polizia",
+    "«Kyoto non è più Kyoto» — qualunque cosa significhi",
+    "«Ne parlavo giusto con...» — e il nome che segue è sempre interessante"
+  ],
+
+  "sottoPressione": [
+    "Diventa cerimonioso: più è in difficoltà, più si inchina",
+    "Passa al dialetto stretto di Kyoto — le parole si fanno oblique",
+    "Cerca il consenso della moglie/collega con lo sguardo prima di ogni frase",
+    "Offre tè, dolci, altro tè — ospitalità come cortina fumogena",
+    "Si rifugia nei dettagli tecnici del suo mestiere",
+    "Cita il proprio avvocato/il proprio capo come un talismano",
+    "Ammutolisce: risposte a monosillabi, sguardo al pavimento",
+    "Contrattacca con la burocrazia: «Avete un mandato? Un modulo? Un timbro?»",
+    "Piange in modo brusco e vero — e si vergogna più del pianto che del resto",
+    "Diventa improvvisamente disponibilissimo — troppo"
+  ]
+}
