@@ -1,0 +1,2 @@
+{"ts":"2026-08-02T00:48:05.6099809Z","incident_id":"20260802-004531-86b511","provider":"perplexity","model":"sonar-deep-research","cost_usd":0.5,"tokens_in":669,"tokens_out":14418,"duration_ms":154041}
+{"ts":"2026-08-02T00:48:08.9156032Z","incident_id":"20260802-004531-86b511","provider":"openai","model":"gpt-5.5","cost_usd":0.31595,"tokens_in":610,"tokens_out":10430,"duration_ms":157344}

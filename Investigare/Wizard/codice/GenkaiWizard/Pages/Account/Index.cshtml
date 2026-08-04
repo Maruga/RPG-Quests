@@ -1,0 +1,110 @@
+@page "/Account"
+@model GenkaiWizard.Pages.Account.IndexModel
+@{
+    ViewData["Title"] = "Il tuo account";
+}
+
+<div class="acc">
+    <header class="acc-testata">
+        <h1>Il tuo account <span class="acc-kanji">設定</span></h1>
+        <p class="acc-sotto">@Model.Email</p>
+    </header>
+
+    @if (Model.Messaggio is not null) { <p class="acc-ok">@Model.Messaggio</p> }
+    @if (Model.Errore is not null) { <p class="acc-errore">@Model.Errore</p> }
+
+    <div class="acc-colonne">
+        <section class="acc-riquadro">
+            <h2>Email</h2>
+            <p class="acc-nota">È anche il nome con cui entri.</p>
+            <form method="post" asp-page-handler="Email">
+                <div class="acc-campo">
+                    <label for="NuovaEmail">Indirizzo</label>
+                    <input id="NuovaEmail" name="NuovaEmail" type="email" value="@Model.Email" autocomplete="email" />
+                </div>
+                <button type="submit" class="acc-btn">Aggiorna email</button>
+            </form>
+        </section>
+
+        <section class="acc-riquadro">
+            <h2>Password</h2>
+            <p class="acc-nota">
+                @(Model.HaPassword
+                    ? "Almeno 8 caratteri. Serve la password attuale per cambiarla."
+                    : "Questo account entra solo con un servizio esterno: qui puoi darti una password.")
+            </p>
+            <form method="post" asp-page-handler="Password">
+                <div asp-validation-summary="ModelOnly" class="acc-errore"></div>
+
+                @if (Model.HaPassword)
+                {
+                    <div class="acc-campo">
+                        <label asp-for="Pwd.Attuale">Password attuale</label>
+                        <input asp-for="Pwd.Attuale" type="password" autocomplete="current-password" />
+                        <span asp-validation-for="Pwd.Attuale" class="acc-nota-errore"></span>
+                    </div>
+                }
+                <div class="acc-campo">
+                    <label asp-for="Pwd.Nuova">Nuova password</label>
+                    <input asp-for="Pwd.Nuova" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Pwd.Nuova" class="acc-nota-errore"></span>
+                </div>
+                <div class="acc-campo">
+                    <label asp-for="Pwd.Conferma">Ripetila</label>
+                    <input asp-for="Pwd.Conferma" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Pwd.Conferma" class="acc-nota-errore"></span>
+                </div>
+                <button type="submit" class="acc-btn">@(Model.HaPassword ? "Cambia password" : "Imposta password")</button>
+            </form>
+        </section>
+    </div>
+
+    <section class="acc-riquadro">
+        <h2>Accessi rapidi</h2>
+        @if (Model.Collegati.Count == 0 && Model.Collegabili.Count == 0)
+        {
+            <p class="acc-nota">
+                Nessun servizio esterno configurato su questo server. Con un <em>Client ID</em> e un
+                <em>Client secret</em> di Google, qui comparirà «Collega Google» e potrai entrare in un clic.
+            </p>
+        }
+        else
+        {
+            @if (Model.Collegati.Count > 0)
+            {
+                <ul class="acc-elenco">
+                    @foreach (var c in Model.Collegati)
+                    {
+                        <li>
+                            <span><strong>@(c.ProviderDisplayName ?? c.LoginProvider)</strong> — collegato</span>
+                            <form method="post" asp-page-handler="Scollega">
+                                <input type="hidden" name="provider" value="@c.LoginProvider" />
+                                <input type="hidden" name="chiave" value="@c.ProviderKey" />
+                                <button type="submit" class="acc-btn acc-btn-piccolo">Scollega</button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            }
+            @if (Model.Collegabili.Count > 0)
+            {
+                <form method="post" asp-page-handler="Collega" class="acc-riga-btn">
+                    @foreach (var s in Model.Collegabili)
+                    {
+                        <button type="submit" name="provider" value="@s.Name" class="acc-btn acc-btn-esterno">
+                            Collega @s.DisplayName
+                        </button>
+                    }
+                </form>
+            }
+        }
+    </section>
+
+    <form method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/" class="acc-esci">
+        <button type="submit" class="acc-btn">Esci dall'account</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

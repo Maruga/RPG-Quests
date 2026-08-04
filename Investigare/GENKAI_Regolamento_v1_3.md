@@ -77,7 +77,7 @@ Il **Ki** rappresenta lo stato complessivo del personaggio: mentale, emotivo, fi
 
 **Ki massimo** = attributo più basso (di scheda) + 2d6 (prendi il dado più alto) + eventuali punti Ki comprati (vedi *Crescita tra i Casi*). Tetto assoluto: **12**.
 
-> **Nota**: Se uno dei due dadi mostra **1**, puoi ritirarlo — **una sola volta**. Il minimo possibile è quindi 2 (se esce ancora 1, tieni l'1).
+> **Nota**: Se uno dei due dadi mostra **1**, lo ritiri — **sempre**, anche più volte: un 1 non si tiene mai. Il minimo possibile è quindi 2.
 
 **Il dado rappresenta il momento**: non sei sempre al massimo delle tue energie — hai periodi top e periodi no. **Il dado si ritira all'inizio di un nuovo caso, o quando il GM lo ritiene opportuno** (una settimana che passa, una svolta di vita): il nuovo Ki massimo (attributo più basso + nuovo dado + comprati) **sostituisce** il vecchio, in su o in giù. Se il nuovo massimo è **inferiore al tuo Ki attuale**, il Ki attuale scende subito al nuovo massimo. Alzare l'attributo più basso di scheda alza anche il Ki massimo; i punti comprati **si sommano sempre**.
 
@@ -877,10 +877,7 @@ Il Ki può crollare per due strade diverse — con conseguenze diverse:
 - Non portano **mai** il Ki sotto 1: se una perdita lo farebbe scendere oltre, il Ki si ferma a **1**
 - La soglia resta il **Genkai** (Ki ≤ 3): crisi, uscita di scena — depressione, crollo, blocco. Si rientra (vedi *Genkai*). Di logorio non si muore: ci si spegne
 
-**Danno da combattimento** (vedi `GENKAI_Combattimento.md`):
-- Il danno **non ha pavimento**: sottrae Ki fino in fondo
-- **Ki = 1**: stato critico — a terra, a un soffio dalla fine. Qualsiasi danno ulteriore ti uccide
-- **Ki a 0 o sotto**: il PG **muore**. In combattimento si muore davvero — per questo la fuga è quasi sempre la risposta giusta
+**Danno da combattimento**: è l'altra strada, con regole sue — tutte in **`GENKAI_Combattimento.md`**.
 
 ---
 
@@ -908,9 +905,7 @@ Quando i PG **delegano** un'operazione (pedinamento, analisi forense, ricerca d'
 
 Il combattimento è **raro e pericoloso**. I PG non sono combattenti — se c'è una sparatoria, la cosa intelligente è chiamare rinforzi o scappare.
 
-Quando lo scontro è inevitabile, le regole complete — scambi, velocità delle armi, soppressione, mira, sorpresa — sono nel modulo **`GENKAI_Combattimento.md`** (*Lo Scontro — Shōtotsu 衝突*).
-
-L'essenziale: si combatte a **scambi** — entrambi tirano 2d6; il **dado più basso + la velocità dell'arma** decide chi agisce, la **somma** è attacco per chi agisce e difesa per l'altro. Danno = scarto + arma − scarto difensore, e si perde in **Ki**; **chi subisce danno perde la propria azione**. Niente Nami né Kiwami (il critico è l'1+1): il combattimento costa Ki, non tocca gli attributi né il soroban. **Il Genkai in combattimento non scatta** — l'adrenalina lo supera: si valuta a fine scontro. Il danno non ha pavimento: a Ki 0 o sotto si muore. La fuga è quasi sempre la risposta giusta.
+Tutte le regole dello scontro — scambi, armi, coperture, manovre, sorpresa, morte, il dopo — stanno **solo** nel modulo **`GENKAI_Combattimento.md`** (*Lo Scontro — Shōtotsu 衝突*): quando serve, si consulta quello.
 
 ---
 
@@ -1216,7 +1211,7 @@ Permanente solo: acquisti Shugyō (le Scene Personali muovono il valore attuale)
 KI (気)
 ≤ 3 = Genkai (fuori gioco temporaneo)
 Perdite di Ki (costi, pressione, tiri): mai sotto 1 — si fermano a 1
-Danno da combattimento: nessun pavimento — a 0 o sotto il PG muore
+Danno da combattimento: vedi GENKAI_Combattimento.md
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
 Numero 0-9 su scheda o foglio; il giorno nuovo parte dal
@@ -1264,9 +1259,7 @@ Profonde (±4, ±5): cambiano solo narrativamente
 Kiwami (2): En +1 | Kiwami (12): En -1
 Nami (3, 11): NON si applicano ai tiri di En
 
-COMBATTIMENTO (vedi GENKAI_Combattimento.md)
-Margini contrapposti: danno = margine att. + arma - margine dif.
-Si perde solo Ki. Iniziativa: dado più basso, il tiro è la 1ª azione
+COMBATTIMENTO: tutto nel modulo GENKAI_Combattimento.md
 ```
 
 ---

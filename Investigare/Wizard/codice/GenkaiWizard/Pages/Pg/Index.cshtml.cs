@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GenkaiWizard.Pages.Pg;
 
-[Authorize]
 public class IndexModel : PageModel
 {
     private readonly ApplicationDbContext _db;
@@ -17,7 +16,7 @@ public class IndexModel : PageModel
     /// <summary>Id → nome del personaggio (da identita nello stato) — mostrato accanto all'alias.</summary>
     public Dictionary<Guid, string> NomiPg { get; set; } = new();
 
-    private string Uid => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+    private string Uid => Services.Ospite.ChiUsa(HttpContext);
 
     public async Task OnGetAsync()
     {
@@ -53,8 +52,9 @@ public class IndexModel : PageModel
               "gouId": "",
               "senmon": [ { "id": "lotta", "grado": 1, "usi": 0, "diBase": true } ],
               "descrizioneFisica": "", "ritratto": "", "chiSei": "",
-              "kage": { "problema": "", "png": "" },
-              "enja": [ "" ],
+              "kage": { "archetipo": "", "problema": "", "png": "", "persone": [] },
+              "esperienza": { "sfondo": "", "musica": "", "volume": 60, "scelto": false },
+              "enja": [ { "cognome": "", "nome": "", "eta": "", "relazione": "", "en": "", "comeConosciuti": "", "cosaSa": "", "aspetto": "", "ritratto": "" } ],
               "comportamento": { "tatemae": "", "honne": "", "fraseTipica": "", "sottoPressione": "", "debolezza": "" },
               "tratti": { "vizio": "", "tic": "", "oggetto": "", "gusto": "", "liberoEtichetta": "Rituale", "libero": "" },
               "rapporti": [],

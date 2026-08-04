@@ -27,8 +27,8 @@ public class ImmaginiService
 
     public bool Attivo => !string.IsNullOrWhiteSpace(_apiKey);
 
-    /// <summary>Genera un'immagine dal prompt e restituisce i byte PNG.</summary>
-    public async Task<byte[]> Genera(string prompt, CancellationToken ct)
+    /// <summary>Genera un'immagine dal prompt e restituisce i byte PNG. size opzionale (es. "1024x1536" per i ritratti verticali).</summary>
+    public async Task<byte[]> Genera(string prompt, CancellationToken ct, string? size = null)
     {
         if (!Attivo)
             throw new InvalidOperationException("Generazione immagini non configurata: impostare OPENAI_API_KEY (o OpenAI:ApiKey)");
@@ -38,7 +38,7 @@ public class ImmaginiService
             ["model"] = _model,
             ["prompt"] = prompt,
             ["n"] = 1,
-            ["size"] = _size
+            ["size"] = size ?? _size
         };
 
         using var req = new HttpRequestMessage(HttpMethod.Post, "v1/images/generations");

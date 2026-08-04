@@ -11,7 +11,6 @@ namespace GenkaiWizard.Pages.Pg;
 /// Wizard "Crea il tuo personaggio": una sola pagina, i passi si muovono lato client (pg.js).
 /// Lo stato vive in StatoJson e si autosalva a ogni modifica.
 /// </summary>
-[Authorize]
 public class SchedaModel : PageModel
 {
     private readonly ApplicationDbContext _db;
@@ -24,7 +23,7 @@ public class SchedaModel : PageModel
     public bool AiAttiva => _ai.Attivo;
     public bool ImmaginiAttive => _img.Attivo;
 
-    private string Uid => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+    private string Uid => Services.Ospite.ChiUsa(HttpContext);
 
     public async Task<IActionResult> OnGetAsync(Guid id)
     {

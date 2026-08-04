@@ -9,6 +9,7 @@
     var enja = Model.St["enja"] as JsonArray ?? new JsonArray();
     var rapporti = Model.St["rapporti"] as JsonArray ?? new JsonArray();
     var scene = Model.St["scene"] as JsonArray ?? new JsonArray();
+    var kagePersone = (Model.St["kage"] as JsonObject)?["persone"] as JsonArray ?? new JsonArray();
     var nome = ($"{Model.S("identita.cognome")} {Model.S("identita.nome")}").Trim();
     if (nome.Length == 0) nome = Model.Pg.Nome;
     var attrNomi = new[] { "Distacco", "Pazienza", "Silenzio", "Lucidità", "Ascolto", "Presenza" };
@@ -38,6 +39,11 @@
         .riga b { font-family: Arial, sans-serif; font-size: 11.5px; letter-spacing: .5px; text-transform: uppercase; color: #444; }
         .box { border: 1px solid #cfc7b5; border-radius: 6px; padding: 3mm 4mm; margin: 2mm 0; background: #fffdf6; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; }
         .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+        .kage-persone { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 2mm; }
+        .kage-p { display: flex; gap: 3mm; align-items: flex-start; border: 1px solid #cfc7b5; border-radius: 6px; padding: 2.5mm 3mm; background: #fffdf6; font-size: 12.5px; line-height: 1.4; }
+        .kage-p img { width: 18mm; height: 18mm; object-fit: cover; border-radius: 4px; border: 1px solid #cfc7b5; }
+        .kage-asp { color: #444; margin-top: 1mm; }
+        .enja-en { color: #8b1a1a; font-weight: 700; }
         .ki { display: flex; gap: 6mm; align-items: center; }
         .ki .kv { font-size: 26px; font-weight: 700; border: 2px solid #8b1a1a; color: #8b1a1a; border-radius: 8px; padding: 2mm 5mm; background: #fff; }
         .tacche { letter-spacing: 2px; }
@@ -126,7 +132,7 @@
                 var usi = s?["usi"]?.GetValue<int>() ?? 0;
                 <li><strong>@(voce?["nome"]?.ToString() ?? s?["id"]?.ToString())</strong>
                     (@string.Join(" o ", (voce?["chiave"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString())))
-                    — grado @grado (−@grado al dado)@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "") · usi: @usi</li>
+                    — grado @grado (@(grado == 3 ? (Model.G3Correzione(voce) ? "−2 con Correzione" : "−3 al dado") : $"−{grado} al dado"))@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "") · usi: @usi</li>
             }
         </ul>
         @if (Model.S("senmonPerche") != "")
@@ -145,23 +151,72 @@
             <div class="box">@Model.S("descrizioneFisica")</div>
         }
 
-        @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "")
+        @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "" || kagePersone.Count > 0)
         {
             <h2>Kage 影 — il tuo problema</h2>
-            <div class="duo">
-                <div class="box">@Model.S("kage.problema")</div>
-                <div class="box">@Model.S("kage.png")</div>
-            </div>
+            @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "")
+            {
+                <div class="duo">
+                    <div class="box">@Model.S("kage.problema")</div>
+                    <div class="box">@Model.S("kage.png")</div>
+                </div>
+            }
+            @if (kagePersone.Count > 0)
+            {
+                <div class="kage-persone">
+                    @foreach (var kp in kagePersone)
+                    {
+                        var o = kp as JsonObject;
+                        string V(string c) => o?[c]?.ToString()?.Trim() ?? "";
+                        var knome = ($"{V("cognome")} {V("nome")}").Trim();
+                        var dett = V("relazione");
+                        var keta = V("eta");
+                        if (keta != "") { dett = dett == "" ? keta + " anni" : dett + " · " + keta + " anni"; }
+                        var foto = V("ritratto");
+                        <div class="kage-p">
+                            @if (foto != "") { <img src="@foto" alt="" /> }
+                            <div>
+                                <b>@(knome == "" ? "(senza nome)" : knome)</b>@(dett == "" ? "" : " — " + dett)
+                                @if (V("aspetto") != "") { <div class="kage-asp">@V("aspetto")</div> }
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
         }
 
-        @if (enja.Any(x => (x?.ToString() ?? "").Trim() != ""))
+        @if (enja.Any(x => (x is JsonObject) || (x?.ToString() ?? "").Trim() != ""))
         {
             <h2>Enja 縁者 — i tuoi contatti</h2>
+            <div class="kage-persone">
             @foreach (var x in enja)
             {
-                if ((x?.ToString() ?? "").Trim() == "") { continue; }
-                <div class="box">@x</div>
+                if (x is JsonObject o)
+                {
+                    string V(string c) => o?[c]?.ToString()?.Trim() ?? "";
+                    var enome = ($"{V("cognome")} {V("nome")}").Trim();
+                    var edett = V("relazione");
+                    var eeta = V("eta");
+                    if (eeta != "") { edett = edett == "" ? eeta + " anni" : edett + " · " + eeta + " anni"; }
+                    var een = V("en");
+                    if (een != "" && !een.StartsWith("-")) { een = "+" + een; }
+                    var efoto = V("ritratto");
+                    if (enome == "" && edett == "" && V("cosaSa") == "" && V("comeConosciuti") == "" && efoto == "") { continue; }
+                    <div class="kage-p">
+                        @if (efoto != "") { <img src="@efoto" alt="" /> }
+                        <div>
+                            <b>@(enome == "" ? "(senza nome)" : enome)</b>@(edett == "" ? "" : " — " + edett)@if (een != "") { <span class="enja-en"> · 縁 En @een</span> }
+                            @if (V("comeConosciuti") != "") { <div class="kage-asp"><i>Conosciuti:</i> @V("comeConosciuti")</div> }
+                            @if (V("cosaSa") != "") { <div class="kage-asp">@V("cosaSa")</div> }
+                        </div>
+                    </div>
+                }
+                else if ((x?.ToString() ?? "").Trim() != "")
+                {
+                    <div class="box">@x</div>
+                }
             }
+            </div>
         }
 
         <h2>Come ti comporti</h2>

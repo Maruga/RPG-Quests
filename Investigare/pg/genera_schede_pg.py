@@ -344,7 +344,7 @@ def genera_scheda(d, output_filename, image_path=None):
     p = c_ki.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     add_run(p, "Ki Max: ________    ", size=11, bold=True, color=NAVY)
-    add_run(p, "attributo più basso + 2d6 prendi il più alto; l'1 si ritira una sola volta. Il dado si ritira a ogni nuovo caso; i comprati si sommano sempre", size=8, italic=True, color=DARK_RED)
+    add_run(p, "attributo più basso + 2d6 prendi il più alto; l'1 si ritira sempre. Il dado si ritira a ogni nuovo caso; i comprati si sommano sempre", size=8, italic=True, color=DARK_RED)
     p = c_ki.add_paragraph()
     add_run(p, "Ki attuale: ________________ ", size=11, bold=True, color=NAVY)
     add_run(p, "≤3 Genkai", size=9, italic=True, color=DARK_RED)

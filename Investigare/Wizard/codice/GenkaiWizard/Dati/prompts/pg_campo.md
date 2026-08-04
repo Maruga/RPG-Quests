@@ -16,7 +16,9 @@ Ti vengono passati lo stato del personaggio (nome, età, grado, attributi, Gou, 
 - `chiSei` → il background: da dove viene, perché fa questo lavoro, cosa l'ha segnato. 100-180 parole, seconda persona («Sei cresciuto a…») come nelle schede ufficiali.
 - `kageProblema` → il **Kage 影**: un problema personale VERO e attivo (un debito, un familiare, una dipendenza, un errore del passato che torna) — concreto, con persone e luoghi, non generico. 60-120 parole.
 - `kagePng` → la mini-scheda del PNG legato al Kage: Età, Lavoro, Relazione col PG, Cosa vuole, Come si comporta (righe brevi etichettate).
-- `enja` → l'**Enja 縁者**: un contatto esterno utile (giornalista, medico, vecchio yakuza, impiegato d'archivio…): Chi è, Relazione, Cosa può fare, Cosa vuole in cambio, Come contattarlo, Limite (righe brevi etichettate).
+- `enjaPersona` → un **Enja 縁者** del PG (scheda minima): contatto FUORI dalla polizia, di norma della cerchia stretta — compagno di scuola o di giochi, amico d'infanzia, qualcuno del quartiere (il primo lo assegna il GM). Coerente con lo stato del PG (età, quartiere, chiSei); se nelle indicazioni ci sono campi già scritti dal giocatore, **rispettali alla lettera** e completa il resto; NON duplicare gli Enja già presenti in `enja` (creane uno diverso). **Output: SOLO questo JSON**, nessun testo attorno:
+  `{ "cognome": "…", "nome": "…", "eta": 35, "relazione": "es. compagno di liceo", "en": 1, "comeConosciuti": "una riga concreta (dove, quando)", "cosaSa": "cosa può dare o sapere — e un limite (1-2 righe)", "aspetto": "una riga d'aspetto fisico concreto (serve per la fototessera)" }`
+  `en` = il legame che LUI ha verso il PG: intero, di norma 1 o 2 (3 solo per legami fortissimi). `cognome`/`nome` in rōmaji senza macron; `eta` numero.
 - `tatemae` → come si mostra IN PUBBLICO (1-2 frasi). `honne` → com'è davvero IN PRIVATO (1-2 frasi). Devono fare contrasto credibile.
 - `fraseTipica` → UNA frase che dice spesso, tra virgolette basse «…», in carattere.
 - `sottoPressione` → come reagisce sotto pressione (1-2 frasi concrete, comportamento osservabile).
@@ -31,6 +33,9 @@ Ti vengono passati lo stato del personaggio (nome, età, grado, attributi, Gou, 
 - `nomi` → proponi **4 nomi giapponesi completi SU MISURA**. Se il giocatore ha dato un'ispirazione (es. «sguardo infallibile», «vecchia scuola», «figlio di pescatori»), i kanji e il suono devono **evocarla davvero** (es. sguardo → 眼/鷹/明). Coerenza con genere ed età: chi ha 50 anni nel 1997 è nato nel dopoguerra e porta un nome di quell'epoca. Ogni proposta ha un `significato`: UNA riga evocativa che spiega i kanji e perché il nome «gli sta addosso» — è la parte che fa innamorare il giocatore del nome. **Output: SOLO questo JSON**, nessun testo attorno:
   `{ "nomi": [ { "cognome": "…", "nome": "…", "kanji": "姓 名", "significato": "…" } ] }`
   `cognome` e `nome` sono in **rōmaji senza macron** (es. "Takano", "Akira"); i caratteri giapponesi vanno SOLO nel campo `kanji` (cognome e nome separati da uno spazio).
+- `kagePersona` → una PERSONA del Kage del PG (scheda minima): il PNG al centro del problema o un altro coinvolto. Coerente con `kage.problema` e `kage.png` nello stato; se nelle indicazioni ci sono campi già scritti dal giocatore (es. relazione «tua sorella»), **rispettali alla lettera** e completa il resto; NON duplicare le persone già presenti in `kage.persone` (creane una diversa e coerente). Se è un familiare, valuta lo stesso cognome del PG. **Output: SOLO questo JSON**, nessun testo attorno:
+  `{ "cognome": "…", "nome": "…", "eta": 45, "relazione": "es. tua sorella", "aspetto": "una riga d'aspetto fisico concreto e visivo (serve per la fototessera)" }`
+  `cognome`/`nome` in rōmaji senza macron; `eta` numero.
 
 ## Regole
 - **Kyoto 1997**: niente smartphone/internet diffuso; yen, fax, telefoni fissi, PHS. Realismo sociale giapponese (gerarchie, tatemae/honne, la faccia).

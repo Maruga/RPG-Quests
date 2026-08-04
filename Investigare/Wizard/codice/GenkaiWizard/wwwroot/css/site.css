@@ -15,6 +15,9 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  /* lo spazio della barra di scorrimento è SEMPRE riservato: cambiando
+     pagina/passo la colonna centrata non slitta più di lato */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -448,7 +451,8 @@ input.wz-data-caso { max-width: 12rem; }
 
 /* ═══════════ Wizard-PG (Crea il tuo personaggio) ═══════════ */
 .pg-griglia-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .4rem .8rem; }
-.pg-griglia-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .4rem .8rem; }
+.pg-griglia-2 { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem .8rem; }
+@media (max-width: 640px) { .pg-griglia-2 { grid-template-columns: 1fr; } }
 .pg-punti { font-size: 1.05rem; }
 .pg-punti-zero strong { color: #2e7d32; }
 .pg-attr { display: flex; align-items: center; justify-content: space-between; gap: .8rem; border: 1px solid var(--wz-bordo, #d8cfc0); border-radius: 8px; padding: .5rem .8rem; margin: .35rem 0; background: #fff; }
@@ -458,13 +462,98 @@ input.wz-data-caso { max-width: 12rem; }
 .pg-fisso { border-left: 3px solid var(--wz-oro, #b08d2f); }
 .pg-ritratto { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .pg-ritratto img { max-width: 180px; border-radius: 8px; border: 1px solid #d8cfc0; }
-.pg-riep-ritratto { max-width: 140px; border-radius: 8px; float: right; margin: 0 0 .5rem .8rem; }
+/* ── riepilogo: la scheda completa, elegante ─────────────────────────────── */
+.pg-riep { background: #fffdf6; border: 1px solid #d8cfc0; border-top: 3px double #8b1a1a; border-radius: 10px; padding: 1.2rem 1.4rem 1rem; }
+.pg-riep-testata { display: flex; gap: 1.1rem; align-items: flex-start; padding-bottom: .9rem; border-bottom: 3px double #1c1a17; }
+.pg-riep-foto { width: 132px; height: 132px; object-fit: cover; border: 1px solid #cfc7b5; border-radius: 6px; box-shadow: 2px 2px 0 rgba(139, 26, 26, .12); }
+.pg-riep-anagrafica { min-width: 0; flex: 1; }
+.pg-riep-nome { font-size: 1.45rem; font-weight: 700; letter-spacing: .02em; }
+.pg-riep-nome-kanji { color: #8b8375; font-weight: 400; font-size: 1.1rem; margin-left: .3rem; }
+.pg-riep-sotto { color: #6a655c; margin: .15rem 0 .4rem; }
+.pg-riep-riga { font-size: .92rem; color: #444; margin-top: .15rem; }
+.pg-riep-avvisi { margin-top: .5rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.pg-riep-avviso { font-size: .82rem; color: #8b1a1a; border: 1px solid #e4c9c9; background: #fdf6f4; border-radius: 999px; padding: .15rem .6rem; }
+.pg-riep-sez { margin-top: 1.05rem; }
+.pg-riep-h { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 .45rem; font-size: .82rem; letter-spacing: .22em; text-transform: uppercase; color: #444; border-left: 4px solid #8b1a1a; padding-left: .55rem; border-bottom: 1px solid #e6dfd2; padding-bottom: .3rem; }
+.pg-riep-hk { color: #ddd4c2; font-size: 1.25rem; letter-spacing: .1em; font-weight: 400; }
+.pg-riep-p { margin: .2rem 0; line-height: 1.5; }
+.pg-riep-box { border: 1px solid #e6dfd2; border-radius: 6px; background: #fff; padding: .6rem .8rem; margin: .3rem 0; line-height: 1.55; white-space: pre-wrap; }
+.pg-riep-lista { margin: .2rem 0 .2rem 1.1rem; padding: 0; line-height: 1.6; }
+.pg-riep-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.4rem; }
+.pg-riep-attr { display: grid; grid-template-columns: repeat(6, 1fr); gap: .5rem; }
+.pg-riep-attr-box { text-align: center; border: 1.5px solid #1c1a17; border-radius: 8px; background: #fff; padding: .45rem .2rem .35rem; }
+.pg-riep-attr-box .n { display: block; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: #6a655c; }
+.pg-riep-attr-box .v { display: block; font-size: 1.55rem; font-weight: 700; font-family: Georgia, serif; }
+.pg-riep-galleria { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .45rem; }
+.pg-riep-galleria img { max-width: 172px; border-radius: 6px; border: 1px solid #cfc7b5; }
+.pg-riep-cards { display: grid; grid-template-columns: 1fr; gap: .55rem; margin-top: .35rem; }
+.pg-riep-card { display: flex; gap: .6rem; align-items: flex-start; border: 1px solid #e6dfd2; border-radius: 6px; background: #fff; padding: .55rem .65rem; font-size: .92rem; line-height: 1.45; }
+.pg-riep-card img, .pg-riep-card-vuota { width: 64px; height: 64px; flex: none; object-fit: cover; border-radius: 5px; border: 1px solid #cfc7b5; }
+.pg-riep-card-vuota { display: flex; align-items: center; justify-content: center; background: #efe9dc; color: #b8ab90; font-size: 1.5rem; border: 1px solid #e6dfd2; }
+.pg-riep-card-nota { color: #555; margin-top: .2rem; }
+.pg-riep-en { color: #8b1a1a; font-weight: 700; }
+.pg-riep-tratti { color: #444; }
+#pg-riepilogo .pg-riep-sez:has(.pg-riep-cards) .pg-riep-box + .pg-riep-box { margin-top: .45rem; }
+@media (max-width: 760px) {
+    .pg-riep-duo, .pg-riep-cards { grid-template-columns: 1fr; }
+    .pg-riep-attr { grid-template-columns: repeat(3, 1fr); }
+    .pg-riep-testata { flex-direction: column; }
+    .pg-riep-foto { width: 108px; height: 108px; }
+}
 .pg-rapporto { display: flex; gap: .4rem; align-items: center; margin: .3rem 0; }
 .pg-rapporto input:not(.wz-medio) { flex: 1; }
 .pg-scene { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .6rem; }
 .pg-scena { position: relative; display: inline-block; }
 .pg-scena img { max-width: 200px; border-radius: 8px; border: 1px solid #d8cfc0; display: block; }
 .pg-scena .wz-btn-x { position: absolute; top: 4px; right: 4px; }
+/* persone del Kage — schede minime */
+.pg-kage-persone { display: flex; flex-direction: column; gap: .6rem; margin: .4rem 0 .6rem; }
+.pg-kage-card { display: grid; grid-template-columns: 150px 1fr auto; gap: .7rem; align-items: start; padding: .7rem; border: 1px solid #d8cfc0; border-radius: 8px; background: #fffdf6; }
+.pg-kage-foto { width: 150px; height: 150px; border-radius: 6px; overflow: hidden; background: #efe9dc; display: flex; align-items: center; justify-content: center; font-size: 2.6rem; color: #b8ab90; }
+.pg-kage-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pg-kage-campi { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
+.pg-kage-campi .pg-kage-largo { grid-column: 1 / -1; }
+.pg-kage-campi textarea { resize: vertical; }
+.pg-enja-en { display: flex; align-items: center; gap: .45rem; }
+.pg-enja-en label { white-space: nowrap; font-weight: 600; color: #8b1a1a; }
+.pg-enja-en input { min-width: 0; }
+
+/* ── esperienza: sfondo scelto dal giocatore (tenue, a pattern) ───────────── */
+body.pg-con-sfondo { background: linear-gradient(rgba(252, 250, 244, .86), rgba(252, 250, 244, .86)), var(--pg-sfondo) center / 860px auto repeat fixed; }
+body.pg-con-sfondo .wz-passo, body.pg-con-sfondo .wz-testata { background: transparent; }
+
+/* controlli musica in testata */
+.pg-audio { display: inline-flex; align-items: center; gap: .3rem; }
+.pg-audio input[type="range"] { width: 86px; accent-color: #8b1a1a; cursor: pointer; }
+
+/* 豆知識 — striscia della curiosità in fondo */
+.pg-tip { max-width: 46rem; margin: 1.4rem auto 2rem; padding: .7rem 1rem .8rem; text-align: center; border-top: 1px solid #d8cfc0; color: #5c554a; font-size: .92rem; line-height: 1.5; }
+.pg-tip-etichetta { display: inline-block; margin-right: .55rem; color: #8b1a1a; font-weight: 700; letter-spacing: .18em; font-size: .85rem; }
+.pg-tip-entra { animation: pg-tip-fade .8s ease both; }
+@keyframes pg-tip-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .pg-tip-entra { animation: none; } }
+
+/* passo 🍵 «un tè, prima di cominciare» (sfondo e musica) */
+.pg-esp-kanji { float: right; color: #d8cfc0; font-size: 1.6rem; font-weight: 400; letter-spacing: .1em; }
+.wz-punto-te .wz-punto-n { font-size: 1.05rem; }
+.pg-esp-sfondi { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; max-width: 640px; }
+.pg-esp-sfondo { padding: 0; border: 2px solid #d8cfc0; border-radius: 8px; overflow: hidden; background: #fff; cursor: pointer; text-align: center; transition: border-color .15s, transform .15s; }
+.pg-esp-sfondo:hover { transform: translateY(-2px); }
+.pg-esp-sfondo img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+.pg-esp-sfondo span { display: block; padding: .35rem .3rem; font-size: .85rem; color: #444; }
+.pg-esp-sfondo.scelto { border-color: #8b1a1a; }
+.pg-esp-sfondo.scelto span { color: #8b1a1a; font-weight: 700; }
+.pg-esp-musiche { display: flex; flex-wrap: wrap; gap: .5rem; }
+.pg-esp-musica { padding: .5rem .9rem; border: 2px solid #d8cfc0; border-radius: 999px; background: #fff; cursor: pointer; font-size: .92rem; transition: border-color .15s; }
+.pg-esp-musica.scelto { border-color: #8b1a1a; color: #8b1a1a; font-weight: 700; }
+.pg-esp-niente { display: flex; align-items: center; justify-content: center; min-height: 92px; color: #6a655c; }
+@media (max-width: 560px) { .pg-esp-sfondi { grid-template-columns: repeat(2, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .pg-esp-sfondo, .pg-esp-sfondo:hover { transition: none; transform: none; } }
+@media (max-width: 640px) {
+    .pg-kage-card { grid-template-columns: 96px 1fr auto; }
+    .pg-kage-foto { width: 96px; height: 96px; }
+    .pg-kage-campi { grid-template-columns: 1fr; }
+}
 .pg-shu-riga { display: flex; justify-content: space-between; gap: .8rem; align-items: center; padding: .4rem 0; border-top: 1px dotted #d8cfc0; flex-wrap: wrap; }
 .pg-shu-riga:first-child { border-top: 0; }
 .pg-usi { width: 3.2rem; }
@@ -530,9 +619,59 @@ input.wz-data-caso { max-width: 12rem; }
 /* il titolo "Dove vivi" col suo ✨ in linea */
 #pg-root .wz-h3 .wz-btn { vertical-align: middle; margin-left: .3rem; }
 
-/* glossario a riquadri (3 per riga, poi 2/1 sui piccoli) */
-.pg-glossario { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: .6rem 0; }
-.pg-glossario .pg-gioco-blocco { margin: 0; }
-@media (max-width: 900px) { .pg-glossario { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .pg-glossario { grid-template-columns: 1fr; } }
+/* glossario a riquadri (3 per riga; gli ultimi due — Nasake e Soroban — larghi una colonna e mezza) */
+.pg-glossario { display: grid; grid-template-columns: repeat(6, 1fr); gap: .6rem; margin: .6rem 0; }
+.pg-glossario .pg-gioco-blocco { margin: 0; grid-column: span 2; }
+.pg-glossario .pg-glossario-15 { grid-column: span 3; }
+@media (max-width: 900px) { .pg-glossario { grid-template-columns: repeat(4, 1fr); } .pg-glossario .pg-glossario-15 { grid-column: span 4; } }
+@media (max-width: 560px) { .pg-glossario { grid-template-columns: 1fr; } .pg-glossario .pg-gioco-blocco, .pg-glossario .pg-glossario-15 { grid-column: auto; } }
 .pg-tiro { border-left: 4px solid #8b1a1a; }
+
+/* ══ Account (accesso e profilo) — stesso registro elegante del wizard ══════ */
+.acc { max-width: 62rem; margin: 0 auto 3rem; }
+.acc-testata { border-bottom: 3px double #1c1a17; padding-bottom: .7rem; margin-bottom: 1.2rem; }
+.acc-testata h1 { font-size: 1.7rem; margin: 0; letter-spacing: .02em; }
+.acc-kanji { float: right; color: #d8cfc0; font-size: 1.5rem; font-weight: 400; letter-spacing: .1em; }
+.acc-sotto { color: #6a655c; margin: .2rem 0 0; font-size: .95rem; }
+.acc-colonne { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+.acc-riquadro { background: #fffdf6; border: 1px solid #d8cfc0; border-top: 3px solid #8b1a1a; border-radius: 10px; padding: 1.1rem 1.2rem 1.2rem; margin-bottom: 1rem; }
+.acc-riquadro h2 { font-size: .82rem; letter-spacing: .22em; text-transform: uppercase; color: #444; margin: 0 0 .5rem; }
+.acc-nota { color: #6a655c; font-size: .92rem; line-height: 1.5; margin: 0 0 .8rem; }
+.acc-campo { margin-bottom: .7rem; }
+.acc-campo label { display: block; font-size: .85rem; color: #444; margin-bottom: .2rem; }
+.acc-campo input { width: 100%; padding: .5rem .65rem; border: 1px solid #d8cfc0; border-radius: 6px; background: #fff; font-size: 1rem; font-family: inherit; }
+.acc-campo input:focus { outline: none; border-color: #8b1a1a; box-shadow: 0 0 0 2px rgba(139, 26, 26, .12); }
+.acc-check { display: flex; align-items: center; gap: .45rem; color: #444; font-size: .92rem; margin: .2rem 0 .9rem; }
+.acc-btn { padding: .55rem 1.1rem; border: 1px solid #d8cfc0; border-radius: 6px; background: #fff; color: #1c1a17; font-size: .95rem; font-family: inherit; cursor: pointer; transition: border-color .15s, background .15s; }
+.acc-btn:hover { border-color: #8b1a1a; background: #fffdf6; }
+.acc-btn-primario { background: #26231f; border-color: #26231f; color: #f6f3eb; width: 100%; padding: .65rem 1.1rem; }
+.acc-btn-primario:hover { background: #3a352e; border-color: #3a352e; color: #fff; }
+.acc-btn-esterno { display: block; width: 100%; margin-bottom: .5rem; }
+.acc-btn-piccolo { padding: .3rem .7rem; font-size: .85rem; }
+.acc-riga-btn { display: flex; flex-wrap: wrap; gap: .5rem; }
+.acc-riga-btn .acc-btn-esterno { display: inline-block; width: auto; margin: 0; }
+.acc-elenco { list-style: none; margin: 0 0 .8rem; padding: 0; }
+.acc-elenco li { display: flex; justify-content: space-between; align-items: center; gap: .8rem; padding: .5rem 0; border-top: 1px dotted #d8cfc0; }
+.acc-elenco li:first-child { border-top: 0; }
+.acc-ok { background: #f4f7f2; border: 1px solid #cfdac5; border-left: 4px solid #4a7a3a; border-radius: 6px; padding: .6rem .9rem; color: #2f4a25; }
+.acc-errore { background: #fdf6f4; border: 1px solid #e4c9c9; border-left: 4px solid #8b1a1a; border-radius: 6px; padding: .6rem .9rem; color: #7a2020; }
+.acc-errore:empty { display: none; }
+.acc-nota-errore { color: #8b1a1a; font-size: .85rem; }
+.acc-minori { font-size: .9rem; color: #6a655c; margin: .8rem 0 0; }
+.acc-minori a { color: #8b1a1a; }
+.acc-esci { margin-top: .4rem; }
+@media (max-width: 760px) { .acc-colonne { grid-template-columns: 1fr; } }
+
+/* pagine Identity di serie (registrazione, recupero password…): almeno in tinta */
+body.pagina-identity main h1, body.pagina-identity main h2 { font-size: 1.25rem; letter-spacing: .01em; }
+body.pagina-identity main section { background: #fffdf6; border: 1px solid #d8cfc0; border-top: 3px solid #8b1a1a; border-radius: 10px; padding: 1.1rem 1.2rem; }
+body.pagina-identity .btn-primary { background: #26231f; border-color: #26231f; }
+body.pagina-identity .btn-primary:hover { background: #3a352e; border-color: #3a352e; }
+body.pagina-identity a { color: #8b1a1a; }
+
+/* avviso per chi usa il wizard senza account */
+.pg-ospite { background: #fffdf6; border: 1px solid #d8cfc0; border-left: 4px solid #b08d2f; border-radius: 8px; padding: .8rem 1rem; margin: .8rem 0 1.1rem; font-size: .93rem; line-height: 1.5; }
+.pg-ospite p { margin: 0 0 .5rem; }
+.pg-ospite p:last-child { margin-bottom: 0; }
+.pg-ospite-azione { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.pg-ospite-azione .wz-nota { margin: 0; }

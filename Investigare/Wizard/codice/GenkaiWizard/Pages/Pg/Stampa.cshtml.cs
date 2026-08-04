@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 namespace GenkaiWizard.Pages.Pg;
 
 /// <summary>Vista stampabile della scheda PG (HTML, window.print → PDF).</summary>
-[Authorize]
 public class StampaModel : PageModel
 {
     private readonly ApplicationDbContext _db;
@@ -19,7 +18,7 @@ public class StampaModel : PageModel
     public Personaggio Pg { get; set; } = default!;
     public JsonObject St { get; set; } = new();
 
-    private string Uid => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+    private string Uid => Services.Ospite.ChiUsa(HttpContext);
 
     public async Task<IActionResult> OnGetAsync(Guid id)
     {
@@ -58,6 +57,19 @@ public class StampaModel : PageModel
         if (!_bib.HaLib("senmon")) return null;
         return (_bib.Lib("senmon")["senmon"] as JsonArray)?
             .FirstOrDefault(g => g?["id"]?.GetValue<string>() == id) as JsonObject;
+    }
+
+    /// <summary>true se al grado 3 la voce usa «−2 con Correzione» (eccezione della voce o maestro di famiglia «+2C»).</summary>
+    public bool G3Correzione(JsonObject? voce)
+    {
+        if (voce is null) return false;
+        var ecc = voce["maestroEccezione"]?.GetValue<string>();
+        if (!string.IsNullOrEmpty(ecc)) return ecc == "+2C";
+        if (!_bib.HaLib("senmon")) return false;
+        var fam = voce["famiglia"]?.GetValue<string>();
+        var f = (_bib.Lib("senmon")["famiglie"] as JsonArray)?
+            .FirstOrDefault(x => x?["id"]?.GetValue<string>() == fam) as JsonObject;
+        return f?["maestro"]?.GetValue<string>() == "+2C";
     }
 
     public int? KiMax()

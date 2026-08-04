@@ -1,0 +1,56 @@
+{
+  "$commento": "Catalogo Kage per il wizard-PG (lato GIOCATORE — niente meccaniche del manuale GM). Ogni voce: archetipo + testo-modello del problema + testo-modello del PNG, che il giocatore ADATTA (nomi, dettagli). Temi dal Manuale Giocatori §Kage e dalle categorie de L'Ombra che Cresce.",
+
+  "kage": [
+    { "id": "debito", "categoria": "Soldi", "nome": "Il debito",
+      "problema": "Hai un debito che lo stipendio non chiuderà mai da solo — com'è nato lo sai solo tu (una cura, un errore, una firma). Le rate arrivano puntuali, i risparmi no. E il creditore è gentile nel modo sbagliato: non ha fretta, dice. È questo che ti spaventa.",
+      "png": "Età: 55 · Lavoro: prestasoldi \"per bene\" (o riscossore per conto terzi) · Relazione: il tuo creditore · Cosa vuole: i suoi soldi — o, peggio, tenerti sul libro · Come si comporta: cortese, paziente, sempre informato su di te. Non minaccia mai: constata." },
+    { "id": "garanzia", "categoria": "Soldi", "nome": "La garanzia firmata",
+      "problema": "Anni fa hai firmato da garante per un parente — «è una formalità», diceva. Il parente è sparito o non paga, e adesso il debito è tuo: la banca ha il tuo nome, l'amministrazione della centrale prima o poi lo saprà. Un poliziotto indebitato è un poliziotto segnalabile.",
+      "png": "Età: 45 · Lavoro: il parente che l'ha combinata (piccolo imprenditore fallito, giocatore…) · Relazione: fratello / cugino / cognato · Cosa vuole: tempo, comprensione, magari altri soldi · Come si comporta: si vergogna, promette, sparisce, ricompare quando la situazione peggiora." },
+    { "id": "spesaContinua", "categoria": "Soldi", "nome": "La spesa che non finisce",
+      "problema": "C'è una spesa che divora lo stipendio ogni mese — una retta, una cura, un'assistenza. Non è un debito: è peggio, non finisce mai. Ogni mese fai i conti due volte, e ogni mese manca qualcosa. Prima o poi qualcuno ti offrirà una scorciatoia.",
+      "png": "Età: — · Lavoro: — · Relazione: la persona per cui paghi (figlio, genitore, sorella…) · Cosa vuole: non sapere quanto ti costa — o non pesarti · Come si comporta: ti ringrazia in un modo che fa più male delle rate." },
+
+    { "id": "genitore", "categoria": "Famiglia e salute", "nome": "Il genitore che invecchia",
+      "problema": "Tua madre (o tuo padre) vive sola, a ore di treno, e la salute peggiora. Le telefonate arrivano in centrale nei momenti peggiori — «non è niente, volevo solo sentirti» — e ogni volta che riagganci resta la colpa. Sai che prima o poi arriverà LA telefonata, quella vera.",
+      "png": "Età: 76 · Lavoro: pensionata · Relazione: tua madre · Cosa vuole: vederti, non «disturbare», che il tuo posto a tavola non resti vuoto anche quest'anno · Come si comporta: minimizza sempre, chiama per cose piccole, non dice mai quella grande." },
+    { "id": "figlio", "categoria": "Famiglia e salute", "nome": "Il figlio che scivola",
+      "problema": "Tuo figlio sta prendendo una strada sbagliata — le assenze da scuola, i soldi che spariscono, le persone con cui lo hanno visto. Tu passi le giornate a salvare i figli degli altri, e il tuo sta scivolando: servirebbe un genitore presente, non un bonifico.",
+      "png": "Età: 15 · Lavoro: studente (quando ci va) · Relazione: tuo figlio · Cosa vuole: la tua attenzione — anche se la chiede sbagliando · Come si comporta: risponde a monosillabi, sfida, e una volta ogni tanto — quando meno te lo aspetti — torna bambino." },
+    { "id": "ex", "categoria": "Famiglia e salute", "nome": "L'ex che stringe",
+      "problema": "Il divorzio non ha chiuso niente. Le visite saltate per i casi hanno un conto, e l'ex ha smesso di fare sconti: «il giudice deve saperlo». Ogni caso importante ti costa un pezzo di famiglia, e ogni pezzo di famiglia ti costa concentrazione sul caso.",
+      "png": "Età: 41 · Lavoro: impiegata · Relazione: la tua ex moglie (o ex marito) · Cosa vuole: che tu ci sia — o le carte firmate · Come si comporta: fredda al telefono, precisa come un verbale; con i figli davanti, un'altra persona." },
+    { "id": "parenteGuai", "categoria": "Famiglia e salute", "nome": "Il parente nei guai",
+      "problema": "Tuo fratello (o un cugino stretto) frequenta il giro sbagliato, e ogni tanto lo fermano. Il cognome sul suo verbale è lo stesso del tuo tesserino: in centrale ancora non collegano, ma è questione di tempo. E lui lo sa, e quando ha bisogno chiama proprio te.",
+      "png": "Età: 33 · Lavoro: lavoretti, e il resto è meglio non chiederlo · Relazione: tuo fratello minore · Cosa vuole: che tu lo tiri fuori — «solo questa volta» · Come si comporta: affettuoso e disperato nello stesso minuto; giura sempre che è l'ultima." },
+
+    { "id": "matrimonio", "categoria": "Relazioni", "nome": "Il matrimonio che si sgretola",
+      "problema": "Il lavoro si è mangiato tutto: le cene, le domeniche, le parole. A casa ormai parla il silenzio, e nessuno dei due sa più da dove si ricomincia. Non c'è un cattivo in questa storia — è questo il problema.",
+      "png": "Età: 38 · Lavoro: — · Relazione: tua moglie (o tuo marito) · Cosa vuole: sapere se ci sei ancora, o almeno una risposta onesta · Come si comporta: non fa più scenate — che era meglio; adesso fa piani in cui tu compari sempre meno." },
+    { "id": "promessa", "categoria": "Relazioni", "nome": "La promessa rimandata",
+      "problema": "C'è una persona che aspetta da te una risposta o una data — un matrimonio, un trasferimento, una decisione — e tu continui a rimandare «a dopo il caso». Solo che dopo un caso c'è sempre un altro caso. E la pazienza non è infinita: c'è una data sul calendario che non si sposta.",
+      "png": "Età: 30 · Lavoro: — · Relazione: la persona che ti aspetta · Cosa vuole: la risposta. Entro quella data · Come si comporta: non ti mette fretta — te la mette il calendario. Ma ha smesso di parlare al futuro." },
+
+    { "id": "erroreDelPassato", "categoria": "Il passato", "nome": "L'errore non elaborato",
+      "problema": "Un caso finito male, anni fa: una persona che potevi salvare e non hai salvato, o un colpevole rimasto libero per un tuo errore. Nessuno ti accusa — nessuno tranne te, di notte. E c'è qualcuno, là fuori, per cui quel caso non è mai finito.",
+      "png": "Età: 58 · Lavoro: — · Relazione: il padre della vittima di allora (o l'ex collega di quel caso) · Cosa vuole: risposte che non hai, o solo che tu non dimentichi · Come si comporta: compare nelle date sbagliate — l'anniversario, la stagione — educato e implacabile." },
+    { "id": "segreto", "categoria": "Il passato", "nome": "Il segreto",
+      "problema": "Hai fatto una cosa che nessuno sa — una scorciatoia, una bugia a verbale, un favore che non dovevi fare. È sepolta, ma non è morta: c'è una persona che potrebbe saperlo, o arrivarci. Ogni volta che ti guarda troppo a lungo, il cuore ti si ferma.",
+      "png": "Età: 47 · Lavoro: collega / conoscente di allora · Relazione: chi c'era, o chi potrebbe aver capito · Cosa vuole: forse niente. Forse tutto. Non l'ha ancora detto · Come si comporta: normale. È questo che ti consuma." },
+    { "id": "benefattore", "categoria": "Il passato", "nome": "Il favore mai restituito",
+      "problema": "Anni fa qualcuno ti ha tirato fuori dai guai — soldi, o peggio — e non ha mai chiesto niente. «Non c'è fretta», diceva. Adesso si è fatto vivo: un saluto, un caffè, due chiacchiere. La richiesta non è ancora arrivata, ma sta arrivando. E tu gli devi.",
+      "png": "Età: 60 · Lavoro: uomo d'affari «di zona», rispettato, del tipo sbagliato · Relazione: il tuo benefattore · Cosa vuole: incassare — al momento giusto, sulla cosa giusta · Come si comporta: caloroso, generoso, mai una minaccia. Ordina da bere per tutti e due." },
+
+    { "id": "gioco", "categoria": "Dipendenze", "nome": "Il gioco",
+      "problema": "Pachinko, mahjong, le corse — vinci abbastanza da continuare, perdi abbastanza da nasconderlo. La paga entra e esce, e i posti dove giochi sono esattamente i posti che un poliziotto dovrebbe evitare: prima o poi al tavolo si siederà la persona sbagliata.",
+      "png": "Età: 52 · Lavoro: gestisce la sala (o tiene il banco) · Relazione: ti conosce da anni, ti chiama per nome · Cosa vuole: che continui a giocare — e sapere di poterti chiedere qualcosa, un giorno · Come si comporta: ti tiene il posto, ti allunga il credito. Sorride sempre." },
+    { "id": "bottiglia", "categoria": "Dipendenze", "nome": "La bottiglia",
+      "problema": "Bevi per dormire, poi per lavorare, poi per non pensare che bevi. Reggi bene — è questa la trappola. Ma qualcuno in centrale ha notato le mattine lente e il collutorio, e a casa le bottiglie non si nascondono più tanto bene.",
+      "png": "Età: 44 · Lavoro: il collega che ha notato (o chi ti vive accanto) · Relazione: qualcuno che ti vuole bene abbastanza da parlare · Cosa vuole: che ti fermi — prima che tocchi il fondo o il fascicolo · Come si comporta: copre, aspetta, e una sera ti mette davanti la domanda." },
+
+    { "id": "exCollega", "categoria": "Il lavoro", "nome": "Il collega caduto",
+      "problema": "Il tuo vecchio partner è caduto — radiato, dimesso, o rovinato da un'inchiesta — e tu sei quello che è rimasto in piedi. Ti cerca: per nostalgia, per soldi, per informazioni. Gli devi molto, e lo sai. Ma ogni volta che lo incontri, il tuo tesserino pesa di più.",
+      "png": "Età: 50 · Lavoro: ex poliziotto, ora guardia privata / investigatore senza licenza · Relazione: il tuo ex partner, quello che ti ha insegnato il mestiere · Cosa vuole: sentirsi ancora del mestiere — e ogni tanto un'informazione che non potresti dargli · Come si comporta: ironico, affettuoso, sempre un po' troppo curioso sui tuoi casi." }
+  ]
+}

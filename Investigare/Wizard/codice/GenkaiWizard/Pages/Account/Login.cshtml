@@ -1,0 +1,78 @@
+@page
+@model GenkaiWizard.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Accedi";
+}
+
+<div class="acc">
+    <header class="acc-testata">
+        <h1>Accedi <span class="acc-kanji">入口</span></h1>
+        <p class="acc-sotto">GENKAI 限界 · Wizard delle Situazioni</p>
+    </header>
+
+    @if (Model.Errore is not null)
+    {
+        <p class="acc-errore">@Model.Errore</p>
+    }
+
+    <div class="acc-colonne">
+        <section class="acc-riquadro">
+            <h2>Con la tua email</h2>
+            <form method="post" asp-route-returnUrl="@Model.ReturnUrl">
+                <div asp-validation-summary="ModelOnly" class="acc-errore"></div>
+
+                <div class="acc-campo">
+                    <label asp-for="Input.Email">Email</label>
+                    <input asp-for="Input.Email" autocomplete="username" placeholder="nome@esempio.it" />
+                    <span asp-validation-for="Input.Email" class="acc-nota-errore"></span>
+                </div>
+
+                <div class="acc-campo">
+                    <label asp-for="Input.Password">Password</label>
+                    <input asp-for="Input.Password" type="password" autocomplete="current-password" />
+                    <span asp-validation-for="Input.Password" class="acc-nota-errore"></span>
+                </div>
+
+                <label class="acc-check">
+                    <input asp-for="Input.Ricordami" type="checkbox" /> Resta collegato su questo computer
+                </label>
+
+                <button type="submit" class="acc-btn acc-btn-primario">Entra</button>
+            </form>
+
+            <p class="acc-minori">
+                <a asp-area="" asp-page="/Account/Registrati">Crea un account</a> ·
+                <a asp-area="Identity" asp-page="/Account/ForgotPassword">Password dimenticata</a>
+            </p>
+        </section>
+
+        <section class="acc-riquadro">
+            <h2>In un clic</h2>
+            @if (Model.Esterni.Count == 0)
+            {
+                <p class="acc-nota">
+                    Nessun servizio esterno configurato. Per attivare <strong>Accedi con Google</strong> servono
+                    un <em>Client ID</em> e un <em>Client secret</em> creati nella Google Cloud Console:
+                    una volta inseriti nella configurazione, il pulsante compare qui da solo.
+                </p>
+            }
+            else
+            {
+                <p class="acc-nota">Entri con un account che hai già — niente password nuove da ricordare.</p>
+                <form method="post" asp-page-handler="Esterno" asp-route-returnUrl="@Model.ReturnUrl">
+                    @foreach (var s in Model.Esterni)
+                    {
+                        <button type="submit" name="provider" value="@s.Name" class="acc-btn acc-btn-esterno">
+                            @(s.Name == "Google" ? "Accedi con Google" : $"Accedi con {s.DisplayName}")
+                        </button>
+                    }
+                </form>
+                <p class="acc-minori">Al primo accesso l'account viene creato con l'email del servizio.</p>
+            }
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

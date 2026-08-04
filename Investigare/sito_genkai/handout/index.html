@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gli handout del caso — GENKAI 限界</title>
+<meta name="description" content="I documenti che finiscono sul tavolo: rapporti, referti, tabulati e planimetrie del caso «L'Ultima Cena di Tanaka».">
+<link rel="icon" href="../img/favicon.png">
+<meta property="og:title" content="Gli handout del caso — GENKAI 限界">
+<meta property="og:description" content="Rapporti, referti, tabulati e planimetrie: i documenti veri che i giocatori si passano di mano.">
+<meta property="og:image" content="https://genkai.it/img/handout/rapporto.jpg">
+<style>
+:root{
+  --carta:#f7f4ec; --carta2:#fffdf6; --inchiostro:#1c1a17; --inchiostro2:#4a453d;
+  --tenue:#6a655c; --rosso:#8b1a1a; --bordo:#d8cfc0;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:56px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--serif);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rosso)}
+
+.barra{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.96);border-bottom:1px solid var(--bordo);backdrop-filter:blur(6px)}
+.barra .dentro{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:.9rem;padding:.5rem 1.1rem}
+.marchio{font-family:var(--sans);font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--inchiostro);white-space:nowrap;font-size:.95rem}
+.marchio i{font-style:normal;color:var(--rosso)}
+.indietro{margin-left:auto;font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--inchiostro2)}
+.indietro:hover{color:var(--rosso)}
+
+header.testa{border-bottom:1px solid var(--bordo);background:var(--carta2)}
+header.testa .dentro{max-width:1040px;margin:0 auto;padding:2.6rem 1.1rem 2rem;text-align:center}
+.timbro{display:inline-block;font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rosso);border:1px solid var(--rosso);border-radius:4px;padding:.25rem .7rem;transform:rotate(-1.5deg);margin-bottom:1.1rem}
+h1{font-size:clamp(1.7rem,5.5vw,2.6rem);margin:0 0 .3rem;font-weight:400}
+h1 .kj{display:block;font-size:.42em;color:var(--tenue);letter-spacing:.3em;margin-bottom:.5rem}
+.sotto{color:var(--tenue);font-family:var(--sans);font-size:.85rem;letter-spacing:.08em;margin:0}
+.nota{max-width:48ch;margin:1.2rem auto 0;color:var(--inchiostro2);font-size:.98rem}
+
+.indice{max-width:1040px;margin:0 auto;padding:1.4rem 1.1rem 0;display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center}
+.indice a{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-decoration:none;color:var(--inchiostro2);border:1px solid var(--bordo);background:var(--carta2);border-radius:999px;padding:.3rem .8rem}
+.indice a:hover{border-color:var(--rosso);color:var(--rosso)}
+
+.fogli{max-width:900px;margin:0 auto;padding:1.8rem 1.1rem 3rem}
+.foglio{margin:0 0 2.4rem;scroll-margin-top:64px}
+.foglio img{width:100%;border:1px solid var(--bordo);border-radius:6px;box-shadow:0 3px 18px rgba(28,26,23,.10);background:#fff}
+.foglio figcaption{font-family:var(--sans);font-size:.78rem;letter-spacing:.08em;color:var(--tenue);margin-top:.55rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foglio figcaption b{font-weight:400;color:var(--inchiostro2)}
+
+.coda{background:var(--carta2);border-top:1px solid var(--bordo);text-align:center;padding:2.6rem 1.1rem}
+.btn{display:inline-block;font-family:var(--sans);font-size:.95rem;padding:.7rem 1.4rem;border-radius:7px;text-decoration:none;border:1px solid var(--inchiostro);color:var(--inchiostro)}
+.btn:hover{background:rgba(28,26,23,.06)}
+.btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
+.btn-forte:hover{background:#a02020;color:#fff}
+.bottoni{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:1rem}
+footer{background:var(--inchiostro);color:#cfc7b5;padding:2rem 1.1rem;font-family:var(--sans);font-size:.85rem;text-align:center}
+footer a{color:#e0d8c8}
+.accesso{margin-left:.9rem;flex:none;font-family:var(--sans);font-size:.82rem;letter-spacing:.05em;text-decoration:none;color:var(--inchiostro);border:1px solid var(--bordo);background:var(--carta2);border-radius:999px;padding:.28rem .8rem;white-space:nowrap;max-width:11rem;overflow:hidden;text-overflow:ellipsis}
+.accesso:hover{border-color:var(--rosso);color:var(--rosso)}
+</style>
+</head>
+<body>
+
+<nav class="barra">
+  <div class="dentro">
+    <a class="marchio" href="../"><i>限界</i> GENKAI</a>
+    <a class="indietro" href="../">‹ Torna al sito</a>
+    <a class="accesso" id="accesso" href="/Account/Login">Accedi</a>
+  </div>
+</nav>
+
+<header class="testa">
+  <div class="dentro">
+    <span class="timbro">機密 · Riservato</span>
+    <h1><span class="kj">資料</span>Gli handout del caso</h1>
+    <p class="sotto">L'Ultima Cena di Tanaka · Fascicolo 97-KPD-1114 · Kyoto, novembre 1997</p>
+    <p class="nota">Questi sono i documenti che i giocatori si passano di mano: non riassunti da leggere ad alta voce, ma carta vera da posare sul tavolo. Si stampano così come sono. Il caso ne porta tredici — qui ce ne sono quattro.</p>
+  </div>
+</header>
+
+<nav class="indice">
+  <a href="#rapporto">Rapporto d'intervento</a>
+  <a href="#referto">Referto scientifico</a>
+  <a href="#tabulati">Tabulati telefonici</a>
+  <a href="#planimetria">Planimetria della villa</a>
+</nav>
+
+<main class="fogli">
+  <figure class="foglio" id="rapporto">
+    <a href="../img/handout/rapporto.jpg"><img src="../img/handout/rapporto.jpg" alt="Rapporto preliminare di intervento della Polizia Prefetturale di Kyoto"></a>
+    <figcaption><b>Rapporto preliminare d'intervento</b><span>Il primo foglio che arriva in mano alla squadra</span></figcaption>
+  </figure>
+
+  <figure class="foglio" id="referto">
+    <a href="../img/handout/referto.jpg"><img src="../img/handout/referto.jpg" alt="Referto della Polizia Scientifica" loading="lazy"></a>
+    <figcaption><b>Referto della Scientifica</b><span>Cosa dicono le analisi — e cosa non dicono</span></figcaption>
+  </figure>
+
+  <figure class="foglio" id="tabulati">
+    <a href="../img/handout/tabulati.jpg"><img src="../img/handout/tabulati.jpg" alt="Tabulati telefonici della villa" loading="lazy"></a>
+    <figcaption><b>Tabulati telefonici</b><span>Diciannove chiamate, e qualcuna di troppo</span></figcaption>
+  </figure>
+
+  <figure class="foglio" id="planimetria">
+    <a href="../img/handout/planimetria.jpg"><img src="../img/handout/planimetria.jpg" alt="Planimetria del piano terra della villa" loading="lazy"></a>
+    <figcaption><b>Planimetria della villa</b><span>Piano terra — dove ognuno dice di essere stato</span></figcaption>
+  </figure>
+</main>
+
+<section class="coda">
+  <p style="margin:0;color:var(--inchiostro2)">Tutti e tredici gli handout di questo caso sono nello Starter — pronti da stampare.</p>
+  <div class="bottoni">
+    <a class="btn btn-forte" href="../#starter">Scarica lo Starter — gratis</a>
+    <a class="btn" href="../squadra/">📖 Il libretto della squadra</a>
+  </div>
+</section>
+
+<footer>
+  <b>限界 GENKAI</b> — gioco di ruolo investigativo · Kyoto, 1997 · <a href="../">torna al sito</a>
+</footer>
+
+<script>
+// mostra «Accedi» oppure il nome di chi è già entrato
+(async () => {
+  const a = document.getElementById('accesso');
+  if (!a) return;
+  try {
+    const r = await fetch('/api/utente', { headers: { 'Accept': 'application/json' } });
+    if (!r.ok) return;
+    const u = await r.json();
+    if (u.autenticato) { a.textContent = u.nome; a.href = '/Account'; a.title = 'Il tuo account'; }
+  } catch { /* pagina aperta senza applicazione: resta «Accedi» */ }
+})();
+</script>
+</body>
+</html>

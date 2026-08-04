@@ -7,6 +7,22 @@
 <div class="wz-progetti">
     <h1>I miei personaggi</h1>
 
+    @if (GenkaiWizard.Services.Ospite.SenzaAccount(HttpContext))
+    {
+        <div class="pg-ospite">
+            <p>
+                <strong>Puoi cominciare subito, senza registrarti.</strong>
+                Il tuo investigatore resta salvato qui, su questo browser.
+                Con un account lo ritrovi anche dal telefono o da un altro computer.
+            </p>
+            <p class="pg-ospite-azione">
+                <a class="wz-btn wz-mini wz-btn-primario" asp-area="" asp-page="/Account/Registrati">Crea un account</a>
+                <a class="wz-btn wz-mini" asp-area="" asp-page="/Account/Login">Ho già un account</a>
+                <span class="wz-nota">Quello che hai già creato si sposta da solo.</span>
+            </p>
+        </div>
+    }
+
     <form method="post" asp-page-handler="Crea" class="wz-nuovo">
         <input type="text" name="nome" maxlength="120" placeholder="Alias — un nome per ricordartelo (non è il nome del personaggio)" />
         <button type="submit" class="wz-btn wz-btn-primario">+ Nuovo personaggio</button>

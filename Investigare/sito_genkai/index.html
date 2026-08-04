@@ -3,379 +3,541 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GENKAI 限界 — il gioco investigativo. Kyoto, 1997</title>
-<meta name="description" content="GENKAI è un gioco di ruolo investigativo ambientato nel Giappone del 1997. Gli indizi si danno sempre: i dadi decidono solo quanto vi costa emotivamente quello che scoprite.">
-<link rel="icon" type="image/png" href="/img/favicon.png">
+<title>GENKAI 限界 — il gioco di ruolo investigativo. Kyoto, 1997</title>
+<meta name="description" content="Gioco di ruolo investigativo ambientato a Kyoto nel 1997. Siete detective della Omicidi: i casi si chiudono, chi li conduce si consuma. Starter gratuito, avventure pronte e strumenti online.">
+<link rel="icon" href="img/favicon.png">
+<meta property="og:title" content="GENKAI 限界 — il gioco di ruolo investigativo. Kyoto, 1997">
+<meta property="og:description" content="I casi si chiudono. Chi li conduce, si consuma. Starter gratuito, avventure pronte, strumenti online.">
+<meta property="og:image" content="https://genkai.it/img/kyoto-pioggia.jpg">
+<meta property="og:type" content="website">
 <style>
-    :root {
-        --carta: #14161a; --carta2: #191c21; --inchiostro: #d9d4c7;
-        --rosso: #b8342a; --grigio: #8a8f95; --bordo: #2a2e35;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-        background: var(--carta); color: var(--inchiostro);
-        font-family: Georgia, "Times New Roman", serif;
-        line-height: 1.65;
-        overflow-x: hidden; /* mobile: niente scorrimento orizzontale, mai */
-    }
-    img { max-width: 100%; height: auto; }
-    ::selection { background: var(--rosso); color: #fff; }
+:root{
+  --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
+  --inchiostro:#1c1a17; --inchiostro2:#4a453d; --tenue:#6a655c;
+  --rosso:#8b1a1a; --bordo:#d8cfc0; --oro:#b08d2f;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--serif);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rosso)}
+section{padding:3.2rem 1.1rem;overflow:hidden}
+.dentro{max-width:1040px;margin:0 auto}
+.stretto{max-width:720px;margin:0 auto}
 
-    /* ── hero ── */
-    .hero { min-height: 92vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 3rem 1.5rem; position: relative; }
-    .logo-hero {
-        width: clamp(13rem, 38vw, 18rem); height: auto; display: block; margin: 0 auto;
-        background: #e9e3d3; border-radius: 50%; padding: .4rem;
-        box-shadow: 0 0 80px rgba(184, 52, 42, .20), 0 4px 30px rgba(0, 0, 0, .5);
-    }
-    .hero h1 { font-size: clamp(1.05rem, 3vw, 1.35rem); letter-spacing: .32em; margin-top: 1.6rem; text-transform: uppercase; font-weight: 400; color: var(--grigio); }
-    .linea { width: 4rem; height: 2px; background: var(--rosso); margin: 1.6rem auto; }
-    .motto { font-size: clamp(1.05rem, 2.6vw, 1.25rem); font-style: italic; color: var(--inchiostro); }
-    .freccia { position: absolute; bottom: 1.4rem; left: 50%; transform: translateX(-50%); color: var(--grigio); font-size: 1.3rem; text-decoration: none; }
+/* ── testatina fissa ───────────────────────────────── */
+.barra{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.96);border-bottom:1px solid var(--bordo);backdrop-filter:blur(6px)}
+.barra .dentro{display:flex;align-items:center;gap:.9rem;padding:.5rem 1.1rem}
+.marchio{font-family:var(--sans);font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--inchiostro);white-space:nowrap;font-size:.95rem}
+.marchio i{font-style:normal;color:var(--rosso)}
+.menu{display:flex;gap:1.1rem;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--inchiostro2);text-decoration:none;white-space:nowrap;padding:.35rem 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
 
-    /* ── sezioni ── */
-    section { padding: 4.5rem 1.5rem; position: relative; overflow: hidden; /* i kanji d'acqua sporgono: mai fuori pagina */ }
-    section:nth-of-type(even) { background: var(--carta2); }
-    .colonna { max-width: 44rem; margin: 0 auto; }
-    .marchio { font-size: .8rem; letter-spacing: .35em; text-transform: uppercase; color: var(--rosso); margin-bottom: .8rem; }
-    h2 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 400; margin-bottom: 1.2rem; text-wrap: balance; }
-    p + p { margin-top: 1rem; }
-    .rilievo { font-size: clamp(1.15rem, 3vw, 1.45rem); font-style: italic; text-align: center; padding: 1.4rem 0; color: var(--inchiostro); }
-    .rilievo strong { color: var(--rosso); font-style: normal; }
-    .nota-grigia { color: var(--grigio); }
+/* ── apertura ──────────────────────────────────────── */
+.apertura{position:relative;padding:0;border-bottom:1px solid var(--bordo)}
+.apertura .sfondo{position:absolute;inset:0;background:url(img/kyoto-pioggia.jpg) center/cover;opacity:.16;filter:grayscale(.4)}
+.apertura .dentro{position:relative;padding:3.4rem 1.1rem 2.6rem;text-align:center}
+.logo{width:120px;margin:0 auto 1.2rem;opacity:.92}
+h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:.01em}
+.h1-kanji{display:block;font-size:.5em;color:var(--rosso);letter-spacing:.4em;margin-bottom:.4rem}
+.occhiello{font-family:var(--sans);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tenue);margin:0 0 1.1rem}
+.motto{font-size:clamp(1.05rem,3.4vw,1.35rem);max-width:34ch;margin:0 auto 1.6rem;color:var(--inchiostro2)}
+.motto b{color:var(--inchiostro);font-weight:400;border-bottom:2px solid rgba(139,26,26,.35)}
+.bottoni{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
+.btn{display:inline-block;font-family:var(--sans);font-size:.95rem;padding:.75rem 1.5rem;border-radius:7px;text-decoration:none;border:1px solid var(--inchiostro);color:var(--inchiostro);background:transparent;transition:.15s}
+.btn:hover{background:rgba(28,26,23,.06)}
+.btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
+.btn-forte:hover{background:#a02020;border-color:#a02020;color:#fff}
+.btn-piccolo{font-size:.85rem;padding:.5rem 1rem}
+.fatti{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.6rem;margin-top:1.8rem;font-family:var(--sans);font-size:.82rem;color:var(--tenue)}
+.fatti span::before{content:"·";margin-right:.55rem;color:var(--bordo)}
+.fatti span:first-child::before{content:none}
 
-    /* kanji d'acqua dietro le sezioni */
-    .acqua { position: absolute; right: -1rem; top: 1.5rem; font-size: 9rem; color: rgba(217, 212, 199, .045); font-weight: 700; pointer-events: none; user-select: none; line-height: 1; }
+/* ── titoli di sezione ─────────────────────────────── */
+.titolo{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--bordo);padding-bottom:.5rem;margin:0 0 1.6rem}
+.titolo h2{font-size:clamp(1.25rem,3.6vw,1.7rem);margin:0;font-weight:400}
+.titolo .kanji{font-size:1.5rem;color:var(--bordo);letter-spacing:.12em}
+.occhio{font-family:var(--sans);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosso);margin:0 0 .3rem}
 
-    /* ── immagini ── */
-    figure { margin: 2.5rem auto 0; max-width: 52rem; }
-    figure img { width: 100%; height: auto; display: block; border: 1px solid var(--bordo); }
-    figcaption { font-size: .85rem; color: var(--grigio); margin-top: .6rem; text-align: center; font-style: italic; }
-    .due-col { max-width: 60rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.4fr; gap: 2.5rem; align-items: center; }
-    .due-col figure { margin: 0; }
-    @media (max-width: 760px) { .due-col { grid-template-columns: 1fr; } }
+/* ── due colonne ───────────────────────────────────── */
+.due{display:grid;grid-template-columns:1fr;gap:1.6rem}
+.riquadro{background:var(--carta2);border:1px solid var(--bordo);border-top:3px solid var(--rosso);border-radius:10px;padding:1.3rem 1.4rem}
+.riquadro h3{font-family:var(--sans);font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--inchiostro2);margin:0 0 .7rem}
+.riquadro ul{margin:0;padding-left:1.1rem}
+.riquadro li{margin:.45rem 0}
 
-    /* ── griglia delle parole ── */
-    .parole { max-width: 60rem; margin: 2.5rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; background: var(--bordo); border: 1px solid var(--bordo); }
-    .parola { background: var(--carta); padding: 1.4rem 1.3rem; }
-    section:nth-of-type(even) .parola { background: var(--carta2); }
-    .parola .k { font-size: 2rem; color: var(--rosso); line-height: 1.1; }
-    .parola .nome { letter-spacing: .22em; text-transform: uppercase; font-size: .8rem; margin: .35rem 0 .5rem; }
-    .parola p { font-size: .92rem; color: var(--grigio); line-height: 1.5; }
+/* ── come funziona ─────────────────────────────────── */
+.passi{display:grid;grid-template-columns:1fr;gap:.8rem;margin:1.4rem 0}
+.passo{display:flex;gap:.9rem;align-items:flex-start}
+.passo .n{flex:none;width:2rem;height:2rem;border:1px solid var(--rosso);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:.85rem;color:var(--rosso)}
+.esempio{background:var(--carta3);border-left:4px solid var(--rosso);border-radius:0 8px 8px 0;padding:1rem 1.2rem;margin-top:1.4rem;font-style:italic}
+.esempio b{font-style:normal}
 
-    /* ── squadra ── */
-    .squadra { max-width: 72rem; margin: 2.5rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; }
-    .agente { background: var(--carta); border: 1px solid var(--bordo); }
-    section:nth-of-type(even) .agente { background: var(--carta2); }
-    .agente img { width: 100%; height: auto; display: block; filter: saturate(.92); }
-    .agente .corpo { padding: 1rem 1.1rem 1.2rem; }
-    .agente h3 { font-size: 1.05rem; letter-spacing: .06em; font-weight: 700; }
-    .agente .meta { color: var(--rosso); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; margin: .2rem 0 .55rem; }
-    .agente .ruolo { font-size: .85rem; color: var(--inchiostro); margin-bottom: .5rem; }
-    .agente q { font-size: .85rem; color: var(--grigio); font-style: italic; quotes: "«" "»"; }
+/* ── starter ───────────────────────────────────────── */
+.starter{background:var(--carta3);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)}
+.starter .griglia{display:grid;grid-template-columns:1fr;gap:1.6rem;align-items:center}
+.starter ul{list-style:none;margin:1rem 0 1.4rem;padding:0}
+.starter li{padding:.45rem 0 .45rem 1.7rem;position:relative;border-top:1px dotted var(--bordo)}
+.starter li:first-child{border-top:0}
+.starter li::before{content:"—";position:absolute;left:0;color:var(--rosso)}
 
-    /* ── libretto e distretto ── */
-    .btn-r { display: inline-block; margin-top: 1.8rem; padding: .75rem 1.7rem; border: 1px solid var(--rosso); color: var(--inchiostro); text-decoration: none; letter-spacing: .14em; text-transform: uppercase; font-size: .85rem; transition: background .2s, color .2s; }
-    .btn-r:hover { background: var(--rosso); color: #fff; }
-    .centro { text-align: center; }
-    .distretto { max-width: 68rem; margin: 2.5rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem 1.2rem; text-align: center; }
-    .dist img { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; border: 2px solid var(--bordo); display: block; margin: 0 auto .7rem; filter: saturate(.9); }
-    .dist h3 { font-size: .98rem; font-weight: 700; }
-    .dist .meta { color: var(--rosso); font-size: .74rem; letter-spacing: .13em; text-transform: uppercase; margin: .15rem 0 .4rem; }
-    .dist p { font-size: .84rem; color: var(--grigio); line-height: 1.45; }
+/* ── schede (avventure, strumenti, manuali) ────────── */
+.schede{display:grid;grid-template-columns:1fr;gap:1rem}
+.scheda{background:var(--carta2);border:1px solid var(--bordo);border-radius:10px;padding:1.1rem 1.2rem;display:flex;flex-direction:column}
+/* schede con copertina: libro a sinistra, testo a destra */
+.scheda-cop{display:grid;grid-template-columns:100px 1fr;gap:1.1rem;align-items:start}
+.scheda-cop > img{width:100px;border:1px solid var(--bordo);border-radius:4px;box-shadow:2px 3px 10px rgba(28,26,23,.18)}
+.scheda-testo{min-width:0;display:flex;flex-direction:column;align-self:stretch}
+.scheda h3{margin:0 0 .2rem;font-size:1.12rem;font-weight:400}
+.scheda .kj{color:var(--tenue);font-size:.9rem}
+.scheda .meta{font-family:var(--sans);font-size:.76rem;letter-spacing:.05em;color:var(--tenue);margin:.4rem 0 .7rem;text-transform:uppercase}
+.scheda p{margin:0 0 .9rem;color:var(--inchiostro2);font-size:.97rem}
+.scheda .piede{margin-top:auto;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.bollo{font-family:var(--sans);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--bordo);color:var(--tenue)}
+.bollo-rosso{border-color:var(--rosso);color:var(--rosso)}
 
-    /* ── attributi ── */
-    .attributi { max-width: 60rem; margin: 2.5rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: var(--bordo); border: 1px solid var(--bordo); }
-    .attr { background: var(--carta2); padding: 1.1rem 1.3rem; display: flex; gap: .9rem; align-items: baseline; }
-    section:nth-of-type(odd) .attr { background: var(--carta); }
-    .attr .nome { min-width: 6.2rem; color: var(--rosso); letter-spacing: .1em; text-transform: uppercase; font-size: .85rem; font-weight: 700; }
-    .attr p { font-size: .9rem; color: var(--grigio); line-height: 1.5; }
-    .tiro { text-align: center; margin-top: 2.2rem; }
-    .tiro .formula { font-size: clamp(1.3rem, 3.5vw, 1.8rem); letter-spacing: .06em; }
-    .tiro .formula strong { color: var(--rosso); }
-    .tiro p { color: var(--grigio); margin-top: .5rem; font-size: .95rem; }
+/* ── galleria handout ──────────────────────────────── */
+.galleria{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.doc{margin:0;display:block;border:1px solid var(--bordo);border-radius:8px;overflow:hidden;background:#fff;text-decoration:none;box-shadow:0 2px 12px rgba(28,26,23,.10);transition:transform .18s,box-shadow .18s,border-color .18s}
+.doc:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(28,26,23,.18);border-color:var(--rosso)}
+.doc img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;border-bottom:1px solid var(--bordo)}
+.doc figcaption{padding:.5rem .7rem .6rem;font-family:var(--sans);font-size:.76rem;letter-spacing:.06em;color:var(--inchiostro2);background:var(--carta2)}
 
-    /* ── gou ── */
-    .gou-griglia { max-width: 66rem; margin: 2.5rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
-    .gou { border: 1px solid var(--bordo); padding: 1.3rem 1.4rem; background: var(--carta2); }
-    section:nth-of-type(odd) .gou { background: var(--carta); }
-    .gou .testa { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; }
-    .gou h3 { font-size: 1.05rem; font-weight: 700; }
-    .gou .jp { color: var(--rosso); font-size: .95rem; white-space: nowrap; }
-    .gou .costo { color: var(--grigio); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; margin: .3rem 0 .6rem; }
-    .gou p { font-size: .92rem; color: var(--grigio); font-style: italic; }
+/* ── libretto ──────────────────────────────────────── */
+.libretto{display:grid;grid-template-columns:1fr;gap:1.4rem;align-items:center;margin-top:2rem;padding-top:1.8rem;border-top:1px solid var(--bordo)}
+.libretto-pagine{display:flex;gap:.6rem}
+.libretto-pagine img{width:33%;border:1px solid var(--bordo);border-radius:6px;box-shadow:0 3px 14px rgba(28,26,23,.14)}
 
-    /* ── stato / footer ── */
-    .stato { text-align: center; }
-    .stato p { max-width: 38rem; margin-left: auto; margin-right: auto; }
-    footer { border-top: 1px solid var(--bordo); padding: 2rem 1.5rem; text-align: center; color: var(--grigio); font-size: .85rem; letter-spacing: .08em; }
-    footer .k { color: var(--rosso); }
+/* ── investigatori ─────────────────────────────────── */
+.volti{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
+.volto{text-align:center}
+.volto img{aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid var(--bordo);width:100%}
+.volto b{display:block;margin-top:.5rem;font-weight:400}
+.volto small{color:var(--tenue);font-family:var(--sans);font-size:.74rem;letter-spacing:.05em}
+
+/* ── chiusura ──────────────────────────────────────── */
+.chiusura{background:var(--carta3);border-top:1px solid var(--bordo);text-align:center}
+footer{background:var(--inchiostro);color:#cfc7b5;padding:2.2rem 1.1rem;font-family:var(--sans);font-size:.85rem}
+footer a{color:#e0d8c8}
+footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+
+@media(min-width:760px){
+  section{padding:4.2rem 1.5rem}
+  .due{grid-template-columns:1fr 1fr;gap:1.8rem}
+  .passi{grid-template-columns:1fr 1fr;gap:1.2rem 2rem}
+  .schede{grid-template-columns:repeat(2,1fr)}
+  .volti{grid-template-columns:repeat(5,1fr)}
+  .starter .griglia{grid-template-columns:1.1fr .9fr;gap:2.4rem}
+  .galleria{grid-template-columns:repeat(4,1fr)}
+  .scheda-cop{grid-template-columns:120px 1fr}
+  .scheda-cop > img{width:120px}
+  .libretto{grid-template-columns:.9fr 1.1fr;gap:2.2rem}
+  .logo{width:150px}
+}
+@media(min-width:1000px){ .schede-3{grid-template-columns:repeat(3,1fr)} }
+@media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+
+.accesso{margin-left:.9rem;flex:none;font-family:var(--sans);font-size:.82rem;letter-spacing:.05em;text-decoration:none;color:var(--inchiostro);border:1px solid var(--bordo);background:var(--carta2);border-radius:999px;padding:.28rem .8rem;white-space:nowrap;max-width:11rem;overflow:hidden;text-overflow:ellipsis}
+.accesso:hover{border-color:var(--rosso);color:var(--rosso)}
 </style>
 </head>
 <body>
 
-<header class="hero">
-    <div>
-        <img class="logo-hero" src="/img/logo.png" alt="GENKAI 限界 — l'ensō spezzato, il cerchio che si incrina" width="460" height="460">
-        <h1>Il gioco investigativo · Kyoto, 1997</h1>
-        <div class="linea"></div>
-        <p class="motto">I casi si chiudono.<br>Chi li conduce, si consuma.<br>Il limite da non superare è il vostro.</p>
+<nav class="barra">
+  <div class="dentro">
+    <a class="marchio" href="#"><i>限界</i> GENKAI</a>
+    <div class="menu">
+      <a href="#gioco">Il gioco</a>
+      <a href="#starter">Starter</a>
+      <a href="#materiale">Materiale</a>
+      <a href="#avventure">Avventure</a>
+      <a href="#investigatori">Investigatori</a>
+      <a href="#strumenti">Strumenti</a>
+      <a href="#manuali">Manuali</a>
     </div>
-    <a class="freccia" href="#cosa" aria-label="Scorri">▾</a>
+    <a class="accesso" id="accesso" href="/Account/Login">Accedi</a>
+  </div>
+</nav>
+
+<!-- ═══════════ APERTURA ═══════════ -->
+<header class="apertura">
+  <div class="sfondo"></div>
+  <div class="dentro">
+    <img class="logo" src="img/logo.png" alt="GENKAI">
+    <p class="occhiello">Gioco di ruolo investigativo</p>
+    <h1><span class="h1-kanji">限界</span>Kyoto, 1997</h1>
+    <p class="motto">I casi si chiudono. <b>Chi li conduce, si consuma.</b><br>Il limite da non superare è il vostro.</p>
+    <div class="bottoni">
+      <a class="btn btn-forte" href="#starter">Scarica lo Starter — gratis</a>
+      <a class="btn" href="#strumenti">Prova gli strumenti online</a>
+    </div>
+    <p class="fatti">
+      <span>3–5 giocatori + 1 GM</span><span>3–4 ore a caso</span><span>Si tira 2d6</span><span>In italiano</span>
+    </p>
+  </div>
 </header>
 
-<section id="cosa">
-    <span class="acqua">調</span>
-    <div class="colonna">
-        <div class="marchio">Che cos'è</div>
-        <h2>Un gioco di ruolo dove il caso si risolve con la testa</h2>
-        <p>GENKAI è un gioco di ruolo investigativo ambientato nel <strong>Giappone del 1997</strong> — la burocrazia precisa, la gerarchia silenziosa, le contraddizioni tra tradizione e modernità. Niente cellulari intelligenti, niente banche dati istantanee: telefoni fissi, fax, archivi di carta, e persone da guardare negli occhi.</p>
-        <p>Non siete eroi d'azione. Siete <strong>investigatori</strong>: persone che osservano, ascoltano, ricostruiscono. Il caso si risolve facendo le domande giuste, controllando i documenti, collegando i pezzi.</p>
-        <p>La sfida non è fisica — è <strong>emotiva</strong>. Un caso vi porta dentro vite spezzate, bugie costruite con cura, segreti che le persone proteggono a costo di tutto. Gestire quella pressione, mantenere la lucidità, non perdere pezzi di voi stessi lungo la strada: questo è il gioco.</p>
+<!-- ═══════════ CHE GIOCO È ═══════════ -->
+<section id="gioco">
+  <div class="dentro">
+    <div class="titolo"><h2>Che gioco è</h2><span class="kanji">調</span></div>
+
+    <p class="stretto" style="margin:0 auto 1.8rem;font-size:1.08rem">
+      Siete <b>investigatori della Omicidi</b> in un distretto di Kyoto, nel 1997. Niente telefoni intelligenti, niente
+      banche dati istantanee: telefoni fissi, fax, archivi di carta, e persone da guardare negli occhi. Non siete eroi
+      d'azione — il caso si risolve facendo le domande giuste, controllando gli orari, notando la cosa fuori posto.
+    </p>
+
+    <div class="due">
+      <div class="riquadro">
+        <h3>Se giochi</h3>
+        <ul>
+          <li>Interpreti un detective vero: un mestiere, una gerarchia da rispettare, una vita privata che bussa nei momenti peggiori.</li>
+          <li>Gli indizi <b>si danno sempre</b>: non si tira per <em>trovare</em>, si tira per <em>reggere</em>.</li>
+          <li>Ogni caso ti costa qualcosa. Il <b>Ki</b> misura quanto reggi ancora prima di crollare.</li>
+        </ul>
+      </div>
+      <div class="riquadro">
+        <h3>Se conduci il gioco</h3>
+        <ul>
+          <li>Avventure già scritte, con handout pronti da stampare e mettere sul tavolo.</li>
+          <li>Un metodo per costruire un caso che sta in piedi: colpevole, movente, tracce, chi sa cosa.</li>
+          <li>Due strumenti online che preparano il materiale al posto tuo — schede, fascicoli, immagini.</li>
+        </ul>
+      </div>
     </div>
-    <figure>
-        <img src="/img/kyoto-1997.jpg" alt="Un incrocio di Kyoto negli anni '90: taxi, autobus, passanti" width="1400" height="933" loading="lazy">
-        <figcaption>Kyoto, anni '90. Il caso è là fuori, in mezzo alla vita di tutti i giorni.</figcaption>
-    </figure>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">証</span>
-    <div class="colonna">
-        <div class="marchio">Il principio</div>
-        <h2>Gli indizi si danno sempre</h2>
-        <p>Se cercate nel posto giusto, trovate quello che c'è. Se fate le domande giuste, ricevete le informazioni. <strong>Il dado non vi blocca mai davanti a una porta chiusa.</strong></p>
-        <p>I dadi decidono un'altra cosa: <em>come</em> il vostro personaggio gestisce quello che trova. Una scena brutale la vedete comunque — ma tirare decide se restate professionali o vi segnate dentro. Un testimone che mente: la bugia è lì — tirare decide se la cogliete al volo o la scoprite dopo.</p>
-        <p class="rilievo">«I dadi non danno gli indizi.<br>Decidono solo <strong>quanto vi costa</strong> quello che scoprite.»</p>
+<!-- ═══════════ COME FUNZIONA ═══════════ -->
+<section id="come" style="background:var(--carta2);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="dentro">
+    <div class="titolo"><h2>Come funziona, in breve</h2><span class="kanji">気</span></div>
+
+    <div class="passi">
+      <div class="passo"><span class="n">1</span><div><b>Si tirano due dadi.</b> Somma <b>uguale o minore</b> del tuo attributo: riesci. Basso è buono — sei attributi, e nessuno è un muscolo: Distacco, Pazienza, Silenzio, Lucidità, Ascolto, Presenza.</div></div>
+      <div class="passo"><span class="n">2</span><div><b>Le persone contano.</b> Ogni testimone ha un legame con te — l'<b>En</b> — che rende il tiro più facile o più difficile. Si guadagna e si brucia con il modo in cui li tratti.</div></div>
+      <div class="passo"><span class="n">3</span><div><b>Il caso ti entra dentro.</b> Le notti in bianco, le pressioni dall'alto, i favori chiesti male: il <b>Ki</b> scende.</div></div>
+      <div class="passo"><span class="n">4</span><div><b>Sotto una certa soglia si crolla.</b> È il <b>Genkai</b>, il limite: non un fallimento del personaggio, ma la scena in cui il tuo investigatore non regge più — e i compagni devono tirarlo fuori.</div></div>
     </div>
+
+    <div class="esempio stretto">
+      <b>Al tavolo.</b> Sono diciotto ore che sei sveglio e il testimone continua a non guardarti negli occhi.
+      Puoi aspettare — ma domattina avrà parlato con l'avvocato. Oppure spingere adesso: tiri, ottieni il nome,
+      e paghi un punto di Ki. Ora sai dove cercare. E sei un passo più vicino al punto in cui non reggi più.
+    </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">限</span>
-    <div class="due-col">
-        <figure>
-            <img src="/img/kyoto-pioggia.jpg" alt="Un vicolo di Kyoto sotto la pioggia, una berlina anni '90, la pagoda nella nebbia" width="900" height="1341" loading="lazy">
-        </figure>
-        <div>
-            <div class="marchio">Il nome</div>
-            <h2>Genkai è il limite. Il vostro.</h2>
-            <p>Ogni personaggio ha il <strong>Ki 気</strong> — il suo stato complessivo: mentale, emotivo, fisico. Non è la salute. È <em>quanto reggi</em>.</p>
-            <p>Il Ki si consuma: le scene che segnano, la pressione dell'attesa, il prezzo del proprio dono, l'aiuto dato a un compagno. E quando scende troppo, arriva il <strong>Genkai 限界</strong> — il crollo. Frustrazione, panico, blocco, fuga: il personaggio si ferma, e la scena è sua.</p>
-            <p>Da lì si può tornare. Gli altri possono sostenerti — un gesto, una parola, un punto di Ki sacrificato per te. In GENKAI si regge insieme, o non si regge.</p>
+<!-- ═══════════ STARTER ═══════════ -->
+<section id="starter" class="starter">
+  <div class="dentro">
+    <div class="titolo"><h2>Comincia da qui — lo Starter è gratuito</h2><span class="kanji">初</span></div>
+
+    <div class="griglia">
+      <div>
+        <p style="margin-top:0">Tutto quello che serve per giocare <b>una serata intera</b>, senza comprare niente e senza
+        aver mai visto il regolamento: un caso che si apre e si chiude in una notte, cinque investigatori già pronti e
+        i documenti da mettere in mano ai giocatori.</p>
+
+        <ul>
+          <li><b>L'Ultima Cena di Tanaka</b> — un industriale muore durante la festa nella sua villa. Tutti i sospetti sono ancora lì, sotto lo stesso tetto.</li>
+          <li><b>Le regole essenziali</b> — quanto basta per condurre quella serata, senza il peso del sistema completo.</li>
+          <li><b>Cinque schede pronte</b> — gli investigatori del distretto, da distribuire e giocare subito.</li>
+          <li><b>Gli handout del caso</b> — referti, rapporti, ritagli: roba vera da posare sul tavolo.</li>
+        </ul>
+
+        <div class="bottoni" style="justify-content:flex-start">
+          <a class="btn btn-forte" href="download/genkai-starter.zip">Scarica lo Starter</a>
+          <a class="btn" href="#avventure">Vedi tutte le avventure</a>
         </div>
+        <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin-top:.9rem">
+          Nessuna registrazione: scarichi e giochi.
+        </p>
+      </div>
+
+      <figure style="margin:0">
+        <img src="img/crime-board.jpg" alt="La crime board: il tabellone del caso da riempire al tavolo" style="border:1px solid var(--bordo);border-radius:10px;box-shadow:0 4px 18px rgba(28,26,23,.14)">
+        <figcaption style="font-family:var(--sans);font-size:.78rem;color:var(--tenue);margin-top:.5rem;text-align:center">La <b>crime board</b>: si stampa, si appende, e si riempie mano a mano — sospettati, testimoni, luoghi, prove.</figcaption>
+      </figure>
     </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">班</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">La squadra</div>
-        <h2>Cinque investigatori, un distretto di Kyoto</h2>
-        <p class="nota-grigia">I protagonisti pronti da giocare — ognuno col suo passato, il suo Kage, il suo Gou.</p>
+<!-- ═══════════ MATERIALE: HANDOUT + LIBRETTO ═══════════ -->
+<section id="materiale" style="background:var(--carta2);border-bottom:1px solid var(--bordo)">
+  <div class="dentro">
+    <div class="titolo"><h2>Cosa finisce sul tavolo</h2><span class="kanji">資料</span></div>
+    <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
+      Non riassunti da leggere ad alta voce: <b>documenti veri</b>, che i giocatori si passano di mano e confrontano.
+      Questi sono quelli del caso dello Starter — si stampano così come sono.
+    </p>
+
+    <div class="galleria">
+      <a class="doc" href="handout/#rapporto" title="Rapporto preliminare di intervento">
+        <img src="img/handout/rapporto.jpg" alt="Rapporto preliminare di intervento della Polizia Prefetturale di Kyoto" loading="lazy">
+        <figcaption>Rapporto d'intervento</figcaption>
+      </a>
+      <a class="doc" href="handout/#referto" title="Referto della Scientifica">
+        <img src="img/handout/referto.jpg" alt="Referto della Polizia Scientifica" loading="lazy">
+        <figcaption>Referto scientifico</figcaption>
+      </a>
+      <a class="doc" href="handout/#tabulati" title="Tabulati telefonici">
+        <img src="img/handout/tabulati.jpg" alt="Tabulati telefonici" loading="lazy">
+        <figcaption>Tabulati telefonici</figcaption>
+      </a>
+      <a class="doc" href="handout/#planimetria" title="Planimetria della villa">
+        <img src="img/handout/planimetria.jpg" alt="Planimetria del piano terra della villa" loading="lazy">
+        <figcaption>Planimetria della villa</figcaption>
+      </a>
     </div>
-    <figure>
-        <img src="/img/squadra-gruppo.jpg" alt="La squadra investigativa al completo, nella sala del distretto" width="1400" height="933" loading="lazy">
-        <figcaption>La Squadra Investigativa — Sezione Omicidi, Polizia Prefetturale di Kyoto.</figcaption>
-    </figure>
-    <div class="squadra">
-        <div class="agente">
-            <img src="/img/squadra-yamamoto.jpg" alt="Yamamoto Kenji nel suo ufficio, di notte" width="640" height="853" loading="lazy">
-            <div class="corpo">
-                <h3>Yamamoto Kenji</h3>
-                <div class="meta">42 anni · Ispettore Capo</div>
-                <div class="ruolo">Capo Squadra Investigativa</div>
-                <q>Sei un veterano rispettato. Casi importanti, reputazione solida. Ma la tua vita privata è un disastro.</q>
-            </div>
-        </div>
-        <div class="agente">
-            <img src="/img/squadra-honda.jpg" alt="Honda Ryota" width="640" height="853" loading="lazy">
-            <div class="corpo">
-                <h3>Honda Ryota</h3>
-                <div class="meta">35 anni · Sergente</div>
-                <div class="ruolo">Analista Scene del Crimine</div>
-                <q>Sei brillante. Lo sanno tutti, tu per primo. Ricostruisci le scene come se avessi assistito in persona.</q>
-            </div>
-        </div>
-        <div class="agente">
-            <img src="/img/squadra-nakamura.jpg" alt="Nakamura Shota" width="640" height="853" loading="lazy">
-            <div class="corpo">
-                <h3>Nakamura Shota</h3>
-                <div class="meta">38 anni · Ispettore</div>
-                <div class="ruolo">Specialista Interrogatori</div>
-                <q>Sei quello che fa parlare le persone. Non con la forza — con la pazienza. Prima o poi tutti parlano.</q>
-            </div>
-        </div>
-        <div class="agente">
-            <img src="/img/squadra-sato.jpg" alt="Sato Yuki" width="640" height="853" loading="lazy">
-            <div class="corpo">
-                <h3>Sato Yuki</h3>
-                <div class="meta">27 anni · Agente Scelto</div>
-                <div class="ruolo">Tecnico Analisi Tracce</div>
-                <q>Il più giovane della squadra. Quello che lavora fino a tardi, che controlla tre volte, che non si arrende.</q>
-            </div>
-        </div>
-        <div class="agente">
-            <img src="/img/squadra-fujita.jpg" alt="Fujita Emi" width="640" height="853" loading="lazy">
-            <div class="corpo">
-                <h3>Fujita Emi</h3>
-                <div class="meta">36 anni · Ispettore</div>
-                <div class="ruolo">Profiler · Psicologa Investigativa</div>
-                <q>Capisci le persone. Vedi i pattern. Sai perché la gente fa quello che fa.</q>
-            </div>
-        </div>
+    <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:.9rem 0 0;text-align:center">
+      Tocca un documento per aprirlo. Ogni avventura ne porta dai 13 ai 46.
+    </p>
+
+    <!-- il libretto della squadra -->
+    <div class="libretto">
+      <div class="libretto-pagine">
+        <img src="squadra/pagine/pagina-01.jpg" alt="Copertina del libretto della squadra" loading="lazy">
+        <img src="squadra/pagine/pagina-02.jpg" alt="Pagina: la squadra" loading="lazy">
+        <img src="squadra/pagine/pagina-05.jpg" alt="Pagina: sul campo" loading="lazy">
+      </div>
+      <div>
+        <p class="occhio">機密 · Riservato</p>
+        <h3 style="font-weight:400;font-size:1.35rem;margin:.1rem 0 .6rem">Il libretto della squadra</h3>
+        <p style="margin:0 0 1.1rem;color:var(--inchiostro2)">
+          Dieci pagine d'album interno: i cinque investigatori, chi dà gli ordini, il distretto in cui si lavora,
+          i kōban di notte, la Kyoto fuori dalle cartoline. È il primo pezzo di materiale che si mette in mano
+          ai giocatori — prima ancora delle regole.
+        </p>
+        <a class="btn" href="squadra/">📖 Sfoglia il libretto</a>
+      </div>
     </div>
-    <div class="centro">
-        <a class="btn-r" href="/squadra/">📖 Sfoglia il libretto della squadra</a>
-    </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">署</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">Il distretto</div>
-        <h2>Le persone attorno alla squadra</h2>
-        <p class="nota-grigia">Il distretto lavora per voi — e ha le sue regole, le sue gerarchie, i suoi tempi. E può essere corrotto: se l'indagine tocca interessi sensibili, qualcuno dentro potrebbe passare informazioni.</p>
+<!-- ═══════════ AVVENTURE ═══════════ -->
+<section id="avventure">
+  <div class="dentro">
+    <div class="titolo"><h2>Le avventure</h2><span class="kanji">事件</span></div>
+    <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
+      Casi già scritti e portati al tavolo, dalla serata singola alla campagna. Qui non si spoilera niente:
+      la soluzione la scopre chi indaga.
+    </p>
+
+    <div class="schede">
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/sake.jpg" alt="Copertina: L'Ultima Cena di Tanaka" loading="lazy">
+        <div class="scheda-testo">
+          <h3>L'Ultima Cena di Tanaka <span class="kj">酒</span></h3>
+          <p class="meta">Una serata · 3–4 ore · per cominciare</p>
+          <p>Un industriale dei cosmetici muore durante la festa che ha organizzato in casa propria. Nessuno è uscito dalla villa: il colpevole è ancora fra gli ospiti, e ha una spiegazione pronta per tutto.</p>
+          <div class="piede"><a class="btn btn-forte btn-piccolo" href="download/genkai-starter.zip">Scarica</a><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">13 handout</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/falsa-primavera.jpg" alt="Copertina: La Falsa Primavera" loading="lazy">
+        <div class="scheda-testo">
+          <h3>La Falsa Primavera <span class="kj">偽りの春</span></h3>
+          <p class="meta">Una serata · 3–4 ore · marzo 1997</p>
+          <p>Un vecchio ceramista di Kiyomizu muore in casa, circondato dalla famiglia che lo assisteva. Tutti hanno fatto il proprio dovere fino all'ultimo — ed è proprio questo il problema.</p>
+          <div class="piede"><span class="bollo">17 handout</span><span class="bollo">10 PNG</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/ultima-lezione.jpg" alt="Copertina: L'Ultima Lezione" loading="lazy">
+        <div class="scheda-testo">
+          <h3>L'Ultima Lezione <span class="kj">最後の講義</span></h3>
+          <p class="meta">Due sessioni · novembre 1997</p>
+          <p>Un professore universitario viene trovato morto nel suo studio. Il dipartimento chiude i ranghi e ogni collega ha una versione che regge — finché non si confrontano gli orari. Il caso può finire in più modi.</p>
+          <div class="piede"><span class="bollo">46 handout</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/il-giudice.jpg" alt="Copertina: Il Giudice" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Il Giudice <span class="kj">判事</span></h3>
+          <p class="meta">Caso lungo · per gruppi esperti</p>
+          <p>Muore un magistrato, e all'improvviso tutti hanno fretta che il caso si chiuda in un certo modo. Ogni dettaglio è verificabile: se controllate, torna. Se non controllate, vi si ritorce contro.</p>
+          <div class="piede"><span class="bollo">24 handout</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/occhi-di-volpe.jpg" alt="Copertina: Occhi di Volpe" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Occhi di Volpe <span class="kj">狐の目</span></h3>
+          <p class="meta">Campagna · 8–10 sessioni</p>
+          <p>Qualcuno avvelena i prodotti di una grande azienda alimentare e prende in giro la polizia con lettere pubbliche. Non è il noir intimo delle altre avventure: è una caccia che si gioca anche sui giornali.</p>
+          <div class="piede"><span class="bollo">Ispirata a un caso reale</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/qed.jpg" alt="Copertina: Q.E.D." loading="lazy">
+        <div class="scheda-testo">
+          <h3>Q.E.D. <span class="kj">完全数</span></h3>
+          <p class="meta">Campagna breve · giugno 1997</p>
+          <p>Morti che sembrano scollegate, finché qualcuno non nota che tra loro c'è una regola. Capirla non basta: bisogna arrivare prima del numero successivo.</p>
+          <div class="piede"><span class="bollo">In lavorazione</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/tra-galli.jpg" alt="Copertina: Tra Galli" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Tra Galli <span class="kj">闘鶏</span></h3>
+          <p class="meta">Caso · febbraio 1998</p>
+          <p>Un morto alla stazione di Kyoto, e una banda di provincia che campa di combattimenti clandestini e scommesse. Un giro piccolo, gente che si conosce da vent'anni, e nessuno che parli con un poliziotto.</p>
+          <div class="piede"><span class="bollo">In lavorazione</span></div>
+        </div>
+      </article>
     </div>
-    <div class="distretto">
-        <div class="dist">
-            <img src="/img/dist-taniguchi.jpg" alt="Taniguchi Osamu" width="128" height="128" loading="lazy">
-            <h3>Taniguchi Osamu</h3>
-            <div class="meta">Il Commissario · 56</div>
-            <p>Il vostro superiore. Sezione Omicidi, Polizia Prefetturale di Kyoto. I casi arrivano dal suo tavolo.</p>
-        </div>
-        <div class="dist">
-            <img src="/img/dist-yamada.jpg" alt="Yamada Tetsuo" width="128" height="128" loading="lazy">
-            <h3>Yamada Tetsuo</h3>
-            <div class="meta">L'Accompagnatore · 35</div>
-            <p>Il braccio operativo del distretto: recupera tabulati, coordina pedinamenti, cerca documenti.</p>
-        </div>
-        <div class="dist">
-            <img src="/img/dist-ito.jpg" alt="Ito Daisuke" width="128" height="128" loading="lazy">
-            <h3>Ito Daisuke</h3>
-            <div class="meta">La Scientifica · 52</div>
-            <p>Responsabile della Kanshiki-ka sulla scena del crimine. I reperti parlano con la sua voce.</p>
-        </div>
-        <div class="dist">
-            <img src="/img/dist-watanabe.jpg" alt="Watanabe Hideo" width="128" height="128" loading="lazy">
-            <h3>Watanabe Hideo</h3>
-            <div class="meta">Il Procuratore · 51</div>
-            <p>Pubblico Ministero. Perquisizioni e mandati passano dalla sua firma — e non firma mai in fretta.</p>
-        </div>
-        <div class="dist">
-            <img src="/img/dist-gonda.jpg" alt="Gonda Susumu" width="128" height="128" loading="lazy">
-            <h3>Gonda Susumu</h3>
-            <div class="meta">L'Archivista · 55</div>
-            <p>Fascicoli, registri e reception della centrale. Chi conosce l'archivio conosce il distretto.</p>
-        </div>
-    </div>
+    <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:1.2rem 0 0;text-align:center">
+      Per ora si scarica il caso dello Starter. Gli altri arrivano.
+    </p>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">六</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">La scheda</div>
-        <h2>Sei attributi. Non muscoli — stati interiori.</h2>
-        <p class="nota-grigia">Come stai quando le cose si mettono male. Da 4 a 9: tutti partono da 4, distribuisci 9 punti.</p>
+<!-- ═══════════ INVESTIGATORI ═══════════ -->
+<section id="investigatori" style="background:var(--carta2);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="dentro">
+    <div class="titolo"><h2>Gli investigatori</h2><span class="kanji">刑事</span></div>
+    <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
+      Cinque schede pronte: la squadra del distretto, con nome, storia e i propri guai. Si stampano e si gioca.
+      Oppure ve li costruite voi, uno per uno.
+    </p>
+
+    <div class="volti">
+      <figure class="volto" style="margin:0"><img src="img/squadra-yamamoto.jpg" alt="Yamamoto Kenji"><b>Yamamoto Kenji</b><small>Ispettore</small></figure>
+      <figure class="volto" style="margin:0"><img src="img/squadra-honda.jpg" alt="Honda Ryota"><b>Honda Ryota</b><small>Sergente</small></figure>
+      <figure class="volto" style="margin:0"><img src="img/squadra-nakamura.jpg" alt="Nakamura Shota"><b>Nakamura Shota</b><small>Agente</small></figure>
+      <figure class="volto" style="margin:0"><img src="img/squadra-sato.jpg" alt="Sato Yuki"><b>Sato Yuki</b><small>Agente</small></figure>
+      <figure class="volto" style="margin:0"><img src="img/squadra-fujita.jpg" alt="Fujita Emi"><b>Fujita Emi</b><small>Agente</small></figure>
     </div>
-    <div class="attributi">
-        <div class="attr"><span class="nome">Distacco</span><p>Restare lucido davanti all'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire.</p></div>
-        <div class="attr"><span class="nome">Pazienza</span><p>Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo.</p></div>
-        <div class="attr"><span class="nome">Silenzio</span><p>Calma interiore. Incassare provocazioni senza esplodere. Non tradire le tue intenzioni con un gesto di troppo.</p></div>
-        <div class="attr"><span class="nome">Lucidità</span><p>Vedere chiaro. Collegare i pezzi. Ricostruire cosa è successo da quello che resta.</p></div>
-        <div class="attr"><span class="nome">Ascolto</span><p>Far parlare gli altri. Cogliere il non detto. Sentire quando qualcosa non torna in ciò che ti stanno dicendo.</p></div>
-        <div class="attr"><span class="nome">Presenza</span><p>L'autorità che ispiri. Farti prendere sul serio. Far pesare la tua posizione in una stanza.</p></div>
+
+    <div class="bottoni" style="margin-top:1.6rem">
+      <a class="btn" href="squadra/">📖 Sfoglia il libretto della squadra</a>
+      <a class="btn btn-piccolo" href="#strumenti">Creane uno tuo</a>
     </div>
-    <div class="tiro">
-        <div class="formula">2d6 ≤ attributo = <strong>successo</strong></div>
-        <p>Il fallimento non blocca mai la storia: l'informazione arriva comunque.<br>Sono gli estremi a lasciare il segno — un 2 ti rafforza, un 12 ti costa un pezzo.</p>
-    </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">言</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">Le parole del gioco</div>
-        <h2>Otto parole, un modo di stare al tavolo</h2>
+<!-- ═══════════ STRUMENTI ═══════════ -->
+<section id="strumenti">
+  <div class="dentro">
+    <div class="titolo"><h2>Gli strumenti</h2><span class="kanji">道具</span></div>
+    <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
+      Tre programmi che fanno il lavoro noioso al posto vostro. L'investigatore si crea <b>subito, senza registrarsi</b>:
+      resta salvato in questo browser, e con un account lo ritrovate anche dal telefono o da un altro computer.
+    </p>
+
+    <div class="schede schede-3">
+      <article class="scheda">
+        <h3>Crea il tuo investigatore</h3>
+        <p class="meta">Wizard · nel browser</p>
+        <p>Dodici passi, spiegati mentre li fai: attributi, specializzazione, il dono che costa caro, il problema privato che ti seguirà nei casi. Alla fine hai la scheda pronta da stampare — col ritratto, se lo vuoi.</p>
+        <div class="piede"><a class="btn btn-forte btn-piccolo" href="/Pg">Crea un investigatore</a><span class="bollo">Senza registrarsi</span></div>
+      </article>
+
+      <article class="scheda">
+        <h3>Costruisci un caso</h3>
+        <p class="meta">Wizard · nel browser</p>
+        <p>Dal cadavere al colpevole: chi è morto, chi l'ha fatto, perché, chi altro aveva un motivo, cosa sa ciascuno e cosa dirà se lo interrogate. Ne escono le schede dei PNG, il fascicolo e gli handout da stampare.</p>
+        <div class="piede"><a class="btn btn-forte btn-piccolo" href="/Progetti">Costruisci un caso</a><span class="bollo">Serve un account</span></div>
+      </article>
+
+      <article class="scheda">
+        <h3>GM Dashboard</h3>
+        <p class="meta">Applicazione per Windows · gratuita</p>
+        <p>Il tavolo del GM in una finestra sola: documenti, appunti, calendario della sessione, musica, relazioni tra i personaggi, i manuali sempre aperti. Niente più dieci PDF e il telefono in mano.</p>
+        <div class="piede"><a class="btn btn-piccolo" href="https://maru.ga/">Scarica la Dashboard</a><span class="bollo">Open source</span></div>
+      </article>
     </div>
-    <div class="parole">
-        <div class="parola"><div class="k">気</div><div class="nome">Ki</div><p>L'energia vitale: quanto reggi — mente, cuore e corpo insieme. Si consuma, si recupera, e decide quanto sei vicino al limite.</p></div>
-        <div class="parola"><div class="k">縁</div><div class="nome">En</div><p>Il legame con ogni persona del caso, da −5 a +5. Chi si fida di te ti viene incontro; chi ti è ostile rema contro. Le relazioni si costruiscono in gioco.</p></div>
-        <div class="parola"><div class="k">業</div><div class="nome">Gou</div><p>Un dono ambiguo, che né voi né il gioco spiegate fino in fondo. Funziona sempre — e ogni volta si paga.</p></div>
-        <div class="parola"><div class="k">影</div><div class="nome">Kage</div><p>L'ombra: il problema personale di ciascuno. Sapete cos'è. Non sapete quando il caso andrà a toccarlo.</p></div>
-        <div class="parola"><div class="k">情け</div><div class="nome">Nasake</div><p>La compassione. Un punto conservato che non puoi usare su di te: si dona a un compagno, giocando la scena. <em>«La compassione non è solo per gli altri.»</em></p></div>
-        <div class="parola"><div class="k">悟り</div><div class="nome">Satori</div><p>Il momento di chiarezza: una volta per sessione, non tiri — vedi. Il miglior esito plausibile, mai l'impossibile.</p></div>
-        <div class="parola"><div class="k">算盤</div><div class="nome">Soroban</div><p>Il conteggio della giornata. Com'è andata oggi decide come dormi stanotte — e con quante forze riparti domani.</p></div>
-        <div class="parola"><div class="k">限界</div><div class="nome">Genkai</div><p>Il limite. Quando il Ki scende troppo, il personaggio crolla — e il tavolo scopre chi è davvero, nel momento peggiore.</p></div>
-    </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">業</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">Il Debito</div>
-        <h2>Il Gou: un dono che si paga</h2>
-        <p>Ogni investigatore ne possiede <strong>uno solo</strong>: un'abilità che va oltre la normale competenza — un dono ambiguo, mai spiegato fino in fondo. Funziona sempre. Costa Ki, e ogni uso <strong>raddoppia</strong> il costo del successivo: solo una notte di sonno lo riabbassa. Qualche esempio dal catalogo:</p>
+<!-- ═══════════ MANUALI ═══════════ -->
+<section id="manuali" style="background:var(--carta2);border-top:1px solid var(--bordo)">
+  <div class="dentro">
+    <div class="titolo"><h2>I manuali</h2><span class="kanji">書</span></div>
+    <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
+      Il regolamento sta in poche pagine: si impara giocando. Il resto sono strumenti per chi conduce.
+    </p>
+
+    <div class="schede">
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/briefing.jpg" alt="Copertina: Briefing dei giocatori" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Briefing dei giocatori</h3>
+          <p class="meta">Da leggere prima di sedersi</p>
+          <p>Le pagine da dare in mano a chi gioca: cosa fa un investigatore, come si tira, cos'è il Ki. Si legge in dieci minuti.</p>
+          <div class="piede"><a class="btn btn-forte btn-piccolo" href="download/genkai-starter.zip">Scarica</a><span class="bollo bollo-rosso">Nello Starter</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/manuale-giocatori.jpg" alt="Copertina: Manuale dei giocatori" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Manuale dei giocatori</h3>
+          <p class="meta">Il regolamento completo</p>
+          <p>Attributi, tiri, En, Ki e Genkai, i doni che costano caro, le specializzazioni, la crescita tra un caso e l'altro.</p>
+          <div class="piede"><span class="bollo">In preparazione</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/manuale-gm.jpg" alt="Copertina: Manuale del GM" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Manuale del GM</h3>
+          <p class="meta">Per chi conduce</p>
+          <p>Come si porta un'indagine, come si gestiscono interrogatori e pressioni, come si costruisce un caso che sta in piedi.</p>
+          <div class="piede"><span class="bollo">In preparazione</span></div>
+        </div>
+      </article>
     </div>
-    <div class="gou-griglia">
-        <div class="gou">
-            <div class="testa"><h3>Ombra della Verità</h3><span class="jp">影の真実</span></div>
-            <div class="costo">Ascolto · 3 Ki</div>
-            <p>Senti quando qualcuno mente. Non sai come, ma lo senti.</p>
-        </div>
-        <div class="gou">
-            <div class="testa"><h3>Teatro delle Ombre</h3><span class="jp">影芝居</span></div>
-            <div class="costo">Lucidità · 4 Ki</div>
-            <p>Guardando una scena, vedi le sagome sbiadite di ciò che è accaduto.</p>
-        </div>
-        <div class="gou">
-            <div class="testa"><h3>Occhio della Gru</h3><span class="jp">鶴の目</span></div>
-            <div class="costo">Lucidità · 3 Ki</div>
-            <p>Vedi ciò che altri non vedono — il dettaglio che cambia tutto.</p>
-        </div>
-        <div class="gou">
-            <div class="testa"><h3>Voce del Tuono</h3><span class="jp">雷の声</span></div>
-            <div class="costo">Presenza · 3 Ki</div>
-            <p>Esplosione di autorità in un momento preciso. Una frase, uno sguardo. Interruzione totale.</p>
-        </div>
-        <div class="gou">
-            <div class="testa"><h3>Porta Socchiusa</h3><span class="jp">開きかけの扉</span></div>
-            <div class="costo">Ascolto · 3 Ki</div>
-            <p>Le persone si aprono con te. Dicono più di quanto vorrebbero.</p>
-        </div>
-        <div class="gou">
-            <div class="testa"><h3>Brivido sulla Nuca</h3><span class="jp">首筋の寒気</span></div>
-            <div class="costo">Ascolto · 2 Ki</div>
-            <p>Percepisci il pericolo prima che si manifesti.</p>
-        </div>
-    </div>
+  </div>
 </section>
 
-<section>
-    <span class="acqua">板</span>
-    <div class="colonna" style="text-align:center">
-        <div class="marchio">Al tavolo</div>
-        <h2>La Crime Board</h2>
-        <p>Indizi, sospettati, connessioni, timeline: la bacheca del caso <strong>la costruite voi</strong>, durante l'indagine — foto appuntate, filo rosso, note a matita. E quando serve entrare in casa di qualcuno, ricordate: perquisizioni, intercettazioni e documenti riservati passano <strong>dall'autorizzazione del magistrato</strong>. Siamo in Giappone, è il 1997 — e la procedura è parte del gioco.</p>
+<!-- ═══════════ CHIUSURA ═══════════ -->
+<section class="chiusura">
+  <div class="stretto">
+    <p class="occhio">Kyoto, 1997</p>
+    <h2 style="font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);margin:0 0 1.2rem">Un caso si chiude. La città, no.</h2>
+    <div class="bottoni">
+      <a class="btn btn-forte" href="#starter">Scarica lo Starter — gratis</a>
+      <a class="btn" href="/Pg">Crea un investigatore</a>
     </div>
-    <figure>
-        <img src="/img/crime-board.jpg" alt="La Crime Board di GENKAI: bacheca su carta invecchiata con foto, timbro della Polizia Prefetturale di Kyoto e filo rosso" width="1600" height="1131" loading="lazy">
-        <figcaption>La Crime Board ufficiale — 捜査本部, la sala operativa indagini.</figcaption>
-    </figure>
-</section>
-
-<section class="stato">
-    <span class="acqua">道</span>
-    <div class="colonna">
-        <div class="marchio">Dove siamo</div>
-        <h2>In sviluppo, al tavolo</h2>
-        <p>GENKAI è in sviluppo attivo: i playtest sono in corso e le prime avventure sono complete e giocate. Su queste pagine arriverà, un pezzo alla volta, il materiale per giocare — a partire dal <strong>libretto della squadra</strong>.</p>
-        <p class="nota-grigia">Il materiale arriva presto.</p>
-    </div>
+  </div>
 </section>
 
 <footer>
-    <span class="k">限界</span> GENKAI © 2026 — Kyoto, 1997. Ogni indagine consuma chi la conduce.
+  <div class="dentro">
+    <div><b>限界 GENKAI</b> — gioco di ruolo investigativo · Kyoto, 1997</div>
+    <div><a href="squadra/">La squadra</a> · <a href="https://maru.ga/">GM Dashboard</a></div>
+  </div>
 </footer>
 
+
+<script>
+// mostra «Accedi» oppure il nome di chi è già entrato
+(async () => {
+  const a = document.getElementById('accesso');
+  if (!a) return;
+  try {
+    const r = await fetch('/api/utente', { headers: { 'Accept': 'application/json' } });
+    if (!r.ok) return;
+    const u = await r.json();
+    if (u.autenticato) { a.textContent = u.nome; a.href = '/Account'; a.title = 'Il tuo account'; }
+  } catch { /* sito aperto da solo, senza applicazione: resta «Accedi» */ }
+})();
+</script>
 </body>
 </html>

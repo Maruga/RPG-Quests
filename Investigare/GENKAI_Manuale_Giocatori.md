@@ -94,7 +94,7 @@ Il Ki è lo stato complessivo del tuo personaggio: fisico, mentale, emotivo tutt
 
 **Ki massimo** = attributo più basso (di scheda) + 2d6 (prendi il dado più alto) + eventuali punti Ki comprati. Tetto assoluto: **12**.
 
-> **Nota**: Se uno dei due dadi mostra 1, puoi ritirarlo.
+> **Nota**: Se uno dei due dadi mostra 1, lo ritiri — sempre, anche più volte: un 1 non si tiene mai.
 
 **Il dado rappresenta il momento** — non sei sempre al massimo delle tue energie: hai periodi top e periodi no. **A fine caso il dado si ritira**, e il nuovo Ki massimo sostituisce il vecchio, in su o in giù. Alzare il tuo attributo più basso alza anche il Ki massimo; i punti comprati restano sempre.
 
@@ -877,13 +877,7 @@ Un errore comune è giocare come se il personaggio vedesse sempre le cose con ch
 
 Il combattimento è raro e pericoloso. Se c'è una sparatoria, la risposta intelligente è cercare rinforzi o fuggire. Non siete combattenti.
 
-Quando è inevitabile, si usa il modulo **`GENKAI_Combattimento.md`** (*Lo Scontro*). L'essenziale da sapere:
-
-- **Iniziativa**: 2d6 a testa, agisce prima chi ha il **dado più basso** — e quel tiro è già la tua prima azione
-- **Attacco e difesa**: entrambi tirano 2d6 ≤ attributo; il danno = margine di chi attacca + arma − margine di chi difende. Si perde **Ki**
-- **Difendi come vuoi tu**: schivi (Lucidità), incassi (Silenzio — mai coltelli o proiettili), ti ripari (Pazienza), ti defili (Distacco)
-- Coperture e giubbotti **abbassano il tuo dado** di difesa; buio e fumo alzano quello di chi ti spara
-- Niente Nami né Kiwami: il combattimento costa Ki e basta — e un'arma da fuoco può mettere fuori gioco
+Quando è inevitabile, **tutte le regole sono nel modulo `GENKAI_Combattimento.md`** (*Lo Scontro*): si legge in fretta e si tiene aperto al tavolo.
 
 ---
 
@@ -944,7 +938,7 @@ Non si applica al Gou
 GENKAI
 Ki ≤ 3: crisi, fuori gioco temporaneo
 Perdite di Ki (costi, pressione): mai sotto 1 — ti fermi a 1
-Danno da combattimento: nessun pavimento — a 0 o sotto sei morto
+Danno da combattimento: vedi GENKAI_Combattimento.md
 
 RECUPERO NOTTURNO (SOROBAN 算盤)
 Numero 0-9 segnato su scheda o foglio, parte da 5

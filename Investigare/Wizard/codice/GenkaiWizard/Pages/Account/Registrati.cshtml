@@ -1,0 +1,75 @@
+@page
+@model GenkaiWizard.Pages.Account.RegistratiModel
+@{
+    ViewData["Title"] = "Crea un account";
+}
+
+<div class="acc">
+    <header class="acc-testata">
+        <h1>Crea un account <span class="acc-kanji">登録</span></h1>
+        <p class="acc-sotto">Serve solo per ritrovare i tuoi personaggi e i tuoi casi da qualsiasi computer.</p>
+    </header>
+
+    @if (Model.Errore is not null)
+    {
+        <p class="acc-errore">@Model.Errore</p>
+    }
+
+    <div class="acc-colonne">
+        <section class="acc-riquadro">
+            <h2>I tuoi dati</h2>
+            <form method="post" asp-route-returnUrl="@Model.ReturnUrl">
+                <div asp-validation-summary="ModelOnly" class="acc-errore"></div>
+
+                <div class="acc-campo">
+                    <label asp-for="Input.Email">Email</label>
+                    <input asp-for="Input.Email" autocomplete="username" placeholder="nome@esempio.it" />
+                    <span asp-validation-for="Input.Email" class="acc-nota-errore"></span>
+                </div>
+
+                <div class="acc-campo">
+                    <label asp-for="Input.Password">Password <small>(almeno 8 caratteri)</small></label>
+                    <input asp-for="Input.Password" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Input.Password" class="acc-nota-errore"></span>
+                </div>
+
+                <div class="acc-campo">
+                    <label asp-for="Input.Conferma">Ripeti la password</label>
+                    <input asp-for="Input.Conferma" type="password" autocomplete="new-password" />
+                    <span asp-validation-for="Input.Conferma" class="acc-nota-errore"></span>
+                </div>
+
+                <button type="submit" class="acc-btn acc-btn-primario">Crea l'account</button>
+            </form>
+
+            <p class="acc-minori">Hai già un account? <a asp-page="/Account/Login">Accedi</a></p>
+        </section>
+
+        <section class="acc-riquadro">
+            <h2>Senza account</h2>
+            <p class="acc-nota">
+                Puoi <strong>creare un investigatore</strong> anche senza registrarti: resta salvato
+                su questo browser. L'account serve a ritrovarlo da qualsiasi computer o telefono —
+                e se lo crei dopo, quello che hai già fatto si sposta da solo.
+            </p>
+            <a class="acc-btn" href="/Pg">Crea un investigatore</a>
+
+            @if (Model.Esterni.Count > 0)
+            {
+                <h2 style="margin-top:1.4rem">In un clic</h2>
+                <form method="post" asp-page="/Account/Login" asp-page-handler="Esterno" asp-route-returnUrl="@Model.ReturnUrl">
+                    @foreach (var s in Model.Esterni)
+                    {
+                        <button type="submit" name="provider" value="@s.Name" class="acc-btn acc-btn-esterno">
+                            @(s.Name == "Google" ? "Continua con Google" : $"Continua con {s.DisplayName}")
+                        </button>
+                    }
+                </form>
+            }
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

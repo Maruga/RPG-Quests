@@ -39,7 +39,7 @@ Ogni PG ha 6 attributi (da 4 a 9):
 ## Ki 気 — Energia Vitale
 
 Il Ki rappresenta lo stato complessivo del personaggio: mentale, emotivo, fisico.
-**Ki massimo** = attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**; l'1 si ritira **una sola volta**) + eventuali punti comprati. Tetto: 12.
+**Ki massimo** = attributo più basso + 2d6 (prendi il dado **PIÙ ALTO**; l'1 si ritira **sempre**) + eventuali punti comprati. Tetto: 12.
 Il dado rappresenta **il momento** — periodi top e periodi no: a fine caso si ritira, in su o in giù.
 Si consuma quando: subite Nami-/Kiwami-, usate il Gou, aiutate un compagno.
 
@@ -185,7 +185,7 @@ Quando il Ki scende a **3 o meno**:
 
 **Rientro**: a ogni cambio scena, tiri **2d6 letti come dadi singoli** (mai la somma): ogni dado ≤ Ki attuale → +1 Ki (0, 1 o 2). Quando il Ki supera 3, rientri.
 
-**Perdite di Ki** (costi, pressione, tiri): mai sotto 1 — ti fermi a 1. **Danno da combattimento**: nessun pavimento — a Ki 0 o sotto il PG muore.
+**Perdite di Ki** (costi, pressione, tiri): mai sotto 1 — ti fermi a 1. **Danno da combattimento**: regole nel modulo `GENKAI_Combattimento.md`.
 
 ---
 

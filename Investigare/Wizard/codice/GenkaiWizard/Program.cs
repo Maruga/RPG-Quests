@@ -12,16 +12,43 @@ var provider = builder.Configuration["Database:Provider"] ?? "Sqlite";
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' non trovata.");
 
+// dove sta davvero il database (finisce nel log se qualcosa non va)
+string percorsoDb = "(SQL Server)";
+bool dbSuCartellaTemporanea = false;
+
 if (!provider.Equals("SqlServer", StringComparison.OrdinalIgnoreCase))
 {
     // SQLite: un percorso relativo dipende dalla cartella di avvio (dotnet run, VS, exe…)
     // → si finisce su database DIVERSI a seconda di come si lancia. Lo si ancora al ContentRoot.
     var csb = new Microsoft.Data.Sqlite.SqliteConnectionStringBuilder(connectionString);
     if (!Path.IsPathRooted(csb.DataSource))
-    {
         csb.DataSource = Path.Combine(builder.Environment.ContentRootPath, csb.DataSource);
-        connectionString = csb.ConnectionString;
+
+    // Se la cartella NON è scrivibile (hosting senza permessi) il sito non partirebbe proprio.
+    // Ripiego su una cartella temporanea: il sito funziona, ma i dati NON sono durevoli.
+    static bool Scrivibile(string cartella)
+    {
+        try
+        {
+            Directory.CreateDirectory(cartella);
+            var f = Path.Combine(cartella, $"prova-{Guid.NewGuid():N}.tmp");
+            File.WriteAllText(f, "x");
+            File.Delete(f);
+            return true;
+        }
+        catch { return false; }
     }
+
+    if (!Scrivibile(Path.GetDirectoryName(csb.DataSource)!))
+    {
+        var ripiego = Path.Combine(Path.GetTempPath(), "genkai");
+        Directory.CreateDirectory(ripiego);
+        csb.DataSource = Path.Combine(ripiego, Path.GetFileName(csb.DataSource));
+        dbSuCartellaTemporanea = true;
+    }
+
+    percorsoDb = csb.DataSource;
+    connectionString = csb.ConnectionString;
 }
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -41,12 +68,35 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     })
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-// Sessione lunga: niente re-login continui
+// Sessione lunga: niente re-login continui. Le pagine di accesso/account sono le NOSTRE
+// (Pages/Account), in italiano e in tinta col resto: quelle di serie restano solo di scorta.
 builder.Services.ConfigureApplicationCookie(o =>
 {
     o.ExpireTimeSpan = TimeSpan.FromDays(30);
     o.SlidingExpiration = true;
+    o.LoginPath = "/Account/Login";
+    o.LogoutPath = "/Identity/Account/Logout";
+    o.AccessDeniedPath = "/Account/Login";
 });
+
+// ── Accesso con Google: si accende da solo quando ci sono le chiavi ──
+// Dove metterle (mai nel codice, mai su git):
+//   sviluppo → dotnet user-secrets set "Autenticazione:Google:ClientId" "…"
+//              dotnet user-secrets set "Autenticazione:Google:ClientSecret" "…"
+//   in linea → variabili d'ambiente Autenticazione__Google__ClientId / __ClientSecret
+// Nella Google Cloud Console (OAuth client «Applicazione web») l'URI di reindirizzamento
+// autorizzato dev'essere <indirizzo del sito>/signin-google — es. https://genkai.it/signin-google
+// e, per le prove in locale, http://localhost:5041/signin-google
+var googleId = builder.Configuration["Autenticazione:Google:ClientId"];
+var googleSecret = builder.Configuration["Autenticazione:Google:ClientSecret"];
+if (!string.IsNullOrWhiteSpace(googleId) && !string.IsNullOrWhiteSpace(googleSecret))
+{
+    builder.Services.AddAuthentication().AddGoogle(o =>
+    {
+        o.ClientId = googleId;
+        o.ClientSecret = googleSecret;
+    });
+}
 
 builder.Services.AddRazorPages();
 
@@ -59,11 +109,18 @@ builder.Services.AddHttpClient<ImmaginiService>();
 
 var app = builder.Build();
 
-// Migrazioni automatiche all'avvio (Identity + Progetti)
-using (var scope = app.Services.CreateScope())
+// Migrazioni automatiche all'avvio (Identity + Progetti).
+// Se falliscono NON si abbatte il sito: l'errore finisce nel log dell'applicazione.
+string? erroreAvvio = null;
+try
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     db.Database.Migrate();
+}
+catch (Exception ex)
+{
+    erroreAvvio = ex.ToString();
 }
 
 if (app.Environment.IsDevelopment())
@@ -77,6 +134,9 @@ else
 }
 
 app.UseHttpsRedirection();
+// il sito (index.html, /squadra/, /handout/) sta dentro wwwroot: «/» e le cartelle
+// devono servire il loro index.html prima di arrivare alle Razor Pages
+app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
@@ -96,8 +156,11 @@ if (app.Environment.IsDevelopment())
 
     app.Use(async (ctx, next) =>
     {
+        // le pagine di accesso restano raggiungibili anche in sviluppo (per provarle davvero)
         if (ctx.User?.Identity?.IsAuthenticated != true &&
-            !ctx.Request.Path.StartsWithSegments("/Identity"))
+            !ctx.Request.Path.StartsWithSegments("/Identity") &&
+            !ctx.Request.Path.StartsWithSegments("/Account/Login") &&
+            !ctx.Request.Path.StartsWithSegments("/signin-google"))
         {
             var sm = ctx.RequestServices.GetRequiredService<SignInManager<IdentityUser>>();
             var u = await sm.UserManager.FindByEmailAsync(devEmail);
@@ -115,6 +178,20 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+// se le migrazioni non sono riuscite, resta scritto nel log (il sito però sta in piedi)
+if (erroreAvvio is not null)
+    app.Logger.LogError("Migrazioni non riuscite all'avvio (database in {dove}): {errore}",
+        dbSuCartellaTemporanea ? "cartella temporanea" : percorsoDb, erroreAvvio);
+
+// Chi sta guardando: serve alle pagine statiche del sito per mostrare «Accedi» oppure il proprio nome
+app.MapGet("/api/utente", (ClaimsPrincipal u) => Results.Json(new
+{
+    autenticato = u.Identity?.IsAuthenticated == true,
+    nome = u.Identity?.Name
+})).AllowAnonymous();
+
+
+
 // ═══════════════════════════ API del wizard ═══════════════════════════
 var api = app.MapGroup("/api").RequireAuthorization();
 
@@ -124,7 +201,7 @@ static string UtenteId(ClaimsPrincipal user) =>
 // Biblioteca per i suggerimenti 🎲 (client-side, gratis)
 api.MapGet("/biblioteca/{nome}", (string nome, Biblioteche bib) =>
     bib.HaLib(nome) ? Results.Text(bib.Lib(nome).ToJsonString(), "application/json")
-                    : Results.NotFound());
+                    : Results.NotFound()).AllowAnonymous();
 
 // Nomi anti-omonimie (1..6 proposte): /api/nomi?genere=m&eta=45&quanti=4&occupati=Tanaka Jiro|…&cognome=Tanaka
 api.MapGet("/nomi", (string genere, int eta, string? occupati, string? cognome, int quanti, GeneratoreNomi gen) =>
@@ -134,7 +211,7 @@ api.MapGet("/nomi", (string genere, int eta, string? occupati, string? cognome, 
                             Math.Clamp(quanti <= 0 ? 1 : quanti, 1, 6),
                             string.IsNullOrWhiteSpace(cognome) ? null : cognome);
     return Results.Json(n);
-});
+}).AllowAnonymous();
 
 // Verifica di un nome scritto a mano: /api/nomi/verifica?cognome=…&nome=…&occupati=…
 api.MapGet("/nomi/verifica", (string cognome, string nome, string? occupati, GeneratoreNomi gen) =>
@@ -144,7 +221,7 @@ api.MapGet("/nomi/verifica", (string cognome, string nome, string? occupati, Gen
     var lista = (occupati ?? "").Split('|', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
     var (libero, motivo, kanji) = gen.Verifica(cognome, nome, lista);
     return Results.Json(new { libero, motivo, kanji });
-});
+}).AllowAnonymous();
 
 // Autosave dello stato (chiamato dal client a ogni modifica, debounced)
 api.MapPost("/progetti/{id:guid}/stato", async (
@@ -461,12 +538,13 @@ api.MapGet("/quota", (QuotaAi quota, ClaimsPrincipal user) =>
 // Autosave dello stato del PG (come per le avventure: chiamato a ogni modifica, debounced)
 api.MapPost("/pg/{id:guid}/stato", async (
     Guid id, [FromBody] SalvaPgRichiesta body,
-    ApplicationDbContext db, ClaimsPrincipal user, CancellationToken ct) =>
+    ApplicationDbContext db, HttpContext ctx, CancellationToken ct) =>
 {
-    var uid = UtenteId(user);
+    var uid = Ospite.ChiUsa(ctx);
     var pg = await db.Personaggi.FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (pg is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.StatoJson)) return Results.BadRequest(new { errore = "stato mancante" });
+    if (body.StatoJson.Length > 500_000) return Results.BadRequest(new { errore = "stato troppo grande" });
     try { _ = System.Text.Json.Nodes.JsonNode.Parse(body.StatoJson); }
     catch { return Results.BadRequest(new { errore = "stato non è JSON valido" }); }
 
@@ -476,15 +554,15 @@ api.MapPost("/pg/{id:guid}/stato", async (
     pg.AggiornatoIl = DateTime.UtcNow;
     await db.SaveChangesAsync(ct);
     return Results.Ok(new { salvato = pg.AggiornatoIl });
-});
+}).AllowAnonymous();
 
 // Aiuto narrativo AI su UN campo della scheda PG (descrizione, kage, enja, tratti…)
 api.MapPost("/pg/{id:guid}/ai-campo", async (
     Guid id, [FromBody] PgCampoRichiesta body,
-    ApplicationDbContext db, AnthropicService ai, QuotaAi quota, ClaimsPrincipal user,
+    ApplicationDbContext db, AnthropicService ai, QuotaAi quota, HttpContext ctx,
     CancellationToken ct) =>
 {
-    var uid = UtenteId(user);
+    var uid = Ospite.ChiUsa(ctx);
     var pg = await db.Personaggi.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (pg is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.Campo)) return Results.BadRequest(new { errore = "campo mancante" });
@@ -497,15 +575,15 @@ api.MapPost("/pg/{id:guid}/ai-campo", async (
         return Results.Json(new { testo });
     }
     catch (Exception ex) { return Results.Problem(ex.Message, statusCode: 502); }
-});
+}).AllowAnonymous();
 
 // Genera un'IMMAGINE per il PG (ritratto o scena) e la salva nella cartella del personaggio
 api.MapPost("/pg/{id:guid}/immagine", async (
     Guid id, [FromBody] PgImmagineRichiesta body,
-    ApplicationDbContext db, ImmaginiService img, QuotaAi quota, ClaimsPrincipal user,
+    ApplicationDbContext db, ImmaginiService img, QuotaAi quota, HttpContext ctx,
     IWebHostEnvironment env, CancellationToken ct) =>
 {
-    var uid = UtenteId(user);
+    var uid = Ospite.ChiUsa(ctx);
     var pg = await db.Personaggi.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (pg is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.Prompt)) return Results.BadRequest(new { errore = "prompt mancante" });
@@ -514,18 +592,22 @@ api.MapPost("/pg/{id:guid}/immagine", async (
 
     try
     {
-        var png = await img.Genera(body.Prompt, ct);
+        var png = await img.Genera(body.Prompt!, ct); // quadrato: stesso formato delle foto PG esistenti
         var dir = Path.Combine(env.WebRootPath, "allegati", $"pg-{id}");
         Directory.CreateDirectory(dir);
-        // il ritratto è UNO (sovrascrive); le scene si accumulano con un timestamp
-        var nomeFile = body.Tipo == "ritratto"
-            ? "ritratto.png"
-            : $"scena-{DateTime.UtcNow.Ticks}.png";
+        // il ritratto è UNO (sovrascrive); scene e volti-Kage si accumulano con un timestamp
+        var nomeFile = body.Tipo switch
+        {
+            "ritratto" => "ritratto.png",
+            "kage" => $"kage-{DateTime.UtcNow.Ticks}.png",
+            "enja" => $"enja-{DateTime.UtcNow.Ticks}.png",
+            _ => $"scena-{DateTime.UtcNow.Ticks}.png"
+        };
         await File.WriteAllBytesAsync(Path.Combine(dir, nomeFile), png, ct);
         return Results.Json(new { url = $"/allegati/pg-{id}/{nomeFile}?v={DateTime.UtcNow.Ticks}" });
     }
     catch (Exception ex) { return Results.Problem(ex.Message, statusCode: 502); }
-});
+}).AllowAnonymous();
 
 app.Run();
 

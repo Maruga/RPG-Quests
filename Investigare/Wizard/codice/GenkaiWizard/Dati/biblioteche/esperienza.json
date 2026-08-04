@@ -1,0 +1,13 @@
+{
+  "$commento": "Sfondi e musiche dell'esperienza wizard-PG. Per aggiungerne: metti il file in wwwroot/img/sfondi/ (jpg leggero, pattern chiaro) o wwwroot/audio/ (mp3) e aggiungi la voce qui. Riavvio del server per ricaricare.",
+
+  "sfondi": [
+    { "id": "rami", "nome": "Rami e uccelli", "file": "/img/sfondi/rami-e-uccelli.jpg" },
+    { "id": "anemoni", "nome": "Anemoni d'inchiostro", "file": "/img/sfondi/anemoni.jpg" },
+    { "id": "ciliegio", "nome": "Ciliegio bianco", "file": "/img/sfondi/ciliegio-bianco.jpg" }
+  ],
+
+  "musiche": [
+    { "id": "flauto", "nome": "Flauto del festival", "file": "/audio/flauto-del-festival.mp3" }
+  ]
+}
