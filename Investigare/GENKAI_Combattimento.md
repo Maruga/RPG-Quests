@@ -142,7 +142,7 @@ Ogni cosa che fai in uno scambio ha una **velocità**, come le armi: iniziativa 
 
 **CRITICO — l'1+1** — se tiri **1 e 1**, il colpo è perfetto: il GM definisce il colore, e di norma vale **+1d6** — di **danni** se stavi attaccando, di **assorbimento** se ti stavi difendendo.
 
-**FALLIMENTO CRITICO — il 6+6** — se sul tuo tiro d'azione escono **6 e 6**, non hai solo mancato: succede qualcosa di imprevisto. Tira **1d6** sulla colonna della tua azione — **1 è blando, 6 è disastroso** — e il GM mette in scena il colore, come per l'1+1. La tabella è una guida, non una gabbia: se la scena suggerisce di meglio, vale la scena.
+**FALLIMENTO CRITICO — il 6+6** — se sul tuo tiro d'azione escono **6 e 6**, non hai solo mancato: succede qualcosa di imprevisto. Vale solo per chi **agisce** — un attacco o un'azione attiva — **mai in difesa**: lì un 12 è soltanto una difesa fallita. Tira **1d6** sulla colonna della tua azione — **1 è blando, 6 è disastroso** — e il GM mette in scena il colore, come per l'1+1. La tabella è una guida, non una gabbia: se la scena suggerisce di meglio, vale la scena.
 
 | 1d6 | Armi da fuoco | Corpo a corpo | Movimento e altro |
 |---|---|---|---|
@@ -296,8 +296,9 @@ PREPARARSI: rinuncia all'azione = -1 al prossimo tiro (non cumula)
 OPPORTUNITÀ: dado alto + velocità < iniziativa avversaria
       = un'azione descrittiva extra (mai due attacchi)
 CRITICO 1+1: +1d6 danni (attacco) o +1d6 assorbimento (difesa)
-FALL. CRITICO 6+6 (sul tiro d'azione): imprevisto — 1d6 sulla tabella
-      (1 blando → 6 disastroso): inceppata, arma a terra, lama incrinata...
+FALL. CRITICO 6+6 (solo attacco/azione attiva, MAI in difesa):
+      imprevisto — 1d6 sulla tabella (1 blando → 6 disastroso):
+      inceppata, arma a terra, lama incrinata...
 STRINGERE I DENTI: danno netto 1-2 → paghi 1 punto dell'attributo in uso
       e agisci comunque (col valore ridotto); a 4 non si può;
       il punto è a matita (la notte ripara); mira/Sotto Tiro persi
