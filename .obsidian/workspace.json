@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
+                "file": "Investigare/GENKAI_Combattimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "title": "GENKAI_Combattimento"
             }
           }
         ]
@@ -227,6 +227,10 @@
   },
   "active": "8ff47a252fc8dbb1",
   "lastOpenFiles": [
+    "Investigare/Revisione_AI2_Decisioni.md.tmp.50724.cbca3da7dd85",
+    "Investigare/GENKAI_Combattimento.md.tmp.50724.bb7967023606",
+    "Investigare/GENKAI_Combattimento.md.tmp.50724.2d2ccbbef549",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
     "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
     "Investigare/Wizard/codice/GenkaiWizard/Pages/Pg/Index.cshtml.cs.tmp.37108.bb0a22e52d0c",
@@ -243,10 +247,6 @@
     "Investigare/GENKAI_Combattimento.md",
     "Investigare/GENKAI_Briefing_Giocatori.md",
     "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Investigare/Wizard/codice/GenkaiWizard/Pages/Pg/Index.cshtml.tmp.37108.f8168520246c",
-    "Investigare/pg/__pycache__/genera_schede_pg.cpython-312.pyc",
-    "Investigare/pg/genera_schede_pg.py.tmp.14376.181eebac97f3",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
     "Savage/Manovre di Combatimento.md",
     "Investigare/README.md",
     "Investigare/Revisione_AI2_Decisioni.md",

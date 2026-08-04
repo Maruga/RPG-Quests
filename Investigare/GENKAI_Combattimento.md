@@ -142,6 +142,17 @@ Ogni cosa che fai in uno scambio ha una **velocità**, come le armi: iniziativa 
 
 **CRITICO — l'1+1** — se tiri **1 e 1**, il colpo è perfetto: il GM definisce il colore, e di norma vale **+1d6** — di **danni** se stavi attaccando, di **assorbimento** se ti stavi difendendo.
 
+**FALLIMENTO CRITICO — il 6+6** — se sul tuo tiro d'azione escono **6 e 6**, non hai solo mancato: succede qualcosa di imprevisto. Tira **1d6** sulla colonna della tua azione — **1 è blando, 6 è disastroso** — e il GM mette in scena il colore, come per l'1+1. La tabella è una guida, non una gabbia: se la scena suggerisce di meglio, vale la scena.
+
+| 1d6 | Armi da fuoco | Corpo a corpo | Movimento e altro |
+|---|---|---|---|
+| **1** | Il colpo finisce dove non doveva — un vetro, un'insegna, un'auto: rumore e attenzione | Il colpo taglia l'aria, plateale: l'avversario ti ha letto | Inciampi ma ti riprendi: rumore, qualcosa cade |
+| **2** | La presa scivola: nello scambio dopo l'arma conta **come da sfoderare** | La presa scivola: nello scambio dopo l'arma conta **come da sfoderare** | Arrivi lungo o corto: l'azione riesce, ma scomposta — il GM la mette in scena |
+| **3** | Era l'ultimo colpo utile: prima di risparare devi **ricaricare** | Ti sbilanci: l'avversario guadagna posizione — il GM la ridisegna | Un ostacolo ti ferma a metà: completi l'azione nello scambio dopo |
+| **4** | **L'arma si inceppa**: sbloccarla è un'azione | **L'arma ti cade**: raccoglierla è un'azione | Finisci a terra: rialzarti è un'azione |
+| **5** | Inceppata male: sbloccarla è un'azione con velocità **Ricarica** | **La lama si incrina** (o il bastone si spacca): al prossimo 6+6 con quest'arma, si rompe | Cadendo perdi ciò che tenevi: schizza via, raccoglierlo è un'azione |
+| **6** | Il meccanismo si rompe: per questo scontro l'arma **non spara più** | L'arma **si spezza** o vola lontano: resti a mani nude (Lotta) | Il disastro di scena: la copertura cede, la porta si blocca alle tue spalle, il tavolo si ribalta dal lato sbagliato — il GM ridisegna la scena contro di te |
+
 **STRINGERE I DENTI** — se il danno subito, dopo gli assorbimenti, è di **1 o 2**, puoi rifiutarti di perdere l'azione: paghi **1 punto dell'attributo con cui stai agendo** (per un attacco, quello dell'arma; per un'altra azione lo indica il GM) e l'azione la fai comunque — col valore ridotto, da subito e da lì in poi. Il punto si segna a matita come ogni ferita: la notte lo ripara (Regolamento, *Progressione*). Se l'attributo è già a **4**, non c'è più niente da stringere: l'azione è persa. Danno da 3 in su ferma chiunque — nessuna scelta. Nei colpi multipli ogni colpo incassato è una scelta — e un punto — a parte. La mira e il Sotto Tiro decadono comunque: forzi il corpo a finire il gesto, ma la concentrazione è saltata. Vale anche per i PNG: il professionista che continua a venire avanti nonostante il colpo.
 
 **RAFFICA / FUOCO DI SOPPRESSIONE** *(armi con Raffica: sì)* — non spari *a* qualcuno: copri. Dichiari la soppressione:
@@ -285,6 +296,8 @@ PREPARARSI: rinuncia all'azione = -1 al prossimo tiro (non cumula)
 OPPORTUNITÀ: dado alto + velocità < iniziativa avversaria
       = un'azione descrittiva extra (mai due attacchi)
 CRITICO 1+1: +1d6 danni (attacco) o +1d6 assorbimento (difesa)
+FALL. CRITICO 6+6 (sul tiro d'azione): imprevisto — 1d6 sulla tabella
+      (1 blando → 6 disastroso): inceppata, arma a terra, lama incrinata...
 STRINGERE I DENTI: danno netto 1-2 → paghi 1 punto dell'attributo in uso
       e agisci comunque (col valore ridotto); a 4 non si può;
       il punto è a matita (la notte ripara); mira/Sotto Tiro persi
