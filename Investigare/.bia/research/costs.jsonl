@@ -1,2 +1,4 @@
 {"ts":"2026-08-02T00:48:05.6099809Z","incident_id":"20260802-004531-86b511","provider":"perplexity","model":"sonar-deep-research","cost_usd":0.5,"tokens_in":669,"tokens_out":14418,"duration_ms":154041}
 {"ts":"2026-08-02T00:48:08.9156032Z","incident_id":"20260802-004531-86b511","provider":"openai","model":"gpt-5.5","cost_usd":0.31595,"tokens_in":610,"tokens_out":10430,"duration_ms":157344}
+{"ts":"2026-08-04T22:32:42.6781219Z","incident_id":"20260804-223039-22339f","provider":"openai","model":"gpt-5.5","cost_usd":0.11942,"tokens_in":346,"tokens_out":3923,"duration_ms":123339}
+{"ts":"2026-08-04T22:44:09.4034828Z","incident_id":"20260804-224119-cf8040","provider":"openai","model":"gpt-5.5","cost_usd":0.18701,"tokens_in":220,"tokens_out":6197,"duration_ms":170182}

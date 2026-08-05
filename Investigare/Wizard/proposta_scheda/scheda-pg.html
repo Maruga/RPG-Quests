@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scheda investigatore — proposta · GENKAI 限界</title>
+<link rel="stylesheet" href="scheda.css">
+</head>
+<body>
+
+<div class="barra">
+  <b>PROPOSTA SCHEDA</b>
+  <span class="sep">·</span>
+  <span>Tema:</span>
+  <button class="on" data-tema="carta">Carta chiara</button>
+  <button data-tema="fascicolo">Fascicolo riservato</button>
+  <button data-tema="fotocopia">Fotocopia B/N</button>
+  <span class="sep">·</span>
+  <span>Carattere:</span>
+  <button class="on" data-font="classico">Classico</button>
+  <button data-font="moderno">Moderno</button>
+  <span class="sep">·</span>
+  <button onclick="window.print()">🖨 Stampa</button>
+</div>
+
+<!-- ══════════════════ FACCIATA 1 — IL TAVOLO ══════════════════ -->
+<section class="foglio">
+  
+  <header class="testata">
+    <img class="foto" src="img/yamamoto.jpg" alt="">
+    <div>
+      <h1 class="nome">YAMAMOTO Kenji <span class="kj">山本 健二</span></h1>
+      <p class="sotto-nome">Capo Squadra Investigativa — Sezione Omicidi, Polizia Prefetturale di Kyoto</p>
+      <div class="anagrafe">
+        <span>Grado <b>Ispettore Capo · Keibu</b></span>
+        <span>Età <b>42</b></span>
+        <span>In servizio da <b>18 anni</b></span>
+        <span>Distretto <b>Higashiyama</b></span>
+      </div>
+    </div>
+    <div class="cartiglio"><span class="pagina-n">1 / 4 · IL TAVOLO</span><span class="timbro">機密 RISERVATO</span></div>
+  </header>
+
+  <!-- ATTRIBUTI -->
+  <section class="sez">
+    <h2><span>Attributi — come affronti il mondo</span><span class="kj">能力</span></h2>
+    <div class="attributi">
+      <div class="attr"><div class="n">Distacco</div><div class="v">6</div><div class="d">Restare lucido davanti all'orrore</div>
+        <div class="perdite"><i></i><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Pazienza</div><div class="v">4</div><div class="d">Aspettare, non forzare i tempi</div>
+        <div class="perdite"><span>al minimo</span></div></div>
+      <div class="attr"><div class="n">Silenzio</div><div class="v">5</div><div class="d">Non reagire d'impulso</div>
+        <div class="perdite"><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Lucidità</div><div class="v">6</div><div class="d">Collegare i pezzi, ricostruire</div>
+        <div class="perdite"><i></i><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Ascolto</div><div class="v">4</div><div class="d">Cogliere il non detto</div>
+        <div class="perdite"><span>al minimo</span></div></div>
+      <div class="attr"><div class="n">Presenza</div><div class="v">5</div><div class="d">Farsi prendere sul serio</div>
+        <div class="perdite"><i></i><span>persi</span></div></div>
+    </div>
+    <p class="nota" style="margin-top:1.5mm">Si tira <b>2d6</b>: somma <b>uguale o minore</b> del valore = riesci — basso è buono. Il numero grande è quello <b>di scheda</b> e cambia solo con lo Shugyō. Le caselline sono i punti che puoi <b>perdere</b> (Stringere i denti, ferite): si segnano a matita e tornano con la notte. Sotto <b>4</b> non si scende.</p>
+  </section>
+
+  <!-- KI + GOU -->
+  <div class="duetto">
+    <section class="sez">
+      <h2><span>Ki — quanto reggi ancora</span><span class="kj">気</span></h2>
+      <div class="ki-riga">
+        <div class="ki-max"><div class="v">10</div><div class="e">massimo</div></div>
+        <div class="tracce">
+          <span class="gruppo"><i class="cas genkai"></i><i class="cas genkai"></i><i class="cas genkai"></i></span>
+          <span class="gruppo"><i class="cas"></i><i class="cas"></i><i class="cas"></i></span>
+          <span class="gruppo"><i class="cas"></i><i class="cas"></i><i class="cas"></i></span>
+          <span class="gruppo"><i class="cas"></i></span>
+        </div>
+      </div>
+      <p class="nota">Si annerisce il Ki <b>speso o perso</b>. Le tre caselle rosse sono la <b>zona Genkai</b>: a Ki ≤ 3 il tuo investigatore crolla — e la vedi arrivare.</p>
+      <div class="riga-piccole">
+        <span class="mini"><i class="cas"></i> <b>情け</b> Nasake</span>
+        <span class="mini"><i class="cas"></i> <b>悟り</b> Satori <span style="color:var(--tenue)">1 a sessione</span></span>
+        <span class="mini"><b>算盤</b> Soroban <span style="color:var(--tenue)">parte da 5</span>
+          <i class="cas"></i><i class="cas"></i><i class="cas"></i><i class="cas"></i><i class="cas"></i></span>
+      </div>
+    </section>
+
+    <section class="sez">
+      <h2><span>Gou — il dono che costa</span><span class="kj">業</span></h2>
+      <div class="gou-testa">
+        <span class="gou-nome">Pugno di Ferro</span><span class="gou-kj">鉄拳</span>
+        <span class="gou-attr">Presenza</span>
+      </div>
+      <p class="nota" style="margin:1mm 0"><i>Pressione psicologica costante e implacabile. Non un momento — un peso che non si toglie.</i></p>
+      <div class="scaletta">
+        <span class="costo"><i class="cas"></i><span class="q">3</span><span class="o">1° uso</span></span>
+        <span class="costo"><i class="cas"></i><span class="q">6</span><span class="o">2°</span></span>
+        <span class="costo"><i class="cas"></i><span class="q">12</span><span class="o">3°</span></span>
+      </div>
+      <p class="nota"><b>✔</b> Il PNG cede su un punto importante — ammette, collabora, si ritira. <b>✖</b> È scosso, ma non cede.<br>
+      Si paga <b>per intero</b> e si attiva solo restando a <b>Ki ≥ 1</b>. Una notte di sonno riabbassa il costo di un grado.</p>
+    </section>
+  </div>
+
+  <!-- SENMON -->
+  <section class="sez">
+    <h2><span>Senmon — cosa sai fare meglio degli altri</span><span class="kj">専門</span></h2>
+    <table class="senmon">
+      <tr><th style="width:38%">Specializzazione</th><th style="width:14%">Attributo</th><th style="width:10%">Grado</th><th style="width:38%">Usi verso il grado successivo</th></tr>
+      <tr>
+        <td class="nome">Lotta <span style="color:var(--tenue);font-weight:400">· d'accademia</span></td>
+        <td>Presenza</td><td><b>1</b> <span style="color:var(--tenue)">−1</span></td>
+        <td><span class="usi"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><span>10 → grado 2</span></span></td>
+      </tr>
+      <tr>
+        <td class="nome">Interrogatorio</td>
+        <td>Pazienza / Ascolto</td><td><b>1</b> <span style="color:var(--tenue)">−1</span></td>
+        <td><span class="usi"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i><span>10 → grado 2</span></span></td>
+      </tr>
+      <tr class="vuota"><td colspan="4" style="border-bottom:.4pt dotted var(--bordo2)"></td></tr>
+    </table>
+    <p class="nota" style="margin-top:1.2mm">Il bonus <b>si sottrae dal dado</b>: grado 1 −1 · grado 2 −2 · grado 3 −3 (o −2 con Correzione). Grado 2: 19 punti Shugyō, attributo chiave ≥ 6, <b>10 usi</b>. Grado 3: 39 punti, <b>25 usi</b>, paletti.</p>
+  </section>
+
+  <!-- COMBATTIMENTO -->
+  <section class="sez">
+    <h2><span>Lo scontro — armi e protezioni</span><span class="kj">衝突</span></h2>
+    <table class="armi">
+      <tr><th style="width:30%">Arma</th><th style="width:13%">Attributo</th><th class="c" style="width:8%">Estrai</th><th class="c" style="width:8%">In mano</th><th class="c" style="width:8%">Ricarica</th><th class="c" style="width:8%">Danno</th><th style="width:25%">Colpi · note</th></tr>
+      <tr><td><b>New Nambu M60</b> <span style="color:var(--tenue)">.38, in armadietto</span></td><td>Lucidità</td><td class="c">3</td><td class="c">1</td><td class="c">4</td><td class="c"><b>3</b></td>
+        <td><span class="pedina"><i></i><i></i><i></i><i></i><i></i></span></td></tr>
+      <tr><td><b>Keibō</b> <span style="color:var(--tenue)">manganello</span></td><td>Silenzio</td><td class="c">2</td><td class="c">1</td><td class="c">—</td><td class="c"><b>2</b></td><td></td></tr>
+      <tr><td><b>A mani nude</b> <span style="color:var(--tenue)">prese, immobilizzazioni</span></td><td>Presenza</td><td class="c">1</td><td class="c">1</td><td class="c">—</td><td class="c"><b>1</b></td><td></td></tr>
+      <tr class="vuota"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <div class="dif">
+      <div class="riquadro">
+        <h3>Assorbe — protezioni</h3>
+        <div class="assorbe">
+          <span class="v">3</span>
+          <div style="font-size:8.4pt;line-height:1.4">Giubbotto antiproiettile <span style="color:var(--tenue)">(indossare 4)</span><br>
+          <span class="nota">Fisso e automatico, su ogni colpo. Copertura: tavolo 1 · portiera 2 · pilastro 4 · muro 5</span></div>
+        </div>
+        <div style="margin-top:1.8mm">
+          <h3>Ti difendi con</h3>
+          <div style="font-size:8.4pt">Sotto il fuoco → <b>Lucidità 6</b> · Coltello o pugno → <b>Pazienza 4</b> · Caos, esplosione → <b>Lucidità</b> o <b>Distacco 6</b></div>
+        </div>
+      </div>
+      <div class="riquadro promemoria">
+        <h3>Lo scambio, in cinque righe</h3>
+        <ol>
+          <li>Tutti tirano <b>2d6</b>. Iniziativa = <b>dado più basso + velocità</b> — chi ha il numero minore agisce prima.</li>
+          <li><b>Attacco</b>: la tua somma contro l'attributo dell'arma. Se riesci, lo <b>scarto</b> è quanto sei stato sotto.</li>
+          <li><b>Difesa</b>: la sua somma contro il suo attributo. Se riesce, il suo scarto assorbe.</li>
+          <li><b>Danno = tuo scarto + arma − suo scarto − Assorbe.</b> Si perde in Ki. Chi lo subisce <b>perde l'azione</b>.</li>
+          <li><b>1+1</b> = colpo perfetto, +1d6. <b>6+6</b> = qualcosa va storto, tira 1d6 sulla tabella. In combattimento il <b>Genkai è sospeso</b>.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ══════════════════ FACCIATA 2 — CHI SEI ══════════════════ -->
+<section class="foglio">
+    <header class="testata" style="grid-template-columns:1fr auto;border-bottom-width:1pt;border-bottom-style:solid">
+    <div><h1 class="nome" style="font-size:14pt">YAMAMOTO Kenji <span class="kj">山本 健二</span></h1></div>
+    <div class="cartiglio"><span class="pagina-n">2 / 4 · CHI SEI</span><span class="timbro">機密</span></div>
+  </header>
+
+  <div class="due-col">
+    <div>
+      <section class="sez">
+        <h2><span>La tua storia</span><span class="kj">道</span></h2>
+        <div class="box">
+          <p>Sei un veterano rispettato. Hai risolto casi importanti, hai costruito una reputazione solida. Ma la tua vita privata è un disastro.</p>
+          <p>Sei mesi fa tua moglie Yuko ti ha lasciato. «Non ci sei mai», ha detto. Aveva ragione. Ora vivi in un piccolo appartamento a Fushimi, con le scatole ancora da disfare.</p>
+          <p>Tuo figlio <b>Takeshi (8 anni)</b> vive con la madre, ma hai l'affidamento condiviso. Il martedì e il giovedì Takeshi è con te. O dovrebbe esserlo.</p>
+          <p>Il problema: il lavoro viene sempre prima. Le promesse non mantenute. Le cene saltate. E la famiglia non ha smesso di notarlo.</p>
+        </div>
+      </section>
+
+      <section class="sez">
+        <h2><span>Come ti comporti</span><span class="kj">心</span></h2>
+        <div class="box">
+          <p class="etichetta">In pubblico · tatemae</p>
+          <p>Sei il capo. Calmo, competente, rispettato. Non mostri mai debolezza davanti alla squadra. Le decisioni sono tue e te le assumi.</p>
+        </div>
+        <div class="box">
+          <p class="etichetta">In privato · honne</p>
+          <p>Sei esausto. Ti senti in colpa per Takeshi. A volte ti chiedi se ne vale la pena. Ma non lo ammetterai mai.</p>
+        </div>
+        <div class="box">
+          <p class="etichetta">Frase tipica</p>
+          <p><i>«Abbiamo un lavoro da fare. Concentriamoci su quello.»</i></p>
+        </div>
+        <div class="box">
+          <p class="etichetta">Sotto pressione</p>
+          <p>Ti chiudi. Parli meno. Diventi più brusco. Non deleghi — fai tutto tu perché «è più veloce».</p>
+          <p class="etichetta" style="margin-top:2mm">Debolezza</p>
+          <p>Quando qualcuno mette in dubbio le tue priorità tra lavoro e famiglia. Soprattutto se ha ragione.</p>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="sez">
+        <h2><span>Aspetto</span><span class="kj">姿</span></h2>
+        <img class="ritratto-grande" src="img/yamamoto.jpg" alt="">
+        <div class="box" style="margin-top:2.5mm">
+          <p>Quarantadue anni portati con la schiena dritta. Giacca grigia sempre stirata, cravatta allentata di due dita a fine turno. Capelli brizzolati ai lati, tagliati corti. Lo sguardo di chi ha già visto la stanza prima di entrarci.</p>
+        </div>
+      </section>
+
+      <section class="sez">
+        <h2><span>Tratti personali</span><span class="kj">癖</span></h2>
+        <div class="box" style="font-size:9pt">
+          <p><b>Vizio</b> — Caffè nero, almeno sei tazze al giorno. Non tocca l'alcol da quando Yuko se n'è andata.</p>
+          <p><b>Tic</b> — Si massaggia il ponte del naso quando è stanco o frustrato.</p>
+          <p><b>Oggetto</b> — Un orologio Seiko automatico, regalo di suo padre per la promozione a ispettore.</p>
+          <p><b>Gusto</b> — Udon caldo da un chiosco vicino alla centrale. Sempre lo stesso, sempre in piedi.</p>
+          <p><b>Rituale</b> — Ogni mattina, prima di entrare in centrale, caffè Boss in lattina al distributore.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FACCIATA 3 — LE PERSONE ══════════════════ -->
+<section class="foglio">
+    <header class="testata" style="grid-template-columns:1fr auto;border-bottom-width:1pt;border-bottom-style:solid">
+    <div><h1 class="nome" style="font-size:14pt">YAMAMOTO Kenji <span class="kj">山本 健二</span></h1></div>
+    <div class="cartiglio"><span class="pagina-n">3 / 4 · LE PERSONE</span><span class="timbro">機密</span></div>
+  </header>
+
+  <section class="sez">
+    <h2><span>Kage — l'ombra che ti segue</span><span class="kj">影</span></h2>
+    <div class="box">
+      <p class="etichetta">Il problema · La Famiglia</p>
+      <p>Tua sorella <b>Yamamoto Noriko</b> è stata il tuo supporto durante il divorzio. Ha coperto le tue assenze, ha badato a Takeshi quando tu non potevi. Ma la pazienza di Noriko ha un limite.</p>
+      <p>L'ultima volta che le hai chiesto aiuto te l'ha detto chiaramente: «Non sono la tua baby-sitter di riserva. Devi scegliere cosa conta davvero.»</p>
+      <p>Sai che è stanca di coprire i tuoi errori. Sai che il rapporto con Takeshi è fragile. E sai che ogni richiesta d'aiuto pesa sulla relazione con tua sorella.</p>
+    </div>
+
+    <div class="persona">
+      <div class="ph">👤</div>
+      <div>
+        <h4>YAMAMOTO Noriko</h4>
+        <div class="r">Tua sorella minore · 38 anni · insegnante di ikebana</div>
+        <div style="font-size:9pt"><b>Cosa vuole</b>: che tu ammetta di avere un problema. Non i singoli episodi — il pattern.<br>
+        <b>Come si comporta</b>: non urla. È peggio. Parla con calma, con quella delusione quieta che ferisce più della rabbia. Fa domande scomode.</div>
+      </div>
+    </div>
+    <div class="persona">
+      <div class="ph">👤</div>
+      <div>
+        <h4 style="color:var(--tenue)">___________________</h4>
+        <div class="r">Altra persona coinvolta</div>
+        <div class="righe"></div><div class="righe"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez">
+    <h2><span>Enja — chi ti dà una mano</span><span class="kj">縁者</span></h2>
+    <div class="persona">
+      <div class="ph">👤</div>
+      <div>
+        <h4>TANAKA Shuichi <span class="en">縁 En +2</span></h4>
+        <div class="r">Giornalista al Kyoto Shimbun · vecchio compagno di università</div>
+        <div style="font-size:9pt"><b>Conosciuti</b>: dai tempi del dormitorio. Vi vedete ogni tanto — lui beve, tu ordini tè oolong.<br>
+        <b>Cosa può dare</b>: archivi del giornale, voci di corridoio, contatti nella stampa. <b>Vuole in cambio</b> qualche soffiata, niente di compromettente. <b>Limite</b>: una volta a sessione senza conseguenze; la seconda, chiederà.<br>
+        <b>Come contattarlo</b>: cellulare personale. Risponde sempre, anche di notte.</div>
+      </div>
+    </div>
+    <div class="persona">
+      <div class="ph">👤</div>
+      <div>
+        <h4 style="color:var(--tenue)">___________________ <span class="en">縁 En ___</span></h4>
+        <div class="r">Enja aggiuntivo</div>
+        <div class="righe"></div><div class="righe"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez">
+    <h2><span>La squadra</span><span class="kj">班</span></h2>
+    <div class="box" style="font-size:9pt">
+      <p><b>HONDA Ryota</b> — «Brillante, ma gioca col fuoco. Un giorno si brucerà e non ci sarà nessuno a salvarlo.»</p>
+      <p><b>NAKAMURA Shota</b> — «Il migliore di noi negli interrogatori. Mi fido di lui più di chiunque altro.»</p>
+      <p><b>SATO Yuki</b> — «Mi ricorda me a quell'età. Spero che non faccia i miei stessi errori.»</p>
+      <p><b>FUJITA Emi</b> — «Competente, riservata, non chiede mai nulla. Questo mi preoccupa.»</p>
+    </div>
+  </section>
+</section>
+
+<!-- ══════════════════ FACCIATA 4 — IL DIARIO ══════════════════ -->
+<section class="foglio">
+    <header class="testata" style="grid-template-columns:1fr auto;border-bottom-width:1pt;border-bottom-style:solid">
+    <div><h1 class="nome" style="font-size:14pt">YAMAMOTO Kenji <span class="kj">山本 健二</span></h1></div>
+    <div class="cartiglio"><span class="pagina-n">4 / 4 · IL DIARIO</span><span class="timbro">機密</span></div>
+  </header>
+
+  <section class="sez">
+    <h2><span>Shugyō — la crescita</span><span class="kj">修行</span></h2>
+    <div class="due-col">
+      <div class="riquadro">
+        <h3>Punti guadagnati</h3>
+        <div class="pedina" style="margin:1.5mm 0">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="nota"><b>+1</b> a sessione · <b>+4-6</b> a caso chiuso · <b>+1</b> scena personale ben giocata · <b>+1</b> momento eccezionale (max 1 a sessione)</p>
+      </div>
+      <div class="riquadro">
+        <h3>Quanto costa</h3>
+        <p class="nota" style="font-size:8pt;line-height:1.6">
+          Attributo → <b>valore d'arrivo ×3</b> (tetto 9)<br>
+          Ki massimo → <b>massimo d'arrivo ×4</b> (tetto 12)<br>
+          Senmon nuova <b>9</b> · grado 2 <b>19</b> · grado 3 <b>39</b><br>
+          Enja in più <b>12</b> · affinare il Gou <b>costo ×11</b> (una volta sola)
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:2.5mm">
+      <h3 style="font-family:var(--sans);font-size:7pt;letter-spacing:.14em;text-transform:uppercase;color:var(--inchiostro2);margin:0 0 1.2mm">Registro degli acquisti</h3>
+      <div class="riquadro" style="padding:1.5mm 2.5mm">
+        <div class="righe"></div><div class="righe"></div><div class="righe"></div><div class="righe"></div><div class="righe" style="border-bottom:0"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="due-col">
+    <section class="sez">
+      <h2><span>Sempre con te</span><span class="kj">装備</span></h2>
+      <div class="box" style="font-size:9pt">
+        <p>🎫 <b>Keisatsu techō</b> — il tesserino: è il tuo vero potere</p>
+        <p>⛓ Manette · 📓 taccuino · penna</p>
+        <p class="nota">Da investigatore in borghese <b>non porti l'arma con te</b>: resta in armadietto e si preleva firmando, solo per le operazioni che lo richiedono.</p>
+      </div>
+      <h2 class="sez sotto-titolo" style="display:flex;align-items:baseline;justify-content:space-between;font-family:var(--sans);font-size:8pt;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--inchiostro2);border-bottom:.7pt solid var(--bordo);padding-bottom:.8mm;margin:0 0 2mm"><span>Oggetti e appunti</span><span class="kj" style="font-family:var(--serif);font-size:11pt;color:var(--bordo);font-weight:400">持ち物</span></h2>
+      <div class="spazio" style="min-height:88mm"></div>
+    </section>
+
+    <section class="sez">
+      <h2><span>Il caso — appunti</span><span class="kj">事件</span></h2>
+      <div class="spazio" style="min-height:128mm"></div>
+      <p class="nota" style="margin-top:1.5mm">Spazio libero: nomi, orari, cose che non tornano. Si scrive come si vuole — non ci sono righe apposta.</p>
+    </section>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.barra button[data-tema]').forEach(b => b.addEventListener('click', () => {
+  document.documentElement.dataset.tema = b.dataset.tema;
+  document.querySelectorAll('.barra button[data-tema]').forEach(x => x.classList.toggle('on', x === b));
+}));
+document.querySelectorAll('.barra button[data-font]').forEach(b => b.addEventListener('click', () => {
+  document.documentElement.dataset.font = b.dataset.font;
+  document.querySelectorAll('.barra button[data-font]').forEach(x => x.classList.toggle('on', x === b));
+}));
+</script>
+</body>
+</html>

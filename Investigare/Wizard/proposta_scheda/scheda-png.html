@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scheda PNG — proposta · GENKAI 限界</title>
+<link rel="stylesheet" href="scheda.css">
+<style>
+/* ── varianti proprie della scheda PNG ── */
+.timbro.gm{border-color:var(--inchiostro);color:var(--inchiostro)}
+.avviso{background:color-mix(in srgb,var(--rosso) 7%,transparent);border-left:2pt solid var(--rosso);padding:1.6mm 2.5mm;margin-bottom:3mm;font-family:var(--sans);font-size:7.6pt;line-height:1.4;color:var(--inchiostro2)}
+.avviso b{color:var(--rosso);letter-spacing:.08em}
+.tre-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm;align-items:start}
+.en-tavola{width:100%;border-collapse:collapse;font-size:9pt}
+.en-tavola th{font-family:var(--sans);font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);text-align:left;font-weight:600;padding:0 1.5mm 1mm 0;border-bottom:.5pt solid var(--bordo)}
+.en-tavola td{padding:1.2mm 1.5mm;border-bottom:.4pt dotted var(--bordo2)}
+.en-tavola .c{text-align:center;width:14mm}
+.en-val{font-weight:700;font-family:var(--sans);font-size:9pt;color:var(--rosso)}
+.attributi.png6{grid-template-columns:repeat(6,1fr)}
+.attributi.png6 .attr .v{font-size:18pt}
+.attributi.png6 .attr .d{min-height:5mm;font-size:6.4pt}
+.segreto{border:.7pt solid var(--rosso);background:color-mix(in srgb,var(--rosso) 4%,transparent);padding:2.2mm 2.8mm;margin-bottom:2.5mm;font-size:9.2pt;line-height:1.5}
+.segreto .etichetta{color:var(--rosso)}
+.segreto p{margin:0 0 1.6mm}.segreto p:last-child{margin:0}
+</style>
+</head>
+<body>
+
+<div class="barra">
+  <b>PROPOSTA SCHEDA — PNG</b>
+  <span class="sep">·</span>
+  <span>Tema:</span>
+  <button class="on" data-tema="carta">Carta chiara</button>
+  <button data-tema="fascicolo">Fascicolo riservato</button>
+  <button data-tema="fotocopia">Fotocopia B/N</button>
+  <span class="sep">·</span>
+  <span>Carattere:</span>
+  <button class="on" data-font="classico">Classico</button>
+  <button data-font="moderno">Moderno</button>
+  <span class="sep">·</span>
+  <button onclick="window.print()">🖨 Stampa</button>
+</div>
+
+<!-- ══════════════════ FACCIATA 1 — AL TAVOLO ══════════════════ -->
+<section class="foglio">
+  <header class="testata">
+    <img class="foto" src="img/gonda.jpg" alt="">
+    <div>
+      <h1 class="nome">GONDA Susumu <span class="kj">権田 進</span></h1>
+      <p class="sotto-nome">Archivista e reception — Distretto dei PG</p>
+      <div class="anagrafe">
+        <span>Grado <b>Sovrintendente · Junsa-buchō</b></span>
+        <span>Età <b>55</b></span>
+        <span>In servizio da <b>32 anni</b></span>
+        <span>Ricorrente <b>sì</b></span>
+      </div>
+    </div>
+    <div class="cartiglio"><span class="pagina-n">1 / 2 · AL TAVOLO</span><span class="timbro gm">GM 監督用</span></div>
+  </header>
+
+  <div class="avviso"><b>DOCUMENTO DEL GM.</b> Contiene ciò che il personaggio nasconde. Non va mostrato ai giocatori — nemmeno di sfuggita, nemmeno capovolto sul tavolo.</div>
+
+  <!-- COME SI PRESENTA -->
+  <section class="sez">
+    <h2><span>Come si presenta</span><span class="kj">見た目</span></h2>
+    <div class="due-col">
+      <div class="box" style="margin:0">
+        <p class="etichetta">In pubblico · tatemae</p>
+        <p>Il vecchio dell'archivio: cortese, un po' lamentoso sulla schiena e sul freddo, offre caramelle d'orzo, chiede della famiglia. Innocuo.</p>
+      </div>
+      <div class="box" style="margin:0">
+        <p class="etichetta">In privato · honne</p>
+        <p>Un uomo stanco che fa i conti la notte e non gli tornano mai. Ama la figlia più di sé stesso, e per lei ha già venduto qualcosa che non si ricompra.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTRIBUTI -->
+  <section class="sez">
+    <h2><span>Attributi</span><span class="kj">能力</span></h2>
+    <div class="attributi png6">
+      <div class="attr"><div class="n">Distacco</div><div class="v">5</div><div class="d">Si è anestetizzato da anni</div>
+        <div class="perdite"><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Pazienza</div><div class="v">6</div><div class="d">Trent'anni di faldoni</div>
+        <div class="perdite"><i></i><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Silenzio</div><div class="v">6</div><div class="d">Invisibile per mestiere</div>
+        <div class="perdite"><i></i><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Lucidità</div><div class="v">5</div><div class="d">Ordinato, non brillante</div>
+        <div class="perdite"><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Ascolto</div><div class="v">7</div><div class="d">Sente tutto: nessuno bada all'archivista</div>
+        <div class="perdite"><i></i><i></i><i></i><span>persi</span></div></div>
+      <div class="attr"><div class="n">Presenza</div><div class="v">5</div><div class="d">Nessuno lo guarda due volte</div>
+        <div class="perdite"><i></i><span>persi</span></div></div>
+    </div>
+  </section>
+
+  <!-- KI + GOU + SENMON -->
+  <div class="duetto">
+    <section class="sez">
+      <h2><span>Ki</span><span class="kj">気</span></h2>
+      <div class="ki-riga">
+        <div class="ki-max"><div class="v">7</div><div class="e">massimo</div></div>
+        <div class="tracce">
+          <span class="gruppo"><i class="cas genkai"></i><i class="cas genkai"></i><i class="cas genkai"></i></span>
+          <span class="gruppo"><i class="cas"></i><i class="cas"></i><i class="cas"></i></span>
+          <span class="gruppo"><i class="cas"></i></span>
+        </div>
+      </div>
+      <p class="nota">Sotto le tre caselle rosse cede: parla, si chiude o crolla — decidi tu quale, prima che succeda.</p>
+
+      <h2 style="display:flex;align-items:baseline;justify-content:space-between;font-family:var(--sans);font-size:8pt;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--inchiostro2);border-bottom:.7pt solid var(--bordo);padding-bottom:.8mm;margin:3.5mm 0 2mm"><span>Se si arriva alle mani</span><span class="kj" style="font-family:var(--serif);font-size:11pt;color:var(--bordo);font-weight:400">衝突</span></h2>
+      <table class="armi">
+        <tr><th style="width:44%">Arma</th><th style="width:22%">Attributo</th><th class="c">Uso</th><th class="c">Danno</th><th class="c">Assorbe</th></tr>
+        <tr><td><b>A mani nude</b> <span style="color:var(--tenue)">non si difenderebbe</span></td><td>Presenza</td><td class="c">1</td><td class="c"><b>1</b></td><td class="c">—</td></tr>
+      </table>
+      <p class="nota" style="margin-top:1.2mm">Gonda non combatte. Se viene messo alle strette scappa o si siede e piange: usalo come misura, non come avversario.</p>
+    </section>
+
+    <section class="sez">
+      <h2><span>Gou</span><span class="kj">業</span></h2>
+      <div class="gou-testa">
+        <span class="gou-nome">L'Orecchio del Sotterraneo</span><span class="gou-kj">地下の耳</span>
+      </div>
+      <div style="margin:1mm 0"><span class="gou-attr">Ascolto 7</span> <span class="gou-attr" style="border-color:var(--bordo);color:var(--inchiostro2)">2 Ki</span></div>
+      <p class="nota" style="margin-bottom:1.5mm"><i>Vent'anni in archivio e nessuno che badi a lui: sa dove ogni cosa è sepolta, e ha sentito più di quanto chiunque immagini.</i></p>
+      <p class="nota"><b>✔</b> Recupera il dato preciso — un vecchio fascicolo, un nome, una firma, una voce di corridoio di anni fa — e un collegamento che nessuno aveva notato.<br>
+      <b>✖</b> Sa che c'è qualcosa, e più o meno dove cercare, ma non cosa.</p>
+
+      <h2 style="display:flex;align-items:baseline;justify-content:space-between;font-family:var(--sans);font-size:8pt;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--inchiostro2);border-bottom:.7pt solid var(--bordo);padding-bottom:.8mm;margin:3.5mm 0 2mm"><span>Senmon</span><span class="kj" style="font-family:var(--serif);font-size:11pt;color:var(--bordo);font-weight:400">専門</span></h2>
+      <table class="senmon">
+        <tr><td class="nome" style="width:52%">Ricerca d'archivio</td><td style="width:26%">Pazienza 6</td><td><b>2</b> <span style="color:var(--tenue)">−2</span></td></tr>
+      </table>
+      <p class="nota" style="margin-top:1.2mm">Fascicoli, precedenti, pratiche interdistrettuali: nessuno conosce gli archivi come lui.</p>
+    </section>
+  </div>
+
+  <!-- EN VERSO I PG -->
+  <section class="sez">
+    <h2><span>En — cosa prova verso ciascuno di loro</span><span class="kj">縁</span></h2>
+    <table class="en-tavola">
+      <tr><th style="width:26%">Investigatore</th><th class="c">En</th><th>Perché</th></tr>
+      <tr><td><b>YAMAMOTO Kenji</b></td><td class="c"><span class="en-val">+1</span></td><td>Lo saluta sempre per nome. Gonda ricorda chi lo tratta da persona.</td></tr>
+      <tr><td><b>HONDA Ryota</b></td><td class="c"><span class="en-val">−1</span></td><td>Lo tratta come un distributore automatico di fascicoli. E ha fretta.</td></tr>
+      <tr><td><b>NAKAMURA Shota</b></td><td class="c"><span class="en-val">0</span></td><td>Educato, distante. Non si sono mai davvero parlati.</td></tr>
+      <tr><td><b>SATO Yuki</b></td><td class="c"><span class="en-val">+2</span></td><td>Gli ha chiesto della figlia, e si è ricordata il nome. Gli si spezza qualcosa.</td></tr>
+      <tr><td><b>FUJITA Emi</b></td><td class="c"><span class="en-val">0</span></td><td>Lei nota che lui nota. Nessuno dei due dice niente.</td></tr>
+    </table>
+    <p class="nota" style="margin-top:1.2mm">L'En qui è quello che <b>lui</b> prova verso di loro. Positivo → si sottrae dal dado quando li aiuta; negativo → si aggiunge.</p>
+  </section>
+
+</section>
+
+<!-- ══════════════════ FACCIATA 2 — IL SEGRETO ══════════════════ -->
+<section class="foglio">
+  <header class="testata" style="grid-template-columns:1fr auto;border-bottom-width:1pt;border-bottom-style:solid">
+    <div><h1 class="nome" style="font-size:14pt">GONDA Susumu <span class="kj">権田 進</span></h1></div>
+    <div class="cartiglio"><span class="pagina-n">2 / 2 · STORIA E SEGRETO</span><span class="timbro gm">GM 監督用</span></div>
+  </header>
+
+  <div class="avviso"><b>SOLO GM.</b> Questa facciata esiste solo per i personaggi ricorrenti. Le comparse si fermano alla prima.</div>
+
+  <section class="sez">
+    <h2><span>Chi è</span><span class="kj">道</span></h2>
+    <div class="box" style="font-size:9.2pt">
+      <p>Entrato in polizia nel 1965. Non portato per la strada, spostato presto agli archivi — e lì è rimasto. Sovrintendente dal 1979, mai oltre: tre volte proposto, tre volte scavalcato da colleghi più giovani e più visibili.</p>
+      <p>Conosce la centrale meglio del commissario: chi entra, chi esce, quale pratica è ferma su quale scrivania.</p>
+    </div>
+  </section>
+
+
+  <section class="sez">
+    <h2><span>Il problema — I Tre Pesi, e la talpa</span><span class="kj">影</span></h2>
+    <div class="segreto">
+      <p>Tre pesi schiacciano uno stipendio solo: la sorella <b>Michi</b> (51), vedova al nord, a cui manda ¥40.000 al mese; la figlia <b>Ayano</b> (24), con una disabilità che le rende quasi impossibile un lavoro stabile, di cui integra cure e mantenimento; il mutuo della casetta di Fushimi, ancora otto anni.</p>
+      <p>La somma non torna, non è mai tornata. Le buste di Hayakawa colmano esattamente quel buco.</p>
+      <p><b>Se i PG lo scoprono e non lo denunciano</b>: in cambio del silenzio diventa il loro informatore. Sa cosa la stampa ha in mano prima che esca, può piantare o far sparire una storia, conosce gli archivi meglio di chiunque. Leale e terrorizzato — ma un uomo che ha già venduto una volta può rivendere.</p>
+    </div>
+  </section>
+
+  <div class="due-col">
+    <section class="sez">
+      <h2><span>La ragione di tutto</span><span class="kj">娘</span></h2>
+      <div class="persona" style="margin:0">
+        <div class="ph">👤</div>
+        <div>
+          <h4>GONDA Ayano</h4>
+          <div class="r">Figlia · 24 anni</div>
+          <div style="font-size:8.8pt">Cerca lavoro: una disabilità la fa scartare con mille cortesie.<br>
+          <b>Non sa</b> cosa fa suo padre per lei. È il motivo per cui lui accetta le buste.<br>
+          Dolce, dignitosa. La sua foto da bambina, al mare, è nel portafoglio di Gonda dietro la tessera: la prima cosa che tira fuori quando crolla.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sez">
+      <h2><span>Il suo contatto</span><span class="kj">縁者</span></h2>
+      <div class="persona" style="margin:0">
+        <div class="ph">👤</div>
+        <div>
+          <h4>HAYAKAWA Tatsuya</h4>
+          <div class="r">Cronista di nera · settimanale scandalistico · ~40 anni</div>
+          <div style="font-size:8.8pt">Fiuto e zero scrupoli. Il «cliente» di Gonda da circa quattro anni: buste in cambio di briciole. È lui a coniare «il Killer dei Compiti».<br>
+          <b>Come si contattano</b>: un numero su un foglietto nel portafoglio; un bar defilato vicino alla stazione, mai lo stesso due volte di fila.<br>
+          <b>Cosa vuole</b>: le briciole che passano dal banco dell'archivio. Il resto non lo vuole sapere.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="tre-col">
+    <section class="sez">
+      <h2><span>Sotto pressione</span></h2>
+      <div class="box" style="font-size:8.8pt;margin:0">Diventa ossequioso. Più è spaventato, più è gentile. Offre tè, offre caramelle, si alza per cercare una pratica che nessuno ha chiesto.</div>
+    </section>
+    <section class="sez">
+      <h2><span>Dove cede</span></h2>
+      <div class="box" style="font-size:8.8pt;margin:0">Il nome di Ayano. Detto con calma, senza minaccia, da qualcuno che gli ha mostrato rispetto. Con la minaccia si chiude e mente.</div>
+    </section>
+    <section class="sez">
+      <h2><span>Segni particolari</span></h2>
+      <div class="box" style="font-size:8.8pt;margin:0">Caramelle d'orzo in una scatola di latta sul banco. Si lamenta della schiena e del freddo. Chiama tutti «capo».</div>
+    </section>
+  </div>
+
+  <section class="sez">
+    <h2><span>Appunti del GM — cosa è successo nelle sessioni</span><span class="kj">記録</span></h2>
+    <div class="spazio" style="min-height:30mm"></div>
+  </section>
+</section>
+
+<script>
+document.querySelectorAll('.barra button[data-tema]').forEach(b => b.addEventListener('click', () => {
+  document.documentElement.dataset.tema = b.dataset.tema;
+  document.querySelectorAll('.barra button[data-tema]').forEach(x => x.classList.toggle('on', x === b));
+}));
+document.querySelectorAll('.barra button[data-font]').forEach(b => b.addEventListener('click', () => {
+  document.documentElement.dataset.font = b.dataset.font;
+  document.querySelectorAll('.barra button[data-font]').forEach(x => x.classList.toggle('on', x === b));
+}));
+</script>
+</body>
+</html>

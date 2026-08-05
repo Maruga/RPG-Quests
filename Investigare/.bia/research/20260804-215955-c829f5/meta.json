@@ -1,0 +1,25 @@
+{
+  "incident_id": "20260804-215955-c829f5",
+  "created_at_utc": "2026-08-04T21:59:55.9351721Z",
+  "status": "partial",
+  "mode": "deep",
+  "providers": [
+    "stackexchange",
+    "perplexity",
+    "openai",
+    "anthropic",
+    "gemini"
+  ],
+  "sensitivity_note": null,
+  "provider_status": {
+    "stackexchange": "complete",
+    "perplexity": "failed",
+    "openai": "failed",
+    "anthropic": "failed",
+    "gemini": "failed"
+  },
+  "completed_at_utc": "2026-08-04T22:14:55.9638043Z",
+  "archived_at_utc": null,
+  "archive_note": null,
+  "total_cost_usd": 0
+}
