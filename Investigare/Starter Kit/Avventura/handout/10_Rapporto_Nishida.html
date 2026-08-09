@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Rapporto Investigativo — Nishida Goro</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.doc-header {
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+.pi-name-jp { font-size: 16px; color: #333; letter-spacing: 4px; }
+.pi-name { font-size: 11px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; color: #333; margin-top: 2px; }
+.pi-title { font-size: 9px; color: #888; margin-top: 4px; letter-spacing: 1px; }
+.pi-license { font-size: 8px; color: #aaa; margin-top: 2px; letter-spacing: 1px; }
+.pi-contact { font-size: 8px; color: #999; margin-top: 6px; }
+
+.confidential {
+    position: absolute;
+    top: 20mm;
+    right: 18mm;
+    font-size: 8px;
+    font-weight: bold;
+    color: #8b0000;
+    border: 1.5px solid #8b0000;
+    padding: 2px 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #999;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+.metadata div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.metadata div:nth-child(odd) { border-right: 1px solid #ccc; }
+.metadata .label { font-weight: bold; color: #555; text-transform: uppercase; font-size: 8px; letter-spacing: 1px; }
+
+.section { margin-bottom: 16px; }
+.section-title {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    color: #333;
+}
+.section p { margin-bottom: 6px; text-align: justify; }
+.section ul { margin-left: 16px; list-style: none; }
+.section ul li { margin-bottom: 4px; }
+.section ul li::before { content: "\2014\00a0"; color: #999; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 10px;
+}
+th {
+    background: #333;
+    color: #e8e0d0;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) { background: #faf8f2; }
+
+.result-clean {
+    color: #2e7a2e;
+    font-weight: bold;
+}
+
+.conclusion-box {
+    border: 2px solid #333;
+    padding: 12px 16px;
+    margin: 16px 0;
+    background: #faf8f2;
+}
+.conclusion-box .conclusion-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.note-box {
+    background: #fffff0;
+    border-left: 3px solid #c0a060;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+.signature-area {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 10px;
+}
+.signature-name {
+    margin-top: 24px;
+    border-top: 1px solid #333;
+    display: inline-block;
+    padding-top: 4px;
+    min-width: 180px;
+    text-align: center;
+}
+
+.hanko {
+    position: absolute;
+    bottom: 70px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(200, 50, 50, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(200, 50, 50, 0.4);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .doc-header { border-bottom-color: #666; }
+    .pi-name-jp, .pi-name { color: #d0d0d0; }
+    .pi-title { color: #888; }
+    .pi-license { color: #777; }
+    .pi-contact { color: #777; }
+    .confidential { color: #cc4444; border-color: #cc4444; }
+    .metadata { border-color: #555; }
+    .metadata div { border-bottom-color: #444; }
+    .metadata div:nth-child(odd) { border-right-color: #444; }
+    .metadata .label { color: #999; }
+    .section-title { color: #d0d0d0; border-bottom-color: #666; }
+    .section ul li::before { color: #666; }
+    th { background: #333; }
+    td { border-bottom-color: #444; color: #d0d0d0; }
+    tr:nth-child(even) { background: #2e2e35; }
+    .result-clean { color: #5aaa5a; }
+    .conclusion-box { border-color: #666; background: #2e2e35; }
+    .conclusion-box .conclusion-title { color: #d0d0d0; }
+    .note-box { background: #33322a; border-left-color: #c0a060; }
+    .signature-area { color: #d0d0d0; }
+    .signature-name { border-top-color: #888; }
+    .hanko { border-color: rgba(200, 50, 50, 0.3); color: rgba(200, 50, 50, 0.3); }
+    .footer { color: #666; border-top-color: #444; }
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="confidential">Riservato</div>
+
+    <div class="doc-header">
+        <div class="pi-name-jp">西田五郎</div>
+        <div class="pi-name">Nishida Goro</div>
+        <div class="pi-title">探偵事務所 — Investigazioni Private</div>
+        <div class="pi-license">Licenza Prefettizia N. 1247 — Kyoto</div>
+        <div class="pi-contact">Shimogyō-ku, Shijō-dōri 284 &nbsp;|&nbsp; Tel. 075-561-3842</div>
+    </div>
+
+    <div class="metadata">
+        <div><span class="label">Rapporto N.</span><br>NG/97-018</div>
+        <div><span class="label">Data</span><br>8 ottobre 1997</div>
+        <div><span class="label">Committente</span><br>TANAKA Kazuo (田中一夫)</div>
+        <div><span class="label">Classificazione</span><br>Riservato — solo per il committente</div>
+        <div><span class="label">Oggetto</span><br>Verifiche patrimoniali e personali</div>
+        <div><span class="label">Soggetto indagato</span><br>HAYASHI Kenji (林健二), 26 anni</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Incarico ricevuto</div>
+        <p>In data 12 settembre 1997 il committente Tanaka Kazuo ha conferito incarico di indagine sul soggetto Hayashi Kenji, socio della Tanaka Cosmetics Co., Ltd. (quota 13%, ereditata dal padre Hayashi Taro, deceduto il 14 marzo 1997). Il committente ha richiesto verifiche complete su: situazione patrimoniale, debiti, precedenti penali, frequentazioni, legami con organizzazioni criminali, eventuali contatti con aziende concorrenti.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Risultati delle verifiche</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Area di indagine</th>
+                    <th>Esito</th>
+                    <th>Dettaglio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Precedenti penali</td>
+                    <td class="result-clean">NESSUNO</td>
+                    <td>Verifica presso Prefettura di Kyoto e Tokyo</td>
+                </tr>
+                <tr>
+                    <td>Situazione debitoria</td>
+                    <td class="result-clean">NESSUN DEBITO</td>
+                    <td>Nessuna esposizione bancaria. Nessun debito privato riscontrato</td>
+                </tr>
+                <tr>
+                    <td>Gioco d'azzardo</td>
+                    <td class="result-clean">NEGATIVO</td>
+                    <td>Nessuna frequentazione di case da gioco o sale scommesse</td>
+                </tr>
+                <tr>
+                    <td>Legami criminali</td>
+                    <td class="result-clean">NEGATIVO</td>
+                    <td>Nessun contatto con organizzazioni yakuza o affiliati</td>
+                </tr>
+                <tr>
+                    <td>Contatti con concorrenti</td>
+                    <td class="result-clean">NEGATIVO</td>
+                    <td>Nessun rapporto con aziende del settore cosmetico</td>
+                </tr>
+                <tr>
+                    <td>Frequentazioni</td>
+                    <td class="result-clean">REGOLARI</td>
+                    <td>Ex compagni università Waseda. Nessuna frequentazione sospetta</td>
+                </tr>
+                <tr>
+                    <td>Patrimonio</td>
+                    <td class="result-clean">VERIFICATO</td>
+                    <td>Eredità paterna (quota societaria + immobile a Kita-ku). Tenore di vita modesto</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Profilo del soggetto</div>
+        <p>Hayashi Kenji, 26 anni, laureato in Economia alla Waseda University (Tokyo), rientrato a Kyoto dopo la morte del padre. Non ha esperienza nel settore cosmetico. Vive nell'immobile di famiglia a Kita-ku. Conduce una vita riservata. Non risultano relazioni sentimentali stabili. Carattere descritto dai conoscenti come "serio", "timido", "studioso".</p>
+        <p>Ha ereditato la quota del 13% della Tanaka Cosmetics sei mesi fa. Non ha manifestato intenzioni di vendere. Non ha contattato acquirenti esterni. Ha partecipato a una sola riunione del consiglio di amministrazione (luglio 1997), dove non ha preso la parola.</p>
+    </div>
+
+    <div class="note-box">
+        <strong>Nota:</strong> Il soggetto è a conoscenza dell'indagine in corso. Un suo ex compagno di università (Morita Keisuke, residente a Tokyo) lo ha informato che "qualcuno faceva domande su di lui". Il soggetto non ha intrapreso alcuna azione in risposta, il che suggerisce che non ha nulla da nascondere o che si aspettava un controllo di questo tipo.
+    </div>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">Conclusione</div>
+        <p style="margin-bottom:0;">Le verifiche effettuate su Hayashi Kenji non hanno evidenziato <strong>alcun elemento di criticità</strong>. Il soggetto risulta pulito sotto ogni profilo esaminato. Non sono emersi rischi per la società Tanaka Cosmetics derivanti dalla sua presenza come socio. Si consiglia al committente di considerare il soggetto affidabile.</p>
+    </div>
+
+    <div class="signature-area">
+        <p>L'investigatore</p>
+        <div class="signature-name">NISHIDA Goro<br><span style="font-size:8px;">西田五郎 — Lic. Pref. 1247</span></div>
+    </div>
+
+    <div class="hanko">西<br>田</div>
+
+    <div class="footer">
+        Rapporto NG/97-018 — Riservato — Pagina 1 di 1
+    </div>
+
+</div>
+</body>
+</html>

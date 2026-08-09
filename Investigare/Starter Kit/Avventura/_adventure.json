@@ -1,0 +1,18 @@
+{
+  "id": "avventura-sake",
+  "name": "Avventura Sake",
+  "system": "Genkai",
+  "author": "Maru",
+  "version": "1.1",
+  "description": "Avventura investigativa ambientata a Kyoto nel 1997. Il presidente di una famosa azienda è morto alla cena dei soci.",
+  "players": "3-5",
+  "duration": "60-90",
+  "language": "it",
+  "tags": [
+    "giappone",
+    "investigare",
+    "1997"
+  ],
+  "visibility": "public",
+  "exportedAt": "2026-03-16"
+}

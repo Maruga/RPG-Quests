@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Lista Presenti — Festa Tanaka</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 18mm 15mm 18mm 15mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.document {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 20mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+}
+.doc-header {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 14px 20px;
+    border-bottom: 3px solid #c0a060;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.doc-header .org { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #c0a060; }
+.doc-header .title { font-size: 15px; font-weight: bold; margin-top: 6px; letter-spacing: 2px; }
+.doc-header .subtitle { font-size: 9px; margin-top: 4px; color: #aaa69d; }
+
+.section-title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    color: #1a1a2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+    font-size: 10px;
+}
+th {
+    background: #1a1a2e;
+    color: #e8e0d0;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+td {
+    padding: 7px 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+tr:nth-child(even) { background: #faf8f2; }
+tr:hover { background: #f0ede4; }
+
+.name-jp { font-size: 11px; color: #555; }
+.name-it { font-weight: bold; }
+.role { color: #444; }
+.note { font-style: italic; color: #888; font-size: 9px; }
+
+.checkbox-col {
+    width: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.group-header {
+    background: #e8e4da !important;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+}
+.group-header td { padding: 5px 8px; border-bottom: 2px solid #999; }
+
+.victim-row { background: #fff0f0 !important; }
+.victim-row td { border-bottom: 2px solid #8b0000; }
+
+.notes-area {
+    margin-top: 24px;
+    border: 1px solid #999;
+    padding: 12px;
+    min-height: 120px;
+    background: #faf8f2;
+}
+.notes-area .notes-title {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 8px;
+}
+.notes-line {
+    border-bottom: 1px dotted #ccc;
+    height: 22px;
+}
+
+.footer {
+    margin-top: 16px;
+    font-size: 8px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2a30; color: #d0d0d0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .section-title { color: #c0a060; border-bottom-color: #c0a060; }
+    th { background: #1a1a2e; }
+    td { border-bottom-color: #444; color: #d0d0d0; }
+    tr:nth-child(even) { background: #2e2e35; }
+    tr:hover { background: #35353d; }
+    .name-jp { color: #999; }
+    .role { color: #bbb; }
+    .note { color: #888; }
+    .checkbox-col { color: #555; }
+    .group-header { background: #35353d !important; color: #999; }
+    .group-header td { border-bottom-color: #666; }
+    .victim-row { background: #352a2a !important; }
+    .victim-row td { border-bottom-color: #8b0000; }
+    .notes-area { border-color: #555; background: #2e2e35; }
+    .notes-area .notes-title { color: #999; }
+    .notes-line { border-bottom-color: #444; }
+    .footer { color: #666; border-top-color: #444; }
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+    <div class="doc-header">
+        <div class="org">京都府警察本部 — POLIZIA PREFETTURALE DI KYOTO</div>
+        <div class="title">ELENCO PERSONE PRESENTI</div>
+        <div class="subtitle">Villa Tanaka — Sera del 14 novembre 1997 &nbsp;|&nbsp; Fascicolo 97-KPD-1114</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="checkbox-col"></th>
+                <th>Nome</th>
+                <th>Età</th>
+                <th>Ruolo / Relazione</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- VITTIMA -->
+            <tr class="group-header"><td colspan="5">Vittima</td></tr>
+            <tr class="victim-row">
+                <td class="checkbox-col">&#10006;</td>
+                <td><span class="name-it">TANAKA Kazuo</span><br><span class="name-jp">田中一夫</span></td>
+                <td>61</td>
+                <td class="role">Presidente Tanaka Cosmetics — socio 51%</td>
+                <td class="note">Deceduto. Trovato nel bagno ospiti.</td>
+            </tr>
+
+            <!-- FAMIGLIA E SOCI -->
+            <tr class="group-header"><td colspan="5">Famiglia e Soci</td></tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">TANAKA Yuki</span><br><span class="name-jp">田中雪</span></td>
+                <td>49</td>
+                <td class="role">Moglie della vittima</td>
+                <td class="note">Ha trovato il corpo</td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">OGAWA Masaru</span><br><span class="name-jp">小川勝</span></td>
+                <td>57</td>
+                <td class="role">Direttore R&D — socio 20%</td>
+                <td class="note">In azienda da 28 anni</td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">OGAWA Reiko</span><br><span class="name-jp">小川玲子</span></td>
+                <td>53</td>
+                <td class="role">Moglie di Ogawa — ex insegnante</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">FUJIMOTO Shinji</span><br><span class="name-jp">藤本慎二</span></td>
+                <td>38</td>
+                <td class="role">Dir. Commerciale — socio 16% — cognato</td>
+                <td class="note">Membro senior appena nominato</td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">FUJIMOTO Akemi</span><br><span class="name-jp">藤本朱美</span></td>
+                <td>44</td>
+                <td class="role">Moglie di Fujimoto — sorella della vittima</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">HAYASHI Kenji</span><br><span class="name-jp">林健二</span></td>
+                <td>26</td>
+                <td class="role">Socio 13% — quota ereditata dal padre</td>
+                <td class="note">Prima festa aziendale</td>
+            </tr>
+
+            <!-- OSPITE -->
+            <tr class="group-header"><td colspan="5">Ospite</td></tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">NAKAMURA Daisuke</span><br><span class="name-jp">中村大輔</span></td>
+                <td>45</td>
+                <td class="role">Importatore d'arte — amico di famiglia</td>
+                <td class="note"></td>
+            </tr>
+
+            <!-- PERSONALE -->
+            <tr class="group-header"><td colspan="5">Personale di Servizio</td></tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">SATO Harumi</span><br><span class="name-jp">佐藤春美</span></td>
+                <td>62</td>
+                <td class="role">Domestica — 22 anni di servizio</td>
+                <td class="note">Ha aperto il bagno con una moneta</td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">ENDO Toshio</span><br><span class="name-jp">遠藤俊夫</span></td>
+                <td>48</td>
+                <td class="role">Cuoco — 8 anni di servizio</td>
+                <td class="note">+ 2 aiuti cucina</td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">ISHII Takuya</span><br><span class="name-jp">石井拓也</span></td>
+                <td>29</td>
+                <td class="role">Cameriere (esterno)</td>
+                <td class="note"></td>
+            </tr>
+            <tr>
+                <td class="checkbox-col">&#9744;</td>
+                <td><span class="name-it">WATANABE Jun</span><br><span class="name-jp">渡辺純</span></td>
+                <td>34</td>
+                <td class="role">Cameriere (esterno)</td>
+                <td class="note"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Struttura societaria -->
+    <div class="section-title">Tanaka Cosmetics — 田中化粧品 — Struttura Societaria</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Socio</th>
+                <th style="text-align:center;">Quota</th>
+                <th>Ruolo in azienda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="victim-row">
+                <td><span class="name-it">TANAKA Kazuo</span> <span class="note">(vittima)</span></td>
+                <td style="text-align:center; font-weight:bold;">51%</td>
+                <td>Presidente</td>
+            </tr>
+            <tr>
+                <td><span class="name-it">OGAWA Masaru</span></td>
+                <td style="text-align:center; font-weight:bold;">20%</td>
+                <td>Direttore R&D</td>
+            </tr>
+            <tr>
+                <td><span class="name-it">FUJIMOTO Shinji</span></td>
+                <td style="text-align:center; font-weight:bold;">16%</td>
+                <td>Direttore Commerciale</td>
+            </tr>
+            <tr>
+                <td><span class="name-it">HAYASHI Kenji</span></td>
+                <td style="text-align:center; font-weight:bold;">13%</td>
+                <td>Socio — quota ereditata</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Area appunti -->
+    <div class="notes-area">
+        <div class="notes-title">Appunti investigativi</div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+    </div>
+
+    <div class="footer">
+        Elenco Presenti — Fascicolo 97-KPD-1114 — Pagina 1 di 1 — Riservato
+    </div>
+
+</div>
+</body>
+</html>

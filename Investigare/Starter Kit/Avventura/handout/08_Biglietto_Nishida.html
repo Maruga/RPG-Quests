@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Biglietto da visita — Nishida Goro</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 20mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page {
+    width: 210mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Meishi - biglietto da visita giapponese standard 91x55mm */
+.meishi {
+    width: 91mm;
+    height: 55mm;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+    padding: 8mm 10mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fronte */
+.meishi-front {
+    text-align: center;
+}
+.meishi-front .name-jp {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a2e;
+    letter-spacing: 6px;
+    margin-bottom: 2px;
+}
+.meishi-front .name-romaji {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.meishi-front .title-jp {
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 2px;
+}
+.meishi-front .title-it {
+    font-size: 8px;
+    color: #999;
+    letter-spacing: 1px;
+    margin-top: 1px;
+}
+.meishi-front .license {
+    font-size: 7px;
+    color: #aaa;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+/* Linea decorativa rossa sottile */
+.meishi-front::after {
+    content: "";
+    position: absolute;
+    bottom: 12mm;
+    left: 10mm;
+    right: 10mm;
+    height: 1px;
+    background: #8b0000;
+}
+
+/* Retro */
+.meishi-back {
+    background: #faf8f2;
+}
+.meishi-back .back-header {
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.contact-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    margin-bottom: 3px;
+    color: #333;
+}
+.contact-label {
+    color: #888;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 30px;
+}
+.contact-value {
+    text-align: right;
+}
+.address-section {
+    margin-top: 8px;
+    font-size: 8px;
+    color: #666;
+    text-align: center;
+    line-height: 1.4;
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+}
+
+/* Nota a mano sul biglietto */
+.handwritten-note {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-family: "Segoe Script", "Comic Sans MS", cursive;
+    font-size: 10px;
+    color: #1a1a6e;
+    transform: rotate(-3deg);
+}
+
+/* Istruzioni taglio */
+.cut-instructions {
+    font-size: 8px;
+    color: #aaa;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    padding: 6px 0;
+    width: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .meishi { background: #2a2a30; border-color: #555; box-shadow: 2px 3px 8px rgba(0,0,0,0.3); }
+    .meishi-front .name-jp { color: #d0d0d0; }
+    .meishi-front .name-romaji { color: #888; }
+    .meishi-front .title-jp { color: #bbb; }
+    .meishi-front .title-it { color: #888; }
+    .meishi-front .license { color: #777; }
+    .meishi-front::after { background: #8b0000; }
+    .meishi-back { background: #2e2e35; }
+    .meishi-back .back-header { color: #888; }
+    .contact-line { color: #d0d0d0; }
+    .contact-label { color: #888; }
+    .address-section { color: #999; border-top-color: #444; }
+    .handwritten-note { color: #8888cc; }
+    .cut-instructions { color: #555; border-color: #444; }
+}
+
+@media print {
+    body { background: white; }
+    .cut-instructions { color: #ccc; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+    <div class="cut-instructions">&#9986; Ritagliare lungo i bordi &#9986;</div>
+
+    <!-- FRONTE -->
+    <div class="meishi meishi-front">
+        <div class="name-jp">西田五郎</div>
+        <div class="name-romaji">Nishida Goro</div>
+        <div class="title-jp">探偵事務所</div>
+        <div class="title-it">Investigazioni Private</div>
+        <div class="license">Licenza Prefettizia N. 1247 — Kyoto</div>
+    </div>
+
+    <!-- RETRO -->
+    <div class="meishi meishi-back" style="position:relative;">
+        <div class="back-header">Contatti</div>
+        <div class="contact-line">
+            <span class="contact-label">Tel.</span>
+            <span class="contact-value">075-561-3842</span>
+        </div>
+        <div class="contact-line">
+            <span class="contact-label">Fax</span>
+            <span class="contact-value">075-561-3843</span>
+        </div>
+        <div class="contact-line">
+            <span class="contact-label">Ore</span>
+            <span class="contact-value">9:00 — 21:00 (su appuntamento)</span>
+        </div>
+        <div class="address-section">
+            〒600-8007 京都市下京区<br>
+            Shimogyō-ku, Shijō-dōri 284<br>
+            Palazzo Yamamoto, 3° piano
+        </div>
+        <div class="handwritten-note">Hayashi — verifiche ✓</div>
+    </div>
+
+    <div class="cut-instructions">&#9986; Ritagliare lungo i bordi &#9986;</div>
+
+</div>
+</body>
+</html>

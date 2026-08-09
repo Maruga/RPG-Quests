@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Agenda Tanaka — Pagine</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 20mm; }
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.document {
+    width: 180mm;
+    background: #fff;
+    padding: 14mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: relative;
+    border-left: 4px solid #6b3000;
+}
+
+.agenda-header {
+    text-align: center;
+    border-bottom: 2px solid #6b3000;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    color: #2a1000;
+}
+.agenda-month { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; }
+.agenda-year { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+
+.week-section {
+    margin-bottom: 14px;
+}
+.week-header {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6b3000;
+    border-bottom: 1px dotted #a08040;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.day-entry {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin-bottom: 1px;
+    min-height: 18px;
+    border-bottom: 1px dotted #ccc;
+    padding: 1px 0;
+}
+.day-date {
+    font-weight: bold;
+    color: #2a1000;
+    font-size: 10px;
+}
+.day-content {
+    font-size: 10px;
+    color: #111;
+}
+
+/* Scrittura a mano simulata */
+.handwritten {
+    font-family: "Segoe Script", "Comic Sans MS", "Courier New", cursive;
+    color: #0000cc;
+    font-size: 11px;
+}
+
+/* Biglietto da visita incollato */
+.business-card-attached {
+    border: 1px solid #888;
+    padding: 8px 12px;
+    margin: 8px 0 8px 30px;
+    background: #f5f2ea;
+    max-width: 280px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    transform: rotate(-1deg);
+    position: relative;
+}
+.business-card-attached::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 40%;
+    width: 40px;
+    height: 12px;
+    background: rgba(180,160,80,0.5);
+    border: 1px solid rgba(180,160,80,0.4);
+}
+.card-name { font-weight: bold; font-size: 11px; color: #000; }
+.card-name-jp { font-size: 10px; color: #333; }
+.card-title { font-size: 9px; color: #222; margin-top: 2px; }
+.card-phone { font-size: 10px; margin-top: 5px; color: #000; }
+.card-address { font-size: 8px; color: #444; margin-top: 2px; }
+
+/* Linee vuote */
+.empty-line {
+    border-bottom: 1px dotted #ccc;
+    height: 18px;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 12mm;
+    right: 18mm;
+    font-size: 9px;
+    color: #666;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body { background: #1e1e1e; }
+    .document { background: #2a2520; border-left-color: #5a3000; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .agenda-header { border-bottom-color: #5a3000; color: #d4aa55; }
+    .agenda-month { color: #d4aa55; }
+    .agenda-year { color: #d4aa55; }
+    .week-header { color: #d4aa55; border-bottom-color: #555; }
+    .day-entry { border-bottom-color: #444; }
+    .day-date { color: #d4aa55; }
+    .day-content { color: #ddd; }
+    .handwritten { color: #7799ee; }
+    .business-card-attached { background: #2e2e35; border-color: #666; box-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    .business-card-attached::before { background: rgba(150,130,80,0.3); border-color: rgba(150,130,80,0.2); }
+    .card-name { color: #eee; }
+    .card-name-jp { color: #bbb; }
+    .card-title { color: #aaa; }
+    .card-phone { color: #eee; }
+    .card-address { color: #999; }
+    .empty-line { border-bottom-color: #444; }
+    .page-number { color: #777; }
+}
+
+@media print {
+    body { background: white; padding: 0; gap: 0; }
+    .document { box-shadow: none; }
+    .document + .document { page-break-before: always; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- PAGINA 47 — SETTEMBRE 1997                   -->
+<!-- ============================================ -->
+<div class="document">
+
+    <div class="agenda-header">
+        <div class="agenda-month">Settembre — 九月</div>
+        <div class="agenda-year">1997</div>
+    </div>
+
+    <!-- Settimana 1-7 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 1 — 7 settembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 1</div>
+            <div class="day-content handwritten">Riunione consiglio — approvare bilancio H1</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 2</div>
+            <div class="day-content handwritten">Pranzo con Nakamura — galleria Gion</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 3</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 4</div>
+            <div class="day-content handwritten">Campioni nuova linea — Ogawa presenta</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 5</div>
+            <div class="day-content"></div>
+        </div>
+    </div>
+
+    <!-- Settimana 8-14 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 8 — 14 settembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 8</div>
+            <div class="day-content handwritten">Tokyo — incontro distributore Ginza</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 9</div>
+            <div class="day-content handwritten">Tokyo — Fujimoto tratta con Takashimaya</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 10</div>
+            <div class="day-content handwritten">Rientro Kyoto</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 11</div>
+            <div class="day-content handwritten">Chiamare Nishida — Hayashi verifiche</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 12</div>
+            <div class="day-content handwritten">Conferma incarico Nishida — ¥200.000 anticipo</div>
+        </div>
+    </div>
+
+    <!-- Biglietto da visita incollato -->
+    <div class="business-card-attached">
+        <div class="card-name">NISHIDA Goro</div>
+        <div class="card-name-jp">西田五郎</div>
+        <div class="card-title">Investigazioni Private — Licenza Prefettizia N. 1247</div>
+        <div class="card-phone">Tel. 075-561-3842 &nbsp;&nbsp; Fax. 075-561-3843</div>
+        <div class="card-address">Shimogyō-ku, Kyoto — Shijō-dōri 284</div>
+    </div>
+
+    <!-- Settimana 15-21 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 15 — 21 settembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 15</div>
+            <div class="day-content handwritten">Nishida — primo rapporto. Hayashi pulito finora</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 16</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 17</div>
+            <div class="day-content handwritten">Laboratorio R&D — revisione annuale formulazioni</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 18</div>
+            <div class="day-content handwritten">Antistaminici — ricetta da rinnovare</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 19</div>
+            <div class="day-content handwritten">Cena Yuki — anniversario</div>
+        </div>
+    </div>
+
+    <!-- Settimana 22-28 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 22 — 28 settembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 22</div>
+            <div class="day-content handwritten">Hong Kong — Fujimoto prepara contratto</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 24</div>
+            <div class="day-content handwritten">Nishida: Hayashi OK. Nessun debito, nessun legame</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 26</div>
+            <div class="day-content handwritten">Decidere festa novembre — villa — tutti i soci</div>
+        </div>
+    </div>
+
+    <div class="page-number">47</div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PAGINA 48 — OTTOBRE 1997                     -->
+<!-- ============================================ -->
+<div class="document">
+
+    <div class="agenda-header">
+        <div class="agenda-month">Ottobre — 十月</div>
+        <div class="agenda-year">1997</div>
+    </div>
+
+    <!-- Settimana 1-5 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 1 — 5 ottobre</div>
+        <div class="day-entry">
+            <div class="day-date">Mer 1</div>
+            <div class="day-content handwritten">Consiglio — risultati Q3. Crescita 8%</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 2</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 3</div>
+            <div class="day-content handwritten">Telefonata Hong Kong — conferma distribuzione</div>
+        </div>
+    </div>
+
+    <!-- Settimana 6-12 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 6 — 12 ottobre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 6</div>
+            <div class="day-content handwritten">Fujimoto — primo meeting come senior. Ordine del giorno</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 8</div>
+            <div class="day-content handwritten">Nishida rapporto finale. Hayashi pulito. Pagare saldo ¥150.000</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 10</div>
+            <div class="day-content handwritten">Osaka — fiera cosmetica (2 giorni)</div>
+        </div>
+    </div>
+
+    <!-- Settimana 13-19 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 13 — 19 ottobre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 13</div>
+            <div class="day-content handwritten">R&D con Ogawa — formulazioni linea invernale</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 14</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 15</div>
+            <div class="day-content handwritten">Nakamura — pezzi da Bruges arrivati. Passare in galleria</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 17</div>
+            <div class="day-content handwritten">Conferma villa 14 novembre — chiamare Endo per menù</div>
+        </div>
+    </div>
+
+    <!-- Settimana 20-26 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 20 — 26 ottobre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 20</div>
+            <div class="day-content handwritten">Hong Kong — firma contratto distribuzione</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 22</div>
+            <div class="day-content handwritten">Rientro Kyoto</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 24</div>
+            <div class="day-content handwritten">Ogawa — report Q3 lasciati nello studio. Verificare</div>
+        </div>
+    </div>
+
+    <!-- Settimana 27-31 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 27 — 31 ottobre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 27</div>
+            <div class="day-content handwritten">Endo — conferma menù kaiseki per il 14</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 29</div>
+            <div class="day-content handwritten">Inviti festa — spedire. Camerieri: agenzia Kyoto Catering</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 31</div>
+            <div class="day-content handwritten">Antistaminici — scorta nuova</div>
+        </div>
+    </div>
+
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+
+    <div class="page-number">48</div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PAGINA 49 — NOVEMBRE 1997                    -->
+<!-- ============================================ -->
+<div class="document">
+
+    <div class="agenda-header">
+        <div class="agenda-month">Novembre — 十一月</div>
+        <div class="agenda-year">1997</div>
+    </div>
+
+    <!-- Settimana 3-7 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 3 — 7 novembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 3</div>
+            <div class="day-content handwritten">Riunione — previsioni Q4 e obiettivi anno nuovo</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 4</div>
+            <div class="day-content handwritten">Hayashi — confermato per la festa. Prima volta</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 5</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 6</div>
+            <div class="day-content handwritten">Ogawa — campioni linea nuova pronti per gennaio</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 7</div>
+            <div class="day-content"></div>
+        </div>
+    </div>
+
+    <!-- Settimana 10-14 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 10 — 14 novembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 10</div>
+            <div class="day-content handwritten">Sake — ordinare Gekkeikan per la festa</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 11</div>
+            <div class="day-content handwritten">Sato — preparare villa, pulizie, giardino</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 12</div>
+            <div class="day-content"></div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Gio 13</div>
+            <div class="day-content handwritten">Yuki — fiori per domani sera</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 14</div>
+            <div class="day-content handwritten">Festa villa — ore 19 — tutti i soci e famiglie</div>
+        </div>
+    </div>
+
+    <!-- Settimana 17-21 — appuntamenti mai onorati -->
+    <div class="week-section">
+        <div class="week-header">Settimana 17 — 21 novembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 17</div>
+            <div class="day-content handwritten">Consiglio — approvare budget 1998</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 19</div>
+            <div class="day-content handwritten">R&D — revisione finale anno con Ogawa</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 21</div>
+            <div class="day-content handwritten">Cena Yuki — ristorante nuovo a Pontochō</div>
+        </div>
+    </div>
+
+    <!-- Settimana 24-28 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 24 — 28 novembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 24</div>
+            <div class="day-content handwritten">Tokyo — Takashimaya, rinnovo contratto</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mar 25</div>
+            <div class="day-content handwritten">Tokyo — distributore Ginza, verifica vendite</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 28</div>
+            <div class="day-content handwritten">Rientro. Preparare relazione annuale</div>
+        </div>
+    </div>
+
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+
+    <div class="page-number">49</div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PAGINA 50 — DICEMBRE 1997                    -->
+<!-- ============================================ -->
+<div class="document">
+
+    <div class="agenda-header">
+        <div class="agenda-month">Dicembre — 十二月</div>
+        <div class="agenda-year">1997</div>
+    </div>
+
+    <!-- Settimana 1-5 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 1 — 5 dicembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 1</div>
+            <div class="day-content handwritten">Consiglio — chiusura conti anno</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 3</div>
+            <div class="day-content handwritten">Nakamura — cena fine anno</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 5</div>
+            <div class="day-content handwritten">Ogawa — presentazione campionario primavera '98</div>
+        </div>
+    </div>
+
+    <!-- Settimana 8-12 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 8 — 12 dicembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 8</div>
+            <div class="day-content handwritten">Hong Kong — verifica primo ordine distribuzione</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 10</div>
+            <div class="day-content handwritten">Rientro</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 12</div>
+            <div class="day-content handwritten">Festa aziendale fine anno — ristorante Gion</div>
+        </div>
+    </div>
+
+    <!-- Settimana 15-19 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 15 — 19 dicembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 15</div>
+            <div class="day-content handwritten">Bilancio definitivo — commercialista Watanabe</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Ven 19</div>
+            <div class="day-content handwritten">Ultimo giorno lavorativo. Regali dipendenti</div>
+        </div>
+    </div>
+
+    <!-- Settimana 22-31 -->
+    <div class="week-section">
+        <div class="week-header">Settimana 22 — 31 dicembre</div>
+        <div class="day-entry">
+            <div class="day-date">Lun 22</div>
+            <div class="day-content handwritten">Hakone con Yuki — 5 giorni</div>
+        </div>
+        <div class="day-entry">
+            <div class="day-date">Mer 31</div>
+            <div class="day-content handwritten">Capodanno — Kiyomizu-dera</div>
+        </div>
+    </div>
+
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+    <div class="empty-line"></div>
+
+    <div class="page-number">50</div>
+
+</div>
+
+</body>
+</html>
