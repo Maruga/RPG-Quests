@@ -16,14 +16,14 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore Base | Note |
-|-----------|-------------|------|
-| **Distacco** | 4 | Normale |
-| **Pazienza** | 4 | Normale |
-| **Silenzio** | 7 | Osservi tutto senza reagire |
-| **Lucidità** | 5 | Analisi ordinata, senza lampi |
-| **Ascolto** | 6 | Formazione psicologica — leggi le persone |
-| **Presenza** | 4 | Preferisci restare in ombra |
+| Attributo | Base | Finale | Note |
+|---|:-:|:-:|---|
+| **Distacco** | 4 | ______ | Normale |
+| **Pazienza** | 4 | ______ | Normale |
+| **Silenzio** | 7 | ______ | Osservi tutto senza reagire |
+| **Lucidità** | 5 | ______ | Analisi ordinata, senza lampi |
+| **Ascolto** | 6 | ______ | Formazione psicologica — leggi le persone |
+| **Presenza** | 4 | ______ | Preferisci restare in ombra |
 
 > **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo

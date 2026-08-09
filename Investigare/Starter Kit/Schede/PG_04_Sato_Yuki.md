@@ -16,14 +16,14 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore Base | Note |
-|-----------|-------------|------|
-| **Distacco** | 4 | Ti fai coinvolgere troppo |
-| **Pazienza** | 6 | Metodico, preciso |
-| **Silenzio** | 4 | Tendi a parlare troppo quando sei nervoso |
-| **Lucidità** | 7 | Eccellente — mente analitica formidabile |
-| **Ascolto** | 5 | Attento ai dettagli |
-| **Presenza** | 4 | Il più giovane — ti prendono sul serio a fatica |
+| Attributo | Base | Finale | Note |
+|---|:-:|:-:|---|
+| **Distacco** | 4 | ______ | Ti fai coinvolgere troppo |
+| **Pazienza** | 6 | ______ | Metodico, preciso |
+| **Silenzio** | 4 | ______ | Tendi a parlare troppo quando sei nervoso |
+| **Lucidità** | 7 | ______ | Eccellente — mente analitica formidabile |
+| **Ascolto** | 5 | ______ | Attento ai dettagli |
+| **Presenza** | 4 | ______ | Il più giovane — ti prendono sul serio a fatica |
 
 > **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo

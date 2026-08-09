@@ -16,14 +16,14 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore Base | Note |
-|-----------|-------------|------|
-| **Distacco** | 6 | Veterano — sai distaccarti |
-| **Pazienza** | 4 | Normale |
-| **Silenzio** | 5 | Incassi e chiudi tutto dentro |
-| **Lucidità** | 6 | Punto di forza — vedi i collegamenti |
-| **Ascolto** | 4 | Normale |
-| **Presenza** | 5 | Capo rispettato |
+| Attributo | Base | Finale | Note |
+|---|:-:|:-:|---|
+| **Distacco** | 6 | ______ | Veterano — sai distaccarti |
+| **Pazienza** | 4 | ______ | Normale |
+| **Silenzio** | 5 | ______ | Incassi e chiudi tutto dentro |
+| **Lucidità** | 6 | ______ | Punto di forza — vedi i collegamenti |
+| **Ascolto** | 4 | ______ | Normale |
+| **Presenza** | 5 | ______ | Capo rispettato |
 
 > **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo

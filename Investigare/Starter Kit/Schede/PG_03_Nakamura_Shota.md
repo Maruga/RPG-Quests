@@ -16,14 +16,14 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore Base | Note |
-|-----------|-------------|------|
-| **Distacco** | 4 | Normale |
-| **Pazienza** | 7 | Punto di forza — puoi aspettare ore |
-| **Silenzio** | 4 | Normale |
-| **Lucidità** | 4 | Normale |
-| **Ascolto** | 7 | Eccellente — senti le bugie |
-| **Presenza** | 4 | Non intimidisci, convinci |
+| Attributo | Base | Finale | Note |
+|---|:-:|:-:|---|
+| **Distacco** | 4 | ______ | Normale |
+| **Pazienza** | 7 | ______ | Punto di forza — puoi aspettare ore |
+| **Silenzio** | 4 | ______ | Normale |
+| **Lucidità** | 4 | ______ | Normale |
+| **Ascolto** | 7 | ______ | Eccellente — senti le bugie |
+| **Presenza** | 4 | ______ | Non intimidisci, convinci |
 
 > **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo

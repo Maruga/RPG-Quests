@@ -16,14 +16,14 @@
 
 ## ATTRIBUTI
 
-| Attributo | Valore Base | Note |
-|-----------|-------------|------|
-| **Distacco** | 6 | Freddo sulla scena |
-| **Pazienza** | 4 | Impulsivo, cerchi la scorciatoia |
-| **Silenzio** | 4 | Normale |
-| **Lucidità** | 7 | Brillante — noti ogni dettaglio |
-| **Ascolto** | 4 | Normale |
-| **Presenza** | 5 | Sicuro di te, a volte troppo |
+| Attributo | Base | Finale | Note |
+|---|:-:|:-:|---|
+| **Distacco** | 6 | ______ | Freddo sulla scena |
+| **Pazienza** | 4 | ______ | Impulsivo, cerchi la scorciatoia |
+| **Silenzio** | 4 | ______ | Normale |
+| **Lucidità** | 7 | ______ | Brillante — noti ogni dettaglio |
+| **Ascolto** | 4 | ______ | Normale |
+| **Presenza** | 5 | ______ | Sicuro di te, a volte troppo |
 
 > **PUNTI DA ASSEGNARE**: Hai **3 punti** da distribuire tra gli attributi.
 > - Massimo 2 punti per attributo

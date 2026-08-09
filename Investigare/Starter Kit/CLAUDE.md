@@ -30,12 +30,9 @@ in caso di dubbio si legge lì, e se non basta si chiede all'utente.
 | Cosa | Dove |
 |---|---|
 | Decisioni e stato lavori | `DECISIONI_STARTERKIT.md` |
-| Libretto regole (giocatori) | `SK_Regole_Giocatori.md` |
-| Guida al primo GM + tabelle En | `SK_Guida_GM.md` |
-| Foglio di riferimento da tavolo | `SK_Riferimento_Tavolo.md` |
-| L'avventura (Sake, adattata) | `Avventura/` |
-| I 5 investigatori pregenerati | `Schede/` |
-| Yamada e Ito (PNG di supporto) | `PNG Notevoli/` |
+| **Il Manuale unico**: Parte I giocatori (regole + foglio da tavolo) · muro spoiler · Parte II GM (guida + tabelle En + finale opzionale) | `SK_Manuale.md` |
+| L'avventura (Sake, adattata — Yamada e Ito descritti al suo interno) | `Avventura/` |
+| I 5 investigatori pregenerati (con colonna Finale) | `Schede/` |
 
 L'impaginazione (PDF) e la pubblicazione su genkai.it sono della sessione **WIZARD**,
 a testi congelati — si avvisa via `../REGISTRO_MODIFICHE.md`.

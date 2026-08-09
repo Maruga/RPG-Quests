@@ -1,6 +1,6 @@
 # L'ULTIMA CENA DI TANAKA — 田中の最後の晩餐
 
-> **Sistema:** GENKAI 限界 — regole **Starter Kit** (`../SK_Regole_Giocatori.md`) **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
+> **Sistema:** GENKAI 限界 — regole **Starter Kit** (`../SK_Manuale.md`) **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 2-3 ore alla prima giocata **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
 link Telegram: https://t.me/GenkaiDashBoardBot
@@ -90,8 +90,6 @@ Ogawa, come direttore R&D, conosce la soglia esatta di pericolosità. Sa che un 
 
 ### YAMADA TETSUO (山田 哲夫) — Accompagnatore PG, primo sulla scena
 
-> **PNG ricorrente** — scheda completa: [[Yamada_Tetsuo_Accompagnatore]]
-
 **Età:** 35 anni **Grado:** Junsa-buchō (巡査部長) — Sergente **Ruolo:** Primo ufficiale arrivato sulla scena, accompagnatore e supporto operativo dei PG **En iniziale:** +2 (affidabile, rispettoso, prende il compito seriamente)
 
 Yamada è un poliziotto solido e affidabile, assegnato dal commissario Taniguchi come supporto ai PG. È arrivato alla villa circa 40 minuti prima dei PG, chiamato da una pattuglia che ha risposto alla telefonata d'emergenza. Ha messo in sicurezza la scena, ha impedito a chiunque di lasciare la villa, e ha fatto chiamare la Kanshiki-ka (scientifica).
@@ -124,8 +122,6 @@ Yamada è un poliziotto solido e affidabile, assegnato dal commissario Taniguchi
 ---
 
 ### ITO DAISUKE (伊藤大介) — Responsabile Kanshiki-ka (scientifica)
-
-> **PNG ricorrente** — scheda completa: [[Ito_Daisuke_Scientifica]]
 
 **Età:** 52 anni **Grado:** Kanshiki-kan, Classe 1 (鑑識官一級) — oltre 15 anni di servizio **Ruolo:** Responsabile della squadra scientifica sulla scena **En iniziale:** 0 (professionale, non ha relazioni personali coi PG)
 
@@ -855,13 +851,13 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 - Prove schiaccianti → non serve tiro (regola GENKAI)
 - Prove parziali → tiro Presenza
 - Ogawa crolla o fugge → a scelta del GM
-- **Finale opzionale**: se il GM vuole giocarlo, Ogawa messo alle strette **estrae una pistola** — le indicazioni per la scena sono nella `../SK_Guida_GM.md`, box *«Il finale — se Ogawa estrae la pistola»*
+- **Finale opzionale**: se il GM vuole giocarlo, Ogawa messo alle strette **estrae una pistola** — le indicazioni per la scena sono nel `../SK_Manuale.md` (Parte II — la guida del GM), box *«Il finale — se Ogawa estrae la pistola»*
 
 ---
 
 ## MOMENTI SUGGERITI PER I KAGE
 
-> Nello Starter Kit il Kage è un **modulo opzionale** (vedi `../SK_Regole_Giocatori.md`): usate questa tabella solo se il tavolo lo ha scelto.
+> Nello Starter Kit il Kage è un **modulo opzionale** (vedi `../SK_Manuale.md`): usate questa tabella solo se il tavolo lo ha scelto.
 
 I Kage sono a scelta dei giocatori. Il GM può suggerire (mai forzare):
 
@@ -892,11 +888,11 @@ I Kage sono a scelta dei giocatori. Il GM può suggerire (mai forzare):
 
 Indagine realistica. Nessun elemento soprannaturale. Un uomo intelligente e ferito ha usato le sue competenze per uccidere.
 
-### Ritmo
+### Ritmo *(prima giocata: 2-3 ore)*
 
-- **Primi 10 minuti:** Briefing Yamada, scena del crimine, scientifica
-- **20-30 minuti centrali:** Interrogatori, indizi, red herring
-- **Ultimi 10-15 minuti:** Collegamenti, confronto finale
+- **Prima parte (~30-40 min):** Briefing Yamada, scena del crimine, scientifica
+- **Il cuore (60-90 min):** Interrogatori, indizi, red herring
+- **Finale (~30-40 min):** Collegamenti, confronto finale
 
 ### Gestione del tempo
 

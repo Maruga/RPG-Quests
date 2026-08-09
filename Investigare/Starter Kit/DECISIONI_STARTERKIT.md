@@ -46,15 +46,26 @@ Passo-passo per il primo GM, **senza binari**: il GM presenta la situazione, **i
 decidono come muoversi**. Gli indizi si danno sempre. Come usare gli handout, tabelle En,
 errori tipici, il box del finale opzionale.
 
+## Aggiornamenti 2026-08-09 sera (decisioni utente)
+
+- **Durata**: la prima giocata è di **2-3 ore** — aggiornata ovunque (header Storia, ritmo, manuale)
+- **Manuale unico**: i tre documenti SK sono fusi in **`SK_Manuale.md`** — Parte I giocatori
+  (regole + foglio da tavolo), pagina-muro anti-spoiler, Parte II GM
+- **Schede**: aggiunta la colonna **Finale** nella tabella attributi (i 3 punti si scrivono lì)
+- **PNG Notevoli eliminati dal kit** («non voglio dare troppa roba»): Yamada e Ito vivono
+  già per intero dentro la Storia — è ciò che serve al GM
+- **QR/link Telegram nella Storia**: per ora RESTA — probabilmente da togliere, decisione rinviata
+
 ## Stato lavori
 
 - [x] 1. Cartella + CLAUDE.md + questo file
 - [x] 2. Copie grezze: Avventura (73 file), 5 schede + immagini, Yamada e Ito
-- [x] 3. `SK_Regole_Giocatori.md` (scritto 2026-08-09, in attesa di lettura utente)
-- [x] 4. `SK_Guida_GM.md` (scritta 2026-08-09: passo-passo, tabelle En, errori del primo GM, box finale pistola)
+- [x] 3. Libretto regole giocatori (scritto 2026-08-09 — ora **Parte I** di `SK_Manuale.md`)
+- [x] 4. Guida GM: passo-passo, tabelle En, errori del primo GM, box finale pistola (ora **Parte II** di `SK_Manuale.md`)
 - [x] 5. Adattamento copia avventura (CLAUDE.md kit, header Storia, Gou del kit in Scena 1, finale opzionale nel Confronto, nota Kage opzionale)
 - [x] 6. Adattamento schede ×5 (Ki starter, Gou costo fisso, Specialità senza gradi, equip senza statistiche di scontro, via Shugyō, Enja libero 1 volta)
-- [x] 7. `SK_Riferimento_Tavolo.md` (foglio da tavolo, una pagina)
-- [x] 8. Rilettura incrociata: greps su riferimenti esterni e regole tagliate — puliti (restano solo i voluti: teaser «gioco completo» e file di governo); scheda Ito allineata (via Maestro/Correzione)
+- [x] 7. Foglio da tavolo, una pagina (ora in coda alla Parte I di `SK_Manuale.md`)
+- [x] 8. Rilettura incrociata: greps su riferimenti esterni e regole tagliate — puliti (restano solo i voluti: teaser «gioco completo» e file di governo)
+- [x] 8b. Riorganizzazione serale 2026-08-09: manuale unico con muro spoiler, colonna Finale sulle schede, via la cartella PNG Notevoli, durata 2-3 ore, riferimenti riallineati (grep di verifica pulito)
 - [ ] 9. Approvazione utente → riga nel REGISTRO per la sessione WIZARD (PDF + sito)
 - [ ] 10. **CONSOLIDAMENTO** (data, poi il kit non si tocca più)

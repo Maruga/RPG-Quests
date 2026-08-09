@@ -16,7 +16,7 @@ Prima di fare modifiche che cambiano la trama, i personaggi, le relazioni o le m
 
 Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~890 righe).
 
-Le regole starter sono in `../SK_Regole_Giocatori.md`, la guida per condurre in `../SK_Guida_GM.md`, le schede dei PG in `../Schede/`, Yamada e Ito in `../PNG Notevoli/`.
+Le regole starter e la guida per condurre sono nel manuale unico `../SK_Manuale.md` (Parte I giocatori, Parte II GM); le schede dei PG in `../Schede/`. Yamada e Ito sono descritti per intero qui dentro, nella Storia.
 
 ## Lore Critiche (MAI violare)
 
@@ -35,7 +35,7 @@ Le regole starter sono in `../SK_Regole_Giocatori.md`, la guida per condurre in 
 `Storia Completa.md` contiene tutto in sequenza:
 1. Premessa GM e azienda (struttura societaria, quote)
 2. Il crimine — meccanismo e timeline dettagliata
-3. PNG istituzionali (Yamada, Ito — polizia e scientifica, schede complete in `../PNG Notevoli/`)
+3. PNG istituzionali (Yamada, Ito — polizia e scientifica, descritti per intero qui nella Storia)
 4. PNG presenti alla festa — schede complete per interrogatorio (Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, camerieri, Toda, Mori)
 5. PNG esterni (Nishida, Kano)
 6. Luoghi della villa (planimetria, stanze, prove)
@@ -58,7 +58,7 @@ Le regole starter sono in `../SK_Regole_Giocatori.md`, la guida per condurre in 
 - Le schede PNG seguono uno schema: dati, cosa sa, cosa ha visto, cosa nasconde, come reagisce sotto pressione, cosa lo scagiona
 - Le prove sono fisiche e sempre trovabili — i tiri modulano solo la comprensione
 - Il tono è noir realistico, nessun elemento soprannaturale
-- Ritmo target: 45-60 minuti totali (10 min briefing, 20-30 min interrogatori, 10-15 min finale)
+- Ritmo target: **2-3 ore alla prima giocata** (briefing e scena ~30-40 min, interrogatori 60-90 min, finale ~30-40 min)
 
 ## Handout
 
