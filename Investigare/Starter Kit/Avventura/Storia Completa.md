@@ -1,6 +1,6 @@
 # L'ULTIMA CENA DI TANAKA — 田中の最後の晩餐
 
-> **Sistema:** GENKAI 限界 v1.3 **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
+> **Sistema:** GENKAI 限界 — regole **Starter Kit** (`../SK_Regole_Giocatori.md`) **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 60-90 minuti **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
 link Telegram: https://t.me/GenkaiDashBoardBot
@@ -795,11 +795,12 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 - **Distacco** — gestire la scena del corpo
 - **Lucidità** — analizzare il sapone autonomamente (senza scientifica)
 
-**Gou utili:**
+**Gou utili** *(tra quelli delle schede del kit)*:
 
-- **Occhio della Gru** → nota il sapone fuori posto
-- **Teatro delle Ombre** → visualizza gli ultimi minuti di Tanaka
-- **Pietra Fuori Posto** → sente che qualcosa non dovrebbe essere lì
+- **Occhio della Gru** (Honda) → nota il sapone fuori posto
+- **Teatro delle Ombre** (Yamamoto) → visualizza gli ultimi minuti di Tanaka
+- **L'Eco della Montagna** (Fujita) → sente gli echi di ciò che è stato detto nella stanza
+- **La Brace che Resta** (Honda) → percepisce le emozioni rimaste sulla scena
 
 ---
 
@@ -854,10 +855,13 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 - Prove schiaccianti → non serve tiro (regola GENKAI)
 - Prove parziali → tiro Presenza
 - Ogawa crolla o fugge → a scelta del GM
+- **Finale opzionale**: se il GM vuole giocarlo, Ogawa messo alle strette **estrae una pistola** — le indicazioni per la scena sono nella `../SK_Guida_GM.md`, box *«Il finale — se Ogawa estrae la pistola»*
 
 ---
 
 ## MOMENTI SUGGERITI PER I KAGE
+
+> Nello Starter Kit il Kage è un **modulo opzionale** (vedi `../SK_Regole_Giocatori.md`): usate questa tabella solo se il tavolo lo ha scelto.
 
 I Kage sono a scelta dei giocatori. Il GM può suggerire (mai forzare):
 

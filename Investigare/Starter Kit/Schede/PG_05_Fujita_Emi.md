@@ -35,7 +35,7 @@
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
-> **Nota**: Se uno dei due dadi mostra **1**, lo ritiri — **sempre**, anche più volte: un 1 non si tiene mai. Il dado si ritira all'inizio di ogni nuovo caso (o quando il GM lo decide): il nuovo massimo sostituisce il vecchio; i punti Ki comprati si sommano sempre.
+> **Nota**: Se uno dei due dadi mostra **1**, lo ritiri — **sempre**, anche più volte: un 1 non si tiene mai. Somma il dado all'attributo più basso: quello è il tuo Ki massimo, e parti da lì.
 
 ---
 
@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il costo è **fisso** e si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Specchio dell'Anima 魂の鏡
 *Vedi oltre la maschera. Senti le emozioni vere di una persona.*
@@ -87,7 +87,7 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specialità: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro.
 
 ### Opzione 1: Copertura e travestimento *(Silenzio)*
 Reggere un ruolo è psicologia applicata: postura, voce, storia di copertura. Sparire in un personaggio ti riesce naturale.
@@ -98,32 +98,19 @@ Bar, hostess club, mizu shōbai: i posti dove le maschere cadono. Sai come ci si
 ### Opzione 3: Arte e antiquariato *(Lucidità)*
 Epoche, autori, falsi. La tua estetica coltivata — e il mercato, legale e non, che ci gira attorno.
 
-**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
-*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
-
 ---
 
 ## EQUIPAGGIAMENTO DI SERVIZIO
 
-Da investigatrice in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+Da investigatrice in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997.
 
 | Dove | Cosa | In gioco |
 |---|---|---|
-| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei una tiratrice scelta |
-| Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Addestramento base al poligono: sai usarla, non sei una tiratrice scelta |
+| Armadietto | **Giubbotto antiproiettile** | Protezione per le operazioni a rischio |
+| Operazioni | **Keibō** (警棒, manganello) | Dotazione da operazioni |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
-| — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
-
----
-
-## SHUGYŌ (CRESCITA)
-
-**Punti Shugyō**: _______________
-
-Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
-
-Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
+| — | **A mani nude** (Lotta 1 d'accademia) | Prese e immobilizzazioni: l'addestramento d'accademia ce l'hanno tutti gli investigatori |
 
 ---
 
@@ -179,7 +166,7 @@ Sai che Iwamoto non vuole chiudere il debito. Sai che ogni incontro è un promem
 
 **Come contattarla**: Ospedale Universitario, reparto Medicina Legale. O al cellulare personale.
 
-**Limite**: Una volta per sessione senza conseguenze. Morita è diretta, quasi brusca - siete le uniche due donne in posizioni di responsabilità che conoscete nel vostro campo.
+**In questa avventura**: puoi contattarla una volta, liberamente. Morita è diretta, quasi brusca - siete le uniche due donne in posizioni di responsabilità che conoscete nel vostro campo.
 
 ---
 

@@ -2,17 +2,21 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> ⚠ **QUESTA È LA COPIA DELLO STARTER KIT** — diverge dall'originale in `Investigare/Avventura Sake/`:
+> usa le regole starter e ha il finale opzionale con la pistola. **Non riallineare mai le due copie.**
+> Valgono le regole della cartella kit (`../CLAUDE.md` e `../DECISIONI_STARTERKIT.md`).
+
 ## Regola Fondamentale
 
 Prima di fare modifiche che cambiano la trama, i personaggi, le relazioni o le meccaniche investigative, DEVI indicarlo all'utente e chiedere conferma PRIMA di procedere. Non fare assunzioni sulla narrativa: chiedi sempre.
 
 ## Contesto
 
-**L'Ultima Cena di Tanaka** — avventura investigativa one-shot per il sistema GENKAI 限界 v1.3. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
+**L'Ultima Cena di Tanaka** — avventura investigativa one-shot per GENKAI 限界, versione Starter Kit. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
 
 Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~890 righe).
 
-Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investigare/`).
+Le regole starter sono in `../SK_Regole_Giocatori.md`, la guida per condurre in `../SK_Guida_GM.md`, le schede dei PG in `../Schede/`, Yamada e Ito in `../PNG Notevoli/`.
 
 ## Lore Critiche (MAI violare)
 
@@ -31,7 +35,7 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 `Storia Completa.md` contiene tutto in sequenza:
 1. Premessa GM e azienda (struttura societaria, quote)
 2. Il crimine — meccanismo e timeline dettagliata
-3. PNG istituzionali (Yamada, Ito — polizia e scientifica, PNG ricorrenti con schede in `Investigare/png/`)
+3. PNG istituzionali (Yamada, Ito — polizia e scientifica, schede complete in `../PNG Notevoli/`)
 4. PNG presenti alla festa — schede complete per interrogatorio (Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, camerieri, Toda, Mori)
 5. PNG esterni (Nishida, Kano)
 6. Luoghi della villa (planimetria, stanze, prove)

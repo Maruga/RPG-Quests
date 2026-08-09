@@ -51,10 +51,10 @@ errori tipici, il box del finale opzionale.
 - [x] 1. Cartella + CLAUDE.md + questo file
 - [x] 2. Copie grezze: Avventura (73 file), 5 schede + immagini, Yamada e Ito
 - [x] 3. `SK_Regole_Giocatori.md` (scritto 2026-08-09, in attesa di lettura utente)
-- [ ] 4. `SK_Guida_GM.md`
-- [ ] 5. Adattamento copia avventura (regole starter, finale opzionale, path interni)
-- [ ] 6. Adattamento schede pregenerate
-- [ ] 7. `SK_Riferimento_Tavolo.md`
-- [ ] 8. Rilettura incrociata: tutto punta solo dentro la cartella
+- [x] 4. `SK_Guida_GM.md` (scritta 2026-08-09: passo-passo, tabelle En, errori del primo GM, box finale pistola)
+- [x] 5. Adattamento copia avventura (CLAUDE.md kit, header Storia, Gou del kit in Scena 1, finale opzionale nel Confronto, nota Kage opzionale)
+- [x] 6. Adattamento schede ×5 (Ki starter, Gou costo fisso, Specialità senza gradi, equip senza statistiche di scontro, via Shugyō, Enja libero 1 volta)
+- [x] 7. `SK_Riferimento_Tavolo.md` (foglio da tavolo, una pagina)
+- [x] 8. Rilettura incrociata: greps su riferimenti esterni e regole tagliate — puliti (restano solo i voluti: teaser «gioco completo» e file di governo); scheda Ito allineata (via Maestro/Correzione)
 - [ ] 9. Approvazione utente → riga nel REGISTRO per la sessione WIZARD (PDF + sito)
 - [ ] 10. **CONSOLIDAMENTO** (data, poi il kit non si tocca più)

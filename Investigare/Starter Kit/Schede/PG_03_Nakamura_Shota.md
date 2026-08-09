@@ -35,7 +35,7 @@
 
 **Valore iniziale**: Attributo più basso (dopo distribuzione punti) + 2d6 (prendi il dado più alto)
 
-> **Nota**: Se uno dei due dadi mostra **1**, lo ritiri — **sempre**, anche più volte: un 1 non si tiene mai. Il dado si ritira all'inizio di ogni nuovo caso (o quando il GM lo decide): il nuovo massimo sostituisce il vecchio; i punti Ki comprati si sommano sempre.
+> **Nota**: Se uno dei due dadi mostra **1**, lo ritiri — **sempre**, anche più volte: un 1 non si tiene mai. Somma il dado all'attributo più basso: quello è il tuo Ki massimo, e parti da lì.
 
 ---
 
@@ -53,7 +53,7 @@ Quando ottieni un Kiwami positivo (2) o un Nami positivo (3) ma non puoi applica
 
 ## GOU (DEBITO)
 
-Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Ogni uso **raddoppia** il costo del successivo; una **notte di sonno** riabbassa il costo di un grado. Il costo si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
+Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra successo e fallimento è nella precisione. Il costo è **fisso** e si paga **per intero**: puoi scendere fino a Ki 1 (poi, a Ki ≤ 3, il Genkai) — ma se il costo ti portasse a 0 o sotto, il Gou **non si attiva**.
 
 ### Opzione 1: Ombra della Verità 影の真実
 *Senti quando qualcuno mente. Non sai come, ma lo senti.*
@@ -89,10 +89,10 @@ Scegli **uno** dei seguenti Debiti. Il Gou funziona sempre — la differenza tra
 
 ## SENMON (SPECIALIZZAZIONI)
 
-Scegli **una** delle seguenti Specializzazioni: parti al grado 1 — Praticante: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō (vedi `GENKAI_Specializzazioni.md`).
+Scegli **una** delle seguenti Specialità: **+1** ai tiri pertinenti (il bonus si sottrae dal dado), e conosci le cose comuni del campo senza tiro.
 
 ### Opzione 1: Interrogatorio *(Pazienza o Ascolto)*
-Il tuo mestiere. Sblocca le tecniche di apertura (Rispecchiamento, Linguaggio Inclusivo...) — il terreno emotivo che prepari prima delle domande vere.
+Il tuo mestiere: la conduzione, il ritmo, il terreno emotivo che prepari prima delle domande vere.
 
 ### Opzione 2: Conoscere il quartiere *(Ascolto — quartiere a scelta)*
 Le strade dove sei cresciuto o quelle dove lavori da anni: le facce, le abitudini, chi vede tutto e chi non parla.
@@ -100,32 +100,19 @@ Le strade dove sei cresciuto o quelle dove lavori da anni: le facce, le abitudin
 ### Opzione 3: Ricerca d'archivio *(Pazienza)*
 Registri, protocolli, fascicoli. Dove gli altri si arrendono dopo un'ora, tu stai ancora leggendo.
 
-**Grado attuale**: ___ · **Usi**: ☐☐☐☐☐☐☐☐☐☐
-*10 usi + 19 punti (attributo chiave di scheda ≥ 6) → Esperto (+2) · 25 usi + 39 punti (con i paletti) → Maestro*
-
 ---
 
 ## EQUIPAGGIAMENTO DI SERVIZIO
 
-Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997. *(Regole di scontro: `GENKAI_Combattimento.md`)*
+Da investigatore in borghese **non porti l'arma con te**: resta nell'armadietto in centrale e si preleva — firmando — solo per le operazioni che lo richiedono. Prassi della polizia giapponese, 1997.
 
 | Dove | Cosa | In gioco |
 |---|---|---|
-| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Lucidità · vel. 3/1 · ricarica 4 · danno 3 — addestramento base al poligono: sai usarla, non sei un tiratore scelto |
-| Armadietto | **Giubbotto antiproiettile** | **Assorbe 3** (fisso, contro ogni colpo) · indossare 4 |
-| Operazioni | **Keibō** (警棒, manganello) | Silenzio · vel. 2/1 · danno 2 |
+| Armadietto | **Revolver New Nambu M60** (.38, 5 colpi) | Addestramento base al poligono: sai usarla, non sei un tiratore scelto |
+| Armadietto | **Giubbotto antiproiettile** | Protezione per le operazioni a rischio |
+| Operazioni | **Keibō** (警棒, manganello) | Dotazione da operazioni |
 | Sempre con te | **Keisatsu techō** (警察手帳, tesserino), manette, taccuino | Il tesserino è il tuo vero potere |
-| — | **A mani nude** (Lotta 1 d'accademia) | Presenza · vel. 1/1 · danno 1 — prese e immobilizzazioni: il grado 1 ce l'hanno tutti gli investigatori |
-
----
-
-## SHUGYŌ (CRESCITA)
-
-**Punti Shugyō**: _______________
-
-Guadagno: **1** a sessione · **4-6** a caso chiuso · **+1** scena personale ben gestita · **+1** momento eccezionale (max 1/sessione)
-
-Spesa (tra un caso e l'altro): attributo di scheda = **arrivo ×3** · Ki massimo = **arrivo ×4** (tetto 12) · Senmon **9/19/39** · Enja extra **12** · affinare il Gou = **base ×11** (una volta)
+| — | **A mani nude** (Lotta 1 d'accademia) | Prese e immobilizzazioni: l'addestramento d'accademia ce l'hanno tutti gli investigatori |
 
 ---
 
@@ -179,7 +166,7 @@ Ma Kazuo è sangue del tuo sangue. E quando ha bisogno, sa sempre dove trovare s
 
 **Come contattarlo**: Studio legale Nakamura & Associati, via Kawaramachi. O al cellulare.
 
-**Limite**: Una volta per sessione senza conseguenze. Hideki non fa mai nulla di illegale, ma conosce le zone grigie.
+**In questa avventura**: puoi contattarlo una volta, liberamente. Hideki non fa mai nulla di illegale, ma conosce le zone grigie.
 
 ---
 
