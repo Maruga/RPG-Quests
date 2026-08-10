@@ -3,14 +3,9 @@
 
 > **Parte I — I giocatori** (regole e foglio da tavolo) · **Parte II — il Game Master** (la guida)
 >
-> ⚠ **Se giocherai come investigatore, leggi solo la Parte I**: la Parte II e la cartella `Avventura/` contengono la soluzione del caso.
-
----
----
+> ⚠ **Se giocherai come investigatore, leggi solo la Parte I**: la Parte II e la cartella `Avventura/` contengono l'avventura con la soluzione del caso.
 
 # PARTE I — IL LIBRETTO DEI GIOCATORI
-
----
 
 # Benvenuti
 
