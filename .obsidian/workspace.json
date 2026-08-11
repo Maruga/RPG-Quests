@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "SK_Manuale"
             }
+          },
+          {
+            "id": "5c778aaf4ad2ba28",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Note di rilascio 1.13.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,10 +54,12 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Esplora file"
             }
           },
           {
@@ -210,11 +225,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Apri selettore rapido": false,
+      "daily-notes:Apri nota giornaliera": false,
       "bases:Crea nuova Base": false,
-      "switcher:Apri selezione rapida": false,
       "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
       "audio-recorder:Avvia/ferma registrazione": false,
@@ -225,7 +240,7 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "8ff47a252fc8dbb1",
+  "active": "5c778aaf4ad2ba28",
   "lastOpenFiles": [
     "Investigare/Starter Kit/Avventura/Storia Completa.md",
     "Investigare/GENKAI_Regolamento_v1_3.md",
