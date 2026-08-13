@@ -30,7 +30,7 @@
     },
     "tagOptions": {
       "featureId": "tags",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -87,8 +87,8 @@
     },
     "searchOptions": {
       "featureId": "search",
-      "enabled": true,
-      "unavailable": false,
+      "enabled": false,
+      "unavailable": true,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -99,7 +99,7 @@
     },
     "outlineOptions": {
       "featureId": "outline",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -125,7 +125,7 @@
     },
     "graphViewOptions": {
       "featureId": "graph-view",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
@@ -182,8 +182,8 @@
     },
     "rssOptions": {
       "featureId": "rss",
-      "enabled": true,
-      "unavailable": false,
+      "enabled": false,
+      "unavailable": true,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "siteUrl": "",
@@ -191,7 +191,7 @@
     },
     "linkPreviewOptions": {
       "featureId": "link-preview",
-      "enabled": true,
+      "enabled": false,
       "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": true
@@ -199,12 +199,12 @@
     "relativeHeaderLinks": true,
     "includeJS": true,
     "includeCSS": true,
-    "inlineMedia": false,
-    "inlineCSS": false,
-    "inlineJS": false,
-    "inlineFonts": false,
-    "inlineOther": false,
-    "combineAsSingleFile": false,
+    "inlineMedia": true,
+    "inlineCSS": true,
+    "inlineJS": true,
+    "inlineFonts": true,
+    "inlineOther": true,
+    "combineAsSingleFile": true,
     "offlineResources": true,
     "themeName": "",
     "slugifyPaths": true,
@@ -213,7 +213,7 @@
     "faviconPath": "",
     "siteName": "LaPietraDellOmbra",
     "iconEmojiStyle": "Native",
-    "exportRoot": "DnD/OneShot - La Pietra dell'Ombra",
+    "exportRoot": "",
     "includePluginCss": [
       "diagram-zoom-drag",
       "obsidian-dice-roller"
@@ -226,7 +226,7 @@
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "online",
+  "exportPreset": "local",
   "openAfterExport": false,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",
