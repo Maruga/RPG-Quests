@@ -158,9 +158,11 @@ di Kamigyō e Kita.
 1. **Il «capo» sbagliato** — evento 10/05/1998 alla Sede Banda: «Tanaka Takayuki avvisa
    *il capo Suzuki Nobuyuki*». Suzuki è il capo del **kōban** (polizia, 46 anni); il capo
    della banda è **Matsui Kenta**. Anche i partecipanti dell'evento puntano a Suzuki.
-2. **Il padre registrato come madre** — Shimada Yasuhiro compare come «Madre» nella
-   famiglia e come «madre e figlio» nelle relazioni, ma è **il padre** (giornale + scheda).
-   Di conseguenza **la madre non esiste nel cast**.
+2. ~~Il padre registrato come madre~~ — **RISOLTA (2026-08-12, decisione utente: è LA MADRE).**
+   La lettura era al contrario: ritratto, schede e deposizioni la trattano tutte da madre;
+   l'unico testo difforme era il giornale. Corretto il giornale nel wizard («ha detto la madre»,
+   «il ragazzo le aveva detto»); backup e diff in `storico/`. **Resta da decidere il nome**:
+   Yasuhiro (康弘) è un nome maschile — rinomina col Registro Nomi, decide l'utente.
 3. **Due giornali diversi** — il calendario cita «Kyoto Shinbun, 24 maggio, pagina 3»,
    l'handout è «Rakuyō Shinbun, lunedì 25 maggio».
 4. **Titolo del tabulato** — «dal 1 Febbraio al **23 aprile**», ma dentro il periodo è
@@ -170,7 +172,46 @@ di Kamigyō e Kita.
    delitto sabato 23, fiori domenica 24, articolo lunedì 25).
 7. **Ambientazione** impostata su «kyoto-1997», eventi datati 1998.
 
+**Stato al 2026-08-13 pomeriggio** (lo storico sopra resta com'era):
+- **1 RISOLTA dall'utente** — l'evento del 10/05 ora dice «avvisa il capo Matsui Kenta, che
+  incarica il suo braccio destro Sugimoto Hideki»; Suzuki fuori dai partecipanti.
+- **2 (alibi di Chiba nell'evento del fatto) RISOLTA dall'utente** — allineata a scheda e giornale.
+- **3+6 RISOLTE (opzione A, decisione utente)** — due giornali veri: «Giornale del 24/05» =
+  trafiletto Kyoto Shinbun pag. 3 (scritto ex novo, fatti dal calendario, poi **integrato in una
+  pagina 3 completa**: asta del tè di Uji, brevi, meteo coerente col Rakuyō, pubblicità);
+  «Giornale del 25/05» = il pezzo grande Rakuyō (spostato); nuovo «Giornale del 26/05» con la
+  descrizione utente della pista bande rivali, da scrivere. Calendario e deposizione di Yumiko
+  intatti. Fix CSS: i titoli `h2` dei giornali senza barretta rossa da dossier.
+- **4 RISOLTA** — titolo tabulato: «1 febbraio · 23 maggio 1998».
+- **5 CHIUSA: SI TIENE (decisione utente)** — «sessantenne» resta: il giornale sbaglia,
+  il mondo può sbagliare. Non riproporre.
+- **Noriko fonte del covo RISOLTA** — versione parziale sulla fonte: «Sa solo la zona: i
+  capannoni di Murasakino, a Kita-ku» (scheda intatta, 2 fonti salve, combacia col tabulato).
+  Nel wizard: fonte con versione scritta = niente più segnalazione ❓.
+- **Domande sciolte dall'utente (2026-08-13)**:
+  · **Kōban**: sta nel territorio della banda, VOLUTO → rinominato «Kōban di Kamigyō» ovunque
+    (gruppo, relazione di Suzuki, tracce del 10/05 e del fatto, titolo handout del magazzino);
+    la traccia del 10/05 ora dice «notato dal kōban di Kamigyō», non più «dal distretto».
+  · **Aoki**: stessa età di Yuta → **21** (era 18); «Compagno di classe» ora torna.
+  · **Noriko**: resta 19 — «compagna di scuola» = stesso **complesso scolastico** con più
+    scuole (decisione utente); i testi esistenti («è della sua stessa scuola») già combaciano.
+- Aperta solo: **etichetta cornice** «kyoto-1997» con eventi 1998 (cosmetica).
+- **Handout completati per la stampa (2026-08-13 sera, decisioni utente)**:
+  · **Giornale del 26/05 SCRITTO** — Rakuyō di martedì, la falsa pista del «regolamento di
+    conti» (fonti anonime, voci sui «certi giri» = il problema-falsa-pista già nel caso,
+    la madre che respinge, la polizia che frena; firma Ikehata come il pezzo del 25).
+  · **«Foto Polizia del Capo Banda» ELIMINATO** (scelta utente: niente foto).
+  · **Deposizione di Yumiko SCRITTA** — costruita parola per parola dal suo «cosa sa»
+    (Noriko, «in classe con lui c'è Aoki», la madre che non sapeva, «parlate con Noriko»).
+  · Nel wizard: **👁 Stampa sulle deposizioni marcate 📄** — verbale impaginato del distretto
+    (carta intestata, dichiarante, data/luogo in bianco per il GM, firma), stampabile
+    dall'anteprima come ogni altro handout.
+
 ### Buchi da riempire
+
+> **Dal 2026-08-12 il wizard li segnala da solo**: schermata 15, pannello «Mancanze e
+> segnalazioni», ognuno col pulsante che porta al punto giusto (fai la scheda / scrivi
+> l'handout / apri la deposizione). L'elenco sotto resta come storico.
 - **Matsui Kenta non ha deposizione** (è il colpevole, lo interrogheranno).
 - **Sei personaggi senza scheda**, due pesanti: **Suzuki Nobuyuki** (capo kōban, fonte di
   *entrambe* le informazioni essenziali) e **Sugimoto Hideki** (braccio destro). Poi

@@ -94,7 +94,7 @@
 .ho-giornale .ho-pagina p.attacco::first-letter { font-size: 3em; font-weight: 700; float: left; line-height: .78; padding: 2px 4px 0 0; }
 /* notizie secondarie: titoletto + testo, non si spezzano tra le colonne */
 .ho-giornale .ho-art { break-inside: avoid; margin: 0 0 9px; border-top: 2px solid var(--inchiostro); padding-top: 4px; }
-.ho-giornale .ho-art h2 { font-size: 13px; font-weight: 800; margin: 0 0 2px; line-height: 1.15; }
+.ho-giornale .ho-art h2 { font-size: 13px; font-weight: 800; margin: 0 0 2px; line-height: 1.15; border-left: 0; padding-left: 0; }
 .ho-giornale .ho-art h3 { font-size: 11px; font-weight: 700; margin: 0 0 1px; }
 .ho-giornale .ho-pagina .ho-firma-art { font-weight: bold; font-style: italic; font-size: 9.5px; }
 /* foto di cortesia: placeholder tratteggiato con didascalia (il GM può poi metterci un'immagine vera) */

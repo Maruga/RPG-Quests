@@ -605,6 +605,13 @@
             const it = items.find(x => x.id === b.dataset.hoAnteprima);
             apriAnteprimaHandout(it);
         }));
+        // 🖨 Stampa diretta: manda in stampa senza aprire l'anteprima
+        cont.querySelectorAll("[data-ho-stampa]").forEach(b => b.addEventListener("click", () => {
+            const it = items.find(x => x.id === b.dataset.hoStampa);
+            if (!it) return;
+            if (!(it.contenuto || "").trim()) { alert("Questo handout è ancora vuoto: non c'è niente da stampare."); return; }
+            stampaHandoutDiretto(it.titolo || "Handout", it.contenuto);
+        }));
         // 📄 sulla fonte: marca la versione come handout (comparirà raccolto al passo 13)
         cont.querySelectorAll("[data-fonte-doc]").forEach(b => b.addEventListener("click", async () => {
             const [i, fi] = b.dataset.fonteDoc.split(".").map(Number);
@@ -904,8 +911,10 @@
                 // "collegato a" opzionale: persona, gruppo o luogo del caso
                 const gruppiNom = lista("gruppi").filter(g => g.nome);
                 const val = it.collegatoA || "";
-                return `<div class="wz-blocco-lista">
+                const deco = decoHandout(it.tipo); // icona + colore del tipo: la lista si legge a colpo d'occhio
+                return `<div class="wz-blocco-lista wz-ho-blocco" data-hoid="${it.id}" style="border-left:4px solid ${deco.colore}">
                     <div class="wz-riga-lista">
+                        <span class="wz-ho-ic" data-ho-ic title="${(it.tipo || "documento").replace(/"/g, "&quot;")}">${deco.icona}</span>
                         <input type="text" placeholder="Titolo (es. Tabulato telefonico della vittima)" value="${(it.titolo || "").replace(/"/g, "&quot;")}" data-riga-campo="titolo" data-i="${i}" class="wz-lungo" />
                         <select data-sel-custom="tipo" data-i="${i}" class="wz-medio" title="Tipo di documento"><option value="">— tipo —</option>${OPZ.tipoHandout.map(t => `<option value="${t}" ${it.tipo === t ? "selected" : ""}>${t}</option>`).join("")}<option value="__custom" ${tipoCustom ? "selected" : ""}>✏️ Altro…</option></select>
                         <input type="text" placeholder="tipo tuo…" value="${tipoCustom ? String(it.tipo).replace(/"/g, "&quot;") : ""}" data-riga-campo="tipo" data-i="${i}" class="wz-medio wz-custom-input" ${tipoCustom ? "" : "hidden"} />
@@ -921,7 +930,8 @@
                             ${lista("luoghi").length ? `<optgroup label="Luoghi">${inOrdine(lista("luoghi"), l => l.nome || l.tipologiaId).map(l => `<option value="l:${l.id}" ${val === "l:" + l.id ? "selected" : ""}>${l.nome || l.tipologiaId}</option>`).join("")}</optgroup>` : ""}
                         </select>
                         <button type="button" class="wz-btn wz-mini" data-ho-edita="${it.id}" title="Apri il documento per scriverlo/impaginarlo, aggiungere immagini e stampare">✏️ Edita</button>
-                        <button type="button" class="wz-btn wz-mini" data-ho-anteprima="${it.id}" title="Guarda il documento come sarà stampato; da qui puoi stampare o salvare in PDF">👁 Anteprima</button>
+                        <button type="button" class="wz-btn wz-mini" data-ho-anteprima="${it.id}" title="Guarda il documento come sarà stampato">👁 Anteprima</button>
+                        <button type="button" class="wz-btn wz-mini" data-ho-stampa="${it.id}" title="Manda subito in stampa, senza aprire l'anteprima">🖨 Stampa</button>
                     </div>
                     ${allegatiHtml(it, i)}
                 </div>`;
@@ -970,7 +980,7 @@
             case 10: initSchede(); break;
             case 11: lintInformazioni(); break;
             case 12: initHandoutRaccolti(); break;
-            case 14: initRiepilogo(); break;
+            case 14: initRiepilogo(); initMancanze(); break;
         }
     }
 
@@ -2443,6 +2453,33 @@
         const formScheda = document.getElementById("wz-scheda-form");
         formScheda.addEventListener("input", salvaScheda);
         formScheda.addEventListener("change", salvaScheda); // checkbox e select
+        // arrivo dal pannello «Mancanze» del riepilogo: ?persona=… apre subito quella scheda
+        // (a fondo funzione: il change handler e le sue dipendenze sono già tutti montati)
+        const pParam = new URLSearchParams(location.search).get("persona");
+        if (pParam && (persona(pParam) || lista("gruppi").some(g => g.id === pParam))) {
+            sel.value = pParam;
+            sel.dispatchEvent(new Event("change", { bubbles: true }));
+            form.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }
+
+    // icona + colore per TIPO di handout: i giornali seppia, i referti rossi, i tabulati blu…
+    // Match per parola-chiave, così regge anche i tipi scritti a mano con "✏️ Altro".
+    function decoHandout(tipo) {
+        const t = (tipo || "").toLowerCase();
+        const T = [
+            ["giornale", "📰", "#8b6d3f"], ["tabulato", "☎️", "#3f5f7a"],
+            ["tossic", "🧪", "#7a3348"], ["autops", "⚕️", "#8b1a1a"],
+            ["certificat", "⚕️", "#8b1a1a"], ["referto", "⚕️", "#8b1a1a"],
+            ["foto", "📷", "#4a4538"], ["deposiz", "📝", "#6b5330"],
+            ["lettera", "✉️", "#937a3d"], ["registro", "🗂", "#5f5a7a"],
+            ["accessi", "🗂", "#5f5a7a"], ["conto", "🧾", "#3f7a5e"],
+            ["ricevut", "🧾", "#3f7a5e"], ["menu", "🍽", "#7a6a33"],
+            ["presenti", "👥", "#5e6b7a"], ["cronologia", "💾", "#46628a"],
+            ["rapporto", "🚓", "#33527a"],
+        ];
+        for (const [k, icona, colore] of T) if (t.includes(k)) return { icona, colore };
+        return { icona: "📄", colore: "#8a8578" };
     }
 
     // una fonte "vale" se punta a qualcuno o a qualcosa
@@ -2483,15 +2520,20 @@
         if (!it) return;
         const corpo = (it.contenuto || "").trim() ||
             `<div class="ho-foglio ho-doc"><div class="ho-intestazione"><div class="ente">DOCUMENTO</div><div class="tipo-doc">${it.tipo || ""}</div></div><p>Questo handout è ancora vuoto. Aprilo con ✏️ Edita e premi ✨ Crea, oppure scrivilo a mano.</p></div>`;
-        const docHtml = `<!doctype html><html lang="it"><head><meta charset="utf-8"><link rel="stylesheet" href="/css/handout.css?v=${Date.now()}"><style>body{margin:0;background:#4a4640;padding:16px}</style></head><body>${corpo}</body></html>`;
+        // it.docHtml = documento completo già pronto (es. foto sola con orientamento suo): si usa così com'è
+        const docHtml = it.docHtml || `<!doctype html><html lang="it"><head><meta charset="utf-8"><link rel="stylesheet" href="/css/handout.css?v=${Date.now()}"><style>body{margin:0;background:#4a4640;padding:16px}</style></head><body>${corpo}</body></html>`;
         let ov = document.getElementById("wz-ho-anteprima");
         if (!ov) {
             ov = document.createElement("div");
             ov.id = "wz-ho-anteprima";
-            ov.innerHTML = `<div class="wz-ho-ov-barra"><span class="tit"></span><button type="button" class="wz-btn wz-mini" data-ho-ov-stampa>🖨 Stampa / PDF</button><button type="button" class="wz-btn wz-mini" data-ho-ov-edita>✏️ Edita</button><button type="button" class="wz-btn wz-mini" data-ho-ov-chiudi>✕ Chiudi</button></div><iframe class="wz-ho-ov-frame" title="anteprima"></iframe>`;
+            ov.innerHTML = `<div class="wz-ho-ov-barra"><span class="tit"></span><button type="button" class="wz-btn wz-mini" data-ho-ov-aggiorna title="Ricarica il caso dal server e riapri questa anteprima aggiornata">↻ Aggiorna</button><button type="button" class="wz-btn wz-mini" data-ho-ov-stampa>🖨 Stampa / PDF</button><button type="button" class="wz-btn wz-mini" data-ho-ov-edita>✏️ Edita</button><button type="button" class="wz-btn wz-mini" data-ho-ov-chiudi>✕ Chiudi</button></div><iframe class="wz-ho-ov-frame" title="anteprima"></iframe>`;
             document.body.appendChild(ov);
             ov.querySelector("[data-ho-ov-chiudi]").addEventListener("click", () => ov.hidden = true);
             ov.addEventListener("click", (e) => { if (e.target === ov) ov.hidden = true; });
+            // ↻ ricarica la pagina (stato fresco dal server) e riapre questa stessa anteprima
+            ov.querySelector("[data-ho-ov-aggiorna]").addEventListener("click", () => {
+                location.href = location.pathname + "?ho=" + ov.dataset.hid + "&apri=1";
+            });
             ov.querySelector("[data-ho-ov-stampa]").addEventListener("click", () => {
                 const f = ov.querySelector("iframe"); f.contentWindow.focus(); f.contentWindow.print();
             });
@@ -2502,8 +2544,72 @@
         }
         ov.dataset.hid = it.id;
         ov.querySelector(".tit").textContent = "👁 " + (it.titolo || "Handout");
+        // per i fogli "virtuali" (deposizioni dei raccolti) niente Edita/Aggiorna: si stampano e basta
+        ov.querySelector("[data-ho-ov-edita]").hidden = !it.id;
+        ov.querySelector("[data-ho-ov-aggiorna]").hidden = !it.id;
         ov.querySelector("iframe").srcdoc = docHtml;
         ov.hidden = false;
+    }
+
+    // 🖨 stampa diretta di un handout: iframe invisibile con lo stesso foglio dell'anteprima,
+    // print() e via — senza passare dalla sovraimpressione
+    function stampaHandoutDiretto(titolo, corpoHtml) {
+        const f = document.createElement("iframe");
+        f.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden";
+        document.body.appendChild(f);
+        f.srcdoc = `<!doctype html><html lang="it"><head><meta charset="utf-8"><title>${(titolo || "Handout").replace(/</g, "&lt;")}</title><link rel="stylesheet" href="/css/handout.css?v=${Date.now()}"><style>body{margin:0;background:#fff}</style></head><body>${corpoHtml}</body></html>`;
+        f.addEventListener("load", () => setTimeout(() => {
+            try { f.contentWindow.focus(); f.contentWindow.print(); } catch { }
+            setTimeout(() => f.remove(), 60000); // via dopo la stampa (il dialogo blocca, 60s bastano)
+        }, 150));
+    }
+
+    // foglio stampabile per un'informazione marcata 📄: titolo, testo e allegati (immagini incluse)
+    function foglioInformazione(titolo, testo, allegati) {
+        const corpo = (testo || "").trim().split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
+        const imgs = (allegati || []).filter(a => a.url).map(a => `<img src="${a.url}" alt="${(a.nome || "").replace(/"/g, "&quot;")}" />`).join("");
+        return `<div class="ho-foglio ho-doc">
+            <div class="ho-intestazione"><div class="ente">${(titolo || "Documento").replace(/</g, "&lt;")}</div><div class="tipo-doc">documento</div></div>
+            ${corpo}${imgs}
+        </div>`;
+    }
+
+    // 📎 allegato-immagine: NIENTE nuova scheda del browser — si apre la stessa anteprima
+    // degli handout (chiudi / stampa). Vale ovunque: passo 12, passo 13, schede.
+    // La foto ha un foglio TUTTO SUO: la pagina di stampa si orienta da sola come l'immagine
+    // (orizzontale → A4 orizzontale) e la foto riempie il foglio, senza la gabbia del documento.
+    // I file non-immagine (se mai ce ne saranno) tengono il comportamento normale.
+    const docFoto = (url, nome, orizzontale) => `<!doctype html><html lang="it"><head><meta charset="utf-8"><title>${nome.replace(/</g, "&lt;")}</title><style>
+        @page { size: A4 ${orizzontale ? "landscape" : "portrait"}; margin: 8mm; }
+        html, body { margin: 0; height: 100%; }
+        body { display: flex; align-items: center; justify-content: center; background: #4a4640; }
+        img { max-width: 96%; max-height: 96vh; box-shadow: 0 6px 24px rgba(0,0,0,.45); }
+        @media print { body { background: #fff; } img { max-width: 100%; max-height: 100%; box-shadow: none; } }
+    </style></head><body><img src="${url}" alt="${nome.replace(/"/g, "&quot;")}"></body></html>`;
+    document.addEventListener("click", (e) => {
+        const a = e.target.closest(".wz-alg a, a.wz-alg");
+        if (!a) return;
+        const url = a.getAttribute("href") || "";
+        if (!/\.(png|jpe?g|webp|gif|bmp)(\?|$)/i.test(url)) return;
+        e.preventDefault();
+        const nome = (a.textContent || "").replace(/^📎\s*/, "").trim() || "Allegato";
+        const im = new Image();
+        im.onload = () => apriAnteprimaHandout({ id: "", titolo: nome, docHtml: docFoto(url, nome, im.naturalWidth > im.naturalHeight) });
+        im.onerror = () => apriAnteprimaHandout({ id: "", titolo: nome, docHtml: docFoto(url, nome, false) });
+        im.src = url;
+    });
+
+    // verbale impaginato per una deposizione marcata 📄: intestazione del distretto + testo + firma.
+    // Data e luogo restano in bianco: li compila il GM (qui non si inventano date).
+    function verbaleDeposizione(titolo, nome, testo) {
+        const corpo = (testo || "").trim().split(/\n{2,}/)
+            .map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
+        return `<div class="ho-foglio ho-referto">
+            <div class="ho-intestazione"><div class="ente">POLIZIA PREFETTURALE DI KYOTO — DISTRETTO DI SHIMOGYŌ</div><div class="tipo-doc">VERBALE DI SOMMARIE INFORMAZIONI</div></div>
+            <dl class="ho-meta"><dt>Persona sentita</dt><dd>${nome}</dd><dt>Data e luogo</dt><dd>____________________________</dd></dl>
+            ${corpo}
+            <div class="ho-firma"><span class="riga">firma del dichiarante</span></div>
+        </div>`;
     }
 
     function initHandoutRaccolti() {
@@ -2513,20 +2619,77 @@
         const righe = [];
         lista("passo9.tracce").forEach(t => (t.fonti || []).forEach(f => {
             if (!f.handout) return;
-            righe.push({ titolo: f.handoutTitolo || t.nome || "Handout", da: `informazione «${t.nome || "?"}» · fonte: ${nomeFonte(f) || "?"}`, testo: f.versione || t.testo || "", link: vai(11), allegati: t.allegati || [] });
+            righe.push({ titolo: f.handoutTitolo || t.nome || "Handout", da: `informazione «${t.nome || "?"}» · fonte: ${nomeFonte(f) || "?"}`, testo: f.versione || t.testo || "", link: vai(11), allegati: t.allegati || [], icona: "📄", colore: "#46628a" });
         }));
         lista("passo8.schede").forEach(s => {
             if (!s.depHandout || !s.deposizione) return;
-            righe.push({ titolo: s.depTitolo || `Deposizione — ${nomeAttore(s.personaId) || "?"}`, da: `scheda di ${nomeAttore(s.personaId) || "?"}`, testo: s.deposizione, link: vai(10), allegati: [] });
+            const nome = nomeAttore(s.personaId) || "?";
+            righe.push({ titolo: s.depTitolo || `Deposizione — ${nome}`, da: `scheda di ${nome}`, testo: s.deposizione, link: vai(10), allegati: [], icona: "📝", colore: "#6b5330", verbaleDi: nome });
         });
         box.innerHTML = righe.length === 0
             ? `<p>Nessuno ancora. Si marcano 📄 nelle <strong>informazioni</strong> (passo 12) e nelle <strong>schede</strong> (passo 11): qui si ritrovano raccolti, senza riscriverli.</p>`
-            : righe.map(r => `<div class="wz-ho-card">
-                <div class="wz-ho-testa"><strong>📄 ${r.titolo}</strong><a class="wz-btn wz-mini" href="${r.link}">✎ modifica alla fonte</a></div>
+            : righe.map((r, ri) => `<div class="wz-ho-card" style="border-left:4px solid ${r.colore}">
+                <div class="wz-ho-testa"><strong>${r.icona} ${r.titolo}</strong><span><button type="button" class="wz-btn wz-mini" data-ho-card-ant="${ri}" title="Guarda il foglio impaginato">👁 Anteprima</button> <button type="button" class="wz-btn wz-mini" data-ho-card-stampa="${ri}" title="Manda subito in stampa, senza aprire l'anteprima">🖨 Stampa</button> <a class="wz-btn wz-mini" href="${r.link}">✎ modifica alla fonte</a></span></div>
                 <small class="wz-nota">${r.da}</small>
                 <p>${(r.testo || "").slice(0, 240)}${(r.testo || "").length > 240 ? "…" : ""}</p>
                 ${r.allegati.length ? `<div class="wz-allegati">${r.allegati.map(a => `<a class="wz-chip wz-alg" href="${a.url}" target="_blank">📎 ${a.nome}</a>`).join("")}</div>` : ""}
             </div>`).join("");
+        // ogni card raccolta si guarda e si stampa da QUI: deposizioni come verbale del
+        // distretto, informazioni 📄 come foglio con testo + allegati dentro — così al
+        // momento della stampa non si dimentica niente in giro per i passi
+        const foglioDi = (r) => r.verbaleDi
+            ? verbaleDeposizione(r.titolo, r.verbaleDi, r.testo)
+            : foglioInformazione(r.titolo, r.testo, r.allegati);
+        box.querySelectorAll("[data-ho-card-ant]").forEach(b => b.addEventListener("click", () => {
+            const r = righe[+b.dataset.hoCardAnt];
+            apriAnteprimaHandout({ id: "", titolo: r.titolo, contenuto: foglioDi(r) });
+        }));
+        box.querySelectorAll("[data-ho-card-stampa]").forEach(b => b.addEventListener("click", () => {
+            const r = righe[+b.dataset.hoCardStampa];
+            stampaHandoutDiretto(r.titolo, foglioDi(r));
+        }));
+
+        // ── comodità chieste dall'utente (2026-08-13) ──
+        // ↻ ricarica dal server: lo stato vive nella pagina — se il caso è stato toccato da fuori
+        // (un assistente, un'altra finestra), da qui ci si riallinea senza perdere nulla (autosave già fatto)
+        document.getElementById("wz-ho-ricarica")?.addEventListener("click", () => location.reload());
+        // icone/colori dei documenti nuovi: si riaggiornano da soli quando cambi il tipo
+        const contHo = document.querySelector("[data-lista='passo10.handout']");
+        if (contHo && !contHo.dataset.decoAttiva) {
+            contHo.dataset.decoAttiva = "1";
+            contHo.addEventListener("input", () => setTimeout(() => {
+                const blocchi = contHo.querySelectorAll(".wz-ho-blocco");
+                lista("passo10.handout").forEach((it, i) => {
+                    const b = blocchi[i]; if (!b) return;
+                    const deco = decoHandout(it.tipo);
+                    b.style.borderLeft = "4px solid " + deco.colore;
+                    const ic = b.querySelector("[data-ho-ic]");
+                    if (ic) { ic.textContent = deco.icona; ic.title = it.tipo || "documento"; }
+                });
+            }, 60));
+        }
+        // ritorno dall'editor (?ho=…): la lista si apre sul documento appena editato, illuminato.
+        // Con &apri=1 (dal ↻ dell'anteprima) si riapre anche l'anteprima, con lo stato fresco.
+        // I parametri valgono UNA volta: l'indirizzo viene ripulito subito, così F5 e ↻
+        // successivi non rieseguono l'apertura (era il bug dell'anteprima che ricompariva).
+        const qs = new URLSearchParams(location.search);
+        const hoParam = qs.get("ho");
+        if (hoParam) history.replaceState(null, "", location.pathname);
+        if (hoParam) {
+            const prova = (n) => {
+                const b = document.querySelector(`.wz-ho-blocco[data-hoid="${hoParam}"]`);
+                if (b) {
+                    b.scrollIntoView({ behavior: "smooth", block: "center" });
+                    b.classList.add("wz-ho-evidenzia");
+                    if (qs.get("apri")) {
+                        const it = lista("passo10.handout").find(x => x.id === hoParam);
+                        if (it) apriAnteprimaHandout(it);
+                    }
+                }
+                else if (n < 25) setTimeout(() => prova(n + 1), 100); // la lista si disegna in async
+            };
+            prova(0);
+        }
     }
 
     function initRiepilogo() {
@@ -2559,12 +2722,158 @@
         lint.innerHTML = esiti.join("");
 
         const v = persona(get("passo2.personaId"));
+        // gli handout senza testo né allegati non si contano come pronti: si dicono a parte
+        const hoTutti = lista("passo10.handout");
+        const hoVuoti = hoTutti.filter(h => !(h.contenuto || "").trim() && !(h.allegati || []).length).length;
+        const hoPronti = hoTutti.length - hoVuoti + contaHandoutMarcati();
         rie.innerHTML = `
             <p><strong>${get("passo1.rigaUnica") || "—"}</strong></p>
             <p>Vittima: ${v ? nomePieno(v) : "—"} · ${get("passo2.postoNelMondo") || ""}</p>
             <p>Movente: ${get("passo4.descrizione") || "—"}</p>
             <p>Colpevole: ${colp.map(id => nomePieno(persona(id))).join(", ") || "—"}</p>
-            <p>Cast: ${cast().length} · Luoghi: ${lista("luoghi").length} · Eventi: ${ev.length} · Informazioni: ${lista("passo9.tracce").length} · Handout: ${lista("passo10.handout").length + contaHandoutMarcati()} · Giorni: ${lista("passo11.giorni").length}</p>`;
+            <p>Cast: ${cast().length} · Luoghi: ${lista("luoghi").length} · Eventi: ${ev.length} · Informazioni: ${lista("passo9.tracce").length} · Handout: ${hoPronti}${hoVuoti ? ` <small>(+${hoVuoti} da scrivere)</small>` : ""} · Giorni: ${lista("passo11.giorni").length}</p>`;
+    }
+
+    // ── passo 15: mancanze e segnalazioni — il CONTENUTO, non le regole del metodo ──
+    // Il lint dice se il caso rispetta il metodo; qui si guarda cosa manca davvero al tavolo:
+    // schede delle persone che contano, handout vuoti, la deposizione del colpevole, generi che
+    // non tornano coi ruoli, fonti che forse contraddicono la propria scheda. Le figure di
+    // contorno possono legittimamente restare senza scheda. Nulla di tutto questo blocca l'export.
+    function initMancanze() {
+        const box = document.getElementById("wz-mancanze");
+        if (!box) return;
+        const vai = (n, query) => location.pathname.replace(/\/\d+$/, "/" + n) + (query || "");
+        const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+        // ogni voce è una RIGA della griglia: CHI (nome + chi è, come ovunque nel wizard) ·
+        // COSA NON TORNA · AZIONE — i bottoni stanno tutti nella stessa colonna, allineati
+        const sez = { schede: [], deposizioni: [], handout: [], generi: [], verifiche: [] };
+        const R = (dove, chi, descr, cosa, href, label) =>
+            sez[dove].push({ chi, descr, cosa, href, label });
+
+        const vittimaId = get("passo2.personaId");
+        const colp = (get("passo5.colpevoliIds") || []).filter(id => persona(id));
+        const schede = lista("passo8.schede");
+        const schedaDiId = (id) => schede.find(s => s.personaId === id);
+        const compilata = (s) => !!s && (
+            ["descrizioneFisica", "cosaSa", "cosaNonSa", "cosaHaFatto", "comportamento", "deposizione"].some(k => (s[k] || "").trim())
+            || (s.stats && Object.values(s.stats).some(x => x != null && x !== ""))
+            || (s.statsEnte && Object.values(s.statsEnte).some(x => x != null && x !== "")));
+
+        // 1 · persone che CONTANO senza scheda: colpevole, fonti di informazioni, presenti in cronistoria
+        const motivi = new Map();
+        const conta = (id, perche) => {
+            if (!id || id === vittimaId || !persona(id)) return;
+            const m = motivi.get(id) || [];
+            if (!m.includes(perche)) m.push(perche);
+            motivi.set(id, m);
+        };
+        colp.forEach(id => conta(id, "è il colpevole"));
+        lista("passo9.tracce").forEach(t => (t.fonti || []).forEach(f => conta(f.attoreId, `fonte di «${t.nome || "?"}»`)));
+        lista("passo7.eventi").forEach(e => (e.personeIds || []).forEach(id => conta(id, "compare nella cronistoria")));
+        for (const [id, perche] of motivi) {
+            if (compilata(schedaDiId(id))) continue;
+            const testo = perche.join(" · ");
+            R("schede", esc(nomePieno(persona(id))), descrAttore(id, 44),
+                esc(testo[0].toUpperCase() + testo.slice(1)) + ".",
+                vai(10, "?persona=" + id), "✎ Fai la scheda");
+        }
+        const contorno = cast()
+            .filter(p => p.id !== vittimaId && !motivi.has(p.id) && !compilata(schedaDiId(p.id)))
+            .map(p => esc(nomePieno(p)) + (descrAttore(p.id, 40) ? ` <small>(${esc(descrAttore(p.id, 40))})</small>` : ""));
+
+        // 2 · il colpevole ha la scheda ma non la deposizione (lo interrogheranno di sicuro)
+        colp.forEach(id => {
+            const s = schedaDiId(id);
+            if (compilata(s) && !(s.deposizione || "").trim())
+                R("deposizioni", esc(nomePieno(persona(id))), descrAttore(id, 44),
+                    "È il colpevole: la scheda c'è, la deposizione no — e lo interrogheranno di sicuro.",
+                    vai(10, "?persona=" + id), "✎ Apri la scheda");
+        });
+        schede.forEach(s => {
+            if (s.depHandout && !(s.deposizione || "").trim() && persona(s.personaId))
+                R("deposizioni", esc(nomePieno(persona(s.personaId))), descrAttore(s.personaId, 44),
+                    "La deposizione è marcata 📄 come handout, ma è vuota.",
+                    vai(10, "?persona=" + s.personaId), "✎ Apri la scheda");
+        });
+
+        // 3 · handout vuoti: né testo né allegati
+        lista("passo10.handout").forEach(h => {
+            if ((h.contenuto || "").trim() || (h.allegati || []).length) return;
+            R("handout", `«${esc(h.titolo || "senza titolo")}»`, h.tipo || "documento",
+                "Né testo né allegati — da scrivere, o da togliere se non serve.",
+                `/Wizard/Handout?id=${WIZ.id}&h=${h.id}&torna=${WIZ.passo}`, "✏️ Scrivilo");
+        });
+
+        // 4 · genere in anagrafica vs ruolo dichiarato (madre/figlio/sorella/…)
+        const FEMM = ["madre", "mamma", "sorella", "figlia", "moglie", "zia", "nonna", "fidanzata", "compagna", "vedova", "cognata", "nuora", "suocera"];
+        const MASC = ["padre", "papà", "fratello", "figlio", "marito", "zio", "nonno", "fidanzato", "compagno", "vedovo", "cognato", "genero", "suocero"];
+        const parole = (testo) => (testo || "").toLowerCase().split(/[^a-zàèéíìóòú]+/).filter(Boolean);
+        const attese = (testo) => {
+            const w = new Set(parole(testo));
+            return { f: FEMM.some(x => w.has(x)), m: MASC.some(x => w.has(x)) };
+        };
+        for (const base of ["passo3", "passo6"])
+            for (const cerchio of ["famiglia", "lavoro", "amici", "altri"])
+                (get(`${base}.${cerchio}`) || []).forEach(r => {
+                    const p = persona(r.personaId);
+                    if (!p || !p.genere) return;
+                    const a = attese(r.relazione);
+                    if ((a.f && !a.m && p.genere === "m") || (a.m && !a.f && p.genere === "f"))
+                        R("generi", esc(nomePieno(p)), p.genere === "m" ? "in anagrafica: maschile" : "in anagrafica: femminile",
+                            `È nelle cerchie come «${esc(r.relazione)}»: una delle due cose è da correggere.`,
+                            vai(3), "✎ Controlla");
+                });
+        lista("relazioni").forEach(r => {
+            const a = attese(r.tipo);
+            if (!a.f && !a.m) return;
+            const generi = [persona(r.aId), persona(r.bId)].filter(Boolean).map(p => p.genere).filter(Boolean);
+            if (!generi.length) return;
+            const male = (a.f && !a.m && !generi.includes("f")) || (a.m && !a.f && !generi.includes("m"))
+                || (a.f && a.m && generi.length === 2 && !(generi.includes("f") && generi.includes("m")));
+            if (male)
+                R("generi", `${esc(nomeAttore(r.aId))} ↔ ${esc(nomeAttore(r.bId))}`, esc(r.tipo || ""),
+                    "Il tipo di relazione non torna coi generi in anagrafica.",
+                    vai(7), "✎ Controlla");
+        });
+
+        // 5 · fonte che forse si contraddice: parole in comune tra l'informazione e il suo
+        //     «cosa non sa». Non è un verdetto: è un invito a controllare a mano.
+        const STOP = new Set(["della", "delle", "degli", "dello", "dell", "alla", "alle", "allo", "come", "cosa", "dove", "anche", "senza", "sopra", "sotto", "verso", "dopo", "prima", "sono", "essere", "stato", "stata", "molto", "poco", "tutto", "tutti", "questa", "questo", "quella", "quello", "loro", "nella", "negli"]);
+        const tokeni = (testo) => new Set(parole(testo).filter(w => w.length > 3 && !STOP.has(w)));
+        lista("passo9.tracce").forEach(t => (t.fonti || []).forEach(f => {
+            const p = persona(f.attoreId); if (!p) return;
+            if ((f.versione || "").trim()) return; // versione propria = l'autore ha già deciso cosa sa dire
+            const s = schedaDiId(f.attoreId); if (!s || !(s.cosaNonSa || "").trim()) return;
+            const comuni = [...tokeni((t.nome || "") + " " + (t.testo || ""))].filter(w => tokeni(s.cosaNonSa).has(w));
+            if (comuni.length >= 2)
+                R("verifiche", esc(nomePieno(p)), descrAttore(f.attoreId, 44),
+                    `Fonte di «${esc(t.nome || "?")}», ma il suo «cosa non sa» dice: <em>«${esc((s.cosaNonSa || "").trim().slice(0, 110))}…»</em>`,
+                    vai(11), "✎ Verifica");
+        }));
+
+        // ── resa: griglia a tre colonne per sezioni, bottoni in colonna ──
+        const riga = (r) => `<div class="wz-manca-r">
+            <div class="wz-manca-chi"><strong>${r.chi}</strong>${r.descr ? `<small>${esc(r.descr)}</small>` : ""}</div>
+            <div class="wz-manca-cosa">${r.cosa}</div>
+            <div class="wz-manca-az"><a class="wz-btn wz-mini" href="${r.href}">${r.label}</a></div>
+        </div>`;
+        const TITOLI = [
+            ["schede", "Schede da fare", "人"],
+            ["deposizioni", "Deposizioni", "調書"],
+            ["handout", "Handout vuoti", "書類"],
+            ["generi", "Generi che non tornano", "戸籍"],
+            ["verifiche", "Da controllare a mano", "確認"],
+        ];
+        let html = "";
+        for (const [k, tit, kj] of TITOLI) {
+            if (!sez[k].length) continue;
+            html += `<div class="wz-manca-sez">${tit} <small>· ${sez[k].length}</small><span class="kj">${kj}</span></div>` + sez[k].map(riga).join("");
+        }
+        if (!html) html = `<p class="l-ok wz-manca-ok">✓ Niente da segnalare: schede, deposizioni e handout coprono quello che serve al tavolo.</p>`;
+        if (contorno.length)
+            html += `<p class="wz-nota wz-manca-piede">Di contorno, senza scheda — e va bene così: ${contorno.join(" · ")}.</p>`;
+        box.classList.add("wz-manca");
+        box.innerHTML = html;
     }
 
     // ───────────────────────── riassunto (drawer mobile / colonna desktop) ─────────────────────────

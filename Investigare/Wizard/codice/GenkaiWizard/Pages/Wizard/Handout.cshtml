@@ -47,7 +47,7 @@
 </head>
 <body>
     <div class="ho-barra ho-no-stampa">
-        <a class="btn" id="ho-torna" href="/Wizard/@Model.ProgettoId/@Model.Torna" title="Torna al caso (salva prima)">← Torna al caso</a>
+        <a class="btn" id="ho-torna" href="/Wizard/@Model.ProgettoId/@Model.Torna?ho=@Model.HandoutId" title="Torna al caso (salva prima) — la lista si apre su questo documento">← Torna al caso</a>
         <span class="tit">📄 @Model.Titolo</span>
         <button type="button" id="ho-crea" data-ai="@(Model.AiAttiva ? "1" : "0")" title="Genera il contenuto dalla descrizione scritta al passo 13">✨ Crea con l'AI</button>
         @if (Model.AiAttiva)

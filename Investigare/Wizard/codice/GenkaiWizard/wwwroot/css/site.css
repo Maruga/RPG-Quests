@@ -116,6 +116,41 @@ body {
 .l-warn { color: #b26a00; margin: .2rem 0; }
 .l-err { color: var(--wz-rosso); margin: .2rem 0; }
 
+/* ── passo 12 (informazioni): colonne a larghezza FISSA così tutte le righe sono uguali ──
+   (la tendina e il contatore flettevano: ogni riga spartiva lo spazio a modo suo) */
+[data-lista="passo9.tracce"] .wz-riga-lista .wz-lungo { flex: 1 1 140px; }
+[data-lista="passo9.tracce"] .wz-riga-lista select[data-riga-campo="classificazione"] { flex: 0 0 11rem; width: 11rem; }
+[data-lista="passo9.tracce"] .wz-riga-lista .wz-conta { flex: 0 0 6.8rem; text-align: right; white-space: nowrap; font-size: .78rem; }
+
+/* ── passo 13: handout riconoscibili (icona + colore per tipo) e ritorno dall'editor ── */
+.wz-ho-ic { font-size: 1.05rem; line-height: 1; flex: 0 0 auto; }
+.wz-ho-strumenti { text-align: right; margin: -.2rem 0 .4rem; }
+@keyframes wzHoFlash { from { background: #f5e9c0; } to { background: transparent; } }
+.wz-ho-evidenzia { animation: wzHoFlash 1.6s ease-out 2; }
+
+/* ── passo 15: pannello «Mancanze e segnalazioni» — griglia ordinata, bottoni in colonna ── */
+.wz-manca { padding: .1rem .6rem .5rem; }
+.wz-manca-sez { display: flex; align-items: baseline; gap: .45rem; margin: 1.05rem 0 0; padding-bottom: .25rem; border-bottom: 1px solid var(--wz-oro); color: var(--wz-navy); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.wz-manca-sez:first-child { margin-top: .45rem; }
+.wz-manca-sez small { color: var(--wz-grigio); font-weight: 400; letter-spacing: 0; }
+.wz-manca-sez .kj { margin-left: auto; color: #d3c49c; font-size: 1.05rem; font-weight: 400; letter-spacing: .12em; }
+.wz-manca-r { display: grid; grid-template-columns: minmax(11rem, 15rem) 1fr 10rem; gap: 1rem; align-items: center; min-height: 3.4rem; padding: .5rem .1rem; border-bottom: 1px dotted #d9cfb8; }
+.wz-manca-r:last-of-type { border-bottom: 0; }
+.wz-manca-chi { display: flex; flex-direction: column; gap: .12rem; min-width: 0; }
+.wz-manca-chi strong { font-size: .95rem; line-height: 1.25; }
+.wz-manca-chi small { color: var(--wz-grigio); font-size: .78rem; line-height: 1.3; }
+.wz-manca-cosa { font-size: .87rem; color: #4a4538; line-height: 1.45; }
+.wz-manca-cosa em { color: var(--wz-grigio); font-style: italic; }
+.wz-manca-az { justify-self: stretch; text-align: right; }
+.wz-manca-az .wz-btn { display: inline-block; width: 100%; max-width: 10rem; text-align: center; white-space: nowrap; }
+.wz-manca-ok { margin: .5rem 0; }
+.wz-manca-piede { margin: .9rem 0 .3rem; }
+@media (max-width: 760px) {
+  .wz-manca-r { grid-template-columns: 1fr; gap: .3rem; min-height: 0; padding: .6rem 0; }
+  .wz-manca-az { text-align: left; }
+  .wz-manca-az .wz-btn { width: auto; }
+}
+
 /* Progetti */
 .wz-progetti { max-width: 720px; margin: 0 auto; }
 .wz-nuovo { display: flex; gap: .5rem; margin: 1rem 0; }

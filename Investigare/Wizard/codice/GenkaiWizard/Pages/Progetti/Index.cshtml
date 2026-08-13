@@ -24,8 +24,9 @@
                 <li class="wz-card">
                     <a class="wz-card-main" asp-page="/Wizard/Index" asp-route-id="@p.Id" asp-route-passo="@p.PassoCorrente">
                         <strong>@p.Titolo</strong>
-                        <span class="wz-meta">passo @p.PassoCorrente/12 · agg. @p.AggiornatoIl.ToLocalTime().ToString("dd/MM HH:mm")</span>
-                        <span class="wz-barra"><span style="width:@(p.PassoCorrente * 100 / 12)%"></span></span>
+                        @{ var totSchermate = GenkaiWizard.Pages.Wizard.IndexModel.UltimaSchermata + 1; }
+                        <span class="wz-meta">passo @(p.PassoCorrente + 1)/@totSchermate · agg. @p.AggiornatoIl.ToLocalTime().ToString("dd/MM HH:mm")</span>
+                        <span class="wz-barra"><span style="width:@((p.PassoCorrente + 1) * 100 / totSchermate)%"></span></span>
                     </a>
                     @if (!p.Demo)
                     {
