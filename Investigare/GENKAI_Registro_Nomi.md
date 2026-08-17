@@ -2,7 +2,7 @@
 
 > File **trasversale** a tutte le avventure (non appartiene a nessuna cartella-avventura).
 > Serve a evitare **omonimie** (stesso nome + cognome su personaggi diversi) tra PG, PNG notevoli, Kage e i PNG delle singole avventure.
-> Ultimo aggiornamento: **2026-07-10**.
+> Ultimo aggiornamento: **2026-08-16** (aggiunta *Tanto Rumore*).
 
 ## Come usarlo
 
@@ -74,6 +74,10 @@ Endo Hiroshi ⚠ · Fujimoto Yuko · Hayashi Tomoko ⚠ · Honda Masao · Kamiya
 ### La Falsa Primavera
 Fujii Masato · Hasegawa Jun · Ishikawa Noboru · Kimura Hiroto · Kitagawa Yūji · Kobayashi Tarō · Kubo Midori · Morita Chiaki · Murakami Kazuko · Nishida Takao · Obata Hisako · Obata Shigeru · Ogawa Fumiko · Ogawa Masao (la vittima) · Ogawa Shūichi · Ogawa Yumi (l'assassina) · Okumura Tatsuya · Saitō Ryōichi · Sakamoto Hiroshi · Shimizu Tetsuo · Takahashi Yuri · Tanaka Kōhei · Yamashita Hideo · Yoshida Ryō
 *(parziali: Harumi · Yuki (cameriere bar Midori) · Tanaka (segretaria) · Yamada (operaio forni))*
+
+### Bakuon — Tanto Rumore per Nulla *(ex «L'era glaciale del lavoro», caso wizard — registrata 2026-08-16, nessuna omonimia piena; cartella `Avventura Tanto Rumore/`)*
+Aoki Hideki · Chiba Hiroko · Ishida Kazuhiko · Matsui Kenta (il colpevole) · Shimada Yasuhiro (madre) · Shimada Yumiko · Shimada Yuta (la vittima) · Sugimoto Hideki · Suzuki Nobuyuki · Tanaka Takayuki · Watanabe Noriko · Yoshida Yukio
+*Nota: cognomi **Ishida**/**Tanaka**/**Watanabe**/**Suzuki**/**Yoshida** già presenti altrove con nomi diversi (non omonimia). **Aoki Hideki** e **Sugimoto Hideki** condividono il solo nome — ammesso.*
 
 ### Q.E.D.
 Aikawa Daichi · Aikawa Shinobu · Fukami Ryōsuke · Hayakawa Tatsuya (notevole) · Hibino Shōzō · Kamogawa Mitsue · Kamogawa Takumi · Kuze Norio · Kuze Wataru · Makimura Sadao · Mizuno Itsuki · Mizuno Kaho · Mizuno Kōichi · Mizuno Sanae · Nishimura Sae · Ogata Ken · Ōhara Nobuyuki · Seki Tadashi (il killer) · Seki Tomiko · Seki Torazō · Tachibana Jun · Todoroki Isamu · Tsujimura Hiroshi · Tsujimura Keiko · Tsujimura Manabu

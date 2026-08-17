@@ -137,7 +137,7 @@ Il problema è tua madre.
 
 **Sato Michiko** non ha mai accettato che tu facessi il poliziotto. "Uno spreco," dice. "Con la tua laurea potevi lavorare in un'azienda vera. Guadagnare bene. Trovare una brava ragazza."
 
-Tuo zio **Tanaka Jiro** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. Tua madre non smette di ripetere che "lo zio ti aspetta".
+Tuo zio **Tanaka Jirō** ha un'azienda di import-export. Niente di entusiasmante, ma paga bene. Tua madre non smette di ripetere che "lo zio ti aspetta".
 
 ---
 

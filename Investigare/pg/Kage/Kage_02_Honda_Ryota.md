@@ -1,5 +1,5 @@
 # KAGE — HONDA RYOTA
-## Il Debito · dossier GM · *usa `GENKAI_Kage.md`*
+## Il Gioco d'Azzardo · dossier GM · *usa `GENKAI_Kage.md`*
 
 > **SOLO PER IL GM.** Ogni copione ha due parti da consegnare: **✂️ AL GIOCATORE-PNG** (chi interpreta il problema — recita per sottintesi, non conosce i segreti) e **✂️ AL GIOCATORE DI HONDA** (così sa di cosa si sta parlando davvero). La sezione **🎬 REGIA** resta tua.
 

@@ -866,7 +866,7 @@ PG_04 = {
     "senmon_3_nome": "Medicina",
     "senmon_3_chiave": "Lucidità",
     "senmon_3_desc": "Anatomia, traumi, referti. Il linguaggio del medico legale non ha segreti per te.",
-    "chi_sei": "Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta. Il problema è tua madre: Sato Michiko non ha mai accettato che tu facessi il poliziotto. Uno spreco, dice. Tuo zio Tanaka Jiro ha un'azienda di import-export — e tua madre non smette di ripetere che lo zio ti aspetta.",
+    "chi_sei": "Sei il più giovane della squadra. Brillante, laureato con lode in chimica forense, pieno di entusiasmo. Sei quello che lavora fino a tardi, che controlla tre volte, che non si arrende finché non trova la risposta. Il problema è tua madre: Sato Michiko non ha mai accettato che tu facessi il poliziotto. Uno spreco, dice. Tuo zio Tanaka Jirō ha un'azienda di import-export — e tua madre non smette di ripetere che lo zio ti aspetta.",
     "problema_titolo": "LA MADRE",
     "problema_testo": "Tua madre chiama. Spesso. A volte in centrale. È urgente, dice alla segretaria. Non è mai urgente. Vuole sapere se hai ripensato al lavoro dello zio, quando ti sposi, perché sprechi la tua vita. Non urla, non minaccia — usa il senso di colpa come un'arma di precisione. E non puoi riattaccare in faccia a tua madre — non in Giappone.",
     "png_nome": "SATO Michiko",

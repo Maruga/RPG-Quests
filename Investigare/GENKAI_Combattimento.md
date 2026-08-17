@@ -51,9 +51,9 @@ Il combattimento procede a **scambi**. A ogni scambio, **tutti i coinvolti tiran
 | Un'esplosione, il caos | **Lucidità o Distacco** | buttarti via, o la freddezza di chi si defila |
 
 > **Esempio — tre scambi** *(PG: Lucidità 7, pistola in mano · PNG: Lucidità 6, pistola in mano — sotto il fuoco si difende su Lucidità)*
-> **Scambio 1** — PG tira 2 e 5 (iniziativa 2+1=3), PNG tira 4 e 3 (iniziativa 3+1=4): agisce il PG. Attacco: somma 7 ≤ Lucidità 7 → scarto 0, +3 pistola = 3 in arrivo. Il PNG difende con la sua somma: 7 > Lucidità 6 → fallisce, assorbe zero: **prende 3**. Ha subito danno: la sua azione salta.
-> **Scambio 2** — PG 1 e 5 (iniziativa 1+1=2), PNG 2 e 2 (iniziativa 2+1=3): ancora il PG. Somma 6 ≤ 7 → scarto 1, +3 = 4 in arrivo. Il PNG difende: somma 4 ≤ Lucidità 6 → scarto 2, assorbe 2: **prende 2**.
-> **Scambio 3** — PG 3 e 4 (iniziativa 3+1=4), PNG 2 e 3 (iniziativa 2+1=3): **agisce il PNG**. Attacco: somma 5 ≤ Lucidità 6 → scarto 1, +3 = 4 in arrivo. Il PG difende: somma 7 ≤ Lucidità 7 → scarto 0, assorbe zero: **prende 4**. Ora è lui ad aver perso l'azione.
+> **Scambio 1** — PG tira 2 e 5 (iniziativa 2+2=4), PNG tira 4 e 3 (iniziativa 3+2=5): agisce il PG. Attacco: somma 7 ≤ Lucidità 7 → scarto 0, +3 pistola = 3 in arrivo. Il PNG difende con la sua somma: 7 > Lucidità 6 → fallisce, assorbe zero: **prende 3**. Ha subito danno: la sua azione salta.
+> **Scambio 2** — PG 1 e 5 (iniziativa 1+2=3), PNG 2 e 2 (iniziativa 2+2=4): ancora il PG. Somma 6 ≤ 7 → scarto 1, +3 = 4 in arrivo. Il PNG difende: somma 4 ≤ Lucidità 6 → scarto 2, assorbe 2: **prende 2**.
+> **Scambio 3** — PG 3 e 4 (iniziativa 3+2=5), PNG 2 e 3 (iniziativa 2+2=4): **agisce il PNG**. Attacco: somma 5 ≤ Lucidità 6 → scarto 1, +3 = 4 in arrivo. Il PG difende: somma 7 ≤ Lucidità 7 → scarto 0, assorbe zero: **prende 4**. Ora è lui ad aver perso l'azione.
 
 ---
 
@@ -67,26 +67,26 @@ Ogni arma ha il suo **attributo**, due **velocità** (estrazione: sfoderarla · 
 | **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | 1 | 1 | — | 1-2 (GM) | no | 1 |
 | **Coltello** | Pazienza | 2 | 1 | — | 2 | no | 1 |
 | **Manganello** (keibō 警棒) | Silenzio | 2 | 1 | — | 2 | no | 1 |
-| **Pistola / revolver** | Lucidità | 3 | 1 | 4 | 3 | sì* | 3 |
+| **Pistola / revolver** | Lucidità | 3 | 2 | 4 | 3 | sì* | 3 |
 | **Fucile** (pompa / caccia) | Distacco | 4 | 2 | 5 | 4 | no | 1 |
 | **Mitragliatore leggero** | Distacco | 4 | 2 | 5 | 4 | sì | 9 |
 | **Mitragliatore pesante** | Distacco | 5 | 3 | 6 | 5 | sì | 9 |
 | **Fucile di precisione** | Pazienza | 5 | 3 | 5 | 5 | no | 1 |
 | **Granata** | Presenza | 2 | 2 | — | 4 (area) | no | 1 |
 
-- **Le velocità si sommano al dado d'iniziativa**: pistola nella fondina = dado basso +3 (estrai e spari nello stesso scambio); pistola in mano = +1. Il coltello sfoderato (1) batte la pistola nella fondina (3); la pistola in mano (1) batte il coltello da sfoderare (2)
+- **Le velocità si sommano al dado d'iniziativa**: pistola nella fondina = dado basso +3 (estrai e spari nello stesso scambio); pistola in mano = +2. Il coltello sfoderato (1) batte la pistola nella fondina (3) — e anche quella in mano (2): la lama è più rapida del grilletto non ancora puntato. La pistola torna davanti quando è **puntata** (*Sotto Tiro*: velocità 0)
 - **Ricaricare è come sfoderare**: l'azione combinata "ricarico e sparo" usa la velocità di **Ricarica** (pistola: dado basso +4). Perdi tempo — e si sente
 - **Fucile di precisione**: richiede la Senmon *Tiro di precisione* 1+ (o un passato militare). Senza, lo usi come un fucile da caccia che non conosci: Distacco, +2 alla somma
 - **Armi improvvisate** (*): l'attributo lo decide il GM dalla scena (di norma Presenza — l'impeto). Il combattimento in casa è il caso tipico di GENKAI: la colluttazione non voluta, la bottiglia afferrata al volo, la sedia alzata per tenere a distanza
 - **Raffica pistola** (*): può fare fuoco di soppressione, ma svuota il caricatore — dopo, va **ricaricata**
 
-**Colpi multipli** (dove Max colpi > 1): puoi dichiarare 2 o 3 colpi nello scambio. Ogni colpo è un **tiro 2d6 separato**, con la propria iniziativa (dado basso + vel. uso) — e **tutti** i colpi della sequenza prendono il malus: **+2 alla somma se dichiari due colpi, +3 se tre**. I colpi si intercalano con le azioni altrui in ordine d'iniziativa; **se prendi danno, la sequenza si interrompe** — i colpi restanti sono persi (salvo *Stringere i Denti*: ogni colpo incassato, un punto).
+**Colpi multipli** (dove Max colpi > 1): puoi dichiarare 2 o 3 colpi nello scambio, con **un solo tiro di 2d6** per tutta la sequenza. **Il tempo si somma**: il primo colpo esce a dado basso + velocità d'uso, ogni colpo successivo **aggiunge di nuovo il tempo dell'arma** (pistola: 1° colpo a +2, 2° a +4, 3° a +6). **La fretta si paga**: **+2 alla somma se dichiari due colpi, +3 se tre** — ma il malus **cala di 1 a ogni colpo dopo il primo**: il primo colpo ti traccia la traiettoria (se plausibile — il bersaglio è ancora lì, giudica il GM). I colpi si intercalano con le azioni altrui in ordine d'iniziativa; **se prendi danno, la sequenza si interrompe** — i colpi restanti sono persi (salvo *Stringere i Denti*: ogni colpo incassato, un punto).
 
-> **Esempio**: il PG (Lucidità 7, pistola in mano) dichiara **tre colpi** su un sospettato in fuga — +3 a ogni somma.
-> Colpo 1: tira 2 e 3 → iniziativa 3, somma 2+3+3 = 8 > 7 → **manca**.
-> Colpo 2: tira 1 e 3 → iniziativa 2, somma 1+3+3 = 7 = 7 → colpito, scarto 0: **3 danni**.
-> Colpo 3: tira 1 e 2 → iniziativa 2, somma 1+2+3 = 6 < 7 → scarto 1: **4 danni**.
-> Se tra un colpo e l'altro il sospettato avesse risposto (iniziativa più bassa) e l'avesse **colpito**, la sequenza finiva lì.
+> **Esempio**: il PG (Lucidità 7, pistola in mano) dichiara **tre colpi** su un sospettato in fuga. Un tiro solo: **1 e 4**, somma 5 — malus +3, che cala a ogni colpo.
+> Colpo 1: iniziativa 1+2 = 3, tiro 5+3 = 8 > 7 → **manca**.
+> Colpo 2: iniziativa 1+4 = 5, tiro 5+2 = 7 = 7 → colpito, scarto 0: **3 danni**.
+> Colpo 3: iniziativa 1+6 = 7, tiro 5+1 = 6 < 7 → scarto 1: **4 danni**.
+> La sequenza si aggiusta da sola: il primo manca e traccia, il terzo morde. Se tra un colpo e l'altro il sospettato avesse risposto (iniziativa più bassa) e l'avesse **colpito**, la sequenza finiva lì.
 
 ---
 
@@ -124,11 +124,24 @@ Ogni cosa che fai in uno scambio ha una **velocità**, come le armi: iniziativa 
 
 **Azione o difesa**: raggiungere una copertura è un'**azione** — guadagni l'Assorbe, coi tempi qui sopra. Buttarsi *mentre ti sparano* è la normale **difesa** (la somma che assorbe): non è un'azione e non ha velocità. Una dichiarazione vale una delle due cose — il GM chiede quale.
 
+### Fuori Tempo — *regola avanzata (opzionale)*
+
+**Lo scambio finisce al 9.** Un'azione singola si completa sempre — il tempo per una cosa c'è. Ma quando vuoi **esagerare** — impilare più manovre in uno scambio: *ricarico e sparo*, *estraggo e colpisco*, *mi alzo, estraggo e sparo* — il tempo entra in gioco: se la tua iniziativa (dado basso + velocità, malus compresi) **supera 9**, in questo scambio riesci a fare **solo la prima manovra**. Il resto **sconfina**: si completa **nello scambio dopo**, dove la tua iniziativa è **lo scarto oltre il 9** (fai 11 → agisci a 2) — il gesto era già a metà, non lo stai ricominciando. **Non ritiri i dadi**: il tiro resta quello dello scambio prima — quella somma fa la tua azione (e la tua difesa, se serve) — e **non puoi cambiare nulla**: stessa manovra, stesso bersaglio. E vale la regola di sempre: se prima del tuo momento subisci danno, ciò che restava è perso. **Sconfinare è una scelta**: puoi invece rinunciare a ciò che resta — il colpo di troppo è perso — e nello scambio dopo **ritiri i dadi**, libero di fare altro. Vale anche per i colpi multipli: il colpo che sfora il 9 sconfina o si lascia cadere, decide il giocatore.
+
+- **La velocità della combinata è la somma delle manovre**; l'attacco finale non aggiunge la propria — è compreso nell'ultima (è la regola già in tabella: estrai-e-spari = 3, ricarichi-e-spari = 4)
+- **La situazione può rallentarti**: il GM può assegnare **malus di velocità** — sei a terra (**+1**), ti stai riprendendo da un colpo (**+1/+2**)… Si sommano all'iniziativa e contano per il tetto del 9
+- **Non tutte le ricariche sono un gesto solo**: la velocità di Ricarica in tabella è il **cambio di caricatore** — e ogni arma ha il suo tempo. Il **revolver** si carica un colpo alla volta nel tamburo: è un'**operazione lunga** (velocità 5–6, la fissa il GM come per le azioni lente). Sotto il fuoco, spesso, è tempo che non c'è
+- **La mira compra tempo** *(sostituisce la manovra Mirare)*: sul colpo **mirato** (pistole e fucili) aggiungi velocità a scelta — **ogni +2 = −1 alla somma**, massimo **−3** (dentro il tetto −4). Sforare il 9, qui, è il mestiere: il colpo parte nello scambio dopo, allo scarto. Puoi anche **mirare senza sparare**: a mira completata sei *Sotto Tiro* col bonus in canna — spari quando vuoi, a iniziativa pura, col tiro dello scambio in cui scatti; regge finché il bersaglio non cambia posizione e la mira non decade (danno, movimento)
+
+> **Esempio**: sei finito a terra e vuoi tutto subito — *mi alzo (2), estraggo e sparo (3)*: velocità 5. Tiri 5 e 6: iniziativa 5+5 = **10, fuori tempo** — in questo scambio ti rialzi e basta; estrazione e colpo sconfinano: nello scambio dopo spari a iniziativa **1** (lo scarto: 10−9), stesso bersaglio, stessa somma — l'**11** già tirato, che su Lucidità 7 è un colpo che nasce sprecato. Il concreto che ti resta: sei in piedi, arma in pugno. Rialzarsi e basta, da azione singola, riusciva comunque. *Estrarre e sparare restando a terra* era velocità 3 +1 (a terra) = 4: fuori tempo solo col doppio 6.
+
+> **Esempio — il cecchino**: già in posizione, fucile di precisione in mano (uso 3), mira piena: velocità 3+6 = **9** — con qualunque dado sfora: il colpo parte **nello scambio dopo**, a iniziativa = il dado basso, con **−3** sulla somma già tirata. Tira 2 e 4: nello scambio dopo, a iniziativa 2, somma 6−3 = 3 su Pazienza 8 → scarto 5, +5 d'arma: **10 in arrivo**. Tardi, ma pesante.
+
 ---
 
 ## Manovre
 
-**MIRARE** *(pistole e fucili)* — tiri lo scambio normalmente; quando tocca a te, dichiari che **miri** invece di sparare. Dallo scambio dopo hai **−1 alla somma**; puoi mirare al massimo **2 scambi** (−2). **Mirare implica stare fermi**: se ti muovi o devi difenderti da un colpo, la concentrazione è persa — nessuno mira camminando. Chi mira ha anche l'arma **pronta** sul bersaglio: sparare dal mirino è a **iniziativa pura** (vedi *Sotto Tiro*).
+**MIRARE** *(pistole e fucili)* — tiri lo scambio normalmente; quando tocca a te, dichiari che **miri** invece di sparare. Dallo scambio dopo hai **−1 alla somma**; puoi mirare al massimo **2 scambi** (−2). **Mirare implica stare fermi**: se ti muovi o devi difenderti da un colpo, la concentrazione è persa — nessuno mira camminando. Chi mira ha anche l'arma **pronta** sul bersaglio: sparare dal mirino è a **iniziativa pura** (vedi *Sotto Tiro*). *(Col modulo avanzato **Fuori Tempo** questa manovra è sostituita: la mira si compra col tempo — vedi il box.)*
 
 **SOTTO TIRO (azione pronta)** — l'arma è già in posizione sul bersaglio: la pistola spianata sul sospetto (*«Polizia! Fermo!»*), il coltello alla gola, il cecchino col mirino fermo. Colpire non richiede più tempo — devi solo premere il grilletto: **iniziativa = dado basso puro** (velocità 0). Lo stato si assume come la mira — quando tocca a te, dichiari che punti l'arma sul bersaglio invece di attaccare — oppure ce l'hai già, se la scena nasce così: l'arresto, l'ostaggio, l'appostamento. Regge finché resti fermo sul bersaglio: se **subisci danno**, o il bersaglio esce dalla linea, va riassunto. Quando scatti, l'attacco è normale (somma vs attributo dell'arma) e il bersaglio **difende normalmente**: il vantaggio è arrivare quasi sempre primo, non il colpo garantito. A discrezione del GM, come tutto qui dentro.
 
@@ -277,12 +290,28 @@ DIFESA su Lucidità (fuoco) | Pazienza (lame, pugni) | Distacco (defilarsi)
 VELOCITÀ: estrazione (sfoderare) / uso (in mano) / ricarica (= sfoderare)
 AZIONI: velocità come le armi — 0 SOLO l'azione pronta (il grilletto),
       1 buttarsi/copertura a portata, 2 un movimento, 3-4 composta, 5-6 operazione
+FUORI TEMPO (avanzata): combinata = velocità sommate (attacco finale compreso)
+      malus di velocità del GM (a terra +1, riprendersi da un colpo +1/+2)
+      iniziativa OLTRE 9 = ora solo la prima manovra, il resto SCONFINA:
+      si completa nello scambio dopo a iniziativa = scarto (11 → 2),
+      SENZA ritirare i dadi (vale la somma già tirata), nulla si cambia;
+      oppure RINUNCI al resto e nello scambio dopo ritiri, libero
+      danno subito prima = perso. Azione singola: si completa sempre
+      ricariche (avanzata): in tabella = cambio caricatore, ogni arma
+      il suo tempo; revolver un colpo alla volta = operazione lunga (GM)
+      mira (avanzata, sostituisce MIRARE): +2 di velocità = -1 somma,
+      max -3 (tetto -4); sforare è il mestiere: il colpo mirato parte
+      spesso lo scambio dopo; mirare senza sparare = Sotto Tiro col
+      bonus, finché il bersaglio resta lì
 ARMI: Pugno 1/1/- d1 (Presenza) | Improvvisata 1/1/- d1-2
       Coltello 2/1/- d2 (Pazienza) | Manganello 2/1/- d2 (Silenzio)
-      Pistola 3/1/4 d3 (Lucidità, 3 colpi) | Fucile 4/2/5 d4 (Distacco)
+      Pistola 3/2/4 d3 (Lucidità, 3 colpi) | Fucile 4/2/5 d4 (Distacco)
       Mitr.leggero 4/2/5 d4 raffica | Mitr.pesante 5/3/6 d5 raffica
       Precisione 5/3/5 d5 (Senmon!) | Granata 2/2/- d4 area (Presenza)
-COLPI MULTIPLI: ogni colpo un tiro, +2/+3 a tutte le somme;
+COLPI MULTIPLI: un tiro solo per la sequenza; ogni colpo dopo il primo
+      aggiunge di nuovo il tempo dell'arma (pistola: dado +2/+4/+6)
+      malus +2 (due colpi) / +3 (tre), cala di 1 a ogni colpo dopo
+      il primo (il primo traccia la traiettoria, se plausibile)
       danno subito = sequenza interrotta (salvo STRINGERE I DENTI)
 
 ASSORBE (fisso, sempre): giubbotto 3 | tavolo 1 | muro 5

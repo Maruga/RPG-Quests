@@ -29,6 +29,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Pg/Index">I miei personaggi</a>
                         </li>
+                        @* segnaposto in costruzione: si mostra solo a chi è loggato (promemoria di lavoro),
+                           il pubblico non deve sbattere su un cantiere dietro login *@
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schede complete</a>
                             <ul class="dropdown-menu">
@@ -37,6 +41,7 @@
                                 <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="distretto">🏢 Scheda distretto completa</a></li>
                             </ul>
                         </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>

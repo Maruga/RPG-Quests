@@ -11,7 +11,71 @@
 
 ## Da applicare
 
-*(nessuna voce in sospeso)*
+### 2026-08-16 · COMBATTIMENTO → REGOLE + WIZARD · Pistola: velocità d'uso 1 → 2
+
+Decisione utente (sessione dedicata al solo `GENKAI_Combattimento.md`): la pistola usata **normalmente**
+(in mano, non puntata) passa a **vel. uso 2** (era 1); **puntata** resta il *Sotto Tiro* già in regola
+(velocità 0, iniziativa = dado basso puro). Estrazione 3, ricarica 4, danno 3: invariati.
+Aggiornati in `GENKAI_Combattimento.md`: tabella armi, esempio dei tre scambi, esempio colpi multipli,
+frase illustrativa delle velocità, riepilogo rapido (`3/2/4`).
+**Da allineare da chi ha competenza sui file:**
+- **REGOLE** — `pg/PG_01..05_*.md`: riga New Nambu M60 «vel. 3/1» → «**vel. 3/2**» (5 schede);
+  `pg/genera_schede_pg.py` (stessa stringa nel dict) e DOCX/`SCHEDE_PG_TUTTE.docx` alla prossima rigenerazione.
+- **WIZARD** — `Wizard/proposta_scheda/scheda-pg.html` (riga New Nambu 3/1);
+  `Avventura Tanto Rumore/SCONTRO_FOGLIO_TAVOLO.docx` (foglio-tavolo del combattimento: verificare le velocità pistola).
+
+**Aggiornamento 2026-08-17, stesso giro (sempre solo `GENKAI_Combattimento.md`):**
+- **Colpi multipli riscritti (regola base)**: ora **un solo tiro di 2d6** per la sequenza; ogni colpo dopo
+  il primo aggiunge di nuovo il tempo dell'arma (pistola: dado +2/+4/+6); malus fretta **+2/+3 a scalare
+  −1 dal secondo colpo** (il primo traccia la traiettoria, se plausibile). Gli esiti dell'esempio validato
+  in review restano identici (manca · 3 danni · 4 danni). → Se il foglio-tavolo Bakuon riporta i colpi
+  multipli, va allineato anche lui.
+- **Nuovo modulo avanzato opzionale «Fuori Tempo»** (tetto 9 dello scambio, sconfinamento con scarto,
+  malus di velocità, mira che compra tempo, ricariche differenziate): vive SOLO nel manuale combattimento,
+  nessun altro file lo riporta — informativa.
+**Stato parziale 2026-08-17 (firmato WIZARD):**
+- ✅ **WIZARD applicato**: `Wizard/proposta_scheda/scheda-pg.html` (New Nambu 3/1 → **3/2**) e
+  `Avventura Tanto Rumore/SCONTRO_FOGLIO_TAVOLO.docx` **rigenerato** (pistola 3/2/4 + 0 puntata,
+  nota velocità col manganello che batte la pistola in mano, colpi multipli riscritti con la regola
+  nuova — un tiro solo, tempi +2/+4/+6, malus a scalare — esempio coi numeri del manuale).
+- ⏳ **Resta a REGOLE**: `pg/PG_01..05_*.md` (riga New Nambu «vel. 3/1» → «3/2»),
+  `pg/genera_schede_pg.py` e la rigenerazione di `SCHEDE_PG_TUTTE.docx`.
+
+### 2026-08-16 · WIZARD → REGOLE · Nuova avventura «Bakuon — Tanto Rumore per Nulla» (ex «L'era glaciale del lavoro»)
+
+Su ordine dell'utente, l'avventura del wizard è stata **rinominata «Bakuon — Tanto Rumore per Nulla»**
+(bakuon 爆音 = il rombo delle moto; scelta utente in due passi nello stesso giorno: prima «Tanto Rumore», poi
+titolo definitivo con sottotitolo) e ha ora la sua cartella: **`Avventura Tanto Rumore/`** (il nome-cartella
+resta quello; struttura tipo Sake: `Storia Completa.md`,
+`PNG/` 12 schede, `Location/` 5, `handout/` snapshot, `Token/`, `Immagini/`, dossier e stampabili).
+- Fonte di verità: il **wizard** (caso `C3C15FF7…`, Titolo aggiornato nel DB — solo quella colonna, backup fatto);
+  la cartella si rigenera con `esporta_da_wizard.py`.
+- La vecchia `Wizard/era_glaciale_lancio/` non esiste più: contenuto spostato nella cartella avventura (storico compreso).
+- **`GENKAI_Registro_Nomi.md` aggiornato**: sezione *Tanto Rumore* con i 12 nomi; controllo omonimie fatto, nessuna piena.
+- Restano da compilare nel wizard 5 schede PNG (Aoki, Sugimoto, Yoshida, Tanaka Takayuki, Suzuki) e la deposizione di Matsui.
+- **ANNO DEFINITIVO: 1997** (l'anno canonico GENKAI; in giornata si era passati per 1987 e 1984,
+  tutto annullato ripartendo dal backup del caso originale). Date **+1 giorno** per salvare i giorni
+  della settimana: il fatto è **sabato 24 maggio 1997**, giornali 25-27/5. Pocket bell coi codici
+  goroawase RIPRISTINATO (nel 1997 è perfetto d'epoca); LANCIO con notizie vere del maggio 1997
+  (Kabila, Deep Blue, Hong Kong, IVA 5%). Il 1997 chiude da solo: etichetta «kyoto-1997» ora esatta,
+  età dei PG pregenerati giuste, moda anni '90 al suo posto. *Il Giudice* è aprile 1997: casi
+  consecutivi della stessa squadra.
+- Nulla da applicare lato REGOLE: è una segnalazione di esistenza/percorsi. **STATO: informativa.**
+
+### 2026-08-14 · WIZARD → REGOLE · Tre ritocchi in `pg/` (ordine diretto dell'utente) + Word unico
+
+Su ordine dell'utente, la sessione WIZARD ha toccato tre file di competenza REGOLE:
+1. **`pg/PG_04_Sato_Yuki.md`** — «Tanaka Jiro» → «Tanaka **Jirō**» (macron, allineato al Kage_04);
+2. **`pg/genera_schede_pg.py`** — stessa correzione nel dict di Sato (chi_sei);
+3. **`pg/Kage/Kage_02_Honda_Ryota.md`** — titolo «Il Debito» → «**Il Gioco d'Azzardo**»
+   (allineato al titolo del problema sulla scheda PG, scelta utente).
+Creato inoltre **`pg/SCHEDE_PG_TUTTE.docx`** — le 5 ANTEPRIMA unite in un Word solo
+(15 pagine, «Jirō» già corretto dentro): è il file su cui l'utente lavorerà visivamente.
+
+**Resta a REGOLE**: quando rigenerate le ANTEPRIMA col generatore, la `ANTEPRIMA_Sato_Yuki.docx`
+prenderà il macron da sola (il dict è già corretto). Nient'altro da fare.
+
+**Stato: DA PRENDERE ATTO (le modifiche sono già applicate).**
 
 ---
 

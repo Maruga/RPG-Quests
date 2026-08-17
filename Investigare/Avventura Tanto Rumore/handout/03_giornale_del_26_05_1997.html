@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Giornale del 26/05/1997</title>
+<style>
+/* ============================================================
+   Tema CARTE degli handout GENKAI — Kyoto, fine anni '90.
+   Curato a mano: l'AI riempie il CONTENUTO con queste classi,
+   la grafica (foglio A4, intestazioni, stampa) la dà questo file.
+   Usato sia nell'anteprima/editor sia nella stampa (window.print).
+   ============================================================ */
+
+/* la carta riempie la pagina; il margine del testo lo dà il padding del foglio (vedi @media print) */
+@page { size: A4; margin: 0; }
+
+.ho-foglio {
+    --carta: #f6f3ea;
+    --inchiostro: #1c1a17;
+    --rosso: #8b1a1a;
+    --grigio: #6a655c;
+    --bordo: #cfc7b5;
+    /* foglio A4 vero: 210×297mm. Parte come una pagina piena; se il contenuto eccede, cresce (più pagine A4 in stampa) */
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 22mm 20mm;
+    background: var(--carta);
+    color: var(--inchiostro);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    line-height: 1.55;
+    box-shadow: 0 3px 16px rgba(0,0,0,.18);
+    position: relative;
+}
+
+/* intestazione bilingue (organo/ente + sottotitolo giapponese) */
+.ho-intestazione { text-align: center; border-bottom: 2px solid var(--inchiostro); padding-bottom: 8px; margin-bottom: 14px; }
+.ho-intestazione .ente { font-family: Arial, "Helvetica Neue", sans-serif; font-size: 13px; letter-spacing: 3px; font-weight: bold; text-transform: uppercase; }
+.ho-intestazione .ente-jp { font-size: 12px; color: var(--grigio); letter-spacing: 2px; margin-top: 2px; }
+.ho-intestazione .tipo-doc { display: inline-block; margin-top: 8px; padding: 3px 14px; border: 1px solid var(--inchiostro); font-size: 13px; letter-spacing: 2px; font-weight: bold; }
+
+/* metadati (n° pratica, data, oggetto…) come griglia etichetta/valore */
+.ho-meta { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 11px; margin-bottom: 14px; }
+.ho-meta dt { color: var(--grigio); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+.ho-meta dd { font-weight: bold; }
+
+.ho-foglio h1, .ho-foglio h2, .ho-foglio h3 { font-family: Arial, sans-serif; }
+.ho-foglio h2 { font-size: 14px; letter-spacing: 1px; margin: 14px 0 6px; border-left: 3px solid var(--rosso); padding-left: 8px; }
+.ho-foglio h3 { font-size: 12px; margin: 10px 0 4px; }
+.ho-foglio p { margin: 6px 0; }
+.ho-foglio strong { font-weight: bold; }
+
+/* tabelle (tabulati, registri, estratti) */
+.ho-foglio table { width: 100%; border-collapse: collapse; font-size: 11px; margin: 8px 0; }
+.ho-foglio th, .ho-foglio td { border: 1px solid var(--bordo); padding: 4px 7px; text-align: left; vertical-align: top; }
+.ho-foglio th { background: rgba(0,0,0,.05); text-transform: uppercase; letter-spacing: .5px; font-size: 10px; }
+.ho-foglio tr:nth-child(even) td { background: rgba(0,0,0,.02); }
+
+/* note a margine / analisi (l'occhio di chi ha già letto) */
+.ho-nota { border-left: 2px solid var(--grigio); padding: 3px 0 3px 10px; margin: 6px 0; font-size: 11px; color: var(--grigio); font-style: italic; }
+.ho-firma { margin-top: 22px; text-align: right; }
+.ho-firma .riga { display: inline-block; border-top: 1px solid var(--inchiostro); padding-top: 3px; min-width: 45mm; text-align: center; font-size: 11px; }
+
+/* timbro tondo (CSS, sovrapponibile) */
+.ho-timbro { position: absolute; width: 34mm; height: 34mm; border: 2.5px solid var(--rosso); border-radius: 50%; color: var(--rosso); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 10px; font-weight: bold; letter-spacing: 1px; transform: rotate(-12deg); opacity: .75; padding: 4px; }
+
+/* ── varianti per TIPO ── */
+.ho-tabulato, .ho-registro { font-size: 11px; }
+.ho-lettera { font-family: "Georgia", "Times New Roman", serif; font-size: 13px; line-height: 1.7; }
+.ho-lettera .ho-intestazione { text-align: left; border-bottom-style: dotted; }
+.ho-menu { font-family: "Georgia", serif; }
+.ho-menu .ho-intestazione .ente { letter-spacing: 5px; }
+.ho-menu .voce { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--bordo); padding: 4px 0; }
+.ho-menu .voce .prezzo { font-weight: bold; white-space: nowrap; padding-left: 12px; }
+.ho-referto .ho-intestazione .ente { color: var(--rosso); }
+
+/* ── giornale: un quotidiano locale (finto), testata + titolo + colonne ── */
+.ho-giornale { font-family: "Georgia", "Times New Roman", serif; }
+.ho-giornale .ho-testata { text-align: center; border-bottom: 3px double var(--inchiostro); padding-bottom: 5px; margin-bottom: 3px; }
+.ho-giornale .ho-testata .ho-nome { font-family: "Times New Roman", Georgia, serif; font-size: 40px; font-weight: 900; letter-spacing: 1px; line-height: 1; }
+.ho-giornale .ho-testata .ho-nome-jp { font-size: 13px; letter-spacing: 8px; color: var(--grigio); margin-top: 2px; }
+.ho-giornale .ho-riga-data { display: flex; justify-content: space-between; border-top: 1px solid var(--inchiostro); border-bottom: 1px solid var(--inchiostro); padding: 3px 0; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.ho-giornale h1.ho-titolo { font-size: 27px; line-height: 1.12; text-align: center; margin: 6px 0 4px; font-weight: 800; }
+.ho-giornale .ho-catenaccio { text-align: center; font-style: italic; color: var(--grigio); font-size: 13px; margin: 0 0 12px; }
+.ho-giornale .ho-corpo { column-count: 2; column-gap: 16px; column-rule: 1px solid var(--bordo); text-align: justify; hyphens: auto; font-size: 12px; line-height: 1.55; }
+.ho-giornale .ho-corpo p { margin: 0 0 6px; }
+.ho-giornale .ho-corpo p:first-of-type::first-letter { font-size: 3em; font-weight: 700; float: left; line-height: .78; padding: 3px 5px 0 0; }
+.ho-giornale .ho-firma-art { font-weight: bold; font-style: italic; }
+.ho-giornale .ho-secondari { margin-top: 12px; border-top: 1px solid var(--bordo); padding-top: 8px; column-count: 2; column-gap: 16px; font-size: 10.5px; color: var(--grigio); }
+.ho-giornale .ho-secondari h3 { font-size: 12px; margin: 0 0 2px; color: var(--inchiostro); }
+/* trafiletto: articolo corto, colonna singola, titolo piccolo, niente capolettera */
+.ho-giornale.ho-trafiletto .ho-corpo { column-count: 1; }
+.ho-giornale.ho-trafiletto h1.ho-titolo { font-size: 18px; text-align: left; }
+.ho-giornale.ho-trafiletto .ho-corpo p:first-of-type::first-letter { font-size: inherit; font-weight: inherit; float: none; padding: 0; }
+
+/* ── giornale PAGINA COMPLETA: colonne + notizie di varie misure + foto + pubblicità ── */
+.ho-giornale .ho-pagina { column-count: 3; column-gap: 13px; column-rule: 1px solid var(--bordo); text-align: justify; hyphens: auto; font-size: 10.5px; line-height: 1.5; margin-top: 10px; }
+.ho-giornale .ho-pagina p { margin: 0 0 5px; }
+.ho-giornale .ho-pagina p.attacco::first-letter { font-size: 3em; font-weight: 700; float: left; line-height: .78; padding: 2px 4px 0 0; }
+/* notizie secondarie: titoletto + testo, non si spezzano tra le colonne */
+.ho-giornale .ho-art { break-inside: avoid; margin: 0 0 9px; border-top: 2px solid var(--inchiostro); padding-top: 4px; }
+.ho-giornale .ho-art h2 { font-size: 13px; font-weight: 800; margin: 0 0 2px; line-height: 1.15; border-left: 0; padding-left: 0; }
+.ho-giornale .ho-art h3 { font-size: 11px; font-weight: 700; margin: 0 0 1px; }
+.ho-giornale .ho-pagina .ho-firma-art { font-weight: bold; font-style: italic; font-size: 9.5px; }
+/* foto di cortesia: placeholder tratteggiato con didascalia (il GM può poi metterci un'immagine vera) */
+.ho-giornale .ho-foto { break-inside: avoid; margin: 0 0 9px; }
+.ho-giornale .ho-foto .ph { background: repeating-linear-gradient(45deg, #dcd6c7, #dcd6c7 7px, #d2cbba 7px, #d2cbba 14px); border: 1px solid var(--bordo); min-height: 52px; display: flex; align-items: center; justify-content: center; color: var(--grigio); font-size: 9px; letter-spacing: 2px; }
+.ho-giornale .ho-foto figcaption { font-size: 9px; color: var(--grigio); font-style: italic; padding-top: 2px; line-height: 1.3; }
+/* pubblicità finta: riquadro con marca inventata */
+.ho-giornale .ho-pub { break-inside: avoid; border: 2px solid var(--inchiostro); padding: 6px 5px; margin: 0 0 9px; text-align: center; }
+.ho-giornale .ho-pub .marca { font-weight: 900; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; line-height: 1.1; }
+.ho-giornale .ho-pub .slogan { font-size: 9.5px; font-style: italic; margin-top: 2px; }
+.ho-giornale .ho-pub .info { font-size: 8.5px; color: var(--grigio); margin-top: 3px; }
+
+/* immagini inserite dall'utente */
+.ho-foglio img { max-width: 100%; height: auto; display: block; margin: 8px auto; }
+.ho-foglio img.ho-piccola { max-width: 40mm; margin: 8px 0; }
+
+/* ── stampa: la carta riempie la pagina, MA il testo tiene il suo margine interno (padding) ── */
+@media print {
+    body { background: #fff !important; }
+    .ho-no-stampa { display: none !important; }
+    .ho-foglio { box-shadow: none; margin: 0; width: auto; min-height: 100vh; padding: 22mm 20mm; }
+}
+
+body { margin: 0; background: #777; padding: 24px 8px; display: flex; justify-content: center; }
+@media print { body { background: #fff; padding: 0; } }
+</style>
+</head>
+<body>
+<div class="ho-foglio ho-giornale" contenteditable="true">
+
+  <div class="ho-testata">
+    <div class="ho-nome">RAKUYŌ SHINBUN</div>
+    <div class="ho-nome-jp">洛陽新聞 · 京都市民の朝刊</div>
+  </div>
+
+  <div class="ho-riga-data">
+    <span>Lunedì 26 maggio 1997 — anno XLI, n. 3.812</span>
+    <span>Cronaca di Kyoto · ¥120</span>
+  </div>
+
+  <h1 class="ho-titolo">Studente di 21 anni ucciso dietro il bancone in un locale di Shimogyō</h1>
+  <p class="ho-catenaccio">Sabato sera, poco dopo le nove: un gruppo di giovani entra nello «SnakUp», la lite dura pochi istanti — poi le moto che ripartono nel buio. La polizia: «Indagini in corso, nessuna pista esclusa»</p>
+
+  <div class="ho-pagina">
+
+    <p class="attacco">Aveva ventun anni e studiava medicina. Faceva le sere dietro il bancone per pagarsi l'università. Yuta Shimada è morto sabato sera in un piccolo locale di Shimogyō-ku, lo «SnakUp», colpito al capo nel corso di un'aggressione durata, dicono i presenti, poco più di un istante.</p>
+
+    <p>Erano circa le nove e un quarto. Nel locale, secondo quanto riferito, non c'erano avventori: da quelle parti la serata comincia dopo le dieci. In sala si trovavano il giovane, il titolare e una dipendente. È allora che sarebbe entrato un gruppo di ragazzi — quattro o cinque, secondo la ricostruzione del proprietario — con una scusa: chiedevano da bere, dicevano di cercare qualcuno.</p>
+
+    <p>«Poi hanno cominciato a prendersela col ragazzo», ha raccontato il titolare, Kazuhiko Ishida, sessantenne, che gestisce il locale da anni. «I toni sono saliti, ho detto di calmarsi, non mi hanno guardato nemmeno. È durato un attimo: una confusione, un colpo, e Shimada era a terra dietro il bancone. Quando ho alzato la testa stavano già uscendo. Ho sentito le moto partire.» Alla domanda se fosse in grado di riconoscerli, l'uomo ha risposto di no: «Era buio fuori, è successo in fretta. Non li avevo mai visti prima».</p>
+
+    <p>La dipendente in servizio quella sera, Hiroko Chiba, si trovava nel retro a sistemare i vuoti. «Ho sentito entrare gente, voci giovani, sguaiate», ha riferito. «Poi i toni sono saliti e un colpo, sordo. Quando sono rientrata in sala loro stavano uscendo: ho visto le schiene e le moto che partivano. Le facce no.» È rimasta lei accanto al ragazzo mentre il titolare chiamava il 110. Per il giovane, dicono i soccorritori giunti pochi minuti dopo, non c'era già più nulla da fare.</p>
+
+    <p>Yuta Shimada era iscritto al secondo anno di medicina e viveva con la famiglia a Nakagyō-ku. «La sera lavorava in quel locale per pagarsi gli studi», ha detto la madre, Yasuhiro Shimada, ricevendoci sulla soglia di casa. «Non voleva pesare su di noi. Un bravo ragazzo, serio. Casa, scuola, lavoro: era così la sua vita. Ordinata.» Problemi, aggiunge, non ne aveva: «Non beveva, non frequentava brutta gente. Quei giovani con le moto, mai sentiti, mai visti prima. Perché mio figlio? Me lo spieghi lei». L'ultima volta che si erano parlati, il ragazzo le aveva detto che dopo gli esami sarebbe passato a pranzo a casa.</p>
+
+    <p>Il distretto di Shimogyō, cui è affidata l'inchiesta, non rilascia per ora dettagli. Fonti vicine agli inquirenti confermano soltanto che sono in corso accertamenti e che «nessuna pista viene esclusa». Nel quartiere, dove da mesi si segnalano nelle ore notturne passaggi rumorosi di gruppi in motocicletta, la notizia si è diffusa nel giro di poche ore. Davanti alla vetrina abbassata del locale, ieri mattina, qualcuno aveva lasciato un mazzo di fiori e una lattina di caffè.</p>
+
+    <p class="ho-firma-art">(Masaru Ikehata)</p>
+
+    <figure class="ho-foto">
+      <div class="ph">FOTO</div>
+      <figcaption>La serranda abbassata dello «SnakUp», nel vicolo di Shimogyō-ku, ieri mattina. Sulla soglia fiori e un caffè in lattina.</figcaption>
+    </figure>
+
+    <div class="ho-pub">
+      <div class="marca">SAKURA DENKI</div>
+      <div class="slogan">Videoregistratori, condizionatori, telefoni cordless. Rate a 12 mesi senza interessi.</div>
+      <div class="info">Shimogyō-ku, Karasuma-dōri sud · Tel. 075-341-2288 · Chiuso il mercoledì</div>
+    </div>
+
+    <div class="ho-art">
+      <h2>Metropolitana, dal 1° giugno cambia l'orario serale sulla linea Karasuma</h2>
+      <p>L'ufficio trasporti municipale ha comunicato la revisione delle corse serali sulla linea Karasuma: nei giorni feriali l'ultima partenza da Kyoto slitterà di undici minuti, mentre nei fine settimana saranno aggiunte due corse tra le 23 e mezzanotte. La misura, spiegano dall'ente, risponde alle richieste dei commercianti delle vie centrali, che da tempo lamentavano il rientro difficoltoso dei clienti dopo le ventitré.</p>
+      <p>I nuovi tabelloni verranno affissi nelle stazioni a partire da giovedì. Restano invariate le tariffe. Nelle prossime settimane si valuterà un'estensione analoga alle linee di superficie in direzione Fushimi.</p>
+    </div>
+
+    <div class="ho-art">
+      <h3>Pioggia in arrivo da mercoledì</h3>
+      <p>L'osservatorio cittadino segnala l'avvicinarsi del fronte stagionale: cieli coperti da martedì sera, precipitazioni moderate mercoledì e giovedì, temperature massime intorno ai 24 gradi. Consigliata prudenza sulle strade collinari a nord.</p>
+    </div>
+
+    <div class="ho-art">
+      <h3>Pallavolo, le liceali di Higashiyama in finale regionale</h3>
+      <p>Vittoria in tre set nella semifinale disputata sabato al palazzetto municipale. La finale è fissata per domenica prossima alle 14. L'istituto ha organizzato due pullman per i sostenitori: iscrizioni in segreteria entro venerdì.</p>
+    </div>
+
+    <figure class="ho-foto">
+      <div class="ph">FOTO</div>
+      <figcaption>Il mercato mattutino di Nishiki: da giugno tornano i banchi estivi lungo il tratto coperto.</figcaption>
+    </figure>
+
+    <div class="ho-art">
+      <h3>Restauro concluso al padiglione del parco municipale</h3>
+      <p>Terminati dopo sette mesi i lavori sul tetto in tegole del padiglione ottocentesco. Riapertura al pubblico sabato, con concerto della banda cittadina alle 15. Ingresso libero.</p>
+    </div>
+
+    <div class="ho-pub">
+      <div class="marca">RYOKUCHA MARUYAMA — dal 1921</div>
+      <div class="slogan">Sencha di prima raccolta. Confezioni regalo per l'estate, spedizioni in tutto il Kansai.</div>
+      <div class="info">Nakagyō-ku, Sanjō-dōri · Tel. 075-256-0714</div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
