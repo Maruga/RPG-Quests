@@ -5,13 +5,13 @@
 
 ## DATI BASE
 
-| Campo | Valore |
-|-------|--------|
-| **Nome completo** | Watanabe Hideo (渡辺 秀夫) |
-| **Ruolo** | Procuratore Pubblico Ministero, Procura della Repubblica (Kensatsuchō) |
-| **Grado** | 検事 Kenji (Procuratore) |
-| **Età** | 51 anni (nato ~1946) |
-| **Stato** | Vivo — AUTORITÀ ISTITUZIONALE TERZA |
+| Campo             | Valore                                                                 |
+| ----------------- | ---------------------------------------------------------------------- |
+| **Nome completo** | Watanabe Hideo (渡辺 秀夫)                                                 |
+| **Ruolo**         | Procuratore Pubblico Ministero, Procura della Repubblica (Kensatsuchō) |
+| **Grado**         | 検事 Kenji (Procuratore)                                                 |
+| **Età**           | 51 anni (nato ~1946)                                                   |
+| **Stato**         | Vivo — AUTORITÀ ISTITUZIONALE TERZA                                    |
 
 ---
 

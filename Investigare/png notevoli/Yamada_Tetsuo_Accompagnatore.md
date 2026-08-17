@@ -5,13 +5,13 @@
 
 ## DATI BASE
 
-| Campo | Valore |
-|-------|--------|
-| **Nome completo** | Yamada Tetsuo (山田 哲夫) |
-| **Ruolo** | Agente di polizia, accompagnatore e supporto operativo dei PG |
-| **Grado** | Junsa-buchō (巡査部長) — Sergente |
-| **Età** | 35 anni (nato ~1962) |
-| **Stato** | Vivo — SUPPORTO PG |
+| Campo             | Valore                                                        |
+| ----------------- | ------------------------------------------------------------- |
+| **Nome completo** | Yamada Tetsuo (山田 哲夫)                                         |
+| **Ruolo**         | Agente di polizia, accompagnatore e supporto operativo dei PG |
+| **Grado**         | Junsa-buchō (巡査部長) — Sergente                                 |
+| **Età**           | 35 anni (nato ~1962)                                          |
+| **Stato**         | Vivo — SUPPORTO PG                                            |
 
 ---
 

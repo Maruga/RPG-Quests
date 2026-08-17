@@ -5,13 +5,13 @@
 
 ## DATI BASE
 
-| Campo | Valore |
-|-------|--------|
-| **Nome completo** | Ito Daisuke (伊藤 大介) |
-| **Ruolo** | Responsabile della squadra scientifica sulla scena del crimine |
-| **Grado** | Kanshiki-kan, Classe 1 (鑑識官一級) — oltre 15 anni di servizio |
-| **Età** | 52 anni (nato ~1945) |
-| **Stato** | Vivo — SUPPORTO TECNICO |
+| Campo             | Valore                                                         |
+| ----------------- | -------------------------------------------------------------- |
+| **Nome completo** | Ito Daisuke (伊藤 大介)                                            |
+| **Ruolo**         | Responsabile della squadra scientifica sulla scena del crimine |
+| **Grado**         | Kanshiki-kan, Classe 1 (鑑識官一級) — oltre 15 anni di servizio     |
+| **Età**           | 52 anni (nato ~1945)                                           |
+| **Stato**         | Vivo — SUPPORTO TECNICO                                        |
 
 ---
 

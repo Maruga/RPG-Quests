@@ -5,13 +5,13 @@
 
 ## DATI BASE
 
-| Campo | Valore |
-|-------|--------|
-| **Nome completo** | Taniguchi Osamu (谷口 治) |
-| **Ruolo** | Commissario, Sezione Omicidi, Polizia Prefetturale di Kyoto |
-| **Grado** | Keishi (警視) — Commissario |
-| **Età** | 56 anni (nato ~1941) |
-| **Stato** | Vivo — SUPERIORE DEI PG |
+| Campo             | Valore                                                      |
+| ----------------- | ----------------------------------------------------------- |
+| **Nome completo** | Taniguchi Osamu (谷口 治)                                      |
+| **Ruolo**         | Commissario, Sezione Omicidi, Polizia Prefetturale di Kyoto |
+| **Grado**         | Keishi (警視) — Commissario                                   |
+| **Età**           | 56 anni (nato ~1941)                                        |
+| **Stato**         | Vivo — SUPERIORE DEI PG                                     |
 
 ---
 
