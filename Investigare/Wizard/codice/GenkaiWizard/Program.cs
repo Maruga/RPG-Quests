@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.HttpOverrides;
 using System.Security.Claims;
 using GenkaiWizard.Data;
 using GenkaiWizard.Services;
@@ -98,6 +99,10 @@ if (!string.IsNullOrWhiteSpace(googleId) && !string.IsNullOrWhiteSpace(googleSec
     });
 }
 
+// email di servizio (password dimenticata, avvisi): attive solo se la posta è configurata
+if (!string.IsNullOrWhiteSpace(builder.Configuration["Posta:Smtp:Host"]))
+    builder.Services.AddTransient<Microsoft.AspNetCore.Identity.UI.Services.IEmailSender, GenkaiWizard.Services.PostaSmtp>();
+
 builder.Services.AddRazorPages();
 
 // ── Servizi wizard ──
@@ -108,6 +113,14 @@ builder.Services.AddHttpClient<AnthropicService>();
 builder.Services.AddHttpClient<ImmaginiService>();
 
 var app = builder.Build();
+
+// ── dietro Cloudflare l'origine parla http: senza questo l'app genera URL http://
+//    (es. il redirect di «Accedi con Google» → redirect_uri_mismatch). Ci fidiamo
+//    dell'X-Forwarded-Proto del proxy per sapere che il visitatore è in https. ──
+var inoltro = new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.XForwardedProto };
+inoltro.KnownNetworks.Clear();   // il proxy è Cloudflare, non il loopback:
+inoltro.KnownProxies.Clear();    // senza svuotare questi, l'header verrebbe ignorato
+app.UseForwardedHeaders(inoltro);
 
 // Migrazioni automatiche all'avvio (Identity + Progetti).
 // Se falliscono NON si abbatte il sito: l'errore finisce nel log dell'applicazione.

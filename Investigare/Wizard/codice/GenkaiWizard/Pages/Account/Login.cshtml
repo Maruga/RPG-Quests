@@ -1,5 +1,6 @@
 @page
 @model GenkaiWizard.Pages.Account.LoginModel
+@inject Microsoft.Extensions.Configuration.IConfiguration Config
 @{
     ViewData["Title"] = "Accedi";
 }
@@ -42,8 +43,11 @@
 
             <p class="acc-minori">
                 <a asp-area="" asp-page="/Account/Registrati">Crea un account</a>
-                @* «Password dimenticata» tolto finché non c'è un SMTP vero: senza IEmailSender
-                   la pagina fingeva di mandare l'email e non partiva niente (porta finta) *@
+                @* il recupero password compare solo se il server sa davvero spedire email *@
+                @if (!string.IsNullOrWhiteSpace(Config["Posta:Smtp:Host"]))
+                {
+                    <text> · </text><a asp-area="Identity" asp-page="/Account/ForgotPassword">Password dimenticata</a>
+                }
             </p>
         </section>
 
