@@ -3,9 +3,6 @@
 > **Sistema:** GENKAI 限界 — regole **Starter Kit** (`../SK_Manuale.md`) **Giocatori:** 3-5 investigatori del distretto di polizia di Kyoto **Durata:** 2-3 ore alla prima giocata **Ambientazione:** Kyoto, 1997. Villa privata dell'industriale Tanaka Kazuo. **Genere:** True crime investigativo — location unica
 
 ---
-link Telegram: https://t.me/GenkaiDashBoardBot
-
-![[QR_Telegram_Bot.png]]
 
 ## PREMESSA PER IL GM
 

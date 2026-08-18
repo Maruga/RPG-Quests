@@ -24,6 +24,15 @@ public static class Ospite
         return string.IsNullOrEmpty(id) ? Prefisso + Codice(ctx) : id;
     }
 
+    /// <summary>Chiave di quota legata all'indirizzo del visitatore: dietro Cloudflare il vero IP
+    /// sta in CF-Connecting-IP (RemoteIp sarebbe il bordo Cloudflare, condiviso da tanti).</summary>
+    public static string ChiaveIp(HttpContext ctx)
+    {
+        var ip = ctx.Request.Headers["CF-Connecting-IP"].FirstOrDefault();
+        if (string.IsNullOrWhiteSpace(ip)) ip = ctx.Connection.RemoteIpAddress?.ToString() ?? "sconosciuto";
+        return "ip:" + ip;
+    }
+
     /// <summary>Il codice dell'ospite in questo browser; se non c'è, lo crea e lo mette nel cookie.</summary>
     public static string Codice(HttpContext ctx)
     {

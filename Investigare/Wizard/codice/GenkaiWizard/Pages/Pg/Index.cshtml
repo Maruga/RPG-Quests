@@ -7,6 +7,11 @@
 <div class="wz-progetti">
     <h1>I miei personaggi</h1>
 
+@if (!string.IsNullOrEmpty(Model.Avviso))
+{
+    <div class="wz-info" style="border-color:#8b1a1a">@Model.Avviso</div>
+}
+
     @if (GenkaiWizard.Services.Ospite.SenzaAccount(HttpContext))
     {
         <div class="pg-ospite">

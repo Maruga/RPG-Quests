@@ -17,7 +17,7 @@
     // modello + ragionamento AI (stesse chiavi del wizard-avventure: scelta condivisa)
     const MODELLO_DEFAULT = "claude-opus-5";
     const modelloAI = () => localStorage.getItem("wizModelAI") || MODELLO_DEFAULT;
-    const effortAI = () => localStorage.getItem("wizEffortAI") || "high";
+    const effortAI = () => localStorage.getItem("wizEffortAI") || "medium";   // scheda PG: default Medio (politica 2026-08-18)
 
     // ───────── stato: get/set + autosave ─────────
     const get = (path) => path.split(".").reduce((o, k) => (o == null ? undefined : o[k]), S);
@@ -1225,7 +1225,7 @@
         const selM = document.getElementById("wz-modello-ai");
         const selE = document.getElementById("wz-effort-ai");
         if (!selM) return;
-        if ([...selM.options].some(o => o.value === modelloAI())) selM.value = modelloAI();
+        if ([...selM.options].some(o => o.value === modelloAI() && !o.disabled)) selM.value = modelloAI();
         const off = () => { if (selE) selE.disabled = (selM.value === "claude-haiku-4-5"); };
         selM.addEventListener("change", () => { localStorage.setItem("wizModelAI", selM.value); off(); });
         if (selE) {

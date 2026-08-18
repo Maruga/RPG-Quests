@@ -10,7 +10,10 @@ namespace GenkaiWizard.Pages.Pg;
 public class IndexModel : PageModel
 {
     private readonly ApplicationDbContext _db;
-    public IndexModel(ApplicationDbContext db) => _db = db;
+    private readonly IConfiguration _cfg;
+    public IndexModel(ApplicationDbContext db, IConfiguration cfg) { _db = db; _cfg = cfg; }
+
+    [TempData] public string? Avviso { get; set; }
 
     public List<Personaggio> Personaggi { get; set; } = new();
     /// <summary>Id → nome del personaggio (da identita nello stato) — mostrato accanto all'alias.</summary>
@@ -38,6 +41,20 @@ public class IndexModel : PageModel
 
     public async Task<IActionResult> OnPostCreaAsync(string? nome)
     {
+        // senza account: al massimo poche schede (decisione utente: «una scheda, poco più»).
+        // Con l'account il tetto sparisce — e quello che c'è si sposta lì da solo.
+        if (Services.Ospite.SenzaAccount(HttpContext))
+        {
+            var max = int.TryParse(_cfg["Limiti:PgAnonimo"], out var m) ? m : 2;
+            var quanti = await _db.Personaggi.CountAsync(p => p.UtenteId == Uid);
+            if (quanti >= max)
+            {
+                Avviso = $"Senza account puoi tenere al massimo {max} schede su questo browser. "
+                       + "Crea un account (gratis): le schede che hai fatto si spostano da sole, e il limite sparisce.";
+                return RedirectToPage();
+            }
+        }
+
         var pg = new Personaggio
         {
             UtenteId = Uid,

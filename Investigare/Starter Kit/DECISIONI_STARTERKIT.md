@@ -54,7 +54,7 @@ errori tipici, il box del finale opzionale.
 - **Schede**: aggiunta la colonna **Finale** nella tabella attributi (i 3 punti si scrivono lì)
 - **PNG Notevoli eliminati dal kit** («non voglio dare troppa roba»): Yamada e Ito vivono
   già per intero dentro la Storia — è ciò che serve al GM
-- **QR/link Telegram nella Storia**: per ora RESTA — probabilmente da togliere, decisione rinviata
+- **QR/link Telegram nella Storia**: ~~per ora RESTA~~ → **TOLTO il 2026-08-18** (decisione utente): via il link, il QR e il file `QR_Telegram_Bot.png` dalla copia del kit. L’originale di Sake fuori dal kit non si tocca.
 
 ## Stato lavori
 

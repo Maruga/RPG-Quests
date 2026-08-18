@@ -20,8 +20,13 @@ Quando l'utente dichiara il kit consolidato, questa riga diventa
 
 ## Chi ci lavora
 
-La sessione **REGOLE**. Valgono le REGOLE FERREE della cartella madre
-(`../CLAUDE.md`): non inventare, non riaprire decisioni chiuse, leggere i registri prima di toccare.
+**La sessione dedicata STARTERKIT** (dal 2026-08-18, ordine dell'utente): è l'unica che scrive
+qui dentro. **Può leggere tutto il vault ma non tocca NULLA fuori da questa cartella** —
+l'unica scrittura esterna ammessa è la riga in `../REGISTRO_MODIFICHE.md` quando serve
+avvisare le altre sessioni (REGOLE, WIZARD, COMBATTIMENTO). Il lavoro sul kit
+(testi, impaginazione, pacchetto zip) vive TUTTO qui.
+Valgono le REGOLE FERREE della cartella madre (`../CLAUDE.md`): non inventare,
+non riaprire decisioni chiuse, leggere i registri prima di toccare.
 Le decisioni specifiche del kit sono in **`DECISIONI_STARTERKIT.md`** — quella è la fonte:
 in caso di dubbio si legge lì, e se non basta si chiede all'utente.
 
@@ -34,5 +39,7 @@ in caso di dubbio si legge lì, e se non basta si chiede all'utente.
 | L'avventura (Sake, adattata — Yamada e Ito descritti al suo interno) | `Avventura/` |
 | I 5 investigatori pregenerati (con colonna Finale) | `Schede/` |
 
-L'impaginazione (PDF) e la pubblicazione su genkai.it sono della sessione **WIZARD**,
-a testi congelati — si avvisa via `../REGISTRO_MODIFICHE.md`.
+L'**impaginazione (PDF) e il pacchetto** `genkai-starter.zip` si costruiscono QUI (sessione
+STARTERKIT, a testi approvati). Il **caricamento sul sito** (`genkai.it/download/`) è fuori
+cartella: si consegna via `../REGISTRO_MODIFICHE.md` alla sessione WIZARD, oppure lo fa
+questa sessione SOLO su ordine esplicito dell'utente.

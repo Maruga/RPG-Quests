@@ -11,6 +11,17 @@
 
 ## Da applicare
 
+### 2026-08-18 · STARTERKIT (nuova sessione) → TUTTE · La cartella «Starter Kit/» ha una sessione dedicata
+
+Ordine dell'utente: da oggi lo Starter Kit è gestito da una **sessione AI dedicata** («STARTERKIT»),
+che scrive SOLO dentro `Starter Kit/` (legge tutto, non tocca nulla fuori — salvo questo registro).
+- La cartella passa quindi dalla competenza REGOLE alla sessione STARTERKIT; le decisioni fissate
+  in `Starter Kit/DECISIONI_STARTERKIT.md` restano tutte valide.
+- Anche PDF e `genkai-starter.zip` si costruiranno lì dentro; il caricamento su genkai.it
+  si coordina qui sul registro (o lo ordina l'utente direttamente).
+- Nulla da applicare per REGOLE/WIZARD/COMBATTIMENTO: è una presa in carico. **STATO: informativa.**
+
+
 ### 2026-08-16 · COMBATTIMENTO → REGOLE + WIZARD · Pistola: velocità d'uso 1 → 2
 
 Decisione utente (sessione dedicata al solo `GENKAI_Combattimento.md`): la pistola usata **normalmente**

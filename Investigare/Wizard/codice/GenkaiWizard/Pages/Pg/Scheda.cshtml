@@ -11,19 +11,20 @@
         <a asp-page="/Pg/Index" class="wz-indietro" title="I miei personaggi">‹</a>
         <input id="pg-nome-testata" class="wz-titolo" maxlength="120" value="@Model.Pg.Nome" title="Nome del personaggio" />
         <span id="pg-salvato" class="wz-salvato" title="Stato salvataggio">●</span>
-        @if (Model.AiAttiva)
+        @* politica AI (2026-08-18): gli ospiti vanno a Opus 5/ragionamento medio FISSI (nessun menu:
+           il server ignora comunque quello che arriva dal client); i registrati scelgono il modello
+           e il ragionamento Medio (default) o Alto. *@
+        @if (Model.AiAttiva && User.Identity?.IsAuthenticated == true)
         {
             <select id="wz-modello-ai" class="wz-modello" title="Modello AI usato dai pulsanti ✨">
                 <option value="claude-opus-5">🤖 Opus 5</option>
-                <option value="claude-fable-5">🤖 Fable 5</option>
+                <option value="claude-fable-5" disabled title="Non ancora disponibile">🤖 Fable 5 (presto)</option>
                 <option value="claude-sonnet-5">🤖 Sonnet 5</option>
                 <option value="claude-haiku-4-5">🤖 Haiku 4.5</option>
             </select>
             <select id="wz-effort-ai" class="wz-modello" title="Quanto ragiona l'AI (non vale per Haiku)">
-                <option value="max">🧠 Max</option>
-                <option value="high">🧠 Alto</option>
                 <option value="medium">🧠 Medio</option>
-                <option value="low">🧠 Basso</option>
+                <option value="high">🧠 Alto</option>
             </select>
         }
         <span id="pg-audio-ctrl" class="pg-audio" hidden>

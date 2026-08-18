@@ -581,10 +581,20 @@ api.MapPost("/pg/{id:guid}/ai-campo", async (
     if (string.IsNullOrWhiteSpace(body.Campo)) return Results.BadRequest(new { errore = "campo mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (Ospite.SenzaAccount(ctx) && !quota.Consuma(Ospite.ChiaveIp(ctx)))
+        return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429); // gli ospiti contano anche per IP: il cookie si ricrea, l'IP no
+
+    // politica AI del wizard PG (decisione utente 2026-08-18):
+    // ospite → Opus 5 a ragionamento medio, fisso; registrato → medio di base, alto a scelta (modello libero)
+    var (modello, effort) = Ospite.SenzaAccount(ctx)
+        ? ("claude-opus-5", "medium")
+        : (body.Modello, string.Equals(body.Effort, "high", StringComparison.OrdinalIgnoreCase) ? "high" : "medium");
+    // Fable per ora è in vetrina ma spento (decisione utente): chi lo chiede ricade sul default
+    if (string.Equals(modello, "claude-fable-5", StringComparison.OrdinalIgnoreCase)) modello = null;
 
     try
     {
-        var testo = await ai.GeneraCampoPg(pg.StatoJson, body.Campo, body.Indicazioni, ct, body.Modello, body.Effort);
+        var testo = await ai.GeneraCampoPg(pg.StatoJson, body.Campo, body.Indicazioni, ct, modello, effort);
         return Results.Json(new { testo });
     }
     catch (Exception ex) { return Results.Problem(ex.Message, statusCode: 502); }
@@ -602,6 +612,8 @@ api.MapPost("/pg/{id:guid}/immagine", async (
     if (string.IsNullOrWhiteSpace(body.Prompt)) return Results.BadRequest(new { errore = "prompt mancante" });
     if (!img.Attivo) return Results.Problem("Generazione immagini non configurata su questo server", statusCode: 503);
     if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (Ospite.SenzaAccount(ctx) && !quota.Consuma(Ospite.ChiaveIp(ctx)))
+        return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
     {
