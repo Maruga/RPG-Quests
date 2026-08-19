@@ -71,6 +71,14 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑪ **REGOLA DEL RIGHELLO (decisione utente)**: velocità UNICA terra/mare; taratura proposta
+  **120 km/giorno di luce = 12 km/ora di luce** (mantiene lo sbarco al 14/11; a 150 anticiperebbe
+  al 12). Metodo: tacche da 120 km (G1-G10), di NOTTE è sulla tacca del giorno, di giorno = ore
+  di luce ×12 («a mezzogiorno mezza tacca»), il GM traccia solo «i km del Nushi», rituale del
+  «bollettino del tramonto» (puntina a ogni tramonto = bollettino TV). Scheda §4 riscritta,
+  §10 = «Il nastro del Nushi» (km 0 Genkai → 1.120 KK, orari nuovi: Shimane 8/11 ~12:20;
+  Takahama+Ōi pomeriggio del 10; Mihama+Fugen+Tsuruga mattina dell'11; G9 fermo a 40 km;
+  sbarco 14/11 ~09:50). CSV punti-mappa allineato. Vecchie velocità terra/mare = colore.
   ⑩ **NOMI scelti dall'utente (2026-08-19)**: organizzazione = **Ryūgū-kai** 竜宮会 («Società del
   Palazzo del Drago» — la maschera con cui firma; l'identità vera resta ignota); mostro =
   **Nushi** 主 («il Padrone»). Soluzione a strati applicata (reversibile): *il Nushi* = la cosa,

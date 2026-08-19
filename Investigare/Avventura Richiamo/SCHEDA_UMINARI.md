@@ -1,6 +1,6 @@
 # NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v1.4 · 2026-08-19** *(v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.5 · 2026-08-19** *(v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -48,27 +48,23 @@
 
 ---
 
-## 4. Locomozione
+## 4. Locomozione — la regola del righello *(decisione utente 2026-08-19: una sola velocità, terra e mare)*
 
-### A terra *(canone — la tabella di marcia del design resta identica)*
+| | |
+|---|---|
+| **In movimento** | **12 km/h — 120 km per giorno di luce** (~06:30 → ~16:30). Terra e mare, sempre la stessa |
+| **Di notte** | **ferma dov'è** — a terra o adagiata sul fondale (restare sott'acqua non le costa nulla): la notte è il turno dei giocatori, ovunque |
+| Taratura | 120 km/g è il numero che fa cadere lo sbarco finale il **14 novembre** (Mihara il 15) senza contare soste. *(A 150 km/g l'arrivo anticipa al 12/11.)* |
+| Profilo in mare | in superficie le placche fuori («la scogliera che si muove»); **può navigare immersa** — è così che dopo Genkai è sparita. Di giorno la tradiscono mareografi, torbida e gabbiani; di notte, ferma sul fondo, è invisibile |
 
-| Parametro | Valore | Derivazione |
-|---|---|---|
-| Andatura di marcia | **~21 km/h** | Froude da pachiderma: a 100.000 t la legge quadrato-cubo impone Fr ≈ 0,08 (gli elefanti camminano a 0,05-0,25) → v = √(0,08 · 9,81 · 43) ≈ 5,8 m/s |
-| Avanzamento utile | **5,5 km/h** | ~26% dell'andatura: fiumi, edifici, soste, deviazioni |
-| Giornata utile | ~10 h | alba→tramonto, novembre (~10,4 h a Kyūshū → ~10 h a Niigata) |
-| **Percorrenza a terra** | **~55 km/giorno** | invariata dal design: orari e struttura non si toccano |
+**Come si risponde a «dov'è adesso?»** *(il metodo del tavolo — niente conti)*
+1. Il percorso è pre-segnato a **tacche da 120 km** (G1…G10 — il nastro in §10).
+2. **Di notte è ESATTAMENTE sulla tacca del giorno.** Nessun calcolo.
+3. **Di giorno è dentro la tacca**: ore di luce trascorse × 12 km — *a mezzogiorno, mezza tacca*.
+4. Il GM traccia **un numero solo**, «i km del Nushi»: ogni ora di luce +12; ritardi e deviazioni si sottraggono/aggiungono lì (3 ore guadagnate dai PG = −36 km quel giorno). Il metodo non cambia mai.
+5. **Il bollettino del tramonto** (rituale): a ogni tramonto in gioco, la puntina sulla mappa — in fiction è il bollettino TV della sera (mareografi, radar costieri, la nuvola di gabbiani). Di notte *il paese* non sa dov'è con certezza; il GM sì: sulla tacca.
 
-**Regola d'oro (canone, estesa dall'utente 2026-08-19):** la notte si spegne dov'è — **a terra o sul fondale**: la notte è il turno dei giocatori, ovunque. A terra al tramonto si sa sempre dov'è; in mare si sa solo che ha smesso di muoversi.
-
-### In mare *(crociera: proposta · la regola notturna è decisione utente 2026-08-19)*
-
-| Parametro | Valore | Nota |
-|---|---|---|
-| Crociera | ~15 km/h *(proposta)* | propulsione di coda, nuoto da balenottera in scala |
-| Ore di nuoto | **solo di giorno**: al tramonto si adagia sul fondale e si spegne | restare sott'acqua non le costa nulla (decisione utente) |
-| **Percorrenza in mare** | **~150 km/giorno** | 15 km/h × ~10 h di luce; cala verso nord con l'acqua più fredda |
-| Profilo | in superficie le placche fuori («la scogliera che si muove»); **può navigare immersa** — è così che dopo Genkai è sparita | di giorno la tradiscono mareografi, torbida e gabbiani; di notte, ferma sul fondo, è invisibile |
+*Dettaglio fine (colore, non per il calcolo):* la marcia «vera» da pachiderma (Froude 0,08 → ~21 km/h di passo, ridotto da ostacoli e soste) e il nuoto da balenottera restano per **descrivere** la scena — la regola del righello serve per **giocare**.
 
 ### Temperature d'esercizio *(proposta)*
 
@@ -181,42 +177,48 @@ Tre fasce, dalla linea di transito verso fuori:
 
 Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, risalendo la Corrente di Tsushima. Senza Tomari, l'elenco coincide **esattamente con tutte le centrali affacciate sul Mar del Giappone in esercizio nel 1986**. *Il viaggio comincia a Genkai: il gioco si chiama GENKAI.*
 
-| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Nuoto *(proposta)* |
+| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Viaggio *(righello 120 km/g)* |
 |---|---|---|---|---|---|---|---|---|
 | 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | 129.74397 | 33.58099 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
 | 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~11 km | ~12 km | ~1 h |
-| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~3 gg |
-| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~1,7 gg |
-| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ~1,5 h |
-| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | ~3 h |
+| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~3,6 gg |
+| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~2,2 gg |
+| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ~1,7 h |
+| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | ~4 h |
 | 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | ~2 h |
 | 7 | **Tsuruga** | Tsuruga | 136.01889 | 35.75194 | JAPC — 1 BWR (1970, il **primo reattore commerciale** del paese); n.2 in avviamento (com. feb. 1987). *Stesso gestore di Tōkai Daini; scandalo della perdita radioattiva 1981* | **0,4 km** | adiacente | — |
-| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~2,3 gg |
-| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~7,6 gg di solo nuoto** (a 150 km/g) |
+| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~2,8 gg |
+| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~9,3 gg** (righello: 120 km/giorno) |
 
 > Coordinate di dettaglio: fa fede **`centrali-giappone-1990.csv`** (nella cartella, fornito dall'utente). Attenzione: il CSV fotografa lo stato **1990** (Shimane-2 1989, Tsuruga-2 1987, KK 3 unità); la tabella qui sopra riporta lo stato **novembre 1986**, che è quello in gioco.
 > Il set completo dei punti-mappa — Madara + 8 tappe + vulcano, con date e ruoli, stesso schema, pronto per l'import in Google My Maps — è in **`punti-mappa-avventura.csv`**.
 
-### Tempi di percorrenza — l'itinerario non contrastato *(calcolo 2026-08-19: nuoto 15 km/h (proposta) × ~10 h di luce = 150 km/g; fermo di notte anche in mare; attraversamenti 1,5-3 h l'uno; date proposte, ancorate al 5/11)*
+### Il nastro del Nushi — itinerario non contrastato *(regola del righello: 120 km/giorno di luce; date proposte ancorate al 5/11; località approssimate, da verificare su carta)*
 
-| Giorno | Data | Dove |
-|---|---|---|
-| 1 | mer 5 nov | alba: **Genkai distrutta** (la V); poi ~100 km di nuoto verso NE |
-| 2 | gio 6 nov | in mare (250/430) — a terra esce il gōgai |
-| 3 | ven 7 nov | in mare (400/430) |
-| 4 | sab 8 nov | mattina: **Shimane**; poi ~80 km verso Wakasa |
-| 5 | dom 9 nov | in mare (225/260) |
-| 6 | lun 10 nov | ~09:00 **Takahama** · ~12:30 **Ōi**; al tramonto si spegne in mare davanti a Mihama |
-| 7 | mar 11 nov | ~08:00 **Mihama** · ~11:00-13:30 **Fugen + Tsuruga** (adiacenti); +50 km a NE — *cinque centrali in due giorni: la Genpatsu Ginza* |
-| 8 | mer 12 nov | in mare (200/340) |
-| 9 | gio 13 nov | 140 km; **al tramonto si spegne sul fondale davanti a Kashiwazaki-Kariwa** — il paese guarda il mare tutta la notte |
-| 10 | **ven 14 nov** | **all'alba, lo sbarco alla meta finale** |
+| km | Tacca | Quando | Dove |
+|---|---|---|---|
+| 0 | — | G1 · mer 5 nov, alba | **Genkai distrutta** (la V), rientra in mare verso NE |
+| 120 | **G1** | 5 nov, tramonto | fermo al largo dello stretto di Kanmon (Hibiki-nada) |
+| 240 | **G2** | 6 nov, tramonto | costa di Hagi (Yamaguchi) — a terra esce il gōgai |
+| 360 | **G3** | 7 nov, tramonto | costa di Hamada (Shimane) — arriva la richiesta della Ryūgū-kai |
+| 430 | — | **G4 · sab 8 nov, ~12:20** | **Shimane colpita a mezzogiorno** |
+| 480 | **G4** | 8 nov, tramonto | largo di Matsue / Tottori ovest |
+| 600 | **G5** | 9 nov, tramonto | costa di Tottori — in serata viene comunicato il punto di consegna |
+| 690 | — | **G6 · lun 10 nov, ~14:00** | **Takahama** |
+| 710 | — | **G6 · 10 nov, ~15:40** | **Ōi** — *due cupole nello stesso pomeriggio, il giorno della consegna dell'oro* |
+| 720 | **G6** | 10 nov, tramonto | si spegne fra Ōi e Mihama |
+| 755 | — | **G7 · mar 11 nov, ~09:25** | **Mihama** |
+| 780 | — | **G7 · 11 nov, ~11:30** | **Fugen + Tsuruga** (adiacenti) — *cinque centrali in due giorni: la Genpatsu Ginza* |
+| 840 | **G7** | 11 nov, tramonto | largo della costa di Fukui |
+| 960 | **G8** | mer 12 nov, tramonto | largo di Kanazawa |
+| 1.080 | **G9** | gio 13 nov, tramonto | **ferma sul fondale a 40 km da Kashiwazaki-Kariwa** — il paese guarda il mare tutta la notte |
+| 1.120 | — | **G10 · ven 14 nov, ~09:50** | **lo sbarco alla meta finale** |
 
-**Risposta secca: ~9 giorni e mezzo — lo sbarco finale è alla decima alba.** (Solo nuoto: ~7,6 gg; il resto sono gli attraversamenti.)
+**Risposta secca: ~9 giorni e mezzo — lo sbarco è a metà mattina del decimo giorno.**
 
-- **Il regalo delle date**: partendo il 5/11, il finale cade il **14 novembre 1986** — e il **15 alle 17:25 il Mihara erutta davvero**. L'ancora storica del design originale («il giorno dopo, la storia vera comincia da sola») torna in piedi da sola, pur avendo cambiato tutto il percorso. Argomento forte per confermare le date proposte. *(Se il gancio Mihara/secondo esemplare resti in gioco è ancora da decidere — ma le date ora lo permettono.)*
-- **Sensibilità**: la scaletta scala linearmente sulla crociera — a 10 km/h l'arrivo slitta al ~17-18/11; a 20 km/h anticipa all'~11-12/11.
-- **Nota GM**: è l'itinerario **non contrastato** — e **ogni tappa raggiunta è una centrale distrutta** (canone: i PG devono fermarla *prima che le distrugga tutte*, `STORIA.md`). Ogni successo dei giocatori sposta l'orologio in avanti; ogni giorno guadagnato è una centrale salvata.
+- **Il regalo delle date resta**: finale il **14 novembre 1986** — e il **15 alle 17:25 il Mihara erutta davvero** («il giorno dopo, la storia vera comincia da sola»). È la taratura a 120 km/g che lo garantisce senza contare nessuna sosta.
+- **Nota GM**: itinerario **non contrastato** — e **ogni tappa raggiunta è una centrale distrutta** (canone: i PG devono fermarla *prima che le distrugga tutte*, `STORIA.md`). I successi dei PG si sottraggono dai «km del Nushi»: ogni giorno guadagnato è una centrale salvata.
+- **Sulla mappa**: riportare le tacche G1-G10 come puntine numerate ogni 120 km lungo la rotta (My Maps) — sono i punti del «bollettino del tramonto».
 
 ### Note sul percorso
 
@@ -293,4 +295,4 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 - **Pressione al suolo**: 9,8×10⁸ N su ~400 m² (doppio appoggio) ≈ 2,5 MPa.
 - **Filtrazione**: fabbisogno = metabolismo mammifero a M^0,75 ÷ 10 (ectotermo) ≈ 20 t/g di organico; a 5-20 g/m³ utili ≈ 10⁶ m³ d'acqua/g — l'ordine di 3-4 soste da 40-60 min ai fiumi maggiori.
 - **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta. Coordinate di dettaglio (Madara comprese): `centrali-giappone-1990.csv`.
-- **Tempi**: 150 km/g in mare (15 km/h × 10 h, ferma di notte anche in mare) · 55 km/g a terra · attraversamenti-centrale 1,5-3 h. Itinerario integrale in §10.
+- **Tempi (regola del righello, decisione utente)**: **120 km per giorno di luce = 12 km/h**, terra e mare, ferma di notte. Nastro, tacche G1-G10 e orari in §10.
