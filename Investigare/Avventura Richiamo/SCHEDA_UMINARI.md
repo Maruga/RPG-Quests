@@ -1,6 +1,6 @@
 # UMINARI 海鳴り — Scheda del mostro
 
-**Riferimento GM · v1.2 · 2026-08-19** *(v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.3 · 2026-08-19** *(v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -41,7 +41,7 @@
 
 | Tratto | Conseguenza di gioco |
 |---|---|
-| **Ectotermo** | Si muove col calore diurno di terreno e acqua. Al tramonto, **a terra**, il metabolismo crolla e si arresta *dov'è*. Non dorme: si spegne. Col freddo rallenta — salendo a nord rallenta sempre di più |
+| **Ectotermo** | Si muove col calore diurno. **Al tramonto si arresta dov'è — a terra o sul fondale** (decisione utente 2026-08-19: di notte si ferma sempre, e restare sott'acqua non le costa nulla). Non dorme: si spegne. Col freddo rallenta — salendo a nord sempre di più |
 | **Magnetorecezione** | Naviga sul campo geomagnetico: il richiamo dà la rotta, il campo la tiene tra una sorgente e l'altra. Le forti sorgenti EM lo disturbano (v. §6) |
 | **Organo di risonanza a infrasuoni** (8-15 Hz) | Riceve il richiamo **ed emette il proprio canto**: in mare porta per centinaia di km. È il punto debole (v. §6) |
 | **Filtratore** | Non caccia e non mangia persone. Filtra acqua e fango alle acque grandi (v. §7) |
@@ -59,16 +59,16 @@
 | Giornata utile | ~10 h | alba→tramonto, novembre (~10,4 h a Kyūshū → ~10 h a Niigata) |
 | **Percorrenza a terra** | **~55 km/giorno** | invariata dal design: orari e struttura non si toccano |
 
-**Regola d'oro (canone):** la notte, a terra, si spegne dov'è — al tramonto si sa sempre dov'è, e i giocatori hanno ~14 ore di vantaggio.
+**Regola d'oro (canone, estesa dall'utente 2026-08-19):** la notte si spegne dov'è — **a terra o sul fondale**: la notte è il turno dei giocatori, ovunque. A terra al tramonto si sa sempre dov'è; in mare si sa solo che ha smesso di muoversi.
 
-### In mare *(proposta — serve per le tratte del percorso totale)*
+### In mare *(crociera: proposta · la regola notturna è decisione utente 2026-08-19)*
 
 | Parametro | Valore | Nota |
 |---|---|---|
-| Crociera | ~15 km/h | propulsione di coda, nuoto da balenottera in scala |
-| Ore di nuoto | **anche di notte**, finché l'acqua resta sopra ~12 °C | il mare tiene il calore del giorno: è il suo rifugio termico |
-| Percorrenza in mare | ~300-350 km/giorno al sud → ~200 a nord | cala con la temperatura dell'acqua |
-| Profilo | placche dorsali fuori dall'acqua («la scogliera che si muove») | visibile ai radar costieri e ai pescherecci: **in mare non lo si perde mai davvero** |
+| Crociera | ~15 km/h *(proposta)* | propulsione di coda, nuoto da balenottera in scala |
+| Ore di nuoto | **solo di giorno**: al tramonto si adagia sul fondale e si spegne | restare sott'acqua non le costa nulla (decisione utente) |
+| **Percorrenza in mare** | **~150 km/giorno** | 15 km/h × ~10 h di luce; cala verso nord con l'acqua più fredda |
+| Profilo | in superficie le placche fuori («la scogliera che si muove»); **può navigare immersa** — è così che dopo Genkai è sparita | di giorno la tradiscono mareografi, torbida e gabbiani; di notte, ferma sul fondo, è invisibile |
 
 ### Temperature d'esercizio *(proposta)*
 
@@ -92,7 +92,7 @@ Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C
 |---|---|---|---|
 | 1 | **L'organo di risonanza** | La membrana da ~15 m dietro la mandibola. **Saturata da vicino (~30 m) con una sorgente 8-15 Hz ad alta potenza**, la bestia perde l'orientamento e rientra al mare a stima. Non si spara: si satura. *A organo spento (notte, torpore) la saturazione non produce nulla* (proposta) | la membrana freme a ogni cambio di rotta (foto aeree); l'esitazione dimostra che si può confondere; targa del trasduttore sugli emettitori |
 | 2 | **Il disturbo EM** | Cabine >154 kV, trasmettitori >50 kW, radar: si tiene a ~2 km, **aggira, non si ferma** — ogni aggiramento costa ~1 ora. Uso politico: accendere/staccare impianti = decidere chi si prende la passata | le anse «immotivate» della rotta ricalcano gli impianti; i tecnici dell'ente elettrico lo confermano |
-| 3 | **La notte** (a terra) | Dal tramonto all'alba è fermo, spento, innocuo. La finestra dei giocatori | pubblico dal primo giorno |
+| 3 | **La notte** | Dal tramonto all'alba è ferma, spenta, innocua — **anche in mare, adagiata sul fondale** (decisione utente). La finestra dei giocatori, ovunque | pubblico dal primo giorno a terra; in mare lo dicono i mareografi: la scia si ferma |
 | 4 | **Il freddo** | Sotto i 12 °C rallenta; sotto i 5 va in torpore anche di giorno. **Il nord è un'arma** | l'andatura cala salendo; un biologo lo estrapola |
 | 5 | **Le soste prevedibili** | Filtra alle acque grandi 40-60 min: le soste si conoscono in anticipo — e si **allungano** aprendo chiuse e allagando (leva dei consorzi di bonifica) | la regolarità delle prime soste |
 
@@ -167,7 +167,7 @@ Tre fasce, dalla linea di transito verso fuori:
 
 ### Il punto zero: Madara-shima *(decisione utente; i dettagli di colore sono proposte)*
 
-**Madara-shima** (馬渡島, arcipelago di Chinzei, Karatsu — Saga): un villaggio di pescatori di qualche centinaio di anime nel Genkai-nada, a pochi km dalla costa e **~14 km dalla centrale di Genkai** (coord. ~33,63 N · 129,76 E — da fissare su carta). L'isola dei due dèi: i santuari, e la chiesa dei discendenti dei cristiani nascosti.
+**Madara-shima** (馬渡島, arcipelago di Chinzei, Karatsu — Saga): un villaggio di pescatori di qualche centinaio di anime nel Genkai-nada, a pochi km dalla costa e **~11 km dalla centrale di Genkai** (coord. 33,58099 N · 129,74397 E — dal CSV dell'utente). L'isola dei due dèi: i santuari, e la chiesa dei discendenti dei cristiani nascosti.
 
 - **Le notti del canto** *(proposta)*: per notti i pescatori sentono il mare «rombare» nelle case — lo chiamano con la parola di sempre: **uminari**. Poi le reti tranciate, la trincea sul fondale, e all'alba la prima emersione documentata.
 - **L'insabbiamento** *(decisione utente; meccanica proposta)*: la denuncia della cooperativa ritirata, il rullino di un pescatore «trattenuto per accertamenti», l'ordine alla stazione di polizia: *nessuna diffusione — panico ingiustificato*. **Chi ha dato l'ordine, e quanti giorni passano: da decidere** — è il tempo in cui l'insabbiamento lavora.
@@ -181,22 +181,50 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 
 | # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Nuoto *(proposta)* |
 |---|---|---|---|---|---|---|---|---|
-| 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | ~129.76 | ~33.63 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
-| 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~14 km | ~15 km | ore |
-| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~1,5 gg |
-| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~1 g |
-| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ore |
-| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | mezza giornata |
-| 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | ore |
+| 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | 129.74397 | 33.58099 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
+| 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~11 km | ~12 km | ~1 h |
+| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~3 gg |
+| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~1,7 gg |
+| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ~1,5 h |
+| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | ~3 h |
+| 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | ~2 h |
 | 7 | **Tsuruga** | Tsuruga | 136.01889 | 35.75194 | JAPC — 1 BWR (1970, il **primo reattore commerciale** del paese); n.2 in avviamento (com. feb. 1987). *Stesso gestore di Tōkai Daini; scandalo della perdita radioattiva 1981* | **0,4 km** | adiacente | — |
-| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~1-1,5 gg |
-| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~5-6 gg di solo nuoto** |
+| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~2,3 gg |
+| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~7,6 gg di solo nuoto** (a 150 km/g) |
+
+> Coordinate di dettaglio: fa fede **`centrali-giappone-1990.csv`** (nella cartella, fornito dall'utente). Attenzione: il CSV fotografa lo stato **1990** (Shimane-2 1989, Tsuruga-2 1987, KK 3 unità); la tabella qui sopra riporta lo stato **novembre 1986**, che è quello in gioco.
+> Il set completo dei punti-mappa — Madara + 8 tappe + vulcano, con date e ruoli, stesso schema, pronto per l'import in Google My Maps — è in **`punti-mappa-avventura.csv`**.
+
+### Tempi di percorrenza — l'itinerario non contrastato *(calcolo 2026-08-19: nuoto 15 km/h (proposta) × ~10 h di luce = 150 km/g; fermo di notte anche in mare; attraversamenti 1,5-3 h l'uno; date proposte, ancorate al 5/11)*
+
+| Giorno | Data | Dove |
+|---|---|---|
+| 1 | mer 5 nov | alba: **Genkai distrutta** (la V); poi ~100 km di nuoto verso NE |
+| 2 | gio 6 nov | in mare (250/430) — a terra esce il gōgai |
+| 3 | ven 7 nov | in mare (400/430) |
+| 4 | sab 8 nov | mattina: **Shimane**; poi ~80 km verso Wakasa |
+| 5 | dom 9 nov | in mare (225/260) |
+| 6 | lun 10 nov | ~09:00 **Takahama** · ~12:30 **Ōi**; al tramonto si spegne in mare davanti a Mihama |
+| 7 | mar 11 nov | ~08:00 **Mihama** · ~11:00-13:30 **Fugen + Tsuruga** (adiacenti); +50 km a NE — *cinque centrali in due giorni: la Genpatsu Ginza* |
+| 8 | mer 12 nov | in mare (200/340) |
+| 9 | gio 13 nov | 140 km; **al tramonto si spegne sul fondale davanti a Kashiwazaki-Kariwa** — il paese guarda il mare tutta la notte |
+| 10 | **ven 14 nov** | **all'alba, lo sbarco alla meta finale** |
+
+**Risposta secca: ~9 giorni e mezzo — lo sbarco finale è alla decima alba.** (Solo nuoto: ~7,6 gg; il resto sono gli attraversamenti.)
+
+- **Il regalo delle date**: partendo il 5/11, il finale cade il **14 novembre 1986** — e il **15 alle 17:25 il Mihara erutta davvero**. L'ancora storica del design originale («il giorno dopo, la storia vera comincia da sola») torna in piedi da sola, pur avendo cambiato tutto il percorso. Argomento forte per confermare le date proposte. *(Se il gancio Mihara/secondo esemplare resti in gioco è ancora da decidere — ma le date ora lo permettono.)*
+- **Sensibilità**: la scaletta scala linearmente sulla crociera — a 10 km/h l'arrivo slitta al ~17-18/11; a 20 km/h anticipa all'~11-12/11.
+- **Nota GM**: è l'itinerario **non contrastato**. Ogni successo dei giocatori sposta l'orologio in avanti; ogni tappa salvata è un giorno guadagnato dal paese.
 
 ### Note sul percorso
 
 - **Genpatsu Ginza** 原発銀座 («la Ginza dei reattori» — soprannome **reale** della baia di Wakasa): le tappe 3→7 sono cinque centrali in ~60 km di costa, più il cantiere di Monju avviato proprio nel 1986. **In un giorno solo la bestia ne passa cinque**: è il crescendo naturale di metà percorso.
 - **La stagione avanza col viaggio**: tra nuoto e soste il tour dura settimane — il finale a Kashiwazaki cade nel **primo inverno dello yukiguni**, il paese della neve: acque a ~14 °C, neve sulla costa di Niigata, la bestia un po' più lenta a ogni tappa. Il rallentamento del terzo atto lo regala la geografia.
 - **La meta finale è la centrale di Tokyo**: Kashiwazaki-Kariwa è della TEPCO — l'elettricità della capitale si fa in Niigata. Arrivarle addosso è colpire Tokyo senza mai toccarla.
+
+### Fuori rotta: il vulcano *(gancio proposto — vive o muore con la decisione sul «secondo esemplare», Sviluppo §0)*
+
+**Monte Mihara, Izu Ōshima** — coordinate Google Maps: **34.7244, 139.3944**. Dall'altra parte del paese rispetto alla rotta (~330 km da Tsuruga, ~310 da Kashiwazaki, oltre le montagne del Honshū) — ma gli infrasuoni viaggiano nella crosta e nell'acqua. **Storia vera**: fumarole sulla parete sud del cratere dal 12 novembre 1986, **eruzione il 15 alle 17:25**, eruzione fessurale ed evacuazione totale dell'isola (~10.000 persone) il 21. Se il finale «risveglio» resta in gioco, è qui che dorme il destinatario del richiamo — e l'itinerario qui sopra (sbarco finale il 14) consegna l'eruzione **il giorno dopo la fine**, gratis.
 - Il vecchio percorso Tokyo→Tōkai Daini (design §4) e il copione del telegiornale sono **cuciti sul Kantō**: da rimappare quando si decide la struttura (v. domande in coda alla sessione).
 - La mappa del percorso va fatta su **cartografia vera**, non generata: la aggiungo ai lavori quando si congela la struttura.
 
@@ -209,6 +237,7 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 2. **Nano Banana Pro** per le immagini con testo dentro (targhe, reticoli, cartellini reperto).
 3. Mai nominare mostri di marchi noti: si descrivono i tratti (i prompt qui sotto lo fanno già).
 4. Le due foto aeree esistenti coprono già *emersione/attraversamento urbano*; questi coprono il resto.
+5. I prompt degli **handout-indizio** (il camioncino: 7 foto CCTV/reperto) stanno con l'indizio, in `INDIZI.md`.
 
 Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black craggy hide like wet volcanic rock, rows of jagged obsidian dorsal plates from skull to tail tip, hunched bipedal posture, massive columnar legs, long armored tail, small pale eyes*.
 
@@ -261,4 +290,5 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 - **Massa**: volume ~10⁵ m³ (torso ellissoidale 55×45×35 m + arti e coda) × densità ~1 → ~100.000 t. Coerente col canone del genere (118,5 m → 92.000 t).
 - **Pressione al suolo**: 9,8×10⁸ N su ~400 m² (doppio appoggio) ≈ 2,5 MPa.
 - **Filtrazione**: fabbisogno = metabolismo mammifero a M^0,75 ÷ 10 (ectotermo) ≈ 20 t/g di organico; a 5-20 g/m³ utili ≈ 10⁶ m³ d'acqua/g — l'ordine di 3-4 soste da 40-60 min ai fiumi maggiori.
-- **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta. Madara-shima: coordinate stimate (~33,63 N · 129,76 E), da fissare su carta.
+- **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta. Coordinate di dettaglio (Madara comprese): `centrali-giappone-1990.csv`.
+- **Tempi**: 150 km/g in mare (15 km/h × 10 h, ferma di notte anche in mare) · 55 km/g a terra · attraversamenti-centrale 1,5-3 h. Itinerario integrale in §10.

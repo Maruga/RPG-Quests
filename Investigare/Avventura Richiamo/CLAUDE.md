@@ -59,6 +59,27 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   promontorio (tutto distrutto nel corridoio), fuori a levante-nordest, POI SPARITA. All'apertura
   il mondo non sa né dov'è né dove riemergerà: la rotta delle 8 centrali è verità del GM.
   Gōgai allineato (niente sosta notturna a terra, «potrebbe essere ovunque»).
+  ⑥ **Regola notturna estesa (decisione utente)**: di notte si ferma ANCHE IN MARE, adagiata sul
+  fondale (stare sott'acqua non le costa nulla) → in mare ~150 km/giorno (15 km/h × 10 h).
+  **Itinerario non contrastato (scheda §10): ~9,5 giorni, sbarco a Kashiwazaki alla DECIMA ALBA**
+  — con partenza 5/11 il finale cade il 14/11 e il 15/11 il Mihara erutta davvero (l'ancora del
+  design torna da sola). Creata `COPERTINA.md` (copertina + gōgai + tagline); copiato
+  `centrali-giappone-1990.csv` (FONTE coordinate: Madara 33,581/129,744 → ~11 km dalla centrale;
+  ATTENZIONE: il CSV è stato-1990, in scheda resta lo stato-1986).
+  ⑦ **Vulcano segnato**: Monte Mihara, Izu Ōshima — 34.7244/139.3944 (scheda §10 «Fuori rotta»:
+  ~310-330 km dalla rotta, eruzione vera 15/11 17:25, gancio proposto del secondo dormiente).
+  Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
+  CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
+  **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑧ **INDIZI — iniziato `INDIZI.md`** (l'utente li detta a blocchi, «poi ti dico il resto»).
+  Blocco 1 CANONE UTENTE — **il camioncino**: emettitori dentro camioncini tutti uguali travestiti
+  da mezzi di cantiere (cartelli 工事中, abbandonati), guardati da mercenari-operai; se scoperti
+  rispondono al fuoco e spostano il camion SEMPRE SULLA LINEA; piazzati 5-6 gg prima (~30-31/10)
+  quasi contemporaneamente su tutta la rotta; si trovano riavvolgendo le TELECAMERE (porti,
+  centrali, caselli, N-System 1986); **in uno c'è LA MAPPA dei punti di passaggio** (proposta:
+  nel camion del capo-settore; i normali hanno solo ordini parziali). Proposte mie: Isuzu Elf box,
+  ditta fittizia «Kyōsei Setsubi Kōgyō», parcheggio accoppiato ad acqua/tombini, targhe rubate +
+  filo acquisto-in-blocco, stat mercenari. 7 prompt foto CCTV/reperto (F1-F7) dentro INDIZI.md.
 - **IN ATTESA**: struttura sul percorso nuovo (che fine fa Tokyo/Tōkai/telegiornale? dove entrano
   i PG? date/gancio Mihara?) + le restanti decisioni di Sviluppo §0 e interpretazioni §10.
 - **POI**: pregen (5 poliziotti), 9 handout (lista in Sviluppo §11), posizioni emettitori su mappa,
