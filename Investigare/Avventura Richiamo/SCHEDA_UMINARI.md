@@ -1,6 +1,6 @@
 # NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v1.6 · 2026-08-19** *(v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.7 · 2026-08-19** *(v1.7: portata del richiamo in acqua = centinaia di km — un faro per tappa; i camion accesi non si spengono; v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -74,7 +74,7 @@ Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C
 
 ## 5. Sensi e comportamento
 
-- **Udito (infrasuoni)**: il senso dominante. **Presa** del richiamo ~4 km in area urbana; **tenuta** ~12 km (sente la sorgente e mantiene la rotta) *(proposta già in Sviluppo §4)*.
+- **Udito (infrasuoni)**: il senso dominante. **In acqua** il richiamo porta per **centinaia di km** (per questo basta un faro per tappa: sente il successivo attraverso il mare — coerente col suo stesso canto, §3). **A terra** la portata crolla: presa ~4 km, tenuta ~12 km *(proposta)* — è il regime della Morsa e degli avvicinamenti finali.
 - **Magnetorecezione**: stima tra una sorgente e l'altra; per questo la catena di emettitori può essere rada.
 - **Vista mediocre** *(proposta)*: non reagisce a luci, riflettori, traccianti. Non è mai la vista a guidarlo.
 - **Cosa ignora**: veicoli, folle, spari, elicotteri. **Cosa evita**: le forti sorgenti EM (§6). **Cosa cerca**: la sorgente del richiamo e le acque grandi.
@@ -119,7 +119,7 @@ Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2)
 - **La contromossa della Ryūgū-kai** *(proposta)*: il richiamo non si spegne — la chiama da oltre il recinto. Per aggirare la Morsa devono **spostare i camioncini** e ridisegnare la linea: cioè muoversi allo scoperto. **Ogni ora di Morsa è anche un'occasione investigativa** — furgoni in movimento, nuove accensioni, mercenari per strada.
 - **Il dilemma delle centrali** *(proposta da validare)*: una centrale **in esercizio** è essa stessa una grande sorgente (il parco trasformatori): da accesa la tiene a distanza. Ma i protocolli impongono lo **spegnimento d'emergenza** all'avvicinarsi — ed è proprio lo scram ad abbassare lo scudo (a Genkai è andata così: l'allarme ha spento la centrale minuti prima del passaggio). La Ryūgū-kai lo sa: *il protocollo di sicurezza è parte del piano*. Tenere accesa una centrale come muro è la scelta più estrema che il finale possa offrire.
 
-**Cosa la ferma davvero (canone utente 2026-08-19 — `STORIA.md`):** lo **strumento dell'organizzazione** — un **inibitore del segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. È la via di vittoria disegnata dell'avventura. (La saturazione ravvicinata dell'organo — riga 1 — resta biologia vera; se sia in gioco come piano-B disperato è da decidere.)
+**Cosa la ferma davvero (canone utente 2026-08-19 — `STORIA.md`):** lo **strumento dell'organizzazione** — un **inibitore del segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. È la via di vittoria disegnata dell'avventura — ed è **l'unico interruttore che esista**: i camion-faro, una volta accesi, **non si spengono** (INDIZI, blocco 1). (La saturazione ravvicinata dell'organo — riga 1 — resta biologia vera; se sia in gioco come piano-B disperato è da decidere.)
 
 ---
 

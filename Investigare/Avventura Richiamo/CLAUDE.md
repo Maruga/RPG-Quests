@@ -71,6 +71,18 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑭ **CATENA SEQUENZIALE (canone utente — corregge parte di ⑬)**: tutti posizionati, ma trasmette
+  **UNO alla volta**; il primo era ALLA CENTRALE DI GENKAI; quando il faro attivo viene DISTRUTTO
+  DAL MOSTRO (gli arriva addosso e lo calpesta), **gli operai del furgone successivo lo accendono
+  A MANO**; **una volta acceso NON SI PUÒ SPEGNERE (per sicurezza)** — per zittirlo va demolito;
+  l'unico interruttore della catena = lo strumento-inibitore (che COPRE, non spegne). Conseguenze
+  scritte (interpretazioni da validare): faro demolito prima dello sbarco = centrale salvata, la
+  catena si auto-ripara (il successivo si accende) → ogni camion ucciso = una centrale salva, la
+  vittoria totale resta lo strumento; relitto del 1° faro nelle macerie di Genkai = primo reperto;
+  ~una decina di camion (uno per bersaglio + riserve — in acqua il richiamo porta centinaia di
+  km, scheda §5 agg.); finestra di captazione = tutta la tratta (ore→giorni), corsa = arrivare
+  prima della bestia. Carico agg.: diesel+fusti, leva sotto sigillo a senso unico (F7 agg.).
+  INDIZI v0.3, scheda v1.7.
   ⑬ **IL SEGNALE DEI CAMION (canone utente)** → INDIZI v0.2: un camion trasmette SOLO nel settore
   attivo davanti alla bestia (si accende ~5-6 h prima del passaggio — durata proposta — e tace a
   bestia passata: «finché il mostro non passa possono scoprirla»); **individuare + montare

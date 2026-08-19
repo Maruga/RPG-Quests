@@ -1,6 +1,6 @@
 # RICHIAMO — Indizi per i PG
 
-**File di lavoro · v0.2 · 2026-08-19** *(v0.2: il segnale dei camion — captazione, reclami radio, triangolazione 3-4 h)*. Un blocco per indizio, aggiunti man mano che l'utente li detta.
+**File di lavoro · v0.3 · 2026-08-19** *(v0.3: la catena è SEQUENZIALE — un faro alla volta, attivazione a mano, senza spegnimento; v0.2: captazione, reclami radio, triangolazione 3-4 h)*. Un blocco per indizio, aggiunti man mano che l'utente li detta.
 Come sempre: ciò che ha detto l'utente è **canone**, i dettagli riempiti da me sono **(proposta)**.
 
 ---
@@ -15,13 +15,15 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 |---|---|---|
 | Il mezzo | **Isuzu Elf a cassone chiuso** (box in alluminio), bianco sporco, livrea di una ditta di manutenzione **inesistente**: «Kyōsei Setsubi Kōgyō» 共成設備工業 | proposta (l'utente ha detto solo «camioncino») |
 | Il metodo | Arrivano, piazzano **cartelli di lavori in corso** (工事中), coni, transenne — e **abbandonano il camioncino** lì. Un mezzo di cantiere parcheggiato, in Giappone, è invisibile per settimane | canone |
-| Il carico | Il trasduttore a bassa frequenza (grosso come un motore navale), banchi di batterie, un ricevitore per l'accensione a distanza. Il suono esce da **feritoie nel pianale** | proposta (coerente con scheda §6.1) |
+| Il carico | Il trasduttore a bassa frequenza (grosso come un motore navale), un **gruppo elettrogeno diesel coi fusti** per giorni di trasmissione, batterie tampone, e la **leva d'attivazione sotto sigillo — a senso unico**. Il suono esce da **feritoie nel pianale**. (I rabbocchi di gasolio sono un movimento osservabile) | proposta (coerente col canone della sequenza) |
 | Il parcheggio | Sempre **accoppiato all'acqua o al suolo**: su tombini e canali, su ponticelli, sulle banchine dei porti — l'infrasuono si trasmette meglio. È anche un *pattern* riconoscibile | proposta |
 | La guardia | Sulle telecamere si vedono **operai**. In realtà sono **mercenari**: presidiano a vista da un secondo punto (una stanza in affitto, un furgone, un finto rilievo topografico) | canone |
-| **La trasmissione** | Un camion **trasmette solo nel settore attivo**, davanti alla bestia: si accende quando lei entra nel suo tratto (~5-6 ore prima del passaggio) e **tace quando è passata** — poi la squadra lo sposta avanti, sempre sulla linea. **Finché trasmette, si può captare e scoprire** | canone («finché il mostro non passa possono scoprirla»); durata ~5-6 h: proposta |
-| La reazione | A un'attenta osservazione o se arriva qualcuno sul posto (polizia o altro) e nascono problemi: **rispondono al fuoco** e **spostano il camioncino più avanti, sempre sulla linea**. Non inseguono: coprono lo spostamento e spariscono | canone |
+| La finestra di scoperta | **Finché il faro trasmette — cioè finché il mostro non gli arriva addosso — si può captare e scoprire**. Dopo, tace per sempre (schiacciato) e canta il successivo | canone («finché il mostro non passa possono scoprirla») |
+| La reazione | A un'attenta osservazione o se arriva qualcuno sul posto (polizia o altro) e nascono problemi: **rispondono al fuoco** e **spostano il camioncino più avanti, sempre sulla linea** — vale per i camion **non ancora attivi**. Quello attivo è fermo, accoppiato al suolo e comunque condannato: la guardia lo difende dalla polizia e **sgombera nelle ultime ore**, quando la bestia è vicina | canone; la nota sull'attivo: proposta |
+| **La sequenza** | **Tutti i camion sono già posizionati; trasmette UNO alla volta.** Il primo era **alla centrale di Genkai**. Quando il camion attivo viene **distrutto dal mostro** — che arriva dritto sul suo faro e lo calpesta — **gli operai al furgone successivo accendono a mano il proprio**. Ogni camion è **sacrificale**: canta da quando si accende a quando muore sotto la bestia (poche ore nella Genpatsu Ginza, 3-4 giorni sulle tratte lunghe) | **canone utente 2026-08-19** |
+| **Senza spegnimento** | **Una volta attivato non si può spegnere — per sicurezza**: la leva è a senso unico, nessun circuito di arresto. Per zittirne uno bisogna **demolirlo** (trasduttore o generatore). L'unico «interruttore» dell'intera catena è **lo strumento** (blocco 3) | **canone**; dettagli demolizione: proposta |
 | La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione, **quasi contemporaneamente in tutti i punti** del percorso — con le date proposte: **30-31 ottobre**, da Kyūshū a Niigata | canone (date legate al 5/11) |
-| Quanti | Una quindicina-ventina lungo la rotta; il numero vero lo fissa la mappa (sotto) quando prepariamo l'avventura | proposta |
+| Quanti | **Una decina: un faro per bersaglio, più le riserve** (in acqua il richiamo porta per centinaia di km — non serve una catena fitta); il numero esatto lo fissa la mappa (sotto) | proposta |
 | **Il premio** | **In uno dei camioncini c'è la mappa dei punti di passaggio del mostro** | **canone** |
 
 ### Come i PG ci arrivano
@@ -35,11 +37,13 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
    - **le stesse facce** in cantieri a prefetture di distanza;
    - la ditta sulla fiancata **non esiste** all'albo (una telefonata alla camera di commercio).
 4. **Andarci**: un controllo di routine finisce in niente (documenti pronti, «siamo in appalto»); una perquisizione o un riconoscimento finisce **a fuoco** — e il camioncino riparte, più avanti lungo la linea. Ogni approccio bruciato rende la rete più prudente.
-5. **Il ronzio** *(canone)*: l'emissione **disturba sensibilmente radio locali, TV e apparecchi** nel raggio di qualche chilometro — non è il canto che si sente (quello lavora sotto l'udito): è la sua **alimentazione**, un ronzio che pulsa nella statica AM col ritmo lento del richiamo, immagini TV che sfarfallano, citofoni che friggono. **La mappa dei reclami** — una telefonata alle emittenti, ai riparatori TV, ai radioamatori — dice *quale zona è calda*: gratis, senza strumenti, precisione al quartiere.
-6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** La finestra è il camion che trasmette (~5-6 ore, poi la bestia è passata e lui tace): **si parte al primo reclamo, o non si fa in tempo.**
+5. **Il ronzio** *(canone)*: l'emissione **disturba sensibilmente radio locali, TV e apparecchi** nel raggio di qualche chilometro — non è il canto che si sente (quello lavora sotto l'udito): è la sua **alimentazione**, un ronzio che pulsa nella statica AM col ritmo lento del richiamo, immagini TV che sfarfallano, citofoni che friggono. **La mappa dei reclami** — una telefonata alle emittenti, ai riparatori TV, ai radioamatori — dice *quale zona è calda*: gratis, senza strumenti, precisione al quartiere. E con un faro che canta per giorni, la zona si sa presto.
+6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** Trovarlo non è la sfida: la corsa vera è **arrivarci prima della bestia** — e vedersela con la guardia.
 
-> **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. E i camion **oltre** il settore attivo sono spenti: lì valgono solo telecamere, pattern e previsione (punti 1-3).
-> **Sinergia con la Morsa** (scheda §6): ogni camion spostato per aggirare il recinto deve **riaccendersi** — una nuova finestra di captazione ogni volta.
+> **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. I camion **non ancora attivi** sono muti: si trovano solo con telecamere, pattern e previsione (punti 1-3).
+> **La tattica che ne discende** *(interpretazione da validare)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata** e un pezzo di catena in meno; la vittoria totale però resta **lo strumento** — l'unico interruttore.
+> **Il relitto di Genkai** *(proposta)*: il primo faro giace **schiacciato tra le macerie della centrale**, dentro la V — un Elf spianato con dentro una macchina che nessuno sa spiegare: il primo reperto fisico dell'avventura. E le notti di Madara erano la bestia che risaliva verso *quel* faro.
+> **Sinergia con la Morsa** (scheda §6): un faro **attivo** non si sposta senza farsi notare — guidare una sorgente di disturbo accesa è sventolare una bandiera ai rilevatori; i camion **dormienti** invece si muovono, e ogni spostamento è un'occasione.
 
 ### Cosa dice ai PG *(le inferenze — il cuore)*
 
@@ -87,7 +91,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 > Photographic enlargement of a CCTV frame, printed on glossy paper, Japan 1986 police evidence style: heavy grain, blown-up crop of a "construction worker" beside a white box truck — under the open grey work vest, the dark strap of a shoulder holster; on his feet, military combat boots instead of work shoes. A red grease-pencil circle drawn around the holster, evidence label in the corner. Black and white, very grainy, halftone texture.
 
 **F7 · Dentro il camioncino (dopo la cattura)** → `Immagini/Indizio_Camion_07_interno.png`
-> Police evidence photograph with harsh flash, Japan 1986: the open rear doors of a white box truck at night; inside, a large industrial low-frequency transducer horn bolted to the floor, banks of truck batteries with thick cables, a small receiver box with an antenna zip-tied to the wall, floor hatches open over the asphalt. Numbered yellow evidence tags, chalk marks, film flash aesthetic, deep shadows.
+> Police evidence photograph with harsh flash, Japan 1986: the open rear doors of a white box truck at night; inside, a large industrial low-frequency transducer horn bolted to the floor, a compact diesel generator with fuel drums strapped to the wall, banks of truck batteries with thick cables, a heavy one-way activation lever under a broken lead seal — no off switch anywhere on the panel — floor hatches open over the asphalt. Numbered yellow evidence tags, chalk marks, film flash aesthetic, deep shadows.
 
 ---
 
@@ -121,7 +125,7 @@ Presidio *(proposta, Shōtotsu v2.1)*: 3-4 **mercenari** (attr. 6, R6, pistole; 
 
 ### La verità
 
-- Chi ne parla lo chiama «**lo strumento per fermare il mostro**». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. *(Canone.)*
+- Chi ne parla lo chiama «**lo strumento per fermare il mostro**». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. *(Canone.)* Non *spegne* i camion — nessuno può, sono a senso unico (blocco 1): li **copre**, e il richiamo annega sotto l'inibizione *(proposta di meccanismo)*.
 - È il fusibile dell'organizzazione — il loro interruttore d'emergenza se il piano sfugge di mano *(proposta)*.
 - **Ubicazione: da decidere.** Due proposte: **(a)** una **nave appoggio** ancorata al largo della rotta (l'assalto diventa navale, con la Guardia Costiera); **(b)** una **ex stazione di ascolto / faro dismesso** sulla costa tra Tsuruga e Kashiwazaki (assalto di terra, più classico).
 
