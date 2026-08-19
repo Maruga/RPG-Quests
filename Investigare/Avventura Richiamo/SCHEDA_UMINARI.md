@@ -1,6 +1,6 @@
 # UMINARI 海鳴り — Scheda del mostro
 
-**Riferimento GM · v1.1 · 2026-08-19** *(v1.1: aggiunta §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.2 · 2026-08-19** *(v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -8,7 +8,9 @@
 
 | | |
 |---|---|
-| Nome | **Uminari** 海鳴り — «il rombo del mare». Battezzato dai pescatori, adottato dai quotidiani della sera |
+| Nome | **Uminari** 海鳴り — «il rombo del mare»: la parola con cui i pescatori di **Madara-shima** chiamarono il canto notturno, prima ancora di vederla. Quando la stampa adotterà il nome, il nome stesso sarà la prova del rapporto sepolto *(proposta — v. §10, punto zero)* |
+| Origine | **Madara-shima**, Genkai-nada: prima emersione documentata — **e insabbiata** (v. §10, punto zero) |
+| Prima apparizione pubblica | all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19): da lì la storia non si nasconde più |
 | Natura | Animale marino colossale. **Non è ostile e non può essere combattuto**: non caccia, non insegue, non reagisce ai veicoli. Segue un **richiamo** |
 | Indole | Filtratore migratore. Tutto il danno che fa è **passivo**: peso, passaggio, scia |
 | Stima ufficiale del 1° giorno | «Cinquanta metri» (Agenzia per la Pesca, TG1) — **errata per difetto**: nessuno si era avvicinato. Da decidere se tenerla come colore d'epoca o correggere il copione |
@@ -54,7 +56,7 @@
 |---|---|---|
 | Andatura di marcia | **~21 km/h** | Froude da pachiderma: a 100.000 t la legge quadrato-cubo impone Fr ≈ 0,08 (gli elefanti camminano a 0,05-0,25) → v = √(0,08 · 9,81 · 43) ≈ 5,8 m/s |
 | Avanzamento utile | **5,5 km/h** | ~26% dell'andatura: fiumi, edifici, soste, deviazioni |
-| Giornata utile | ~10 h | alba→tramonto, novembre (~10,4 h a Kyūshū → ~9,7 h in Hokkaidō) |
+| Giornata utile | ~10 h | alba→tramonto, novembre (~10,4 h a Kyūshū → ~10 h a Niigata) |
 | **Percorrenza a terra** | **~55 km/giorno** | invariata dal design: orari e struttura non si toccano |
 
 **Regola d'oro (canone):** la notte, a terra, si spegne dov'è — al tramonto si sa sempre dov'è, e i giocatori hanno ~14 ore di vantaggio.
@@ -70,7 +72,7 @@
 
 ### Temperature d'esercizio *(proposta)*
 
-Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C**. Mar del Giappone a novembre (Corrente di Tsushima, calda, che scorre proprio sud→nord): Genkai-nada ~19 °C · Wakasa ~17 · Niigata ~14 · Hokkaidō ~10. **La rotta cavalca la corrente calda — e più sale, più il viaggio stesso lo spegne.**
+Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C**. Mar del Giappone a novembre (Corrente di Tsushima, calda, che scorre proprio sud→nord): Genkai-nada ~19 °C · Wakasa ~17 · Niigata ~14. **La rotta cavalca la corrente calda — e più sale, più il viaggio stesso la rallenta.**
 
 ---
 
@@ -161,28 +163,40 @@ Tre fasce, dalla linea di transito verso fuori:
 
 ---
 
-## 10. Il percorso totale *(decisione utente 2026-08-19 — coordinate dell'utente, verbatim)*
+## 10. Il percorso totale *(agg. utente 2026-08-19: origine Madara-shima, Tomari rimossa — coordinate delle centrali dell'utente, verbatim)*
 
-Da **Genkai** (Kyūshū) a **Tomari** (Hokkaidō), sud→nord: **tutte le centrali che guardano il Mar del Giappone**, nell'ordine della costa — risalendo la Corrente di Tsushima. *Il viaggio comincia a Genkai: il gioco si chiama GENKAI.*
+### Il punto zero: Madara-shima *(decisione utente; i dettagli di colore sono proposte)*
 
-| # | Centrale | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Nuoto *(proposta)* |
+**Madara-shima** (馬渡島, arcipelago di Chinzei, Karatsu — Saga): un villaggio di pescatori di qualche centinaio di anime nel Genkai-nada, a pochi km dalla costa e **~14 km dalla centrale di Genkai** (coord. ~33,63 N · 129,76 E — da fissare su carta). L'isola dei due dèi: i santuari, e la chiesa dei discendenti dei cristiani nascosti.
+
+- **Le notti del canto** *(proposta)*: per notti i pescatori sentono il mare «rombare» nelle case — lo chiamano con la parola di sempre: **uminari**. Poi le reti tranciate, la trincea sul fondale, e all'alba la prima emersione documentata.
+- **L'insabbiamento** *(decisione utente; meccanica proposta)*: la denuncia della cooperativa ritirata, il rullino di un pescatore «trattenuto per accertamenti», l'ordine alla stazione di polizia: *nessuna diffusione — panico ingiustificato*. **Chi ha dato l'ordine, e quanti giorni passano: da decidere** — è il tempo in cui l'insabbiamento lavora.
+- **La riapparizione**: all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19; l'annuncio ai giocatori è il gōgai in `PRESENTAZIONE_WhatsApp.md`, l'immagine è il prompt P7). Da qui la storia è pubblica: la prima centrale è già persa, e sulla rotta ce ne sono altre sette.
+- **La V di Genkai — quello che si sa** *(mappe utente 2026-08-19, salvate in `Immagini/Mappa_01_Genkai_largo.png` e `Mappa_02_Genkai_V.png`)*: è entrata dal mare a **ponente** (dal largo di Madara), ha attraversato il promontorio della centrale **distruggendo tutto nel corridoio del passaggio**, ed è uscita nel mare a **levante-nordest**. Le motovedette la perdono al largo: **sparita**. All'apertura della campagna il mondo sa solo questo — la rotta delle 8 centrali è **verità del GM**, non del mondo: la destinazione va scoperta con gli indizi.
+- **Il nome come indizio** *(proposta)*: quando la stampa adotta «Uminari — così l'hanno chiamata i pescatori», il nome è l'impronta digitale del rapporto sepolto: qualcuno l'aveva **sentita prima** della prima apparizione ufficiale.
+
+### Le tappe
+
+Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, risalendo la Corrente di Tsushima. Senza Tomari, l'elenco coincide **esattamente con tutte le centrali affacciate sul Mar del Giappone in esercizio nel 1986**. *Il viaggio comincia a Genkai: il gioco si chiama GENKAI.*
+
+| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Nuoto *(proposta)* |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **Genkai** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | — (partenza) | — | — |
+| 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | ~129.76 | ~33.63 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
+| 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~14 km | ~15 km | ore |
 | 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~1,5 gg |
 | 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~1 g |
 | 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ore |
 | 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | mezza giornata |
 | 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | ore |
 | 7 | **Tsuruga** | Tsuruga | 136.01889 | 35.75194 | JAPC — 1 BWR (1970, il **primo reattore commerciale** del paese); n.2 in avviamento (com. feb. 1987). *Stesso gestore di Tōkai Daini; scandalo della perdita radioattiva 1981* | **0,4 km** | adiacente | — |
-| 8 | **Kashiwazaki-Kariwa** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~1-1,5 gg |
-| 9 | **Tomari** | Tomari (Hokkaidō) | 140.51250 | 43.03611 | Hokkaidō Electric — **SOLO CANTIERE**: il n.1 entrerà in servizio nel 1989. Nel 1986 non c'è combustibile in loco | 644 km *(include lo stretto di Tsugaru, ~20 km)* | ~800 km | ~3-4 gg (acque fredde) |
-| | | | | | **TOTALE** | **1.589 km** | **~1.900 km** | **~8-10 gg di solo nuoto** |
+| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~1-1,5 gg |
+| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~5-6 gg di solo nuoto** |
 
 ### Note sul percorso
 
 - **Genpatsu Ginza** 原発銀座 («la Ginza dei reattori» — soprannome **reale** della baia di Wakasa): le tappe 3→7 sono cinque centrali in ~60 km di costa, più il cantiere di Monju avviato proprio nel 1986. **In un giorno solo la bestia ne passa cinque**: è il crescendo naturale di metà percorso.
-- **La stagione avanza col viaggio**: tra nuoto e soste alle tappe il tour dura settimane — partenza a novembre = arrivo in Hokkaidō **nell'inverno**, in acque a ~10 °C e neve a terra: la fisica del viaggio produce da sola un terzo atto al rallentatore, con la bestia in semi-torpore.
-- **Tomari è un cantiere**: la meta finale del 1986 è una centrale che non esiste ancora. (Segnalo il fatto; cosa significhi per la trama è materia della prossima discussione.)
+- **La stagione avanza col viaggio**: tra nuoto e soste il tour dura settimane — il finale a Kashiwazaki cade nel **primo inverno dello yukiguni**, il paese della neve: acque a ~14 °C, neve sulla costa di Niigata, la bestia un po' più lenta a ogni tappa. Il rallentamento del terzo atto lo regala la geografia.
+- **La meta finale è la centrale di Tokyo**: Kashiwazaki-Kariwa è della TEPCO — l'elettricità della capitale si fa in Niigata. Arrivarle addosso è colpire Tokyo senza mai toccarla.
 - Il vecchio percorso Tokyo→Tōkai Daini (design §4) e il copione del telegiornale sono **cuciti sul Kantō**: da rimappare quando si decide la struttura (v. domande in coda alla sessione).
 - La mappa del percorso va fatta su **cartografia vera**, non generata: la aggiungo ai lavori quando si congela la struttura.
 
@@ -218,14 +232,14 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 **P6 · Il nuoto costiero** — la «scogliera che si muove»; la scena del battesimo dei pescatori. → `Immagini/Handout_Nuoto.png`
 > Dusk over the Sea of Japan: only a long row of jagged black dorsal plates cutting the waves like a moving reef, a luminous wake behind, spray. In the foreground small 1980s Japanese wooden fishing boats turning away in panic, a cape lighthouse beam sweeping. Dark indigo sea, last orange light on the horizon, grainy 35mm night photograph, motion blur, Japan 1986, no wind turbines.
 
-**P7 · L'emersione a Genkai** — la prima tappa: dove tutto comincia. → `Immagini/Handout_Genkai.png`
+**P7 · La riapparizione a Genkai** — l'alba sulle rive della centrale: l'inizio pubblico della storia. → `Immagini/Handout_Genkai.png`
 > Dawn mist on a rocky Kyushu headland: the twin concrete containment domes of a 1970s Japanese nuclear power plant on the shore, cranes and power lines. Out at sea, half-veiled by mist, a colossal 120-meter black kaiju risen waist-high from the water, jagged dorsal plates dripping, facing the plant, motionless. Grey-gold first light, calm sea, press photograph from a coast guard vessel, grainy 35mm, Japan November 1986.
 
 **P8 · Genpatsu Ginza** — la baia di Wakasa: cinque centrali, una bestia in mezzo. → `Immagini/Handout_Wakasa.png`
 > High oblique aerial photograph of a fjord-like Japanese bay coastline with steep green headlands, several separate nuclear power plants with white containment domes visible on successive promontories into the distance. Wading in the middle of the bay, a colossal 120-meter black kaiju with jagged dorsal plates, tiny military helicopters keeping distance. Overcast November light, dark sea, documentary aerial photo, Japan 1986.
 
-**P9 · Hokkaidō** — il freddo che vince: la bestia nel primo inverno. → `Immagini/Handout_Hokkaido.png`
-> First snow on a northern Japanese coastal plain, low pale winter sun: a colossal 120-meter black kaiju walking hunched and visibly sluggish, thick white steam pouring off its flanks and back, snow settling on its jagged dorsal plates, meltwater pooling in its giant footprints. Empty white fields, a distant fishing village with smoking chimneys, telegraph poles. Hokkaido 1986, cold muted palette, grainy documentary photograph.
+**P9 · La neve di Niigata** — lo yukiguni: la bestia rallenta verso la meta finale. → `Immagini/Handout_Niigata.png`
+> First snow on the Sea of Japan coast of Niigata, low pale winter sun: a colossal 120-meter black kaiju walking hunched and visibly sluggish along the shoreline, thick white steam pouring off its flanks and back, snow settling on its jagged dorsal plates, meltwater pooling in its giant footprints. Dark winter sea, rows of pine windbreaks and dunes, a distant fishing village with smoking chimneys, telegraph poles. Niigata snow country, Japan 1986, cold muted palette, grainy documentary photograph.
 
 **P10 · La saturazione** — il climax: i trenta metri. → `Immagini/Handout_Saturazione.png`
 > Low-angle photograph from a road bridge over a river: a 1980s Japanese fire-brigade ladder truck extended upward, a large industrial acoustic horn mounted on the ladder aimed at the sky, cables taut, tiny firefighters and policemen bracing. Thirty meters above, filling the frame, the head of a colossal black kaiju rearing back, the taut membrane behind its jaw lit white by floodlights, mud and spray exploding around. Night, rain of silt, dramatic but grounded, grainy photojournalism, Japan 1986.
@@ -236,6 +250,9 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 **P12 · Passaggio urbano (scorta)** — foto aerea gemella delle due esistenti, per qualunque tappa cittadina. → `Immagini/Handout_Citta.png`
 > Aerial disaster photograph over a mid-size 1980s Japanese coastal city: a colossal 120-meter black kaiju with jagged dorsal plates walking through the low urban fabric along a river, buildings reaching only to its knees, its long tail dragging a wake of dust, scattered fires and smoke columns along its path only, crowds and boxy cars evacuating on the main avenue. Overcast grey light, hyperdetailed aerial photo, Japan 1986, no modern glass towers.
 
+**P13 · La foto sequestrata** — Madara-shima: l'avvistamento che non doveva esistere (l'handout dell'insabbiamento). → `Immagini/Handout_Madara.png`
+> Blurry amateur photograph taken at dawn from a small wooden fishing boat, 1980s consumer film camera: half-emerged from the grey misty sea a few hundred meters away, an immense dark shape with a row of jagged plates, badly out of focus, tilted horizon, sea spray on the lens, motion blur, underexposed. In the background the low silhouette of a small island with a church steeple among village roofs. Expired grainy film, light leaks, orange film date stamp in the corner. Japan 1986.
+
 ---
 
 ## Derivazioni *(per controllo)*
@@ -244,4 +261,4 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 - **Massa**: volume ~10⁵ m³ (torso ellissoidale 55×45×35 m + arti e coda) × densità ~1 → ~100.000 t. Coerente col canone del genere (118,5 m → 92.000 t).
 - **Pressione al suolo**: 9,8×10⁸ N su ~400 m² (doppio appoggio) ≈ 2,5 MPa.
 - **Filtrazione**: fabbisogno = metabolismo mammifero a M^0,75 ÷ 10 (ectotermo) ≈ 20 t/g di organico; a 5-20 g/m³ utili ≈ 10⁶ m³ d'acqua/g — l'ordine di 3-4 soste da 40-60 min ai fiumi maggiori.
-- **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta.
+- **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta. Madara-shima: coordinate stimate (~33,63 N · 129,76 E), da fissare su carta.

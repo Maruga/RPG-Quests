@@ -1,11 +1,14 @@
 # RICHIAMO — Sviluppo v0.2
 
 > ⚠ **AGGIORNAMENTO 2026-08-19 (notte)** — decisioni utente arrivate dopo questa stesura:
-> **(1) altezza 120 m** (→ `SCHEDA_UMINARI.md`, canone); **(2) IL PERCORSO TOTALE È CAMBIATO**:
-> 9 centrali nucleari da Genkai (Kyūshū) a Tomari (Hokkaidō), ~1.900 km di costa del Mar del
-> Giappone (tabella in `SCHEDA_UMINARI.md` §10). Le sezioni di questo file cucite sul percorso
-> Tokyo→Tōkai (catena §4.2, scontri ambientati, scaletta §7, geometria §8) restano valide come
-> **modello di tappa**, ma vanno rimappate quando l'utente definisce la nuova struttura.
+> **(1) altezza 120 m** (→ `SCHEDA_UMINARI.md`, canone); **(2) IL PERCORSO TOTALE È CAMBIATO**
+> *(agg. 19/08 mattina)*: origine **Madara-shima** (avvistamento insabbiato, poi riapparizione
+> sulle rive della centrale di Genkai) → 8 centrali fino a **Kashiwazaki-Kariwa, meta finale**
+> (Tomari TOLTA); ~1.130 km di costa del Mar del Giappone (tabella in `SCHEDA_UMINARI.md` §10).
+> Le sezioni di questo file cucite sul percorso Tokyo→Tōkai (catena §4.2, scontri ambientati,
+> scaletta §7, geometria §8) restano valide come **modello di tappa**, ma vanno rimappate quando
+> l'utente definisce la nuova struttura — e l'aggancio di Senju (§1) è superato: candidato
+> naturale, la polizia di Karatsu/Chinzei che ricevette la denuncia di Madara (da decidere).
 
 **Stato:** bozza di sviluppo, 2026-08-19 — integra `kaiju-design.md` (v0.1) e `telegiornale-uminari.md`.
 **Regola di questo file:** qui dentro **niente è canone finché l'utente non conferma**. Le decisioni nuove sono raccolte in §0 (trama) e §10 (interpretazioni meccaniche); tutto il resto è messa in opera di quanto già scritto nel design.

@@ -42,11 +42,23 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
 - **2026-08-19 (notte) — DECISIONI UTENTE (in fila)**: ① **altezza 120 m** (canone; design §3.2
   riderivato con Froude 0,08, marcia e 55 km/g invariati) → creata **`SCHEDA_UMINARI.md`**
   (dimensioni, fisiologia, punti deboli, fasce di distanza, percorso, 12 prompt immagini);
-  ② **PERCORSO TOTALE nuovo**: 9 centrali Genkai→Tomari (coordinate utente in scheda §10,
-  ~1.900 km, Corrente di Tsushima, Genpatsu Ginza, Tomari=cantiere nel 1986). Le parti di
-  Sviluppo cucite su Tokyo→Tōkai = modello di tappa, da rimappare.
+  ② **PERCORSO TOTALE nuovo** (agg. 19/08 mattina): origine **Madara-shima** — avvistamento
+  **insabbiato**, poi riapparizione sulle rive della centrale di Genkai — quindi 8 centrali fino
+  a **Kashiwazaki-Kariwa (META FINALE; Tomari TOLTA)**. ~960 km ortodromici / ~1.130 di costa
+  (scheda §10, con «punto zero» Madara). Le parti di Sviluppo cucite su Tokyo→Tōkai = modello
+  di tappa, da rimappare; aggancio di Senju superato (candidato: polizia di Karatsu/Chinzei,
+  da decidere). Prompt: P7 riapparizione, P9→Niigata, nuovo P13 «foto sequestrata».
   ③ **La scia** definita su domanda utente → scheda §9 (v1.1): Solco/tamburo/sintomi, terra e
   mare, tabella «leggere la scia»; gli incendi delle foto = condotte del gas dopo il passaggio.
+  ④ **La centrale di Genkai viene DISTRUTTA al passaggio** (decisione utente): scritta
+  `PRESENTAZIONE_WhatsApp.md` — gōgai del «Genkai Shimpō 玄海新報» (testata inventata), data
+  proposta gio 6/11/1986 (distruzione mer 5 all'alba, ~06:51), 22 dispersi del turno di notte,
+  accusa d'insabbiamento in prima pagina, battesimo «Uminari». Gioco di parole 玄海/限界.
+  ⑤ **«Quello che si sa» fissato dalle mappe utente** (salvate: `Immagini/Mappa_01_Genkai_largo.png`
+  + `Mappa_02_Genkai_V.png`): la **V di Genkai** — dentro dal mare a ponente, attraverso il
+  promontorio (tutto distrutto nel corridoio), fuori a levante-nordest, POI SPARITA. All'apertura
+  il mondo non sa né dov'è né dove riemergerà: la rotta delle 8 centrali è verità del GM.
+  Gōgai allineato (niente sosta notturna a terra, «potrebbe essere ovunque»).
 - **IN ATTESA**: struttura sul percorso nuovo (che fine fa Tokyo/Tōkai/telegiornale? dove entrano
   i PG? date/gancio Mihara?) + le restanti decisioni di Sviluppo §0 e interpretazioni §10.
 - **POI**: pregen (5 poliziotti), 9 handout (lista in Sviluppo §11), posizioni emettitori su mappa,
