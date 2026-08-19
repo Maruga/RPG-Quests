@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/GENKAI_Regolamento_v1_3.md",
+                "file": "Investigare/Avventura Tra Galli/Storia Completa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GENKAI_Regolamento_v1_3"
+              "title": "Storia Completa"
             }
           }
         ]
@@ -227,33 +227,44 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "2943b494a8fdbbcd",
+  "active": "336108a0d05c9e8a",
   "lastOpenFiles": [
+    "Investigare/Avventura Tra Galli/PNG/PNG_Clienti_Scommettitori.md",
+    "Investigare/Avventura Tra Galli/PNG/PNG_Aoyagi_Mariko_Amante.md",
+    "Investigare/Avventura Tra Galli/PNG/# Tachibana Eiji — Vittima.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Okubo_Kamigyo.md",
+    "Investigare/Avventura Il Giudice/CLAUDE.md",
+    "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
+    "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
+    "Link Utili.md",
+    "Investigare/GENKAI_Regolamento_v1_3.md",
+    "Investigare/Avventura Richiamo/kaiju-design.md",
+    "Investigare/Avventura Richiamo/telegiornale-uminari.md",
+    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Dietro.png",
+    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Davanti.png",
+    "Investigare/Avventura Richiamo/Immagini/Copertina.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 19 ago 2026, 02_40_33.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 19 ago 2026, 02_38_52.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 19 ago 2026, 02_38_47.png",
+    "Investigare/Avventura Richiamo/Immagini",
+    "Investigare/Avventura Richiamo/Immagin",
+    "Investigare/Avventura Richiamo/Nuova cartella",
+    "Investigare/Avventura Richiamo",
+    "Investigare/Avventura",
+    "Investigare/Nuova cartella",
     "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 18 ago 2026, 14_18_15.png",
     "Varie/Spiriti Guardiani/Immagini/ChatGPT Image 18 ago 2026, 14_17_41.png",
     "Investigare/Wizard/codice/GenkaiWizard/obj/6eaebbe2-fefa-4c60-b057-1cd1536d674c.tmp",
     "Investigare/Wizard/codice/GenkaiWizard/obj/639b5e7c-e236-47f5-b72a-3817855697b6.tmp",
     "Investigare/Wizard/codice/GenkaiWizard/obj/ffe70610-6fe1-473e-83d9-ed4e5ba79ac9.tmp",
     "Investigare/Wizard/codice/GenkaiWizard/obj/4bd9c642-6a7f-497b-8c8c-eb105c31d5c6.tmp",
-    "Investigare/Wizard/codice/GenkaiWizard/obj/90ae4772-725a-4abf-8ef6-99b3deb8b117.tmp",
-    "Investigare/Wizard/codice/GenkaiWizard/obj/f4f2ece0-ae53-47c7-9c87-1b4614db45c0.tmp",
-    "Investigare/Wizard/codice/GenkaiWizard/Services/PostaSmtp.cs",
-    "Investigare/Wizard/codice/GenkaiWizard/Services/PostaSmtp.cs.tmp.22324.0b77cc47d282",
-    "Investigare/Wizard/codice/GenkaiWizard/obj/d68c109d-5beb-4da2-bc5c-0e167cfd5caa.tmp",
-    "Investigare/Wizard/codice/GenkaiWizard/obj/3e8e599a-93d0-4292-87d4-7c8bf1362b0a.tmp",
     "Investigare/Materiale/CrimeBoard Foto 2.png",
     "Investigare/GENKAI_Manuale_GM.md",
     "Investigare/GENKAI_Manuale_Situazioni.md",
     "Investigare/GENKAI_Registro_Nomi.md",
     "Investigare/GENKAI_Manuale_Giocatori.md",
     "Investigare/Materiale/Libretto/distretto_pg_esterno.jpg",
-    "Investigare/Materiale/CrimeBoard Foto.png",
-    "Investigare/Materiale/Libretto/Auto Investigatori Urgenza.png",
-    "Investigare/Materiale/Libretto/ChatGPT Image 17 ago 2026, 18_31_26.png",
-    "Investigare/Materiale/Libretto/Auto Investigatori Lampeggiante.png",
-    "Investigare/Materiale/Libretto/ChatGPT Image 17 ago 2026, 18_29_02.png",
-    "Investigare/Materiale/Libretto/Auto Investigatori.png",
-    "Investigare/Materiale/Libretto/kyoto.png",
     "Investigare/Materiale/Scheda_Distretto.md",
     "Investigare/png notevoli/Watanabe_Hideo_Procuratore.md",
     "Investigare/png notevoli/Ito_Daisuke_Scientifica.md",
@@ -263,17 +274,6 @@
     "Investigare/pg/PG_05_Fujita_Emi.md",
     "Investigare/pg/PG_04_Sato_Yuki.md",
     "Investigare/pg/PG_03_Nakamura_Shota.md",
-    "Investigare/pg/PG_02_Honda_Ryota.md",
-    "Investigare/pg/PG_01_Yamamoto_Kenji.md",
-    "Varie/Spiriti Guardiani/Avventura.md",
-    "Varie/Spiriti Guardiani/Armi.md",
-    "DnD/OneShot - Level Up/02 - Pacman.md",
-    "DnD/OneShot - Level Up/01 - Prologo.md",
-    "DnD/OneShot - La Pietra dell'Ombra/05 - Stanza Buia e Silenziosa.md",
-    "DnD/OneShot - La Pietra dell'Ombra/04 - Ritorno in città.md",
-    "DnD/OneShot - La Pietra dell'Ombra/03 - Viaggio di Ritorno.md",
-    "DnD/OneShot - La Pietra dell'Ombra/02 - Stanza Goblin.md",
-    "DnD/OneShot - La Pietra dell'Ombra/01 - Prologo Avventura.md",
-    "DnD/OneShot - La Pietra dell'Ombra/Materiale/Uova e Gemme.md"
+    "Investigare/pg/PG_02_Honda_Ryota.md"
   ]
 }
