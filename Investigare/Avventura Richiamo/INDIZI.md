@@ -1,6 +1,6 @@
 # RICHIAMO — Indizi per i PG
 
-**File di lavoro · v0.1 · 2026-08-19.** Un blocco per indizio, aggiunti man mano che l'utente li detta.
+**File di lavoro · v0.2 · 2026-08-19** *(v0.2: il segnale dei camion — captazione, reclami radio, triangolazione 3-4 h)*. Un blocco per indizio, aggiunti man mano che l'utente li detta.
 Come sempre: ciò che ha detto l'utente è **canone**, i dettagli riempiti da me sono **(proposta)**.
 
 ---
@@ -18,6 +18,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | Il carico | Il trasduttore a bassa frequenza (grosso come un motore navale), banchi di batterie, un ricevitore per l'accensione a distanza. Il suono esce da **feritoie nel pianale** | proposta (coerente con scheda §6.1) |
 | Il parcheggio | Sempre **accoppiato all'acqua o al suolo**: su tombini e canali, su ponticelli, sulle banchine dei porti — l'infrasuono si trasmette meglio. È anche un *pattern* riconoscibile | proposta |
 | La guardia | Sulle telecamere si vedono **operai**. In realtà sono **mercenari**: presidiano a vista da un secondo punto (una stanza in affitto, un furgone, un finto rilievo topografico) | canone |
+| **La trasmissione** | Un camion **trasmette solo nel settore attivo**, davanti alla bestia: si accende quando lei entra nel suo tratto (~5-6 ore prima del passaggio) e **tace quando è passata** — poi la squadra lo sposta avanti, sempre sulla linea. **Finché trasmette, si può captare e scoprire** | canone («finché il mostro non passa possono scoprirla»); durata ~5-6 h: proposta |
 | La reazione | A un'attenta osservazione o se arriva qualcuno sul posto (polizia o altro) e nascono problemi: **rispondono al fuoco** e **spostano il camioncino più avanti, sempre sulla linea**. Non inseguono: coprono lo spostamento e spariscono | canone |
 | La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione, **quasi contemporaneamente in tutti i punti** del percorso — con le date proposte: **30-31 ottobre**, da Kyūshū a Niigata | canone (date legate al 5/11) |
 | Quanti | Una quindicina-ventina lungo la rotta; il numero vero lo fissa la mappa (sotto) quando prepariamo l'avventura | proposta |
@@ -34,6 +35,11 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
    - **le stesse facce** in cantieri a prefetture di distanza;
    - la ditta sulla fiancata **non esiste** all'albo (una telefonata alla camera di commercio).
 4. **Andarci**: un controllo di routine finisce in niente (documenti pronti, «siamo in appalto»); una perquisizione o un riconoscimento finisce **a fuoco** — e il camioncino riparte, più avanti lungo la linea. Ogni approccio bruciato rende la rete più prudente.
+5. **Il ronzio** *(canone)*: l'emissione **disturba sensibilmente radio locali, TV e apparecchi** nel raggio di qualche chilometro — non è il canto che si sente (quello lavora sotto l'udito): è la sua **alimentazione**, un ronzio che pulsa nella statica AM col ritmo lento del richiamo, immagini TV che sfarfallano, citofoni che friggono. **La mappa dei reclami** — una telefonata alle emittenti, ai riparatori TV, ai radioamatori — dice *quale zona è calda*: gratis, senza strumenti, precisione al quartiere.
+6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** La finestra è il camion che trasmette (~5-6 ore, poi la bestia è passata e lui tace): **si parte al primo reclamo, o non si fa in tempo.**
+
+> **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. E i camion **oltre** il settore attivo sono spenti: lì valgono solo telecamere, pattern e previsione (punti 1-3).
+> **Sinergia con la Morsa** (scheda §6): ogni camion spostato per aggirare il recinto deve **riaccendersi** — una nuova finestra di captazione ogni volta.
 
 ### Cosa dice ai PG *(le inferenze — il cuore)*
 

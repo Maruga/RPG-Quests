@@ -1,6 +1,6 @@
 # NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v1.5 · 2026-08-19** *(v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.6 · 2026-08-19** *(v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -87,12 +87,37 @@ Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C
 | # | Debolezza | Come funziona | Come si scopre |
 |---|---|---|---|
 | 1 | **L'organo di risonanza** | La membrana da ~15 m dietro la mandibola. **Saturata da vicino (~30 m) con una sorgente 8-15 Hz ad alta potenza**, la bestia perde l'orientamento e rientra al mare a stima. Non si spara: si satura. *A organo spento (notte, torpore) la saturazione non produce nulla* (proposta) | la membrana freme a ogni cambio di rotta (foto aeree); l'esitazione dimostra che si può confondere; targa del trasduttore sugli emettitori |
-| 2 | **Il disturbo EM** | Cabine >154 kV, trasmettitori >50 kW, radar: si tiene a ~2 km, **aggira, non si ferma** — ogni aggiramento costa ~1 ora. Uso politico: accendere/staccare impianti = decidere chi si prende la passata | le anse «immotivate» della rotta ricalcano gli impianti; i tecnici dell'ente elettrico lo confermano |
+| 2 | **Il disturbo EM** | Cabine >154 kV, trasmettitori >50 kW, radar: si tiene a ~2 km, **aggira, non si ferma** — ogni aggiramento costa ~1 ora. Uso politico: accendere/staccare impianti = decidere chi si prende la passata. **Scoperta questa debolezza, si sblocca la Morsa (v. sotto)** | le anse «immotivate» della rotta ricalcano gli impianti; i tecnici dell'ente elettrico lo confermano |
 | 3 | **La notte** | Dal tramonto all'alba è ferma, spenta, innocua — **anche in mare, adagiata sul fondale** (decisione utente). La finestra dei giocatori, ovunque | pubblico dal primo giorno a terra; in mare lo dicono i mareografi: la scia si ferma |
 | 4 | **Il freddo** | Sotto i 12 °C rallenta; sotto i 5 va in torpore anche di giorno. **Il nord è un'arma** | l'andatura cala salendo; un biologo lo estrapola |
 | 5 | **Le soste prevedibili** | Filtra alle acque grandi 40-60 min: le soste si conoscono in anticipo — e si **allungano** aprendo chiuse e allagando (leva dei consorzi di bonifica) | la regolarità delle prime soste |
 
 **Cosa NON funziona:** ogni arma. Il .38 di ordinanza non arriva nemmeno al derma; l'artiglieria fa schegge superficiali senza cambiargli rotta; il rischio vero del fuoco pesante è **dove cade un corpo da centomila tonnellate** — per questo nessuno spara (linea ufficiale JSDF: assetto soccorso disastri).
+
+### La Morsa — controllarla con la rete elettrica *(canone utente 2026-08-19; taratura dei tiri: proposta)*
+
+Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2), la debolezza diventa una leva: l'ente elettrico può **alimentare linee e sottostazioni scelte** per deviarla — o per **tenerla**.
+
+| Uso | Effetto | Limite |
+|---|---|---|
+| **Deviare** | sposta il passaggio di quartiere o vallata («chi si prende la passata» — la scelta sporca resta) | serve una linea vera nel posto giusto: la rete è quella che è |
+| **Rallentare** | aggiramenti forzati: ogni ansa ~1 ora persa (**−12 km sui km del Nushi**) | aggira, non torna indietro |
+| **La Morsa piena** | un recinto di sorgenti accese (una ogni ~4 km: lei si tiene a ~2) che la **blocca dov'è**: km del Nushi fermi | solo dove deve passare **vicino a terra** — promontori, stretti, baie, l'avvicinamento a una centrale. In mare aperto non c'è presa |
+
+**Il tiro del guasto** *(canone: ogni ora una probabilità di malfunzionamento; un tiro fallito = si libera)* — la rete del 1986 non è fatta per questo. **A ogni ora di Morsa piena, il GM tira 2d6: se esce un risultato ≤ delle ore di Morsa di oggi, GUASTO — la bestia si libera.**
+
+| Ora di Morsa | 1ª | 2ª | 3ª | 4ª | 5ª | 6ª | 7ª | 8ª | 9ª | 10ª |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Guasto con 2d6 ≤ | — | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| In percentuale | 0% | 3% | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% |
+
+**In media regge 5-6 ore: la Morsa compra mezza giornata, non la campagna.**
+
+- **Il guasto**: un trasformatore in fiamme, una linea che scatta, il blackout a cascata su mezza prefettura — il recinto si apre e la bestia passa dal varco, riprendendo la rotta. Il colore lo mette il GM; il conto politico arriva comunque (un distretto al buio è un distretto furioso).
+- **Di notte** la bestia è ferma e le squadre riparano: all'alba il contatore riparte dalla 1ª ora. Se la rete del settore è già provata (guasto il giorno prima), il GM può farla ripartire dalla 2ª-3ª.
+- **Deviare e rallentare non richiedono tiri**: il prezzo lì è politico, non tecnico. Il tiro è solo per la Morsa piena — tenerla ferma *contro* il richiamo.
+- **La contromossa della Ryūgū-kai** *(proposta)*: il richiamo non si spegne — la chiama da oltre il recinto. Per aggirare la Morsa devono **spostare i camioncini** e ridisegnare la linea: cioè muoversi allo scoperto. **Ogni ora di Morsa è anche un'occasione investigativa** — furgoni in movimento, nuove accensioni, mercenari per strada.
+- **Il dilemma delle centrali** *(proposta da validare)*: una centrale **in esercizio** è essa stessa una grande sorgente (il parco trasformatori): da accesa la tiene a distanza. Ma i protocolli impongono lo **spegnimento d'emergenza** all'avvicinarsi — ed è proprio lo scram ad abbassare lo scudo (a Genkai è andata così: l'allarme ha spento la centrale minuti prima del passaggio). La Ryūgū-kai lo sa: *il protocollo di sicurezza è parte del piano*. Tenere accesa una centrale come muro è la scelta più estrema che il finale possa offrire.
 
 **Cosa la ferma davvero (canone utente 2026-08-19 — `STORIA.md`):** lo **strumento dell'organizzazione** — un **inibitore del segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. È la via di vittoria disegnata dell'avventura. (La saturazione ravvicinata dell'organo — riga 1 — resta biologia vera; se sia in gioco come piano-B disperato è da decidere.)
 

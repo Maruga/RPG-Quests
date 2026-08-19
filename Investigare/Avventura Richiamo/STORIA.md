@@ -41,6 +41,10 @@ proposta «Comitato del Terzo Giorno / Ōtsuka» di `RICHIAMO_Sviluppo.md` §5 (
 Quante centrali si salvano dipende da **quando** i PG chiudono la terza via: ogni giorno guadagnato
 è una tappa risparmiata (itinerario in `SCHEDA_UMINARI.md` §10).
 
+In più c'è la leva del **contenimento**: scoperto il fastidio per le sorgenti elettriche, la rete
+diventa **la Morsa** (scheda §6) — compra ore, non vittorie, con un tiro di guasto ogni ora; e
+costringe la Ryūgū-kai a spostare i camioncini allo scoperto.
+
 ## La regola del buio *(canone — nota per il GM)*
 
 L'avventura **finisce senza risposte** su chi, come, perché. Resistere alla tentazione di

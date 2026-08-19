@@ -71,6 +71,21 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑬ **IL SEGNALE DEI CAMION (canone utente)** → INDIZI v0.2: un camion trasmette SOLO nel settore
+  attivo davanti alla bestia (si accende ~5-6 h prima del passaggio — durata proposta — e tace a
+  bestia passata: «finché il mostro non passa possono scoprirla»); **individuare + montare
+  l'intervento = 3-4 ORE** (canone) coi furgoni radiogoniometrici del Min. Poste; il segnale
+  **disturba sensibilmente radio locali/TV/apparecchi** (canone) = la mappa dei reclami (zona
+  ~2-3 km, gratis; la triangolazione dà il punto). Corsa: finestra 5-6 h vs lavoro 3-4 h → si
+  parte al primo reclamo. Sinergia Morsa: camion spostato = si riaccende = nuova finestra.
+  ⑫ **LA MORSA (canone utente)**: scoperto il disturbo EM, la rete elettrica CONTROLLA la bestia —
+  deviare/rallentare (−12 km/ansa, senza tiri) o **Morsa piena** (recinto di sorgenti ogni ~4 km,
+  km del Nushi fermi; solo vicino a terra). **Tiro del guasto (canone: % oraria)**: ogni ora di
+  Morsa 2d6 ≤ ore trascorse = guasto, si libera (0/3/8/17/28/42/58%... — regge in media 5-6 h);
+  di notte si ripara, contatore all'alba da 1 (2-3 se rete provata). Proposte: contromossa
+  Ryūgū-kai = spostare camioncini allo scoperto (occasione investigativa); **dilemma centrali**
+  (accesa = scudo EM, ma lo scram protocollare abbassa lo scudo — a Genkai è andata così; parte
+  del piano Ryūgū-kai) DA VALIDARE. Scheda §6 v1.6 + puntatore in STORIA.
   ⑪ **REGOLA DEL RIGHELLO (decisione utente)**: velocità UNICA terra/mare; taratura proposta
   **120 km/giorno di luce = 12 km/ora di luce** (mantiene lo sbarco al 14/11; a 150 anticiperebbe
   al 12). Metodo: tacche da 120 km (G1-G10), di NOTTE è sulla tacca del giorno, di giorno = ore
