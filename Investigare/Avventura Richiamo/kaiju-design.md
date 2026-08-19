@@ -176,12 +176,14 @@ Nessuno spara mai al mostro con profitto. L'unico momento in cui un PG è vicino
 
 ## 10. Da decidere
 
-- [ ] Nome della creatura (e chi glielo dà: stampa, esercito, un ricercatore)
-- [ ] Identità e movente dei terroristi
-- [ ] Esiste davvero un secondo esemplare? Il finale 3 dice di sì — verificare che regga anche nei finali 1 e 2
-- [ ] Numero esatto di emettitori e loro posizioni sulla mappa
-- [ ] Scaletta minuto per minuto delle 4 ore
-- [ ] Come i PG entrano nella vicenda (primo aggancio investigativo)
+- [x] Nome della creatura — **Uminari**, dai pescatori della baia, adottato dai quotidiani della sera (telegiornale, ed. 1 del 12/11)
+- [ ] Identità e movente dei terroristi → proposta in `RICHIAMO_Sviluppo.md` §5 (Ōtsuka Shirō), da confermare
+- [ ] Esiste davvero un secondo esemplare? → proposta in `RICHIAMO_Sviluppo.md` §9 (sì, in tutti i finali), da confermare
+- [ ] Numero esatto di emettitori e loro posizioni sulla mappa → catena in `RICHIAMO_Sviluppo.md` §4 (14 coppie + ED + EX), posizioni puntuali da fissare su mappa
+- [ ] Scaletta minuto per minuto delle 4 ore → `RICHIAMO_Sviluppo.md` §7, da congelare dopo le conferme
+- [ ] Come i PG entrano nella vicenda → proposta in `RICHIAMO_Sviluppo.md` §1 (la squadra di Senju), da confermare
+
+> **Stato 2026-08-19**: sviluppo v0.2 in `RICHIAMO_Sviluppo.md` — proposte per tutti i punti aperti, in attesa delle conferme dell'utente (elenco decisioni in §0 di quel file).
 
 ---
 

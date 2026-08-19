@@ -2,7 +2,7 @@
 
 > File **trasversale** a tutte le avventure (non appartiene a nessuna cartella-avventura).
 > Serve a evitare **omonimie** (stesso nome + cognome su personaggi diversi) tra PG, PNG notevoli, Kage e i PNG delle singole avventure.
-> Ultimo aggiornamento: **2026-08-16** (aggiunta *Tanto Rumore*).
+> Ultimo aggiornamento: **2026-08-19** (aggiunta *Richiamo*).
 
 ## Come usarlo
 
@@ -83,6 +83,11 @@ Aoki Hideki · Chiba Hiroko · Ishida Kazuhiko · Matsui Kenta (il colpevole) ·
 Aikawa Daichi · Aikawa Shinobu · Fukami Ryōsuke · Hayakawa Tatsuya (notevole) · Hibino Shōzō · Kamogawa Mitsue · Kamogawa Takumi · Kuze Norio · Kuze Wataru · Makimura Sadao · Mizuno Itsuki · Mizuno Kaho · Mizuno Kōichi · Mizuno Sanae · Nishimura Sae · Ogata Ken · Ōhara Nobuyuki · Seki Tadashi (il killer) · Seki Tomiko · Seki Torazō · Tachibana Jun · Todoroki Isamu · Tsujimura Hiroshi · Tsujimura Keiko · Tsujimura Manabu
 *(Gonda Susumu ricorrente)*
 *Nota: cognome **Mizuno** condiviso con Occhi di Volpe (famiglie diverse, nomi diversi — non omonimia).*
+
+### Richiamo *(avventura kaijū, Tokyo→Ibaraki nov. 1986 — cartella `Avventura Richiamo/`, sessione dedicata; registrata 2026-08-19)*
+Kobayashi Ai (meteorologa NKB) · Morikawa Jun'ichi (conduttore NKB)
+*Proposti in bozza (da confermare — `RICHIAMO_Sviluppo.md` §12):* Hoshino Makoto (capitano JSDF) · Nagashima Takeo (ingegnere ente elettrico) · Ōtsuka Shirō (il fondatore del Comitato) · Sakuragi Jun (luogotenente) · Semba Kiyoshi (manovale catturato) · Umezawa Kaori (dottoranda geofisica)
+*Nota: nessuna omonimia piena. Cognome **Kobayashi** già presente altrove con nomi diversi (ammesso); Morikawa, Ōtsuka, Sakuragi, Umezawa, Nagashima, Hoshino, Semba: cognomi nuovi nel registro.*
 
 ### Sake
 Endo Toshio · Fujimoto Akemi · Fujimoto Shinji · **Hayashi Kenji** ⚠ · Hayashi Taro (padre, deceduto) · Ishii Takuya · Kano Gentaro · **Mori Sachiko** ⚠ · Morimoto Hiroshi (medico) · Morita Keisuke · Nakamura Daisuke · Nishida Goro · Ogawa Masaru (colpevole) · Ogawa Reiko · Sato Harumi · Tanaka Kazuo (la vittima) · Tanaka Yuki · Toda Yumi · Watanabe Jun

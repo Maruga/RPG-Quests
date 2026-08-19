@@ -11,6 +11,18 @@
 
 ## Da applicare
 
+### 2026-08-19 · RICHIAMO (nuova sessione) → TUTTE · Nuova avventura «Richiamo» in `Avventura Richiamo/`
+
+L'utente ha aperto una sessione dedicata nella cartella `Avventura Richiamo/`: avventura kaijū
+(**Uminari**, baia di Tokyo → centrale di Tōkai Daini, 12–14 novembre 1986), GENKAI usato come
+sistema di scontro (Shōtotsu **v2.1** corrente — pistola 3/2/4 già recepita) + tiri standard.
+Stato: design v0.1 dell'utente (`kaiju-design.md` + `telegiornale-uminari.md` + 3 immagini)
+→ sviluppo v0.2 proposto (`RICHIAMO_Sviluppo.md`), in attesa delle conferme dell'utente.
+- `GENKAI_Registro_Nomi.md`: aggiunta sezione *Richiamo* — 2 nomi canone dal telegiornale
+  (Morikawa Jun'ichi, Kobayashi Ai) + 6 proposti in bozza; nessuna omonimia piena.
+- Nulla da applicare per REGOLE/WIZARD/STARTERKIT: presa in carico della cartella (non toccarla).
+  **STATO: informativa.**
+
 ### 2026-08-18 · STARTERKIT (nuova sessione) → TUTTE · La cartella «Starter Kit/» ha una sessione dedicata
 
 Ordine dell'utente: da oggi lo Starter Kit è gestito da una **sessione AI dedicata** («STARTERKIT»),
