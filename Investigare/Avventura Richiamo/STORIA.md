@@ -9,13 +9,15 @@ proposta «Comitato del Terzo Giorno / Ōtsuka» di `RICHIAMO_Sviluppo.md` §5 (
 ## La verità del GM
 
 1. **L'organizzazione.** Un'organizzazione criminale di più persone è riuscita a **risvegliare e
-   attirare** la creatura. **Non si saprà mai chi siano.** Qualche indizio su di loro si troverà
+   attirare** la creatura. Si firma **Ryūgū-kai** 竜宮会 — «la Società del Palazzo del Drago»
+   (decisione utente 2026-08-19): un nome-maschera, tutto ciò che il paese avrà mai di loro.
+   **Non si saprà mai chi siano.** Qualche indizio su di loro si troverà
    (INDIZI, blocco 4 — da dettare), ma **dove e come** abbiano risvegliato il mostro **non si
    scoprirà mai**. I capi non hanno volto, nome, né movente dichiarato. *(Canone.)*
 2. **Il piano.** La creatura viene guidata di centrale in centrale lungo il Mar del Giappone
    (catena dei camioncini — INDIZI blocco 1) fino a Kashiwazaki-Kariwa. Ogni tappa raggiunta è
    una centrale distrutta. **I PG devono fermarla prima che le distrugga tutte.** *(Canone.)*
-3. **Il riscatto — il depistaggio.** Dopo Genkai, l'organizzazione chiede un pagamento in
+3. **Il riscatto — il depistaggio.** Dopo Genkai, la **Ryūgū-kai** chiede un pagamento in
    **lingotti d'oro**, da consegnare «in un punto che verrà comunicato». **Ai capi l'oro non
    interessa: serve a depistare** — far credere al paese che sia un'estorsione (pagare = fermarla),
    bruciare giorni, risorse e attenzione mentre il piano procede. *(Canone.)*
@@ -45,8 +47,9 @@ L'avventura **finisce senza risposte** su chi, come, perché. Resistere alla ten
 rivelare: il vuoto è il punto. Si ferma il mostro, **non si chiude il caso** — il fascicolo resta
 aperto, i lingotti (se consegnati) spariti, i fermati sono manovalanza che non ha mai visto un
 volto. È il finale più GENKAI possibile: il limite raggiunto è quello degli investigatori.
-*(Proposta di colore: l'organizzazione non firma mai i comunicati — sarà la stampa a doverle dare
-un nome, da definire.)*
+Il nome che firma i comunicati — **Ryūgū-kai** 竜宮会, il palazzo in fondo al mare di Urashima
+Tarō: ciò che il mare custodisce e non andava aperto — è una maschera scelta con cura, ed è
+**tutto ciò che resterà nei fascicoli** (decisione utente 2026-08-19).
 
 ## Linea temporale di servizio *(proposta — agganciata all'itinerario non contrastato)*
 

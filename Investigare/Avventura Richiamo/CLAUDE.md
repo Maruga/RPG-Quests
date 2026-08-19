@@ -71,6 +71,13 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑩ **NOMI scelti dall'utente (2026-08-19)**: organizzazione = **Ryūgū-kai** 竜宮会 («Società del
+  Palazzo del Drago» — la maschera con cui firma; l'identità vera resta ignota); mostro =
+  **Nushi** 主 («il Padrone»). Soluzione a strati applicata (reversibile): *il Nushi* = la cosa,
+  *l'uminari* = la parola dei pescatori per il suo rombo → l'indizio-del-nome sopravvive con
+  entrambe. Aggiornati: scheda (titolo NUSHI, riga Nome, letti del Nushi, §10), STORIA, INDIZI
+  (firma della richiesta), gōgai in PRESENTAZIONE + COPERTINA. Il FILE scheda resta
+  `SCHEDA_UMINARI.md` (nome valido: uminari sopravvive come strato; evita di rompere i rimandi).
   ⑨ **LA STORIA dettata dall'utente → `STORIA.md` (CANONE)**: organizzazione criminale ANONIMA,
   **mai identificata** — né come/dove abbia risvegliato la creatura («regola del buio»: si ferma
   il mostro, NON si chiude il caso) → **proposta Comitato/Ōtsuka SUPERATA** (registro nomi

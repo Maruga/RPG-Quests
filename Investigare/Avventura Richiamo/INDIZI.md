@@ -91,7 +91,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 - Dopo Genkai, l'organizzazione chiede il pagamento in **lingotti d'oro**; il punto di consegna «**verrà comunicato**». *(Canone.)*
 - **Ai capi l'oro non interessa: è depistaggio** — il paese si convince che pagare fermi la bestia, e brucia giorni mentre il piano procede. *(Canone.)*
-- Proposte di servizio: **un miliardo di yen in lingotti ≈ mezza tonnellata d'oro** (trasportabile da una squadra con un furgone o una barca); la richiesta arriva alle autorità **senza firma** e trapela alla stampa (il rumore amplifica il depistaggio); giorno 3 (7/11), punto comunicato la sera del giorno 5 (9/11), consegna il giorno 6 (10/11) — *mentre a Wakasa cadono le prime cupole*.
+- Proposte di servizio: **un miliardo di yen in lingotti ≈ mezza tonnellata d'oro** (trasportabile da una squadra con un furgone o una barca); la richiesta arriva alle autorità firmata **Ryūgū-kai** 竜宮会 (decisione utente) e trapela alla stampa — il nome-maschera fa il giro del paese e amplifica il depistaggio; giorno 3 (7/11), punto comunicato la sera del giorno 5 (9/11), consegna il giorno 6 (10/11) — *mentre a Wakasa cadono le prime cupole*.
 
 ### La consegna (il set-piece)
 

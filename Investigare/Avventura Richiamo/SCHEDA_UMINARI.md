@@ -1,6 +1,6 @@
-# UMINARI 海鳴り — Scheda del mostro
+# NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v1.3 · 2026-08-19** *(v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v1.4 · 2026-08-19** *(v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| Nome | **Uminari** 海鳴り — «il rombo del mare»: la parola con cui i pescatori di **Madara-shima** chiamarono il canto notturno, prima ancora di vederla. Quando la stampa adotterà il nome, il nome stesso sarà la prova del rapporto sepolto *(proposta — v. §10, punto zero)* |
+| Nome | **Nushi** 主 — «il Padrone» (decisione utente 2026-08-19): nel folklore ogni grande acqua ha il suo *nushi*, lo spirito-padrone antichissimo — è la parola dei vecchi di Madara, e dal gōgai in poi è il suo nome. **Uminari** 海鳴り «il rombo del mare» resta la parola dei pescatori per il suo **suono**: «si sente l'uminari» = sta arrivando. Entrambe nascono a Madara **prima** dell'apparizione ufficiale (v. §10, il nome come indizio) |
 | Origine | **Madara-shima**, Genkai-nada: prima emersione documentata — **e insabbiata** (v. §10, punto zero) |
 | Prima apparizione pubblica | all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19): da lì la storia non si nasconde più |
 | Natura | Animale marino colossale. **Non è ostile e non può essere combattuto**: non caccia, non insegue, non reagisce ai veicoli. Segue un **richiamo** |
@@ -139,7 +139,7 @@ Tre fasce, dalla linea di transito verso fuori:
 - **La liquefazione**: nei suoli alluvionali e nei riporti costieri (mezzo Giappone urbano) il martellamento fa affiorare sabbia e acqua: pali storti, case inclinate in una fascia di ~100 m.
 - **La linea del sale**: nei primi 2-3 km da ogni sbarco scola acqua di mare a tonnellate: in una settimana i campi lungo la linea **ingialliscono** — la scia si vede a un mese di distanza, dal finestrino del treno.
 - **La biologia**: cirripedi e denti di cane strappati dai fianchi restano sugli spigoli dei palazzi; pesce e krill sgocciolati dalla filtrazione; e dopo il passaggio **il silenzio degli uccelli** — niente canti per giorni. L'odore resta più a lungo di tutto: bassa marea, iodio, fango.
-- **I giacigli**: dove ha passato la notte, due conche profonde e un'area compressa grande come un isolato — i «letti di Uminari», meta di curiosi prima ancora delle transenne.
+- **I giacigli**: dove ha passato la notte, due conche profonde e un'area compressa grande come un isolato — i «letti del Nushi», meta di curiosi prima ancora delle transenne.
 
 ### In mare
 
@@ -175,7 +175,7 @@ Tre fasce, dalla linea di transito verso fuori:
 - **L'insabbiamento** *(decisione utente; meccanica proposta)*: la denuncia della cooperativa ritirata, il rullino di un pescatore «trattenuto per accertamenti», l'ordine alla stazione di polizia: *nessuna diffusione — panico ingiustificato*. **Chi ha dato l'ordine, e quanti giorni passano: da decidere** — è il tempo in cui l'insabbiamento lavora.
 - **La riapparizione**: all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19; l'annuncio ai giocatori è il gōgai in `PRESENTAZIONE_WhatsApp.md`, l'immagine è il prompt P7). Da qui la storia è pubblica: la prima centrale è già persa, e sulla rotta ce ne sono altre sette.
 - **La V di Genkai — quello che si sa** *(mappe utente 2026-08-19, salvate in `Immagini/Mappa_01_Genkai_largo.png` e `Mappa_02_Genkai_V.png`)*: è entrata dal mare a **ponente** (dal largo di Madara), ha attraversato il promontorio della centrale **distruggendo tutto nel corridoio del passaggio**, ed è uscita nel mare a **levante-nordest**. Le motovedette la perdono al largo: **sparita**. All'apertura della campagna il mondo sa solo questo — la rotta delle 8 centrali è **verità del GM**, non del mondo: la destinazione va scoperta con gli indizi.
-- **Il nome come indizio** *(proposta)*: quando la stampa adotta «Uminari — così l'hanno chiamata i pescatori», il nome è l'impronta digitale del rapporto sepolto: qualcuno l'aveva **sentita prima** della prima apparizione ufficiale.
+- **Il nome come indizio** *(proposta)*: quando sui giornali affiorano «**il Nushi**» e «l'uminari» — la parola dei vecchi per la cosa, quella dei pescatori per il suo rombo — quelle parole sono l'impronta digitale del rapporto sepolto: qualcuno a Madara l'aveva **sentita e nominata prima** della prima apparizione ufficiale.
 
 ### Le tappe
 

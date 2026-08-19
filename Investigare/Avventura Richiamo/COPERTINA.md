@@ -21,7 +21,7 @@ Sette mesi dopo Černobyl', la parola che nessuno voleva più stampare è tornat
 
 È rimasto a terra il tempo di attraversare il promontorio: entrato dall'acqua a ponente, uscito nell'acqua a levante — e nel mezzo non è rimasto niente. Le motovedette l'hanno seguito al largo, rotta nord-est, poi più niente: sparito. A quest'ora potrebbe essere ovunque, sotto il Mar del Giappone.
 
-I pescatori hanno una parola per il suono che faceva di notte: *uminari*. Il rombo del mare. Da ieri è il suo nome.
+I pescatori hanno una parola per il suono che faceva di notte: *uminari*, il rombo del mare. Ma i vecchi di Madara, per la cosa che lo faceva, ne usano una più antica: **il Nushi**. Il Padrone.
 
 «Non è arrabbiato», ha detto un vecchio di Madara guardando il fumo, facendosi il segno della croce. «Sta rispondendo a qualcosa.»
 
