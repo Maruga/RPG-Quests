@@ -39,7 +39,16 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   di Senju), rete indizi F1–F7, catena emettitori (14 coppie + ED + EX col timer 09:40), Comitato
   (proposta Ōtsuka/Sakuragi), scontri S1–S5 + infiltrazione EX, scaletta, geometria dei finali.
   Registro nomi e registro modifiche aggiornati.
-- **IN ATTESA**: conferme dell'utente sulle 8 decisioni di Sviluppo §0 + interpretazioni §10.
+- **2026-08-19 (notte) — DECISIONI UTENTE (in fila)**: ① **altezza 120 m** (canone; design §3.2
+  riderivato con Froude 0,08, marcia e 55 km/g invariati) → creata **`SCHEDA_UMINARI.md`**
+  (dimensioni, fisiologia, punti deboli, fasce di distanza, percorso, 12 prompt immagini);
+  ② **PERCORSO TOTALE nuovo**: 9 centrali Genkai→Tomari (coordinate utente in scheda §10,
+  ~1.900 km, Corrente di Tsushima, Genpatsu Ginza, Tomari=cantiere nel 1986). Le parti di
+  Sviluppo cucite su Tokyo→Tōkai = modello di tappa, da rimappare.
+  ③ **La scia** definita su domanda utente → scheda §9 (v1.1): Solco/tamburo/sintomi, terra e
+  mare, tabella «leggere la scia»; gli incendi delle foto = condotte del gas dopo il passaggio.
+- **IN ATTESA**: struttura sul percorso nuovo (che fine fa Tokyo/Tōkai/telegiornale? dove entrano
+  i PG? date/gancio Mihara?) + le restanti decisioni di Sviluppo §0 e interpretazioni §10.
 - **POI**: pregen (5 poliziotti), 9 handout (lista in Sviluppo §11), posizioni emettitori su mappa,
   copione-GM definitivo. Fatti reali da riverificare su fonte primaria prima della pubblicazione
   (design §11).

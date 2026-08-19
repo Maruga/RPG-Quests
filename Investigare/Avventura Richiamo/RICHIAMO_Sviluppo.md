@@ -1,5 +1,12 @@
 # RICHIAMO — Sviluppo v0.2
 
+> ⚠ **AGGIORNAMENTO 2026-08-19 (notte)** — decisioni utente arrivate dopo questa stesura:
+> **(1) altezza 120 m** (→ `SCHEDA_UMINARI.md`, canone); **(2) IL PERCORSO TOTALE È CAMBIATO**:
+> 9 centrali nucleari da Genkai (Kyūshū) a Tomari (Hokkaidō), ~1.900 km di costa del Mar del
+> Giappone (tabella in `SCHEDA_UMINARI.md` §10). Le sezioni di questo file cucite sul percorso
+> Tokyo→Tōkai (catena §4.2, scontri ambientati, scaletta §7, geometria §8) restano valide come
+> **modello di tappa**, ma vanno rimappate quando l'utente definisce la nuova struttura.
+
 **Stato:** bozza di sviluppo, 2026-08-19 — integra `kaiju-design.md` (v0.1) e `telegiornale-uminari.md`.
 **Regola di questo file:** qui dentro **niente è canone finché l'utente non conferma**. Le decisioni nuove sono raccolte in §0 (trama) e §10 (interpretazioni meccaniche); tutto il resto è messa in opera di quanto già scritto nel design.
 **Sistema:** GENKAI — Lo Scontro / Shōtotsu **v2.1** (pistola 3/2/4, colpi multipli a tiro unico, Fuori Tempo opzionale) + tiri standard fuori dallo scontro (proposta, v. §2).

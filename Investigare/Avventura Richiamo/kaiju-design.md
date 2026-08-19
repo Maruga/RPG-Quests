@@ -9,7 +9,7 @@
 
 ## 1. Premessa in cinque righe
 
-Una creatura marina di 50 metri emerge nella baia di Tokyo e cammina verso nord-est. Non è ostile e non può essere combattuta: segue un **richiamo** che qualcuno sta emettendo.
+Una creatura marina di 120 metri emerge nella baia di Tokyo e cammina verso nord-est. Non è ostile e non può essere combattuta: segue un **richiamo** che qualcuno sta emettendo.
 
 Un gruppo terroristico rivendica il controllo del percorso e chiede denaro al governo per fermarlo. La destinazione finale è la centrale nucleare di **Tōkai Daini**, in Ibaraki. Il giro allungato attraverso il Kantō è deliberato: se la bestia puntasse dritta all'obiettivo nessuno avrebbe tempo né motivo di pagare.
 
@@ -32,6 +32,8 @@ I PG non devono uccidere niente. Devono **capire il segnale e spegnerlo** prima 
 
 Senza nome ufficiale. La stampa la battezza durante l'avventura — vedi il copione del telegiornale.
 
+> **Scheda di riferimento completa** (dimensioni 120 m — decisione utente 2026-08-19 —, fisiologia, percorso totale, prompt immagini): `SCHEDA_UMINARI.md`.
+
 ### 3.1 Fisiologia
 
 Una sola biologia spiega tutte le regole di comportamento.
@@ -47,10 +49,10 @@ Una sola biologia spiega tutte le regole di comportamento.
 
 | Parametro | Valore | Derivazione |
 |---|---|---|
-| Altezza | 50 m | — |
-| Altezza d'anca | ~18 m | proporzione bipede |
-| Andatura di marcia | **~20 km/h** | Froude: v = √(0,25 · 9,81 · 18) ≈ 6,6 m/s |
-| Avanzamento utile | **5,5 km/h** | ~28% dell'andatura: fiumi, edifici, soste, deviazioni |
+| Altezza | 120 m | decisione utente 2026-08-19 (stima dalle foto aeree) |
+| Altezza d'anca | ~43 m | proporzione bipede (36%) |
+| Andatura di marcia | **~21 km/h** | Froude da pachiderma (quadrato-cubo, Fr 0,08): v = √(0,08 · 9,81 · 43) ≈ 5,8 m/s |
+| Avanzamento utile | **5,5 km/h** | ~26% dell'andatura: fiumi, edifici, soste, deviazioni |
 | Giornata | ~10 h | alba → tramonto, novembre |
 | **Percorrenza** | **~55 km/giorno** | |
 
@@ -170,7 +172,7 @@ Senza questo elemento l'unica soluzione razionale è pagare, e i PG diventano sp
 
 Solo il modulo di combattimento. Tutti gli scontri sono **uomo contro uomo**: cellule armate a presidio dei siti, sciacallaggio durante l'evacuazione, blocchi stradali.
 
-Nessuno spara mai al mostro con profitto. L'unico momento in cui un PG è vicino alla creatura è l'atto 3, con un emettitore in mano, a 30 metri da una testa da 50.
+Nessuno spara mai al mostro con profitto. L'unico momento in cui un PG è vicino alla creatura è l'atto 3, con un emettitore in mano, a 30 metri da una testa da 120.
 
 ---
 
