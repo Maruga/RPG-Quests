@@ -86,7 +86,7 @@ Aikawa Daichi · Aikawa Shinobu · Fukami Ryōsuke · Hayakawa Tatsuya (notevole
 
 ### Richiamo *(avventura kaijū, Tokyo→Ibaraki nov. 1986 — cartella `Avventura Richiamo/`, sessione dedicata; registrata 2026-08-19)*
 Kobayashi Ai (meteorologa NKB) · Morikawa Jun'ichi (conduttore NKB)
-*Proposti in bozza (da confermare — `RICHIAMO_Sviluppo.md` §12):* Hoshino Makoto (capitano JSDF) · Nagashima Takeo (ingegnere ente elettrico) · Ōtsuka Shirō (il fondatore del Comitato) · Sakuragi Jun (luogotenente) · Semba Kiyoshi (manovale catturato) · Umezawa Kaori (dottoranda geofisica)
+*Proposti in bozza (`RICHIAMO_Sviluppo.md` §12) — **aggiornamento 2026-08-19**: la storia dettata dall'utente prevede un'organizzazione **anonima mai identificata**, quindi **Ōtsuka Shirō, Sakuragi Jun e Semba Kiyoshi sono DECADUTI** (mai usati); restano in bozza da rivalutare nella nuova struttura:* Hoshino Makoto (capitano JSDF) · Nagashima Takeo (ingegnere ente elettrico) · Umezawa Kaori (dottoranda geofisica)
 *Nota: nessuna omonimia piena. Cognome **Kobayashi** già presente altrove con nomi diversi (ammesso); Morikawa, Ōtsuka, Sakuragi, Umezawa, Nagashima, Hoshino, Semba: cognomi nuovi nel registro.*
 
 ### Sake

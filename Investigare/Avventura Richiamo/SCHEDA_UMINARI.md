@@ -98,6 +98,8 @@ Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C
 
 **Cosa NON funziona:** ogni arma. Il .38 di ordinanza non arriva nemmeno al derma; l'artiglieria fa schegge superficiali senza cambiargli rotta; il rischio vero del fuoco pesante è **dove cade un corpo da centomila tonnellate** — per questo nessuno spara (linea ufficiale JSDF: assetto soccorso disastri).
 
+**Cosa la ferma davvero (canone utente 2026-08-19 — `STORIA.md`):** lo **strumento dell'organizzazione** — un **inibitore del segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. È la via di vittoria disegnata dell'avventura. (La saturazione ravvicinata dell'organo — riga 1 — resta biologia vera; se sia in gioco come piano-B disperato è da decidere.)
+
 ---
 
 ## 7. Alimentazione
@@ -214,7 +216,7 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 
 - **Il regalo delle date**: partendo il 5/11, il finale cade il **14 novembre 1986** — e il **15 alle 17:25 il Mihara erutta davvero**. L'ancora storica del design originale («il giorno dopo, la storia vera comincia da sola») torna in piedi da sola, pur avendo cambiato tutto il percorso. Argomento forte per confermare le date proposte. *(Se il gancio Mihara/secondo esemplare resti in gioco è ancora da decidere — ma le date ora lo permettono.)*
 - **Sensibilità**: la scaletta scala linearmente sulla crociera — a 10 km/h l'arrivo slitta al ~17-18/11; a 20 km/h anticipa all'~11-12/11.
-- **Nota GM**: è l'itinerario **non contrastato**. Ogni successo dei giocatori sposta l'orologio in avanti; ogni tappa salvata è un giorno guadagnato dal paese.
+- **Nota GM**: è l'itinerario **non contrastato** — e **ogni tappa raggiunta è una centrale distrutta** (canone: i PG devono fermarla *prima che le distrugga tutte*, `STORIA.md`). Ogni successo dei giocatori sposta l'orologio in avanti; ogni giorno guadagnato è una centrale salvata.
 
 ### Note sul percorso
 

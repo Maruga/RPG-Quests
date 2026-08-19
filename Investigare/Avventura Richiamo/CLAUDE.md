@@ -71,6 +71,17 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑨ **LA STORIA dettata dall'utente → `STORIA.md` (CANONE)**: organizzazione criminale ANONIMA,
+  **mai identificata** — né come/dove abbia risvegliato la creatura («regola del buio»: si ferma
+  il mostro, NON si chiude il caso) → **proposta Comitato/Ōtsuka SUPERATA** (registro nomi
+  aggiornato: Ōtsuka/Sakuragi/Semba decaduti; Hoshino/Nagashima/Umezawa da rivalutare).
+  Dopo Genkai: riscatto in **LINGOTTI D'ORO** («punto comunicato poi») = **depistaggio** (ai capi
+  i soldi non servono); alla consegna combattimento possibile → **prigioniero vivo → ubicazione
+  dello STRUMENTO**: in realtà un **inibitore del segnale** → attivato, la creatura **torna al
+  mare dal punto più vicino** = la via di vittoria. Nemici: camioncini + altri terroristi.
+  INDIZI.md: blocchi 2 (oro: 1 mld ¥/500 kg proposta, 3 scene di consegna) e 3 (strumento:
+  ubicazione da decidere — nave appoggio o ex stazione d'ascolto) + blocco 4 segnaposto
+  (briciole sull'organizzazione, da dettare). Aperto: saturazione-organo come piano-B sì/no.
   ⑧ **INDIZI — iniziato `INDIZI.md`** (l'utente li detta a blocchi, «poi ti dico il resto»).
   Blocco 1 CANONE UTENTE — **il camioncino**: emettitori dentro camioncini tutti uguali travestiti
   da mezzi di cantiere (cartelli 工事中, abbandonati), guardati da mercenari-operai; se scoperti

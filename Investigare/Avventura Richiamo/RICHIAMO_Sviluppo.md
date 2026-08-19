@@ -9,6 +9,10 @@
 > scaletta §7, geometria §8) restano valide come **modello di tappa**, ma vanno rimappate quando
 > l'utente definisce la nuova struttura — e l'aggancio di Senju (§1) è superato: candidato
 > naturale, la polizia di Karatsu/Chinzei che ricevette la denuncia di Madara (da decidere).
+> **(3) LA STORIA è stata dettata** *(19/08, `STORIA.md`)*: organizzazione criminale **anonima,
+> MAI identificata** (né come/dove abbia risvegliato la creatura) → **la proposta §5
+> Comitato/Ōtsuka è SUPERATA** (resta archivio di idee); riscatto in **lingotti d'oro** =
+> depistaggio; **strumento-inibitore del segnale** = via di vittoria (INDIZI.md blocchi 2-3).
 
 **Stato:** bozza di sviluppo, 2026-08-19 — integra `kaiju-design.md` (v0.1) e `telegiornale-uminari.md`.
 **Regola di questo file:** qui dentro **niente è canone finché l'utente non conferma**. Le decisioni nuove sono raccolte in §0 (trama) e §10 (interpretazioni meccaniche); tutto il resto è messa in opera di quanto già scritto nel design.

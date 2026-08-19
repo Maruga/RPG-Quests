@@ -85,4 +85,54 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ---
 
+## Indizio 2 — L'oro *(canone utente 2026-08-19 — la cornice è in `STORIA.md`)*
+
+### La richiesta
+
+- Dopo Genkai, l'organizzazione chiede il pagamento in **lingotti d'oro**; il punto di consegna «**verrà comunicato**». *(Canone.)*
+- **Ai capi l'oro non interessa: è depistaggio** — il paese si convince che pagare fermi la bestia, e brucia giorni mentre il piano procede. *(Canone.)*
+- Proposte di servizio: **un miliardo di yen in lingotti ≈ mezza tonnellata d'oro** (trasportabile da una squadra con un furgone o una barca); la richiesta arriva alle autorità **senza firma** e trapela alla stampa (il rumore amplifica il depistaggio); giorno 3 (7/11), punto comunicato la sera del giorno 5 (9/11), consegna il giorno 6 (10/11) — *mentre a Wakasa cadono le prime cupole*.
+
+### La consegna (il set-piece)
+
+L'unico **appuntamento certo** con l'organizzazione: per i PG il valore non è l'oro — è la possibilità di **prendere qualcuno vivo**. *(Canone: qui ci può essere combattimento.)*
+
+Tre opzioni di scena *(proposta — il GM ne sceglie una)*:
+1. **Il mercato ittico all'alba** — porto minore, folla, casse di ghiaccio: lo scambio sparisce nei furgoni frigo;
+2. **La cava dismessa sulla costa** — un solo accesso, vedette in quota, via di fuga in barca;
+3. **Il trasbordo in mare** — un peschereccio incontra la motovedetta: il più difficile da chiudere.
+
+Presidio *(proposta, Shōtotsu v2.1)*: 3-4 **mercenari** (attr. 6, R6, pistole; uno con fucile da caccia 4/2/5 d4) + **il quadro logistico** (attr. 6, R6, pistola) — il bersaglio da prendere vivo. Dottrina solita: coprono, sganciano, non inseguono.
+
+### Il prigioniero (la chiave)
+
+- **Canone**: chi viene preso vivo può rivelare **il luogo dove si trova lo strumento per fermare il mostro**.
+- *(Proposte)*: il quadro conosce il luogo e la routine del presidio; dei capi **non sa niente** — nessuno li ha mai visti, ordini via cercapersone e lettere fermo-posta, paga in oro. Anche il suo buio è un indizio: l'organizzazione è compartimentata alla perfezione.
+
+---
+
+## Indizio 3 — Lo strumento *(canone utente 2026-08-19)*
+
+### La verità
+
+- Chi ne parla lo chiama «**lo strumento per fermare il mostro**». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. *(Canone.)*
+- È il fusibile dell'organizzazione — il loro interruttore d'emergenza se il piano sfugge di mano *(proposta)*.
+- **Ubicazione: da decidere.** Due proposte: **(a)** una **nave appoggio** ancorata al largo della rotta (l'assalto diventa navale, con la Guardia Costiera); **(b)** una **ex stazione di ascolto / faro dismesso** sulla costa tra Tsuruga e Kashiwazaki (assalto di terra, più classico).
+
+### L'assalto e l'attivazione
+
+- Il presidio è il più duro dell'avventura *(proposta)*: 2 **professionisti** (attr. 7, R9, pistola, Senmon Pistola 2, giubbotto Assorbe 3) + 2 mercenari (R6) + un **tecnico** che non combatte — e che sa accendere lo strumento (prenderlo vivo evita di doverci capire qualcosa da soli).
+- **Attivazione** → il segnale tace → la creatura si ferma, esita, **vira verso il mare più vicino** e sparisce. Dove accade decide quante centrali si sono salvate: è il finale.
+- Il camioncino catturato (Indizio 1) resta utile qui: capire la tecnologia dei trasmettitori aiuta a capire — o riparare, o forzare — l'inibitore *(proposta)*.
+
+---
+
+## Indizio 4 — Le briciole sull'organizzazione *(segnaposto — da dettare)*
+
+**Canone già fissato**: qualche indizio sull'organizzazione si trova, ma **chi siano, dove e come
+abbiano risvegliato la creatura non si scopre mai** (la «regola del buio», STORIA.md). Quali
+briciole seminare — e dove — lo detta l'utente.
+
+---
+
 *(Prossimi indizi: li detta l'utente — «poi ti dico il resto».)*
