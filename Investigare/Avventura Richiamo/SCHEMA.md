@@ -22,6 +22,7 @@
 | `percorso-marcatori-2h.csv` | **il nastro CANONE**: 42 marcatori (1d 06:05 → 4d 14:03), 12 km/h H24, km in ettometri | fonte utente 2026-08-20 |
 | `bollettini.md` | **gli 8 bollettini ai giocatori** (09:00/21:00): posizioni, bilanci, stato centrali, contaminazione + sinottico e note GM | **canone utente 2026-08-20** (verificato; fix-list v2 pendente) |
 | `arma-kaiju.md` | **l'arma segreta** (solo GM): pazienza 0-12 → scarico M 6,9 + impulso EM, 40 secondi, 6 ore d'immunità, trappola-Wakasa, cosa sopravvive | **canone GM utente 2026-08-20** (verificato; note pendenti — v. §5) |
+| `MAPPA_CAPANNONE_A3.html` | **la mappa tattica del covo, da tavolo**: A3 orizzontale stampabile (stile cartella-bersaglio 1986) — pianta a zone con postazioni G/C/M/M1-M2/K/P/R/T, coperture con Assorbe, note tattiche, inserti posizione (baia di Maizuru + scambio dell'oro) | pronto v1.0 (verificata a schermo) |
 | `BASI_MILITARI.md` | **v2.0 riscritto asciutto**: armi in parole povere (effetto+pazienza), 5 basi una riga l'una, cosa aiuta i PG (boe-microfono, cecchino amico, detonatore controllato, radio a valvole), **la nave-esca** ⚑ | pronto v2.0 (proposte ⚑: nave-esca, boe, SIGINT Misawa) |
 | `Immagini/` | Copertina · 2 foto aeree (handout) · 2 mappe utente | + 20 prompt da generare |
 | `kaiju-design.md` | concept e fisiologia originari (Tokyo→Tōkai) | **ARCHIVIO** |
@@ -97,10 +98,10 @@ Nastro CANONE: `percorso-marcatori-2h.csv` — **12 km/h esatti (verificati), H2
 |---|---|---|
 | 1 | ~~Il nodo notte~~ → **SCIOLTO** (decisione #22: si muove sempre); cascata già applicata | — |
 | 1-bis | **Date**: ancorare **1d = 11 novembre** → sbarco ven 14/11 14:03, Mihara il 15 (con 1d=5/11 il Mihara si sgancia; il gōgai andrà ridatato al 12) | scheda §10 |
-| 2 | **Aggancio PG**: la polizia di Karatsu/Chinzei che eseguì l'insabbiamento + **5 pregen** scheda ridotta | Sviluppo §1 (modello) |
+| 2 | **Aggancio PG**: la polizia di Karatsu/Chinzei che eseguì l'insabbiamento — ~~5 pregen~~ **DECISO (utente 2026-08-20): si usano le schede PG esistenti in `pg/`**; resta da definire solo il *come entrano* | Sviluppo §1 (modello) |
 | 3 | **Oro**: 1 mld ¥ (~500 kg) · 3 opzioni di scena per la consegna · il «quadro logistico» da prendere vivo | INDIZI 2 |
 | 4 | **Capannone di Maizuru** (zona utente): identità proposta — ex cantiere di demolizioni navali, porto ovest, banchina propria, a 2 km dalla 2ª sala; dispositivo su **semirimorchio** (antenna in acqua, 30′ di preparazione) · «copre, non spegne» | INDIZI 3 / SCONTRI §3 |
-| 4-bis | **Consegna**: 3 mld ¥ / 1,5 t · camion 4t imposto · trafori di Tsuruga (da fissare) · % trasmettitore 90/70/40 (−20 a impulsi) · l'oro finisce al capannone · 2ª sala = **Maizuru** (base navale) | INDIZI 2 / STORIA |
+| 4-bis | **Consegna**: 3 mld ¥ / 1,5 t · camion 4t imposto · **Traforo di Tsuruga, Hokuriku (~35.71/136.12 — stima da fissare su carta)** · % trasmettitore 90/70/40 (−20 a impulsi) · l'oro finisce al capannone · 2ª sala = **Maizuru** (base navale) | INDIZI 2 / STORIA / mappa A3 |
 | 5 | Derivate della catena: **faro demolito = centrale salvata** · catena che si auto-ripara · **~10 camion** · relitto di Genkai · mappa nel camion del **capo-settore** | INDIZI 1 |
 | 6 | **Dilemma delle centrali**: accesa = scudo EM, lo scram protocollare lo abbassa (parte del piano Ryūgū-kai) | scheda §6 |
 | 7 | Dettagli camion: Isuzu Elf box · ditta «Kyōsei Setsubi» · diesel+fusti · guardie (stat) · targhe rubate/acquisto in blocco | INDIZI 1 |

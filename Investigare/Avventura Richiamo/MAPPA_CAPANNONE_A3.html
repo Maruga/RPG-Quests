@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Cartella Bersaglio — Capannone di Maizuru (A3)</title>
+<style>
+  @page { size: A3 landscape; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:420mm; height:297mm; }
+  body {
+    font-family: "Courier New", "MS Gothic", monospace;
+    background:#f2ecdd; color:#1a2733;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+    padding:8mm 10mm;
+    position:relative; overflow:hidden;
+  }
+  body::before{ content:""; position:absolute; inset:0;
+    background-image:radial-gradient(#00000006 1px, transparent 1px);
+    background-size:6px 6px; pointer-events:none; }
+
+  .header{ display:flex; align-items:flex-end; justify-content:space-between; gap:6mm;
+    border-bottom:1.2mm solid #1a2733; padding-bottom:2.2mm; margin-bottom:3mm; }
+  .header .t1{ font-size:9mm; font-weight:bold; letter-spacing:1.5px; white-space:nowrap;}
+  .header .t2{ font-size:3.4mm; margin-top:1mm; letter-spacing:.4px;}
+  .stamp{ border:1.1mm solid #b3372c; color:#b3372c; font-weight:bold; white-space:nowrap;
+    padding:1.5mm 4mm; font-size:5.4mm; transform:rotate(-3deg); letter-spacing:2px;
+    background:rgba(255,255,255,.35);}
+  .meta{ text-align:right; font-size:3.1mm; line-height:1.5; white-space:nowrap;}
+
+  .wrap{ display:flex; gap:5mm; height:240mm; }
+  .mapcol{ flex:0 0 272mm; border:0.6mm solid #1a2733; background:#f6f1e4; position:relative; }
+  .side{ flex:1; display:flex; flex-direction:column; gap:2.4mm; }
+
+  .box{ border:0.5mm solid #1a2733; background:#f6f1e4; padding:1.8mm 2.4mm; }
+  .box h3{ font-size:3.5mm; letter-spacing:1px; border-bottom:0.35mm solid #1a2733;
+    padding-bottom:0.9mm; margin-bottom:1.2mm; }
+  .box table{ width:100%; border-collapse:collapse; font-size:2.85mm; }
+  .box td{ padding:0.55mm 1mm; vertical-align:top; border-bottom:0.15mm dotted #999;}
+  .box td:first-child{ font-weight:bold; white-space:nowrap; }
+  .rd{ color:#b3372c; font-weight:bold; }
+  .bl{ color:#2a4a6b; font-weight:bold; }
+  .small{ font-size:2.65mm; line-height:1.42; }
+  .inserto{ border:0.5mm solid #1a2733; background:#f6f1e4; padding:1.5mm; }
+  .inserto h4{ font-size:3mm; letter-spacing:.4px; margin-bottom:1mm;}
+  .footer{ position:absolute; bottom:3.5mm; left:10mm; right:10mm; display:flex;
+    justify-content:space-between; font-size:2.8mm; border-top:0.4mm solid #1a2733; padding-top:1.1mm;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="t1">CARTELLA BERSAGLIO — 「解体屋」 IL CANTIERE</div>
+    <div class="t2">Ex cantiere demolizioni navali · porto OVEST di Maizuru · rilievo 13.11.1986 · Sala Operativa 2</div>
+  </div>
+  <div class="stamp">極秘 · TOP SECRET</div>
+  <div class="meta">
+    Foglio 1/1 — scala 1:750 ca.<br>
+    Bersaglio: <b>35.4495 N · 135.3330 E</b><br>
+    Guarnigione stimata: <b>8</b> + 1 tecnico
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ============ MAPPA PRINCIPALE ============ -->
+<div class="mapcol">
+<svg viewBox="0 0 1080 940" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <pattern id="water" width="46" height="16" patternUnits="userSpaceOnUse">
+      <rect width="46" height="16" fill="#cfdde2"/>
+      <path d="M0 8 q 11 -7 23 0 t 23 0" stroke="#8fb0bc" fill="none" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse">
+      <path d="M0 9 L9 0" stroke="#8b9aa5" stroke-width="1.1"/>
+    </pattern>
+    <pattern id="hatch2" width="7" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L7 7" stroke="#c8b98f" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3372c"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2a4a6b"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="940" fill="#f6f1e4"/>
+  <!-- griglia -->
+  <g stroke="#1a273312" stroke-width="1">
+    <path d="M180 0V940 M360 0V940 M540 0V940 M720 0V940 M900 0V940"/>
+    <path d="M0 188H1080 M0 376H1080 M0 564H1080 M0 752H1080"/>
+  </g>
+  <g font-family="Courier New, monospace" font-size="16" fill="#1a273360">
+    <text x="88" y="20">A</text><text x="268" y="20">B</text><text x="448" y="20">C</text>
+    <text x="628" y="20">D</text><text x="808" y="20">E</text><text x="985" y="20">F</text>
+    <text x="8" y="100">1</text><text x="8" y="288">2</text><text x="8" y="476">3</text>
+    <text x="8" y="664">4</text><text x="8" y="852">5</text>
+  </g>
+
+  <!-- ACQUA a est -->
+  <path d="M868 0 L1080 0 L1080 940 L850 940 Q862 700 866 470 Q870 200 868 0 Z" fill="url(#water)"/>
+  <text x="940" y="70" font-size="26" fill="#54707c" font-family="serif" font-style="italic">舞鶴湾</text>
+  <text x="912" y="98" font-size="13" fill="#54707c" letter-spacing="1">BAIA — braccio ovest</text>
+
+  <!-- BANCHINA -->
+  <path d="M790 40 L868 40 Q870 200 866 470 Q862 700 852 900 L790 900 Z" fill="#ded5bd" stroke="#1a2733" stroke-width="2.5"/>
+  <text x="808" y="500" font-size="15" fill="#1a2733" transform="rotate(90 808 500)" letter-spacing="2">BANCHINA — bitte, scaletta</text>
+  <g fill="#1a2733"><circle cx="861" cy="180" r="5"/><circle cx="860" cy="420" r="5"/><circle cx="856" cy="660" r="5"/></g>
+
+  <!-- CHIATTA -->
+  <g transform="translate(892,150) rotate(6)">
+    <rect x="0" y="0" width="140" height="52" rx="8" fill="#c8bfa4" stroke="#1a2733" stroke-width="2.5"/>
+    <rect x="12" y="10" width="82" height="32" fill="url(#hatch2)" stroke="#1a2733" stroke-width="1.2"/>
+  </g>
+  <text x="900" y="136" font-size="14" fill="#1a2733">CHIATTA (ormeggiata)</text>
+
+  <!-- RECINZIONE -->
+  <g stroke="#1a2733" stroke-width="2" stroke-dasharray="10 5" fill="none">
+    <path d="M100 110 L790 88"/>
+    <path d="M100 110 L100 848"/>
+    <path d="M100 848 L360 878 L790 878"/>
+  </g>
+  <text x="470" y="64" font-size="13" fill="#1a2733">recinzione — rete e filo (tagliare: 2 azioni; lato NORD cieco)</text>
+
+  <!-- STRADA + CANCELLO -->
+  <path d="M150 940 L196 872" stroke="#b7ac8e" stroke-width="30" fill="none"/>
+  <text x="108" y="932" font-size="13" transform="rotate(-55 108 932)">strada unica</text>
+  <line x1="168" y1="862" x2="236" y2="872" stroke="#b3372c" stroke-width="5"/>
+  <rect x="238" y="820" width="58" height="36" fill="#e9e1cb" stroke="#1a2733" stroke-width="2.5"/>
+  <text x="242" y="843" font-size="13">guardiola</text>
+  <text x="240" y="906" font-size="13">sbarra + cartello 工事中</text>
+
+  <!-- UFFICI -->
+  <g transform="translate(150,640)">
+    <rect x="0" y="0" width="152" height="95" fill="#e9e1cb" stroke="#1a2733" stroke-width="3"/>
+    <line x1="0" y1="47" x2="152" y2="47" stroke="#1a2733" stroke-width="1.4"/>
+    <text x="8" y="20" font-size="15" font-weight="bold">UFFICI 事務所</text>
+    <text x="8" y="38" font-size="12">P.T.: ARCHIVIO + oro</text>
+    <text x="8" y="66" font-size="12">1° piano: DORMITORIO</text>
+    <text x="8" y="83" font-size="12">(2 uomini a riposo)</text>
+  </g>
+
+  <!-- PIAZZALE + CONTAINER -->
+  <text x="150" y="252" font-size="14" font-weight="bold">PIAZZALE — container (A. 2-4)</text>
+  <g fill="#d6cbae" stroke="#1a2733" stroke-width="2">
+    <rect x="150" y="270" width="105" height="32"/>
+    <rect x="150" y="314" width="105" height="32"/>
+    <rect x="286" y="270" width="105" height="32"/>
+    <rect x="286" y="322" width="105" height="32" transform="rotate(5 338 338)"/>
+    <rect x="150" y="430" width="105" height="32"/>
+    <rect x="170" y="520" width="105" height="32" transform="rotate(-4 222 536)"/>
+  </g>
+
+  <!-- CAPANNONE -->
+  <g transform="translate(430,140)">
+    <rect x="0" y="0" width="330" height="620" fill="#efe7d2" stroke="#1a2733" stroke-width="4"/>
+    <rect x="0" y="0" width="330" height="620" fill="url(#hatch)" opacity="0.18"/>
+    <text x="60" y="32" font-size="20" font-weight="bold" letter-spacing="2">CAPANNONE — h 15 m</text>
+    <text x="60" y="52" font-size="12">lucernari: luce a lame, ombra fitta</text>
+
+    <!-- soppalco -->
+    <rect x="10" y="66" width="310" height="44" fill="none" stroke="#1a2733" stroke-width="2" stroke-dasharray="7 4"/>
+    <text x="64" y="98" font-size="12">SOPPALCO + sacchi (A. 2) — scala a EST →</text>
+    <g stroke="#1a2733" stroke-width="2"><path d="M308 112 L308 150 M300 118 h16 M300 128 h16 M300 138 h16"/></g>
+
+    <!-- quadro elettrico -->
+    <rect x="-13" y="300" width="22" height="32" fill="#e9e1cb" stroke="#1a2733" stroke-width="2.5"/>
+    <text x="-158" y="300" font-size="13">QUADRO ⚡</text>
+    <text x="-158" y="316" font-size="12">staccare = BUIO</text>
+    <text x="-158" y="331" font-size="12">(+2/+3 a chi spara)</text>
+    <line x1="-58" y1="310" x2="-16" y2="312" stroke="#1a2733" stroke-width="1.2"/>
+
+    <!-- portone ovest -->
+    <rect x="-8" y="430" width="16" height="80" fill="#b3372c22" stroke="#b3372c" stroke-width="2.5"/>
+    <text x="-302" y="456" font-size="12">portone OVEST (acciaio —</text>
+    <text x="-302" y="471" font-size="12">forzare: operazione 5-6)</text>
+    <line x1="-132" y1="462" x2="-12" y2="470" stroke="#1a2733" stroke-width="1.2"/>
+
+    <!-- casse e fusti -->
+    <g fill="#d6cbae" stroke="#1a2733" stroke-width="1.6">
+      <rect x="60" y="180" width="52" height="28"/>
+      <rect x="60" y="216" width="52" height="28"/>
+      <rect x="150" y="196" width="52" height="28" transform="rotate(7 176 210)"/>
+      <rect x="230" y="180" width="52" height="28"/>
+      <rect x="90" y="300" width="52" height="28"/>
+      <rect x="170" y="316" width="52" height="28"/>
+      <circle cx="255" cy="320" r="11"/><circle cx="280" cy="320" r="11"/><circle cx="268" cy="340" r="11"/>
+    </g>
+    <text x="60" y="172" font-size="12">casse e fusti (Assorbe 1-2)</text>
+
+    <!-- semirimorchio -->
+    <g transform="translate(130,480)">
+      <text x="-24" y="-14" font-size="14" font-weight="bold">SEMIRIMORCHIO — «LO STRUMENTO»</text>
+      <rect x="0" y="0" width="170" height="52" rx="6" fill="#c9bfa0" stroke="#1a2733" stroke-width="3"/>
+      <rect x="0" y="0" width="170" height="52" rx="6" fill="url(#hatch2)" opacity=".5"/>
+      <circle cx="26" cy="56" r="9" fill="#1a2733"/><circle cx="50" cy="56" r="9" fill="#1a2733"/><circle cx="142" cy="56" r="9" fill="#1a2733"/>
+      <text x="8" y="32" font-size="12">telonato · console con chiave</text>
+    </g>
+
+    <!-- portoni est (da nave) -->
+    <rect x="322" y="440" width="16" height="130" fill="#b3372c22" stroke="#b3372c" stroke-width="2.5"/>
+    <text x="96" y="600" font-size="12">portoni EST «da nave» — di giorno APERTI ↗</text>
+
+    <!-- cavo antenna -->
+    <path d="M300 512 Q360 520 400 540 L448 560" stroke="#2a4a6b" stroke-width="3" stroke-dasharray="9 5" fill="none" marker-end="url(#arrB)"/>
+    <text x="120" y="646" font-size="12" fill="#2a4a6b">cavo antenna → in acqua (30 min di preparazione)</text>
+  </g>
+
+  <!-- GRU A PORTALE sulla banchina -->
+  <g stroke="#1a2733" fill="none">
+    <path d="M800 130 L800 840 M846 130 L846 840" stroke-width="2" stroke-dasharray="4 8"/>
+    <path d="M796 330 L796 250 L852 250 L852 330" stroke-width="5"/>
+    <rect x="788" y="212" width="70" height="38" fill="#e9e1cb" stroke="#1a2733" stroke-width="3"/>
+  </g>
+  <text x="878" y="252" font-size="14" font-weight="bold" fill="#1a2733">GRU A PORTALE</text>
+  <text x="878" y="270" font-size="13" fill="#1a2733">quota 25 m — vista su</text>
+  <text x="878" y="286" font-size="13" fill="#1a2733">tutto il piazzale</text>
+  <line x1="874" y1="248" x2="860" y2="236" stroke="#1a2733" stroke-width="1.2"/>
+
+  <!-- ARCO DEL CECCHINO -->
+  <path d="M820 232 L150 150 A 700 700 0 0 0 150 800 Z" fill="#b3372c10" stroke="#b3372c" stroke-width="2" stroke-dasharray="12 7"/>
+  <text x="150" y="142" font-size="15" fill="#b3372c" font-weight="bold" transform="rotate(-6 150 142)">ARCO DEL CECCHINO — dalla gru, sopra i tetti</text>
+
+  <!-- VIA D'ACQUA -->
+  <path d="M1040 890 Q950 850 900 800 Q876 776 856 742" stroke="#b3372c" stroke-width="4" fill="none" stroke-dasharray="14 8" marker-end="url(#arr)"/>
+  <text x="880" y="916" font-size="14" fill="#b3372c" font-weight="bold">VIA D'ACQUA — a remi,</text>
+  <text x="880" y="933" font-size="14" fill="#b3372c" font-weight="bold">di notte: FUORI dall'arco</text>
+
+  <!-- POSTAZIONI -->
+  <g font-family="Courier New, monospace" font-weight="bold">
+    <circle cx="266" cy="802" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="260" y="809" font-size="18" fill="#b3372c">G</text>
+    <circle cx="822" cy="231" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="816" y="238" font-size="18" fill="#b3372c">C</text>
+    <circle cx="472" cy="233" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="466" y="240" font-size="18" fill="#b3372c">M</text>
+    <circle cx="270" cy="392" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="258" y="399" font-size="18" fill="#b3372c">M1</text>
+    <circle cx="336" cy="556" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="324" y="563" font-size="18" fill="#b3372c">M2</text>
+    <circle cx="650" cy="428" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="644" y="435" font-size="18" fill="#b3372c">K</text>
+    <circle cx="125" cy="688" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="119" y="695" font-size="18" fill="#b3372c">R</text>
+    <circle cx="540" cy="650" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="534" y="657" font-size="18" fill="#b3372c">T</text>
+    <circle cx="510" cy="380" r="16" fill="none" stroke="#b3372c" stroke-width="3.5"/><text x="504" y="387" font-size="18" fill="#b3372c">P</text>
+    <path d="M528 392 Q580 430 640 450" stroke="#b3372c" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- NORD + SCALA -->
+  <g transform="translate(58,160)">
+    <path d="M0 44 L0 -6 M0 -6 L-10 12 M0 -6 L10 12" stroke="#1a2733" stroke-width="4" fill="none"/>
+    <text x="-9" y="-16" font-size="24" font-weight="bold">N</text>
+  </g>
+  <g transform="translate(480,912)">
+    <text x="0" y="-7" font-size="13">0        10 m      20 m                 40 m</text>
+    <rect x="0" y="0" width="70" height="8" fill="#1a2733"/>
+    <rect x="70" y="0" width="70" height="8" fill="none" stroke="#1a2733" stroke-width="1.6"/>
+    <rect x="140" y="0" width="140" height="8" fill="#1a2733"/>
+  </g>
+</svg>
+</div>
+
+<!-- ============ COLONNA LATERALE ============ -->
+<div class="side">
+
+  <div class="box">
+    <h3>GUARNIGIONE — 8 + 1 <span style="float:right; font-weight:normal; font-size:2.7mm">(stat: SCONTRI.md §3)</span></h3>
+    <table>
+      <tr><td class="rd">G</td><td>1 mercenario alla guardiola — sbarra e radio</td></tr>
+      <tr><td class="rd">C</td><td><b>Cecchino sulla gru</b> (25 m) — 1° colpo al motore, poi si vedrà</td></tr>
+      <tr><td class="rd">M</td><td><b>Mitragliatore sul soppalco</b> — soppressione sul piano aperto, non scende mai</td></tr>
+      <tr><td class="rd">M1·M2</td><td>2 mercenari nel piazzale, fucili da caccia</td></tr>
+      <tr><td class="rd">K</td><td><b>Il capo del presidio</b> — ordine estremo: distruggere la console (2 azioni)</td></tr>
+      <tr><td class="rd">P</td><td>Il professionista — mobile, il cane da guardia del capo</td></tr>
+      <tr><td class="rd">R</td><td>2 a riposo nel dormitorio — in scena dal 3° scambio d'allarme</td></tr>
+      <tr><td class="rd">T</td><td><b>Il tecnico</b> — non combatte, si arrende: sa accendere lo strumento</td></tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h3>COPERTURE (Assorbe)</h3>
+    <table>
+      <tr><td>Container</td><td>2-4 (pieni/vuoti)</td></tr>
+      <tr><td>Muri capannone</td><td>5</td></tr>
+      <tr><td>Casse, fusti</td><td>1-2</td></tr>
+      <tr><td>Sacchi soppalco</td><td>2 (il mitragliere)</td></tr>
+      <tr><td>Guardiola</td><td>1</td></tr>
+      <tr><td>Chiatta</td><td>3</td></tr>
+    </table>
+  </div>
+
+  <div class="box small">
+    <h3>NOTE TATTICHE</h3>
+    ◆ <b>Quadro ⚡ alla porta ovest</b>: staccarlo = buio nel capannone — <span class="rd">+2/+3 a chi spara</span>, ma le torce dei PG diventano bersagli.<br>
+    ◆ <b>Portone ovest</b> in acciaio: forzarlo = operazione (vel. 5-6) sotto l'arco del cecchino. I <b>portoni est</b> (banchina) di giorno sono aperti.<br>
+    ◆ <b>Recinzione</b>: tagliarla = 2 azioni, lato nord cieco.<br>
+    ◆ <b>Angolo morto del cecchino</b>: la gru (25 m) spara SOPRA il tetto (15 m) — chi sta attaccato al muro ovest del capannone non è battuto.<br>
+    ◆ <b>Lo strumento</b>: antenna da calare in acqua — <span class="bl">30 minuti di preparazione</span>; col tecnico vivo il resto è un gesto.<br>
+    ◆ Se cade il capo prima della console: la via è libera. Se la distrugge: riparabile in 4-6 ore.
+  </div>
+
+  <div class="inserto">
+    <h4>POSIZIONE ① — IL CAPANNONE <span style="float:right">35.4495 N · 135.3330 E</span></h4>
+    <svg viewBox="0 0 400 128" width="100%">
+      <rect width="400" height="128" fill="#cfdde2"/>
+      <path d="M0 0 H400 V20 Q300 28 250 50 L235 128 H160 L150 58 Q90 32 0 24 Z" fill="#e9e1cb" stroke="#8fb0bc" stroke-width="1.5"/>
+      <path d="M0 128 H120 L128 90 Q60 78 0 82 Z" fill="#e9e1cb" stroke="#8fb0bc" stroke-width="1.5"/>
+      <path d="M400 128 H262 L268 72 Q330 60 400 58 Z" fill="#e9e1cb" stroke="#8fb0bc" stroke-width="1.5"/>
+      <circle cx="140" cy="84" r="7" fill="#b3372c"/>
+      <text x="14" y="74" font-size="13" font-weight="bold" fill="#b3372c">COVO — porto OVEST</text>
+      <rect x="300" y="66" width="12" height="12" fill="#1a2733"/>
+      <text x="238" y="56" font-size="12" fill="#1a2733" font-weight="bold">SALA 2 — base JMSDF</text>
+      <text x="284" y="94" font-size="11">35.475 · 135.386</text>
+      <line x1="147" y1="84" x2="300" y2="72" stroke="#1a2733" stroke-width="1.2" stroke-dasharray="5 4"/>
+      <text x="200" y="72" font-size="11">~5-6 km</text>
+      <path d="M0 120 L400 94" stroke="#6a3d9a" stroke-width="3" stroke-dasharray="10 6"/>
+      <text x="6" y="112" font-size="11" fill="#6a3d9a" font-weight="bold">passaggio del mostro 3d 07:48</text>
+      <text x="188" y="122" font-size="11" fill="#6a3d9a">covo a ~0,9 km · base a ~1,4 km</text>
+    </svg>
+  </div>
+
+  <div class="inserto">
+    <h4>POSIZIONE ② — LO SCAMBIO DELL'ORO (mattina G2)</h4>
+    <svg viewBox="0 0 400 120" width="100%">
+      <rect width="400" height="120" fill="#efe7d2"/>
+      <path d="M10 100 Q120 92 210 66 T 390 22" stroke="#1a2733" stroke-width="7" fill="none"/>
+      <path d="M10 100 Q120 92 210 66 T 390 22" stroke="#f6f1e4" stroke-width="1.4" stroke-dasharray="8 8" fill="none"/>
+      <circle cx="26" cy="98" r="5" fill="#1a2733"/>
+      <text x="8" y="86" font-size="12" font-weight="bold">MAIBARA</text>
+      <text x="8" y="113" font-size="10">casello, alba</text>
+      <g fill="#8b9aa5" opacity=".8">
+        <circle cx="112" cy="94" r="8"/><circle cx="132" cy="89" r="10"/><circle cx="155" cy="82" r="9"/><circle cx="176" cy="75" r="10"/><circle cx="196" cy="69" r="8"/>
+      </g>
+      <text x="100" y="112" font-size="10" fill="#54707c">← IL FUMO: 8 camion identici</text>
+      <circle cx="150" cy="82" r="5" fill="#1a2733"/>
+      <text x="78" y="62" font-size="10.5">svincolo 1: escono in 4</text>
+      <circle cx="235" cy="57" r="5" fill="#1a2733"/>
+      <text x="156" y="42" font-size="10.5">svincolo 2: gli altri</text>
+      <rect x="316" y="14" width="66" height="20" rx="10" fill="#1a2733"/>
+      <text x="321" y="28" font-size="10.5" fill="#f6f1e4">TRAFORO</text>
+      <path d="M340 40 l6 10 l-12 0 z" fill="#b3372c"/>
+      <text x="216" y="66" font-size="11.5" font-weight="bold" fill="#b3372c">★ LO SCAMBIO</text>
+      <text x="216" y="80" font-size="10" fill="#b3372c">canna sud «chiusa per lavori»</text>
+      <text x="216" y="97" font-size="9.5">Traforo di Tsuruga (Hokuriku):</text>
+      <text x="216" y="110" font-size="9.5"><tspan font-weight="bold">~35.71 N · 136.12 E</tspan> — da fissare</text>
+    </svg>
+  </div>
+
+</div>
+</div>
+
+<div class="footer">
+  <span>Sala Operativa 2 — Maizuru · squadra investigativa · <b>da distruggere dopo l'azione</b></span>
+  <span>Regole e statistiche complete: <b>SCONTRI.md §3</b> · Shōtotsu v2.1</span>
+  <span style="color:#b3372c; font-weight:bold">極秘 — vietata la riproduzione</span>
+</div>
+
+</body>
+</html>

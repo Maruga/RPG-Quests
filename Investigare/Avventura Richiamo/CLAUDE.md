@@ -89,6 +89,20 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉗ **MAPPA_CAPANNONE_A3.html creata (2026-08-20)** — mappa tattica DA TAVOLO del covo, A3
+  orizzontale stampabile (stile cartella-bersaglio 1986, carta+inchiostro+matita rossa): pianta
+  a zone (cancello/piazzale/uffici/capannone/banchina/gru), postazioni cerchiate G-C-M-M1-M2-K-P-R-T,
+  coperture con Assorbe, note tattiche (quadro=buio, angolo morto della gru, 30′ antenna),
+  inserti POSIZIONE ① baia di Maizuru (covo/sala2/passaggio mostro) e ② scambio oro (Maibara→
+  traforo di Tsuruga ~35.71/136.12 PROPOSTA da fissare). Verificata nel browser (3 giri di fix
+  collisioni). Stampa: Chrome → A3 orizzontale, margini 0, grafica di sfondo ON.
+  **DECISIONE UTENTE: i PG = le 5 schede esistenti in `pg/`** (niente pregen nuovi; SCHEMA §5.2).
+  ㉖ **Coordinate sale + capannone (2026-08-20, per la mappa utente)**: Sala 1 Karatsu est
+  33.450/129.970 (municipio/palestra, g.1, poi retrovia) · Sala 2 Maizuru = comando JMSDF porto
+  est/Kitasui 35.475/135.386 (verifica: la traiettoria CSV le passa a ~1,1-1,4 km = l'«1,4 km»
+  dei bollettini ✓) · capannone porto OVEST ~35.4495/135.3330 (a ~0,9 km dal passaggio 3d:
+  sopravvive per un pelo; CORRETTA la distanza covo-sala: ~5-6 km attraverso la baia, non 2 —
+  fix in STORIA/INDIZI/SCONTRI). CSV punti-mappa: +3 righe (capannone marcato SOLO GM).
   ㉕ **Prompt capannone aggiunti (2026-08-20)** in SCONTRI §3: pacchetto-bersaglio stile
   ricognizione forze speciali — C1 verticale annotata (Nano Banana per i kanji), C2 dal mare
   (tele da barca), C3 dal cancello (tele da collina), C4 interno vano grande (semirimorchio

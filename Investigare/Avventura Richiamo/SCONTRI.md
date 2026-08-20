@@ -69,7 +69,7 @@
 
 ## §3 · Il capannone di Maizuru *(l'edificio dell'apparecchiatura — LA PIÙ DIFFICILE, canone; zona scelta dall'utente su mappa)*
 
-**Il posto** *(identità proposta; punto esatto da fissare su carta)*: l'**ex cantiere di demolizioni navali sulla sponda ovest del porto di Maizuru** — un capannone alto quindici metri con la gru a portale arrugginita, palazzina uffici, piazzale recintato di container e **banchina propria sull'acqua** (il dispositivo è arrivato via chiatta). A due km in linea d'aria dal comando navale — **si nascondono all'ombra del pennone**. Copertura: «demolizioni in corso», il solito cantiere che non lavora.
+**Il posto** *(identità proposta; punto esatto da fissare su carta)*: l'**ex cantiere di demolizioni navali sulla sponda ovest del porto di Maizuru** — un capannone alto quindici metri con la gru a portale arrugginita, palazzina uffici, piazzale recintato di container e **banchina propria sull'acqua** (il dispositivo è arrivato via chiatta). Dall'altra parte della baia rispetto al comando navale, ~5-6 km in linea d'aria — **si nascondono all'ombra del pennone**. Copertura: «demolizioni in corso», il solito cantiere che non lavora.
 
 **Mappa a zone**
 1. **Il cancello** (unica via da terra): sbarra + guardiola (1 mercenario). Tutto il piazzale è **nell'arco del cecchino**, appollaiato sulla **gru a portale**.
