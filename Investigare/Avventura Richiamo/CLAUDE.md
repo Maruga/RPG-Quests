@@ -89,6 +89,11 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉕ **Prompt capannone aggiunti (2026-08-20)** in SCONTRI §3: pacchetto-bersaglio stile
+  ricognizione forze speciali — C1 verticale annotata (Nano Banana per i kanji), C2 dal mare
+  (tele da barca), C3 dal cancello (tele da collina), C4 interno vano grande (semirimorchio
+  telonato in fondo, soppalco, quadro elettrico), C5 interno uffici (archivio, mappa, cercapersone,
+  casse dell'oro sfocate). C1 da generare per prima = reference di coerenza.
   ㉔ **BASI_MILITARI riscritta v2.0 (feedback utente: «tanta roba, nulla di utile; niente sigle
   senza spiegazione; solo cose essenziali da GDR»)**: ora è corta — armi in parole povere con
   effetto di gioco (cannone +1, bomba/missile/siluro +3, mina +2, sonar 0-ma-chiama), 5 basi

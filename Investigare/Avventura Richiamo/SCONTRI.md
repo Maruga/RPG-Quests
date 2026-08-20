@@ -94,6 +94,23 @@
 **Se la console viene distrutta** *(valvola)*: riparabile in 4-6 ore dal tecnico o da un esperto requisito — l'avventura resta vincibile, il conto si paga in centrali.
 **Manopole di difficoltà**: tavolo piccolo → −1 mercenario e il cecchino a Riserva 3 · assalto in forze coi PNG in divisa → il GM ricordi: la difesa attiva copre UN attacco, l'Assorbe vale contro tutti — il numero conta, ma il corridoio resta suo finché il mitragliatore spara.
 
+### Prompt foto del capannone — il pacchetto-bersaglio del raid *(handout pre-assalto, stile ricognizione forze speciali; genera prima la C1 e riusala come reference per la coerenza)*
+
+**C1 · Dall'alto — la verticale annotata** → `Immagini/Capannone_01_verticale.png` *(testo/annotazioni: Nano Banana Pro)*
+> Vertical aerial reconnaissance photograph, Japan 1986, military target folder style: a disused ship-breaking yard on the west shore of a harbor — one large industrial shed with a rusty gantry crane straddling it, a small two-story office building, a fenced yard with shipping containers in rows, a concrete quay with a moored barge, a single access road with a gate and guard hut. Slightly washed-out color, printed grid overlay with coordinate ticks, hand-drawn red grease-pencil circles and Japanese annotations with arrows marking the gate, the crane, the quay and the shed doors, a classification stamp in the corner. High detail, flat overcast light.
+
+**C2 · Dal mare — il lato della banchina** → `Immagini/Capannone_02_dal_mare.png`
+> Long telephoto surveillance photograph taken from a boat offshore at dawn, Japan 1986: the same disused ship-breaking yard as the reference image seen from the water — the concrete quay with a moored barge, the huge shed with open ship-sized doors facing the sea, the rusty gantry crane towering above, containers behind the fence. Heavy telephoto compression, slight heat shimmer, grainy high-ISO film, muted grey-blue dawn light, crosshair reticle and frame counter markings on the edges of the frame.
+
+**C3 · Da terra — il lato del cancello** → `Immagini/Capannone_03_cancello.png`
+> Covert long-lens surveillance photograph from a hillside across the road, Japan 1986: the same disused ship-breaking yard as the reference image — the access road, a lowered barrier gate with a small prefab guard hut, a "construction site" sign 工事中 and traffic cones, one man in grey worker uniform standing by the gate, the chain-link fence line, the big shed and gantry crane in the background. Taken through foliage partly blurred in the foreground, grainy 35mm film, overcast daylight, timestamp in the corner.
+
+**C4 · L'interno — il vano grande** → `Immagini/Capannone_04_interno.png`
+> Clandestine photograph taken inside a vast 1986 Japanese industrial shed, available light only: a cavernous dark hall lit by dusty skylight beams, a steel mezzanine walkway along one wall with sandbags stacked on it, rows of crates and drums on the floor, thick cables running along the wall to an electrical panel by the door — and at the far end, half in shadow, a full-size semi-trailer covered by a tarpaulin with a heavy cable snaking toward the quay door. Grainy high-ISO film, motion blur at the frame edge, underexposed shadows, no flash, tilted framing as if shot from the hip in haste.
+
+**C5 · L'interno — gli uffici (l'archivio)** → `Immagini/Capannone_05_uffici.png`
+> Clandestine photograph inside a shabby 1980s Japanese site office at night, small flashlight beam as the only light: steel desks pushed together covered with paperwork — a road map of the Sea of Japan coast with pencil marks, ledgers, stacks of pager devices in a cardboard box, a wall board with numbered columns handwritten in Japanese, futons rolled in a corner, cigarette smoke haze. In the foreground, slightly out of focus, stacked small wooden crates with rope handles. Grainy film, harsh circular light falloff, deep shadows, 1986.
+
 ---
 
 *Coda comune (GENKAI resta GENKAI): ogni arma estratta va a rapporto, ogni colpo apre un fascicolo — anche in emergenza nazionale. Il conto dopo lo scontro (tiro di pressione, Genkai a fine scena) come da manuale.*
