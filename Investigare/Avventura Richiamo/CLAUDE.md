@@ -89,6 +89,14 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉘ **MAPPA RIFATTA v2 su correzioni utente (2026-08-20)**: la v1 aveva errori (gru sopra la
+  struttura, cancello a sinistra invece che DAVANTI, mancava l'ingresso a 3 aperture, uffici
+  senza porte/finestre, e non doveva avere le persone). v2 = SOLO LA MAPPA da mettere sul tavolo,
+  piena pagina A3: cancello+sbarra ALLINEATO all'ingresso principale (3 aperture da 12 m, ante
+  scorrevoli), gru a portale INTERAMENTE sulla banchina (binari propri), uffici con porte (N+E)
+  e finestre + legenda simboli, chiatta al molo, semirimorchio «telonato» (niente spoiler),
+  ZERO postazioni/note GM (le piazza l'utente). Verificata a schermo. Le postazioni GM restano
+  solo in SCONTRI §3.
   ㉗ **MAPPA_CAPANNONE_A3.html creata (2026-08-20)** — mappa tattica DA TAVOLO del covo, A3
   orizzontale stampabile (stile cartella-bersaglio 1986, carta+inchiostro+matita rossa): pianta
   a zone (cancello/piazzale/uffici/capannone/banchina/gru), postazioni cerchiate G-C-M-M1-M2-K-P-R-T,
