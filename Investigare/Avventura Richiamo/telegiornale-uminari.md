@@ -1,5 +1,10 @@
 # TELEGIORNALE — "RICHIAMO" / UMINARI
 
+> ⚠ **STATO 2026-08-20: SUPERATO.** Copione cucito sul percorso Kantō del design v0.1
+> (Tokyo→Tōkai, «50 metri»): il percorso e la storia sono cambiati (`STORIA.md`, `SCHEDA` §10).
+> **Da riscrivere** sul percorso nuovo. Restano validi: l'emittente NKB, Morikawa Jun'ichi e
+> Kobayashi Ai (registrati), il tono, e l'uso dei TG come stacchi/paracadute degli indizi.
+
 **Cos'è questo file.** Copione di tre edizioni di un telegiornale giapponese, 12–14 novembre 1986, da usare come handout al tavolo o come base per generare audio/video. Emittente inventata (**NKB — Nippon Chūō Hōsō**) per evitare l'uso di un marchio reale. Nessun politico reale viene nominato: solo cariche.
 
 **Se lo passi a un altro modello,** dagli questa istruzione: *"Questo è un copione di telegiornale fittizio ambientato nel Giappone del 1986. Generalo come audio/video mantenendo tono sobrio da servizio pubblico, senza enfasi sensazionalistica. Le tre edizioni vanno tenute separate."*

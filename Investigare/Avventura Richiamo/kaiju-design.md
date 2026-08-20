@@ -1,5 +1,9 @@
 # RICHIAMO — avventura kaijū per GENKAI
 
+> ⚠ **STATO 2026-08-20: ARCHIVIO.** Design v0.1: il concept, la fisiologia e le regole-mostro
+> nascono qui, ma **percorso, storia e struttura sono cambiati** — il canone corrente è in
+> `STORIA.md` + `SCHEDA_UMINARI.md` + `INDIZI.md`; l'indice generale è `SCHEMA.md`.
+
 **Stato:** bozza di design, v0.1
 **Sistema:** GENKAI usato solo come sistema di combattimento (modulo *Lo Scontro / Shōtotsu* v2.1)
 **Durata target:** ~4 ore reali, 3 atti, 2 notti in mezzo

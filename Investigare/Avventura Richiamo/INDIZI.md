@@ -20,7 +20,8 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | La guardia | Sulle telecamere si vedono **operai**. In realtà sono **mercenari**: presidiano a vista da un secondo punto (una stanza in affitto, un furgone, un finto rilievo topografico) | canone |
 | La finestra di scoperta | **Finché il faro trasmette — cioè finché il mostro non gli arriva addosso — si può captare e scoprire**. Dopo, tace per sempre (schiacciato) e canta il successivo | canone («finché il mostro non passa possono scoprirla») |
 | La reazione | A un'attenta osservazione o se arriva qualcuno sul posto (polizia o altro) e nascono problemi: **rispondono al fuoco** e **spostano il camioncino più avanti, sempre sulla linea** — vale per i camion **non ancora attivi**. Quello attivo è fermo, accoppiato al suolo e comunque condannato: la guardia lo difende dalla polizia e **sgombera nelle ultime ore**, quando la bestia è vicina | canone; la nota sull'attivo: proposta |
-| **La sequenza** | **Tutti i camion sono già posizionati; trasmette UNO alla volta.** Il primo era **alla centrale di Genkai**. Quando il camion attivo viene **distrutto dal mostro** — che arriva dritto sul suo faro e lo calpesta — **gli operai al furgone successivo accendono a mano il proprio**. Ogni camion è **sacrificale**: canta da quando si accende a quando muore sotto la bestia (poche ore nella Genpatsu Ginza, 3-4 giorni sulle tratte lunghe) | **canone utente 2026-08-19** |
+| **La sequenza** | **Tutti i camion sono già posizionati; trasmette UNO alla volta.** Il primo era **alla centrale di Genkai**. Quando il camion attivo viene **distrutto dal mostro** — che arriva dritto sul suo faro e lo calpesta — **gli operai al furgone successivo accendono a mano il proprio**. Ogni camion è **sacrificale**: canta da quando si accende a quando muore sotto la bestia | **canone utente 2026-08-19** |
+| **Un faro per ogni centrale** | Il percorso passa per **ogni centrale nucleare** e, se nessuno la ferma, **le distrugge tutte e otto** (canone utente 2026-08-20): un faro a Genkai, Shimane, Takahama, Ōi, Mihama, Fugen, Tsuruga, Kashiwazaki — più le riserve. Le uniche deviazioni della rotta non sono scelte dei fari: sono **il fastidio delle centrali termoelettriche** (Karatsu g.1, Miyazu g.3 — scheda §6.2) | canone |
 | **Senza spegnimento** | **Una volta attivato non si può spegnere — per sicurezza**: la leva è a senso unico, nessun circuito di arresto. Per zittirne uno bisogna **demolirlo** (trasduttore o generatore). L'unico «interruttore» dell'intera catena è **lo strumento** (blocco 3) | **canone**; dettagli demolizione: proposta |
 | La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione, **quasi contemporaneamente in tutti i punti** del percorso — con le date proposte: **30-31 ottobre**, da Kyūshū a Niigata | canone (date legate al 5/11) |
 | Quanti | **Una decina: un faro per bersaglio, più le riserve** (in acqua il richiamo porta per centinaia di km — non serve una catena fitta); il numero esatto lo fissa la mappa (sotto) | proposta |
@@ -58,15 +59,9 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 - **Com'è fatta**: una carta stradale del Mar del Giappone piegata in un portadocumenti da cantiere, travestita da **programma cantieri**: punti numerati, date, sigle — nessuna parola sul mostro. Ma le date coincidono con l'itinerario, e l'ultimo punto cerchiato è **Kashiwazaki-Kariwa**.
 - **Handout da produrre**: la carta vera e propria (lavoro manuale/Nano Banana Pro per i kanji — la aggiungiamo alla lista quando prepariamo l'avventura).
 
-### Gli uomini del camioncino *(per lo scontro, se serve — Shōtotsu v2.1, proposta)*
+### Gli uomini del camioncino
 
-| Ruolo | Attr. | Riserva | Armi | Note |
-|---|---|---|---|---|
-| Mercenario (×2 per sito) | 6 | 6 | pistola (3/2/4, d3) | professionali, coprono e sganciano |
-| Vedetta | 5 | 3 | coltello, radio | dà l'allarme, guida il camion |
-| Capo-settore | 7 | 9 | pistola, Senmon Pistola 2, **giubbotto** (Assorbe 3) | il suo camion ha la mappa |
-
-**Dottrina**: non cercano il morto — cercano il **tempo**. Fuoco di copertura, il camion parte, loro spariscono. Un poliziotto ferito è un problema che non vogliono; un camion perso è il fallimento che non possono permettersi.
+**Squadra tipica, mappa a zone e scena completa: `SCONTRI.md` §1** (variante capo-settore: +1 uomo e **LA MAPPA** nel suo camion). Dottrina in una riga: non cercano il morto — cercano il **tempo**: coprono, sganciano, e il camion dormiente riparte sulla linea.
 
 ### Prompt per le foto (ChatGPT / GPT Image)
 
@@ -97,22 +92,33 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ## Indizio 2 — L'oro *(canone utente 2026-08-19 — la cornice è in `STORIA.md`)*
 
-### La richiesta
+### La richiesta *(canone: dopo Genkai, oro, «punto comunicato»; consegna: MATTINA DEL GIORNO 2 — decisione utente 2026-08-20; è un diversivo, i soldi non gli interessano)*
 
-- Dopo Genkai, l'organizzazione chiede il pagamento in **lingotti d'oro**; il punto di consegna «**verrà comunicato**». *(Canone.)*
-- **Ai capi l'oro non interessa: è depistaggio** — il paese si convince che pagare fermi la bestia, e brucia giorni mentre il piano procede. *(Canone.)*
-- Proposte di servizio: **un miliardo di yen in lingotti ≈ mezza tonnellata d'oro** (trasportabile da una squadra con un furgone o una barca); la richiesta arriva alle autorità firmata **Ryūgū-kai** 竜宮会 (decisione utente) e trapela alla stampa — il nome-maschera fa il giro del paese e amplifica il depistaggio; giorno 3 (7/11), punto comunicato la sera del giorno 5 (9/11), consegna il giorno 6 (10/11) — *mentre a Wakasa cadono le prime cupole*.
+- **Giorno 1, sera** (poche ore dopo Genkai): la richiesta firmata **Ryūgū-kai** arriva alle autorità e trapela alla stampa. Cifra e mezzo **imposti** *(proposte)*: **3 miliardi di yen in lingotti ≈ 1,5 tonnellate** (120 lingotti da 12,5 kg in 10 casse) su **un camion medio da 4 t a cassone chiuso, modello e colore specificati** («un Hino Ranger bianco, telone grigio, targa in vista»). Il mezzo lo impongono **perché la loro flotta è fatta di camion identici a quello** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
+- La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. E la mattina della consegna la bestia punta Shimane: **lo Stato paga con una mano ed evacua con l'altra.**
 
-### La consegna (il set-piece)
+### La consegna — «Operazione Fumo» *(la scena è disegno dell'utente 2026-08-20; i dettagli tecnici sono proposte)*
 
-L'unico **appuntamento certo** con l'organizzazione: per i PG il valore non è l'oro — è la possibilità di **prendere qualcuno vivo**. *(Canone: qui ci può essere combattimento.)*
+Istruzioni della Ryūgū-kai: casello di Maibara all'alba, **autostrada Hokuriku direzione nord**, corsia lenta, 80 km/h, radio su una frequenza data. Poi, in sequenza:
 
-Tre opzioni di scena *(proposta — il GM ne sceglie una)*:
-1. **Il mercato ittico all'alba** — porto minore, folla, casse di ghiaccio: lo scambio sparisce nei furgoni frigo;
-2. **La cava dismessa sulla costa** — un solo accesso, vedette in quota, via di fuga in barca;
-3. **Il trasbordo in mare** — un peschereccio incontra la motovedetta: il più difficile da chiudere.
+1. **Il branco**: entro 20 km il camion dell'oro si ritrova **in mezzo a 7-8 camion identici** che si accodano dalle aree di servizio. Sui ponti, nessuno sa più quale sia quello vero.
+2. **Il fumo**: a un segnale radio, **tutti i camion fumano** (fumogeni da cantiere sotto i telai): un banco di fumo lungo chilometri — da dietro e dal cielo non si vede niente.
+3. **Gli svincoli**: al primo svincolo **metà escono**, in direzioni diverse; al successivo **gli altri**. Ogni inseguitore deve scegliere: 8 camion, 2-3 auto civetta — la matematica è loro.
+4. **Il tunnel**: il camion dell'oro resta in autostrada fino al **traforo lungo** (i trafori a nord di Tsuruga — da fissare su carta), dove la canna sud è «**chiusa per lavori**» (la loro firma). Dentro: un cantiere-fantasma lo devia **nel bypass verso la canna chiusa**, dove aspetta **il gemello** — che riparte dal portale al suo posto. Per chiunque guardi, «il camion» è uscito dal tunnel. Il vero resta nella canna chiusa dentro un box da cantiere e **esce a notte, dentro il convoglio dei lavori** → destinazione: **il capannone** (blocco 3).
 
-Presidio *(proposta, Shōtotsu v2.1)*: 3-4 **mercenari** (attr. 6, R6, pistole; uno con fucile da caccia 4/2/5 d4) + **il quadro logistico** (attr. 6, R6, pistola) — il bersaglio da prendere vivo. Dottrina solita: coprono, sganciano, non inseguono.
+**Il trasmettitore dei PG** *(canone: nel tunnel il segnale si perde; % di scoperta quando prendono l'oro)*: nella canna chiusa la squadra passa il carico allo scanner. Probabilità che il trasmettitore venga **trovato**:
+
+| Dov'è nascosto | % scoperta |
+|---|---|
+| sotto il telaio / vano motore | **90%** |
+| dentro le casse dell'oro | **70%** |
+| **fuso in un lingotto falso** tra i veri | **40%** |
+| (qualunque posizione) trasmettitore **a impulsi temporizzati** | **−20%** (min 20%) |
+
+- **Se lo trovano**: lo attaccano al gemello → i PG inseguono il camion sbagliato per ore (il depistaggio dentro il depistaggio).
+- **Se sopravvive**: tace nel tunnel e nel box schermato… e **riparla nella notte, in movimento verso Maizuru** — è la pista che porta al capannone.
+
+**Dove può nascere lo scontro** *(canone: alla consegna ci può essere combattimento)*: se i PG capiscono il trucco in tempo reale ed entrano **nella canna chiusa**, ci trovano la squadra dell'oro al lavoro — statistiche e condotta in **`SCONTRI.md` §2**; il bersaglio da prendere vivo è **il Contabile**, che dirige lo scambio.
 
 ### Il prigioniero (la chiave)
 
@@ -127,13 +133,15 @@ Presidio *(proposta, Shōtotsu v2.1)*: 3-4 **mercenari** (attr. 6, R6, pistole; 
 
 - Chi ne parla lo chiama «**lo strumento per fermare il mostro**». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. *(Canone.)* Non *spegne* i camion — nessuno può, sono a senso unico (blocco 1): li **copre**, e il richiamo annega sotto l'inibizione *(proposta di meccanismo)*.
 - È il fusibile dell'organizzazione — il loro interruttore d'emergenza se il piano sfugge di mano *(proposta)*.
-- **Ubicazione: da decidere.** Due proposte: **(a)** una **nave appoggio** ancorata al largo della rotta (l'assalto diventa navale, con la Guardia Costiera); **(b)** una **ex stazione di ascolto / faro dismesso** sulla costa tra Tsuruga e Kashiwazaki (assalto di terra, più classico).
+- **Ubicazione: un CAPANNONE — non un appartamento — nella zona di Wakasa/Maizuru** (decisione utente 2026-08-20, zona indicata su mappa). Identità proposta: **l'ex cantiere di demolizioni navali sulla sponda ovest del porto di Maizuru** — capannone grande con **banchina propria** (il dispositivo è arrivato via chiatta), a **due km in linea d'aria dalla seconda sala operativa**: si nascondono all'ombra del pennone. Mappa a zone e guarnigione: `SCONTRI.md` §3.
+- **Cosa c'è dentro** *(canone: «info e anche il dispositivo»; inventario proposto)*: **il dispositivo** su un semirimorchio in fondo al capannone (antenna da calare in acqua dalla banchina: **attivabile lì**, 30 minuti di preparazione); **l'archivio della cellula logistica** — registro dei camion e delle targhe, i piani di «Operazione Fumo», la mappa madre dei punti (se non già presa), le lettere fermo-posta senza mittente (il buio, di nuovo) — **e l'oro**, dalla notte del giorno 2.
 
 ### L'assalto e l'attivazione
 
-- Il presidio è il più duro dell'avventura *(proposta)*: 2 **professionisti** (attr. 7, R9, pistola, Senmon Pistola 2, giubbotto Assorbe 3) + 2 mercenari (R6) + un **tecnico** che non combatte — e che sa accendere lo strumento (prenderlo vivo evita di doverci capire qualcosa da soli).
+- Il presidio è **il più duro dell'avventura** (canone): guarnigione di otto, cecchino e mitragliatore compresi — tutto in `SCONTRI.md` §3. Il **tecnico** non combatte e sa accendere lo strumento: prenderlo vivo evita di doverci capire qualcosa da soli.
 - **Attivazione** → il segnale tace → la creatura si ferma, esita, **vira verso il mare più vicino** e sparisce. Dove accade decide quante centrali si sono salvate: è il finale.
 - Il camioncino catturato (Indizio 1) resta utile qui: capire la tecnologia dei trasmettitori aiuta a capire — o riparare, o forzare — l'inibitore *(proposta)*.
+- ~~Deviazione = collaudo del dispositivo~~ — **RITIRATA** (2026-08-20): l'utente ha chiarito che la deviazione del 3d è la **circumnavigazione della centrale elettrica di Miyazu** (regola dei ~15 km, scheda §6.2). L'indizio vero è un altro: **due deviazioni gemelle** (Karatsu g.1, Miyazu g.3) = la regola del fastidio in mano ai PG → la Morsa.
 
 ---
 

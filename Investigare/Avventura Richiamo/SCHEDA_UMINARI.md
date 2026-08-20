@@ -1,6 +1,6 @@
 # NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v1.7 · 2026-08-19** *(v1.7: portata del richiamo in acqua = centinaia di km — un faro per tappa; i camion accesi non si spengono; v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v2.0 · 2026-08-20** *(v2.0: NODO SCIOLTO — moto perpetuo H24 verificato a 12,000 km/h; notte/freddo/soste decadute o ridotte a colore)* · *(v1.9: nastro = CSV marcatori-2h dell'utente, 80 ore H24, arrivo 4d 14:03 — nodo notte APERTO in §4)* · *(v1.8: ricontrollo — tolta la «stima 50 m» legata al vecchio TG Kantō: il gōgai canone dichiara già 120 m)* · *(v1.7: portata del richiamo in acqua = centinaia di km — un faro per tappa; i camion accesi non si spengono; v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -13,7 +13,6 @@
 | Prima apparizione pubblica | all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19): da lì la storia non si nasconde più |
 | Natura | Animale marino colossale. **Non è ostile e non può essere combattuto**: non caccia, non insegue, non reagisce ai veicoli. Segue un **richiamo** |
 | Indole | Filtratore migratore. Tutto il danno che fa è **passivo**: peso, passaggio, scia |
-| Stima ufficiale del 1° giorno | «Cinquanta metri» (Agenzia per la Pesca, TG1) — **errata per difetto**: nessuno si era avvicinato. Da decidere se tenerla come colore d'epoca o correggere il copione |
 
 ---
 
@@ -41,7 +40,7 @@
 
 | Tratto | Conseguenza di gioco |
 |---|---|
-| **Ectotermo** | Si muove col calore diurno. **Al tramonto si arresta dov'è — a terra o sul fondale** (decisione utente 2026-08-19: di notte si ferma sempre, e restare sott'acqua non le costa nulla). Non dorme: si spegne. Col freddo rallenta — salendo a nord sempre di più |
+| **Metabolismo lento e costante** *(rivisto 2026-08-20)* | **Non dorme e non si ferma MAI** (decisione utente: moto perpetuo — giorno e notte, terra e mare; restare sott'acqua non le costa nulla). Il freddo del nord la fa fumare di vapore, non rallentare. Il passo che non si arresta è la cosa che il paese non regge |
 | **Magnetorecezione** | Naviga sul campo geomagnetico: il richiamo dà la rotta, il campo la tiene tra una sorgente e l'altra. Le forti sorgenti EM lo disturbano (v. §6) |
 | **Organo di risonanza a infrasuoni** (8-15 Hz) | Riceve il richiamo **ed emette il proprio canto**: in mare porta per centinaia di km. È il punto debole (v. §6) |
 | **Filtratore** | Non caccia e non mangia persone. Filtra acqua e fango alle acque grandi (v. §7) |
@@ -50,25 +49,25 @@
 
 ## 4. Locomozione — la regola del righello *(decisione utente 2026-08-19: una sola velocità, terra e mare)*
 
+> ✅ **NODO SCIOLTO (decisione utente 2026-08-20): si muove SEMPRE** — moto perpetuo, giorno e notte, velocità unica terra/mare, scelta per facilitare il calcolo della posizione. **Verifica del CSV: 12,000 km/h esatti** (24,0 km ogni 2 ore; 959,5 km in 79 h 58′; primo tratto 11 km in 55′; coordinate coerenti con la colonna km).
+
 | | |
 |---|---|
-| **In movimento** | **12 km/h — 120 km per giorno di luce** (~06:30 → ~16:30). Terra e mare, sempre la stessa |
-| **Di notte** | **ferma dov'è** — a terra o adagiata sul fondale (restare sott'acqua non le costa nulla): la notte è il turno dei giocatori, ovunque |
-| Taratura | 120 km/g è il numero che fa cadere lo sbarco finale il **14 novembre** (Mihara il 15) senza contare soste. *(A 150 km/g l'arrivo anticipa al 12/11.)* |
-| Profilo in mare | in superficie le placche fuori («la scogliera che si muove»); **può navigare immersa** — è così che dopo Genkai è sparita. Di giorno la tradiscono mareografi, torbida e gabbiani; di notte, ferma sul fondo, è invisibile |
+| **In movimento** | **12 km/h — SEMPRE: giorno e notte, terra e mare** (canone utente; verificato sul CSV: 12,000 km/h esatti). **288 km al giorno** |
+| **Non si ferma mai** | non dorme, non sosta, non accelera: il **moto perpetuo** è la sua firma — e il terrore del paese: alle tre di notte sta ancora camminando |
+| Perché 12 | scelto per il calcolo a righello: un marcatore ogni 2 ore = 24 km; 959,5 km totali = **80 ore esatte** (1d 06:05 → 4d 14:03) |
+| Profilo in mare | in superficie le placche fuori («la scogliera che si muove»); **può navigare immersa** — è così che dopo Genkai è sparita. La tradiscono mareografi, torbida e gabbiani; **di notte la si segue peggio** (elicotteri a terra, buio): la finestra d'incertezza |
 
 **Come si risponde a «dov'è adesso?»** *(il metodo del tavolo — niente conti)*
-1. Il percorso è pre-segnato a **tacche da 120 km** (G1…G10 — il nastro in §10).
-2. **Di notte è ESATTAMENTE sulla tacca del giorno.** Nessun calcolo.
-3. **Di giorno è dentro la tacca**: ore di luce trascorse × 12 km — *a mezzogiorno, mezza tacca*.
-4. Il GM traccia **un numero solo**, «i km del Nushi»: ogni ora di luce +12; ritardi e deviazioni si sottraggono/aggiungono lì (3 ore guadagnate dai PG = −36 km quel giorno). Il metodo non cambia mai.
-5. **Il bollettino del tramonto** (rituale): a ogni tramonto in gioco, la puntina sulla mappa — in fiction è il bollettino TV della sera (mareografi, radar costieri, la nuvola di gabbiani). Di notte *il paese* non sa dov'è con certezza; il GM sì: sulla tacca.
+1. I **marcatori ogni 2 ore** sulla mappa (il CSV) *sono* il nastro: si guarda quello dell'ora e si interpola a vista — un'ora = 12 km, cioè metà strada fra due marcatori.
+2. Il GM traccia **un numero solo**, «i km del Nushi»: **+12 ogni ora, sempre**; i successi dei PG si sottraggono lì (3 ore guadagnate = −36 km: da lì in poi è 36 km «indietro» rispetto ai marcatori).
+3. **Il bollettino ai giocatori è 2 volte al giorno — 09:00 e 21:00** (`bollettini.md`, canone utente: posizione, bilancio, stato centrali). I marcatori ogni 2 ore restano lo strumento **del GM** per l'interpolazione. Dal 3° giorno c'è un tracciamento in più: il **rateo di dose** — sanno sempre dov'è, mai dove va.
 
 *Dettaglio fine (colore, non per il calcolo):* la marcia «vera» da pachiderma (Froude 0,08 → ~21 km/h di passo, ridotto da ostacoli e soste) e il nuoto da balenottera restano per **descrivere** la scena — la regola del righello serve per **giocare**.
 
-### Temperature d'esercizio *(proposta)*
+### Temperature *(colore narrativo — la velocità di gioco resta 12 km/h costante, canone)*
 
-Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C**. Mar del Giappone a novembre (Corrente di Tsushima, calda, che scorre proprio sud→nord): Genkai-nada ~19 °C · Wakasa ~17 · Niigata ~14. **La rotta cavalca la corrente calda — e più sale, più il viaggio stesso la rallenta.**
+Mar del Giappone a novembre (Corrente di Tsushima, calda, sud→nord): Genkai-nada ~19 °C · Wakasa ~17 · Niigata ~14. La rotta cavalca la corrente; nel freddo del nord **fuma di vapore** — ma non rallenta: il moto perpetuo non tratta.
 
 ---
 
@@ -87,14 +86,16 @@ Piena mobilità sopra ~12 °C · rallentato tra 5 e 12 · **torpore sotto ~5 °C
 | # | Debolezza | Come funziona | Come si scopre |
 |---|---|---|---|
 | 1 | **L'organo di risonanza** | La membrana da ~15 m dietro la mandibola. **Saturata da vicino (~30 m) con una sorgente 8-15 Hz ad alta potenza**, la bestia perde l'orientamento e rientra al mare a stima. Non si spara: si satura. *A organo spento (notte, torpore) la saturazione non produce nulla* (proposta) | la membrana freme a ogni cambio di rotta (foto aeree); l'esitazione dimostra che si può confondere; targa del trasduttore sugli emettitori |
-| 2 | **Il disturbo EM** | Cabine >154 kV, trasmettitori >50 kW, radar: si tiene a ~2 km, **aggira, non si ferma** — ogni aggiramento costa ~1 ora. Uso politico: accendere/staccare impianti = decidere chi si prende la passata. **Scoperta questa debolezza, si sblocca la Morsa (v. sotto)** | le anse «immotivate» della rotta ricalcano gli impianti; i tecnici dell'ente elettrico lo confermano |
-| 3 | **La notte** | Dal tramonto all'alba è ferma, spenta, innocua — **anche in mare, adagiata sul fondale** (decisione utente). La finestra dei giocatori, ovunque | pubblico dal primo giorno a terra; in mare lo dicono i mareografi: la scia si ferma |
-| 4 | **Il freddo** | Sotto i 12 °C rallenta; sotto i 5 va in torpore anche di giorno. **Il nord è un'arma** | l'andatura cala salendo; un biologo lo estrapola |
-| 5 | **Le soste prevedibili** | Filtra alle acque grandi 40-60 min: le soste si conoscono in anticipo — e si **allungano** aprendo chiuse e allagando (leva dei consorzi di bonifica) | la regolarità delle prime soste |
+| 2 | **Il fastidio elettrico** *(canone utente 2026-08-20 — sostituisce cabine/2 km del design)* | **A ~15 km da una centrale termoelettrica IN ESERCIZIO devia e la circumnaviga**, poi riprende la linea. Sulla rotta hanno effetto **solo due**: **Karatsu** (giorno 1, la piega dopo Genkai) e **Miyazu** (giorno 3, il taglio nell'entroterra di Tango). Le altre quattro della mappa (Matsuura ×2, Shin-Kokura, Toyama Shinko) sono fuori raggio — **e sono le leve potenziali dei PG** *(proposta)*. **Scoperta questa regola, si sblocca la Morsa (v. sotto)** | le **due deviazioni gemelle** (Karatsu g.1, Miyazu g.3): stessa firma, stessa distanza — chi le confronta ha la regola in mano |
+| 3 | ~~La notte~~ | **DECADUTA** (decisione utente 2026-08-20: si muove sempre). La notte resta il terreno dei PG solo contro gli **uomini** della Ryūgū-kai | — |
+| 4 | ~~Il freddo~~ | **ridotta a colore** (la velocità di gioco resta costante): nel nord fuma di vapore, non rallenta | — |
+| 5 | ~~Le soste prevedibili~~ | **decaduta su questa rotta**: filtra in movimento e non sosta mai (il CSV non ha fermate) | — |
 
 **Cosa NON funziona:** ogni arma. Il .38 di ordinanza non arriva nemmeno al derma; l'artiglieria fa schegge superficiali senza cambiargli rotta; il rischio vero del fuoco pesante è **dove cade un corpo da centomila tonnellate** — per questo nessuno spara (linea ufficiale JSDF: assetto soccorso disastri).
 
 ### La Morsa — controllarla con la rete elettrica *(canone utente 2026-08-19; taratura dei tiri: proposta)*
+
+> ⚠ **Da ritarare sul canone nuovo (2026-08-20)**: il fastidio è delle **centrali in esercizio, raggio ~15 km** (non cabine a 2 km). La Morsa va riletta così: le **termoelettriche** vicine alla rotta (Toyama Shinko sul tratto finale, Matsuura e Shin-Kokura a sud) sono le sorgenti-scudo che lo Stato può **tenere accese o spingere al massimo** per deviarla — con lo stesso tiro di guasto orario. La geometria fine (recinto/bolle da 15 km) si fissa con l'utente.
 
 Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2), la debolezza diventa una leva: l'ente elettrico può **alimentare linee e sottostazioni scelte** per deviarla — o per **tenerla**.
 
@@ -114,7 +115,7 @@ Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2)
 **In media regge 5-6 ore: la Morsa compra mezza giornata, non la campagna.**
 
 - **Il guasto**: un trasformatore in fiamme, una linea che scatta, il blackout a cascata su mezza prefettura — il recinto si apre e la bestia passa dal varco, riprendendo la rotta. Il colore lo mette il GM; il conto politico arriva comunque (un distretto al buio è un distretto furioso).
-- **Di notte** la bestia è ferma e le squadre riparano: all'alba il contatore riparte dalla 1ª ora. Se la rete del settore è già provata (guasto il giorno prima), il GM può farla ripartire dalla 2ª-3ª.
+- Il contatore cresce finché la Morsa tiene — **giorno e notte** (la bestia non si ferma più). Si azzera solo **sciogliendo la Morsa** e lasciando riparare le squadre (qualche ora); su una rete già provata riparte dalla 2ª-3ª.
 - **Deviare e rallentare non richiedono tiri**: il prezzo lì è politico, non tecnico. Il tiro è solo per la Morsa piena — tenerla ferma *contro* il richiamo.
 - **La contromossa della Ryūgū-kai** *(proposta)*: il richiamo non si spegne — la chiama da oltre il recinto. Per aggirare la Morsa devono **spostare i camioncini** e ridisegnare la linea: cioè muoversi allo scoperto. **Ogni ora di Morsa è anche un'occasione investigativa** — furgoni in movimento, nuove accensioni, mercenari per strada.
 - **Il dilemma delle centrali** *(proposta da validare)*: una centrale **in esercizio** è essa stessa una grande sorgente (il parco trasformatori): da accesa la tiene a distanza. Ma i protocolli impongono lo **spegnimento d'emergenza** all'avvicinarsi — ed è proprio lo scram ad abbassare lo scudo (a Genkai è andata così: l'allarme ha spento la centrale minuti prima del passaggio). La Ryūgū-kai lo sa: *il protocollo di sicurezza è parte del piano*. Tenere accesa una centrale come muro è la scelta più estrema che il finale possa offrire.
@@ -125,11 +126,13 @@ Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2)
 
 ## 7. Alimentazione
 
-Filtratore: immerge la testa alle acque grandi (fiumi maggiori, laghi, estuari) e filtra acqua e fango attraverso pettini mandibolari. **~1 milione di m³ d'acqua al giorno** in 3-4 soste da 40-60 min; fabbisogno ~20 t/giorno di materia organica (metabolismo da ectotermo: un decimo di un mammifero pari massa). In mare filtra in movimento: le soste contano solo a terra.
+Filtratore: **filtra in movimento** (non si ferma mai — canone di rotta): **~1 milione di m³ d'acqua al giorno** attraverso i pettini mandibolari, camminando e nuotando; fabbisogno ~20 t/giorno di materia organica (metabolismo lento: un decimo di un mammifero pari massa).
 
 ---
 
 ## 8. Vicino alla bestia *(effetti per fascia — proposta)*
+
+> ⚠ **Dal 3d 15:10** (bollettini, canone): la bestia attraversa la propria nube ed è una **sorgente radioattiva mobile** — la tabella radiologica di `bollettini.md` **si somma** a queste fasce: 200 m = morte in minuti, 500 m = dose letale in 30′, sotto i 2 km = viaggio di sola andata. **Le fasce qui sotto valgono piene solo nei giorni 1-3 (mattina).** Qualunque piano ravvicinato, da lì in poi, non è un piano.
 
 | Distanza | Effetto |
 |---|---|
@@ -156,7 +159,7 @@ Tre fasce, dalla linea di transito verso fuori:
 - **Le impronte**: crateri da 20×13 m profondi 0,5-1 m, uno ogni ~26 m. In pianura si riempiono d'acqua di falda in poche ore: la **collana di stagni** che segna il percorso per anni.
 - **La strisciata della coda**: solco continuo largo ~15-20 m che liscia il terreno tra le impronte — da lontano la scia sembra **una strada arata**.
 - **I sottoservizi**: lungo tutta la linea saltano acquedotti (geyser dai marciapiedi), gas, luce e telefono. **Gli incendi arrivano *dopo* il passaggio** — sono le condotte del gas, non aggressione: è questo che spiega i fuochi delle foto aeree tenendo il canone «non ostile». Dietro di lei resta un corridoio di blackout.
-- **Il tamburo**: ogni appoggio è un piccolo sisma locale (M ~2-2,5): crepe, tegole, vetrine fino a ~300 m. **I sismografi della JMA le contano il passo**: lo stato la traccia da lontano col suo stesso ritmo di marcia.
+- **Il tamburo**: ogni appoggio è un sisma — i bollettini (canone) lo fissano come **tremore ritmico M 4,2-4,8, rilevabile a 200 km**: crepe e crolli minori lungo la fascia, e **i sismografi della JMA le contano il passo** in tutto il paese. A terra la rete elettrica **cade in un raggio di 40 km e non risale** (bollettini) — è il contesto in cui la Morsa va letta: non «la rete che c'è», ma **linee tenute in vita a forza** dentro la zona di collasso (il tiro del guasto orario è esattamente questo).
 - **La liquefazione**: nei suoli alluvionali e nei riporti costieri (mezzo Giappone urbano) il martellamento fa affiorare sabbia e acqua: pali storti, case inclinate in una fascia di ~100 m.
 - **La linea del sale**: nei primi 2-3 km da ogni sbarco scola acqua di mare a tonnellate: in una settimana i campi lungo la linea **ingialliscono** — la scia si vede a un mese di distanza, dal finestrino del treno.
 - **La biologia**: cirripedi e denti di cane strappati dai fianchi restano sugli spigoli dei palazzi; pesce e krill sgocciolati dalla filtrazione; e dopo il passaggio **il silenzio degli uccelli** — niente canti per giorni. L'odore resta più a lungo di tutto: bassa marea, iodio, fango.
@@ -202,7 +205,7 @@ Tre fasce, dalla linea di transito verso fuori:
 
 Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, risalendo la Corrente di Tsushima. Senza Tomari, l'elenco coincide **esattamente con tutte le centrali affacciate sul Mar del Giappone in esercizio nel 1986**. *Il viaggio comincia a Genkai: il gioco si chiama GENKAI.*
 
-| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Viaggio *(righello 120 km/g)* |
+| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Viaggio *(⚠ superato: orari veri nel nastro CSV sotto)* |
 |---|---|---|---|---|---|---|---|---|
 | 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | 129.74397 | 33.58099 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
 | 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~11 km | ~12 km | ~1 h |
@@ -218,32 +221,29 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 > Coordinate di dettaglio: fa fede **`centrali-giappone-1990.csv`** (nella cartella, fornito dall'utente). Attenzione: il CSV fotografa lo stato **1990** (Shimane-2 1989, Tsuruga-2 1987, KK 3 unità); la tabella qui sopra riporta lo stato **novembre 1986**, che è quello in gioco.
 > Il set completo dei punti-mappa — Madara + 8 tappe + vulcano, con date e ruoli, stesso schema, pronto per l'import in Google My Maps — è in **`punti-mappa-avventura.csv`**.
 
-### Il nastro del Nushi — itinerario non contrastato *(regola del righello: 120 km/giorno di luce; date proposte ancorate al 5/11; località approssimate, da verificare su carta)*
+### Il nastro del Nushi — i marcatori dell'utente *(CANONE 2026-08-20: `percorso-marcatori-2h.csv` — 12 km/h costanti, un marcatore ogni 2 ore [1°→2°: 1 ora], H24 — v. nodo in §4; giorni relativi 1d-4d, date da ancorare)*
 
-| km | Tacca | Quando | Dove |
-|---|---|---|---|
-| 0 | — | G1 · mer 5 nov, alba | **Genkai distrutta** (la V), rientra in mare verso NE |
-| 120 | **G1** | 5 nov, tramonto | fermo al largo dello stretto di Kanmon (Hibiki-nada) |
-| 240 | **G2** | 6 nov, tramonto | costa di Hagi (Yamaguchi) — a terra esce il gōgai |
-| 360 | **G3** | 7 nov, tramonto | costa di Hamada (Shimane) — arriva la richiesta della Ryūgū-kai |
-| 430 | — | **G4 · sab 8 nov, ~12:20** | **Shimane colpita a mezzogiorno** |
-| 480 | **G4** | 8 nov, tramonto | largo di Matsue / Tottori ovest |
-| 600 | **G5** | 9 nov, tramonto | costa di Tottori — in serata viene comunicato il punto di consegna |
-| 690 | — | **G6 · lun 10 nov, ~14:00** | **Takahama** |
-| 710 | — | **G6 · 10 nov, ~15:40** | **Ōi** — *due cupole nello stesso pomeriggio, il giorno della consegna dell'oro* |
-| 720 | **G6** | 10 nov, tramonto | si spegne fra Ōi e Mihama |
-| 755 | — | **G7 · mar 11 nov, ~09:25** | **Mihama** |
-| 780 | — | **G7 · 11 nov, ~11:30** | **Fugen + Tsuruga** (adiacenti) — *cinque centrali in due giorni: la Genpatsu Ginza* |
-| 840 | **G7** | 11 nov, tramonto | largo della costa di Fukui |
-| 960 | **G8** | mer 12 nov, tramonto | largo di Kanazawa |
-| 1.080 | **G9** | gio 13 nov, tramonto | **ferma sul fondale a 40 km da Kashiwazaki-Kariwa** — il paese guarda il mare tutta la notte |
-| 1.120 | — | **G10 · ven 14 nov, ~09:50** | **lo sbarco alla meta finale** |
+| Quando | Km | Dove |
+|---|---|---|
+| 1d 06:05 | 0 | **parte da Madara-shima** |
+| **1d 07:00** | 11 | **Genkai — distrutta** (la V) |
+| 1d ~08-09 | 15-35 | **prima deviazione**: piega a nord per evitare la **centrale termoelettrica di Karatsu** (~15 km), poi riprende la linea — la prima anomalia leggibile |
+| 1d sera-notte | 130-200 | costa di Yamaguchi (Hibiki-nada, largo di Hagi) |
+| **2d ~13:30** | ~373 | **Shimane colpita** (il percorso passa per OGNI centrale nucleare — canone utente: se non fermata le distrugge **tutte**) |
+| 3d 05:00-07:14 | 563-587 | **seconda deviazione**: taglia l'entroterra di Tango per **circumnavigare la centrale di Miyazu** (~15 km), poi riprende — la firma gemella di Karatsu |
+| 2d notte | ~500 | doppia la costa di Tottori |
+| **3d 09:00** | 611 | **Takahama** |
+| **3d ~10:00** | ~625 | **Ōi** |
+| **3d ~12:45** | ~659 | **Mihama** |
+| **3d ~13:20** | ~663 | **Fugen + Tsuruga** — *cinque cupole in quattro ore e mezza: **il giorno nero*** |
+| **3d 15:10** | ~690 | **attraversa la propria nube di Mihama: da qui è una SORGENTE RADIOATTIVA MOBILE** (bollettini) — sotto i 2 km è un viaggio di sola andata |
+| 3d notte | ~750-800 | taglia le montagne (Hakusan, +1.500 m) senza variare velocità |
+| **4d 14:03** | **959,5** | **arriva a Kashiwazaki-Kariwa — e si ferma**: immobile per 2 h 37′ a 800 m dai reattori (battito 0,3 Hz), poi **16:40 la distrugge in 50′** (unica azione diretta), **17:30 entra in mare, 18:20 sparita** (bollettini) |
 
-**Risposta secca: ~9 giorni e mezzo — lo sbarco è a metà mattina del decimo giorno.**
+**Risposta secca: 80 ore — quattro giorni scarsi.** «Dov'è adesso?» = il marcatore dell'ora sulla mappa (uno ogni 2 h = 24 km), interpolazione a vista. Il GM traccia solo «i km del Nushi»: i successi dei PG si sottraggono lì.
 
-- **Il regalo delle date resta**: finale il **14 novembre 1986** — e il **15 alle 17:25 il Mihara erutta davvero** («il giorno dopo, la storia vera comincia da sola»). È la taratura a 120 km/g che lo garantisce senza contare nessuna sosta.
-- **Nota GM**: itinerario **non contrastato** — e **ogni tappa raggiunta è una centrale distrutta** (canone: i PG devono fermarla *prima che le distrugga tutte*, `STORIA.md`). I successi dei PG si sottraggono dai «km del Nushi»: ogni giorno guadagnato è una centrale salvata.
-- **Sulla mappa**: riportare le tacche G1-G10 come puntine numerate ogni 120 km lungo la rotta (My Maps) — sono i punti del «bollettino del tramonto».
+- **Date proposte**: ancorare **1d = 11 novembre** → sbarco **venerdì 14 novembre, 14:03** → **il 15 alle 17:25 il Mihara erutta davvero**. (Con 1d = 5/11 l'arrivo è l'8 e il Mihara si sgancia. Se si ancora all'11, il gōgai va ridatato al 12.)
+- **Nota GM**: itinerario **non contrastato** — **ogni tappa raggiunta è una centrale distrutta** (`STORIA.md`). Il **giorno nero** (3d, Wakasa) è quasi impossibile da fermare per intero: la domanda al tavolo è *quale cupola salvate*.
 
 ### Note sul percorso
 

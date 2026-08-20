@@ -18,7 +18,7 @@ _Gōgai · edizione straordinaria · giovedì 6 novembre 1986 · distribuzione g
 
 _Il gigante venuto dal mare ha attraversato l'impianto nucleare all'alba, poi il mare se l'è ripreso. La nube sale ancora. Nessuno sa dove riemergerà._
 
-GENKAI — È uscito dal mare ieri mattina alle 6 e 51, con la prima luce, davanti alle rive della centrale. Alto centoventi metri: la torre del castello di Karatsu gli arriva al ginocchio. Non ha ruggito. Non ha attaccato nessuno. Ha semplicemente camminato — e la centrale era sulla sua strada.
+GENKAI — È uscito dal mare ieri mattina alle sette in punto, con la prima luce, davanti alle rive della centrale. Alto centoventi metri: la torre del castello di Karatsu gli arriva al ginocchio. Non ha ruggito. Non ha attaccato nessuno. Ha semplicemente camminato — e la centrale era sulla sua strada.
 
 Le due cupole si sono aperte come gusci. Dei quarantatré uomini del turno di notte, ventidue non rispondono all'appello. La prefettura ha ordinato l'evacuazione di Genkai, Chinzei, Yobuko e dei quartieri ovest di Karatsu. Il vento, per ora, spinge la nube verso il largo. Per ora.
 

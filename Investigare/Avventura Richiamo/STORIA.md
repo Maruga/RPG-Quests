@@ -55,17 +55,41 @@ Il nome che firma i comunicati — **Ryūgū-kai** 竜宮会, il palazzo in fond
 Tarō: ciò che il mare custodisce e non andava aperto — è una maschera scelta con cura, ed è
 **tutto ciò che resterà nei fascicoli** (decisione utente 2026-08-19).
 
-## Linea temporale di servizio *(proposta — agganciata all'itinerario non contrastato)*
+## Linea temporale di servizio
 
-| Giorno | Data | Evento |
-|---|---|---|
-| 1 | 5/11 | Genkai distrutta (la V) |
-| 3 | 7/11 | **la richiesta**: lingotti d'oro, «il punto vi sarà comunicato» |
-| 5 | 9/11 sera | comunicato il punto di consegna |
-| 6 | 10/11 | **la consegna** — mentre a Wakasa cadono Takahama e Ōi: lo Stato paga mentre le cupole si aprono |
-| 6-7 | 10-11/11 | interrogatorio del prigioniero → l'ubicazione dello strumento |
-| 8-9 | 12-13/11 | **l'assalto allo strumento** |
-| 9-10 | 13-14/11 | l'attivazione — o lo sbarco a Kashiwazaki |
+→ **La linea maestra è in `SCHEMA.md` §3**, aggiornata al canone dei marcatori (`percorso-marcatori-2h.csv`): richiesta la sera del giorno 1, **consegna la mattina del giorno 2** (decisione utente), il giorno nero di Wakasa il giorno 3, sbarco finale **4d 14:03**.
+
+## La risposta dello Stato *(proposta approvata da salvare — 2026-08-20)*
+
+Il 1986 pre-Kobe: **velocissimo in prefettura, lento a Tokyo**. Non esistono la sala di crisi del
+Kantei (nasce dopo il 1995) né gli off-site center nucleari (dopo il 1999): la macchina nazionale
+si monta a telefonate fra ministeri — STA, MITI, polizia, Difesa, ente elettrico — e le prime 6-8
+ore sono una zuppa di giurisdizioni. È lo spazio in cui l'insabbiamento di Madara ha respirato.
+
+| Ora del 5 nov | Cosa esiste |
+|---|---|
+| ~07:00 | il disastro: allarmi, scram, evacuazioni spontanee, caos radio |
+| entro 08:00 | **sala operativa della prefettura di Saga** (protocollo disastri: routine da tifoni) + sala radio della polizia prefetturale; evacuazioni ordinate |
+| 09:00–11:00 | **posto di comando avanzato a Karatsu** (palestra o municipio requisiti, fuori dal pennacchio): polizia, vigili del fuoco, primi rilevamenti — **da qui si lavora già**, ed è qui che la squadra dei PG viene risucchiata |
+| 12:00–15:00 | le squadre esterne: NPA da Tokyo, tecnici dell'Agenzia Scienza e Tecnologia, JSDF in assetto soccorso, uomini della Kyūshū Electric → il centro diventa **interforze** |
+| 18:00–20:00 | gabinetto straordinario: **quartier generale nazionale a Tokyo**; Karatsu operativa H24 |
+| giorno 1, sera | con la richiesta della Ryūgū-kai si aggiunge **l'ala investigativa** |
+| **giorno 2, mattina** | **LA SECONDA SALA OPERATIVA: MAIZURU** *(decisione utente 2026-08-20; sede proposta)* — requisita nel **comando del distretto navale JMSDF**: baricentrica su Wakasa e Hokuriku, elisuperfici, banchine, comunicazioni militari. Decisa la sera del g.1, operativa mentre sull'autostrada va in scena la consegna. L'ironia che nessuno sa: **il capannone della Ryūgū-kai è a due km in linea d'aria**. ⚠ *I bollettini (canone) fanno passare la bestia a 1,4 km alle 07:48 del g.3: la base diventa inagibile — la sala vive 36 ore e trasloca sotto le macerie del proprio prestigio (fortissimo; il capannone sul lato ovest sopravvive per un pelo). Da confermare o spostare la sede* |
+| giorno 2-4 | il comando avanzato diventa **mobile** e segue la bestia (Karatsu → Maizuru → Niigata): vagoni e palestre requisite — **la casa viaggiante dei PG** |
+
+Le prime ore la parte nucleare (sette mesi dopo Černobyl') mangia tutta l'attenzione: il mostro è
+quasi un problema secondario — finché non sparisce nel mare.
+
+### Muoversi in fretta — i mezzi dei PG *(riferimento rapido per il GM)*
+
+| Mezzo | 10 min | 30 min | 1 ora | Note |
+|---|---|---|---|---|
+| **Elicottero** (~200 km/h) | **~30 km** | **~100 km** | **~200 km** | polizia ~180, JSDF ~220. Da chiamata a decollo: 15-20 min. Autonomia ~2h30 (~450 km), poi 30 min di rifornimento. **Di notte quasi a terra** (VFR 1986: si vola col buio solo in emergenza vera); il meteo di novembre sul Mar del Giappone può bloccare tutto |
+| **Auto, statale costiera** (~60 km/h col lampeggiante) | ~10 km | ~30 km | **~60 km** | le Route 9/191/8: una corsia, paesi, traffico — la costa del Mar del Giappone nel 1986 **non ha autostrada continua** |
+| **Auto, autostrada** (~100 km/h) | ~15 km | ~50 km | **~100 km** | dove esiste: Kyūshū, Chūgoku (interna), Hokuriku — spesso NON segue la costa |
+| **Treno espresso (tokkyū)** (~100-110 km/h) | — | ~50 km | ~100 km | viaggia **anche di notte**: è il mezzo dei trasferimenti lunghi mentre gli elicotteri dormono |
+
+**Regola del pollice contro la bestia** (12 km/h, **288 km/giorno — non si ferma mai**): un giorno di Nushi = **~1 ora e mezza di elicottero** o **~5 ore d'auto in statale**. Raggiungerla non è mai il problema — **arrivare nel posto giusto con le 3-4 ore di lavoro davanti, sì**. E la notte è **sua**: lei nuota, gli elicotteri dormono — chi vuole guadagnare terreno guida o prende il treno.
 
 ## Rapporto con il resto del canone
 

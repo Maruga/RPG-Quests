@@ -5,6 +5,9 @@
 e `REGISTRO_MODIFICHE.md`. Dichiararlo all'utente alla prima risposta. Valgono le REGOLE FERREE
 di `Investigare/CLAUDE.md`: non inventare, non riaprire il chiuso, leggere i registri prima di toccare.
 
+> **ENTRA DA QUI: `SCHEMA.md`** — l'indice di controllo (file, decisioni chiuse, linea maestra,
+> proposte aperte, da-fare). Aggiornarlo a ogni decisione nuova.
+
 ## Cos'è
 
 Avventura kaijū per GENKAI, **fuori dal normale di proposito**: dimostra che le regole dello scontro
@@ -71,6 +74,72 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   Creato **`punti-mappa-avventura.csv`** (Madara + 8 tappe + vulcano, con date e ruoli, schema del
   CSV utente, pronto per Google My Maps); `centrali-giappone-1990.csv` resta intatto come fonte.
   **PROSSIMO PASSO dichiarato dall'utente: «prepariamo avventura»** (struttura sulle tappe).
+  ⑮ **RISPOSTA DELLO STATO + MEZZI PG salvati in STORIA** (2026-08-20, «salva tutto» utente):
+  timeline 5/11 (prefettura entro 1h → comando avanzato Karatsu 09-11 → interforze pomeriggio →
+  QG Tokyo la sera → dal g.2-3 comando MOBILE che segue la bestia = casa viaggiante dei PG);
+  mezzi: eli ~200 km/h (30/100/200 km in 10/30/60 min; notte quasi a terra, VFR 1986), auto
+  statale ~60 km/h (autostrada ~100, costa senza autostrada continua), tokkyū ~100 e viaggia di
+  notte. Regola pollice: 1 giorno di Nushi = 36 min di eli / 2h d'auto — il problema non è
+  raggiungere, è arrivare con le 3-4 h di lavoro davanti.
+  ⑳ **BOLLETTINI.md (utente) VERIFICATI = CANONE EVENTI (2026-08-20)**: 8 bollettini 09/21, km e
+  coordinate ✓ ESATTI sul CSV (35/179/323/467/611/755/899/959,5), orari centrali ✓ (Takahama 08:49,
+  Ohi 09:56, Mihama 12:43, Tsuruga 13:20, KK 14:03). FATTI NUOVI recepiti: **Shimane IGNORATA**
+  (→ niente faro lì: 2° faro = Takahama), **cedimenti RITARDATI** via rete-40km+diesel (+2/+28h,
+  KK unica azione diretta: immobile 2h37 → 50′ → mare → sparita 18:20), **contaminazione della
+  bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
+  piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
+  la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉑ **CHIARIMENTO GRANDE (utente 2026-08-20, con mappe)**: se non fermata **le distrugge TUTTE
+  E OTTO** — il percorso passa per OGNI nucleare: **anche Shimane e Ōi cadono** (il «mistero di
+  Shimane» e «Ōi salvabile» erano INVENZIONI dell'AI dei bollettini → in fix-list). **Unica
+  deviazione = il fastidio delle TERMOELETTRICHE a ~15 km: le circumnaviga** — sulla rotta solo
+  2 efficaci: **Karatsu (g.1)** e **Miyazu (g.3** = la deviazione di Tango, niente mistero**)**;
+  altre 4 sulla mappa (Matsuura ×2, Shin-Kokura, Toyama Shinko) fuori raggio = leve potenziali
+  (Morsa DA RITARARE su 15 km/centrali — banner in scheda §6). RITIRATA la mia proposta
+  «deviazione = collaudo dispositivo». Nuovi layer mappa utente: termoelettriche-1990 e
+  basi-militari-1990 (Tsuiki/Maizuru/Komatsu/Iwakuni/Misawa) — **CSV non ancora in cartella,
+  chiesti i path**; chiesto anche: logica in-esercizio (nucleari scrammate non respingono?) e
+  ruolo basi militari. Fix-list v2 consegnata. SCHEMA #24-25.
+  **CORREZIONE UTENTE precedente: anche ŌI viene distrutta** («il bollettino aveva un problema»).
+  ⚠ DA DECIDERE (utente): gōgai «cupole aperte come gusci» vs bollettini (nessun rilascio g.1);
+  sala Maizuru inagibile 3d 07:48 (tenere = fortissimo / spostare); unità KK/Shimane = stato 1990
+  nel sinottico (in 1986: KK 1 unità, Shimane 1); nits minori (83 ore, 90′ Mihama, 14 km/50′).
+  ⑲ **NODO NOTTE SCIOLTO (utente 2026-08-20): SI MUOVE SEMPRE** — moto perpetuo H24, velocità
+  unica, messa così apposta per il calcolo. **Verifica CSV fatta: 12,000 km/h ESATTI** (24,0 km/2h;
+  959,5 km in 79h58; primo tratto 11 km in 55′; haversine a campione ok). Cascata applicata
+  (scheda v2.0): §3 ectotermo→metabolismo costante («non dorme e non si ferma MAI»), §4 riscritto
+  (bollettino delle ORE PARI, di notte bollettini diradati = finestra d'incertezza), §6 debolezze
+  3-5 DECADUTE/a colore (notte, freddo, soste), §7 filtra in movimento, Morsa continua H24
+  (azzera solo sciogliendola), STORIA regola-pollice (288 km/g: 1,5h eli / 5h auto; «la notte è
+  SUA»), SCHEMA decisione #22 + §5.1 chiuso.
+  ⑱ **CSV MARCATORI = NASTRO CANONE + Operazione Fumo + capannone Maizuru + 2ª sala (2026-08-20)**:
+  `percorso-marcatori-2h.csv` (42 marcatori, km in ETTOMETRI, 12 km/h **H24**: Madara 1d 06:05 →
+  Genkai 1d 07:00 → Shimane 2d ~13:15 → GIORNO NERO 3d 09:00-13:20 (5 cupole in 4h30) → **KK 4d
+  14:03**, 80 ore totali). ⚠ **NODO APERTO: muove ANCHE DI NOTTE** vs canone «di notte si ferma» —
+  bannerato in scheda §4, SCHEMA §5.1; date proposte **1d=11/11** (→ Mihara il 15; gōgai da
+  ridatare al 12). **Consegna oro = MATTINA G2 (canone)**: «Operazione Fumo» in INDIZI 2 — 3 mld ¥/
+  1,5 t (proposta), camion 4t imposto, branco di identici, fumo, 2 svincoli, scambio col gemello
+  nei trafori di Tsuruga (proposta), trasmettitore: % scoperta 90/70/40 (−20 impulsi), se vivo
+  porta AL CAPANNONE. **Capannone (canone: zona Wakasa/Maizuru, info+dispositivo)**: proposta ex
+  cantiere demolizioni navali porto ovest Maizuru, a 2 km dalla 2ª SALA OPERATIVA (= comando
+  distretto navale JMSDF, operativa mattina g2, in STORIA); SCONTRI §3 re-skin (gru=cecchino,
+  soppalco=mitragliatore, via d'acqua, dispositivo su semirimorchio, oro e archivio negli uffici).
+  STORIA timeline → puntatore a SCHEMA §3 (riscritta sul CSV); gōgai «alle 7 in punto»; CSV
+  punti-mappa riorariato. La Stazione d'Ascolto è decaduta.
+  ⑰ **SCONTRI.md creato (2026-08-20, richiesta utente)**: le 3 squadre su Shōtotsu v2.1 —
+  §1 camion (4 uomini + variante capo-settore con LA MAPPA; i PG ne affrontano UNA — canone);
+  §2 oro (5 uomini; il premio = IL CONTABILE vivo → luogo strumento; valvola carta nautica);
+  §3 **Stazione d'Ascolto** = l'EDIFICIO dello strumento (scelta «edificio» dell'utente; identità
+  ex posto d'ascolto Marina Imperiale, Kanazawa↔KK, proposta) — LA PIÙ DIFFICILE (canone): 8 uomini,
+  cecchino (1° colpo al motore), mitragliatore nel corridoio, generatore/buio, sentiero scogliere
+  di notte, capo con ordine di distruggere la console (valvola: riparabile 4-6 h), tecnico che si
+  arrende. INDIZI ripulito dai doppioni (3 puntatori a SCONTRI). SCHEMA aggiornato (file, prop. 4,
+  da-fare 5 fatto).
+  ⑯ **RICONTROLLO + SCHEMA fatti (2026-08-20)**: creato **`SCHEMA.md`** (indice: 12 file con
+  stato, 17 decisioni chiuse, linea maestra G−5→G10 con la colonna dei fari, 3 vie + leve,
+  11 proposte aperte, 10 da-fare). Fix del ricontrollo: tolta la «stima 50 m» dalla scheda §1
+  (v1.8 — era legata al vecchio TG); banner SUPERATO su `telegiornale-uminari.md` (da riscrivere;
+  NKB e i 2 nomi restano); banner ARCHIVIO su `kaiju-design.md`. CLAUDE.md ora punta a SCHEMA.
   ⑭ **CATENA SEQUENZIALE (canone utente — corregge parte di ⑬)**: tutti posizionati, ma trasmette
   **UNO alla volta**; il primo era ALLA CENTRALE DI GENKAI; quando il faro attivo viene DISTRUTTO
   DAL MOSTRO (gli arriva addosso e lo calpesta), **gli operai del furgone successivo lo accendono
