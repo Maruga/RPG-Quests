@@ -89,6 +89,14 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉙ **CARTINA DEL CANTIERE = VIA FOTOGRAFICA (2026-08-20)**: la mappa SVG non piaceva («per
+  niente simile alla foto») → si genera con GPT come FOTO AEREA VERTICALE in cornice-cartella
+  (stile della reference). Le 3 foto GPT del capannone salvate in `Immagini/` come CANONE VISIVO
+  (Capannone_aereo_cartella / dal_mare / cancello): gru a portale che CAVALCA il capannone, fronte
+  sud a 3 aperture, uffici bianchi con scala esterna, chiatta di rottami, serbatoi fuori recinto.
+  Nome sito emerso: **住吉浜 Sumiyoshihama** (da confermare). Prompt **C0 «cartina A3»** scritto
+  in SCONTRI §3 (con timbro ridatato 13/11 Shōwa 61) e consegnato; regola: allegare SEMPRE
+  l'aerea come reference. MAPPA_CAPANNONE_A3.html declassata a bozza di servizio.
   ㉘ **MAPPA RIFATTA v2 su correzioni utente (2026-08-20)**: la v1 aveva errori (gru sopra la
   struttura, cancello a sinistra invece che DAVANTI, mancava l'ingresso a 3 aperture, uffici
   senza porte/finestre, e non doveva avere le persone). v2 = SOLO LA MAPPA da mettere sul tavolo,
