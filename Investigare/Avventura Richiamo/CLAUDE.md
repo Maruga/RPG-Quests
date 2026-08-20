@@ -89,6 +89,40 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉔ **BASI_MILITARI riscritta v2.0 (feedback utente: «tanta roba, nulla di utile; niente sigle
+  senza spiegazione; solo cose essenziali da GDR»)**: ora è corta — armi in parole povere con
+  effetto di gioco (cannone +1, bomba/missile/siluro +3, mina +2, sonar 0-ma-chiama), 5 basi
+  una riga l'una (cosa DANNO ai PG), lista «cosa aiuta i PG» (boe-microfono = trovarla sempre
+  + trovare il faro; detonatore controllato = scaricarla dove vogliono; giubbotti/radio a
+  valvole/cecchino amico attr.7 R6 5/3/5 d5; eli; foto=handout) e **LA NAVE-ESCA** ⚑ (proposta,
+  risposta a «un'arma che aiuti i PG?»): sonar attivo sulla frequenza del canto = faro
+  galleggiante — 1 h di esca = 12 km fuori strada, regge 3-6 h, staccare prima dei 2 km;
+  serve la registrazione (spettrogrammi o camion catturato); stessa fisica di fari/inibitore.
+  LEZIONE PER ME: niente contesto storico-politico lungo, niente sigle nude — effetti di gioco.
+  NB: arma-kaiju.md è stato riformattato su disco dall'utente (solo tabelle): non toccarlo.
+  ㉓ **BASI MILITARI + gradazione deviazioni (2026-08-20)**: creato `BASI_MILITARI.md` (richiesta
+  utente: le 5 basi su mappa servono in caso di ATTACCO — cosa hanno a disposizione). Tutto
+  MARCATO [CANONE]/[STORIA-da-riverificare]/[PROPOSTA]: quadro giuridico 1986 (JSDF mai un colpo,
+  soccorso-disastri senza fuoco; USA = scelta politica), tabella trappola-pazienza (uno strike
+  vero = +24 = SCARICO: l'attacco è un detonatore), Tsuiki F-1/ASM-1 (~75 km g.1), Maizuru
+  (sonar = sentire il canto; muore 3d 07:48 canone), Komatsu (⚠ dentro il raggio dell'impulso
+  dello scarico montano, ~30-35 km), Iwakuni A-4 (martello USA), Misawa (F-16, P-3, Elephant
+  Cage = orecchie SIGINT sulla Ryūgū-kai, proposta). Usi senza sparare + «detonatore controllato».
+  **Gradazione deviazioni (canone utente)**: Karatsu = LIEVE piega dopo Genkai · Miyazu ERC =
+  EVITAMENTO COMPLETO girandole attorno → scheda §6.2 e nastro aggiornati (il grado stesso è
+  indizio). SCHEMA #26-bis. ⚠ Mancano ancora i CSV termoelettriche/basi (coordinate esatte).
+  ㉒ **ARMA SEGRETA del kaiju (utente 2026-08-20) → salvata `arma-kaiju.md` (solo GM), CANONE**:
+  pazienza 0-12 nascosta (sorgenti <2 km, radar tiro, colpi, ostruzioni; accerchiamento ×2;
+  −1/10′ quiete) → a 12 SCARICA sempre: 40 secondi visibili → **M 6,9 + IMPULSO EM** (elettronica
+  morta 25-60 km, eli giù, **nucleare entro 60 km = condannata subito**: Wakasa = 4 siti con uno
+  scarico), poi 6 ore d'immunità. Verificata: matrice distanze Wakasa ESATTA, conteggio gabbia ok.
+  Recepita in scheda v2.1 (§6 + Morsa a DUE OROLOGI: guasto 2d6 + pazienza) e SCHEMA #26.
+  **Fix-list arma consegnata**: anno 1990→1986 (×3), gancio-Shimane superato (resta solo KK 2h37;
+  la logica «freddo=muto» può spiegare perché le nucleari scrammate non deviano), «Takahama
+  salvabile» da allineare a tutte-cadono, finestra scarico montano precisata (3d 19→4d 07),
+  eccezione-richiamo (acustico, non irrita) + soglia potenza. **Proposte mie (SCHEMA §5.12-13)**:
+  fari+dispositivo A VALVOLE (Ryūgū-kai sa dell'arma → il camion catturato a valvole nel 1986 =
+  briciola per INDIZI 4); armonizzazione tre scale 15/2 km + Morsa.
   ㉑ **CHIARIMENTO GRANDE (utente 2026-08-20, con mappe)**: se non fermata **le distrugge TUTTE
   E OTTO** — il percorso passa per OGNI nucleare: **anche Shimane e Ōi cadono** (il «mistero di
   Shimane» e «Ōi salvabile» erano INVENZIONI dell'AI dei bollettini → in fix-list). **Unica

@@ -20,7 +20,9 @@
 | `punti-mappa-avventura.csv` | tutti i punti con date/orari, pronto per My Maps | pronto |
 | `centrali-giappone-1990.csv` | fonte coordinate (⚠ stato impianti 1990, in gioco vale il 1986) | fonte utente |
 | `percorso-marcatori-2h.csv` | **il nastro CANONE**: 42 marcatori (1d 06:05 → 4d 14:03), 12 km/h H24, km in ettometri | fonte utente 2026-08-20 |
-| `bollettini.md` | **gli 8 bollettini ai giocatori** (09:00/21:00): posizioni, bilanci, stato centrali, contaminazione + sinottico e note GM | **canone utente 2026-08-20** (verificato) |
+| `bollettini.md` | **gli 8 bollettini ai giocatori** (09:00/21:00): posizioni, bilanci, stato centrali, contaminazione + sinottico e note GM | **canone utente 2026-08-20** (verificato; fix-list v2 pendente) |
+| `arma-kaiju.md` | **l'arma segreta** (solo GM): pazienza 0-12 → scarico M 6,9 + impulso EM, 40 secondi, 6 ore d'immunità, trappola-Wakasa, cosa sopravvive | **canone GM utente 2026-08-20** (verificato; note pendenti — v. §5) |
+| `BASI_MILITARI.md` | **v2.0 riscritto asciutto**: armi in parole povere (effetto+pazienza), 5 basi una riga l'una, cosa aiuta i PG (boe-microfono, cecchino amico, detonatore controllato, radio a valvole), **la nave-esca** ⚑ | pronto v2.0 (proposte ⚑: nave-esca, boe, SIGINT Misawa) |
 | `Immagini/` | Copertina · 2 foto aeree (handout) · 2 mappe utente | + 20 prompt da generare |
 | `kaiju-design.md` | concept e fisiologia originari (Tokyo→Tōkai) | **ARCHIVIO** |
 | `telegiornale-uminari.md` | TG in 3 edizioni sul percorso Kantō | **SUPERATO — da riscrivere** |
@@ -55,6 +57,8 @@
 | 23 | **I bollettini = il canone degli eventi** (`bollettini.md`, 09:00/21:00) **con due errori da correggere** (v. #24): le centrali cadono **in ritardo** per perdita rete (40 km) + diesel (da +2 a +28 h), **KK unica azione diretta** (immobile 2 h 37′, poi 50′, poi in mare — sparita 18:20); **dal 3d 15:10 è una sorgente radioattiva mobile** (sotto 2 km = sola andata); il Biwa = la posta massima | bollettini.md / scheda agg. |
 | 24 | **SE NON FERMATA LE DISTRUGGE TUTTE E OTTO** (utente 2026-08-20): il percorso passa per **ogni** centrale nucleare — **anche Shimane e Ōi cadono** (il «mistero di Shimane» e «Ōi salvabile» dei bollettini erano errori dell'altra AI, in fix-list). I bollettini = la timeline **senza i PG** | fix-list |
 | 25 | **Il fastidio elettrico**: a **~15 km da una centrale TERMOELETTRICA in esercizio** devia e la **circumnaviga**, poi riprende. Sulla rotta hanno effetto **solo 2**: **Karatsu** (g.1) e **Miyazu** (g.3 — la deviazione di Tango, niente mistero). Le altre 4 (Matsuura ×2, Shin-Kokura, Toyama Shinko) fuori raggio = leve potenziali (Morsa da ritarare) | scheda §6.2 |
+| 26-bis | **Basi militari = per l'attacco** (utente, su mappa) → `BASI_MILITARI.md`; **gradazione deviazioni** (canone): **Karatsu = deviazione LIEVE** poco dopo Genkai · **Miyazu = evitamento COMPLETO, le gira attorno** | BASI_MILITARI / scheda §6.2 |
+| 26 | **L'ARMA SEGRETA** (`arma-kaiju.md`, solo GM): **pazienza 0-12** nascosta (sorgenti attive <2 km, radar di tiro, colpi, ostruzioni; accerchiamento raddoppia; −1/10′ di quiete) → a 12 **scarica sempre**: 40 secondi di preavviso visibile, **M 6,9** (Shindo 7 a 6 km) + **impulso EM** (elettronica morta 25-60 km, **ogni nucleare entro 60 km condannata subito** — Wakasa: un solo scarico = 4 siti), poi 0 e **6 ore d'immunità**. Il paradosso: fermarla = provocarla = il disastro. Sopravvivono valvole, meccanica pura, casse schermate, ottica | arma-kaiju.md / scheda §6 |
 
 ## 3. La linea maestra *(fusione nastro + storia + fari — il quadro che non sta in nessun altro file)*
 
@@ -103,7 +107,10 @@ Nastro CANONE: `percorso-marcatori-2h.csv` — **12 km/h esatti (verificati), H2
 | 8 | **Insabbiamento**: chi ha dato l'ordine, quanti giorni prima | scheda §10 |
 | 9 | **Secondo dormiente / Mihara**: sì o no (fonti F7 rimovibili) | scheda §10 «Fuori rotta» |
 | 10 | **Piano-B**: saturazione ravvicinata dell'organo (design v0.1) resta in gioco? | scheda §6.1 |
-| 11 | Morsa: taratura del tiro (2d6 ≤ ore) · contromossa Ryūgū-kai · Uminari-come-strato (applicato) · risposta Stato/mezzi (fine-tuning) | scheda / STORIA |
+| 11 | **Armonizzazione a tre scale** (Morsa ↔ pazienza ↔ fastidio): proposta — 15 km = deviazione (sorgenti grosse), 2 km = irritazione (pazienza), Morsa costruita con sorgenti tenute a distanza (tiro del guasto) vs gabbia stretta (pazienza → scarico in ~1 h). Due orologi | scheda §6 |
+| 12 | **Fari e dispositivo a PROVA D'IMPULSO** *(proposta che chiude un buco e regala un indizio)*: la Ryūgū-kai conosce l'arma → i camion-faro e l'inibitore sono costruiti **a valvole** e schermati (altrimenti uno scarico entro 25-60 km spegnerebbe la catena da solo). Il camion catturato con elettronica a valvole nel 1986 = la prova che **sapevano tutto della bestia** → briciola per INDIZI 4 | INDIZI 1/3/4 |
+| 13 | **Eccezione-richiamo** nella pazienza: il richiamo dei fari è **acustico**, non irrita (l'irritazione è EM) — da esplicitare nel doc arma (in fix-list) | arma-kaiju.md |
+| 14 | Contromossa Ryūgū-kai alla Morsa · risposta Stato/mezzi (fine-tuning) | scheda / STORIA |
 
 ## 6. Da fare *(produzione, in ordine)*
 
