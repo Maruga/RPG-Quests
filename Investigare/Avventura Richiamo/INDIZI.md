@@ -94,19 +94,29 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ### La richiesta *(canone: dopo Genkai, oro, «punto comunicato»; consegna: MATTINA DEL GIORNO 2 — decisione utente 2026-08-20; è un diversivo, i soldi non gli interessano)*
 
-- **Giorno 1, sera** (poche ore dopo Genkai): la richiesta firmata **Ryūgū-kai** arriva alle autorità e trapela alla stampa. Cifra e mezzo **imposti** *(proposte)*: **3 miliardi di yen in lingotti ≈ 1,5 tonnellate** (120 lingotti da 12,5 kg in 10 casse) su **un camion medio da 4 t a cassone chiuso, modello e colore specificati** («un Hino Ranger bianco, telone grigio, targa in vista»). Il mezzo lo impongono **perché la loro flotta è fatta di camion identici a quello** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
+- **Giorno 1, sera** (poche ore dopo Genkai): la richiesta firmata **Ryūgū-kai** arriva alle autorità e trapela alla stampa. Cifra e mezzo **imposti** *(proposte)*: **3 miliardi di yen in lingotti ≈ 1,5 tonnellate** (120 lingotti da 12,5 kg in 10 casse) su **un camion medio da 4 t TELONATO, modello e telo specificati** («un Hino Ranger bianco, telone grigio, targa in vista, autista solo»). Il mezzo lo impongono **perché la loro flotta è fatta di camion identici** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
 - La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. E la mattina della consegna la bestia punta Shimane: **lo Stato paga con una mano ed evacua con l'altra.**
 
-### La consegna — «Operazione Fumo» *(la scena è disegno dell'utente 2026-08-20; i dettagli tecnici sono proposte)*
+### La consegna — il tunnel nel fumo *(scena CANONE utente 2026-08-20; i dettagli di servizio sono proposte)*
 
-Istruzioni della Ryūgū-kai: casello di Maibara all'alba, **autostrada Hokuriku direzione nord**, corsia lenta, 80 km/h, radio su una frequenza data. Poi, in sequenza:
+**Dove**: raduno **sotto il ponticello della Hokuriku a Habara** (nord di Tsuruga) — **35.6945 N · 136.1194 E** (coordinate utente) — poi **dentro il traforo di Tsuruga**, subito a nord (~35.71 · 136.12).
 
-1. **Il branco**: entro 20 km il camion dell'oro si ritrova **in mezzo a 7-8 camion identici** che si accodano dalle aree di servizio. Sui ponti, nessuno sa più quale sia quello vero.
-2. **Il fumo**: a un segnale radio, **tutti i camion fumano** (fumogeni da cantiere sotto i telai): un banco di fumo lungo chilometri — da dietro e dal cielo non si vede niente.
-3. **Gli svincoli**: al primo svincolo **metà escono**, in direzioni diverse; al successivo **gli altri**. Ogni inseguitore deve scegliere: 8 camion, 2-3 auto civetta — la matematica è loro.
-4. **Il tunnel**: il camion dell'oro resta in autostrada fino al **traforo lungo** (i trafori a nord di Tsuruga — da fissare su carta), dove la canna sud è «**chiusa per lavori**» (la loro firma). Dentro: un cantiere-fantasma lo devia **nel bypass verso la canna chiusa**, dove aspetta **il gemello** — che riparte dal portale al suo posto. Per chiunque guardi, «il camion» è uscito dal tunnel. Il vero resta nella canna chiusa dentro un box da cantiere e **esce a notte, dentro il convoglio dei lavori** → destinazione: **il capannone** (blocco 3).
+1. **L'attesa**: le istruzioni portano il camion dell'oro **sotto il ponticello**, dove **il gemello della Ryūgū-kai aspetta parcheggiato** (identico di fabbrica, telo diverso). *(Canone.)*
+2. **La partenza**: da lì i due camion **partono verso il tunnel** ed entrano in colonna col traffico. *(Canone.)*
+3. **Il mega fumogeno**: quando sono dentro, scatta — **il fumo esce da davanti e da dietro**, dai due portali. Traffico fermo, clacson, buio da miniera. *(Canone; innesco proposto: fusti fumogeni pre-piazzati a metà canna nelle nicchie di servizio.)*
+4. **Il cambio del telo**: nel caos, **all'interno del tunnel, la squadra scambia i teloni** (e le targhe) fra i due camion; le casse passano allo **scanner** (la caccia al trasmettitore — % sotto); l'autista viene allontanato sotto tiro, un uomo loro sale al volante *(dettagli proposta)*. Minuti, mestiere. *(Canone: «aspettano che ci sia casino e cambiano il telo».)*
+5. **L'uscita**: **il gemello, ora col telo dell'oro, esce e prosegue a nord** — è l'esca, zavorrata d'acciaio, e si porta dietro elicotteri e civette; **il camion vero, col telo anonimo,** esce nel gregge dei veicoli e svolta sulla 476 verso ovest: **a notte è al capannone di Maizuru** (~85 km di provinciali). *(Canone la logica; strade proposta.)*
 
-**Il trasmettitore dei PG** *(canone: nel tunnel il segnale si perde; % di scoperta quando prendono l'oro)*: nella canna chiusa la squadra passa il carico allo scanner. Probabilità che il trasmettitore venga **trovato**:
+**I tiri dei PG** *(canone: «devono fare dei tiri per capire o osservare» — 2d6 ≤ attributo, tiri standard)*:
+
+| Osservazione | Tiro | Cosa dà |
+|---|---|---|
+| Cronometrare il traffico in uscita | **Lucidità** | i due camion sono rimasti dentro **troppo a lungo**: nel tunnel è successo qualcosa |
+| Fissare i dettagli del mezzo all'uscita | **Lucidità** (−1 se prima dell'ingresso hanno dichiarato cosa memorizzare: targa, ammaccature, cinghie) | il telo è **teso male / cinghie riallacciate diverse**, la targa rimontata storta: **quello non è lo stesso camion** |
+| Ascoltare le radio nel caos | **Ascolto** | una CB gracchia **ordini brevi in codice** sotto il fumo: c'è una squadra dentro |
+| Fermare «il camion dell'oro» (l'esca) | — nessun tiro | casse di **zavorra d'acciaio**: verità amara e **30-60 minuti persi** — mentre il vero si allontana |
+
+**Il trasmettitore dei PG** *(canone: % di scoperta quando prendono l'oro; lo scanner lavora nel tunnel)*:
 
 | Dov'è nascosto | % scoperta |
 |---|---|
@@ -115,10 +125,10 @@ Istruzioni della Ryūgū-kai: casello di Maibara all'alba, **autostrada Hokuriku
 | **fuso in un lingotto falso** tra i veri | **40%** |
 | (qualunque posizione) trasmettitore **a impulsi temporizzati** | **−20%** (min 20%) |
 
-- **Se lo trovano**: lo attaccano al gemello → i PG inseguono il camion sbagliato per ore (il depistaggio dentro il depistaggio).
-- **Se sopravvive**: tace nel tunnel e nel box schermato… e **riparla nella notte, in movimento verso Maizuru** — è la pista che porta al capannone.
+- **Trovato** → lo fissano **all'esca**: i PG inseguono il camion sbagliato per ore.
+- **Sopravvissuto** (telaio o casse) → **lo scambio dei teloni non lo frega**: tace nel tunnel, e **riparla in movimento verso Maizuru** — la pista del capannone. *(Se i PG l'avessero cucito nel TELO, segue l'esca: dettaglio da GM.)*
 
-**Dove può nascere lo scontro** *(canone: alla consegna ci può essere combattimento)*: se i PG capiscono il trucco in tempo reale ed entrano **nella canna chiusa**, ci trovano la squadra dell'oro al lavoro — statistiche e condotta in **`SCONTRI.md` §2**; il bersaglio da prendere vivo è **il Contabile**, che dirige lo scambio.
+**Dove può nascere lo scontro** *(canone: alla consegna ci può essere combattimento)*: PG dentro il tunnel nel fumo → **`SCONTRI.md` §2** (fumo: +3 a chi spara attraverso; il bersaglio da prendere vivo è **il Contabile**, che dirige il cambio).
 
 ### Il prigioniero (la chiave)
 

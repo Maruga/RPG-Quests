@@ -54,10 +54,10 @@
 | Mercenario 2 | 6 | 6 | pistola | carica l'oro |
 | Barcaiolo / autista | 5 | 3 | coltello | il mezzo acceso, pronto |
 
-**La scena**: la **canna chiusa del traforo** durante «Operazione Fumo» (INDIZI §2) — buio da galleria, il box da cantiere, il gemello pronto al bypass. Battute fisse:
-1. **Lo scanner e la verifica** (saggiano i lingotti e cacciano il trasmettitore — le % in INDIZI §2) — *la finestra dei PG*;
-2. **Il travaso**: una tonnellata e mezza = **transpallet e braccia, lenti** — il peso è la loro vulnerabilità;
-3. **L'exfil**: il gemello esce dal portale al posto del vero; se scoperti — fumogeni, fuoco di copertura, e la galleria è il loro terreno.
+**La scena**: **dentro il traforo di Tsuruga, nel fumo del mega fumogeno** (INDIZI §2) — traffico fermo, clacson, visibilità zero: **+3 alla somma di chiunque spari attraverso il fumo**, per tutti. Battute fisse:
+1. **Il cambio dei teloni** fra i due camion (e targhe) — minuti contati, uomini sulle centine;
+2. **Lo scanner sulle casse** (la caccia al trasmettitore — % in INDIZI §2) — *la finestra dei PG*;
+3. **L'exfil**: l'esca col telo dell'oro verso nord, il camion vero nel gregge verso la 476; se scoperti — fuoco di copertura fra i veicoli fermi (civili ovunque: ogni colpo dei PG è un rapporto), e il fumo è il loro terreno.
 
 **La sfida vera: prendere VIVO il Contabile.** Portarlo a Riserva 0 = fuori combattimento, e l'esito lo decide il GM: **è così che si arresta**. Strumenti dei PG: *Sotto Tiro* + intimazione prima che parta il fumo; Lotta a contatto; tagliargli la strada verso il mezzo (è la sua unica direzione).
 - **Se il Contabile muore**: valvola del GM — nel mezzo di fuga c'è una carta nautica con **un promontorio cerchiato, senza nome** (mezza pista: il luogo sì, il perché no).

@@ -89,6 +89,15 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉚ **CONSEGNA v2 — IL TUNNEL NEL FUMO (canone utente 2026-08-20, sostituisce il branco)**:
+  ~~8 camion identici + svincoli~~ TOLTI. Scena nuova: il gemello ASPETTA PARCHEGGIATO **sotto il
+  ponticello di Habara** (coordinate UTENTE: 35°41'40.2"N 136°07'10.0"E = **35.6945/136.1194**,
+  foto satellitare vista) → i due camion partono insieme → dentro il **traforo di Tsuruga**
+  scatta il MEGA FUMOGENO (fumo da davanti e dietro, dai due portali) → nel casino **CAMBIANO
+  IL TELO** (e targhe) → escono; **i PG fanno TIRI per capire/osservare** (tabella in INDIZI 2:
+  cronometro, dettagli mezzo, radio CB; fermare l'esca = 30-60′ persi). Trasmettitore: % invariate,
+  sul TELAIO sopravvive allo scambio-teloni (nel telo = segue l'esca). SCONTRI §2 ri-ambientato
+  (tunnel aperto, civili, fumo +3). CSV punti: +ponticello +traforo. SCHEMA #19 riscritta.
   ㉙ **CARTINA DEL CANTIERE = VIA FOTOGRAFICA (2026-08-20)**: la mappa SVG non piaceva («per
   niente simile alla foto») → si genera con GPT come FOTO AEREA VERTICALE in cornice-cartella
   (stile della reference). Le 3 foto GPT del capannone salvate in `Immagini/` come CANONE VISIVO
