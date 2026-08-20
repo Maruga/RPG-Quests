@@ -89,6 +89,11 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉛ **CAPANNONE — COORDINATE UTENTE DEFINITIVE (2026-08-20): 35.4526 / 135.31553** (sponda ovest
+  baia di Maizuru; le mie stime precedenti erano sbagliate — cadevano nell'entroterra). Distanze
+  ricalcolate: **~7 km dalla Sala 2** (era «5-6»), **~2 km dal passaggio del 3d** (~07:15; era
+  «0,9») → trema, perde i vetri, resta in piedi. Aggiornati: CSV punti, INDIZI 3, STORIA,
+  SCONTRI §3, header mappa A3, SCHEMA §5.4.
   ㉚ **CONSEGNA v2 — IL TUNNEL NEL FUMO (canone utente 2026-08-20, sostituisce il branco)**:
   ~~8 camion identici + svincoli~~ TOLTI. Scena nuova: il gemello ASPETTA PARCHEGGIATO **sotto il
   ponticello di Habara** (coordinate UTENTE: 35°41'40.2"N 136°07'10.0"E = **35.6945/136.1194**,
