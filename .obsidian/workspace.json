@@ -11,14 +11,12 @@
             "id": "a5f8b8c7d081e9bf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura Richiamo/SCONTRI.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura Richiamo/Immagini/Foto Aerea Dietro.png"
               },
-              "icon": "lucide-file",
-              "title": "SCONTRI"
+              "icon": "lucide-image",
+              "title": "Foto Aerea Dietro"
             }
           }
         ]
@@ -229,26 +227,29 @@
   },
   "active": "a5f8b8c7d081e9bf",
   "lastOpenFiles": [
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_40_49.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_40_56.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_41_09.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_41_16.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_42_33.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_44_00.png",
+    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Davanti.png",
+    "Investigare/Avventura Richiamo/Immagini/Capannone_dal_mare.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_45_01.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_50_20.png",
+    "Investigare/Avventura Richiamo/Immagini/Capannone_cancello.png",
+    "Investigare/Avventura Richiamo/SCONTRI.md",
     "Investigare/Avventura Richiamo/SCONTRI.md.tmp.23836.4bc2e5ac2dce",
     "Investigare/Avventura Richiamo/STORIA.md.tmp.23836.936d59837acb",
     "Investigare/Avventura Richiamo/punti-mappa-avventura.csv.tmp.23836.548bffe58d86",
     "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.180b4cd2ede9",
     "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.28ebcf60b2b0",
-    "Investigare/Avventura Richiamo/Immagini/Capannone_cancello.png",
-    "Investigare/Avventura Richiamo/Immagini/Capannone_aereo_cartella.png",
-    "Investigare/Avventura Richiamo/Immagini/Capannone_dal_mare.png",
     "Investigare/Avventura Richiamo/MAPPA_CAPANNONE_A3.html.tmp.23836.85dc4aa21d41",
     "Investigare/Avventura Richiamo/MAPPA_CAPANNONE_A3.html.tmp.23836.96f342e472b7",
     "Investigare/Avventura Richiamo/MAPPA_CAPANNONE_A3.html.tmp.23836.ceef2134d64e",
     "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.c6877ac06c49",
     "Investigare/Avventura Richiamo/MAPPA_CAPANNONE_A3.html.tmp.23836.235f8ee63e2d",
-    "Investigare/Avventura Richiamo/MAPPA_CAPANNONE_A3.html.tmp.23836.fc476def2300",
     "Investigare/Avventura Richiamo/INDIZI.md",
-    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Dietro.png",
-    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Davanti.png",
-    "Investigare/Avventura Richiamo/Immagini/Mappa_02_Genkai_V.png",
-    "Investigare/Avventura Richiamo/Immagini/Mappa_01_Genkai_largo.png",
-    "Investigare/Avventura Richiamo/SCONTRI.md",
     "Investigare/Avventura Richiamo/COPERTINA.md",
     "Investigare/Avventura Richiamo/STORIA.md",
     "Investigare/Avventura Richiamo/telegiornale-uminari.md",
@@ -257,7 +258,6 @@
     "Investigare/Avventura Richiamo/RICHIAMO_Sviluppo.md",
     "Investigare/Avventura Richiamo/kaiju-design.md",
     "Investigare/Avventura Richiamo/PRESENTAZIONE_WhatsApp.md",
-    "Investigare/Avventura Richiamo/nucleare_giappone.png",
     "Investigare/Avventura Richiamo/CLAUDE.md",
     "Investigare/Avventura Richiamo/bollettini.md",
     "Investigare/Avventura Richiamo/BASI_MILITARI.md",
@@ -272,8 +272,6 @@
     "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
     "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
     "Link Utili.md",
-    "Investigare/GENKAI_Regolamento_v1_3.md",
-    "Investigare/Avventura Richiamo/Immagini/Copertina.png",
-    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 19 ago 2026, 02_40_33.png"
+    "Investigare/GENKAI_Regolamento_v1_3.md"
   ]
 }
