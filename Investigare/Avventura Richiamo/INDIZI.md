@@ -23,7 +23,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | **La sequenza** | **Tutti i camion sono già posizionati; trasmette UNO alla volta.** Il primo era **alla centrale di Genkai**. Quando il camion attivo viene **distrutto dal mostro** — che arriva dritto sul suo faro e lo calpesta — **gli operai al furgone successivo accendono a mano il proprio**. Ogni camion è **sacrificale**: canta da quando si accende a quando muore sotto la bestia | **canone utente 2026-08-19** |
 | **Un faro per ogni centrale** | Il percorso passa per **ogni centrale nucleare** e, se nessuno la ferma, **le distrugge tutte e otto** (canone utente 2026-08-20): un faro a Genkai, Shimane, Takahama, Ōi, Mihama, Fugen, Tsuruga, Kashiwazaki — più le riserve. Le uniche deviazioni della rotta non sono scelte dei fari: sono **il fastidio delle centrali termoelettriche** (Karatsu g.1, Miyazu g.3 — scheda §6.2) | canone |
 | **Senza spegnimento** | **Una volta attivato non si può spegnere — per sicurezza**: la leva è a senso unico, nessun circuito di arresto. Per zittirne uno bisogna **demolirlo** (trasduttore o generatore). L'unico «interruttore» dell'intera catena è **lo strumento** (blocco 3) | **canone**; dettagli demolizione: proposta |
-| La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione, **quasi contemporaneamente in tutti i punti** del percorso — con le date proposte: **30-31 ottobre**, da Kyūshū a Niigata | canone (date legate al 5/11) |
+| La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione (11/11), **quasi contemporaneamente in tutti i punti** del percorso: **5-6 novembre**, da Kyūshū a Niigata | canone (date #31) |
 | Quanti | **Una decina: un faro per bersaglio, più le riserve** (in acqua il richiamo porta per centinaia di km — non serve una catena fitta); il numero esatto lo fissa la mappa (sotto) | proposta |
 | **Il premio** | **In uno dei camioncini c'è la mappa dei punti di passaggio del mostro** | **canone** |
 
@@ -38,7 +38,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ### Come i PG ci arrivano
 
-1. **Le telecamere** (la strada indicata dall'utente). Nel 1986 gli occhi ci sono, basta pensarci: telecamere portuali e delle capitanerie, impianti delle centrali (i nastri dei giorni *prima* di Genkai sopravvivono negli archivi fuori sito), caselli autostradali — e il nuovissimo **N-System** di lettura targhe, appena entrato in servizio. Riavvolgendo i nastri al 30-31 ottobre: **lo stesso camioncino, in posti a centinaia di km di distanza, negli stessi due giorni.**
+1. **Le telecamere** (la strada indicata dall'utente). Nel 1986 gli occhi ci sono, basta pensarci: telecamere portuali e delle capitanerie, impianti delle centrali (i nastri dei giorni *prima* di Genkai sopravvivono negli archivi fuori sito), caselli autostradali — e il nuovissimo **N-System** di lettura targhe, appena entrato in servizio. Riavvolgendo i nastri al 5-6 novembre: **lo stesso camioncino, in posti a centinaia di km di distanza, negli stessi due giorni.**
 2. **Le targhe**: tutte diverse, tutte **rubate o scambiate** — il pattern non è la targa, è il mezzo. Ma il modello identico apre l'altro filo: *chi ha comprato in blocco quindici Elf usati?* (un'asta fallimentare, pagata in contanti — filo da sviluppare) *(proposta)*.
 3. **L'osservazione attenta** — cosa nota chi guarda bene (o chi ingrandisce il fotogramma):
    - il cantiere **non lavora**: stessi coni, stesso scavo finto, da giorni;
@@ -51,13 +51,13 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** Trovarlo non è la sfida: la corsa vera è **arrivarci prima della bestia** — e vedersela con la guardia.
 
 > **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. I camion **non ancora attivi** sono muti: si trovano solo con telecamere, pattern e previsione (punti 1-3).
-> **La tattica** *(canone 2026-08-21)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata**; **se vengono distrutti TUTTI, il mostro torna all'acqua** — è la seconda via di vittoria, accanto al disturbatore. E **un prigioniero di un camioncino può rivelare il capannone** (come il Contabile della consegna).
+> **La tattica** *(canone 2026-08-21)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata**; **se vengono distrutti TUTTI, il mostro torna all'acqua** — è la seconda via di vittoria, accanto al disturbatore. E **un prigioniero di un camioncino può rivelare il capannone** (come l'ostaggio della consegna: credendolo ormai vuoto).
 > **Il relitto di Genkai** *(proposta)*: il primo faro giace **schiacciato tra le macerie della centrale**, dentro la V — un Elf spianato con dentro una macchina che nessuno sa spiegare: il primo reperto fisico dell'avventura. E le notti di Madara erano la bestia che risaliva verso *quel* faro.
 > **Sinergia con la Morsa** (scheda §6): un faro **attivo** non si sposta senza farsi notare — guidare una sorgente di disturbo accesa è sventolare una bandiera ai rilevatori; i camion **dormienti** invece si muovono, e ogni spostamento è un'occasione.
 
 ### Cosa dice ai PG *(le inferenze — il cuore)*
 
-- **Sapevano prima di tutti.** I camioncini sono arrivati il 30-31 ottobre; il mostro è emerso il 5 novembre. Chi li ha piazzati **sapeva** — come sapeva chi ha zittito i pescatori di Madara. I due fili puntano alla stessa mano.
+- **Sapevano prima di tutti.** I camioncini sono arrivati il **5-6 novembre**; il mostro è emerso l'**11** — e per il mondo, fino a quel mattino, non esisteva. Chi li ha piazzati **sapeva in anticipo la rotta di una cosa che ancora non c'era.**
 - **«Sempre sulla linea».** Gli spostamenti non sono fughe: sono *riposizionamenti lungo una rotta*. Segnando i punti su una carta, i PG vedono la linea **prima** ancora di trovare la mappa — e sono **gli unici nel paese a poterlo fare**: il percorso lo conosce solo la Ryūgū-kai (STORIA, verità 3), tutti gli altri inseguono la posizione del giorno.
 - **La mappa è la destinazione.** Il giorno in cui la trovano, sanno dove finisce tutto — e quanto tempo resta. Fino ad allora la loro intuizione resta una scommessa da difendere davanti al vertice dello Stato.
 - **Il camion preso intero è un'arma.** Dentro c'è la tecnologia del richiamo: la stessa che può **saturare l'organo** (scheda §6.1). L'oggetto che inseguono è l'unica cosa che funziona.
@@ -77,19 +77,19 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 > **Come usarli**: genera prima la **foto 1** e riusa l'immagine come *reference* nelle chat successive («stesso camioncino di questa foto») — stessa tecnica del kaijū. Per targhe e kanji leggibili meglio Nano Banana Pro. Timestamp e località si cambiano nel testo.
 
 **F1 · Il camioncino — ripresa base CCTV** *(il master: genera questo per primo)* → `Immagini/Indizio_Camion_01_porto.png`
-> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-10-30 14:22". A white 1980s Japanese light box truck (Isuzu Elf style, aluminum cargo box) with a company livery reading 共成設備工業 in dark blue Japanese characters on the box side, parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
+> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-11-05 14:22". A white 1980s Japanese light box truck (Isuzu Elf style, aluminum cargo box) with a company livery reading 共成設備工業 in dark blue Japanese characters on the box side, parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
 
 **F2 · Strada costiera del San'in** → `Immagini/Indizio_Camion_02_sanin.png`
-> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a coastal road layby above the Sea of Japan, pine trees and a guardrail, the truck parked over a roadside culvert, two workers in grey uniforms placing traffic cones, road-work sign 工事中. High-angle CCTV framing, washed-out colors, scanlines, timestamp "86-10-30 16:05", grainy VHS.
+> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a coastal road layby above the Sea of Japan, pine trees and a guardrail, the truck parked over a roadside culvert, two workers in grey uniforms placing traffic cones, road-work sign 工事中. High-angle CCTV framing, washed-out colors, scanlines, timestamp "86-11-05 16:05", grainy VHS.
 
 **F3 · Il ponticello tra le risaie (Wakasa)** → `Immagini/Indizio_Camion_03_wakasa.png`
-> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a narrow concrete bridge over an irrigation canal between autumn rice fields, the truck parked exactly on the bridge, cones and a striped barrier, one worker leaning on the railing doing nothing. Fixed high-angle camera from a farm cooperative building, washed-out colors, scanlines, timestamp "86-10-31 09:47", grainy VHS.
+> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a narrow concrete bridge over an irrigation canal between autumn rice fields, the truck parked exactly on the bridge, cones and a striped barrier, one worker leaning on the railing doing nothing. Fixed high-angle camera from a farm cooperative building, washed-out colors, scanlines, timestamp "86-11-06 09:47", grainy VHS.
 
 **F4 · Davanti alla recinzione industriale** → `Immagini/Indizio_Camion_04_recinzione.png`
-> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: an industrial lot beside a tall chain-link fence with warning signs, hazy white containment domes far in the background, the truck parked with cones around it, two workers in helmets, one looking straight at the camera. High-angle perimeter camera, near-monochrome, scanlines, timestamp "86-10-31 11:13", grainy VHS.
+> Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: an industrial lot beside a tall chain-link fence with warning signs, hazy white containment domes far in the background, the truck parked with cones around it, two workers in helmets, one looking straight at the camera. High-angle perimeter camera, near-monochrome, scanlines, timestamp "86-11-06 11:13", grainy VHS.
 
 **F5 · Il casello, di notte (targa leggibile — Nano Banana Pro)** → `Immagini/Indizio_Camion_05_casello.png`
-> Black and white automatic plate-reader camera frame, Japan 1986, night: frontal shot of a white 1980s Japanese box truck passing a highway toll gate, headlights flaring, the Japanese license plate clearly readable, driver's face obscured by the sun visor. Harsh infrared flash look, data strip at the bottom of the frame with date "86-10-30 03:41" and lane number, high contrast, motion blur on the background.
+> Black and white automatic plate-reader camera frame, Japan 1986, night: frontal shot of a white 1980s Japanese box truck passing a highway toll gate, headlights flaring, the Japanese license plate clearly readable, driver's face obscured by the sun visor. Harsh infrared flash look, data strip at the bottom of the frame with date "86-11-05 03:41" and lane number, high contrast, motion blur on the background.
 
 **F6 · L'ingrandimento — il dettaglio sbagliato** → `Immagini/Indizio_Camion_06_zoom.png`
 > Photographic enlargement of a CCTV frame, printed on glossy paper, Japan 1986 police evidence style: heavy grain, blown-up crop of a "construction worker" beside a white box truck — under the open grey work vest, the dark strap of a shoulder holster; on his feet, military combat boots instead of work shoes. A red grease-pencil circle drawn around the holster, evidence label in the corner. Black and white, very grainy, halftone texture.
@@ -103,46 +103,48 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ### La richiesta *(canone 2026-08-21: G1 ore 12:00 alla sala operativa; consegna G2 ore 10:00; «la seconda centrale sarà risparmiata» = il depistaggio — testo del messaggio in `Avventura.md`)*
 
-- **Giorno 1, ore 12:00**: la richiesta firmata **Ryūgū-kai** arriva alla sala operativa. **1.500 kg di lingotti d'oro** (120 da 12,5 kg in 10 casse, ≈ 3 miliardi ¥) su **un camioncino telonato a telo BIANCO, un solo autista**; incontro **G2 ore 10:00**, punto comunicato all'ultimo. Il mezzo lo impongono **perché la loro flotta è fatta di camioncini identici** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
-- La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. La promessa sulla «seconda centrale» regge fino alle **~13:30 del G2**, quando Shimane cade: **lo Stato ha pagato tre ore e mezza prima.**
+- **Giorno 1, ore 12:00**: la richiesta firmata **Ryūgū-kai** arriva alla sala operativa. **1.500 kg di lingotti d'oro** (120 da 12,5 kg in 10 casse, ≈ 3 miliardi ¥); incontro **G2 ore 10:00**, **coordinate scritte nel messaggio** (il ponticello di Habara). **Nessun mezzo imposto**: la polizia porta l'oro come vuole (testo del messaggio in `Avventura.md`).
+- La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. La promessa sulla «seconda centrale» regge fino alle **13:37 del G2**, quando Shimane cade: **lo Stato ha pagato tre ore e mezza prima.**
 
-### La consegna — il tunnel nel fumo *(scena CANONE utente 2026-08-20; i dettagli di servizio sono proposte)*
+### La consegna — il tunnel nel fumo *(scena CANONE utente, v2 2026-08-21 — sequenza in `Avventura.md`; i dettagli di servizio sono proposte)*
 
-**Dove**: raduno **sotto il ponticello della Hokuriku a Habara** (nord di Tsuruga) — **35.6945 N · 136.1194 E** (coordinate utente) — poi **dentro il traforo di Tsuruga**, subito a nord (~35.71 · 136.12).
+**Dove**: **sotto il ponticello della Hokuriku a Habara** (nord di Tsuruga) — **35.6945 N · 136.1194 E**, le coordinate sono **nel messaggio di riscatto** — poi **dentro il traforo di Tsuruga**, subito a nord (~35.71 · 136.12).
 
-1. **L'attesa**: le istruzioni portano il camion dell'oro **sotto il ponticello**, dove **il gemello della Ryūgū-kai aspetta parcheggiato** (identico di fabbrica, telo diverso). *(Canone.)*
-2. **La partenza**: da lì i due camion **partono verso il tunnel** ed entrano in colonna col traffico. *(Canone.)*
-3. **Il mega fumogeno**: quando sono dentro, scatta — **il fumo esce da davanti e da dietro**, dai due portali. Traffico fermo, clacson, buio da miniera. *(Canone; innesco proposto: fusti fumogeni pre-piazzati a metà canna nelle nicchie di servizio.)*
-4. **Il cambio del telo**: nel caos, **all'interno del tunnel, la squadra scambia i teloni** (e le targhe) fra i due camion; le casse passano allo **scanner** (la caccia al trasmettitore — % sotto); l'autista viene allontanato sotto tiro, un uomo loro sale al volante *(dettagli proposta)*. Minuti, mestiere. *(Canone: «aspettano che ci sia casino e cambiano il telo».)*
-5. **L'uscita**: **il gemello, ora col telo dell'oro, esce e prosegue a nord** — è l'esca, zavorrata d'acciaio, e si porta dietro elicotteri e civette; **il camion vero, col telo anonimo,** esce nel gregge dei veicoli e svolta sulla 476 verso ovest: **a notte è al capannone di Maizuru** (~85 km di provinciali). *(Canone la logica; strade proposta.)*
+1. **La consegna**: la polizia porta l'oro al ponticello **con un camion qualsiasi**. Lì aspetta parcheggiato **il camioncino della Ryūgū-kai** — uno dei **bianchi della flotta, con la livrea**, il **cassone coperto da un tendone VERDE legato sopra per non far vedere le scritte** (Elf 350, targa rubata). **Un muletto passa le casse da un mezzo all'altro**, e il camioncino parte. *(Canone 2026-08-21.)*
+2. **Verso il tunnel**: il camioncino entra nel traforo in colonna col traffico. *(Canone.)*
+3. **Il mega fumogeno**: quando è dentro, scatta — **il fumo esce da davanti e da dietro**, dai due portali. Traffico fermo, clacson, buio da miniera. *(Canone; innesco proposto: fusti fumogeni pre-piazzati nelle nicchie di servizio.)*
+4. **Il cambio**: nel caos, dentro il tunnel, la squadra **slega e toglie il tendone verde dal cassone** (e cambia la targa): **ricompaiono le scritte del camioncino bianco**; il tendone sparisce in una nicchia; le casse passano allo **scanner** a caccia del trasmettitore (% sotto). Minuti, mestiere. *(Canone: «quando tolgono il tendone verde sotto compare il camioncino bianco».)*
+5. **L'uscita**: dal portale escono decine di veicoli impauriti — e in mezzo **un camioncino bianco di una ditta qualunque**, che svolta sulla 476 verso ovest: **a notte è al capannone di Maizuru** (~85 km di provinciali). Chi cerca il tendone verde non lo vede uscire mai. *(Canone la logica; strade proposta.)*
 
 **I tiri dei PG** *(canone: «devono fare dei tiri per capire o osservare» — 2d6 ≤ attributo, tiri standard)*:
 
 | Osservazione | Tiro | Cosa dà |
 |---|---|---|
-| Cronometrare il traffico in uscita | **Lucidità** | i due camion sono rimasti dentro **troppo a lungo**: nel tunnel è successo qualcosa |
-| Fissare i dettagli del mezzo all'uscita | **Lucidità** (−1 se prima dell'ingresso hanno dichiarato cosa memorizzare: targa, ammaccature, cinghie) | il telo è **teso male / cinghie riallacciate diverse**, la targa rimontata storta: **quello non è lo stesso camion** |
+| **Seguire il camioncino dentro il tunnel** (un poliziotto in borghese, a piedi o in auto) | decisione; nel fumo, **Silenzio** per restare inosservato | **vede il cambio**: il tendone verde che cade — e sotto **il camioncino bianco con le scritte**. *(Canone: è l'aggancio.)* Se il tiro fallisce: vede comunque, ma la squadra lo nota (→ scontro nel fumo) |
+| Cronometrare i veicoli in uscita | **Lucidità** | il camioncino col tendone verde **non è mai uscito** — dentro è successo qualcosa |
+| Fissare i dettagli dei mezzi all'uscita | **Lucidità** (−1 se prima dell'ingresso hanno dichiarato cosa memorizzare: targa, ammaccature, cerchi) | un camioncino bianco ha **le stesse ammaccature / gli stessi cerchi** del verde, la targa rimontata storta: **è lui** |
 | Ascoltare le radio nel caos | **Ascolto** | una CB gracchia **ordini brevi in codice** sotto il fumo: c'è una squadra dentro |
-| Fermare «il camion dell'oro» (l'esca) | — nessun tiro | casse di **zavorra d'acciaio**: verità amara e **30-60 minuti persi** — mentre il vero si allontana |
+| Sigillare i portali e ispezionare tutto | — nessun tiro: una decisione | **30-60 minuti** e decine di veicoli nel panico; se dichiarata **prima** del deflusso, il camioncino è in trappola — la squadra molla il mezzo e tenta la fuga a piedi nel fumo (→ scontro) |
 
-**Il trasmettitore dei PG** *(canone: % di scoperta quando prendono l'oro; lo scanner lavora nel tunnel)*:
+> **L'AGGANCIO** *(canone 2026-08-21)*: le scritte viste sotto il tendone — **共成設備工業** — sono le stesse dei «cantieri» comparsi su tutta la costa: **il camioncino dell'oro è uno della flotta**. Da qui la caccia ai camioncini (blocco 1): telecamere, N-System, la ditta che non esiste.
+
+**Il trasmettitore dei PG** *(canone: % di scoperta quando prendono l'oro; lo scanner lavora nel tunnel — il mezzo è LORO, quindi si nasconde solo nel carico)*:
 
 | Dov'è nascosto | % scoperta |
 |---|---|
-| sotto il telaio / vano motore | **90%** |
 | dentro le casse dell'oro | **70%** |
 | **fuso in un lingotto falso** tra i veri | **40%** |
 | (qualunque posizione) trasmettitore **a impulsi temporizzati** | **−20%** (min 20%) |
 
-- **Trovato** → lo fissano **all'esca**: i PG inseguono il camion sbagliato per ore.
-- **Sopravvissuto** (telaio o casse) → **lo scambio dei teloni non lo frega**: tace nel tunnel, e **riparla in movimento verso Maizuru** — la pista del capannone. *(Se i PG l'avessero cucito nel TELO, segue l'esca: dettaglio da GM.)*
+- **Trovato** → resta nel tunnel col tendone verde appallottolato: i PG seguono un segnale **fermo**.
+- **Sopravvissuto** → tace nel tunnel, e **riparla in movimento verso Maizuru** — la pista del capannone.
 
-**Dove può nascere lo scontro** *(canone: alla consegna ci può essere combattimento)*: PG dentro il tunnel nel fumo → **`SCONTRI.md` §2** (fumo: +3 a chi spara attraverso; il bersaglio da prendere vivo è **il Contabile**, che dirige il cambio).
+**Dove può nascere lo scontro** *(canone: alla consegna ci può essere combattimento)*: PG al ponticello o dentro il tunnel nel fumo → **`SCONTRI.md` §2** (fumo: +3 a chi spara attraverso; civili ovunque).
 
-### Il prigioniero (la chiave)
+### L'ostaggio *(canone 2026-08-21)*
 
-- **Canone**: chi viene preso vivo può rivelare **il luogo dove si trova lo strumento per fermare il mostro**.
-- *(Proposte)*: il quadro conosce il luogo e la routine del presidio; dei capi **non sa niente** — nessuno li ha mai visti, ordini via cercapersone e lettere fermo-posta, paga in oro. Anche il suo buio è un indizio: l'organizzazione è compartimentata alla perfezione.
+- Chi viene preso vivo è **un uomo della squadra** — e **parla del capannone perché crede che ormai sia vuoto**: il gruppo lo sta sgomberando. **Il tecnico c'è, ma è dentro il capannone.**
+- Dei capi **non sa niente**: nessuno li ha mai visti — ordini via cercapersone e lettere fermo-posta, paga in oro. Anche il suo buio è un indizio: l'organizzazione è compartimentata alla perfezione. *(Proposta.)*
 
 ---
 
@@ -153,23 +155,20 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 - Chi ne parla lo chiama «**lo strumento per fermare il mostro**». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. *(Canone.)* Non *spegne* i camion — nessuno può, sono a senso unico (blocco 1): li **copre**, e il richiamo annega sotto l'inibizione *(proposta di meccanismo)*.
 - È il fusibile dell'organizzazione — il loro interruttore d'emergenza se il piano sfugge di mano *(proposta)*.
 - **Ubicazione (canone utente, coordinate definitive 2026-08-20): 35.4526 N · 135.31553 E** — l'ex cantiere di demolizioni navali sulla **sponda ovest della baia di Maizuru**, capannone grande con **banchina propria** (il dispositivo è arrivato via chiatta), **dall'altra parte della baia rispetto alla Sala 2** (~7 km in linea d'aria attraverso l'acqua): si nascondono all'ombra del pennone. Il passaggio del mostro del 3° giorno (mattina, ~07:15) transita a **~2 km**: i vetri esplodono, il capannone trema — e resta in piedi. Mappa a zone e guarnigione: `SCONTRI.md` §3.
-- **Cosa c'è dentro** *(canone: «info e anche il dispositivo»; inventario proposto)*: **il dispositivo** su un semirimorchio in fondo al capannone (antenna da calare in acqua dalla banchina: **attivabile lì**, 30 minuti di preparazione); **l'archivio della cellula logistica** — registro dei camion e delle targhe, i piani di «Operazione Fumo», la mappa madre dei punti (se non già presa), le lettere fermo-posta senza mittente (il buio, di nuovo) — **e l'oro**, dalla notte del giorno 2.
+- **Cosa c'è dentro** *(canone 2026-08-21: «info e il dispositivo»; il gruppo STA SGOMBERANDO; inventario proposto)*: **il dispositivo** su un semirimorchio in fondo al capannone (antenna da calare in acqua dalla banchina: **attivabile lì**, 30 minuti di preparazione); **il tecnico**; **l'archivio della cellula logistica, in gran parte distrutto** — stanno bruciando le carte: restano registri di camion e targhe bruciacchiati, frammenti dei piani della consegna, lettere fermo-posta senza mittente (il buio, di nuovo), la mappa madre dei punti se non già presa. **L'oro NON è qui.**
 
 ### L'assalto e l'attivazione
 
 - Il presidio è **il più duro dell'avventura** (canone): guarnigione di otto, cecchino e mitragliatore compresi — tutto in `SCONTRI.md` §3. Il **tecnico** non combatte e sa accendere lo strumento: prenderlo vivo evita di doverci capire qualcosa da soli.
-- **Attivazione** → il segnale tace → la creatura si ferma, esita, **vira verso il mare più vicino** e sparisce. Dove accade decide quante centrali si sono salvate: è il finale.
+- **Attivazione** → il segnale tace → la creatura esita, **vira verso il mare più vicino** e sparisce, senza mai fermarsi. Dove accade decide quante centrali si sono salvate: è il finale.
 - Il camioncino catturato (Indizio 1) resta utile qui: capire la tecnologia dei trasmettitori aiuta a capire — o riparare, o forzare — l'inibitore *(proposta)*.
 - ~~Deviazione = collaudo del dispositivo~~ — **RITIRATA** (2026-08-20): l'utente ha chiarito che la deviazione del 3d è la **circumnavigazione della centrale elettrica di Miyazu** (regola dei ~15 km, scheda §6.2). L'indizio vero è un altro: **due deviazioni gemelle** (Karatsu g.1, Miyazu g.3) = la regola del fastidio in mano ai PG → la Morsa.
 
 ---
 
-## Indizio 4 — Le briciole sull'organizzazione *(segnaposto — da dettare)*
+## Indizio 4 — L'organizzazione *(CHIUSO — decisione utente 2026-08-21)*
 
-**Canone già fissato**: qualche indizio sull'organizzazione si trova, ma **chi siano, dove e come
-abbiano risvegliato la creatura non si scopre mai** (la «regola del buio», STORIA.md). Quali
-briciole seminare — e dove — lo detta l'utente.
-
----
-
-*(Prossimi indizi: li detta l'utente — «poi ti dico il resto».)*
+**In questa avventura l'organizzazione resta completamente nascosta: nessuna briciola.**
+Chi siano, dove e come abbiano risvegliato la creatura non si scopre — e non si deve scoprire
+(la «regola del buio», STORIA.md). Tutto ciò che il paese avrà è la firma: 竜宮会 Ryūgū-kai.
+**La Ryūgū-kai è materiale della prossima avventura.**

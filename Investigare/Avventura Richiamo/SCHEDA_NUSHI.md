@@ -1,6 +1,6 @@
 # NUSHI 主 — Scheda del mostro
 
-**Riferimento GM · v2.1 · 2026-08-20** *(v2.1: **l'arma segreta** — pazienza 0-12, scarico M 6,9 + impulso EM, `arma-kaiju.md`; Morsa a due orologi)* · *(v2.0: NODO SCIOLTO — moto perpetuo H24 verificato a 12,000 km/h; notte/freddo/soste decadute o ridotte a colore)* · *(v1.9: nastro = CSV marcatori-2h dell'utente, 80 ore H24, arrivo 4d 14:03 — nodo notte APERTO in §4)* · *(v1.8: ricontrollo — tolta la «stima 50 m» legata al vecchio TG Kantō: il gōgai canone dichiara già 120 m)* · *(v1.7: portata del richiamo in acqua = centinaia di km — un faro per tappa; i camion accesi non si spengono; v1.6: **la Morsa** — controllo via rete elettrica col tiro del guasto orario; v1.5: **regola del righello** — velocità unica 120 km/giorno di luce, tacche G1-G10, bollettino del tramonto; v1.4: il nome — **Nushi**, decisione utente; «uminari» resta la parola per il suo rombo; v1.3: si ferma di notte ANCHE in mare + itinerario e tempi + coordinate dal CSV utente; v1.2: origine Madara-shima, Tomari rimossa, meta finale Kashiwazaki-Kariwa; v1.1: §9 «La scia»)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci nuove non ancora confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
+**Riferimento GM · v2.2 · 2026-08-21** *(v2.2: ripulitura completa dei canoni superati — eliminato ogni residuo di «120 km per giorno di luce», soste e spegnimento notturno; tappe con orari dal nastro CSV e dai bollettini; prompt P3/P4/P7/P9 riallineati al moto perpetuo)* · *(v2.1: **l'arma segreta** — pazienza 0-12, scarico M 6,9 + impulso EM, `arma-kaiju.md`)* · *(v2.0: moto perpetuo H24 verificato a 12,000 km/h)*. Canone: fisiologia dal design v0.1 + **altezza 120 m** (decisione utente 2026-08-19, stimata dalle foto aeree). Le voci non confermate sono marcate **(proposta)**. Valori reali (temperature, luce, distanze costiere) indicativi: **da riverificare su fonte primaria prima della pubblicazione** (disciplina del design §11).
 
 ---
 
@@ -8,8 +8,8 @@
 
 | | |
 |---|---|
-| Nome | **Nushi** 主 — «il Padrone» (decisione utente 2026-08-19): nel folklore ogni grande acqua ha il suo *nushi*, lo spirito-padrone antichissimo — è la parola dei vecchi di Madara, e dal gōgai in poi è il suo nome. **Uminari** 海鳴り «il rombo del mare» resta la parola dei pescatori per il suo **suono**: «si sente l'uminari» = sta arrivando. Entrambe nascono a Madara **prima** dell'apparizione ufficiale (v. §10, il nome come indizio) |
-| Origine | **Madara-shima**, Genkai-nada: prima emersione documentata — **e insabbiata** (v. §10, punto zero) |
+| Nome | **Nushi** 主 — «il Padrone» (decisione utente 2026-08-19): nel folklore ogni grande acqua ha il suo *nushi*, lo spirito-padrone antichissimo — è la parola dei vecchi di Madara, e dal gōgai in poi è il suo nome. **Uminari** 海鳴り «il rombo del mare» resta la parola dei pescatori per il suo **suono**: «si sente l'uminari» = sta arrivando. Entrambe nascono a Madara **prima** del gōgai (v. §10, punto zero) |
+| Origine | **Madara-shima**, Genkai-nada: prima emersione **1d 06:05 — un'ora prima di Genkai** (v. §10, punto zero) |
 | Prima apparizione pubblica | all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19): da lì la storia non si nasconde più |
 | Natura | Animale marino colossale. **Non è ostile e non può essere combattuto**: non caccia, non insegue, non reagisce ai veicoli. Segue un **richiamo** |
 | Indole | Filtratore migratore. Tutto il danno che fa è **passivo**: peso, passaggio, scia |
@@ -64,7 +64,7 @@
 3. **Il bollettino ai giocatori è 2 volte al giorno — 09:00 e 21:00** (`bollettini.md`, canone utente: posizione, bilancio, stato centrali). I marcatori ogni 2 ore restano lo strumento **del GM** per l'interpolazione. Dal 3° giorno c'è un tracciamento in più: il **rateo di dose** — sanno sempre dov'è, mai dove va.
 4. **La rotta la conosce solo la Ryūgū-kai** (canone 2026-08-21): il nastro qui sotto è **verità del GM**. Il mondo vede la posizione e tira proiezioni; i PG possono **intuire** il percorso dagli indizi (INDIZI 1) — la certezza esiste solo nella mappa del capo-settore.
 
-*Dettaglio fine (colore, non per il calcolo):* la marcia «vera» da pachiderma (Froude 0,08 → ~21 km/h di passo, ridotto da ostacoli e soste) e il nuoto da balenottera restano per **descrivere** la scena — la regola del righello serve per **giocare**.
+*Dettaglio fine (colore, non per il calcolo):* la marcia «vera» da pachiderma (Froude 0,08 → ~21 km/h di passo, ridotto da ostacoli e terreno) e il nuoto da balenottera restano per **descrivere** la scena — la regola del righello serve per **giocare**.
 
 ### Temperature *(colore narrativo — la velocità di gioco resta 12 km/h costante, canone)*
 
@@ -78,7 +78,7 @@ Mar del Giappone a novembre (Corrente di Tsushima, calda, sud→nord): Genkai-na
 - **Magnetorecezione**: stima tra una sorgente e l'altra; per questo la catena di emettitori può essere rada.
 - **Vista mediocre** *(proposta)*: non reagisce a luci, riflettori, traccianti. Non è mai la vista a guidarlo.
 - **Cosa ignora**: veicoli, folle, spari, elicotteri. **Cosa evita**: le forti sorgenti EM (§6). **Cosa cerca**: la sorgente del richiamo e le acque grandi.
-- L'**esitazione** (si ferma, oscilla il capo, riascolta) è il tell che una sorgente è appena morta o cambiata: per i PG è un **sensore**.
+- L'**esitazione** (rallenta il passo, oscilla il capo, riascolta — senza mai fermarsi) è il tell che una sorgente è appena morta o cambiata: per i PG è un **sensore**.
 
 ---
 
@@ -86,7 +86,7 @@ Mar del Giappone a novembre (Corrente di Tsushima, calda, sud→nord): Genkai-na
 
 | # | Debolezza | Come funziona | Come si scopre |
 |---|---|---|---|
-| 1 | **L'organo di risonanza** | La membrana da ~15 m dietro la mandibola. **Saturata da vicino (~30 m) con una sorgente 8-15 Hz ad alta potenza**, la bestia perde l'orientamento e rientra al mare a stima. Non si spara: si satura. *A organo spento (notte, torpore) la saturazione non produce nulla* (proposta) | la membrana freme a ogni cambio di rotta (foto aeree); l'esitazione dimostra che si può confondere; targa del trasduttore sugli emettitori |
+| 1 | **L'organo di risonanza** | La membrana da ~15 m dietro la mandibola. **Saturata da vicino (~30 m) con una sorgente 8-15 Hz ad alta potenza**, la bestia perde l'orientamento e rientra al mare a stima. Non si spara: si satura. L'organo è sempre attivo (moto perpetuo): il limite è la **distanza**, non l'ora | la membrana freme a ogni cambio di rotta (foto aeree); l'esitazione dimostra che si può confondere; targa del trasduttore sugli emettitori |
 | 2 | **Il fastidio elettrico** *(canone utente 2026-08-20 — sostituisce cabine/2 km del design)* | **A ~15 km da una centrale termoelettrica IN ESERCIZIO devia**, poi riprende la linea. Sulla rotta hanno effetto **solo due**, con **due gradi** (canone): **Karatsu** (giorno 1) = **deviazione lieve** — una piega della rotta poco dopo Genkai; **Miyazu Energy Research Center** (giorno 3) = **evitamento completo** — **le gira attorno** tagliando l'entroterra di Tango, poi torna in linea. Le altre quattro della mappa (Matsuura ×2, Shin-Kokura, Toyama Shinko) sono fuori raggio — **e sono le leve potenziali dei PG** *(proposta)*. **Scoperta questa regola, si sblocca la Morsa (v. sotto)** | le **due deviazioni** (Karatsu g.1, Miyazu g.3): stessa firma a intensità diversa — chi le confronta ha la regola in mano, e dal grado deduce che conta **quanto** l'impianto le finisce sulla strada |
 | 3 | ~~La notte~~ | **DECADUTA** (decisione utente 2026-08-20: si muove sempre). La notte resta il terreno dei PG solo contro gli **uomini** della Ryūgū-kai | — |
 | 4 | ~~Il freddo~~ | **ridotta a colore** (la velocità di gioco resta costante): nel nord fuma di vapore, non rallenta | — |
@@ -98,33 +98,22 @@ Mar del Giappone a novembre (Corrente di Tsushima, calda, sud→nord): Genkai-na
 
 Non reagisce agli attacchi: **li accumula**. Scala nascosta 0-12 (sorgenti elettriche attive entro 2 km, radar di tiro, impatti d'arma, ostruzioni; accerchiamento = raddoppio; −1 ogni 10′ di quiete). **A 12 scarica, sempre**: sequenza visibile di **40 secondi** (si ferma → si alza sulle posteriori → silenzio → si abbatte di testa), poi **impatto sismico M 6,9** (Shindo 7 fino a 6 km) + **impulso elettromagnetico** (elettronica morta fino a 25-60 km, elicotteri giù, **ogni sito nucleare entro 60 km condannato all'istante** — nella baia di Wakasa uno scarico li prende tutti e quattro insieme). Dopo: pazienza a 0 e **sei ore di immunità** in cui riprende il percorso. Tabelle complete, cosa sopravvive (valvole, meccanica pura, schermature) e note in `arma-kaiju.md`. **Il paradosso è il punto**: provocarla abbastanza da fermarla = scatenare ciò che si sta cercando di impedire.
 
-### La Morsa — controllarla con la rete elettrica *(canone utente 2026-08-19; taratura dei tiri: proposta)*
+### Deviarlo con la corrente *(canone utente 2026-08-21)*
 
-> ⚠ **Da ritarare sul canone nuovo (2026-08-20)** — ora su **tre scale** da armonizzare con l'utente:
-> **~15 km** = deviazione (termoelettriche in esercizio: le circumnaviga — Karatsu, Miyazu; le altre 4 della mappa sono le leve) · **~2 km** = irritazione (qualunque sorgente attiva vicina: carica la **pazienza**, `arma-kaiju.md`) · in mezzo, la geometria della Morsa.
-> **La Morsa ha quindi DUE orologi**: il **tiro del guasto** (2d6 ≤ ore — la rete cede) e la **molla della pazienza** (la gabbia stretta la porta a 12 in ~1 ora → **scarico**: M 6,9 + impulso). La Morsa compra ore, ma il conto ora può arrivare in due valute — e la seconda è quella cara.
+Quando i PG scoprono che le forti sorgenti elettriche gli danno fastidio (riga 2), la debolezza diventa una leva — **ma solo per deviarlo, mai per fermarlo**:
 
-Quando i PG scoprono che le forti sorgenti elettriche le danno fastidio (riga 2), la debolezza diventa una leva: l'ente elettrico può **alimentare linee e sottostazioni scelte** per deviarla — o per **tenerla**.
-
-| Uso | Effetto | Limite |
+| Uso | Effetto | Regola |
 |---|---|---|
-| **Deviare** | sposta il passaggio di quartiere o vallata («chi si prende la passata» — la scelta sporca resta) | serve una linea vera nel posto giusto: la rete è quella che è |
-| **Rallentare** | aggiramenti forzati: ogni ansa ~1 ora persa (**−12 km sui km del Nushi**) | aggira, non torna indietro |
-| **La Morsa piena** | un recinto di sorgenti accese (una ogni ~4 km: lei si tiene a ~2) che la **blocca dov'è**: km del Nushi fermi | solo dove deve passare **vicino a terra** — promontori, stretti, baie, l'avvicinamento a una centrale. In mare aperto non c'è presa |
+| **Deviare, con calma** | sorgenti accese sul fianco della rotta: aggira e sposta il passaggio («chi si prende la passata» — la scelta sporca resta); ogni ansa ~1 ora persa = **−12 km sui km del Nushi** | **funziona, senza spazientirlo** — ma **i macchinari si possono rompere**: a ogni ora di deviazione il GM tira 2d6; se esce ≤ delle ore trascorse, **GUASTO** — trasformatore in fiamme, blackout a cascata, la leva è persa (in media regge 5-6 ore) |
+| **Circondarlo per fermarlo** | un recinto di sorgenti che lo blocca dov'è | **lo fa solo spazientire: dopo poco scatena la sua arma** (`arma-kaiju.md` — la gabbia porta la pazienza a 12 in ~1 ora → scarico M 6,9 + impulso). Non è una tattica: è un detonatore |
 
-**Il tiro del guasto** *(canone: ogni ora una probabilità di malfunzionamento; un tiro fallito = si libera)* — la rete del 1986 non è fatta per questo. **A ogni ora di Morsa piena, il GM tira 2d6: se esce un risultato ≤ delle ore di Morsa di oggi, GUASTO — la bestia si libera.**
+| Ora di deviazione | 1ª | 2ª | 3ª | 4ª | 5ª | 6ª | 7ª | 8ª |
+|---|---|---|---|---|---|---|---|---|
+| Guasto con 2d6 ≤ | — | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| In percentuale | 0% | 3% | 8% | 17% | 28% | 42% | 58% | 72% |
 
-| Ora di Morsa | 1ª | 2ª | 3ª | 4ª | 5ª | 6ª | 7ª | 8ª | 9ª | 10ª |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Guasto con 2d6 ≤ | — | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-| In percentuale | 0% | 3% | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% |
-
-**In media regge 5-6 ore: la Morsa compra mezza giornata, non la campagna.**
-
-- **Il guasto**: un trasformatore in fiamme, una linea che scatta, il blackout a cascata su mezza prefettura — il recinto si apre e la bestia passa dal varco, riprendendo la rotta. Il colore lo mette il GM; il conto politico arriva comunque (un distretto al buio è un distretto furioso).
-- Il contatore cresce finché la Morsa tiene — **giorno e notte** (la bestia non si ferma più). Si azzera solo **sciogliendo la Morsa** e lasciando riparare le squadre (qualche ora); su una rete già provata riparte dalla 2ª-3ª.
-- **Deviare e rallentare non richiedono tiri**: il prezzo lì è politico, non tecnico. Il tiro è solo per la Morsa piena — tenerla ferma *contro* il richiamo.
-- **La contromossa della Ryūgū-kai** *(proposta)*: il richiamo non si spegne — la chiama da oltre il recinto. Per aggirare la Morsa devono **spostare i camioncini** e ridisegnare la linea: cioè muoversi allo scoperto. **Ogni ora di Morsa è anche un'occasione investigativa** — furgoni in movimento, nuove accensioni, mercenari per strada.
+- Dopo un guasto le squadre riparano in qualche ora; su una rete già provata il contatore riparte dalla 2ª-3ª ora.
+- **La contromossa della Ryūgū-kai** *(canone 2026-08-21)*: il richiamo la chiama da oltre la deviazione — per correggere la rotta devono **spostare i camioncini**, cioè muoversi allo scoperto: ogni ora guadagnata è anche un'occasione investigativa.
 - **Lo spegnimento delle centrali** *(canone utente 2026-08-21)*: nessun impianto viene fermato in via preventiva — **le centrali della rotta funzionano normalmente**. L'ordine di spegnerne una possono **proporlo i PG**, e **deve approvarlo il vertice dello Stato**: la catena decisionale costa ore, e il GM le fa pesare. Fino a quell'ordine, ogni centrale resta in esercizio.
 
 **Cosa la ferma davvero (canone utente 2026-08-19 — `STORIA.md`):** lo **strumento dell'organizzazione** — un **inibitore del segnale**: attivato, il richiamo tace e la creatura **torna al mare dal punto più vicino**. È la via di vittoria disegnata dell'avventura — ed è **l'unico interruttore che esista**: i camion-faro, una volta accesi, **non si spengono** (INDIZI, blocco 1). (La saturazione ravvicinata dell'organo — riga 1 — resta biologia vera; se sia in gioco come piano-B disperato è da decidere.)
@@ -147,7 +136,9 @@ Filtratore: **filtra in movimento** (non si ferma mai — canone di rotta): **~1
 | ~1 km | il suono nello stomaco: **+1 alla somma** delle azioni di precisione (mani, strumenti) |
 | ~300 m | al primo ingresso in fascia: **tiro di pressione** (Distacco o Silenzio — costa Ki, scala del Regolamento) |
 | ~100 m | i passi: a ogni appoggio vicino, **Lucidità** per restare in piedi; calcinacci e vetrate — danno 1-2 a discrezione GM |
-| **~30 m** | **la finestra dell'organo**: solo qui lo si satura. La sequenza completa è in Sviluppo §6 (S5 «I trenta metri») |
+| **~30 m** | **la finestra dell'organo**: solo qui lo si satura *(piano-B — proposta da decidere, sequenza sotto)* |
+
+**Il piano-B dei trenta metri** *(CANONE 2026-08-21 — lo suggerisce **il tecnico del capannone**, se si arrende e parla: «è così che l'abbiamo manovrata… ma allora non era radioattiva» — SCONTRI §3)*: una sorgente 8-15 Hz ad alta potenza — un **emettitore catturato** rimontato su un'autoscala dei vigili del fuoco — portata a ~30 m dalla testa. Sequenza a tiri standard (le pressioni costano Ki): ① **arrivare sotto** — guidare tra i detriti: Lucidità (l'autista) ② **reggere il punto** — tiro di pressione (Distacco o Silenzio) ③ **il momento** — Ascolto: il «cambio di nota» dell'organo ④ **la saturazione** — nessun tiro, è una decisione; poi **tenere 60 secondi**: un tiro a testa sull'attributo della propria mansione, ogni fallimento −1 Ki, due fallimenti = sbalzati giù (danno 3). Esito: perde la rotta e **vira al mare a stima**. **Il problema sono le radiazioni**: dal g.1 la bestia è una sorgente mobile (sotto i 2 km = sola andata, banner sopra) — chi sale sull'autoscala non torna. E la tromba accesa è una sorgente attiva entro 2 km: **+1 pazienza ogni 10′** (`arma-kaiju.md`) — si accende **solo all'ultimo momento**.
 
 ---
 
@@ -155,11 +146,11 @@ Filtratore: **filtra in movimento** (non si ferma mai — canone di rotta): **~1
 
 Tre fasce, dalla linea di transito verso fuori:
 
-| Fascia | Larghezza | Cosa |
-|---|---|---|
-| **Il Solco** | ~60-80 m | distruzione fisica: impronte, strisciata della coda, crolli |
-| **La fascia del tamburo** | ~300 m | danni da vibrazione e liquefazione |
-| **La fascia dei sintomi** | ~4 km | effetti biologici (già canone, §6/§8) |
+| Fascia                    | Larghezza | Cosa                                                        |
+| ------------------------- | --------- | ----------------------------------------------------------- |
+| **Il Solco**              | ~60-80 m  | distruzione fisica: impronte, strisciata della coda, crolli |
+| **La fascia del tamburo** | ~300 m    | danni da vibrazione e liquefazione                          |
+| **La fascia dei sintomi** | ~4 km     | effetti biologici (già canone, §6/§8)                       |
 
 ### A terra — il Solco
 
@@ -170,7 +161,6 @@ Tre fasce, dalla linea di transito verso fuori:
 - **La liquefazione**: nei suoli alluvionali e nei riporti costieri (mezzo Giappone urbano) il martellamento fa affiorare sabbia e acqua: pali storti, case inclinate in una fascia di ~100 m.
 - **La linea del sale**: nei primi 2-3 km da ogni sbarco scola acqua di mare a tonnellate: in una settimana i campi lungo la linea **ingialliscono** — la scia si vede a un mese di distanza, dal finestrino del treno.
 - **La biologia**: cirripedi e denti di cane strappati dai fianchi restano sugli spigoli dei palazzi; pesce e krill sgocciolati dalla filtrazione; e dopo il passaggio **il silenzio degli uccelli** — niente canti per giorni. L'odore resta più a lungo di tutto: bassa marea, iodio, fango.
-- **I giacigli**: dove ha passato la notte, due conche profonde e un'area compressa grande come un isolato — i «letti del Nushi», meta di curiosi prima ancora delle transenne.
 
 ### In mare
 
@@ -192,7 +182,7 @@ Tre fasce, dalla linea di transito verso fuori:
 | 2-7 gg | la linea del sale ingiallisce, aironi sugli stagni-impronta, mercato nero dei «frammenti» |
 | settimane | «la Linea» burocratica: perizie, transenne stanche, cause assicurative — un decreto per prefettura |
 
-**Nota GM**: chi insegue viaggia *sulla* scia — gas, edifici lesionati, ponti infragiliti, voragini sui sottoservizi: la Linea è essa stessa un pericolo (danno 1-2 e tiri di Lucidità a discrezione, come per i calcinacci di §8). E la **scia sociale** è materiale d'avventura: i frammenti di placca al mercato nero il giorno stesso, i pellegrini ai giacigli, lo sciacallaggio nel corridoio evacuato (già negli scontri, S1).
+**Nota GM**: chi insegue viaggia *sulla* scia — gas, edifici lesionati, ponti infragiliti, voragini sui sottoservizi: la Linea è essa stessa un pericolo (danno 1-2 e tiri di Lucidità a discrezione, come per i calcinacci di §8). E la **scia sociale** è materiale d'avventura: i frammenti di placca al mercato nero il giorno stesso, lo sciacallaggio nel corridoio evacuato.
 
 ---
 
@@ -202,28 +192,27 @@ Tre fasce, dalla linea di transito verso fuori:
 
 **Madara-shima** (馬渡島, arcipelago di Chinzei, Karatsu — Saga): un villaggio di pescatori di qualche centinaio di anime nel Genkai-nada, a pochi km dalla costa e **~11 km dalla centrale di Genkai** (coord. 33,58099 N · 129,74397 E — dal CSV dell'utente). L'isola dei due dèi: i santuari, e la chiesa dei discendenti dei cristiani nascosti.
 
-- **Le notti del canto** *(proposta)*: per notti i pescatori sentono il mare «rombare» nelle case — lo chiamano con la parola di sempre: **uminari**. Poi le reti tranciate, la trincea sul fondale, e all'alba la prima emersione documentata.
-- **L'insabbiamento** *(decisione utente; meccanica proposta)*: la denuncia della cooperativa ritirata, il rullino di un pescatore «trattenuto per accertamenti», l'ordine alla stazione di polizia: *nessuna diffusione — panico ingiustificato*. **Chi ha dato l'ordine, e quanti giorni passano: da decidere** — è il tempo in cui l'insabbiamento lavora.
-- **La riapparizione**: all'alba, **sulle rive della centrale di Genkai — che attraversa e distrugge al passaggio** (decisione utente 2026-08-19; l'annuncio ai giocatori è il gōgai in `PRESENTAZIONE_WhatsApp.md`, l'immagine è il prompt P7). Da qui la storia è pubblica: la prima centrale è già persa, e sulla rotta ce ne sono altre sette.
+- **Le notti del canto** *(proposta)*: per notti i pescatori sentono il mare «rombare» nelle case — lo chiamano con la parola di sempre: **uminari**. Poi le reti tranciate, la trincea sul fondale. Nessuno può immaginare che cosa sia.
+- **L'ora di preavviso** *(canone utente 2026-08-21 — NIENTE insabbiamento)*: **1d 06:05, emerge davanti a Madara**. I pescatori danno l'allarme, la prefettura si allarma, la polizia si sta muovendo per andare a indagare — nessuno pensa alla centrale, nessuno se l'aspettava. **Alle 07:00 attraversa Genkai e la distrugge** (l'annuncio ai giocatori è il gōgai in `COPERTINA.md`, l'immagine è il prompt P7). Un'ora: tutto il preavviso che c'è stato. Da qui la storia è pubblica — e Madara non conta più.
 - **La V di Genkai — quello che si sa** *(mappe utente 2026-08-19, salvate in `Immagini/Mappa_01_Genkai_largo.png` e `Mappa_02_Genkai_V.png`)*: è entrata dal mare a **ponente** (dal largo di Madara), ha attraversato il promontorio della centrale **distruggendo tutto nel corridoio del passaggio**, ed è uscita nel mare a **levante-nordest**. Le motovedette la perdono al largo: **sparita**. All'apertura della campagna il mondo sa solo questo — la rotta delle 8 centrali è **verità del GM**, non del mondo: la destinazione va scoperta con gli indizi.
-- **Il nome come indizio** *(proposta)*: quando sui giornali affiorano «**il Nushi**» e «l'uminari» — la parola dei vecchi per la cosa, quella dei pescatori per il suo rombo — quelle parole sono l'impronta digitale del rapporto sepolto: qualcuno a Madara l'aveva **sentita e nominata prima** della prima apparizione ufficiale.
+- **Il battesimo** *(colore)*: «**il Nushi**» e «l'**uminari**» — la parola dei vecchi per la cosa, quella dei pescatori per il suo rombo — nascono a Madara nelle notti del canto, prima del gōgai che le porterà a tutto il paese.
 
 ### Le tappe
 
 Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, risalendo la Corrente di Tsushima. Senza Tomari, l'elenco coincide **esattamente con tutte le centrali affacciate sul Mar del Giappone in esercizio nel 1986**. *Il viaggio comincia a Genkai: il gioco si chiama GENKAI.*
 
-| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | Viaggio *(⚠ superato: orari veri nel nastro CSV sotto)* |
+| # | Tappa | Località | Lon | Lat | Stato nel nov. 1986 *(da riverificare)* | Tratta dalla precedente (ortodromica) | Costiera stimata | **Quando** *(nastro CSV + bollettini — canone)* |
 |---|---|---|---|---|---|---|---|---|
-| 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | 129.74397 | 33.58099 | villaggio di pescatori: l'avvistamento **insabbiato** | — | — | — |
-| 1 | **Genkai** — la riapparizione: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~11 km | ~12 km | ~1 h |
-| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | ~3,6 gg |
-| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | ~2,2 gg |
-| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | ~1,7 h |
-| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | ~4 h |
-| 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | ~2 h |
-| 7 | **Tsuruga** | Tsuruga | 136.01889 | 35.75194 | JAPC — 1 BWR (1970, il **primo reattore commerciale** del paese); n.2 in avviamento (com. feb. 1987). *Stesso gestore di Tōkai Daini; scandalo della perdita radioattiva 1981* | **0,4 km** | adiacente | — |
-| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | ~2,8 gg |
-| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **~9,3 gg** (righello: 120 km/giorno) |
+| 0 | **Madara-shima** — il punto zero | Chinzei, Karatsu (Saga) | 129.74397 | 33.58099 | villaggio di pescatori: l'emersione — **un'ora di preavviso** | — | — | **1d 06:05** — parte |
+| 1 | **Genkai** — un'ora dopo Madara: **DISTRUTTA al passaggio** | Genkai (Saga) | 129.83722 | 33.51556 | Kyūshū Electric — 2 reattori PWR (1975, 1981) | ~11 km | ~12 km | **1d 07:00** |
+| 2 | **Shimane** | Matsue | 132.99917 | 35.53833 | Chūgoku Electric — 1 BWR (1974); n.2 in costruzione | 367 km | ~430 km | **2d 13:37** |
+| 3 | **Takahama** | Takahama (Fukui) | 135.50396 | 35.52199 | Kansai Electric — **4 PWR** (1974, '75, '85, '85) | 227 km | ~260 km | **3d 08:49** |
+| 4 | **Ōi** | Ōi (Fukui) | 135.65203 | 35.54063 | Kansai Electric — 2 PWR da 1.175 MW (1979) | 13,6 km | ~20 km | **3d 09:56** |
+| 5 | **Mihama** | Mihama (Fukui) | 135.96358 | 35.70348 | Kansai Electric — 3 PWR; il n.1 (1970) è il **primo PWR commerciale del Giappone** | 33,5 km | ~45 km | **3d 12:43** |
+| 6 | **Fugen** | Tsuruga | 136.01639 | 35.75444 | PNC (statale) — prototipo ad acqua pesante, 165 MW (1979): l'impianto-laboratorio | 7,4 km | ~25 km | **3d 13:20** |
+| 7 | **Tsuruga** | Tsuruga | 136.01889 | 35.75194 | JAPC — 1 BWR (1970, il **primo reattore commerciale** del paese); n.2 in avviamento (com. feb. 1987). *Stesso gestore di Tōkai Daini; scandalo della perdita radioattiva 1981* | **0,4 km** | adiacente | **3d 13:20** (adiacente a Fugen) |
+| 8 | **Kashiwazaki-Kariwa** — **META FINALE** | Kashiwazaki (Niigata) | 138.60167 | 37.42833 | TEPCO — 1 BWR (sett. 1985) + **cantiere immenso** (diventerà il sito più grande del mondo) | 297 km | ~340 km | **4d 14:03** |
+| | | | | | **TOTALE** | **~960 km** | **~1.130 km** | **80 ore** (12 km/h H24: 1d 06:05 → 4d 14:03) |
 
 > Coordinate di dettaglio: fa fede **`centrali-giappone-1990.csv`** (nella cartella, fornito dall'utente). Attenzione: il CSV fotografa lo stato **1990** (Shimane-2 1989, Tsuruga-2 1987, KK 3 unità); la tabella qui sopra riporta lo stato **novembre 1986**, che è quello in gioco.
 > Il set completo dei punti-mappa — Madara + 8 tappe + vulcano, con date e ruoli, stesso schema, pronto per l'import in Google My Maps — è in **`punti-mappa-avventura.csv`**.
@@ -234,33 +223,33 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 |---|---|---|
 | 1d 06:05 | 0 | **parte da Madara-shima** |
 | **1d 07:00** | 11 | **Genkai — distrutta** (la V) |
-| 1d ~08-09 | 15-35 | **prima deviazione (LIEVE)**: una piega a nord poco dopo Genkai — la **termoelettrica di Karatsu** a ~15 km — poi riprende la linea: la prima anomalia leggibile |
+| 1d 07:29-07:59 | 15-25 | **prima deviazione (LIEVE)**: una piega a nord poco dopo Genkai — la **termoelettrica di Karatsu** a 10-14 km — poi riprende la linea: la prima anomalia leggibile (orari: bollettini) |
 | 1d sera-notte | 130-200 | costa di Yamaguchi (Hibiki-nada, largo di Hagi) |
-| **2d ~13:30** | ~373 | **Shimane colpita** (il percorso passa per OGNI centrale nucleare — canone utente: se non fermata le distrugge **tutte**) |
+| **2d 13:37** | ~373 | **Shimane colpita** (il percorso passa per OGNI centrale nucleare — canone utente: se non fermata le distrugge **tutte**) |
+| 2d notte | ~450-500 | doppia la costa di Tottori |
 | 3d 05:00-07:14 | 563-587 | **seconda deviazione (EVITAMENTO COMPLETO)**: **gira attorno alla centrale di Miyazu** tagliando l'entroterra di Tango, poi torna in linea — la firma di Karatsu, ma piena |
-| 2d notte | ~500 | doppia la costa di Tottori |
-| **3d 09:00** | 611 | **Takahama** |
-| **3d ~10:00** | ~625 | **Ōi** |
-| **3d ~12:45** | ~659 | **Mihama** |
-| **3d ~13:20** | ~663 | **Fugen + Tsuruga** — *cinque cupole in quattro ore e mezza: **il giorno nero*** |
+| **3d 08:49** | ~609 | **Takahama** |
+| **3d 09:56** | ~622 | **Ōi** |
+| **3d 12:43** | ~656 | **Mihama** |
+| **3d 13:20** | ~663 | **Fugen + Tsuruga** — *cinque cupole in quattro ore e mezza: **il giorno nero*** |
 | 3d 15:10 | ~690 | attraversa la propria nube di Mihama: il rateo su di lei — **contaminata fin da Genkai** — sale ancora |
 | 3d notte | ~750-800 | taglia le montagne (Hakusan, +1.500 m) senza variare velocità |
 | **4d 14:03** | **959,5** | **arriva a Kashiwazaki-Kariwa e la attraversa senza rallentare** (come Genkai): 14:20 l'impianto non esiste più, **14:30 entra in mare, 15:45 ultimo contatto a 14 km — sparita** (bollettini; non si è fermata un minuto in 4 giorni) |
 
 **Risposta secca: 80 ore — quattro giorni scarsi.** «Dov'è adesso?» = il marcatore dell'ora sulla mappa (uno ogni 2 h = 24 km), interpolazione a vista. Il GM traccia solo «i km del Nushi»: i successi dei PG si sottraggono lì.
 
-- **Date proposte**: ancorare **1d = 11 novembre** → sbarco **venerdì 14 novembre, 14:03** → **il 15 alle 17:25 il Mihara erutta davvero**. (Con 1d = 5/11 l'arrivo è l'8 e il Mihara si sgancia. Se si ancora all'11, il gōgai va ridatato al 12.)
+- **Date (CANONE 2026-08-21)**: **1d = martedì 11 novembre 1986** → consegna mercoledì 12 → giorno nero giovedì 13 → sbarco **venerdì 14 novembre, 14:03** → **sabato 15 alle 17:25 il Mihara erutta davvero** (la coda: `SECONDO_DORMIENTE.md`). Il gōgai è datato mercoledì 12.
 - **Nota GM**: itinerario **non contrastato** — **ogni tappa raggiunta è una centrale distrutta** (`STORIA.md`). Il **giorno nero** (3d, Wakasa) è quasi impossibile da fermare per intero: la domanda al tavolo è *quale cupola salvate*.
 
 ### Note sul percorso
 
 - **Genpatsu Ginza** 原発銀座 («la Ginza dei reattori» — soprannome **reale** della baia di Wakasa): le tappe 3→7 sono cinque centrali in ~60 km di costa, più il cantiere di Monju avviato proprio nel 1986. **In un giorno solo la bestia ne passa cinque**: è il crescendo naturale di metà percorso.
-- **La stagione avanza col viaggio**: tra nuoto e soste il tour dura settimane — il finale a Kashiwazaki cade nel **primo inverno dello yukiguni**, il paese della neve: acque a ~14 °C, neve sulla costa di Niigata, la bestia un po' più lenta a ogni tappa. Il rallentamento del terzo atto lo regala la geografia.
+- **Lo yukiguni**: il finale a Kashiwazaki cade sulla costa del **paese della neve** — acque a ~14 °C, prime nevi possibili su Niigata a metà novembre: la bestia fuma di vapore, **il passo non cambia** (§4).
 - **La meta finale è la centrale di Tokyo**: Kashiwazaki-Kariwa è della TEPCO — l'elettricità della capitale si fa in Niigata. Arrivarle addosso è colpire Tokyo senza mai toccarla.
 
-### Fuori rotta: il vulcano *(gancio proposto — vive o muore con la decisione sul «secondo esemplare», Sviluppo §0)*
+### Fuori rotta: il vulcano *(CANONE 2026-08-21 — la coda: `SECONDO_DORMIENTE.md`)*
 
-**Monte Mihara, Izu Ōshima** — coordinate Google Maps: **34.7244, 139.3944**. Dall'altra parte del paese rispetto alla rotta (~330 km da Tsuruga, ~310 da Kashiwazaki, oltre le montagne del Honshū) — ma gli infrasuoni viaggiano nella crosta e nell'acqua. **Storia vera**: fumarole sulla parete sud del cratere dal 12 novembre 1986, **eruzione il 15 alle 17:25**, eruzione fessurale ed evacuazione totale dell'isola (~10.000 persone) il 21. Se il finale «risveglio» resta in gioco, è qui che dorme il destinatario del richiamo — e l'itinerario qui sopra (sbarco finale il 14) consegna l'eruzione **il giorno dopo la fine**, gratis.
+**Monte Mihara, Izu Ōshima** — coordinate Google Maps: **34.7244, 139.3944**. Dall'altra parte del paese rispetto alla rotta (~330 km da Tsuruga, ~310 da Kashiwazaki, oltre le montagne del Honshū) — ma gli infrasuoni viaggiano nella crosta e nell'acqua. **Storia vera**: fumarole sulla parete sud del cratere dal 12 novembre 1986, **eruzione il 15 alle 17:25**, eruzione fessurale ed evacuazione totale dell'isola (~10.000 persone) il 21. **È qui che dorme il secondo esemplare** — il destinatario del richiamo: non entra in gioco, è la coda da leggere alla fine (`SECONDO_DORMIENTE.md`) — e l'itinerario qui sopra (sbarco finale il 14) consegna l'eruzione **il giorno dopo la fine**, gratis.
 - Il vecchio percorso Tokyo→Tōkai Daini (design §4) e il copione del telegiornale sono **cuciti sul Kantō**: da rimappare quando si decide la struttura (v. domande in coda alla sessione).
 - La mappa del percorso va fatta su **cartografia vera**, non generata: la aggiungo ai lavori quando si congela la struttura.
 
@@ -285,11 +274,11 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 **P2 · La membrana** — IL punto debole; handout del briefing JSDF (indizio F4b). → `Immagini/Handout_Membrana.png`
 > Extreme telephoto reconnaissance photograph from a helicopter: close detail of the area behind the jaw of a colossal black kaiju, at the base of the skull — a taut drum-like biological membrane about 15 meters across, semi-translucent grey-pink, concentric ripples visible across its surface as it vibrates, framed by black craggy armor plates like wet volcanic rock. Overcast grey November light, long-lens compression, slight haze, military reconnaissance photo with a thin crosshair reticle and data readout in the frame corner. Japan, 1986.
 
-**P3 · La filtrazione** — «non caccia»: la natura vera della bestia. → `Immagini/Handout_Filtrazione.png`
-> A colossal 120-meter black kaiju with jagged dorsal plates kneeling chest-deep in a wide Japanese river at dawn, head lowered with jaw submerged, throat pleats ballooned like a feeding rorqual whale, muddy water and silt cascading through comb-like baleen plates along the jaw, white egrets scattering, a steel truss railway bridge dwarfed beside it. Overcast November light, mist on the water, grainy 35mm press photograph, Japan 1986, no modern buildings.
+**P3 · La filtrazione** — «non caccia»: filtra camminando, senza mai fermarsi. → `Immagini/Handout_Filtrazione.png`
+> A colossal 120-meter black kaiju with jagged dorsal plates striding chest-deep through a wide Japanese river mouth at dawn, mid-step, jaw plowing the water, throat pleats ballooned like a feeding rorqual whale, muddy water and silt cascading through comb-like baleen plates along the jaw as it walks, a churned wake behind it, white egrets scattering, a steel truss railway bridge dwarfed beside it. Overcast November light, mist on the water, grainy 35mm press photograph, Japan 1986, no modern buildings.
 
-**P4 · Lo spegnimento notturno** — la regola d'oro resa visibile. → `Immagini/Handout_Notte.png`
-> Night scene: a colossal 120-meter black kaiju standing perfectly still, frozen mid-stride among low tiled rooftops of a 1980s Japanese suburban town, its craggy hide rimed with frost, faint steam rising from its flanks, absolutely motionless like a mountain. Tiny police floodlight beams at its feet, a few paper lanterns, long-exposure stillness, cold November night, 1986 Japan, boxy patrol cars, utility poles with tangled wires. Documentary photograph.
+**P4 · La marcia notturna** — la regola d'oro resa visibile: alle tre di notte sta ancora camminando. → `Immagini/Handout_Notte.png`
+> Night scene: a colossal 120-meter black kaiju caught mid-stride above the low tiled rooftops of a blacked-out 1980s Japanese coastal town, one massive leg swinging forward, faint steam trailing off its flanks, its edges slightly motion-blurred against the sharp town. Police roadblocks with rotating red lights, headlight beams of boxy patrol cars and a few flashlights all aimed at the moving giant, utility poles with tangled wires. Long-exposure photograph, cold November night, 1986 Japan, documentary photograph.
 
 **P5 · L'aggiramento EM** — la debolezza elettromagnetica vista dall'alto (indizio F4c). → `Immagini/Handout_Aggiramento.png`
 > Vertical aerial surveillance photograph: a trail of enormous 20-meter footprints crossing autumn rice paddies and fields, the trail making a wide two-kilometer arc around a high-voltage electrical substation and its corridor of transmission pylons, then resuming its straight line. Crushed embankments and a collapsed road bridge along the trail. Overcast flat light, Japan 1986, annotated survey photo style with thin grid lines.
@@ -297,14 +286,14 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 **P6 · Il nuoto costiero** — la «scogliera che si muove»; la scena del battesimo dei pescatori. → `Immagini/Handout_Nuoto.png`
 > Dusk over the Sea of Japan: only a long row of jagged black dorsal plates cutting the waves like a moving reef, a luminous wake behind, spray. In the foreground small 1980s Japanese wooden fishing boats turning away in panic, a cape lighthouse beam sweeping. Dark indigo sea, last orange light on the horizon, grainy 35mm night photograph, motion blur, Japan 1986, no wind turbines.
 
-**P7 · La riapparizione a Genkai** — l'alba sulle rive della centrale: l'inizio pubblico della storia. → `Immagini/Handout_Genkai.png`
-> Dawn mist on a rocky Kyushu headland: the twin concrete containment domes of a 1970s Japanese nuclear power plant on the shore, cranes and power lines. Out at sea, half-veiled by mist, a colossal 120-meter black kaiju risen waist-high from the water, jagged dorsal plates dripping, facing the plant, motionless. Grey-gold first light, calm sea, press photograph from a coast guard vessel, grainy 35mm, Japan November 1986.
+**P7 · L'arrivo a Genkai** — l'alba sulle rive della centrale: l'inizio pubblico della storia. → `Immagini/Handout_Genkai.png`
+> Dawn mist on a rocky Kyushu headland: the twin concrete containment domes of a 1970s Japanese nuclear power plant on the shore, cranes and power lines. Out at sea, half-veiled by mist, a colossal 120-meter black kaiju risen waist-high from the water, jagged dorsal plates dripping, wading straight toward the plant, a heavy bow wave at its legs. Grey-gold first light, calm sea, press photograph from a coast guard vessel, grainy 35mm, Japan November 1986.
 
 **P8 · Genpatsu Ginza** — la baia di Wakasa: cinque centrali, una bestia in mezzo. → `Immagini/Handout_Wakasa.png`
 > High oblique aerial photograph of a fjord-like Japanese bay coastline with steep green headlands, several separate nuclear power plants with white containment domes visible on successive promontories into the distance. Wading in the middle of the bay, a colossal 120-meter black kaiju with jagged dorsal plates, tiny military helicopters keeping distance. Overcast November light, dark sea, documentary aerial photo, Japan 1986.
 
-**P9 · La neve di Niigata** — lo yukiguni: la bestia rallenta verso la meta finale. → `Immagini/Handout_Niigata.png`
-> First snow on the Sea of Japan coast of Niigata, low pale winter sun: a colossal 120-meter black kaiju walking hunched and visibly sluggish along the shoreline, thick white steam pouring off its flanks and back, snow settling on its jagged dorsal plates, meltwater pooling in its giant footprints. Dark winter sea, rows of pine windbreaks and dunes, a distant fishing village with smoking chimneys, telegraph poles. Niigata snow country, Japan 1986, cold muted palette, grainy documentary photograph.
+**P9 · La neve di Niigata** — lo yukiguni: l'ultimo giorno di marcia, il passo che non cambia. → `Immagini/Handout_Niigata.png`
+> First snow on the Sea of Japan coast of Niigata, low pale winter sun: a colossal 120-meter black kaiju walking hunched along the shoreline at a steady relentless pace, thick white steam pouring off its flanks and back, snow settling on its jagged dorsal plates, meltwater pooling in its giant footprints. Dark winter sea, rows of pine windbreaks and dunes, a distant fishing village with smoking chimneys, telegraph poles. Niigata snow country, Japan 1986, cold muted palette, grainy documentary photograph.
 
 **P10 · La saturazione** — il climax: i trenta metri. → `Immagini/Handout_Saturazione.png`
 > Low-angle photograph from a road bridge over a river: a 1980s Japanese fire-brigade ladder truck extended upward, a large industrial acoustic horn mounted on the ladder aimed at the sky, cables taut, tiny firefighters and policemen bracing. Thirty meters above, filling the frame, the head of a colossal black kaiju rearing back, the taut membrane behind its jaw lit white by floodlights, mud and spray exploding around. Night, rain of silt, dramatic but grounded, grainy photojournalism, Japan 1986.
@@ -315,7 +304,7 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 **P12 · Passaggio urbano (scorta)** — foto aerea gemella delle due esistenti, per qualunque tappa cittadina. → `Immagini/Handout_Citta.png`
 > Aerial disaster photograph over a mid-size 1980s Japanese coastal city: a colossal 120-meter black kaiju with jagged dorsal plates walking through the low urban fabric along a river, buildings reaching only to its knees, its long tail dragging a wake of dust, scattered fires and smoke columns along its path only, crowds and boxy cars evacuating on the main avenue. Overcast grey light, hyperdetailed aerial photo, Japan 1986, no modern glass towers.
 
-**P13 · La foto sequestrata** — Madara-shima: l'avvistamento che non doveva esistere (l'handout dell'insabbiamento). → `Immagini/Handout_Madara.png`
+**P13 · La foto dei pescatori** — Madara-shima, 06:05: l'alba dell'emersione (l'handout dell'avvistamento). → `Immagini/Handout_Madara.png`
 > Blurry amateur photograph taken at dawn from a small wooden fishing boat, 1980s consumer film camera: half-emerged from the grey misty sea a few hundred meters away, an immense dark shape with a row of jagged plates, badly out of focus, tilted horizon, sea spray on the lens, motion blur, underexposed. In the background the low silhouette of a small island with a church steeple among village roofs. Expired grainy film, light leaks, orange film date stamp in the corner. Japan 1986.
 
 ---
@@ -325,6 +314,6 @@ Blocco-creatura ricorrente nei prompt: *colossal 120-meter kaiju, charcoal-black
 - **Andatura**: v = √(Fr · g · h_anca) = √(0,08 · 9,81 · 43) ≈ 5,8 m/s ≈ 21 km/h. Fr 0,08 = camminata da pachiderma: la quadrato-cubo vieta andature agili a 10⁵ t. (Il design a 50 m usava Fr 0,25 con anca 18: stessa velocità finale — la tabella di marcia non cambia.)
 - **Massa**: volume ~10⁵ m³ (torso ellissoidale 55×45×35 m + arti e coda) × densità ~1 → ~100.000 t. Coerente col canone del genere (118,5 m → 92.000 t).
 - **Pressione al suolo**: 9,8×10⁸ N su ~400 m² (doppio appoggio) ≈ 2,5 MPa.
-- **Filtrazione**: fabbisogno = metabolismo mammifero a M^0,75 ÷ 10 (ectotermo) ≈ 20 t/g di organico; a 5-20 g/m³ utili ≈ 10⁶ m³ d'acqua/g — l'ordine di 3-4 soste da 40-60 min ai fiumi maggiori.
+- **Filtrazione**: fabbisogno = metabolismo lento a M^0,75 ÷ 10 ≈ 20 t/g di organico; a 5-20 g/m³ utili ≈ 10⁶ m³ d'acqua/g — filtrati **in movimento** (canone: nessuna sosta, §7).
 - **Distanze**: ortodromiche calcolate (haversine) sulle coordinate fornite dall'utente; costiere = stima +15-25%, da verificare su carta. Coordinate di dettaglio (Madara comprese): `centrali-giappone-1990.csv`.
-- **Tempi (regola del righello, decisione utente)**: **120 km per giorno di luce = 12 km/h**, terra e mare, ferma di notte. Nastro, tacche G1-G10 e orari in §10.
+- **Tempi (canone H24)**: **12 km/h sempre = 288 km/giorno**, terra e mare, senza fermarsi mai. Nastro, marcatori ogni 2 ore e orari in §10.

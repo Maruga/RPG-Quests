@@ -7,7 +7,7 @@
 ---
 
 **玄海新報 — GENKAI SHIMPŌ**
-*Gōgai · edizione straordinaria · giovedì 6 novembre 1986 · distribuzione gratuita*
+*Gōgai · edizione straordinaria · mercoledì 12 novembre 1986 · distribuzione gratuita*
 
 ## LA CENTRALE NON C'È PIÙ
 
@@ -17,7 +17,7 @@ GENKAI — È uscito dal mare ieri mattina alle sette in punto, con la prima luc
 
 Le due cupole si sono aperte come gusci. Dei quarantatré uomini del turno di notte, ventidue non rispondono all'appello. La prefettura ha ordinato l'evacuazione di Genkai, Chinzei, Yobuko e dei quartieri ovest di Karatsu. Il vento, per ora, spinge la nube verso il largo. Per ora.
 
-Sette mesi dopo Černobyl', la parola che nessuno voleva più stampare è tornata sulle nostre coste. Ma questo giornale stanotte ne stampa un'altra: **lo sapevano**. I pescatori di Madara-shima lo dicevano da giorni — le reti tranciate, il solco sul fondale, il rombo che faceva tremare le case nelle notti. Qualcuno, su quel rapporto, ha scritto «panico ingiustificato». Vogliamo i nomi.
+Sette mesi dopo Černobyl', la parola che nessuno voleva più stampare è tornata sulle nostre coste. I pescatori di Madara-shima raccontavano da giorni il rombo che faceva tremare le case nelle notti, le reti tranciate — e nessuno poteva immaginare che cosa fosse. Ieri alle sei del mattino l'hanno vista emergere davanti all'isola. Il tempo di dare l'allarme, il tempo di alzare un telefono — e un'ora dopo la centrale non c'era più. **Un'ora. Tutto il preavviso che il mare ci ha concesso.**
 
 È rimasto a terra il tempo di attraversare il promontorio: entrato dall'acqua a ponente, uscito nell'acqua a levante — e nel mezzo non è rimasto niente. Le motovedette l'hanno seguito al largo, rotta nord-est, poi più niente: sparito. A quest'ora potrebbe essere ovunque, sotto il Mar del Giappone.
 

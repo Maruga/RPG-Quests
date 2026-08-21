@@ -33,7 +33,9 @@ proposta «Comitato del Terzo Giorno / Ōtsuka» di `RICHIAMO_Sviluppo.md` §5 (
    fermare il mostro». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura
    **torna al mare dal punto più vicino**. *(Canone.)* È il fusibile di sicurezza
    dell'organizzazione — il loro interruttore d'emergenza *(proposta)*. La sua ubicazione può
-   rivelarla **un prigioniero preso vivo alla consegna dell'oro**. *(Canone.)*
+   rivelarla **un prigioniero preso vivo** — alla consegna dell'oro o a un camioncino — **che
+   parla del capannone perché lo crede ormai vuoto** (il gruppo lo sta sgomberando; il Contabile
+   non esiste, il tecnico è dentro il capannone). *(Canone 2026-08-21.)*
 6. **I nemici.** Oltre alle squadre dei camioncini, i PG si scontrano con **altri terroristi**:
    alla consegna dell'oro e al presidio dello strumento. *(Canone.)*
 
@@ -46,11 +48,12 @@ proposta «Comitato del Terzo Giorno / Ōtsuka» di `RICHIAMO_Sviluppo.md` §5 (
 | **Lo strumento** (INDIZI 3) | l'assalto finale → l'attivazione | **il finale**: il richiamo tace, la creatura torna al mare |
 
 Quante centrali si salvano dipende da **quando** i PG chiudono la terza via: ogni giorno guadagnato
-è una tappa risparmiata (itinerario in `SCHEDA_UMINARI.md` §10).
+è una tappa risparmiata (itinerario in `SCHEDA_NUSHI.md` §10).
 
-In più c'è la leva del **contenimento**: scoperto il fastidio per le sorgenti elettriche, la rete
-diventa **la Morsa** (scheda §6) — compra ore, non vittorie, con un tiro di guasto ogni ora; e
-costringe la Ryūgū-kai a spostare i camioncini allo scoperto.
+In più c'è la leva della **deviazione elettrica** (scheda §6): scoperto il fastidio per le
+sorgenti, la corrente **lo devia — mai lo ferma** (i macchinari si possono rompere: tiro di
+guasto ogni ora; circondarlo per fermarlo lo spazientisce e scatena la sua arma). Ogni
+deviazione costringe la Ryūgū-kai a spostare i camioncini allo scoperto.
 
 ## La regola del buio *(canone — nota per il GM)*
 
@@ -71,9 +74,9 @@ Tarō: ciò che il mare custodisce e non andava aperto — è una maschera scelt
 Il 1986 pre-Kobe: **velocissimo in prefettura, lento a Tokyo**. Non esistono la sala di crisi del
 Kantei (nasce dopo il 1995) né gli off-site center nucleari (dopo il 1999): la macchina nazionale
 si monta a telefonate fra ministeri — STA, MITI, polizia, Difesa, ente elettrico — e le prime 6-8
-ore sono una zuppa di giurisdizioni. È lo spazio in cui l'insabbiamento di Madara ha respirato.
+ore sono una zuppa di giurisdizioni.
 
-| Ora del 5 nov | Cosa esiste |
+| Ora dell'11 nov | Cosa esiste |
 |---|---|
 | ~07:00 | il disastro: allarmi, scram, evacuazioni spontanee, caos radio |
 | entro 08:00 | **sala operativa della prefettura di Saga** (protocollo disastri: routine da tifoni) + sala radio della polizia prefetturale; evacuazioni ordinate |
@@ -100,9 +103,11 @@ quasi un problema secondario — finché non sparisce nel mare.
 
 ## Rapporto con il resto del canone
 
-- La **biologia** del mostro (scheda §6: organo, EM, notte, freddo) resta tutta vera: è il terreno
-  su cui i PG *capiscono*. La **via di vittoria disegnata** però è lo strumento. (Se la saturazione
-  ravvicinata dell'organo — design v0.1 §3.5 — resti in gioco come piano-B disperato: **da
-  decidere con l'utente**.)
-- Il gancio **Mihara / secondo dormiente** resta una decisione separata, ancora aperta.
-- `RICHIAMO_Sviluppo.md` §5 (Ōtsuka/Sakuragi/Comitato): **superato** — resta come archivio di idee.
+- La **biologia** del mostro (scheda §6: organo, EM) resta tutta vera: è il terreno su cui i PG
+  *capiscono*. La **via di vittoria disegnata** però è lo strumento. (La saturazione ravvicinata
+  — scheda §8 — è il **piano-B canone**: lo suggerisce il tecnico del capannone, «è così che
+  l'abbiamo manovrata, ma allora non era radioattiva»; il prezzo sono le radiazioni.)
+- **Il secondo dormiente ESISTE** (canone 2026-08-21): sotto il Mihara — non entra in gioco,
+  è la coda da leggere alla fine → `SECONDO_DORMIENTE.md`.
+- `RICHIAMO_Sviluppo.md` (Comitato/Ōtsuka, scaletta Kantō): **eliminato 2026-08-21** — tutto
+  superato; i superstiti sono stati travasati (dormiente → file suo; 30 metri → scheda §8).

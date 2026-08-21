@@ -2,7 +2,7 @@
 
 > ⚠ **STATO 2026-08-20: ARCHIVIO.** Design v0.1: il concept, la fisiologia e le regole-mostro
 > nascono qui, ma **percorso, storia e struttura sono cambiati** — il canone corrente è in
-> `STORIA.md` + `SCHEDA_UMINARI.md` + `INDIZI.md`; l'indice generale è `SCHEMA.md`.
+> `STORIA.md` + `SCHEDA_NUSHI.md` + `INDIZI.md`; l'indice generale è `SCHEMA.md`.
 
 **Stato:** bozza di design, v0.1
 **Sistema:** GENKAI usato solo come sistema di combattimento (modulo *Lo Scontro / Shōtotsu* v2.1)
@@ -36,7 +36,7 @@ I PG non devono uccidere niente. Devono **capire il segnale e spegnerlo** prima 
 
 Senza nome ufficiale. La stampa la battezza durante l'avventura — vedi il copione del telegiornale.
 
-> **Scheda di riferimento completa** (dimensioni 120 m — decisione utente 2026-08-19 —, fisiologia, percorso totale, prompt immagini): `SCHEDA_UMINARI.md`.
+> **Scheda di riferimento completa** (dimensioni 120 m — decisione utente 2026-08-19 —, fisiologia, percorso totale, prompt immagini): `SCHEDA_NUSHI.md`.
 
 ### 3.1 Fisiologia
 
@@ -183,13 +183,13 @@ Nessuno spara mai al mostro con profitto. L'unico momento in cui un PG è vicino
 ## 10. Da decidere
 
 - [x] Nome della creatura — **Uminari**, dai pescatori della baia, adottato dai quotidiani della sera (telegiornale, ed. 1 del 12/11)
-- [ ] Identità e movente dei terroristi → proposta in `RICHIAMO_Sviluppo.md` §5 (Ōtsuka Shirō), da confermare
-- [ ] Esiste davvero un secondo esemplare? → proposta in `RICHIAMO_Sviluppo.md` §9 (sì, in tutti i finali), da confermare
-- [ ] Numero esatto di emettitori e loro posizioni sulla mappa → catena in `RICHIAMO_Sviluppo.md` §4 (14 coppie + ED + EX), posizioni puntuali da fissare su mappa
-- [ ] Scaletta minuto per minuto delle 4 ore → `RICHIAMO_Sviluppo.md` §7, da congelare dopo le conferme
-- [ ] Come i PG entrano nella vicenda → proposta in `RICHIAMO_Sviluppo.md` §1 (la squadra di Senju), da confermare
+- [x] Identità e movente dei terroristi → RISOLTO diversamente: organizzazione **anonima, mai identificata** (`STORIA.md`, canone — la proposta Ōtsuka è decaduta)
+- [x] Esiste davvero un secondo esemplare? → **SÌ, canone 2026-08-21** → `SECONDO_DORMIENTE.md`
+- [ ] Numero esatto di emettitori e loro posizioni sulla mappa → catena sequenziale in `INDIZI.md` blocco 1; posizioni puntuali da fissare su mappa
+- [ ] Scaletta minuto per minuto → base: la sequenza di `Avventura.md`, da congelare
+- [ ] Come i PG entrano nella vicenda → aperto (candidato: polizia di Karatsu/Chinzei — SCHEMA §5.2)
 
-> **Stato 2026-08-19**: sviluppo v0.2 in `RICHIAMO_Sviluppo.md` — proposte per tutti i punti aperti, in attesa delle conferme dell'utente (elenco decisioni in §0 di quel file).
+> **Stato 2026-08-21**: `RICHIAMO_Sviluppo.md` eliminato (tutto superato dal canone nuovo); i punti aperti vivi sono in `SCHEMA.md` §5.
 
 ---
 

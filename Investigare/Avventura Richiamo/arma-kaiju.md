@@ -30,7 +30,7 @@ La creatura non reagisce agli attacchi. Li assorbe. Ma accumula qualcosa che ass
 > 
 > Regola in una riga da dare al tavolo: **guardarla è gratis, mirarle addosso no.** Possono seguirla, sorvolarla, fotografarla per giorni senza costo. Nel momento in cui un caccia o una batteria la aggancia per sparare, il contatore parte — anche se poi non sparano.
 > 
-> Nel 1990 possono farlo: i caccia di Tsuiki e Komatsu, le batterie missilistiche terra-aria, i radar di tiro delle unità navali di Maizuru.
+> Nel 1986 possono farlo: i caccia di Tsuiki e Komatsu, le batterie missilistiche terra-aria, i radar di tiro delle unità navali di Maizuru.
 
 **La gabbia elettrica è la mossa peggiore possibile.** Circondarla di dispositivi attivi la porta da 0 a 12 in poco più di un'ora. Se i giocatori la costruiscono, funzionerà — nel senso che lei si fermerà. Poi succederà il resto.
 
@@ -42,12 +42,12 @@ La creatura non reagisce agli attacchi. Li assorbe. Ma accumula qualcosa che ass
 
 La sequenza è sempre identica ed è **visibile**. Non toglierla mai, non accorciarla mai: è l'unico patto di lealtà che hai con il tavolo.
 
-|T|Cosa fa|Cosa vedono|
-|---|---|---|
-|**−40 s**|Si ferma.|Il tremore ritmico dei sismografi cessa di colpo. Chi la sta guardando la vede immobile per la prima volta.|
-|**−25 s**|Si alza sulle posteriori.|Guadagna un terzo di altezza. Ombra proiettata per chilometri.|
-|**−8 s**|Resta ferma in piedi.|Silenzio assoluto. Nessun suono, nessun movimento.|
-|**0**|Si abbatte a terra di testa.|Impatto.|
+| T         | Cosa fa                      | Cosa vedono                                                                                                 |
+| --------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **−40 s** | Si ferma.                    | Il tremore ritmico dei sismografi cessa di colpo. Chi la sta guardando la vede immobile per la prima volta. |
+| **−25 s** | Si alza sulle posteriori.    | Guadagna un terzo di altezza. Ombra proiettata per chilometri.                                              |
+| **−8 s**  | Resta ferma in piedi.        | Silenzio assoluto. Nessun suono, nessun movimento.                                                          |
+| **0**     | Si abbatte a terra di testa. | Impatto.                                                                                                    |
 
 **Quaranta secondi valgono un'azione sola.** Correre, staccare, buttarsi a terra, atterrare. Non due. Chiedi ai giocatori cosa fanno e non concedere di più.
 
@@ -59,7 +59,7 @@ Chi è già dentro il raggio a −40 s non ne esce. Il valore dei segnali non è
 
 Evento superficiale, ipocentro a profondità zero. **Magnitudo 6,9.** L'energia è modesta rispetto a un terremoto tettonico di pari magnitudo, ma la focalizzazione in superficie rende il campo vicino molto più violento del previsto.
 
-Scala di intensità giapponese, versione in vigore nel 1990 (0-7, senza le suddivisioni introdotte nel 1996):
+Scala di intensità giapponese, versione in vigore nel 1986 (0-7, senza le suddivisioni introdotte nel 1996):
 
 |Raggio|Shindo|Effetti|
 |---|---|---|
@@ -127,7 +127,7 @@ Questa è l'unica lesione **elettrica** diretta, e riguarda solo chi tocca qualc
 - Chi è a contatto con rotaie, tubazioni metalliche, strutture in acciaio, ringhiere e recinzioni lunghe.
 - Chi è dentro un veicolo toccando parti metalliche.
 - **Entro 8 km è mortale. Tra 8 e 25 km sono ustioni da arco e folgorazioni gravi. Oltre, scosse dolorose.**
-- **Portatori di pacemaker: mortale entro 60 km.** Nel 1990 i pacemaker impiantati non hanno alcuna schermatura contro transitori di questa natura.
+- **Portatori di pacemaker: mortale entro 60 km.** Nel 1986 i pacemaker impiantati non hanno alcuna schermatura contro transitori di questa natura.
 
 ### Riepilogo
 
@@ -146,7 +146,7 @@ Questa è l'unica lesione **elettrica** diretta, e riguarda solo chi tocca qualc
 Questo è il ramo che dà ai giocatori qualcosa da fare invece che da subire.
 
 - **Meccanica pura.** Un motore diesel ad iniezione meccanica gira, se qualcuno riesce ad avviarlo a manovella o ad aria compressa. Sono le pompe e gli avviatori elettrici a mancare, non il motore.
-- **Valvole termoioniche.** Siamo nel 1990: esiste ancora una quantità di apparecchiature a valvole nei magazzini militari, nei radioamatori, nelle stazioni radio di provincia. **Le valvole reggono transitori che uccidono i semiconduttori.** Una radio degli anni Cinquanta parla quando tutto il resto è cenere. Se i giocatori capiscono questo, hanno delle comunicazioni.
+- **Valvole termoioniche.** Siamo nel 1986: esiste ancora una quantità di apparecchiature a valvole nei magazzini militari, nei radioamatori, nelle stazioni radio di provincia. **Le valvole reggono transitori che uccidono i semiconduttori.** Una radio degli anni Cinquanta parla quando tutto il resto è cenere. Se i giocatori capiscono questo, hanno delle comunicazioni.
 - **Schermatura.** Qualunque involucro metallico chiuso protegge ciò che contiene, **a condizione che nulla lo attraversi**. Un apparecchio in una cassa d'acciaio saldata sopravvive. Lo stesso apparecchio con un cavo che esce dalla cassa muore, e il cavo è l'antenna che lo uccide.
 - **Ottica, carta, ottone.** Bussole, sestanti, mappe, telemetri ottici, segnali a bandiera. Tutto ciò che l'esercito ha smesso di usare trent'anni fa torna a funzionare.
 
@@ -182,7 +182,7 @@ Nella baia di Wakasa i quattro siti stanno dentro 54 km l'uno dall'altro:
 |**Mihama**|45 km|33 km|—|7,5 km|
 |**Tsuruga**|54 km|40 km|7,5 km|—|
 
-**Un solo scarico in mezzo alla baia li perde tutti e quattro insieme, nello stesso istante.** Compresi i tre reattori di Takahama che nella linea temporale ordinaria reggono fino al giorno 5, e che sono l'unica cosa che i giocatori possono ancora salvare.
+**Un solo scarico in mezzo alla baia li perde tutti e quattro insieme, nello stesso istante** — compreso ogni margine di ore che i giocatori stavano guadagnando su quei siti: nella timeline non contrastata cadono comunque, ma è l'intervento dei giocatori la sola cosa che può salvarli, e l'impulso lo cancella.
 
 Se decidono di attaccarla lì, questo è il prezzo. Non avvertirli. Ma quando lo capiranno, deve risultare che l'informazione era ricavabile.
 
@@ -209,9 +209,9 @@ Termini usati in questo file e nei bollettini.
 |**Aggancio radar di tiro**|Radar puntato fisso su un bersaglio per sparargli. Vedi riquadro al §1. Diverso dal radar di ricerca, che gira e non conta.|
 |**Sv/h, mSv/h**|Sievert e millisievert all'ora: quanta radiazione assorbi ogni ora che resti lì. 1 Sv = 1.000 mSv. Sopra 4-5 Sv in una volta si muore nella maggior parte dei casi. Il limite annuale per un lavoratore è 20 mSv.|
 |**Rateo di dose**|La velocità con cui assorbi radiazione. Non conta solo quanto è forte la sorgente: conta quanto ci resti.|
-|**Shindo**|Scala giapponese di intensità dei terremoti, da 0 a 7. Misura quanto scuote in un punto, non quanta energia libera il sisma (quella è la magnitudo). Nel 1990 era a numeri interi.|
+|**Shindo**|Scala giapponese di intensità dei terremoti, da 0 a 7. Misura quanto scuote in un punto, non quanta energia libera il sisma (quella è la magnitudo). Nel 1986 era a numeri interi.|
 |**Impulso elettromagnetico**|Onda elettromagnetica improvvisa che induce corrente in tutto ciò che conduce. Non brucia le persone: brucia ciò che è collegato a un filo.|
-|**Valvola termoionica**|Il componente che c'era nelle radio prima dei transistor. Molto più resistente agli impulsi. Nel 1990 se ne trovano ancora nei magazzini militari e dai radioamatori.|
+|**Valvola termoionica**|Il componente che c'era nelle radio prima dei transistor. Molto più resistente agli impulsi. Nel 1986 se ne trovano ancora nei magazzini militari e dai radioamatori.|
 |**Autorotazione**|Manovra d'emergenza: un elicottero senza motore può ancora atterrare sfruttando l'aria che fa girare il rotore in discesa. Difficile, e va iniziata subito.|
 |**PWR / BWR**|I due tipi di reattore ad acqua leggera. Nel PWR l'acqua del nocciolo è pressurizzata e non bolle; nel BWR bolle direttamente. Ai fini del gioco cambia poco.|
 |**ATR (Fugen)**|Reattore prototipo ad acqua pesante. Tipo raro, un solo esemplare al mondo su quel percorso: per questo la sua firma isotopica risulta anomala.|

@@ -15,16 +15,16 @@ Avventura kaijū per GENKAI, **fuori dal normale di proposito**: dimostra che le
 seguendo un richiamo a infrasuoni, 12–14 novembre 1986, destinazione la centrale di Tōkai Daini.
 I PG (poliziotti, New Nambu M60) non devono ucciderla: devono **capire il segnale e spegnerlo**.
 Punto voluto dall'utente: **gli indizi per destinazione, punti deboli, catena degli emettitori
-vanno DATI ai giocatori** — la rete multi-fonte è il cuore (Sviluppo §3).
+vanno DATI ai giocatori** — la rete multi-fonte è il cuore (`INDIZI.md`).
 
 ## File e gerarchia delle fonti
 
 | File | Stato |
 |---|---|
 | `kaiju-design.md` | **canone** — design v0.1 dell'utente. Non riscriverlo: si integra dallo sviluppo |
-| `telegiornale-uminari.md` | **canone** — 3 edizioni TG (NKB, Morikawa/Kobayashi), handout pronti |
+| ~~`telegiornale-uminari.md`~~ | **ELIMINATO dall'utente (2026-08-21)** — era il vecchio TG sul Kantō; i notiziari = bollettini + gōgai. I nomi NKB/Morikawa/Kobayashi restano validi (registro nomi) |
 | `Immagini/` | Copertina (apertura) + 2 Foto Aeree (handout briefing JSDF, Notte 1) |
-| `RICHIAMO_Sviluppo.md` | **v0.2, PROPOSTA** — niente è canone finché l'utente non conferma §0 e §10 |
+| `SECONDO_DORMIENTE.md` | **canone** — la coda (solo GM): il dormiente sotto il Mihara, TG del 15/11 da leggere alla fine. *(`RICHIAMO_Sviluppo.md` ELIMINATO 2026-08-21: tutto superato, superstiti travasati)* |
 
 Se sviluppo e design divergono, **vince il design** (finché l'utente non decide altrimenti).
 
@@ -43,7 +43,7 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   (proposta Ōtsuka/Sakuragi), scontri S1–S5 + infiltrazione EX, scaletta, geometria dei finali.
   Registro nomi e registro modifiche aggiornati.
 - **2026-08-19 (notte) — DECISIONI UTENTE (in fila)**: ① **altezza 120 m** (canone; design §3.2
-  riderivato con Froude 0,08, marcia e 55 km/g invariati) → creata **`SCHEDA_UMINARI.md`**
+  riderivato con Froude 0,08, marcia e 55 km/g invariati) → creata **`SCHEDA_NUSHI.md`**
   (dimensioni, fisiologia, punti deboli, fasce di distanza, percorso, 12 prompt immagini);
   ② **PERCORSO TOTALE nuovo** (agg. 19/08 mattina): origine **Madara-shima** — avvistamento
   **insabbiato**, poi riapparizione sulle rive della centrale di Genkai — quindi 8 centrali fino
@@ -89,6 +89,121 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㊼ **TUTTE LE PROPOSTE ⚑ APPROVATE (utente 2026-08-21: «ok approvate tutte») = SCHEMA #36**:
+  nave-esca · boe-microfono P-3 · cecchino in prestito · intercettazione Misawa (cercapersone)
+  · contromossa Ryūgū-kai (camion allo scoperto). BASI_MILITARI → v3.1 canone (⚑ rimossi),
+  scheda §6 contromossa canone, accenno «Gli assi nella manica» in Avventura.md (sfondo).
+  **FASE ATTUALE: LE IMMAGINI** («passiamo alle immagini») — in Immagini/ l'utente ha già
+  generato: Camioncino01-04 + Autostrada + Particolare + Interno, Kaiju Costa, Capannone.png,
+  Capannon Interno.png (da mappare vs prompt F1-F7/P1-P13/C0).
+  ㊻ **RISPOSTE AI DUBBI (utente 2026-08-21 sera — 4 canoni nuovi)**: ① **AGGANCIO PG (#34)**:
+  selezionati **dal loro procuratore** — una delle squadre migliori (Avventura.md apertura,
+  SCHEMA §5.2 chiusa); ② **NIENTE INSABBIAMENTO (#4 v2)**: a Madara emersione 1d 06:05,
+  allarme dei pescatori, polizia in movimento per indagare — **un'ora dopo Genkai è distrutta**;
+  nessuno se l'aspettava, Madara non conta più. Riscritti: gōgai COPERTINA (via «lo sapevano/
+  panico ingiustificato/vogliamo i nomi» → «un'ora di preavviso»), scheda §1+§10 (punto zero:
+  «L'ora di preavviso», «il battesimo» = colore), P13 «La foto dei pescatori» (via sequestro),
+  INDIZI inferenza («sapeva la rotta di una cosa che non c'era»), STORIA (via frase-insabbiamento,
+  tabella «Ora dell'11 nov»), SCHEMA linea maestra, CSV punti; le notti del canto RESTANO
+  (nessuno capiva cosa fosse); ③ **ORGANIZZAZIONE COMPLETAMENTE NASCOSTA (#33)**: Indizio 4
+  CHIUSO — nessuna briciola, **Ryūgū-kai = prossima avventura**; ④ **CAPANNONE AL TERZO MOLO
+  di Maizuru (#35)**: 舞鶴港第三ふ頭 (mappa utente, Nishi-Maizuru) — «Sumiyoshihama» decaduto
+  (SCONTRI §3 + header C0); ⑤ **telegiornale-uminari.md ELIMINATO dall'utente** (tabella fonti
+  agg.; notiziari = bollettini+gōgai; NKB/Morikawa/Kobayashi restano nel registro); ⑥ **nomi
+  sempre a portata di mano**: riga «I nomi» (Nushi/uminari/Ryūgū-kai) in testa ad Avventura.md;
+  ⑦ fix residui date in INDIZI: camion piazzati 5-6/11 (via 30-31/10), timestamp foto F1-F5
+  86-11-05/06, richiesta senza mezzo imposto + coordinate nel messaggio (residuo v1 sfuggito),
+  Shimane 13:37. «Stampato tutto» (utente): i materiali sono sul tavolo.
+  ㊺ **DATE ANCORATE + PIANO-B CANONE VIA TECNICO (utente 2026-08-21 sera)**: ① **1d = MARTEDÌ
+  11 NOVEMBRE 1986** (SCHEMA #31): consegna mer 12, giorno nero gio 13, sbarco ven 14 14:03,
+  coda sab 15 17:25 — date scritte in Avventura.md (titoli G1/G2 + riga sfondo), scheda §10,
+  SECONDO_DORMIENTE; **gōgai ridatato mer 12/11** in COPERTINA (esce il giorno dopo: «ieri
+  mattina»; è la presentazione WhatsApp pre-sessione); camioncini piazzati ~5-6/11 (INDIZI 1);
+  timbro cartina C0 861113 = gio 13 ✓ regge; ② **piano-B 30 metri = CANONE** (SCHEMA #32): lo
+  suggerisce IL TECNICO del capannone se parla — «è così che l'abbiamo manovrata: un emettitore,
+  da vicino. Ma allora non era radioattiva» (SCONTRI §3 + scheda §8); problema = radiazioni
+  (<2 km sola andata); pazienza: tromba accesa = sorgente entro 2 km = +1/10′ → accendere solo
+  all'ultimo; ③ scoperto **PRESENTAZIONE_WhatsApp.md NON ESISTE PIÙ** (il gōgai vive in
+  COPERTINA.md): puntatori corretti in Avventura/scheda §10/SCHEMA; ④ **arma-kaiju.md RILETTO
+  PER INTERO** (pendenza chiusa): coerente col canone (KK senza sosta ✓, glossario ok, radar
+  di tiro +1/10′, «gabbia = 0→12 in un'ora», niente eccezione-richiamo nel file — i fari non
+  la irritano perché stanno LONTANI, mai entro 2 km). ⑤ NB: INDIZI.md modificato su disco
+  dall'utente durante la lettura (edit andato a segno; rileggerlo prima di lavorarci).
+  ㊹ **DORMIENTE CANONE + SVILUPPO ELIMINATO (utente 2026-08-21: «ok per il secondo dormiente,
+  file separato… per il resto puliscilo»)**: ① creato **`SECONDO_DORMIENTE.md`** (solo GM, da
+  leggere ALLA FINE): il secondo esemplare sotto il Mihara sente il richiamo e si rigira nel
+  sonno, NON entra in gioco; coda = **sab 15/11/1986 ore 17:25** (eruzione vera) + TG NKB di
+  2 righe (Morikawa) con la frase-dubbio «scosse da giorni — da prima che la creatura sparisse»;
+  dubbio mai sciolto (regola del buio); ② la sequenza **S5 «I trenta metri»** travasata in
+  scheda §8 come piano-B (proposta DA DECIDERE): emettitore catturato su autoscala VVF, 4 tiri
+  (arrivare/reggere/momento/tenere 60″), esito = vira al mare — ⚠ quasi-suicidio col canone
+  radiologico; ③ **`RICHIAMO_Sviluppo.md` CANCELLATO** (tutto il resto superato: Senju, Comitato,
+  14 coppie, scaletta Kantō, finali vecchi); aggiornati SCHEMA (#30, §5.9 DECISO SÌ, §5.2 rif.,
+  da-fare 4, tabella file), STORIA (righe rapporto-canone), scheda §10 (vulcano = CANONE),
+  kaiju-design (checkbox punti aperti → risolti/puntatori nuovi), CLAUDE.md (tabella fonti,
+  IN ATTESA/POI). Zero riferimenti orfani (grep).
+  ㊸ **BASI_MILITARI v3.0 (2026-08-21, richiesta utente: «spiega le armi cosa sono, per una
+  persona normale i nomi non dicono nulla; niente frasi evocative, sii obiettivo»)**: tabella
+  armi riscritta con spiegazione piena (cannone 20mm ~100 colpi/s, bomba 250-500 kg raggio
+  ~100 m, ASM-1 = razzo 4 m/150 kg autoguidato col proprio radar da ~50 km, siluro 60-80 km/h,
+  mina a pressione/magnetismo, sonar attivo = altoparlante+eco, sonoboe); basi coi MEZZI
+  nominati E spiegati (Tsuiki F-1+ASM-1, Maizuru cacciatorpediniere+HSS-2 sonar a filo,
+  Komatsu F-4EJ Phantom, Iwakuni A-4 Skyhawk ~4 t bombe + decisione politica, Misawa P-3
+  Orion+anello d'antenne); eliminate le frasi evocative («il martello grosso», «le orecchie»,
+  «il bello» della nave-esca → chiusa con la frase-fatto sulla fisica). Disclaimer in testa:
+  modelli 1986 plausibili, da riverificare su fonte primaria. Pazienze invariate (canone
+  arma-kaiju). SCHEMA aggiornato.
+  ㊷ **SECONDA BONIFICA SCHEDA → v2.2 (2026-08-21 sera — l'utente ha beccato P4 «Lo spegnimento
+  notturno» ancora vivo: il mio grep ㊶ aveva cercato le parole sbagliate)**: grep concettuale
+  largo (notte/dorm/sost/spegn/immobil/tacca/righello + inglesi dei prompt) su TUTTA la cartella
+  → trovati e chiusi 7 residui del canone morto in SCHEDA_NUSHI: ① header compattato a v2.2
+  (via il changelog v1.x con «si ferma di notte»/«120 km/giorno di luce»); ② tabella tappe §10:
+  colonna «Viaggio ~9,3 gg (righello 120 km/g)» → «**Quando**» con orari nastro+bollettini
+  (Takahama 3d 08:49, Ōi 09:56, Mihama 12:43, Fugen+Tsuruga 13:20; TOTALE = **80 ore**); nastro:
+  riga «2d notte» rimessa in ordine cronologico e orari giorno-nero esatti; ③ §6 riga 1: via
+  «a organo spento (notte, torpore)» — organo sempre attivo, il limite è la distanza; ④ nota
+  «La stagione avanza col viaggio» (settimane! soste! più lenta!) → «Lo yukiguni: il passo non
+  cambia»; ⑤ P4 riscritto = **«La marcia notturna»** (mid-stride, motion blur — via
+  frozen/motionless/frost); P3 filtra CAMMINANDO (via kneeling); P7 avanza verso la centrale
+  (via motionless); P9 passo costante (via sluggish/«rallenta»); ⑥ Derivazioni: via «3-4 soste
+  ai fiumi» e «Tempi: 120 km/giorno di luce, ferma di notte» → 12 km/h H24; ⑦ banner su
+  RICHIAMO_Sviluppo: ogni riga notte/soste/organo-spento è SUPERATA. SCHEMA agg. (scheda v2.2).
+  Verifica finale: grep di controllo pulito (restano solo usi legittimi: impulso EM, fari
+  «non si spengono», righe barrate del registro).
+  ㊶ **CORREZIONI DURE UTENTE (2026-08-21 sera — feedback ALTAMENTE NEGATIVO sul mio "controllo
+  di precisione": mi erano sfuggiti giacigli e nome-file)**: ① il tendone verde è LEGATO SUL
+  CASSONE (copre solo le scritte del box), non un telo integrale — fix in Avventura/INDIZI/
+  SCONTRI; ② il messaggio NON ha mai imposto un mezzo: la polizia porta l'oro CON UN CAMION
+  QUALSIASI, al ponticello UN MULETTO trasborda le casse (via l'eli V-107, invenzione mia);
+  ③ **FILE RINOMINATO: SCHEDA_UMINARI.md → SCHEDA_NUSHI.md** (tutti i riferimenti aggiornati,
+  0 residui); ④ **GIACIGLI ELIMINATI** dalla scia (residuo del canone si-ferma-di-notte);
+  ⑤ **MORSA v2 (canone)**: la corrente lo DEVIA («con calma» = ok, ma i macchinari si rompono:
+  guasto orario 2d6 ≤ ore) — **CIRCONDARLO PER FERMARLO lo spazientisce → dopo poco l'arma**
+  (la «Morsa piena» non è una tattica, è un detonatore); scheda §6 riscritta, SCHEMA #16 v2,
+  §5.11 chiusa, STORIA agg. LEZIONE: nei ricontrolli GREP SISTEMATICO dei canoni superati
+  (notte/ferma/giacigli/tacca...) — non fidarsi della lettura.
+  ㊵ **CONSEGNA v4 — IL TENDONE VERDE (canone utente 2026-08-21 sera)**: il camioncino della
+  consegna arriva **coperto da un TENDONE VERDE** che nasconde le scritte; sotto è **UNO DEI
+  BIANCHI DELLA FLOTTA con la livrea**; nel tunnel TOLGONO il tendone → esce bianco, invisibile.
+  **Un poliziotto in borghese che lo segue nel tunnel VEDE il cambio → le scritte = L'AGGANCIO
+  per trovare gli altri camioncini** (il ponte consegna→Indizio 1). Messaggio di riscatto SENZA
+  più il mezzo imposto. Confermato: i fari si zittiscono SOLO demolendoli (nessuno spegnimento).
+  Applicato in Avventura.md, INDIZI 2 (sequenza+tiri: pedinamento nel tunnel = decisione +
+  Silenzio nel fumo; fallito = visto ma notato → scontro), SCONTRI §2, SCHEMA #19 (v4).
+  L'utente sta finendo di leggere: POI VUOLE LE DOMANDE (aperte in memoria ㉟).
+  ㊴ **RICONTROLLO GENERALE PRE-TAVOLO fatto (2026-08-21)** — riletti INDIZI/SCONTRI/STORIA/
+  SCHEMA/arma per intero; ALLINEATA la consegna v3 ovunque: INDIZI 2 riscritta (un solo camioncino
+  DEI TERRORISTI, coordinate nel messaggio, telo bianco→scuro nel tunnel, tiri aggiornati,
+  trasmettitore SOLO nel carico 70/40/−20, blocco-portali come decisione, sezione «L'ostaggio» —
+  Contabile ELIMINATO); SCONTRI §2 riscritta (5 uomini generici, prendere UNO vivo, zavorra-
+  valvola) e §3 (blocco «Lo sgombero»: fusto che brucia carte, casse verso la chiatta, ORO NON
+  QUI — e il perché l'ostaggio lo credeva vuoto); STORIA verità 5 aggiornata; SCHEMA: linea
+  maestra §3 riscritta (12:00 richiesta, 10:00 consegna, 13:37 Shimane+trasloco sala, 16:00
+  squadra-lavori, ordine righe fixato), #6 e §5.3 barrate SUPERATE, #19 v3, #9 emendata,
+  righello-riga aggiornata H24, tabella file aggiornata (BOLLETTINI_STAMPA aggiunto);
+  scheda §10 orari allineati ai bollettini (deviazione 07:29-07:59, Shimane 13:37); CSV punti
+  orari giorno nero 08:49/09:56/12:43/13:20; Avventura % trasmettitore 70/40; arma-kaiju:
+  1990→1986 (×6) e Takahama-salvabile riformulata. Mappa A3 v2 già pulita (niente oro).
   ㊳ **DUE FIX GROSSI DEI BOLLETTINI (canone utente 2026-08-21)**: ① **LA SOSTA DI KK ERA UNA
   CAZZATA** (contraddiceva «non si ferma MAI»): via le 2h37 di immobilità — nuova sequenza:
   **4d 14:03 la attraversa senza rallentare (come Genkai) → 14:20 distrutta → 14:30 in mare →
@@ -333,7 +448,7 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   *l'uminari* = la parola dei pescatori per il suo rombo → l'indizio-del-nome sopravvive con
   entrambe. Aggiornati: scheda (titolo NUSHI, riga Nome, letti del Nushi, §10), STORIA, INDIZI
   (firma della richiesta), gōgai in PRESENTAZIONE + COPERTINA. Il FILE scheda resta
-  `SCHEDA_UMINARI.md` (nome valido: uminari sopravvive come strato; evita di rompere i rimandi).
+  `SCHEDA_NUSHI.md` (nome valido: uminari sopravvive come strato; evita di rompere i rimandi).
   ⑨ **LA STORIA dettata dall'utente → `STORIA.md` (CANONE)**: organizzazione criminale ANONIMA,
   **mai identificata** — né come/dove abbia risvegliato la creatura («regola del buio»: si ferma
   il mostro, NON si chiude il caso) → **proposta Comitato/Ōtsuka SUPERATA** (registro nomi
@@ -354,8 +469,8 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   nel camion del capo-settore; i normali hanno solo ordini parziali). Proposte mie: Isuzu Elf box,
   ditta fittizia «Kyōsei Setsubi Kōgyō», parcheggio accoppiato ad acqua/tombini, targhe rubate +
   filo acquisto-in-blocco, stat mercenari. 7 prompt foto CCTV/reperto (F1-F7) dentro INDIZI.md.
-- **IN ATTESA**: struttura sul percorso nuovo (che fine fa Tokyo/Tōkai/telegiornale? dove entrano
-  i PG? date/gancio Mihara?) + le restanti decisioni di Sviluppo §0 e interpretazioni §10.
-- **POI**: pregen (5 poliziotti), 9 handout (lista in Sviluppo §11), posizioni emettitori su mappa,
+- **IN ATTESA**: l'elenco vivo dei punti aperti è in SCHEMA §5 — restano le proposte ⚑
+  (nave-esca, boe, cecchino, intercettazione Misawa, contromossa camion) e la produzione.
+- **POI**: handout e immagini da produrre (elenco in SCHEMA), posizioni emettitori su mappa,
   copione-GM definitivo. Fatti reali da riverificare su fonte primaria prima della pubblicazione
   (design §11).
