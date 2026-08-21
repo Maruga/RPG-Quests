@@ -11,35 +11,40 @@
 
 ## Giorno 1 — ore 12:00: il riscatto
 
-- Alla sala operativa arriva la richiesta: **1.500 kg di lingotti d'oro** — 120 lingotti da 12,5 kg in 10 casse, ≈ 3 miliardi di ¥. AI:i terroristi portano via i lingotti con un camnion telonato, telo bianco (AI: metti la marca e qualche info) (classe 3-4 t di portata: il peso ci sta largo — l'oro è denso, 1.500 kg sono un cubo di 42 cm di lato; sul pianale: dieci casse basse in due file, cinghiate). **Incontro: giorno 2, ore 10:00**, punto comunicato, AI: se accettano i PG o chi per loro lo portano in elicottero o qualcosa che possa portarlo.
+- Alla sala operativa arriva la richiesta: **1.500 kg di lingotti d'oro** — 120 lingotti da 12,5 kg in 10 casse basse, ≈ 3 miliardi di ¥ (l'oro è denso: 1.500 kg sono un cubo di 42 cm di lato).
+- **Come arriva l'oro al punto**: se accettano, i PG — o chi per loro — lo portano **in elicottero** (un V-107 da trasporto delle JSDF: le 10 casse ci stanno in cabina) **oppure con un furgone scortato**. Decidono loro.
+- **Come se ne va**: i terroristi lo caricano e lo portano via con **un camioncino telonato, telo bianco** — un **Isuzu Elf 350 a centine** (~3,5 t di portata, targa rubata: il camioncino più comune del Giappone, anonimo per definizione).
 - **Il messaggio** (handout, da leggere al tavolo):
 
   > Al Governo. Il Nushi cammina dove decidiamo noi.
-  > Domani, ore 10:00: millecinquecento chilogrammi d'oro un solo autista. Il punto è quresto, AI: metti le coordinate.
+  > Domani, ore 10:00, in questo punto: **35°41'40.2"N 136°07'10.0"E**.
+  > Millecinquecento chilogrammi d'oro fino. Pochi uomini, nessun soldato.
   > Consegnate, e la seconda centrale sarà risparmiata.
-  > — 竜宮会 Ryūgū-ka
+  > — 竜宮会 Ryūgū-kai
 
-- I PG gestiscono la mossa: andare? come? con quali assi nella manica? La consegna è **il tunnel nel fumo** ([INDIZI.md](INDIZI.md) blocco 2: ponticello di Habara 35.6945/136.1194 → traforo di Tsuruga; tiri di osservazione; trasmettitore 90/70/40).
+- I PG gestiscono la mossa: andare? come? con quali assi nella manica? Il punto è **il ponticello di Habara** (35.6945/136.1194); la fuga del camioncino è **il tunnel nel fumo** ([INDIZI.md](INDIZI.md) blocco 2: traforo di Tsuruga, mega fumogeno, cambio del telo dentro; tiri di osservazione; trasmettitore 90/70/40).
 - **Comunque vada, il mostro non si ferma.**
-- Se prendono un ostaggio (AI: i terroristi conoscono il capannone (danno la informazione del capannone perchè credono che sia vuoto), non esiste nessun contabile, ma solo il tecnico ma dentro il capannone): possono sapere del capannone ([SCONTRI.md](SCONTRI.md) §2).
+- **Se prendono un ostaggio**: è un uomo della squadra, e **parla del capannone perché crede che ormai sia vuoto** — il gruppo lo sta sgomberando. **Il Contabile non esiste; il tecnico c'è, ma è dentro il capannone** ([SCONTRI.md](SCONTRI.md) §2).
 
 ## Giorno 2
 
 - 10:00 — la consegna.
 - ~13:30 — **Shimane viene distrutta**: la promessa era il depistaggio.
 - Il quartier generale si sposta nel secondo punto: **Sala 2 — Maizuru** (35.475/135.386), in mezzo alle centrali di Wakasa ([STORIA.md](STORIA.md)).
-- **Fine G2** — un distretto della prefettura di Kyoto, zona in evacuazione: una squadra di «lavori in corso» non se ne va — «finiamo e poi andiamo». Il poliziotto locale si insospettisce e lo segnala: **è una squadra dei camioncini** ([INDIZI.md](INDIZI.md) blocco 1). Il primo filo in mano ai PG. AI: verso le 4 del pomeriggio secondo giorno.
+- **~16:00** — un distretto della prefettura di Kyoto, zona in evacuazione: una squadra di «lavori in corso» non se ne va — «finiamo e poi andiamo». Il poliziotto locale si insospettisce e lo segnala: **è una squadra dei camioncini** ([INDIZI.md](INDIZI.md) blocco 1). Il primo filo in mano ai PG.
 
 ## La caccia ai camioncini *(dal G2 in poi — [INDIZI.md](INDIZI.md) blocco 1)*
 
 - Ricerca su **telecamere e N-System** (+ mappa dei reclami radio + triangolazione, 3-4 ore): si scoprono gli avamposti, tutti **sulla linea**.
-- Un faro attivo demolito = quella centrale è salva; la squadra successiva accende il proprio AI: dipende sempre dal percorso, comunque se un camioncino viene demolito .
+- **Un camioncino demolito** = il Kaiju passa al punto successivo (dipende sempre dal percorso).
+- **Ai primi camioncini distrutti, tutte le squadre vengono avvertite** e si nascondono meglio.
+- **La squadra di Kashiwazaki-Kariwa** nasconde il camioncino **sotto un ponte a Zenshoji**; nello spostarsi per riallineare il mostro sulla centrale viene **fotografata al passaggio di un casello** — è la traccia per trovare l'ultimo camioncino.
 - **Se vengono distrutti tutti, il mostro torna all'acqua.**
 - **Un prigioniero** di un camioncino può rivelare il capannone.
 
 ## Il capannone *(35.4526/135.31553 — [SCONTRI.md](SCONTRI.md) §3, mappa: [MAPPA_CAPANNONE_A3.html](MAPPA_CAPANNONE_A3.html))*
 
-- Assalto al cantiere. Dentro: **il disturbatore** (su semirimorchio, antenna da calare in acqua: 30′ di preparazione), l'archivio, l'oro.
+- Assalto al cantiere. **Il gruppo sta lasciando il posto.** Dentro: **il disturbatore** (su semirimorchio, antenna da calare in acqua: 30′ di preparazione), **il tecnico**, e l'archivio — con informazioni, ma **in gran parte distrutto** (stanno bruciando le carte). **L'oro non è qui.**
 - **Disturbatore attivato** → il mostro punta al mare **dal punto più vicino**. È la vittoria.
 - **Disturbatore bloccato o spento** con camioncini ancora attivi → il mostro riprende verso **il faro più vicino**.
 

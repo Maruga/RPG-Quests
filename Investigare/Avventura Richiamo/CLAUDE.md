@@ -89,6 +89,20 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㊱ **Avventura.md v2 (modifiche utente 2026-08-21 pomeriggio — SOLO il documento sistemato;
+  gli ALTRI FILE restano DA ALLINEARE su ordine «poi sistemiamo tutto»)**: ① l'oro lo porta lo
+  STATO al punto (eli V-107 o furgone — decidono i PG) e lo portano VIA I TERRORISTI col
+  camioncino telo bianco (Isuzu Elf 350 a centine, targa rubata) — niente più mezzo imposto/
+  gemello; ② le COORDINATE stanno NEL MESSAGGIO (35°41'40.2"N 136°07'10.0"E = ponticello di
+  Habara); ③ **IL CONTABILE NON ESISTE** — l'ostaggio è un uomo della squadra che parla del
+  capannone PERCHÉ LO CREDE ORMAI VUOTO; **il tecnico è DENTRO il capannone**; ④ segnalazione
+  del poliziotto di Kyoto: **~16:00 G2**; ⑤ caccia: ai primi camion distrutti TUTTE le squadre
+  avvertite; quella di KK nasconde il camion **sotto un ponte a ZENSHOJI** e viene FOTOGRAFATA
+  A UN CASELLO nello spostamento di riallineo = la traccia per l'ultimo camion; ⑥ capannone:
+  GRUPPO IN SGOMBERO, archivio in gran parte distrutto (bruciano le carte), **L'ORO NON È QUI**.
+  DA ALLINEARE POI: INDIZI 2 (via Contabile/gemello, verso della scena-tunnel = la FUGA del
+  camioncino), SCONTRI §2 (squadra consegna senza Contabile) e §3 (sgombero, niente oro,
+  tecnico), SCHEMA #19/#29, STORIA (riga interrogatorio).
   ㉟ **Avventura.md = LA SEQUENZA DI GIOCO (utente + completamenti, 2026-08-21)**: file scheletro
   dell'utente completato — costa = «versante del Mar del Giappone (Nihonkai-gawa)»; oro su
   camioncino: 1.500 kg ci stanno larghi (cubo 42 cm; 120 lingotti/10 casse ≈ 3 mld ¥), **telo
