@@ -24,7 +24,7 @@
 
 ## CONTAMINAZIONE DELLA CREATURA
 
-Dal giorno 3 attraversa le proprie nubi senza rallentare e **si contamina**. Da quel momento è una sorgente mobile: le zone di esclusione si spostano con lei.
+Ha attraversato l'impianto di Genkai mentre i contenimenti cedevano: **è contaminata dalla prima ora del giorno 1**. È una sorgente mobile: le zone di esclusione si spostano con lei. (Il passaggio nella nube di Mihama, al giorno 3, la rincara.)
 
 | Distanza | Rateo di dose | Effetto |
 |---|---|---|
@@ -47,7 +47,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 - Porto di Yobuko cancellato. **41 pescherecci non rispondono.**
 - **Anomalia di rotta 07:29-07:59.** Uscita dalle acque di Genkai ha piegato a nord invece di puntare dritta al largo, descrivendo un arco. I vertici dell'arco restano a 10-14 km dalla centrale termoelettrica di Karatsu, **l'unico impianto in esercizio della zona**. Registrata, non spiegata.
 
-**GENKAI** — Unità 1 e 2 in arresto automatico. Sale turbina distrutte, **prese d'acqua di mare ostruite**. Rete esterna persa, raffreddamento su diesel. Nessun rilascio. Carburante per sette giorni, ma la strada d'accesso non esiste più.
+**GENKAI** — Unità 1 e 2 in arresto automatico. Sale turbina distrutte, **contenimenti danneggiati al passaggio: rilascio in corso**, il vento spinge la nube al largo. Prese d'acqua di mare ostruite, rete esterna persa, raffreddamento su diesel. Carburante per sette giorni, ma la strada d'accesso non esiste più. **La creatura, che ha attraversato l'impianto, risulta essa stessa contaminata: v. allegato.**
 
 **Bilancio: 210 morti, 640 feriti, 380 dispersi.**
 
@@ -99,7 +99,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 - **Sakaiminato 15:00**, a 5 km. Il Nakaumi si è svuotato per metà nel mare e poi è rientrato: **città sommersa due volte in quaranta minuti.**
 - Yonago 15:42. Daisen 17:00. **Kurayoshi 19:25**, a 9 km.
 
-**GENKAI — ESPLOSIONE ORE 11:20.** Esplosione di idrogeno sull'Unità 1, tetto dell'edificio reattore scoperchiato. **Primo rilascio maggiore, INES 5.** Vento da NO: la nube si muove su Saga verso l'area metropolitana di Fukuoka. Unità 2 stimata 24-36 ore indietro sullo stesso percorso.
+**GENKAI — ESPLOSIONE ORE 11:20.** Esplosione di idrogeno sull'Unità 1, tetto dell'edificio reattore scoperchiato. **Rilascio maggiore, INES 5.** Vento da NO: la nube si muove su Saga verso l'area metropolitana di Fukuoka. Unità 2 stimata 24-36 ore indietro sullo stesso percorso.
 
 **Zona di evacuazione 30 km. Predisposta estensione a 80 km: comprende Fukuoka, 2.400.000 persone.**
 
@@ -141,7 +141,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 - Wakasa consumata come previsto: Ohi 09:56, Mihama 12:43, Tsuruga 13:20.
 - Alle 13:20 ha lasciato la costa e ha puntato verso le montagne. Duemila metri di dislivello senza variazione di velocità.
 - **Frane su un fronte di 40 km.** Tre valli sbarrate da laghi in formazione. Se cedono, la piena arriva su Kanazawa.
-- **Alle 15:10 ha attraversato la propria nube di Mihama.** Il rateo di dose misurato su di lei è salito di tre ordini di grandezza e non è più sceso. **Da adesso è una sorgente mobile.**
+- **Alle 15:10 ha attraversato la propria nube di Mihama.** Il rateo di dose misurato su di lei — contaminata fin da Genkai — **è salito ancora, e non è più sceso.**
 
 **MIHAMA — ESPLOSIONE ORE 14:50.** Unità 1, due ore dopo il passaggio. Rilascio maggiore.
 **SHIMANE — CEDIMENTO ORE 19:15.** Diesel esauriti dopo trenta ore. Trenta ore di margine, perse perché nessuno ci è arrivato in tempo.
@@ -187,17 +187,16 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 
 ## 4d — 21:00
 
-**Km 959 — arrivata alle 14:03. Impianto distrutto. Contatto perso alle 18:40.**
+**Km 959 — arrivata alle 14:03. Impianto distrutto. Contatto perso alle 15:45.**
 
 - **Jōetsu 11:00** a 9 km, **Kashiwazaki 13:00** a 6 km. Evacuazione dalle 04:00, completa al 91%: è l'unica ragione per cui i morti della mattina non sono cinque volte tanti.
-- **14:03 – 16:40 — immobile.** Due ore e trentasette minuti ferma a ottocento metri dagli edifici reattore, senza toccarli. Il tremore ritmico cessa: i sismografi leggono solo un battito lento e regolare a 0,3 Hz.
-- **16:40 — riprende a muoversi.** In cinquanta minuti Kashiwazaki-Kariwa non esiste più.
-- **17:30 — entra in mare.** **Onda di ingresso di 16 m** sulla costa di Kashiwazaki: non è l'onda di prua, è spostamento di volume in acqua bassa, un fenomeno diverso e senza tetto ai 14 m.
-- **18:40 — ultimo contatto radiologico**, 14 km al largo, in immersione. La scia radioattiva in acqua la marca fin lì, poi si disperde. Radar, sonar, rateo di dose: niente.
+- **14:03 — raggiunge l'impianto e lo attraversa senza rallentare**, come ha attraversato Genkai. Alle 14:20 Kashiwazaki-Kariwa non esiste più.
+- **14:30 — entra in mare.** **Onda di ingresso di 16 m** sulla costa di Kashiwazaki: non è l'onda di prua, è spostamento di volume in acqua bassa, un fenomeno diverso e senza tetto ai 14 m.
+- **15:45 — ultimo contatto radiologico**, 14 km al largo, in immersione. La scia radioattiva in acqua la marca fin lì, poi si disperde. Radar, sonar, rateo di dose: niente.
 
-**KASHIWAZAKI-KARIWA — DISTRUTTA ORE 16:40.** Reattori aperti in cinquanta minuti. Nessuna sequenza incidentale, nessuna fase di degrado: **rilascio immediato e diretto, in atmosfera e in mare.** È il più grave dell'intera sequenza.
+**KASHIWAZAKI-KARIWA — DISTRUTTA ORE 14:20.** Reattori aperti al passaggio. Nessuna sequenza incidentale, nessuna fase di degrado: **rilascio immediato e diretto, in atmosfera e in mare.** È il più grave dell'intera sequenza.
 **TAKAHAMA — ESPLOSIONE ORE 10:30.** Unità 3, ventisei ore dopo il passaggio.
-**OHI — CEDIMENTO ORE 19:40.** Diesel esauriti. **L'ultimo sito è andato un'ora e venti dopo la sua sparizione**, senza che ci fosse più nulla da combattere.
+**OHI — CEDIMENTO ORE 19:40.** Diesel esauriti. **L'ultimo sito è andato quattro ore dopo la sua sparizione**, senza che ci fosse più nulla da combattere.
 **CONTAMINAZIONE MARINA** — sette siti in rilascio, uno direttamente in acqua. Fermo pesca su tutto il Mar del Giappone; note diplomatiche da Corea del Sud e Unione Sovietica. **Il Mar del Giappone è un bacino semichiuso: il ricambio con il Pacifico si misura in decenni, non in anni.**
 
 **BILANCIO FINALE DIRETTO: 78.000 morti · 290.000 feriti · 39.000 dispersi · evacuati 3.900.000**
@@ -212,9 +211,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 
 *Queste cifre **non comprendono ancora Ohi**, il cui rilascio è iniziato ottanta minuti prima di questo bollettino. L'intervallo è ampio per due ragioni non quantificate: la deposizione sul bacino del lago Biwa e il rilascio marino di Kashiwazaki-Kariwa.*
 
-> Novecentocinquantanove chilometri, ottanta ore esatte di marcia, velocità mai variata. Poi si è fermata per due ore e mezza, ha aperto l'ultimo impianto in cinquanta minuti, ed è andata via.
-
-> Perché aspettare? Se doveva distruggerlo poteva farlo alle 14:03. Ha aspettato duecentocinquantasette minuti e non sappiamo cosa stesse facendo.
+> Novecentocinquantanove chilometri, ottanta ore esatte di marcia, velocità mai variata. Ha attraversato l'ultimo impianto come il primo, ha raggiunto l'acqua ed è scomparsa. Non si è fermata un solo minuto in quattro giorni.
 
 > Otto siti su otto. Non ne ha risparmiato nessuno.
 
@@ -267,13 +264,11 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 | **Mihama** 3 PWR | `3d 12:43` | Colpita in pieno | U1 esplosione `3d 14:50` (+2h07m) | **U1 persa.** Nube verso il Kansai, poi Biwa |
 | **Tsuruga** 1 BWR + 1 PWR | `3d 13:20` | Raffreddamento perso alle 13:40 | U1 esplosione `4d 02:10` (+13h) | **U1 persa.** Rilascio superiore a Mihama |
 | **Fugen** ATR | `3d 13:20` | Nessuna comunicazione dal sito | Circuito acqua pesante `4d 04:45` (+15h) | **Perso.** Trizio, firma isotopica anomala |
-| **Kashiwazaki-Kariwa** | `4d 14:03` | Immobile per 2h37m a 800 m | **Distruzione diretta** `4d 16:40` | **Persa.** Rilascio immediato, gran parte in mare. Poi entra in mare alle 17:30 |
+| **Kashiwazaki-Kariwa** | `4d 14:03` | Attraversata al passaggio, come Genkai | **Distruzione diretta** `4d 14:20` | **Persa.** Rilascio immediato, gran parte in mare. Entra in mare alle 14:30, sparita alle 15:45 |
 
-**Il meccanismo è quasi sempre lo stesso e non richiede che la creatura attacchi:** cade la rete nel raggio di 40 km, i reattori restano appesi ai diesel, i diesel prima o poi cedono. I ritardi vanno da 2 a 34 ore. **L'unica eccezione è Kashiwazaki-Kariwa**, distrutta per azione diretta.
+**Il meccanismo è quasi sempre lo stesso e non richiede che la creatura attacchi:** cade la rete nel raggio di 40 km, i reattori restano appesi ai diesel, i diesel prima o poi cedono. I ritardi vanno da 2 a 34 ore. **Genkai e Kashiwazaki-Kariwa fanno eccezione**: attraversate in pieno, coi contenimenti aperti al passaggio.
 
 **Otto siti su otto. Nessuno è risparmiato in questa linea temporale** — perché questa è la timeline non contrastata. Ogni riga è un esito da cambiare, non un fatto compiuto.
-
-**Una sola cosa non ha spiegazione meccanica:** le due ore e trentasette minuti di immobilità a Kashiwazaki-Kariwa prima di distruggerla.
 
 ---
 
@@ -286,7 +281,5 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 **La regola delle deviazioni è la vera scoperta.** Karatsu e Miyazu sono gli unici due impianti termoelettrici entro 15,7 km dalla rotta, e sono gli unici due punti in cui la creatura devia. Tutti gli altri — Matsuura, Shin-Kokura, Toyama Shinko — stanno oltre i 21 km e non producono nulla. La soglia è netta e i giocatori possono ricavarla dai tracciati. **Se lo fanno, hanno in mano una leva: accendere qualcosa la respinge.**
 
 **Il lago Biwa è la posta massima.** Quattordici milioni di persone bevono dal Biwa attraverso l'acquedotto del Kansai: è un fatto reale. Fai arrivare la deposizione sul bacino solo se falliscono qualcosa di specifico.
-
-**Le due ore e mezza di attesa** sono l'ultimo gancio. Decidi tu cosa stava facendo, oppure lascia che lo decidano i giocatori.
 
 **Sui numeri.** Le proiezioni sanitarie sono costruite come quelle reali: stima centrale più intervallo, con l'incertezza che cresce sull'orizzonte lungo. Servono a dare ai giocatori un numero che peggiora ogni volta che lo guardano — è la fonte principale dell'ansia, molto più dei morti diretti, che sono già accaduti e non si possono cambiare.

@@ -216,7 +216,7 @@ Termini usati in questo file e nei bollettini.
 |**PWR / BWR**|I due tipi di reattore ad acqua leggera. Nel PWR l'acqua del nocciolo è pressurizzata e non bolle; nel BWR bolle direttamente. Ai fini del gioco cambia poco.|
 |**ATR (Fugen)**|Reattore prototipo ad acqua pesante. Tipo raro, un solo esemplare al mondo su quel percorso: per questo la sua firma isotopica risulta anomala.|
 |**Arresto freddo**|Reattore spento e raffreddato sotto i 100 °C. Non è sicuro di per sé: continua a produrre calore residuo e va comunque raffreddato per giorni.|
-|**Calore residuo**|Il calore che un nocciolo produce anche da spento. Cala col tempo: più a lungo è stato fermo, meno raffreddamento serve. È il motivo per cui Shimane era il sito più salvabile.|
+|**Calore residuo**|Il calore che un nocciolo produce anche da spento. Cala col tempo: più a lungo è stato fermo, meno raffreddamento serve.|
 |**Scopertura del nocciolo**|L'acqua è scesa sotto il livello delle barre di combustibile. Da lì partono surriscaldamento, produzione di idrogeno e, se nessuno interviene, esplosione.|
 |**Sfiato controllato**|Scaricare deliberatamente in atmosfera parte della pressione del contenimento per evitare che ceda. Rilascia radioattività di proposito: è la scelta meno peggiore.|
 |**INES**|Scala internazionale degli eventi nucleari, da 0 a 7. È logaritmica: ogni gradino vale circa dieci volte il precedente. 5 = Three Mile Island, 7 = Cernobyl.|

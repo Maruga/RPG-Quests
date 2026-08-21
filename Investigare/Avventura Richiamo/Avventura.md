@@ -51,7 +51,8 @@
 ## Lo sfondo *(il GM tiene il tempo)*
 
 - Posizione del mostro: un marcatore ogni 2 ore ([percorso-marcatori-2h.csv](percorso-marcatori-2h.csv)) · bollettini ai giocatori 09:00/21:00 ([bollettini.md](bollettini.md)).
-- 3d 07:48 — il passaggio rende inagibile la base di Maizuru (la Sala 2 si riorganizza) · 3d 09:00-13:20 — il giorno nero di Wakasa · **dal 3d 15:10 la bestia è una sorgente radioattiva mobile**: sotto i 2 km è un viaggio di sola andata.
+- **Fin dal passaggio di Genkai la bestia è una sorgente radioattiva mobile** (ha attraversato l'impianto mentre cedeva): sotto i 2 km è un viaggio di sola andata — allegato al 1° bollettino.
+- 3d 07:48 — il passaggio rende inagibile la base di Maizuru (la Sala 2 si riorganizza) · 3d 09:00-13:20 — il giorno nero di Wakasa.
 - **4d 14:03 — arrivo a Kashiwazaki-Kariwa**: la fine della corsa.
 - Chi attacca la bestia carica la molla ([arma-kaiju.md](arma-kaiju.md)). Le centrali funzionano tutte: spegnerne una = proposta dei PG + approvazione del vertice dello Stato. Mezzi e basi: [STORIA.md](STORIA.md) · [BASI_MILITARI.md](BASI_MILITARI.md).
 

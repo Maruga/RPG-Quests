@@ -89,6 +89,19 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㊳ **DUE FIX GROSSI DEI BOLLETTINI (canone utente 2026-08-21)**: ① **LA SOSTA DI KK ERA UNA
+  CAZZATA** (contraddiceva «non si ferma MAI»): via le 2h37 di immobilità — nuova sequenza:
+  **4d 14:03 la attraversa senza rallentare (come Genkai) → 14:20 distrutta → 14:30 in mare →
+  15:45 ultimo contatto a 14 km, sparita**; Ohi cede «quattro ore dopo la sparizione»; via il
+  «mistero delle 2h37» da sinottico e note GM; citazione finale: «non si è fermata un solo minuto
+  in quattro giorni». ② **CONTAMINATA FIN DA GENKAI** (ha attraversato l'impianto mentre i
+  contenimenti cedevano — coerente col gōgai «la nube sale ancora», conflitto gōgai/bollettini
+  RISOLTO): Genkai g.1 = «rilascio in corso, vento al largo» (non più «nessun rilascio»);
+  allegato-contaminazione spostato al **bollettino 第1号** (prot. 001-B); Mihama 3d 15:10 =
+  «rincara» (non più inizio). Corretti: bollettini.md, BOLLETTINI_STAMPA.html, scheda §8+§10,
+  SCHEMA #23, Avventura.md sfondo, CSV punti (KK), arma-kaiju glossario (via Shimane-salvabile
+  dal calore). NB: arma-kaiju.md ha ALTRE modifiche dell'altra AI non lette da me (glossario
+  nuovo, gancio rifatto) — alla prossima occasione rileggerlo intero.
   ㊲ **BOLLETTINI sistemati + STAMPA + tempi-spegnimento (2026-08-21)**: ① corretto in
   bollettini.md (v3 dell'altra AI, molto migliorata — 8/8, regola 15 km, marcatori verificati)
   l'«arresto precauzionale dal g.1» di Shimane in 6 punti (era in produzione: scram automatico

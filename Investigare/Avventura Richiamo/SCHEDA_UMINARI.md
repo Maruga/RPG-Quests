@@ -139,7 +139,7 @@ Filtratore: **filtra in movimento** (non si ferma mai — canone di rotta): **~1
 
 ## 8. Vicino alla bestia *(effetti per fascia — proposta)*
 
-> ⚠ **Dal 3d 15:10** (bollettini, canone): la bestia attraversa la propria nube ed è una **sorgente radioattiva mobile** — la tabella radiologica di `bollettini.md` **si somma** a queste fasce: 200 m = morte in minuti, 500 m = dose letale in 30′, sotto i 2 km = viaggio di sola andata. **Le fasce qui sotto valgono piene solo nei giorni 1-3 (mattina).** Qualunque piano ravvicinato, da lì in poi, non è un piano.
+> ⚠ **Dal passaggio di Genkai (1d 07:00)** la bestia è una **sorgente radioattiva mobile** (canone 2026-08-21: ha attraversato l'impianto mentre i contenimenti cedevano) — la tabella radiologica di `bollettini.md` **si somma** a queste fasce per tutta l'avventura: 200 m = morte in minuti, 500 m = dose letale in 30′, **sotto i 2 km = viaggio di sola andata**. Il passaggio nella nube di Mihama (3d 15:10) la rincara. Qualunque piano ravvicinato non è un piano.
 
 | Distanza | Effetto |
 |---|---|
@@ -243,9 +243,9 @@ Da **Madara/Genkai** (Kyūshū) a **Kashiwazaki-Kariwa** (Niigata), sud→nord, 
 | **3d ~10:00** | ~625 | **Ōi** |
 | **3d ~12:45** | ~659 | **Mihama** |
 | **3d ~13:20** | ~663 | **Fugen + Tsuruga** — *cinque cupole in quattro ore e mezza: **il giorno nero*** |
-| **3d 15:10** | ~690 | **attraversa la propria nube di Mihama: da qui è una SORGENTE RADIOATTIVA MOBILE** (bollettini) — sotto i 2 km è un viaggio di sola andata |
+| 3d 15:10 | ~690 | attraversa la propria nube di Mihama: il rateo su di lei — **contaminata fin da Genkai** — sale ancora |
 | 3d notte | ~750-800 | taglia le montagne (Hakusan, +1.500 m) senza variare velocità |
-| **4d 14:03** | **959,5** | **arriva a Kashiwazaki-Kariwa — e si ferma**: immobile per 2 h 37′ a 800 m dai reattori (battito 0,3 Hz), poi **16:40 la distrugge in 50′** (unica azione diretta), **17:30 entra in mare, 18:20 sparita** (bollettini) |
+| **4d 14:03** | **959,5** | **arriva a Kashiwazaki-Kariwa e la attraversa senza rallentare** (come Genkai): 14:20 l'impianto non esiste più, **14:30 entra in mare, 15:45 ultimo contatto a 14 km — sparita** (bollettini; non si è fermata un minuto in 4 giorni) |
 
 **Risposta secca: 80 ore — quattro giorni scarsi.** «Dov'è adesso?» = il marcatore dell'ora sulla mappa (uno ogni 2 h = 24 km), interpolazione a vista. Il GM traccia solo «i km del Nushi»: i successi dei PG si sottraggono lì.
 
