@@ -17,17 +17,24 @@ proposta «Comitato del Terzo Giorno / Ōtsuka» di `RICHIAMO_Sviluppo.md` §5 (
 2. **Il piano.** La creatura viene guidata di centrale in centrale lungo il Mar del Giappone
    (catena dei camioncini — INDIZI blocco 1) fino a Kashiwazaki-Kariwa. Ogni tappa raggiunta è
    una centrale distrutta. **I PG devono fermarla prima che le distrugga tutte.** *(Canone.)*
-3. **Il riscatto — il depistaggio.** Dopo Genkai, la **Ryūgū-kai** chiede un pagamento in
+3. **Il percorso lo conosce solo la Ryūgū-kai.** *(Canone 2026-08-21.)* Lo Stato vede la
+   **posizione** della creatura (bollettini, radar, mareografi) e pubblica proiezioni — ma la
+   **rotta** non la sa nessuno: dopo ogni tappa, il paese non sa cosa può succedere. **I PG
+   possono intuirla fin da subito** dagli indizi (i camion piazzati sulla linea, un faro per
+   ogni centrale); la **mappa nel camion del capo-settore** è l'unica conferma che esista.
+   Finché non la trovano, ogni previsione dei PG resta una scommessa — che il vertice dello
+   Stato può credere o ignorare.
+4. **Il riscatto — il depistaggio.** Dopo Genkai, la **Ryūgū-kai** chiede un pagamento in
    **lingotti d'oro**, da consegnare «in un punto che verrà comunicato». **Ai capi l'oro non
    interessa: serve a depistare** — far credere al paese che sia un'estorsione (pagare = fermarla),
    bruciare giorni, risorse e attenzione mentre il piano procede. *(Canone.)*
    *(Proposta: con l'oro pagano comunque la manovalanza — l'operazione si autofinanzia.)*
-4. **Lo strumento — l'inibitore.** Esiste un apparato che chi lo conosce chiama «lo strumento per
+5. **Lo strumento — l'inibitore.** Esiste un apparato che chi lo conosce chiama «lo strumento per
    fermare il mostro». In realtà **inibisce il segnale**: attivato, il richiamo tace e la creatura
    **torna al mare dal punto più vicino**. *(Canone.)* È il fusibile di sicurezza
    dell'organizzazione — il loro interruttore d'emergenza *(proposta)*. La sua ubicazione può
    rivelarla **un prigioniero preso vivo alla consegna dell'oro**. *(Canone.)*
-5. **I nemici.** Oltre alle squadre dei camioncini, i PG si scontrano con **altri terroristi**:
+6. **I nemici.** Oltre alle squadre dei camioncini, i PG si scontrano con **altri terroristi**:
    alla consegna dell'oro e al presidio dello strumento. *(Canone.)*
 
 ## La spina dorsale (le tre vie dei PG)

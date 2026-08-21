@@ -89,6 +89,20 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉞ **IL PERCORSO LO SA SOLO LA RYŪGŪ-KAI (canone utente 2026-08-21)**: nessuno conosce la
+  rotta — lo Stato vede la POSIZIONE (bollettini/proiezioni), non dove andrà: «nessuno sa cosa
+  può succedere». **I PG possono INTUIRLA da subito** (camion sulla linea, un faro per centrale)
+  e sono gli unici; la mappa del capo-settore = l'unica conferma; fino ad allora è una scommessa
+  da difendere davanti al vertice. Scritto in STORIA (verità 3, rinumerate 4-6), SCHEMA #28,
+  scheda §4.4, INDIZI 1 (inferenze). Il nastro CSV resta verità del GM.
+  ㉝ **SHIMANE FUNZIONA NORMALMENTE + STILE (canone utente 2026-08-21)**: nessuna centrale è
+  spenta in via preventiva — «arresto precauzionale di Shimane» e «dilemma scram» erano
+  INVENZIONI (mie/dell'altra AI): **spegnere una centrale = proposta dei PG + approvazione del
+  vertice dello Stato**. Corretto in scheda §6 (dilemma sostituito), SCHEMA (§5.6 decaduta,
+  decisione #27); riga aggiuntiva per la fix-list bollettini (righe 98 e 264: via l'arresto
+  precauzionale). **STILE (ordine permanente): scrivere COME UN'AVVENTURA — scene, fatti,
+  meccaniche; niente commenti d'autore** («è il brivido», «il momento in cui...») — asciugata
+  la sezione della scritta camioncini; memoria feedback aggiornata.
   ㉜ **LA SCRITTA DEI CAMIONCINI spiegata e messa in INDIZI 1 (2026-08-21)**: 共成設備工業
   Kyōsei Setsubi Kōgyō = «Impianti Industriali Kyōsei» (共成 = realizzare insieme — nome
   anonimo perfetto). DOPPIO FONDO (proposta GM): all'orecchio «kyōsei» = omofono di 共生

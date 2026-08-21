@@ -33,7 +33,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 - **共成** *kyōsei* = 共 «insieme» + 成 «compiere, realizzare» → «realizzare insieme»: un nome aziendale **perfettamente anonimo** — in Giappone ne esistono a centinaia di simili;
 - **設備工業** *setsubi kōgyō* = «impiantistica industriale»: la copertura ideale per furgoni che posano apparecchiature nei cantieri — nessuno guarda due volte una ditta di impianti.
-- **Il doppio fondo (nota GM)**: *scritto* è innocuo, ma *all'orecchio* «kyōsei» è omofono di **共生 (simbiosi)** e di **強制 (coercizione)** — la ditta che guida la bestia col richiamo si chiama, a voce, «Simbiosi Impianti» o «Coercizione Impianti». È la firma nascosta della Ryūgū-kai, che ama i giochi di parole (竜宮会 stessa, e 玄海/限界): un interprete, un linguista o un poliziotto colto può inciamparci (tiro di Ascolto o cultura, a discrezione del GM). **Non è una prova: è il brivido** — il momento in cui il tavolo capisce che l'organizzazione firma le proprie cose, e che nulla, in questo piano, è stato scelto a caso.
+- **Il doppio fondo (nota GM)**: scritto è innocuo; all'orecchio «kyōsei» è omofono di **共生 (simbiosi)** e di **強制 (coercizione)**. Un interprete o un poliziotto colto può cogliere l'omofonia con un tiro di **Ascolto** o di cultura. Non costituisce una prova.
 - All'albo delle imprese la ditta **non esiste** (v. punto 3 qui sotto): la telefonata alla camera di commercio resta la verifica concreta.
 
 ### Come i PG ci arrivano
@@ -58,8 +58,8 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 ### Cosa dice ai PG *(le inferenze — il cuore)*
 
 - **Sapevano prima di tutti.** I camioncini sono arrivati il 30-31 ottobre; il mostro è emerso il 5 novembre. Chi li ha piazzati **sapeva** — come sapeva chi ha zittito i pescatori di Madara. I due fili puntano alla stessa mano.
-- **«Sempre sulla linea».** Gli spostamenti non sono fughe: sono *riposizionamenti lungo una rotta*. Segnando i punti su una carta, i PG vedono la linea **prima** ancora di trovare la mappa.
-- **La mappa è la destinazione.** Il giorno in cui la trovano, sanno dove finisce tutto — e quanto tempo resta.
+- **«Sempre sulla linea».** Gli spostamenti non sono fughe: sono *riposizionamenti lungo una rotta*. Segnando i punti su una carta, i PG vedono la linea **prima** ancora di trovare la mappa — e sono **gli unici nel paese a poterlo fare**: il percorso lo conosce solo la Ryūgū-kai (STORIA, verità 3), tutti gli altri inseguono la posizione del giorno.
+- **La mappa è la destinazione.** Il giorno in cui la trovano, sanno dove finisce tutto — e quanto tempo resta. Fino ad allora la loro intuizione resta una scommessa da difendere davanti al vertice dello Stato.
 - **Il camion preso intero è un'arma.** Dentro c'è la tecnologia del richiamo: la stessa che può **saturare l'organo** (scheda §6.1). L'oggetto che inseguono è l'unica cosa che funziona.
 
 ### La mappa dei punti *(canone; collocazione proposta)*
