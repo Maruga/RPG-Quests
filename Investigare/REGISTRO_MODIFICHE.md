@@ -11,6 +11,12 @@
 
 ## Da applicare
 
+- 2026-08-21 · RICHIAMO → REGOLE · Creato `Avventura Richiamo/KAGE_FAMIGLIE.docx`: scene-telefonata
+  delle famiglie (Yamamoto/Nakamura/Sato — gli unici con familiari nei Kage) per la one-shot
+  Richiamo, derivate dai dossier `pg/Kage/*` che NON sono stati toccati. Solo scene, nessuna
+  meccanica Kage (coerente con la one-shot). Se i PG tornano in campagna, gli esiti sono fili
+  per i dossier veri (nota in coda al DOCX). · **SOLO INFORMATIVO** (nessuna azione richiesta)
+
 ### 2026-08-19 · RICHIAMO (nuova sessione) → TUTTE · Nuova avventura «Richiamo» in `Avventura Richiamo/`
 
 L'utente ha aperto una sessione dedicata nella cartella `Avventura Richiamo/`: avventura kaijū

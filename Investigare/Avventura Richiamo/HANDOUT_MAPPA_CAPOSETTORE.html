@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Handout — Il programma cantieri (la mappa del capo-settore)</title>
+<style>
+  /* ============================================================
+     HANDOUT: la «mappa dei punti di passaggio» trovata nel
+     camioncino del capo-settore — travestita da programma di
+     manutenzione. Stampa: A4 verticale, margini 0, sfondo ON.
+     ============================================================ */
+  @page { size: A4 portrait; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #4a4a4a;
+    display: flex; justify-content: center;
+    font-family: "MS PMincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  }
+
+  .sheet {
+    position: relative;
+    width: 210mm; height: 296mm;
+    background:
+      /* macchie e ingiallimento */
+      radial-gradient(ellipse 70mm 40mm at 85% 12%, rgba(150,110,50,.10), transparent 70%),
+      radial-gradient(ellipse 50mm 60mm at 8% 80%, rgba(140,100,40,.12), transparent 70%),
+      radial-gradient(ellipse 30mm 20mm at 60% 55%, rgba(120,90,40,.08), transparent 70%),
+      linear-gradient(160deg, #f2e9d4 0%, #ede2c8 45%, #e6d9ba 100%);
+    color: #2b2620;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* le pieghe del documento (stava piegato in un portadocumenti) */
+  .fold-h { position: absolute; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(90,70,40,.45) 15%, rgba(90,70,40,.35) 85%, transparent);
+    box-shadow: 0 1px 2px rgba(255,255,255,.5); }
+  .fold-v { position: absolute; top: 0; bottom: 0; width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(90,70,40,.40) 20%, rgba(90,70,40,.30) 80%, transparent);
+    box-shadow: 1px 0 2px rgba(255,255,255,.45); }
+
+  .inner { position: relative; padding: 14mm 16mm 10mm; height: 100%; }
+
+  /* ---- testata ditta ---- */
+  .letterhead { display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 1.2mm double #3a332a; padding-bottom: 3mm; }
+  .company { font-size: 8.4mm; font-weight: bold; letter-spacing: 1.2mm; }
+  .safety { font-size: 4.2mm; letter-spacing: .8mm; margin-top: 1.5mm; color: #37413a; }
+  .safety .cross { color: #1d6b33; font-weight: bold; }
+  .docmeta { text-align: right; font-family: "MS Gothic", "Yu Gothic", monospace; font-size: 3.4mm; line-height: 1.75; color: #3a332a; }
+
+  /* ---- titolo ---- */
+  .doctitle { text-align: center; margin: 7mm 0 2.5mm; font-size: 6.6mm; font-weight: bold; letter-spacing: 2mm; }
+  .subtitle { text-align: center; font-family: "MS Gothic", monospace; font-size: 3.6mm; letter-spacing: .6mm; color: #453d32; }
+
+  /* ---- tabella ---- */
+  table { width: 100%; border-collapse: collapse; margin-top: 6mm;
+    font-family: "MS Gothic", "Yu Gothic", monospace; }
+  th, td { border: .45mm solid #4a4136; padding: 2.5mm 2mm; font-size: 3.7mm; }
+  th { background: rgba(90,75,50,.13); font-weight: bold; letter-spacing: .5mm; text-align: center; }
+  td.num { text-align: center; width: 14mm; font-weight: bold; }
+  td.date { text-align: center; width: 26mm; }
+  td.place { }
+  td.place .romaji { display: block; font-size: 2.7mm; color: #6a5f4e; letter-spacing: .3mm; font-family: Arial, sans-serif; font-style: italic; }
+  td.team { text-align: center; width: 18mm; }
+  td.code { text-align: center; width: 24mm; }
+  tr.reserve td { color: #4a4136; background: rgba(90,75,50,.05); }
+
+  /* il cerchio a matita rossa sull'ultima riga: ancorato alla cella n.8 */
+  td.anchor { position: relative; }
+  .pencil-ring { position: absolute; left: -3mm; top: -2mm; width: 182mm; height: 15.5mm;
+    border: 1.4mm solid rgba(178,34,34,.72); border-radius: 47% / 60%;
+    transform: rotate(-.6deg);
+    filter: blur(.15mm);
+    pointer-events: none; z-index: 5; }
+  .pencil-ring::after { content: ""; position: absolute; left: 2mm; top: 58%; width: 14mm; height: 5mm;
+    border-bottom: 1mm solid rgba(178,34,34,.45); border-radius: 50%; transform: rotate(5deg); }
+
+  /* ---- piede ---- */
+  .notes { margin-top: 6mm; font-family: "MS Gothic", monospace; font-size: 3.3mm; line-height: 1.9; color: #3a332a; }
+  .notes li { margin-left: 7mm; }
+  .approval { position: absolute; right: 16mm; bottom: 18mm; display: flex; gap: 4mm; align-items: center; }
+  .apr-box { border: .45mm solid #4a4136; width: 17mm; height: 17mm; display: flex; flex-direction: column; align-items: center; font-family: "MS Gothic", monospace; }
+  .apr-box .lbl { font-size: 2.8mm; border-bottom: .3mm solid #4a4136; width: 100%; text-align: center; padding: .6mm 0; background: rgba(90,75,50,.10); }
+  .apr-box .stamp-area { flex: 1; display: flex; align-items: center; justify-content: center; }
+  .hanko { width: 10.5mm; height: 10.5mm; border: .55mm solid #b0342a; border-radius: 50%;
+    color: #b0342a; display: flex; align-items: center; justify-content: center;
+    font-size: 3.6mm; font-weight: bold; transform: rotate(-8deg); opacity: .85;
+    font-family: "MS PMincho", serif; letter-spacing: 0; line-height: 1.05; text-align: center; }
+  .pageno { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center;
+    font-family: "MS Gothic", monospace; font-size: 3.2mm; color: #5a5040; }
+
+  @media print {
+    body { background: #fff; }
+    .sheet { box-shadow: none; }
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="fold-h" style="top: 99mm;"></div>
+  <div class="fold-h" style="top: 198mm;"></div>
+  <div class="fold-v" style="left: 105mm;"></div>
+
+  <div class="inner">
+    <div class="letterhead">
+      <div>
+        <div class="company">港湾施設維持管理</div>
+        <div class="safety">安全<span class="cross">✚</span>第一</div>
+      </div>
+      <div class="docmeta">
+        整理番号　８６１−０４７<br>
+        作成日　昭和６１年１１月４日<br>
+        配布区分　班長限り
+      </div>
+    </div>
+
+    <div class="doctitle">保守点検作業計画表</div>
+    <div class="subtitle">昭和６１年１１月　―　全区域（日本海側）</div>
+
+    <table>
+      <thead>
+        <tr><th>地点</th><th>予定日</th><th>作業地点</th><th>班</th><th>作業区分</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">１</td><td class="date">11/11（火）</td>
+          <td class="place">佐賀県　玄海町　値賀崎<span class="romaji">Genkai-chō (Saga)</span></td>
+          <td class="team">一</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">２</td><td class="date">11/12（水）</td>
+          <td class="place">島根県　松江市　鹿島町片句<span class="romaji">Matsue / Kashima (Shimane)</span></td>
+          <td class="team">二</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">３</td><td class="date">11/13（木）</td>
+          <td class="place">福井県　高浜町　音海<span class="romaji">Takahama (Fukui)</span></td>
+          <td class="team">三</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">４</td><td class="date">11/13（木）</td>
+          <td class="place">福井県　おおい町　大島<span class="romaji">Ōi (Fukui)</span></td>
+          <td class="team">三</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">５</td><td class="date">11/13（木）</td>
+          <td class="place">福井県　美浜町　丹生<span class="romaji">Mihama (Fukui)</span></td>
+          <td class="team">四</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">６</td><td class="date">11/13（木）</td>
+          <td class="place">福井県　敦賀市　明神町<span class="romaji">Tsuruga — Myōjin (Fukui)</span></td>
+          <td class="team">四</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr>
+          <td class="num">７</td><td class="date">11/13（木）</td>
+          <td class="place">福井県　敦賀市　浦底<span class="romaji">Tsuruga — Urasoko (Fukui)</span></td>
+          <td class="team">四</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr class="circled">
+          <td class="num anchor">８<div class="pencil-ring"></div></td><td class="date">11/14（金）</td>
+          <td class="place">新潟県　柏崎市　刈羽村荒浜<span class="romaji">Kashiwazaki — Kariwa (Niigata)</span></td>
+          <td class="team">五</td><td class="code">Ｂ型・沿岸</td>
+        </tr>
+        <tr class="reserve">
+          <td class="num">予１</td><td class="date">待機</td>
+          <td class="place">山口県　萩市　沿岸部<span class="romaji">Hagi (Yamaguchi) — riserva</span></td>
+          <td class="team">二</td><td class="code">予備</td>
+        </tr>
+        <tr class="reserve">
+          <td class="num">予２</td><td class="date">待機</td>
+          <td class="place">鳥取県　鳥取市　沿岸部<span class="romaji">Tottori — riserva</span></td>
+          <td class="team">三</td><td class="code">予備</td>
+        </tr>
+        <tr class="reserve">
+          <td class="num">予３</td><td class="date">待機</td>
+          <td class="place">富山県　富山市　沿岸部<span class="romaji">Toyama — riserva</span></td>
+          <td class="team">五</td><td class="code">予備</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="notes">
+      <li>作業は前地点の完了後、直ちに次地点へ移行のこと。</li>
+      <li>作業開始後の中断は認めない。装置の停止操作は行わないこと。</li>
+      <li>異状発生時は呼出受信機にて指示を待て。無線・電話の使用は禁止。</li>
+      <li>本表の複写・持出しを禁ず。</li>
+    </ul>
+
+    <div class="approval">
+      <div class="apr-box">
+        <div class="lbl">承認</div>
+        <div class="stamp-area"><div class="hanko">龍</div></div>
+      </div>
+      <div class="apr-box">
+        <div class="lbl">班長</div>
+        <div class="stamp-area"></div>
+      </div>
+    </div>
+
+    <div class="pageno">— １ —</div>
+  </div>
+</div>
+</body>
+</html>

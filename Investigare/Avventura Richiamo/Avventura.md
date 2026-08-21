@@ -16,7 +16,7 @@
 
 - Alla sala operativa arriva la richiesta: **1.500 kg di lingotti d'oro** — 120 lingotti da 12,5 kg in 10 casse basse, ≈ 3 miliardi di ¥ (l'oro è denso: 1.500 kg sono un cubo di 42 cm di lato).
 - **Come arriva l'oro al punto**: la polizia lo porta **con un camion qualsiasi**. Al ponticello, **un muletto passa le casse da un mezzo all'altro**.
-- **Come se ne va**: sul camioncino dei terroristi — **uno dei bianchi della flotta, con la livrea**, che aspetta col **cassone coperto da un tendone verde legato sopra, per non far vedere le scritte** (Isuzu Elf 350, targa rubata).
+- **Come se ne va**: sul camioncino dei terroristi — **uno dei bianchi della flotta, con la livrea**, che aspetta col **cassone coperto da un tendone verde legato sopra, per non far vedere le scritte** (Mitsubishi Canter, targa rubata).
 - **Il messaggio** (handout, da leggere al tavolo):
 
   > Al Governo. Il Nushi cammina dove decidiamo noi.

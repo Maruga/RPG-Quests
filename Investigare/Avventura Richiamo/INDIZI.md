@@ -13,7 +13,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 | Elemento | Dettaglio | Stato |
 |---|---|---|
-| Il mezzo | **Isuzu Elf a cassone chiuso** (box in alluminio), bianco sporco, livrea di una ditta di manutenzione **inesistente**: **共成設備工業 «Kyōsei Setsubi Kōgyō»** — significato e doppio fondo della scritta: v. sezione sotto | proposta (l'utente ha detto solo «camioncino») |
+| Il mezzo | **Mitsubishi Canter a cassone chiuso** (box in alluminio), bianco, doppia cabina, livrea **港湾施設維持管理・安全第一** («Manutenzione impianti portuali · Sicurezza prima di tutto») — v. sezione sotto | **canone visivo 2026-08-21** (le 7 foto in `Immagini/`) |
 | Il metodo | Arrivano, piazzano **cartelli di lavori in corso** (工事中), coni, transenne — e **abbandonano il camioncino** lì. Un mezzo di cantiere parcheggiato, in Giappone, è invisibile per settimane | canone |
 | Il carico | Il trasduttore a bassa frequenza (grosso come un motore navale), un **gruppo elettrogeno diesel coi fusti** per giorni di trasmissione, batterie tampone, e la **leva d'attivazione sotto sigillo — a senso unico**. Il suono esce da **feritoie nel pianale**. (I rabbocchi di gasolio sono un movimento osservabile) | proposta (coerente col canone della sequenza) |
 | Il parcheggio | Sempre **accoppiato all'acqua o al suolo**: su tombini e canali, su ponticelli, sulle banchine dei porti — l'infrasuono si trasmette meglio. È anche un *pattern* riconoscibile | proposta |
@@ -27,32 +27,30 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | Quanti | **Una decina: un faro per bersaglio, più le riserve** (in acqua il richiamo porta per centinaia di km — non serve una catena fitta); il numero esatto lo fissa la mappa (sotto) | proposta |
 | **Il premio** | **In uno dei camioncini c'è la mappa dei punti di passaggio del mostro** | **canone** |
 
-### La scritta sulla fiancata *(proposta — significato e doppio fondo)*
+### La scritta sulla fiancata *(canone visivo 2026-08-21 — dalle foto dell'utente; sostituisce la proposta «Kyōsei Setsubi Kōgyō»)*
 
-**共成設備工業 — Kyōsei Setsubi Kōgyō**, letteralmente **«Impianti Industriali Kyōsei»**.
+**港湾施設維持管理 — Kōwan shisetsu iji kanri**, «**Manutenzione e gestione impianti portuali**», con sotto **安全✚第一** («la sicurezza prima di tutto», il motto standard dei cantieri giapponesi).
 
-- **共成** *kyōsei* = 共 «insieme» + 成 «compiere, realizzare» → «realizzare insieme»: un nome aziendale **perfettamente anonimo** — in Giappone ne esistono a centinaia di simili;
-- **設備工業** *setsubi kōgyō* = «impiantistica industriale»: la copertura ideale per furgoni che posano apparecchiature nei cantieri — nessuno guarda due volte una ditta di impianti.
-- **Il doppio fondo (nota GM)**: scritto è innocuo; all'orecchio «kyōsei» è omofono di **共生 (simbiosi)** e di **強制 (coercizione)**. Un interprete o un poliziotto colto può cogliere l'omofonia con un tiro di **Ascolto** o di cultura. Non costituisce una prova.
-- All'albo delle imprese la ditta **non esiste** (v. punto 3 qui sotto): la telefonata alla camera di commercio resta la verifica concreta.
+- Non è una ragione sociale: è una **funzione** — il mezzo sembra un camion di servizio del porto o di un appaltatore. Nessuno guarda due volte un mezzo così su una banchina, un ponte o davanti a una recinzione industriale.
+- **La verifica concreta** (punto 3 qui sotto): una telefonata all'ufficio del porto o alla capitaneria — **nessuna autorità portuale e nessun appaltatore registrato ha quei mezzi o quelle squadre**. La copertura regge finché nessuno chiede.
 
 ### Come i PG ci arrivano
 
 1. **Le telecamere** (la strada indicata dall'utente). Nel 1986 gli occhi ci sono, basta pensarci: telecamere portuali e delle capitanerie, impianti delle centrali (i nastri dei giorni *prima* di Genkai sopravvivono negli archivi fuori sito), caselli autostradali — e il nuovissimo **N-System** di lettura targhe, appena entrato in servizio. Riavvolgendo i nastri al 5-6 novembre: **lo stesso camioncino, in posti a centinaia di km di distanza, negli stessi due giorni.**
-2. **Le targhe**: tutte diverse, tutte **rubate o scambiate** — il pattern non è la targa, è il mezzo. Ma il modello identico apre l'altro filo: *chi ha comprato in blocco quindici Elf usati?* (un'asta fallimentare, pagata in contanti — filo da sviluppare) *(proposta)*.
+2. **Le targhe**: tutte diverse, tutte **rubate o scambiate** — il pattern non è la targa, è il mezzo. Ma il modello identico apre l'altro filo: *chi ha comprato in blocco quindici Canter usati?* (un'asta fallimentare, pagata in contanti — filo da sviluppare) *(proposta)*.
 3. **L'osservazione attenta** — cosa nota chi guarda bene (o chi ingrandisce il fotogramma):
    - il cantiere **non lavora**: stessi coni, stesso scavo finto, da giorni;
    - **scarponi militari** sotto le tute, il rigonfiamento di una fondina sotto il gilet;
    - i turni troppo regolari, nessun furgone della ditta che porta materiale;
    - **le stesse facce** in cantieri a prefetture di distanza;
-   - la ditta sulla fiancata **non esiste** all'albo (una telefonata alla camera di commercio).
+   - la scritta è di **manutenzione portuale** — ma metà dei «cantieri» sta su strade e ponti che col porto non c'entrano; e **nessun porto li riconosce** (una telefonata).
 4. **Andarci**: un controllo di routine finisce in niente (documenti pronti, «siamo in appalto»); una perquisizione o un riconoscimento finisce **a fuoco** — e il camioncino riparte, più avanti lungo la linea. Ogni approccio bruciato rende la rete più prudente.
 5. **Il ronzio** *(canone)*: l'emissione **disturba sensibilmente radio locali, TV e apparecchi** nel raggio di qualche chilometro — non è il canto che si sente (quello lavora sotto l'udito): è la sua **alimentazione**, un ronzio che pulsa nella statica AM col ritmo lento del richiamo, immagini TV che sfarfallano, citofoni che friggono. **La mappa dei reclami** — una telefonata alle emittenti, ai riparatori TV, ai radioamatori — dice *quale zona è calda*: gratis, senza strumenti, precisione al quartiere. E con un faro che canta per giorni, la zona si sa presto.
 6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** Trovarlo non è la sfida: la corsa vera è **arrivarci prima della bestia** — e vedersela con la guardia.
 
 > **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. I camion **non ancora attivi** sono muti: si trovano solo con telecamere, pattern e previsione (punti 1-3).
 > **La tattica** *(canone 2026-08-21)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata**; **se vengono distrutti TUTTI, il mostro torna all'acqua** — è la seconda via di vittoria, accanto al disturbatore. E **un prigioniero di un camioncino può rivelare il capannone** (come l'ostaggio della consegna: credendolo ormai vuoto).
-> **Il relitto di Genkai** *(proposta)*: il primo faro giace **schiacciato tra le macerie della centrale**, dentro la V — un Elf spianato con dentro una macchina che nessuno sa spiegare: il primo reperto fisico dell'avventura. E le notti di Madara erano la bestia che risaliva verso *quel* faro.
+> **Il relitto di Genkai** *(proposta)*: il primo faro giace **schiacciato tra le macerie della centrale**, dentro la V — un Canter spianato con dentro una macchina che nessuno sa spiegare: il primo reperto fisico dell'avventura. E le notti di Madara erano la bestia che risaliva verso *quel* faro.
 > **Sinergia con la Morsa** (scheda §6): un faro **attivo** non si sposta senza farsi notare — guidare una sorgente di disturbo accesa è sventolare una bandiera ai rilevatori; i camion **dormienti** invece si muovono, e ogni spostamento è un'occasione.
 
 ### Cosa dice ai PG *(le inferenze — il cuore)*
@@ -65,8 +63,8 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 ### La mappa dei punti *(canone; collocazione proposta)*
 
 - **Dov'è**: nel camioncino del **capo-settore** (uno per tratto di costa). I camioncini normali hanno solo ordini parziali — il proprio punto e il successivo («in caso di problemi, posizione 7»): già utili, predicono la tratta. Il capo-settore ha **il piano intero**.
-- **Com'è fatta**: una carta stradale del Mar del Giappone piegata in un portadocumenti da cantiere, travestita da **programma cantieri**: punti numerati, date, sigle — nessuna parola sul mostro. Ma le date coincidono con l'itinerario, e l'ultimo punto cerchiato è **Kashiwazaki-Kariwa**.
-- **Handout da produrre**: la carta vera e propria (lavoro manuale/Nano Banana Pro per i kanji — la aggiungiamo alla lista quando prepariamo l'avventura).
+- **Com'è fatta**: una carta stradale del Mar del Giappone piegata in un portadocumenti da cantiere, con dentro il **programma cantieri**: punti numerati, date, sigle — nessuna parola sul mostro. Ma le date coincidono con l'itinerario, e l'ultimo punto cerchiato è **Kashiwazaki-Kariwa**.
+- ✅ **Handout FATTO (2026-08-21)**: **`HANDOUT_MAPPA_CAPOSETTORE.html`** — il programma su carta intestata 港湾施設維持管理 (A4, stampa con «grafica di sfondo» ON): 8 punti con le date canone 11/11→14/11, 3 riserve in 待機 (Hagi, Tottori, Toyama), note di servizio («non interrompere», «nessuna operazione di arresto del dispositivo», «attendere il cercapersone — vietati radio e telefono»), pieghe, e **il cerchio a matita rossa sulla riga 8 — Kashiwazaki**. Al tavolo si consegna dentro una carta stradale vera piegata. *(L'hanko d'approvazione dice 龍 — proposta.)*
 
 ### Gli uomini del camioncino
 
@@ -74,10 +72,12 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ### Prompt per le foto (ChatGPT / GPT Image)
 
+> ✅ **FATTE TUTTE E 7 (utente, 2026-08-21)**: `Camioncino01-04.png` (F1-F4) · `CamioncinoAutostrada.png` (F5) · `Camioncino Particolare.png` (F6) · `Camioncino Interno.png` (F7), in `Immagini/`. **Resta solo da ritoccare i timestamp** alle date canone (86-11-05 / 86-11-06 — decisione utente: edit Nano Banana del solo datario). I prompt qui sotto restano come reference per eventuali rigenerazioni.
+
 > **Come usarli**: genera prima la **foto 1** e riusa l'immagine come *reference* nelle chat successive («stesso camioncino di questa foto») — stessa tecnica del kaijū. Per targhe e kanji leggibili meglio Nano Banana Pro. Timestamp e località si cambiano nel testo.
 
 **F1 · Il camioncino — ripresa base CCTV** *(il master: genera questo per primo)* → `Immagini/Indizio_Camion_01_porto.png`
-> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-11-05 14:22". A white 1980s Japanese light box truck (Isuzu Elf style, aluminum cargo box) with a company livery reading 共成設備工業 in dark blue Japanese characters on the box side, parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
+> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-11-05 14:22". A white 1980s Japanese light box truck (Mitsubishi Canter style, double cab, aluminum cargo box) with a livery reading 港湾施設維持管理 and 安全第一 in dark blue Japanese characters on the box side, parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
 
 **F2 · Strada costiera del San'in** → `Immagini/Indizio_Camion_02_sanin.png`
 > Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a coastal road layby above the Sea of Japan, pine trees and a guardrail, the truck parked over a roadside culvert, two workers in grey uniforms placing traffic cones, road-work sign 工事中. High-angle CCTV framing, washed-out colors, scanlines, timestamp "86-11-05 16:05", grainy VHS.
@@ -110,7 +110,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 **Dove**: **sotto il ponticello della Hokuriku a Habara** (nord di Tsuruga) — **35.6945 N · 136.1194 E**, le coordinate sono **nel messaggio di riscatto** — poi **dentro il traforo di Tsuruga**, subito a nord (~35.71 · 136.12).
 
-1. **La consegna**: la polizia porta l'oro al ponticello **con un camion qualsiasi**. Lì aspetta parcheggiato **il camioncino della Ryūgū-kai** — uno dei **bianchi della flotta, con la livrea**, il **cassone coperto da un tendone VERDE legato sopra per non far vedere le scritte** (Elf 350, targa rubata). **Un muletto passa le casse da un mezzo all'altro**, e il camioncino parte. *(Canone 2026-08-21.)*
+1. **La consegna**: la polizia porta l'oro al ponticello **con un camion qualsiasi**. Lì aspetta parcheggiato **il camioncino della Ryūgū-kai** — uno dei **bianchi della flotta, con la livrea**, il **cassone coperto da un tendone VERDE legato sopra per non far vedere le scritte** (Mitsubishi Canter, targa rubata). **Un muletto passa le casse da un mezzo all'altro**, e il camioncino parte. *(Canone 2026-08-21.)*
 2. **Verso il tunnel**: il camioncino entra nel traforo in colonna col traffico. *(Canone.)*
 3. **Il mega fumogeno**: quando è dentro, scatta — **il fumo esce da davanti e da dietro**, dai due portali. Traffico fermo, clacson, buio da miniera. *(Canone; innesco proposto: fusti fumogeni pre-piazzati nelle nicchie di servizio.)*
 4. **Il cambio**: nel caos, dentro il tunnel, la squadra **slega e toglie il tendone verde dal cassone** (e cambia la targa): **ricompaiono le scritte del camioncino bianco**; il tendone sparisce in una nicchia; le casse passano allo **scanner** a caccia del trasmettitore (% sotto). Minuti, mestiere. *(Canone: «quando tolgono il tendone verde sotto compare il camioncino bianco».)*
@@ -126,7 +126,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | Ascoltare le radio nel caos | **Ascolto** | una CB gracchia **ordini brevi in codice** sotto il fumo: c'è una squadra dentro |
 | Sigillare i portali e ispezionare tutto | — nessun tiro: una decisione | **30-60 minuti** e decine di veicoli nel panico; se dichiarata **prima** del deflusso, il camioncino è in trappola — la squadra molla il mezzo e tenta la fuga a piedi nel fumo (→ scontro) |
 
-> **L'AGGANCIO** *(canone 2026-08-21)*: le scritte viste sotto il tendone — **共成設備工業** — sono le stesse dei «cantieri» comparsi su tutta la costa: **il camioncino dell'oro è uno della flotta**. Da qui la caccia ai camioncini (blocco 1): telecamere, N-System, la ditta che non esiste.
+> **L'AGGANCIO** *(canone 2026-08-21)*: le scritte viste sotto il tendone — **港湾施設維持管理・安全第一** — sono le stesse dei «cantieri» comparsi su tutta la costa: **il camioncino dell'oro è uno della flotta**. Da qui la caccia ai camioncini (blocco 1): telecamere, N-System, l'ente portuale che non li riconosce.
 
 **Il trasmettitore dei PG** *(canone: % di scoperta quando prendono l'oro; lo scanner lavora nel tunnel — il mezzo è LORO, quindi si nasconde solo nel carico)*:
 

@@ -17,6 +17,9 @@ https://www.google.com/maps/d/u/0/edit?mid=1dtjjVUvikvXPsqZJCQtneh8FkHj1Q3E&usp=
 | `Avventura.md` | **la sequenza di gioco** (riepilogo schematico con link): apertura, riscatto+messaggio, consegna, caccia ai camioncini, capannone, sfondo | **canone utente** completato 2026-08-21 |
 | `COPERTINA.md` | copertina + gōgai + tagline | pronto |
 *(`PRESENTAZIONE_WhatsApp.md` non esiste più: il gōgai vive in `COPERTINA.md`, datato mer 12/11.)*
+| `HANDOUT_MAPPA_CAPOSETTORE.html` | **il premio del blocco 1, stampabile**: il programma cantieri del capo-settore (A4, carta intestata 港湾施設維持管理, 8 punti + 3 riserve, date 11-14/11, **Kashiwazaki cerchiata a matita rossa**) | pronto 2026-08-21 (verificato a schermo) |
+| `KAGE_FAMIGLIE.docx` | **v2 SEMPLICE (bocciata la v1 «10 scene»)**: UNA telefonata a testa, senza date — Takeshi a Yamamoto («dimmi che sei lontano»), Harumi a Nakamura («promettimelo»), Michiko a Sato («meno male che stai in laboratorio» + opzione «Ti ho visto») | pronto 2026-08-21 sera, 1 pagina |
+| `RICHIAMO_Libro_GM.docx` | **IL LIBRO DEL GM per il tablet**: tutto in un file con indice — copertina+gōgai, sequenza, linea maestra, storia, scheda, indizi, scontri, arma, basi, bollettini, famiglie, coda + appendici (nastro 42 marcatori, materiali esterni). Esclusi i prompt-immagine (restano nei .md) | pronto 2026-08-21, 2,8 MB (verificato; TOC da aggiornare al primo giro in Word) |
 | `STORIA.md` | cornice canonica: Ryūgū-kai, oro, strumento, regola del buio, risposta dello Stato, mezzi PG | **canone** (proposte marcate) |
 | `SCHEDA_NUSHI.md` (titolo: NUSHI) | il mostro: dimensioni, fisiologia, righello, debolezze+deviazione, fasce, scia, percorso+nastro, vulcano, 13 prompt | **canone** v2.2 (ripulita 2026-08-21 dai canoni superati; proposte marcate) |
 | `INDIZI.md` | blocco 1 camioncini (catena, segnale, 7 prompt) · 2 oro · 3 strumento · 4 segnaposto | **canone** v0.3 (proposte marcate) |
@@ -75,6 +78,7 @@ https://www.google.com/maps/d/u/0/edit?mid=1dtjjVUvikvXPsqZJCQtneh8FkHj1Q3E&usp=
 | 34 | **Aggancio PG** (utente 2026-08-21): **selezionati dal loro procuratore — una delle squadre migliori** (le 5 schede di `pg/`); convocati d'urgenza, in eli alla Sala 1 alle ~11:00 del G1 | Avventura.md |
 | 35 | **Il capannone sta al TERZO MOLO del porto di Maizuru** (posizione utente 2026-08-21, da mappa: 舞鶴港第三ふ頭, Nishi-Maizuru — «Sumiyoshihama» decaduto) | SCONTRI §3 / INDIZI 3 |
 | 36 | **TUTTE le proposte ⚑ APPROVATE** (utente 2026-08-21): **nave-esca** · **boe-microfono** dei P-3 · **cecchino in prestito** · **intercettazione di Misawa** (cercapersone) · **contromossa Ryūgū-kai** (camion spostati allo scoperto = occasione). Accenno riassuntivo in Avventura.md («Gli assi nella manica») | BASI_MILITARI v3.1 / scheda §6 / Avventura.md |
+| 37 | **CANONE VISIVO dei camioncini** (foto utente 2026-08-21, 7/7 in `Immagini/`): **Mitsubishi Canter** box doppia cabina, livrea **港湾施設維持管理・安全第一** (via Elf e «Kyōsei Setsubi» — decade il doppio fondo); il filo = **nessun porto li riconosce**. Timestamp da ritoccare a 86-11-05/06 (fa l'utente). P11 depennato (coperto da F7). Fatte anche: cartina capannone dall'alto, interno capannone, kaiju sulla costa (⚠ design troppo riconoscibile: per la pubblicazione andrà rifatta) | INDIZI 1 / scheda §11 / Immagini/ |
 
 ## 3. La linea maestra *(fusione nastro + storia + fari — il quadro che non sta in nessun altro file)*
 
@@ -118,10 +122,10 @@ Nastro CANONE: `percorso-marcatori-2h.csv` — **12 km/h esatti (verificati), H2
 | 2 | ~~Aggancio PG~~ — **DECISO (utente 2026-08-21)**: le 5 schede di `pg/`, **selezionati dal loro procuratore — una delle squadre migliori** → decisione #34 | Avventura.md (apertura) |
 | 3 | ~~Oro: 1 mld/3 scene/Contabile~~ — **SUPERATA** (v3 utente: 1,5 t, scena unica al ponticello+tunnel, il Contabile NON esiste — v. #19) | — |
 | 4 | **Capannone di Maizuru — 35.4526/135.31553 (coordinate UTENTE definitive)**: ex cantiere demolizioni navali, sponda ovest della baia, banchina propria; ~7 km dalla 2ª sala, ~2 km dal passaggio del 3d; dispositivo su **semirimorchio** (antenna in acqua, 30′) · «copre, non spegne» | INDIZI 3 / SCONTRI §3 |
-| 4-bis | **Consegna** (dettagli di servizio da validare): oro su **camion qualsiasi della polizia**, **muletto** al trasbordo · camioncino terroristi = **Elf 350 della flotta, tendone verde legato sul cassone** · fusti fumogeni nelle nicchie del tunnel · uscita sulla 476 (~85 km → capannone) | INDIZI 2 / Avventura.md |
+| 4-bis | **Consegna** (dettagli di servizio da validare): oro su **camion qualsiasi della polizia**, **muletto** al trasbordo · camioncino terroristi = **Canter della flotta, tendone verde legato sul cassone** · fusti fumogeni nelle nicchie del tunnel · uscita sulla 476 (~85 km → capannone) | INDIZI 2 / Avventura.md |
 | 5 | Derivate della catena: **faro demolito = centrale salvata** · catena che si auto-ripara · **~10 camion** · relitto di Genkai · mappa nel camion del **capo-settore** | INDIZI 1 |
 | 6 | ~~Dilemma scram~~ → **DECADUTA** (invenzione mia, smentita dall'utente 2026-08-21): v. decisione #27 | — |
-| 7 | Dettagli camion: Isuzu Elf box · ditta «Kyōsei Setsubi» · diesel+fusti · guardie (stat) · targhe rubate/acquisto in blocco | INDIZI 1 |
+| 7 | ~~Elf/«Kyōsei Setsubi»~~ → **CANONE VISIVO (foto utente, #37)**: **Mitsubishi Canter box, livrea 港湾施設維持管理・安全第一** · diesel+fusti · guardie (stat) · targhe rubate/acquisto in blocco | INDIZI 1 |
 | 8 | ~~Insabbiamento: chi/quando~~ — **DECADUTA (utente 2026-08-21): l'insabbiamento NON ESISTE** (v. decisione #4 v2: un'ora di preavviso) | — |
 | 9 | ~~Secondo dormiente / Mihara: sì o no~~ — **DECISO SÌ (utente 2026-08-21)** → decisione #30 | `SECONDO_DORMIENTE.md` |
 | 10 | **Piano-B**: saturazione ravvicinata dell'organo (design v0.1) resta in gioco? | scheda §6.1 |

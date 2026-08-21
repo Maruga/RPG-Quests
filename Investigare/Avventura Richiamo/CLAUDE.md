@@ -89,6 +89,58 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  51 **KAGE_FAMIGLIE v2 — BOCCIATA LA v1 (utente 2026-08-21 sera: «i kage sono ridicoli, una
+  sola chiamata, semplice e lineare, è una oneshot di 3 ore, una cosa semplice e non datata»)**:
+  rifatto = 1 PAGINA, UNA telefonata a testa SENZA date: Takeshi→Yamamoto («dimmi che sei
+  lontano»), Harumi→Nakamura («promettimelo» / «l'hai detto troppo in fretta»), Michiko→Sato
+  («meno male che stai in laboratorio»; opzione-colpo «Ti ho visto» al TG). 4 righe a scena
+  (interprete/frasi/al giocatore/GM). Libro GM rigenerato con la v2 (verificato: vecchie
+  scene fuori). **LEZIONE (la STESSA delle basi militari, RIFATTA — non ripeterla più): per
+  una one-shot di 3 ore il materiale di contorno è MINIMO — una scena, poche righe, niente
+  archi/date/copioni multipli. Prima di produrre chiedersi: quanto ne userà il GM in 3 ore?**
+  ㊿ **RICHIAMO_Libro_GM.docx — IL LIBRO PER IL TABLET (richiesta utente 2026-08-21 sera:
+  «un word dell'avventura con tutto dentro con indice»)**: generato con script python
+  (scratchpad `genera_libro_gm.py`, parser md→docx: heading/tabelle/liste/citazioni/inline) —
+  16 capitoli: frontespizio con Copertina.png, indice statico + campo TOC (\\o 1-2, dirty:
+  si aggiorna al primo giro in Word desktop), guida rapida (nomi/date/righello/2 vie/PG),
+  poi COPERTINA · Avventura · SCHEMA §3-4 (linea maestra+vie) · STORIA · SCHEDA (senza §11
+  prompt/derivazioni) · INDIZI (senza prompt F) · SCONTRI (senza prompt C, Coda comune
+  tenuta) · arma-kaiju · BASI · bollettini interi · KAGE_FAMIGLIE (append paragrafi dal
+  docx) · SECONDO_DORMIENTE · App. A nastro CSV in tabella (42 marcatori, km/10 ✓ 0→959,5)
+  · App. B materiali esterni. 2,8 MB, footer numerato, kanji ok (eastAsia font). VERIFICA:
+  16 H1/64 H2/41 tabelle, stringhe-chiave presenti, prompt esclusi ✓ (un falso-manca
+  chiarito: il check senza tabelle). I .md restano la fonte: A OGNI MODIFICA FUTURA
+  RIGENERARE IL LIBRO con lo script (va rimesso in scratchpad o rifatto).
+  ㊾ **KAGE_FAMIGLIE.docx creato (richiesta utente 2026-08-21 sera: «Kage con famiglie
+  preoccupate per questa situazione, spunto da pg/Kage, documento Word»)**: letti i 5 dossier
+  `pg/Kage/*` → familiari SOLO in Yamamoto (Takeshi 8/Noriko/Yuko), Nakamura (Harumi/Kazuo),
+  Sato (Michiko/zio Jirō) — Honda (gioco) e Fujita (creditore, padre morto) esclusi con nota.
+  10 scene-telefonata in stile dossier (✂ PNG / ✂ PG / ► REGIA) sulle date canone: Y-R1 il TG
+  del martedì (= il giorno di Takeshi!), Y-R2 giovedì 13 «dimmi che sei lontano», Y-R3 Yuko
+  «venerdì Takeshi a Tokyo» (= deadline KK!); N-R1 la promessa che non può fare, N-R2 la prova
+  d'evacuazione al nido, N-R3 Kazuo che per la prima volta NON chiede (offre la macchina per
+  Harumi); S-R1 «meno male che stai in laboratorio», S-R2 il pacco di kombu (l'indirizzo che
+  non esiste), S-R3 «Ti ho visto» al TG del giorno nero (eco S-4), S-Rx lo zio pratico.
+  NIENTE meccanica Kage (canone one-shot): solo scene + eventuale tiro di pressione. Nessun
+  nome nuovo (tutti dai dossier ✓ registro ok). Generato con python-docx (script in scratchpad),
+  struttura verificata (72 §, 19 blocchi consegna, 10 regie, presenze e date ✓). pg/Kage NON
+  toccati; riga informativa nel REGISTRO_MODIFICHE.
+  ㊽ **FASE IMMAGINI (2026-08-21 sera)**: viste le 10 immagini GIÀ GENERATE dall'utente →
+  **F1-F7 tutte fatte** (Camioncino01-04, Autostrada, Particolare, Interno) + cartina capannone
+  dall'alto + interno capannone + kaiju costa (⚠ design Godzilla: ok tavolo, rifare per
+  pubblicazione). **3 DECISIONI UTENTE (AskUserQuestion) = SCHEMA #37**: ① livrea = QUELLA DELLE
+  FOTO **港湾施設維持管理・安全第一** (via 共成設備工業 e doppio fondo kyōsei; filo nuovo:
+  «nessun porto li riconosce») — testi allineati (INDIZI tabella+sezione scritta+aggancio+F1,
+  Avventura, SCHEMA); ② timestamp foto 86-10-30/31 → li RITOCCA L'UTENTE a 86-11-05/06 (Nano
+  Banana, solo datario; canone 5-6 gg resta); ③ mezzo = **Mitsubishi Canter** (via Isuzu Elf,
+  ovunque). **P11 DEPENNATO** (emettitore-su-tetto = vecchio impianto; F7 lo copre). Creato
+  **`HANDOUT_MAPPA_CAPOSETTORE.html`** (il premio del blocco 1): programma cantieri A4 su carta
+  intestata della livrea, prot. 861-047 del 4/11, 8 punti date 11-14/11 + 3 riserve 待機, note
+  di servizio coerenti col canone (mai interrompere/nessun arresto/solo cercapersone),
+  **Kashiwazaki cerchiata a matita rossa**, hanko 承認 = **龍 (proposta easter egg)** —
+  verificato a schermo, cerchio sulla riga giusta al 2° giro. MANCANO SOLO: P2 membrana,
+  P10 saturazione, P13 foto pescatori (P7 opzionale) — **prompt rifiniti e CONSEGNATI in chat**
+  (P10: tromba puntata alla testa + maschere; P13: datario «86 11 11»); li genera l'utente.
   ㊼ **TUTTE LE PROPOSTE ⚑ APPROVATE (utente 2026-08-21: «ok approvate tutte») = SCHEMA #36**:
   nave-esca · boe-microfono P-3 · cecchino in prestito · intercettazione Misawa (cercapersone)
   · contromossa Ryūgū-kai (camion allo scoperto). BASI_MILITARI → v3.1 canone (⚑ rimossi),
