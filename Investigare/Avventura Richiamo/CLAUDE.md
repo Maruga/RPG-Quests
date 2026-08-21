@@ -89,6 +89,16 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉟ **Avventura.md = LA SEQUENZA DI GIOCO (utente + completamenti, 2026-08-21)**: file scheletro
+  dell'utente completato — costa = «versante del Mar del Giappone (Nihonkai-gawa)»; oro su
+  camioncino: 1.500 kg ci stanno larghi (cubo 42 cm; 120 lingotti/10 casse ≈ 3 mld ¥), **telo
+  BIANCO** (canone nuovo, sostituisce il grigio); MESSAGGIO di riscatto corto scritto (nel file);
+  orari nuovi: richiesta G1 12:00, consegna G2 10:00, «2ª centrale risparmiata» = depistaggio
+  (Shimane cade ~13:30 = 3h30 dopo il pagamento); QG→Maizuru DOPO Shimane (STORIA agg.);
+  fine G2: squadra-lavori che non evacua (pref. Kyoto) = primo filo; **DISTRUTTI TUTTI I
+  CAMIONCINI → TORNA ALL'ACQUA (2ª via di vittoria)**; prigioniero camion → capannone;
+  disturbatore bloccato + fari vivi → riprende dal faro più vicino. INDIZI 1-2 allineati,
+  SCHEMA #29. Punto-comunicato-alle-09:00 nel messaggio = proposta.
   ㉞ **IL PERCORSO LO SA SOLO LA RYŪGŪ-KAI (canone utente 2026-08-21)**: nessuno conosce la
   rotta — lo Stato vede la POSIZIONE (bollettini/proiezioni), non dove andrà: «nessuno sa cosa
   può succedere». **I PG possono INTUIRLA da subito** (camion sulla linea, un faro per centrale)

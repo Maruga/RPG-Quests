@@ -51,7 +51,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 6. **La triangolazione** *(canone: 3-4 ore)*: sul segnale **attivo**, i furgoni radiogoniometrici del Ministero delle Poste (la caccia ai trasmettitori abusivi esiste già, nel 1986) prendono rilevamenti da due-tre posizioni. **Dalla prima captazione ad avere in mano qualcosa di utilizzabile — il punto esatto e l'intervento montato — servono 3-4 ore.** Trovarlo non è la sfida: la corsa vera è **arrivarci prima della bestia** — e vedersela con la guardia.
 
 > **Le due precisioni**: i reclami danno la **zona** (~2-3 km); la triangolazione dà **il tetto o il parcheggio** — quella che serve per il raid. I camion **non ancora attivi** sono muti: si trovano solo con telecamere, pattern e previsione (punti 1-3).
-> **La tattica che ne discende** *(interpretazione da validare)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata** e un pezzo di catena in meno; la vittoria totale però resta **lo strumento** — l'unico interruttore.
+> **La tattica** *(canone 2026-08-21)*: **demolire il faro attivo prima dello sbarco salva quella centrale** — la squadra del successivo, vedendo morire il segnale, accende il proprio (la catena si auto-ripara) e la bestia tira dritto, al largo, verso il faro dopo. **Ogni camion ucciso è una centrale salvata**; **se vengono distrutti TUTTI, il mostro torna all'acqua** — è la seconda via di vittoria, accanto al disturbatore. E **un prigioniero di un camioncino può rivelare il capannone** (come il Contabile della consegna).
 > **Il relitto di Genkai** *(proposta)*: il primo faro giace **schiacciato tra le macerie della centrale**, dentro la V — un Elf spianato con dentro una macchina che nessuno sa spiegare: il primo reperto fisico dell'avventura. E le notti di Madara erano la bestia che risaliva verso *quel* faro.
 > **Sinergia con la Morsa** (scheda §6): un faro **attivo** non si sposta senza farsi notare — guidare una sorgente di disturbo accesa è sventolare una bandiera ai rilevatori; i camion **dormienti** invece si muovono, e ogni spostamento è un'occasione.
 
@@ -101,10 +101,10 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 ## Indizio 2 — L'oro *(canone utente 2026-08-19 — la cornice è in `STORIA.md`)*
 
-### La richiesta *(canone: dopo Genkai, oro, «punto comunicato»; consegna: MATTINA DEL GIORNO 2 — decisione utente 2026-08-20; è un diversivo, i soldi non gli interessano)*
+### La richiesta *(canone 2026-08-21: G1 ore 12:00 alla sala operativa; consegna G2 ore 10:00; «la seconda centrale sarà risparmiata» = il depistaggio — testo del messaggio in `Avventura.md`)*
 
-- **Giorno 1, sera** (poche ore dopo Genkai): la richiesta firmata **Ryūgū-kai** arriva alle autorità e trapela alla stampa. Cifra e mezzo **imposti** *(proposte)*: **3 miliardi di yen in lingotti ≈ 1,5 tonnellate** (120 lingotti da 12,5 kg in 10 casse) su **un camion medio da 4 t TELONATO, modello e telo specificati** («un Hino Ranger bianco, telone grigio, targa in vista, autista solo»). Il mezzo lo impongono **perché la loro flotta è fatta di camion identici** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
-- La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. E la mattina della consegna la bestia punta Shimane: **lo Stato paga con una mano ed evacua con l'altra.**
+- **Giorno 1, ore 12:00**: la richiesta firmata **Ryūgū-kai** arriva alla sala operativa. **1.500 kg di lingotti d'oro** (120 da 12,5 kg in 10 casse, ≈ 3 miliardi ¥) su **un camioncino telonato a telo BIANCO, un solo autista**; incontro **G2 ore 10:00**, punto comunicato all'ultimo. Il mezzo lo impongono **perché la loro flotta è fatta di camioncini identici** — lo stesso trucco dei fari: chi indaga sugli acquisti in blocco lo può fiutare.
+- La fretta è parte del disegno: l'oro va radunato **in una notte** (Banca del Giappone, filiale di Osaka) — nessun tempo per montare una trappola seria. La promessa sulla «seconda centrale» regge fino alle **~13:30 del G2**, quando Shimane cade: **lo Stato ha pagato tre ore e mezza prima.**
 
 ### La consegna — il tunnel nel fumo *(scena CANONE utente 2026-08-20; i dettagli di servizio sono proposte)*
 
