@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Bollettini — Comitato Tecnico Congiunto (stampa)</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Courier New","MS Gothic",monospace; color:#1a2733; background:#e8e2d2;
+         -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; height:297mm; padding:14mm 16mm 12mm; background:#f4efe2; position:relative;
+          page-break-after:always; margin:0 auto 6mm; overflow:hidden; }
+  .page::before{ content:""; position:absolute; inset:0;
+    background-image:radial-gradient(#00000005 1px, transparent 1px); background-size:5px 5px; pointer-events:none;}
+
+  .top{ border-bottom:1mm solid #1a2733; padding-bottom:2.5mm; margin-bottom:4mm; position:relative;}
+  .org{ font-size:4.6mm; font-weight:bold; letter-spacing:1px;}
+  .org small{ font-size:2.9mm; font-weight:normal; display:block; margin-top:1mm; letter-spacing:.4px; padding-right:56mm;}
+  .num{ position:absolute; right:0; top:0; text-align:right; font-size:3.2mm; line-height:1.6;}
+
+  .hanko{ position:absolute; right:16mm; top:34mm; width:22mm; height:22mm; border:1.3mm solid #c0392b;
+    color:#c0392b; display:flex; align-items:center; justify-content:center; font-size:6.5mm; font-weight:bold;
+    writing-mode:vertical-rl; letter-spacing:2px; transform:rotate(4deg); opacity:.9; background:rgba(255,255,255,.25);}
+  .secret{ position:absolute; left:16mm; top:33mm; border:1mm solid #c0392b; color:#c0392b; font-weight:bold;
+    font-size:4.2mm; letter-spacing:3px; padding:1mm 3.5mm; transform:rotate(-4deg); background:rgba(255,255,255,.3);}
+  .prot{ position:absolute; right:44mm; top:36mm; border:0.4mm solid #1a2733; font-size:2.8mm; padding:1mm 2.5mm;
+    color:#1a2733; opacity:.85;}
+
+  h1{ font-size:6.4mm; letter-spacing:1px; margin:14mm 0 1.5mm; }
+  .pos{ font-size:3.6mm; margin-bottom:4mm; padding-bottom:2mm; border-bottom:0.35mm solid #1a2733;}
+  ul{ list-style:none; margin:0 0 4mm; }
+  li{ font-size:3.55mm; line-height:1.6; margin-bottom:2.2mm; padding-left:5mm; position:relative;}
+  li::before{ content:"◆"; position:absolute; left:0; font-size:2.8mm; top:1mm;}
+  .siti{ font-size:3.55mm; line-height:1.65; margin:0 0 4mm; padding:2.5mm 3mm; border-left:1.2mm solid #1a2733; background:#efe9d8;}
+  .bil{ border:0.6mm solid #1a2733; padding:2.5mm 3.5mm; font-size:3.8mm; font-weight:bold; margin-bottom:4mm; background:#efe9d8;}
+  .bil small{ display:block; font-weight:normal; font-size:3.1mm; margin-top:1mm;}
+  .val{ margin:0 0 4mm; padding:2.5mm 3.5mm; border:0.4mm dashed #8a5a2b; font-size:3.5mm; font-style:italic; line-height:1.6; background:#f2ecda;}
+  .val b{ font-style:normal;}
+  .val .t{ font-size:2.9mm; font-style:normal; letter-spacing:1px; display:block; margin-bottom:1mm; color:#8a5a2b; font-weight:bold;}
+  .proj{ font-size:3.7mm; font-weight:bold; border-top:0.35mm solid #1a2733; padding-top:2.5mm;}
+  .foot{ position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between;
+    font-size:2.7mm; border-top:0.3mm solid #1a2733; padding-top:1.2mm; opacity:.85;}
+  table{ width:100%; border-collapse:collapse; font-size:3.4mm; margin-bottom:4mm;}
+  th,td{ border:0.3mm solid #1a2733; padding:1.6mm 2.5mm; text-align:left;}
+  th{ background:#e6dfc8;}
+  .rosso{ color:#c0392b; font-weight:bold;}
+</style>
+</head>
+<body>
+
+<!-- ============ 1 · G1 09:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第1号<br><b>GIORNO 1 — ORE 09:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 001-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 35</h1>
+  <div class="pos">33.6513 N · 130.0317 E — mare aperto, 22 km a nord di Karatsu. Rotta NE, <b>12 km/h costanti</b>.</div>
+  <ul>
+    <li>Emersa alle 07:00 davanti a Genkai. Onda di approdo di <b>11 m</b>.</li>
+    <li>Porto di Yobuko cancellato. <b>41 pescherecci non rispondono.</b></li>
+    <li><b>Anomalia di rotta 07:29-07:59.</b> Uscita dalle acque di Genkai ha piegato a nord invece di puntare al largo, descrivendo un arco. I vertici dell'arco restano a 10-14 km dalla centrale termoelettrica di Karatsu, <b>l'unico impianto in esercizio della zona</b>. Registrata, non spiegata.</li>
+  </ul>
+  <div class="siti"><b>GENKAI</b> — Unità 1 e 2 in arresto automatico. Sale turbina distrutte, <b>prese d'acqua di mare ostruite</b>. Rete esterna persa, raffreddamento su diesel. Nessun rilascio. Carburante per sette giorni, ma la strada d'accesso non esiste più.</div>
+  <div class="bil">BILANCIO: 210 morti · 640 feriti · 380 dispersi</div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Si allontana. Non ha attaccato la centrale: le è passata attraverso.</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>1/9</span></div>
+</div>
+
+<!-- ============ 2 · G1 21:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第2号<br><b>GIORNO 1 — ORE 21:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 002-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 179</h1>
+  <div class="pos">34.4123 N · 131.3040 E — <b>a terra</b>, entroterra di Hagi, 9 km dal centro. Rotta NE.</div>
+  <ul>
+    <li><b>13:00 — Ōshima, Munakata.</b> Ha attraversato l'isola a 2,8 km dall'abitato. Settecento residenti, nessuna via di fuga, nessun preavviso: il traghetto per Kōnominato era già partito.</li>
+    <li>Il transito nell'Hibiki-nada ha investito la costa del Fukuoka per 90 km: onde di 5-7 m in una giornata serena, senza allarme.</li>
+    <li><b>20:10 — approdo sulla costa nord dello Yamaguchi</b>, tra Nagato e Hagi. Onda di ingresso di <b>14 m</b> nella baia di Senzaki.</li>
+    <li>Blackout su tutto lo Yamaguchi settentrionale.</li>
+  </ul>
+  <div class="siti"><b>GENKAI</b> — Quattordici ore su diesel. Temperatura in aumento lento su Unità 1: il circuito d'emergenza aspira dalla stessa presa ostruita. Due elicotteri persi nel tentativo di posare pompe mobili.</div>
+  <div class="bil">BILANCIO: 2.400 morti · 8.900 feriti · 2.400 dispersi <small>Evacuati: 190.000</small></div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Non rallenta entrando a terra. Dodici in acqua, dodici sulla roccia. Non è locomozione.</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>2/9</span></div>
+</div>
+
+<!-- ============ 3 · G2 09:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第3号<br><b>GIORNO 2 — ORE 09:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 003-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 323</h1>
+  <div class="pos">35.1734 N · 132.5762 E — <b>entroterra dello Shimane</b>, 27 km a sud-ovest di Izumo.</div>
+  <ul>
+    <li><b>Non è tornata in mare.</b> Da Hagi corre lungo la linea di costa, entrando e uscendo dall'entroterra, mai oltre i 10 km dalla riva.</li>
+    <li><b>Masuda 01:00. Hamada 05:00.</b> Entrambe di notte, entrambe con evacuazione parziale.</li>
+    <li>Ferrovia San'in interrotta su 180 km. La costa a est è tagliata fuori.</li>
+  </ul>
+  <div class="siti"><b>GENKAI — <span class="rosso">CRITICO</span>.</b> Diesel B fermo alle 03:40 per ingestione di detriti. Unità 1 in scopertura parziale del nocciolo. <b>Pressione in contenimento oltre il progetto. Sfiato controllato autorizzato alle 08:50, non ancora eseguito.</b></div>
+  <div class="bil">BILANCIO: 5.800 morti · 21.000 feriti · 4.100 dispersi</div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>A Genkai abbiamo ore, non giorni. E la creatura è a quattrocento chilometri da lì.</div>
+  <div class="proj">PROIEZIONE: Izumo 11:00 · Matsue 13:31 · centrale di Shimane 13:37</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>3/9</span></div>
+</div>
+
+<!-- ============ 4 · G2 21:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第4号<br><b>GIORNO 2 — ORE 21:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 004-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 467</h1>
+  <div class="pos">35.5064 N · 134.0329 E — entroterra del Tottori, 17 km a ovest del capoluogo.</div>
+  <ul>
+    <li><b>Izumo 11:00. Matsue 13:31</b>, a poco più di un chilometro dal centro. L'onda è entrata nel lago Shinji e l'ha fatto tracimare: piena per 18 km verso l'interno.</li>
+    <li><b>CENTRALE DI SHIMANE — ore 13:37.</b> Le è passata a 10 km. Era in piena produzione: <b>arresto automatico d'emergenza quando la linea esterna è caduta con tutto il resto — entrambe le unità sono sui diesel.</b></li>
+    <li><b>Sakaiminato 15:00</b>, a 5 km. Il Nakaumi si è svuotato per metà nel mare e poi è rientrato: <b>città sommersa due volte in quaranta minuti.</b></li>
+    <li>Yonago 15:42. Daisen 17:00. <b>Kurayoshi 19:25</b>, a 9 km.</li>
+  </ul>
+  <div class="siti"><b>GENKAI — <span class="rosso">ESPLOSIONE ORE 11:20</span>.</b> Esplosione di idrogeno sull'Unità 1, tetto dell'edificio reattore scoperchiato. <b>Primo rilascio maggiore, INES 5.</b> Vento da NO: la nube si muove su Saga verso l'area metropolitana di Fukuoka. Unità 2 stimata 24-36 ore indietro sullo stesso percorso.<br><b>Zona di evacuazione 30 km. Predisposta estensione a 80 km: comprende Fukuoka, 2.400.000 persone.</b></div>
+  <div class="bil">BILANCIO: 19.000 morti · 68.000 feriti · 11.000 dispersi <small>Evacuati: 780.000 · Proiezione sindrome acuta a 60 giorni: 400-900</small></div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>A Shimane i diesel reggono e il sito è integro. Se ce n'è uno che si può ancora tenere, è quello — ma serve carburante entro domani sera.</div>
+  <div class="proj">PROIEZIONE: Tottori alle 22:26. Fra novanta minuti. Evacuazione al 74%.</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>4/9</span></div>
+</div>
+
+<!-- ============ 5 · G3 09:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第5号<br><b>GIORNO 3 — ORE 09:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 005-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 611</h1>
+  <div class="pos">35.5271 N · 135.5310 E — baia di Wakasa, 2 km da Takahama.</div>
+  <ul>
+    <li>Tottori 22:26, al buio. <b>Toyooka 02:57</b>, a 3 km, popolazione nelle case.</li>
+    <li><b>DEVIAZIONE ALLE 05:00 — virata di 61 gradi verso sud-est.</b> Fuori dall'asse costiero, dentro il bacino di Fukuchiyama. Quattro virate in due ore, poi ha ripreso la linea alle 07:14. <b>I quattro vertici stanno tutti a 15,3-15,7 km dalla centrale termoelettrica di Miyazu.</b> Non è una traiettoria irregolare: è un arco di raggio costante.</li>
+    <li><b>Maizuru alle 07:48</b>, a 1,4 km. Base navale inagibile, due unità perse in bacino.</li>
+    <li><b>TAKAHAMA — ore 08:49.</b> Quattro reattori in arresto d'emergenza, rete persa, diesel in funzione. Nessun rilascio <i>per ora</i>.</li>
+  </ul>
+  <div class="siti"><b>SHIMANE</b> — ventesima ora sui diesel. <b>GENKAI</b> — Unità 2 in scopertura.</div>
+  <div class="bil">BILANCIO: 36.000 morti · 122.000 feriti · 19.000 dispersi <small>Sindrome acuta a 60 giorni: 600-1.400</small></div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Non ha cercato niente a Fukuchiyama. <b>Ha aggirato Miyazu tenendosi a quindici chilometri e mezzo.</b> Stessa firma dell'arco di Karatsu del giorno 1, stessa distanza.<br><br>Se la regola è quella, le termoelettriche in esercizio la respingono. Ma le centrali nucleari sulla sua rotta sono in esercizio anche loro — e non le ha mai evitate. <b>C'è qualcosa, in quei punti, che la attira più forte di quanto la corrente la respinga.</b></div>
+  <div class="proj">PROIEZIONE: Ohi 09:56 · Mihama 12:43 · Tsuruga 13:20 — quattro siti nucleari in quattro ore e mezza</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>5/9</span></div>
+</div>
+
+<!-- ============ 6 · G3 21:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第6号<br><b>GIORNO 3 — ORE 21:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 006-A<br>diffusione: sale operative<br><b class="rosso">+ ALLEGATO 9/9</b></div>
+  <h1>POSIZIONE: KM 755</h1>
+  <div class="pos">36.2721 N · 136.8198 E — massiccio dell'Hakusan, oltre 1.500 m di quota. <b>In salita.</b></div>
+  <ul>
+    <li>Wakasa consumata come previsto: Ohi 09:56, Mihama 12:43, Tsuruga 13:20. Alle 13:20 ha lasciato la costa e ha puntato verso le montagne: duemila metri di dislivello senza variazione di velocità.</li>
+    <li><b>Frane su un fronte di 40 km.</b> Tre valli sbarrate da laghi in formazione. Se cedono, la piena arriva su Kanazawa.</li>
+    <li><b>Alle 15:10 ha attraversato la propria nube di Mihama.</b> Il rateo di dose misurato su di lei è salito di tre ordini di grandezza e non è più sceso. <b class="rosso">Da adesso è una sorgente mobile</b> — v. allegato.</li>
+  </ul>
+  <div class="siti"><b>MIHAMA — <span class="rosso">ESPLOSIONE ORE 14:50</span>.</b> Unità 1, due ore dopo il passaggio. Rilascio maggiore.<br>
+  <b>SHIMANE — CEDIMENTO ORE 19:15.</b> Diesel esauriti dopo trenta ore. Trenta ore di margine, perse perché nessuno ci è arrivato in tempo.<br>
+  <b>TSURUGA</b> — Unità 1 senza raffreddamento dalle 13:40. Fugen in stato indeterminato, nessuna comunicazione dal sito.<br>
+  <b>GENKAI</b> — Unità 2, rilascio parziale dalle 16:30. <b>TAKAHAMA e OHI</b> — reggono, diesel in funzione.<br>
+  <b>Vento da OSO. La nube di Wakasa punta verso l'interno del Kansai. Sotto la traiettoria, a 45 km: il lago Biwa.</b></div>
+  <div class="bil">BILANCIO: 52.000 morti · 198.000 feriti · 28.000 dispersi <small>Evacuati: 2.100.000 · Sindrome acuta a 60 giorni: 2.100-4.800 · Prima proiezione tumori a 30 anni: 40.000-160.000</small></div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Il lago Biwa alimenta l'acquedotto di Kyoto, Osaka e Kobe. Quattordici milioni di persone bevono da lì. Se la deposizione arriva sul bacino, non è più un problema di evacuazione: è un problema di acqua.</div>
+  <div class="proj">PROIEZIONE: traiettoria compatibile con Kashiwazaki-Kariwa. Arrivo domani primo pomeriggio.</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>6/9</span></div>
+</div>
+
+<!-- ============ 7 · G4 09:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第7号<br><b>GIORNO 4 — ORE 09:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 007-A<br>diffusione: sale operative</div>
+  <h1>POSIZIONE: KM 899</h1>
+  <div class="pos">37.0862 N · 138.0743 E — <b>è ridiscesa sulla costa.</b> Pianura del Niigata, 16 km da Jōetsu.</div>
+  <ul>
+    <li>Attraversamento notturno delle Alpi settentrionali, quattordici ore su terreno quasi disabitato. È l'unico tratto tranquillo dell'intera sequenza.</li>
+    <li><b>07:00 — Itoigawa</b>, a 10 km. Fine della tregua: da qui alla fine è tutta pianura costiera abitata.</li>
+    <li>Due laghi di sbarramento hanno ceduto nella notte. <b>Colata detritica sulla valle del Tedori</b>, 3.400 sfollati investiti nei centri di raccolta.</li>
+  </ul>
+  <div class="siti"><b>TSURUGA — <span class="rosso">ESPLOSIONE ORE 02:10</span>.</b> Unità 1. Rilascio superiore a Mihama.<br>
+  <b>FUGEN — ORE 04:45.</b> Cedimento del circuito ad acqua pesante. Firma isotopica anomala: <b>trizio in quantità che non sappiamo interpretare.</b><br>
+  <b>TAKAHAMA</b> — Unità 3 in degrado rapido. <b>OHI</b> — diesel al quarto giorno.<br>
+  <b>Cinque rilasci attivi. Deposizione rilevata sul versante nord del bacino del lago Biwa alle 06:20.</b></div>
+  <div class="bil">BILANCIO: 61.000 morti · 232.000 feriti · 32.000 dispersi <small>Sindrome acuta a 60 giorni: 3.400-7.200 · Tumori a 30 anni: 90.000-310.000</small></div>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Arriva alle 14. Abbiamo cinque ore, e in mezzo ci stanno Jōetsu e Kashiwazaki con duecentoquindicimila persone. E qualunque piano preveda di avvicinarsi sotto i due chilometri non è un piano.</div>
+  <div class="proj">PROIEZIONE: Jōetsu 11:00 · Kashiwazaki 13:00 · Kashiwazaki-Kariwa 14:03</div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>7/9</span></div>
+</div>
+
+<!-- ============ 8 · G4 21:00 ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">BOLLETTINO TECNICO 第8号<br><b>GIORNO 4 — ORE 21:00</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 008-A<br>diffusione: sale operative</div>
+  <h1>KM 959 — ARRIVATA ALLE 14:03</h1>
+  <div class="pos"><b>Impianto distrutto. Contatto perso alle 18:40.</b></div>
+  <ul>
+    <li><b>Jōetsu 11:00</b> a 9 km, <b>Kashiwazaki 13:00</b> a 6 km. Evacuazione dalle 04:00, completa al 91%: è l'unica ragione per cui i morti della mattina non sono cinque volte tanti.</li>
+    <li><b>14:03 – 16:40 — immobile.</b> Due ore e trentasette minuti ferma a ottocento metri dagli edifici reattore, senza toccarli. Il tremore ritmico cessa: i sismografi leggono solo un battito lento e regolare a 0,3 Hz.</li>
+    <li><b>16:40 — riprende a muoversi.</b> In cinquanta minuti Kashiwazaki-Kariwa non esiste più.</li>
+    <li><b>17:30 — entra in mare.</b> <b>Onda di ingresso di 16 m</b> sulla costa di Kashiwazaki: non è l'onda di prua, è spostamento di volume in acqua bassa.</li>
+    <li><b>18:40 — ultimo contatto radiologico</b>, 14 km al largo, in immersione. La scia radioattiva in acqua la marca fin lì, poi si disperde. Radar, sonar, rateo di dose: niente.</li>
+  </ul>
+  <div class="siti"><b>KASHIWAZAKI-KARIWA — <span class="rosso">DISTRUTTA ORE 16:40</span>.</b> Reattori aperti in cinquanta minuti. Nessuna sequenza incidentale: <b>rilascio immediato e diretto, in atmosfera e in mare.</b> Il più grave dell'intera sequenza.<br>
+  <b>TAKAHAMA — ESPLOSIONE ORE 10:30.</b> Unità 3, ventisei ore dopo il passaggio.<br>
+  <b>OHI — CEDIMENTO ORE 19:40.</b> Diesel esauriti: l'ultimo sito è andato un'ora e venti dopo la sua sparizione.<br>
+  <b>CONTAMINAZIONE MARINA</b> — sette siti in rilascio, uno direttamente in acqua. Fermo pesca su tutto il Mar del Giappone; note diplomatiche da Corea del Sud e Unione Sovietica. <b>Il Mar del Giappone è un bacino semichiuso: il ricambio con il Pacifico si misura in decenni.</b></div>
+  <div class="bil">BILANCIO FINALE DIRETTO: 78.000 morti · 290.000 feriti · 39.000 dispersi <small>Evacuati: 3.900.000</small></div>
+  <table>
+    <tr><th>Proiezioni sanitarie</th><th>Stima</th><th>Intervallo</th></tr>
+    <tr><td>Sindrome acuta, 60 giorni</td><td>9.800</td><td>6.200 – 15.000</td></tr>
+    <tr><td>Decessi correlati, 1 anno</td><td>36.000</td><td>22.000 – 59.000</td></tr>
+    <tr><td>Tumori in eccesso, 30 anni</td><td>290.000</td><td>160.000 – 680.000</td></tr>
+  </table>
+  <div class="val"><span class="t">VALUTAZIONE DEL COMITATO</span>Novecentocinquantanove chilometri, ottanta ore esatte di marcia, velocità mai variata. Poi si è fermata per due ore e mezza, ha aperto l'ultimo impianto in cinquanta minuti, ed è andata via.<br><br>Otto siti su otto. Non ne ha risparmiato nessuno.<br><br><b>Non è morta, non è stata fermata, non è stata respinta. Ha finito ed è andata via.</b></div>
+  <div class="foot"><span>合同技術委員会 — bollettino delle 09:00 e delle 21:00</span><span>8/9</span></div>
+</div>
+
+<!-- ============ 9 · ALLEGATO ============ -->
+<div class="page">
+  <div class="top">
+    <div class="org">非常災害対策本部 · 合同技術委員会
+      <small>QUARTIER GENERALE CONTROMISURE D'EMERGENZA — COMITATO TECNICO CONGIUNTO</small></div>
+    <div class="num">ALLEGATO TECNICO 附属書<br><b>al bollettino 第6号 — GIORNO 3</b></div>
+  </div>
+  <div class="secret">部外秘 · RISERVATO</div><div class="hanko">対策本部</div><div class="prot">protocollo 006-B<br>diffusione: sale operative</div>
+  <h1>CONTAMINAZIONE DELLA CREATURA</h1>
+  <div class="pos">Dalle 15:10 del giorno 3 la creatura ha attraversato la propria nube senza rallentare e <b>si è contaminata</b>. Da quel momento è una <b>sorgente radiologica mobile</b>: le zone di esclusione si spostano con lei.</div>
+  <table>
+    <tr><th>Distanza</th><th>Rateo di dose</th><th>Effetto</th></tr>
+    <tr><td>200 m</td><td>45 Sv/h</td><td class="rosso">Morte in pochi minuti</td></tr>
+    <tr><td>500 m</td><td>9 Sv/h</td><td class="rosso">Dose letale in 30 minuti</td></tr>
+    <tr><td>1 km</td><td>2,2 Sv/h</td><td>Dose letale in 2 ore</td></tr>
+    <tr><td>2 km</td><td>500 mSv/h</td><td>Sindrome acuta in 2 ore</td></tr>
+    <tr><td>5 km</td><td>60 mSv/h</td><td>Limite annuale in 5 minuti</td></tr>
+    <tr><td>10 km</td><td>8 mSv/h</td><td>Tollerabile poche ore</td></tr>
+  </table>
+  <div class="val"><span class="t">PRESCRIZIONE OPERATIVA</span>Sotto i 2 chilometri qualunque operazione è a senso unico. Chi entra a 500 metri torna indietro, ma muore in tre settimane.<br><br>La contaminazione la rende <b>tracciabile a distanza col rateo di dose</b>: le squadre di rilevamento sanno sempre dov'è. Mai dove va.</div>
+  <div class="foot"><span>合同技術委員会 — allegato al bollettino del giorno 3, ore 21:00</span><span>9/9</span></div>
+</div>
+
+</body>
+</html>

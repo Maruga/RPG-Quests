@@ -95,7 +95,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 **Km 467.** `35.5064 N, 134.0329 E` — entroterra del Tottori, 17 km a ovest del capoluogo.
 
 - **Izumo 11:00. Matsue 13:31**, a poco più di un chilometro dal centro. L'onda è entrata nel lago Shinji e l'ha fatto tracimare: piena per 18 km verso l'interno.
-- **CENTRALE DI SHIMANE — ore 13:37.** Le è passata a 10 km. Arresto precauzionale già in atto dal giorno 1, ma **la linea esterna è caduta con tutto il resto: entrambe le unità sono sui diesel.**
+- **CENTRALE DI SHIMANE — ore 13:37.** Le è passata a 10 km. Era in piena produzione: **arresto automatico d'emergenza quando la linea esterna è caduta con tutto il resto — entrambe le unità sono sui diesel.**
 - **Sakaiminato 15:00**, a 5 km. Il Nakaumi si è svuotato per metà nel mare e poi è rientrato: **città sommersa due volte in quaranta minuti.**
 - Yonago 15:42. Daisen 17:00. **Kurayoshi 19:25**, a 9 km.
 
@@ -106,7 +106,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 **Bilancio: 19.000 morti · 68.000 feriti · 11.000 dispersi · evacuati 780.000**
 **Proiezione sindrome acuta a 60 giorni: 400-900**
 
-> Shimane era fredda da trentasei ore. È il sito con il calore residuo più basso di tutta la sequenza. Se ce n'è uno che si può ancora tenere, è quello — ma serve carburante entro domani sera.
+> A Shimane i diesel reggono e il sito è integro. Se ce n'è uno che si può ancora tenere, è quello — ma serve carburante entro domani sera.
 
 **PROIEZIONE: Tottori alle 22:26. Fra novanta minuti. Evacuazione al 74%.**
 
@@ -121,14 +121,14 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 - **Maizuru alle 07:48**, a 1,4 km. Base navale inagibile, due unità perse in bacino.
 - **TAKAHAMA — ore 08:49.** Quattro reattori in arresto d'emergenza, rete persa, diesel in funzione. Nessun rilascio *per ora*.
 
-**SHIMANE** — trentesima ora sui diesel. **GENKAI** — Unità 2 in scopertura.
+**SHIMANE** — ventesima ora sui diesel. **GENKAI** — Unità 2 in scopertura.
 
 **Bilancio: 36.000 morti · 122.000 feriti · 19.000 dispersi**
 **Sindrome acuta a 60 giorni: 600-1.400**
 
 > Non ha cercato niente a Fukuchiyama. **Ha aggirato Miyazu tenendosi a quindici chilometri e mezzo.** Stessa firma dell'arco di Karatsu del giorno 1, stessa distanza.
 
-> Se la regola è quella, le termoelettriche in esercizio la respingono. E allora abbiamo sbagliato tutto: **ogni reattore che abbiamo spento per precauzione ha smesso di respingerla nel momento in cui l'abbiamo spento.**
+> Se la regola è quella, le termoelettriche in esercizio la respingono. Ma le centrali nucleari sulla sua rotta sono in esercizio anche loro — e non le ha mai evitate. **C'è qualcosa, in quei punti, che la attira più forte di quanto la corrente la respinga.**
 
 **PROIEZIONE: Ohi 09:56 · Mihama 12:43 · Tsuruga 13:20. Quattro siti nucleari in quattro ore e mezza.**
 
@@ -144,7 +144,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 - **Alle 15:10 ha attraversato la propria nube di Mihama.** Il rateo di dose misurato su di lei è salito di tre ordini di grandezza e non è più sceso. **Da adesso è una sorgente mobile.**
 
 **MIHAMA — ESPLOSIONE ORE 14:50.** Unità 1, due ore dopo il passaggio. Rilascio maggiore.
-**SHIMANE — CEDIMENTO ORE 19:15.** Diesel esauriti dopo trenta ore. Il sito più salvabile della sequenza, perso perché nessuno ci è arrivato in tempo.
+**SHIMANE — CEDIMENTO ORE 19:15.** Diesel esauriti dopo trenta ore. Trenta ore di margine, perse perché nessuno ci è arrivato in tempo.
 **TSURUGA** — Unità 1 senza raffreddamento dalle 13:40. Fugen in stato indeterminato, nessuna comunicazione dal sito.
 **GENKAI** — Unità 2, rilascio parziale dalle 16:30.
 **TAKAHAMA e OHI** — reggono. Diesel in funzione.
@@ -261,7 +261,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 | Sito | Passaggio | Effetto immediato | Cedimento | Esito |
 |---|---|---|---|---|
 | **Genkai** 2 PWR | `1d 07:00` | Sale turbina distrutte, prese d'acqua ostruite, rete persa | U1 esplosione `2d 11:20` (+28h)<br>U2 rilascio `3d 16:30` (+57h) | **Entrambe perse.** INES 5, nube su Saga verso Fukuoka |
-| **Shimane** 2 BWR | `2d 13:37`<br>a 10 km | Già in arresto precauzionale, ma perde la rete come tutti | Cedimento `3d 19:15` (+29h38m) | **Entrambe perse.** Calore residuo più basso: era il più salvabile |
+| **Shimane** 2 BWR | `2d 13:37`<br>a 10 km | In piena produzione: scram automatico alla perdita della rete, poi diesel | Cedimento `3d 19:15` (+29h38m) | **Entrambe perse.** Trenta ore di margine: era tra i più salvabili |
 | **Takahama** 4 PWR | `3d 08:49` | Danni edifici ausiliari, rete persa, diesel | U3 esplosione `4d 10:30` (+26h) | **U3 persa**, le altre in bilico |
 | **Ohi** 2 PWR | `3d 09:56` | Rete persa, diesel in funzione | Cedimento `4d 19:40` (+33h44m) | **Entrambe perse.** L'ultimo a cedere, 1h20m dopo la sparizione |
 | **Mihama** 3 PWR | `3d 12:43` | Colpita in pieno | U1 esplosione `3d 14:50` (+2h07m) | **U1 persa.** Nube verso il Kansai, poi Biwa |
@@ -279,7 +279,7 @@ Sotto i 2 km qualunque piano è a senso unico. Chi entra a 500 m torna indietro,
 
 ## Note per il GM
 
-**Nessun sito si salva da solo.** La cosa vincibile non è un impianto graziato dal destino: è l'intervento dei giocatori. **Shimane è il bersaglio più facile** — fredda da trentasei ore, calore residuo minimo, cede solo alle 19:15 del giorno 3: hanno trenta ore e serve solo carburante. Takahama 1, 2 e 4 sono il secondo.
+**Nessun sito si salva da solo.** La cosa vincibile non è un impianto graziato dal destino: è l'intervento dei giocatori. **Shimane è il bersaglio più facile** — cede solo alle 19:15 del giorno 3: hanno trenta ore e serve solo carburante. Takahama 1, 2 e 4 sono il secondo.
 
 **La struttura dell'orologio.** Ogni cedimento arriva *dopo* il passaggio: 2 ore a Mihama, 13 a Tsuruga, 26 a Takahama, 28 a Genkai, 30 a Shimane, 34 a Ohi. I giocatori imparano presto che la creatura passa e il disastro arriva dopo — quindi ogni sito superato resta un fronte aperto alle loro spalle mentre inseguono quello davanti. Non possono mai chiudere niente.
 

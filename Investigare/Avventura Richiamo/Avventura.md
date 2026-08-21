@@ -54,3 +54,22 @@
 - 3d 07:48 — il passaggio rende inagibile la base di Maizuru (la Sala 2 si riorganizza) · 3d 09:00-13:20 — il giorno nero di Wakasa · **dal 3d 15:10 la bestia è una sorgente radioattiva mobile**: sotto i 2 km è un viaggio di sola andata.
 - **4d 14:03 — arrivo a Kashiwazaki-Kariwa**: la fine della corsa.
 - Chi attacca la bestia carica la molla ([arma-kaiju.md](arma-kaiju.md)). Le centrali funzionano tutte: spegnerne una = proposta dei PG + approvazione del vertice dello Stato. Mezzi e basi: [STORIA.md](STORIA.md) · [BASI_MILITARI.md](BASI_MILITARI.md).
+
+## Spegnere una centrale in emergenza — i tempi
+
+| Passo | Tempo |
+|---|---|
+| Proposta dei PG → **approvazione del vertice dello Stato** | da giocare: ore di telefonate e responsabilità |
+| Ordine → **arresto d'emergenza** (le barre fermano la reazione) | **secondi**; con la catena di comando, ~1 ora dall'ordine |
+| Reattore fermo → **raffreddamento sicuro** («spegnimento freddo») | **24-72 ore** di pompe ed elettricità continue |
+
+Il combustibile continua a produrre calore anche a reattore spento: subito il 6-7% della potenza, ~1% dopo un'ora, ~0,5% dopo un giorno. Per questo una centrale scrammata **non è ancora in sicurezza**: senza rete o diesel, il calore residuo la porta comunque al cedimento (è il meccanismo dei bollettini).
+
+**Se il mostro la distrugge comunque**, lo spegnimento anticipato riduce il disastro ma non lo azzera — le piscine del combustibile e i circuiti aperti rilasciano lo stesso:
+
+| Spenta da | Al passaggio |
+|---|---|
+| meno di 6 ore | quasi come accesa: cedimenti ed esplosioni come da [bollettini.md](bollettini.md) |
+| 6-24 ore | il GM ritarda i cedimenti di qualche ora |
+| più di 24 ore | calore basso: rilasci ridotti, ore in più per intervenire |
+| più di 3 giorni | spegnimento freddo: niente esplosioni — restano i danni fisici e i rilasci dalle piscine |

@@ -89,6 +89,18 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㊲ **BOLLETTINI sistemati + STAMPA + tempi-spegnimento (2026-08-21)**: ① corretto in
+  bollettini.md (v3 dell'altra AI, molto migliorata — 8/8, regola 15 km, marcatori verificati)
+  l'«arresto precauzionale dal g.1» di Shimane in 6 punti (era in produzione: scram automatico
+  alla perdita rete 13:37; «fredda da 36h» e «ogni reattore spento per precauzione» riscritte —
+  la citazione del 3d ora punta al mistero giusto: «c'è qualcosa che la attira più forte»);
+  ② creato **BOLLETTINI_STAMPA.html**: 9 pagine A4 (8 bollettini + allegato-contaminazione al
+  6°), stile documento ufficiale — testata 非常災害対策本部・合同技術委員会, hanko rosso 対策本部,
+  stampiglia 部外秘 RISERVATO, protocollo, «valutazione del comitato»; le COSTANTI (con la
+  tabella-fasi = spoiler percorso) NON stampate, restano GM nel .md; verificato nel browser;
+  ③ **Avventura.md in fondo: «Spegnere una centrale in emergenza — i tempi»** (scram secondi/
+  ~1h con la catena; freddo 24-72h; tabella spenta-da → effetto al passaggio: <6h come accesa,
+  >24h rilasci ridotti, >3g niente esplosioni ma piscine).
   ㊱ **Avventura.md v2 (modifiche utente 2026-08-21 pomeriggio — SOLO il documento sistemato;
   gli ALTRI FILE restano DA ALLINEARE su ordine «poi sistemiamo tutto»)**: ① l'oro lo porta lo
   STATO al punto (eli V-107 o furgone — decidono i PG) e lo portano VIA I TERRORISTI col
