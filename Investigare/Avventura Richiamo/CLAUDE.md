@@ -89,6 +89,12 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  ㉜ **LA SCRITTA DEI CAMIONCINI spiegata e messa in INDIZI 1 (2026-08-21)**: 共成設備工業
+  Kyōsei Setsubi Kōgyō = «Impianti Industriali Kyōsei» (共成 = realizzare insieme — nome
+  anonimo perfetto). DOPPIO FONDO (proposta GM): all'orecchio «kyōsei» = omofono di 共生
+  SIMBIOSI e 強制 COERCIZIONE — la firma nascosta della Ryūgū-kai (che ama i giochi di parole:
+  竜宮会, 玄海/限界); non è una prova, è il brivido. Prompt F1 aggiornato con la scritta esatta.
+  NB: SCHEMA.md modificato dall'utente su disco (aggiunto link Google My Maps in testa) — ok.
   ㉛ **CAPANNONE — COORDINATE UTENTE DEFINITIVE (2026-08-20): 35.4526 / 135.31553** (sponda ovest
   baia di Maizuru; le mie stime precedenti erano sbagliate — cadevano nell'entroterra). Distanze
   ricalcolate: **~7 km dalla Sala 2** (era «5-6»), **~2 km dal passaggio del 3d** (~07:15; era

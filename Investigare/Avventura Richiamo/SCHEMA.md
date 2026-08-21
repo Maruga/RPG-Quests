@@ -4,7 +4,10 @@
 
 **In una riga**: Giappone, novembre 1986 — la Ryūgū-kai guida il Nushi (120 m) di centrale in centrale lungo il Mar del Giappone, da Genkai a Kashiwazaki-Kariwa; i PG devono fermarlo prima che le distrugga tutte. Sistema: GENKAI (Shōtotsu v2.1 + tiri standard).
 
----
+
+Mappa Online:
+https://www.google.com/maps/d/u/0/edit?mid=1dtjjVUvikvXPsqZJCQtneh8FkHj1Q3E&usp=sharing
+
 
 ## 1. I file
 

@@ -13,7 +13,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 
 | Elemento | Dettaglio | Stato |
 |---|---|---|
-| Il mezzo | **Isuzu Elf a cassone chiuso** (box in alluminio), bianco sporco, livrea di una ditta di manutenzione **inesistente**: «Kyōsei Setsubi Kōgyō» 共成設備工業 | proposta (l'utente ha detto solo «camioncino») |
+| Il mezzo | **Isuzu Elf a cassone chiuso** (box in alluminio), bianco sporco, livrea di una ditta di manutenzione **inesistente**: **共成設備工業 «Kyōsei Setsubi Kōgyō»** — significato e doppio fondo della scritta: v. sezione sotto | proposta (l'utente ha detto solo «camioncino») |
 | Il metodo | Arrivano, piazzano **cartelli di lavori in corso** (工事中), coni, transenne — e **abbandonano il camioncino** lì. Un mezzo di cantiere parcheggiato, in Giappone, è invisibile per settimane | canone |
 | Il carico | Il trasduttore a bassa frequenza (grosso come un motore navale), un **gruppo elettrogeno diesel coi fusti** per giorni di trasmissione, batterie tampone, e la **leva d'attivazione sotto sigillo — a senso unico**. Il suono esce da **feritoie nel pianale**. (I rabbocchi di gasolio sono un movimento osservabile) | proposta (coerente col canone della sequenza) |
 | Il parcheggio | Sempre **accoppiato all'acqua o al suolo**: su tombini e canali, su ponticelli, sulle banchine dei porti — l'infrasuono si trasmette meglio. È anche un *pattern* riconoscibile | proposta |
@@ -26,6 +26,15 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 | La tempistica | Hanno cominciato a portarli **5-6 giorni prima** dell'emersione, **quasi contemporaneamente in tutti i punti** del percorso — con le date proposte: **30-31 ottobre**, da Kyūshū a Niigata | canone (date legate al 5/11) |
 | Quanti | **Una decina: un faro per bersaglio, più le riserve** (in acqua il richiamo porta per centinaia di km — non serve una catena fitta); il numero esatto lo fissa la mappa (sotto) | proposta |
 | **Il premio** | **In uno dei camioncini c'è la mappa dei punti di passaggio del mostro** | **canone** |
+
+### La scritta sulla fiancata *(proposta — significato e doppio fondo)*
+
+**共成設備工業 — Kyōsei Setsubi Kōgyō**, letteralmente **«Impianti Industriali Kyōsei»**.
+
+- **共成** *kyōsei* = 共 «insieme» + 成 «compiere, realizzare» → «realizzare insieme»: un nome aziendale **perfettamente anonimo** — in Giappone ne esistono a centinaia di simili;
+- **設備工業** *setsubi kōgyō* = «impiantistica industriale»: la copertura ideale per furgoni che posano apparecchiature nei cantieri — nessuno guarda due volte una ditta di impianti.
+- **Il doppio fondo (nota GM)**: *scritto* è innocuo, ma *all'orecchio* «kyōsei» è omofono di **共生 (simbiosi)** e di **強制 (coercizione)** — la ditta che guida la bestia col richiamo si chiama, a voce, «Simbiosi Impianti» o «Coercizione Impianti». È la firma nascosta della Ryūgū-kai, che ama i giochi di parole (竜宮会 stessa, e 玄海/限界): un interprete, un linguista o un poliziotto colto può inciamparci (tiro di Ascolto o cultura, a discrezione del GM). **Non è una prova: è il brivido** — il momento in cui il tavolo capisce che l'organizzazione firma le proprie cose, e che nulla, in questo piano, è stato scelto a caso.
+- All'albo delle imprese la ditta **non esiste** (v. punto 3 qui sotto): la telefonata alla camera di commercio resta la verifica concreta.
 
 ### Come i PG ci arrivano
 
@@ -68,7 +77,7 @@ I segnali che attirano il mostro viaggiano dentro **camioncini tutti uguali**, t
 > **Come usarli**: genera prima la **foto 1** e riusa l'immagine come *reference* nelle chat successive («stesso camioncino di questa foto») — stessa tecnica del kaijū. Per targhe e kanji leggibili meglio Nano Banana Pro. Timestamp e località si cambiano nel testo.
 
 **F1 · Il camioncino — ripresa base CCTV** *(il master: genera questo per primo)* → `Immagini/Indizio_Camion_01_porto.png`
-> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-10-30 14:22". A white 1980s Japanese light box truck (Isuzu Elf style, aluminum cargo box) with a generic maintenance company livery in Japanese characters parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
+> Security camera footage still, Japan 1986. High-angle fixed CCTV view of a harbor quay with moored fishing boats, slightly fisheye, washed-out colors, analog video scanlines, white timestamp overlay in the corner reading "86-10-30 14:22". A white 1980s Japanese light box truck (Isuzu Elf style, aluminum cargo box) with a company livery reading 共成設備工業 in dark blue Japanese characters on the box side, parked near a bollard; three workers in grey uniforms and white helmets unloading traffic cones and a yellow road-work sign reading 工事中. Boxy 1980s cars, utility poles. Grainy VHS quality, interlacing artifacts.
 
 **F2 · Strada costiera del San'in** → `Immagini/Indizio_Camion_02_sanin.png`
 > Same white 1980s Japanese box truck as the reference image, security camera still, Japan 1986: a coastal road layby above the Sea of Japan, pine trees and a guardrail, the truck parked over a roadside culvert, two workers in grey uniforms placing traffic cones, road-work sign 工事中. High-angle CCTV framing, washed-out colors, scanlines, timestamp "86-10-30 16:05", grainy VHS.
