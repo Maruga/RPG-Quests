@@ -11,6 +11,18 @@
 
 ## Da applicare
 
+- 2026-08-23 · RICHIAMO → REGOLE · **`pg/SCHEDE_PG_TUTTE.docx` modificato su richiesta utente**
+  (backup: `.bak-20260823-claude`): le schede 2-5 allineate alla scheda 1 ritoccata dall'utente
+  (tabella attributi a colonna unica senza «3 punti da distribuire», tabella KI con Satori
+  «Usato ☐» e Soroban riscritto, «GOU — in gioco ne scegli uno...», «SENMON — *suggerito»,
+  «/ solo per campagne» su Usi e Shugyō); **3 punti attributo DISTRIBUITI su tutte e 5**
+  (decisione utente «li mettiamo noi»: Yamamoto L8/D7/P6 · Honda L8/D7/A5 · Nakamura A8/P8/S5 ·
+  Sato L8/P7/D5 · Fujita S8/A7/L6 — somma 33, max 8) + **asterisco Senmon suggerita**
+  (Honda *Rilievi e fotografia · Nakamura *Interrogatorio · Sato *Medicinali e veleni ·
+  Fujita *Copertura e travestimento; Yamamoto *Stampa e media = scelta utente). Al tavolo
+  resta solo: tirare il Ki (2d6) e confermare la Senmon. Se rigenerate dal generatore,
+  riportare questi cambi nei dict. · **SOLO INFORMATIVO / da recepire nel generatore**
+
 - 2026-08-21 · RICHIAMO → REGOLE · Creato `Avventura Richiamo/KAGE_FAMIGLIE.docx`: scene-telefonata
   delle famiglie (Yamamoto/Nakamura/Sato — gli unici con familiari nei Kage) per la one-shot
   Richiamo, derivate dai dossier `pg/Kage/*` che NON sono stati toccati. Solo scene, nessuna
@@ -50,6 +62,8 @@ frase illustrativa delle velocità, riepilogo rapido (`3/2/4`).
 **Da allineare da chi ha competenza sui file:**
 - **REGOLE** — `pg/PG_01..05_*.md`: riga New Nambu M60 «vel. 3/1» → «**vel. 3/2**» (5 schede);
   `pg/genera_schede_pg.py` (stessa stringa nel dict) e DOCX/`SCHEDE_PG_TUTTE.docx` alla prossima rigenerazione.
+  → **`SCHEDE_PG_TUTTE.docx` APPLICATO 2026-08-23 (sessione RICHIAMO, su richiesta utente)**: 5 occorrenze
+  «vel. 3/1» → «vel. 3/2» nel DOCX (i .md e il generatore restano a carico di REGOLE).
 - **WIZARD** — `Wizard/proposta_scheda/scheda-pg.html` (riga New Nambu 3/1);
   `Avventura Tanto Rumore/SCONTRO_FOGLIO_TAVOLO.docx` (foglio-tavolo del combattimento: verificare le velocità pistola).
 

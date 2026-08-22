@@ -32,8 +32,10 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
 
 - Scontro: `GENKAI_Combattimento.md` **v2.1** — pistola 3/2/4 (aggiornata 2026-08-16), colpi multipli
   a tiro unico, Fuori Tempo opzionale (ricarica revolver = operazione lunga: New Nambu, 5 colpi).
-- Fuori scontro (proposta #7): tiri standard 2d6 ≤ attributo + pressioni che costano Ki;
-  **niente Gou/Kage/Enja/soroban** in questa one-shot.
+- Fuori scontro: tiri standard 2d6 ≤ attributo + pressioni che costano Ki. **I GOU SI USANO
+  NORMALMENTE** (canone dal tavolo, 2026-08-23: al gioco reale sono stati usati — interrogatori
+  e altro; la vecchia proposta «niente Gou» è MORTA, non riproporla). Kage meccanico e soroban
+  non sono entrati in gioco (le telefonate di KAGE_FAMIGLIE restano scene libere).
 - Nomi nuovi: SEMPRE prima `GENKAI_Registro_Nomi.md` (sezione *Richiamo* creata il 2026-08-19).
 
 ## Stato dei lavori (aggiornare a ogni sessione)
@@ -89,6 +91,27 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  53 **SCHEDE_PG_TUTTE.docx ALLINEATO (utente 2026-08-23 notte: «ho modificato la prima,
+  riporta sulle altre; distribuisci TU i 3 punti; asterisco = suggerita; ai giocatori restano
+  solo Ki 2d6 + conferma Senmon»)**: schede 2-5 allineate alla 1 via deepcopy XML (header
+  ATTRIBUTI nudo, tabella attributi 7x5→7x4 con larghezze della 1, tabella KI copiata — Satori
+  «Usato ☐», Soroban «per ogni tiro critico o fallimento», GOU «in gioco ne scegli uno...»,
+  SENMON «*suggerito», «/ solo per campagne» ×2); **3 punti distribuiti su TUTTE e 5** (somme
+  30→33, max 8): Yamamoto L8/D7/P6 · Honda L8/D7/A5 · Nakamura A8/P8/S5 · Sato L8/P7/D5 ·
+  Fujita S8/A7/L6; **asterischi**: Honda *Rilievi · Nakamura *Interrogatorio · Sato *Medicinali
+  e veleni · Fujita *Copertura e travestimento (Yamamoto *Stampa e media = utente); **Nambu
+  3/1→3/2 ×5** (riga del REGISTRO firmata). Backup `.bak-20260823-claude`; verifica dump ✓ 5/5.
+  Script: scratchpad `allinea_schede.py`. NB: nel DOCX ver 1.3 le basi di Yamamoto e Honda
+  sono identiche (6/4/4/7/4/5) — così nel file, non toccato.
+  52 **L'AVVENTURA È STATA GIOCATA (appreso 2026-08-23)**: l'utente ha giocato (almeno una
+  sessione). FATTO DAL TAVOLO: **i Gou si sono usati** (interrogatori e altro) → la proposta
+  «niente Gou nella one-shot» è MORTA — corretti CLAUDE (regole di sistema) e la guida rapida
+  del Libro GM (rigenerato ✓). Emerso anche: alla consegna delle schede i giocatori perdono
+  tempo su 3 punti + scelta Gou/Senmon dalle opzioni stampate → consigli dati (default
+  segnato a matita, completare giocando, diritto di cambio, timer). LEZIONE «ragioni su un
+  binario»: quando il tavolo smentisce una nota di design, VINCE IL TAVOLO — non citare le
+  proposte come legge; e prima di rispondere, chiedersi se il dato nuovo dell'utente ribalta
+  una nota vecchia. Dettagli della sessione giocata: NON noti (non inventare — chiedere).
   51 **KAGE_FAMIGLIE v2 — BOCCIATA LA v1 (utente 2026-08-21 sera: «i kage sono ridicoli, una
   sola chiamata, semplice e lineare, è una oneshot di 3 ore, una cosa semplice e non datata»)**:
   rifatto = 1 PAGINA, UNA telefonata a testa SENZA date: Takeshi→Yamamoto («dimmi che sei
