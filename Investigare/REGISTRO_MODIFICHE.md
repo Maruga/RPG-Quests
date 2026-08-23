@@ -16,8 +16,10 @@
   (tabella attributi a colonna unica senza «3 punti da distribuire», tabella KI con Satori
   «Usato ☐» e Soroban riscritto, «GOU — in gioco ne scegli uno...», «SENMON — *suggerito»,
   «/ solo per campagne» su Usi e Shugyō); **3 punti attributo DISTRIBUITI su tutte e 5**
-  (decisione utente «li mettiamo noi»: Yamamoto L8/D7/P6 · Honda L8/D7/A5 · Nakamura A8/P8/S5 ·
-  Sato L8/P7/D5 · Fujita S8/A7/L6 — somma 33, max 8) + **asterisco Senmon suggerita**
+  (decisione utente «li mettiamo noi»; v2 dopo bocciatura della prima distribuzione troppo
+  concentrata su Lucidità — ora UN solo 8 in squadra: Yamamoto Pre+2/Asc+1 → 6/4/4/7/5/7 ·
+  Honda Dis+1/Asc+1/Pre+1 → 7/4/4/7/5/6 · Nakamura Asc+1(8)/Sil+1/Luc+1 → 4/7/5/5/8/4 ·
+  Sato Dis+1/Paz+1/Sil+1 → 5/7/5/7/5/4 · Fujita Dis+2/Asc+1 → 6/4/7/5/7/4 — somma 33) + **asterisco Senmon suggerita**
   (Honda *Rilievi e fotografia · Nakamura *Interrogatorio · Sato *Medicinali e veleni ·
   Fujita *Copertura e travestimento; Yamamoto *Stampa e media = scelta utente). Al tavolo
   resta solo: tirare il Ki (2d6) e confermare la Senmon. Se rigenerate dal generatore,

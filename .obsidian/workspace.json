@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Richiamo/Avventura.md",
+                "file": "Investigare/Avventura Richiamo/SCHEDA_NUSHI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Avventura"
+              "title": "SCHEDA_NUSHI"
             }
           }
         ]
@@ -229,17 +229,19 @@
   },
   "active": "f54b7d835d8bcd45",
   "lastOpenFiles": [
+    "Investigare/Avventura Richiamo/Avventura.md",
+    "Investigare/Avventura Richiamo/Immagini/Scheda Kaiju.png",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 23 ago 2026, 13_06_41.png",
+    "Investigare/pg/~$HEDE_PG_TUTTE.docx",
+    "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.1d5a3cef2a4d",
     "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.6263ceb14b7c",
     "Investigare/pg/SCHEDE_PG_TUTTE.docx.bak-20260823-claude",
     "Investigare/pg/~WRL0001.tmp",
     "Investigare/pg/~WRD0000.tmp",
-    "Investigare/pg/~$HEDE_PG_TUTTE.docx",
     "Investigare/pg/~WRL1354.tmp",
     "Investigare/pg/~WRD1307.tmp",
     "Investigare/pg/~WRL2624.tmp",
     "Investigare/pg/~WRD2565.tmp",
-    "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.aee6bde4990b",
-    "Investigare/Avventura Richiamo/~WRL3133.tmp",
     "Investigare/Avventura Richiamo/STORIA.md",
     "Investigare/Avventura Richiamo/SECONDO_DORMIENTE.md",
     "Investigare/Avventura Richiamo/SCONTRI.md",
@@ -252,7 +254,6 @@
     "Investigare/Avventura Richiamo/CLAUDE.md",
     "Investigare/Avventura Richiamo/bollettini.md",
     "Investigare/Avventura Richiamo/BASI_MILITARI.md",
-    "Investigare/Avventura Richiamo/Avventura.md",
     "Investigare/Avventura Richiamo/arma-kaiju.md",
     "Investigare/Avventura Richiamo/SCHEDA_UMINARI.md",
     "Investigare/Avventura Richiamo/Immagini/Capannon Interno.png",
@@ -263,8 +264,6 @@
     "Investigare/Avventura Richiamo/Immagini/Camioncino Interno.png",
     "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_45_01.png",
     "Investigare/Avventura Richiamo/Immagini/Kaiju Costa.png",
-    "Investigare/Avventura Richiamo/Immagini/Copertina.png",
-    "Investigare/Avventura Richiamo/Immagini/Foto Aerea Davanti.png",
     "Investigare/Avventura Richiamo/telegiornale-uminari.md",
     "Investigare/Avventura Richiamo/PRESENTAZIONE_WhatsApp.md",
     "Investigare/Avventura Tra Galli/Storia Completa.md",

@@ -97,8 +97,11 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   ATTRIBUTI nudo, tabella attributi 7x5→7x4 con larghezze della 1, tabella KI copiata — Satori
   «Usato ☐», Soroban «per ogni tiro critico o fallimento», GOU «in gioco ne scegli uno...»,
   SENMON «*suggerito», «/ solo per campagne» ×2); **3 punti distribuiti su TUTTE e 5** (somme
-  30→33, max 8): Yamamoto L8/D7/P6 · Honda L8/D7/A5 · Nakamura A8/P8/S5 · Sato L8/P7/D5 ·
-  Fujita S8/A7/L6; **asterischi**: Honda *Rilievi · Nakamura *Interrogatorio · Sato *Medicinali
+  30→33, max 8) — **v2 (2026-08-23: la v1 bocciata, «quasi tutti su Lucidità»)**: ora UN solo
+  8 in squadra (Nakamura Ascolto = «il migliore negli interrogatori») e punti che
+  caratterizzano, non che gonfiano il picco: Yamamoto **Pre 7**, Asc 5 (6/4/4/7/5/7) · Honda
+  **Dis 7**, Asc 5, Pre 6 (7/4/4/7/5/6) · Nakamura **Asc 8**, Sil 5, Luc 5 (4/7/5/5/8/4) ·
+  Sato Dis 5, **Paz 7**, Sil 5 (5/7/5/7/5/4) · Fujita **Dis 6**, Asc 7 (6/4/7/5/7/4); **asterischi**: Honda *Rilievi · Nakamura *Interrogatorio · Sato *Medicinali
   e veleni · Fujita *Copertura e travestimento (Yamamoto *Stampa e media = utente); **Nambu
   3/1→3/2 ×5** (riga del REGISTRO firmata). Backup `.bak-20260823-claude`; verifica dump ✓ 5/5.
   Script: scratchpad `allinea_schede.py`. NB: nel DOCX ver 1.3 le basi di Yamamoto e Honda
