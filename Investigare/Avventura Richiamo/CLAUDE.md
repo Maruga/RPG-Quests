@@ -91,6 +91,20 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  54 **HANDOUT_CAMIONCINO + 2 CANONI NUOVI (utente 2026-08-23 pomeriggio)**: ① **DUE camioncini
+  per centrale** (faro + mezzo di supporto = 16 sulla rotta; interpretazione da validare: per
+  salvare una centrale vanno zittiti ENTRAMBI — l'esplosivo ha senso proprio per questo: la
+  ridondanza copre l'autodistruzione); ② **ogni camioncino imbottito d'esplosivo**: scoperti
+  e alle strette → demolizione, **1 minuto di timer**, fuga in direzioni separate (cancella le
+  prove); danno scoppio 4/~10m, 2/~25m (proposta). Creato **`HANDOUT_CAMIONCINO.html`** (A4,
+  verificato a schermo, timbro spostato 2 volte per collisioni): rapporto 科学警察研究所 —
+  meccanismo sommario (trasduttore 8-15 Hz, feritoie, diesel, leva senza arresto, cercapersone,
+  banda = il canto) + LA CARICA + valutazione «trasmette un richiamo»; ALLEGATO = lettera
+  wāpuro di bordo: «Punto ７» (aggancia il programma cantieri!), «due unità per posizione»,
+  demolizione in un minuto, «bruciate questo foglio»; data/protocolli da compilare a penna.
+  Recepito in INDIZI 1 (righe La carica + Quanti + tattica «faro E supporto»), SCONTRI §1
+  (mossa 4 La demolizione + esiti), Avventura (caccia), SCHEMA #38 + tabella file; **Libro GM
+  rigenerato** (verifica ✓ con tabelle).
   53 **SCHEDE_PG_TUTTE.docx ALLINEATO (utente 2026-08-23 notte: «ho modificato la prima,
   riporta sulle altre; distribuisci TU i 3 punti; asterisco = suggerita; ai giocatori restano
   solo Ki 2d6 + conferma Senmon»)**: schede 2-5 allineate alla 1 via deepcopy XML (header
@@ -103,7 +117,9 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   **Dis 7**, Asc 5, Pre 6 (7/4/4/7/5/6) · Nakamura **Asc 8**, Sil 5, Luc 5 (4/7/5/5/8/4) ·
   Sato Dis 5, **Paz 7**, Sil 5 (5/7/5/7/5/4) · Fujita **Dis 6**, Asc 7 (6/4/7/5/7/4); **asterischi**: Honda *Rilievi · Nakamura *Interrogatorio · Sato *Medicinali
   e veleni · Fujita *Copertura e travestimento (Yamamoto *Stampa e media = utente); **Nambu
-  3/1→3/2 ×5** (riga del REGISTRO firmata). Backup `.bak-20260823-claude`; verifica dump ✓ 5/5.
+  3/1→3/2 ×5** (riga del REGISTRO firmata); header colonna vuota attributi = **«Attuale»**
+  (nome scelto dall'utente, applicato ×5 il 23/08 pomeriggio, backup `.bak-20260823b`).
+  Backup principale `.bak-20260823-claude`; verifica dump ✓ 5/5.
   Script: scratchpad `allinea_schede.py`. NB: nel DOCX ver 1.3 le basi di Yamamoto e Honda
   sono identiche (6/4/4/7/4/5) — così nel file, non toccato.
   52 **L'AVVENTURA È STATA GIOCATA (appreso 2026-08-23)**: l'utente ha giocato (almeno una

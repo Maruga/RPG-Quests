@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Handout — L'esame del camioncino</title>
+<style>
+  /* Handout giocatori: rapporto d'esame del camioncino catturato + lettera a bordo.
+     Stampa: A4 verticale, margini 0, grafica di sfondo ON. */
+  @page { size: A4 portrait; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #4a4a4a; display: flex; justify-content: center;
+         font-family: "MS PMincho", "Yu Mincho", serif; }
+  .sheet {
+    position: relative; width: 210mm; height: 296mm;
+    background:
+      radial-gradient(ellipse 60mm 35mm at 88% 8%, rgba(150,110,50,.09), transparent 70%),
+      radial-gradient(ellipse 45mm 55mm at 6% 85%, rgba(140,100,40,.10), transparent 70%),
+      linear-gradient(165deg, #f3ecdb 0%, #eee4cd 50%, #e8dcbf 100%);
+    color: #2b2620; overflow: hidden;
+  }
+  .inner { padding: 12mm 15mm 10mm; height: 100%; }
+
+  /* testata istituto */
+  .head { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 1.1mm double #3a332a; padding-bottom: 2.5mm; }
+  .org { font-size: 6.2mm; font-weight: bold; letter-spacing: 1mm; }
+  .org small { display: block; font-size: 3.4mm; font-weight: normal; letter-spacing: .4mm; color: #4a4136; margin-top: 1mm; }
+  .meta { text-align: right; font-family: "MS Gothic", monospace; font-size: 3.2mm; line-height: 1.7; }
+
+  .title { text-align: center; margin: 5mm 0 1.5mm; font-size: 5.6mm; font-weight: bold; letter-spacing: 1.6mm; }
+  .subtitle { text-align: center; font-family: "MS Gothic", monospace; font-size: 3.3mm; color: #453d32; margin-bottom: 4mm; }
+
+  .secret { position: absolute; bottom: 26mm; right: 15mm; border: .8mm solid #b0342a; color: #b0342a;
+            padding: 1.2mm 3mm; font-weight: bold; font-size: 3.6mm; letter-spacing: .9mm;
+            transform: rotate(-4deg); opacity: .85; }
+
+  h2 { font-size: 4.2mm; letter-spacing: .8mm; border-left: 2mm solid #3a332a;
+       padding-left: 2.5mm; margin: 5mm 0 2mm; }
+  ul { margin-left: 7mm; }
+  li { font-size: 3.7mm; line-height: 1.5; margin-bottom: 1.6mm; }
+  li b { }
+  .valut { margin: 3mm 0 0; padding: 2.5mm 3mm; background: rgba(90,75,50,.10);
+           border: .4mm solid #4a4136; font-size: 3.7mm; line-height: 1.55; }
+
+  /* la lettera (battuta a macchina, carta diversa) */
+  .lettera { margin-top: 5mm; background: linear-gradient(170deg, #faf6ea, #f2ecd9);
+             border: .4mm solid #6a5f4e; box-shadow: 1.5mm 1.5mm 3mm rgba(60,45,20,.25);
+             padding: 6mm 8mm; transform: rotate(-.5deg); position: relative; }
+  .lettera .tag { position: absolute; top: -3.5mm; left: 6mm; background: #e8e2cf;
+                  border: .35mm solid #4a4136; font-family: "MS Gothic", monospace;
+                  font-size: 2.9mm; padding: .8mm 2.5mm; transform: rotate(.5deg); }
+  .lettera p { font-family: "Courier New", "MS Gothic", monospace; font-size: 3.8mm;
+               line-height: 1.85; letter-spacing: .2mm; }
+  .lettera p + p { margin-top: 2.5mm; }
+
+  .foot { position: absolute; bottom: 9mm; left: 15mm; right: 15mm; display: flex;
+          justify-content: space-between; align-items: flex-end;
+          font-family: "MS Gothic", monospace; font-size: 3mm; color: #4a4136; }
+  .hanko { width: 11mm; height: 11mm; border: .55mm solid #b0342a; border-radius: 50%;
+           color: #b0342a; display: flex; align-items: center; justify-content: center;
+           font-size: 3.4mm; font-weight: bold; transform: rotate(-7deg); opacity: .85; }
+  @media print { body { background: #fff; } -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="secret">部外秘 — RISERVATO</div>
+  <div class="inner">
+    <div class="head">
+      <div class="org">科学警察研究所
+        <small>ISTITUTO DI SCIENZE DI POLIZIA — SEZIONE DISTACCATA PRESSO IL COMANDO EMERGENZA</small>
+      </div>
+      <div class="meta">
+        Prot. 鑑 ８６１−____<br>
+        Data: ____ /11/1986<br>
+        Reperto: 押収物件 n. ____
+      </div>
+    </div>
+
+    <div class="title">RAPPORTO TECNICO D'ESAME</div>
+    <div class="subtitle">Autocarro Mitsubishi Canter, cassone chiuso — livrea «港湾施設維持管理» — targa risultata rubata</div>
+
+    <h2>L'APPARATO NEL CASSONE</h2>
+    <ul>
+      <li><b>Trasduttore acustico industriale</b> (tromba d'acciaio, ~2 m) fissato al pianale. Emette suono <b>sotto la soglia dell'udito</b> (banda 8–15 Hz) a potenza enorme: non si sente — <b>si propaga per chilometri nel terreno e nell'acqua</b> attraverso feritoie aperte nel pianale.</li>
+      <li><b>Generatore diesel</b> con fusti di gasolio e batterie tampone: autonomia stimata in <b>giorni</b> di trasmissione continua.</li>
+      <li><b>Leva d'avvio a senso unico</b>, sotto sigillo di piombo: <b>nessun circuito di arresto</b>. Una volta attivato, l'apparato non può essere spento — solo demolito.</li>
+      <li><b>Ricevitore cercapersone</b> commerciale cablato al quadro: il mezzo <b>riceve ordini a distanza</b>.</li>
+      <li><b>La banda di emissione coincide</b> con le emissioni acustiche della creatura registrate in mare dalle unità della Marina.</li>
+    </ul>
+
+    <h2>LA CARICA</h2>
+    <ul>
+      <li>L'intercapedine del pianale è <b>imbottita di esplosivo</b> con innesco elettrico a comando: la demolizione distrugge l'intero vano di carico e ogni prova.</li>
+      <li>Congegno a <b>ritardo fisso: un minuto circa</b> dall'attivazione. Ogni avvicinamento a un mezzo presidiato va considerato ad altissimo rischio.</li>
+    </ul>
+
+    <div class="valut"><b>VALUTAZIONE:</b> il mezzo non trasporta — <b>trasmette</b>. L'apparato è costruito per chiamare, non per comunicare: un <b>richiamo</b>, puntato su ciò che lo sente. Chi lo ha costruito ha previsto di non farlo mai trovare intatto.</div>
+
+    <div class="lettera">
+      <div class="tag">ALLEGATO 1 — foglio rinvenuto nella cabina (wāpuro, senza mittente)</div>
+      <p>Punto ７. Trasferimento entro domani sera. Percorso consueto, andatura normale, soste minime.</p>
+      <p>Il mezzo di supporto vi raggiunge sul posto. Da quel momento: due unità per posizione, come da programma.</p>
+      <p>In caso di controllo: documenti, cortesia, nessun contatto.</p>
+      <p>In caso di scoperta: procedura di demolizione. Un minuto. Allontanatevi in direzioni separate.</p>
+      <p>Bruciate questo foglio.</p>
+    </div>
+
+    <div class="foot">
+      <div>複写厳禁 — Vietata la riproduzione · da consegnare al solo personale autorizzato</div>
+      <div class="hanko">鑑</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

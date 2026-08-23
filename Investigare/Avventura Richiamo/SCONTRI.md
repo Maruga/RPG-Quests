@@ -35,10 +35,11 @@
 1. Controllo di routine → **niente scontro**: documenti, cortesia, «finiamo e togliamo il disturbo».
 2. Perquisizione, riconoscimento o assalto → la vedetta chiama, gli operai «raccolgono gli attrezzi» (= armi), il caposquadra al volante: **fuoco di copertura, il camion parte** (avviare = azione vel. 2), sganciamento a piedi di chi resta. Non inseguono, non finiscono i feriti: **cercano il tempo, non il morto**.
 3. **Se il faro è ATTIVO**: niente fuga col mezzo (accoppiato al suolo e condannato) — difendono 2-3 scambi, poi sganciano. Nelle **ultime ore** prima della bestia il presidio è già sgomberato: si trova il camion vuoto, ma con le fasce di prossimità addosso (scheda §8).
+4. **La demolizione** *(canone utente 2026-08-23)*: **se scoperti e alle strette** — il camion non si può portare via, i PG stanno vincendo — il caposquadra **attiva la carica**: **un minuto di timer**, e la squadra scappa in direzioni separate. Il vano salta con ogni prova dentro. Vale anche sul faro attivo: le prove contano più del faro — **il mezzo di supporto della tappa accenderà il suo** *(interpretazione)*. Allo scoppio: danno 4 entro ~10 m, danno 2 fino a ~25 m *(proposta)*. **Un minuto è un minuto**: mettilo sul tavolo e falli scegliere — inseguire gli uomini, o strappare qualcosa dal camion.
 
 **Variante capo-settore** *(la versione-premio, a scelta del GM)*: +1 uomo — **il capo-settore** (attr. 7, Riserva 9, pistola, Senmon Pistola 2 → −2, **giubbotto**): comanda lui, e **nel suo camion c'è LA MAPPA dei punti di passaggio**.
 
-**Esiti**: prigioniero tipo → il rito della leva e del sigillo, «non si spegne», i codici cercapersone, la posizione successiva del proprio faro, la faccia del capo-settore. **Dei capi: niente** (regola del buio). Camion dormiente preso intero → la tecnologia in mano ai PG.
+**Esiti**: prigioniero tipo → il rito della leva e del sigillo, «non si spegne», i codici cercapersone, la posizione successiva del proprio faro, la faccia del capo-settore. **Dei capi: niente** (regola del buio). Camion preso intero = squadra sorpresa **prima dell'innesco**: la tecnologia in mano ai PG — e la carica da far disinnescare (artificieri, qualche ora). L'esame del mezzo = handout pronto: **`HANDOUT_CAMIONCINO.html`** (rapporto tecnico + la lettera del trasferimento).
 
 ---
 

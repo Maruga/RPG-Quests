@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Richiamo/SCHEDA_NUSHI.md",
+                "file": "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SCHEDA_NUSHI"
+              "title": "INDICE GENERALE"
             }
           }
         ]
@@ -227,26 +227,29 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "f54b7d835d8bcd45",
+  "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
+    "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
+    "Investigare/Avventura La Falsa Primavera/GM_Apertura.md",
+    "Investigare/Avventura Richiamo/SCHEDA_NUSHI.md",
+    "Investigare/Avventura Richiamo/HandOut",
+    "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.a1dc091bcacf",
+    "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.75a2157a1ebf",
+    "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.389558fb56ea",
+    "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.f88b06508c49",
+    "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.f67890bb5d7d",
+    "Investigare/Avventura Richiamo/SCONTRI.md.tmp.23836.50530bd4f574",
+    "Investigare/Avventura Richiamo/SCONTRI.md.tmp.23836.a01f72a28e7f",
+    "Investigare/Avventura Richiamo/HANDOUT_CAMIONCINO.html.tmp.23836.47dd8f8f8dee",
+    "Investigare/Avventura Richiamo/HANDOUT_CAMIONCINO.html",
     "Investigare/Avventura Richiamo/Avventura.md",
     "Investigare/Avventura Richiamo/Immagini/Scheda Kaiju.png",
     "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 23 ago 2026, 13_06_41.png",
-    "Investigare/pg/~$HEDE_PG_TUTTE.docx",
-    "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.1d5a3cef2a4d",
-    "Investigare/Avventura Richiamo/CLAUDE.md.tmp.23836.6263ceb14b7c",
-    "Investigare/pg/SCHEDE_PG_TUTTE.docx.bak-20260823-claude",
-    "Investigare/pg/~WRL0001.tmp",
-    "Investigare/pg/~WRD0000.tmp",
-    "Investigare/pg/~WRL1354.tmp",
-    "Investigare/pg/~WRD1307.tmp",
-    "Investigare/pg/~WRL2624.tmp",
-    "Investigare/pg/~WRD2565.tmp",
     "Investigare/Avventura Richiamo/STORIA.md",
     "Investigare/Avventura Richiamo/SECONDO_DORMIENTE.md",
     "Investigare/Avventura Richiamo/SCONTRI.md",
     "Investigare/Avventura Richiamo/SCHEMA.md",
-    "Investigare/Avventura Richiamo/SCHEDA_NUSHI.md",
     "Investigare/Avventura Richiamo/RICHIAMO_Sviluppo.md",
     "Investigare/Avventura Richiamo/kaiju-design.md",
     "Investigare/Avventura Richiamo/INDIZI.md",
@@ -263,7 +266,6 @@
     "Investigare/Avventura Richiamo/Immagini/Camioncino Particolare.png",
     "Investigare/Avventura Richiamo/Immagini/Camioncino Interno.png",
     "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_45_01.png",
-    "Investigare/Avventura Richiamo/Immagini/Kaiju Costa.png",
     "Investigare/Avventura Richiamo/telegiornale-uminari.md",
     "Investigare/Avventura Richiamo/PRESENTAZIONE_WhatsApp.md",
     "Investigare/Avventura Tra Galli/Storia Completa.md",
@@ -272,7 +274,6 @@
     "Investigare/Avventura Tra Galli/PNG/# Tachibana Eiji — Vittima.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Okubo_Kamigyo.md",
-    "Investigare/Avventura Il Giudice/CLAUDE.md",
-    "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md"
+    "Investigare/Avventura Il Giudice/CLAUDE.md"
   ]
 }

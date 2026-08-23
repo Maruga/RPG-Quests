@@ -21,7 +21,9 @@
   Honda Dis+1/Asc+1/Pre+1 → 7/4/4/7/5/6 · Nakamura Asc+1(8)/Sil+1/Luc+1 → 4/7/5/5/8/4 ·
   Sato Dis+1/Paz+1/Sil+1 → 5/7/5/7/5/4 · Fujita Dis+2/Asc+1 → 6/4/7/5/7/4 — somma 33) + **asterisco Senmon suggerita**
   (Honda *Rilievi e fotografia · Nakamura *Interrogatorio · Sato *Medicinali e veleni ·
-  Fujita *Copertura e travestimento; Yamamoto *Stampa e media = scelta utente). Al tavolo
+  Fujita *Copertura e travestimento; Yamamoto *Stampa e media = scelta utente). La colonna vuota
+  degli attributi (dove i giocatori segnano i cambi da Kiwami/Nami) si chiama **«Attuale»**
+  (decisione utente 2026-08-23, applicata sulle 5 tabelle). Al tavolo
   resta solo: tirare il Ki (2d6) e confermare la Senmon. Se rigenerate dal generatore,
   riportare questi cambi nei dict. · **SOLO INFORMATIVO / da recepire nel generatore**
 

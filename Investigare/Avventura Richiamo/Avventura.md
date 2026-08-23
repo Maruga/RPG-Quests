@@ -40,7 +40,8 @@
 ## La caccia ai camioncini *(dal G2 in poi — [INDIZI.md](INDIZI.md) blocco 1)*
 
 - Ricerca su **telecamere e N-System** (+ mappa dei reclami radio + triangolazione, 3-4 ore): si scoprono gli avamposti, tutti **sulla linea**.
-- **Un camioncino demolito** = il Kaiju passa al punto successivo (dipende sempre dal percorso).
+- **Due camioncini per centrale** *(canone 2026-08-23)*: il faro + il mezzo di supporto. **Zittiti entrambi** = centrale salvata, il Kaiju passa al punto successivo (dipende sempre dal percorso).
+- **Ogni camioncino è imbottito d'esplosivo**: se scoperti e alle strette, i mercenari **attivano la demolizione — un minuto — e scappano** (cancella le prove). Esame di un mezzo preso intero: handout [HANDOUT_CAMIONCINO.html](HANDOUT_CAMIONCINO.html).
 - **Ai primi camioncini distrutti, tutte le squadre vengono avvertite** e si nascondono meglio.
 - **La squadra di Kashiwazaki-Kariwa** nasconde il camioncino **sotto un ponte a Zenshoji**; nello spostarsi per riallineare il mostro sulla centrale viene **fotografata al passaggio di un casello** — è la traccia per trovare l'ultimo camioncino.
 - **Se vengono distrutti tutti, il mostro torna all'acqua.**
