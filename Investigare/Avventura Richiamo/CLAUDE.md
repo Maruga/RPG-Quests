@@ -91,6 +91,13 @@ Se sviluppo e design divergono, **vince il design** (finché l'utente non decide
   bestia dal 3d 15:10** (sorgente mobile, <2 km = sola andata → fasce §8 limitate ai gg 1-3,
   piano-B saturazione morto), tamburo M4,2-4,8/200 km, bollettino giocatori 2×/g. Proposta nuova:
   la deviazione di Fukuchiyama = COLLAUDO del dispositivo al capannone (indizio verso Maizuru).
+  55 **⏸ PAUSA (utente 2026-08-23 sera: «salva tutto per riprenderla più avanti quando la
+  rigiochiamo»)**: stato consolidato — banner IN PAUSA in testa a SCHEMA (con la lista-ripresa:
+  interpretazione supporto #38 da validare · P2/P10/P13 da generare · timestamp foto da
+  ritoccare · proposte hanko 龍 e danno-esplosione · feedback prima giocata da raccogliere);
+  memoria vault e MEMORY.md aggiornati. ALLA RIPRESA: leggere questo CLAUDE (punti ㊶→55) +
+  SCHEMA (decisioni #30-38 e banner) — e se si toccano i .md, RIGENERARE il Libro GM: lo script
+  è SALVATO in cartella (`genera_libro_gm.py`, eseguire con python — richiede python-docx).
   54 **HANDOUT_CAMIONCINO + 2 CANONI NUOVI (utente 2026-08-23 pomeriggio)**: ① **DUE camioncini
   per centrale** (faro + mezzo di supporto = 16 sulla rotta; interpretazione da validare: per
   salvare una centrale vanno zittiti ENTRAMBI — l'esplosivo ha senso proprio per questo: la

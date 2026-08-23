@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
+                "file": "Investigare/GENKAI_Registro_Nomi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INDICE GENERALE"
+              "title": "GENKAI_Registro_Nomi"
             }
           }
         ]
@@ -227,8 +227,21 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "f54b7d835d8bcd45",
   "lastOpenFiles": [
+    "Investigare/Avventura Tra Galli/Storia Completa.md",
+    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 23 ago 2026, 23_40_08.png",
+    "Investigare/Avventura Richiamo/genera_libro_gm.py",
+    "Investigare/Avventura Richiamo/Immagini/CapannoneAssalto.png",
+    "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.00c048c1f036",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Hayashi_Kameoka.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Capannone_Kameoka.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Villa_Saito_Kameoka.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Studio_Veterinario_Murakami.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Stazione_Polizia_Kameoka.md",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Royal_Hotel_Karasuma.md",
+    "Investigare/Avventura Il Giudice/INDICE GENERALE.md",
     "Investigare/Avventura Tra Galli/Immagini/TelecameraAssassinio.png",
     "Investigare/Avventura Tra Galli/HandOut",
     "Investigare/Avventura Tra Galli/Nuova cartella",
@@ -242,8 +255,6 @@
     "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.a1dc091bcacf",
     "Investigare/Avventura Richiamo/SCHEMA.md.tmp.23836.75a2157a1ebf",
     "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.389558fb56ea",
-    "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.f88b06508c49",
-    "Investigare/Avventura Richiamo/INDIZI.md.tmp.23836.f67890bb5d7d",
     "Investigare/Avventura Richiamo/Avventura.md",
     "Investigare/Avventura Richiamo/Immagini/Scheda Kaiju.png",
     "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 23 ago 2026, 13_06_41.png",
@@ -263,17 +274,6 @@
     "Investigare/Avventura Richiamo/Immagini/Capannon Interno.png",
     "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 21 ago 2026, 15_51_05.png",
     "Investigare/Avventura Richiamo/Immagini/Camioncino01.png",
-    "Investigare/Avventura Richiamo/Immagini/CamioncinoAutostrada.png",
-    "Investigare/Avventura Richiamo/Immagini/Camioncino Particolare.png",
-    "Investigare/Avventura Richiamo/Immagini/Camioncino Interno.png",
-    "Investigare/Avventura Richiamo/Immagini/ChatGPT Image 20 ago 2026, 18_45_01.png",
-    "Investigare/Avventura Richiamo/telegiornale-uminari.md",
-    "Investigare/Avventura Richiamo/PRESENTAZIONE_WhatsApp.md",
-    "Investigare/Avventura Tra Galli/Storia Completa.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Clienti_Scommettitori.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Aoyagi_Mariko_Amante.md",
-    "Investigare/Avventura Tra Galli/PNG/# Tachibana Eiji — Vittima.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Okubo_Kamigyo.md"
+    "Investigare/Avventura Richiamo/Immagini/CamioncinoAutostrada.png"
   ]
 }

@@ -2,7 +2,17 @@
 
 **v1.0 · 2026-08-20 · l'indice dell'avventura.** Una riga per cosa, il dettaglio sta nel file indicato. Ordine: cos'è → i file → le decisioni chiuse → la linea maestra → le tre vie → le proposte aperte → da fare.
 
-**In una riga**: Giappone, novembre 1986 — la Ryūgū-kai guida il Nushi (120 m) di centrale in centrale lungo il Mar del Giappone, da Genkai a Kashiwazaki-Kariwa; i PG devono fermarlo prima che le distrugga tutte. Sistema: GENKAI (Shōtotsu v2.1 + tiri standard).
+**In una riga**: Giappone, novembre 1986 — la Ryūgū-kai guida il Nushi (120 m) di centrale in centrale lungo il Mar del Giappone, da Genkai a Kashiwazaki-Kariwa; i PG devono fermarlo prima che le distrugga tutte. Sistema: GENKAI (Shōtotsu v2.1 + tiri standard; **i Gou si usano**).
+
+> ⏸ **STATO 2026-08-23 — IN PAUSA, pronta per la RIPRESA** (l'avventura è stata giocata una prima
+> volta; si riprende «quando la rigiochiamo»). **Tutto il materiale è pronto**: `RICHIAMO_Libro_GM.docx`
+> (tablet, rigenerabile dai .md), handout stampati + `HANDOUT_CAMIONCINO.html`, `pg/SCHEDE_PG_TUTTE.docx`
+> (punti distribuiti, colonna «Attuale», Senmon *suggerite — al tavolo restano Ki 2d6 + conferma).
+> **Alla ripresa restano**: ① validare l'interpretazione del mezzo di supporto (#38: per salvare una
+> centrale vanno zittiti entrambi?); ② generare P2/P10/P13 (prompt pronti in scheda §11); ③ ritocco
+> timestamp foto F1-F5 → 86-11-05/06 (utente, Nano Banana); ④ hanko 龍 sul programma cantieri (proposta);
+> ⑤ danno esplosione camioncino 4/10m-2/25m (proposta); ⑥ raccogliere il feedback della prima giocata
+> (cosa ha funzionato/zoppicato) e tararci i materiali. Se si toccano i .md: **rigenerare il Libro GM**.
 
 
 Mappa Online:
