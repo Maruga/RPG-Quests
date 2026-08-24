@@ -38,6 +38,6 @@ Casa tradizionale con tetto in tegole, ingresso *genkan* curato, tatami in tutto
 - Possibile gancio: Setsuko consegna ai PG **una chiave** di un vecchio armadio dell'appartamento di Fushimi che Tachibana usava ancora ma di cui lei aveva un duplicato — apre a contenuti dimenticati
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Tachibana Setsuko — Moglie]]
-- [[Appartamento di Tachibana Eiji — Fushimi]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Tachibana_Setsuko_Moglie|Tachibana Setsuko — Moglie]]
+- [[Luogo_Appartamento_Vittima_Fushimi|Appartamento di Tachibana Eiji — Fushimi]]

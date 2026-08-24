@@ -1,4 +1,6 @@
 
+# Tachibana Eiji — Allibratore (Vittima 1)
+
 > Allibratore, gestore di facciata. Ucciso 11/02/1998 ore 21:21 al bagno della Kyoto Station.
 
 ---
@@ -41,7 +43,7 @@
 - Portafoglio Bottega Veneta in pelle intrecciata
     - ¥180.000 in contanti (banconote da ¥10.000)
     - Patente di guida
-    - Carta di credito UFJ
+    - Carta di credito JCB (conto Sanwa Bank)
     - Carta socio Club Aoyagi
     - Polaroid piegata: donna giovane di spalle in kimono davanti a un torii
 - Pacchetto **Mild Seven** semivuoto
@@ -51,7 +53,7 @@
 
 - Cellulare **NTT DoCoMo mova** (modello flip)
     - Nessuna rubrica
-    - Registro 10 ultime chiamate (vedi cellulare nota dedicata)
+    - Registro 10 ultime chiamate (elenco completo in «Storia Completa», punto 22)
 - Copia del **Kyoto Shimbun** del 9 febbraio 1998, piegata in quattro
     - Annuncio del _Ristorante Kameoka-tei_ con "promozione speciale del 22 febbraio"
 
@@ -59,7 +61,7 @@
 
 - Chiavi di casa (3 chiavi, portachiavi in cuoio)
 - Chiavi auto Toyota Crown
-- Taccuino Moleskine nero formato tascabile (vedi taccuino nota dedicata)
+- Taccuino Moleskine nero formato tascabile (contenuto e codice in «Storia Completa», punti 21 e 32)
 - Penna stilografica **Pilot Custom 74**
 - Fazzoletto di lino bianco con monogramma "T.E."
 - Flacone senza etichetta, 8 pillole bianche (ansiolitici, **Lexotan**)
@@ -120,8 +122,8 @@ I PG che leggono entrambi i livelli ottengono **una direzione**: i combattimenti
 
 ## Collegamenti
 
-- [[Kyoto Station - Scena del crimine]]
-- [[Murakami Saburō — Veterinario]]
-- [[Cellulare Tachibana — Registro chiamate]]
-- [[Taccuino Tachibana]]
-- [[Nitōgun — Banda]]
+- [[Luogo_Kyoto_Station_Scena_Crimine|Kyoto Station - Scena del crimine]]
+- [[PNG_Murakami_Saburo_Veterinario|Murakami Saburō — Veterinario]]
+- [[Storia Completa|Cellulare Tachibana — Registro chiamate]]
+- [[Storia Completa|Taccuino Tachibana]]
+- [[PNG_Nitogun_Banda|Nitōgun — Banda]]

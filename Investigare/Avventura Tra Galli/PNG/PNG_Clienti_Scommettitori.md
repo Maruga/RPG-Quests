@@ -107,7 +107,7 @@ Tutti e 6 sono nel registro delle 10 ultime chiamate del cellulare di Tachibana.
 ---
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Cellulare Tachibana — Registro chiamate]]
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Capannone Kameoka]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[Storia Completa|Cellulare Tachibana — Registro chiamate]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

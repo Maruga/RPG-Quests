@@ -6,7 +6,7 @@
 - **Nome**: Kuroda Ryō (黒田 涼)
 - **Età**: 28 anni
 - **Residenza**: monolocale a Fushimi-ku, Kyoto (zona popolare, vicino al fiume Kamo)
-- **Copertura**: dichiarato disoccupato, ma possiede una piccola palestra di pugilato semi-attiva come prestanome
+- **Copertura**: istruttore di pugilato alla **Tora Boxing Gym** (piano terra del suo stesso palazzo, Fushimi)
 - **Stato civile**: single, nessuna relazione stabile
 
 ## Aspetto e personalità
@@ -20,8 +20,8 @@
 
 ## Esecuzione 11/02 ore 21:21
 - Arriva alla Kyoto Station alle 21:14 con auto guidata da Hayashi (Hayashi resta al volante in zona Hachijō-ovest)
-- Sale al 3° piano alle 21:20
-- Spara 3 colpi con revolver Smith & Wesson Model 36 .38 Special
+- Sale al 3° piano alle 21:19 (ripreso dalla telecamera del corridoio), entra nel bagno alle 21:20
+- Spara 3 colpi con una pistola semiautomatica Makarov PM cal. 9×18
 - Raccoglie i bossoli **(errore: ne dimentica uno scivolato sotto un orinatoio — i PG possono trovarlo se cercano bene)**
 - Esce alle 21:22, scende al pianterreno, sale in auto, fugge
 
@@ -31,7 +31,7 @@
 |---|---|
 | 11/02 sera | Dichiara di essere stato in palestra, **nessun testimone affidabile**, registro firme palestra falsificato da lui stesso |
 | 13/02 pomeriggio | Omicidio Murakami allo studio veterinario di Yamashina (~14:00). Iniezione letale di xilazina al collo. Entra dal vicolo retro, esce stessa via. Dichiara "lezione palestra al pomeriggio", registro firme falsificato |
-| 14/02 ore 22:30 | Tentato omicidio Ōkubo al parcheggio sotterraneo del condominio di Kamigyō. 2 colpi cal. .38: uno manca, uno colpisce alla spalla destra. Spaventato dal Sig. Hayama in rientro, fugge a piedi per la rampa |
+| 14/02 ore 22:30 | Tentato omicidio Ōkubo al parcheggio sotterraneo del condominio di Kamigyō. 2 colpi cal. 9×18: uno manca, uno colpisce alla spalla destra. Spaventato dal Sig. Hayama in rientro, fugge a piedi per la rampa |
 | 17/02 sera (~18:00) | Secondo attentato in ospedale (Kyoto University Hospital, stanza 412). Travestito da fattorino di catering ospedaliero, tenta di iniettare veleno nella flebo di Ōkubo |
 
 ## Se interrogato
@@ -59,10 +59,10 @@
 
 ## Indizi addosso/a casa
 - **Asics Gel** taglia 27 cm, suola compatibile con impronta scena del crimine
-- Smith & Wesson Model 36 nascosto in un'intercapedine del bagno (se trovato, prova balistica decisiva)
-- Bossoli .38 di scorta in una scatola
+- Makarov PM nascosta in un'intercapedine del bagno (se trovata, prova balistica decisiva)
+- Cartucce 9×18 di scorta in una scatola
 - Banconote da ¥10.000 con numerazione consecutiva (paga di Saitō, tracciabile a un prelievo bancario)
-- Telefono Nokia prepagato con sole 4 chiamate ricevute da Hayashi nelle date critiche
+- Cellulare prepagato con sole 4 chiamate ricevute da Hayashi nelle date critiche
 
 ## Telecamera del corridoio (3° piano Kyoto Station)
 La telecamera lo riprende alle 21:19 e 21:22. Volto **non riconoscibile** in qualità VHS, ma:
@@ -79,7 +79,7 @@ I PG che incrociano il filmato con un sospettato già in custodia possono confer
 - Se i PG lo catturano e Saitō teme che parli, può tentare di farlo eliminare in carcere — sottotrama possibile
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Kyoto Station 1998 — Scena del crimine]]
-- [[Tachibana Eiji — Vittima]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[Luogo_Kyoto_Station_Scena_Crimine|Kyoto Station 1998 — Scena del crimine]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]

@@ -16,7 +16,7 @@
 Edificio tradizionale a due piani in legno, tipico di Gion. Insegna sobria con calligrafia "光琳". Al piano terra: ristorante kappo style con bancone. Al primo piano: salottini privati (*zashiki*) per clienti riservati. Interni curati, vasi ikebana, illuminazione bassa. Frequentato da uomini d'affari, politici locali, alcune geisha del distretto come ospiti.
 
 ## Personale
-- **Nishimura Tatsuya** (36) — cameriere senior, prestanome ignaro [[PNG_Nishimura_Tatsuya]]
+- **Nishimura Tatsuya** (36) — cameriere senior, prestanome ignaro [[PNG_Nishimura_Tatsuya_Prestanome_Ignaro|PNG_Nishimura_Tatsuya]]
 - **Kobayashi Yumiko** (28) — cameriera, ignara di tutto
 - **Chef Tanigawa Masaru** (52) — chef di cucina, ignaro
 - **Aiba Kenta** (24) — barista al primo piano, ignaro
@@ -39,6 +39,6 @@ Edificio tradizionale a due piani in legno, tipico di Gion. Insegna sobria con c
 - Permette il contatto con Nishimura (utile per arrivare al capannone)
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Nishimura Tatsuya — Prestanome ignaro]]
-- [[Tachibana Setsuko — Moglie]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Nishimura_Tatsuya_Prestanome_Ignaro|Nishimura Tatsuya — Prestanome ignaro]]
+- [[PNG_Tachibana_Setsuko_Moglie|Tachibana Setsuko — Moglie]]

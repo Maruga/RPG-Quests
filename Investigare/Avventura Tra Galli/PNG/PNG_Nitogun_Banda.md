@@ -103,9 +103,9 @@ A fine gennaio Saitō verifica la truffa del gallo sedato di gennaio. Decisione:
 - **Tono finale**: vittoria amara. Saitō uscirà vivo. Possibile gancio per future avventure.
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Capannone Kameoka]]
-- [[Ristorante Kameoka-tei — Copertura]]
-- [[Sergente Inagaki — Poliziotto corrotto]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[Luogo_Ristorante_Kameoka_tei|Ristorante Kameoka-tei — Copertura]]
+- [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]

@@ -57,6 +57,6 @@ Complesso ospedaliero di grandi dimensioni, più edifici, struttura confusa per 
 - Possibile twist: l'attentato del 17/02 può essere **sventato dai PG** ma costare la vita all'agente di guardia (drammaticità)
 
 ## Collegamenti
-- [[Ōkubo Kenji — Prestanome consapevole]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Polizia Prefetturale di Kyoto]]
+- [[PNG_Okubo_Kenji_Prestanome_Consapevole|Ōkubo Kenji — Prestanome consapevole]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Polizia_Prefetturale_Kyoto|Polizia Prefetturale di Kyoto]]

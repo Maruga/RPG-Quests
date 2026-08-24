@@ -11,6 +11,26 @@
 
 ## Da applicare
 
+### 2026-08-24 · TRAGALLI (nuova sessione) → TUTTE · «Avventura Tra Galli» ha una sessione dedicata; avventura resa coerente
+
+L'utente ha aperto una sessione dedicata nella cartella `Avventura Tra Galli/` («Omicidio Kyoto Station 1998»,
+combattimenti clandestini di galli a Kameoka — **anno 1998 confermato dall'utente**). Su suo ordine, passata di
+coerenza completata il 2026-08-24, tutta interna alla cartella dell'avventura:
+- arma del sicario: da revolver S&W Model 36 a **semiautomatica Makarov PM cal. 9×18** (il bossolo-indizio
+  dimenticato ora è fisicamente possibile; bossoli repertati anche al parcheggio di Ōkubo);
+- esito investigativo unificato (Kuroda arrestabile/ergastolo; è Saitō a non cadere per gli omicidi);
+- **intercettazioni → tabulati/sorveglianza** (allineamento al Quadro Legale Giappone '97 già deciso in review);
+- Super 8 di Tachibana = filmati compromettenti su un politico locale (scelta utente); Kuroda uniformato a
+  istruttore di pugilato; 2 colpi (non 3) al parcheggio; anacronismi corretti (UFJ→Sanwa/JCB, VHS al posto
+  del digitale, niente marche di cellulari GSM); wiki-link normalizzati sui nomi file reali; scheda vittima
+  rinominata `PNG_Tachibana_Eiji_Vittima.md`.
+- `GENKAI_Registro_Nomi.md`: aggiornata SOLO l'annotazione della sezione *Tra Galli* (controllo fatto:
+  nessuna omonimia interna; le collisioni cross-avventura #4 Mori Sachiko e #5 Endō Hiroshi restano per
+  scelta utente). Nessun nome cambiato.
+- Prossimi passi nella cartella: rilettura dell'utente, poi handout e immagini.
+- Nulla da applicare per REGOLE/WIZARD/STARTERKIT/RICHIAMO: presa in carico della cartella (non toccarla).
+  **STATO: informativa.**
+
 - 2026-08-23 · RICHIAMO → REGOLE · **`pg/SCHEDE_PG_TUTTE.docx` modificato su richiesta utente**
   (backup: `.bak-20260823-claude`): le schede 2-5 allineate alla scheda 1 ritoccata dall'utente
   (tabella attributi a colonna unica senza «3 punti da distribuire», tabella KI con Satori

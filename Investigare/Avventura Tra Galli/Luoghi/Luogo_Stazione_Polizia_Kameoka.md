@@ -15,7 +15,7 @@ Edificio anni '80, 3 piani, struttura in cemento armato. Reception al piano terr
 
 ## Personale chiave
 - **Capo stazione**: ispettore **Tsuda Akira** (54), onesto, operativo, **non sa** della corruzione di Inagaki
-- **Sergente Inagaki Hiroshi** (47): corrotto, ostacola le indagini [[PNG_Sergente_Inagaki]]
+- **Sergente Inagaki Hiroshi** (47): corrotto, ostacola le indagini [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|PNG_Sergente_Inagaki]]
 - **Agente Yamaguchi Tetsuo** (32): corrotto a livello minore, complice di Inagaki
 - Altri 75 agenti: onesti, ignari
 
@@ -39,7 +39,7 @@ Edificio anni '80, 3 piani, struttura in cemento armato. Reception al piano terr
 ## Indagine sulla corruzione
 - Ricostruzione movimenti bancari di Inagaki (richiede mandato)
 - Sorveglianza della sua casa e auto: Inagaki incontra Hayashi una volta ogni 2-3 settimane in luoghi neutrali (parcheggio supermercato di Kameoka, il primo lunedì del mese)
-- Possibile **wire-tap** (intercettazione) del telefono privato di Inagaki: rivela conversazioni con Hayashi
+- **Tabulati** del telefono privato di Inagaki (con ordine del procuratore): rivelano il traffico ricorrente di chiamate col numero di Hayashi; la sorveglianza degli incontri al parcheggio fa il resto
 
 ## Note operative GM
 - I PG **non possono evitare** di passare da qui se vogliono indagare formalmente nella zona
@@ -48,7 +48,7 @@ Edificio anni '80, 3 piani, struttura in cemento armato. Reception al piano terr
 - Smascheramento ufficiale possibile dopo coordinamento con Kyoto città
 
 ## Collegamenti
-- [[Sergente Inagaki — Poliziotto corrotto]]
-- [[Polizia Prefetturale di Kyoto]] *(da creare)*
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Capannone Kameoka]]
+- [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]
+- [[Luogo_Polizia_Prefetturale_Kyoto|Polizia Prefetturale di Kyoto]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

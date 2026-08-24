@@ -70,6 +70,6 @@ Edificio a due piani con ingresso clinica al piano terra e abitazione di Murakam
 - Il fatto che il sedativo usato sia stato **prelevato dallo studio stesso** è un indizio simbolico forte: chi ha ucciso conosceva il significato di "sedare il gallo" (il Nitōgun)
 
 ## Collegamenti
-- [[Dr. Murakami Saburō — Veterinario]]
-- [[Famiglia Murakami]]
-- [[Casa Murakami — Yamashina]]
+- [[PNG_Murakami_Saburo_Veterinario|Dr. Murakami Saburō — Veterinario]]
+- [[PNG_Famiglia_Murakami|Famiglia Murakami]]
+- [[Luogo_Casa_Murakami_Yamashina|Casa Murakami — Yamashina]]

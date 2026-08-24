@@ -93,7 +93,7 @@ Kobayashi Ai (meteorologa NKB) · Morikawa Jun'ichi (conduttore NKB)
 Endo Toshio · Fujimoto Akemi · Fujimoto Shinji · **Hayashi Kenji** ⚠ · Hayashi Taro (padre, deceduto) · Ishii Takuya · Kano Gentaro · **Mori Sachiko** ⚠ · Morimoto Hiroshi (medico) · Morita Keisuke · Nakamura Daisuke · Nishida Goro · Ogawa Masaru (colpevole) · Ogawa Reiko · Sato Harumi · Tanaka Kazuo (la vittima) · Tanaka Yuki · Toda Yumi · Watanabe Jun
 *(parziale: Watanabe (commercialista))*
 
-### Tra Galli *(bozza — mai controllata, principale fonte di collisioni)*
+### Tra Galli *(controllata 2026-08-24 dalla sessione TRAGALLI: nessuna omonimia piena interna all'avventura; restano le collisioni cross-avventura #4 e #5 — decisione utente: si lasciano)*
 Aiba Kenta · Aoyagi Hiroshi · Aoyagi Mariko · **Endō Hiroshi** ⚠ · Fujiwara Kentarō · Hashimoto Daisuke · Hayashi Tomoki · Hosokawa Eiko · Inagaki Hiroshi · Inoue Takeshi · Kimura Akira · Kobayashi Yumiko · Kuroda Ryō · **Mori Sachiko** ⚠ (dup con Sake) · Mori Yasuko · Murakami Aiko · Murakami Hiroko · Murakami Kenji · Murakami Saburō · Murayama Hidetoshi · Nishimura Tatsuya · Ogura Naomi · Ōkubo Kenji · Saitō Gorō · Saitō Hiroto · Saitō Mieko · Sasaki Hideo · Sasaki Kōichi · Suzuki Yui · Tachi Reiko · Tachi Yūichirō · Tachibana Eiji · Tachibana Mitsuru · Tachibana Setsuko · Tanabe Yumi · Tanaka Shōji · Tanigawa Masaru · Tsuda Akira · Watanabe Toshio · Yagi Kenta · Yamaguchi Tetsuo · Yamamoto Kazuo (custode — cognome del PG) · Yoshida Mamoru
 *(parziali: Akemi · Hayama ×2 · Reiko ×2 · Suzuki · Tanigawa · Ueda · Yoshiko · Yoshioka)*
 

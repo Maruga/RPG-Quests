@@ -47,6 +47,6 @@ Hiroko trova il corpo allo studio verso le 16:30 e rientra in casa devastata. La
 - Possibile gancio narrativo: **vicino di casa anziano** (Sig.ra Yoshioka, 78 anni) che ricorda perfettamente i visitatori della famiglia
 
 ## Collegamenti
-- [[Dr. Murakami Saburō — Veterinario]]
-- [[Famiglia Murakami]]
-- [[Studio veterinario Murakami — Yamashina]]
+- [[PNG_Murakami_Saburo_Veterinario|Dr. Murakami Saburō — Veterinario]]
+- [[PNG_Famiglia_Murakami|Famiglia Murakami]]
+- [[Luogo_Studio_Veterinario_Murakami|Studio veterinario Murakami — Yamashina]]

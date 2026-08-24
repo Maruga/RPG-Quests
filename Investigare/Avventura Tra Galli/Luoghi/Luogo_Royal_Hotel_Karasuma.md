@@ -21,7 +21,7 @@ Edificio moderno di 12 piani, hall in marmo, ristorante al 1° piano (cucina ita
 
 ## Indizi rilevanti
 - Registro check-in: nome Tachibana Eiji + accompagnatrice non registrata (prassi giapponese: solo l'intestatario firma)
-- Tessera videosorveglianza hall: archivio digitale di 30 giorni, possibile recupero immagini delle visite recenti
+- Telecamere della hall: nastri VHS conservati 30 giorni, possibile recupero immagini delle visite recenti
 - Personale di front desk lo conosceva di vista, niente di sospetto
 - Camera 712: già ripulita per nuovi ospiti, nessuna traccia fisica residua dopo l'8/02
 
@@ -38,5 +38,5 @@ Edificio moderno di 12 piani, hall in marmo, ristorante al 1° piano (cucina ita
 - Il bar al 2° piano è un dettaglio aggiuntivo opzionale per i PG che vogliono approfondire la rete sociale di Tachibana
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Aoyagi Mariko — Amante]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Aoyagi_Mariko_Amante|Aoyagi Mariko — Amante]]

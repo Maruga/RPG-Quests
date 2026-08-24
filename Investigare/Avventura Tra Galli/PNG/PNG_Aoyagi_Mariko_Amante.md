@@ -58,6 +58,6 @@
 - Se ignorata, può sparire (tornare a casa dei genitori in Hokkaidō) e portarsi via il codice cassaforte: ostacolo alle indagini
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Appartamento di Tachibana Eiji — Fushimi]]
-- [[Club Aoyagi — Kiyamachi]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[Luogo_Appartamento_Vittima_Fushimi|Appartamento di Tachibana Eiji — Fushimi]]
+- [[Luogo_Club_Aoyagi_Kiyamachi|Club Aoyagi — Kiyamachi]]

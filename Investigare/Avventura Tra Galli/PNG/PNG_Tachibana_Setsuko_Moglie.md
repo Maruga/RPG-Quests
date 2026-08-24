@@ -55,6 +55,6 @@
 - Può fornire una **chiave del vecchio appartamento** dei suoceri se il GM vuole creare una sotto-scena (vecchi oggetti di Tachibana mai recuperati)
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Aoyagi Mariko — Amante]]
-- [[Appartamento di Tachibana Eiji — Fushimi]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Aoyagi_Mariko_Amante|Aoyagi Mariko — Amante]]
+- [[Luogo_Appartamento_Vittima_Fushimi|Appartamento di Tachibana Eiji — Fushimi]]

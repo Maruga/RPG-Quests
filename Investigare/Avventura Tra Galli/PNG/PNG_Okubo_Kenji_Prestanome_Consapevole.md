@@ -73,8 +73,8 @@ La figlia di 12 anni a Nagoya. Disposto a tradire chiunque per proteggerla.
 - La sua sopravvivenza all'attentato del 17/02 è uno dei principali esiti misurabili della campagna
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Capannone Kameoka]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

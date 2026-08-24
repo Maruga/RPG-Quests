@@ -58,6 +58,6 @@ La famiglia. Reagisce molto bene se i PG gli mostrano comprensione e gli garanti
 - Se sono aggressivi, si chiude e chiama un avvocato (perdita di un'ora di gioco)
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Capannone Kameoka]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

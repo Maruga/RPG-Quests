@@ -70,7 +70,7 @@ Nessuno evidente. È prudente, esperto, freddo. L'unica leva possibile: il figli
 - Frase tipica in caratterizzazione: *"Non ho idea di cosa stia parlando, ispettore. Posso offrirvi un tè?"*
 
 ## Collegamenti
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Capannone Kameoka]]
-- [[Sergente Inagaki — Poliziotto corrotto]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]

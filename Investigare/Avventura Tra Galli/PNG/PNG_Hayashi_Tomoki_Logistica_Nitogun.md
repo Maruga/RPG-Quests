@@ -68,8 +68,8 @@ La fidanzata Yui (28 anni). Hayashi è genuinamente innamorato. Se lei viene min
 - I PG hanno una finestra: se lo arrestano prima del 22/02 (giorno del prossimo combattimento), il colpo è completo
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Capannone Kameoka]]
-- [[Ristorante Kameoka-tei — Copertura]]
-- [[Tachibana Eiji — Vittima]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[Luogo_Ristorante_Kameoka_tei|Ristorante Kameoka-tei — Copertura]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]

@@ -8,7 +8,7 @@
 - **Residenza**: Kameoka, casa di proprietà
 - **Lavoro**: Sergente, **Stazione di Polizia di Kameoka** (sezione ordine pubblico)
 - **Stato civile**: sposato con Yoshiko (45), 2 figli (adolescenti, 16 e 13)
-- **Anzianità**: in polizia dal 1972
+- **Anzianità**: in polizia dal 1973 (25 anni di servizio)
 
 ## Aspetto e personalità
 1,73 m, robusto, capelli grigi corti. Volto rugoso da fumatore (Mild Seven da 25 anni). Veste sempre l'uniforme con cura. Di carattere ruvido, parla a scatti, autoritario con subordinati e civili. Si considera un "professionista pratico" — giustifica la corruzione come "compensazione" per uno stipendio insufficiente.
@@ -74,7 +74,7 @@ N/A: non sospettato di omicidio, ma le sue azioni di copertura emergeranno gradu
 - Confronto chiave: i PG capiscono che è corrotto **circa al giorno 14-15/02**, dopo il tentato omicidio di Ōkubo (Inagaki era stranamente al corrente di dettagli che non avrebbe dovuto sapere)
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Capannone Kameoka]]
-- [[Polizia Prefetturale di Kyoto]] *(da creare)*
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[Luogo_Polizia_Prefetturale_Kyoto|Polizia Prefetturale di Kyoto]]

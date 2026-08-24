@@ -38,7 +38,7 @@
 
 17. **Movimenti serali Tachibana**: autobus di ritorno alle 18:45, Kyoto Station verso le 20:00, lascia gli effetti alla Toyota Crown nera al multipiano (posto B-14), cena leggera al ristorante del 1° piano (Asty Road), alle 21:17 sale al 3° piano, 21:18 entra nel cubicolo centrale del bagno, chiude la porta in attesa di Hayashi.
 
-18. **Omicidio Tachibana**: 11/02 ore 21:21. Kuroda — accompagnato in auto da Hayashi che resta al volante in zona Hachijō-ovest — entra nel bagno alle 21:20. Spara 3 colpi cal. .38 con Smith & Wesson Model 36 attraverso la porta. Tachibana morente traccia col sangue sul pavimento il simbolo del Nitōgun (gallo stilizzato con due speroni sovrapposti) — simbolo noto solo dentro al giro. Kuroda raccoglie i bossoli (ne dimentica uno sotto un orinatoio), esce, fugge in auto con Hayashi.
+18. **Omicidio Tachibana**: 11/02 ore 21:21. Kuroda — accompagnato in auto da Hayashi che resta al volante in zona Hachijō-ovest — entra nel bagno alle 21:20. Spara 3 colpi cal. 9×18 mm con una pistola semiautomatica Makarov PM attraverso la porta. Tachibana morente traccia col sangue sul pavimento il simbolo del Nitōgun (gallo stilizzato con due speroni sovrapposti) — simbolo noto solo dentro al giro. Kuroda raccoglie i bossoli (ne dimentica uno sotto un orinatoio), esce, fugge in auto con Hayashi.
 
 19. **Testimone**: **Watanabe Toshio** (31, impiegato Mitsubishi Heavy Industries di Kobe, pendolare). Era nel cubicolo a sinistra dalle 21:14. Sente tutto (passi, scarpe da ginnastica cigolanti, 3 colpi, raccolta bossoli, fuga decisa) ma **non vede nulla**. Paralizzato dalla paura per 40 minuti, esce alle 22:01, corre al Kōban della stazione.
 
@@ -64,7 +64,7 @@
 
 24. **Autopsia 14/02 mattina**: rivela concentrazione di xilazina 5 volte superiore al letale + ematoma da contenimento al collo. **Omicidio mascherato da suicidio**. I PG, leggendo il referto la sera del 14/02, collegano i due morti.
 
-25. **Tentato omicidio Ōkubo**: dal 12/02 Ōkubo cambia hotel ogni notte. Sera del 14 febbraio ore 22:30: rientra brevemente al condominio di Kamigyō per recuperare Tokarev TT-33 dal cassetto del comodino e ¥600.000 cash, vuole partire per Nagoya il giorno dopo. Kuroda lo aspetta dietro un pilastro al posto B-04 del parcheggio sotterraneo. 2 colpi: uno manca, l'altro lo colpisce alla spalla destra. Un vicino di casa rientra in auto, fari illuminano la scena, Kuroda fugge a piedi. Ricovero al **Kyoto University Hospital** (stanza 412, sotto piantonamento).
+25. **Tentato omicidio Ōkubo**: dal 12/02 Ōkubo cambia hotel ogni notte. Sera del 14 febbraio ore 22:30: rientra brevemente al condominio di Kamigyō per recuperare Tokarev TT-33 dal cassetto del comodino e ¥600.000 cash, vuole partire per Nagoya il giorno dopo. Kuroda lo aspetta dietro un pilastro al posto B-04 del parcheggio sotterraneo. 2 colpi: uno manca, l'altro lo colpisce alla spalla destra; i due bossoli espulsi restano a terra (repertati, collegheranno balisticamente l'agguato all'arma della stazione). Un vicino di casa rientra in auto, fari illuminano la scena, Kuroda fugge a piedi. Ricovero al **Kyoto University Hospital** (stanza 412, sotto piantonamento).
 
 26. **Identikit dell'assalitore**: dal racconto di Ōkubo (lo intravede di sfuggita) e del vicino di casa (testimone secondario, fari abbaglianti), la polizia produce un **identikit non preciso**: maschio, ~28 anni, atletico, ~1,80 m, capelli rasati, giubbotto bomber scuro, sneaker chiare con suola scanalata. Volto vago. Identikit utile per confronti futuri (telecamera corridoio Kyoto Station, perquisizione casa Kuroda) ma **non sufficiente da solo** per identificare Kuroda.
 
@@ -87,13 +87,13 @@
     - Da Ōkubo (prestiti) → **Hashimoto, Kimura**
     - Da indagine Crimine Organizzato + registri capannone post 22/02 → **Fujiwara, Yoshida**
 
-31. **Smascheramento Inagaki**: i PG, contattando la Polizia di Kameoka, ricevono dati distorti, mandati ritardati, documentazione "smarrita". Inagaki si tradisce intorno al 14–15/02 conoscendo dettagli che non dovrebbe sapere (es. il ricovero di Ōkubo prima della notizia pubblica). I PG segnalano agli **Affari Interni** della Polizia Prefetturale, che attivano sorveglianza, intercettazione e ricostruzione movimenti bancari. **Esito tipico in 5–7 giorni**: arresto di Inagaki, conferma libro paga ¥200k/mese da Saitō. **Inagaki è solo, non ci sono altri poliziotti corrotti del giro**.
+31. **Smascheramento Inagaki**: i PG, contattando la Polizia di Kameoka, ricevono dati distorti, mandati ritardati, documentazione "smarrita". Inagaki si tradisce intorno al 14–15/02 conoscendo dettagli che non dovrebbe sapere (es. il ricovero di Ōkubo prima della notizia pubblica). I PG segnalano agli **Affari Interni** della Polizia Prefetturale, che attivano sorveglianza, tabulati telefonici e ricostruzione dei movimenti bancari. **Esito tipico in 5–7 giorni**: arresto di Inagaki, conferma libro paga ¥200k/mese da Saitō. **Inagaki è solo, non ci sono altri poliziotti corrotti del giro**.
 
 32. **Decifrazione codice Nitōgun**: il taccuino di Tachibana (in codice) + l'archivio Kyoto Shimbun in casa sua (4 copie ottobre '97 – gennaio '98 con annuncio Kameoka-tei) + lista clienti criptata in cassaforte + cassetta audio di Ōkubo permettono di decifrare il codice di comunicazione, collegando ristorante e capannone.
 
-33. **Perquisizione casa di Hayashi** (Kameoka centro): mandato dopo identificazione vocale del messaggio in segreteria del 10/02. Trovati ¥1,2 mln nascosti, le chiavi del capannone, un cellulare prepagato Nokia 5110 con quattro numeri salvati per sigle (S.G., K.R., I.H., V2): senza altre prove non identificano nessuno.
+33. **Perquisizione casa di Hayashi** (Kameoka centro): mandato dopo identificazione vocale del messaggio in segreteria del 10/02. Trovati ¥1,2 mln nascosti, le chiavi del capannone, un cellulare prepagato con quattro numeri salvati per sigle (S.G., K.R., I.H., V2): senza altre prove non identificano nessuno.
 
-34. **Perquisizione casa di Kuroda** (Fushimi): mandato dopo aver incrociato impronta Asics + telecamera corridoio + identikit + descrizione testimone Ōkubo. Trovate scarpe Asics taglia 27 cm, Smith & Wesson Model 36 nascosto nell'intercapedine del bagno (prova balistica decisiva confrontata con i fori sulla porta del cubicolo), banconote ¥10.000 con numerazione consecutiva tracciabili a un prelievo bancario di Saitō, bossoli .38 di scorta, Nokia prepagato con 4 chiamate da Hayashi nei giorni critici.
+34. **Perquisizione casa di Kuroda** (Fushimi): mandato dopo aver incrociato impronta Asics + telecamera corridoio + identikit + descrizione testimone Ōkubo. Trovate scarpe Asics taglia 27 cm, la Makarov PM cal. 9×18 nascosta nell'intercapedine del bagno (prova balistica decisiva: le striature dei proiettili e i segni del percussore sul bossolo della stazione combaciano), banconote ¥10.000 con numerazione consecutiva tracciabili a un prelievo bancario di Saitō, cartucce 9×18 di scorta, cellulare prepagato con 4 chiamate da Hayashi nei giorni critici.
 
 35. **Hayashi sotto torchio**: punto crollabile del Nitōgun. Con prove + patto giudiziario credibile + paura di essere eliminato in carcere da Saitō, può ribaltare tutto sul capo. Senza la sua testimonianza Saitō è intoccabile.
 
@@ -169,7 +169,7 @@
 | **Aoyagi Mariko** | 29 | **Amante di Tachibana** (relazione di 18 mesi). **Hostess senior al Club Aoyagi** in Kiyamachi (nome d'arte "Mari"). Vive a Sakyō, affitto pagato in parte da Tachibana. Snella, capelli lunghi neri, lineamenti delicati, parla bene di politica (tecnica di hostess). Non sa del Nitōgun. **Conosce il codice della cassaforte** dell'appartamento Tachibana (0418, suo compleanno) — è il **gancio chiave** per accedere a quei documenti. Sinceramente legata a Tachibana, dopo il 14/02 si terrorizza e può sparire (tornare dai genitori in Hokkaidō). |
 | **Murakami Hiroko** | 49 | **Moglie di Murakami Saburō**. Casalinga di Yamashina. Sobria, viso pulito, grembiule a casa, tradizionale. Sospettava da mesi che qualcosa non andasse (insonnia, alcol serale del marito, telefonate strane) ma non aveva osato chiedere. **Trova il corpo** del marito allo studio il 13/02 verso le 16:30. Sotto shock, parla a frammenti, ricorda dettagli minuti. **Non protegge il marito** — vuole solo proteggere i figli. |
 | **Murakami Kenji** | 19 | **Figlio maggiore Murakami**. Studente del 1° anno di Scienze Politiche all'**Università Waseda** (Tokyo), dormitorio. Razionale, freddo, occhiali, leggermente arrogante (uni di prestigio), distante dalla famiglia. Convinto che il padre fosse "un dilettante". **Completamente fuori dalla vicenda**. Crolla emotivamente quando capisce che la famiglia è in difficoltà economiche serie (rischia tasse universitarie). Valore investigativo basso. |
-| **Murakami Aiko** | 15 | **Figlia minore Murakami**. Liceale, vive con la madre. Magra, capelli lunghi neri, timida e sensibile. Disegna manga, passa pomeriggi nello studio del padre, sa di animali. **Punto debole emotivo del padre**. Ricorda episodi inquietanti: il padre che piange al telefono (gennaio '98), nascondeva una busta di soldi dietro l'armadio dei farmaci, una telefonata in cui diceva *"non posso, ho una famiglia"* (probabilmente Tachibana che gli proponeva la truffa). **Trattare con enorme cautela**: minorenne, fragile, lutto recente. È la **chiave per la confessione** se Murakami fosse ancora vivo. |
+| **Murakami Aiko** | 15 | **Figlia minore Murakami**. All'ultimo anno di chūgakkō (terza media), vive con la madre. Magra, capelli lunghi neri, timida e sensibile. Disegna manga, passa pomeriggi nello studio del padre, sa di animali. **Punto debole emotivo del padre**. Ricorda episodi inquietanti: il padre che piange al telefono (gennaio '98), nascondeva una busta di soldi dietro l'armadio dei farmaci, una telefonata in cui diceva *"non posso, ho una famiglia"* (probabilmente Tachibana che gli proponeva la truffa). **Trattare con enorme cautela**: minorenne, fragile, lutto recente. È la **chiave per la confessione** se Murakami fosse ancora vivo. |
 
 ---
 
@@ -208,7 +208,7 @@
 
 ### Omicidi (11 – 17 febbraio 1998)
 
-- **Mercoledì 11 febbraio, 21:21** — Omicidio **Tachibana** alla Kyoto Station, bagno terzo piano lato Hachijō. Tre colpi cal. .38 attraverso la porta. Tachibana, morente, traccia col sangue il simbolo del Nitōgun (gallo con due speroni sovrapposti). Esecutore: **Kuroda Ryō** (su mandato di Saitō, logistica di Hayashi).
+- **Mercoledì 11 febbraio, 21:21** — Omicidio **Tachibana** alla Kyoto Station, bagno terzo piano lato Hachijō. Tre colpi cal. 9×18 attraverso la porta. Tachibana, morente, traccia col sangue il simbolo del Nitōgun (gallo con due speroni sovrapposti). Esecutore: **Kuroda Ryō** (su mandato di Saitō, logistica di Hayashi).
 - **Giovedì 12 febbraio, ore 08:00** — _I PG entrano nel caso_. Briefing al Quartier Generale della Polizia Prefetturale di Kyoto: rapporto del Kōban della stazione, foto della scena, prima testimonianza di Watanabe. Sopralluogo nella mattina e pomeriggio. Primi indizi: cellulare, taccuino, giornale Kyoto Shimbun in tasca, ricevuta autobus Kameoka.
 - **Venerdì 13 febbraio, pomeriggio (~14:00)** — Omicidio **Murakami** nel suo studio veterinario di Yamashina. Kuroda lo immobilizza nel retrobottega e gli inietta una dose letale di **xilazina** (lo stesso sedativo che Murakami usava sui galli — chiusura simbolica voluta dal Nitōgun). Aspetto iniziale ambiguo (possibile suicidio o overdose accidentale): la natura omicidiaria emerge solo all'autopsia. Corpo trovato dalla moglie **Hiroko** verso le 16:30, quando passa allo studio prima di rientrare a casa.
 - **Sabato 14 febbraio, ore 22:30** — Tentato omicidio **Ōkubo** nel parcheggio sotterraneo del suo condominio (Kamigyō). Kuroda spara, lo colpisce alla spalla destra. Un vicino di casa che rientra in auto in quel momento spaventa Kuroda, che fugge per la rampa di uscita. Ōkubo viene ricoverato al **Kyoto University Hospital** (Sakyō-ku), stanza 412, sotto piantonamento della Polizia Prefetturale.
@@ -218,9 +218,11 @@
 
 ### Esito investigativo
 
-- **Kuroda Ryō**: non incastrato (omertà del gruppo, nessuna prova diretta).
+- **Kuroda Ryō**: arrestabile per l'omicidio Tachibana (prova balistica + impronta + telecamera + identikit). Verosimile ergastolo.
+- **Hayashi Tomoki**: il punto crollabile — condanna media se collabora contro Saitō, lunga se tace.
+- **Saitō Gorō**: non incastrato per gli omicidi (omertà dei sottoposti); condannato per organizzazione di combattimenti clandestini ed evasione fiscale (4–6 anni).
 - **Smantellamento giro scommesse**: arresti multipli, coinvolgimento di personalità di rilievo (testa di legno del ristorante, alcuni clienti facoltosi).
-- **Ristorante di copertura**: gestione tracciabile fino al gruppo criminale locale, ma il legame con Saitō resta indiretto.
+- **Ristorante di copertura**: gestione tracciabile fino alla Kameoka Nōji KK, ma il legame con Saitō resta indiretto senza la testimonianza di Hayashi.
 - **Tono finale**: vittoria amara. La giustizia formale non chiude il cerchio.
 
 ---
@@ -232,7 +234,7 @@
 - Il **disegno col sangue** del gallo non identifica il Nitōgun da solo: serve incrociarlo con almeno due elementi tra testimonianze, archivi, oggetti recuperati
 - Il **cellulare prepagato** di Hayashi ha numeri salvati con sigle (S.G., K.R., I.H., V2): da solo prova solo l'esistenza di una rete riservata, va decifrato con materiale esterno (registri bancari, identificazione di sospetti, Affari Interni)
 - La **lista clienti scommettitori** dalla cassaforte di Tachibana è in codice: leggibile solo incrociandola col taccuino e con interrogatori
-- Il **bossolo .38** dimenticato nel bagno è prova balistica decisiva **solo se** l'arma viene poi sequestrata a Kuroda
+- Il **bossolo 9×18** dimenticato nel bagno è prova balistica decisiva **solo se** l'arma viene poi sequestrata a Kuroda
 - La **cassetta audio** di Ōkubo registra Tachibana che parla in codice: serve il taccuino per decifrarla
 - Il **filmato della telecamera** del corridoio Kyoto Station mostra il killer ma il volto non è leggibile: si conferma l'identificazione solo dopo avere già un sospetto in custodia
 
@@ -240,7 +242,7 @@ Il caso si risolve con **5–7 ore di gioco di triangolazione**, non con un colp
 
 ### Sui poteri dei PG (sistema GENKAI)
 
-I PG hanno abilità di percezione/intuizione/pressione (Satori, Kage, Enja, Kyōryoku, ecc.) che li **aiutano pesantemente** nelle scene chiave: capire se un sospetto mente, cogliere un dettaglio nascosto in una stanza, ottenere un crollo emotivo in interrogatorio, intuire una connessione altrimenti invisibile. **Non sostituiscono però l'indagine procedurale**: un Satori ben tirato può dire al PG "*Inagaki ti sta nascondendo qualcosa*" — ma per **incastrare** Inagaki servono comunque movimenti bancari, intercettazioni, testimonianza concorde di un altro PNG. I poteri sono **acceleratori di intuizione**, non scorciatoie probatorie.
+I PG hanno abilità di percezione/intuizione/pressione (Satori, Kage, Enja, Kyōryoku, ecc.) che li **aiutano pesantemente** nelle scene chiave: capire se un sospetto mente, cogliere un dettaglio nascosto in una stanza, ottenere un crollo emotivo in interrogatorio, intuire una connessione altrimenti invisibile. **Non sostituiscono però l'indagine procedurale**: un Satori ben tirato può dire al PG "*Inagaki ti sta nascondendo qualcosa*" — ma per **incastrare** Inagaki servono comunque movimenti bancari, tabulati, testimonianza concorde di un altro PNG. I poteri sono **acceleratori di intuizione**, non scorciatoie probatorie.
 
 **Regola operativa**: il GM concede al PG l'informazione/sensazione richiesta dal potere, ma chiarisce sempre che **per il magistrato e per la condanna formale serve la prova materiale**. Questo mantiene il ritmo investigativo e la tensione narrativa fino al climax del 22/02.
 
@@ -252,7 +254,7 @@ I PG sono assegnati alla **Sezione Omicidi** della Polizia Prefetturale di Kyoto
 
 | Reato / Indagine | Squadra | Tempo medio di ritorno | Esito narrativo tipo |
 |---|---|---|---|
-| Corruzione sergente Inagaki + agente Yamaguchi | **Affari Interni** Polizia Prefetturale di Kyoto | 5–7 giorni | Conferma movimenti bancari sospetti, intercettazione telefono privato, arresto a fine campagna |
+| Corruzione sergente Inagaki + agente Yamaguchi | **Affari Interni** Polizia Prefetturale di Kyoto | 5–7 giorni | Conferma movimenti bancari sospetti, tabulati del telefono privato, arresto a fine campagna |
 | Evasione fiscale Tachibana / locale Kōrin | **Polizia Tributaria (Kokuzei)** Kyoto | 2–3 settimane | Conti tracciati, fascicolo aperto, sequestro beni post-mortem |
 | Combattimenti clandestini / scommesse illegali | **Sezione Crimine Organizzato** Polizia Prefetturale | Si raccorda per il blitz al capannone (22/02) | Coordinamento tattico, supporto al climax |
 | Pratiche fiscali Murakami, debiti, società Lake Biwa | **Polizia Tributaria (Kokuzei)** | 2–3 settimane | Storico investimento fallito documentato, conferma movimento azzeramento debito gennaio '98 |

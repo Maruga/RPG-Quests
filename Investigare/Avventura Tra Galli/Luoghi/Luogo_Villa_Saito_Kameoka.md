@@ -53,6 +53,6 @@ Villa elegante, recinto in muratura alto 2,5 m, cancello automatico in metallo n
 - **Frase d'effetto** quando i PG suonano al cancello: tramite citofono, voce calma di Saitō *"Ispettori? Vi prego, accomodatevi. Ho appena preparato del tè."*
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Capannone Kameoka]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

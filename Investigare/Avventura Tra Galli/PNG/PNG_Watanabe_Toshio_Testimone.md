@@ -69,6 +69,6 @@ Niente. Watanabe è un testimone integro. **Vuole solo dimenticare**.
 - Se l'avventura include il giorno 22/02 come climax, Watanabe può essere convocato come testimone formale e raccontare la sua versione in scena pubblica
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Kyoto Station 1998 — Scena del crimine]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Kyoto_Station_Scena_Crimine|Kyoto Station 1998 — Scena del crimine]]

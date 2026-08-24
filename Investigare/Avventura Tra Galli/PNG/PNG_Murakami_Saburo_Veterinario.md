@@ -64,8 +64,8 @@ La figlia Aiko, 15 anni. Qualunque pressione che la coinvolga lo fa crollare.
 - La sua morte è il **secondo evento** che convince i PG che si tratta di una catena di vendette, non di un omicidio singolo
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Murakami Hiroko — Moglie del veterinario]]
-- [[Murakami Aiko — Figlia del veterinario]]
-- [[Capannone Kameoka]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Famiglia_Murakami|Murakami Hiroko — Moglie del veterinario]]
+- [[PNG_Famiglia_Murakami|Murakami Aiko — Figlia del veterinario]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

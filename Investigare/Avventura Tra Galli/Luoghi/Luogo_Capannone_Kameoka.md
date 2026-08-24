@@ -94,7 +94,7 @@ Prossimo combattimento. Possibile **blitz polizia** organizzato dai PG con la Po
 - Se i PG arrivano in giorni non operativi: capannone semivuoto, presidio minimo (1-2 guardiani), facile da forzare ma con poche prove dirette
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
-- [[Sergente Inagaki — Poliziotto corrotto]]
-- [[Ristorante Kameoka-tei — Copertura]]
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]
+- [[Luogo_Ristorante_Kameoka_tei|Ristorante Kameoka-tei — Copertura]]

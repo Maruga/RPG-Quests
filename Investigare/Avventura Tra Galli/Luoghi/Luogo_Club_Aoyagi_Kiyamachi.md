@@ -39,6 +39,6 @@ Locale buio, illuminazione soffusa, divani in pelle nera, tavolini bassi. Karaok
 - Approfondimento: la Mama-san può raccontare lo stato d'animo di Tachibana (rilassato negli ultimi due mesi, dettaglio coerente con post-truffa)
 
 ## Collegamenti
-- [[Aoyagi Mariko — Amante]]
-- [[Tachibana Eiji — Vittima]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Aoyagi_Mariko_Amante|Aoyagi Mariko — Amante]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

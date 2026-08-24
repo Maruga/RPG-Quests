@@ -51,7 +51,7 @@ Per il blitz al capannone di Kameoka, i PG coordinano con la **Sezione Crimine O
 ## Indagine
 - I PG vivono qui operativamente: ufficio condiviso al 4° piano, scrivanie, archivio cartaceo
 - Possono accedere a: archivio criminale prefetturale, registro veicoli, banche dati telefoniche (con mandato), schedari fotografici
-- Ogni richiesta di mandato (perquisizione, intercettazione, arresto) passa dal capo sezione → magistrato → tempi standard 24-72h
+- Ogni richiesta di mandato (perquisizione, tabulati, arresto) passa dal capo sezione → magistrato → tempi standard 24-72h
 
 ## Note operative GM
 - L'HQ è il **punto di partenza giornaliero** dei PG (riunione mattutina, aggiornamenti)
@@ -60,7 +60,7 @@ Per il blitz al capannone di Kameoka, i PG coordinano con la **Sezione Crimine O
 - L'omonimia con Tachibana Mitsuru può creare scene di colore (i PG che incontrano "un altro Tachibana" appena dopo l'omicidio)
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Sergente Inagaki — Poliziotto corrotto]]
-- [[Stazione di Polizia di Kameoka]]
-- [[Capannone Kameoka]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]
+- [[Luogo_Stazione_Polizia_Kameoka|Stazione di Polizia di Kameoka]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

@@ -44,7 +44,7 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 - **21:18**: Tachibana entra nel bagno, va al cubicolo centrale, chiude la porta
 - **21:19**: Watanabe Toshio è già nel cubicolo a sinistra (entrato alle 21:14)
 - **21:20**: Kuroda Ryō entra nel bagno, controlla con un'occhiata che il bagno sia vuoto a parte i cubicoli
-- **21:21**: Kuroda spara 3 colpi cal. .38 attraverso la porta del cubicolo centrale, all'altezza del torace
+- **21:21**: Kuroda spara 3 colpi cal. 9×18 attraverso la porta del cubicolo centrale, all'altezza del torace
 - **21:21+10s**: Kuroda raccoglie i bossoli, esce
 - **21:21+30s**: Tachibana, ancora cosciente per pochi secondi, traccia col sangue sul pavimento il simbolo del gallo Nitōgun (due speroni sovrapposti)
 - **22:01**: Watanabe esce dal proprio cubicolo dopo 40 minuti di paralisi e segnala
@@ -69,9 +69,10 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 ### Sul pavimento del bagno (esterno cubicolo)
 - Impronta parziale di scarpa da ginnastica suola in gomma con scanalature trasversali, **Asics Gel** taglia 27 cm
 - Zona davanti al cubicolo centrale, leggermente bagnata (Kuroda è entrato dopo aver attraversato il piazzale piovoso)
+- **Un bossolo cal. 9×18** rotolato **sotto un orinatoio**, sfuggito alla raccolta dell'assassino: non in evidenza, lo trova solo una ricerca accurata. Prova balistica chiave — decisiva **solo se** l'arma verrà poi sequestrata
 
 ### Assenti
-- Bossoli (raccolti dall'assassino)
+- Due dei tre bossoli (raccolti dall'assassino — il terzo è sotto l'orinatoio, vedi sopra)
 - Impronte digitali utili (Kuroda indossava guanti in pelle sottile)
 - Tracce di colluttazione
 
@@ -115,8 +116,7 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 
 ## Collegamenti
 
-- [[Tachibana Eiji — Vittima]]
-- [[Watanabe Toshio — Testimone]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Capannone Kameoka]]
-- [[Kyoto Bus Linea Kameoka]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Watanabe_Toshio_Testimone|Watanabe Toshio — Testimone]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]

@@ -75,7 +75,7 @@
 - **Nome**: Murakami Aiko (村上 愛子)
 - **Età**: 15 anni
 - **Residenza**: Yamashina-ku con la madre
-- **Studi**: 3° anno di liceo (chūgakkō finale, primo anno di kōkō nel sistema giapponese)
+- **Studi**: terzo e ultimo anno di chūgakkō (la scuola media giapponese)
 
 ### Aspetto e personalità
 1,62 m, magra, capelli lunghi neri. Timida, sensibile, lega molto al padre. Si interessa di disegno e manga. Sa di animali (passa pomeriggi nello studio del padre).
@@ -107,5 +107,5 @@ N/A: non sospettata.
 ---
 
 ## Collegamenti
-- [[Dr. Murakami Saburō — Veterinario complice]]
-- [[Studio veterinario Murakami — Yamashina]]
+- [[PNG_Murakami_Saburo_Veterinario|Dr. Murakami Saburō — Veterinario complice]]
+- [[Luogo_Studio_Veterinario_Murakami|Studio veterinario Murakami — Yamashina]]

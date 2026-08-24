@@ -57,6 +57,6 @@ Edificio tradizionale di 2 piani in legno scuro, insegna noren blu all'ingresso,
 - Tachi Yūichirō è **collaborativo se trattato bene**, può fornire la lista degli annunci precedenti (12 mesi)
 
 ## Collegamenti
-- [[Saitō Gorō — Capo Nitōgun]]
-- [[Capannone Kameoka]]
-- [[Sistema annunci Kyoto Shimbun]] *(da creare)*
+- [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[PNG_Nitogun_Banda|Nitōgun — Banda (codice annunci)]]

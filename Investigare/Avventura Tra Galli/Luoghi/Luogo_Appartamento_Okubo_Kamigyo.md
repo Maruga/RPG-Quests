@@ -26,13 +26,13 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 ## Parcheggio sotterraneo
 - 32 posti auto, illuminazione fluorescente, telecamere agli angoli (qualità mediocre)
 - Auto di Ōkubo: **Nissan Skyline R32**, posto B-04
-- **14/02 ore 22:30**: Ōkubo rientra al condominio per **un rapido prelievo** (Tokarev nel comodino + contante d'emergenza ¥600.000): vuole partire per Nagoya il mattino seguente e ritiene 5 minuti a casa un rischio gestibile. Kuroda lo aspetta dietro un pilastro vicino al posto B-04. Spara 2 colpi appena Ōkubo scende dall'auto: il primo manca, il secondo lo colpisce alla spalla destra. Ōkubo si accuccia dietro l'auto e grida. Un vicino di casa rientra in auto in quel momento dalla rampa: i fari illuminano la scena, Kuroda fugge per la stessa rampa di uscita a piedi.
+- **14/02 ore 22:30**: Ōkubo rientra al condominio per **un rapido prelievo** (Tokarev nel comodino + contante d'emergenza ¥600.000): vuole partire per Nagoya il mattino seguente e ritiene 5 minuti a casa un rischio gestibile. Kuroda lo aspetta dietro un pilastro vicino al posto B-04. Spara 2 colpi appena Ōkubo scende dall'auto: il primo manca, il secondo lo colpisce alla spalla destra; i due bossoli espulsi restano a terra e vengono repertati (stessa arma della Kyoto Station: collegamento balistico tra i due attacchi). Ōkubo si accuccia dietro l'auto e grida. Un vicino di casa rientra in auto in quel momento dalla rampa: i fari illuminano la scena, Kuroda fugge per la stessa rampa di uscita a piedi.
 - Telecamera del parcheggio: registra **Kuroda** parzialmente, vista parziale del giubbotto bomber e delle scarpe Asics
 - Ambulanza chiamata dal Sig. Hayama alle 22:33, arrivo alle 22:42, ricovero al Kyoto University Hospital alle 23:15
 
 ## Persone presenti
 - Ōkubo Kenji fino al 14/02 (poi in ospedale)
-- Vicini: la **Sig.ra Ueda** (62 anni, vedova, interno 404) sente i tre colpi salire dalla **tromba dell'ascensore** (porte aperte al 4° piano in quel momento, eco architettonica del parcheggio sotterraneo). Chiama il 119 alle 22:31. Testimone secondaria.
+- Vicini: la **Sig.ra Ueda** (62 anni, vedova, interno 404) sente i due colpi salire dalla **tromba dell'ascensore** (porte aperte al 4° piano in quel momento, eco architettonica del parcheggio sotterraneo). Chiama il 119 alle 22:31. Testimone secondaria.
 - Vicino in auto: residente del condominio (54 anni, dirigente in pensione) — testimone diretto, vede di sfuggita la fuga di Kuroda. **Descrizione fornita** alla polizia: bomber scuro, sneaker chiare, corporatura atletica, ~1,80 m. **Non ricorda il volto** (era buio, fari abbaglianti). Identità per verbale ma non centrale per l'indagine
 
 ## Indagine
@@ -46,6 +46,6 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 - Il fatto che Ōkubo sia armato è un dettaglio narrativo: quando il secondo attentato avviene in ospedale, lui è disarmato e dipende interamente dalla protezione esterna
 
 ## Collegamenti
-- [[Ōkubo Kenji — Prestanome consapevole]]
-- [[Kuroda Ryō — Esecutore]]
-- [[Kyoto University Hospital]]
+- [[PNG_Okubo_Kenji_Prestanome_Consapevole|Ōkubo Kenji — Prestanome consapevole]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Kyoto_University_Hospital|Kyoto University Hospital]]

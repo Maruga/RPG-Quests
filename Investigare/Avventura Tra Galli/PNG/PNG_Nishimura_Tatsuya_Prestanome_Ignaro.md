@@ -58,7 +58,7 @@ Il Nitōgun **non lo ha nel mirino** perché lo considera ignaro e di basso live
 - Bel **dilemma morale**: è davvero al sicuro? Mettergli sorveglianza significa "sprecare" risorse, non metterla significa rischiare un quarto morto
 
 ## Collegamenti
-- [[Tachibana Eiji — Vittima]]
-- [[Locale Kōrin — Gion]]
-- [[Capannone Kameoka]]
-- [[Aoyagi Mariko — Amante]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[Luogo_Locale_Korin_Gion|Locale Kōrin — Gion]]
+- [[Luogo_Capannone_Kameoka|Capannone Kameoka]]
+- [[PNG_Aoyagi_Mariko_Amante|Aoyagi Mariko — Amante]]

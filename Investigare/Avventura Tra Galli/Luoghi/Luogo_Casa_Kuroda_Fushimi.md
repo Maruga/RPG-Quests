@@ -22,12 +22,12 @@ Spartano. Letto futon a pavimento, frigorifero piccolo, fornello a gas a 2 fuoch
 
 ### Nel monolocale
 - **Asics Gel** sotto il letto, taglia 27 cm, suola compatibile con impronta scena del crimine
-- **Smith & Wesson Model 36 .38 Special** nascosta in un'**intercapedine del bagno** (dietro la cassetta del WC, accessibile rimuovendo una piastrella)
+- **Makarov PM cal. 9×18** nascosta in un'**intercapedine del bagno** (dietro la cassetta del WC, accessibile rimuovendo una piastrella)
 - **Coltello tantō** rituale giapponese sotto una tavola del pavimento (oggetto culturale personale)
 - Quaderno di **calligrafia giapponese**: esercizi quotidiani, sorprende per livello e dettaglio (lato culturale segreto del personaggio)
 - Banconote **¥10.000 numerazione consecutiva** (¥800.000) in una scatola di scarpe (paga di Saitō, tracciabile)
-- Telefono **Nokia 5110 prepagato** con sole 4 chiamate ricevute da Hayashi nei giorni 10, 12, 14, 16 febbraio
-- Bossoli **.38 Special** di scorta in una scatolina (5 cartucce)
+- Cellulare **prepagato** con sole 4 chiamate ricevute da Hayashi nei giorni 10, 12, 14, 16 febbraio
+- Cartucce **9×18 Makarov** di scorta in una scatolina (5)
 
 ### Nella palestra
 - Registro frequenze allievi (in regola)
@@ -52,10 +52,10 @@ Spartano. Letto futon a pavimento, frigorifero piccolo, fornello a gas a 2 fuoch
 
 ## Note operative GM
 - L'arresto di Kuroda è una **scena d'azione** con probabili tiri di abilità fisica/tattica
-- La **prova balistica** del Smith & Wesson confronta i fori sulla porta della Kyoto Station: prova decisiva
+- La **prova balistica** della Makarov (striature dei proiettili recuperati + segni del percussore sul bossolo della stazione): prova decisiva
 - Il **quaderno di calligrafia** è un dettaglio caratteriale che umanizza Kuroda — opzionale ma narrativamente forte
 
 ## Collegamenti
-- [[Kuroda Ryō — Esecutore]]
-- [[Kyoto Station 1998 — Scena del crimine]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]
+- [[Luogo_Kyoto_Station_Scena_Crimine|Kyoto Station 1998 — Scena del crimine]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

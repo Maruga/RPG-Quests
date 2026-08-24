@@ -38,7 +38,7 @@
 - Scrivania in legno scuro, ordinata
 - **Schedario in metallo a 4 cassetti** chiuso a chiave (chiave nascosta sotto il tappetino della scrivania):
   - Cassetto 1: contabilità ufficiale del locale Kōrin (in regola)
-  - Cassetto 2: estratti conto bancari UFJ, movimenti regolari
+  - Cassetto 2: estratti conto bancari Sanwa Bank, movimenti regolari
   - Cassetto 3: **archivio Kyoto Shimbun**, 4 copie piegate con cura, etichetta data scritta a mano:
     - Ottobre 1997
     - Novembre 1997
@@ -86,7 +86,7 @@
 
 ### Altri oggetti
 
-- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate. Sviluppate in laboratorio (richiede 3-4 giorni, **distrazione potenziale**): contengono filmati privati anni '90 con la moglie Setsuko (viaggio a Hokkaidō nell'estate '94, festa di compleanno della cognata, dettagli familiari). **Niente di criminale**, è un ricordo personale che Tachibana conservava. I PG che spendono tempo qui perdono giorni di indagine
+- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate. Sviluppo in laboratorio (richiede 3-4 giorni): riprese sgranate, girate di nascosto a una serata di combattimenti al capannone — tra gli spettatori è **riconoscibile un politico locale**, cliente del giro. Era l'assicurazione privata di Tachibana: il motivo per cui si credeva protetto. **Non toccano i tre omicidi** — aprono il filone politico (subtrama o seguito di campagna)
 - Album fotografico in salotto: foto di matrimonio del 1985, viaggi con la moglie fino al 1995, poi nessuna foto recente
 - **Sotto il letto**, in una scatola di scarpe: pacchetto di vecchie lettere d'amore della moglie Setsuko, conservate
 - Niente armi, niente droga, niente materiale incriminante diretto sul Nitōgun
@@ -105,15 +105,15 @@ Il **fascicolo della Polizia Tributaria di Kyoto (Kokuzei)** verrà aperto come 
 - La cassaforte richiede una scelta investigativa: chiamare lo scassinatore della Polizia (richiede 24h di attesa), oppure lavorare sull'amante che potrebbe conoscere il codice (dato che ha dormito lì).
 - **Mariko conosce il codice**: 0418 (compleanno di lei). Se i PG la pressano correttamente, lo dà.
 - I 2 messaggi in segreteria sono **fondamentali**: il primo è una chiamata che attira la vittima alla stazione. La traccia audio è ascoltabile e può essere fatta riconoscere a un altro PNG (testimone vocale futuro).
-- I 3 rullini Super 8 non sviluppati sono un gancio: i PG potrebbero scoprire troppo tardi che contenevano filmati compromettenti su un cliente politico — apertura per subtrama o seguito di campagna.
+- I 3 rullini Super 8 sono un gancio a scoppio ritardato: lo sviluppo richiede 3-4 giorni, quindi il contenuto arriva a indagine avanzata. Il politico ripreso non c'entra con i tre omicidi: il filone si delega o diventa seguito di campagna.
 
 ---
 
 ## Collegamenti
 
-- [[Tachibana Eiji — Vittima]]
-- [[Aoyagi Mariko — Amante]]
-- [[Tachibana Setsuko — Moglie separata]]
-- [[Cellulare Tachibana — Registro chiamate]]
-- [[Taccuino Tachibana]]
-- [[Hayashi Tomoki — Logistica Nitōgun]]
+- [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]
+- [[PNG_Aoyagi_Mariko_Amante|Aoyagi Mariko — Amante]]
+- [[PNG_Tachibana_Setsuko_Moglie|Tachibana Setsuko — Moglie separata]]
+- [[Storia Completa|Cellulare Tachibana — Registro chiamate]]
+- [[Storia Completa|Taccuino Tachibana]]
+- [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
