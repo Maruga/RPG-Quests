@@ -92,7 +92,7 @@
         document.getElementById("pg-indietro").disabled = passoCorrente === 0;
         document.getElementById("pg-avanti").textContent = passoCorrente === PASSI - 1 ? "Fine" : "Avanti ›";
         if (passoCorrente === 6) aggiornaKi();
-        if (passoCorrente === 12) { renderRiepilogo(); renderShugyo(); }
+        if (passoCorrente === 12) { renderRiepilogo(); if (window.PG.crescitaAttiva) renderShugyo(); }
         tipCasuale(); // 豆知識: una curiosità sul Giappone a ogni cambio di pagina
         window.scrollTo({ top: 0 });
         salvaDebounce(); // memorizza il passo raggiunto
@@ -132,7 +132,7 @@
         aggiornaContatoreAttr();
     }
     function cambiaAttr(a, d) {
-        if (attrCresciuti()) return; // creazione chiusa: si cresce solo con lo Shugyō
+        if (window.PG.crescitaAttiva && attrCresciuti()) return; // creazione chiusa: si cresce solo con lo Shugyō
         const at = attributi();
         const nuovo = at[a] + d;
         if (nuovo < ATTR_MIN || nuovo > ATTR_MAX) return;
@@ -656,7 +656,7 @@
         const kiCorpo = `<p class="pg-riep-p"><strong>Ki massimo ${kiMax() ?? "—"}</strong>${dadi ? ` <small>(dadi ${dadi}${S.ki.extra ? " + " + S.ki.extra + " comprato" : ""})</small>` : ""}</p>
             <p class="pg-riep-p"><small>Genkai (crollo) a Ki ≤ 3 · Nasake 情け ☐ · Soroban parte da 5</small></p>`;
         const gouCorpo = gou ? `<p class="pg-riep-p"><strong>${esc(gou.nome)} ${gou.kanji}</strong> — <em>${esc(gou.tagline || "")}</em></p>
-            <p class="pg-riep-p"><small>${gou.attributi.join(" o ")} · costo ${S.shugyo && S.shugyo.gouAffinato ? (gou.costo - 1) + " Ki (affinato)" : gou.costo + " Ki"} · si attiva solo restando a Ki ≥ 1 · a ogni uso il costo raddoppia, una notte di riposo lo riduce di un grado</small></p>
+            <p class="pg-riep-p"><small>${gou.attributi.join(" o ")} · costo ${window.PG.crescitaAttiva && S.shugyo && S.shugyo.gouAffinato ? (gou.costo - 1) + " Ki (affinato)" : gou.costo + " Ki"} · si attiva solo restando a Ki ≥ 1 · a ogni uso il costo raddoppia, una notte di riposo lo riduce di un grado</small></p>
             ${(gou.vincolo || "").trim() ? `<p class="pg-riep-p"><small><em>Vincolo:</em> ${esc(gou.vincolo)}</small></p>` : ""}` : "";
         const kiGou = `<div class="pg-riep-duo">
             <div>${sez("気", "Ki", kiCorpo)}</div>
@@ -667,7 +667,7 @@
         const senmonCorpo = `<ul class="pg-riep-lista">` + listaSenmon().map(s => {
             const v = senmonById(s.id) || { nome: s.id, famiglia: "" };
             const malus = s.grado === 3 ? (v.maestroEccezione === "+2C" || (BIB.famiglie.find(f => f.id === v.famiglia) || {}).maestro === "+2C" ? "−2 con Correzione" : "−3") : "−" + s.grado;
-            return `<li><strong>${esc(v.nome)}</strong> — grado ${s.grado} (${malus} al dado)${s.diBase ? " · d'accademia" : ""} · usi ${s.usi || 0}</li>`;
+            return `<li><strong>${esc(v.nome)}</strong> — grado ${s.grado} (${malus} al dado)${s.diBase ? " · d'accademia" : ""}${window.PG.crescitaAttiva ? ` · usi ${s.usi || 0}` : ""}</li>`;
         }).join("") + `</ul>`;
 
         // — storia e aspetto, con le scene personali

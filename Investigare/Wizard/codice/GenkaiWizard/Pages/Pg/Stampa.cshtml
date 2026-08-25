@@ -113,7 +113,7 @@
             <h2>Gou 業 — @gou["nome"] @gou["kanji"]</h2>
             <div class="riga"><em>@gou["tagline"]</em></div>
             <div class="riga"><b>Attributo</b>: @string.Join(" o ", (gou["attributi"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString()))
-                · <b>Costo</b>: @(Model.St["shugyo"]?["gouAffinato"]?.GetValue<bool>() == true ? $"{gou["costo"]!.GetValue<int>() - 1} Ki (affinato)" : $"{gou["costo"]} Ki")
+                · <b>Costo</b>: @(Model.CrescitaAttiva && Model.St["shugyo"]?["gouAffinato"]?.GetValue<bool>() == true ? $"{gou["costo"]!.GetValue<int>() - 1} Ki (affinato)" : $"{gou["costo"]} Ki")
                 · <small>ogni uso raddoppia il costo; una notte −1 grado; attivabile solo restando a Ki ≥ 1</small></div>
             <div class="riga"><b>Successo</b>: @gou["successo"]</div>
             <div class="riga"><b>Fallimento</b>: @gou["fallimento"]</div>
@@ -132,7 +132,7 @@
                 var usi = s?["usi"]?.GetValue<int>() ?? 0;
                 <li><strong>@(voce?["nome"]?.ToString() ?? s?["id"]?.ToString())</strong>
                     (@string.Join(" o ", (voce?["chiave"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString())))
-                    — grado @grado (@(grado == 3 ? (Model.G3Correzione(voce) ? "−2 con Correzione" : "−3 al dado") : $"−{grado} al dado"))@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "") · usi: @usi</li>
+                    — grado @grado (@(grado == 3 ? (Model.G3Correzione(voce) ? "−2 con Correzione" : "−3 al dado") : $"−{grado} al dado"))@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "")@(Model.CrescitaAttiva ? $" · usi: {usi}" : "")</li>
             }
         </ul>
         @if (Model.S("senmonPerche") != "")
@@ -245,9 +245,12 @@
         <h2>Equipaggiamento di servizio</h2>
         <div class="riga">Revolver New Nambu M60 (.38, 5 colpi) e giubbotto antiproiettile — in armadietto, si prelevano firmando · Keibō per le operazioni · Keisatsu techō, manette, taccuino — sempre con te.</div>
 
+        @if (Model.CrescitaAttiva)
+        {
         <h2>Shugyō 修行</h2>
         <div class="riga">Punti guadagnati: <strong>@(Model.N("shugyo.punti") ?? 0)</strong> ·
             spesi: <strong>@(((Model.St["shugyo"]?["log"] as JsonArray) ?? new JsonArray()).Sum(x => x?["costo"]?.GetValue<int>() ?? 0))</strong></div>
+        }
         @if (scene.Count > 0)
         {
             <h2>Scene</h2>

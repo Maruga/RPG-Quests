@@ -163,7 +163,7 @@
         <!-- ═══════════ 4 · SENMON ═══════════ -->
         <section data-pg-passo="4" hidden>
             <h2>Senmon 専門 — le tue specializzazioni</h2>
-            <p class="wz-aiuto">Le Senmon sono le cose che sai fare <strong>meglio degli altri</strong>: danno un bonus (−1 al dado a grado 1) sui tiri del loro campo. Parti con <strong>Lotta 1</strong> (l'addestramento d'accademia, ce l'hanno tutti) e <strong>una specializzazione a tua scelta</strong>, giustificata dal tuo passato. Puoi averne <strong>anche più d'una</strong>: dalla seconda in poi però servono i <strong>punti Shugyō</strong> (9 punti l'una) — si comprano nel passo 12, quando li avrai.</p>
+            <p class="wz-aiuto">Le Senmon sono le cose che sai fare <strong>meglio degli altri</strong>: danno un bonus (−1 al dado a grado 1) sui tiri del loro campo. Parti con <strong>Lotta 1</strong> (l'addestramento d'accademia, ce l'hanno tutti) e <strong>una specializzazione a tua scelta</strong>, giustificata dal tuo passato. @if (Model.CrescitaAttiva) {<text>Puoi averne <strong>anche più d'una</strong>: dalla seconda in poi però servono i <strong>punti Shugyō</strong> (9 punti l'una) — si comprano nel passo 12, quando li avrai.</text>}</p>
 
             <div class="wz-info pg-fisso">🥋 <strong>Lotta 1 — d'accademia</strong> (Presenza) · pugni, prese, tecniche d'arresto. La hanno tutti gli investigatori: è già sulla tua scheda.</div>
 
@@ -352,6 +352,10 @@
                 </ul>
             </div>
 
+            @* la crescita è disattivata (Funzioni:Crescita) — arriverà in una pagina dedicata,
+               fuori dal flusso di creazione, per non confondere chi crea la prima scheda *@
+            @if (Model.CrescitaAttiva)
+            {
             <h3 class="wz-h3">Crescita — Shugyō 修行 <small>(si spende SOLO tra un caso e l'altro)</small></h3>
             <details class="wz-help"><summary>❓ Come si guadagnano i punti</summary><div>
                 <p><strong>+1</strong> a sessione giocata · <strong>+4-6</strong> a caso chiuso (4 con buchi, 5 solido, 6 esemplare) · <strong>+1</strong> per una Scena Personale gestita bene · <strong>+1</strong> per un momento eccezionale (max 1 a sessione).</p>
@@ -363,6 +367,7 @@
             <div id="pg-shu-acquisti" class="wz-info"></div>
             <h4 class="wz-h3">Registro acquisti</h4>
             <div id="pg-shu-log" class="wz-info"><em>Nessun acquisto ancora.</em></div>
+            }
 
             <p class="wz-nota">🖨 La <a asp-page="/Pg/Stampa" asp-route-id="@Model.Pg.Id"><strong>vista stampabile</strong></a> è la scheda da portare al tavolo.</p>
         </section>
@@ -387,6 +392,7 @@
             id: '@Model.Pg.Id',
             passo: @Model.Pg.PassoCorrente,
             aiAttiva: @(Model.AiAttiva ? "true" : "false"),
+            crescitaAttiva: @(Model.CrescitaAttiva ? "true" : "false"),
             immaginiAttive: @(Model.ImmaginiAttive ? "true" : "false"),
             @* «</» → «<\/»: se un testo della scheda contiene "</script>" non deve chiudere questo blocco *@
             stato: @Html.Raw(Model.Pg.StatoJson.Replace("</", "<\\/"))

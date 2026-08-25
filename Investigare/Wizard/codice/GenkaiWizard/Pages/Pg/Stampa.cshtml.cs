@@ -11,9 +11,12 @@ namespace GenkaiWizard.Pages.Pg;
 /// <summary>Vista stampabile della scheda PG (HTML, window.print → PDF).</summary>
 public class StampaModel : PageModel
 {
+    private IConfiguration _cfg = default!;
+    /// <summary>Avanzamento spento di default (Funzioni:Crescita = "si" per riaccenderlo).</summary>
+    public bool CrescitaAttiva => string.Equals(_cfg["Funzioni:Crescita"], "si", StringComparison.OrdinalIgnoreCase);
     private readonly ApplicationDbContext _db;
     private readonly Services.Biblioteche _bib;
-    public StampaModel(ApplicationDbContext db, Services.Biblioteche bib) { _db = db; _bib = bib; }
+    public StampaModel(ApplicationDbContext db, Services.Biblioteche bib, IConfiguration cfg) { _db = db; _bib = bib;  _cfg = cfg; }
 
     public Personaggio Pg { get; set; } = default!;
     public JsonObject St { get; set; } = new();

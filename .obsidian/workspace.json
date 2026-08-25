@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5987b7f5f3774091",
+        "id": "b17de87f657e5d14",
         "type": "tabs",
         "children": [
           {
-            "id": "f54b7d835d8bcd45",
+            "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investigare/Avventura Tra Galli/Storia Completa.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Storia Completa"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -227,8 +223,13 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "f54b7d835d8bcd45",
+  "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Wizard/codice/GenkaiWizard/obj/2e800621-bdc6-42d2-9a2b-42ff1de082af.tmp",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
+    "Investigare/Wizard/codice/GenkaiWizard/obj/10d59965-b2b0-42fd-9334-7145e68c826f.tmp",
+    "Investigare/Avventura Tra Galli/Storia Completa.md",
     "Investigare/Avventura Tra Galli/PIANO_HANDOUT_IMMAGINI.md",
     "Investigare/Avventura Tra Galli/CLAUDE.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Ristorante_Kameoka_tei.md",
@@ -243,16 +244,12 @@
     "Investigare/Avventura Tra Galli/PNG/PNG_Hayashi_Tomoki_Logistica_Nitogun.md",
     "Investigare/Avventura Tra Galli/PNG/# Tachibana Eiji — Vittima.md",
     "Investigare/Avventura Tra Galli/PNG/# Tachibana Eiji — Vittima.md.tmp.43188.a3d12aba15d9",
-    "Investigare/Avventura Tra Galli/Storia Completa.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md.tmp.43188.025f225f3a8c",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Okubo_Kamigyo.md.tmp.43188.7625b602f992",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Kyoto_Station_Scena_Crimine.md.tmp.43188.821cdd1a1ae2",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Kyoto_Station_Scena_Crimine.md.tmp.43188.45f0c0bf0211",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Kyoto_Station_Scena_Crimine.md.tmp.43188.18d56c7724e3",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Hayashi_Kameoka.md.tmp.43188.ac82917f2af4",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Kuroda_Fushimi.md.tmp.43188.93935ca21c22",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Casa_Kuroda_Fushimi.md.tmp.43188.6d23dabab395",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Kuroda_Ryo_Esecutore.md.tmp.43188.a56272307020",
     "Investigare/Avventura Tra Galli/Immagini/InventarioVittima.png",
     "Investigare/Avventura Tra Galli/Immagini/AssassinoArrivaStazione.png",
     "Investigare/Avventura Tra Galli/Immagini/AssassinoEsceStazione.png",
@@ -273,7 +270,6 @@
     "Investigare/Avventura Il Giudice/CRONISTORIA COMPLETA.md",
     "Investigare/Avventura La Falsa Primavera/Immagini/Fotogramma.png",
     "Investigare/Avventura La Falsa Primavera/GM_Apertura.md",
-    "Investigare/Avventura Richiamo/SCHEDA_NUSHI.md",
     "Investigare/Avventura Richiamo/Immagini/Scheda Kaiju.png"
   ]
 }
