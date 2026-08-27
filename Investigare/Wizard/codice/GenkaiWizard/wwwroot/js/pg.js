@@ -37,6 +37,11 @@
     };
     document.addEventListener("DOMContentLoaded", aggiornaQuota);
 
+    // nei campi numerici (età, anni di servizio) niente lettere: il type=number lascia
+    // passare e/E/+/-/./, — qui si bloccano, restano solo cifre e tasti di controllo
+    document.querySelectorAll('input[type="number"]').forEach(inp =>
+        inp.addEventListener("keydown", ev => { if (["e", "E", "+", "-", ".", ","].includes(ev.key)) ev.preventDefault(); }));
+
     // modello + ragionamento AI (stesse chiavi del wizard-avventure: scelta condivisa)
     const MODELLO_DEFAULT = "claude-opus-5";
     const modelloAI = () => localStorage.getItem("wizModelAI") || MODELLO_DEFAULT;
@@ -1218,7 +1223,7 @@
     // NB tenere allineato allo stato iniziale di Pages/Pg/Index.OnPostCrea
     const statoIniziale = () => ({
         versione: 1,
-        identita: { cognome: "", nome: "", kanji: "", eta: 30, genere: "m", ruolo: "Investigatore", grado: "", anniServizio: 5, quartiere: "", via: "", telefono: "", pocketBell: "", altroContatto: "" },
+        identita: { cognome: "", nome: "", kanji: "", eta: 30, genere: "m", ruolo: "Interrogatore", grado: "Junsa-buchō (Sergente)", anniServizio: 5, quartiere: "", via: "", telefono: "", pocketBell: "", altroContatto: "" },
         attributi: { "Distacco": 4, "Pazienza": 4, "Silenzio": 4, "Lucidità": 4, "Ascolto": 4, "Presenza": 4 },
         ki: { dadi: null, ritirato: false, extra: 0 },
         gouId: "",

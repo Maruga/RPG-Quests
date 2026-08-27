@@ -63,7 +63,7 @@ public class IndexModel : PageModel
             StatoJson = """
             {
               "versione": 1,
-              "identita": { "cognome": "", "nome": "", "kanji": "", "eta": 30, "genere": "m", "ruolo": "Investigatore", "grado": "", "anniServizio": 5, "quartiere": "", "via": "", "telefono": "", "pocketBell": "", "altroContatto": "" },
+              "identita": { "cognome": "", "nome": "", "kanji": "", "eta": 30, "genere": "m", "ruolo": "Interrogatore", "grado": "Junsa-buchō (Sergente)", "anniServizio": 5, "quartiere": "", "via": "", "telefono": "", "pocketBell": "", "altroContatto": "" },
               "attributi": { "Distacco": 4, "Pazienza": 4, "Silenzio": 4, "Lucidità": 4, "Ascolto": 4, "Presenza": 4 },
               "ki": { "dadi": null, "ritirato": false, "extra": 0 },
               "gouId": "",
