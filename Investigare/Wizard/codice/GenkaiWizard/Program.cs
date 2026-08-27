@@ -311,7 +311,7 @@ api.MapPost("/progetti/{id:guid}/descrizione", async (
     if (p is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid))
+    if (!quota.ConsumaTesto(uid))
         return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
@@ -337,7 +337,7 @@ api.MapPost("/progetti/{id:guid}/deposizione", async (
     if (p is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid))
+    if (!quota.ConsumaTesto(uid))
         return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
@@ -364,7 +364,7 @@ api.MapPost("/progetti/{id:guid}/scheda-campo", async (
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (string.IsNullOrWhiteSpace(body.Campo)) return Results.BadRequest(new { errore = "campo mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
     {
@@ -389,7 +389,7 @@ api.MapPost("/progetti/{id:guid}/contatti", async (
     if (p is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
     {
@@ -414,7 +414,7 @@ api.MapPost("/progetti/{id:guid}/calendario-evento", async (
     if (p is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.Richiesta)) return Results.BadRequest(new { errore = "richiesta mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
     {
@@ -439,7 +439,7 @@ api.MapPost("/progetti/{id:guid}/genera-foto", async (
     if (string.IsNullOrWhiteSpace(body.Prompt)) return Results.BadRequest(new { errore = "prompt mancante" });
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!img.Attivo) return Results.Problem("Generazione immagini non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (!quota.ConsumaImmagine(uid)) return Results.Problem("Quota immagini giornaliera esaurita", statusCode: 429);
 
     try
     {
@@ -504,7 +504,7 @@ api.MapPost("/progetti/{id:guid}/handout", async (
     if (p is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.HandoutId)) return Results.BadRequest(new { errore = "handoutId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
     {
@@ -528,7 +528,7 @@ api.MapPost("/progetti/{id:guid}/proponi/{passo:int}", async (
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid))
+    if (!quota.ConsumaTesto(uid))
         return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
 
     try
@@ -543,8 +543,20 @@ api.MapPost("/progetti/{id:guid}/proponi/{passo:int}", async (
 });
 
 // Quota rimasta (per mostrare il contatore in UI)
-api.MapGet("/quota", (QuotaAi quota, ClaimsPrincipal user) =>
-    Results.Json(new { rimaste = quota.Rimaste(UtenteId(user)) }));
+api.MapGet("/quota", (QuotaAi quota, HttpContext ctx) =>
+{
+    var ospite = Ospite.SenzaAccount(ctx);
+    var uid = Ospite.ChiUsa(ctx);
+    var testi = quota.RimasteTesto(uid, ospite);
+    var immagini = quota.RimasteImmagini(uid, ospite);
+    if (ospite)
+    {
+        // per gli ospiti vale il contatore più stretto tra cookie e IP
+        testi = Math.Min(testi, quota.RimasteTesto(Ospite.ChiaveIp(ctx), true));
+        immagini = Math.Min(immagini, quota.RimasteImmagini(Ospite.ChiaveIp(ctx), true));
+    }
+    return Results.Json(new { testi, immagini });
+}).AllowAnonymous();
 
 // ═══════════════════════════ API del wizard-PERSONAGGIO ═══════════════════════════
 
@@ -580,8 +592,9 @@ api.MapPost("/pg/{id:guid}/ai-campo", async (
     if (pg is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.Campo)) return Results.BadRequest(new { errore = "campo mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
-    if (Ospite.SenzaAccount(ctx) && !quota.Consuma(Ospite.ChiaveIp(ctx)))
+    var ospite = Ospite.SenzaAccount(ctx);
+    if (!quota.ConsumaTesto(uid, ospite)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    if (ospite && !quota.ConsumaTesto(Ospite.ChiaveIp(ctx), true))
         return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429); // gli ospiti contano anche per IP: il cookie si ricrea, l'IP no
 
     // politica AI del wizard PG (decisione utente 2026-08-18):
@@ -611,9 +624,10 @@ api.MapPost("/pg/{id:guid}/immagine", async (
     if (pg is null) return Results.NotFound();
     if (string.IsNullOrWhiteSpace(body.Prompt)) return Results.BadRequest(new { errore = "prompt mancante" });
     if (!img.Attivo) return Results.Problem("Generazione immagini non configurata su questo server", statusCode: 503);
-    if (!quota.Consuma(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
-    if (Ospite.SenzaAccount(ctx) && !quota.Consuma(Ospite.ChiaveIp(ctx)))
-        return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
+    var ospiteImg = Ospite.SenzaAccount(ctx);
+    if (!quota.ConsumaImmagine(uid, ospiteImg)) return Results.Problem("Quota immagini giornaliera esaurita", statusCode: 429);
+    if (ospiteImg && !quota.ConsumaImmagine(Ospite.ChiaveIp(ctx), true))
+        return Results.Problem("Quota immagini giornaliera esaurita", statusCode: 429);
 
     try
     {

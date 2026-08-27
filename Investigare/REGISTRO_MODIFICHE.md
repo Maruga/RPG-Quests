@@ -11,7 +11,8 @@
 
 ## Da applicare
 
-### 2026-08-24 · TRAGALLI (nuova sessione) → TUTTE · «Avventura Tra Galli» ha una sessione dedicata; avventura resa coerente
+### 2026-08-27 · WIZARD → REGOLE · Glossario Kiwami/Nami esplicitato + nota filosofia (decisione utente)
+Nel glossario del wizard PG (passo Termini), su indicazione dell'utente: **Kiwami 極 = «2 successo critico, 12 fallimento critico»**, **Nami 波 = «3 successo notevole, 11 fallimento notevole» (solo prove di attributo)** — prima diceva solo «critico (2 o 12)» / «notevole (3 o 11)» senza dire quale è il buono. Aggiunta anche una nota di colore voluta dall'utente: la sfortuna può essere un vantaggio (proverbio 塞翁が馬, «perdi il treno… e magari ti porta bene»). Se nel glossario dei manuali Kiwami/Nami sono descritti senza l'esito esplicito, valutare la stessa dicitura. Stessa sera, sempre da indicazione utente, riscritta corta la voce **Soroban**: «l'altalena della giornata: parte da 5, scende con fatiche e pressioni, **risale coi successi**» — verificare che i manuali dicano anche la risalita coi successi. — **DA APPLICARE** (o NON SERVE se il manuale è già esplicito)
 
 L'utente ha aperto una sessione dedicata nella cartella `Avventura Tra Galli/` («Omicidio Kyoto Station 1998»,
 combattimenti clandestini di galli a Kameoka — **anno 1998 confermato dall'utente**). Su suo ordine, passata di

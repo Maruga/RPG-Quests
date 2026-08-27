@@ -11,6 +11,11 @@
         <a asp-page="/Pg/Index" class="wz-indietro" title="I miei personaggi">‹</a>
         <input id="pg-nome-testata" class="wz-titolo" maxlength="120" value="@Model.Pg.Nome" title="Nome del personaggio" />
         <span id="pg-salvato" class="wz-salvato" title="Stato salvataggio">●</span>
+        @if (Model.AiAttiva)
+        {
+            @* contatore semplice: quanti aiuti AI restano oggi (✨ testi · 🎨 immagini) *@
+            <span id="pg-quota" class="wz-salvato" title="Aiuti AI rimasti oggi: ✨ testi · 🎨 immagini. Si azzerano ogni giorno."></span>
+        }
         @* politica AI (2026-08-18): gli ospiti vanno a Opus 5/ragionamento medio FISSI (nessun menu:
            il server ignora comunque quello che arriva dal client); i registrati scelgono il modello
            e il ragionamento Medio (default) o Alto. *@
@@ -67,7 +72,8 @@
 
             <div class="pg-gioco-blocco pg-tiro"><h3>🎲 Il tiro</h3>
                 <p>Si tirano <strong>2 dadi da 6</strong> e si somma: riesci se fai <strong>meno o uguale</strong> al tuo attributo — basso è buono. I risultati speciali hanno un nome:
-                <strong>2 o 12 = Kiwami 極</strong> (l'estremo, il critico) · <strong>3 o 11 = Nami 波</strong> (l'onda, il risultato notevole).</p></div>
+                <strong>2 = successo critico</strong> e <strong>12 = fallimento critico</strong> (<strong>Kiwami 極</strong>, l'estremo) · <strong>3 = successo notevole</strong> e <strong>11 = fallimento notevole</strong> (<strong>Nami 波</strong>, l'onda).</p>
+                <p class="wz-nota">E se il dado va male, ricorda la filosofia giapponese — <strong>塞翁が馬</strong>, «la fortuna è come il cavallo del vecchio Saiō»: quella che sembra una sfortuna può rivelarsi un vantaggio. Perdi il treno… e magari è proprio quello che ti porta bene.</p></div>
 
             <div class="pg-glossario">
                 <div class="pg-gioco-blocco"><h3>限界 Genkai</h3><p><em>Limite</em> — il punto di rottura del personaggio (Ki ≤ 3).</p></div>
@@ -77,13 +83,13 @@
                 <div class="pg-gioco-blocco"><h3>縁者 Enja</h3><p><em>Conoscenza</em> — il contatto esterno che può aiutare.</p></div>
                 <div class="pg-gioco-blocco"><h3>影 Kage</h3><p><em>Ombra</em> — il problema personale che irrompe nel caso.</p></div>
                 <div class="pg-gioco-blocco"><h3>悟り Satori</h3><p><em>Illuminazione</em> — una volta per sessione, il dado puro vale 2 (modificatori normali).</p></div>
-                <div class="pg-gioco-blocco"><h3>極 Kiwami</h3><p><em>Estremo</em> — il risultato critico del dado (2 o 12).</p></div>
-                <div class="pg-gioco-blocco"><h3>波 Nami</h3><p><em>Onda</em> — il risultato notevole del dado (3 o 11), solo su prove di attributo.</p></div>
+                <div class="pg-gioco-blocco"><h3>極 Kiwami</h3><p><em>Estremo</em> — il risultato critico del dado: <strong>2 successo critico, 12 fallimento critico</strong>.</p></div>
+                <div class="pg-gioco-blocco"><h3>波 Nami</h3><p><em>Onda</em> — il risultato notevole del dado, solo su prove di attributo: <strong>3 successo notevole, 11 fallimento notevole</strong>.</p></div>
                 <div class="pg-gioco-blocco"><h3>協力 Kyōryoku</h3><p><em>Supporto</em> — l'aiuto di un compagno su un tiro (+1 all'attributo).</p></div>
                 <div class="pg-gioco-blocco"><h3>修行 Shugyō</h3><p><em>Disciplina</em> — i punti di crescita: si guadagnano coi casi, si spendono tra un caso e l'altro.</p></div>
                 <div class="pg-gioco-blocco"><h3>専門 Senmon</h3><p><em>Specialità</em> — le specializzazioni professionali, in tre gradi.</p></div>
                 <div class="pg-gioco-blocco pg-glossario-15"><h3>情け Nasake</h3><p><em>Compassione</em> — il punto che non si spreca. Quando il dado fa <strong>2 o 3</strong> ma il bonus non ha dove andare (Ki già al massimo e attributo già pieno), lo conservi nel Nasake — <strong>al massimo 1</strong>. Non si usa su di sé: si <strong>dona a un compagno</strong> interpretando la scena, e lui recupera <strong>1 Ki</strong>. A fine sessione, se non donato, si perde.</p></div>
-                <div class="pg-gioco-blocco pg-glossario-15"><h3>算盤 Soroban</h3><p><em>Abaco</em> — il contatore della giornata. A inizio giornata parte da <strong>5</strong> e scende man mano che accumuli fatiche, pressioni e pesi. A fine giornata dice quanto hai tirato la corda — e lascia uno <em>strascico</em>: domani non riparti da zero, la chiusura di oggi si sposta di un passo verso il riposo. Lo gestisce il GM al tavolo: qui basta sapere che esiste.</p></div>
+                <div class="pg-gioco-blocco pg-glossario-15"><h3>算盤 Soroban</h3><p><em>Abaco</em> — l'altalena della giornata: parte da <strong>5</strong>, scende con fatiche e pressioni, <strong>risale coi successi</strong>. Come chiudi oggi lascia uno strascico su domani. Lo gestisce il GM al tavolo.</p></div>
             </div>
 
             <p class="wz-nota">Premi <strong>Avanti</strong> e cominciamo dal nome.</p>
@@ -224,7 +230,7 @@
             <h3 class="wz-h3">Nasake 情け e Soroban 算盤 <small>(li incontrerai in gioco — non devi segnare nulla ora)</small></h3>
             <div class="wz-info">
                 <p><strong>Nasake 情け — il punto che non si spreca.</strong> Quando il dado fa <strong>2 o 3</strong> ma il bonus non ha dove andare (Ki già al massimo e attributo già pieno), quel punto non va perso: lo conservi nel Nasake — ne tieni <strong>al massimo 1</strong>. Non si usa su di sé: si <strong>dona a un compagno</strong> in difficoltà, interpretando la scena — un gesto, una parola — e lui recupera <strong>1 Ki</strong>. Se non lo doni, a fine sessione si perde. <em>La compassione non è solo per gli altri: quello che doni torna a te.</em></p>
-                <p><strong>Soroban 算盤 — il contatore della giornata.</strong> A inizio giornata parte da <strong>5</strong> e scende man mano che accumuli fatiche, pressioni e pesi. A fine giornata dice quanto hai tirato la corda — e lascia uno <strong>strascico</strong>: domani non riparti da zero, la chiusura di oggi si sposta di un passo verso il riposo. Lo gestisce il GM al tavolo: qui basta sapere che esiste.</p>
+                <p><strong>Soroban 算盤 — l'altalena della giornata.</strong> Parte da <strong>5</strong>, scende con fatiche e pressioni, <strong>risale coi successi</strong>. Come chiudi oggi lascia uno <strong>strascico</strong> su domani. Lo gestisce il GM al tavolo: qui basta sapere che esiste.</p>
             </div>
         </section>
 

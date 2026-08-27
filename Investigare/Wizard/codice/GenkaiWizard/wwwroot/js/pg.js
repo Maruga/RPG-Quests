@@ -14,6 +14,29 @@
     const PASSI = 13; // 0 = 🍵 il tè (sfondo e musica), poi 1-12
     let BIB = { gou: [], senmon: [], gradi: [], famiglie: [], quartieri: [] };
 
+    // ── contatore quota AI: quanti aiuti restano oggi (✨ testi · 🎨 immagini) ──
+    async function aggiornaQuota() {
+        const el = document.getElementById("pg-quota");
+        if (!el) return;
+        try {
+            const r = await fetch("/api/quota");
+            if (!r.ok) return;
+            const q = await r.json();
+            el.textContent = `✨ ${q.testi} · 🎨 ${q.immagini}`;
+            el.classList.toggle("errore", q.testi === 0 || q.immagini === 0); // rosso del tema quando un contatore è a 0
+        } catch { /* rete assente: il contatore resta com'era */ }
+    }
+    // ogni chiamata AI (testo o immagine) rinfresca il contatore — un solo aggancio,
+    // senza toccare i ~10 punti di chiamata sparsi nel file
+    const _fetchOriginale = window.fetch.bind(window);
+    window.fetch = function (url, opzioni) {
+        const p = _fetchOriginale(url, opzioni);
+        if (typeof url === "string" && (url.includes("/ai-campo") || url.includes("/immagine")))
+            p.then(() => setTimeout(aggiornaQuota, 150), () => { });
+        return p;
+    };
+    document.addEventListener("DOMContentLoaded", aggiornaQuota);
+
     // modello + ragionamento AI (stesse chiavi del wizard-avventure: scelta condivisa)
     const MODELLO_DEFAULT = "claude-opus-5";
     const modelloAI = () => localStorage.getItem("wizModelAI") || MODELLO_DEFAULT;
