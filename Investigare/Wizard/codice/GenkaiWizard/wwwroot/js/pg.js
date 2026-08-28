@@ -412,7 +412,7 @@
                     const val = (json.testo || "").trim();
                     if (!val) { alert("L'AI non ha restituito nulla — riprova."); return; } // mai svuotare
                     const el = document.querySelector(`[data-pg-campo="${dest}"]`);
-                    if (el) { el.value = val; if (dest === "identita.kanji") el.dataset.auto = "1"; }
+                    if (el) { el.value = val; }
                     set(dest, val);
                 } catch { alert("AI non raggiungibile"); }
                 finally { btn.disabled = false; btn.textContent = orig; }
@@ -936,41 +936,52 @@
         }
         // kanji automatici: quando scrivi cognome+nome arrivano da soli — dalla biblioteca se il
         // nome è nei pool, altrimenti li chiede all'AI da solo (consuma 1 ✨). Se cambi il nome si
-        // rigenerano; i kanji scritti A MANO nel campo invece non si toccano mai.
+        // rigenerano SEMPRE (il kanji segue il nome); una correzione a mano regge finché il nome non cambia.
         const cog = document.querySelector('[data-pg-campo="identita.cognome"]');
         const nom = document.querySelector('[data-pg-campo="identita.nome"]');
         const kan = document.querySelector('[data-pg-campo="identita.kanji"]');
-        const setKanjiAuto = v => { kan.value = v; set("identita.kanji", v); kan.dataset.auto = v ? "1" : ""; };
-        kan.addEventListener("input", () => { kan.dataset.auto = ""; }); // toccato a mano: da qui in poi è suo
+        const setKanjiAuto = v => { kan.value = v; set("identita.kanji", v); };
+        const haGiapponese = v => /[　-ヿ㐀-鿿豈-﫿]/.test(v);
         let t = null, ultimaChiesta = "";
-        const prova = () => {
+        // se corregge i kanji a mano, per QUESTO nome restano suoi — ma al prossimo cambio nome si rifanno
+        kan.addEventListener("input", () => { ultimaChiesta = cog.value.trim() + " " + nom.value.trim(); });
+        const prova = (allApertura, conAI) => {
             clearTimeout(t);
             t = setTimeout(async () => {
-                if (kan.value.trim() && kan.dataset.auto !== "1") return; // mai sovrascrivere kanji scritti a mano
+                // mentre SCRIVI: solo la biblioteca (gratis). L'AI parte SOLO quando esci dal campo
+                // (o all'apertura pagina se i kanji mancano): una chiamata per nome, mai sui tasti.
+                if (allApertura === true && haGiapponese(kan.value)) return;
                 const c = cog.value.trim(), n = nom.value.trim();
                 if (!c || !n) return;
-                const chiave = c + " " + n;
-                if (chiave === ultimaChiesta) return; // per questo nome abbiamo già chiesto
-                ultimaChiesta = chiave;
                 try {
                     const r = await fetch(`/api/nomi/verifica?cognome=${encodeURIComponent(c)}&nome=${encodeURIComponent(n)}`);
                     const j = await r.json();
                     if (cog.value.trim() !== c || nom.value.trim() !== n) return; // nel frattempo l'ha riscritto
                     if (j.kanji) { setKanjiAuto(j.kanji); return; }
-                    if (!PG.aiAttiva) return;
-                    await salvaOra(); // l'AI legge cognome/nome dallo stato sul server
-                    const ra = await fetch(`/api/pg/${PG.id}/ai-campo`, {
-                        method: "POST", headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ campo: "kanji", modello: modelloAI(), effort: effortAI() })
-                    });
-                    const ja = await ra.json().catch(() => ({}));
-                    const v = (ja.testo || "").trim().split("\n")[0].trim();
-                    if (ra.ok && v && cog.value.trim() === c && nom.value.trim() === n) setKanjiAuto(v);
+                    if (conAI !== true || !PG.aiAttiva) return;
+                    const chiave = c + " " + n;
+                    if (chiave === ultimaChiesta) return; // per questo nome l'AI ha già risposto (o i kanji sono suoi)
+                    ultimaChiesta = chiave;
+                    const phPrima = kan.placeholder;
+                    setKanjiAuto(""); kan.placeholder = "✨ sto scrivendo i kanji…";
+                    try {
+                        await salvaOra(); // l'AI legge cognome/nome dallo stato sul server
+                        const ra = await fetch(`/api/pg/${PG.id}/ai-campo`, {
+                            method: "POST", headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ campo: "kanji", modello: modelloAI(), effort: effortAI() })
+                        });
+                        const ja = await ra.json().catch(() => ({}));
+                        const v = (ja.testo || "").trim().split("\n")[0].trim();
+                        if (ra.ok && v && cog.value.trim() === c && nom.value.trim() === n) setKanjiAuto(v);
+                    } finally { kan.placeholder = phPrima; }
                 } catch { }
-            }, 900);
+            }, conAI === true ? 150 : 500);
         };
-        cog.addEventListener("input", prova);
-        nom.addEventListener("input", prova);
+        cog.addEventListener("input", () => prova());
+        nom.addEventListener("input", () => prova());
+        cog.addEventListener("change", () => prova(false, true)); // «change» scatta quando esci dal campo
+        nom.addEventListener("change", () => prova(false, true));
+        prova(true, true); // all'apertura: se nome e cognome ci sono già e i kanji mancano (o sono romaji), arrivano da soli
     }
 
     // ───────── 🔮 nomi su misura (passo 2) ─────────
@@ -984,8 +995,6 @@
                 if (el) el.value = n[k] || "";
                 set("identita." + k, n[k] || "");
             });
-            const kEl = document.querySelector('[data-pg-campo="identita.kanji"]');
-            if (kEl) kEl.dataset.auto = "1"; // derivati dal nome proposto: se poi lo cambia, si rigenerano
             aggiornaTitolo();
             out.querySelectorAll(".pg-nome-card").forEach(c => c.classList.toggle("scelto", c.dataset.cognome === n.cognome && c.dataset.nome === n.nome));
         };
