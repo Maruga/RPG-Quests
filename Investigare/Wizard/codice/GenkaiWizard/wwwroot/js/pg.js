@@ -135,7 +135,9 @@
     }
 
     // ───────── attributi ─────────
-    const PUNTI_ATTR = 9, ATTR_MIN = 4, ATTR_MAX = 9;
+    // creazione: 4-8 (decisione utente 2026-08-28) — il 9 si raggiunge solo dopo, comprandolo
+    // con lo Shugyō (che ha il suo tetto a 9)
+    const PUNTI_ATTR = 9, ATTR_MIN = 4, ATTR_MAX_CREAZIONE = 8, ATTR_MAX = 9;
     const attributi = () => { if (!S.attributi) S.attributi = {}; ATTR.forEach(a => { if (typeof S.attributi[a] !== "number") S.attributi[a] = 4; }); return S.attributi; };
     const puntiUsati = () => ATTR.reduce((n, a) => n + (attributi()[a] - ATTR_MIN), 0);
     // dopo il primo acquisto «Attributo +1» con lo Shugyō la distribuzione di creazione è chiusa:
@@ -144,7 +146,7 @@
     function renderAttributi() {
         const box = document.getElementById("pg-attributi");
         const at = attributi();
-        const bloccati = attrCresciuti();
+        const bloccati = window.PG.crescitaAttiva && attrCresciuti(); // (come in cambiaAttr: a crescita spenta non si blocca nulla)
         box.innerHTML = ATTR.map(a => `
             <div class="pg-attr">
                 <div class="pg-attr-testa"><strong>${a}</strong><small> — ${ATTR_DESC[a]}</small></div>
@@ -163,7 +165,7 @@
         if (window.PG.crescitaAttiva && attrCresciuti()) return; // creazione chiusa: si cresce solo con lo Shugyō
         const at = attributi();
         const nuovo = at[a] + d;
-        if (nuovo < ATTR_MIN || nuovo > ATTR_MAX) return;
+        if (nuovo < ATTR_MIN || nuovo > ATTR_MAX_CREAZIONE) return; // in creazione il tetto è 8
         if (d > 0 && puntiUsati() >= PUNTI_ATTR) return; // punti finiti
         at[a] = nuovo;
         document.getElementById("pg-attr-" + a).textContent = nuovo;

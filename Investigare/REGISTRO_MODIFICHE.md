@@ -11,6 +11,11 @@
 
 ## Da applicare
 
+### 2026-08-28 · WIZARD → REGOLE · ⚠ ATTRIBUTI IN CREAZIONE: tetto **8**, non 9 (decisione utente)
+Parole dell'utente: «una scheda nuova massimo punteggio è 8, poi se acquista punti può arrivare a 9, ma scheda nuovo giocatore **max 8 min 4**». Il 9 resta il limite umano, ma **si conquista giocando** (acquisto Shugyō: nuovo valore ×3, tetto 9) — non si sceglie alla creazione.
+**I manuali dicono ancora 9** e vanno corretti: `GENKAI_Manuale_Giocatori.md:73` e `GENKAI_Regolamento_v1_3.md:51` («Nessun attributo può superare **9** o scendere sotto **4**» nella sezione *Come si genera*) → in creazione il tetto è 8. Da valutare anche: la tabella «Cosa dicono i numeri» (il 9 va segnato come non disponibile alla creazione), i **5 pregen in `pg/`** (chi ha un 9 di scheda: se è stato distribuito in creazione ora non sarebbe più legale — decidere se lasciarli come sono, essendo veterani, o rifarli), e il metodo casuale dei PNG in Situazioni (4-9, riguarda i PNG: probabilmente resta com'è).
+**Lato wizard: FATTO** (creazione 4-8, testo del passo 3 e aiuto ❓ aggiornati, acquisto Shugyō invariato a 9) — online il 2026-08-28. — **DA APPLICARE** (manuali + decisione sui pregen)
+
 ### 2026-08-27 · WIZARD → REGOLE · Glossario Kiwami/Nami esplicitato + nota filosofia (decisione utente)
 Nel glossario del wizard PG (passo Termini), su indicazione dell'utente: **Kiwami 極 = «2 successo critico, 12 fallimento critico»**, **Nami 波 = «3 successo notevole, 11 fallimento notevole» (solo prove di attributo)** — prima diceva solo «critico (2 o 12)» / «notevole (3 o 11)» senza dire quale è il buono. Aggiunta anche una nota di colore voluta dall'utente: la sfortuna può essere un vantaggio (proverbio 塞翁が馬, «perdi il treno… e magari ti porta bene»). Se nel glossario dei manuali Kiwami/Nami sono descritti senza l'esito esplicito, valutare la stessa dicitura. Stessa sera, sempre da indicazione utente, riscritta corta la voce **Soroban**: «l'altalena della giornata: parte da 5, scende con fatiche e pressioni, **risale coi successi**» — verificare che i manuali dicano anche la risalita coi successi. — **DA APPLICARE** (o NON SERVE se il manuale è già esplicito)
 
