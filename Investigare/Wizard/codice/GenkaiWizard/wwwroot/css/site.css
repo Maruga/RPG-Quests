@@ -156,6 +156,15 @@ body {
 .wz-nuovo { display: flex; gap: .5rem; margin: 1rem 0; }
 .wz-nuovo input { flex: 1; padding: .55rem .6rem; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
 .wz-lista { list-style: none; padding: 0; }
+/* azioni della card (stampa/elimina): bottoni tondi con icona SVG al posto di emoji e ✕ */
+.wz-card-azioni { display: flex; align-items: center; gap: .4rem; padding-right: .7rem; }
+.wz-icobtn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #e0dcc8; background: #fffdf6; color: var(--wz-grigio); cursor: pointer; padding: 0; transition: color .15s, border-color .15s, background .15s; }
+.wz-icobtn svg { width: 17px; height: 17px; }
+.wz-icobtn:hover { color: var(--wz-navy); border-color: var(--wz-navy); }
+.wz-icobtn.rosso:hover { color: var(--wz-rosso); border-color: var(--wz-rosso); background: #fdf3f0; }
+/* barra di avanzamento del personaggio nella card */
+.pg-avanz { display: block; height: 4px; background: #eee6d8; border-radius: 2px; overflow: hidden; margin-top: .4rem; max-width: 340px; }
+.pg-avanz > span { display: block; height: 100%; background: var(--wz-rosso); border-radius: 2px; }
 .wz-card { display: flex; align-items: stretch; gap: .3rem; border: 1px solid #e0dcc8; border-radius: 10px; margin: .6rem 0; overflow: hidden; }
 .wz-card-main { flex: 1; padding: .7rem .9rem; text-decoration: none; color: var(--wz-navy); display: block; }
 .wz-meta { display: block; color: var(--wz-grigio); font-size: .8rem; margin: .15rem 0 .3rem; }
@@ -646,7 +655,11 @@ body.pg-con-sfondo .wz-passo, body.pg-con-sfondo .wz-testata { background: trans
 .pg-campo-ai:has(> textarea) > .pg-ai, .pg-campo-ai:has(> textarea) > .pg-ai-enja { height: 44px; } /* resta alto come un input */
 
 /* wizard-PG: campo largo 2 colonne nella griglia (es. Grado, allineato fino ad Anni di servizio) */
-@media (min-width: 700px) { .pg-span2 { grid-column: span 2; } }
+@media (min-width: 700px) { .pg-span2 { grid-column: span 2; } .pg-alto2 { grid-row: span 2; } }
+/* campo alto due righe (Altri contatti): la textarea riempie tutta l'altezza disponibile */
+.pg-alto2 { display: flex; flex-direction: column; }
+.pg-alto2 > label { white-space: nowrap; }
+.pg-alto2 textarea { flex: 1; min-height: 4.5rem; resize: vertical; }
 /* wizard-PG: niente colonna-drawer → il footer non sporge; Avanti e Indietro identici e allineati al contenuto */
 #pg-root.wz { display: block; max-width: 860px; }
 #pg-root .wz-nav { display: flex; }

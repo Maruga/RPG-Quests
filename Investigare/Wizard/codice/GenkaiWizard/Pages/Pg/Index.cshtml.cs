@@ -18,6 +18,8 @@ public class IndexModel : PageModel
     public List<Personaggio> Personaggi { get; set; } = new();
     /// <summary>Id → nome del personaggio (da identita nello stato) — mostrato accanto all'alias.</summary>
     public Dictionary<Guid, string> NomiPg { get; set; } = new();
+    /// <summary>Id → passo raggiunto nel wizard (0 = Il tè … 12 = Riepilogo), per la barra di avanzamento.</summary>
+    public Dictionary<Guid, int> PassoPg { get; set; } = new();
 
     private string Uid => Services.Ospite.ChiUsa(HttpContext);
 
@@ -31,11 +33,13 @@ public class IndexModel : PageModel
         {
             try
             {
-                var id = System.Text.Json.Nodes.JsonNode.Parse(p.StatoJson)?["identita"];
+                var stato = System.Text.Json.Nodes.JsonNode.Parse(p.StatoJson);
+                var id = stato?["identita"];
                 var nome = ($"{id?["cognome"]} {id?["nome"]}").Trim();
                 NomiPg[p.Id] = nome;
+                PassoPg[p.Id] = Math.Clamp((int?)stato?["passoCorrente"] ?? 0, 0, 12);
             }
-            catch { NomiPg[p.Id] = ""; }
+            catch { NomiPg[p.Id] = ""; PassoPg[p.Id] = 0; }
         }
     }
 
@@ -63,7 +67,7 @@ public class IndexModel : PageModel
             StatoJson = """
             {
               "versione": 1,
-              "identita": { "cognome": "", "nome": "", "kanji": "", "eta": 30, "genere": "m", "ruolo": "Interrogatore", "grado": "Junsa-buchō (Sergente)", "anniServizio": 5, "quartiere": "", "via": "", "telefono": "", "pocketBell": "", "altroContatto": "" },
+              "identita": { "cognome": "", "nome": "", "kanji": "", "eta": "", "genere": "", "ruolo": "", "grado": "", "anniServizio": "", "quartiere": "", "via": "", "telefono": "", "cellulare": "", "pocketBell": "", "altroContatto": "" },
               "attributi": { "Distacco": 4, "Pazienza": 4, "Silenzio": 4, "Lucidità": 4, "Ascolto": 4, "Presenza": 4 },
               "ki": { "dadi": null, "ritirato": false, "extra": 0 },
               "gouId": "",

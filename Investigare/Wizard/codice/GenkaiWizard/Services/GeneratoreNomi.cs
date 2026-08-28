@@ -43,11 +43,13 @@ public class GeneratoreNomi
         return (true, null, KanjiPer(cognome, nome));
     }
 
-    /// <summary>Kanji best-effort per un nome manuale: se cognome/nome sono nei pool, li compone; altrimenti lascia il romaji.</summary>
+    /// <summary>Kanji per un nome manuale: SOLO se cognome e nome sono entrambi nei pool li compone;
+    /// altrimenti stringa vuota — mai rimandare indietro il romaji spacciato per kanji (il campo resta
+    /// vuoto e ci pensa il ✨ AI).</summary>
     public string KanjiPer(string cognome, string nome)
     {
         var dati = _bib.Lib("nomi");
-        string kCog = cognome, kNome = nome;
+        string? kCog = null, kNome = null;
         foreach (var c in dati["cognomi"]!.AsArray())
             if (string.Equals(c!["r"]!.GetValue<string>(), cognome.Trim(), StringComparison.OrdinalIgnoreCase))
                 { kCog = c["k"]!.GetValue<string>(); break; }
@@ -57,7 +59,7 @@ public class GeneratoreNomi
                     if (string.Equals(n!["r"]!.GetValue<string>(), nome.Trim(), StringComparison.OrdinalIgnoreCase))
                         { kNome = n["k"]!.GetValue<string>(); goto fine; }
         fine:
-        return $"{kCog} {kNome}";
+        return kCog is not null && kNome is not null ? $"{kCog} {kNome}" : "";
     }
 
     /// <summary>Più proposte distinte in un colpo (per far scegliere il GM).</summary>

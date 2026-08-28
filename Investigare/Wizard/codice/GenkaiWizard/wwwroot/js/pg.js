@@ -412,7 +412,7 @@
                     const val = (json.testo || "").trim();
                     if (!val) { alert("L'AI non ha restituito nulla — riprova."); return; } // mai svuotare
                     const el = document.querySelector(`[data-pg-campo="${dest}"]`);
-                    if (el) { el.value = val; }
+                    if (el) { el.value = val; if (dest === "identita.kanji") el.dataset.auto = "1"; }
                     set(dest, val);
                 } catch { alert("AI non raggiungibile"); }
                 finally { btn.disabled = false; btn.textContent = orig; }
@@ -433,7 +433,7 @@
         btn.addEventListener("click", async () => {
             const desc = (get("descrizioneFisica") || "").trim();
             if (!desc) { msg.textContent = "⚠ Scrivi (o genera con ✨) prima la descrizione fisica."; return; }
-            const genere = get("identita.genere") === "f" ? "donna" : "uomo";
+            const genere = get("identita.genere") === "f" ? "donna" : get("identita.genere") === "m" ? "uomo" : "persona";
             const prompt = `Foto tessera di servizio realistica, quadrata: testa e spalle, frontale, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Sfondo grigio neutro uniforme. Giappone 1997. ${genere} di ${get("identita.eta") || 35} anni, investigatore di polizia in borghese. ${desc} Grana pellicola anni '90. Nessuna scritta.`;
             const orig = btn.textContent;
             btn.disabled = true; btn.textContent = "🎨 Sto disegnando… (20-40s)"; msg.textContent = "";
@@ -661,8 +661,8 @@
 
         // — testata con il ritratto
         const residenza = [idn("quartiere"), idn("via")].filter(Boolean).join(" · ");
-        const contatti = [idn("telefono") ? "☎ " + idn("telefono") : "", idn("pocketBell") ? "📟 " + idn("pocketBell") : "", idn("altroContatto")].filter(Boolean).join(" · ");
-        const sotto = [idn("grado"), idn("ruolo"), idn("eta") ? idn("eta") + " anni" : "", get("identita.genere") === "f" ? "donna" : "uomo", idn("anniServizio") ? idn("anniServizio") + " anni di servizio" : ""].filter(Boolean).join(" · ");
+        const contatti = [idn("telefono") ? "☎ " + idn("telefono") : "", idn("cellulare") ? "📱 " + idn("cellulare") : "", idn("pocketBell") ? "📟 " + idn("pocketBell") : "", idn("altroContatto")].filter(Boolean).join(" · ");
+        const sotto = [idn("grado"), idn("ruolo"), idn("eta") ? idn("eta") + " anni" : "", get("identita.genere") === "f" ? "donna" : get("identita.genere") === "m" ? "uomo" : "", idn("anniServizio") ? idn("anniServizio") + " anni di servizio" : ""].filter(Boolean).join(" · ");
         const testata = `
             <div class="pg-riep-testata">
                 ${S.ritratto ? `<img class="pg-riep-foto" src="${esc(S.ritratto)}" alt="" />` : ""}
@@ -916,7 +916,7 @@
                     try { dati = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1)); } catch { }
                     if (!Object.keys(dati).length) { alert("Non sono riuscito a leggere la proposta — riprova."); return; }
                     // riempi SOLO i vuoti, mai sovrascrivere
-                    const campi = { quartiere: "identita.quartiere", via: "identita.via", telefono: "identita.telefono", pocketBell: "identita.pocketBell", altroContatto: "identita.altroContatto" };
+                    const campi = { quartiere: "identita.quartiere", via: "identita.via", telefono: "identita.telefono", cellulare: "identita.cellulare", pocketBell: "identita.pocketBell", altroContatto: "identita.altroContatto" };
                     for (const [k, path] of Object.entries(campi)) {
                         if (!dati[k] || (get(path) || "").trim()) continue;
                         set(path, dati[k]);
@@ -934,23 +934,40 @@
                 finally { btnRes.disabled = false; btnRes.textContent = orig; }
             });
         }
-        // kanji automatici: quando scrivi cognome+nome (e il campo kanji è vuoto) arrivano dal generatore
+        // kanji automatici: quando scrivi cognome+nome arrivano da soli — dalla biblioteca se il
+        // nome è nei pool, altrimenti li chiede all'AI da solo (consuma 1 ✨). Se cambi il nome si
+        // rigenerano; i kanji scritti A MANO nel campo invece non si toccano mai.
         const cog = document.querySelector('[data-pg-campo="identita.cognome"]');
         const nom = document.querySelector('[data-pg-campo="identita.nome"]');
         const kan = document.querySelector('[data-pg-campo="identita.kanji"]');
-        let t = null;
+        const setKanjiAuto = v => { kan.value = v; set("identita.kanji", v); kan.dataset.auto = v ? "1" : ""; };
+        kan.addEventListener("input", () => { kan.dataset.auto = ""; }); // toccato a mano: da qui in poi è suo
+        let t = null, ultimaChiesta = "";
         const prova = () => {
             clearTimeout(t);
             t = setTimeout(async () => {
-                if (kan.value.trim()) return; // mai sovrascrivere kanji già scritti
+                if (kan.value.trim() && kan.dataset.auto !== "1") return; // mai sovrascrivere kanji scritti a mano
                 const c = cog.value.trim(), n = nom.value.trim();
                 if (!c || !n) return;
+                const chiave = c + " " + n;
+                if (chiave === ultimaChiesta) return; // per questo nome abbiamo già chiesto
+                ultimaChiesta = chiave;
                 try {
                     const r = await fetch(`/api/nomi/verifica?cognome=${encodeURIComponent(c)}&nome=${encodeURIComponent(n)}`);
                     const j = await r.json();
-                    if (j.kanji) { kan.value = j.kanji; set("identita.kanji", j.kanji); }
+                    if (cog.value.trim() !== c || nom.value.trim() !== n) return; // nel frattempo l'ha riscritto
+                    if (j.kanji) { setKanjiAuto(j.kanji); return; }
+                    if (!PG.aiAttiva) return;
+                    await salvaOra(); // l'AI legge cognome/nome dallo stato sul server
+                    const ra = await fetch(`/api/pg/${PG.id}/ai-campo`, {
+                        method: "POST", headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ campo: "kanji", modello: modelloAI(), effort: effortAI() })
+                    });
+                    const ja = await ra.json().catch(() => ({}));
+                    const v = (ja.testo || "").trim().split("\n")[0].trim();
+                    if (ra.ok && v && cog.value.trim() === c && nom.value.trim() === n) setKanjiAuto(v);
                 } catch { }
-            }, 700);
+            }, 900);
         };
         cog.addEventListener("input", prova);
         nom.addEventListener("input", prova);
@@ -967,6 +984,8 @@
                 if (el) el.value = n[k] || "";
                 set("identita." + k, n[k] || "");
             });
+            const kEl = document.querySelector('[data-pg-campo="identita.kanji"]');
+            if (kEl) kEl.dataset.auto = "1"; // derivati dal nome proposto: se poi lo cambia, si rigenerano
             aggiornaTitolo();
             out.querySelectorAll(".pg-nome-card").forEach(c => c.classList.toggle("scelto", c.dataset.cognome === n.cognome && c.dataset.nome === n.nome));
         };
@@ -1004,7 +1023,7 @@
                     render(nomi);
                 } else {
                     // senza AI: il generatore offline (nomi coerenti con genere ed età, senza significato)
-                    const q = new URLSearchParams({ genere: get("identita.genere") || "m", eta: get("identita.eta") || 30, quanti: 4 });
+                    const q = new URLSearchParams({ genere: get("identita.genere") || "m", eta: get("identita.eta") || 30, quanti: 3 });
                     const r = await fetch(`/api/nomi?${q}`);
                     const nomi = await r.json();
                     render(nomi);
@@ -1223,7 +1242,7 @@
     // NB tenere allineato allo stato iniziale di Pages/Pg/Index.OnPostCrea
     const statoIniziale = () => ({
         versione: 1,
-        identita: { cognome: "", nome: "", kanji: "", eta: 30, genere: "m", ruolo: "Interrogatore", grado: "Junsa-buchō (Sergente)", anniServizio: 5, quartiere: "", via: "", telefono: "", pocketBell: "", altroContatto: "" },
+        identita: { cognome: "", nome: "", kanji: "", eta: "", genere: "", ruolo: "", grado: "", anniServizio: "", quartiere: "", via: "", telefono: "", cellulare: "", pocketBell: "", altroContatto: "" },
         attributi: { "Distacco": 4, "Pazienza": 4, "Silenzio": 4, "Lucidità": 4, "Ascolto": 4, "Presenza": 4 },
         ki: { dadi: null, ritirato: false, extra: 0 },
         gouId: "",

@@ -76,6 +76,7 @@
                     var contatti = new[] {
                         Model.S("identita.quartiere"), Model.S("identita.via"),
                         Model.S("identita.telefono") != "" ? "tel " + Model.S("identita.telefono") : "",
+                        Model.S("identita.cellulare") != "" ? "cell " + Model.S("identita.cellulare") : "",
                         Model.S("identita.pocketBell") != "" ? "pocket bell " + Model.S("identita.pocketBell") : "",
                         Model.S("identita.altroContatto")
                     }.Where(x => x != "").ToList();

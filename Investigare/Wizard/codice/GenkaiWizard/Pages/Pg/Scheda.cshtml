@@ -98,16 +98,26 @@
         <!-- ═══════════ 2 · IDENTITÀ ═══════════ -->
         <section data-pg-passo="2" hidden>
             <h2>Chi sei — l'identità</h2>
-            <p class="wz-aiuto">I tuoi dati. Scrivi il nome e i <strong>kanji arrivano da soli</strong> (o li chiedi con ✨); più sotto trovi anche i nomi <strong>su misura</strong> se non sai da dove partire.</p>
+            <p class="wz-aiuto">I tuoi dati. Non sai che nome dargli? Qui sotto te ne proponiamo <strong>su misura</strong>; se invece lo scrivi tu, i <strong>kanji arrivano da soli</strong> (o li chiedi con ✨).</p>
+
+            <div class="pg-nomi-box">
+                <h3 class="wz-h3">🔮 Non sai che nome dargli?</h3>
+                <p class="wz-nota">Scrivi (se vuoi) un'idea del personaggio — un tratto, un'immagine, un'origine — e ti proponiamo nomi <strong>su misura</strong>, con i kanji e il loro significato. Poi tocchi quello che ti piace e finisce sulla scheda.</p>
+                <div class="pg-nomi-riga">
+                    <input type="text" id="pg-nomi-ispirazione" placeholder="es. sguardo infallibile · vecchia scuola · figlio di pescatori · silenzioso come la neve" />
+                    <button type="button" id="pg-nomi-btn" class="wz-btn wz-btn-primario">✨ Proponi nomi</button>
+                </div>
+                <div id="pg-nomi-out" class="pg-nomi-out"></div>
+            </div>
 
             <div class="wz-campo-griglia pg-griglia-3">
                 <div class="wz-campo"><label>Cognome</label><input type="text" data-pg-campo="identita.cognome" placeholder="es. Tanaka" /></div>
                 <div class="wz-campo"><label>Nome</label><input type="text" data-pg-campo="identita.nome" placeholder="es. Hiroshi" /></div>
                 <div class="wz-campo"><label>Kanji <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="kanji" data-pg-dest="identita.kanji">✨</button></label><input type="text" data-pg-campo="identita.kanji" placeholder="arrivano da soli col nome" /></div>
-                <div class="wz-campo"><label>Età</label><input type="number" min="21" max="65" data-pg-campo="identita.eta" /></div>
+                <div class="wz-campo"><label>Età</label><input type="number" min="21" max="65" data-pg-campo="identita.eta" placeholder="es. 30" /></div>
                 <div class="wz-campo"><label>Genere</label>
-                    <select data-pg-campo="identita.genere"><option value="m">Uomo</option><option value="f">Donna</option></select></div>
-                <div class="wz-campo"><label>Anni di servizio</label><input type="number" min="0" max="45" data-pg-campo="identita.anniServizio" /></div>
+                    <select data-pg-campo="identita.genere"><option value="">— scegli —</option><option value="m">Uomo</option><option value="f">Donna</option></select></div>
+                <div class="wz-campo"><label>Anni di servizio</label><input type="number" min="0" max="45" data-pg-campo="identita.anniServizio" placeholder="es. 5" /></div>
                 <div class="wz-campo"><label>Ruolo <small>(nella squadra)</small></label>
                     <select id="pg-ruolo-sel" class="wz-lungo">
                         <option value="">— scegli —</option>
@@ -139,20 +149,12 @@
                     <select id="pg-quartiere-sel" class="wz-lungo"><option value="">— scegli —</option></select>
                     <input type="text" id="pg-quartiere-libero" class="wz-custom-input" placeholder="Scrivi il quartiere…" hidden /></div>
                 <div class="wz-campo"><label>Indirizzo <small>(via, edificio)</small></label><input type="text" data-pg-campo="identita.via" placeholder="es. apāto Kotobuki 2-4, vicino alla stazione" /></div>
-                <div class="wz-campo"><label>Telefono di casa</label><input type="text" data-pg-campo="identita.telefono" placeholder="075-…" /></div>
-                <div class="wz-campo"><label>Pocket bell <small>(cercapersone)</small></label><input type="text" data-pg-campo="identita.pocketBell" placeholder="es. 020-…" /></div>
-                <div class="wz-campo pg-span2"><label>Altri contatti <small>(fax, tramite terzi, il bar sotto casa…)</small></label><input type="text" data-pg-campo="identita.altroContatto" placeholder="es. fax del distretto; messaggio all'izakaya Kotobuki" /></div>
+                <div class="wz-campo"><label>Telefono di casa</label><input type="text" data-pg-campo="identita.telefono" placeholder="es. 075-541-2367" /></div>
+                <div class="wz-campo"><label>Telefono cellulare</label><input type="text" data-pg-campo="identita.cellulare" placeholder="es. 030-12-34567" /></div>
+                <div class="wz-campo pg-span2 pg-alto2"><label>Altri contatti <small>(fax, tramite terzi, il bar sotto casa…)</small></label><textarea data-pg-campo="identita.altroContatto" rows="3" placeholder="es. fax del distretto; messaggio all'izakaya Kotobuki"></textarea></div>
+                <div class="wz-campo"><label>Pocket bell <small>(cercapersone)</small></label><input type="text" data-pg-campo="identita.pocketBell" placeholder="es. 020-555-8812" /></div>
             </div>
 
-            <div class="pg-nomi-box">
-                <h3 class="wz-h3">🔮 Non sai che nome dargli?</h3>
-                <p class="wz-nota">Scrivi (se vuoi) un'idea del personaggio — un tratto, un'immagine, un'origine — e ti proponiamo nomi <strong>su misura</strong>, con i kanji e il loro significato. Poi tocchi quello che ti piace e finisce sulla scheda.</p>
-                <div class="pg-nomi-riga">
-                    <input type="text" id="pg-nomi-ispirazione" placeholder="es. sguardo infallibile · vecchia scuola · figlio di pescatori · silenzioso come la neve" />
-                    <button type="button" id="pg-nomi-btn" class="wz-btn wz-btn-primario">✨ Proponi nomi</button>
-                </div>
-                <div id="pg-nomi-out" class="pg-nomi-out"></div>
-            </div>
         </section>
 
         <!-- ═══════════ 3 · ATTRIBUTI ═══════════ -->
