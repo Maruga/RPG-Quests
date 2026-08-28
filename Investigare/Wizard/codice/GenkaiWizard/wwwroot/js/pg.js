@@ -388,6 +388,7 @@
     function initAiCampi() {
         document.querySelectorAll(".pg-ai").forEach(btn => {
             btn.hidden = !PG.aiAttiva;
+            btn.title = (btn.title || "Proposta dell'AI") + " — consuma 1 aiuto ✨";
             // il bottone sta A FIANCO del campo (non nella label: disallineava le colonne)
             const campoEl = document.querySelector(`[data-pg-campo="${btn.dataset.pgDest}"]`);
             if (campoEl && campoEl.parentNode && !campoEl.parentNode.classList.contains("pg-campo-ai")) {
@@ -935,53 +936,45 @@
             });
         }
         // kanji automatici: quando scrivi cognome+nome arrivano da soli — dalla biblioteca se il
-        // nome è nei pool, altrimenti li chiede all'AI da solo (consuma 1 ✨). Se cambi il nome si
-        // rigenerano SEMPRE (il kanji segue il nome); una correzione a mano regge finché il nome non cambia.
+        // nome è in elenco, altrimenti composti dai morfemi (o in katakana). TUTTO IN LOCALE: nessuna
+        // chiamata AI, nessun costo. Cambi il nome → cambiano i kanji; li correggi a mano → restano tuoi.
         const cog = document.querySelector('[data-pg-campo="identita.cognome"]');
         const nom = document.querySelector('[data-pg-campo="identita.nome"]');
         const kan = document.querySelector('[data-pg-campo="identita.kanji"]');
-        const setKanjiAuto = v => { kan.value = v; set("identita.kanji", v); };
-        const haGiapponese = v => /[　-ヿ㐀-鿿豈-﫿]/.test(v);
-        let t = null, ultimaChiesta = "";
-        // se corregge i kanji a mano, per QUESTO nome restano suoi — ma al prossimo cambio nome si rifanno
-        kan.addEventListener("input", () => { ultimaChiesta = cog.value.trim() + " " + nom.value.trim(); });
-        const prova = (allApertura, conAI) => {
+        const setKanji = v => { kan.value = v; set("identita.kanji", v); };
+        let t = null, ultimoNome = "";
+        // se li corregge a mano restano suoi, finché non cambia il nome
+        kan.addEventListener("input", () => { ultimoNome = cog.value.trim() + " " + nom.value.trim(); });
+        const prova = () => {
             clearTimeout(t);
             t = setTimeout(async () => {
-                // mentre SCRIVI: solo la biblioteca (gratis). L'AI parte SOLO quando esci dal campo
-                // (o all'apertura pagina se i kanji mancano): una chiamata per nome, mai sui tasti.
-                if (allApertura === true && haGiapponese(kan.value)) return;
                 const c = cog.value.trim(), n = nom.value.trim();
                 if (!c || !n) return;
+                const chiave = c + " " + n;
+                if (chiave === ultimoNome) return;   // per questo nome i kanji ci sono già
                 try {
                     const r = await fetch(`/api/nomi/verifica?cognome=${encodeURIComponent(c)}&nome=${encodeURIComponent(n)}`);
                     const j = await r.json();
                     if (cog.value.trim() !== c || nom.value.trim() !== n) return; // nel frattempo l'ha riscritto
-                    if (j.kanji) { setKanjiAuto(j.kanji); return; }
-                    if (conAI !== true || !PG.aiAttiva) return;
-                    const chiave = c + " " + n;
-                    if (chiave === ultimaChiesta) return; // per questo nome l'AI ha già risposto (o i kanji sono suoi)
-                    ultimaChiesta = chiave;
-                    const phPrima = kan.placeholder;
-                    setKanjiAuto(""); kan.placeholder = "✨ sto scrivendo i kanji…";
-                    try {
-                        await salvaOra(); // l'AI legge cognome/nome dallo stato sul server
-                        const ra = await fetch(`/api/pg/${PG.id}/ai-campo`, {
-                            method: "POST", headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ campo: "kanji", modello: modelloAI(), effort: effortAI() })
-                        });
-                        const ja = await ra.json().catch(() => ({}));
-                        const v = (ja.testo || "").trim().split("\n")[0].trim();
-                        if (ra.ok && v && cog.value.trim() === c && nom.value.trim() === n) setKanjiAuto(v);
-                    } finally { kan.placeholder = phPrima; }
+                    if (j.kanji) { ultimoNome = chiave; setKanji(j.kanji); }
                 } catch { }
-            }, conAI === true ? 150 : 500);
+            }, 400);
         };
-        cog.addEventListener("input", () => prova());
-        nom.addEventListener("input", () => prova());
-        cog.addEventListener("change", () => prova(false, true)); // «change» scatta quando esci dal campo
-        nom.addEventListener("change", () => prova(false, true));
-        prova(true, true); // all'apertura: se nome e cognome ci sono già e i kanji mancano (o sono romaji), arrivano da soli
+        cog.addEventListener("input", prova);
+        nom.addEventListener("input", prova);
+        prova(); // e anche all'apertura, se il nome c'è già e i kanji mancano
+
+        // bottone 字 — rifà i kanji dal nome. Tutto in locale: NON consuma aiuti AI
+        const btnLoc = document.getElementById("pg-kanji-rifai");
+        if (btnLoc) {
+            if (!kan.parentNode.classList.contains("pg-campo-ai")) {   // stessa cornice dei bottoni ✨
+                const wrap = document.createElement("span");
+                wrap.className = "pg-campo-ai";
+                kan.parentNode.insertBefore(wrap, kan);
+                wrap.appendChild(kan); wrap.appendChild(btnLoc);
+            }
+            btnLoc.addEventListener("click", () => { ultimoNome = ""; prova(); });
+        }
     }
 
     // ───────── 🔮 nomi su misura (passo 2) ─────────

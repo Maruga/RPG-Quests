@@ -650,7 +650,10 @@ body.pg-con-sfondo .wz-passo, body.pg-con-sfondo .wz-testata { background: trans
 /* campo con ✨ a fianco (wizard-PG): input/textarea + bottone sulla stessa riga, colonne allineate */
 .pg-campo-ai { display: flex; gap: .4rem; align-items: stretch; } /* il ✨ è ALTO quanto il box */
 .pg-campo-ai > input, .pg-campo-ai > textarea { flex: 1; min-width: 0; }
-.pg-campo-ai > .pg-ai, .pg-campo-ai > .pg-ai-enja { flex: 0 0 auto; }
+.pg-campo-ai > .pg-ai, .pg-campo-ai > .pg-ai-enja, .pg-campo-ai > .pg-locale { flex: 0 0 auto; }
+/* bottoni che NON usano l'AI (non consumano aiuti): niente ✨, segno sobrio */
+.pg-locale { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1rem; color: var(--wz-grigio); }
+.pg-locale:hover { color: var(--wz-navy); border-color: var(--wz-navy); }
 .pg-campo-ai:has(> textarea) { align-items: flex-start; }              /* con le textarea il ✨ non si allunga: */
 .pg-campo-ai:has(> textarea) > .pg-ai, .pg-campo-ai:has(> textarea) > .pg-ai-enja { height: 44px; } /* resta alto come un input */
 

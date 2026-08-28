@@ -1,106 +1,1357 @@
 {
   "$commento": "Generatore nomi giapponesi anti-omonimie. REGOLE: (1) mai nome+cognome identici dentro lo stesso progetto né uguali a un riservato; solo-nome o solo-cognome uguali sono ammessi e normali. (2) Il nome proprio deve essere coerente con la GENERAZIONE: chi ha 60 anni nel 1997 è nato ~1937 — porta un nome di quell'epoca. (3) Convenzione di romanizzazione del progetto: nomi propri SENZA macron (Ryota, Shota, Jiro), termini comuni con macron. (4) La lista riservati qui sotto è il cast base stabile; la lista completa (tutti i nomi di tutte le avventure) va ESPORTATA da GENKAI_Registro_Nomi.md in fase di build → riservati_completi.json.",
-
   "generazioni": {
-    "anziani": { "nati": "1920-1940", "etaNel1997": "57-77", "nota": "nomi tradizionali, spesso a un kanji o con suffissi -zō/-kichi/-e/-ko arcaici" },
-    "adulti": { "nati": "1941-1960", "etaNel1997": "37-56", "nota": "la generazione dei quadri, dei -o maschili e dei -ko femminili" },
-    "giovaniAdulti": { "nati": "1961-1975", "etaNel1997": "22-36", "nota": "il -ko femminile inizia a sparire; nomi maschili più morbidi" },
-    "ragazzi": { "nati": "1976-1985", "etaNel1997": "12-21", "nota": "nomi moderni: Yuta, Kenta, Ai, Mai, Saki" }
+    "anziani": {
+      "nati": "1920-1940",
+      "etaNel1997": "57-77",
+      "nota": "nomi tradizionali, spesso a un kanji o con suffissi -zō/-kichi/-e/-ko arcaici"
+    },
+    "adulti": {
+      "nati": "1941-1960",
+      "etaNel1997": "37-56",
+      "nota": "la generazione dei quadri, dei -o maschili e dei -ko femminili"
+    },
+    "giovaniAdulti": {
+      "nati": "1961-1975",
+      "etaNel1997": "22-36",
+      "nota": "il -ko femminile inizia a sparire; nomi maschili più morbidi"
+    },
+    "ragazzi": {
+      "nati": "1976-1985",
+      "etaNel1997": "12-21",
+      "nota": "nomi moderni: Yuta, Kenta, Ai, Mai, Saki"
+    }
   },
-
   "cognomi": [
-    { "r": "Abe", "k": "阿部" }, { "r": "Aoki", "k": "青木" }, { "r": "Arai", "k": "新井" }, { "r": "Asano", "k": "浅野" },
-    { "r": "Baba", "k": "馬場" }, { "r": "Chiba", "k": "千葉" }, { "r": "Doi", "k": "土井" }, { "r": "Eguchi", "k": "江口" },
-    { "r": "Endo", "k": "遠藤" }, { "r": "Fukuda", "k": "福田" }, { "r": "Fukui", "k": "福井" }, { "r": "Furukawa", "k": "古川" },
-    { "r": "Goto", "k": "後藤" }, { "r": "Hamada", "k": "浜田" }, { "r": "Hara", "k": "原" }, { "r": "Harada", "k": "原田" },
-    { "r": "Hasegawa", "k": "長谷川" }, { "r": "Hashimoto", "k": "橋本" }, { "r": "Hattori", "k": "服部" }, { "r": "Hayashi", "k": "林" },
-    { "r": "Higuchi", "k": "樋口" }, { "r": "Hirano", "k": "平野" }, { "r": "Hirata", "k": "平田" }, { "r": "Honda", "k": "本田" },
-    { "r": "Hoshino", "k": "星野" }, { "r": "Ikeda", "k": "池田" }, { "r": "Imai", "k": "今井" }, { "r": "Inoue", "k": "井上" },
-    { "r": "Ishida", "k": "石田" }, { "r": "Ishikawa", "k": "石川" }, { "r": "Ito", "k": "伊藤" }, { "r": "Iwata", "k": "岩田" },
-    { "r": "Kaneko", "k": "金子" }, { "r": "Kato", "k": "加藤" }, { "r": "Kawaguchi", "k": "川口" }, { "r": "Kawamura", "k": "川村" },
-    { "r": "Kikuchi", "k": "菊池" }, { "r": "Kimura", "k": "木村" }, { "r": "Kinoshita", "k": "木下" }, { "r": "Kobayashi", "k": "小林" },
-    { "r": "Koike", "k": "小池" }, { "r": "Kojima", "k": "小島" }, { "r": "Kondo", "k": "近藤" }, { "r": "Kubo", "k": "久保" },
-    { "r": "Kudo", "k": "工藤" }, { "r": "Kuroda", "k": "黒田" }, { "r": "Maeda", "k": "前田" }, { "r": "Maruyama", "k": "丸山" },
-    { "r": "Masuda", "k": "増田" }, { "r": "Matsubara", "k": "松原" }, { "r": "Matsuda", "k": "松田" }, { "r": "Matsui", "k": "松井" },
-    { "r": "Matsumoto", "k": "松本" }, { "r": "Miura", "k": "三浦" }, { "r": "Miyamoto", "k": "宮本" }, { "r": "Miyazaki", "k": "宮崎" },
-    { "r": "Mizuno", "k": "水野" }, { "r": "Mori", "k": "森" }, { "r": "Morita", "k": "森田" }, { "r": "Murakami", "k": "村上" },
-    { "r": "Murata", "k": "村田" }, { "r": "Nagai", "k": "永井" }, { "r": "Nagata", "k": "永田" }, { "r": "Nakagawa", "k": "中川" },
-    { "r": "Nakajima", "k": "中島" }, { "r": "Nakamura", "k": "中村" }, { "r": "Nakano", "k": "中野" }, { "r": "Nakata", "k": "中田" },
-    { "r": "Nishida", "k": "西田" }, { "r": "Nishimura", "k": "西村" }, { "r": "Noguchi", "k": "野口" }, { "r": "Nomura", "k": "野村" },
-    { "r": "Ogawa", "k": "小川" }, { "r": "Okada", "k": "岡田" }, { "r": "Okamoto", "k": "岡本" }, { "r": "Ono", "k": "小野" },
-    { "r": "Osawa", "k": "大沢" }, { "r": "Oshima", "k": "大島" }, { "r": "Ota", "k": "太田" }, { "r": "Otsuka", "k": "大塚" },
-    { "r": "Saito", "k": "斎藤" }, { "r": "Sakai", "k": "酒井" }, { "r": "Sakamoto", "k": "坂本" }, { "r": "Sakurai", "k": "桜井" },
-    { "r": "Sano", "k": "佐野" }, { "r": "Sasaki", "k": "佐々木" }, { "r": "Sato", "k": "佐藤" }, { "r": "Shibata", "k": "柴田" },
-    { "r": "Shimada", "k": "島田" }, { "r": "Shimizu", "k": "清水" }, { "r": "Sugimoto", "k": "杉本" }, { "r": "Sugiyama", "k": "杉山" },
-    { "r": "Suzuki", "k": "鈴木" }, { "r": "Takagi", "k": "高木" }, { "r": "Takahashi", "k": "高橋" }, { "r": "Takeda", "k": "武田" },
-    { "r": "Takeuchi", "k": "竹内" }, { "r": "Tamura", "k": "田村" }, { "r": "Tanaka", "k": "田中" }, { "r": "Taniguchi", "k": "谷口" },
-    { "r": "Tsuchiya", "k": "土屋" }, { "r": "Uchida", "k": "内田" }, { "r": "Ueda", "k": "上田" }, { "r": "Ueno", "k": "上野" },
-    { "r": "Wada", "k": "和田" }, { "r": "Watanabe", "k": "渡辺" }, { "r": "Yamada", "k": "山田" }, { "r": "Yamaguchi", "k": "山口" },
-    { "r": "Yamamoto", "k": "山本" }, { "r": "Yamashita", "k": "山下" }, { "r": "Yano", "k": "矢野" }, { "r": "Yokoyama", "k": "横山" },
-    { "r": "Yoshida", "k": "吉田" }, { "r": "Yoshikawa", "k": "吉川" }
+    {
+      "r": "Abe",
+      "k": "阿部"
+    },
+    {
+      "r": "Aoki",
+      "k": "青木"
+    },
+    {
+      "r": "Arai",
+      "k": "新井"
+    },
+    {
+      "r": "Asano",
+      "k": "浅野"
+    },
+    {
+      "r": "Baba",
+      "k": "馬場"
+    },
+    {
+      "r": "Chiba",
+      "k": "千葉"
+    },
+    {
+      "r": "Doi",
+      "k": "土井"
+    },
+    {
+      "r": "Eguchi",
+      "k": "江口"
+    },
+    {
+      "r": "Endo",
+      "k": "遠藤"
+    },
+    {
+      "r": "Fukuda",
+      "k": "福田"
+    },
+    {
+      "r": "Fukui",
+      "k": "福井"
+    },
+    {
+      "r": "Furukawa",
+      "k": "古川"
+    },
+    {
+      "r": "Goto",
+      "k": "後藤"
+    },
+    {
+      "r": "Hamada",
+      "k": "浜田"
+    },
+    {
+      "r": "Hara",
+      "k": "原"
+    },
+    {
+      "r": "Harada",
+      "k": "原田"
+    },
+    {
+      "r": "Hasegawa",
+      "k": "長谷川"
+    },
+    {
+      "r": "Hashimoto",
+      "k": "橋本"
+    },
+    {
+      "r": "Hattori",
+      "k": "服部"
+    },
+    {
+      "r": "Hayashi",
+      "k": "林"
+    },
+    {
+      "r": "Higuchi",
+      "k": "樋口"
+    },
+    {
+      "r": "Hirano",
+      "k": "平野"
+    },
+    {
+      "r": "Hirata",
+      "k": "平田"
+    },
+    {
+      "r": "Honda",
+      "k": "本田"
+    },
+    {
+      "r": "Hoshino",
+      "k": "星野"
+    },
+    {
+      "r": "Ikeda",
+      "k": "池田"
+    },
+    {
+      "r": "Imai",
+      "k": "今井"
+    },
+    {
+      "r": "Inoue",
+      "k": "井上"
+    },
+    {
+      "r": "Ishida",
+      "k": "石田"
+    },
+    {
+      "r": "Ishikawa",
+      "k": "石川"
+    },
+    {
+      "r": "Ito",
+      "k": "伊藤"
+    },
+    {
+      "r": "Iwata",
+      "k": "岩田"
+    },
+    {
+      "r": "Kaneko",
+      "k": "金子"
+    },
+    {
+      "r": "Kato",
+      "k": "加藤"
+    },
+    {
+      "r": "Kawaguchi",
+      "k": "川口"
+    },
+    {
+      "r": "Kawamura",
+      "k": "川村"
+    },
+    {
+      "r": "Kikuchi",
+      "k": "菊池"
+    },
+    {
+      "r": "Kimura",
+      "k": "木村"
+    },
+    {
+      "r": "Kinoshita",
+      "k": "木下"
+    },
+    {
+      "r": "Kobayashi",
+      "k": "小林"
+    },
+    {
+      "r": "Koike",
+      "k": "小池"
+    },
+    {
+      "r": "Kojima",
+      "k": "小島"
+    },
+    {
+      "r": "Kondo",
+      "k": "近藤"
+    },
+    {
+      "r": "Kubo",
+      "k": "久保"
+    },
+    {
+      "r": "Kudo",
+      "k": "工藤"
+    },
+    {
+      "r": "Kuroda",
+      "k": "黒田"
+    },
+    {
+      "r": "Maeda",
+      "k": "前田"
+    },
+    {
+      "r": "Maruyama",
+      "k": "丸山"
+    },
+    {
+      "r": "Masuda",
+      "k": "増田"
+    },
+    {
+      "r": "Matsubara",
+      "k": "松原"
+    },
+    {
+      "r": "Matsuda",
+      "k": "松田"
+    },
+    {
+      "r": "Matsui",
+      "k": "松井"
+    },
+    {
+      "r": "Matsumoto",
+      "k": "松本"
+    },
+    {
+      "r": "Miura",
+      "k": "三浦"
+    },
+    {
+      "r": "Miyamoto",
+      "k": "宮本"
+    },
+    {
+      "r": "Miyazaki",
+      "k": "宮崎"
+    },
+    {
+      "r": "Mizuno",
+      "k": "水野"
+    },
+    {
+      "r": "Mori",
+      "k": "森"
+    },
+    {
+      "r": "Morita",
+      "k": "森田"
+    },
+    {
+      "r": "Murakami",
+      "k": "村上"
+    },
+    {
+      "r": "Murata",
+      "k": "村田"
+    },
+    {
+      "r": "Nagai",
+      "k": "永井"
+    },
+    {
+      "r": "Nagata",
+      "k": "永田"
+    },
+    {
+      "r": "Nakagawa",
+      "k": "中川"
+    },
+    {
+      "r": "Nakajima",
+      "k": "中島"
+    },
+    {
+      "r": "Nakamura",
+      "k": "中村"
+    },
+    {
+      "r": "Nakano",
+      "k": "中野"
+    },
+    {
+      "r": "Nakata",
+      "k": "中田"
+    },
+    {
+      "r": "Nishida",
+      "k": "西田"
+    },
+    {
+      "r": "Nishimura",
+      "k": "西村"
+    },
+    {
+      "r": "Noguchi",
+      "k": "野口"
+    },
+    {
+      "r": "Nomura",
+      "k": "野村"
+    },
+    {
+      "r": "Ogawa",
+      "k": "小川"
+    },
+    {
+      "r": "Okada",
+      "k": "岡田"
+    },
+    {
+      "r": "Okamoto",
+      "k": "岡本"
+    },
+    {
+      "r": "Ono",
+      "k": "小野"
+    },
+    {
+      "r": "Osawa",
+      "k": "大沢"
+    },
+    {
+      "r": "Oshima",
+      "k": "大島"
+    },
+    {
+      "r": "Ota",
+      "k": "太田"
+    },
+    {
+      "r": "Otsuka",
+      "k": "大塚"
+    },
+    {
+      "r": "Saito",
+      "k": "斎藤"
+    },
+    {
+      "r": "Sakai",
+      "k": "酒井"
+    },
+    {
+      "r": "Sakamoto",
+      "k": "坂本"
+    },
+    {
+      "r": "Sakurai",
+      "k": "桜井"
+    },
+    {
+      "r": "Sano",
+      "k": "佐野"
+    },
+    {
+      "r": "Sasaki",
+      "k": "佐々木"
+    },
+    {
+      "r": "Sato",
+      "k": "佐藤"
+    },
+    {
+      "r": "Shibata",
+      "k": "柴田"
+    },
+    {
+      "r": "Shimada",
+      "k": "島田"
+    },
+    {
+      "r": "Shimizu",
+      "k": "清水"
+    },
+    {
+      "r": "Sugimoto",
+      "k": "杉本"
+    },
+    {
+      "r": "Sugiyama",
+      "k": "杉山"
+    },
+    {
+      "r": "Suzuki",
+      "k": "鈴木"
+    },
+    {
+      "r": "Takagi",
+      "k": "高木"
+    },
+    {
+      "r": "Takahashi",
+      "k": "高橋"
+    },
+    {
+      "r": "Takeda",
+      "k": "武田"
+    },
+    {
+      "r": "Takeuchi",
+      "k": "竹内"
+    },
+    {
+      "r": "Tamura",
+      "k": "田村"
+    },
+    {
+      "r": "Tanaka",
+      "k": "田中"
+    },
+    {
+      "r": "Taniguchi",
+      "k": "谷口"
+    },
+    {
+      "r": "Tsuchiya",
+      "k": "土屋"
+    },
+    {
+      "r": "Uchida",
+      "k": "内田"
+    },
+    {
+      "r": "Ueda",
+      "k": "上田"
+    },
+    {
+      "r": "Ueno",
+      "k": "上野"
+    },
+    {
+      "r": "Wada",
+      "k": "和田"
+    },
+    {
+      "r": "Watanabe",
+      "k": "渡辺"
+    },
+    {
+      "r": "Yamada",
+      "k": "山田"
+    },
+    {
+      "r": "Yamaguchi",
+      "k": "山口"
+    },
+    {
+      "r": "Yamamoto",
+      "k": "山本"
+    },
+    {
+      "r": "Yamashita",
+      "k": "山下"
+    },
+    {
+      "r": "Yano",
+      "k": "矢野"
+    },
+    {
+      "r": "Yokoyama",
+      "k": "横山"
+    },
+    {
+      "r": "Yoshida",
+      "k": "吉田"
+    },
+    {
+      "r": "Yoshikawa",
+      "k": "吉川"
+    }
   ],
-
   "nomiMaschili": {
     "anziani": [
-      { "r": "Shigeru", "k": "茂" }, { "r": "Isamu", "k": "勇" }, { "r": "Minoru", "k": "実" }, { "r": "Osamu", "k": "治" },
-      { "r": "Susumu", "k": "進" }, { "r": "Tadashi", "k": "正" }, { "r": "Makoto", "k": "誠" }, { "r": "Kiyoshi", "k": "清" },
-      { "r": "Hiroshi", "k": "博" }, { "r": "Takeshi", "k": "武" }, { "r": "Noboru", "k": "昇" }, { "r": "Masao", "k": "正雄" },
-      { "r": "Kazuo", "k": "一雄" }, { "r": "Yoshio", "k": "義夫" }, { "r": "Toshio", "k": "敏夫" }, { "r": "Haruo", "k": "春夫" },
-      { "r": "Gentaro", "k": "源太郎" }, { "r": "Shozo", "k": "省三" }, { "r": "Eikichi", "k": "栄吉" }, { "r": "Tomokazu", "k": "友和" }
+      {
+        "r": "Shigeru",
+        "k": "茂"
+      },
+      {
+        "r": "Isamu",
+        "k": "勇"
+      },
+      {
+        "r": "Minoru",
+        "k": "実"
+      },
+      {
+        "r": "Osamu",
+        "k": "治"
+      },
+      {
+        "r": "Susumu",
+        "k": "進"
+      },
+      {
+        "r": "Tadashi",
+        "k": "正"
+      },
+      {
+        "r": "Makoto",
+        "k": "誠"
+      },
+      {
+        "r": "Kiyoshi",
+        "k": "清"
+      },
+      {
+        "r": "Hiroshi",
+        "k": "博"
+      },
+      {
+        "r": "Takeshi",
+        "k": "武"
+      },
+      {
+        "r": "Noboru",
+        "k": "昇"
+      },
+      {
+        "r": "Masao",
+        "k": "正雄"
+      },
+      {
+        "r": "Kazuo",
+        "k": "一雄"
+      },
+      {
+        "r": "Yoshio",
+        "k": "義夫"
+      },
+      {
+        "r": "Toshio",
+        "k": "敏夫"
+      },
+      {
+        "r": "Haruo",
+        "k": "春夫"
+      },
+      {
+        "r": "Gentaro",
+        "k": "源太郎"
+      },
+      {
+        "r": "Shozo",
+        "k": "省三"
+      },
+      {
+        "r": "Eikichi",
+        "k": "栄吉"
+      },
+      {
+        "r": "Tomokazu",
+        "k": "友和"
+      }
     ],
     "adulti": [
-      { "r": "Kenji", "k": "健二" }, { "r": "Koji", "k": "浩二" }, { "r": "Akira", "k": "明" }, { "r": "Katsumi", "k": "克己" },
-      { "r": "Masaru", "k": "勝" }, { "r": "Satoshi", "k": "聡" }, { "r": "Takao", "k": "隆夫" }, { "r": "Tetsuo", "k": "哲夫" },
-      { "r": "Yasuhiro", "k": "康弘" }, { "r": "Kazuhiko", "k": "和彦" }, { "r": "Mitsuo", "k": "光夫" }, { "r": "Nobuyuki", "k": "信之" },
-      { "r": "Shinichi", "k": "真一" }, { "r": "Toru", "k": "徹" }, { "r": "Yukio", "k": "幸雄" }, { "r": "Hideki", "k": "秀樹" },
-      { "r": "Masayuki", "k": "正之" }, { "r": "Ryoichi", "k": "良一" }, { "r": "Takayuki", "k": "隆行" }, { "r": "Kuniaki", "k": "邦明" }
+      {
+        "r": "Kenji",
+        "k": "健二"
+      },
+      {
+        "r": "Koji",
+        "k": "浩二"
+      },
+      {
+        "r": "Akira",
+        "k": "明"
+      },
+      {
+        "r": "Katsumi",
+        "k": "克己"
+      },
+      {
+        "r": "Masaru",
+        "k": "勝"
+      },
+      {
+        "r": "Satoshi",
+        "k": "聡"
+      },
+      {
+        "r": "Takao",
+        "k": "隆夫"
+      },
+      {
+        "r": "Tetsuo",
+        "k": "哲夫"
+      },
+      {
+        "r": "Yasuhiro",
+        "k": "康弘"
+      },
+      {
+        "r": "Kazuhiko",
+        "k": "和彦"
+      },
+      {
+        "r": "Mitsuo",
+        "k": "光夫"
+      },
+      {
+        "r": "Nobuyuki",
+        "k": "信之"
+      },
+      {
+        "r": "Shinichi",
+        "k": "真一"
+      },
+      {
+        "r": "Toru",
+        "k": "徹"
+      },
+      {
+        "r": "Yukio",
+        "k": "幸雄"
+      },
+      {
+        "r": "Hideki",
+        "k": "秀樹"
+      },
+      {
+        "r": "Masayuki",
+        "k": "正之"
+      },
+      {
+        "r": "Ryoichi",
+        "k": "良一"
+      },
+      {
+        "r": "Takayuki",
+        "k": "隆行"
+      },
+      {
+        "r": "Kuniaki",
+        "k": "邦明"
+      }
     ],
     "giovaniAdulti": [
-      { "r": "Daisuke", "k": "大輔" }, { "r": "Tsuyoshi", "k": "剛" }, { "r": "Naoki", "k": "直樹" }, { "r": "Takashi", "k": "隆" },
-      { "r": "Jun", "k": "潤" }, { "r": "Shinji", "k": "慎二" }, { "r": "Kenta", "k": "健太" }, { "r": "Manabu", "k": "学" },
-      { "r": "Hitoshi", "k": "仁" }, { "r": "Kosuke", "k": "浩介" }, { "r": "Tomoya", "k": "智也" }, { "r": "Yasushi", "k": "靖" },
-      { "r": "Masahiro", "k": "雅弘" }, { "r": "Atsushi", "k": "敦" }, { "r": "Norio", "k": "紀夫" }, { "r": "Wataru", "k": "渉" }
+      {
+        "r": "Daisuke",
+        "k": "大輔"
+      },
+      {
+        "r": "Tsuyoshi",
+        "k": "剛"
+      },
+      {
+        "r": "Naoki",
+        "k": "直樹"
+      },
+      {
+        "r": "Takashi",
+        "k": "隆"
+      },
+      {
+        "r": "Jun",
+        "k": "潤"
+      },
+      {
+        "r": "Shinji",
+        "k": "慎二"
+      },
+      {
+        "r": "Kenta",
+        "k": "健太"
+      },
+      {
+        "r": "Manabu",
+        "k": "学"
+      },
+      {
+        "r": "Hitoshi",
+        "k": "仁"
+      },
+      {
+        "r": "Kosuke",
+        "k": "浩介"
+      },
+      {
+        "r": "Tomoya",
+        "k": "智也"
+      },
+      {
+        "r": "Yasushi",
+        "k": "靖"
+      },
+      {
+        "r": "Masahiro",
+        "k": "雅弘"
+      },
+      {
+        "r": "Atsushi",
+        "k": "敦"
+      },
+      {
+        "r": "Norio",
+        "k": "紀夫"
+      },
+      {
+        "r": "Wataru",
+        "k": "渉"
+      }
     ],
     "ragazzi": [
-      { "r": "Yuta", "k": "優太" }, { "r": "Takuya", "k": "拓也" }, { "r": "Sho", "k": "翔" }, { "r": "Daiki", "k": "大樹" },
-      { "r": "Ryo", "k": "涼" }, { "r": "Kazuki", "k": "和樹" }, { "r": "Hayato", "k": "隼人" }, { "r": "Naoto", "k": "直人" }
+      {
+        "r": "Yuta",
+        "k": "優太"
+      },
+      {
+        "r": "Takuya",
+        "k": "拓也"
+      },
+      {
+        "r": "Sho",
+        "k": "翔"
+      },
+      {
+        "r": "Daiki",
+        "k": "大樹"
+      },
+      {
+        "r": "Ryo",
+        "k": "涼"
+      },
+      {
+        "r": "Kazuki",
+        "k": "和樹"
+      },
+      {
+        "r": "Hayato",
+        "k": "隼人"
+      },
+      {
+        "r": "Naoto",
+        "k": "直人"
+      }
     ]
   },
-
   "nomiFemminili": {
     "anziane": [
-      { "r": "Kiyo", "k": "清代" }, { "r": "Haru", "k": "はる" }, { "r": "Fumi", "k": "文" }, { "r": "Toshiko", "k": "敏子" },
-      { "r": "Chiyoko", "k": "千代子" }, { "r": "Masako", "k": "正子" }, { "r": "Shizue", "k": "静江" }, { "r": "Umeko", "k": "梅子" },
-      { "r": "Sadako", "k": "貞子" }, { "r": "Tomiko", "k": "富子" }, { "r": "Yaeko", "k": "八重子" }, { "r": "Kimie", "k": "君江" }
+      {
+        "r": "Kiyo",
+        "k": "清代"
+      },
+      {
+        "r": "Haru",
+        "k": "はる"
+      },
+      {
+        "r": "Fumi",
+        "k": "文"
+      },
+      {
+        "r": "Toshiko",
+        "k": "敏子"
+      },
+      {
+        "r": "Chiyoko",
+        "k": "千代子"
+      },
+      {
+        "r": "Masako",
+        "k": "正子"
+      },
+      {
+        "r": "Shizue",
+        "k": "静江"
+      },
+      {
+        "r": "Umeko",
+        "k": "梅子"
+      },
+      {
+        "r": "Sadako",
+        "k": "貞子"
+      },
+      {
+        "r": "Tomiko",
+        "k": "富子"
+      },
+      {
+        "r": "Yaeko",
+        "k": "八重子"
+      },
+      {
+        "r": "Kimie",
+        "k": "君江"
+      }
     ],
     "adulte": [
-      { "r": "Keiko", "k": "恵子" }, { "r": "Yoko", "k": "陽子" }, { "r": "Junko", "k": "順子" }, { "r": "Michiko", "k": "美智子" },
-      { "r": "Kazuko", "k": "和子" }, { "r": "Sachiko", "k": "幸子" }, { "r": "Noriko", "k": "紀子" }, { "r": "Reiko", "k": "麗子" },
-      { "r": "Yumiko", "k": "由美子" }, { "r": "Mariko", "k": "真理子" }, { "r": "Hiroko", "k": "裕子" }, { "r": "Setsuko", "k": "節子" },
-      { "r": "Akemi", "k": "明美" }, { "r": "Kumiko", "k": "久美子" }, { "r": "Mitsuko", "k": "光子" }, { "r": "Harumi", "k": "晴美" }
+      {
+        "r": "Keiko",
+        "k": "恵子"
+      },
+      {
+        "r": "Yoko",
+        "k": "陽子"
+      },
+      {
+        "r": "Junko",
+        "k": "順子"
+      },
+      {
+        "r": "Michiko",
+        "k": "美智子"
+      },
+      {
+        "r": "Kazuko",
+        "k": "和子"
+      },
+      {
+        "r": "Sachiko",
+        "k": "幸子"
+      },
+      {
+        "r": "Noriko",
+        "k": "紀子"
+      },
+      {
+        "r": "Reiko",
+        "k": "麗子"
+      },
+      {
+        "r": "Yumiko",
+        "k": "由美子"
+      },
+      {
+        "r": "Mariko",
+        "k": "真理子"
+      },
+      {
+        "r": "Hiroko",
+        "k": "裕子"
+      },
+      {
+        "r": "Setsuko",
+        "k": "節子"
+      },
+      {
+        "r": "Akemi",
+        "k": "明美"
+      },
+      {
+        "r": "Kumiko",
+        "k": "久美子"
+      },
+      {
+        "r": "Mitsuko",
+        "k": "光子"
+      },
+      {
+        "r": "Harumi",
+        "k": "晴美"
+      }
     ],
     "giovaniAdulte": [
-      { "r": "Yuki", "k": "由紀" }, { "r": "Naomi", "k": "直美" }, { "r": "Tomoko", "k": "智子" }, { "r": "Kyoko", "k": "京子" },
-      { "r": "Miki", "k": "美樹" }, { "r": "Rie", "k": "理恵" }, { "r": "Megumi", "k": "恵" }, { "r": "Chie", "k": "千恵" },
-      { "r": "Asami", "k": "麻美" }, { "r": "Kaori", "k": "香織" }, { "r": "Mayumi", "k": "真由美" }, { "r": "Izumi", "k": "泉" },
-      { "r": "Sayuri", "k": "小百合" }, { "r": "Emiko", "k": "恵美子" }, { "r": "Ayako", "k": "綾子" }, { "r": "Rumiko", "k": "留美子" }
+      {
+        "r": "Yuki",
+        "k": "由紀"
+      },
+      {
+        "r": "Naomi",
+        "k": "直美"
+      },
+      {
+        "r": "Tomoko",
+        "k": "智子"
+      },
+      {
+        "r": "Kyoko",
+        "k": "京子"
+      },
+      {
+        "r": "Miki",
+        "k": "美樹"
+      },
+      {
+        "r": "Rie",
+        "k": "理恵"
+      },
+      {
+        "r": "Megumi",
+        "k": "恵"
+      },
+      {
+        "r": "Chie",
+        "k": "千恵"
+      },
+      {
+        "r": "Asami",
+        "k": "麻美"
+      },
+      {
+        "r": "Kaori",
+        "k": "香織"
+      },
+      {
+        "r": "Mayumi",
+        "k": "真由美"
+      },
+      {
+        "r": "Izumi",
+        "k": "泉"
+      },
+      {
+        "r": "Sayuri",
+        "k": "小百合"
+      },
+      {
+        "r": "Emiko",
+        "k": "恵美子"
+      },
+      {
+        "r": "Ayako",
+        "k": "綾子"
+      },
+      {
+        "r": "Rumiko",
+        "k": "留美子"
+      }
     ],
     "ragazze": [
-      { "r": "Ai", "k": "愛" }, { "r": "Mai", "k": "舞" }, { "r": "Saki", "k": "咲" }, { "r": "Yuka", "k": "由佳" },
-      { "r": "Aya", "k": "彩" }, { "r": "Nana", "k": "菜々" }, { "r": "Misaki", "k": "美咲" }, { "r": "Haruka", "k": "遥" }
+      {
+        "r": "Ai",
+        "k": "愛"
+      },
+      {
+        "r": "Mai",
+        "k": "舞"
+      },
+      {
+        "r": "Saki",
+        "k": "咲"
+      },
+      {
+        "r": "Yuka",
+        "k": "由佳"
+      },
+      {
+        "r": "Aya",
+        "k": "彩"
+      },
+      {
+        "r": "Nana",
+        "k": "菜々"
+      },
+      {
+        "r": "Misaki",
+        "k": "美咲"
+      },
+      {
+        "r": "Haruka",
+        "k": "遥"
+      }
     ]
   },
-
   "riservatiCastBase": {
     "$nota": "Nome+cognome VIETATI per i PNG generati (cast base GENKAI). Lista stabile; quella completa per-avventura si esporta dal Registro Nomi.",
-    "pg": ["Yamamoto Kenji", "Honda Ryota", "Nakamura Shota", "Sato Yuki", "Fujita Emi"],
-    "notevoli": ["Taniguchi Osamu", "Ito Daisuke", "Yamada Tetsuo", "Watanabe Hideo", "Gonda Susumu"],
-    "pngDeiKage": ["Yamamoto Noriko", "Tanaka Shuichi", "Goto Masaru", "Oda Takumi", "Nakamura Kazuo", "Nakamura Hideki", "Sato Michiko", "Tanaka Jiro", "Kato Hiroshi", "Iwamoto Koji", "Morita Akiko", "Hasegawa Ayumi", "Sanada Haruo", "Ono Shigeru", "Takeda Jun", "Kurosawa Ren", "Uchida Go", "Kawasaki Junko", "Kuroki Tetsuro", "Maezawa Hiroyuki", "Moriyama Genzo", "Okuda Jiro", "Honda Akira"]
+    "pg": [
+      "Yamamoto Kenji",
+      "Honda Ryota",
+      "Nakamura Shota",
+      "Sato Yuki",
+      "Fujita Emi"
+    ],
+    "notevoli": [
+      "Taniguchi Osamu",
+      "Ito Daisuke",
+      "Yamada Tetsuo",
+      "Watanabe Hideo",
+      "Gonda Susumu"
+    ],
+    "pngDeiKage": [
+      "Yamamoto Noriko",
+      "Tanaka Shuichi",
+      "Goto Masaru",
+      "Oda Takumi",
+      "Nakamura Kazuo",
+      "Nakamura Hideki",
+      "Sato Michiko",
+      "Tanaka Jiro",
+      "Kato Hiroshi",
+      "Iwamoto Koji",
+      "Morita Akiko",
+      "Hasegawa Ayumi",
+      "Sanada Haruo",
+      "Ono Shigeru",
+      "Takeda Jun",
+      "Kurosawa Ren",
+      "Uchida Go",
+      "Kawasaki Junko",
+      "Kuroki Tetsuro",
+      "Maezawa Hiroyuki",
+      "Moriyama Genzo",
+      "Okuda Jiro",
+      "Honda Akira"
+    ]
   },
-
   "algoritmo": {
     "generazione": "1) Determina la fascia d'età del personaggio → scegli il pool generazionale giusto. 2) Pesca cognome + nome. 3) Controlla nome+cognome contro: (a) cast del progetto corrente, (b) riservatiCastBase, (c) riservati_completi.json se presente. 4) In caso di collisione piena, ripesca SOLO il nome (il cognome condiviso è realistico — in Giappone i Sato e i Suzuki abbondano).",
     "famiglie": "I familiari condividono il cognome: genera il cognome UNA volta per nucleo. Una donna sposata del 1997 porta quasi sempre il cognome del marito; il cognome da nubile è un dettaglio investigativo utile (conti, vecchi documenti).",
     "kanjiVarianti": "Lo stesso suono può avere kanji diversi (Kenji 健二/賢治/健司): per personaggi diversi con lo stesso nome romanizzato in avventure diverse, variare il kanji è legittimo e realistico."
+  },
+  "morfemi": {
+    "$commento": "Mattoni per comporre i kanji di nomi NON in elenco: sillabe→kanji, presa la più lunga che combacia. Nessuna AI. Se il nome non si scompone si ripiega sul katakana (è ciò che fa il giapponese coi nomi che non conosce).",
+    "cognomi": {
+      "bayashi": "林",
+      "hayashi": "林",
+      "higashi": "東",
+      "minami": "南",
+      "tsuchi": "土",
+      "ushiro": "後",
+      "bashi": "橋",
+      "guchi": "口",
+      "hashi": "橋",
+      "hoshi": "星",
+      "izumi": "泉",
+      "kuchi": "口",
+      "matsu": "松",
+      "natsu": "夏",
+      "nishi": "西",
+      "shima": "島",
+      "shimo": "下",
+      "shiro": "白",
+      "tsuji": "辻",
+      "tsuka": "塚",
+      "tsuki": "月",
+      "tsuru": "鶴",
+      "ashi": "足",
+      "bama": "浜",
+      "bara": "原",
+      "bira": "平",
+      "dani": "谷",
+      "dera": "寺",
+      "fuji": "藤",
+      "funa": "船",
+      "fune": "船",
+      "furu": "古",
+      "fuyu": "冬",
+      "gawa": "川",
+      "hako": "箱",
+      "hama": "浜",
+      "hana": "花",
+      "hara": "原",
+      "haru": "春",
+      "hata": "畑",
+      "hira": "平",
+      "hito": "人",
+      "hone": "骨",
+      "hori": "堀",
+      "hoso": "細",
+      "ichi": "市",
+      "ishi": "石",
+      "jima": "島",
+      "kado": "門",
+      "kaji": "梶",
+      "kaki": "柿",
+      "kame": "亀",
+      "kami": "上",
+      "kane": "金",
+      "kawa": "川",
+      "kaze": "風",
+      "kiri": "桐",
+      "kita": "北",
+      "kubi": "首",
+      "kubo": "久保",
+      "kumo": "雲",
+      "kuni": "国",
+      "kuro": "黒",
+      "kusa": "草",
+      "kuwa": "桑",
+      "maru": "丸",
+      "miki": "三木",
+      "miya": "宮",
+      "mizu": "水",
+      "mori": "森",
+      "moto": "本",
+      "mura": "村",
+      "naga": "長",
+      "naka": "中",
+      "numa": "沼",
+      "saka": "坂",
+      "saki": "崎",
+      "sako": "迫",
+      "sato": "佐藤",
+      "sawa": "沢",
+      "seki": "関",
+      "seko": "世古",
+      "shin": "新",
+      "sora": "空",
+      "sugi": "杉",
+      "sumi": "角",
+      "taka": "高",
+      "take": "竹",
+      "taki": "滝",
+      "tama": "玉",
+      "tani": "谷",
+      "tate": "館",
+      "tera": "寺",
+      "tomo": "友",
+      "toyo": "豊",
+      "uchi": "内",
+      "waki": "脇",
+      "wara": "原",
+      "yagi": "八木",
+      "yama": "山",
+      "yasu": "安",
+      "yumi": "弓",
+      "zaka": "坂",
+      "zaki": "崎",
+      "zawa": "沢",
+      "zuka": "塚",
+      "abe": "阿部",
+      "aka": "赤",
+      "aki": "秋",
+      "ame": "雨",
+      "ana": "穴",
+      "ara": "新",
+      "chi": "地",
+      "dai": "大",
+      "doi": "土井",
+      "hon": "本",
+      "ide": "出",
+      "ike": "池",
+      "mae": "前",
+      "oka": "岡",
+      "sai": "斎",
+      "san": "三",
+      "tou": "藤",
+      "tsu": "津",
+      "umi": "海",
+      "ura": "浦",
+      "ao": "青",
+      "be": "部",
+      "bu": "部",
+      "da": "田",
+      "gi": "木",
+      "hi": "日",
+      "ka": "香",
+      "ki": "木",
+      "ko": "小",
+      "me": "目",
+      "mi": "三",
+      "no": "野",
+      "oo": "大",
+      "ta": "田",
+      "te": "手",
+      "to": "藤",
+      "ue": "上",
+      "ya": "矢",
+      "yo": "世",
+      "zu": "津",
+      "i": "井",
+      "o": "大"
+    },
+    "nomi": {
+      "tsuyoshi": "剛",
+      "hisashi": "久",
+      "daichi": "大地",
+      "makoto": "誠",
+      "midori": "緑",
+      "noboru": "昇",
+      "nosuke": "之助",
+      "sakura": "桜",
+      "susumu": "進",
+      "chika": "親",
+      "hachi": "八",
+      "hoshi": "星",
+      "kaori": "香織",
+      "katsu": "勝",
+      "kenji": "健二",
+      "matsu": "松",
+      "michi": "道",
+      "mitsu": "光",
+      "reiko": "玲子",
+      "shige": "茂",
+      "shizu": "静",
+      "tetsu": "哲",
+      "toshi": "敏",
+      "tsugu": "次",
+      "tsuki": "月",
+      "tsune": "常",
+      "tsura": "面",
+      "tsuyo": "強",
+      "yoshi": "良",
+      "atsu": "篤",
+      "emon": "右衛門",
+      "fumi": "文",
+      "fusa": "房",
+      "gaku": "学",
+      "hana": "花",
+      "haru": "春",
+      "hata": "旗",
+      "hide": "秀",
+      "hiko": "彦",
+      "hina": "陽菜",
+      "hiro": "博",
+      "hisa": "久",
+      "ichi": "一",
+      "kaku": "格",
+      "kana": "佳奈",
+      "kane": "兼",
+      "kata": "堅",
+      "kawa": "川",
+      "kaze": "風",
+      "kazu": "和",
+      "kiku": "菊",
+      "kita": "北",
+      "kiyo": "清",
+      "kumo": "雲",
+      "kuni": "国",
+      "kura": "蔵",
+      "maru": "丸",
+      "masa": "正",
+      "mika": "美香",
+      "mine": "峰",
+      "momo": "桃",
+      "mori": "守",
+      "moto": "元",
+      "mune": "宗",
+      "nada": "灘",
+      "naga": "永",
+      "nagi": "凪",
+      "nami": "波",
+      "nari": "成",
+      "nobu": "信",
+      "nori": "則",
+      "rika": "理香",
+      "riki": "力",
+      "riku": "陸",
+      "roku": "六",
+      "ryou": "良",
+      "sabu": "三",
+      "sada": "貞",
+      "saki": "咲",
+      "sana": "真",
+      "sato": "里",
+      "saya": "沙也",
+      "shin": "真",
+      "shio": "潮",
+      "sora": "空",
+      "suke": "介",
+      "suzu": "鈴",
+      "tada": "忠",
+      "taka": "隆",
+      "take": "武",
+      "taku": "拓",
+      "teru": "輝",
+      "tomi": "富",
+      "tomo": "智",
+      "tori": "鳥",
+      "wata": "渡",
+      "yama": "山",
+      "yasu": "康",
+      "yoko": "陽子",
+      "yori": "頼",
+      "yuka": "由香",
+      "yuki": "幸",
+      "yume": "夢",
+      "yuri": "百合",
+      "zaki": "崎",
+      "aki": "明",
+      "aya": "綾",
+      "ayu": "歩",
+      "bei": "兵衛",
+      "bun": "文",
+      "chi": "千",
+      "dai": "大",
+      "gen": "源",
+      "gou": "剛",
+      "hei": "平",
+      "hon": "本",
+      "iku": "郁",
+      "isa": "勇",
+      "iwa": "岩",
+      "jou": "丈",
+      "jun": "純",
+      "kae": "佳",
+      "kai": "海",
+      "kan": "寛",
+      "kei": "敬",
+      "ken": "健",
+      "kou": "浩",
+      "kyo": "京",
+      "mai": "舞",
+      "man": "万",
+      "nao": "直",
+      "oki": "興",
+      "osa": "修",
+      "ran": "蘭",
+      "rei": "玲",
+      "ren": "蓮",
+      "rin": "凛",
+      "rou": "郎",
+      "ryo": "良",
+      "ryu": "竜",
+      "sae": "冴",
+      "sei": "誠",
+      "shi": "志",
+      "sho": "翔",
+      "shu": "修",
+      "sou": "宗",
+      "sue": "末",
+      "tai": "太",
+      "tou": "藤",
+      "ume": "梅",
+      "umi": "海",
+      "you": "陽",
+      "zen": "善",
+      "zou": "三",
+      "ai": "愛",
+      "bu": "武",
+      "ei": "英",
+      "go": "吾",
+      "gu": "具",
+      "ha": "葉",
+      "ji": "次",
+      "ka": "香",
+      "ki": "樹",
+      "ko": "子",
+      "ku": "久",
+      "ma": "真",
+      "mi": "美",
+      "na": "奈",
+      "ne": "音",
+      "no": "乃",
+      "pu": "歩",
+      "ri": "里",
+      "ro": "郎",
+      "ru": "留",
+      "sa": "紗",
+      "so": "宗",
+      "ta": "太",
+      "to": "人",
+      "wa": "和",
+      "ya": "也",
+      "yo": "代",
+      "yu": "優",
+      "zo": "三",
+      "zu": "津",
+      "a": "亜",
+      "e": "恵",
+      "i": "衣",
+      "o": "夫"
+    }
   }
 }
