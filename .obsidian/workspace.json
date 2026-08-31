@@ -11,10 +11,14 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Investigare/GENKAI_Manuale_Situazioni.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "GENKAI_Manuale_Situazioni"
             }
           }
         ]
@@ -225,6 +229,16 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
+    "Investigare/sito_genkai/index.html.nuovo",
+    "Investigare/sito_genkai/img/copertine/manuale-situazioni.jpg",
+    "Investigare/cop-situazioni-20260831-233645-919.png",
+    "Investigare/sito_genkai/index.html.tmp.28744.138fca9e6d64",
+    "Investigare/GENKAI_Specializzazioni.md",
+    "Investigare/GENKAI_Briefing_Giocatori.md",
+    "Investigare/GENKAI_Combattimento.md",
+    "Investigare/GENKAI_Kage.md",
     "Investigare/REGISTRO_MODIFICHE.md.tmp.6916.f63bbd487174",
     "Investigare/Wizard/codice/GenkaiWizard/wwwroot/css/site.css.tmp.6916.c9aa6027ad27",
     "Investigare/Wizard/codice/GenkaiWizard/Pages/Pg/Scheda.cshtml.tmp.6916.0eaf3410af07",
@@ -232,10 +246,6 @@
     "Investigare/Wizard/codice/GenkaiWizard/Services/GeneratoreNomi.cs.tmp.6916.e1fc7cf523af",
     "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.6916.1eb4607b454d",
     "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.6916.80eec18e48d2",
-    "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.6916.c15360aba714",
-    "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.6916.1f1aeea7b993",
-    "Investigare/Wizard/codice/GenkaiWizard/Pages/Pg/Scheda.cshtml.tmp.6916.b3cc73488710",
-    "Investigare/Wizard/codice/GenkaiWizard/wwwroot/css/site.css.tmp.6916.fc6b8ede7a8c",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/Identity/lib/jquery-validation/LICENSE.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/lib/jquery-validation/LICENSE.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/img/sfondi/rami-e-uccelli.jpg",
@@ -246,8 +256,6 @@
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/allegati/pg-7920740d-3004-43c5-b15f-967307cac5fe/ritratto.png",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/allegati/pg-cde90ffb-36d4-4cda-bf38-44afce8a3ed3/ritratto.png",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/allegati/pg-54a2a880-b658-4c09-b738-ad4e60d152d6/scena-639207942518243625.png",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/allegati/pg-6988c4f5-bc02-47d3-838e-56d963b7060e/scena-639210424783819085.png",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/wwwroot/allegati/pg-54a2a880-b658-4c09-b738-ad4e60d152d6/ritratto.png",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/handout/_default.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/handout/_base.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/handout/tabulato-telefonico.md",
@@ -266,10 +274,6 @@
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/handout/certificato-medico.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/handout/articolo-di-giornale.md",
     "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/_comune.md",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/pg_campo.md",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/passo_10.md",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/passo_11.md",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/passo_09.md",
-    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/passo_07.md"
+    "Investigare/Wizard/codice/GenkaiWizard/bin/publish_deploy/Dati/prompts/pg_campo.md"
   ]
 }

@@ -97,8 +97,14 @@ h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spa
 .scheda .meta{font-family:var(--sans);font-size:.76rem;letter-spacing:.05em;color:var(--tenue);margin:.4rem 0 .7rem;text-transform:uppercase}
 .scheda p{margin:0 0 .9rem;color:var(--inchiostro2);font-size:.97rem}
 .scheda .piede{margin-top:auto;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-.bollo{font-family:var(--sans);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--bordo);color:var(--tenue)}
+.bollo{font-family:var(--sans);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--bordo);color:var(--tenue);white-space:nowrap}
+/* strumenti (3 colonne): piede uniforme — bottone a tutta larghezza, bollo sotto.
+   Così i tre bottoni e i tre bolli restano allineati a qualunque larghezza. */
+.schede-3 .piede{flex-direction:column;align-items:stretch;gap:.5rem}
+.schede-3 .piede .btn{width:100%;text-align:center;box-sizing:border-box}
+.schede-3 .piede .bollo{align-self:flex-start}
 .bollo-rosso{border-color:var(--rosso);color:var(--rosso)}
+.btn-disab{opacity:.45;pointer-events:none;cursor:default;filter:grayscale(30%)}
 
 /* ── galleria handout ──────────────────────────────── */
 .galleria{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
@@ -172,9 +178,11 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     <h1><span class="h1-kanji">限界</span>Kyoto, 1997</h1>
     <p class="motto">I casi si chiudono. <b>Chi li conduce, si consuma.</b><br>Il limite da non superare è il vostro.</p>
     <div class="bottoni">
-      <a class="btn btn-forte" href="#starter">Scarica lo Starter — gratis</a>
-      <a class="btn" href="#strumenti">Prova gli strumenti online</a>
+      <span class="btn btn-forte btn-disab">Scarica lo Starter — a breve</span>
+      <a class="btn" href="/Pg">✨ Crea un investigatore</a>
+      <a class="btn" href="/Progetti">✨ Costruisci un caso</a>
     </div>
+    <p class="occhiello" style="margin-top:.9rem">Wizard guidati passo passo, con l'aiuto dell'AI — l'investigatore anche senza registrarsi</p>
     <p class="fatti">
       <span>3–5 giocatori + 1 GM</span><span>3–4 ore a caso</span><span>Si tira 2d6</span><span>In italiano</span>
     </p>
@@ -252,7 +260,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
         </ul>
 
         <div class="bottoni" style="justify-content:flex-start">
-          <a class="btn btn-forte" href="download/genkai-starter.zip">Scarica lo Starter</a>
+          <span class="btn btn-forte btn-disab">Scarica lo Starter — a breve</span>
           <a class="btn" href="#avventure">Vedi tutte le avventure</a>
         </div>
         <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin-top:.9rem">
@@ -336,7 +344,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>L'Ultima Cena di Tanaka <span class="kj">酒</span></h3>
           <p class="meta">Una serata · 3–4 ore · per cominciare</p>
           <p>Un industriale dei cosmetici muore durante la festa che ha organizzato in casa propria. Nessuno è uscito dalla villa: il colpevole è ancora fra gli ospiti, e ha una spiegazione pronta per tutto.</p>
-          <div class="piede"><a class="btn btn-forte btn-piccolo" href="download/genkai-starter.zip">Scarica</a><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">13 handout</span></div>
+          <div class="piede"><span class="btn btn-forte btn-piccolo btn-disab">Scarica — a breve</span><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">13 handout</span></div>
         </div>
       </article>
 
@@ -425,7 +433,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
 
     <div class="bottoni" style="margin-top:1.6rem">
       <a class="btn" href="squadra/">📖 Sfoglia il libretto della squadra</a>
-      <a class="btn btn-piccolo" href="#strumenti">Creane uno tuo</a>
+      <a class="btn" href="/Pg">✨ Creane uno tuo</a>
     </div>
   </div>
 </section>
@@ -479,7 +487,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>Briefing dei giocatori</h3>
           <p class="meta">Da leggere prima di sedersi</p>
           <p>Le pagine da dare in mano a chi gioca: cosa fa un investigatore, come si tira, cos'è il Ki. Si legge in dieci minuti.</p>
-          <div class="piede"><a class="btn btn-forte btn-piccolo" href="download/genkai-starter.zip">Scarica</a><span class="bollo bollo-rosso">Nello Starter</span></div>
+          <div class="piede"><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">A breve</span></div>
         </div>
       </article>
 
@@ -489,7 +497,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>Manuale dei giocatori</h3>
           <p class="meta">Il regolamento completo</p>
           <p>Attributi, tiri, En, Ki e Genkai, i doni che costano caro, le specializzazioni, la crescita tra un caso e l'altro.</p>
-          <div class="piede"><span class="bollo">In preparazione</span></div>
+          <div class="piede"><span class="bollo">A breve</span></div>
         </div>
       </article>
 
@@ -499,7 +507,17 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>Manuale del GM</h3>
           <p class="meta">Per chi conduce</p>
           <p>Come si porta un'indagine, come si gestiscono interrogatori e pressioni, come si costruisce un caso che sta in piedi.</p>
-          <div class="piede"><span class="bollo">In preparazione</span></div>
+          <div class="piede"><span class="bollo">A breve</span></div>
+        </div>
+      </article>
+
+      <article class="scheda scheda-cop">
+        <img src="img/copertine/manuale-situazioni.jpg" alt="Copertina: Manuale delle Situazioni" loading="lazy">
+        <div class="scheda-testo">
+          <h3>Manuale delle Situazioni</h3>
+          <p class="meta">Costruire i casi</p>
+          <p>Il metodo, passo per passo: la vittima e il suo mondo, il colpevole, i moventi degli altri, i depistaggi, chi sa cosa. È lo stesso metodo che il wizard online applica per voi.</p>
+          <div class="piede"><a class="btn btn-forte btn-piccolo" href="/Progetti">✨ Costruisci un caso col wizard</a><span class="bollo">A breve</span></div>
         </div>
       </article>
     </div>
@@ -512,8 +530,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     <p class="occhio">Kyoto, 1997</p>
     <h2 style="font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);margin:0 0 1.2rem">Un caso si chiude. La città, no.</h2>
     <div class="bottoni">
-      <a class="btn btn-forte" href="#starter">Scarica lo Starter — gratis</a>
-      <a class="btn" href="/Pg">Crea un investigatore</a>
+      <span class="btn btn-forte btn-disab">Scarica lo Starter — a breve</span>
+      <a class="btn" href="/Pg">✨ Crea un investigatore</a>
+      <a class="btn" href="/Progetti">✨ Costruisci un caso</a>
     </div>
   </div>
 </section>

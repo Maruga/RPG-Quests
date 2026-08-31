@@ -177,6 +177,8 @@ body {
 .wz-card { display: flex; align-items: stretch; gap: .3rem; border: 1px solid #e0dcc8; border-radius: 10px; margin: .6rem 0; overflow: hidden; }
 .wz-card-main { flex: 1; padding: .7rem .9rem; text-decoration: none; color: var(--wz-navy); display: block; }
 .wz-meta { display: block; color: var(--wz-grigio); font-size: .8rem; margin: .15rem 0 .3rem; }
+/* il caso dimostrativo: bollo dorato «sola lettura» */
+.wz-bollo-demo { display: inline-block; margin-left: .5rem; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; padding: .15rem .55rem; border-radius: 999px; border: 1px solid #b08d2f; color: #b08d2f; vertical-align: middle; white-space: nowrap; }
 .wz-barra { display: block; height: 5px; background: #eee; border-radius: 3px; }
 .wz-barra span { display: block; height: 5px; background: var(--wz-oro); border-radius: 3px; }
 .wz-vuoto { color: var(--wz-grigio); }

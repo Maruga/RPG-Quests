@@ -13,6 +13,10 @@
         <a asp-page="/Progetti/Index" class="wz-indietro" title="I miei casi">‹</a>
         <input id="wz-titolo" class="wz-titolo" maxlength="120" value="@Model.Progetto.Titolo"
                @(Model.Progetto.Demo ? "readonly" : "") />
+        @if (Model.Progetto.Demo)
+        {
+            <span class="wz-bollo-demo" title="Caso dimostrativo: si sfoglia ma non si modifica">Demo · sola lettura</span>
+        }
         <span id="wz-salvato" class="wz-salvato" title="Stato salvataggio">●</span>
         @if (Model.AiAttiva)
         {

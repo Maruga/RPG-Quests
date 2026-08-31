@@ -11,22 +11,37 @@ namespace GenkaiWizard.Pages.Progetti;
 public class IndexModel : PageModel
 {
     private readonly ApplicationDbContext _db;
-    public IndexModel(ApplicationDbContext db) => _db = db;
+    private readonly IConfiguration _cfg;
+    public IndexModel(ApplicationDbContext db, IConfiguration cfg) { _db = db; _cfg = cfg; }
 
     public List<ProgettoAvventura> Progetti { get; set; } = new();
 
     private string Uid => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
 
+    /// <summary>Fase di test (decisione utente 2026-08-31): crea casi solo l'email in
+    /// Casi:Creatore; config vuota = tutti (com'è in sviluppo). Gli altri sfogliano la demo.</summary>
+    public bool PuoCreare
+    {
+        get
+        {
+            var creatore = _cfg["Casi:Creatore"];
+            return string.IsNullOrWhiteSpace(creatore)
+                || string.Equals(User.Identity?.Name, creatore.Trim(), StringComparison.OrdinalIgnoreCase);
+        }
+    }
+
     public async Task OnGetAsync()
     {
+        // i propri casi + i casi demo (di chiunque): la demo si sfoglia in sola lettura
         Progetti = await _db.Progetti
-            .Where(p => p.UtenteId == Uid)
+            .Where(p => p.UtenteId == Uid || p.Demo)
             .OrderByDescending(p => p.AggiornatoIl)
             .ToListAsync();
     }
 
     public async Task<IActionResult> OnPostCreaAsync(string? titolo)
     {
+        if (!PuoCreare) return Forbid();
         var p = new ProgettoAvventura
         {
             UtenteId = Uid,

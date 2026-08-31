@@ -63,7 +63,7 @@ public class IndexModel : PageModel
     public async Task<IActionResult> OnGetAsync(Guid id, int passo = 0)
     {
         var p = await _db.Progetti.AsNoTracking()
-            .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == Uid);
+            .FirstOrDefaultAsync(x => x.Id == id && (x.UtenteId == Uid || x.Demo));
         if (p is null) return NotFound();
 
         Progetto = p;
@@ -78,7 +78,7 @@ public class IndexModel : PageModel
     public async Task<IActionResult> OnGetExportAsync(Guid id)
     {
         var p = await _db.Progetti.AsNoTracking()
-            .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == Uid);
+            .FirstOrDefaultAsync(x => x.Id == id && (x.UtenteId == Uid || x.Demo));
         if (p is null) return NotFound();
 
         var st = JsonNode.Parse(p.StatoJson) as JsonObject ?? new JsonObject();
