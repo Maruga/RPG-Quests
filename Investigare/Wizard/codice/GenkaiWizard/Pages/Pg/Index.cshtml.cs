@@ -75,7 +75,7 @@ public class IndexModel : PageModel
               "descrizioneFisica": "", "ritratto": "", "chiSei": "",
               "kage": { "archetipo": "", "problema": "", "png": "", "persone": [] },
               "esperienza": { "sfondo": "", "musica": "", "volume": 60, "scelto": false },
-              "enja": [ { "cognome": "", "nome": "", "eta": "", "relazione": "", "en": "", "comeConosciuti": "", "cosaSa": "", "aspetto": "", "ritratto": "" } ],
+              "enja": [ { "cognome": "", "nome": "", "eta": "", "relazione": "", "en": "", "comeConosciuti": "", "cosaSa": "", "aspetto": "", "carattere": "", "comeParla": "", "vuole": "", "ritratto": "" } ],
               "comportamento": { "tatemae": "", "honne": "", "fraseTipica": "", "sottoPressione": "", "debolezza": "" },
               "tratti": { "vizio": "", "tic": "", "oggetto": "", "gusto": "", "liberoEtichetta": "Rituale", "libero": "" },
               "rapporti": [],

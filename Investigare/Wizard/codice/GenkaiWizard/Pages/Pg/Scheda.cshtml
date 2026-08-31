@@ -131,16 +131,30 @@
                     </select>
                     <input type="text" id="pg-ruolo-libero" class="wz-custom-input" placeholder="Scrivi il ruolo…" hidden /></div>
                 <div class="wz-campo pg-span2"><label>Grado <small>(rango di polizia)</small></label>
+                    @* I 9 gradi dell'art. 62 della Legge di Polizia, più 巡査長 (designazione, non grado)
+                       e il 警察庁長官 che sta fuori scala. Sopra il 警部 di norma sono PNG, ma il wizard
+                       crea anche loro: restano in elenco. *@
                     <select id="pg-grado-sel" class="wz-lungo">
                         <option value="">— scegli —</option>
-                        <option value="Junsa (Agente)">Junsa — Agente (la divisa, il kōban)</option>
-                        <option value="Junsa-chō (Agente Scelto)">Junsa-chō — Agente Scelto</option>
-                        <option value="Junsa-buchō (Sergente)">Junsa-buchō — Sergente ⭐ il detective tipico</option>
-                        <option value="Keibu-ho (Vice Ispettore)">Keibu-ho — Vice Ispettore · detective anziano</option>
-                        <option value="Keibu (Ispettore Capo)">Keibu — Ispettore Capo · guida la squadra</option>
+                        <optgroup label="Investigatori — da qui si gioca">
+                            <option value="Junsa 巡査">巡査 Junsa — l'agente in divisa: posto di quartiere e pattuglia</option>
+                            <option value="Junsa-chō 巡査長">巡査長 Junsa-chō — il veterano rimasto agente: un riconoscimento, non un grado</option>
+                            <option value="Junsa-buchō 巡査部長">巡査部長 Junsa-buchō — il caposquadra ⭐ il grado del detective</option>
+                            <option value="Keibu-ho 警部補">警部補 Keibu-ho — capo di una piccola unità: il detective anziano</option>
+                            <option value="Keibu 警部">警部 Keibu — capo sezione: guida un pezzo della squadra investigativa</option>
+                        </optgroup>
+                        <optgroup label="Dirigenti — di norma PNG">
+                            <option value="Keishi 警視">警視 Keishi — dirigente: comanda un commissariato</option>
+                            <option value="Keishi-sei 警視正">警視正 Keishi-sei — da qui si dipende dallo Stato, non più dalla prefettura</option>
+                            <option value="Keishi-chō 警視長">警視長 Keishi-chō — ai vertici della polizia di una prefettura</option>
+                            <option value="Keishi-kan 警視監">警視監 Keishi-kan — qui sta il capo della Polizia di Kyōto</option>
+                            <option value="Keishi-sōkan 警視総監">警視総監 Keishi-sōkan — il capo della polizia di Tokyo: a Kyōto non esiste</option>
+                            <option value="Keisatsuchō Chōkan 警察庁長官">警察庁長官 — capo della polizia nazionale: sta fuori dalla scala</option>
+                        </optgroup>
                         <option value="__custom">✏️ Altro — lo scrivo io</option>
                     </select>
-                    <input type="text" id="pg-grado-libero" class="wz-custom-input" placeholder="Scrivi il grado…" hidden /></div>
+                    <input type="text" id="pg-grado-libero" class="wz-custom-input" placeholder="Scrivi il grado…" hidden />
+                    <p class="wz-nota">Nel dubbio scegli <strong>巡査部長</strong>: è il grado con cui si fa il mestiere di detective. Il <strong>巡査長</strong> non è un grado vero ma un riconoscimento a chi è rimasto agente per anni.</p></div>
             </div>
 
             <h3 class="wz-h3">🏠 Dove vivi e come ti si contatta <button type="button" id="pg-residenza-ai" class="wz-btn wz-mini" title="L'AI propone residenza e contatti coerenti (riempie solo i campi vuoti)">✨</button></h3>
@@ -148,11 +162,15 @@
                 <div class="wz-campo"><label>Quartiere</label>
                     <select id="pg-quartiere-sel" class="wz-lungo"><option value="">— scegli —</option></select>
                     <input type="text" id="pg-quartiere-libero" class="wz-custom-input" placeholder="Scrivi il quartiere…" hidden /></div>
-                <div class="wz-campo"><label>Indirizzo <small>(via, edificio)</small></label><input type="text" data-pg-campo="identita.via" placeholder="es. apāto Kotobuki 2-4, vicino alla stazione" /></div>
-                <div class="wz-campo"><label>Telefono di casa</label><input type="text" data-pg-campo="identita.telefono" placeholder="es. 075-541-2367" /></div>
-                <div class="wz-campo"><label>Telefono cellulare</label><input type="text" data-pg-campo="identita.cellulare" placeholder="es. 030-12-34567" /></div>
+                <div class="wz-campo pg-span2"><label>Indirizzo <small>(via, edificio)</small></label><input type="text" data-pg-campo="identita.via" placeholder="es. apāto Kotobuki 2-4, vicino alla stazione" /></div>
+                @* al tavolo i numeri non si compongono mai: serve sapere SE ti si può raggiungere (decisione utente) *@
+                <div class="wz-campo pg-spunte"><label>Come ti si raggiunge</label>
+                    <label class="pg-check"><input type="checkbox" data-pg-campo="identita.telefono" /><span class="pg-kana">電話</span> Telefono di casa</label>
+                    <label class="pg-check"><input type="checkbox" data-pg-campo="identita.cellulare" /><span class="pg-kana">携帯</span> Cellulare</label>
+                    <label class="pg-check"><input type="checkbox" data-pg-campo="identita.pocketBell" /><span class="pg-kana">ポケベル</span> Pocket bell</label>
+                    <p class="wz-nota">Nel 1997 il cellulare è ancora raro e caro; il <em>pocket bell</em> — il cercapersone — è quasi d'ordinanza in polizia.</p>
+                </div>
                 <div class="wz-campo pg-span2 pg-alto2"><label>Altri contatti <small>(fax, tramite terzi, il bar sotto casa…)</small></label><textarea data-pg-campo="identita.altroContatto" rows="3" placeholder="es. fax del distretto; messaggio all'izakaya Kotobuki"></textarea></div>
-                <div class="wz-campo"><label>Pocket bell <small>(cercapersone)</small></label><input type="text" data-pg-campo="identita.pocketBell" placeholder="es. 020-555-8812" /></div>
             </div>
 
         </section>
@@ -256,6 +274,8 @@
                 </div>
             </div>
 
+            @if (Model.EstesaAttiva)
+            {
             <h3 class="wz-h3">Scene personali <small>(facoltative, massimo 3)</small></h3>
             <p class="wz-nota">Momenti della vita del tuo personaggio fuori dal caso — in accademia, al parco, al bancone del solito locale. Immagini che aiutano a interpretarlo meglio. Il volto segue la descrizione fisica. Al massimo <strong>tre</strong>: per farne una nuova, togline una.</p>
             <div class="wz-campo"><label>Descrivi la scena <small>(dove sei, cosa fai, che atmosfera)</small></label>
@@ -263,6 +283,7 @@
             <button type="button" id="pg-scena-genera" class="wz-btn">🎨 Genera immagine</button>
             <span id="pg-scena-msg" class="wz-nota"></span>
             <div id="pg-scene-galleria" class="pg-scene"></div>
+            }
         </section>
 
         <!-- ═══════════ 8 · KAGE ═══════════ -->
@@ -286,10 +307,14 @@
             <div class="wz-campo"><label>Il PNG del problema <small>(la persona al centro del tuo Kage)</small> <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="kagePng" data-pg-dest="kage.png">✨</button></label>
                 <textarea rows="5" data-pg-campo="kage.png" placeholder="Età · Lavoro · Relazione con te · Cosa vuole · Come si comporta"></textarea></div>
 
-            <h3 class="wz-h3">Le persone del tuo Kage <small>(schede minime)</small></h3>
-            <p class="wz-nota">Chi ruota attorno al problema — anche più d'una (la sorella, il figlio…): nome, due dati e un volto, giusto per salvarle e ritrovarle.</p>
+            <h3 class="wz-h3">La persona del tuo Kage <small>(scheda minima)</small></h3>
+            <p class="wz-nota">Chi c'è dentro al problema — la sorella, il figlio, il creditore. Poche righe, ma quelle giuste: al tavolo questa persona la interpreta <strong>qualcun altro</strong>, che la legge sul momento e ha cinque minuti per entrarci. Aspetto, modo di fare, due frasi sue e cosa vuole da te: tanto basta.</p>
+            <p class="wz-nota">Sotto la foto ci sono i suoi <strong>attributi</strong> e il <strong>Ki</strong>: servono se al tavolo gli tocca un tiro. È un PNG, quindi niente Gou e un filo sopra la media — <strong>11 punti</strong> da distribuire partendo da 4, mai oltre 9. Puoi scriverli a mano come vuoi, oppure premere 🎲 per farli proporre; il <strong>Ki si ricalcola da solo</strong> (attributo più basso + il migliore di 2d6).</p>
+            <p class="wz-nota">✨ <strong>Crea con AI</strong> riempie <strong>solo i campi vuoti</strong>: quello che hai già scritto non viene mai toccato. Se vuoi che lo rifaccia, <strong>svuota prima il campo</strong>.</p>
             <div id="pg-kage-persone" class="pg-kage-persone"></div>
+            @* per ora se ne tiene UNA sola: il limite lo applica pg.js (Funzioni:SchedaEstesa lo toglie) *@
             <button type="button" id="pg-kage-persona-agg" class="wz-btn wz-mini">+ Aggiungi persona</button>
+            <span id="pg-kage-persona-nota" class="wz-nota"></span>
         </section>
 
         <!-- ═══════════ 9 · ENJA ═══════════ -->
@@ -301,13 +326,17 @@
                 <p>L'<strong>En</strong> segnato qui è quello che <strong>il PNG ha verso di TE</strong> — il motivo per cui risponde al telefono. En positivo → i tiri con lui sono più facili (si sottrae dal dado); di norma un Enja parte da <strong>+1 o +2</strong>. Si costruisce e si consuma giocando: se ti aiuta quando il dado da solo non bastava, l'En cala di 1.</p>
             </div>
 
+            <p class="wz-nota">Sotto la foto ci sono i suoi <strong>attributi</strong> e il <strong>Ki</strong>: servono se al tavolo gli tocca un tiro. È un PNG, quindi niente Gou e un filo sopra la media — <strong>11 punti</strong> da distribuire partendo da 4, mai oltre 9. Puoi scriverli a mano come vuoi, oppure premere 🎲 per farli proporre; il <strong>Ki si ricalcola da solo</strong> (attributo più basso + il migliore di 2d6).</p>
+            <p class="wz-nota">✨ <strong>Crea con AI</strong> riempie <strong>solo i campi vuoti</strong>: quello che hai già scritto non viene mai toccato. Se vuoi che lo rifaccia, <strong>svuota prima il campo</strong>.</p>
             <div id="pg-enja-lista" class="pg-kage-persone"></div>
+            @* per ora l'Enja è uno solo: il limite lo applica pg.js (Funzioni:SchedaEstesa lo toglie) *@
             <button type="button" id="pg-enja-agg" class="wz-btn wz-mini">+ Aggiungi Enja</button>
+            <span id="pg-enja-nota" class="wz-nota"></span>
         </section>
 
         <!-- ═══════════ 10 · CARATTERE ═══════════ -->
         <section data-pg-passo="10" hidden>
-            <h2>Come ti comporti</h2>
+            <h2>Come ti comporti <button type="button" id="pg-carattere-ai" class="wz-btn wz-mini" title="L'AI compila il carattere leggendo tutta la scheda: riempie solo i campi vuoti, e dei tratti ne bastano 3 su 5 — consuma 1 aiuto ✨">✨ Compila tutto</button></h2>
             <p class="wz-aiuto">In Giappone c'è il <strong>tatemae</strong> (la faccia pubblica) e lo <strong>honne</strong> (quello che sei davvero). Il contrasto tra i due è il tuo personaggio.</p>
 
             <div class="wz-campo"><label>In pubblico (Tatemae) <button type="button" class="wz-btn wz-mini pg-ai" data-pg-ai="tatemae" data-pg-dest="comportamento.tatemae">✨</button></label>
@@ -401,6 +430,7 @@
             passo: @Model.Pg.PassoCorrente,
             aiAttiva: @(Model.AiAttiva ? "true" : "false"),
             crescitaAttiva: @(Model.CrescitaAttiva ? "true" : "false"),
+            estesaAttiva: @(Model.EstesaAttiva ? "true" : "false"),
             immaginiAttive: @(Model.ImmaginiAttive ? "true" : "false"),
             @* «</» → «<\/»: se un testo della scheda contiene "</script>" non deve chiudere questo blocco *@
             stato: @Html.Raw(Model.Pg.StatoJson.Replace("</", "<\\/"))

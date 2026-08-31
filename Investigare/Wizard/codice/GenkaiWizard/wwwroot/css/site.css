@@ -162,6 +162,15 @@ body {
 .wz-icobtn svg { width: 17px; height: 17px; }
 .wz-icobtn:hover { color: var(--wz-navy); border-color: var(--wz-navy); }
 .wz-icobtn.rosso:hover { color: var(--wz-rosso); border-color: var(--wz-rosso); background: #fdf3f0; }
+/* riepilogo: il tiro, i 4 riquadri del Ki e il Nasake — a specchio della scheda stampata */
+.pg-riep-regola { border-left: 3px solid #8b1a1a; background: #fffdf6; border-radius: 4px; padding: .45rem .6rem; margin-top: .5rem; font-size: .85rem; line-height: 1.5; }
+.pg-riep-ki4 { display: grid; grid-template-columns: 1fr; gap: .5rem; }
+@media (min-width: 700px) { .pg-riep-ki4 { grid-template-columns: 1fr 1fr; } }
+.pg-riep-ki4 > div { border: 1px solid #e0dcc8; border-radius: 8px; background: #fffdf6; padding: .5rem .7rem; font-size: .85rem; line-height: 1.45; }
+.pg-riep-kinum { font-size: 1.35rem; font-weight: 700; color: #8b1a1a; }
+.pg-riep-tacche { letter-spacing: 3px; }
+.pg-riep-scala { letter-spacing: 5px; text-align: center; margin-top: .2rem; font-size: 1rem; }
+.pg-riep-nasake { border-left: 3px solid #8b1a1a; background: #fffdf6; border-radius: 4px; padding: .45rem .6rem; margin-top: .5rem; }
 /* barra di avanzamento del personaggio nella card */
 .pg-avanz { display: block; height: 4px; background: #eee6d8; border-radius: 2px; overflow: hidden; margin-top: .4rem; max-width: 340px; }
 .pg-avanz > span { display: block; height: 100%; background: var(--wz-rosso); border-radius: 2px; }
@@ -557,9 +566,21 @@ input.wz-data-caso { max-width: 12rem; }
 .pg-kage-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .pg-kage-campi { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
 .pg-kage-campi .pg-kage-largo { grid-column: 1 / -1; }
+/* statistiche del PNG sotto la foto: servono se al tavolo gli tocca un tiro */
+.pg-png-stat { margin-top: .45rem; font-size: .72rem; }
+.pg-png-attr { display: grid; grid-template-columns: 1fr 46px; gap: .18rem .3rem; align-items: center; }
+.pg-png-attr input { width: 46px; padding: .12rem; text-align: center; font-size: .78rem; }
+.pg-png-ki { margin-top: .35rem; display: flex; align-items: center; gap: .35rem; color: #8b1a1a; font-weight: 600; }
+.pg-png-ki b { font-size: .95rem; }
+.pg-kage-campi label { display: block; }
+.pg-kage-campi label > span { display: block; font-size: .72rem; font-weight: 600; color: var(--wz-grigio); margin-bottom: .12rem; }
+.pg-kage-campi label > span small { font-weight: 400; }
+.pg-kage-campi label > input, .pg-kage-campi label > textarea { width: 100%; }
 .pg-kage-campi textarea { resize: vertical; }
 .pg-enja-en { display: flex; align-items: center; gap: .45rem; }
-.pg-enja-en label { white-space: nowrap; font-weight: 600; color: #8b1a1a; }
+.pg-enja-en { align-items: end; }
+.pg-enja-en > label { flex: 1; }
+.pg-enja-en > label > span { white-space: nowrap; }
 .pg-enja-en input { min-width: 0; }
 
 /* ── esperienza: sfondo scelto dal giocatore (tenue, a pattern) ───────────── */
@@ -658,9 +679,14 @@ body.pg-con-sfondo .wz-passo, body.pg-con-sfondo .wz-testata { background: trans
 .pg-campo-ai:has(> textarea) > .pg-ai, .pg-campo-ai:has(> textarea) > .pg-ai-enja { height: 44px; } /* resta alto come un input */
 
 /* wizard-PG: campo largo 2 colonne nella griglia (es. Grado, allineato fino ad Anni di servizio) */
-@media (min-width: 700px) { .pg-span2 { grid-column: span 2; } .pg-alto2 { grid-row: span 2; } }
+@media (min-width: 700px) { .pg-span2 { grid-column: span 2; } }
 /* campo alto due righe (Altri contatti): la textarea riempie tutta l'altezza disponibile */
 .pg-alto2 { display: flex; flex-direction: column; }
+/* spunte «ce l'ha / non ce l'ha»: al tavolo il numero non serve, serve sapere se è raggiungibile */
+.pg-spunte > .pg-check { display: flex; align-items: center; gap: .45rem; font-weight: 400; margin: .4rem 0; cursor: pointer; }
+.pg-spunte > .pg-check input { width: 18px; height: 18px; flex: 0 0 auto; margin: 0; }
+.pg-spunte > .pg-check .pg-kana { min-width: 4.2rem; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: .95rem; color: #8b1a1a; letter-spacing: .5px; }
+.pg-spunte > .wz-nota { margin: .6rem 0 0; }
 .pg-alto2 > label { white-space: nowrap; }
 .pg-alto2 textarea { flex: 1; min-height: 4.5rem; resize: vertical; }
 /* wizard-PG: niente colonna-drawer → il footer non sporge; Avanti e Indietro identici e allineati al contenuto */

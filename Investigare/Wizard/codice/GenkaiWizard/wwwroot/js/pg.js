@@ -99,6 +99,12 @@
         document.querySelectorAll("[data-pg-campo]").forEach(el => {
             const path = el.dataset.pgCampo;
             const val = get(path);
+            if (el.type === "checkbox") {
+                // spunta «ce l'ha / non ce l'ha»: nello stato "si" oppure "" — un vecchio numero salvato vale sì
+                el.checked = !!(val && String(val).trim());
+                el.addEventListener("change", () => set(path, el.checked ? "si" : ""));
+                return;
+            }
             if (val != null) el.value = val;
             el.addEventListener("input", () => {
                 // numerico svuotato = "" (non 0: un'età «0 anni» in stampa non ha senso)
@@ -170,8 +176,8 @@
         at[a] = nuovo;
         document.getElementById("pg-attr-" + a).textContent = nuovo;
         aggiornaContatoreAttr();
-        aggiornaGouRequisiti();
-        aggiornaSenmonRequisiti();
+        aggiornaGouRequisiti(true);   // il Gou scelto potrebbe non essere più alla portata
+        aggiornaSenmonRequisiti(true);
         aggiornaKi();
         salvaDebounce();
     }
@@ -244,21 +250,27 @@
         mostraSenmonInfo(sel.value);
         aggiornaSenmonRequisiti();
     }
-    // l'opzione "Lotta → grado 2" segue Presenza: si disabilita sotto 6, e se era scelta si revoca
-    function aggiornaSenmonRequisiti() {
+    // l'opzione "Lotta → grado 2" segue Presenza: si disabilita sotto 6. Come per il Gou:
+    // «revoca» solo quando arriva da un cambio di attributo; all'apertura si avvisa e basta.
+    const lotta2Ok = () => (attributi().Presenza || 4) >= 6;
+    function aggiornaSenmonRequisiti(revoca) {
         const sel = document.getElementById("pg-senmon-sel");
         if (!sel) return;
         const opt = [...sel.options].find(o => o.value === "__lotta2");
         if (!opt) return;
-        const ok = (attributi().Presenza || 4) >= 6;
-        opt.disabled = !ok;
+        opt.disabled = !lotta2Ok();
         const lt = lottaBase();
-        if (!ok && lt?.upCreazione) {
+        if (lotta2Ok() || !lt?.upCreazione) return;
+        if (revoca) {
             lt.grado = 1; delete lt.upCreazione;
             sel.value = "";
             mostraSenmonInfo("");
-            alert("Presenza è scesa sotto 6: Lotta torna al grado 1 — scegli un'altra specializzazione al passo 4 (Senmon).");
+            alert(`Lotta grado 2 richiede Presenza 6, e ora Presenza è ${attributi().Presenza}.
+
+Lotta torna al grado 1: rialza Presenza e riscegli, oppure prendi una specializzazione al passo 4.`);
             salvaDebounce();
+        } else {
+            mostraSenmonInfo("__lotta2");   // ridisegna con l'avviso
         }
     }
     function mostraSenmonInfo(id) {
@@ -267,7 +279,8 @@
             box.hidden = false;
             box.innerHTML = `<p><strong>Lotta — grado 2 (Esperto, −2)</strong> · attributo chiave: <strong>Presenza</strong></p>
                 <p>Rinforzi l'addestramento d'accademia: pugni, prese e tecniche d'arresto a livello da istruttore. Il −2 vale sui tiri di combattimento pertinenti.</p>
-                <p class="wz-nota">Al posto di una nuova specializzazione. Richiede Presenza ≥ 6. Maestro (grado 3): −2 con Correzione · paletti G3: Presenza 8.</p>`;
+                <p class="wz-nota">Al posto di una nuova specializzazione. Richiede Presenza ≥ 6. Maestro (grado 3): −2 con Correzione · paletti G3: Presenza 8.</p>
+                ${lotta2Ok() ? "" : `<p class="pg-riep-avviso">⚠ Richiede Presenza 6: ora hai ${attributi().Presenza}. Rialzala al passo 3 (Attributi) o scegli una specializzazione.</p>`}`;
             return;
         }
         const v = senmonById(id);
@@ -307,7 +320,10 @@
         aggiornaGouRequisiti();
     }
     const requisitoOk = (g) => !g.requisito || (attributi()[g.requisito.attributo] || 4) >= g.requisito.minimo;
-    function aggiornaGouRequisiti() {
+    // «revoca» = arriva da un cambio di attributo: se il Gou scelto non è più alla portata
+    // lo si toglie SUBITO dicendolo (come fa Lotta grado 2 con Presenza). All'apertura della
+    // scheda invece non si tocca niente: si mostra solo l'avviso, così nessuno perde una scelta.
+    function aggiornaGouRequisiti(revoca) {
         const sel = document.getElementById("pg-gou-sel");
         if (!sel) return;
         [...sel.options].forEach(o => {
@@ -317,6 +333,18 @@
             o.disabled = !ok;
             o.textContent = etichettaGou(g, !ok);
         });
+        const scelto = gouById(S.gouId);
+        if (!scelto || requisitoOk(scelto)) return;
+        const r = scelto.requisito, ora = attributi()[r.attributo];
+        if (revoca) {
+            S.gouId = ""; sel.value = ""; mostraGouInfo("");
+            alert(`${scelto.nome} richiede ${r.attributo} ${r.minimo}, e ora ${r.attributo} è ${ora}.
+
+Il Gou è stato tolto: rialza ${r.attributo} e riscegli, oppure prendine un altro al passo 5.`);
+            salvaDebounce();
+        } else {
+            mostraGouInfo(S.gouId);   // ridisegna la scheda del Gou con l'avviso
+        }
     }
     function mostraGouInfo(id) {
         const box = document.getElementById("pg-gou-info");
@@ -327,7 +355,9 @@
             <p><strong>${g.nome} ${g.kanji}</strong> · ${g.attributi.join(" o ")} · costo <strong>${g.costo} Ki</strong>${g.famiglia ? ` · ${g.famiglia}` : ""}</p>
             <p>✔ <strong>Successo</strong>: ${g.successo}<br>✖ <strong>Fallimento</strong>: ${g.fallimento}</p>
             ${g.vincolo ? `<p class="wz-nota">Vincolo: ${g.vincolo}</p>` : ""}
-            ${g.requisito ? `<p class="wz-nota">Requisito: ${g.requisito.attributo} ≥ ${g.requisito.minimo}</p>` : ""}`;
+            ${g.requisito ? (requisitoOk(g)
+                ? `<p class="wz-nota">Requisito: ${g.requisito.attributo} ≥ ${g.requisito.minimo}</p>`
+                : `<p class="pg-riep-avviso">⚠ Richiede ${g.requisito.attributo} ${g.requisito.minimo}: ora hai ${attributi()[g.requisito.attributo]}. Rialzalo al passo 3 (Attributi) o scegli un altro Gou.</p>`) : ""}`;
     }
 
     // ───────── ki (passo 6) ─────────
@@ -423,6 +453,68 @@
         });
     }
 
+    // ───────── ✨ carattere in un colpo (passo 10) ─────────
+    // legge tutta la scheda e riempie SOLO i campi vuoti; dei 5 tratti ne bastano 3
+    function initCarattereAI() {
+        const btn = document.getElementById("pg-carattere-ai");
+        if (!btn) return;
+        btn.hidden = !PG.aiAttiva;
+        const CAMPI_C = ["tatemae", "honne", "fraseTipica", "sottoPressione", "debolezza"];
+        const CAMPI_T = ["vizio", "tic", "oggetto", "gusto", "libero"];
+        const ETICHETTE = ["Rituale", "Abitudine", "Superstizione", "Segreto", "Rifugio"];
+        btn.addEventListener("click", async () => {
+            const orig = btn.textContent;
+            btn.disabled = true; btn.textContent = "✨ leggo la scheda…";
+            try {
+                const pieniC = CAMPI_C.filter(c => (get("comportamento." + c) || "").trim());
+                const pieniT = CAMPI_T.filter(c => (get("tratti." + c) || "").trim());
+                const daProporre = Math.max(0, 3 - pieniT.length);
+                if (pieniC.length === CAMPI_C.length && daProporre === 0) { alert("È già tutto compilato: svuota un campo se vuoi una proposta nuova."); return; }
+                const indicazioni = [
+                    pieniC.length ? "Comportamento già scritto dal giocatore (NON proporre): " + pieniC.join(", ") + "." : "",
+                    pieniT.length ? "Tratti già scritti (NON proporli, contano nel totale): " + pieniT.join(", ") + "." : "",
+                    "Proponi al massimo " + daProporre + " tratti."
+                ].filter(Boolean).join(" ");
+                await salvaOra(); // l'AI legge lo stato dal server
+                const r = await fetch(`/api/pg/${PG.id}/ai-campo`, {
+                    method: "POST", headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ campo: "carattereTutto", indicazioni, modello: modelloAI(), effort: effortAI() })
+                });
+                const json = await r.json().catch(() => ({}));
+                if (!r.ok) { alert("AI: " + (json.detail || json.errore || r.status)); return; }
+                const t2 = json.testo || "";
+                let dati = {};
+                try { dati = JSON.parse(t2.slice(t2.indexOf("{"), t2.lastIndexOf("}") + 1)); } catch { }
+                if (!Object.keys(dati).length) { alert("Proposta illeggibile — riprova."); return; }
+                const applica = (path, val) => {
+                    if (!val || !String(val).trim() || (get(path) || "").trim()) return false;
+                    set(path, String(val).trim());
+                    const el = document.querySelector(`[data-pg-campo="${path}"]`);
+                    if (el) el.value = String(val).trim();
+                    return true;
+                };
+                CAMPI_C.forEach(c => applica("comportamento." + c, dati.comportamento && dati.comportamento[c]));
+                // tratti: mai oltre il tetto, anche se l'AI esagera
+                let nuovi = 0;
+                for (const c of CAMPI_T) {
+                    if (c === "libero" || nuovi >= daProporre) continue;
+                    if (applica("tratti." + c, dati.tratti && dati.tratti[c])) nuovi++;
+                }
+                if (nuovi < daProporre && dati.tratti && applica("tratti.libero", dati.tratti.libero)) {
+                    nuovi++;
+                    const et = (dati.tratti.liberoEtichetta || "").trim();
+                    if (ETICHETTE.includes(et)) {
+                        set("tratti.liberoEtichetta", et);
+                        const sel = document.querySelector('[data-pg-campo="tratti.liberoEtichetta"]');
+                        if (sel) sel.value = et;
+                    }
+                }
+                salvaDebounce();
+            } catch { alert("AI non raggiungibile"); }
+            finally { btn.disabled = false; btn.textContent = orig; }
+        });
+    }
+
     // ───────── ritratto 🎨 (passo 7) ─────────
     function mostraRitratto() {
         const img = document.getElementById("pg-ritratto-img");
@@ -437,7 +529,10 @@
             const desc = (get("descrizioneFisica") || "").trim();
             if (!desc) { msg.textContent = "⚠ Scrivi (o genera con ✨) prima la descrizione fisica."; return; }
             const genere = get("identita.genere") === "f" ? "donna" : get("identita.genere") === "m" ? "uomo" : "persona";
-            const prompt = `Foto tessera di servizio realistica, quadrata: testa e spalle, frontale, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Sfondo grigio neutro uniforme. Giappone 1997. ${genere} di ${get("identita.eta") || 35} anni, investigatore di polizia in borghese. ${desc} Grana pellicola anni '90. Nessuna scritta.`;
+            // il ritratto è la faccia che il giocatore si porta al tavolo: deve essere un ritratto
+            // DIGNITOSO, non una foto segnaletica. Abito, cura della persona, luce e nitidezza vanno
+            // detti, altrimenti il modello sceglie da sé e viene fuori un uomo trasandato.
+            const prompt = `Ritratto fotografico professionale, di alta qualità, quadrato: testa e spalle, di fronte, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. ${genere} giapponese di ${get("identita.eta") || 35} anni, detective della polizia di Kyoto in borghese, 1997: giacca scura, camicia bianca, cravatta sobria; persona curata, capelli in ordine, viso rasato di fresco. Espressione seria e composta, sguardo diretto nell'obiettivo, presenza dignitosa — non stanco, non trasandato, non minaccioso. ${desc} Luce morbida e uniforme, incarnato naturale, fuoco nitido sugli occhi, sfondo grigio-azzurro uniforme. Fotografia anni '90 ben esposta e pulita, grana finissima. SOLO testa e spalle: niente mani, niente guanti, niente oggetti in mano, niente scritte, niente distintivi.`;
             const orig = btn.textContent;
             btn.disabled = true; btn.textContent = "🎨 Sto disegnando… (20-40s)"; msg.textContent = "";
             try {
@@ -456,7 +551,7 @@
     }
 
     // ───────── enja (passo 9) — card come le persone del Kage, ma con En/conosciuti/cosa sa ─────────
-    const enjaVuoto = () => ({ cognome: "", nome: "", eta: "", relazione: "", en: "", comeConosciuti: "", cosaSa: "", aspetto: "", ritratto: "" });
+    const enjaVuoto = () => ({ cognome: "", nome: "", eta: "", relazione: "", en: "", comeConosciuti: "", cosaSa: "", aspetto: "", carattere: "", comeParla: "", vuole: "", ritratto: "" });
     const listaEnja = () => {
         if (!Array.isArray(S.enja)) S.enja = [];
         // migrazione dal vecchio formato (testo libero): il testo finisce in «cosa può dare/sapere»
@@ -469,30 +564,46 @@
         if (!S.enja.length) S.enja = [enjaVuoto()];
         return S.enja;
     };
-    const enjaPieno = p => ["cognome", "nome", "relazione", "comeConosciuti", "cosaSa", "aspetto", "ritratto"].some(c => (p[c] || "").toString().trim() !== "") || p.en !== "" || p.eta !== "";
+    // finché la scheda «estesa» è spenta se ne tiene UNO per ciascuno: il PG deve però poterlo creare
+    const MAX_ENJA = window.PG.estesaAttiva ? 99 : 1;
+    const MAX_KAGE_PERSONE = window.PG.estesaAttiva ? 99 : 1;
+    function limiteLista(idBottone, idNota, quanti, massimo, testo) {
+        const agg = document.getElementById(idBottone);
+        if (!agg) return;
+        agg.disabled = quanti >= massimo;
+        const nota = document.getElementById(idNota);
+        if (nota) nota.textContent = agg.disabled ? testo : "";
+    }
+    const enjaPieno = p => ["cognome", "nome", "relazione", "comeConosciuti", "cosaSa", "aspetto", "carattere", "comeParla", "vuole", "ritratto"].some(c => (p[c] || "").toString().trim() !== "") || p.en !== "" || p.eta !== "";
     function renderEnja() {
         const box = document.getElementById("pg-enja-lista");
         if (!box) return;
         const q = s => (s || "").toString().replace(/"/g, "&quot;");
         const esc = s => (s || "").toString().replace(/&/g, "&amp;").replace(/</g, "&lt;");
         const enja = listaEnja();
+        limiteLista("pg-enja-agg", "pg-enja-nota", enja.length, MAX_ENJA, "Per ora l'Enja è uno solo.");
         box.innerHTML = enja.map((p, i) => `
             <div>
                 <label class="wz-nota">${i === 0 ? "Il tuo Enja iniziale (di norma lo assegna il GM)" : "Enja " + (i + 1)}</label>
                 <div class="pg-kage-card">
-                    <div class="pg-kage-foto">${p.ritratto ? `<img src="${q(p.ritratto)}" alt="" />` : "👤"}</div>
+                    <div>
+                        <div class="pg-kage-foto">${p.ritratto ? `<img src="${q(p.ritratto)}" alt="" />` : "👤"}</div>
+                        ${statPngHtml("en", i, p)}
+                    </div>
                     <div class="pg-kage-campi">
-                        <input type="text" data-en="${i}" data-en-c="cognome" placeholder="Cognome" value="${q(p.cognome)}" />
-                        <input type="text" data-en="${i}" data-en-c="nome" placeholder="Nome" value="${q(p.nome)}" />
-                        <input type="text" data-en="${i}" data-en-c="relazione" placeholder="Chi è per te (compagno di liceo…)" value="${q(p.relazione)}" />
+                        <label><span>Cognome</span><input type="text" data-en="${i}" data-en-c="cognome" placeholder="es. Kubo" value="${q(p.cognome)}" /></label>
+                        <label><span>Nome</span><input type="text" data-en="${i}" data-en-c="nome" placeholder="es. Takeshi" value="${q(p.nome)}" /></label>
+                        <label><span>Chi è per te</span><input type="text" data-en="${i}" data-en-c="relazione" placeholder="es. compagno di liceo, ora giornalista" value="${q(p.relazione)}" /></label>
                         <span class="pg-enja-en">
-                            <input type="number" data-en="${i}" data-en-c="eta" placeholder="Età" min="1" max="99" value="${q(p.eta)}" />
-                            <label>縁 En</label>
-                            <input type="number" data-en="${i}" data-en-c="en" placeholder="+1" min="-5" max="5" value="${q(p.en)}" title="L'En che LUI ha verso di te" />
+                            <label><span>Età</span><input type="number" data-en="${i}" data-en-c="eta" placeholder="es. 41" min="1" max="99" value="${q(p.eta)}" /></label>
+                            <label><span>縁 En <small>— verso di te</small></span><input type="number" data-en="${i}" data-en-c="en" placeholder="+1" min="-5" max="5" value="${q(p.en)}" /></label>
                         </span>
-                        <input type="text" class="pg-kage-largo" data-en="${i}" data-en-c="comeConosciuti" placeholder="Come vi siete conosciuti" value="${q(p.comeConosciuti)}" />
-                        <textarea class="pg-kage-largo" rows="2" data-en="${i}" data-en-c="cosaSa" placeholder="Cosa può dare o sapere (e cosa NON può)">${esc(p.cosaSa)}</textarea>
-                        <textarea class="pg-kage-largo" rows="2" data-en="${i}" data-en-c="aspetto" placeholder="Aspetto (serve per il ritratto)">${esc(p.aspetto)}</textarea>
+                        <label class="pg-kage-largo"><span>Come vi siete conosciuti</span><input type="text" data-en="${i}" data-en-c="comeConosciuti" placeholder="es. stesso club di baseball al liceo; suo fratello era nella tua classe" value="${q(p.comeConosciuti)}" /></label>
+                        <label class="pg-kage-largo"><span>Cosa può dare o sapere <small>— e cosa NON può</small></span><textarea rows="3" data-en="${i}" data-en-c="cosaSa" placeholder="es. gli archivi del giornale e le voci di redazione. Non tocca le fonti riservate: quelle se le tiene">${esc(p.cosaSa)}</textarea></label>
+                        <label class="pg-kage-largo"><span>Aspetto <small>— serve anche per il ritratto</small></span><textarea rows="4" data-en="${i}" data-en-c="aspetto" placeholder="es. spalle larghe, giacca sgualcita, sigaretta spenta in bocca; parla con gli occhiali in mano">${esc(p.aspetto)}</textarea></label>
+                        <label class="pg-kage-largo"><span>Com’è fatto <small>— come si comporta, che tono ha</small></span><textarea rows="3" data-en="${i}" data-en-c="carattere" placeholder="es. cordiale e sbrigativo: ti dà del tu davanti a tutti, ma non promette mai niente per iscritto">${esc(p.carattere)}</textarea></label>
+                        <label class="pg-kage-largo"><span>Come parla <small>— due o tre frasi sue, da leggere al tavolo</small></span><textarea rows="3" data-en="${i}" data-en-c="comeParla" placeholder="es. «Te lo dico da amico, non da giornalista.» · «Questo non l’hai sentito da me.»">${esc(p.comeParla)}</textarea></label>
+                        <label class="pg-kage-largo"><span>Cosa vuole in cambio <small>— all’inizio poco, col tempo chiederà di più</small></span><textarea rows="2" data-en="${i}" data-en-c="vuole" placeholder="es. essere il primo a sapere quando il caso si chiude">${esc(p.vuole)}</textarea></label>
                         <span class="pg-kage-largo"><button type="button" class="wz-btn wz-mini" data-en-ai="${i}" ${PG.aiAttiva ? "" : "hidden"}>✨ Crea con AI</button> <button type="button" class="wz-btn wz-mini" data-en-foto="${i}" ${PG.immaginiAttive ? "" : "disabled"}>🎨 Ritratto</button> <span class="wz-nota" data-en-msg="${i}"></span></span>
                     </div>
                     <button type="button" class="wz-btn-x" data-en-del="${i}" title="Togli">✕</button>
@@ -503,6 +614,7 @@
             p[el.dataset.enC] = (el.dataset.enC === "eta" || el.dataset.enC === "en") ? (el.value === "" ? "" : parseInt(el.value)) : el.value;
             salvaDebounce();
         }));
+        legaStatPng(box, "en", listaEnja, renderEnja);
         box.querySelectorAll("[data-en-del]").forEach(b => b.addEventListener("click", () => {
             const i = +b.dataset.enDel;
             if (enjaPieno(listaEnja()[i]) && !confirm("Togliere questo Enja?")) return;
@@ -527,11 +639,15 @@
                 let dati = {};
                 try { dati = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1)); } catch { }
                 if (!Object.keys(dati).length) { msg.textContent = "⚠ Proposta illeggibile — riprova."; return; }
-                for (const c of ["cognome", "nome", "relazione", "comeConosciuti", "cosaSa", "aspetto"]) {
+                for (const c of ["cognome", "nome", "relazione", "comeConosciuti", "cosaSa", "aspetto", "carattere", "comeParla", "vuole"]) {
                     if (!(p[c] || "").toString().trim() && (dati[c] || "").toString().trim()) p[c] = dati[c].toString().trim();
                 }
                 if (p.eta === "" && dati.eta) p.eta = parseInt(dati.eta) || "";
                 if (p.en === "" && (dati.en || dati.en === 0)) p.en = parseInt(dati.en) || "";
+                if (!attrPngPieni(p) && dati.attributi) {
+                    ATTR.forEach(a => { const v = parseInt(dati.attributi[a]); if (!isNaN(v)) attrPng(p)[a] = Math.min(ATTR_MAX, Math.max(ATTR_MIN, v)); });
+                    if (attrPngPieni(p)) p.kiDado = p.kiDado || Math.max(d6(), d6());
+                }
                 renderEnja(); salvaDebounce();
             } catch { msg.textContent = "⚠ AI non raggiungibile"; }
             finally { b.disabled = false; b.textContent = orig; }
@@ -541,7 +657,7 @@
             const msg = box.querySelector(`[data-en-msg="${i}"]`);
             const aspetto = (p.aspetto || "").trim();
             if (!aspetto) { msg.textContent = "⚠ Scrivi prima l'aspetto."; return; }
-            const prompt = `Fototessera realistica, quadrata: testa e spalle, frontale, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Sfondo grigio neutro uniforme. Giappone 1997, persona comune in abiti civili. ${p.eta ? p.eta + " anni. " : ""}${aspetto}. Grana pellicola anni '90. Nessuna scritta.`;
+            const prompt = `Ritratto fotografico professionale, di alta qualità, quadrato: testa e spalle, di fronte, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Persona giapponese comune in abiti civili, Giappone 1997. ${p.eta ? p.eta + " anni. " : ""}Segui alla lettera questa descrizione: ${aspetto}. Persona curata e in ordine, espressione naturale e composta, sguardo verso l'obiettivo, presenza dignitosa — non trasandata, non caricaturale. Luce morbida e uniforme, incarnato naturale, fuoco nitido sugli occhi, sfondo grigio-azzurro uniforme. Fotografia anni '90 ben esposta e pulita, grana finissima. SOLO testa e spalle: niente mani, niente guanti, niente oggetti in mano, niente scritte.`;
             const orig = b.textContent; b.disabled = true; b.textContent = "🎨 (20-40s)…"; msg.textContent = "";
             try {
                 const r = await fetch(`/api/pg/${PG.id}/immagine`, {
@@ -607,6 +723,7 @@
     const listaScene = () => { if (!Array.isArray(S.scene)) S.scene = []; return S.scene; };
     function renderScene() {
         const box = document.getElementById("pg-scene-galleria");
+        if (!box) return;   // scene personali spente
         box.innerHTML = listaScene().map((u, i) =>
             `<span class="pg-scena"><img src="${u}" alt="" /><button type="button" class="wz-btn-x" data-scena-del="${i}" title="Togli">✕</button></span>`).join("");
         box.querySelectorAll("[data-scena-del]").forEach(b => b.addEventListener("click", () => { listaScene().splice(+b.dataset.scenaDel, 1); renderScene(); salvaDebounce(); }));
@@ -616,6 +733,7 @@
     function initScene() {
         const btn = document.getElementById("pg-scena-genera");
         const msg = document.getElementById("pg-scena-msg");
+        if (!btn) return;   // scene personali spente
         if (!PG.immaginiAttive) btn.disabled = true;
         btn.addEventListener("click", async () => {
             if (listaScene().length >= SCENE_MAX) { msg.textContent = `⚠ Massimo ${SCENE_MAX} scene — togline una per farne un'altra.`; return; }
@@ -658,13 +776,15 @@
         const avvisi = [
             kiMax() == null ? "⚠ Dadi del Ki non ancora tirati (passo 6)" : "",
             gou ? "" : "⚠ Manca il Gou (passo 5)",
+            gou && !requisitoOk(gou) ? `⚠ ${gou.nome} richiede ${gou.requisito.attributo} ${gou.requisito.minimo}: ora hai ${attributi()[gou.requisito.attributo]}` : "",
+            lottaBase()?.upCreazione && !lotta2Ok() ? `⚠ Lotta grado 2 richiede Presenza 6: ora hai ${attributi().Presenza}` : "",
             (get("kage.problema") || "").trim() ? "" : "⚠ Manca il Kage (passo 8)",
             enjaPieno(listaEnja()[0] || {}) ? "" : "⚠ Manca l'Enja (passo 9)"
         ].filter(Boolean).map(a => `<span class="pg-riep-avviso">${a}</span>`).join(" ");
 
         // — testata con il ritratto
         const residenza = [idn("quartiere"), idn("via")].filter(Boolean).join(" · ");
-        const contatti = [idn("telefono") ? "☎ " + idn("telefono") : "", idn("cellulare") ? "📱 " + idn("cellulare") : "", idn("pocketBell") ? "📟 " + idn("pocketBell") : "", idn("altroContatto")].filter(Boolean).join(" · ");
+        const contatti = [idn("telefono") ? "電話 telefono di casa" : "", idn("cellulare") ? "携帯 cellulare" : "", idn("pocketBell") ? "ポケベル pocket bell" : "", idn("altroContatto")].filter(Boolean).join(" · ");
         const sotto = [idn("grado"), idn("ruolo"), idn("eta") ? idn("eta") + " anni" : "", get("identita.genere") === "f" ? "donna" : get("identita.genere") === "m" ? "uomo" : "", idn("anniServizio") ? idn("anniServizio") + " anni di servizio" : ""].filter(Boolean).join(" · ");
         const testata = `
             <div class="pg-riep-testata">
@@ -682,30 +802,67 @@
         const attrCorpo = `<div class="pg-riep-attr">` + ATTR.map(a =>
             `<div class="pg-riep-attr-box"><span class="n">${a}</span><span class="v">${at[a]}</span></div>`).join("") + `</div>`;
 
-        // — ki e gou, affiancati
-        const dadi = Array.isArray(S.ki && S.ki.dadi) ? S.ki.dadi.join(" e ") : null;
-        const kiCorpo = `<p class="pg-riep-p"><strong>Ki massimo ${kiMax() ?? "—"}</strong>${dadi ? ` <small>(dadi ${dadi}${S.ki.extra ? " + " + S.ki.extra + " comprato" : ""})</small>` : ""}</p>
-            <p class="pg-riep-p"><small>Genkai (crollo) a Ki ≤ 3 · Nasake 情け ☐ · Soroban parte da 5</small></p>`;
-        const gouCorpo = gou ? `<p class="pg-riep-p"><strong>${esc(gou.nome)} ${gou.kanji}</strong> — <em>${esc(gou.tagline || "")}</em></p>
-            <p class="pg-riep-p"><small>${gou.attributi.join(" o ")} · costo ${window.PG.crescitaAttiva && S.shugyo && S.shugyo.gouAffinato ? (gou.costo - 1) + " Ki (affinato)" : gou.costo + " Ki"} · si attiva solo restando a Ki ≥ 1 · a ogni uso il costo raddoppia, una notte di riposo lo riduce di un grado</small></p>
-            ${(gou.vincolo || "").trim() ? `<p class="pg-riep-p"><small><em>Vincolo:</em> ${esc(gou.vincolo)}</small></p>` : ""}` : "";
-        const kiGou = `<div class="pg-riep-duo">
-            <div>${sez("気", "Ki", kiCorpo)}</div>
-            <div>${sez("業", "Gou", gouCorpo || "<p class='pg-riep-p'><small>— non ancora scelto —</small></p>")}</div>
-        </div>`;
+        // — il tiro (le tre righe della scheda stampata)
+        const tiroCorpo = `<p class="pg-riep-p pg-riep-regola">Si tirano 2d6, si applicano i modificatori: punteggio minore o uguale al tuo attributo = successo. I critici si leggono sui dadi nudi.<br/>
+            <strong>2 (Kiwami)</strong> successo critico: aggiungi un punto nell'attributo usato e nel Ki · con <strong>3 (Nami)</strong> scegli se mettere un punto nell'attributo o nel Ki.<br/>
+            <strong>12 (Kiwami)</strong> fallimento critico: perdi 1 punto nell'attributo usato e nel Ki · con <strong>11 (Nami)</strong> scegli se perdere un punto nell'attributo o nel Ki.</p>`;
 
+        // — Ki a quattro riquadri, come sulla scheda: Ki max · Ki attuale · Satori · Soroban — poi il Nasake
+        const dadi = Array.isArray(S.ki && S.ki.dadi) ? S.ki.dadi.join(" e ") : null;
+        const ki4Corpo = `<div class="pg-riep-ki4">
+            <div><strong>KI MAX</strong>: <span class="pg-riep-kinum">${kiMax() ?? "—"}</span>${dadi ? ` <small>(dadi ${dadi}${S.ki.extra ? " + " + S.ki.extra + " comprato" : ""})</small>` : ""}<br/><small>attributo più basso + 2d6 prendi il più alto; l'1 si ritira sempre.</small></div>
+            <div><strong>KI ATTUALE</strong><br/><span class="pg-riep-tacche">☐☐☐☐☐☐☐☐☐☐☐☐</span><br/><small>Se è ≤ 3: <strong>Genkai</strong> (il crollo).</small></div>
+            <div><strong>SATORI 悟り</strong> — successo automatico. <strong>Usato ☐</strong><br/><small>1/sessione, dichiarato prima del tiro: il dado vale 2, niente Kiwami.</small></div>
+            <div><strong>SOROBAN 算盤</strong> — per ogni tiro critico o fallimento<br/><small>Nami (11) → +1 · Kiwami (12) → +2<br/>Nami (3) → −1 · Kiwami (2) → −2</small><div class="pg-riep-scala">0 1 2 3 4 ⑤ 6 7 8 9</div></div>
+        </div>`;
+        const nasakeCorpo = `<p class="pg-riep-p pg-riep-nasake"><strong>Nasake 情け — compassione.</strong> Se sei al massimo e fai un critico Kiwami prendi un punto. Solo donabile a un altro PG giocando la scena. Max 1 punto. &nbsp;<strong>☐ Pieno</strong></p>`;
+
+        // — equipaggiamento di servizio, per intero
+        const equipCorpo = `<p class="pg-riep-p">In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni.</p>
+            <ul class="pg-riep-lista">
+            <li><strong>Armadietto</strong> — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/2 · ricarica 4 · danno 3. Addestramento base: sai usarla, non sei un tiratore scelto</li>
+            <li><strong>Armadietto</strong> — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4</li>
+            <li><strong>Operazioni</strong> — Keibō (manganello): Silenzio · vel. 2/1 · danno 2</li>
+            <li><strong>Sempre con te</strong> — Keisatsu techō (tesserino), manette, taccuino</li>
+            <li><strong>A mani nude</strong> — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni)</li>
+            </ul>`;
+
+        // — Shugyō, come sulla scheda («/ solo per campagne»)
+        const shugyoCorpo = `<p class="pg-riep-p">Punti Shugyō: ${window.PG.crescitaAttiva ? `<strong>${(S.shugyo && S.shugyo.punti) || 0}</strong>` : "________"} <small>/ solo per campagne</small></p>
+            <p class="pg-riep-p"><small><strong>Guadagno</strong>: 1 a sessione · 4-6 a caso chiuso · +1 scena personale ben gestita · +1 momento eccezionale (max 1/sessione)<br/>
+            <strong>Spesa tra i casi</strong>: attributo = arrivo ×3 · Ki max = arrivo ×4 (tetto 12) · Senmon 9/19/39 · Enja extra 12 · affinare il Gou = base ×11</small></p>`;
+        const gouRegola = `<p class="pg-riep-p"><small>Il Gou funziona SEMPRE: successo = preciso, fallimento = vago. Il costo si paga per intero — se ti portasse a 0 o sotto, non si attiva.</small></p>`;
+        const gouCorpo = gou ? gouRegola + `<p class="pg-riep-p"><strong>${esc(gou.nome)} ${gou.kanji}</strong> — <em>${esc(gou.tagline || "")}</em></p>
+            <p class="pg-riep-p"><small>${gou.attributi.join(" o ")} · costo ${window.PG.crescitaAttiva && S.shugyo && S.shugyo.gouAffinato ? (gou.costo - 1) + " Ki (affinato)" : gou.costo + " Ki"} · si attiva solo restando a Ki ≥ 1 · a ogni uso il costo raddoppia, una notte di riposo lo riduce di un grado</small></p>
+            ${(gou.vincolo || "").trim() ? `<p class="pg-riep-p"><small><em>Vincolo:</em> ${esc(gou.vincolo)}</small></p>` : ""}
+            <p class="pg-riep-p"><small>✔ <em>Successo:</em> ${esc(gou.successo || "")}<br/>✖ <em>Fallimento:</em> ${esc(gou.fallimento || "")}</small></p>` : "";
         // — senmon
         const senmonCorpo = `<ul class="pg-riep-lista">` + listaSenmon().map(s => {
             const v = senmonById(s.id) || { nome: s.id, famiglia: "" };
             const malus = s.grado === 3 ? (v.maestroEccezione === "+2C" || (BIB.famiglie.find(f => f.id === v.famiglia) || {}).maestro === "+2C" ? "−2 con Correzione" : "−3") : "−" + s.grado;
-            return `<li><strong>${esc(v.nome)}</strong> — grado ${s.grado} (${malus} al dado)${s.diBase ? " · d'accademia" : ""}${window.PG.crescitaAttiva ? ` · usi ${s.usi || 0}` : ""}</li>`;
-        }).join("") + `</ul>`;
+            return `<li><strong>${esc(v.nome)}</strong>${Array.isArray(v.chiave) && v.chiave.length ? ` (${v.chiave.join(" o ")})` : ""} — grado ${s.grado} (${malus} al dado)${s.diBase ? " · d'accademia" : ""}${window.PG.crescitaAttiva ? ` · usi ${s.usi || 0}` : ""}</li>`;
+        }).join("") + `</ul>` + ((get("senmonPerche") || "").trim() ? `<p class="pg-riep-p"><strong>Perché la sai fare:</strong> ${esc(get("senmonPerche"))}</p>` : "");
 
         // — storia e aspetto, con le scene personali
         const sceneFoto = listaScene().length ? `<div class="pg-riep-galleria">` +
             listaScene().map(u => `<img src="${esc(u)}" alt="" loading="lazy" />`).join("") + `</div>` : "";
         const storiaCorpo = boxTesto(get("chiSei"));
         const aspettoCorpo = (boxTesto(get("descrizioneFisica")) + sceneFoto) || "";
+
+        // riga «Tiri» di un PNG (persona del Kage o Enja): attributi + Ki, come in stampa
+        const tiriPng = p => {
+            const at2 = (p.attributi && typeof p.attributi === "object") ? p.attributi : {};
+            if (!ATTR.every(a2 => typeof at2[a2] === "number")) return "";
+            const ki2 = p.kiDado ? Math.min(12, Math.min(...ATTR.map(a2 => at2[a2])) + p.kiDado) : null;
+            return ATTR.map(a2 => `${a2} ${at2[a2]}`).join(" · ") + (ki2 ? ` · 気 Ki ${ki2}` : "");
+        };
+        // le righe da interpretare (com'è fatto · come parla · cosa vuole) + i Tiri
+        const cardRighe = (p, etVuole) => [
+            (p.carattere || "").trim() ? `<div class="pg-riep-card-nota"><em>Com'è fatto:</em> ${esc(p.carattere)}</div>` : "",
+            (p.comeParla || "").trim() ? `<div class="pg-riep-card-nota"><em>Come parla:</em> ${esc(p.comeParla)}</div>` : "",
+            (p.vuole || "").trim() ? `<div class="pg-riep-card-nota"><em>${etVuole}:</em> ${esc(p.vuole)}</div>` : "",
+            tiriPng(p) ? `<div class="pg-riep-card-nota"><em>Tiri:</em> ${tiriPng(p)}</div>` : ""
+        ].filter(Boolean).join("");
 
         // — kage: testi + persone con foto
         const kagePersoneCorpo = listaKagePersone().filter(p => (p.cognome || p.nome || p.relazione || p.aspetto || p.ritratto)).map(p => `
@@ -714,6 +871,7 @@
                 <div>
                     <strong>${esc((p.cognome + " " + p.nome).trim()) || "(senza nome)"}</strong>${p.relazione ? " — " + esc(p.relazione) : ""}${p.eta ? " · " + esc(p.eta) + " anni" : ""}
                     ${(p.aspetto || "").trim() ? `<div class="pg-riep-card-nota">${esc(p.aspetto)}</div>` : ""}
+                    ${cardRighe(p, "Vuole")}
                 </div>
             </div>`).join("");
         const kageCorpo = [boxTesto(get("kage.problema")), boxTesto(get("kage.png")),
@@ -726,7 +884,9 @@
                 <div>
                     <strong>${esc((p.cognome + " " + p.nome).trim()) || "(senza nome)"}</strong>${p.relazione ? " — " + esc(p.relazione) : ""}${p.eta ? " · " + esc(p.eta) + " anni" : ""}${p.en !== "" && p.en != null ? ` · <span class="pg-riep-en">縁 En ${p.en > 0 ? "+" + p.en : p.en}</span>` : ""}
                     ${(p.comeConosciuti || "").trim() ? `<div class="pg-riep-card-nota"><em>Conosciuti:</em> ${esc(p.comeConosciuti)}</div>` : ""}
-                    ${(p.cosaSa || "").trim() ? `<div class="pg-riep-card-nota">${esc(p.cosaSa)}</div>` : ""}
+                    ${(p.cosaSa || "").trim() ? `<div class="pg-riep-card-nota"><em>Può dare:</em> ${esc(p.cosaSa)}</div>` : ""}
+                    ${(p.aspetto || "").trim() ? `<div class="pg-riep-card-nota"><em>Aspetto:</em> ${esc(p.aspetto)}</div>` : ""}
+                    ${cardRighe(p, "Vuole in cambio")}
                 </div>
             </div>`).join("");
 
@@ -749,15 +909,18 @@
 
         box.innerHTML = `<div class="pg-riep">
             ${testata}
-            ${sez("能力", "Attributi", attrCorpo)}
-            ${kiGou}
-            ${sez("専門", "Senmon", senmonCorpo)}
+            ${sez("姿", "Aspetto", aspettoCorpo)}
+            ${sez("能力", "Attributi", attrCorpo + tiroCorpo)}
+            ${sez("気", "Ki — energia vitale", ki4Corpo + nasakeCorpo)}
+            ${sez("装", "Equipaggiamento di servizio", equipCorpo)}
+            ${sez("業", "Gou — il debito", gouCorpo || gouRegola + "<p class='pg-riep-p'><small>— non ancora scelto (passo 5) —</small></p>")}
+            ${sez("専門", "Senmon — specializzazioni", senmonCorpo)}
+            ${sez("修行", "Shugyō — crescita", shugyoCorpo)}
             ${sez("道", "La tua storia", storiaCorpo)}
-            ${sez("姿", "Aspetto e scene", aspettoCorpo)}
-            ${sez("影", "Kage — il problema", kageCorpo)}
-            ${sez("縁者", "Enja — i contatti", enjaCorpo ? `<div class="pg-riep-cards">${enjaCorpo}</div>` : "")}
             ${sez("心", "Come ti comporti", carattereCorpo)}
             ${sez("班", "La squadra", squadraCorpo)}
+            ${sez("影", "Kage — il tuo problema", kageCorpo)}
+            ${sez("縁者", "Conoscenza — Enja", enjaCorpo ? `<div class="pg-riep-cards">${enjaCorpo}</div>` : "")}
         </div>`;
     }
 
@@ -922,9 +1085,14 @@
                     const campi = { quartiere: "identita.quartiere", via: "identita.via", telefono: "identita.telefono", cellulare: "identita.cellulare", pocketBell: "identita.pocketBell", altroContatto: "identita.altroContatto" };
                     for (const [k, path] of Object.entries(campi)) {
                         if (!dati[k] || (get(path) || "").trim()) continue;
-                        set(path, dati[k]);
                         const el = document.querySelector(`[data-pg-campo="${path}"]`);
-                        if (el) el.value = dati[k];
+                        if (el && el.type === "checkbox") {          // telefono/cellulare/pocket bell: sono spunte
+                            if (!/^(s[iì]|true|1|y|yes)$/i.test(String(dati[k]).trim())) continue;
+                            set(path, "si"); el.checked = true;
+                        } else {
+                            set(path, dati[k]);
+                            if (el) el.value = dati[k];
+                        }
                     }
                     // il quartiere ha il select+Altro: allinealo
                     const selQ = document.getElementById("pg-quartiere-sel"), libQ = document.getElementById("pg-quartiere-libero");
@@ -1065,6 +1233,66 @@
         });
     }
 
+    // ───────── statistiche dei PNG (persona del Kage · Enja) ─────────
+    // Sono PNG: niente Gou, e stanno un filo sopra la media — 11 punti invece di 9, da 4 in su,
+    // mai oltre 9. Il Ki è quello del manuale: attributo più basso + il migliore di 2d6, tetto 12
+    // (stessa regola del wizard-casi). Si ricalcola da solo appena cambia un attributo.
+    const PUNTI_PNG = 11;
+    const attrPng = p => (p.attributi && typeof p.attributi === "object") ? p.attributi : (p.attributi = {});
+    const attrPngPieni = p => ATTR.every(a => typeof attrPng(p)[a] === "number");
+    function kiPng(p) {
+        if (!attrPngPieni(p)) return null;
+        if (!p.kiDado) p.kiDado = Math.max(d6(), d6());   // il dado si tira una volta e resta
+        return Math.min(12, Math.min(...ATTR.map(a => attrPng(p)[a])) + p.kiDado);
+    }
+    function tiraStatPng(p) {
+        const at = attrPng(p);
+        ATTR.forEach(a => at[a] = ATTR_MIN);
+        for (let n = 0; n < PUNTI_PNG; n++) {
+            const liberi = ATTR.filter(a => at[a] < ATTR_MAX);
+            if (!liberi.length) break;
+            at[liberi[Math.floor(Math.random() * liberi.length)]] += 1;
+        }
+        p.kiDado = Math.max(d6(), d6());
+    }
+    // il blocco sotto la foto: sei attributi da 4 a 9 e il Ki calcolato
+    function statPngHtml(pre, i, p) {
+        const at = attrPng(p), ki = kiPng(p);
+        return `<div class="pg-png-stat">
+            <div class="pg-png-attr">${ATTR.map(a =>
+                `<span>${a}</span><input type="number" min="${ATTR_MIN}" max="${ATTR_MAX}" data-${pre}="${i}" data-${pre}-a="${a}" value="${typeof at[a] === "number" ? at[a] : ""}" />`).join("")}</div>
+            <div class="pg-png-ki">気 Ki <b data-${pre}-ki="${i}">${ki ?? "—"}</b>
+                <button type="button" class="wz-btn wz-mini" data-${pre}-tira="${i}">🎲</button></div>
+        </div>`;
+    }
+    // aggancia i campi statistica di una card (vale per il Kage e per l'Enja)
+    function legaStatPng(box, pre, lista, ridisegna) {
+        box.querySelectorAll(`[data-${pre}-a]`).forEach(el => el.addEventListener("input", () => {
+            const p = lista()[+el.dataset[pre]];
+            const v = parseInt(el.value);
+            attrPng(p)[el.dataset[pre + "A"]] = isNaN(v) ? undefined : v;
+            if (isNaN(v)) delete attrPng(p)[el.dataset[pre + "A"]];
+            const bKi = box.querySelector(`[data-${pre}-ki="${el.dataset[pre]}"]`);
+            if (bKi) bKi.textContent = kiPng(p) ?? "—";
+            salvaDebounce();
+        }));
+        // uscendo dal campo il valore si rimette dentro i binari (4-9)
+        box.querySelectorAll(`[data-${pre}-a]`).forEach(el => el.addEventListener("change", () => {
+            const p = lista()[+el.dataset[pre]];
+            let v = parseInt(el.value);
+            if (isNaN(v)) return;
+            v = Math.min(ATTR_MAX, Math.max(ATTR_MIN, v));
+            attrPng(p)[el.dataset[pre + "A"]] = v; el.value = v;
+            const bKi = box.querySelector(`[data-${pre}-ki="${el.dataset[pre]}"]`);
+            if (bKi) bKi.textContent = kiPng(p) ?? "—";
+            salvaDebounce();
+        }));
+        box.querySelectorAll(`[data-${pre}-tira]`).forEach(b => b.addEventListener("click", () => {
+            tiraStatPng(lista()[+b.dataset[pre + "Tira"]]);
+            ridisegna(); salvaDebounce();
+        }));
+    }
+
     // ───────── persone del Kage — schede minime con volto 🎨 (passo 8) ─────────
     const listaKagePersone = () => { const k = S.kage || (S.kage = {}); if (!Array.isArray(k.persone)) k.persone = []; return k.persone; };
     function renderKagePersone() {
@@ -1073,16 +1301,23 @@
         const q = s => (s || "").toString().replace(/"/g, "&quot;");
         const e = s => (s || "").toString().replace(/&/g, "&amp;").replace(/</g, "&lt;");
         const pp = listaKagePersone();
+        limiteLista("pg-kage-persona-agg", "pg-kage-persona-nota", pp.length, MAX_KAGE_PERSONE, "Per ora la persona del Kage è una sola.");
         box.innerHTML = pp.length === 0 ? `<p class="wz-nota">Nessuna persona salvata.</p>` :
             pp.map((p, i) => `
             <div class="pg-kage-card">
-                <div class="pg-kage-foto">${p.ritratto ? `<img src="${q(p.ritratto)}" alt="" />` : "👤"}</div>
+                <div>
+                    <div class="pg-kage-foto">${p.ritratto ? `<img src="${q(p.ritratto)}" alt="" />` : "👤"}</div>
+                    ${statPngHtml("kp", i, p)}
+                </div>
                 <div class="pg-kage-campi">
-                    <input type="text" data-kp="${i}" data-kp-c="cognome" placeholder="Cognome" value="${q(p.cognome)}" />
-                    <input type="text" data-kp="${i}" data-kp-c="nome" placeholder="Nome" value="${q(p.nome)}" />
-                    <input type="text" data-kp="${i}" data-kp-c="relazione" placeholder="Chi è per te (tua sorella…)" value="${q(p.relazione)}" />
-                    <input type="number" data-kp="${i}" data-kp-c="eta" placeholder="Età" min="1" max="99" value="${q(p.eta)}" />
-                    <textarea class="pg-kage-largo" rows="3" data-kp="${i}" data-kp-c="aspetto" placeholder="Aspetto (serve per il ritratto)">${e(p.aspetto)}</textarea>
+                    <label><span>Cognome</span><input type="text" data-kp="${i}" data-kp-c="cognome" placeholder="es. Yamamoto" value="${q(p.cognome)}" /></label>
+                    <label><span>Nome</span><input type="text" data-kp="${i}" data-kp-c="nome" placeholder="es. Noriko" value="${q(p.nome)}" /></label>
+                    <label><span>Chi è per te</span><input type="text" data-kp="${i}" data-kp-c="relazione" placeholder="es. tua sorella maggiore" value="${q(p.relazione)}" /></label>
+                    <label><span>Età</span><input type="number" data-kp="${i}" data-kp-c="eta" placeholder="es. 38" min="1" max="99" value="${q(p.eta)}" /></label>
+                    <label class="pg-kage-largo"><span>Aspetto <small>— serve anche per il ritratto</small></span><textarea rows="4" data-kp="${i}" data-kp-c="aspetto" placeholder="es. minuta, capelli raccolti, sempre lo stesso cardigan grigio; mani da chi lavora la ceramica">${e(p.aspetto)}</textarea></label>
+                    <label class="pg-kage-largo"><span>Com’è fatto <small>— come si comporta, che tono ha</small></span><textarea rows="3" data-kp="${i}" data-kp-c="carattere" placeholder="es. non alza mai la voce: è delusa, non arrabbiata. Fa domande invece di accusare, e aspetta la risposta">${e(p.carattere)}</textarea></label>
+                    <label class="pg-kage-largo"><span>Come parla <small>— due o tre frasi sue, da leggere al tavolo</small></span><textarea rows="3" data-kp="${i}" data-kp-c="comeParla" placeholder="es. «Non è questo il punto.» · «L’hai detto anche l’ultima volta.» · «Ha bisogno di suo padre, non di sua zia.»">${e(p.comeParla)}</textarea></label>
+                    <label class="pg-kage-largo"><span>Cosa vuole da te <small>— all’inizio poco, col tempo chiederà di più</small></span><textarea rows="2" data-kp="${i}" data-kp-c="vuole" placeholder="es. che tu ammetta che il lavoro vince sempre — non un favore: un cambiamento">${e(p.vuole)}</textarea></label>
                     <span class="pg-kage-largo"><button type="button" class="wz-btn wz-mini" data-kp-ai="${i}" ${PG.aiAttiva ? "" : "hidden"}>✨ Crea con AI</button> <button type="button" class="wz-btn wz-mini" data-kp-foto="${i}" ${PG.immaginiAttive ? "" : "disabled"}>🎨 Ritratto</button> <span class="wz-nota" data-kp-msg="${i}"></span></span>
                 </div>
                 <button type="button" class="wz-btn-x" data-kp-del="${i}" title="Togli">✕</button>
@@ -1092,16 +1327,17 @@
             p[el.dataset.kpC] = el.dataset.kpC === "eta" ? (parseInt(el.value) || "") : el.value;
             salvaDebounce();
         }));
+        legaStatPng(box, "kp", listaKagePersone, renderKagePersone);
         box.querySelectorAll("[data-kp-del]").forEach(b => b.addEventListener("click", () => {
             const i = +b.dataset.kpDel; const p = listaKagePersone()[i];
-            if ((p.cognome || p.nome || p.relazione || p.aspetto || p.ritratto) && !confirm("Togliere questa persona?")) return;
+            if ((p.cognome || p.nome || p.relazione || p.aspetto || p.carattere || p.comeParla || p.vuole || p.ritratto) && !confirm("Togliere questa persona?")) return;
             listaKagePersone().splice(i, 1); renderKagePersone(); salvaDebounce();
         }));
         box.querySelectorAll("[data-kp-ai]").forEach(b => b.addEventListener("click", async () => {
             const i = +b.dataset.kpAi; const p = listaKagePersone()[i];
             const msg = box.querySelector(`[data-kp-msg="${i}"]`);
             // i campi già scritti si rispettano: li passiamo come indicazioni
-            const scritti = ["cognome", "nome", "eta", "relazione", "aspetto"]
+            const scritti = ["cognome", "nome", "eta", "relazione", "aspetto", "carattere", "comeParla", "vuole"]
                 .filter(c => (p[c] || "").toString().trim() !== "")
                 .map(c => `${c}=«${p[c]}»`).join(", ");
             const orig = b.textContent; b.disabled = true; b.textContent = "✨ …"; msg.textContent = "";
@@ -1118,10 +1354,14 @@
                 try { dati = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1)); } catch { }
                 if (!Object.keys(dati).length) { msg.textContent = "⚠ Proposta illeggibile — riprova."; return; }
                 // riempi SOLO i campi vuoti, mai sovrascrivere
-                for (const c of ["cognome", "nome", "relazione", "aspetto"]) {
+                for (const c of ["cognome", "nome", "relazione", "aspetto", "carattere", "comeParla", "vuole"]) {
                     if (!(p[c] || "").toString().trim() && (dati[c] || "").toString().trim()) p[c] = dati[c].toString().trim();
                 }
                 if (!p.eta && dati.eta) p.eta = parseInt(dati.eta) || "";
+                if (!attrPngPieni(p) && dati.attributi) {
+                    ATTR.forEach(a => { const v = parseInt(dati.attributi[a]); if (!isNaN(v)) attrPng(p)[a] = Math.min(ATTR_MAX, Math.max(ATTR_MIN, v)); });
+                    if (attrPngPieni(p)) p.kiDado = p.kiDado || Math.max(d6(), d6());
+                }
                 renderKagePersone(); salvaDebounce();
             } catch { msg.textContent = "⚠ AI non raggiungibile"; }
             finally { b.disabled = false; b.textContent = orig; }
@@ -1131,7 +1371,7 @@
             const msg = box.querySelector(`[data-kp-msg="${i}"]`);
             const aspetto = (p.aspetto || "").trim();
             if (!aspetto) { msg.textContent = "⚠ Scrivi prima l'aspetto."; return; }
-            const prompt = `Fototessera realistica, quadrata: testa e spalle, frontale, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Sfondo grigio neutro uniforme. Giappone 1997, persona comune in abiti civili. ${p.eta ? p.eta + " anni. " : ""}${aspetto}. Grana pellicola anni '90. Nessuna scritta.`;
+            const prompt = `Ritratto fotografico professionale, di alta qualità, quadrato: testa e spalle, di fronte, volto centrato, TESTA INTERA con spazio sopra i capelli — mai tagliare fronte o capelli. Persona giapponese comune in abiti civili, Giappone 1997. ${p.eta ? p.eta + " anni. " : ""}Segui alla lettera questa descrizione: ${aspetto}. Persona curata e in ordine, espressione naturale e composta, sguardo verso l'obiettivo, presenza dignitosa — non trasandata, non caricaturale. Luce morbida e uniforme, incarnato naturale, fuoco nitido sugli occhi, sfondo grigio-azzurro uniforme. Fotografia anni '90 ben esposta e pulita, grana finissima. SOLO testa e spalle: niente mani, niente guanti, niente oggetti in mano, niente scritte.`;
             const orig = b.textContent; b.disabled = true; b.textContent = "🎨 (20-40s)…"; msg.textContent = "";
             try {
                 const r = await fetch(`/api/pg/${PG.id}/immagine`, {
@@ -1150,7 +1390,7 @@
         const agg = document.getElementById("pg-kage-persona-agg");
         if (!agg) return;
         agg.addEventListener("click", () => {
-            listaKagePersone().push({ cognome: "", nome: "", eta: "", relazione: "", aspetto: "", ritratto: "" });
+            listaKagePersone().push({ cognome: "", nome: "", eta: "", relazione: "", aspetto: "", carattere: "", comeParla: "", vuole: "", ritratto: "" });
             renderKagePersone(); salvaDebounce();
         });
         renderKagePersone();
@@ -1188,9 +1428,15 @@
             ctrl.hidden = true;
         }
     }
+    // se metti in pausa, la pausa REGGE anche tornando dalla stampa (la pagina si ricarica):
+    // il segno vive in sessionStorage, per questa scheda, finché il tab resta aperto
+    const musicaOffKey = "pgMusicaOff:" + PG.id;
+    const musicaSpenta = () => { try { return sessionStorage.getItem(musicaOffKey) === "1"; } catch { return false; } };
+    const segnaMusica = off => { try { off ? sessionStorage.setItem(musicaOffKey, "1") : sessionStorage.removeItem(musicaOffKey); } catch { } };
     function avviaMusica() {
         const au = document.getElementById("pg-musica");
         if (!au.getAttribute("src")) return;
+        segnaMusica(false);
         au.play().catch(() => { /* autoplay bloccato: resta il ▶ in testata */ });
     }
     function renderEspScelte() {
@@ -1233,13 +1479,13 @@
             au.volume = +vol.value / 100;
             salvaDebounce();
         });
-        btnPlay.addEventListener("click", () => { if (au.paused) avviaMusica(); else au.pause(); });
+        btnPlay.addEventListener("click", () => { if (au.paused) avviaMusica(); else { segnaMusica(true); au.pause(); } });
         au.addEventListener("play", () => { btnPlay.textContent = "⏸"; });
         au.addEventListener("pause", () => { btnPlay.textContent = "▶"; });
         btnPlay.textContent = "▶";
         renderEspScelte();
         applicaEsperienza();
-        if (espStato().musica) avviaMusica(); // se il browser lo blocca, resta il ▶
+        // NIENTE musica in automatico al caricamento (decisione utente): parte solo quando la scegli nel tè o premi ▶
     }
 
     // ───────── ↺ resetta: la scheda torna vuota (come un PG appena creato) ─────────
@@ -1295,6 +1541,7 @@
         initGou();
         initKi();
         initAiCampi();
+        initCarattereAI();
         initIdentita();
         initNomi();
         initRitratto();

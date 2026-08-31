@@ -13,6 +13,45 @@
     var nome = ($"{Model.S("identita.cognome")} {Model.S("identita.nome")}").Trim();
     if (nome.Length == 0) nome = Model.Pg.Nome;
     var attrNomi = new[] { "Distacco", "Pazienza", "Silenzio", "Lucidità", "Ascolto", "Presenza" };
+    // le descrizioni degli attributi come sulle schede DOCX dei pregen (pg/SCHEDE_PG_TUTTE.docx)
+    var attrNote = new Dictionary<string, string> {
+        ["Distacco"] = "Non farti coinvolgere emotivamente. Restare lucido davanti all'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire.",
+        ["Pazienza"] = "Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo.",
+        ["Silenzio"] = "Calma interiore. Non reagire d'impulso. Incassare provocazioni senza esplodere. Non tradire le tue intenzioni con un gesto o una parola di troppo.",
+        ["Lucidità"] = "Vedere chiaro. Collegare i pezzi. Capire cosa è importante e cosa no. Ricostruire cosa è successo da quello che resta.",
+        ["Ascolto"] = "Far parlare gli altri. Cogliere il non detto. Leggere tra le righe. Sentire quando qualcosa non torna in quello che qualcuno ti sta dicendo.",
+        ["Presenza"] = "L'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza."
+    };
+    var haKage = Model.S("kage.problema") != "" || Model.S("kage.png") != "" || kagePersone.Count > 0;
+    // un Enja «vuoto» (la scheda ne crea sempre uno da compilare) non deve stampare il titolo orfano
+    bool EnjaConQualcosa(JsonNode? x)
+    {
+        if (x is JsonObject o)
+            return new[] { "cognome", "nome", "relazione", "comeConosciuti", "cosaSa", "aspetto", "carattere", "comeParla", "vuole", "ritratto", "en", "eta" }
+                .Any(c => (o[c]?.ToString()?.Trim() ?? "") != "");
+        return (x?.ToString() ?? "").Trim() != "";
+    }
+    var haEnja = enja.Any(EnjaConQualcosa);
+}
+@{
+    // riga statistiche di un PNG (persona del Kage o Enja): attributi + Ki del manuale
+    string StatPng(JsonObject? o)
+    {
+        var a = o?["attributi"] as JsonObject;
+        if (a is null) return "";
+        var nomi = new[] { "Distacco", "Pazienza", "Silenzio", "Lucidità", "Ascolto", "Presenza" };
+        var voci = new List<string>();
+        var valori = new List<int>();
+        foreach (var n in nomi)
+        {
+            if (a[n] is null || !int.TryParse(a[n]!.ToString(), out var v)) return "";
+            voci.Add($"{n} {v}"); valori.Add(v);
+        }
+        var riga = string.Join(" · ", voci);
+        if (o?["kiDado"] is not null && int.TryParse(o["kiDado"]!.ToString(), out var dado))
+            riga += $" · 気 Ki {Math.Min(12, valori.Min() + dado)}";
+        return riga;
+    }
 }
 <!DOCTYPE html>
 <html lang="it">
@@ -23,37 +62,74 @@
     <style>
         * { box-sizing: border-box; }
         body { margin: 0; background: #4a4640; font-family: Georgia, "Times New Roman", serif; color: #1c1a17; }
-        .barra { position: sticky; top: 0; display: flex; gap: .5rem; align-items: center; padding: .5rem .9rem; background: #26231f; color: #eee; font-family: Arial, sans-serif; }
+        .barra { position: sticky; top: 0; z-index: 5; display: flex; gap: .5rem; align-items: center; padding: .5rem .9rem; background: #26231f; color: #eee; font-family: Arial, sans-serif; }
         .barra a, .barra button { cursor: pointer; border: 1px solid #6a655c; background: #35312b; color: #eee; padding: .4rem .8rem; border-radius: 6px; font-size: .85rem; text-decoration: none; }
-        .foglio { width: 210mm; min-height: 297mm; margin: 14px auto; background: #f6f3eb; padding: 16mm 15mm; box-shadow: 0 3px 16px rgba(0,0,0,.25); }
-        h1 { font-size: 25px; margin: 0; letter-spacing: .5px; }
-        .kanji { color: #6a655c; font-size: 18px; }
-        .sotto { color: #6a655c; font-size: 13px; margin: 2px 0 10px; }
-        .testata { display: flex; justify-content: space-between; gap: 10mm; border-bottom: 3px double #1c1a17; padding-bottom: 4mm; margin-bottom: 5mm; }
-        .ritratto { max-width: 34mm; max-height: 44mm; border: 1px solid #cfc7b5; border-radius: 4px; }
-        h2 { font-family: Arial, sans-serif; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; border-left: 4px solid #8b1a1a; padding-left: 8px; margin: 6mm 0 2mm; }
-        .attr { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2mm; text-align: center; }
-        .attr .n { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #6a655c; }
-        .attr .v { font-size: 24px; font-weight: 700; border: 1.5px solid #1c1a17; border-radius: 6px; padding: 1.5mm 0; margin-top: 1mm; background: #fff; }
-        .riga { margin: 1.6mm 0; font-size: 13.5px; line-height: 1.45; }
-        .riga b { font-family: Arial, sans-serif; font-size: 11.5px; letter-spacing: .5px; text-transform: uppercase; color: #444; }
-        .box { border: 1px solid #cfc7b5; border-radius: 6px; padding: 3mm 4mm; margin: 2mm 0; background: #fffdf6; font-size: 13.5px; line-height: 1.5; white-space: pre-wrap; }
-        .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
-        .kage-persone { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 2mm; }
-        .kage-p { display: flex; gap: 3mm; align-items: flex-start; border: 1px solid #cfc7b5; border-radius: 6px; padding: 2.5mm 3mm; background: #fffdf6; font-size: 12.5px; line-height: 1.4; }
-        .kage-p img { width: 18mm; height: 18mm; object-fit: cover; border-radius: 4px; border: 1px solid #cfc7b5; }
-        .kage-asp { color: #444; margin-top: 1mm; }
+        .foglio { width: 210mm; margin: 14px auto; background: #f6f3eb; padding: 13mm 13mm; box-shadow: 0 3px 16px rgba(0,0,0,.25); }
+        .ver { display: block; text-align: right; font-family: Arial, sans-serif; font-size: 10px; color: #6a655c; letter-spacing: 1px; margin-bottom: 1.5mm; }
+
+        /* testata come le schede DOCX: kanji + nome | dati | foto */
+        .testata { display: flex; justify-content: space-between; gap: 8mm; border-bottom: 3px double #1c1a17; padding-bottom: 4mm; margin-bottom: 4mm; }
+        h1 { font-size: 22px; margin: 0; letter-spacing: .5px; }
+        .kanji-grande { display: block; font-size: 26px; margin-bottom: 1mm; }
+        .sotto { color: #6a655c; font-size: 12.5px; margin: 2px 0 0; }
+        .dati { font-size: 13px; line-height: 1.55; min-width: 46mm; flex: 0 0 auto; }
+        .dati b { font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: .5px; text-transform: uppercase; color: #6a655c; }
+        .ritratto { width: 32mm; height: 40mm; object-fit: cover; border: 1px solid #cfc7b5; border-radius: 4px; }
+
+        h2 { font-family: Arial, sans-serif; font-size: 12.5px; letter-spacing: 2px; text-transform: uppercase; border-left: 4px solid #8b1a1a; padding-left: 8px; margin: 3.6mm 0 1.6mm; }
+        h2 small { text-transform: none; letter-spacing: 0; color: #6a655c; font-weight: 400; }
+        .opz { text-align: center; font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: 3px; color: #6a655c; margin: 5mm 0 1mm; }
+
+        /* tabella attributi con la colonna «Attuale» da segnare a matita */
+        table.attr { width: 100%; border-collapse: collapse; font-size: 12px; }
+        table.attr th { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #6a655c; text-align: left; border-bottom: 1.5px solid #1c1a17; padding: 1mm 2mm; }
+        table.attr td { border-bottom: 1px solid #d8d2c2; padding: .8mm 2mm; vertical-align: middle; line-height: 1.3; }
+        table.attr td.a { font-family: Arial, sans-serif; font-weight: 700; white-space: nowrap; }
+        table.attr td.v { font-size: 17px; font-weight: 700; text-align: center; width: 12mm; }
+        table.attr td.att { width: 16mm; }
+        table.attr td.att span { display: block; width: 12mm; height: 6.2mm; border: 1.2px solid #8b1a1a; border-radius: 3px; margin: 0 auto; background: #fff; }
+        table.attr td.note { color: #444; font-size: 10.5px; }
+
+        .regola { font-size: 11.5px; line-height: 1.45; border: 1px solid #cfc7b5; border-left: 4px solid #8b1a1a; border-radius: 4px; background: #fffdf6; padding: 1.8mm 3mm; margin: 1.6mm 0; }
+
+        /* blocco Ki: quattro riquadri come sulla scheda DOCX */
+        .ki4 { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; margin: 2mm 0; }
+        .ki4 > div { border: 1px solid #cfc7b5; border-radius: 5px; background: #fffdf6; padding: 1.8mm 3mm; font-size: 11.5px; line-height: 1.4; }
+        .ki4 b.t { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+        .ki4 .kv { font-size: 22px; font-weight: 700; color: #8b1a1a; }
+        .tacche { letter-spacing: 2.5px; font-size: 14px; }
+        .soroscala { font-size: 15px; letter-spacing: 4px; text-align: center; margin-top: 1mm; }
+
+        .riga { margin: 1.5mm 0; font-size: 13px; line-height: 1.45; }
+        .riga b, .kage-asp b { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: .5px; text-transform: uppercase; color: #444; }
+        .box { border: 1px solid #cfc7b5; border-radius: 6px; padding: 2.2mm 3.5mm; margin: 1.4mm 0; background: #fffdf6; font-size: 12.5px; line-height: 1.45; white-space: pre-wrap; }
+        ul { margin: 1mm 0 1mm 5mm; padding: 0; font-size: 12.5px; line-height: 1.5; }
+
+        .kage-p { display: flex; gap: 3mm; align-items: flex-start; border: 1px solid #cfc7b5; border-radius: 6px; padding: 2.2mm 3mm; margin: 1.6mm 0; background: #fffdf6; font-size: 12px; line-height: 1.4; }
+        .kage-p img { width: 26mm; height: 26mm; object-fit: cover; border-radius: 4px; border: 1px solid #cfc7b5; }
+        .kage-asp { color: #333; margin-top: 1mm; }
         .enja-en { color: #8b1a1a; font-weight: 700; }
-        .ki { display: flex; gap: 6mm; align-items: center; }
-        .ki .kv { font-size: 26px; font-weight: 700; border: 2px solid #8b1a1a; color: #8b1a1a; border-radius: 8px; padding: 2mm 5mm; background: #fff; }
-        .tacche { letter-spacing: 2px; }
-        ul { margin: 1mm 0 1mm 5mm; padding: 0; font-size: 13.5px; }
+
         .scene { display: flex; gap: 3mm; flex-wrap: wrap; }
         .scene img { max-width: 55mm; border: 1px solid #cfc7b5; border-radius: 4px; }
+
+        /* appunti: righe da scrivere a mano */
+        .appunti { border: 1px solid #cfc7b5; border-radius: 6px; margin-top: 2mm; padding: 0 3mm; }
+        .appunti div { height: 7.3mm; border-bottom: 1px solid #d8d2c2; }
+        .appunti div:last-child { border-bottom: none; }
+
+        /* il Kage è un FOGLIO STACCATO: pagina sua, da consegnare a parte */
+        .stacco-avviso { font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: 1px; color: #6a655c; text-transform: uppercase; text-align: center; border-bottom: 1px dashed #6a655c; padding-bottom: 2mm; margin-bottom: 4mm; }
+
+        .kage-p, .box, .regola, .ki4 > div, table.attr tr { page-break-inside: avoid; }
+        h2 { page-break-after: avoid; }
+        .foglio { min-height: 297mm; }   /* a schermo ogni facciata è un foglio A4 */
+        @@page { size: A4; margin: 10mm 12mm; }
         @@media print {
             body { background: #fff; }
             .barra { display: none; }
-            .foglio { box-shadow: none; margin: 0; width: auto; min-height: auto; }
+            .foglio { box-shadow: none; margin: 0; width: auto; min-height: auto; padding: 0; }
+            .foglio + .foglio { break-before: page; page-break-before: always; }
         }
     </style>
 </head>
@@ -61,23 +137,22 @@
     <div class="barra">
         <a href="/Pg/@Model.Pg.Id">← Torna alla scheda</a>
         <button type="button" onclick="window.print()">🖨 Stampa / PDF</button>
+        <span style="font-size:.8rem;color:#bbb">La pagina del Kage esce su un foglio a parte: è materiale personale.</span>
     </div>
 
+    @* ═══════════════════════════ FOGLIO 1 — LA SCHEDA ═══════════════════════════ *@
     <div class="foglio">
+        <span class="ver">GENKAI ver: 1.3</span>
         <div class="testata">
-            <div>
-                <h1>@nome <span class="kanji">@Model.S("identita.kanji")</span></h1>
-                <p class="sotto">
-                    GENKAI 限界 · Scheda investigatore ·
-                    @(Model.N("identita.eta") is int e ? e + " anni" : "") ·
-                    @Model.S("identita.ruolo")@(Model.S("identita.grado") != "" ? " · " + Model.S("identita.grado") : "")@(Model.N("identita.anniServizio") is int a ? $" · {a} anni di servizio" : "")
-                </p>
+            <div style="flex:1">
+                <h1>@if (Model.S("identita.kanji") != ""){<span class="kanji-grande">@Model.S("identita.kanji")</span>}@nome</h1>
+                <p class="sotto">Scheda investigatore — Kyoto, 1997</p>
                 @{
                     var contatti = new[] {
                         Model.S("identita.quartiere"), Model.S("identita.via"),
-                        Model.S("identita.telefono") != "" ? "tel " + Model.S("identita.telefono") : "",
-                        Model.S("identita.cellulare") != "" ? "cell " + Model.S("identita.cellulare") : "",
-                        Model.S("identita.pocketBell") != "" ? "pocket bell " + Model.S("identita.pocketBell") : "",
+                        Model.S("identita.telefono") != "" ? "電話 telefono di casa" : "",
+                        Model.S("identita.cellulare") != "" ? "携帯 cellulare" : "",
+                        Model.S("identita.pocketBell") != "" ? "ポケベル pocket bell" : "",
                         Model.S("identita.altroContatto")
                     }.Where(x => x != "").ToList();
                 }
@@ -86,110 +161,195 @@
                     <p class="sotto">🏠 @string.Join(" · ", contatti)</p>
                 }
             </div>
+            <div class="dati">
+                <b>Età</b> @(Model.N("identita.eta")?.ToString() ?? "—")@(Model.S("identita.genere") == "f" ? " · donna" : Model.S("identita.genere") == "m" ? " · uomo" : "")<br />
+                <b>Ruolo</b> @(Model.S("identita.ruolo") == "" ? "—" : Model.S("identita.ruolo"))<br />
+                <b>Grado</b> @(Model.S("identita.grado") == "" ? "—" : Model.S("identita.grado"))<br />
+                <b>Servizio</b> @(Model.N("identita.anniServizio") is int a ? $"{a} anni" : "—")
+            </div>
             @if (Model.S("ritratto") != "")
             {
                 <img class="ritratto" src="@Model.S("ritratto")" alt="" />
             }
         </div>
 
+        @if (Model.S("descrizioneFisica") != "")
+        {
+            <div class="box" style="font-style:italic">@Model.S("descrizioneFisica")</div>
+        }
+
         <h2>Attributi</h2>
-        <div class="attr">
+        <table class="attr">
+            <tr><th>Attributo</th><th></th><th style="text-align:center">Attuale</th><th>Note</th></tr>
             @foreach (var n in attrNomi)
             {
-                <div><div class="n">@n</div><div class="v">@(at?[n]?.GetValue<int>() ?? 4)</div></div>
+                <tr>
+                    <td class="a">@n</td>
+                    <td class="v">@(at?[n]?.GetValue<int>() ?? 4)</td>
+                    <td class="att"><span></span></td>
+                    <td class="note">@attrNote[n]</td>
+                </tr>
             }
+        </table>
+        <div class="regola">
+            Si tirano 2d6, si applicano i modificatori: punteggio minore o uguale al tuo attributo = successo. I critici si leggono sui dadi nudi.<br />
+            <b>2 (Kiwami)</b> successo critico: aggiungi un punto nell'attributo usato e nel Ki · con <b>3 (Nami)</b> scegli se mettere un punto nell'attributo o nel Ki.<br />
+            <b>12 (Kiwami)</b> fallimento critico: perdi 1 punto nell'attributo usato e nel Ki · con <b>11 (Nami)</b> scegli se perdere un punto nell'attributo o nel Ki.
         </div>
 
-        <h2>Ki 気</h2>
-        <div class="ki">
-            <span class="kv">@(Model.KiMax()?.ToString() ?? "—")</span>
-            <div class="riga">
-                Ki attuale: <span class="tacche">☐☐☐☐☐☐☐☐☐☐☐☐</span><br />
-                <small>Genkai (crollo) a Ki ≤ 3 · Nasake 情け: ☐ · Soroban: 5 a inizio giornata</small>
+        <h2>Ki 気 — energia vitale</h2>
+        <div class="ki4">
+            <div>
+                <b class="t">Ki max</b>: <span class="kv">@(Model.KiMax()?.ToString() ?? "______")</span><br />
+                attributo più basso + 2d6 prendi il più alto; l'1 si ritira sempre.@if ((Model.N("ki.extra") ?? 0) > 0){<text> Comprati: +@Model.N("ki.extra").</text>}
+            </div>
+            <div>
+                <b class="t">Ki attuale</b><br />
+                <span class="tacche">☐☐☐☐☐☐☐☐☐☐☐☐</span><br />
+                Se è ≤ 3: <b>Genkai</b>.
+            </div>
+            <div>
+                <b class="t">Satori 悟り</b> — successo automatico. <b>Usato ☐</b><br />
+                1/sessione, dichiarato prima del tiro: il dado vale 2, niente Kiwami.
+            </div>
+            <div>
+                <b class="t">Soroban 算盤</b> — per ogni tiro critico o fallimento<br />
+                Nami (11) → +1 · Kiwami (12) → +2<br />
+                Nami (3) → −1 · Kiwami (2) → −2
+                <div class="soroscala">0 1 2 3 4 ⑤ 6 7 8 9</div>
             </div>
         </div>
+        <div class="regola">
+            <b>Nasake 情け — compassione.</b> Se sei al massimo e fai un critico Kiwami prendi un punto.
+            Solo donabile a un altro PG giocando la scena. Max 1 punto. &nbsp;<b>☐ Pieno</b>
+        </div>
 
+    </div>
+
+    @* ═══════════ FACCIATA 2 — EQUIPAGGIAMENTO · GOU · SENMON · SHUGYŌ ═══════════ *@
+    <div class="foglio">
+        <h2 style="margin-top:0">Equipaggiamento di servizio</h2>
+        <div class="riga" style="font-size:12.5px">
+            In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni.
+            <ul>
+                <li><b>Armadietto</b> — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/2 · ricarica 4 · danno 3. Addestramento base: sai usarla, non sei un tiratore scelto</li>
+                <li><b>Armadietto</b> — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4</li>
+                <li><b>Operazioni</b> — Keibō (manganello): Silenzio · vel. 2/1 · danno 2</li>
+                <li><b>Sempre con te</b> — Keisatsu techō (tesserino), manette, taccuino</li>
+                <li><b>A mani nude</b> — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni; il grado 1 ce l'hanno tutti gli investigatori)</li>
+            </ul>
+        </div>
+
+        <h2>Gou 業 — il debito <small>· in gioco ne hai uno, lo mantieni per tutta la sessione/campagna</small></h2>
+        <div class="regola">Il Gou funziona SEMPRE. Successo = preciso, Fallimento = vago. Ogni uso raddoppia il costo del successivo; una notte di sonno lo riabbassa di un grado. Il costo si paga per intero: se ti portasse a 0 o sotto, il Gou non si attiva.</div>
         @if (gou is not null)
         {
-            <h2>Gou 業 — @gou["nome"] @gou["kanji"]</h2>
-            <div class="riga"><em>@gou["tagline"]</em></div>
+            <div class="riga"><b>@gou["nome"] @gou["kanji"]</b> — <em>@gou["tagline"]</em></div>
             <div class="riga"><b>Attributo</b>: @string.Join(" o ", (gou["attributi"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString()))
-                · <b>Costo</b>: @(Model.CrescitaAttiva && Model.St["shugyo"]?["gouAffinato"]?.GetValue<bool>() == true ? $"{gou["costo"]!.GetValue<int>() - 1} Ki (affinato)" : $"{gou["costo"]} Ki")
-                · <small>ogni uso raddoppia il costo; una notte −1 grado; attivabile solo restando a Ki ≥ 1</small></div>
-            <div class="riga"><b>Successo</b>: @gou["successo"]</div>
-            <div class="riga"><b>Fallimento</b>: @gou["fallimento"]</div>
+                · <b>Costo</b>: @(Model.CrescitaAttiva && Model.St["shugyo"]?["gouAffinato"]?.GetValue<bool>() == true ? $"{gou["costo"]!.GetValue<int>() - 1} Ki (affinato)" : $"{gou["costo"]} Ki")</div>
             @if ((gou["vincolo"]?.ToString() ?? "") != "")
             {
                 <div class="riga"><b>Vincolo</b>: @gou["vincolo"]</div>
             }
+            <div class="riga"><b>Successo</b>: @gou["successo"]</div>
+            <div class="riga"><b>Fallimento</b>: @gou["fallimento"]</div>
+        }
+        else
+        {
+            <div class="riga">— non ancora scelto (passo 5 del wizard) —</div>
         }
 
-        <h2>Senmon 専門</h2>
+        <h2>Senmon 専門 — specializzazioni</h2>
+        <div class="regola">Parti da Praticante: +1 ai tiri pertinenti (il bonus si sottrae dal dado), conosci le cose comuni del campo senza tiro. Cresce con gli usi e i punti Shugyō.</div>
         <ul>
             @foreach (var s in senmon)
             {
                 var voce = Model.SenmonVoce(s?["id"]?.GetValue<string>() ?? "");
                 var grado = s?["grado"]?.GetValue<int>() ?? 1;
-                var usi = s?["usi"]?.GetValue<int>() ?? 0;
                 <li><strong>@(voce?["nome"]?.ToString() ?? s?["id"]?.ToString())</strong>
                     (@string.Join(" o ", (voce?["chiave"] as JsonArray ?? new JsonArray()).Select(x => x?.ToString())))
-                    — grado @grado (@(grado == 3 ? (Model.G3Correzione(voce) ? "−2 con Correzione" : "−3 al dado") : $"−{grado} al dado"))@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "")@(Model.CrescitaAttiva ? $" · usi: {usi}" : "")</li>
+                    — grado @grado (@(grado == 3 ? (Model.G3Correzione(voce) ? "−2 con Correzione" : "−3 al dado") : $"−{grado} al dado"))@(s?["diBase"]?.GetValue<bool>() == true ? " · d'accademia" : "")@if ((voce?["copre"]?.ToString() ?? "") != ""){<br /><span style="color:#444;font-size:11.5px">@voce!["copre"]</span>}</li>
             }
         </ul>
         @if (Model.S("senmonPerche") != "")
         {
-            <div class="riga"><b>Perché</b>: @Model.S("senmonPerche")</div>
+            <div class="riga"><b>Perché la sai fare</b>: @Model.S("senmonPerche")</div>
         }
+        <div class="riga">Grado: ______ &nbsp; Usi: <span class="tacche">☐☐☐☐☐☐☐☐☐☐</span> <small>/ solo per campagne</small><br />
+            <small>10 usi + 19 Shugyō (attr. chiave di scheda 6+) → Esperto (+2) · 25 usi + 39 Shugyō (paletti) → Maestro</small></div>
 
+        <h2>Shugyō 修行 — crescita <small>/ solo per campagne</small></h2>
+        <div class="riga">Punti Shugyō: @(Model.CrescitaAttiva ? $"{Model.N("shugyo.punti") ?? 0}" : "____________________")<br />
+            <small><b>Guadagno</b>: 1 a sessione · 4-6 a caso chiuso · +1 scena personale ben gestita · +1 momento eccezionale (max 1/sessione)<br />
+            <b>Spesa tra i casi</b>: attributo = arrivo ×3 · Ki max = arrivo ×4 (tetto 12) · Senmon 9/19/39 · Enja extra 12 · affinare il Gou = base ×11</small></div>
+
+    </div>
+
+    @* ═══════════ FACCIATA 3 — PERSONALITÀ · KAGE (per te) · CONOSCENZA · APPUNTI ═══════════ *@
+    <div class="foglio">
         @if (Model.S("chiSei") != "")
         {
-            <h2>Chi sei</h2>
+            <h2 style="margin-top:0">Chi sei</h2>
             <div class="box">@Model.S("chiSei")</div>
         }
-        @if (Model.S("descrizioneFisica") != "")
+
+        <h2>Come ti comporti</h2>
+        <div class="riga"><b>In pubblico (tatemae)</b>: @Model.S("comportamento.tatemae")</div>
+        <div class="riga"><b>In privato (honne)</b>: @Model.S("comportamento.honne")</div>
+        <div class="riga"><b>Frase tipica</b>: @Model.S("comportamento.fraseTipica")</div>
+        <div class="riga"><b>Sotto pressione</b>: @Model.S("comportamento.sottoPressione")</div>
+        <div class="riga"><b>Debolezza</b>: @Model.S("comportamento.debolezza")</div>
+
+        <h2>Tratti personali</h2>
+        <div class="riga"><b>Vizio</b>: @Model.S("tratti.vizio")</div>
+        <div class="riga"><b>Tic</b>: @Model.S("tratti.tic")</div>
+        <div class="riga"><b>Oggetto</b>: @Model.S("tratti.oggetto")</div>
+        <div class="riga"><b>Gusto</b>: @Model.S("tratti.gusto")</div>
+        @if (Model.S("tratti.libero") != "")
         {
-            <h2>Aspetto</h2>
-            <div class="box">@Model.S("descrizioneFisica")</div>
+            <div class="riga"><b>@(Model.S("tratti.liberoEtichetta") == "" ? "Tratto" : Model.S("tratti.liberoEtichetta"))</b>: @Model.S("tratti.libero")</div>
         }
 
-        @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "" || kagePersone.Count > 0)
+        @if (rapporti.Count > 0)
         {
+            <h2>La squadra</h2>
+            <ul>
+                @foreach (var r in rapporti)
+                {
+                    <li><strong>@r?["nome"]</strong>: @r?["testo"]</li>
+                }
+            </ul>
+        }
+
+        @if (haKage)
+        {
+            <div class="opz">━━━━━ OPZIONALE ━━━━━</div>
             <h2>Kage 影 — il tuo problema</h2>
-            @if (Model.S("kage.problema") != "" || Model.S("kage.png") != "")
+            @if (Model.S("kage.problema") != "")
             {
-                <div class="duo">
-                    <div class="box">@Model.S("kage.problema")</div>
-                    <div class="box">@Model.S("kage.png")</div>
-                </div>
+                <div class="box">@Model.S("kage.problema")</div>
             }
-            @if (kagePersone.Count > 0)
+            @if (Model.S("kage.png") != "")
             {
-                <div class="kage-persone">
-                    @foreach (var kp in kagePersone)
-                    {
-                        var o = kp as JsonObject;
-                        string V(string c) => o?[c]?.ToString()?.Trim() ?? "";
-                        var knome = ($"{V("cognome")} {V("nome")}").Trim();
-                        var dett = V("relazione");
-                        var keta = V("eta");
-                        if (keta != "") { dett = dett == "" ? keta + " anni" : dett + " · " + keta + " anni"; }
-                        var foto = V("ritratto");
-                        <div class="kage-p">
-                            @if (foto != "") { <img src="@foto" alt="" /> }
-                            <div>
-                                <b>@(knome == "" ? "(senza nome)" : knome)</b>@(dett == "" ? "" : " — " + dett)
-                                @if (V("aspetto") != "") { <div class="kage-asp">@V("aspetto")</div> }
-                            </div>
-                        </div>
-                    }
-                </div>
+                <div class="riga"><b>La persona al centro</b>: @Model.S("kage.png")</div>
             }
+            @foreach (var kp in kagePersone)
+            {
+                var o = kp as JsonObject;
+                string V(string c) => o?[c]?.ToString()?.Trim() ?? "";
+                var knome = ($"{V("cognome")} {V("nome")}").Trim();
+                if (knome == "" && V("relazione") == "" && V("aspetto") == "") { continue; }
+                var dett = V("relazione");
+                if (V("eta") != "") { dett = dett == "" ? V("eta") + " anni" : dett + " · " + V("eta") + " anni"; }
+                <div class="riga">— <strong>@(knome == "" ? "(senza nome)" : knome)</strong>@(dett == "" ? "" : ", " + dett)@(V("aspetto") != "" ? ": " + V("aspetto") : "")</div>
+            }
+            <div class="riga"><small>Come si comporta e cosa vuole non lo sai per intero: sta sul foglio staccato, per chi interpreterà questa persona al tavolo.</small></div>
         }
 
-        @if (enja.Any(x => (x is JsonObject) || (x?.ToString() ?? "").Trim() != ""))
+        @if (haEnja)
         {
-            <h2>Enja 縁者 — i tuoi contatti</h2>
-            <div class="kage-persone">
+            <div class="opz">━━━━━ OPZIONALE ━━━━━</div>
+            <h2>Conoscenza — Enja 縁者</h2>
             @foreach (var x in enja)
             {
                 if (x is JsonObject o)
@@ -207,54 +367,28 @@
                         @if (efoto != "") { <img src="@efoto" alt="" /> }
                         <div>
                             <b>@(enome == "" ? "(senza nome)" : enome)</b>@(edett == "" ? "" : " — " + edett)@if (een != "") { <span class="enja-en"> · 縁 En @een</span> }
-                            @if (V("comeConosciuti") != "") { <div class="kage-asp"><i>Conosciuti:</i> @V("comeConosciuti")</div> }
-                            @if (V("cosaSa") != "") { <div class="kage-asp">@V("cosaSa")</div> }
+                            @if (V("comeConosciuti") != "") { <div class="kage-asp"><b>Conosciuti</b>: @V("comeConosciuti")</div> }
+                            @if (V("cosaSa") != "") { <div class="kage-asp"><b>Può dare</b>: @V("cosaSa")</div> }
+                            @if (V("aspetto") != "") { <div class="kage-asp"><b>Aspetto</b>: @V("aspetto")</div> }
+                            @if (V("carattere") != "") { <div class="kage-asp"><b>Com'è fatto</b>: @V("carattere")</div> }
+                            @if (V("comeParla") != "") { <div class="kage-asp"><b>Come parla</b>: @V("comeParla")</div> }
+                            @if (V("vuole") != "") { <div class="kage-asp"><b>Vuole in cambio</b>: @V("vuole")</div> }
+                            @{ var estat = StatPng(o); }
+                            @if (estat != "") { <div class="kage-asp"><b>Tiri</b>: @estat</div> }
                         </div>
                     </div>
                 }
                 else if ((x?.ToString() ?? "").Trim() != "")
                 {
+                    @* schede vecchie: l'Enja era un testo libero *@
                     <div class="box">@x</div>
                 }
             }
-            </div>
         }
 
-        <h2>Come ti comporti</h2>
-        <div class="riga"><b>In pubblico (tatemae)</b>: @Model.S("comportamento.tatemae")</div>
-        <div class="riga"><b>In privato (honne)</b>: @Model.S("comportamento.honne")</div>
-        <div class="riga"><b>Frase tipica</b>: @Model.S("comportamento.fraseTipica")</div>
-        <div class="riga"><b>Sotto pressione</b>: @Model.S("comportamento.sottoPressione")</div>
-        <div class="riga"><b>Debolezza</b>: @Model.S("comportamento.debolezza")</div>
-
-        <h2>Tratti personali</h2>
-        <div class="riga"><b>Vizio</b>: @Model.S("tratti.vizio") · <b>Tic</b>: @Model.S("tratti.tic")</div>
-        <div class="riga"><b>Oggetto</b>: @Model.S("tratti.oggetto") · <b>Gusto</b>: @Model.S("tratti.gusto")</div>
-        <div class="riga"><b>@(Model.S("tratti.liberoEtichetta") == "" ? "Tratto" : Model.S("tratti.liberoEtichetta"))</b>: @Model.S("tratti.libero")</div>
-
-        @if (rapporti.Count > 0)
-        {
-            <h2>La squadra</h2>
-            <ul>
-                @foreach (var r in rapporti)
-                {
-                    <li><strong>@r?["nome"]</strong>: @r?["testo"]</li>
-                }
-            </ul>
-        }
-
-        <h2>Equipaggiamento di servizio</h2>
-        <div class="riga">Revolver New Nambu M60 (.38, 5 colpi) e giubbotto antiproiettile — in armadietto, si prelevano firmando · Keibō per le operazioni · Keisatsu techō, manette, taccuino — sempre con te.</div>
-
-        @if (Model.CrescitaAttiva)
-        {
-        <h2>Shugyō 修行</h2>
-        <div class="riga">Punti guadagnati: <strong>@(Model.N("shugyo.punti") ?? 0)</strong> ·
-            spesi: <strong>@(((Model.St["shugyo"]?["log"] as JsonArray) ?? new JsonArray()).Sum(x => x?["costo"]?.GetValue<int>() ?? 0))</strong></div>
-        }
         @if (scene.Count > 0)
         {
-            <h2>Scene</h2>
+            <h2>Scene personali</h2>
             <div class="scene">
                 @foreach (var u in scene)
                 {
@@ -262,6 +396,52 @@
                 }
             </div>
         }
+
+        <h2>Appunti</h2>
+        <div class="appunti"><div></div><div></div><div></div></div>
     </div>
+
+    @* ═══════════ FOGLIO STACCATO — IL KAGE (in fondo, pagina sua) ═══════════ *@
+    @if (haKage)
+    {
+        <div class="foglio stacco">
+            <div class="stacco-avviso">✂ Foglio staccato — il Kage di @nome, per chi lo interpreta · non circola sul tavolo</div>
+            <h2 style="margin-top:0">Kage 影 — la persona del problema</h2>
+            @if (Model.S("kage.problema") != "")
+            {
+                <div class="box">@Model.S("kage.problema")</div>
+            }
+            @if (Model.S("kage.png") != "")
+            {
+                <div class="riga"><b>La persona al centro</b>: @Model.S("kage.png")</div>
+            }
+            @foreach (var kp in kagePersone)
+            {
+                var o = kp as JsonObject;
+                string V(string c) => o?[c]?.ToString()?.Trim() ?? "";
+                var knome = ($"{V("cognome")} {V("nome")}").Trim();
+                var dett = V("relazione");
+                var keta = V("eta");
+                if (keta != "") { dett = dett == "" ? keta + " anni" : dett + " · " + keta + " anni"; }
+                var foto = V("ritratto");
+                <div class="kage-p">
+                    @if (foto != "") { <img src="@foto" alt="" /> }
+                    <div>
+                        <b>@(knome == "" ? "(senza nome)" : knome)</b>@(dett == "" ? "" : " — " + dett)
+                        @if (V("aspetto") != "") { <div class="kage-asp"><b>Aspetto</b>: @V("aspetto")</div> }
+                        @if (V("carattere") != "") { <div class="kage-asp"><b>Com'è fatto</b>: @V("carattere")</div> }
+                        @if (V("comeParla") != "") { <div class="kage-asp"><b>Come parla</b>: @V("comeParla")</div> }
+                        @if (V("vuole") != "") { <div class="kage-asp"><b>Vuole</b>: @V("vuole")</div> }
+                        @{ var kstat = StatPng(o); }
+                        @if (kstat != "") { <div class="kage-asp"><b>Tiri</b>: @kstat</div> }
+                    </div>
+                </div>
+            }
+            <div class="riga" style="margin-top:4mm"><small>Questo foglio si consegna a chi interpreterà la persona quando la scena arriva — o resta al GM.
+            Contiene ciò che il giocatore del Kage deve sapere per reggerla cinque minuti: chi è, come si comporta, cosa vuole.</small></div>
+            <h2>Appunti del Kage</h2>
+            <div class="appunti"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    }
 </body>
 </html>

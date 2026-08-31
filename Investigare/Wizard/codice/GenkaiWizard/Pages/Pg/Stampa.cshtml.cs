@@ -28,6 +28,7 @@ public class StampaModel : PageModel
         var pg = await _db.Personaggi.AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == Uid);
         if (pg is null) return NotFound();
+        Response.Headers.CacheControl = "no-store"; // la scheda cambia: mai servirla dalla cache del browser
         Pg = pg;
         St = JsonNode.Parse(pg.StatoJson) as JsonObject ?? new JsonObject();
         return Page();
