@@ -31,6 +31,21 @@
         return a;
     };
 
+    // caso demo: NESSUNA scrittura parte dal client — né salvataggi né ✨/🎨 (che consumerebbero
+    // aiuti AI o darebbero errori). Un solo cancello sul fetch, invece di cento sui bottoni.
+    if (WIZ.demo) {
+        const _fetchVero = window.fetch.bind(window);
+        let avvisato = false;
+        window.fetch = function (url, opz) {
+            const scrive = opz && opz.method && opz.method.toUpperCase() !== "GET";
+            if (scrive && typeof url === "string" && url.includes("/api/progetti/")) {
+                if (!avvisato) { avvisato = true; alert("Questo è il caso dimostrativo, in sola lettura: le modifiche e i pulsanti ✨ sono disattivati."); }
+                return Promise.reject(new Error("demo in sola lettura"));
+            }
+            return _fetchVero(url, opz);
+        };
+    }
+
     const indicatore = document.getElementById("wz-salvato");
     let salvataggioSospeso = false; // scritture in attesa del debounce, non ancora spedite
     function salvaDebounce() {

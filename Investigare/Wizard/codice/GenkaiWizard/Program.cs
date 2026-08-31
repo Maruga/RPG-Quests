@@ -262,6 +262,7 @@ api.MapPost("/progetti/{id:guid}/mappa", async (
     var uid = UtenteId(user);
     var p = await db.Progetti.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (file is null || file.Length == 0) return Results.BadRequest(new { errore = "Nessun file ricevuto" });
     if (file.Length > 12_000_000) return Results.BadRequest(new { errore = "Immagine troppo grande (max 12 MB)" });
     var ext = file.ContentType switch { "image/png" => ".png", "image/jpeg" => ".jpg", _ => (string?)null };
@@ -283,6 +284,7 @@ api.MapPost("/progetti/{id:guid}/allegati", async (
     var uid = UtenteId(user);
     var p = await db.Progetti.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (file is null || file.Length == 0) return Results.BadRequest(new { errore = "Nessun file ricevuto" });
     if (file.Length > 20_000_000) return Results.BadRequest(new { errore = "File troppo grande (max 20 MB)" });
     var ammesse = new[] { ".png", ".jpg", ".jpeg", ".webp", ".gif", ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".txt", ".md" };
@@ -309,6 +311,7 @@ api.MapPost("/progetti/{id:guid}/descrizione", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid))
@@ -335,6 +338,7 @@ api.MapPost("/progetti/{id:guid}/deposizione", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid))
@@ -361,6 +365,7 @@ api.MapPost("/progetti/{id:guid}/scheda-campo", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (string.IsNullOrWhiteSpace(body.Campo)) return Results.BadRequest(new { errore = "campo mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
@@ -387,6 +392,7 @@ api.MapPost("/progetti/{id:guid}/contatti", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
@@ -412,6 +418,7 @@ api.MapPost("/progetti/{id:guid}/calendario-evento", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.Richiesta)) return Results.BadRequest(new { errore = "richiesta mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
@@ -436,6 +443,7 @@ api.MapPost("/progetti/{id:guid}/genera-foto", async (
     var uid = UtenteId(user);
     var p = await db.Progetti.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.Prompt)) return Results.BadRequest(new { errore = "prompt mancante" });
     if (string.IsNullOrWhiteSpace(body.PersonaId)) return Results.BadRequest(new { errore = "personaId mancante" });
     if (!img.Attivo) return Results.Problem("Generazione immagini non configurata su questo server", statusCode: 503);
@@ -466,6 +474,7 @@ api.MapPost("/progetti/{id:guid}/handout-html", async (
     var uid = UtenteId(user);
     var p = await db.Progetti.FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.HandoutId)) return Results.BadRequest(new { errore = "handoutId mancante" });
 
     var stato = System.Text.Json.Nodes.JsonNode.Parse(p.StatoJson) ?? new System.Text.Json.Nodes.JsonObject();
@@ -502,6 +511,7 @@ api.MapPost("/progetti/{id:guid}/handout", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (string.IsNullOrWhiteSpace(body.HandoutId)) return Results.BadRequest(new { errore = "handoutId mancante" });
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid)) return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
@@ -527,6 +537,7 @@ api.MapPost("/progetti/{id:guid}/proponi/{passo:int}", async (
     var p = await db.Progetti.AsNoTracking()
         .FirstOrDefaultAsync(x => x.Id == id && x.UtenteId == uid, ct);
     if (p is null) return Results.NotFound();
+    if (p.Demo) return Results.Problem("Il caso demo è in sola lettura", statusCode: 400);
     if (!ai.Attivo) return Results.Problem("AI non configurata su questo server", statusCode: 503);
     if (!quota.ConsumaTesto(uid))
         return Results.Problem("Quota AI giornaliera esaurita", statusCode: 429);
