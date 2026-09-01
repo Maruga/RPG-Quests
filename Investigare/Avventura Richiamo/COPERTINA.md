@@ -2,7 +2,7 @@
 
 ### Giappone, novembre 1986 — un'avventura fuori dal normale per GENKAI 限界
 
-![Copertina](Immagini/Copertina.png)
+![Copertina](Investigare/Avventura%20Richiamo/Immagini/Copertina.png)
 
 ---
 

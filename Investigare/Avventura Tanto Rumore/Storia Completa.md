@@ -95,7 +95,7 @@ Le schede complete, una per file, in **`PNG/`** — cosa sanno, cosa nascondono,
 |---|---|---|---|
 | **Shimada Yuta** 島田 優太 | la vittima | 21 | [[PNG/Shimada Yuta.md\|Shimada Yuta]] ⚠ da compilare |
 | **Matsui Kenta** 松井 健太 | l'assassino | 24 | [[PNG/Matsui Kenta.md\|Matsui Kenta]] |
-| **Aoki Hideki** 青木 秀樹 | Compagno di classe | 21 | [[PNG/Aoki Hideki.md\|Aoki Hideki]] ⚠ da compilare |
+| **Aoki Hideki** 青木 秀樹 | Compagno di classe | 21 | [[PNG/Aoki Hideki.md\|Aoki Hideki]] |
 | **Chiba Hiroko** 千葉 裕子 | collega di lavoro | 27 | [[PNG/Chiba Hiroko.md\|Chiba Hiroko]] |
 | **Ishida Kazuhiko** 石田 和彦 | Titolare sul lavoro | 48 | [[PNG/Ishida Kazuhiko.md\|Ishida Kazuhiko]] |
 | **Shimada Yasuhiro** 島田 康弘 | Madre | 51 | [[PNG/Shimada Yasuhiro.md\|Shimada Yasuhiro]] |
@@ -269,4 +269,4 @@ En positivo si sottrae dal dado, negativo si aggiunge. A ±4/±5 il legame è pr
 - **`LANCIO.md`** — il materiale di lancio (WhatsApp + giornale finto)
 - La scheda del distretto vive in `../Materiale/Scheda_Distretto.md` (riportata per intero nel dossier)
 
-*Esportato dal wizard il 2026-08-16 — `python esporta_da_wizard.py` per riesportare.*
+*Esportato dal wizard il 2026-09-01 — `python esporta_da_wizard.py` per riesportare.*
