@@ -2,3 +2,6 @@
 {"ts":"2026-08-02T00:48:08.9156032Z","incident_id":"20260802-004531-86b511","provider":"openai","model":"gpt-5.5","cost_usd":0.31595,"tokens_in":610,"tokens_out":10430,"duration_ms":157344}
 {"ts":"2026-08-04T22:32:42.6781219Z","incident_id":"20260804-223039-22339f","provider":"openai","model":"gpt-5.5","cost_usd":0.11942,"tokens_in":346,"tokens_out":3923,"duration_ms":123339}
 {"ts":"2026-08-04T22:44:09.4034828Z","incident_id":"20260804-224119-cf8040","provider":"openai","model":"gpt-5.5","cost_usd":0.18701,"tokens_in":220,"tokens_out":6197,"duration_ms":170182}
+{"ts":"2026-09-01T13:34:39.9036895Z","incident_id":"20260901-133225-78fea8","provider":"anthropic","model":"claude-opus-4-8","cost_usd":0.438765,"tokens_in":57603,"tokens_out":6030,"duration_ms":133955}
+{"ts":"2026-09-01T13:35:17.1977602Z","incident_id":"20260901-133225-78fea8","provider":"perplexity","model":"sonar-deep-research","cost_usd":0.5,"tokens_in":3018,"tokens_out":15436,"duration_ms":171331}
+{"ts":"2026-09-01T13:35:53.2298314Z","incident_id":"20260901-133225-78fea8","provider":"openai","model":"gpt-5.5","cost_usd":0.28852,"tokens_in":2732,"tokens_out":9162,"duration_ms":207356}

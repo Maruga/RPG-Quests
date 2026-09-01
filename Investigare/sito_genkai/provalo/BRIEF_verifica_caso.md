@@ -1,0 +1,132 @@
+# BRIEF — Verifica della logica di un mini-caso investigativo
+
+**Cosa ti chiedo.** Sei un consulente per gialli. Qui sotto trovi la trama completa di un mini-caso
+dimostrativo per un gioco di ruolo investigativo (il giocatore lo attraversa in 9 scene). Devi
+verificare **solo la logica del caso**: fisica degli eventi, tempistica, comportamento realistico
+delle persone, solidità della catena indiziaria, realismo dell'ambientazione. **Non** giudicare le
+regole del gioco, lo stile di scrittura o la struttura a scene: solo se il caso sta in piedi.
+
+**Ambientazione.** Kyoto, quartiere di Fushimi, un martedì di novembre 1997. Vecchio condominio
+(apāto) a più piani, isolamento acustico scarso. La polizia è quella giapponese dell'epoca:
+kōban di quartiere, squadra Omicidi in borghese col keibō (manganello tascabile), medico legale,
+niente analisi scientifiche rapide. Un dettaglio culturale usato dal caso: in casa giapponese le
+pantofole si tolgono entrando nel bagno e restano fuori dalla porta; sistemarle appaiate con le
+punte girate verso l'esterno è un gesto di cortesia che si fa *per qualcun altro*, non per sé.
+Altro dettaglio: il bagno giapponese è "allagabile" — pavimento con scarico, gradino sulla soglia
+che trattiene l'acqua.
+
+---
+
+## LA VERITÀ (quello che è successo davvero)
+
+**Le persone** (il caso non usa nomi propri, di proposito):
+- **La vittima**: uomo di ~60 anni, vedovo, vive solo della pensione. Ordinato, abitudinario.
+- **Il colpevole**: il nipote, ~25 anni, disoccupato, abita a due isolati. Passa spesso a farsi
+  prestare soldi; da bambino in quella casa c'è cresciuto.
+- **La testimone**: la vicina del piano di sotto, ~60 anni, conosce la vittima da trent'anni.
+- Il protagonista: un investigatore della Omicidi, col suo collega più giovane.
+
+**Timeline del martedì:**
+1. **Tardo pomeriggio.** Il nipote sale dallo zio. Lo zio lo accoglie: tè in cucina — per l'ospite
+   tira fuori la tazza del servizio buono. Intanto (o subito dopo) lo zio mette a riempire la
+   vasca per il bagno serale, col rubinetto a filo.
+2. Il nipote chiede di nuovo soldi. Lite — la vicina di sotto la sente: la voce dello zio e una
+   voce più giovane che grida. «Non era la prima volta, sempre per i soldi.»
+3. Lo zio tronca («vattene») e si allontana verso il bagno; il nipote lo segue insistendo. Sulla
+   soglia del bagno la lite diventa fisica: uno spintone, lo zio cade dentro, batte la testa sul
+   bordo della vasca e finisce nell'acqua, vestito. Perde i sensi e **annega**. Nella caduta
+   l'acqua schizza fuori dalla soglia, sul pavimento del corridoio.
+4. **Il panico del nipote, in ordine:** capisce che è morto; non lo tira fuori. Vuole che sembri
+   un malore solitario durante la preparazione del bagno. Quindi: **asciuga l'acqua schizzata nel
+   corridoio** con uno straccio (l'acqua *fuori* dal bagno non è compatibile con un malore);
+   **lascia il rubinetto aperto com'era** (un malore mentre si prepara il bagno *prevede* il
+   rubinetto aperto — chiuderlo sarebbe stato l'errore); per puro automatismo di chi in quella
+   casa è cresciuto, **rimette a posto le pantofole dello zio** — appaiate per bene davanti alla
+   porta del bagno, punte verso il corridoio, come si sistemano per cortesia. Prima di uscire
+   **lava la propria tazza** e la mette nello scolapiatti (istinto di togliere la propria
+   presenza), e **prende i contanti** della pensione dalla busta sotto il giornale (i soldi per
+   cui era venuto), lasciando busta e libretto dov'erano. Se ne va.
+5. **Ore dopo (tarda serata).** La vasca, col rubinetto aperto, ha traboccato per ore: il
+   pavimento del bagno scola, ma lo scarico vecchio non smaltisce tutto e l'acqua filtra dai
+   giunti al piano di sotto. La vicina se ne accorge, sale, bussa, nessuno risponde: chiama il
+   kōban. L'agente sale, guarda dalla porta: uomo vestito nella vasca. Riferisce. Il capo
+   ispettore della Omicidi fiuta l'anomalia («nessuno fa il bagno vestito») e manda il
+   protagonista: «Un morto in casa, non mi torna. Vacci tu.» Sono le 23:40.
+6. **Verso mezzanotte.** Il nipote, che abita a due isolati, vede le volanti sotto il palazzo.
+   Non resiste (ansia di sapere cosa hanno capito): si presenta «da parente preoccupato».
+7. Interrogato in casa, si tradisce e infine crolla; quando vede le manette afferra un coltello
+   da cucina dallo scolapiatti; i due investigatori lo disarmano (keibō) e lo arrestano in
+   flagranza. La mattina dopo il medico legale confermerà: annegamento, contusione al capo
+   compatibile con l'urto sul bordo della vasca.
+
+---
+
+## COSA TROVA IL GIOCATORE (la catena indiziaria, scena per scena)
+
+1. **Le pantofole** (davanti alla porta del bagno): appaiate con cura, punte verso il corridoio.
+   Chi si toglie le pantofole entrando le lascia alla rinfusa, punte verso la porta; girarle «per
+   bene» è il gesto di chi le sistema per un altro. L'uomo è nella vasca → **qualcuno le ha
+   risistemate dopo** → c'era qualcun altro.
+2. **Il corridoio asciugato**: il bagno è fatto per l'acqua (dentro, il trabocco non lascia
+   tracce leggibili — e intanto filtra di sotto); ma **fuori** dalla porta, dove la polvere ha il
+   suo posto, c'è una lunga strisciata pulita → acqua schizzata fuori (colluttazione sulla
+   soglia) e **qualcuno ha asciugato** → non è stato un malore tranquillo. (In alternativa il
+   protagonista può usare un potere del gioco che mostra "sagome" della scena passata: due figure,
+   la spinta, una che si china ad asciugare, una che esce con qualcosa sotto il braccio — mai i
+   volti.)
+3. **La cucina**: sul tavolo una tazza col fondo secco; nello scolapiatti una tazza **del
+   servizio buono, quello per gli ospiti**, lavata e capovolta → c'era un ospite (la tazza buona
+   non si usa da soli), hanno preso il tè, e **l'ospite si è lavato la tazza da sé** → chi si
+   lava la tazza a casa d'altri? Uno di casa.
+4. **La stanza**: sotto il giornale del giorno, la busta dei contanti aperta di strappo e vuota;
+   accanto **il libretto postale con la riga del prelievo: la pensione, due giorni fa**. In casa
+   solo spicci → **chi è uscito, è uscito coi soldi**.
+5. **La vicina**: nel tardo pomeriggio ha sentito la lite — la voce dell'uomo e **una voce più
+   giovane**, «sempre per i soldi, non era la prima volta». Poi il silenzio; stanotte, l'acqua.
+6. **Il nipote alla porta**: arriva spontaneo («ho visto le volanti», abita a due isolati),
+   dice che **non sale da mesi** — ma sa che lo zio **«l'aveva appena ritirata»**, la pensione.
+   Chi non sale da mesi non sa cosa c'è nella busta di questa settimana; e la vicina ha sentito
+   una voce giovane, oggi → **mente sull'ultima visita**.
+7. **L'incalzo**: messo davanti alle sei righe del taccuino, ammette la visita, la lite, i soldi
+   («me li doveva!»); sulla vasca: «è scivolato, io non volevo, io l'ho solo…».
+8. **Il coltello**: alla vista delle manette afferra un coltello e minaccia i due agenti →
+   flagranza, arresto. Il caso si chiude: indizi + mezza confessione + resistenza.
+
+---
+
+## LE DOMANDE (rispondi a ciascuna)
+
+1. **Fisica dell'acqua**: la sequenza «vasca che trabocca per ore → pavimento del bagno drenato
+   ma scarico vecchio → infiltrazione al piano di sotto → la vicina dà l'allarme» è plausibile in
+   un vecchio condominio giapponese? C'è qualche contraddizione con «dentro il bagno il trabocco
+   non lascia tracce leggibili, fuori il corridoio resta asciutto (tranne dove ha asciugato lui)»?
+2. **La dinamica della morte**: spintone sulla soglia → caduta nella vasca in riempimento → urto
+   del capo sul bordo → annegamento da incoscienza. Regge dal punto di vista medico-legale
+   (referto: annegamento + contusione compatibile)? Un medico legale del 1997 potrebbe
+   distinguere spinta da scivolone? (Il caso NON pretende che lo distingua: la prova viene dagli
+   indizi e dalla confessione — è un problema?)
+3. **Il comportamento del colpevole**: asciugare il corridoio ma lasciare il rubinetto aperto,
+   rimettere a posto le pantofole per automatismo, lavare la propria tazza, prendere i contanti e
+   lasciare busta e libretto, tornare sul posto vedendo le volanti, dire «non salgo da mesi» ma
+   citare la pensione appena ritirata. È un insieme credibile per un venticinquenne nel panico,
+   non premeditato? C'è qualche gesto che stona?
+4. **Letture innocenti**: ciascun indizio, preso da solo, ammette spiegazioni innocenti che il
+   caso ignora? (Es.: le pantofole poteva averle sistemate la vittima stessa in un altro momento?
+   La tazza buona poteva essere di un altro ospite, giorni prima? ecc.) La **combinazione** dei
+   sei indizi chiude davvero queste porte?
+5. **La bugia-chiave**: «non salgo da mesi» + conoscenza della pensione appena ritirata. È
+   davvero indiziante, o esistono modi normali in cui il nipote poteva saperlo senza essere stato
+   lì (telefonata con lo zio, abitudine nota delle date di pagamento — in Giappone le pensioni
+   si pagano a date fisse ogni due mesi)? Se è un buco, come lo chiuderesti con una modifica
+   minima?
+6. **Procedura e ambientazione 1997**: kōban → capo ispettore → investigatore in borghese;
+   interrogatorio informale in casa; arresto in flagranza per la minaccia col coltello (senza
+   mandato); keibō e niente pistola estratta. Anacronismi o errori grossolani?
+7. **Tempistica complessiva**: lite nel tardo pomeriggio, morte poco dopo, scoperta alle 23:40
+   («è lì da ore»), trabocco che impiega ore ad arrivare di sotto, tè col fondo secco dopo ~6
+   ore, tazza lavata ancora capovolta nello scolapiatti. Qualcosa non torna?
+8. **Qualunque altra cosa** che a un lettore di gialli farebbe alzare il sopracciglio.
+
+**Formato della risposta:** per ogni punto → `OK` / `DEBOLE (perché + fix minimo suggerito)` /
+`GRAVE (perché + fix minimo suggerito)`. Chiudi con un giudizio complessivo in tre righe:
+il caso regge come dimostrazione giocabile di 20 minuti?
