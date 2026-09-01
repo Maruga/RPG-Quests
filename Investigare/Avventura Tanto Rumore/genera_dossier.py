@@ -10,6 +10,8 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
+sys.path.insert(0, os.path.join(r'C:' + chr(92) + 'Public', '_Clienti', 'Maruga', 'Giochi', 'Vampiri', 'Vault', 'Vampiri', 'Investigare', 'Avventura Tanto Rumore'))
+from contesto_tavolo import RUOLI, LOCATION, RUOLI_FILE, file_scheda  # fonte unica del contesto da tavolo
 BASE = r'C:\Public\_Clienti\Maruga\Giochi\Vampiri\Vault\Vampiri\Investigare'
 WIZ  = os.path.join(BASE, 'Wizard', 'codice', 'GenkaiWizard')
 ID   = 'C3C15FF7-AFCE-4299-A49C-53B367CD29EA'
@@ -170,6 +172,19 @@ P('DOSSIER DEL GAME MASTER', size=11, bold=True, colore=ROSSO, align=WD_ALIGN_PA
 P('Contiene la soluzione del caso. Non va mostrato ai giocatori.', size=9.5, italic=True,
   colore=GRIGIO, align=WD_ALIGN_PARAGRAPH.CENTER, dopo=8)
 
+# ── il briefing del capo — per aprire (testo fisso, deciso dall'utente 2026-09-01) ──
+titolo_sez('Il briefing del capo — per aprire', '訓示', prima=8)
+P("Domenica 25 maggio 1997, mattina. Il capo ispettore alla squadra — da leggere ai giocatori così com'è:",
+  size=9.5, italic=True, colore=GRIGIO, dopo=4)
+P("«Sabato sera, 21:15, snack bar SnakUp, Shimogyō. Shimada Yuta, ventun anni, studente di medicina "
+  "che faceva le serate lì per pagarsi gli studi: un colpo alla nuca, da dietro, oggetto contundente. "
+  "Morto prima che arrivasse l'ambulanza. Quattro, forse cinque giovani: entrati, trenta secondi di lite, "
+  "il colpo, e via in moto. Nessun nome, nessuna faccia — l'unica cosa che tutti ricordano è il rumore: "
+  "quel rombo di scarichi tagliati che ha svegliato mezza via.", size=11, italic=True, dopo=3, indent=0.4)
+P("Il titolare e la cameriera erano dentro. La madre e la sorella aspettano da stanotte che qualcuno "
+  "gli spieghi perché. Il caso è vostro: portatemi chi ha dato quel colpo — prima che i giornali "
+  "ci mangino vivi.»", size=11, italic=True, dopo=3, indent=0.4)
+
 # ── il caso in breve ──
 titolo_sez('Il caso in breve', '事件', prima=8)
 q1, q2, q3, q4, q5, q6 = (S.get(k) or {} for k in ('passo1','passo2','passo3','passo4','passo5','passo6'))
@@ -249,6 +264,7 @@ def cerchia_di(pid):
                     return f"{r['relazione']} — nel mondo {chi}"
     return ''
 def ruolo_label(p):
+    if p['id'] in RUOLI: return RUOLI[p['id']]
     if p['id'] == VITT: return 'la vittima'
     if p['id'] in COLP: return "l'assassino"
     return {'testimone':'testimone','falsaPista':'falsa pista','complice':'complice'}.get(p.get('ruoloNelCaso',''), '')
@@ -346,6 +362,35 @@ for pers in ordinati:
         tabellina(([('Abita', ab)] if ab else []) +
                   [(ETICH_CONT.get(k, k), v) for k, v in cont.items()] +
                   ([('Luoghi suoi', ', '.join(suoi))] if suoi else []), (3.4, 13.6))
+    # ── tutto ciò che riguarda questa persona, nella sua scheda (richiesta utente 2026-09-01) ──
+    evs = [e for e in S['passo7']['eventi'] if pid in (e.get('personeIds') or [])]
+    if evs:
+        sottotit('Nella storia (verità del GM)')
+        for e in sorted(evs, key=lambda x: x.get('quando','')):
+            dove = luogo(e.get('luogoId'))
+            P('· ' + (e.get('quando','—') or '—') + (' · ' + dove if dove else '') + ' — ' + (e.get('testo','') or '').strip(),
+              size=9.5, dopo=1, indent=0.5)
+    _gr = [g['id'] for g in S['gruppi'] if pid in (g.get('membriIds') or [])]
+    _fonti = [(tr, f) for tr in S['passo9']['tracce'] for f in (tr.get('fonti') or [])
+              if f.get('attoreId') == pid or f.get('attoreId') in _gr]
+    if _fonti:
+        sottotit('Cosa può dare ai PG')
+        _COME = {'interrogatorio': 'interrogandolo', 'richiestaEnte': 'con richiesta all' + chr(39) + 'ente', 'nulla': 'senza condizioni'}
+        for tr, f in _fonti:
+            _t = '· «' + tr['nome'] + '» (' + _COME.get(f.get('richiede',''), f.get('richiede','')) + ')'
+            if (f.get('versione') or '').strip(): _t += ': ' + f['versione'].strip()
+            if f.get('handout'): _t += ' — diventa handout: «' + (f.get('handoutTitolo') or tr['nome']) + '»'
+            P(_t, size=9.5, dopo=1, indent=0.5)
+    _rel = [r2 for r2 in S.get('relazioni', []) if pid in (r2.get('aId'), r2.get('bId'))]
+    if _rel:
+        sottotit('I suoi legami (En)')
+        for r2 in _rel:
+            _altro = r2['bId'] if r2['aId'] == pid else r2['aId']
+            _da = r2['enAB'] if r2['aId'] == pid else r2['enBA']
+            _ri = r2['enBA'] if r2['aId'] == pid else r2['enAB']
+            _tipo = (r2.get('tipo') or '').strip()
+            P('· con ' + nome(_altro) + (' (' + _tipo + ')' if _tipo else '') + ': En suo verso l' + chr(39) + 'altro ' + str(_da) + ' · in risposta ' + str(_ri),
+              size=9.5, dopo=1, indent=0.5)
     stt = {k: v for k, v in (sch.get('stats') or {}).items() if k != 'esempio' and v not in (None, '')}
     if stt:
         pp = doc.add_paragraph(); pp.paragraph_format.space_before = Pt(5); pp.paragraph_format.space_after = Pt(2)
@@ -375,6 +420,12 @@ for l in S['luoghi']:
     if chi:
         pp = doc.add_paragraph(); pp.paragraph_format.left_indent = Cm(0.4); pp.paragraph_format.space_after = Pt(2)
         etichetta(pp, 'Legato a: ', chi, size=10)
+    ctx = LOCATION.get((l.get('nome') or '').strip())
+    if ctx:
+        sottotit('Quando i PG arrivano', prima=3)
+        P(ctx['arrivo'], size=10, italic=True, dopo=2, indent=0.4)
+        sottotit('Quando entrano', prima=3)
+        P(ctx['entrata'], size=10, italic=True, dopo=2, indent=0.4)
     tip = voce_lib('luoghi', 'tipologie', l.get('tipologiaId'))
     if tip:
         for campo, lab in (('cosaSiVede','Che posto è'), ('tracceTipiche','Cosa ci si trova, di solito')):
@@ -598,3 +649,68 @@ doc.save(OUT)
 print('creato:', OUT, '·', os.path.getsize(OUT)//1024, 'KB')
 print('sezioni distretto riportate:', len(viste), '→', ' | '.join(viste))
 if senza_scheda: print('!! senza scheda nel wizard:', ', '.join(senza_scheda))
+
+
+# ═══ DOSSIER_GM.md per GMDASHBOARD: stesso contenuto del DOCX, rigenerato insieme ═══
+OUT_MD = OUT[:-5] + '.md'
+from docx import Document as _Doc
+from docx.table import Table as _Tab
+from docx.text.paragraph import Paragraph as _Par
+_d = _Doc(OUT)
+_md = []
+def _cella(c): return ' '.join(c.text.split()).replace('|', chr(92)+'|')
+def _riga_par(par):
+    txt = par.text.strip()
+    if not txt: return None
+    if set(txt) <= set('━'): return '---'
+    sizes = [r.font.size.pt for r in par.runs if r.font.size is not None]
+    mx = max(sizes) if sizes else 10.5
+    if mx >= 20: return '# ' + txt
+    if any(r.bold and r.font.size is not None and r.font.size.pt >= 13 for r in par.runs): return '## ' + txt
+    con_testo = [r for r in par.runs if r.text.strip()]
+    if con_testo and all(r.bold for r in con_testo) and mx <= 10.5 and len(txt) < 70: return '### ' + txt
+    pezzi = []
+    for r in par.runs:
+        t = r.text
+        if not t: continue
+        if (r.bold or r.italic) and t.strip():
+            testa = t[:len(t)-len(t.lstrip())]
+            coda = t[len(t.rstrip()):]
+            mark = '**' if r.bold else '*'
+            t = testa + mark + t.strip() + mark + coda
+        pezzi.append(t)
+    return ''.join(pezzi) if pezzi else txt
+_skip_persone = False
+for _el in _d.iter_inner_content():
+    if isinstance(_el, _Par):
+        _txt0 = _el.text.strip()
+        if _txt0.startswith('LE PERSONE DEL CASO'):
+            _md.append('## LE PERSONE DEL CASO   人物'); _md.append('')
+            _md.append('*Le schede complete — una per file, con dentro tutto: aspetto, cosa sa, eventi, En, deposizione — sono in `PNG/`. Qui solo l' + chr(39) + 'indice.*'); _md.append('')
+            for _p in ordinati:
+                _md.append('- [[PNG/' + file_scheda(nome(_p['id']), _p['id']) + '|' + nome(_p['id']) + ']] — ' + (RUOLI.get(_p['id']) or ruolo_label(_p) or ''))
+            _md.append('')
+            _skip_persone = True
+            continue
+        if _skip_persone and _txt0.startswith('I LUOGHI'):
+            _skip_persone = False
+        if _skip_persone: continue
+        _r = _riga_par(_el)
+        if _r is not None: _md.append(_r); _md.append('')
+    elif isinstance(_el, _Tab):
+        if _skip_persone: continue
+        _rt = [[_cella(c) for c in row.cells] for row in _el.rows]
+        _rt = [r for r in _rt if any(x.strip() for x in r)]
+        if not _rt: continue
+        _nc = max(len(r) for r in _rt)
+        if _nc == 2:
+            for _lab, _val in _rt:
+                _md.append(('- **' + _lab + '** — ' + _val) if _lab.strip() else ('- ' + _val))
+        else:
+            _md.append('| ' + ' | '.join(_rt[0]) + ' |')
+            _md.append('|' + ' --- |' * _nc)
+            for _r in _rt[1:]:
+                _md.append('| ' + ' | '.join((_r + ['']*_nc)[:_nc]) + ' |')
+        _md.append('')
+open(OUT_MD, 'w', encoding='utf-8').write(chr(10).join(_md).strip() + chr(10))
+print('creato:', OUT_MD, '·', os.path.getsize(OUT_MD)//1024, 'KB')

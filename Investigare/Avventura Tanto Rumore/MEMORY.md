@@ -25,6 +25,29 @@ giornali — non citarlo). Backup della via del ritorno: `app.db.bak-pre1997-202
 1984), `app.db.bak-anno1987-20260816` (originale 1998). *Il Giudice* è aprile 1997: casi
 consecutivi della stessa squadra.
 
+## Pre-serata 2026-09-01 — FATTO e DECISO (si gioca stasera)
+
+- **Aoki Hideki COMPILATO** nel wizard (cosa sa/comportamento/stats + deposizione 📄): sa di Noriko,
+  dell'ex «con le moto» (senza nome), del pedinamento; spiega DA DOVE chiamava Yuta (SnakUp/cabina
+  Sanjō) → i PG attribuiscono le due voci del tabulato. Backup DB: `app.db.bak-pre-aoki-20260901`.
+- **Verificato tabulato**: i codici NON sono stati tolti — cifre + traduzione in chiaro, nessuna
+  versione alternativa. REGOLA UTENTE: handout esistenti NON si modificano, i nuovi si adattano.
+- **2 risposte del Kōban di Kamigyō SCRITTE** (fonti richiesta-ente marcate handout, testo nel campo
+  `versione`): «Fascicolo CBX400F» (moto→banda di Matsui, foto di polizia = ritratto-pogta8z allegato,
+  fermo di Sugimoto 15/5 citato, ubicazione NON svelata → rimanda a richiesta specifica) e
+  «Magazzino — Kōban di Kamigyō» (capannone Murasakino con planimetria + 3 foto zone già allegate).
+  La vecchia nota di consegna dell'utente è preservata come «GM:» nel testo-traccia Honda.
+- **Briefing d'apertura del capo** (2026-09-01): testo FISSO dentro `genera_dossier.py` (sezione 訓示
+  in testa al dossier, prima de «Il caso in breve»). `BRIEFING_APERTURA.md` è stato CANCELLATO su
+  decisione utente: al suo posto c'è **`DOSSIER_GM.md`** — l'intero dossier in markdown per
+  **GMDASHBOARD** (lo strumento da tavolo dell'utente legge i .md). Lo genera lo stesso
+  `genera_dossier.py` in coda, convertendo il DOCX appena salvato: una rigenerazione = DOCX e MD
+  sempre allineati. Mai editare DOSSIER_GM.md a mano.
+- **DECISIONI UTENTE (chiuse, non riproporre)**: deposizione di Matsui Kenta NON SERVE («preso,
+  arrestato, poi fatti di altri poliziotti»); le 4 schede PNG restanti (Sugimoto, Yoshida, Tanaka,
+  Suzuki) NON SERVONO — del capo kōban basta la risposta, non la scheda. L'export continuerà a
+  segnalarle «senza sostanza»: è voluto.
+
 ## Da fare prima di giocare
 
 1. Compilare nel wizard le 5 schede vuote: **Aoki Hideki** (urgente — le deposizioni di madre e
@@ -33,6 +56,36 @@ consecutivi della stessa squadra.
 3. Dopo ogni modifica nel wizard: `python esporta_da_wizard.py` per riallineare la cartella
 4. In `LANCIO.md` restano segnalate le correzioni della vecchia revisione (7 contraddizioni, 6 buchi):
    verificarne lo stato nel wizard
+
+## Contesto da tavolo (2026-09-01, per GMDASHBOARD)
+
+- **`contesto_tavolo.py`** = FONTE UNICA di: RUOLI in chiaro del cast (id wizard → «LA MADRE della
+  vittima», «IL BRACCIO DESTRO di Matsui»…) e LOCATION (per le 5: «Quando i PG arrivano» /
+  «Quando entrano», 2 paragrafi l'una). Importato da `esporta_da_wizard.py` (titoli schede PNG +
+  Location/*.md) e da `genera_dossier.py` (titoli persone + sezione luoghi). Si edita lì, si rigenera.
+- **4 deposizioni della banda/kōban SCRITTE nel wizard** (solo deposizione, depHandout=false, come
+  chiesto — le schede complete restano non volute): Sugimoto (muro, avvocato), Tanaka (nega ma parla
+  troppo, «Yukio? quello parla e non sa niente»), Yoshida (trema; nota GM: isolato e trattato con
+  calma crolla e conferma tutto), Suzuki (relazione formale: fermo del 15/5, CBX, Murasakino).
+  Matsui SENZA deposizione (decisione utente confermata). Backup: `app.db.bak-pre-depos-20260901`.
+
+## Schede autosufficienti + nomi file col ruolo (2026-09-01, per il programma dell'utente)
+
+- **PNG/*.md rinominati**: `<Nome Cognome> — <chi è>.md` (es. «Shimada Yasuhiro — La madre.md»);
+  etichette brevi in `contesto_tavolo.py` → `RUOLI_FILE`. L'export PULISCE PNG/*.md prima di
+  riscrivere (niente doppioni coi vecchi nomi); wikilink della Storia Completa aggiornati.
+- **Ogni scheda persona è autosufficiente** (dossier E .md singoli): oltre ad aspetto/cosa sa/
+  deposizione ora contiene «Nella storia (verità del GM)» (i suoi eventi di cronistoria),
+  «Cosa può dare ai PG» (le informazioni di cui è fonte — per Suzuki incluse le 2 risposte del
+  kōban via gruppo) e nel dossier anche «I suoi legami (En)». Le sezioni globali restano.
+- «⚠ da compilare» non appare più sulla vittima (non si compila) né sui 4 con deposizione.
+- **ASSETTO DEFINITIVO (utente, 2026-09-01 sera)**: nel **DOSSIER_GM.md** le persone sono SOLO un
+  indice con wikilink `[[PNG/...]]` — le schede complete vivono UNICAMENTE in `PNG/*.md` (quando
+  «tira fuori» un PNG nel suo programma deve esserci tutto lì). Il dossier .md tiene solo il resto:
+  briefing, caso in breve, cronistoria, luoghi, gruppi/En, informazioni, calendario, distretto.
+  Il **DOCX resta completo** (schede incluse) per la stampa. Fatto nel convertitore MD di
+  genera_dossier.py (skip sezione persone + indice); `file_scheda()` in contesto_tavolo.py è
+  l'unica fonte del nome file.
 
 ## Lezioni
 

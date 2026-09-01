@@ -1,4 +1,4 @@
-# Aoki Hideki (青木 秀樹) — Compagno di classe
+# Aoki Hideki (青木 秀樹) — IL MIGLIORE AMICO — compagno di classe
 
 **Età:** 21 anni · uomo
 **Cerchia:** Compagno di classe — nel mondo della vittima

@@ -1,4 +1,4 @@
-# Ishida Kazuhiko (石田 和彦) — Titolare sul lavoro
+# Ishida Kazuhiko (石田 和彦) — IL TITOLARE dello SnakUp — testimone (ha paura)
 
 **Età:** 48 anni · uomo
 **Cerchia:** Titolare sul lavoro — nel mondo della vittima
@@ -34,3 +34,11 @@ Distacco 5 · Pazienza 6 · Silenzio 5 · Lucidità 6 · Ascolto 4 · Presenza 5
 > Altro non so, ispettore. Io qui ci lavoro tutte le sere, e la gente del quartiere passa davanti alla mia vetrina tutte le sere. Mi capisce.
 
 *(marcata come handout nel wizard: «Deposizione — Ishida Kazuhiko»)*
+
+## Nella storia (verità del GM)
+
+- **1997-05-24 21:14** · *SnakUp* — La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+
+## Cosa può dare ai PG
+
+- **«Honda CBX400F»** (interrogandolo): Descrive le moto ma non le conosce

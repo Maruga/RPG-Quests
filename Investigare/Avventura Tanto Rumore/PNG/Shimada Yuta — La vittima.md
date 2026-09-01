@@ -1,4 +1,4 @@
-# Shimada Yuta (島田 優太) — la vittima
+# Shimada Yuta (島田 優太) — LA VITTIMA
 
 **Età:** 21 anni · uomo · **Professione:** Studente universitario / dottorando
 

@@ -93,18 +93,18 @@ Le schede complete, una per file, in **`PNG/`** — cosa sanno, cosa nascondono,
 
 | Persona | Ruolo | Età | Scheda |
 |---|---|---|---|
-| **Shimada Yuta** 島田 優太 | la vittima | 21 | [[PNG/Shimada Yuta.md\|Shimada Yuta]] ⚠ da compilare |
-| **Matsui Kenta** 松井 健太 | l'assassino | 24 | [[PNG/Matsui Kenta.md\|Matsui Kenta]] |
-| **Aoki Hideki** 青木 秀樹 | Compagno di classe | 21 | [[PNG/Aoki Hideki.md\|Aoki Hideki]] |
-| **Chiba Hiroko** 千葉 裕子 | collega di lavoro | 27 | [[PNG/Chiba Hiroko.md\|Chiba Hiroko]] |
-| **Ishida Kazuhiko** 石田 和彦 | Titolare sul lavoro | 48 | [[PNG/Ishida Kazuhiko.md\|Ishida Kazuhiko]] |
-| **Shimada Yasuhiro** 島田 康弘 | Madre | 51 | [[PNG/Shimada Yasuhiro.md\|Shimada Yasuhiro]] |
-| **Shimada Yumiko** 島田 由美子 | Sorella minore | 23 | [[PNG/Shimada Yumiko.md\|Shimada Yumiko]] |
-| **Sugimoto Hideki** 杉本 秀樹 | Braccio destro nella banda | 24 | [[PNG/Sugimoto Hideki.md\|Sugimoto Hideki]] ⚠ da compilare |
-| **Suzuki Nobuyuki** 鈴木 信之 | Capo del kōban di Kamigyō | 46 | [[PNG/Suzuki Nobuyuki.md\|Suzuki Nobuyuki]] ⚠ da compilare |
-| **Tanaka Takayuki** 田中 隆行 | Componente banda | 22 | [[PNG/Tanaka Takayuki.md\|Tanaka Takayuki]] ⚠ da compilare |
-| **Watanabe Noriko** 渡辺 紀子 | Compagna di scuola e Fidanzata | 19 | [[PNG/Watanabe Noriko.md\|Watanabe Noriko]] |
-| **Yoshida Yukio** 吉田 幸雄 | Componente banda | 19 | [[PNG/Yoshida Yukio.md\|Yoshida Yukio]] ⚠ da compilare |
+| **Shimada Yuta** 島田 優太 | la vittima | 21 | [[PNG/Shimada Yuta — La vittima.md\|Shimada Yuta]] |
+| **Matsui Kenta** 松井 健太 | l'assassino | 24 | [[PNG/Matsui Kenta — L'assassino.md\|Matsui Kenta]] |
+| **Aoki Hideki** 青木 秀樹 | Compagno di classe | 21 | [[PNG/Aoki Hideki — Il migliore amico.md\|Aoki Hideki]] |
+| **Chiba Hiroko** 千葉 裕子 | collega di lavoro | 27 | [[PNG/Chiba Hiroko — La cameriera testimone.md\|Chiba Hiroko]] |
+| **Ishida Kazuhiko** 石田 和彦 | Titolare sul lavoro | 48 | [[PNG/Ishida Kazuhiko — Il titolare.md\|Ishida Kazuhiko]] |
+| **Shimada Yasuhiro** 島田 康弘 | Madre | 51 | [[PNG/Shimada Yasuhiro — La madre.md\|Shimada Yasuhiro]] |
+| **Shimada Yumiko** 島田 由美子 | Sorella minore | 23 | [[PNG/Shimada Yumiko — La sorella.md\|Shimada Yumiko]] |
+| **Sugimoto Hideki** 杉本 秀樹 | Braccio destro nella banda | 24 | [[PNG/Sugimoto Hideki — Il braccio destro.md\|Sugimoto Hideki]] |
+| **Suzuki Nobuyuki** 鈴木 信之 | Capo del kōban di Kamigyō | 46 | [[PNG/Suzuki Nobuyuki — Il capo del koban.md\|Suzuki Nobuyuki]] |
+| **Tanaka Takayuki** 田中 隆行 | Componente banda | 22 | [[PNG/Tanaka Takayuki — La spia della banda.md\|Tanaka Takayuki]] |
+| **Watanabe Noriko** 渡辺 紀子 | Compagna di scuola e Fidanzata | 19 | [[PNG/Watanabe Noriko — La ragazza contesa.md\|Watanabe Noriko]] |
+| **Yoshida Yukio** 吉田 幸雄 | Componente banda | 19 | [[PNG/Yoshida Yukio — Il gregario giovane.md\|Yoshida Yukio]] |
 
 ---
 
@@ -130,18 +130,36 @@ Honda CBX400F rossa e bianca (livrea "tricolor"), targa piegata verso l'alto per
 Sella a tre gradini con schienalone cromato (sanzan/sissy bar) — è il pezzo che permette di salire in due col passeggero seduto alto, ed è quello che tutti i testimoni ricordano
 Manubrio stretto e rialzato (shibori), scarichi "takeyari" — le canne lunghe all'insù, smarmittate: il quattro cilindri fa quel verso a strappi, "il canto della yonfore", che si riconosce a tre isolati
 Ognuna di queste modifiche è artigianale e unica → riconoscibile = tracciabile
+GM: Se viene inviato il fascicolo o ladeposizioine oppure fatta una chiamata possono associare la moto alla banda di Matsui Kenta
 
 - **da Kōban di Kamigyō** (richiesta a un ente) — *handout*
-  - «Se viene inviato il fascicolo o ladeposizioine oppure fatta una chiamata possono associare la moto alla banda di Matsui Kenta»
+  - «KŌBAN DI KAMIGYŌ — Riscontro alla richiesta del Distretto di Shimogyō (procedimento Shimada).
+
+Le due motociclette segnalate — Honda CBX400F, livrea bianco-rossa «tricolor», targa piegata verso l'alto, sella a tre gradini con schienalone cromato, scarichi takeyari smarmittati — corrispondono a due esemplari ben noti a questo posto di polizia: appartengono al gruppo di motociclisti (bōsōzoku) che fa capo a MATSUI Kenta, responsabile in zona di schiamazzi notturni, gare su strada e danneggiamenti. Si allega fotografia di polizia del suddetto.
+
+Il gruppo conta quattro-cinque elementi stabili. Si segnala inoltre che l'elemento di spicco SUGIMOTO Hideki (anni 24) è stato sottoposto a controllo dal sottoscritto in data 15 maggio u.s., in Kamigyō: si guardava attorno con insistenza, come chi segue qualcuno; nulla da contestare al momento del controllo.
+
+Per l'ubicazione del ritrovo abituale del gruppo, questo ufficio può fornire riscontro su richiesta specifica.
+
+Il capo posto — SUZUKI Nobuyuki 鈴木 信之»
+  - «Fascicolo CBX400F — Kōban di Kamigyō»
 - **da Ishida Kazuhiko** (interrogatorio)
   - «Descrive le moto ma non le conosce»
 - allegato: `Immagini/Honda CBX400F.png`
+- allegato: `Immagini/Fascicolo di polizia — Matsui Kenta.png`
 
 ### Magazzino covo banda · *essenziale*
 
 Ubicazione del magazzino covo dei malviventi
 
 - **da Kōban di Kamigyō** (richiesta a un ente) — *handout*
+  - «KŌBAN DI KAMIGYŌ — Riscontro alla richiesta relativa al luogo di ritrovo del gruppo di MATSUI Kenta.
+
+Da appostamenti di questo ufficio e da segnalazioni ripetute dei residenti (motori a tarda notte), il gruppo dispone in uso stabile di un capannone tra i capannoni industriali di Murasakino, Kita-ku: una ex fabbrica con cortile di carico e guardiola sull'ingresso. Le due CBX400F vi sono state viste rientrare più volte, anche nelle ultime settimane.
+
+Si allega planimetria di massima. Si raccomanda prudenza: il gruppo non ha mai mostrato disponibilità al dialogo con questo ufficio.
+
+Il capo posto — SUZUKI Nobuyuki 鈴木 信之»
   - «Magazzino — Kōban di Kamigyō»
 - **da Watanabe Noriko** (interrogatorio)
   - «Sa solo la zona: i capannoni di Murasakino, a Kita-ku. Il posto esatto non lo conosce — dentro non c'è mai stata.»

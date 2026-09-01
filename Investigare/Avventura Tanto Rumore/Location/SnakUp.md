@@ -4,6 +4,14 @@
 **Tipologia:** Snack (micro-bar della mama-san) 
 **Legato a:** Shimada Yuta
 
+## Quando i PG arrivano
+
+Un vicolo stretto di Shimogyō, insegne a tubo fluorescente una sopra l'altra: lo SnakUp è una porta e una vetrina smerigliata, l'insegna spenta. Davanti, il nastro giallo della polizia e un agente in uniforme che sbadiglia; dalle saracinesche mezze alzate dei vicini, occhi che guardano e bocche che non sanno niente.
+
+## Quando entrano
+
+Dentro è piu' piccolo di quanto sembri: sei sgabelli, un bancone corto, il karaoke muto in un angolo. Sugli scaffali le bottiglie tenute coi nomi dei clienti scritti a pennarello. Odore di fumo freddo e detersivo; a terra, vicino al bancone, il segno di dove è caduto Shimada Yuta. Sotto la cassa, il quaderno dei conti a credito della clientela fissa.
+
 **Che posto è** *(dalla biblioteca del wizard)*: sei sgabelli, bottiglie tenute coi nomi dei clienti, karaoke, la mama-san che versa e ascolta
 
 **Cosa ci si trova, di solito:** le bottle-keep: la clientela fissa è scritta sugli scaffali, la mama-san sa i guai di ogni cliente, il quaderno dei conti a credito

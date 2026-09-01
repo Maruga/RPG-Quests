@@ -1,4 +1,4 @@
-# Chiba Hiroko (千葉 裕子) — collega di lavoro
+# Chiba Hiroko (千葉 裕子) — LA CAMERIERA dello SnakUp — testimone chiave (mente)
 
 **Età:** 27 anni · donna
 **Cerchia:** collega di lavoro — nel mondo della vittima
@@ -34,3 +34,8 @@ Distacco 5 · Pazienza 5 · Silenzio 5 · Lucidità 6 · Ascolto 4 · Presenza 6
 > Sono rimasta io vicino a Yuta mentre il titolare chiamava la polizia. Non respirava già più.
 
 *(marcata come handout nel wizard: «Deposizione — Chiba Hiroko»)*
+
+## Nella storia (verità del GM)
+
+- **1997-05-11 18:00** · *SnakUp* — Shimada Yuta parla con il suo collega di lavoro della uscita fatta con Watanabe Noriko
+- **1997-05-24 21:14** · *SnakUp* — La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

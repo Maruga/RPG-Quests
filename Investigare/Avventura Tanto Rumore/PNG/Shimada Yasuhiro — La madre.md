@@ -1,4 +1,4 @@
-# Shimada Yasuhiro (島田 康弘) — Madre
+# Shimada Yasuhiro (島田 康弘) — LA MADRE della vittima
 
 **Età:** 51 anni · donna
 **Cerchia:** Madre — nel mondo della vittima

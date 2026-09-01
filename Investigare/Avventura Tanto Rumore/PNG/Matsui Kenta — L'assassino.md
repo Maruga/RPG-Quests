@@ -1,4 +1,4 @@
-# Matsui Kenta (松井 健太) — l'assassino
+# Matsui Kenta (松井 健太) — L'ASSASSINO — capo della banda
 
 **Età:** 24 anni · uomo · **Professione:** Spacciatore di shabu (metanfetamina)
 **Cerchia:** Assassino — nel mondo della vittima
@@ -38,3 +38,8 @@ Spavaldo , sicuro di se che non gli possa mai capitare nulla.
 ## Statistiche
 
 Distacco 6 · Pazienza 7 · Silenzio 8 · Lucidità 7 · Ascolto 6 · Presenza 8 · Ki 12  *(profilo: capobanda)*
+
+## Nella storia (verità del GM)
+
+- **1997-05-11 11:04** · *Sede Banda* — Tanaka Takayuki avvisa il capo Matsui Kenta, che incarica il suo braccio destro Sugimoto Hideki di indagare i due.
+- **1997-05-24 21:14** · *SnakUp* — La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

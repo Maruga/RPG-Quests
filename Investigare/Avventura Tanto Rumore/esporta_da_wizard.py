@@ -8,6 +8,7 @@
 import io, sys, os, sqlite3, json, re, shutil, urllib.parse, datetime
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
+from contesto_tavolo import RUOLI, LOCATION, RUOLI_FILE, file_scheda  # fonte unica del contesto da tavolo
 BASE = r'C:\Public\_Clienti\Maruga\Giochi\Vampiri\Vault\Vampiri\Investigare'
 WIZ  = os.path.join(BASE, 'Wizard', 'codice', 'GenkaiWizard')
 ID   = 'C3C15FF7-AFCE-4299-A49C-53B367CD29EA'
@@ -99,11 +100,45 @@ for d in ('PNG', 'Location', 'handout', 'Token', 'Immagini', os.path.join('Immag
     os.makedirs(os.path.join(DEST, d), exist_ok=True)
 
 # ═══════════ PNG/ — una scheda per persona ═══════════
+def file_png(pid):
+    return file_scheda(nome(pid), pid)
+
+def blocchi_extra(pid):
+    r = []
+    evs = [e for e in S['passo7']['eventi'] if pid in (e.get('personeIds') or [])]
+    if evs:
+        r += ['## Nella storia (verità del GM)', '']
+        for e in sorted(evs, key=lambda x: x.get('quando','')):
+            dove = nome_luogo_ev(e)
+            r.append('- **' + (e.get('quando','—') or '—') + '**' + (' · *' + dove + '*' if dove else '') + ' — ' + (e.get('testo','') or '').strip())
+        r.append('')
+    miei_gruppi = [g['id'] for g in S['gruppi'] if pid in (g.get('membriIds') or [])]
+    fonti = []
+    for tr in S['passo9']['tracce']:
+        for f in (tr.get('fonti') or []):
+            if f.get('attoreId') == pid or f.get('attoreId') in miei_gruppi:
+                fonti.append((tr, f))
+    if fonti:
+        r += ['## Cosa può dare ai PG', '']
+        COME = {'interrogatorio':'interrogandolo','richiestaEnte':'con richiesta all' + chr(39) + 'ente','nulla':'senza condizioni'}
+        for tr, f in fonti:
+            come = COME.get(f.get('richiede',''), f.get('richiede',''))
+            riga = '- **«' + tr['nome'] + '»** (' + come + ')'
+            if (f.get('versione') or '').strip(): riga += ': ' + f['versione'].strip()
+            if f.get('handout'): riga += ' — *diventa handout: «' + (f.get('handoutTitolo') or tr['nome']) + '»*'
+            r.append(riga)
+        r.append('')
+    return r
+
+def nome_luogo_ev(e):
+    l = LUOG.get(e.get('luogoId'))
+    return (l.get('nome') or '') if l else ''
+
 def scheda_png(p):
     pid = p['id']; sch = SCHEDE.get(pid, {})
     T = lambda k: (sch.get(k) or '').strip()
     r = []
-    r.append(f"# {nome(pid)} ({p.get('kanji','')}) — {ruolo_di(p)}")
+    r.append(f"# {nome(pid)} ({p.get('kanji','')}) — {RUOLI.get(pid) or ruolo_di(p)}")
     r.append('')
     ana = [f"**Età:** {p['eta']} anni" if p.get('eta') else '',
            {'m':'uomo','f':'donna'}.get(p.get('genere',''), '')]
@@ -188,15 +223,19 @@ def scheda_png(p):
             r.append('')
     elif sch.get('depHandout'):
         r += ['## La sua deposizione', '', '⚠ **Deposizione non ancora scritta nel wizard** (è marcata come handout ma il testo manca).', '']
+    r += blocchi_extra(pid)
     SOSTANZA = ('cosaSa','cosaNonSa','cosaHaFatto','comportamento','deposizione')
     if not any(T(k) for k in SOSTANZA):
         r += ['---', '', '⚠ **Scheda non compilata nel wizard**: manca cosa sa, come si comporta e la deposizione. '
               'Al tavolo si improvvisa — o si compila al passo 11 (Schede) del wizard.', '']
     return '\n'.join(r).rstrip() + '\n'
 
+# pulizia: via i .md vecchi (i nomi file ora includono il ruolo)
+for _f in os.listdir(os.path.join(DEST, 'PNG')):
+    if _f.endswith('.md'): os.remove(os.path.join(DEST, 'PNG', _f))
 n_png = 0
 for p in S['cast']:
-    percorso = os.path.join(DEST, 'PNG', f"{nome(p['id'])}.md")
+    percorso = os.path.join(DEST, 'PNG', file_png(p['id']))
     open(percorso, 'w', encoding='utf-8').write(scheda_png(p))
     n_png += 1
 
@@ -213,6 +252,9 @@ def scheda_luogo(l):
     r.append(' \n'.join(meta))
     if l.get('segretoPG'):
         r += ['', '> ⚠ **Nascosto ai giocatori** — non sanno che esiste finché l\u2019indagine non ce li porta.']
+    ctx = LOCATION.get((l.get('nome') or '').strip())
+    if ctx:
+        r += ['', '## Quando i PG arrivano', '', ctx['arrivo'], '', '## Quando entrano', '', ctx['entrata']]
     tip = voce_lib('luoghi', 'tipologie', l.get('tipologiaId'))
     if tip:
         r.append('')
@@ -376,9 +418,9 @@ r += ['---', '', '## LE PERSONE DEL CASO', '',
 ordinati = sorted(CAST.values(), key=lambda p: (p['id'] != VITT, p['id'] not in COLP, p['cognome'] + p['nome']))
 for p in ordinati:
     sch = SCHEDE.get(p['id'], {})
-    piena = any((sch.get(k) or '').strip() for k in ('cosaSa','cosaNonSa','cosaHaFatto','comportamento','deposizione'))
+    piena = p['id'] == VITT or any((sch.get(k) or '').strip() for k in ('cosaSa','cosaNonSa','cosaHaFatto','comportamento','deposizione'))
     r.append(f"| **{nome(p['id'])}** {p.get('kanji','')} | {ruolo_di(p)} | {p.get('eta','')} | "
-             f"[[PNG/{nome(p['id'])}.md\\|{nome(p['id'])}]]{'' if piena else ' ⚠ da compilare'} |")
+             f"[[PNG/{file_png(p['id'])}\\|{nome(p['id'])}]]{'' if piena else ' ⚠ da compilare'} |")
 r += ['', '---', '', '## I LUOGHI', '', 'Uno per file in **`Location/`**.', '',
       '| Luogo | Quartiere | Note |', '|---|---|---|']
 for l in S['luoghi']:

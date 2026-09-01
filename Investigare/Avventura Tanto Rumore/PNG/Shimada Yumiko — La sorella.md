@@ -1,4 +1,4 @@
-# Shimada Yumiko (島田 由美子) — Sorella minore
+# Shimada Yumiko (島田 由美子) — LA SORELLA della vittima
 
 **Età:** 23 anni · donna
 **Cerchia:** Sorella minore — nel mondo della vittima

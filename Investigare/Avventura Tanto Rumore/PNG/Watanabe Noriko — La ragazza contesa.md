@@ -1,4 +1,4 @@
-# Watanabe Noriko (渡辺 紀子) — Compagna di scuola e Fidanzata
+# Watanabe Noriko (渡辺 紀子) — LA RAGAZZA — contesa: ex di Matsui, innamorata di Yuta
 
 **Età:** 19 anni · donna
 **Cerchia:** Compagna di scuola e Fidanzata — nel mondo della vittima
@@ -61,3 +61,12 @@ Distacco 6 · Pazienza 5 · Silenzio 6 · Lucidità 6 · Ascolto 6 · Presenza 6
 > Ho paura. Tutto qui.»
 
 *(marcata come handout nel wizard: «Deposizione — Watanabe Noriko»)*
+
+## Nella storia (verità del GM)
+
+- **1997-04-25 19:25** · *SnakUp* — Si incontrano dove lavora Shimada Yuta, tra loro scoppia compicità
+- **1997-05-10 20:00** — Escono insieme e vengono visti da uno della banda
+
+## Cosa può dare ai PG
+
+- **«Magazzino covo banda»** (interrogandolo): Sa solo la zona: i capannoni di Murasakino, a Kita-ku. Il posto esatto non lo conosce — dentro non c'è mai stata.
