@@ -123,7 +123,7 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   <a class="marchio" href="../">限界 <i>GENKAI</i></a>
   <div class="stato-chip" id="stato-chip" hidden>
     <span class="chip">気 Ki <b id="chip-ki">9</b>/9</span>
-    <span class="chip" id="chip-scena">Scena 1/9</span>
+    <span class="chip" id="chip-scena">Scena 1/8</span>
   </div>
   <a class="torna" href="../">← Torna al sito</a>
 </div></nav>
@@ -339,28 +339,9 @@ const SCENE = [
     testo:`Ammette di essere salito, ammette la lite, ammette la busta: «me li doveva». Sulla vasca giura: «è scivolato, io non volevo — l'ho scosso, non rispondeva, io…». La frase resta a metà. Le manette no.`},
   gm:"Due strade, stesso sbocco: la scelta cambia il COME, il prezzo e la scena — non l'indagine. Le porte non si chiudono: si pagano." },
 
-/* 8 */
-{ img:"img/coltello.jpg", alt:"Una mano afferra il coltello dallo scolapiatti",
-  tag:"Scena 8 · il coltello", titolo:"Tre secondi di stupidità",
-  testo:[`Il collega tira fuori le manette — ed è lì che il ragazzo smette di essere un ragazzo. Uno scatto: la mano allo scolapiatti — dove il <b>coltello della cena</b> è rimasto a scolare — e la lama è fuori, puntata, in una presa che trema. «State indietro! STATE INDIETRO!»`,
-    `Tu hai il <b>keibō</b> — il manganello d'ordinanza — in mano da quando si è alzato. Il collega è due passi indietro, pronto. La cucina è stretta: da qui non si esce senza passare da qualcuno.`],
-  tavolo:`Tu: «Non gli salto addosso: keibō basso, parlo piano, e aspetto che la lama si abbassi di un dito. Se scatta, scatto.» — GM: «Scatta. Si tira lo scambio.»`,
-  tiro:{attr:"Silenzio", label:"Uno scambio: tutti tirano 2d6. Il dado basso + la velocità dell'arma dice chi agisce prima; la somma è il tuo attacco, sul <b>Silenzio</b> — l'attributo del keibō.", speciale:"comb"},
-  esiti:{
-    k2:"Doppio 1: sei dentro prima che il suo braccio decida. Il keibō gli prende il polso di piatto — secco — e il coltello vola nel lavello. Finita prima di cominciare.",
-    n3:"Lasci che affondi a vuoto, un mezzo passo di lato, e il keibō scende sul polso: la lama cade. Il collega lo abbraccia da dietro: a terra, chiuso.",
-    ok:"Vi muovete insieme ma tu arrivi giusto: il colpo sul polso, il coltello a terra, il ginocchio che gli piega la schiena. Respira forte, non si muove più.",
-    fl:"La lama ti trova l'avambraccio — un bruciore netto — ma il collega è già lì: in due lo inchiodate al muro, il coltello finisce sotto il tavolo. Sanguini poco, impari molto.",
-    n11:"Il taglio è vero, sopra il gomito, e per un attimo la cucina gira. È il collega a chiudere: keibō sul polso, ragazzo a terra. Ti guardi il braccio: se lo ricorderà anche lui.",
-    k12:"Sbagli il tempo di un soffio e la lama morde a fondo: il braccio cede, il keibō cade. Il collega ti passa davanti e lo stende con un colpo solo. Sei seduto per terra, e va bene così: siete vivi in due."
-  },
-  indizio:{titolo:"La resistenza", voce:"Coltello contro due agenti: flagranza — il caso si chiude",
-    testo:`Qualunque avvocato poteva discutere una vasca. <b>Nessuno discute un coltello puntato contro due poliziotti.</b> Il gesto disperato è l'ultima riga del taccuino: quella che chiude.`},
-  gm:"In GENKAI il combattimento è raro e brevissimo: pochi scambi e qualcuno cede. Il Genkai resta sospeso finché si combatte — i conti col Ki si fanno a scena finita. E un compagno vicino può sempre entrare nello scambio dopo: nessuno combatte da solo." },
-
-/* 9 · finale */
+/* 8 · finale */
 { tipo:"finale", img:"img/manette.jpg", alt:"Le manette ai polsi, nel corridoio",
-  tag:"Scena 9 · le manette", titolo:"Il conto della notte" }
+  tag:"Scena 8 · le manette", titolo:"Il conto della notte" }
 ];
 
 /* contenuti delle due stanze intercambiabili (scelta in scena 3) */
@@ -412,11 +393,11 @@ let girando = null;
 function aggiornaChip(){
   chipKi.textContent = S.ki;
   chipKi.parentElement.classList.toggle("genkai", S.ki <= 3);
-  chipScena.textContent = "Scena " + S.scena + "/9";
+  chipScena.textContent = "Scena " + S.scena + "/8";
 }
 function tappeHtml(){
   let h = '<div class="tappe" aria-label="Avanzamento">';
-  for (let i=1;i<=9;i++) h += `<span class="${i<S.scena?'fatta':i===S.scena?'qui':''}" title="Scena ${i}"></span>`;
+  for (let i=1;i<=8;i++) h += `<span class="${i<S.scena?'fatta':i===S.scena?'qui':''}" title="Scena ${i}"></span>`;
   return h + "</div>";
 }
 function taccuinoHtml(nuovaVoce){
@@ -450,7 +431,7 @@ function renderCopertina(){
       <p class="scena-tag">Come si gioca — provalo</p>
       <h1>Un mini-caso, scena per scena</h1>
       <p class="filosofia">«I dadi non vi sbarrano nessuna porta — dicono soltanto quanto vi costa attraversarla, e quanto ne resta di voi dall'altra parte.»</p>
-      <p>Nove scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie — fino alle manette. Così funziona GENKAI: <b>gli indizi si trovano sempre</b>; i dadi decidono solo quanto ti costa trovarli.</p>
+      <p>Otto scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie — fino alle manette. Così funziona GENKAI: <b>gli indizi si trovano sempre</b>; i dadi decidono solo quanto ti costa trovarli.</p>
       <div class="tu">
         <span>Sei tu: <b>investigatore della Omicidi</b>, Kyoto 1997</span>
         <span>Distacco <b>6</b></span><span>Lucidità <b>7</b></span><span>Ascolto <b>6</b></span>
@@ -575,16 +556,9 @@ function tira(sc, dati, attr, modo){
 
 function mostraEsito(sc, dati, attr, fascia, modo){
   const meta = META[fascia];
-  const specialeComb = sc.tiro && sc.tiro.speciale==="comb";
   const testi = (modo==="gou" && sc.esitiGou) ? sc.esitiGou : (dati.esiti || sc.esiti);
-  let mecc, extraMecc = "";
-
-  if (specialeComb){
-    mecc = meccCombattimento(fascia);
-  } else {
-    mecc = "<b>Meccanica</b>" + applicaMecc(fascia, attr);
-    if (modo==="gou") extraMecc = `<div class="mecc">${sc.meccGou}</div>`;
-  }
+  let mecc = "<b>Meccanica</b>" + applicaMecc(fascia, attr), extraMecc = "";
+  if (modo==="gou") extraMecc = `<div class="mecc">${sc.meccGou}</div>`;
   aggiornaChip();
 
   const ind = dati.indizio || sc.indizio;
@@ -613,19 +587,6 @@ function mostraEsito(sc, dati, attr, fascia, modo){
   document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
 }
 
-/* combattimento: solo il danno, coi numeri del manuale */
-function meccCombattimento(fascia){
-  const base = `<b>Lo scambio, coi numeri</b>Iniziativa = dado basso + velocità dell'arma: keibō in mano <b>1</b>, coltello sfoderato <b>1</b> — agisce prima chi ha l'iniziativa più bassa. Attacco: somma ≤ <b>Silenzio ${S.attr["Silenzio"]}</b> (l'attributo del keibō), e lo scarto è forza del colpo; la sua difesa (Pazienza) assorbe col proprio scarto. <b>Danno = scarto di chi colpisce + arma (keibō 2 / coltello 2) − scarto di chi difende − Assorbe.</b> Si perde in Ki; chi subisce danno perde l'azione. Al tavolo si va a scambi finché qualcuno cede — qui, uno scambio decide.`;
-  let riga;
-  if (fascia==="k2"){ riga = "Scambio perfetto: scarto pieno, la sua difesa fallita — il coltello cade, lui pure. <b>Nessun danno per te.</b>"; }
-  else if (fascia==="n3"){ riga = "Colpo netto sul polso: danno che basta a disarmarlo. <b>Nessun danno per te.</b>"; }
-  else if (fascia==="ok"){ riga = "Lo scambio è tuo: il keibō arriva prima della lama. Disarmato, a terra. <b>Nessun danno per te.</b>"; }
-  else if (fascia==="fl"){ S.ki = Math.max(1, S.ki-1); riga = "La lama passa: scarto suo 0 + coltello 2 − la tua difesa 1 = <b>1 danno: −1 Ki</b>. Hai perso l'azione — ed è qui che <b>il collega entra nello scambio</b>: in due, finisce subito."; }
-  else if (fascia==="n11"){ S.ki = Math.max(1, S.ki-2); riga = "Taglio vero: 0 + 2 − 0 = <b>2 danni: −2 Ki</b>, e la tua azione salta. <b>Il collega chiude lui</b>: keibō, polso, terra."; }
-  else { S.ki = Math.max(1, S.ki-3); riga = "Scarto suo 1 + coltello 2 − 0 = <b>3 danni: −3 Ki</b>. Il keibō ti cade — e <b>il collega lo stende</b> con un colpo solo. A Ki 0, in combattimento, si muore: stanotte no."; }
-  return base + `<br><br><b>Questo scambio</b> — ` + riga;
-}
-
 function renderFinale(sc){
   const sorobanFine = Math.min(9, Math.max(0, 5 + S.soroban));
   cont.innerHTML = `
@@ -635,7 +596,7 @@ function renderFinale(sc){
       ${tappeHtml()}
       <p class="scena-tag">${sc.tag}</p>
       <h2>${sc.titolo}</h2>
-      <p>L'1:20 di notte. Il ragazzo esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, e non guarda nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
+      <p>L'1:20 di notte. Quando il collega tira fuori le manette, il ragazzo non si alza nemmeno: guarda la tazza vuota e annuisce, come se lo sapesse da ore. Esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>
       <div class="conto">
         <div><div class="num">気 ${S.ki}</div><div class="lbl">Ki rimasto (su 9)</div></div>
@@ -647,7 +608,7 @@ function renderFinale(sc){
       ${S.ki<=3?`<div class="genkai-riga">Chiudi la notte a 気 Ki ${S.ki}: <b>oltre il limite</b>. Al tavolo, il rientro si tira a fine caso — 2d6 come dadi singoli, ogni dado ≤ Ki restituisce un punto. Il crollo che dà il nome al gioco: 限界, il limite. Il vostro.</div>`:""}
       ${taccuinoHtml(null)}
       <div class="lezione">
-        <p><b>La lezione del mini-caso.</b> Otto tiri, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga. Questo è GENKAI.</p>
+        <p><b>La lezione del mini-caso.</b> Sette tiri, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga. Questo è GENKAI.</p>
       </div>
       <div class="bottoni" style="margin-top:1.2rem">
         <a class="btn btn-forte" href="/Pg">✨ Crea il tuo investigatore</a>
