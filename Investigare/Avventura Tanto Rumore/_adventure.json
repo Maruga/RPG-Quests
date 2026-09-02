@@ -1,15 +1,19 @@
 {
-  "id": "avventura-tanto-rumore",
-  "name": "Avventura Tanto Rumore",
-  "system": "",
+  "id": "avventura-bakuon",
+  "name": "Bakuon — Tanto Rumore per Nulla",
+  "system": "Genkai",
   "author": "Maru",
   "version": "1.0",
-  "description": "Investigare",
-  "players": "",
-  "duration": "",
+  "description": "Kyoto, maggio 1997. Uno studente di medicina muore in uno snack bar: una lite, un colpo, un gruppo di giovani fuggiti in moto. Il bakuon — il rombo degli scarichi — è l'unica cosa che tutti i testimoni ricordano.",
+  "players": "3-5",
+  "duration": "one-shot",
   "language": "it",
-  "tags": [],
-  "visibility": "public",
-  "includeKeys": true,
-  "exportedAt": "2026-09-01"
+  "tags": [
+    "giappone",
+    "investigare",
+    "1997",
+    "bosozoku"
+  ],
+  "visibility": "private",
+  "exportedAt": "2026-09-02"
 }

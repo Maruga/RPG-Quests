@@ -245,7 +245,7 @@ MINACCE
 Cosa succede comunque, che i giocatori guardino o no.
 
 **Giorno 1 · mattina**
-Articolo del Kyoto Shinbun (25 maggio 1997, pagina 3, cronaca locale). Titolo: «Giovane studente ucciso a Shimogyo». Il trafiletto riferisce che Shimada Yuta, 21 anni, studente di medicina, è stato ucciso sabato notte presso lo snack bar SnakUp con un colpo contundente. Secondo i testimoni, un gruppo di circa 4-5 giovani è entrato nel locale intorno alle 21:15, ha litigato verbalmente con il personale, e uno di loro ha colpito Shimada. Gli aggressori sono fuggiti in motocicletta. Le identità rimangono ignote. La polizia invita chiunque abbia informazioni a contattare il koban locale.
+Articolo del Kyoto Shinbun (26 maggio 1997, pagina 3, cronaca locale). Titolo: «Giovane studente ucciso a Shimogyo». Il trafiletto riferisce che Shimada Yuta, 21 anni, studente di medicina, è stato ucciso sabato notte presso lo snack bar SnakUp con un colpo contundente. Secondo i testimoni, un gruppo di circa 4-5 giovani è entrato nel locale intorno alle 21:15, ha litigato verbalmente con il personale, e uno di loro ha colpito Shimada. Gli aggressori sono fuggiti in motocicletta. Le identità rimangono ignote. La polizia invita chiunque abbia informazioni a contattare il koban locale.
 
 ---
 
@@ -287,4 +287,4 @@ En positivo si sottrae dal dado, negativo si aggiunge. A ±4/±5 il legame è pr
 - **`LANCIO.md`** — il materiale di lancio (WhatsApp + giornale finto)
 - La scheda del distretto vive in `../Materiale/Scheda_Distretto.md` (riportata per intero nel dossier)
 
-*Esportato dal wizard il 2026-09-01 — `python esporta_da_wizard.py` per riesportare.*
+*Esportato dal wizard il 2026-09-02 — `python esporta_da_wizard.py` per riesportare.*

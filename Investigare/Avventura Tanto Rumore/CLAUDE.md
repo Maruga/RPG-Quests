@@ -13,8 +13,9 @@ tutti i testimoni ricordano. Il sottotitolo dice il resto: un ragazzo morto per 
 Fino al 2026-08-16 l'avventura si chiamava «L'era glaciale del lavoro», poi per poche ore «Tanto Rumore».
 **L'anno è il 1997** (decisione finale utente 2026-08-16, dopo passaggi per 1987 e 1984):
 l'anno canonico di GENKAI. Per salvare i giorni della settimana **tutte le date sono +1 giorno**
-rispetto alla stesura originale: il fatto è **sabato 24 maggio 1997**, i giornali escono
-domenica 25, lunedì 26 e martedì 27; «il dieci maggio, un sabato» nella deposizione di Noriko.
+rispetto alla stesura originale: il fatto è **sabato 24 maggio 1997**; i giornali escono
+lunedì 26, martedì 27 e mercoledì 28 (decisione utente 2026-09-02: il quotidiano datato 25
+si stampa la notte stessa del delitto — il primo pezzo NON può uscirci); «il dieci maggio, un sabato» nella deposizione di Noriko.
 
 Shimada Yuta, 21 anni, studente di medicina che lavora allo snack bar SnakUp, viene ucciso
 il 24/05/1997 con un colpo contundente da **Matsui Kenta**, capo di una banda bōsōzoku,

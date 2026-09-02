@@ -87,6 +87,18 @@ consecutivi della stessa squadra.
   genera_dossier.py (skip sezione persone + indice); `file_scheda()` in contesto_tavolo.py è
   l'unica fonte del nome file.
 
+## Giornali spostati a 26-27-28 maggio (2026-09-02, decisione utente)
+
+- Il quotidiano datato 25/5 (domenica) si stampa la NOTTE del 24 — non può avere il delitto delle
+  21:15 con nome della vittima: «il giornale che esce per primo è del giorno dopo». Quindi:
+  **trafiletto Kyoto Shinbun = lunedì 26 · articolone Rakuyō = martedì 27 (n. 3.812) ·
+  ipotesi regolamento = mercoledì 28 (n. 3.813, «a quattro giorni»)**. Ritocchi interni: «serata di
+  sabato», meteo, «cieli coperti da questa sera», didascalia asta «sabato mattina». Corretto anche
+  il calendario vivo (giorno 1: articolo del 26). Il briefing del capo resta domenica 25 mattina —
+  ora la squadra ha un giorno di vantaggio sulla stampa. Anno: negli handout è ovunque 1997
+  (l'unico altro anno è la réclame «RYOKUCHA MARUYAMA — dal 1921», voluta).
+  Backup: `app.db.bak-pre-giornali-20260902`. Snapshot HTML rinominati (02=26, 03=27, 04=28).
+
 ## Lezioni
 
 - Il flusso è: **wizard → export → stampa**. Mai correggere a mano i file esportati.
