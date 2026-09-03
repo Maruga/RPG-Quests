@@ -11,6 +11,13 @@
 
 ## Da applicare
 
+### 2026-09-03 · WIZARD → REGOLE · Nuova cartella di lavoro `Combattimento/`
+Creata su richiesta dell'utente: raccoglie tutto il materiale di lavoro sul combattimento (excel
+dell'utente, tabelle, prove; in futuro più armi, veicoli e altro). NON è canone: il canone resta
+`GENKAI_Combattimento.md` — la cartella serve a elaborarci sopra, le decisioni passano come sempre
+dal registro. Nessuna azione richiesta: solo saperlo. — **NON SERVE** (informativa)
+
+
 ### 2026-09-01 · WIZARD → REGOLE · Mini-caso giocabile su genkai.it/provalo — 1 dubbio di canone sul combattimento
 La pagina «Provalo» è ora un mini-caso di 9 scene (tutto in un appartamento: vasca, Gou Teatro delle Ombre, interrogatori, scontro coltello-vs-keibō col collega che interviene, arresto). Meccaniche usate = canone: tiro 2d6 ≤ attributo, critici 2/3/11/12 con ±1 e Soroban (2→−2 · 3→−1 · 11→+1 · 12→+2, valori del riquadro DOCX), Gou costo 4 Ki per intero (Teatro delle Ombre, req. Lucidità 7, esiti successo/fallimento da `gou.json`), scambio di combattimento coi numeri di `GENKAI_Combattimento.md` (iniziativa dado basso + velocità, danno = scarto att. + arma − scarto dif. − Assorbe; keibō e coltello 2/1 danno 2).
 **Dubbio da chiarire**: nei tiri di **combattimento**, i dadi nudi 2/3/11/12 applicano anche i ±1 ad attributo/Ki e il movimento del **Soroban** come nei tiri d'indagine, o in combattimento parla solo il danno? Il manuale definisce i critici di scambio (1+1/6+6) ma non dice se il Soroban conta anche lì. Nella pagina, per prudenza, lo scontro conta SOLO il danno (niente Soroban né ±1) — se la risposta è diversa la aggiorno. — **DA APPLICARE** (decisione)
