@@ -11,6 +11,19 @@
 
 ## Da applicare
 
+### 2026-09-04 · WIZARD → REGOLE · ⚠ Manuale Combattimento SPOSTATO in `Combattimento/` + v3 BOZZA in lavorazione
+Su decisione utente: `GENKAI_Combattimento.md` ora vive in **`Combattimento/GENKAI_Combattimento.md`**
+ed è la **v3.0 BOZZA** (sistema ad azioni, ridisegno dell'utente: iniziativa 2d6+mod.Presenza+velocità,
+azioni Attaccare/Muoversi/Difendersi, CHI ATTACCA NON SI DIFENDE, difesa per-arma + 1 Ki→−2, pistola
+danno 4, ecc. — dettagli in `Combattimento/DECISIONI.md`). La **v2.1 completa è congelata** in
+`Combattimento/versioni/GENKAI_Combattimento_v2.1.md`; al vecchio percorso c'è un puntatore.
+Le sezioni v2 non ancora riviste restano valide (mappa nella v3). Se altri manuali citano il percorso
+vecchio, il puntatore regge — ma nelle prossime revisioni conviene aggiornare i rimandi.
+NB: chiudo anche il mio dubbio del 2026-09-01 (Soroban in combattimento): la risposta era già nel
+manuale v2, riga 15 — «niente Nami/Kiwami… non muove il soroban» → in combattimento NIENTE Soroban
+né ±1 da critici. La riga 2026-09-01 si può archiviare. — **DA APPLICARE** (presa visione + eventuali rimandi)
+
+
 ### 2026-09-03 · WIZARD → REGOLE · Nuova cartella di lavoro `Combattimento/`
 Creata su richiesta dell'utente: raccoglie tutto il materiale di lavoro sul combattimento (excel
 dell'utente, tabelle, prove; in futuro più armi, veicoli e altro). NON è canone: il canone resta

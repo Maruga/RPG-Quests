@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENKAI — Simulatore di scontro (v3 bozza)</title>
+<style>
+:root{ --carta:#f7f4ec; --carta2:#fffdf6; --inchiostro:#1c1a17; --grigio:#6a655c; --rosso:#8b1a1a; --bordo:#d8cfc0; --oro:#b08d2f; --verde:#2e6b30; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.5;padding:1rem}
+.dentro{max-width:1080px;margin:0 auto}
+h1{font-size:1.3rem;font-weight:600;margin:.2rem 0 0} h1 small{color:var(--oro);font-weight:400}
+.sotto{color:var(--grigio);font-size:.85rem;margin:.2rem 0 1rem}
+.griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:.8rem}
+.card{background:var(--carta2);border:1px solid var(--bordo);border-radius:10px;padding:.8rem 1rem}
+.card h2{font-size:1rem;margin:0 0 .5rem;display:flex;align-items:center;gap:.5rem}
+.card h2 .vita{margin-left:auto;font-weight:700}
+.card h2 .vita.morto{color:var(--rosso)}
+.attr{display:grid;grid-template-columns:repeat(3,1fr);gap:.3rem .6rem;font-size:.85rem}
+.attr label{display:flex;justify-content:space-between;align-items:center;gap:.3rem}
+.attr input{width:52px;padding:.15rem .3rem;border:1px solid var(--bordo);border-radius:5px;text-align:center}
+.riga{display:flex;flex-wrap:wrap;gap:.5rem .9rem;margin-top:.5rem;font-size:.85rem;align-items:center}
+.riga select,.riga input[type=number]{padding:.2rem .35rem;border:1px solid var(--bordo);border-radius:5px}
+.riga input[type=number]{width:58px}
+.azioni{margin-top:.6rem;border-top:1px dashed var(--bordo);padding-top:.6rem;font-size:.88rem}
+.azioni label{display:block;margin:.15rem 0}
+.btn{font-size:1rem;padding:.55rem 1.2rem;border-radius:8px;border:1px solid var(--inchiostro);background:transparent;cursor:pointer}
+.btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff;font-weight:600}
+.btn[disabled]{opacity:.4;cursor:default}
+.barra{display:flex;gap:.7rem;margin:1rem 0;align-items:center;flex-wrap:wrap}
+.esito-fine{font-weight:700;font-size:1.05rem}
+.esito-fine.vinto{color:var(--verde)} .esito-fine.perso{color:var(--rosso)}
+#log{background:#fff;border:1px solid var(--bordo);border-radius:10px;padding:.9rem 1.1rem;margin-top:.6rem;font-size:.88rem;max-height:420px;overflow:auto}
+#log h3{font-size:.95rem;margin:.8rem 0 .3rem;border-bottom:2px solid var(--oro);padding-bottom:.15rem}
+#log h3:first-child{margin-top:0}
+#log .tiro{color:var(--grigio)}
+#log .colpo{color:var(--rosso);font-weight:600}
+#log .parata{color:var(--verde)}
+#log .nota{color:var(--oro)}
+#log p{margin:.25rem 0}
+.mini{font-size:.78rem;color:var(--grigio)}
+.png-off{opacity:.45}
+</style>
+</head>
+<body><div class="dentro">
+<h1>GENKAI — Simulatore di scontro <small>· regole v3 bozza</small></h1>
+<p class="sotto">Un PG contro uno o due PNG. Motore v3: iniziativa 2d6 + mod. Presenza + velocità (+ il tempo preso, basso agisce prima) · <b>attaccato prima di agire? puoi CONVERTIRE l'azione in difesa</b> (il simulatore te lo chiede) · chi ha già agito non si difende · colpito = azione persa · attacco ≤ attributo (pari colpisce), danno = scarto + arma · difesa per-arma, 1 Ki → −2 · critici nei due sensi: 1+1 (+1d6 danno / +1d6 parato) e 6+6 (mancato + tabella imprevisti; in difesa solo fallita). Non nel motore: zone/distanza, movimenti, Mirare-azione, Stringere i Denti, armi in fondina (tutte «in mano»). Parità = simultanei.</p>
+
+<div class="griglia" id="setup"></div>
+
+<div class="barra">
+  <button class="btn btn-forte" id="risolvi">⚔ Risolvi lo scambio</button>
+  <button class="btn" id="reset">↻ Ricomincia</button>
+  <span id="fine" class="esito-fine"></span>
+</div>
+<div id="log"><p class="mini">Imposta i combattenti, dichiara le azioni e risolvi il primo scambio. Ogni numero del calcolo finisce qui sotto, per i controlli.</p></div>
+
+<script>
+"use strict";
+/* ══════════ MOTORE v3 (regole decise — vedi DECISIONI.md) ══════════ */
+const ARMI = {
+  pistola: { nome:"Pistola",  attacco:"Lucidità", difesa:"Distacco", colpire:2, danno:4 },
+  keibo:   { nome:"Keibō",    attacco:"Silenzio", difesa:"Ascolto",  colpire:2, danno:2 },
+  lotta:   { nome:"Lotta",    attacco:"Presenza", difesa:"Pazienza", colpire:1, danno:1 },
+};
+const MOD_PRESENZA = {4:2, 5:1, 6:0, 7:-1, 8:-2, 9:-3, 10:-4};
+const TABELLA_66 = {
+  fuoco: [
+    "Il colpo finisce dove non doveva — un vetro, un'insegna, un'auto: rumore e attenzione",
+    "La presa scivola: nello scambio dopo l'arma conta COME DA SFODERARE",
+    "Era l'ultimo colpo utile: prima di risparare devi RICARICARE",
+    "L'ARMA SI INCEPPA: sbloccarla è un'azione",
+    "Inceppata male: sbloccarla è un'azione con velocità Ricarica",
+    "Il meccanismo si rompe: per questo scontro l'arma NON SPARA PIÙ"],
+  mischia: [
+    "Il colpo taglia l'aria, plateale: l'avversario ti ha letto",
+    "La presa scivola: nello scambio dopo l'arma conta COME DA SFODERARE",
+    "Ti sbilanci: l'avversario guadagna posizione — il GM la ridisegna",
+    "L'ARMA TI CADE: raccoglierla è un'azione",
+    "La lama si incrina (o il bastone si spacca): al prossimo 6+6 con quest'arma, si rompe",
+    "L'arma SI SPEZZA o vola lontano: resti a mani nude (Lotta)"],
+};
+const d6 = () => 1 + Math.floor(Math.random()*6);
+
+function tiraIniziativa(c) {
+  const a = d6(), b = d6();
+  const mod = MOD_PRESENZA[Math.max(4, Math.min(10, c.attr.Presenza))] ?? 0;
+  const vel = ARMI[c.arma].colpire;
+  const mira = c.dich.mira || 0;
+  return { dadi:[a,b], mod, vel, mira, tot: a+b+mod+vel+mira };
+}
+
+async function risolviAttacco(att, dif, log, chiediConversione) {
+  const arma = ARMI[att.arma];
+  const a = d6(), b = d6(), somma = a+b;
+  const mira = att.dich.mira || 0;
+  const tiro = Math.max(2, somma - mira);
+  const attrVal = att.attr[arma.attacco];
+  log(`<p>${att.nome} attacca ${dif.nome} con ${arma.nome} su ${arma.attacco} ${attrVal}: ` +
+      `<span class="tiro">dadi ${a}+${b}=${somma}${mira?` − tempo ${mira} = ${tiro}`:``}</span></p>`);
+  if (a===6 && b===6) {
+    const imp = d6();
+    const colonna = att.arma === "pistola" ? "fuoco" : "mischia";
+    log(`<p class="nota">⚠ 6+6 — FALLIMENTO CRITICO: il colpo manca e succede un imprevisto. Tiro sulla tabella: 1d6 = ${imp} → «${TABELLA_66[colonna][imp-1]}» <span class="mini">(1 blando → 6 disastroso; il GM mette in scena — gli stati non sono automatizzati nel simulatore)</span></p>`);
+    return;
+  }
+  if (tiro > attrVal) { log(`<p>${tiro} &gt; ${attrVal}: <b>mancato</b>.</p>`); return; }
+  let scarto = attrVal - tiro;
+  let extra = 0;
+  if (a===1 && b===1) { extra = d6(); log(`<p class="nota">★ 1+1 — colpo perfetto: +1d6 = +${extra} danni.</p>`); }
+  const inArrivo = scarto + arma.danno + extra;
+  log(`<p class="colpo">Colpito: scarto ${scarto} + danno arma ${arma.danno}${extra?` + critico ${extra}`:``} = ${inArrivo} in arrivo.</p>`);
+
+  // conversione: attaccato PRIMA di agire, senza difesa dichiarata -> può convertire l'azione
+  if (dif.dich.azione !== "difesa" && !dif.agito && !dif.convertito && dif.vita > 0) {
+    const scelta = await chiediConversione(dif, att);   // "no" | "si" | "ki"
+    if (scelta === "si" || scelta === "ki") {
+      dif.convertito = true;
+      dif.dich = { azione: "difesa", spendiKi: scelta === "ki", convertita: true };
+      log(`<p class="nota">${dif.nome} CONVERTE la sua azione in difesa${scelta === "ki" ? " (bruciando 1 Ki)" : ""}: si salva la pelle, ma il suo colpo sfuma.</p>`);
+    } else {
+      log(`<p class="mini">${dif.nome} tiene la sua azione: incassa con solo assorbimento e copertura.</p>`);
+    }
+  }
+  // difesa: tiro SOLO se il bersaglio è in difesa (dichiarata o convertita) e non l'ha già spesa
+  let parata = 0;
+  if (dif.dich.azione === "difesa" && !dif.difesaUsata) {
+    dif.difesaUsata = true;
+    const attrDif = dif.attr[arma.difesa];
+    let bonus = 0;
+    if (dif.dich.spendiKi && dif.vita >= 2) { dif.vita -= 1; bonus = 2;
+      log(`<p class="nota">${dif.nome} brucia 1 Ki (resta ${dif.vita}): −2 al tiro di difesa.</p>`); }
+    const da = d6(), db = d6(); const tiroD = Math.max(2, da+db-bonus);
+    log(`<p>${dif.nome} si difende su ${arma.difesa} ${attrDif}: <span class="tiro">dadi ${da}+${db}=${da+db}${bonus?` − ${bonus} = ${tiroD}`:``}</span></p>`);
+    if (da===6 && db===6) {
+      log(`<p>6+6 in difesa: solo una difesa fallita, nessun imprevisto — parano solo assorbimento e copertura.</p>`);
+    } else if (tiroD <= attrDif) {
+      parata = attrDif - tiroD;
+      let extraPar = 0;
+      if (da===1 && db===1) { extraPar = d6(); parata += extraPar;
+        log(`<p class="nota">★ 1+1 in difesa — parata perfetta: +1d6 = +${extraPar} parato.</p>`); }
+      log(`<p class="parata">Difesa riuscita: scarto ${attrDif - tiroD}${extraPar?` + critico ${extraPar}`:``} = ${parata} parato.</p>`);
+    }
+    else log(`<p>${tiroD} &gt; ${attrDif}: difesa fallita — parano solo assorbimento e copertura.</p>`);
+  } else if (dif.dich.azione === "difesa" && dif.difesaUsata) {
+    log(`<p class="mini">${dif.nome} ha già speso il tiro di difesa in questo scambio (vale contro UN attacco): solo assorbimento e copertura.</p>`);
+  } else if (dif.dich.azione !== "difesa") {
+    log(`<p class="mini">${dif.nome} ${dif.agito ? "ha già agito (prima agisci, prima ti scopri)" : "non si difende"}: nessun tiro di difesa — solo assorbimento e copertura.</p>`);
+  }
+  const netto = Math.max(0, inArrivo - parata - dif.assorbe - dif.copertura);
+  log(`<p><b>Danno netto a ${dif.nome}</b>: ${inArrivo} − ${parata} (difesa) − ${dif.assorbe} (assorbimento) − ${dif.copertura} (copertura) = <b>${netto}</b></p>`);
+  if (netto > 0) {
+    dif.vita -= netto;
+    dif.colpito = true;
+    log(`<p class="colpo">${dif.nome}: ${dif.pg ? "Ki" : "Riserva"} ${dif.vita + netto} → ${Math.max(dif.vita,0)}${dif.vita<=0 ? (dif.pg ? " — <b>MORTO</b>" : " — <b>fuori combattimento</b>") : ""}. ${dif.vita>0 && !dif.agito ? "La sua azione, se non ancora fatta, è <b>persa</b>." : ""}</p>`);
+  }
+}
+
+async function risolviScambio(comb, log, chiediConversione) {
+  comb.forEach(c => { c.difesaUsata = false; c.colpito = false; c.agito = false; c.convertito = false; });
+  const vivi = comb.filter(c => c.vita > 0);
+  // iniziativa
+  log(`<h3>Scambio ${window.NSCAMBIO} — iniziativa</h3>`);
+  vivi.forEach(c => {
+    c.ini = tiraIniziativa(c);
+    const az = {attacco:"attacca "+(c.dich.bersaglio||""), difesa:"si difende"+(c.dich.spendiKi?" (brucia 1 Ki)":""), fermo:"resta in guardia"}[c.dich.azione];
+    log(`<p>${c.nome} (${az}${c.dich.mira?`, tempo +${c.dich.mira}`:``}): dadi ${c.ini.dadi[0]}+${c.ini.dadi[1]} ${c.ini.mod>=0?"+":""}${c.ini.mod} Presenza + ${c.ini.vel} arma${c.ini.mira?` + ${c.ini.mira} tempo (Ma)`:``} = <b>${c.ini.tot}</b></p>`);
+  });
+  // ordine: basso prima; parità = stesso gruppo (simultanei)
+  const ordine = [...vivi].sort((x,y) => x.ini.tot - y.ini.tot);
+  log(`<h3>Risoluzione</h3>`);
+  let i = 0;
+  while (i < ordine.length) {
+    const gruppo = ordine.filter(c => c.ini.tot === ordine[i].ini.tot);
+    if (gruppo.length > 1) log(`<p class="nota">Iniziativa ${ordine[i].ini.tot} in parità: azioni simultanee.</p>`);
+    // nel gruppo simultaneo tutti agiscono anche se colpiti da membri dello stesso gruppo
+    const pronti = gruppo.filter(c => c.vita > 0 && !(c.colpito && !c.agito) );
+    for (const c of gruppo) {
+      if (c.vita <= 0) { log(`<p class="mini">${c.nome} è già a terra: nessuna azione.</p>`); continue; }
+      if (c.colpito) { log(`<p>${c.nome} è stato colpito prima di agire: <b>azione persa</b>.</p>`); continue; }
+      if (c.convertito) { log(`<p>${c.nome} ha convertito la sua azione in difesa: <b>non agisce</b>.</p>`); continue; }
+      c.agito = true;
+      if (c.dich.azione === "attacco") {
+        const bers = comb.find(x => x.id === c.dich.bersaglioId);
+        if (!bers || bers.vita <= 0) { log(`<p class="mini">${c.nome}: il bersaglio è già a terra — trattiene il colpo.</p>`); }
+        else await risolviAttacco(c, bers, log, chiediConversione);
+      } else if (c.dich.azione === "difesa") {
+        log(`<p class="mini">${c.nome} è in difesa: nessun attacco da parte sua.</p>`);
+      }
+    }
+    i += gruppo.length;
+  }
+  log(`<h3>Fine scambio — lo stato</h3>`);
+  comb.forEach(c => log(`<p>${c.nome}: ${c.pg?"Ki":"Riserva"} <b>${Math.max(c.vita,0)}</b>${c.vita<=0 ? (c.pg?" ☠ morto":" ✚ fuori combattimento"):""}</p>`));
+}
+/* ══════════ fine motore ══════════ */
+
+const ATTRN = ["Distacco","Pazienza","Silenzio","Lucidità","Ascolto","Presenza"];
+const COMB = [
+  { id:"pg",   pg:true,  nome:"PG",    attr:{Distacco:7,Pazienza:6,Silenzio:4,Lucidità:7,Ascolto:5,Presenza:6}, vita:10, arma:"pistola", assorbe:0, copertura:0, attivo:true },
+  { id:"png1", pg:false, nome:"PNG 1", attr:{Distacco:6,Pazienza:5,Silenzio:7,Lucidità:5,Ascolto:4,Presenza:7}, vita:6,  arma:"pistola", assorbe:0, copertura:0, attivo:true },
+  { id:"png2", pg:false, nome:"PNG 2", attr:{Distacco:5,Pazienza:5,Silenzio:5,Lucidità:5,Ascolto:5,Presenza:5}, vita:3,  arma:"keibo",   assorbe:0, copertura:0, attivo:false },
+];
+window.NSCAMBIO = 1;
+const logEl = document.getElementById("log");
+const scrivi = html => { logEl.insertAdjacentHTML("beforeend", html); logEl.scrollTop = logEl.scrollHeight; };
+
+function cardCombattente(c) {
+  const png2off = (c.id==="png2" && !c.attivo) ? " png-off" : "";
+  return `
+  <div class="card${png2off}" id="card-${c.id}">
+    <h2>${c.pg?"🕵":"🥷"} ${c.nome}
+      ${c.id==="png2" ? `<label class="mini"><input type="checkbox" data-c="png2" data-k="attivo" ${c.attivo?"checked":""}> in scena</label>` : ""}
+      <span class="vita${c.vita<=0?" morto":""}" id="vita-${c.id}">${c.pg?"気":"R"} ${Math.max(c.vita,0)}</span>
+    </h2>
+    <div class="attr">
+      ${ATTRN.map(a=>`<label>${a.slice(0,4)}. <input type="number" min="4" max="10" value="${c.attr[a]}" data-c="${c.id}" data-attr="${a}"></label>`).join("")}
+    </div>
+    <div class="riga">
+      <label>Arma <select data-c="${c.id}" data-k="arma">${Object.entries(ARMI).map(([k,v])=>`<option value="${k}"${c.arma===k?" selected":""}>${v.nome} (d${v.danno})</option>`).join("")}</select></label>
+      <label>${c.pg?"Ki":"Riserva"} <input type="number" min="1" max="12" value="${c.vita}" data-c="${c.id}" data-k="vita"></label>
+      <label>Assorb. <input type="number" min="0" max="5" value="${c.assorbe}" data-c="${c.id}" data-k="assorbe"></label>
+      <label>Copert. <input type="number" min="0" max="5" value="${c.copertura}" data-c="${c.id}" data-k="copertura"></label>
+    </div>
+    <div class="azioni" id="az-${c.id}"></div>
+  </div>`;
+}
+
+function pannelloAzioni(c) {
+  const el = document.getElementById("az-"+c.id);
+  if (!el) return;
+  if (c.vita <= 0) { el.innerHTML = `<span class="mini">${c.pg?"Morto.":"Fuori combattimento."}</span>`; return; }
+  if (c.id==="png2" && !c.attivo) { el.innerHTML = `<span class="mini">Non in scena.</span>`; return; }
+  const bersagli = COMB.filter(x => x.id !== c.id && x.vita > 0 && (x.id!=="png2" || x.attivo) && (c.pg ? !x.pg : x.pg));
+  if (c.pg) {
+    el.innerHTML = `
+      <b>Azione dello scambio</b>
+      <label><input type="radio" name="az-pg" value="attacco" checked> Attacca
+        <select id="pg-bersaglio">${bersagli.map(b=>`<option value="${b.id}">${b.nome}</option>`).join("")}</select>
+        · tempo (Ma 間) <select id="pg-mira"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option></select></label>
+      <label><input type="radio" name="az-pg" value="difesa"> Difenditi
+        <label class="mini"><input type="checkbox" id="pg-ki" ${c.vita<2?"disabled":""}> brucia 1 Ki (−2)${c.vita<2?" — serve Ki ≥ 2":""}</label></label>`;
+  } else {
+    el.innerHTML = `<b>Azione</b>
+      <label><input type="radio" name="az-${c.id}" value="auto" checked> Automatica <span class="mini">(attacca; sotto metà vita si difende al 50%)</span></label>
+      <label><input type="radio" name="az-${c.id}" value="attacco"> Attacca il PG</label>
+      <label><input type="radio" name="az-${c.id}" value="difesa"> Difenditi</label>`;
+  }
+}
+
+function render() {
+  document.getElementById("setup").innerHTML = COMB.map(cardCombattente).join("");
+  COMB.forEach(pannelloAzioni);
+  document.getElementById("setup").addEventListener("input", e => {
+    const el = e.target, c = COMB.find(x => x.id === el.dataset.c);
+    if (!c) return;
+    if (el.dataset.attr) c.attr[el.dataset.attr] = parseInt(el.value||4);
+    else if (el.dataset.k === "attivo") { c.attivo = el.checked; render(); }
+    else if (el.dataset.k === "arma") c.arma = el.value;
+    else if (el.dataset.k) c[el.dataset.k] = parseInt(el.value||0);
+  });
+}
+
+function leggiDichiarazioni() {
+  for (const c of COMB) {
+    c.dich = { azione:"fermo", mira:0 };
+    if (c.vita <= 0 || (c.id==="png2" && !c.attivo)) continue;
+    if (c.pg) {
+      const az = document.querySelector('input[name="az-pg"]:checked').value;
+      if (az === "attacco") {
+        const bid = document.getElementById("pg-bersaglio").value;
+        c.dich = { azione:"attacco", bersaglioId:bid, bersaglio:COMB.find(x=>x.id===bid).nome, mira:parseInt(document.getElementById("pg-mira").value) };
+      } else c.dich = { azione:"difesa", spendiKi:document.getElementById("pg-ki").checked, mira:0 };
+    } else {
+      const az = document.querySelector(`input[name="az-${c.id}"]:checked`).value;
+      let scelta = az;
+      if (az === "auto") scelta = (c.vita <= Math.ceil(c.vitaMax/2) && Math.random() < .5) ? "difesa" : "attacco";
+      c.dich = scelta === "attacco" ? { azione:"attacco", bersaglioId:"pg", bersaglio:"PG", mira:0 } : { azione:"difesa", mira:0 };
+    }
+  }
+}
+
+function aggiornaVite() {
+  COMB.forEach(c => {
+    const v = document.getElementById("vita-"+c.id);
+    if (v) { v.textContent = (c.pg?"気 ":"R ") + Math.max(c.vita,0); v.classList.toggle("morto", c.vita<=0); }
+    pannelloAzioni(c);
+  });
+  const pgMorto = COMB[0].vita <= 0;
+  const pngVivi = COMB.slice(1).filter(c => c.attivo !== false && (c.id!=="png2" || c.attivo)).some(c => c.vita > 0);
+  const fine = document.getElementById("fine");
+  if (pgMorto) { fine.textContent = "☠ Il PG è morto."; fine.className = "esito-fine perso"; document.getElementById("risolvi").disabled = true; }
+  else if (!pngVivi) { fine.textContent = "✓ Avversari a terra: scontro finito."; fine.className = "esito-fine vinto"; document.getElementById("risolvi").disabled = true; }
+}
+
+window.chiediConversioneUI = function(dif, att) {
+  if (!dif.pg) {
+    // PNG: automatica — converte al 50% (e se può, 1 volta su 3 brucia anche il punto)
+    if (Math.random() < .5) return Promise.resolve((dif.vita >= 2 && Math.random() < .33) ? "ki" : "si");
+    return Promise.resolve("no");
+  }
+  return new Promise(risolvi => {
+    const box = document.createElement("div");
+    box.style.cssText = "border:2px solid #b08d2f;border-radius:8px;padding:.6rem .8rem;margin:.4rem 0;background:#fbf4e2";
+    const b3 = dif.vita >= 2 ? '<button class="btn" data-s="ki">Converto e brucio 1 Ki (−2)</button>' : '';
+    box.innerHTML = '<b>' + att.nome + ' ti attacca e non hai ancora agito.</b> Converti la tua azione in difesa? ' +
+      '<button class="btn" data-s="no">Tengo la mia azione</button> ' +
+      '<button class="btn" data-s="si">Converto in difesa</button> ' + b3;
+    logEl.appendChild(box); logEl.scrollTop = logEl.scrollHeight;
+    box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+      box.remove();
+      const nomi = { no: "tiene la sua azione", si: "converte in difesa", ki: "converte in difesa bruciando 1 Ki" };
+      scrivi('<p class="mini">Scelta del PG: ' + nomi[b.dataset.s] + '.</p>');
+      risolvi(b.dataset.s);
+    }));
+  });
+};
+
+document.getElementById("risolvi").addEventListener("click", async () => {
+  const btn = document.getElementById("risolvi");
+  btn.disabled = true;
+  COMB.forEach(c => { if (c.vitaMax === undefined) c.vitaMax = c.vita; });
+  leggiDichiarazioni();
+  const inScena = COMB.filter(c => c.attivo !== false && (c.id!=="png2" || c.attivo));
+  await risolviScambio(inScena, scrivi, window.chiediConversioneUI);
+  window.NSCAMBIO++;
+  btn.disabled = false;
+  aggiornaVite();
+});
+document.getElementById("reset").addEventListener("click", () => location.reload());
+render();
+</script>
+</div></body>
+</html>
