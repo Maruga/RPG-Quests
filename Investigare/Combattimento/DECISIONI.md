@@ -47,6 +47,8 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
 
 ## APERTI (non decisi — non inventare)
 
+- ⚠ **RINOMINARE «Prendere il tempo» (Ma 間)** — all'utente il nome non piace («non ha senso in un combattimento, spezza», 2026-09-04): trovare un nome migliore insieme. La meccanica resta.
+
 - **Specializzazioni che cambiano il profilo di difesa** (idea utente: «uno può scegliere altri profili
   per difendersi» — si vedrà poi).
 - Stallo tra due che si difendono entrambi (regola anti-attrito o discrezione GM?).
