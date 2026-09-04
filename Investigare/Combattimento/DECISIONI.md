@@ -37,6 +37,10 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   la tua azione in difesa (tiro di difesa, anche con Ki dichiarato prima) — ma l'azione è spesa.
   Chi ha GIÀ agito non converte: solo assorbimento e copertura. Vale contro UN attacco.
   Numeri: convertire sempre alza la sopravvivenza ~87%→90% (paga ma costa l'azione — bilanciata).
+  **TIMING (2026-09-04): ALLA CIECA** — si decide PRIMA che l'attaccante tiri (sai che il colpo
+  arriva, non quanto è preciso). Vedere il tiro e poi decidere = scartato («irreale, è come sapere
+  quanto mi farà male il colpo»). Se rifiuti e arriva un altro attacco, la scelta si ripropone.
+  ⚠ Anche «conversione» è un nome DA CAMBIARE (proposta in valutazione: Ukemi 受け身).
 - **«PRENDERE IL TEMPO» (Ma 間)** = il +X iniziativa ↔ −X attacco nello stesso scambio (max 3).
   NON chiamarlo «mira»: MIRARE resta la manovra-azione della v2 (sistemata in v3: azione intera,
   −1/scambio max −2, fermi, poi spari a velocità 0).

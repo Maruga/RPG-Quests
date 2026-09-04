@@ -67,9 +67,12 @@ con l'opzione di **bruciare Ki**.
 
 ### La conversione — l'azione che diventa difesa
 
-**Se vieni attaccato PRIMA di aver agito**, puoi **convertire la tua azione in difesa**: tiri la
-difesa contro quell'attacco (puoi anche bruciare 1 Ki, dichiarandolo prima di tirare) — ma **la
-tua azione è spesa**: in questo scambio non farai più nulla. Il tuo colpo sfuma per salvarti la pelle.
+**Se stai per essere attaccato PRIMA di aver agito**, puoi **convertire la tua azione in difesa** —
+e la scelta si fa **ALLA CIECA**: decidi **prima che l'attaccante tiri**, quando sai solo che il
+colpo arriva, non quanto sarà preciso (decisione utente 2026-09-04). Se converti, tiri la difesa
+contro quell'attacco (puoi anche bruciare 1 Ki, dichiarandolo insieme) — ma **la tua azione è
+spesa**: in questo scambio non farai più nulla. Il tuo colpo sfuma per salvarti la pelle.
+Se rifiuti e prima del tuo turno arriva un altro attacco, la scelta si ripropone.
 
 **Chi ha già agito non converte**: se hai vinto l'iniziativa e hai già attaccato (o fatto altro),
 contro i colpi che arrivano dopo hai solo assorbimento e copertura. **Prima agisci, prima ti scopri.**

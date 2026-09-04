@@ -92,6 +92,18 @@ function tiraIniziativa(c) {
 
 async function risolviAttacco(att, dif, log, chiediConversione) {
   const arma = ARMI[att.arma];
+  // ALLA CIECA (decisione utente 2026-09-04): la conversione si decide PRIMA del tiro d'attacco
+  if (dif.dich.azione !== "difesa" && !dif.agito && !dif.convertito && dif.vita > 0) {
+    log(`<p class="mini">${att.nome} sta per attaccare ${dif.nome}, che non ha ancora agito…</p>`);
+    const scelta = await chiediConversione(dif, att);   // "no" | "si" | "ki"
+    if (scelta === "si" || scelta === "ki") {
+      dif.convertito = true;
+      dif.dich = { azione: "difesa", spendiKi: scelta === "ki", convertita: true };
+      log(`<p class="nota">${dif.nome} converte la sua azione in difesa${scelta === "ki" ? " (bruciando 1 Ki)" : ""} — alla cieca: il suo colpo sfuma per salvarsi la pelle.</p>`);
+    } else {
+      log(`<p class="mini">${dif.nome} tiene la sua azione: prende il rischio.</p>`);
+    }
+  }
   const a = d6(), b = d6(), somma = a+b;
   const mira = att.dich.mira || 0;
   const tiro = Math.max(2, somma - mira);
@@ -111,17 +123,6 @@ async function risolviAttacco(att, dif, log, chiediConversione) {
   const inArrivo = scarto + arma.danno + extra;
   log(`<p class="colpo">Colpito: scarto ${scarto} + danno arma ${arma.danno}${extra?` + critico ${extra}`:``} = ${inArrivo} in arrivo.</p>`);
 
-  // conversione: attaccato PRIMA di agire, senza difesa dichiarata -> può convertire l'azione
-  if (dif.dich.azione !== "difesa" && !dif.agito && !dif.convertito && dif.vita > 0) {
-    const scelta = await chiediConversione(dif, att);   // "no" | "si" | "ki"
-    if (scelta === "si" || scelta === "ki") {
-      dif.convertito = true;
-      dif.dich = { azione: "difesa", spendiKi: scelta === "ki", convertita: true };
-      log(`<p class="nota">${dif.nome} CONVERTE la sua azione in difesa${scelta === "ki" ? " (bruciando 1 Ki)" : ""}: si salva la pelle, ma il suo colpo sfuma.</p>`);
-    } else {
-      log(`<p class="mini">${dif.nome} tiene la sua azione: incassa con solo assorbimento e copertura.</p>`);
-    }
-  }
   // difesa: tiro SOLO se il bersaglio è in difesa (dichiarata o convertita) e non l'ha già spesa
   let parata = 0;
   if (dif.dich.azione === "difesa" && !dif.difesaUsata) {
