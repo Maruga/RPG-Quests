@@ -1,5 +1,5 @@
 # GENKAI 限界 — Lo Scontro
-## Shōtotsu 衝突 — *manuale opzionale · **v3.0 BOZZA 3** (sistema ad azioni)*
+## Shōtotsu 衝突 — *manuale opzionale · **v3.0 BOZZA 2** (sistema ad azioni)*
 
 > **Versione in lavorazione** (2026-09-04) — ridisegno sulle decisioni dell'utente (`DECISIONI.md`,
 > `Simulazione.xlsx`). La v2.1 resta il riferimento: tutto ciò che conteneva è qui, sistemato sulle
@@ -148,29 +148,27 @@ imprevisto. Tira **1d6** sulla colonna della tua azione (**1 blando → 6 disast
 
 ## Le Armi
 
-**La logica della difesa** *(generalizza le 3 scelte dell'utente — [da validare])*:
-**armi da fuoco → Distacco** (ti defili dalla linea di tiro) · **lame corte e mani → Pazienza**
-(aspetti e scarti) · **armi lunghe da botta e taglio → Ascolto** (leggi l'arco del colpo).
+**Convertite alla v3** *(da `Simulazione.xlsx`)*:
 
-| Arma | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno | Note |
-|---|---|---|---|---|---|---|---|
-| **Revolver d'ordinanza** (New Nambu) | Lucidità | Distacco | 4 | 2 | 5 | **4** | la «Pistola» base (decisa) |
-| **Automatica 9mm** ° | Lucidità | Distacco | 3 | 2 | 4 | **4** | criminali/yakuza — valori dalla pistola v2 |
-| **Compatta .22/.25** ° | Lucidità | Distacco | 2 | 1 | 4 | **3** | tascabile, da teppisti |
-| **Fucile** (pompa / caccia) | Distacco | Distacco | 4 | 2 | 5 | **4** | valori v2 |
-| **Fucile di precisione** | Pazienza | Distacco | 5 | 3 | 5 | **5** | richiede Senmon; a lontano nessun malus |
-| **Mitraglietta** ° *(raffica)* | Lucidità | Distacco | 4 | 2 | 5 | **4** | soppressione su Presenza |
-| **Keibō** (manganello) | Silenzio | Ascolto | 2 | 2 | — | **2** | decisa |
-| **Mazza / spranga** ° | Silenzio | Ascolto | 2 | 2 | — | **3** | mazza da baseball dei bōsōzoku |
-| **Katana / spada** ° | Pazienza | Ascolto | 3 | 2 | — | **3** | yakuza d'altri tempi |
-| **Coltello / pugnale** | Pazienza | Pazienza | 2 | 1 | — | **2** | valori v2 |
-| **Lotta** (mani nude) | Presenza | Pazienza | 1 | 1 | — | **1** | decisa — Lotta 1 a tutti |
-| **Improvvisata** (bottiglia, sedia…) | Presenza | Pazienza | 1 | 1 | — | **1–2** | valori v2 |
-| **Granata** | Presenza | Lucidità **[dv]** | 2 | 2 | — | **4** (area) | ognuno può andare in Ukemi |
+| Arma | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno |
+|---|---|---|---|---|---|---|
+| **Pistola** | Lucidità | Distacco | 4 | 2 | 5 | **4** |
+| **Keibō** (manganello) | Silenzio | Ascolto | 2 | 2 | — | **2** |
+| **Lotta** (mani nude) | Presenza | Pazienza | 1 | 1 | — | **1** |
+| **Granata** | Presenza | Lucidità **[da validare]** | 2 | 2 | — | **4** (area) |
 
-*° = arma nuova o attributi proposti in v3, **[da validare]** con l'utente. Le altre riusano i
-valori v2 (velocità v2 fodero/mano/ricarica = Estrarre/Colpire/Ricarica). Il mitragliatore
-pesante (5/3/6 d5, raffica) resta materiale da scena, non da equipaggiamento.*
+**Ancora coi valori v2** *(da convertire — velocità in notazione v2 fodero/mano/ricarica; per la
+difesa, finché non convertite, il GM usa l'attributo sensato)*:
+
+| Arma v2 | Attacco su | Velocità | Danno |
+|---|---|---|---|
+| Pugno *(→ assorbito da Lotta)* | Presenza | 1/1/— | 1 |
+| Improvvisata | — | 1/1/— | 1–2 |
+| Coltello | Pazienza | 2/1/— | 2 |
+| Fucile (pompa/caccia) | Distacco | 4/2/5 | 4 |
+| Mitragliatore leggero *(raffica)* | — | 4/2/5 | 4 |
+| Mitragliatore pesante *(raffica)* | — | 5/3/6 | 5 |
+| Precisione *(richiede Senmon)* | Pazienza | 5/3/5 | 5 |
 
 ## Assorbimento e Copertura *(valori v2 invariati)*
 
@@ -322,7 +320,8 @@ PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
 
 ## Aperti *(vedi `DECISIONI.md` — non decisi, non inventare)*
 
-- Validare le armi ° e la logica della difesa per famiglie (fuoco→Distacco · corto→Pazienza · lungo→Ascolto)
+- Convertire **coltello, fucili, raffica, precisione, improvvisate** alla tabella v3 (attributi
+  di difesa e velocità in colonne Estrarre/Colpire/Ricarica)
 - Costo/malus del **piccolo movimento + attacco** · parità d'iniziativa definitiva
 - **[da validare]**: soglia Opportunità (5+), +3 di chi è sotto soppressione, difesa su Lucidità
   contro la granata, simultaneità a pari iniziativa
@@ -333,4 +332,4 @@ PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
 
 ---
 
-*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · v3.0 BOZZA 3 — 2026-09-05 (armi ampliate, nomi Ukemi/Tame) · versioni in `versioni/`*
+*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · v3.0 BOZZA 2 — 2026-09-04 · versioni in `versioni/`*

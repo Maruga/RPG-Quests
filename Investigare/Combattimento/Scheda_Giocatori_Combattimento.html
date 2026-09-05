@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENKAI — Lo Scontro · scheda del giocatore</title>
+<style>
+:root{ --carta:#f6f3ea; --inchiostro:#1c1a17; --grigio:#6a655c; --rosso:#8b1a1a; --bordo:#cfc7b5; --oro:#b08d2f; }
+*{box-sizing:border-box}
+body{margin:0;background:#e9e5da;color:var(--inchiostro);font-family:Georgia,"Times New Roman",serif;font-size:13.5px;line-height:1.45}
+.foglio{max-width:210mm;margin:0 auto;background:var(--carta);padding:10mm 12mm;box-shadow:0 3px 16px rgba(0,0,0,.15)}
+header{ text-align:center;border-bottom:3px double var(--inchiostro);padding-bottom:6px;margin-bottom:10px }
+header h1{font-size:1.35rem;margin:0;font-weight:700;letter-spacing:.04em}
+header h1 span{color:var(--oro);font-weight:400}
+header .sotto{font-family:Arial,sans-serif;font-size:.72rem;color:var(--grigio);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+.colonne{columns:2;column-gap:8mm}
+section{break-inside:avoid;margin:0 0 9px}
+h2{font-family:Arial,sans-serif;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rosso);border-bottom:2px solid var(--oro);margin:0 0 4px;padding-bottom:2px}
+h2 .kanji{color:var(--oro);font-weight:400}
+p{margin:3px 0}
+ul{margin:3px 0;padding-left:16px}
+li{margin:2px 0}
+table{width:100%;border-collapse:collapse;font-size:11.5px;margin:4px 0;font-family:Arial,sans-serif}
+th,td{border:1px solid var(--bordo);padding:2px 5px;text-align:left;vertical-align:top}
+th{background:rgba(0,0,0,.06);font-size:10px;text-transform:uppercase;letter-spacing:.04em}
+.formula{font-family:Arial,sans-serif;background:#efe9dc;border-left:3px solid var(--oro);padding:4px 8px;margin:4px 0;font-size:12px}
+.box{border:1px solid var(--bordo);border-left:3px solid var(--rosso);background:#fdf9f2;padding:4px 8px;margin:4px 0;font-size:12.5px}
+.box b:first-child{color:var(--rosso)}
+.esempio{border:1px dashed var(--bordo);background:#fffdf6;padding:4px 8px;margin:4px 0;font-size:12px;font-style:italic}
+.esempio b{font-style:normal}
+.mini{font-size:11px;color:var(--grigio)}
+.memo{border:2px solid var(--rosso);border-radius:6px;padding:5px 9px;background:#fdf3f3;font-size:12.5px;margin-top:6px;break-inside:avoid}
+footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var(--grigio);border-top:1px solid var(--bordo);margin-top:10px;padding-top:5px;letter-spacing:.08em}
+@media print{
+  body{background:#fff}
+  .foglio{box-shadow:none;max-width:none;padding:8mm 10mm}
+  @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body><div class="foglio">
+
+<header>
+  <h1>GENKAI 限界 — LO SCONTRO <span>· 衝突</span></h1>
+  <div class="sotto">Scheda del giocatore · sistema ad azioni v3 (bozza) · il combattimento è raro, breve e letale — scappare è spesso la mossa giusta</div>
+</header>
+
+<div class="colonne">
+
+<section>
+<h2>La sequenza dello scambio</h2>
+<ul>
+  <li><b>1 · DICHIARA</b> — la tua azione: <b>Attacca</b> · <b>Muoviti</b> · <b>Difenditi</b> (e l'eventuale <b>Tame</b>, e il Ki in difesa)</li>
+  <li><b>2 · INIZIATIVA</b> — tira <b>2d6 + mod. Presenza + velocità</b> (+ Tame). <b>Il totale più BASSO agisce prima</b></li>
+  <li><b>3 · RISOLVI</b> in ordine. <b>Colpito prima di agire = azione persa</b></li>
+</ul>
+<table>
+<tr><th>Presenza</th><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+<tr><th>Mod.</th><td>+2</td><td>+1</td><td>0</td><td>−1</td><td>−2</td><td>−3</td><td>−4</td></tr>
+</table>
+<p class="mini">Velocità: arma in mano = <b>Colpire</b> · da sfoderare = <b>Estrarre</b> · ricaricando = <b>Ricarica</b>. Azioni: 0 solo il grilletto pronto · 1 buttarsi · 2 un movimento · 3–4 composta · 5–6 operazione.</p>
+</section>
+
+<section>
+<h2>Le tue azioni</h2>
+<p><b>ATTACCA</b> — usi l'arma. Chi spende l'azione attaccando <b>non ha il tiro di difesa</b>: se ti colpiscono dopo, ti riparano solo assorbimento e copertura. <i>Prima agisci, prima ti scopri.</i></p>
+<p><b>MUOVITI</b> — riposizionati, raggiungi una copertura, cambia zona (o piccolo movimento + attacco, a discrezione del GM).</p>
+<p><b>DIFENDITI</b> — ti dedichi a non farti colpire: hai il tiro di difesa.</p>
+</section>
+
+<section>
+<h2>Ukemi <span class="kanji">受け身</span> — l'azione che diventa difesa</h2>
+<div class="box"><b>«Vado in difensiva, in Ukemi.»</b> Stanno per attaccarti e NON hai ancora agito? Puoi convertire la tua azione in difesa — <b>alla cieca, prima che l'attaccante tiri</b>: sai che il colpo arriva, non quanto sarà preciso. Tiri la difesa (puoi anche bruciare 1 Ki) ma <b>la tua azione è spesa</b>. Chi ha già agito NON va in Ukemi. Se rifiuti e arriva un altro attacco, puoi decidere di nuovo.</div>
+</section>
+
+<section>
+<h2>Tame <span class="kanji">溜め</span> — la carica</h2>
+<div class="box"><b>«Trattengo il fiato, in Tame.»</b> Quando dichiari un attacco puoi caricarlo: fino a <b>+3 sull'iniziativa</b> (agisci più tardi) in cambio di <b>−1/−2/−3 al tiro d'attacco</b>. Se ti colpiscono prima, il colpo caricato non parte mai.</div>
+</section>
+
+<section>
+<h2>Attacco e danno</h2>
+<div class="formula">2d6 (− Tame − Senmon ± scena) <b>≤ attributo dell'arma</b> → colpito (<b>pari = colpito</b>)<br>
+<b>Scarto</b> = attributo − tiro &nbsp;·&nbsp; <b>DANNO = scarto + danno arma</b></div>
+<p class="mini"><b>Distanza</b> (armi da fuoco): −1 ravvicinato · 0 normale · +1 lontano · +1 su chi si sta buttando. A contatto sparare è caotico: +1/+2.</p>
+</section>
+
+<section>
+<h2>Difesa</h2>
+<div class="formula">2d6 <b>≤ attributo di difesa dell'ARMA che ti attacca</b> → il tuo scarto si sottrae dal danno</div>
+<ul>
+  <li>Il tiro di difesa vale contro <b>UN solo attacco</b> a scambio</li>
+  <li><b>Assorbimento e copertura valgono sempre</b>, anche senza tiro</li>
+  <li><b>BRUCIA 1 KI</b> (max 1 a scambio): <b>−2 al tiro di difesa</b>. Dichiarato prima di tirare, solo se resti a Ki ≥ 1 dopo la spesa</li>
+</ul>
+<div class="formula"><b>Danno subito</b> = danno attacco − scarto difesa − assorbimento − copertura (min 0)</div>
+</section>
+
+<section>
+<h2>I critici — nei due sensi</h2>
+<p><b>1+1</b> — colpo perfetto: <b>+1d6 danni</b> in attacco · <b>+1d6 parato</b> in difesa.</p>
+<p><b>6+6</b> — solo in attacco/azione: mancato + <b>imprevisto</b> (1d6, il GM mette in scena). In difesa il 12 è solo una difesa fallita.</p>
+<table>
+<tr><th>1d6</th><th>Armi da fuoco</th><th>Corpo a corpo</th></tr>
+<tr><td>1</td><td>Il colpo finisce dove non doveva: rumore</td><td>Colpo a vuoto, plateale</td></tr>
+<tr><td>2</td><td colspan="2">La presa scivola: l'arma conta come da sfoderare</td></tr>
+<tr><td>3</td><td>Ultimo colpo utile: devi ricaricare</td><td>Ti sbilanci: lui guadagna posizione</td></tr>
+<tr><td>4</td><td>L'arma si inceppa (sbloccarla = azione)</td><td>L'arma ti cade (raccoglierla = azione)</td></tr>
+<tr><td>5</td><td>Inceppata male (sblocco a vel. Ricarica)</td><td>La lama si incrina</td></tr>
+<tr><td>6</td><td>Il meccanismo si rompe: non spara più</td><td>L'arma si spezza: resti a mani nude</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Le armi</h2>
+<p class="mini">Difesa per famiglie: <b>fuoco → Distacco</b> (ti defili) · <b>corto e mani → Pazienza</b> (aspetti) · <b>lungo → Ascolto</b> (leggi l'arco). E/C/R = Estrarre / Colpire / Ricarica.</p>
+<table>
+<tr><th>Arma</th><th>Attacco</th><th>Difesa</th><th>E/C/R</th><th>Danno</th></tr>
+<tr><td><b>Revolver d'ordinanza</b></td><td>Lucidità</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
+<tr><td><b>Automatica 9mm</b></td><td>Lucidità</td><td>Distacco</td><td>3/2/4</td><td><b>4</b></td></tr>
+<tr><td><b>Compatta .22/.25</b></td><td>Lucidità</td><td>Distacco</td><td>2/1/4</td><td><b>3</b></td></tr>
+<tr><td><b>Fucile</b> (pompa/caccia)</td><td>Distacco</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
+<tr><td><b>Fucile di precisione</b>*</td><td>Pazienza</td><td>Distacco</td><td>5/3/5</td><td><b>5</b></td></tr>
+<tr><td><b>Mitraglietta</b> (raffica)</td><td>Lucidità</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
+<tr><td><b>Keibō</b> 警棒</td><td>Silenzio</td><td>Ascolto</td><td>2/2/—</td><td><b>2</b></td></tr>
+<tr><td><b>Mazza / spranga</b></td><td>Silenzio</td><td>Ascolto</td><td>2/2/—</td><td><b>3</b></td></tr>
+<tr><td><b>Katana / spada</b></td><td>Pazienza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
+<tr><td><b>Coltello / pugnale</b></td><td>Pazienza</td><td>Pazienza</td><td>2/1/—</td><td><b>2</b></td></tr>
+<tr><td><b>Lotta</b> (mani nude)</td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1</b></td></tr>
+<tr><td><b>Improvvisata</b></td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1–2</b></td></tr>
+<tr><td><b>Granata</b> (area)</td><td>Presenza</td><td>Lucidità</td><td>2/2/—</td><td><b>4</b>+scarto</td></tr>
+</table>
+<p class="mini">* richiede la Senmon <i>Tiro di precisione</i>; a <i>lontano</i> nessun malus di distanza.</p>
+</section>
+
+<section>
+<h2>Protezioni e zone</h2>
+<table>
+<tr><th>Protezione</th><th>Mettersi</th><th>Assorbe</th></tr>
+<tr><td>Giubbotto antiproiettile</td><td>4</td><td><b>3</b></td></tr>
+<tr><td>Tavolo ribaltato</td><td>2</td><td><b>1</b></td></tr>
+<tr><td>Muro, pilastro</td><td>—</td><td><b>5</b> (GM 1–5)</td></tr>
+</table>
+<p class="mini"><b>Zone</b>: contatto · vicino · lontano — muoversi di una fascia è un'azione. Scappare = raggiungere <i>lontano</i> e uscire di scena.</p>
+</section>
+
+<section>
+<h2>Manovre in breve</h2>
+<ul>
+  <li><b>MIRARE</b> (azione): non attacchi, prendi la linea. Dallo scambio dopo <b>−1</b> (max −2). Fermi: se ti muovi, vai in Ukemi o prendi danno, persa. Poi spari a velocità 0</li>
+  <li><b>SOTTO TIRO</b>: arma già puntata = velocità 0. Decade se prendi danno o perdi la linea</li>
+  <li><b>PREPARARSI</b>: rinunci all'azione → −1 al prossimo tiro (non cumula)</li>
+  <li><b>STRINGERE I DENTI</b>: danno 1-2 → paghi 1 punto dell'attributo in uso e agisci comunque (a 4 non si può; danno 3+ ferma chiunque)</li>
+  <li><b>COLPI MULTIPLI</b>: 2-3 colpi, un tiro solo; ogni colpo dopo il primo ritarda di +velocità; malus +2/+3 che cala di 1 a colpo</li>
+</ul>
+</section>
+
+<section>
+<h2>Esempi veri (dal playtest)</h2>
+<div class="esempio"><b>Attacco.</b> Lucidità 7, dadi 3+1 = 4 → colpito: scarto 3 + pistola 4 = <b>7 danni in arrivo</b>. Il bersaglio aveva attaccato anche lui (niente difesa): 7 pieni, meno l'eventuale giubbotto.</div>
+<div class="esempio"><b>Tame.</b> «Trattengo il fiato, in Tame +2»: iniziativa 2d6 −1 (Presenza 7) +2 (pistola) <b>+2 = agisci tardi</b> — ma tiri l'attacco a −2: con Lucidità 5 colpisci fino al 7. Rischio: se ti colpiscono prima, il colpo caricato muore lì.</div>
+<div class="esempio"><b>Ukemi.</b> Hai dichiarato l'attacco ma lui esce prima: «Vado in Ukemi» — <i>prima</i> che tiri. Difesa su Distacco 7 contro la sua pistola, magari bruciando 1 Ki (−2). Il tuo colpo sfuma: sei vivo.</div>
+</section>
+
+<div class="memo">
+<b>Da non dimenticare:</b> il danno non ha pavimento — <b>a Ki 0 sei morto</b>. Il Genkai è sospeso: si valuta a fine scontro (Ki ≤ 3 = crolli lì). Niente Nami/Kiwami e <b>niente soroban</b>: in combattimento parlano solo l'1+1, il 6+6 e il danno. E ricorda: chiamare rinforzi o andarsene è quasi sempre la giocata migliore.
+</div>
+
+</div>
+
+<footer>GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · scheda del giocatore · v3 bozza · le regole complete sono nel manuale</footer>
+</div></body>
+</html>

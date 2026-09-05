@@ -49,6 +49,19 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   Senmon, dopo-scontro, conseguenze, riepilogo). Restano marcate [da validare] le trasposizioni:
   soglia Opportunità (5+), +3 sotto soppressione, granata difesa su Lucidità, parità=simultanei.
 
+- **Armi ampliate (2026-09-05, [da validare])**: tabella completa nel manuale bozza 3 e nella
+  Scheda Giocatori. Logica difese per famiglie (generalizza le 3 decise): fuoco→Distacco ·
+  corto/mani→Pazienza · lungo→Ascolto. Nuove °: Automatica 9mm (3/2/4 d4), Compatta (2/1/4 d3),
+  Mitraglietta (4/2/5 d4), Mazza (2/2 d3), Katana (3/2 d3). Riusate v2: fucile, precisione,
+  coltello, improvvisata. Revolver d'ordinanza = la Pistola base decisa.
+- **`Scheda_Giocatori_Combattimento.html`** (2026-09-05): riferimento da tavolo per i giocatori,
+  2 pagine A4 stampabili — sequenza, Ukemi/Tame, formule, critici, 13 armi, esempi dal playtest.
+  Derivata dal manuale: se il manuale cambia, aggiornarla.
+- **PROSSIMI LAVORI (richiesti dall'utente 2026-09-05)**: 1) RIFARE il simulatore in chiave
+  INTERATTIVA — quello attuale «non ha nulla di interattivo» per l'utente: serve un'esperienza
+  giocata (narrazione, scelte, dadi in scena), non un pannello tecnico; 2) inserire il
+  combattimento così ottenuto nella MINI-AVVENTURA del sito (sito_genkai/provalo/).
+
 ## APERTI (non decisi — non inventare)
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
