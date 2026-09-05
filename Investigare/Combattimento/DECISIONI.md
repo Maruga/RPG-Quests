@@ -78,6 +78,15 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   ⚠ TODO WIZARD: il wizard casi genera «Riserva 3/6/9» nelle statistiche PNG → rinominare in Ki
   (UI + prompt + export); anche il dossier Bakuon la usa. Da fare in sessione wizard.
 
+- **DAL PLAYTEST DELLA SCENA (utente, 2026-09-05 sera) — da portare nel manuale a scena validata**:
+  1) **L'azione «Difendersi» dichiarata NON ESISTE PIÙ** («non ha senso: può convertire dopo») —
+  la difesa È l'Ukemi (reattivo, alla cieca, con l'opzione 1 Ki −2 dentro l'Ukemi). Azioni:
+  Attaccare · Muoversi · Minacciare. 2) **Nuova azione MINACCIARE** (design utente): tiro su
+  Presenza; se riesce l'avversario è intimidito → **+2 alla sua iniziativa al prossimo scambio**.
+  3) Il Tame si racconta «trattengo il fiato» (mai «carico il colpo»). 4) Nelle demo i PNG hanno
+  Ki ≥ 5 (un Ki 3 «è già in zona Genkai», stona). 5) UI: mai dire «alla cieca» come commento;
+  il bottone scelto resta evidenziato (✓ oro) e gli altri sbiadiscono.
+
 ## APERTI (non decisi — non inventare)
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
