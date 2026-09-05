@@ -44,7 +44,7 @@ h1{font-size:1.3rem;font-weight:600;margin:.2rem 0 0} h1 small{color:var(--oro);
 </head>
 <body><div class="dentro">
 <h1>GENKAI — Simulatore di scontro <small>· regole v3 bozza</small></h1>
-<p class="sotto">Un PG contro uno o due PNG. Motore v3: iniziativa 2d6 + mod. Presenza + velocità (+ il tempo preso, basso agisce prima) · <b>attaccato prima di agire? puoi CONVERTIRE l'azione in difesa</b> (il simulatore te lo chiede) · chi ha già agito non si difende · colpito = azione persa · attacco ≤ attributo (pari colpisce), danno = scarto + arma · difesa per-arma, 1 Ki → −2 · critici nei due sensi: 1+1 (+1d6 danno / +1d6 parato) e 6+6 (mancato + tabella imprevisti; in difesa solo fallita). Non nel motore: zone/distanza, movimenti, Mirare-azione, Stringere i Denti, armi in fondina (tutte «in mano»). Parità = simultanei.</p>
+<p class="sotto">Un PG contro uno o due PNG. Motore v3: iniziativa 2d6 + mod. Presenza + velocità (+ il Tame, basso agisce prima) · <b>attaccato prima di agire? puoi andare in UKEMI 受け身</b> (l'azione diventa difesa — il simulatore te lo chiede, alla cieca) · chi ha già agito non si difende · colpito = azione persa · attacco ≤ attributo (pari colpisce), danno = scarto + arma · difesa per-arma, 1 Ki → −2 · critici nei due sensi: 1+1 (+1d6 danno / +1d6 parato) e 6+6 (mancato + tabella imprevisti; in difesa solo fallita). Non nel motore: zone/distanza, movimenti, Mirare-azione, Stringere i Denti, armi in fondina (tutte «in mano»). Parità = simultanei.</p>
 
 <div class="griglia" id="setup"></div>
 
@@ -99,7 +99,7 @@ async function risolviAttacco(att, dif, log, chiediConversione) {
     if (scelta === "si" || scelta === "ki") {
       dif.convertito = true;
       dif.dich = { azione: "difesa", spendiKi: scelta === "ki", convertita: true };
-      log(`<p class="nota">${dif.nome} converte la sua azione in difesa${scelta === "ki" ? " (bruciando 1 Ki)" : ""} — alla cieca: il suo colpo sfuma per salvarsi la pelle.</p>`);
+      log(`<p class="nota">${dif.nome} va in UKEMI${scelta === "ki" ? " bruciando 1 Ki" : ""} — alla cieca: il suo colpo sfuma per salvarsi la pelle.</p>`);
     } else {
       log(`<p class="mini">${dif.nome} tiene la sua azione: prende il rischio.</p>`);
     }
@@ -109,7 +109,7 @@ async function risolviAttacco(att, dif, log, chiediConversione) {
   const tiro = Math.max(2, somma - mira);
   const attrVal = att.attr[arma.attacco];
   log(`<p>${att.nome} attacca ${dif.nome} con ${arma.nome} su ${arma.attacco} ${attrVal}: ` +
-      `<span class="tiro">dadi ${a}+${b}=${somma}${mira?` − tempo ${mira} = ${tiro}`:``}</span></p>`);
+      `<span class="tiro">dadi ${a}+${b}=${somma}${mira?` − Tame ${mira} = ${tiro}`:``}</span></p>`);
   if (a===6 && b===6) {
     const imp = d6();
     const colonna = att.arma === "pistola" ? "fuoco" : "mischia";
@@ -165,7 +165,7 @@ async function risolviScambio(comb, log, chiediConversione) {
   vivi.forEach(c => {
     c.ini = tiraIniziativa(c);
     const az = {attacco:"attacca "+(c.dich.bersaglio||""), difesa:"si difende"+(c.dich.spendiKi?" (brucia 1 Ki)":""), fermo:"resta in guardia"}[c.dich.azione];
-    log(`<p>${c.nome} (${az}${c.dich.mira?`, tempo +${c.dich.mira}`:``}): dadi ${c.ini.dadi[0]}+${c.ini.dadi[1]} ${c.ini.mod>=0?"+":""}${c.ini.mod} Presenza + ${c.ini.vel} arma${c.ini.mira?` + ${c.ini.mira} tempo (Ma)`:``} = <b>${c.ini.tot}</b></p>`);
+    log(`<p>${c.nome} (${az}${c.dich.mira?`, Tame +${c.dich.mira}`:``}): dadi ${c.ini.dadi[0]}+${c.ini.dadi[1]} ${c.ini.mod>=0?"+":""}${c.ini.mod} Presenza + ${c.ini.vel} arma${c.ini.mira?` + ${c.ini.mira} Tame`:``} = <b>${c.ini.tot}</b></p>`);
   });
   // ordine: basso prima; parità = stesso gruppo (simultanei)
   const ordine = [...vivi].sort((x,y) => x.ini.tot - y.ini.tot);
@@ -179,7 +179,7 @@ async function risolviScambio(comb, log, chiediConversione) {
     for (const c of gruppo) {
       if (c.vita <= 0) { log(`<p class="mini">${c.nome} è già a terra: nessuna azione.</p>`); continue; }
       if (c.colpito) { log(`<p>${c.nome} è stato colpito prima di agire: <b>azione persa</b>.</p>`); continue; }
-      if (c.convertito) { log(`<p>${c.nome} ha convertito la sua azione in difesa: <b>non agisce</b>.</p>`); continue; }
+      if (c.convertito) { log(`<p>${c.nome} è in Ukemi: la sua azione è spesa, <b>non agisce</b>.</p>`); continue; }
       c.agito = true;
       if (c.dich.azione === "attacco") {
         const bers = comb.find(x => x.id === c.dich.bersaglioId);
@@ -238,7 +238,7 @@ function pannelloAzioni(c) {
       <b>Azione dello scambio</b>
       <label><input type="radio" name="az-pg" value="attacco" checked> Attacca
         <select id="pg-bersaglio">${bersagli.map(b=>`<option value="${b.id}">${b.nome}</option>`).join("")}</select>
-        · tempo (Ma 間) <select id="pg-mira"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option></select></label>
+        · Tame 溜め <select id="pg-mira"><option value="0">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option></select></label>
       <label><input type="radio" name="az-pg" value="difesa"> Difenditi
         <label class="mini"><input type="checkbox" id="pg-ki" ${c.vita<2?"disabled":""}> brucia 1 Ki (−2)${c.vita<2?" — serve Ki ≥ 2":""}</label></label>`;
   } else {
@@ -303,14 +303,14 @@ window.chiediConversioneUI = function(dif, att) {
   return new Promise(risolvi => {
     const box = document.createElement("div");
     box.style.cssText = "border:2px solid #b08d2f;border-radius:8px;padding:.6rem .8rem;margin:.4rem 0;background:#fbf4e2";
-    const b3 = dif.vita >= 2 ? '<button class="btn" data-s="ki">Converto e brucio 1 Ki (−2)</button>' : '';
-    box.innerHTML = '<b>' + att.nome + ' ti attacca e non hai ancora agito.</b> Converti la tua azione in difesa? ' +
+    const b3 = dif.vita >= 2 ? '<button class="btn" data-s="ki">Ukemi bruciando 1 Ki (−2)</button>' : '';
+    box.innerHTML = '<b>' + att.nome + ' ti attacca e non hai ancora agito.</b> Vai in Ukemi (la tua azione diventa difesa)? ' +
       '<button class="btn" data-s="no">Tengo la mia azione</button> ' +
-      '<button class="btn" data-s="si">Converto in difesa</button> ' + b3;
+      '<button class="btn" data-s="si">Ukemi</button> ' + b3;
     logEl.appendChild(box); logEl.scrollTop = logEl.scrollHeight;
     box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
       box.remove();
-      const nomi = { no: "tiene la sua azione", si: "converte in difesa", ki: "converte in difesa bruciando 1 Ki" };
+      const nomi = { no: "tiene la sua azione", si: "va in Ukemi", ki: "va in Ukemi bruciando 1 Ki" };
       scrivi('<p class="mini">Scelta del PG: ' + nomi[b.dataset.s] + '.</p>');
       risolvi(b.dataset.s);
     }));

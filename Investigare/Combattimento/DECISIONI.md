@@ -33,15 +33,15 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   (colonne armi da fuoco / corpo a corpo / movimento — nel manuale v3); in difesa il 12 è solo
   una difesa fallita, nessun imprevisto.
 
-- **CONVERSIONE IN DIFESA** (2026-09-04): se vieni attaccato PRIMA di aver agito puoi convertire
+- **UKEMI 受け身 — conversione in difesa** (2026-09-04): se vieni attaccato PRIMA di aver agito puoi convertire
   la tua azione in difesa (tiro di difesa, anche con Ki dichiarato prima) — ma l'azione è spesa.
   Chi ha GIÀ agito non converte: solo assorbimento e copertura. Vale contro UN attacco.
   Numeri: convertire sempre alza la sopravvivenza ~87%→90% (paga ma costa l'azione — bilanciata).
   **TIMING (2026-09-04): ALLA CIECA** — si decide PRIMA che l'attaccante tiri (sai che il colpo
   arriva, non quanto è preciso). Vedere il tiro e poi decidere = scartato («irreale, è come sapere
   quanto mi farà male il colpo»). Se rifiuti e arriva un altro attacco, la scelta si ripropone.
-  ⚠ Anche «conversione» è un nome DA CAMBIARE (proposta in valutazione: Ukemi 受け身).
-- **«PRENDERE IL TEMPO» (Ma 間)** = il +X iniziativa ↔ −X attacco nello stesso scambio (max 3).
+  Nome deciso 2026-09-05: **UKEMI 受け身** (vedi sopra).
+- **TAME 溜め** (nome deciso 2026-09-05) = il +X iniziativa ↔ −X attacco nello stesso scambio (max 3).
   NON chiamarlo «mira»: MIRARE resta la manovra-azione della v2 (sistemata in v3: azione intera,
   −1/scambio max −2, fermi, poi spari a velocità 0).
 - **Manuale v3 BOZZA 2 = INTEGRALE**: tutto il contenuto v2 è dentro, sistemato (manovre, sorpresa,
@@ -51,7 +51,7 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
 
 ## APERTI (non decisi — non inventare)
 
-- ⚠ **RINOMINARE «Prendere il tempo» (Ma 間)** — all'utente il nome non piace («non ha senso in un combattimento, spezza», 2026-09-04): trovare un nome migliore insieme. La meccanica resta.
+- ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
 
 - **Specializzazioni che cambiano il profilo di difesa** (idea utente: «uno può scegliere altri profili
   per difendersi» — si vedrà poi).

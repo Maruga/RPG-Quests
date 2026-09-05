@@ -34,9 +34,9 @@ sempre lo stesso: totale ≤ attributo.
 Ogni scambio ha tre tempi:
 
 1. **DICHIARAZIONE** — ognuno dichiara la propria azione: **Attaccare · Muoversi · Difendersi**
-   (più le manovre: Mirare, Prepararsi…), l'eventuale *Prendere il tempo*, l'eventuale Ki in difesa
+   (più le manovre: Mirare, Prepararsi…), l'eventuale *Tame*, l'eventuale Ki in difesa
 2. **INIZIATIVA** — ognuno tira **2d6 + modificatore di Presenza + velocità dell'arma o
-   dell'azione** (+ il tempo preso). **Il totale più basso agisce per primo.** A parità: azioni
+   dell'azione** (+ il Tame dichiarato). **Il totale più basso agisce per primo.** A parità: azioni
    simultanee **[da validare]**
 3. **RISOLUZIONE** in ordine di iniziativa. **Chi viene colpito perde la propria azione** se non
    l'ha ancora fatta (salvo *Stringere i Denti*)
@@ -65,35 +65,36 @@ oppure un piccolo movimento **più** un attacco *(costo del muoversi+attaccare: 
 **DIFENDERSI** — ti dedichi a non farti colpire: hai il **tiro di difesa** (vedi *La Difesa*),
 con l'opzione di **bruciare Ki**.
 
-### La conversione — l'azione che diventa difesa
+### Ukemi 受け身 — l'azione che diventa difesa
 
-**Se stai per essere attaccato PRIMA di aver agito**, puoi **convertire la tua azione in difesa** —
+**Se stai per essere attaccato PRIMA di aver agito**, puoi **andare in Ukemi** — convertire la tua azione in difesa («vado in difensiva, in Ukemi») —
 e la scelta si fa **ALLA CIECA**: decidi **prima che l'attaccante tiri**, quando sai solo che il
-colpo arriva, non quanto sarà preciso (decisione utente 2026-09-04). Se converti, tiri la difesa
+colpo arriva, non quanto sarà preciso (decisione utente 2026-09-04). Se vai in Ukemi, tiri la difesa
 contro quell'attacco (puoi anche bruciare 1 Ki, dichiarandolo insieme) — ma **la tua azione è
 spesa**: in questo scambio non farai più nulla. Il tuo colpo sfuma per salvarti la pelle.
 Se rifiuti e prima del tuo turno arriva un altro attacco, la scelta si ripropone.
 
-**Chi ha già agito non converte**: se hai vinto l'iniziativa e hai già attaccato (o fatto altro),
+**Chi ha già agito non va in Ukemi**: se hai vinto l'iniziativa e hai già attaccato (o fatto altro),
 contro i colpi che arrivano dopo hai solo assorbimento e copertura. **Prima agisci, prima ti scopri.**
 
-*(Anche la difesa da conversione, come quella dichiarata, vale contro **UN** attacco.)*
+*(Anche la difesa in Ukemi, come quella dichiarata, vale contro **UN** attacco.)*
 
 ---
 
-## Prendere il tempo — Ma 間
+## Tame 溜め — la carica
 
-Quando dichiari un attacco puoi **prenderti del tempo per piazzarlo meglio**: fino a **+3** sul
-tiro d'iniziativa, e **lo stesso ammontare in meno** sul tiro d'attacco (1:1, dentro il tetto −4).
+Quando dichiari un attacco puoi **caricarlo** — trattenere il fiato e il colpo (*tame*, la tensione
+prima del rilascio del kendo): fino a **+3** sul tiro d'iniziativa, e **lo stesso ammontare in
+meno** sul tiro d'attacco (1:1, dentro il tetto −4). Al tavolo: «trattengo il fiato, in Tame».
 
-Più tempo prendi, più tardi agisci — e se ti colpiscono prima, il tuo colpo non parte mai. Si
+Più carichi, più tardi agisci — e se ti colpiscono prima, il tuo colpo non parte mai. Si
 bilancia da sola. *(Non è la manovra Mirare: quella è un'azione intera — vedi Manovre.)*
 
 ---
 
 ## L'Attacco
 
-Tira **2d6** (− il tempo preso, − Senmon, ± i modificatori di scena): se il totale è **minore o
+Tira **2d6** (− il Tame dichiarato, − Senmon, ± i modificatori di scena): se il totale è **minore o
 uguale** all'attributo dell'arma, il colpo va a segno — **pari all'attributo è colpito**.
 
 - **Scarto = attributo − tiro** (la precisione del colpo)
@@ -107,8 +108,7 @@ malus. Su un bersaglio che **si sta buttando**: +1, cumulabile *(dalla v2)*.
 
 ## La Difesa
 
-Tira la difesa **solo** chi ha dichiarato Difendersi **o** chi converte la propria azione (vedi
-sopra): **2d6 ≤ attributo di difesa dell'arma che ti attacca** — la pistola si schiva col
+Tira la difesa **solo** chi ha dichiarato Difendersi **o** chi va in Ukemi (vedi sopra): **2d6 ≤ attributo di difesa dell'arma che ti attacca** — la pistola si schiva col
 Distacco, il keibō si legge con l'Ascolto, la lotta si aspetta con la Pazienza.
 
 - **Scarto di difesa = attributo − tiro**: si sottrae dal danno in arrivo
@@ -117,7 +117,7 @@ Distacco, il keibō si legge con l'Ascolto, la lotta si aspetta con la Pazienza.
 - Contro **più attacchi** nello stesso scambio, il tiro di difesa vale contro **UNO solo** (a
   scelta); assorbimento e copertura valgono contro tutti
 
-**BRUCIARE KI IN DIFESA** — chi tira la difesa (dichiarata o convertita) può spendere **1 Ki
+**BRUCIARE KI IN DIFESA** — chi tira la difesa (dichiarata o in Ukemi) può spendere **1 Ki
 (massimo 1 a scambio)** per **−2 al tiro**. Si dichiara **prima di tirare**. Solo **restando a
 Ki ≥ 1 dopo la spesa** (serve Ki 2 o più): a Ki 0 in combattimento si muore — nessuno si uccide
 parando. *Come i Gou: l'energia vitale si paga per intero, prima di sapere se basta.*
@@ -128,7 +128,7 @@ parando. *Come i Gou: l'energia vitale si paga per intero, prima di sapere se ba
 
 **CRITICO — l'1+1** — il colpo è perfetto, il GM definisce il colore:
 - in **attacco**: **+1d6 danni**
-- in **difesa** (dichiarata o convertita): **+1d6 parato**
+- in **difesa** (dichiarata o in Ukemi): **+1d6 parato**
 
 **FALLIMENTO CRITICO — il 6+6** — solo sui tiri d'**attacco o azione attiva**: non hai solo
 mancato, succede un imprevisto. **In difesa** un 12 è soltanto una difesa fallita — nessun
@@ -185,17 +185,17 @@ l'iniziativa decide se arrivi in tempo.
 
 ## Manovre *(dalla v2, sistemate sulla v3)*
 
-**MIRARE** *(pistole e fucili — è un'AZIONE, non «prendere il tempo»)* — dichiari Mirare come
+**MIRARE** *(pistole e fucili — è un'AZIONE, non il Tame)* — dichiari Mirare come
 azione dello scambio: non attacchi, prendi la linea. Dagli scambi successivi hai **−1 alla somma**
 dei tiri con quell'arma; massimo **2 scambi** di mira (−2). **Mirare implica stare fermi**: se ti
-muovi, converti in difesa o subisci danno, la mira è persa. Chi ha mirato ha l'arma **pronta** sul
+muovi, vai in Ukemi o subisci danno, la mira è persa. Chi ha mirato ha l'arma **pronta** sul
 bersaglio: quando spara è a velocità **0** (vedi *Sotto Tiro*).
 
 **SOTTO TIRO (azione pronta)** — l'arma è già in posizione: la pistola spianata (*«Polizia!
 Fermo!»*), il coltello alla gola. Colpire non richiede più tempo: **la tua velocità è 0**
 (iniziativa = 2d6 + mod. Presenza, nient'altro). Lo stato si assume con un'azione (o la scena
 nasce così: l'arresto, l'ostaggio). Regge finché resti fermo sul bersaglio; se **subisci danno** o
-il bersaglio esce dalla linea, va riassunto. Il bersaglio consapevole difende o converte
+il bersaglio esce dalla linea, va riassunto. Il bersaglio consapevole difende o va in Ukemi
 normalmente; se è **ignaro**, non è uno scambio: è un **agguato** (vedi *Sorpresa*).
 
 **PREPARARSI / RITARDARE** — puoi **ritardare la tua azione**: agisci quando vuoi, dopo la tua
@@ -223,7 +223,7 @@ agisce dopo. Agire allo scoperto sotto il fuoco: **+1 alla somma**. Chi è sotto
 decide il GM con la logica (un arco di fuoco, non un quartiere).
 
 **GRANATA** — attacco su **Presenza** contro tutti nell'area (il GM la definisce). Ognuno può
-**convertire la propria azione in difesa** per buttarsi via (difesa su Lucidità); l'Assorbe delle
+**andare in Ukemi** per buttarsi via (difesa su Lucidità); l'Assorbe delle
 coperture vale, e un muro in mezzo ferma quasi tutto. Danno 4 + scarto, a testa.
 
 **FUMOGENO** — un'azione per lanciarlo. Il fumo copre la zona per **2 scambi**: attacchi a
@@ -234,7 +234,7 @@ distanza attraverso il fumo **+3 alla somma**; muoversi coperti dal fumo non esp
 ## Sorpresa e Agguati *(invariata dalla v2)*
 
 Si può essere sorpresi **fallendo un tiro** — Ascolto per il passo dietro l'angolo, o quello che
-la scena chiede: lo decide il GM. **Se il tiro fallisce, non c'è difesa né conversione**:
+la scena chiede: lo decide il GM. **Se il tiro fallisce, non c'è difesa né Ukemi**:
 l'attaccante tira normalmente (scarto + arma) e il bersaglio **prende tutto** — riduce solo
 l'Assorbe fisso. Un cecchino che colpisce è solitamente letale. Se si sopravvive, iniziano gli
 scambi.
@@ -252,7 +252,7 @@ la mossa migliore del combattimento.
 
 ## I PNG nello Scontro *(invariata dalla v2)*
 
-Attaccano, difendono e **convertono** con le stesse regole. Al posto del Ki hanno una **Riserva**:
+Attaccano, difendono e **vanno in Ukemi** con le stesse regole. Al posto del Ki hanno una **Riserva**:
 comparsa **3** · duro **6** · professionista **9**. A 0 sono **fuori combattimento** (l'esito lo
 decide il GM: KO, resa, fuga — la morte di un PNG è una scelta narrativa). I notevoli con scheda
 usano il loro Ki. La pericolosità è già negli attributi e nelle Senmon: il sistema fa il resto.
@@ -288,17 +288,17 @@ SEGNI: ti aiuta = −alla somma | ti ostacola = +alla somma
        niente soroban | GENKAI sospeso: si valuta a fine scontro
        il danno non ha pavimento: Ki a 0 o sotto = MORTO
 
-SCAMBIO: 1) DICHIARI (attacco / movimento / difesa; tempo preso; Ki in difesa)
+SCAMBIO: 1) DICHIARI (attacco / movimento / difesa; Tame; Ki in difesa)
          2) INIZIATIVA = 2d6 + mod.Presenza + velocità (basso agisce prima)
             Presenza:  4→+2  5→+1  6→0  7→−1  8→−2  9→−3  10→−4
          3) RISOLVI in ordine. Colpito prima di agire = azione persa
-PRENDERE IL TEMPO (Ma 間): fino a +3 iniziativa = −1:1 al tiro d'attacco
-CONVERSIONE: attaccato PRIMA di agire? puoi convertire l'azione in difesa
-         (tiri la difesa, anche con Ki — ma la tua azione è spesa)
-         chi ha GIÀ agito NON converte: solo assorbimento e copertura
+TAME 溜め (la carica): fino a +3 iniziativa = −1:1 al tiro d'attacco
+UKEMI 受け身: attaccato PRIMA di agire? puoi andare in Ukemi (alla cieca,
+         prima del suo tiro): tiri la difesa, anche con Ki — ma l'azione è spesa
+         chi ha GIÀ agito NON va in Ukemi: solo assorbimento e copertura
 ATTACCO: 2d6 ≤ attributo arma (PARI = COLPITO) | scarto = attributo − tiro
          DANNO = scarto + danno arma
-DIFESA (dichiarata o convertita): 2d6 ≤ attributo di difesa DELL'ARMA
+DIFESA (dichiarata o in Ukemi): 2d6 ≤ attributo di difesa DELL'ARMA
          che attacca | para il suo scarto | vale contro UN attacco
          KI: max 1 a scambio = −2 al tiro, PRIMA di tirare, solo se resti a Ki ≥ 1
 ASSORBIMENTO + COPERTURA: sempre, contro tutto (giubbotto 3 | tavolo 1 | muro 5)
@@ -314,7 +314,7 @@ MANOVRE: Mirare (azione: −1/scambio, max −2, fermi; poi spari a velocità 0)
          Opportunità (iniziativa migliore di 5+: azione descrittiva extra)
          Stringere i Denti (danno 1-2: paghi 1 attributo, agisci comunque)
          Colpi multipli | Soppressione | Granata | Fumogeno (come sopra)
-SORPRESA: tiro fallito = niente difesa né conversione — solo Assorbe
+SORPRESA: tiro fallito = niente difesa né Ukemi — solo Assorbe
 PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
 ```
 
@@ -326,7 +326,7 @@ PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
 - **[da validare]**: soglia Opportunità (5+), +3 di chi è sotto soppressione, difesa su Lucidità
   contro la granata, simultaneità a pari iniziativa
 - **Fuori Tempo** (v2 avanzata): costruita sul tetto-9 del vecchio schema — da ripensare o
-  lasciar cadere (in parte assorbita da *Prendere il tempo* e dalle velocità in iniziativa)
+  lasciar cadere (in parte assorbita dal *Tame* e dalle velocità in iniziativa)
 - **Senmon con profili di difesa alternativi** (idea utente)
 - Stallo tra due difensori (regola anti-attrito o discrezione GM)
 
