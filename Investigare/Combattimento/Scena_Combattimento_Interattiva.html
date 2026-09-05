@@ -92,8 +92,12 @@ h1{font-size:clamp(1.3rem,4.5vw,1.9rem);margin:0 0 .6rem;font-weight:400}
   che trema. <em>«Stai indietro! STAI INDIETRO!»</em></p>
   <p>Tu hai il <b>manganello d'ordinanza</b> già in mano (il <i>keibō</i> 警棒 dei poliziotti
   giapponesi). Sei solo: i rinforzi sono a tre minuti, e tre minuti qui dentro sono un'eternità.</p>
-  <div class="mecc" style="margin-top:.6rem"><b>TU</b> — Ki 7 (vita ed energia insieme) · colpisci col manganello usando <b>Silenzio 5</b> · schivi la lama con <b>Pazienza 5</b> · riflessi: <b>Presenza 4</b> (lento: +2 all'iniziativa)<br>
-<b>SOSPETTATO</b> — Ki 5 · colpisce col coltello usando <b>Pazienza 5</b> · schiva il manganello con <b>Ascolto 5</b> · riflessi: <b>Presenza 6</b> (rapido: +0)</div>
+  <div class="mecc" style="margin-top:.6rem">
+  <b>TU — Ki 7.</b> Il Ki è la tua vita e la tua energia insieme: il danno lo consuma, <b>a 0 si muore</b>. E questi sono gli stati d'animo con cui combatti (in GENKAI gli attributi non sono muscoli — sono come stai quando le cose si mettono male):<br>
+  · <b>Silenzio 5</b> — la calma interiore, non reagire d'impulso: è con questa che <b>colpisci</b> col manganello<br>
+  · <b>Pazienza 5</b> — aspettare il momento giusto: è con questa che <b>schivi</b> la lama<br>
+  · <b>Presenza 4</b> — l'autorità che ispiri, il farti prendere sul serio: serve per <b>intimidire</b>, e conta nell'iniziativa (la tua è bassa: parti con +2, cioè agisci più tardi)<br>
+  <b>SOSPETTATO — Ki 5.</b> Colpisce col coltello con la sua Pazienza 5 · schiva il manganello con l'Ascolto 5 (sentire da dove arriva il colpo) · Presenza 6: più pronto di te (+0).</div>
   <div class="bottoni riga"><button class="btn btn-forte" id="inizia">Lo scontro comincia →</button></div>
 </div>
 
@@ -205,7 +209,7 @@ async function scambio(){
     const mod = MOD_P[c.attr.Presenza] ?? 0;
     const inti = c.intimidito ? 2 : 0;
     c.ini = a + b + mod + c.arma.vel + (c.tame || 0) + inti;
-    t.innerHTML = `${a}+${b}${mod ? (mod>0?" +"+mod:" "+mod) + " (riflessi)" : ""} +${c.arma.vel} (${c.arma.nome})${c.tame?` +${c.tame} (Tame)`:""}${inti?` +2 (intimidito)`:""} = <b>${c.ini}</b>`;
+    t.innerHTML = `${a}+${b} ${mod>=0?"+"+mod:mod} (Presenza ${c.attr.Presenza}) +${c.arma.vel} (${c.arma.nome})${c.tame?` +${c.tame} (Tame)`:""}${inti?` +2 (intimidito)`:""} = <b>${c.ini}</b>`;
     c.intimidito = false;
   }
   const ordine = [PG, NIP].filter(c=>c.vita>0).sort((x,y)=>x.ini-y.ini);
@@ -214,8 +218,8 @@ async function scambio(){
 
   for (const c of ordine) {
     if (c.vita <= 0) continue;
-    if (c.colpito && !pari) { scrivi(el, `<p>${cap(c.nome)} è stato colpito prima di agire: <b>la sua azione è persa</b>.</p>`); continue; }
-    if (c.convertito) { scrivi(el, `<p>${cap(c.nome)} è in Ukemi: la sua azione è già spesa.</p>`); continue; }
+    if (c.colpito && !pari) { scrivi(el, c.pg ? `<p>Sei stato colpito prima di agire: <b>la tua azione è persa</b>.</p>` : `<p>${cap(c.nome)} è stato colpito prima di agire: <b>la sua azione è persa</b>.</p>`); continue; }
+    if (c.convertito) { scrivi(el, c.pg ? `<p>Sei in Ukemi: la tua azione è già spesa.</p>` : `<p>${cap(c.nome)} è in Ukemi: la sua azione è già spesa.</p>`); continue; }
     if (c.dich === "minaccia") {
       c.agito = true;
       const [ma, mb, mt] = await tiraDadi(el, `<b>TU</b> lo minacci (Presenza ${c.attr.Presenza})`);
@@ -274,7 +278,7 @@ async function attacco(att, dif, el){
     }
   }
 
-  const [a, b, t] = await tiraDadi(el, `<b>${cap(att.nome)}</b> attacca (${att.arma.attacco} ${att.attr[att.arma.attacco]})`);
+  const [a, b, t] = await tiraDadi(el, `<b>${att.pg ? "TU" : cap(att.nome)}</b> ${att.pg ? "attacchi" : "attacca"} (${att.arma.attacco} ${att.attr[att.arma.attacco]})`);
   const somma = a + b;
   const tiro = Math.max(2, somma - (att.tame || 0));
   const soglia = att.attr[att.arma.attacco];
@@ -287,7 +291,7 @@ async function attacco(att, dif, el){
   let scarto = soglia - tiro, extra = 0;
   if (a===1 && b===1) { extra = d6(); scrivi(el, `<p class="nota">★ <b>1+1 — colpo perfetto!</b> +1d6 = +${extra} danni.</p>`); }
   const inArrivo = scarto + att.arma.danno + extra;
-  scrivi(el, `<p class="colpo">Colpito! Precisione ${scarto} + ${att.arma.nome} ${att.arma.danno}${extra?` + ${extra}`:""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
+  scrivi(el, `<p class="colpo">Colpito! Precisione ${scarto} <span class="tiro">(attributo ${soglia} − tiro ${tiro}: più stai sotto, più il colpo è preciso)</span> + ${att.arma.nome} ${att.arma.danno}${extra?` + critico ${extra}`:""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
 
   let parata = 0;
   if (dif.dich === "difesa" && !dif.difesaUsata) {
@@ -295,8 +299,8 @@ async function attacco(att, dif, el){
     const attrDif = dif.attr[att.arma.difesa];
     let bonus = 0;
     if (dif.spendiKi && dif.vita >= 2) { dif.vita -= 1; bonus = 2;
-      scrivi(el, `<p class="nota">${cap(dif.nome)} brucia 1 Ki (resta ${dif.vita}): −2 al tiro di difesa.</p>`); aggiornaChip(); }
-    const [da, db, td] = await tiraDadi(el, `<b>${cap(dif.nome)}</b> si difende (${att.arma.difesa} ${attrDif})`);
+      scrivi(el, dif.pg ? `<p class="nota">Bruci 1 Ki (te ne restano ${dif.vita}): −2 al tiro di difesa.</p>` : `<p class="nota">${cap(dif.nome)} brucia 1 Ki (resta ${dif.vita}): −2 al tiro di difesa.</p>`); aggiornaChip(); }
+    const [da, db, td] = await tiraDadi(el, `<b>${dif.pg ? "TU" : cap(dif.nome)}</b> ${dif.pg ? "ti difendi" : "si difende"} (${att.arma.difesa} ${attrDif})`);
     const tiroD = Math.max(2, da + db - bonus);
     td.innerHTML = `${da}+${db}=${da+db}${bonus?` −${bonus} = ${tiroD}`:""} contro <b>${attrDif}</b>`;
     if (da===6 && db===6) scrivi(el, `<p class="tiro">6+6 in difesa: semplicemente fallita.</p>`);
@@ -307,17 +311,48 @@ async function attacco(att, dif, el){
       scrivi(el, `<p class="parata">Difesa riuscita: para ${parata}.</p>`);
     } else scrivi(el, `<p class="tiro">${tiroD} &gt; ${attrDif}: difesa fallita.</p>`);
   } else if (dif.dich === "difesa" && dif.difesaUsata) {
-    scrivi(el, `<p class="tiro">${cap(dif.nome)} ha già speso la difesa in questo scambio: incassa.</p>`);
+    scrivi(el, dif.pg ? `<p class="tiro">Hai già speso la difesa in questo scambio: incassi.</p>` : `<p class="tiro">${cap(dif.nome)} ha già speso la difesa in questo scambio: incassa.</p>`);
   } else {
-    scrivi(el, `<p class="tiro">${cap(dif.nome)} ${dif.agito ? "ha già agito: niente difesa — prima agisci, prima ti scopri" : "non è in difesa: incassa"}.</p>`);
+    scrivi(el, dif.pg ? `<p class="tiro">${dif.agito ? "Hai già agito: niente difesa — prima agisci, prima ti scopri" : "Non sei in difesa: incassi"}.</p>` : `<p class="tiro">${cap(dif.nome)} ${dif.agito ? "ha già agito: niente difesa" : "non è in difesa: incassa"}.</p>`);
   }
 
   const netto = Math.max(0, inArrivo - parata);
-  scrivi(el, `<p><b>Danno: ${inArrivo}${parata?` − ${parata} parati`:""} = ${netto}</b> → ${dif.nome === "TU" ? "il tuo" : "il suo"} Ki scende a <b>${Math.max(dif.vita - netto, 0)}</b></p>`);
+  scrivi(el, `<p><b>Danno: ${inArrivo}${parata?` − ${parata} parati`:""} = ${netto}</b> → ${dif.pg ? "il tuo" : "il suo"} Ki scende a <b>${Math.max(dif.vita - netto, 0)}</b></p>`);
   if (netto > 0) {
     dif.vita -= netto;
     dif.colpito = true;
-    if (dif.vita > 0 && !dif.agito) scrivi(el, `<p class="colpo">${cap(dif.nome)} accusa il colpo: se non aveva ancora agito, <b>l'azione è persa</b>.</p>`);
+    await stringereIDenti(dif, netto, el);
+  }
+}
+
+/* Stringere i Denti: danno netto 1-2 -> paghi 1 punto dell'attributo in uso e l'azione non va persa */
+async function stringereIDenti(dif, netto, el){
+  if (netto > 2 || dif.vita <= 0 || dif.agito || dif.convertito) return;
+  const attrAzione = dif.dich === "minaccia" ? "Presenza" : (dif.dich === "attacco" ? dif.arma.attacco : null);
+  if (!attrAzione || dif.attr[attrAzione] <= 4) return;
+  const val = dif.attr[attrAzione];
+  if (dif.pg) {
+    const box = document.createElement("div");
+    box.className = "urgente";
+    box.innerHTML = `<h4>Il colpo è leggero — puoi stringere i denti</h4>
+      <p style="margin:.2rem 0;font-size:.95rem">Con un danno di 1 o 2 puoi rifiutarti di perdere l'azione: paghi <b>1 punto di ${attrAzione}</b> (${val} → ${val-1} per il resto dello scontro; la notte lo ripara) e la tua azione parte comunque.</p>`;
+    el.appendChild(box);
+    box.scrollIntoView({behavior:"smooth", block:"nearest"});
+    const s = await scelta(box, [
+      { v:"si", forte:true, testo:"💪 Stringo i denti", sotto:`pago 1 punto di ${attrAzione} e la mia azione non va persa` },
+      { v:"no", testo:"Lascio perdere", sotto:"il colpo mi ferma: la mia azione è persa" },
+    ]);
+    if (s === "si") {
+      dif.attr[attrAzione] -= 1;
+      dif.colpito = false;
+      scrivi(el, `<p class="nota">Stringi i denti: ${attrAzione} ${val} → <b>${val-1}</b>, ma resti in piedi e la tua azione parte.</p>`);
+    } else scrivi(el, `<p class="tiro">Il colpo ti ferma: la tua azione è persa.</p>`);
+  } else {
+    if (Math.random() < .5) {
+      dif.attr[attrAzione] -= 1;
+      dif.colpito = false;
+      scrivi(el, `<p class="nota">${cap(dif.nome)} stringe i denti (${attrAzione} ${val} → ${val-1}): incassa e viene avanti lo stesso.</p>`);
+    }
   }
 }
 
