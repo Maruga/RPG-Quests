@@ -89,7 +89,7 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
 .dado{width:50px;height:50px;border:2px solid var(--inchiostro);border-radius:10px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.5rem;font-family:var(--sans);font-weight:700;box-shadow:2px 3px 0 rgba(28,26,23,.15)}
 .dado.rotola{animation:rotola .09s linear infinite}
 @keyframes rotola{50%{transform:rotate(7deg) translateY(-2px)}}
-@media(prefers-reduced-motion:reduce){ .dado.rotola{animation:none} .pips span.perso{animation:none} }
+@media(prefers-reduced-motion:reduce){ .dado.rotola{animation:none} .pips span.perso{animation:none} .critico{animation:none} }
 .conto{font-family:var(--sans);font-size:.9rem;color:var(--inchiostro2);flex:1 1 12rem}
 .conto b{color:var(--inchiostro);font-size:1.05rem}
 .verdetto{font-family:var(--sans);font-size:.95rem;margin:.5rem 0}
@@ -110,6 +110,16 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
 .urgente{border:2px solid var(--oro);background:#fbf4e2;border-radius:12px;padding:.8rem .9rem;margin:.7rem 0}
 .urgente h4{font-family:var(--sans);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rosso);margin:0 0 .35rem}
 .urgente p{margin:.3rem 0}
+
+/* critici: impossibili da perdere */
+.critico{border:3px solid var(--rosso);background:#fdf0ee;border-radius:12px;padding:.85rem 1rem;margin:.8rem 0;animation:lampeggia 1s ease-out 1}
+.critico.buono{border-color:var(--oro);background:#fbf3dc}
+.critico h4{font-family:var(--sans);font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .35rem;color:var(--rosso);line-height:1.2}
+.critico.buono h4{color:#7a5d12}
+.critico p{margin:.3rem 0;color:var(--inchiostro);font-size:1rem}
+@keyframes lampeggia{0%{transform:scale(.96);box-shadow:0 0 0 8px rgba(139,26,26,.35)}60%{box-shadow:0 0 0 3px rgba(139,26,26,.15)}100%{transform:none;box-shadow:none}}
+.dado.crit-male{border-color:var(--rosso);color:var(--rosso);background:#fdf0ee}
+.dado.crit-bene{border-color:var(--oro);color:#7a5d12;background:#fbf3dc}
 
 .epilogo{border:2px solid var(--inchiostro);border-radius:12px;padding:1rem 1rem 1.1rem;margin:1rem 0;background:var(--carta2)}
 .epilogo.vinto{border-color:var(--verde)}
@@ -188,6 +198,8 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
    parità d'iniziativa = azioni simultanee [da validare]. */
 const d6 = () => 1 + Math.floor(Math.random()*6);
 const MOD_P = {4:2, 5:1, 6:0, 7:-1, 8:-2, 9:-3, 10:-4};
+const P2D6 = {2:3, 3:8, 4:17, 5:28, 6:42, 7:58, 8:72, 9:83, 10:92, 11:97, 12:100};
+const pct = n => (P2D6[Math.min(12, Math.max(2, n))]) + "%";
 const caso = arr => arr[Math.floor(Math.random()*arr.length)];
 
 const ARMI = {
@@ -222,7 +234,37 @@ const TESTI = {
   tuManchi:[ "Il manganello incontra solo l'aria — e l'anta di un pensile.", "Lui arretra di un passo: colpo corto.", "Sbatti il manganello sul tavolo: il rumore, e nient'altro." ],
   ukemiOk:[ "Ti sposti di lato all'ultimo: la lama scivola via.", "Ruoti il busto e il coltello passa dove non sei più." ],
   ukemiNo:[ "Provi a scartare, ma sei lento: la lama ti trova.", "Il tuo passo indietro arriva un istante tardi." ],
+  luiDichiara:[ "Il ragazzo stringe il coltello e ti punta: <b>attacca</b>.", "Il ragazzo fa mezzo passo avanti, la lama bassa, gli occhi sul tuo manganello: <b>attacca</b>.", "«Ti ho detto di stare indietro!» — e il coltello parte verso di te: <b>attacca</b>.", "Il ragazzo prende un respiro rotto, le spalle contro il frigo, e affonda: <b>attacca</b>." ],
+  luiDichiaraFerito:[ "Sanguina, respira a bocca aperta, ma il coltello non lo molla: <b>attacca</b>.", "È bianco in faccia, la lama gli trema in mano — e parte lo stesso: <b>attacca</b>." ],
+  luiDichiaraScosso:[ "Esita un istante — la tua voce gli è rimasta addosso — poi il coltello parte: <b>attacca</b>.", "Ha gli occhi lucidi, ma stringe il coltello e viene avanti: <b>attacca</b>." ],
+  luiDichiaraNudo:[ "Senza più il coltello, il ragazzo ti si butta addosso a pugni: <b>attacca</b>.", "Il manico spezzato è a terra: viene avanti a mani nude, urlando: <b>attacca</b>." ],
+  luiAvanza:[ "Il ragazzo gira attorno al tavolo e <b>ti viene dietro</b>, la lama avanti.", "«Dove vai?!» — scavalca la sedia rovesciata e <b>ti viene dietro</b>." ],
+  luiRaccoglie:[ "Il ragazzo si butta a terra a cercare il coltello sotto il tavolo: <b>raccoglie l'arma</b>.", "Il ragazzo si tuffa sul coltello finito accanto al frigo: <b>raccoglie l'arma</b>." ],
+  luiVuoto:[ "La lama affonda nell'aria, dove eri un attimo fa.", "Colpisce il vuoto e sbatte contro lo stipite." ],
+  luiVuotoNudo:[ "Il pugno arriva dove non sei più.", "Si sbilancia in avanti e il pugno finisce contro lo stipite." ],
+  perfettoTu:[ "Il manganello arriva esattamente dove volevi, con tutto il peso del corpo dietro.", "Un colpo solo, pulito, come in palestra: lo senti giusto prima ancora che arrivi." ],
+  perfettoLui:[ "La lama trova il varco tra il braccio e il fianco: un colpo che non dovrebbe riuscirgli.", "Ti viene dentro col coltello come se sapesse dove sei scoperto." ],
+  perfettoDifesaTu:[ "Leggi il colpo prima di lui: la lama trova solo l'aria dove eri.", "Un passo di lato e un giro di polso: il coltello scivola sul manganello e via." ],
+  perfettoDifesaLui:[ "Alza l'avambraccio all'istante giusto: il manganello rimbalza via.", "Si abbassa sotto il colpo come se l'avesse visto arrivare da un minuto." ],
 };
+/* la scena di ogni imprevisto (1d6 → riga della tabella), per chi ha il manganello e per chi ha il coltello */
+const IMPREVISTI_TU = [
+  "Il manganello fende l'aria con un fischio che lo avverte: il colpo lui l'ha già letto.",
+  "Il manganello ti gira nel palmo sudato: lo riprendi per il verso giusto, ma ci vuole un attimo.",
+  "Ti sbilanci in avanti oltre il tavolo: per un attimo gli offri il fianco.",
+  "Il manganello sbatte sullo spigolo del frigo e ti schizza di mano: rotola sotto il tavolo.",
+  "Il colpo prende il bordo del lavello: il manganello vibra, e senti un crac secco — è crepato.",
+  "Il manganello si spezza sul bordo del tavolo: ti resta un moncone in mano. Sei a mani nude.",
+];
+const IMPREVISTI_LUI = [
+  "La lama passa così larga che gliela leggi in faccia.",
+  "Il coltello gli scivola nella mano sudata: lo riafferra per la punta, poi per il manico.",
+  "Affonda troppo e finisce col petto sul tavolo: per un attimo ti dà la schiena.",
+  "Il coltello sbatte contro la tua manica e gli vola via: finisce sotto il tavolo.",
+  "La lama urta il bordo del lavello e s'incrina: una scheggia salta via.",
+  "La lama si spezza contro lo spigolo del tavolo: gli resta il manico in mano. È a mani nude.",
+];
+const IMPREVISTI_NUDO = [ "Il pugno finisce contro il muro: le nocche si aprono.", "Il colpo va a vuoto e il gomito sbatte sul tavolo.", "Uno scivolone sul pavimento bagnato: un attimo per ritrovare l'equilibrio." ];
 
 let N = 1, fascia = "contatto";
 const flusso = document.getElementById("flusso");
@@ -279,11 +321,13 @@ async function tiraDadi(el, etichetta){
   scrivi(el, `<div class="tiro"><div class="eti">${etichetta}</div><div class="dadi-riga"><span class="dado rotola" id="${id}a">·</span><span class="dado rotola" id="${id}b">·</span><span class="conto" id="${id}t"></span></div></div>`);
   const da = document.getElementById(id+"a"), db = document.getElementById(id+"b");
   const giro = setInterval(() => { da.textContent = d6(); db.textContent = d6(); }, 80);
-  await attesa(650);
+  await attesa(500);
   clearInterval(giro);
   const a = d6(), b = d6();
   da.textContent = a; db.textContent = b;
   da.classList.remove("rotola"); db.classList.remove("rotola");
+  if (a === 6 && b === 6) { da.classList.add("crit-male"); db.classList.add("crit-male"); }
+  if (a === 1 && b === 1) { da.classList.add("crit-bene"); db.classList.add("crit-bene"); }
   da.parentElement.scrollIntoView({behavior:"smooth", block:"nearest"});
   return [a, b, document.getElementById(id+"t")];
 }
@@ -323,27 +367,30 @@ async function scambio(){
   if (N === 1) scrivi(el, `<p class="regola">Uno scontro va a <b>scambi</b>. In ogni scambio: ① ognuno dice cosa fa · ② i dadi decidono <b>chi agisce per primo</b> · ③ si agisce, in quell'ordine.</p>`);
 
   /* ① dichiarazioni */
+  if (N >= 2) scrivi(el, `<p class="regola">Tu Ki <b>${PG.ki}</b> · lui Ki <b>${Math.max(NIP.ki, 0)}</b>${fascia === "vicino" ? " · sei fuori dalla sua portata" : ""}${PG.raccogliere ? " · il tuo manganello è a terra" : ""}${PG.arma === ARMI.lotta ? " · sei a mani nude" : ""}</p>`);
   passo(el, "① Cosa fate");
-  if (NIP.raccogliere) { NIP.dich = "raccolgo"; narr(el, "Il ragazzo si butta a terra a cercare il coltello sotto il tavolo: <b>raccoglie l'arma</b>."); }
-  else if (fascia === "vicino") { NIP.dich = "avanza"; narr(el, `Il ragazzo gira attorno al tavolo e <b>ti viene dietro</b>, il ${NIP.arma.nome === "mani nude" ? "pugno" : "coltello"} avanti.`); }
-  else { NIP.dich = "attacco"; narr(el, NIP.arma === ARMI.lotta ? "Il ragazzo, a mani nude, ti si butta addosso: <b>attacca</b>." : `Il ragazzo stringe il coltello e ${NIP.intimidito ? "— ancora scosso dalla tua voce — " : ""}ti punta: <b>attacca</b>.`); }
+  if (NIP.raccogliere) { NIP.dich = "raccolgo"; narr(el, caso(TESTI.luiRaccoglie)); }
+  else if (fascia === "vicino") { NIP.dich = "avanza"; narr(el, caso(TESTI.luiAvanza)); }
+  else { NIP.dich = "attacco";
+    narr(el, NIP.arma === ARMI.lotta ? caso(TESTI.luiDichiaraNudo) : NIP.intimidito ? caso(TESTI.luiDichiaraScosso) : NIP.ki <= 2 ? caso(TESTI.luiDichiaraFerito) : caso(TESTI.luiDichiara)); }
 
   scrivi(el, `<p><b>E tu?</b></p>`);
-  const S = PG.attr.Silenzio, Pz = PG.attr.Presenza;
+  const Pz = PG.attr.Presenza, A = PG.attr[PG.arma.attacco];
+  const urlo = NIP.arma === ARMI.lotta ? "«Fermo! Basta così!»" : "«Metti giù il coltello!»";
+  const attaccoTesto = PG.arma === ARMI.lotta ? "Attacco a mani nude" : `Attacco col ${PG.arma.nome}`;
   let opzioni;
   if (PG.raccogliere) {
     opzioni = [
       { v:"raccolgo", forte:true, testo:"Raccolgo il manganello", sotto:"è a terra: recuperarlo mi costa l'azione di questo scambio" },
-      { v:"minaccia", testo:"Lo minaccio — «Metti giù il coltello!»", sotto:`tiro 2d6 ≤ Presenza ${Pz}: se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
+      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} (${pct(Pz)}): se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
     ];
   } else if (fascia === "contatto") {
-    const armaN = PG.arma.nome;
     opzioni = [
-      { v:"attacco", forte:true, testo:`Attacco col ${armaN}`, sotto:`tiro 2d6 ≤ ${PG.arma.attacco} ${PG.attr[PG.arma.attacco]}: se riesce lo colpisco — danno ${PG.arma.danno} + quanto sto sotto` },
-      { v:"minaccia", testo:"Lo minaccio — «Metti giù il coltello!»", sotto:`tiro 2d6 ≤ Presenza ${Pz} (difficile: la tua Presenza è bassa). Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
-      { v:"arretro", testo:"Arretro verso la porta", sotto:"esco dalla portata del coltello: se ci arrivo prima che colpisca, stavolta non mi prende" },
+      { v:"attacco", forte:true, testo:attaccoTesto, sotto:`tiro 2d6 ≤ ${PG.arma.attacco} ${A} (riesce ${pct(A)} delle volte): se colpisco, danno ${PG.arma.danno} + quanto sto sotto` },
+      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} (${pct(Pz)}: la tua Presenza è bassa). Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
+      { v:"arretro", testo:"Arretro verso la porta", sotto:"esco dalla sua portata: se ci arrivo prima che colpisca, stavolta non mi prende" },
     ];
-    if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`Attacco trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso (−2 al tiro: colpisco fino a ${Math.min(12, S + 2)})` });
+    if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`${attaccoTesto}, trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso: −2 al tiro, colpisco fino a ${Math.min(12, A + 2)} (${pct(A + 2)} invece di ${pct(A)})` });
   } else {
     opzioni = [
       { v:"esco", forte:true, testo:"Esco e chiudo la porta", sotto:"fine dello scontro: aspetti i rinforzi dall'altra parte" },
@@ -359,10 +406,9 @@ async function scambio(){
   /* ② iniziativa */
   passo(el, "② Chi è più veloce");
   if (N === 1) scrivi(el, `<p class="regola">Ognuno tira 2 dadi e somma: il modificatore di <b>Presenza</b> (chi ne ha di più è pronto prima) e la <b>velocità</b> di quel che fa (un coltello già in mano è più rapido di un manganello). <b>Il totale più basso agisce per primo.</b></p>`);
-  for (const c of [PG, NIP]) {
-    if (c.ki <= 0) continue;
-    if (c.dich === "aspetto") { c.ini = 99; scrivi(el, `<p class="regola">${nomeDi(c)} non tiri: resti fermo, e ti prepari.</p>`); continue; }
-    const [a, b, t] = await tiraDadi(el, `${nomeDi(c)} iniziativa`);
+  if (PG.dich === "aspetto") { PG.ini = 99; scrivi(el, `<p class="regola">${nomeDi(PG)} non tiri: resti fermo, e ti prepari.</p>`); }
+  const esiti = await Promise.all([PG, NIP].filter(c => c.ki > 0 && c.dich !== "aspetto").map(c => tiraDadi(el, `${nomeDi(c)} iniziativa`).then(r => [c, ...r])));
+  for (const [c, a, b, t] of esiti) {
     const mod = MOD_P[c.attr.Presenza] ?? 0, vel = velocita(c), inti = c.intimidito ? 2 : 0;
     c.ini = a + b + mod + vel + (c.tame || 0) + inti;
     t.innerHTML = `${a}+${b} = ${a+b}, ${mod >= 0 ? "+" + mod : mod} (Presenza ${c.attr.Presenza}${mod > 0 ? ": lento" : mod < 0 ? ": pronto" : ""}), +${vel} (${etichettaVel(c)})${c.tame ? `, +${c.tame} (trattieni il fiato)` : ""}${inti ? `, +2 (intimidito)` : ""} = <b>${c.ini}</b>`;
@@ -409,7 +455,7 @@ async function scambio(){
 
     /* attacco */
     const bersaglio = c === NIP ? PG : NIP;
-    if (c === NIP && fascia === "vicino") { narr(el, caso(["La lama affonda nell'aria, dove eri un attimo fa.", "Colpisce il vuoto e sbatte contro lo stipite."])); continue; }
+    if (c === NIP && fascia === "vicino") { narr(el, caso(NIP.arma === ARMI.lotta ? TESTI.luiVuotoNudo : TESTI.luiVuoto)); continue; }
     await attacco(c, bersaglio, el);
     aggiornaStato();
     if (PG.ki <= 0) return epilogo("morto");
@@ -418,7 +464,7 @@ async function scambio(){
   aggiornaStato();
   if (NIP.ki <= 0) return epilogo("vinto");
   scrivi(el, `<p class="regola" style="margin-top:.8rem">Fine dello scambio ${N} — tu <b>Ki ${PG.ki}</b> · lui <b>Ki ${Math.max(NIP.ki, 0)}</b>.</p>`);
-  if (N === 1) scrivi(el, `<p class="nota">Dal prossimo scambio hai un'opzione in più: <b>attaccare trattenendo il fiato</b> (in gioco si chiama <b>Tame</b>). Agisci più tardi, ma il colpo è più preciso.</p>`);
+  if (N === 1) scrivi(el, `<p class="nota">Dal prossimo scambio hai un'opzione in più: <b>attaccare trattenendo il fiato</b> (in gioco si chiama <b>Tame</b>). Agisci più tardi, ma il colpo è più preciso: con ${PG.arma.attacco} ${PG.attr[PG.arma.attacco]} colpisci ${pct(PG.attr[PG.arma.attacco])} delle volte, trattenendo il fiato ${pct(PG.attr[PG.arma.attacco] + 2)}.</p>`);
   if (PG.ki <= 3) scrivi(el, `<p class="nota">Ki ${PG.ki} — <b>sei oltre il limite</b>. In combattimento si va avanti: ma se lo scontro finisse adesso, crolleresti. È il <b>Genkai</b>.</p>`);
   await scelta(el, [{ v:"avanti", forte:true, testo:`Scambio ${N+1} →` }], true);
   N++;
@@ -459,10 +505,16 @@ async function attacco(att, dif, el){
   t.innerHTML = `${a}+${b} = ${somma}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${(att.tame || prep) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
 
   if (a === 6 && b === 6) {
-    const imp = d6(), riga = TAB66[imp-1];
-    scrivi(el, `<p class="nota">⚠ <b>Doppio 6: fallimento critico.</b> Non solo manca — succede un imprevisto (1d6 = ${imp}): ${riga.t}.</p>`);
-    let eff = riga.eff;
-    if (att.incrinata && eff !== "rompe") { eff = "rompe"; scrivi(el, `<p class="regola">L'arma era già incrinata: <b>si rompe</b>.</p>`); }
+    const imp = d6(), chi = att.pg ? "Il tuo colpo" : "Il suo colpo";
+    if (att.arma === ARMI.lotta) {
+      scrivi(el, `<div class="critico"><h4>⚠ Doppio 6 — fallimento critico</h4><p>${chi} non solo manca: <b>succede un imprevisto</b> (1d6 = ${imp}).</p><p class="narr">${caso(IMPREVISTI_NUDO)}</p></div>`);
+      return;
+    }
+    const riga = TAB66[imp-1];
+    let eff = riga.eff, inPiu = "";
+    if (att.incrinata && eff !== "rompe") { eff = "rompe"; inPiu = " L'arma era già incrinata: <b>si rompe</b>."; }
+    const scena = eff === "rompe" ? (att.pg ? IMPREVISTI_TU[5] : IMPREVISTI_LUI[5]) : (att.pg ? IMPREVISTI_TU[imp-1] : IMPREVISTI_LUI[imp-1]);
+    scrivi(el, `<div class="critico"><h4>⚠ Doppio 6 — fallimento critico</h4><p>${chi} non solo manca: <b>succede un imprevisto</b>. Tiro 1d6 = <b>${imp}</b>: ${riga.t}.${inPiu}</p><p class="narr">${scena}</p></div>`);
     if (eff === "sfodera") att.daSfoderare = true;
     if (eff === "cade") att.raccogliere = true;
     if (eff === "incrina") att.incrinata = true;
@@ -473,7 +525,7 @@ async function attacco(att, dif, el){
   if (tiro > soglia) { narr(el, caso(att.pg ? TESTI.tuManchi : TESTI.luiManca)); return; }
 
   let scarto = soglia - tiro, extra = 0;
-  if (a === 1 && b === 1) { extra = d6(); scrivi(el, `<p class="nota">★ <b>Doppio 1: colpo perfetto!</b> +1d6 danni = +${extra}.</p>`); }
+  if (a === 1 && b === 1) { extra = d6(); scrivi(el, `<div class="critico buono"><h4>★ Doppio 1 — colpo perfetto</h4><p>${att.pg ? "Il tuo" : "Il suo"} colpo è perfetto: <b>+1d6 danni = +${extra}</b>.</p><p class="narr">${caso(att.pg ? TESTI.perfettoTu : TESTI.perfettoLui)}</p></div>`); }
   const inArrivo = scarto + att.arma.danno + extra;
   scrivi(el, `<p class="colpo">Colpito: precisione ${scarto} + ${att.arma.nome} ${att.arma.danno}${extra ? ` + ${extra} (critico)` : ""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
   if (N === 1 && !el.dataset.precisione) { el.dataset.precisione = "1"; aiuto(el, "Cos'è la precisione", `È di quanto il tiro sta <b>sotto</b> l'attributo: attributo ${soglia} − tiro ${tiro} = <b>${scarto}</b>. Più stai sotto, più il colpo è preciso — e la precisione si somma al danno dell'arma (${att.arma.nome}: ${att.arma.danno}).`); }
@@ -491,7 +543,7 @@ async function attacco(att, dif, el){
     if (da === 6 && db === 6) { scrivi(el, `<p class="regola">Doppio 6 in difesa: semplicemente fallita, niente imprevisti.</p>`); narr(el, caso(TESTI.ukemiNo)); }
     else if (tiroD <= attrDif) {
       parata = attrDif - tiroD;
-      if (da === 1 && db === 1) { const ep = d6(); parata += ep; scrivi(el, `<p class="nota">★ Doppio 1 in difesa — parata perfetta: +${ep}.</p>`); }
+      if (da === 1 && db === 1) { const ep = d6(); parata += ep; scrivi(el, `<div class="critico buono"><h4>★ Doppio 1 — parata perfetta</h4><p>${dif.pg ? "La tua" : "La sua"} difesa è perfetta: <b>+1d6 parato = +${ep}</b>.</p><p class="narr">${caso(dif.pg ? TESTI.perfettoDifesaTu : TESTI.perfettoDifesaLui)}</p></div>`); }
       scrivi(el, `<p class="parata">Difesa riuscita: pari ${parata} (${attrDif} − ${tiroD}${da === 1 && db === 1 ? " + critico" : ""}).</p>`);
       if (dif.pg) narr(el, parata >= inArrivo ? caso(TESTI.ukemiOk) : "Devii la lama, ma non del tutto.");
     } else { scrivi(el, `<p class="regola">Difesa fallita: pari 0.</p>`); if (dif.pg) narr(el, caso(TESTI.ukemiNo)); }
