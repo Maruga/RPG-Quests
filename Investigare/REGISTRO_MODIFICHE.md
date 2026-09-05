@@ -11,6 +11,20 @@
 
 ## Da applicare
 
+### 2026-09-05 (sera) · WIZARD → REGOLE · ⚠ Manuale Combattimento **v3.0 UNIFICATO** — azioni cambiate
+Su richiesta dell'utente («crea un unico manuale v3, il v3 comanda sul v2»): `Combattimento/GENKAI_Combattimento.md`
+è ora la **v3.0**, con tutto il contenuto della v2.1 dentro e le regole v3 che comandano (v2.1 e bozze congelate
+in `Combattimento/versioni/`). Cose che possono toccare altri testi o i wizard:
+1. **L'azione «Difendersi» non esiste più** — la difesa è solo l'**Ukemi 受け身** (l'azione che si converte in difesa
+   quando il colpo arriva, decisa prima del tiro avversario). Azioni: **Attaccare · Muoversi · Minacciare**.
+2. **Nuova azione MINACCIARE** (design utente): 2d6 ≤ Presenza → l'avversario è intimidito, +2 alla sua iniziativa
+   al prossimo scambio. La sua **velocità non è ancora fissata** ([da validare] — la scena usa 2).
+3. **Tame 溜め** si racconta «trattengo il fiato» (mai «carico il colpo»); **Ki per tutti** (niente Riserva).
+4. **«Fuori Tempo»** (regola avanzata v2) è in appendice come SOSPESA: era costruita sul dado basso e sul tetto 9.
+5. 12 punti **[da validare]** elencati in fondo al manuale, in attesa dell'utente.
+Se altri manuali citano «Difendersi» in combattimento, la Riserva o il vecchio scambio «a un tiro», vanno aggiornati. — **DA APPLICARE** (presa visione + rimandi)
+
+
 ### 2026-09-05 · WIZARD → REGOLE · ⚠ «Riserva» dei PNG ABOLITA: è Ki per tutti (decisione utente)
 Parole dell'utente: «è il Ki per tutti». La «Riserva» (Combattimento v2 §I PNG nello Scontro, 3/6/9;
 citata anche nel Manuale Situazioni / statistiche PNG del wizard) si chiama **Ki** per chiunque,

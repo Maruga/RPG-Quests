@@ -3,102 +3,173 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GENKAI — Tre secondi di stupidità (scena di scontro interattiva)</title>
+<title>GENKAI — Un coltello in cucina · prova il combattimento</title>
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
   --inchiostro:#1c1a17; --inchiostro2:#4a453d; --tenue:#6a655c;
   --rosso:#8b1a1a; --bordo:#d8cfc0; --oro:#b08d2f; --verde:#2e6b30;
   --serif:Georgia,"Times New Roman",serif;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
-.dentro{max-width:720px;margin:0 auto;padding:0 1.1rem 3rem}
+img{max-width:100%;height:auto;display:block}
+.dentro{max-width:680px;margin:0 auto;padding:0 .9rem 3rem}
 
+/* barra di stato: i due Ki a pallini */
 .barra{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.97);border-bottom:1px solid var(--bordo);backdrop-filter:blur(6px)}
-.barra .dentro{display:flex;align-items:center;gap:.6rem;padding:.5rem 1.1rem;flex-wrap:wrap}
-.marchio{font-family:var(--sans);font-weight:700;font-size:.9rem;letter-spacing:.04em}
+.barra .dentro{display:flex;align-items:center;gap:.8rem;padding:.45rem .9rem}
+.marchio{font-family:var(--sans);font-weight:700;font-size:.85rem;letter-spacing:.04em;white-space:nowrap}
 .marchio i{font-style:normal;color:var(--rosso)}
-.chips{margin-left:auto;display:flex;gap:.45rem;font-family:var(--sans);font-size:.8rem}
-.chip{border:1px solid var(--bordo);background:#fff;border-radius:999px;padding:.14rem .65rem;white-space:nowrap}
-.chip b{color:var(--rosso)}
-.chip.giu{opacity:.5;text-decoration:line-through}
+.stato{margin-left:auto;display:flex;gap:.9rem;font-family:var(--sans)}
+.ki{display:flex;flex-direction:column;align-items:flex-end;line-height:1.15}
+.ki .eti{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue)}
+.ki .riga{display:flex;align-items:center;gap:.35rem}
+.ki .num{font-weight:700;font-size:1rem;min-width:1.1em;text-align:right}
+.pips{display:flex;gap:3px}
+.pips span{width:11px;height:11px;border-radius:50%;border:1px solid var(--inchiostro);background:var(--inchiostro);transition:background .4s,border-color .4s}
+.pips span.vuoto{background:transparent;border-color:var(--bordo)}
+.pips span.perso{animation:perso .9s ease-out}
+@keyframes perso{0%{background:var(--rosso);border-color:var(--rosso);transform:scale(1.5)}100%{background:transparent;border-color:var(--bordo)}}
+.ki.lui .pips span{border-color:var(--rosso);background:var(--rosso)}
+.ki.lui .pips span.vuoto{background:transparent;border-color:var(--bordo)}
+.ki.genkai .num{color:var(--rosso)}
+@media(max-width:480px){
+  .marchio .extra{display:none}
+  .barra .dentro{gap:.5rem;padding:.4rem .7rem}
+  .stato{gap:.6rem}
+  .pips{gap:2px}
+  .pips span{width:9px;height:9px}
+  .ki .num{font-size:.9rem}
+}
 
-header.testa{padding:1.6rem 0 .6rem;text-align:center}
-.occhiello{font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--tenue);margin:0 0 .5rem}
-h1{font-size:clamp(1.3rem,4.5vw,1.9rem);margin:0 0 .6rem;font-weight:400}
+/* copertina */
+.quadro{margin:.9rem 0 0;border:1px solid var(--bordo);border-radius:12px;overflow:hidden;background:#111}
+.quadro img{width:100%;aspect-ratio:3/2;object-fit:cover}
+header.testa{padding:1rem 0 .4rem}
+.occhiello{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosso);margin:0 0 .35rem}
+h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-height:1.15}
+.intro p{margin:.6rem 0;color:var(--inchiostro2)}
+.intro p.tu{color:var(--inchiostro)}
 
-.scena-testo{background:var(--carta2);border:1px solid var(--bordo);border-radius:12px;padding:1rem 1.2rem;margin:.8rem 0}
-.scena-testo p{margin:.5rem 0;color:var(--inchiostro2)}
+/* riquadri di spiegazione */
+.mecc{font-family:var(--sans);font-size:.86rem;background:var(--carta3);border-left:3px solid var(--oro);border-radius:0 8px 8px 0;padding:.6rem .85rem;margin:.7rem 0;color:var(--inchiostro2)}
+.mecc b{color:var(--inchiostro)}
+.mecc .titolo{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:.2rem}
+.mecc ul{margin:.3rem 0 0;padding-left:1.1rem}
+.mecc li{margin:.2rem 0}
+.aiuto{font-family:var(--sans);font-size:.82rem;color:var(--rosso);background:transparent;border:1px dashed var(--rosso);border-radius:999px;padding:.3rem .8rem;margin:.35rem .35rem 0 0;cursor:pointer;min-height:36px}
+.aiuto[aria-expanded="true"]{background:var(--rosso);color:#fff;border-style:solid}
+.aiuto-testo{font-family:var(--sans);font-size:.86rem;color:var(--inchiostro2);background:#fff;border:1px solid var(--bordo);border-radius:8px;padding:.6rem .85rem;margin:.45rem 0}
+.aiuto-testo b{color:var(--inchiostro)}
 
-#flusso{margin-top:.6rem}
-.card{background:var(--carta2);border:1px solid var(--bordo);border-radius:10px;padding:.9rem 1.1rem;margin:.7rem 0}
-.card h3{font-family:var(--sans);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rosso);margin:0 0 .5rem;border-bottom:2px solid var(--oro);padding-bottom:.25rem}
-.card p{margin:.35rem 0;color:var(--inchiostro2);font-size:.98rem}
-.tiro{font-family:var(--sans);font-size:.85rem;color:var(--tenue)}
-.tiro b{color:var(--inchiostro)}
+/* card dello scambio */
+#flusso{margin-top:.4rem}
+.card{background:var(--carta2);border:1px solid var(--bordo);border-radius:12px;padding:.9rem 1rem 1rem;margin:.9rem 0}
+.card h3{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rosso);margin:0 0 .6rem;border-bottom:2px solid var(--oro);padding-bottom:.3rem}
+.passo{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tenue);margin:1rem 0 .3rem;display:flex;align-items:center;gap:.45rem}
+.passo::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:var(--oro)}
+.card p{margin:.4rem 0;color:var(--inchiostro2)}
+.narr{font-style:italic;color:var(--inchiostro)}
+.regola{font-family:var(--sans);font-size:.88rem;color:var(--inchiostro2)}
+.regola b{color:var(--inchiostro)}
 .colpo{color:var(--rosso);font-weight:600}
 .parata{color:var(--verde);font-weight:600}
-.nota{font-family:var(--sans);font-size:.88rem;background:#fbf4e2;border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:.5rem .8rem;margin:.5rem 0}
-.impara{font-family:var(--sans);font-size:.85rem;color:var(--tenue);font-style:italic;margin:.4rem 0}
+.nota{font-family:var(--sans);font-size:.88rem;background:#fbf4e2;border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:.5rem .8rem;margin:.5rem 0;color:var(--inchiostro2)}
+.nota b{color:var(--inchiostro)}
+.chi{display:inline-block;font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .5rem;border-radius:4px;background:var(--inchiostro);color:#fff;margin-right:.3rem;vertical-align:middle}
+.chi.lui{background:var(--rosso)}
 
-.dadi-riga{display:flex;align-items:center;gap:.5rem;margin:.4rem 0;font-family:var(--sans);font-size:.85rem;flex-wrap:wrap}
-.dado{width:38px;height:38px;border:2px solid var(--inchiostro);border-radius:8px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.15rem;font-family:var(--sans);font-weight:700;box-shadow:1px 2px 0 rgba(28,26,23,.15)}
+/* dadi */
+.tiro{margin:.5rem 0;padding:.6rem .7rem;border:1px solid var(--bordo);border-radius:10px;background:#fff}
+.tiro .eti{font-family:var(--sans);font-size:.85rem;color:var(--inchiostro2);margin-bottom:.4rem}
+.dadi-riga{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.dado{width:50px;height:50px;border:2px solid var(--inchiostro);border-radius:10px;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.5rem;font-family:var(--sans);font-weight:700;box-shadow:2px 3px 0 rgba(28,26,23,.15)}
 .dado.rotola{animation:rotola .09s linear infinite}
 @keyframes rotola{50%{transform:rotate(7deg) translateY(-2px)}}
-@media(prefers-reduced-motion:reduce){ .dado.rotola{animation:none} }
+@media(prefers-reduced-motion:reduce){ .dado.rotola{animation:none} .pips span.perso{animation:none} }
+.conto{font-family:var(--sans);font-size:.9rem;color:var(--inchiostro2);flex:1 1 12rem}
+.conto b{color:var(--inchiostro);font-size:1.05rem}
+.verdetto{font-family:var(--sans);font-size:.95rem;margin:.5rem 0}
 
-.bottoni{display:flex;flex-direction:column;gap:.5rem;margin:.6rem 0 .2rem}
-.btn{font-family:var(--sans);font-size:.97rem;padding:.6rem 1rem;border-radius:8px;border:1px solid var(--inchiostro);background:transparent;cursor:pointer;text-align:left}
-.btn small{display:block;font-size:.74rem;color:var(--tenue);margin-top:.1rem}
-.btn:hover{background:rgba(28,26,23,.06)}
+/* bottoni (dita, non mouse) */
+.bottoni{display:flex;flex-direction:column;gap:.55rem;margin:.6rem 0 .2rem}
+.btn{font-family:var(--sans);font-size:1rem;line-height:1.3;padding:.7rem .95rem;min-height:48px;border-radius:10px;border:1px solid var(--inchiostro);background:#fff;color:var(--inchiostro);cursor:pointer;text-align:left;width:100%}
+.btn small{display:block;font-size:.78rem;color:var(--tenue);margin-top:.15rem;font-weight:400}
+.btn:hover{background:rgba(28,26,23,.05)}
 .btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
 .btn-forte small{color:#f3d9d9}
-.btn-forte:hover{background:#a02020}
-.btn[disabled]{opacity:.4;pointer-events:none}
+.btn[disabled]{opacity:.35;pointer-events:none}
+.btn.scelto{background:var(--oro)!important;border-color:var(--oro)!important;color:#fff!important;opacity:1!important}
+.btn.scelto small{color:#fdf3d6}
 .bottoni.riga{flex-direction:row;flex-wrap:wrap}
+.bottoni.riga .btn{width:auto;flex:1 1 auto;text-align:center}
 
-.urgente{border:2px solid var(--oro);background:#fbf4e2;border-radius:10px;padding:.8rem 1rem;margin:.6rem 0}
-.urgente h4{font-family:var(--sans);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rosso);margin:0 0 .4rem}
+.urgente{border:2px solid var(--oro);background:#fbf4e2;border-radius:12px;padding:.8rem .9rem;margin:.7rem 0}
+.urgente h4{font-family:var(--sans);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rosso);margin:0 0 .35rem}
+.urgente p{margin:.3rem 0}
 
-.epilogo{border:2px solid var(--inchiostro);border-radius:12px;padding:1rem 1.2rem;margin:.8rem 0;background:var(--carta2)}
+.epilogo{border:2px solid var(--inchiostro);border-radius:12px;padding:1rem 1rem 1.1rem;margin:1rem 0;background:var(--carta2)}
 .epilogo.vinto{border-color:var(--verde)}
 .epilogo.perso{border-color:var(--rosso);background:#fdf3f3}
-.epilogo h3{font-family:var(--sans);margin:0 0 .5rem}
-.mecc{font-family:var(--sans);font-size:.82rem;background:var(--carta3);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:.45rem .7rem;margin:.5rem 0;color:var(--inchiostro2)}
+.epilogo.fuga{border-color:var(--oro)}
+.epilogo h3{font-family:var(--sans);font-size:1.1rem;margin:0 0 .5rem}
+.epilogo p{color:var(--inchiostro2);margin:.5rem 0}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
 <nav class="barra"><div class="dentro">
-  <span class="marchio">限界 <i>GENKAI</i> · lo scontro</span>
-  <div class="chips">
-    <span class="chip">TU — Ki <b id="chip-pg">7</b> · manganello</span>
-    <span class="chip" id="chip-nip">SOSPETTATO — Ki <b id="chip-nip-v">5</b> · coltello</span>
+  <span class="marchio">限界 <i>GENKAI</i><span class="extra"> · lo scontro</span></span>
+  <div class="stato">
+    <div class="ki tu" id="ki-pg"><span class="eti">Tu · Ki</span><span class="riga"><span class="pips" id="pips-pg"></span><span class="num" id="num-pg">7</span></span></div>
+    <div class="ki lui" id="ki-nip"><span class="eti">Lui · Ki</span><span class="riga"><span class="pips" id="pips-nip"></span><span class="num" id="num-nip">5</span></span></div>
   </div>
 </div></nav>
 
 <div class="dentro">
+
+<!-- IMMAGINI: per ora la foto del mini-caso /provalo (coltello.jpg). Da sostituire nel secondo passo. -->
+<figure class="quadro" id="quadro"><img src="../sito_genkai/provalo/img/coltello.jpg" alt="Una mano stringe un coltello da cucina, nella penombra, accanto allo scolapiatti"></figure>
+
 <header class="testa">
-  <p class="occhiello">Scena di scontro · si impara giocando</p>
-  <h1>Tre secondi di stupidità</h1>
+  <p class="occhiello">Prova il combattimento di GENKAI · si impara giocando</p>
+  <h1>Un coltello in cucina</h1>
 </header>
 
-<div class="scena-testo" id="intro">
-  <p>Stai per ammanettare un sospettato, in una cucina stretta. E il ragazzo smette di ragionare:
-  con uno scatto <b>afferra un coltello da cucina dal lavello</b> e te lo punta contro, la presa
-  che trema. <em>«Stai indietro! STAI INDIETRO!»</em></p>
-  <p>Tu hai il <b>manganello d'ordinanza</b> già in mano (il <i>keibō</i> 警棒 dei poliziotti
-  giapponesi). Sei solo: i rinforzi sono a tre minuti, e tre minuti qui dentro sono un'eternità.</p>
-  <div class="mecc" style="margin-top:.6rem">
-  <b>TU — Ki 7.</b> Il Ki è la tua vita e la tua energia insieme: il danno lo consuma, <b>a 0 si muore</b>. E questi sono gli stati d'animo con cui combatti (in GENKAI gli attributi non sono muscoli — sono come stai quando le cose si mettono male):<br>
-  · <b>Silenzio 5</b> — la calma interiore, non reagire d'impulso: è con questa che <b>colpisci</b> col manganello<br>
-  · <b>Pazienza 5</b> — aspettare il momento giusto: è con questa che <b>schivi</b> la lama<br>
-  · <b>Presenza 4</b> — l'autorità che ispiri, il farti prendere sul serio: serve per <b>intimidire</b>, e conta nell'iniziativa (la tua è bassa: parti con +2, cioè agisci più tardi)<br>
-  <b>SOSPETTATO — Ki 5.</b> Colpisce col coltello con la sua Pazienza 5 · schiva il manganello con l'Ascolto 5 (sentire da dove arriva il colpo) · Presenza 6: più pronto di te (+0).</div>
-  <div class="bottoni riga"><button class="btn btn-forte" id="inizia">Lo scontro comincia →</button></div>
+<div class="intro" id="intro">
+  <p>Kyoto, 1997. Una cucina di due metri per tre, la luce al neon che frigge sopra il lavello.
+  Sei un investigatore della Omicidi e stai per mettere le manette a un ragazzo di venticinque anni
+  che ha appena smesso di ragionare: con uno scatto <b>afferra il coltello dal lavello</b> e te lo
+  punta contro, la presa che trema. <em>«Stai indietro! STAI INDIETRO!»</em></p>
+  <p>Hai il <b>manganello d'ordinanza</b> già in mano. Sei solo: i rinforzi sono a tre minuti, e
+  tre minuti qui dentro sono un'eternità. Tra voi c'è un tavolo. Dietro di te, la porta.</p>
+
+  <div class="mecc">
+    <span class="titolo">Chi sei — la tua scheda, in tre numeri</span>
+    <b>Ki 7.</b> Il Ki è lo stato complessivo del tuo personaggio — fisico, mentale, emotivo insieme: non è la salute, è <b>quanto reggi</b>. In uno scontro i colpi lo consumano. <b>A 0 sei morto.</b>
+    <ul>
+      <li><b>Silenzio 5</b> — la calma interiore, non reagire d'impulso. È l'attributo con cui usi il <b>manganello</b>.</li>
+      <li><b>Pazienza 5</b> — aspettare il momento giusto. È l'attributo con cui <b>schivi una lama</b>.</li>
+      <li><b>Presenza 4</b> — l'autorità che ispiri, farti prendere sul serio, intimidire. Con questa <b>minacci</b> — e decide quanto sei pronto a reagire: con 4 sei lento.</li>
+    </ul>
+  </div>
+  <div class="mecc">
+    <span class="titolo">Lui — il ragazzo col coltello</span>
+    <b>Ki 5.</b> <b>Pazienza 4</b>: non sa aspettare, colpisce d'impulso (è l'attributo con cui usa il coltello). <b>Ascolto 5</b>: con questo legge l'arco del tuo manganello e prova a schivarlo. <b>Presenza 6</b>: è più pronto di te.
+  </div>
+  <div>
+    <button class="aiuto" type="button" data-aiuto="a-tiro" aria-expanded="false">❓ Come si tira</button>
+    <button class="aiuto" type="button" data-aiuto="a-attr" aria-expanded="false">❓ Cosa sono gli attributi</button>
+    <button class="aiuto" type="button" data-aiuto="a-ki" aria-expanded="false">❓ Cos'è il Ki</button>
+    <div class="aiuto-testo" id="a-tiro" hidden>In GENKAI si tirano sempre <b>due dadi a sei facce</b> e si sommano. Se il totale è <b>uguale o inferiore</b> all'attributo che stai usando, riesce. <b>Più stai sotto, meglio è</b>: nel combattimento quel margine diventa la precisione del colpo.</div>
+    <div class="aiuto-testo" id="a-attr" hidden>I sei attributi di un investigatore (Distacco, Pazienza, Silenzio, Lucidità, Ascolto, Presenza) vanno da <b>4</b> (debole: ci fai fatica) a <b>9</b> (eccezionale). Non misurano i muscoli: sono <b>stati interiori</b> — come stai quando le cose si mettono male. Qui ne usi tre.</div>
+    <div class="aiuto-testo" id="a-ki" hidden>Il Ki 気 è la tua energia vitale: si consuma con la fatica, la pressione, i poteri — e in uno scontro con i colpi. Sotto <b>3</b> sei oltre il limite: se lo scontro finisse lì, crolleresti. Quel limite si chiama <b>Genkai</b> 限界, ed è il nome del gioco. In combattimento il danno non si ferma: <b>a Ki 0 si muore</b>.</div>
+  </div>
+  <div class="bottoni riga" style="margin-top:1rem"><button class="btn btn-forte" id="inizia">Lo scontro comincia →</button></div>
 </div>
 
 <div id="flusso"></div>
@@ -106,55 +177,114 @@ h1{font-size:clamp(1.3rem,4.5vw,1.9rem);margin:0 0 .6rem;font-weight:400}
 
 <script>
 "use strict";
-/* ═══════ MOTORE v3 (DECISIONI.md) — demo didattica 1v1 ═══════ */
+/* ═══════ MOTORE — solo le regole decise (Combattimento/GENKAI_Combattimento.md v3.0) ═══════
+   Iniziativa 2d6 + mod.Presenza + velocità (+Tame, +2 se intimidito): totale basso agisce prima.
+   Attacco 2d6 ≤ attributo dell'arma (pari = colpito); danno = scarto + danno arma.
+   Difesa solo in Ukemi: 2d6 ≤ attributo di difesa dell'arma che attacca; para lo scarto; 1 Ki = −2.
+   Colpito prima di agire = azione persa (salvo Stringere i Denti). Critici 1+1 / 6+6 nei due sensi.
+   Minacciare: 2d6 ≤ Presenza → +2 all'iniziativa avversaria al prossimo scambio.
+   Scelte da GM della scena (non regole): il ragazzo è una comparsa (Ki 5, Pazienza 4, Presenza 6);
+   la velocità della minaccia e del raccogliere l'arma vale 2 come un movimento [da validare];
+   parità d'iniziativa = azioni simultanee [da validare]. */
 const d6 = () => 1 + Math.floor(Math.random()*6);
 const MOD_P = {4:2, 5:1, 6:0, 7:-1, 8:-2, 9:-3, 10:-4};
+const caso = arr => arr[Math.floor(Math.random()*arr.length)];
+
+const ARMI = {
+  manganello:{ nome:"manganello", attacco:"Silenzio", difesa:"Ascolto", estrarre:2, colpire:2, danno:2 },
+  coltello:  { nome:"coltello",   attacco:"Pazienza", difesa:"Pazienza", estrarre:2, colpire:1, danno:2 },
+  lotta:     { nome:"mani nude",  attacco:"Presenza", difesa:"Pazienza", estrarre:1, colpire:1, danno:1 },
+};
+const PG  = { nome:"TU", pg:true,
+  attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4},
+  ki:7, kiMax:7, arma:ARMI.manganello };
+const NIP = { nome:"il ragazzo", pg:false,
+  attr:{Distacco:5, Pazienza:4, Silenzio:5, Lucidità:5, Ascolto:5, Presenza:6},
+  ki:5, kiMax:5, arma:ARMI.coltello };
+
+/* tabella imprevisti 6+6 — colonna corpo a corpo (manuale, I Critici) */
 const TAB66 = [
-  "il colpo taglia l'aria, plateale: l'avversario ti ha letto",
-  "la presa scivola: nel prossimo scambio l'arma conta come da sfoderare",
-  "ti sbilanci: l'avversario guadagna posizione",
-  "l'arma ti cade di mano: raccoglierla è un'azione",
-  "la lama si incrina",
-  "l'arma si spezza o vola lontano"
+  { t:"il colpo taglia l'aria, plateale: l'avversario l'ha letto in anticipo", eff:null },
+  { t:"la presa scivola: nel prossimo scambio l'arma conta come da sfoderare", eff:"sfodera" },
+  { t:"chi ha tirato si sbilancia: l'avversario guadagna posizione", eff:null },
+  { t:"l'arma cade di mano: raccoglierla costerà la prossima azione", eff:"cade" },
+  { t:"la lama si incrina (o il bastone si spacca): al prossimo 6+6 si rompe", eff:"incrina" },
+  { t:"l'arma si spezza: si resta a mani nude", eff:"rompe" },
 ];
 
-const PG  = { id:"pg",  nome:"TU", pg:true,
-  attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4},
-  vita:7, arma:{nome:"manganello", attacco:"Silenzio", difesa:"Ascolto", vel:2, danno:2} };
-const NIP = { id:"nip", nome:"il sospettato", pg:false,
-  attr:{Distacco:5, Pazienza:5, Silenzio:5, Lucidità:5, Ascolto:5, Presenza:6},
-  vita:5, arma:{nome:"coltello", attacco:"Pazienza", difesa:"Pazienza", vel:1, danno:2} };
+/* narrativa breve — una riga, per immedesimarsi */
+const TESTI = {
+  luiColpisce:[ "La lama ti prende di striscio sull'avambraccio: brucia.", "Il coltello entra sotto la costola: il fiato se ne va.", "Un taglio sulla mano che regge il manganello: la presa vacilla." ],
+  luiColpisceForte:[ "Il coltello affonda e tu senti le gambe farsi di carta.", "Ti prende in pieno: la cucina ondeggia." ],
+  luiManca:[ "La lama fischia a un palmo dal tuo viso.", "Colpisce il vuoto, sbilanciato, e sbatte il gomito contro il frigo.", "Il coltello graffia il tavolo dove eri un attimo prima." ],
+  tuColpisci:[ "Il manganello gli piomba sul polso: un grido secco.", "Lo prendi alla spalla: si piega di lato.", "Il colpo arriva sulla clavicola, e lo senti fin nel manico." ],
+  tuColpisciForte:[ "Il manganello lo raggiunge alla tempia: le ginocchia gli cedono.", "Un colpo pieno sul braccio del coltello: qualcosa scricchiola." ],
+  tuManchi:[ "Il manganello incontra solo l'aria — e l'anta di un pensile.", "Lui arretra di un passo: colpo corto.", "Sbatti il manganello sul tavolo: il rumore, e nient'altro." ],
+  ukemiOk:[ "Ti sposti di lato all'ultimo: la lama scivola via.", "Ruoti il busto e il coltello passa dove non sei più." ],
+  ukemiNo:[ "Provi a scartare, ma sei lento: la lama ti trova.", "Il tuo passo indietro arriva un istante tardi." ],
+};
 
-let N = 1;
+let N = 1, fascia = "contatto";
 const flusso = document.getElementById("flusso");
 const attesa = ms => new Promise(r => setTimeout(r, ms));
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const nomeDi = c => c.pg ? `<span class="chi">Tu</span>` : `<span class="chi lui">Lui</span>`;
 
+/* ── stato in alto: i pallini del Ki ── */
+function pips(c, id){
+  const box = document.getElementById(id);
+  const prima = box.children.length ? [...box.children].filter(s => !s.classList.contains("vuoto")).length : c.kiMax;
+  const ora = Math.max(0, c.ki);
+  box.innerHTML = "";
+  for (let i = 0; i < c.kiMax; i++) {
+    const s = document.createElement("span");
+    if (i >= ora) { s.className = "vuoto" + (i < prima ? " perso" : ""); }
+    box.appendChild(s);
+  }
+}
+function aggiornaStato(){
+  pips(PG, "pips-pg"); pips(NIP, "pips-nip");
+  document.getElementById("num-pg").textContent = Math.max(PG.ki, 0);
+  document.getElementById("num-nip").textContent = Math.max(NIP.ki, 0);
+  document.getElementById("ki-pg").classList.toggle("genkai", PG.ki <= 3);
+}
+
+/* ── mattoni ── */
 function card(titolo){
   const el = document.createElement("div");
   el.className = "card";
   el.innerHTML = `<h3>${titolo}</h3>`;
   flusso.appendChild(el);
-  el.scrollIntoView({behavior:"smooth", block:"nearest"});
+  el.scrollIntoView({behavior:"smooth", block:"start"});
   return el;
 }
 const scrivi = (el, html) => el.insertAdjacentHTML("beforeend", html);
+const narr = (el, testo) => scrivi(el, `<p class="narr">${testo}</p>`);
+const passo = (el, testo) => scrivi(el, `<p class="passo">${testo}</p>`);
 
-function aggiornaChip(){
-  document.getElementById("chip-pg").textContent = Math.max(PG.vita,0);
-  document.getElementById("chip-nip-v").textContent = Math.max(NIP.vita,0);
-  document.getElementById("chip-nip").classList.toggle("giu", NIP.vita<=0);
+function aiuto(el, domanda, risposta){
+  const id = "a" + Math.random().toString(36).slice(2, 8);
+  scrivi(el, `<div><button class="aiuto" type="button" data-aiuto="${id}" aria-expanded="false">❓ ${domanda}</button><div class="aiuto-testo" id="${id}" hidden>${risposta}</div></div>`);
 }
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-aiuto]");
+  if (!b) return;
+  const t = document.getElementById(b.dataset.aiuto);
+  t.hidden = !t.hidden;
+  b.setAttribute("aria-expanded", String(!t.hidden));
+});
 
 async function tiraDadi(el, etichetta){
-  const id = "d" + Math.random().toString(36).slice(2,8);
-  scrivi(el, `<div class="dadi-riga">${etichetta} <span class="dado rotola" id="${id}a">·</span><span class="dado rotola" id="${id}b">·</span> <span id="${id}t"></span></div>`);
+  const id = "d" + Math.random().toString(36).slice(2, 8);
+  scrivi(el, `<div class="tiro"><div class="eti">${etichetta}</div><div class="dadi-riga"><span class="dado rotola" id="${id}a">·</span><span class="dado rotola" id="${id}b">·</span><span class="conto" id="${id}t"></span></div></div>`);
   const da = document.getElementById(id+"a"), db = document.getElementById(id+"b");
-  const giro = setInterval(()=>{ da.textContent=d6(); db.textContent=d6(); }, 80);
-  await attesa(600);
+  const giro = setInterval(() => { da.textContent = d6(); db.textContent = d6(); }, 80);
+  await attesa(650);
   clearInterval(giro);
   const a = d6(), b = d6();
   da.textContent = a; db.textContent = b;
   da.classList.remove("rotola"); db.classList.remove("rotola");
+  da.parentElement.scrollIntoView({behavior:"smooth", block:"nearest"});
   return [a, b, document.getElementById(id+"t")];
 }
 
@@ -163,171 +293,227 @@ function scelta(el, opzioni, inRiga){
     const box = document.createElement("div");
     box.className = "bottoni" + (inRiga ? " riga" : "");
     box.innerHTML = opzioni.map(o =>
-      `<button class="btn${o.forte?" btn-forte":""}" data-s="${o.v}"${o.off?" disabled":""}>${o.testo}${o.sotto?`<small>${o.sotto}</small>`:""}</button>`).join("");
+      `<button type="button" class="btn${o.forte ? " btn-forte" : ""}" data-s="${o.v}"${o.off ? " disabled" : ""}>${o.testo}${o.sotto ? `<small>${o.sotto}</small>` : ""}</button>`).join("");
     el.appendChild(box);
+    box.scrollIntoView({behavior:"smooth", block:"nearest"});
     box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
-      box.querySelectorAll("button").forEach(x => {
-        x.disabled = true;
-        if (x !== b) { x.style.opacity = ".25"; x.classList.remove("btn-forte"); }
-      });
-      b.style.background = "var(--oro)"; b.style.borderColor = "var(--oro)"; b.style.color = "#fff";
+      box.querySelectorAll("button").forEach(x => { x.disabled = true; if (x !== b) x.classList.remove("btn-forte"); });
+      b.classList.add("scelto");
       b.innerHTML = "✓ " + b.innerHTML;
       risolvi(b.dataset.s);
     }));
   });
 }
 
-/* ═══════ LO SCAMBIO — un passo alla volta ═══════ */
+/* velocità dell'azione dichiarata (colonna Colpire / Estrarre, o scala delle azioni) */
+function velocita(c){
+  if (c.dich === "attacco") return c.daSfoderare ? c.arma.estrarre : c.arma.colpire;
+  return 2; /* minaccia, arretro, esco, avanza, raccolgo: un movimento [da validare per la minaccia] */
+}
+const etichettaVel = c => ({
+  attacco: c.daSfoderare ? `${c.arma.nome} da riprendere in mano` : c.arma.nome,
+  minaccia:"la minaccia", arretro:"il movimento", esco:"il movimento", avanza:"il movimento", raccolgo:"raccogliere l'arma", aspetto:"restare fermo"
+})[c.dich];
+
+/* ═══════ LO SCAMBIO ═══════ */
 async function scambio(){
   const el = card(`Scambio ${N}`);
-  [PG, NIP].forEach(c => { c.dich = null; c.agito = false; c.colpito = false; c.convertito = false; c.difesaUsata = false; c.tame = 0; c.spendiKi = false; });
+  [PG, NIP].forEach(c => { c.dich = null; c.agito = false; c.colpito = false; c.ukemi = false; c.tame = 0; c.spendiKi = false; });
 
-  if (N === 1) scrivi(el, `<p class="impara">Ogni scambio funziona così: prima ognuno <b>dichiara</b> cosa fa, poi i dadi decidono <b>chi agisce per primo</b>, poi si risolve.</p>`);
+  if (N === 1) scrivi(el, `<p class="regola">Uno scontro va a <b>scambi</b>. In ogni scambio: ① ognuno dice cosa fa · ② i dadi decidono <b>chi agisce per primo</b> · ③ si agisce, in quell'ordine.</p>`);
 
-  NIP.dich = "attacco";
-  scrivi(el, `<p>${cap(NIP.nome)} stringe il coltello e ti punta: <b>attacca</b>.</p>`);
+  /* ① dichiarazioni */
+  passo(el, "① Cosa fate");
+  if (NIP.raccogliere) { NIP.dich = "raccolgo"; narr(el, "Il ragazzo si butta a terra a cercare il coltello sotto il tavolo: <b>raccoglie l'arma</b>."); }
+  else if (fascia === "vicino") { NIP.dich = "avanza"; narr(el, `Il ragazzo gira attorno al tavolo e <b>ti viene dietro</b>, il ${NIP.arma.nome === "mani nude" ? "pugno" : "coltello"} avanti.`); }
+  else { NIP.dich = "attacco"; narr(el, NIP.arma === ARMI.lotta ? "Il ragazzo, a mani nude, ti si butta addosso: <b>attacca</b>." : `Il ragazzo stringe il coltello e ${NIP.intimidito ? "— ancora scosso dalla tua voce — " : ""}ti punta: <b>attacca</b>.`); }
 
-  scrivi(el, `<p><b>Cosa fai?</b></p>`);
-  const opzioni = [
-    { v:"attacco", forte:true, testo:"⚔ Attacco col manganello", sotto:"tiro 2d6: con 5 o meno (il mio Silenzio) lo colpisco — danno 2 + precisione" },
-    { v:"minaccia", testo:"🗣 Lo minaccio — «Metti giù il coltello!»", sotto:"tiro su Presenza 4: se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)" },
-    { v:"movimento", testo:"↩ Indietreggio", sotto:"guadagno spazio senza attaccare (e resto pronto a reagire)" },
-  ];
-  if (N >= 2) {
-    opzioni.splice(1, 0, { v:"tame", testo:"⚔ Attacco in Tame — «trattengo il fiato»", sotto:"agisco più tardi (+2 iniziativa), ma tiro l'attacco a −2" });
+  scrivi(el, `<p><b>E tu?</b></p>`);
+  const S = PG.attr.Silenzio, Pz = PG.attr.Presenza;
+  let opzioni;
+  if (PG.raccogliere) {
+    opzioni = [
+      { v:"raccolgo", forte:true, testo:"Raccolgo il manganello", sotto:"è a terra: recuperarlo mi costa l'azione di questo scambio" },
+      { v:"minaccia", testo:"Lo minaccio — «Metti giù il coltello!»", sotto:`tiro 2d6 ≤ Presenza ${Pz}: se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
+    ];
+  } else if (fascia === "contatto") {
+    const armaN = PG.arma.nome;
+    opzioni = [
+      { v:"attacco", forte:true, testo:`Attacco col ${armaN}`, sotto:`tiro 2d6 ≤ ${PG.arma.attacco} ${PG.attr[PG.arma.attacco]}: se riesce lo colpisco — danno ${PG.arma.danno} + quanto sto sotto` },
+      { v:"minaccia", testo:"Lo minaccio — «Metti giù il coltello!»", sotto:`tiro 2d6 ≤ Presenza ${Pz} (difficile: la tua Presenza è bassa). Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
+      { v:"arretro", testo:"Arretro verso la porta", sotto:"esco dalla portata del coltello: se ci arrivo prima che colpisca, stavolta non mi prende" },
+    ];
+    if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`Attacco trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso (−2 al tiro: colpisco fino a ${Math.min(12, S + 2)})` });
+  } else {
+    opzioni = [
+      { v:"esco", forte:true, testo:"Esco e chiudo la porta", sotto:"fine dello scontro: aspetti i rinforzi dall'altra parte" },
+      { v:"minaccia", testo:"Lo minaccio — «Fermo lì!»", sotto:`tiro 2d6 ≤ Presenza ${Pz}: se riesce, al prossimo scambio esita (+2 alla sua iniziativa)` },
+      { v:"aspetto", testo:"Resto fermo e lo aspetto", sotto:"non agisco: mi preparo. Il prossimo tiro che farò avrà −1" },
+    ];
   }
   const s = await scelta(el, opzioni);
-  PG.dich = (s === "minaccia" || s === "movimento") ? s : "attacco";
+  PG.dich = s === "tame" ? "attacco" : s;
   PG.tame = s === "tame" ? 2 : 0;
-  PG.spendiKi = false;
-  if (N === 1) scrivi(el, `<p class="impara">Dichiarato. Ora l'iniziativa: 2d6 più i modificatori — <b>vince il totale più basso</b>.</p>`);
+  if (s === "tame") scrivi(el, `<p class="regola">«Trattengo il fiato, in Tame.» Il rischio: se ti colpiscono prima che agisci, il colpo non parte mai.</p>`);
 
-  scrivi(el, `<p class="tiro" style="margin-top:.6rem"><b>Iniziativa</b> — chi fa meno, agisce prima:</p>`);
+  /* ② iniziativa */
+  passo(el, "② Chi è più veloce");
+  if (N === 1) scrivi(el, `<p class="regola">Ognuno tira 2 dadi e somma: il modificatore di <b>Presenza</b> (chi ne ha di più è pronto prima) e la <b>velocità</b> di quel che fa (un coltello già in mano è più rapido di un manganello). <b>Il totale più basso agisce per primo.</b></p>`);
   for (const c of [PG, NIP]) {
-    if (c.vita <= 0) continue;
-    const [a, b, t] = await tiraDadi(el, `<b>${cap(c.nome)}</b>`);
-    const mod = MOD_P[c.attr.Presenza] ?? 0;
-    const inti = c.intimidito ? 2 : 0;
-    c.ini = a + b + mod + c.arma.vel + (c.tame || 0) + inti;
-    t.innerHTML = `${a}+${b} ${mod>=0?"+"+mod:mod} (Presenza ${c.attr.Presenza}) +${c.arma.vel} (${c.arma.nome})${c.tame?` +${c.tame} (Tame)`:""}${inti?` +2 (intimidito)`:""} = <b>${c.ini}</b>`;
+    if (c.ki <= 0) continue;
+    if (c.dich === "aspetto") { c.ini = 99; scrivi(el, `<p class="regola">${nomeDi(c)} non tiri: resti fermo, e ti prepari.</p>`); continue; }
+    const [a, b, t] = await tiraDadi(el, `${nomeDi(c)} iniziativa`);
+    const mod = MOD_P[c.attr.Presenza] ?? 0, vel = velocita(c), inti = c.intimidito ? 2 : 0;
+    c.ini = a + b + mod + vel + (c.tame || 0) + inti;
+    t.innerHTML = `${a}+${b} = ${a+b}, ${mod >= 0 ? "+" + mod : mod} (Presenza ${c.attr.Presenza}${mod > 0 ? ": lento" : mod < 0 ? ": pronto" : ""}), +${vel} (${etichettaVel(c)})${c.tame ? `, +${c.tame} (trattieni il fiato)` : ""}${inti ? `, +2 (intimidito)` : ""} = <b>${c.ini}</b>`;
     c.intimidito = false;
   }
-  const ordine = [PG, NIP].filter(c=>c.vita>0).sort((x,y)=>x.ini-y.ini);
-  const pari = ordine.length > 1 && ordine[0].ini === ordine[1].ini;
-  scrivi(el, `<p class="tiro">${pari ? "<b>Parità: agite nello stesso istante.</b>" : `Agisce prima <b>${ordine[0].nome === "TU" ? "TU" : ordine[0].nome}</b> (${ordine[0].ini} contro ${ordine[1] ? ordine[1].ini : "—"}).`}</p>`);
+  const ordine = [PG, NIP].filter(c => c.ki > 0).sort((x, y) => x.ini - y.ini);
+  const pari = ordine.length > 1 && ordine[0].ini === ordine[1].ini && ordine[0].ini < 99;
+  if (PG.dich === "aspetto") scrivi(el, `<p class="verdetto">Agisce solo lui.</p>`);
+  else if (pari) scrivi(el, `<p class="verdetto"><b>Stessa iniziativa: agite nello stesso istante.</b></p>`);
+  else scrivi(el, `<p class="verdetto">Agisce prima ${ordine[0].pg ? "<b>TU</b>" : "<b>LUI</b>"} (${ordine[0].ini} contro ${ordine[1].ini}).${N === 1 ? " Meno fai coi dadi, prima ti muovi." : ""}</p>`);
+  if (N === 1) aiuto(el, "Perché la tua Presenza ti rallenta", `In GENKAI <b>meno fai coi dadi, meglio è</b> — sempre. La Presenza 4 ti aggiunge +2 all'iniziativa (quindi agisci dopo); una Presenza 8 avrebbe tolto 2. Il manganello aggiunge 2, il coltello in mano solo 1: la lama è più rapida.`);
 
+  /* ③ azioni */
+  passo(el, "③ Le azioni");
   for (const c of ordine) {
-    if (c.vita <= 0) continue;
-    if (c.colpito && !pari) { scrivi(el, c.pg ? `<p>Sei stato colpito prima di agire: <b>la tua azione è persa</b>.</p>` : `<p>${cap(c.nome)} è stato colpito prima di agire: <b>la sua azione è persa</b>.</p>`); continue; }
-    if (c.convertito) { scrivi(el, c.pg ? `<p>Sei in Ukemi: la tua azione è già spesa.</p>` : `<p>${cap(c.nome)} è in Ukemi: la sua azione è già spesa.</p>`); continue; }
+    if (c.ki <= 0 || PG.ki <= 0 || NIP.ki <= 0) break;
+    if (c.colpito && !pari) { scrivi(el, `<p>${nomeDi(c)} ${c.pg ? "Sei stato colpito prima di agire: <b>la tua azione è persa</b>." : "È stato colpito prima di agire: <b>la sua azione è persa</b>."}</p>`); continue; }
+    if (c.ukemi) { scrivi(el, `<p>${nomeDi(c)} ${c.pg ? "Hai speso l'azione per difenderti: in questo scambio non fai altro." : "Ha speso l'azione per difendersi: non fa altro."}</p>`); continue; }
+    c.agito = true;
+
     if (c.dich === "minaccia") {
-      c.agito = true;
-      const [ma, mb, mt] = await tiraDadi(el, `<b>TU</b> lo minacci (Presenza ${c.attr.Presenza})`);
-      mt.innerHTML = `${ma}+${mb}=${ma+mb} contro <b>${c.attr.Presenza}</b>`;
-      if (ma+mb <= c.attr.Presenza) { NIP.intimidito = true;
-        scrivi(el, `<p class="parata">La voce esce giusta: il ragazzo esita, il coltello trema. <b>Al prossimo scambio sarà più lento (+2 alla sua iniziativa).</b></p>`); }
-      else scrivi(el, `<p class="tiro">${ma+mb} > ${c.attr.Presenza}: la voce non basta — non trema.</p>`);
+      const prep = c.preparato ? 1 : 0; c.preparato = false;
+      const [ma, mb, mt] = await tiraDadi(el, `${nomeDi(c)} minacci (Presenza ${c.attr.Presenza})`);
+      const tot = Math.max(2, ma + mb - prep);
+      mt.innerHTML = `${ma}+${mb} = ${ma+mb}${prep ? ` −1 (preparato) = ${tot}` : ""} contro <b>${c.attr.Presenza}</b>: ${tot <= c.attr.Presenza ? "<b>riuscito</b>" : "fallito"}`;
+      if (tot <= c.attr.Presenza) { NIP.intimidito = true; narr(el, `La voce esce giusta, bassa e ferma: il ragazzo esita, la punta del coltello trema. <span class="parata">Al prossimo scambio sarà più lento: +2 alla sua iniziativa.</span>`); }
+      else narr(el, "La voce ti esce troppo alta, incrinata: lui non sente altro che la propria paura.");
       continue;
     }
-    if (c.dich === "movimento") { c.agito = true;
-      scrivi(el, `<p class="tiro">Indietreggi di un passo, il tavolo tra voi: niente attacco, ma resti pronto.</p>`); continue; }
-    if (c.dich === "difesa") { scrivi(el, `<p class="tiro">${cap(c.nome)} resta in guardia.</p>`); c.agito = true; continue; }
-    c.agito = true;
+    if (c.dich === "arretro") {
+      fascia = "vicino";
+      narr(el, "Fai due passi indietro, fino allo stipite della porta: <b>il coltello non ti arriva più</b>.");
+      if (!NIP.agito && NIP.dich === "attacco") scrivi(el, `<p class="regola">Il suo attacco era già dichiarato, ma tu non sei più a portata: <b>colpirà il vuoto</b>.</p>`);
+      continue;
+    }
+    if (c.dich === "esco") { return epilogo("fuga"); }
+    if (c.dich === "aspetto") { c.preparato = true; scrivi(el, `<p class="regola">${nomeDi(c)} Non agisci: ti prepari. <b>−1 al tuo prossimo tiro.</b></p>`); continue; }
+    if (c.dich === "avanza") {
+      fascia = "contatto";
+      narr(el, "Ti raggiunge in due passi: siete di nuovo a portata di lama.");
+      continue;
+    }
+    if (c.dich === "raccolgo") { c.raccogliere = false; narr(el, c.pg ? "Ti abbassi e recuperi il manganello: sei di nuovo armato." : "Si rialza col coltello in mano."); continue; }
+
+    /* attacco */
     const bersaglio = c === NIP ? PG : NIP;
-    if (bersaglio.vita <= 0) continue;
+    if (c === NIP && fascia === "vicino") { narr(el, caso(["La lama affonda nell'aria, dove eri un attimo fa.", "Colpisce il vuoto e sbatte contro lo stipite."])); continue; }
     await attacco(c, bersaglio, el);
-    aggiornaChip();
-    if (PG.vita <= 0) return epilogo("morto");
+    aggiornaStato();
+    if (PG.ki <= 0) return epilogo("morto");
   }
 
-  aggiornaChip();
-  if (NIP.vita <= 0) return epilogo("vinto");
-  scrivi(el, `<p class="tiro" style="margin-top:.5rem">Fine scambio ${N} — TU: Ki <b>${PG.vita}</b> · ${NIP.nome}: Ki <b>${Math.max(NIP.vita,0)}</b></p>`);
-  if (N === 1) scrivi(el, `<p class="impara">Dal prossimo scambio hai in più l'attacco in <b>Tame</b>: trattenere il fiato per colpire meglio.</p>`);
-  if (PG.vita <= 3) scrivi(el, `<p class="nota">Ki ${PG.vita} — sei oltre il limite: se lo scontro finisse ora, il <b>Genkai</b> ti aspetta.</p>`);
+  aggiornaStato();
+  if (NIP.ki <= 0) return epilogo("vinto");
+  scrivi(el, `<p class="regola" style="margin-top:.8rem">Fine dello scambio ${N} — tu <b>Ki ${PG.ki}</b> · lui <b>Ki ${Math.max(NIP.ki, 0)}</b>.</p>`);
+  if (N === 1) scrivi(el, `<p class="nota">Dal prossimo scambio hai un'opzione in più: <b>attaccare trattenendo il fiato</b> (in gioco si chiama <b>Tame</b>). Agisci più tardi, ma il colpo è più preciso.</p>`);
+  if (PG.ki <= 3) scrivi(el, `<p class="nota">Ki ${PG.ki} — <b>sei oltre il limite</b>. In combattimento si va avanti: ma se lo scontro finisse adesso, crolleresti. È il <b>Genkai</b>.</p>`);
   await scelta(el, [{ v:"avanti", forte:true, testo:`Scambio ${N+1} →` }], true);
   N++;
   scambio();
 }
 
-function cap(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
-
-/* ═══════ ATTACCO (con Ukemi alla cieca) ═══════ */
+/* ═══════ L'ATTACCO (con Ukemi) ═══════ */
 async function attacco(att, dif, el){
-  if (dif.dich !== "difesa" && !dif.agito && !dif.convertito && dif.vita > 0) {
+  /* Ukemi: il bersaglio non ha ancora agito → può convertire la sua azione in difesa, prima del tiro */
+  if (!dif.agito && !dif.ukemi && dif.ki > 0) {
     if (dif.pg) {
       const box = document.createElement("div");
       box.className = "urgente";
-      box.innerHTML = `<h4>La lama parte — e tu non hai ancora agito</h4>
-        <p style="margin:.2rem 0;font-size:.95rem">Decidi <b>adesso</b>, prima che il colpo si veda:</p>`;
+      const attrD = dif.attr[att.arma.difesa];
+      box.innerHTML = `<h4>${att.arma.nome === "mani nude" ? "Il pugno parte" : "La lama parte"} — e tu non hai ancora agito</h4>
+        <p>Decidi <b>adesso</b>, prima del suo tiro. Puoi tenere la tua azione e incassare, oppure rinunciarci per difenderti.</p>`;
       el.appendChild(box);
-      box.scrollIntoView({behavior:"smooth", block:"nearest"});
       const s = await scelta(box, [
-        { v:"no", testo:"⚔ Tengo il mio attacco", sotto:"incasso il colpo senza difendermi, ma la mia azione resta" },
-        { v:"si", forte:true, testo:"🛡 Vado in Ukemi 受け身", sotto:"il mio attacco sfuma: mi difendo col tiro su Pazienza 5" },
-        { v:"ki", testo:"🛡 Ukemi bruciando 1 Ki", sotto:"come sopra, con −2 al tiro di difesa", off: PG.vita < 2 },
+        { v:"no", testo:`Tengo la mia azione`, sotto:"incasso il colpo senza tiro di difesa; se non mi ferma, poi agisco" },
+        { v:"si", testo:`Lascio la mia azione e mi difendo`, sotto:`in gioco: Ukemi. Tiro 2d6 ≤ ${att.arma.difesa} ${attrD}: quanto sto sotto, lo paro. La mia azione però è spesa` },
+        { v:"ki", testo:`Mi difendo bruciando 1 Ki`, sotto:`come sopra, ma con −2 al tiro. Il Ki speso non torna (ne ho ${dif.ki})`, off: dif.ki < 2 },
       ]);
-      if (s !== "no") { dif.convertito = true; dif.dich = "difesa"; dif.spendiKi = (s === "ki");
-        scrivi(el, `<p class="nota">«Vado in difensiva, in Ukemi»${s==="ki"?" — e bruci 1 Ki":""}.</p>`); }
-      else scrivi(el, `<p class="tiro">Tieni il tuo attacco: ti prendi il rischio.</p>`);
-    } else {
-      if (dif.vita <= 2 && Math.random() < .5) {
-        dif.convertito = true; dif.dich = "difesa";
-        scrivi(el, `<p class="nota">${cap(dif.nome)} vede il manganello calare e si copre: <b>va in Ukemi</b> — il suo attacco sfuma.</p>`);
-      }
+      if (s !== "no") { dif.ukemi = true; dif.spendiKi = (s === "ki");
+        narr(el, `«Vado in difensiva.» Lasci andare il colpo che avevi in mente${s === "ki" ? " — e ci metti dentro un pezzo di te" : ""}: ora conta solo non farti prendere.`); }
+      else narr(el, "Tieni la posizione e il manganello alto: ti prendi il rischio.");
+      if (N === 1) aiuto(el, "Perché non difendersi sempre", `Difendersi <b>costa l'azione</b>: se ti difendi, in questo scambio non colpisci. E chi ha <b>già agito</b> non può più difendersi: <i>prima agisci, prima ti scopri</i>. Per questo ci si difende solo quando il colpo arriva prima del tuo turno.`);
+    } else if (dif.ki <= 2 && Math.random() < .5) {
+      dif.ukemi = true;
+      narr(el, "Vede il manganello calare e si copre con le braccia: <b>rinuncia al suo colpo per difendersi</b>.");
     }
   }
 
-  const [a, b, t] = await tiraDadi(el, `<b>${att.pg ? "TU" : cap(att.nome)}</b> ${att.pg ? "attacchi" : "attacca"} (${att.arma.attacco} ${att.attr[att.arma.attacco]})`);
-  const somma = a + b;
-  const tiro = Math.max(2, somma - (att.tame || 0));
+  const prep = att.preparato ? 1 : 0; att.preparato = false;
   const soglia = att.attr[att.arma.attacco];
-  t.innerHTML = `${a}+${b}=${somma}${att.tame?` −${att.tame} (Tame) = ${tiro}`:""} contro <b>${soglia}</b>`;
+  const [a, b, t] = await tiraDadi(el, `${nomeDi(att)} ${att.pg ? "attacchi" : "attacca"} — ${att.arma.nome}, ${att.arma.attacco} ${soglia}`);
+  const somma = a + b;
+  const tiro = Math.max(2, somma - (att.tame || 0) - prep);
+  t.innerHTML = `${a}+${b} = ${somma}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${(att.tame || prep) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
 
-  if (a===6 && b===6) { const imp = d6();
-    scrivi(el, `<p class="nota">⚠ <b>6+6 — fallimento critico!</b> Non solo manca: ${TAB66[imp-1]} (1d6 = ${imp}).</p>`); return; }
-  if (tiro > soglia) { scrivi(el, `<p class="tiro">${tiro} &gt; ${soglia}: <b>mancato</b>.</p>`); return; }
+  if (a === 6 && b === 6) {
+    const imp = d6(), riga = TAB66[imp-1];
+    scrivi(el, `<p class="nota">⚠ <b>Doppio 6: fallimento critico.</b> Non solo manca — succede un imprevisto (1d6 = ${imp}): ${riga.t}.</p>`);
+    let eff = riga.eff;
+    if (att.incrinata && eff !== "rompe") { eff = "rompe"; scrivi(el, `<p class="regola">L'arma era già incrinata: <b>si rompe</b>.</p>`); }
+    if (eff === "sfodera") att.daSfoderare = true;
+    if (eff === "cade") att.raccogliere = true;
+    if (eff === "incrina") att.incrinata = true;
+    if (eff === "rompe") { att.arma = ARMI.lotta; att.incrinata = false; }
+    return;
+  }
+  att.daSfoderare = false;
+  if (tiro > soglia) { narr(el, caso(att.pg ? TESTI.tuManchi : TESTI.luiManca)); return; }
 
   let scarto = soglia - tiro, extra = 0;
-  if (a===1 && b===1) { extra = d6(); scrivi(el, `<p class="nota">★ <b>1+1 — colpo perfetto!</b> +1d6 = +${extra} danni.</p>`); }
+  if (a === 1 && b === 1) { extra = d6(); scrivi(el, `<p class="nota">★ <b>Doppio 1: colpo perfetto!</b> +1d6 danni = +${extra}.</p>`); }
   const inArrivo = scarto + att.arma.danno + extra;
-  scrivi(el, `<p class="colpo">Colpito! Precisione ${scarto} <span class="tiro">(attributo ${soglia} − tiro ${tiro}: più stai sotto, più il colpo è preciso)</span> + ${att.arma.nome} ${att.arma.danno}${extra?` + critico ${extra}`:""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
+  scrivi(el, `<p class="colpo">Colpito: precisione ${scarto} + ${att.arma.nome} ${att.arma.danno}${extra ? ` + ${extra} (critico)` : ""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
+  if (N === 1 && !el.dataset.precisione) { el.dataset.precisione = "1"; aiuto(el, "Cos'è la precisione", `È di quanto il tiro sta <b>sotto</b> l'attributo: attributo ${soglia} − tiro ${tiro} = <b>${scarto}</b>. Più stai sotto, più il colpo è preciso — e la precisione si somma al danno dell'arma (${att.arma.nome}: ${att.arma.danno}).`); }
 
   let parata = 0;
-  if (dif.dich === "difesa" && !dif.difesaUsata) {
-    dif.difesaUsata = true;
+  if (dif.ukemi) {
     const attrDif = dif.attr[att.arma.difesa];
     let bonus = 0;
-    if (dif.spendiKi && dif.vita >= 2) { dif.vita -= 1; bonus = 2;
-      scrivi(el, dif.pg ? `<p class="nota">Bruci 1 Ki (te ne restano ${dif.vita}): −2 al tiro di difesa.</p>` : `<p class="nota">${cap(dif.nome)} brucia 1 Ki (resta ${dif.vita}): −2 al tiro di difesa.</p>`); aggiornaChip(); }
-    const [da, db, td] = await tiraDadi(el, `<b>${dif.pg ? "TU" : cap(dif.nome)}</b> ${dif.pg ? "ti difendi" : "si difende"} (${att.arma.difesa} ${attrDif})`);
-    const tiroD = Math.max(2, da + db - bonus);
-    td.innerHTML = `${da}+${db}=${da+db}${bonus?` −${bonus} = ${tiroD}`:""} contro <b>${attrDif}</b>`;
-    if (da===6 && db===6) scrivi(el, `<p class="tiro">6+6 in difesa: semplicemente fallita.</p>`);
+    if (dif.spendiKi && dif.ki >= 2) { dif.ki -= 1; bonus = 2; aggiornaStato();
+      scrivi(el, `<p class="nota">${dif.pg ? `Bruci 1 Ki (te ne restano ${dif.ki})` : `Brucia 1 Ki (gli restano ${dif.ki})`}: −2 al tiro di difesa.</p>`); }
+    const prepD = dif.preparato ? 1 : 0; dif.preparato = false;
+    const [da, db, td] = await tiraDadi(el, `${nomeDi(dif)} ${dif.pg ? "ti difendi" : "si difende"} — ${att.arma.difesa} ${attrDif}`);
+    const tiroD = Math.max(2, da + db - bonus - prepD);
+    td.innerHTML = `${da}+${db} = ${da+db}${bonus ? ` −${bonus} (Ki)` : ""}${prepD ? ` −1 (preparato)` : ""}${(bonus || prepD) ? ` = ${tiroD}` : ""} contro <b>${attrDif}</b>: ${tiroD <= attrDif && !(da === 6 && db === 6) ? "<b>riuscito</b>" : "<b>fallito</b>"}`;
+    if (da === 6 && db === 6) { scrivi(el, `<p class="regola">Doppio 6 in difesa: semplicemente fallita, niente imprevisti.</p>`); narr(el, caso(TESTI.ukemiNo)); }
     else if (tiroD <= attrDif) {
       parata = attrDif - tiroD;
-      let extraP = 0;
-      if (da===1 && db===1) { extraP = d6(); parata += extraP; scrivi(el, `<p class="nota">★ 1+1 in difesa — parata perfetta: +${extraP}.</p>`); }
-      scrivi(el, `<p class="parata">Difesa riuscita: para ${parata}.</p>`);
-    } else scrivi(el, `<p class="tiro">${tiroD} &gt; ${attrDif}: difesa fallita.</p>`);
-  } else if (dif.dich === "difesa" && dif.difesaUsata) {
-    scrivi(el, dif.pg ? `<p class="tiro">Hai già speso la difesa in questo scambio: incassi.</p>` : `<p class="tiro">${cap(dif.nome)} ha già speso la difesa in questo scambio: incassa.</p>`);
+      if (da === 1 && db === 1) { const ep = d6(); parata += ep; scrivi(el, `<p class="nota">★ Doppio 1 in difesa — parata perfetta: +${ep}.</p>`); }
+      scrivi(el, `<p class="parata">Difesa riuscita: pari ${parata} (${attrDif} − ${tiroD}${da === 1 && db === 1 ? " + critico" : ""}).</p>`);
+      if (dif.pg) narr(el, parata >= inArrivo ? caso(TESTI.ukemiOk) : "Devii la lama, ma non del tutto.");
+    } else { scrivi(el, `<p class="regola">Difesa fallita: pari 0.</p>`); if (dif.pg) narr(el, caso(TESTI.ukemiNo)); }
   } else {
-    scrivi(el, dif.pg ? `<p class="tiro">${dif.agito ? "Hai già agito: niente difesa — prima agisci, prima ti scopri" : "Non sei in difesa: incassi"}.</p>` : `<p class="tiro">${cap(dif.nome)} ${dif.agito ? "ha già agito: niente difesa" : "non è in difesa: incassa"}.</p>`);
+    scrivi(el, `<p class="regola">${dif.pg ? (dif.agito ? "Hai già agito: niente tiro di difesa — <i>prima agisci, prima ti scopri</i>." : "Non ti difendi: incassi.") : (dif.agito ? "Ha già agito: niente difesa." : "Non si difende: incassa.")}</p>`);
   }
 
   const netto = Math.max(0, inArrivo - parata);
-  scrivi(el, `<p><b>Danno: ${inArrivo}${parata?` − ${parata} parati`:""} = ${netto}</b> → ${dif.pg ? "il tuo" : "il suo"} Ki scende a <b>${Math.max(dif.vita - netto, 0)}</b></p>`);
+  scrivi(el, `<p class="regola"><b>Danno ${inArrivo}${parata ? ` − ${parata} parati` : ""} = ${netto}</b> → ${dif.pg ? "il tuo" : "il suo"} Ki ${dif.ki} → <b>${Math.max(dif.ki - netto, 0)}</b></p>`);
   if (netto > 0) {
-    dif.vita -= netto;
+    dif.ki -= netto;
     dif.colpito = true;
+    aggiornaStato();
+    if (!dif.ukemi) narr(el, dif.pg ? caso(netto >= 4 ? TESTI.luiColpisceForte : TESTI.luiColpisce) : caso(netto >= 4 ? TESTI.tuColpisciForte : TESTI.tuColpisci));
+    if (dif.ki <= 0) { narr(el, dif.pg ? "Il pavimento arriva prima del dolore." : "Il coltello batte sul pavimento un attimo prima di lui: <b>è a terra, fuori combattimento</b>."); return; }
     await stringereIDenti(dif, netto, el);
-  }
+  } else if (dif.ukemi) narr(el, dif.pg ? "Nemmeno un graffio." : "Il colpo gli arriva sulle braccia alzate: niente.");
 }
 
-/* Stringere i Denti: danno netto 1-2 -> paghi 1 punto dell'attributo in uso e l'azione non va persa */
+/* Stringere i Denti: danno netto 1-2, azione non ancora fatta, attributo in uso > 4 */
 async function stringereIDenti(dif, netto, el){
-  if (netto > 2 || dif.vita <= 0 || dif.agito || dif.convertito) return;
+  if (netto > 2 || dif.agito || dif.ukemi) return;
   const attrAzione = dif.dich === "minaccia" ? "Presenza" : (dif.dich === "attacco" ? dif.arma.attacco : null);
   if (!attrAzione || dif.attr[attrAzione] <= 4) return;
   const val = dif.attr[attrAzione];
@@ -335,58 +521,58 @@ async function stringereIDenti(dif, netto, el){
     const box = document.createElement("div");
     box.className = "urgente";
     box.innerHTML = `<h4>Il colpo è leggero — puoi stringere i denti</h4>
-      <p style="margin:.2rem 0;font-size:.95rem">Con un danno di 1 o 2 puoi rifiutarti di perdere l'azione: paghi <b>1 punto di ${attrAzione}</b> (${val} → ${val-1} per il resto dello scontro; la notte lo ripara) e la tua azione parte comunque.</p>`;
+      <p>Un danno di 1 o 2 ti fermerebbe: la tua azione andrebbe persa. Puoi rifiutarti di fermarti pagando <b>1 punto di ${attrAzione}</b> (${val} → ${val-1} fino a domani): la tua azione parte comunque.</p>`;
     el.appendChild(box);
-    box.scrollIntoView({behavior:"smooth", block:"nearest"});
     const s = await scelta(box, [
-      { v:"si", forte:true, testo:"💪 Stringo i denti", sotto:`pago 1 punto di ${attrAzione} e la mia azione non va persa` },
-      { v:"no", testo:"Lascio perdere", sotto:"il colpo mi ferma: la mia azione è persa" },
+      { v:"si", testo:"Stringo i denti", sotto:`${attrAzione} ${val} → ${val-1}, e agisco lo stesso` },
+      { v:"no", testo:"Il colpo mi ferma", sotto:"la mia azione è persa; l'attributo resta intero" },
     ]);
-    if (s === "si") {
-      dif.attr[attrAzione] -= 1;
-      dif.colpito = false;
-      scrivi(el, `<p class="nota">Stringi i denti: ${attrAzione} ${val} → <b>${val-1}</b>, ma resti in piedi e la tua azione parte.</p>`);
-    } else scrivi(el, `<p class="tiro">Il colpo ti ferma: la tua azione è persa.</p>`);
-  } else {
-    if (Math.random() < .5) {
-      dif.attr[attrAzione] -= 1;
-      dif.colpito = false;
-      scrivi(el, `<p class="nota">${cap(dif.nome)} stringe i denti (${attrAzione} ${val} → ${val-1}): incassa e viene avanti lo stesso.</p>`);
-    }
+    if (s === "si") { dif.attr[attrAzione] -= 1; dif.colpito = false; narr(el, `Stringi i denti: ${attrAzione} ${val} → <b>${val-1}</b>. Resti in piedi, e il tuo colpo parte.`); }
+    else narr(el, "Il colpo ti piega: per questo scambio non fai altro.");
+  } else if (Math.random() < .5) {
+    dif.attr[attrAzione] -= 1; dif.colpito = false;
+    narr(el, `Il ragazzo stringe i denti (${attrAzione} ${val} → ${val-1}): incassa e viene avanti lo stesso.`);
   }
 }
 
 /* ═══════ EPILOGHI ═══════ */
 function epilogo(tipo){
-  aggiornaChip();
+  aggiornaStato();
   const el = document.createElement("div");
-  el.className = "epilogo " + (tipo === "vinto" ? "vinto" : "perso");
+  el.className = "epilogo " + (tipo === "vinto" ? "vinto" : tipo === "fuga" ? "fuga" : "perso");
+  const visto = `<div class="mecc"><span class="titolo">Cosa hai visto</span>
+    <ul>
+      <li>Si tira sempre 2d6: <b>somma ≤ attributo</b> = riuscito; quanto stai sotto è la <b>precisione</b></li>
+      <li>Ogni scambio: dichiari · <b>iniziativa</b> (2d6 + Presenza + velocità, il basso agisce prima) · azioni</li>
+      <li>Colpito prima di agire = <b>azione persa</b> (salvo stringere i denti)</li>
+      <li>Difendersi = rinunciare all'azione (<b>Ukemi</b>), deciso prima del tiro avversario; chi ha già agito non si difende</li>
+      <li><b>Tame</b>: trattenere il fiato — più tardi, ma più preciso</li>
+      <li>Il <b>Ki</b> è vita ed energia insieme: a 0 si muore; sotto 3 c'è il <b>Genkai</b></li>
+    </ul></div>`;
   if (tipo === "vinto") {
     el.innerHTML = `<h3>✓ È finita</h3>
-      <p>Il coltello batte sul pavimento un attimo prima di lui. Lo giri a pancia in giù col ginocchio
-      sulla schiena, le manette che si chiudono due volte. Nella cucina resta solo il tuo respiro
-      grosso — e le sirene dei rinforzi, adesso che non servono più.</p>
-      <p class="tiro">Chiudi lo scontro con <b>Ki ${PG.vita}</b>.${PG.vita<=3 ? " Sei oltre il limite: <b>ora che cala il silenzio, il Genkai ti aspetta</b> — il crollo che dà il nome al gioco." : " Il conto stavolta è stato leggero."}</p>
-      <p class="mecc">Hai visto le basi: la dichiarazione, l'iniziativa (il totale basso agisce prima),
-      l'<b>Ukemi</b> alla cieca, il <b>Tame</b>, il Ki che è insieme vita ed energia. Il resto —
-      armi, coperture, manovre — è sulla Scheda del Giocatore.</p>`;
+      <p>Lo giri a pancia in giù col ginocchio sulla schiena, le manette che si chiudono due volte. Nella cucina resta solo il tuo respiro grosso, il neon che frigge — e le sirene dei rinforzi, adesso che non servono più.</p>
+      <p class="regola">Chiudi lo scontro con <b>Ki ${PG.ki}</b> su ${PG.kiMax}.${PG.ki <= 3 ? " <b>Sei oltre il limite</b>: ora che cala il silenzio, il Genkai ti aspetta — il crollo che dà il nome al gioco." : " Il conto, stavolta, è leggero."}</p>
+      <p class="regola">Lui è a Ki 0: un personaggio del GM a zero è <b>fuori combattimento</b> — KO, resa, fuga: lo decide la scena. Per te, invece, a Ki 0 si muore.</p>` + visto;
+  } else if (tipo === "fuga") {
+    el.innerHTML = `<h3>La porta tra voi</h3>
+      <p>Esci nel corridoio e chiudi la porta: la lama batte due volte sul legno, poi silenzio. Ti appoggi al muro col manganello ancora in mano e ascolti le sirene avvicinarsi. Nessuno si è fatto male.</p>
+      <p class="regola">In GENKAI <b>andarsene è spesso la mossa migliore</b>: il combattimento è raro e non perdona. Chiudi con <b>Ki ${PG.ki}</b> su ${PG.kiMax}.${PG.ki <= 3 ? " Sei comunque oltre il limite: il Genkai ti aspetta." : ""}</p>` + visto;
   } else {
-    el.innerHTML = `<h3>☠ A Ki 0 si muore</h3>
-      <p>La lama trova il punto sbagliato e la cucina si spegne come una radio. In GENKAI il
-      combattimento non perdona: era la scena da evitare — o da chiudere prima.</p>
-      <p class="mecc">La lezione: l'<b>Ukemi</b> costa l'azione ma salva la pelle, e la porta era lì.
-      Riprova: stavolta lo sai.</p>`;
+    el.innerHTML = `<h3>☠ Ki 0 — si muore</h3>
+      <p>La lama trova il punto sbagliato e la cucina si spegne come una radio. In GENKAI il combattimento non perdona: era la scena da evitare — o da chiudere prima.</p>
+      <p class="regola">Riprova: stavolta sai cosa costa ogni scelta. La porta era lì.</p>` + visto;
   }
-  el.innerHTML += `<div class="bottoni riga"><button class="btn btn-forte" onclick="location.reload()">↻ Rigioca lo scontro</button></div>`;
+  el.innerHTML += `<div class="bottoni riga"><button type="button" class="btn btn-forte" onclick="location.reload()">↻ Rigioca lo scontro</button></div>`;
   flusso.appendChild(el);
-  el.scrollIntoView({behavior:"smooth", block:"nearest"});
+  el.scrollIntoView({behavior:"smooth", block:"start"});
 }
 
 document.getElementById("inizia").addEventListener("click", () => {
   document.getElementById("inizia").disabled = true;
   scambio();
 });
-aggiornaChip();
+aggiornaStato();
 </script>
 </body>
 </html>

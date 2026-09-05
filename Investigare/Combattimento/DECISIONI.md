@@ -1,7 +1,9 @@
-# Combattimento v3 — decisioni di design (IN LAVORAZIONE)
+# Combattimento v3 — decisioni di design
 
-Fonte: `Simulazione.xlsx` dell'utente + decisioni in sessione (2026-09-03/04).
-Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo design non è chiuso.
+Fonte: `Simulazione.xlsx` dell'utente + decisioni in sessione (2026-09-03/05).
+**Dal 2026-09-05 sera il manuale corrente è `GENKAI_Combattimento.md` v3.0 UNIFICATO** (tutto il
+contenuto v2.1 dentro, regole v3 che comandano); i punti **[da validare]** sono elencati in fondo al
+manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni/`.
 
 ## DECISO
 
@@ -87,7 +89,28 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   Ki ≥ 5 (un Ki 3 «è già in zona Genkai», stona). 5) UI: mai dire «alla cieca» come commento;
   il bottone scelto resta evidenziato (✓ oro) e gli altri sbiadiscono.
 
+- **MANUALE v3.0 UNIFICATO (2026-09-05 sera, richiesta utente «crea un unico manuale v3, il v3
+  comanda sul v2»)**: confronto v2.1 ↔ bozza 3 fatto sezione per sezione. Applicato: tutto il testo
+  v2 mancante è rientrato (intro, esempi riscritti coi numeri v3, tabella velocità azioni con
+  estrarre 4 / ricaricare 5, note armi, muro «mettersi 1», Stringere i Denti nei colpi multipli e per
+  i PNG, cecchino, Brivido sulla Nuca, Senmon in tabella, dopo-scontro e conseguenze integrali);
+  le decisioni del playtest sono nel manuale (**niente azione Difendersi: la difesa è l'Ukemi ·
+  MINACCIARE · Tame = «trattenere il fiato» · mai «alla cieca» · Ki per tutti**); la «Mitraglietta °»
+  della bozza 3 (invenzione mia, non richiesta) è TOLTA e tornano i due mitragliatori v2;
+  «Fuori Tempo» è in appendice come SOSPESA (costruita sul dado basso e sul tetto 9). La bozza 3 è
+  congelata in `versioni/GENKAI_Combattimento_v3.0-bozza3.md`. Il vecchio `Simulatore.html` (pannello
+  tecnico, bocciato) è archiviato in `versioni/`: la simulazione è `Scena_Combattimento_Interattiva.html`.
+  **Buco trovato**: la velocità dell'azione Minacciare non è mai stata fissata (la scena usa 2) → APERTI.
+
 ## APERTI (non decisi — non inventare)
+
+- **Dubbi mandati all'utente il 2026-09-05 sera** (default = com'è scritto ora nel manuale):
+  1) parità d'iniziativa = simultanei; 2) armi ° e logica difese per famiglie; 3) Opportunità 5+;
+  4) soppressione +3 iniziativa; 5) granata → Ukemi su Lucidità; 6) incastro «−1 ravvicinato» v3 con
+  «+1/+2 caotico a contatto» v2; 7) Sotto Tiro: con i 2d6 la velocità 0 batte il tuffo (1) solo ~56%
+  delle volte (in v2 era netto) — va bene?; 8) muoversi+attaccare; 9) Fuori Tempo: ripensare o
+  lasciar cadere; 10) Senmon profili difesa · stallo; 11) taglie Ki PNG 3/6/9 (dopo il commento
+  «Ki 3 è già in Genkai»); 12) **velocità di Minacciare** (0 / 1 / 2 — la scena usa 2).
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
 
