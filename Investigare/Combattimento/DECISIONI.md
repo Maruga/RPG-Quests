@@ -62,6 +62,22 @@ Il canone in vigore resta `../GENKAI_Combattimento.md` (v2) finché questo desig
   giocata (narrazione, scelte, dadi in scena), non un pannello tecnico; 2) inserire il
   combattimento così ottenuto nella MINI-AVVENTURA del sito (sito_genkai/provalo/).
 
+- **`Scena_Combattimento_Interattiva.html`** (2026-09-05): la simulazione GIOCATA richiesta
+  dall'utente — fiction del mini-caso (cucina, nipote col coltello, collega), motore v3 completo:
+  dichiarazioni a bottoni, iniziativa coi dadi animati e la scomposizione, UKEMI ALLA CIECA come
+  scelta drammatica, Tame, Ki in difesa, critici con tabella, epiloghi (arresto / morte a Ki 0 /
+  avviso Genkai). Playtest automatico: il PG demo (Silenzio 5, Pazienza 5, Presenza 4) da solo
+  MUORE quasi sempre → scelte da GM della scena (non regole): il collega è IN CAMPO dal 1° scambio
+  e il nipote DIVIDE gli attacchi tra i due. Tuning finale: dell'utente, giocando.
+  Prossimo passo: innesto nella mini-avventura sito_genkai/provalo/ come scena 8.
+
+- **KI PER TUTTI (utente, 2026-09-05, netto)**: la «Riserva» dei PNG — termine della v2
+  («I PNG nello Scontro», 3/6/9) e del wizard casi — è **ABOLITA**: si chiama **Ki per chiunque**,
+  taglie 3/6/9 (comparsa/duro/professionista). Resta la differenza d'esito: PNG a Ki 0 = fuori
+  combattimento, PG a Ki 0 = morto. NON riusare mai la parola Riserva.
+  ⚠ TODO WIZARD: il wizard casi genera «Riserva 3/6/9» nelle statistiche PNG → rinominare in Ki
+  (UI + prompt + export); anche il dossier Bakuon la usa. Da fare in sessione wizard.
+
 ## APERTI (non decisi — non inventare)
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.

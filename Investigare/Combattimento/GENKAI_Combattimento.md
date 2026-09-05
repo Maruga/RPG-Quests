@@ -254,10 +254,12 @@ la mossa migliore del combattimento.
 
 ## I PNG nello Scontro *(invariata dalla v2)*
 
-Attaccano, difendono e **vanno in Ukemi** con le stesse regole. Al posto del Ki hanno una **Riserva**:
-comparsa **3** · duro **6** · professionista **9**. A 0 sono **fuori combattimento** (l'esito lo
-decide il GM: KO, resa, fuga — la morte di un PNG è una scelta narrativa). I notevoli con scheda
-usano il loro Ki. La pericolosità è già negli attributi e nelle Senmon: il sistema fa il resto.
+Attaccano, difendono e **vanno in Ukemi** con le stesse regole — e **hanno il Ki come tutti**
+(decisione 2026-09-05: la «Riserva» della v2 è abolita, si chiama Ki per chiunque): comparsa
+**Ki 3** · duro **Ki 6** · professionista **Ki 9**. La differenza è nell'esito: un **PNG a Ki 0 è
+fuori combattimento** (KO, resa, fuga — l'esito lo decide il GM, la morte di un PNG è una scelta
+narrativa), mentre **per i PG a Ki 0 si muore**. La pericolosità è già negli attributi e nelle
+Senmon: il sistema fa il resto.
 
 ## Le Specializzazioni di Combattimento *(invariata dalla v2)*
 
@@ -317,7 +319,7 @@ MANOVRE: Mirare (azione: −1/scambio, max −2, fermi; poi spari a velocità 0)
          Stringere i Denti (danno 1-2: paghi 1 attributo, agisci comunque)
          Colpi multipli | Soppressione | Granata | Fumogeno (come sopra)
 SORPRESA: tiro fallito = niente difesa né Ukemi — solo Assorbe
-PNG: Riserva 3/6/9 — a 0 fuori combattimento (esito: GM)
+PNG: Ki come tutti — 3/6/9 (comparsa/duro/professionista); a 0 fuori combattimento (esito: GM)
 ```
 
 ## Aperti *(vedi `DECISIONI.md` — non decisi, non inventare)*

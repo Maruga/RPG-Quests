@@ -11,6 +11,14 @@
 
 ## Da applicare
 
+### 2026-09-05 · WIZARD → REGOLE · ⚠ «Riserva» dei PNG ABOLITA: è Ki per tutti (decisione utente)
+Parole dell'utente: «è il Ki per tutti». La «Riserva» (Combattimento v2 §I PNG nello Scontro, 3/6/9;
+citata anche nel Manuale Situazioni / statistiche PNG del wizard) si chiama **Ki** per chiunque,
+taglie invariate 3/6/9. Resta la differenza d'esito: PNG a Ki 0 = fuori combattimento (esito GM),
+PG a Ki 0 = morto. Applicato in Combattimento/ (v3) e scena interattiva; il wizard casi verrà
+allineato dalla sessione WIZARD. Se «Riserva» compare in altri manuali/avventure, va rinominata. — **DA APPLICARE**
+
+
 ### 2026-09-04 · WIZARD → REGOLE · ⚠ Manuale Combattimento SPOSTATO in `Combattimento/` + v3 BOZZA in lavorazione
 Su decisione utente: `GENKAI_Combattimento.md` ora vive in **`Combattimento/GENKAI_Combattimento.md`**
 ed è la **v3.0 BOZZA** (sistema ad azioni, ridisegno dell'utente: iniziativa 2d6+mod.Presenza+velocità,

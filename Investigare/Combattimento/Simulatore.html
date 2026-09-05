@@ -153,7 +153,7 @@ async function risolviAttacco(att, dif, log, chiediConversione) {
   if (netto > 0) {
     dif.vita -= netto;
     dif.colpito = true;
-    log(`<p class="colpo">${dif.nome}: ${dif.pg ? "Ki" : "Riserva"} ${dif.vita + netto} → ${Math.max(dif.vita,0)}${dif.vita<=0 ? (dif.pg ? " — <b>MORTO</b>" : " — <b>fuori combattimento</b>") : ""}. ${dif.vita>0 && !dif.agito ? "La sua azione, se non ancora fatta, è <b>persa</b>." : ""}</p>`);
+    log(`<p class="colpo">${dif.nome}: ${dif.pg ? "Ki" : "Ki"} ${dif.vita + netto} → ${Math.max(dif.vita,0)}${dif.vita<=0 ? (dif.pg ? " — <b>MORTO</b>" : " — <b>fuori combattimento</b>") : ""}. ${dif.vita>0 && !dif.agito ? "La sua azione, se non ancora fatta, è <b>persa</b>." : ""}</p>`);
   }
 }
 
@@ -192,7 +192,7 @@ async function risolviScambio(comb, log, chiediConversione) {
     i += gruppo.length;
   }
   log(`<h3>Fine scambio — lo stato</h3>`);
-  comb.forEach(c => log(`<p>${c.nome}: ${c.pg?"Ki":"Riserva"} <b>${Math.max(c.vita,0)}</b>${c.vita<=0 ? (c.pg?" ☠ morto":" ✚ fuori combattimento"):""}</p>`));
+  comb.forEach(c => log(`<p>${c.nome}: ${c.pg?"Ki":"Ki"} <b>${Math.max(c.vita,0)}</b>${c.vita<=0 ? (c.pg?" ☠ morto":" ✚ fuori combattimento"):""}</p>`));
 }
 /* ══════════ fine motore ══════════ */
 
@@ -219,7 +219,7 @@ function cardCombattente(c) {
     </div>
     <div class="riga">
       <label>Arma <select data-c="${c.id}" data-k="arma">${Object.entries(ARMI).map(([k,v])=>`<option value="${k}"${c.arma===k?" selected":""}>${v.nome} (d${v.danno})</option>`).join("")}</select></label>
-      <label>${c.pg?"Ki":"Riserva"} <input type="number" min="1" max="12" value="${c.vita}" data-c="${c.id}" data-k="vita"></label>
+      <label>${c.pg?"Ki":"Ki"} <input type="number" min="1" max="12" value="${c.vita}" data-c="${c.id}" data-k="vita"></label>
       <label>Assorb. <input type="number" min="0" max="5" value="${c.assorbe}" data-c="${c.id}" data-k="assorbe"></label>
       <label>Copert. <input type="number" min="0" max="5" value="${c.copertura}" data-c="${c.id}" data-k="copertura"></label>
     </div>
