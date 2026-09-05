@@ -102,6 +102,15 @@ manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni
   tecnico, bocciato) è archiviato in `versioni/`: la simulazione è `Scena_Combattimento_Interattiva.html`.
   **Buco trovato**: la velocità dell'azione Minacciare non è mai stata fissata (la scena usa 2) → APERTI.
 
+- **SCENA — tarature decise dall'utente (2026-09-05 sera, dopo il suo playtest)**: 1) il PG della demo
+  ha la Senmon **Lame e bastoni 1** (−1 col manganello; ha anche Lotta 1 d'accademia, come tutti) —
+  motivo misurato: senza, uno scontro «attacco normale» dura 7-8 scambi e ~28 tiri, un terzo supera i
+  9 scambi (colpire con 5 o meno = 28%); con la Senmon 5 scambi, 3 col Tame. 2) **Niente percentuali
+  nei testi della scena**: «tolgono la narrativa» — si usano parole (difficile · poco probabile ·
+  possibile · probabile · molto probabile). 3) I critici (1+1 / 6+6) vanno in un riquadro grande e
+  lampeggiante con una riga di scena: l'utente non era riuscito a leggere il 6+6 in una nota piccola.
+  4) Le battute del ragazzo variano a ogni scambio e seguono il suo stato (ferito, intimidito, a mani nude).
+
 ## APERTI (non decisi — non inventare)
 
 - **Dubbi mandati all'utente il 2026-09-05 sera** (default = com'è scritto ora nel manuale):

@@ -13,7 +13,7 @@
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 body{margin:0;background:var(--carta);color:var(--inchiostro);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
 img{max-width:100%;height:auto;display:block}
 .dentro{max-width:680px;margin:0 auto;padding:0 .9rem 3rem}
@@ -71,6 +71,21 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
 .card h3{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rosso);margin:0 0 .6rem;border-bottom:2px solid var(--oro);padding-bottom:.3rem}
 .passo{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tenue);margin:1rem 0 .3rem;display:flex;align-items:center;gap:.45rem}
 .passo::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:var(--oro)}
+.card > *, .urgente > *{animation:appare .45s ease-out both}
+@keyframes appare{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#flusso::after{content:"";display:block;height:100vh} /* spazio per portare in cima l'ultimo taglio */
+/* iniziativa: i due tiri affiancati, così la fase sta in mezza schermata */
+.ini2{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.5rem 0}
+.ini2 .tiro{margin:0;padding:.5rem .55rem}
+.ini2 .dado{width:42px;height:42px;font-size:1.25rem;border-radius:8px}
+.ini2 .conto{flex-basis:100%;font-size:.8rem;line-height:1.35;margin-top:.25rem}
+.ini2 .conto b{font-size:1rem}
+#flusso.fine::after{height:0}
+/* il taglio: da qui in giù è nuovo */
+.taglio{display:flex;align-items:center;gap:.6rem;margin:1.1rem 0 .7rem;font-family:var(--sans);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rosso)}
+.taglio::before,.taglio::after{content:"";flex:1;border-top:2px dashed var(--rosso);opacity:.55}
+.taglio::after{flex:0 0 .8rem}
+.taglio span{border:2px solid var(--rosso);border-radius:999px;padding:.3rem .8rem;background:#fff;max-width:75%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card p{margin:.4rem 0;color:var(--inchiostro2)}
 .narr{font-style:italic;color:var(--inchiostro)}
 .regola{font-family:var(--sans);font-size:.88rem;color:var(--inchiostro2)}
@@ -159,12 +174,13 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
   tre minuti qui dentro sono un'eternità. Tra voi c'è un tavolo. Dietro di te, la porta.</p>
 
   <div class="mecc">
-    <span class="titolo">Chi sei — la tua scheda, in tre numeri</span>
+    <span class="titolo">Chi sei — la tua scheda, in breve</span>
     <b>Ki 7.</b> Il Ki è lo stato complessivo del tuo personaggio — fisico, mentale, emotivo insieme: non è la salute, è <b>quanto reggi</b>. In uno scontro i colpi lo consumano. <b>A 0 sei morto.</b>
     <ul>
       <li><b>Silenzio 5</b> — la calma interiore, non reagire d'impulso. È l'attributo con cui usi il <b>manganello</b>.</li>
       <li><b>Pazienza 5</b> — aspettare il momento giusto. È l'attributo con cui <b>schivi una lama</b>.</li>
       <li><b>Presenza 4</b> — l'autorità che ispiri, farti prendere sul serio, intimidire. Con questa <b>minacci</b> — e decide quanto sei pronto a reagire: con 4 sei lento.</li>
+      <li><b>Lame e bastoni 1</b> — la tua specializzazione: l'addestramento col manganello. Ogni volta che lo usi <b>togli 1 al tiro</b>, e tirare basso è meglio. Come ogni investigatore hai anche <b>Lotta 1</b>, l'accademia: vale per pugni e prese.</li>
     </ul>
   </div>
   <div class="mecc">
@@ -175,7 +191,9 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
     <button class="aiuto" type="button" data-aiuto="a-tiro" aria-expanded="false">❓ Come si tira</button>
     <button class="aiuto" type="button" data-aiuto="a-attr" aria-expanded="false">❓ Cosa sono gli attributi</button>
     <button class="aiuto" type="button" data-aiuto="a-ki" aria-expanded="false">❓ Cos'è il Ki</button>
-    <div class="aiuto-testo" id="a-tiro" hidden>In GENKAI si tirano sempre <b>due dadi a sei facce</b> e si sommano. Se il totale è <b>uguale o inferiore</b> all'attributo che stai usando, riesce. <b>Più stai sotto, meglio è</b>: nel combattimento quel margine diventa la precisione del colpo.</div>
+    <button class="aiuto" type="button" data-aiuto="a-senmon" aria-expanded="false">❓ Cos'è una specializzazione</button>
+    <div class="aiuto-testo" id="a-tiro" hidden>In GENKAI si tirano sempre <b>due dadi a sei facce</b> e si sommano. Se il totale è <b>uguale o inferiore</b> all'attributo che stai usando, riesce. <b>Più stai sotto, meglio è</b>: nel combattimento quel margine diventa la precisione del colpo. Tutto ciò che ti aiuta — una specializzazione, il fiato trattenuto — <b>toglie punti al totale</b>.</div>
+    <div class="aiuto-testo" id="a-senmon" hidden>Le specializzazioni (in gioco: <b>Senmon</b>) sono le cose che il tuo personaggio ha imparato a fare bene — un'arma, una lingua, un mestiere. Hanno tre gradi, e ogni grado <b>toglie 1 al tiro</b> quando le usi. <b>Lame e bastoni</b> copre manganello, coltello, mazza e spada; <b>Lotta</b> copre pugni e prese, e la hanno tutti gli investigatori dall'accademia.</div>
     <div class="aiuto-testo" id="a-attr" hidden>I sei attributi di un investigatore (Distacco, Pazienza, Silenzio, Lucidità, Ascolto, Presenza) vanno da <b>4</b> (debole: ci fai fatica) a <b>9</b> (eccezionale). Non misurano i muscoli: sono <b>stati interiori</b> — come stai quando le cose si mettono male. Qui ne usi tre.</div>
     <div class="aiuto-testo" id="a-ki" hidden>Il Ki 気 è la tua energia vitale: si consuma con la fatica, la pressione, i poteri — e in uno scontro con i colpi. Sotto <b>3</b> sei oltre il limite: se lo scontro finisse lì, crolleresti. Quel limite si chiama <b>Genkai</b> 限界, ed è il nome del gioco. In combattimento il danno non si ferma: <b>a Ki 0 si muore</b>.</div>
   </div>
@@ -198,8 +216,8 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
    parità d'iniziativa = azioni simultanee [da validare]. */
 const d6 = () => 1 + Math.floor(Math.random()*6);
 const MOD_P = {4:2, 5:1, 6:0, 7:-1, 8:-2, 9:-3, 10:-4};
-const P2D6 = {2:3, 3:8, 4:17, 5:28, 6:42, 7:58, 8:72, 9:83, 10:92, 11:97, 12:100};
-const pct = n => (P2D6[Math.min(12, Math.max(2, n))]) + "%";
+/* quanto è probabile fare "n o meno" con 2d6, a parole (niente percentuali: rompono la scena) */
+const prob = n => n <= 3 ? "quasi impossibile" : n === 4 ? "difficile" : n === 5 ? "poco probabile" : n === 6 ? "possibile" : n === 7 ? "probabile" : n === 8 ? "molto probabile" : "quasi certo";
 const caso = arr => arr[Math.floor(Math.random()*arr.length)];
 
 const ARMI = {
@@ -209,10 +227,18 @@ const ARMI = {
 };
 const PG  = { nome:"TU", pg:true,
   attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4},
-  ki:7, kiMax:7, arma:ARMI.manganello };
+  ki:7, kiMax:7, arma:ARMI.manganello, senmon:{ "Lame e bastoni":1, "Lotta":1 } };
 const NIP = { nome:"il ragazzo", pg:false,
   attr:{Distacco:5, Pazienza:4, Silenzio:5, Lucidità:5, Ascolto:5, Presenza:6},
   ki:5, kiMax:5, arma:ARMI.coltello };
+
+/* Senmon pertinente all'arma in mano: il grado si toglie dal tiro d'attacco (−1/−2/−3) */
+function senmonDi(c){
+  if (!c.senmon) return [null, 0];
+  if (c.arma === ARMI.lotta) return ["Lotta", c.senmon["Lotta"] || 0];
+  if (c.arma === ARMI.manganello || c.arma === ARMI.coltello) return ["Lame e bastoni", c.senmon["Lame e bastoni"] || 0];
+  return [null, 0];
+}
 
 /* tabella imprevisti 6+6 — colonna corpo a corpo (manuale, I Critici) */
 const TAB66 = [
@@ -269,6 +295,39 @@ const IMPREVISTI_NUDO = [ "Il pugno finisce contro il muro: le nocche si aprono.
 let N = 1, fascia = "contatto";
 const flusso = document.getElementById("flusso");
 const attesa = ms => new Promise(r => setTimeout(r, ms));
+
+/* ── scorrimento lento e controllato: un solo movimento alla volta, che si può interrompere col dito ── */
+const motoRidotto = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let scorrimento = null;
+function fermaScorrimento(){ if (scorrimento) { cancelAnimationFrame(scorrimento.id); const f = scorrimento.fine; scorrimento = null; f(); } }
+addEventListener("touchstart", fermaScorrimento, {passive:true});
+addEventListener("wheel", fermaScorrimento, {passive:true});
+function scorriA(y, durata){
+  const max = document.documentElement.scrollHeight - innerHeight;
+  y = Math.max(0, Math.min(y, max));
+  return new Promise(fine => {
+    fermaScorrimento();
+    if (motoRidotto || Math.abs(y - scrollY) < 2) { scrollTo(0, y); return fine(); }
+    const y0 = scrollY, t0 = performance.now();
+    const ease = t => t < .5 ? 2*t*t : -1 + (4 - 2*t)*t;
+    const passo = ora => {
+      const t = Math.min(1, (ora - t0) / durata);
+      scrollTo(0, y0 + (y - y0) * ease(t));
+      if (t < 1) scorrimento.id = requestAnimationFrame(passo); else { scorrimento = null; fine(); }
+    };
+    scorrimento = { id: requestAnimationFrame(passo), fine };
+  });
+}
+const altezzaBarra = () => document.querySelector(".barra").offsetHeight + 10;
+/* porta l'elemento in cima allo schermo, sotto la barra */
+const inAlto = el => scorriA(el.getBoundingClientRect().top + scrollY - altezzaBarra(), 900);
+/* segue il testo che cresce: scorre solo quanto basta a mostrare il fondo dell'elemento, piano */
+function segui(el){
+  if (!el) return Promise.resolve();
+  const r = el.getBoundingClientRect();
+  if (r.bottom <= innerHeight - 16) return Promise.resolve();
+  return scorriA(scrollY + (r.bottom - innerHeight) + 28, 900);
+}
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const nomeDi = c => c.pg ? `<span class="chi">Tu</span>` : `<span class="chi lui">Lui</span>`;
 
@@ -297,10 +356,9 @@ function card(titolo){
   el.className = "card";
   el.innerHTML = `<h3>${titolo}</h3>`;
   flusso.appendChild(el);
-  el.scrollIntoView({behavior:"smooth", block:"start"});
   return el;
 }
-const scrivi = (el, html) => el.insertAdjacentHTML("beforeend", html);
+const scrivi = (el, html) => { el.insertAdjacentHTML("beforeend", html); segui(el.lastElementChild); };
 const narr = (el, testo) => scrivi(el, `<p class="narr">${testo}</p>`);
 const passo = (el, testo) => scrivi(el, `<p class="passo">${testo}</p>`);
 
@@ -328,22 +386,32 @@ async function tiraDadi(el, etichetta){
   da.classList.remove("rotola"); db.classList.remove("rotola");
   if (a === 6 && b === 6) { da.classList.add("crit-male"); db.classList.add("crit-male"); }
   if (a === 1 && b === 1) { da.classList.add("crit-bene"); db.classList.add("crit-bene"); }
-  da.parentElement.scrollIntoView({behavior:"smooth", block:"nearest"});
   return [a, b, document.getElementById(id+"t")];
 }
 
-function scelta(el, opzioni, inRiga){
+/* scelta a bottoni; dopo il clic: il bottone resta evidenziato, sotto compare il TAGLIO con la scelta
+   fatta e la pagina scorre piano fino a portarlo in cima — da lì in giù è quel che succede */
+function scelta(el, opzioni, inRiga, opz){
   return new Promise(risolvi => {
     const box = document.createElement("div");
     box.className = "bottoni" + (inRiga ? " riga" : "");
     box.innerHTML = opzioni.map(o =>
       `<button type="button" class="btn${o.forte ? " btn-forte" : ""}" data-s="${o.v}"${o.off ? " disabled" : ""}>${o.testo}${o.sotto ? `<small>${o.sotto}</small>` : ""}</button>`).join("");
     el.appendChild(box);
-    box.scrollIntoView({behavior:"smooth", block:"nearest"});
-    box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+    segui(box);
+    box.querySelectorAll("button").forEach(b => b.addEventListener("click", async () => {
       box.querySelectorAll("button").forEach(x => { x.disabled = true; if (x !== b) x.classList.remove("btn-forte"); });
       b.classList.add("scelto");
+      const etichetta = b.childNodes[0].textContent.trim();
       b.innerHTML = "✓ " + b.innerHTML;
+      if (!(opz && opz.senzaTaglio)) {
+        const taglio = document.createElement("div");
+        taglio.className = "taglio";
+        taglio.innerHTML = `<span>▼ ${etichetta}</span>`;
+        box.insertAdjacentElement("afterend", taglio);
+        await inAlto(taglio);
+        await attesa(150);
+      }
       risolvi(b.dataset.s);
     }));
   });
@@ -362,6 +430,7 @@ const etichettaVel = c => ({
 /* ═══════ LO SCAMBIO ═══════ */
 async function scambio(){
   const el = card(`Scambio ${N}`);
+  await inAlto(el);
   [PG, NIP].forEach(c => { c.dich = null; c.agito = false; c.colpito = false; c.ukemi = false; c.tame = 0; c.spendiKi = false; });
 
   if (N === 1) scrivi(el, `<p class="regola">Uno scontro va a <b>scambi</b>. In ogni scambio: ① ognuno dice cosa fa · ② i dadi decidono <b>chi agisce per primo</b> · ③ si agisce, in quell'ordine.</p>`);
@@ -376,25 +445,27 @@ async function scambio(){
 
   scrivi(el, `<p><b>E tu?</b></p>`);
   const Pz = PG.attr.Presenza, A = PG.attr[PG.arma.attacco];
+  const [senNome, sen] = senmonDi(PG);
+  const conSen = sen ? ` −${sen} (${senNome})` : "";
   const urlo = NIP.arma === ARMI.lotta ? "«Fermo! Basta così!»" : "«Metti giù il coltello!»";
   const attaccoTesto = PG.arma === ARMI.lotta ? "Attacco a mani nude" : `Attacco col ${PG.arma.nome}`;
   let opzioni;
   if (PG.raccogliere) {
     opzioni = [
       { v:"raccolgo", forte:true, testo:"Raccolgo il manganello", sotto:"è a terra: recuperarlo mi costa l'azione di questo scambio" },
-      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} (${pct(Pz)}): se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
+      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}. Se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
     ];
   } else if (fascia === "contatto") {
     opzioni = [
-      { v:"attacco", forte:true, testo:attaccoTesto, sotto:`tiro 2d6 ≤ ${PG.arma.attacco} ${A} (riesce ${pct(A)} delle volte): se colpisco, danno ${PG.arma.danno} + quanto sto sotto` },
-      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} (${pct(Pz)}: la tua Presenza è bassa). Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
+      { v:"attacco", forte:true, testo:attaccoTesto, sotto:`tiro 2d6${conSen} ≤ ${PG.arma.attacco} ${A} — ${prob(A + sen)}. Se colpisco: danno ${PG.arma.danno} + quanto sto sotto` },
+      { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}, la tua Presenza è bassa. Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
       { v:"arretro", testo:"Arretro verso la porta", sotto:"esco dalla sua portata: se ci arrivo prima che colpisca, stavolta non mi prende" },
     ];
-    if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`${attaccoTesto}, trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso: −2 al tiro, colpisco fino a ${Math.min(12, A + 2)} (${pct(A + 2)} invece di ${pct(A)})` });
+    if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`${attaccoTesto}, trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso: altri −2 al tiro — da ${prob(A + sen)} a ${prob(A + sen + 2)}` });
   } else {
     opzioni = [
       { v:"esco", forte:true, testo:"Esco e chiudo la porta", sotto:"fine dello scontro: aspetti i rinforzi dall'altra parte" },
-      { v:"minaccia", testo:"Lo minaccio — «Fermo lì!»", sotto:`tiro 2d6 ≤ Presenza ${Pz}: se riesce, al prossimo scambio esita (+2 alla sua iniziativa)` },
+      { v:"minaccia", testo:"Lo minaccio — «Fermo lì!»", sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}. Se riesce, al prossimo scambio esita (+2 alla sua iniziativa)` },
       { v:"aspetto", testo:"Resto fermo e lo aspetto", sotto:"non agisco: mi preparo. Il prossimo tiro che farò avrà −1" },
     ];
   }
@@ -407,7 +478,9 @@ async function scambio(){
   passo(el, "② Chi è più veloce");
   if (N === 1) scrivi(el, `<p class="regola">Ognuno tira 2 dadi e somma: il modificatore di <b>Presenza</b> (chi ne ha di più è pronto prima) e la <b>velocità</b> di quel che fa (un coltello già in mano è più rapido di un manganello). <b>Il totale più basso agisce per primo.</b></p>`);
   if (PG.dich === "aspetto") { PG.ini = 99; scrivi(el, `<p class="regola">${nomeDi(PG)} non tiri: resti fermo, e ti prepari.</p>`); }
-  const esiti = await Promise.all([PG, NIP].filter(c => c.ki > 0 && c.dich !== "aspetto").map(c => tiraDadi(el, `${nomeDi(c)} iniziativa`).then(r => [c, ...r])));
+  const griglia = document.createElement("div"); griglia.className = "ini2"; el.appendChild(griglia);
+  const esiti = await Promise.all([PG, NIP].filter(c => c.ki > 0 && c.dich !== "aspetto").map(c => tiraDadi(griglia, `${nomeDi(c)} iniziativa`).then(r => [c, ...r])));
+  await attesa(700);
   for (const [c, a, b, t] of esiti) {
     const mod = MOD_P[c.attr.Presenza] ?? 0, vel = velocita(c), inti = c.intimidito ? 2 : 0;
     c.ini = a + b + mod + vel + (c.tame || 0) + inti;
@@ -422,6 +495,7 @@ async function scambio(){
   if (N === 1) aiuto(el, "Perché la tua Presenza ti rallenta", `In GENKAI <b>meno fai coi dadi, meglio è</b> — sempre. La Presenza 4 ti aggiunge +2 all'iniziativa (quindi agisci dopo); una Presenza 8 avrebbe tolto 2. Il manganello aggiunge 2, il coltello in mano solo 1: la lama è più rapida.`);
 
   /* ③ azioni */
+  await attesa(900);
   passo(el, "③ Le azioni");
   for (const c of ordine) {
     if (c.ki <= 0 || PG.ki <= 0 || NIP.ki <= 0) break;
@@ -464,9 +538,9 @@ async function scambio(){
   aggiornaStato();
   if (NIP.ki <= 0) return epilogo("vinto");
   scrivi(el, `<p class="regola" style="margin-top:.8rem">Fine dello scambio ${N} — tu <b>Ki ${PG.ki}</b> · lui <b>Ki ${Math.max(NIP.ki, 0)}</b>.</p>`);
-  if (N === 1) scrivi(el, `<p class="nota">Dal prossimo scambio hai un'opzione in più: <b>attaccare trattenendo il fiato</b> (in gioco si chiama <b>Tame</b>). Agisci più tardi, ma il colpo è più preciso: con ${PG.arma.attacco} ${PG.attr[PG.arma.attacco]} colpisci ${pct(PG.attr[PG.arma.attacco])} delle volte, trattenendo il fiato ${pct(PG.attr[PG.arma.attacco] + 2)}.</p>`);
+  if (N === 1) scrivi(el, `<p class="nota">Dal prossimo scambio hai un'opzione in più: <b>attaccare trattenendo il fiato</b> (in gioco si chiama <b>Tame</b>). Agisci più tardi, ma il colpo è più preciso: colpire passa da <b>${prob(PG.attr[PG.arma.attacco] + senmonDi(PG)[1])}</b> a <b>${prob(PG.attr[PG.arma.attacco] + senmonDi(PG)[1] + 2)}</b>.</p>`);
   if (PG.ki <= 3) scrivi(el, `<p class="nota">Ki ${PG.ki} — <b>sei oltre il limite</b>. In combattimento si va avanti: ma se lo scontro finisse adesso, crolleresti. È il <b>Genkai</b>.</p>`);
-  await scelta(el, [{ v:"avanti", forte:true, testo:`Scambio ${N+1} →` }], true);
+  await scelta(el, [{ v:"avanti", forte:true, testo:`Scambio ${N+1} →` }], true, {senzaTaglio:true});
   N++;
   scambio();
 }
@@ -482,6 +556,7 @@ async function attacco(att, dif, el){
       box.innerHTML = `<h4>${att.arma.nome === "mani nude" ? "Il pugno parte" : "La lama parte"} — e tu non hai ancora agito</h4>
         <p>Decidi <b>adesso</b>, prima del suo tiro. Puoi tenere la tua azione e incassare, oppure rinunciarci per difenderti.</p>`;
       el.appendChild(box);
+      await inAlto(box);
       const s = await scelta(box, [
         { v:"no", testo:`Tengo la mia azione`, sotto:"incasso il colpo senza tiro di difesa; se non mi ferma, poi agisco" },
         { v:"si", testo:`Lascio la mia azione e mi difendo`, sotto:`in gioco: Ukemi. Tiro 2d6 ≤ ${att.arma.difesa} ${attrD}: quanto sto sotto, lo paro. La mia azione però è spesa` },
@@ -498,11 +573,13 @@ async function attacco(att, dif, el){
   }
 
   const prep = att.preparato ? 1 : 0; att.preparato = false;
+  const [senNome, sen] = senmonDi(att);
   const soglia = att.attr[att.arma.attacco];
+  await attesa(600);
   const [a, b, t] = await tiraDadi(el, `${nomeDi(att)} ${att.pg ? "attacchi" : "attacca"} — ${att.arma.nome}, ${att.arma.attacco} ${soglia}`);
   const somma = a + b;
-  const tiro = Math.max(2, somma - (att.tame || 0) - prep);
-  t.innerHTML = `${a}+${b} = ${somma}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${(att.tame || prep) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
+  const tiro = Math.max(2, somma - sen - (att.tame || 0) - prep);
+  t.innerHTML = `${a}+${b} = ${somma}${sen ? ` −${sen} (${senNome})` : ""}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${(sen || att.tame || prep) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
 
   if (a === 6 && b === 6) {
     const imp = d6(), chi = att.pg ? "Il tuo colpo" : "Il suo colpo";
@@ -528,7 +605,7 @@ async function attacco(att, dif, el){
   if (a === 1 && b === 1) { extra = d6(); scrivi(el, `<div class="critico buono"><h4>★ Doppio 1 — colpo perfetto</h4><p>${att.pg ? "Il tuo" : "Il suo"} colpo è perfetto: <b>+1d6 danni = +${extra}</b>.</p><p class="narr">${caso(att.pg ? TESTI.perfettoTu : TESTI.perfettoLui)}</p></div>`); }
   const inArrivo = scarto + att.arma.danno + extra;
   scrivi(el, `<p class="colpo">Colpito: precisione ${scarto} + ${att.arma.nome} ${att.arma.danno}${extra ? ` + ${extra} (critico)` : ""} = <b>${inArrivo} danni in arrivo</b>.</p>`);
-  if (N === 1 && !el.dataset.precisione) { el.dataset.precisione = "1"; aiuto(el, "Cos'è la precisione", `È di quanto il tiro sta <b>sotto</b> l'attributo: attributo ${soglia} − tiro ${tiro} = <b>${scarto}</b>. Più stai sotto, più il colpo è preciso — e la precisione si somma al danno dell'arma (${att.arma.nome}: ${att.arma.danno}).`); }
+  if (N === 1 && !el.dataset.precisione) { el.dataset.precisione = "1"; aiuto(el, "Cos'è la precisione", `È di quanto il tiro sta <b>sotto</b> l'attributo: attributo ${soglia} − tiro ${tiro}${(sen || att.tame || prep) ? " (i dadi, tolti i bonus)" : ""} = <b>${scarto}</b>. Più stai sotto, più il colpo è preciso — e la precisione si somma al danno dell'arma (${att.arma.nome}: ${att.arma.danno}).`); }
 
   let parata = 0;
   if (dif.ukemi) {
@@ -537,6 +614,7 @@ async function attacco(att, dif, el){
     if (dif.spendiKi && dif.ki >= 2) { dif.ki -= 1; bonus = 2; aggiornaStato();
       scrivi(el, `<p class="nota">${dif.pg ? `Bruci 1 Ki (te ne restano ${dif.ki})` : `Brucia 1 Ki (gli restano ${dif.ki})`}: −2 al tiro di difesa.</p>`); }
     const prepD = dif.preparato ? 1 : 0; dif.preparato = false;
+    await attesa(700);
     const [da, db, td] = await tiraDadi(el, `${nomeDi(dif)} ${dif.pg ? "ti difendi" : "si difende"} — ${att.arma.difesa} ${attrDif}`);
     const tiroD = Math.max(2, da + db - bonus - prepD);
     td.innerHTML = `${da}+${db} = ${da+db}${bonus ? ` −${bonus} (Ki)` : ""}${prepD ? ` −1 (preparato)` : ""}${(bonus || prepD) ? ` = ${tiroD}` : ""} contro <b>${attrDif}</b>: ${tiroD <= attrDif && !(da === 6 && db === 6) ? "<b>riuscito</b>" : "<b>fallito</b>"}`;
@@ -575,6 +653,7 @@ async function stringereIDenti(dif, netto, el){
     box.innerHTML = `<h4>Il colpo è leggero — puoi stringere i denti</h4>
       <p>Un danno di 1 o 2 ti fermerebbe: la tua azione andrebbe persa. Puoi rifiutarti di fermarti pagando <b>1 punto di ${attrAzione}</b> (${val} → ${val-1} fino a domani): la tua azione parte comunque.</p>`;
     el.appendChild(box);
+    await inAlto(box);
     const s = await scelta(box, [
       { v:"si", testo:"Stringo i denti", sotto:`${attrAzione} ${val} → ${val-1}, e agisco lo stesso` },
       { v:"no", testo:"Il colpo mi ferma", sotto:"la mia azione è persa; l'attributo resta intero" },
@@ -588,13 +667,15 @@ async function stringereIDenti(dif, netto, el){
 }
 
 /* ═══════ EPILOGHI ═══════ */
-function epilogo(tipo){
+async function epilogo(tipo){
   aggiornaStato();
+  await attesa(1400); /* un respiro dopo l'ultimo colpo, prima del finale */
   const el = document.createElement("div");
   el.className = "epilogo " + (tipo === "vinto" ? "vinto" : tipo === "fuga" ? "fuga" : "perso");
   const visto = `<div class="mecc"><span class="titolo">Cosa hai visto</span>
     <ul>
       <li>Si tira sempre 2d6: <b>somma ≤ attributo</b> = riuscito; quanto stai sotto è la <b>precisione</b></li>
+      <li>Le <b>specializzazioni</b> (Senmon) tolgono 1 al tiro per grado: la tua Lame e bastoni 1 ha contato a ogni colpo</li>
       <li>Ogni scambio: dichiari · <b>iniziativa</b> (2d6 + Presenza + velocità, il basso agisce prima) · azioni</li>
       <li>Colpito prima di agire = <b>azione persa</b> (salvo stringere i denti)</li>
       <li>Difendersi = rinunciare all'azione (<b>Ukemi</b>), deciso prima del tiro avversario; chi ha già agito non si difende</li>
@@ -617,7 +698,8 @@ function epilogo(tipo){
   }
   el.innerHTML += `<div class="bottoni riga"><button type="button" class="btn btn-forte" onclick="location.reload()">↻ Rigioca lo scontro</button></div>`;
   flusso.appendChild(el);
-  el.scrollIntoView({behavior:"smooth", block:"start"});
+  flusso.classList.add("fine");
+  inAlto(el);
 }
 
 document.getElementById("inizia").addEventListener("click", () => {
