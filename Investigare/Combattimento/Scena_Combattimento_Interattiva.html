@@ -60,7 +60,7 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
 .mecc .titolo{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:.2rem}
 .mecc ul{margin:.3rem 0 0;padding-left:1.1rem}
 .mecc li{margin:.2rem 0}
-.aiuto{font-family:var(--sans);font-size:.82rem;color:var(--rosso);background:transparent;border:1px dashed var(--rosso);border-radius:999px;padding:.3rem .8rem;margin:.35rem .35rem 0 0;cursor:pointer;min-height:36px}
+.aiuto{font-family:var(--sans);font-size:.8rem;color:var(--rosso);background:transparent;border:1px dashed var(--rosso);border-radius:999px;padding:.25rem .75rem;margin:.25rem .3rem 0 0;cursor:pointer;min-height:34px}
 .aiuto[aria-expanded="true"]{background:var(--rosso);color:#fff;border-style:solid}
 .aiuto-testo{font-family:var(--sans);font-size:.86rem;color:var(--inchiostro2);background:#fff;border:1px solid var(--bordo);border-radius:8px;padding:.6rem .85rem;margin:.45rem 0}
 .aiuto-testo b{color:var(--inchiostro)}
@@ -77,8 +77,8 @@ h1{font-size:clamp(1.55rem,6vw,2.1rem);margin:0 0 .5rem;font-weight:400;line-hei
 /* iniziativa: i due tiri affiancati, così la fase sta in mezza schermata */
 .ini2{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.5rem 0}
 .ini2 .tiro{margin:0;padding:.5rem .55rem}
-.ini2 .dado{width:42px;height:42px;font-size:1.25rem;border-radius:8px}
-.ini2 .conto{flex-basis:100%;font-size:.8rem;line-height:1.35;margin-top:.25rem}
+.ini2 .dado{width:40px;height:40px;font-size:1.2rem;border-radius:8px}
+.ini2 .conto{flex-basis:100%;font-size:.78rem;line-height:1.3;margin-top:.2rem}
 .ini2 .conto b{font-size:1rem}
 #flusso.fine::after{height:0}
 /* il taglio: da qui in giù è nuovo */
@@ -319,14 +319,20 @@ function scorriA(y, durata){
   });
 }
 const altezzaBarra = () => document.querySelector(".barra").offsetHeight + 10;
-/* porta l'elemento in cima allo schermo, sotto la barra */
-const inAlto = el => scorriA(el.getBoundingClientRect().top + scrollY - altezzaBarra(), 900);
+/* gli ULTIMI DADI tirati non escono mai dallo schermo da soli: la pagina segue il testo solo finché
+   restano visibili; oltre, scorre il lettore. Il vincolo cade solo a un nuovo taglio (una tua scelta) */
+let ultimiDadi = null;
+/* porta l'elemento in cima allo schermo, sotto la barra (solo dopo un tocco del lettore) */
+function inAlto(el){ ultimiDadi = null; return scorriA(el.getBoundingClientRect().top + scrollY - altezzaBarra(), 900); }
 /* segue il testo che cresce: scorre solo quanto basta a mostrare il fondo dell'elemento, piano */
 function segui(el){
   if (!el) return Promise.resolve();
   const r = el.getBoundingClientRect();
   if (r.bottom <= innerHeight - 16) return Promise.resolve();
-  return scorriA(scrollY + (r.bottom - innerHeight) + 28, 900);
+  let y = scrollY + (r.bottom - innerHeight) + 28;
+  if (ultimiDadi && ultimiDadi.isConnected) y = Math.min(y, ultimiDadi.getBoundingClientRect().top + scrollY - altezzaBarra());
+  if (y <= scrollY + 2) return Promise.resolve();
+  return scorriA(y, 900);
 }
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const nomeDi = c => c.pg ? `<span class="chi">Tu</span>` : `<span class="chi lui">Lui</span>`;
@@ -378,6 +384,7 @@ async function tiraDadi(el, etichetta){
   const id = "d" + Math.random().toString(36).slice(2, 8);
   scrivi(el, `<div class="tiro"><div class="eti">${etichetta}</div><div class="dadi-riga"><span class="dado rotola" id="${id}a">·</span><span class="dado rotola" id="${id}b">·</span><span class="conto" id="${id}t"></span></div></div>`);
   const da = document.getElementById(id+"a"), db = document.getElementById(id+"b");
+  ultimiDadi = el.classList.contains("ini2") ? el : da.closest(".tiro");
   const giro = setInterval(() => { da.textContent = d6(); db.textContent = d6(); }, 80);
   await attesa(500);
   clearInterval(giro);
@@ -553,14 +560,14 @@ async function attacco(att, dif, el){
       const box = document.createElement("div");
       box.className = "urgente";
       const attrD = dif.attr[att.arma.difesa];
-      box.innerHTML = `<h4>${att.arma.nome === "mani nude" ? "Il pugno parte" : "La lama parte"} — e tu non hai ancora agito</h4>
-        <p>Decidi <b>adesso</b>, prima del suo tiro. Puoi tenere la tua azione e incassare, oppure rinunciarci per difenderti.</p>`;
+      box.innerHTML = `<h4>${att.arma.nome === "mani nude" ? "Il pugno parte" : "La lama parte"} — non hai ancora agito</h4>
+        <p>Decidi <b>adesso</b>, prima del suo tiro: tieni la tua azione e incassi, oppure ci rinunci per difenderti.</p>`;
       el.appendChild(box);
-      await inAlto(box);
+      await segui(box);
       const s = await scelta(box, [
-        { v:"no", testo:`Tengo la mia azione`, sotto:"incasso il colpo senza tiro di difesa; se non mi ferma, poi agisco" },
-        { v:"si", testo:`Lascio la mia azione e mi difendo`, sotto:`in gioco: Ukemi. Tiro 2d6 ≤ ${att.arma.difesa} ${attrD}: quanto sto sotto, lo paro. La mia azione però è spesa` },
-        { v:"ki", testo:`Mi difendo bruciando 1 Ki`, sotto:`come sopra, ma con −2 al tiro. Il Ki speso non torna (ne ho ${dif.ki})`, off: dif.ki < 2 },
+        { v:"no", testo:`Tengo la mia azione`, sotto:"incasso senza difendermi; se il colpo non mi ferma, poi agisco" },
+        { v:"si", testo:`Lascio l'azione e mi difendo`, sotto:`in gioco: Ukemi. Tiro 2d6 ≤ ${att.arma.difesa} ${attrD}, quanto sto sotto lo paro. L'azione è spesa` },
+        { v:"ki", testo:`Mi difendo bruciando 1 Ki`, sotto:`come sopra, con −2 al tiro; il Ki non torna (ne ho ${dif.ki})`, off: dif.ki < 2 },
       ]);
       if (s !== "no") { dif.ukemi = true; dif.spendiKi = (s === "ki");
         narr(el, `«Vado in difensiva.» Lasci andare il colpo che avevi in mente${s === "ki" ? " — e ci metti dentro un pezzo di te" : ""}: ora conta solo non farti prendere.`); }
@@ -653,7 +660,7 @@ async function stringereIDenti(dif, netto, el){
     box.innerHTML = `<h4>Il colpo è leggero — puoi stringere i denti</h4>
       <p>Un danno di 1 o 2 ti fermerebbe: la tua azione andrebbe persa. Puoi rifiutarti di fermarti pagando <b>1 punto di ${attrAzione}</b> (${val} → ${val-1} fino a domani): la tua azione parte comunque.</p>`;
     el.appendChild(box);
-    await inAlto(box);
+    await segui(box);
     const s = await scelta(box, [
       { v:"si", testo:"Stringo i denti", sotto:`${attrAzione} ${val} → ${val-1}, e agisco lo stesso` },
       { v:"no", testo:"Il colpo mi ferma", sotto:"la mia azione è persa; l'attributo resta intero" },
@@ -699,7 +706,7 @@ async function epilogo(tipo){
   el.innerHTML += `<div class="bottoni riga"><button type="button" class="btn btn-forte" onclick="location.reload()">↻ Rigioca lo scontro</button></div>`;
   flusso.appendChild(el);
   flusso.classList.add("fine");
-  inAlto(el);
+  segui(el.firstElementChild); /* il titolo del finale entra in vista, l'ultimo colpo resta sopra */
 }
 
 document.getElementById("inizia").addEventListener("click", () => {

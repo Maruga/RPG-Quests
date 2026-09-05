@@ -110,6 +110,11 @@ manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni
   possibile · probabile · molto probabile). 3) I critici (1+1 / 6+6) vanno in un riquadro grande e
   lampeggiante con una riga di scena: l'utente non era riuscito a leggere il 6+6 in una nota piccola.
   4) Le battute del ragazzo variano a ogni scambio e seguono il suo stato (ferito, intimidito, a mani nude).
+  5) **Scorrimento (feedback utente 2026-09-05 sera)**: dopo ogni scelta compare un TAGLIO («▼ cosa hai
+  scelto») portato piano in cima allo schermo; dentro lo scambio la pagina non salta mai: segue il testo
+  solo quanto basta e **gli ultimi dadi tirati non escono mai dallo schermo da soli** (il lettore deve
+  vederli mentre sotto compare l'esito). Iniziative affiancate in due colonne; pause di lettura tra le
+  fasi. Da riportare tale e quale nell'innesto in /provalo.
 
 ## APERTI (non decisi — non inventare)
 
