@@ -6,7 +6,7 @@
 <title>GENKAI 限界 — Provalo: un mini-caso da giocare</title>
 <meta name="description" content="Un mini-caso di GENKAI da giocare nel browser: nove scene in un appartamento di Fushimi, un tiro per scena, il taccuino che si riempie — fino all'arresto.">
 <link rel="icon" href="../img/favicon.png">
-<link rel="stylesheet" href="scontro.css?v=20260906f">
+<link rel="stylesheet" href="scontro.css?v=20260907a">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -141,8 +141,8 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   </footer>
 </div></main>
 
-<script src="scontro.js?v=20260906f"></script>
-<script src="commenti.js?v=20260906f"></script>
+<script src="scontro.js?v=20260907a"></script>
+<script src="commenti.js?v=20260907a"></script>
 <script>
 (function(){
 "use strict";
@@ -693,12 +693,14 @@ function renderFinale(sc){
     S.attr = { "Distacco":6, "Lucidità":7, "Ascolto":6, "Pazienza":5, "Silenzio":5, "Presenza":4 };
     S.ki = 9; S.nasake = 0; S.soroban = 0; S.indizi = []; S.scena = 0; S.gouUsato = false; S.esitoScontro = null;
     mazzo = []; ultima = null; ordineStanze = null;
+    GenkaiCommenti.smonta(document.getElementById("commenti"));
     render();
   });
+  /* il modulo commenti compare solo qui, a caso concluso: durante le scene non deve vedersi */
+  GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo", extra: () => "scena " + S.scena + "/" + SCENE_TOT + (S.esitoScontro ? " · scontro: " + S.esitoScontro : "") + " · Ki " + S.ki });
 }
 
 render();
-GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo", extra: () => "scena " + S.scena + "/" + SCENE_TOT + (S.esitoScontro ? " · scontro: " + S.esitoScontro : "") + " · Ki " + S.ki });
 })();
 </script>
 </body>

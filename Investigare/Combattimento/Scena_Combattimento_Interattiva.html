@@ -60,9 +60,12 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
     immagine: "../sito_genkai/provalo/img/coltello.jpg",
     flusso: document.getElementById("flusso"),
     stato, pg,
-    onFine: (tipo, ki) => { esito = tipo + " a Ki " + ki; }
+    onFine: (tipo, ki) => {
+      esito = tipo + " a Ki " + ki;
+      /* il modulo commenti compare solo qui, a scontro concluso: prima non deve vedersi */
+      GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo/scontro (locale)", extra: () => esito });
+    }
   });
-  GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo/scontro (locale)", extra: () => esito });
 })();
 </script>
 </body>

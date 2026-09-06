@@ -821,9 +821,9 @@ Il Gou è stato tolto: rialza ${r.attributo} e riscegli, oppure prendine un altr
         // — equipaggiamento di servizio, per intero
         const equipCorpo = `<p class="pg-riep-p">In borghese non porti l'arma: resta nell'armadietto in centrale e si preleva, firmando, solo per le operazioni.</p>
             <ul class="pg-riep-lista">
-            <li><strong>Armadietto</strong> — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/2 · ricarica 4 · danno 3. Addestramento base: sai usarla, non sei un tiratore scelto</li>
+            <li><strong>Armadietto</strong> — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 4/2 · ricarica 5 · danno 4. Addestramento base: sai usarla, non sei un tiratore scelto</li>
             <li><strong>Armadietto</strong> — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4</li>
-            <li><strong>Operazioni</strong> — Keibō (manganello): Silenzio · vel. 2/1 · danno 2</li>
+            <li><strong>Operazioni</strong> — Keibō (manganello): Silenzio · vel. 2/2 · danno 2</li>
             <li><strong>Sempre con te</strong> — Keisatsu techō (tesserino), manette, taccuino</li>
             <li><strong>A mani nude</strong> — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni)</li>
             </ul>`;

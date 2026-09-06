@@ -453,9 +453,9 @@ def genera_scheda(d, output_filename, image_path=None):
              size=9, color=GRAY, italic=True, after=2, keep=True)
     tiratore = "non sei una tiratrice scelta" if d.get("genere") == "f" else "non sei un tiratore scelto"
     equip_lines = (
-        f"Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 3/1 · ricarica 4 · danno 3. Addestramento base: sai usarla, {tiratore}",
+        f"Armadietto — Revolver New Nambu M60 (.38, 5 colpi): Lucidità · vel. 4/2 · ricarica 5 · danno 4. Addestramento base: sai usarla, {tiratore}",
         "Armadietto — Giubbotto antiproiettile: Assorbe 3 (fisso, contro ogni colpo) · indossare 4",
-        "Operazioni — Keibō (manganello): Silenzio · vel. 2/1 · danno 2",
+        "Operazioni — Keibō (manganello): Silenzio · vel. 2/2 · danno 2",
         "Sempre con te — Keisatsu techō (tesserino), manette, taccuino",
         "A mani nude — Lotta 1 d'accademia: Presenza · vel. 1/1 · danno 1 (prese e immobilizzazioni; il grado 1 ce l'hanno tutti gli investigatori)",
     )

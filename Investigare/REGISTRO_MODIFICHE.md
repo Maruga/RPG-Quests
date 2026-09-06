@@ -11,6 +11,14 @@
 
 ## Da applicare
 
+### 2026-09-07 · WIZARD → REGOLE · Schede PG allineate alle armi v3.1 (fatto da WIZARD su ordine dell'utente)
+Le schede portavano ancora i valori vecchi delle armi. Corretti nei 5 `pg/PG_0*.md`, nel generatore `pg/genera_schede_pg.py`,
+nelle 5 `ANTEPRIMA_*.docx` rigenerate e in `pg/SCHEDE_PG_TUTTE.docx` (backup `SCHEDE_PG_TUTTE.docx.bak-20260907-claude`):
+**Revolver New Nambu** `vel. 3/1 (3/2 nel DOCX completo) · ricarica 4 · danno 3` → **`vel. 4/2 · ricarica 5 · danno 4`**;
+**Keibō** `vel. 2/1 · danno 2` → **`vel. 2/2 · danno 2`** (valori decisi dall'autore: `Simulazione.xlsx`, manuale v3.1). Mani nude
+1/1 danno 1 e giubbotto Assorbe 3 / indossare 4 erano già giusti; nessuno dei 5 ha Senmon d'arma. Stessa correzione nel wizard PG
+(riepilogo `pg.js` e stampa `Stampa.cshtml`). File di REGOLE toccati con l'ok esplicito dell'utente. — **NON SERVE** (informativa)
+
 ### 2026-09-06 (notte) · WIZARD → REGOLE · Combattimento v3.1: chiusi gli ultimi punti aperti — **le Senmon d'arma cambiano**
 Decisioni dell'utente, già nel manuale `Combattimento/GENKAI_Combattimento.md`, nella Scheda Giocatori e nella scena online:
 1. **Senmon d'arma = UN'ARMA SPECIFICA, DICHIARATA** («quando prendo Pistola +1 non significa fucile o altro; posso avere
@@ -19,8 +27,8 @@ Decisioni dell'utente, già nel manuale `Combattimento/GENKAI_Combattimento.md`,
    di chi attacca e **non si sceglie** (l'idea dei «profili di difesa alternativi» è chiusa: no).
    ⚠ Per REGOLE: in `GENKAI_Specializzazioni.md` la voce **«Lame e bastoni» (Pazienza o Silenzio, coltello o bastone)** non
    regge più: va sciolta nelle singole armi (Coltello · Manganello · Spada · Mazza · Machete · Catena · Armi da lancio, oltre a
-   Pistola · Fucile · Mitragliatrice già distinte; Tiro di precisione ed Esplosivi restano). Controllare anche le schede PG
-   che la citano. Lato WIZARD: biblioteca `senmon.json` del wizard PG **allineata e online** (2026-09-06 notte: Coltello · Manganello · Spada ·
+   Pistola · Fucile · Mitragliatrice già distinte; Tiro di precisione ed Esplosivi restano). Le schede PG in `pg/` (i 5 .md,
+   il generatore e le DOCX) NON la citano: verificato il 2026-09-07, lì niente da fare. Lato WIZARD: biblioteca `senmon.json` del wizard PG **allineata e online** (2026-09-06 notte: Coltello · Manganello · Spada ·
    Mazza · Machete · Catena · Armi da lancio · Pistola · Fucile · Mitragliatrice, ognuna «solo quest'arma, mai in difesa»;
    la vecchia voce resta leggibile sulle schede già create ma non si propone più).
    Nella scena online il PG ora ha **Manganello 1** (era «Lame e bastoni 1»).
@@ -45,7 +53,7 @@ scambio con iniziativa = il dado migliore dei 2d6 e basta · **Ki dei PNG calcol
 dado alto di 2d6): le taglie 3/6/9 non valgono più · **regola opzionale del GM**: Ki mai sotto 0; a 0 un tiro su Distacco
 o Pazienza (a scelta del giocatore) decide vivo-a-terra o morto · armi ampliate su tutti gli attributi (machete, catena,
 armi da lancio; valori [da validare] al tavolo). Il poco che resta aperto è in fondo al manuale.
-⚠ Per il wizard casi: le statistiche PNG con «Riserva 3/6/9» vanno rifatte con la formula del Ki dei PG (TODO WIZARD). — **DA APPLICARE** (presa visione)
+Wizard casi: le statistiche PNG usano già il Ki con la formula dei PG (attributo più basso + 2d6 dado migliore, tetto 12); il 2026-09-07 tolte le ultime frasi «Riserva 3/6/9» dai testi del passo Schede e dello schema. ⚠ Il foglio da tavolo del combattimento dell'avventura Bakuon (`Avventura Tanto Rumore/SCONTRO_FOGLIO_TAVOLO.docx`, generato da `genera_foglio_scontro.py`) è ancora tutto sulle regole v2 (iniziativa col dado basso, difesa che assorbe, Riserva 3/6/9): da rifare sulla v3.1 prima di giocarla, o da sostituire con `Combattimento/Scheda_Giocatori_Combattimento.html`. — **DA APPLICARE** (presa visione + decisione sul foglio Bakuon)
 
 
 ### 2026-09-06 · WIZARD → REGOLE · Scena di combattimento ONLINE (pagina a sé + scena 8 del mini-caso) e modulo commenti

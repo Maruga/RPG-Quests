@@ -205,24 +205,24 @@ congelate in `versioni/`.
 
 ## APERTI (non decisi — non inventare)
 
-- **Dubbi mandati all'utente il 2026-09-05 sera** (default = com'è scritto ora nel manuale):
-  1) parità d'iniziativa = simultanei; 2) armi ° e logica difese per famiglie; 3) Opportunità 5+;
-  4) soppressione +3 iniziativa; 5) granata → Ukemi su Lucidità; 6) incastro «−1 ravvicinato» v3 con
-  «+1/+2 caotico a contatto» v2; 7) Sotto Tiro: con i 2d6 la velocità 0 batte il tuffo (1) solo ~56%
-  delle volte (in v2 era netto) — va bene?; 8) muoversi+attaccare; 9) Fuori Tempo: ripensare o
-  lasciar cadere; 10) Senmon profili difesa · stallo; 11) taglie Ki PNG 3/6/9 (dopo il commento
-  «Ki 3 è già in Genkai»); 12) **velocità di Minacciare** (0 / 1 / 2 — la scena usa 2).
+- ✔ I 12 dubbi del 2026-09-05 sera sono TUTTI risolti dall'utente il 2026-09-06 (tre tornate, vedi DECISO).
+- ✔ **Critici riconfermati (2026-09-07)**: 1+1 = +1d6 (danni in attacco, parato in Ukemi); 11 = niente
+  (in combattimento niente Nami/Kiwami, niente soroban); **6+6 = mancato + imprevisto con la tabella e
+  i suoi effetti** («resta così com'è»: NON è puro colore; solo il 12 in difesa è un semplice fallimento).
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
 
 - **Nessun punto di regola aperto** (2026-09-06 notte). Resta solo la prova al tavolo dei valori delle
   armi ° («decido quando le gioco»). Wizard PG: `senmon.json` già allineato e online (una Senmon per arma;
-  «Lame e bastoni» nascosta, resta solo per le schede vecchie). TODO WIZARD casi: statistiche PNG «Riserva
-  3/6/9» → Ki con la formula dei PG.
+  «Lame e bastoni» nascosta, resta solo per le schede vecchie). Wizard casi: le statistiche PNG tirano già il
+  Ki con la formula dei PG; testi «Riserva 3/6/9» ripuliti il 2026-09-07. ⚠ Il foglio scontro da tavolo di
+  Bakuon (`Avventura Tanto Rumore/genera_foglio_scontro.py` → DOCX) è ancora v2: da rifare o sostituire con la
+  Scheda Giocatori v3.1 prima di giocare.
 - Chiusi altrove, tolti da qui: Critici e Soroban in combattimento (il manuale dice «non muove il
   soroban», registro 2026-09-05); «piccolo movimento + attacco» senza malus, decide il GM (direttiva
   2026-09-06).
 - Numeri delle probabilità di riferimento: attacco su 5→28% · 6→42% · 7→58% · 8→72%;
   1 Ki in difesa ≈ 1,5 danni parati in media (conviene contro armi grosse).
-- La scena di combattimento della demo `sito_genkai/provalo/` si ricostruirà su QUESTO sistema
-  quando sarà chiuso.
+- ✔ La scena di combattimento della demo è già su questo sistema (online dal 2026-09-06, v3.1
+  definitiva). Fuori dalle regole restano: le immagini vere per lo scontro (secondo step dell'utente),
+  il TODO wizard casi (Riserva → Ki), e per REGOLE le righe DA APPLICARE del registro.

@@ -1,13 +1,24 @@
 /* GENKAI — modulo commenti (condiviso da /provalo e /provalo/scontro).
-   GenkaiCommenti.monta(el, { pagina, extra })  → disegna il modulo in fondo alla pagina.
+   GenkaiCommenti.monta(el, { pagina, extra })  → disegna il modulo. Si chiama ALLA FINE (epilogo dello scontro,
+   finale del mini-caso), non al caricamento: l'autore non lo vuole visibile prima che si sia giocato (2026-09-07).
+   GenkaiCommenti.smonta(el) → lo toglie (quando si rigioca).
    Invio: POST /api/commenti (endpoint del sito) → email a chi fa il gioco + copia sul server.
    Se l'invio non è possibile (pagina aperta da file, rete giù) resta il collegamento per scrivere a mano. */
 (function(){
 "use strict";
 const MAIL = "info@genkai.it";
 
+function smonta(el){
+  if (!el) return;
+  el.innerHTML = "";
+  el.classList.remove("commenti");
+  delete el.dataset.montato;
+}
+
 function monta(el, opz){
   opz = opz || {};
+  if (el.dataset.montato) return; /* una volta sola: se il finale si ridisegna, il modulo resta com'è */
+  el.dataset.montato = "1";
   el.classList.add("commenti");
   el.innerHTML = `
     <h2>Dimmi cosa ne pensi</h2>
@@ -54,5 +65,5 @@ function monta(el, opz){
   function mostra(html, male){ esito.hidden = false; esito.classList.toggle("male", !!male); esito.innerHTML = html; }
 }
 
-window.GenkaiCommenti = { monta };
+window.GenkaiCommenti = { monta, smonta };
 })();
