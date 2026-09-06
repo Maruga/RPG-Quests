@@ -3,13 +3,16 @@
    Usato dalla pagina a sé (/provalo/scontro/) e dal mini-caso (/provalo/, scena 8).
 
    Regole implementate = SOLO quelle decise (Investigare/Combattimento/GENKAI_Combattimento.md v3.0):
-   · iniziativa 2d6 + mod.Presenza + velocità (+Tame, +2 se intimidito): il totale BASSO agisce prima
+   · iniziativa 2d6 + mod.Presenza + velocità (+Tame, +malus se scosso): il totale BASSO agisce prima;
+     a parità agisce prima chi ha più Presenza (v3.1)
    · attacco 2d6 (− Senmon − Tame − preparazione) ≤ attributo dell'arma, pari = colpito; danno = scarto + arma
    · difesa solo in Ukemi (l'azione che si converte in difesa, decisa prima del tiro avversario):
      2d6 ≤ attributo di difesa dell'arma che attacca; para lo scarto; 1 Ki = −2 (solo restando a Ki ≥ 1)
    · colpito prima di agire = azione persa (salvo Stringere i Denti: danno 1-2, paghi 1 punto dell'attributo)
    · critici nei due sensi: 1+1 = +1d6; 6+6 in attacco = mancato + imprevisto (tabella corpo a corpo)
-   · Minacciare: 2d6 ≤ Presenza → l'avversario è intimidito: +2 alla sua iniziativa al prossimo scambio
+   · Minacciare (velocità 0, solo voce): 2d6 ≤ Presenza → l'avversario è SCOSSO nel prossimo scambio
+     (+1/+2/+3 a tutti i suoi tiri per scarto 0/1/2+ [da confermare]); chi minaccia può comunque difendersi (v3.1)
+   · regola opzionale del GM: il Ki si ferma a 0; a 0 può decidere «vivo ma a terra» (v3.1)
    · zone: arretrare = fuori portata (vicino); da lì uscire = fine dello scontro
    Scelte da GM della scena (non regole): il ragazzo è una comparsa (Ki 5, Pazienza 4, Presenza 6);
    la velocità della minaccia, del movimento e del raccogliere l'arma vale 2 [da validare per la minaccia];
@@ -209,12 +212,15 @@ function senmonDi(c){
 /* velocità dell'azione dichiarata (colonna Colpire / Estrarre, o scala delle azioni) */
 function velocita(c){
   if (c.dich === "attacco") return c.daSfoderare ? c.arma.estrarre : c.arma.colpire;
-  return 2; /* minaccia, arretro, esco, avanza, raccolgo: un movimento [da validare per la minaccia] */
+  if (c.dich === "minaccia") return 0; /* è solo voce (deciso 2026-09-06) */
+  return 2; /* arretro, esco, avanza, raccolgo: un movimento */
 }
 const etichettaVel = c => ({
   attacco: c.daSfoderare ? `${c.arma.nome} da riprendere in mano` : c.arma.nome,
-  minaccia:"la minaccia", arretro:"il movimento", esco:"il movimento", avanza:"il movimento", raccolgo:"raccogliere l'arma", aspetto:"restare fermo"
+  minaccia:"la minaccia: solo voce", arretro:"il movimento", esco:"il movimento", avanza:"il movimento", raccolgo:"raccogliere l'arma", aspetto:"restare fermo"
 })[c.dich];
+/* Minacciare riuscita → l'avversario è SCOSSO nel prossimo scambio: +1/+2/+3 ai suoi tiri per scarto 0/1/2+ [da confermare] */
+const gravitaMinaccia = scarto => Math.min(3, 1 + scarto);
 
 /* ═══════ I RIQUADRI «CHI SEI / LUI» (copertina e mini-caso) ═══════ */
 function schedaBreve(pg, nip){
@@ -327,7 +333,7 @@ function avvia(opz){
   async function scambio(){
     const el = card(`Scambio ${N}`);
     await inAlto(el);
-    [PG, NIP].forEach(c => { c.dich = null; c.agito = false; c.colpito = false; c.ukemi = false; c.tame = 0; c.spendiKi = false; });
+    [PG, NIP].forEach(c => { c.dich = null; c.agito = false; c.colpito = false; c.ukemi = false; c.tame = 0; c.spendiKi = false; c.malusScosso = c.scosso || 0; c.scosso = 0; });
 
     if (N === 1) scrivi(el, `<p class="regola">Uno scontro va a <b>scambi</b>. In ogni scambio: ① ognuno dice cosa fa · ② i dadi decidono <b>chi agisce per primo</b> · ③ si agisce, in quell'ordine.</p>`);
 
@@ -337,7 +343,7 @@ function avvia(opz){
     if (NIP.raccogliere) { NIP.dich = "raccolgo"; narr(el, caso(TESTI.luiRaccoglie)); }
     else if (fascia === "vicino") { NIP.dich = "avanza"; narr(el, caso(TESTI.luiAvanza)); }
     else { NIP.dich = "attacco";
-      narr(el, NIP.arma === ARMI.lotta ? caso(TESTI.luiDichiaraNudo) : NIP.intimidito ? caso(TESTI.luiDichiaraScosso) : NIP.ki <= 2 ? caso(TESTI.luiDichiaraFerito) : caso(TESTI.luiDichiara)); }
+      narr(el, NIP.arma === ARMI.lotta ? caso(TESTI.luiDichiaraNudo) : NIP.malusScosso ? caso(TESTI.luiDichiaraScosso) : NIP.ki <= 2 ? caso(TESTI.luiDichiaraFerito) : caso(TESTI.luiDichiara)); }
 
     scrivi(el, `<p><b>E tu?</b></p>`);
     const Pz = PG.attr.Presenza, A = PG.attr[PG.arma.attacco];
@@ -346,22 +352,23 @@ function avvia(opz){
     const urlo = NIP.arma === ARMI.lotta ? "«Fermo! Basta così!»" : "«Metti giù il coltello!»";
     const attaccoTesto = PG.arma === ARMI.lotta ? "Attacco a mani nude" : `Attacco col ${PG.arma.nome}`;
     let opzioni;
+    const sottoMinaccia = `tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}${Pz <= 5 ? ", la tua Presenza è bassa" : ""}. È solo voce: velocità 0, e se mi attacca posso comunque difendermi. Se riesce, nel prossimo scambio lui è scosso: +1, +2 o +3 a tutto quello che tira`;
     if (PG.raccogliere) {
       opzioni = [
         { v:"raccolgo", forte:true, testo:"Raccolgo il manganello", sotto:"è a terra: recuperarlo mi costa l'azione di questo scambio" },
-        { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}. Se riesce, al prossimo scambio lui esita (+2 alla sua iniziativa)` },
+        { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:sottoMinaccia },
       ];
     } else if (fascia === "contatto") {
       opzioni = [
         { v:"attacco", forte:true, testo:attaccoTesto, sotto:`tiro 2d6${conSen} ≤ ${PG.arma.attacco} ${A} — ${prob(A + sen)}. Se colpisco: danno ${PG.arma.danno} + quanto sto sotto` },
-        { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}${Pz <= 5 ? ", la tua Presenza è bassa" : ""}. Se riesce, al prossimo scambio lui esita: +2 alla sua iniziativa` },
+        { v:"minaccia", testo:`Lo minaccio — ${urlo}`, sotto:sottoMinaccia },
         { v:"arretro", testo:"Arretro verso la porta", sotto:"esco dalla sua portata: se ci arrivo prima che colpisca, stavolta non mi prende" },
       ];
       if (N >= 2) opzioni.splice(1, 0, { v:"tame", testo:`${attaccoTesto}, trattenendo il fiato`, sotto:`in gioco: Tame. Agisco più tardi (+2 all'iniziativa) ma il colpo è più preciso: altri −2 al tiro — da ${prob(A + sen)} a ${prob(A + sen + 2)}` });
     } else {
       opzioni = [
         { v:"esco", forte:true, testo:"Esco e chiudo la porta", sotto:"fine dello scontro: aspetti i rinforzi dall'altra parte" },
-        { v:"minaccia", testo:"Lo minaccio — «Fermo lì!»", sotto:`tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}. Se riesce, al prossimo scambio esita (+2 alla sua iniziativa)` },
+        { v:"minaccia", testo:"Lo minaccio — «Fermo lì!»", sotto:sottoMinaccia },
         { v:"aspetto", testo:"Resto fermo e lo aspetto", sotto:"non agisco: mi preparo. Il prossimo tiro che farò avrà −1" },
       ];
     }
@@ -378,15 +385,17 @@ function avvia(opz){
     const esiti = await Promise.all([PG, NIP].filter(c => c.ki > 0 && c.dich !== "aspetto").map(c => tiraDadi(griglia, `${nomeDi(c)} iniziativa`).then(r => [c, ...r])));
     await attesa(700);
     for (const [c, a, b, t] of esiti) {
-      const mod = modPresenza(c.attr.Presenza), vel = velocita(c), inti = c.intimidito ? 2 : 0;
+      const mod = modPresenza(c.attr.Presenza), vel = velocita(c), inti = c.malusScosso || 0;
       c.ini = a + b + mod + vel + (c.tame || 0) + inti;
-      t.innerHTML = `${a}+${b} = ${a+b}, ${mod >= 0 ? "+" + mod : mod} (Presenza ${c.attr.Presenza}${mod > 0 ? ": lento" : mod < 0 ? ": pronto" : ""}), +${vel} (${etichettaVel(c)})${c.tame ? `, +${c.tame} (trattieni il fiato)` : ""}${inti ? `, +2 (intimidito)` : ""} = <b>${c.ini}</b>`;
-      c.intimidito = false;
+      t.innerHTML = `${a}+${b} = ${a+b}, ${mod >= 0 ? "+" + mod : mod} (Presenza ${c.attr.Presenza}${mod > 0 ? ": lento" : mod < 0 ? ": pronto" : ""}), +${vel} (${etichettaVel(c)})${c.tame ? `, +${c.tame} (trattieni il fiato)` : ""}${inti ? `, +${inti} (scosso)` : ""} = <b>${c.ini}</b>`;
     }
-    const ordine = [PG, NIP].filter(c => c.ki > 0).sort((x, y) => x.ini - y.ini);
-    const pari = ordine.length > 1 && ordine[0].ini === ordine[1].ini && ordine[0].ini < 99;
+    /* il totale basso agisce prima; a parità, chi ha più Presenza (deciso 2026-09-06); a pari Presenza: insieme */
+    const ordine = [PG, NIP].filter(c => c.ki > 0).sort((x, y) => x.ini - y.ini || y.attr.Presenza - x.attr.Presenza);
+    const stessaIni = ordine.length > 1 && ordine[0].ini === ordine[1].ini && ordine[0].ini < 99;
+    const pari = stessaIni && ordine[0].attr.Presenza === ordine[1].attr.Presenza;
     if (PG.dich === "aspetto") scrivi(el, `<p class="verdetto">Agisce solo lui.</p>`);
-    else if (pari) scrivi(el, `<p class="verdetto"><b>Stessa iniziativa: agite nello stesso istante.</b></p>`);
+    else if (pari) scrivi(el, `<p class="verdetto"><b>Stessa iniziativa e stessa Presenza: agite nello stesso istante.</b></p>`);
+    else if (stessaIni) scrivi(el, `<p class="verdetto"><b>Stessa iniziativa</b> (${ordine[0].ini} e ${ordine[1].ini}): agisce prima chi ha più Presenza — ${ordine[0].pg ? "<b>TU</b>" : "<b>LUI</b>"} (${ordine[0].attr.Presenza} contro ${ordine[1].attr.Presenza}).</p>`);
     else scrivi(el, `<p class="verdetto">Agisce prima ${ordine[0].pg ? "<b>TU</b>" : "<b>LUI</b>"} (${ordine[0].ini} contro ${ordine[1].ini}).${N === 1 ? " Meno fai coi dadi, prima ti muovi." : ""}</p>`);
     if (N === 1) { const mp = modPresenza(PG.attr.Presenza); aiuto(el, "Perché la Presenza conta nell'iniziativa", `In GENKAI <b>meno fai coi dadi, meglio è</b> — sempre. La Presenza ${PG.attr.Presenza} ti ${mp > 0 ? `aggiunge ${mp} all'iniziativa (quindi agisci dopo)` : mp < 0 ? `toglie ${-mp} all'iniziativa (agisci prima)` : "lascia l'iniziativa com'è"}; una Presenza 8 toglierebbe 2. Il manganello aggiunge 2, il coltello in mano solo 1: la lama è più rapida.`); }
 
@@ -401,11 +410,16 @@ function avvia(opz){
 
       if (c.dich === "minaccia") {
         const prep = c.preparato ? 1 : 0; c.preparato = false;
+        const mal = c.malusScosso || 0;
         const [ma, mb, mt] = await tiraDadi(el, `${nomeDi(c)} minacci (Presenza ${c.attr.Presenza})`);
-        const tot = Math.max(2, ma + mb - prep);
-        mt.innerHTML = `${ma}+${mb} = ${ma+mb}${prep ? ` −1 (preparato) = ${tot}` : ""} contro <b>${c.attr.Presenza}</b>: ${tot <= c.attr.Presenza ? "<b>riuscito</b>" : "fallito"}`;
-        if (tot <= c.attr.Presenza) { NIP.intimidito = true; narr(el, `La voce esce giusta, bassa e ferma: il ragazzo esita, la punta del coltello trema. <span class="parata">Al prossimo scambio sarà più lento: +2 alla sua iniziativa.</span>`); }
-        else narr(el, "La voce ti esce troppo alta, incrinata: lui non sente altro che la propria paura.");
+        const tot = Math.max(2, ma + mb - prep + mal);
+        mt.innerHTML = `${ma}+${mb} = ${ma+mb}${prep ? ` −1 (preparato)` : ""}${mal ? ` +${mal} (scosso)` : ""}${(prep || mal) ? ` = ${tot}` : ""} contro <b>${c.attr.Presenza}</b>: ${tot <= c.attr.Presenza ? "<b>riuscito</b>" : "fallito"}`;
+        if (tot <= c.attr.Presenza) {
+          const g = gravitaMinaccia(c.attr.Presenza - tot);
+          NIP.scosso = g;
+          narr(el, `La voce esce giusta, bassa e ferma: il ragazzo esita, la punta del coltello trema. <span class="parata">Nel prossimo scambio è scosso: +${g} a tutto quello che tira</span>${g >= 3 ? " — e per un attimo sembra sul punto di posare il coltello (al tavolo, lo deciderebbe il GM)" : ""}.`);
+        } else narr(el, "La voce ti esce troppo alta, incrinata: lui non sente altro che la propria paura.");
+        scrivi(el, `<p class="regola">Hai speso l'azione, ma la voce non ti scopre: se ti attacca, puoi ancora difenderti.</p>`);
         continue;
       }
       if (c.dich === "arretro") {
@@ -461,16 +475,32 @@ function avvia(opz){
         dif.ukemi = true;
         narr(el, "Vede il colpo arrivare e si copre con le braccia: <b>rinuncia al suo colpo per difendersi</b>.");
       }
+    } else if (dif.pg && dif.agito && dif.dich === "minaccia" && !dif.ukemi && dif.ki > 0) {
+      /* chi ha minacciato può comunque difendersi: la voce non lo scopre (deciso 2026-09-06) */
+      const box = document.createElement("div");
+      box.className = "urgente";
+      const attrD = dif.attr[att.arma.difesa];
+      box.innerHTML = `<h4>${att.arma.nome === "mani nude" ? "Il pugno parte" : "La lama parte"} — hai minacciato, non attaccato: puoi difenderti</h4>
+        <p>La voce non ti scopre: hai il tiro di difesa senza rinunciare a niente (2d6 ≤ ${att.arma.difesa} ${attrD}, quanto stai sotto lo pari). Vuoi anche bruciare 1 Ki?</p>`;
+      el.appendChild(box);
+      await segui(box);
+      const s = await scelta(box, [
+        { v:"si", testo:"Mi difendo", sotto:`tiro 2d6 ≤ ${att.arma.difesa} ${attrD}` },
+        { v:"ki", testo:"Mi difendo bruciando 1 Ki", sotto:`−2 al tiro; il Ki non torna (ne ho ${dif.ki})`, off: dif.ki < 2 },
+      ]);
+      dif.ukemi = true; dif.spendiKi = (s === "ki");
+      narr(el, "«Fermo!» — e intanto ti sposti: la voce non ti ha scoperto.");
     }
 
     const prep = att.preparato ? 1 : 0; att.preparato = false;
     const [senNome, sen] = senmonDi(att);
     const soglia = att.attr[att.arma.attacco];
+    const malA = att.malusScosso || 0;
     await attesa(600);
     const [a, b, t] = await tiraDadi(el, `${nomeDi(att)} ${att.pg ? "attacchi" : "attacca"} — ${att.arma.nome}, ${att.arma.attacco} ${soglia}`);
     const somma = a + b;
-    const tiro = Math.max(2, somma - sen - (att.tame || 0) - prep);
-    t.innerHTML = `${a}+${b} = ${somma}${sen ? ` −${sen} (${senNome})` : ""}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${(sen || att.tame || prep) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
+    const tiro = Math.max(2, somma - sen - (att.tame || 0) - prep + malA);
+    t.innerHTML = `${a}+${b} = ${somma}${sen ? ` −${sen} (${senNome})` : ""}${att.tame ? ` −${att.tame} (fiato trattenuto)` : ""}${prep ? ` −1 (preparato)` : ""}${malA ? ` +${malA} (scosso)` : ""}${(sen || att.tame || prep || malA) ? ` = ${tiro}` : ""} contro <b>${soglia}</b>: ${tiro <= soglia && !(a === 6 && b === 6) ? "<b>colpito</b>" : "<b>mancato</b>"}`;
 
     if (a === 6 && b === 6) {
       const imp = d6(), chi = att.pg ? "Il tuo colpo" : "Il suo colpo";
@@ -505,10 +535,11 @@ function avvia(opz){
       if (dif.spendiKi && dif.ki >= 2) { dif.ki -= 1; bonus = 2; aggiornaStato();
         scrivi(el, `<p class="nota">${dif.pg ? `Bruci 1 Ki (te ne restano ${dif.ki})` : `Brucia 1 Ki (gli restano ${dif.ki})`}: −2 al tiro di difesa.</p>`); }
       const prepD = dif.preparato ? 1 : 0; dif.preparato = false;
+      const malD = dif.malusScosso || 0;
       await attesa(700);
       const [da, db, td] = await tiraDadi(el, `${nomeDi(dif)} ${dif.pg ? "ti difendi" : "si difende"} — ${att.arma.difesa} ${attrDif}`);
-      const tiroD = Math.max(2, da + db - bonus - prepD);
-      td.innerHTML = `${da}+${db} = ${da+db}${bonus ? ` −${bonus} (Ki)` : ""}${prepD ? ` −1 (preparato)` : ""}${(bonus || prepD) ? ` = ${tiroD}` : ""} contro <b>${attrDif}</b>: ${tiroD <= attrDif && !(da === 6 && db === 6) ? "<b>riuscito</b>" : "<b>fallito</b>"}`;
+      const tiroD = Math.max(2, da + db - bonus - prepD + malD);
+      td.innerHTML = `${da}+${db} = ${da+db}${bonus ? ` −${bonus} (Ki)` : ""}${prepD ? ` −1 (preparato)` : ""}${malD ? ` +${malD} (scosso)` : ""}${(bonus || prepD || malD) ? ` = ${tiroD}` : ""} contro <b>${attrDif}</b>: ${tiroD <= attrDif && !(da === 6 && db === 6) ? "<b>riuscito</b>" : "<b>fallito</b>"}`;
       if (da === 6 && db === 6) { scrivi(el, `<p class="regola">Doppio 6 in difesa: semplicemente fallita, niente imprevisti.</p>`); narr(el, caso(TESTI.ukemiNo)); }
       else if (tiroD <= attrDif) {
         parata = attrDif - tiroD;
@@ -571,6 +602,7 @@ function avvia(opz){
         <li>Ogni scambio: dichiari · <b>iniziativa</b> (2d6 + Presenza + velocità, il basso agisce prima) · azioni</li>
         <li>Colpito prima di agire = <b>azione persa</b> (salvo stringere i denti)</li>
         <li>Difendersi = rinunciare all'azione (<b>Ukemi</b>), deciso prima del tiro avversario; chi ha già agito non si difende</li>
+        <li><b>Minacciare</b> è solo voce: se riesce l'avversario è scosso al prossimo scambio — e tu puoi ancora difenderti</li>
         <li><b>Tame</b>: trattenere il fiato — più tardi, ma più preciso</li>
         <li>Il <b>Ki</b> è vita ed energia insieme: a 0 si muore; sotto 3 c'è il <b>Genkai</b></li>
       </ul></div>`;
@@ -584,8 +616,9 @@ function avvia(opz){
         <p>Esci nel corridoio e chiudi la porta: la lama batte due volte sul legno, poi silenzio. Ti appoggi al muro col manganello ancora in mano e ascolti le sirene avvicinarsi. Nessuno si è fatto male.</p>
         <p class="regola">In GENKAI <b>andarsene è spesso la mossa migliore</b>: il combattimento è raro e non perdona. Chiudi con <b>Ki ${PG.ki}</b> su ${PG.kiMax}.${PG.ki <= 3 ? " Sei comunque oltre il limite: il Genkai ti aspetta." : ""}</p>` + visto;
     } else {
-      el.innerHTML = `<h3>☠ Ki 0 — si muore</h3>
+      el.innerHTML = `<h3>☠ Ki 0 — a terra</h3>
         <p>La lama trova il punto sbagliato e la cucina si spegne come una radio. In GENKAI il combattimento non perdona: era la scena da evitare — o da chiudere prima.</p>
+        <p class="regola">Il Ki si ferma a 0: il danno in più non conta. <b>Regola base:</b> a Ki 0 si muore. <b>Regola opzionale, del GM:</b> può decidere che sei vivo — ma a terra, fuori gioco. Qui, senza GM, vale la regola base.</p>
         <p class="regola">Riprova: stavolta sai cosa costa ogni scelta. La porta era lì.</p>` + visto;
     }
     if (opz.rigioca !== false) el.innerHTML += `<div class="bottoni riga"><button type="button" class="btn btn-forte" data-rigioca="1">↻ Rigioca lo scontro</button></div>`;

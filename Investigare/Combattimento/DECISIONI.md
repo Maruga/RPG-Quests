@@ -128,6 +128,40 @@ manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni
   endpoint `POST /api/commenti` nel wizard (email a `Commenti:Destinatario`, default la casella mittente
   info@genkai.it; copia in `logs/commenti.jsonl`; trappola anti-bot; 15/giorno per IP), dll pubblicata.
 
+- **DIRETTIVE DELL'UTENTE SUI 12 PUNTI (2026-09-06 sera) → manuale v3.1** (snapshot v3.0 in `versioni/`):
+  1) parità d'iniziativa → agisce prima chi ha la **Presenza più alta** (a pari Presenza: simultanei [dc]);
+  2) armi: ok alle ° + spada, machete, mitragliatrici leggera/pesante, «coprire più attributi possibile
+  con una logica» → tabella riorganizzata per attributo d'attacco (Presenza impeto · Pazienza momento ·
+  Silenzio calma · Lucidità linea · Distacco freddezza · Ascolto tempo/distanza: catena, armi da lancio)
+  — valori ° e logica [da validare]; 3) Opportunità = azione descrittiva extra **oppure un movimento**
+  (soglia 5+ ancora [dv]); 4) soppressione: chi la subisce «usa il dado più alto» — traduzione in v3
+  [da definire] (proposta: 3d6, somma dei due più alti); 5) granata: da rivedere insieme; 6) distanza:
+  distinguere armi bianche / da fuoco / pugni; afferrati, pistola e spada difficili — da definire alla
+  fine con le armi; 7) **Sotto Tiro = mira già fatta**: velocità 0 + bonus di mira compreso [−2 dc];
+  muoversi sotto tiro non è facile [da definire]; 8) **piccolo movimento + attacco: nessun costo,
+  decide il GM** (correre dall'altra parte e sparare = troppo; tavolo già ribaltato = ok); 9) **Fuori
+  Tempo RESTA**, con tetto più alto e comprensibile [proposta 15, dc]: chi sfora perde l'azione e la
+  completa nel prossimo scambio agendo presto; non si può fare apposta; «tirare solo un dado per
+  iniziativa» [da chiarire]; 10) Senmon-difesa e stallo: da rivedere insieme; 11) **Ki dei PNG come i
+  PG** (attributo più basso + dado alto di 2d6, tetto 12 — Manuale del Giocatore): via le taglie
+  3/6/9; 12) **Minacciare = velocità 0** (solo voce); se riesce l'avversario è **scosso**: malus da
+  **+1 a +3** ai suoi tiri, gravità per scarto [scala +1/+2/+3 per scarto 0/1/2+ e «tutti i tiri del
+  prossimo scambio» = mia lettura, dc]; il GM può fargli abbassare l'arma; se fallisce niente;
+  **chi minaccia può comunque difendersi**. 13) **Regola opzionale (GM)**: il Ki non va sotto 0; a
+  0 il GM può decidere che il PG è vivo ma a terra e fuori gioco [tiro su un attributo: quale, dc]
+  — anche nel combattimento online.
+  **Analisi (problemi trovati, da sottoporre)**: (a) Minacciare così com'è rischia di DOMINARE: velocità
+  0 (agisci quasi sempre per primo), non ti scopre (difesa intera), e un +3 su un avversario con
+  attacco 4-5 lo rende quasi innocuo → un PG con Presenza 7-8 può minacciare a ogni scambio e
+  l'avversario non colpisce mai; serve un limite (una sola minaccia efficace per scontro? la seconda
+  volta non ci casca? il malus non si rinnova finché non è passato?). (b) Ki dei PNG con la formula
+  dei PG: una comparsa 5-6 sta a 6-11 invece di 3 → gli scontri si allungano (la demo passerebbe da
+  ~5 a ~9 scambi): nella scena online il ragazzo resta a 5 (= 4 + 1, dentro la formula) finché non
+  dici altro. (c) Tetto Fuori Tempo 15: un'azione singola resta sempre sotto (regola v2 conservata);
+  sfora solo chi impila (alzarsi 2 + estrarre e sparare 4 = 6 → 2d6 + 6 + Presenza > 15 nel 17% dei
+  casi con Presenza 6, 42% con Presenza 4) — plausibile. (d) Sotto Tiro con mira −2 + Senmon + Tame
+  sta dentro il tetto −4: nessun problema.
+
 ## APERTI (non decisi — non inventare)
 
 - **Dubbi mandati all'utente il 2026-09-05 sera** (default = com'è scritto ora nel manuale):

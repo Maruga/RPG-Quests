@@ -11,6 +11,18 @@
 
 ## Da applicare
 
+### 2026-09-06 (sera) · WIZARD → REGOLE · Manuale Combattimento **v3.1** — direttive dell'utente sui punti aperti
+`Combattimento/GENKAI_Combattimento.md` è v3.1 (v3.0 congelata in `versioni/`). Decisioni dell'utente ora nel testo:
+**parità d'iniziativa → chi ha più Presenza** · **Minacciare è a velocità 0** (solo voce), se riesce l'avversario è
+«scosso» (malus +1/+2/+3 ai suoi tiri nel prossimo scambio, il GM può fargli abbassare l'arma) e **chi minaccia può
+comunque difendersi** · piccolo movimento + attacco senza costo, decide il GM · **Sotto Tiro = mira già fatta** ·
+Opportunità = azione descrittiva o un movimento · **Ki dei PNG calcolato come per i PG** (attributo più basso + dado
+alto di 2d6): le taglie 3/6/9 non valgono più · **regola opzionale del GM**: Ki mai sotto 0, a 0 può decidere «vivo
+ma a terra» · armi ampliate su tutti gli attributi (machete, catena, armi da lancio; valori [da validare]) ·
+Fuori Tempo RESTA (tetto da fissare, proposta 15). I punti [da confermare] sono elencati in fondo al manuale.
+⚠ Per il wizard casi: le statistiche PNG con «Riserva 3/6/9» vanno rifatte con la formula del Ki dei PG (TODO WIZARD). — **DA APPLICARE** (presa visione)
+
+
 ### 2026-09-06 · WIZARD → REGOLE · Scena di combattimento ONLINE (pagina a sé + scena 8 del mini-caso) e modulo commenti
 Pubblicati su genkai.it: **`/provalo/scontro/`** (lo scontro «Un coltello in cucina» da solo, per chi vuole
 provare il combattimento senza fare il mini-caso) e il **mini-caso a 9 scene** (`/provalo/`: la scena 8 è lo

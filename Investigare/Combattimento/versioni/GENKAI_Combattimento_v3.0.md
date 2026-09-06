@@ -1,5 +1,5 @@
 # GENKAI 限界 — Lo Scontro
-## Shōtotsu 衝突 — *manuale opzionale · **v3.1** (sistema ad azioni)*
+## Shōtotsu 衝突 — *manuale opzionale · **v3.0** (sistema ad azioni)*
 
 > Questo è un modulo **opzionale**. GENKAI resta un gioco investigativo: il combattimento è raro,
 > pericoloso, e la via intelligente resta chiamare rinforzi o andarsene. Ma un sospettato può
@@ -8,12 +8,6 @@
 > indagare.
 >
 > Gli altri manuali rimandano qui per tutto il combattimento.
->
-> **v3.1 (2026-09-06)** — direttive dell'autore sui punti aperti: parità d'iniziativa → Presenza ·
-> Minacciare (velocità 0, malus all'avversario, chi minaccia può difendersi) · piccolo movimento +
-> attacco a giudizio del GM · Sotto Tiro = mira già fatta · Opportunità = azione descrittiva o
-> movimento · Ki dei PNG come i PG · regola opzionale sul Ki 0 · armi ampliate su tutti gli
-> attributi. I dettagli da confermare sono segnati **[da confermare]**; l'elenco è in fondo.
 >
 > **v3.0 (2026-09-05)** — il sistema **ad azioni** (dichiarazione → iniziativa → risoluzione, tiri
 > separati) sostituisce lo scambio «a un tiro solo» della v2. La v2.1 è congelata in
@@ -40,9 +34,6 @@ Il confronto è sempre lo stesso: **totale ≤ attributo = riuscito**.
 - **Il danno non ha pavimento**: può portare il Ki a zero e sotto. **A Ki 0 o meno il PG è
   morto.** Il fermarsi a 1 delle perdite di Ki (Regolamento, *Uscita Definitiva*) vale per costi e
   pressioni — **non** per il danno
-  - *Regola opzionale, a scelta del GM (2026-09-06)*: **il Ki non scende sotto 0** (−1 o −2 contano
-    come 0) e **a Ki 0 il GM può decidere che il PG non è morto**: è a terra e non può fare nulla —
-    eventualmente un tiro su un attributo **[da definire quale]** decide se vive
 - **Dotazione d'accademia**: ogni investigatore ha **Lotta 1** di base (Regolamento, *Creazione*)
   — judo, kendo e tecniche d'arresto
 
@@ -56,10 +47,9 @@ Il combattimento procede a **scambi**. Ogni scambio ha tre tempi:
    Mirare, Prepararsi, Sotto Tiro…), con l'eventuale **Tame**. *La difesa non si dichiara*: è
    l'**Ukemi**, che scatta quando il colpo sta per arrivare (vedi *Le Azioni*)
 2. **INIZIATIVA** — ognuno tira **2d6 + modificatore di Presenza + velocità dell'arma o
-   dell'azione** (+ il Tame dichiarato, + il malus se è stato *scosso* da una minaccia). **Il totale
-   più basso agisce per primo.** A parità agisce prima **chi ha la Presenza più alta** (deciso
-   2026-09-06); a parità anche di Presenza le azioni sono simultanee — i danni si applicano insieme,
-   anche se qualcuno va giù **[da confermare]**
+   dell'azione** (+ il Tame dichiarato, + 2 se è stato intimidito). **Il totale più basso agisce
+   per primo.** A parità le azioni sono **simultanee** — i danni si applicano insieme, anche se
+   qualcuno va giù **[da validare]**
 3. **RISOLUZIONE** in ordine di iniziativa. **Chi viene colpito perde la propria azione** se non
    l'ha ancora fatta — il colpo ti ha fermato — salvo *Stringere i Denti* (vedi *Manovre*)
 
@@ -91,19 +81,15 @@ attaccando **non ha più il tiro di difesa** contro i colpi che arrivano dopo, i
 solo assorbimento e copertura. *Prima agisci, prima ti scopri.*
 
 **MUOVERSI** — un movimento pieno: riposizionarti, raggiungere una copertura, cambiare fascia
-(vedi *Le Zone*), aprire una porta, buttarti fuori dalla stanza. Oppure **un piccolo movimento più
-un attacco**, senza costo: **decide il GM quando il movimento è troppo** — correre dall'altra parte
-della stanza e sparare è troppo; ripararsi dietro un tavolo già ribaltato e sparare va bene
-(deciso 2026-09-06).
+(vedi *Le Zone*), aprire una porta, buttarti fuori dalla stanza. Oppure un piccolo movimento
+**più** un attacco *(costo del muoversi+attaccare: vedi Da validare)*.
 
-**MINACCIARE** — la voce, il distintivo, l'arma alzata: «*Metti giù il coltello!*». È solo voce:
-**velocità 0**. Tiri **2d6 ≤ Presenza**: se riesce, l'avversario è **scosso** e nel prossimo scambio
-ha **un malus ai suoi tiri da +1 a +3**, tanto più grave quanto più stai sotto — **[da confermare:
-+1 con scarto 0, +2 con scarto 1, +3 con scarto 2 o più; su tutti i suoi tiri del prossimo
-scambio]** — e, se il GM lo decide e la scena lo regge, **abbassa l'arma**. Se fallisce non succede
-nulla: hai speso l'azione. In ogni caso **chi minaccia può comunque difendersi** in quello scambio:
-la voce non ti scopre come un attacco — hai il tiro di difesa, con l'eventuale Ki (deciso
-2026-09-06).
+**MINACCIARE** — la voce, il distintivo, l'arma alzata: «*Metti giù il coltello!*». Tiri **2d6 ≤
+Presenza**: se riesce, l'avversario è **intimidito** — al **prossimo scambio somma +2 alla propria
+iniziativa** (esita, agisce più tardi). Minacciare è la tua azione dello scambio: hai agito, e
+contro i colpi che arrivano dopo hai solo assorbimento e copertura. **Velocità della minaccia:
+[da validare]** — l'autore non l'ha ancora fissata; nella scena interattiva vale **2**, come un
+movimento.
 
 ### Ukemi 受け身 — l'azione che diventa difesa
 
@@ -117,8 +103,7 @@ spesa**: in questo scambio non farai più nulla. Il tuo colpo sfuma per salvarti
 - Vale contro **UN** attacco. Se rifiuti e, prima del tuo turno, arriva un altro attacco, la
   scelta si ripropone
 - **Chi ha già agito non va in Ukemi**: se hai vinto l'iniziativa e hai già attaccato (o fatto
-  altro), contro i colpi che arrivano dopo hai solo assorbimento e copertura — con un'eccezione:
-  chi ha **minacciato** può ancora difendersi (vedi *Minacciare*)
+  altro), contro i colpi che arrivano dopo hai solo assorbimento e copertura
 
 ---
 
@@ -172,15 +157,14 @@ dopo la spesa** (serve Ki 2 o più): a Ki 0 in combattimento si muore — nessun
 > = **11**; lui 2+5 +0 +1 (coltello) = **8**. Agisce lui. Prima che tiri, vai in Ukemi: il tuo
 > attacco sfuma. Lui tira 2+2 = 4 ≤ Pazienza 5: colpito, scarto 1 + coltello 2 = **3 in arrivo**.
 > Tu difendi su Pazienza 5 (la lama si aspetta): 1+3 = 4 ≤ 5, scarto 1 → **prendi 2**. Ki 7 → 5.
-> **Scambio 2** — Tu minacci (velocità 0), lui attacca. Iniziativa: tu 1+2 +2 +0 = **5**; lui 4+3
-> +0 +1 = **8**. Agisci tu: «*Metti giù il coltello!*» — 2+1 = 3 ≤ Presenza 4, scarto 1: **scosso**,
-> +2 ai suoi tiri nel prossimo scambio [da confermare]. Poi lui: 5+3 = 8 > 5, **manca** — e se avesse
-> colpito, avresti avuto comunque il tiro di difesa: la voce non ti scopre.
+> **Scambio 2** — Tu minacci, lui attacca. Iniziativa: tu 1+2 +2 +2 (minaccia, velocità 2 [dv]) =
+> **7**; lui 4+3 +0 +1 = **8**.
+> Agisci tu: «*Metti giù il coltello!*» — 2+1 = 3 ≤ Presenza 4: **intimidito**. Poi lui: 5+3 = 8 > 5,
+> **manca**. Hai già agito: se avesse colpito, niente Ukemi.
 > **Scambio 3** — Attacco contro attacco. Iniziativa: tu 2+3 +2 +2 = **9**; lui 3+3 +0 +1 **+2
-> (scosso)** = **9**: **parità — agisce prima chi ha più Presenza: lui** (6 contro 4). Non hai ancora
-> agito: Ukemi? Tieni l'attacco. Lui 3+1 = 4, **+2 (scosso)** = 6 > 5: **manca**. Tu 2+3 = 5 ≤
-> Silenzio 5: scarto 0 + manganello 2 = **2** → **lui a Ki 3**, tu ancora a 5. Si rimescola tutto — e i
-> rinforzi sono ancora giù per le scale.
+> (intimidito)** = **9**: **parità, simultanei**. Tu 2+3 = 5 ≤ Silenzio 5: scarto 0 + manganello 2
+> = **2**; lui 3+1 = 4 ≤ 5: scarto 1 + 2 = **3**. Nessuno era in Ukemi: **lui a Ki 3, tu a Ki 2**.
+> Si rimescola tutto — e i rinforzi sono ancora giù per le scale.
 
 ---
 
@@ -213,37 +197,29 @@ Ogni arma ha l'attributo con cui **attacchi**, quello con cui **ti difendi** da 
 **velocità** (Estrarre: sfoderarla · Colpire: ce l'hai già in mano · Ricarica), il **danno** — e
 per alcune il fuoco a **raffica** e i **colpi multipli**.
 
-**La logica degli attributi** *(direttiva 2026-09-06: coprire più attributi possibile, con una logica.
-Le tre armi decise sono revolver, manganello e lotta; il resto è proposto, **[da validare]**)*.
-In **attacco**: **Presenza** = l'impeto (mani nude, armi improvvisate, machete, granata) ·
-**Pazienza** = il momento giusto (coltello, katana e spada, fucile di precisione) · **Silenzio** = la
-calma e l'intenzione nascosta (manganello, mazza) · **Lucidità** = prendere la linea (pistole) ·
-**Distacco** = la freddezza sotto il rinculo (fucili, mitragliatori) · **Ascolto** = il tempo e la
-distanza (catena, armi da lancio). In **difesa**: **armi da fuoco e lanci → Distacco** (ti defili
-dalla traiettoria) · **lame corte e mani → Pazienza** (aspetti e scarti) · **armi lunghe da botta e
-taglio, catena → Ascolto** (leggi l'arco del colpo).
+**La logica della difesa**: **armi da fuoco → Distacco** (ti defili dalla linea di tiro) · **lame
+corte e mani → Pazienza** (aspetti e scarti) · **armi lunghe da botta e taglio → Ascolto** (leggi
+l'arco del colpo). *Le tre decise sono pistola, keibō e lotta; l'estensione alle altre famiglie è*
+**[da validare]**.
 
 | Arma | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno | Raffica | Colpi | Note |
 |---|---|---|---|---|---|---|---|---|---|
 | **Lotta** (pugno, presa) | Presenza | Pazienza | 1 | 1 | — | **1** | no | 1 | Lotta 1 a tutti |
 | **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | Pazienza | 1 | 1 | — | **1–2** (GM) | no | 1 | |
-| **Machete / accetta** ° | Presenza | Ascolto | 3 | 2 | — | **3** | no | 1 | la lama pesante: colpi d'impeto |
-| **Granata** | Presenza | Lucidità **[dv]** | 2 | 2 | — | **4** (area) | no | 1 | ognuno può andare in Ukemi |
 | **Coltello / pugnale** | Pazienza | Pazienza | 2 | 1 | — | **2** | no | 1 | |
-| **Katana / spada** ° | Pazienza | Ascolto | 3 | 2 | — | **3** | no | 1 | yakuza d'altri tempi |
-| **Fucile di precisione** | Pazienza | Distacco | 5 | 3 | 5 | **5** | no | 1 | richiede la Senmon |
 | **Manganello** (keibō 警棒) | Silenzio | Ascolto | 2 | 2 | — | **2** | no | 1 | d'ordinanza |
 | **Mazza / spranga** ° | Silenzio | Ascolto | 2 | 2 | — | **3** | no | 1 | la mazza da baseball dei bōsōzoku |
+| **Katana / spada** ° | Pazienza | Ascolto | 3 | 2 | — | **3** | no | 1 | yakuza d'altri tempi |
 | **Revolver d'ordinanza** (New Nambu) | Lucidità | Distacco | 4 | 2 | 5 | **4** | sì* | 3 | la «Pistola» base |
 | **Automatica 9mm** ° | Lucidità | Distacco | 3 | 2 | 4 | **4** | sì* | 3 | criminali, yakuza |
 | **Compatta .22/.25** ° | Lucidità | Distacco | 2 | 1 | 4 | **3** | no | 3 | tascabile, da teppisti |
 | **Fucile** (pompa / caccia) | Distacco | Distacco | 4 | 2 | 5 | **4** | no | 1 | |
-| **Mitragliatrice leggera** | Distacco | Distacco | 4 | 2 | 5 | **4** | sì | 9 | valori v2 |
-| **Mitragliatrice pesante** | Distacco | Distacco | 5 | 3 | 6 | **5** | sì | 9 | valori v2; da scena, nessuno la porta in tasca |
-| **Catena / frusta** ° | Ascolto | Ascolto | 2 | 2 | — | **2** | no | 1 | la catena dei bōsōzoku: senti quando è tesa |
-| **Armi da lancio** ° (coltello, bottiglia, sasso) | Ascolto | Distacco | 1 | 1 | — | **1–2** (GM) | no | 1 | un colpo solo, poi è a terra |
+| **Mitragliatore leggero** | Distacco | Distacco | 4 | 2 | 5 | **4** | sì | 9 | |
+| **Mitragliatore pesante** | Distacco | Distacco | 5 | 3 | 6 | **5** | sì | 9 | da scena: nessuno lo porta in tasca |
+| **Fucile di precisione** | Pazienza | Distacco | 5 | 3 | 5 | **5** | no | 1 | richiede la Senmon |
+| **Granata** | Presenza | Lucidità **[dv]** | 2 | 2 | — | **4** (area) | no | 1 | ognuno può andare in Ukemi |
 
-*° = arma aggiunta in v3/v3.1, valori proposti **[da validare]**. Le altre riusano i valori v2 (fodero /
+*° = arma aggiunta in v3, valori proposti **[da validare]**. Le altre riusano i valori v2 (fodero /
 mano / ricarica = Estrarre / Colpire / Ricarica); revolver, manganello e lotta sono i valori decisi
 dall'autore (`Simulazione.xlsx`).*
 
@@ -321,36 +297,34 @@ l'arma **pronta** sul bersaglio: quando spara è a velocità **0** (vedi *Sotto 
 **SOTTO TIRO (azione pronta)** — l'arma è già in posizione sul bersaglio: la pistola spianata sul
 sospetto (*«Polizia! Fermo!»*), il coltello alla gola, il cecchino col mirino fermo. Colpire non
 richiede più tempo — devi solo premere il grilletto: **la tua velocità è 0** (iniziativa = 2d6 +
-mod. Presenza, nient'altro). E **Sotto Tiro vuol dire che hai già mirato** (direttiva 2026-09-06):
-quando scatti, il colpo parte con il bonus di mira compreso **[da confermare: −2, la mira piena]**.
-Lo stato si assume come la mira — quando tocca a te, dichiari che punti l'arma invece di attaccare
-— oppure ce l'hai già, se la scena nasce così: l'arresto, l'ostaggio, l'appostamento. Regge finché
-resti fermo sul bersaglio: se **subisci danno**, o il bersaglio esce dalla linea, va riassunto.
-Quando scatti, il bersaglio **consapevole** può ancora buttarsi o andare in Ukemi — ma muoversi
-sotto un'arma già puntata non è facile **[da definire: il +1 sul bersaglio che si butta resta, o
-cade sotto tiro?]**. A discrezione del GM, come tutto qui dentro.
+mod. Presenza, nient'altro). Lo stato si assume come la mira — quando tocca a te, dichiari che
+punti l'arma invece di attaccare — oppure ce l'hai già, se la scena nasce così: l'arresto,
+l'ostaggio, l'appostamento. Regge finché resti fermo sul bersaglio: se **subisci danno**, o il
+bersaglio esce dalla linea, va riassunto. Quando scatti, l'attacco è normale e il bersaglio
+**consapevole** può andare in Ukemi normalmente: il vantaggio è arrivare prima, non il colpo
+garantito. A discrezione del GM, come tutto qui dentro.
 
 > **Il confine con la Sorpresa**: sotto tiro il bersaglio è **consapevole** — vede l'arma, può
 > scegliere: parlare, arrendersi, tentare il tuffo. Se è **ignaro o impossibilitato a reagire**,
 > non è uno scambio: è un agguato (vedi *Sorpresa e Agguati* — niente difesa).
 
 > **Esempio — l'arresto**: il poliziotto tiene il revolver puntato (sotto tiro, velocità 0); il
-> malvivente, a due passi, valuta il tuffo dietro il bancone (velocità 1). Sull'ordine il grilletto
-> è favorito di poco (velocità 0 contro 1), ma il colpo parte **già mirato** (−2 [da confermare]) e a
-> quella distanza è ravvicinato (−1): se fa danno, il malvivente **perde l'azione** — a terra ci
-> finisce, ma dietro il bancone non ci arriva. Alzare le mani è la scelta sensata — ed è la scena
-> giusta. A **lontano** cambia tutto: il colpo prende +1 di distanza e +1 sul corpo che si butta —
-> lì il tuffo è una scommessa vera.
+> malvivente, a due passi, valuta il tuffo dietro il bancone (velocità 1). A parità di Presenza, il
+> grilletto è favorito — ma di poco: con i 2d6 un punto di velocità pesa meno che nella v2, dove il
+> vantaggio era netto **[da validare]**. Se il colpo fa danno, il malvivente **perde l'azione**: a
+> terra ci finisce, ma dietro il bancone non ci arriva. Alzare le mani è la scelta sensata — ed è
+> la scena giusta. A **lontano** cambia tutto: il colpo prende +1 di distanza e +1 sul corpo che si
+> butta — lì il tuffo è una scommessa vera.
 
 **PREPARARSI / RITARDARE** — puoi **ritardare la tua azione**: con iniziativa 7 puoi agire a 7, 8,
 9… decidi tu quando entrare. Se dichiari di **non agire affatto** nello scambio, dal prossimo tiro
 hai **−1**: non è mira, è preparazione — il respiro prima di muoversi. Il −1 **non si cumula** e
 **resta finché non lo usi**; una volta speso, puoi prepararti di nuovo.
 
-**OPPORTUNITÀ** — se la tua iniziativa batte quella dell'avversario di **5 o più [soglia da
-validare]**, sei stato così più rapido da guadagnare **un'azione descrittiva extra oppure un
-movimento** (deciso 2026-09-06), spendibile in questo scambio o nel prossimo: salti sul cofano *e*
-ti ripari *e* spari; ricarichi *e* spari; raggiungi la copertura *e* spari. Mai **due attacchi**.
+**OPPORTUNITÀ** — se la tua iniziativa batte quella dell'avversario di **5 o più [da validare]**,
+sei stato così più rapido da guadagnare **un'azione descrittiva extra**, spendibile in questo
+scambio o nel prossimo: salti sul cofano *e* ti ripari *e* spari; ricarichi *e* spari. Mai **due
+attacchi**.
 
 **STRINGERE I DENTI** — se il danno subito, dopo le riduzioni, è di **1 o 2**, puoi rifiutarti di
 perdere l'azione: paghi **1 punto dell'attributo con cui stai agendo** (per un attacco, quello
@@ -389,10 +363,9 @@ Dichiari la soppressione:
 - Gli altri tirano normalmente. Se un nemico agisce prima di te e **ti fa danno**, la raffica
   salta; se manca, parte
 - Riuscita: **tiro su Presenza**
-- **Effetto (per lo scambio corrente)**: chi è sotto il fuoco **usa il dado più alto** (direttiva
-  2026-09-06 — nella v2 l'iniziativa era il dado basso, e il dado alto era la punizione; con la somma
-  dei 2d6 la traduzione è **[da definire]** — proposta: tira 3d6 e somma i due più alti) → agisce
-  dopo. I tuoi compagni si muovono, si riposizionano, sparano con armi lente **prima** di loro
+- **Effetto (per lo scambio corrente)**: chi è sotto il fuoco **somma +3 alla propria iniziativa
+  [da validare]** → agisce dopo. I tuoi compagni si muovono, si riposizionano, sparano con armi
+  lente **prima** di loro
 - **Agire allo scoperto sotto il fuoco costa**: chi non resta al riparo prende **+1 alla somma**
   della propria azione — rispondere al mitragliatore col revolver si può, ma con la testa bassa
 - **Chi è sotto la raffica** lo decide il GM con la logica: l'arco di fuoco su una porta, un
@@ -442,18 +415,20 @@ scena: spesso la mossa migliore del combattimento.
 **Il tiro e la distanza** *(armi da fuoco)* — la v3 fissa **−1 ravvicinato · 0 normale · +1
 lontano**, più **+1** su un bersaglio che si butta (cumulabile); il fucile di precisione a lontano
 non ha malus. Ancore per il GM, non un righello: valgono le tre fasce e il buonsenso.
-**[Da definire con le altre armi — direttiva 2026-09-06]**: distinguere **armi bianche, armi da fuoco
-e pugni**; di base, **afferrati** in colluttazione è difficile usare la pistola o una spada.
 
 ---
 
 ## I PNG nello Scontro
 
 I PNG attaccano, vanno in Ukemi e stringono i denti con le stesse regole dei PG (le comparse senza
-scheda: attributi 5-6, il GM decide al volo). E **hanno il Ki come tutti**, calcolato **come per i
-PG** (deciso 2026-09-06 — Manuale del Giocatore: *«Ki massimo = attributo più basso + 2d6, prendi il
-dado più alto»*, tetto 12): una comparsa con attributi 5-6 sta quindi tra **6 e 11**, e il GM lo tira
-o lo fissa dentro quel campo. Le vecchie taglie fisse 3/6/9 non valgono più.
+scheda: attributi 5-6, il GM decide al volo). E **hanno il Ki come tutti** — il termine a parte che
+la v2 usava per i PNG non esiste più: si chiama Ki per chiunque.
+
+| PNG | Ki |
+|---|---|
+| Comparsa, scagnozzo | **3** |
+| Determinato, duro | **6** |
+| Professionista, killer | **9** |
 
 A **Ki 0** il PNG è **fuori combattimento** — l'esito lo decide il GM in base alla scena: KO,
 ferito che si trascina via, mani alzate, fuga. La **morte di un PNG** non è mai un automatismo dei
@@ -523,10 +498,8 @@ SEGNI: ti aiuta = −alla somma | ti ostacola = +alla somma
 
 SCAMBIO: 1) DICHIARI: Attaccare / Muoversi / Minacciare (+ manovre, + Tame)
             la difesa NON si dichiara: è l'Ukemi
-            piccolo movimento + attacco: senza costo, decide il GM se è troppo
-         2) INIZIATIVA = 2d6 + mod.Presenza + velocità (+Tame, +malus se scosso)
-            il totale più BASSO agisce prima | parità: prima chi ha più Presenza
-            (a pari Presenza: simultanei [dc])
+         2) INIZIATIVA = 2d6 + mod.Presenza + velocità (+Tame, +2 se intimidito)
+            il totale più BASSO agisce prima | parità = simultanei [dv]
             Presenza:  4→+2  5→+1  6→0  7→−1  8→−2  9→−3  10→−4
          3) RISOLVI in ordine. COLPITO PRIMA DI AGIRE = azione persa
             (salvo STRINGERE I DENTI)
@@ -535,10 +508,8 @@ UKEMI 受け身: attaccato PRIMA di agire? la tua azione diventa difesa:
          decidi prima del suo tiro, tiri la difesa (anche con 1 Ki),
          ma l'azione è spesa. Chi ha GIÀ agito NON va in Ukemi
 TAME 溜め (trattenere il fiato): fino a +3 iniziativa = −1:1 al tiro d'attacco
-MINACCIARE (velocità 0, solo voce): 2d6 ≤ Presenza → l'avversario è SCOSSO:
-         +1/+2/+3 ai suoi tiri nel prossimo scambio (per scarto 0/1/2+) [dc];
-         il GM può fargli abbassare l'arma | fallita: niente
-         chi minaccia può comunque difendersi (la voce non ti scopre)
+MINACCIARE: 2d6 ≤ Presenza → l'avversario è intimidito:
+         +2 alla sua iniziativa al prossimo scambio
 ATTACCO: 2d6 ≤ attributo arma (PARI = COLPITO) | scarto = attributo − tiro
          DANNO = scarto + danno arma
 DIFESA (solo in Ukemi): 2d6 ≤ attributo di difesa DELL'ARMA che attacca
@@ -568,15 +539,14 @@ COLPI MULTIPLI: un tiro solo per la sequenza; ogni colpo dopo il primo
       malus +2 (due colpi) / +3 (tre), cala di 1 a ogni colpo dopo il primo
       danno subito = sequenza interrotta (salvo STRINGERE I DENTI)
 MIRARE (azione): fermi, −1 dal prossimo scambio, max 2; poi spari a velocità 0
-SOTTO TIRO (azione pronta): arma già sul bersaglio = velocità 0 E mira già
-      fatta (−2 [dc]) | decade su danno o linea persa | bersaglio ignaro = SORPRESA
+SOTTO TIRO (azione pronta): arma già sul bersaglio = velocità 0
+      decade su danno o linea persa | bersaglio ignaro = SORPRESA
 PREPARARSI: rinuncia all'azione = −1 al prossimo tiro (non cumula)
 OPPORTUNITÀ: iniziativa migliore di 5+ [dv] = un'azione descrittiva extra
-      oppure un movimento (mai due attacchi)
 STRINGERE I DENTI: danno netto 1-2 → paghi 1 punto dell'attributo in uso
       e agisci comunque; a 4 non si può; la notte ripara; mira/Sotto Tiro persi
 SOPPRESSIONE (armi a raffica; pistole: poi ricarica): iniziativa senza
-      velocità d'arma, riuscita su Presenza; chi è sotto: il dado più alto [da tradurre];
+      velocità d'arma, riuscita su Presenza; chi è sotto: +3 iniziativa [dv];
       agire allo scoperto sotto il fuoco: +1 alla somma
 GRANATA: Presenza su tutti nell'area; Ukemi su Lucidità [dv]; d4 + scarto
 FUMOGENO: 2 scambi, +3 ai tiri a distanza attraverso il fumo
@@ -584,23 +554,19 @@ SORPRESA: tiro (GM) fallito = niente difesa né Ukemi — solo Assorbe
 ZONE: contatto | vicino | lontano — muoversi di una fascia = un'azione
 DISTANZA (fuoco): −1 ravvicinato | 0 | +1 lontano (non il fucile di precisione)
       bersaglio che si butta +1
-PNG: Ki come i PG (attributo più basso + il dado alto di 2d6, tetto 12)
+PNG: Ki come tutti — 3/6/9 (comparsa/duro/professionista)
      a 0 fuori combattimento (esito: GM) | PG a 0 = morto
-OPZIONALE (GM): il Ki non va sotto 0; a 0 il GM può decidere che il PG è vivo
-     ma a terra, fuori gioco [tiro su un attributo: da definire]
 ```
 
 ---
 
-## Appendice — Fuori Tempo *(regola avanzata — IN REVISIONE sulla scala v3)*
+## Appendice — Fuori Tempo *(regola avanzata della v2 — SOSPESA)*
 
-> Direttiva dell'autore (2026-09-06): **la regola resta**, con un tetto **più alto e comprensibile**
-> — proposta **15** **[da confermare]** — perché chi perde troppo tempo, per qualunque motivo, è
-> giusto che passi allo scambio dopo: **perde l'azione di questo scambio e la completa nel prossimo,
-> agendo presto** (a iniziativa = lo scarto oltre il tetto, come nella v2). **Non si può fare
-> apposta.** Resta da chiarire l'idea «tirare solo un dado per l'iniziativa» **[da definire: per
-> l'azione sconfinata, o in generale?]**. Il testo v2 qui sotto è quello da riscrivere sulla scala
-> nuova (dado basso → 2d6, tetto 9 → 15): finché non è riscritto, **non è in vigore**.
+> Questa regola era costruita sull'iniziativa della v2 (**dado più basso + velocità**, tetto **9**).
+> Con l'iniziativa v3 (2d6 + modificatori) il tetto 9 non ha più senso: si supera quasi sempre. Il
+> testo v2 resta qui integrale in attesa di una decisione dell'autore — ripensarla sulla scala nuova
+> o lasciarla cadere (il Tame e le velocità in iniziativa ne coprono già una parte). **Non è in
+> vigore.**
 
 **Lo scambio finisce al 9.** Un'azione singola si completa sempre — il tempo per una cosa c'è. Ma
 quando vuoi **esagerare** — impilare più manovre in uno scambio: *ricarico e sparo*, *estraggo e
@@ -645,32 +611,28 @@ dopo **ritiri i dadi**, libero di fare altro. Vale anche per i colpi multipli: i
 
 ---
 
-## Da validare *(dopo le direttive del 2026-09-06 — vedi `DECISIONI.md`)*
+## Da validare *(trasposizioni proposte — non decise; vedi `DECISIONI.md`)*
 
-Decisi il 2026-09-06 e già nel testo: parità → Presenza · Minacciare a velocità 0 con l'effetto
-nuovo e la difesa che resta · piccolo movimento + attacco a giudizio del GM · Sotto Tiro = mira già
-fatta · Opportunità = azione descrittiva o movimento · Ki dei PNG come i PG · regola opzionale sul
-Ki 0 · armi su tutti gli attributi. Restano da chiudere:
-
-1. **Parità anche di Presenza** = simultanei? [da confermare]
-2. **Armi**: i valori delle armi ° (mazza, katana/spada, machete, automatica, compatta, catena, armi
-   da lancio) e la logica degli attributi proposta (Presenza impeto · Pazienza momento · Silenzio
-   calma · Lucidità linea · Distacco freddezza · Ascolto tempo e distanza)
-3. **Minacciare**: la scala del malus (+1/+2/+3 per scarto 0/1/2+) e su quali tiri vale (tutti quelli
-   del prossimo scambio?); quando il GM fa abbassare l'arma; una minaccia riuscita si può ripetere
-   a ogni scambio? (vedi l'analisi in `DECISIONI.md`: rischia di dominare)
-4. **Opportunità**: la soglia (5 o più)
-5. **Soppressione**: come tradurre «il dado più alto» con l'iniziativa a 2d6 (proposta: 3d6, somma
-   dei due più alti)
-6. **Granata**: da rivedere insieme (Ukemi su Lucidità o Distacco)
-7. **Distanza**: distinguere armi bianche / da fuoco / pugni; afferrati, pistola e spada difficili
-8. **Sotto Tiro**: il bonus di mira compreso è −2? e il tuffo sotto tiro (il +1 sul bersaglio resta?)
-9. **Fuori Tempo**: il tetto (15?) e «solo un dado per l'iniziativa»
-10. **Senmon con profili di difesa alternativi** · **stallo** tra due che non attaccano (da rivedere
-    insieme)
-11. **Ki del ragazzo nella scena online**: resta 5 (= 4 + 1, dentro la formula) o si tira?
-12. **Regola opzionale Ki 0**: quale attributo si tira per sapere se il PG vive
+1. **Parità d'iniziativa** = azioni simultanee (la v2 spareggiava col secondo dado, che non c'è più)
+2. **Armi °** (Mazza, Katana, Automatica 9mm, Compatta) e la **logica della difesa per famiglie**
+   (fuoco → Distacco · corto e mani → Pazienza · lungo → Ascolto) oltre le tre armi decise
+3. **Opportunità**: soglia di 5+ punti d'iniziativa (in v2: dado alto + velocità sotto l'iniziativa
+   avversaria)
+4. **Soppressione**: chi è sotto il fuoco somma +3 all'iniziativa (in v2: usava il dado alto)
+5. **Granata**: Ukemi su Lucidità (v2: Lucidità o Distacco)
+6. **Distanza**: come si incastrano il **−1 ravvicinato** della v3 e il **+1/+2 caotico a
+   contatto** della v2 (ravvicinato = fascia contatto? o solo la colluttazione vera è caotica?)
+7. **Sotto Tiro**: con i 2d6 la velocità 0 contro il tuffo (1) vince di poco — in v2 era netto.
+   Va bene così, o al Sotto Tiro serve un vantaggio in più?
+8. **Muoversi + attaccare** (il piccolo movimento): costa qualcosa?
+9. **Fuori Tempo** (appendice): ripensarla sulla scala nuova o lasciarla cadere
+10. **Senmon con profili di difesa alternativi** (idea dell'autore) · **stallo** tra due che non
+    attaccano (regola anti-attrito o discrezione GM)
+11. **Taglie Ki dei PNG** 3/6/9: restano (canone v2), o si alzano — dopo l'osservazione che un Ki 3
+    «è già in zona Genkai»?
+12. **Velocità di Minacciare**: 0 (è solo voce), 1 (reazione istintiva) o 2 (come un movimento —
+    valore usato nella scena interattiva)?
 
 ---
 
-*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · v3.1 — 2026-09-06 · versioni congelate in `versioni/`*
+*GENKAI 限界 — Lo Scontro (Shōtotsu 衝突) · v3.0 — 2026-09-05 · versioni congelate in `versioni/`*
