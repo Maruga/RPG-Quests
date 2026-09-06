@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GENKAI — Un coltello in cucina · prova il combattimento (copia locale)</title>
-<!-- COPIA LOCALE per le prove via file://. Il motore vero è in sito_genkai/provalo/scontro.js (+ scontro.css):
-     questa pagina lo carica da lì, così c'è una sola versione da mantenere. Online: genkai.it/provalo/scontro/ -->
-<link rel="stylesheet" href="../sito_genkai/provalo/scontro.css">
+<title>GENKAI — Un coltello in cucina · prova il combattimento</title>
+<meta name="description" content="Prova il combattimento di GENKAI in cinque minuti, da solo, sul telefono: un investigatore, un ragazzo con un coltello, i dadi. Si impara giocando.">
+<link rel="icon" href="../../img/favicon.png">
+<link rel="stylesheet" href="../scontro.css?v=20260906b">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -32,7 +32,7 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
 <body>
 
 <nav class="barra"><div class="dentro">
-  <span class="marchio">限界 <i>GENKAI</i><span class="extra"> · lo scontro (copia locale)</span></span>
+  <a class="marchio" href="../../">限界 <i>GENKAI</i><span class="extra"> · lo scontro</span></a>
   <div class="stato-scontro">
     <div class="ki mio" id="ki-pg"><span class="eti">Tu · Ki</span><span class="riga"><span class="pips" id="pips-pg"></span><span class="num" id="num-pg">7</span></span></div>
     <div class="ki lui" id="ki-nip"><span class="eti">Lui · Ki</span><span class="riga"><span class="pips" id="pips-nip"></span><span class="num" id="num-nip">5</span></span></div>
@@ -43,11 +43,13 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   <div id="copertina"></div>
   <div id="flusso"></div>
   <div id="commenti"></div>
-  <footer class="fine"><p>Copia locale · online: genkai.it/provalo/scontro/</p></footer>
+  <footer class="fine">
+    <p><a href="../">Gioca il mini-caso completo</a> · <a href="../../">Torna a genkai.it</a> · <a href="/Pg">✨ Crea il tuo investigatore</a></p>
+  </footer>
 </div></main>
 
-<script src="../sito_genkai/provalo/scontro.js"></script>
-<script src="../sito_genkai/provalo/commenti.js"></script>
+<script src="../scontro.js?v=20260906b"></script>
+<script src="../commenti.js?v=20260906b"></script>
 <script>
 (function(){
   const stato = {
@@ -57,12 +59,12 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   const pg = { attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4}, ki:7, kiMax:7, senmon:{ "Lame e bastoni":1, "Lotta":1 } };
   let esito = "";
   GenkaiScontro.copertina(document.getElementById("copertina"), {
-    immagine: "../sito_genkai/provalo/img/coltello.jpg",
+    immagine: "../img/coltello.jpg",
     flusso: document.getElementById("flusso"),
     stato, pg,
     onFine: (tipo, ki) => { esito = tipo + " a Ki " + ki; }
   });
-  GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo/scontro (locale)", extra: () => esito });
+  GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo/scontro", extra: () => esito });
 })();
 </script>
 </body>

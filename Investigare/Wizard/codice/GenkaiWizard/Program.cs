@@ -203,6 +203,59 @@ app.MapGet("/api/utente", (ClaimsPrincipal u) => Results.Json(new
     nome = u.Identity?.Name
 })).AllowAnonymous();
 
+// ── Commenti dei lettori dalle pagine statiche (/provalo, /provalo/scontro): email a chi fa il gioco
+//    (config Commenti:Destinatario, altrimenti la casella mittente della posta) + copia in logs/commenti.jsonl.
+//    Aperto a tutti; difese: campo-trappola per i bot, testo limitato, massimo 15 commenti al giorno per indirizzo IP. ──
+static string Pulisci(string? s, int max)
+{
+    if (string.IsNullOrWhiteSpace(s)) return "";
+    var t = new string(s.Where(ch => !char.IsControl(ch) || ch == '\n').ToArray()).Trim();
+    return t.Length > max ? t[..max] : t;
+}
+static string HtmlSicuro(string s) => System.Net.WebUtility.HtmlEncode(s).Replace("\n", "<br>");
+
+app.MapPost("/api/commenti", async ([FromBody] CommentoRichiesta? body, HttpContext ctx, IConfiguration cfg,
+    IWebHostEnvironment env, ILogger<Program> log) =>
+{
+    if (body is null) return Results.BadRequest(new { errore = "commento mancante" });
+    if (!string.IsNullOrWhiteSpace(body.Sito)) return Results.Ok(new { ok = true }); // campo-trappola: lo riempiono solo i bot
+    var testo = Pulisci(body.Testo, 4000);
+    if (testo.Length < 3) return Results.BadRequest(new { errore = "Scrivi qualcosa" });
+    if (!QuotaCommenti.Consenti(Ospite.ChiaveIp(ctx)))
+        return Results.Problem("Troppi commenti da questo indirizzo, oggi", statusCode: 429);
+
+    var pagina = Pulisci(body.Pagina, 80); var nome = Pulisci(body.Nome, 80);
+    var email = Pulisci(body.Email, 120); var esito = Pulisci(body.Esito, 80);
+    var quando = DateTime.UtcNow;
+    try
+    {
+        var dir = Path.Combine(env.ContentRootPath, "logs");
+        Directory.CreateDirectory(dir);
+        var riga = System.Text.Json.JsonSerializer.Serialize(new { quando, pagina, nome, email, esito, testo });
+        await File.AppendAllTextAsync(Path.Combine(dir, "commenti.jsonl"), riga + "\n");
+    }
+    catch (Exception ex) { log.LogWarning(ex, "Commento non salvato su file"); }
+
+    var posta = ctx.RequestServices.GetService<Microsoft.AspNetCore.Identity.UI.Services.IEmailSender>();
+    var destinatario = cfg["Commenti:Destinatario"] ?? cfg["Posta:Mittente"] ?? cfg["Posta:Smtp:Utente"];
+    var inviata = false;
+    if (posta is not null && !string.IsNullOrWhiteSpace(destinatario))
+    {
+        try
+        {
+            var html = $"<p><b>Pagina:</b> {HtmlSicuro(pagina)}<br><b>Da:</b> {HtmlSicuro(nome.Length > 0 ? nome : "anonimo")}"
+                     + (email.Length > 0 ? $" &lt;{HtmlSicuro(email)}&gt;" : "")
+                     + (esito.Length > 0 ? $"<br><b>Dove era:</b> {HtmlSicuro(esito)}" : "")
+                     + $"<br><b>Quando:</b> {quando:yyyy-MM-dd HH:mm} UTC</p><hr><p>{HtmlSicuro(testo)}</p>";
+            await posta.SendEmailAsync(destinatario, $"[genkai.it] commento — {pagina}", html);
+            inviata = true;
+        }
+        catch (Exception ex) { log.LogError(ex, "Email del commento non inviata"); }
+    }
+    log.LogInformation("Commento ricevuto da {Pagina} ({Lunghezza} caratteri, email inviata: {Inviata})", pagina, testo.Length, inviata);
+    return Results.Ok(new { ok = true, email = inviata });
+}).AllowAnonymous();
+
 
 
 // ═══════════════════════════ API del wizard ═══════════════════════════
@@ -676,3 +729,17 @@ public record VersioneHandout(string? Html, string? Quando);
 public record SalvaPgRichiesta(string StatoJson, int? PassoCorrente, string? Nome);
 public record PgCampoRichiesta(string? Campo, string? Indicazioni, string? Modello = null, string? Effort = null);
 public record PgImmagineRichiesta(string? Prompt, string? Tipo);
+// commenti dei lettori (pagine statiche del sito) — Sito è il campo-trappola anti-bot
+public record CommentoRichiesta(string? Testo, string? Nome, string? Email, string? Pagina, string? Esito, string? Sito);
+
+/// <summary>Freno ai commenti: massimo N al giorno per chiave (indirizzo IP), contatore in memoria.</summary>
+static class QuotaCommenti
+{
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, (DateOnly giorno, int n)> _conta = new();
+    public static bool Consenti(string chiave, int max = 15)
+    {
+        var oggi = DateOnly.FromDateTime(DateTime.UtcNow);
+        var v = _conta.AddOrUpdate(chiave, _ => (oggi, 1), (_, cur) => cur.giorno == oggi ? (oggi, cur.n + 1) : (oggi, 1));
+        return v.n <= max;
+    }
+}

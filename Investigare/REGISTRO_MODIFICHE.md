@@ -11,6 +11,20 @@
 
 ## Da applicare
 
+### 2026-09-06 · WIZARD → REGOLE · Scena di combattimento ONLINE (pagina a sé + scena 8 del mini-caso) e modulo commenti
+Pubblicati su genkai.it: **`/provalo/scontro/`** (lo scontro «Un coltello in cucina» da solo, per chi vuole
+provare il combattimento senza fare il mini-caso) e il **mini-caso a 9 scene** (`/provalo/`: la scena 8 è lo
+scontro, col Ki che il caso ha lasciato; il finale cambia con l'esito: arresto / fuga / morte). Motore unico
+`sito_genkai/provalo/scontro.js` = SOLO le regole decise del manuale v3.0 (verificato con 7 scenari a dadi
+pilotati + 150 partite casuali). Il PG della demo ha la Senmon **Lame e bastoni 1** (decisione utente, per
+accorciare gli scontri: è canone, chi è creato da zero ha 1 Senmon ≠ Lotta) e **Lotta 1** d'accademia.
+Testi per neofiti: italiano prima, «Ukemi»/«Tame» solo come nome di gioco, niente percentuali (parole:
+difficile / poco probabile / possibile / probabile / molto probabile). In fondo a entrambe le pagine c'è il
+**modulo commenti** → email a info@genkai.it (endpoint `/api/commenti` del wizard). Correzione di canone nel
+mini-caso: le perdite di Ki fuori dal combattimento ora si fermano a **1** (prima potevano arrivare a 0).
+Nessuna azione per REGOLE: solo saperlo (e magari giocarlo). — **NON SERVE** (informativa)
+
+
 ### 2026-09-05 (sera) · WIZARD → REGOLE · ⚠ Manuale Combattimento **v3.0 UNIFICATO** — azioni cambiate
 Su richiesta dell'utente («crea un unico manuale v3, il v3 comanda sul v2»): `Combattimento/GENKAI_Combattimento.md`
 è ora la **v3.0**, con tutto il contenuto della v2.1 dentro e le regole v3 che comandano (v2.1 e bozze congelate

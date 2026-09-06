@@ -6,6 +6,7 @@
 <title>GENKAI 限界 — Provalo: un mini-caso da giocare</title>
 <meta name="description" content="Un mini-caso di GENKAI da giocare nel browser: nove scene in un appartamento di Fushimi, un tiro per scena, il taccuino che si riempie — fino all'arresto.">
 <link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="scontro.css?v=20260906b">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -123,18 +124,25 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   <a class="marchio" href="../">限界 <i>GENKAI</i></a>
   <div class="stato-chip" id="stato-chip" hidden>
     <span class="chip">気 Ki <b id="chip-ki">9</b>/9</span>
-    <span class="chip" id="chip-scena">Scena 1/8</span>
+    <span class="chip" id="chip-scena">Scena 1/9</span>
+  </div>
+  <div class="stato-scontro" id="stato-scontro" hidden>
+    <div class="ki mio" id="ki-pg"><span class="eti">Tu · Ki</span><span class="riga"><span class="pips" id="pips-pg"></span><span class="num" id="num-pg">9</span></span></div>
+    <div class="ki lui" id="ki-nip"><span class="eti">Lui · Ki</span><span class="riga"><span class="pips" id="pips-nip"></span><span class="num" id="num-nip">5</span></span></div>
   </div>
   <a class="torna" href="../">← Torna al sito</a>
 </div></nav>
 
 <main><div class="dentro">
   <div id="contenitore"></div>
+  <div id="commenti"></div>
   <footer class="fine">
-    <p><a href="../">← Torna a genkai.it</a> · <a href="/Pg">✨ Crea il tuo investigatore</a></p>
+    <p><a href="../">← Torna a genkai.it</a> · <a href="scontro/">Prova solo lo scontro</a> · <a href="/Pg">✨ Crea il tuo investigatore</a></p>
   </footer>
 </div></main>
 
+<script src="scontro.js?v=20260906b"></script>
+<script src="commenti.js?v=20260906b"></script>
 <script>
 (function(){
 "use strict";
@@ -143,7 +151,7 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
 const S = {
   attr: { "Distacco":6, "Lucidità":7, "Ascolto":6, "Pazienza":5, "Silenzio":5, "Presenza":4 },
   ki: 9, kiMax: 9, nasake: 0, soroban: 0,
-  indizi: [], scena: 0, gouUsato: false
+  indizi: [], scena: 0, gouUsato: false, esitoScontro: null
 };
 
 /* ── il mazzo delle fasce: in tutto il caso escono tutte prima che una si ripeta ── */
@@ -198,10 +206,10 @@ function applicaMecc(fascia, attr){
   } else if (fascia==="fl"){
     m = `Somma tra ${S.attr[attr]+1} e 10: fallimento leggero, <b>solo narrativo</b> — nessuna perdita di punti. La scena lo mostra, la scheda no.`;
   } else if (fascia==="n11"){
-    S.ki = Math.max(0, S.ki-1); S.soroban += 1;
+    S.ki = Math.max(1, S.ki-1); S.soroban += 1; /* le perdite di Ki fuori dal combattimento si fermano a 1 (canone: Uscita Definitiva) */
     m = "11: notevole negativo. <b>−1 a scelta</b> — qui lo segniamo sul Ki. <b>Soroban: segna +1.</b>";
   } else {
-    S.attr[attr] = Math.max(1, S.attr[attr]-1); S.ki = Math.max(0, S.ki-1); S.soroban += 2;
+    S.attr[attr] = Math.max(1, S.attr[attr]-1); S.ki = Math.max(1, S.ki-1); S.soroban += 2;
     m = `12: fallimento critico. <b>−1 a ${attr} e −1 al Ki.</b> E ricorda: a Ki ≤ 3 comincia il Genkai. <b>Soroban: segna +2.</b>`;
   }
   return m;
@@ -339,9 +347,16 @@ const SCENE = [
     testo:`Ammette di essere salito, ammette la lite, ammette la busta: «me li doveva». Sulla vasca giura: «è scivolato, io non volevo — l'ho scosso, non rispondeva, io…». La frase resta a metà. Le manette no.`},
   gm:"Due strade, stesso sbocco: la scelta cambia il COME, il prezzo e la scena — non l'indagine. Le porte non si chiudono: si pagano." },
 
-/* 8 · finale */
+/* 8 · lo scontro (motore condiviso: scontro.js — la stessa scena si gioca da sola in /provalo/scontro/) */
+{ tipo:"scontro", img:"img/coltello.jpg", alt:"Una mano stringe un coltello da cucina, nella penombra, accanto allo scolapiatti",
+  tag:"Scena 8 · il coltello", titolo:"Un coltello in cucina",
+  testo:[`Il collega è sceso a far salire il medico legale e a chiamare la Scientifica. Restate tu e lui, in cucina, la luce al neon che frigge sopra il lavello. Gli dici di alzarsi. Le manette.`,
+    `E il ragazzo smette di ragionare: con uno scatto <b>afferra il coltello dal lavello</b> e te lo punta contro, la presa che trema. <em>«Stai indietro! STAI INDIETRO!»</em> Il manganello che avevi in tasca adesso è in mano. Tra voi c'è il tavolo; dietro di te, la porta del corridoio. Il collega è giù per le scale: un minuto — e un minuto qui dentro è un'eternità.`],
+  tavolo:`GM: «Si alza di scatto: ha il coltello in mano. Cosa fai?» — Tu: «Manganello. E non gli do le spalle.» — GM: «Allora tiriamo l'iniziativa: chi è più veloce.»` },
+
+/* 9 · finale */
 { tipo:"finale", img:"img/manette.jpg", alt:"Le manette ai polsi, nel corridoio",
-  tag:"Scena 8 · le manette", titolo:"Il conto della notte" }
+  tag:"Scena 9 · le manette", titolo:"Il conto della notte" }
 ];
 
 /* contenuti delle due stanze intercambiabili (scelta in scena 3) */
@@ -390,14 +405,20 @@ const chipScena = document.getElementById("chip-scena");
 let ordineStanze = null;
 let girando = null;
 
+const SCENE_TOT = 9;
+const stripScontro = document.getElementById("stato-scontro");
+const STATO_SCONTRO = {
+  pipsPg: document.getElementById("pips-pg"), numPg: document.getElementById("num-pg"), kiPg: document.getElementById("ki-pg"),
+  pipsNip: document.getElementById("pips-nip"), numNip: document.getElementById("num-nip")
+};
 function aggiornaChip(){
   chipKi.textContent = S.ki;
   chipKi.parentElement.classList.toggle("genkai", S.ki <= 3);
-  chipScena.textContent = "Scena " + S.scena + "/8";
+  chipScena.textContent = "Scena " + S.scena + "/" + SCENE_TOT;
 }
 function tappeHtml(){
   let h = '<div class="tappe" aria-label="Avanzamento">';
-  for (let i=1;i<=8;i++) h += `<span class="${i<S.scena?'fatta':i===S.scena?'qui':''}" title="Scena ${i}"></span>`;
+  for (let i=1;i<=SCENE_TOT;i++) h += `<span class="${i<S.scena?'fatta':i===S.scena?'qui':''}" title="Scena ${i}"></span>`;
   return h + "</div>";
 }
 function taccuinoHtml(nuovaVoce){
@@ -408,10 +429,12 @@ function taccuinoHtml(nuovaVoce){
 
 function render(){
   window.scrollTo(0,0);
+  stripScontro.hidden = true;
   if (S.scena===0) return renderCopertina();
   chipBox.hidden = false;
   aggiornaChip();
   const sc = SCENE[S.scena];
+  if (sc.tipo==="scontro") return renderScontro(sc);
   if (sc.tipo==="finale") return renderFinale(sc);
   let dati = null;
   if (sc.dinamica==="stanzaA" && ordineStanze) dati = Object.assign({}, STANZE[ordineStanze[0]], {tagFisso:"Scena 3 · la casa parla"});
@@ -431,12 +454,12 @@ function renderCopertina(){
       <p class="scena-tag">Come si gioca — provalo</p>
       <h1>Un mini-caso, scena per scena</h1>
       <p class="filosofia">«I dadi non vi sbarrano nessuna porta — dicono soltanto quanto vi costa attraversarla, e quanto ne resta di voi dall'altra parte.»</p>
-      <p>Otto scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie — fino alle manette. Così funziona GENKAI: <b>gli indizi si trovano sempre</b>; i dadi decidono solo quanto ti costa trovarli.</p>
+      <p>Nove scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie, un coltello che salta fuori — fino alle manette. Così funziona GENKAI: <b>gli indizi si trovano sempre</b>; i dadi decidono solo quanto ti costa trovarli.</p>
       <div class="tu">
         <span>Sei tu: <b>investigatore della Omicidi</b>, Kyoto 1997</span>
         <span>Distacco <b>6</b></span><span>Lucidità <b>7</b></span><span>Ascolto <b>6</b></span>
         <span>Pazienza <b>5</b></span><span>Silenzio <b>5</b></span><span>Presenza <b>4</b></span>
-        <span>気 Ki <b>9</b></span><span>Gou: <b>Teatro delle Ombre 影芝居</b></span><span>keibō in tasca</span>
+        <span>気 Ki <b>9</b></span><span>Gou: <b>Teatro delle Ombre 影芝居</b></span><span>Lame e bastoni <b>1</b> · Lotta <b>1</b></span><span>manganello in tasca</span>
       </div>
       <p style="font-family:var(--sans);font-size:.85rem;color:var(--tenue)">Una scheda così puoi fartela identica, in dieci minuti, col <a href="/Pg">wizard degli investigatori</a>.</p>
       <div class="bottoni" style="margin-top:1.2rem">
@@ -587,8 +610,9 @@ function mostraEsito(sc, dati, attr, fascia, modo){
   document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
 }
 
-function renderFinale(sc){
-  const sorobanFine = Math.min(9, Math.max(0, 5 + S.soroban));
+/* scena 8: lo scontro col coltello — motore condiviso (scontro.js), col Ki che il caso ti ha lasciato */
+function renderScontro(sc){
+  const pg = { attr:S.attr, ki:S.ki, kiMax:S.kiMax, senmon:{ "Lame e bastoni":1, "Lotta":1 } };
   cont.innerHTML = `
   <article class="scena">
     <img src="${sc.img}" alt="${sc.alt}">
@@ -596,19 +620,64 @@ function renderFinale(sc){
       ${tappeHtml()}
       <p class="scena-tag">${sc.tag}</p>
       <h2>${sc.titolo}</h2>
-      <p>L'1:20 di notte. Quando il collega tira fuori le manette, il ragazzo non si alza nemmeno: guarda la tazza vuota e annuisce, come se lo sapesse da ore. Esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
-      <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>
+      ${sc.testo.map(p=>`<p>${p}</p>`).join("")}
+      <div class="tavolo"><b>Come si gioca, al tavolo</b>${sc.tavolo}</div>
+      <div class="gs" id="scontro-intro">
+        ${GenkaiScontro.schedaBreve(pg)}
+        <p class="regola">Arrivi a questo scontro col Ki che il caso ti ha lasciato: <b>${S.ki} su ${S.kiMax}</b>.${S.ki<=3?" Sei già oltre il limite: in combattimento il Genkai non scatta, ma il danno non si ferma — e la porta è dietro di te.":""}</p>
+        <div class="bottoni riga" style="margin-top:.8rem"><button type="button" class="btn btn-forte" id="scontro-via">Lo scontro comincia →</button></div>
+      </div>
+      <div id="scontro-flusso"></div>
+      <div class="avanti-box" id="avanti-box"></div>
+    </div>
+  </article>`;
+  document.getElementById("scontro-via").addEventListener("click", ev => {
+    ev.target.disabled = true;
+    chipBox.hidden = true; stripScontro.hidden = false;
+    GenkaiScontro.avvia({
+      flusso: document.getElementById("scontro-flusso"), stato: STATO_SCONTRO, pg, rigioca: false,
+      onFine: (esito, ki) => {
+        S.ki = ki; S.esitoScontro = esito; aggiornaChip();
+        S.indizi.push(esito==="fuga" ? "Ha tirato fuori un coltello: si è arreso ai rinforzi" : "Ha tirato fuori un coltello: resistenza e minaccia a pubblico ufficiale");
+        const box = document.getElementById("avanti-box");
+        box.innerHTML = `<button type="button" class="btn btn-forte" id="avanti">${esito==="morto" ? "Il conto della notte →" : "Scena successiva →"}</button>`;
+        document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
+      }
+    });
+  });
+}
+
+function renderFinale(sc){
+  const sorobanFine = Math.min(9, Math.max(0, 5 + S.soroban));
+  const e = S.esitoScontro;
+  const racconto = e === "morto"
+    ? `<p>L'1:20 di notte. Il caso lo chiude qualcun altro: il collega che risale le scale di corsa, l'agente del kōban, il rapporto del medico legale che domani dirà della vasca quello che il tuo taccuino diceva già. Il ragazzo lo prendono sul pianerottolo, col coltello ancora in mano e la faccia di chi non ha capito niente. Tu resti in cucina, sotto il neon.</p>
+       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna — ma senza di te.</p>`
+    : e === "fuga"
+    ? `<p>L'1:20 di notte. Dietro la porta il ragazzo ha urlato per un minuto; poi ha sentito le sirene e ha aperto lui, il coltello posato sul tavolo e le mani alzate. Esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
+       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>`
+    : `<p>L'1:20 di notte. Il ragazzo esce tra il collega e un agente del kōban, un braccio che gli pende dove l'ha preso il manganello, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
+       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>`;
+  cont.innerHTML = `
+  <article class="scena">
+    <img src="${sc.img}" alt="${sc.alt}">
+    <div class="scena-corpo">
+      ${tappeHtml()}
+      <p class="scena-tag">${sc.tag}</p>
+      <h2>${sc.titolo}</h2>
+      ${racconto}
       <div class="conto">
         <div><div class="num">気 ${S.ki}</div><div class="lbl">Ki rimasto (su 9)</div></div>
+        <div><div class="num">${e==="morto"?"☠":e==="fuga"?"🚪":"✓"}</div><div class="lbl">${e==="morto"?"a Ki 0: morto":e==="fuga"?"scontro evitato":"arrestato"}</div></div>
         <div><div class="num">${S.soroban>0?"+":""}${S.soroban}</div><div class="lbl">Soroban di stanotte</div></div>
         <div><div class="num">${S.indizi.length}</div><div class="lbl">righe di taccuino</div></div>
         ${S.nasake?`<div><div class="num">情 ${S.nasake}</div><div class="lbl">Nasake da donare</div></div>`:""}
       </div>
       <div class="mecc"><b>Il Soroban, a fine giornata</b>La scala 0–9 della scheda parte da ⑤: ogni critico o notevole la muove (2 → −2 · 3 → −1 · 11 → +1 · 12 → +2). Stanotte chiudi a <b>${sorobanFine}</b>. È un'altalena: com'è finita oggi decide da dove parte domani.</div>
-      ${S.ki<=3?`<div class="genkai-riga">Chiudi la notte a 気 Ki ${S.ki}: <b>oltre il limite</b>. Al tavolo, il rientro si tira a fine caso — 2d6 come dadi singoli, ogni dado ≤ Ki restituisce un punto. Il crollo che dà il nome al gioco: 限界, il limite. Il vostro.</div>`:""}
+      ${S.ki<=3 && e!=="morto"?`<div class="genkai-riga">Chiudi la notte a 気 Ki ${S.ki}: <b>oltre il limite</b>. Al tavolo, il rientro si tira a fine caso — 2d6 come dadi singoli, ogni dado ≤ Ki restituisce un punto. Il crollo che dà il nome al gioco: 限界, il limite. Il vostro.</div>`:""}
       ${taccuinoHtml(null)}
       <div class="lezione">
-        <p><b>La lezione del mini-caso.</b> Sette tiri, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga. Questo è GENKAI.</p>
+        <p><b>La lezione del mini-caso.</b> Sette tiri d'indagine, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga.${e==="morto"?" E il coltello è l'unica scena in cui i dadi possono davvero chiudere la porta: GENKAI non è un gioco di combattimento, e andarsene era la mossa giusta.":e==="fuga"?" E davanti al coltello hai fatto la cosa più GENKAI di tutte: te ne sei andato.":" E il coltello, l'unica scena in cui i dadi possono davvero chiudere la porta, l'hai chiusa tu."} Questo è GENKAI.</p>
       </div>
       <div class="bottoni" style="margin-top:1.2rem">
         <a class="btn btn-forte" href="/Pg">✨ Crea il tuo investigatore</a>
@@ -619,13 +688,14 @@ function renderFinale(sc){
   </article>`;
   document.getElementById("ricomincia").addEventListener("click", ()=>{
     S.attr = { "Distacco":6, "Lucidità":7, "Ascolto":6, "Pazienza":5, "Silenzio":5, "Presenza":4 };
-    S.ki = 9; S.nasake = 0; S.soroban = 0; S.indizi = []; S.scena = 0; S.gouUsato = false;
+    S.ki = 9; S.nasake = 0; S.soroban = 0; S.indizi = []; S.scena = 0; S.gouUsato = false; S.esitoScontro = null;
     mazzo = []; ultima = null; ordineStanze = null;
     render();
   });
 }
 
 render();
+GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo", extra: () => "scena " + S.scena + "/" + SCENE_TOT + (S.esitoScontro ? " · scontro: " + S.esitoScontro : "") + " · Ki " + S.ki });
 })();
 </script>
 </body>

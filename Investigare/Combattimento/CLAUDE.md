@@ -13,10 +13,10 @@ dell'utente, scena interattiva, scheda per i giocatori. In futuro: più armi, ve
   superato). **A ogni modifica sostanziale della corrente: prima snapshot qui** con numero e data.
 - **`DECISIONI.md`** — il registro delle decisioni di design (cosa è DECISO, cosa è APERTO).
 - **`Simulazione.xlsx`** — il foglio di calcolo dell'utente (fonte delle tabelle v3).
-- **`Scena_Combattimento_Interattiva.html`** — la simulazione GIOCATA (file://, pensata per il
-  cellulare): scontro 1 contro 1 raccontato e spiegato passo passo a chi non conosce il gioco.
-  Motore = solo le regole decise. È la base della scena di combattimento da innestare nel mini-caso
-  `sito_genkai/provalo/`.
+- **`Scena_Combattimento_Interattiva.html`** — COPIA LOCALE (file://) della scena giocata: è solo un
+  wrapper che carica il **motore vero**, `../sito_genkai/provalo/scontro.js` + `scontro.css` (una sola
+  versione da mantenere). Online: `genkai.it/provalo/scontro/` (da sola) e scena 8 di `genkai.it/provalo/`.
+  Motore = solo le regole decise; banco di prova jsdom nello scratchpad di sessione (`prova_scontro.js`).
 - **`Scheda_Giocatori_Combattimento.html`** — riferimento da tavolo (2 pagine A4), DERIVATA dal
   manuale: se il manuale cambia, si aggiorna.
 - **`BRIEF_nomi.md`** — brief già servito (nomi Ukemi/Tame decisi).

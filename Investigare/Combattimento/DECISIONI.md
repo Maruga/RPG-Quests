@@ -116,6 +116,18 @@ manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni
   vederli mentre sotto compare l'esito). Iniziative affiancate in due colonne; pause di lettura tra le
   fasi. Da riportare tale e quale nell'innesto in /provalo.
 
+- **SCENA ONLINE (2026-09-06, richiesta utente «deve rimanere una pagina da sola … e inserita nella mini
+  avventura; se è tutto a posto inseriscila nel sito; in fondo i commenti da inviarmi»)**: motore unico
+  `sito_genkai/provalo/scontro.js` (+ `scontro.css`, `commenti.js`); pagina a sé `genkai.it/provalo/scontro/`;
+  mini-caso `genkai.it/provalo/` a 9 scene con lo scontro in scena 8 (Ki dal caso, finale per esito).
+  `Combattimento/Scena_Combattimento_Interattiva.html` è ora solo un wrapper locale dello stesso motore.
+  Verifica: banco di prova jsdom (`scratchpad/jsdomtest/prova_scontro.js` e `prova_provalo.js`): 7 scenari
+  a dadi pilotati (arma che si spezza/cade/scivola/incrina, mani nude con Lotta 1, Ukemi con e senza Ki,
+  parata perfetta, doppio 6 in difesa, stringere i denti, minaccia, Tame, parità, arretro/aspetto/fuga,
+  morte, Genkai) + 150 partite casuali senza errori; mini-caso intero 3 esiti + 12 partite. Modulo commenti:
+  endpoint `POST /api/commenti` nel wizard (email a `Commenti:Destinatario`, default la casella mittente
+  info@genkai.it; copia in `logs/commenti.jsonl`; trappola anti-bot; 15/giorno per IP), dll pubblicata.
+
 ## APERTI (non decisi — non inventare)
 
 - **Dubbi mandati all'utente il 2026-09-05 sera** (default = com'è scritto ora nel manuale):
