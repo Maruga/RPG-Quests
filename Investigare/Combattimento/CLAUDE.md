@@ -5,12 +5,14 @@ dell'utente, scena interattiva, scheda per i giocatori. In futuro: più armi, ve
 
 ## Struttura (dal 2026-09-05)
 
-- **`GENKAI_Combattimento.md`** — il manuale CORRENTE (**v3.0 unificato**: tutto il contenuto della
-  v2.1 + le regole v3 che comandano; i punti **[da validare]** sono elencati in fondo).
+- **`GENKAI_Combattimento.md`** — il manuale CORRENTE (**v3.1**: il v3.0 unificato — tutto il
+  contenuto della v2.1 + le regole v3 che comandano — con dentro le direttive dell'utente del
+  2026-09-06; il poco ancora aperto è elencato in fondo, «Da validare»).
   Il vecchio percorso `../GENKAI_Combattimento.md` è solo un puntatore qui.
 - **`versioni/`** — versioni congelate per tornare indietro o confrontare: `v2.1` (il canone
-  precedente, integrale), `v3.0-bozza1/2/3`, e il vecchio `Simulatore.html` (pannello tecnico,
-  superato). **A ogni modifica sostanziale della corrente: prima snapshot qui** con numero e data.
+  precedente, integrale), `v3.0-bozza1/2/3`, `v3.0`, `v3.1-bozza1`, e il vecchio `Simulatore.html`
+  (pannello tecnico, superato). **A ogni modifica sostanziale della corrente: prima snapshot qui**
+  con numero e data.
 - **`DECISIONI.md`** — il registro delle decisioni di design (cosa è DECISO, cosa è APERTO).
 - **`Simulazione.xlsx`** — il foglio di calcolo dell'utente (fonte delle tabelle v3).
 - **`Scena_Combattimento_Interattiva.html`** — COPIA LOCALE (file://) della scena giocata: è solo un

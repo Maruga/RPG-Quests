@@ -1,9 +1,11 @@
 # Combattimento v3 — decisioni di design
 
 Fonte: `Simulazione.xlsx` dell'utente + decisioni in sessione (2026-09-03/05).
-**Dal 2026-09-05 sera il manuale corrente è `GENKAI_Combattimento.md` v3.0 UNIFICATO** (tutto il
-contenuto v2.1 dentro, regole v3 che comandano); i punti **[da validare]** sono elencati in fondo al
-manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni/`.
+**Dal 2026-09-06 il manuale corrente è `GENKAI_Combattimento.md` v3.1**: il v3.0 UNIFICATO del
+2026-09-05 (tutto il contenuto v2.1 dentro, regole v3 che comandano) con applicate le due tornate di
+direttive dell'utente del 2026-09-06 (vedi i due blocchi in fondo a DECISO); il poco ancora aperto è
+in fondo al manuale («Da validare») e qui sotto in APERTI. v2.1, bozze v3, v3.0 e v3.1-bozza1 sono
+congelate in `versioni/`.
 
 ## DECISO
 
@@ -161,6 +163,26 @@ manuale e qui sotto in APERTI. La v2.1 e le bozze v3 sono congelate in `versioni
   sfora solo chi impila (alzarsi 2 + estrarre e sparare 4 = 6 → 2d6 + 6 + Presenza > 15 nel 17% dei
   casi con Presenza 6, 42% con Presenza 4) — plausibile. (d) Sotto Tiro con mira −2 + Senmon + Tame
   sta dentro il tetto −4: nessun problema.
+
+- **SECONDA TORNATA DI DIRETTIVE (2026-09-06, tarda sera) → v3.1 definitiva**: 1) **Minacciare**: non a
+  ripetizione (letto: non due scambi di fila — da confermare se invece è «una volta per scontro»); **se
+  fallisce, basta per lo scontro**; se riesce, **al prossimo tiro d'iniziativa chi la subisce ritira il
+  dado più basso e tiene il più alto** (sostituisce il malus +1/+3 di prima); 2) **Soppressione**: chi la
+  subisce tira **3d6 e somma i due più alti**; 3) **Sotto Tiro NON ha bonus di mira** («mirare è una cosa,
+  sotto tiro è un'altra; non si sommano»): velocità 0 e al massimo la distanza — la mia versione «mira
+  compresa» è TOLTA; 4) **Fuori Tempo resta con tetto 15**: chi sfora non agisce nello scambio e completa
+  l'azione nel prossimo con iniziativa = **il dado migliore dei 2d6 e basta** («tiri due dadi ma prendi il
+  migliore»); ora è una manovra vera, l'appendice v2 è sparita; ⚠ è caduta l'eccezione v2 «un'azione
+  singola si completa sempre» (segnalato in Da validare); 5) **Ki del ragazzo nella scena online resta
+  5**: «è una cosa nostra, la simulazione non è un esame sulle regole» — il Ki dei PNG segue la formula
+  dei PG solo al tavolo; 6) **Regola opzionale Ki 0**: tiro su **Distacco o Pazienza, a scelta del
+  giocatore** (i due attributi plausibili proposti da me su sua richiesta) — nella scena online il
+  giocatore fa da GM: può applicarla o tenere la regola base; 7) **parità anche di Presenza = simultanei**;
+  8) **armi**: «per ora va bene, decido quando le gioco» → ° restano da validare al tavolo.
+  Motore online riscritto di conseguenza (scontro.js): scosso = ritiro del dado, opzione minaccia
+  spenta dopo un successo (uno scambio) o per sempre dopo un fallimento, fuori tempo oltre 15 con
+  completamento a un dado, epilogo Ki 0 con la scelta della regola opzionale (esito «aterra» nel
+  mini-caso, con finale dedicato).
 
 ## APERTI (non decisi — non inventare)
 

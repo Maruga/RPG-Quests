@@ -6,7 +6,7 @@
 <title>GENKAI 限界 — Provalo: un mini-caso da giocare</title>
 <meta name="description" content="Un mini-caso di GENKAI da giocare nel browser: nove scene in un appartamento di Fushimi, un tiro per scena, il taccuino che si riempie — fino all'arresto.">
 <link rel="icon" href="../img/favicon.png">
-<link rel="stylesheet" href="scontro.css?v=20260906c">
+<link rel="stylesheet" href="scontro.css?v=20260906d">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -141,8 +141,8 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   </footer>
 </div></main>
 
-<script src="scontro.js?v=20260906c"></script>
-<script src="commenti.js?v=20260906c"></script>
+<script src="scontro.js?v=20260906d"></script>
+<script src="commenti.js?v=20260906d"></script>
 <script>
 (function(){
 "use strict";
@@ -640,7 +640,7 @@ function renderScontro(sc){
         S.ki = ki; S.esitoScontro = esito; aggiornaChip();
         S.indizi.push(esito==="fuga" ? "Ha tirato fuori un coltello: si è arreso ai rinforzi" : "Ha tirato fuori un coltello: resistenza e minaccia a pubblico ufficiale");
         const box = document.getElementById("avanti-box");
-        box.innerHTML = `<button type="button" class="btn btn-forte" id="avanti">${esito==="morto" ? "Il conto della notte →" : "Scena successiva →"}</button>`;
+        box.innerHTML = `<button type="button" class="btn btn-forte" id="avanti">${esito==="morto" || esito==="aterra" ? "Il conto della notte →" : "Scena successiva →"}</button>`;
         document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
       }
     });
@@ -653,6 +653,9 @@ function renderFinale(sc){
   const racconto = e === "morto"
     ? `<p>L'1:20 di notte. Il caso lo chiude qualcun altro: il collega che risale le scale di corsa, l'agente del kōban, il rapporto del medico legale che domani dirà della vasca quello che il tuo taccuino diceva già. Il ragazzo lo prendono sul pianerottolo, col coltello ancora in mano e la faccia di chi non ha capito niente. Tu resti in cucina, sotto il neon.</p>
        <p>Il capo ispettore aveva ragione: non tornava. Adesso torna — ma senza di te.</p>`
+    : e === "aterra"
+    ? `<p>L'1:20 di notte. Il caso lo chiude qualcun altro: il collega che risale le scale di corsa ti trova sul pavimento della cucina, vivo, e il ragazzo bloccato sul pianerottolo dall'agente del kōban, col coltello ancora in mano. La lite, la spinta, la vasca, lo straccio, le pantofole, la busta: te lo racconterà lui domani, in ospedale, leggendo dal tuo taccuino.</p>
+       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna — e tu ci sei ancora, per un pelo.</p>`
     : e === "fuga"
     ? `<p>L'1:20 di notte. Dietro la porta il ragazzo ha urlato per un minuto; poi ha sentito le sirene e ha aperto lui, il coltello posato sul tavolo e le mani alzate. Esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
        <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>`
@@ -668,7 +671,7 @@ function renderFinale(sc){
       ${racconto}
       <div class="conto">
         <div><div class="num">気 ${S.ki}</div><div class="lbl">Ki rimasto (su 9)</div></div>
-        <div><div class="num">${e==="morto"?"☠":e==="fuga"?"🚪":"✓"}</div><div class="lbl">${e==="morto"?"a Ki 0: morto":e==="fuga"?"scontro evitato":"arrestato"}</div></div>
+        <div><div class="num">${e==="morto"?"☠":e==="aterra"?"🩹":e==="fuga"?"🚪":"✓"}</div><div class="lbl">${e==="morto"?"a Ki 0: morto":e==="aterra"?"a Ki 0: vivo, a terra":e==="fuga"?"scontro evitato":"arrestato"}</div></div>
         <div><div class="num">${S.soroban>0?"+":""}${S.soroban}</div><div class="lbl">Soroban di stanotte</div></div>
         <div><div class="num">${S.indizi.length}</div><div class="lbl">righe di taccuino</div></div>
         ${S.nasake?`<div><div class="num">情 ${S.nasake}</div><div class="lbl">Nasake da donare</div></div>`:""}
@@ -677,7 +680,7 @@ function renderFinale(sc){
       ${S.ki<=3 && e!=="morto"?`<div class="genkai-riga">Chiudi la notte a 気 Ki ${S.ki}: <b>oltre il limite</b>. Al tavolo, il rientro si tira a fine caso — 2d6 come dadi singoli, ogni dado ≤ Ki restituisce un punto. Il crollo che dà il nome al gioco: 限界, il limite. Il vostro.</div>`:""}
       ${taccuinoHtml(null)}
       <div class="lezione">
-        <p><b>La lezione del mini-caso.</b> Sette tiri d'indagine, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga.${e==="morto"?" E il coltello è l'unica scena in cui i dadi possono davvero chiudere la porta: GENKAI non è un gioco di combattimento, e andarsene era la mossa giusta.":e==="fuga"?" E davanti al coltello hai fatto la cosa più GENKAI di tutte: te ne sei andato.":" E il coltello, l'unica scena in cui i dadi possono davvero chiudere la porta, l'hai chiusa tu."} Questo è GENKAI.</p>
+        <p><b>La lezione del mini-caso.</b> Sette tiri d'indagine, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga.${e==="morto"?" E il coltello è l'unica scena in cui i dadi possono davvero chiudere la porta: GENKAI non è un gioco di combattimento, e andarsene era la mossa giusta.":e==="aterra"?" E il coltello, l'unica scena in cui i dadi possono chiudere la porta, l'ha lasciata aperta di un soffio: la regola opzionale del GM ti ha tenuto in vita — a terra.":e==="fuga"?" E davanti al coltello hai fatto la cosa più GENKAI di tutte: te ne sei andato.":" E il coltello, l'unica scena in cui i dadi possono davvero chiudere la porta, l'hai chiusa tu."} Questo è GENKAI.</p>
       </div>
       <div class="bottoni" style="margin-top:1.2rem">
         <a class="btn btn-forte" href="/Pg">✨ Crea il tuo investigatore</a>
