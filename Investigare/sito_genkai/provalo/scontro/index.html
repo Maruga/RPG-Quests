@@ -6,7 +6,7 @@
 <title>GENKAI — Un coltello in cucina · prova il combattimento</title>
 <meta name="description" content="Prova il combattimento di GENKAI in cinque minuti, da solo, sul telefono: un investigatore, un ragazzo con un coltello, i dadi. Si impara giocando.">
 <link rel="icon" href="../../img/favicon.png">
-<link rel="stylesheet" href="../scontro.css?v=20260906d">
+<link rel="stylesheet" href="../scontro.css?v=20260906f">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -48,15 +48,15 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   </footer>
 </div></main>
 
-<script src="../scontro.js?v=20260906d"></script>
-<script src="../commenti.js?v=20260906d"></script>
+<script src="../scontro.js?v=20260906f"></script>
+<script src="../commenti.js?v=20260906f"></script>
 <script>
 (function(){
   const stato = {
     pipsPg: document.getElementById("pips-pg"), numPg: document.getElementById("num-pg"), kiPg: document.getElementById("ki-pg"),
     pipsNip: document.getElementById("pips-nip"), numNip: document.getElementById("num-nip")
   };
-  const pg = { attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4}, ki:7, kiMax:7, senmon:{ "Lame e bastoni":1, "Lotta":1 } };
+  const pg = { attr:{Distacco:6, Pazienza:5, Silenzio:5, Lucidità:7, Ascolto:6, Presenza:4}, ki:7, kiMax:7, senmon:{ "Manganello":1, "Lotta":1 } };
   let esito = "";
   GenkaiScontro.copertina(document.getElementById("copertina"), {
     immagine: "../img/coltello.jpg",

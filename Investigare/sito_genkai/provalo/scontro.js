@@ -11,8 +11,8 @@
    · colpito prima di agire = azione persa (salvo Stringere i Denti: danno 1-2, paghi 1 punto dell'attributo)
    · critici nei due sensi: 1+1 = +1d6; 6+6 in attacco = mancato + imprevisto (tabella corpo a corpo)
    · MINACCIARE (velocità 0, solo voce): 2d6 ≤ Presenza → l'avversario è SCOSSO: al prossimo tiro d'iniziativa
-     ritira il suo dado più basso e tiene il più alto. Non a ripetizione (non due scambi di fila); se fallisce,
-     per il resto dello scontro non si minaccia più. Chi minaccia può comunque difendersi
+     ritira il suo dado più basso e tiene il più alto. Si prova UNA VOLTA SOLA per scontro, riuscita o no.
+     Chi minaccia può comunque difendersi
    · FUORI TEMPO: iniziativa oltre 15 → in questo scambio non agisci; completi l'azione nel prossimo, dove la
      tua iniziativa è il dado migliore dei due e basta
    · regola opzionale del GM al Ki 0: il Ki si ferma a 0; un tiro su Distacco o Pazienza (a scelta) decide se
@@ -206,11 +206,13 @@ function scelta(el, opzioni, inRiga, opz){
   });
 }
 
-/* Senmon pertinente all'arma in mano: il grado si toglie dal tiro d'attacco (−1/−2/−3) */
+/* Senmon pertinente all'arma in mano: il grado si toglie dal tiro d'attacco (−1/−2/−3), mai dalla difesa.
+   Una Senmon d'arma vale per UN'ARMA sola, dichiarata (Manganello 1 non vale col coltello). Lotta = pugni e prese. */
 function senmonDi(c){
   if (!c.senmon) return [null, 0];
-  if (c.arma === ARMI.lotta) return ["Lotta", c.senmon["Lotta"] || 0];
-  if (c.arma === ARMI.manganello || c.arma === ARMI.coltello) return ["Lame e bastoni", c.senmon["Lame e bastoni"] || 0];
+  if (c.arma === ARMI.lotta) return ["Senmon Lotta", c.senmon["Lotta"] || 0];
+  if (c.arma === ARMI.manganello) return ["Senmon Manganello", c.senmon["Manganello"] || 0];
+  if (c.arma === ARMI.coltello) return ["Senmon Coltello", c.senmon["Coltello"] || 0];
   return [null, 0];
 }
 /* velocità dell'azione dichiarata (colonna Colpire / Estrarre, o scala delle azioni) */
@@ -232,7 +234,7 @@ const etichettaDich = c => ({
 function schedaBreve(pg, nip){
   nip = nip || RAGAZZO;
   const a = pg.attr, modP = modPresenza(a.Presenza);
-  const lame = pg.senmon && pg.senmon["Lame e bastoni"], lotta = pg.senmon && pg.senmon["Lotta"];
+  const mang = pg.senmon && pg.senmon["Manganello"], lotta = pg.senmon && pg.senmon["Lotta"];
   const pronto = modP > 0 ? `con ${a.Presenza} sei lento` : modP < 0 ? `con ${a.Presenza} sei pronto` : `con ${a.Presenza} sei nella media`;
   return `
   <div class="mecc">
@@ -242,7 +244,7 @@ function schedaBreve(pg, nip){
       <li><b>Silenzio ${a.Silenzio}</b> — la calma interiore, non reagire d'impulso. È l'attributo con cui usi il <b>manganello</b>.</li>
       <li><b>Pazienza ${a.Pazienza}</b> — aspettare il momento giusto. È l'attributo con cui <b>schivi una lama</b>.</li>
       <li><b>Presenza ${a.Presenza}</b> — l'autorità che ispiri, farti prendere sul serio, intimidire. Con questa <b>minacci</b> — e decide quanto sei pronto a reagire: ${pronto}.</li>
-      ${lame ? `<li><b>Lame e bastoni ${lame}</b> — la tua specializzazione: l'addestramento col manganello. Ogni volta che lo usi <b>togli ${lame} al tiro</b>, e tirare basso è meglio.${lotta ? ` Come ogni investigatore hai anche <b>Lotta ${lotta}</b>, l'accademia: vale per pugni e prese.` : ""}</li>` : ""}
+      ${mang ? `<li><b>Manganello ${mang}</b> — la tua specializzazione: l'addestramento col manganello d'ordinanza. Ogni volta che attacchi con quello <b>togli ${mang} al tiro</b>, e tirare basso è meglio. Vale solo per quest'arma, e solo in attacco.${lotta ? ` Come ogni investigatore hai anche <b>Lotta ${lotta}</b>, l'accademia: vale per pugni e prese.` : ""}</li>` : ""}
     </ul>
   </div>
   <div class="mecc">
@@ -260,7 +262,7 @@ const AIUTI_INTRO = `
     <div class="aiuto-testo" id="gs-a-tiro" hidden>In GENKAI si tirano sempre <b>due dadi a sei facce</b> e si sommano. Se il totale è <b>uguale o inferiore</b> all'attributo che stai usando, riesce. <b>Più stai sotto, meglio è</b>: nel combattimento quel margine diventa la precisione del colpo. Tutto ciò che ti aiuta — una specializzazione, il fiato trattenuto — <b>toglie punti al totale</b>.</div>
     <div class="aiuto-testo" id="gs-a-attr" hidden>I sei attributi di un investigatore (Distacco, Pazienza, Silenzio, Lucidità, Ascolto, Presenza) vanno da <b>4</b> (debole: ci fai fatica) a <b>9</b> (eccezionale). Non misurano i muscoli: sono <b>stati interiori</b> — come stai quando le cose si mettono male. Qui ne usi tre.</div>
     <div class="aiuto-testo" id="gs-a-ki" hidden>Il Ki 気 è la tua energia vitale: si consuma con la fatica, la pressione, i poteri — e in uno scontro con i colpi. Sotto <b>3</b> sei oltre il limite: se lo scontro finisse lì, crolleresti. Quel limite si chiama <b>Genkai</b> 限界, ed è il nome del gioco. In combattimento il danno non si ferma: <b>a Ki 0 si muore</b>.</div>
-    <div class="aiuto-testo" id="gs-a-senmon" hidden>Le specializzazioni (in gioco: <b>Senmon</b>) sono le cose che il tuo personaggio ha imparato a fare bene — un'arma, una lingua, un mestiere. Hanno tre gradi, e ogni grado <b>toglie 1 al tiro</b> quando le usi. <b>Lame e bastoni</b> copre manganello, coltello, mazza e spada; <b>Lotta</b> copre pugni e prese, e la hanno tutti gli investigatori dall'accademia.</div>
+    <div class="aiuto-testo" id="gs-a-senmon" hidden>Le specializzazioni (in gioco: <b>Senmon</b>) sono le cose che il tuo personaggio ha imparato a fare bene — un'arma, una lingua, un mestiere. Hanno tre gradi, e ogni grado <b>toglie 1 al tiro</b> quando le usi. Quelle d'arma valgono per <b>una sola arma, dichiarata</b>: Manganello 1 vale col manganello e basta, con un coltello servirebbe Coltello 1. <b>Lotta</b> copre pugni e prese, e la hanno tutti gli investigatori dall'accademia. In difesa le specializzazioni non contano.</div>
   </div>`;
 
 /* pallini del Ki senza animazione (copertina, prima che lo scontro parta) */
@@ -365,11 +367,9 @@ function avvia(opz){
       const conSen = sen ? ` −${sen} (${senNome})` : "";
       const urlo = NIP.arma === ARMI.lotta ? "«Fermo! Basta così!»" : "«Metti giù il coltello!»";
       const attaccoTesto = PG.arma === ARMI.lotta ? "Attacco a mani nude" : `Attacco col ${PG.arma.nome}`;
-      const appena = PG.minacciaAppena; PG.minacciaAppena = false;
-      const minacciaOff = PG.minacciaFallita || appena;
-      const sottoMinaccia = PG.minacciaFallita ? "hai già provato e non ha funzionato: per questo scontro le parole sono finite"
-        : appena ? "hai appena minacciato: la voce non fa effetto due volte di fila"
-        : `tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}${Pz <= 5 ? ", la tua Presenza è bassa" : ""}. È solo voce: velocità 0, e se mi attacca posso comunque difendermi. Se riesce, al prossimo scambio lui parte in ritardo: ritira il dado più basso dell'iniziativa e tiene il peggiore`;
+      const minacciaOff = !!PG.minacciaUsata;
+      const sottoMinaccia = minacciaOff ? "hai già minacciato: si prova una volta sola per scontro, riuscita o no"
+        : `tiro 2d6 ≤ Presenza ${Pz} — ${prob(Pz)}${Pz <= 5 ? ", la tua Presenza è bassa" : ""}. È solo voce: velocità 0, e se mi attacca posso comunque difendermi. Vale una volta sola per scontro. Se riesce, al prossimo scambio lui parte in ritardo: ritira il dado più basso dell'iniziativa e tiene il peggiore`;
       let opzioni;
       if (PG.raccogliere) {
         opzioni = [
@@ -456,13 +456,13 @@ function avvia(opz){
         const tot = Math.max(2, ma + mb - prep);
         mt.innerHTML = `${ma}+${mb} = ${ma+mb}${prep ? ` −1 (preparato) = ${tot}` : ""} contro <b>${c.attr.Presenza}</b>: ${tot <= c.attr.Presenza ? "<b>riuscito</b>" : "fallito"}`;
         if (tot <= c.attr.Presenza) {
-          NIP.scosso = true; c.minacciaAppena = true;
+          NIP.scosso = true; c.minacciaUsata = true;
           narr(el, `La voce esce giusta, bassa e ferma: il ragazzo esita, la punta del coltello trema. <span class="parata">Nel prossimo scambio è scosso: all'iniziativa ritirerà il dado più basso e terrà il peggiore.</span>${c.attr.Presenza - tot >= 2 ? " Per un attimo sembra sul punto di posare il coltello: al tavolo lo deciderebbe il GM." : ""}`);
-          scrivi(el, `<p class="regola">Non si minaccia a ripetizione: nel prossimo scambio la voce non farà effetto di nuovo.</p>`);
+          scrivi(el, `<p class="regola">La minaccia è spesa: si prova <b>una volta sola per scontro</b>.</p>`);
         } else {
-          c.minacciaFallita = true;
+          c.minacciaUsata = true;
           narr(el, "La voce ti esce troppo alta, incrinata: lui non sente altro che la propria paura.");
-          scrivi(el, `<p class="regola">Non ha funzionato, e per questo scontro <b>le parole sono finite</b>: non minacci più.</p>`);
+          scrivi(el, `<p class="regola">Non ha funzionato, e la minaccia è comunque spesa: si prova <b>una volta sola per scontro</b>, riuscita o no.</p>`);
         }
         scrivi(el, `<p class="regola">Hai speso l'azione, ma la voce non ti scopre: se ti attacca, puoi ancora difenderti.</p>`);
         continue;
@@ -642,11 +642,11 @@ function avvia(opz){
     const visto = `<div class="mecc"><span class="titolo">Cosa hai visto</span>
       <ul>
         <li>Si tira sempre 2d6: <b>somma ≤ attributo</b> = riuscito; quanto stai sotto è la <b>precisione</b></li>
-        ${sen ? `<li>Le <b>specializzazioni</b> (Senmon) tolgono 1 al tiro per grado: la tua ${senNome} ${sen} ha contato a ogni colpo</li>` : ""}
+        ${sen ? `<li>Le <b>specializzazioni</b> (Senmon) tolgono 1 al tiro per grado: ${senNome} ${sen} ha contato a ogni tuo attacco — mai in difesa, e solo con quell'arma</li>` : ""}
         <li>Ogni scambio: dichiari · <b>iniziativa</b> (2d6 + Presenza + velocità, il basso agisce prima; a parità chi ha più Presenza) · azioni</li>
         <li>Colpito prima di agire = <b>azione persa</b> (salvo stringere i denti)</li>
         <li>Difendersi = rinunciare all'azione (<b>Ukemi</b>), deciso prima del tiro avversario; chi ha già agito non si difende</li>
-        <li><b>Minacciare</b> è solo voce: se riesce l'avversario parte in ritardo al prossimo scambio, e tu puoi ancora difenderti; non si ripete di fila, e se fallisce le parole sono finite</li>
+        <li><b>Minacciare</b> è solo voce: se riesce l'avversario parte in ritardo al prossimo scambio, e tu puoi ancora difenderti; si prova una volta sola per scontro, riuscita o no</li>
         <li><b>Tame</b>: trattenere il fiato — più tardi, ma più preciso (oltre 15 di iniziativa sei <b>fuori tempo</b>: agisci nel prossimo scambio)</li>
         <li>Il <b>Ki</b> è vita ed energia insieme: a 0 si muore; sotto 3 c'è il <b>Genkai</b></li>
       </ul></div>`;

@@ -11,11 +11,33 @@
 
 ## Da applicare
 
+### 2026-09-06 (notte) · WIZARD → REGOLE · Combattimento v3.1: chiusi gli ultimi punti aperti — **le Senmon d'arma cambiano**
+Decisioni dell'utente, già nel manuale `Combattimento/GENKAI_Combattimento.md`, nella Scheda Giocatori e nella scena online:
+1. **Senmon d'arma = UN'ARMA SPECIFICA, DICHIARATA** («quando prendo Pistola +1 non significa fucile o altro; posso avere
+   Pistola 1 e Coltello 1: sono due Senmon separate»). La chiave è l'attributo d'attacco dell'arma. **Il grado si toglie solo
+   dai tiri attivi (attaccare e le altre azioni con l'arma), MAI dalla difesa**: l'Ukemi resta sull'attributo legato all'arma
+   di chi attacca e **non si sceglie** (l'idea dei «profili di difesa alternativi» è chiusa: no).
+   ⚠ Per REGOLE: in `GENKAI_Specializzazioni.md` la voce **«Lame e bastoni» (Pazienza o Silenzio, coltello o bastone)** non
+   regge più: va sciolta nelle singole armi (Coltello · Manganello · Spada · Mazza · Machete · Catena · Armi da lancio, oltre a
+   Pistola · Fucile · Mitragliatrice già distinte; Tiro di precisione ed Esplosivi restano). Controllare anche le schede PG
+   che la citano. Lato WIZARD: biblioteca `senmon.json` del wizard PG **allineata e online** (2026-09-06 notte: Coltello · Manganello · Spada ·
+   Mazza · Machete · Catena · Armi da lancio · Pistola · Fucile · Mitragliatrice, ognuna «solo quest'arma, mai in difesa»;
+   la vecchia voce resta leggibile sulle schede già create ma non si propone più).
+   Nella scena online il PG ora ha **Manganello 1** (era «Lame e bastoni 1»).
+2. **Granata**: chi è nell'area va in Ukemi su **Distacco** (come per proiettili e lanci), non Lucidità.
+3. **Opportunità**: soglia **5** confermata.
+4. **Distanza e colluttazione** (tabella nel manuale, in *L'Attacco*): afferrati → pugni, prese, coltello, manganello e
+   improvvisate normali; spada/katana/machete/mazza **+2**; pistole **+2** e niente mira; fucili e mitragliatrici non si usano
+   (o +3, GM). A contatto ma liberi: fuoco **−1**. Vicino: fuoco normale, lame e pugni prima si muovono. Lontano: fuoco **+1**
+   (precisione 0), lancio +1. Il «+1/+2 caotico» della v2 è morto.
+5. Minacciare: **una volta sola per scontro, riuscita o no** (corregge la riga di sotto). Lo «stallo» non è un problema: tolto.
+Non resta nessun punto di regola aperto; solo i valori delle armi ° da provare al tavolo. — **DA APPLICARE** (Specializzazioni + schede PG)
+
 ### 2026-09-06 (sera) · WIZARD → REGOLE · Manuale Combattimento **v3.1** — direttive dell'utente sui punti aperti
 `Combattimento/GENKAI_Combattimento.md` è v3.1 (v3.0 congelata in `versioni/`). Decisioni dell'utente ora nel testo:
 **parità d'iniziativa → chi ha più Presenza** (a pari Presenza: simultanei) · **Minacciare è a velocità 0** (solo voce):
 se riesce l'avversario è «scosso» e **al prossimo tiro d'iniziativa ritira il dado più basso tenendo il più alto**; il GM
-può fargli abbassare l'arma; **non due scambi di fila; se fallisce, per lo scontro non si minaccia più**; **chi minaccia
+può fargli abbassare l'arma; **si prova una volta sola per scontro, riuscita o no**; **chi minaccia
 può comunque difendersi** · piccolo movimento + attacco senza costo, decide il GM · **Sotto Tiro NON è la mira** (velocità
 0, nessun bonus, conta solo la distanza) · Opportunità = azione descrittiva o un movimento · **soppressione: chi la subisce
 tira 3d6 e somma i due più alti** · **Fuori Tempo: tetto 15** — chi sfora non agisce e completa l'azione nel prossimo

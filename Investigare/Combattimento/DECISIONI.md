@@ -183,6 +183,25 @@ congelate in `versioni/`.
   spenta dopo un successo (uno scambio) o per sempre dopo un fallimento, fuori tempo oltre 15 con
   completamento a un dado, epilogo Ki 0 con la scelta della regola opzionale (esito «aterra» nel
   mini-caso, con finale dedicato).
+- **CONFERME (2026-09-06, notte)**: 1) **Minacciare si prova UNA VOLTA SOLA per scontro, riuscita o no**
+  («un PG può provare a intimidire una sola volta in combattimento, non ha senso più volte») — la
+  lettura «non due scambi di fila» è superata; scritta per chiunque minacci, PNG compresi; 2) Fuori Tempo
+  senza l'eccezione v2 «l'azione singola si completa sempre»: **confermato**; 3) Distacco o Pazienza per il
+  tiro del Ki 0: **confermato**. Manuale, Scheda e motore online allineati.
+- **TERZA TORNATA (2026-09-06, notte) — chiusi tutti gli aperti**: 1) **Opportunità: soglia 5** («va bene il
+  5»); 2) **granata: Ukemi su Distacco** («va bene Distacco»); 3) **distanza e colluttazione**: approvata la
+  tabella proposta («va bene così») — afferrati: pugni/prese/coltello/improvvisate/manganello normali,
+  spada-katana-machete-mazza +2, pistole +2 e niente mira, fucili e mitragliatrici non si usano (o +3 GM); a
+  contatto ma liberi: fuoco −1; vicino: fuoco normale, lame e pugni prima si muovono; lontano: fuoco +1
+  (precisione 0), lancio +1; il «+1/+2 caotico» v2 è sostituito dal +2 da afferrati; 4) **Senmon**: «il
+  Senmon fa solo diminuire il tiro per attaccare o altro, la difesa la lasciamo com'è ora, non si può
+  scegliere» → grado solo sui tiri attivi, MAI in difesa; idea dei profili alternativi chiusa: no; **nota da
+  implementare: le Senmon d'arma sono distinte per arma specifica, dichiarata** («Pistola +1 non significa
+  fucile o altro; posso avere Pistola +1 e Coltello +1, sono due Senmon separate») → manuale riscritto
+  (tabella «Un'arma, dichiarata»; mia lettura: *Pistola* copre revolver, automatica e compatta), scena online
+  PG con **Manganello 1** al posto di «Lame e bastoni 1», REGISTRO per `GENKAI_Specializzazioni.md`, TODO
+  wizard `senmon.json`; 5) **stallo**: tolto — «due che si difendono all'infinito non ha senso in nessun
+  gioco» (era un residuo delle mie note del 2026-09-05, non una regola).
 
 ## APERTI (non decisi — non inventare)
 
@@ -196,11 +215,13 @@ congelate in `versioni/`.
 
 - ✔ NOMI DECISI (utente, 2026-09-05): **UKEMI 受け身** = l'azione che diventa difesa («vado in difensiva, in Ukemi») · **TAME 溜め** = la carica, +iniziativa ↔ −tiro («trattengo il fiato, in Tame»). «Conversione» e «prendere il tempo» sono nomi MORTI: non riusarli.
 
-- **Specializzazioni che cambiano il profilo di difesa** (idea utente: «uno può scegliere altri profili
-  per difendersi» — si vedrà poi).
-- Stallo tra due che si difendono entrambi (regola anti-attrito o discrezione GM?).
-- Critici (2/12) e Soroban in combattimento (dubbio già nel REGISTRO_MODIFICHE 2026-09-01).
-- Muoversi: il «piccolo movimento + attacco» ha un malus?
+- **Nessun punto di regola aperto** (2026-09-06 notte). Resta solo la prova al tavolo dei valori delle
+  armi ° («decido quando le gioco»). Wizard PG: `senmon.json` già allineato e online (una Senmon per arma;
+  «Lame e bastoni» nascosta, resta solo per le schede vecchie). TODO WIZARD casi: statistiche PNG «Riserva
+  3/6/9» → Ki con la formula dei PG.
+- Chiusi altrove, tolti da qui: Critici e Soroban in combattimento (il manuale dice «non muove il
+  soroban», registro 2026-09-05); «piccolo movimento + attacco» senza malus, decide il GM (direttiva
+  2026-09-06).
 - Numeri delle probabilità di riferimento: attacco su 5→28% · 6→42% · 7→58% · 8→72%;
   1 Ki in difesa ≈ 1,5 danni parati in media (conviene contro armi grosse).
 - La scena di combattimento della demo `sito_genkai/provalo/` si ricostruirà su QUESTO sistema

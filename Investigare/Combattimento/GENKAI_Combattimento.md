@@ -11,11 +11,13 @@
 >
 > **v3.1 (2026-09-06)** — direttive dell'autore sui punti aperti: parità d'iniziativa → Presenza (a
 > pari Presenza: simultanei) · Minacciare (velocità 0; se riesce l'avversario ritira il dado basso
-> dell'iniziativa e tiene il più alto; non a ripetizione, e se fallisce basta per lo scontro; chi
+> dell'iniziativa e tiene il più alto; si prova una volta sola per scontro, riuscita o no; chi
 > minaccia può difendersi) · piccolo movimento + attacco a giudizio del GM · Sotto Tiro non è la mira ·
-> Opportunità = azione descrittiva o movimento · soppressione: 3d6, i due più alti · Fuori Tempo con
-> tetto 15 e un dado solo · Ki dei PNG come i PG · regola opzionale sul Ki 0 (tiro su Distacco o
-> Pazienza) · armi ampliate su tutti gli attributi. Quel che resta aperto è in fondo.
+> Opportunità = azione descrittiva o movimento, soglia 5 · soppressione: 3d6, i due più alti · Fuori
+> Tempo con tetto 15 e un dado solo · granata: Ukemi su Distacco · distanza e colluttazione per
+> famiglie d'arma (afferrati: pistole e armi lunghe +2, fucili no) · Senmon d'arma: un'arma sola,
+> dichiarata, e mai in difesa · Ki dei PNG come i PG · regola opzionale sul Ki 0 (tiro su Distacco o
+> Pazienza) · armi ampliate su tutti gli attributi (i valori ° si provano al tavolo).
 >
 > **v3.0 (2026-09-05)** — il sistema **ad azioni** (dichiarazione → iniziativa → risoluzione, tiri
 > separati) sostituisce lo scambio «a un tiro solo» della v2. La v2.1 è congelata in
@@ -103,12 +105,11 @@ della stanza e sparare è troppo; ripararsi dietro un tavolo già ribaltato e sp
 **MINACCIARE** — la voce, il distintivo, l'arma alzata: «*Metti giù il coltello!*». È solo voce:
 **velocità 0**. Tiri **2d6 ≤ Presenza**: se riesce, l'avversario è **scosso** — **al prossimo tiro
 d'iniziativa ritira il suo dado più basso e tiene il risultato più alto** (parte in ritardo) — e, se
-il GM lo decide e la scena lo regge, **abbassa l'arma**. **Non si usa a ripetizione**: dopo una
-minaccia riuscita, nello scambio successivo non puoi minacciare di nuovo *(lettura di «non a
-ripetizione» da confermare: non due scambi di fila)*. **Se fallisce, per il resto dello scontro non
-minacci più**: le parole sono finite. In ogni caso **chi minaccia può comunque difendersi** in quello
-scambio: la voce non ti scopre come un attacco — hai il tiro di difesa, con l'eventuale Ki (deciso
-2026-09-06).
+il GM lo decide e la scena lo regge, **abbassa l'arma**. **Si prova una volta sola per scontro**,
+riuscita o fallita: la voce fa il suo effetto una volta, ripeterla non ha senso (deciso 2026-09-06).
+Se fallisce non succede nulla: hai speso l'azione. In ogni caso **chi minaccia può comunque
+difendersi** in quello scambio: la voce non ti scopre come un attacco — hai il tiro di difesa, con
+l'eventuale Ki (deciso 2026-09-06).
 
 ### Ukemi 受け身 — l'azione che diventa difesa
 
@@ -147,10 +148,19 @@ colpito**. Se supera, hai mancato: fine.
 - **Scarto = attributo − tiro** (la precisione del colpo)
 - **Danno totale = scarto + danno dell'arma** (con scarto 0 entra il solo danno dell'arma)
 
-**DISTANZA** *(armi da fuoco)*: **−1** ravvicinato · **0** normale · **+1** lontano. Il **fucile
-di precisione** a lontano ci vive: nessun malus. Su un bersaglio che **si sta buttando** o scarta
-di brusco: **+1**, cumulabile. A **contatto**, nella colluttazione, sparare è caotico: il GM può
-dare +1/+2 *(dalla v2 — vedi Da validare per come si incastra col −1 ravvicinato)*.
+**DISTANZA E COLLUTTAZIONE** (deciso 2026-09-06) — conta la zona (vedi *Le Zone*) e la famiglia
+dell'arma:
+
+| Situazione | Pugni, prese, coltello, arma improvvisata, manganello | Spada, katana, machete, mazza | Pistole | Fucili e mitragliatrici |
+|---|---|---|---|---|
+| **Afferrati** (colluttazione, mani addosso) | normale | **+2** | **+2**, niente mira | non si usano (o +3, decide il GM) |
+| **A contatto ma liberi** (un passo, il tavolo tra voi) | normale | normale | **−1** (ravvicinato) | **−1** |
+| **Vicino** (la stessa stanza) | prima ti muovi | prima ti muovi | normale | normale |
+| **Lontano** | — | — | **+1** (armi da lancio +1) | **+1**; il fucile di precisione 0 |
+
+Su un bersaglio che **si sta buttando** o scarta di brusco: **+1**, cumulabile. Il **fucile di
+precisione** a lontano ci vive: nessun malus. Il «+1/+2 caotico» della v2 è diventato il **+2 da
+afferrati**: un numero solo.
 
 ---
 
@@ -180,7 +190,7 @@ dopo la spesa** (serve Ki 2 o più): a Ki 0 in combattimento si muore — nessun
 > **Scambio 2** — Tu minacci (velocità 0), lui attacca. Iniziativa: tu 1+2 +2 +0 = **5**; lui 4+3
 > +0 +1 = **8**. Agisci tu: «*Metti giù il coltello!*» — 2+1 = 3 ≤ Presenza 4: **scosso**. Poi lui:
 > 5+3 = 8 > 5, **manca** — e se avesse colpito, avresti avuto comunque il tiro di difesa: la voce non
-> ti scopre. (Nel prossimo scambio non potrai minacciare di nuovo.)
+> ti scopre. (La minaccia è spesa: in questo scontro non la ripeti.)
 > **Scambio 3** — Attacco contro attacco. Iniziativa: tu 2+3 +2 +2 = **9**; lui tira 3+3 ma è
 > **scosso**: ritira il dado più basso, esce 5, tiene il 5 → 3+5 = 8, +0 +1 = **9**: **parità — agisce
 > prima chi ha più Presenza: lui** (6 contro 4). Non hai ancora agito: Ukemi? Tieni l'attacco. Lui
@@ -224,8 +234,8 @@ In **attacco**: **Presenza** = l'impeto (mani nude, armi improvvisate, machete, 
 **Pazienza** = il momento giusto (coltello, katana e spada, fucile di precisione) · **Silenzio** = la
 calma e l'intenzione nascosta (manganello, mazza) · **Lucidità** = prendere la linea (pistole) ·
 **Distacco** = la freddezza sotto il rinculo (fucili, mitragliatori) · **Ascolto** = il tempo e la
-distanza (catena, armi da lancio). In **difesa**: **armi da fuoco e lanci → Distacco** (ti defili
-dalla traiettoria) · **lame corte e mani → Pazienza** (aspetti e scarti) · **armi lunghe da botta e
+distanza (catena, armi da lancio). In **difesa**: **armi da fuoco, lanci e granata → Distacco** (ti
+defili dalla traiettoria; deciso 2026-09-06) · **lame corte e mani → Pazienza** (aspetti e scarti) · **armi lunghe da botta e
 taglio, catena → Ascolto** (leggi l'arco del colpo).
 
 | Arma | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno | Raffica | Colpi | Note |
@@ -233,7 +243,7 @@ taglio, catena → Ascolto** (leggi l'arco del colpo).
 | **Lotta** (pugno, presa) | Presenza | Pazienza | 1 | 1 | — | **1** | no | 1 | Lotta 1 a tutti |
 | **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | Pazienza | 1 | 1 | — | **1–2** (GM) | no | 1 | |
 | **Machete / accetta** ° | Presenza | Ascolto | 3 | 2 | — | **3** | no | 1 | la lama pesante: colpi d'impeto |
-| **Granata** | Presenza | Lucidità **[dv]** | 2 | 2 | — | **4** (area) | no | 1 | ognuno può andare in Ukemi |
+| **Granata** | Presenza | Distacco | 2 | 2 | — | **4** (area) | no | 1 | ognuno nell'area può andare in Ukemi |
 | **Coltello / pugnale** | Pazienza | Pazienza | 2 | 1 | — | **2** | no | 1 | |
 | **Katana / spada** ° | Pazienza | Ascolto | 3 | 2 | — | **3** | no | 1 | yakuza d'altri tempi |
 | **Fucile di precisione** | Pazienza | Distacco | 5 | 3 | 5 | **5** | no | 1 | richiede la Senmon |
@@ -352,8 +362,8 @@ il colpo garantito. A discrezione del GM, come tutto qui dentro.
 hai **−1**: non è mira, è preparazione — il respiro prima di muoversi. Il −1 **non si cumula** e
 **resta finché non lo usi**; una volta speso, puoi prepararti di nuovo.
 
-**OPPORTUNITÀ** — se la tua iniziativa batte quella dell'avversario di **5 o più [soglia da
-validare]**, sei stato così più rapido da guadagnare **un'azione descrittiva extra oppure un
+**OPPORTUNITÀ** — se la tua iniziativa batte quella dell'avversario di **5 o più** (deciso
+2026-09-06), sei stato così più rapido da guadagnare **un'azione descrittiva extra oppure un
 movimento** (deciso 2026-09-06), spendibile in questo scambio o nel prossimo: salti sul cofano *e*
 ti ripari *e* spari; ricarichi *e* spari; raggiungi la copertura *e* spari. Mai **due attacchi**.
 
@@ -445,18 +455,17 @@ Niente griglie e niente metri: tre fasce, e il buonsenso.
 
 | Zona | Cos'è | Cosa ci fai |
 |---|---|---|
-| **Contatto** | Lo tocchi — la colluttazione, il tavolo tra voi | Pugni, coltelli, afferrare. Sparare qui è ravvicinato (−1) — e nella colluttazione vera è caotico (+1/+2 GM) |
+| **Contatto** | Lo tocchi — la colluttazione, il tavolo tra voi | Pugni, coltelli, afferrare. Liberi: sparare è ravvicinato (−1). Afferrati: pistole e armi lunghe +2, fucili non si usano (tabella *Distanza e colluttazione*) |
 | **Vicino** | La stessa stanza, il vicolo, pochi passi | Tutto funziona. Raggiungi una copertura o il contatto con la tua azione |
 | **Lontano** | Oltre — la strada, il tetto di fronte | Solo armi da fuoco (+1). Serve un'azione (o due, dice il GM) per avvicinarsi; il fucile di precisione vive qui |
 
 Muoversi di una fascia è un'azione (**Muoversi**). Scappare = raggiungere *lontano* e uscire dalla
 scena: spesso la mossa migliore del combattimento.
 
-**Il tiro e la distanza** *(armi da fuoco)* — la v3 fissa **−1 ravvicinato · 0 normale · +1
-lontano**, più **+1** su un bersaglio che si butta (cumulabile); il fucile di precisione a lontano
-non ha malus. Ancore per il GM, non un righello: valgono le tre fasce e il buonsenso.
-**[Da definire con le altre armi — direttiva 2026-09-06]**: distinguere **armi bianche, armi da fuoco
-e pugni**; di base, **afferrati** in colluttazione è difficile usare la pistola o una spada.
+**Il tiro e la distanza** — la tabella *Distanza e colluttazione* (in *L'Attacco*) dice tutto:
+armi da fuoco **−1 a un passo · 0 vicino · +1 lontano**, più **+1** su chi si butta; **afferrati**,
+pistole e armi lunghe prendono **+2** e i fucili non si usano; pugni, coltello e manganello non
+risentono della stretta. Ancore per il GM, non un righello: valgono le tre fasce e il buonsenso.
 
 ---
 
@@ -482,21 +491,23 @@ sistema fa il resto.
 ## Le Specializzazioni di Combattimento
 
 Famiglia dell'elenco Senmon (vedi `GENKAI_Specializzazioni.md` — regole, costi 9/19/39, usi,
-paletti):
+paletti). **Ogni Senmon d'arma vale per un'arma sola, dichiarata quando la prendi** (deciso
+2026-09-06): *Pistola 1* non vale sul fucile né su altro; *Pistola 1* e *Coltello 1* sono due Senmon
+separate, comprate e cresciute a parte. La chiave è l'attributo d'attacco di quell'arma.
 
 | Senmon | Chiave | Copre | Paletti G3 |
 |---|---|---|---|
 | **Lotta** | Presenza | pugni, prese, tecniche d'arresto — **grado 1 di base per tutti gli investigatori** (accademia) | Presenza 8 |
-| **Lame e bastoni** | Pazienza o Silenzio | coltello, bastone, mazza, spada — *una* delle due, dichiarata | attributo chiave 8 |
-| **Pistola** | Lucidità | tiro rapido, estrazione, sparare in movimento | Lucidità 8 |
-| **Fucile** | Distacco | pompa, caccia, mitragliatori, raffiche e soppressione | Distacco 8 |
+| **Un'arma, dichiarata** — Coltello, Manganello, Spada, Mazza, Machete, Catena, Pistola, Fucile, Mitragliatrice, Armi da lancio… | l'attributo d'attacco dell'arma | quella sola arma: colpire, estrarla in fretta, usarla in movimento | attributo chiave 8 |
 | **Tiro di precisione** | Pazienza | fucili di precisione — **il grado 1 è il requisito per usarli** | Pazienza 9 + Fucile 2+ |
 | **Esplosivi** | Pazienza | usare, riconoscere e **disinnescare** ordigni | Pazienza 8 + Meccanica 2+ |
 
-Il grado si **sottrae dalla somma** dei tiri pertinenti (−1/−2/−3, o −2 con Correzione per il
-Maestro), dentro il tetto −4. La Senmon *Armi da fuoco* già in elenco resta un'altra cosa: è
-**conoscenza** (riconoscere armi, fatture, mercato) — saper *sparare* si impara qui.
-*(Idea dell'autore, da definire: Senmon che sbloccano profili di difesa alternativi — vedi Da validare.)*
+Il grado si **sottrae dalla somma dei tiri attivi** con quell'arma — attaccare, e le altre cose che
+si fanno con l'arma in mano (−1/−2/−3, o −2 con Correzione per il Maestro), dentro il tetto −4.
+**Mai in difesa**: l'Ukemi resta sull'attributo legato all'arma di chi attacca, e non si sceglie
+(deciso 2026-09-06). *Pistola* copre revolver, automatica e compatta: sono tutte pistole. La Senmon
+*Armi da fuoco* già in elenco resta un'altra cosa: è **conoscenza** (riconoscere armi, fatture,
+mercato) — saper *sparare* si impara qui.
 
 ---
 
@@ -550,8 +561,7 @@ UKEMI 受け身: attaccato PRIMA di agire? la tua azione diventa difesa:
 TAME 溜め (trattenere il fiato): fino a +3 iniziativa = −1:1 al tiro d'attacco
 MINACCIARE (velocità 0, solo voce): 2d6 ≤ Presenza → l'avversario è SCOSSO:
          al prossimo tiro d'iniziativa ritira il dado basso e tiene il più alto;
-         il GM può fargli abbassare l'arma | non due scambi di fila
-         fallita: per questo scontro non si minaccia più
+         il GM può fargli abbassare l'arma | UNA VOLTA SOLA per scontro, riuscita o no
          chi minaccia può comunque difendersi (la voce non ti scopre)
 ATTACCO: 2d6 ≤ attributo arma (PARI = COLPITO) | scarto = attributo − tiro
          DANNO = scarto + danno arma
@@ -562,6 +572,8 @@ DIFESA (solo in Ukemi): 2d6 ≤ attributo di difesa DELL'ARMA che attacca
 DANNO SUBITO = danno attacco − scarto difesa − assorbimento − copertura
 ASSORBE (fisso, sempre): giubbotto 3 (4) | tavolo 1 (2) | muro 5 (1)
       vale da quando ci sei dietro: l'iniziativa decide se arrivi in tempo
+SENMON D'ARMA: un'arma sola, dichiarata (Pistola 1 non vale sul fucile); il grado
+      toglie dal tiro d'attacco e dalle azioni attive con l'arma, MAI dalla difesa
 CRITICI: 1+1 = +1d6 (danni in attacco / parato in difesa)
          6+6 in attacco/azione = mancato + 1d6 sulla tabella imprevisti
          6+6 in difesa = solo una difesa fallita
@@ -576,7 +588,7 @@ ARMI (attacco/difesa · E/C/R · danno):
       Automatica° Lucidità/Distacco 3/2/4 d4 | Compatta° Lucidità/Distacco 2/1/4 d3
       Fucile Distacco/Distacco 4/2/5 d4 | Mitr.leggero Distacco/Distacco 4/2/5 d4 raffica
       Mitr.pesante Distacco/Distacco 5/3/6 d5 raffica | Precisione Pazienza/Distacco 5/3/5 d5
-      Granata Presenza/Lucidità[dv] 2/2/— d4 area
+      Granata Presenza/Distacco 2/2/— d4 area (ognuno nell'area: Ukemi)
 COLPI MULTIPLI: un tiro solo per la sequenza; ogni colpo dopo il primo
       aggiunge di nuovo la velocità dell'arma (revolver: +2 a colpo)
       malus +2 (due colpi) / +3 (tre), cala di 1 a ogni colpo dopo il primo
@@ -587,7 +599,7 @@ SOTTO TIRO (azione pronta): arma già sul bersaglio = velocità 0 (NON è la mir
 PREPARARSI: rinuncia all'azione = −1 al prossimo tiro (non cumula)
 FUORI TEMPO: iniziativa oltre 15 = in questo scambio non agisci; nel prossimo completi
       l'azione con iniziativa = il dado migliore dei 2d6 e basta | mai apposta
-OPPORTUNITÀ: iniziativa migliore di 5+ [dv] = un'azione descrittiva extra
+OPPORTUNITÀ: iniziativa migliore di 5+ = un'azione descrittiva extra
       oppure un movimento (mai due attacchi)
 STRINGERE I DENTI: danno netto 1-2 → paghi 1 punto dell'attributo in uso
       e agisci comunque; a 4 non si può; la notte ripara; mira/Sotto Tiro persi
@@ -598,8 +610,9 @@ GRANATA: Presenza su tutti nell'area; Ukemi su Lucidità [dv]; d4 + scarto
 FUMOGENO: 2 scambi, +3 ai tiri a distanza attraverso il fumo
 SORPRESA: tiro (GM) fallito = niente difesa né Ukemi — solo Assorbe
 ZONE: contatto | vicino | lontano — muoversi di una fascia = un'azione
-DISTANZA (fuoco): −1 ravvicinato | 0 | +1 lontano (non il fucile di precisione)
-      bersaglio che si butta +1
+DISTANZA E COLLUTTAZIONE: fuoco −1 a un passo | 0 vicino | +1 lontano (precisione 0)
+      bersaglio che si butta +1 | AFFERRATI: pistole e armi lunghe +2 (niente mira),
+      fucili non si usano (o +3 GM); pugni, coltello, manganello, improvvisate: normale
 PNG: Ki come i PG (attributo più basso + il dado alto di 2d6, tetto 12)
      a 0 fuori combattimento (esito: GM) | PG a 0 = morto
 OPZIONALE (GM): il Ki non va sotto 0; a 0 un tiro su Distacco o Pazienza (a scelta)
@@ -608,25 +621,18 @@ OPZIONALE (GM): il Ki non va sotto 0; a 0 un tiro su Distacco o Pazienza (a scel
 
 ---
 
-## Da validare *(dopo le direttive del 2026-09-06 — vedi `DECISIONI.md`)*
+## Da validare *(stato al 2026-09-06, notte — vedi `DECISIONI.md`)*
 
-Deciso il 2026-09-06 e nel testo: parità → Presenza (poi simultanei) · Minacciare (velocità 0,
-scosso = ritira il dado basso, non a ripetizione, fallita = basta, chi minaccia si difende) · piccolo
-movimento + attacco a giudizio del GM · Sotto Tiro non è la mira · Opportunità = azione descrittiva o
-movimento · soppressione 3d6 · Fuori Tempo tetto 15 con un dado · Ki dei PNG come i PG · regola
-opzionale Ki 0 con Distacco o Pazienza · armi su tutti gli attributi. Restano:
+Tutti i punti aperti della v3 sono stati decisi dall'autore il 2026-09-06 e sono nel testo: parità →
+Presenza (poi simultanei) · Minacciare (velocità 0, scosso = ritira il dado basso, una volta sola per
+scontro riuscita o no, chi minaccia si difende) · piccolo movimento + attacco a giudizio del GM ·
+Sotto Tiro non è la mira · Opportunità (soglia 5) = azione descrittiva o movimento · soppressione 3d6
+· Fuori Tempo tetto 15 con un dado, senza l'eccezione v2 · granata: Ukemi su Distacco · distanza e
+colluttazione per famiglie d'arma · Senmon d'arma: un'arma sola, dichiarata, mai in difesa · Ki dei
+PNG come i PG · regola opzionale Ki 0 con Distacco o Pazienza.
 
-1. **Minacciare**: «non a ripetizione» letto come «non due scambi di fila» — se intendevi «una sola
-   volta per scontro», dillo e cambio una riga
-2. **Fuori Tempo**: la v2 diceva «un'azione singola si completa sempre»; con la nuova direttiva (chi
-   perde troppo tempo passa al giro dopo, per qualunque motivo) quell'eccezione è caduta — anche
-   un'arma lenta da sfoderare con dadi alti sfora. Va bene così?
-3. **Opportunità**: la soglia (5 o più)
-4. **Granata**: da rivedere insieme (Ukemi su Lucidità o Distacco)
-5. **Distanza**: distinguere armi bianche / da fuoco / pugni; afferrati, pistola e spada difficili
-6. **Senmon con profili di difesa alternativi** · **stallo** tra due che non attaccano (da rivedere
-   insieme)
-7. **Armi °**: valori da validare al tavolo, come hai detto
+Resta solo la **prova al tavolo dei valori delle armi °** (machete, katana/spada, mazza, automatica,
+compatta, catena, armi da lancio): «per ora va bene, decido quando le gioco».
 
 ---
 

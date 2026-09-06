@@ -65,7 +65,7 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
 <h2>Le tue azioni</h2>
 <p><b>ATTACCA</b> — usi l'arma. Chi ha già attaccato <b>non ha più il tiro di difesa</b> in quello scambio: se ti colpiscono dopo, ti riparano solo assorbimento e copertura. <i>Prima agisci, prima ti scopri.</i></p>
 <p><b>MUOVITI</b> — riposizionati, raggiungi una copertura, cambia zona, esci dalla stanza. Un piccolo movimento + attacco non costa nulla: decide il GM quando è troppo (correre dall'altra parte e sparare sì; il tavolo già ribaltato no).</p>
-<p><b>MINACCIA</b> — «Metti giù il coltello!»: è solo voce, <b>velocità 0</b>. Tira <b>2d6 ≤ Presenza</b>: se riesce l'avversario è <b>scosso</b> — al prossimo tiro d'iniziativa <b>ritira il dado più basso e tiene il più alto</b>; il GM può fargli abbassare l'arma. Non due scambi di fila; <b>se fallisce, per questo scontro le parole sono finite</b>. <b>Chi minaccia può comunque difendersi</b>: la voce non ti scopre.</p>
+<p><b>MINACCIA</b> — «Metti giù il coltello!»: è solo voce, <b>velocità 0</b>. Tira <b>2d6 ≤ Presenza</b>: se riesce l'avversario è <b>scosso</b> — al prossimo tiro d'iniziativa <b>ritira il dado più basso e tiene il più alto</b>; il GM può fargli abbassare l'arma. <b>Una volta sola per scontro</b>, riuscita o no. <b>Chi minaccia può comunque difendersi</b>: la voce non ti scopre.</p>
 </section>
 
 <section>
@@ -82,7 +82,7 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
 <h2>Attacco e danno</h2>
 <div class="formula">2d6 (− Tame − Senmon ± scena) <b>≤ attributo dell'arma</b> → colpito (<b>pari = colpito</b>)<br>
 <b>Scarto</b> = attributo − tiro &nbsp;·&nbsp; <b>DANNO = scarto + danno arma</b></div>
-<p class="mini"><b>Distanza</b> (armi da fuoco): −1 ravvicinato · 0 normale · +1 lontano · +1 su chi si sta buttando. Nella colluttazione sparare è caotico: +1/+2 (GM).</p>
+<p class="mini"><b>Distanza</b> (armi da fuoco): −1 a un passo · 0 vicino · +1 lontano (precisione 0) · +1 su chi si sta buttando. <b>Afferrati</b>: pistole e armi lunghe (spada, machete, mazza) +2 e niente mira; fucili non si usano (o +3, GM); pugni, coltello, manganello e improvvisate: normale.</p>
 </section>
 
 <section>
@@ -113,13 +113,13 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
 
 <section>
 <h2>Le armi</h2>
-<p class="mini">Attacco: <b>Presenza</b> = impeto · <b>Pazienza</b> = il momento · <b>Silenzio</b> = calma · <b>Lucidità</b> = la linea · <b>Distacco</b> = freddezza · <b>Ascolto</b> = tempo e distanza. Difesa: <b>fuoco e lanci → Distacco</b> · <b>corto e mani → Pazienza</b> · <b>lungo e catena → Ascolto</b>. E/C/R = Estrarre / Colpire / Ricarica. ° = valori da validare.</p>
+<p class="mini">Attacco: <b>Presenza</b> = impeto · <b>Pazienza</b> = il momento · <b>Silenzio</b> = calma · <b>Lucidità</b> = la linea · <b>Distacco</b> = freddezza · <b>Ascolto</b> = tempo e distanza. Difesa: <b>fuoco, lanci e granata → Distacco</b> · <b>corto e mani → Pazienza</b> · <b>lungo e catena → Ascolto</b>. Le Senmon d'arma valgono per <b>una sola arma, dichiarata</b>: contano in attacco, <b>mai in difesa</b>. E/C/R = Estrarre / Colpire / Ricarica. ° = valori da provare al tavolo.</p>
 <table>
 <tr><th>Arma</th><th>Attacco</th><th>Difesa</th><th>E/C/R</th><th>Danno</th></tr>
 <tr><td><b>Lotta</b> (mani nude)</td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1</b></td></tr>
 <tr><td><b>Improvvisata</b></td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1–2</b></td></tr>
 <tr><td><b>Machete / accetta</b> °</td><td>Presenza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
-<tr><td><b>Granata</b> (area)</td><td>Presenza</td><td>Lucidità °</td><td>2/2/—</td><td><b>4</b>+scarto</td></tr>
+<tr><td><b>Granata</b> (area)</td><td>Presenza</td><td>Distacco</td><td>2/2/—</td><td><b>4</b>+scarto</td></tr>
 <tr><td><b>Coltello / pugnale</b></td><td>Pazienza</td><td>Pazienza</td><td>2/1/—</td><td><b>2</b></td></tr>
 <tr><td><b>Katana / spada</b> °</td><td>Pazienza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
 <tr><td><b>Fucile di precisione</b>*</td><td>Pazienza</td><td>Distacco</td><td>5/3/5</td><td><b>5</b></td></tr>
@@ -153,7 +153,7 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
   <li><b>MIRARE</b> (azione): non spari, prendi la linea. Dallo scambio dopo <b>−1</b> (max −2). Fermi: se ti muovi, vai in Ukemi o prendi danno, persa. Poi spari a velocità 0</li>
   <li><b>SOTTO TIRO</b>: arma già puntata = velocità 0. Non è la mira: nessun bonus al tiro, conta solo la distanza. Decade se prendi danno o perdi la linea</li>
   <li><b>PREPARARSI</b>: rinunci all'azione → −1 al prossimo tiro (non cumula)</li>
-  <li><b>OPPORTUNITÀ</b>: iniziativa migliore di 5+ (da validare) → un'azione descrittiva extra o un movimento, mai un secondo attacco</li>
+  <li><b>OPPORTUNITÀ</b>: iniziativa migliore di 5+ → un'azione descrittiva extra o un movimento, mai un secondo attacco</li>
   <li><b>FUORI TEMPO</b>: iniziativa oltre 15 → in questo scambio non agisci; nel prossimo completi l'azione con iniziativa = il dado migliore dei tuoi 2d6, e basta. Mai apposta</li>
   <li><b>SOPPRESSIONE</b>: chi è sotto il fuoco tira 3d6 per l'iniziativa e somma i due più alti</li>
   <li><b>STRINGERE I DENTI</b>: danno 1-2 → paghi 1 punto dell'attributo in uso e agisci comunque (a 4 non si può; danno 3+ ferma chiunque; la notte ripara)</li>
@@ -166,7 +166,7 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
 <h2>Esempi veri (dal playtest)</h2>
 <div class="esempio"><b>Attacco.</b> Silenzio 5, dadi 2+3 = 5 → colpito (pari vale): scarto 0 + manganello 2 = <b>2 danni in arrivo</b>. Lui aveva già attaccato: niente difesa, li prende pieni.</div>
 <div class="esempio"><b>Ukemi.</b> Hai dichiarato l'attacco ma lui esce prima: «Vado in Ukemi» — <i>prima</i> che tiri. Difesa su Pazienza 5 contro il coltello, magari bruciando 1 Ki (−2). Il tuo colpo sfuma: sei vivo.</div>
-<div class="esempio"><b>Minaccia.</b> «Metti giù il coltello!» — velocità 0, agisci quasi sempre per primo. 2+1 = 3 ≤ Presenza 4: è scosso — al prossimo tiro d'iniziativa ritira il dado più basso e tiene il più alto. E se ti attacca, ti difendi lo stesso: la voce non ti ha scoperto. Non due volte di fila; se fallisci, per questo scontro le parole sono finite.</div>
+<div class="esempio"><b>Minaccia.</b> «Metti giù il coltello!» — velocità 0, agisci quasi sempre per primo. 2+1 = 3 ≤ Presenza 4: è scosso — al prossimo tiro d'iniziativa ritira il dado più basso e tiene il più alto. E se ti attacca, ti difendi lo stesso: la voce non ti ha scoperto. Una volta sola per scontro, riuscita o no.</div>
 <div class="esempio"><b>Tame.</b> «Trattengo il fiato, in Tame +2»: iniziativa +2 (agisci tardi) ma attacco a −2: con Silenzio 5 colpisci fino al 7. Se ti colpiscono prima, il colpo muore lì.</div>
 </section>
 

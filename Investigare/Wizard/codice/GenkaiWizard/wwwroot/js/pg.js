@@ -219,7 +219,8 @@
     function initSenmon() {
         const sel = document.getElementById("pg-senmon-sel");
         const perFam = {};
-        BIB.senmon.filter(x => x.id !== "lotta").forEach(x => (perFam[x.famiglia] = perFam[x.famiglia] || []).push(x));
+        // le voci "nascoste" (regole superate, es. Lame e bastoni) restano leggibili sulle schede vecchie ma non si propongono più
+        BIB.senmon.filter(x => x.id !== "lotta" && !x.nascosta).forEach(x => (perFam[x.famiglia] = perFam[x.famiglia] || []).push(x));
         sel.innerHTML = `<option value="">— scegli —</option>` +
             `<option value="__lotta2">🥋 Lotta → grado 2 (rinforza l'accademia invece di una nuova specializzazione — serve Presenza 6)</option>` +
             Object.entries(perFam).map(([f, voci]) =>
@@ -944,7 +945,7 @@ Il Gou è stato tolto: rialza ${r.attributo} e riscegli, oppure prendine un altr
 
         // senmon possedute (per migliorie) e non possedute (per l'acquisto nuova)
         const mie = listaSenmon();
-        const nonMie = BIB.senmon.filter(v => !mie.some(m => m.id === v.id));
+        const nonMie = BIB.senmon.filter(v => !v.nascosta && !mie.some(m => m.id === v.id));
         const migliorabili = mie.filter(m => m.grado < 3);
 
         box.innerHTML = `

@@ -6,7 +6,7 @@
 <title>GENKAI 限界 — Provalo: un mini-caso da giocare</title>
 <meta name="description" content="Un mini-caso di GENKAI da giocare nel browser: nove scene in un appartamento di Fushimi, un tiro per scena, il taccuino che si riempie — fino all'arresto.">
 <link rel="icon" href="../img/favicon.png">
-<link rel="stylesheet" href="scontro.css?v=20260906d">
+<link rel="stylesheet" href="scontro.css?v=20260906f">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -141,8 +141,8 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   </footer>
 </div></main>
 
-<script src="scontro.js?v=20260906d"></script>
-<script src="commenti.js?v=20260906d"></script>
+<script src="scontro.js?v=20260906f"></script>
+<script src="commenti.js?v=20260906f"></script>
 <script>
 (function(){
 "use strict";
@@ -459,7 +459,7 @@ function renderCopertina(){
         <span>Sei tu: <b>investigatore della Omicidi</b>, Kyoto 1997</span>
         <span>Distacco <b>6</b></span><span>Lucidità <b>7</b></span><span>Ascolto <b>6</b></span>
         <span>Pazienza <b>5</b></span><span>Silenzio <b>5</b></span><span>Presenza <b>4</b></span>
-        <span>気 Ki <b>9</b></span><span>Gou: <b>Teatro delle Ombre 影芝居</b></span><span>Lame e bastoni <b>1</b> · Lotta <b>1</b></span><span>manganello in tasca</span>
+        <span>気 Ki <b>9</b></span><span>Gou: <b>Teatro delle Ombre 影芝居</b></span><span>Manganello <b>1</b> · Lotta <b>1</b></span><span>manganello in tasca</span>
       </div>
       <p style="font-family:var(--sans);font-size:.85rem;color:var(--tenue)">Una scheda così puoi fartela identica, in dieci minuti, col <a href="/Pg">wizard degli investigatori</a>.</p>
       <div class="bottoni" style="margin-top:1.2rem">
@@ -612,7 +612,7 @@ function mostraEsito(sc, dati, attr, fascia, modo){
 
 /* scena 8: lo scontro col coltello — motore condiviso (scontro.js), col Ki che il caso ti ha lasciato */
 function renderScontro(sc){
-  const pg = { attr:S.attr, ki:S.ki, kiMax:S.kiMax, senmon:{ "Lame e bastoni":1, "Lotta":1 } };
+  const pg = { attr:S.attr, ki:S.ki, kiMax:S.kiMax, senmon:{ "Manganello":1, "Lotta":1 } };
   cont.innerHTML = `
   <article class="scena">
     <img src="${sc.img}" alt="${sc.alt}">
