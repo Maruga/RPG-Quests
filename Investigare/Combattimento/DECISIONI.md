@@ -215,9 +215,9 @@ congelate in `versioni/`.
 - **Nessun punto di regola aperto** (2026-09-06 notte). Resta solo la prova al tavolo dei valori delle
   armi ° («decido quando le gioco»). Wizard PG: `senmon.json` già allineato e online (una Senmon per arma;
   «Lame e bastoni» nascosta, resta solo per le schede vecchie). Wizard casi: le statistiche PNG tirano già il
-  Ki con la formula dei PG; testi «Riserva 3/6/9» ripuliti il 2026-09-07. ⚠ Il foglio scontro da tavolo di
-  Bakuon (`Avventura Tanto Rumore/genera_foglio_scontro.py` → DOCX) è ancora v2: da rifare o sostituire con la
-  Scheda Giocatori v3.1 prima di giocare.
+  Ki con la formula dei PG; testi «Riserva 3/6/9» ripuliti il 2026-09-07. Il foglio scontro da tavolo di Bakuon (v2)
+  è stato **buttato** (utente, 2026-09-07: in `Avventura Tanto Rumore/storico/`): al tavolo si usa la Scheda
+  Giocatori v3.1. Le schede PG hanno solo l'equipaggiamento coi numeri delle armi, non la procedura.
 - Chiusi altrove, tolti da qui: Critici e Soroban in combattimento (il manuale dice «non muove il
   soroban», registro 2026-09-05); «piccolo movimento + attacco» senza malus, decide il GM (direttiva
   2026-09-06).

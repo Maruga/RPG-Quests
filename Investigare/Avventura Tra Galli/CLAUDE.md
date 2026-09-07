@@ -52,4 +52,8 @@ Tono finale: vittoria amara — Saitō non cade per gli omicidi.
    documenti pre-elaborati, ≥1 nota utile + ≥1 neutra, mai il colpevole; tabulati nel formato canonico)
    + **immagini/foto** (luoghi e reperti con Nano Banana, prompt-volti per ChatGPT, kanji/timbri con PIL,
    coerenza ambiente: metallo grigio, luce fluorescente, keisatsu techō) + eventuali token da tavolo
-   e statistiche GENKAI dei PNG chiave (comparse 5-6, Riserva 3/6/9, notevoli a metodo diretto)
+   e statistiche GENKAI dei PNG chiave (comparse 5-6; **Ki come i PG**: attributo più basso + dado alto
+   di 2d6, tetto 12 — la «Riserva 3/6/9» è abolita dal 2026-09-05; notevoli a metodo diretto).
+   **Combattimento = `../Combattimento/GENKAI_Combattimento.md` v3.1** (sistema ad azioni: iniziativa
+   2d6 + mod. Presenza + velocità, Ukemi, Tame, Minacciare; revolver New Nambu 4/2/5 d4, keibō 2/2 d2,
+   automatica 9mm 3/2/4 d4) + `../Combattimento/Scheda_Giocatori_Combattimento.html` per il tavolo

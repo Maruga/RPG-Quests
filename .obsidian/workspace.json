@@ -11,12 +11,14 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Tra Galli/Immagini/3ProiettiliPorta.png"
+                "file": "Investigare/Avventura Tra Galli/PNG/PNG_Tachibana_Eiji_Vittima.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "3ProiettiliPorta"
+              "icon": "lucide-file",
+              "title": "PNG_Tachibana_Eiji_Vittima"
             }
           }
         ]
@@ -225,13 +227,19 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "067b1f7c3b406617",
   "lastOpenFiles": [
-    "Investigare/Avventura Tra Galli/Storia Completa.md.tmp.17900.db415a7816cb",
+    "Investigare/Avventura Tra Galli/CONTROLLO_2026-09-07.md",
+    "Investigare/Avventura Tra Galli/CONTROLLO_2026-09-07.md.tmp.17900.58247a4648b7",
+    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.018e1b499106",
+    "Investigare/Avventura Tanto Rumore/storico/genera_foglio_scontro.py",
+    "Investigare/Avventura Tanto Rumore/storico/SCONTRO_FOGLIO_TAVOLO.docx",
+    "Investigare/Avventura Tra Galli/Immagini/3ProiettiliPorta.png",
+    "Investigare/Avventura Tra Galli/Storia Completa.md.tmp.17900.a76a65f69029",
     "Investigare/Avventura Tra Galli/Storia Completa.md",
+    "Investigare/Avventura Tra Galli/Storia Completa.md.tmp.17900.db415a7816cb",
     "Investigare/Avventura Tra Galli/PIANO_HANDOUT_IMMAGINI.md",
     "Investigare/Avventura Tra Galli/CLAUDE.md",
-    "Investigare/Avventura Tra Galli/Immagini/3ProiettiliPorta.png",
     "Investigare/Avventura Tra Galli/Immagini/VittimaBagno.png",
     "Investigare/Avventura Tra Galli/Immagini/TelecameraAssassinio.png",
     "Investigare/Avventura Tra Galli/Immagini/InventarioVittima.png",
@@ -243,12 +251,6 @@
     "Investigare/pg/SCHEDE_PG_TUTTE.docx.bak-20260907-claude",
     "Investigare/REGISTRO_MODIFICHE.md.tmp.1520.3475babc823e",
     "Investigare/Wizard/codice/GenkaiWizard/Pages/Pg/Stampa.cshtml.tmp.1520.ab6281a33b4a",
-    "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.1520.caf6a4d898eb",
-    "Investigare/Wizard/codice/GenkaiWizard/wwwroot/js/pg.js.tmp.1520.acac49be7524",
-    "Investigare/REGISTRO_MODIFICHE.md.tmp.1520.7b128f3c7816",
-    "Investigare/sito_genkai/provalo/sedFBHKKS",
-    "Investigare/sito_genkai/provalo/index.html.tmp.1520.96499de7c2e6",
-    "Investigare/Combattimento/Scena_Combattimento_Interattiva.html.tmp.1520.a34188184b28",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.1-bozza1.md",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.0.md",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.0-bozza3.md",

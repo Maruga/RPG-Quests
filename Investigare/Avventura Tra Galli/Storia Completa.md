@@ -10,7 +10,7 @@
 
 Kyoto, 11 febbraio 1998, sera di festa nazionale. La stazione nuova brilla ancora di vetro e acciaio. Alle 21:21, nel bagno del terzo piano, tre colpi. Nessuno ha visto niente.
 
-L'uomo nel cubicolo centrale era un ristoratore rispettabile. Con le ultime forze ha lasciato un disegno sul pavimento — un messaggio che solo la persona sbagliata può capire.
+L'uomo nel cubicolo centrale gestiva un locale a Gion — rispettabile, conosciuto, pulito. Con le ultime forze ha lasciato un disegno sul pavimento: un messaggio che solo la persona sbagliata può capire.
 
 La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora finito.
 

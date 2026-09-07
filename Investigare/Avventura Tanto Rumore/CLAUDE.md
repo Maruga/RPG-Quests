@@ -57,7 +57,10 @@ Non correggere a mano i file esportati: la modifica va fatta nel wizard, o si pe
 - `Storia Completa.md` — il quadro GM: premessa, cronistoria, banda, informazioni, calendario, tabella En
 - `PNG/` — una scheda per persona (12) · `Location/` — una per luogo (5)
 - `DOSSIER_GM.docx` — il dossier stampabile (include la scheda distretto) · `genera_dossier.py`
-- `SCONTRO_FOGLIO_TAVOLO.docx` — combattimento in una pagina · `genera_foglio_scontro.py`
+- Combattimento al tavolo: si stampa `../Combattimento/Scheda_Giocatori_Combattimento.html` (regole v3.1,
+  derivata dal manuale). Il vecchio `SCONTRO_FOGLIO_TAVOLO.docx` (regole v2: dado basso, difesa che assorbe,
+  Riserva 3/6/9) e il suo `genera_foglio_scontro.py` sono in `storico/` dal 2026-09-07 per decisione
+  dell'utente («va buttato»): NON usarli, NON rigenerarli
 - `Token/` — 12 ritagli + `TOKEN_PERSONE.docx` da stampare · `genera_token.py`
 - `handout/` — snapshot HTML + `_Indice.md` · `Immagini/` — scene, reperti, `Ritratti/`
 - `LANCIO.md` — materiale di lancio WhatsApp (scritto col vecchio titolo, nota in testa)
