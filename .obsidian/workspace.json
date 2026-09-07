@@ -11,10 +11,12 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "type": "image",
+              "state": {
+                "file": "Investigare/Avventura Tra Galli/Immagini/3ProiettiliPorta.png"
+              },
+              "icon": "lucide-image",
+              "title": "3ProiettiliPorta"
             }
           }
         ]
@@ -225,6 +227,18 @@
   },
   "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/Avventura Tra Galli/Storia Completa.md.tmp.17900.db415a7816cb",
+    "Investigare/Avventura Tra Galli/Storia Completa.md",
+    "Investigare/Avventura Tra Galli/PIANO_HANDOUT_IMMAGINI.md",
+    "Investigare/Avventura Tra Galli/CLAUDE.md",
+    "Investigare/Avventura Tra Galli/Immagini/3ProiettiliPorta.png",
+    "Investigare/Avventura Tra Galli/Immagini/VittimaBagno.png",
+    "Investigare/Avventura Tra Galli/Immagini/TelecameraAssassinio.png",
+    "Investigare/Avventura Tra Galli/Immagini/InventarioVittima.png",
+    "Investigare/Avventura Tra Galli/Immagini/Copertina.png",
+    "Investigare/Avventura Tra Galli/Immagini/AssassinoArrivaStazione.png",
+    "Investigare/Avventura Richiamo/BASI_MILITARI.md",
+    "Investigare/Avventura Tanto Rumore/PNG/Shimada Yumiko.md",
     "Investigare/REGISTRO_MODIFICHE.md.tmp.1520.9d51f7c2226e",
     "Investigare/pg/SCHEDE_PG_TUTTE.docx.bak-20260907-claude",
     "Investigare/REGISTRO_MODIFICHE.md.tmp.1520.3475babc823e",
@@ -235,7 +249,6 @@
     "Investigare/sito_genkai/provalo/sedFBHKKS",
     "Investigare/sito_genkai/provalo/index.html.tmp.1520.96499de7c2e6",
     "Investigare/Combattimento/Scena_Combattimento_Interattiva.html.tmp.1520.a34188184b28",
-    "Investigare/Combattimento/DECISIONI.md.tmp.1520.326990d8bf42",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.1-bozza1.md",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.0.md",
     "Investigare/Combattimento/versioni/GENKAI_Combattimento_v3.0-bozza3.md",
@@ -256,20 +269,9 @@
     "Investigare/Avventura Tanto Rumore/PNG/Watanabe Noriko — La ragazza contesa.md",
     "Investigare/Avventura Tanto Rumore/PNG/Aoki Hideki — Il migliore amico.md",
     "Investigare/Avventura Tanto Rumore/PNG/Shimada Yumiko — La sorella.md",
-    "Investigare/Avventura Tanto Rumore/PNG/Shimada Yasuhiro — La madre.md",
-    "Investigare/Avventura Tanto Rumore/PNG/Shimada Yuta — La vittima.md",
-    "Investigare/Avventura Tanto Rumore/DOSSIER_GM.md",
-    "Investigare/Avventura Tanto Rumore/BRIEFING_APERTURA.md",
     "Investigare/Avventura Tanto Rumore/Immagini/fascicolo-matsui.png",
     "Investigare/Wizard/codice/GenkaiWizard/wwwroot/allegati/c3c15ff7-afce-4299-a49c-53b367cd29ea/fascicolo-matsui.png",
     "Investigare/mugshot-matsui-20260901-183005-740.png",
-    "Investigare/Avventura Tanto Rumore/PNG/Shimada Yasuhiro.md",
-    "Investigare/Avventura Tanto Rumore/Immagini/Zona Ritrovo.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Zona Officina.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Pocket Bell Giovanile.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Pocket Bell.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Planimetria.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Honda CBX400F.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Capo Banda in moto.png"
+    "Investigare/Avventura Tanto Rumore/Immagini/Zona Ritrovo.png"
   ]
 }

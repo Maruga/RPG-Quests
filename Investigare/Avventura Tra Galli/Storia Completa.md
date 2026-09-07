@@ -2,6 +2,26 @@
 
 > Avventura GENKAI — Kyoto, febbraio 1998
 
+## Presentazione (teaser senza spoiler — per WhatsApp/giocatori)
+
+> Immagine di copertina: la foto dei tre proiettili.
+
+**OMICIDIO KYOTO STATION — 1998**
+
+Kyoto, 11 febbraio 1998, sera di festa nazionale. La stazione nuova brilla ancora di vetro e acciaio. Alle 21:21, nel bagno del terzo piano, tre colpi. Nessuno ha visto niente.
+
+L'uomo nel cubicolo centrale era un ristoratore rispettabile. Con le ultime forze ha lasciato un disegno sul pavimento — un messaggio che solo la persona sbagliata può capire.
+
+La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora finito.
+
+⚙️ *Sistema*: GENKAI 限界
+👥 *Giocatori*: 3–5 + GM (squadra investigativa pregenerata)
+🎲 *Tipo*: indagine poliziesca noir, procedurale — niente soprannaturale
+⏱️ *Durata*: ~5–7 ore (2–3 serate)
+🏷️ #GDR #investigativo #noir #Kyoto #1998 #GENKAI
+
+---
+
 1. **Banda Nitōgun** (二刀軍, "esercito delle due lame") — gruppo criminale di Kameoka attivo dagli anni '80, da scissione yakuza minore. Capo: **Saitō Gorō** (51, ex yakuza con yubitsume, oggi imprenditore tessile, vive in villa a Kameoka periferia est). Braccio destro/logistica: **Hayashi Tomoki** (35). Esecutore: **Kuroda Ryō** (28, sicario, copertura come istruttore di pugilato a Fushimi).
 
 2. **Attività della banda**: combattimenti clandestini di galli una volta al mese in un capannone agricolo dismesso (frazione Sogabe-chō, Kameoka), giro scommesse illegali ¥80–120 mln/anno.
