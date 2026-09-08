@@ -38,7 +38,7 @@ Edificio anni '80, 3 piani, struttura in cemento armato. Reception al piano terr
 
 ## Indagine sulla corruzione
 - Ricostruzione movimenti bancari di Inagaki (richiede mandato)
-- Sorveglianza della sua casa e auto: Inagaki incontra Hayashi una volta ogni 2-3 settimane in luoghi neutrali (parcheggio supermercato di Kameoka, il primo lunedì del mese)
+- Sorveglianza della sua casa e auto: Inagaki incontra Hayashi **il primo lunedì di ogni mese** nel parcheggio di un supermercato di Kameoka; nei giorni dell'indagine si sentono per telefono (i tabulati lo mostrano) e si vedono una volta d'urgenza, il 15/02, per riferire dei PG
 - **Tabulati** del telefono privato di Inagaki (con ordine del procuratore): rivelano il traffico ricorrente di chiamate col numero di Hayashi; la sorveglianza degli incontri al parcheggio fa il resto
 
 ## Note operative GM

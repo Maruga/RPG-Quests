@@ -9,7 +9,7 @@
 
 |Campo|Valore|
 |---|---|
-|Nome|Tachibana Eiji (橘 永司)|
+|Nome|Tachibana Eiji (橘 英司)|
 |Età|47 anni|
 |Nato|Maizuru (Kyoto-fu), 1950|
 |Residenza|Fushimi-ku, Kyoto|
@@ -44,14 +44,15 @@
     - ¥180.000 in contanti (banconote da ¥10.000)
     - Patente di guida
     - Carta di credito JCB (conto Sanwa Bank)
-    - Carta socio Club Aoyagi
+    - Carta socio Club Aoyagi (n. 0087)
+    - Biglietto da visita con foto di una hostess del Club Aoyagi, nome d'arte «Mari»
     - Polaroid piegata: donna giovane di spalle in kimono davanti a un torii
 - Pacchetto **Mild Seven** semivuoto
-- Accendino **S.T. Dupont** in argento, inciso "永" (Ei)
+- Accendino **S.T. Dupont** in argento, inciso "英" (Ei)
 
 ### In tasca giacca esterna
 
-- Cellulare **NTT DoCoMo mova** (modello flip)
+- Cellulare **NTT DoCoMo mova** (modello a stecca con antenna)
     - Nessuna rubrica
     - Registro 10 ultime chiamate (elenco completo in «Storia Completa», punto 22)
 - Copia del **Kyoto Shimbun** del 9 febbraio 1998, piegata in quattro
@@ -64,16 +65,17 @@
 - Taccuino Moleskine nero formato tascabile (contenuto e codice in «Storia Completa», punti 21 e 32)
 - Penna stilografica **Pilot Custom 74**
 - Fazzoletto di lino bianco con monogramma "T.E."
-- Flacone senza etichetta, 8 pillole bianche (ansiolitici, **Lexotan**)
+- Blister di **Lexotan** 1 mg, 8 compresse (ansiolitico)
+- Conto del ristorante-bar dello **Shin-Miyako Hotel** (uscita Hachijō): 11/02/1998 ore 19:45, ¥3.150
 
 ### Tasca interna pantaloni (cuciti su misura)
 
-- Biglietto autobus **Kyoto Bus Linea Kameoka**, andata-ritorno, timbrato 11/02/1998 ore 14:30 (andata) e 18:45 (ritorno)
+- Due biglietti di sola andata **Kyoto Kōtsū** (¥900 l'uno): Kyoto Station (capolinea lato Shichijō) → Kameoka delle 14:30, e Kameoka → Kyoto delle 18:30 — entrambi dell'11/02/1998
 - Ricevuta **Royal Hotel Karasuma**, camera matrimoniale, notti 7-8 febbraio
 
 ### Nascosti
 
-- **Chiavetta piccola** infilata sotto la soletta della scarpa destra (apertura cassetta di sicurezza, banca da identificare)
+- **Chiavetta piccola** con targhetta n. 0419, infilata sotto la soletta della scarpa destra (cassetta di sicurezza, banca da identificare — il numero non c'entra col codice 0418 della cassaforte: è il numero della cassetta)
 
 ### Non addosso ma collegati
 
@@ -95,7 +97,7 @@
 - Allibratore principale per il Nitōgun da circa 6 anni
 - Gestisce circa ¥80–120 milioni l'anno di scommesse clandestine
 - Amante fissa: **Aoyagi Mariko**, hostess Club Aoyagi, relazione da 18 mesi
-- Frequenta il **Royal Hotel Karasuma** una/due volte alla settimana
+- Frequenta il **Royal Hotel Karasuma** 2-3 volte al mese
 - Soffre d'insonnia e attacchi d'ansia, in cura privata non dichiarata
 - Beve poco, non gioca d'azzardo personalmente
 - Diffidente per natura, ma a gennaio '98 si è sentito al sicuro dopo la truffa riuscita

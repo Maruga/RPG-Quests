@@ -10,7 +10,7 @@
 
 ## A. HANDOUT
 
-### Nucleo — i materiali del briefing (12/02 ore 08:00, consegnati da Murayama)
+### Nucleo — i materiali del briefing (12/02 ore 08:00, consegnati da Taniguchi — scena in `Inizio - Incarico.md`)
 
 1. **H-01 · Rapporto preliminare del Kōban — Kyoto Station** — Verbale di primo intervento dell'11/02 sera (segnalazione 22:01, pattuglia 22:08, squadra omicidi 22:35), stato della scena, area transennata. *(Storia §20, Luogo Scena §Dinamica)*
 2. **H-02 · Verbale reperti della Scientifica — effetti personali di Tachibana** — Elenco repertato: portafoglio con ¥180.000, cellulare mova, taccuino, Kyoto Shimbun del 9/02 piegato, biglietto autobus Kameoka A/R timbrato, ricevuta Royal Hotel 7-8/02, tessera Club Aoyagi, polaroid, Lexotan, chiavetta sotto la soletta. Nota Scientifica su piuma e gabbia nel bagagliaio della Crown. *(Scheda vittima §Effetti)*
@@ -49,7 +49,7 @@
 23. **H-23 · Conto del Club Aoyagi del 2/02** — La cena di Tachibana con l'uomo «sui 30, casual, sneaker». *(Luogo Club §Indizi)*
 24. **H-24 · Lettera di Tachibana a Setsuko (1992)** — *«A Kameoka ho conosciuto persone che mi possono aiutare»*: l'origine, per chi scava nel passato. *(Luogo Casa Setsuko §Indizi)*
 25. **H-25 · Ricevute pubblicitarie Sakura Kōkoku** — Gli annunci pagati dalla Kameoka Nōji KK: il ponte documentale giornale→società. *(Luogo Kameoka-tei §Indizi)*
-26. **H-26 · Verbale d'acquisizione VHS — telecamera corridoio 3F** — Scheda tecnica del nastro (accompagna IMG-11): orari 21:17 / 21:19 / 21:22, qualità insufficiente al riconoscimento.
+26. **H-26 · Verbale d'acquisizione VHS — telecamera corridoio 3F** — Scheda tecnica del nastro (accompagna IMG-11): orari 21:17 / 21:20 / 21:22, qualità insufficiente al riconoscimento.
 
 ---
 
@@ -59,6 +59,19 @@ Metodo (collaudato): **[NB]** = luoghi/reperti senza volti, li genero io con Nan
 preparo i prompt e li generi tu con foto-reference · **[PIL]** = testo/kanji/timbri che devono essere corretti,
 via script · **[HTML]** = elemento reso direttamente dentro l'handout. Stile foto di scena: pellicola anni '90,
 flash duro, colori desaturati, 4:3 (come i prompt de *Il Giudice*).
+
+### Stato delle immagini esistenti (2026-09-08)
+
+| File | Ruolo | Stato |
+|---|---|---|
+| `3ProiettiliPorta.png` | **handout** (IMG-02) e copertina WhatsApp | canonica: timestamp corretto in **'98 02 11 / 23:03** (originale in `_originali/`); il bagno è accanto agli uffici della direzione (管理室), la porta è grigia in lamiera: testi adeguati |
+| `InventarioVittima.png` | **handout** (IMG-07) | canonica: il testo si è adattato all'immagine — kanji **橘 英司**, cellulare a stecca, blister di Lexotan, due biglietti Kyoto Kōtsū di sola andata (capolinea lato Shichijō), conto dello Shin-Miyako Hotel (19:45, ¥3.150), chiavetta n. 0419, biglietto da visita di «Mari». Non mostra accendino, sigarette, penna, fazzoletto, patente, JCB, ricevuta Royal Hotel: il verbale H-02 li elenca tutti, la foto ne mostra 14. **La pagina del taccuino nella foto è la base canonica di H-09** |
+| `AssassinoArrivaStazione.png` | **handout** (IMG-11, fotogramma CAM-12 delle 21:20:47) | canonica: il testo si è adattato — corridoio sud, 21:20, berretto, giubbotto imbottito, borsa a tracolla, sneaker scure |
+| `VittimaBagno.png` | **solo GM** (mood) | non canonica: telecamera interna inesistente, porta aperta, disegno fuori dal cubicolo, cartello «niente telecamere». Non si consegna |
+| `TelecameraAssassinio.png` | **solo GM** (mood) | non canonica per gli stessi motivi (l'arma semiautomatica è giusta) |
+| `Copertina.png` | copertina generica | non raffigura una scena del caso |
+
+Da produrre ancora: IMG-03 (il gallo di sangue **dentro** il cubicolo, piccolo, col dito), IMG-04, IMG-05, e tutto il resto dell'elenco.
 
 ### Set forense Kyoto Station (allegato al briefing, con H-01/H-02)
 
@@ -71,16 +84,16 @@ flash duro, colori desaturati, 4:3 (come i prompt de *Il Giudice*).
 
 ### Reperti (still-life su fondo neutro, cartellino della Scientifica)
 
-- **IMG-07 · Gli effetti personali** — composizione: portafoglio, accendino 永, Mild Seven, biglietto autobus, ricevute, Lexotan, chiavetta. [NB]
+- **IMG-07 · Gli effetti personali** — ✅ esiste: `InventarioVittima.png` (14 oggetti; accendino 英, Mild Seven, penna, fazzoletto, patente, JCB e ricevuta Royal Hotel restano solo nel verbale H-02)
 - **IMG-08 · Il taccuino aperto** — le pagine in codice (coordinato con H-09; testo leggibile → [PIL] o [HTML]).
 - **IMG-09 · La polaroid** — donna in kimono di spalle davanti a un torii, piegata. Il prop più evocativo. [NB]
 - **IMG-10 · Il bagagliaio della Crown** — gabbia vuota, piume, tracce scure. [NB]
 
 ### Tecnico-documentali
 
-- **IMG-11 · Fotogramma VHS — corridoio 3F ore 21:19** — figura sgranata, timestamp, volto illeggibile: la versione **canonica** da giocatori (la telecamera dentro il bagno non esiste: `TelecameraAssassinio.png` resta materiale GM/copertina). [NB+PIL per timestamp]
+- **IMG-11 · Fotogramma CAM-12 — corridoio sud 3F ore 21:20:47** — ✅ esiste: `AssassinoArrivaStazione.png` (di spalle, berretto, borsa, volto illeggibile). La telecamera dentro il bagno non esiste: `TelecameraAssassinio.png` resta materiale GM
 - **IMG-12 · L'identikit** — disegno a matita stile polizia: rasato, atletico, bomber. Volutamente vago. [NB]
-- **IMG-13 · Fotogramma telecamera parcheggio Kamigyō** — parziale: bomber e sneaker chiare, mai il volto. [NB]
+- **IMG-13 · Fotogramma telecamera parcheggio Kamigyō** — parziale: giubbotto scuro imbottito e sneaker scure, mai il volto. [NB]
 - **IMG-14 · Il simbolo del Nitōgun «pulito»** — il gallo a due speroni su una moneta/accendino VIP (si mostra quando triangolano l'identificazione). [NB o PIL]
 
 ### Seconda scena — studio veterinario (con H-12/H-13)
@@ -112,14 +125,15 @@ Priorità 3 (i 6 scommettitori, servono soprattutto Tanaka Shōji e Fujiwara —
 ## C. Contenuti da scrivere ex novo (li stendo io, li rileggi tu prima che finiscano negli handout)
 
 1. **Il codice degli annunci**: i 7 nomi poetici dei piatti/galli del 22/02 (+ quelli dei 4 mesi d'archivio) e la corrispondenza sconti→quote — oggi la Storia definisce il meccanismo, non i nomi.
-2. **Il sistema del taccuino**: come Tachibana annotava (sigle clienti, galli, cifre), coerente su H-09/H-10/H-16.
+2. **Il sistema del taccuino**: come Tachibana annotava (sigle clienti, galli, cifre), coerente su H-09/H-10/H-16. **Base canonica = la pagina fotografata in `InventarioVittima.png`**: righe di gennaio con nomi d'azienda come codici (西陣工務店 80 · 森田建設 150 · 亀岡亭 120 · K.N農機 200 · 田中商事 100), «月間売上 ¥18.000.000» (la vincita complessiva) e «H.E 6.8M» (i ¥6,8 mln del debito di Murakami): la chiave di lettura va scritta in modo che quelle righe tornino (80 = ¥800k di Nishimura, 100 = ¥1 mln di Sasaki, 200 = ¥2 mln affidati a Ōkubo…).
 3. **Il dialogo della cassetta audio** (telefonata del 12/01 in codice).
 4. **I numeri di telefono** ricorrenti (formato 075-XXX / 090-XXX coerente su tutti i documenti).
 5. Testate/intestazioni dei verbali (Polizia Prefetturale di Kyoto, Kōban, ospedale) con kanji corretti [PIL].
 
-## D. Da decidere (quando arriviamo alla produzione, non ora)
+## D. Decisioni prese (2026-09-08) e cose ancora aperte
 
-- Corpo visibile nelle foto forensi (IMG-06, IMG-15) o scena senza corpo
-- Token da tavolo stile Sake: sì/no
-- `TelecameraAssassinio.png`: copertina/materiale GM (proposta) o scartarla
-- Statistiche GENKAI sui PNG chiave (Kuroda, sicurezza capannone, Hayashi, Saitō) e valori di En
+- ✅ Statistiche GENKAI v3.1 scritte per Kuroda, Hayashi, Saitō, Inagaki, Ōkubo, comparse del capannone (`PNG_Nitogun_Banda`), cani della villa — da provare al tavolo
+- ✅ `VittimaBagno.png` e `TelecameraAssassinio.png` = materiale GM; le versioni canoniche per i giocatori sono IMG-03/IMG-06 da produrre
+- ⏳ Corpo visibile nelle foto forensi (IMG-06, IMG-15) o scena senza corpo: si decide in produzione
+- ⏳ Token da tavolo stile Sake: sì/no
+- ⏳ Valori di En iniziali dei PNG verso i PG: di norma 0, Sasaki e Inoue +1, Saitō e Fujiwara −1 — da confermare

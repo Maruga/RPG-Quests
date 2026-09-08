@@ -102,6 +102,18 @@ A fine gennaio Saitō verifica la truffa del gallo sedato di gennaio. Decisione:
 - **Tachi Yūichirō**: collaboratore di giustizia, sconto pena
 - **Tono finale**: vittoria amara. Saitō uscirà vivo. Possibile gancio per future avventure.
 
+## Statistiche delle comparse (GENKAI — Shōtotsu v3.1, da provare al tavolo)
+
+Comparse senza scheda: attributi 5-6, **Ki come i PG** (attributo più basso + dado alto di 2d6): il GM lo tira o lo fissa nel campo 6-11.
+
+| Chi | Attributi | Ki | Armi | Note |
+|---|---|---|---|---|
+| **Sicurezza armata** (4-5 uomini al capannone) | 5 dappertutto, Presenza 6 | 8 | *compatta .22/.25* (Lucidità 5, 2/1/4, danno 3) — il capo sicurezza un'*automatica 9mm* (3/2/4, danno 4); mazza da baseball (Silenzio 5, 2/2, danno 3); Lotta 1 | Ukemi: fuoco → Distacco 5, mani → Pazienza 5, manganello → Ascolto 5. Sparano solo se accerchiati: la procedura è spegnere le luci e far scappare la gente (90 secondi) |
+| **Vedette** (2, a 500 m sulla strada) | 5 dappertutto | 7 | walkie-talkie, nessun'arma | La loro azione è vedere arrivare: Ascolto 5 contro chi si avvicina di notte senza luci |
+| **Allibratori, addetti galli, autisti** | 5 dappertutto | 6-7 | nessuna | Non combattono: alzano le mani o corrono per le risaie |
+
+Mod. Presenza all'iniziativa: +1 (Presenza 5) o 0 (Presenza 6).
+
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
 - [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

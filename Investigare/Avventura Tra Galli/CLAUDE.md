@@ -1,59 +1,66 @@
 # Avventura Tra Galli — «Omicidio Kyoto Station 1998»
 
-> **Sessione dedicata TRAGALLI** (dal 2026-08-23): questa cartella è gestita da una sessione AI propria.
-> Le altre sessioni (REGOLE, WIZARD, STARTERKIT, RICHIAMO) non toccano questi file — coordinamento via
-> `../REGISTRO_MODIFICHE.md`. Valgono le REGOLE FERREE di `../CLAUDE.md`: non inventare, non riaprire
-> decisioni chiuse, leggere i registri prima di toccare.
+> **Sessione dedicata TRAGALLI** (dal 2026-08-23): questa cartella è gestita da una sessione AI propria e **si lavora SOLO qui dentro**
+> (ordine dell'autore 2026-09-08): ciò che andrebbe toccato fuori — registri, manuali, altre avventure — si segnala, non si modifica.
+> Valgono le REGOLE FERREE di `../CLAUDE.md`: non inventare, non riaprire decisioni chiuse, leggere i registri prima di toccare.
+> Prima di ogni controllo: **`CHECKLIST_CONTROLLO.md`** (rileggere da zero, mai dalla memoria).
 
 ## L'avventura
 
-Kyoto, 11–22 **febbraio 1998** (anno confermato dall'utente — non rimetterlo in discussione).
-Combattimenti clandestini di galli a Kameoka: la banda **Nitōgun** (Saitō Gorō capo · Hayashi Tomoki
-logistica · Kuroda Ryō esecutore) vendica la truffa del gallo sedato eliminando Tachibana (allibratore),
-Murakami (veterinario complice) e tentando due volte Ōkubo (usuraio, prestanome consapevole).
-Poliziotto corrotto: sergente Inagaki (Polizia di Kameoka). Climax: blitz al capannone il 22/02 ore 23.
+Kyoto, 11–22 **febbraio 1998** (anno confermato dall'autore — non rimetterlo in discussione).
+Combattimenti clandestini di galli a Kameoka: la banda **Nitōgun** (Saitō Gorō capo · Hayashi Tomoki logistica ·
+Kuroda Ryō esecutore) vendica la truffa del gallo sedato eliminando Tachibana (allibratore), Murakami (veterinario
+complice) e tentando due volte Ōkubo (usuraio, prestanome consapevole). Poliziotto corrotto: sergente Inagaki
+(Polizia di Kameoka), con l'agente Yamaguchi come gregario. Climax: blitz al capannone il 22/02 ore 23.
 Tono finale: vittoria amara — Saitō non cade per gli omicidi.
+
+**I PG sono la squadra della serie** (`../pg/`, `../Materiale/Scheda_Distretto.md`): briefing del **commissario
+Taniguchi**, **Yamada** accompagna, **Ito** fa i rilievi, il PM **Watanabe Hideo** chiede i mandati al giudice, **Gonda**
+per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. Ganci per i 5 PG in `Inizio - Incarico.md`.
 
 ## Struttura della cartella
 
-- `Storia Completa.md` — la verità assoluta: fatti numerati, cast, cronistoria, filosofia investigativa,
-  reati delegabili, indizi materiali
-- `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link normalizzati sui nomi file reali
-- `Immagini/` — per ora solo `TelecameraAssassinio.png` (**ruolo da decidere** nella fase foto: mostra
-  una telecamera dentro il bagno che in canone non esiste — utilizzabile come mood/copertina GM,
-  non come handout ai giocatori)
+- `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
+- `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
+- `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
+  Inagaki, Ōkubo, comparse (`PNG_Nitogun_Banda`), cani (`Luogo_Villa_Saito_Kameoka`)
+- `Immagini/` — `3ProiettiliPorta` (handout, corretta), `InventarioVittima` (handout), `AssassinoArrivaStazione` (handout,
+  CAM-12), `VittimaBagno` e `TelecameraAssassinio` (**solo GM**: telecamera interna inesistente), `Copertina` (generica);
+  `_originali/` = versioni prima dei ritocchi
+- `PIANO_HANDOUT_IMMAGINI.md` — 26 handout + immagini, stato e decisioni · `CONTROLLO_2026-09-07.md` — rapporto e stato
+  applicazione · `CHECKLIST_CONTROLLO.md` — la checklist riutilizzabile
 
-## Decisioni chiuse (utente, 2026-08-24)
+## Decisioni chiuse (autore, 2026-08-24 e 2026-09-08)
 
-- **Arma del sicario: Makarov PM cal. 9×18, semiautomatica** (non più S&W Model 36/.38): il bossolo
-  dimenticato sotto un orinatoio è l'indizio balistico chiave; 2 bossoli repertati anche al parcheggio
-  di Ōkubo (collegamento balistico tra gli attacchi)
-- Al parcheggio di Ōkubo i colpi sono **2** (la Sig.ra Ueda ne sente due)
-- Kuroda = **istruttore di pugilato** (Tora Boxing Gym, Fushimi) — niente più «disoccupato»
-- I 3 rullini **Super 8** di Tachibana = **filmati compromettenti su un politico locale** (l'assicurazione
-  privata della vittima, il motivo per cui si credeva protetto); il filone politico è subtrama/seguito,
-  non tocca i tre omicidi
-- Esito canonico: Kuroda arrestabile (ergastolo) · Hayashi il punto crollabile · **Saitō non incastrato
-  per gli omicidi** (4–6 anni per combattimenti clandestini + evasione)
-- **Niente intercettazioni** (illegali in Giappone fino al 1999, decisione di review): tabulati
-  telefonici + sorveglianza
-- Nomi: **si lasciano** le omonimie cross-avventura (#4 Mori Sachiko con Sake, #5 Endō Hiroshi con
-  Ultima Lezione); dentro l'avventura nessuna omonimia piena (controllo 2026-08-24). Prima di creare
-  nomi nuovi: `../GENKAI_Registro_Nomi.md`
-- Coerenza d'epoca 1998: VHS (niente archivi digitali), Sanwa Bank/JCB (niente UFJ, nata nel 2002),
-  cellulari prepagati senza marca GSM; mova NTT DoCoMo e Motorola StarTAC vanno bene
+- **Arma del sicario: Makarov PM cal. 9×18, semiautomatica** (= *automatica 9mm* della tabella v3.1: 3/2/4 danno 4); il
+  bossolo dimenticato sotto un orinatoio è l'indizio balistico chiave; 2 bossoli repertati al parcheggio di Ōkubo
+- Al parcheggio di Ōkubo i colpi sono **2**. Kuroda = **istruttore di pugilato** (Tora Boxing Gym). I **Super 8** = filmati
+  compromettenti su un politico locale (assicurazione della vittima; filone politico = subtrama)
+- Esito: Kuroda arrestabile (ergastolo) · Hayashi il punto crollabile · **Saitō non incastrato per gli omicidi** (4-6 anni)
+- **Niente intercettazioni** (illegali fino al 1999): tabulati con ordine del PM + sorveglianza. Mandati: Taniguchi → Watanabe → giudice
+- **Ōkubo sa poco** (Storia §27): mai stato al capannone, non conosce Saitō/Hayashi/Kuroda; dà i clienti dai prestiti
+  (Hashimoto, Kimura), il ristorante di copertura, l'esistenza del poliziotto. Era il terzo prestanome (¥2 mln + ¥3 suoi, vince ¥15 mln)
+- **Registro delle 10 chiamate = Storia §22**: tra i clienti solo Inoue e Tanaka; gli altri 4 «per altre vie»
+- **Yamaguchi resta** (gregario da ¥50k): Inagaki è «l'unico che conta», non «l'unico»
+- Nomi: si lasciano le omonimie cross-avventura (#4 Mori Sachiko, #5 Endō Hiroshi); dentro l'avventura nessuna piena. Prima
+  di creare nomi nuovi: `../GENKAI_Registro_Nomi.md` (solo leggere: segnalare i cambi)
+- Coerenza d'epoca 1998: VHS, Sanwa/JCB, cellulari senza marca GSM; mova e StarTAC ok
+- **Il testo si è adattato alle immagini dell'autore** (2026-09-08): kanji **橘 英司** (accendino «英»), cellulare a stecca, blister
+  di Lexotan, due biglietti Kyoto Kōtsū di sola andata dal capolinea lato Shichijō, ritorno delle 18:30 → arrivo 19:30, cena
+  al ristorante-bar dello Shin-Miyako Hotel (uscita Hachijō) 19:45-20:45 ¥3.150, chiavetta n. 0419, biglietto da visita con
+  foto di «Mari»; telecamera **CAM-12** del corridoio sud alle **21:20** (berretto, giubbotto imbottito, borsa, **sneaker scure**);
+  bagno accanto agli uffici della direzione (管理室), porta grigia in lamiera. La pagina del taccuino fotografata è la base di H-09
+- Statistiche PNG: **Ki come i PG** (attributo più basso + dado alto di 2d6, tetto 12); mai «Riserva». Combattimento =
+  `../Combattimento/GENKAI_Combattimento.md` **v3.1** + `Scheda_Giocatori_Combattimento.html` al tavolo
 
 ## Stato e prossimi passi
 
-1. ✅ Passata di coerenza completa (2026-08-24) — registrata in `../REGISTRO_MODIFICHE.md`
-2. ✅ Piano handout+immagini proposto: **`PIANO_HANDOUT_IMMAGINI.md`** (26 handout + 25 immagini + ritratti, con priorità e questioni aperte)
-3. ⏳ **Rilettura completa dell'utente** (avventura + piano)
-3. Poi, su suo ordine: **handout** (HTML numerati stile Sake/Ultima Lezione; regole del Manuale GM:
-   documenti pre-elaborati, ≥1 nota utile + ≥1 neutra, mai il colpevole; tabulati nel formato canonico)
-   + **immagini/foto** (luoghi e reperti con Nano Banana, prompt-volti per ChatGPT, kanji/timbri con PIL,
-   coerenza ambiente: metallo grigio, luce fluorescente, keisatsu techō) + eventuali token da tavolo
-   e statistiche GENKAI dei PNG chiave (comparse 5-6; **Ki come i PG**: attributo più basso + dado alto
-   di 2d6, tetto 12 — la «Riserva 3/6/9» è abolita dal 2026-09-05; notevoli a metodo diretto).
-   **Combattimento = `../Combattimento/GENKAI_Combattimento.md` v3.1** (sistema ad azioni: iniziativa
-   2d6 + mod. Presenza + velocità, Ukemi, Tame, Minacciare; revolver New Nambu 4/2/5 d4, keibō 2/2 d2,
-   automatica 9mm 3/2/4 d4) + `../Combattimento/Scheda_Giocatori_Combattimento.html` per il tavolo
+1. ✅ Coerenza (2026-08-24) · ✅ controllo completo e applicazione (2026-09-07/08): `CONTROLLO_2026-09-07.md`
+2. ⏳ **Rilettura dell'autore** («poi controlliamo»)
+3. Poi: **handout** (26 del piano, HTML stile Sake/Ultima Lezione; regole del Manuale GM: pre-elaborati, ≥1 nota utile + ≥1 neutra,
+   mai il colpevole; prima i contenuti ex novo del §C del piano da far rileggere) + **immagini** (IMG-03 il gallo dentro il cubicolo,
+   IMG-04/05, luoghi, reperti; volti = prompt per ChatGPT, luoghi = Nano Banana, kanji/timbri = PIL) + token ed En da decidere
+
+## Da segnalare fuori cartella (non toccato)
+- `../GENKAI_Registro_Nomi.md`: «Murayama Hidetoshi» non esiste più in Tra Galli (sostituito da Taniguchi)
+- `../REGISTRO_MODIFICHE.md`: riga informativa — Tra Galli allineata alla serie (PNG fissi, Kawaramachi 85) e al combattimento v3.1

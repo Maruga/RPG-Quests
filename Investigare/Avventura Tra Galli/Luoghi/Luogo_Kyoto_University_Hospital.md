@@ -41,6 +41,7 @@ Complesso ospedaliero di grandi dimensioni, più edifici, struttura confusa per 
 
 ## Persone presenti
 - Personale medico (vario): **Dr. Sasaki Kōichi** (chirurgo curante), **infermiera capo Tanabe Yumi**
+- **Istituto di Medicina Legale** dell'Università (stesso complesso): il **Dr. Yagi Kenta** (51) firma le autopsie di Tachibana e Murakami; ci lavora anche la **dott.ssa Morita Akiko**, l'Enja di Fujita
 - Agente di polizia in turno
 - Possibili visitatori autorizzati: avvocato di Ōkubo, ex moglie (chiamata d'emergenza ma non viene da Nagoya), nessun parente diretto a Kyoto
 - Il **Dr. Sasaki** è cooperativo con i PG ma non ha tempo per ricostruzioni dettagliate

@@ -73,6 +73,17 @@ N/A: non sospettato di omicidio, ma le sue azioni di copertura emergeranno gradu
 - Il suo ostruzionismo deve essere **percepibile ma non smaccato**: dosare bene
 - Confronto chiave: i PG capiscono che è corrotto **circa al giorno 14-15/02**, dopo il tentato omicidio di Ōkubo (Inagaki era stranamente al corrente di dettagli che non avrebbe dovuto sapere)
 
+## Statistiche (GENKAI — Shōtotsu v3.1, da provare al tavolo)
+
+| Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | Ki |
+|---|---|---|---|---|---|---|
+| 6 | 5 | 5 | 5 | 5 | 7 | **9** (Pazienza 5 + dado 4) |
+
+- **Senmon**: Pistola 1 (25 anni di poligono) · Conoscere il quartiere (Kameoka) 2
+- **Armi**: revolver New Nambu d'ordinanza (Lucidità 5, Estrarre 4 / Colpire 2 / Ricarica 5, danno 4) · keibō (Silenzio 5, 2/2, danno 2) · Lotta 1
+- **Ukemi** (chi lo attacca tira contro): fuoco → Distacco 6 · lame e mani → Pazienza 5 · manganello → Ascolto 5
+- **Come combatte**: non spara mai ai colleghi — se scoperto alza le mani e chiama il sindacato. Il pericolo per lui è Kuroda, non i PG. Mod. Presenza all'iniziativa: −1
+
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]
 - [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]

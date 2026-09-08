@@ -26,7 +26,7 @@
 | 11/02 | Al locale Kōrin, turno serale 18:00–02:00, testimoni: 12 clienti registrati e 3 colleghi |
 | 13/02 | Locale Kōrin |
 | 14/02 | A casa con la madre |
-| 17/02 | Al locale Kōrin |
+| 17/02 | A casa con la madre (martedì: il Kōrin è chiuso) |
 
 ## Se interrogato
 - Inizialmente reticente: per **lealtà** verso il datore di lavoro morto non vuole "infangarne il nome"

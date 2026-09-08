@@ -69,6 +69,17 @@ Nessuno evidente. È prudente, esperto, freddo. L'unica leva possibile: il figli
 - Confronto diretto possibile in un solo momento: durante un interrogatorio formale o un incontro casuale a Gion
 - Frase tipica in caratterizzazione: *"Non ho idea di cosa stia parlando, ispettore. Posso offrirvi un tè?"*
 
+## Statistiche (GENKAI — Shōtotsu v3.1, da provare al tavolo)
+
+| Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | Ki |
+|---|---|---|---|---|---|---|
+| 8 | 7 | 8 | 7 | 6 | 8 | **11** (Ascolto 6 + dado 5) |
+
+- **Senmon**: Ambienti yakuza 2 (conoscenza: ci è nato) · Economia e finanza 1 · nessuna d'arma
+- **Armi**: due Beretta 92FS nella panic room = *automatica 9mm* (Lucidità 7, 3/2/4, danno 4) — mai in scena
+- **Ukemi** (chi lo attacca tira contro): fuoco → Distacco 8 · lame e mani → Pazienza 7 · manganello → Ascolto 6
+- **Come combatte**: mai. Chiama l'avvocato, offre il tè. Il suo peso si sente negli interrogatori, non negli scambi. Mod. Presenza all'iniziativa: −2
+
 ## Collegamenti
 - [[PNG_Hayashi_Tomoki_Logistica_Nitogun|Hayashi Tomoki — Logistica Nitōgun]]
 - [[PNG_Kuroda_Ryo_Esecutore|Kuroda Ryō — Esecutore]]

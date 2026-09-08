@@ -181,3 +181,14 @@ ricorrenti (¥200k/mese, ¥38 mln, ¥6,8 mln, ¥1,5 mln, ¥180.000, ¥1,2 mln, �
 reperti del §21 = scheda vittima; distribuzione dei 4+1+1 Kyoto Shimbun; sigle S.G./K.R./I.H./V2; esiti
 finali; alibi dell'11/02; testimoni del 14/02; quadro legale (tabulati con ordine del PM, niente
 intercettazioni); anno 1998 coerente con la stazione nuova e VHS; wiki-link tutti risolti.
+
+---
+
+## Stato applicazione — 2026-09-08 (ordine dell'autore: «sistema il tutto»)
+
+- **A1-A19 applicate**, tutte col default proposto: Ōkubo = Storia §27 (scheda riscritta: cosa sa, note GM, interrogabile dal 15/02, vincita ¥15 mln a quota 3); Ōkubo incaricato con i ¥2 mln (riga 214); registro delle 10 chiamate = lista del §22 (titolo della tabella clienti, riga «Indizi materiali», scheda Clienti ×2); Yamaguchi resta come gregario (§6 e §31 riscritti); alibi di Saitō = scheda; Nishimura il 17/02 a casa; la Crown non è più anche a Fushimi; Royal Hotel 2-3 volte al mese; reclutamento a gennaio; annunci pagati dalla Kameoka Nōji KK; Tachi cede sulla moglie (minaccia o rassicurazione); incontri Inagaki-Hayashi il primo lunedì del mese + un incontro d'urgenza il 15/02; «Kage» tolto dai poteri; niente tiro per la cassetta di Ōkubo; l'arresto di Kuroda riscritto in termini v3.1; mandati = Taniguchi → PM Watanabe → giudice
+- **B1 applicata**: la squadra della serie — Taniguchi assegna il caso, Yamada, Ito, Watanabe Hideo, Gonda; Centrale di Kawaramachi 85 con Omicidi al 2° piano; Murayama eliminato; Yagi Kenta spostato all'Istituto di Medicina Legale (con la dott.ssa Morita, Enja di Fujita). Nuovo file **`Inizio - Incarico.md`** (briefing + ganci per i 5 PG + materiale da tavolo). **B2** (gradi): nessun cambio, in attesa della decisione generale
+- **C1-C3 applicate**: blocchi statistiche v3.1 in 5 schede + comparse + cani; blitz e ospedale in termini v3.1; kit = `Scheda_Giocatori_Combattimento.html`
+- **D1-D2 applicate** (a mio giudizio, come richiesto): `3ProiettiliPorta.png` corretta (23:03) con originale in `Immagini/_originali/`; `InventarioVittima.png` e `AssassinoArrivaStazione.png` resi canonici adattando il testo (kanji 英司 e accendino «英», biglietti Kyoto Kōtsū di sola andata dal capolinea lato Shichijō, ritorno alle 18:30 → arrivo 19:30, cena allo Shin-Miyako Hotel 19:45-20:45 ¥3.150, blister, chiavetta n. 0419, biglietto da visita di «Mari», telecamera CAM-12 alle 21:20 con berretto/borsa/sneaker scure); `VittimaBagno` e `TelecameraAssassinio` = solo GM; il taccuino della foto = base di H-09
+- **Checklist riutilizzabile**: `CHECKLIST_CONTROLLO.md`
+- **Da fare fuori da questa cartella (non toccato, da segnalare)**: `GENKAI_Registro_Nomi.md` — togliere «Murayama Hidetoshi» dalla sezione Tra Galli; `REGISTRO_MODIFICHE.md` — riga informativa (Tra Galli allineata alla serie e alla v3.1)

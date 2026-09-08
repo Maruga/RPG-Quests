@@ -54,7 +54,7 @@ Edificio tradizionale di 2 piani in legno scuro, insegna noren blu all'ingresso,
 - Il **collegamento giornale ↔ capannone** è la chiave decifrativa fondamentale dell'avventura
 - I PG ci arrivano dal giornale trovato addosso a Tachibana e nei suoi archivi
 - Effetto: "scoperta del codice di comunicazione" — momento *eureka* del gioco
-- Tachi Yūichirō è **collaborativo se trattato bene**, può fornire la lista degli annunci precedenti (12 mesi)
+- Tachi Yūichirō **cede quando capisce che la moglie Reiko rischia** — funziona sia come minaccia sia come rassicurazione («la teniamo fuori, se collabora»): allora consegna la lista degli annunci degli ultimi 12 mesi e i documenti societari
 
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]

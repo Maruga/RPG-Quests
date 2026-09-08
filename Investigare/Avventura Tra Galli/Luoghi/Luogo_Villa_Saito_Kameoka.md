@@ -22,7 +22,7 @@ Villa elegante, recinto in muratura alto 2,5 m, cancello automatico in metallo n
 
 ## Sicurezza
 - Telecamere perimetrali (registrazione 7 giorni)
-- 2 cani da guardia (akita, addestrati)
+- 2 cani da guardia (akita, addestrati) — in gioco (v3.1): comparsa con Presenza 6 e Ki 6, attaccano con la Lotta (morso: danno 2), Ukemi su Pazienza; un colpo di keibō o la voce del padrone li ferma
 - Allarme di sicurezza professionale (collegato a società di vigilanza)
 - **Niente uomini armati visibili** — Saitō tiene apparenze di rispettabilità
 - In realtà: **panico room** in cantina con accesso nascosto dietro la cantina vini, contiene scorte, armi e contante per emergenze

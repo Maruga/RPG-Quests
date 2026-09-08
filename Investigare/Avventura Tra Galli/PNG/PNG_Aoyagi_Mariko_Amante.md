@@ -53,6 +53,7 @@
 - **Conferma** indiretta dei contatti con Hayashi
 
 ## Note operative GM
+- Nel portafoglio di Tachibana c'è il suo **biglietto da visita con foto** («Mari», Club Aoyagi): i PG arrivano a lei subito. La polaroid di spalle resta la conferma da chiedere a lei
 - **Possibile bersaglio indiretto**: dopo il 14/02, se il Nitōgun teme che lei sappia troppo, può essere intimidita
 - I PG possono offrirle protezione → la conquistano come alleata
 - Se ignorata, può sparire (tornare a casa dei genitori in Hokkaidō) e portarsi via il codice cassaforte: ostacolo alle indagini

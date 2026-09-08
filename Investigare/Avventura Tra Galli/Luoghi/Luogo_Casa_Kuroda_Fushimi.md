@@ -45,13 +45,14 @@ Spartano. Letto futon a pavimento, frigorifero piccolo, fornello a gas a 2 fuoch
 - Se Kuroda è assente: perquisizione tranquilla
 - Se Kuroda è presente: pericolo concreto. È giovane, atletico, armato. Possibile colluttazione fisica.
 
-## Pericolo durante perquisizione
-- Kuroda non si arrende facilmente
-- Se sa di essere scoperto, può preferire la fuga (ha contante e arma di scorta nella palestra)
-- Possibile **inseguimento** lungo il fiume Kamo
+## L'arresto (Shōtotsu v3.1 — `../Combattimento/GENKAI_Combattimento.md`)
+- Kuroda non si arrende facilmente: statistiche nella sua scheda (Lotta 2, Makarov, Ki 10)
+- **Come si gioca**: i PG entrano col revolver prelevato dall'armadietto (firmando) e il keibō. Se lo sorprendono con l'arma già puntata è **Sotto Tiro** (velocità 0: «*Polizia! Fermo!*») e la scelta sensata per lui è alzare le mani; se invece li vede arrivare, il monolocale è zona *contatto*: preferisce le mani (Lotta 2) al colpo di pistola, e cerca la porta
+- **La fuga**: dalla palestra al vicolo e verso il fiume Kamo = da *vicino* a *lontano* con l'azione Muoversi; chi lo insegue tira Presenza o Lucidità per non perderlo (tiri di attributo, non di scontro). Ha contante e la Tokarev di scorta nella falsa bocchetta: se arriva lì, riparte armato
+- **Le conseguenze (Giappone 1998)**: chi estrae lo scrive nel rapporto, chi spara apre un fascicolo dell'ispettorato — anche l'arresto riuscito costa giorni di audizioni
 
 ## Note operative GM
-- L'arresto di Kuroda è una **scena d'azione** con probabili tiri di abilità fisica/tattica
+- L'arresto di Kuroda è la **scena d'azione** dell'avventura: mezz'ora di adrenalina, poi si torna a indagare
 - La **prova balistica** della Makarov (striature dei proiettili recuperati + segni del percussore sul bossolo della stazione): prova decisiva
 - Il **quaderno di calligrafia** è un dettaglio caratteriale che umanizza Kuroda — opzionale ma narrativamente forte
 

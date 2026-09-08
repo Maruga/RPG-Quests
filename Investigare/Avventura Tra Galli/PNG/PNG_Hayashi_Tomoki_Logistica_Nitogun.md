@@ -14,7 +14,7 @@
 
 ## Ruolo nella vicenda
 - Organizza la logistica del capannone di Kameoka (mensile)
-- Pubblica gli annunci sul Kyoto Shimbun tramite agenzia di intermediazione (paga in nero)
+- Pubblica gli annunci sul Kyoto Shimbun tramite l'agenzia Sakura Kōkoku di Osaka (paga per conto della Kameoka Nōji KK: le ricevute sono intestate alla società)
 - Riscuote scommesse e paga vincite per conto di Tachibana
 - Ha **chiamato Tachibana il 10/02 alle 18:42** lasciando il messaggio in segreteria (*"Ei-san, sono io. Domani come d'accordo"*) per fissare l'incontro pomeridiano dell'11/02 a Kameoka
 - **Ricognizione preventiva del bagno della Kyoto Station** il 10/02 mattina: sceglie il punto dell'agguato, nota casualmente il cartello "telecamera fuori servizio dal 9/02, ricambio in arrivo" all'ingresso del bagno e ne approfitta come opportunità (nessun complice interno, niente sabotaggio)
@@ -66,6 +66,17 @@ La fidanzata Yui (28 anni). Hayashi è genuinamente innamorato. Se lei viene min
 - Hayashi è la **chiave per arrivare a Saitō**
 - Senza la sua testimonianza, Saitō è intoccabile
 - I PG hanno una finestra: se lo arrestano prima del 22/02 (giorno del prossimo combattimento), il colpo è completo
+
+## Statistiche (GENKAI — Shōtotsu v3.1, da provare al tavolo)
+
+| Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | Ki |
+|---|---|---|---|---|---|---|
+| 5 | 5 | 5 | 6 | 6 | 5 | **8** (Distacco 5 + dado 3) |
+
+- **Senmon**: Conoscere il quartiere (Kameoka) 1 · nessuna d'arma
+- **Armi**: coltello a serramanico = *coltello* (attacco Pazienza 5, Estrarre 2 / Colpire 1, danno 2) · pugni (Lotta 1: Presenza 5, 1/1, danno 1). Le pistole le procura, non le porta
+- **Ukemi** (chi lo attacca tira contro): fuoco → Distacco 5 · lame e mani → Pazienza 5 · manganello → Ascolto 6
+- **Come combatte**: non combatte — se braccato scappa (Muoversi) o alza le mani e chiede l'avvocato. Mod. Presenza all'iniziativa: +1
 
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]

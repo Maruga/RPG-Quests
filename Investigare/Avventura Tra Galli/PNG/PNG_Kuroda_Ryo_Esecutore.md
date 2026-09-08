@@ -10,7 +10,7 @@
 - **Stato civile**: single, nessuna relazione stabile
 
 ## Aspetto e personalità
-1,80 m, atletico, capelli rasati. Tatuaggio sotto la scapola sinistra: drago in stile *irezumi* incompleto. Veste sportivo: tute Asics, sneaker (le **Asics Gel** della scena del crimine), giubbotto bomber. Nervoso ma controllato, parla pochissimo. Astemio. Si allena ogni giorno.
+1,80 m, atletico, capelli rasati. Tatuaggio sotto la scapola sinistra: drago in stile *irezumi* incompleto. Veste sportivo: tute Asics, sneaker scure (le **Asics Gel** della scena del crimine), giubbotto scuro imbottito (il «bomber» dei verbali), berretto di lana nelle uscite notturne. Nervoso ma controllato, parla pochissimo. Astemio. Si allena ogni giorno.
 
 ## Ruolo nella vicenda
 - Esecutore materiale dei tre attentati
@@ -20,7 +20,7 @@
 
 ## Esecuzione 11/02 ore 21:21
 - Arriva alla Kyoto Station alle 21:14 con auto guidata da Hayashi (Hayashi resta al volante in zona Hachijō-ovest)
-- Sale al 3° piano alle 21:19 (ripreso dalla telecamera del corridoio), entra nel bagno alle 21:20
+- Sale al 3° piano alle 21:20 (ripreso dalla telecamera CAM-12 del corridoio sud: berretto di lana, borsa a tracolla nera con dentro la Makarov), entra nel bagno pochi secondi dopo
 - Spara 3 colpi con una pistola semiautomatica Makarov PM cal. 9×18
 - Raccoglie i bossoli **(errore: ne dimentica uno scivolato sotto un orinatoio — i PG possono trovarlo se cercano bene)**
 - Esce alle 21:22, scende al pianterreno, sale in auto, fugge
@@ -65,10 +65,10 @@
 - Cellulare prepagato con sole 4 chiamate ricevute da Hayashi nelle date critiche
 
 ## Telecamera del corridoio (3° piano Kyoto Station)
-La telecamera lo riprende alle 21:19 e 21:22. Volto **non riconoscibile** in qualità VHS, ma:
+La telecamera CAM-12 (corridoio sud, verso i bagni) lo riprende alle 21:20 e 21:22. Volto **non riconoscibile** in qualità VHS (di spalle all'andata, berretto di lana), ma:
 - corporatura atletica
-- giubbotto bomber scuro
-- sneaker chiare con suola scanalata
+- giubbotto scuro imbottito, guanti, borsa a tracolla nera
+- sneaker scure con suola scanalata
 - andatura caratteristica (passi corti e veloci, postura da pugile)
 
 I PG che incrociano il filmato con un sospettato già in custodia possono confermare l'identificazione.
@@ -77,6 +77,17 @@ I PG che incrociano il filmato con un sospettato già in custodia possono confer
 - È **il bersaglio investigativo concreto** ma non il vero responsabile morale
 - Catturarlo è possibile ma non sufficiente per chiudere il caso (l'omertà copre Saitō)
 - Se i PG lo catturano e Saitō teme che parli, può tentare di farlo eliminare in carcere — sottotrama possibile
+
+## Statistiche (GENKAI — Shōtotsu v3.1, da provare al tavolo)
+
+| Distacco | Pazienza | Silenzio | Lucidità | Ascolto | Presenza | Ki |
+|---|---|---|---|---|---|---|
+| 6 | 5 | 6 | 5 | 5 | 7 | **10** (Pazienza 5 + dado 5) |
+
+- **Senmon**: Lotta 2 (pugile e istruttore — Presenza 7) · Pistola 1 (tre agguati, non un tiratore)
+- **Armi**: Makarov PM = *automatica 9mm* (attacco Lucidità 5, Estrarre 3 / Colpire 2 / Ricarica 4, danno 4, 3 colpi) · tantō = *coltello* (Pazienza 5, 2/1, danno 2) · pugni (Presenza 7, 1/1, danno 1, Lotta 2 = −2 al tiro) · Tokarev di scorta in palestra (come la Makarov)
+- **Ukemi** (chi lo attacca tira contro): fuoco → Distacco 6 · lame e mani → Pazienza 5 · manganello → Ascolto 5
+- **Come combatte**: a contatto preferisce le mani; spara solo se ha la linea e una via di fuga; sotto Ki 4 scappa (Muoversi verso *lontano*, il fiume). Non minaccia: agisce. Mod. Presenza all'iniziativa: −1
 
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]

@@ -19,7 +19,7 @@
 
 ## Posizione del bagno
 
-Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkansen (Shinkansen Hachijō Gate). Area frequentata da viaggiatori in transito Shinkansen e Kintetsu. Distante dalle aree commerciali principali (Asty Road è al 1° piano).
+Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkansen (Shinkansen Hachijō Gate), nel corridoio sud accanto agli uffici della direzione di stazione (駅事務室・管理室). Area frequentata da viaggiatori in transito Shinkansen e Kintetsu. Distante dalle aree commerciali principali (Asty Road è al 1° piano).
 
 **Accesso**: dal piano terra Hachijō, scala mobile o ascensore fino al 3° piano. Corridoio laterale est, oltre la sala d'attesa Shinkansen, indicazione bagni in giapponese e inglese.
 
@@ -37,7 +37,7 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 - Illuminazione: neon a soffitto, luce fredda
 - Soffitto basso (2,40 m), areazione meccanica costante (rumore di fondo continuo)
 
-**Cubicolo dell'omicidio**: quello centrale dei tre. Porta in laminato bianco con telaio in alluminio, serratura a pomello rosso/verde, apertura verso l'interno. Spazio interno 90×140 cm.
+**Cubicolo dell'omicidio**: quello centrale dei tre. Porta grigia in lamiera verniciata con telaio in acciaio, serratura a pomello con indicatore rosso/verde, apertura verso l'interno. Spazio interno 90×140 cm.
 
 ## Dinamica omicidio
 
@@ -49,7 +49,7 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 - **21:21+30s**: Tachibana, ancora cosciente per pochi secondi, traccia col sangue sul pavimento il simbolo del gallo Nitōgun (due speroni sovrapposti)
 - **22:01**: Watanabe esce dal proprio cubicolo dopo 40 minuti di paralisi e segnala
 - **22:08**: arriva la prima pattuglia, il **Kōban** della stazione (police box interna)
-- **22:35**: arriva la squadra omicidi della Polizia Prefetturale di Kyoto
+- **22:35**: arrivano la Kanshiki-ka di **Ito Daisuke** e l'agente **Yamada Tetsuo** per la Sezione Omicidi; il caso passa alla squadra dei PG al briefing delle 08:00 del 12/02
 
 ## Indizi sulla scena
 
@@ -79,7 +79,7 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 ## Telecamere
 
 - Telecamera all'ingresso del bagno: **non funzionante** dal 9 febbraio (guasto già segnalato, ricambio in arrivo)
-- Telecamera al corridoio del 3° piano lato est: funzionante, registra il passaggio di Kuroda alle 21:19 (entrata) e 21:22 (uscita)
+- Telecamera **CAM-12** del corridoio sud del 3° piano (verso i bagni): funzionante, registra il passaggio di Kuroda alle 21:20 (entrata: berretto di lana, giubbotto scuro imbottito, guanti, borsa a tracolla nera) e 21:22 (uscita)
 - Qualità immagine VHS: scarsa, volto non riconoscibile, ma corporatura, abbigliamento e andatura sì
 - Tachibana è ripreso alle 21:17 mentre arriva al 3° piano, **da solo**
 
@@ -96,13 +96,13 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 ## Movimenti precedenti di Tachibana l'11/02
 
 - **Mattino**: locale Kōrin a Gion, gestione ordinaria
-- **14:30**: prende l'autobus per Kameoka (Kyoto Bus, fermata Hachijō-guchi)
+- **14:30**: prende l'autobus per Kameoka (Kyoto Kōtsū, capolinea lato Shichijō)
 - **15:30 ca**: arrivo Kameoka. Incontro pomeridiano con Hayashi per "discussioni operative" (cliente nuovo, calendario combattimenti del 22/02). Hayashi gli fissa l'appuntamento serale alla stazione.
-- **18:45**: prende l'autobus di ritorno (biglietto andata-ritorno timbrato)
-- **20:00 ca**: arrivo a Kyoto Station Hachijō-guchi (capolinea autobus). Tachibana scende, lascia gli effetti dell'autobus alla sua **Toyota Crown** parcheggiata al multipiano della stazione (lato Hachijō, posto B-14)
-- **20:15–21:00**: cena leggera al ristorante del 1° piano (area **Asty Road**), tavolo per uno, ricevuta di pagamento ¥3.200 (recuperabile dai PG con ricerca scontrino, conferma orari)
-- **21:05–21:15**: si trattiene nell'atrio del 1° piano, fuma una sigaretta nello spazio fumatori, controlla il cellulare
-- **21:17**: sale al 3° piano con scala mobile lato est
+- **18:30**: prende l'autobus di ritorno (secondo biglietto di sola andata)
+- **19:30**: arrivo al capolinea di Kyoto Station (lato Shichijō); attraversa la stazione e lascia gli effetti dell'autobus alla sua **Toyota Crown** parcheggiata al multipiano lato Hachijō (posto B-14)
+- **19:45–20:45**: cena leggera al ristorante-bar dello **Shin-Miyako Hotel**, davanti all'uscita Hachijō, tavolo per uno: il conto (¥3.150, ore 19:45) è nella tasca dei pantaloni e fissa gli orari
+- **20:50–21:15**: rientra in stazione, si trattiene nell'atrio lato Hachijō, fuma una sigaretta nello spazio fumatori, controlla il cellulare
+- **21:17**: sale al 3° piano con la scala mobile lato Hachijō
 - **21:18**: entra nel bagno, va al cubicolo centrale, chiude la porta (in attesa dell'incontro)
 - **21:21**: Kuroda spara
 

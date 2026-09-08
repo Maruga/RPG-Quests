@@ -87,6 +87,12 @@ Prossimo combattimento. Possibile **blitz polizia** organizzato dai PG con la Po
 - Chiusura definitiva del giro
 - Saitō presente o assente in base al timing (se è già stato avvisato, non c'è)
 
+## Come si gioca il blitz (Shōtotsu v3.1 — `../Combattimento/GENKAI_Combattimento.md`)
+- I PG **non fanno la guerra**: la squadra speciale del Crimine Organizzato (~30 uomini) entra per prima; i PG seguono con revolver e keibō prelevati e il giubbotto (Assorbe 3, indossare 4: si mette prima, in macchina)
+- **Le vedette** (2, a 500 m): l'avvicinamento a fari spenti è un tiro di **Ascolto** delle vedette (5) contro la prudenza della colonna — se lo vincono, parte la telefonata e i 90 secondi della procedura di emergenza
+- **La sicurezza armata** (4-5 compatte, statistiche in `PNG_Nitogun_Banda`): spara solo se accerchiata; la scena tipica è un colpo di panico verso la porta, poi tutti verso le risaie (Muoversi, zona *lontano*). Un colpo di pistola della polizia apre un fascicolo: dillo ai giocatori prima, non dopo
+- **Saitō** c'è solo se nessuno l'ha avvisato: il blitz esclude la Polizia di Kameoka proprio per questo
+
 ## Note operative GM
 - Il capannone è il **climax investigativo e operativo** dell'avventura
 - Difficoltà di accesso = ostacolo narrativo (i PG devono **guadagnarsi** l'informazione)

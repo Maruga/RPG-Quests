@@ -1,6 +1,6 @@
 # Clienti scommettitori — 6 PNG
 
-> Sei clienti abituali di Tachibana, presenti nel registro delle 10 ultime chiamate del cellulare. **Nessuno è coinvolto direttamente negli omicidi**. Sono fonti investigative e potenziali corruttori dei PG.
+> Sei clienti abituali di Tachibana. Solo due (Inoue, Tanaka) compaiono nel registro delle 10 ultime chiamate del cellulare; gli altri quattro si raggiungono per altre vie (Storia, punto 30). **Nessuno è coinvolto direttamente negli omicidi**. Sono fonti investigative e potenziali corruttori dei PG.
 
 ---
 
@@ -102,7 +102,7 @@
 - Possibile **escalation di intimidazioni** sui PG dopo questi colloqui
 
 ### Numeri di telefono
-Tutti e 6 sono nel registro delle 10 ultime chiamate del cellulare di Tachibana. I PG li identificano facilmente con un mandato alla compagnia telefonica (NTT DoCoMo, modello mova).
+**Inoue e Tanaka** escono dal registro delle 10 chiamate (identificazione dei numeri alla NTT DoCoMo con ordine del PM, tramite Taniguchi); **Hashimoto e Kimura** dai prestiti di Ōkubo; **Fujiwara e Yoshida** dal Crimine Organizzato e dai registri del capannone dopo il 22/02.
 
 ---
 

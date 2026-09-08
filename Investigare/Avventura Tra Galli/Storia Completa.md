@@ -32,7 +32,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 5. **Allibratore principale del Nitōgun**: **Tachibana Eiji** (47, ufficialmente gestore del bar-ristorante Kōrin a Gion, separato dalla moglie **Setsuko** dal '96, vive a Fushimi, amante hostess **Mariko** al Club Aoyagi).
 
-6. **Poliziotto corrotto**: **sergente Inagaki Hiroshi** (47, Polizia di Kameoka). Sul libro paga di Saitō da 6 anni per ¥200k al mese. Chiude un occhio sui movimenti notturni del capannone, avvisa di pattuglie, non apre indagini sui rumori. **È l'unico poliziotto corrotto del giro**, non ci sono complici.
+6. **Poliziotto corrotto**: **sergente Inagaki Hiroshi** (47, Polizia di Kameoka). Sul libro paga di Saitō da 6 anni per ¥200k al mese. Chiude un occhio sui movimenti notturni del capannone, avvisa di pattuglie, non apre indagini sui rumori. **È l'unico poliziotto corrotto che conta**: l'agente **Yamaguchi Tetsuo** (¥50k al mese) è un gregario che emerge di riflesso quando Inagaki cade.
 
 7. **Antefatti Murakami**: **Dr. Murakami Saburō** (52, veterinario di Yamashina, sposato con **Hiroko**, padre di **Kenji** 19 e **Aiko** 15) inizia nel 1994 a curare in nero i galli del Nitōgun.
 
@@ -54,17 +54,17 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 15. **Trappola Tachibana — fase 2**: 10 febbraio ore 18:42, Hayashi lascia un messaggio in segreteria a Tachibana (*"Ei-san, sono io. Domani come d'accordo"*) per fissare un incontro pomeridiano a Kameoka.
 
-16. **Trappola Tachibana — fase 3**: 11 febbraio (mercoledì, festa nazionale Kenkoku Kinen no Hi). Tachibana parte in autobus alle 14:30 da Hachijō-guchi, arriva a Kameoka alle 15:30. Pomeriggio (14–18) incontra Hayashi per "discussioni operative". Hayashi gli dà di persona un appuntamento serale alla stazione: *"alle 21:15 al bagno del 3° piano lato Hachijō, ti porto la tua quota del giro di gennaio"*. Per Tachibana è routine mensile.
+16. **Trappola Tachibana — fase 3**: 11 febbraio (mercoledì, festa nazionale Kenkoku Kinen no Hi). Tachibana parte in autobus alle 14:30 dal capolinea Kyoto Kōtsū di Kyoto Station (lato Shichijō), arriva a Kameoka alle 15:30. Pomeriggio (14–18) incontra Hayashi per "discussioni operative". Hayashi gli dà di persona un appuntamento serale alla stazione: *"alle 21:15 al bagno del 3° piano lato Hachijō, ti porto la tua quota del giro di gennaio"*. Per Tachibana è routine mensile.
 
-17. **Movimenti serali Tachibana**: autobus di ritorno alle 18:45, Kyoto Station verso le 20:00, lascia gli effetti alla Toyota Crown nera al multipiano (posto B-14), cena leggera al ristorante del 1° piano (Asty Road), alle 21:17 sale al 3° piano, 21:18 entra nel cubicolo centrale del bagno, chiude la porta in attesa di Hayashi.
+17. **Movimenti serali Tachibana**: autobus di ritorno alle 18:30, Kyoto Station alle 19:30, attraversa la stazione e lascia gli effetti alla Toyota Crown nera al multipiano lato Hachijō (posto B-14), cena leggera al ristorante-bar dello **Shin-Miyako Hotel** davanti all'uscita Hachijō (19:45–20:45, conto ¥3.150), alle 21:17 sale al 3° piano, 21:18 entra nel cubicolo centrale del bagno, chiude la porta in attesa di Hayashi.
 
 18. **Omicidio Tachibana**: 11/02 ore 21:21. Kuroda — accompagnato in auto da Hayashi che resta al volante in zona Hachijō-ovest — entra nel bagno alle 21:20. Spara 3 colpi cal. 9×18 mm con una pistola semiautomatica Makarov PM attraverso la porta. Tachibana morente traccia col sangue sul pavimento il simbolo del Nitōgun (gallo stilizzato con due speroni sovrapposti) — simbolo noto solo dentro al giro. Kuroda raccoglie i bossoli (ne dimentica uno sotto un orinatoio), esce, fugge in auto con Hayashi.
 
 19. **Testimone**: **Watanabe Toshio** (31, impiegato Mitsubishi Heavy Industries di Kobe, pendolare). Era nel cubicolo a sinistra dalle 21:14. Sente tutto (passi, scarpe da ginnastica cigolanti, 3 colpi, raccolta bossoli, fuga decisa) ma **non vede nulla**. Paralizzato dalla paura per 40 minuti, esce alle 22:01, corre al Kōban della stazione.
 
-20. **Entrata PG nel caso**: 12 febbraio ore 08:00, briefing alla Sezione Omicidi della **Polizia Prefetturale di Kyoto** (capo sezione: Ispettore Murayama). Materiale ricevuto: verbale Kōban, foto della scena, prima testimonianza Watanabe, reperti raccolti dalla Scientifica.
+20. **Entrata PG nel caso**: 12 febbraio ore 08:00, briefing alla Sezione Omicidi della **Polizia Prefetturale di Kyoto** (Centrale di Kawaramachi 85, 2° piano): il **commissario Taniguchi Osamu** assegna il caso alla squadra; presente l'agente **Yamada Tetsuo**, che ha seguito la scena nella notte. Materiale ricevuto: verbale Kōban, foto della scena, prima testimonianza Watanabe, reperti raccolti dalla Kanshiki-ka di **Ito Daisuke** (vedi `Inizio - Incarico.md`).
 
-21. **Reperti dalla scena di Tachibana**: cellulare NTT DoCoMo; taccuino Moleskine in codice; copia del Kyoto Shimbun del 9/02 con annuncio Kameoka-tei piegata in tasca; biglietto autobus Kyoto Bus Linea Kameoka andata-ritorno timbrato 11/02 (14:30 / 18:45); polaroid piegata di una donna in kimono di spalle davanti a un torii; ricevuta Royal Hotel Karasuma 7-8/02; chiavetta di cassetta di sicurezza nascosta sotto la suola della scarpa destra; pillole Lexotan; portafoglio Bottega Veneta con ¥180.000 (no rapina).
+21. **Reperti dalla scena di Tachibana**: cellulare NTT DoCoMo; taccuino Moleskine in codice; copia del Kyoto Shimbun del 9/02 con annuncio Kameoka-tei piegata in tasca; due biglietti di sola andata Kyoto Kōtsū (Kyoto Station → Kameoka delle 14:30; Kameoka → Kyoto delle 18:30, ¥900 l'uno, 11/02); conto del ristorante-bar dello Shin-Miyako Hotel (11/02, ¥3.150); polaroid piegata di una donna in kimono di spalle davanti a un torii; biglietto da visita con foto di una hostess del Club Aoyagi («Mari»); ricevuta Royal Hotel Karasuma 7-8/02; chiavetta di cassetta di sicurezza (targhetta n. 0419) nascosta sotto la suola della scarpa destra; blister di Lexotan; portafoglio Bottega Veneta con ¥180.000 (no rapina).
 
 22. **Cellulare di Tachibana — solo 10 ultime chiamate**, nessun numero salvato in rubrica. Le 10 chiamate riconducono a:
     1. **Dr. Murakami Saburō** (veterinario)
@@ -86,7 +86,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 25. **Tentato omicidio Ōkubo**: dal 12/02 Ōkubo cambia hotel ogni notte. Sera del 14 febbraio ore 22:30: rientra brevemente al condominio di Kamigyō per recuperare Tokarev TT-33 dal cassetto del comodino e ¥600.000 cash, vuole partire per Nagoya il giorno dopo. Kuroda lo aspetta dietro un pilastro al posto B-04 del parcheggio sotterraneo. 2 colpi: uno manca, l'altro lo colpisce alla spalla destra; i due bossoli espulsi restano a terra (repertati, collegheranno balisticamente l'agguato all'arma della stazione). Un vicino di casa rientra in auto, fari illuminano la scena, Kuroda fugge a piedi. Ricovero al **Kyoto University Hospital** (stanza 412, sotto piantonamento).
 
-26. **Identikit dell'assalitore**: dal racconto di Ōkubo (lo intravede di sfuggita) e del vicino di casa (testimone secondario, fari abbaglianti), la polizia produce un **identikit non preciso**: maschio, ~28 anni, atletico, ~1,80 m, capelli rasati, giubbotto bomber scuro, sneaker chiare con suola scanalata. Volto vago. Identikit utile per confronti futuri (telecamera corridoio Kyoto Station, perquisizione casa Kuroda) ma **non sufficiente da solo** per identificare Kuroda.
+26. **Identikit dell'assalitore**: dal racconto di Ōkubo (lo intravede di sfuggita) e del vicino di casa (testimone secondario, fari abbaglianti), la polizia produce un **identikit non preciso**: maschio, ~28 anni, atletico, ~1,80 m, capelli rasati, giubbotto scuro imbottito, sneaker scure con suola scanalata. Volto vago. Identikit utile per confronti futuri (telecamera corridoio Kyoto Station, perquisizione casa Kuroda) ma **non sufficiente da solo** per identificare Kuroda.
 
 27. **Cosa sa Ōkubo (interrogabile dal 15/02 in ospedale)**:
     - **Non è mai stato al capannone**, conosce solo la zona generica di Kameoka ovest (per sentito dire da Tachibana)
@@ -107,7 +107,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
     - Da Ōkubo (prestiti) → **Hashimoto, Kimura**
     - Da indagine Crimine Organizzato + registri capannone post 22/02 → **Fujiwara, Yoshida**
 
-31. **Smascheramento Inagaki**: i PG, contattando la Polizia di Kameoka, ricevono dati distorti, mandati ritardati, documentazione "smarrita". Inagaki si tradisce intorno al 14–15/02 conoscendo dettagli che non dovrebbe sapere (es. il ricovero di Ōkubo prima della notizia pubblica). I PG segnalano agli **Affari Interni** della Polizia Prefetturale, che attivano sorveglianza, tabulati telefonici e ricostruzione dei movimenti bancari. **Esito tipico in 5–7 giorni**: arresto di Inagaki, conferma libro paga ¥200k/mese da Saitō. **Inagaki è solo, non ci sono altri poliziotti corrotti del giro**.
+31. **Smascheramento Inagaki**: i PG, contattando la Polizia di Kameoka, ricevono dati distorti, mandati ritardati, documentazione "smarrita". Inagaki si tradisce intorno al 14–15/02 conoscendo dettagli che non dovrebbe sapere (es. il ricovero di Ōkubo prima della notizia pubblica). I PG segnalano agli **Affari Interni** della Polizia Prefetturale, che attivano sorveglianza, tabulati telefonici e ricostruzione dei movimenti bancari. **Esito tipico in 5–7 giorni**: arresto di Inagaki, conferma libro paga ¥200k/mese da Saitō. **Inagaki è il solo che conta**: l'agente Yamaguchi (¥50k al mese) salta fuori di riflesso e cede subito.
 
 32. **Decifrazione codice Nitōgun**: il taccuino di Tachibana (in codice) + l'archivio Kyoto Shimbun in casa sua (4 copie ottobre '97 – gennaio '98 con annuncio Kameoka-tei) + lista clienti criptata in cassaforte + cassetta audio di Ōkubo permettono di decifrare il codice di comunicazione, collegando ristorante e capannone.
 
@@ -117,7 +117,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 35. **Hayashi sotto torchio**: punto crollabile del Nitōgun. Con prove + patto giudiziario credibile + paura di essere eliminato in carcere da Saitō, può ribaltare tutto sul capo. Senza la sua testimonianza Saitō è intoccabile.
 
-36. **Saitō negli interrogatori**: professionista esperto, alibi impeccabili (cena d'affari a Osaka l'11/02 alle 21:30, riunioni documentate il 13–14–17/02), si presenta con avvocato. **Non crolla mai**.
+36. **Saitō negli interrogatori**: professionista esperto, alibi impeccabili (cena d'affari a Osaka l'11/02 alle 21:30; il 13/02 commercialista, il 14/02 a casa con telefonata al figlio, il 17/02 tempio a Nara — tutti documentati), si presenta con avvocato. **Non crolla mai**.
 
 37. **Climax — 22 febbraio ore 23:00**: prossimo combattimento al capannone. I PG coordinano un blitz con la **Sezione Crimine Organizzato** della Polizia Prefetturale di Kyoto (escludendo Polizia di Kameoka per via di Inagaki). Squadra speciale ~30 uomini, briefing tattico mattina del 22/02. Esito: arresti di 50–70 persone, sequestro contante e registri reali. Saitō presente o assente in base al timing.
 
@@ -137,7 +137,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 | Nome | Età | Chi è |
 |---|---|---|
-| **Tachibana Eiji** | 47 | **Vittima 1** (uccisa al bagno della Kyoto Station l'11/02 ore 21:21). Allibratore principale del Nitōgun da 6 anni, gestore di facciata del bar-ristorante Kōrin a Gion. Separato dalla moglie dal '96, vive a Fushimi, amante hostess. Calmo, manipolatore freddo, vestito sartoriale, accendino S.T. Dupont in argento inciso "永". È il **mandante della truffa** sul gallo che innesca tutto. |
+| **Tachibana Eiji** | 47 | **Vittima 1** (uccisa al bagno della Kyoto Station l'11/02 ore 21:21). Allibratore principale del Nitōgun da 6 anni, gestore di facciata del bar-ristorante Kōrin a Gion. Separato dalla moglie dal '96, vive a Fushimi, amante hostess. Calmo, manipolatore freddo, vestito sartoriale, accendino S.T. Dupont in argento inciso "英". È il **mandante della truffa** sul gallo che innesca tutto. |
 | **Dr. Murakami Saburō** | 52 | **Vittima 2** (ucciso allo studio veterinario il 13/02 ~14:00, iniezione letale di xilazina). Veterinario di Yamashina, da 4 anni cura in nero i galli del Nitōgun. Spaventato cronico, magro, occhiali dorati, mani con tremore, alcolico. Indebitato per investimento Lake Biwa fallito (¥38 mln debiti totali). **Esecutore tecnico della truffa**: ha sedato il gallo in cambio della cancellazione del proprio debito di ¥6,8 mln con Tachibana. |
 | **Ōkubo Kenji** | 41 | **Vittima 3** (sopravvive al primo attentato del 14/02 ore 22:30). Ex collega di Tachibana negli anni '80, ora usuraio indipendente di Kamigyō. Divorziato dal '95, una figlia di 12 a Nagoya. Robusto, capelli rasati, giubbotto di pelle, parla forte ma calcola sempre. **Prestanome consapevole**: ha intuito la truffa dalle quote anomale e ha scommesso ¥3 mln di tasca propria. È la **chiave investigativa principale** se i PG riescono a proteggerlo. |
 
@@ -170,7 +170,7 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 |---|---|---|
 | **Watanabe Toshio** | 31 | **Impiegato amministrativo Mitsubishi Heavy Industries** (sede di Kobe, pendolare). Sposato con Akemi (28, insegnante elementare), una bambina di 6 mesi. Magro, occhiali, salaryman classico (abito grigio, cravatta blu). Timido, ansioso, attacchi di panico. **Era nel cubicolo a sinistra dell'omicidio** l'11/02. Ha sentito tutto (passi, scarpe da ginnastica cigolanti, 3 colpi, raccolta bossoli, fuga decisa) ma **non ha visto nulla**. Paralizzato dalla paura per 40 minuti, poi corre al Kōban. Cooperativo ma traumatizzato, ha bisogno di tatto: trattato male = ritirata, trattato bene = testimonianza in tribunale. |
 
-### Clienti scommettitori (6 voci nel registro chiamate del cellulare di Tachibana)
+### Clienti scommettitori (6 — solo Inoue e Tanaka compaiono nel registro chiamate del cellulare)
 
 | Nome | Età | Chi è |
 |---|---|---|
@@ -209,9 +209,10 @@ La mattina dopo il caso è sul vostro tavolo. E chi ha sparato non ha ancora fin
 
 ### Preparazione (novembre 1997 – gennaio 1998)
 
-- **Novembre–dicembre 1997**: Tachibana studia il calendario del Nitōgun, individua il combattimento adatto a gennaio. Recluta i tre prestanome.
+- **Novembre–dicembre 1997**: Tachibana studia il calendario del Nitōgun, individua il combattimento adatto a gennaio.
+- **Gennaio 1998**: recluta i prestanome (Sasaki a inizio mese, Nishimura a metà) e affida i ¥2 mln a Ōkubo.
 - **Sasaki** e **Nishimura** vengono coinvolti come favore personale, senza sapere nulla.
-- **Ōkubo** non viene coinvolto direttamente: intuisce la truffa osservando le quote anomale e si autoinvita scommettendo ¥3 mln di tasca propria.
+- **Ōkubo** riceve da Tachibana ¥2 mln da scommettere come «favore»; intuisce la truffa dalle quote anomale e aggiunge ¥3 mln di tasca propria.
 
 ### Esecuzione (gennaio 1998)
 
@@ -262,7 +263,7 @@ Il caso si risolve con **5–7 ore di gioco di triangolazione**, non con un colp
 
 ### Sui poteri dei PG (sistema GENKAI)
 
-I PG hanno abilità di percezione/intuizione/pressione (Satori, Kage, Enja, Kyōryoku, ecc.) che li **aiutano pesantemente** nelle scene chiave: capire se un sospetto mente, cogliere un dettaglio nascosto in una stanza, ottenere un crollo emotivo in interrogatorio, intuire una connessione altrimenti invisibile. **Non sostituiscono però l'indagine procedurale**: un Satori ben tirato può dire al PG "*Inagaki ti sta nascondendo qualcosa*" — ma per **incastrare** Inagaki servono comunque movimenti bancari, tabulati, testimonianza concorde di un altro PNG. I poteri sono **acceleratori di intuizione**, non scorciatoie probatorie.
+I PG hanno strumenti di percezione, intuizione e pressione (i Gou, il Satori, gli Enja, il Kyōryoku) che li **aiutano pesantemente** nelle scene chiave: capire se un sospetto mente, cogliere un dettaglio nascosto in una stanza, ottenere un crollo emotivo in interrogatorio, intuire una connessione altrimenti invisibile. **Non sostituiscono però l'indagine procedurale**: un Satori ben tirato può dire al PG "*Inagaki ti sta nascondendo qualcosa*" — ma per **incastrare** Inagaki servono comunque movimenti bancari, tabulati, testimonianza concorde di un altro PNG. I poteri sono **acceleratori di intuizione**, non scorciatoie probatorie.
 
 **Regola operativa**: il GM concede al PG l'informazione/sensazione richiesta dal potere, ma chiarisce sempre che **per il magistrato e per la condanna formale serve la prova materiale**. Questo mantiene il ritmo investigativo e la tensione narrativa fino al climax del 22/02.
 
@@ -282,7 +283,7 @@ I PG sono assegnati alla **Sezione Omicidi** della Polizia Prefetturale di Kyoto
 | Pistola illegale Tokarev di Ōkubo (a casa sua) | **Sezione Armi** | Archiviata in faldone, nessuna azione separata | Contestazione minore in sede processuale |
 | Truffa scommesse (gallo sedato gennaio '98) | **Sezione Frodi** | 1–2 settimane | Quadro accusatorio per concorso, utile in tribunale |
 
-**Procedura operativa per i PG**: redigono un memo di trasmissione con i dati raccolti, lo trasmettono alla squadra competente tramite il proprio capo squadra. Le squadre lavorano in parallelo. Il GM restituisce gli esiti narrativamente (es. *"Ispettore, dagli Affari Interni: confermato il pagamento mensile a Inagaki, ¥200.000 in contanti dal conto della Kameoka Nōji"*) al momento opportuno.
+**Procedura operativa per i PG**: redigono un memo di trasmissione con i dati raccolti, lo trasmettono alla squadra competente tramite il commissario Taniguchi (che passa dal PM Watanabe quando serve un'autorizzazione). Le squadre lavorano in parallelo. Il GM restituisce gli esiti narrativamente (es. *"Ispettore, dagli Affari Interni: confermato il pagamento mensile a Inagaki, ¥200.000 in contanti dal conto della Kameoka Nōji"*) al momento opportuno.
 
 **Nota GM**: questa struttura serve a **proteggere i PG dalla dispersione**. I giocatori che vogliono "indagare anche su Inagaki / Kokuzei / società" vanno reindirizzati al delegare. Il caso degli omicidi ha già densità sufficiente per la campagna.
 
@@ -301,14 +302,14 @@ I PG sono assegnati alla **Sezione Omicidi** della Polizia Prefetturale di Kyoto
 
 ## Indizi materiali su Tachibana
 
-- Cellulare NTT DoCoMo: nessuna rubrica, solo registro 10 ultime chiamate (6 clienti + 3 prestanome + Murakami).
+- Cellulare NTT DoCoMo: nessuna rubrica, solo registro 10 ultime chiamate (elenco al punto 22: Murakami, Mariko, Kameoka-tei, Kōrin, i 3 prestanome, Inoue, Tanaka, Hayashi).
 - Taccuino: pagine vecchie strappate. Restano combattimento gennaio '98 (in codice) + appunti prossimo incontro.
 - Copia **Kyoto Shimbun** con annuncio ristorante in tasca giacca.
-- Biglietto autobus andata-ritorno Kameoka (non treno, non auto).
+- Due biglietti di sola andata Kyoto Kōtsū, Kyoto ↔ Kameoka (non treno, non auto); conto dello Shin-Miyako Hotel dell'11/02 sera.
 - Portafoglio Bottega Veneta, ¥180.000 contanti (non rapina).
-- Tessera Club Aoyagi, ricevuta Royal Hotel Karasuma, polaroid donna in kimono.
-- Pillole non identificate (ansiolitici).
-- Chiavetta cassetta di sicurezza nascosta sotto suola.
+- Tessera Club Aoyagi, biglietto da visita con foto della hostess «Mari», ricevuta Royal Hotel Karasuma, polaroid donna in kimono.
+- Blister di Lexotan (ansiolitico).
+- Chiavetta cassetta di sicurezza (targhetta n. 0419) nascosta sotto suola.
 
 ## Indizi distribuzione giornali Kyoto Shimbun
 

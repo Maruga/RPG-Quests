@@ -33,7 +33,7 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 ## Persone presenti
 - Ōkubo Kenji fino al 14/02 (poi in ospedale)
 - Vicini: la **Sig.ra Ueda** (62 anni, vedova, interno 404) sente i due colpi salire dalla **tromba dell'ascensore** (porte aperte al 4° piano in quel momento, eco architettonica del parcheggio sotterraneo). Chiama il 119 alle 22:31. Testimone secondaria.
-- Vicino in auto: residente del condominio (54 anni, dirigente in pensione) — testimone diretto, vede di sfuggita la fuga di Kuroda. **Descrizione fornita** alla polizia: bomber scuro, sneaker chiare, corporatura atletica, ~1,80 m. **Non ricorda il volto** (era buio, fari abbaglianti). Identità per verbale ma non centrale per l'indagine
+- Vicino in auto: residente del condominio (54 anni, dirigente in pensione) — testimone diretto, vede di sfuggita la fuga di Kuroda. **Descrizione fornita** alla polizia: giubbotto scuro imbottito, sneaker scure, corporatura atletica, ~1,80 m. **Non ricorda il volto** (era buio, fari abbaglianti). Identità per verbale ma non centrale per l'indagine
 
 ## Indagine
 - Accesso libero ai PG dopo il 14/02 (Ōkubo in ospedale, l'appartamento può essere ispezionato con consenso)
@@ -42,7 +42,7 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 
 ## Note operative GM
 - L'appartamento può essere visitato prima e dopo il tentato omicidio
-- La cassetta audio richiede ricerca attenta: i PG che dichiarano "perquisizione approfondita" e tirano i dadi giusti la trovano
+- La cassetta audio non è in vista: la trova chi dichiara una perquisizione metodica (sotto la terza tavola del parquet dalla porta) — niente tiro, gli indizi si danno sempre
 - Il fatto che Ōkubo sia armato è un dettaglio narrativo: quando il secondo attentato avviene in ospedale, lui è disarmato e dipende interamente dalla protezione esterna
 
 ## Collegamenti

@@ -18,7 +18,7 @@
 | Regime | Proprietà |
 | Acquisto | 1994, ¥58 milioni, mutuo estinto nel '96 |
 
-**Contesto**: Fushimi-ku è zona residenziale tranquilla a sud di Kyoto, lontana da Gion e dal locale di Tachibana. Scelta deliberata per separare vita pubblica e privata. Il complesso ha portineria (custode **Yamamoto Kazuo**, 58 anni, presente 7:00–19:00), parcheggio sotterraneo assegnato (Toyota Crown nera al posto B-14), nessuna telecamera nei corridoi interni.
+**Contesto**: Fushimi-ku è zona residenziale tranquilla a sud di Kyoto, lontana da Gion e dal locale di Tachibana. Scelta deliberata per separare vita pubblica e privata. Il complesso ha portineria (custode **Yamamoto Kazuo**, 58 anni, presente 7:00–19:00), posto auto assegnato nel garage sotterraneo — vuoto: la Toyota Crown nera è al multipiano della stazione dall'11/02, poi sotto sequestro — nessuna telecamera nei corridoi interni.
 
 ## Ingresso e disposizione
 
@@ -59,7 +59,7 @@
 
 ### Camera da letto
 
-- Comodino sinistro: pillole **Lexotan** (le stesse del flacone in tasca), libro *Norwegian Wood* di Murakami Haruki, occhiali da lettura
+- Comodino sinistro: blister di **Lexotan** (lo stesso ansiolitico che aveva in tasca), libro *Norwegian Wood* di Murakami Haruki, occhiali da lettura
 - Comodino destro: vuoto, ma il cassetto presenta **tracce di profumo femminile** (Aoyagi Mariko ha dormito qui occasionalmente)
 - Armadio: 14 abiti sartoriali, 22 camicie bianche e azzurre, 30 cravatte
 - Cassetto biancheria: **busta sigillata** con ¥800.000 nascosta sotto i calzini (riserva per emergenze)
