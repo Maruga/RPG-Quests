@@ -72,3 +72,22 @@ Esatti: Sake 13 handout, fascicolo 97-KPD-1114, novembre 1997 · Il Giudice 24 �
 
 ## 4. Trovato dopo (2026-09-09, 03:00)
 - `/provalo/img/soglia.jpg` rispondeva **522 dal bordo Cloudflare** (costante, 19 s di timeout) mentre l'origine dà 200 e con una query string passa: la scena con la figura sulla soglia usciva senza immagine. Fix: `img/soglia.jpg?v=20260909` in `provalo/index.html`. Tutte le altre risorse di provalo e scontro: 200.
+
+## 5. Striscia delle prove (2026-09-09 sera, richiesta utente)
+- «Provalo» **tolto dal menu in alto** della home (resta nel menu del wizard, dove non c'è la striscia).
+- Nuova **striscia `.strisc`** fra l'apertura e «Che gioco è», 4 riquadri cliccabili (2×2 su telefono, 4 in fila da 760px):
+  **Prova una mini-avventura** (`provalo/`) · **Prova un combattimento** (`provalo/scontro/`) ·
+  **Crea un'avventura** (`/Progetti`) · **GM Dashboard** (`maru.ga`). I primi due hanno il filetto rosso.
+- Perché fosse **subito visibile anche su telefono**: dall'apertura sono spariti i due bottoni ora doppioni
+  («Provalo: un mini-caso nel browser» e «Costruisci un caso» — restano «✨ Crea un investigatore» e lo Starter spento),
+  logo 120→96px e meno spazio sopra/sotto solo sotto i 760px. Risultato: la striscia inizia a **690px** su uno schermo da 844
+  (prima 1640: due schermate). Su desktop l'apertura è invariata.
+- Resta più in basso la sezione scura «Provalo adesso» (approfondimento con immagine): se all'autore sembra un doppione, si toglie.
+- Backup: `index.html.bak2-20260909`.
+
+## 6. «Pregenerati» (2026-09-09 sera, richiesta utente)
+La sezione della squadra non diceva che sono personaggi già fatti. Ora usa il termine del giro:
+occhiello «Personaggi pregenerati · pronti all'uso», titolo «Gli investigatori già pronti» e testo
+«Cinque schede pregenerate: la squadra del distretto, già compilata — attributi, specializzazione,
+il dono che costa caro, la vita privata. Si stampano, si distribuiscono e si gioca, senza costruire niente.»
+Stesso termine nel rimando dalla banda «Crea il tuo investigatore» e nell'elenco dello Starter.

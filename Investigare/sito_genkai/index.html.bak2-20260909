@@ -57,8 +57,8 @@ section{padding:3.2rem 1.1rem;overflow:hidden}
 /* ── apertura ──────────────────────────────────────── */
 .apertura{position:relative;padding:0;border-bottom:1px solid var(--bordo)}
 .apertura .sfondo{position:absolute;inset:0;background:url(img/kyoto-pioggia.jpg) center/cover;opacity:.16;filter:grayscale(.4)}
-.apertura .dentro{position:relative;padding:2.2rem 1.1rem 1.9rem;text-align:center}
-.logo{width:96px;margin:0 auto .9rem;opacity:.92}
+.apertura .dentro{position:relative;padding:3.4rem 1.1rem 2.6rem;text-align:center}
+.logo{width:120px;margin:0 auto 1.2rem;opacity:.92}
 h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:.01em}
 .h1-kanji{display:block;font-size:.5em;color:var(--rosso);letter-spacing:.4em;margin-bottom:.4rem}
 .occhiello{font-family:var(--sans);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--tenue);margin:0 0 1.1rem}
@@ -70,22 +70,9 @@ h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spa
 .btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
 .btn-forte:hover{background:#a02020;border-color:#a02020;color:#fff}
 .btn-piccolo{font-size:.85rem;padding:.5rem 1rem}
-.fatti{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.6rem;margin-top:1.2rem;font-family:var(--sans);font-size:.82rem;color:var(--tenue)}
+.fatti{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.6rem;margin-top:1.8rem;font-family:var(--sans);font-size:.82rem;color:var(--tenue)}
 .fatti span::before{content:"·";margin-right:.55rem;color:var(--bordo)}
 .fatti span:first-child::before{content:none}
-
-/* ── striscia delle prove (subito sotto l'apertura) ── */
-.strisc{background:var(--carta3);border-bottom:1px solid var(--bordo);padding:1.3rem 1.1rem}
-.strisc .dentro{max-width:1040px;margin:0 auto}
-.strisc .occhiello{margin:0 0 .8rem;text-align:center}
-.prove{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}
-.prova{display:block;background:var(--carta2);border:1px solid var(--bordo);border-top:3px solid var(--bordo);border-radius:10px;padding:.85rem .9rem .9rem;text-decoration:none;color:var(--inchiostro);box-shadow:0 2px 10px rgba(28,26,23,.07);transition:transform .15s,box-shadow .15s,border-color .15s}
-.prova:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(28,26,23,.16);border-color:var(--rosso);border-top-color:var(--rosso)}
-.prova.forte{border-top-color:var(--rosso)}
-.prova .ico{display:block;font-size:1.6rem;line-height:1;margin-bottom:.4rem}
-.prova b{display:block;font-weight:400;font-size:1.02rem;line-height:1.25}
-.prova small{display:block;margin-top:.3rem;font-family:var(--sans);font-size:.75rem;line-height:1.4;color:var(--tenue)}
-.prova .via{display:block;margin-top:.5rem;font-family:var(--sans);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rosso)}
 
 /* ── titoli di sezione ─────────────────────────────── */
 .titolo{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--bordo);padding-bottom:.5rem;margin:0 0 1.6rem}
@@ -213,12 +200,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
   .scheda-cop{grid-template-columns:120px 1fr}
   .scheda-cop > img{width:120px}
   .libretto{grid-template-columns:.9fr 1.1fr;gap:2.2rem}
-  .logo{width:150px;margin-bottom:1.2rem}
-  .apertura .dentro{padding:3.2rem 1.1rem 2.6rem}
+  .logo{width:150px}
   .richiesta .griglia{grid-template-columns:.85fr 1.15fr;gap:2.4rem}
   .modulo .due{grid-template-columns:1fr 1fr}
-  .strisc{padding:1.8rem 1.5rem}
-  .prove{grid-template-columns:repeat(4,1fr);gap:1rem}
   .provalo .griglia{grid-template-columns:1fr 1fr;gap:2.4rem}
   .crea .griglia{grid-template-columns:1.15fr .85fr;gap:2.4rem}
 }
@@ -238,6 +222,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     <button class="hamb" id="hamb" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">☰</button>
     <div class="menu" id="menu">
       <a href="#gioco">Il gioco</a>
+      <a href="provalo/" class="evid">▶ Provalo</a>
       <a href="#starter">Starter</a>
       <a href="#materiale">Materiale</a>
       <a href="#avventure">Avventure</a>
@@ -261,6 +246,8 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
       <a class="btn btn-forte btn-grande" href="/Pg">✨ Crea un investigatore</a>
     </div>
     <div class="bottoni" style="margin-top:.7rem">
+      <a class="btn" href="provalo/">▶ Provalo: un mini-caso nel browser</a>
+      <a class="btn" href="/Progetti">✨ Costruisci un caso</a>
       <span class="btn btn-disab">Scarica lo Starter — a breve</span>
     </div>
     <p class="occhiello" style="margin-top:.9rem">Wizard guidati passo passo, con l'aiuto dell'AI — l'investigatore anche senza registrarsi</p>
@@ -269,39 +256,6 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     </p>
   </div>
 </header>
-
-<!-- ═══════════ STRISCIA: SI PROVA SUBITO ═══════════ -->
-<section class="strisc">
-  <div class="dentro">
-    <p class="occhiello">Si prova subito, qui dentro</p>
-    <div class="prove">
-      <a class="prova forte" href="provalo/">
-        <span class="ico">▶</span>
-        <b>Prova una mini-avventura</b>
-        <small>Nove scene in un appartamento, un tiro per scena, fino alle manette.</small>
-        <span class="via">Gioca ora →</span>
-      </a>
-      <a class="prova forte" href="provalo/scontro/">
-        <span class="ico">⚔</span>
-        <b>Prova un combattimento</b>
-        <small>Un coltello in cucina: uno scontro vero, scambio per scambio.</small>
-        <span class="via">Gioca ora →</span>
-      </a>
-      <a class="prova" href="/Progetti">
-        <span class="ico">✨</span>
-        <b>Crea un'avventura</b>
-        <small>Dal cadavere al colpevole: il wizard costruisce il caso con te.</small>
-        <span class="via">Apri il wizard →</span>
-      </a>
-      <a class="prova" href="https://maru.ga/">
-        <span class="ico">🖥</span>
-        <b>GM Dashboard</b>
-        <small>Il tavolo del GM in una finestra sola. Programma per Windows, gratuito.</small>
-        <span class="via">Scaricala →</span>
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- ═══════════ CHE GIOCO È ═══════════ -->
 <section id="gioco">
@@ -406,7 +360,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <img src="img/squadra-fujita.jpg" alt="Fujita Emi" loading="lazy">
         </div>
         <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:.7rem 0 0;text-align:center">
-          Oppure prendi uno dei cinque <a href="#investigatori">pregenerati</a> della squadra: sono già compilati.
+          Oppure prendi uno dei cinque della squadra, <a href="#investigatori">già pronti</a>.
         </p>
       </div>
     </div>
@@ -427,7 +381,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
         <ul>
           <li><b>L'Ultima Cena di Tanaka</b> — un industriale muore durante la festa nella sua villa. Tutti i sospetti sono ancora lì, sotto lo stesso tetto.</li>
           <li><b>Le regole essenziali</b> — quanto basta per condurre quella serata, senza il peso del sistema completo.</li>
-          <li><b>Cinque schede pregenerate</b> — gli investigatori del distretto, già compilati: si distribuiscono e si gioca subito.</li>
+          <li><b>Cinque schede pronte</b> — gli investigatori del distretto, da distribuire e giocare subito.</li>
           <li><b>Gli handout del caso</b> — referti, rapporti, ritagli: roba vera da posare sul tavolo.</li>
         </ul>
 
@@ -621,11 +575,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
 <!-- ═══════════ INVESTIGATORI ═══════════ -->
 <section id="investigatori" style="background:var(--carta2);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
   <div class="dentro">
-    <p class="occhio">Personaggi pregenerati · pronti all'uso</p>
-    <div class="titolo"><h2>Gli investigatori già pronti</h2><span class="kanji">刑事</span></div>
+    <div class="titolo"><h2>Gli investigatori</h2><span class="kanji">刑事</span></div>
     <p class="stretto" style="margin:0 auto 1.8rem;color:var(--inchiostro2)">
-      Cinque <b>schede pregenerate</b>: la squadra del distretto, già compilata — attributi, specializzazione, il dono che
-      costa caro, la vita privata. Si stampano, si distribuiscono e si gioca, senza costruire niente.
+      Cinque schede pronte: la squadra del distretto, con nome, storia e i propri guai. Si stampano e si gioca.
       Oppure ve li costruite voi, uno per uno.
     </p>
 
