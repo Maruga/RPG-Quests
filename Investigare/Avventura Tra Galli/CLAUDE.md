@@ -4,6 +4,9 @@
 > (ordine dell'autore 2026-09-08): ciò che andrebbe toccato fuori — registri, manuali, altre avventure — si segnala, non si modifica.
 > Valgono le REGOLE FERREE di `../CLAUDE.md`: non inventare, non riaprire decisioni chiuse, leggere i registri prima di toccare.
 > Prima di ogni controllo: **`CHECKLIST_CONTROLLO.md`** (rileggere da zero, mai dalla memoria).
+> **CHI È CHI** (regola ferrea 4, 2026-09-09): ogni nome che può confondersi porta subito dopo, **tra parentesi tonde**, chi è
+> e — dove serve — in che stato è a quel punto: «Watanabe Toshio (testimone)» · «Watanabe Hideo (procuratore)» ·
+> «Tachibana Eiji (vittima, morto l'11/02)» · «Kuroda Ryō (esecutore, in fuga)» — in ogni riga. Verifica: `audit_nomi.py` (scratchpad).
 
 ## L'avventura
 
@@ -15,7 +18,7 @@ complice) e tentando due volte Ōkubo (usuraio, prestanome consapevole). Polizio
 Tono finale: vittoria amara — Saitō non cade per gli omicidi.
 
 **I PG sono la squadra della serie** (`../pg/`, `../Materiale/Scheda_Distretto.md`): briefing del **commissario
-Taniguchi**, **Yamada** accompagna, **Ito** fa i rilievi, il PM **Watanabe Hideo** chiede i mandati al giudice, **Gonda**
+Taniguchi**, **Yamada** accompagna, **Ito** fa i rilievi, **Watanabe Hideo (procuratore)** chiede i mandati al giudice, **Gonda**
 per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. Ganci per i 5 PG in `Inizio - Incarico.md`.
 
 ## Struttura della cartella
@@ -23,7 +26,9 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 - `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
 - `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
 - `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
-  Inagaki, Ōkubo, comparse (`PNG_Nitogun_Banda`), cani (`Luogo_Villa_Saito_Kameoka`)
+  Inagaki, Ōkubo, comparse (`PNG_Nitogun_Banda`), cani (`Luogo_Villa_Saito_Kameoka`). **Ogni PNG ha il blocco «al tavolo»**
+  (2026-09-09): alibi verificabili, come si comporta, deposizione in prima persona (D-01…D-24), En verso i 5 PG e tra PNG,
+  «come cambia nel tempo»; i PNG minori stanno nei Luoghi; quadro d'insieme `PNG/PNG_Quadro_Alibi_En.md`
 - `Immagini/` — `3ProiettiliPorta` (handout, corretta), `InventarioVittima` (handout), `AssassinoArrivaStazione` (handout,
   CAM-12), `VittimaBagno` e `TelecameraAssassinio` (**solo GM**: telecamera interna inesistente), `Copertina` (generica);
   `_originali/` = versioni prima dei ritocchi
@@ -37,7 +42,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 - Al parcheggio di Ōkubo i colpi sono **2**. Kuroda = **istruttore di pugilato** (Tora Boxing Gym). I **Super 8** = filmati
   compromettenti su un politico locale (assicurazione della vittima; filone politico = subtrama)
 - Esito: Kuroda arrestabile (ergastolo) · Hayashi il punto crollabile · **Saitō non incastrato per gli omicidi** (4-6 anni)
-- **Niente intercettazioni** (illegali fino al 1999): tabulati con ordine del PM + sorveglianza. Mandati: Taniguchi → Watanabe → giudice
+- **Niente intercettazioni** (illegali fino al 1999): tabulati con ordine del PM + sorveglianza. Mandati: Taniguchi → Watanabe Hideo (procuratore) → giudice
 - **Ōkubo sa poco** (Storia §27): mai stato al capannone, non conosce Saitō/Hayashi/Kuroda; dà i clienti dai prestiti
   (Hashimoto, Kimura), il ristorante di copertura, l'esistenza del poliziotto. Era il terzo prestanome (¥2 mln + ¥3 suoi, vince ¥15 mln)
 - **Registro delle 10 chiamate = Storia §22**: tra i clienti solo Inoue e Tanaka; gli altri 4 «per altre vie»
@@ -56,7 +61,13 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 ## Stato e prossimi passi
 
 1. ✅ Coerenza (2026-08-24) · ✅ controllo completo e applicazione (2026-09-07/08): `CONTROLLO_2026-09-07.md`
-2. ⏳ **Rilettura dell'autore** («poi controlliamo»)
+   · ✅ **CHI È CHI applicato ovunque** (2026-09-09, formato `Nome (ruolo, stato)`: Tachibana (vittima), Murakami (veterinario),
+   Watanabe Toshio (testimone) / Watanabe Hideo (procuratore), Tanaka Shōji, Sasaki Hideo, Mori, Reiko, Suzuki, Hayama…;
+   script `qualifica_riga.py` (prima citazione per riga, idempotente) e `audit_nomi.py` (cognomi ambigui senza parentesi) nello scratchpad)
+   · ✅ **Schede PNG «al tavolo»** (2026-09-09, su ordine dell'autore): alibi + comportamento + deposizione D-xx + En + evoluzione per
+   tutti i PNG, minori compresi; En decisi (erano «da confermare» nel piano); checklist sezione 12
+2. ⏳ **Rilettura dell'autore** («poi controlliamo»). Le deposizioni citano solo fatti già canonici; l'unica cosa nuova che l'autore
+   deve sapere: nelle deposizioni i nomi dei galli sono «nomi di piatti, come nel giornale» — la lista vera arriva col §C del piano
 3. Poi: **handout** (26 del piano, HTML stile Sake/Ultima Lezione; regole del Manuale GM: pre-elaborati, ≥1 nota utile + ≥1 neutra,
    mai il colpevole; prima i contenuti ex novo del §C del piano da far rileggere) + **immagini** (IMG-03 il gallo dentro il cubicolo,
    IMG-04/05, luoghi, reperti; volti = prompt per ChatGPT, luoghi = Nano Banana, kanji/timbri = PIL) + token ed En da decidere

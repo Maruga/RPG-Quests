@@ -6,7 +6,7 @@ l'unico modo che hanno di restare allineate è **scrivere sul registro**.
 
 | | Chi | Di cosa si occupa | File di sua competenza |
 |---|---|---|---|
-| **A** | Sessione **REGOLE** | Regole del gioco, manuali, avventure, testi | `GENKAI_*.md` · `Avventura */` · `pg/*.md` · `png notevoli/` · `Materiale/` |
+| **A** | Sessione **REGOLE** | Regole del gioco, manuali, avventure, testi | `GENKAI_*.md` · `Avventura */` · `pg/SCHEDE_PG_TUTTE.docx` (unica fonte delle schede PG dal 2026-09-09: i `.md` e il generatore sono in `pg/old/`, superati) · `png notevoli/` · `Materiale/` |
 | **B** | Sessione **WIZARD** | Programmi e sito: wizard PG, wizard casi, sito genkai.it, pubblicazione | `Wizard/codice/GenkaiWizard/` · `sito_genkai/` |
 
 **Se sei una delle due: dichiara all'utente quale sei, alla prima risposta della sessione.**
@@ -28,6 +28,14 @@ devi leggere prima di fare casini. Pago per avere affidabilità.»*
 3. **LEGGERE PRIMA DI TOCCARE.** Nessuna modifica al canone senza aver controllato i registri.
    Si applica **solo** ciò che l'utente ha confermato esplicitamente: una proposta non confermata
    resta una proposta, anche se sembra ovvia.
+4. **CHI È CHI (ordine dell'utente, 2026-09-09 — vale per sempre, in ogni file e in ogni risposta).**
+   Dopo il nome di un personaggio che può confondersi con un altro — stesso cognome, o cognome del cast
+   fisso della serie — si scrive **tra parentesi tonde chi è** e, quando serve a capire la scena, **in che
+   stato è a quel punto della storia**. Formato fisso: `Nome Cognome (ruolo, stato)`:
+   «Watanabe Toshio (testimone)» · «Watanabe Hideo (procuratore)» · «Tachibana Eiji (vittima, morto l'11/02)» ·
+   «Tachibana Mitsuru (ispettore, Crimine Organizzato)» · «Ōkubo Kenji (prestanome, ricoverato dal 14/02)» ·
+   «Kuroda Ryō (esecutore, in fuga)». In ogni riga dove serve, non solo alla prima citazione: il lettore non
+   deve mai fermarsi a chiedersi chi è o cosa gli è successo.
 
 ---
 

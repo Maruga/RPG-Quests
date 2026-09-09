@@ -17,7 +17,7 @@ Villa elegante, recinto in muratura alto 2,5 m, cancello automatico in metallo n
 ## Persone presenti
 - **Saitō Gorō** (51) — capo
 - **Saitō Mieko** (47) — moglie, **non coinvolta**, donna tradizionale dedita alla casa, ignara della reale natura delle attività del marito
-- **Una domestica anziana**, signora **Mori Yasuko** (68), part-time, ignara di tutto
+- **Una domestica anziana**, signora **Mori Yasuko (domestica di casa Saitō; non è Mori Sachiko, l'addetta alle pulizie della stazione)**, 68, part-time, ignara di tutto
 - Saitō Hiroto (28, figlio) vive a Tokyo, ignaro
 
 ## Sicurezza

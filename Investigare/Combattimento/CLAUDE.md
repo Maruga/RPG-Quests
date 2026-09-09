@@ -20,10 +20,20 @@ dell'utente, scena interattiva, scheda per i giocatori. In futuro: più armi, ve
   versione da mantenere). Online: `genkai.it/provalo/scontro/` (da sola) e scena 8 di `genkai.it/provalo/`.
   Motore = solo le regole decise; banco di prova jsdom nello scratchpad di sessione (`prova_scontro.js`).
 - **`Scheda_Giocatori_Combattimento.html`** — riferimento da tavolo (2 pagine A4), DERIVATA dal
-  manuale: se il manuale cambia, si aggiorna.
+  manuale: se il manuale cambia, si aggiorna. Accanto c'è il **PDF pronto da stampare**
+  (`Scheda_Giocatori_Combattimento.pdf`), generato con Chrome headless
+  (`chrome.exe --headless=new --no-pdf-header-footer --print-to-pdf=<pdf> file:///<html>`): a ogni
+  modifica dell'HTML si rigenera e si controlla che resti di 2 pagine (pymupdf). È QUESTO il foglio
+  che va sul tavolo per il combattimento, in ogni avventura: le schede PG portano solo l'equipaggiamento.
 - **`BRIEF_nomi.md`** — brief già servito (nomi Ukemi/Tame decisi).
 
 ## Regole di questa cartella
+
+- **NIENTE NOTE INTERNE SUI MATERIALI PER I GIOCATORI** (utente, 2026-09-09, furioso: aveva trovato
+  «° = valori da provare al tavolo» sulla Scheda Giocatori). Quello che si decide, si testa o resta
+  aperto vive SOLO nel manuale e in `DECISIONI.md`. Sulla Scheda Giocatori, sulle schede PG, sui
+  fogli da tavolo e online: nessun «°», «da validare», «da provare», «da confermare», data di
+  decisione, riferimento a bozze. Il giocatore riceve regole, non lo stato del cantiere.
 
 - Una modifica diventa regola solo quando **l'utente la decide** → si aggiorna qui il manuale
   (con snapshot in `versioni/`), si allinea `DECISIONI.md`, e si segna in `../REGISTRO_MODIFICHE.md`

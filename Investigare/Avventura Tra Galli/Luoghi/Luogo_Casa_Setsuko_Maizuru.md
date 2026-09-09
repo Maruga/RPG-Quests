@@ -1,6 +1,6 @@
 # Casa Tachibana Setsuko — Maizuru
 
-> Casa di famiglia della moglie separata di Tachibana, dove vive con la madre anziana. Distante da Kyoto.
+> Casa di famiglia della moglie separata di Tachibana (vittima), dove vive con la madre anziana. Distante da Kyoto.
 
 ## Dati
 | Campo | Valore |
@@ -22,8 +22,8 @@ Casa tradizionale con tetto in tegole, ingresso *genkan* curato, tatami in tutto
 ## Indizi rilevanti
 - **Vecchie lettere di Tachibana** (anni '85-'95) conservate in una scatola di legno: testimoniano il rapporto, una lettera del 1992 contiene la frase *"a Kameoka ho conosciuto persone che mi possono aiutare"* (primo accenno indiretto al Nitōgun, ricostruibile a posteriori)
 - **Foto di matrimonio strappata** (gesto di rabbia di Setsuko al momento della separazione, conservata)
-- Album di famiglia: foto di Tachibana giovane, prima dell'ingresso nel circuito criminale (1985-1990)
-- **Dichiarazione testamentaria** di Tachibana: registrata presso un notaio di Kyoto nel 1995, nomina Setsuko erede universale (Mariko, l'amante, non è citata)
+- Album di famiglia: foto di Tachibana (vittima) giovane, prima dell'ingresso nel circuito criminale (1985-1990)
+- **Dichiarazione testamentaria** di Tachibana (vittima): registrata presso un notaio di Kyoto nel 1995, nomina Setsuko erede universale (Mariko, l'amante, non è citata)
 - Niente documenti criminali
 
 ## Indagine
@@ -32,10 +32,17 @@ Casa tradizionale con tetto in tegole, ingresso *genkan* curato, tatami in tutto
 - Setsuko risponde a domande con precisione e dignità
 - La madre Eiko offre tè e dolci, ricorda alcuni dettagli del genero
 
+## Al tavolo — Hosokawa Eiko (74, madre di Setsuko)
+
+Minuta, kimono grigio, mani ferme; offre tè e dolci di fagioli prima di qualsiasi domanda e conferma senza esitare la sera dell'11/02 (la lezione, la cena). Parla del genero come di un figlio perso due volte:
+> «Eiji era un bravo ragazzo, prima di Kameoka. Nel '92 è tornato da Kameoka con una macchina nuova e un sorriso che non mi piaceva. Setsuko non lo dice, ma lo aspettava ancora.»
+
+En: +1 con tutti i PG che si tolgono le scarpe e accettano il tè; +2 con Fujita. Se Setsuko si chiude, è Eiko che porta ai PG la scatola delle lettere.
+
 ## Note operative GM
-- Visita **non operativa** ma di **caratterizzazione**: i PG capiscono il passato di Tachibana
+- Visita **non operativa** ma di **caratterizzazione**: i PG capiscono il passato di Tachibana (vittima)
 - Le lettere del 1992 sono un dettaglio narrativo per chi vuole approfondire l'origine della carriera criminale della vittima
-- Possibile gancio: Setsuko consegna ai PG **una chiave** di un vecchio armadio dell'appartamento di Fushimi che Tachibana usava ancora ma di cui lei aveva un duplicato — apre a contenuti dimenticati
+- Possibile gancio: Setsuko consegna ai PG **una chiave** di un vecchio armadio dell'appartamento di Fushimi che Tachibana (vittima) usava ancora ma di cui lei aveva un duplicato — apre a contenuti dimenticati
 
 ## Collegamenti
 - [[PNG_Tachibana_Eiji_Vittima|Tachibana Eiji — Vittima]]

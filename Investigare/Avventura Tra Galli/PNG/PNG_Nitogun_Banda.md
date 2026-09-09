@@ -15,14 +15,14 @@
 | Copertura | Ristorante Kameoka-tei (testa di legno Tachi Yūichirō), società Kameoka Nōji KK |
 | Membri attivi | ~20 operativi (sicurezza, allibratori, addetti galli) + ~5 nucleo dirigente |
 | Affari | Combattimenti clandestini di galli, scommesse, allibraggio illegale |
-| Volume annuo | Stima ~¥80–120 mln di scommesse l'anno (solo via Tachibana) |
+| Volume annuo | Stima ~¥80–120 mln di scommesse l'anno (solo via Tachibana (vittima)) |
 
 ## Simbolo distintivo
 
 **Gallo stilizzato con due speroni sovrapposti sulla zampa destra** (ispirato al nome "due lame"). Il simbolo:
 - **Non è pubblicamente noto** — circola solo all'interno del giro
 - È inciso su monete commemorative interne, alcuni accendini regalati ai clienti VIP, il ricamo interno delle giacche dei dirigenti
-- **Tachibana lo traccia col sangue sul pavimento** della Kyoto Station come ultima dichiarazione: identifica i mandanti
+- **Tachibana (vittima) lo traccia col sangue sul pavimento** della Kyoto Station come ultima dichiarazione: identifica i mandanti
 
 > Per i PG: vedere il disegno **non identifica subito il Nitōgun**. È un "gallo con dettaglio strano" finché non viene incrociato con (a) testimonianze di clienti del giro, (b) archivi storici della Polizia su gruppi locali, (c) interrogatorio di un esperto di combattimenti clandestini, oppure (d) prova materiale (accendino, moneta) trovata in seguito durante perquisizioni.
 
@@ -45,13 +45,13 @@
 
 ### Operativi minori (al capannone)
 - Sicurezza armata: 4-5 uomini, piccoli criminali con armi corte. Non yakuza, reclutati da Hayashi
-- Allibratori secondari: 3 uomini ai banchi, gestiti da Tachibana
+- Allibratori secondari: 3 uomini ai banchi, gestiti da Tachibana (vittima)
 - Addetti galli: 2 uomini per le gabbie e l'arena
 - Vedette: 2 sulla strada di accesso
 
 ### Cliente di vertice (esterni alla banda)
-- ~6 clienti scommettitori abituali (Hashimoto, Fujiwara, Inoue, Yoshida, Kimura, Tanaka), gestiti via telefono da Tachibana
-- Alcuni di alto profilo sociale (Tanaka — ex Kyocera; Fujiwara — collezionista Osaka)
+- ~6 clienti scommettitori abituali (Hashimoto, Fujiwara, Inoue, Yoshida, Kimura, Tanaka Shōji), gestiti via telefono da Tachibana (vittima)
+- Alcuni di alto profilo sociale (Tanaka Shōji — ex Kyocera; Fujiwara — collezionista Osaka)
 
 ### Coperture esterne
 - **Tachi Yūichirō** (62) — testa di legno del ristorante Kameoka-tei (ignaro nel dettaglio, sa di "soldi sporchi" generici)
@@ -77,8 +77,8 @@ A fine gennaio Saitō verifica la truffa del gallo sedato di gennaio. Decisione:
 
 | Bersaglio | Data | Esito |
 |---|---|---|
-| Tachibana Eiji | 11/02 ore 21:21 | Successo (Kuroda) |
-| Murakami Saburō | 13/02 ~14:00 | Successo (Kuroda, xilazina) |
+| Tachibana Eiji (vittima) | 11/02 ore 21:21 | Successo (Kuroda) |
+| Murakami Saburō (veterinario) | 13/02 ~14:00 | Successo (Kuroda, xilazina) |
 | Ōkubo Kenji | 14/02 ore 22:30 | Fallimento parziale (Ōkubo ferito) |
 | Ōkubo Kenji | 17/02 ~18:00 | Esito dipende dai PG |
 
@@ -91,7 +91,7 @@ A fine gennaio Saitō verifica la truffa del gallo sedato di gennaio. Decisione:
 
 ## Cosa NON è il Nitōgun
 - Non è yakuza strutturata (no Yamaguchi-gumi, no Aizu Kotetsu-kai). Saitō ha rotto col mondo yakuza ufficiale negli anni '80
-- Non ha protezione politica ufficiale (a differenza di alcuni gruppi maggiori). I tentativi di corruzione di Tanaka/Fujiwara sui PG sono mossi dai clienti, non dal vertice del gruppo
+- Non ha protezione politica ufficiale (a differenza di alcuni gruppi maggiori). I tentativi di corruzione di Tanaka Shōji e Fujiwara (clienti facoltosi) sui PG sono mossi dai clienti, non dal vertice del gruppo
 - Non ha violenza diffusa: opera in modo silenzioso e mirato, evita scene di guerra aperta
 
 ## Esito investigativo previsto
@@ -113,6 +113,18 @@ Comparse senza scheda: attributi 5-6, **Ki come i PG** (attributo più basso + d
 | **Allibratori, addetti galli, autisti** | 5 dappertutto | 6-7 | nessuna | Non combattono: alzano le mani o corrono per le risaie |
 
 Mod. Presenza all'iniziativa: +1 (Presenza 5) o 0 (Presenza 6).
+
+## Come si comportano le comparse (e chi parla, dopo il blitz)
+
+| Chi | Aspetto | Comportamento | Se fermati |
+|---|---|---|---|
+| **Sicurezza armata** (4-5) | 25-35 anni, giacche di pelle, capelli lunghi o rasati, uno con un dente d'oro: piccoli criminali di Kameoka e Osaka, reclutati da Hayashi | Un colpo di panico verso la porta, poi le risaie. Non parlano: 48 ore e fuori, con l'avvocato del gruppo | En −2 con tutti i PG; non danno un nome |
+| **Vedette** (2) | Contadini della zona, 50-60 anni, pagati ¥20.000 a serata, con un walkie-talkie e un thermos | L'anello più debole: fermati, parlano entro un'ora — Hayashi «il ragazzo con la sigaretta» li paga, e li pagava anche l'anno scorso | +1 con chi non li tratta da criminali |
+| **Allibratori secondari** (3) | Il più anziano tiene un quaderno personale nella giacca (cifre e sigle: un secondo taccuino) | Alzano le mani. Il vecchio, con calma, chiede un avvocato «per questioni fiscali» | 0; il quaderno vale più di loro |
+| **Addetti ai galli** (2) | Mani segnate, odore di stalla, sanno tutto degli animali e niente delle persone | Sono gli unici che conoscevano il «dottore» (Murakami (veterinario)) di persona: lo hanno visto sedare nel retro | +1: parlano volentieri di galli, e così di tutto il resto |
+| **I 60-80 spettatori** | Impiegati, commercianti, qualche volto noto | Fuggono, si vergognano, chiamano gli avvocati. Tra loro, se il GM vuole, un cliente facoltoso o un politico | — |
+
+Il gruppo **non ha un En verso i PG**: ce l'hanno le persone. Per come cambia il Nitōgun nei dodici giorni (prima crepa il 14/02, incontro d'urgenza il 15, «avvisi» dal 16, «basta» il 18, annullamento del 22/02 se avvisato) vedi le tabelle *Come cambia nel tempo* di Saitō, Hayashi, Kuroda e Inagaki; per Tachi Yūichirō (testa di legno) `Luogo_Ristorante_Kameoka_tei`; per l'agente Yamaguchi `Luogo_Stazione_Polizia_Kameoka`.
 
 ## Collegamenti
 - [[PNG_Saito_Goro_Capo_Nitogun|Saitō Gorō — Capo Nitōgun]]

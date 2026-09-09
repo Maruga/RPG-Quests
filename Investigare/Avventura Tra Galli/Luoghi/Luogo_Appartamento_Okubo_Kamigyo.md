@@ -17,7 +17,7 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 
 ## Indizi rilevanti
 - **Kyoto Shimbun di gennaio 1998** con annuncio cerchiato a matita — prova della consapevolezza della truffa
-- **Cassetta audio** nascosta sotto la tavola del parquet (in soggiorno, terza tavola dalla porta): registrazione di una telefonata con Tachibana del 12 gennaio 1998, in cui Tachibana accenna alla truffa parlando in codice. Decifrabile incrociando con il taccuino.
+- **Cassetta audio** nascosta sotto la tavola del parquet (in soggiorno, terza tavola dalla porta): registrazione di una telefonata con Tachibana (vittima) del 12 gennaio 1998, in cui Tachibana accenna alla truffa parlando in codice. Decifrabile incrociando con il taccuino.
 - **Quaderno** in chiaro nel cassetto della scrivania: annotazioni delle proprie scommesse personali, cifre, vincite. Conferma i ¥3 mln scommessi di tasca propria.
 - **Pistola Tokarev TT-33** illegale nel cassetto del comodino (presa per autodifesa dopo l'omicidio Tachibana)
 - Cassaforte da albergo non presente
@@ -28,7 +28,7 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 - Auto di Ōkubo: **Nissan Skyline R32**, posto B-04
 - **14/02 ore 22:30**: Ōkubo rientra al condominio per **un rapido prelievo** (Tokarev nel comodino + contante d'emergenza ¥600.000): vuole partire per Nagoya il mattino seguente e ritiene 5 minuti a casa un rischio gestibile. Kuroda lo aspetta dietro un pilastro vicino al posto B-04. Spara 2 colpi appena Ōkubo scende dall'auto: il primo manca, il secondo lo colpisce alla spalla destra; i due bossoli espulsi restano a terra e vengono repertati (stessa arma della Kyoto Station: collegamento balistico tra i due attacchi). Ōkubo si accuccia dietro l'auto e grida. Un vicino di casa rientra in auto in quel momento dalla rampa: i fari illuminano la scena, Kuroda fugge per la stessa rampa di uscita a piedi.
 - Telecamera del parcheggio: registra **Kuroda** parzialmente, vista parziale del giubbotto bomber e delle scarpe Asics
-- Ambulanza chiamata dal Sig. Hayama alle 22:33, arrivo alle 22:42, ricovero al Kyoto University Hospital alle 23:15
+- Ambulanza chiamata dal Sig. Hayama (vicino di Ōkubo, rientra in auto) alle 22:33, arrivo alle 22:42, ricovero al Kyoto University Hospital alle 23:15
 
 ## Persone presenti
 - Ōkubo Kenji fino al 14/02 (poi in ospedale)
@@ -44,6 +44,18 @@ Edificio invecchiato, ascensore lento, corridoi grigi. Appartamento piccolo con 
 - L'appartamento può essere visitato prima e dopo il tentato omicidio
 - La cassetta audio non è in vista: la trova chi dichiara una perquisizione metodica (sotto la terza tavola del parquet dalla porta) — niente tiro, gli indizi si danno sempre
 - Il fatto che Ōkubo sia armato è un dettaglio narrativo: quando il secondo attentato avviene in ospedale, lui è disarmato e dipende interamente dalla protezione esterna
+
+## Al tavolo — i due vicini (le testimonianze di H-15)
+
+**Sig.ra Ueda** (62, vedova, interno 404): robusta, curiosa, la TV sempre accesa, la catenella alla porta. Parla molto e mette tutto sullo stesso piano — il dettaglio utile e quello inutile. En: +1 con chi la ascolta fino in fondo, −1 con Honda (la interrompe).
+> «Alle dieci e mezza, dieci e trentuno — guardavo il telegiornale — due botte, forti, che venivano su dalla tromba dell'ascensore, la porta era aperta al piano. Poi un uomo che gridava, giù nel garage. Ho chiamato il 119 subito, poi ho chiuso la porta a chiave. Il signor Ōkubo? Uno tranquillo, saluta, rientra tardi; questa settimana non l'avevo visto. Gente strana nel palazzo? Un ragazzo con un giubbotto scuro e un berretto, sabato pomeriggio, nell'androne: ho pensato a un fattorino. Non sono sicura dell'ora. Ci pensate voi, adesso, alle porte del garage?»
+
+Il «fattorino» del pomeriggio è Kuroda che studia il palazzo: la Sig.ra Ueda è l'unica che lo ha visto in faccia, e non lo sa. Un confronto di fotografie (se Kuroda è in custodia) lo conferma «forse».
+
+**Sig. Hayama** (54, dirigente in pensione, interno 702; non è la cameriera Hayama del Kameoka-tei): preciso, indignato, prende appunti lui stesso. En: +1 con Yamamoto (il grado), +1 con chi lo tratta da testimone serio.
+> «Sono rientrato alle dieci e trentadue, l'orologio della macchina. Scendendo la rampa i fari hanno preso un uomo in piedi vicino al posto B-04, e uno a terra dietro una Skyline. Quello in piedi si è girato ed è corso su per la rampa, mi è passato accanto: alto, sull'uno e ottanta, atletico, giubbotto scuro imbottito, scarpe da ginnastica scure, un cappello di lana. La faccia no: i fari erano miei e lui era controluce, ed è durato due secondi. Non ho visto la pistola. Ho chiamato l'ambulanza dal telefono del garage e ho tenuto premuta la spalla del signor Ōkubo con la mia sciarpa finché non sono arrivati. Lui diceva "non chiamate nessuno", poi ha smesso di dire cose. Sono a disposizione per un riconoscimento, ma vi dico subito: riconoscerei il modo di correre, non il viso.»
+
+Tutti e due dicono la verità. Nessuno dei due può identificare Kuroda in aula.
 
 ## Collegamenti
 - [[PNG_Okubo_Kenji_Prestanome_Consapevole|Ōkubo Kenji — Prestanome consapevole]]

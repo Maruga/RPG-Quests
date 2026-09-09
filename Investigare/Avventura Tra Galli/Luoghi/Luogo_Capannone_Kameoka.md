@@ -14,7 +14,7 @@
 
 ## Accesso
 - **Strada principale**: Route 9 da Kyoto, uscita a Kameoka, poi strada provinciale verso ovest, infine strada secondaria sterrata di 800 m
-- **Mezzi pubblici**: ultimo autobus utile parte da Kameoka centro alle 22:15 (Tachibana lo usa il giorno prima dei sopralluoghi)
+- **Mezzi pubblici**: ultimo autobus utile parte da Kameoka centro alle 22:15 (Tachibana (vittima) lo usa il giorno prima dei sopralluoghi)
 - **Auto private**: parcheggio sterrato sul retro, capienza ~30 veicoli, le auto vengono coperte con teli scuri
 - **Sentieri di fuga**: 2 vie secondarie verso le risaie a sud (utili in caso di blitz polizia)
 
@@ -31,7 +31,7 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 ### Zona scommesse (25% spazio)
 - 4 banchi di legno con allibratori
 - Lavagna con quote scritte a gesso, aggiornate a ogni combattimento
-- Tachibana operava qui — il suo banco era il secondo da sinistra, sempre lo stesso
+- Tachibana (vittima) operava qui — il suo banco era il secondo da sinistra, sempre lo stesso
 - Cassaforte mobile (portata via dopo ogni serata)
 
 ### Zona arena (40% spazio)
@@ -42,7 +42,7 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 
 ### Zona retro (15% spazio)
 - Stalla per i galli prima del combattimento (gabbie di legno individuali)
-- Tavolo di "preparazione" per i galli (qui Murakami avrebbe sedato il gallo del Nitōgun)
+- Tavolo di "preparazione" per i galli (qui Murakami (veterinario) avrebbe sedato il gallo del Nitōgun)
 - Cassetta veterinaria (ufficialmente per le cure dopo i combattimenti)
 
 ### Zona magazzino e ufficio (5% spazio)
@@ -66,13 +66,13 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 - **Cassaforte ufficio**: combinazione conosciuta solo da Saitō e Hayashi
 - Registro reale clienti (cartaceo, in codice)
 - Quaderni di scommesse arretrate (5 anni)
-- Inventario galli e veterinario (pagamenti a Murakami)
+- Inventario galli e veterinario (pagamenti a Murakami (veterinario))
 - Materiale per giornate combattimento
 
 ## Come i PG arrivano qui
 
 ### Vie di accesso indiziarie
-1. **Sasaki**: indica zona generale, riconosce insegna "Tanaka Nōki" se mostrata in foto
+1. **Sasaki Hideo (prestanome)**: indica zona generale, riconosce insegna "Tanaka Nōki" se mostrata in foto
 2. **Inoue**: descrive l'interno e la disposizione
 3. **Ōkubo**: indica zona ovest di Kameoka, fiume vicino
 4. **Pedinamento di Hayashi** in giorno operativo (nei giorni precedenti il combattimento)

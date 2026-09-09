@@ -120,6 +120,41 @@ La sua morte ha **due livelli di lettura**:
 
 I PG che leggono entrambi i livelli ottengono **una direzione**: i combattimenti di galli, qualcosa legato a Kameoka. Identificare il **Nitōgun come gruppo specifico** richiede comunque triangolazione del simbolo (gallo con due speroni) con almeno **due** elementi tra: testimonianze di clienti del giro, archivi storici della Polizia su gruppi locali di Kameoka, oggetti emersi durante perquisizioni successive (accendini commemorativi, monete interne), interrogatorio di un esperto di combattimenti clandestini. **Nessun indizio singolo identifica il Nitōgun.** Quelli che si fermano alla scena materiale senza interpretare il disegno possono perdere giorni sui clienti scommettitori.
 
+## En — come lo vedevano (chi piange e chi no)
+
+La vittima non ha alibi né deposizioni: ha le persone che restano. Ognuna lo descrive a modo suo — sono le frasi che i PG sentono.
+
+| Chi | En verso Tachibana | Cosa dice di lui |
+|---|---|---|
+| Aoyagi Mariko (amante) | **+4** | «Rideva, negli ultimi mesi. Non l'avevo mai visto ridere così» |
+| Nishimura Tatsuya (cameriere, prestanome) | +3 | «Mi ha insegnato tutto. Non sta a me parlare della sua vita» |
+| Sasaki Hideo (amico di golf, prestanome) | +2 | «Nel '92 mi ha salvato senza chiedere niente. Gli dovevo un favore» |
+| Inoue Takeshi (cliente, amico) | +2 | «Mi ha presentato mezza Gion. Trovate chi è stato» |
+| Il personale del Kōrin (Kobayashi, lo chef, il barista) | +2 | «Un padrone giusto: pagava puntuale, non alzava mai la voce» |
+| Tanaka Shōji (cliente) | +1 | «Raccoglieva le puntate con discrezione ed eleganza» |
+| Il custode di Fushimi Yamamoto Kazuo | +1 | «Una mancia a Capodanno, ogni anno. Nessun ospite, o quasi» |
+| La suocera Hosokawa Eiko | +1 | «Un bravo ragazzo, prima di Kameoka» |
+| Tachibana Setsuko (moglie separata) | −2, con un +1 sepolto | «Erano gli amici che aveva scelto» — e conserva le sue lettere |
+| Ōkubo Kenji (prestanome consapevole) | 0 | «Un bastardo bravo» |
+| Yoshida, Fujiwara (clienti) | 0 | «Un nome sul giornale» |
+| Hashimoto, Kimura (clienti rovinati) | −1 | «Mi dava i nomi e le quote. Il resto l'ho fatto io» |
+| Dr. Murakami Saburō (veterinario complice) | −2 | «Rapporti professionali» — lo ha comprato con la sua disperazione |
+| Kuroda Ryō (esecutore) | −1 | «Un lavoro» |
+| Hayashi Tomoki (logistica) | −3 | «Ei-san» al telefono, e la trappola in faccia |
+| Saitō Gorō (capo del Nitōgun) | **−5** | «Un uomo di gusto. Lo dico con dispiacere» |
+
+## Come cambia l'immagine della vittima nei dodici giorni
+
+| Quando | Cosa sanno i PG di lui | Da chi |
+|---|---|---|
+| 12/02 mattina | Gestore rispettabile di un locale a Gion, separato, incensurato. ¥180.000 in tasca, un accendino inciso, una fede e un biglietto da visita di una hostess | Briefing (H-01…H-04) |
+| 12/02 | Un uomo che ha viaggiato in autobus fino a Kameoka e ha cenato da solo. Nel bagagliaio della Crown, piume e sangue di gallo | Reperti, Crown |
+| 13/02 | «Scommesse private tra amici»: un allibratore. Un amante che ne era innamorata, una moglie che non lo era più | Mariko, Setsuko, Nishimura, Sasaki |
+| 14/02 | L'uomo che ha truffato il giro: il veterinario morto lo dice al posto suo | Autopsia di Murakami (veterinario), estratti conto |
+| 15–16/02 | Un calcolatore prudente: la cassaforte (0418), la lista dei clienti, il secondo registro nel controsoffitto del Kōrin, la chiavetta 0419 di una cassetta di sicurezza | Appartamento di Fushimi, Kōrin, Ōkubo |
+| 18–19/02 | Un uomo che si credeva protetto: i tre rullini Super 8 sviluppati mostrano un politico locale al capannone | Laboratorio (3-4 giorni) |
+| 22/02 | Il suo banco al capannone, il secondo da sinistra, con la lavagna delle quote ancora scritta a gesso | Il blitz |
+
 ---
 
 ## Collegamenti

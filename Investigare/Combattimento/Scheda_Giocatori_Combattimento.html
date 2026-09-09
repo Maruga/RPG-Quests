@@ -7,7 +7,8 @@
 <style>
 :root{ --carta:#f6f3ea; --inchiostro:#1c1a17; --grigio:#6a655c; --rosso:#8b1a1a; --bordo:#cfc7b5; --oro:#b08d2f; }
 *{box-sizing:border-box}
-body{margin:0;background:#e9e5da;color:var(--inchiostro);font-family:Georgia,"Times New Roman",serif;font-size:13.5px;line-height:1.45}
+/* Cambria e non Georgia: Georgia ha le cifre «antiche» (lo 0 è alto come una o e si confondono), qui i numeri devono leggersi al volo */
+body{margin:0;background:#e9e5da;color:var(--inchiostro);font-family:Cambria,"Palatino Linotype","Times New Roman",serif;font-variant-numeric:lining-nums;font-size:13.5px;line-height:1.45}
 .foglio{max-width:210mm;margin:0 auto;background:var(--carta);padding:10mm 12mm;box-shadow:0 3px 16px rgba(0,0,0,.15)}
 header{ text-align:center;border-bottom:3px double var(--inchiostro);padding-bottom:6px;margin-bottom:10px }
 header h1{font-size:1.35rem;margin:0;font-weight:700;letter-spacing:.04em}
@@ -32,8 +33,10 @@ th{background:rgba(0,0,0,.06);font-size:10px;text-transform:uppercase;letter-spa
 .memo{border:2px solid var(--rosso);border-radius:6px;padding:5px 9px;background:#fdf3f3;font-size:12.5px;margin-top:6px;break-inside:avoid}
 footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var(--grigio);border-top:1px solid var(--bordo);margin-top:10px;padding-top:5px;letter-spacing:.08em}
 @media print{
-  body{background:#fff}
-  .foglio{box-shadow:none;max-width:none;padding:8mm 10mm}
+  body{background:#fff;font-size:13px}
+  .foglio{box-shadow:none;max-width:none;padding:7mm 10mm}
+  section{margin:0 0 7px}
+  footer{margin-top:6px;padding-top:3px}
   @page{size:A4;margin:0}
 }
 </style>
@@ -113,25 +116,25 @@ footer{font-family:Arial,sans-serif;text-align:center;font-size:.68rem;color:var
 
 <section>
 <h2>Le armi</h2>
-<p class="mini">Attacco: <b>Presenza</b> = impeto · <b>Pazienza</b> = il momento · <b>Silenzio</b> = calma · <b>Lucidità</b> = la linea · <b>Distacco</b> = freddezza · <b>Ascolto</b> = tempo e distanza. Difesa: <b>fuoco, lanci e granata → Distacco</b> · <b>corto e mani → Pazienza</b> · <b>lungo e catena → Ascolto</b>. Le Senmon d'arma valgono per <b>una sola arma, dichiarata</b>: contano in attacco, <b>mai in difesa</b>. E/C/R = Estrarre / Colpire / Ricarica. ° = valori da provare al tavolo.</p>
+<p class="mini">Attacco: <b>Presenza</b> = impeto · <b>Pazienza</b> = il momento · <b>Silenzio</b> = calma · <b>Lucidità</b> = la linea · <b>Distacco</b> = freddezza · <b>Ascolto</b> = tempo e distanza. Difesa: <b>fuoco, lanci e granata → Distacco</b> · <b>corto e mani → Pazienza</b> · <b>lungo e catena → Ascolto</b>. Le Senmon d'arma valgono per <b>una sola arma, dichiarata</b>: contano in attacco, <b>mai in difesa</b>. E/C/R = Estrarre / Colpire / Ricarica.</p>
 <table>
 <tr><th>Arma</th><th>Attacco</th><th>Difesa</th><th>E/C/R</th><th>Danno</th></tr>
 <tr><td><b>Lotta</b> (mani nude)</td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1</b></td></tr>
 <tr><td><b>Improvvisata</b></td><td>Presenza</td><td>Pazienza</td><td>1/1/—</td><td><b>1–2</b></td></tr>
-<tr><td><b>Machete / accetta</b> °</td><td>Presenza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
+<tr><td><b>Machete / accetta</b></td><td>Presenza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
 <tr><td><b>Granata</b> (area)</td><td>Presenza</td><td>Distacco</td><td>2/2/—</td><td><b>4</b>+scarto</td></tr>
 <tr><td><b>Coltello / pugnale</b></td><td>Pazienza</td><td>Pazienza</td><td>2/1/—</td><td><b>2</b></td></tr>
-<tr><td><b>Katana / spada</b> °</td><td>Pazienza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
+<tr><td><b>Katana / spada</b></td><td>Pazienza</td><td>Ascolto</td><td>3/2/—</td><td><b>3</b></td></tr>
 <tr><td><b>Fucile di precisione</b>*</td><td>Pazienza</td><td>Distacco</td><td>5/3/5</td><td><b>5</b></td></tr>
 <tr><td><b>Manganello</b> (keibō)</td><td>Silenzio</td><td>Ascolto</td><td>2/2/—</td><td><b>2</b></td></tr>
-<tr><td><b>Mazza / spranga</b> °</td><td>Silenzio</td><td>Ascolto</td><td>2/2/—</td><td><b>3</b></td></tr>
+<tr><td><b>Mazza / spranga</b></td><td>Silenzio</td><td>Ascolto</td><td>2/2/—</td><td><b>3</b></td></tr>
 <tr><td><b>Revolver d'ordinanza</b> (3 colpi)</td><td>Lucidità</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
-<tr><td><b>Automatica 9mm</b> ° (3 colpi)</td><td>Lucidità</td><td>Distacco</td><td>3/2/4</td><td><b>4</b></td></tr>
-<tr><td><b>Compatta .22/.25</b> °</td><td>Lucidità</td><td>Distacco</td><td>2/1/4</td><td><b>3</b></td></tr>
+<tr><td><b>Automatica 9mm</b> (3 colpi)</td><td>Lucidità</td><td>Distacco</td><td>3/2/4</td><td><b>4</b></td></tr>
+<tr><td><b>Compatta .22/.25</b></td><td>Lucidità</td><td>Distacco</td><td>2/1/4</td><td><b>3</b></td></tr>
 <tr><td><b>Fucile</b> (pompa/caccia)</td><td>Distacco</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
 <tr><td><b>Mitragliatrice leggera</b> (raffica)</td><td>Distacco</td><td>Distacco</td><td>4/2/5</td><td><b>4</b></td></tr>
-<tr><td><b>Catena / frusta</b> °</td><td>Ascolto</td><td>Ascolto</td><td>2/2/—</td><td><b>2</b></td></tr>
-<tr><td><b>Armi da lancio</b> ° (coltello, bottiglia)</td><td>Ascolto</td><td>Distacco</td><td>1/1/—</td><td><b>1–2</b></td></tr>
+<tr><td><b>Catena / frusta</b></td><td>Ascolto</td><td>Ascolto</td><td>2/2/—</td><td><b>2</b></td></tr>
+<tr><td><b>Armi da lancio</b> (coltello, bottiglia)</td><td>Ascolto</td><td>Distacco</td><td>1/1/—</td><td><b>1–2</b></td></tr>
 </table>
 <p class="mini">* richiede la Senmon <i>Tiro di precisione</i>; a <i>lontano</i> nessun malus di distanza. La mitragliatrice pesante (5/3/6, danno 5, raffica) è materiale da scena.</p>
 </section>

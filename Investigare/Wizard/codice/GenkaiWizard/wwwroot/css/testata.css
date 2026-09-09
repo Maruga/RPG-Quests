@@ -1,0 +1,63 @@
+/* ═══════════ Testata e piede del SITO, dentro il wizard ═══════════
+   Stessa barra, stessi colori e stesso piede di genkai.it (sito_genkai/index.html):
+   chi arriva dalla home deve trovarsi ancora nello stesso posto. */
+:root{
+  --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
+  --inchiostro:#1c1a17; --inchiostro2:#4a453d; --tenue:#6a655c;
+  --rosso:#8b1a1a; --bordo:#d8cfc0;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+html{scroll-padding-top:60px}
+body{background:var(--carta);color:var(--inchiostro);margin-bottom:0;display:flex;flex-direction:column;min-height:100vh}
+body > .container{flex:1 0 auto}
+/* la barra di navigazione dei passi era bianca: sulla carta stona */
+.wz-nav{background:var(--carta)}
+
+/* ── barra ── */
+.barra{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.96);border-bottom:1px solid var(--bordo);backdrop-filter:blur(6px)}
+.barra .dentro{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:.9rem;padding:.5rem 1.1rem}
+.marchio{font-family:var(--sans);font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--inchiostro);white-space:nowrap;font-size:.95rem}
+.barra .marchio,.barra .marchio:hover{color:var(--inchiostro)}
+.barra .menu a{color:var(--inchiostro2)}
+.barra .menu a:hover,.barra .menu a.evid{color:var(--rosso)}
+.marchio i{font-style:normal;color:var(--rosso)}
+.menu{display:flex;gap:.95rem;overflow-x:auto;margin-left:auto;scrollbar-width:none;align-items:center}
+.menu::-webkit-scrollbar{display:none}
+.menu a,.menu button.voce{font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--inchiostro2);text-decoration:none;white-space:nowrap;padding:.35rem 0;border:0;border-bottom:2px solid transparent;background:transparent;cursor:pointer}
+.menu a:hover,.menu button.voce:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
+.menu a.evid{color:var(--rosso)}
+.menu a.attiva{border-bottom-color:var(--rosso)}
+.menu a.solo-mob{display:none}
+.menu form{margin:0;display:inline}
+.menu .dropdown-menu{font-family:var(--sans);font-size:.9rem}
+.hamb{display:none;flex:none;border:1px solid var(--bordo);background:var(--carta2);border-radius:7px;width:2.5rem;height:2.2rem;font-size:1.25rem;line-height:1;color:var(--inchiostro);cursor:pointer;padding:0}
+.pillola{flex:none;font-family:var(--sans);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--rosso);border:1px solid var(--rosso);border-radius:999px;padding:.34rem .8rem;text-decoration:none;white-space:nowrap}
+.pillola:hover{background:#a02020;color:#fff}
+.accesso{flex:none;font-family:var(--sans);font-size:.82rem;letter-spacing:.05em;text-decoration:none;color:var(--inchiostro);border:1px solid var(--bordo);background:var(--carta2);border-radius:999px;padding:.28rem .8rem;white-space:nowrap;max-width:11rem;overflow:hidden;text-overflow:ellipsis}
+.accesso:hover{color:var(--rosso);border-color:var(--rosso)}
+@media(max-width:759px){
+  .barra .dentro{flex-wrap:wrap;gap:.55rem}
+  .hamb{display:inline-flex;align-items:center;justify-content:center}
+  .pillola{margin-left:auto;font-size:.72rem;letter-spacing:.02em;padding:.32rem .6rem}
+  .pillola .lungo{display:none}
+  .accesso{display:none}
+  .menu{display:none;flex-direction:column;align-items:stretch;gap:0;width:100%;margin:0;padding:.2rem 0 .4rem;border-top:1px solid var(--bordo);overflow:visible}
+  .menu a,.menu button.voce{padding:.65rem 0;border-bottom:1px solid var(--carta3);font-size:.9rem;text-align:left;width:100%}
+  .menu a.solo-mob{display:block}
+  .barra.aperta .menu{display:flex}
+}
+@media(min-width:760px){ .menu{order:1;margin-left:auto} .pillola{order:2;margin-left:.2rem} .accesso{order:3} }
+
+/* ── piede ── */
+.piede{background:var(--inchiostro);color:#cfc7b5;padding:2.2rem 1.1rem;font-family:var(--sans);font-size:.85rem;margin-top:3rem}
+.piede a{color:#e0d8c8}
+.piede .dentro{max-width:1040px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+
+/* ── pagine di testo (privacy, errore) ── */
+.testo{max-width:760px;margin:1.2rem auto 2rem;font-size:1rem;line-height:1.6}
+.testo h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(1.6rem,4vw,2.1rem);margin:.4rem 0 .3rem}
+.testo h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:1.25rem;border-bottom:1px solid var(--bordo);padding-bottom:.3rem;margin:1.8rem 0 .7rem}
+.testo .occhio{font-family:var(--sans);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosso);margin:0}
+.testo .nota{font-family:var(--sans);font-size:.85rem;color:var(--tenue)}
+.testo a{color:var(--rosso)}
+.testo code{color:var(--rosso);background:var(--carta3);padding:.05rem .3rem;border-radius:4px}

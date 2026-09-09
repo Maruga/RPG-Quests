@@ -41,20 +41,20 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 
 ## Dinamica omicidio
 
-- **21:18**: Tachibana entra nel bagno, va al cubicolo centrale, chiude la porta
-- **21:19**: Watanabe Toshio è già nel cubicolo a sinistra (entrato alle 21:14)
+- **21:18**: Tachibana (vittima) entra nel bagno, va al cubicolo centrale, chiude la porta
+- **21:19**: Watanabe Toshio (testimone) è già nel cubicolo a sinistra (entrato alle 21:14)
 - **21:20**: Kuroda Ryō entra nel bagno, controlla con un'occhiata che il bagno sia vuoto a parte i cubicoli
 - **21:21**: Kuroda spara 3 colpi cal. 9×18 attraverso la porta del cubicolo centrale, all'altezza del torace
 - **21:21+10s**: Kuroda raccoglie i bossoli, esce
-- **21:21+30s**: Tachibana, ancora cosciente per pochi secondi, traccia col sangue sul pavimento il simbolo del gallo Nitōgun (due speroni sovrapposti)
-- **22:01**: Watanabe esce dal proprio cubicolo dopo 40 minuti di paralisi e segnala
+- **21:21+30s**: Tachibana (vittima), ancora cosciente per pochi secondi, traccia col sangue sul pavimento il simbolo del gallo Nitōgun (due speroni sovrapposti)
+- **22:01**: Watanabe Toshio (testimone) esce dal proprio cubicolo dopo 40 minuti di paralisi e segnala
 - **22:08**: arriva la prima pattuglia, il **Kōban** della stazione (police box interna)
 - **22:35**: arrivano la Kanshiki-ka di **Ito Daisuke** e l'agente **Yamada Tetsuo** per la Sezione Omicidi; il caso passa alla squadra dei PG al briefing delle 08:00 del 12/02
 
 ## Indizi sulla scena
 
 ### Sul corpo
-Vittima trovata seduta in posizione semireclinata, schiena contro la parete del cubicolo, cellulare ancora nella mano sinistra (schermo spento per inattività), pantaloni allacciati. Tachibana **non stava effettivamente usando il bagno**: era entrato in attesa dell'incontro con Hayashi (vedi sezione "Cosa cercava Tachibana alla stazione").
+Vittima trovata seduta in posizione semireclinata, schiena contro la parete del cubicolo, cellulare ancora nella mano sinistra (schermo spento per inattività), pantaloni allacciati. Tachibana (vittima) **non stava effettivamente usando il bagno**: era entrato in attesa dell'incontro con Hayashi (vedi sezione "Cosa cercava Tachibana alla stazione").
 
 ### Sul pavimento
 - Pozza di sangue
@@ -81,17 +81,17 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 - Telecamera all'ingresso del bagno: **non funzionante** dal 9 febbraio (guasto già segnalato, ricambio in arrivo)
 - Telecamera **CAM-12** del corridoio sud del 3° piano (verso i bagni): funzionante, registra il passaggio di Kuroda alle 21:20 (entrata: berretto di lana, giubbotto scuro imbottito, guanti, borsa a tracolla nera) e 21:22 (uscita)
 - Qualità immagine VHS: scarsa, volto non riconoscibile, ma corporatura, abbigliamento e andatura sì
-- Tachibana è ripreso alle 21:17 mentre arriva al 3° piano, **da solo**
+- Tachibana (vittima) è ripreso alle 21:17 mentre arriva al 3° piano, **da solo**
 
 ## Testimoni
 
 - **Watanabe Toshio** (cubicolo accanto): unico testimone diretto, sentito ma non visto
-- Anziana addetta alle pulizie **Mori Sachiko** (62 anni): ha pulito il bagno alle 20:30, era vuoto. Non era presente al momento dei fatti
-- Bigliettaio **Tanigawa** allo Shinkansen Hachijō Gate: ha visto un uomo con giacca scura uscire di fretta ma senza correre intorno alle 21:23 (corrisponde a Kuroda)
+- Anziana addetta alle pulizie della stazione **Mori Sachiko (addetta alle pulizie della stazione; non è Mori Yasuko, la domestica di Saitō)**, 62 anni: piccola, grembiule azzurro JR, sente poco dall'orecchio sinistro e lo dice subito. Ha pulito il bagno alle 20:30, era vuoto. Non era presente al momento dei fatti. Nel verbale del Kōban (H-01): *«Ho pulito il bagno alle otto e mezza, era vuoto, i cestini vuoti. Ho passato lo straccio vicino agli orinatoi, restava umido. Il cartello della telecamera c'era da lunedì. Non ho visto nessuno di strano: la sera della festa c'era poca gente al terzo piano.»* — il pavimento umido è quello su cui Watanabe Toshio (testimone) ha sentito cigolare le scarpe
+- Bigliettaio **Tanigawa** allo Shinkansen Hachijō Gate (non è lo chef Tanigawa del Kōrin): 40 anni, preciso, ricorda le persone dai bagagli. Nel verbale del Kōban: *«Verso le nove e ventitré un uomo con una giacca scura e un berretto è passato davanti allo sportello, di fretta ma senza correre, verso le scale mobili. Ho notato solo che non aveva bagagli, e alla stazione, a quell'ora, tutti ne hanno.»* (corrisponde a Kuroda)
 
 ## Cosa cercava Tachibana alla stazione
 
-**Era stato attirato in trappola da Hayashi.** Durante l'incontro pomeridiano dell'11/02 a Kameoka (14–18), Hayashi gli ha fissato di persona un appuntamento serale alla stazione: *"alle 21:15, al bagno del 3° piano lato Hachijō, posto discreto, ti porto la tua quota del giro di gennaio"*. Per Tachibana è routine mensile (consegna in contanti della sua quota), nessun motivo di sospettare. Il punto incontro nel bagno gli è giustificato come "evitiamo di farci vedere insieme in pubblico, soprattutto in una serata festiva con poche persone in stazione" — pretesto credibile.
+**Era stato attirato in trappola da Hayashi.** Durante l'incontro pomeridiano dell'11/02 a Kameoka (14–18), Hayashi gli ha fissato di persona un appuntamento serale alla stazione: *"alle 21:15, al bagno del 3° piano lato Hachijō, posto discreto, ti porto la tua quota del giro di gennaio"*. Per Tachibana (vittima) è routine mensile (consegna in contanti della sua quota), nessun motivo di sospettare. Il punto incontro nel bagno gli è giustificato come "evitiamo di farci vedere insieme in pubblico, soprattutto in una serata festiva con poche persone in stazione" — pretesto credibile.
 
 ## Movimenti precedenti di Tachibana l'11/02
 

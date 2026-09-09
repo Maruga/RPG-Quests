@@ -11,6 +11,23 @@
 
 ## Da applicare
 
+### 2026-09-09 · WIZARD → REGOLE · Analisi del sito genkai.it: dati della home da confrontare col materiale
+Rapporto in `sito_genkai/ANALISI_SITO_2026-09-09.md` (tabella E). La home dice cose che nelle cartelle non tornano; l'utente
+non ha ancora deciso cosa correggere. Una riga riguarda un'avventura, quindi la segnalo qui: la home presenta
+**L'Ultima Lezione** con «un professore trovato morto **nel suo studio**», mentre `Avventura Ultima Lezione/CLAUDE.md` dice che
+Morimoto (la vittima) muore **a casa** e lo studio 307 contiene solo prove false. Se il CLAUDE.md è giusto, la scheda in home va
+riscritta: chiedo a REGOLE di confermare qual è il canone. Altre discrepanze (solo numeri, restano a WIZARD): handout
+Ultima Lezione 46→24, Falsa Primavera 17→16; gradi dei 5 PG in home (Nakamura e Fujita sono Ispettori in `pg/`, Yamamoto
+Ispettore Capo, Sato Agente Scelto); durate «3-4 ore» vs Starter 2-3 h e Sake 60-90 min. — **DA APPLICARE** (presa visione + conferma studio/casa)
+
+### 2026-09-09 · WIZARD → REGOLE · Cartella `pg/` riordinata: **UNICA fonte delle schede PG = `pg/SCHEDE_PG_TUTTE.docx`**
+Decisione dell'utente («lasciamo schede pg tutte, il resto non serve: troppi doppioni»). I `PG_0x_*.md`, il generatore
+`genera_schede_pg.py` col `TEMPLATE_Scheda_PG.docx`, le `ANTEPRIMA_*.docx`, `token_prompts.md` e gli 11 backup della DOCX
+sono in `pg/old/` (superati: NON aggiornarli, NON citarli come fonte). Restano in `pg/`: la DOCX, `Immagini/`, `FotoScheda/`,
+`Tesserini/`, `Kage/`, `Copioni_PNG.*`, più un `LEGGIMI.md`. La tabella dei ruoli in `CLAUDE.md` ora dice
+`pg/SCHEDE_PG_TUTTE.docx` al posto di `pg/*.md`. Chi cita ancora `pg/PG_0x.md` (memorie di Falsa Primavera e Ultima Lezione,
+Revisione_AI2_Decisioni) parla di un percorso morto. — **DA APPLICARE** (presa visione)
+
 ### 2026-09-07 · WIZARD → REGOLE · Schede PG allineate alle armi v3.1 (fatto da WIZARD su ordine dell'utente)
 Le schede portavano ancora i valori vecchi delle armi. Corretti nei 5 `pg/PG_0*.md`, nel generatore `pg/genera_schede_pg.py`,
 nelle 5 `ANTEPRIMA_*.docx` rigenerate e in `pg/SCHEDE_PG_TUTTE.docx` (backup `SCHEDE_PG_TUTTE.docx.bak-20260907-claude`):

@@ -68,6 +68,7 @@
 - [ ] Dentro l'avventura: nessuna omonimia piena; cognomi e nomi doppi elencati e accettati consapevolmente
 - [ ] Kanji dello stesso personaggio uguali ovunque (schede, immagini, handout); gli indizi basati su un kanji (l'accendino «英») coerenti
 - [ ] Cognomi del cast base (Yamamoto, Honda, Nakamura, Sato, Fujita, Taniguchi, Ito, Watanabe, Gonda) usati per PNG di caso: segnalati
+- [ ] **CHI È CHI** (regola ferrea 4 di `../CLAUDE.md`): ogni nome che può confondersi porta subito dopo, **tra parentesi tonde**, chi è e — dove serve alla scena — in che stato è a quel punto: «Watanabe Toshio (testimone)» / «Watanabe Hideo (procuratore)» / «Tachibana Eiji (vittima, morto l'11/02)» / «Ōkubo Kenji (prestanome, ricoverato dal 14/02)» / «Kuroda Ryō (esecutore, in fuga)». In ogni riga dove serve, mai un cognome nudo ambiguo; le forme «X, il testimone» o «il PM X» non bastano
 
 ## 8. Immagini
 - [ ] Ogni immagine ha un ruolo dichiarato: handout ai giocatori / materiale GM / copertina
@@ -102,3 +103,11 @@
 3. Rapporto `CONTROLLO_<data>.md` con una proposta di default per ogni voce; ok dell'autore
 4. Applicazione + grep di ogni fatto cambiato in TUTTI i file (valore vecchio = 0 occorrenze)
 5. «Stato applicazione» in coda al rapporto; `CLAUDE.md` e memoria aggiornati; segnalazioni fuori cartella
+
+## 12. Schede PNG «al tavolo» (dal 2026-09-09)
+- [ ] Ogni PNG ha **alibi verificabili** per le date che contano (11/02 21:21 · 13/02 14:00 · 14/02 22:30 · 17/02 18:00 · 22/02 23:00): cosa dice, verità, chi lo conferma — e il quadro `PNG/PNG_Quadro_Alibi_En.md` coincide con le schede
+- [ ] Ogni PNG ha **Come si comporta** (primo contatto, sotto pressione, si apre se / si chiude se) e una **descrizione fisica** riconoscibile in una riga
+- [ ] Chi può essere convocato ha la **deposizione in prima persona** (D-xx): dice solo ciò che direbbe davvero, omissioni e bugie segnate sotto, mai note del GM dentro le virgolette
+- [ ] Ogni PNG ha l'**En** verso i 5 PG con il motivo (−5…+5; profonde ±4/±5 solo per legami reali) e verso gli altri PNG con cui è coinvolto
+- [ ] Ogni PNG ha **Come cambia nel tempo**: cosa fa giorno per giorno e cosa lo fa cambiare idea (paura, protezione, giornali, arresti), con l'effetto sull'En
+- [ ] Le date delle deposizioni e degli spostamenti tornano con la cronistoria di `Storia Completa.md` e col calendario di `Inizio - Incarico.md`; i PNG minori dei Luoghi hanno almeno comportamento e frase-tipo

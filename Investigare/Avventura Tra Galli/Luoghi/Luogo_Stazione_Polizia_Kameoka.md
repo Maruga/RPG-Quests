@@ -47,6 +47,14 @@ Edificio anni '80, 3 piani, struttura in cemento armato. Reception al piano terr
 - Sospetto cresce intorno al **giorno 14-15/02** (Inagaki conosce dettagli che non dovrebbe conoscere — esempio: chiede ai PG come sta Ōkubo prima che la notizia del ricovero sia pubblica)
 - Smascheramento ufficiale possibile dopo coordinamento con Kyoto città
 
+## Al tavolo — l'agente Yamaguchi e l'ispettore Tsuda
+
+**Agente Yamaguchi Tetsuo** (32, corrotto per ¥50.000 al mese dal 1995): faccia da bravo ragazzo, sposato, due bambini, sempre un passo dietro Inagaki; guarda il sergente prima di rispondere a qualsiasi domanda. **Come si comporta**: nervoso, gentile, inutile. Preso dagli Affari Interni cede in dieci minuti, piangendo: conferma i pagamenti e le telefonate di allerta al capannone. **Il pericolo**: se Inagaki viene arrestato e lui resta libero, per paura (non per lealtà) avvisa Hayashi entro sera — e il 22/02 salta. Vanno presi insieme. En: Sato +1 (coetanei), Fujita +1 (gentile), gli altri 0. Verso Inagaki +1: «mi ha sempre protetto».
+
+**Ispettore Tsuda Akira** (54, capo stazione, onesto): stempiato, occhiali, scrivania in ordine, orgoglioso della sua stazione. **Come si comporta**: collaborativo con Kyoto, ferito nell'orgoglio quando capisce di Inagaki — e allora è implacabile. **Attenzione**: se i PG gli parlano nel suo ufficio, al 2° piano, Inagaki lo viene a sapere dal corridoio in un'ora. La strada giusta è Taniguchi → Tsuda, fuori dalla stazione. En: Yamamoto +1 (quasi pari grado), gli altri 0; verso Inagaki, dopo: −4.
+
+**Come cambia la stazione nel tempo**: 12–16/02 Inagaki filtra tutto; 17–20/02, con gli Affari Interni al lavoro in silenzio, niente cambia in apparenza; 21/02 l'arresto di Inagaki e Yamaguchi (lo stesso giorno, o niente); 22/02 la stazione di Kameoka è **esclusa dal blitz**, e Tsuda lo accetta a denti stretti.
+
 ## Collegamenti
 - [[PNG_Sergente_Inagaki_Poliziotto_Corrotto|Sergente Inagaki — Poliziotto corrotto]]
 - [[Luogo_Polizia_Prefetturale_Kyoto|Polizia Prefetturale di Kyoto]]

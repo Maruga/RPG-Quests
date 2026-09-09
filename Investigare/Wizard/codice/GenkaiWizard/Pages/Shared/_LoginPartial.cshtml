@@ -1,26 +1,32 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
-
-<ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
+@model string?
+@{
+    /* Due usi: senza model = voci dentro il menu (su telefono), model "desktop" = pillola «Accedi» a destra
+       nella barra (solo da 760px in su, come nella home del sito). */
+    var desktop = Model == "desktop";
+}
+@if (desktop)
 {
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-page="/Account/Index" title="Il tuo account">@User.Identity?.Name</a>
-    </li>
-    <li class="nav-item">
-        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-            <button type="submit" class="nav-link btn btn-link text-dark">Esci</button>
-        </form>
-    </li>
+    if (SignInManager.IsSignedIn(User))
+    {
+        <a class="accesso" asp-area="" asp-page="/Account/Index" title="Il tuo account">@User.Identity?.Name</a>
+    }
+    else
+    {
+        <a class="accesso" asp-area="" asp-page="/Account/Login">Accedi</a>
+    }
+}
+else if (SignInManager.IsSignedIn(User))
+{
+    <a class="solo-mob" asp-area="" asp-page="/Account/Index" title="Il tuo account">@User.Identity?.Name</a>
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/">
+        <button type="submit" class="voce">Esci</button>
+    </form>
 }
 else
 {
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-page="/Account/Registrati">Registrati</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-page="/Account/Login">Accedi</a>
-    </li>
+    <a asp-area="" asp-page="/Account/Registrati">Registrati</a>
+    <a class="solo-mob" asp-area="" asp-page="/Account/Login">Accedi</a>
 }
-</ul>

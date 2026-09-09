@@ -36,23 +36,6 @@ section{padding:3.2rem 1.1rem;overflow:hidden}
 .menu::-webkit-scrollbar{display:none}
 .menu a{font-family:var(--sans);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--inchiostro2);text-decoration:none;white-space:nowrap;padding:.35rem 0;border-bottom:2px solid transparent}
 .menu a:hover{color:var(--rosso);border-bottom-color:var(--rosso)}
-.menu a.evid{color:var(--rosso)}
-.menu a.solo-mob{display:none}
-.hamb{display:none;flex:none;border:1px solid var(--bordo);background:var(--carta2);border-radius:7px;width:2.5rem;height:2.2rem;font-size:1.25rem;line-height:1;color:var(--inchiostro);cursor:pointer;padding:0}
-.pillola{flex:none;font-family:var(--sans);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--rosso);border:1px solid var(--rosso);border-radius:999px;padding:.34rem .8rem;text-decoration:none;white-space:nowrap}
-.pillola:hover{background:#a02020}
-@media(max-width:759px){
-  .barra .dentro{flex-wrap:wrap;gap:.55rem}
-  .hamb{display:inline-flex;align-items:center;justify-content:center}
-  .pillola{margin-left:auto;font-size:.72rem;letter-spacing:.02em;padding:.32rem .6rem}
-  .pillola .lungo{display:none}
-  .accesso{display:none}
-  .menu{display:none;flex-direction:column;gap:0;width:100%;margin:0;padding:.2rem 0 .4rem;border-top:1px solid var(--bordo);overflow:visible}
-  .menu a{padding:.65rem 0;border-bottom:1px solid var(--carta3);font-size:.9rem}
-  .menu a.solo-mob{display:block}
-  .barra.aperta .menu{display:flex}
-}
-@media(min-width:760px){ .menu{order:1;margin-left:auto;gap:.95rem} .pillola{order:2;margin-left:.2rem} .accesso{order:3;margin-left:0} }
 
 /* ── apertura ──────────────────────────────────────── */
 .apertura{position:relative;padding:0;border-bottom:1px solid var(--bordo)}
@@ -93,33 +76,6 @@ h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spa
 .passo .n{flex:none;width:2rem;height:2rem;border:1px solid var(--rosso);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:.85rem;color:var(--rosso)}
 .esempio{background:var(--carta3);border-left:4px solid var(--rosso);border-radius:0 8px 8px 0;padding:1rem 1.2rem;margin-top:1.4rem;font-style:italic}
 .esempio b{font-style:normal}
-
-/* ── provalo ───────────────────────────────────────── */
-.provalo{background:var(--inchiostro);color:#e6dfd0;border-top:1px solid var(--bordo)}
-.provalo .titolo{border-bottom-color:rgba(255,255,255,.14)}
-.provalo .titolo h2{color:#fff}
-.provalo .titolo .kanji{color:rgba(255,255,255,.18)}
-.provalo .griglia{display:grid;grid-template-columns:1fr;gap:1.4rem;align-items:center}
-.provalo img{border-radius:10px;border:1px solid rgba(255,255,255,.12);box-shadow:0 8px 30px rgba(0,0,0,.45)}
-.provalo p{color:#d9d2c3}
-.provalo .btn{border-color:#e6dfd0;color:#e6dfd0}
-.provalo .btn:hover{background:rgba(255,255,255,.08)}
-.provalo .btn-forte{border-color:var(--rosso);color:#fff}
-.provalo .fatti{justify-content:flex-start;margin-top:1.1rem;color:#a89f8e}
-.provalo .fatti span::before{color:#5a5347}
-
-/* ── crea il tuo investigatore ─────────────────────── */
-.crea{background:var(--carta2);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)}
-.crea .griglia{display:grid;grid-template-columns:1fr;gap:1.4rem;align-items:center}
-.crea .cornice{border:1px solid var(--bordo);border-top:4px solid var(--rosso);border-radius:12px;padding:1.5rem 1.5rem 1.6rem;background:var(--carta);box-shadow:0 6px 24px rgba(28,26,23,.10)}
-.crea h2{font-weight:400;font-size:clamp(1.4rem,4.5vw,2rem);margin:.1rem 0 .7rem;line-height:1.2}
-.crea ul{list-style:none;margin:1rem 0 1.4rem;padding:0}
-.crea li{padding:.4rem 0 .4rem 1.7rem;position:relative;border-top:1px dotted var(--bordo)}
-.crea li:first-child{border-top:0}
-.crea li::before{content:"✓";position:absolute;left:0;color:var(--rosso);font-family:var(--sans)}
-.btn-grande{font-size:1.08rem;padding:.95rem 1.9rem}
-.volti-mini{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
-.volti-mini img{aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid var(--bordo);width:100%}
 
 /* ── starter ───────────────────────────────────────── */
 .starter{background:var(--carta3);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)}
@@ -162,20 +118,6 @@ h1{font-size:clamp(1.9rem,6vw,3rem);line-height:1.15;margin:0 0 .5rem;letter-spa
 .libretto-pagine{display:flex;gap:.6rem}
 .libretto-pagine img{width:33%;border:1px solid var(--bordo);border-radius:6px;box-shadow:0 3px 14px rgba(28,26,23,.14)}
 
-/* ── richiesta avventure ───────────────────────────── */
-.richiesta{margin-top:2.2rem;padding-top:1.8rem;border-top:1px solid var(--bordo)}
-.richiesta .griglia{display:grid;grid-template-columns:1fr;gap:1.4rem;align-items:start}
-.modulo{background:var(--carta2);border:1px solid var(--bordo);border-top:3px solid var(--rosso);border-radius:10px;padding:1.2rem 1.3rem}
-.modulo label{display:block;font-family:var(--sans);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--inchiostro2);margin:.8rem 0 .3rem}
-.modulo label:first-child{margin-top:0}
-.modulo input,.modulo select,.modulo textarea{width:100%;box-sizing:border-box;font-family:var(--sans);font-size:16px;padding:.55rem .65rem;border:1px solid var(--bordo);border-radius:7px;background:#fff;color:var(--inchiostro)}
-.modulo textarea{min-height:5.5rem;resize:vertical}
-.modulo .due{display:grid;grid-template-columns:1fr;gap:0 .8rem}
-.modulo .trappola{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.modulo .esito{margin-top:.8rem;font-family:var(--sans);font-size:.9rem;padding:.6rem .8rem;border-radius:7px;background:var(--carta3)}
-.modulo .esito.male{color:var(--rosso)}
-.modulo button{margin-top:1rem}
-
 /* ── investigatori ─────────────────────────────────── */
 .volti{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
 .volto{text-align:center}
@@ -201,10 +143,6 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
   .scheda-cop > img{width:120px}
   .libretto{grid-template-columns:.9fr 1.1fr;gap:2.2rem}
   .logo{width:150px}
-  .richiesta .griglia{grid-template-columns:.85fr 1.15fr;gap:2.4rem}
-  .modulo .due{grid-template-columns:1fr 1fr}
-  .provalo .griglia{grid-template-columns:1fr 1fr;gap:2.4rem}
-  .crea .griglia{grid-template-columns:1.15fr .85fr;gap:2.4rem}
 }
 @media(min-width:1000px){ .schede-3{grid-template-columns:repeat(3,1fr)} }
 @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
@@ -218,17 +156,15 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
 <nav class="barra">
   <div class="dentro">
     <a class="marchio" href="#"><i>限界</i> GENKAI</a>
-    <a class="pillola" href="/Pg">✨ Crea<span class="lungo"> un</span> investigatore</a>
-    <button class="hamb" id="hamb" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">☰</button>
-    <div class="menu" id="menu">
+    <div class="menu">
       <a href="#gioco">Il gioco</a>
-      <a href="provalo/" class="evid">▶ Provalo</a>
       <a href="#starter">Starter</a>
       <a href="#materiale">Materiale</a>
       <a href="#avventure">Avventure</a>
+      <a href="#investigatori">Investigatori</a>
+      <a href="provalo/" style="color:var(--rosso)">Provalo</a>
       <a href="#strumenti">Strumenti</a>
       <a href="#manuali">Manuali</a>
-      <a href="/Account/Login" class="solo-mob" id="accesso-mob">Accedi</a>
     </div>
     <a class="accesso" id="accesso" href="/Account/Login">Accedi</a>
   </div>
@@ -243,12 +179,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     <h1><span class="h1-kanji">限界</span>Kyoto, 1997</h1>
     <p class="motto">I casi si chiudono. <b>Chi li conduce, si consuma.</b><br>Il limite da non superare è il vostro.</p>
     <div class="bottoni">
-      <a class="btn btn-forte btn-grande" href="/Pg">✨ Crea un investigatore</a>
-    </div>
-    <div class="bottoni" style="margin-top:.7rem">
-      <a class="btn" href="provalo/">▶ Provalo: un mini-caso nel browser</a>
+      <span class="btn btn-forte btn-disab">Scarica lo Starter — a breve</span>
+      <a class="btn" href="/Pg">✨ Crea un investigatore</a>
       <a class="btn" href="/Progetti">✨ Costruisci un caso</a>
-      <span class="btn btn-disab">Scarica lo Starter — a breve</span>
     </div>
     <p class="occhiello" style="margin-top:.9rem">Wizard guidati passo passo, con l'aiuto dell'AI — l'investigatore anche senza registrarsi</p>
     <p class="fatti">
@@ -305,64 +238,6 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
       <b>Al tavolo.</b> Sono diciotto ore che sei sveglio e il testimone continua a non guardarti negli occhi.
       Puoi aspettare — ma domattina avrà parlato con l'avvocato. Oppure spingere adesso: tiri, ottieni il nome,
       e paghi un punto di Ki. Ora sai dove cercare. E sei un passo più vicino al punto in cui non reggi più.
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ PROVALO ═══════════ -->
-<section id="provalo" class="provalo">
-  <div class="dentro">
-    <div class="titolo"><h2>Provalo adesso — un mini-caso da giocare</h2><span class="kanji">試</span></div>
-    <div class="griglia">
-      <a href="provalo/"><img src="provalo/img/porta.jpg" alt="Un corridoio buio, una porta socchiusa e una luce in fondo: la prima scena del mini-caso" loading="lazy"></a>
-      <div>
-        <p style="margin-top:0;font-size:1.08rem">Nove scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie,
-        un coltello che salta fuori — fino alle manette. Così funziona GENKAI: <b style="color:#fff">gli indizi si trovano sempre</b>;
-        i dadi decidono solo quanto ti costa trovarli.</p>
-        <p>Giochi con un investigatore già pronto, direttamente qui nel browser. Se vuoi solo vedere come va uno scontro, c'è la scena a sé.</p>
-        <div class="bottoni" style="justify-content:flex-start">
-          <a class="btn btn-forte" href="provalo/">▶ Gioca il mini-caso</a>
-          <a class="btn" href="provalo/scontro/">Prova solo lo scontro</a>
-        </div>
-        <p class="fatti"><span>Nel browser</span><span>Niente da scaricare</span><span>Niente da registrare</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ CREA IL TUO INVESTIGATORE ═══════════ -->
-<section id="crea" class="crea">
-  <div class="dentro">
-    <div class="griglia">
-      <div class="cornice">
-        <p class="occhio">Wizard · nel browser · senza registrarsi</p>
-        <h2>Crea il tuo investigatore</h2>
-        <p style="margin:0;color:var(--inchiostro2)">Dodici passi, spiegati mentre li fai. Alla fine hai la scheda pronta da stampare — col ritratto, se lo vuoi.</p>
-        <ul>
-          <li>Gli attributi e la specializzazione</li>
-          <li>Il dono che costa caro</li>
-          <li>Il problema privato che ti seguirà nei casi</li>
-          <li>La scheda da stampare, col ritratto</li>
-        </ul>
-        <div class="bottoni" style="justify-content:flex-start">
-          <a class="btn btn-forte btn-grande" href="/Pg">✨ Crea un investigatore</a>
-        </div>
-        <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:.9rem 0 0">
-          Resta salvato in questo browser. Con un account lo ritrovi anche dal telefono o da un altro computer.
-        </p>
-      </div>
-      <div>
-        <div class="volti-mini">
-          <img src="img/squadra-yamamoto.jpg" alt="Yamamoto Kenji" loading="lazy">
-          <img src="img/squadra-honda.jpg" alt="Honda Ryota" loading="lazy">
-          <img src="img/squadra-nakamura.jpg" alt="Nakamura Shota" loading="lazy">
-          <img src="img/squadra-sato.jpg" alt="Sato Yuki" loading="lazy">
-          <img src="img/squadra-fujita.jpg" alt="Fujita Emi" loading="lazy">
-        </div>
-        <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:.7rem 0 0;text-align:center">
-          Oppure prendi uno dei cinque della squadra, <a href="#investigatori">già pronti</a>.
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -470,7 +345,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>L'Ultima Cena di Tanaka <span class="kj">酒</span></h3>
           <p class="meta">Una serata · 3–4 ore · per cominciare</p>
           <p>Un industriale dei cosmetici muore durante la festa che ha organizzato in casa propria. Nessuno è uscito dalla villa: il colpevole è ancora fra gli ospiti, e ha una spiegazione pronta per tutto.</p>
-          <div class="piede"><a class="btn btn-piccolo" href="#richiesta" data-avv="L'Ultima Cena di Tanaka">Richiedi →</a><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">13 handout</span></div>
+          <div class="piede"><span class="btn btn-forte btn-piccolo btn-disab">Scarica — a breve</span><span class="bollo bollo-rosso">Nello Starter</span><span class="bollo">13 handout</span></div>
         </div>
       </article>
 
@@ -480,7 +355,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>La Falsa Primavera <span class="kj">偽りの春</span></h3>
           <p class="meta">Una serata · 3–4 ore · marzo 1997</p>
           <p>Un vecchio ceramista di Kiyomizu muore in casa, circondato dalla famiglia che lo assisteva. Tutti hanno fatto il proprio dovere fino all'ultimo — ed è proprio questo il problema.</p>
-          <div class="piede"><a class="btn btn-piccolo" href="#richiesta" data-avv="La Falsa Primavera">Richiedi →</a><span class="bollo">17 handout</span><span class="bollo">10 PNG</span></div>
+          <div class="piede"><span class="bollo">17 handout</span><span class="bollo">10 PNG</span></div>
         </div>
       </article>
 
@@ -490,7 +365,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>L'Ultima Lezione <span class="kj">最後の講義</span></h3>
           <p class="meta">Due sessioni · novembre 1997</p>
           <p>Un professore universitario viene trovato morto nel suo studio. Il dipartimento chiude i ranghi e ogni collega ha una versione che regge — finché non si confrontano gli orari. Il caso può finire in più modi.</p>
-          <div class="piede"><a class="btn btn-piccolo" href="#richiesta" data-avv="L'Ultima Lezione">Richiedi →</a><span class="bollo">46 handout</span></div>
+          <div class="piede"><span class="bollo">46 handout</span></div>
         </div>
       </article>
 
@@ -500,7 +375,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>Il Giudice <span class="kj">判事</span></h3>
           <p class="meta">Caso lungo · per gruppi esperti</p>
           <p>Muore un magistrato, e all'improvviso tutti hanno fretta che il caso si chiuda in un certo modo. Ogni dettaglio è verificabile: se controllate, torna. Se non controllate, vi si ritorce contro.</p>
-          <div class="piede"><a class="btn btn-piccolo" href="#richiesta" data-avv="Il Giudice">Richiedi →</a><span class="bollo">24 handout</span></div>
+          <div class="piede"><span class="bollo">24 handout</span></div>
         </div>
       </article>
 
@@ -510,7 +385,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
           <h3>Occhi di Volpe <span class="kj">狐の目</span></h3>
           <p class="meta">Campagna · 8–10 sessioni</p>
           <p>Qualcuno avvelena i prodotti di una grande azienda alimentare e prende in giro la polizia con lettere pubbliche. Non è il noir intimo delle altre avventure: è una caccia che si gioca anche sui giornali.</p>
-          <div class="piede"><a class="btn btn-piccolo" href="#richiesta" data-avv="Occhi di Volpe">Richiedi →</a><span class="bollo">Ispirata a un caso reale</span></div>
+          <div class="piede"><span class="bollo">Ispirata a un caso reale</span></div>
         </div>
       </article>
 
@@ -534,41 +409,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
         </div>
       </article>
     </div>
-    <div class="richiesta" id="richiesta">
-      <div class="griglia">
-        <div>
-          <p class="occhio">Le avventure complete</p>
-          <h3 style="font-weight:400;font-size:1.35rem;margin:.1rem 0 .6rem">Come si ottengono</h3>
-          <p style="margin:0 0 .8rem;color:var(--inchiostro2)">
-            Il caso dello Starter è gratuito. Le altre avventure — con tutti gli handout, le schede dei PNG e il libro del GM —
-            sono <b>a pagamento</b>. Scrivici quale ti interessa: ti rispondiamo con prezzo e modalità.
-          </p>
-          <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:0">
-            La richiesta arriva a <a href="mailto:info@genkai.it">info@genkai.it</a>. Nessun impegno.
-          </p>
-        </div>
-        <form class="modulo" id="modulo-avv" novalidate>
-          <label for="r-avv">Avventura</label>
-          <select id="r-avv" name="avventura">
-            <option>L'Ultima Cena di Tanaka</option>
-            <option>La Falsa Primavera</option>
-            <option>L'Ultima Lezione</option>
-            <option>Il Giudice</option>
-            <option>Occhi di Volpe</option>
-            <option>Tutte — vorrei informazioni generali</option>
-          </select>
-          <div class="due">
-            <div><label for="r-nome">Nome</label><input id="r-nome" name="nome" maxlength="80" autocomplete="name"></div>
-            <div><label for="r-email">Email (per risponderti)</label><input id="r-email" name="email" type="email" maxlength="120" autocomplete="email" required></div>
-          </div>
-          <label for="r-testo">Messaggio (facoltativo)</label>
-          <textarea id="r-testo" name="testo" maxlength="4000" placeholder="Quanti giocatori siete, quando vorreste giocarla, se avete già provato GENKAI…"></textarea>
-          <div class="trappola" aria-hidden="true"><label>Sito<input name="sito" tabindex="-1" autocomplete="off"></label></div>
-          <button type="submit" class="btn btn-forte">Invia la richiesta</button>
-          <div class="esito" hidden></div>
-        </form>
-      </div>
-    </div>
+    <p style="font-family:var(--sans);font-size:.8rem;color:var(--tenue);margin:1.2rem 0 0;text-align:center">
+      Per ora si scarica il caso dello Starter. Gli altri arrivano.
+    </p>
   </div>
 </section>
 
@@ -591,7 +434,7 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
 
     <div class="bottoni" style="margin-top:1.6rem">
       <a class="btn" href="squadra/">📖 Sfoglia il libretto della squadra</a>
-      <a class="btn btn-forte" href="/Pg">✨ Creane uno tuo</a>
+      <a class="btn" href="/Pg">✨ Creane uno tuo</a>
     </div>
   </div>
 </section>
@@ -688,10 +531,9 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
     <p class="occhio">Kyoto, 1997</p>
     <h2 style="font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);margin:0 0 1.2rem">Un caso si chiude. La città, no.</h2>
     <div class="bottoni">
-      <a class="btn btn-forte" href="/Pg">✨ Crea un investigatore</a>
-      <a class="btn" href="provalo/">▶ Provalo</a>
+      <span class="btn btn-forte btn-disab">Scarica lo Starter — a breve</span>
+      <a class="btn" href="/Pg">✨ Crea un investigatore</a>
       <a class="btn" href="/Progetti">✨ Costruisci un caso</a>
-      <span class="btn btn-disab">Scarica lo Starter — a breve</span>
     </div>
   </div>
 </section>
@@ -699,63 +541,21 @@ footer .dentro{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-betwee
 <footer>
   <div class="dentro">
     <div><b>限界 GENKAI</b> — gioco di ruolo investigativo · Kyoto, 1997</div>
-    <div><a href="provalo/">Provalo</a> · <a href="/Pg">Crea un investigatore</a> · <a href="squadra/">La squadra</a> · <a href="https://maru.ga/">GM Dashboard</a></div>
+    <div><a href="squadra/">La squadra</a> · <a href="https://maru.ga/">GM Dashboard</a></div>
   </div>
 </footer>
 
 
 <script>
-// menu ☰ su telefono: si apre e si chiude, e si chiude da solo quando si sceglie una voce
-(() => {
-  const barra = document.querySelector('.barra'), h = document.getElementById('hamb'), m = document.getElementById('menu');
-  if (!barra || !h || !m) return;
-  const chiudi = () => { barra.classList.remove('aperta'); h.setAttribute('aria-expanded', 'false'); h.textContent = '☰'; };
-  h.addEventListener('click', () => {
-    const aperto = barra.classList.toggle('aperta');
-    h.setAttribute('aria-expanded', aperto ? 'true' : 'false'); h.textContent = aperto ? '✕' : '☰';
-  });
-  m.querySelectorAll('a').forEach(a => a.addEventListener('click', chiudi));
-  window.addEventListener('resize', () => { if (window.innerWidth >= 760) chiudi(); });
-})();
-
-// modulo di richiesta avventure: i bottoni «Richiedi →» preselezionano l'avventura; l'invio usa l'endpoint dei commenti del sito
-(() => {
-  const form = document.getElementById('modulo-avv');
-  if (!form) return;
-  document.querySelectorAll('a[data-avv]').forEach(a => a.addEventListener('click', () => { form.avventura.value = a.dataset.avv; }));
-  const esito = form.querySelector('.esito'), bottone = form.querySelector('button[type=submit]');
-  const mostra = (html, male) => { esito.hidden = false; esito.classList.toggle('male', !!male); esito.innerHTML = html; };
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    const email = form.email.value.trim();
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { mostra('Serve un indirizzo email per risponderti.', true); form.email.focus(); return; }
-    const avv = form.avventura.value, msg = form.testo.value.trim();
-    const dati = { pagina: 'Richiesta avventura', esito: avv, nome: form.nome.value.trim(), email,
-                   testo: (msg || 'Richiesta informazioni') + ' — avventura: ' + avv, sito: form.sito.value };
-    bottone.disabled = true; bottone.textContent = 'Invio…';
-    try {
-      const r = await fetch('/api/commenti', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(dati) });
-      if (!r.ok) throw new Error('server ' + r.status);
-      bottone.textContent = 'Inviata ✓';
-      mostra('Grazie: la richiesta è arrivata. Ti scriviamo a ' + email + '.', false);
-    } catch (err) {
-      bottone.disabled = false; bottone.textContent = 'Invia la richiesta';
-      const oggetto = encodeURIComponent('Richiesta avventura — ' + avv);
-      const corpo = encodeURIComponent((msg || 'Vorrei informazioni su questa avventura.') + (form.nome.value ? '\n\n— ' + form.nome.value : ''));
-      mostra(`Non sono riuscito a inviarla da qui. Puoi scrivere a <a href="mailto:info@genkai.it?subject=${oggetto}&body=${corpo}">info@genkai.it</a>.`, true);
-    }
-  });
-})();
-
 // mostra «Accedi» oppure il nome di chi è già entrato
 (async () => {
-  const voci = [document.getElementById('accesso'), document.getElementById('accesso-mob')].filter(Boolean);
-  if (!voci.length) return;
+  const a = document.getElementById('accesso');
+  if (!a) return;
   try {
     const r = await fetch('/api/utente', { headers: { 'Accept': 'application/json' } });
     if (!r.ok) return;
     const u = await r.json();
-    if (u.autenticato) voci.forEach(a => { a.textContent = u.nome; a.href = '/Account'; a.title = 'Il tuo account'; });
+    if (u.autenticato) { a.textContent = u.nome; a.href = '/Account'; a.title = 'Il tuo account'; }
   } catch { /* sito aperto da solo, senza applicazione: resta «Accedi» */ }
 })();
 </script>

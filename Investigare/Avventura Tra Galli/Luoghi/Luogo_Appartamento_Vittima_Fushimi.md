@@ -18,7 +18,7 @@
 | Regime | Proprietà |
 | Acquisto | 1994, ¥58 milioni, mutuo estinto nel '96 |
 
-**Contesto**: Fushimi-ku è zona residenziale tranquilla a sud di Kyoto, lontana da Gion e dal locale di Tachibana. Scelta deliberata per separare vita pubblica e privata. Il complesso ha portineria (custode **Yamamoto Kazuo**, 58 anni, presente 7:00–19:00), posto auto assegnato nel garage sotterraneo — vuoto: la Toyota Crown nera è al multipiano della stazione dall'11/02, poi sotto sequestro — nessuna telecamera nei corridoi interni.
+**Contesto**: Fushimi-ku è zona residenziale tranquilla a sud di Kyoto, lontana da Gion e dal locale di Tachibana (vittima). Scelta deliberata per separare vita pubblica e privata. Il complesso ha portineria (**Yamamoto Kazuo (custode; non è parente del capo squadra Yamamoto Kenji)**, 58 anni, presente 7:00–19:00), posto auto assegnato nel garage sotterraneo — vuoto: la Toyota Crown nera è al multipiano della stazione dall'11/02, poi sotto sequestro — nessuna telecamera nei corridoi interni.
 
 ## Ingresso e disposizione
 
@@ -46,16 +46,16 @@
     - Gennaio 1998 (questa con annuncio cerchiato a matita leggera)
   - Cassetto 4: documentazione personale (passaporto, certificati, atto di proprietà)
 
-> Tutte e 4 le copie del Kyoto Shimbun riportano l'annuncio del **Ristorante Kameoka-tei** con "promozione speciale" in date diverse (ogni mese, una data). Nessuna copia precedente all'ottobre '97 — Tachibana ha iniziato a conservarle solo da quando ha cominciato a pianificare la truffa con Murakami.
+> Tutte e 4 le copie del Kyoto Shimbun riportano l'annuncio del **Ristorante Kameoka-tei** con "promozione speciale" in date diverse (ogni mese, una data). Nessuna copia precedente all'ottobre '97 — Tachibana (vittima) ha iniziato a conservarle solo da quando ha cominciato a pianificare la truffa con Murakami (veterinario).
 
 - **Cassaforte a muro** dietro un quadro paesaggistico (calligrafia di Mt. Fuji), modello **Sentry** elettronica con codice numerico:
   - ¥4.200.000 in contanti (banconote da ¥10.000)
   - 3 lingotti d'oro da 100 g ciascuno
   - Polaroid intima di Aoyagi Mariko
   - Documento manoscritto di 2 pagine in giapponese: lista dei clienti scommettitori principali con cifre e codici (decifrabile incrociando col taccuino)
-  - **NON ci sono** documenti che incriminano direttamente il Nitōgun (Tachibana era prudente)
+  - **NON ci sono** documenti che incriminano direttamente il Nitōgun (Tachibana (vittima) era prudente)
 
-- Computer non presente. Tachibana lavorava solo a mano sul taccuino e a memoria.
+- Computer non presente. Tachibana (vittima) lavorava solo a mano sul taccuino e a memoria.
 
 ### Camera da letto
 
@@ -74,7 +74,7 @@
 
 ### Cucina
 
-- Frigorifero quasi vuoto (Tachibana mangia fuori)
+- Frigorifero quasi vuoto (Tachibana (vittima) mangia fuori)
 - Bottiglia **Yamazaki 18 anni** già aperta, 2 bicchieri da whisky lavati
 - Sake premium nella credenza, regali di clienti
 
@@ -86,10 +86,17 @@
 
 ### Altri oggetti
 
-- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate. Sviluppo in laboratorio (richiede 3-4 giorni): riprese sgranate, girate di nascosto a una serata di combattimenti al capannone — tra gli spettatori è **riconoscibile un politico locale**, cliente del giro. Era l'assicurazione privata di Tachibana: il motivo per cui si credeva protetto. **Non toccano i tre omicidi** — aprono il filone politico (subtrama o seguito di campagna)
+- **Cinepresa Super 8** in una scatola dell'armadio, con 3 bobine non sviluppate. Sviluppo in laboratorio (richiede 3-4 giorni): riprese sgranate, girate di nascosto a una serata di combattimenti al capannone — tra gli spettatori è **riconoscibile un politico locale**, cliente del giro. Era l'assicurazione privata di Tachibana (vittima): il motivo per cui si credeva protetto. **Non toccano i tre omicidi** — aprono il filone politico (subtrama o seguito di campagna)
 - Album fotografico in salotto: foto di matrimonio del 1985, viaggi con la moglie fino al 1995, poi nessuna foto recente
 - **Sotto il letto**, in una scatola di scarpe: pacchetto di vecchie lettere d'amore della moglie Setsuko, conservate
 - Niente armi, niente droga, niente materiale incriminante diretto sul Nitōgun
+
+## Il custode — Yamamoto Kazuo (58; non è parente del capo squadra Yamamoto Kenji)
+
+Tarchiato, divisa grigia della portineria, un piccolo televisore in guardiola; presente 7:00–19:00, orgoglioso di sapere tutto del palazzo. Collaborativo, un po' pettegolo. En: +1 con chi lo tratta da collega («anche lei fa turni»), −1 con chi entra senza salutare. Dice:
+> «Il signor Tachibana rientrava tardi, salutava sempre, una mancia a Capodanno. Ospiti? Una signora giovane, elegante, la sera, ogni tanto, da un anno circa: entrava con la sua chiave. Uomini, mai. Martedì dieci sera non ho visto nessuno: io stacco alle sette. Le pulizie passano il martedì mattina.»
+
+Vero. La «signora giovane» è Aoyagi Mariko; il martedì mattina spiega il cestino vuoto.
 
 ## Analisi finanziaria (ricostruita dalla Polizia)
 
@@ -101,7 +108,7 @@ Il **fascicolo della Polizia Tributaria di Kyoto (Kokuzei)** verrà aperto come 
 
 ## Note investigative per i PG
 
-- L'archivio dei 4 giornali è la **prima vera prova** che Tachibana operava nel circuito clandestino con metodo. La cerchiatura sul giornale di gennaio è il punto in cui si è svolta la truffa.
+- L'archivio dei 4 giornali è la **prima vera prova** che Tachibana (vittima) operava nel circuito clandestino con metodo. La cerchiatura sul giornale di gennaio è il punto in cui si è svolta la truffa.
 - La cassaforte richiede una scelta investigativa: chiamare lo scassinatore della Polizia (richiede 24h di attesa), oppure lavorare sull'amante che potrebbe conoscere il codice (dato che ha dormito lì).
 - **Mariko conosce il codice**: 0418 (compleanno di lei). Se i PG la pressano correttamente, lo dà.
 - I 2 messaggi in segreteria sono **fondamentali**: il primo è una chiamata che attira la vittima alla stazione. La traccia audio è ascoltabile e può essere fatta riconoscere a un altro PNG (testimone vocale futuro).

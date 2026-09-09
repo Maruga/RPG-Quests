@@ -3,69 +3,74 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] — GENKAI Wizard</title>
+    <title>@ViewData["Title"] — GENKAI 限界</title>
+    <link rel="icon" href="~/img/favicon.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GenkaiWizard.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/testata.css" asp-append-version="true" />
 </head>
 @* le pagine Identity di serie (registrazione, recupero password…) prendono una mano di stile *@
 <body class="@(Context.Request.Path.StartsWithSegments("/Identity") ? "pagina-identity" : null)">
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">限界 GENKAI Wizard</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Progetti/Index">I miei casi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pg/Index">I miei personaggi</a>
-                        </li>
-                        @* segnaposto in costruzione: si mostra solo a chi è loggato (promemoria di lavoro),
-                           il pubblico non deve sbattere su un cantiere dietro login *@
-                        @if (User.Identity?.IsAuthenticated == true)
-                        {
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schede complete</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="pg">🎴 Scheda PG completa</a></li>
-                                <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="png">🎭 Scheda PNG completa</a></li>
-                                <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="distretto">🏢 Scheda distretto completa</a></li>
-                            </ul>
-                        </li>
-                        }
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
+    @* Stessa barra della home di genkai.it: chi arriva dal sito resta nello stesso posto *@
+    <nav class="barra">
+        <div class="dentro">
+            <a class="marchio" href="/"><i>限界</i> GENKAI</a>
+            <a class="pillola" asp-area="" asp-page="/Pg/Index">✨ Crea<span class="lungo"> un</span> investigatore</a>
+            <button class="hamb" id="hamb" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">☰</button>
+            <div class="menu" id="menu">
+                <a href="/">‹ Il sito</a>
+                <a href="/provalo/" class="evid">▶ Provalo</a>
+                <a asp-area="" asp-page="/Pg/Index" class="@(Context.Request.Path.StartsWithSegments("/Pg") ? "attiva" : null)">I miei personaggi</a>
+                <a asp-area="" asp-page="/Progetti/Index" class="@(Context.Request.Path.StartsWithSegments("/Progetti") || Context.Request.Path.StartsWithSegments("/Wizard") ? "attiva" : null)">I miei casi</a>
+                @* segnaposto in costruzione: si mostra solo a chi è loggato (promemoria di lavoro),
+                   il pubblico non deve sbattere su un cantiere dietro login *@
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <div class="dropdown" style="display:inline-block">
+                        <button class="voce dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Schede complete</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="pg">🎴 Scheda PG completa</a></li>
+                            <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="png">🎭 Scheda PNG completa</a></li>
+                            <li><a class="dropdown-item" asp-page="/SchedeComplete" asp-route-tipo="distretto">🏢 Scheda distretto completa</a></li>
+                        </ul>
+                    </div>
+                }
+                <partial name="_LoginPartial" model="@("menu")" />
             </div>
-        </nav>
-    </header>
+            <partial name="_LoginPartial" model="@("desktop")" />
+        </div>
+    </nav>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 — GENKAI 限界 · Wizard delle Situazioni — <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="piede">
+        <div class="dentro">
+            <div><b>限界 GENKAI</b> — gioco di ruolo investigativo · Kyoto, 1997</div>
+            <div><a href="/provalo/">Provalo</a> · <a asp-area="" asp-page="/Pg/Index">Crea un investigatore</a> · <a href="/squadra/">La squadra</a> · <a asp-area="" asp-page="/Privacy">Privacy</a></div>
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+    // menu ☰ su telefono: si apre e si chiude, e si chiude da solo quando si sceglie una voce
+    (() => {
+      const barra = document.querySelector('.barra'), h = document.getElementById('hamb'), m = document.getElementById('menu');
+      if (!barra || !h || !m) return;
+      const chiudi = () => { barra.classList.remove('aperta'); h.setAttribute('aria-expanded', 'false'); h.textContent = '☰'; };
+      h.addEventListener('click', () => {
+        const aperto = barra.classList.toggle('aperta');
+        h.setAttribute('aria-expanded', aperto ? 'true' : 'false'); h.textContent = aperto ? '✕' : '☰';
+      });
+      m.querySelectorAll('a').forEach(a => a.addEventListener('click', chiudi));
+      window.addEventListener('resize', () => { if (window.innerWidth >= 760) chiudi(); });
+    })();
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
