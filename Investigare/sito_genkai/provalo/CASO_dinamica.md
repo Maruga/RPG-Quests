@@ -1,63 +1,203 @@
-# Mini-caso /provalo — come è morto, e la catena degli indizi
+# Mini-caso /provalo — LA STORIA COMPLETA
 
-File di lavoro interno (sessione WIZARD). **Niente di tutto questo va scritto ai giocatori come
-spiegazione già fatta**: qui c'è la verità del caso, in gioco si presentano solo i fatti osservabili.
-Deciso con l'autore la sera del 2026-09-09.
+Documento di lavoro interno (sessione WIZARD). Dettata dall'autore la notte del 2026-09-10; sostituisce
+la versione precedente, che era sbagliata (indizi presi da casi diversi, scena mai disegnata).
+**Niente di quello che sta qui va dato al giocatore come spiegazione:** in gioco si presenta la scena,
+i fatti si guardano, il significato lo trova chi gioca.
 
-## Causa della morte (deciso)
+---
 
-**Annegamento con trauma cranico, era ancora vivo.** La spinta lo fa cadere all'indietro nella vasca
-colma, la nuca prende il bordo, resta stordito sott'acqua e annega. Il nipote lo scuote, non risponde,
-scappa senza chiamare nessuno. Non è un assassino deliberato: è uno che se n'è andato mentre lo zio
-respirava ancora. (Scartata l'altra ipotesi: morto per il colpo e sistemato dopo, niente acqua nei polmoni.)
+## 1. Il caso in una riga
 
-Le due cose che l'acqua non lava, e che restano al medico legale:
-- **acqua nei polmoni** → era vivo quando è entrato in acqua (non un malore prima, non un cadavere messo lì)
-- **ferita sull'occipite** → è andato all'indietro. Chi scivola entrando in vasca batte fronte o zigomo
-  e cade in avanti
+Un pensionato muore in casa, in bagno, la sera del giorno in cui ha ritirato la pensione. Il nipote è
+venuto a chiedergli dei soldi, l'ha spinto in un momento di rabbia, l'ha visto morire, gli ha preso i
+contanti e ha provato a far sembrare tutto un incidente domestico. Ha sistemato quello che un morto non
+avrebbe potuto sistemare.
 
-## I tre nodi risolti (autore, 2026-09-09)
+## 2. Le persone
 
-1. **Vestito.** Da solo non prova niente ed è normale: la vasca si riempie in un quarto d'ora e lui
-   aspetta davanti alla televisione (accesa senza volume: c'è già nella scena). L'anomalia è stare
-   **dentro** la vasca da vestito: chi ci entra è svestito, chi scivola passando non ci finisce dentro
-   (bordo alto, gradino fuori).
-   ⚠ **DA CORREGGERE nella scena 1**: la riga «è vestito, e nessuno fa il bagno vestito» è sbagliata.
-2. **Sangue.** La nuca sanguina, ma il rubinetto resta aperto e la vasca trabocca per ore; il bagno
-   giapponese ha lo scarico a pavimento e il gradino sulla soglia. L'acqua ha lavato vasca, bordo e
-   pavimento. **La scena si è cancellata da sola, non l'ha pulita nessuno.**
-3. **Le strisce.** Coerenti proprio per questo: il nipote non ha pulito il bagno (non serviva), ha
-   asciugato il **corridoio**, dove era schizzata l'acqua della colluttazione sulla soglia. È l'unica
-   cosa che ha fatto ed è l'unica traccia che ha lasciato.
+- **Il nonno** — pensionato, ex operaio, vedovo, vive solo. La pensione è tutto e non basta: avanzi nel
+  frigo, odore di chiuso, casa mai davvero pulita. *(Nome, età esatta, volto: da decidere con l'autore.)*
+- **Il nipote** — venticinque anni circa, senza lavoro, in difficoltà anche lui. Sa che il nonno ritira
+  la pensione la mattina del giorno stesso. Non viene per uccidere: viene per farsi dare dei soldi.
+- **La vicina** — stesso pianerottolo. Sente il campanello, le voci all'ingresso, poi più niente; molto
+  dopo la porta sbattuta e i passi veloci. Sarà lei a chiamare, quando vede l'acqua sul pianerottolo.
+  Ha già reso la deposizione e se n'è andata: quando arriva l'investigatrice, lei non c'è più.
+- **L'agente del kōban** — primo sul posto. Poca cosa: ha chiuso il rubinetto, ha chiamato l'ambulanza,
+  ha raccolto la deposizione della vicina e la consegna subito.
+- **Il medico dell'ambulanza** — ha constatato il decesso e ha capito che qualcosa non torna. Consegna
+  la sua valutazione.
+- **L'investigatrice** — il personaggio giocante. *(Il testo attuale del mini-caso è neutro: se resta
+  una donna vanno declinati tutti i testi. Nome e volto: da decidere.)*
 
-## Perché le pantofole sono girate, e chi le ha messe
+## 3. La casa
 
-Sono le pantofole da corridoio, sfilate davanti alla porta del bagno. **Chi entra le lascia con le
-punte verso il bagno**: te le sfili alle spalle mentre entri. Girarle verso il corridoio si fa da
-**fuori**, e lui era già dentro, in acqua. Le ha spostate il nipote per asciugare il pavimento, e poi
-le ha rimesse «a posto» come si rimettono le cose in casa propria: gesto automatico, e troppo in
-ordine per un uomo di sessant'anni che vive solo. **Pantofole e strisciata sono lo stesso gesto.**
+Tre stanze piccole, casa di un vecchio operaio.
 
-## La sequenza, con l'indizio che lascia
+```
+   ┌───────────────────────────────────────────────┐
+   │                                               │
+   │   STANZA PRINCIPALE — cucina e sala insieme   │
+   │                                               │
+   │   lavello coi piatti sporchi · frigo          │
+   │   tavolo con due sedie                        │
+   │   televisione, e sotto il tavolino            │
+   │   con le riviste                              │
+   │                                               │
+   └──┬────────────┬─────────────────┬─────────────┘
+   ingresso     BAGNO             CAMERA
+              (1ª porta        (poco più avanti,
+               a destra)        stessa parete)
+              vasca,           letto una piazza e mezza,
+              piccolo,         armadio, poche cose
+              niente antibagno
+```
 
-| # | Cosa succede | Indizio osservabile | Dove |
-|---|---|---|---|
-| 1 | Sera presto: lo zio apre il rubinetto e aspetta che la vasca si riempia | tv accesa senza volume (stava aspettando: non usciva, non dormiva) | soggiorno |
-| 2 | Il nipote arriva, entra, si accomoda; lo zio fa il tè | due tazze, **una lavata e a scolare, ancora bagnata** (chi lava la propria tazza in casa d'altri? uno di casa) | cucina |
-| 3 | Lite per i soldi della pensione, ritirata venerdì | la **vicina di sotto** sente le voci, una giovane che dice «zio» | testimone |
-| 4 | La lite si sposta sulla soglia del bagno. **La spinta** | **ferita sull'occipite** (all'indietro, non una scivolata) | medico legale |
-| 5 | Cade all'indietro nella vasca colma: l'acqua spostata schizza oltre il gradino | acqua arrivata **in corridoio** (poi asciugata: vedi 8) | corridoio |
-| 6 | Stordito sott'acqua, **respira ancora**. Il nipote lo scuote, non risponde | **acqua nei polmoni** | medico legale |
-| 7 | Panico: non chiama nessuno, non lo tira fuori, non chiude il rubinetto, non lo sveste | **il rubinetto ancora aperto** e lui vestito **dentro** la vasca (nessuno ci finisce da solo) | bagno |
-| 8 | Asciuga il corridoio con uno straccio e rimette le pantofole | **strisciata pulita** nella polvere · **pantofole girate** verso il corridoio · **straccio umido** e sporco di polvere [da decidere: resta o sparisce] | corridoio, cucina |
-| 9 | Prende la busta dei contanti da sotto il giornale di oggi | **busta vuota**, pensione ritirata venerdì | stanza col futon |
-| 10 | Se ne va e chiude la porta | — | |
-| 11 | Ore dopo l'acqua trabocca e filtra dalla vicina, che chiama | è il motivo per cui la polizia è lì | |
-| 12 | Il nipote torna sulla scena: sapere è meglio che sparire | dice «non salivo da mesi» ma **sa che i soldi sono sotto il giornale di oggi** | interrogatorio |
+Stato normale della casa, prima di quella sera: disordinata ovunque, piatti sporchi nel lavello,
+poca roba nell'armadio, il letto fatto, odore di chiuso. **Il disordine è la regola:** tutto quello che
+in questa casa risulta *in ordine* è un'anomalia. È il perno dell'intero caso.
 
-## Da decidere con l'autore
+## 4. Cosa è successo davvero
 
-- **Lo straccio**: oggi il testo dice «strizzato due volte e sparito». Meglio se **resta** (nel lavello
-  o nel secchio, umido e sporco della polvere del corridoio): è un oggetto vero da trovare in cucina,
-  e chi si porta via uno straccio?
-- Quali indizi diventano **carte da giocare nell'interrogatorio** e quali restano contorno.
+**Mattina.** Il nonno ritira la pensione. Contanti nella busta dell'ufficio postale, che finisce sotto
+le riviste sul tavolino della televisione: il suo nascondiglio, sempre lo stesso.
+
+**Sera, prima delle 19.** Cena, piatti lasciati nel lavello come sempre. Apre il rubinetto della vasca:
+tra poco farà il bagno, poi si metterà il pigiama, che butta sul letto. Si siede davanti alla
+televisione, vestito, in pantofole. Aspetta che la vasca si riempia.
+
+**19:05 — il campanello.** La vicina sente una voce giovane: «sono io». E il nonno: «entra, nipote caro».
+Il nonno **abbassa il volume della televisione** per parlare. Lo fa accomodare al tavolo, prende una
+tazza, versa il tè che aveva già fatto, ne versa un po' anche per sé. Bevono.
+
+**Poi la discussione.** I soldi. Nessun urlo: la vicina, dopo le voci all'ingresso, non sente più nulla.
+Il nipote non ottiene niente e si alza per andarsene; il nonno intanto va in bagno, a chiudere l'acqua.
+
+**19:20 circa — il gesto.** Sulla soglia del bagno il nonno si sfila le pantofole, come si fa. In quel
+momento il nipote lo spinge alle spalle. Il nonno cade **in avanti**, senza fare in tempo a mettere le
+mani, e prende il bordo della vasca con la fronte. Muore quasi subito. Le pantofole, appena sfilate,
+finiscono calciate una da una parte e una dall'altra.
+
+**Subito dopo.** Il nipote prova a soccorrerlo, lo scuote, capisce che non respira. Panico. Poi la testa
+gli comincia a lavorare: **inscena l'incidente domestico.** Solleva il nonno e lo mette dentro la vasca,
+vestito. Raccoglie le pantofole e le mette in ordine, appaiate, sulla soglia. Rovista sul tavolino della
+televisione, trova la busta, prende i contanti e **rimette la busta vuota sotto le riviste**, che risistema.
+Non chiude il rubinetto, non tocca il volume della televisione, non lava le tazze.
+
+**19:40 circa — se ne va.** La vicina sente la porta sbattere e passi veloci per le scale.
+
+> **Il buco della sua storia è il tempo.** Tra la morte e la porta sbattuta passano venti minuti. Venti
+> minuti in casa da solo con un morto. Chi scappa per il panico non resta venti minuti.
+
+**Le quattro ore dopo.** La vasca trabocca. Lo scarico a pavimento del bagno non basta, il livello sale
+di poco e comincia a colare fuori dalla porta, un velo d'acqua che attraversa la stanza principale
+seguendo la pendenza del pavimento vecchio e arriva alla porta d'ingresso. L'acqua non sposta niente: le
+pantofole allineate restano allineate, l'acqua le gira intorno. **Le tracce sul pavimento invece se ne
+vanno tutte.**
+
+**23:30 circa.** L'acqua esce sul pianerottolo. La vicina la vede e chiama.
+
+**23:45.** L'agente entra, trova il corpo in vasca, capisce che è morto ma chiama lo stesso l'ambulanza.
+**Chiude il rubinetto** e lo scrive nel rapporto: quando è arrivato era aperto.
+
+**Poco dopo.** I medici tirano il corpo fuori dalla vasca per soccorrerlo e si fermano subito: c'è una
+brutta ferita frontale, ed è quella che l'ha ucciso. Non è morto annegato. Chiamano l'Omicidi.
+
+**Verso mezzanotte e mezza — si comincia.** L'investigatrice arriva. Il corpo è su una barella, coperto.
+La vasca è ancora piena, il rubinetto chiuso. Nessuno ha toccato altro. La vicina è già andata via.
+
+## 5. Cosa vede l'investigatrice quando entra
+
+Un velo d'acqua sul pavimento che arriva fino alla porta. Una stanza sola che è cucina, sala e tutto il
+resto: piatti sporchi nel lavello, tavolo con due sedie, televisione accesa **con il volume a zero**.
+Odore di chiuso. Sul pianerottolo l'agente; dentro, i medici accanto alla barella.
+
+**Non le viene detto niente di più.** Quello che c'è, è lì.
+
+## 6. Chi c'è, e cosa dà
+
+**L'agente** — consegna subito la deposizione della vicina e non sa altro. Se gli si chiede: il rubinetto
+era aperto, l'ha chiuso lui; il corpo era nella vasca, l'hanno tirato fuori i medici; la porta era chiusa
+ma non a chiave.
+
+*La deposizione della vicina:*
+- **19:05** circa, campanello. Una voce di giovane: «sono io». Il nonno: «entra, nipote caro».
+- Poi nient'altro. Nessuna voce alta, nessun tonfo.
+- **19:40** circa, la porta sbattuta forte e passi veloci giù per le scale.
+- **23:30** circa, l'acqua sul pianerottolo. Ha chiamato.
+
+**Il medico** — consegna la sua valutazione:
+- Morte per **trauma cranico frontale**, praticamente immediata.
+- **Niente acqua nei polmoni:** era già morto quando è finito in acqua.
+- Decesso **tra le 19 e le 19:30**.
+- Se gli si chiede ancora: **nessuna lesione alle mani né agli avambracci.** Chi scivola mette le mani
+  avanti. Lui no.
+
+## 7. Gli indizi — cosa si vede, e cosa vale
+
+Regola: la voce cliccabile mostra **solo il fatto**. Il significato non lo scriviamo noi.
+La colonna a destra è quello che il fatto permette di sostenere dopo, non il testo del gioco.
+
+### Stanza principale
+
+| Si clicca | Quello che si vede | Quello che vale |
+|---|---|---|
+| **la televisione** | accesa, volume a zero | il volume si abbassa per parlare con qualcuno; da soli si spegne o si alza |
+| **il lavello** | piatti sporchi di giorni, e **due tazze da tè**, le ultime arrivate | qualcuno ha bevuto con lui. Da solo: ambiguo, potrebbero essere di giorni diversi |
+| **il tavolo** | due sedie scostate, una di fronte all'altra | si sono seduti a parlare |
+| **il tavolino della TV** | le riviste **in ordine**, allineate; nella polvere il segno di dove stavano prima | qualcuno le ha spostate e rimesse a posto stasera |
+| **la busta** | busta della posta, **vuota**, sotto le riviste | la pensione è stata ritirata la mattina; nessuno svuota una busta e la rimette a posto vuota |
+| **il pavimento** | un velo d'acqua che va dal bagno alla porta d'ingresso | l'acqua è rimasta aperta per ore, e ha cancellato tutto quello che c'era per terra |
+| **il frigo** | pochi avanzi, poca roba | quei contanti erano tutto |
+
+### Bagno
+
+| Si clicca | Quello che si vede | Quello che vale |
+|---|---|---|
+| **le pantofole** | appaiate e allineate sulla soglia, in una casa dove niente è in ordine; l'acqua le ha girate intorno senza spostarle | erano già così prima che l'acqua arrivasse: qualcuno le ha messe lì. Chi se le sfila entrando non le allinea, e chi è caduto dentro non poteva più farlo |
+| **la vasca** | piena fino all'orlo, rubinetto chiuso ora, l'acqua ovunque intorno | stava per farsi il bagno, non ci era ancora entrato |
+| **il bordo della vasca** | pulito: ore d'acqua non lasciano niente | qui non ci sono prove da trovare, e non è colpa di nessuno |
+| **il corpo** (sotto il lenzuolo) | vestito da giorno, calzini bagnati, la ferita sulla **fronte**, le **mani intatte** | non stava entrando in acqua; è caduto in avanti senza pararsi |
+
+### Camera
+
+| Si clicca | Quello che si vede | Quello che vale |
+|---|---|---|
+| **il letto** | fatto, e sopra il **pigiama buttato lì**, non piegato | lo aveva tirato fuori per dopo il bagno: la serata era quella, e si è fermata prima |
+| **l'armadio** | poca roba, niente di nascosto | non c'erano altri soldi in casa |
+| **il portafogli** | pochi spiccioli | la pensione del mattino non è qui |
+
+## 8. Il nipote torna, e l'interrogatorio
+
+Torna mentre l'investigatrice è ancora in casa: dice di aver visto le luci dalla strada. Fa finta di non
+sapere niente, ma **è scosso** e si vede.
+
+Nell'interrogatorio **non si tira**. Si spende quello che si è raccolto: ogni carta del taccuino apre una
+domanda, e ogni sua risposta chiude una porta o gliela lascia aperta. Siccome chi gioca non può scrivere,
+accanto a ogni carta il gioco propone **come usarla**, con parole già pronte.
+
+| Lui dice | La carta che lo inchioda | Cosa gli si chiude |
+|---|---|---|
+| «Non lo vedevo da un pezzo» | la deposizione della vicina: «sono io», «entra, nipote caro» | era qui, e lui lo aspettava: gli ha aperto senza chiedere chi fosse |
+| «Sarà scivolato, era vecchio» | la ferita **sulla fronte** e le mani intatte | chi scivola cade all'indietro, e chi cade mette le mani |
+| «Sarà annegato nella vasca» | **niente acqua nei polmoni** | era già morto quando è finito dentro. Da solo non ci si mette |
+| «Io i suoi soldi non li ho mai toccati» | la **busta vuota** rimessa sotto le riviste **riordinate**, la polvere | qualcuno stasera ha cercato lì, e ha rimesso tutto a posto |
+| «Sono andato via subito» | **le pantofole allineate** | qualcuno si è fermato a mettere in ordine |
+| *la stoccata* | **19:20 la morte, 19:40 la porta sbattuta** | venti minuti da solo in casa con un morto |
+
+Più carte ha in mano, più stretto è l'angolo. Con poche carte lui regge, e la scena finisce peggio.
+**Lo scontro avviene comunque**, prima o poi: quando capisce che non ne esce.
+
+## 9. Il coltello
+
+In cucina, tra i piatti sporchi del lavello, c'è anche un coltello. Chi ha guardato il lavello lo ha già
+visto. Quando il ragazzo scatta, è quello che afferra. *(Il combattimento è già scritto e funziona:
+motore `scontro.js`, scena «Un coltello in cucina».)*
+
+## 10. Da decidere con l'autore
+
+- **Nome, età e volto del nonno**; nome e volto dell'investigatrice, e se i testi vanno declinati al
+  femminile (oggi sono neutri).
+- **I tiri**: dove si tira durante il sopralluogo, e cosa cambia il risultato. L'autore li darà a parte.
+  L'unico già deciso è quello del coltello: se fallisce, comincia lui.
+- **Il Gou** «Teatro delle Ombre» della versione attuale: resta o esce dal mini-caso?
