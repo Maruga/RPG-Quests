@@ -81,6 +81,7 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 - Telecamera all'ingresso del bagno: **non funzionante** dal 9 febbraio (guasto già segnalato, ricambio in arrivo)
 - Telecamera **CAM-12** del corridoio sud del 3° piano (verso i bagni): funzionante, registra il passaggio di Kuroda alle 21:20 (entrata: berretto di lana, giubbotto scuro imbottito, guanti, borsa a tracolla nera) e 21:22 (uscita)
 - Qualità immagine VHS: scarsa, volto non riconoscibile, ma corporatura, abbigliamento e andatura sì
+- **Le altre telecamere della stazione** (atri, scale mobili, uscite, biglietterie) **funzionano tutte e non danno niente di più**: inquadrature larghe su un atrio pieno di gente, la stessa qualità VHS, l'uomo col berretto è un puntino tra centinaia. Il GM lo dica chiaro ai PG che chiedono l'intero archivio — così non ci passano sopra una serata: **l'unico fotogramma utile è quello della CAM-12**, ed è di spalle (handout: il verbale d'acquisizione H-26 + la foto `AssassinoArrivaStazione.png`)
 - Tachibana (vittima) è ripreso alle 21:17 mentre arriva al 3° piano, **da solo**
 
 ## Testimoni

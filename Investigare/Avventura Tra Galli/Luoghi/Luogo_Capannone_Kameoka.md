@@ -77,6 +77,10 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 3. **Ōkubo**: indica zona ovest di Kameoka, fiume vicino
 4. **Pedinamento di Hayashi** in giorno operativo (nei giorni precedenti il combattimento)
 5. **Murakami** (se ancora vivo): indica direttamente il luogo
+6. **Il registro corse della Hozu Taxi** (保津タクシー, la piccola compagnia di taxi di Kameoka, 6 vetture): nelle notti dei combattimenti fa il triplo delle corse, tutte fra le 22:00 e le 23:00 e tutte verso la stessa sterrata. I tassisti scaricano **all'incrocio, mai davanti al capannone**, pagati in contanti e senza ricevuta — e non sanno niente, quindi parlano volentieri. Incrociato con le date degli annunci sul giornale dà il **calendario dei combattimenti senza decifrare il codice**. È un handout (vedi `PIANO_HANDOUT_IMMAGINI.md`)
+
+### Come ci arriva la gente
+La maggior parte lascia l'auto in un parcheggio del centro di Kameoka o alla stazione JR **e prende un taxi**, per non farsi vedere con la propria macchina. Chi viene in corriera da Kyoto viene **preso al capolinea da un gregario** e portato su in auto (così Tachibana l'11/02, e i prestanome a gennaio). Solo gli organizzatori e i clienti grossi arrivano fino al parcheggio sterrato sul retro, dove le auto vengono **coperte con teli scuri**.
 
 ### Climax operativo: 22 febbraio 1998 ore 23:00
 Prossimo combattimento. Possibile **blitz polizia** organizzato dai PG con la Polizia Prefetturale di Kyoto (esclusa Polizia Kameoka per via di Inagaki). Coordinato per essere efficace prima delle vedette.
@@ -87,11 +91,52 @@ Prossimo combattimento. Possibile **blitz polizia** organizzato dai PG con la Po
 - Chiusura definitiva del giro
 - Saitō presente o assente in base al timing (se è già stato avvisato, non c'è)
 
-## Come si gioca il blitz (Shōtotsu v3.1 — `../Combattimento/GENKAI_Combattimento.md`)
-- I PG **non fanno la guerra**: la squadra speciale del Crimine Organizzato (~30 uomini) entra per prima; i PG seguono con revolver e keibō prelevati e il giubbotto (Assorbe 3, indossare 4: si mette prima, in macchina)
-- **Le vedette** (2, a 500 m): l'avvicinamento a fari spenti è un tiro di **Ascolto** delle vedette (5) contro la prudenza della colonna — se lo vincono, parte la telefonata e i 90 secondi della procedura di emergenza
-- **La sicurezza armata** (4-5 compatte, statistiche in `PNG_Nitogun_Banda`): spara solo se accerchiata; la scena tipica è un colpo di panico verso la porta, poi tutti verso le risaie (Muoversi, zona *lontano*). Un colpo di pistola della polizia apre un fascicolo: dillo ai giocatori prima, non dopo
-- **Saitō** c'è solo se nessuno l'ha avvisato: il blitz esclude la Polizia di Kameoka proprio per questo
+## Il blitz del 22/02 — la scena dello scontro (Shōtotsu v3.1 — `../Combattimento/GENKAI_Combattimento.md`)
+
+> **Si prepara la scena, poi decidono i giocatori.** Qui sotto c'è il tavolo apparecchiato: chi c'è, dove sta, cosa succede se nessuno interviene. Non è una sequenza da leggere ai giocatori.
+
+### Il briefing della mattina (e perché è sbagliato)
+La Sezione Crimine Organizzato pianifica **un'irruzione su un giro di scommesse**, non un assalto: si aspettano settanta impiegati e commercianti che alzano le mani. ~30 uomini, giubbotti, due furgoni, ingresso dalla porta grande. **Ai PG viene dato il lato ovest del piazzale**, quello che sulla mappa sembra la direzione di fuga verso le risaie: posizione «di contenimento», la meno pericolosa sulla carta. Nessuno mette in conto che dentro ci siano fucili.
+
+### Come parte
+1. **Le vedette** (2, a 500 m sulla sterrata): l'avvicinamento a fari spenti è un tiro di **Ascolto** delle vedette (5) contro la prudenza della colonna. Se lo vincono — ed è probabile, di notte in campagna si sente tutto — parte il walkie-talkie e i **90 secondi** della procedura d'emergenza.
+2. **Dentro si spengono le luci.** Poi, invece della fuga ordinata, **partono i primi colpi dalle finestre alte** (7 metri, feritoie oscurate).
+3. **La polizia è colta di sorpresa**: la colonna si blocca a metà piazzale e si mette al riparo dietro i furgoni. Per due o tre scambi **nessuno comanda niente** — ed è esattamente lo spazio in cui i PG decidono da soli.
+4. **La porta grande si apre** e ne escono di corsa **settanta spettatori** nel buio: da quel momento il piazzale è pieno di gente che scappa in tutte le direzioni, e **sparare verso la porta significa sparare sulla folla**.
+
+### Chi spara, e con cosa
+
+| Chi | Quanti | Dove | Armi (v3.1) |
+|---|---|---|---|
+| **Tiratori alle finestre** | 3 | Finestre alte del lato nord ed est, a 7 m | **Fucile da caccia** a canna liscia (in campagna ne hanno tutti, sono regolari o quasi): trattalo come *automatica 9mm* — attacco Lucidità 5, Estrarre 3 / Colpire 2 / Ricarica 4, **danno 4** — ma **solo a distanza *lontano* o *vicino***, e ricarica ogni 2 colpi |
+| **Capo sicurezza** | 1 | Dietro la porta grande | *Automatica 9mm* (3/2/4, danno 4), Lotta 1 |
+| **Sicurezza armata** | 4-5 | Sparsi dentro | *Compatta .22/.25* (2/1/4, danno 3) — sparano **solo se accerchiati**: statistiche in `PNG_Nitogun_Banda` |
+| **Gregari e addetti** | ~12 | Ovunque | Nessuna. Vedi sotto |
+| **Spettatori** | ~70 | In fuga dalla porta | Nessuna. Sono l'ostacolo, non il nemico |
+
+**Attributi** (comparse, `PNG_Nitogun_Banda`): 5 dappertutto, Presenza 6, **Ki 8**. Ukemi: fuoco → Distacco 5 · mani → Pazienza 5 · manganello → Ascolto 5. Mod. Presenza all'iniziativa: 0.
+
+### I gregari che si spogliano
+Appena capiscono che è finita — di solito dopo il secondo o terzo scambio, o quando cade uno di loro — **i gregari si strappano di dosso giacche, fasce e tutto quello che li identifica e si mescolano alla folla che scappa**. Da lì in poi sono settanta persone identiche che corrono al buio.
+- Non c'è un tiro per fermarli tutti: **si fermano quelli che un PG riconosce**. Chi ha lavorato bene nei dieci giorni precedenti ha le facce in testa (le foto di Hayashi, il riconoscimento di Sasaki Hideo e Nishimura, l'identikit, la descrizione di Inoue): **è qui che l'indagine paga**.
+- Un PG che si mette a fermare la gente invece di sparare fa la cosa più utile della serata. Ditelo con la scena, non con una regola.
+
+### Le zone (per gli scambi)
+- **Lontano**: il piazzale sterrato, i furgoni, la sterrata. Dove stanno la polizia e i PG.
+- **Vicino**: sotto il muro del capannone, l'angolo cieco delle finestre, il retro col parcheggio delle auto coperte.
+- **Contatto**: dentro, e la calca alla porta.
+- **Le risaie a sud**: due sentieri di fuga, buio totale. Chi ci arriva è perso — a meno che i PG non abbiano chiesto di coprirli nel briefing (se lo chiedono, concediglielo: è buon gioco).
+
+### Le tre cose da dire ai giocatori PRIMA
+1. **Chi spara apre un fascicolo** (Conseguenze Giappone '97): ogni colpo esploso da un poliziotto è un procedimento interno, anche quando è legittima difesa — e qui lo è. Non è un divieto, è un prezzo. **Dirlo prima, mai dopo.**
+2. **Davanti alla porta c'è la folla.** Sparare in quella direzione è colpire un civile.
+3. **Il giubbotto** (Assorbe 3) si indossa in macchina: 4 per metterlo, non lo si fa sotto il fuoco.
+
+### Come finisce
+- Lo scontro dura poco: **3-4 scambi**. Poi i tiratori restano senza colpi o vedono la squadra speciale arrivare sul lato cieco, e si arrendono. La banda non è fatta di fanatici: sono uomini pagati.
+- **Bilancio tipico**: 50-70 arresti, sequestro del contante della serata (¥15-20 mln) e dei registri veri dalla cassaforte dell'ufficio, i galli vivi nelle gabbie del retro come corpo di reato.
+- **Saitō (il capo) c'è solo se nessuno l'ha avvisato**: il blitz esclude la Polizia di Kameoka proprio per questo, e Inagaki e Yamaguchi (i due corrotti) vanno presi **lo stesso giorno o il giorno prima, insieme**.
+- Se un PG viene ferito, è qui che succede. Ki 0 = morto (danno da combattimento, nessun pavimento): con tre fucili in gioco, **dillo prima**.
 
 ## Note operative GM
 - Il capannone è il **climax investigativo e operativo** dell'avventura

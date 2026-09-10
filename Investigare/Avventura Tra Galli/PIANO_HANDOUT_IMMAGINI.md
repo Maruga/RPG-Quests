@@ -49,7 +49,9 @@
 23. **H-23 · Conto del Club Aoyagi del 2/02** — La cena di Tachibana (vittima) con l'uomo «sui 30, casual, sneaker». *(Luogo Club §Indizi)*
 24. **H-24 · Lettera di Tachibana (vittima) a Setsuko (1992)** — *«A Kameoka ho conosciuto persone che mi possono aiutare»*: l'origine, per chi scava nel passato. *(Luogo Casa Setsuko §Indizi)*
 25. **H-25 · Ricevute pubblicitarie Sakura Kōkoku** — Gli annunci pagati dalla Kameoka Nōji KK: il ponte documentale giornale→società. *(Luogo Kameoka-tei §Indizi)*
-26. **H-26 · Verbale d'acquisizione VHS — telecamera corridoio 3F** — Scheda tecnica del nastro (accompagna IMG-11): orari 21:17 / 21:20 / 21:22, qualità insufficiente al riconoscimento.
+26. **H-26 · Verbale d'acquisizione VHS — telecamera corridoio 3F** — Scheda tecnica del nastro (accompagna IMG-11, l'assassino di spalle): orari 21:17 / 21:20 / 21:22, qualità insufficiente al riconoscimento. **Deve dire nero su bianco che le altre telecamere della stazione sono state visionate e non danno nulla di più** (atri affollati, VHS, nessun volto): chiude la sottotrama prima che i PG ci perdano una serata.
+27. **H-27 · Registro corse della Hozu Taxi** (保津タクシー, la compagnia di taxi di Kameoka, 6 vetture) — *(deciso il 2026-09-11)*. Fotocopia del registro di un anno: corse, orari, destinazioni, importi. Nelle notti dei combattimenti le corse **triplicano**, tutte fra le 22:00 e le 23:00 verso lo stesso incrocio di campagna, con i rientri fra le 02:30 e le 03:30. **Incrociato con le date degli annunci sul giornale dà il calendario dei combattimenti senza decifrare il codice.** Documento innocuo che nessuno ha pensato a nascondere; i tassisti parlano volentieri (*«scarichiamo all'incrocio, mai davanti; pagano in contanti, niente ricevuta»*). *(Storia §Sistema combattimenti → «Come ci si arriva»)*
+28. **H-28 · Verbale di apertura della cassetta di sicurezza n. 0419 — Sanwa Bank, filiale di Gion** — *(deciso il 2026-09-11)*. Verbale con l'inventario: **¥35 mln in contanti** e il **libro mastro vero del giro** (5 anni, nomi in chiaro), più il **registro degli accessi** della banca — Tachibana (vittima) c'è stato il **2 febbraio**. Si consegna solo a fine avventura: serve chiave + *inkan* (dallo schedario di Fushimi) + mandato o autorizzazione di Setsuko, e **non si apre in giornata**. *(Storia §La cassetta di sicurezza)*
 
 ---
 
@@ -124,7 +126,7 @@ Priorità 3 (i 6 scommettitori, servono soprattutto Tanaka Shōji e Fujiwara —
 
 ## C. Contenuti da scrivere ex novo (li stendo io, li rileggi tu prima che finiscano negli handout)
 
-1. **Il codice degli annunci**: i 7 nomi poetici dei piatti/galli del 22/02 (+ quelli dei 4 mesi d'archivio) e la corrispondenza sconti→quote — oggi la Storia definisce il meccanismo, non i nomi.
+1. **Il codice degli annunci** — meccanismo **deciso dall'autore il 2026-09-11** (Storia, punto 4): piatto = combattimento, **le due salse citate nel piatto = i due galli** (i galli si chiamano come le salse: Wasabi, Agrodolce, Sesamo, Yuzu…), primo nome = gallo di casa, secondo = sfidante, **sconto % = quota dello sfidante** (5% → 1 a 5). Resta da scrivere: **i nomi dei 14 galli del 22/02** (7 piatti × 2) e quelli dei **4 mesi d'archivio**, con i nomi che si ripetono di mese in mese e le quote che si muovono — un gallo che vince resta e paga meno, uno che perde sparisce e ne compare uno nuovo. Vincolo fisso: **gennaio ha lo sfidante a «sconto 3%»** (1 a 3), perché Ōkubo con ¥5 mln ne incassa 15.
 2. **Il sistema del taccuino**: come Tachibana (vittima) annotava (sigle clienti, galli, cifre), coerente su H-09/H-10/H-16. **Base canonica = la pagina fotografata in `InventarioVittima.png`**: righe di gennaio con nomi d'azienda come codici (西陣工務店 80 · 森田建設 150 · 亀岡亭 120 · K.N農機 200 · 田中商事 100), «月間売上 ¥18.000.000» (la vincita complessiva) e «H.E 6.8M» (i ¥6,8 mln del debito di Murakami (veterinario)): la chiave di lettura va scritta in modo che quelle righe tornino (80 = ¥800k di Nishimura, 100 = ¥1 mln di Sasaki, 200 = ¥2 mln affidati a Ōkubo…).
 3. **Il dialogo della cassetta audio** (telefonata del 12/01 in codice).
 4. **I numeri di telefono** ricorrenti (formato 075-XXX / 090-XXX coerente su tutti i documenti).
@@ -136,6 +138,7 @@ Priorità 3 (i 6 scommettitori, servono soprattutto Tanaka Shōji e Fujiwara —
 - ✅ `VittimaBagno.png` e `TelecameraAssassinio.png` = materiale GM; le versioni canoniche per i giocatori sono IMG-03/IMG-06 da produrre
 - ⏳ Corpo visibile nelle foto forensi (IMG-06, IMG-15) o scena senza corpo: si decide in produzione
 - ⏳ Token da tavolo stile Sake: sì/no
+- ✅ **Decisioni dell'autore del 2026-09-11**: codice delle salse (vedi §C.1) · **Kuroda resta NON professionista** e la telecamera del bagno resta **guasta dal 9/02** come in origine — le altre della stazione funzionano ma non danno nulla di più (H-26) · il caso Murakami arriva ai PG **il 16/02** dalla Polizia di Yamashina, prima ci si arriva solo da soli · Ōkubo muore se i PG non fanno niente, **+20% a precauzione** · **scontro a fuoco al blitz** con la polizia colta di sorpresa (`Luogo_Capannone_Kameoka`) · cassetta di sicurezza alla **Sanwa Bank di Gion**, apre con chiave + *inkan* + mandato/Setsuko, dentro ¥35 mln e il libro mastro · **taxi e gregario al capolinea** come nuovo filone (H-27)
 - ✅ Valori di En iniziali dei PNG verso i PG: **decisi e scritti nelle schede** (2026-09-09, sezione *En* di ogni PNG; riepilogo in `PNG/PNG_Quadro_Alibi_En.md`)
 
 ## E. Deposizioni pronte (2026-09-09) — handout su richiesta, serie D

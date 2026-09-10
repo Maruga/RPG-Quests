@@ -62,6 +62,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   al ristorante-bar dello Shin-Miyako Hotel (uscita Hachijō) 19:45-20:45 ¥3.150, chiavetta n. 0419, biglietto da visita con
   foto di «Mari»; telecamera **CAM-12** del corridoio sud alle **21:20** (berretto, giubbotto imbottito, borsa, **sneaker scure**);
   bagno accanto agli uffici della direzione (管理室), porta grigia in lamiera. La pagina del taccuino fotografata è la base di H-09
+- **Decisioni del 2026-09-11** (dalle note `//…//` dell'autore nella Storia): **codice delle salse** — piatto = combattimento, le due salse = i due galli (che si chiamano come le salse), primo = gallo di casa, secondo = sfidante, sconto % = quota dello sfidante (gennaio: 3%) · **Kuroda resta NON professionista**, telecamera del bagno **guasta dal 9/02 come in origine** (le altre della stazione funzionano ma non danno nulla di più) · il **bossolo non lo dimentica: non lo trova** e non può restare a cercarlo · caso **Murakami**: lo prende Yamashina come suicidio, arriva ai PG il **16/02**, prima ci si arriva solo da soli dal cellulare · **Ōkubo muore se i PG non fanno niente, +20% a precauzione** (5 precauzioni elencate) · **scontro a fuoco al blitz**, polizia colta di sorpresa, 3 fucili alle finestre, i gregari si spogliano e si confondono nella folla · **cassetta di sicurezza** alla Sanwa Bank di Gion: chiave + *inkan* (schedario di Fushimi) + mandato o Setsuko, mai in giornata; dentro ¥35 mln e il libro mastro vero · **Hozu Taxi** (nome nuovo, da segnalare al Registro Nomi) e il gregario al capolinea = nuovo filone
 - Statistiche PNG: **Ki come i PG** (attributo più basso + dado alto di 2d6, tetto 12); mai «Riserva». Combattimento =
   `../Combattimento/GENKAI_Combattimento.md` **v3.1** + `Scheda_Giocatori_Combattimento.html` al tavolo
 
@@ -80,5 +81,6 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
    IMG-04/05, luoghi, reperti; volti = prompt per ChatGPT, luoghi = Nano Banana, kanji/timbri = PIL) + token ed En da decidere
 
 ## Da segnalare fuori cartella (non toccato)
+- `../GENKAI_Registro_Nomi.md`: **nome nuovo creato il 2026-09-11** — **Hozu Taxi** (保津タクシー), compagnia di taxi di Kameoka. Nessuna collisione col registro (verificato). Da aggiungere quando l'autore dà il via
 - `../GENKAI_Registro_Nomi.md`: «Murayama Hidetoshi» non esiste più in Tra Galli (sostituito da Taniguchi)
 - `../REGISTRO_MODIFICHE.md`: riga informativa — Tra Galli allineata alla serie (PNG fissi, Kawaramachi 85) e al combattimento v3.1

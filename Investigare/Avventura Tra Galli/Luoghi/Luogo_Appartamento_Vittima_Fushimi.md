@@ -44,7 +44,7 @@
     - Novembre 1997
     - Dicembre 1997
     - Gennaio 1998 (questa con annuncio cerchiato a matita leggera)
-  - Cassetto 4: documentazione personale (passaporto, certificati, atto di proprietà)
+  - Cassetto 4: documentazione personale (passaporto, certificati, atto di proprietà) e — in una scatolina di lacca — **l'*inkan*, il sigillo personale registrato** di Tachibana. Sembra un oggetto qualunque: è invece **la seconda chiave della cassetta di sicurezza** alla Sanwa Bank di Gion (senza di quello la banca non apre, nemmeno col mandato in mano). Vedi «La cassetta di sicurezza» in `Storia Completa.md`
 
 > Tutte e 4 le copie del Kyoto Shimbun riportano l'annuncio del **Ristorante Kameoka-tei** con "promozione speciale" in date diverse (ogni mese, una data). Nessuna copia precedente all'ottobre '97 — Tachibana (vittima) ha iniziato a conservarle solo da quando ha cominciato a pianificare la truffa con Murakami (veterinario).
 
