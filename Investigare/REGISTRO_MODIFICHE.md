@@ -11,6 +11,15 @@
 
 ## Da applicare
 
+### 2026-09-10 · WIZARD → REGOLE · Nuova sezione **«I soldi — Giappone 1997»** nel Manuale del Giocatore + pagina nelle schede
+Su richiesta dell'utente (file di REGOLE toccati col suo ok esplicito). **`GENKAI_Manuale_Giocatori.md`**: sezione nuova
+prima del Combattimento, con la regola pratica **«togli due zeri e hai gli euro di oggi»** e due tabelle — 100 ¥ ≈ 1 euro ·
+1.000 ¥ ≈ 10 euro · 10.000 ¥ ≈ 100 euro · 1.000.000 ¥ ≈ 10.000 euro (con il cambio in lire dell'epoca, ~14 lire per yen), più
+i prezzi di riferimento (metropolitana 200 ¥, pranzo 800 ¥, affitto 60-80.000 ¥, stipendio investigatore ~380.000 ¥ — quest'ultimo
+preso da `GENKAI_Kage.md` per non creare due canoni diversi). **`pg/SCHEDE_PG_TUTTE.docx`**: la stessa cosa in breve, come ultima
+pagina (backup `SCHEDE_PG_TUTTE.docx.bak-20260910-prima-soldi`; impaginazione verificata in PDF, 21 pagine, nessuna pagina bianca).
+Se REGOLE mette cifre in yen in altri manuali o avventure, questa è la scala di riferimento. — **DA APPLICARE** (presa visione)
+
 ### 2026-09-09 · WIZARD → REGOLE · Analisi del sito genkai.it: dati della home da confrontare col materiale
 Rapporto in `sito_genkai/ANALISI_SITO_2026-09-09.md` (tabella E). La home dice cose che nelle cartelle non tornano; l'utente
 non ha ancora deciso cosa correggere. Una riga riguarda un'avventura, quindi la segnalo qui: la home presenta

@@ -4,9 +4,16 @@
 > (ordine dell'autore 2026-09-08): ciò che andrebbe toccato fuori — registri, manuali, altre avventure — si segnala, non si modifica.
 > Valgono le REGOLE FERREE di `../CLAUDE.md`: non inventare, non riaprire decisioni chiuse, leggere i registri prima di toccare.
 > Prima di ogni controllo: **`CHECKLIST_CONTROLLO.md`** (rileggere da zero, mai dalla memoria).
-> **CHI È CHI** (regola ferrea 4, 2026-09-09): ogni nome che può confondersi porta subito dopo, **tra parentesi tonde**, chi è
-> e — dove serve — in che stato è a quel punto: «Watanabe Toshio (testimone)» · «Watanabe Hideo (procuratore)» ·
-> «Tachibana Eiji (vittima, morto l'11/02)» · «Kuroda Ryō (esecutore, in fuga)» — in ogni riga. Verifica: `audit_nomi.py` (scratchpad).
+> **CHI È CHI / COS'È COSA** (regola ferrea 4, 2026-09-09, estesa il 2026-09-10): ogni nome porta subito dopo, **tra parentesi
+> tonde**, chi o cosa è — e, per le persone, in che stato è a quel punto. Vale per le **persone** («Watanabe Toshio (testimone)» ·
+> «Watanabe Hideo (procuratore)» · «Kuroda Ryō (esecutore, in fuga)») **e per luoghi, locali, aziende e termini giapponesi**
+> («Kameoka (cittadina a 28 km a ovest di Kyoto)» · «il Kōrin (il bar-ristorante della vittima a Gion)» · «la Kanshiki-ka (la
+> scientifica)» · «xilazina (sedativo veterinario)»). **In ogni riga**: l'autore rilegge a un mese e non deve fermarsi mai.
+> `Storia Completa.md` e `Inizio - Incarico.md` sono già così, con **«Legenda rapida»** in testa alla Storia. Verifica persone: `audit_nomi.py` (scratchpad).
+
+> **`//testo//` = commento dell'autore per l'AI** (convenzione del 2026-09-10). Quando l'autore sistema un file a mano,
+> lascia i suoi appunti tra doppie barre. Non si esegue e non si cancella nulla di propria iniziativa: si raccolgono,
+> si portano all'autore uno per uno e si decide insieme. Si toccano i file **solo quando dice «controlla»**.
 
 ## L'avventura
 

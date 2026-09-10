@@ -873,6 +873,43 @@ Un errore comune è giocare come se il personaggio vedesse sempre le cose con ch
 
 ---
 
+# I soldi — Giappone 1997
+
+Nel 1997 in Giappone si paga quasi tutto in **contanti**. Le carte esistono ma si usano poco: al bar,
+al konbini, dal barbiere, in una izakaya si tira fuori il portafogli. La banconota da **10.000 yen**
+è quella normale, quella con cui si paga la spesa: averne una piegata in tasca non fa di te un uomo
+ricco.
+
+**La regola pratica: togli due zeri e hai gli euro di oggi.**
+
+| Yen del 1997 | In lire di allora | Oggi, all'incirca | Che cosa ci compravi |
+|---|---|---|---|
+| **100 ¥** | ~1.400 lire | **~1 euro** | un caffè in lattina al distributore |
+| **1.000 ¥** | ~14.000 lire | **~10 euro** | una ciotola di ramen, o due birre |
+| **10.000 ¥** | ~140.000 lire | **~100 euro** | la banconota con cui si paga tutto |
+| **1.000.000 ¥** | ~14 milioni di lire | **~10.000 euro** | un'auto usata, o un anno d'affitto |
+
+Qualche altro prezzo, per farsi l'orecchio:
+
+| | Yen | Oggi |
+|---|---|---|
+| Biglietto della metropolitana | 200 ¥ | 2 euro |
+| Pranzo in una tavola calda | 800 ¥ | 8 euro |
+| Un piccolo appartamento a Kyoto, al mese | 60-80.000 ¥ | 600-800 euro |
+| Stipendio netto di un investigatore, al mese | ~380.000 ¥ | ~3.800 euro |
+
+Due avvertenze, perché i numeri da soli ingannano.
+
+La prima: **il Giappone del 1997 è un paese ricco**, e un impiego pubblico paga meglio di quanto
+paghi da noi oggi. Ma paga anche di più tutto il resto: la casa, la scuola dei figli, l'assistenza a
+un genitore che si ammala. A fine mese non avanza niente lo stesso, e i tuoi personaggi lo sanno bene.
+
+La seconda: quella conversione serve a **darti la misura di una cifra al tavolo**, non a fare i conti
+in tasca a nessuno. Quando un testimone dice che gli mancano due milioni di yen, tu devi sentire il
+peso di ventimila euro, ed è tutto quello che ti serve sapere.
+
+---
+
 # Il Combattimento
 
 Il combattimento è raro e pericoloso. Se c'è una sparatoria, la risposta intelligente è cercare rinforzi o fuggire. Non siete combattenti.

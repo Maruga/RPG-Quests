@@ -28,14 +28,25 @@ devi leggere prima di fare casini. Pago per avere affidabilità.»*
 3. **LEGGERE PRIMA DI TOCCARE.** Nessuna modifica al canone senza aver controllato i registri.
    Si applica **solo** ciò che l'utente ha confermato esplicitamente: una proposta non confermata
    resta una proposta, anche se sembra ovvia.
-4. **CHI È CHI (ordine dell'utente, 2026-09-09 — vale per sempre, in ogni file e in ogni risposta).**
-   Dopo il nome di un personaggio che può confondersi con un altro — stesso cognome, o cognome del cast
-   fisso della serie — si scrive **tra parentesi tonde chi è** e, quando serve a capire la scena, **in che
-   stato è a quel punto della storia**. Formato fisso: `Nome Cognome (ruolo, stato)`:
+4. **CHI È CHI / COS'È COSA (ordine dell'utente, 2026-09-09, esteso il 2026-09-10 — vale per sempre,
+   in ogni file e in ogni risposta).**
+   **(a) Persone.** Dopo il nome di un personaggio che può confondersi con un altro — stesso cognome, o
+   cognome del cast fisso della serie — si scrive **tra parentesi tonde chi è** e, quando serve a capire la
+   scena, **in che stato è a quel punto della storia**. Formato fisso: `Nome Cognome (ruolo, stato)`:
    «Watanabe Toshio (testimone)» · «Watanabe Hideo (procuratore)» · «Tachibana Eiji (vittima, morto l'11/02)» ·
    «Tachibana Mitsuru (ispettore, Crimine Organizzato)» · «Ōkubo Kenji (prestanome, ricoverato dal 14/02)» ·
-   «Kuroda Ryō (esecutore, in fuga)». In ogni riga dove serve, non solo alla prima citazione: il lettore non
-   deve mai fermarsi a chiedersi chi è o cosa gli è successo.
+   «Kuroda Ryō (esecutore, in fuga)».
+   **(b) Luoghi e cose.** Vale identico per **ogni nome proprio non italiano**: città, quartieri, stazioni,
+   locali, alberghi, ospedali, aziende, giornali, banche, società, termini giapponesi. Parole dell'utente
+   (2026-09-10): *«io non conosco nomi cinesi o luoghi o altro, ogni volta tra parentesi mi serve sapere chi
+   o cosa è, ristorante luogo ospedale i PNG chi sono»*. Quindi: «Kameoka (cittadina di campagna a 28 km a
+   ovest di Kyoto)» · «il Kōrin (il bar-ristorante della vittima a Gion)» · «Gion (il quartiere dei locali e
+   delle geisha)» · «il Kyoto Shimbun (il quotidiano di Kyoto)» · «la Kanshiki-ka (la polizia scientifica)» ·
+   «il Kōban (il posto di polizia di quartiere)» · «xilazina (sedativo veterinario per grandi animali)» ·
+   «yubitsume (il taglio del mignolo, rito yakuza)».
+   **In ogni riga dove il nome compare**, non solo alla prima citazione: l'utente rilegge a un mese di distanza,
+   spesso il giorno prima di giocare, e non deve mai fermarsi a chiedersi chi è, cosa è o cosa gli è successo.
+   Nei file lunghi, in più, una **«Legenda rapida»** in testa con i nomi che tornano di continuo.
 
 ---
 
