@@ -65,9 +65,9 @@
 - **Stato civile**: sposato, 1 figlio
 - **Profilo**: ludopatia conclamata. Ha perso ¥8 mln in 18 mesi. Ha iniziato a frodare assicurazioni dentistiche per coprire le perdite.
 - **Alibi 11/02**: studio dentistico fino alle 19:30, poi a casa
-- **Se interrogato**: sulle prime nervoso, poi racconta tutto in cambio di immunità sui suoi reati assicurativi (i PG dovranno valutare se accettare il patto)
+- **Se interrogato**: sulle prime nervoso, poi racconta tutto se il procuratore gli fa capire che **la collaborazione sarà valutata favorevolmente** sui suoi reati assicurativi. **Nel 1998 non esiste alcun patto scritto**: nessuno può promettergli l'impunità, e la decisione non spetta ai PG. Quello che i PG possono dargli è la parola di Watanabe Hideo (procuratore) che di lui si scriverà «ha collaborato»
 - **Cosa sa**: il sistema delle scommesse, alcuni clienti tramite chat al capannone (è stato 5 volte). Conosce di vista Saitō.
-- **Valore**: alto se i PG accettano il patto. Può **identificare** Saitō in una line-up.
+- **Valore**: alto se il procuratore gli offre la prospettiva della collaborazione. Può **identificare** Saitō in una line-up.
 
 ---
 
@@ -89,7 +89,7 @@
 
 ### Quale cliente parla?
 - **Hashimoto** e **Inoue**: collaborano subito
-- **Kimura**: collabora dopo patto giudiziario
+- **Kimura**: collabora dopo l'apertura del procuratore
 - **Yoshida**: collabora poco, abbastanza
 - **Fujiwara** e **Tanaka Shōji**: tentano corruzione, sono i nodi politici da gestire
 
@@ -139,9 +139,9 @@ Omette niente. Se gli danno carta e penna disegna la pianta del capannone (coinc
 > «Yoshida Mamoru, impresa edile, Uji. Vi chiedo una cosa sola: che non lo sappia nessuno. Ho una famiglia e trenta operai. Sì, ho scommesso qualche volta, per telefono, con il signor Tachibana: duecento, cinquecentomila yen a serata, tre o quattro volte l'anno. Mi dava i nomi dei galli e le quote, io sceglievo, poi pagavamo o riscuotevamo con un incontro a Kyoto. Al capannone ci sono stato una volta, due anni fa, non ricordo la strada, era notte. Un uomo con la sigaretta, giovane, mi ha accolto; l'ho rivisto una volta a un caffè con Tachibana, a Kyoto. Basta, non so altro. L'undici ero a casa a Uji, il cantiere chiude alle cinque. Se posso aiutare senza comparire, lo faccio. Se devo comparire, chiamo un avvocato.»
 Omette poco: sa che il giro era «di Kameoka» e non lo dice. Il caffè a Kyoto è una conferma in più dei contatti Hayashi–Tachibana.
 
-**D-21 · Kimura Akira** (Centrale, dopo il patto scritto — Taniguchi → Watanabe Hideo (procuratore), 24–48 ore)
-> «Kimura Akira, dentista, Sakyō. Il mio avvocato ha il vostro accordo scritto, quindi parlo. Ho perso otto milioni in un anno e mezzo. Per coprirli ho fatto cose con le assicurazioni che non rifarei, ed è per quello l'accordo. Scommettevo con il signor Tachibana, per telefono, e cinque volte sono andato al capannone, sempre di sabato, con un collega di Osaka che ora non conosco più. Lo trovo, se mi ci portate: da Kameoka centro verso ovest, poi una strada sterrata, un'insegna sbiadita di attrezzi agricoli. Il capo lo riconoscerei tra cento: alto, capelli grigi, gli manca un pezzo del mignolo sinistro — lo tiene nella tasca del cappotto, ma quando ha alzato il bicchiere l'ho visto. L'ha fatto il mese scorso, la sera in cui il gallo di casa ha perso: era l'unico a non essere sorpreso — o l'unico a saperlo nascondere. L'undici ero nello studio fino alle sette e mezza, poi a casa con mia moglie. I soldi li avevo presi da un usuraio di Kamigyō, Ōkubo, me lo aveva indicato un funzionario di banca a Kawaramachi.»
-Omette niente, dopo il patto. Senza patto: «non conosco nessun Tachibana».
+**D-21 · Kimura Akira** (Centrale, dopo l'apertura del procuratore — Taniguchi → Watanabe Hideo (procuratore), 24–48 ore)
+> «Kimura Akira, dentista, Sakyō. Il mio avvocato mi dice che collaborare mi conviene, quindi parlo. Ho perso otto milioni in un anno e mezzo. Per coprirli ho fatto cose con le assicurazioni che non rifarei, ed è per quello l'accordo. Scommettevo con il signor Tachibana, per telefono, e cinque volte sono andato al capannone, sempre di sabato, con un collega di Osaka che ora non conosco più. Lo trovo, se mi ci portate: da Kameoka centro verso ovest, poi una strada sterrata, un'insegna sbiadita di attrezzi agricoli. Il capo lo riconoscerei tra cento: alto, capelli grigi, gli manca un pezzo del mignolo sinistro — lo tiene nella tasca del cappotto, ma quando ha alzato il bicchiere l'ho visto. L'ha fatto il mese scorso, la sera in cui il gallo di casa ha perso: era l'unico a non essere sorpreso — o l'unico a saperlo nascondere. L'undici ero nello studio fino alle sette e mezza, poi a casa con mia moglie. I soldi li avevo presi da un usuraio di Kamigyō, Ōkubo, me lo aveva indicato un funzionario di banca a Kawaramachi.»
+Omette niente, una volta deciso di collaborare. Se invece si sente in trappola: «non conosco nessun Tachibana».
 
 **D-22 · Tanaka Shōji** (a casa sua, salotto con vista sul giardino; viene solo se c'è Yamamoto)
 > «Tanaka Shōji, sessantasette anni, già dirigente della Kyocera, in pensione. Ispettore capo, apprezzo che sia venuto lei di persona. I combattimenti di galli sono una tradizione dell'arcipelago da prima che esistesse la vostra Prefettura; mio nonno li seguiva a Kagoshima. Che oggi la legge la pensi diversamente, lo so. Ho assistito, sì, una o due volte l'anno, come si assiste a un rito. Ho puntato qualcosa, per onorare la serata. Il signor Tachibana raccoglieva le puntate, con discrezione ed eleganza: mi dispiace per la sua fine. Il signor Saitō lo conosco: buongiorno e buonasera, un uomo che ama la storia del Giappone. La sera dell'undici ero a casa con la mia famiglia, sei persone, per il compleanno di mia nuora. Vi dirò ciò che ricordo, con calma, nei tempi che l'età mi consente. E le dirò anche, ispettore, che conosco persone che stimano i funzionari capaci: se mai avesse bisogno di un consiglio sulla sua carriera, la mia porta è aperta.»
@@ -155,7 +155,7 @@ Omette: i due politici locali che ha visto al capannone (uno è quello delle rip
 | Fujiwara | −1 | −1 | −1 | −2 / +1 | −1 | Altezzoso con tutti. Con Sato una cortesia in più, velenosa: «conosco suo zio, un uomo pratico» (il Kage di Sato) — è +1 finto, e leva |
 | Inoue | +1 | +1 | +1 | +1 | +1 | Cordiale, addolorato. +2 con chi gli promette di trovare l'assassino |
 | Yoshida | 0 | −1 | 0 | 0 | 0 | Nervoso: +1 con chi gli garantisce discrezione, −2 con chi si presenta in cantiere davanti agli operai |
-| Kimura | 0 | −1 | +1 | 0 | 0 | Tratta: Nakamura, che gli propone il patto, è l'unico che lo tiene calmo |
+| Kimura | 0 | −1 | +1 | 0 | 0 | Tratta: Nakamura, che gli spiega cosa gli conviene, è l'unico che lo tiene calmo |
 | Tanaka Shōji | 0 | −1 | −1 | 0 | 0 / −1 | Parla solo col capo, e prova a comprarlo. Se ha già incontrato Fujita da Iwamoto (il Kage di Fujita), la saluta per nome davanti alla squadra: −1 per lei |
 
 Con gli altri: Hashimoto → Ōkubo −2, → Tachibana (vittima) −1 (lo ha rovinato, ma dà la colpa a sé) · Fujiwara → Saitō +1, → Tanaka Shōji +1 · Inoue → Tachibana (vittima) +2, → Sasaki Hideo 0 (si salutano al golf) · Kimura → Ōkubo −2 · Tanaka Shōji → Saitō +1, → Iwamoto +1 · Yoshida → tutti 0: vuole solo sparire.
@@ -168,7 +168,7 @@ Con gli altri: Hashimoto → Ōkubo −2, → Tachibana (vittima) −1 (lo ha ro
 | Fujiwara | Entro 24 ore telefona a Saitō: «è venuta la polizia di Kyoto». Da lì gli «avvisi» del Nitōgun. Entro 48 ore un'offerta a un PG: ¥5–10 mln come «donazione» a una fondazione vicina alla sua famiglia. Chi accetta ha un Kage nuovo; chi rifiuta riceve la lettera dell'avvocato |
 | Inoue | Disegna la pianta, indica la strada su una mappa: dal 16/02 è la guida del blitz (da lontano). Dopo il 22/02 paga una multa e chiude il capitolo; manda un vassoio dell'Hanaichi in Centrale |
 | Yoshida | Niente altro. Se il suo nome esce, rifiuta tutto e chiama l'avvocato |
-| Kimura | Col patto: riconosce Saitō in un confronto di fotografie (la segnaletica degli anni '80) e, il 22/02, indica la strada. Il 19/02 riceve una telefonata muta nello studio: chiede protezione per moglie e figlio |
+| Kimura | Se collabora: riconosce Saitō in un confronto di fotografie (la segnaletica degli anni '80) e, il 22/02, indica la strada. Il 19/02 riceve una telefonata muta nello studio: chiede protezione per moglie e figlio |
 | Tanaka Shōji | Entro 24 ore chiama un amico in prefettura: è da qui che parte la «telefonata amichevole» a Taniguchi («andiamoci piano»). Se i PG insistono: avvocato e «conosco il capo della prefettura». Se collabora davvero (mai a verbale), apre il filone politico: le riprese Super 8 |
 
 ## Collegamenti

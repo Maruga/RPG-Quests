@@ -26,14 +26,14 @@ Appartamento ordinato, arredamento moderno IKEA-style. Soggiorno con divano, TV 
 
 ### Nascosti
 - **Doppiofondo del divano**: ¥1,2 mln in contanti (in 3 buste separate)
-- **Doppia parete dell'armadio della camera matrimoniale**: secondo cellulare prepagato, con 4 numeri salvati con sigle: **"S.G."**, **"K.R."**, **"I.H."**, **"V2"**. Le sigle non sono identificabili da sole: i PG decifrano solo **dopo** averle incrociate con altri elementi — i registri di prelievo bancario di Saitō ("S.G."), l'arresto/identificazione di Kuroda ("K.R."), il libro paga sospetto di Inagaki via Affari Interni ("I.H."), il registro veterinari della prefettura ("V2" = veterinario di backup, mai utilizzato dopo Murakami (veterinario)). Trovato da solo, il cellulare prova solo che Hayashi gestiva una rete di contatti riservati
+- **Doppia parete dell'armadio della camera matrimoniale**: secondo cellulare, **intestato alla Kameoka Nōji K.K.** (la società di copertura), con 4 numeri salvati con sigle: **"S.G."**, **"K.R."**, **"I.H."**, **"V2"**. Le sigle non sono identificabili da sole: i PG decifrano solo **dopo** averle incrociate con altri elementi — i registri di prelievo bancario di Saitō ("S.G."), l'arresto/identificazione di Kuroda ("K.R."), il libro paga sospetto di Inagaki via Affari Interni ("I.H."), il registro veterinari della prefettura ("V2" = veterinario di backup, mai utilizzato dopo Murakami (veterinario)). Trovato da solo, il cellulare prova solo che Hayashi gestiva una rete di contatti riservati
 - **Cassetto in alto della cucina, dietro le scatole di tè**: chiavi del capannone di Kameoka (forma particolare a doppia mappa, riconoscibili)
 - **Sotto il letto**: scatola di scarpe con vecchie scommesse cartacee da archivio (5-6 mesi precedenti, con codici e cifre)
 - **Cassettina sopra l'armadio**: piccolo coltello a serramanico, due cartucce cal. 9×18 Makarov (residue, mai consegnate a Kuroda)
 
 ## Indagine
 - **Mandato di perquisizione** ottenibile dopo aver collegato Hayashi alla telefonata in segreteria (voce identificata) o ai movimenti dell'11/02 (testimoni casuali a Kameoka durante l'incontro pomeridiano con Tachibana (vittima))
-- **Yui** collabora se i PG le rivelano la verità con tatto: rimane sotto shock, può fornire dettagli sul comportamento di Hayashi negli ultimi giorni (uscite improvvise, chiamate al cellulare prepagato)
+- **Yui** collabora se i PG le rivelano la verità con tatto: rimane sotto shock, può fornire dettagli sul comportamento di Hayashi negli ultimi giorni (uscite improvvise, chiamate al secondo cellulare)
 - Hayashi rientra a casa quasi ogni notte (esclusi i giorni operativi del capannone)
 
 ## Pericolo durante perquisizione

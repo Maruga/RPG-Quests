@@ -58,7 +58,7 @@
 
 ## 6. Epoca (anacronismi)
 - [ ] Banche e aziende esistevano nell'anno (UFJ nasce nel 2002: Sanwa, Tokai, Sumitomo sì; carte JCB sì)
-- [ ] Telefoni: rete PDC giapponese (mova, StarTAC), mai GSM (niente Nokia); prepagati senza marca
+- [ ] Telefoni: rete PDC giapponese (mova, StarTAC), mai GSM (niente Nokia); **niente cellulari prepagati**: in Giappone il primo servizio prepagato è di ottobre 1998 (Tu-Ka Kansai). Nel febbraio '98 un telefono «pulito» è **intestato a un prestanome o a una società di comodo**. Numeri di cellulare a **10 cifre** (090-XXX-XXXX): le 11 cifre arrivano il 1º gennaio 1999
 - [ ] Videosorveglianza su VHS (24 h rotativo, nastri conservati), mai «archivio digitale»
 - [ ] Auto, scarpe, sigarette, farmaci, hotel: modelli e marche dell'anno; i nomi fittizi dichiarati come tali
 - [ ] Uffici di polizia: metallo grigio, neon, faldoni; tesserino = libretto nero (keisatsu techō)
@@ -95,6 +95,22 @@
 - [ ] **I ritratti non devono tradire il ruolo**: stessa posa, stessa luce, stesso fondo per tutti — il sicario e la
       casalinga si fotografano uguale, altrimenti la crime board risolve il caso da sola
 - [ ] **L'identikit somiglia al ritratto senza esserne la copia**: serve a escludere, non a identificare
+
+## 8b. Quando un documento «sa il futuro» (lezione della revisione esterna, 2026-09-11)
+- [ ] **Nessun verbale contiene eventi successivi alla propria data.** Un sequestro del 16 non può elencare chiamate
+      del 17; un'annotazione del 14 non può raccontare l'assegnazione del 16. Controllare data del documento ↔ data
+      di ogni fatto citato dentro
+- [ ] **Chi osserva deve esistere quando osserva**: un'indagine aperta il 15 non può avere «osservato direttamente»
+      un incontro del 2. Se il fatto è anteriore, va presentato come **ricostruzione** (registro, testimone, agenda)
+- [ ] **Gli atti con tempi tecnici si consegnano in due pezzi**: sequestro subito, perizia dopo le 48 ore dichiarate
+- [ ] **Gli handout dei rami condizionali non danno per avvenuto il ramo**: se i PG possono salvare una persona,
+      nessun documento parla del suo cadavere
+- [ ] **Le regole probabilistiche restano probabilistiche**: se il canone dice «+20% per precauzione», nessuna scheda
+      può far fallire l'attentato in automatico con una singola mossa
+- [ ] **Quello che un PNG sa è un tetto, non un minimo**: prima di scrivere «ottengono X da lui», rileggere il §
+      della Storia che elenca cosa NON sa
+- [ ] **Una serie di documenti che si confrontano fra loro dev'essere coerente in tutte le righe, non solo in quella
+      che serve**: se la regola vale per un incontro e non per gli altri sei, il giocatore scarta la regola
 
 ## 9. Handout
 - [ ] Piano ↔ prodotti: cosa manca, cosa esiste già come immagine

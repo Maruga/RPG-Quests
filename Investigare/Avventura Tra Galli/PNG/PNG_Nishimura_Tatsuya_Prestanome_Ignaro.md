@@ -15,7 +15,7 @@
 ## Ruolo nella vicenda
 - A metà gennaio Tachibana (vittima) gli chiede di andare al capannone di Kameoka per piazzare ¥800.000 su un gallo specifico
 - Nishimura accetta senza domande: per lui, Tachibana (vittima) è **assoluta autorità**
-- Esegue, vince ¥2,4 mln, consegna tutto a Tachibana (vittima), riceve ¥150.000
+- Esegue, vince **¥8 mln**, consegna tutto a Tachibana (vittima), riceve ¥150.000
 - **Non capisce** la natura criminale dell'operazione: pensa che il datore di lavoro abbia "amicizie" e voglia tenere il proprio nome fuori dalle scommesse per discrezione
 - È stato al capannone una volta sola, brevemente
 

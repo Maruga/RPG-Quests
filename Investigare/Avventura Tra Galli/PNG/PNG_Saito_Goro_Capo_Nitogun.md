@@ -27,7 +27,7 @@
 | 13/02 | «Dal mio commercialista a Kyoto, 13:00–15:30» | Vera | Il commercialista di Karasuma, l'agenda |
 | 14/02 sera | «A casa con mia moglie; ho telefonato a mio figlio a Tokyo» | Vera: telefonata 22:15–22:40, l'ora esatta dei colpi a Kamigyō | Tabulati NTT del fisso della villa; Mieko; il figlio Hiroto |
 | 17/02 | «Al tempio, a Nara, con mia moglie» | Vera: ricevuta dell'offerta delle 17:00 | La ricevuta, Mieko, il custode del parcheggio del tempio ricorda la Toyota Century |
-| 15/02 mattina | — | Hayashi gli riferisce dei PG, dal prepagato al prepagato («S.G.») | Solo dai tabulati del prepagato di Hayashi, se sequestrato |
+| 15/02 mattina | — | Hayashi gli riferisce dei PG, da un cellulare all'altro («S.G.») | Solo dai tabulati del secondo cellulare di Hayashi, se sequestrato |
 
 Tutti gli alibi sono **veri ma costruiti ad arte**: Saitō programma le sue giornate per essere visibile e tracciabile nei momenti chiave.
 
@@ -100,7 +100,7 @@ Con gli altri: Hayashi Tomoki +1 (utile: lo tiene finché serve) · Kuroda Ryō 
 | Quando / se… | Cosa fa | En con i PG |
 |---|---|---|
 | Fine gennaio | La carcassa analizzata a Osaka. Decide i tre nomi, in ordine | — |
-| 11–14/02 | Costruisce gli alibi, un giorno alla volta. Non tocca un telefono che non sia il prepagato | — |
+| 11–14/02 | Costruisce gli alibi, un giorno alla volta. Non tocca un telefono che non sia quello intestato alla società | — |
 | 15/02 | Hayashi gli riferisce dei PG: chiama l'avvocato, «tenetevi pronti» | — |
 | 16/02, se i PG suonano al cancello | Il tè. Tutto vero e tutto inutile. Il giorno dopo, D-14 spontanea in Centrale | — |
 | 18/02, se l'ospedale è fallito | «Basta.» Niente più tentativi: Kuroda a Osaka. Da qui difende, non attacca | — |

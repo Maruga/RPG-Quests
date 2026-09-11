@@ -21,8 +21,8 @@ Edificio a due piani con ingresso clinica al piano terra e abitazione di Murakam
 - Registro pazienti ufficiale in regola
 - **Quaderno separato** nel cassetto chiuso a chiave (chiave nel cassetto della scrivania, sotto un libro): annotazioni di "visite a domicilio" del 1997-1998 senza nome paziente, solo iniziali e codici (pazienti del Nitōgun)
 - Bottiglia di **shōchū** semivuota in un cassetto basso (segnale del declino di Murakami (veterinario))
-- Boccette di **xilazina** (sedativo veterinario per grandi animali) — quantitativo anomalo per la clientela ufficiale di piccoli animali. Una di queste è il sedativo usato sul gallo. **Una boccetta risulta mancante dopo il 13/02** (è quella usata da Kuroda per uccidere Murakami (veterinario) stesso)
-- Estratti conto bancari nello stesso cassetto: mostrano il debito di ¥6,8 mln che si azzera tra il 28 e il 30 gennaio 1998
+- Boccette di **xilazina** (sedativo veterinario per grandi animali) — quantitativo anomalo per la clientela ufficiale di piccoli animali. Una di queste è il sedativo usato sul gallo. Il conto non torna: la bolla di carico di novembre ne indica **undici**, in cella ce ne sono **nove**. La decima è quella **vuota sul tavolo** del retrobottega dopo il 13/02 (usata da Kuroda su Murakami (veterinario) stesso); **l'undicesima non si trova** — è quella con cui a gennaio è stato sedato il gallo
+- Estratti conto bancari nello stesso cassetto: fra il 28 e il 30 gennaio 1998 entrano contanti che **sanano la morosità** del secondo mutuo. Il debito di **¥6,8 mln cancellato è quello verso Tachibana (vittima)**, privato, che negli estratti conto non compare: l'esposizione bancaria resta di ¥38 mln (H-14)
 
 ## Persone presenti
 - Solo Murakami (veterinario) fino al 13/02

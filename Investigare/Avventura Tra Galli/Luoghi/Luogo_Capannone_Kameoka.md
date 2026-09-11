@@ -57,7 +57,7 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 - 7 combattimenti per serata (vedi sistema di codifica nel taccuino)
 
 ## Sicurezza
-- 4-5 uomini armati presenti, **non yakuza** ma piccoli criminali con armi corte
+- **8-9 armati in tutto**: 4-5 addetti alla sicurezza con armi corte (**non yakuza**, piccoli criminali), il capo della sicurezza e **3 tiratori con fucili da caccia** alle finestre alte; più 2 vedette esterne disarmate. Il dettaglio per lo scontro è nella tabella in fondo alla scheda
 - Sistema di vedette: 2 guardie a 500 m sulla strada secondaria con walkie-talkie
 - Telefonata di allerta in caso di pattuglia in avvicinamento (Inagaki avvisa)
 - Procedura di emergenza: 90 secondi per spegnere luci, far scappare scommettitori, nascondere galli vivi
@@ -77,7 +77,7 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 3. **Ōkubo**: indica zona ovest di Kameoka, fiume vicino
 4. **Pedinamento di Hayashi** in giorno operativo (nei giorni precedenti il combattimento)
 5. **Murakami** (se ancora vivo): indica direttamente il luogo
-6. **Il registro corse della Hozu Taxi** (保津タクシー, la piccola compagnia di taxi di Kameoka, 6 vetture): nelle notti dei combattimenti fa in una notte le corse di due settimane (una trentina contro le due scarse di una notte qualunque), tutte verso la stessa sterrata fra le 22:00 e le 23:30. I tassisti scaricano **all'incrocio, mai davanti al capannone**, pagati in contanti e senza ricevuta — e non sanno niente, quindi parlano volentieri. Incrociato con le date degli annunci sul giornale dà il **calendario dei combattimenti senza decifrare il codice**. È un handout (vedi `PIANO_HANDOUT_IMMAGINI.md`)
+6. **Il registro corse della Hozu Taxi** (保津タクシー, la piccola compagnia di taxi di Kameoka, 6 vetture): nelle notti dei combattimenti fa in una notte le corse di due settimane (una trentina contro le due scarse di una notte qualunque), tutte verso la stessa sterrata fra le 22:00 e le 23:30. I tassisti scaricano **all'incrocio, mai davanti al capannone**, pagati in contanti e senza ricevuta — e non sanno niente, quindi parlano volentieri. Incrociato con le date degli annunci sul giornale dà il **calendario dei combattimenti senza decifrare il codice**. È un handout (H-27, vedi `HandOut/_LEGGIMI.md`)
 
 ### Come ci arriva la gente
 La maggior parte lascia l'auto in un parcheggio del centro di Kameoka o alla stazione JR **e prende un taxi**, per non farsi vedere con la propria macchina. Chi viene in corriera da Kyoto viene **preso al capolinea da un gregario** e portato su in auto (così Tachibana l'11/02, e i prestanome a gennaio). Solo gli organizzatori e i clienti grossi arrivano fino al parcheggio sterrato sul retro, dove le auto vengono **coperte con teli scuri**.

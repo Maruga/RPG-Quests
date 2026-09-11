@@ -16,7 +16,7 @@
 - Aveva ricevuto da Tachibana (vittima) l'incarico di scommettere ¥2 mln come prestanome (ufficialmente "favore")
 - Ha intuito la truffa dalle quote anomale + dal nervosismo di Tachibana (vittima)
 - Ha scommesso di tasca propria ¥3 mln aggiuntivi
-- Ha vinto ¥15 mln (quota 3 a 1): ¥6 mln consegnati a Tachibana (vittima), ¥9 mln tenuti per sé
+- Ha vinto **¥50 mln** (quota 10 a 1): ¥20 mln consegnati a Tachibana (vittima), **¥30 mln tenuti per sé**
 - Il Nitōgun lo classifica come **complice consapevole**, non semplice prestanome
 
 ## Alibi e movimenti

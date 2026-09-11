@@ -30,6 +30,14 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 
 ## Struttura della cartella
 
+> **Ripulita il 2026-09-11** su ordine dell'autore («c'è una confusione assurda»): tolti il piano di produzione,
+> il rapporto di audit, l'export per la revisione esterna, gli scarti delle immagini. Resta solo ciò che serve a giocare
+> o a controllare. Tutto è recuperabile dal backup git della vault.
+
+- **`FOGLIO_GM.html`** — il foglio da tavolo (2026-09-11): **due facciate A4**, da stampare fronte-retro e tenere davanti
+  durante la partita. Verità in sei righe · chi è chi · cronologia · cosa sa Ōkubo e cosa no · promemoria di regole ·
+  quando si consegna ogni handout · il codice del giornale · gli interruttori · l'ospedale · il blitz · risposte pronte
+  ai vicoli ciechi · come finisce. Generatore: `foglio_gm.py` (scratchpad)
 - `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
 - `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
 - `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
@@ -41,12 +49,11 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   consegnano, avvertenze. Generatore: `genera_handout.py` (scratchpad)
 - `Immagini/` — **61 file** (2026-09-11), indice visivo in **`Immagini/_GALLERIA.html`**: `Scena/` (8 foto di rilievo delle due
   scene e del parcheggio) · `Reperti/` (4) · `Luoghi/` (11) · `Ritratti/` (**29 PNG in foto tessera**, stessa luce per tutti:
-  in fila non si distingue il criminale) · `_scarti/` (3 versioni sostituite, tenute per scelta). Alla radice restano le
+  in fila non si distingue il criminale). Alla radice restano le
   immagini dell'autore: `3ProiettiliPorta` (handout H-01b), `InventarioVittima` (H-02b), `AssassinoArrivaStazione` (H-26b,
   CAM-12), `VittimaBagno` e `TelecameraAssassinio` (**solo GM**: telecamera interna inesistente), `Copertina` (generica);
   `_originali/` = versioni prima dei ritocchi
-- `PIANO_HANDOUT_IMMAGINI.md` — handout e immagini, stato e decisioni (§B chiuso il 2026-09-11) · `CONTROLLO_2026-09-07.md`
-  — rapporto e stato applicazione · `CHECKLIST_CONTROLLO.md` — la checklist riutilizzabile
+- `CHECKLIST_CONTROLLO.md` — la checklist riutilizzabile, da usare a ogni controllo
 
 ## Decisioni chiuse (autore, 2026-08-24 e 2026-09-08)
 
@@ -57,7 +64,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 - Esito: Kuroda arrestabile (ergastolo) · Hayashi il punto crollabile · **Saitō non incastrato per gli omicidi** (4-6 anni)
 - **Niente intercettazioni** (illegali fino al 1999): tabulati con ordine del PM + sorveglianza. Mandati: Taniguchi → Watanabe Hideo (procuratore) → giudice
 - **Ōkubo sa poco** (Storia §27): mai stato al capannone, non conosce Saitō/Hayashi/Kuroda; dà i clienti dai prestiti
-  (Hashimoto, Kimura), il ristorante di copertura, l'esistenza del poliziotto. Era il terzo prestanome (¥2 mln + ¥3 suoi, vince ¥15 mln)
+  (Hashimoto, Kimura), il ristorante di copertura, l'esistenza del poliziotto. Era il terzo prestanome (¥2 mln + ¥3 suoi, a quota 10 vince ¥50 mln)
 - **Registro delle 10 chiamate = Storia §22**: tra i clienti solo Inoue e Tanaka; gli altri 4 «per altre vie»
 - **Yamaguchi resta** (gregario da ¥50k): Inagaki è «l'unico che conta», non «l'unico»
 - Nomi: si lasciano le omonimie cross-avventura (#4 Mori Sachiko, #5 Endō Hiroshi); dentro l'avventura nessuna piena. Prima
@@ -74,7 +81,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
 
 ## Stato e prossimi passi
 
-1. ✅ Coerenza (2026-08-24) · ✅ controllo completo e applicazione (2026-09-07/08): `CONTROLLO_2026-09-07.md`
+1. ✅ Coerenza (2026-08-24) · ✅ controllo completo e applicazione (2026-09-07/08)
    · ✅ **CHI È CHI applicato ovunque** (2026-09-09, formato `Nome (ruolo, stato)`: Tachibana (vittima), Murakami (veterinario),
    Watanabe Toshio (testimone) / Watanabe Hideo (procuratore), Tanaka Shōji, Sasaki Hideo, Mori, Reiko, Suzuki, Hayama…;
    script `qualifica_riga.py` (prima citazione per riga, idempotente) e `audit_nomi.py` (cognomi ambigui senza parentesi) nello scratchpad)
@@ -95,7 +102,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
    ritagliare) e nessuna scritta giapponese nel riquadro. Tre immagini sono diventate handout: **H-02c** (il disegno col
    sangue — H-02 reperto 21 prometteva l'allegato fotografico e mancava), **H-12b** (il retrobottega del veterinario),
    **H-15b** (l'identikit). Non fatta **IMG-08** (taccuino): il modello scrive kanji finti, e la pagina leggibile è già
-   l'handout H-09 sulla foto dell'autore. Scarti tenuti in `Immagini/_scarti/` con il motivo, se preferisce l'altra versione
+   l'handout H-09 sulla foto dell'autore.
 
 ## Da segnalare fuori cartella (non toccato)
 - `../GENKAI_Registro_Nomi.md`: **rinomina del 2026-09-11** — il figlio del veterinario **Murakami Kenji (村上 健次)**

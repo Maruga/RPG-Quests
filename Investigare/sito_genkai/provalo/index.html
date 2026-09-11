@@ -56,6 +56,11 @@ h2{font-size:clamp(1.25rem,4vw,1.55rem);margin:0 0 .8rem;font-weight:400}
 .fatto h4{margin:0 0 .4rem;font-family:var(--sans);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro)}
 .fatto p{margin:0 0 .2rem;color:var(--inchiostro)}
 .fatto img{border-radius:6px;margin:.6rem 0 0}
+.fatto .riga-img{display:flex;gap:1.1rem;align-items:flex-start;margin-top:.5rem}
+.fatto .riga-img img{flex:0 0 auto;width:230px;margin:0;border-radius:8px;box-shadow:0 3px 14px rgba(28,26,23,.3)}
+.fatto .riga-img .testo{flex:1 1 auto;min-width:0}
+.fatto .riga-img .testo p{margin:0 0 .5rem}
+@media(max-width:620px){ .fatto .riga-img{flex-direction:column;gap:.7rem} .fatto .riga-img img{width:100%;max-width:300px} }
 .fatto .dett{font-family:var(--sans);font-size:.85rem;color:var(--tenue);margin-top:.5rem}
 .voce-btn{margin-top:.7rem}
 
@@ -471,10 +476,14 @@ const SCHEDA = [
   { k:"Presenza", v:4, che:"L'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza.", quando:"Si tira quando devi imporsi senza alzare la voce. In uno scontro decide anche quanto sei pronto a reagire." }
 ];
 const ROBA = [
-  { k:"警棒 Il manganello", che:"D'ordinanza, alla cintura, sotto la giacca. Un investigatore in borghese non porta la pistola: quella resta in armadietto e si preleva firmando." },
-  { k:"Tesserino e manette", che:"Il 警察手帳, il tesserino di polizia: è quello che ti apre le porte, non la voce." },
-  { k:"Taccuino e penna", che:"Quello che scrivi qui dentro è quello che potrai usare dopo. Quello che non scrivi, per il verbale non è mai successo." },
-  { k:"Un pacchetto di sigarette", che:"Chiuso. Non lo apri da tre mesi e continui a portartelo dietro." }
+  { k:"警棒 Il manganello", img:"img/roba/manganello.jpg", alt:"Un manganello di legno scuro su un tavolo",
+    che:"D'ordinanza, alla cintura, sotto la giacca. Un investigatore in borghese non porta la pistola: quella resta in armadietto e si preleva firmando." },
+  { k:"Tesserino e manette", img:"img/roba/tesserino.jpg", alt:"Il tesserino della polizia di Kyoto, chiuso",
+    che:"Il 警察手帳, il tesserino: pelle nera, il crisantemo dorato e i tre caratteri della Polizia di Kyoto. È quello che ti apre le porte, non la voce." },
+  { k:"Taccuino e penna", img:"img/roba/taccuino.jpg", alt:"Un taccuino nero con una penna appoggiata sopra",
+    che:"Quello che scrivi qui dentro è quello che potrai usare dopo. Quello che non scrivi, per il verbale non è mai successo." },
+  { k:"Un pacchetto di sigarette", img:"img/roba/sigarette-b.jpg", alt:"Un pacchetto di sigarette chiuso accanto a un accendino",
+    che:"Chiuso, e ancora sigillato. Non lo apri da tre mesi e continui a portartelo dietro." }
 ];
 function renderCopertina(){
   cont.innerHTML = `
@@ -527,7 +536,10 @@ function renderCopertina(){
     cont.querySelectorAll("[data-roba]").forEach(x=>x.classList.remove("vista"));
     b.classList.add("vista");
     const r = ROBA.find(x=>x.k===b.dataset.roba);
-    document.getElementById("spiega-roba").innerHTML = `<div class="fatto"><h4>${r.k}</h4><p>${r.che}</p></div>`;
+    const corpo = r.img
+      ? `<div class="riga-img"><img src="${r.img}" alt="${r.alt||''}" loading="lazy"><div class="testo"><p>${r.che}</p></div></div>`
+      : `<p>${r.che}</p>`;
+    document.getElementById("spiega-roba").innerHTML = `<div class="fatto"><h4>${r.k}</h4>${corpo}</div>`;
   }));
   document.getElementById("comincia").addEventListener("click", ()=>{ S.fase="casa"; S.luogo="pianerottolo"; render(); });
 }

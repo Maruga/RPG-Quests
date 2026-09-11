@@ -15,7 +15,7 @@
 ## Ruolo nella vicenda
 - A inizio gennaio Tachibana (vittima) gli chiede "un favore tra amici": andare a un certo capannone con ¥1 mln, scommettere su un gallo specifico, ritirare l'eventuale vincita
 - Sasaki accetta senza fare domande (Tachibana (vittima) lo aiutò economicamente nel '92, Sasaki gli deve un favore morale)
-- Esegue la scommessa il giorno del combattimento, vince ¥3 mln, consegna tutto a Tachibana (vittima) il giorno dopo, riceve ¥200.000 come "ringraziamento"
+- Esegue la scommessa il giorno del combattimento, vince **¥10 mln**, consegna tutto a Tachibana (vittima) il giorno dopo, riceve ¥200.000 come "ringraziamento"
 - **Non sa** che era una truffa orchestrata
 - **Non sa** del Nitōgun come gruppo strutturato — pensa fossero "scommesse private tra appassionati"
 

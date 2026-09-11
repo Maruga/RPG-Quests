@@ -26,7 +26,7 @@ Spartano. Letto futon a pavimento, frigorifero piccolo, fornello a gas a 2 fuoch
 - **Coltello tantō** rituale giapponese sotto una tavola del pavimento (oggetto culturale personale)
 - Quaderno di **calligrafia giapponese**: esercizi quotidiani, sorprende per livello e dettaglio (lato culturale segreto del personaggio)
 - Banconote **¥10.000 numerazione consecutiva** (¥800.000) in una scatola di scarpe (paga di Saitō, tracciabile)
-- Cellulare **prepagato** con sole 4 chiamate ricevute da Hayashi nei giorni 10, 12, 14, 16 febbraio
+- Secondo cellulare, **intestato a un anziano di Fushimi** che ha ceduto il documento per ¥50.000, con sole 4 chiamate ricevute da Hayashi nei giorni 10, 12, 14, 16 febbraio
 - Cartucce **9×18 Makarov** di scorta in una scatolina (5)
 
 ### Nella palestra

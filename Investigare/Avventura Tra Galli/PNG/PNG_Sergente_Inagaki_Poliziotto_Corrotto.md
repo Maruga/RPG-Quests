@@ -28,7 +28,7 @@
 |---|---|---|
 | 11/02 sera | Turno 15:00–23:00 alla Stazione di Kameoka: con gli omicidi non c'entra | Registro turni |
 | 13/02 | Turno 07:00–15:00; alle 15:30 al bar davanti alla stazione con l'agente Yamaguchi | Registro, il barista |
-| 14/02 sera | Riposo, a casa. **Alle 23:05 riceve sul telefono privato una chiamata di Hayashi** (dal prepagato): «l'usuraio è vivo, è in ospedale» | Tabulati del suo telefono privato (ordine del procuratore, 48 ore) |
+| 14/02 sera | Riposo, a casa. **Alle 23:05 riceve sul telefono privato una chiamata di Hayashi** (dal cellulare della società): «l'usuraio è vivo, è in ospedale» | Tabulati del suo telefono privato (ordine del procuratore, 48 ore) |
 | 15/02 10:00 | Parcheggio del supermercato di Kameoka, con Hayashi: incontro d'urgenza sui PG | Sorveglianza |
 | 17/02 | Turno 15:00–23:00 | Registro turni |
 

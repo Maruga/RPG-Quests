@@ -7,7 +7,7 @@
 | PNG | mer 11/02 21:21 (Kyoto Station) | ven 13/02 ~14:00 (Yamashina) | sab 14/02 22:30 (Kamigyō) | mar 17/02 ~18:00 (ospedale) | dom 22/02 23:00 (capannone) |
 |---|---|---|---|---|---|
 | **Saitō Gorō** (capo) | A cena a Osaka, ricevuta 21:30 | Dal commercialista a Kyoto | In villa, al telefono col figlio 22:15–22:40 | Di ritorno da Nara (ricevuta 17:00) | Al capannone, se nessuno l'ha avvisato; altrimenti in villa |
-| **Hayashi Tomoki** (logistica) | Al volante in zona Hachijō-ovest (Yui: «rientrato alle 23:30») | Al capannone, col fornitore di mangimi (alibi vero) | In auto a due isolati da Ōkubo (fuori 21:30 – dopo mezzanotte) | A cena al Kameoka-tei 18:30–21:00 | Al capannone; oppure dal 21/02 al telefono per annullare |
+| **Hayashi Tomoki** (logistica) | A Kyoto ma **lontano dalla stazione**; vede Kuroda più tardi fuori città (Yui: «rientrato alle 23:30») | Al capannone, col fornitore di mangimi (alibi vero) | In auto a due isolati da Ōkubo (fuori 21:30 – dopo mezzanotte) | A cena al Kameoka-tei 18:30–21:00 | Al capannone; oppure dal 21/02 al telefono per annullare |
 | **Kuroda Ryō** (esecutore) | Nel bagno del 3° piano | Nel retrobottega di Murakami | Al posto B-04, dietro un pilastro | In ospedale alle 17:40, in palestra alle 19:15 «sudato» | Al capannone se libero; in custodia se preso |
 | **Inagaki** (sergente corrotto) | In turno a Kameoka 15–23 | In turno 07–15; alle 15:30 al bar con Yamaguchi | A casa; alle 23:05 la chiamata di Hayashi | In turno 15–23 | Libero e col telefono acceso — o arrestato dal 21/02 |
 | **Yamaguchi** (agente corrotto) | In servizio a Kameoka | Al bar con Inagaki | A casa | In servizio | Come Inagaki: vanno presi insieme |
@@ -61,8 +61,8 @@ Regola del manuale: En positivo si sottrae dal dado, negativo si aggiunge; se il
 | **15/02** la notizia dell'usuraio ferito | Ondata di paura: Watanabe, Mariko, Nishimura, Sasaki chiedono «sono il prossimo?». Chi risponde con una pattuglia guadagna +1/+2; chi liquida perde la fonte |
 | **Se i PG sentono Hayashi, Saitō, Tachi o Inagaki senza prove entro il 15–16/02** | Il Nitōgun sa dei PG: dal 16/02 gli «avvisi» (telefonate mute, l'animale morto, la foto del figlio di Yamamoto); Mariko parte per Sapporo il 17 salvo sorveglianza; Nishimura porta la madre a Shiga dal 18 |
 | **Se un cliente facoltoso viene sentito** (Fujiwara, Tanaka Shōji) | Entro 24 ore Saitō lo sa; entro 48 ore un'offerta a un PG (¥5–10 mln) e la «telefonata amichevole» a Taniguchi (Corruzione 5) |
-| **17/02** l'ospedale | Presidio doppio e cambio turno coperto: Kuroda non arriva alla stanza, o viene preso. Ōkubo che lo vede diventa il testimone chiave. Il 18/02 Saitō dice «basta» |
-| **Fermo di Hayashi con prove + patto** | Crolla in 24–48 ore, quando l'avvocato del gruppo passa a Kuroda e Yui viene convocata. Senza patto: fuori allo scadere del fermo. Lui è l'unica via per Saitō |
+| **17/02** l'ospedale | Ogni precauzione presa vale +20% (Storia §29): con cinque Ōkubo è salvo di sicuro, con zero muore. Ōkubo che lo vede diventa il testimone chiave. Il 18/02 Saitō dice «basta» |
+| **Fermo di Hayashi con prove + prospettiva di collaborazione** | Crolla in 24–48 ore, quando l'avvocato del gruppo passa a Kuroda e Yui viene convocata. Senza patto: fuori allo scadere del fermo. Lui è l'unica via per Saitō |
 | **Kuroda abbandonato** | Ribalta — ma la sua parola da sola non basta contro Saitō |
 | **Inagaki agli Affari Interni in silenzio (Ogura Naomi)** | Arresto il 21/02, **insieme a Yamaguchi**: il 22/02 si gioca. Uno solo dei due, o un confronto diretto senza Affari Interni: Saitō annulla, il capannone è vuoto |
 | **22/02 23:00** | Con Saitō dentro: combattimenti clandestini + evasione, 4–6 anni, mai gli omicidi. Vittoria amara |
@@ -91,4 +91,4 @@ Regola del manuale: En positivo si sottrae dal dado, negativo si aggiunge; se il
 | H-15 | Sig.ra Ueda e Sig. Hayama (vicini di Ōkubo) | 14/02 notte | `Luogo_Appartamento_Okubo_Kamigyo` | Nel rapporto del tentato omicidio |
 | H-01 | Mori Sachiko (pulizie) e Tanigawa (bigliettaio) | 11/02 notte | `Luogo_Kyoto_Station_Scena_Crimine` | Nel verbale del Kōban |
 
-I testi diventano handout HTML (formato «Verbale di sommarie informazioni», stile Ultima Lezione) nella fase handout: vedi `PIANO_HANDOUT_IMMAGINI.md`, sezione E.
+I testi diventano handout HTML (formato «Verbale di sommarie informazioni», stile Ultima Lezione) nella fase handout: le deposizioni pronte sono nelle schede dei PNG, indice qui sotto.

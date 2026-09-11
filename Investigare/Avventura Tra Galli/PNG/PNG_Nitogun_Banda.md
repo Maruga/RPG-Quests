@@ -84,7 +84,7 @@ A fine gennaio Saitō verifica la truffa del gallo sedato di gennaio. Decisione:
 
 ## Punti deboli del Nitōgun (per i PG)
 
-- **Hayashi è il punto crollabile**: con prove + patto giudiziario credibile può ribaltare tutto su Saitō
+- **Hayashi è il punto crollabile**: con prove + una prospettiva credibile di trattamento migliore può ribaltare tutto su Saitō (nel 1998 il patto scritto non esiste)
 - **Inagaki sotto Affari Interni**: cede entro 1 settimana dalla pressione formale
 - **Tachi Yūichirō**: cede se gli si fa capire che la moglie rischia accuse
 - **Catena societaria Kameoka Nōji KK**: tracciabile fino a Saitō, ma indirettamente

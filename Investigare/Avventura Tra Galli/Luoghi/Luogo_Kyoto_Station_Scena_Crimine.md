@@ -45,9 +45,10 @@ Bagno maschile al 3° piano, lato Hachijō, in prossimità dei tornelli Shinkans
 - **21:19**: Watanabe Toshio (testimone) è già nel cubicolo a sinistra (entrato alle 21:14)
 - **21:20**: Kuroda Ryō entra nel bagno, controlla con un'occhiata che il bagno sia vuoto a parte i cubicoli
 - **21:21**: Kuroda spara 3 colpi cal. 9×18 attraverso la porta del cubicolo centrale, all'altezza del torace
-- **21:21+10s**: Kuroda raccoglie i bossoli, esce
+- **21:21+10s**: Kuroda raccoglie i bossoli (il terzo no: è sotto un orinatoio), esce
+- **21:22**: la CAM-12 lo riprende mentre torna indietro nel corridoio · **~21:23**: passa davanti allo sportello del bigliettaio Tanigawa, verso le scale mobili · poi **esce a piedi dal lato Hachijō e sale su un autobus urbano** due isolati più in là. **Nessuna auto lo aspetta**: da qui la pista si spegne, e non c'è niente da trovare fuori dalla stazione
 - **21:21+30s**: Tachibana (vittima), ancora cosciente per pochi secondi, traccia col sangue sul pavimento il simbolo del gallo Nitōgun (due speroni sovrapposti)
-- **22:01**: Watanabe Toshio (testimone) esce dal proprio cubicolo dopo 40 minuti di paralisi e segnala
+- **22:01**: Watanabe Toshio (testimone) esce dal proprio cubicolo dopo 40 minuti di paralisi · **22:05**: si presenta al Kōban (il posto di polizia della stazione) e segnala
 - **22:08**: arriva la prima pattuglia, il **Kōban** della stazione (police box interna)
 - **22:35**: arrivano la Kanshiki-ka di **Ito Daisuke** e l'agente **Yamada Tetsuo** per la Sezione Omicidi; il caso passa alla squadra dei PG al briefing delle 08:00 del 12/02
 
@@ -59,7 +60,7 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 ### Sul pavimento
 - Pozza di sangue
 - **Disegno**: gallo stilizzato con due speroni sovrapposti sulla zampa destra, tracciato con il dito indice destro
-- Una piuma marrone scuro (proveniente dal bagagliaio dell'auto, attaccata alla suola della scarpa destra)
+- Una piuma marrone scuro (proveniente dal bagagliaio dell'auto, sul pavimento del cubicolo, a 40 cm dal piede destro; sulla suola destra della scarpa della vittima c'è materia estranea impigliata)
 
 ### Sulla porta del cubicolo
 - 3 fori di proiettile, raggruppati in un'area di circa 25 cm, altezza torace
@@ -112,6 +113,7 @@ Vittima trovata seduta in posizione semireclinata, schiena contro la parete del 
 - Il bagno è il punto di partenza investigativo. Indizi *forti*: disegno del gallo, biglietto autobus Kameoka, piuma di gallo. Indizi *deboli* ma utili: orario, cellulare, fede + amante (depistaggio temporaneo).
 - La scelta del luogo da parte di Kuroda è strategica: telecamera ingresso bagno **guasta dal 9/02** (segnalazione pubblica, ricambio in arrivo). Hayashi ha fatto una **ricognizione preventiva** del bagno il 10/02 per scegliere il punto adatto e ha notato il cartello di guasto: niente complice interno, è un'opportunità casuale colta al volo. **Non aprire sottotrame** su questo: i PG che vogliono indagare il guasto trovano solo il rapporto di manutenzione standard JR.
 - Lasciare ai PG margine per scoprire la **telecamera del corridoio**: dà una descrizione fisica utile dell'esecutore senza rivelare il volto.
+- **Se i PG cercano fuori dalla stazione** (e lo faranno): non c'è niente, ed è voluto. L'esecutore se n'è andato **a piedi e in autobus**, biglietto in contanti, nessun nome da nessuna parte. Risposte pronte: il **parcheggio multipiano** conserva solo i tagliandi delle auto entrate, e quella della vittima (Toyota Crown nera, posto B-14) è l'unica che interessa — nessun complice ci è mai entrato; i **tassisti** del piazzale non hanno caricato nessuno che corrisponda; le telecamere delle uscite e degli atri sono quelle già viste, larghe e inutili. Il filo riprende solo sull'**alibi di Hayashi** (l'ora di rientro che dà Suzuki Yui, la sua compagna) e sui **tabulati**. Dirlo chiaro evita che ci passino la serata.
 
 ---
 

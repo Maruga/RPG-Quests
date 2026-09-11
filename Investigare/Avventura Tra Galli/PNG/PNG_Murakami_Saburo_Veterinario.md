@@ -34,7 +34,7 @@ Magro, 1,72 m, leggermente curvo. Capelli grigi diradati. Occhiali in metallo do
 ## Come si comporta (12 febbraio, se i PG arrivano prima del Nitōgun)
 - **Primo contatto**: panico controllato, sudore freddo, inchini troppo profondi, offre il tè due volte. Parla a voce bassa e in fretta
 - **Sotto pressione**: nega di conoscere bene Tachibana (vittima): «rapporti professionali», visite a piccoli animali. Mente sulla truffa, mente sui debiti, e mente male — inventa un cane della vittima che non è mai esistito (D-11)
-- **Crolla se**: si nomina la figlia Aiko; oppure gli si mostrano gli estratti conto (il debito che si azzera a fine gennaio); oppure si dice a voce alta «il gallo sedato»
+- **Crolla se**: si nomina la figlia Aiko; oppure gli si mostrano gli estratti conto (a fine gennaio compaiono contanti che non sa giustificare); oppure si dice a voce alta «il gallo sedato»
 - **Dopo il crollo**: confessa tutto (vedi *Cosa sa*), chiede protezione per la famiglia, è disposto a testimoniare — ma vuole essere portato via **subito**, non «domani col mandato»
 
 ## Cosa sa
@@ -54,7 +54,7 @@ La figlia Aiko, 15 anni. Qualunque pressione che la coinvolga lo fa crollare.
 
 ## Indizi nella sua clinica
 - 1 copia del Kyoto Shimbun (febbraio '98) con annuncio Ristorante Kameoka-tei
-- Estratti conto bancari che mostrano il debito che si azzera improvvisamente a fine gennaio
+- Estratti conto bancari: a fine gennaio entrano contanti che sanano di colpo la morosità del mutuo. L'esposizione verso la banca resta di ¥38 mln; il debito di ¥6,8 mln cancellato era verso Tachibana (vittima), privato, e la banca non ne sa nulla (H-14)
 - Contante nascosto (¥1,5 mln) dietro armadio farmaci
 - Nessuna agenda con appuntamenti Nitōgun (era prudente)
 

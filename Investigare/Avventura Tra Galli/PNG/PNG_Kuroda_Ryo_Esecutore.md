@@ -15,15 +15,15 @@
 ## Ruolo nella vicenda
 - Esecutore materiale dei tre attentati
 - Reclutato da Hayashi nel 1996 dopo una rissa in un locale dove aveva quasi ucciso un rivale
-- **Non è un sicario professionista**: è un picchiatore violento promosso. Questo è il suo punto debole tecnico — lascia indizi che un professionista non lascerebbe (impronta scarpa, sparo a contatto, fuga a piedi visibile sulla telecamera)
+- **Non è un sicario professionista**: è un picchiatore violento promosso. Questo è il suo punto debole tecnico — lascia indizi che un professionista non lascerebbe (impronta scarpa, sparo a contatto, uscita a piedi ripresa dalla telecamera)
 - Compenso per i tre attentati: ¥3,5 mln + protezione
 
 ## Esecuzione 11/02 ore 21:21
-- Arriva alla Kyoto Station alle 21:14 con auto guidata da Hayashi (Hayashi resta al volante in zona Hachijō-ovest)
+- Arriva alla Kyoto Station alle 21:14 **da solo, coi mezzi** (abita a Fushimi, dieci minuti): nessuna auto lo aspetta fuori
 - Sale al 3° piano alle 21:20 (ripreso dalla telecamera CAM-12 del corridoio sud: berretto di lana, borsa a tracolla nera con dentro la Makarov), entra nel bagno pochi secondi dopo
 - Spara 3 colpi con una pistola semiautomatica Makarov PM cal. 9×18
 - Raccoglie i bossoli **(errore: ne dimentica uno scivolato sotto un orinatoio — i PG possono trovarlo se cercano bene)**
-- Esce alle 21:22, scende al pianterreno, sale in auto, fugge
+- Esce alle 21:22, scende al pianterreno, esce dal lato Hachijō **a piedi** e prende un autobus urbano due isolati più in là. Vede Hayashi più tardi, a un punto convenuto fuori città
 
 ## Alibi
 
@@ -62,7 +62,7 @@
 - Makarov PM nascosta in un'intercapedine del bagno (se trovata, prova balistica decisiva)
 - Cartucce 9×18 di scorta in una scatola
 - Banconote da ¥10.000 con numerazione consecutiva (paga di Saitō, tracciabile a un prelievo bancario)
-- Cellulare prepagato con sole 4 chiamate ricevute da Hayashi nelle date critiche
+- Secondo cellulare, **intestato a un anziano di Fushimi** che ha ceduto il documento e nega tutto, con sole 4 chiamate ricevute da Hayashi nelle date critiche
 
 ## Telecamera del corridoio (3° piano Kyoto Station)
 La telecamera CAM-12 (corridoio sud, verso i bagni) lo riprende alle 21:20 e 21:22. Volto **non riconoscibile** in qualità VHS (di spalle all'andata, berretto di lana), ma:
@@ -110,12 +110,12 @@ Con gli altri: Saitō Gorō **+3** (devoto — e terrorizzato: il dilemma che pu
 
 | Quando / se… | Cosa fa | En con i PG |
 |---|---|---|
-| 11/02 21:21 | La Kyoto Station. In auto con Hayashi | — |
+| 11/02 21:21 | La Kyoto Station. Ci va e se ne va **da solo, coi mezzi**: esce a piedi dal lato Hachijō e prende un autobus urbano. Vede Hayashi più tardi, fuori città | — |
 | 12/02 | Si allena, lezione alle 18:00 come sempre. Nel pomeriggio la ricognizione a Yamashina | — |
 | 13/02 14:00 | Yamashina, da solo | — |
 | 14/02 22:30 | Kamigyō. Ōkubo vivo: per lui è una vergogna personale | — |
-| 15–16/02 | Sparisce dentro la routine: palestra, monolocale, niente telefonate in uscita. Il prepagato riceve la quarta chiamata di Hayashi il 16/02 sera: l'ospedale | — |
-| 17/02 17:40 | Entra in ospedale con la divisa del catering e il carrello (l'accesso di servizio non è presidiato). Se i PG hanno raddoppiato il presidio e coperto il cambio turno delle 14:00–22:00, se ne accorge: lascia il carrello in un corridoio (**dentro, la siringa di cloruro di potassio**) ed esce a piedi. Se lo fermano: uno scambio in corridoio — mani, poi le scale di servizio (`GENKAI_Combattimento` v3.1) | — |
+| 15–16/02 | Sparisce dentro la routine: palestra, monolocale, niente telefonate in uscita. Il secondo cellulare riceve la quarta chiamata di Hayashi il 16/02 sera: l'ospedale | — |
+| 17/02 17:40 | Entra in ospedale con la divisa del catering e il carrello (l'accesso di servizio non è presidiato). Se i PG hanno raddoppiato il presidio e coperto il cambio turno delle 18:00, se ne accorge: lascia il carrello in un corridoio (**dentro, la siringa di cloruro di potassio**) ed esce a piedi. Se lo fermano: uno scambio in corridoio — mani, poi le scale di servizio (`GENKAI_Combattimento` v3.1) | — |
 | Se resta libero dopo il 17/02 | Il 18/02 Saitō gli dice «basta». Kuroda obbedisce — ma Ōkubo ancora vivo in stanza 412 lo rode: **opzione GM**, un terzo tentativo di testa sua il 20–21/02, senza Hayashi, sporco. Saitō non lo perdonerebbe | — |
 | Arrestato **con** la Makarov (intercapedine del bagno) | Balistica 48–72 ore: incastrato per Tachibana. 48 ore di silenzio con l'avvocato. La crepa arriva da fuori: l'avvocato del gruppo che difende Hayashi e non più lui, o Hayashi che lo scarica a verbale → ribalta. Senza Hayashi resta la sua parola contro Saitō: ergastolo per lui, niente per il vecchio | — |
 | Arrestato **senza** prove fisiche | 48+24 ore e fuori. Da quel momento non torna più in palestra: Saitō lo manda a Osaka. Se qualcuno (Kuroda stesso, in custodia) rischia di parlare, Saitō valuta di farlo eliminare in carcere: sottotrama | — |
