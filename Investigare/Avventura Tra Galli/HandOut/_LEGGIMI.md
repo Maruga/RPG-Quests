@@ -9,6 +9,10 @@ e incollare — e tre handout hanno il loro allegato fotografico vero (H-02c il 
 veterinario, H-15b l'identikit). Tutte le immagini, con la didascalia e dove finiscono, stanno in
 **`../Immagini/_GALLERIA.html`**: aprila nel browser, è l'indice visivo.
 
+**Ogni foglio porta il suo codice in basso a sinistra** — `H-01 · Rapporto Koban`, `H-12b · Foto Studio Veterinario`
+— in grigio piccolo, così nella pila li ritrovi a colpo d'occhio senza doverli leggere. Sui token c'è
+`TOKEN · crime board 1 / 2`.
+
 ## Come si stampa tutto in una volta
 
 Apri **`_STAMPA_TUTTI.html`**: contiene tutti i documenti in fila, con l'interruzione di pagina già impostata.

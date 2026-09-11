@@ -11,10 +11,14 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Investigare/Avventura Tra Galli/Storia Completa.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Storia Completa"
             }
           }
         ]
@@ -225,14 +229,16 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Tra Galli/Inizio - Incarico.md",
+    "Investigare/Avventura Tra Galli/CHECKLIST_CONTROLLO.md",
+    "Investigare/Avventura Tra Galli/Storia Completa.md",
+    "Investigare/Avventura Tra Galli/HandOut/_LEGGIMI.md.tmp.17900.4cc23ddf7995",
     "Investigare/Avventura Tra Galli/rit_watanabe-20260911-013945-220.png",
     "Investigare/Avventura Tra Galli/rit_tachi_reiko-20260911-014903-183.png",
     "Investigare/Avventura Tra Galli/rit_yusuke-20260911-014313-824.png",
     "Investigare/Avventura Tra Galli/rit_test_tachibana-20260911-013847-340.png",
     "Investigare/Avventura Tra Galli/rit_tanaka-20260911-015349-122.png",
     "Investigare/Avventura Tra Galli/rit_tachi-20260911-014826-839.png",
-    "Investigare/Avventura Tra Galli/Storia Completa.md",
-    "Investigare/Avventura Tra Galli/Inizio - Incarico.md",
     "Investigare/Avventura Tra Galli/CLAUDE.md",
     "Investigare/Avventura Tra Galli/PNG/PNG_Okubo_Kenji_Prestanome_Consapevole.md",
     "Investigare/Avventura Tra Galli/PNG/PNG_Clienti_Scommettitori.md",
@@ -240,7 +246,6 @@
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Vittima_Fushimi.md",
     "Investigare/Avventura Tra Galli/Luoghi/Luogo_Appartamento_Okubo_Kamigyo.md",
     "Investigare/Avventura Tra Galli/CONTROLLO_2026-09-07.md",
-    "Investigare/Avventura Tra Galli/CHECKLIST_CONTROLLO.md",
     "Investigare/Avventura Tra Galli/HandOut/_LEGGIMI.md",
     "Investigare/Avventura Tra Galli/_TUTTO_PER_REVISIONE.md",
     "Investigare/Avventura Tra Galli/HandOut/_LEGGIMI.md.tmp.17900.1d8b458d02a6",
@@ -252,12 +257,10 @@
     "Investigare/Avventura Tra Galli/HandOut/H-15_Tentato_Omicidio_Okubo.html",
     "Investigare/Avventura Tra Galli/HandOut/H-14_Estratti_Conto_Murakami.html",
     "Investigare/Avventura Tra Galli/HandOut/H-13_Autopsia_Murakami.html",
-    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.464ca705667b",
     "Investigare/sito_genkai/provalo/img/roba/sigarette-b.jpg",
     "Investigare/sigarette_prova.jpg",
     "Investigare/roba-sigarette3-20260911-115810-759.png",
     "Investigare/roba-sigarette2-20260911-115649-957.png",
-    "Investigare/sito_genkai/provalo/img/roba/sigarette.jpg",
     "Investigare/sito_genkai/provalo/CASO_testi_v1.md",
     "Investigare/_DA_CANCELLARE_brief_minicaso/02_il_personaggio.md",
     "Investigare/_DA_CANCELLARE_brief_minicaso/01_le_regole_del_gioco.md",

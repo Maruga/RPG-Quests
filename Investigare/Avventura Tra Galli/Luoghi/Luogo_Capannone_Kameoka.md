@@ -56,6 +56,18 @@ Capannone in lamiera grigia, 35×20 m, tetto a doppio spiovente, altezza 7 m al 
 - ~20 operativi del Nitōgun (sicurezza, allibratori, addetti galli)
 - 7 combattimenti per serata (vedi sistema di codifica nel taccuino)
 
+## Perché la serata di febbraio è diversa (solo GM)
+
+Le quattro serate d'archivio cadono tutte **di sabato** e l'annuncio esce sempre **tre giorni prima**, il mercoledì.
+Quella del **22 febbraio** è **di domenica**, e l'annuncio esce il **9 febbraio**, tredici giorni prima, su un'edizione
+del lunedì. È l'unica che fa eccezione su entrambe le cose, e non è un errore: è la **prima serata dopo la truffa di
+gennaio**. Saitō (il capo) l'ha spostata e annunciata presto perché vuole **tutto il giro presente**, col nuovo
+campione al posto di Wasabi: è la sera in cui il Nitōgun fa vedere di essere ancora in piedi.
+
+**Questo non sta scritto in nessun handout, ed è voluto.** I documenti riportano solo le date. Se i giocatori
+confrontano i cinque annunci e si accorgono che febbraio è fuori schema, hanno capito da soli che il 22 è la serata
+che conta — ed è il loro lavoro, non quello del verbale.
+
 ## Sicurezza
 - **8-9 armati in tutto**: 4-5 addetti alla sicurezza con armi corte (**non yakuza**, piccoli criminali), il capo della sicurezza e **3 tiratori con fucili da caccia** alle finestre alte; più 2 vedette esterne disarmate. Il dettaglio per lo scontro è nella tabella in fondo alla scheda
 - Sistema di vedette: 2 guardie a 500 m sulla strada secondaria con walkie-talkie
