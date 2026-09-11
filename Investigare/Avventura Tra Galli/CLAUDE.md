@@ -45,6 +45,15 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   v3.1 (iniziativa, attacco, difesa, Ukemi, Assorbe, critici). **Statistiche copiate dalle schede, non reinventate**:
   fonte `Luoghi/Luogo_Capannone_Kameoka.md`, `PNG/PNG_Nitogun_Banda.md` e le quattro schede PNG.
   Generatore: `foglio_scontro.py` (scratchpad)
+- **`MAPPA_CAPANNONE_A3.html`** — la mappa da tavolo (2026-09-11), **A3 orizzontale**, disegnata in SVG (non
+  generata da un modello: le proporzioni sono quelle vere). **Vuota: non c'è nessuno, i token li mette l'autore.**
+  Scala 1:230, reticolo da 5 m, scala grafica e nord. Mostra **anche l'esterno**, per posizionare le auto: piazzale
+  sterrato, sterrata, parcheggio sul retro con ~30 stalli, pista di servizio, recinzione su tre lati, i due varchi
+  verso le risaie, il settore assegnato ai PG al briefing. Dentro: ingresso, scommesse (4 banchi + lavagna), arena
+  ottagonale con gradinata, retro con la stalla dei galli, magazzino, ufficio di Saitō (capo) con la cassaforte a
+  muro. **20 rimandi numerati** alla colonna di legenda a sinistra. Geometria copiata da
+  `Luoghi/Luogo_Capannone_Kameoka.md` (35×20 m, colmo 7 m, finestre alte nord ed est, insegna «Tanaka Nōki»).
+  Generatore: `mappa_capannone.py` (scratchpad)
 - `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
 - `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
 - `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
