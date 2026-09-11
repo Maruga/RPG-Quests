@@ -183,8 +183,7 @@ function nuovoStato(){
     passo:0,                  /* la parte guidata: arrivo · agente · medico · salma */
     fase:"copertina", luogo:"pianerottolo"
   };
-  S.tacc.push({ id:"medico", testo:"Morto per il colpo alla testa, non per l'acqua: nessuna schiuma, non respirava più quando è finito dentro", data:true });
-  S.tacc.push({ id:"vicina", testo:"Alle cinque: campanello, voce giovane «sono io», tv abbassata. Mezz'ora dopo, la porta sbattuta", data:true });
+  /* il taccuino parte VUOTO: le righe dell'agente e del medico arrivano quando ci parli */
 }
 nuovoStato();
 
@@ -236,13 +235,11 @@ const LUOGHI = {
       `Un palazzo di quelli tirati su in fretta trent'anni fa: ballatoi esterni, il cemento a vista, i panni di qualcuno lasciati fuori a prendere la pioggia. L'ascensore non c'è mai stato. Al secondo piano una televisione va forte dietro una porta chiusa, e qualcuno ride.`,
       `Ti ha mandato qui il commissario <b>Taniguchi Osamu</b>, capo della Sezione Omicidi, con la voce di uno che sta cenando: gli è arrivata una segnalazione dal personale dell'ambulanza. Un uomo trovato morto in casa sua, e una cosa che secondo il medico non torna. <em>«Vacci tu. Guarda, e poi dimmi se è come dicono.»</em>`,
       `Sali con la giacca che gocciola. Gli scalini sono bagnati fin dal primo pianerottolo, e l'aria sa di muffa e di cemento umido, quell'odore che nei palazzi vecchi non se ne va più. Sotto il neon del ballatoio, l'[[acqua]] esce da sotto la [[porta]] e scende a filo di muro, gradino dopo gradino, come se la casa si stesse svuotando piano.`,
-      `L'[[agente]] del posto di polizia ti aspetta sulla soglia, in piedi, con le scarpe in mano e i calzini fradici. Dentro si sente una [[televisione]], così piano che devi fermarti per accorgertene.`
+      `Un agente del posto di polizia ti aspetta sulla soglia, in piedi, con le scarpe in mano e i calzini fradici. Dentro, lontana, si sente una televisione.`
     ],
     voci:{
       acqua:{ fatto:"Viene da dentro. Scorre da ore: sul cemento del ballatoio c'è già l'alone scuro del bagnato vecchio, e la pozza arriva fino alla ringhiera.", nota:"L'acqua esce dall'appartamento da ore" },
-      porta:{ fatto:"Chiusa, non forzata. L'agente l'ha aperta con la chiave del custode. Nessun segno sullo stipite, nessuno sulla serratura.", nota:"Porta chiusa, nessuna forzatura" },
-      televisione:{ id:"tv-fuori", fatto:"Si sente attraverso la porta chiusa, ma solo se stai fermo. Parla una voce, e non capisci nemmeno che lingua sia.", nota:"Televisione accesa, e da fuori si sente appena" },
-      agente:{ fatto:"Trentacinque anni, calzini fradici, il verbale già scritto in mano. Fa il giro di queste scale da nove anni e stanotte ha la faccia di chi ha visto una cosa che non si aspettava di vedere qui." }
+      porta:{ fatto:"Chiusa, non forzata. L'agente l'ha aperta con la chiave del custode. Nessun segno sullo stipite, nessuno sulla serratura.", nota:"Porta chiusa, nessuna forzatura" }
     }
   },
   cucina: {
@@ -303,14 +300,15 @@ const LUOGHI = {
     }
   },
   agente: {
-    nome:"L'agente", tag:"Sulla soglia, coi calzini bagnati", titolo:"Quello che ha trovato",
+    nome:"L'agente", tag:"Sulla soglia, coi calzini bagnati", titolo:"Quello che ha trovato lui",
     testo:[
-      `Ti passa il verbale senza rileggerlo. Ha i calzini fradici e non se ne è ancora accorto.`,
-      `Puoi chiedergli del [[rubinetto]], della [[vicina]], del [[vecchio]], del [[nipote]].`
+      `Trentacinque anni, il giro di queste scale da nove. Ti passa il verbale senza rileggerlo, e mentre lo apri comincia a parlare da solo, come fanno tutti quando hanno aspettato un'ora al freddo.`,
+      `«La vicina di fronte ha visto l'acqua sul ballatoio ed è scesa da me sotto la pioggia. Le ho preso la deposizione e l'ho rimandata dentro: ottantadue anni e la vestaglia bagnata.»`,
+      `Poi aspetta le tue domande. Puoi chiedergli del [[rubinetto]], del [[vecchio]], del [[nipote]].`
     ],
+    dai:{ id:"vicina", testo:"Deposizione della vicina — alle cinque: campanello, voce giovane «sono io», tv abbassata. Mezz'ora dopo, la porta sbattuta" },
     voci:{
       rubinetto:{ fatto:"«Era aperto quando sono entrato. L'ho chiuso io alle nove e cinquantadue. È a verbale.»", nota:"Il rubinetto era ancora aperto all'arrivo della polizia" },
-      vicina:{ fatto:"«Quella di fronte. Ha visto l'acqua sul ballatoio ed è scesa da me sotto la pioggia. Dice che verso le cinque ha sentito il campanello e una voce di uomo, giovane, che diceva <em>sono io</em>. Poi la televisione si è abbassata di colpo. Poi più niente, per una mezz'ora buona. Poi la porta sbattuta.»<br><br>«È rientrata in casa, le ho detto io di andare. Ottantadue anni e la vestaglia bagnata.»", dett:"Questa è già una delle due righe che ti hanno dato: non ti costa niente." },
       vecchio:{ fatto:"«Lo conoscevo. Mezzo sordo da un orecchio, la fabbrica. La televisione la teneva a un volume che si sentiva sulle scale. Tutti glielo dicevano, e lui rideva.»", nota:"Il vecchio era mezzo sordo, teneva la televisione altissima" },
       nipote:{ fatto:"«L'ho chiamato io, mezz'ora fa. È l'unico che ha. Si faceva vedere poco.» Si ferma. «Poco, ma sempre negli stessi giorni del mese. Questa a verbale non ce la metto.»", nota:"Il nipote passava solo nei giorni della pensione" }
     }
@@ -318,12 +316,12 @@ const LUOGHI = {
   medico: {
     nome:"Il medico", tag:"Ha finito il turno da un'ora", titolo:"Quello che dice il corpo",
     testo:[
-      `Ha già chiuso la borsa. Sta in piedi contro lo stipite e aspetta solo di andarsene.`,
-      `Puoi chiedergli della [[testa]], dell'[[acqua nei polmoni]], delle [[mani]], dell'[[ora]].`
+      `Ha già chiuso la borsa e sta in piedi contro lo stipite. Non aspetta che tu gli chieda: è lui che ha fatto chiamare l'Omicidi, e vuole che resti scritto da qualche parte.`,
+      `«Non è annegato. Il colpo sopra l'occhio è quello che l'ha ammazzato, ed è stato quasi subito: ha preso qualcosa di duro con uno spigolo. E quando uno annega gli esce una schiuma bianca dalla bocca. Sempre. A lui non è uscito niente: quando è finito in acqua non respirava già più.»`,
+      `Poi ti guarda, e ha ancora un minuto. Puoi chiedergli delle [[mani]] e dell'[[ora]].`
     ],
+    dai:{ id:"medico", testo:"Referto — morto per il colpo alla testa, non per l'acqua: nessuna schiuma, non respirava più quando è finito dentro" },
     voci:{
-      testa:{ fatto:"«Il colpo sopra l'occhio. È quello che l'ha ammazzato, ed è stato quasi subito. Ha sbattuto contro qualcosa di duro con uno spigolo.»", dett:"È già nel tuo taccuino: te l'hanno data." },
-      "acqua nei polmoni":{ fatto:"«Quando uno annega gli esce una schiuma bianca dalla bocca e dal naso. Sempre. A lui non è uscito niente.»", dett:"È già nel tuo taccuino: te l'hanno data." },
       mani:{ fatto:"«Le mani non hanno niente. Né i palmi né i polsi.» Si stringe nelle spalle. «Uno che cade in avanti da sveglio le mani le mette avanti. Sempre. Non ho mai visto nessuno che non lo faccia.»", nota:"Mani e polsi intatti: non si è parato" },
       ora:{ fatto:"«Fra le cinque e le otto di sera. Di più non le so dire: quell'acqua era calda e ce l'ha tenuto dentro per ore. Il corpo non mi dà l'ora, mi dà solo che è stato a mollo un pezzo.»", nota:"Morto fra le cinque e le otto di sera" }
     }
@@ -429,13 +427,17 @@ let girando = null;
 function chip(){
   chipKi.textContent = S.ki;
   chipKi.parentElement.classList.toggle("genkai", S.ki <= 3);
-  chipRighe.textContent = "Taccuino " + mie() + "/" + S.righe;
+  chipRighe.textContent = S.righeDecise
+    ? "Taccuino " + mie() + "/" + S.righe
+    : "Taccuino " + (S.tacc.length === 0 ? "vuoto" : S.tacc.length === 1 ? "1 riga" : S.tacc.length + " righe");
 }
 function taccHtml(nuova){
   const q = mie() === 0 ? "nessuna riga" : mie() === 1 ? "una riga" : mie() + " righe";
-  let h = `<div class="tacc"><h4>Il tuo taccuino <span>${q} su ${S.righe}</span></h4><ul>`;
+  const conta = S.righeDecise ? `${q} su ${S.righe}` : "";
+  let h = `<div class="tacc"><h4>Il tuo taccuino <span>${conta}</span></h4><ul>`;
+  if (!S.tacc.length && !S.righeDecise) h += `<li class="vuota">ancora bianco</li>`;
   for (const v of S.tacc) h += `<li class="${v.data?'data':''}${v.id===nuova?' nuova':''}">${v.testo}</li>`;
-  for (let i = mie(); i < S.righe; i++) h += `<li class="vuota">riga libera</li>`;
+  if (S.righeDecise) for (let i = mie(); i < S.righe; i++) h += `<li class="vuota">riga libera</li>`;
   return h + "</ul></div>";
 }
 function scrolla(el){ if (el && el.scrollIntoView) el.scrollIntoView({behavior:"smooth", block:"nearest"}); }
@@ -543,6 +545,9 @@ function testoHtml(L){
 function renderLuogo(){
   const L = LUOGHI[S.luogo];
   if (STANZE.indexOf(S.luogo) >= 0) S.viste["stanza-"+S.luogo] = true;
+  /* quello che ti consegnano in mano entra nel taccuino da sé, e non ti costa una riga */
+  let appena = null;
+  if (L.dai && !ho(L.dai.id)){ S.tacc.push({ id:L.dai.id, testo:L.dai.testo, data:true }); appena = L.dai.id; chip(); }
   const img = L.img ? `<img src="${L.img}" alt="${L.alt||''}">` : "";
   const gou = (!S.gouUsato && GOU[S.luogo]) ? `
     <div class="gou-box">
@@ -558,10 +563,11 @@ function renderLuogo(){
       <p class="scena-tag">${L.tag}</p>
       <h2>${L.titolo}</h2>
       ${testoHtml(L)}
+      ${appena ? `<div class="chiuso">Te l'ha messa in mano lui: va nel taccuino, e non ti costa una riga.</div>` : ""}
       <div id="fatto"></div>
       ${gou}
       <div id="gou-esito"></div>
-      ${taccHtml()}
+      ${taccHtml(appena)}
       <div class="luoghi" id="luoghi"></div>
     </div>
   </article>`;
@@ -1186,7 +1192,7 @@ function secondoTiro(){
       document.getElementById("e2").innerHTML = `
         <div class="esito ${m.classe}"><h3>${m.titolo}</h3><p>${testi[fascia]}</p>
           <div class="mecc"><b>Meccanica</b>${applica(fascia,"Lucidità")}</div>
-          <div class="mecc"><b>Il tuo taccuino</b>Hai <b>${righe} righe</b> tue, più le due che ti hanno già dato (il referto e la vicina). Guardare non costa niente: scrivere sì.</div>
+          <div class="mecc"><b>Il tuo taccuino</b>Hai <b>${righe} righe</b> tue, oltre a quelle che ti hanno messo in mano l'agente e il medico. Guardare non costa niente: scrivere sì.</div>
         </div>
         <div class="avanti-box"><button type="button" class="btn btn-forte" id="entra">Entri in casa →</button></div>`;
       chip();
