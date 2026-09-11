@@ -80,6 +80,22 @@
 - [ ] Kanji e testi nell'immagine corretti e coerenti (nome, date, luoghi, targhette)
 - [ ] Gli originali modificati sono salvati in `Immagini/_originali/`
 
+**Immagini generate a modello (dal 2026-09-11)** — lezioni pagate sul campo:
+- [ ] **Niente scritte**: il modello inventa kanji illeggibili. Nel prompt va chiesto esplicitamente «nessun testo,
+      nessuna lettera, nessun carattere», insegne e etichette comprese. Testo che deve essere giusto → PIL o HTML
+- [ ] **Le misure si controllano nella foto**, non solo nel verbale: il righello nell'inquadratura dice quanto è
+      grande davvero la cosa fotografata. Se non combacia, si allineano **tutti e due** (il disegno col sangue è
+      passato da «12 cm» del verbale a «circa 20», che è la misura vera)
+- [ ] **Un segno lasciato da un morente si disegna come lo disegnerebbe un morente** (autore, 2026-09-11): rozzo,
+      a dito, pochi tratti grossi e storti — ma pochi **e tutti utili**, perché sapeva cosa stava tracciando. Se
+      l'immagine cambia carattere, **cambia anche il verbale che la descrive** (H-02 non dice più «tratto continuo
+      e regolare»). E dopo aver toccato il testo di H-02, **rimisurare la pagina**: è piena al millimetro
+- [ ] **La posizione del corpo deve combaciare col verbale** che la descrive (prono ≠ «riverso sul fianco»)
+- [ ] **Due luoghi diversi devono sembrare diversi**: il ristorante di paese e il vicolo di Gion erano gemelli
+- [ ] **I ritratti non devono tradire il ruolo**: stessa posa, stessa luce, stesso fondo per tutti — il sicario e la
+      casalinga si fotografano uguale, altrimenti la crime board risolve il caso da sola
+- [ ] **L'identikit somiglia al ritratto senza esserne la copia**: serve a escludere, non a identificare
+
 ## 9. Handout
 - [ ] Piano ↔ prodotti: cosa manca, cosa esiste già come immagine
 - [ ] Ogni handout: pre-elaborato come lo produrrebbe un professionista; ≥ 1 nota utile + ≥ 1 neutra; mai il colpevole

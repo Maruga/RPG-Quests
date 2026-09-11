@@ -36,11 +36,17 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   Inagaki, Ōkubo, comparse (`PNG_Nitogun_Banda`), cani (`Luogo_Villa_Saito_Kameoka`). **Ogni PNG ha il blocco «al tavolo»**
   (2026-09-09): alibi verificabili, come si comporta, deposizione in prima persona (D-01…D-24), En verso i 5 PG e tra PNG,
   «come cambia nel tempo»; i PNG minori stanno nei Luoghi; quadro d'insieme `PNG/PNG_Quadro_Alibi_En.md`
-- `Immagini/` — `3ProiettiliPorta` (handout, corretta), `InventarioVittima` (handout), `AssassinoArrivaStazione` (handout,
+- `HandOut/` — **35 handout + 2 pagine di token**, HTML, **uno per pagina A4** (verificato); `_STAMPA_TUTTI.html` li mette
+  in fila con l'interruzione di pagina per aprirli in Word e stampare in una volta sola; `_LEGGIMI.md` = indice, quando si
+  consegnano, avvertenze. Generatore: `genera_handout.py` (scratchpad)
+- `Immagini/` — **61 file** (2026-09-11), indice visivo in **`Immagini/_GALLERIA.html`**: `Scena/` (8 foto di rilievo delle due
+  scene e del parcheggio) · `Reperti/` (4) · `Luoghi/` (11) · `Ritratti/` (**29 PNG in foto tessera**, stessa luce per tutti:
+  in fila non si distingue il criminale) · `_scarti/` (3 versioni sostituite, tenute per scelta). Alla radice restano le
+  immagini dell'autore: `3ProiettiliPorta` (handout H-01b), `InventarioVittima` (H-02b), `AssassinoArrivaStazione` (H-26b,
   CAM-12), `VittimaBagno` e `TelecameraAssassinio` (**solo GM**: telecamera interna inesistente), `Copertina` (generica);
   `_originali/` = versioni prima dei ritocchi
-- `PIANO_HANDOUT_IMMAGINI.md` — 26 handout + immagini, stato e decisioni · `CONTROLLO_2026-09-07.md` — rapporto e stato
-  applicazione · `CHECKLIST_CONTROLLO.md` — la checklist riutilizzabile
+- `PIANO_HANDOUT_IMMAGINI.md` — handout e immagini, stato e decisioni (§B chiuso il 2026-09-11) · `CONTROLLO_2026-09-07.md`
+  — rapporto e stato applicazione · `CHECKLIST_CONTROLLO.md` — la checklist riutilizzabile
 
 ## Decisioni chiuse (autore, 2026-08-24 e 2026-09-08)
 
@@ -76,11 +82,30 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
    tutti i PNG, minori compresi; En decisi (erano «da confermare» nel piano); checklist sezione 12
 2. ⏳ **Rilettura dell'autore** («poi controlliamo»). Le deposizioni citano solo fatti già canonici; l'unica cosa nuova che l'autore
    deve sapere: nelle deposizioni i nomi dei galli sono «nomi di piatti, come nel giornale» — la lista vera arriva col §C del piano
-3. Poi: **handout** (26 del piano, HTML stile Sake/Ultima Lezione; regole del Manuale GM: pre-elaborati, ≥1 nota utile + ≥1 neutra,
-   mai il colpevole; prima i contenuti ex novo del §C del piano da far rileggere) + **immagini** (IMG-03 il gallo dentro il cubicolo,
-   IMG-04/05, luoghi, reperti; volti = prompt per ChatGPT, luoghi = Nano Banana, kanji/timbri = PIL) + token ed En da decidere
+3. ✅ **HANDOUT FATTI (2026-09-11)** — `HandOut/`: **35 handout + 2 pagine di token**, uno per file HTML,
+   **ognuno in una sola pagina A4** (verificato a schermo: nessuno sfora), più **`_STAMPA_TUTTI.html`** = tutti in fila
+   con le interruzioni di pagina, da aprire in Word o stampare in un colpo solo. Indice e istruzioni: `HandOut/_LEGGIMI.md`.
+   Controllo incrociato di quattro revisori freschi: **68 rilievi, tutti applicati**. Token della crime board: **solo il
+   ruolo pubblico** che i PG conoscono al momento della consegna (mai «sicario», mai «capo banda»: Saitō = «Imprenditore,
+   Kameoka», Kuroda = «Istruttore di pugilato»), + 3 token anonimi.
+   Generatore nello scratchpad: `genera_handout.py` (si rigenera tutto in un colpo se cambia il canone)
+4. ✅ **IMMAGINI FATTE (2026-09-11)** — tutto l'elenco IMG-01…IMG-25 del piano è chiuso, più IMG-26 (un gallo) e i **29
+   ritratti**, generati con **gpt-image-2** (`bia_image_generate`, ~2,9 $ in tutto). Archiviate in `Immagini/Scena·Reperti·
+   Luoghi·Ritratti`, indice visivo in **`Immagini/_GALLERIA.html`**. I **token hanno la foto stampata** (niente più da
+   ritagliare) e nessuna scritta giapponese nel riquadro. Tre immagini sono diventate handout: **H-02c** (il disegno col
+   sangue — H-02 reperto 21 prometteva l'allegato fotografico e mancava), **H-12b** (il retrobottega del veterinario),
+   **H-15b** (l'identikit). Non fatta **IMG-08** (taccuino): il modello scrive kanji finti, e la pagina leggibile è già
+   l'handout H-09 sulla foto dell'autore. Scarti tenuti in `Immagini/_scarti/` con il motivo, se preferisce l'altra versione
 
 ## Da segnalare fuori cartella (non toccato)
-- `../GENKAI_Registro_Nomi.md`: **nome nuovo creato il 2026-09-11** — **Hozu Taxi** (保津タクシー), compagnia di taxi di Kameoka. Nessuna collisione col registro (verificato). Da aggiungere quando l'autore dà il via
+- `../GENKAI_Registro_Nomi.md`: **rinomina del 2026-09-11** — il figlio del veterinario **Murakami Kenji (村上 健次)**
+  è diventato **Murakami Yūsuke (村上 裕介)**, perché aveva nome e kanji identici a Ōkubo Kenji. Verificato che
+  «Yūsuke» non esiste nel vault. L'omonimia **Yamaguchi Tetsuo** (corrotto) / **Yamada Tetsuo** (agente fisso) l'autore
+  l'ha **chiusa come non problematica** (2026-09-11): al tavolo si usano sempre i cognomi
+- `../GENKAI_Registro_Nomi.md`: **nomi nuovi creati il 2026-09-11** — **Hozu Taxi** (保津タクシー, compagnia di taxi di
+  Kameoka), **Sakura Kōkoku** (agenzia pubblicitaria di Osaka), **Harada Kōhei** (agente del Kōban della stazione),
+  **Kubota Jun** (assistente capo, Commissariato di Yamashina), più le ditte di comodo del taccuino (Nishijin Kōmuten,
+  Morita Kensetsu, K.N Nōki, Tanaka Shōji ditta, Ōhara Fudōsan, Yamashina Seiki, Kamo Unsō, Uji Mokuzai, Naniwa Bōseki —
+  **inesistenti per definizione**, sono codici). Nessuna collisione col registro (verificato). Da aggiungere quando l'autore dà il via
 - `../GENKAI_Registro_Nomi.md`: «Murayama Hidetoshi» non esiste più in Tra Galli (sostituito da Taniguchi)
 - `../REGISTRO_MODIFICHE.md`: riga informativa — Tra Galli allineata alla serie (PNG fissi, Kawaramachi 85) e al combattimento v3.1

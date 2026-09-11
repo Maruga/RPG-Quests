@@ -20,7 +20,7 @@ Casa silenziosa. Le tensioni economiche e la distanza tra i coniugi negli ultimi
 ## Persone presenti
 - Murakami Hiroko (49) — moglie, casalinga
 - Murakami Aiko (15) — figlia
-- (Murakami Kenji (figlio del veterinario) è a Tokyo)
+- (Murakami Yūsuke (figlio del veterinario) è a Tokyo)
 - Fino al 13/02: anche Murakami Saburō (veterinario)
 
 ## Indizi rilevanti

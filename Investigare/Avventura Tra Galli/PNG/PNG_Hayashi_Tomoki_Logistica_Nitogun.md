@@ -28,7 +28,7 @@
 | 11/02 pomeriggio | «A Kameoka per lavoro; con Tachibana un caffè di mezz'ora verso le quattro» | Con Tachibana (vittima) dalle 14 alle 18: la trappola | Il barista del caffè davanti alla stazione JR di Kameoka li ha visti insieme «più di un'ora», non mezz'ora |
 | 11/02 sera | «A casa con Yui dalle otto» | **Falso**: alle 20:30 esce «per lavoro», guida Kuroda alla Kyoto Station e lo aspetta al volante in zona Hachijō-ovest; rientra alle 23:30 | Yui, se le si chiede l'ora esatta: «è tornato verso le undici e mezza, aveva fame». **Non ha alibi per le 21:00–22:00** |
 | 13/02 | «Al magazzino della società a Sogabe per una consegna di mangime» | Vera — al capannone; Murakami (veterinario) lo uccide Kuroda da solo | Il fornitore di mangimi di Kameoka lo vede alle 14:00. (Mangime per un capannone «in disuso»: un indizio, se qualcuno se lo chiede) |
-| 14/02 sera | «A casa con Yui; sono sceso per le sigarette verso le dieci» | Esce alle 21:45, rientra alle 23:15: in auto a due isolati dal condominio di Ōkubo a Kamigyō, a recuperare Kuroda | Yui (le ore). Novanta minuti che nessuno copre |
+| 14/02 sera | «A casa con Yui; sono sceso per le sigarette» | Esce alle **21:30**, rientra **dopo mezzanotte**: cinquanta minuti d'auto per Kyoto, attesa, e il recupero di Kuroda a due isolati dal condominio di Ōkubo a Kamigyō | Yui (le ore). **Quasi tre ore** che nessuno copre |
 | 15/02 10:00 | — | Al parcheggio del supermercato di Kameoka con Inagaki, incontro d'urgenza | Solo la sorveglianza, se già in corso |
 | 17/02 sera | «A cena al Kameoka-tei» | Vera (18:30–21:00): Kuroda opera da solo in ospedale | Tachi Yūichirō e 3 dipendenti |
 

@@ -7,7 +7,7 @@
 - **Età**: 52 anni
 - **Residenza**: Yamashina-ku, Kyoto
 - **Studio**: Murakami Dōbutsu Byōin (clinica veterinaria), Yamashina
-- **Famiglia**: moglie Hiroko (49), figlio Kenji (19, Tokyo), figlia Aiko (15)
+- **Famiglia**: moglie Hiroko (49), figlio Yūsuke (19, Tokyo), figlia Aiko (15)
 
 ## Aspetto e personalità
 Magro, 1,72 m, leggermente curvo. Capelli grigi diradati. Occhiali in metallo dorato. Mani con tremore leggero. Educato, formale, parla a voce bassa, si inchina troppo. Spaventato cronico, manipolabile.
@@ -78,7 +78,7 @@ Mente su tutto tranne l'alibi. Lo shiba non è mai esistito: chi ha già visto l
 | Sato | +1 | Un giovane che parla di xilazina con competenza (*Medicinali e veleni*): «un collega». È l'unico a cui risponde da tecnico |
 | Fujita | +1 | Nota il tremore delle mani e gli chiede da quanto non dorme (*Tocco del Medico*): lui abbassa la guardia |
 
-Con gli altri: Tachibana (vittima) **−2** — lo ha comprato con la sua disperazione · Saitō Gorō **−3** (paura pura) · Hayashi Tomoki −2 · la moglie Hiroko +2 (non le parla più, ma è lei che nomina quando chiede protezione) · la figlia Aiko **+4** · il figlio Kenji +1 · il cognato sparito di Lake Biwa −4.
+Con gli altri: Tachibana (vittima) **−2** — lo ha comprato con la sua disperazione · Saitō Gorō **−3** (paura pura) · Hayashi Tomoki −2 · la moglie Hiroko +2 (non le parla più, ma è lei che nomina quando chiede protezione) · la figlia Aiko **+4** · il figlio Yūsuke +1 · il cognato sparito di Lake Biwa −4.
 
 ## Come cambia nel tempo
 

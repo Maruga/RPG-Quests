@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GENKAI 限界 — Provalo: un mini-caso da giocare</title>
-<meta name="description" content="Un mini-caso di GENKAI da giocare nel browser: nove scene in un appartamento di Fushimi, un tiro per scena, il taccuino che si riempie — fino all'arresto.">
+<title>GENKAI 限界 — Provalo: un caso da giocare</title>
+<meta name="description" content="Un caso di GENKAI da giocare nel browser: una casa da guardare, quello che noti e quello che riesci a mettere agli atti. Poi bisogna fare le domande.">
 <link rel="icon" href="../img/favicon.png">
-<link rel="stylesheet" href="scontro.css?v=20260907a">
+<link rel="stylesheet" href="scontro.css?v=20260911b">
 <style>
 :root{
   --carta:#f7f4ec; --carta2:#fffdf6; --carta3:#efe9dc;
@@ -30,18 +30,13 @@ a{color:var(--rosso)}
 .chip b{color:var(--rosso)}
 .chip.genkai{border-color:var(--rosso);color:var(--rosso);font-weight:700}
 .barra a.torna{font-family:var(--sans);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--inchiostro2);text-decoration:none;white-space:nowrap}
-@media(max-width:560px){ .barra a.torna{display:none} }
+@media(max-width:620px){ .barra a.torna{display:none} }
 
 main{padding:1.4rem 0 3rem}
 
-/* card scena */
 .scena{background:var(--carta2);border:1px solid var(--bordo);border-radius:12px;overflow:hidden}
 .scena > img{width:100%}
 .scena-corpo{padding:1.1rem 1.2rem 1.4rem}
-.tappe{display:flex;gap:.3rem;margin:0 0 .6rem}
-.tappe span{width:14px;height:14px;border-radius:50%;border:1px solid var(--bordo);background:#fff}
-.tappe span.fatta{background:var(--carta3);border-color:var(--tenue)}
-.tappe span.qui{background:var(--rosso);border-color:var(--rosso)}
 .scena-tag{font-family:var(--sans);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rosso);margin:0 0 .3rem}
 h1{font-size:clamp(1.5rem,5vw,2.1rem);margin:0 0 .8rem;font-weight:400}
 h2{font-size:clamp(1.25rem,4vw,1.55rem);margin:0 0 .8rem;font-weight:400}
@@ -49,22 +44,44 @@ h2{font-size:clamp(1.25rem,4vw,1.55rem);margin:0 0 .8rem;font-weight:400}
 .filosofia{font-style:italic;color:var(--inchiostro2);border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo);padding:.8rem .4rem;margin:1rem 0;font-size:1rem}
 .tu{display:flex;flex-wrap:wrap;gap:.35rem .8rem;font-family:var(--sans);font-size:.8rem;color:var(--tenue);border:1px dashed var(--bordo);border-radius:8px;padding:.55rem .8rem;margin:1rem 0}
 .tu b{color:var(--inchiostro)}
-.tavolo{font-size:.95rem;background:var(--carta2);border:1px dashed var(--bordo);border-radius:8px;padding:.6rem .8rem;margin:.9rem 0;font-style:italic;color:var(--inchiostro2)}
-.tavolo b:first-child{letter-spacing:.06em;text-transform:uppercase;font-size:.72rem;display:block;margin-bottom:.2rem;font-style:normal}
 
-/* scelte */
-.scelta{border-top:1px solid var(--bordo);margin-top:1rem;padding-top:1rem}
-.scelta-dom{font-family:var(--sans);font-size:.9rem;color:var(--inchiostro);margin:0 0 .7rem;font-weight:600}
-.bottoni{display:flex;flex-wrap:wrap;gap:.7rem}
-.btn{display:inline-block;font-family:var(--sans);font-size:1rem;padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;border:1px solid var(--inchiostro);color:var(--inchiostro);background:transparent;cursor:pointer;transition:.15s;text-align:left}
-.btn small{display:block;font-size:.75rem;color:var(--tenue);margin-top:.15rem}
-.btn:hover{background:rgba(28,26,23,.06)}
-.btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
-.btn-forte small{color:#f3d9d9}
-.btn-forte:hover{background:#a02020}
-@media(max-width:560px){ .bottoni .btn{width:100%;text-align:center} }
+/* parole da guardare */
+.hot{font-family:inherit;font-size:inherit;line-height:inherit;color:var(--inchiostro);background:#f6efdd;border:0;border-bottom:2px dotted var(--oro);border-radius:3px;padding:0 .12em;margin:0;cursor:pointer;font-weight:600}
+.hot:hover{background:#efe2c2}
+.hot.vista{background:transparent;border-bottom-style:solid;border-bottom-color:var(--bordo);color:var(--tenue);font-weight:400}
+.hot:disabled{cursor:default}
 
-/* tiro in basso */
+/* il riquadro di quello che vedi */
+.fatto{border:1px solid var(--oro);border-left-width:4px;border-radius:0 10px 10px 0;background:#fbf7ec;padding:.85rem 1rem;margin:1rem 0 0}
+.fatto h4{margin:0 0 .4rem;font-family:var(--sans);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro)}
+.fatto p{margin:0 0 .2rem;color:var(--inchiostro)}
+.fatto img{border-radius:6px;margin:.6rem 0 0}
+.fatto .dett{font-family:var(--sans);font-size:.85rem;color:var(--tenue);margin-top:.5rem}
+.voce-btn{margin-top:.7rem}
+
+/* navigazione fra i luoghi */
+.luoghi{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.1rem 0 0;border-top:1px solid var(--bordo);padding-top:1rem}
+.luoghi button{font-family:var(--sans);font-size:.85rem;padding:.5rem .8rem;border-radius:8px;border:1px solid var(--bordo);background:#fff;color:var(--inchiostro);cursor:pointer}
+.luoghi button.qui{background:var(--inchiostro);border-color:var(--inchiostro);color:#fff}
+.luoghi button:hover:not(.qui){background:var(--carta3)}
+.luoghi .fine-btn{margin-left:auto;border-color:var(--rosso);color:var(--rosso);font-weight:700}
+@media(max-width:560px){ .luoghi .fine-btn{margin-left:0;width:100%} }
+
+/* taccuino */
+.tacc{border:1px solid var(--bordo);border-radius:10px;background:#fff;padding:.9rem 1rem;font-family:var(--sans);margin-top:1.1rem}
+.tacc h4{margin:0 0 .55rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--inchiostro2);display:flex;align-items:center;gap:.5rem}
+.tacc h4 span{margin-left:auto;font-size:.78rem;letter-spacing:0;text-transform:none;color:var(--tenue)}
+.tacc ul{margin:0;padding:0;list-style:none;font-size:.86rem;color:var(--inchiostro2)}
+.tacc li{padding:.32rem 0;border-top:1px dotted var(--bordo)}
+.tacc li:first-child{border-top:0}
+.tacc li::before{content:"✎ ";color:var(--oro)}
+.tacc li.data{color:var(--tenue)}
+.tacc li.data::before{content:"▪ ";color:var(--tenue)}
+.tacc li.nuova{color:var(--inchiostro);font-weight:600}
+.tacc li.vuota{color:#bdb5a6;font-style:italic}
+.tacc li.vuota::before{content:"▫ ";color:#cfc7b6}
+
+/* tiro */
 .tiro-box{border-top:1px solid var(--bordo);margin-top:1.1rem;padding-top:1.1rem}
 .tiro-come{font-family:var(--sans);font-size:.85rem;color:var(--tenue);margin:0 0 .9rem}
 .tiro-come b{color:var(--inchiostro)}
@@ -76,38 +93,39 @@ h2{font-size:clamp(1.25rem,4vw,1.55rem);margin:0 0 .8rem;font-weight:400}
 .somma{font-family:var(--sans);font-size:.92rem;color:var(--inchiostro2);margin:0 0 .9rem}
 .somma b{font-size:1.15rem;color:var(--inchiostro)}
 
-/* esito + taccuino affiancati */
-.dopo{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:.5rem}
-@media(min-width:720px){ .dopo{grid-template-columns:1fr 300px;align-items:start} }
-.esito{border-radius:10px;border:1px solid var(--bordo);background:var(--carta);padding:1rem 1.1rem}
+.esito{border-radius:10px;border:1px solid var(--bordo);background:var(--carta);padding:1rem 1.1rem;margin-top:.5rem}
 .esito h3{margin:0 0 .5rem;font-size:1.02rem;font-family:var(--sans);letter-spacing:.03em}
-.esito h3 .fascia{display:inline-block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.16rem .55rem;border-radius:999px;border:1px solid currentColor;margin-left:.45rem;vertical-align:middle}
 .esito.buono h3{color:var(--verde)}
 .esito.neutro h3{color:var(--inchiostro2)}
 .esito.brutto h3{color:var(--rosso)}
 .esito p{margin:.5rem 0;color:var(--inchiostro2)}
 .mecc{font-family:var(--sans);font-size:.84rem;background:var(--carta3);border-left:3px solid var(--oro);border-radius:0 6px 6px 0;padding:.6rem .8rem;margin:.7rem 0 0}
-.mecc b:first-child,.gm b:first-child{letter-spacing:.06em;text-transform:uppercase;font-size:.7rem;display:block;margin-bottom:.2rem}
-.gm{font-family:var(--sans);font-size:.84rem;background:#fdf6f4;border-left:3px solid var(--rosso);border-radius:0 6px 6px 0;padding:.6rem .8rem;margin:.7rem 0 0}
-.indizio-card{border:1px solid var(--oro);border-radius:8px;background:#fbf7ec;padding:.7rem .9rem;margin:.8rem 0 0}
-.indizio-card h4{margin:0 0 .3rem;font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro)}
-.indizio-card h4::before{content:"➜ "}
-.indizio-card p{margin:0;font-size:.93rem}
-.indizio-card img{border-radius:6px;margin:.5rem 0 0}
+.mecc b:first-child{letter-spacing:.06em;text-transform:uppercase;font-size:.7rem;display:block;margin-bottom:.2rem}
+.gou-box{border:1px solid var(--rosso);border-radius:10px;background:#fdf3f3;padding:.85rem 1rem;margin:1.1rem 0 0}
+.gou-box h4{margin:0 0 .35rem;font-family:var(--sans);font-size:.8rem;letter-spacing:.06em;color:var(--rosso)}
+.gou-box p{margin:0 0 .6rem;font-size:.95rem}
+.ombre{font-style:italic;border-left:3px solid var(--rosso);padding-left:.9rem;margin:.8rem 0}
 
-/* taccuino */
-.taccuino{border:1px solid var(--bordo);border-radius:10px;background:#fff;padding:.9rem 1rem;font-family:var(--sans)}
-.taccuino h4{margin:0 0 .5rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--inchiostro2)}
-.taccuino ul{margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--inchiostro2)}
-.taccuino li{padding:.3rem 0;border-top:1px dotted var(--bordo)}
-.taccuino li:first-child{border-top:0}
-.taccuino li.nuova{color:var(--inchiostro);font-weight:600}
-.taccuino li::before{content:"✎ ";color:var(--oro)}
+/* bottoni */
+.bottoni{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
+.btn{display:inline-block;font-family:var(--sans);font-size:1rem;padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;border:1px solid var(--inchiostro);color:var(--inchiostro);background:transparent;cursor:pointer;transition:.15s;text-align:left}
+.btn small{display:block;font-size:.75rem;color:var(--tenue);margin-top:.15rem}
+.btn:hover:not(:disabled){background:rgba(28,26,23,.06)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn-forte{background:var(--rosso);border-color:var(--rosso);color:#fff}
+.btn-forte small{color:#f3d9d9}
+.btn-forte:hover:not(:disabled){background:#a02020}
+.btn-piccolo{font-size:.86rem;padding:.5rem .9rem}
+@media(max-width:560px){ .bottoni .btn{width:100%;text-align:center} .bottoni .btn small{text-align:center} }
+
+/* interrogatorio */
+.lui{border-left:3px solid var(--bordo);padding-left:1rem;margin:1rem 0;font-size:1.05rem}
+.io{border-left:3px solid var(--rosso);padding-left:1rem;margin:1rem 0;font-size:1.05rem;color:var(--inchiostro)}
+.chiuso{font-family:var(--sans);font-size:.85rem;color:var(--verde);border:1px solid var(--verde);border-radius:8px;padding:.5rem .8rem;margin:.8rem 0 0;background:#f2f7f2}
+.niente{font-family:var(--sans);font-size:.85rem;color:var(--tenue);border:1px dashed var(--bordo);border-radius:8px;padding:.5rem .8rem;margin:.8rem 0 0}
 
 .avanti-box{margin-top:1.2rem;display:flex;justify-content:flex-end}
 .genkai-riga{font-family:var(--sans);font-size:.85rem;color:var(--rosso);border:1px solid var(--rosso);border-radius:8px;padding:.55rem .8rem;margin-top:.9rem;background:#fdf3f3}
-
-/* finale */
 .conto{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;margin:1rem 0;font-family:var(--sans)}
 .conto div{border:1px solid var(--bordo);border-radius:8px;background:#fff;padding:.7rem .8rem;text-align:center}
 .conto .num{font-size:1.5rem;font-weight:700}
@@ -124,7 +142,7 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   <a class="marchio" href="../">限界 <i>GENKAI</i></a>
   <div class="stato-chip" id="stato-chip" hidden>
     <span class="chip">気 Ki <b id="chip-ki">9</b>/9</span>
-    <span class="chip" id="chip-scena">Scena 1/9</span>
+    <span class="chip" id="chip-righe">Taccuino 2/5</span>
   </div>
   <div class="stato-scontro" id="stato-scontro" hidden>
     <div class="ki mio" id="ki-pg"><span class="eti">Tu · Ki</span><span class="riga"><span class="pips" id="pips-pg"></span><span class="num" id="num-pg">9</span></span></div>
@@ -141,490 +159,771 @@ footer.fine{padding:1.6rem 0 0;text-align:center;font-family:var(--sans);font-si
   </footer>
 </div></main>
 
-<script src="scontro.js?v=20260907a"></script>
-<script src="commenti.js?v=20260907a"></script>
+<script src="scontro.js?v=20260911b"></script>
+<script src="commenti.js?v=20260911b"></script>
 <script>
 (function(){
 "use strict";
 
-/* ── lo stato del caso ── */
-const S = {
-  attr: { "Distacco":6, "Lucidità":7, "Ascolto":6, "Pazienza":5, "Silenzio":5, "Presenza":4 },
-  ki: 9, kiMax: 9, nasake: 0, soroban: 0,
-  indizi: [], scena: 0, gouUsato: false, esitoScontro: null
-};
-
-/* ── il mazzo delle fasce: in tutto il caso escono tutte prima che una si ripeta ── */
-const FASCE = ["k2","n3","ok","fl","n11","k12"];
-let mazzo = [], ultima = null;
-function pesca(){
-  if (!mazzo.length){
-    mazzo = FASCE.slice();
-    for (let i = mazzo.length-1; i>0; i--){ const j = Math.floor(Math.random()*(i+1)); [mazzo[i],mazzo[j]]=[mazzo[j],mazzo[i]]; }
-    if (ultima && mazzo[0]===ultima){ const j = 1+Math.floor(Math.random()*(mazzo.length-1)); [mazzo[0],mazzo[j]]=[mazzo[j],mazzo[0]]; }
-  }
-  ultima = mazzo.shift();
-  return ultima;
+/* ═══════════ STATO ═══════════ */
+const BASE = { Distacco:6, Lucidità:7, Ascolto:6, Pazienza:5, Silenzio:5, Presenza:4 };
+let S;
+function nuovoStato(){
+  S = {
+    attr: Object.assign({}, BASE), ki:9, kiMax:9,
+    righe:3, righeDecise:false,
+    tacc: [],                 /* {id, testo, data:true se già data} */
+    viste: {},                /* id voce → true */
+    gouUsato:false, gouVisto:null,
+    lettura:null,             /* esito del tiro quando si siede */
+    chiusi:0, scambio:0, dette:{},
+    esitoScontro:null,
+    soroban:5,                /* la giornata parte da 5 e si muove sui critici */
+    genkai:false, nasake:false, recuperati:null,
+    passo:0,                  /* la parte guidata: arrivo · agente · medico · salma */
+    fase:"copertina", luogo:"pianerottolo"
+  };
+  S.tacc.push({ id:"medico", testo:"Morto per il colpo alla testa, non per l'acqua: nessuna schiuma, non respirava più quando è finito dentro", data:true });
+  S.tacc.push({ id:"vicina", testo:"Alle cinque: campanello, voce giovane «sono io», tv abbassata. Mezz'ora dopo, la porta sbattuta", data:true });
 }
-function dadiPer(fascia, attr){
-  let somme;
-  if (fascia==="k2") somme=[2];
-  else if (fascia==="n3") somme=[3];
-  else if (fascia==="n11") somme=[11];
-  else if (fascia==="k12") somme=[12];
-  else if (fascia==="ok"){ somme=[]; for(let s=4;s<=Math.max(4,attr);s++) somme.push(s); }
-  else { somme=[]; for(let s=Math.max(5,attr+1);s<=10;s++) somme.push(s); }
-  const s = somme[Math.floor(Math.random()*somme.length)];
-  const min = Math.max(1,s-6), max = Math.min(6,s-1);
-  const a = min + Math.floor(Math.random()*(max-min+1));
-  return [a, s-a];
-}
+nuovoStato();
 
+const mie = () => S.tacc.filter(v => !v.data).length;
+const ho = id => S.tacc.some(v => v.id === id);
+const libere = () => S.righe - mie();
+
+/* ═══════════ DADI ═══════════ */
+function d6(){ return (typeof window.__dadoForzato === "function") ? window.__dadoForzato() : 1 + Math.floor(Math.random()*6); }
+function fasciaDi(a, b, attr){
+  const s = a + b;
+  if (s === 2) return "k2";
+  if (s === 3) return "n3";
+  if (s === 12) return "k12";
+  if (s === 11) return "n11";
+  return s <= S.attr[attr] ? "ok" : "fl";
+}
 const META = {
-  k2:{classe:"buono", fascia:"Kiwami 極 · 2", titolo:"Successo critico"},
-  n3:{classe:"buono", fascia:"Nami 波 · 3", titolo:"Successo notevole"},
-  ok:{classe:"buono", fascia:"", titolo:"Successo"},
-  fl:{classe:"neutro", fascia:"", titolo:"Fallimento leggero"},
-  n11:{classe:"brutto", fascia:"Nami 波 · 11", titolo:"Fallimento notevole"},
-  k12:{classe:"brutto", fascia:"Kiwami 極 · 12", titolo:"Fallimento critico"}
+  k2:{classe:"buono", titolo:"Kiwami 極 · 2 — successo critico"},
+  n3:{classe:"buono", titolo:"Nami 波 · 3 — successo notevole"},
+  ok:{classe:"buono", titolo:"Riuscito"},
+  fl:{classe:"neutro", titolo:"Fallito"},
+  n11:{classe:"brutto", titolo:"Nami 波 · 11 — fallimento notevole"},
+  k12:{classe:"brutto", titolo:"Kiwami 極 · 12 — fallimento critico"}
 };
-
-/* meccanica standard dei tiri d'indagine: applica allo stato e spiega */
-function applicaMecc(fascia, attr){
-  let m = "";
-  if (fascia==="k2"){
-    S.attr[attr] = Math.min(9, S.attr[attr]+1);
-    if (S.ki < S.kiMax){ S.ki++; m = `2 sui dadi nudi: successo critico. <b>+1 a ${attr} e +1 al Ki.</b>`; }
-    else { S.nasake = Math.min(1, S.nasake+1); m = `2 sui dadi nudi: successo critico. <b>+1 a ${attr}</b> — e col Ki già pieno, il punto va nel <b>Nasake 情け</b>: lo donerai a un compagno, giocando la scena.`; }
-    S.soroban -= 2; m += " <b>Soroban: segna −2.</b>";
-  } else if (fascia==="n3"){
-    if (S.ki < S.kiMax){ S.ki++; m = "3: notevole. <b>+1 a scelta</b> — qui lo mettiamo sul Ki."; }
-    else { S.attr[attr] = Math.min(9, S.attr[attr]+1); m = `3: notevole. <b>+1 a scelta</b> — Ki pieno, quindi su ${attr}.`; }
-    S.soroban -= 1; m += " <b>Soroban: segna −1.</b>";
-  } else if (fascia==="ok"){
-    m = `Somma ≤ ${S.attr[attr]}: successo pieno. Nessun costo.`;
-  } else if (fascia==="fl"){
-    m = `Somma tra ${S.attr[attr]+1} e 10: fallimento leggero, <b>solo narrativo</b> — nessuna perdita di punti. La scena lo mostra, la scheda no.`;
-  } else if (fascia==="n11"){
-    S.ki = Math.max(1, S.ki-1); S.soroban += 1; /* le perdite di Ki fuori dal combattimento si fermano a 1 (canone: Uscita Definitiva) */
-    m = "11: notevole negativo. <b>−1 a scelta</b> — qui lo segniamo sul Ki. <b>Soroban: segna +1.</b>";
-  } else {
-    S.attr[attr] = Math.max(1, S.attr[attr]-1); S.ki = Math.max(1, S.ki-1); S.soroban += 2;
-    m = `12: fallimento critico. <b>−1 a ${attr} e −1 al Ki.</b> E ricorda: a Ki ≤ 3 comincia il Genkai. <b>Soroban: segna +2.</b>`;
-  }
-  return m;
+/* le perdite fuori dal combattimento si fermano a 1 (canone) · il soroban si muove solo sui critici */
+const sorobanMuovi = n => { S.soroban = Math.max(0, Math.min(9, S.soroban + n)); };
+function applica(fascia, attr){
+  if (fascia === "k2"){ S.ki = Math.min(S.kiMax, S.ki+1); S.attr[attr] = Math.min(10, S.attr[attr]+1); sorobanMuovi(+2); return `Dado 2: <b>+1 ${attr}</b> e <b>+1 Ki</b>. La scheda si ripara, e il soroban della giornata sale di due.`; }
+  if (fascia === "n3"){ S.ki = Math.min(S.kiMax, S.ki+1); sorobanMuovi(+1); return "Dado 3: <b>+1 Ki</b>, e il soroban della giornata sale di uno."; }
+  if (fascia === "n11"){ S.ki = Math.max(1, S.ki-1); sorobanMuovi(-1); return "Dado 11: <b>−1 Ki</b>, e il soroban scende di uno. Fuori dal combattimento non si va mai sotto 1."; }
+  if (fascia === "k12"){ S.ki = Math.max(1, S.ki-1); S.attr[attr] = Math.max(4, S.attr[attr]-1); sorobanMuovi(-2); return `Dado 12: <b>−1 ${attr}</b> e <b>−1 Ki</b>, e il soroban scende di due. Il punto di attributo si ripara nella notte.`; }
+  return "Nessuna conseguenza: la scheda resta com'è.";
+}
+/* tiro di pressione (Briefing): fino all'attributo reggi · da 10 in su −1 Ki · niente Kiwami né Nami */
+function pressione(a, b, attr){
+  const s = a + b;
+  if (s <= S.attr[attr]) return "regge";
+  if (s <= 9) return "sforzo";
+  return "erode";
 }
 
-/* ── le scene ── */
-const SCENE = [
-
-/* 0 · copertina (segnaposto) */
-{ tipo:"copertina" },
-
-/* 1 */
-{ img:"img/porta.jpg", alt:"Il corridoio buio verso la porta del bagno socchiusa",
-  tag:"Scena 1 · la scena forte", titolo:"La porta del bagno",
-  testo:[`Fushimi, un martedì di novembre, le 23:40. Ti ci ha mandato il capo ispettore, due parole al telefono: <em>«Un morto in casa, non mi torna. Vacci tu.»</em> Sei della Omicidi: quando qualcosa non torna, mandano te.`,
-    `L'appartamento è in ordine, la televisione accesa senza volume. In fondo al corridoio la porta del bagno è socchiusa: dentro c'è un uomo di sessant'anni, <b>vestito</b> — e nessuno fa il bagno vestito — nella vasca che trabocca piano. È lì da ore. L'agente del kōban ha guardato dalla porta e ha richiuso, senza toccare niente. Il tuo collega, più giovane, aspetta un tuo cenno: tocca a te entrare per primo.`],
-  tavolo:`GM: «La porta è socchiusa, la luce accesa. Cosa fai?» — Tu: «Mi metto i guanti. Entro, e guardo tutto prima di toccare qualsiasi cosa.» — GM: «Dentro c'è quello che c'è. Tira su Distacco.»`,
-  tiro:{attr:"Distacco", label:"Non si tira per <em>trovare</em> — quello che c'è da vedere lo vedrai comunque. Si tira su <b>Distacco</b>: la distanza professionale davanti a una cosa che non si dimentica."},
-  esiti:{
-    k2:"Il freddo ti scende addosso come una mano sulla spalla. Registri tutto — l'acqua, la posizione, la tv muta — con una calma che quasi ti spaventa.",
-    n3:"Respiri una volta sola, poi il mestiere prende il volante: la stanza si divide da sola in cose da fotografare e cose da non toccare.",
-    ok:"Non è la prima volta e non sarà l'ultima. Voce bassa, guanti, taccuino: la scena resta una scena.",
-    fl:"L'acqua che trabocca fa un rumore gentile, ed è quello a fregarti: troppo normale. Per un momento guardi l'uomo e vedi tuo padre. Poi torni dentro la divisa.",
-    n11:"È l'odore a inseguirti — acqua ferma e dopobarba. Stanotte, chiudendo gli occhi, la vasca sarà ancora lì.",
-    k12:"Devi uscire un momento nel corridoio. Il collega non dice niente — è successo a tutti — ma quel silenzio è un tipo particolare di rumore."
+/* ═══════════ I LUOGHI ═══════════ */
+const LUOGHI = {
+  pianerottolo: {
+    nome:"Il pianerottolo", tag:"Terzo piano, quasi mezzanotte", titolo:"L'acqua sulle scale",
+    img:"img/pianerottolo.jpg", alt:"Il ballatoio del palazzo, di notte, sotto la pioggia",
+    testo:[
+      `Un palazzo di quelli tirati su in fretta trent'anni fa: ballatoi esterni, il cemento a vista, i panni di qualcuno lasciati fuori a prendere la pioggia. L'ascensore non c'è mai stato. Al secondo piano una televisione va forte dietro una porta chiusa, e qualcuno ride.`,
+      `Ti ha mandato qui il commissario <b>Taniguchi Osamu</b>, capo della Sezione Omicidi, con la voce di uno che sta cenando: gli è arrivata una segnalazione dal personale dell'ambulanza. Un uomo trovato morto in casa sua, e una cosa che secondo il medico non torna. <em>«Vacci tu. Guarda, e poi dimmi se è come dicono.»</em>`,
+      `Sali con la giacca che gocciola. Gli scalini sono bagnati fin dal primo pianerottolo, e l'aria sa di muffa e di cemento umido, quell'odore che nei palazzi vecchi non se ne va più. Sotto il neon del ballatoio, l'[[acqua]] esce da sotto la [[porta]] e scende a filo di muro, gradino dopo gradino, come se la casa si stesse svuotando piano.`,
+      `L'[[agente]] del posto di polizia ti aspetta sulla soglia, in piedi, con le scarpe in mano e i calzini fradici. Dentro si sente una [[televisione]], così piano che devi fermarti per accorgertene.`
+    ],
+    voci:{
+      acqua:{ fatto:"Viene da dentro. Scorre da ore: sul cemento del ballatoio c'è già l'alone scuro del bagnato vecchio, e la pozza arriva fino alla ringhiera.", nota:"L'acqua esce dall'appartamento da ore" },
+      porta:{ fatto:"Chiusa, non forzata. L'agente l'ha aperta con la chiave del custode. Nessun segno sullo stipite, nessuno sulla serratura.", nota:"Porta chiusa, nessuna forzatura" },
+      televisione:{ id:"tv-fuori", fatto:"Si sente attraverso la porta chiusa, ma solo se stai fermo. Parla una voce, e non capisci nemmeno che lingua sia.", nota:"Televisione accesa, e da fuori si sente appena" },
+      agente:{ fatto:"Trentacinque anni, calzini fradici, il verbale già scritto in mano. Fa il giro di queste scale da nove anni e stanotte ha la faccia di chi ha visto una cosa che non si aspettava di vedere qui." }
+    }
   },
-  indizio:{img:"img/pantofole.jpg", alt:"Le pantofole appaiate davanti alla porta",
-    titolo:"Le pantofole", voce:"Pantofole risistemate dopo la morte: c'era qualcun altro",
-    testo:`Davanti alla porta, appaiate con cura, <b>le punte verso il corridoio</b>. Chi si toglie le pantofole entrando le lascia con le punte verso la porta, alla rinfusa; girarle «per bene» è la cortesia di chi le sistema <em>per qualcun altro</em>. Ma l'uomo è nella vasca: <b>qualcuno le ha risistemate dopo</b>.`},
-  gm:"L'indizio non dipende dal tiro: si dà sempre, al massimo sfumato o per bocca del collega. Il tiro decide la scena, mai l'indagine." },
-
-/* 2 */
-{ img:"img/bagno.jpg", alt:"Il bagno: la vasca colma, il pavimento con una strisciata pulita",
-  tag:"Scena 2 · il sopralluogo — e il Gou", titolo:"Quello che il bagno racconta",
-  testo:[`Il medico legale arriverà tra un'ora. Il bagno intanto parla: la vasca colma, il rubinetto a filo, l'uomo vestito. Il bagno è fatto per l'acqua — pavimento che scola, gradino sulla soglia — e in tutte queste ore il trabocco ha coperto ogni segno là dentro, filtrando di sotto da qualche giunto stanco. È <b>fuori</b> dalla porta che qualcosa stona: sul pavimento del corridoio, dove la polvere ha il suo posto, una lunga <b>strisciata pulita</b> — uno straccio passato in fretta.`,
-    `Puoi rileggere la stanza col mestiere. Oppure c'è l'altra strada: il tuo <b>Gou</b>, il dono che ti porti addosso — <b>Teatro delle Ombre 影芝居</b>. Guardi una scena, e vedi le sagome sbiadite di ciò che è accaduto. Ma un Gou non è gratis: si paga in Ki, per intero, prima di sapere come va.`],
-  scelta:{dom:"Come rileggi la stanza?", opzioni:[
-    {label:"🔍 Col mestiere", sotto:"tiro su Lucidità — non costa nulla", modo:"mestiere"},
-    {label:"影 Col Gou: Teatro delle Ombre", sotto:"paghi subito 4 Ki, poi tiri su Lucidità", modo:"gou"}
-  ]},
-  tiroMestiere:{attr:"Lucidità", label:"Ricostruire a mente: l'ordine dei gesti, la direzione della strisciata, dove NON c'è acqua. Tira su <b>Lucidità</b>."},
-  tiroGou:{attr:"Lucidità", label:"Il Gou è attivo: 4 Ki pagati, per intero. Ora tira su <b>Lucidità</b> — il tiro decide quanto le ombre ti mostrano."},
-  esiti:{
-    k2:"La stanza si riavvolge da sola: vedi l'ordine dei gesti come se li avessi fatti tu. C'è stata acqua dappertutto — e qualcuno l'ha tolta.",
-    n3:"Segui la strisciata come una frase scritta male: parte dalla soglia del bagno, muore a metà corridoio. Uno straccio, strizzato due volte e sparito.",
-    ok:"Metodo: fotografi, misuri, confronti. In tutto il corridoio la polvere ha il suo posto — tranne che davanti a quella porta: qui qualcuno ha pulito.",
-    fl:"Ti ci vuole più del dovuto — la vasca continua a tirarti lo sguardo. È il collega a indicare il pavimento del corridoio: «Ispettore… qui è troppo pulito». Trovato è trovato.",
-    n11:"Ricostruisci, ma a prezzo: ogni gesto immaginato te lo senti addosso. La strisciata la vedi — e non la dimentichi più.",
-    k12:"Provi a riavvolgere la scena e la scena riavvolge te: per un attimo l'uomo nella vasca respira. Ti appoggi al muro. Il dato però è lì, innegabile."
+  cucina: {
+    nome:"La stanza", tag:"Dentro casa", titolo:"Una stanza sola",
+    img:"img/cucina.jpg", alt:"La cucina di notte",
+    testo:[
+      `Rettangolare: si mangia e si cucina qui. L'aria è ferma, sa di chiuso e di roba lasciata lì.`,
+      `Sul tavolo una [[teiera]] scoperchiata. Nel [[lavello]] i piatti sono accatastati e incrostati, e sopra a tutti ci sono [[due tazze]]. Il [[frigorifero]] ronza contro la parete.`,
+      `In un angolo la [[televisione]] parla da sola. Davanti, un tavolino basso con una pila di [[riviste]] e un [[portafogli]].`,
+      `Il pavimento è appiccicoso. Da questa parte l'acqua non è ancora arrivata.`
+    ],
+    voci:{
+      televisione:{ fatto:"La manopola del volume è girata fino in fondo. Più in basso non va: c'è solo lo scatto dello spento.", nota:"Volume della televisione girato fino al minimo" },
+      "due tazze":{ fatto:"Due tazze uguali, dello stesso servizio. Sul fondo di tutte e due le foglie di tè sono ancora umide. Sotto, nel lavello, il resto è secco e attaccato da giorni.", nota:"Due tazze nel lavello, foglie di tè ancora umide" },
+      teiera:{ fatto:"Scoperchiata al centro del tavolo, con dentro le foglie usate. Sotto il beccuccio, sul legno, una macchia rotonda ancora appiccicosa.", nota:"Teiera lasciata sul tavolo, foglie usate dentro" },
+      riviste:{ fatto:"Una pila di riviste vecchie, allineate agli angoli. Sul legno la polvere disegna il contorno di una pila più larga. Sollevandole trovi una busta dell'ufficio postale, col timbro di oggi e una cifra scritta a mano. Dentro non c'è niente.", nota:"Busta della pensione, timbro di oggi, trovata vuota sotto le riviste" },
+      portafogli:{ fatto:"Aperto sul tavolino. Dentro, tre monete e una banconota piccola. Nient'altro.", nota:"Nel portafogli tre monete e una banconota piccola" },
+      frigorifero:{ fatto:"Dentro c'è mezzo cavolo, una bottiglia di birra e un vasetto senza etichetta. Sul ripiano di sotto, il segno tondo di qualcosa che è stato tolto tempo fa e mai pulito.", nota:"Frigorifero praticamente vuoto" },
+      lavello:{ fatto:"Piatti, ciotole e bacchette impilati alla rinfusa, il grasso ormai secco. In cima, appoggiato di traverso sui piatti, un coltello da cucina con il manico di legno consumato. Il rubinetto gocciola.", nota:"Piatti sporchi da giorni, e un coltello lasciato sopra la pila" }
+    }
   },
-  esitiGou:{
-    k2:"Le ombre si alzano nitide come teatro: <b>due sagome</b> nel vano della porta. La spinta. Una sagoma nella vasca, l'altra immobile — poi si china, e <b>asciuga il pavimento</b>. Esce con qualcosa sotto il braccio.",
-    n3:"Tre quadri in dissolvenza: la lite, la caduta nell'acqua, la sagoma china che pulisce. Niente volti — il Gou non ne mostra mai — ma l'ordine è chiarissimo.",
-    ok:"Le sagome sbiadite si muovono una volta sola: due figure, una cade, l'altra resta. Poi il gesto dello straccio, avanti e indietro. Ti basta.",
-    fl:"Le ombre faticano a salire: ti resta <b>un solo quadro congelato</b> — una sagoma china sul pavimento, uno straccio in mano. Senza prima né dopo. Ma è già una confessione.",
-    n11:"Un solo fotogramma, e ti costa: la sagoma china ti volta le spalle — e per un istante ha le TUE spalle. Il Gou prende sempre qualcosa in cambio.",
-    k12:"L'ombra congelata è una sola, ma quando la fissi la stanza ti si chiude addosso. Il dono oggi morde la mano. Il quadro però resta: qualcuno, chino, che pulisce."
+  bagno: {
+    nome:"Il bagno", tag:"La prima porta a destra", titolo:"Un centimetro d'acqua",
+    img:"img/bagno.jpg", alt:"Il bagno: la vasca colma, il pavimento allagato",
+    testo:[
+      `Piccolo, senza spogliatoio: si entra e c'è la vasca. Il pavimento ti bagna le suole appena metti dentro un piede.`,
+      `La [[vasca]] è colma fino all'orlo e trabocca piano anche adesso che il rubinetto è chiuso. In un angolo lo [[scarico]] a terra sparisce sotto un asciugamano fradicio.`,
+      `Davanti alla porta, appaiate, ci sono le [[pantofole]].`,
+      `Sulle piastrelle, accanto alla vasca, c'è l'ombra bagnata di dove l'hanno appoggiato quando l'hanno tirato fuori. Si sta asciugando piano.`
+    ],
+    voci:{
+      pantofole:{ img:"img/pantofole.jpg", alt:"Le pantofole appaiate davanti alla porta", fatto:"Una accanto all'altra, parallele, le punte alla stessa altezza. L'acqua ci è girata intorno senza spostarle. In tutta la casa non c'è un'altra cosa messa così.", nota:"Pantofole appaiate davanti al bagno, in una casa dove niente è in ordine" },
+      vasca:{ fatto:"Corta e profonda, di quelle vecchie. Il bordo esterno, dalla parte del rubinetto, è scheggiato. Nella fessura tra il bordo e la piastrella è rimasto incastrato un capello, e un filo scuro che l'acqua non ha portato via.", nota:"Bordo esterno della vasca scheggiato, capello e traccia scura nella fessura" },
+      scarico:{ fatto:"Sollevi l'asciugamano. Sotto, la griglia è tappata da capelli e sapone secco, induriti da mesi. L'acqua ci passa a fatica.", nota:"Scarico del bagno tappato da tempo" }
+    }
   },
-  indizio:{titolo:"Il pavimento", voce:"Corridoio asciugato in fretta: colluttazione, poi qualcuno ha pulito",
-    testo:`Non è stato un malore tranquillo: <b>l'acqua è schizzata fino in corridoio</b> — una colluttazione sulla soglia — e <b>qualcuno ha asciugato</b> prima di andarsene. Un malore non pulisce casa. E il rubinetto non l'ha toccato: com'era, è rimasto — una vasca in riempimento sta bene, in un malore. Ma è proprio l'acqua, ore dopo, che ha bussato dalla vicina.`},
-  gm:"Il Gou non si tira per attivarlo: si paga e si è attivi (solo restando a Ki ≥ 1). Il tiro decide QUANTO mostra: anche il fallimento dà un quadro congelato. E nella stessa notte, riusarlo costa il doppio.",
-  meccGou:`<b>Il Gou, in breve</b>Teatro delle Ombre 影芝居 — Percezione Retroattiva. Requisito: Lucidità 7 ✓. Vincolo: sul luogo, entro 48 ore ✓. <b>Costo 4 Ki, sempre per intero</b>, attivabile solo restando a Ki ≥ 1. Successo: 2–3 momenti chiave come sagome (posizioni e ordine, mai volti). Fallimento: un solo momento congelato. Riuso nella stessa notte: costo raddoppiato.` },
-
-/* 3 · scelta ordine + prima stanza */
-{ dinamica:"stanzaA",
-  img:"img/cucina.jpg", alt:"La cucina di notte",
-  tag:"Scena 3 · la casa parla", titolo:"Due stanze, una notte",
-  testo:[`Il medico legale è al bagno con la sua valigetta. A te restano le stanze — e le stanze di un uomo solo dicono tutto, se le leggi nell'ordine giusto.`],
-  scelta:{dom:"Da dove cominci?", opzioni:[
-    {label:"🍵 Dalla cucina", sotto:"le tazze, il lavello, la vita di tutti i giorni", modo:"cucina"},
-    {label:"📄 Dalla stanza col futon", sotto:"le carte, i cassetti, quello che manca", modo:"stanza"}
-  ]} },
-
-/* 4 · seconda stanza (l'altra) */
-{ dinamica:"stanzaB" },
-
-/* 5 */
-{ img:"img/pianerottolo.jpg", alt:"Il ballatoio del palazzo, di notte, sotto la pioggia",
-  tag:"Scena 5 · la testimone", titolo:"La vicina di sotto",
-  testo:[`È lei che ha dato l'allarme: l'acqua le filtrava dal soffitto. Adesso sta sul ballatoio, la vestaglia sopra il pigiama, e non riesce né a stare zitta né a dire niente. Ha sessant'anni anche lei, e l'uomo di sopra lo conosceva da trenta.`,
-    `Con i testimoni così non serve il torchio: serve l'orecchio. Ascoltare quello che dicono — e il punto esatto dove smettono di dire.`],
-  tavolo:`Tu: «Non le chiedo di ricordare tutto. Solo com'è stata la giornata, di sopra.» — e poi stai zitto: il silenzio lavora lui.`,
-  tiro:{attr:"Ascolto", label:"Cogliere, nel fiume di parole, la frase che pesa. Tira su <b>Ascolto</b>."},
-  esiti:{
-    k2:"La lasci parlare del più e del meno finché la voce le si incrina esattamente dove deve: te ne accorgi un istante prima di lei.",
-    n3:"Annuisci, accetti il tè che ti offre, e la frase arriva da sola, in mezzo alle altre. La raccogli senza farla pesare.",
-    ok:"Domande corte, pause lunghe. La signora gira intorno alla cosa due volte; alla terza la dice.",
-    fl:"Sei stanco, la incalzi un filo troppo: si chiude come una porta. È il collega, con calma da figlio, a riaprirla. La frase esce comunque.",
-    n11:"Ti racconta anche la sua, di solitudine — e per ascoltarla davvero devi lasciarla entrare. La frase che cerchi arriva, insieme a un peso che non è tuo ma adesso porti anche tu.",
-    k12:"«Lei ha figli, ispettore?» La domanda ti passa attraverso come uno spiffero. La testimonianza la porti a casa lo stesso — è il resto che stanotte non si spegne."
+  salma: {
+    nome:"La salma", tag:"Sul ballatoio, sotto il neon", titolo:"Quello che resta di lui",
+    testo:[
+      `L'hanno tirato fuori dall'acqua per provare a rianimarlo, e poi l'hanno lasciato qui: una barella contro il muro del ballatoio, perché in quel bagno in tre non ci si sta.`,
+      `Sotto il [[lenzuolo]] c'è un uomo di settantasei anni. La pioggia batte sul telo e fa un rumore che non si dimentica.`
+    ],
+    voci:{
+      lenzuolo:{ tiro:"salma", fatto:"Minuto, le mani grosse e rovinate da una vita di fabbrica. È vestito: pantaloni, camicia, un maglione, tutto zuppo. I capelli ancora bagnati gli stanno appiccicati alla fronte, e sopra il sopracciglio destro c'è una ferita larga due dita.", nota:"Trovato vestito nella vasca, ferita sopra il sopracciglio destro" }
+    }
   },
-  indizio:{titolo:"La lite", voce:"Lite nel pomeriggio: una voce giovane che chiamava «zio» — per i soldi",
-    testo:`Nel tardo pomeriggio, da sopra, <b>una lite</b>: la voce dell'uomo e <b>una voce più giovane</b> che gridava — «e chiamava “zio”, ispettore. Sempre per i soldi. Non era la prima volta.» Poi il silenzio. E stanotte, l'acqua dal soffitto.`},
-  gm:"Ascolto non è interrogare: è il tiro di chi tace bene. Se fallisce, l'informazione arriva più sfumata o per altra via — costa una scena in più, mai il caso." },
-
-/* 6 */
-{ img:"img/soglia.jpg?v=20260909", alt:"Una figura in controluce sulla soglia dell'appartamento",
-  tag:"Scena 6 · l'ospite inatteso", titolo:"Il nipote alla porta",
-  testo:[`Non lo cerchi tu: arriva lui. Un giovane sui venticinque, fradicio di pioggia — abita a due isolati, dirà poi — che quasi inciampa nel gradino del genkan: «Ho visto le volanti dalla strada — sono il nipote. Cos'è successo? Sta bene?» Le domande giuste, nell'ordine giusto. Quasi.`,
-    `Lo fai accomodare in cucina. Parla tanto, e tu ascolti: dice che di lavoro non se ne trova, che lo zio «viveva della sua pensione, poveretto — la teneva lì, nella busta sotto il giornale» — e che lui, qui, <b>non saliva da mesi</b>.`],
-  tavolo:`Tu, al GM: «Lo lascio parlare senza correggerlo. Voglio sentire DOVE sbaglia — non fargli capire che sbaglia.»`,
-  tiro:{attr:"Ascolto", label:"Le bugie non si vedono: si sentono, dove il racconto non torna col taccuino. Tira su <b>Ascolto</b>."},
-  esiti:{
-    k2:"Non sbagli un respiro: annuisci, rilanci, lo lasci costruire la sua versione mattone su mattone. È un muro storto: cadrà da solo.",
-    n3:"Lo ascolti come si ascolta un disco rovinato: il salto è lì, sempre nello stesso punto. Lo segni senza cambiare faccia.",
-    ok:"Le parole scorrono, tu incroci col taccuino: «da mesi» non sta in piedi. Non lo dici. Non ancora.",
-    fl:"È bravo, o disperato — che spesso è la stessa cosa: quasi gli credi. È rileggendo il taccuino che il conto non torna: ci arrivi comunque, con un giro in più.",
-    n11:"Per sentire dove mente devi ascoltare anche il resto: la paura vera, che è identica alla colpa. Ne esci con la bugia in mano e un sapore amaro.",
-    k12:"Ti guarda dritto e per un momento vedi solo un ragazzo spaventato — la stanchezza ti abbassa la guardia. È il collega a passarti il taccuino aperto sulla riga giusta. La bugia è agli atti."
+  camera: {
+    nome:"La camera", tag:"In fondo, sulla stessa parete", titolo:"Dove ha dormito per vent'anni",
+    testo:[
+      `Un letto a una piazza e mezzo, fatto. Sopra, buttato di traverso, il [[pigiama]]. Un [[armadio]] con l'anta che non chiude bene.`,
+      `Su una mensola, appoggiata al muro, c'è una [[fotografia]].`,
+      `Nient'altro. Nessun cassetto aperto, niente per terra: qui non ha cercato nessuno.`
+    ],
+    voci:{
+      pigiama:{ fatto:"Buttato sul copriletto, ancora nella forma di come è stato tolto stamattina.", nota:"Pigiama lasciato sul letto come stamattina" },
+      armadio:{ fatto:"Due camicie, un cappotto, un vestito buono nella custodia di plastica. Tre grucce vuote. In fondo, un paio di scarpe nere lucidate.", nota:"Nell'armadio pochi vestiti, niente nascosto" },
+      fotografia:{ tiro:"foto", fatto:"In bianco e nero, la cornice spolverata. Lui più giovane, in piedi. Una donna che gli somiglia. Un bambino di sei o sette anni, in braccio a lui, che ride guardando da un'altra parte.", nota:"Fotografia sulla mensola: lui, la figlia, il bambino" }
+    }
   },
-  indizio:{titolo:"La bugia", voce:"Il nipote mente: sa dov'è la busta dei soldi — sotto il giornale di oggi",
-    testo:`«Non salivo da mesi» — ma sa che i contanti stanno <b>nella busta sotto il giornale</b>. E il giornale è quello di <b>oggi</b>. Le date delle pensioni le conosce chiunque; il nascondiglio di questa settimana lo sa solo chi c'era. E la vicina, nel pomeriggio, ha sentito una voce giovane.`},
-  gm:"Non far «vincere il tiro» col confronto in faccia: la bugia colta è un indizio da spendere, non un trofeo. Il quando è tutto." },
-
-/* 7 */
-{ img:"img/incalzo.jpg", alt:"Il giovane seduto al tavolo di cucina, sotto la lampada",
-  tag:"Scena 7 · l'incalzo", titolo:"Il punto dove il racconto si rompe",
-  testo:[`È seduto al tavolo di cucina, le mani strette attorno a una tazza vuota. Il collega è alla porta, senza fretta. Sul tuo taccuino: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia. Sei righe che parlano tutte di lui.`,
-    `Adesso si chiude il cerchio. Puoi farlo in due modi.`],
-  scelta:{dom:"Come lo incalzi?", opzioni:[
-    {label:"🤝 Con gentilezza", sotto:"gli lasci lo spazio per crollare — tiro su Ascolto", modo:"gentile"},
-    {label:"⚡ Con la pressione", sotto:"il taccuino sul tavolo, riga per riga — tiro su Presenza", modo:"pressione"}
-  ]},
-  tiroGentile:{attr:"Ascolto", label:"Voce bassa, il tè rifatto, nessuna accusa: solo domande a cui non sa più rispondere. Tira su <b>Ascolto</b>."},
-  tiroPressione:{attr:"Presenza", label:"Ti alzi, apri il taccuino, e leggi. Riga per riga. Tira su <b>Presenza</b> — riempire la stanza senza alzare la voce."},
-  esiti:{
-    k2:"Trovi la crepa esatta: «Le pantofole, ragazzo. Le hai messe a posto come si fa in casa propria.» Gli trema il mento. Poi viene giù tutto insieme.",
-    n3:"Non ha più dove andare, e glielo mostri con calma: ogni riga del taccuino chiude una porta. Alla sesta, parla.",
-    ok:"«Me li doveva, capisce? ME LI DOVEVA!» — la voce gli parte prima del cervello. Non è una confessione piena. È abbastanza.",
-    fl:"Sbagli una parola — «tuo zio ti manteneva» — e si irrigidisce: mezz'ora buttata. Ma la rabbia che gli hai acceso lavora per te: alla fine la frase gli scappa comunque.",
-    n11:"Regge più di quanto credevi: per piegarlo devi andare fino in fondo, e certe cose che gli dici le senti addosso anche tu. Cede — e a te formicolano le mani.",
-    k12:"Il muro contro muro ti sfugge di mano: urla, piange, giura sull'anima della madre. Quando la frase esce — «me li doveva!» — hai la camicia incollata e il cuore storto."
+  agente: {
+    nome:"L'agente", tag:"Sulla soglia, coi calzini bagnati", titolo:"Quello che ha trovato",
+    testo:[
+      `Ti passa il verbale senza rileggerlo. Ha i calzini fradici e non se ne è ancora accorto.`,
+      `Puoi chiedergli del [[rubinetto]], della [[vicina]], del [[vecchio]], del [[nipote]].`
+    ],
+    voci:{
+      rubinetto:{ fatto:"«Era aperto quando sono entrato. L'ho chiuso io alle nove e cinquantadue. È a verbale.»", nota:"Il rubinetto era ancora aperto all'arrivo della polizia" },
+      vicina:{ fatto:"«Quella di fronte. Ha visto l'acqua sul ballatoio ed è scesa da me sotto la pioggia. Dice che verso le cinque ha sentito il campanello e una voce di uomo, giovane, che diceva <em>sono io</em>. Poi la televisione si è abbassata di colpo. Poi più niente, per una mezz'ora buona. Poi la porta sbattuta.»<br><br>«È rientrata in casa, le ho detto io di andare. Ottantadue anni e la vestaglia bagnata.»", dett:"Questa è già una delle due righe che ti hanno dato: non ti costa niente." },
+      vecchio:{ fatto:"«Lo conoscevo. Mezzo sordo da un orecchio, la fabbrica. La televisione la teneva a un volume che si sentiva sulle scale. Tutti glielo dicevano, e lui rideva.»", nota:"Il vecchio era mezzo sordo, teneva la televisione altissima" },
+      nipote:{ fatto:"«L'ho chiamato io, mezz'ora fa. È l'unico che ha. Si faceva vedere poco.» Si ferma. «Poco, ma sempre negli stessi giorni del mese. Questa a verbale non ce la metto.»", nota:"Il nipote passava solo nei giorni della pensione" }
+    }
   },
-  indizio:{titolo:"La mezza confessione", voce:"«Me li doveva!» — ammette la visita, la lite e i soldi",
-    testo:`Ammette di essere salito, ammette la lite, ammette la busta: «me li doveva». Sulla vasca giura: «è scivolato, io non volevo — l'ho scosso, non rispondeva, io…». La frase resta a metà. Le manette no.`},
-  gm:"Due strade, stesso sbocco: la scelta cambia il COME, il prezzo e la scena — non l'indagine. Le porte non si chiudono: si pagano." },
+  medico: {
+    nome:"Il medico", tag:"Ha finito il turno da un'ora", titolo:"Quello che dice il corpo",
+    testo:[
+      `Ha già chiuso la borsa. Sta in piedi contro lo stipite e aspetta solo di andarsene.`,
+      `Puoi chiedergli della [[testa]], dell'[[acqua nei polmoni]], delle [[mani]], dell'[[ora]].`
+    ],
+    voci:{
+      testa:{ fatto:"«Il colpo sopra l'occhio. È quello che l'ha ammazzato, ed è stato quasi subito. Ha sbattuto contro qualcosa di duro con uno spigolo.»", dett:"È già nel tuo taccuino: te l'hanno data." },
+      "acqua nei polmoni":{ fatto:"«Quando uno annega gli esce una schiuma bianca dalla bocca e dal naso. Sempre. A lui non è uscito niente.»", dett:"È già nel tuo taccuino: te l'hanno data." },
+      mani:{ fatto:"«Le mani non hanno niente. Né i palmi né i polsi.» Si stringe nelle spalle. «Uno che cade in avanti da sveglio le mani le mette avanti. Sempre. Non ho mai visto nessuno che non lo faccia.»", nota:"Mani e polsi intatti: non si è parato" },
+      ora:{ fatto:"«Fra le cinque e le otto di sera. Di più non le so dire: quell'acqua era calda e ce l'ha tenuto dentro per ore. Il corpo non mi dà l'ora, mi dà solo che è stato a mollo un pezzo.»", nota:"Morto fra le cinque e le otto di sera" }
+    }
+  }
+};
+/* la parte guidata (una cosa dopo l'altra) e poi la casa, dove si gira liberamente */
+const SEQUENZA = ["pianerottolo","agente","medico","salma"];
+const ORDINE = ["cucina","bagno","camera","agente","medico","salma"];
+const STANZE = ["cucina","bagno","camera"];
 
-/* 8 · lo scontro (motore condiviso: scontro.js — la stessa scena si gioca da sola in /provalo/scontro/) */
-{ tipo:"scontro", img:"img/coltello.jpg", alt:"Una mano stringe un coltello da cucina, nella penombra, accanto allo scolapiatti",
-  tag:"Scena 8 · il coltello", titolo:"Un coltello in cucina",
-  testo:[`Il collega è sceso a far salire il medico legale e a chiamare la Scientifica. Restate tu e lui, in cucina, la luce al neon che frigge sopra il lavello. Gli dici di alzarsi. Le manette.`,
-    `E il ragazzo smette di ragionare: con uno scatto <b>afferra il coltello dal lavello</b> e te lo punta contro, la presa che trema. <em>«Stai indietro! STAI INDIETRO!»</em> Il manganello che avevi in tasca adesso è in mano. Tra voi c'è il tavolo; dietro di te, la porta del corridoio. Il collega è giù per le scale: un minuto — e un minuto qui dentro è un'eternità.`],
-  tavolo:`GM: «Si alza di scatto: ha il coltello in mano. Cosa fai?» — Tu: «Manganello. E non gli do le spalle.» — GM: «Allora tiriamo l'iniziativa: chi è più veloce.»` },
+/* ═══════════ IL GOU ═══════════ */
+const GOU = {
+  bagno:{
+    ok:`La stanza si riavvolge. Una sagoma china sul bordo della vasca, il braccio teso verso il rubinetto. <b>Dietro, una seconda sagoma.</b><br><br>Poi il primo è sulle piastrelle, un braccio piegato sotto il corpo e i piedi verso la porta.<br><br>Poi le sagome si spengono, come una lampadina che va.`,
+    no:`La stanza si riavvolge a strappi. Una sagoma china sul bordo della vasca, il braccio verso il rubinetto. Qualcosa dietro, ma è solo buio che si muove. Poi il corpo è già sulle piastrelle, un braccio piegato sotto, i piedi verso la porta.<br><br>Poi più niente. Non sapresti dire se qualcuno l'ha spinto o se è andato giù da solo.`
+  },
+  cucina:{
+    ok:`Due sagome sedute al tavolo, una di fronte all'altra. Fra loro la teiera, e due tazze che fumano. Una delle due si alza per prima.`,
+    no:`Due sagome al tavolo, e il tè che fuma fra loro. Poi il quadro si sfilaccia prima che una delle due si muova.`
+  },
+  camera:{
+    ok:`Ti fermi. Non torna niente al suo posto, perché qui non è successo niente. Hai speso tre punti di Ki per una stanza dove un vecchio ha dormito da solo per vent'anni.`,
+    no:`Ti fermi, e la stanza resta una stanza. Qui non è successo niente, e adesso lo sai avendolo pagato.`
+  }
+};
 
-/* 9 · finale */
-{ tipo:"finale", img:"img/manette.jpg", alt:"Le manette ai polsi, nel corridoio",
-  tag:"Scena 9 · le manette", titolo:"Il conto della notte" }
+/* ═══════════ L'INTERROGATORIO ═══════════ */
+const SCAMBI = [
+  { tema:"l'ultima volta",
+    lui:`«Non lo vedevo da un mese abbondante. Forse di più. Lavoro, sa com'è.»`,
+    opzioni:[
+      { carta:"vicina", frase:`«Alle cinque di oggi ha suonato qualcuno a questa porta. Un uomo giovane. Ha detto <em>sono io</em>, e suo nonno l'ha fatto entrare.»`,
+        risposta:`«E chi le dice che ero io? Qui suona la gente, i volantini, quelli del gas—»`, chiude:"Che stasera in questa casa non ci sia stato nessuno." }
+    ],
+    vuoto:`Annuisce e ripete la stessa frase con le stesse parole. La seconda volta suona già come una cosa imparata, ma non hai niente da metterci sopra.` },
+
+  { tema:"il tè",
+    lui:`«Il nonno il tè se lo faceva sempre. Anche tre volte al giorno. Era l'unica cosa che gli piaceva ancora.»`,
+    opzioni:[
+      { carta:"due tazze", frase:`«Nel lavello ce ne sono due, e il tè dentro è ancora umido. Tutto il resto è secco da giorni.»`,
+        risposta:`«Ne avrà presa una vecchia. Aveva settantasei anni, mica stava attento.»`, chiude:"Che stasera fosse solo." },
+      { carta:"teiera", frase:`«La teiera è ancora sul tavolo, con le foglie dentro.»`,
+        risposta:`«E allora? Se l'è fatto e non ha lavato. Guardi come teneva casa.»`, chiude:null }
+    ],
+    vuoto:`Ti racconta di quando il nonno gli faceva il tè da bambino. Parla per due minuti buoni e sta più comodo di prima.` },
+
+  { tema:"la televisione",
+    lui:`«Stava guardando la televisione, no? La teneva sempre accesa. Per la compagnia.»`,
+    opzioni:[
+      { carta:"televisione", serve:"vecchio",
+        frase:`«La teneva a un volume che si sentiva sulle scale, perché era sordo da un orecchio. Stasera la manopola è girata fino in fondo. Chi l'ha abbassata?»`,
+        risposta:`Apre la bocca e la richiude. «Sarà stato lui. Che ne so io.»`, chiude:"Che nessuno avesse bisogno di sentire quello che si dicevano." },
+      { carta:"televisione",
+        frase:`«La manopola del volume è girata fino in fondo. Uno che accende la televisione per compagnia non la mette a zero.»`,
+        risposta:`«E che ne so. Sarà stato lui.» Ma lo dice troppo in fretta.`, chiude:null }
+    ],
+    vuoto:`«Ecco, vede.» Si appoggia allo schienale. È la prima volta che si appoggia allo schienale.` },
+
+  { tema:"il bagno",
+    lui:`«È scivolato, no? Stava riempiendo la vasca. Con l'acqua per terra, alla sua età…»`,
+    opzioni:[
+      { carta:"medico", frase:`«Non è annegato. Era già morto quando è finito in acqua. Uno che scivola da solo dentro una vasca non ci finisce da morto.»`,
+        risposta:`Non risponde. Si guarda le mani sul tavolo, e le sposta sotto.`, chiude:"L'incidente." },
+      { carta:"pantofole", frase:`«Le pantofole sono davanti alla porta del bagno, una accanto all'altra, dritte. In questa casa non c'è nient'altro messo dritto.»`,
+        risposta:`«E che vuol dire? Se le sarà tolte lui.» Guarda verso il bagno e non ci arriva con gli occhi.`, chiude:"Che dopo la caduta in questa casa non ci sia stato più nessuno." },
+      { carta:"mani", frase:`«Non ha niente alle mani. Chi cade in avanti da sveglio le mani le mette avanti. Sempre.»`,
+        risposta:`«E io che ne so come si cade.»`, chiude:"Che sia caduto da solo, cosciente." }
+    ],
+    vuoto:`«Poveraccio», dice. «Poveraccio.» Lo dice due volte e la seconda gli viene meglio.` },
+
+  { tema:"i soldi",
+    lui:`«Non aveva niente. Campava con la pensione e non gli bastava. Gliel'ho detto mille volte di farsi aiutare.»`,
+    opzioni:[
+      { carta:"riviste", frase:`«La pensione l'ha ritirata stamattina. La busta è sotto le riviste, col timbro di oggi, ed è vuota. E le riviste sono state rimesse a posto: si vede dalla polvere.»`,
+        risposta:`«Se li sarà spesi.» — «Il frigo è vuoto. Non ha comprato niente.» — Silenzio lungo. Poi, piano: «Me li doveva.»`, chiude:"Tutto." },
+      { carta:"portafogli", frase:`«In casa non c'è un soldo. Ha ritirato la pensione stamattina.»`,
+        risposta:`«E io che ne so dove li teneva? Non salivo da un mese.»`, chiude:null },
+      { carta:"frigorifero", frase:`«Il frigo è vuoto. Ha preso la pensione stamattina e non ha comprato niente.»`,
+        risposta:`«Mangiava poco. I vecchi mangiano poco.»`, chiude:null },
+      { carta:"nipote", frase:`«L'agente dice che lei passava di qui sempre negli stessi giorni del mese. I giorni della pensione.»`,
+        risposta:`«E allora? Passavo quando potevo.» Ma adesso ha le orecchie rosse.`, chiude:"Che venire oggi sia stato un caso." }
+    ],
+    vuoto:`Ti chiede se può vederlo. Lo chiede piano, e la domanda è vera.` },
+
+  { tema:"la mezz'ora", tiro:true,
+    lui:`«Non lo so io cosa fa la gente. Io non c'ero.» Poi, siccome il silenzio dura, comincia a riempirlo: «Magari hanno parlato. Magari si è fatto il tè, si è messo a guardare la televisione, è andato in bagno a farsi la vasca ed è scivolato. Alla sua età succede, no?»`,
+    apri:`«Chi è entrato qui alle cinque è uscito mezz'ora dopo, sbattendo la porta. Cosa si fa per mezz'ora, in casa di un uomo di settantasei anni?»`,
+    vuoto:"" }
 ];
 
-/* contenuti delle due stanze intercambiabili (scelta in scena 3) */
-const STANZE = {
-  cucina: {
-    img:"img/cucina.jpg", alt:"La cucina: una tazza sul tavolo, una lavata a scolare",
-    titolo:"La cucina — due tazze",
-    testo:[`La cucina è il diario di un uomo solo: una padella, un piatto, bacchette dispari. Ma sul tavolo c'è <b>una tazza da tè col fondo secco</b> — e nello scolapiatti <b>una tazza del servizio buono, quello per gli ospiti, lavata e capovolta</b>. Un uomo solo non apparecchia per gli ospiti, se l'ospite non c'è.`],
-    tiro:{attr:"Pazienza", label:"Cercare senza contaminare: guardare tutto, toccare niente, nell'ordine giusto. Tira su <b>Pazienza</b>."},
-    esiti:{
-      k2:"Vedi la cucina come una scacchiera a partita finita: ogni pezzo dice l'ultima mossa. Il tè per due, servito da chi era di casa.",
-      n3:"Un giro lento, le mani dietro la schiena, e la stranezza affiora da sola: chi ha bevuto ha anche lavato. Uno solo dei due.",
-      ok:"Repertori con metodo: la tazza sul tavolo, quella a scolare, la teiera ancora dentro il lavello. Due persone, un tè — una sola tazza pulita.",
-      fl:"La stanchezza ti fa quasi passare oltre — è il collega a fermarti: «Ispettore… chi lava UNA tazza sola?». Giusto. Lo segnate insieme.",
-      n11:"Per capirla devi immaginarli, i due seduti al tè un'ora prima della vasca — e quell'immagine domestica è peggio del bagno. La porti via insieme al dato.",
-      k12:"Apri la credenza e trovi la scatola del tè buono, quello per gli ospiti, consumata a metà: la tenerezza del dettaglio ti sbrana. Il quadro però è completo, e lo scrivi."
-    },
-    indizio:{titolo:"La tazza lavata", voce:"L'ospite si è lavato la tazza da sé: uno di casa",
-      testo:`C'era un ospite — la tazza buona non mente — hanno preso il tè, e <b>l'ospite ha lavato la propria tazza</b> prima di andarsene. Chi si lava la tazza a casa d'altri? <b>Uno che in quella casa c'è cresciuto.</b>`},
-    gm:"Ogni stanza dà UN indizio che porta avanti: l'ordine scelto cambia il ritmo, non il totale. Le porte non si chiudono."
-  },
-  stanza: {
-    img:"img/stanza.jpg", alt:"La stanza col futon: il giornale e una busta vuota sul tatami",
-    titolo:"La stanza — quello che manca",
-    testo:[`Il tatami, il futon piegato, un tavolino basso col giornale di oggi. Tutto al suo posto — ed è proprio il punto: in una stanza così, <b>ciò che manca si vede più di ciò che c'è</b>.`],
-    tiro:{attr:"Lucidità", label:"Non cercare oggetti: cerca i buchi. Tira su <b>Lucidità</b> — vedere l'assenza."},
-    esiti:{
-      k2:"Il tuo sguardo va dritto al giornale, che è appena storto: sotto, la busta. Vuota. La stanza te l'ha praticamente consegnata.",
-      n3:"Scansioni la stanza per righe, come una pagina: alla terza riga, l'angolo di carta marrone sotto il quotidiano.",
-      ok:"Sollevi il giornale con la penna: una busta di contanti, aperta di strappo, vuota. Accanto, il libretto postale: prelievo di venerdì.",
-      fl:"Giri a vuoto dieci minuti — la stanchezza — finché non ti abbassi all'altezza del tavolino: da lì, l'angolo della busta si vede da solo.",
-      n11:"La trovi, ma frugare nella vita nuda di un uomo appena morto stanotte pesa il doppio: ogni oggetto è una piccola lapide.",
-      k12:"Prima della busta trovi le foto: il morto da giovane, una donna, un bambino in spalla. Resti seduto sul tatami un minuto intero. Poi il giornale, la busta, il timbro. Il lavoro si fa — il prezzo pure."
-    },
-    indizio:{titolo:"La busta vuota", voce:"Pensione prelevata venerdì: contanti spariti",
-      testo:`La <b>busta dei contanti</b>, aperta di strappo e <b>vuota</b> — e il <b>libretto postale</b> con la riga che parla: prelievo della pensione, venerdì. In casa: il portafoglio con gli spicci, nessun contante. <b>Chi è uscito da qui, è uscito coi soldi.</b>`},
-    gm:"Ogni stanza dà UN indizio che porta avanti: l'ordine scelto cambia il ritmo, non il totale. Le porte non si chiudono."
-  }
-};
-
-/* ── rendering ── */
+/* ═══════════ RENDER ═══════════ */
 const cont = document.getElementById("contenitore");
 const chipBox = document.getElementById("stato-chip");
 const chipKi = document.getElementById("chip-ki");
-const chipScena = document.getElementById("chip-scena");
-let ordineStanze = null;
-let girando = null;
-
-const SCENE_TOT = 9;
+const chipRighe = document.getElementById("chip-righe");
 const stripScontro = document.getElementById("stato-scontro");
 const STATO_SCONTRO = {
   pipsPg: document.getElementById("pips-pg"), numPg: document.getElementById("num-pg"), kiPg: document.getElementById("ki-pg"),
   pipsNip: document.getElementById("pips-nip"), numNip: document.getElementById("num-nip")
 };
-function aggiornaChip(){
+let girando = null;
+
+function chip(){
   chipKi.textContent = S.ki;
   chipKi.parentElement.classList.toggle("genkai", S.ki <= 3);
-  chipScena.textContent = "Scena " + S.scena + "/" + SCENE_TOT;
+  chipRighe.textContent = "Taccuino " + mie() + "/" + S.righe;
 }
-function tappeHtml(){
-  let h = '<div class="tappe" aria-label="Avanzamento">';
-  for (let i=1;i<=SCENE_TOT;i++) h += `<span class="${i<S.scena?'fatta':i===S.scena?'qui':''}" title="Scena ${i}"></span>`;
-  return h + "</div>";
-}
-function taccuinoHtml(nuovaVoce){
-  let h = '<div class="taccuino"><h4>Il tuo taccuino</h4><ul>';
-  for (const v of S.indizi) h += `<li class="${v===nuovaVoce?'nuova':''}">${v}</li>`;
+function taccHtml(nuova){
+  const q = mie() === 0 ? "nessuna riga" : mie() === 1 ? "una riga" : mie() + " righe";
+  let h = `<div class="tacc"><h4>Il tuo taccuino <span>${q} su ${S.righe}</span></h4><ul>`;
+  for (const v of S.tacc) h += `<li class="${v.data?'data':''}${v.id===nuova?' nuova':''}">${v.testo}</li>`;
+  for (let i = mie(); i < S.righe; i++) h += `<li class="vuota">riga libera</li>`;
   return h + "</ul></div>";
 }
+function scrolla(el){ if (el && el.scrollIntoView) el.scrollIntoView({behavior:"smooth", block:"nearest"}); }
 
 function render(){
   window.scrollTo(0,0);
   stripScontro.hidden = true;
-  if (S.scena===0) return renderCopertina();
-  chipBox.hidden = false;
-  aggiornaChip();
-  const sc = SCENE[S.scena];
-  if (sc.tipo==="scontro") return renderScontro(sc);
-  if (sc.tipo==="finale") return renderFinale(sc);
-  let dati = null;
-  if (sc.dinamica==="stanzaA" && ordineStanze) dati = Object.assign({}, STANZE[ordineStanze[0]], {tagFisso:"Scena 3 · la casa parla"});
-  if (sc.dinamica==="stanzaB"){
-    if (!ordineStanze) ordineStanze = ["cucina","stanza"];
-    dati = Object.assign({}, STANZE[ordineStanze[1]], {tagFisso:"Scena 4 · la casa parla ancora"});
+  chipBox.hidden = (S.fase === "copertina");
+  chip();
+  if (S.fase === "copertina") return renderCopertina();
+  if (S.fase === "casa"){
+    if (S.passo < SEQUENZA.length){ S.luogo = SEQUENZA[S.passo]; return renderLuogo(); }
+    if (!S.righeDecise) return apriCasa();
+    return renderLuogo();
   }
-  renderScena(sc, dati || {});
+  if (S.fase === "arriva")    return renderArrivo();
+  if (S.fase === "interr")    return renderInterrogatorio();
+  if (S.fase === "scontro")   return renderScontro();
+  if (S.fase === "dopo")      return renderDopo();
+  if (S.fase === "finale")    return renderFinale();
 }
 
+/* ── copertina ── */
+/* le definizioni sono quelle del Manuale del Giocatore: non si parafrasano */
+const SCHEDA = [
+  { k:"Distacco", v:6, che:"Non farti coinvolgere emotivamente. Restare lucido davanti all'orrore. Mantenere la distanza professionale quando tutto ti spinge a reagire.", quando:"Si tira quando la scena è dura da guardare, o quando qualcuno cerca di farti perdere la testa." },
+  { k:"Lucidità", v:7, che:"Vedere chiaro. Collegare i pezzi. Capire cosa è importante e cosa no. Ricostruire cosa è successo da quello che resta.", quando:"Si tira sui sopralluoghi, sui documenti, su tutto quello che va rimesso in fila." },
+  { k:"Ascolto", v:6, che:"Far parlare gli altri. Cogliere il non detto. Leggere tra le righe. Sentire quando qualcosa non torna in quello che qualcuno ti sta dicendo.", quando:"Si tira quando qualcuno parla: per sentire dove il racconto si incrina." },
+  { k:"Pazienza", v:5, che:"Resistere alla fretta. Aspettare il momento giusto. Sopportare lunghe attese senza cedere alla pressione del tempo.", quando:"Si tira quando bisogna stare fermi: un appostamento, un silenzio da reggere, una cosa che fa male e va guardata bene." },
+  { k:"Silenzio", v:5, che:"Calma interiore. Non reagire d'impulso. Incassare provocazioni senza esplodere. Non tradire le tue intenzioni con un gesto o una parola di troppo.", quando:"Si tira quando ti provocano, e quando non devi far capire cosa hai capito." },
+  { k:"Presenza", v:4, che:"L'autorità che ispiri. Farti prendere sul serio. Intimidire, comandare attenzione, far pesare la tua posizione in una stanza.", quando:"Si tira quando devi imporsi senza alzare la voce. In uno scontro decide anche quanto sei pronto a reagire." }
+];
+const ROBA = [
+  { k:"警棒 Il manganello", che:"D'ordinanza, alla cintura, sotto la giacca. Un investigatore in borghese non porta la pistola: quella resta in armadietto e si preleva firmando." },
+  { k:"Tesserino e manette", che:"Il 警察手帳, il tesserino di polizia: è quello che ti apre le porte, non la voce." },
+  { k:"Taccuino e penna", che:"Quello che scrivi qui dentro è quello che potrai usare dopo. Quello che non scrivi, per il verbale non è mai successo." },
+  { k:"Un pacchetto di sigarette", che:"Chiuso. Non lo apri da tre mesi e continui a portartelo dietro." }
+];
 function renderCopertina(){
-  chipBox.hidden = true;
   cont.innerHTML = `
   <article class="scena">
-    <img src="img/porta.jpg" alt="Un corridoio buio, la porta del bagno socchiusa">
+    <img src="img/porta.jpg" alt="Una porta socchiusa in un corridoio buio">
     <div class="scena-corpo">
       <p class="scena-tag">Come si gioca — provalo</p>
-      <h1>Un mini-caso, scena per scena</h1>
+      <h1>Non torna</h1>
       <p class="filosofia">«I dadi non vi sbarrano nessuna porta — dicono soltanto quanto vi costa attraversarla, e quanto ne resta di voi dall'altra parte.»</p>
-      <p>Nove scene, un appartamento, una notte. Un tiro per scena, qualche scelta, un taccuino che si riempie, un coltello che salta fuori — fino alle manette. Così funziona GENKAI: <b>gli indizi si trovano sempre</b>; i dadi decidono solo quanto ti costa trovarli.</p>
-      <div class="tu">
-        <span>Sei tu: <b>investigatore della Omicidi</b>, Kyoto 1997</span>
-        <span>Distacco <b>6</b></span><span>Lucidità <b>7</b></span><span>Ascolto <b>6</b></span>
-        <span>Pazienza <b>5</b></span><span>Silenzio <b>5</b></span><span>Presenza <b>4</b></span>
-        <span>気 Ki <b>9</b></span><span>Gou: <b>Teatro delle Ombre 影芝居</b></span><span>Manganello <b>1</b> · Lotta <b>1</b></span><span>manganello in tasca</span>
+      <p>Kyoto, novembre 1997. Sei della Sezione Omicidi, e stanotte tocca a te andare a vedere una morte in casa che secondo il medico non è come sembra.</p>
+      <p>Quello che dovrai fare è semplice: <b>guardare</b>. Guardare non costa niente e puoi guardare tutto quello che vuoi. Quello che costa è <b>scrivere</b>, perché le righe del taccuino sono poche — e quando sarà il momento di fare domande, sul tavolo ci andrà solo quello che hai scritto.</p>
+
+      <p class="scena-tag" style="margin-top:1.4rem">Chi sei — tocca una voce per sapere cosa fa</p>
+      <div class="tu" id="scheda">
+        ${SCHEDA.map(a=>`<span><button type="button" class="hot" data-att="${a.k}">${a.k}</button> <b>${a.v}</b></span>`).join("")}
+        <span>気 <button type="button" class="hot" data-att="Ki">Ki</button> <b>9</b></span>
+        <span>業 <button type="button" class="hot" data-att="Gou">Gou</button>: <b>Teatro delle Ombre 影芝居</b></span>
       </div>
-      <p style="font-family:var(--sans);font-size:.85rem;color:var(--tenue)">Una scheda così puoi fartela identica, in dieci minuti, col <a href="/Pg">wizard degli investigatori</a>.</p>
-      <div class="bottoni" style="margin-top:1.2rem">
-        <button type="button" class="btn btn-forte" id="comincia">Comincia il caso →</button>
+      <div id="spiega-att"></div>
+
+      <p class="scena-tag" style="margin-top:1.4rem">Cosa ti porti addosso</p>
+      <div class="tu" id="roba">
+        ${ROBA.map(r=>`<span><button type="button" class="hot" data-roba="${r.k}">${r.k}</button></span>`).join("")}
       </div>
+      <div id="spiega-roba"></div>
+
+      <p style="font-family:var(--sans);font-size:.85rem;color:var(--tenue);margin-top:1.2rem">Una scheda così puoi fartela identica, in dieci minuti, col <a href="/Pg">wizard degli investigatori</a>.</p>
+      <div class="bottoni"><button type="button" class="btn btn-forte" id="comincia">Sali le scale →</button></div>
     </div>
   </article>`;
-  document.getElementById("comincia").addEventListener("click", ()=>{ S.scena=1; render(); });
+
+  const spiegaAtt = (nome)=>{
+    const box = document.getElementById("spiega-att");
+    if (nome === "Ki"){
+      box.innerHTML = `<div class="fatto"><h4>気 Ki — quanto reggi</h4><p>Non è la salute: è lo stato complessivo, fisico e mentale insieme. Scende quando la giornata ti costa. Sotto tre sei <b>oltre il limite</b>, ed è il <b>Genkai</b> che dà il nome al gioco.</p><p class="dett">Fuori dal combattimento il Ki non scende mai sotto 1: quando sei a terra così, <b>esci di scena</b> — la pressione è troppa e per stanotte hai finito. <b>Di Ki si muore soltanto sotto i colpi</b>, e lì a zero è finita.</p></div>`;
+      return;
+    }
+    if (nome === "Gou"){
+      box.innerHTML = `<div class="fatto"><h4>業 Gou — il dono che si paga</h4><p><b>Teatro delle Ombre 影芝居</b>: ti fermi in un punto preciso e quel punto ti restituisce quello che ha visto. Sagome, ombre, i gesti nell'ordine in cui sono stati fatti.</p><p class="dett">Costa <b>3 punti di Ki</b>, pagati per intero e prima di sapere come va. Il tiro decide solo quanto ti mostra. E davanti a un giudice non ci si va con una visione: il Gou non ti dà niente da scrivere sul taccuino.</p></div>`;
+      return;
+    }
+    const a = SCHEDA.find(x=>x.k===nome);
+    box.innerHTML = `<div class="fatto"><h4>${a.k} ${a.v}</h4><p>${a.che}</p><p class="dett">${a.quando}<br>Si tira sempre <b>2d6</b>: se la somma è minore o uguale a <b>${a.v}</b>, riuscito. Meno fai, meglio è.</p></div>`;
+  };
+  cont.querySelectorAll("[data-att]").forEach(b => b.addEventListener("click", ()=>{
+    cont.querySelectorAll("[data-att]").forEach(x=>x.classList.remove("vista"));
+    b.classList.add("vista"); spiegaAtt(b.dataset.att);
+  }));
+  cont.querySelectorAll("[data-roba]").forEach(b => b.addEventListener("click", ()=>{
+    cont.querySelectorAll("[data-roba]").forEach(x=>x.classList.remove("vista"));
+    b.classList.add("vista");
+    const r = ROBA.find(x=>x.k===b.dataset.roba);
+    document.getElementById("spiega-roba").innerHTML = `<div class="fatto"><h4>${r.k}</h4><p>${r.che}</p></div>`;
+  }));
+  document.getElementById("comincia").addEventListener("click", ()=>{ S.fase="casa"; S.luogo="pianerottolo"; render(); });
 }
 
-function bloccoTiro(label, attr){
-  return `
-  <div class="tiro-box">
-    <p class="tiro-come">${label} Il tuo <b>${attr}</b> è <b>${S.attr[attr]}</b>: 2d6, somma ≤ ${S.attr[attr]} = successo. Sui dadi nudi: <b>2</b> critico · <b>3</b> notevole · <b>11</b> notevole negativo · <b>12</b> critico negativo.</p>
-    <div class="bottoni"><button type="button" class="btn btn-forte" id="tira">🎲 Tira 2d6</button></div>
-    <div id="area-tiro" hidden>
-      <div class="dadi"><div class="dado" id="d1">·</div><div class="dado" id="d2">·</div></div>
-      <p class="somma" id="somma"></p>
-      <div class="dopo" id="dopo"></div>
-      <div class="avanti-box" id="avanti-box"></div>
-    </div>
-  </div>`;
+/* ── un luogo: testo con le parole da guardare ── */
+const idVoce = (L, chiave) => (L.voci[chiave] && L.voci[chiave].id) || chiave;
+function testoHtml(L){
+  return L.testo.map(p => `<p>${p.replace(/\[\[([^\]]+)\]\]/g, (m, parola) => {
+    const chiave = parola.toLowerCase();
+    const vista = S.viste[idVoce(L, chiave)] ? " vista" : "";
+    return `<button type="button" class="hot${vista}" data-voce="${chiave}">${parola}</button>`;
+  })}</p>`).join("");
 }
 
-function renderScena(sc, dati){
-  const tag = dati.tagFisso || sc.tag;
-  const img = dati.img || sc.img, alt = dati.alt || sc.alt;
-  const titolo = dati.titolo || sc.titolo;
-  const testo = (dati.testo || sc.testo || []).map(p=>`<p>${p}</p>`).join("");
-  const tavolo = (dati.tavolo || sc.tavolo) ? `<div class="tavolo"><b>Come si gioca, al tavolo</b>${dati.tavolo || sc.tavolo}</div>` : "";
-  const conScelta = sc.scelta && !(sc.dinamica==="stanzaA" && ordineStanze) && !dati.tiro;
-
-  let corpo;
-  if (conScelta){
-    corpo = `<div class="scelta"><p class="scelta-dom">${sc.scelta.dom}</p><div class="bottoni">` +
-      sc.scelta.opzioni.map(o=>`<button type="button" class="btn" data-modo="${o.modo}">${o.label}<small>${o.sotto}</small></button>`).join("") +
-      `</div></div><div id="dopo-scelta"></div>`;
-  } else {
-    const t = dati.tiro || sc.tiro;
-    corpo = bloccoTiro(t.label, t.attr);
-  }
+function renderLuogo(){
+  const L = LUOGHI[S.luogo];
+  if (STANZE.indexOf(S.luogo) >= 0) S.viste["stanza-"+S.luogo] = true;
+  const img = L.img ? `<img src="${L.img}" alt="${L.alt||''}">` : "";
+  const gou = (!S.gouUsato && GOU[S.luogo]) ? `
+    <div class="gou-box">
+      <h4>業 Il tuo Gou — Teatro delle Ombre 影芝居</h4>
+      <p>Ti fermi in mezzo alla stanza e non fai niente. Non è una cosa che hai imparato: ti succede da sempre, e ogni volta ti lascia svuotato. Le cose intorno si rimettono al loro posto e i gesti tornano nell'ordine in cui sono stati fatti.</p>
+      <div class="bottoni"><button type="button" class="btn btn-piccolo" id="usa-gou">Fermarti qui<small>costa 3 Ki, pagati subito. Una volta sola stanotte</small></button></div>
+    </div>` : "";
 
   cont.innerHTML = `
   <article class="scena">
-    <img src="${img}" alt="${alt}">
+    ${img}
     <div class="scena-corpo">
-      ${tappeHtml()}
-      <p class="scena-tag">${tag}</p>
-      <h2>${titolo}</h2>
-      ${testo}
-      ${tavolo}
-      ${corpo}
+      <p class="scena-tag">${L.tag}</p>
+      <h2>${L.titolo}</h2>
+      ${testoHtml(L)}
+      <div id="fatto"></div>
+      ${gou}
+      <div id="gou-esito"></div>
+      ${taccHtml()}
+      <div class="luoghi" id="luoghi"></div>
     </div>
   </article>`;
 
-  if (conScelta){
-    cont.querySelectorAll("[data-modo]").forEach(b=>{
-      b.addEventListener("click", ()=> gestisciScelta(sc, b.dataset.modo, b));
-    });
-  } else {
-    const t = dati.tiro || sc.tiro;
-    document.getElementById("tira").addEventListener("click", ()=> tira(sc, dati, t.attr, dati.modoTiro || null));
-  }
+  cont.querySelectorAll("[data-voce]").forEach(b => b.addEventListener("click", () => guarda(L, b.dataset.voce, b)));
+  const g = document.getElementById("usa-gou");
+  if (g) g.addEventListener("click", usaGou);
+  disegnaLuoghi();
 }
 
-function gestisciScelta(sc, modo, bottone){
-  cont.querySelectorAll("[data-modo]").forEach(b=>{ b.disabled = true; b.style.pointerEvents = "none"; b.style.opacity = b===bottone ? "1" : ".35"; });
-  const dove = document.getElementById("dopo-scelta");
-
-  if (sc.dinamica==="stanzaA"){
-    ordineStanze = modo==="cucina" ? ["cucina","stanza"] : ["stanza","cucina"];
-    const d = Object.assign({}, STANZE[ordineStanze[0]], {tagFisso:"Scena 3 · la casa parla"});
-    renderScena(sc, d);
+/* in fondo: nella parte guidata un solo bottone, dopo la casa si gira liberamente */
+const AVANTI_GUIDATO = [
+  "L'agente ti aspetta sulla soglia →",
+  "Il medico, prima che se ne vada →",
+  "La barella sul ballatoio →",
+  "Entri in casa →"
+];
+function disegnaLuoghi(){
+  const box = document.getElementById("luoghi");
+  if (!box) return;
+  if (S.passo < SEQUENZA.length){
+    /* sulla salma si prosegue solo dopo aver guardato sotto il lenzuolo */
+    const bloccato = (S.luogo === "salma" && !S.viste["salma-tirata"]);
+    box.innerHTML = `<button type="button" class="fine-btn" id="avanti-guida"${bloccato?" disabled":""}>${AVANTI_GUIDATO[S.passo]}</button>`;
+    if (!bloccato) document.getElementById("avanti-guida").addEventListener("click", ()=>{ S.passo++; render(); });
     return;
   }
-  if (S.scena===2){
-    if (modo==="gou"){
-      S.gouUsato = true;
-      S.ki = Math.max(1, S.ki-4);
-      aggiornaChip();
-      dove.innerHTML = `<div class="mecc" style="margin-top:1rem"><b>Gou attivato</b>Teatro delle Ombre 影芝居: <b>−4 Ki, pagati per intero</b> (ora ne hai ${S.ki}). Le ombre si preparano — il tiro dice quanto vedrai.</div>` + bloccoTiro(sc.tiroGou.label, sc.tiroGou.attr);
-    } else {
-      dove.innerHTML = bloccoTiro(sc.tiroMestiere.label, sc.tiroMestiere.attr);
-    }
-    const t = modo==="gou" ? sc.tiroGou : sc.tiroMestiere;
-    document.getElementById("tira").addEventListener("click", ()=> tira(sc, {}, t.attr, modo));
-    return;
-  }
-  if (S.scena===7){
-    const t = modo==="gentile" ? sc.tiroGentile : sc.tiroPressione;
-    dove.innerHTML = bloccoTiro(t.label, t.attr);
-    document.getElementById("tira").addEventListener("click", ()=> tira(sc, {}, t.attr, modo));
-  }
+  const viste = STANZE.filter(k => S.viste["stanza-"+k]).length;
+  const tutte = viste === STANZE.length;
+  box.innerHTML = ORDINE.map(k =>
+    `<button type="button" data-vai="${k}" class="${k===S.luogo?'qui':''}">${LUOGHI[k].nome}</button>`
+  ).join("") + `<button type="button" class="fine-btn" id="chiudi-casa">${tutte ? "Di sotto è arrivato qualcuno →" : "Ho visto abbastanza →"}</button>`;
+  box.querySelectorAll("[data-vai]").forEach(b => b.addEventListener("click", ()=>{ S.luogo = b.dataset.vai; render(); }));
+  document.getElementById("chiudi-casa").addEventListener("click", chiudiCasa);
 }
 
-function tira(sc, dati, attr, modo){
-  const btn = document.getElementById("tira");
-  btn.disabled = true; btn.style.pointerEvents = "none"; btn.style.opacity = ".4";
-  document.getElementById("area-tiro").hidden = false;
-  const d1 = document.getElementById("d1"), d2 = document.getElementById("d2");
-  const sommaEl = document.getElementById("somma");
+/* ── guardare una voce ── */
+function guarda(L, chiave, bottone){
+  const v = L.voci[chiave];
+  if (!v) return;
+  const id = idVoce(L, chiave);
+  S.viste[id] = true;
+  bottone.classList.add("vista");
+
+  if (v.vai){ S.luogo = v.vai; render(); return; }
+
+  const box = document.getElementById("fatto");
+  const img = v.img ? `<img src="${v.img}" alt="${v.alt||''}" loading="lazy">` : "";
+  const dett = v.dett ? `<p class="dett">${v.dett}</p>` : "";
+  box.innerHTML = `
+    <div class="fatto">
+      <h4>${chiave}</h4>
+      <p>${v.fatto}</p>
+      ${img}${dett}
+      <div class="voce-btn" id="voce-btn"></div>
+    </div>`;
+
+  if (v.tiro === "foto" && !S.viste["foto-tirata"]) tiroFoto();
+  else if (v.tiro === "salma" && !S.viste["salma-tirata"]) tiroSalma();
+  else segnabile(v, id, document.getElementById("voce-btn"));
+  scrolla(box);
+}
+
+function segnabile(v, id, b){
+  if (!b) return;
+  if (!v.nota){ b.innerHTML = ""; return; }
+  if (ho(id)){ b.innerHTML = `<p class="dett">Già sul taccuino.</p>`; return; }
+  if (libere() <= 0){
+    b.innerHTML = `<p class="dett">Le righe sono finite. Puoi guardare quanto vuoi, ma sul tavolo ci va solo quello che hai scritto.</p>`;
+    return;
+  }
+  b.innerHTML = `<div class="bottoni"><button type="button" class="btn btn-piccolo" data-segna="1">✎ Segnalo sul taccuino<small>${v.nota}</small></button></div>`;
+  b.querySelector("[data-segna]").addEventListener("click", ()=>{
+    S.tacc.push({ id, testo:v.nota });
+    chip();
+    render();
+  });
+}
+
+/* ── il tiro sulla fotografia ── */
+function tiroFoto(){
+  const b = document.getElementById("voce-btn");
+  b.innerHTML = `
+    <p class="dett">La cornice è l'unica cosa spolverata in tutta la casa.</p>
+    <div class="bottoni"><button type="button" class="btn btn-piccolo" id="tira-foto">🎲 Tira su Pazienza ${S.attr.Pazienza}<small>non per trovare: per reggerla</small></button></div>
+    <div id="area-foto" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-foto"></div></div>`;
+  document.getElementById("tira-foto").addEventListener("click", ev=>{
+    S.viste["foto-tirata"] = true;
+    tira("Pazienza", "area-foto", (fascia) => {
+      const testi = {
+        k2:"La guardi, la rimetti dritta sulla mensola e vai avanti. Stanotte hai un mestiere, e il mestiere ti tiene su.",
+        n3:"La guardi il tempo che serve, poi la rimetti a posto. È il lavoro, e va fatto.",
+        ok:"La rimetti dritta sulla mensola e vai avanti.",
+        fl:"Resti lì più del dovuto. Poi ti accorgi che l'agente ti sta guardando, e ti volti.",
+        n11:"Quel bambino che ride guardando da un'altra parte non te lo togli più dagli occhi.",
+        k12:"Ti siedi sul bordo del letto, un momento solo. Non è la prima volta, ed è questo il problema."
+      };
+      const m = META[fascia];
+      document.getElementById("esito-foto").innerHTML =
+        `<div class="esito ${m.classe}"><h3>${m.titolo}</h3><p>${testi[fascia]}</p><div class="mecc"><b>Meccanica</b>${applica(fascia,"Pazienza")}</div></div>`;
+      chip();
+      const box = document.createElement("div");
+      box.className = "voce-btn";
+      document.getElementById("esito-foto").appendChild(box);
+      segnabile(LUOGHI.camera.voci.fotografia, "fotografia", box);
+    }, ev);
+  });
+}
+
+/* ── il tiro davanti alla salma: non per trovare, per restare in piedi ── */
+function tiroSalma(){
+  const b = document.getElementById("voce-btn");
+  b.innerHTML = `
+    <p class="dett">Non si tira per <em>trovare</em>: quello che c'è da vedere lo vedi comunque. Si tira su <b>Distacco ${S.attr.Distacco}</b> per restare in piedi mentre lo guardi.</p>
+    <div class="bottoni"><button type="button" class="btn btn-piccolo" id="tira-salma">🎲 Tira su Distacco</button></div>
+    <div id="area-salma" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-salma"></div></div>`;
+  document.getElementById("tira-salma").addEventListener("click", ev=>{
+    S.viste["salma-tirata"] = true;
+    tira("Distacco", "area-salma", (fascia)=>{
+      const testi = {
+        k2:"Lo guardi come si guarda una cosa da capire, e basta. Il mestiere stanotte ti tiene su bene.",
+        n3:"Un respiro solo, poi rimetti il telo e ti volti verso la porta di casa.",
+        ok:"Guanti, voce bassa, taccuino. Un morto resta un morto e il lavoro resta il lavoro.",
+        fl:"Ci metti un momento di troppo a rimettere il lenzuolo. Non se ne accorge nessuno, tranne te.",
+        n11:"Quelle mani da fabbrica te le porti dietro. Sono le mani di qualcuno che hai conosciuto, e non ti viene in mente chi.",
+        k12:"Devi appoggiarti alla ringhiera e guardare il cortile per un momento. L'agente non dice niente, ed è peggio."
+      };
+      const m = META[fascia];
+      document.getElementById("esito-salma").innerHTML =
+        `<div class="esito ${m.classe}"><h3>${m.titolo}</h3><p>${testi[fascia]}</p><div class="mecc"><b>Meccanica</b>${applica(fascia,"Distacco")}</div></div>`;
+      chip();
+      const box = document.createElement("div");
+      box.className = "voce-btn";
+      document.getElementById("esito-salma").appendChild(box);
+      segnabile(LUOGHI.salma.voci.lenzuolo, "lenzuolo", box);
+      disegnaLuoghi();
+    }, ev);
+  });
+}
+
+/* ── il Gou ── */
+function usaGou(){
+  S.gouUsato = true;
+  S.ki = Math.max(1, S.ki - 3);
+  chip();
+  const dove = document.getElementById("gou-esito");
+  dove.innerHTML = `
+    <div class="mecc"><b>Gou attivato</b>Teatro delle Ombre 影芝居: <b>−3 Ki, pagati per intero</b> (te ne restano ${S.ki}). Il Gou non si tira per accenderlo: si paga. Il tiro dice solo <b>quanto ti mostra</b>.</div>
+    <div class="bottoni"><button type="button" class="btn btn-piccolo" id="tira-gou">🎲 Tira su Lucidità ${S.attr.Lucidità}</button></div>
+    <div id="area-gou" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-gou"></div></div>`;
+  document.getElementById("usa-gou").disabled = true;
+  document.getElementById("tira-gou").addEventListener("click", ev=>{
+    tira("Lucidità", "area-gou", (fascia)=>{
+      const buono = (fascia === "k2" || fascia === "n3" || fascia === "ok");
+      const t = GOU[S.luogo][buono ? "ok" : "no"];
+      S.gouVisto = S.luogo + (buono ? "-ok" : "-no");
+      const m = META[fascia];
+      document.getElementById("esito-gou").innerHTML = `
+        <div class="esito ${m.classe}">
+          <h3>${m.titolo}</h3>
+          <div class="ombre">${t}</div>
+          <p>Ti passa. Sei in piedi in una stanza che non ti dice più niente, con la testa che gira.</p>
+          <div class="mecc"><b>Meccanica</b>${applica(fascia,"Lucidità")}</div>
+          <div class="mecc"><b>E adesso?</b>Quello che ti è tornato in mente non lo puoi scrivere sul verbale e non lo puoi dire a un magistrato. Il Gou non ti dà nessuna riga di taccuino: sai come guardare, e basta.</div>
+        </div>`;
+      chip();
+    }, ev);
+  });
+  scrolla(dove);
+}
+
+/* ── motore del tiro ── */
+function tira(attr, areaId, poi, ev){
+  if (ev && ev.currentTarget) ev.currentTarget.disabled = true;
+  const area = document.getElementById(areaId);
+  area.hidden = false;
+  const dadi = area.querySelectorAll(".dado");
+  const d1 = dadi[0], d2 = dadi[1];
+  const sommaEl = area.querySelector(".somma");
   d1.classList.add("rotola"); d2.classList.add("rotola");
   clearInterval(girando);
   girando = setInterval(()=>{ d1.textContent = 1+Math.floor(Math.random()*6); d2.textContent = 1+Math.floor(Math.random()*6); }, 80);
   setTimeout(()=>{
     clearInterval(girando);
     d1.classList.remove("rotola"); d2.classList.remove("rotola");
-    const fascia = pesca();
-    const val = S.attr[attr];
-    const [a,b] = dadiPer(fascia, val);
+    const a = d6(), b = d6();
     d1.textContent = a; d2.textContent = b;
-    const s = a+b;
-    sommaEl.innerHTML = `Somma <b>${s}</b> contro ${attr} <b>${val}</b> — ${s<=val?"riuscito":"fallito"}${(s===2||s===3||s===11||s===12)?" · e i dadi nudi dicono di più":""}`;
-    mostraEsito(sc, dati, attr, fascia, modo);
+    const s = a + b, val = S.attr[attr];
+    const fascia = fasciaDi(a, b, attr);
+    sommaEl.innerHTML = `Somma <b>${s}</b> contro ${attr} <b>${val}</b> — ${s<=val?"riuscito":"fallito"}`;
+    poi(fascia, a, b);
+    scrolla(area);
   }, 750);
 }
 
-function mostraEsito(sc, dati, attr, fascia, modo){
-  const meta = META[fascia];
-  const testi = (modo==="gou" && sc.esitiGou) ? sc.esitiGou : (dati.esiti || sc.esiti);
-  let mecc = "<b>Meccanica</b>" + applicaMecc(fascia, attr), extraMecc = "";
-  if (modo==="gou") extraMecc = `<div class="mecc">${sc.meccGou}</div>`;
-  aggiornaChip();
+function chiudiCasa(){ S.fase = "arriva"; render(); }
 
-  const ind = dati.indizio || sc.indizio;
-  S.indizi.push(ind.voce);
-  const gm = (dati.gm || sc.gm) ? `<div class="gm"><b>Suggerimento GM</b>${dati.gm || sc.gm}</div>` : "";
-
-  document.getElementById("dopo").innerHTML = `
-    <div>
-      <div class="esito ${meta.classe}">
-        <h3>${meta.titolo}${meta.fascia?`<span class="fascia">${meta.fascia}</span>`:""}</h3>
-        <p>${testi[fascia]}</p>
-        <div class="indizio-card">
-          <h4>${ind.titolo} — lo trovi comunque</h4>
-          <p>${ind.testo}</p>
-          ${ind.img?`<img src="${ind.img}" alt="${ind.alt||''}" loading="lazy">`:""}
-        </div>
-        <div class="mecc">${mecc}</div>
-        ${extraMecc}
-        ${gm}
-      </div>
-      ${S.ki<=3?`<div class="genkai-riga">気 Ki ${S.ki} — sei oltre il limite: al tavolo, qui comincerebbe il <b>Genkai</b>. Il caso continua, ma ogni passo costa.</div>`:""}
-    </div>
-    ${taccuinoHtml(ind.voce)}`;
-
-  document.getElementById("avanti-box").innerHTML = `<button type="button" class="btn btn-forte" id="avanti">Scena successiva →</button>`;
-  document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
-}
-
-/* scena 8: lo scontro col coltello — motore condiviso (scontro.js), col Ki che il caso ti ha lasciato */
-function renderScontro(sc){
-  const pg = { attr:S.attr, ki:S.ki, kiMax:S.kiMax, senmon:{ "Manganello":1, "Lotta":1 } };
+/* ── il ragazzo sale le scale ── */
+function renderArrivo(){
   cont.innerHTML = `
   <article class="scena">
-    <img src="${sc.img}" alt="${sc.alt}">
+    <img src="img/soglia.jpg" alt="Una figura in controluce sulla soglia">
     <div class="scena-corpo">
-      ${tappeHtml()}
-      <p class="scena-tag">${sc.tag}</p>
-      <h2>${sc.titolo}</h2>
-      ${sc.testo.map(p=>`<p>${p}</p>`).join("")}
-      <div class="tavolo"><b>Come si gioca, al tavolo</b>${sc.tavolo}</div>
+      <p class="scena-tag">Mezzanotte e un quarto</p>
+      <h2>Il ragazzo sale le scale</h2>
+      <p>Sale a due a due e si ferma sull'ultimo gradino, quando vede l'acqua. Venticinque anni, fradicio, una giacca troppo leggera per stanotte.</p>
+      <p class="lui">«Me l'ha detto l'agente. Cos'è successo? Il nonno sta bene?»</p>
+      <p>Non aspetta la risposta. Guarda oltre le tue spalle, dentro casa, e poi di nuovo te.</p>
+      <p>Lo fai sedere al tavolo. L'agente si infila il cappuccio: scende alla volante a chiamare in centrale e a prendere i moduli del verbale, dice che ci mette dieci minuti. Restate soli.</p>
+      ${taccHtml()}
+      <div class="tiro-box">
+        <p class="tiro-come">Mentre tira fuori la sedia e si siede. <b>Ascolto ${S.attr.Ascolto}</b>: non per incastrarlo, per capire chi ti sei seduto davanti.</p>
+        <div class="bottoni"><button type="button" class="btn btn-forte" id="tira-lettura">🎲 Tira su Ascolto</button></div>
+        <div id="area-lettura" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-lettura"></div></div>
+      </div>
+      <div class="avanti-box" id="avanti-box"></div>
+    </div>
+  </article>`;
+  document.getElementById("tira-lettura").addEventListener("click", ev=>{
+    tira("Ascolto", "area-lettura", (fascia)=>{
+      const testi = {
+        k2:"Si siede sul bordo, di fianco, il corpo già girato verso la porta. Non è salito per sapere: è salito per sentire cosa sai tu.",
+        n3:"Parla di suo nonno al passato prima che tu gli abbia detto niente.",
+        ok:"Parla di suo nonno al passato prima che tu gli abbia detto niente.",
+        fl:"È solo un ragazzo bagnato che ha paura. Almeno, è tutto quello che riesci a vederci.",
+        n11:"Ti accorgi che stai cercando di capirlo e che lui se ne è accorto prima di te.",
+        k12:"Per un momento vedi solo un nipote a cui è morto il nonno, e ti tocca ricominciare da capo."
+      };
+      S.lettura = (fascia === "k2" || fascia === "n3" || fascia === "ok") ? "bene" : "male";
+      const m = META[fascia];
+      document.getElementById("esito-lettura").innerHTML =
+        `<div class="esito ${m.classe}"><h3>${m.titolo}</h3><p>${testi[fascia]}</p><div class="mecc"><b>Meccanica</b>${applica(fascia,"Ascolto")}</div>${S.lettura==="bene"?`<div class="mecc"><b>Quello che hai visto</b>Sai già che mente. Non è una prova: è il vantaggio di chi guarda per mestiere.</div>`:""}</div>`;
+      chip();
+      document.getElementById("avanti-box").innerHTML = `<button type="button" class="btn btn-forte" id="avanti">Cominci tu →</button>`;
+      document.getElementById("avanti").addEventListener("click", ()=>{ S.fase="interr"; S.scambio=0; render(); });
+    }, ev);
+  });
+}
+
+/* ── interrogatorio ── */
+function renderInterrogatorio(){
+  const sc = SCAMBI[S.scambio];
+  const apri = sc.apri ? `<p class="io">${sc.apri}</p>` : "";
+  cont.innerHTML = `
+  <article class="scena">
+    <img src="img/incalzo.jpg" alt="Il giovane seduto al tavolo di cucina, sotto la lampada">
+    <div class="scena-corpo">
+      <p class="scena-tag">L'interrogatorio · ${S.scambio+1} di ${SCAMBI.length} — ${sc.tema}</p>
+      <h2>${sc.tema.charAt(0).toUpperCase()+sc.tema.slice(1)}</h2>
+      ${apri}
+      <p class="lui">${sc.lui}</p>
+      <div id="scelte"></div>
+      <div id="esito-scambio"></div>
+      ${taccHtml()}
+      <div class="avanti-box" id="avanti-box"></div>
+    </div>
+  </article>`;
+  if (sc.tiro) return scambioTiro(sc);
+
+  const disponibili = (sc.opzioni||[]).filter(o => ho(o.carta) && (!o.serve || ho(o.serve)));
+  /* se due opzioni usano la stessa carta, tengo solo la prima disponibile */
+  const viste = {}, opz = [];
+  for (const o of disponibili){ if (viste[o.carta]) continue; viste[o.carta] = true; opz.push(o); }
+
+  const box = document.getElementById("scelte");
+  box.innerHTML = `<p class="scena-tag" style="color:var(--tenue)">Cosa gli metti sul tavolo</p><div class="bottoni">` +
+    opz.map((o,i)=>`<button type="button" class="btn" data-op="${i}">${rigaDi(o.carta)}</button>`).join("") +
+    `<button type="button" class="btn" data-op="-1">Lascio parlare lui<small>non metti niente sul tavolo</small></button></div>`;
+  box.querySelectorAll("[data-op]").forEach(b => b.addEventListener("click", ()=>{
+    box.querySelectorAll("[data-op]").forEach(x=>{ x.disabled = true; });
+    const i = parseInt(b.dataset.op, 10);
+    const dove = document.getElementById("esito-scambio");
+    if (i < 0){
+      dove.innerHTML = `<p>${sc.vuoto}</p><div class="niente">Non hai messo niente sul tavolo. Lui si allarga.</div>`;
+    } else {
+      const o = opz[i];
+      S.dette[o.carta] = true;
+      dove.innerHTML = `<p class="io">${o.frase}</p><p class="lui">${o.risposta}</p>` +
+        (o.chiude ? `<div class="chiuso">Gli si chiude una porta: <b>${o.chiude}</b></div>` : `<div class="niente">Non gli si chiude niente. Ha una risposta e la usa.</div>`);
+      if (o.chiude) S.chiusi++;
+    }
+    avantiScambio();
+    scrolla(dove);
+  }));
+}
+
+function rigaDi(id){
+  const v = S.tacc.find(x => x.id === id);
+  const t = v ? v.testo : id;
+  return `«…»<small>${t}</small>`;
+}
+
+function scambioTiro(sc){
+  const box = document.getElementById("scelte");
+  box.innerHTML = `
+    <div class="tiro-box">
+      <p class="tiro-come">Non per incastrarlo: per sentire dov'è che il racconto gli scappa di mano. <b>Ascolto ${S.attr.Ascolto}</b>.</p>
+      <div class="bottoni"><button type="button" class="btn btn-forte" id="tira-mezzora">🎲 Tira su Ascolto</button></div>
+      <div id="area-mezzora" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-mezzora"></div></div>
+    </div>`;
+  document.getElementById("tira-mezzora").addEventListener("click", ev=>{
+    tira("Ascolto", "area-mezzora", (fascia)=>{
+      const dove = document.getElementById("esito-mezzora");
+      let html = "", chiude = false;
+      if (fascia === "k2" || fascia === "n3"){
+        chiude = true;
+        html = `<p>Ha detto <b>la vasca</b>. Nessuno gli ha detto dov'è morto suo nonno: tu gli hai chiesto di una mezz'ora, non di un bagno.</p>
+                <p class="io">«Come fa a sapere della vasca?»</p>
+                <p class="lui">Resta a bocca aperta un secondo di troppo. «Me l'ha detto l'agente.» Ma l'agente è di là, e tu puoi chiamarlo adesso.</p>
+                <div class="chiuso">Gli si chiude una porta: <b>tutto. Da qui non torna indietro.</b></div>`;
+      } else if (fascia === "ok"){
+        chiude = true;
+        html = `<p>Parla al passato di cose che non può sapere, e ogni volta che dice «magari» guarda verso il bagno.</p>
+                <p class="io">«Lei sta indovinando troppo bene.»</p>
+                <p class="lui">«Sto solo dicendo quello che penso.» Ma da qui in avanti risponde a monosillabi.</p>
+                <div class="chiuso">Gli si chiude una porta: <b>che sia una persona qualsiasi che ha saputo la notizia.</b></div>`;
+      } else {
+        html = `<p>Le parole gli escono in fila e tu senti solo un ragazzo spaventato che parla troppo. Può darsi che sia proprio così.</p>
+                <p class="lui">Si asciuga la faccia con la manica e ti chiede se può bere.</p>
+                <div class="niente">Non hai sentito niente di utile.</div>`;
+      }
+      if (chiude) S.chiusi++;
+      dove.innerHTML = html + `<div class="mecc"><b>Meccanica</b>${applica(fascia,"Ascolto")}</div>
+        <div class="mecc"><b>Perché non basta</b>La mezz'ora non prova la morte: può essere uscito prima, e suo nonno essere morto dopo. Serve a fargli riempire un silenzio — quello che ci mette dentro è il vero indizio.</div>`;
+      chip();
+      avantiScambio();
+    }, ev);
+  });
+}
+
+function avantiScambio(){
+  const ultimo = (S.scambio >= SCAMBI.length - 1);
+  document.getElementById("avanti-box").innerHTML =
+    `<button type="button" class="btn btn-forte" id="avanti">${ultimo ? "Ti alzi →" : "Vai avanti →"}</button>`;
+  document.getElementById("avanti").addEventListener("click", ()=>{
+    if (ultimo){ S.fase = "scontro"; }
+    else S.scambio++;
+    render();
+  });
+}
+
+/* ── lo scontro (motore condiviso) ── */
+function renderScontro(){
+  const pg = { attr:S.attr, ki:S.ki, kiMax:S.kiMax, senmon:{ "Manganello":1, "Lotta":1 } };
+  const finale = S.chiusi >= 3
+    ? `«In piedi.» Non discute. Si alza appoggiandosi al tavolo, e per un attimo sembra quasi sollevato.`
+    : S.chiusi >= 1
+    ? `«In piedi. Continuiamo in centrale.» Ti guarda come si guarda una porta che si chiude.`
+    : `«Devo chiederle di venire con me.» Non hai niente e lo sapete tutti e due. Ma stanotte in quella vasca c'era suo nonno, e da qui non esce da solo.`;
+  cont.innerHTML = `
+  <article class="scena">
+    <img src="img/coltello.jpg" alt="Una mano stringe un coltello da cucina, nella penombra">
+    <div class="scena-corpo">
+      <p class="scena-tag">Le manette</p>
+      <h2>Un coltello in cucina</h2>
+      <p>${finale}</p>
+      <p>E poi guarda il lavello.</p>
+      <p>L'agente è ancora giù alla volante. Restate tu e lui, la luce al neon che frigge sopra i piatti sporchi. E il ragazzo smette di ragionare: con uno scatto <b>afferra il coltello</b> e te lo punta contro, la presa che trema. <em>«Stai indietro! STAI INDIETRO!»</em></p>
+      <p>Il manganello che avevi in tasca adesso è in mano. Tra voi c'è il tavolo; dietro di te, la porta. Un minuto, e un minuto qui dentro è un'eternità.</p>
       <div class="gs" id="scontro-intro">
         ${GenkaiScontro.schedaBreve(pg)}
-        <p class="regola">Arrivi a questo scontro col Ki che il caso ti ha lasciato: <b>${S.ki} su ${S.kiMax}</b>.${S.ki<=3?" Sei già oltre il limite: in combattimento il Genkai non scatta, ma il danno non si ferma — e la porta è dietro di te.":""}</p>
+        <p class="regola">Arrivi a questo scontro col Ki che la notte ti ha lasciato: <b>${S.ki} su ${S.kiMax}</b>.${S.ki<=3?" Sei già oltre il limite: in combattimento il Genkai non scatta, ma il danno non si ferma — e la porta è dietro di te.":""}</p>
         <div class="bottoni riga" style="margin-top:.8rem"><button type="button" class="btn btn-forte" id="scontro-via">Lo scontro comincia →</button></div>
       </div>
       <div id="scontro-flusso"></div>
@@ -635,69 +934,265 @@ function renderScontro(sc){
     ev.target.disabled = true;
     chipBox.hidden = true; stripScontro.hidden = false;
     GenkaiScontro.avvia({
-      flusso: document.getElementById("scontro-flusso"), stato: STATO_SCONTRO, pg, rigioca: false,
+      flusso: document.getElementById("scontro-flusso"), stato: STATO_SCONTRO, pg, rigioca:false,
       onFine: (esito, ki) => {
-        S.ki = ki; S.esitoScontro = esito; aggiornaChip();
-        S.indizi.push(esito==="fuga" ? "Ha tirato fuori un coltello: si è arreso ai rinforzi" : "Ha tirato fuori un coltello: resistenza e minaccia a pubblico ufficiale");
+        S.ki = ki; S.esitoScontro = esito; chip();
+        const arrestato = (esito === "vinto" || esito === "fuga");
         const box = document.getElementById("avanti-box");
-        box.innerHTML = `<button type="button" class="btn btn-forte" id="avanti">${esito==="morto" || esito==="aterra" ? "Il conto della notte →" : "Scena successiva →"}</button>`;
-        document.getElementById("avanti").addEventListener("click", ()=>{ S.scena++; render(); });
+        box.innerHTML = `<button type="button" class="btn btn-forte" id="avanti">${arrestato ? "Quello che viene dopo →" : "Il conto della notte →"}</button>`;
+        document.getElementById("avanti").addEventListener("click", ()=>{ S.fase = arrestato ? "dopo" : "finale"; render(); });
       }
     });
   });
 }
 
-function renderFinale(sc){
-  const sorobanFine = Math.min(9, Math.max(0, 5 + S.soroban));
-  const e = S.esitoScontro;
-  const racconto = e === "morto"
-    ? `<p>L'1:20 di notte. Il caso lo chiude qualcun altro: il collega che risale le scale di corsa, l'agente del kōban, il rapporto del medico legale che domani dirà della vasca quello che il tuo taccuino diceva già. Il ragazzo lo prendono sul pianerottolo, col coltello ancora in mano e la faccia di chi non ha capito niente. Tu resti in cucina, sotto il neon.</p>
-       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna — ma senza di te.</p>`
-    : e === "aterra"
-    ? `<p>L'1:20 di notte. Il caso lo chiude qualcun altro: il collega che risale le scale di corsa ti trova sul pavimento della cucina, vivo, e il ragazzo bloccato sul pianerottolo dall'agente del kōban, col coltello ancora in mano. La lite, la spinta, la vasca, lo straccio, le pantofole, la busta: te lo racconterà lui domani, in ospedale, leggendo dal tuo taccuino.</p>
-       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna — e tu ci sei ancora, per un pelo.</p>`
-    : e === "fuga"
-    ? `<p>L'1:20 di notte. Dietro la porta il ragazzo ha urlato per un minuto; poi ha sentito le sirene e ha aperto lui, il coltello posato sul tavolo e le mani alzate. Esce tra il collega e un agente del kōban, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
-       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>`
-    : `<p>L'1:20 di notte. Il ragazzo esce tra il collega e un agente del kōban, un braccio che gli pende dove l'ha preso il manganello, i polsi chiusi dietro la schiena, senza guardare nessuno. Il medico legale confermerà domani quello che il taccuino dice già adesso: la lite, la spinta, la vasca — e poi lo straccio, le pantofole, la busta.</p>
-       <p>Il capo ispettore aveva ragione: non tornava. Adesso torna.</p>`;
+/* ── dopo il coltello: il pianto, e quello che costa ── */
+function renderDopo(){
   cont.innerHTML = `
   <article class="scena">
-    <img src="${sc.img}" alt="${sc.alt}">
+    <img src="img/incalzo.jpg" alt="Il tavolo di cucina sotto la lampada">
     <div class="scena-corpo">
-      ${tappeHtml()}
-      <p class="scena-tag">${sc.tag}</p>
-      <h2>${sc.titolo}</h2>
+      <p class="scena-tag">Dieci minuti dopo</p>
+      <h2>Quello che resta in cucina</h2>
+      <p>Il coltello è dentro un sacchetto sul tavolo. Lui è seduto per terra, la schiena contro l'anta della cucina e i polsi chiusi davanti. Non urla più: guarda un punto del pavimento a mezzo metro dai suoi piedi.</p>
+      <p>Poi comincia a piangere, e non è il pianto di uno che ha paura della galera.</p>
+      <p class="lui">«Era l'unico che mi chiamava», dice. «Anche quando non lo chiamavo io. Chiamava lui.» Tira su col naso. «Non mi ricordo se gli ho detto qualcosa. Prima. Non mi ricordo.»</p>
+      <p>Fuori, le sirene salgono dal lungofiume. Hai un minuto, prima che questa stanza si riempia di gente.</p>
+      <div class="tiro-box">
+        <p class="tiro-come">Qui non devi fare niente: è il mondo che preme. È un <b>tiro di pressione</b> su <b>Distacco ${S.attr.Distacco}</b>, e la scala è diversa dal solito — fino al tuo Distacco reggi, da <b>dieci</b> in su la pressione ti erode.</p>
+        <div class="bottoni"><button type="button" class="btn btn-forte" id="tira-dopo">🎲 Tira su Distacco</button></div>
+        <div id="area-dopo" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-dopo"></div></div>
+      </div>
+      <div class="avanti-box" id="avanti-box"></div>
+    </div>
+  </article>`;
+  document.getElementById("tira-dopo").addEventListener("click", ev=>{
+    ev.currentTarget.disabled = true;
+    const area = document.getElementById("area-dopo");
+    area.hidden = false;
+    const dd = area.querySelectorAll(".dado"), sommaEl = area.querySelector(".somma");
+    dd.forEach(d=>d.classList.add("rotola"));
+    clearInterval(girando);
+    girando = setInterval(()=>{ dd.forEach(d=>{ d.textContent = 1+Math.floor(Math.random()*6); }); }, 80);
+    setTimeout(()=>{
+      clearInterval(girando);
+      dd.forEach(d=>d.classList.remove("rotola"));
+      const a = d6(), b = d6(); dd[0].textContent = a; dd[1].textContent = b;
+      const esito = pressione(a, b, "Distacco"), s = a+b;
+      sommaEl.innerHTML = `Somma <b>${s}</b> contro Distacco <b>${S.attr.Distacco}</b> — ${esito==="erode"?"<b>la pressione ti erode</b>":esito==="sforzo"?"mostri lo sforzo, ma nessun costo":"reggi"}`;
+      let testo, mecc;
+      if (esito === "regge"){
+        testo = "Resti in piedi dove sei, le mani lungo i fianchi, e aspetti che finisca. Non gli dici niente: certe volte non dire niente è l'unica cosa decente che ti resta da fare.";
+        mecc = "Fino al tuo Distacco: <b>reggi, nessun costo</b>. I tiri di pressione non hanno critici.";
+      } else if (esito === "sforzo"){
+        testo = "Ti giri verso la finestra e guardi il cortile bagnato finché non ha finito. Non è la stessa cosa che reggere. Ma da fuori non si vede.";
+        mecc = "Fra il tuo Distacco e il nove: <b>mostri lo sforzo, nessun costo meccanico</b>.";
+      } else {
+        S.ki = Math.max(1, S.ki - 1);
+        testo = "Ti siedi sul gradino della cucina, a un metro da lui, e per un minuto siete solo due persone in una stanza bagnata. Poi ti rialzi, perché è il tuo mestiere. Ma qualcosa te lo sei preso addosso.";
+        mecc = "Da dieci in su: <b>−1 Ki</b>. La pressione logora più spesso dei tiri normali, ma meno a fondo: mai gli attributi, solo il Ki.";
+      }
+      chip();
+      document.getElementById("esito-dopo").innerHTML =
+        `<div class="esito ${esito==="erode"?"brutto":esito==="sforzo"?"neutro":"buono"}"><p>${testo}</p><div class="mecc"><b>Il tiro di pressione</b>${mecc}</div></div>`;
+      crollo();
+    }, 750);
+  });
+}
+
+/* il Genkai, se ci sei arrivato — altrimenti si spiega lo stesso, perché è il cuore del gioco */
+function crollo(){
+  const dove = document.getElementById("esito-dopo");
+  const box = document.createElement("div");
+  if (S.ki <= 3){
+    S.genkai = true;
+    box.innerHTML = `
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--rosso);margin:1.4rem 0 .4rem">限界 — sei oltre il limite</h3>
+      <p>Quando ti rialzi la stanza si muove. Esci sul ballatoio per prendere aria e ti ritrovi seduto sul primo gradino, con le mani che non stanno ferme e il freddo del cemento che passa attraverso i pantaloni. Da qui sotto le sirene sembrano lontanissime.</p>
+      <p>L'agente ti trova lì mentre risale coi moduli. Non ti chiede niente. Si siede sul gradino accanto, tira fuori il pacchetto, se ne accende una e ti lascia il silenzio per un minuto buono.</p>
+      <p class="lui">«Ispettore. A quello di sotto ci penso io.» Ti mette una mano sulla spalla, due secondi. «Lei resti qui quanto le serve.»</p>
+      <div class="mecc"><b>Genkai 限界 — il crollo</b>Sotto Ki 3 il personaggio <b>crolla</b>: si gioca la scena della crisi, e finché il Ki resta lì sei fuori gioco. Non è una punizione: è il motivo per cui questo gioco si chiama così.</div>`;
+    dove.appendChild(box);
+    const b = document.createElement("div");
+    b.className = "bottoni";
+    b.innerHTML = `<button type="button" class="btn" id="prendi">Resti sul gradino con lui<small>e lui ti dà un punto del suo, che è una cosa che si paga</small></button>`;
+    box.appendChild(b);
+    document.getElementById("prendi").addEventListener("click", ev=>{
+      ev.currentTarget.disabled = true;
+      S.nasake = true;
+      S.ki = Math.min(S.kiMax, S.ki + 1);
+      chip();
+      const n = document.createElement("div");
+      n.innerHTML = `
+        <p>Restate lì, due sagome sotto il neon, mentre di sotto sbattono le portiere. Lui domani fa un altro turno e stanotte dormirà un'ora meno di quanto gli servirebbe. Non te lo dice.</p>
+        <div class="mecc"><b>Il sostegno nel crollo</b>Quando qualcuno è oltre il limite, un compagno può dargli <b>un punto del proprio Ki</b>: se lo toglie davvero, e la stanchezza se la porta a casa lui. Tu passi da ${S.ki-1} a <b>${S.ki}</b>.${S.ki>3?" Sei tornato sopra il limite: rientri in gioco." : " Sei ancora sotto: al tavolo si tira il rientro a ogni cambio di scena — due dadi letti singolarmente, ogni dado sotto il tuo Ki te ne ridà uno."}</div>
+        <div class="mecc"><b>情け Nasake — da non confondere</b>Il Nasake è un punto <b>avanzato</b>, e a chi lo dà non costa niente: nasce da un tiro eccezionale fatto con la scheda già piena. Su di te non puoi usarlo: lo dai a un altro <b>giocando la scena</b>, con un gesto o una parola.<br><b>Il Ki donato è un pezzo tuo, il Nasake è un pezzo avanzato.</b></div>`;
+      box.appendChild(n);
+      avantiDopo();
+    });
+  } else {
+    box.innerHTML = `
+      <p>L'agente risale con i moduli mentre ti stai infilando la giacca. Ti guarda un secondo di troppo, di quelli che a fine turno valgono una domanda intera.</p>
+      <p class="lui">«Tutto a posto, ispettore?»</p>
+      <p>«Sì.» E stanotte è anche vero.</p>
+      <div class="mecc"><b>限界 Genkai — quello che stanotte non è successo</b>Se il Ki fosse sceso a <b>tre o meno</b>, saresti rimasto seduto su quelle scale: sotto quella soglia il personaggio <b>crolla</b>, si gioca la scena della crisi e si resta fuori gioco finché qualcosa non rimette in piedi. Quel qualcosa, di solito, è un compagno che ti dà <b>un punto del suo Ki</b>: se lo toglie davvero, e la stanchezza se la porta a casa lui. Tu stanotte hai chiuso a <b>Ki ${S.ki}</b>, e ti sei portato a casa tutto.</div>
+      <div class="mecc"><b>情け Nasake — da non confondere</b>Il Nasake è un punto <b>avanzato</b>, e a chi lo dà non costa niente: nasce da un tiro eccezionale fatto con la scheda già piena. Su di te non puoi usarlo: lo dai a un altro <b>giocando la scena</b>, con un gesto o una parola.<br><b>Il Ki donato è un pezzo tuo, il Nasake è un pezzo avanzato.</b></div>`;
+    dove.appendChild(box);
+    avantiDopo();
+  }
+}
+function avantiDopo(){
+  document.getElementById("avanti-box").innerHTML = `<button type="button" class="btn btn-forte" id="avanti">Il conto della notte →</button>`;
+  document.getElementById("avanti").addEventListener("click", ()=>{ S.fase="finale"; render(); });
+}
+
+/* ── finale ── */
+function renderFinale(){
+  const e = S.esitoScontro;
+  const morto = (e === "morto"), aterra = (e === "aterra");
+  let racconto;
+  if (morto || aterra){
+    racconto = `<p>All'una e venti l'agente risale le scale di corsa. ${morto ? "Ti trova sul pavimento della cucina, e non c'è più niente da fare." : "Ti trova sul pavimento della cucina, vivo per un soffio, e il ragazzo bloccato sul pianerottolo."}</p>
+      <p>Il caso lo chiude qualcun altro, con quello che hai lasciato sul tavolo.</p>`;
+  } else if (S.chiusi >= 3){
+    racconto = `<p>Parla in cucina, con i polsi già stretti, e non si ferma più. Dice che era salito solo per chiedere. Che il nonno gli ha risposto che quella busta doveva bastargli due mesi. Che si è alzato per andarsene e il vecchio è andato in bagno a chiudere l'acqua, e che l'ha seguito continuando a urlare.</p>
+      <p>Dice che l'ha spinto una volta sola. Che poi l'ha girato e l'ha scosso e non respirava. Dice che l'acqua non l'ha chiusa perché non ci ha proprio pensato.</p>
+      <p>Il verbale lo scrivi in centrale alle quattro del mattino, e regge.</p>`;
+  } else if (S.chiusi >= 1){
+    racconto = `<p>Ammette di essere salito. Ammette la lite. Ammette la busta: «me li doveva».</p>
+      <p>Sulla vasca no. Sulla vasca ripete che è scivolato, che lui ha provato a tirarlo su, che non voleva. Lo ripete tre volte con le stesse parole e alla terza ci crede più di prima.</p>
+      <p>Basta per il fermo. Il resto lo dovrà tirare fuori qualcun altro, con i tempi che ci vogliono.</p>`;
+  } else {
+    racconto = `<p>Non ammette niente. Piange, e il pianto è vero: quello che piange non è la stessa cosa che nasconde, ma piange davvero.</p>
+      <p>Lo porti in centrale con quello che hai, che è quello che ti hanno dato: un referto e una vicina di ottantadue anni che ha sentito una voce.</p>
+      <p>Scendendo le scale ti volti a guardare la porta del terzo piano. L'acqua ha smesso di uscire.</p>`;
+  }
+  const etichetta = morto ? "☠ il coltello ha chiuso la porta" : aterra ? "🩹 a Ki 0: vivo, a terra" : S.chiusi>=3 ? "✓ confessione piena" : S.chiusi>=1 ? "◐ mezza ammissione" : "○ solo un fermo";
+
+  cont.innerHTML = `
+  <article class="scena">
+    <img src="img/manette.jpg" alt="Le manette ai polsi, nel corridoio">
+    <div class="scena-corpo">
+      <p class="scena-tag">Il conto della notte</p>
+      <h2>Quello che ti è costato</h2>
       ${racconto}
       <div class="conto">
-        <div><div class="num">気 ${S.ki}</div><div class="lbl">Ki rimasto (su 9)</div></div>
-        <div><div class="num">${e==="morto"?"☠":e==="aterra"?"🩹":e==="fuga"?"🚪":"✓"}</div><div class="lbl">${e==="morto"?"a Ki 0: morto":e==="aterra"?"a Ki 0: vivo, a terra":e==="fuga"?"scontro evitato":"arrestato"}</div></div>
-        <div><div class="num">${S.soroban>0?"+":""}${S.soroban}</div><div class="lbl">Soroban di stanotte</div></div>
-        <div><div class="num">${S.indizi.length}</div><div class="lbl">righe di taccuino</div></div>
-        ${S.nasake?`<div><div class="num">情 ${S.nasake}</div><div class="lbl">Nasake da donare</div></div>`:""}
+        <div><div class="num">気 ${S.ki}</div><div class="lbl">Ki rimasto (su ${S.kiMax})</div></div>
+        <div><div class="num">${S.chiusi}</div><div class="lbl">porte che gli hai chiuso</div></div>
+        <div><div class="num">${mie()}/${S.righe}</div><div class="lbl">righe di taccuino usate</div></div>
+        <div style="grid-column:1/-1"><div class="num" style="font-size:1.05rem">${etichetta}</div><div class="lbl">come è finita</div></div>
       </div>
-      <div class="mecc"><b>Il Soroban, a fine giornata</b>La scala 0–9 della scheda parte da ⑤: ogni critico o notevole la muove (2 → −2 · 3 → −1 · 11 → +1 · 12 → +2). Stanotte chiudi a <b>${sorobanFine}</b>. È un'altalena: com'è finita oggi decide da dove parte domani.</div>
-      ${S.ki<=3 && e!=="morto"?`<div class="genkai-riga">Chiudi la notte a 気 Ki ${S.ki}: <b>oltre il limite</b>. Al tavolo, il rientro si tira a fine caso — 2d6 come dadi singoli, ogni dado ≤ Ki restituisce un punto. Il crollo che dà il nome al gioco: 限界, il limite. Il vostro.</div>`:""}
-      ${taccuinoHtml(null)}
+      ${taccHtml()}
+      <div id="notte"></div>
       <div class="lezione">
-        <p><b>La lezione del mini-caso.</b> Sette tiri d'indagine, e nessuno ha mai fermato l'indagine: le pantofole, il pavimento, la tazza, la busta, la lite, la bugia si trovavano <em>comunque</em>. I dadi hanno deciso una cosa sola — <b>quanto della notte ti sei portato a casa</b>. Il Ki è il conto, il Soroban è l'altalena, il Gou è il dono che si paga.${e==="morto"?" E il coltello è l'unica scena in cui i dadi possono davvero chiudere la porta: GENKAI non è un gioco di combattimento, e andarsene era la mossa giusta.":e==="aterra"?" E il coltello, l'unica scena in cui i dadi possono chiudere la porta, l'ha lasciata aperta di un soffio: la regola opzionale del GM ti ha tenuto in vita — a terra.":e==="fuga"?" E davanti al coltello hai fatto la cosa più GENKAI di tutte: te ne sei andato.":" E il coltello, l'unica scena in cui i dadi possono davvero chiudere la porta, l'hai chiusa tu."} Questo è GENKAI.</p>
+        <p><b>La lezione del mini-caso.</b> In quella casa c'era tutto quello che serviva, e potevi guardare quanto volevi: nessun dado ti ha mai impedito di vedere qualcosa. Quello che i dadi hanno deciso è <b>quante righe potevi portarti dietro</b>, e in che stato ci arrivavi. ${S.gouUsato ? "Il Gou ti ha mostrato una cosa che nessun giudice accetterà mai, e te l'ha fatta pagare in Ki. " : "Il Gou non l'hai speso: te lo sei portato a casa intero, insieme al Ki. "}${morto||aterra ? "E il coltello ha fatto quello che fa il combattimento in GENKAI: ha chiuso la porta. Andarsene era una mossa buona." : "E il coltello alla fine è arrivato lo stesso, come arriva sempre quando qualcuno non ha più niente da perdere."}</p>
       </div>
-      <div class="bottoni" style="margin-top:1.2rem">
+      <div class="bottoni">
         <a class="btn btn-forte" href="/Pg">✨ Crea il tuo investigatore</a>
         <button type="button" class="btn" id="ricomincia">↻ Rigioca il caso</button>
       </div>
-      <p style="font-family:var(--sans);font-size:.82rem;color:var(--tenue);margin-top:.8rem">Rigiocalo: gli esiti escono sempre in ordine diverso, e le scelte — il Gou, l'ordine delle stanze, l'incalzo — cambiano il prezzo della notte.</p>
+      <p style="font-family:var(--sans);font-size:.82rem;color:var(--tenue);margin-top:.8rem">Rigiocalo guardando altrove: con tre righe sole, quello che scegli di scrivere cambia la notte.</p>
     </div>
   </article>`;
+  if (!morto) laNotte();
   document.getElementById("ricomincia").addEventListener("click", ()=>{
-    S.attr = { "Distacco":6, "Lucidità":7, "Ascolto":6, "Pazienza":5, "Silenzio":5, "Presenza":4 };
-    S.ki = 9; S.nasake = 0; S.soroban = 0; S.indizi = []; S.scena = 0; S.gouUsato = false; S.esitoScontro = null;
-    mazzo = []; ultima = null; ordineStanze = null;
     GenkaiCommenti.smonta(document.getElementById("commenti"));
-    render();
+    nuovoStato(); render();
   });
-  /* il modulo commenti compare solo qui, a caso concluso: durante le scene non deve vedersi */
-  GenkaiCommenti.monta(document.getElementById("commenti"), { pagina: "provalo", extra: () => "scena " + S.scena + "/" + SCENE_TOT + (S.esitoScontro ? " · scontro: " + S.esitoScontro : "") + " · Ki " + S.ki });
+  GenkaiCommenti.monta(document.getElementById("commenti"), {
+    pagina:"provalo",
+    extra: () => `${etichetta} · Ki ${S.ki} · ${S.chiusi} porte · ${mie()}/${S.righe} righe${S.gouUsato?" · Gou speso":""}`
+  });
+}
+
+/* ── la notte: il soroban e il recupero ── */
+function laNotte(){
+  const buona = S.soroban >= 5;
+  const box = document.getElementById("notte");
+  box.innerHTML = `
+    <h3 style="font-family:var(--sans);font-size:1rem;margin:1.6rem 0 .5rem">算盤 La notte</h3>
+    <p>Rientri che è quasi l'alba. Ti togli la giacca bagnata, ti siedi sul bordo del futon e resti lì un momento senza accendere la luce.</p>
+    <div class="mecc"><b>Il soroban della giornata</b>È un numero da 0 a 9, e ogni giornata parte da <b>5</b>: si muove solo sui risultati eccezionali (il 2 lo alza di due, il 3 di uno; l'11 lo abbassa di uno, il 12 di due). Oggi chiudi a <b>${S.soroban}</b>: ${buona ? "una giornata che regge, e stanotte dormi." : "una giornata storta, e il sonno lo sarà altrettanto."}</div>
+    <div class="tiro-box">
+      <p class="tiro-come">Il recupero notturno: <b>2d6</b>, e siccome il soroban è ${buona ? "cinque o più, prendi il <b>migliore</b>" : "sotto il cinque, prendi il <b>peggiore</b>"}. Quel numero sono i punti di Ki che ti tornano, e non si va mai oltre il massimo.</p>
+      <div class="bottoni"><button type="button" class="btn" id="tira-notte">🎲 Dormi</button></div>
+      <div id="area-notte" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="esito-notte"></div></div>
+    </div>`;
+  document.getElementById("tira-notte").addEventListener("click", ev=>{
+    ev.currentTarget.disabled = true;
+    const area = document.getElementById("area-notte"); area.hidden = false;
+    const dd = area.querySelectorAll(".dado"), sommaEl = area.querySelector(".somma");
+    dd.forEach(d=>d.classList.add("rotola"));
+    clearInterval(girando);
+    girando = setInterval(()=>{ dd.forEach(d=>{ d.textContent = 1+Math.floor(Math.random()*6); }); }, 80);
+    setTimeout(()=>{
+      clearInterval(girando);
+      dd.forEach(d=>d.classList.remove("rotola"));
+      /* l'1 si ritira sempre (canone) */
+      let a = d6(); while (a === 1) a = d6();
+      let b = d6(); while (b === 1) b = d6();
+      dd[0].textContent = a; dd[1].textContent = b;
+      const preso = buona ? Math.max(a,b) : Math.min(a,b);
+      const prima = S.ki;
+      S.ki = Math.min(S.kiMax, S.ki + preso);
+      const domani = S.soroban > 5 ? S.soroban - 1 : S.soroban < 5 ? S.soroban + 1 : 5;
+      sommaEl.innerHTML = `${a} e ${b} — prendi il ${buona?"migliore":"peggiore"}: <b>${preso}</b>`;
+      document.getElementById("esito-notte").innerHTML = `
+        <div class="esito ${preso>=4?"buono":preso>=2?"neutro":"brutto"}">
+          <p>${preso >= 5 ? "Dormi di un sonno pieno e senza sogni, di quelli che quasi non ti ricordi di esserti addormentato." : preso >= 3 ? "Dormi, con un paio di risvegli. Al secondo senti la pioggia che è ricominciata." : "Ti addormenti tardi e ti svegli presto, e in mezzo c'è quella cucina con il neon che frigge."}</p>
+          <div class="mecc"><b>Domattina</b>Recuperi <b>${preso} Ki</b>: da ${prima} a <b>${S.ki}</b> su ${S.kiMax}.${S.ki === S.kiMax ? " Sei di nuovo pieno." : " Non abbastanza per essere quello di ieri mattina."} Il soroban di domani non riparte da cinque: parte da <b>${domani}</b>, cioè da oggi avvicinato di uno verso il centro. Quello che ti succede oggi te lo porti a domani, e questo è il gioco.</div>
+        </div>`;
+      chip();
+    }, 750);
+  });
+}
+
+/* ═══════════ i due tiri d'ingresso, prima di tutto ═══════════ */
+function apriCasa(){
+  cont.innerHTML = `
+  <article class="scena">
+    <img src="img/porta.jpg" alt="Il corridoio buio dell'appartamento, visto dalla soglia">
+    <div class="scena-corpo">
+      <p class="scena-tag">Sulla soglia</p>
+      <h2>Prima di toccare qualsiasi cosa</h2>
+      <p>Ti togli le scarpe come si fa, e il calzino si bagna subito: l'acqua ti viene incontro tiepida, viene da lì da ore. Dentro, l'odore è un'altra cosa ancora — chiuso, cucina vecchia, e sotto quello qualcosa che conosci e che non si racconta a chi non fa questo mestiere.</p>
+      <p>La casa è tua per un po'. Di sotto, l'agente aspetta alla volante.</p>
+      <div id="secondo"></div>
+    </div>
+  </article>`;
+  secondoTiro();
+}
+function secondoTiro(){
+  const dove = document.getElementById("secondo");
+  dove.innerHTML = `
+    <div class="tiro-box">
+      <p class="tiro-come">Prima di toccare qualsiasi cosa ti fermi in mezzo alla stanza e la guardi tutta intera. <b>Lucidità ${S.attr.Lucidità}</b>: questo tiro non decide cosa trovi — puoi guardare tutto quello che vuoi — decide <b>quanto riesci a mettere agli atti</b> finché questa casa è tua.</p>
+      <div class="bottoni"><button type="button" class="btn btn-forte" id="t2">🎲 Tira su Lucidità</button></div>
+      <div id="area2" hidden><div class="dadi"><div class="dado">·</div><div class="dado">·</div></div><p class="somma"></p><div id="e2"></div></div>
+    </div>`;
+  document.getElementById("t2").addEventListener("click", ev=>{
+    tira("Lucidità", "area2", (fascia)=>{
+      const righe = (fascia==="k2"||fascia==="n3") ? 5 : fascia==="ok" ? 4 : (fascia==="n11"||fascia==="k12") ? 2 : 3;
+      S.righe = righe; S.righeDecise = true;
+      const testi = {
+        k2:"La stanza si divide da sola in cose da fotografare e cose da non toccare. Stanotte hai gli occhi buoni.",
+        n3:"Metodo: giri largo, guardi da fermo, e la casa comincia a parlare.",
+        ok:"Fotografi, misuri, confronti. Il mestiere fa il suo.",
+        fl:"L'acqua ti tira lo sguardo e ti fa perdere il filo due volte. Andrai avanti lo stesso, con meno spazio sul taccuino.",
+        n11:"Ti accorgi che stai guardando senza vedere. Succede a fine turno, e stanotte è successo a te.",
+        k12:"La stanchezza ti si mette davanti agli occhi come un vetro sporco. Da qui in avanti è tutto più stretto."
+      };
+      const m = META[fascia];
+      document.getElementById("e2").innerHTML = `
+        <div class="esito ${m.classe}"><h3>${m.titolo}</h3><p>${testi[fascia]}</p>
+          <div class="mecc"><b>Meccanica</b>${applica(fascia,"Lucidità")}</div>
+          <div class="mecc"><b>Il tuo taccuino</b>Hai <b>${righe} righe</b> tue, più le due che ti hanno già dato (il referto e la vicina). Guardare non costa niente: scrivere sì.</div>
+        </div>
+        <div class="avanti-box"><button type="button" class="btn btn-forte" id="entra">Entri in casa →</button></div>`;
+      chip();
+      document.getElementById("entra").addEventListener("click", ()=>{ S.fase="casa"; S.luogo="cucina"; render(); });
+    }, ev);
+  });
 }
 
 render();

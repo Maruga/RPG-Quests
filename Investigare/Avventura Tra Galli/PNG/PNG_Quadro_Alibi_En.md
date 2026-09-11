@@ -7,14 +7,14 @@
 | PNG | mer 11/02 21:21 (Kyoto Station) | ven 13/02 ~14:00 (Yamashina) | sab 14/02 22:30 (Kamigyō) | mar 17/02 ~18:00 (ospedale) | dom 22/02 23:00 (capannone) |
 |---|---|---|---|---|---|
 | **Saitō Gorō** (capo) | A cena a Osaka, ricevuta 21:30 | Dal commercialista a Kyoto | In villa, al telefono col figlio 22:15–22:40 | Di ritorno da Nara (ricevuta 17:00) | Al capannone, se nessuno l'ha avvisato; altrimenti in villa |
-| **Hayashi Tomoki** (logistica) | Al volante in zona Hachijō-ovest (Yui: «rientrato alle 23:30») | Al capannone, col fornitore di mangimi (alibi vero) | In auto a due isolati da Ōkubo (fuori 21:45–23:15) | A cena al Kameoka-tei 18:30–21:00 | Al capannone; oppure dal 21/02 al telefono per annullare |
+| **Hayashi Tomoki** (logistica) | Al volante in zona Hachijō-ovest (Yui: «rientrato alle 23:30») | Al capannone, col fornitore di mangimi (alibi vero) | In auto a due isolati da Ōkubo (fuori 21:30 – dopo mezzanotte) | A cena al Kameoka-tei 18:30–21:00 | Al capannone; oppure dal 21/02 al telefono per annullare |
 | **Kuroda Ryō** (esecutore) | Nel bagno del 3° piano | Nel retrobottega di Murakami | Al posto B-04, dietro un pilastro | In ospedale alle 17:40, in palestra alle 19:15 «sudato» | Al capannone se libero; in custodia se preso |
 | **Inagaki** (sergente corrotto) | In turno a Kameoka 15–23 | In turno 07–15; alle 15:30 al bar con Yamaguchi | A casa; alle 23:05 la chiamata di Hayashi | In turno 15–23 | Libero e col telefono acceso — o arrestato dal 21/02 |
 | **Yamaguchi** (agente corrotto) | In servizio a Kameoka | Al bar con Inagaki | A casa | In servizio | Come Inagaki: vanno presi insieme |
 | **Tachi Yūichirō** (testa di legno) | Al Kameoka-tei, servizio fino alle 21:30 | Al ristorante | Ristorante chiuso alle 21:30, poi a casa | Serve la cena a Hayashi | Alla cassa fino alle 21:30, come sempre (deve restarci) |
 | **Ōkubo Kenji** (prestanome consapevole) | A casa, TG delle 23:00 | In un business hotel vicino a Nijō | Colpito alla spalla, posto B-04 | Stanza 412 | Dimesso, verso Nagoya |
 | **Dr. Murakami Saburō** (veterinario) | A casa con Hiroko | **Ucciso** | — | — | — |
-| **Murakami Hiroko** (moglie) | A casa | A pranzo da un'amica; alle 16:30 trova il corpo | A casa con Aiko e Kenji | A casa | A casa |
+| **Murakami Hiroko** (moglie) | A casa | A pranzo da un'amica; alle 16:30 trova il corpo | A casa con Aiko e Yūsuke | A casa | A casa |
 | **Aoyagi Mariko** (amante) | Al Club Aoyagi 19:00–02:00 | A casa, dorme; parrucchiere alle 16:00 | Al club | Al club (o in partenza per Sapporo dal 18/02) | A Sapporo, o a Kyoto se protetta |
 | **Tachibana Setsuko** (moglie separata) | A Maizuru, lezione fino alle 20:00 | A Kyoto: Kōrin e notaio | In albergo a Kyoto | A Maizuru | A Maizuru |
 | **Nishimura Tatsuya** (prestanome, cameriere) | Al Kōrin, turno 18–02 | Al Kōrin chiuso, inventario | A casa con la madre | A casa con la madre (martedì) | Al Kōrin riaperto (dal 20/02) |
@@ -33,7 +33,7 @@
 | Sasaki Hideo | +1 | +1 | +1 | +1 | +1 | −2 se aggrediti |
 | Ōkubo Kenji | 0 | −1 | +1 | 0 | 0 | Honda: «lei deve dei soldi a qualcuno» |
 | Dr. Murakami Saburō | −1 | −1 | 0 | +1 | +1 | Solo il 12/02 |
-| Murakami Hiroko / Aiko / Kenji | 0 / 0 / 0 | 0 / −1 / −1 | +1 / 0 / 0 | +1 / +1 / −1 | +2 / +2 / 0 | Aiko solo con la madre |
+| Murakami Hiroko / Aiko / Yūsuke | 0 / 0 / 0 | 0 / −1 / −1 | +1 / 0 / 0 | +1 / +1 / −1 | +2 / +2 / 0 | Aiko solo con la madre |
 | Hayashi Tomoki | −1 | 0 | −1 | 0 | −1 | Con Honda si tradisce |
 | Kuroda Ryō | −2 | −1 | −1 | −1 | −2 | Odia l'autorità, teme Fujita |
 | Saitō Gorō | 0 | −1 | −1 | −2 | −1 | Parla solo col capo |

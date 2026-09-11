@@ -73,7 +73,39 @@ flash duro, colori desaturati, 4:3 (come i prompt de *Il Giudice*).
 | `TelecameraAssassinio.png` | **solo GM** (mood) | non canonica per gli stessi motivi (l'arma semiautomatica è giusta) |
 | `Copertina.png` | copertina generica | non raffigura una scena del caso |
 
-Da produrre ancora: IMG-03 (il gallo di sangue **dentro** il cubicolo, piccolo, col dito), IMG-04, IMG-05, e tutto il resto dell'elenco.
+### ✅ FATTE (2026-09-11) — l'elenco è chiuso
+
+Generate con **gpt-image-2** via `bia_image_generate` (qualità media; ~2,9 $ in tutto, ritratti compresi) e
+archiviate in `Immagini/`. **Indice visivo: `Immagini/_GALLERIA.html`** — aprila nel browser, c'è tutto con
+didascalia e destinazione.
+
+| Sottocartella | Contenuto |
+|---|---|
+| `Immagini/Scena/` | IMG-01 · IMG-03 · IMG-04 · IMG-05 · IMG-06 · IMG-13 · IMG-15 · IMG-16 |
+| `Immagini/Reperti/` | IMG-09 · IMG-10 · IMG-12 · IMG-14 |
+| `Immagini/Luoghi/` | IMG-17 · IMG-18 · IMG-19 (sera del combattimento) · IMG-19b (vuoto, di giorno) · IMG-20 · IMG-21 · IMG-22 · IMG-23 · IMG-24 · IMG-25 · **IMG-26** (un gallo del giro, aggiunta) |
+| `Immagini/Ritratti/` | 29 ritratti PNG, tutti in **foto tessera** con la stessa luce: in fila non si distingue il criminale |
+| `Immagini/_scarti/` | tre versioni sostituite, tenute per scelta (vedi sotto) |
+
+**Tre sono diventate handout** (prima erano solo previste a voce): **H-02c** il disegno col sangue (il verbale
+H-02, reperto 21, prometteva «vedi allegato fotografico» e l'allegato non c'era) · **H-12b** il retrobottega del
+veterinario · **H-15b** l'identikit. Tutte e tre in una pagina A4, verificate.
+
+**IMG-08 (il taccuino) non è stata generata**: il modello scrive kanji finti illeggibili, e la pagina leggibile
+esiste già come handout H-09 sulla base della **tua** fotografia. Se la vuoi come immagine, si fa con PIL.
+
+**Il disegno col sangue (IMG-03), quattro tentativi** — rilievo dell'autore, 2026-09-11: *«mi sembra troppo fatto
+bene per uno che sta per morire, sembra disegnato da un sobrio e tranquillo con tutto il tempo che vuole»*.
+Quella buona è la quarta: **rozza, a dito, una dozzina di tratti grossi e storti**, e con i **due speroni
+incrociati** che il canone chiede (Storia: «un gallo stilizzato con due speroni sovrapposti»). Di conseguenza è
+cambiato anche il testo: il verbale H-02 non dice più «tratto continuo e regolare» ma *«rozzo, non però casuale:
+nessun tentativo cancellato, nessuna linea inutile»* — che dice la stessa cosa e regge alla foto. La misura è
+passata da 12 a **circa 20 cm**, quella vera nella fotografia.
+
+**Scarti, se preferisci un'altra versione**: `IMG-03_disegno_grande` (bella ma pulita e alta ~40 cm) ·
+`IMG-03_disegno_pulito` (ancora troppo ordinata) · `IMG-03_disegno_senza_speroni` (rozza giusta, ma senza il
+segno dei due speroni) · `IMG-15_bocconi` (il veterinario prono, mentre H-12 dice «riverso sul fianco») ·
+`IMG-20_vicolo` (Kameoka-tei come vicolo di città: si confondeva con Gion). Si scambia il file e si rigenera.
 
 ### Set forense Kyoto Station (allegato al briefing, con H-01/H-02)
 

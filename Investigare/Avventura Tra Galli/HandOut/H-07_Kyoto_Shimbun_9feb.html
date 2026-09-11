@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><title>H-07 — Tra Galli</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace; }
+.doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
+       font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
+.doc.last { page-break-after:auto; }
+.classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
+           padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
+.head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
+.head .ente { font-size:12.5px; font-weight:bold; letter-spacing:1px; }
+.head .ente-jp { font-size:10px; color:#4a4740; letter-spacing:3px; margin-top:1px; }
+.head .tipo { font-size:14px; font-weight:bold; margin-top:7px; letter-spacing:1.5px; }
+.head .sub { font-size:10px; color:#4a4740; margin-top:2px; }
+.meta { display:grid; grid-template-columns:auto 1fr auto 1fr; gap:1px 8px; font-size:10.2px;
+        border:1px solid #b5b0a2; padding:5px 7px; margin-bottom:9px; background:#f6f4ec; }
+.meta b { color:#4a4740; font-weight:normal; }
+.sec { margin:9px 0 3px; font-size:11.5px; font-weight:bold; border-bottom:1px solid #b5b0a2; padding-bottom:1.5px; }
+p { margin:4px 0; text-align:justify; }
+ul,ol { margin:4px 0 4px 16px; padding:0; }
+li { margin:1.5px 0; }
+table { width:100%; border-collapse:collapse; font-size:10.2px; margin:5px 0; }
+th,td { border:1px solid #b5b0a2; padding:2.5px 5px; text-align:left; vertical-align:top; }
+th { background:#eae7dc; font-weight:bold; }
+td.n { text-align:right; }
+.box { border:1px solid #15140f; padding:6px 8px; margin:7px 0; background:#f4f2e8; }
+.box.warn { border-left:4px solid #8c1c13; }
+.nota { font-size:10.2px; color:#3a382f; border-left:3px solid #b5b0a2; padding:3px 0 3px 8px; margin:6px 0; }
+.firma { margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:16px; font-size:10px; }
+.firma div { border-top:1px solid #6b675c; padding-top:2px; color:#4a4740; }
+.timbro { position:absolute; right:20mm; bottom:20mm; width:30mm; height:30mm; border:2px solid #8c1c13;
+          border-radius:50%; color:#8c1c13; display:flex; align-items:center; justify-content:center;
+          text-align:center; font-size:8.5px; line-height:1.25; transform:rotate(-13deg); opacity:.72; }
+.mono-blk { font-family:"Courier New",monospace; font-size:10.5px; white-space:pre-wrap; background:#f2f0e6;
+            border:1px solid #b5b0a2; padding:6px 8px; margin:5px 0; }
+.hand { font-family:"Segoe Script","Comic Sans MS",cursive; font-size:12px; }
+.jp { font-family:"Yu Mincho","MS Mincho",serif; }
+.small { font-size:9.6px; color:#4a4740; }
+.center { text-align:center; }
+/* giornale */
+.news { background:#f7f3e6; }
+.news .testata { text-align:center; border-bottom:3px double #15140f; padding-bottom:5px; margin-bottom:7px; }
+.news .testata .jp { font-size:27px; letter-spacing:9px; font-weight:bold; }
+.news .testata .it { font-size:9.5px; letter-spacing:2px; color:#4a4740; margin-top:2px; }
+.news .cols { column-count:2; column-gap:8mm; column-rule:1px solid #c9c3b2; font-family:Georgia,serif; font-size:10.4px; text-align:justify; }
+.ad { border:2px solid #15140f; padding:7px 9px; margin:6px 0; background:#fffdf4; break-inside:avoid; }
+.ad .nome { text-align:center; font-size:15px; font-weight:bold; letter-spacing:2px; font-family:"Yu Mincho","MS Mincho",serif; }
+.ad .claim { text-align:center; font-size:10px; margin:2px 0 5px; color:#3a382f; }
+.ad table { font-size:10px; margin:3px 0; }
+.ad td { border:none; border-bottom:1px dotted #b5b0a2; padding:2px 3px; }
+.ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
+@media print {
+  body { background:#fff; }
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  .doc.last { page-break-after:auto; }
+}
+</style></head><body><div class="doc last news"><div class="testata"><div class="jp">京 都 新 聞</div><div class="it">KYOTO SHIMBUN · Lunedì 9 febbraio 1998 · Edizione del mattino · pag. 14 — ANNUNCI E RISTORAZIONE</div></div><div class="ad" style=""><div class="nome jp">亀 岡 亭</div><div style="height:26mm;border:1px solid #b5b0a2;background:#e9e5d8;display:flex;align-items:center;justify-content:center;font-size:8px;color:#8a8577;margin:3px 0">[ fotografia del locale — sempre la stessa ]</div><div class="claim">Ristorante Kameoka-tei — Honmachi, Kameoka · soba e tempura dal 1978 · tel. 0771-24-5512</div><div class="promo">PROMOZIONE SPECIALE DEL 22 FEBBRAIO</div><table><tr><td>Pollo fritto, salsa yuzu e sesamo</td><td class='jp' style='width:26%'>柚子・胡麻</td><td class='n' style='width:14%'><b>−4%</b></td></tr><tr><td>Yakitori, salsa miso e zenzero</td><td class='jp' style='width:26%'>味噌・生姜</td><td class='n' style='width:14%'><b>−6%</b></td></tr><tr><td>Pollo al vapore, salsa aceto nero e prugna</td><td class='jp' style='width:26%'>黒酢・梅</td><td class='n' style='width:14%'><b>−5%</b></td></tr><tr><td>Pollo nanban, salsa agrodolce e senape</td><td class='jp' style='width:26%'>甘酢・辛子</td><td class='n' style='width:14%'><b>−3%</b></td></tr><tr><td>Pentola di pollo, salsa soia e pepe sanshō</td><td class='jp' style='width:26%'>醤油・山椒</td><td class='n' style='width:14%'><b>−7%</b></td></tr><tr><td>Oyakodon, salsa brodo e shiso</td><td class='jp' style='width:26%'>出汁・紫蘇</td><td class='n' style='width:14%'><b>−8%</b></td></tr><tr><td>Pollo teriyaki, salsa peperoncino e ponzu</td><td class='jp' style='width:26%'>唐辛子・ポン酢</td><td class='n' style='width:14%'><b>−5%</b></td></tr></table><div class="small center">Menù della sera a prezzo ridotto — si prega di prenotare</div></div><div class="cols"><div style="font-size:12.5px;font-weight:bold;margin-bottom:3px">Ristorazione, un inverno in salita</div><p style="margin-top:0">Le associazioni di categoria della città stimano in un dodici per cento il calo degli incassi nel settore della ristorazione tradizionale rispetto allo stesso periodo dell'anno passato. Pesano, secondo gli operatori, la contrazione dei pranzi di lavoro e la prudenza delle famiglie. «I locali storici reggono, i piccoli no» osserva il rappresentante degli esercenti di Higashiyama. Cresce invece il ricorso alle promozioni serali a prezzo ridotto, formula fino a ieri estranea alla cucina di Kyoto.</p><div style="font-size:12.5px;font-weight:bold;margin:7px 0 3px">Kameoka, sopralluogo sull'argine dell'Hozu</div><p style="margin-top:0">Tecnici della prefettura hanno completato il sopralluogo annuale sugli argini del fiume nella zona di Sogabe. Nessuna criticità rilevata. Prosegue lo spopolamento agricolo dell'area: nell'ultimo decennio quasi un quarto dei capannoni e dei depositi risulta dismesso o inutilizzato.</p><div style="font-size:11.5px;font-weight:bold;margin:7px 0 2px;border-top:1px solid #c9c3b2;padding-top:4px">PICCOLI ANNUNCI</div><b>SARTORIA MIYAKO</b> — Rifacimento orli e riparazioni. Consegna in giornata. Shijō-dōri. Tel. 075-221-0043.<br><br><b>TAXI HOZU</b> — Sei vetture, servizio notturno su prenotazione in tutta la zona di Kameoka. Tel. 0771-22-3030.<br><br><b>OSTERIA MARUYAMA</b> — Nuovo menù invernale a base di anatra. Chiuso il mercoledì. Gion.<br><br><b>SI CERCA</b> personale di sala, anche prima esperienza, zona Pontochō. Presentarsi il pomeriggio.<br><br><b>MACELLERIA TANI</b> — Pollame di fattoria selezionato, consegne a domicilio per ristorazione. Nishiki.<br><br><b>SCUOLA DI CALLIGRAFIA</b> — Corsi serali per adulti, iscrizioni aperte. Kawaramachi.<br><br><b>VENDESI</b> furgone Toyota, 1989, buono stato, gomme nuove. Trattabile. Uji.<br><br><b>ONORANZE FUNEBRI HIGASHI</b> — Assistenza completa, servizio 24 ore.<br><br><b>CLINICA VETERINARIA</b> — Visite su appuntamento, anche domenica mattina. Yamashina.<br><br><b>PACHINKO SASAKI</b> — Nuove macchine in sala. Aperto fino a mezzanotte. Kawaramachi-dōri.</div></div></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><title>H-05 — Tra Galli</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace; }
+.doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
+       font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
+.doc.last { page-break-after:auto; }
+.classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
+           padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
+.head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
+.head .ente { font-size:12.5px; font-weight:bold; letter-spacing:1px; }
+.head .ente-jp { font-size:10px; color:#4a4740; letter-spacing:3px; margin-top:1px; }
+.head .tipo { font-size:14px; font-weight:bold; margin-top:7px; letter-spacing:1.5px; }
+.head .sub { font-size:10px; color:#4a4740; margin-top:2px; }
+.meta { display:grid; grid-template-columns:auto 1fr auto 1fr; gap:1px 8px; font-size:10.2px;
+        border:1px solid #b5b0a2; padding:5px 7px; margin-bottom:9px; background:#f6f4ec; }
+.meta b { color:#4a4740; font-weight:normal; }
+.sec { margin:9px 0 3px; font-size:11.5px; font-weight:bold; border-bottom:1px solid #b5b0a2; padding-bottom:1.5px; }
+p { margin:4px 0; text-align:justify; }
+ul,ol { margin:4px 0 4px 16px; padding:0; }
+li { margin:1.5px 0; }
+table { width:100%; border-collapse:collapse; font-size:10.2px; margin:5px 0; }
+th,td { border:1px solid #b5b0a2; padding:2.5px 5px; text-align:left; vertical-align:top; }
+th { background:#eae7dc; font-weight:bold; }
+td.n { text-align:right; }
+.box { border:1px solid #15140f; padding:6px 8px; margin:7px 0; background:#f4f2e8; }
+.box.warn { border-left:4px solid #8c1c13; }
+.nota { font-size:10.2px; color:#3a382f; border-left:3px solid #b5b0a2; padding:3px 0 3px 8px; margin:6px 0; }
+.firma { margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:16px; font-size:10px; }
+.firma div { border-top:1px solid #6b675c; padding-top:2px; color:#4a4740; }
+.timbro { position:absolute; right:20mm; bottom:20mm; width:30mm; height:30mm; border:2px solid #8c1c13;
+          border-radius:50%; color:#8c1c13; display:flex; align-items:center; justify-content:center;
+          text-align:center; font-size:8.5px; line-height:1.25; transform:rotate(-13deg); opacity:.72; }
+.mono-blk { font-family:"Courier New",monospace; font-size:10.5px; white-space:pre-wrap; background:#f2f0e6;
+            border:1px solid #b5b0a2; padding:6px 8px; margin:5px 0; }
+.hand { font-family:"Segoe Script","Comic Sans MS",cursive; font-size:12px; }
+.jp { font-family:"Yu Mincho","MS Mincho",serif; }
+.small { font-size:9.6px; color:#4a4740; }
+.center { text-align:center; }
+/* giornale */
+.news { background:#f7f3e6; }
+.news .testata { text-align:center; border-bottom:3px double #15140f; padding-bottom:5px; margin-bottom:7px; }
+.news .testata .jp { font-size:27px; letter-spacing:9px; font-weight:bold; }
+.news .testata .it { font-size:9.5px; letter-spacing:2px; color:#4a4740; margin-top:2px; }
+.news .cols { column-count:2; column-gap:8mm; column-rule:1px solid #c9c3b2; font-family:Georgia,serif; font-size:10.4px; text-align:justify; }
+.ad { border:2px solid #15140f; padding:7px 9px; margin:6px 0; background:#fffdf4; break-inside:avoid; }
+.ad .nome { text-align:center; font-size:15px; font-weight:bold; letter-spacing:2px; font-family:"Yu Mincho","MS Mincho",serif; }
+.ad .claim { text-align:center; font-size:10px; margin:2px 0 5px; color:#3a382f; }
+.ad table { font-size:10px; margin:3px 0; }
+.ad td { border:none; border-bottom:1px dotted #b5b0a2; padding:2px 3px; }
+.ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
+@media print {
+  body { background:#fff; }
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  .doc.last { page-break-after:auto; }
+}
+</style></head><body><div class="doc last "><div class="classif">RISERVATO</div><div class="head"><div class="ente">UNIVERSITÀ DI KYOTO — Istituto di Medicina Legale</div><div class="ente-jp jp">京都大学 法医学教室</div><div class="tipo">RELAZIONE DI AUTOPSIA GIUDIZIARIA</div><div class="sub">Su autorizzazione del Giudice del Tribunale distrettuale di Kyoto, richiesta dalla Procura</div></div><div class="meta"><b>Referto n.</b><span>ML-98/0079</span><b>Esame</b><span>12/02/1998, ore 09:00–12:30</span><b>Cadavere</b><span>TACHIBANA Eiji, anni 47</span><b>Settore</b><span>Dr. Yagi Kenta</span><b>Rinvenimento</b><span>11/02/1998, ore 22:08</span><b>Identificazione</b><span>Coniuge, 12/02 ore 15:00 (dopo l'esame)</span></div><div class="sec">Dati generali</div><p>Soggetto di sesso maschile, cm 174, kg 71, costituzione normolinea, buono stato di nutrizione. Epoca della morte, dai fenomeni cadaverici e dalla temperatura: <b>compresa fra le ore 21:00 e le 21:40 dell'11/02</b>, con miglior stima <b>21:20–21:25</b>.</p><div class="sec">Lesività da arma da fuoco</div><table><tr><th style='width:12%'>N.</th><th>Sede d'ingresso</th><th>Tramite</th><th style='width:26%'>Esito</th></tr><tr><td>1</td><td>Emitorace sx, 4° spazio intercostale</td><td>Antero-posteriore, lievemente discendente</td><td>Lacerazione del ventricolo sx</td></tr><tr><td>2</td><td>Emitorace sx, 5° spazio intercostale</td><td>Antero-posteriore</td><td>Lacerazione polmonare, emotorace</td></tr><tr><td>3</td><td>Regione sternale, terzo medio</td><td>Antero-posteriore</td><td>Frattura sternale, aorta ascendente</td></tr></table><p>I tre fori d'ingresso sono raggruppati in un'area di <b>circa 25 cm</b>. <b>Assenza di alone di affumicatura e di tatuaggio</b> sulla cute: i colpi <b>non sono stati esplosi a contatto con il corpo</b>, ma con un diaframma rigido interposto (il pannello della porta), posto a brevissima distanza — coerentemente con le tracce di polvere da sparo rilevate sul <b>lato esterno</b> della lamiera (cfr. verbale KS-98/0212-04). Recuperati <b>due proiettili</b> deformati, di calibro nominale <b>9 mm</b> (determinazione del tipo rimessa alla Sezione Balistica), trasmessi al medesimo ufficio; il terzo è transitato.</p><div class="sec">Causa e modalità della morte</div><p><b>Causa</b>: shock emorragico acuto da lesione cardio-aortica. <b>Mezzo</b>: arma da fuoco corta. <b>Modalità</b>: <b>omicidiaria</b>. La sopravvivenza dopo il primo colpo è stimabile in <b>60–90 secondi</b> di coscienza residua, con progressiva perdita della forza muscolare.</p><div class="sec">Ulteriori reperti</div><ul><li><b>Nessuna lesione da difesa</b> a mani e avambracci. Nessun segno di colluttazione.</li><li>Imbrattamento ematico del <b>polpastrello dell'indice destro</b>, con residui compatibili con il tracciato rinvenuto sul pavimento.</li><li>Esame tossicologico: <b>negativo</b> per stupefacenti; alcolemia 0,2 g/l (compatibile con un bicchiere a cena); tracce di <b>bromazepam</b> (Lexotan) a dosaggio terapeutico.</li><li>Contenuto gastrico: pasto leggero assunto fra i <b>trenta e i novanta minuti</b> prima del decesso.</li></ul><div class="nota"><b>Osservazione del settore.</b> La sequenza è rapida, ma la rosa è ampia per la distanza alla quale i colpi sono stati esplosi: chi ha sparato conosceva la posizione del bersaglio dietro la porta e non ha esitato fra un colpo e l'altro, pur senza prendere la mira. Segnalo alla Squadra che la <b>coscienza residua di circa un minuto</b> è compatibile con un'azione volontaria e ordinata della vittima nei secondi successivi: quanto è stato tracciato sul pavimento non è un movimento agonico.</div><div class="firma"><div>Il settore — Dr. Yagi Kenta</div><div>Istituto di Medicina Legale</div></div><div class="timbro">京都大学<br>法医学教室<br>1998</div></div></body></html>

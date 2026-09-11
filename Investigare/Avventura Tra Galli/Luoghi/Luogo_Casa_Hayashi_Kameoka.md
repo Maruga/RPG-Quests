@@ -56,11 +56,11 @@ Appartamento ordinato, arredamento moderno IKEA-style. Soggiorno con divano, TV 
 | Data | Cosa dice di Tomoki | Come si verifica |
 |---|---|---|
 | 11/02 sera | «È tornato alle sette, abbiamo cenato; verso le otto e mezza è uscito "per lavoro", è rientrato alle undici e mezza e aveva fame» | Solo lei. È la crepa nell'alibi di Hayashi |
-| 14/02 sera | «È sceso per le sigarette verso le dieci meno un quarto, è tornato dopo le undici» | Solo lei |
+| 14/02 sera | «È sceso per le sigarette verso le nove e mezza, è tornato dopo mezzanotte» | Solo lei. Sono quasi tre ore: bastano per andare a Kyoto e tornare |
 | 16/02 | «Mi ha detto: se qualcuno ti chiede di me, non sai niente» | — |
 
 **D-24 — Deposizione** (a casa, dopo l'arresto di Hayashi o in una visita discreta dal 15/02; verbalizza Yamada, meglio se con Sato o Fujita)
-> «Suzuki Yui, ventotto anni, commessa a Kameoka. Tomoki e io stiamo insieme da tre anni, conviviamo da due. Lui lavora per la società del signor Saitō, terreni, un ristorante, cose così; torna quasi sempre per cena. Mercoledì undici è tornato alle sette, abbiamo mangiato, poi verso le otto e mezza ha detto "devo uscire per lavoro" ed è rientrato alle undici e mezza, aveva fame, gli ho scaldato il riso. Sabato quattordici è sceso "per le sigarette" verso le dieci meno un quarto ed è tornato dopo le undici; non ci ho fatto caso, fuma sempre. Ha due telefoni: quello dell'azienda e uno piccolo "per il lavoro", che tiene nell'armadio e usa in bagno con l'acqua aperta — pensavo a un'altra donna, mi vergogno a dirlo. Negli ultimi giorni non dormiva. Lunedì sedici ha detto: "se qualcuno ti chiede di me, non sai niente". È vero: non so niente. Cosa ha fatto?»
+> «Suzuki Yui, ventotto anni, commessa a Kameoka. Tomoki e io stiamo insieme da tre anni, conviviamo da due. Lui lavora per la società del signor Saitō, terreni, un ristorante, cose così; torna quasi sempre per cena. Mercoledì undici è tornato alle sette, abbiamo mangiato, poi verso le otto e mezza ha detto "devo uscire per lavoro" ed è rientrato alle undici e mezza, aveva fame, gli ho scaldato il riso. Sabato quattordici è sceso "per le sigarette" verso le nove e mezza ed è tornato dopo mezzanotte; non ci ho fatto caso, fuma sempre. Ha due telefoni: quello dell'azienda e uno piccolo "per il lavoro", che tiene nell'armadio e usa in bagno con l'acqua aperta — pensavo a un'altra donna, mi vergogno a dirlo. Negli ultimi giorni non dormiva. Lunedì sedici ha detto: "se qualcuno ti chiede di me, non sai niente". È vero: non so niente. Cosa ha fatto?»
 
 Omette niente: non sa niente. Gli orari li dà senza capire cosa valgono.
 

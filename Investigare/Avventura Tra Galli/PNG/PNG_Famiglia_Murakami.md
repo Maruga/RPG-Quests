@@ -27,7 +27,7 @@
 |---|---|---|---|
 | 11/02 sera | A casa con il marito (cena 19:30, TV fino alle 22:00) | Vera | Aiko, in camera sua ma in casa |
 | 13/02 | Mattina al mercato di Yamashina, pranzo a casa di un'amica vedova, alle 16:30 allo studio: trova il corpo | Vera | I banchi del mercato, l'amica; la telefonata al 119 dal telefono dell'ambulatorio (16:34) |
-| 14–17/02 | A casa con Aiko e, dalla notte del 13, con Kenji | Vera | I figli, la vicina Sig.ra Yoshioka |
+| 14–17/02 | A casa con Aiko e, dalla notte del 13, con Yūsuke | Vera | I figli, la vicina Sig.ra Yoshioka |
 
 ### Come si comporta
 - **Primo contatto** (13/02 sera): sotto shock, parla a frammenti, ha bisogno di pause; il medico di famiglia le dà un sedativo. Non è in grado di firmare niente prima del 14/02
@@ -47,10 +47,10 @@ Omette: niente di ciò che sa. Non sa dei galli, del debito di ¥6,8 mln, dei ¥
 
 ---
 
-## Murakami Kenji — Figlio maggiore
+## Murakami Yūsuke — Figlio maggiore
 
 ### Anagrafica
-- **Nome**: Murakami Kenji (村上 健次)
+- **Nome**: Murakami Yūsuke (村上 裕介)
 - **Età**: 19 anni
 - **Residenza**: dormitorio universitario a Tokyo, **Università Waseda** (1° anno, Facoltà di Scienze Politiche)
 - **Stato civile**: single
@@ -125,28 +125,28 @@ Omette: niente. Le piume e l'odore di stalla sono i galli del Nitōgun curati ne
 
 ## En
 
-| PG | Hiroko | Aiko | Kenji | Perché |
+| PG | Hiroko | Aiko | Yūsuke | Perché |
 |---|---|---|---|---|
-| Yamamoto | 0 | 0 | 0 | Il capo: Hiroko lo rispetta, Aiko ne ha soggezione, Kenji lo tratta da pari |
-| Honda | 0 | −1 | −1 | Diretto: con Aiko troppo; Kenji lo prende per un poliziotto di strada |
+| Yamamoto | 0 | 0 | 0 | Il capo: Hiroko lo rispetta, Aiko ne ha soggezione, Yūsuke lo tratta da pari |
+| Honda | 0 | −1 | −1 | Diretto: con Aiko troppo; Yūsuke lo prende per un poliziotto di strada |
 | Nakamura | +1 | 0 | 0 | La pazienza con Hiroko paga; Aiko lo trova «serio» |
-| Sato | +1 | +1 | −1 | Giovane: Hiroko lo tratta da figlio, Aiko si fida; Kenji guarda dall'alto in basso un agente scelto della sua età |
+| Sato | +1 | +1 | −1 | Giovane: Hiroko lo tratta da figlio, Aiko si fida; Yūsuke guarda dall'alto in basso un agente scelto della sua età |
 | Fujita | +2 | +2 | 0 | *Tocco del Medico* su Hiroko, gentilezza su Aiko: è l'unica che Aiko chiede di rivedere |
 
-Con gli altri: Hiroko → il marito +2 (era +4, il silenzio l'ha consumato) · Aiko → il padre **+4** · Kenji → il padre −1, +1 dopo il funerale (rimorso) · Hiroko → Tachibana (vittima) **−3** appena capisce chi era · la famiglia → il Nitōgun: paura senza volto · la vicina Sig.ra Yoshioka +1 (porta da mangiare tutti i giorni).
+Con gli altri: Hiroko → il marito +2 (era +4, il silenzio l'ha consumato) · Aiko → il padre **+4** · Yūsuke → il padre −1, +1 dopo il funerale (rimorso) · Hiroko → Tachibana (vittima) **−3** appena capisce chi era · la famiglia → il Nitōgun: paura senza volto · la vicina Sig.ra Yoshioka +1 (porta da mangiare tutti i giorni).
 
 ## Come cambia nel tempo
 
 | Quando / se… | Cosa fa | En con i PG |
 |---|---|---|
-| 13/02 16:30 | Hiroko trova il corpo. La Polizia di Yamashina (17:05) parla di suicidio. Kenji chiamato alle 18:00, arriva alle 22:30 | — |
+| 13/02 16:30 | Hiroko trova il corpo. La Polizia di Yamashina (17:05) parla di suicidio. Yūsuke chiamato alle 18:00, arriva alle 22:30 | — |
 | 14/02 12:00 | Yamada le porta l'esito dell'autopsia: omicidio. Da qui Hiroko collabora del tutto: chiavi della clinica (sigillata), consenso a perquisire la casa, i documenti della mansarda su Lake Biwa | +1 |
 | 14/02, se i PG chiedono di piume e odori | Hiroko: «il cortile, lui lo spazzava». Aiko ascolta dalla scala: è lì che decide di parlare | — |
 | 15/02 sera | Veglia (tsuya) in casa. **La stessa sera della veglia di Tachibana a Fushimi**: i PG non possono essere in tutti e due i posti | — |
 | 15/02 e oltre, con la madre e con Fujita o Sato | D-08. Aiko porta i PG davanti all'armadio alto della clinica: dietro, la busta con ¥1,5 mln (se non l'hanno già trovata) | +1 |
-| 16/02 | Funerale al tempio di Yamashina, Kenji fa gli onori. La Sig.ra Yoshioka racconta a Hiroko dell'uomo «con il berretto di lana e la borsa a tracolla» visto nel vicolo il 12/02 pomeriggio: Hiroko lo riferisce ai PG il giorno stesso | — |
+| 16/02 | Funerale al tempio di Yamashina, Yūsuke fa gli onori. La Sig.ra Yoshioka racconta a Hiroko dell'uomo «con il berretto di lana e la borsa a tracolla» visto nel vicolo il 12/02 pomeriggio: Hiroko lo riferisce ai PG il giorno stesso | — |
 | Se i PG trattano Hiroko da sospettata o sentono Aiko senza la madre | Hiroko chiude la porta: si parla solo tramite il fratello di lei, da Ōtsu. Aiko non dice più una parola | −2 |
-| 18/02 | Kenji torna a Tokyo. Se ha saputo dei ¥38 mln (dai PG o dalla banca) chiede a un PG, sulla porta: «la casa la perdiamo?». Nessuno lo sa ancora | — |
+| 18/02 | Yūsuke torna a Tokyo. Se ha saputo dei ¥38 mln (dai PG o dalla banca) chiede a un PG, sulla porta: «la casa la perdiamo?». Nessuno lo sa ancora | — |
 | 22/02 e oltre | Hiroko testimonia sul declino del marito e sulle telefonate; Aiko non testimonia (minore, fragile: i PG che la proteggono dal tribunale hanno fatto la cosa giusta) | — |
 
 ## Collegamenti

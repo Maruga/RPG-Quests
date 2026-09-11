@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><title>H-13 — Tra Galli</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace; }
+.doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
+       font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
+.doc.last { page-break-after:auto; }
+.classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
+           padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
+.head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
+.head .ente { font-size:12.5px; font-weight:bold; letter-spacing:1px; }
+.head .ente-jp { font-size:10px; color:#4a4740; letter-spacing:3px; margin-top:1px; }
+.head .tipo { font-size:14px; font-weight:bold; margin-top:7px; letter-spacing:1.5px; }
+.head .sub { font-size:10px; color:#4a4740; margin-top:2px; }
+.meta { display:grid; grid-template-columns:auto 1fr auto 1fr; gap:1px 8px; font-size:10.2px;
+        border:1px solid #b5b0a2; padding:5px 7px; margin-bottom:9px; background:#f6f4ec; }
+.meta b { color:#4a4740; font-weight:normal; }
+.sec { margin:9px 0 3px; font-size:11.5px; font-weight:bold; border-bottom:1px solid #b5b0a2; padding-bottom:1.5px; }
+p { margin:4px 0; text-align:justify; }
+ul,ol { margin:4px 0 4px 16px; padding:0; }
+li { margin:1.5px 0; }
+table { width:100%; border-collapse:collapse; font-size:10.2px; margin:5px 0; }
+th,td { border:1px solid #b5b0a2; padding:2.5px 5px; text-align:left; vertical-align:top; }
+th { background:#eae7dc; font-weight:bold; }
+td.n { text-align:right; }
+.box { border:1px solid #15140f; padding:6px 8px; margin:7px 0; background:#f4f2e8; }
+.box.warn { border-left:4px solid #8c1c13; }
+.nota { font-size:10.2px; color:#3a382f; border-left:3px solid #b5b0a2; padding:3px 0 3px 8px; margin:6px 0; }
+.firma { margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:16px; font-size:10px; }
+.firma div { border-top:1px solid #6b675c; padding-top:2px; color:#4a4740; }
+.timbro { position:absolute; right:20mm; bottom:20mm; width:30mm; height:30mm; border:2px solid #8c1c13;
+          border-radius:50%; color:#8c1c13; display:flex; align-items:center; justify-content:center;
+          text-align:center; font-size:8.5px; line-height:1.25; transform:rotate(-13deg); opacity:.72; }
+.mono-blk { font-family:"Courier New",monospace; font-size:10.5px; white-space:pre-wrap; background:#f2f0e6;
+            border:1px solid #b5b0a2; padding:6px 8px; margin:5px 0; }
+.hand { font-family:"Segoe Script","Comic Sans MS",cursive; font-size:12px; }
+.jp { font-family:"Yu Mincho","MS Mincho",serif; }
+.small { font-size:9.6px; color:#4a4740; }
+.center { text-align:center; }
+/* giornale */
+.news { background:#f7f3e6; }
+.news .testata { text-align:center; border-bottom:3px double #15140f; padding-bottom:5px; margin-bottom:7px; }
+.news .testata .jp { font-size:27px; letter-spacing:9px; font-weight:bold; }
+.news .testata .it { font-size:9.5px; letter-spacing:2px; color:#4a4740; margin-top:2px; }
+.news .cols { column-count:2; column-gap:8mm; column-rule:1px solid #c9c3b2; font-family:Georgia,serif; font-size:10.4px; text-align:justify; }
+.ad { border:2px solid #15140f; padding:7px 9px; margin:6px 0; background:#fffdf4; break-inside:avoid; }
+.ad .nome { text-align:center; font-size:15px; font-weight:bold; letter-spacing:2px; font-family:"Yu Mincho","MS Mincho",serif; }
+.ad .claim { text-align:center; font-size:10px; margin:2px 0 5px; color:#3a382f; }
+.ad table { font-size:10px; margin:3px 0; }
+.ad td { border:none; border-bottom:1px dotted #b5b0a2; padding:2px 3px; }
+.ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
+@media print {
+  body { background:#fff; }
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  .doc.last { page-break-after:auto; }
+}
+</style></head><body><div class="doc last "><div class="classif">RISERVATO</div><div class="head"><div class="ente">UNIVERSITÀ DI KYOTO — Istituto di Medicina Legale</div><div class="ente-jp jp">京都大学 法医学教室</div><div class="tipo">RELAZIONE DI AUTOPSIA GIUDIZIARIA</div><div class="sub">Con esame tossicologico d'urgenza</div></div><div class="meta"><b>Referto n.</b><span>ML-98/0083</span><b>Esame</b><span>14/02/1998, ore 08:00–11:20</span><b>Cadavere</b><span>MURAKAMI Saburō, anni 52</span><b>Settore</b><span>Dr. Yagi Kenta</span><b>Rinvenimento</b><span>13/02/1998, ore 16:30</span><b>Tossicologia</b><span>d'urgenza, ore 11:00</span></div><div class="sec">Reperti anatomici</div><ul><li>Unico foro da ago in <b>regione latero-cervicale destra</b>, poco visibile a occhio nudo, con modesto stravaso: iniezione praticata <b>in vena giugulare esterna</b>.</li><li><b>Ematoma di contenimento</b> a fascia sulla regione mandibolare e sul lato sinistro del collo, con impronta compatibile con <b>presa manuale</b> esercitata da altri e mantenuta per alcuni secondi.</li><li>Modeste ecchimosi al braccio sinistro, terzo medio, compatibili con presa.</li><li>Assenza di lesioni da difesa. Assenza di segni di caduta.</li><li>Steatosi epatica di grado medio (abuso alcolico cronico). Nessuna patologia acuta preesistente.</li></ul><div class="sec">Esame tossicologico</div><table><tr><th style='width:34%'>Sostanza</th><th>Concentrazione</th><th style='width:30%'>Riferimento</th></tr><tr><td><b>Xilazina</b> (sedativo veterinario)</td><td><b>18,4 µg/mL</b> (sangue femorale)</td><td>Casistica letale in letteratura: 3–4 µg/mL. Nessun uso umano autorizzato</td></tr><tr><td>Etanolo</td><td>0,9 g/l</td><td>Assunzione serale abituale</td></tr><tr><td>Altri stupefacenti / farmaci</td><td>Negativo</td><td>—</td></tr></table><div class="sec">Considerazioni medico-legali</div><p>La concentrazione riscontrata — pari a <b>circa cinque volte</b> il valore letale di riferimento — <b>non è compatibile con l'autosomministrazione</b>: eccede largamente qualunque quantitativo osservato in casi di gesto volontario o accidentale, dove la perdita di coscienza interviene ben prima del completamento dell'iniezione. La <b>sede cervicale</b> è inoltre sede impervia per un'autoiniezione, e il reperto di contenimento indica che il capo <b>è stato tenuto fermo</b>.</p><div class="box warn"><b>Conclusione. Modalità della morte: OMICIDIARIA.</b> Causa: arresto cardiocircolatorio da intossicazione acuta da xilazina. Epoca del decesso: <b>13/02, fra le 13:30 e le 14:30</b>. La scena appare <b>allestita</b> per simulare un gesto volontario. Si trasmette d'urgenza alla Procura e alla Sezione Omicidi.</div><div class="nota"><b>Nota del settore.</b> Chi ha agito ha usato <b>una sostanza presente nello studio della vittima</b>, senza portarla con sé e senza asportarla dopo. Segnalo alla Squadra la coincidenza di mezzo e di simbolo: la stessa sostanza che il defunto adoperava per il proprio lavoro.</div><div class="firma"><div>Il settore — Dr. Yagi Kenta</div><div>Vidimato: Istituto di Medicina Legale</div></div><div class="timbro">京都大学<br>法医学教室<br>1998</div></div></body></html>
