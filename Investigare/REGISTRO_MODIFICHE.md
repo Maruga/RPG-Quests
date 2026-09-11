@@ -11,6 +11,22 @@
 
 ## Da applicare
 
+### 2026-09-11 · WIZARD → REGOLE · Le schede PG hanno un **promemoria da tavolo** al posto della pagina «Appunti»
+Su richiesta dell'utente. In `pg/SCHEDE_PG_TUTTE.docx` la quarta facciata di ogni scheda non si chiama più «Appunti» ma
+**«Promemoria da tavolo»**: nella metà alta stanno il cambio yen/euro (le stesse cifre della sezione «I soldi» del Manuale
+del Giocatore), le tre armi che i pregenerati usano davvero (**revolver New Nambu 4/2/5 danno 4 · manganello 2/2 danno 2 ·
+mani nude 1/1 danno 1**, con l'attributo di attacco e quello di difesa) e la sequenza di uno scambio secondo
+**Combattimento v3.1** (dichiari · iniziativa 2d6 + modificatore di Presenza + velocità, il più basso agisce prima, oltre 15
+sei fuori tempo · risolvi), più attacco, Ukemi, critici, tabella del modificatore di Presenza e la riga «a Ki 0 sotto i colpi
+si muore». C'è anche **tutto quello che si può dichiarare in uno scambio** (attaccare, muoverti, minacciare, mirare, sotto
+tiro, prepararti, il Tame) e **cosa fai quando il colpo arriva su di te** (Ukemi, calcolo del danno subito, Assorbe di
+giubbotto/tavolo/muro, stringere i denti), più Opportunità, Fuori Tempo e la riga della distanza: il giocatore non deve più
+cercare sul manuale a metà scontro. In fondo restano 5 righe per scrivere a mano (l'utente: «le note non sono così
+importanti, dai più spazio al combattimento»). La pagina finale «I soldi» è stata tolta: adesso il cambio
+sta su ogni scheda, quindi ogni giocatore ce l'ha davanti. Documento da 21 a 20 pagine, le 15 facciate di scheda sono
+**identiche al backup** (confronto sul PDF, carattere per carattere); backup `SCHEDE_PG_TUTTE.docx.bak-20260911-prima-promemoria`.
+Se in un manuale cambiano i valori delle armi o la sequenza dello scambio, questa pagina va rigenerata. — **DA APPLICARE** (presa visione)
+
 ### 2026-09-10 · WIZARD → REGOLE · Nuova sezione **«I soldi — Giappone 1997»** nel Manuale del Giocatore + pagina nelle schede
 Su richiesta dell'utente (file di REGOLE toccati col suo ok esplicito). **`GENKAI_Manuale_Giocatori.md`**: sezione nuova
 prima del Combattimento, con la regola pratica **«togli due zeri e hai gli euro di oggi»** e due tabelle — 100 ¥ ≈ 1 euro ·

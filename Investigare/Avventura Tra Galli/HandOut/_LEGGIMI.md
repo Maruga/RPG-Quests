@@ -1,6 +1,6 @@
 # Handout — «Omicidio Kyoto Station 1998»
 
-**35 handout + 2 pagine di token**, uno per file, **ognuno in una sola pagina A4** (verificato: nessuno sfora).
+**36 handout + 2 pagine di token**, uno per file, **ognuno in una sola pagina A4** (verificato: nessuno sfora).
 Rivisti a fondo il 2026-09-11 da quattro controlli incrociati (coerenza interna · schede PNG e Luoghi · Storia
 Completa · epoca e quadro legale giapponese): 68 rilievi, tutti applicati salvo le tre questioni di nomi qui sotto.
 
@@ -36,9 +36,9 @@ Se qualcosa va storto in Word: stampa dal browser in PDF (`_STAMPA_TUTTI.html` �
 | H-04  | Scheda anagrafica della vittima                                        | **Briefing 12/02**                            |
 | H-05  | Autopsia Tachibana (vittima)                                           | 12–13/02, su richiesta                        |
 | H-06  | Tabulato delle 10 chiamate del cellulare                               | Dal 13/02, con ordine del procuratore (24 h)  |
-| H-07  | Kyoto Shimbun del 9/02 — la pagina con l'annuncio                      | Subito: era in tasca alla vittima             |
+| H-07  | Kyoto Shimbun del 9/02 — la pagina con l'annuncio                      | **Briefing 12/02**, coi reperti: era in tasca  |
 | H-08  | I 4 annunci d'archivio (ott '97 – gen '98)                             | Perquisizione dell'appartamento di Fushimi    |
-| H-09  | Taccuino della vittima                                                 | Reperto, dal briefing in poi                  |
+| H-09  | Taccuino della vittima                                                 | **Briefing 12/02**, coi reperti: era in tasca  |
 | H-10  | Lista clienti dalla cassaforte (**la chiave del codice**)              | Solo con il codice 0418 (da Mariko, l'amante) |
 | H-11  | Trascrizione della segreteria telefonica                               | Perquisizione di Fushimi                      |
 | H-12  | Primo verbale su Murakami (veterinario) — «suicidio»                   | 13/02 se ci vanno, altrimenti **16/02**       |
@@ -62,6 +62,7 @@ Se qualcosa va storto in Word: stampa dal browser in PDF (`_STAMPA_TUTTI.html` �
 | H-26b | *Foto: il fermo immagine della CAM-12* (il retro di H-26)              | Con H-26                                      |
 | H-27  | Registro corse della Hozu Taxi                                         | Quando arrivano ai taxi di Kameoka            |
 | H-28  | Apertura della cassetta di sicurezza 0419                              | **Fine avventura**: chiave + inkan + mandato  |
+| H-29  | Referto dell'Istituto zooprofilattico su piuma e sangue                | **18/02, arriva da solo** (richiesto il 12/02) |
 
 ## Token per la crime board
 
@@ -101,10 +102,10 @@ notare**: 5 → 6 → 7 → **10**, e il campione sparisce.
 che vince resta in cartellone, uno che perde sparisce»*. Prima, in ogni passaggio di mese, sei perdenti su sette
 ricomparivano: un giocatore attento avrebbe scartato la regola, e con la regola il ragionamento che porta alla truffa.
 Adesso la successione è pulita e **verificata dal generatore**: 42 galli in tutto, i sette di casa di ogni mese sono i
-sette vincitori del mese prima, i sette sfidanti sono nomi nuovi, **nessuno sconfitto ricompare mai**. E il **3%**
-compare **una volta sola in tutto l'archivio**: gennaio, primo piatto, Wasabi contro Kurozu.
-La catena da leggere confrontando H-08 e H-07: il gallo di casa **Wasabi** (<span>山葵</span>) vince a ottobre(sfidante a 5%), novembre (6%), dicembre (7%) — poi a **gennaio lo sfidante è dato 3%** e Wasabi **perde**.
-Nel cartellone del 22 febbraio Wasabi **non c'è più**, e c'è **Kurozu** (<span>黒酢</span>, l'aceto nero) che lo aveva battuto. Il salto 5→6→7→**3** è l'anomalia che aveva insospettito Ōkubo, ed è visibile a occhio nudo.
+sette vincitori del mese prima, i sette sfidanti sono nomi nuovi, **nessuno sconfitto ricompare mai**. E il **10%**
+compare **una volta sola in tutto l'archivio**, ed è la quota più alta che vi si trovi: gennaio, primo piatto,
+Wasabi contro Kurozu.
+
 
 ## Tre avvertenze prima di sederti al tavolo
 

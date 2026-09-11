@@ -38,13 +38,20 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   durante la partita. Verità in sei righe · chi è chi · cronologia · cosa sa Ōkubo e cosa no · promemoria di regole ·
   quando si consegna ogni handout · il codice del giornale · gli interruttori · l'ospedale · il blitz · risposte pronte
   ai vicoli ciechi · come finisce. Generatore: `foglio_gm.py` (scratchpad)
+- **`FOGLIO_SCONTRO.html`** — il foglio dello scontro (2026-09-11), **una sola facciata A4**: serve solo per il blitz
+  del 22/02 al capannone di Kameoka (cittadina a 28 km a ovest di Kyoto). Chi spara e con cosa (i 3 tiratori alle
+  finestre, il capo sicurezza, i 4-5 armati, le vedette) · i nominati se ci sono (Kuroda (esecutore), Inagaki
+  (sergente corrotto), Hayashi (logistica), Saitō (capo)) · le zone · come parte e come finisce · il riepilogo dei tiri
+  v3.1 (iniziativa, attacco, difesa, Ukemi, Assorbe, critici). **Statistiche copiate dalle schede, non reinventate**:
+  fonte `Luoghi/Luogo_Capannone_Kameoka.md`, `PNG/PNG_Nitogun_Banda.md` e le quattro schede PNG.
+  Generatore: `foglio_scontro.py` (scratchpad)
 - `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
 - `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
 - `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
   Inagaki, Ōkubo, comparse (`PNG_Nitogun_Banda`), cani (`Luogo_Villa_Saito_Kameoka`). **Ogni PNG ha il blocco «al tavolo»**
   (2026-09-09): alibi verificabili, come si comporta, deposizione in prima persona (D-01…D-24), En verso i 5 PG e tra PNG,
   «come cambia nel tempo»; i PNG minori stanno nei Luoghi; quadro d'insieme `PNG/PNG_Quadro_Alibi_En.md`
-- `HandOut/` — **35 handout + 2 pagine di token**, HTML, **uno per pagina A4** (verificato); `_STAMPA_TUTTI.html` li mette
+- `HandOut/` — **36 handout + 2 pagine di token**, HTML, **uno per pagina A4** (verificato); `_STAMPA_TUTTI.html` li mette
   in fila con l'interruzione di pagina per aprirli in Word e stampare in una volta sola; `_LEGGIMI.md` = indice, quando si
   consegnano, avvertenze. Generatore: `genera_handout.py` (scratchpad)
 - `Immagini/` — **61 file** (2026-09-11), indice visivo in **`Immagini/_GALLERIA.html`**: `Scena/` (8 foto di rilievo delle due
@@ -75,7 +82,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   al ristorante-bar dello Shin-Miyako Hotel (uscita Hachijō) 19:45-20:45 ¥3.150, chiavetta n. 0419, biglietto da visita con
   foto di «Mari»; telecamera **CAM-12** del corridoio sud alle **21:20** (berretto, giubbotto imbottito, borsa, **sneaker scure**);
   bagno accanto agli uffici della direzione (管理室), porta grigia in lamiera. La pagina del taccuino fotografata è la base di H-09
-- **Decisioni del 2026-09-11** (dalle note `//…//` dell'autore nella Storia): **codice delle salse** — piatto = combattimento, le due salse = i due galli (che si chiamano come le salse), primo = gallo di casa, secondo = sfidante, sconto % = quota dello sfidante (gennaio: 3%) · **Kuroda resta NON professionista**, telecamera del bagno **guasta dal 9/02 come in origine** (le altre della stazione funzionano ma non danno nulla di più) · il **bossolo non lo dimentica: non lo trova** e non può restare a cercarlo · caso **Murakami**: lo prende Yamashina come suicidio, arriva ai PG il **16/02**, prima ci si arriva solo da soli dal cellulare · **Ōkubo muore se i PG non fanno niente, +20% a precauzione** (5 precauzioni elencate) · **scontro a fuoco al blitz**, polizia colta di sorpresa, 3 fucili alle finestre, i gregari si spogliano e si confondono nella folla · **cassetta di sicurezza** alla Sanwa Bank di Gion: chiave + *inkan* (schedario di Fushimi) + mandato o Setsuko, mai in giornata; dentro ¥35 mln e il libro mastro vero · **Hozu Taxi** (nome nuovo, da segnalare al Registro Nomi) e il gregario al capolinea = nuovo filone
+- **Decisioni del 2026-09-11** (dalle note `//…//` dell'autore nella Storia): **codice delle salse** — piatto = combattimento, le due salse = i due galli (che si chiamano come le salse), primo = gallo di casa, secondo = sfidante, sconto % = quota dello sfidante, e **più il gallo di casa vince più il suo sfidante paga** (gennaio: **10 a 1**, la quota più alta dell'archivio) · **Kuroda resta NON professionista**, telecamera del bagno **guasta dal 9/02 come in origine** (le altre della stazione funzionano ma non danno nulla di più) · il **bossolo non lo dimentica: non lo trova** e non può restare a cercarlo · caso **Murakami**: lo prende Yamashina come suicidio, arriva ai PG il **16/02**, prima ci si arriva solo da soli dal cellulare · **Ōkubo muore se i PG non fanno niente, +20% a precauzione** (5 precauzioni elencate) · **scontro a fuoco al blitz**, polizia colta di sorpresa, 3 fucili alle finestre, i gregari si spogliano e si confondono nella folla · **cassetta di sicurezza** alla Sanwa Bank di Gion: chiave + *inkan* (schedario di Fushimi) + mandato o Setsuko, mai in giornata; dentro ¥35 mln e il libro mastro vero · **Hozu Taxi** (nome nuovo, da segnalare al Registro Nomi) e il gregario al capolinea = nuovo filone
 - Statistiche PNG: **Ki come i PG** (attributo più basso + dado alto di 2d6, tetto 12); mai «Riserva». Combattimento =
   `../Combattimento/GENKAI_Combattimento.md` **v3.1** + `Scheda_Giocatori_Combattimento.html` al tavolo
 
@@ -89,7 +96,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
    tutti i PNG, minori compresi; En decisi (erano «da confermare» nel piano); checklist sezione 12
 2. ⏳ **Rilettura dell'autore** («poi controlliamo»). Le deposizioni citano solo fatti già canonici; l'unica cosa nuova che l'autore
    deve sapere: nelle deposizioni i nomi dei galli sono «nomi di piatti, come nel giornale» — la lista vera arriva col §C del piano
-3. ✅ **HANDOUT FATTI (2026-09-11)** — `HandOut/`: **35 handout + 2 pagine di token**, uno per file HTML,
+3. ✅ **HANDOUT FATTI (2026-09-11)** — `HandOut/`: **36 handout + 2 pagine di token**, uno per file HTML,
    **ognuno in una sola pagina A4** (verificato a schermo: nessuno sfora), più **`_STAMPA_TUTTI.html`** = tutti in fila
    con le interruzioni di pagina, da aprire in Word o stampare in un colpo solo. Indice e istruzioni: `HandOut/_LEGGIMI.md`.
    Controllo incrociato di quattro revisori freschi: **68 rilievi, tutti applicati**. Token della crime board: **solo il
@@ -111,7 +118,7 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   l'ha **chiusa come non problematica** (2026-09-11): al tavolo si usano sempre i cognomi
 - `../GENKAI_Registro_Nomi.md`: **nomi nuovi creati il 2026-09-11** — **Hozu Taxi** (保津タクシー, compagnia di taxi di
   Kameoka), **Sakura Kōkoku** (agenzia pubblicitaria di Osaka), **Harada Kōhei** (agente del Kōban della stazione),
-  **Kubota Jun** (assistente capo, Commissariato di Yamashina), più le ditte di comodo del taccuino (Nishijin Kōmuten,
+  **Kubota Jun** (assistente capo, Commissariato di Yamashina), **Ogata Michio** (veterinario dell'Istituto zooprofilattico, H-29), più le ditte di comodo del taccuino (Nishijin Kōmuten,
   Morita Kensetsu, K.N Nōki, Tanaka Shōji ditta, Ōhara Fudōsan, Yamashina Seiki, Kamo Unsō, Uji Mokuzai, Naniwa Bōseki —
   **inesistenti per definizione**, sono codici). Nessuna collisione col registro (verificato). Da aggiungere quando l'autore dà il via
 - `../GENKAI_Registro_Nomi.md`: «Murayama Hidetoshi» non esiste più in Tra Galli (sostituito da Taniguchi)

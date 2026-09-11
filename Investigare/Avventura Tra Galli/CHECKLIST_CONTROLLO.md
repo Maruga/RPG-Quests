@@ -112,6 +112,21 @@
 - [ ] **Una serie di documenti che si confrontano fra loro dev'essere coerente in tutte le righe, non solo in quella
       che serve**: se la regola vale per un incontro e non per gli altri sei, il giocatore scarta la regola
 
+## 8c. Prima di mandare in stampa (lezione del 2026-09-11)
+
+- [ ] **Misurare l'ALTEZZA VERA del foglio, non lo spazio residuo.** Il controllo sbagliato, usato per giorni, era
+      confrontare la fine del contenuto con `clientHeight − padding`: ma quella scatola **cresce insieme al
+      contenuto**, quindi dice sempre «ci sta». Il controllo giusto è `.doc.offsetHeight / 3.7795 > 297` (mm).
+      Con quello sono saltati fuori **tre handout alti 310, 322 e 336 mm** che avrebbero stampato su due fogli
+- [ ] **Simulare la stampa**, non fidarsi dello schermo: le regole `@media print` cambiano l'impaginazione. Qui
+      `min-height:auto` faceva collassare il foglio sull'altezza del testo, e tutto ciò che è posizionato in
+      assoluto (sigla, timbro) risaliva col testo invece di restare in fondo. Si simula iniettando le stesse
+      regole in un `<style>` e rimisurando
+- [ ] **L'ultimo documento del file di stampa vuole `page-break-after:auto`**, altrimenti esce un foglio bianco in coda
+- [ ] **Contare i documenti** e confrontarli con ogni punto in cui il numero è scritto (indice, foglio del GM, CLAUDE.md)
+- [ ] **Ogni foglio porta il suo codice** in basso a sinistra, e i codici sono tutti diversi
+- [ ] **Le immagini referenziate esistono tutte** (controllo automatico sui `src`, non a occhio)
+
 ## 9. Handout
 - [ ] Piano ↔ prodotti: cosa manca, cosa esiste già come immagine
 - [ ] Ogni handout: pre-elaborato come lo produrrebbe un professionista; ≥ 1 nota utile + ≥ 1 neutra; mai il colpevole

@@ -5,6 +5,14 @@ body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace
 .doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
        font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
 .doc.last { page-break-after:auto; }
+/* documenti densi (H-02, H-08, H-28): stesso stile, corpo ridotto per stare in UN foglio */
+.doc.fitto { font-size:10.1px; line-height:1.32; }
+.doc.fitto table { font-size:9.3px; }
+.doc.fitto th, .doc.fitto td { padding:1.8px 4px; }
+.doc.fitto li { margin:0.5px 0; }
+.doc.fitto p { margin:3px 0; }
+.doc.fitto .sec { margin:7px 0 2px; font-size:10.8px; }
+.doc.fitto .ad { font-size:8.8px; }
 .classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
            padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
 .head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
@@ -53,7 +61,9 @@ td.n { text-align:right; }
 .ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
 @media print {
   body { background:#fff; }
-  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  /* min-height 285mm (non 297) così il foglio resta alto quasi quanto la pagina — la sigla e il
+     timbro, posizionati in assoluto, cadono in fondo — senza rischiare di sfondare su un 2° foglio */
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:285mm; }
   .doc.last { page-break-after:auto; }
 }
 </style></head><body><div class="doc last "><div class="classif">RISERVATO</div><div class="head"><div class="ente">POLIZIA PREFETTURALE DI KYOTO — Sezione Omicidi</div><div class="ente-jp jp">京 都 府 警 察 捜 査 第 一 課</div><div class="tipo">VERBALE DI PERQUISIZIONE E SEQUESTRO</div><div class="sub">Locale abitazione — su mandato del Giudice del Tribunale distrettuale di Kyoto</div></div><div class="meta"><b>Mandato</b><span>n. 98/218 — Trib. distr. di Kyoto</span><b>Richiesta</b><span>Procura — Watanabe Hideo (procuratore)</span><b>Luogo</b><span>Kameoka centro, int. 304</span><b>Nei confronti di</b><span>HAYASHI Tomoki, 35</span><b>Data</b><span>17 febbraio 1998, ore 07:20</span><b>Presenti</b><span>L'indagato · la convivente, quale persona presente</span></div><div class="sec">Cose sottoposte a sequestro</div><table><tr><th style='width:6%'>N.</th><th style='width:28%'>Luogo di rinvenimento</th><th>Descrizione</th></tr><tr><td>1</td><td>Doppiofondo del divano, soggiorno</td><td><b>¥1.200.000</b> in contanti, tagli da ¥10.000, suddivisi in tre buste bianche non intestate</td></tr><tr><td>2</td><td>Parete doppia dell'armadio, camera</td><td><b>Secondo telefono cellulare</b>, utenza <b>intestata alla «Kameoka Nōji K.K.»</b>. Rubrica: <b>quattro voci</b>, salvate per sigle</td></tr><tr><td>3</td><td>Pensile cucina, dietro le scatole del tè</td><td><b>Due chiavi</b> di foggia particolare (doppia mappa), su anello privo di targhetta</td></tr><tr><td>4</td><td>Sotto il letto, scatola da scarpe</td><td>Fogli manoscritti: <b>annotazioni di scommesse</b> riferite ai cinque-sei mesi precedenti, con sigle e cifre</td></tr><tr><td>5</td><td>Cassettina sopra l'armadio</td><td>Coltello a serramanico, lama 8 cm · <b>due cartucce cal. 9 × 18 mm</b>, sfuse, mai camerate</td></tr></table><div class="sec">Reperto 2 — contenuto della rubrica</div><div class="mono-blk">  1.  S.G.        090-***-**41

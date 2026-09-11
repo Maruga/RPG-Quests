@@ -5,6 +5,14 @@ body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace
 .doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
        font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
 .doc.last { page-break-after:auto; }
+/* documenti densi (H-02, H-08, H-28): stesso stile, corpo ridotto per stare in UN foglio */
+.doc.fitto { font-size:10.1px; line-height:1.32; }
+.doc.fitto table { font-size:9.3px; }
+.doc.fitto th, .doc.fitto td { padding:1.8px 4px; }
+.doc.fitto li { margin:0.5px 0; }
+.doc.fitto p { margin:3px 0; }
+.doc.fitto .sec { margin:7px 0 2px; font-size:10.8px; }
+.doc.fitto .ad { font-size:8.8px; }
 .classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
            padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
 .head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
@@ -53,7 +61,9 @@ td.n { text-align:right; }
 .ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
 @media print {
   body { background:#fff; }
-  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  /* min-height 285mm (non 297) così il foglio resta alto quasi quanto la pagina — la sigla e il
+     timbro, posizionati in assoluto, cadono in fondo — senza rischiare di sfondare su un 2° foglio */
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:285mm; }
   .doc.last { page-break-after:auto; }
 }
 </style></head><body><div class="doc last "><div class="classif">RISERVATO</div><div class="head"><div class="ente">POLIZIA PREFETTURALE DI KYOTO — Commissariato di Yamashina</div><div class="ente-jp jp">京都府警察 山科警察署</div><div class="tipo">RAPPORTO DI INTERVENTO</div><div class="sub">Rinvenimento di cadavere — ipotesi iniziale: gesto volontario</div></div><div class="meta"><b>Protocollo</b><span>YM-98/0213-06</span><b>Data</b><span>13 febbraio 1998</span><b>Chiamata al 119</b><span>ore 16:34</span><b>Ambulanza</b><span>ore 16:48</span><b>Polizia sul posto</b><span>ore 17:05</span><b>Redatto da</b><span>Ass. capo Kubota Jun</span></div><div class="sec">Luogo e rinvenimento</div><p>Clinica veterinaria <b>«Murakami Dōbutsu Byōin»</b>, Higashino Kitaōiwake-chō, Yamashina-ku. Esercizio chiuso al pubblico per la pausa (riapertura prevista ore 16:00). La segnalazione è della moglie del titolare, <b>Murakami Hiroko</b>, 49, che dichiara di passare abitualmente dallo studio il venerdì pomeriggio.</p><p>La donna riferisce di aver trovato la porta anteriore chiusa a chiave e l'insegna girata su «chiuso», e di essere entrata <b>dal cortile sul retro</b>, la cui porta era <b>accostata e non chiusa a catenaccio</b>. Ha rinvenuto il marito riverso sul fianco nel retrobottega, accanto al tavolo di preparazione. Dichiara di non aver toccato nulla e di aver chiamato i soccorsi dal telefono dell'ambulatorio.</p><div class="sec">Descrizione della scena</div><ul><li>Cadavere di <b>Murakami Saburō</b>, 52, titolare dell'esercizio. Decesso constatato dal personale sanitario alle 16:52.</li><li>Sul tavolo, in ordine sparso: una <b>siringa</b> monouso da 10 ml e una <b>boccetta vuota</b> di <i>xilazina</i> (sedativo a uso veterinario per grandi animali), tappo perforato.</li><li>Nessun segno di effrazione. Nessun disordine. Nessun biglietto.</li><li>In un cassetto basso della scrivania, bottiglia di <i>shōchū</i> semivuota.</li><li>Nel registro pazienti: due sole visite nella mattinata.</li></ul><div class="sec">Elementi acquisiti sul contesto</div><p>Dai familiari e dalla corrispondenza sul tavolo di casa risulta che il titolare versava in <b>condizioni economiche gravemente compromesse</b>: due ipoteche sull'abitazione, solleciti bancari, un investimento immobiliare del 1995 fallito nel 1996. La moglie riferisce insonnia, consumo serale di alcolici e telefonate a cui il marito rispondeva a bassa voce da almeno due anni.</p><div class="box warn"><b>Conclusioni provvisorie del rilevatore.</b> Il quadro appare <b>compatibile con un gesto volontario</b> (mezzo autosomministrato disponibile sul posto, situazione debitoria, abuso di alcolici). Non si rilevano elementi di terzietà a un primo esame. Si richiede alla Procura l'attivazione dell'<b>autopsia giudiziaria</b>, come da protocollo per i decessi da sostanza. Salma trasferita all'Istituto di Medicina Legale.</div><div class="nota"><b>Annotazione successiva (14/02, ore 12:10).</b> Pervenuto esito autoptico. L'ipotesi di cui sopra è <b>superata</b>: vedi referto ML-98/0083. <b>Atti trasmessi alla Procura</b> per le determinazioni di competenza.</div><div class="firma"><div>Il rilevatore — Ass. capo Kubota Jun</div><div>Commissariato di Yamashina</div></div><div class="timbro">京都府警察<br>山科警察署<br>1998</div><div class="sigla">H-12 &nbsp;·&nbsp; Verbale Yamashina Murakami</div></div></body></html>

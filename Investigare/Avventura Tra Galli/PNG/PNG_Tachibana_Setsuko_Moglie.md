@@ -24,7 +24,7 @@
 | Data | Cosa dice | Verità | Come si verifica |
 |---|---|---|---|
 | 11/02 sera | A Maizuru: lezione di calligrafia 18:30–20:00, poi cena con la madre | Vera | La studentessa del mercoledì (moglie di un impiegato comunale di Maizuru) e la madre Hosokawa Eiko; l'ultimo treno utile da Maizuru per essere a Kyoto alle 21:21 parte alle 18:40 — non l'ha preso |
-| 12/02 | A casa fino alla telefonata di Yamada (08:30), poi in treno per Kyoto (arriva alle 14:00) | Vera | Yamada stesso; biglietto JR |
+| 12/02 | A casa fino alla telefonata di Yamada (06:50), poi in treno per Kyoto (arriva alle 14:00) | Vera | Yamada stesso; biglietto JR |
 | 13–16/02 | A Kyoto (albergo vicino alla stazione, Kōrin, notaio, veglia e cremazione) | Vera | Nishimura e il personale del Kōrin, il notaio, la sala funebre di Fushimi |
 | 17/02 | Rientra a Maizuru | Vera | La madre |
 

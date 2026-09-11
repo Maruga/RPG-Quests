@@ -5,6 +5,14 @@ body { margin:0; background:#4a4a4a; font-family:"Courier New",Courier,monospace
 .doc { width:210mm; min-height:297mm; padding:14mm 16mm; margin:6mm auto; background:#fdfcf7; color:#15140f;
        font-size:11.2px; line-height:1.42; position:relative; box-shadow:0 2px 14px rgba(0,0,0,.5); }
 .doc.last { page-break-after:auto; }
+/* documenti densi (H-02, H-08, H-28): stesso stile, corpo ridotto per stare in UN foglio */
+.doc.fitto { font-size:10.1px; line-height:1.32; }
+.doc.fitto table { font-size:9.3px; }
+.doc.fitto th, .doc.fitto td { padding:1.8px 4px; }
+.doc.fitto li { margin:0.5px 0; }
+.doc.fitto p { margin:3px 0; }
+.doc.fitto .sec { margin:7px 0 2px; font-size:10.8px; }
+.doc.fitto .ad { font-size:8.8px; }
 .classif { position:absolute; top:7mm; right:16mm; color:#8c1c13; border:1.5px solid #8c1c13;
            padding:1px 6px; font-size:9.5px; letter-spacing:1px; font-weight:bold; }
 .head { border-top:2.5px solid #15140f; border-bottom:1px solid #15140f; padding:5px 0 6px; margin-bottom:8px; }
@@ -53,7 +61,9 @@ td.n { text-align:right; }
 .ad .promo { text-align:center; border:1px solid #8c1c13; color:#8c1c13; font-weight:bold; padding:3px; margin:5px 0 3px; font-size:11px; }
 @media print {
   body { background:#fff; }
-  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:auto; }
+  /* min-height 285mm (non 297) così il foglio resta alto quasi quanto la pagina — la sigla e il
+     timbro, posizionati in assoluto, cadono in fondo — senza rischiare di sfondare su un 2° foglio */
+  .doc { margin:0; box-shadow:none; page-break-after:always; width:auto; min-height:285mm; }
   .doc.last { page-break-after:auto; }
 }
 </style></head><body><div class="doc last "><div class="classif">RISERVATO</div><div class="head"><div class="ente">CLUB AOYAGI — Kiyamachi-dōri, Nakagyō-ku</div><div class="ente-jp jp">ク ラ ブ 青 柳</div><div class="tipo">COPIA DI CONTO — ACQUISIZIONE AGLI ATTI</div><div class="sub">Consegnata spontaneamente dalla direzione del locale</div></div><div class="meta"><b>Conto n.</b><span>0982</span><b>Data</b><span>2 febbraio 1998</span><b>Apertura tavolo</b><span>ore 20:40</span><b>Chiusura</b><span>ore 23:05</span><b>Tavolo</b><span>n. 4</span><b>Coperti</b><span>2</span></div><table><tr><th>Descrizione</th><th style="width:12%">Q.tà</th><th style="width:20%">Importo</th></tr><tr><td>Coperto e servizio hostess (2 pers.)</td><td class='n'>2</td><td class='n'>60.000</td></tr><tr><td>Whisky giapponese, bottiglia (conto socio n. 0087)</td><td class='n'>1</td><td class='n'>28.000</td></tr><tr><td>Ghiaccio e acqua minerale</td><td class='n'>—</td><td class='n'>3.000</td></tr><tr><td>Frutta e stuzzichini</td><td class='n'>2</td><td class='n'>9.000</td></tr><tr><td>Karaoke, sala comune</td><td class='n'>—</td><td class='n'>—</td></tr><tr><td colspan='2'><b>TOTALE</b></td><td class='n'><b>¥ 100.000</b></td></tr><tr><td colspan='2'>Pagamento</td><td class='n'>Contanti</td></tr></table><div class="sec">Dichiarazione della direttrice di sala</div><p>«Il signor Tachibana veniva due o tre volte al mese, sempre da solo o con un uomo d'affari, sempre al tavolo quattro, whisky giapponese, mai un problema, pagava in contanti e lasciava bene.</p><p>Quella sera del due era con <b>un uomo sui trent'anni, vestito casual, con le scarpe da ginnastica</b>, che rideva troppo — non del nostro giro, un tipo da fuori città, direi dalle parti di Kameoka. Hanno parlato piano tutta la sera. Se n'è andato prima lui, verso le undici.</p><p>Il signor Tachibana negli ultimi due mesi era di buon umore, rilassato: si vedeva. L'ultima settimana un po' meno. Vi chiedo solo che il nome del locale resti fuori dai giornali.»</p><div class="nota"><b>Annotazione.</b> Il registro presenze del personale conferma che la hostess con nome d'arte «Mari» era in servizio la sera dell'<b>11 febbraio</b> dalle 19:00 alle 02:00, con riscontro di colleghi e clienti. La telefonata delle ore 22:14 alla segreteria dell'abitazione di Fushimi risulta effettuata <b>dall'utenza fissa del locale</b>.</div><div class="firma"><div>Per la direzione del locale</div><div>Ricevuto: Sez. Omicidi</div></div><div class="sigla">H-23 &nbsp;·&nbsp; Conto Club Aoyagi</div></div></body></html>
