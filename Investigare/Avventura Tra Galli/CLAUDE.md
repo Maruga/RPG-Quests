@@ -54,6 +54,16 @@ per gli archivi. Centrale di **Kawaramachi 85**, Sezione Omicidi al 2° piano. G
   muro. **20 rimandi numerati** alla colonna di legenda a sinistra. Geometria copiata da
   `Luoghi/Luogo_Capannone_Kameoka.md` (35×20 m, colmo 7 m, finestre alte nord ed est, insegna «Tanaka Nōki»).
   Generatore: `mappa_capannone.py` (scratchpad)
+- **`MAPPA_GIOCATORI_A3.html`** — **la mappa da dare ai GIOCATORI** (2026-09-11), A3 orizzontale: una **ripresa
+  aerea dall'alto** del sito (gpt-image-2, in `Immagini/Luoghi/Aerea_Capannone_Kameoka.jpg`, incorporata nel file)
+  impaginata come **foto di ricognizione del briefing**, con la scala tarata sul lato lungo del capannone (35 m):
+  il riquadro copre 75 × 44 m. **Tutto lo scontro si svolge fuori**, quindi mostra solo l'esterno: piazzale,
+  porta grande, parcheggio sul retro, sterrata, recinzione, i due varchi, le risaie, più il settore ovest
+  assegnato ai PG. In testa il briefing come lo sentono loro (obiettivo, dispositivo, settore — compresa la
+  frase del Crimine Organizzato che «non è gente armata»). **Nessun interno, nessuna posizione dei tiratori,
+  nessun lato cieco**: quelli stanno solo sul foglio del GM. Disposizione identica a `MAPPA_CAPANNONE_A3.html`,
+  così il GM e i giocatori indicano lo stesso punto. Variante scartata della foto:
+  `Immagini/Luoghi/Aerea_Capannone_Kameoka_var.jpg`. Generatore: `mappa_giocatori.py` (scratchpad)
 - `Storia Completa.md` — la verità assoluta: teaser, fatti numerati, cast, cronistoria, filosofia investigativa, delegabili, indizi
 - `Inizio - Incarico.md` — scena 0 (briefing con Taniguchi), calendario vivo, ganci per i 5 PG, materiale da tavolo
 - `PNG/` 15 schede · `Luoghi/` 17 schede — wiki-link sui nomi file reali; **statistiche v3.1** in Kuroda, Hayashi, Saitō,
