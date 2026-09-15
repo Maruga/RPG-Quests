@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Investigare/Avventura Sake/Token/PNG.png"
+                "file": "Investigare/Avventura Sake/handout/Primo Piano.png"
               },
               "icon": "lucide-image",
-              "title": "PNG"
+              "title": "Primo Piano"
             }
           }
         ]
@@ -227,6 +227,14 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/handout/Piano Terra.png",
+    "Investigare/Avventura Sake/handout/Primo Piano.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Primo Piano prima guardaroba.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra prima correzione sanitari.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Primo Piano.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra.png",
+    "Investigare/Avventura Sake/Token/PNG.png",
+    "Investigare/Avventura Sake/handout/originali-piantine",
     "Investigare/Avventura Sake/Token/Ogawa Reiko.png",
     "Investigare/Avventura Sake/Token/Watanabe Jun.png",
     "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
@@ -256,10 +264,6 @@
     "Investigare/Avventura Sake/PNG/Tanaka Yuki - moglie della vittima.md",
     "Investigare/Avventura Sake/PNG/Tanaka Kazuo - vittima.md",
     "Investigare/Avventura Tra Galli/GUIDA_MASTER_TAVOLO.md",
-    "Investigare/Avventura Sake/QR_Telegram_Bot.png",
-    "Investigare/Avventura Sake/copertina_sake_villa.jpg",
-    "Investigare/Avventura Sake/copertina_sake_scena.jpg",
-    "Investigare/Avventura Sake/copertina_sake.jpg",
     "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
     "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
     "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md.tmp.1520.bafd81315a06",
@@ -268,10 +272,6 @@
     "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.c3d0219248af",
     "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.zip",
     "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.a6190bed1d3e",
-    "Investigare/Avventura Tra Galli/Aerea_Capannone_Kameoka-20260911-192145-096.png",
-    "Investigare/Avventura Tra Galli/Aerea_Capannone_v2-20260911-192423-462.png",
-    "Investigare/Avventura Tra Galli/Immagini/Luoghi/IMG-17_stazione_notte.png",
-    "Investigare/Avventura Tra Galli/MAPPA_GIOCATORI_A3.html",
-    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.5afd8ef826d1"
+    "Investigare/Avventura Tra Galli/MAPPA_GIOCATORI_A3.html"
   ]
 }

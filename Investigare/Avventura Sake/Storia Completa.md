@@ -199,7 +199,7 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 > **Nota per il GM:** ogni stanza ha la sua scheda (piano, funzione, descrizione da leggere, indizi) in un file della cartella `Location/`. Planimetrie nei handout H01a (piano terra) e H01b (primo piano).
 
 - **Piano terra**: Ingresso / Genkan (guardaroba: la giacca con l'EpiPen) · Sala principale / Ōhiroma (incenso, bottiglia, stereo; dà sul giardino) · **Bagno ospiti / Otearai — scena del crimine** (il sapone; in fondo al corridoio di servizio, accanto all'ingresso e alle scale) · Cucina / Daidokoro · Studio di Tanaka / Shosai (documenti, agenda, cartellina di Ogawa) · Corridoio di servizio (la musica copre le grida) · sulla pianta ci sono anche la sala da tè (Chashitsu) e la stanza del personale con la lavanderia: niente di rilevante
-- **Primo piano**: Camera da letto padronale (lettere di Nakamura, farmaci) · Bagno padronale (il sapone col logo, per il confronto) · Camera degli ospiti (niente) · sulla pianta anche una seconda camera e un angolo lettura: niente di rilevante
+- **Primo piano**: Camera da letto padronale (lettere di Nakamura, farmaci) · Bagno padronale (il sapone col logo, per il confronto) · Camera degli ospiti (niente) · sulla pianta anche una seconda camera, un angolo lettura e un guardaroba per kimono e biancheria: niente di rilevante
 - **Esterno**: Giardino / Niwa (Yuki e Nakamura sulla panchina, Hayashi vicino allo stagno)
 
 ---
