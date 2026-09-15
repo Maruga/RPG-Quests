@@ -7,4 +7,5 @@
 
 ## Indizi
 
-- **Nakamura e Yuki** — sono stati qui insieme dopo cena. La domestica sospetta
+- **Nakamura Daisuke (il gallerista) e Tanaka Yuki (la moglie della vittima)** — sono stati qui insieme dopo cena, sulla panchina sotto la tettoia di bambù. La domestica sospetta
+- **Hayashi Kenji (il socio giovane)** — era dall'altra parte, vicino allo stagno delle carpe: li ha visti e non si è avvicinato. Terzo testimone della coppia, senza interesse in gioco

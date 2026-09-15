@@ -18,6 +18,7 @@ Ha una galleria d'arte a Kyoto che importa pezzi dall'Europa e dal Sud-Est asiat
 
 - Ha parlato con diversi ospiti, ha complimentato la collezione d'arte di Tanaka
 - Dopo cena è andato in giardino con Yuki
+- Se gli chiedono se c'era qualcun altro in giardino: "Il ragazzo, Hayashi (Hayashi Kenji, il socio più giovane). Stava vicino allo stagno, da solo. Non ci ha disturbati"
 - Non ha visto Tanaka alzarsi — era in giardino
 - È rientrato quando ha sentito le urla
 

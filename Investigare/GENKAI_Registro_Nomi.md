@@ -97,6 +97,10 @@ Endo Toshio · Fujimoto Akemi · Fujimoto Shinji · **Hayashi Kenji** ⚠ · Hay
 Aiba Kenta · Aoyagi Hiroshi · Aoyagi Mariko · **Endō Hiroshi** ⚠ · Fujiwara Kentarō · Hashimoto Daisuke · Hayashi Tomoki · Hosokawa Eiko · Inagaki Hiroshi · Inoue Takeshi · Kimura Akira · Kobayashi Yumiko · Kuroda Ryō · **Mori Sachiko** ⚠ (dup con Sake) · Mori Yasuko · Murakami Aiko · Murakami Hiroko · Murakami Kenji · Murakami Saburō · Murayama Hidetoshi · Nishimura Tatsuya · Ogura Naomi · Ōkubo Kenji · Saitō Gorō · Saitō Hiroto · Saitō Mieko · Sasaki Hideo · Sasaki Kōichi · Suzuki Yui · Tachi Reiko · Tachi Yūichirō · Tachibana Eiji · Tachibana Mitsuru · Tachibana Setsuko · Tanabe Yumi · Tanaka Shōji · Tanigawa Masaru · Tsuda Akira · Watanabe Toshio · Yagi Kenta · Yamaguchi Tetsuo · Yamamoto Kazuo (custode — cognome del PG) · Yoshida Mamoru
 *(parziali: Akemi · Hayama ×2 · Reiko ×2 · Suzuki · Tanigawa · Ueda · Yoshiko · Yoshioka)*
 
+### Non torna *(avventura da tavolo per un solo giocatore — nomi assegnati 2026-09-15, nessuna omonimia: Kinoshita, Arai, Naruse, Ochiai sono cognomi nuovi nel registro)*
+Kinoshita Tsuneo 木下 常雄 (72, la vittima) · Kinoshita Takuya 木下 拓也 (25, il nipote) · Arai Setsuko 新井 節子 (68, la vicina) · Naruse Takao 成瀬 孝夫 (agente scelto del kōban di Fukakusa) · Ochiai Shin'ichi 落合 真一 (medico del servizio di emergenza)
+*(nomi propri già presenti altrove con cognomi diversi — ammesso: Takuya (Sake), Tsuneo, Setsuko, Takao)*
+
 ---
 
 ## Note di coerenza (segnalate, NON ancora sistemate)

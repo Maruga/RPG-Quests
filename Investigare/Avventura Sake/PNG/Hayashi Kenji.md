@@ -18,7 +18,7 @@ Primo contatto con l'azienda a livello di governance. Il padre è morto a marzo 
 
 - Era molto nervoso all'inizio. Ha parlato con Ogawa, che lo ha rassicurato
 - Ha visto Ogawa presentare il sake — "Era molto orgoglioso di quella bottiglia"
-- Non ha visto Tanaka alzarsi — "Ero in giardino a prendere aria, mi sentivo sopraffatto"
+- Non ha visto Tanaka alzarsi — "Ero in giardino a prendere aria, mi sentivo sopraffatto". Stava vicino allo stagno delle carpe; dall'altra parte del giardino, sulla panchina sotto la tettoia di bambù, c'erano Tanaka Yuki (la moglie del padrone di casa) e Nakamura Daisuke (il gallerista): li ha riconosciuti, ha capito che non doveva avvicinarsi ed è rimasto dalla sua parte. Se gli chiedono chi c'era in giardino lo dice, a disagio: "La signora Tanaka e il signor Nakamura. Parlavano. Non mi sembrava il caso di disturbare"
 
 ## Come reagisce sotto pressione
 

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>GENKAI — promemoria per l'incontro</title>
+<style>
+  @page { size: A4; margin: 11mm 12mm 10mm 12mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Cambria, "Palatino Linotype", Georgia, serif;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-size: 9.1pt; line-height: 1.32; color: #111; margin: 0;
+  }
+  h1 { font-size: 17pt; margin: 0 0 1pt; letter-spacing: .3pt; }
+  h1 span { font-family: "Yu Mincho", "MS Mincho", serif; font-size: 14pt; font-weight: normal; }
+  h2 {
+    font-size: 10.2pt; margin: 8pt 0 3pt; padding-bottom: 1.5pt;
+    border-bottom: 1.2pt solid #111; text-transform: uppercase; letter-spacing: .6pt;
+  }
+  h3 { font-size: 9.3pt; margin: 7pt 0 2pt; }
+  p { margin: 0 0 3pt; }
+  .sotto { font-size: 8.4pt; color: #444; margin: 0 0 6pt; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; margin: 2pt 0 4pt; font-size: 8.4pt; }
+  th { text-align: left; border-bottom: .9pt solid #111; padding: 1.5pt 4pt 1.5pt 0; font-size: 8pt;
+       text-transform: uppercase; letter-spacing: .4pt; }
+  td { padding: 1.6pt 4pt 1.6pt 0; border-bottom: .4pt solid #ccc; vertical-align: top; }
+  td.n { white-space: nowrap; }
+  .due { column-count: 2; column-gap: 7mm; }
+  ul { margin: 0 0 4pt; padding-left: 12pt; }
+  li { margin-bottom: 1.5pt; break-inside: avoid; }
+  ol { margin: 0; padding-left: 13pt; }
+  .box { border: .9pt solid #111; padding: 4pt 6pt; margin: 3pt 0 4pt; break-inside: avoid; }
+  .box h3 { margin-top: 0; }
+  .grigio { background: #f2f2f2; }
+  .scena { font-size: 8.5pt; }
+  .scena b { font-variant: small-caps; letter-spacing: .3pt; }
+  .dado { font-family: Consolas, monospace; font-size: 8pt; }
+  .pag2 { break-before: page; }
+  .piede { margin-top: 8pt; padding-top: 3pt; border-top: .4pt solid #999; font-size: 7.6pt; color: #555; }
+  .ev { font-weight: bold; }
+  .lead { font-size: 9.4pt; }
+  .strette td, .strette th { padding-right: 6pt; }
+</style>
+</head>
+<body>
+
+<h1>GENKAI <span>限界</span></h1>
+<p class="sotto">Gioco di ruolo investigativo · Kyoto, 1997 · promemoria per l'incontro — 14 settembre 2026</p>
+
+<p class="lead"><b>Cos'è.</b> Si interpretano i detective della Sezione Omicidi di Kyoto nel 1997: niente
+cellulari, niente DNA in giornata, nessun potere speciale. Si indaga parlando con le persone e guardando
+le cose. Il <i>genkai</i> è il limite: l'energia del personaggio scende caso dopo caso, e quando finisce
+crolla. Non è un gioco di combattimenti, è un gioco di logoramento — più vicino a un poliziesco giapponese
+che a un fantasy.</p>
+
+<p><b>Da mostrare dal telefono stasera: <span class="ev">genkai.it/provalo</span></b> — un caso giocabile
+nel browser, dieci minuti, dadi veri. Sullo stesso sito ci sono due programmi che ho scritto io: uno crea
+la scheda del personaggio, l'altro aiuta un master a costruire un caso con l'assistenza dell'AI.</p>
+
+<h2>Quello che esiste già</h2>
+
+<div class="due">
+<table>
+<tr><th style="width:68%">I manuali</th><th class="n">Testo</th></tr>
+<tr><td>Regolamento</td><td class="n">12.100 parole</td></tr>
+<tr><td>Manuale del Giocatore</td><td class="n">9.700</td></tr>
+<tr><td>Manuale del Master</td><td class="n">13.200</td></tr>
+<tr><td>Manuale delle Situazioni<br><span style="font-size:7.6pt">come si costruisce un caso</span></td><td class="n">9.700</td></tr>
+<tr><td>Combattimento</td><td class="n">6.800</td></tr>
+<tr><td>Il Kage <span style="font-size:7.6pt">(riservato al master)</span></td><td class="n">3.300</td></tr>
+<tr><td>Specializzazioni, briefing, nomi</td><td class="n">5.800</td></tr>
+<tr><td><b>In tutto</b></td><td class="n"><b>~60.000</b></td></tr>
+</table>
+<p style="font-size:7.8pt; margin-top:-2pt">Sessantamila parole sono circa <b>170 pagine</b> di solo testo:
+impaginate con titoli, tabelle e illustrazioni diventano 200-240.</p>
+
+<table>
+<tr><th style="width:62%">Le avventure</th><th class="n">Durata</th></tr>
+<tr><td>Il Giudice</td><td class="n">campagna</td></tr>
+<tr><td>L'Ultima Cena di Tanaka</td><td class="n">una serata</td></tr>
+<tr><td>L'Ultima Lezione</td><td class="n">due serate</td></tr>
+<tr><td>Il Richiamo</td><td class="n">tre serate</td></tr>
+<tr><td>La Falsa Primavera</td><td class="n">una serata</td></tr>
+<tr><td>Tra Galli (Kyoto Station)</td><td class="n">campagna breve</td></tr>
+<tr><td>Q.E.D.</td><td class="n">campagna breve</td></tr>
+<tr><td>Tanto Rumore per Nulla</td><td class="n">una serata</td></tr>
+<tr><td>Occhi di Volpe</td><td class="n">8-10 serate</td></tr>
+</table>
+<p style="font-size:7.8pt; margin-top:-2pt">Cinque di queste hanno anche i <b>documenti di scena</b> da
+mettere in mano ai giocatori: referti, lettere, giornali, fotografie.</p>
+</div>
+
+<p style="font-size:8.4pt"><b>E poi:</b> 5 personaggi pronti con scheda completa e ritratto · le schede dei
+personaggi non giocanti ricorrenti · lo Starter Kit gratuito (in lavorazione: regole ridotte, un caso, cinque
+schede — tutto in una cartella sola) · il sito con l'area per i giocatori · oltre 200 immagini già prodotte
+per le avventure.</p>
+
+<h2>Il sistema, in mezzo minuto</h2>
+<div class="due" style="font-size:8.6pt">
+<ul>
+  <li><b>Si tirano due dadi a sei facce</b> e si deve stare <b>sotto o pari</b> al proprio attributo. Più alto
+  l'attributo, più facile. Nessuna tabella, nessun calcolo.</li>
+  <li><b>Sei attributi</b>, tutti umani: Distacco, Pazienza, Silenzio, Lucidità, Ascolto, Presenza. Non ci sono
+  forza e destrezza: qui si lavora con la testa e con i nervi.</li>
+  <li><b>Il 2 e il 12 sono i colpi di scena</b>: il 2 ti fa crescere, il 12 ti consuma. Si vedono a occhio, sui
+  dadi nudi.</li>
+  <li><b>Il Ki è l'energia</b>: scende quando ti spendi. Sotto il terzo punto arriva il <b>Genkai</b>, il crollo:
+  il personaggio si blocca e sono i compagni a doverlo rimettere in piedi.</li>
+  <li><b>I Gou</b> sono i talenti dei detective veterani: leggere un ambiente, sentire una bugia. Costano Ki, e
+  il conto lo paghi dopo.</li>
+  <li><b>Non si muore quasi mai</b>: si esce di scena esausti, e si torna. Si muore solo sotto i colpi, e il
+  combattimento è raro, breve e letale: due scambi e uno dei due è a terra.</li>
+</ul>
+</div>
+
+<div class="box scena">
+<h3>Un esempio di come suona al tavolo</h3>
+<p style="font-size:7.9pt; color:#444; margin-bottom:4pt">Tre giocatori, tre detective della stessa squadra:
+Fujita, la più giovane · Nakamura, che ha vent'anni di servizio · Sato, quello che parla poco. Sono nell'ufficio
+dove la vittima ha litigato con qualcuno, la sera prima di morire.</p>
+<p><b>Master:</b> «La stanza è come l'hanno lasciata ieri notte. Due tazze sul tavolino, una piena a metà. Il
+posacenere pieno. C'è ancora quell'odore di fumo freddo che si attacca ai vestiti. Fuori piove sul cortile.»</p>
+<p><b>Fujita:</b> «Mi siedo dove si è seduto lui. Chiudo gli occhi e sto ferma. Voglio sentire cosa si sono
+detti qui dentro.»</p>
+<p><b>Master:</b> «Ti costa. Non sei fresca, hai già avuto una giornata. Lo fai lo stesso?»</p>
+<p><b>Fujita:</b> «Lo faccio.»</p>
+<p><b>Master:</b> <i>(lei tira i dadi, e vanno bene)</i> «All'inizio senti solo la pioggia. Poi le voci arrivano
+come da un'altra stanza. Una è agitata, quasi rotta: <i>...non puoi farlo...</i> e poi <i>...ti distruggerò...</i>
+L'altra risponde piano, e per quanto ti sforzi le parole non le prendi. Quando riapri gli occhi la stanza gira.
+Ti appoggi al bracciolo, e non basta.»</p>
+<p><b>Nakamura:</b> «La prendo prima che vada giù. La faccio sedere e le tengo una mano sulla spalla. <i>Respira.
+Siamo qui.</i>»</p>
+<p><b>Sato:</b> «Vado a prenderle un bicchiere d'acqua. Non dico niente.»</p>
+<p><b>Master:</b> «Il respiro rallenta. Fujita vi guarda, e la prima cosa che dice è: <i>erano due. E uno dei due
+non alzava mai la voce.</i>»</p>
+<p style="margin-top:4pt"><i>L'informazione l'ha avuta, e l'ha pagata. E a rimetterla in piedi non è una
+pozione: sono i colleghi, che ci hanno rimesso qualcosa di loro.</i></p>
+<p style="font-size:7.6pt; color:#444; margin-top:3pt; padding-top:2.5pt; border-top:.4pt solid #bbb">
+<b>Sotto, la meccanica:</b> il talento di Fujita costa quattro punti della sua energia e gliene lascia due,
+sotto la soglia del crollo. Il tiro sono due dadi da stare sotto al suo attributo. I punti che Nakamura e Sato
+le passano sono punti loro, tolti davvero: domani, in un'altra scena, mancheranno. Tutto qui: nessuna tabella,
+nessun calcolo.</p>
+</div>
+
+<!-- ============ FACCIATA 2 ============ -->
+<div class="pag2"></div>
+
+<h2>Le due strade</h2>
+<table class="strette">
+<tr><th style="width:12%"></th><th style="width:44%">Con un editore</th><th>Da solo</th></tr>
+<tr><td><b>Ci mette</b></td>
+    <td>soldi, illustratori, impaginazione, distribuzione in fumetteria e libreria, ufficio stampa, fiere</td>
+    <td>io: anticipo tutto e tengo tutto</td></tr>
+<tr><td><b>Io guadagno</b></td>
+    <td>una percentuale (di solito fra il 5 e il 12% del prezzo di copertina, da verificare)</td>
+    <td>quasi tutto il margine, ma solo su quello che riesco a vendere</td></tr>
+<tr><td><b>Io rischio</b></td>
+    <td>poco o niente in denaro; rischio i tempi lunghi e le decisioni non mie</td>
+    <td>tutto l'investimento iniziale, e il magazzino se non vende</td></tr>
+<tr><td><b>Tempi</b></td><td>in genere 12-24 mesi dalla firma all'uscita</td>
+    <td>quanto ci metto io; con la stampa su richiesta si esce anche subito</td></tr>
+<tr><td><b>Terza via</b></td><td colspan="2"><b>Crowdfunding</b> (Kickstarter, Gamefound, Verkami): i soldi
+    della stampa arrivano prima di stampare, il rischio di magazzino sparisce. Serve però il materiale già
+    bello e pronto <i>prima</i> della campagna, e la gestione delle spedizioni è un lavoro vero.</td></tr>
+</table>
+
+<h2>Formati e stampa — cosa conviene</h2>
+<div class="due" style="font-size:8.6pt">
+<ul>
+  <li><b>Formato del manuale: A5</b> (15×21) oppure <b>6×9 pollici</b> (15,2×23). A5 è lo standard europeo e sta
+  in borsa; 6×9 è il formato che tutti i servizi di stampa su richiesta fanno a costo minimo. L'A4 grande è da
+  manuale di battaglia: pesante, caro, fuori tono per un gioco intimo.</li>
+  <li><b>Interni in bianco e nero.</b> Il colore in tutto il volume moltiplica il costo per due o tre volte.
+  Un noir giapponese sta benissimo in nero, e dà un'identità: inchiostro nero, un grigio, carta avorio.</li>
+  <li><b>Copertina a colori</b> sempre: è l'unica cosa che vende sullo scaffale e nella miniatura online.
+  Plastificazione opaca, cartoncino da 300 grammi.</li>
+  <li><b>Rilegatura: brossura incollata</b> per 150-250 pagine. Il cartonato cucito è da edizione da
+  collezione: si tiene per il crowdfunding, non per la prima stampa.</li>
+  <li><b>Due inchiostri</b> (nero più un colore) fanno un effetto sopra la media e costano poco più del solo
+  nero — ma si fanno solo in tipografia vera, non con la stampa su richiesta.</li>
+  <li><b>Le schede e i documenti di scena</b> restano A4 in PDF, in bianco e nero, da stampare a casa. Sono già
+  fatti così: i giocatori li maneggiano, li piegano, li segnano.</li>
+  <li><b>Stampa su richiesta</b> (una copia alla volta, nessun magazzino) contro <b>tipografia</b>: la tipografia
+  conviene di solito sopra le 500-1.000 copie. Sotto, la stampa su richiesta è più sicura.</li>
+  <li><b>Il PDF si vende comunque</b>, dal primo giorno, e su un gioco indipendente è spesso la voce che rende
+  di più: margine quasi pieno, nessuna spedizione.</li>
+</ul>
+</div>
+
+<h2>Cosa manca, prima di stampare qualsiasi cosa</h2>
+<div class="due" style="font-size:8.6pt">
+<ul>
+  <li><b>Illustrazioni e copertina</b>: è la voce di spesa più grossa e quella che decide se il libro si guarda.</li>
+  <li><b>Impaginazione</b> vera, da grafico: oggi i testi sono file di lavoro, non pagine.</li>
+  <li><b>Editing e correzione bozze</b> fatti da qualcuno che non sono io.</li>
+  <li><b>Playtest esterni</b>: gruppi che non conosco, che giocano col solo manuale e senza di me. È la prova
+  che le regole si capiscono da sole.</li>
+  <li><b>Consulenza sull'ambientazione</b>: nomi, procedura di polizia, dettagli giapponesi del 1997. Ne ho
+  curati molti, ma una rilettura di chi conosce il Giappone vale la spesa.</li>
+  <li><b>Le cose noiose</b>: ISBN e codice a barre, deposito legale, marchio, licenza d'uso, partita IVA e
+  fatturazione, prezzo di copertina, come si spedisce.</li>
+</ul>
+</div>
+
+<div class="box grigio">
+<h3>Da chiedere a lui, stasera</h3>
+<ol style="font-size:8.6pt">
+  <li>Guardando quello che ho: <b>è pronto per essere proposto</b>, o va prima messo in ordine? Che cosa
+  guarderebbe per primo un editore?</li>
+  <li>Meglio proporlo a un editore italiano, oppure <b>uscire da solo</b> e farsi vedere dal mercato?</li>
+  <li>Se editore: <b>quali</b> in Italia pubblicherebbero una cosa così, e <b>chi va contattato</b> per nome?</li>
+  <li>Come si presenta un gioco a un editore: bastano poche pagine e un PDF, o si manda tutto?</li>
+  <li>Che percentuale e che anticipo sono normali oggi? <b>Chi paga le illustrazioni?</b> Di chi restano i
+  diritti, e per quanti anni?</li>
+  <li>Il crowdfunding: ha senso per un primo gioco senza pubblico già formato? Quanto bisogna avere pronto
+  <i>prima</i> di lanciare?</li>
+  <li>Quanto costa davvero, oggi, un illustratore per un manuale così — e quante illustrazioni servono per
+  non sembrare povero?</li>
+  <li>Bianco e nero o colore: che differenza fa <b>sulle vendite</b>, non sul costo?</li>
+  <li>Che prezzo di copertina regge un gioco indipendente italiano da 200 pagine?</li>
+  <li>Il gratis prima del pagante: lo Starter Kit gratuito aiuta a farsi conoscere o toglie vendite?</li>
+  <li>Serve l'inglese per esistere davvero? Quando conviene tradurre, e chi paga la traduzione?</li>
+  <li>Che errore fanno tutti quelli alla prima pubblicazione, e che io farò se non me lo dice adesso?</li>
+</ol>
+</div>
+
+<h2>Da tenere a mente mentre parlate</h2>
+<div class="due" style="font-size:8.6pt">
+<ul>
+  <li>Non parto da zero: <b>cinque avventure complete</b> più quattro già scritte, tre playtest, un sito che
+  funziona e un caso giocabile online. Di solito chi propone un gioco ha molto meno.</li>
+  <li>Il punto debole è <b>l'aspetto</b>, non il contenuto: testi e regole ci sono, le pagine belle no.</li>
+  <li>Il gioco è <b>già giocabile in una serata</b>: è la cosa più facile da vendere a un gruppo nuovo.</li>
+  <li>I numeri di costo e di percentuale scritti qui sopra sono <b>ordini di grandezza da confermare con lui</b>:
+  è esattamente quello che voglio sentirmi dire stasera.</li>
+</ul>
+</div>
+
+
+
+</body>
+</html>

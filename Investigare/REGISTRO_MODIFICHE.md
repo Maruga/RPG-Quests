@@ -11,6 +11,17 @@
 
 ## Da applicare
 
+### 2026-09-15 · WIZARD → REGOLE · Nuova avventura **DA TAVOLO** per un solo giocatore: `Avventura Non Torna/`
+Ordine dell'autore: il caso che si gioca online su genkai.it/provalo va giocato **anche al tavolo**, con un
+giocatore e un master. La versione da tavolo è un'avventura **a sé**: riprende la storia ma **vive per conto
+suo** e non rincorre l'online (parole dell'autore: «in quella da tavolo dell'online non gliene frega niente»).
+Nella cartella: `CLAUDE.md`, `LA_STORIA.md` (copia della verità del caso, da qui in avanti è quella
+dell'avventura) e `DA_FARE.md` (libretto del master, l'agente e il medico come persone con cui si parla, il
+nipote che mente, i tiri, gli handout, apertura e chiusura). **Il caso online non è stato toccato**: resta
+tutto in `sito_genkai/provalo/` come prima. Punto che interessa anche REGOLE: è la prima avventura per **un
+solo giocatore**, e con un giocatore solo salta la parte del gioco che passa dai colleghi (Ki donato, Nasake,
+chi ti rimette in piedi nel Genkai) — decisione aperta in `DA_FARE.md`. — **DA APPLICARE** (presa visione)
+
 ### 2026-09-11 · WIZARD → REGOLE · Le schede PG hanno un **promemoria da tavolo** al posto della pagina «Appunti»
 Su richiesta dell'utente. In `pg/SCHEDE_PG_TUTTE.docx` la quarta facciata di ogni scheda non si chiama più «Appunti» ma
 **«Promemoria da tavolo»**: nella metà alta stanno il cambio yen/euro (le stesse cifre della sezione «I soldi» del Manuale

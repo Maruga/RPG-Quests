@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Constatazione di decesso — servizio di emergenza sanitaria</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+body { font-family: "Courier New", Courier, monospace; font-size: 12.4px; line-height: 1.5;
+       color: #111; background: #fff; display: flex; justify-content: center; }
+.foglio { width: 210mm; padding: 7mm 11mm 5mm; position: relative; }
+
+.testa { border: 2px solid #111; border-bottom: 3px double #111; padding: 6px 16px; text-align: center; }
+.testa .ente { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.testa .kanji { font-family: "Yu Mincho","MS Mincho",serif; font-size: 13px; color: #444; letter-spacing: 4px; }
+.testa .tit { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; }
+.testa .mod { font-size: 10px; color: #555; margin-top: 2px; letter-spacing: 1px; }
+
+.griglia.trecolonne { grid-template-columns: 1fr 1fr 1fr; border-bottom: 1px solid #333; }
+.griglia.trecolonne .cella:nth-child(odd) { border-right: 1px solid #999; }
+.griglia.trecolonne .cella:nth-child(3n) { border-right: none; }
+.griglia.trecolonne .cella:not(:nth-child(3n)) { border-right: 1px solid #999; }
+.griglia { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; border-bottom: none;
+           margin-top: 10px; }
+.cella { padding: 2px 9px; border-bottom: 1px solid #999; min-height: 23px; }
+.cella:nth-child(odd) { border-right: 1px solid #999; }
+.et { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; color: #555; display: block; }
+
+h2 { font-size: 11.5px; letter-spacing: 2px; text-transform: uppercase; margin: 10px 0 3px;
+     border-bottom: 1px solid #111; padding-bottom: 2px; }
+.righe { border: 1px solid #333; padding: 4px 10px 6px; background:
+         repeating-linear-gradient(transparent, transparent 19px, #dcdcdc 19px, #dcdcdc 20px); }
+.righe.alto { min-height: 72px; }
+
+/* caselle da barrare, prestampate: la crocetta è a penna */
+.scelte { border: 1px solid #333; padding: 7px 10px; display: grid;
+          grid-template-columns: 1fr 1fr; gap: 3px 18px; font-size: 11.5px; }
+.scelte div { display: flex; align-items: baseline; gap: 7px; }
+.box { display: inline-block; width: 13px; height: 13px; border: 1px solid #333; position: relative; flex: none; }
+.box.x::after { content: "✗"; position: absolute; left: 0; top: -7px; width: 13px; text-align: center;
+                font-family: "Segoe Script","Ink Free",cursive; font-size: 17px; color: #1b2a63; }
+
+.pen { font-family: "Segoe Script", "Ink Free", "Segoe Print", "Bradley Hand ITC", cursive;
+       color: #1b2a63; font-size: 12.4px; line-height: 20px; }
+.pen.piccolo { font-size: 11.3px; }
+.cella .pen { display: block; margin-top: 1px; transform: rotate(-.25deg); }
+.firma { margin-top: 9px; display: flex; justify-content: space-between; align-items: flex-end; }
+.firma .riga { border-top: 1px solid #333; width: 62mm; text-align: center; font-size: 9.5px;
+               color: #555; padding-top: 2px; text-transform: uppercase; letter-spacing: 1px; }
+.firma .pen { font-size: 16px; }
+.timbro { position: relative; margin-bottom: 1mm; width: 64px; height: 64px; border: 2.5px solid #9c2a1e;
+          border-radius: 50%; color: #9c2a1e; display: flex; flex-direction: column; align-items: center;
+          justify-content: center; transform: rotate(7deg); opacity: .8; }
+.timbro .k { font-family: "Yu Mincho","MS Mincho",serif; font-size: 18px; line-height: 1.05; }
+.timbro .t { font-size: 6.5px; letter-spacing: .5px; margin-top: 3px; text-align: center; }
+.piede { margin-top: 3px; font-size: 8px; color: #777; border-top: 1px solid #bbb; padding-top: 4px;
+         display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+  <div class="testa">
+    <div class="ente">Kyoto — Servizio di emergenza sanitaria · Ospedale municipale di Fushimi</div>
+    <div class="kanji">京都市消防局 救急部 — 伏見市民病院</div>
+    <div class="tit">CONSTATAZIONE DI DECESSO SUL POSTO</div>
+    <div class="mod">Modulo 7 · intervento con esito negativo · una copia all'autorità di polizia</div>
+  </div>
+
+  <div class="griglia">
+    <div class="cella"><span class="et">Intervento n.</span><span class="pen">97-04-1189</span></div>
+    <div class="cella"><span class="et">Chiamata ricevuta</span><span class="pen">15/04/1997 — 23:46</span></div>
+    <div class="cella"><span class="et">Arrivo sul posto</span><span class="pen">23:56</span></div>
+    <div class="cella"><span class="et">Constatazione</span><span class="pen">16/04/1997 — 00:02</span></div>
+    <div class="cella"><span class="et">Luogo</span><span class="pen piccolo">Fukakusa, condominio Midori-sō, pal. 2, interno 305 — bagno</span></div>
+    <div class="cella"><span class="et">Persona</span><span class="pen piccolo">Kinoshita Tsuneo, anni 72 — riconosciuto dal vicinato</span></div>
+    <div class="cella"><span class="et">Equipaggio</span><span class="pen piccolo">Ambulanza Fushimi 2 — medico a bordo</span></div>
+    <div class="cella"><span class="et">Medico</span><span class="pen piccolo">dott. Ochiai Shin'ichi</span></div>
+  </div>
+
+  <h2>1 · Condizioni al nostro arrivo</h2>
+  <div class="righe">
+    <div class="pen">Rinvenuto immerso nella vasca da bagno, vestito, riverso in avanti, viso in acqua.
+    Corpo estratto dall'equipaggio alle 23:58 ai fini del soccorso. Manovre sospese: segni di morte già
+    consolidati. Nessun altro intervento. Salma posta su barella e coperta.</div>
+  </div>
+
+  <h2>2 · Rilievo esterno</h2>
+  <div class="righe alto">
+    <div class="pen">Ferita lacero-contusa frontale destra, soprasopraccigliare, lineare, circa 6 cm,
+    margini netti, con avvallamento del piano osseo sottostante. Compatibile con urto contro superficie
+    dura a spigolo. Mani e avambracci indenni: nessuna escoriazione, nessuna unghia lesa, palmi integri.
+    Indumenti da giorno, calzini bagnati.</div>
+  </div>
+
+  <h2>3 · Rilievi tanatologici</h2>
+  <div class="griglia trecolonne">
+    <div class="cella"><span class="et">Rigidità</span><span class="pen piccolo">iniziale — mandibola e collo</span></div>
+    <div class="cella"><span class="et">Ipostasi</span><span class="pen piccolo">al dorso, non più modificabili</span></div>
+    <div class="cella"><span class="et">Temperatura</span><span class="pen piccolo">molto scesa, corpo in acqua</span></div>
+    <div class="cella"><span class="et">Vie aeree</span><span class="pen piccolo">libere: né acqua né schiuma</span></div>
+    <div class="cella"><span class="et">Torace</span><span class="pen piccolo">non disteso</span></div>
+    <div class="cella"><span class="et">Altre lesioni</span><span class="pen piccolo">nessuna</span></div>
+  </div>
+
+  <h2>4 · Causa presunta e ora del decesso</h2>
+  <div class="righe">
+    <div class="pen">Causa presunta: trauma cranico frontale, morte pressoché immediata. Non si rilevano
+    segni di annegamento. Decesso stimato quattro-cinque ore prima del rilievo: tra le 19:00 e le 19:30.</div>
+  </div>
+
+  <h2>5 · Provvedimenti</h2>
+  <div class="righe">
+    <div class="pen">Morte non naturale: data segnalazione all'autorità di polizia alle 00:08 ai sensi di
+    legge. Salma non rimossa, lasciata a disposizione. Luogo del rinvenimento non alterato oltre a quanto
+    riferito al punto 1.</div>
+  </div>
+
+  <div class="firma">
+    <div>
+      <div class="pen">Ochiai Shin'ichi</div>
+      <div class="riga">firma del medico</div>
+    </div>
+    <div class="timbro">
+        <div class="k">救急</div>
+        <div class="t">FUSHIMI<br>KYŪKYŪ</div>
+      </div>
+    <div>
+      <div class="pen">16 aprile 1997 — 00:15</div>
+      <div class="riga">data e ora di redazione</div>
+    </div>
+  </div>
+
+  <div class="piede">
+    <span>Modulo 7 (rev. 2/95) — Servizio di emergenza sanitaria di Kyoto</span>
+    <span>foglio 1 di 1</span>
+  </div>
+
+</div>
+</body>
+</html>

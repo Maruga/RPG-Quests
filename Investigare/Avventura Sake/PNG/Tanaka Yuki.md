@@ -18,6 +18,7 @@ Sposata da 25 anni. Matrimonio formalmente perfetto, emotivamente morto da almen
 
 - Era al tavolo principale durante la cena
 - Dopo cena è andata in giardino con Nakamura: "Daisuke voleva mostrarmi delle foto di un'asta d'arte"
+- Se le chiedono se c'era qualcun altro in giardino: "Il giovane Hayashi (Hayashi Kenji, il socio più giovane). Dall'altra parte, vicino allo stagno. Da solo. Non si è avvicinato"
 - È rientrata nella sala quando la musica era alta
 - Ha notato che il marito non c'era. Ha aspettato. Poi è andata a cercarlo. Ha trovato la porta del bagno chiusa. Ha chiamato la domestica
 

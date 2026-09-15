@@ -358,7 +358,7 @@ Primo contatto con l'azienda a livello di governance. Il padre è morto a marzo 
 
 - Era molto nervoso all'inizio. Ha parlato con Ogawa, che lo ha rassicurato
 - Ha visto Ogawa presentare il sake — "Era molto orgoglioso di quella bottiglia"
-- Non ha visto Tanaka alzarsi — "Ero in giardino a prendere aria, mi sentivo sopraffatto"
+- Non ha visto Tanaka alzarsi — "Ero in giardino a prendere aria, mi sentivo sopraffatto". Stava vicino allo stagno delle carpe; dall'altra parte del giardino, sulla panchina sotto la tettoia di bambù, c'erano Tanaka Yuki (la moglie del padrone di casa) e Nakamura Daisuke (il gallerista): li ha riconosciuti, ha capito che non doveva avvicinarsi ed è rimasto dalla sua parte. Se gli chiedono chi c'era in giardino lo dice, a disagio: "La signora Tanaka e il signor Nakamura. Parlavano. Non mi sembrava il caso di disturbare"
 
 **Come reagisce sotto pressione:**
 
@@ -389,6 +389,7 @@ Sposata da 25 anni. Matrimonio formalmente perfetto, emotivamente morto da almen
 
 - Era al tavolo principale durante la cena
 - Dopo cena è andata in giardino con Nakamura: "Daisuke voleva mostrarmi delle foto di un'asta d'arte"
+- Se le chiedono se c'era qualcun altro in giardino: "Il giovane Hayashi (Hayashi Kenji, il socio più giovane). Dall'altra parte, vicino allo stagno. Da solo. Non si è avvicinato"
 - È rientrata nella sala quando la musica era alta
 - Ha notato che il marito non c'era. Ha aspettato. Poi è andata a cercarlo. Ha trovato la porta del bagno chiusa. Ha chiamato la domestica
 
@@ -433,6 +434,7 @@ Ha una galleria d'arte a Kyoto che importa pezzi dall'Europa e dal Sud-Est asiat
 
 - Ha parlato con diversi ospiti, ha complimentato la collezione d'arte di Tanaka
 - Dopo cena è andato in giardino con Yuki
+- Se gli chiedono se c'era qualcun altro in giardino: "Il ragazzo, Hayashi (Hayashi Kenji, il socio più giovane). Stava vicino allo stagno, da solo. Non ci ha disturbati"
 - Non ha visto Tanaka alzarsi — era in giardino
 - È rientrato quando ha sentito le urla
 
@@ -756,7 +758,7 @@ Niente di rilevante.
 
 #### 10. Giardino / Niwa (庭)
 
-Nakamura e Yuki sono stati qui insieme. La domestica sospetta.
+Nakamura Daisuke (il gallerista) e Tanaka Yuki (la moglie della vittima) sono stati qui insieme, sulla panchina sotto la tettoia di bambù. La domestica sospetta. Hayashi Kenji (il socio giovane) era dall'altra parte, vicino allo stagno delle carpe: li ha visti e non si è avvicinato. È il terzo testimone della coppia, e non ha nessun interesse in gioco.
 
 ---
 

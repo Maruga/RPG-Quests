@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Rapporto di primo intervento — kōban di Fukakusa</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+body { font-family: "Courier New", Courier, monospace; font-size: 12.4px; line-height: 1.5;
+       color: #111; background: #fff; display: flex; justify-content: center; }
+.foglio { width: 210mm; padding: 7mm 11mm 5mm; position: relative; }
+
+/* --- il prestampato --- */
+.testa { border: 2px solid #111; border-bottom: 3px double #111; padding: 6px 16px; text-align: center; }
+.testa .ente { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.testa .kanji { font-family: "Yu Mincho","MS Mincho",serif; font-size: 13px; color: #444; letter-spacing: 4px; }
+.testa .tit { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; }
+.testa .mod { font-size: 10px; color: #555; margin-top: 2px; letter-spacing: 1px; }
+
+.griglia { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; border-bottom: none;
+           margin-top: 10px; }
+.cella { padding: 2px 9px; border-bottom: 1px solid #999; min-height: 23px; }
+.cella:nth-child(odd) { border-right: 1px solid #999; }
+.et { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; color: #555; display: block; }
+
+h2 { font-size: 11.5px; letter-spacing: 2px; text-transform: uppercase; margin: 10px 0 3px;
+     border-bottom: 1px solid #111; padding-bottom: 2px; }
+.righe { border: 1px solid #333; padding: 4px 10px 6px; background:
+         repeating-linear-gradient(transparent, transparent 19px, #dcdcdc 19px, #dcdcdc 20px); }
+.righe.alto { min-height: 72px; }
+.nota { font-size: 9.5px; color: #666; margin-top: 3px; }
+
+/* --- quello che è stato scritto a penna --- */
+.pen { font-family: "Segoe Script", "Ink Free", "Segoe Print", "Bradley Hand ITC", cursive;
+       color: #1b2a63; font-size: 12.4px; line-height: 20px; }
+.pen.piccolo { font-size: 11.3px; }
+.cella .pen { display: block; margin-top: 1px; transform: rotate(-.25deg); }
+.firma { margin-top: 9px; display: flex; justify-content: space-between; align-items: flex-end; }
+.firma .riga { border-top: 1px solid #333; width: 62mm; text-align: center; font-size: 9.5px;
+               color: #555; padding-top: 2px; text-transform: uppercase; letter-spacing: 1px; }
+.firma .pen { font-size: 16px; }
+.timbro { position: relative; margin-bottom: 1mm; width: 64px; height: 64px; border: 2.5px solid #9c2a1e;
+          border-radius: 50%; color: #9c2a1e; display: flex; flex-direction: column; align-items: center;
+          justify-content: center; transform: rotate(-9deg); opacity: .82; }
+.timbro .k { font-family: "Yu Mincho","MS Mincho",serif; font-size: 19px; line-height: 1.05; letter-spacing: 1px; }
+.timbro .t { font-size: 7px; letter-spacing: .6px; margin-top: 3px; text-align: center; }
+.piede { margin-top: 3px; font-size: 8px; color: #777; border-top: 1px solid #bbb; padding-top: 4px;
+         display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+  <div class="testa">
+    <div class="ente">Polizia prefettizia di Kyoto — Divisione di Fushimi</div>
+    <div class="kanji">京都府警察 伏見警察署 深草交番</div>
+    <div class="tit">RAPPORTO DI PRIMO INTERVENTO</div>
+    <div class="mod">Modulo 3-A · da compilarsi a cura dell'agente intervenuto · copia per l'ufficio ricevente</div>
+  </div>
+
+  <div class="griglia">
+    <div class="cella"><span class="et">Protocollo n.</span><span class="pen">97-F-0412</span></div>
+    <div class="cella"><span class="et">Data</span><span class="pen">15 aprile 1997 (martedì)</span></div>
+    <div class="cella"><span class="et">Ora della segnalazione</span><span class="pen">23:34</span></div>
+    <div class="cella"><span class="et">Ora di arrivo sul posto</span><span class="pen">23:45</span></div>
+    <div class="cella"><span class="et">Luogo</span><span class="pen piccolo">Fukakusa, condominio Midori-sō, palazzina 2, interno 305 (3° piano)</span></div>
+    <div class="cella"><span class="et">Segnalante</span><span class="pen piccolo">Arai Setsuko, 68 anni — interno 306, stesso pianerottolo</span></div>
+    <div class="cella"><span class="et">Agente intervenuto</span><span class="pen piccolo">Naruse Takao — agente scelto, kōban di Fukakusa</span></div>
+    <div class="cella"><span class="et">Persona rinvenuta</span><span class="pen piccolo">Kinoshita Tsuneo, 72 anni — residente nell'appartamento</span></div>
+  </div>
+
+  <h2>1 · Motivo della chiamata</h2>
+  <div class="righe">
+    <div class="pen">La signora dell'interno 306 ha chiamato il kōban perché usciva acqua da sotto la porta
+    dell'interno 305 e arrivava fino alle scale. Diceva di aver bussato e di non aver ricevuto risposta.</div>
+  </div>
+
+  <h2>2 · Situazione trovata all'arrivo</h2>
+  <div class="righe alto">
+    <div class="pen">Acqua sul pianerottolo, uno strato sottile, e sui primi due gradini. La porta
+    dell'interno 305 era accostata e non chiusa a chiave: ho aperto senza forzare. Dentro, acqua su tutto
+    il pavimento della stanza, un velo, dal bagno fino all'ingresso. Il televisore era acceso, con il
+    volume a zero. Sul tavolo due sedie scostate. Nel bagno la vasca era colma e traboccava, il rubinetto
+    aperto. Il signor Kinoshita era dentro la vasca, vestito, riverso in avanti, con il viso nell'acqua.
+    L'ho chiamato. Non respirava.</div>
+  </div>
+
+  <h2>3 · Provvedimenti adottati</h2>
+  <div class="righe">
+    <div class="pen">Ho chiuso il rubinetto alle 23:47: era aperto e nessuno lo aveva toccato prima di me.
+    Ho chiamato il 119 alle 23:46. Non ho spostato il corpo né toccato altro. L'ambulanza è arrivata alle
+    23:56. Il corpo è stato tirato fuori dalla vasca dai sanitari, non da me.</div>
+  </div>
+
+  <h2>4 · Dichiarazioni raccolte sul posto</h2>
+  <div class="righe alto">
+    <div class="pen piccolo">Arai Setsuko, interno 306, dichiara:
+    — verso le 19:05 ha sentito il campanello del 305. Una voce di uomo giovane ha detto «sono io» e il
+    signor Kinoshita ha aperto subito, senza chiedere chi fosse. Ha sentito parlare all'ingresso, due
+    voci, e poi più niente. Non ha riconosciuto la voce e non ha guardato dallo spioncino.
+    — Nessuna voce alta, nessun tonfo, nessun rumore per tutta la sera.
+    — Verso le 19:40 la porta che sbatteva forte e passi veloci giù per le scale.
+    — Verso le 23:30 ha visto l'acqua sul pianerottolo e ha chiamato.
+    Dichiarazione letta e sottoscritta.</div>
+  </div>
+
+  <h2>5 · Annotazioni dell'agente</h2>
+  <div class="righe alto">
+    <div class="pen">Conosco il signor Kinoshita da cinque anni, da quando sono in servizio qui. Vive solo da quando
+    è morta la moglie. Usciva presto, salutava sempre. Il 15 del mese andava alla posta di Fukakusa a
+    ritirare la pensione, anche oggi: l'ho incrociato che tornava, verso le dieci.
+    Il nipote lo conosco di vista, viene ogni tanto: un ragazzo sui venticinque, senza lavoro fisso.
+    È l'unico parente. Ho dato il recapito alla centrale perché lo avvisassero.</div>
+  </div>
+
+  <div class="firma">
+    <div>
+      <div class="pen">Naruse Takao</div>
+      <div class="riga">firma dell'agente intervenuto</div>
+    </div>
+    <div class="timbro">
+        <div class="k">深草</div>
+        <div class="t">KŌBAN<br>FUKAKUSA</div>
+      </div>
+    <div>
+      <div class="pen">16 aprile 1997 — 00:20</div>
+      <div class="riga">data e ora di redazione</div>
+    </div>
+  </div>
+
+  <div class="piede">
+    <span>Modulo 3-A (rev. 4/94) — Polizia prefettizia di Kyoto</span>
+    <span>foglio 1 di 1</span>
+  </div>
+
+</div>
+</body>
+</html>
