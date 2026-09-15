@@ -241,3 +241,23 @@ ricarica 4, danno 3, 3 colpi, niente raffica; arma «da validare al tavolo»: qu
 20. `PNG/` e `Location/`: riallineate a fine lavoro.
 
 **Senza alternativa (si fa salvo no)**: H03 Endo 8→9 · CLAUDE.md di Sake (`png notevoli/`, righe, durata) · MEMORY.md di Sake (cartella `PG/`) · `_adventure.json` 1.1→1.3.
+
+---
+
+## 9. Esito finale (2026-09-15, ore 3) — tutto applicato
+
+Indicazioni dell'autore durante il giro: **è uno scenario, non un'avventura in sequenza** (le osservazioni su mappa handout, durata e ritmo non sono problemi); **niente Gou e niente Kage nell'avventura** (stanno sulle schede dei PG, li gestisce il GM, i PG possono essere altri); **è un'avventura, non la realtà** (la pistola di Ogawa «ce l'ha in tasca, punto»).
+
+| # | Punto | Applicato |
+|---|---|---|
+| 1 | Giardino 21:30 | Hayashi Kenji (socio giovane) vicino allo stagno, Yuki e Nakamura sulla panchina; i tre si sono visti e lo dicono se interrogati |
+| 2 | Akemi in cucina | Endo Toshio (cuoco) e Toda Yumi (aiuto cuoca) confermano l'acqua per il marito; Endo nomina anche Sato Harumi (domestica) che entrava e usciva |
+| 3 | «Le cose cambieranno» | La sente Ishii Takuya (cameriere) a un brindisi; nella scheda di Fujimoto cosa intendeva davvero |
+| 4 | Chiamate a Nishida dopo l'8/10 | Nishida Goro (investigatore) spiega: saldo, poi «novità su Hayashi?» prima della festa |
+| 5 | Gou | Tolti tutti (lista «Gou utili», Ombra della Verità su Ogawa) — resta la lista «Dove mente» |
+| 6 | Kage | Tolta la sezione «Momenti suggeriti per i Kage» |
+| 7 | Finale | «Il finale con la pistola» in Scena 3: Ogawa comparsa v3.1 (Distacco 5 · Pazienza 6 · Silenzio 6 · Lucidità 6 · Ascolto 5 · Presenza 4 · Ki 8), compatta .22/.25 (Lucidità/Distacco · 2/1/4 · danno 3 · 3 colpi), sorpresa su Ascolto, sala principale, vuole uscire dal giardino; con prove parziali nega e chiede l'avvocato; Scena 0: il GM chiede se i PG hanno prelevato la pistola |
+| 8 | Minuzie | H03 Endo 9 anni; H12 timbro 14/11; tolto «registro chiamate» dal telefono dello studio; CLAUDE.md (60-90 min, `png notevoli/`, ~920 righe); MEMORY.md aggiornato |
+
+Copie in `PNG/` e `Location/` riallineate riga per riga alla storia (controllo automatico: zero righe divergenti).
+**Non toccato**: omonimie (decisione 2026-07-10), «Ascolto -2» (stessa convenzione del Manuale GM), parentesi «chi è chi» sull'intera storia (non richiesto in questo giro), `_adventure.json`.

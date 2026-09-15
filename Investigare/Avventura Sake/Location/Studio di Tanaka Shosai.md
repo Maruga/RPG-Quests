@@ -10,4 +10,3 @@
 - **Documenti ristrutturazione** (CRITICO) — promozione di Fujimoto, Ogawa escluso → il movente
 - **Cartellina di Ogawa** — lasciata 3 settimane fa. Contenuto generico, la scusa per entrare
 - **Agenda di Tanaka** — numero di Nishida con annotazione "Hayashi - verifiche"
-- **Telefono fisso** — registro chiamate a Nishida

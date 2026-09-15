@@ -13,6 +13,8 @@ Non conosce i presenti. Non sa nulla dell'azienda.
 
 Ha servito tutta la serata. Tanaka ha bevuto molto: "Almeno sei o sette bicchieri pieni." Ha notato Ogawa proporre diversi brindisi. Ha notato Tanaka toccarsi la gola verso fine serata.
 
+Durante uno dei brindisi Fujimoto Shinji (il cognato della vittima), già ubriaco, ha alzato il bicchiere verso Tanaka. Ishii lo riferisce se gli chiedono cosa ha sentito al tavolo, senza dargli peso: "Il signore che beveva di più — il cognato, mi hanno detto — ha alzato il bicchiere verso il padrone di casa e ha detto 'alla fine dell'anno le cose cambieranno'. I clienti ubriachi dicono tante cose."
+
 ## Come reagisce sotto pressione
 
 - Risponde in modo fattuale. Nessuna emozione

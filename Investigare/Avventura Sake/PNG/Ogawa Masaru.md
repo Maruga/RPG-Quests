@@ -34,7 +34,7 @@ Lavora quotidianamente con salicilati, metil-salicilato, oli essenziali, winterg
 - Conferma di essere andato al bagno: "Sì, ho usato il bagno. È casa di un amico, non mi sembrava strano"
 - Conferma di aver seguito Tanaka verso il bagno: "Si è alzato, non aveva una bella faccia. Gli ho chiesto se stava bene. Mi ha detto che aveva bisogno di rinfrescarsi. L'ho lasciato al bagno ed è entrato da solo. Sono tornato alla festa"
 
-## Dove mente (per Gou "Ombra della Verità")
+## Dove mente
 
 - "Tanaka-san era il mio mentore. Lo rispettavo profondamente" → BUGIA. Lo odiava
 - "Ho lasciato Tanaka al bagno ed è entrato da solo" → MEZZA VERITÀ. Lo ha seguito per assicurarsi che la reazione fosse iniziata, non per preoccupazione. Lo ha lasciato morire sapendo che non avrebbe raggiunto l'EpiPen
@@ -46,11 +46,10 @@ Lavora quotidianamente con salicilati, metil-salicilato, oli essenziali, winterg
 - _"Lei potrebbe creare un sapone a doppio strato con wintergreen?"_ → **Unico punto debole.** Non può negare la competenza: "Qualsiasi chimico cosmetico esperto potrebbe farlo. Ma non capisco la domanda"
 - _Presenza riuscita sulla promozione mancata_ → Un lampo di rabbia negli occhi, subito controllato. "Non ho nulla da nascondere su questo"
 - _Presenza fallita_ → Impenetrabile. Sorriso triste e comprensivo
-- _Confronto diretto con prove schiaccianti_ → Se le prove sono complete → lungo silenzio. Poi: "Ventotto anni. Ventotto anni della mia vita." Crolla o tenta di fuggire (a scelta del GM)
+- _Confronto diretto con prove schiaccianti_ → Se le prove sono complete → lungo silenzio. Poi: "Ventotto anni. Ventotto anni della mia vita." Mette la mano nella tasca interna della giacca e tira fuori una pistola compatta → vedi Scena 3, «Il finale con la pistola»
 
 ## Tiro richiesto per sgamarlo
 
 - **Ascolto con -2 situazionale** (è un bugiardo eccezionale, calmo e credibile)
-- **Gou "Ombra della Verità"** → successo: sa che mente su "lo rispettavo." Fallimento: sa che mente ma non su cosa
 
 > **Nota GM:** Ogawa a +1 è la trappola. I giocatori tenderanno a fidarsi di lui perché è il più collaborativo dei soci. Interpretalo come genuinamente gentile — mai sospetto, mai forzato. La sua calma è la vera arma.

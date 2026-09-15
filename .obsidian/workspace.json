@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Tra Galli/Luoghi/Luogo_Capannone_Kameoka.md",
+                "file": "Investigare/Avventura Non Torna/TIRI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Luogo_Capannone_Kameoka"
+              "title": "TIRI"
             }
           }
         ]
@@ -229,11 +229,26 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
+    "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
+    "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md",
+    "Investigare/Avventura Non Torna/TIRI.md",
+    "Investigare/Avventura Non Torna/SCHEDA_Il_Nipote.md",
+    "Investigare/Avventura Non Torna/SCENE.md",
+    "Investigare/Avventura Non Torna/REVISIONE_2026-09-15_documento_originale.md",
+    "Investigare/Avventura Non Torna/LUOGHI.md",
+    "Investigare/Avventura Non Torna/LA_STORIA.md",
+    "Investigare/Avventura Non Torna/CLAUDE.md",
+    "Investigare/Avventura Non Torna/DA_FARE.md",
+    "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md.tmp.1520.bafd81315a06",
+    "Investigare/Avventura Non Torna/TIRI.md.tmp.1520.8f32e5937aaf",
+    "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.ee1895e6ec83",
+    "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.c3d0219248af",
+    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Capannone_Kameoka.md",
     "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.zip",
     "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.a6190bed1d3e",
     "Investigare/Avventura Tra Galli/Aerea_Capannone_Kameoka-20260911-192145-096.png",
     "Investigare/Avventura Tra Galli/Aerea_Capannone_v2-20260911-192423-462.png",
-    "Investigare/Avventura Tra Galli/Luoghi/Luogo_Capannone_Kameoka.md",
     "Investigare/Avventura Tra Galli/Immagini/Luoghi/IMG-17_stazione_notte.png",
     "Investigare/Avventura Tra Galli/Immagini/Luoghi/Aerea_Capannone_Kameoka_var.jpg",
     "Investigare/Avventura Tra Galli/Immagini/Luoghi/Aerea_Capannone_Kameoka.jpg",
@@ -247,12 +262,6 @@
     "Investigare/Avventura Tra Galli/Storia Completa.md",
     "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.5afd8ef826d1",
     "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.html",
-    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.ced31b5e8a93",
-    "Investigare/Avventura Tra Galli/FOGLIO_SCONTRO.html",
-    "Investigare/pg/~$pioni_PNG.docx",
-    "Investigare/Avventura Tra Galli/CHECKLIST_CONTROLLO.md.tmp.17900.2b195cfc342c",
-    "Investigare/pg/~$HEDE_PG_TUTTE.docx",
-    "Investigare/REGISTRO_MODIFICHE.md.tmp.1520.3347c4dfd43a",
     "Investigare/Avventura Tra Galli/Inizio - Incarico.md",
     "Investigare/Avventura Tra Galli/CLAUDE.md",
     "Investigare/Avventura Tra Galli/PNG/PNG_Okubo_Kenji_Prestanome_Consapevole.md",
@@ -265,15 +274,6 @@
     "Investigare/Avventura Tra Galli/_TUTTO_PER_REVISIONE.md",
     "Investigare/sito_genkai/provalo/CASO_testi_v1.md",
     "Investigare/_DA_CANCELLARE_brief_minicaso/02_il_personaggio.md",
-    "Investigare/_DA_CANCELLARE_brief_minicaso/01_le_regole_del_gioco.md",
-    "Investigare/_DA_CANCELLARE_brief_minicaso/04_il_personaggio.md",
-    "Investigare/_DA_CANCELLARE_brief_minicaso/00_BRIEF.md",
-    "Investigare/_DA_CANCELLARE_brief_minicaso/02_le_regole_del_gioco.md",
-    "Investigare/_DA_CANCELLARE_brief_minicaso/01_la_storia_del_caso.md",
-    "Investigare/sito_genkai/provalo/CASO_dinamica.md",
-    "Investigare/Avventura Tra Galli/PNG/PNG_Quadro_Alibi_En.md",
-    "Investigare/pg/LEGGIMI.md",
-    "Investigare/pg/old/token_prompts.md",
-    "Investigare/pg/old/PG_05_Fujita_Emi.md"
+    "Investigare/_DA_CANCELLARE_brief_minicaso/01_le_regole_del_gioco.md"
   ]
 }

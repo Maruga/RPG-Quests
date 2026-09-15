@@ -11,7 +11,7 @@ Lavora per la famiglia da 9 anni. Conosce perfettamente l'allergia di Tanaka.
 
 - L'allergia: "Conosco l'allergia di Tanaka-san da quando ho iniziato. Ogni menù viene pianificato con attenzione. Nessun salicilato, mai"
 - Il menù: "Approvato da Tanaka-san personalmente. Posso mostrarvi il foglio. Nessun ingrediente a rischio"
-- La cucina: "Solo io, Yumi e Sachiko. Nessun altro... Ah, Ogawa-san è passato un momento prima di cena. Per il sake"
+- La cucina: "Solo io, Yumi e Sachiko. Nessun altro... Ah, Ogawa-san è passato un momento prima di cena. Per il sake. E la signora Fujimoto (Fujimoto Akemi, la sorella del padrone di casa) è venuta a prendere dell'acqua per il marito, verso la fine. Un minuto. Sato-san (Sato Harumi, la domestica) entrava e usciva, come sempre"
 
 ## Cosa nasconde (DEPISTAGGIO)
 

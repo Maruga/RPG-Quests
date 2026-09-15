@@ -16,6 +16,7 @@
 
 - Risponde subito, a volte troppo. Tende a ripetere e aggiungere dettagli per nervosismo
 - _"Ha visto qualcuno toccare il cibo?"_ → "No! Nessuno! Solo noi tre! Beh, Ogawa-san è entrato per il sake, ma non ha toccato il cibo..."
+- _Se le chiedono della signora Fujimoto (Fujimoto Akemi, la sorella del padrone di casa)_ → "Sì, è venuta a prendere dell'acqua. Per il marito, ha detto. Sembrava stanca. È stata un minuto"
 - Pressione forte → si spaventa e piange. Non ha nulla da nascondere
 
 ## Importanza investigativa

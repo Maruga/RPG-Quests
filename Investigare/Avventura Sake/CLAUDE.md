@@ -10,7 +10,7 @@ Prima di fare modifiche che cambiano la trama, i personaggi, le relazioni o le m
 
 **L'Ultima Cena di Tanaka** — avventura investigativa one-shot per il sistema GENKAI 限界 v1.3. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
 
-Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~890 righe).
+Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~920 righe).
 
 Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investigare/`).
 
@@ -25,18 +25,20 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 - **Hayashi è stato manipolato** per comprare l'incenso al Kunjudō. Non sa nulla di chimica
 - **L'indagine privata su Hayashi** (commissionata da Tanaka a Nishida) NON c'entra con Ogawa — è un depistaggio
 - **L'EpiPen** è nella giacca al guardaroba, non al bagno — per questo Tanaka non si è salvato
+- **Il finale** (2026-09-15): con prove complete Ogawa tira fuori una pistola compatta dalla tasca della giacca e cerca di uscire dal giardino — scontro con le regole di `Combattimento/GENKAI_Combattimento.md` v3.1 (valori nella Scena 3). Con prove parziali nega e chiede l'avvocato. Da dove venga la pistola non si spiega
+- **Niente Gou e niente Kage nell'avventura** (2026-09-15): sono sulle schede dei PG e li gestisce il GM. La storia usa solo tiri di attributo ed En
 
 ## Struttura del File
 
 `Storia Completa.md` contiene tutto in sequenza:
 1. Premessa GM e azienda (struttura societaria, quote)
 2. Il crimine — meccanismo e timeline dettagliata
-3. PNG istituzionali (Yamada, Ito — polizia e scientifica, PNG ricorrenti con schede in `Investigare/png/`)
+3. PNG istituzionali (Yamada, Ito — polizia e scientifica, PNG ricorrenti con schede in `Investigare/png notevoli/`)
 4. PNG presenti alla festa — schede complete per interrogatorio (Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, camerieri, Toda, Mori)
 5. PNG esterni (Nishida, Kano)
 6. Luoghi della villa (planimetria, stanze, prove)
 7. Flusso di gioco (3 scene), tiri suggeriti
-8. Momenti Kage, schema depistaggi, note finali
+8. Schema depistaggi, note finali
 
 ## Schema dei Depistaggi
 
@@ -54,7 +56,7 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 - Le schede PNG seguono uno schema: dati, cosa sa, cosa ha visto, cosa nasconde, come reagisce sotto pressione, cosa lo scagiona
 - Le prove sono fisiche e sempre trovabili — i tiri modulano solo la comprensione
 - Il tono è noir realistico, nessun elemento soprannaturale
-- Ritmo target: 45-60 minuti totali (10 min briefing, 20-30 min interrogatori, 10-15 min finale)
+- Ritmo target: 60-90 minuti totali (10 min briefing, 20-30 min interrogatori, 10-15 min collegamenti, poi lo scontro finale)
 
 ## Handout
 

@@ -182,8 +182,11 @@ La colonna a destra è quello che il fatto permette di sostenere dopo, non il te
 
 ## 8. Il nipote torna, e l'interrogatorio
 
-Torna mentre l'investigatrice è ancora in casa: dice di aver visto le luci dalla strada. Fa finta di non
-sapere niente, ma **è scosso** e si vede.
+Torna mentre l'investigatrice è ancora in casa. **È stato avvisato**: l'agente del kōban, che lo conosce di
+vista e sa che è l'unico parente, ha dato il recapito alla centrale. Lui si aggrappa a questo — «mi avete
+chiamato voi, sono venuto subito» — e fa finta di non sapere niente, ma **è scosso** e si vede.
+*(Nella versione online arriva dicendo di aver visto le luci dalla strada: al tavolo no, perché il rapporto
+dell'agente dice nero su bianco che l'ha fatto avvisare lui.)*
 
 Nell'interrogatorio **non si tira**. Si spende quello che si è raccolto: ogni carta del taccuino apre una
 domanda, e ogni sua risposta chiude una porta o gliela lascia aperta. Siccome chi gioca non può scrivere,
@@ -193,13 +196,15 @@ accanto a ogni carta il gioco propone **come usarla**, con parole già pronte.
 |---|---|---|
 | «Non lo vedevo da un pezzo» | la deposizione della vicina: alle 19:05 uno che dice «sono io», e il nonno che apre subito | qualcuno di casa è entrato quella sera. Non prova che fosse lui — e allora dov'era, lui, alle sette? |
 | «Sarà scivolato, era vecchio» | la ferita **sulla fronte** e le mani intatte | chi scivola cade all'indietro, e chi cade mette le mani |
-| «Sarà annegato nella vasca» | **niente acqua nei polmoni** | era già morto quando è finito dentro. Da solo non ci si mette |
+| «Sarà annegato nella vasca» | **niente acqua nei polmoni** | era morto prima di finire in acqua: resta da spiegare come ci sia finito dentro, vestito |
 | «Io i suoi soldi non li ho mai toccati» | la **busta vuota** rimessa sotto le riviste **riordinate**, la polvere | qualcuno stasera ha cercato lì, e ha rimesso tutto a posto |
 | «Sono andato via subito» | **le pantofole allineate** | qualcuno si è fermato a mettere in ordine |
-| *la stoccata* | **19:20 la morte, 19:40 la porta sbattuta** | venti minuti da solo in casa con un morto |
+| *la stoccata* | **la morte stimata tra le 19:00 e le 19:30, la porta sbattuta alle 19:40** | quando è uscito, il nonno era già morto — e nessuno ha chiamato nessuno. I venti minuti esatti li sa solo il GM |
 
 Più carte ha in mano, più stretto è l'angolo. Con poche carte lui regge, e la scena finisce peggio.
-**Lo scontro avviene comunque**, prima o poi: quando capisce che non ne esce.
+**Come va a finire lo decide il GM**: può cedere, può chiudersi e smettere di rispondere, può afferrare il
+coltello. Nessuna delle tre è obbligatoria. *(Nella versione online lo scontro avviene sempre, perché è
+l'ultima scena del gioco: al tavolo no.)*
 
 ## 9. Il coltello
 

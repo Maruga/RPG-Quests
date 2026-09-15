@@ -7,8 +7,14 @@ Per ognuno c'è **quello che si legge ad alta voce** quando il giocatore entra, 
 guardando meglio**, e a destra **quello che quella cosa permette di dire** — questa colonna è tua, non si
 legge mai: il significato lo mette insieme il giocatore.
 
-**La regola che regge tutto il caso:** in questa casa il disordine è normale. Tutto quello che risulta
-*in ordine* è successo stasera, e l'ha fatto qualcuno.
+**La regola che regge tutto il caso:** in questa casa il disordine è normale. Il vecchio non metteva a
+posto niente — tranne il letto, che faceva ogni mattina. Quindi **una cosa sistemata è una cosa che
+qualcuno ha toccato**, e in una serata come questa è una domanda: chi l'ha toccata, e quando?
+
+*Attenzione a non spingere oltre.* Riviste allineate e pantofole appaiate sono **anomalie**, non prove:
+dicono che qualcuno ci ha messo le mani, non dicono quando. A datarle è quello che ci sta sotto — la busta
+della pensione, vuota, che un uomo non svuota per poi rimetterla a posto — e il fatto che l'acqua le ha
+girate intorno senza spostarle. Il resto lo fa l'insieme, non il singolo oggetto.
 
 Quando il giocatore arriva sono circa le **00:30 del 16 aprile 1997**. Il corpo è già fuori
 dall'appartamento, su una barella sul ballatoio. La vicina ha reso la sua dichiarazione e se n'è andata.
@@ -72,8 +78,8 @@ chi la chiuderebbe alla prima scena.
 | **le due tazze** | tutte e due usate, e nessuna delle due lavata | erano in due, seduti |
 | **la teiera** | ancora sul tavolo, con del tè dentro, freddo | il tè era già pronto: la visita non l'ha colto di sorpresa |
 | **il tavolo** | due sedie scostate, una di fronte all'altra | si sono seduti a parlare, non è stata una cosa sulla porta |
-| **il tavolino della televisione** | le riviste **allineate**, in una casa dove niente lo è; nella polvere si vede il segno di dove stavano prima | qualcuno le ha spostate stasera e poi le ha rimesse a posto |
-| **sotto le riviste** | una **busta dell'ufficio postale, vuota**, rimessa lì sotto | la pensione è stata ritirata stamattina. Nessuno svuota una busta e poi la rimette a posto |
+| **il tavolino della televisione** | le riviste **allineate**, in una casa dove niente lo è; nella polvere si vede il segno di dove stavano prima | qualcuno le ha spostate e poi rimesse a posto. Da sole non dicono quando: il nonno stesso ci aveva messo la busta quella mattina |
+| **sotto le riviste** | una **busta dell'ufficio postale, vuota**, rimessa lì sotto | è questo che data il riordino: la pensione è stata ritirata stamattina, e un uomo non svuota la propria busta per poi rimetterla sotto le riviste. I contanti non sono in casa |
 | **il pavimento** | il velo d'acqua che va dal bagno alla porta | l'acqua è rimasta aperta per ore e ha portato via tutto quello che c'era per terra |
 | **il frigorifero** | quasi vuoto, qualche avanzo | quei contanti erano tutto quello che aveva |
 | **il lavello, di nuovo** | tra i piatti c'è anche **un coltello da cucina** | *(non dire niente. Serve dopo: quando il ragazzo scatta, è quello che afferra)* |
@@ -95,7 +101,7 @@ non è colpa sua: non c'era modo di arrivare prima. Il bordo della vasca è puli
 
 | Se guarda | Cosa vede | Cosa permette di dire |
 |---|---|---|
-| **le pantofole** | appaiate e allineate sulla soglia; l'acqua le ha girate intorno senza spostarle di un dito | erano già così **prima** che l'acqua arrivasse. Chi se le sfila per entrare non le allinea, e chi è caduto lì dentro non poteva più farlo |
+| **le pantofole** | appaiate e allineate sulla soglia; l'acqua le ha girate intorno senza spostarle di un dito | erano già così **prima** che l'acqua arrivasse. Nessuno si sfila le pantofole allineandole, e un uomo che sta cadendo dentro non può più raddrizzarle: qualcuno l'ha fatto per lui |
 | **la vasca** | colma fino all'orlo, l'acqua ferma, tutt'intorno bagnato | stava per farsi il bagno. Dentro non ci era ancora entrato |
 | **il rubinetto** | chiuso adesso, ma l'agente ha scritto che l'ha chiuso lui alle 23:47 | è rimasto aperto più di quattro ore |
 | **il bordo della vasca** | pulito, bagnato, niente | ore d'acqua non lasciano niente. Qui non c'è più niente da trovare |

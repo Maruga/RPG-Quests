@@ -28,6 +28,7 @@ Sposato con Akemi, la sorella minore di Tanaka, da 10 anni. In azienda da 8 anni
 - Solo la moglie Akemi lo sa
 - Se Tanaka scopriva → licenziamento + divorzio + rovina
 - Con Tanaka morto → la pressione si allenta
+- La frase «alla fine dell'anno le cose cambieranno», detta ubriaco a un brindisi e sentita da Ishii Takuya (il cameriere): intendeva la promozione (membro senior dal 1° agosto, dentro il budget 1998 che il consiglio approva a novembre) e lo stipendio nuovo con cui sperava di coprire il debito. Per i PG suona come una minaccia
 
 ## Come reagisce sotto pressione
 

@@ -45,24 +45,47 @@ Se nessuno lo contraddice, questa è la storia che regge tutta la sera:
 - Dei soldi del nonno non sa niente. Non li ha mai chiesti e non li ha mai toccati.
 - Stasera lui era a casa sua.
 
-### Dove si incrina
+### Dove si incrina — **in due tempi**
 
-Ogni riga della sua versione ha una cosa che la contraddice. Sono le cose che il giocatore ha visto in casa
-o letto nei due handout. **Non c'è un ordine obbligato:** vale quella che il giocatore trova e usa.
+**Primo tempo: era qui.** Finché Takuya sostiene di essere stato a casa propria, non gli si può contestare
+né quanto è rimasto né cosa ha sistemato: quelle domande presuppongono che ci fosse. Le prime tre cose
+servono a questo, e nessuna delle tre da sola lo identifica — **lo mettono in una posizione in cui deve
+spiegare dov'era**, e lui non ha nessuno che possa dirlo al posto suo.
 
-| Quando dice | Quello che lo contraddice | Cosa gli resta da spiegare |
+| Quando dice | Quello che gli si mette davanti | Cosa gli resta da spiegare |
 |---|---|---|
-| «Non lo vedevo da un pezzo» | alle 19:05 uno ha detto «sono io» e il nonno ha aperto subito, senza chiedere chi fosse | è entrato qualcuno che il nonno conosceva bene. Non prova che fosse lui: **gli tocca dire dov'era alle sette**, e non ha nessuno che possa confermarlo |
-| «Sarà scivolato» | la ferita è sulla **fronte**, e le mani non hanno un graffio | chi scivola cade indietro, e chi cade davanti mette le mani |
-| «Sarà annegato» | nei polmoni non è entrata acqua | era già morto prima di finire in acqua. Da solo, lì dentro, non ci si mette |
-| «I suoi soldi non li ho toccati» | la busta vuota sotto le riviste rimesse in ordine, e il segno nella polvere | qualcuno stasera ha cercato lì e poi ha rimesso tutto a posto |
-| «Sono andato via subito» | le pantofole appaiate sulla soglia del bagno | qualcuno si è fermato a sistemare |
-| **la stoccata** | la morte tra le 19:00 e le 19:30, la porta sbattuta alle 19:40 | venti minuti in casa da solo con un morto |
+| «Non lo vedevo da un pezzo» | alle 19:05 qualcuno ha detto «sono io» e il nonno ha aperto subito, senza chiedere chi fosse | è entrato uno che il nonno conosceva bene. **Chi altro?** E lui dov'era, alle sette? |
+| «Stasera ero a casa mia» | nessuno lo ha visto lì, e il nonno aveva ritirato la pensione quella mattina | non ha un solo nome da dare. E sapeva del giorno della pensione |
+| «I suoi soldi non li ho mai toccati» | la busta della posta, **vuota**, rimessa sotto le riviste | un vecchio non svuota la busta della pensione e poi la rimette a posto vuota. I contanti non sono in casa |
 
-**Come reagisce, man mano.** Alla prima contestazione aggiusta il tiro («ah sì, forse la settimana scorsa
-sono passato»). Alla seconda si irrigidisce e comincia a rispondere con domande. Dalla terza in poi smette
-di inventare e resta zitto più a lungo di quanto sia comodo. Quando sente nominare i venti minuti, si
-accorge che chi ha davanti ha già capito.
+**Il riscontro che chiude il primo tempo.** I soldi sono a casa sua, in un giubbotto, ancora nella fascetta
+dell'ufficio postale. Se il giocatore ci arriva — chiedendo una perquisizione, o convincendolo a farsi
+accompagnare — la sua versione non regge più. *La fascetta da sola non prova che sia quella del nonno: è
+la somma, e il fatto che non sappia dire da dove arrivino quei contanti.*
+
+**Secondo tempo: cosa hai fatto, mentre eri qui.** Da usare **solo quando la scena ha stabilito che c'era**
+— perché l'ha ammesso, perché è stato smentito, o perché il GM decide che ha smesso di fingere.
+
+| Quando dice | Quello che gli si mette davanti | Cosa gli resta da spiegare |
+|---|---|---|
+| «Sarà scivolato» | la ferita è sulla **fronte**, e le mani non hanno un graffio | chi cade in avanti mette le mani. Lui no: o non ha fatto in tempo, o non è caduto da solo |
+| «Sarà annegato» | nei polmoni non è entrata acqua | era morto **prima** di finire in acqua. Allora **come c'è finito dentro**, vestito, con le scarpe di casa sulla soglia? |
+| «Sono andato via subito» | le pantofole appaiate sulla soglia, che l'acqua ha girato senza spostare | qualcuno le ha messe lì. Un uomo che sta cadendo non allinea le proprie pantofole |
+| **la stoccata** | la morte è stimata **tra le 19:00 e le 19:30**; la vicina sente la porta sbattere alle **19:40** | quando è uscito, il nonno era già morto. **Che cosa ha fatto, in quel tempo, invece di chiamare qualcuno?** |
+
+**Sul tempo, una precisazione per il GM.** I venti minuti esatti li sa solo tu: dai dati in mano al
+giocatore si ricava che **fra la morte e l'uscita è passato del tempo** — almeno dieci minuti, forse
+quaranta. È già abbastanza: chi trova un morto e scappa dal panico non resta lì, e soprattutto **chiama
+qualcuno**. La domanda che non ha risposta non è «venti minuti a fare cosa», è «e perché non hai chiamato
+nessuno».
+
+**Quello che nessuno di questi elementi dimostra da solo.** Che sia stato lui a spingere. È l'insieme che
+lo mette all'angolo, e l'ultimo passo lo fa lui: o parla, o resta in silenzio con tutto questo addosso.
+
+**Come reagisce, man mano.** Alla prima cosa aggiusta il tiro («ah sì, forse la settimana scorsa sono
+passato»). Alla seconda si irrigidisce e comincia a rispondere con domande. Dalla terza in poi smette di
+inventare e resta zitto più a lungo di quanto sia comodo. Quando gli si chiede perché non ha chiamato
+nessuno, si accorge che chi ha davanti ha già capito.
 
 ---
 

@@ -203,7 +203,7 @@ In azienda da 28 anni. Ogni crema, ogni sapone, ogni profumo che ha reso famosa 
 - Conferma di essere andato al bagno: "Sì, ho usato il bagno. È casa di un amico, non mi sembrava strano"
 - Conferma di aver seguito Tanaka verso il bagno: "Si è alzato, non aveva una bella faccia. Gli ho chiesto se stava bene. Mi ha detto che aveva bisogno di rinfrescarsi. L'ho lasciato al bagno ed è entrato da solo. Sono tornato alla festa"
 
-**Dove mente (per Gou "Ombra della Verità"):**
+**Dove mente:**
 
 - "Tanaka-san era il mio mentore. Lo rispettavo profondamente" → BUGIA. Lo odiava
 - "Ho lasciato Tanaka al bagno ed è entrato da solo" → MEZZA VERITÀ. Lo ha seguito per assicurarsi che la reazione fosse iniziata, non per preoccupazione. Lo ha lasciato morire sapendo che non avrebbe raggiunto l'EpiPen
@@ -215,12 +215,11 @@ In azienda da 28 anni. Ogni crema, ogni sapone, ogni profumo che ha reso famosa 
 - _"Lei potrebbe creare un sapone a doppio strato con wintergreen?"_ → **Unico punto debole.** Non può negare la competenza: "Qualsiasi chimico cosmetico esperto potrebbe farlo. Ma non capisco la domanda"
 - _Presenza riuscita sulla promozione mancata_ → Un lampo di rabbia negli occhi, subito controllato. "Non ho nulla da nascondere su questo"
 - _Presenza fallita_ → Impenetrabile. Sorriso triste e comprensivo
-- _Confronto diretto con prove schiaccianti_ → Se le prove sono complete → lungo silenzio. Poi: "Ventotto anni. Ventotto anni della mia vita." Crolla o tenta di fuggire (a scelta del GM)
+- _Confronto diretto con prove schiaccianti_ → Se le prove sono complete → lungo silenzio. Poi: "Ventotto anni. Ventotto anni della mia vita." Mette la mano nella tasca interna della giacca e tira fuori una pistola compatta → vedi Scena 3, «Il finale con la pistola»
 
 **Tiro richiesto per sgamarlo:**
 
 - **Ascolto con -2 situazionale** (è un bugiardo eccezionale, calmo e credibile)
-- **Gou "Ombra della Verità"** → successo: sa che mente su "lo rispettavo." Fallimento: sa che mente ma non su cosa
 
 > **Nota GM:** Ogawa a +1 è la trappola. I giocatori tenderanno a fidarsi di lui perché è il più collaborativo dei soci. Interpretalo come genuinamente gentile — mai sospetto, mai forzato. La sua calma è la vera arma.
 
@@ -288,6 +287,7 @@ Sposato con Akemi, la sorella minore di Tanaka, da 10 anni. In azienda da 8 anni
 - Solo la moglie Akemi lo sa
 - Se Tanaka scopriva → licenziamento + divorzio + rovina
 - Con Tanaka morto → la pressione si allenta
+- La frase «alla fine dell'anno le cose cambieranno», detta ubriaco a un brindisi e sentita da Ishii Takuya (il cameriere): intendeva la promozione (membro senior dal 1° agosto, dentro il budget 1998 che il consiglio approva a novembre) e lo stipendio nuovo con cui sperava di coprire il debito. Per i PG suona come una minaccia
 
 **Come reagisce sotto pressione:**
 
@@ -508,7 +508,7 @@ Lavora per la famiglia da 9 anni. Conosce perfettamente l'allergia di Tanaka.
 
 - L'allergia: "Conosco l'allergia di Tanaka-san da quando ho iniziato. Ogni menù viene pianificato con attenzione. Nessun salicilato, mai"
 - Il menù: "Approvato da Tanaka-san personalmente. Posso mostrarvi il foglio. Nessun ingrediente a rischio"
-- La cucina: "Solo io, Yumi e Sachiko. Nessun altro... Ah, Ogawa-san è passato un momento prima di cena. Per il sake"
+- La cucina: "Solo io, Yumi e Sachiko. Nessun altro... Ah, Ogawa-san è passato un momento prima di cena. Per il sake. E la signora Fujimoto (Fujimoto Akemi, la sorella del padrone di casa) è venuta a prendere dell'acqua per il marito, verso la fine. Un minuto. Sato-san (Sato Harumi, la domestica) entrava e usciva, come sempre"
 
 **Cosa nasconde (DEPISTAGGIO):** Un mese fa ha avuto una discussione violenta con Tanaka. Tanaka lo ha umiliato davanti a ospiti criticando un piatto. Endo stava per licenziarsi. Tanaka si è poi scusato privatamente e gli ha offerto un aumento. Se i PG scoprono la discussione ma non la riconciliazione → Endo sembra avere un movente.
 
@@ -537,6 +537,7 @@ Lavora per la famiglia da 9 anni. Conosce perfettamente l'allergia di Tanaka.
 
 - Risponde subito, a volte troppo. Tende a ripetere e aggiungere dettagli per nervosismo
 - _"Ha visto qualcuno toccare il cibo?"_ → "No! Nessuno! Solo noi tre! Beh, Ogawa-san è entrato per il sake, ma non ha toccato il cibo..."
+- _Se le chiedono della signora Fujimoto (Fujimoto Akemi, la sorella del padrone di casa)_ → "Sì, è venuta a prendere dell'acqua. Per il marito, ha detto. Sembrava stanca. È stata un minuto"
 - Pressione forte → si spaventa e piange. Non ha nulla da nascondere
 
 **Importanza investigativa:** Minore. Conferma Ogawa in cucina. Il suo valore è che parla troppo e può dare dettagli che altri non menzionerebbero.
@@ -567,6 +568,8 @@ Non conosce i presenti. Non sa nulla dell'azienda.
 **Cosa ha visto — dettaglio chiave:** "Un signore — mi hanno detto che si chiama Ogawa — mi ha dato istruzioni precise su una bottiglia di sake. Mi ha detto: 'Questa bottiglia la servi solo al tavolo principale. Riempi sempre il bicchiere di Tanaka-san. È un sake speciale, non deve mai avere il bicchiere vuoto.' Ho fatto come mi ha detto — pensavo fosse un gesto di cortesia."
 
 Ha servito tutta la serata. Tanaka ha bevuto molto: "Almeno sei o sette bicchieri pieni." Ha notato Ogawa proporre diversi brindisi. Ha notato Tanaka toccarsi la gola verso fine serata.
+
+Durante uno dei brindisi Fujimoto Shinji (il cognato della vittima), già ubriaco, ha alzato il bicchiere verso Tanaka. Ishii lo riferisce se gli chiedono cosa ha sentito al tavolo, senza dargli peso: "Il signore che beveva di più — il cognato, mi hanno detto — ha alzato il bicchiere verso il padrone di casa e ha detto 'alla fine dell'anno le cose cambieranno'. I clienti ubriachi dicono tante cose."
 
 **Come reagisce sotto pressione:**
 
@@ -652,6 +655,7 @@ Non è alla festa. I PG lo trovano dall'agenda di Tanaka nello studio.
 
 - Assunto da Tanaka due mesi fa per indagare su Hayashi Kenji: "Tanaka-san voleva sapere tutto. Il ragazzo è pulito"
 - L'indagine riguardava SOLO Hayashi: "Non mi ha chiesto di controllare nessun altro. Non ha mai menzionato Ogawa"
+- Le telefonate dopo il rapporto finale dell'8 ottobre (il tabulato H11 ne mostra tre: 15/10, 27/10, 12/11): il 15 ottobre per il saldo del compenso; il 27 ottobre e il 12 novembre, con la festa vicina e Hayashi appena confermato tra gli invitati, Tanaka voleva sapere se era cambiato qualcosa. Non era cambiato niente. Nishida: "Mi ha richiamato due volte, sempre per il ragazzo. Voleva sapere se c'erano novità. Non ce n'erano. Tanaka-san era fatto così"
 
 **Come reagisce sotto pressione:**
 
@@ -723,7 +727,6 @@ Porta chiusa. La domestica o Yamada possono aprirlo.
 - **Documenti ristrutturazione** (CRITICO) — promozione di Fujimoto, Ogawa escluso → il movente
 - **Cartellina di Ogawa** — lasciata 3 settimane fa. Contenuto generico, la scusa per entrare
 - **Agenda di Tanaka** — numero di Nishida con annotazione "Hayashi - verifiche"
-- **Telefono fisso** — registro chiamate a Nishida
 
 ---
 
@@ -777,6 +780,8 @@ Nakamura Daisuke (il gallerista) e Tanaka Yuki (la moglie della vittima) sono st
 
 **Tutto automatico.** Yamada fa il briefing. Ito mostra la scena. Nessun tiro.
 
+Prima di cominciare, il GM chiede ai giocatori se hanno prelevato la pistola d'ordinanza (in borghese resta in armadietto: si preleva firmando).
+
 Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergreen nel nucleo). Se i PG chiedono di analizzare l'incenso → lo fa (wintergreen presente). Se i PG chiedono confronto saponi → lo fa (piano terra diverso da tutti gli altri).
 
 > **Nota GM (accelerare se serve):** Se i PG non chiedono spontaneamente di analizzare il sapone, Ito può offrirsi: "Quel sapone nel bagno è strano. Nessun marchio. Volete che lo analizzi?" — La scientifica è una valvola legittima, non un suggerimento forzato.
@@ -797,12 +802,6 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 - **Distacco** — gestire la scena del corpo
 - **Lucidità** — analizzare il sapone autonomamente (senza scientifica)
 
-**Gou utili:**
-
-- **Occhio della Gru** → nota il sapone fuori posto
-- **Teatro delle Ombre** → visualizza gli ultimi minuti di Tanaka
-- **Pietra Fuori Posto** → sente che qualcosa non dovrebbe essere lì
-
 ---
 
 ### SCENA 2 — Interrogatori
@@ -811,7 +810,7 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 
 **Sato Harumi (En +2)** — Automatico: racconta tutto. Tiro solo se pressata troppo.
 
-**Ogawa Masaru (En +1)** — Automatico: conferma tutto. Tiro: Ascolto con -2 per sgamarlo. Gou "Ombra della Verità" funziona.
+**Ogawa Masaru (En +1)** — Automatico: conferma tutto. Tiro: Ascolto con -2 per sgamarlo.
 
 **Fujimoto Shinji (En -1)** — Tiro: Pazienza (ubriaco), Ascolto (debito), Presenza (confessione).
 
@@ -854,21 +853,17 @@ Se i PG chiedono a Ito di analizzare il sapone → lo fa (test rapido, wintergre
 **Confronto finale con Ogawa:**
 
 - Prove schiaccianti → non serve tiro (regola GENKAI)
-- Prove parziali → tiro Presenza
-- Ogawa crolla o fugge → a scelta del GM
+- Prove parziali → tiro Presenza. Se non basta, Ogawa nega e chiede l'avvocato: niente scontro
 
----
+**Il finale con la pistola** (solo con prove complete — regole in `Combattimento/GENKAI_Combattimento.md`, v3.1):
 
-## MOMENTI SUGGERITI PER I KAGE
+Dopo «Ventotto anni della mia vita» Ogawa Masaru (il colpevole) mette la mano nella tasca interna della giacca e tira fuori una pistola compatta. Vuole tenere i PG a distanza e uscire dal giardino.
 
-I Kage sono a scelta dei giocatori. Il GM può suggerire (mai forzare):
-
-|Momento|Kage adatti|
-|---|---|
-|Dopo la scena del corpo|Morte, perdita, trauma|
-|Red herring Fujimoto|Dipendenze, problemi finanziari, famiglia|
-|Relazione Yuki-Nakamura|Tradimenti, relazioni complicate|
-|Ogawa identificato come colpevole|Vendetta, orgoglio ferito, giustizia|
+- **Ogawa come comparsa**: Distacco 5 · Pazienza 6 · Silenzio 6 · Lucidità 6 · Ascolto 5 · Presenza 4 · **Ki 8**. Nessuna Senmon d'arma
+- **Arma**: compatta .22/.25 — spara con Lucidità, ci si difende con Distacco · estrarre 2 · colpire 1 · ricarica 4 · **danno 3** · 3 colpi, niente raffica
+- **Sorpresa**: tiro di Ascolto per il PG che gli sta parlando. Chi fallisce non si difende dal primo colpo
+- **Luogo**: sala principale, tutti presenti. Coperture: tavolo laccato ribaltato assorbe 1, muro del corridoio 5. Zona «vicino»: la porta del giardino è a un'azione di movimento
+- **Fine**: a Ki 0 decide il GM (a terra, mani alzate, ferito che si trascina). Se i PG lo uccidono: il Conto e le conseguenze del 1997, dal manuale
 
 ---
 
