@@ -10,7 +10,7 @@ Prima di fare modifiche che cambiano la trama, i personaggi, le relazioni o le m
 
 **L'Ultima Cena di Tanaka** — avventura investigativa one-shot per il sistema GENKAI 限界 v1.3. Ambientata a Kyoto, 1997. Un industriale cosmetico viene ucciso durante una festa nella sua villa tramite un meccanismo a tre vettori (incenso, sake, sapone a doppio strato con wintergreen). Il colpevole è Ogawa Masaru, il direttore R&D.
 
-Tutto il materiale è in **italiano**. L'avventura è contenuta in un unico file: `Storia Completa.md` (~920 righe).
+Tutto il materiale è in **italiano**. La storia è in `Storia Completa.md` (~350 righe: crimine, Yamada e Ito, tabella En, indice stanze, scene); le **schede dei 16 PNG sono in `PNG/`** (un file per personaggio, col ruolo nel nome, dal 2026-09-15) e le **stanze in `Location/`** (un file per stanza; dal 2026-09-15 la storia ha solo un indice).
 
 Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investigare/`).
 
@@ -34,9 +34,9 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 1. Premessa GM e azienda (struttura societaria, quote)
 2. Il crimine — meccanismo e timeline dettagliata
 3. PNG istituzionali (Yamada, Ito — polizia e scientifica, PNG ricorrenti con schede in `Investigare/png notevoli/`)
-4. PNG presenti alla festa — schede complete per interrogatorio (Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, camerieri, Toda, Mori)
-5. PNG esterni (Nishida, Kano)
-6. Luoghi della villa (planimetria, stanze, prove)
+4. Rimando alle schede PNG in `PNG/` + tabella En riepilogativa (festa ed esterni)
+5. (le schede di Ogawa, Reiko, Fujimoto, Akemi, Hayashi, Tanaka Yuki, Nakamura, Sato, Endo, Toda, Mori, camerieri, Kano, Nishida stanno SOLO in `PNG/`)
+6. Indice delle stanze con rimando a `Location/` (le schede delle 10 stanze, con descrizione e indizi, stanno SOLO lì)
 7. Flusso di gioco (3 scene), tiri suggeriti
 8. Schema depistaggi, note finali
 
