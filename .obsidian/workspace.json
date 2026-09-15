@@ -11,14 +11,12 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura Sake/Storia Completa.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura Sake/Token/PNG.png"
               },
-              "icon": "lucide-file",
-              "title": "Storia Completa"
+              "icon": "lucide-image",
+              "title": "PNG"
             }
           }
         ]
@@ -229,9 +227,13 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/Token/Ogawa Reiko.png",
+    "Investigare/Avventura Sake/Token/Watanabe Jun.png",
+    "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
+    "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
+    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/Location/Bagno Padronale.md",
     "Investigare/Avventura Sake/Location/Bagno Ospiti Otearai.md",
-    "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Tra Galli/ESITO_BALISTICA_TAVOLO.md",
     "Investigare/Avventura Tra Galli/SEQUESTRO_ARMA_TAVOLO.md",
     "Investigare/Avventura Tra Galli/ESITO_AUTOPSIA_VETERINARIO_TAVOLO.md",
@@ -254,12 +256,10 @@
     "Investigare/Avventura Sake/PNG/Tanaka Yuki - moglie della vittima.md",
     "Investigare/Avventura Sake/PNG/Tanaka Kazuo - vittima.md",
     "Investigare/Avventura Tra Galli/GUIDA_MASTER_TAVOLO.md",
-    "Investigare/Avventura Tra Galli/LEGGIMI_TAVOLO.md",
     "Investigare/Avventura Sake/QR_Telegram_Bot.png",
     "Investigare/Avventura Sake/copertina_sake_villa.jpg",
     "Investigare/Avventura Sake/copertina_sake_scena.jpg",
     "Investigare/Avventura Sake/copertina_sake.jpg",
-    "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
     "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
     "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
     "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md.tmp.1520.bafd81315a06",
@@ -271,8 +271,6 @@
     "Investigare/Avventura Tra Galli/Aerea_Capannone_Kameoka-20260911-192145-096.png",
     "Investigare/Avventura Tra Galli/Aerea_Capannone_v2-20260911-192423-462.png",
     "Investigare/Avventura Tra Galli/Immagini/Luoghi/IMG-17_stazione_notte.png",
-    "Investigare/Avventura Tra Galli/Immagini/Luoghi/Aerea_Capannone_Kameoka_var.jpg",
-    "Investigare/Avventura Tra Galli/Immagini/Luoghi/Aerea_Capannone_Kameoka.jpg",
     "Investigare/Avventura Tra Galli/MAPPA_GIOCATORI_A3.html",
     "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.5afd8ef826d1"
   ]

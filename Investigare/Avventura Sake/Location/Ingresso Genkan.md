@@ -7,5 +7,5 @@
 
 ## Indizi
 
-- **La giacca di Tanaka** — contiene l'EpiPen, pieno, non usato. Il bagno è lontano dal guardaroba
+- **La giacca di Tanaka** — appesa al guardaroba, contiene l'EpiPen, pieno, non usato. Il bagno ospiti è oltre il muro, ma per arrivarci si esce nel corridoio: Tanaka non l'aveva addosso e si è chiuso dentro
 - **Le scarpe** — chi è arrivato quando? Aiuta a stabilire una timeline

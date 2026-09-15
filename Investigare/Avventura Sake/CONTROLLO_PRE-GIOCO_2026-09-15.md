@@ -261,3 +261,20 @@ Indicazioni dell'autore durante il giro: **è uno scenario, non un'avventura in 
 
 Copie in `PNG/` e `Location/` riallineate riga per riga alla storia (controllo automatico: zero righe divergenti).
 **Non toccato**: omonimie (decisione 2026-07-10), «Ascolto -2» (stessa convenzione del Manuale GM), parentesi «chi è chi» sull'intera storia (non richiesto in questo giro), `_adventure.json`.
+
+---
+
+## 10. Aggiornamento serale (2026-09-15, ore 23) — struttura nuova e controllo finale
+
+Su richiesta dell'autore, dopo la sezione 9:
+- Le 16 schede in `PNG/` si chiamano `Nome Cognome - ruolo.md` (es. `Tanaka Yuki - moglie della vittima.md`).
+- **Le schede dei PNG sono state tolte da `Storia Completa.md`** (verificato prima, riga per riga, che ogni scheda contenesse tutto): al loro posto un rimando a `PNG/` e la tabella En. Yamada Tetsuo (sergente) e Ito Daisuke (scientifica) restano nella storia: il loro contenuto è specifico di questo caso.
+- **Le stanze sono state tolte dalla storia** (stessa verifica): resta un indice con rimando a `Location/` e alle planimetrie H01a/H01b.
+- La storia è passata da 912 a 350 righe. `PNG/` e `Location/` sono le uniche fonti per personaggi e stanze.
+
+Controllo finale eseguito: storia riletta per intero; tabella En = En delle schede; 16 schede e 10 stanze intere; 13 handout con HTML ben formato; nessun residuo di Gou, Kage, «crolla o fugge», «registro chiamate».
+
+**Planimetrie (H01a, H01b) confrontate col testo — trovato e corretto**: sulla pianta il bagno ospiti è in fondo al corridoio di servizio **accanto all'ingresso e alle scale**, non «lontano dal guardaroba» come dicevano storia e due schede: testo allineato alla pianta (il meccanismo non cambia: Tanaka non ha la giacca addosso e si chiude dentro da solo). Aggiunte all'indice le stanze che la pianta mostra ma che non hanno scheda (sala da tè, stanza del personale e lavanderia; seconda camera, angolo lettura): niente di rilevante.
+**Non corretto (immagine)**: sulla pianta del piano terra il bagno ospiti è disegnato (WC e lavabo accanto alle scale) ma **non ha l'etichetta** «Bagno ospiti / Otearai»; tutte le altre stanze ce l'hanno. Si può aggiungere via PIL se l'autore vuole.
+
+**Cosa un controllo esterno segnalerà, per scelta o per rinvio dell'autore**: parentesi «chi è chi» non applicate sull'intera storia (regola ferrea 4); nomi dei file in `Token/` senza ruolo; nelle note finali il ritmo somma 40-55 minuti mentre la testata dice 60-90; omonimie (decisione 2026-07-10).

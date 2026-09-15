@@ -78,7 +78,7 @@ Ogawa, come direttore R&D, conosce la soglia esatta di pericolosità. Sa che un 
 
 **Ore 21:35** — Tanaka si lava il viso e le mani con il sapone. Lo strato protettivo è già consumato. Wintergreen concentrato a contatto con la pelle. Terzo vettore attivo. La reazione allergica accelera violentemente.
 
-**Ore 21:35-21:40** — Tanaka cerca di prendere l'EpiPen dalla giacca — ma la giacca è nel guardaroba all'ingresso, lontano dal bagno. Ogawa lo vede entrare nel bagno, chiude la porta per dargli privacy ma non gira il chiavistello, poi torna alla festa. Tanaka, sempre più compromesso, barcolla verso la porta per chiedere aiuto. Nella confusione dell'anafilassi gira il chiavistello convinto di aprirla — e si chiude dentro. Intrappolato dal suo stesso errore, troppo debole per capire cosa ha fatto, graffia il legno della porta e cerca di gridare. La musica copre tutto.
+**Ore 21:35-21:40** — Tanaka cerca di prendere l'EpiPen dalla giacca — ma la giacca è appesa nel guardaroba dell'ingresso, oltre il muro: per arrivarci dovrebbe uscire nel corridoio, e non ce l'ha addosso. Ogawa lo vede entrare nel bagno, chiude la porta per dargli privacy ma non gira il chiavistello, poi torna alla festa. Tanaka, sempre più compromesso, barcolla verso la porta per chiedere aiuto. Nella confusione dell'anafilassi gira il chiavistello convinto di aprirla — e si chiude dentro. Intrappolato dal suo stesso errore, troppo debole per capire cosa ha fatto, graffia il legno della porta e cerca di gridare. La musica copre tutto.
 
 **Ore 22:00 circa** — Qualcuno va a cercarlo. Lo trovano a terra nel bagno. Morto.
 
@@ -137,7 +137,7 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 - Nessun segno di violenza esterna, nessuna ferita, nessun segno di iniezione
 - Porta del bagno chiusa dall'interno con chiavistello semplice (girabile dall'esterno con oggetto piatto)
 - Lavandino e specchio bagnati — la vittima si è lavata
-- Graffi leggeri sul legno interno della porta — la vittima ha cercato disperatamente di uscire dopo essersi chiusa dentro da sola nella confusione dell'anafilassi
+- Graffi leggeri sul legno interno della porta — la vittima ha cercato di uscire
 - Ha isolato e catalogato tutto il contenuto del bagno, incluso il sapone
 
 **Cosa può riferire se i PG chiedono:**
@@ -148,7 +148,7 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 - **Sull'incenso:** Se i PG glielo portano: "Posso analizzarlo. Dammi cinque minuti." → "C'è metil-salicilato anche qui. Wintergreen nell'incenso."
 - **Sul chiavistello:** "Si gira dall'interno facilmente. Dall'esterno serve un oggetto piatto — una moneta, un coltellino, una chiave. Non serve forza." Se i PG insistono: "Preciso: questo tipo di chiavistello è simmetrico. Si gira nello stesso modo da entrambi i lati. Non c'è modo di determinare se è stato chiuso da dentro o da fuori."
 
-> **Nota GM:** La porta è stata chiusa da Tanaka stesso, nella confusione dell'anafilassi. I PG potrebbero sospettare che qualcuno l'abbia chiusa dall'esterno (Ogawa era stato visto seguirlo) — è una pista falsa. Se indagano il chiavistello, stanno perdendo tempo. Non frenare l'errore — la frustrazione quando scopriranno la verità è parte dell'esperienza.
+> **Nota GM:** Tanaka ha girato da solo il chiavistello nella confusione dell'anafilassi: questa è la verità nota al GM. I PG sanno solo che è stato trovato chiuso dentro; gli indizi non permettono di stabilire chi abbia girato il chiavistello. Possono sospettare Ogawa e trarre le proprie conclusioni. Durante l'interrogatorio Ogawa può ammettere di aver chiuso la porta senza girare il chiavistello: è la sua versione dei fatti, da valutare insieme al resto. Non è necessario che i PG ricostruiscano con certezza questo dettaglio per risolvere il caso.
 - **Sulla giacca di Tanaka:** Se i PG gliela portano: "EpiPen nel taschino interno. Pieno, non è stato utilizzato."
 
 **Cosa NON può fare:**
@@ -198,8 +198,8 @@ Ito è un veterano della scientifica. Metodico, lento, preciso. Non fa ipotesi �
 
 > **Nota per il GM:** ogni stanza ha la sua scheda (piano, funzione, descrizione da leggere, indizi) in un file della cartella `Location/`. Planimetrie nei handout H01a (piano terra) e H01b (primo piano).
 
-- **Piano terra**: Ingresso / Genkan (guardaroba: la giacca con l'EpiPen) · Sala principale / Ōhiroma (incenso, bottiglia, stereo) · **Bagno ospiti / Otearai — scena del crimine** (il sapone) · Cucina / Daidokoro · Studio di Tanaka / Shosai (documenti, agenda, cartellina di Ogawa) · Corridoio di servizio (la musica copre le grida)
-- **Primo piano**: Camera da letto padronale (lettere di Nakamura, farmaci) · Bagno padronale (il sapone col logo, per il confronto) · Camera degli ospiti (niente)
+- **Piano terra**: Ingresso / Genkan (guardaroba: la giacca con l'EpiPen) · Sala principale / Ōhiroma (incenso, bottiglia, stereo; dà sul giardino) · **Bagno ospiti / Otearai — scena del crimine** (il sapone; in fondo al corridoio di servizio, accanto all'ingresso e alle scale) · Cucina / Daidokoro · Studio di Tanaka / Shosai (documenti, agenda, cartellina di Ogawa) · Corridoio di servizio (la musica copre le grida) · sulla pianta ci sono anche la sala da tè (Chashitsu) e la stanza del personale con la lavanderia: niente di rilevante
+- **Primo piano**: Camera da letto padronale (lettere di Nakamura, farmaci) · Bagno padronale (il sapone col logo, per il confronto) · Camera degli ospiti (niente) · sulla pianta anche una seconda camera e un angolo lettura: niente di rilevante
 - **Esterno**: Giardino / Niwa (Yuki e Nakamura sulla panchina, Hayashi vicino allo stagno)
 
 ---

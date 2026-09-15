@@ -43,4 +43,4 @@ Sposata da 25 anni. Matrimonio formalmente perfetto, emotivamente morto da almen
 
 - Non ha competenze chimiche
 - Non conosceva il dettaglio dell'allergia (quali sostanze, a quale concentrazione)
-- Non ha avuto accesso al bagno nelle settimane precedenti per modificare il sapone
+- Non frequenta il bagno ospiti: usa il proprio bagno padronale al piano superiore
