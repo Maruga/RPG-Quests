@@ -13,22 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png"
+                "file": "Investigare/Avventura Tanto Rumore/Immagini/Planimetria con esterno.png"
               },
               "icon": "lucide-image",
-              "title": "01_Arrivo_alla_villa"
-            }
-          },
-          {
-            "id": "88705fd897213cf4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "01_Rapporto_Primo_Intervento"
+              "title": "Planimetria con esterno"
             }
           }
         ]
@@ -239,34 +227,38 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
+    "Investigare/Avventura Tanto Rumore/storico/aggiorna_pavimento_20260916.py",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_pavimenti_2026-09-16/precedente_con_margini.pdf",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_pavimenti_2026-09-16/StatoJson_dopo.json",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_pavimenti_2026-09-16/StatoJson_prima.txt",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti/prompt_immagine.txt",
+    "Investigare/Stampa/Locandina_GENKAI/LEGGIMI.md",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti/anteprima.png",
+    "Investigare/Stampa/Locandina_GENKAI/GENKAI_Locandina.png",
+    "Investigare/Stampa/Locandina_GENKAI/GENKAI_Locandina_A3.pdf",
+    "Investigare/Stampa/Locandina_GENKAI/GENKAI_Locandina_A4.pdf",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti/crea_locandina.py",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti/genkai_logo.png",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti/kyoto_noir.png",
+    "Investigare/Stampa/Locandina_GENKAI/sorgenti",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_pavimenti_2026-09-16/prima.png",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_A3_2026-09-16/ESITO.md",
+    "Investigare/Avventura Tanto Rumore/Immagini/Planimetria.png",
+    "Investigare/Avventura Tanto Rumore/Immagini/Planimetria con esterno.png",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_A3_2026-09-16/anteprima_A3.png",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_A3_2026-09-16/Planimetria prima.png",
+    "Investigare/Avventura Tanto Rumore/Immagini/Pocket Bell.png",
+    "Investigare/Avventura Tanto Rumore/storico/mappa_esterno_2026-09-16/ESITO.md",
     "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/ESITO.md",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/VERIFICHE.txt",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/13_deposizione_aoki_hideki.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/12_deposizione_watanabe_noriko_ultima.png",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/12_deposizione_watanabe_noriko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/11_deposizione_shimada_yumiko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/10_deposizione_shimada_yasuhiro.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/09_deposizione_ishida_kazuhiko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/07_magazzino_koban_di_kamigyo_ultima.png",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/08_deposizione_chiba_hiroko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/07_magazzino_koban_di_kamigyo.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/05_pocket_bell_tabulato_1_febbraio_24_maggio_1997_ultima.png",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/06_fascicolo_cbx400f_koban_di_kamigyo.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/05_pocket_bell_tabulato_1_febbraio_24_maggio_1997.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/03_giornale_del_27_05_1997_ultima.png",
-    "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/verifica_stampa/01_referto_autopsia_della_vittima_ultima.png",
     "Investigare/Avventura Tanto Rumore/storico/Controllo_avventura_2026-09-16.md",
-    "Investigare/Avventura Sake/handout/Atmosfera/03_La_scena_del_bagno.png",
-    "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png",
-    "Investigare/Avventura Sake/handout/Atmosfera/precedenti/03_Bagno_con_telo.png",
-    "Investigare/Avventura Sake/handout/Atmosfera/02_Il_posto_vuoto.png",
     "Investigare/Avventura Non Torna/LUOGHI.md",
     "Investigare/Avventura Non Torna/TIRI.md",
     "Investigare/Avventura Non Torna/SCHEDA_Il_Nipote.md",
     "Investigare/Avventura Non Torna/SCENE.md",
     "Investigare/Avventura Non Torna/LA_STORIA.md",
     "Investigare/Avventura Non Torna/CLAUDE.md",
-    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra.png",
     "Investigare/Avventura Sake/CONTROLLO_PRE-GIOCO_2026-09-15.md",
     "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/Location/Bagno Padronale.md",
@@ -280,10 +272,6 @@
     "Investigare/Avventura Sake/PNG/Kano Gentaro - negoziante di incenso.md",
     "Investigare/Avventura Sake/PNG/Watanabe Jun - cameriere.md",
     "Investigare/Avventura Sake/PNG/Ishii Takuya - cameriere.md",
-    "Investigare/Avventura Sake/PNG/Mori Sachiko - aiuto cuoca senior.md",
-    "Investigare/Avventura Sake/PNG/Toda Yumi - aiuto cuoca.md",
-    "Investigare/Avventura Sake/PNG/Endo Toshio - cuoco.md",
-    "Investigare/Avventura Sake/PNG/Sato Harumi - domestica.md",
-    "Investigare/Avventura Sake/PNG/Nakamura Daisuke - amante della moglie, gallerista.md"
+    "Investigare/Avventura Sake/PNG/Mori Sachiko - aiuto cuoca senior.md"
   ]
 }

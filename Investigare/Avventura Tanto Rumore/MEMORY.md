@@ -1,5 +1,49 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
+## Pavimenti distinti e stampa a filo — 2026-09-16, stato attuale
+
+- L'utente vuole **solo l'immagine**: la stampante stampa A3 a filo. Usare
+  `Immagini/Planimetria con esterno.png`, in proporzione A3 orizzontale e senza
+  margini di stampa aggiunti. Non riproporre il PDF con margini.
+- Interno del capannone in cemento industriale grigio, più scuro e uniforme;
+  esterno chiaro, caldo e screpolato. Conservati bagno piastrellato, soppalco,
+  finestre, disposizione e spazio superiore. Modifica con imagegen integrato.
+- Aggiornato anche il PNG alla fonte; il vecchio PDF è stato tolto dagli allegati
+  correnti e conservato in `storico/mappa_pavimenti_2026-09-16/precedente_con_margini.pdf`.
+  L'export non ripubblica i PDF non più collegati al caso. Prompt e PNG precedente
+  sono nella stessa cartella storica. Le sezioni precedenti sul PDF A3 sono superate.
+
+## Mappa A3, finestre e soppalco — 2026-09-16, ultima revisione
+
+- Richiesta utente: preservare la mappa e intervenire solo su formato A3, spazio
+  superiore, finestra del bagno, finestra dell'ufficio e struttura del soppalco.
+- Aggiornata `Immagini/Planimetria con esterno.png`: perimetro nord interamente
+  visibile e più spazio sul retro, finestrella del bagno, una sola finestra più
+  grande nell'angolo del capo; soppalco disegnato con piano, parapetto, scala e
+  quattro pilastri di sostegno. Disposizione generale conservata.
+- **Per stampare usare `Immagini/Planimetria combattimento A3.pdf`**: una pagina
+  A3 orizzontale esatta, 420 × 297 mm, margini di almeno 5 mm, nessun ritaglio o
+  deformazione. `stampa_planimetria_A3.py` lo rigenera dal PNG senza modificarne i pixel.
+- PNG aggiornato anche nella fonte e PDF aggiunto agli allegati con `uso: scena`;
+  il PDF è il file da aprire per la stampa A3. L'indice degli handout lo collega.
+  Entrambi restano riservati al finale. Il PDF non si aggiunge ai documenti del kōban.
+- Backup, prompt e anteprima stampata: `storico/mappa_A3_2026-09-16/`.
+
+## Refusi e planimetria con esterno — 2026-09-16, seguito
+
+- Corretti alla fonte i due refusi autorizzati: **Yumiko è la sorella maggiore**
+  (23 anni; Yuta 21); Noriko frequenta **lo stesso complesso scolastico, non la stessa
+  classe**. Storia, schede e dossier rigenerati.
+- Mappa attuale del finale: **`Immagini/Planimetria con esterno.png`**, collegata anche
+  negli allegati del caso come materiale `uso: scena`. L'originale
+  `Immagini/Planimetria.png` resta conservato per il dettaglio del solo interno.
+- Nuova versione realizzata con imagegen integrato, mantenendo la disposizione
+  interna e aggiungendo cortile di carico, cancello scorrevole sulla strada,
+  guardiola, tettoia e passaggi esterni fino all'uscita di servizio sul retro.
+  Nessuna griglia o scala metrica aggiunta. Continua a mostrarsi SOLO al finale.
+- Prompt, prima variante e backup del collegamento: `storico/mappa_esterno_2026-09-16/`.
+  Backup dei due refusi: `storico/refusi_2026-09-16/`.
+
 ## Revisione date e consegne — 2026-09-16 (ultima decisione utente)
 
 - L'utente ha autorizzato esplicitamente la correzione degli handout, delle date e

@@ -343,6 +343,11 @@ indice += ['', '## Materiale visivo del master', '',
            '- **Planimetria e tre immagini del covo:** mostrare solo durante il finale al capannone, per ambientazione e combattimento; escluse dalla risposta stampata del kōban.',
            '- **Due immagini del cercapersone:** esempi da mostrare dal Surface se occorre spiegare l’oggetto; i display illustrativi non sono nuovi indizi.',
            '- **Fascicolo fotografico di Matsui:** `Immagini/fascicolo-matsui.png`, allegato alla risposta sulle moto.', '']
+for tr in S['passo9']['tracce']:
+    for a in tr.get('allegati', []):
+        if a.get('uso') == 'scena' and a.get('formatoStampa'):
+            indice.append(f'- **Per stampare la mappa — {a["formatoStampa"]}:** '
+                          f'[{a["nome"]}](<../Immagini/{nome_allegato(a)}>), una pagina intera senza ritagli.')
 open(os.path.join(DEST, 'handout', '_Indice.md'), 'w', encoding='utf-8').write('\n'.join(indice) + '\n')
 
 # ═══════════ Token/ e Immagini/ ═══════════
@@ -363,10 +368,13 @@ for p in S['cast']:
     n_tok += 1
 
 n_img = 0
+pdf_attivi = {nome_allegato(a) for tr in S['passo9']['tracce'] for a in tr.get('allegati', [])
+              if a.get('url') and nome_allegato(a).lower().endswith('.pdf')}
 if os.path.isdir(ALLEG):
     for f in os.listdir(ALLEG):
         if f.startswith('ritratto-') or f.startswith('Chiba Hiroko-'): continue   # ritratti: già in Ritratti/
         pulito = re.sub(r'-\d{15,}(?=\.)', '', f)                                  # via il timestamp dal nome
+        if f.lower().endswith('.pdf') and pulito not in pdf_attivi: continue  # versioni archiviate, non materiale corrente
         shutil.copy2(os.path.join(ALLEG, f), os.path.join(DEST, 'Immagini', pulito))
         n_img += 1
 

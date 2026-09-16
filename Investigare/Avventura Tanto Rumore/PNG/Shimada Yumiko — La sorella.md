@@ -1,7 +1,7 @@
 # Shimada Yumiko (島田 由美子) — LA SORELLA della vittima
 
 **Età:** 23 anni · donna
-**Cerchia:** Sorella minore — nel mondo della vittima
+**Cerchia:** Sorella maggiore — nel mondo della vittima
 
 **En:**
 - **Shimada Yuta** · (fratelli) · En verso Shimada: **4** · En di Shimada in risposta: **4**

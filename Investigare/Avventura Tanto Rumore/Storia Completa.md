@@ -28,7 +28,7 @@ Il colpevole è **Matsui Kenta**. Movente: **Gelosia** — Il capo della banda, 
 ### I nodi nella vita della vittima
 
 - Frequentava un gruppo di giovani della yakuza *(potenziale falsa pista)*
-- Innamorato della sua compagna di classe Watanabe
+- Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe
 
 ### Chi altro aveva la stessa ragione
 
@@ -99,7 +99,7 @@ Le schede complete, una per file, in **`PNG/`** — cosa sanno, cosa nascondono,
 | **Chiba Hiroko** 千葉 裕子 | collega di lavoro | 27 | [[PNG/Chiba Hiroko — La cameriera testimone.md\|Chiba Hiroko]] |
 | **Ishida Kazuhiko** 石田 和彦 | Titolare sul lavoro | 48 | [[PNG/Ishida Kazuhiko — Il titolare.md\|Ishida Kazuhiko]] |
 | **Shimada Yasuhiro** 島田 康弘 | Madre | 51 | [[PNG/Shimada Yasuhiro — La madre.md\|Shimada Yasuhiro]] |
-| **Shimada Yumiko** 島田 由美子 | Sorella minore | 23 | [[PNG/Shimada Yumiko — La sorella.md\|Shimada Yumiko]] |
+| **Shimada Yumiko** 島田 由美子 | Sorella maggiore | 23 | [[PNG/Shimada Yumiko — La sorella.md\|Shimada Yumiko]] |
 | **Sugimoto Hideki** 杉本 秀樹 | Braccio destro nella banda | 24 | [[PNG/Sugimoto Hideki — Il braccio destro.md\|Sugimoto Hideki]] |
 | **Suzuki Nobuyuki** 鈴木 信之 | Capo del kōban di Kamigyō | 46 | [[PNG/Suzuki Nobuyuki — Il capo del koban.md\|Suzuki Nobuyuki]] |
 | **Tanaka Takayuki** 田中 隆行 | Componente banda | 22 | [[PNG/Tanaka Takayuki — La spia della banda.md\|Tanaka Takayuki]] |
@@ -165,7 +165,7 @@ Il capo posto — SUZUKI Nobuyuki 鈴木 信之»
   - **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo una richiesta specifica sul ritrovo del gruppo (anche insieme alla richiesta sulle moto, se i PG la formulano): indicazioni entro un’ora, copia scritta entro due ore. La risposta permette di raggiungere il capannone, senza un altro ostacolo sull’indirizzo. MAPPA E TRE IMMAGINI DEL COVO: materiale di scena del master, da mostrare solo nel finale al capannone, per ambientazione e combattimento; non sono allegati da consegnare con questa risposta.
 - **da Watanabe Noriko** (interrogatorio)
   - «Sa solo la zona: i capannoni di Murasakino, a Kita-ku. Il posto esatto non lo conosce — dentro non c'è mai stata.»
-- materiale di scena — solo al finale: `Immagini/Planimetria.png`
+- materiale di scena — solo al finale: `Immagini/Planimetria con esterno.png`
 - materiale di scena — solo al finale: `Immagini/Zona Ritrovo.png`
 - materiale di scena — solo al finale: `Immagini/Zona Officina.png`
 - materiale di scena — solo al finale: `Immagini/Angolo Capo.png`

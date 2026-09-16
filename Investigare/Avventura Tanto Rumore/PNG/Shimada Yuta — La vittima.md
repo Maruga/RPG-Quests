@@ -24,7 +24,7 @@ studente di medicina
 ## Chi aveva intorno
 
 - **Shimada Yasuhiro** — Madre
-- **Shimada Yumiko** — Sorella minore
+- **Shimada Yumiko** — Sorella maggiore
 - **Chiba Hiroko** — collega di lavoro
 - **Ishida Kazuhiko** — Titolare sul lavoro
 - **Aoki Hideki** — Compagno di classe
@@ -34,4 +34,4 @@ studente di medicina
 ## I nodi nella sua vita
 
 - Frequentava un gruppo di giovani della yakuza *(potenziale falsa pista)*
-- Innamorato della sua compagna di classe Watanabe
+- Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe

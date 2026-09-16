@@ -38,7 +38,7 @@ GENKAI ver: 1.3
 
 Frequentava un gruppo di giovani della yakuza   *falsa pista*
 
-Innamorato della sua compagna di classe Watanabe
+Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe
 
 ### Chi altro aveva la stessa ragione
 

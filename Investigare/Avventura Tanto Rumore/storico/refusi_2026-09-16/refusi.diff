@@ -1,0 +1,20 @@
+--- prima
++++ dopo
+@@ -882,7 +882,7 @@
+       },
+       {
+         "personaId": "p5j75fj",
+-        "relazione": "Sorella minore"
++        "relazione": "Sorella maggiore"
+       }
+     ],
+     "lavoro": [
+@@ -912,7 +912,7 @@
+         "problemaId": "amante"
+       },
+       {
+-        "testo": "Innamorato della sua compagna di classe Watanabe",
++        "testo": "Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe",
+         "potenzialeFalsaPista": false,
+         "problemaId": "mutuoBolla"
+       }
