@@ -11,14 +11,12 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura Non Torna/LUOGHI.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png"
               },
-              "icon": "lucide-file",
-              "title": "LUOGHI"
+              "icon": "lucide-image",
+              "title": "01_Arrivo_alla_villa"
             }
           },
           {
@@ -241,17 +239,19 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Sake/handout/Atmosfera/03_La_scena_del_bagno.png",
+    "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png",
+    "Investigare/Avventura Sake/handout/Atmosfera/precedenti/03_Bagno_con_telo.png",
+    "Investigare/Avventura Sake/handout/Atmosfera/precedenti",
+    "Investigare/Avventura Sake/handout/Atmosfera/02_Il_posto_vuoto.png",
+    "Investigare/Avventura Non Torna/LUOGHI.md",
     "Investigare/Avventura Non Torna/TIRI.md",
     "Investigare/Avventura Non Torna/SCHEDA_Il_Nipote.md",
     "Investigare/Avventura Non Torna/SCENE.md",
-    "Investigare/Avventura Non Torna/LUOGHI.md",
     "Investigare/Avventura Non Torna/LA_STORIA.md",
     "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
     "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
     "Investigare/Avventura Non Torna/CLAUDE.md",
-    "Investigare/Avventura Sake/handout/Atmosfera/03_La_scena_del_bagno.png",
-    "Investigare/Avventura Sake/handout/Atmosfera/02_Il_posto_vuoto.png",
-    "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png",
     "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra.png",
     "Investigare/Avventura Sake/handout/Piano Terra.png",
     "Investigare/Avventura Sake/handout/Primo Piano.png",
@@ -280,12 +280,10 @@
     "Investigare/Avventura Sake/PNG/Sato Harumi - domestica.md",
     "Investigare/Avventura Sake/PNG/Nakamura Daisuke - amante della moglie, gallerista.md",
     "Investigare/Avventura Sake/PNG/Hayashi Kenji - socio giovane, ha portato l'incenso.md",
-    "Investigare/Avventura Sake/PNG/Fujimoto Akemi - sorella della vittima.md",
     "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md.tmp.1520.bafd81315a06",
     "Investigare/Avventura Non Torna/TIRI.md.tmp.1520.8f32e5937aaf",
     "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.ee1895e6ec83",
     "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.c3d0219248af",
-    "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.zip",
-    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.a6190bed1d3e"
+    "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.zip"
   ]
 }
