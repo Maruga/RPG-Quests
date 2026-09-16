@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Non torna — pianta dell'appartamento, quadretti da 1 metro</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4 landscape; margin: 0; }
+  body { font-family: Cambria, "Palatino Linotype", Georgia, serif;
+         font-variant-numeric: lining-nums tabular-nums; color: #111; background: #fff; }
+  .foglio { width: 297mm; height: 210mm; padding: 8mm 9mm; display: flex; gap: 6mm; }
+  .sinistra { flex: 0 0 166mm; }
+  .destra { flex: 1; font-size: 8.4pt; line-height: 1.3; }
+  h1 { font-size: 12.5pt; margin-bottom: .8mm; }
+  h1 small { font-weight: normal; font-size: 8.2pt; color: #555; }
+  h2 { font-size: 8.6pt; text-transform: uppercase; letter-spacing: 1px; margin: 2.6mm 0 .8mm;
+       border-bottom: 1px solid #111; padding-bottom: .5mm; }
+  h2:first-child { margin-top: 0; }
+  p { margin-bottom: 1.3mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 8pt; }
+  th { text-align: left; font-size: 7.2pt; text-transform: uppercase; letter-spacing: .5px;
+       color: #555; border-bottom: .8pt solid #111; padding: 0 1.5mm .5mm 0; }
+  th.c, td.c { text-align: center; }
+  td { padding: .75mm 1.5mm .75mm 0; border-bottom: .3pt solid #ccc; vertical-align: top; }
+  td.m { font-weight: bold; white-space: nowrap; }
+  td.c { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul { margin: .8mm 0 0; padding-left: 3.4mm; }
+  li { margin-bottom: .9mm; }
+  .nota { font-size: 7.4pt; color: #555; font-style: italic; margin-top: 1.5mm; }
+  svg { display: block; }
+  text { font-family: Cambria, Georgia, serif; }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+<div class="sinistra">
+<h1>L'appartamento — interno 305 <small>· un quadretto = 1 metro · scala 1:40</small></h1>
+
+<svg width="166mm" height="182mm" viewBox="-14 -12 166 198">
+  <defs>
+    <pattern id="acqua" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="3.2" stroke="#8fb4d0" stroke-width=".45"/>
+    </pattern>
+    <pattern id="legno" width="2.4" height="2.4" patternUnits="userSpaceOnUse">
+      <rect width="2.4" height="2.4" fill="#fff"/><circle cx="1.2" cy="1.2" r=".26" fill="#c2c2c2"/>
+    </pattern>
+    <marker id="f" markerWidth="5" markerHeight="5" refX="3.2" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#5a86a6"/></marker>
+  </defs>
+
+  <!-- l'acqua -->
+  <g opacity=".9">
+    <rect x="24" y="72" width="48" height="72" fill="url(#acqua)"/>
+    <path d="M27,72 L45,72 L45,52 L4,52 L4,144 L24,144 L24,72 Z" fill="url(#acqua)" opacity=".55"/>
+  </g>
+  <g stroke="#5a86a6" stroke-width=".8" fill="none" marker-end="url(#f)">
+    <path d="M36,102 L36,78"/>
+    <path d="M33,66 L15,58"/>
+    <path d="M17,70 L17,120"/>
+  </g>
+
+  <!-- griglia -->
+  <g stroke="#cfcfcf" stroke-width=".3">
+    <path d="M0,0 H144 M0,24 H144 M0,48 H144 M0,72 H144 M0,96 H144 M0,120 H144 M0,144 H144"/>
+    <path d="M0,0 V144 M24,0 V144 M48,0 V144 M72,0 V144 M96,0 V144 M120,0 V144 M144,0 V144"/>
+  </g>
+  <g stroke="#e4e4e4" stroke-width=".3">
+    <path d="M0,168 H144 M0,144 V168 M24,144 V168 M48,144 V168 M72,144 V168 M96,144 V168 M120,144 V168 M144,144 V168"/>
+  </g>
+
+  <!-- arredi -->
+  <g stroke="#3a3a3a" stroke-width=".5" fill="url(#legno)">
+    <rect x="1.5" y="1.5" width="45" height="9"/>          <!-- lavello + fornello -->
+    <rect x="51" y="1.5" width="18" height="16"/>          <!-- frigo -->
+    <rect x="78" y="29" width="36" height="16"/>           <!-- tavolo -->
+    <rect x="125" y="2" width="17" height="9"/>            <!-- TV -->
+    <rect x="125" y="30" width="17" height="12"/>          <!-- tavolino riviste -->
+    <rect x="99" y="74.5" width="43" height="10"/>         <!-- armadio, parete nord della camera -->
+    <rect x="75" y="101" width="10" height="20"/>          <!-- comò -->
+  </g>
+  <g stroke="#3a3a3a" stroke-width=".5" fill="#fff">       <!-- sedie scostate -->
+    <rect x="86" y="16" width="9" height="9"/>
+    <rect x="97" y="49" width="9" height="9"/>
+  </g>
+
+  <!-- letto: testata a nord, cuscino disegnato -->
+  <g stroke="#3a3a3a" stroke-width=".55">
+    <rect x="112" y="92" width="30" height="50" rx="1" fill="url(#legno)"/>
+    <rect x="114.5" y="94.5" width="25" height="11" rx="1.6" fill="#fff"/>
+    <path d="M112,112 H142" stroke="#8a8a8a" stroke-width=".4"/>
+    <path d="M114.5,100 H139.5" stroke="#cfcfcf" stroke-width=".35"/>
+  </g>
+
+  <!-- vasca -->
+  <rect x="27" y="122" width="42" height="19" rx="2.5" fill="#eef4f8" stroke="#3a3a3a" stroke-width=".7"/>
+  <rect x="30" y="125" width="36" height="13" rx="1.5" fill="none" stroke="#8fb4d0" stroke-width=".45"/>
+  <circle cx="65" cy="120" r="1.5" fill="#fff" stroke="#3a3a3a" stroke-width=".45"/>
+  <circle cx="34" cy="104" r="2" fill="none" stroke="#5a5a5a" stroke-width=".5"/>
+
+  <!-- pantofole: fuori dal bagno, di fianco alla porta, contro il muro -->
+  <g fill="#fff" stroke="#111" stroke-width=".55">
+    <rect x="50" y="62.5" width="5" height="8" rx="2.2"/><rect x="57" y="62.5" width="5" height="8" rx="2.2"/>
+  </g>
+  <!-- scarpe nel genkan -->
+  <g fill="#fff" stroke="#999" stroke-width=".45">
+    <rect x="6" y="129" width="4.5" height="7" rx="2"/><rect x="12" y="129" width="4.5" height="7" rx="2"/>
+  </g>
+
+  <!-- muri -->
+  <g stroke="#111" stroke-width="2.4" fill="none" stroke-linecap="butt">
+    <rect x="0" y="0" width="144" height="144"/>
+    <path d="M20,72 H27"/>
+    <path d="M45,72 H75"/>
+    <path d="M93,72 H144"/>
+    <path d="M24,72 V144"/>
+    <path d="M72,72 V144"/>
+  </g>
+
+  <!-- finestre: il muro si interrompe, doppia linea sottile -->
+  <g>
+    <rect x="26" y="-1.6" width="20" height="3.2" fill="#fff"/>
+    <path d="M26,-1 H46 M26,1 H46" stroke="#111" stroke-width=".5"/>
+    <rect x="78" y="-1.6" width="36" height="3.2" fill="#fff"/>
+    <path d="M78,-1 H114 M78,1 H114" stroke="#111" stroke-width=".5"/>
+    <rect x="50" y="142.4" width="16" height="3.2" fill="#fff"/>
+    <path d="M50,143 H66 M50,145 H66" stroke="#111" stroke-width=".5"/>
+    <rect x="94" y="142.4" width="20" height="3.2" fill="#fff"/>
+    <path d="M94,143 H114 M94,145 H114" stroke="#111" stroke-width=".5"/>
+  </g>
+
+  <!-- porte e battenti -->
+  <g stroke="#111" stroke-width=".8" fill="none">
+    <path d="M27,72 A18,18 0 0 1 27,54"/>
+    <path d="M93,72 A18,18 0 0 0 93,54"/>
+    <path d="M4,144 A16,16 0 0 0 4,160"/>
+  </g>
+  <g stroke="#111" stroke-width="1" fill="none">
+    <path d="M27,72 H45" stroke-dasharray="2 2"/>
+    <path d="M75,72 H93" stroke-dasharray="2 2"/>
+    <path d="M4,144 H20" stroke="#fff" stroke-width="2.8"/>
+    <path d="M4,144 H20" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- etichette -->
+  <g fill="#111" text-anchor="middle">
+    <text x="42" y="36" font-size="6" letter-spacing="1.4">STANZA</text>
+    <text x="42" y="43.5" font-size="3.8" fill="#444">cucina e sala</text>
+    <text x="48" y="90" font-size="6" letter-spacing="1.4">BAGNO</text>
+    <text x="98" y="96" font-size="5" letter-spacing="1.2">CAMERA</text>
+  </g>
+  <text x="8.5" y="100" font-size="3.6" fill="#555" text-anchor="middle" transform="rotate(-90 8.5,100)">GENKAN</text>
+  <g font-size="3.4" fill="#444" text-anchor="middle">
+    <text x="24" y="15">lavello · piatti · il coltello</text>
+    <text x="60" y="21.5">frigo</text>
+    <text x="96" y="39">tavolo</text>
+    <text x="133.5" y="16">TV</text>
+    <text x="133.5" y="47">riviste</text>
+    <text x="56" y="60">pantofole</text>
+    <text x="48" y="118">vasca</text>
+    <text x="34" y="99" font-size="2.9">scarico</text>
+    <text x="120.5" y="81.5" font-size="3.2">armadio</text>
+    <text x="127" y="128">letto</text>
+    <text x="80" y="128" font-size="3" transform="rotate(-90 80,128)">comò</text>
+    <text x="11" y="141" font-size="3">scarpe</text>
+    <text x="11" y="152.5" font-size="3.2" fill="#666">ingresso</text>
+    <text x="72" y="160" fill="#888">ballatoio esterno — le scale sono a sinistra</text>
+  </g>
+  <g font-size="2.9" fill="#7c93a6" text-anchor="middle">
+    <text x="36" y="-3.2">finestra</text><text x="96" y="-3.2">finestra</text>
+    <text x="58" y="149">finestrella</text><text x="104" y="149">finestra</text>
+  </g>
+
+  <!-- coordinate -->
+  <g font-size="4.2" fill="#777" font-weight="bold" text-anchor="middle">
+    <text x="12" y="-7.5">A</text><text x="36" y="-7.5">B</text><text x="60" y="-7.5">C</text>
+    <text x="84" y="-7.5">D</text><text x="108" y="-7.5">E</text><text x="132" y="-7.5">F</text>
+    <text x="-5" y="13.5">1</text><text x="-5" y="37.5">2</text><text x="-5" y="61.5">3</text>
+    <text x="-5" y="85.5">4</text><text x="-5" y="109.5">5</text><text x="-5" y="133.5">6</text>
+    <text x="-5" y="157.5">7</text>
+  </g>
+
+  <!-- scala -->
+  <g transform="translate(0,174)">
+    <line x1="0" y1="0" x2="72" y2="0" stroke="#111" stroke-width=".8"/>
+    <g stroke="#111" stroke-width=".8"><path d="M0,-2 V2 M24,-2 V2 M48,-2 V2 M72,-2 V2"/></g>
+    <text x="0" y="6.5" font-size="3.6" fill="#444">0</text>
+    <text x="24" y="6.5" font-size="3.6" fill="#444" text-anchor="middle">1 m</text>
+    <text x="72" y="6.5" font-size="3.6" fill="#444" text-anchor="middle">3 m</text>
+    <text x="80" y="1.6" font-size="3.6" fill="#444">un quadretto = 1 metro · 36 m² lordi</text>
+  </g>
+</svg>
+</div>
+
+<div class="destra">
+  <h2>Come si legge</h2>
+  <p>Vista dall'alto. Si entra dal ballatoio, in basso a sinistra. Sulla parete di fondo, a destra di chi
+  entra, prima il bagno e poco più avanti la camera. Il tratteggio azzurro con le frecce è il velo d'acqua,
+  nel verso in cui è colato: dalla vasca, fuori dal bagno, per la stanza, sotto la porta d'ingresso.</p>
+
+  <h2>Il movimento — un quadretto per volta</h2>
+  <table>
+    <tr><th>Come ti muovi</th><th class="c">Quadr.</th><th class="c">Vel.</th><th>Cosa comporta</th></tr>
+    <tr><td class="m">Un passo</td><td class="c">1</td><td class="c">0</td><td>gratis, insieme all'attacco o a un'altra azione</td></tr>
+    <tr><td class="m">Cammini</td><td class="c">4</td><td class="c">2</td><td>è l'azione dello scambio: niente attacco</td></tr>
+    <tr><td class="m">Avanzi controllando</td><td class="c">2</td><td class="c">3</td><td>tieni l'arma puntata, non perdi la mira, puoi ancora andare in Ukemi</td></tr>
+    <tr><td class="m">Corri</td><td class="c">8</td><td class="c">4</td><td>né attacco né difesa, e chi ti spara ha +1: sei un bersaglio che si muove</td></tr>
+    <tr><td class="m">Ti butti</td><td class="c">1</td><td class="c">1</td><td>la reazione istintiva: a terra, o dietro la copertura a portata di mano</td></tr>
+    <tr><td class="m">Scavalchi</td><td class="c">2</td><td class="c">3</td><td>il tavolo, il bancone, il parapetto del ballatoio</td></tr>
+    <tr><td class="m">Stai basso</td><td class="c">2</td><td class="c">2</td><td>chi ti spara da lontano ha +2: sei mezzo coperto</td></tr>
+    <tr><td class="m">Ti rialzi</td><td class="c">—</td><td class="c">2</td><td>da terra, o da seduto</td></tr>
+    <tr><td class="m">Ti liberi e scappi</td><td class="c">4</td><td class="c">5</td><td>da una presa: è un'operazione, e si sente</td></tr>
+  </table>
+  <p class="nota">La velocità si somma al tiro d'iniziativa, e <b>più è alta più agisci tardi</b>: chi
+  attraversa la stanza di corsa arriva dopo chi ha fatto un passo e ha sparato.</p>
+
+  <h2>Le quattro regole</h2>
+  <ul>
+    <li><b>In diagonale</b> si paga un quadretto come in dritto, ma non si taglia l'angolo di un muro.</li>
+    <li><b>Una porta chiusa</b> costa un quadretto in più: aprirla è parte del movimento.</li>
+    <li><b>Metà quadretti</b> per chi è anziano, ferito, ubriaco, al buio, sulle scale, su un pavimento
+    ingombro, o per chi trascina qualcuno. Non c'è nessun valore di movimento in scheda: sono le
+    condizioni a cambiarlo, e le vede il master.</li>
+    <li><b>Gli inseguimenti non si contano a quadretti</b>: due che corrono vanno uguale. Si tirano —
+    Pazienza in strada aperta, Lucidità fra i vicoli, Presenza in mezzo alla gente — e chi vince il giro
+    guadagna un passo.</li>
+  </ul>
+
+  <h2>Le distanze di questa casa</h2>
+  <table>
+    <tr><td class="m">2 m</td><td>dal tavolo al lavello: due quadretti, un passo e un passo</td></tr>
+    <tr><td class="m">5 m</td><td>dal lavello alla porta d'ingresso, passando dal genkan</td></tr>
+    <tr><td class="m">1 m</td><td>la larghezza del genkan: chi lo occupa chiude l'uscita</td></tr>
+    <tr><td class="m">2×3 m</td><td>il bagno: dentro non si scappa e non ci si gira in due</td></tr>
+  </table>
+  <p class="nota">Dentro casa si è sempre a contatto o al più vicino: la stanza più lunga misura sei metri.
+  Quadretto da 1 metro perché è quasi il mezzo tatami su cui sono costruite queste case, e i muri cadono
+  sulle righe. <b>Pianta e movimento sono una prova, fuori dal regolamento.</b></p>
+</div>
+
+</div>
+</body>
+</html>
