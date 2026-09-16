@@ -11,12 +11,26 @@
             "id": "067b1f7c3b406617",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Sake/handout/Primo Piano.png"
+                "file": "Investigare/Avventura Non Torna/LUOGHI.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Primo Piano"
+              "icon": "lucide-file",
+              "title": "LUOGHI"
+            }
+          },
+          {
+            "id": "88705fd897213cf4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "01_Rapporto_Primo_Intervento"
             }
           }
         ]
@@ -227,18 +241,27 @@
   },
   "active": "067b1f7c3b406617",
   "lastOpenFiles": [
+    "Investigare/Avventura Non Torna/TIRI.md",
+    "Investigare/Avventura Non Torna/SCHEDA_Il_Nipote.md",
+    "Investigare/Avventura Non Torna/SCENE.md",
+    "Investigare/Avventura Non Torna/LUOGHI.md",
+    "Investigare/Avventura Non Torna/LA_STORIA.md",
+    "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
+    "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
+    "Investigare/Avventura Non Torna/CLAUDE.md",
+    "Investigare/Avventura Sake/handout/Atmosfera/03_La_scena_del_bagno.png",
+    "Investigare/Avventura Sake/handout/Atmosfera/02_Il_posto_vuoto.png",
+    "Investigare/Avventura Sake/handout/Atmosfera/01_Arrivo_alla_villa.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra.png",
     "Investigare/Avventura Sake/handout/Piano Terra.png",
     "Investigare/Avventura Sake/handout/Primo Piano.png",
     "Investigare/Avventura Sake/handout/originali-piantine/Primo Piano prima guardaroba.png",
-    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra prima correzione sanitari.png",
-    "Investigare/Avventura Sake/handout/originali-piantine/Primo Piano.png",
-    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra.png",
-    "Investigare/Avventura Sake/Token/PNG.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Primo Piano prima pianerottolo aperto.png",
+    "Investigare/Avventura Sake/handout/originali-piantine/Piano Terra prima accesso scale aperto.png",
+    "Investigare/Avventura Sake/copertina_sake_villa.jpg",
+    "Investigare/Avventura Sake/handout/Atmosfera",
+    "Investigare/Avventura Sake/CONTROLLO_PRE-GIOCO_2026-09-15.md",
     "Investigare/Avventura Sake/handout/originali-piantine",
-    "Investigare/Avventura Sake/Token/Ogawa Reiko.png",
-    "Investigare/Avventura Sake/Token/Watanabe Jun.png",
-    "Investigare/Avventura Sake/Token/FUJIMOTO AKEMI.png",
-    "Investigare/Avventura Sake/Token/Chef Endo Toshio.png",
     "Investigare/Avventura Sake/Storia Completa.md",
     "Investigare/Avventura Sake/Location/Bagno Padronale.md",
     "Investigare/Avventura Sake/Location/Bagno Ospiti Otearai.md",
@@ -258,20 +281,11 @@
     "Investigare/Avventura Sake/PNG/Nakamura Daisuke - amante della moglie, gallerista.md",
     "Investigare/Avventura Sake/PNG/Hayashi Kenji - socio giovane, ha portato l'incenso.md",
     "Investigare/Avventura Sake/PNG/Fujimoto Akemi - sorella della vittima.md",
-    "Investigare/Avventura Sake/PNG/Fujimoto Shinji - cognato della vittima, direttore commerciale.md",
-    "Investigare/Avventura Sake/PNG/Ogawa Reiko - moglie del colpevole.md",
-    "Investigare/Avventura Sake/PNG/Ogawa Masaru - colpevole, direttore R&D.md",
-    "Investigare/Avventura Sake/PNG/Tanaka Yuki - moglie della vittima.md",
-    "Investigare/Avventura Sake/PNG/Tanaka Kazuo - vittima.md",
-    "Investigare/Avventura Tra Galli/GUIDA_MASTER_TAVOLO.md",
-    "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
-    "Investigare/Avventura Non Torna/Handout/01_Rapporto_Primo_Intervento.pdf",
     "Investigare/Avventura Non Torna/REVISIONE_2026-09-15.md.tmp.1520.bafd81315a06",
     "Investigare/Avventura Non Torna/TIRI.md.tmp.1520.8f32e5937aaf",
     "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.ee1895e6ec83",
     "Investigare/Avventura Non Torna/SCENE.md.tmp.1520.c3d0219248af",
     "Investigare/Avventura Tra Galli/MAPPA_CAPANNONE_A3.zip",
-    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.a6190bed1d3e",
-    "Investigare/Avventura Tra Galli/MAPPA_GIOCATORI_A3.html"
+    "Investigare/Avventura Tra Galli/CLAUDE.md.tmp.17900.a6190bed1d3e"
   ]
 }

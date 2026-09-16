@@ -1,14 +1,10 @@
 # «Non torna» — i luoghi, per il master
 
-Quattro luoghi, nell'ordine in cui si attraversano: **le scale e il pianerottolo · la stanza (ingresso,
-cucina e sala) · il bagno · la camera**.
+Quattro luoghi, nell'ordine in cui si attraversano: **le scale e il pianerottolo · la stanza (ingresso, cucina e sala) · il bagno · la camera**.
 
-Per ognuno c'è **quello che si legge ad alta voce** quando il giocatore entra, **quello che si trova
-guardando meglio**, e a destra **quello che quella cosa permette di dire** — questa colonna è tua, non si
-legge mai: il significato lo mette insieme il giocatore.
+Per ognuno c'è **quello che si legge ad alta voce** quando il giocatore entra, **quello che si trova guardando meglio**, e a destra **quello che quella cosa permette di dire** — questa colonna è tua, non si legge mai: il significato lo mette insieme il giocatore.
 
-**La regola che regge tutto il caso:** in questa casa il disordine è normale. Il vecchio non metteva a
-posto niente — tranne il letto, che faceva ogni mattina. Quindi **una cosa sistemata è una cosa che
+**La regola che regge tutto il caso:** in questa casa il disordine è normale. Il vecchio non metteva a posto niente — tranne il letto, che faceva ogni mattina. Quindi **una cosa sistemata è una cosa che
 qualcuno ha toccato**, e in una serata come questa è una domanda: chi l'ha toccata, e quando?
 
 *Attenzione a non spingere oltre.* Riviste allineate e pantofole appaiate sono **anomalie**, non prove:

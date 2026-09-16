@@ -5,13 +5,9 @@ Se l'autore decide diversamente, questa pagina si riscrive.
 
 ## La regola sopra tutte
 
-**Nessun tiro nasconde un indizio.** Tutto quello che c'è in casa — le due tazze, le riviste allineate, la
-busta vuota, le pantofole appaiate, il pigiama sul letto — si vede **guardando**, e basta dire che si
-guarda. I dadi non sbarrano nessuna porta: dicono **quanto costa** arrivarci, e **quanto in fretta** le
-cose si mettono in fila.
+**Nessun tiro nasconde un indizio.** Tutto quello che c'è in casa — le due tazze, le riviste allineate, la busta vuota, le pantofole appaiate, il pigiama sul letto — si vede **guardando**, e basta dire che si guarda. I dadi non sbarrano nessuna porta: dicono **quanto costa** arrivarci, e **quanto in fretta** le cose si mettono in fila.
 
-Un sopralluogo con **tre o quattro tiro in tutto** è già tanto. Ogni punto di Ki speso qui è un punto in
-meno per quello che viene dopo, e questo è il filo che tiene insieme la serata.
+Un sopralluogo con **tre o quattro tiro in tutto** è già tanto. Ogni punto di Ki speso qui è un punto in meno per quello che viene dopo, e questo è il filo che tiene insieme la serata.
 
 ---
 
@@ -19,8 +15,7 @@ meno per quello che viene dopo, e questo è il filo che tiene insieme la serata.
 
 ### 1 · Il corpo — **Distacco**
 
-**Quando.** Se il giocatore fa scoprire il lenzuolo sulla barella, o se resta nel bagno a guardare la vasca
-con l'acqua ancora dentro.
+**Quando.** Se il giocatore fa scoprire il lenzuolo sulla barella, o se resta nel bagno a guardare la vasca con l'acqua ancora dentro.
 
 | | |
 |---|---|
@@ -29,13 +24,9 @@ con l'acqua ancora dentro.
 | **2 (Kiwami)** | +1 a Distacco e +1 Ki: è il mestiere che si sente. Guarda un morto e resta un poliziotto |
 | **12 (Kiwami negativo)** | −1 Distacco e −1 Ki. Esce sul ballatoio e ci resta più del dovuto |
 
-*In alternativa, se il master preferisce che qui non si possa "fallire": tiro di pressione (fino a Distacco
-reggi, da 10 in su −1 Ki, niente critici). È la stessa scala del pianto, in `SCENE.md`.*
-
 ### 2 · Mettere insieme la scena — **Lucidità**
 
-**Quando.** Una volta sola, quando il giocatore ha girato la casa e comincia a ragionare ad alta voce.
-Non prima: non è un tiro per *trovare*, è un tiro per *capire in che ordine*.
+**Quando.** Una volta sola, quando il giocatore ha girato la casa e comincia a ragionare ad alta voce. Non prima: non è un tiro per *trovare*, è un tiro per *capire in che ordine*.
 
 | | |
 |---|---|
