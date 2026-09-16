@@ -1,0 +1,18 @@
+Database: modificato soltanto il caso Bakuon; stato identico alla revisione preparata.
+13 handout: avviso rosso unico in fondo, anni controllati, immagini locali presenti; cinque autonomi identici al wizard.
+Tabulato: 31 righe complete originali, cronologiche e nel periodo; nessuna chiamata aggiunta.
+Calendario: 24 sabato, 25 domenica, 26 lunedì, 27 martedì, 28 mercoledì; autopsia 26 ore 09, referto ore 15.
+Renderer del wizard: avvisi in fondo, testo escapato, mappa esclusa, documenti senza metadati invariati.
+01_referto_autopsia_della_vittima.html: 2 pagine; avviso nell’ultima pagina, testo entro i margini.
+02_giornale_del_26_05_1997.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+03_giornale_del_27_05_1997.html: 2 pagine; avviso nell’ultima pagina, testo entro i margini.
+04_giornale_del_28_05_1997.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+05_pocket_bell_tabulato_1_febbraio_24_maggio_1997.html: 3 pagine; avviso nell’ultima pagina, testo entro i margini.
+06_fascicolo_cbx400f_koban_di_kamigyo.html: 3 pagine; avviso nell’ultima pagina, testo entro i margini.
+07_magazzino_koban_di_kamigyo.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+08_deposizione_chiba_hiroko.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+09_deposizione_ishida_kazuhiko.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+10_deposizione_shimada_yasuhiro.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+11_deposizione_shimada_yumiko.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+12_deposizione_watanabe_noriko.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.
+13_deposizione_aoki_hideki.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.

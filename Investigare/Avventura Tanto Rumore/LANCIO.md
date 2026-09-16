@@ -4,15 +4,18 @@ Caso costruito nel wizard (id `C3C15FF7-AFCE-4299-A49C-53B367CD29EA`).
 Serve a presentare l'avventura a un gruppo di giocatori su WhatsApp.
 *(Fino al 2026-08-16 l'avventura si chiamava «L'era glaciale del lavoro».)*
 
-Ordine d'invio: prima **l'immagine del giornale** (mandata come *documento*, non come
-foto — WhatsApp comprime e il titolo diventa illeggibile), poi il testo qui sotto.
+Per l'invito usare il testo qui sotto. L'eventuale immagine del giornale è un'anticipazione
+promozionale, non un documento già posseduto dai PG: l'indagine apre domenica 25 maggio 1997,
+il primo articolo esce lunedì 26 e il Rakuyō qui descritto è di martedì 27, facoltativo.
+Se si invia l'immagine, mandarla come *documento* per mantenerne leggibile il testo.
 
 ---
 
 ## 1. Il testo per WhatsApp
 
 ```
-Il giornale l'avete letto. Da stamattina quel fascicolo è sul vostro tavolo.
+Kyoto, domenica 25 maggio 1997. Da stamattina un fascicolo è sul vostro tavolo:
+un ragazzo ucciso sabato sera. I giornali non ne hanno ancora parlato.
 
 Siete ispettori del distretto di Shimogyō. Non eroi d'azione: gente in giacca
 che bussa alle porte, legge fascicoli, aspetta che qualcuno trovi il coraggio
@@ -64,7 +67,7 @@ paragrafi, nessuna colonna che finisce a metà.
 --- TESTATA ---
 洛陽新聞  (grande, in alto, al centro)
 RAKUYO SHINBUN — Cronaca di Kyoto
-Lunedì 26 maggio 1997 — anno XLI, n. 3.812 — ¥120
+Martedì 27 maggio 1997 — anno XLI, n. 3.812 — ¥120
 
 --- TITOLO PRINCIPALE (grande, due righe) ---
 Studente di 21 anni ucciso dietro il bancone in un locale di Shimogyō
@@ -77,10 +80,10 @@ nel buio. La polizia: «Nessuna pista esclusa»
 La serranda metallica abbassata di un piccolo locale in un vicolo stretto di
 notte appena passata; sulla soglia un mazzo di fiori nel cellophane e una
 lattina di caffè. Nessuna persona. Nessuna insegna leggibile.
-Didascalia in corsivo: «Fiori e una lattina di caffè davanti allo SnakUp, ieri mattina»
+Didascalia in corsivo: «Fiori e una lattina di caffè davanti allo SnakUp, lunedì 26 maggio in mattinata»
 
 --- ARTICOLO PRINCIPALE (tre colonne sotto il titolo) ---
-Kyoto, 25 maggio — Aveva ventun anni e studiava medicina. Yuta Shimada è morto
+Kyoto, 26 maggio 1997 — Aveva ventun anni e studiava medicina. Yuta Shimada è morto
 sabato sera nello «SnakUp», un piccolo locale di Shimogyō-ku dove faceva le
 serate per pagarsi l'università.
 Erano circa le nove e un quarto. In sala non c'erano avventori: da quelle parti
@@ -142,13 +145,13 @@ già nel wizard (handout «Giornale del 25/05/1997») e basta inserirci la sola 
 - **Hong Kong**: passaggio alla Cina il **1° luglio 1997** — a fine maggio è conto alla rovescia.
 - **Imposta sui consumi** al 5% dal **1° aprile 1997**: primavera di consumi fiacchi
   (la crisi asiatica scoppia a luglio: NON anticiparla).
-- Il caso di Kobe (Sakakibara) esplode la **mattina del 27 maggio**: i tre giornali del
-  caso escono prima — nessuna interferenza, non citarlo.
+- I giornali del caso sono di **26, 27 e 28 maggio 1997**. Le altre notizie nazionali
+  non sono piste di questa avventura: non inserirle fra gli indizi.
 - NIENTE Suharto, test indiani o Mondiale: sono del 1998.
 
 ### Scelte fatte
-- **Niente età per Ishida** nell'articolo: in anagrafica ha 48 anni, il primo handout
-  diceva «sessantenne». Finché non decide l'utente, non si scrive.
+- Nel prompt promozionale l'età di Ishida è omessa. Nel vero handout resta
+  «sessantenne» per decisione dell'utente: è un errore del giornale, non dell'anagrafica.
 - Pubblicità con i nomi del **suo** handout originale (Sakura Denki, Ryokucha Maruyama):
   quelli usciti da GPT erano inventati e uno si chiamava «Nakamura», cognome di un PG.
 
@@ -157,8 +160,11 @@ già nel wizard (handout «Giornale del 25/05/1997») e basta inserirci la sola 
 ## Per la serata
 
 - La scheda di Matsui dice che **preferisce morire piuttosto che arrendersi**: se si arriva
-  alle mani, in cartella c'è `SCONTRO_FOGLIO_TAVOLO.docx` — pistola, manganello, pugni
-  e coperture in una pagina (lo Starter Kit il combattimento non ce l'ha).
+  alle mani, usare `../Combattimento/Scheda_Giocatori_Combattimento.html`;
+  il vecchio foglio in `storico/` non va usato.
+- Date e condizioni di consegna sono nel calendario di `Storia Completa.md`, nel
+  dossier e negli avvisi rossi in fondo agli handout. Il giornale del 27 è facoltativo;
+  quello del 28 si usa solo se il caso è aperto e non ci sono stati fermi.
 - Il controllo completo dell'avventura (11-13 agosto: contraddizioni, decisioni, buchi) è in
   `storico/Controllo_avventura_2026-08-11.md`; le cose ancora aperte sono in `MEMORY.md`
   e il wizard le segnala alla schermata 15.

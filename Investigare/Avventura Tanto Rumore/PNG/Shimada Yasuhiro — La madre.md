@@ -41,3 +41,5 @@ Distacco 6 · Pazienza 6 · Silenzio 5 · Lucidità 5 · Ascolto 6 · Presenza 4
 > L'ultima volta che l'ho sentito mi ha detto che dopo gli esami veniva a pranzo a casa.»
 
 *(marcata come handout nel wizard: «Deposizione — Shimada Yasuhiro»)*
+
+> **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.

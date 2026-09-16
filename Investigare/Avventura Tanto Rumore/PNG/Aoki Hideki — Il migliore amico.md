@@ -36,3 +36,5 @@ Distacco 4 · Pazienza 5 · Silenzio 4 · Lucidità 6 · Ascolto 6 · Presenza 4
 > Dovevo insistere. Questo lo so io, e me lo porto dietro.
 
 *(marcata come handout nel wizard: «Deposizione — Aoki Hideki»)*
+
+> **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.

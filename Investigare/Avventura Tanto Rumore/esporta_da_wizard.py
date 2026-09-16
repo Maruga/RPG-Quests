@@ -9,6 +9,7 @@ import io, sys, os, sqlite3, json, re, shutil, urllib.parse, datetime
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 from contesto_tavolo import RUOLI, LOCATION, RUOLI_FILE, file_scheda  # fonte unica del contesto da tavolo
+from gestione_handout import informazione_html, verbale_html, nome_allegato
 BASE = r'C:\Public\_Clienti\Maruga\Giochi\Vampiri\Vault\Vampiri\Investigare'
 WIZ  = os.path.join(BASE, 'Wizard', 'codice', 'GenkaiWizard')
 ID   = 'C3C15FF7-AFCE-4299-A49C-53B367CD29EA'
@@ -127,6 +128,8 @@ def blocchi_extra(pid):
             if (f.get('versione') or '').strip(): riga += ': ' + f['versione'].strip()
             if f.get('handout'): riga += ' — *diventa handout: «' + (f.get('handoutTitolo') or tr['nome']) + '»*'
             r.append(riga)
+            if (f.get('avvisoGM') or '').strip():
+                r.append('  - **AVVISO PER IL MASTER — CONSEGNA:** ' + f['avvisoGM'].strip())
         r.append('')
     return r
 
@@ -223,6 +226,8 @@ def scheda_png(p):
             r.append('')
     elif sch.get('depHandout'):
         r += ['## La sua deposizione', '', '⚠ **Deposizione non ancora scritta nel wizard** (è marcata come handout ma il testo manca).', '']
+    if (sch.get('depAvvisoGM') or '').strip():
+        r += ['> **AVVISO PER IL MASTER — CONSEGNA:** ' + sch['depAvvisoGM'].strip(), '']
     r += blocchi_extra(pid)
     SOSTANZA = ('cosaSa','cosaNonSa','cosaHaFatto','comportamento','deposizione')
     if not any(T(k) for k in SOSTANZA):
@@ -289,16 +294,20 @@ indice = ['# Handout — indice', '',
           f"> Snapshot dal wizard del **{OGGI}**. La fonte di verità è il wizard (caso «{titolo_caso}»):",
           '> per stampare o modificare usare il wizard; questi file sono la copia per il vault.', '']
 n_ho = 0
+def salva_handout(nomefile, titolo, cont):
+    pagina = ('<!DOCTYPE html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
+              f'<title>{titolo}</title>\n<style>\n{css}\n'
+              '.ho-foglio { box-sizing: border-box; }\n'
+              'body { margin: 0; background: #777; padding: 24px 8px; }\n'
+              '@media print { body { background: #fff; padding: 0; } }\n'
+              '</style>\n</head>\n<body>\n' + cont + '\n</body>\n</html>\n')
+    open(os.path.join(DEST, 'handout', nomefile), 'w', encoding='utf-8').write(pagina)
+
 for i, h in enumerate(handout, 1):
     cont = (h.get('contenuto') or '').strip()
     nomefile = f"{i:02d}_{slug(h.get('titolo') or 'handout')}.html"
     if cont:
-        pagina = ('<!DOCTYPE html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
-                  f"<title>{h.get('titolo','Handout')}</title>\n<style>\n{css}\n"
-                  'body { margin: 0; background: #777; padding: 24px 8px; display: flex; justify-content: center; }\n'
-                  '@media print { body { background: #fff; padding: 0; } }\n'
-                  '</style>\n</head>\n<body>\n' + cont + '\n</body>\n</html>\n')
-        open(os.path.join(DEST, 'handout', nomefile), 'w', encoding='utf-8').write(pagina)
+        salva_handout(nomefile, h.get('titolo', 'Handout'), cont)
         stato_h = nomefile
         n_ho += 1
     else:
@@ -307,12 +316,33 @@ for i, h in enumerate(handout, 1):
     col = h.get('collegatoA') or ''
     if col.startswith('p:') and nome(col[2:]): riga += f" *(collegato a {nome(col[2:])})*"
     indice.append(riga)
+    if h.get('avvisoGM'): indice += ['', '> **Consegna GM:** ' + h['avvisoGM'], '']
+indice += ['', '## Risposte del kōban — già presenti nel wizard', '']
+for tr in S['passo9']['tracce']:
+    for fonte in tr.get('fonti', []):
+        if not fonte.get('handout'): continue
+        titolo = fonte.get('handoutTitolo') or tr['nome']
+        n_ho += 1
+        nomefile = f'{n_ho:02d}_{slug(titolo)}.html'
+        salva_handout(nomefile, titolo, informazione_html(tr, fonte))
+        indice += [f'- **{titolo}** → {nomefile}', '', '> **Consegna GM:** ' + fonte.get('avvisoGM', ''), '']
 indice += ['', '## Deposizioni marcate 📄 (si stampano dal wizard, passo 11/13)', '']
 for s in S['passo8']['schede']:
     if s.get('depHandout') and s.get('personaId') in CAST:
         tit = (s.get('depTitolo') or '').strip() or f"Deposizione — {nome(s['personaId'])}"
         manca = '' if (s.get('deposizione') or '').strip() else '  ⚠ *testo non ancora scritto*'
-        indice.append(f"- {tit}{manca}")
+        if not manca:
+            n_ho += 1
+            nomefile = f'{n_ho:02d}_{slug(tit)}.html'
+            salva_handout(nomefile, tit, verbale_html(nome(s['personaId']), s))
+            indice.append(f'- **{tit}** → {nomefile}')
+            if s.get('depAvvisoGM'): indice += ['', '> **Consegna GM:** ' + s['depAvvisoGM'], '']
+        else:
+            indice.append(f"- {tit}{manca}")
+indice += ['', '## Materiale visivo del master', '',
+           '- **Planimetria e tre immagini del covo:** mostrare solo durante il finale al capannone, per ambientazione e combattimento; escluse dalla risposta stampata del kōban.',
+           '- **Due immagini del cercapersone:** esempi da mostrare dal Surface se occorre spiegare l’oggetto; i display illustrativi non sono nuovi indizi.',
+           '- **Fascicolo fotografico di Matsui:** `Immagini/fascicolo-matsui.png`, allegato alla risposta sulle moto.', '']
 open(os.path.join(DEST, 'handout', '_Indice.md'), 'w', encoding='utf-8').write('\n'.join(indice) + '\n')
 
 # ═══════════ Token/ e Immagini/ ═══════════
@@ -445,14 +475,17 @@ for tr in (S.get('passo9', {}).get('tracce') or []):
         r.append(riga)
         for campo in ('versione', 'handoutTitolo'):
             if (f.get(campo) or '').strip(): r.append(f"  - «{f[campo].strip()}»")
+        if (f.get('avvisoGM') or '').strip():
+            r.append('  - **AVVISO PER IL MASTER — CONSEGNA:** ' + f['avvisoGM'].strip())
     for a in (tr.get('allegati') or []):
         if a.get('nome'):
-            pulito = re.sub(r'-\d{15,}(?=\.)', '', a['nome'])
-            r.append(f"- allegato: `Immagini/{pulito}`")
+            pulito = nome_allegato(a)
+            uso = 'materiale di scena — solo al finale' if a.get('uso') == 'scena' else 'allegato'
+            r.append(f"- {uso}: `Immagini/{pulito}`")
     r.append('')
 giorni = [g for g in (S.get('passo11', {}).get('giorni') or []) if (g.get('evento') or '').strip()]
 if giorni:
-    r += ['---', '', '## IL CALENDARIO VIVO', '', 'Cosa succede comunque, che i giocatori guardino o no.', '']
+    r += ['---', '', '## IL CALENDARIO VIVO E LE CONSEGNE', '', 'Date assolute e condizioni di consegna. Il giorno 1 è domenica 25 maggio 1997. Gli eventi facoltativi si omettono se superati dalle azioni dei PG; i tempi relativi decorrono dalla richiesta effettiva.', '']
     for g in giorni:
         r.append(f"**Giorno {g.get('giorno','')}" + (f" · {g['momento']}" if (g.get('momento') or '').strip() else '') + '**')
         r.append(g['evento'].strip())
@@ -469,7 +502,7 @@ for rel in S.get('relazioni', []):
         r.append(f"| {x} | {y} | {rel.get('tipo','') or '—'} | **{en}** |")
 r += ['', '---', '', '## MATERIALE DA TAVOLO', '',
       '- **`DOSSIER_GM.docx`** — il dossier completo del GM (soluzione, cronistoria, persone, luoghi, En, scheda distretto)',
-      '- **`SCONTRO_FOGLIO_TAVOLO.docx`** — il combattimento in una pagina (pistola, manganello, pugni, coperture)',
+      '- **`../Combattimento/Scheda_Giocatori_Combattimento.html`** — scheda di combattimento attuale; non usare il foglio archiviato in storico/',
       '- **`Token/TOKEN_PERSONE.docx`** — i 12 token da ritagliare · in `Token/` anche i ritagli singoli',
       '- **`handout/`** — snapshot degli handout; **si stampano dal wizard** (fonte di verità)',
       '- **`LANCIO.md`** — il materiale di lancio (WhatsApp + giornale finto)',
@@ -497,7 +530,7 @@ adv = {
 open(os.path.join(DEST, '_adventure.json'), 'w', encoding='utf-8').write(json.dumps(adv, ensure_ascii=False, indent=2))
 
 print(f"esportato in: {DEST}")
-print(f"  PNG: {n_png} · Location: {n_loc} · handout HTML: {n_ho}/{len(handout)} · token: {n_tok} · immagini: {n_img}")
+print(f"  PNG: {n_png} · Location: {n_loc} · handout HTML: {n_ho} (autonomi, enti e deposizioni) · token: {n_tok} · immagini: {n_img}")
 vuote = [nome(p['id']) for p in S['cast']
          if not any((SCHEDE.get(p['id'], {}).get(k) or '').strip()
                     for k in ('cosaSa','cosaNonSa','cosaHaFatto','comportamento','deposizione')) and p['id'] != VITT]

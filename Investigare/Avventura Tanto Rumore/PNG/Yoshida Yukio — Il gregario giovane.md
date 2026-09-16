@@ -18,4 +18,4 @@ Yukio Yoshida ha diciannove anni e ne dimostra meno: basso, magrissimo, polsi so
 
 ## Nella storia (verità del GM)
 
-- **1997-05-24 21:14** · *SnakUp* — La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

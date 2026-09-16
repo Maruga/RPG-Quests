@@ -7,6 +7,13 @@ Prima di modifiche che cambiano trama, personaggi, relazioni o meccaniche invest
 
 ## Contesto
 
+**Ultima revisione autorizzata (2026-09-16):** consultare la sezione iniziale di
+`MEMORY.md` per date e consegne. Tutti gli handout hanno un avviso rosso per il GM.
+Il tabulato ha 31 chiamate complete e date di richiesta/evasione da compilare (+24 ore);
+referto autoptico disponibile il 26/05/1997 alle 15:00. Giorno 1 = domenica 25.
+Mappa e immagini del covo solo al finale; cercapersone solo esempi visivi.
+Le vecchie liste di mancanze sotto sono storiche: prevalgono le decisioni successive.
+
 **BAKUON 爆音 — Tanto Rumore per Nulla** — one-shot investigativo GENKAI 限界 v1.3. Kyoto,
 Shimogyō-ku, **maggio 1997**. Bakuon è il rombo degli scarichi smarmittati: l'unica cosa che
 tutti i testimoni ricordano. Il sottotitolo dice il resto: un ragazzo morto per gelosia, per nulla.

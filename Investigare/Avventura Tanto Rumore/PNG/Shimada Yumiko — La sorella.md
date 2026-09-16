@@ -41,3 +41,5 @@ Distacco 4 · Pazienza 5 · Silenzio 5 · Lucidità 4 · Ascolto 4 · Presenza 5
 > Nemici non ne aveva. Di moto, di minacce, di gente che lo cercava non mi ha mai detto una parola. Parlate con Noriko: se era contento per lei, lei sa cose che io non so.
 
 *(marcata come handout nel wizard: «Deposizione — Shimada Yumiko»)*
+
+> **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.

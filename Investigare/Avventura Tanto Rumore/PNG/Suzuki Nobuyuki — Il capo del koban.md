@@ -28,15 +28,17 @@ Nobuyuki Suzuki ha quarantasei anni, statura media e corporatura solida che tend
 
 Le due motociclette segnalate — Honda CBX400F, livrea bianco-rossa «tricolor», targa piegata verso l'alto, sella a tre gradini con schienalone cromato, scarichi takeyari smarmittati — corrispondono a due esemplari ben noti a questo posto di polizia: appartengono al gruppo di motociclisti (bōsōzoku) che fa capo a MATSUI Kenta, responsabile in zona di schiamazzi notturni, gare su strada e danneggiamenti. Si allega fotografia di polizia del suddetto.
 
-Il gruppo conta quattro-cinque elementi stabili. Si segnala inoltre che l'elemento di spicco SUGIMOTO Hideki (anni 24) è stato sottoposto a controllo dal sottoscritto in data 15 maggio u.s., in Kamigyō: si guardava attorno con insistenza, come chi segue qualcuno; nulla da contestare al momento del controllo.
+Il gruppo conta quattro-cinque elementi stabili. Si segnala inoltre che l'elemento di spicco SUGIMOTO Hideki (anni 24) è stato sottoposto a controllo dal sottoscritto in data 15 maggio 1997, in Kamigyō: si guardava attorno con insistenza, come chi segue qualcuno; nulla da contestare al momento del controllo.
 
 Per l'ubicazione del ritrovo abituale del gruppo, questo ufficio può fornire riscontro su richiesta specifica.
 
 Il capo posto — SUZUKI Nobuyuki 鈴木 信之 — *diventa handout: «Fascicolo CBX400F — Kōban di Kamigyō»*
+  - **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo la richiesta che descrive le due moto: riscontro telefonico entro un’ora, copia scritta e fascicolo fotografico entro due ore dalla richiesta. Sono documenti e conoscenze già disponibili al kōban: non applicare i tempi di nuove analisi o di trasferimento di un fascicolo originale. Annotare data e ora effettive di consegna. Il fascicolo allegato è aggiornato al 15/05/1997; la fotografia al suo interno è precedente. Non rivela dove si trova il covo.
 - **«Magazzino covo banda»** (con richiesta all'ente): KŌBAN DI KAMIGYŌ — Riscontro alla richiesta relativa al luogo di ritrovo del gruppo di MATSUI Kenta.
 
 Da appostamenti di questo ufficio e da segnalazioni ripetute dei residenti (motori a tarda notte), il gruppo dispone in uso stabile di un capannone tra i capannoni industriali di Murasakino, Kita-ku: una ex fabbrica con cortile di carico e guardiola sull'ingresso. Le due CBX400F vi sono state viste rientrare più volte, anche nelle ultime settimane.
 
-Si allega planimetria di massima. Si raccomanda prudenza: il gruppo non ha mai mostrato disponibilità al dialogo con questo ufficio.
+Il posto è noto a questo ufficio, che fornisce al distretto le indicazioni per raggiungerlo. Si raccomanda prudenza: il gruppo non ha mai mostrato disponibilità al dialogo con questo ufficio.
 
 Il capo posto — SUZUKI Nobuyuki 鈴木 信之 — *diventa handout: «Magazzino — Kōban di Kamigyō»*
+  - **AVVISO PER IL MASTER — CONSEGNA:** Dal 25/05/1997, dopo una richiesta specifica sul ritrovo del gruppo (anche insieme alla richiesta sulle moto, se i PG la formulano): indicazioni entro un’ora, copia scritta entro due ore. La risposta permette di raggiungere il capannone, senza un altro ostacolo sull’indirizzo. MAPPA E TRE IMMAGINI DEL COVO: materiale di scena del master, da mostrare solo nel finale al capannone, per ambientazione e combattimento; non sono allegati da consegnare con questa risposta.

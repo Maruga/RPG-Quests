@@ -1,5 +1,37 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
+## Revisione date e consegne — 2026-09-16 (ultima decisione utente)
+
+- L'utente ha autorizzato esplicitamente la correzione degli handout, delle date e
+  dei tempi, superando per questa revisione la precedente regola di non modificarli.
+- Tabulato: conservate le **31 chiamate complete originali**, tolta la riga tronca
+  del 22/05 e corretto il totale da 36 a 31. Nessuna chiamata inventata. Periodo
+  01/02–24/05/1997; richiesta ed evasione sono campi da compilare: consegna **+24 ore
+  dall'inoltro autorizzato**, non più un 28 maggio fisso. Non blocca la soluzione.
+- Giorno 1 = **domenica 25/05/1997**; giornali **lunedì 26, martedì 27, mercoledì 28**.
+  Giornale del 27 facoltativo; quello del 28 solo con caso aperto e nessun fermo.
+  Autopsia d'ufficio **26/05 ore 09:00**, referto **26/05 ore 15:00**; decesso
+  **24/05 ore 21:15 circa** (banda arrivata alle 21:14 circa). Eliminata la frase
+  ambigua sulle 12–18 ore; gli esami tossicologici sono esplicitamente preliminari.
+- Noriko apprende la notizia dal giornale **lunedì 26**, salvo comunicazione anticipata
+  dei PG il 25: in quel caso colloquio immediato e verbale della scena effettiva,
+  senza consegnare il testo prestampato che cita il giornale. Non bloccare il PNG al 26.
+- Kōban: informazioni già note, **entro 1 ora a voce / 2 ore copia scritta** dalla
+  richiesta pertinente; ubicazione su richiesta specifica, anche contestuale alle moto.
+- **Mappa e tre immagini del covo SOLO al finale**, per immersione e combattimento.
+  Conservate come allegati del master con `uso: scena`, escluse dalla stampa della
+  risposta del kōban. **Entrambe le immagini del cercapersone si tengono**: esempi
+  illustrativi da mostrare sul Surface se richiesti, non nuovi indizi dai display.
+- Tutti i **13 documenti** hanno un avviso rosso in fondo: cinque autonomi, due
+  risposte degli enti, sei deposizioni. Il wizard legge i campi opzionali `avvisoGM`
+  sulle fonti e `depAvvisoGM` sulle schede; i cinque autonomi hanno l'avviso nel corpo
+  HTML. `gestione_handout.py` rende gli stessi avvisi nelle copie locali. L'export
+  include ora anche enti e deposizioni, con indice completo; il dossier resta senza
+  duplicati delle schede PNG nel Markdown e completo nel DOCX.
+- Fonte aggiornata nel wizard, poi riesportata; allineato anche il lancio.
+  Backup e diff: `storico/revisione_2026-09-16/`. Il controllo del 16 settembre in
+  storico descrive lo stato PRIMA di queste correzioni; non è una lista attuale di mancanze.
+
 ## Stato (2026-08-16)
 
 - Cartella creata esportando il caso dal wizard (`esporta_da_wizard.py`): 12 PNG, 5 Location,

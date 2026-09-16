@@ -90,7 +90,7 @@ Suzuki Nobuyuki ferma per un controllo Sugimoto Hideki per un controllo, capisce
 
 **1997-05-24 21:14**   *SnakUp*
 
-La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
 
 **Presenti:** Shimada Yuta, Yoshida Yukio, Tanaka Takayuki, Sugimoto Hideki, Matsui Kenta, Ishida Kazuhiko, Chiba Hiroko
 
@@ -260,13 +260,15 @@ GM: Se viene inviato il fascicolo o ladeposizioine oppure fatta una chiamata pos
 
 Le due motociclette segnalate — Honda CBX400F, livrea bianco-rossa «tricolor», targa piegata verso l'alto, sella a tre gradini con schienalone cromato, scarichi takeyari smarmittati — corrispondono a due esemplari ben noti a questo posto di polizia: appartengono al gruppo di motociclisti (bōsōzoku) che fa capo a MATSUI Kenta, responsabile in zona di schiamazzi notturni, gare su strada e danneggiamenti. Si allega fotografia di polizia del suddetto.
 
-Il gruppo conta quattro-cinque elementi stabili. Si segnala inoltre che l'elemento di spicco SUGIMOTO Hideki (anni 24) è stato sottoposto a controllo dal sottoscritto in data 15 maggio u.s., in Kamigyō: si guardava attorno con insistenza, come chi segue qualcuno; nulla da contestare al momento del controllo.
+Il gruppo conta quattro-cinque elementi stabili. Si segnala inoltre che l'elemento di spicco SUGIMOTO Hideki (anni 24) è stato sottoposto a controllo dal sottoscritto in data 15 maggio 1997, in Kamigyō: si guardava attorno con insistenza, come chi segue qualcuno; nulla da contestare al momento del controllo.
 
 Per l'ubicazione del ritrovo abituale del gruppo, questo ufficio può fornire riscontro su richiesta specifica.
 
 Il capo posto — SUZUKI Nobuyuki 鈴木 信之*
 
 *Fascicolo CBX400F — Kōban di Kamigyō*
+
+AVVISO PER IL MASTER — CONSEGNA: Dal 25/05/1997, dopo la richiesta che descrive le due moto: riscontro telefonico entro un’ora, copia scritta e fascicolo fotografico entro due ore dalla richiesta. Sono documenti e conoscenze già disponibili al kōban: non applicare i tempi di nuove analisi o di trasferimento di un fascicolo originale. Annotare data e ora effettive di consegna. Il fascicolo allegato è aggiornato al 15/05/1997; la fotografia al suo interno è precedente. Non rivela dove si trova il covo.
 
 **da Ishida Kazuhiko**  (interrogatorio)
 
@@ -282,11 +284,13 @@ Ubicazione del magazzino covo dei malviventi
 
 Da appostamenti di questo ufficio e da segnalazioni ripetute dei residenti (motori a tarda notte), il gruppo dispone in uso stabile di un capannone tra i capannoni industriali di Murasakino, Kita-ku: una ex fabbrica con cortile di carico e guardiola sull'ingresso. Le due CBX400F vi sono state viste rientrare più volte, anche nelle ultime settimane.
 
-Si allega planimetria di massima. Si raccomanda prudenza: il gruppo non ha mai mostrato disponibilità al dialogo con questo ufficio.
+Il posto è noto a questo ufficio, che fornisce al distretto le indicazioni per raggiungerlo. Si raccomanda prudenza: il gruppo non ha mai mostrato disponibilità al dialogo con questo ufficio.
 
 Il capo posto — SUZUKI Nobuyuki 鈴木 信之*
 
 *Magazzino — Kōban di Kamigyō*
+
+AVVISO PER IL MASTER — CONSEGNA: Dal 25/05/1997, dopo una richiesta specifica sul ritrovo del gruppo (anche insieme alla richiesta sulle moto, se i PG la formulano): indicazioni entro un’ora, copia scritta entro due ore. La risposta permette di raggiungere il capannone, senza un altro ostacolo sull’indirizzo. MAPPA E TRE IMMAGINI DEL COVO: materiale di scena del master, da mostrare solo nel finale al capannone, per ambientazione e combattimento; non sono allegati da consegnare con questa risposta.
 
 **da Watanabe Noriko**  (interrogatorio)
 
@@ -406,13 +410,55 @@ MINACCE
 
 999       eliminare il soggetto
 
+GM — Le due immagini del cercapersone sono esempi visivi: mostrarle dal Surface soltanto se serve spiegare l’oggetto. Il numero o codice sul display illustrativo non costituisce una nuova traccia e non è una fotografia di un messaggio repertato.
+
 ## IL CALENDARIO VIVO   暦
 
-*Cosa succede comunque, che i giocatori guardino o no.*
+*Date assolute e condizioni di consegna. Il giorno 1 è domenica 25 maggio 1997. Gli eventi facoltativi si omettono se superati dalle azioni dei PG; i tempi relativi decorrono dalla richiesta effettiva.*
 
-### Giorno 1 · mattina
+### Giorno 1 · Domenica 25/05/1997 — mattina
 
-Articolo del Kyoto Shinbun (26 maggio 1997, pagina 3, cronaca locale). Titolo: «Giovane studente ucciso a Shimogyo». Il trafiletto riferisce che Shimada Yuta, 21 anni, studente di medicina, è stato ucciso sabato notte presso lo snack bar SnakUp con un colpo contundente. Secondo i testimoni, un gruppo di circa 4-5 giovani è entrato nel locale intorno alle 21:15, ha litigato verbalmente con il personale, e uno di loro ha colpito Shimada. Gli aggressori sono fuggiti in motocicletta. Le identità rimangono ignote. La polizia invita chiunque abbia informazioni a contattare il koban locale.
+Briefing d’apertura e inizio dell’indagine. Il delitto è di sabato 24/05/1997: arrivo della banda alle 21:14 circa, colpo mortale alle 21:15 circa. Nessun giornale sul caso è ancora disponibile; il referto autoptico arriva il 26 alle 15:00. I PG possono già visitare testimoni e luoghi. I verbali si consegnano dopo ciascun colloquio e si datano allora. Noriko non è bloccata fino al giornale: se i PG la avvertono il 25, verbalizzare la scena effettiva senza usare il suo verbale prestampato che cita il giornale del 26.
+
+**Giorno 1 · Dal 25/05/1997 — su richiesta, in qualsiasi giorno successivo**
+
+Moto e ritrovo sono informazioni già note al kōban: risposta telefonica entro un’ora, documento scritto entro due ore dalla richiesta. La richiesta sulle moto dà il fascicolo CBX400F e quello fotografico di Matsui. Una richiesta specifica sul ritrovo dà le indicazioni per raggiungere il covo. Se i PG chiedono entrambe le cose insieme, rispondere a entrambe. Questi tempi sostituiscono, per i due riscontri locali, i tempi generici di trasferimento interdistrettuale del dossier. Mappa e immagini interne restano al master fino al finale.
+
+**Solo se:** Richiesta pertinente dei PG al kōban.
+
+### Giorno 2 · Lunedì 26/05/1997 — mattina
+
+Articolo del Kyoto Shinbun (26 maggio 1997, pagina 3, cronaca locale). Titolo: «Giovane studente ucciso a Shimogyo». Il trafiletto riferisce che Shimada Yuta, 21 anni, studente di medicina, è stato ucciso sabato notte presso lo snack bar SnakUp con un colpo contundente. Secondo i testimoni, un gruppo di circa 4-5 giovani è entrato nel locale intorno alle 21:15, ha litigato verbalmente con il personale, e uno di loro ha colpito Shimada. Gli aggressori sono fuggiti in motocicletta. Le identità rimangono ignote. La polizia invita chiunque abbia informazioni a contattare il koban locale. Prima uscita sulla vicenda. Se non è stata già informata dai PG, Noriko apprende la morte da questo giornale; dal 26 si trova a casa e non va a scuola per una settimana. Il suo verbale prestampato si consegna solo dopo il colloquio e solo se ha appreso la notizia così.
+
+**Solo se:** Notizie ancora compatibili con gli eventi giocati.
+
+### Giorno 2 · Lunedì 26/05/1997 — ore 15:00
+
+La Scientifica rende disponibile il referto autoptico. Esame eseguito d’ufficio alle 09:00 del 26, emissione alle 15:00; decesso il 24 alle 21:15 circa. Gli esami tossicologici sono preliminari; quelli completi sono ancora in corso. Il referto può essere ritirato anche più tardi, mantenendo la vera data di emissione.
+
+### Giorno 2 · Dal lunedì 26/05/1997 — tabulato a richiesta +24 ore
+
+Consegnare 24 ore dopo la richiesta autorizzata e inoltrata a NTT, mai prima di aver acquisito l’utenza di Noriko. Compilare sul foglio entrambe le date e le ore: richiesta 25/05/1997 ore 12:00 → evasione 26/05 ore 12:00; richiesta 26/05 ore 12:00 → evasione 27/05 ore 12:00; richiesta 27/05 ore 12:00 → evasione 28/05 ore 12:00. Per richieste successive vale sempre +24 ore. Sono tempi di gioco per questo caso. Il periodo analizzato resta 01/02–24/05/1997, indipendentemente dalla data di evasione: non documenta le minacce dopo il delitto. Approfondimento facoltativo: non ritardare la chiusura del caso per aspettarlo. Le traduzioni sono già incluse; i numeri delle cabine non identificano da soli il mittente. Il 26 è la prima data possibile, non una consegna automatica: richiesta autorizzata domenica 25 → lunedì 26 alla stessa ora; lunedì 26 → martedì 27; martedì 27 → mercoledì 28. Il tempo decorre dall’inoltro autorizzato, non dal primo sospetto. Se la richiesta è successiva, spostare entrambe le date compilate sul modulo. Nessun tiro cancella l’indizio; eventuali ritardi si registrano anche nell’ora effettiva di evasione.
+
+**Solo se:** Utenza di Noriko acquisita e richiesta autorizzata inoltrata a NTT almeno 24 ore prima.
+
+### Giorno 3 · Martedì 27/05/1997 — mattina
+
+Giornale Rakuyō Shinbun del 27/05/1997, n. 3.812. Riprende le testimonianze e la famiglia. Omettere se ridondante o se il caso si è già chiuso. Non attendere questa data per permettere ai PG di risolvere il caso.
+
+**Solo se:** Facoltativo; caso ancora aperto e articolo compatibile con i fatti pubblici.
+
+### Giorno 4 · Mercoledì 28/05/1997 — mattina
+
+Giornale Rakuyō Shinbun del 28/05/1997, n. 3.813: ipotesi del regolamento di conti. Non consegnare se i PG hanno già preso Matsui o reso pubblica una ricostruzione incompatibile. Nessun evento preparato deve annullare i risultati dei giocatori.
+
+**Solo se:** Facoltativo; caso ancora aperto, nessun fermo, voce di stampa ancora plausibile.
+
+**Giorno 1 · Dal 25/05/1997 — quando si arriva al finale, anche nei giorni successivi**
+
+Mostrare planimetria e tre immagini del capannone solo al finale, per immersione e combattimento. Non anticiparle con la risposta del kōban. Le immagini del cercapersone restano esempi visivi da mostrare su richiesta: il display illustrativo non è un indizio. Il caso può chiudersi prima dell’autopsia, del tabulato o dei giornali facoltativi, se le testimonianze e l’indagine hanno già portato a Matsui.
+
+**Solo se:** I PG raggiungono il covo; non è una scena fissata al quarto giorno.
 
 ## LA SCHEDA DEL DISTRETTO   所轄
 

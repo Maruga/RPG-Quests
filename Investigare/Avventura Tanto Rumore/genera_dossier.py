@@ -381,6 +381,8 @@ for pers in ordinati:
             if (f.get('versione') or '').strip(): _t += ': ' + f['versione'].strip()
             if f.get('handout'): _t += ' — diventa handout: «' + (f.get('handoutTitolo') or tr['nome']) + '»'
             P(_t, size=9.5, dopo=1, indent=0.5)
+            if (f.get('avvisoGM') or '').strip():
+                P('AVVISO PER IL MASTER — CONSEGNA: ' + f['avvisoGM'], size=9, colore=ROSSO, indent=0.5)
     _rel = [r2 for r2 in S.get('relazioni', []) if pid in (r2.get('aId'), r2.get('bId'))]
     if _rel:
         sottotit('I suoi legami (En)')
@@ -401,6 +403,8 @@ for pers in ordinati:
     if testi['deposizione']:
         sottotit('La sua deposizione')
         paragrafi(testi['deposizione'], size=10, italic=True)
+        if (sch.get('depAvvisoGM') or '').strip():
+            P('AVVISO PER IL MASTER — CONSEGNA: ' + sch['depAvvisoGM'], size=9, colore=ROSSO)
 
 # ═══════════ LUOGHI ═══════════
 doc.add_page_break()
@@ -514,13 +518,17 @@ if tracce:
             for campo in ('versione', 'handoutTitolo'):
                 if (f.get(campo) or '').strip():
                     P(f[campo].strip(), size=9.5, italic=True, dopo=2, indent=0.8)
+            if (f.get('avvisoGM') or '').strip():
+                P('AVVISO PER IL MASTER — CONSEGNA: ' + f['avvisoGM'], size=9, colore=ROSSO, indent=0.8)
         doc.paragraphs[-1].paragraph_format.space_after = Pt(9)
 
 # ═══════════ CALENDARIO ═══════════
 giorni = [g for g in (S.get('passo11', {}).get('giorni') or []) if (g.get('evento') or '').strip()]
 if giorni:
     titolo_sez('Il calendario vivo', '暦', prima=12)
-    P('Cosa succede comunque, che i giocatori guardino o no.', size=9.5, italic=True, colore=GRIGIO, dopo=4)
+    P('Date assolute e condizioni di consegna. Il giorno 1 è domenica 25 maggio 1997. '
+      'Gli eventi facoltativi si omettono se superati dalle azioni dei PG; i tempi relativi decorrono dalla richiesta effettiva.',
+      size=9.5, italic=True, colore=GRIGIO, dopo=4)
     for g in giorni:
         p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(1); p.paragraph_format.keep_with_next = True
         r = p.add_run(f"Giorno {g.get('giorno','')}" + (f" · {g['momento']}" if (g.get('momento') or '').strip() else ''))

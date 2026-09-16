@@ -34,7 +34,7 @@ Collabora completamente con la polizia.
 
 ## Quando cede
 
-- Quando scopre della morte di Shimada Yuta per una settimana non va a scuola, la si può trovare a casa, in pratica dal 26/05/1997
+- Se nessuno l’ha avvertita prima, scopre la morte dal giornale lunedì 26/05/1997 mattina; da quel giorno non va a scuola per una settimana e si trova a casa. Se i PG la raggiungono domenica 25 e glielo comunicano, apprende la notizia da loro in quella scena.
 
 ## Come parla, com’è fatto
 
@@ -50,7 +50,7 @@ Distacco 6 · Pazienza 5 · Silenzio 6 · Lucidità 6 · Ascolto 6 · Presenza 6
 >
 > Scusate. Non riesco a stare ferma con le mani.
 >
-> Quella sera lì, il ventiquattro, io ero a casa. L'ho saputo il giorno dopo, dal giornale, mia madre me l'ha messo davanti senza dire niente. Da allora a scuola non ci sono più andata. Non ci riesco.
+> Quella sera lì, il ventiquattro, io ero a casa. L'ho saputo lunedì ventisei maggio, dal giornale, mia madre me l'ha messo davanti senza dire niente. Da allora a scuola non ci sono più andata. Non ci riesco.
 >
 > Voi mi chiedete se aveva nemici. Yuta no. Yuta non aveva nemici, era uno che studiava e basta.
 >
@@ -61,6 +61,8 @@ Distacco 6 · Pazienza 5 · Silenzio 6 · Lucidità 6 · Ascolto 6 · Presenza 6
 > Ho paura. Tutto qui.»
 
 *(marcata come handout nel wizard: «Deposizione — Watanabe Noriko»)*
+
+> **AVVISO PER IL MASTER — CONSEGNA:** Versione stampata utilizzabile dal 26/05/1997 mattina, dopo che Noriko ha letto il giornale e dopo il colloquio. Se i PG le comunicano la morte il 25, non consegnare questo testo: giocare il colloquio e verbalizzare quanto dice realmente, con quella data e quella fonte della notizia. Il primo racconto è reticente; annotare separatamente la successiva collaborazione. Compilare data, ora e luogo effettivi, senza attendere il 26 per permettere ai PG di parlarle.
 
 ## Nella storia (verità del GM)
 

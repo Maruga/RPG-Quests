@@ -1,5 +1,12 @@
 # Controllo di Bakuon — 16 settembre 2026
 
+> **Aggiornamento successivo al controllo:** l'utente ha autorizzato e fatto applicare
+> la revisione di tabulato, date e consegne. Questo documento conserva la fotografia
+> precedente. Per lo stato attuale vedere `../MEMORY.md`, il calendario dell'avventura
+> e gli avvisi rossi negli handout. Backup, diff e verifiche sono in
+> `revisione_2026-09-16/`. Le due immagini del cercapersone sono state confermate
+> dall'utente come esempi visivi; mappa e immagini del covo sono riservate al finale.
+
 **Esito: la struttura investigativa regge; il materiale presenta alcune incongruenze e un tabulato incompleto.** Non occorre aggiungere nuove piste o cambiare il colpevole. Occorre distinguere meglio i documenti necessari, quelli di atmosfera e il momento in cui diventano disponibili.
 
 Questo è un rapporto di controllo, non una revisione dell'avventura. Trama, personaggi, handout esistenti, generatori e database sono rimasti invariati. Le indicazioni sotto sono proposte, non nuove verità del caso.
