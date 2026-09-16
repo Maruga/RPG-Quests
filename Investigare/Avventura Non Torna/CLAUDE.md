@@ -13,6 +13,11 @@ nella vasca, il giorno in cui ha ritirato la pensione.
 5. `TIRI.md` — i tiri suggeriti per il sopralluogo.
 6. `Handout/` — i due fogli da stampare, una facciata A4 ciascuno (HTML e PDF).
 
+## ⚠ I file sono stati corretti a mano dall'autore (16/09/2026)
+
+**La versione che sta qui è la sua.** Non rigenerare, non riscrivere e non "riallineare" niente di propria
+iniziativa: si legge, e si tocca solo quello che l'autore chiede, dove lo chiede.
+
 ## Regole di questa cartella
 
 - **Non inventare fatti del caso.** Quello che manca si chiede all'autore.
