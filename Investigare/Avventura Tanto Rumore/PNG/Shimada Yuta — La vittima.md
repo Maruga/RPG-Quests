@@ -33,5 +33,5 @@ studente di medicina
 
 ## I nodi nella sua vita
 
-- Frequentava un gruppo di giovani della yakuza *(potenziale falsa pista)*
+- Le presunte frequentazioni di Yuta con la Yakuza sono voci false: Yuta non ha alcun legame con quegli ambienti. Per il master: qualsiasi ricerca, controllo degli archivi, domanda a testimoni o verifica tramite contatti dà esito negativo. Non emergono frequentazioni, debiti o collegamenti con la Yakuza; non ci sono legami nascosti da scoprire. La pista si esaurisce con questi riscontri, senza bloccare l’indagine. Il movente resta la gelosia di Matsui. *(potenziale falsa pista)*
 - Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe

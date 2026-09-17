@@ -8,11 +8,11 @@
 
 ## Quando i PG arrivano
 
-I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto. Sotto una tettoia, due Honda CBX400F gemelle, bianche e rosse — e se i motori sono accesi, il canto della yonfore si riconosce a tre isolati.
+I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto e una tettoia sul lato del cortile. Se nel capannone i motori sono accesi, il canto della yonfore si riconosce a tre isolati.
 
 ## Quando entrano
 
-Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme.
+Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. Due Honda CBX400F gemelle, bianche e rosse, sono parcheggiate all'interno, vicino alla saracinesca che dà sul cortile di carico. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme.
 
 **Che posto è** *(dalla biblioteca del wizard)*: linee, spogliatoi, ufficio del capoturno, cortile carico/scarico
 

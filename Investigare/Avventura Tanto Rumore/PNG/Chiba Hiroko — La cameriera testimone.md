@@ -12,7 +12,7 @@ Hiroko Chiba ha ventisette anni, capelli corti e scuri portati lisci, il volto s
 
 ## Cosa sa
 
-FALSO: "ero nel retro" — era in sala e ha visto tutto, compreso chi ha colpito.
+FALSO: "ero nel retro" — era in sala e ha visto tutto, compreso chi ha colpito. Quando si sente protetta e racconta la verità, può descrivere anche il tonfa, un manganello con impugnatura laterale, usato da Matsui.
 
 ## Come si comporta, cosa nasconde
 
@@ -40,4 +40,4 @@ Distacco 5 · Pazienza 5 · Silenzio 5 · Lucidità 6 · Ascolto 4 · Presenza 6
 ## Nella storia (verità del GM)
 
 - **1997-05-11 18:00** · *SnakUp* — Shimada Yuta parla con il suo collega di lavoro della uscita fatta con Watanabe Noriko
-- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa da Matsui Kenta con un unico colpo di tonfa alla testa, da dietro. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

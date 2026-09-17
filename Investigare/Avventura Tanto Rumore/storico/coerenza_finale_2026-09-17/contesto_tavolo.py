@@ -37,8 +37,8 @@ LOCATION = {
         "entrata": "La sala della squadra: scrivanie accoppiate, telefoni a disco, faldoni legati con lo spago, la lavagna dei turni con i nomi in gesso. Posacenere pieni da ieri. In fondo, dietro un vetro smerigliato, l'ufficio del capo ispettore: quando la porta è aperta, è meglio entrare subito."
     },
     "Sede Banda": {
-        "arrivo": "I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto e una tettoia sul lato del cortile. Se nel capannone i motori sono accesi, il canto della yonfore si riconosce a tre isolati.",
-        "entrata": "Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. Due Honda CBX400F gemelle, bianche e rosse, sono parcheggiate all'interno, vicino alla saracinesca che dà sul cortile di carico. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme."
+        "arrivo": "I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto. Sotto una tettoia, due Honda CBX400F gemelle, bianche e rosse — e se i motori sono accesi, il canto della yonfore si riconosce a tre isolati.",
+        "entrata": "Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme."
     },
 }
 

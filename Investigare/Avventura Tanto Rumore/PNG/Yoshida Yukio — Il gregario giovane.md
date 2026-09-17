@@ -14,8 +14,8 @@ Yukio Yoshida ha diciannove anni e ne dimostra meno: basso, magrissimo, polsi so
 > Io... io stavo fuori, con le moto. Le tenevo accese, dovevamo solo passare, era... era una cosa veloce. Io dentro non ci sono entrato, giuro. Non ho visto niente, ho solo sentito... il casino. Poi siamo partiti.
 > Chi c'era dentro non lo posso... non lo so. Non mi faccia questa domanda. Lei non li conosce.
 > Il ragazzo del bar io non lo conoscevo, io no. Sta... è morto davvero?
-> Posso avere dell'acqua? Se mio padre lo sa mi ammazza. [Se isolato dagli altri e trattato con calma: piange, e conferma tutto — chi è entrato, chi ha colpito, con cosa.]
+> Posso avere dell'acqua? Se mio padre lo sa mi ammazza. [Se isolato dagli altri e trattato con calma: piange, e conferma tutto — chi è entrato e che Matsui ha colpito Yuta con un tonfa, un manganello con impugnatura laterale.]
 
 ## Nella storia (verità del GM)
 
-- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa da Matsui Kenta con un unico colpo di tonfa alla testa, da dietro. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

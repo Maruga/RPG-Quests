@@ -17,7 +17,7 @@ Kenta Matsui ha ventiquattro anni, volto angoloso e duro segnato da una cicatric
 
 ## Cosa sa
 
-L'assassino, ha organizzato il tutto
+L'assassino, ha organizzato il tutto. Ha colpito Yuta da dietro alla testa con un tonfa, causandone la morte.
 
 ## Come si comporta, cosa nasconde
 
@@ -42,4 +42,4 @@ Distacco 6 · Pazienza 7 · Silenzio 8 · Lucidità 7 · Ascolto 6 · Presenza 8
 ## Nella storia (verità del GM)
 
 - **1997-05-11 11:04** · *Sede Banda* — Tanaka Takayuki avvisa il capo Matsui Kenta, che incarica il suo braccio destro Sugimoto Hideki di indagare i due.
-- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+- **1997-05-24 21:14** · *SnakUp* — Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa da Matsui Kenta con un unico colpo di tonfa alla testa, da dietro. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.

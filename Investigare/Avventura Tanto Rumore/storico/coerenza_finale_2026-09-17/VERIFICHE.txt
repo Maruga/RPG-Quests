@@ -1,0 +1,3 @@
+Verificati: calendario e consegne invariati; date e valori dei due handout modificati invariati; giornali 26/27 e tabulato invariati; 13 handout con avvisi GM; refusi rimossi; tonfa e Yakuza allineati in storia e dossier; mappa identica alla fonte.
+01_referto_autopsia_della_vittima.html: 2 pagine; avviso nell’ultima pagina, testo entro i margini.
+04_giornale_del_28_05_1997.html: 1 pagine; avviso nell’ultima pagina, testo entro i margini.

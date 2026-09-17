@@ -17,7 +17,7 @@ Noriko Watanabe ha diciannove anni, viso tondo dai lineamenti ancora infantili, 
 
 Se gli viene detto delle moto o una possibile banda, rileva che è stata per circa 1 anno fidanzata con l'assassino Matsui Kenta. Ma dopo che ha scoperto il suo traffico di droga lo ha lasciato ma lui era molto geloso.
 
-Sa che tengono delle armi da fuoco nel covo, il suo ex se ne vantava spesso. Veniva chiamata sul suo Pocket Ball ma da qualche settimana
+Sa che tengono delle armi da fuoco nel covo, il suo ex se ne vantava spesso. Riceve sul suo Pocket Bell messaggi numerici che la spaventano, anche di notte. Nel primo colloquio resta reticente per paura; quando si sente protetta, collabora e parla del suo ex Matsui Kenta.
 
 ## Cosa NON sa
 

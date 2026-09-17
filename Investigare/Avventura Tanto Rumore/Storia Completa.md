@@ -9,7 +9,7 @@
 
 ## PREMESSA PER IL GM
 
-**È morto colpito alla testa con un oggetto contundente.**
+**Matsui Kenta ha ucciso Yuta con un unico colpo di tonfa alla testa, da dietro.**
 
 La vittima è **Shimada Yuta**, 21 anni, studente di medicina — Pestaggio / violenza di gruppo — Bande giovanili / bōsōzoku.
 
@@ -27,7 +27,7 @@ Il colpevole è **Matsui Kenta**. Movente: **Gelosia** — Il capo della banda, 
 
 ### I nodi nella vita della vittima
 
-- Frequentava un gruppo di giovani della yakuza *(potenziale falsa pista)*
+- Le presunte frequentazioni di Yuta con la Yakuza sono voci false: Yuta non ha alcun legame con quegli ambienti. Per il master: qualsiasi ricerca, controllo degli archivi, domanda a testimoni o verifica tramite contatti dà esito negativo. Non emergono frequentazioni, debiti o collegamenti con la Yakuza; non ci sono legami nascosti da scoprire. La pista si esaurisce con questi riscontri, senza bloccare l’indagine. Il movente resta la gelosia di Matsui. *(potenziale falsa pista)*
 - Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe
 
 ### Chi altro aveva la stessa ragione
@@ -68,7 +68,7 @@ Suzuki Nobuyuki ferma per un controllo Sugimoto Hideki per un controllo, capisce
 ### Il fatto
 
 **1997-05-24 21:14** · *SnakUp*
-Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa da Matsui Kenta con un unico colpo di tonfa alla testa, da dietro. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
 *Presenti: Shimada Yuta, Yoshida Yukio, Tanaka Takayuki, Sugimoto Hideki, Matsui Kenta, Ishida Kazuhiko, Chiba Hiroko*
 - **Traccia:** Oltre le foto, hanno usato delle moto in pratica 2 moto uguali, abbastanza riconoscibili anche dal kōban di Kamigyō.
 
@@ -318,4 +318,4 @@ En positivo si sottrae dal dado, negativo si aggiunge. A ±4/±5 il legame è pr
 - **`LANCIO.md`** — il materiale di lancio (WhatsApp + giornale finto)
 - La scheda del distretto vive in `../Materiale/Scheda_Distretto.md` (riportata per intero nel dossier)
 
-*Esportato dal wizard il 2026-09-16 — `python esporta_da_wizard.py` per riesportare.*
+*Esportato dal wizard il 2026-09-17 — `python esporta_da_wizard.py` per riesportare.*

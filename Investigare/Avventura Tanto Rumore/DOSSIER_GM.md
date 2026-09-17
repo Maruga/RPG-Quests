@@ -22,7 +22,7 @@ GENKAI ver: 1.3
 
 ## IL CASO IN BREVE   事件
 
-**È morto colpito alla testa con un oggetto contundente.**
+**Matsui Kenta ha ucciso Yuta con un unico colpo di tonfa alla testa, da dietro.**
 
 - **Come è morto** — Pestaggio / violenza di gruppo — Bande giovanili / bōsōzoku
 - **La vittima** — Shimada Yuta · 21 anni · Studente universitario / dottorando · studente di medicina
@@ -36,7 +36,7 @@ GENKAI ver: 1.3
 
 ### I nodi nella vita della vittima
 
-Frequentava un gruppo di giovani della yakuza   *falsa pista*
+Le presunte frequentazioni di Yuta con la Yakuza sono voci false: Yuta non ha alcun legame con quegli ambienti. Per il master: qualsiasi ricerca, controllo degli archivi, domanda a testimoni o verifica tramite contatti dà esito negativo. Non emergono frequentazioni, debiti o collegamenti con la Yakuza; non ci sono legami nascosti da scoprire. La pista si esaurisce con questi riscontri, senza bloccare l’indagine. Il movente resta la gelosia di Matsui.   *falsa pista*
 
 Innamorato di Watanabe Noriko, che frequenta lo stesso complesso scolastico ma non la sua classe
 
@@ -90,7 +90,7 @@ Suzuki Nobuyuki ferma per un controllo Sugimoto Hideki per un controllo, capisce
 
 **1997-05-24 21:14**   *SnakUp*
 
-Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa con un colpo alle spalle con un oggetto contundente. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
+Alle 21:14 circa arriva la banda; il colpo mortale viene sferrato intorno alle 21:15. La banda al completo arriva sul lavoro della vittima, con scuse, cosi diranno i testimoni, attaccano briga con la vittima che viene uccisa da Matsui Kenta con un unico colpo di tonfa alla testa, da dietro. Se mostrate le foto vengono riconosciuti dal collega e dal titolare ma il titolare non collaborano subito ha paura di ritorsioni, la dipendente dice che era nel retro ed è rientrata in sala solo dopo il colpo; in realtà era in sala e ha visto tutto.
 
 **Presenti:** Shimada Yuta, Yoshida Yukio, Tanaka Takayuki, Sugimoto Hideki, Matsui Kenta, Ishida Kazuhiko, Chiba Hiroko
 
@@ -171,11 +171,11 @@ Kita-ku · Fabbrica / capannone
 
 ### Quando i PG arrivano
 
-*I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto. Sotto una tettoia, due Honda CBX400F gemelle, bianche e rosse — e se i motori sono accesi, il canto della yonfore si riconosce a tre isolati.*
+*I capannoni di Murasakino, Kita-ku: lamiera, ruggine e erba nelle crepe del cemento. Un cortile di carico con il cancello scorrevole, una guardiola all'ingresso col vetro rotto e una tettoia sul lato del cortile. Se nel capannone i motori sono accesi, il canto della yonfore si riconosce a tre isolati.*
 
 ### Quando entrano
 
-*Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme.*
+*Dentro, la vecchia fabbrica smontata: le linee ferme, gli spogliatoi con gli armadietti sfondati, attrezzi e catene appesi, odore di benzina e grasso. Due Honda CBX400F gemelle, bianche e rosse, sono parcheggiate all'interno, vicino alla saracinesca che dà sul cortile di carico. L'ufficio del capoturno è diventato l'angolo di Matsui: una poltrona sfondata, poster di moto, casse di birra vuote. Materassi per terra: qualcuno qui ci dorme.*
 
 **Che posto è:** *linee, spogliatoi, ufficio del capoturno, cortile carico/scarico*
 

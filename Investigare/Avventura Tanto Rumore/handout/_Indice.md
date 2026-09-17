@@ -1,11 +1,11 @@
 # Handout — indice
 
-> Snapshot dal wizard del **2026-09-16**. La fonte di verità è il wizard (caso «Bakuon — Tanto Rumore per Nulla»):
+> Snapshot dal wizard del **2026-09-17**. La fonte di verità è il wizard (caso «Bakuon — Tanto Rumore per Nulla»):
 > per stampare o modificare usare il wizard; questi file sono la copia per il vault.
 
 - **Referto autopsia della vittima** · referto autopsia → 01_referto_autopsia_della_vittima.html *(collegato a Shimada Yuta)*
 
-> **Consegna GM:** Disponibile da lunedì 26/05/1997, ore 15:00, tramite la Scientifica. L’autopsia è avviata d’ufficio sul caso, senza attendere una richiesta dei PG: esame alle 09:00, referto alle 15:00. Domenica 25 il capo può riferire soltanto la prima ricostruzione dei soccorsi e dei testimoni; non consegnare questo referto in anticipo. Il decesso resta sabato 24/05 alle 21:15 circa. Gli esami tossicologici definitivi sono ancora in corso e non servono a bloccare la soluzione.
+> **Consegna GM:** Disponibile da lunedì 26/05/1997, ore 15:00, tramite la Scientifica. L’autopsia è avviata d’ufficio sul caso, senza attendere una richiesta dei PG: esame alle 09:00, referto alle 15:00. Domenica 25 il capo può riferire soltanto la prima ricostruzione dei soccorsi e dei testimoni; non consegnare questo referto in anticipo. Il decesso resta sabato 24/05 alle 21:15 circa. Gli esami tossicologici definitivi sono ancora in corso e non servono a bloccare la soluzione. Verità del master: Matsui ha usato un tonfa (manganello con impugnatura laterale). Il referto è compatibile con quest’arma, ma non la identifica da solo: il dettaglio emerge dai testimoni quando collaborano.
 
 - **Giornale del 26/05/1997** · articolo di giornale → 02_giornale_del_26_05_1997.html *(collegato a Shimada Yuta)*
 
@@ -17,7 +17,7 @@
 
 - **Giornale del 28/05/1997** · articolo di giornale → 04_giornale_del_28_05_1997.html *(collegato a Shimada Yuta)*
 
-> **Consegna GM:** FACOLTATIVO — mercoledì 28/05/1997, mattina, mai prima. Consegnare solo se l’indagine è ancora aperta, non ci sono stati fermi e le informazioni pubbliche sono ancora quelle riportate. Se i PG hanno già preso Matsui o smentito pubblicamente la pista, omettere questo giornale. «A quattro giorni» si riferisce al delitto di sabato 24 maggio. La pista del regolamento di conti è una voce di stampa, non una prova.
+> **Consegna GM:** FACOLTATIVO — mercoledì 28/05/1997, mattina, mai prima. Consegnare solo se l’indagine è ancora aperta, non ci sono stati fermi e le informazioni pubbliche sono ancora quelle riportate. Se i PG hanno già preso Matsui o smentito pubblicamente la pista, omettere questo giornale. «A quattro giorni» si riferisce al delitto di sabato 24 maggio. La pista del regolamento di conti è una voce di stampa, non una prova. Verità del master: Yuta non ha alcuna frequentazione con la Yakuza. Le voci sono false; qualsiasi ricerca, domanda a testimoni o controllo tramite archivi e contatti dà esito negativo. Non aggiungere conferme o legami nascosti.
 
 - **Pocket Bell — Tabulato 1 febbraio · 24 maggio 1997** · tabulato telefonico → 05_pocket_bell_tabulato_1_febbraio_24_maggio_1997.html *(collegato a Watanabe Noriko)*
 

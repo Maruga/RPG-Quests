@@ -1,20 +1,5 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
-## Ultimi punti di coerenza — 2026-09-17, decisione utente
-
-- Moto nella descrizione del covo spostate all'interno, vicino alla saracinesca,
-  come nella mappa. Corretta la frase tronca di Noriko e il nome Pocket Bell.
-- L'arma dell'omicidio è un **tonfa**, usato da Matsui con un solo colpo alla testa
-  da dietro. Precisato nella verità GM e nelle informazioni dei testimoni che
-  collaborano. L'autopsia descrive compatibilità con un manganello, senza identificarlo
-  univocamente e senza dedurre la superficie dell'arma dai margini della ferita.
-- **Yuta non ha nessuna frequentazione con la Yakuza**: tutte le ricerche, domande,
-  verifiche di archivi e contatti danno esito negativo. Le voci del giornale sono
-  false; nessun legame nascosto. Precisato anche nell'avviso rosso del giornale del 28.
-- Tempi di consegna, date e mappa conservati. Backup e diff:
-  `storico/coerenza_finale_2026-09-17/`. Correzioni autorizzate applicate alla fonte
-  e riesportate in schede, storia, handout e dossier.
-
 ## Pavimenti distinti e stampa a filo — 2026-09-16, stato attuale
 
 - L'utente vuole **solo l'immagine**: la stampante stampa A3 a filo. Usare
