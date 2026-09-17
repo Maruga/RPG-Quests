@@ -60,12 +60,12 @@ Il regolamento GENKAI e i PG premade si trovano nella directory padre (`Investig
 
 ## Handout
 
-12 handout HTML in `handout/`. Dettagli completi in `MEMORY.md`.
+Handout HTML in `handout/`, **un handout per file** (regola dell'autore, 2026-09-17): 16 file. Dettagli completi in `MEMORY.md`.
 
 - **H01a / H01b**: Planimetria — piano terra (`01a`) e primo piano (`01b`); immagini `Piano Terra.png` / `Primo Piano.png`
 - **H02-H04**: Rapporto preliminare, lista presenti, ristrutturazione societaria
-- **H05**: Agenda Tanaka — 4 pagine (Set-Dic), sfondo bianco, colori forti, biglietto Nishida incollato
-- **H06**: Referti scientifica — 4 pagine standalone (Sapone, Incenso, Confronto, Sake), consegnabili singolarmente
+- **H05**: Agenda Tanaka — un solo handout di 4 pagine (Set-Dic: è l'agenda, si consegna intera), sfondo bianco, colori forti, biglietto Nishida incollato
+- **H06a-d**: Referti scientifica — 4 file separati (`06a` Sapone, `06b` Incenso, `06c` Confronto saponi, `06d` Sake), si consegnano uno alla volta
 - **H07**: Menu kaiseki — sfondo bianco, una pagina compatta
 - **H08**: Biglietto da visita Nishida (meishi)
 - **H09**: Lettere Nakamura→Yuki (red herring, reperto polizia Allegato D)

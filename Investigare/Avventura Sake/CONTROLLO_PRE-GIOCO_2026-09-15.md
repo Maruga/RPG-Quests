@@ -278,3 +278,11 @@ Controllo finale eseguito: storia riletta per intero; tabella En = En delle sche
 **Non corretto (immagine)**: sulla pianta del piano terra il bagno ospiti è disegnato (WC e lavabo accanto alle scale) ma **non ha l'etichetta** «Bagno ospiti / Otearai»; tutte le altre stanze ce l'hanno. Si può aggiungere via PIL se l'autore vuole.
 
 **Cosa un controllo esterno segnalerà, per scelta o per rinvio dell'autore**: parentesi «chi è chi» non applicate sull'intera storia (regola ferrea 4); nomi dei file in `Token/` senza ruolo; nelle note finali il ritmo somma 40-55 minuti mentre la testata dice 60-90; omonimie (decisione 2026-07-10).
+
+---
+
+## 11. Un handout per file (2026-09-17)
+
+Richiesta dell'autore: ogni file HTML deve contenere un solo handout. Controllati i 13 file: due contenevano quattro blocchi.
+- **H06** (referti della scientifica): l'avventura li descrive come quattro reperti «consegnabili singolarmente, in momenti diversi» → **diviso in 4 file** (`06a` Sapone, `06b` Incenso, `06c` Confronto saponi, `06d` Sake). Stessa testata e stesso CSS, blocco del referto identico all'originale (ricomposizione verificata byte per byte, HTML valido, un solo `document` per file). L'originale è stato rimosso (resta nel git del vault). `crea_word.py` aggiornato.
+- **H05** (agenda di Tanaka, pagine 47-50): è un oggetto solo, l'agenda trovata nello studio → resta un file. **H09** (due lettere): un solo reperto, Allegato D → resta un file.

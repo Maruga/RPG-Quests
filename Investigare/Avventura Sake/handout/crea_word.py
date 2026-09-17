@@ -22,7 +22,10 @@ FILES = [
     "03_Lista_Presenti.html",
     "04_Ristrutturazione_Societaria.html",
     "05_Agenda_Tanaka.html",
-    "06_Referto_Scientifica.html",
+    "06a_Referto_A_Sapone.html",
+    "06b_Referto_B_Incenso.html",
+    "06c_Referto_C_Confronto_Saponi.html",
+    "06d_Referto_D_Sake.html",
     "07_Menu_Kaiseki.html",
     "08_Biglietto_Nishida.html",
 ]
@@ -751,7 +754,7 @@ def main():
 
         if filename in SPECIAL:
             SPECIAL[filename](doc, soup)
-        elif filename == "06_Referto_Scientifica.html":
+        elif filename.startswith("06"):
             process_generic(doc, soup, header_bg="1A2E1A")
         else:
             process_generic(doc, soup)

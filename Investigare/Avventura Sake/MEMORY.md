@@ -7,6 +7,7 @@ Rapporto: `CONTROLLO_PRE-GIOCO_2026-09-15.md`. Principio dell'autore: **è uno s
 **Schede PNG tolte dalla storia** (2026-09-15, richiesta autore): `Storia Completa.md` non contiene più le 16 schede (festa + Kano e Nishida): al loro posto un rimando a `PNG/` e la tabella En. Prima di toglierle verificato riga per riga che ogni scheda in `PNG/` contenesse tutto (2 righe erano più complete nella scheda che nella storia, nessuna mancante). **Da ora la scheda in `PNG/` è l'unica fonte per ogni PNG della festa**; Yamada e Ito restano nella storia (contenuto specifico di Sake, le loro schede generali sono in `png notevoli/`).
 **Stanze tolte dalla storia** (2026-09-15, richiesta autore): la sezione «La villa — stanze e indizi» non c'è più, al suo posto un indice con rimando a `Location/` (10 schede: piano, funzione, descrizione, indizi). Verificato prima che ogni riga della storia fosse nella scheda (le schede sono più ricche: hanno anche la descrizione da leggere). **`Location/` è l'unica fonte per le stanze.**
 **Planimetrie confrontate col testo** (2026-09-15 sera): sulla pianta H01a il bagno ospiti è in fondo al corridoio di servizio ACCANTO all'ingresso e alle scale; tolto «lontano dal guardaroba» da storia e schede (Bagno Ospiti, Ingresso). La pianta ha stanze senza scheda (sala da tè, personale/lavanderia; seconda camera, angolo lettura): messe nell'indice come «niente di rilevante». Sull'immagine del piano terra il bagno ospiti NON ha etichetta (le altre stanze sì): non corretto, eventualmente via PIL.
+**Un handout per file** (2026-09-17, richiesta autore): `06_Referto_Scientifica.html` (4 referti in un file) diviso in `06a_Referto_A_Sapone` · `06b_Referto_B_Incenso` · `06c_Referto_C_Confronto_Saponi` · `06d_Referto_D_Sake` — stessa `<head>` e blocco del referto tale e quale (ricomposizione verificata byte per byte), originale rimosso (resta nel git). `crea_word.py` aggiornato. **H05** (agenda, 4 pagine) e **H09** (2 lettere, un solo Allegato D) restano in un file: sono un oggetto solo.
 **Non toccato**: omonimie (decisione 2026-07-10), «Ascolto -2» (convenzione del Manuale GM), parentesi «chi è chi» su tutta la storia (non richiesto in questo giro), `_adventure.json`.
 
 ## Audit completo (2026-07-10)
@@ -30,7 +31,7 @@ Audit a 3 verificatori (PNG, luoghi, handout HTML) + allineamento regolamento. *
 | 03 | `03_Lista_Presenti.html` | Lista presenti alla festa | 7 età corrette, 3 kanji corretti (allineati a Storia Completa). Dark mode |
 | 04 | `04_Ristrutturazione_Societaria.html` | Documento ristrutturazione societaria | Dark mode aggiunto |
 | 05 | `05_Agenda_Tanaka.html` | Agenda personale Tanaka, 4 pagine (Set-Dic) | Riscritto: sfondo bianco, colori forti, 4 mesi, biglietto Nishida, page-break per stampa |
-| 06 | `06_Referto_Scientifica.html` | 4 referti scientifici standalone | Riscritto: 4 pagine indipendenti (Sapone, Incenso, Confronto, Sake). Ognuno con header completo |
+| 06a-d | `06a_Referto_A_Sapone.html` · `06b_Referto_B_Incenso.html` · `06c_Referto_C_Confronto_Saponi.html` · `06d_Referto_D_Sake.html` (dal 2026-09-17 un file per referto; prima `06_Referto_Scientifica.html`) | 4 referti scientifici standalone | Riscritto: 4 pagine indipendenti (Sapone, Incenso, Confronto, Sake). Ognuno con header completo |
 | 07 | `07_Menu_Kaiseki.html` | Menu cena kaiseki | Riscritto: sfondo bianco, una pagina, layout compatto. Endo kanji corretto (俊夫) |
 | 08 | `08_Biglietto_Nishida.html` | Meishi investigatore privato | Dark mode aggiunto |
 | 09 | `09_Lettere_Nakamura.html` | **NUOVO** — 2 lettere d'amore Nakamura→Yuki | Reperto polizia (Allegato D). Red herring relazione |
@@ -60,7 +61,7 @@ Audit a 3 verificatori (PNG, luoghi, handout HTML) + allineamento regolamento. *
 - **Pag. 50 — Dicembre**: Appuntamenti futuri mai realizzati (chiusura conti, festa aziendale, Hakone con Yuki, Capodanno Kiyomizu-dera)
 - CSS: sfondo bianco, colori forti (handwritten `#0000cc`, date `#2a1000`), page-break per stampa
 
-### Struttura H06 — Referti Scientifica (4 pagine standalone)
+### Struttura H06a-d — Referti Scientifica (4 file, uno per referto)
 
 Ogni reperto è un `<div class="document">` indipendente con header polizia completo, metadata, analisi, conclusione, firma Ito, timbro. Possono essere consegnati singolarmente.
 
