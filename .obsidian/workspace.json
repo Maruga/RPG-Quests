@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v5.png"
+                "file": "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v7.png"
               },
               "icon": "lucide-image",
-              "title": "Mappa_appartamento_giocatori_v5"
+              "title": "Mappa_appartamento_giocatori_v7"
             }
           }
         ]
@@ -227,7 +227,9 @@
   },
   "active": "b3a230c9b92ae9bd",
   "lastOpenFiles": [
+    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v7.png",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v5.png",
+    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v6.png",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v4.png",
     "Investigare/Avventura Non Torna/Mappa_appartamento.pdf",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori.png",
@@ -251,8 +253,6 @@
     "Investigare/Stampa/Locandina_GENKAI/LEGGIMI.md",
     "Investigare/Stampa/Locandina_GENKAI/sorgenti/anteprima.png",
     "Investigare/Stampa/Locandina_GENKAI/GENKAI_Locandina.png",
-    "Investigare/Stampa/Locandina_GENKAI/sorgenti/genkai_logo.png",
-    "Investigare/Stampa/Locandina_GENKAI/sorgenti/kyoto_noir.png",
     "Investigare/Avventura Tanto Rumore/storico/mappa_A3_2026-09-16/ESITO.md",
     "Investigare/Avventura Tanto Rumore/storico/mappa_esterno_2026-09-16/ESITO.md",
     "Investigare/Avventura Tanto Rumore/storico/revisione_2026-09-16/ESITO.md",
