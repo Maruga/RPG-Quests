@@ -240,6 +240,31 @@ tr:nth-child(even) { background: #faf8f2; }
     body { background: white; padding: 0; }
     .document { box-shadow: none; padding: 15mm; }
 }
+
+/* Stampa A4: i margini sono definiti da @page, senza un secondo foglio interno. */
+@media print {
+    html, body { width: auto; margin: 0; padding: 0; background: white; }
+    body { display: block; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .document { width: 100%; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+    tr, .sig, .footer { break-inside: avoid; }
+}
+
+@media print {
+    @page { margin: 12mm 14mm; }
+    body { line-height: 1.35; }
+    .doc-header { margin-bottom: 12px; }
+    .section { margin-bottom: 10px; }
+    .section-title { margin-bottom: 6px; }
+    .metadata, .patient-info { margin-bottom: 10px; }
+    .section p, .section ul li { margin-bottom: 3px; }
+    .signature-section, .signature-area { margin-top: 14px; }
+    .signature-line, .signature-name { margin-top: 16px; }
+    .footer { margin-top: 10px; }
+    .classificazione, .confidential { position: static; display: table; margin: 0 0 6px auto; }
+}
+@media print { .notes-area { min-height: 65px; padding: 8px; margin-top: 10px; } .notes-line { height: 16px; } }
+@media print { .notes-area { min-height: 45px; padding: 6px; } .notes-line { height: 12px; } .signature-section { margin-top: 8px; } .signature-line { margin-top: 12px; } }
 </style>
 </head>
 <body>

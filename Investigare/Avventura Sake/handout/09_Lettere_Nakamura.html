@@ -131,6 +131,15 @@ body {
     body { background: white; padding: 0; }
     .document { box-shadow: none; }
 }
+
+/* Stampa A4: i margini sono definiti da @page, senza un secondo foglio interno. */
+@media print {
+    html, body { width: auto; margin: 0; padding: 0; background: white; }
+    body { display: block; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .document { width: 100%; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+    tr, .sig, .footer { break-inside: avoid; }
+}
 </style>
 </head>
 <body>

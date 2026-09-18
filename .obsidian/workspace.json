@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b17de87f657e5d14",
+        "id": "6151a0045590139b",
         "type": "tabs",
         "children": [
           {
-            "id": "067b1f7c3b406617",
+            "id": "ef6e419710bc2e45",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "02_Constatazione_Decesso"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -225,35 +223,35 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "ef6e419710bc2e45",
   "lastOpenFiles": [
+    "Investigare/Avventura Non Torna/Handout/02_Constatazione_Decesso.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/LEGGIMI.txt",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/verifica_4.jpg",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/verifica_3.jpg",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/verifica_2.jpg",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/verifica_1.jpg",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/TUTTI_HANDOUT.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/verifica.png",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/12_Referto_Medico.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/11_Tabulati_Telefonici.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/10_Rapporto_Nishida.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/09_Lettere_Nakamura.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/08_Biglietto_Nishida.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/07_Menu_Kaiseki.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/06d_Referto_D_Sake.pdf",
+    "Investigare/Avventura Sake/handout/PDF_STAMPA/06c_Referto_C_Confronto_Saponi.pdf",
     "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/verifica_stampa/01_referto_autopsia_della_vittima_ultima.png",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/verifica_stampa/01_referto_autopsia_della_vittima.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/verifica_stampa/04_giornale_del_28_05_1997.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/verifica_stampa",
-    "Investigare/Avventura Tanto Rumore/storico/__pycache__/verifica_consegne_20260916.cpython-312.pyc",
-    "Investigare/Avventura Tanto Rumore/storico/__pycache__",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/VERIFICHE.txt",
-    "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
-    "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
     "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/MEMORY.md",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/contesto_tavolo.py",
-    "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/modifiche.diff",
     "Investigare/Avventura Sake/CONTROLLO_HANDOUT_2026-09-17.md",
     "Investigare/Avventura Non Torna/Mappa_appartamento_illustrata_A3.png",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v7.png",
     "Investigare/Avventura Non Torna/LUOGHI.md",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v5.png",
     "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v6.png",
-    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v4.png",
-    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori.png",
-    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v3.png",
-    "Investigare/Avventura Non Torna/Mappa_appartamento_giocatori_v2.png",
     "Investigare/Avventura Non Torna/SCENE.md",
     "Investigare/Avventura Non Torna/SCHEDA_Il_Nipote.md",
     "Investigare/Avventura Non Torna/TIRI.md",
-    "Investigare/Avventura Tanto Rumore/Immagini/Planimetria con esterno.png",
-    "Investigare/Avventura Tanto Rumore/Immagini/Planimetria.png",
     "Investigare/Stampa/Locandina_GENKAI/LEGGIMI.md",
     "Investigare/Avventura Tanto Rumore/storico/mappa_A3_2026-09-16/ESITO.md",
     "Investigare/Avventura Tanto Rumore/storico/mappa_esterno_2026-09-16/ESITO.md",

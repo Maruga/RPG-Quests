@@ -1,5 +1,7 @@
 # Controllo handout — 17 settembre 2026
 
+> **Stampa completata il 18 settembre 2026.** Corretti esclusivamente i CSS di stampa. PDF verificati in `handout/PDF_STAMPA/`: 16 documenti, 19 pagine complessive; agenda di quattro pagine, tutti gli altri di una pagina. Controllate visivamente tutte le pagine. Contenuti HTML invariati rispetto alla versione salvata in Git. Le osservazioni sui contenuti qui sotto sono storiche e non sono state applicate: l'autore ha chiesto di terminare la preparazione alla stampa senza ulteriori ripensamenti.
+
 **Esito:** contenuti principali coerenti con lo scenario; impaginazione di stampa da sistemare e alcuni dettagli da allineare. Nessun handout modificato durante questo controllo.
 
 Letti i 16 HTML, la storia, le 16 schede PNG e le 10 location. Aperte entrambe le immagini delle planimetrie. Generati PDF con Chrome headless, usando formato e margini definiti nei CSS e senza intestazioni/piè di pagina aggiunti dal browser; contate le pagine di tutti i PDF e ispezionate alcune anteprime dei difetti.

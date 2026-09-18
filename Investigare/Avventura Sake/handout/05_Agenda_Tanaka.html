@@ -144,6 +144,19 @@ body {
     .document { box-shadow: none; }
     .document + .document { page-break-before: always; }
 }
+
+/* Stampa A4: i margini sono definiti da @page, senza un secondo foglio interno. */
+@media print {
+    html, body { width: auto; margin: 0; padding: 0; background: white; }
+    body { display: block; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .document { width: 100%; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+    tr, .sig, .footer { break-inside: avoid; }
+}
+@media print {
+    .document { padding: 6mm 10mm; }
+    .document + .document { break-before: page; }
+}
 </style>
 </head>
 <body>

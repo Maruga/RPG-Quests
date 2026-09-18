@@ -61,6 +61,20 @@ body {
     body { background: white; padding: 0; }
     .document { box-shadow: none; padding: 6mm; width: 100%; min-height: auto; }
 }
+
+/* Stampa A4: i margini sono definiti da @page, senza un secondo foglio interno. */
+@media print {
+    html, body { width: auto; margin: 0; padding: 0; background: white; }
+    body { display: block; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .document { width: 100%; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+    tr, .sig, .footer { break-inside: avoid; }
+}
+@media print {
+    .document { height: 193mm; display: flex; flex-direction: column; }
+    .doc-header, .footer { flex: 0 0 auto; }
+    .map-image { flex: 1 1 auto; min-height: 0; height: 0; width: 100%; object-fit: contain; }
+}
 </style>
 </head>
 <body>
