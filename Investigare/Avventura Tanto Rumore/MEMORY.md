@@ -1,5 +1,17 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
+## Raccolta handout da stampare — 2026-09-19
+
+- Creato `HANDOUT_STAMPA.docx`: tutti i 13 documenti, esattamente un handout per
+  pagina A4, senza copertina né avvisi GM. Conteggio verificato con Microsoft Word.
+- Le pagine sono incorporate come immagini a 300 dpi per preservare grafica e
+  caratteri giapponesi; i testi si modificano nel wizard, poi si riesportano.
+- `genera_handout_docx.py` ricrea la raccolta dagli HTML correnti, adattando solo
+  l'impaginazione. Il fascicolo conserva entrambe le immagini, affiancate; il
+  tabulato conserva tutte le 31 chiamate e le traduzioni su una pagina.
+- Disponibile anche `HANDOUT_STAMPA.pdf`, esportato dal DOCX con Word.
+  Materiali di verifica in `storico/handout_docx_2026-09-19/`.
+
 ## Handout senza avvisi stampati — 2026-09-18, ultima decisione utente
 
 - Tolti gli avvisi rossi per il master da tutti i 13 handout, anche nelle
