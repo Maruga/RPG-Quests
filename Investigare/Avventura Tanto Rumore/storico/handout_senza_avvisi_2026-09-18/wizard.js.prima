@@ -2580,12 +2580,18 @@
     }
 
     // foglio stampabile per un'informazione marcata 📄: titolo, testo e allegati (immagini incluse)
-    function foglioInformazione(titolo, testo, allegati) {
+    function avvisoMasterHandout(testo) {
+        if (!testo) return "";
+        const safe = String(testo).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>");
+        return `<aside class="ho-avviso-gm" style="color:#a01818;border:2px solid #a01818;padding:10px;margin-top:18px;font:12px/1.5 Arial,sans-serif;break-inside:avoid;column-span:all;clear:both"><strong>AVVISO PER IL MASTER — CONSEGNA</strong><br>${safe}</aside>`;
+    }
+
+    function foglioInformazione(titolo, testo, allegati, avvisoGM = "") {
         const corpo = (testo || "").trim().split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
         const imgs = (allegati || []).filter(a => a.url && a.uso !== "scena").map(a => `<img src="${a.url}" alt="${(a.nome || "").replace(/"/g, "&quot;")}" />`).join("");
         return `<div class="ho-foglio ho-doc">
             <div class="ho-intestazione"><div class="ente">${(titolo || "Documento").replace(/</g, "&lt;")}</div><div class="tipo-doc">documento</div></div>
-            ${corpo}${imgs}
+            ${corpo}${imgs}${avvisoMasterHandout(avvisoGM)}
         </div>`;
     }
 
@@ -2616,7 +2622,7 @@
 
     // verbale impaginato per una deposizione marcata 📄: intestazione del distretto + testo + firma.
     // Data e luogo restano in bianco: li compila il GM (qui non si inventano date).
-    function verbaleDeposizione(titolo, nome, testo) {
+    function verbaleDeposizione(titolo, nome, testo, avvisoGM = "") {
         const corpo = (testo || "").trim().split(/\n{2,}/)
             .map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
         return `<div class="ho-foglio ho-referto">
@@ -2624,7 +2630,7 @@
             <dl class="ho-meta"><dt>Persona sentita</dt><dd>${nome}</dd><dt>Data e luogo</dt><dd>____________________________</dd></dl>
             ${corpo}
             <div class="ho-firma"><span class="riga">firma del dichiarante</span></div>
-            
+            ${avvisoMasterHandout(avvisoGM)}
         </div>`;
     }
 
@@ -2654,8 +2660,8 @@
         // distretto, informazioni 📄 come foglio con testo + allegati dentro — così al
         // momento della stampa non si dimentica niente in giro per i passi
         const foglioDi = (r) => r.verbaleDi
-            ? verbaleDeposizione(r.titolo, r.verbaleDi, r.testo)
-            : foglioInformazione(r.titolo, r.testo, r.allegati);
+            ? verbaleDeposizione(r.titolo, r.verbaleDi, r.testo, r.avvisoGM)
+            : foglioInformazione(r.titolo, r.testo, r.allegati, r.avvisoGM);
         box.querySelectorAll("[data-ho-card-ant]").forEach(b => b.addEventListener("click", () => {
             const r = righe[+b.dataset.hoCardAnt];
             apriAnteprimaHandout({ id: "", titolo: r.titolo, contenuto: foglioDi(r) });

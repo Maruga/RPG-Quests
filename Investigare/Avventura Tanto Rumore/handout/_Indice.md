@@ -1,6 +1,6 @@
 # Handout — indice
 
-> Snapshot dal wizard del **2026-09-17**. La fonte di verità è il wizard (caso «Bakuon — Tanto Rumore per Nulla»):
+> Snapshot dal wizard del **2026-09-18**. La fonte di verità è il wizard (caso «Bakuon — Tanto Rumore per Nulla»):
 > per stampare o modificare usare il wizard; questi file sono la copia per il vault.
 
 - **Referto autopsia della vittima** · referto autopsia → 01_referto_autopsia_della_vittima.html *(collegato a Shimada Yuta)*

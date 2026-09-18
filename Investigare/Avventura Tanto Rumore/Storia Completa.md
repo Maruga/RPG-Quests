@@ -318,4 +318,4 @@ En positivo si sottrae dal dado, negativo si aggiunge. A ±4/±5 il legame è pr
 - **`LANCIO.md`** — il materiale di lancio (WhatsApp + giornale finto)
 - La scheda del distretto vive in `../Materiale/Scheda_Distretto.md` (riportata per intero nel dossier)
 
-*Esportato dal wizard il 2026-09-17 — `python esporta_da_wizard.py` per riesportare.*
+*Esportato dal wizard il 2026-09-18 — `python esporta_da_wizard.py` per riesportare.*

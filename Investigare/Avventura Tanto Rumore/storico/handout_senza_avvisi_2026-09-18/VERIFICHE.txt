@@ -1,0 +1,15 @@
+13 HTML: rimossi soltanto i riquadri GM; istruzioni conservate integralmente nell indice.
+Renderer wizard verificato: nessun avviso; firme e allegati conservati, immagini di scena escluse.
+01_referto_autopsia_della_vittima.html: 1 pagine; nessun avviso, testo entro i margini.
+02_giornale_del_26_05_1997.html: 1 pagine; nessun avviso, testo entro i margini.
+03_giornale_del_27_05_1997.html: 2 pagine; nessun avviso, testo entro i margini.
+04_giornale_del_28_05_1997.html: 1 pagine; nessun avviso, testo entro i margini.
+05_pocket_bell_tabulato_1_febbraio_24_maggio_1997.html: 2 pagine; nessun avviso, testo entro i margini.
+06_fascicolo_cbx400f_koban_di_kamigyo.html: 2 pagine; nessun avviso, testo entro i margini.
+07_magazzino_koban_di_kamigyo.html: 1 pagine; nessun avviso, testo entro i margini.
+08_deposizione_chiba_hiroko.html: 1 pagine; nessun avviso, testo entro i margini.
+09_deposizione_ishida_kazuhiko.html: 1 pagine; nessun avviso, testo entro i margini.
+10_deposizione_shimada_yasuhiro.html: 1 pagine; nessun avviso, testo entro i margini.
+11_deposizione_shimada_yumiko.html: 1 pagine; nessun avviso, testo entro i margini.
+12_deposizione_watanabe_noriko.html: 1 pagine; nessun avviso, testo entro i margini.
+13_deposizione_aoki_hideki.html: 1 pagine; nessun avviso, testo entro i margini.

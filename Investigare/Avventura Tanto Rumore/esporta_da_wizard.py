@@ -374,6 +374,7 @@ if os.path.isdir(ALLEG):
     for f in os.listdir(ALLEG):
         if f.startswith('ritratto-') or f.startswith('Chiba Hiroko-'): continue   # ritratti: già in Ritratti/
         pulito = re.sub(r'-\d{15,}(?=\.)', '', f)                                  # via il timestamp dal nome
+        if pulito.casefold() == 'capo banda in moto.png': continue  # esclusa dall'utente il 2026-09-18
         if f.lower().endswith('.pdf') and pulito not in pdf_attivi: continue  # versioni archiviate, non materiale corrente
         shutil.copy2(os.path.join(ALLEG, f), os.path.join(DEST, 'Immagini', pulito))
         n_img += 1

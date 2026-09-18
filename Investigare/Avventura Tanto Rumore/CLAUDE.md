@@ -8,7 +8,8 @@ Prima di modifiche che cambiano trama, personaggi, relazioni o meccaniche invest
 ## Contesto
 
 **Ultima revisione autorizzata (2026-09-16):** consultare la sezione iniziale di
-`MEMORY.md` per date e consegne. Tutti gli handout hanno un avviso rosso per il GM.
+`MEMORY.md` per date e consegne. Dal 18 settembre, su richiesta dell'utente, gli
+handout NON riportano avvisi per il GM: le istruzioni sono in `handout/_Indice.md`.
 Il tabulato ha 31 chiamate complete e date di richiesta/evasione da compilare (+24 ore);
 referto autoptico disponibile il 26/05/1997 alle 15:00. Giorno 1 = domenica 25.
 Mappa e immagini del covo solo al finale; cercapersone solo esempi visivi.

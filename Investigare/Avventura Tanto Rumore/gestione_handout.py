@@ -1,4 +1,4 @@
-"""Resa degli avvisi GM e degli handout raccolti dal wizard, senza cambiare i testi."""
+"""Resa degli handout per i giocatori; istruzioni GM conservate nell'indice."""
 import html
 import re
 import urllib.parse
@@ -33,7 +33,7 @@ def verbale_html(nome, scheda):
             '<dt>Data e luogo</dt><dd>____________________________</dd></dl>'
             + paragrafi_html(scheda['deposizione'])
             + '<div class="ho-firma"><span class="riga">firma del dichiarante</span></div>'
-            + avviso_html(scheda.get('depAvvisoGM', '')) + '</div>')
+            + '</div>')
 
 
 def informazione_html(traccia, fonte):
@@ -46,4 +46,4 @@ def informazione_html(traccia, fonte):
     return ('<div class="ho-foglio ho-doc"><div class="ho-intestazione"><div class="ente">'
             + html.escape(titolo) + '</div><div class="tipo-doc">documento</div></div>'
             + paragrafi_html(fonte.get('versione') or traccia.get('testo', '')) + immagini
-            + avviso_html(fonte.get('avvisoGM', '')) + '</div>')
+            + '</div>')

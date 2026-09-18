@@ -1,5 +1,24 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
+## Handout senza avvisi stampati — 2026-09-18, ultima decisione utente
+
+- Tolti gli avvisi rossi per il master da tutti i 13 handout, anche nelle
+  anteprime e nella stampa dal wizard. Le precedenti istruzioni che richiedevano
+  gli avvisi in fondo ai documenti sono superate.
+- Conservati i metadati `avvisoGM` e `depAvvisoGM`: tempi, condizioni di consegna
+  e note riservate restano consultabili in `handout/_Indice.md` e nelle schede GM.
+- Rimossi i riquadri incorporati nei cinque documenti alla fonte; il renderer del
+  wizard e `gestione_handout.py` non aggiungono più note alle risposte e ai verbali.
+- Backup e diff: `storico/handout_senza_avvisi_2026-09-18/`.
+
+## Immagine capo banda in moto rimossa — 2026-09-18
+
+- Su richiesta dell'utente, `Immagini/Capo Banda in moto.png` è stata tolta dai
+  materiali correnti e conservata in `storico/immagine_rimossa_2026-09-18/`.
+- Nessun riferimento nel caso del wizard: era un file residuo nella cartella
+  degli allegati. L'export ora lo esclude, così non ricompare. L'originale nella
+  cartella del wizard resta conservato; nessun handout richiede modifiche.
+
 ## Ultimi punti di coerenza — 2026-09-17, decisione utente
 
 - Moto nella descrizione del covo spostate all'interno, vicino alla saracinesca,
