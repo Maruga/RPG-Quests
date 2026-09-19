@@ -2616,13 +2616,12 @@
 
     // verbale impaginato per una deposizione marcata 📄: intestazione del distretto + testo + firma.
     // Data e luogo restano in bianco: li compila il GM (qui non si inventano date).
-    function verbaleDeposizione(titolo, nome, testo, ruolo = "") {
-        const ruoloHtml = ruolo ? `<dt>Ruolo</dt><dd>${String(ruolo).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")}</dd>` : "";
+    function verbaleDeposizione(titolo, nome, testo) {
         const corpo = (testo || "").trim().split(/\n{2,}/)
             .map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
         return `<div class="ho-foglio ho-referto">
-            <div class="ho-intestazione"><div class="ente">POLIZIA PREFETTURALE DI KYOTO — DISTRETTO DI SHIMOGYŌ</div><div class="tipo-doc">DEPOSIZIONE</div></div>
-            <dl class="ho-meta"><dt>Persona sentita</dt><dd>${nome}</dd>${ruoloHtml}<dt>Data e luogo</dt><dd>____________________________</dd></dl>
+            <div class="ho-intestazione"><div class="ente">POLIZIA PREFETTURALE DI KYOTO — DISTRETTO DI SHIMOGYŌ</div><div class="tipo-doc">VERBALE DI SOMMARIE INFORMAZIONI</div></div>
+            <dl class="ho-meta"><dt>Persona sentita</dt><dd>${nome}</dd><dt>Data e luogo</dt><dd>____________________________</dd></dl>
             ${corpo}
             <div class="ho-firma"><span class="riga">firma del dichiarante</span></div>
             
@@ -2641,7 +2640,7 @@
         lista("passo8.schede").forEach(s => {
             if (!s.depHandout || !s.deposizione) return;
             const nome = nomeAttore(s.personaId) || "?";
-            righe.push({ titolo: s.depTitolo || `Deposizione — ${nome}`, da: `scheda di ${nome}`, testo: s.deposizione, link: vai(10), allegati: [], avvisoGM: s.depAvvisoGM || "", icona: "📝", colore: "#6b5330", verbaleDi: nome, ruolo: s.depRuolo || "" });
+            righe.push({ titolo: s.depTitolo || `Deposizione — ${nome}`, da: `scheda di ${nome}`, testo: s.deposizione, link: vai(10), allegati: [], avvisoGM: s.depAvvisoGM || "", icona: "📝", colore: "#6b5330", verbaleDi: nome });
         });
         box.innerHTML = righe.length === 0
             ? `<p>Nessuno ancora. Si marcano 📄 nelle <strong>informazioni</strong> (passo 12) e nelle <strong>schede</strong> (passo 11): qui si ritrovano raccolti, senza riscriverli.</p>`
@@ -2655,7 +2654,7 @@
         // distretto, informazioni 📄 come foglio con testo + allegati dentro — così al
         // momento della stampa non si dimentica niente in giro per i passi
         const foglioDi = (r) => r.verbaleDi
-            ? verbaleDeposizione(r.titolo, r.verbaleDi, r.testo, r.ruolo)
+            ? verbaleDeposizione(r.titolo, r.verbaleDi, r.testo)
             : foglioInformazione(r.titolo, r.testo, r.allegati);
         box.querySelectorAll("[data-ho-card-ant]").forEach(b => b.addEventListener("click", () => {
             const r = righe[+b.dataset.hoCardAnt];

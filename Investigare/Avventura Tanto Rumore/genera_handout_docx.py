@@ -98,7 +98,7 @@ def main():
     doc.core_properties.title = 'Bakuon - Handout da stampare'
     doc.core_properties.subject = '13 handout, uno per pagina, senza note GM'
     doc.core_properties.author = 'Maru'
-    target = ROOT / 'HANDOUT_STAMPA.docx'
+    target = ROOT / 'handout/HANDOUT_STAMPA.docx'
     doc.save(target)
     (OUT / 'manifest.json').write_text(json.dumps([{'file': n, 'scala': s} for n, _, s in pages], indent=2), encoding='utf-8')
     print(target)

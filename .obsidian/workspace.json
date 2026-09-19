@@ -11,12 +11,14 @@
             "id": "ef6e419710bc2e45",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Tanto Rumore/Immagini/Ritratti/Ishida Kazuhiko.png"
+                "file": "Investigare/Avventura Tanto Rumore/Storia Completa.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Ishida Kazuhiko"
+              "icon": "lucide-file",
+              "title": "Storia Completa"
             }
           }
         ]
@@ -225,29 +227,29 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "ef6e419710bc2e45",
   "lastOpenFiles": [
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/VERIFICHE.txt",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/VERIFICHE.txt",
+    "Investigare/Avventura Tanto Rumore/handout/HANDOUT_STAMPA_con_ruoli.pdf",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/deposizione_madre_stampa.png",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/HANDOUT_STAMPA.pdf",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/mso3F40.tmp",
+    "Investigare/Avventura Tanto Rumore/handout/~$NDOUT_STAMPA.docx",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-shm",
+    "Investigare/Wizard/codice/GenkaiWizard/app.db-wal",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/materiale_prima.zip",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/wizard.js.diff",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/StatoJson.diff",
+    "Investigare/Avventura Tanto Rumore/storico/ruoli_deposizioni_2026-09-19/wizard.js.dopo",
+    "Investigare/Avventura Tanto Rumore/storico/tabulato_22_23_2026-09-19/tabulato_stampa.png",
+    "Investigare/Avventura Tanto Rumore/Immagini/Ritratti/Ishida Kazuhiko.png",
+    "Investigare/Materiale/CrVer4.png",
+    "Investigare/Materiale/CrVer3.png",
     "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/pagina_05_da_Word.png",
-    "Investigare/Avventura Tanto Rumore/HANDOUT_STAMPA.pdf",
-    "Investigare/Avventura Tanto Rumore/mso3CAF.tmp",
-    "Investigare/Avventura Tanto Rumore/~$NDOUT_STAMPA.docx",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/manifest.json",
-    "Investigare/Avventura Tanto Rumore/HANDOUT_STAMPA.docx",
     "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/05_pocket_bell_tabulato_1_febbraio_24_maggio_1997_anteprima.png",
     "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/13_deposizione_aoki_hideki_anteprima.png",
     "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/12_deposizione_watanabe_noriko_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/13_deposizione_aoki_hideki.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/12_deposizione_watanabe_noriko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/13_deposizione_aoki_hideki.html",
     "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/11_deposizione_shimada_yumiko_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/12_deposizione_watanabe_noriko.html",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/10_deposizione_shimada_yasuhiro_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/11_deposizione_shimada_yumiko.pdf",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/09_deposizione_ishida_kazuhiko_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/08_deposizione_chiba_hiroko_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/07_magazzino_koban_di_kamigyo_anteprima.png",
-    "Investigare/Avventura Tanto Rumore/storico/handout_docx_2026-09-19/06_fascicolo_cbx400f_koban_di_kamigyo_anteprima.png",
     "Investigare/Avventura Tanto Rumore/storico/coerenza_finale_2026-09-17/MEMORY.md",
     "Investigare/Avventura Sake/CONTROLLO_HANDOUT_2026-09-17.md",
     "Investigare/Avventura Non Torna/LUOGHI.md",

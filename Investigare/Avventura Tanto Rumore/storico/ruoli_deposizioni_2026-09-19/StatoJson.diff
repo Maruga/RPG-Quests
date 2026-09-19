@@ -1,0 +1,62 @@
+--- prima
++++ dopo
+@@ -344,7 +344,8 @@
+           "altro": "",
+           "dove": ""
+         },
+-        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing. Questo è il primo racconto reticente. Le informazioni ottenute rassicurando il testimone vanno annotate come integrazione successiva."
++        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing. Questo è il primo racconto reticente. Le informazioni ottenute rassicurando il testimone vanno annotate come integrazione successiva.",
++        "depRuolo": "Cameriera dello SnakUp"
+       },
+       {
+         "personaId": "pobfvlu",
+@@ -380,7 +381,8 @@
+           "vizio": "Gioca a go d'azzardo nel retro di un salone — puntate piccole, orgoglio enorme"
+         },
+         "contatti": {},
+-        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing. Questo è il primo racconto reticente. Le informazioni ottenute rassicurando il testimone vanno annotate come integrazione successiva."
++        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing. Questo è il primo racconto reticente. Le informazioni ottenute rassicurando il testimone vanno annotate come integrazione successiva.",
++        "depRuolo": "Titolare dello SnakUp"
+       },
+       {
+         "personaId": "pogta8z",
+@@ -476,7 +478,8 @@
+           "dove": "",
+           "residenzaLuogoId": "lfq3ucm"
+         },
+-        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing."
++        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.",
++        "depRuolo": "Madre della vittima"
+       },
+       {
+         "personaId": "p5j75fj",
+@@ -522,7 +525,8 @@
+           "dove": "Università (Facoltà di Lettere), biblioteca Prefetturale (le serate fra settimana)",
+           "residenzaLuogoId": "lfq3ucm"
+         },
+-        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing."
++        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.",
++        "depRuolo": "Sorella maggiore della vittima"
+       },
+       {
+         "personaId": "pb309pd",
+@@ -573,7 +577,8 @@
+         "deposizione": "«Con Yuta… ci vedevamo da aprile. L'ho conosciuto dove lavora, allo SnakUp. Siamo usciti insieme la prima volta il dieci maggio, un sabato. Non lo sapeva nessuno, o così credevo io.\n\nScusate. Non riesco a stare ferma con le mani.\n\nQuella sera lì, il ventiquattro, io ero a casa. L'ho saputo lunedì ventisei maggio, dal giornale, mia madre me l'ha messo davanti senza dire niente. Da allora a scuola non ci sono più andata. Non ci riesco.\n\nVoi mi chiedete se aveva nemici. Yuta no. Yuta non aveva nemici, era uno che studiava e basta.\n\nLe moto… sì, le sento la notte. Passano sotto casa e rallentano, poi ripartono. Anche fuori dalla scuola, prima. Ragazzi che stanno fermi sul marciapiede e ti guardano e non dicono niente. E sul pocket bell mi arrivano messaggi, di notte, numeri che non conosco.\n\nChi siano non ve lo posso dire. Davvero. Se dico un nome poi a me chi mi protegge? Mia madre sta sotto quella merceria tutto il giorno, con la vetrina aperta sulla strada.\n\nHo paura. Tutto qui.»",
+         "depHandout": true,
+         "depTitolo": "Deposizione — Watanabe Noriko",
+-        "depAvvisoGM": "Versione stampata utilizzabile dal 26/05/1997 mattina, dopo che Noriko ha letto il giornale e dopo il colloquio. Se i PG le comunicano la morte il 25, non consegnare questo testo: giocare il colloquio e verbalizzare quanto dice realmente, con quella data e quella fonte della notizia. Il primo racconto è reticente; annotare separatamente la successiva collaborazione. Compilare data, ora e luogo effettivi, senza attendere il 26 per permettere ai PG di parlarle."
++        "depAvvisoGM": "Versione stampata utilizzabile dal 26/05/1997 mattina, dopo che Noriko ha letto il giornale e dopo il colloquio. Se i PG le comunicano la morte il 25, non consegnare questo testo: giocare il colloquio e verbalizzare quanto dice realmente, con quella data e quella fonte della notizia. Il primo racconto è reticente; annotare separatamente la successiva collaborazione. Compilare data, ora e luogo effettivi, senza attendere il 26 per permettere ai PG di parlarle.",
++        "depRuolo": "Ragazza frequentata dalla vittima"
+       },
+       {
+         "personaId": "g19neel",
+@@ -613,7 +618,8 @@
+         "deposizione": "Sono Aoki Hideki, ventun anni. Con Yuta eravamo in classe insieme da anni: i compiti a casa sua, gli esami preparati allo stesso tavolo. Il suo migliore amico, credo. Lui il mio di sicuro.\nDi Noriko mi aveva detto tutto: si erano conosciuti a fine aprile, e il dieci maggio erano usciti insieme la prima volta. Era felice come non l'avevo mai visto. Ma c'era un problema, e l'aveva detto solo a me: lei aveva un ex che non la lasciava in pace. Uno di quelli con le moto. Il nome non lo so — non me l'ha detto, forse non lo sapeva bene neanche lui. So che lei ne aveva paura.\nLe ultime due settimane Yuta era nervoso. Diceva che una moto smarmittata passava sotto la scuola, sempre la stessa. E una volta, alla fermata, c'era un tizio grosso, in tuta da lavoro, che ci guardava senza guardare. Gli ho detto: vai alla polizia. Mi ha risposto: «Non voglio guai. Finisce da sola.»\nSi sentivano col cercapersone di lei, coi numeri, come si fa tra noi. Lui la avvisava dal telefono del locale dove lavorava, o dalla cabina verso Sanjō quando usciva da lezione. A casa non poteva chiamarla: c'è la merceria, rispondono i genitori.\nDovevo insistere. Questo lo so io, e me lo porto dietro.",
+         "depHandout": true,
+         "depTitolo": "Deposizione — Aoki Hideki",
+-        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing."
++        "depAvvisoGM": "Dal 25/05/1997, dopo il colloquio con questa persona; compilare data, ora e luogo effettivi del verbale. Non distribuire tutte le deposizioni al briefing.",
++        "depRuolo": "Migliore amico della vittima"
+       },
+       {
+         "personaId": "ppf2iju",

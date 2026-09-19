@@ -1,5 +1,37 @@
 # MEMORY — Avventura Bakuon (Tanto Rumore per Nulla)
 
+## Deposizioni con ruolo leggibile — 2026-09-19, ultima revisione
+
+- Titolo dei sei verbali cambiato in **DEPOSIZIONE**; sotto il nome compare il
+  campo **Ruolo**: madre della vittima, sorella maggiore della vittima, migliore
+  amico della vittima, ragazza frequentata dalla vittima, cameriera dello SnakUp,
+  titolare dello SnakUp. Nessuna nota segreta nelle etichette per i giocatori.
+- Ruoli conservati alla fonte nel campo `depRuolo` delle sei schede. Aggiornati
+  renderer del wizard, `gestione_handout.py`, HTML e raccolte da stampare.
+- **File correnti:** `handout/HANDOUT_STAMPA.docx` e
+  **`handout/HANDOUT_STAMPA_con_ruoli.pdf`**, 13 pagine A4 verificate con Word.
+  Il PDF precedente era bloccato in scrittura: i PDF senza il suffisso
+  `_con_ruoli` sono superati. Conservata la revisione del tabulato al 22 e 23.
+- Backup, diff e controlli: `storico/ruoli_deposizioni_2026-09-19/`.
+
+## Tabulato fino al 23 maggio — 2026-09-19, revisione autorizzata
+
+- Il precedente arresto al 21/05 non aveva motivazione narrativa: era stata rimossa
+  una riga tronca del 22/05. L'utente ha ora chiesto chiamate anche il 22 e il 23.
+- Restano 31 chiamate. Due voci ripetitive dalla cabina 075-441-0087 sono state
+  ridatate: 03/04 ore 22:36 → **22/05 ore 01:47**, 10 secondi, «rispondi»;
+  04/03 ore 22:41 → **23/05 ore 22:41**, 13 secondi, «chiamami».
+- Questa è una nuova revisione narrativa autorizzata, non il recupero dei dati
+  mancanti della vecchia riga tronca. Le altre 29 chiamate sono invariate;
+  conservati numeri, codici, traduzioni, periodo e tempi di consegna.
+- Fonte aggiornata e riesportata. Raccolte aggiornate nella posizione corrente
+  scelta dall'utente: `handout/HANDOUT_STAMPA.docx` e
+  **`handout/HANDOUT_STAMPA_aggiornato.pdf`**. Il precedente `HANDOUT_STAMPA.pdf`
+  era bloccato in scrittura e resta la versione senza le chiamate del 22 e 23:
+  per stampare usare il PDF con suffisso `_aggiornato`.
+  Il generatore ora salva il DOCX in `handout/`. Backup e diff in
+  `storico/tabulato_22_23_2026-09-19/`.
+
 ## Raccolta handout da stampare — 2026-09-19
 
 - Creato `HANDOUT_STAMPA.docx`: tutti i 13 documenti, esattamente un handout per

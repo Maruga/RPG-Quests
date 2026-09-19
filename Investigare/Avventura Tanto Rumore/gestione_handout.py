@@ -26,11 +26,13 @@ def nome_allegato(allegato):
 
 
 def verbale_html(nome, scheda):
+    ruolo = (scheda.get('depRuolo') or '').strip()
+    ruolo_html = '<dt>Ruolo</dt><dd>' + html.escape(ruolo) + '</dd>' if ruolo else ''
     return ('<div class="ho-foglio ho-referto"><div class="ho-intestazione">'
             '<div class="ente">POLIZIA PREFETTURALE DI KYOTO — DISTRETTO DI SHIMOGYŌ</div>'
-            '<div class="tipo-doc">VERBALE DI SOMMARIE INFORMAZIONI</div></div>'
+            '<div class="tipo-doc">DEPOSIZIONE</div></div>'
             '<dl class="ho-meta"><dt>Persona sentita</dt><dd>' + html.escape(nome) + '</dd>'
-            '<dt>Data e luogo</dt><dd>____________________________</dd></dl>'
+            + ruolo_html + '<dt>Data e luogo</dt><dd>____________________________</dd></dl>'
             + paragrafi_html(scheda['deposizione'])
             + '<div class="ho-firma"><span class="riga">firma del dichiarante</span></div>'
             + '</div>')
