@@ -1,5 +1,20 @@
 # Preparazione — fuori dal tavolo
 
+
+**DIVIDE ET IMPERA** è un thriller criminale dove nulla accade per caso. I giocatori dovranno leggere le intenzioni dell’avversario, gestire il tempo e prendere decisioni sotto pressione.
+
+Qui non vince chi apre il fuoco per primo, ma chi riesce a dominare il caos prima che il caos domini lui. **Strategia, psicologia e decisioni sotto pressione saranno le vostre vere armi, perché il nemico più spietato avrà un solo volto: il tempo.**
+
+**Tipo di gioco:** Thriller investigativo / Azione / Tattico
+**Tema:** Rapina, manipolazione, ostaggi
+**Stile:** Realistico, teso, cinematografico
+**Focus:** Strategia, psicologia, negoziazione, combattimento
+**Tono:** Adulto, violento, ad alta tensione
+**Struttura:** Missione a tempo.
+
+
+
+
 ## Decisioni dell’autore
 
 - Apertura al poligono per una gara di distretto; modalità riservate alla prossima spiegazione.
