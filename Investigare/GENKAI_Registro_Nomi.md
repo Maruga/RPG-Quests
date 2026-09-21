@@ -2,7 +2,7 @@
 
 > File **trasversale** a tutte le avventure (non appartiene a nessuna cartella-avventura).
 > Serve a evitare **omonimie** (stesso nome + cognome su personaggi diversi) tra PG, PNG notevoli, Kage e i PNG delle singole avventure.
-> Ultimo aggiornamento: **2026-08-19** (aggiunta *Richiamo*).
+> Ultimo aggiornamento: **2026-09-21** (aggiunta *Ostaggi*).
 
 ## Come usarlo
 
@@ -100,6 +100,33 @@ Aiba Kenta · Aoyagi Hiroshi · Aoyagi Mariko · **Endō Hiroshi** ⚠ · Fujiwa
 ### Non torna *(avventura da tavolo per un solo giocatore — nomi assegnati 2026-09-15, nessuna omonimia: Kinoshita, Arai, Naruse, Ochiai sono cognomi nuovi nel registro)*
 Kinoshita Tsuneo 木下 常雄 (72, la vittima) · Kinoshita Takuya 木下 拓也 (25, il nipote) · Arai Setsuko 新井 節子 (68, la vicina) · Naruse Takao 成瀬 孝夫 (agente scelto del kōban di Fukakusa) · Ochiai Shin'ichi 落合 真一 (medico del servizio di emergenza)
 *(nomi propri già presenti altrove con cognomi diversi — ammesso: Takuya (Sake), Tsuneo, Setsuko, Takao)*
+
+---
+
+### Ostaggi *(prima stesura 2026-09-21; cartella `Avventura Ostaggi/`)*
+
+Schede e indice: [Avventura Ostaggi](Avventura%20Ostaggi/00_INDICE.md). Nuove coppie nome+cognome controllate sui Markdown esistenti.
+
+- Amemiya Junpei (investigatore della criminalità organizzata)
+- Arima Shunzo (consigliere municipale, citato nelle carte)
+- Enomoto Sae (cassiera, ostaggio)
+- Furuya Chisato (direttrice della filiale, fuori dalla banca)
+- Hasumi Eiji (tecnico delle cassette)
+- Horiuchi Naoto (tecnico delle fotocopiatrici, ostaggio informatore)
+- Kajiwara Nobuo (addetto alla distruzione)
+- Kasahara Toshiaki (sergente di pattuglia)
+- Kume Satoshi (negoziante, ostaggio)
+- Kurosaki Michio (funzionario dell’ufficio appalti, citato nelle carte)
+- Mizuhara Akio (portavoce, finto squilibrato)
+- Numata Shinji (carceriere giovane)
+- Otani Teruko (pensionata, ostaggio)
+- Segawa Reiji (capo degli assalitori)
+- Shibata Kazuo (boss morto)
+- Tsukahara Fumie (impiegata amministrativa, ostaggio)
+- Tsunoda Ryohei (imprenditore edile, citato nelle carte)
+- Tsuruta Isao (carceriere anziano)
+- Uchino Keisuke (vicedirettore, ostaggio)
+- Ugaki Masanori (mandante)
 
 ---
 
