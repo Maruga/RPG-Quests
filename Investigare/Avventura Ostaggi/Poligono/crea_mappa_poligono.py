@@ -43,10 +43,10 @@ rect(LX, OY - 3, 4, FH + 6, fill="#444444")
 
 for c in range(COLS + 1):
     x = OX + c * S
-    line(x, OY, x, LY, stroke="#8a8a8a" if c % 4 == 0 else "#c8c4ba", sw=0.5 if c % 4 == 0 else 0.25)
+    line(x, OY, x, LY, stroke="#6a6a6a" if c % 4 == 0 else "#9c988e", sw=0.55 if c % 4 == 0 else 0.3)
 for r in range(ROWS + 1):
     y = OY + r * S
-    line(OX, y, LX, y, stroke="#8a8a8a" if r % 5 == 0 else "#c8c4ba", sw=0.5 if r % 5 == 0 else 0.25)
+    line(OX, y, LX, y, stroke="#6a6a6a" if r % 5 == 0 else "#9c988e", sw=0.55 if r % 5 == 0 else 0.3)
 rect(OX, OY, FW, FH, stroke="#333333", sw=0.9)
 text(LX - 3, OY + S / 2 + 1.5, "PARTENZA", 4.5, fill="#3a5478", bold=True, anchor="end")
 
