@@ -2,7 +2,7 @@
 
 Chi parla è **Alceo Venturini, maschera di Gigi Proietti**. Giapponese fluente, con l'accento. Al telefono recita: la voce che sale e scende, il pianto che arriva e passa, la risata fuori posto. Dietro la recita è lucido, e ascolta ogni parola dei PG per riusarla.
 
-**La regola che il GM tiene in testa: tutto quello che chiede è falso.** Non vuole la pizza, non vuole l'elicottero, non vuole i soldi. Vuole che alle 15:30 la cassetta sia ancora chiusa dentro una banca circondata da poliziotti che stanno aspettando una pizza. Ogni richiesta compra minuti; ogni concessione dei PG gliene compra altri. **Non prende mai un impegno verificabile.** Se glielo chiedono, cambia argomento con una parola dell'altro.
+**La regola che il GM tiene in testa: tutto quello che chiede è falso.** Non vuole la pizza, non vuole l'elicottero, non vuole i soldi. Vuole che, quando il timer arriva a zero, la cassetta sia ancora chiusa dentro una banca circondata da poliziotti che stanno aspettando una pizza. Ogni richiesta compra minuti; ogni concessione dei PG gliene compra altri. **Non prende mai un impegno verificabile.** Se glielo chiedono, cambia argomento con una parola dell'altro.
 
 Le battute sono in italiano perché il tavolo parla italiano. Ogni tanto gli scappa una parola nella sua lingua, un *mannaggia*, un *porca miseria*: i PG sanno già da Horiuchi che è italiano, e sentirlo glielo conferma.
 
@@ -104,8 +104,6 @@ Passa sempre la stessa: **Minowa Chie**, la più giovane degli impiegati, che ha
 
 > «I vecchi. Lei vuole i vecchi. *(pausa)* Lei è una persona buona. Le do la signora con la borsa della spesa, ma dopo la pizza. Prima la pizza, poi la signora. Le cose una alla volta, sennò mi confondo.»
 
-Se la pizza arriva, **Otani Teruko** esce davvero, alle 14:40 circa: è l'unica cosa vera che fa in tutta la giornata, e la fa perché una vecchia che esce piangendo tiene la polizia buona per un'altra mezz'ora.
-
 **«Arrendetevi, non avete via d'uscita.»**
 
 > «Via d'uscita. *(ride a lungo)* Ispettore, lei non ha capito niente e questo mi dispiace, perché mi era simpatico. Io non voglio uscire. Io sto benissimo qui.»
@@ -157,13 +155,13 @@ Un PG con un Gou che legge un ambiente, o le persone, qui ha la sua scena: Ventu
 
 ---
 
-## Le 15:29 — la minaccia sul tecnico
+## A un minuto dalla fine — la minaccia sul tecnico
 
 Cattabriga ha visto la cornetta. Horiuchi viene portato giù per le scale a spinte, fino al telefono. La recita finisce: la voce di Venturini adesso è piatta.
 
-> «Ispettore. Abbiamo trovato il vostro amico. Quello col telefonino sotto il tavolo. Vuole salutarla.» *(il respiro di Horiuchi nella cornetta, una parola in giapponese, poi via)* «Adesso mi ascolti bene perché non scherzo più. Se qualcuno si muove là fuori, se vedo una divisa, se sento un rumore che non mi piace, lui muore. Un minuto. Poi vediamo.»
+> «Ispettore. Abbiamo trovato il vostro amico. Quello col telefono sotto il tavolo. Vuole salutarla.» *(il respiro di Horiuchi nella cornetta, una parola in giapponese, poi via)* «Adesso mi ascolti bene perché non scherzo più. Se qualcuno si muove là fuori, se vedo una divisa, se sento un rumore che non mi piace, lui muore. Un minuto. Poi vediamo.»
 
-Un minuto dopo, alle 15:30, salta la cassetta. **Horiuchi non deve morire per forza:** se i PG sono già dentro, se il tiratore ha la finestra giusta, se qualcuno ha capito prima, la minaccia resta una minaccia.
+Un minuto dopo salta la cassetta. **Horiuchi non deve morire per forza:** se i PG sono già dentro, se il tiratore ha la finestra giusta, se qualcuno ha capito prima, la minaccia resta una minaccia.
 
 ---
 
@@ -179,20 +177,24 @@ Da lì in poi al telefono non risponde più nessuno. Dentro, gli ordini li dà M
 
 ## Le guardie dietro la porta — per il GM
 
-Quello che Ferraguti e Cattabriga si dicono nel corridoio, in italiano, e che Horiuchi sente senza capire. Da leggere solo se serve il colore; agli ostaggi arriva come rumore.
+Quello che Ferraguti e Cattabriga si dicono nel corridoio, in italiano, e che Horiuchi sente senza capire. Da leggere solo se serve il colore; agli ostaggi arriva come rumore. **Le righe in giapponese sono quelle che Horiuchi manda fuori.**
 
-**13:57**, Cattabriga, che parla troppo quando è nervoso:
+**Timer 1:48**, Cattabriga, che parla troppo quando è nervoso:
 
 > «Quello là dentro con la camicia azzurra guarda sempre la porta. Perché guarda la porta?» «Perché c'è la porta. Siediti.»
 
-**14:22**, Cattabriga entra e dice **in giapponese**, agli ostaggi:
+**Timer 1:05**, Cattabriga entra e dice **in giapponese**, agli ostaggi:
 
 > «Un'ora. Ancora un'ora e tutti a casa. Chi sta seduto e zitto va a casa.»
 
-**15:19**, Ferraguti, dalla radio, poi a Cattabriga:
+**Timer 0:11**, Ferraguti, dalla radio, poi a Cattabriga:
 
 > «Ha detto che è quasi fatta. Quando senti il botto, si scende tutti. Poi il fumo, e ognuno per sé.» «E se quello di sotto non è pronto?» «È pronto. Siediti.»
 
-**15:28**, Cattabriga, che ha visto la mano sotto il tavolo:
+Poi Cattabriga apre la porta e lo dice **in giapponese**, agli ostaggi, perché per la fuga nel fumo gli servono tutti in piedi e pronti a correre:
+
+> «Fra poco sentite un botto. State giù. Poi tutti fuori, di corsa, e chi corre va a casa.»
+
+**Timer 0:02**, Cattabriga, che ha visto la mano sotto il tavolo:
 
 > «Tu. Con la camicia. Tira fuori le mani. TIRA FUORI LE MANI.»

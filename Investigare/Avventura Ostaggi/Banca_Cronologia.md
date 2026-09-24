@@ -1,6 +1,6 @@
 # La banca — cronologia degli eventi, per il GM
 
-Dalle **12:30**, quando la banda entra, alle **15:30**, quando la cassetta salta. Tre ore. I PG arrivano all'**una e mezza**: hanno due ore, e all'inizio non lo sanno.
+Dalle **12:30**, quando la banda entra, alla cassetta che salta, circa tre ore dopo. I PG arrivano all'**una e mezza**. Il timer di due ore parte quando il tecnico manda il messaggio «tra due ore tutto finito», nella tabella alle 13:45: da lì il tempo del tavolo è reale.
 
 Il portavoce è **Alceo Venturini (maschera di Gigi Proietti)**: le sue battute stanno in `Banca_Telefonate.md`. Le richieste che fa sono tutte false. L'unica cosa che vuole è il tempo.
 
@@ -18,18 +18,20 @@ Dalle piante in `Mappe_Banca/`.
 | **Malvezzi (Alberto Sordi)** | si muove: caveau, scale, uffici del piano terra | controlla il tempo, guarda la strada dalle vetrate |
 | **Venturini (Gigi Proietti)** | **piano terra, uffici dietro gli sportelli**, al telefono | parla con i PG |
 
-Dentro non c'è nessun altro. La direttrice è assente; per la banca risponde il vicedirettore Uchino, che è tra gli ostaggi.
+Dentro non c'è nessun altro. La direttrice, Furuya Chisato, è fuori dalla banca; dentro risponde il vicedirettore Uchino, che è tra gli ostaggi.
 
 ---
 
 ## Il canale: il cercapersone di Horiuchi
 
-**Un pocket bell riceve e basta.** Nel 1997 per mandare un messaggio a un cercapersone si chiama un numero da un telefono e si digitano cifre sulla tastiera: due cifre per ogni sillaba, il codice che i ragazzi usavano tutti. Quindi Horiuchi, per «mandare» messaggi, **ha bisogno di un telefono**. Ne ha uno: nella sala riunioni c'è l'apparecchio sul mobile, e in valigetta ha il tester di linea dei tecnici, che si aggancia alla presa a muro dietro il mobile. Sotto il tavolo, la cornetta dentro la giacca, digita alla cieca. Non può parlare: può solo comporre numeri, e ogni volta rischia.
+**Un pocket bell riceve e basta.** Nel 1997 per mandare un messaggio a un cercapersone si chiama un numero da un telefono e si digitano cifre sulla tastiera: due cifre per ogni sillaba, il codice che i ragazzi usavano tutti. Quindi Horiuchi, per «mandare» messaggi, **ha bisogno di un telefono**. I banditi hanno tolto i telefoni dalla stanza e le borse non le hanno fatte portare, ma il tester di linea un tecnico **lo porta addosso**, alla cintura: si aggancia alla presa a muro dietro il mobile. Sotto il tavolo, la cornetta dentro la giacca, digita alla cieca. Non può parlare: può solo comporre numeri, e ogni volta rischia.
 
-- **La destinataria** è la fidanzata, che riceve sul suo cercapersone sfilze di cifre. All'inizio non capisce. Poi riconosce il codice, legge, e alle **13:15 circa** è davanti alla banca col cercapersone in mano, a farsi ascoltare dagli agenti del cordone. Quando i PG arrivano, i primi messaggi ci sono già.
-- **Cosa può sapere Horiuchi.** Quello che vede nella sala riunioni e quello che sente attraverso la porta. **Non capisce l'italiano**: coglie il numero delle voci, il tono, i rumori, e qualche parola che somiglia all'inglese di scuola, *esplosione, documenti*, senza esserne sicuro. Gli orari li ricava da quello che i banditi dicono **in giapponese** agli ostaggi per tenerli buoni.
+**Quanto ci sta in una chiamata.** I cercapersone comuni del 1997 accettavano messaggi di **circa venti caratteri**: due cifre per carattere, quindi una quarantina di tasti, con la centrale che dà il tono e chiude dopo una trentina di secondi. **Regola per il tavolo: una chiamata = un messaggio di venti caratteri al massimo**, in sillabe giapponesi. Non può scrivere quello che vuole: può dire una cosa sola per volta, e ogni chiamata è mezzo minuto con la mano sotto il tavolo. Per questo i messaggi sono pochi e corti.
+
+- **La destinataria** è la fidanzata, che riceve sul suo cercapersone sfilze di cifre. All'inizio non capisce. Alle **13:15 circa** è davanti alla banca col cercapersone in mano, a farsi ascoltare dagli agenti del cordone. Quando i PG arrivano, i primi messaggi ci sono già.
+- **Cosa può sapere Horiuchi.** Quello che vede nella sala riunioni e quello che sente attraverso la porta. **Non capisce l'italiano**: dei banditi tra loro coglie il numero delle voci, il tono, i rumori. Quello che scrive è **quello che i banditi dicono in giapponese** agli ostaggi, e quello che sente e vede: il trapano da sotto, chi sale e chi scende.
 - **Cosa non può sapere.** I nomi, il mandante, cosa c'è nella cassetta. Non lo dice e non lo scrive.
-- I messaggi sono corti e sgrammaticati: sono cifre digitate sotto un tavolo. Sotto, la versione che la fidanzata legge ai PG.
+- I messaggi sono corti e sgrammaticati: venti sillabe digitate sotto un tavolo. Sotto, la versione che la fidanzata legge ai PG; in italiano sono più lunghi di quanto siano in kana.
 
 ---
 
@@ -55,35 +57,43 @@ Sul nastro i sei si vedono di spalle o col cappello: facce occidentali, ma nessu
 
 ## Ora per ora
 
-Gli orari in grassetto sono quelli decisi dall'autore. Il timer per i giocatori parte quando **capiscono** che c'è una scadenza: da lì il GM lo mette sul tavolo e non lo nasconde più.
+Due parti. **Prima del timer** tutto è normale: i PG arrivano, mettono le transenne, parlano con Venturini. **Il timer parte quando arriva il messaggio del tecnico che dice «tra due ore tutto finito»**: da lì parte da **2:00:00** e scende, e il tempo di gioco è il tempo reale del tavolo. I giocatori vedono il timer e sanno solo che fra due ore succede qualcosa; il perché lo scoprono dopo.
 
-| Ora | Dentro la banca | Cosa arriva ai PG | Cosa possono fare |
-|---|---|---|---|
-| 12:10–12:30 | I sei entrano **uno alla volta, come clienti**, con le maschere nelle borse. L'ultimo entra alle 12:30 e chiude la porta. | — | — |
-| **12:30** | Le maschere. Ostaggi radunati e portati al primo piano. Per prima cosa Malvezzi stacca le telecamere interne. | — | — |
-| 12:31 | | La società di vigilanza collegata alla banca perde il segnale delle telecamere e chiama la polizia. Ha ancora **il nastro della telecamera sopra l'ingresso**, fino alle 12:30. | — |
-| **12:35 circa** | | I PG, al poligono, ricevono la chiamata: **una persona ha preso una banca, si è chiusa dentro, sembra fuori di sé.** | Salgono in macchina. |
-| 12:40–13:10 | Soranzo e Bellandi scendono al caveau. Venturini prende il telefono. | Primi messaggi del cercapersone: «CHIUSO DENTRO BANCA» · «UNO STRANIERO URLA ITALIANO MATTO» · «TUTTI SU PRIMO PIANO UFFICIO ANCHE IO» | — |
-| **13:15** | | La fidanzata arriva al cordone coi messaggi. | — |
-| **13:30** | Venturini chiama la polizia, o risponde al telefono della banca. | I PG arrivano. Sanno: un invasato, la banca chiusa, gli ostaggi al primo piano, un tecnico che comunica. | Transenne, posti di blocco, agenti sui due incroci e sul vicolo di servizio. Prima telefonata. |
-| 13:40 | | Arriva il tecnico della vigilanza col nastro dell'ingresso. **Contando entrate e uscite, alle 12:30 dentro ci sono venti persone.** Venturini ne ha dette quindici. | Chi sono gli altri cinque? È il primo indizio che non è solo. |
-| **13:57** | Ferraguti e Cattabriga parlano nel corridoio. | «SENTO PIU VOCI FUORI PORTA — NON E SOLO — FORSE TERRORISTI» | I PG capiscono che «l'invasato» è una copertura. |
-| 14:05 *(proposta)* | Bellandi sale a prendere l'impiegata amministrativa, Tsukahara, e le chiede in giapponese dov'è **la cassetta numero ___**. Lei lo dice davanti a tutti. | «CERCANO CASSETTA NUMERO ___» | Chiedere a chi è intestata: è di un **boss morto**, e su quella cassetta c'è già un provvedimento in corso. Un politico locale comincia a telefonare. |
-| 14:15 | | Un funzionario dell'Istituto Italiano di Cultura di Kyoto ascolta le registrazioni delle telefonate: **«È toscano. Di Livorno. E fa un mestiere in cui si parla in pubblico.»** | Da qui si può chiedere all'Italia. Serve la descrizione fisica: la dà chi entra con la pizza. |
-| **14:22** | Per tenere buoni gli ostaggi, Cattabriga dice in giapponese: «un'ora e poi tutti a casa». | «GUARDIA DICE UN ORA POI FINE — CALCOLO 15 30» | **Qui i PG hanno una scadenza.** Il GM mostra il timer. |
-| **14:47** | Soranzo lavora sulla cassetta. | «RUMORE TRAPANO DA SOTTO» | Il caveau: non vogliono i contanti, vogliono una cassetta. |
-| 14:50 | | La richiesta parte: centrale di Kyoto, poi Tokyo, poi Roma. In Italia sono le otto meno dieci del mattino. | Aspettare, e intanto entrare o no. |
-| 15:15 | | **Il fax da Roma.** Chi è, cosa ha fatto, con chi lavora. Testo sotto. | I PG sanno che dentro c'è uno che apre casseforti e uno che usa esplosivi. |
-| **15:19** | Nel corridoio, in italiano: fra poco i documenti saltano, poi la seconda parte del piano, la fuga. | «SENTITO PAROLE ESPLOSIONE DOCUMENTI — POI FUGA — NON SICURO» | Ultima finestra per entrare. |
-| **15:29** | Cattabriga ha visto la cornetta. Horiuchi trascinato giù, al telefono. | **Venturini:** «Abbiamo il vostro amico col telefonino. Se non fate quello che diciamo, lo ammazziamo.» | Un minuto. |
-| **15:30** | La carica salta nel caveau. I documenti non esistono più. | Un colpo sordo, i vetri delle vetrate tremano. | — |
-| subito dopo | **Seconda parte del piano.** | Fumogeni fuori: nei cestini davanti all'ingresso, dietro le fioriere, sul vicolo di servizio. Poi tutti gli ostaggi spinti fuori nel fumo, e i sei in mezzo a loro, senza maschere né giubbotti. | I posti di blocco. |
+Nella tabella il messaggio arriva alle **13:45**: se lo fai arrivare prima o dopo, l'ora in gioco slitta e **il timer no**. La colonna che comanda è quella del timer.
+
+### Prima del timer
+
+| Ora | Dentro la banca | Fuori |
+|---|---|---|
+| 12:10–12:30 | I sei entrano uno alla volta, come clienti, con le maschere nelle borse. L'ultimo entra alle 12:30 e chiude la porta. | — |
+| **12:30** | Le maschere. Ostaggi radunati e portati al primo piano, in sala riunioni. Malvezzi stacca le telecamere interne. | — |
+| 12:31 | | La società di vigilanza perde il segnale e chiama la polizia. Tiene il nastro della telecamera sopra l'ingresso, fino alle 12:30. |
+| **12:30 circa** | | I PG, al poligono, ricevono la chiamata: una persona ha preso una banca, si è chiusa dentro, sembra fuori di sé. |
+| 12:40–13:10 | Soranzo e Bellandi scendono al caveau. Venturini prende il telefono. | Primi messaggi del cercapersone alla fidanzata: «CHIUSI IN BANCA» · «STRANIERO ITALIANO MATTO» · «TUTTI AL PIANO DI SOPRA ANCHE IO» |
+| 13:15 | | La fidanzata è al cordone coi messaggi. |
+| **13:30** | | **I PG arrivano.** Sanno: un invasato, la banca chiusa, gli ostaggi al primo piano, un tecnico che comunica. Transenne, posti di blocco, agenti agli incroci e sul vicolo. Prima telefonata con Venturini: «quattordici persone e ci sono io». |
+| 13:40 | | Arriva il tecnico della vigilanza col nastro dell'ingresso: contando entrate e uscite, alle 12:30 dentro c'erano **venti persone**. |
+
+### Dal timer in poi — i messaggi del tecnico
+
+Qui ci sono **solo i messaggi di Horiuchi**, cioè le cose che il GM dice ai giocatori a orario fisso, più la minaccia finale e il botto. Tutto il resto — il nastro, la pizza, l'italiano che ascolta, la richiesta a Roma, il consigliere — succede in gioco, quando e se i PG lo fanno succedere, e sta nelle sezioni sotto.
+
+| Timer       | Ora in gioco | Messaggio che arriva ai PG                                                                                                                                  |
+| ----------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2:00:00** | 13:45        | **«DICONO TRA 2 ORE FINITO»** — si fa partire il timer                                                                                                      |
+| **1:48**    | 13:57        | «PIU VOCI FUORI — NON E SOLO»                                                                                                                               |
+| **1:35**    | 14:10        | «PARLANO DI CASSETTA 2948»                                                                                                                                  |
+| **1:05**    | 14:40        | «DICONO MANCA 1 ORA AL BOOM»                                                                                                                                |
+| **0:43**    | 15:02        | «TRAPANO DA SOTTO»                                                                                                                                          |
+| **0:11**    | 15:34        | «TRA POCO TUTTI FUORI»                                                                                                                                      |
+| **0:01**    | 15:44        | Non è un messaggio: è Venturini al telefono. «Abbiamo il vostro amico, quello col telefono sotto il tavolo. Se non fate quello che diciamo, lo ammazziamo.» |
+| **0:00**    | 15:45        | La carica salta nel caveau. Un colpo sordo, i vetri tremano, il timer suona. Subito dopo i fumogeni e la fuga nel fumo.                                     |
 
 ---
 
 ## Il numero della cassetta e il filo del politico
 
-Quando Horiuchi manda il numero della cassetta, i PG possono chiedere. La cassetta è intestata a un **ex boss della zona, morto** *(nome da assegnare sul registro dei nomi)*. È già oggetto di un provvedimento: verrà aperta d'ufficio a breve, per i documenti che contiene, come dice la nota D04 della bozza. Chi ha interesse che quei documenti non arrivino a un magistrato lo sa, e uno di questi è un **politico locale** *(nome da assegnare)*, che da quel momento telefona in centrale, si presenta al cordone, chiede che «non si metta in pericolo la vita di nessuno», cioè che nessuno entri. È l'ostacolo, non il mandante dichiarato: il mandante i PG non lo scoprono oggi.
+Quando Horiuchi manda «PARLANO DI CASSETTA 2948», i PG possono chiedere. La cassetta è intestata a **Shibata Kazuo (il boss della zona, morto)**. È già oggetto di un provvedimento: verrà aperta d'ufficio a breve, per i documenti che contiene, come dice la nota D04 della bozza. Chi ha interesse che quei documenti non arrivino a un magistrato lo sa, e uno di questi è **Arima Shunzo (consigliere municipale)**, che da quel momento telefona in centrale, si presenta al cordone, chiede che «non si metta in pericolo la vita di nessuno», cioè che nessuno entri. È l'ostacolo, non il mandante: il mandante è **Ugaki Masanori**, e i PG oggi non lo scoprono.
 
 ---
 
@@ -92,10 +102,10 @@ Quando Horiuchi manda il numero della cassetta, i PG possono chiedere. La casset
 È la seconda indagine della giornata, quella che si fa al telefono mentre fuori si tratta. Funziona così, e ogni anello ha il suo tempo.
 
 1. **Le registrazioni.** Il posto di comando registra ogni telefonata su nastro, come si fa sempre. Dentro c'è la voce di Venturini che racconta barzellette e parla del mare davanti a casa.
-2. **Un italiano che ascolta.** A Kyoto c'è l'**Istituto Italiano di Cultura**, e a Osaka il **Consolato Generale d'Italia**: un funzionario *(nome da assegnare sul registro)* arriva in venti minuti se lo si chiede, alle **14:15**, ascolta i nastri, e dice Livorno senza esitare, con i motivi elencati nelle telefonate. Aggiunge che parla come uno abituato al pubblico, sui quarant'anni, e che non è uno che grida per davvero: sta recitando.
+2. **Un italiano che ascolta.** A Kyoto c'è l'**Istituto Italiano di Cultura**, e a Osaka il **Consolato Generale d'Italia**: un funzionario, **Marco Pellegrini (addetto culturale dell'Istituto)**, arriva **venti minuti dopo che lo si chiama**, ascolta i nastri, e dice Livorno senza esitare, con i motivi elencati nelle telefonate. Aggiunge che parla come uno abituato al pubblico, sui quarant'anni, e che non è uno che grida per davvero: sta recitando.
 3. **La descrizione fisica.** La dà chi è entrato con le pizze: un metro e ottanta abbondante, magro, mani lunghe con le unghie cortissime, gesti da palcoscenico, una maglia color vinaccia sotto il giubbotto, la voce. La maschera copre la faccia, non il resto.
-4. **La richiesta.** Alle **14:50** la centrale di Kyoto la passa alla polizia nazionale a Tokyo, che la gira all'ufficio dell'Interpol, che la manda a Roma, al servizio che tiene i rapporti con le polizie straniere. Kyoto e Roma hanno sette ore di differenza: a Roma sono le 7:50 del mattino, l'ufficio è aperto e un latitante con un mandato ha il fascicolo già pronto.
-5. **La risposta** arriva per fax alle **15:15**. Quattro minuti prima che Horiuchi scriva la parola *esplosione*.
+4. **La richiesta.** Appena i PG hanno la descrizione fisica, la centrale di Kyoto la passa alla polizia nazionale a Tokyo, che la gira all'ufficio dell'Interpol, che la manda a Roma, al servizio che tiene i rapporti con le polizie straniere. Kyoto e Roma hanno sette ore di differenza: a Roma è mattina presto, l'ufficio è aperto e un latitante con un mandato ha il fascicolo già pronto.
+5. **La risposta** arriva per fax **venticinque minuti dopo la richiesta**. Chi la fa partire tardi, la riceve tardi.
 
 **Il fax da Roma** *(da leggere ai giocatori così com'è)*
 
@@ -134,7 +144,6 @@ Poi la porta si apre e i quattordici ostaggi vengono spinti fuori insieme, e i s
 ## Da decidere con l'autore
 
 - **Il nome della banca.** Piccola, di quartiere: una *shinkin*, la banca di credito cooperativo. Proposte: *Kyoto Chūō Shinkin, filiale di ___* · *Fushimi Shinkin* · *Rakunan Shinkin*.
-- **L'orario del messaggio sulla cassetta** (qui proposto alle 14:05) e **il numero**.
-- **Il nome del boss morto** e **del politico**, sul registro dei nomi.
-- **Il tester di linea** nella valigetta di Horiuchi, che rende possibile il cercapersone: è un oggetto in più rispetto alla scheda. Senza, resta il telefono sul mobile della sala riunioni, più rischioso.
+- **L'orario del messaggio sulla cassetta** (in tabella al timer 1:35, spostabile).
+- **Il tester di linea** alla cintura di Horiuchi, che rende possibile il cercapersone: è un oggetto in più rispetto alla scheda.
 - `Preparazione.md` dice che il cercapersone diventava un cellulare: qui vale il cercapersone, come nella scheda di Horiuchi e come deciso dall'autore. `Preparazione.md` va corretto.

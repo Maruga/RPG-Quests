@@ -127,6 +127,9 @@ Schede e indice: [Avventura Ostaggi](Avventura%20Ostaggi/00_INDICE.md). Nuove co
 - Tsuruta Isao (carceriere anziano)
 - Uchino Keisuke (vicedirettore, ostaggio)
 - Ugaki Masanori (mandante)
+- Kuriyama Tomoe 栗山 巴 (agente scelto, tiratrice della prefettura: l'«ostaggio» della prova finale al poligono) — aggiunta 2026-09-24
+- Hirano Tadashi 平野 正 (istruttore capo del poligono: il «malvivente» della prova finale) — aggiunta 2026-09-24
+- *Nota 2026-09-24:* nei file attuali (`PNG_Banda/`) la banda è **italiana** — Malvezzi Nereo, Venturini Alceo, Soranzo Elvio, Ferraguti Duilio, Cattabriga Loris, Bellandi Terenzio — e sostituisce i sei giapponesi della prima stesura elencati sopra (Segawa, Mizuhara, Numata, Tsuruta, Kajiwara, Hasumi): da confermare se quei sei nomi vanno tolti.
 
 ---
 
