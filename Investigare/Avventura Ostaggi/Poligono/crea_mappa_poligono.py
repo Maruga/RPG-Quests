@@ -31,30 +31,10 @@ def text(x, y, s, size=4, fill="#222222", bold=False, anchor="start"): P.append(
 rect(OX, OY, FW, FH, fill="#f8f5ee")
 rect(OX, OY, FW, S, fill="#dbe6f1")
 
-# distanza normale (malus 0): quadretti colorati con una tinta chiara della sagoma; un quadretto in piu' zone
-# viene diviso in fasce, una per colore (niente mescolanze)
-def zona(c0, r0):
-    return {(c, r) for c in range(COLS) for r in range(ROWS)
-            if ((c - c0) ** 2 + (r - r0) ** 2) ** 0.5 <= DIST_0 + 1e-9}
-def chiaro(hexcol, k=0.24):
-    R, G, B = int(hexcol[1:3], 16), int(hexcol[3:5], 16), int(hexcol[5:7], 16)
-    m = lambda v: int(round(v * k + 248 * (1 - k)))
-    return "#%02x%02x%02x" % (m(R), m(G), m(B))
-ZONE = [zona(c0, r0) for (c0, r0) in SAGOME]
-for c in range(COLS):
-    for r in range(ROWS):
-        tinte = [chiaro(TINTE[i]) for i, z in enumerate(ZONE) if (c, r) in z]
-        if not tinte: continue
-        x, y = OX + c * S, OY + r * S
-        if len(tinte) == 1:
-            rect(x, y, S, S, fill=tinte[0])
-        elif len(tinte) == 2:
-            poly([(x, y), (x + S, y), (x, y + S)], fill=tinte[0])
-            poly([(x + S, y), (x + S, y + S), (x, y + S)], fill=tinte[1])
-        else:
-            w = S / len(tinte)
-            for k, t in enumerate(tinte):
-                rect(x + k * w, y, w, S, fill=t)
+# cerchi della distanza normale (malus 0), leggeri e trasparenti (si mischiano dove si sovrappongono)
+for i, (c, r) in enumerate(SAGOME):
+    cx, cy = OX + (c + 0.5) * S, OY + (r + 0.5) * S
+    circle(cx, cy, DIST_0 * S, fill=TINTE[i], stroke=TINTE[i], sw=0.35, alpha=0.13)
 # maschera: tutto ciò che sborda dal campo torna sfondo
 rect(0, 0, W, OY, fill="#f7f4ec"); rect(0, LY, W, H - LY, fill="#f7f4ec")
 rect(0, 0, OX, H, fill="#f7f4ec"); rect(LX, 0, W - LX, H, fill="#f7f4ec")
@@ -68,22 +48,6 @@ for r in range(ROWS + 1):
     y = OY + r * S
     line(OX, y, LX, y, stroke="#7a7a7a" if r % 5 == 0 else "#b0aca2", sw=0.5 if r % 5 == 0 else 0.28)
 rect(OX, OY, FW, FH, stroke="#333333", sw=0.9)
-# confini tratteggiati delle zone, sopra la griglia (tratti disegnati uno a uno: il rasterizzatore ignora il tratteggio SVG)
-def tratteggio(x1, y1, x2, y2, t, tratto=2.5, vuoto=1.7):
-    L = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5; ux, uy = (x2 - x1) / L, (y2 - y1) / L; d = 0.0
-    while d < L:
-        e = min(d + tratto, L)
-        line(x1 + ux * d, y1 + uy * d, x1 + ux * e, y1 + uy * e, stroke=t, sw=0.7)
-        d += tratto + vuoto
-for i, (c0, r0) in enumerate(SAGOME):
-    t = TINTE[i]; z = ZONE[i]
-    for (c, r) in z:
-        x, y = OX + c * S, OY + r * S
-        if (c, r - 1) not in z: tratteggio(x, y, x + S, y, t)
-        if (c, r + 1) not in z: tratteggio(x, y + S, x + S, y + S, t)
-        if (c - 1, r) not in z: tratteggio(x, y, x, y + S, t)
-        if (c + 1, r) not in z: tratteggio(x + S, y, x + S, y + S, t)
-
 text(LX - 3, OY + S / 2 + 1.5, "PARTENZA", 4.5, fill="#3a5478", bold=True, anchor="end")
 
 for c in range(COLS):
