@@ -11,14 +11,12 @@
             "id": "ef6e419710bc2e45",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Investigare/Avventura Ostaggi/Banca_Cronologia.md",
-                "mode": "source",
-                "source": false
+                "file": "Investigare/Avventura Ostaggi/Poligono/Mappa_Poligono_A3.svg"
               },
-              "icon": "lucide-file",
-              "title": "Banca_Cronologia"
+              "icon": "lucide-image",
+              "title": "Mappa_Poligono_A3"
             }
           }
         ]
@@ -229,8 +227,11 @@
   },
   "active": "ef6e419710bc2e45",
   "lastOpenFiles": [
-    "Investigare/Avventura Ostaggi/Banca_Telefonate.md",
+    "Investigare/Avventura Ostaggi/Poligono/Mappa_Poligono_A3.png",
+    "Investigare/Avventura Ostaggi/Poligono/GARA_Poligono.md",
+    "Investigare/Avventura Ostaggi/Poligono/Mappa_Poligono_A3.svg",
     "Investigare/Avventura Ostaggi/Banca_Cronologia.md",
+    "Investigare/Avventura Ostaggi/Banca_Telefonate.md",
     "Investigare/Avventura Ostaggi/Banca_Cronologia.md.tmp.38160.f03ec1749b04",
     "Investigare/Avventura Ostaggi/Banca_Cronologia.md.tmp.38160.61676dfaff02",
     "Investigare/Avventura Ostaggi/Banca_Cronologia.md.tmp.38160.f2556e3ccaf2",
@@ -245,9 +246,6 @@
     "Investigare/Combattimento/GENKAI_Combattimento.md",
     "Investigare/Avventura Ostaggi/Banca_Telefonate.md.tmp.38160.6b7a293a1a19",
     "Investigare/Avventura Ostaggi/Poligono/crea_mappa_poligono.py.tmp.36956.a64e13733393",
-    "Investigare/Avventura Ostaggi/Poligono/Mappa_Poligono_A3.svg",
-    "Investigare/Avventura Ostaggi/Poligono/GARA_Poligono.md",
-    "Investigare/Avventura Ostaggi/Poligono/Mappa_Poligono_A3.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/A3/03_Primo_Piano.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/Precedenti/Correzione_primo_piano_20260922_012318/03_Primo_Piano.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/A3/02_Piano_Terra.png",
