@@ -238,44 +238,36 @@ distanza (catena, armi da lancio). In **difesa**: **armi da fuoco, lanci e grana
 defili dalla traiettoria; deciso 2026-09-06) · **lame corte e mani → Pazienza** (aspetti e scarti) · **armi lunghe da botta e
 taglio, catena → Ascolto** (leggi l'arco del colpo).
 
-| Arma | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno | Raffica | Colpi | Note |
-|---|---|---|---|---|---|---|---|---|---|
-| **Lotta** (pugno, presa) | Presenza | Pazienza | 1 | 1 | — | **1** | no | 1 | Lotta 1 a tutti |
-| **Arma improvvisata** (sedia, bottiglia, libro…) | Presenza* | Pazienza | 1 | 1 | — | **1–2** (GM) | no | 1 | |
-| **Machete / accetta** ° | Presenza | Ascolto | 3 | 2 | — | **3** | no | 1 | la lama pesante: colpi d'impeto |
-| **Granata** | Presenza | Distacco | 2 | 2 | — | **4** (area) | no | 1 | ognuno nell'area può andare in Ukemi |
-| **Coltello / pugnale** | Pazienza | Pazienza | 2 | 1 | — | **2** | no | 1 | |
-| **Katana / spada** ° | Pazienza | Ascolto | 3 | 2 | — | **3** | no | 1 | yakuza d'altri tempi |
-| **Fucile di precisione** | Pazienza | Distacco | 5 | 3 | 5 | **5** | no | 1 | richiede la Senmon |
-| **Manganello** (keibō 警棒) | Silenzio | Ascolto | 2 | 2 | — | **2** | no | 1 | d'ordinanza |
-| **Mazza / spranga** ° | Silenzio | Ascolto | 2 | 2 | — | **3** | no | 1 | la mazza da baseball dei bōsōzoku |
-| **Revolver d'ordinanza** (New Nambu) | Lucidità | Distacco | 4 | 2 | 5 | **4** | sì* | 3 | la «Pistola» base |
-| **Automatica 9mm** ° | Lucidità | Distacco | 3 | 2 | 4 | **4** | sì* | 3 | criminali, yakuza |
-| **Compatta .22/.25** ° | Lucidità | Distacco | 2 | 1 | 4 | **3** | no | 3 | tascabile, da teppisti |
-| **Fucile** (pompa / caccia) | Distacco | Distacco | 4 | 2 | 5 | **4** | no | 1 | |
-| **Mitragliatrice leggera** | Distacco | Distacco | 4 | 2 | 5 | **4** | sì | 9 | valori v2 |
-| **Mitragliatrice pesante** | Distacco | Distacco | 5 | 3 | 6 | **5** | sì | 9 | valori v2; da scena, nessuno la porta in tasca |
-| **Catena / frusta** ° | Ascolto | Ascolto | 2 | 2 | — | **2** | no | 1 | la catena dei bōsōzoku: senti quando è tesa |
-| **Armi da lancio** ° (coltello, bottiglia, sasso) | Ascolto | Distacco | 1 | 1 | — | **1–2** (GM) | no | 1 | un colpo solo, poi è a terra |
+| Arma                                              | Attacco su | Difesa su | Estrarre | Colpire | Ricarica | Danno        | Raffica | Colpi | Note                                           |
+| ------------------------------------------------- | ---------- | --------- | -------- | ------- | -------- | ------------ | ------- | ----- | ---------------------------------------------- |
+| **Lotta** (pugno, presa)                          | Presenza   | Pazienza  | 1        | 1       | —        | **1**        | no      | 1     | Lotta 1 a tutti                                |
+| **Arma improvvisata** (sedia, bottiglia, libro…)  | Presenza*  | Pazienza  | 1        | 1       | —        | **1–2** (GM) | no      | 1     |                                                |
+| **Machete / accetta** °                           | Presenza   | Ascolto   | 3        | 2       | —        | **3**        | no      | 1     | la lama pesante: colpi d'impeto                |
+| **Granata**                                       | Presenza   | Distacco  | 2        | 2       | —        | **4** (area) | no      | 1     | ognuno nell'area può andare in Ukemi           |
+| **Coltello / pugnale**                            | Pazienza   | Pazienza  | 2        | 1       | —        | **2**        | no      | 1     |                                                |
+| **Katana / spada** °                              | Pazienza   | Ascolto   | 3        | 2       | —        | **3**        | no      | 1     | yakuza d'altri tempi                           |
+| **Fucile di precisione**                          | Pazienza   | Distacco  | 5        | 3       | 5        | **5**        | no      | 1     | richiede la Senmon                             |
+| **Manganello** (keibō 警棒)                         | Silenzio   | Ascolto   | 2        | 2       | —        | **2**        | no      | 1     | d'ordinanza                                    |
+| **Mazza / spranga** °                             | Silenzio   | Ascolto   | 2        | 2       | —        | **3**        | no      | 1     | la mazza da baseball dei bōsōzoku              |
+| **Revolver d'ordinanza** (New Nambu)              | Lucidità   | Distacco  | 4        | 2       | 5        | **4**        | sì*     | 3     | la «Pistola» base                              |
+| **Automatica 9mm** °                              | Lucidità   | Distacco  | 3        | 2       | 4        | **4**        | sì*     | 3     | criminali, yakuza                              |
+| **Compatta .22/.25** °                            | Lucidità   | Distacco  | 2        | 1       | 4        | **3**        | no      | 3     | tascabile, da teppisti                         |
+| **Fucile** (pompa / caccia)                       | Distacco   | Distacco  | 4        | 2       | 5        | **4**        | no      | 1     |                                                |
+| **Mitragliatrice leggera**                        | Distacco   | Distacco  | 4        | 2       | 5        | **4**        | sì      | 9     | valori v2                                      |
+| **Mitragliatrice pesante**                        | Distacco   | Distacco  | 5        | 3       | 6        | **5**        | sì      | 9     | valori v2; da scena, nessuno la porta in tasca |
+| **Catena / frusta** °                             | Ascolto    | Ascolto   | 2        | 2       | —        | **2**        | no      | 1     | la catena dei bōsōzoku: senti quando è tesa    |
+| **Armi da lancio** ° (coltello, bottiglia, sasso) | Ascolto    | Distacco  | 1        | 1       | —        | **1–2** (GM) | no      | 1     | un colpo solo, poi è a terra                   |
 
-*° = arma aggiunta in v3/v3.1, valori proposti **[da validare]**. Le altre riusano i valori v2 (fodero /
-mano / ricarica = Estrarre / Colpire / Ricarica); revolver, manganello e lotta sono i valori decisi
-dall'autore (`Simulazione.xlsx`).*
+*° = arma aggiunta in v3/v3.1, valori proposti **[da validare]**. Le altre riusano i valori v2 (fodero / mano / ricarica = Estrarre / Colpire / Ricarica); revolver, manganello e lotta sono i valori decisi dall'autore (`Simulazione.xlsx`).*
 
-- **Le velocità si sommano al tiro d'iniziativa**: revolver nella fondina = +4 (estrai e spari
-  nello stesso scambio); revolver in mano = +2. Il coltello sfoderato (1) batte il revolver nella
-  fondina (4) e anche quello in mano (2): la lama è più rapida del grilletto non ancora puntato. La
-  pistola torna davanti quando è **puntata** (*Sotto Tiro*: velocità 0)
-- **Ricaricare è come sfoderare**: l'azione combinata «ricarico e sparo» usa la velocità di
-  **Ricarica**. Perdi tempo — e si sente
+- **Le velocità si sommano al tiro d'iniziativa**: revolver nella fondina = +4 (estrai e spari nello stesso scambio); revolver in mano = +2. Il coltello sfoderato (1) batte il revolver nella fondina (4) e anche quello in mano (2): la lama è più rapida del grilletto non ancora puntato. La pistola torna davanti quando è **puntata** (*Sotto Tiro*: velocità 0)
+- **Ricaricare è come sfoderare**: l'azione combinata «ricarico e sparo» usa la velocità di **Ricarica**. Perdi tempo — e si sente
 - **Fucile di precisione**: richiede la Senmon *Tiro di precisione* 1+ (o un passato militare).
   Senza, lo usi come un fucile da caccia che non conosci: **Distacco, +2 alla somma**
 - **Armi improvvisate** (*): l'attributo lo decide il GM dalla scena (di norma Presenza —
-  l'impeto). Il combattimento in casa è il caso tipico di GENKAI: la colluttazione non voluta, la
-  bottiglia afferrata al volo, la sedia alzata per tenere a distanza
+  l'impeto). Il combattimento in casa è il caso tipico di GENKAI: la colluttazione non voluta, la bottiglia afferrata al volo, la sedia alzata per tenere a distanza
 - **Raffica delle pistole** (*): possono fare fuoco di soppressione una volta, ma svuota il
-  caricatore — dopo, vanno **ricaricate**
-- **Colpi multipli** (dove Colpi > 1): vedi *Manovre*
+  caricatore — dopo, vanno **ricaricate** - **Colpi multipli** (dove Colpi > 1): vedi *Manovre*
 
 ---
 
@@ -423,14 +415,40 @@ Dichiari la soppressione:
   copre una direzione, non un quartiere
 - Le **pistole** possono farlo una volta: poi il caricatore è vuoto (ricarica)
 
-**GRANATA** — attacco su **Presenza** contro **tutti nell'area** (il GM la definisce: la stanza, il
-vano scale, lo spazio tra le auto). Ognuno può **andare in Ukemi** per buttarsi via (difesa su
-**Lucidità [da validare]** — la v2 dava Lucidità per buttarsi via o Distacco per la freddezza di
-defilarsi); l'Assorbe delle coperture vale, e un muro in mezzo ferma quasi tutto. Danno 4 + scarto,
-a testa.
 
-**FUMOGENO** — un'azione per lanciarlo. Il fumo copre la zona per **2 scambi**: ogni attacco a
-distanza attraverso il fumo ha **+3 alla somma**; muoversi coperti dal fumo non espone.
+## LANCIARE
+
+Tiro su **Ascolto** difesa su **Distacco** (Se non diversamente specificato). A
+**contatto** non si lancia: l'oggetto si usa in mano (arma improvvisata). Oltre la gittata non
+arriva. Lanciare **alla cieca** (oltre una copertura, senza vedere dove cade): **+2 alla somma**.
+
+| Oggetto      | Esempi                                           | Velocità | Vicino                               | Lontano       | Gittata | Danno           |
+| ------------ | ------------------------------------------------ | -------- | ------------------------------------ | ------------- | ------- | --------------- |
+| **Leggero**  | sasso, bottiglia, posacenere, lattina            | 1        | normale                              | **+1**        | ~35 m   | **1–2** (GM)    |
+| **Coltello** | da cucina, pugnale                               | 1        | **+1** (coltello da lancio: normale) | non si pianta | ~5 m    | **2**           |
+| **Granata**  | stordente, frammentazione, lacrimogena, fumogeno | 2        | normale                              | **+1**        | ~35 m   | per tipo (area) |
+| **Pesante**  | sedia, estintore, cassetta attrezzi              | 4        | **+1**                               | non arriva    | ~3 m    | **2**           |
+
+## GRANATA STORDENTE
+
+lampo e boato, niente schegge: non toglie Ki (salvo addosso), toglie tempo. Attacco su **Ascolto** contro tutti nell'area (il GM la definisce: la stanza, il vano scale, lo spazio tra le auto): riuscito, cade dove vuoi; fallito, cade fuori punto e il GM sposta la zona; **6+6**, ti scoppia vicino (imprevisti, colonna *Movimento e altro*). Accorgersene è la *Sorpresa* (Ascolto, se il GM la chiama): chi non se ne accorge non ha Ukemi. Chi se ne accorge può andare in **Ukemi** per chiudere gli occhi o girarsi (difesa su **Distacco**): **Ukemi riuscito = occhi chiusi in tempo**. L'Assorbe delle coperture vale solo sui danni da addosso; un muro o una porta chiusa in mezzo portano la zona a **Nulla**. Il **+N** va alla somma di tutti i tiri: sordo e senza equilibrio.
+
+| Zona         | Al chiuso                              | All'aperto   | Occhi aperti                                                    | Occhi chiusi (Ukemi riuscito)           |
+| ------------ | -------------------------------------- | ------------ | --------------------------------------------------------------- | --------------------------------------- |
+| **Addosso**  | a contatto                             | a contatto   | **2 danni** + come Piena                                        | **2 danni** + come Piena a occhi chiusi |
+| **Piena**    | fino a 3 m, o tutta una stanza piccola | fino a 1,5 m | perde l'azione (se non ha agito), poi **+2 e +1**  per 2 scambi | **1** nello scambio dopo                |
+| **Parziale** | 3–6 m, stessa stanza                   | 1,5–5 m      | **+1** nello scambio dopo                                       | —                                       |
+| **Nulla**    | fuori dalla stanza, porta chiusa       | oltre 5 m    | solo il rumore                                                  | —                                       |
+
+L'Ukemi spende comunque l'azione: in Piena lo scambio è perso in ogni caso. È lo scopo della granata: la squadra entra in quel momento. Spoletta di 1–2 secondi: non si rilancia.
+
+## Altre granate:
+
+**FUMOGENO** — un'azione per lanciarlo. Il fumo copre la zona per **2 scambi**: ogni attacco a distanza attraverso il fumo ha **+3 alla somma**; muoversi coperti dal fumo non espone.
+
+**Granata a frammentazione**
+**Granata lacrimogena**
+
 
 ---
 
@@ -535,93 +553,7 @@ Manuale GM).
 
 ---
 
-## Riepilogo Rapido — v3.1
-
-```
-SEGNI: ti aiuta = −alla somma | ti ostacola = +alla somma
-       favorevoli max −4 | la somma non scende sotto 2
-       niente Nami/Kiwami: i critici sono 1+1 e 6+6 (nei due sensi)
-       niente soroban | GENKAI SOSPESO: si valuta a fine scontro
-       DOPO: possibile tiro di pressione (Distacco/Silenzio) — il conto
-       il danno non ha pavimento: Ki a 0 o sotto = MORTO
-
-SCAMBIO: 1) DICHIARI: Attaccare / Muoversi / Minacciare (+ manovre, + Tame)
-            la difesa NON si dichiara: è l'Ukemi
-            piccolo movimento + attacco: senza costo, decide il GM se è troppo
-         2) INIZIATIVA = 2d6 + mod.Presenza + velocità (+Tame; scosso: ritira il dado basso)
-            il totale più BASSO agisce prima | parità: prima chi ha più Presenza
-            (a pari Presenza: simultanei) | oltre 15 = FUORI TEMPO
-            Presenza:  4→+2  5→+1  6→0  7→−1  8→−2  9→−3  10→−4
-         3) RISOLVI in ordine. COLPITO PRIMA DI AGIRE = azione persa
-            (salvo STRINGERE I DENTI)
-         in tanti: Ukemi contro UN attacco; l'Assorbe vale contro tutti
-UKEMI 受け身: attaccato PRIMA di agire? la tua azione diventa difesa:
-         decidi prima del suo tiro, tiri la difesa (anche con 1 Ki),
-         ma l'azione è spesa. Chi ha GIÀ agito NON va in Ukemi
-TAME 溜め (trattenere il fiato): fino a +3 iniziativa = −1:1 al tiro d'attacco
-MINACCIARE (velocità 0, solo voce): 2d6 ≤ Presenza → l'avversario è SCOSSO:
-         al prossimo tiro d'iniziativa ritira il dado basso e tiene il più alto;
-         il GM può fargli abbassare l'arma | UNA VOLTA SOLA per scontro, riuscita o no
-         chi minaccia può comunque difendersi (la voce non ti scopre)
-ATTACCO: 2d6 ≤ attributo arma (PARI = COLPITO) | scarto = attributo − tiro
-         DANNO = scarto + danno arma
-DIFESA (solo in Ukemi): 2d6 ≤ attributo di difesa DELL'ARMA che attacca
-         para il suo scarto | vale contro UN attacco
-         KI: max 1 a scambio = −2 al tiro, dichiarato con l'Ukemi,
-             solo se resti a Ki ≥ 1
-DANNO SUBITO = danno attacco − scarto difesa − assorbimento − copertura
-ASSORBE (fisso, sempre): giubbotto 3 (4) | tavolo 1 (2) | muro 5 (1)
-      vale da quando ci sei dietro: l'iniziativa decide se arrivi in tempo
-SENMON D'ARMA: un'arma sola, dichiarata (Pistola 1 non vale sul fucile); il grado
-      toglie dal tiro d'attacco e dalle azioni attive con l'arma, MAI dalla difesa
-CRITICI: 1+1 = +1d6 (danni in attacco / parato in difesa)
-         6+6 in attacco/azione = mancato + 1d6 sulla tabella imprevisti
-         6+6 in difesa = solo una difesa fallita
-VELOCITÀ: Estrarre (sfoderare) / Colpire (in mano) / Ricarica
-AZIONI: 0 SOLO l'azione pronta (il grilletto), 1 buttarsi/copertura a
-      portata, 2 un movimento, 3-4 composta, 5-6 operazione
-ARMI (attacco/difesa · E/C/R · danno):
-      Lotta Presenza/Pazienza 1/1/— d1 | Improvvisata Presenza/Pazienza 1/1/— d1-2
-      Coltello Pazienza/Pazienza 2/1/— d2 | Manganello Silenzio/Ascolto 2/2/— d2
-      Mazza° Silenzio/Ascolto 2/2/— d3 | Katana° Pazienza/Ascolto 3/2/— d3
-      Revolver Lucidità/Distacco 4/2/5 d4 (3 colpi, raffica una volta)
-      Automatica° Lucidità/Distacco 3/2/4 d4 | Compatta° Lucidità/Distacco 2/1/4 d3
-      Fucile Distacco/Distacco 4/2/5 d4 | Mitr.leggero Distacco/Distacco 4/2/5 d4 raffica
-      Mitr.pesante Distacco/Distacco 5/3/6 d5 raffica | Precisione Pazienza/Distacco 5/3/5 d5
-      Granata Presenza/Distacco 2/2/— d4 area (ognuno nell'area: Ukemi)
-COLPI MULTIPLI: un tiro solo per la sequenza; ogni colpo dopo il primo
-      aggiunge di nuovo la velocità dell'arma (revolver: +2 a colpo)
-      malus +2 (due colpi) / +3 (tre), cala di 1 a ogni colpo dopo il primo
-      danno subito = sequenza interrotta (salvo STRINGERE I DENTI)
-MIRARE (azione): fermi, −1 dal prossimo scambio, max 2; poi spari a velocità 0
-SOTTO TIRO (azione pronta): arma già sul bersaglio = velocità 0 (NON è la mira:
-      niente bonus, conta solo la distanza) | decade su danno o linea persa | ignaro = SORPRESA
-PREPARARSI: rinuncia all'azione = −1 al prossimo tiro (non cumula)
-FUORI TEMPO: iniziativa oltre 15 = in questo scambio non agisci; nel prossimo completi
-      l'azione con iniziativa = il dado migliore dei 2d6 e basta | mai apposta
-OPPORTUNITÀ: iniziativa migliore di 5+ = un'azione descrittiva extra
-      oppure un movimento (mai due attacchi)
-STRINGERE I DENTI: danno netto 1-2 → paghi 1 punto dell'attributo in uso
-      e agisci comunque; a 4 non si può; la notte ripara; mira/Sotto Tiro persi
-SOPPRESSIONE (armi a raffica; pistole: poi ricarica): iniziativa senza
-      velocità d'arma, riuscita su Presenza; chi è sotto: 3d6, somma dei due più alti;
-      agire allo scoperto sotto il fuoco: +1 alla somma
-GRANATA: Presenza su tutti nell'area; Ukemi su Lucidità [dv]; d4 + scarto
-FUMOGENO: 2 scambi, +3 ai tiri a distanza attraverso il fumo
-SORPRESA: tiro (GM) fallito = niente difesa né Ukemi — solo Assorbe
-ZONE: contatto | vicino | lontano — muoversi di una fascia = un'azione
-DISTANZA E COLLUTTAZIONE: fuoco −1 a un passo | 0 vicino | +1 lontano (precisione 0)
-      bersaglio che si butta +1 | AFFERRATI: pistole e armi lunghe +2 (niente mira),
-      fucili non si usano (o +3 GM); pugni, coltello, manganello, improvvisate: normale
-PNG: Ki come i PG (attributo più basso + il dado alto di 2d6, tetto 12)
-     a 0 fuori combattimento (esito: GM) | PG a 0 = morto
-OPZIONALE (GM): il Ki non va sotto 0; a 0 un tiro su Distacco o Pazienza (a scelta)
-     decide: riuscito = vivo ma a terra, fuori gioco; fallito = morto
-```
-
----
-
-## Da validare *(stato al 2026-09-06, notte — vedi `DECISIONI.md`)*
+## Da validare
 
 Tutti i punti aperti della v3 sono stati decisi dall'autore il 2026-09-06 e sono nel testo: parità →
 Presenza (poi simultanei) · Minacciare (velocità 0, scosso = ritira il dado basso, una volta sola per

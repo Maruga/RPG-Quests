@@ -4,14 +4,14 @@
 
 ## Identità e compiti
 
-| Maschera | Nome e cognome | Compito nella banca |
-|---|---|---|
-| **Alberto Sordi** | Nereo Malvezzi | Capo: coordina gli uomini e controlla il tempo |
-| **Gigi Proietti** | Alceo Venturini | Portavoce: interpreta l'uomo instabile e prolunga la trattativa |
-| **Carlo Verdone** | Elvio Soranzo | Caveau: accesso alla cassetta e recupero del contenuto |
-| **Bud Spencer** | Duilio Ferraguti | Ostaggi: sorveglianza diretta e spostamenti |
-| **Roberto Benigni** | Loris Cattabriga | Ostaggi: controlla movimenti, mani e tentativi di comunicare |
-| **Lino Banfi** | Terenzio Bellandi | Caveau: affianca Soranzo e si occupa della distruzione dei documenti |
+| Maschera            | Nome e cognome    | Compito nella banca                                                  |
+| ------------------- | ----------------- | -------------------------------------------------------------------- |
+| **Alberto Sordi**   | Nereo Malvezzi    | Capo: coordina gli uomini e controlla il tempo                       |
+| **Gigi Proietti**   | Alceo Venturini   | Portavoce: interpreta l'uomo instabile e prolunga la trattativa      |
+| **Carlo Verdone**   | Elvio Soranzo     | Caveau: accesso alla cassetta e recupero del contenuto               |
+| **Bud Spencer**     | Duilio Ferraguti  | Ostaggi: sorveglianza diretta e spostamenti                          |
+| **Roberto Benigni** | Loris Cattabriga  | Ostaggi: controlla movimenti e sorveglia                             |
+| **Lino Banfi**      | Terenzio Bellandi | Caveau: affianca Soranzo e si occupa della distruzione dei documenti |
 
 ## Attributi e Ki
 
@@ -47,11 +47,12 @@ Il numero indica il **grado Senmon**: 1 = Praticante, 2 = Esperto. Quando pertin
 
 ## Armi — valori comuni
 
-| Arma | Attacco su | Difesa contro quest'arma | Estrarre | Colpire | Ricaricare | Danno base |
-|---|---|---|---:|---:|---:|---:|
-| Revolver | Lucidità | Distacco | 4 | 2 | 5 | 4 |
-| Fucile a pompa | Distacco | Distacco | 4 | 2 | 5 | 4 |
-| Mani nude / presa | Presenza | Pazienza | 1 | 1 | — | 1 |
+| Arma              | Attacco su | Difesa contro quest'arma | Estrarre | Colpire | Ricaricare | Danno base |
+| ----------------- | ---------- | ------------------------ | -------: | ------: | ---------: | ---------: |
+| Revolver          | Lucidità   | Distacco                 |        4 |       2 |          5 |          4 |
+| Fucile a pompa    | Distacco   | Distacco                 |        4 |       2 |          5 |          4 |
+| Mani nude / presa | Presenza   | Pazienza                 |        1 |       1 |          — |          1 |
+| Granata stordente |            |                          |          |         |            |            |
 
 - **Attacco:** 2d6 − Senmon − eventuali altri bonus, più i malus, ≤ attributo. Totale modificato minimo 2. Danno = attributo − totale del tiro + danno base.
 - **Difesa:** Ukemi solo prima di aver agito; consuma l'azione e vale contro un attacco. 2d6 ≤ attributo indicato dall'arma avversaria; se riesce, sottrai lo scarto dal danno. Nessuna Senmon in difesa.

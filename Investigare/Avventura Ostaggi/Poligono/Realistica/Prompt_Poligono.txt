@@ -1,0 +1,14 @@
+Use case: sketch-to-render.
+Asset type: realistic top-down tabletop roleplaying game shooting-range map background, landscape A3 proportions (420:297).
+Input image 1 is the exact layout reference. Turn this simple diagram into a beautiful believable outdoor police training range in Kyoto in 1997, directly overhead, orthographic, flat plan view, no perspective or horizon. Generate ONLY the realistic environment and the seven physical targets, without any UI annotations, grid, range circles, words, numbers, score boxes or timeline. These precise overlays will be placed later.
+Composition must fill the image in the SAME proportions and locations as the reference: playable rectangular field from x=2.381% to 97.619% of image width, y=2.357% to 94.949% of image height. The narrow outside margin must remain unobtrusive. Use realistic pale compacted gravel and sandy soil, small stones, subtle worn footpaths, scattered sparse grass near edges, soft natural midday shadows, restrained natural earth colors. At left and right very narrow containment boundaries follow the exact edges of the field, made of aged concrete retaining walls and grass outside. Along bottom a narrow earthen backstop lip, keep targets visible and do not cover the field. At the top first row (y=2.357% to 10.774%) is a flat grey worn concrete starting strip, no roof or obstacles.
+Exactly SEVEN separate mechanical pop-up target assemblies, matching positions precisely, with realistic human torso silhouette panels, painted muted colors and white central scoring patches. Panels are currently folded flat, face upward, head toward the top of image, bolted to compact metal lifting bases: that makes their silhouette shapes visible from directly above. They are training objects, NOT human beings. Each target assembly should fit within about 4.8% image width x 7% image height, have realistic worn painted steel or thick fiberboard, subtle chips, small hinge details and short contact shadows. They must be centered at these exact full-image normalized coordinates:
+1 red at x=23.2143%, y=31.8182%;
+2 purple at x=88.6905%, y=31.8182%;
+3 green at x=52.9762%, y=48.6532%;
+4 magenta at x=41.0714%, y=65.4882%;
+5 blue at x=82.7381%, y=82.3232%;
+6 orange at x=11.3095%, y=90.7407%;
+7 teal at x=58.9286%, y=90.7407%.
+Keep all these positions exactly, including the three targets very near the bottom. Leave open ground immediately to the right of each target for scoring overlays. Seven targets only, no extra silhouettes, no people, weapons, vehicles, barricades, tables, buildings or decorative obstacles. Do not change the tactical layout. No rings, no grid, no labels, no letters, no numbers, no title, no watermark.
+Style: detailed realistic material rendering, premium naturalistic battlemat art, attractive but legible tabletop play surface, consistent scale, true overhead camera. Highest useful landscape resolution.

@@ -1,0 +1,22 @@
+POLIGONO — VERSIONE REALISTICA
+
+Mappa_Poligono_Realistica_A3.pdf: stampa su A3 orizzontale al 100%,
+senza adattare alla pagina. Ogni quadretto misura 25 mm = 1,5 m.
+Mappa_Poligono_Realistica_A3.png: stessa tavola esportata a 300 dpi.
+Mappa_Poligono_Realistica_A3.svg: illustrazione incorporata e griglia,
+numeri, distanze e segnapunti vettoriali modificabili.
+Poligono_Sfondo_Realistico.png: illustrazione senza indicazioni di gioco.
+
+Campo e indicatori ripresi dall'originale: 16 x 11 caselle; 7 sagome
+in D4, O4, I6, F8, N10, B11, J11; cerchi di raggio 3 caselle;
+3 caselle colpi e una casella scarto per sagoma; momenti da 1 a 64.
+La numerazione non rivela l'ordine di salita. I file originali restano intatti.
+
+Illustrazione: strumento integrato imagegen, con la mappa originale
+come riferimento. Il prompt completo usato è in Prompt_Poligono.txt.
+Il dettaglio del fondo è quello della generazione originale (1491 x 1055 px);
+l'esportazione a 300 dpi mantiene precisi gli elementi vettoriali.
+
+Per ricostruire l'SVG, eseguire crea_versione_realistica.ps1 indicando
+-SourceSvg con il percorso di Mappa_Poligono_A3.svg; poi eseguire
+esporta_stampa.py (richiede PyMuPDF) per PNG, PDF e anteprima.
