@@ -25,12 +25,14 @@
             "id": "bf423092707d9266",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Investigare/Avventura Ostaggi/Mappe_Banca/A3/02_Piano_Terra_A3_Griglia.png"
+                "file": "Investigare/Avventura Ostaggi/Poligono/GARA_Poligono.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "02_Piano_Terra_A3_Griglia"
+              "icon": "lucide-file",
+              "title": "GARA_Poligono"
             }
           },
           {
@@ -252,22 +254,23 @@
       "edge-tts:Read note aloud": false
     }
   },
-  "active": "b3a230c9b92ae9bd",
+  "active": "bf423092707d9266",
   "lastOpenFiles": [
+    "Investigare/Avventura Ostaggi/Banca_Cronologia.md",
+    "Investigare/Avventura Ostaggi/Preparazione.md",
+    "Investigare/Avventura Ostaggi/Mappe_Banca/A3/02_Piano_Terra_A3_Griglia.png",
+    "Investigare/Avventura Ostaggi/PG Semplificati/~$HEDE_PG_Semplificate_3facciate.docx",
+    "Investigare/Avventura Ostaggi/PG Semplificati/SCHEDE_PG_Semplificate_3facciate.docx",
+    "Investigare/Avventura Ostaggi/PG Semplificati/~$HEDE_PG_Semplificate_nuove.docx",
+    "Investigare/Avventura Ostaggi/PG Semplificati/SCHEDE_PG_Semplificate_nuove.docx",
+    "Investigare/Avventura Ostaggi/PG Semplificati/SCHEDE_PG_Semlificate.docx.bak-20260925-prima-semplificazione",
+    "Investigare/Avventura Ostaggi/PG Semplificati/~$HEDE_PG_Semlificate.docx",
     "Investigare/Avventura Ostaggi/Handout/F6A84710",
     "Investigare/Avventura Ostaggi/Handout/~$05_Combattimento_e_poligono.xlsx",
     "Investigare/Avventura Ostaggi/PG Semplificati/SCHEDE_PG_Semlificate.docx",
     "Investigare/Avventura Ostaggi/PG Semplificati/SCHEDE_PG_TUTTE.docx",
-    "Investigare/Avventura Ostaggi/PG Semplificati",
-    "Investigare/Avventura Ostaggi/Nuova cartella",
-    "Investigare/Avventura Ostaggi/Handout/50454710",
-    "Investigare/Avventura Ostaggi/Handout/mso623C.tmp",
-    "Investigare/Avventura Ostaggi/Handout/C16D3710",
-    "Investigare/Avventura Ostaggi/Handout/05_Combattimento_e_poligono.pdf",
-    "Investigare/Avventura Ostaggi/Handout/mso8659.tmp",
     "Investigare/Avventura Ostaggi/Mappe_Banca/A3/03_Primo_Piano_A3_Griglia.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/03_Primo_Piano_Arredato.png",
-    "Investigare/Avventura Ostaggi/Mappe_Banca/A3/02_Piano_Terra_A3_Griglia.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/02_Piano_Terra_Finestre.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/03_Primo_Piano_Porte.png",
     "Investigare/Avventura Ostaggi/Mappe_Banca/01_Esterno.png",
@@ -277,13 +280,11 @@
     "Investigare/Avventura Ostaggi/Immagini/Token_25mm/Singoli/Polizia_Cecchino_01.png",
     "Investigare/Avventura Ostaggi/Handout/Descrizione Citta.md",
     "Investigare/Avventura Ostaggi/Banca_Telefonate.md",
-    "Investigare/Avventura Ostaggi/Banca_Cronologia.md",
     "Investigare/Avventura Ostaggi/PNG_Banda/00_Banda_in_gioco.md",
     "Investigare/Avventura Ostaggi/PNG/00_Ostaggi.md",
     "Investigare/Avventura Ostaggi/PNG/Horiuchi_Naoto.md",
     "Investigare/Avventura Ostaggi/PNG/Arima_Shunzo.md",
     "Investigare/Avventura Ostaggi/Poligono/GARA_Poligono.md",
-    "Investigare/Avventura Ostaggi/Preparazione.md",
     "Investigare/Combattimento/GENKAI_Combattimento.md",
     "Investigare/Combattimento/DECISIONI.md",
     "Investigare/Avventura Ostaggi/PNG_Banda/06_Banfi_Terenzio_Bellandi.md",
