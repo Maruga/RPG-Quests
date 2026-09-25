@@ -8,7 +8,7 @@ Il portavoce è **Alceo Venturini (maschera di Gigi Proietti)**: le sue battute 
 
 ## Dove sono tutti
 
-Dalle piante in `Mappe_Banca/`.
+Dalle piante in `Mappe_Banca/`. Al primo piano, di fianco alle scale, c'è una scala a scomparsa che porta sul tetto.
 
 | Chi | Dove | Cosa fa |
 |---|---|---|
@@ -98,6 +98,7 @@ Messaggi dopo arrivo dei PG
 | **1:35**    | 14:10        | «TRAPANO DI SOTTO»                                                                                                      |
 | **1:05**    | 14:40        | «PARLANO DI CASSETTA 1717»                                                                                              |
 | **0:43**    | 15:02        | «TRA POCO BOOM»                                                                                                         |
+| **0:00:10** | 15:44        | Nota per il GM, non arriva ai PG: pochi secondi prima, a tutti i banditi suona l'orologio. Appena la carica salta, scappano. |
 | **0:00**    | 15:45        | La carica salta nel caveau. Un colpo sordo, i vetri tremano, il timer suona. Subito dopo i fumogeni e la fuga nel fumo. |
 
 ---
@@ -107,7 +108,7 @@ Messaggi dopo arrivo dei PG
 Se alla banda serve altro tempo e al botto manca poco — i PG premono, o stanno per entrare — usano Horiuchi (il tecnico) per comprarlo. Cattabriga (bandito di guardia agli ostaggi, maschera di Benigni) lo ha scoperto con la cornetta sotto il tavolo.
 
 1. **La minaccia.** Venturini (il portavoce) chiama e fa sentire Horiuchi al telefono: le battute sono in `Banca_Telefonate.md`, «Quando manca poco — la minaccia sul tecnico».
-2. **Il tetto.** Cattabriga porta Horiuchi sul tetto, la pistola alla testa, sul bordo verso la strada principale: da sotto lo vedono tutti. Finché restano lassù nessuno si muove, ed è il tempo che serve alla banda.
+2. **Il tetto.** Cattabriga porta Horiuchi sul tetto dalla scala a scomparsa di fianco alle scale del primo piano, la pistola alla testa, sul bordo verso la strada principale: da sotto lo vedono tutti. Finché restano lassù nessuno si muove, ed è il tempo che serve alla banda.
 3. **Il tiratore.** Sul tetto Cattabriga è allo scoperto. Se i PG hanno chiesto il tiratore scelto e l'hanno messo sui tetti di fronte, può ucciderlo: un cecchino che colpisce è solitamente letale (manuale, *Sorpresa e Agguati*). Horiuchi è salvo.
 
 Se il tiratore non c'è, o non spara, la minaccia tiene fermi tutti fino al botto. Dopo, Horiuchi viene soccorso.
@@ -161,3 +162,14 @@ I fumogeni sono già piazzati **prima delle 12:30**, da fuori: due nei cestini a
 Poi la porta si apre e gli ostaggi vengono spinti fuori insieme, e i sei in mezzo: maschere e giubbotti lasciati dentro, giacche normali, tutti a correre nel fumo come tutti. Nel fumo non li distingue nessuno.
 
 **Ai posti di blocco sì.** Sei uomini occidentali che escono dal fumo insieme agli ostaggi giapponesi, a Kyoto, si vedono. Se i PG hanno messo gli agenti agli incroci e sul vicolo **all'inizio**, è lì che la banda si ferma. Se non li hanno messi, la banda sparisce nel quartiere.
+
+**Chi viene preso — un tiro per bandito.** Per ogni bandito che esce, gli agenti del posto di blocco tirano **2d6 ≤ 6**: se riesce, lo riconoscono e lo fermano. Se a quel posto di blocco c'è un PG, tira lui, con la sua Ascolto al posto del 6.
+
+| Situazione | Al tiro |
+|---|---|
+| Gli agenti sanno che cercano sei stranieri, italiani | **−2** |
+| Hanno le schede segnaletiche con le foto (il fax da Roma) | **−2** |
+| È Venturini (Copertura e travestimento 2) | **+2** |
+| È Malvezzi (Copertura e travestimento 1) | **+1** |
+
+In media: senza niente ne prendono due, informati quattro, informati e con le schede cinque. Chi viene fermato si arrende o reagisce: se reagisce, è uno scontro. Chi non viene fermato sparisce nel quartiere.
