@@ -14,14 +14,13 @@ Serve a far provare ai giocatori il combattimento prima del caso. **Le regole** 
 - Ogni sagoma ha il suo colore, un cerchio leggero della **distanza normale** (dentro si colpisce con malus 0, fuori si è lontani; raggio 3 quadretti, da fissare nel regolamento) e accanto 3 quadratini per i colpi sparati e una casella per lo scarto, da segnare a matita. In basso la scala dei momenti da 1 a 64 (7 sagome ogni 7 momenti + 15), con i multipli di 7 evidenziati.
 - I PG partono in alto, pistole in fondina e hanno solo 5 colpi nella pistola e 5 proiettili per ricaricare, se ricaricano solo 1 proiettile tempo perso 2, 3 proiettili 3 e 5 proiettili tempo pieno e si somma a sparare.
 - **Sette sagome** coricate nel campo, alcune vicine e alcune lontane. Salgono una ogni 7 momenti: **7, 14, 21, 28, 35, 42, 49**. A parità di momento la sagoma sale prima del PG. Una sagoma alzata resta alzata.
-- Ordine di salita (provvisorio, numeri della mappa): 7 → **1** rossa (D4) · 14 → **5** blu (N10) · 21 → **3** verde (I6) · 28 → **6** arancio (B11) · 35 → **2** viola (O4) · 42 → **7** verde acqua (J11) · 49 → **4** magenta (F8).
 
 ## Svolgimento
 
 1. Il capo dà il via. Ogni PG tira l'iniziativa e agisce al proprio momento; quando tutti hanno finito, nuovo giro. Un PG può fermare la propria azione e ritirare subito. Questo permette di non aspettare la fine del round.
 2. Le sagome salgono ai momenti sopra. Si può risparare su una sagoma già colpita per migliorare lo scarto.
 3. La gara finisce quando il capo o i PG la dichiarano conclusa. Si segnano **momento finale, colpi sparati, scarto migliore su ogni sagoma**.
-4. Si confronta con il punteggio di Minami (da fissare quando c'è la formula nel regolamento).
+4. Si confronta con il punteggio di Minami.
 
 Formula del punteggio: 2 × somma degli scarti migliori − colpi sparati − (momento finale ÷ 7).
 

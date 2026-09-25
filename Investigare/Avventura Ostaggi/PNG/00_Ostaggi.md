@@ -16,7 +16,7 @@ Tutti in servizio al momento dell'assalto. I quattro sportelli sono numerati da 
 | **Tsukahara Fumie** | 52 | Impiegata amministrativa | Contabilità interna, archiviazione delle pratiche e aggiornamento del registro delle cassette di sicurezza | Golfino grigio, dita macchiate dall'inchiostro dei timbri |
 | **Teshima Ritsuko** | 38 | Addetta a conti e finanziamenti | Apertura dei conti, raccolta dei documenti per i prestiti e colloqui con i clienti su appuntamento | Completo beige, capelli fermati sulla nuca, cartellina blu |
 
-**Cellulari presenti:** è confermato quello del vicedirettore. L'eventuale presenza di altri cellulari tra impiegati e clienti resta da definire.
+**Telefoni:** i banditi li hanno tolti a tutti, compreso il cellulare del vicedirettore.
 
 ## Clienti — 6
 

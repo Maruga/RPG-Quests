@@ -110,6 +110,8 @@ Passa sempre la stessa: **Minowa Chie**, la più giovane degli impiegati, che ha
 
 > «I vecchi. Lei vuole i vecchi. *(pausa)* Lei è una persona buona. Le do la signora con la borsa della spesa, ma dopo la pizza. Prima la pizza, poi la signora. Le cose una alla volta, sennò mi confondo.»
 
+Se la pizza arriva, o i PG gli concedono un'altra richiesta, **Otani Teruko** (la pensionata con la borsa della spesa) esce davvero.
+
 **«Arrendetevi, non avete via d'uscita.»**
 
 > «Via d'uscita. *(ride a lungo)* Ispettore, lei non ha capito niente e questo mi dispiace, perché mi era simpatico. Io non voglio uscire. Io sto benissimo qui.»

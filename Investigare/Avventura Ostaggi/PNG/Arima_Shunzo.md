@@ -22,11 +22,11 @@
 
 ## Cosa fa per rallentare
 
-Un menu per il GM, senza orari fissi: si attivano nell'ordine che serve, quando i PG stanno per fare la cosa giusta.
+Un menu per il GM: a parte l'arrivo, senza orari fissi. Si attivano nell'ordine che serve, quando i PG stanno per fare la cosa giusta.
 
 | Mossa | Come si presenta | Cosa costa ai PG |
 |---|---|---|
-| **Arriva al cordone** | «Rappresento i residenti, ho il dovere di essere informato.» Pretende aggiornamenti, stringe mani, si fa vedere | Attenzione e minuti. E arriva **prima della stampa**, quando la notizia non è ancora pubblica: è la prima crepa |
+| **Arriva al cordone** alle 13:50 (timer 1:55) | «Rappresento i residenti, ho il dovere di essere informato.» Pretende aggiornamenti, stringe mani, si fa vedere | Attenzione e minuti. E arriva **prima della stampa**, quando la notizia non è ancora pubblica: è la prima crepa |
 | **Telefona in alto** | Al commissario Taniguchi, al vicequestore: «Nessuna irruzione. Prima la vita dei cittadini. Aspettate il negoziatore della prefettura» | Ai PG arriva l'ordine di aspettare un negoziatore che «sarà lì fra un'ora». L'ora passa |
 | **Chiama la stampa** | Una troupe della TV locale al cordone entro mezz'ora. È la sua Senmon | Ogni decisione diventa pubblica. Entrare con le telecamere accese pesa il doppio |
 | **Blocca il tiratore** | «Un fucile in un quartiere di case, con la scuola qui dietro? Prima sgomberate le abitazioni di fronte» | Mezz'ora, se i PG cedono. Se non cedono, lo fa chiedere dall'alto |
@@ -42,7 +42,7 @@ Un menu per il GM, senza orari fissi: si attivano nell'ordine che serve, quando 
 - **L'orario.** È al cordone prima che la notizia sia pubblica. Chi gliel'ha detto? «Un cittadino», e non sa dire quale.
 - **La parola.** Se il GM lo fa scivolare, nomina «la cassetta» prima che i PG gliene abbiano parlato.
 - **Quello che non chiede.** Non chiede mai chi c'è dentro, non chiede gli ostaggi per nome, non chiede se stanno bene. Chiede solo che nessuno entri. Un tiro di **Ascolto** lo sente: non ha paura per le persone, ha paura del tempo.
-- **Furuya Chisato (la direttrice, fuori dalla banca)**, se i PG le parlano, ricorda che un mese fa il consigliere chiese al vicedirettore se la cassetta di Shibata poteva essere aperta dagli eredi. Le sembrò strano, e non lo disse a nessuno.
+- **Furuya Chisato (la direttrice, oggi fuori zona)**, se i PG la chiamano, ricorda che un mese fa il consigliere chiese al vicedirettore se la cassetta di Shibata poteva essere aperta dagli eredi. Le sembrò strano, e non lo disse a nessuno.
 - **Amemiya Junpei (investigatore della criminalità organizzata)**, se i PG chiamano la centrale, conferma il provvedimento sulla cassetta e che i nomi in ballo sono di appalti comunali. Non fa il nome di Arima: dice «gente del comune».
 
 ---
