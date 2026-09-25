@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Telefax da Roma — riscontro a richiesta urgente</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+body { font-family: "Courier New", Courier, monospace; color: #111; background: #fff;
+       display: flex; flex-direction: column; align-items: center; font-variant-numeric: lining-nums; }
+.foglio { width: 210mm; height: 297mm; padding: 7mm 14mm 8mm; position: relative; overflow: hidden;
+          break-after: page; }
+.foglio:last-child { break-after: auto; }
+.riga-fax { font-size: 9.5px; letter-spacing: .6px; display: flex; justify-content: space-between;
+            border-bottom: 1px solid #222; padding-bottom: 1.5px; color: #222; }
+.ente { font-family: Cambria, "Times New Roman", serif; font-weight: bold; letter-spacing: 5px; }
+.sotto { font-family: Cambria, "Times New Roman", serif; letter-spacing: 2.5px; text-transform: uppercase; }
+.pen { font-family: "Segoe Script", "Ink Free", "Segoe Print", cursive; color: #151515; }
+.timbro { opacity: .78; }
+
+.intesta { text-align: center; margin-top: 8mm; }
+.intesta .ente { font-size: 20px; margin-top: 2mm; }
+.intesta .sotto { font-size: 12.5px; margin-top: 1mm; }
+.intesta .filetto { width: 58mm; border-top: 1px solid #111; margin: 3mm auto 0; }
+.modulo { margin-top: 8mm; border: 1.5px solid #111; font-size: 12.5px; }
+.modulo .capo { display: flex; justify-content: space-between; align-items: center;
+                border-bottom: 1.5px solid #111; padding: 2mm 4mm; }
+.modulo .capo b { font-size: 17px; letter-spacing: 6px; }
+.modulo .capo .urg { border: 2px solid #111; padding: .5mm 3mm; font-weight: bold; letter-spacing: 3px; }
+.modulo .r { display: grid; grid-template-columns: 26mm 1fr; padding: 1.4mm 4mm; border-bottom: 1px solid #999; }
+.modulo .r:last-child { border-bottom: none; }
+.modulo .et { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #444; padding-top: 1px; }
+.testo { margin-top: 9mm; font-size: 13px; line-height: 1.62; text-align: left; }
+.testo .apre { font-weight: bold; letter-spacing: 1px; margin-bottom: 3.5mm; }
+.testo p + p { margin-top: 3.2mm; }
+.chiusa { position: absolute; left: 14mm; right: 14mm; bottom: 24mm; display: flex;
+          justify-content: flex-end; align-items: center; gap: 6mm; }
+.chiusa .timbro { transform: rotate(-11deg); margin-right: -4mm; }
+.chiusa .firma { text-align: center; font-size: 12.5px; line-height: 1.5; }
+.chiusa .firma .pen { font-size: 19px; transform: rotate(-4deg); margin: 1mm 0 -1mm; }
+</style>
+</head>
+<body>
+<div class="foglio">
+  <div class="riga-fax"><span>TX&nbsp; COMANDO GENERALE CARABINIERI &nbsp;ROMA</span><span>&rarr; INTERPOL TOKYO &rarr; KYOTO</span><span>PAG. 01/04</span></div>
+  <div class="intesta">
+    <svg class="granata" viewBox="0 0 100 132" style="width:17mm;height:22.4mm" xmlns="http://www.w3.org/2000/svg" aria-label="granata fiammeggiante"><path d="M43,66 C36,60 20,52 13,31 C21,40 29,44 33,44 C29,36 22,26 22,11 C28,22 34,30 39,33 C36,24 34,15 37,4 C40,15 43,22 46,25 C46,15 48,8 50,0 C52,8 54,15 54,25 C57,22 60,15 63,4 C66,15 64,24 61,33 C66,30 72,22 78,11 C78,26 71,36 67,44 C71,44 79,40 87,31 C80,52 64,60 57,66 Z" fill="#111"/><g fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round"><path d="M45,60 C38,55 30,50 24,40"/><path d="M47,57 C43,48 36,36 31,24"/><path d="M49,55 C47,44 44,30 42,19"/><path d="M50,54 C50,40 50,26 50,14"/><path d="M51,55 C53,44 56,30 58,19"/><path d="M53,57 C57,48 64,36 69,24"/><path d="M55,60 C62,55 70,50 76,40"/></g><path d="M42,64 L58,64 L60,74 L40,74 Z" fill="#111"/><rect x="39" y="67.5" width="22" height="2" fill="#fff"/><circle cx="50" cy="102" r="29" fill="#111"/><circle cx="50" cy="102" r="25.5" fill="none" stroke="#fff" stroke-width="1.2"/><text x="50" y="111" text-anchor="middle" fill="#fff" style="font-family:'Monotype Corsiva','Edwardian Script ITC','Times New Roman',serif;font-style:italic;font-weight:bold;font-size:27px;letter-spacing:-2px">RI</text></svg>
+    <div class="ente">ARMA DEI CARABINIERI</div>
+    <div class="sotto">Comando Generale</div>
+    <div class="filetto"></div>
+  </div>
+
+  <div class="modulo">
+    <div class="capo"><b>TELEFAX</b><span class="urg">URGENTE</span></div>
+    <div class="r"><span class="et">Da</span><span>Comando Generale dell'Arma dei Carabinieri — Roma</span></div>
+    <div class="r"><span class="et">A</span><span>Polizia prefettizia di Kyoto, tramite l'ufficio Interpol di Tokyo</span></div>
+    <div class="r"><span class="et">Oggetto</span><span>riscontro a richiesta urgente</span></div>
+    <div class="r"><span class="et">Pagine</span><span>4, compresa la presente</span></div>
+  </div>
+
+  <div class="testo">
+    <div class="apre">RISCONTRO A RICHIESTA URGENTE.</div>
+    <p>Il soggetto descritto corrisponde a VENTURINI Alceo, nato a Livorno nel 1958, statura 181, ricercato per concorso in rapina a società di preziosi, Milano 1993, procedimento aperto. Precedenti per truffa, Pisa 1982 e Genova 1989. Modus operandi: conquista la fiducia del personale presentandosi come cliente o professionista e trattiene gli impiegati in conversazione mentre i complici agiscono; a Milano li tenne impegnati per oltre un&#x27;ora.</p><p>Risulta associato a MALVEZZI Nereo, Ferrara 1953, indicato come organizzatore e finanziatore di un gruppo dedito a rapine, ordinanza di custodia Padova 1994 non eseguita.</p><p>Nella stessa indagine e in procedimenti collegati per rapine con il medesimo schema, un uomo sulle chiusure e gli altri a trattenere il personale, compaiono: SORANZO Elvio, Mestre 1955, serrature e casseforti, ordinanza Verona 1996; FERRAGUTI Duilio, Forlì 1956, rapina e tentato omicidio di una guardia giurata, Bologna 1994; CATTABRIGA Loris, Rovigo 1966, rapina e resistenza, Ferrara 1995; BELLANDI Terenzio, Carrara 1948, detenzione di esplosivi, Lucca 1993.</p><p>Tutti latitanti o irreperibili, presumibilmente all&#x27;estero. Seguono fotografie segnaletiche.</p>
+  </div>
+
+  <div class="chiusa">
+    <svg class="timbro" viewBox="0 0 120 120" style="width:30mm;height:30mm" xmlns="http://www.w3.org/2000/svg"><defs><path id="giroAlto" d="M24.4,89.9 A46.5,46.5 0 1 1 95.6,89.9"/><path id="giroBasso" d="M15,86 A52,52 0 0 0 105,86"/></defs><g fill="none" stroke="#222"><circle cx="60" cy="60" r="57" stroke-width="2.4"/><circle cx="60" cy="60" r="36" stroke-width="1.3"/></g><text fill="#222" style="font-family:Arial,sans-serif;font-size:7.4px;font-weight:bold;letter-spacing:.35px"><textPath href="#giroAlto" startOffset="50%" text-anchor="middle">COMANDO GENERALE DELL'ARMA DEI CARABINIERI</textPath></text><text fill="#222" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;letter-spacing:2px"><textPath href="#giroBasso" startOffset="50%" text-anchor="middle">ROMA</textPath></text><g transform="translate(46.5 42.2) scale(.27)"><path d="M43,66 C36,60 20,52 13,31 C21,40 29,44 33,44 C29,36 22,26 22,11 C28,22 34,30 39,33 C36,24 34,15 37,4 C40,15 43,22 46,25 C46,15 48,8 50,0 C52,8 54,15 54,25 C57,22 60,15 63,4 C66,15 64,24 61,33 C66,30 72,22 78,11 C78,26 71,36 67,44 C71,44 79,40 87,31 C80,52 64,60 57,66 Z" fill="#222"/><path d="M42,64 L58,64 L60,74 L40,74 Z" fill="#222"/><circle cx="50" cy="102" r="29" fill="#222"/></g></svg>
+    <div class="firma">
+      IL CAPO UFFICIO
+      <div class="pen">S. Lanzetta</div>
+      (Ten. Col. Sergio Lanzetta)
+    </div>
+  </div>
+</div>
+</body>
+</html>

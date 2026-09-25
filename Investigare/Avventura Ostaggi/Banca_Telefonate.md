@@ -4,7 +4,7 @@ Chi parla è **Alceo Venturini, maschera di Gigi Proietti**. Giapponese fluente,
 
 **La regola che il GM tiene in testa: tutto quello che chiede è falso.** Non vuole la pizza, non vuole l'elicottero, non vuole i soldi. Vuole che, quando il timer arriva a zero, la cassetta sia ancora chiusa dentro una banca circondata da poliziotti che stanno aspettando una pizza. Ogni richiesta compra minuti; ogni concessione dei PG gliene compra altri. **Non prende mai un impegno verificabile.** Se glielo chiedono, cambia argomento con una parola dell'altro.
 
-Le battute sono in italiano perché il tavolo parla italiano. Ogni tanto gli scappa una parola nella sua lingua, un *mannaggia*, un *porca miseria*: i PG sanno già da Horiuchi che è italiano, e sentirlo glielo conferma.
+Le battute sono in italiano perché il tavolo parla italiano. Ogni tanto gli scappa una parola nella sua lingua, un *boia dé*, un *porca miseria*: i PG sanno già da Horiuchi che è italiano, e sentirlo glielo conferma.
 
 ---
 
@@ -76,9 +76,9 @@ Quando i PG lo tengono al telefono, o quando è lui a volerli tenere, Venturini 
 
 > «La sa quella dell'uomo che entra in banca con la pistola? Entra, punta la pistola al cassiere e dice: questa è una rapina, dammi tutti i soldi. E il cassiere: mi dispiace, la cassa la apre solo il direttore, e il direttore torna alle tre. E lui: e io che faccio fino alle tre? E il cassiere: prenda un numero e si metta in fila. *(ride a lungo)* Capisce, ispettore? Anche i ladri devono aspettare. Io sto aspettando.»
 
-**I carabinieri.** *(qui la spiegazione dura più della barzelletta, ed è il punto)*
+**Il colmo.** *(qui la spiegazione dura più della barzelletta, ed è il punto)*
 
-> «Da noi ci sono i carabinieri. Lei non sa cosa sono. Sono polizia, come lei, ma con un altro cappello, e da noi si raccontano le barzellette sui carabinieri come da voi, non so, su quelli di Osaka. Allora: sa perché i carabinieri vanno sempre in due? *(pausa)* Uno sa leggere e l'altro sa scrivere. *(silenzio)* Non ha riso. Va bene, non è colpa sua, è colpa del cappello. Lei sa fare tutte e due le cose, ispettore, l'ho capito subito.»
+> «Da noi c'è un gioco che si chiama il colmo. Il colmo è quando a uno succede proprio la cosa che col suo mestiere non dovrebbe succedergli. Capisce? No. Faccio un esempio. Qual è il colmo per un elettricista? *(pausa)* Non essere al corrente. *(silenzio)* Non ha riso. È colpa della lingua: da noi la corrente è quella dei fili, la luce, ed "essere al corrente" vuol dire sapere le cose. Quindi un elettricista che non è al corrente… No? Glielo dico in un altro modo. Lei, ispettore, è al corrente di quello che succede qui dentro? *(pausa)* Vede? Anche lei è un elettricista.»
 
 **Il medico.** *(se serve un'altra manciata di minuti)*
 
@@ -86,9 +86,15 @@ Quando i PG lo tengono al telefono, o quando è lui a volerli tenere, Venturini 
 
 **L'Italia.** *(quando la barzelletta non basta più; la voce cambia, e non recita più — o recita meglio)*
 
-> «Lei c'è mai stato in Italia, ispettore? No. Peccato. Le racconto una cosa, così passa il tempo a tutti e due. Da dove vengo io il mare ce l'hai davanti, non di lato: davanti, che quando esci di casa lo vedi prima della strada. C'è una terrazza sul mare, grande come questa banca dieci volte, tutta a scacchi bianchi e neri, e da bambino contavo le mattonelle e non arrivavo mai in fondo, perché a metà c'era sempre uno che vendeva i bomboloni. Dietro il porto ci sono i canali, con le case che ci stanno dentro coi piedi, e la domenica i pescatori vendono dalle barche, e mia madre comprava il pesce brutto, quello che nessuno vuole, e ci faceva una zuppa con l'aglio e il pane abbrustolito, e se lei avesse mangiato quella zuppa, ispettore, non starebbe lì fuori con le macchine accese. E al porto c'è un monumento con quattro schiavi di bronzo incatenati, e mio nonno diceva che se trovi il punto da cui si vedono tutti e quattro i nasi insieme ti sposi entro l'anno, e io ci ho girato intorno per tre estati, dé, e non mi sono sposato mai.»
+> «Lei c'è mai stato in Italia, ispettore? No. Peccato. Tutti vanno a Roma, a Firenze, a Venezia, a guardare le chiese con la guida in mano. Sbagliano: l'Italia bella è quella dove non va nessuno. Le racconto la mia, così passa il tempo a tutti e due.
+>
+> Da me il mare ce l'hai davanti, non di lato: esci di casa e lo vedi prima della strada. Sul mare c'è una terrazza grande come dieci banche, tutta a scacchi bianchi e neri, con una ringhiera di colonnine che da bambino ho contato tutte, una per una: quattromilacento. Nelle giornate chiare davanti si vedono le isole, e nei giorni più limpidi anche la Corsica. Una delle isole è un carcere. Mia madre me la indicava col dito: se non fai il bravo, ti mandano lì. *(ride)* Non ho fatto il bravo, ispettore. E guardi dove sono finito.
+>
+> Dietro il porto l'acqua entra in mezzo alle case, nei canali, e le case ci stanno dentro coi piedi: le cantine si aprono sull'acqua. D'estate, di notte, ci fanno le gare con le barche a remi, un quartiere contro l'altro, e si urla più che allo stadio. Mia madre comprava il pesce brutto, quello che nessuno vuole, e ci faceva una zuppa rossa, col pane abbrustolito e l'aglio. Ha un nome con cinque C, quella zuppa, e ci vogliono cinque pesci, uno per ogni C. Se lei l'avesse mangiata, ispettore, non starebbe lì fuori con le macchine accese.
+>
+> E al porto ci sono quattro schiavi di bronzo incatenati, sotto la statua di un granduca. C'è un punto della piazza da dove si vedono tutti e quattro i nasi insieme, e porta fortuna. Da noi lo sanno tutti dov'è, e nessuno lo dice. Nemmeno io, dé. Nemmeno a lei.»
 
-**Cosa rivela, e a chi.** Per un giapponese è un uomo che ha nostalgia. Per un italiano che ascolta la registrazione è **Livorno, senza dubbio**: la terrazza a scacchi è la Terrazza Mascagni, i canali con le case coi piedi nell'acqua sono i fossi della Venezia Nuova, la zuppa è il cacciucco, i quattro schiavi di bronzo sono i Quattro Mori con la leggenda dei quattro nasi, e quel *dé* in mezzo alla frase lo dice solo un livornese. È la vanità del presentatore: sa di non dover dire da dove viene, e lo dice lo stesso, perché raccontarlo bene gli piace più che tacere. Come i PG lo fanno ascoltare a un italiano, e cosa succede dopo, è nella cronologia.
+**Cosa rivela, e a chi.** Per un giapponese è un uomo che ha nostalgia. Per un italiano che ascolta la registrazione è **Livorno, senza dubbio**: la terrazza a scacchi sul mare è la Terrazza Mascagni, con le 4.100 colonnine della balaustra; l'isola-carcere davanti è la Gorgona; i canali con le cantine sull'acqua sono i fossi della Venezia Nuova, e le gare a remi di notte tra i quartieri sono la Coppa Barontini; la zuppa con le cinque C è il cacciucco; i quattro schiavi di bronzo sotto il granduca sono i Quattro Mori, con la leggenda del punto da cui si vedono i quattro nasi; e quel *dé* è livornese. È la vanità del presentatore: sa che non deve dire da dove viene, e il nome infatti non lo dice mai, ma lo racconta così bene che per un italiano è come dirlo. Come i PG lo fanno ascoltare a un italiano, e cosa succede dopo, è nella cronologia. Se un PG vuole rileggerlo, c'è la trascrizione del posto di comando: `Handout/04_Trascrizione_telefonata`.
 
 ---
 
@@ -155,13 +161,13 @@ Un PG con un Gou che legge un ambiente, o le persone, qui ha la sua scena: Ventu
 
 ---
 
-## A un minuto dalla fine — la minaccia sul tecnico
+## Quando manca poco — la minaccia sul tecnico
 
 Cattabriga ha visto la cornetta. Horiuchi viene portato giù per le scale a spinte, fino al telefono. La recita finisce: la voce di Venturini adesso è piatta.
 
-> «Ispettore. Abbiamo trovato il vostro amico. Quello col telefono sotto il tavolo. Vuole salutarla.» *(il respiro di Horiuchi nella cornetta, una parola in giapponese, poi via)* «Adesso mi ascolti bene perché non scherzo più. Se qualcuno si muove là fuori, se vedo una divisa, se sento un rumore che non mi piace, lui muore. Un minuto. Poi vediamo.»
+> «Ispettore. Abbiamo trovato il vostro amico. Quello col telefono sotto il tavolo. Vuole salutarla.» *(il respiro di Horiuchi nella cornetta, una parola in giapponese, poi via)* «Adesso mi ascolti bene perché non scherzo più. Se qualcuno si muove là fuori, se vedo una divisa, se sento un rumore che non mi piace, lui muore. Adesso guardi il tetto.»
 
-Un minuto dopo salta la cassetta. **Horiuchi non deve morire per forza:** se i PG sono già dentro, se il tiratore ha la finestra giusta, se qualcuno ha capito prima, la minaccia resta una minaccia.
+Poi Cattabriga lo porta sul tetto: la scena è nella cronologia, «Il tecnico, quando manca poco». **Horiuchi non deve morire per forza.**
 
 ---
 
@@ -177,24 +183,20 @@ Da lì in poi al telefono non risponde più nessuno. Dentro, gli ordini li dà M
 
 ## Le guardie dietro la porta — per il GM
 
-Quello che Ferraguti e Cattabriga si dicono nel corridoio, in italiano, e che Horiuchi sente senza capire. Da leggere solo se serve il colore; agli ostaggi arriva come rumore. **Le righe in giapponese sono quelle che Horiuchi manda fuori.**
+Quello che Ferraguti e Cattabriga si dicono nel corridoio, in italiano. Da leggere solo se serve il colore.
 
 **Timer 1:48**, Cattabriga, che parla troppo quando è nervoso:
 
 > «Quello là dentro con la camicia azzurra guarda sempre la porta. Perché guarda la porta?» «Perché c'è la porta. Siediti.»
 
-**Timer 1:05**, Cattabriga entra e dice **in giapponese**, agli ostaggi:
+**Timer 1:05**, Cattabriga, dopo la radio dal caveau:
 
-> «Un'ora. Ancora un'ora e tutti a casa. Chi sta seduto e zitto va a casa.»
+> «Millesettecentodiciassette. Due volte diciassette, porca miseria.» «Porta sfiga a chi l'ha affittata, non a noi. Siediti.»
 
-**Timer 0:11**, Ferraguti, dalla radio, poi a Cattabriga:
+**Timer 0:43**, Ferraguti, dalla radio, poi a Cattabriga:
 
 > «Ha detto che è quasi fatta. Quando senti il botto, si scende tutti. Poi il fumo, e ognuno per sé.» «E se quello di sotto non è pronto?» «È pronto. Siediti.»
 
-Poi Cattabriga apre la porta e lo dice **in giapponese**, agli ostaggi, perché per la fuga nel fumo gli servono tutti in piedi e pronti a correre:
-
-> «Fra poco sentite un botto. State giù. Poi tutti fuori, di corsa, e chi corre va a casa.»
-
-**Timer 0:02**, Cattabriga, che ha visto la mano sotto il tavolo:
+**Quando lo scoprono**, Cattabriga, che ha visto la mano sotto il tavolo:
 
 > «Tu. Con la camicia. Tira fuori le mani. TIRA FUORI LE MANI.»

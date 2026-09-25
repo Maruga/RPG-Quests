@@ -57,6 +57,16 @@ Le armi della gara sono **repliche a gas del New Nambu**, identiche per peso e i
 
 ### Cosa hanno visto gli istruttori
 
-Chi ha guardato l'ostaggio e chi ha guardato solo il malvivente. Chi ha parlato e chi ha sparato. Chi si è avvicinato. Chi, quando lei è saltata, ha capito prima del dado. Nessuno lo dice ai PG in questi termini: un'ora dopo, davanti alla banca, lo capiscono da soli.
+Possono essere dati punti in più da aggiungere alla scheda.
+
+Chi ha guardato l'ostaggio e chi ha guardato solo il malvivente. 
+Chi ha parlato e chi ha sparato. 
+Chi si è avvicinato. 
+Chi, quando lei è saltata, ha capito prima del dado. 
+
+## Chiamata alla banca
+
+I PG stanno andando al ristorante e vengono chiamati di urgenza alla banca.
+Scena: "uno degli esaminatori entra nel ristorante e gli dice cosa sta succedendo nel breve e di presentarsi sul luogo."
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Messaggi del cercapersone — da ritagliare</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: #fff; display: flex; flex-direction: column; align-items: center; }
+.foglio { width: 210mm; height: 297mm; padding: 12mm 12mm; break-after: page; }
+.foglio:last-child { break-after: auto; }
+.arrivo { padding: 16mm 26mm; display: flex; flex-direction: column; }
+.intesta { font: bold 11px Consolas, "Lucida Console", "Courier New", monospace; letter-spacing: 4px;
+           color: #3a4528; text-align: center; margin-bottom: 7mm; }
+.registro { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.apparecchio.grande { height: 36mm; padding: 3mm; border-radius: 5mm; }
+.apparecchio.grande .schermo { padding: 2mm 5mm 2.5mm; }
+.apparecchio.grande .stato { font-size: 12px; }
+.apparecchio.grande .ico { width: 5mm; height: 3.6mm; }
+.apparecchio.grande .msg { font-size: 23px; letter-spacing: 2.2px; }
+.griglia { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 82mm;
+           border-top: 1px dashed #8a8a8a; border-left: 1px dashed #8a8a8a; }
+.biglietto { border-right: 1px dashed #8a8a8a; border-bottom: 1px dashed #8a8a8a; padding: 11mm 7mm; }
+.vuoto { border: none; }
+.apparecchio { height: 100%; border-radius: 4mm; background: #e4e4e2; border: 1.2px solid #7a7a78; padding: 2.6mm; }
+.schermo { height: 100%; border-radius: 1.8mm; background: #cbd5b2; border: 1.6px solid #66734f;
+           box-shadow: inset 0 0 0 1.2px #b5c197; padding: 1.6mm 3mm 2mm; display: flex; flex-direction: column;
+           color: #1b250f; }
+.stato { display: flex; justify-content: space-between; align-items: center;
+         font: bold 10px Consolas, "Lucida Console", "Courier New", monospace; letter-spacing: 1px; }
+.stato span { display: inline-flex; align-items: center; }
+.ico { width: 4.2mm; height: 3mm; }
+.msg { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center;
+       font: bold 21px/1.4 Consolas, "Lucida Console", "Courier New", monospace; letter-spacing: 1.3px;
+       text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="foglio arrivo">
+  <div class="intesta">CERCAPERSONE — MESSAGGI RICEVUTI</div>
+  <div class="registro">
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;12:40</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">CHIUSI IN BANCA</div></div></div>
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;12:44</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">CHIAMA POLIZIA</div></div></div>
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;12:49</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">STRANIERO ITALIANO MATTO</div></div></div>
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;12:55</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">TUTTI AL PIANO DI SOPRA ANCHE IO</div></div></div>
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;13:01</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">SENZA TELEFONI NE BORSE</div></div></div>
+<div class="apparecchio grande"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>&nbsp;13:08</span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">NON E UNO SCHERZO — CHIAMA POLIZIA</div></div></div>
+  </div>
+</div>
+<div class="foglio"><div class="griglia">
+<div class="biglietto"><div class="apparecchio"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">DICONO TRA 2 ORE FINITO</div></div></div></div>
+<div class="biglietto"><div class="apparecchio"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">PIU VOCI FUORI —<br>NON E SOLO</div></div></div></div>
+<div class="biglietto"><div class="apparecchio"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">TRAPANO DI SOTTO</div></div></div></div>
+<div class="biglietto"><div class="apparecchio"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">PARLANO DI CASSETTA 1717</div></div></div></div>
+<div class="biglietto"><div class="apparecchio"><div class="schermo"><div class="stato"><span><svg viewBox="0 0 14 10" class="ico"><rect x=".6" y=".6" width="12.8" height="8.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M.8 1 L7 5.6 L13.2 1" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><span><svg viewBox="0 0 14 10" class="ico"><rect x="1" y="7" width="2" height="3" fill="currentColor"/><rect x="4.5" y="5" width="2" height="5" fill="currentColor"/><rect x="8" y="3" width="2" height="7" fill="currentColor"/><rect x="11.5" y="1" width="2" height="9" fill="currentColor"/></svg></span></div><div class="msg">TRA POCO BOOM</div></div></div></div>
+<div class="vuoto"></div>
+</div></div>
+</body>
+</html>

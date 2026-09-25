@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Trascrizione di registrazione telefonica — posto di comando</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@page { size: A4; margin: 0; }
+body { font-family: "Courier New", Courier, monospace; font-size: 13px; line-height: 1.62;
+       color: #111; background: #fff; display: flex; justify-content: center; font-variant-numeric: lining-nums; }
+.foglio { width: 210mm; height: 297mm; padding: 10mm 16mm 9mm; position: relative; }
+.testa { border: 2px solid #111; border-bottom: 3px double #111; padding: 6px 16px; text-align: center; }
+.testa .ente { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #333; }
+.testa .kanji { font-family: "Yu Mincho", "MS Mincho", serif; font-size: 13px; color: #444; letter-spacing: 4px; }
+.testa .tit { font-size: 17px; font-weight: bold; margin-top: 3px; letter-spacing: 2px; }
+.testa .mod { font-size: 10px; color: #555; margin-top: 2px; letter-spacing: 1px; }
+.griglia { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #333; border-bottom: none; margin-top: 10px; }
+.cella { padding: 3px 9px 4px; border-bottom: 1px solid #999; }
+.cella:nth-child(odd) { border-right: 1px solid #999; }
+.et { font-size: 9.5px; text-transform: uppercase; letter-spacing: 1px; color: #555; display: block; }
+.nota { font-size: 10.5px; color: #444; margin-top: 7px; }
+.voce { margin-top: 9mm; font-size: 11px; letter-spacing: 2px; font-weight: bold; border-bottom: 1px solid #111;
+         padding-bottom: 2px; }
+.testo { margin-top: 4mm; }
+.testo p + p { margin-top: 3.6mm; }
+.piede { position: absolute; left: 16mm; right: 16mm; bottom: 9mm; font-size: 8px; color: #777;
+          border-top: 1px solid #bbb; padding-top: 4px; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="foglio">
+  <div class="testa">
+    <div class="ente">Polizia prefettizia di Kyoto</div>
+    <div class="kanji">京都府警察</div>
+    <div class="tit">TRASCRIZIONE DI REGISTRAZIONE TELEFONICA</div>
+    <div class="mod">Posto di comando · linea con l'interno della banca</div>
+  </div>
+
+  <div class="griglia">
+    <div class="cella"><span class="et">Registrazione</span>nastro del posto di comando</div>
+    <div class="cella"><span class="et">Linea</span>telefono della banca</div>
+    <div class="cella"><span class="et">Voce</span>uomo all'interno della banca</div>
+    <div class="cella"><span class="et">Lingua</span>giapponese, con accento straniero</div>
+  </div>
+  <div class="nota">In corsivo le parole pronunciate in lingua straniera, trascritte come si sentono. Tra parentesi quadre i rumori e le pause.</div>
+
+  <div class="voce">UOMO ALL'INTERNO DELLA BANCA</div>
+  <div class="testo">
+<p>Lei c'è mai stato in Italia, ispettore? No. Peccato. Tutti vanno a Roma, a Firenze, a Venezia, a guardare le chiese con la guida in mano. Sbagliano: l'Italia bella è quella dove non va nessuno. Le racconto la mia, così passa il tempo a tutti e due.</p>
+<p>Da me il mare ce l'hai davanti, non di lato: esci di casa e lo vedi prima della strada. Sul mare c'è una terrazza grande come dieci banche, tutta a scacchi bianchi e neri, con una ringhiera di colonnine che da bambino ho contato tutte, una per una: quattromilacento. Nelle giornate chiare davanti si vedono le isole, e nei giorni più limpidi anche la Corsica. Una delle isole è un carcere. Mia madre me la indicava col dito: se non fai il bravo, ti mandano lì. [ride] Non ho fatto il bravo, ispettore. E guardi dove sono finito.</p>
+<p>Dietro il porto l'acqua entra in mezzo alle case, nei canali, e le case ci stanno dentro coi piedi: le cantine si aprono sull'acqua. D'estate, di notte, ci fanno le gare con le barche a remi, un quartiere contro l'altro, e si urla più che allo stadio. Mia madre comprava il pesce brutto, quello che nessuno vuole, e ci faceva una zuppa rossa, col pane abbrustolito e l'aglio. Ha un nome con cinque C, quella zuppa, e ci vogliono cinque pesci, uno per ogni C. Se lei l'avesse mangiata, ispettore, non starebbe lì fuori con le macchine accese.</p>
+<p>E al porto ci sono quattro schiavi di bronzo incatenati, sotto la statua di un granduca. C'è un punto della piazza da dove si vedono tutti e quattro i nasi insieme, e porta fortuna. Da noi lo sanno tutti dov'è, e nessuno lo dice. Nemmeno io, <i>dé</i>. Nemmeno a lei.</p>
+  </div>
+
+  <div class="piede"><span>Polizia prefettizia di Kyoto — posto di comando</span><span>foglio 1 di 1</span></div>
+</div>
+</body>
+</html>
